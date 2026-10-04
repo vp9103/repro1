@@ -27,5 +27,36 @@
   "Diffuse infiltration of fat: single tumor cells and thin cords lie between fat cells along the right edge without forming a discrete mass, which is why lobular cancer can be missed on exam and mammography.",
   "Small uniform cells: round, dark, bland nuclei with scant cytoplasm give a monotonous look compared with the pleomorphic cells of ductal carcinoma."
  ],
- "ann": []
+ "ann": [
+  {
+   "k": "arrow",
+   "x": 20.0,
+   "y": 45.0,
+   "tx": 15.0,
+   "ty": 40.0,
+   "px": 15.0,
+   "py": 40.0,
+   "l": "Single-file rows: Small, round tumor cells line up in single-file rows between collagen bundles. This characteristic pattern results from the loss of E-cadherin, which normally mediates cell-to-cell cohesion."
+  },
+  {
+   "k": "e",
+   "x": 92.5,
+   "y": 32.8,
+   "rx": 3.4,
+   "ry": 4.7,
+   "px": 88.0,
+   "py": 38.0,
+   "l": "Diffuse infiltration of fat: Tumor cells infiltrate individually and in thin cords between adipocytes at the upper right. Because they do not form a cohesive mass, invasive lobular carcinoma is often difficult to palpate or detect on mammography."
+  },
+  {
+   "k": "arrow",
+   "x": 58.0,
+   "y": 62.0,
+   "tx": 64.0,
+   "ty": 66.0,
+   "px": 64.0,
+   "py": 66.0,
+   "l": "Small uniform cells: The tumor cells are small, round, and monotonous, with dark, bland nuclei and very scant cytoplasm. This uniform appearance contrasts sharply with the marked pleomorphism and gland formation seen in ductal carcinoma."
+  }
+ ]
 }
