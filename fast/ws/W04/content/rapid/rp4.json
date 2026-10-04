@@ -208,6 +208,13 @@
    "Endoderm": "Endoderm lines the gut and airway and forms the liver, pancreas and thyroid follicular cells, but no part of the adrenal gland.",
    "Surface ectoderm": "Surface ectoderm forms the epidermis, lens, enamel and anterior pituitary; it does not migrate into the retroperitoneum.",
    "Neuroectoderm": "Neuroectoderm forms the brain, spinal cord and retina, the tissues that stay inside the neural tube rather than migrating away."
+  },
+  "media": "fig:rp4_origins",
+  "pt": {
+   "hl": [
+    "Adrenal medulla: chromaffin cells"
+   ],
+   "say": "The neural crest card lists the adrenal medulla chromaffin cells, so the medulla is neural crest, while the adrenal cortex in the look-alike card is mesoderm."
   }
  },
  {
@@ -233,6 +240,13 @@
    "Decidua parietalis": "The decidua parietalis lines the rest of the uterine cavity away from the embryo and contributes nothing to the placenta itself.",
    "Chorion frondosum": "The chorion frondosum is the villous chorion facing the implantation site; it forms the fetal side of the placenta, not the maternal side.",
    "Chorion laeve": "The chorion laeve is the smooth chorion whose villi degenerate; it becomes part of the membranes that surround the amniotic sac."
+  },
+  "media": "fig:rp4_placenta",
+  "pt": {
+   "hl": [
+    "Decidua basalis: maternal part of the placenta"
+   ],
+   "say": "The decidua basalis band under the villi is labeled the maternal part of the placenta; the chorion frondosum above it is the fetal part."
   }
  },
  {
@@ -259,6 +273,14 @@
    "Estriol": "Estriol is synthesized from fetal adrenal DHEA-S and signals fetal well-being on screening tests; it does not oppose insulin.",
    "Relaxin": "Relaxin loosens the pelvic ligaments and cervix and lowers vascular tone early in pregnancy; glucose handling is not its role.",
    "Oxytocin": "Oxytocin is a posterior pituitary hormone that contracts the uterus in labor and ejects milk during nursing."
+  },
+  "media": "fig:rp25_hormones",
+  "pt": {
+   "hl": [
+    "Drives insulin resistance",
+    "Lipolysis spares glucose for the fetus"
+   ],
+   "say": "The hPL lane shows human placental lactogen driving insulin resistance and lipolysis, which spares glucose for the fetus, and it rises with placental mass."
   }
  },
  {
@@ -284,6 +306,14 @@
    "Umbilical vein": "The umbilical vein carries oxygenated blood from the placenta and closes after birth into the ligamentum teres of the liver.",
    "Cloaca": "The cloaca is the common hindgut chamber that the urorectal septum divides into the rectum and the urogenital sinus, below the umbilicus.",
    "Yolk sac": "The yolk sac makes the first blood cells and primordial germ cells, and its stalk is the vitelline duct, not the urachus."
+  },
+  "media": "fig:rp4_origins",
+  "pt": {
+   "hl": [
+    "Allantois (urachus)",
+    "Patent urachus: urine leaks at the umbilicus"
+   ],
+   "say": "The first row names the allantois, which closes into the urachus; if the urachus stays patent, urine leaks at the umbilicus."
   }
  },
  {
@@ -374,6 +404,13 @@
    "Fetal kidney": "The fetal kidney makes the urine that becomes most amniotic fluid; it contributes no steroid precursor to the placenta.",
    "Fetal pituitary": "The fetal pituitary drives the adrenal through ACTH, which is why anencephaly lowers estriol, but it does not make DHEA-S itself.",
    "Fetal pancreas": "The fetal pancreas secretes insulin in response to maternal glucose that crosses the placenta, not androgen precursors."
+  },
+  "media": "fig:rp4_placenta",
+  "pt": {
+   "hl": [
+    "Fetal adrenal cortex: DHEA-S"
+   ],
+   "say": "The estriol chain starts with the fetal adrenal cortex making DHEA-S; the fetal liver hydroxylates it and the placenta aromatizes it to estriol."
   }
  },
  {
@@ -399,6 +436,14 @@
    "Placenta accreta": "Accreta reflects too little decidua basalis, so villi invade too deeply into myometrium; the problem is excess attachment, not shallow invasion.",
    "Vasa previa": "Vasa previa means fetal vessels run through the membranes over the cervix, so rupture of the membranes bleeds fetal blood.",
    "Velamentous cord insertion": "A velamentous cord inserts into the membranes instead of the placental disc, leaving vessels unprotected by Wharton jelly."
+  },
+  "media": "fig:rp27_spiral",
+  "pt": {
+   "hl": [
+    "Spiral arteries keep their muscle wall",
+    "Preeclampsia"
+   ],
+   "say": "In the preeclampsia panel invasion stops in the superficial decidua, so the spiral arteries keep their muscle wall, the placenta is underperfused and releases sFlt-1, which injures the mother's endothelium."
   }
  }
 ]

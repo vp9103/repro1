@@ -52,6 +52,11 @@
    "GABA": "This inhibitory transmitter restrains GnRH neurons during childhood, so its tone must fall, rather than rise, for puberty to start.",
    "Neuropeptide Y": "This peptide rises in energy deficit and inhibits the reproductive axis, which helps explain delayed puberty in undernutrition.",
    "Ghrelin": "Ghrelin is a stomach hormone that signals hunger and tends to suppress, not start, GnRH secretion."
+  },
+  "media": "fig:rp7_engines",
+  "pt": {
+   "hl": ["Kisspeptin neurons drive the GnRH pulse generator"],
+   "say": "The top box of the gonadarche engine shows kisspeptin neurons driving the GnRH pulse generator, with leptin permissive; pulsatile GnRH then releases LH and FSH."
   }
  },
  {
@@ -67,6 +72,11 @@
    "Estradiol": "Estradiol comes mainly from the ovary during gonadarche and drives breast growth, not the adrenal events of mid-childhood.",
    "Cortisol": "Cortisol output does not change at adrenarche; the zona reticularis adds androgen without raising glucocorticoid production.",
    "Aldosterone": "Aldosterone comes from the zona glomerulosa under angiotensin II and has no role in adrenarche."
+  },
+  "media": "fig:rp7_engines",
+  "pt": {
+   "hl": ["ACTH drives DHEA-S"],
+   "say": "The adrenal engine runs on ACTH, which drives DHEA-S from the maturing zona reticularis; it causes pubic and axillary hair, odor and acne without breast or testis growth."
   }
  },
  {
@@ -102,6 +112,11 @@
    "Growth hormone": "Growth hormone stimulates growth-plate chondrocytes through IGF-1 and lengthens bone; it does not fuse the plates.",
    "IGF-1": "This factor drives chondrocyte proliferation at the growth plate, lengthening bone rather than closing the plate.",
    "DHEA-S": "This weak adrenal androgen causes pubic hair and contributes little to skeletal maturation."
+  },
+  "media": "fig:rp7_engines",
+  "pt": {
+   "hl": ["Estrogen fuses the growth plates"],
+   "say": "The Both card states that estrogen fuses the growth plates in both sexes; boys make it by aromatizing testosterone."
   }
  },
  {
@@ -177,6 +192,11 @@
    "Turner syndrome": "Turner syndrome is the leading cause of ovarian failure in girls with late puberty, but it is rarer than a benign lag overall.",
    "Klinefelter syndrome": "Klinefelter syndrome is common, yet puberty usually starts on time and then stalls, so it seldom presents as simple lateness.",
    "Anorexia nervosa": "Anorexia causes functional GnRH suppression in thin girls, an important but less frequent cause than a benign familial lag."
+  },
+  "media": "fig:rp7_delayed",
+  "pt": {
+   "hl": ["Constitutional delay: the most common cause"],
+   "say": "The first card on the low LH and FSH side is constitutional delay, labeled the most common cause: a healthy, short child with a delayed bone age and often a late-maturing parent."
   }
  },
  {
@@ -212,6 +232,11 @@
    "Equal to chronologic age": "A skeleton matching the calendar fits a normal child or premature thelarche, not a lag of the whole pubertal clock.",
    "Advanced by 4 years": "A markedly advanced skeleton signals prolonged sex steroid excess, such as untreated CAH or central precocious puberty.",
    "Growth plates already fused": "Fused plates mean growth has ended, which happens after puberty and sex steroid exposure, never in a child who has not started."
+  },
+  "media": "fig:rp7_delayed",
+  "pt": {
+   "hl": ["Bone age delayed about 2 years"],
+   "say": "The constitutional delay card lists a bone age delayed about 2 years, so low LH and FSH are normal for that bone age and puberty starts on its own."
   }
  },
  {
@@ -247,6 +272,11 @@
    "Galactorrhea": "Milk discharge in a boy suggests hyperprolactinemia, such as a prolactinoma, and needs a prolactin level and imaging.",
    "Pubic hair at age 6": "Sexual hair before age 9 in a boy is precocious and calls for evaluation of adrenal or central causes.",
    "Testes under 4 mL at 15": "Prepubertal testes past the age-14 cutoff mean delayed puberty and warrant a work-up."
+  },
+  "media": "fig:rp7_engines",
+  "pt": {
+   "hl": ["Pubertal gynecomastia: tender, transient"],
+   "say": "The last card of the gonadarche panel describes tender pubertal gynecomastia in mid-puberty as transient: estradiol briefly outruns testosterone, so it needs only reassurance."
   }
  }
 ]

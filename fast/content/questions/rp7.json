@@ -147,7 +147,14 @@
     ]
    ]
   ],
-  "bl": "The breast bud of thelarche is driven by ovarian estradiol and is the first visible sign of female puberty."
+  "bl": "The breast bud of thelarche is driven by ovarian estradiol and is the first visible sign of female puberty.",
+  "ef": "rp7_engines",
+  "pt": {
+   "hl": [
+    "Estradiol: breast bud (thelarche)"
+   ],
+   "say": "In the girls card of the gonadarche engine, estradiol from the ovary makes the breast bud, thelarche, the first visible sign of female puberty; DHEA-S from the adrenal engine makes pubic hair instead."
+  }
  },
  {
   "id": "rp7q03",
@@ -379,7 +386,15 @@
     ]
    ]
   ],
-  "bl": "Virilization with small testes, a prepubertal LH and high 17-hydroxyprogesterone in a boy means 21-hydroxylase deficiency causing peripheral precocious puberty."
+  "bl": "Virilization with small testes, a prepubertal LH and high 17-hydroxyprogesterone in a boy means 21-hydroxylase deficiency causing peripheral precocious puberty.",
+  "ef": "rp7_engines",
+  "pt": {
+   "hl": [
+    "21-hydroxylase deficiency",
+    "Testes stay small"
+   ],
+   "say": "The red box of the adrenal engine names 21-hydroxylase deficiency: excess adrenal androgen virilizes the boy while the testes stay small and 17-hydroxyprogesterone is high, so the source lies outside the gonadal axis."
+  }
  },
  {
   "id": "rp7q06",
@@ -452,7 +467,15 @@
     ]
    ]
   ],
-  "bl": "A healthy short boy with a delayed bone age and a late-maturing parent has constitutional delay, the most common cause of late puberty."
+  "bl": "A healthy short boy with a delayed bone age and a late-maturing parent has constitutional delay, the most common cause of late puberty.",
+  "ef": "rp7_delayed",
+  "pt": {
+   "hl": [
+    "Constitutional delay: the most common cause",
+    "Bone age delayed about 2 years"
+   ],
+   "say": "A healthy short boy with a late-maturing parent and a bone age about 2 years behind fits the first card on the low LH and FSH side: constitutional delay, the most common cause, which starts on its own."
+  }
  },
  {
   "id": "rp7q07",
@@ -526,7 +549,15 @@
     ]
    ]
   ],
-  "bl": "Delayed puberty in a thin, heavily training athlete with low gonadotropins reflects low leptin suppressing GnRH pulses."
+  "bl": "Delayed puberty in a thin, heavily training athlete with low gonadotropins reflects low leptin suppressing GnRH pulses.",
+  "ef": "rp7_delayed",
+  "pt": {
+   "hl": [
+    "Functional: low leptin suppresses GnRH pulses",
+    "Anorexia, hard training, chronic illness"
+   ],
+   "say": "The functional card links hard training and weight loss to low leptin, which suppresses GnRH pulses; LH and FSH are low, smell is normal, and the treatment is to restore energy balance."
+  }
  },
  {
   "id": "rp7q08",
@@ -600,7 +631,15 @@
     ]
    ]
   ],
-  "bl": "Delayed puberty with high FSH and LH means gonadal failure; the next step is a karyotype to diagnose Turner syndrome."
+  "bl": "Delayed puberty with high FSH and LH means gonadal failure; the next step is a karyotype to diagnose Turner syndrome.",
+  "ef": "rp7_delayed",
+  "pt": {
+   "hl": [
+    "Turner syndrome (45,X)",
+    "Next step: karyotype"
+   ],
+   "say": "High LH and FSH mean the gonads failed; Turner syndrome heads that column, and the next step shown is a karyotype to confirm 45,X or mosaicism."
+  }
  },
  {
   "id": "rp7q09",
@@ -750,7 +789,15 @@
     ]
    ]
   ],
-  "bl": "Tender gynecomastia in a mid-pubertal boy with normal testes is a normal variant; reassurance and reexamination are the right step."
+  "bl": "Tender gynecomastia in a mid-pubertal boy with normal testes is a normal variant; reassurance and reexamination are the right step.",
+  "ef": "rp7_engines",
+  "pt": {
+   "hl": [
+    "Pubertal gynecomastia: tender, transient",
+    "Reassurance and reexamination"
+   ],
+   "say": "The last card of the gonadarche panel describes pubertal gynecomastia: estradiol briefly outruns testosterone in mid-puberty, so the tender breast tissue is transient and reassurance and reexamination are the plan."
+  }
  },
  {
   "id": "rp7q11",

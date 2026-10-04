@@ -119,6 +119,14 @@
    "Mature teratoma": "Mature teratomas arise from germ cells of normal ovaries in young women and are not linked to Y material in dysgenetic gonads.",
    "Leydig cell tumor": "Leydig cell tumors arise in normal testes and secrete testosterone or estrogen; they are not the typical tumor of streak gonads.",
    "Serous cystadenoma": "Serous cystadenomas are surface epithelial tumors of normal adult ovaries and have no connection to gonadal dysgenesis."
+  },
+  "media": "fig:rp6_dsd",
+  "pt": {
+   "hl": [
+    "Gonadoblastoma risk;",
+    "Streak gonads"
+   ],
+   "say": "The Swyer syndrome row lists streak gonads and gonadoblastoma risk, so gonadal tissue that contains Y material is removed once the diagnosis is made."
   }
  },
  {
@@ -242,6 +250,13 @@
    "Hearing": "Sensorineural deafness occurs in some genetic forms, but the defining sensory loss is smell, from failed olfactory neuron migration.",
    "Vision": "Vision is spared; visual loss with delayed puberty points to a pituitary or hypothalamic mass such as a craniopharyngioma.",
    "Balance": "Vestibular function is not part of Kallmann syndrome; the defect is limited to olfactory and GnRH neuron migration."
+  },
+  "media": "fig:rp7_delayed",
+  "pt": {
+   "hl": [
+    "Anosmia: loss of smell; normal karyotype"
+   ],
+   "say": "The Kallmann card lists anosmia, the loss of smell, because olfactory neurons and GnRH neurons migrate together from the olfactory placode and fail together."
   }
  },
  {
@@ -336,6 +351,14 @@
    "Preeclampsia": "Preeclampsia stems from abnormal spiral artery remodeling and placental ischemia, not from a steroid enzyme defect.",
    "Hyperemesis gravidarum": "Severe vomiting in pregnancy tracks with high hCG, as in molar or multiple pregnancy, rather than with androgen excess.",
    "Polyhydramnios": "Excess amniotic fluid reflects impaired fetal swallowing or excess fetal urine, not maternal exposure to fetal androgens."
+  },
+  "media": "fig:rp6_dsd",
+  "pt": {
+   "hl": [
+    "Placental aromatase",
+    "Maternal virilization;"
+   ],
+   "say": "The placental aromatase deficiency row lists maternal virilization and low estriol: fetal androgens are not aromatized by the placenta, so they reach the mother and virilize her."
   }
  },
  {
@@ -427,6 +450,14 @@
    "Genotypic sex": "This term means the chromosomal complement, such as 46,XX or 46,XY, fixed at fertilization.",
    "Gonadal sex": "This term refers to whether the gonads are testes, ovaries or streaks, a separate biological layer.",
    "Sexual orientation": "Orientation describes whom a person is attracted to, which is independent of how that person identifies."
+  },
+  "media": "fig:rp6_layers",
+  "pt": {
+   "hl": [
+    "Gender identity",
+    "Inner sense of being a woman,"
+   ],
+   "say": "The fourth row defines gender identity as a person's inner sense of being a woman, a man or another gender; it is not read from the karyotype or anatomy, so the clinician asks."
   }
  }
 ]

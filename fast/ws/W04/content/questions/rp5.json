@@ -309,7 +309,15 @@
     ]
    ]
   ],
-  "bl": "Müllerian anomalies with renal agenesis on the same side point to the mesonephric duct, which gives the ureteric bud and guides the Müllerian duct."
+  "bl": "Müllerian anomalies with renal agenesis on the same side point to the mesonephric duct, which gives the ureteric bud and guides the Müllerian duct.",
+  "ef": "rp5_mullerian",
+  "pt": {
+   "hl": [
+    "The mesonephric duct links kidney and uterus",
+    "A hemivagina may obstruct; renal agenesis"
+   ],
+   "say": "The band names the mesonephric duct as the link: it sprouts the ureteric bud and guides the Müllerian duct, so a didelphys with an obstructed hemivagina and same-side renal agenesis comes from one early defect."
+  }
  },
  {
   "id": "rp5q05",
@@ -383,7 +391,15 @@
     ]
    ]
   ],
-  "bl": "Two cavities with a smooth external fundus mean failed resorption of the midline septum: a septate uterus, the commonest anomaly."
+  "bl": "Two cavities with a smooth external fundus mean failed resorption of the midline septum: a septate uterus, the commonest anomaly.",
+  "ef": "rp5_mullerian",
+  "pt": {
+   "hl": [
+    "Septum persists: septate uterus",
+    "Smooth fundus, two cavities"
+   ],
+   "say": "The third card shows the step that failed: the midline septum between the fused ducts is not resorbed, leaving a septate uterus with a smooth fundus and two cavities, the most common anomaly."
+  }
  },
  {
   "id": "rp5q06",
@@ -455,7 +471,15 @@
     ]
    ]
   ],
-  "bl": "Primary amenorrhea with normal breasts, normal ovaries, 46,XX and no uterus is Müllerian agenesis, often with renal anomalies."
+  "bl": "Primary amenorrhea with normal breasts, normal ovaries, 46,XX and no uterus is Müllerian agenesis, often with renal anomalies.",
+  "ef": "rp5_mullerian",
+  "pt": {
+   "hl": [
+    "Neither forms: Müllerian agenesis (MRKH)",
+    "46,XX; normal ovaries, breasts, hair"
+   ],
+   "say": "In the first card neither duct forms: Müllerian agenesis (MRKH) is a 46,XX girl with normal ovaries, breasts and pubic hair but no uterus and a short blind vagina, often with a renal anomaly."
+  }
  },
  {
   "id": "rp5q07",
@@ -526,7 +550,15 @@
     ]
    ]
   ],
-  "bl": "Primary amenorrhea with cyclic pain and a bulging bluish membrane is an imperforate hymen with hematocolpos."
+  "bl": "Primary amenorrhea with cyclic pain and a bulging bluish membrane is an imperforate hymen with hematocolpos.",
+  "ef": "rp5_mullerian",
+  "pt": {
+   "hl": [
+    "Imperforate hymen",
+    "Hematocolpos, cyclic pain, normal uterus"
+   ],
+   "say": "The fourth card shows the vaginal plate failing to open: an imperforate hymen gives a bulging bluish membrane, hematocolpos and cyclic pain, with a normal uterus above the blockage."
+  }
  },
  {
   "id": "rp5q08",
@@ -678,7 +710,15 @@
     ]
    ]
   ],
-  "bl": "Epispadias is a dorsal urethral opening from abnormal positioning of the genital tubercle and travels with bladder exstrophy."
+  "bl": "Epispadias is a dorsal urethral opening from abnormal positioning of the genital tubercle and travels with bladder exstrophy.",
+  "ef": "rp5_male",
+  "pt": {
+   "hl": [
+    "Epispadias: opening on the dorsum",
+    "Genital tubercle positioned abnormally"
+   ],
+   "say": "The epispadias card shows a dorsal urethral opening from a genital tubercle formed in the wrong position, traveling with bladder exstrophy; hypospadias above it is the failure of urethral folds to fuse."
+  }
  },
  {
   "id": "rp5q10",
@@ -833,7 +873,15 @@
     ]
    ]
   ],
-  "bl": "Cryptorchidism raises germ cell tumor risk, mainly seminoma, in both testes; orchiopexy improves fertility but does not remove it."
+  "bl": "Cryptorchidism raises germ cell tumor risk, mainly seminoma, in both testes; orchiopexy improves fertility but does not remove it.",
+  "ef": "rp5_male",
+  "pt": {
+   "hl": [
+    "Cryptorchidism: germ cell tumor risk",
+    "even after orchiopexy"
+   ],
+   "say": "The cryptorchidism card states that germ cell tumor risk, mainly seminoma, stays raised in both testes even after orchiopexy, which improves fertility but does not remove the cancer risk."
+  }
  },
  {
   "id": "rp5q12",

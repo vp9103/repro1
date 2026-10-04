@@ -1,0 +1,40 @@
+before 1280x900 light rapid right #live: PASS "Feedback logic Correct: LH. Two days of high estradiol flip the pituitary to positive feedback; the "
+before 1280x900 light rapid right next lands on prompt: FAIL BUTTON.rfopt {"rfo":"1"} i=1
+before 1280x900 light rapid right extra Enter answers nothing: FAIL {"i":1,"pick":1}
+before 1280x900 light rapid wrong #live: FAIL "Hormone synthesis Correct: T3. T3 binds the thyroid hormone receptor with about ten times the affinity of T4, so tissues convert T4 to T3 before it acts." want "Wrong: Reverse T3. Correct: T3."
+before 1280x900 light rapid wrong next lands on prompt: PASS DIV.rfq {} i=1
+before 1280x900 light rapid wrong extra Enter answers nothing: PASS {"i":1,"pick":null}
+before 1280x900 light spot right next lands on question: FAIL BUTTON.qopt {"spo":"4"} i=1
+before 1280x900 light spot extra Enter answers nothing: FAIL {"i":1,"pick":4}
+before 1280x900 light practice right next lands on stem: FAIL BUTTON.qopt {"opt":"0"} i=1
+before 1280x900 light practice extra Enter answers nothing: FAIL {"i":1,"shown":true}
+before 1280x900 dark rapid right #live: PASS "Cycle phases Correct: Luteal phase. The corpus luteum lives about 14 days unless hCG rescues it, so "
+before 1280x900 dark rapid right next lands on prompt: FAIL BUTTON.rfopt {"rfo":"4"} i=1
+before 1280x900 dark rapid right extra Enter answers nothing: FAIL {"i":1,"pick":4}
+before 1280x900 dark rapid wrong #live: FAIL "Cycle phases Correct: Secretory glands. Progesterone from the corpus luteum turns straight proliferative glands into coiled secretory glands with subnuclear vac" want "Wrong: Atrophic glands. Correct: Secretory glands."
+before 1280x900 dark rapid wrong next lands on prompt: PASS DIV.rfq {} i=1
+before 1280x900 dark rapid wrong extra Enter answers nothing: PASS {"i":1,"pick":null}
+before 1280x900 dark spot right next lands on question: FAIL BUTTON.qopt {"spo":"1"} i=1
+before 1280x900 dark spot extra Enter answers nothing: FAIL {"i":1,"pick":1}
+before 1280x900 dark practice right next lands on stem: FAIL BUTTON.qopt {"opt":"3"} i=1
+before 1280x900 dark practice extra Enter answers nothing: FAIL {"i":1,"shown":true}
+before 400x860 light rapid right #live: PASS "Hormone synthesis Correct: T3. T3 binds the thyroid hormone receptor with about ten times the affini"
+before 400x860 light rapid right next lands on prompt: FAIL BUTTON.rfopt {"rfo":"3"} i=1
+before 400x860 light rapid right extra Enter answers nothing: FAIL {"i":1,"pick":3}
+before 400x860 light rapid wrong #live: FAIL "Cycle phases Correct: Secretory glands. Progesterone from the corpus luteum turns straight proliferative glands into coiled secretory glands with subnuclear vac" want "Wrong: Atrophic glands. Correct: Secretory glands."
+before 400x860 light rapid wrong next lands on prompt: PASS DIV.rfq {} i=1
+before 400x860 light rapid wrong extra Enter answers nothing: PASS {"i":1,"pick":null}
+before 400x860 light spot right next lands on question: FAIL BUTTON.qopt {"spo":"0"} i=1
+before 400x860 light spot extra Enter answers nothing: FAIL {"i":1,"pick":0}
+before 400x860 light practice right next lands on stem: FAIL BUTTON.qopt {"opt":"0"} i=1
+before 400x860 light practice extra Enter answers nothing: FAIL {"i":1,"shown":true}
+before 400x860 dark rapid right #live: PASS "Hormone synthesis Correct: Thyroid peroxidase. Thyroid peroxidase oxidizes iodide, iodinates tyrosin"
+before 400x860 dark rapid right next lands on prompt: FAIL BUTTON.rfopt {"rfo":"3"} i=1
+before 400x860 dark rapid right extra Enter answers nothing: FAIL {"i":1,"pick":3}
+before 400x860 dark rapid wrong #live: FAIL "Cycle phases Correct: Secretory glands. Progesterone from the corpus luteum turns straight proliferative glands into coiled secretory glands with subnuclear vac" want "Wrong: Atrophic glands. Correct: Secretory glands."
+before 400x860 dark rapid wrong next lands on prompt: PASS DIV.rfq {} i=1
+before 400x860 dark rapid wrong extra Enter answers nothing: PASS {"i":1,"pick":null}
+before 400x860 dark spot right next lands on question: FAIL BUTTON.qopt {"spo":"1"} i=1
+before 400x860 dark spot extra Enter answers nothing: FAIL {"i":1,"pick":1}
+before 400x860 dark practice right next lands on stem: FAIL BUTTON.qopt {"opt":"1"} i=1
+before 400x860 dark practice extra Enter answers nothing: FAIL {"i":1,"shown":true}

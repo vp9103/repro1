@@ -199,6 +199,39 @@ const HUB_KEY = "step1.hub.v1";        /* shared across every block */
 /* Gaps scaled to the RETENTION interval (weeks to the exam), not to one sitting.
    The old ladder topped out at 72 h, so block-1 material was never seen again. */
 const BOXES  = [0, 15*60e3, 24*3600e3, 3*24*3600e3, 7*24*3600e3, 14*24*3600e3];
+/* P2.6 (F33, reopened 2026-10-04) - every sentence the page says about when something comes back is
+   built from the constants below, never typed: the rule had drifted from its texts three times (the
+   plan row and method card said a slow right rapid pick stays on its step while the code dropped it
+   a box at the top step; Weak Spots said "come back tomorrow" for a miss that returns in 15 minutes;
+   the due-set text gave 1, 3, 7, 14 days for a first right answer that was due in 15 minutes).
+   REPRO-PLAN section 8 F33 asks only that an item comes back when due, and ENGINE-MAP F33 and F22 name
+   this ladder (15 min, 1, 3, 7, 14 days) and the 12 s hesitation rule, so the ladder and the rule are
+   right and the texts were wrong, except in one place: at the top step the old code moved a slow right
+   pick DOWN a step, which no text said and no rule intends, so promote() now holds it (see hold below).
+   What the code does, and what the texts say:
+     first answer to anything, right or wrong     BOXES[1] (15 minutes)
+     rapid pick: right / slow right / miss        up one step / holds its step (SLOW_RAPID_MS) / down one step, never below BOXES[1]
+     question and recall grid: right / miss       up one step / the first step (a question), grid per promote()
+     question right, lucky-answer re-check        VERIFY_GAP.first (a day) after a first right answer
+   Every gap carries +-15% jitter and is capped by examCeiling(). */
+const SLOW_RAPID_MS = 12000;                     /* a right rapid pick slower than this is recognised, not known */
+const VERIFY_GAP    = {first: 24*3600e3, again: 3*24*3600e3};
+function spanWord(ms){
+  const m = Math.round(ms/6e4); if(m < 60) return m + (m === 1 ? " minute" : " minutes");
+  const h = Math.round(ms/36e5); if(h < 24) return h + (h === 1 ? " hour" : " hours");
+  const d = Math.round(ms/864e5); return d + (d === 1 ? " day" : " days"); }
+/* the steps after the first, "1, 3, 7 and 14 days"; the first step alone is "15 minutes" */
+function ladderTail(){
+  const st = BOXES.slice(2).map(ms => Math.round(ms/864e5));
+  return st.length > 1 ? st.slice(0, -1).join(", ") + " and " + st[st.length-1] + " days" : st.length ? st[0] + (st[0] === 1 ? " day" : " days") : ""; }
+const ladderWords = () => spanWord(BOXES[1]) + (BOXES.length > 2 ? ", then " + ladderTail() : "");
+const slowWords   = () => (SLOW_RAPID_MS/1000) + " seconds";
+/* the two rules as one sentence each, for the places that explain a set that has nothing due */
+const schedQuestionRule = () => "The first answer to a question, right or wrong, brings it back in about " + spanWord(BOXES[1])
+  + "; each further right answer moves it up one step (" + ladderTail() + "), and a miss puts it back at " + spanWord(BOXES[1]) + ".";
+const schedRapidRule = () => "The first answer to a pick, right or wrong, brings it back in about " + spanWord(BOXES[1])
+  + "; each right answer moves it up one step (" + ladderTail() + ") unless it took over " + slowWords()
+  + ", which keeps it on its step; a miss moves it down one step, never below the " + spanWord(BOXES[1]) + " one.";
 const DAILY_MIN    = 120;              /* fallback when no pace is selected */
 /* P1.9 - REVIEW_FLOOR used to protect a flat 40 minutes for due review. On a
    30-minute day (a 14-day pace) that was more than the whole day, so a short
@@ -509,8 +542,11 @@ function examCeiling(){
      the exam instead, so the ceiling is always after now and before the exam. */
   return now + (e - now) / 2;
 }
-function promote(rec, ok){
-  rec.box = ok ? Math.min((rec.box||0)+1, BOXES.length-1) : Math.max((rec.box||0)-1, 1);
+/* hold: a right answer that does not earn a step (a slow rapid pick) stays on the step it is on, the first one
+   for an item never seen. It used to be promoted and then moved down a box, which at the top step
+   dropped it from 14 days to 7 where every lower step simply held. */
+function promote(rec, ok, hold){
+  rec.box = ok ? (hold ? Math.max(rec.box||0, 1) : Math.min((rec.box||0)+1, BOXES.length-1)) : Math.max((rec.box||0)-1, 1);
   const gap = BOXES[rec.box] * (0.85 + Math.random()*0.3);   /* jitter stops clumping */
   rec.due = Math.min(Date.now() + gap, examCeiling());
   rec.n = (rec.n||0)+1; rec.last = Date.now(); return rec;
@@ -943,9 +979,9 @@ function errorTypesHTML(et){
     <b>Confusion</b> &mdash; put the two named things side by side, write down the single feature that separates
     them, then answer questions in which only that feature changes; re-reading the whole topic leaves the pair
     fused.<br>
-    <b>Knowledge gap</b> &mdash; go back to the teaching section and read it, then let the questions come back
-    tomorrow rather than retrying them now; re-testing material that was never encoded returns the same wrong
-    answer.</div>
+    <b>Knowledge gap</b> &mdash; go back to the teaching section and read it before the missed question comes back
+    (a miss returns in about ${spanWord(BOXES[1])}) rather than retrying it from memory of its options; re-testing
+    material that was never encoded returns the same wrong answer.</div>
   <div class="call" style="margin-top:14px"><span class="cl">How these three numbers are measured</span>
     <b>Too fast</b> is measured against the stem rather than against a flat number: <b>260&#8239;ms a word</b>, never
     less than <b>6&#8239;s</b>, which across this bank runs from ${Math.round(et.floorLo/1000)}&#8239;s on the shortest
@@ -1174,9 +1210,9 @@ function diagNote(set){
   if(got.length) lines.push("Right: " + got.join("; ") + ".");
   lines.push("The stages below now carry these results. Their order stays the same: read a missed topic closely; "
     + "one right answer is a good start, not proof that you know the topic.");
-  /* promote() puts a first answer, right or wrong, on the 15-minute step */
+  /* promote() puts a first answer, right or wrong, on the first step of BOXES */
   lines.push("Each item you answered is now on the spacing schedule and comes back for review (Review first in the plan, Due now in Rapid): "
-    + "a first answer in about 15 minutes, then further apart each time you get it right.");
+    + "a first answer in about " + spanWord(BOXES[1]) + ", then further apart each time you get it right.");
   return {title:"Diagnostic done: " + right + " of " + items.length + " right", lines:lines, fresh:true};
 }
 function stageProgress(p){
@@ -1476,6 +1512,29 @@ function landFocus(){
   if(t.tabIndex < 0 && !t.hasAttribute("tabindex")) t.setAttribute("tabindex", "-1");
   try{ t.focus({preventScroll: true}); }catch(e){}
 }
+/* P2.6 (F31, reopened 2026-10-04) - focus that must NOT follow the control that had it. After "next" the
+   old code stood the reader on the twin of the control they had been on, and when that was an answer
+   option (Enter on a focused option moves on, by design) the twin was the same-position option of the NEW,
+   unanswered item, so one more Enter answered it unseen. A handler that moves to another item, or that
+   moves what the reader was holding, names where focus goes (landOn) and the next render() puts it there:
+   no argument = the item itself (viewLead), a selector = that control (a placed or returned order step,
+   the order verdict). reveal scrolls it into view when the render left it outside the window; a
+   viewLead landing always does, because a stem above the fold is the F40 defect again. */
+let LAND = null;
+function landOn(sel, reveal){ LAND = {sel:sel || "", reveal:reveal || false}; }
+function inWindow(n, whole){
+  const r = n.getBoundingClientRect(), hd = document.querySelector("header");
+  return r.top >= (hd ? hd.getBoundingClientRect().bottom : 0) - 2 && (whole ? r.bottom <= window.innerHeight : r.top < window.innerHeight - 24); }
+function applyLand(L){
+  const app = el("app"); if(!app) return false;
+  let t = L.sel ? app.querySelector(L.sel) : null;
+  const lead = !t; if(!t) t = viewLead() || document.querySelector("main"); if(!t) return false;
+  if(!t.hasAttribute("tabindex") && t.tabIndex < 0) t.setAttribute("tabindex", "-1");
+  try{ t.focus({preventScroll: true}); }catch(e){}
+  /* reveal "start": a result to be read (the order verdict) comes up under the header unless all of it is already in view */
+  if((L.reveal || lead) && !inWindow(t, L.reveal === "start")) t.scrollIntoView({block: lead || L.reveal === "start" ? "start" : "nearest", behavior: "instant"});
+  return document.activeElement === t;
+}
 function restoreFocus(sig){
   if(!sig) return;
   const now = document.activeElement;
@@ -1516,7 +1575,10 @@ function spokenText(e){
   const caps = [e].concat(Array.from(e.querySelectorAll("*"))).filter(x => getComputedStyle(x).textTransform !== "none");
   const was = caps.map(x => x.style.textTransform);
   caps.forEach(x => { x.style.textTransform = "none"; });
+  /* P2.6 (F31): a chip that shares its line with the verdict ("Hormone synthesis Wrong: ...") gets its stop */
+  const stops = Array.from(e.querySelectorAll("[data-sayend]")).map(x => x.appendChild(document.createTextNode(".")));
   const raw = e.innerText || e.textContent || "";
+  stops.forEach(t => t.remove());
   caps.forEach((x, i) => { x.style.textTransform = was[i]; });
   return raw.split(/\n+/).map(l => l.replace(/\s+/g, " ").trim()).filter(Boolean)
     .map(l => /[.!?:;,\u2014-]$/.test(l) ? l : l + ".").join(" ");
@@ -1645,12 +1707,16 @@ function announceRecovery(){
       .map((n, i) => part(n) + (i === 0 ? "." : "")).join(" ");
     live.textContent = t === live.textContent ? t + "\u00A0" : t; }
   try{ box.focus({preventScroll:true}); }catch(_e){}
+  /* the notice is the first thing on the Path: the view starts at the top, and that is its position now
+     (restoreScroll, run after wire() and still waiting for its frame, must not take the reader back) */
+  S.scroll[S.mode] = 0;
   window.scrollTo({top:0, behavior:"instant"});
   return true;
 }
 function render(){
   /* P1.2 - remember who had focus before the subtree is thrown away */
   const keepFocus = captureFocus();
+  const land = LAND; LAND = null;   /* P2.6 (F31): a named landing is for this render only */
   if(RENDER_NOTE && RENDER_NOTE.at !== S.mode) RENDER_NOTE = null;   /* the notice belongs to the view it was shown on */
   if(PATH_NOTE && S.mode !== "path") PATH_NOTE = null;
   let phase = "repair";
@@ -1666,6 +1732,7 @@ function render(){
      the recovery path clears the region too. */
   announceFeedback();
   if(announceRecovery()) return;
+  if(land && applyLand(land)) return;
   /* P1.2 - after the rebuild AND after wire(), put the reader back where
      they were. Outside the try/catch so the recovery path restores too. */
   restoreFocus(keepFocus);
@@ -1741,9 +1808,17 @@ function renderAround(keep){
   }catch(err){ console.error("renderAround fell back to render", err); render(); return; }
   announceFeedback();
 }
+/* P2.6 (F40, reopened 2026-10-04) - the saved position is read when the frame runs, not when it is
+   asked for. A render that lands the reader somewhere on purpose (the diagnostic result, a recovery
+   notice, a next item) scrolls and records that position first, and this frame used to scroll back to
+   the one captured before it: the diagnostic result sat 157 px (1280) and 570 px (400) above the
+   window while holding focus. The scroll event of the landing runs before this frame, so S.scroll
+   already holds where the reader now is. */
 function restoreScroll(){
   const y = S.scroll[S.mode];
-  if(typeof y === "number" && y > 0) requestAnimationFrame(()=>window.scrollTo({top:y, behavior:"instant"}));
+  if(typeof y === "number" && y > 0) requestAnimationFrame(()=>{
+    const now = S.scroll[S.mode];
+    if(typeof now === "number" && now > 0) window.scrollTo({top:now, behavior:"instant"}); });
 }
 
 /* @region engine.hub (ENGINE, engine) */
@@ -1886,8 +1961,8 @@ function todaysPlan(){
                 /* P2.3: the rule as promote() and wireRapid() apply it (BOXES; +-15% jitter; capped
                    by examCeiling). It used to say "misses come back tomorrow": a miss drops one box,
                    never below the 15-minute one, so an early item is back in about 15 minutes. */
-                : "A right answer moves an item up one step (15 minutes, then 1, 3, 7 and 14 days) unless it took over 12 s, "
-                  + "which keeps it on its step; a miss moves it down one step, never below the 15-minute one."),
+                : "A right answer moves an item up one step (" + ladderWords() + ") unless it took over " + slowWords() + ", "
+                  + "which keeps it on its step; a miss moves it down one step, never below the " + spanWord(BOXES[1]) + " one."),
       mins:dueMins, act:["rf","due"], n:dueRapid});
   }
   /* P2.3: the row's text counts what the Linked queue set serves (setCount). P2.V F8: it is now also
@@ -2214,7 +2289,7 @@ function viewPath(){
     <div class="mcard"><span class="mtag">Linked review</span><h4>A miss schedules its own revision</h4>
       <p>Get a question wrong and the related rapid items are queued automatically. You never have to notice a gap and act on it yourself.</p></div>
     <div class="mcard"><span class="mtag">Spacing</span><h4>Items return on expanding delays</h4>
-      <p>A right answer sends an item one step further out (15 minutes, then 1, 3, 7 and 14 days, each varied a little), except a rapid pick that took over 12 seconds, which stays on its step; a miss brings it back sooner. Nothing is scheduled later than two days before ${esc(EXAM_NAME)} (halfway to it, inside the last two days), so every item gets a last pass.</p></div>
+      <p>A right answer sends an item one step further out (${ladderWords()}, each varied a little), except a rapid pick that took over ${slowWords()}, which stays on its step. A miss brings a rapid pick back one step sooner (never sooner than ${spanWord(BOXES[1])}) and a question back to the first step. Nothing is scheduled later than two days before ${esc(EXAM_NAME)} (halfway to it, inside the last two days), so every item gets a last pass.</p></div>
     <div class="mcard"><span class="mtag">Across blocks</span><h4>Earlier blocks come back while you work on this one</h4>
       <p>Rapid picks you have answered go into one store shared by every block opened in this browser from the same site, so the plan&rsquo;s review row also brings back other blocks&rsquo; due picks (not while High yield only is on).</p></div>
     <div class="mcard"><span class="mtag">Interleaving</span><h4>Topics are mixed, not blocked</h4>
@@ -3339,7 +3414,7 @@ function orderDrillHTML(d){
   return `<div class="toolbar"><span class="tl">${esc(d.t)}</span>
       <span style="flex:1"></span>${flagCtrl("drill", d.id)}<button class="btn sm gho" data-dr="__quit">End drill</button></div>
     <div class="panel">
-      <p style="font-size:15px;color:var(--ink-2);line-height:1.6;max-width:62ch;margin-bottom:6px">${fmt(d.q)}</p>
+      <p data-viewlead style="font-size:15px;color:var(--ink-2);line-height:1.6;max-width:62ch;margin-bottom:6px">${fmt(d.q)}</p>
       <div class="orderwrap">
         <div class="ordercol"><h6>Steps, out of order</h6>
           <div class="orderpool">${pool.length?pool.map(ix=>
@@ -3358,7 +3433,7 @@ function orderDrillHTML(d){
            P2.V F21: it now names every step that is out of place and where it belongs (the
            steps themselves said so only by color), and it sits right under the board it judges,
            above the buttons. -->
-      ${checked?`<div class="call ${st.perfect?"mnem":"trap"}" data-verdict style="margin-top:18px">
+      ${checked?`<div class="call ${st.perfect?"mnem":"trap"}" data-verdict id="ordverdict" tabindex="-1" style="margin-top:18px">
         <span class="cl">${st.perfect?"Exactly right":"Not the real order"}</span>${orderVerdictText(d, placed)} ${fmt(d.key)}</div>`:""}
       <div class="btnrow" style="margin-top:18px">
         ${checked?`<button class="btn pri" data-dr="__again">Try again</button>
@@ -3382,7 +3457,7 @@ function orderVerdictText(d, placed){
 /* @region engine.view-rapid (LITERALS, engine) */
 function rfCatHTML(r){
   const t = r && r.tags && r.tags[0], l = t && TAG_LABELS[t];
-  return l ? '<span class="rfcat" title="The kind of fact this item tests">'+esc(l)+'</span> ' : "";
+  return l ? '<span class="rfcat" data-sayend="1" title="The kind of fact this item tests">'+esc(l)+'</span> ' : "";
 }
 function viewRapid(){
   /* P5.4: same line, same place, one shared signal. Rapid answers and practice
@@ -3430,7 +3505,11 @@ function viewRapid(){
           ?`<div class="optwhy" id="rfw${i}"${open?"":" hidden"}><b>${i===rf.pick?"Your pick &mdash; why it is wrong:":"Why not "+"ABCDE"[i]+":"}</b> ${fmt(why)}</div>`:""}</div>`;}).join("")}</div>
       ${shown?"":'<p class="rfhint">Keys 1&ndash;5 answer &middot; Enter goes to the next item</p>'}
       <!-- P1.3: the rapid verdict and its one-line explanation, marked so it is announced. -->
-      ${shown ? '<div class="rfx" data-verdict>'+rfCatHTML(r)+'<b>Correct: '+fmt(r.o[r.a])+'</b><br>'+(r.x ? fmt(r.x) : "The keyed pairing is the one to retrieve automatically.")+'</div>'
+      <!-- P2.V F31 (reopened): a wrong pick said only "Correct: <answer>", so #live never told a listener the pick
+           was wrong; the verdict now leads with "Wrong: <pick>." the way practice leads with "Not quite". -->
+      ${shown ? '<div class="rfx'+(rf.pick !== r.a ? " miss" : "")+'" data-verdict>'+rfCatHTML(r)
+        +(rf.pick !== r.a ? '<b class="rfmiss">Wrong: '+fmt(r.o[rf.pick])+(/[.!?]$/.test(stripTags(String(r.o[rf.pick])).trim()) ? "" : ".")+'</b> ' : "")
+        +'<b>Correct: '+fmt(r.o[r.a])+'</b><br>'+(r.x ? fmt(r.x) : "The keyed pairing is the one to retrieve automatically.")+'</div>'
         +(rapidMedia(r)
            /* P1.8: pinned figure opens expanded, with the say-line above it and r.pt.hl marked */
            ? deepReviewHTML(r.c,"Why this answer fits — see it drawn out",rapidMedia(r),
@@ -5307,8 +5386,8 @@ function setEmptyHTML(m, ev){
   const noFlag = "No topic is flagged weak yet, so there is nothing to target. Weak Spots flags a topic from the evidence in your answers.";
   let txt = P ? {
     missed: "No question has a wrong answer as its most recent answer. A question joins this set when you miss it and leaves it when you answer it right.",
-    due: "No answered question is due for review yet. Each answer schedules the question's return: about 15 minutes after a miss, then further apart after each right answer in a row (1, 3, 7, then 14 days).",
-    verify: "No right answer is waiting to be re-checked. A question you get right comes back a day later, to check that the answer was not a lucky guess.",
+    due: "No answered question is due for review yet. Each answer schedules the question's return. " + schedQuestionRule(),
+    verify: "No right answer is waiting to be re-checked. A question you get right comes back for a re-check " + spanWord(VERIFY_GAP.first) + " later, to check that the answer was not a lucky guess.",
     weak: flagged.length ? "Your flagged topics (" + fl + ") have no question left that is unanswered or was last answered wrong." : noFlag,
     unseen: "You have attempted every question.",
     all: "There are no questions to serve."}[k] : SP ? {
@@ -5316,7 +5395,7 @@ function setEmptyHTML(m, ev){
       + "To go back over the ones you got wrong, open &ldquo;Build your own set&rdquo; below and choose &ldquo;Got wrong&rdquo;.",
     all: "There are no images to serve."}[k] : {
     linked: "The linked queue is empty. Missing a practice question queues the rapid picks on the same fact, and each one leaves the queue when you answer it right.",
-    due: "No rapid pick is due for review yet. Each answer schedules the pick's return on the spacing schedule.",
+    due: "No rapid pick is due for review yet. Each answer schedules the pick's return. " + schedRapidRule(),
     weak: flagged.length ? "Your flagged topics (" + fl + ") have no rapid picks." : noFlag,
     all: "There are no rapid picks to serve."}[k];
   if(S.hiOnly){ const hid = unfiltered(() => setCount(m, k, ev).m);
@@ -5395,7 +5474,7 @@ function wirePractice(app){
     if(prev.falseConf && rec.streak < 2) rec.falseConf = true;
     if(ps.src === "diag") rec.diag = true;
     rec.verified = !!(ok && prev.ok);                 /* right twice, spaced apart = known */
-    rec.verifyDue = ok ? Math.min(Date.now() + (prev.ok ? 3*24*3600e3 : 24*3600e3), examCeiling()) : 0;
+    rec.verifyDue = ok ? Math.min(Date.now() + (prev.ok ? VERIFY_GAP.again : VERIFY_GAP.first), examCeiling()) : 0;
     /* Put the QUESTION itself on the spacing ladder, not just its rapid items.
        Vignettes are the format the exam uses, so they are the ones that most
        need to come back. */
@@ -5430,6 +5509,7 @@ function wirePractice(app){
   const nx = el("qnext");
   if(nx) nx.onclick = ()=>{
     const ps = S.ps;
+    landOn();   /* P2.6 (F31): the new question's stem, never the same-position option of it */
     if(ps.i + 1 < ps.set.length){ ps.i++; ps.pick=null; ps.shown=false; ps.open=null; ps.linkQ=null; ps.confKept=!!ps.conf; ps.t0=Date.now(); save(); render(); window.scrollTo({top:0,behavior:"instant"}); }
     else finishSet();
   };
@@ -5552,19 +5632,28 @@ function wireDrill(app){
   const nx = el("drnext");
   if(nx) nx.onclick = ()=>{
     const st = S.dr; if(!st) return;
+    landOn();   /* P2.6 (F31): the new item itself, whatever had focus */
     st.last = null; S.scroll.drill = 0; save(); render();
     window.scrollTo({top:0,behavior:"instant"});
   };
   app.querySelectorAll("[data-dwhy]").forEach(b => b.onclick = ()=>drToggleWhy(b));
-  app.querySelectorAll("[data-op]").forEach(b => b.onclick = ()=>{
+  /* P2.6 (F31b, reopened): a placed step leaves the pool and a returned one leaves the sequence, so
+     the control the reader pressed is gone after the redraw and focus fell to <main>. It now follows
+     the step: a placed step is focused in "Your sequence", a returned one in the pool, and the check
+     lands on its verdict. A keyboard press (click detail 0) also brings the step into view, which
+     matters where the two columns stack (400 px). */
+  app.querySelectorAll("[data-op]").forEach(b => b.onclick = e => {
     const st = S.dr, ix = +b.dataset.op;
-    (st.placed = st.placed||[]).push(ix); st.pool = st.pool.filter(x=>x!==ix); save(); render(); });
-  app.querySelectorAll("[data-ounp]").forEach(b => b.onclick = ()=>{
-    const st = S.dr, n = +b.dataset.ounp;
-    st.pool.push(st.placed[n]); st.placed.splice(n,1); save(); render(); });
+    (st.placed = st.placed||[]).push(ix); st.pool = st.pool.filter(x=>x!==ix);
+    landOn('[data-ounp="' + (st.placed.length - 1) + '"]', !e || !e.detail); save(); render(); });
+  app.querySelectorAll("[data-ounp]").forEach(b => b.onclick = e => {
+    const st = S.dr, n = +b.dataset.ounp, ix = st.placed[n];
+    st.pool.push(ix); st.placed.splice(n,1);
+    landOn('[data-op="' + ix + '"]', !e || !e.detail); save(); render(); });
   const oc = el("ocheck");
   if(oc) oc.onclick = ()=>{
     const st = S.dr, d = DRILLS.find(x=>x.id===st.id);
+    landOn("#ordverdict", "start");
     st.checked = true; st.perfect = st.placed.every((ix,n)=>ix===n);
     { const prev=S.drills[d.id]||{}; S.drills[d.id] = {missed: st.placed.map((ix,n)=>ix===n?null:n).filter(x=>x!==null), done:true, ts:Date.now(), n:(prev.n||0)+1,
       hist:(prev.hist||[]).concat(st.placed.map((ix,n)=>({ix,pick:n,ok:ix===n,ts:Date.now()}))).slice(-60)}; }
@@ -5608,12 +5697,11 @@ function wireRapid(app){
     rec.picks = (rec.picks||[]).concat([r.o[pick]]).slice(-10);
     rec.ms = rms;
     if(rf.src === "diag"){ rec.diag = true; rec.diagOk = ok; }
-    /* A rapid item answered correctly but slowly is recognised, not known:
-       hold it one box back so it comes round again sooner. */
-    const hesitant = ok && rms > 12000;
-    promote(rec, ok);
-    if(hesitant){ rec.box = Math.max(1, rec.box - 1);
-      rec.due = Math.min(Date.now() + BOXES[rec.box], examCeiling()); rec.slow = true; }
+    /* A rapid item answered correctly but slowly is recognised, not known: it earns no step
+       (promote's hold), so it comes round again at the gap it already had. */
+    const hesitant = ok && rms > SLOW_RAPID_MS;
+    promote(rec, ok, hesitant);
+    if(hesitant) rec.slow = true;
     if(foreign){ const h = hubLoad(); const it = h.items[rf.set[rf.i]];
       if(it){ it.box=rec.box; it.due=rec.due; it.miss=rec.miss; it.n=rec.n; hubSave(h); HUBCACHE=null; } }
     if(ok) S.linked = (S.linked||[]).filter(x => x !== r.i);
@@ -5622,6 +5710,7 @@ function wireRapid(app){
   const nx = el("rfnext");
   if(nx) nx.onclick = ()=>{
     const rf = S.rf;
+    landOn();   /* P2.6 (F31): the new item's prompt, never the same-position option of it */
     if(rf.i+1 < rf.set.length){ rf.i++; rf.pick=null; rf.open=null; rf.t0=Date.now(); save(); render(); }
     else{
       if(rf.src && rf.src.startsWith("stage:")) (S.stage[rf.src.slice(6)] = S.stage[rf.src.slice(6)]||{}).rapid = true;
@@ -5691,6 +5780,7 @@ function wireSpot(app){
   const nx = el("spnext");
   if(nx) nx.onclick = ()=>{
     const sp = S.sp;
+    landOn();   /* P2.6 (F31): the new image's question, never the same-position option of it */
     if(sp.i+1 < sp.set.length){ sp.i++; sp.pick=null; sp.open=null; buildSpotOpts(); save(); render(); window.scrollTo({top:0,behavior:"instant"}); }
     else { S.sp=null; save(); render(); }
   };

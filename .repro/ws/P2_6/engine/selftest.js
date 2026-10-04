@@ -460,17 +460,28 @@ if(/[?&]selftest=1/.test(location.search)){
      queue's growth (at most 6 keyword matches, or 4), not every rapid item on the topic. A second
      miss on the same question queues nothing new, and the notice must say the items were already
      there. The wrong option is clicked on the rendered question. */
+  /* P2.6 (reopened 2026-10-04) - the second miss is made on the SAME wrong option as the first.
+     data-opt is the option's own index, but a served question is displayed in an order seeded by its
+     attempt count, so "the first wrong option on screen" was a different option on the second serve;
+     wirePractice queues rapid items by the keywords of the wrong option picked (q.w[pick]), so a
+     different pick can honestly add items ("1 newly added, 5 already there") and the check failed on
+     any bank whose wrong-option notes differ, while the stub's tiny bank hid it. */
   sec("linkedNotice", () => { const q = QS.find(x => RAPID.some(r => r.c === x.c)); if(!q) return {skipped:"no question with rapid items on its topic"};
-    const bad = [], serve = () => { S.mode = "practice"; S.ps = {set:[q.id], i:0, src:"all", t0:Date.now(), conf:"sure"}; SET_EMPTY = null; render();
-      const b = [...document.querySelectorAll("main [data-opt]")].find(x => +x.dataset.opt !== q.a); if(b) b.click();
+    const wrong = (q.a + 1) % q.o.length, bad = [], serve = pick => { S.mode = "practice"; S.ps = {set:[q.id], i:0, src:"all", t0:Date.now(), conf:"sure"}; SET_EMPTY = null; render();
+      const b = document.querySelector('main [data-opt="' + pick + '"]'); if(b) b.click();
       const t = ((document.querySelector("main .linked") || {}).textContent || "").replace(/\s+/g, " ").trim(), m = /Queued for review:\s*(\d+)/.exec(t);
       return {t, n:m ? +m[1] : 0}; };
-    fresh(); const a = serve(), grew = S.linked.length, onTopic = RAPID.filter(r => r.c === q.c).length;
+    fresh(); const a = serve(wrong), grew = S.linked.length, onTopic = RAPID.filter(r => r.c === q.c).length;
     if(!grew || a.n !== grew) bad.push("first miss: the notice says " + a.n + ", the queue grew by " + grew);
     if(!/added to your linked queue/.test(a.t)) bad.push("first miss: the notice does not say the items were added");
-    const b2 = serve();
+    const b2 = serve(wrong);
     if(b2.n !== grew || S.linked.length !== grew || !/already in your linked queue/.test(b2.t)) bad.push("second miss: \"" + b2.t.slice(0, 90) + "\" with the queue at " + S.linked.length);
-    return {question:q.id, rapidOnTopic:onTopic, queued:grew, first:a.t, second:b2.t, bad, pass:!bad.length}; });
+    /* a miss on a DIFFERENT wrong option may queue other items; the notice must then say exactly how many */
+    const alt = q.o.map((o, i) => i).find(i => i !== q.a && i !== wrong); let third = null;
+    if(alt != null){ const before = S.linked.length, c = serve(alt), g = S.linked.length - before, m = /\((\d+) newly added, (\d+) already there\)/.exec(c.t); third = c.t;
+      if(g === 0 ? !/already in your linked queue/.test(c.t) : g === c.n ? !/added to your linked queue/.test(c.t) : !(m && +m[1] === g && +m[2] === c.n - g))
+        bad.push("miss on another option: the queue grew by " + g + " of " + c.n + " and the notice says \"" + c.t.slice(0, 160) + "\""); }
+    return {question:q.id, rapidOnTopic:onTopic, queued:grew, first:a.t, second:b2.t, third, bad, pass:!bad.length}; });
   /* P2.6 (F30) - the tutor is never handed the answer to an item not answered in the CURRENT
      attempt. The first question, rapid item, image and drill of each kind in the loaded content is
      recorded as answered in an earlier attempt, then served again unanswered: its context must

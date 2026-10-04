@@ -370,7 +370,15 @@
     ]
    ]
   ],
-  "bl": "Hirschsprung disease is a neural crest migration failure; neural crest also forms adrenal medulla chromaffin cells, while the cortex is mesoderm."
+  "bl": "Hirschsprung disease is a neural crest migration failure; neural crest also forms adrenal medulla chromaffin cells, while the cortex is mesoderm.",
+  "ef": "rp4_origins",
+  "pt": {
+   "hl": [
+    "Adrenal medulla: chromaffin cells",
+    "Adrenal cortex: mesoderm"
+   ],
+   "say": "The neural crest card lists the adrenal medulla chromaffin cells beside enteric ganglia, whose failure is Hirschsprung disease; the look-alike card shows the adrenal cortex is mesoderm, not neural crest."
+  }
  },
  {
   "id": "rp4q06",
@@ -442,7 +450,15 @@
     ]
    ]
   ],
-  "bl": "Placenta accreta follows a deficient decidua basalis, often over a cesarean scar, so villi attach directly to myometrium."
+  "bl": "Placenta accreta follows a deficient decidua basalis, often over a cesarean scar, so villi attach directly to myometrium.",
+  "ef": "rp4_placenta",
+  "pt": {
+   "hl": [
+    "Decidua basalis: maternal part of the placenta",
+    "Accreta: villi touch the myometrium"
+   ],
+   "say": "The decidua basalis is the maternal layer under the villi and the plane along which the placenta separates; without it, as in the accreta box, villi touch the myometrium and the placenta will not separate."
+  }
  },
  {
   "id": "rp4q07",
@@ -595,7 +611,15 @@
     ]
    ]
   ],
-  "bl": "Human placental lactogen rises with placental mass and causes the maternal insulin resistance behind gestational diabetes."
+  "bl": "Human placental lactogen rises with placental mass and causes the maternal insulin resistance behind gestational diabetes.",
+  "ef": "rp25_hormones",
+  "pt": {
+   "hl": [
+    "Drives insulin resistance",
+    "Rises with placental mass"
+   ],
+   "say": "The hPL lane shows human placental lactogen rising with placental mass and driving insulin resistance, with lipolysis sparing glucose for the fetus, which is why gestational diabetes appears late in pregnancy."
+  }
  },
  {
   "id": "rp4q09",
@@ -668,7 +692,15 @@
     ]
    ]
   ],
-  "bl": "Placental estriol needs DHEA-S from the fetal adrenal cortex, so anencephaly and fetal adrenal failure lower maternal estriol."
+  "bl": "Placental estriol needs DHEA-S from the fetal adrenal cortex, so anencephaly and fetal adrenal failure lower maternal estriol.",
+  "ef": "rp4_placenta",
+  "pt": {
+   "hl": [
+    "Fetal adrenal cortex: DHEA-S",
+    "Placenta: aromatizes it to estriol"
+   ],
+   "say": "The estriol chain starts with the fetal adrenal cortex making DHEA-S, which the fetal liver hydroxylates before the placenta aromatizes it; anencephaly shrinks this gland, so maternal estriol falls."
+  }
  },
  {
   "id": "rp4q10",
@@ -811,6 +843,14 @@
     ]
    ]
   ],
-  "bl": "Urine leaking from the umbilicus means a patent urachus, the unobliterated intraembryonic part of the allantois."
+  "bl": "Urine leaking from the umbilicus means a patent urachus, the unobliterated intraembryonic part of the allantois.",
+  "ef": "rp4_origins",
+  "pt": {
+   "hl": [
+    "Allantois (urachus)",
+    "Patent urachus: urine leaks at the umbilicus"
+   ],
+   "say": "The first row of the umbilical table shows the allantois closing into the urachus and the median umbilical ligament; if it stays open, urine leaks at the umbilicus, unlike the vitelline duct, which leaks stool."
+  }
  }
 ]

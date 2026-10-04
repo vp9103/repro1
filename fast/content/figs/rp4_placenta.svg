@@ -1,0 +1,56 @@
+<svg class="dia" viewBox="0 0 900 654" role="img" aria-label="Cross-section of the placenta showing the fetal chorion frondosum and the maternal decidua basalis, the accreta spectrum when the decidua basalis is missing, and the chain from fetal adrenal DHEA-S through fetal liver to placental estriol">
+<text class="ttl" x="14" y="26" font-size="18">The placenta: fetal half, maternal half, and an estriol chain</text>
+<rect x="14" y="44" width="520" height="342" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="24" y="54" width="500" height="36" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.5"/>
+<text x="38" y="78" font-size="15">Amniotic cavity, lined by the amnion</text>
+<rect x="24" y="94" width="500" height="112" rx="6" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="38" y="122" font-size="15">Chorion frondosum: fetal part of the placenta</text>
+<text x="38" y="150" font-size="15">Chorionic villi, each with fetal capillaries</text>
+<text x="38" y="178" font-size="15">Umbilical arteries and vein reach them</text>
+<rect x="24" y="210" width="500" height="58" rx="6" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="38" y="234" font-size="15">Intervillous space: maternal blood</text>
+<text x="38" y="256" font-size="15">The villi bathe in it; the two bloods never mix</text>
+<rect x="24" y="272" width="500" height="78" rx="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="38" y="298" font-size="15">Decidua basalis: maternal part of the placenta</text>
+<text x="38" y="322" font-size="15">The plane along which the placenta separates</text>
+<text x="38" y="342" font-size="15">Spiral arteries cross it to feed the space</text>
+<rect x="24" y="354" width="500" height="28" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.5"/>
+<text x="38" y="374" font-size="15">Myometrium</text>
+<rect x="548" y="44" width="338" height="342" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="562" y="72" font-size="15">Where the decidua and chorion sit</text>
+<rect x="558" y="90" width="318" height="50" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.5"/>
+<text class="b" x="570" y="111" font-size="15">Decidua basalis</text>
+<text x="570" y="131" font-size="14">under the placenta, maternal side</text>
+<rect x="558" y="148" width="318" height="50" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.5"/>
+<text class="b" x="570" y="169" font-size="15">Decidua capsularis</text>
+<text x="570" y="189" font-size="14">covers the embryo's outer surface</text>
+<rect x="558" y="206" width="318" height="50" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.5"/>
+<text class="b" x="570" y="227" font-size="15">Decidua parietalis</text>
+<text x="570" y="247" font-size="14">lines the rest of the uterus</text>
+<rect x="558" y="264" width="318" height="50" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.5"/>
+<text class="b" x="570" y="285" font-size="15">Chorion frondosum</text>
+<text x="570" y="305" font-size="14">the villous, fetal part</text>
+<rect x="558" y="322" width="318" height="50" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.5"/>
+<text class="b" x="570" y="343" font-size="15">Chorion laeve</text>
+<text x="570" y="363" font-size="14">smooth fetal membrane, no villi</text>
+<rect x="14" y="402" width="420" height="240" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="28" y="432" font-size="15">No decidua basalis: the accreta spectrum</text>
+<text x="28" y="470" font-size="15">Accreta: villi touch the myometrium</text>
+<text x="28" y="504" font-size="15">Increta: villi invade the myometrium</text>
+<text x="28" y="538" font-size="15">Percreta: villi pass through the wall</text>
+<text x="28" y="572" font-size="15">Risk: cesarean scar, placenta previa</text>
+<text x="28" y="606" font-size="15">The placenta will not separate: hemorrhage</text>
+<rect x="448" y="402" width="438" height="240" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="462" y="432" font-size="15">Estriol needs three organs</text>
+<rect x="462" y="444" width="410" height="36" rx="6" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="476" y="468" font-size="15">Fetal adrenal cortex: DHEA-S</text>
+<line x1="667" y1="480" x2="667" y2="490" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="662,490 667,498 672,490" fill="var(--ink-2)"/>
+<rect x="462" y="498" width="410" height="36" rx="6" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="476" y="522" font-size="15">Fetal liver: hydroxylates it</text>
+<line x1="667" y1="534" x2="667" y2="544" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="662,544 667,552 672,544" fill="var(--ink-2)"/>
+<rect x="462" y="552" width="410" height="36" rx="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text x="476" y="576" font-size="15">Placenta: aromatizes it to estriol</text>
+<text x="462" y="618" font-size="14">Low maternal estriol: anencephaly, fetal adrenal failure</text>
+</svg>

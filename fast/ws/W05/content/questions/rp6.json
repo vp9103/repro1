@@ -128,7 +128,12 @@
     ["Breast carcinoma", "Breast epithelium", "Estrogen exposure", "No breast tissue"]
    ]
   ],
-  "bl": "Streak gonads in a 46,XY girl with Swyer syndrome carry a high gonadoblastoma risk, so they are removed."
+  "bl": "Streak gonads in a 46,XY girl with Swyer syndrome carry a high gonadoblastoma risk, so they are removed.",
+  "ef": "rp6_dsd",
+  "pt": {
+   "hl": ["Swyer syndrome", "Gonadoblastoma risk;"],
+   "say": "The Swyer syndrome row shows streak gonads and a uterus in a 46,XY girl, and its clue is gonadoblastoma risk, so both streaks are removed once the diagnosis is made."
+  }
  },
  {
   "id": "rp6q05",
@@ -157,7 +162,12 @@
     ["Normal breast development", "Present", "Present", "Estrogen present in both"]
    ]
   ],
-  "bl": "Sparse pubic and axillary hair separates androgen insensitivity from Müllerian agenesis, because only androgen insensitivity blocks androgen action."
+  "bl": "Sparse pubic and axillary hair separates androgen insensitivity from Müllerian agenesis, because only androgen insensitivity blocks androgen action.",
+  "ef": "rp6_dsd",
+  "pt": {
+   "hl": ["Breasts; sparse pubic", "Normal pubic hair;"],
+   "say": "Both rows have breasts and no uterus, but the androgen insensitivity row has sparse pubic and axillary hair while the Müllerian agenesis row has normal pubic hair, because androgen action is intact there."
+  }
  },
  {
   "id": "rp6q06",
@@ -287,7 +297,12 @@
     ["Conversion of testosterone to dihydrotestosterone", "Normal", "Normal", "Ambiguous"]
    ]
   ],
-  "bl": "Anosmia with low LH, FSH and testosterone means Kallmann syndrome, from failed migration of GnRH neurons out of the olfactory placode."
+  "bl": "Anosmia with low LH, FSH and testosterone means Kallmann syndrome, from failed migration of GnRH neurons out of the olfactory placode.",
+  "ef": "rp7_delayed",
+  "pt": {
+   "hl": ["Kallmann syndrome", "GnRH neurons fail to migrate from the olfactory placode"],
+   "say": "The Kallmann card names the defect: GnRH neurons fail to migrate from the olfactory placode, so LH and FSH stay low, puberty does not start and the sense of smell is lost too."
+  }
  },
  {
   "id": "rp6q10",
@@ -315,7 +330,12 @@
     ["Gain-of-function mutation of the androgen receptor", "Unchanged", "Follows SRY status", "No change in gonadal sex"]
    ]
   ],
-  "bl": "A 46,XX man with testes has SRY moved onto an X chromosome; he is azoospermic because other Y genes are missing."
+  "bl": "A 46,XX man with testes has SRY moved onto an X chromosome; he is azoospermic because other Y genes are missing.",
+  "ef": "rp6_dsd",
+  "pt": {
+   "hl": ["46,XX testicular", "SRY translocation onto"],
+   "say": "The 46,XX testicular DSD row shows testes and no uterus in a 46,XX man, explained by an SRY translocation onto an X chromosome; he is azoospermic because other Y genes are missing."
+  }
  },
  {
   "id": "rp6q11",
@@ -343,7 +363,12 @@
     ["Sexual orientation", "Pattern of attraction", "Asking the person", "Attracted to men"]
    ]
   ],
-  "bl": "The karyotype is genotypic sex; phenotypic sex is the body hormones build, and gender identity is the person's inner sense."
+  "bl": "The karyotype is genotypic sex; phenotypic sex is the body hormones build, and gender identity is the person's inner sense.",
+  "ef": "rp6_layers",
+  "pt": {
+   "hl": ["Genotypic sex", "Karyotype: X or Y from the sperm"],
+   "say": "The first row defines genotypic sex as the karyotype, X or Y from the sperm, fixed at fertilization; her 46,XY is that layer, while her female body is the phenotypic row and her identity is a separate row."
+  }
  },
  {
   "id": "rp6q12",
@@ -372,6 +397,11 @@
     ["Ovaries without a uterus", "Ovaries", "Absent", "Müllerian agenesis"]
    ]
   ],
-  "bl": "A salt-wasting virilized infant with CAH is 46,XX with ovaries, a uterus and fallopian tubes, because no AMH was made."
+  "bl": "A salt-wasting virilized infant with CAH is 46,XX with ovaries, a uterus and fallopian tubes, because no AMH was made.",
+  "ef": "rp6_dsd",
+  "pt": {
+   "hl": ["21-hydroxylase", "Virilized; salt wasting"],
+   "say": "In the 21-hydroxylase deficiency row the gonads are ovaries and the uterus and tubes are present, because no testis made AMH; adrenal androgen virilizes only the external genitalia, with salt wasting in severe forms."
+  }
  }
 ]
