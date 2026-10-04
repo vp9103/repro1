@@ -34,19 +34,63 @@ window.__selftestExtra = ((prev) => ctx => Object.assign(prev ? prev(ctx) : {}, 
     const seed = byTopic[tops[0]].slice(0, 2);
     tops.slice(1).forEach(id => { if(seed.length < 3) seed.push(byTopic[id][0]); });
     if(seed.length < 3) return {rendered:null, skipped:"tag " + tag + " carries only " + seed.length + " items"};
-    seed.forEach(({kind, x}) => {
+    const miss = ({kind, x}) => {
       if(kind === "q"){ const pick = (x.a + 1) % x.o.length, at = {ok:false, conf:"think", pick, ms:30000, ts:now, d:x.d || 2};
         S.qs[x.id] = {ok:false, conf:"think", pick, ms:30000, n:1, ts:now, hist:[at]}; }
       else if(kind === "r"){ const pick = (x.a + 1) % x.o.length;
         S.rapid[x.i] = {box:1, due:now + 6e5, n:1, miss:1, ms:9000, last:now, lastPick:x.o[pick], picks:[x.o[pick]], hist:[{ok:false, pick, ms:9000, ts:now}]}; }
-      else S.drills[x.id] = {missed:[0], done:true, ts:now, n:1, hist:[]}; });
-    S.mode="weak"; render();
+      else S.drills[x.id] = {missed:[0], done:true, ts:now, n:1, hist:[]}; };
+    /* P2.V F25 - the section's words are checked against what conceptThreads() computed, in
+       four seeded states: nothing missed; the idea missed once in each of two topics (the
+       state the verifier caught saying "every miss sits inside a single topic"); twice in
+       one topic; and the listing floor. In each, every "Topic (n)" on the section must be a
+       count conceptThreads() holds for the idea shown, every topic it holds must be named,
+       the rule must be stated from th.rule, and the near miss must say what it still needs. */
+    const title = id => (findT(id) || {t:"?"}).t;
+    const reEsc = s => String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const secText = () => { const n = document.getElementById("threads");
+      return n ? String(n.textContent || "").replace(/\s+/g, " ").trim() : ""; };
+    const check = name => { S.mode = "weak"; render();
+      const th = conceptThreads(), txt = secText(), R = th.rule || {}, bad = [];
+      if(!txt) bad.push(name + ": no #threads section");
+      if(txt.indexOf("missed at least " + R.miss + " times across at least " + R.topics + " different topics") < 0)
+        bad.push(name + ": the rule (" + R.miss + " misses, " + R.topics + " topics) is not stated");
+      const shown = th.rows.length ? th.rows : th.near ? [th.near] : [];
+      shown.forEach(r => { if(txt.indexOf(r.home.l) < 0) bad.push(name + ": " + r.tag + " label missing");
+        r.topics.forEach(id => { if(txt.indexOf(title(id) + " (" + r.byTopic[id] + ")") < 0)
+          bad.push(name + ": " + r.tag + " " + id + " (" + r.byTopic[id] + ") not named"); }); });
+      /* longest titles first, each match blanked, so a title that ends another cannot match inside it */
+      let rest = txt;
+      ALLT().slice().sort((a, b) => String(b.t).length - String(a.t).length).forEach(t => {
+        rest = rest.replace(new RegExp(reEsc(t.t) + " \\((\\d+)\\)", "g"), (m0, k) => {
+          if(!shown.some(r => r.byTopic[t.id] === +k)) bad.push(name + ": " + t.id + " (" + k + ") is not a count conceptThreads computed");
+          return "\u0000"; }); });
+      if(th.rows.length) th.rows.forEach(r => {
+        if(txt.indexOf("Missed " + r.miss + " of " + r.att + " attempt") < 0) bad.push(name + ": " + r.tag + " miss/attempt count");
+        if(txt.indexOf(String(r.home.h)) < 0) bad.push(name + ": " + r.tag + " home section missing"); });
+      else if(th.near){ const n = th.near, moreT = Math.max(0, R.topics - n.topics.length), need = Math.max(R.miss - n.miss, moreT, 1);
+        const want = ["Closest is " + n.home.l + ", missed " + n.miss + " time" + (n.miss === 1 ? "" : "s"),
+                      "after " + need + " more miss" + (need === 1 ? "" : "es") + " (" + (n.miss + need) + " in all)"
+                        + (moreT ? "" : ", in any topic")];
+        if(moreT && n.topics.length === 1) want.push("in a topic other than " + title(n.topics[0]));
+        want.forEach(w => { if(txt.indexOf(w) < 0) bad.push(name + ": near miss lacks \"" + w + "\""); }); }
+      else { if(/Closest is/.test(txt)) bad.push(name + ": names a closest idea conceptThreads did not compute");
+        if(!th.misses && txt.indexOf("No question or rapid pick has been missed yet") < 0) bad.push(name + ": empty state"); }
+      return {state:name, rows:th.rows.map(r => r.tag), near:th.near ? {tag:th.near.tag, byTopic:th.near.byTopic} : null,
+              misses:th.misses, bad}; };
+    const A = byTopic[tops[0]], B = byTopic[tops[1]], states = [];
+    ctx.fresh(); states.push(check("nothing missed"));
+    ctx.fresh(); [A[0], B[0]].forEach(miss); states.push(check("once in each of two topics"));
+    if(A.length >= 2){ ctx.fresh(); [A[0], A[1]].forEach(miss); states.push(check("twice in one topic")); }
+    ctx.fresh(); seed.forEach(miss); states.push(check("at the listing floor"));
+    const mismatches = [].concat(...states.map(s => s.bad));
     const th = conceptThreads(), top = th.rows[0] || null, txt = ctx.main(), H = CONCEPT_HOME[tag];
     return {rendered:/Concept threads/i.test(txt), seededTag:tag, seededTopics:tops.slice(0, 2),
       seeded:seed.map(s => s.kind + ":" + (s.x.id != null ? s.x.id : s.x.ix)),
       listed:th.rows.map(r => r.tag), listedSeeded:th.rows.some(r => r.tag === tag), top: top && top.tag, pointsAt: top && top.home.t,
       pointerRendered: txt.indexOf(ctx.strip(H.h)) >= 0 && txt.indexOf(H.l) >= 0,
-      strong:th.strong.length, thin:th.thin.length}; })() }))(window.__selftestExtra);
+      strong:th.strong.length, thin:th.thin.length,
+      textMatches: !mismatches.length, mismatches, states:states.map(s => ({state:s.state, rows:s.rows, near:s.near}))}; })() }))(window.__selftestExtra);
 /* P5.3 self-test hook, chained onto P5.2's rather than replacing it. It seeds
    one wrong attempt of each kind inside a single topic -- one under the stem
    floor, one on an option the existing pair set already names, one that is
@@ -192,7 +236,12 @@ if(/[?&]selftest=1/.test(location.search)){
   sec("audit", () => window.__pathAudit());
   sec("auditListsEmpty", () => Object.entries(R.audit||{}).filter(([k])=>k!=="counts").every(([,v])=>Array.isArray(v)&&!v.length));
   /* P2.6 - every mode the engine offers (MODES), not a copied list */
-  sec("viewFailures", () => MODES.map(m=>m[0]).map(m=>{ try{ S.mode=m; if(m==="learn") S.cur=(ALLT()[0]||{}).id||null; render(); const t=main(); return /\bNaN\b|\bundefined\b|\[object/.test(t)? m+":leak" : null; }catch(e){ return m+":"+e.message; } }).filter(Boolean));
+  /* P2.V F42 - render() recovers from a throwing view, so a caught error never reached this
+     section and a view that always threw still passed. A recovery is now read off RENDER_FAIL_LOG. */
+  const failN0 = RENDER_FAIL_LOG.length;
+  sec("viewFailures", () => MODES.map(m=>m[0]).map(m=>{ try{ S.mode=m; if(m==="learn") S.cur=(ALLT()[0]||{}).id||null; const n0=RENDER_FAIL_LOG.length; render();
+    if(RENDER_FAIL_LOG.length > n0) return m+":threw "+RENDER_FAIL_LOG[RENDER_FAIL_LOG.length-1].msg;
+    const t=main(); return /\bNaN\b|\bundefined\b|\[object/.test(t)? m+":leak" : null; }catch(e){ return m+":"+e.message; } }).filter(Boolean));
   sec("biasChi", () => { const chi=d=>{const e=d.reduce((a,b)=>a+b,0)/d.length; return +d.reduce((a,o)=>a+(o-e)*(o-e)/e,0).toFixed(1);};
     return [0,1,2,3].map(s=>{ const d=[0,0,0,0,0]; QS.forEach(q=>d[viewOrder(q,s).indexOf(q.a)]++); return chi(d); }); });
   sec("paceDays", () => { let offset=0;
@@ -207,20 +256,83 @@ if(/[?&]selftest=1/.test(location.search)){
   /* P2.V F4 - the plan head's day count (data-plandays, from planDaysLeft) must be what
      todaysPlan() really schedules. The plan is stepped a day at a time for paces 1-14, once
      with no review and once with a standing review load (due items from another block and a
-     linked queue), and on EVERY day the head's figure is compared with the days still taken. */
+     linked queue), and on EVERY day the head's figure is compared with the days still taken.
+     P2.3 - the linked queue is seeded with real rapid ids of this block: repairState now drops any
+     other id, so a made-up one would test a queue the page can no longer hold. */
   sec("paceHeader", () => { if(!PATH.length) return {skipped:"no stages yet"}; let offset=0; const bad=[], hl=window.hubLoad;
     class FakeDate extends RealDate { constructor(...a){ a.length? super(...a) : super(RealDate.now()+offset); } static now(){ return RealDate.now()+offset; } }
     const due={}; for(let i=0;i<6;i++) due["zz"+i]={b:"zz-other", bn:"another block", c:"x", q:"q", o:[], a:0, box:1, due:1, miss:1, n:1};
     window.Date = FakeDate;
-    try{ for(const load of [0,1]){ window.hubLoad = () => ({v:1, items: load ? due : {}});
-      for(let N=1; N<=14; N++){ fresh(); offset=0; S.paceDays=N; if(load) S.linked=["zz0","zz1"]; const said=[]; let day=0;
+    /* P2.V F8 - load 2 is the same review load with "High yield only" on: the other block's due items
+       and any lower-yield linked item drop out of the plan's rows, minutes and head alike */
+    try{ for(const load of [0,1,2]){ window.hubLoad = () => ({v:1, items: load ? due : {}});
+      for(let N=1; N<=14; N++){ fresh(); offset=0; S.paceDays=N; if(load) S.linked=RAPID.slice(0,2).map(r=>r.i); if(load===2) S.hiOnly=true; const said=[]; let day=0;
         while(day<40 && PATH.some(p=>!stageDone(p))){ day++;
           const m=/data-plandays="(\d+)"/.exec(planHTML()); said.push(m ? +m[1] : -1);
           const plan=todaysPlan(); const sr=plan.picked.filter(r=>r.act&&r.act[0]==="stage"); if(!sr.length){ day=-1; break; }
           sr.forEach(r=>completeStage(stageOf(r.act[1]))); bumpDay(plan.mins); offset+=864e5; }
-        if(day<0 || said.some((v,i)=>v!==day-i)) bad.push((load?"with review, ":"")+"pace "+N+": head said "+said.join(",")+", plan took "+day); } } }
+        if(day<0 || said.some((v,i)=>v!==day-i)) bad.push((load===2?"with review and High yield only, ":load?"with review, ":"")+"pace "+N+": head said "+said.join(",")+", plan took "+day); } } }
     finally{ window.Date = RealDate; window.hubLoad = hl; }
     return {bad}; });
+  /* P2.V F8 - "High yield only" is one rule. With it on, every set pool (practice, rapid, images, the
+     builder) serves only topics that are high yield on the chosen axis, and every row of today's plan
+     serves and counts only those, or is a path stage labeled as not filtered (yx, shown as [data-yx]).
+     Due now drops lower-yield items and other blocks' hub items. Seeded so every set has something to
+     serve: a third of the questions missed, a third right and waiting for re-check, a third unseen;
+     every rapid pick due and queued; every recall grid due; a hub holding this block's due items and
+     three from another block. Checked on both axes and on the rendered page (plan rows, the path
+     button, the banner, Due now). The control: with the filter off the same seed serves the other
+     block's items, so the check can fail. */
+  sec("yieldFilter", () => { if(!ALLT().length) return {skipped:"no topics"};
+    const bad = [], axes = {}, hl = window.hubLoad, now = RealDate.now(), ago = now - 6e5;
+    const hub = {}; for(let i = 0; i < 3; i++) hub["zzf" + i] = {b:"zz-other", bn:"another block", c:"zzx", q:"q", o:[], a:0, box:1, due:1, miss:1, n:1};
+    RAPID.forEach(r => { hub[r.i] = {b:META.key, bn:META.name, c:r.c, q:r.q, o:r.o, a:r.a, box:1, due:ago, miss:2, n:2}; });
+    const seed = () => { fresh(); S.paceDays = 2;
+      QS.forEach((q, j) => { if(j % 3 === 2) return; const wrong = (q.a + 1) % q.o.length;
+        S.qs[q.id] = j % 3 ? {ok:true, conf:"sure", pick:q.a, n:1, ts:now - 2*864e5, box:1, due:ago, verifyDue:ago, streak:1}
+          : {ok:false, conf:"sure", pick:wrong, n:1, ts:now - 2*864e5, box:1, due:ago, streak:0,
+             hist:[{ok:false, conf:"sure", pick:wrong, ms:30000, ts:now - 2*864e5, d:q.d || 2}]}; });
+      RAPID.forEach(r => { S.rapid[r.i] = {box:1, due:ago, n:2, miss:2}; });
+      S.linked = RAPID.map(r => r.i);
+      ALLT().forEach(t => { S.topics[t.id] = {read:true, dwell:600, grid:0.4, gridAt:now - 3*864e5, due:ago}; }); };
+    const pools = {ps:k => practicePool(k).map(q => q.c), rf:k => rapidPool(k).map(i => (RBYID[i] || {c:"(another block) " + i}).c),
+      sp:k => spotPool(k).map(x => IMGTOPIC[x])}, setOf = {ps:"practice", rf:"rapid", sp:"spot"};
+    HUBCACHE = null; window.hubLoad = () => ({v:1, items:hub});
+    try{ for(const ax of ["exam", "step1"]){ seed(); S.yAxis = ax; S.hiOnly = true;
+      const kept = new Set(ALLT().filter(t => yv(t) === "hi").map(t => t.id)), ok = c => kept.has(c);
+      const miss = (where, cs) => { const b = [...new Set(cs.filter(c => !ok(c)))]; if(b.length) bad.push(ax + ": " + where + " serves " + b.slice(0, 3).join(", ")); };
+      Object.keys(PS_NAME).forEach(k => miss("practice " + k, pools.ps(k)));
+      Object.keys(RF_NAME).forEach(k => miss("rapid " + k, pools.rf(k)));
+      ["unseen", "all"].forEach(k => miss("images " + k, pools.sp(k)));
+      Object.keys(POOLS).forEach(m => miss("builder " + m, bldPool(m).map(x => POOLS[m].topic(x))));
+      const plan = PATH.length ? todaysPlan() : {cand:[]}, rows = [];
+      (plan.cand || []).forEach(r => { const act = r.act || [], kind = act[0], arg = act[1]; rows.push(r.id);
+        if(kind === "stage"){ if(!r.yx) bad.push(ax + ": plan row " + r.id + " has no not-filtered label"); return; }
+        if(setOf[kind]){ const cs = pools[kind](arg); miss("plan row " + r.id, cs);
+          if(!cs.length) bad.push(ax + ": plan row " + r.id + " opens an empty set");
+          if(r.n != null){ const c = setCount(setOf[kind], arg);
+            if(r.n !== c.n && r.n !== c.m) bad.push(ax + ": plan row " + r.id + " counts " + r.n + ", its set serves " + c.n + " of " + c.m);
+            if(strip(r.t + " " + r.d).split(/[^0-9]+/).indexOf(String(r.n)) < 0) bad.push(ax + ": plan row " + r.id + " does not show its count " + r.n); } }
+        else if(kind === "t") miss("plan row " + r.id, [arg]);
+        else if(kind === "dr") miss("plan row " + r.id, [(DRILLS.find(d => d.id === arg) || {}).c]);
+        if(r.tids) miss("plan row " + r.id + " (topics named)", r.tids); });
+      S.mode = "path"; render();
+      document.querySelectorAll("main .planrow[data-plan^='stage:']").forEach(b => { if(!b.querySelector("[data-yx]")) bad.push(ax + ": rendered stage row " + b.dataset.planid + " has no label"); });
+      const cur = PATH.length ? currentStage() : null, hero = document.querySelector("main .pathhero [data-stage]");
+      if(cur && (cur.kind === "diag" || cur.kind === "final") && !(hero && /whole block/.test(hero.textContent))) bad.push(ax + ": the " + cur.kind + " button does not say whole block");
+      PATH.filter(p => p.kind === "diag" || p.kind === "final").forEach(p => { const b = document.querySelector("main .stages [data-stage='" + CSS.escape(p.id) + "']");
+        if(!b || !b.querySelector("[data-yx]")) bad.push(ax + ": the " + p.kind + " row of the path has no whole-block label"); });
+      const ban = document.querySelector("main .yieldbanner");
+      if(!ban || !/whole block/.test(ban.textContent)) bad.push(ax + ": the path banner does not state the whole-block exception");
+      S.mode = "rapid"; S.rf = null; SET_EMPTY = null; render();
+      const dueBtn = document.querySelector("main [data-rf='due']"), dc = setCount("rapid", "due");
+      if(!dueBtn || dueBtn.textContent.indexOf(dc.txt) < 0) bad.push(ax + ": Due now does not show " + dc.txt);
+      const unf = unfiltered(() => rapidPool("due"));
+      axes[ax] = {kept:kept.size, topics:ALLT().length, rows, dueFiltered:rapidPool("due").length, dueUnfiltered:unf.length,
+        otherBlockDueUnfiltered:unf.filter(i => !RBYID[i]).length}; } }
+    finally{ window.hubLoad = hl; HUBCACHE = null; }
+    if(!Object.values(axes).some(a => a.otherBlockDueUnfiltered > 0)) bad.push("control: the unfiltered due set held no other block's item");
+    return {axes, bad, pass:!bad.length}; });
   sec("finished", () => { fresh(); PATH.forEach(completeStage); S.mode="path"; render();
     return {headline:(document.querySelector("main h1")||{}).innerText||"", stagesDone:PATH.filter(stageDone).length, of:PATH.length}; });
   sec("drillWhy", () => ({orphans:(R.audit||{}).drillWhyOrphanKeys?R.audit.drillWhyOrphanKeys.length:-1, missing:(R.audit||{}).drillItemsWithoutWhy?R.audit.drillItemsWithoutWhy.length:-1}));
@@ -266,6 +378,46 @@ if(/[?&]selftest=1/.test(location.search)){
       out.ariaLiveSpot = document.querySelectorAll("main [aria-live]").length;
       out.ariaLiveSpotCarriesVerdict = [...document.querySelectorAll("[aria-live]")].some(e=>(e.innerText||"").includes(strip(im.dx))); } }catch(e){ out.spotErr=e.message; }
     return out; });
+  /* P2.V F31 - focus after the two changes the P2.4 and P2.5 redos found. "Test me again" (the
+     recall grid) disappears in its own redraw, so focus must land on the first item of the fresh
+     grid, not on main. The lightbox is aria-modal, so Tab and Shift+Tab must cycle inside it, and
+     Escape must hand focus back to the control that opened it. Seeded from the loaded content: a
+     bank with no grid, or nothing to enlarge, skips that half. */
+  sec("focus", () => { const out = {}, tag = a => !a || a === document.body ? "BODY"
+      : a.tagName + (a.id ? "#" + a.id : "") + (a.dataset && a.dataset.rg != null ? "[data-rg=" + a.dataset.rg + "]" : "");
+    const gt = ALLT().find(t => t.grid && (t.grid.items||[]).length);
+    if(!gt) out.gridRetake = "skipped: no recall grid";
+    else { fresh(); S.topics[gt.id] = {grid:0.5, gridAt:Date.now(), gridPick:[]}; S.mode = "learn"; S.cur = gt.id; render();
+      const again = document.getElementById("rgagain");
+      if(!again) out.gridRetake = false;
+      else { again.focus(); again.click(); const first = document.querySelector("#rgrid [data-rg]");
+        out.gridRetake = !!first && document.activeElement === first; out.gridRetakeFocus = tag(document.activeElement); } }
+    let opener = null; fresh();
+    for(const t of ALLT()){ S.mode = "learn"; S.cur = t.id; render();
+      opener = document.querySelector("main [data-zoomfig], main [data-zoomimg]"); if(opener) break; }
+    if(!opener) out.lightbox = "skipped: nothing to enlarge";
+    else { const key = (k, shift) => document.dispatchEvent(new KeyboardEvent("keydown", {key:k, shiftKey:!!shift, bubbles:true, cancelable:true}));
+      const sig = opener.getAttribute("data-zoomfig") != null ? ["data-zoomfig", opener.getAttribute("data-zoomfig")] : ["data-zoomimg", opener.getAttribute("data-zoomimg")];
+      opener.focus(); opener.click();
+      const dlg = document.getElementById("lightbox"), stops = dlg ? [...dlg.querySelectorAll(FOCUSABLE_SEL)].filter(isTabbable) : [];
+      const r = {opened:!!dlg, stops:stops.length, openFocus:!!dlg && document.activeElement === stops[0]};
+      /* each Tab must move to the NEXT stop (a synthetic key has no default action, so focus that
+         merely stays put would otherwise pass), and the last one must wrap to the first */
+      let inside = true, inOrder = stops.length > 0;
+      for(let i = 0; i < stops.length; i++){ key("Tab"); inside = inside && !!dlg && dlg.contains(document.activeElement);
+        if(document.activeElement !== stops[(i + 1) % stops.length]) inOrder = false; }
+      r.tabCycles = inOrder;
+      key("Tab", true); inside = inside && !!dlg && dlg.contains(document.activeElement);
+      r.shiftTabWraps = stops.length > 0 && document.activeElement === stops[stops.length - 1];
+      r.stayedInside = inside;
+      key("Escape"); const a = document.activeElement;
+      r.closed = !document.getElementById("lightbox");
+      r.focusReturned = !!a && a.getAttribute && a.getAttribute(sig[0]) === sig[1];
+      r.focusAfterClose = tag(a);
+      if(document.getElementById("lightbox")) closeLightbox();
+      out.lightboxSteps = r;
+      out.lightbox = r.opened && r.openFocus && r.tabCycles && r.shiftTabWraps && r.stayedInside && r.closed && r.focusReturned; }
+    return out; });
   sec("examPast", () => { fresh(); EXAM = new RealDate(RealDate.now()-5*864e5); S.mode="path"; render(); const t=main();
     const out={bannerShown:/date has passed|has passed|set a new date|update your exam date/i.test(t), daysLeft:daysLeft(), ceilingInPast:examCeiling()<RealDate.now()};
     EXAM = EXAM0; return out; });
@@ -275,6 +427,272 @@ if(/[?&]selftest=1/.test(location.search)){
   sec("lateResetBudgetRatio", () => { if(!PATH.length) return {skipped:"no stages yet"}; fresh(); for(let i=1;i<=10;i++){ const d=new RealDate(RealDate.now()-i*864e5); S.days[dayKeyLocal(d)]={acts:3,mins:30,done:[]}; }
     S.paceDays=5; S.paceSetAt=RealDate.now(); const remaining=PATH.filter(p=>!stageDone(p)).reduce((a,p)=>a+p.mins,0); const plan=todaysPlan();
     return {budget:plan.budget, remaining, ratio:+(plan.budget/Math.max(1,remaining)).toFixed(2), blockDay:blockDay()}; });
+  /* P2.3 - repairState keeps the linked queue to this block's rapid items: stale and inherited-key ids go,
+     duplicates go, queue order stays; a queue of stale ids alone leaves no linked row in the plan */
+  sec("linkedPrune", () => { if(!RAPID.length) return {skipped:"no rapid items"}; fresh();
+    const a = RAPID[0].i, b = (RAPID[1] || RAPID[0]).i, want = a === b ? [a] : [b, a];
+    S.linked = ["zz-stale-id", b, a, b, "constructor", 7]; repairState(); const after = S.linked.slice();
+    S.linked = ["zz-stale-id"]; repairState(); const emptied = S.linked.length === 0;
+    const noRow = !PATH.length || !todaysPlan().picked.some(r => r.id === "linked");
+    return {after, want, emptied, noRow, pass: JSON.stringify(after) === JSON.stringify(want) && emptied && noRow}; });
+  /* P2.V F8 follow-up (a) - a plan-row click on a fresh day must not change "day D of this pace". The
+     click writes today's record with acts 0 (to tick the row), which used to cancel the +1 for today,
+     so D fell by one and paceLeftNow() grew. Two cases: two earlier study days since the pace was set
+     (D must be 3 before and after), and a first day (D must be 1 before and after). The row is clicked
+     on the rendered plan. */
+  sec("planDayStable", () => { if(!PATH.length) return {skipped:"no stages yet"};
+    const now = RealDate.now(), key = n => dayKeyLocal(new RealDate(now - n*864e5)), cases = [], bad = [];
+    const headD = () => { S.mode = "path"; render(); const m = /day (\d+) of this pace/.exec(main()); return m ? +m[1] : -1; };
+    for(const prior of [2, 0]){ fresh(); S.paceDays = 5; S.paceSetAt = now - 3*864e5;
+      for(let i = 1; i <= prior; i++) S.days[key(i)] = {acts:3, mins:30, done:[]};
+      const d0 = headD(), b0 = blockDay(), p0 = paceLeftNow(), row = document.querySelector("main .planrow[data-plan]");
+      if(!row){ bad.push("prior " + prior + ": no plan row to click"); continue; }
+      row.click();
+      const rec = S.days[todayKey()];
+      S.ps = null; S.rf = null; S.sp = null; S.dr = null; SET_EMPTY = null;
+      const d1 = headD();
+      cases.push({prior, clicked:row.dataset.planid, day:[d0, d1], blockDay:[b0, blockDay()], paceLeft:[p0, paceLeftNow()], todayActs:rec ? rec.acts : null});
+      if(d0 !== prior + 1 || d1 !== d0 || blockDay() !== b0 || paceLeftNow() !== p0)
+        bad.push("prior " + prior + ": day " + d0 + " then " + d1 + " after the click (want " + (prior + 1) + "), paceLeft " + p0 + " then " + paceLeftNow());
+      if(!rec || rec.acts) bad.push("prior " + prior + ": the click did not leave today's record at acts 0, so the case went untested"); }
+    return {cases, bad, pass:!bad.length}; });
+  /* P2.V F8 follow-up (b) - after a missed question the notice reports what the miss queued: the
+     queue's growth (at most 6 keyword matches, or 4), not every rapid item on the topic. A second
+     miss on the same question queues nothing new, and the notice must say the items were already
+     there. The wrong option is clicked on the rendered question. */
+  sec("linkedNotice", () => { const q = QS.find(x => RAPID.some(r => r.c === x.c)); if(!q) return {skipped:"no question with rapid items on its topic"};
+    const bad = [], serve = () => { S.mode = "practice"; S.ps = {set:[q.id], i:0, src:"all", t0:Date.now(), conf:"sure"}; SET_EMPTY = null; render();
+      const b = [...document.querySelectorAll("main [data-opt]")].find(x => +x.dataset.opt !== q.a); if(b) b.click();
+      const t = ((document.querySelector("main .linked") || {}).textContent || "").replace(/\s+/g, " ").trim(), m = /Queued for review:\s*(\d+)/.exec(t);
+      return {t, n:m ? +m[1] : 0}; };
+    fresh(); const a = serve(), grew = S.linked.length, onTopic = RAPID.filter(r => r.c === q.c).length;
+    if(!grew || a.n !== grew) bad.push("first miss: the notice says " + a.n + ", the queue grew by " + grew);
+    if(!/added to your linked queue/.test(a.t)) bad.push("first miss: the notice does not say the items were added");
+    const b2 = serve();
+    if(b2.n !== grew || S.linked.length !== grew || !/already in your linked queue/.test(b2.t)) bad.push("second miss: \"" + b2.t.slice(0, 90) + "\" with the queue at " + S.linked.length);
+    return {question:q.id, rapidOnTopic:onTopic, queued:grew, first:a.t, second:b2.t, bad, pass:!bad.length}; });
+  /* P2.6 (F30) - the tutor is never handed the answer to an item not answered in the CURRENT
+     attempt. The first question, rapid item, image and drill of each kind in the loaded content is
+     recorded as answered in an earlier attempt, then served again unanswered: its context must
+     carry a lock and no answer, and the dock must neither send nor show a reply given on an
+     answered screen. Answered in this attempt, the answer must appear (so the check can fail).
+     Sentinel pretest, sexp and grid rows must never reach the reading context, and terms blanked
+     by the cloze toggle must not either. */
+  sec("tutorContext", () => { const bad = [], checked = [], OLD = "zz-earlier-reply-naming-the-answer";
+    const has = (c, w) => !!w && (String(c.text).indexOf(w) >= 0 || String(c.detail).indexOf(w) >= 0);
+    const seedChat = () => { S.chat = [{r:"me", t:"which one is it?", k:null}, {r:"ai", t:OLD, k:null}]; };
+    const locked = (name, words) => { const c = screenContext(); checked.push(name);
+      if(!c.lock) bad.push(name + ": no lock while unanswered");
+      words.filter(w => has(c, w)).forEach(w => bad.push(name + ": unanswered context carries \"" + w.slice(0, 40) + "\""));
+      if(chatFor(c.lock).some(m => m.t === OLD)) bad.push(name + ": an answered-screen reply would be sent");
+      dockOpen = true; paintDock(); const shown = (el("dockbody") || {}).textContent || ""; dockOpen = false; paintDock();
+      if(shown.indexOf(OLD) >= 0) bad.push(name + ": an answered-screen reply is shown"); };
+    const opened = (name, words) => { const c = screenContext();
+      if(c.lock) bad.push(name + ": still locked once answered");
+      if(!words.some(w => has(c, w))) bad.push(name + ": answered context lacks the answer");
+      if(!chatFor(c.lock).some(m => m.t === OLD)) bad.push(name + ": history not restored once answered"); };
+    const q = QS[0];
+    if(q){ fresh(); seedChat(); S.qs[q.id] = {ok:true, conf:"sure", pick:q.a, n:1, ts:Date.now()};
+      S.mode = "practice"; S.ps = {set:[q.id], i:0, src:"verify", t0:Date.now()}; render();
+      const w = ["CORRECT:", stripTags(q.e).slice(0, 40)]; locked("practice", w);
+      S.ps.pick = q.a; S.ps.shown = true; opened("practice", w); }
+    const r = RAPID[0];
+    if(r){ fresh(); seedChat(); S.rapid[r.i] = {box:2, n:1, due:Date.now(), hist:[{ok:true, pick:r.a, ms:3000, ts:Date.now()}]};
+      S.mode = "rapid"; S.rf = {set:[r.i], i:0, t0:Date.now(), src:"due"}; render();
+      const w = ["ANSWER:"].concat(r.x ? [stripTags(r.x).slice(0, 40)] : []); locked("rapid", w);
+      S.rf.pick = r.a; opened("rapid", w); }
+    const ik = Object.keys(IMGS)[0];
+    if(ik){ const im = IMGS[ik]; fresh(); seedChat(); S.spot[ik] = {ok:true, n:1, ts:Date.now()};
+      S.mode = "spot"; S.sp = {set:[ik], i:0, src:"all", name:spName("all")}; buildSpotOpts(); render();
+      const w = [String(im.dx), String(im.n)]; locked("spot", w);
+      S.sp.pick = S.sp.opts.indexOf(im.dx); opened("spot", w); }
+    /* a drill run served in reverse, so the steps on screen are never in their true order */
+    ["sort", "multi", "order"].forEach(kind => { const d = DRILLS.find(x => (x.kind || "sort") === kind); if(!d || !d.items.length) return;
+      fresh(); seedChat(); S.drills[d.id] = {missed:[], done:true, ts:Date.now(), n:1, hist:[]};
+      const n = d.items.length, rev = d.items.map((_, i) => n - 1 - i);
+      S.mode = "drill"; S.dr = kind === "order" ? {id:d.id, pool:rev, placed:[], checked:false} : {id:d.id, order:rev, i:0, missed:[]}; render();
+      const w = ["KEY DISCRIMINATOR", stripTags(d.key || "").slice(0, 40)].concat(kind === "order" && n > 1
+        ? [d.items.map(x => stripTags(x)).join(" | "), d.items.map(x => stripTags(x)).join(" > ")] : [stripTags(drillWhyText(d, rev[0])).slice(0, 40)]);
+      locked("drill:" + kind, w);
+      if(kind === "order"){ S.dr.placed = d.items.map((_, i) => i); S.dr.pool = []; S.dr.checked = true; } else S.dr.i = n;
+      opened("drill:" + kind, w.slice(0, 2)); });
+    const lt = BLOCKS.flatMap(b => b.topics)[0];   /* the content object itself (ALLT() hands out copies) */
+    if(lt){ const Z = "zzsentinel", body0 = lt.body, pre0 = lt.pretest, grid0 = lt.grid; checked.push("learn");
+      try{ lt.body = (body0 || []).concat([["sexp", {id:"zz_sx", q:Z + " question", o:[Z + " keyed option", Z + " decoy"], a:0, why:Z + " note"}]]);
+        lt.pretest = (pre0 || []).concat([{q:Z + " pretest", o:[Z + " pretest key", Z + " pretest decoy"], a:0, why:Z + " pretest note", w:{}}]);
+        lt.grid = {q:(grid0 || {}).q || Z, items:((grid0 || {}).items || []).concat([[Z + " grid item", 1]])};
+        fresh(); S.mode = "learn"; S.cur = lt.id; render();
+        if(has(screenContext(), Z)) bad.push("learn: a pretest, sexp or grid row reached the reading context");
+      } finally { lt.body = body0; [["pretest", pre0], ["grid", grid0]].forEach(([f, v]) => { if(v === undefined) delete lt[f]; else lt[f] = v; }); }
+      /* the body is what follows the TOPIC line (the title may hold a blanked term) */
+      const body = c => { const t = String(c.text), i = t.indexOf("\nTOPIC: "); return i < 0 ? t : t.slice(t.indexOf("\n", i + 1) + 1); };
+      fresh(); S.cloze = true; S.mode = "learn"; S.cur = lt.id; render();
+      const blanks = [...new Set([...document.querySelectorAll("#app .cz.blank")].map(s => s.textContent.trim()).filter(Boolean))];
+      if(blanks.length){ const shown = blanks.filter(w => body(screenContext()).indexOf(w) >= 0);
+        if(shown.length) bad.push("cloze: blanked terms reach the tutor: " + shown.slice(0, 3).join(", "));
+        S.cloze = false; render();
+        if(!blanks.some(w => body(screenContext()).indexOf(w) >= 0)) bad.push("cloze: no blanked term appears once cloze is off"); } }
+    dockOpen = false; paintDock();
+    return checked.length ? {checked, bad, pass:!bad.length} : {skipped:"no items to serve"}; });
+  /* P2.V F42 - a view that throws recovers to the Path under a notice that says what failed and
+     what happened to a running set; the notice is spoken in #live and takes focus; the header is
+     repainted for the Path; a set on another view is kept and the failed view's own set is ended;
+     every view opens afterwards; and when the Path fails too, a panel still links every view. The
+     failures are forced by swapping a view function for one that throws, then put back. */
+  sec("renderRecovery", () => {
+    const bad = [], seen = [], real = {weak:viewWeak, practice:viewPractice, path:viewPath, gloss:viewGloss};
+    const boom = name => () => { throw new Error("self-test forced failure in " + name); };
+    const navCur = () => [...document.querySelectorAll("#modes [aria-current=\"true\"]")].map(b => b.dataset.m).join(",");
+    const note = () => { const n = el("rendernote"); return n ? String(n.textContent).replace(/\s+/g, " ") : ""; };
+    const live = () => String((el("live") || {}).textContent || "");
+    const onNote = () => { const n = el("rendernote"), a = document.activeElement; return !!n && !!a && (a === n || n.contains(a)); };
+    const common = (name, label) => { const t = note();
+      if(S.mode !== "path") bad.push(name + ": mode is " + S.mode + " after the failure");
+      if(t.indexOf("The " + label + " view could not be shown") < 0) bad.push(name + ": no notice naming the " + label + " view");
+      if(t.indexOf("Your progress is saved") < 0) bad.push(name + ": the notice does not say progress is saved");
+      if(live().indexOf("The " + label + " view could not be shown.") < 0 || live().indexOf("Your progress is saved") < 0) bad.push(name + ": #live does not carry the notice");
+      if(navCur() !== "path") bad.push(name + ": header highlights " + (navCur() || "nothing") + ", not path");
+      if(!onNote()) bad.push(name + ": focus is not on the notice");
+      seen.push(name); return t; };
+    const logN = RENDER_FAIL_LOG.length, qs = QS.slice(0, 2).map(q => q.id), cerr = console.error;
+    console.error = () => {};   /* the forced failures are expected; RENDER_FAIL_LOG still records them */
+    try{
+      /* 1. Weak Spots throws while a practice set is open: the set is kept and resumable */
+      fresh(); if(qs.length) S.ps = {set:qs, i:0, src:"all", t0:Date.now(), ans:{}};
+      S.mode = "weak"; viewWeak = boom("weak"); render(); viewWeak = real.weak;
+      const t1 = common("weak", "Weak Spots");
+      if(!document.querySelector("#app .plan")) bad.push("weak: the Path view is not drawn under the notice");
+      if(qs.length){ if(!S.ps) bad.push("weak: the practice set on another view was dropped");
+        else if(t1.indexOf("Your practice set is still open: Practice picks it up at question 1 of " + qs.length) < 0) bad.push("weak: the notice does not say the practice set is still open"); }
+      go("weak"); if(S.mode !== "weak" || el("rendernote") || navCur() !== "weak") bad.push("weak: reopening Weak Spots failed, or kept the notice");
+      if(qs.length){ go("practice"); if(!document.querySelector("#app [data-opt]")) bad.push("weak: the kept practice set does not resume"); }
+      /* 2. Practice throws on its own set: that set is ended, and the notice says so and what was saved */
+      if(qs.length){ fresh(); const q0 = QS.find(q => q.id === qs[0]);
+        S.qs[q0.id] = {ok:true, conf:"sure", pick:q0.a, n:1, ts:Date.now(), hist:[]};
+        S.ps = {set:qs, i:1, src:"all", t0:Date.now(), ans:{[q0.id]:true}};
+        S.mode = "practice"; viewPractice = boom("practice"); render(); viewPractice = real.practice;
+        const t2 = common("practice", "Practice");
+        if(S.ps) bad.push("practice: the failed view's own set was kept");
+        if(t2.indexOf("Your practice set (at question 2 of " + qs.length + ") was closed") < 0) bad.push("practice: the notice does not say the set was closed");
+        if(t2.indexOf("The 1 answer you gave in it is saved") < 0) bad.push("practice: the notice does not say the answer was saved");
+        if(!S.qs[q0.id]) bad.push("practice: the saved answer is gone");
+        go("practice"); if(!document.querySelector("#app [data-ps]")) bad.push("practice: the set builder does not come back"); }
+      /* 3. closing the notice keeps the Path and removes it */
+      fresh(); S.mode = "weak"; viewWeak = boom("weak"); render(); viewWeak = real.weak;
+      const x = document.querySelector("#rendernote [data-rnote-x]");
+      if(!x) bad.push("close: no close button"); else { x.click(); if(el("rendernote") || S.mode !== "path") bad.push("close: the notice stays, or the view changed"); }
+      /* 4. the Path fails as well: a panel names both and links every other view */
+      fresh(); S.mode = "gloss"; viewGloss = boom("gloss"); viewPath = boom("path"); render(); viewGloss = real.gloss; viewPath = real.path;
+      const t4 = common("path too", "Glossary");
+      if(t4.indexOf("the Path view could not be drawn either") < 0) bad.push("path too: the notice does not say the Path failed too");
+      const links = [...document.querySelectorAll("#rendernote [data-m]")].map(b => b.dataset.m);
+      if(MODES.some(m => m[0] !== "path" && m[0] !== "gloss" && links.indexOf(m[0]) < 0)) bad.push("path too: the panel does not link every other view (" + links.join(",") + ")");
+      const lk = document.querySelector("#rendernote [data-m=\"practice\"]"); if(lk){ lk.click(); if(S.mode !== "practice" || navCur() !== "practice") bad.push("path too: a panel link does not open its view"); }
+      /* 5. every view opens again afterwards, with no recovery */
+      const n5 = RENDER_FAIL_LOG.length; fresh();
+      MODES.forEach(([m]) => { go(m, m === "learn" ? (ALLT()[0] || {}).id : undefined); if(S.mode !== m || navCur() !== m) bad.push("after: " + m + " does not open"); });
+      if(RENDER_FAIL_LOG.length > n5) bad.push("after: a view failed on its own: " + RENDER_FAIL_LOG[RENDER_FAIL_LOG.length - 1].msg);
+    } finally {
+      viewWeak = real.weak; viewPractice = real.practice; viewPath = real.path; viewGloss = real.gloss;
+      console.error = cerr; RENDER_NOTE = null; RENDER_FAIL_LOG.length = logN;
+    }
+    return {checked:seen, bad, pass:!bad.length};
+  });
+  /* P2.V F5 - a day with rapid picks and drill items reports the time spent, not "0 min". The student
+     is placed 20 s into a rapid item and 15 s into a drill item (ACTIVE_AT), then answers each with a
+     pointer press and a click, as a mouse does; the calendar's detail for today must count both. */
+  sec("dayMinutes", () => {
+    const r = RAPID[0], d = DRILLS.find(x => (x.kind || "sort") === "sort" && x.items.length);
+    if(!r && !d) return {skipped:"no rapid items or sort drills"};
+    const press = b => { b.dispatchEvent(new PointerEvent("pointerdown", {bubbles:true})); b.click(); };
+    const bad = [], k = todayKey(), a0 = ACTIVE_AT; fresh();
+    try{
+      if(r){ S.mode = "rapid"; S.rf = {set:[r.i], i:0, t0:Date.now(), src:"all"}; render();
+        ACTIVE_AT = Date.now() - 20000; const b = document.querySelector('[data-rfo="' + ((r.a + 1) % r.o.length) + '"]');
+        if(b) press(b); else bad.push("no rapid option"); }
+      if(d){ S.rf = null; S.mode = "drill"; S.dr = {id:d.id, order:d.items.map((_, i) => i), i:0, missed:[]}; render();
+        ACTIVE_AT = Date.now() - 15000; const b = document.querySelector("[data-sort]");
+        if(b) press(b); else bad.push("no drill side button"); }
+      const rec = S.days[k] || {}, want = (r ? 1 : 0) + (d ? 1 : 0);
+      if((rec.acts || 0) < want) bad.push("acts " + (rec.acts || 0) + " < " + want);
+      if(!((rec.mins || 0) * 60 >= (r ? 19 : 0) + (d ? 14 : 0))) bad.push("minutes " + (+(rec.mins || 0)).toFixed(2) + " do not hold the time spent");
+      S.dr = null; S.mode = "path"; CAL_SEL = k; render();
+      const t = String((document.querySelector("#app .caldetail") || {}).textContent || "").replace(/\s+/g, " ");
+      if(!/under 1 min active/.test(t)) bad.push("calendar detail: " + t.slice(0, 120));
+      if(/(^|[^0-9])0 min/.test(t)) bad.push("calendar detail says 0 min");
+      return {mins:+(+(rec.mins || 0)).toFixed(2), acts:rec.acts || 0, detail:t.slice(0, 160), bad, pass:!bad.length};
+    } finally { CAL_SEL = null; ACTIVE_AT = a0; }
+  });
+  /* P2.V F3 - the Path hero, the "Do this next" card and the stage list name the same stage, the hero
+     counts the stages done (no "Stage N of M" that can clash with a stage's own title), and the lede
+     sends the reader only to controls this view has. Checked fresh and with the first stage done. */
+  sec("pathHero", () => {
+    if(!PATH.length) return {skipped:"no stages yet"};
+    const bad = [], seen = [];
+    const look = name => { S.mode = "path"; render();
+      const cur = currentStage(), doneN = PATH.filter(stageDone).length, all = doneN === PATH.length;
+      const h1 = String((document.querySelector("#app .pathhero h1") || {}).textContent || "").trim();
+      const nt = String((document.querySelector("#app .phnext .nt") || {}).textContent || "").trim();
+      const lst = String((document.querySelector("#app .stages .stage.cur .st") || {}).textContent || "").trim();
+      const lede = String((document.querySelector("#app .pathhero .lede") || {}).textContent || "");
+      const want = all ? "You have finished this block" : doneN ? doneN + " of " + PATH.length + " stages done" : "Start here";
+      if(h1 !== want) bad.push(name + ": heading \"" + h1 + "\", expected \"" + want + "\"");
+      if(/stage\s+\d+\s+of\s+\d+/i.test(h1)) bad.push(name + ": heading numbers a stage");
+      if(nt !== String(cur.t)) bad.push(name + ": next card \"" + nt + "\" is not the current stage \"" + cur.t + "\"");
+      if(!all && lst.indexOf(String(cur.t)) !== 0) bad.push(name + ": the highlighted stage \"" + lst + "\" is not the next card's");
+      if(/\brail\b/i.test(lede) && !document.querySelector("#app .rail")) bad.push(name + ": the lede points to a rail this view does not have");
+      if(/list below/i.test(lede) && !document.querySelector("#app .stages [data-stage]")) bad.push(name + ": the lede points to a stage list that is not there");
+      seen.push(name + ": " + h1 + " / " + nt); };
+    fresh(); look("fresh");
+    fresh(); completeStage(PATH[0]); look("first stage done");
+    return {seen, bad, pass:!bad.length};
+  });
+  /* P2.V F31 - #live carries a verdict in the case it is written in: a label set in capitals by CSS
+     must reach the live region as written ("Not quite", not "NOT QUITE") */
+  sec("liveCase", () => {
+    const q = QS[0]; if(!q) return {skipped:"no questions"};
+    fresh(); S.mode = "practice"; S.ps = {set:[q.id], i:0, src:"all", t0:Date.now(), conf:"think", ans:{}}; render();
+    const b = document.querySelector('[data-opt="' + ((q.a + 1) % q.o.length) + '"]'); if(!b) return {bad:["no option button"], pass:false};
+    b.click();
+    const live = String((el("live") || {}).textContent || ""), bad = [], labels = [];
+    document.querySelectorAll("#app [data-verdict], #app [data-verdict] *").forEach(x => {
+      if(getComputedStyle(x).textTransform === "none" || x.children.length) return;
+      const t = String(x.textContent || "").replace(/\s+/g, " ").trim(); if(!t || t === t.toUpperCase()) return;
+      labels.push(t);
+      if(live.indexOf(t) < 0) bad.push("\"" + t + "\" is not in #live as written");
+      if(live.indexOf(t.toUpperCase()) >= 0) bad.push("\"" + t.toUpperCase() + "\" reaches #live in capitals"); });
+    if(!labels.length) return {skipped:"no verdict label is styled in capitals", live:live.slice(0, 80)};
+    return {labels, live:live.slice(0, 120), bad, pass:!bad.length};
+  });
+  /* P2.V F21 - a sort or multi pick keeps its item on screen, and the verdict names that item, in the page and in
+     #live; the next item comes only on Next, with no verdict carried over. Played through the real side buttons
+     (a wrong pick) on the first sort and multi drill of the loaded content. */
+  sec("drillVerdict", () => {
+    const ds = ["sort", "multi"].map(k => DRILLS.find(x => (x.kind || "sort") === k && x.items.length > 1)).filter(Boolean);
+    if(!ds.length) return {skipped:"no sort or multi drill"};
+    const bad = [], seen = [], plain = h => { const t = document.createElement("div"); t.innerHTML = fmt(h); return t.textContent.replace(/\s+/g, " ").trim(); };
+    const txt = q => String((document.querySelector(q) || {}).textContent || "").replace(/\s+/g, " ").trim();
+    /* a sort item is escaped in its feedback and formatted on the card; either way the same words */
+    const names = (hay, h) => hay.indexOf(plain(h)) >= 0 || hay.indexOf(String(h).replace(/\s+/g, " ").trim()) >= 0;
+    ds.forEach(d => {
+      const k = d.kind || "sort", attr = k === "multi" ? "data-sortm" : "data-sort", it = d.items[0];
+      fresh(); S.mode = "drill"; S.dr = {id:d.id, order:d.items.map((_, i) => i), i:0, missed:[]}; render();
+      const b = [...document.querySelectorAll("#app [" + attr + "]")].find(x => x.getAttribute(attr) !== it[1]);
+      if(!b){ bad.push(k + ": no side to pick"); return; }
+      b.click();
+      const live = String((el("live") || {}).textContent || "").replace(/\s+/g, " ");
+      if(txt("#app .sortitem") !== plain(it[0])) bad.push(k + ": after the pick the screen shows \"" + txt("#app .sortitem") + "\", not the item it judges");
+      if(!names(txt("#app [data-verdict]"), it[0])) bad.push(k + ": the verdict does not name the item");
+      if(!names(live, it[0])) bad.push(k + ": #live does not name the item");
+      if(document.querySelector("#app .sortbtns .btn:not(:disabled)")) bad.push(k + ": a side can still be pressed");
+      const nx = el("drnext"); if(!nx){ bad.push(k + ": no Next button"); return; }
+      nx.click();
+      if(txt("#app .sortitem") !== plain(d.items[1][0])) bad.push(k + ": Next did not bring the next item");
+      if(document.querySelector("#app [data-verdict]") || String((el("live") || {}).textContent || "").trim()) bad.push(k + ": the verdict stayed after Next");
+      seen.push(k + ": " + plain(it[0]));
+    });
+    return {seen, bad, pass:!bad.length};
+  });
   sec("maps", () => ({ qIdsByTopic:QS.reduce((a,q)=>{ (a[q.c]=a[q.c]||[]).push(q.id); return a; },{}), rapidIx:RAPID.map(r=>r.ix), imgKeys:Object.keys(IMGS),
     qeHash:Object.fromEntries(QS.map(q=>[q.id, fnv(String(q.e||""))])), qwHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.w||{}))])), rxHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(String(r.x||""))])),
     optHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.o))])), roptHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(JSON.stringify(r.o))])) }));
@@ -289,14 +707,32 @@ if(/[?&]selftest=1/.test(location.search)){
   must("auditListsEmpty", R.auditListsEmpty === true,
     Object.entries(R.audit||{}).filter(([k,v])=>k!=="counts" && Array.isArray(v) && v.length).map(([k,v])=>k+" ("+v.length+")").join(", "));
   must("viewFailures", Array.isArray(R.viewFailures) && !R.viewFailures.length, (R.viewFailures||[]).join(", "));
+  must("linkedPrune", !!R.linkedPrune && (!!R.linkedPrune.skipped || R.linkedPrune.pass === true), JSON.stringify(R.linkedPrune));
+  must("yieldFilter", !!R.yieldFilter && (!!R.yieldFilter.skipped || R.yieldFilter.pass === true), ((R.yieldFilter||{}).bad||[]).join("; "));
+  must("planDayStable", !!R.planDayStable && (!!R.planDayStable.skipped || R.planDayStable.pass === true), ((R.planDayStable||{}).bad||[]).join("; "));
+  must("linkedNotice", !!R.linkedNotice && (!!R.linkedNotice.skipped || R.linkedNotice.pass === true), ((R.linkedNotice||{}).bad||[]).join("; "));
   must("paceHeader", !!R.paceHeader && (!!R.paceHeader.skipped || !(R.paceHeader.bad||[]).length), ((R.paceHeader||{}).bad||[]).join("; "));
-  const ex = R.extra || {}, hook = (k, pass) => { const h = ex[k]; if(h && h.skipped) return; must("extra." + k, !!h && pass(h)); };
-  hook("conceptThreads", h => h.rendered && h.listedSeeded && h.pointerRendered);
+  must("tutorContext", !!R.tutorContext && (!!R.tutorContext.skipped || R.tutorContext.pass === true), ((R.tutorContext||{}).bad||[]).join("; "));
+  /* P2.V F42 - the recovery says what happened; and no section's render fell into it unasked */
+  must("renderRecovery", !!R.renderRecovery && R.renderRecovery.pass === true, ((R.renderRecovery||{}).bad||[]).join("; "));
+  /* P2.V F5 / F3 / F31 follow-up - calendar minutes, the Path hero, verdict case in #live */
+  ["dayMinutes", "pathHero", "liveCase", "drillVerdict"].forEach(k => { const v = R[k];
+    must(k, !!v && (!!v.skipped || v.pass === true), ((v||{}).bad||[]).join("; ")); });
+  R.renderFailures = RENDER_FAIL_LOG.slice(failN0).map(f => f.mode + " (" + f.phase + "): " + f.msg);
+  must("renderFailures", !R.renderFailures.length, R.renderFailures.slice(0, 4).join("; "));
+  /* P2.V F31 - each half passes or says why it was skipped */
+  ["gridRetake", "lightbox"].forEach(k => { const v = (R.focus||{})[k];
+    must("focus." + k, v === true || /^skipped/.test(String(v)), k === "lightbox" ? JSON.stringify((R.focus||{}).lightboxSteps||null) : (R.focus||{}).gridRetakeFocus); });
+  const ex = R.extra || {}, hook = (k, pass, why) => { const h = ex[k]; if(h && h.skipped) return; must("extra." + k, !!h && pass(h), h && why ? why(h) : ""); };
+  /* P2.V F25 - the threads text must say what conceptThreads() computed (textMatches) */
+  hook("conceptThreads", h => h.rendered && h.listedSeeded && h.pointerRendered && h.textMatches === true, h => (h.mismatches||[]).join("; "));
   hook("errorTypes", h => h.classified === true);
   hook("fatigue", h => h.shown === true);
 
   window.Date = RealDate; EXAM = EXAM0;
-  Object.keys(S).forEach(k=>delete S[k]); Object.assign(S, JSON.parse(SNAP)); S.mode="path"; render();
+  Object.keys(S).forEach(k=>delete S[k]); Object.assign(S, JSON.parse(SNAP)); S.mode="path";
+  RENDER_NOTE = null; PATH_NOTE = null; SET_EMPTY = null;   /* notices raised by the synthetic runs are not the student's */
+  render();
   const pre = document.createElement("pre"); pre.id = "selftest"; pre.style.cssText = "position:fixed;left:0;top:0;z-index:99999;max-height:40vh;overflow:auto;background:#000;color:#0f0;font:11px/1.3 monospace;padding:8px;margin:0";
   pre.textContent = JSON.stringify(R); document.body.appendChild(pre);
   /* P2.2 - the verdict goes on the root element, not into document.title: the page keeps

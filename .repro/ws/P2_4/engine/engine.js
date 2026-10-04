@@ -3353,9 +3353,9 @@ function orderDrillHTML(d){
       </div>
       <!-- P1.3: the order drill verdict was silent for the same reason as the sorts.
            P2.V F21: it now names every step that is out of place and where it belongs (the
-           steps themselves said so only by color), and it sits above the buttons, so the
-           reader it takes focus for (wireDrill) goes on to Try again with Tab. -->
-      ${checked?`<div class="call ${st.perfect?"mnem":"trap"}" data-verdict id="overdict" style="margin-top:18px">
+           steps themselves said so only by color), and it sits right under the board it judges,
+           above the buttons. -->
+      ${checked?`<div class="call ${st.perfect?"mnem":"trap"}" data-verdict style="margin-top:18px">
         <span class="cl">${st.perfect?"Exactly right":"Not the real order"}</span>${orderVerdictText(d, placed)} ${fmt(d.key)}</div>`:""}
       <div class="btnrow" style="margin-top:18px">
         ${checked?`<button class="btn pri" data-dr="__again">Try again</button>
@@ -4124,11 +4124,16 @@ function screenContext(){
     const d = DRILLS.find(x=>x.id===S.dr.id), st = S.dr;
     /* the rule is on screen only on the end screen (order: once checked); until then the tutor
        gets what the student sees: the item or the steps, never a side, a position or the rule */
-    /* P2.V F21: an answered item stays on screen with its verdict until Next (drJudged) */
+    /* P2.V F21: an answered item stays on screen, with its verdict, until Next (drJudged); the
+       tutor is given that item and that verdict, as it is for an answered question or image */
     const jx = d && d.kind !== "order" ? drJudged(d, st) : -1;
     const over = d && (d.kind === "order" ? !!st.checked : (st.i||0) >= (st.order||[]).length && jx < 0);
     if(d && over) return {label:"Drill", detail:d.t, text:"Discrimination drill: "+d.t+
       ". The student has finished this run and sees the result.\nKEY DISCRIMINATOR: "+stripTags(d.key||"")};
+    if(d && jx >= 0) return {label:"Drill", detail:d.t, text:"Discrimination drill: "+d.t+
+      ". The student is part-way through a run and has ALREADY ANSWERED the item on screen; its verdict is showing."+
+      "\nSORT INTO: "+(d.kind === "multi" ? (d.cols||[]).map(c=>stripTags(c.l)) : [stripTags(d.a), stripTags(d.bb)]).join(" | ")+
+      "\nITEM ON SCREEN: "+stripTags(d.items[jx][0])+"\nTHE VERDICT THEY SEE: "+stripTags(st.last.msg||"")};
     if(d){ const step = j => stripTags(d.items[j]);
       return {label:"Drill", detail:d.t, lock:"d:"+d.id,
       text:"Discrimination drill: "+d.t+". The student is part-way through a run and has NOT finished it. You have "+
@@ -4137,8 +4142,7 @@ function screenContext(){
         ? "TASK: "+stripTags(d.q||"")+"\nTHEIR SEQUENCE SO FAR: "+((st.placed||[]).map(step).join(" > ") || "nothing placed yet")+
           "\nSTEPS STILL TO PLACE (in the shuffled order shown): "+(st.pool||[]).map(step).join(" | ")
         : "SORT INTO: "+(d.kind === "multi" ? (d.cols||[]).map(c=>stripTags(c.l)) : [stripTags(d.a), stripTags(d.bb)]).join(" | ")+
-          "\nITEM ON SCREEN: "+stripTags(d.items[jx >= 0 ? jx : st.order[st.i]][0])+
-          (jx >= 0 ? "\nTHE STUDENT HAS ANSWERED THIS ITEM AND IS SHOWN: "+stripTags(st.last.msg||"") : ""))}; }
+          "\nITEM ON SCREEN: "+stripTags(d.items[st.order[st.i]][0]))}; }
   }
   if(S.mode === "learn" && t){
     /* The lesson on screen. The pretest, self-explanation and recall-grid rows are never part of
@@ -5353,8 +5357,11 @@ function wireDrill(app){
     startDrill(k);
   });
   /* P2.V F21: a pick records the verdict for THIS item (st.last.ix) and names it in the message;
-     the item stays on screen until Next. Focus goes to Next, so Enter moves on; on the new item
-     it lands on the item itself (viewLead), never on a side, so Enter cannot answer unseen. */
+     the item stays on screen until Next. Focus goes to Next, so Enter moves on, and Next is
+     scrolled into view when the verdict would sit below the fold (a multi item with a photo at
+     400 px; the photo's height arrives after the render, so the scroll is repeated when it
+     loads). On the new item focus lands on the item itself (viewLead), never on a side, so a
+     second Enter cannot answer it unseen. */
   const drPick = (d, st, pick, right, msg) => {
     const ix = st.order[st.i], ok = pick === right, why = (DRILL_WHY[d.id]||{})[d.items[ix][0]];
     (st.hist=st.hist||[]).push({ix,pick,ok,ts:Date.now()});
@@ -5363,7 +5370,11 @@ function wireDrill(app){
     st.i++;
     if(st.i>=st.order.length){ const prev=S.drills[d.id]||{}; S.drills[d.id]={missed:st.missed||[],done:true,ts:Date.now(),n:(prev.n||0)+1,hist:(prev.hist||[]).concat(st.hist||[]).slice(-60)}; }
     bumpDay(0); save(); render();
-    drFocus(el("drnext"));
+    const next = el("drnext"), img = app.querySelector(".imgbox img");
+    drFocus(next);
+    const reveal = () => { const n = el("drnext"); if(n) n.scrollIntoView({block:"nearest", behavior:"instant"}); };
+    reveal();
+    if(img && !img.complete) img.addEventListener("load", reveal, {once:true});   /* the photo's height arrives late */
   };
   app.querySelectorAll("[data-sort]").forEach(b => b.onclick = ()=>{
     const st = S.dr, d = DRILLS.find(x=>x.id===st.id);
@@ -5388,20 +5399,12 @@ function wireDrill(app){
     window.scrollTo({top:0,behavior:"instant"});
   };
   app.querySelectorAll("[data-dwhy]").forEach(b => b.onclick = ()=>drToggleWhy(b));
-  /* P2.V F21/F31: placing or taking back a step redraws both lists, and focus used to drop to
-     main. It goes on to the step now at the same place in the list it left (or the one before),
-     then to the other list, then to Check the sequence. */
-  const orderFocus = (from, n) => {
-    const at = sel => { const l = document.querySelectorAll("#app " + sel); return l.length ? l[Math.min(n, l.length-1)] : null; };
-    drFocus(at(from === "op" ? "[data-op]" : "[data-ounp]") || at(from === "op" ? "[data-ounp]" : "[data-op]") || el("ocheck"));
-  };
   app.querySelectorAll("[data-op]").forEach(b => b.onclick = ()=>{
-    const st = S.dr, ix = +b.dataset.op, n = st.pool.indexOf(ix);
-    (st.placed = st.placed||[]).push(ix); st.pool = st.pool.filter(x=>x!==ix); save(); render();
-    if(!st.pool.length && el("ocheck")) drFocus(el("ocheck")); else orderFocus("op", n); });
+    const st = S.dr, ix = +b.dataset.op;
+    (st.placed = st.placed||[]).push(ix); st.pool = st.pool.filter(x=>x!==ix); save(); render(); });
   app.querySelectorAll("[data-ounp]").forEach(b => b.onclick = ()=>{
     const st = S.dr, n = +b.dataset.ounp;
-    st.pool.push(st.placed[n]); st.placed.splice(n,1); save(); render(); orderFocus("ounp", n); });
+    st.pool.push(st.placed[n]); st.placed.splice(n,1); save(); render(); });
   const oc = el("ocheck");
   if(oc) oc.onclick = ()=>{
     const st = S.dr, d = DRILLS.find(x=>x.id===st.id);
@@ -5409,9 +5412,6 @@ function wireDrill(app){
     { const prev=S.drills[d.id]||{}; S.drills[d.id] = {missed: st.placed.map((ix,n)=>ix===n?null:n).filter(x=>x!==null), done:true, ts:Date.now(), n:(prev.n||0)+1,
       hist:(prev.hist||[]).concat(st.placed.map((ix,n)=>({ix,pick:n,ok:ix===n,ts:Date.now()}))).slice(-60)}; }
     bumpDay(0); save(); render();
-    /* the verdict (spoken through #live) takes focus: it is not a control, so Enter does nothing
-       unintended, and Tab goes on to Try again */
-    const v = el("overdict"); if(v){ v.setAttribute("tabindex", "-1"); drFocus(v); }
   };
 }
 function drFocus(n){ if(n) try{ n.focus({preventScroll:true}); }catch(e){} }

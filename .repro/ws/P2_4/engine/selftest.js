@@ -664,6 +664,35 @@ if(/[?&]selftest=1/.test(location.search)){
     if(!labels.length) return {skipped:"no verdict label is styled in capitals", live:live.slice(0, 80)};
     return {labels, live:live.slice(0, 120), bad, pass:!bad.length};
   });
+  /* P2.V F21 - a sort or multi pick keeps its item on screen, and the verdict names that item, in the page and in
+     #live; the next item comes only on Next, with no verdict carried over. Played through the real side buttons
+     (a wrong pick) on the first sort and multi drill of the loaded content. */
+  sec("drillVerdict", () => {
+    const ds = ["sort", "multi"].map(k => DRILLS.find(x => (x.kind || "sort") === k && x.items.length > 1)).filter(Boolean);
+    if(!ds.length) return {skipped:"no sort or multi drill"};
+    const bad = [], seen = [], plain = h => { const t = document.createElement("div"); t.innerHTML = fmt(h); return t.textContent.replace(/\s+/g, " ").trim(); };
+    const txt = q => String((document.querySelector(q) || {}).textContent || "").replace(/\s+/g, " ").trim();
+    /* a sort item is escaped in its feedback and formatted on the card; either way the same words */
+    const names = (hay, h) => hay.indexOf(plain(h)) >= 0 || hay.indexOf(String(h).replace(/\s+/g, " ").trim()) >= 0;
+    ds.forEach(d => {
+      const k = d.kind || "sort", attr = k === "multi" ? "data-sortm" : "data-sort", it = d.items[0];
+      fresh(); S.mode = "drill"; S.dr = {id:d.id, order:d.items.map((_, i) => i), i:0, missed:[]}; render();
+      const b = [...document.querySelectorAll("#app [" + attr + "]")].find(x => x.getAttribute(attr) !== it[1]);
+      if(!b){ bad.push(k + ": no side to pick"); return; }
+      b.click();
+      const live = String((el("live") || {}).textContent || "").replace(/\s+/g, " ");
+      if(txt("#app .sortitem") !== plain(it[0])) bad.push(k + ": after the pick the screen shows \"" + txt("#app .sortitem") + "\", not the item it judges");
+      if(!names(txt("#app [data-verdict]"), it[0])) bad.push(k + ": the verdict does not name the item");
+      if(!names(live, it[0])) bad.push(k + ": #live does not name the item");
+      if(document.querySelector("#app .sortbtns .btn:not(:disabled)")) bad.push(k + ": a side can still be pressed");
+      const nx = el("drnext"); if(!nx){ bad.push(k + ": no Next button"); return; }
+      nx.click();
+      if(txt("#app .sortitem") !== plain(d.items[1][0])) bad.push(k + ": Next did not bring the next item");
+      if(document.querySelector("#app [data-verdict]") || String((el("live") || {}).textContent || "").trim()) bad.push(k + ": the verdict stayed after Next");
+      seen.push(k + ": " + plain(it[0]));
+    });
+    return {seen, bad, pass:!bad.length};
+  });
   sec("maps", () => ({ qIdsByTopic:QS.reduce((a,q)=>{ (a[q.c]=a[q.c]||[]).push(q.id); return a; },{}), rapidIx:RAPID.map(r=>r.ix), imgKeys:Object.keys(IMGS),
     qeHash:Object.fromEntries(QS.map(q=>[q.id, fnv(String(q.e||""))])), qwHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.w||{}))])), rxHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(String(r.x||""))])),
     optHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.o))])), roptHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(JSON.stringify(r.o))])) }));
@@ -687,7 +716,7 @@ if(/[?&]selftest=1/.test(location.search)){
   /* P2.V F42 - the recovery says what happened; and no section's render fell into it unasked */
   must("renderRecovery", !!R.renderRecovery && R.renderRecovery.pass === true, ((R.renderRecovery||{}).bad||[]).join("; "));
   /* P2.V F5 / F3 / F31 follow-up - calendar minutes, the Path hero, verdict case in #live */
-  ["dayMinutes", "pathHero", "liveCase"].forEach(k => { const v = R[k];
+  ["dayMinutes", "pathHero", "liveCase", "drillVerdict"].forEach(k => { const v = R[k];
     must(k, !!v && (!!v.skipped || v.pass === true), ((v||{}).bad||[]).join("; ")); });
   R.renderFailures = RENDER_FAIL_LOG.slice(failN0).map(f => f.mode + " (" + f.phase + "): " + f.msg);
   must("renderFailures", !R.renderFailures.length, R.renderFailures.slice(0, 4).join("; "));

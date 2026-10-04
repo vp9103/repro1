@@ -302,6 +302,7 @@ function load(){
     if(r) S = Object.assign(blank(), JSON.parse(r));
     migrateRapidKeys();
     repairState();
+    hubPull();
   }catch(e){}
 }
 /* The old build marked sets "done" with zero answers and marked topics "read" just for
@@ -347,6 +348,13 @@ function repairState(){
     const start = studied.length ? +new Date(studied[Math.max(0, studied.length - S.paceDays)]+"T00:00:00") : NaN;
     S.paceSetAt = start > 0 ? start : Date.now();
   }
+  /* P2.3 - the linked queue holds this block's rapid items only, once each, in queue order. An id whose
+     item has left the content (editing a rapid question changes its id) can never be served, so it is
+     never answered and never drained; it used to keep the plan's linked row showing, and costed, for
+     nothing. Pacing (stageAllot, planDaysLeft) therefore sees only items the Linked queue can serve. */
+  { const seen = {};
+    S.linked = (Array.isArray(S.linked) ? S.linked : []).filter(id =>
+      typeof id === "string" && Object.prototype.hasOwnProperty.call(RBYID, id) && !seen[id] && (seen[id] = true)); }
   if(S.ps && (!Array.isArray(S.ps.set) || S.ps.i < 0 || S.ps.i >= S.ps.set.length || !QS.some(q=>q.id===S.ps.set[S.ps.i]))) S.ps = null;
   if(S.rf && (!Array.isArray(S.rf.set) || S.rf.i < 0 || S.rf.i >= S.rf.set.length || !rItem(S.rf.set[S.rf.i]))) S.rf = null;
   if(S.sp && (!Array.isArray(S.sp.set) || S.sp.i < 0 || S.sp.i >= S.sp.set.length || !IMGS[S.sp.set[S.sp.i]])) S.sp = null;
@@ -357,6 +365,7 @@ function repairState(){
 function save(){
   if(window.__SELFTEST) return;           /* self-test never persists */
   S.ts = Date.now();
+  try{ hubPull(); }catch(e){}
   try{ localStorage.setItem(LS_KEY, JSON.stringify(S)); }catch(e){}
   try{ hubSync(); }catch(e){}
   flash(); clearTimeout(saveTimer); saveTimer = setTimeout(pushDb, 1200);
@@ -643,6 +652,9 @@ function tagEverything(){
    (P1.7-reopen2: said "3-option pick"; rapid picks are five-option since P1.1
    and are scored by miss rate below, not through chanceAdj.) */
 function chanceAdj(p, opts){ const c = 1/Math.max(2,opts); return clamp((p - c)/(1 - c), 0, 1); }
+/* P2.V F25 sweep: a topic with signals is only listed as weak while its mastery is under
+   this; the Weak Spots text states the same number, read from here. */
+const WEAK_BELOW = 0.78;
 function topicEvidence(t){
   const qs = QS.filter(q => q.c === t.id), rp = RAPID.filter(r => r.c === t.id), dr = DRILLS.filter(d => d.c === t.id);
   const rec = S.topics[t.id] || {};
@@ -735,12 +747,13 @@ function topicEvidence(t){
   if(rMiss >= 2) sigs.push("rapid picks");
   if(dMiss >= 3) sigs.push("a drill");
   const proven = sigs.length > 0;
-  const flag = proven && mastery < 0.78;
+  const flag = proven && mastery < WEAK_BELOW;
   /* The one act that would turn a suspicion into a verdict or clear it: name a
      channel that has produced no evidence at all yet, cheapest first. */
-  const settle = qSeen < 2 ? "answer 2 targeted questions here"
-               : gridScore == null ? "run the recall grid on this topic"
-               : rSeen === 0 ? "take the rapid picks on this topic" : "re-test it once";
+  /* P2.V F25 sweep: only a channel this topic actually has is named */
+  const settle = qSeen < 2 && qs.length >= 2 ? "answer 2 targeted questions here"
+               : gridScore == null && t.grid && (t.grid.items||[]).length ? "run the recall grid on this topic"
+               : rSeen === 0 && rp.length ? "take the rapid picks on this topic" : "re-test it once";
   /* Rank by exam weight x how wrong you were, and let the error flags SCALE that
      rather than replace it -- additive constants of 0.45 swamped a core term of
      0.1-0.3, which made the ranking effectively binary. */
@@ -768,15 +781,16 @@ function topicEvidence(t){
   const reasons = [];
   /* P3.4: the count leads, because it decides how much the rest of the list is
      worth. Two channels cannot both be one bad session; one channel can. */
-  if(sigs.length >= 2) reasons.push("<b>"+sigs.length+" independent signals</b> &mdash; "+sigs.join(", "));
+  if(sigs.length >= 2) reasons.push("<b>"+sigs.length+" separate signals</b> &mdash; "+sigs.join(", "));
   else if(sigs.length === 1) reasons.push("one signal only ("+sigs[0]+") &mdash; "+settle+" to settle it");
   if(qSeen && qRight/qSeen < 0.7) reasons.push("missed "+(qSeen-qRight)+" of "+qSeen+" question"+(qSeen===1?"":"s")+" here");
-  if(confWrong) reasons.push("<b>sure and wrong "+confWrong+(confWrong>1?" times":" time")+"</b>");
+  /* P2.V F25 sweep: confWrong counts questions (latest answer), not attempts */
+  if(confWrong) reasons.push("<b>sure and wrong on "+confWrong+" question"+(confWrong>1?"s":"")+"</b>");
   if(repeated) reasons.push("<b>chose the same wrong option more than once</b> &mdash; a specific misconception, not a slip");
   if(gridScore != null && gridScore < 0.6) reasons.push("recall check only "+Math.round(gridScore*100)+"%");
   if(rMiss>=2) reasons.push("missed "+rMiss+" rapid picks");
   if(dMiss>=3) reasons.push("mis-sorted "+dMiss+" drill items");
-  if(falseConf) reasons.push("<b>right before, wrong on re-test</b> &mdash; the first one was a guess");
+  if(falseConf) reasons.push("<b>right before, wrong on re-test</b> &mdash; the first right answer may have been a guess");
   /* P5.3: this said "a guess, not a misreading" of exactly the attempts the
      error-type table below now counts as misreads, and the 9 s was a flat
      number the code stopped using when the floor was scaled to the stem. */
@@ -785,12 +799,15 @@ function topicEvidence(t){
   if(hardHist.length<2 && qSeen) reasons.push("not yet proven on enough multi-step transfer questions");
   if(modalityCount<3 && known>0.15) reasons.push("evidence comes from only "+modalityCount+" learning mode"+(modalityCount===1?"":"s"));
   if(calErr!=null && calErr>0.22) reasons.push("confidence is poorly calibrated to actual accuracy");
-  if(qRight > 0 && verified === 0 && qSeen >= 2) reasons.push("correct once but never re-tested &mdash; unproven");
+  if(qRight > 0 && verified === 0 && qSeen >= 2) reasons.push("right answers here not yet confirmed by a second right answer in a row &mdash; unproven");
   if(traj && traj.dir === "sliding") reasons.push("<b>going backwards</b> &mdash; "+Math.round(traj.early*100)+"% earlier, "+Math.round(traj.late*100)+"% lately");
   else if(traj && traj.dir === "improving") reasons.push("improving &mdash; "+Math.round(traj.early*100)+"% &rarr; "+Math.round(traj.late*100)+"%");
   else if(traj && traj.dir === "stuck" && traj.late < 0.7) reasons.push("flat at "+Math.round(traj.late*100)+"% across repeated attempts");
-  if(known<0.15 && !read) reasons.push("never opened");
-  else if(known<0.15) reasons.push("read but never tested");
+  /* P2.V F25 sweep: "read" is the read-detection credit, not a click, and a topic can hold a
+     little evidence while known is still under 0.15, so neither "never opened" nor "never
+     tested" was always true */
+  if(known<0.15 && !read) reasons.push(W ? "not yet read, with only a little answered here so far" : "not yet read or tested");
+  else if(known<0.15) reasons.push(W ? "read, with only a little answered here so far" : "read but never tested");
   return {t, mastery, known, read, flag, qSeen, qRight, confWrong, falseConf, luckyFast, verified,
           rSeen, rMiss, dMiss, priority, reasons, wrong, modalityCount, transferN:hardHist.length,
           /* P3.4: evidence is the number of independent signals behind the flag;
@@ -903,8 +920,10 @@ function errorTypesHTML(et){
     <span class="st2">Twelve wrong in one topic is not one problem. Twelve wrong because the stem went past too
     quickly, twelve wrong because two lesions keep swapping, and twelve wrong because the material was never
     learned are three different repairs. Every wrong attempt held against a question is sorted into one of them.</span></div>`;
-  if(!et.tot.wrong) return head + `<div class="empty">Nothing has been answered wrongly yet, so there is nothing to
-    sort. This fills in on the first miss.</div>`;
+  /* P2.V F25 sweep: only question attempts are sorted here, so a rapid or drill miss must not
+     make "nothing has been answered wrongly" false */
+  if(!et.tot.wrong) return head + `<div class="empty">No question has been answered wrongly yet, so there is nothing
+    to sort. This fills in on the first missed question.</div>`;
   const rows = Object.keys(et.byTopic).sort((a, b) => et.byTopic[b].wrong - et.byTopic[a].wrong).slice(0, 12);
   const pctBank = et.slots ? Math.round(100*et.reachable/et.slots) : 0;
   return head + `<div class="tblwrap"><table><thead><tr><th>Topic</th>
@@ -932,15 +951,17 @@ function errorTypesHTML(et){
     less than <b>6&#8239;s</b>, which across this bank runs from ${Math.round(et.floorLo/1000)}&#8239;s on the shortest
     stem to ${Math.round(et.floorHi/1000)}&#8239;s on the longest. The options have to be read on top of the
     stem, so even the most forgiving question here demands ${Math.round(et.slowestWpm)} words a minute across stem
-    and options to come in under the floor &mdash; quicker than ordinary silent reading, which is why anything below
-    it is treated as unread rather than as fast.${
+    and options to come in under the floor, which is why anything below it is treated as unread rather than as
+    fast.${
     et.timedRight >= 4 && et.fastRight/et.timedRight >= 0.25 ? ` <b>Check this one:</b> ${et.fastRight} of your
       ${et.timedRight} timed correct answers also came in under the floor, so on your own times the floor is sitting
-      too high and the misread column is over-counting.` : ""}${
+      too high ${/* P2.V F25 sweep: said "the misread column is over-counting" with that column at 0 */
+      et.tot.misread ? "and the " + et.tot.misread + " in the misread column may include misses you did read."
+        : "&mdash; no miss has been counted as a misread yet, but a quick miss would be, read or not."}` : ""}${
     et.tot.untimed ? ` ${et.tot.untimed} of your ${et.tot.wrong} wrong attempt${et.tot.wrong===1?"":"s"} ${et.tot.untimed===1?"was":"were"} saved without a time, so ${et.tot.untimed===1?"it":"they"} can
       never be called ${et.tot.untimed===1?"a misread":"misreads"} and that column is a lower bound.` : ""}
-    <br><b>Confusion</b> reuses the same named pairs the <i>Specific confusions</i> list below is built from, and
-    nothing else: a
+    <br><b>Confusion</b> reuses the question pairs the <i>Specific confusions</i> list below is built from (its
+    rapid pairs are not counted here), and nothing else: a
     pick counts only when that exact option is already a named pair and the answer it displaced is one of the answers
     on that pair. A pair needs the same wrong option offered on <b>two</b> questions of one topic, and only
     ${et.reachable} of the ${et.slots} wrong option${et.slots===1?"":"s"} in this bank (${pctBank}%) ${et.reachable===1?"is":"are"}, so at most ${pctBank}% of wrong
@@ -1047,10 +1068,17 @@ function fatigueHTML(f){
   return `<div class="call step" style="margin:0 0 18px"><span class="cl">This sitting</span>
     <b>Accuracy has dropped ${f.drop} points this session &mdash; take a break.</b><br>
     Your first ${FATIGUE_WIN} answers this sitting were ${f.first}% right; the last ${FATIGUE_WIN} were
-    ${f.last}%. Both stretches were the same average difficulty, so the later items were not the harder
-    ones &mdash; this is what tiring looks like. Twenty minutes away from the screen will do more for the next hour than twenty more
+    ${f.last}%. ${/* P2.V F25 sweep: said "the same average difficulty" whatever the windows held; the
+      guard allows the last window up to FATIGUE_HARD harder, and is not re-applied once the line is on */
+      f.hard <= 0 ? "The last stretch was no harder on average than the first, so the later items were not the"
+        + " harder ones &mdash; this is what tiring looks like."
+      : f.hard <= FATIGUE_HARD ? "The last stretch was at most a quarter of a level harder on average than the first"
+        + " (on the page's 1-to-3 difficulty scale), close to the same difficulty &mdash; this is what tiring looks like."
+      : "The last stretch is now " + f.hard + " of a level harder on average than the first (on the page's 1-to-3"
+        + " difficulty scale), so part of this drop may be the harder items; it began as a drop on items at most a"
+        + " quarter of a level harder."} Twenty minutes away from the screen will do more for the next hour than twenty more
     questions, and answers given past this point put the wrong items on your review schedule. The line goes on
-    its own once the gap closes, or after a proper break.</div>`;
+    its own once the gap closes to under ${FATIGUE_OFF} points, or after a break of more than ${SITTING_GAP/3600e3} hours.</div>`;
 }
 /* Items missed repeatedly DESPITE coming back on the spacing schedule. Re-testing
    these again is the one thing that reliably does not work — the answer has never
@@ -1126,6 +1154,31 @@ function diagVerdict(tid){
   const right = rs.filter(r => S.rapid[r.i].diagOk).length;
   return right === rs.length ? "solid" : (right === 0 ? "cold" : null);
 }
+/* P2.V F40 - diagVerdict() was never called, so the diagnostic changed nothing the student could
+   see: the run ended on the Path with no result, and no stage said what it had found. It now tags
+   each unit stage (the path list and the plan's stage rows) and the Path shows the result once. */
+function stageDiagTag(p){
+  if(!p || p.kind !== "unit") return "";
+  const v = (p.topics||[]).map(diagVerdict).filter(Boolean); if(!v.length) return "";
+  const cold = v.filter(x => x === "cold").length, solid = v.length - cold;
+  return ' <span class="tag ghost" data-diag>' + (!solid ? "diagnostic: missed" : !cold ? "diagnostic: right"
+    : "diagnostic: " + solid + " right, " + cold + " missed") + '</span>';
+}
+function diagNote(set){
+  const items = (set||[]).map(id => RBYID[id]).filter(Boolean);
+  const ok = r => !!(S.rapid[r.i] || {}).diagOk, right = items.filter(ok).length;
+  const name = r => esc((findT(r.c) || {t:r.c}).t);
+  const missed = items.filter(r => !ok(r)).map(name), got = items.filter(ok).map(name);
+  const lines = [];
+  if(missed.length) lines.push("Missed: " + missed.join("; ") + ".");
+  if(got.length) lines.push("Right: " + got.join("; ") + ".");
+  lines.push("The stages below now carry these results. Their order stays the same: read a missed topic closely; "
+    + "one right answer is a good start, not proof that you know the topic.");
+  /* promote() puts a first answer, right or wrong, on the 15-minute step */
+  lines.push("Each item you answered is now on the spacing schedule and comes back for review (Review first in the plan, Due now in Rapid): "
+    + "a first answer in about 15 minutes, then further apart each time you get it right.");
+  return {title:"Diagnostic done: " + right + " of " + items.length + " right", lines:lines, fresh:true};
+}
 function stageProgress(p){
   const st = S.stage[p.id] || {};
   if(p.kind === "diag")  return st.done ? 1 : (st.total ? clamp((st.n||0)/st.total, 0, 0.95) : 0);
@@ -1158,7 +1211,7 @@ function overall(){
 }
 function covered(){
   const ev = ALLT().map(topicEvidence);
-  const readN = ev.filter(e=>e.read).length / ev.length;
+  const readN = ev.filter(e=>e.read).length / Math.max(1, ev.length);   /* P2.V F1: a block with no topics yet read "NaN% covered" */
   const qDone = QS.filter(q=>S.qs[q.id]).length / Math.max(1,QS.length);
   const rSeen = Object.values(S.rapid).filter(r=>r.box>0).length / Math.max(1,RAPID.length);
   const dDone = Object.keys(S.drills).length / Math.max(1,DRILLS.length);
@@ -1176,8 +1229,24 @@ function stats(){
 }
 function bumpDay(mins){
   const k = todayKey(), d = S.days[k] = S.days[k] || {acts:0, mins:0, done:[]};
-  d.acts++; d.mins += (mins||0);
+  d.acts++; d.mins = (+d.mins || 0) + (mins||0);
 }
+/* P2.V F5 - the calendar printed "14 activities · 0 min" after rapid picks and drills: only a
+   topic marked read (its nominal minutes) and a practice answer (a flat 1) ever added minutes.
+   S.days[k].mins is now measured time on the page, the same way for every activity: the time
+   from one click, key press, wheel or touch scroll to the next, counted only while the gaps
+   stay within IDLE_GAP (5 minutes) and the page stays visible, so a tab left open is not
+   counted. Answers still count as activities through bumpDay(). */
+const IDLE_GAP = 5*60e3;
+let ACTIVE_AT = 0;
+function noteActive(){
+  const now = Date.now(), gap = now - ACTIVE_AT; ACTIVE_AT = now;
+  if(!(gap > 0 && gap <= IDLE_GAP)) return;
+  const k = todayKey(), d = S.days[k] = S.days[k] || {acts:0, mins:0, done:[]};
+  d.mins = (+d.mins || 0) + gap/60000;
+}
+["pointerdown", "keydown", "wheel", "touchmove"].forEach(t => document.addEventListener(t, noteActive, {capture:true, passive:true}));
+document.addEventListener("visibilitychange", () => { if(document.visibilityState !== "visible") ACTIVE_AT = 0; });
 function streak(){
   let n = 0; const d = new Date();
   for(let i=0;i<400;i++){
@@ -1201,6 +1270,11 @@ const examPassed = () => isFinite(+EXAM) && +EXAM <= Date.now();
    said "exam date passed" and asked for a new date. Only a DATE behind today has
    passed; the header, the plan head and the banner all ask this one question. */
 const examDateGone = () => examPassed() && examISO() < todayKey();
+/* P2.V F6/N2 - the header said "10d 7h" (to 08:00 on the exam day) while the plan said "11 days"
+   (daysLeft() rounds that span up). Both now print this one number: whole calendar days from
+   today's date to the exam date, so they cannot disagree. Rounded, so a daylight-saving day of
+   23 or 25 hours still counts as one day. */
+const examDaysAway = () => Math.round((new Date(examISO() + "T00:00:00") - new Date(todayKey() + "T00:00:00")) / 864e5);
 /* P3.3 - which day of the CHOSEN pace this is. Counting every day ever studied
    meant that picking a 5-day pace on study-day 11 opened on "day 5 of 5":
    paceLeft was 1 and todaysPlan() dropped the whole remainder into today. Only
@@ -1210,10 +1284,15 @@ function paceStartKey(){
   const t = +S.paceSetAt;
   return t > 0 ? dayKeyLocal(new Date(t)) : "";   /* "" sorts before every key: count all */
 }
+/* P2.V F8 follow-up - today counts once, whether or not it has activity yet. The old sum
+   added 1 only when today had no record at all, but a plan-row click writes today's record
+   with acts 0 (to tick the row), and a day with acts 0 is not in "used" either: so the
+   first plan-row click of a fresh day turned "day 2 of this pace" into "day 1", and
+   paceLeftNow() grew by a day. Days before today count when they have activity. */
 function blockDay(){
-  const since = paceStartKey();
-  const used = Object.keys(S.days).filter(k=>S.days[k].acts && k >= since).length;
-  return Math.min(S.paceDays||5, used + (S.days[todayKey()] ? 0 : 1) || 1);
+  const since = paceStartKey(), today = todayKey();
+  const before = Object.keys(S.days).filter(k => k >= since && k < today && S.days[k].acts).length;
+  return Math.min(S.paceDays||5, before + 1);
 }
 
 /* @region engine.header (LITERALS, engine) */
@@ -1222,8 +1301,7 @@ const MODES = [["path","Path"],["learn","Learn"],["practice","Practice"],["drill
                ["rapid","Rapid"],["spot","Images"],["weak","Weak Spots"],["gloss","Glossary"]];
 let lastNavHTML = "";
 function paintHeader(){
-  const diff = EXAM - Date.now();
-  const d = Math.floor(diff/864e5), h = Math.floor((diff%864e5)/36e5);
+  const away = examDaysAway();
   const cd = el("countdown");
   if(cd){
     /* P6 cleanup - this badge read "Exam day" from the exam morning onwards and
@@ -1231,7 +1309,7 @@ function paintHeader(){
        examPassed() the P1.5 banner asks and, once the date is genuinely behind
        us, echo the banner's own words. Comparing examISO() with todayKey() keeps
        the exam day itself reading "Exam day" instead of "Date passed". */
-    cd.innerHTML = diff>0 ? esc(examNameCap())+" in <b>"+d+"d "+h+"h</b><br>"+EXAM.toLocaleDateString(undefined,{month:"short",day:"numeric"})
+    cd.innerHTML = away > 0 ? esc(examNameCap())+" in <b>"+away+" day"+(away===1?"":"s")+"</b><br>"+EXAM.toLocaleDateString(undefined,{month:"short",day:"numeric"})
                           : examDateGone()
                             ? "<b>Date passed</b><br>set a new date"
                           : "<b>Exam day</b>";
@@ -1249,7 +1327,7 @@ function paintHeader(){
     const html = MODES.map(([k,l])=>
       '<button data-m="'+k+'"'+(S.mode===k?' aria-current="true"':'')+'>'+l+
       (k==="weak"&&flags?'<span class="nbadge">'+flags+'</span>':'')+'</button>').join("")
-      + '<button class="yieldbtn'+(S.hiOnly?" on":"")+'" data-yield="1" title="Show only material that is high yield for '+YAXES[yAxis()]+'">'
+      + '<button class="yieldbtn'+(S.hiOnly?" on":"")+'" data-yield="1" title="Show only material that is high yield for '+YAXES[yAxis()]+' in the sets, the rail and the review rows of the daily plan (the path always covers the whole block)">'
       + (S.hiOnly ? "High yield only" : "All yields") + '</button>'
       /* P2.2 - the yield-axis toggle, next to the filter it steers: which of the two
          yields (Step 1, the course exam) the rail, that filter and the Weak Spots
@@ -1274,8 +1352,10 @@ function bindChrome(){
     if(b.dataset.openSearch){ openSearch(); return; }
     /* P2.V F13 sweep: the yield toggles redraw the view in place (rerenderHere keeps an
        open lesson's disclosures, popups and scroll) */
-    if(b.dataset.yield){ S.hiOnly = !S.hiOnly; lastNavHTML = ""; rerenderHere(); return; }
-    if(b.dataset.yaxis){ S.yAxis = yAxis() === "step1" ? "exam" : "step1"; lastNavHTML = ""; rerenderHere(); return; }
+    /* P2.V F8 - an empty-set notice describes a set asked for under the old filter, so a toggle clears it
+       (it used to stay up, "No rapid pick is due", beside a Due now (2) the toggle had just refilled) */
+    if(b.dataset.yield){ S.hiOnly = !S.hiOnly; SET_EMPTY = null; lastNavHTML = ""; rerenderHere(); return; }
+    if(b.dataset.yaxis){ S.yAxis = yAxis() === "step1" ? "exam" : "step1"; SET_EMPTY = null; lastNavHTML = ""; rerenderHere(); return; }
     if(b.dataset.m) go(b.dataset.m);
   });
   document.addEventListener("keydown", e => {
@@ -1288,6 +1368,7 @@ function bindChrome(){
   window.addEventListener("scroll", ()=>{ S.scroll[S.mode] = window.scrollY; }, {passive:true});
 }
 function go(m, cur){
+  SET_EMPTY = null;   /* P2.3: an "empty set" notice belongs to the click that asked for it */
   S.scroll[S.mode] = window.scrollY;
   S.mode = m; if(cur !== undefined) S.cur = cur;
   if(cur !== undefined) S.scroll[m] = 0;
@@ -1331,8 +1412,9 @@ function isTabbable(n){
   if(typeof n.checkVisibility === "function") return n.checkVisibility({checkVisibilityCSS: true});
   return n.getClientRects().length > 0;
 }
-function captureFocus(){
-  const a = document.activeElement;
+function captureFocus(node){
+  /* P2.V F31: node lets the lightbox record its opener the same way */
+  const a = node || document.activeElement;
   /* render() rebuilds the app subtree AND repaints the header nav and the
      dock, so anything in the document can be what is about to be destroyed */
   if(!a || a === document.body || a === document.documentElement) return null;
@@ -1375,6 +1457,25 @@ function focusHolder(node){
   }
   return null;
 }
+/* P2.V F31 - where a reader starts when a view, or a new item in it, is drawn and nothing they
+   were on survives: the question, the rapid prompt, the item to sort, the topic heading. A view
+   without one of these falls back to the main landmark, as before. */
+function viewLead(){
+  const app = el("app"); if(!app) return null;
+  const n = app.querySelector("[data-viewlead], .qstem, .rfq, .sortitem, .sumhead, .topichead h2");
+  if(!n) return null;
+  if(!n.hasAttribute("tabindex")) n.setAttribute("tabindex", "-1");
+  return n;
+}
+/* ...and the same landing for a render that started with focus already on the body (a search
+   result: the search dialog, which held focus, is removed before the view is drawn) */
+function landFocus(){
+  const a = document.activeElement;
+  if(a && a !== document.body && a !== document.documentElement) return;
+  const t = viewLead() || document.querySelector("main"); if(!t) return;
+  if(t.tabIndex < 0 && !t.hasAttribute("tabindex")) t.setAttribute("tabindex", "-1");
+  try{ t.focus({preventScroll: true}); }catch(e){}
+}
 function restoreFocus(sig){
   if(!sig) return;
   const now = document.activeElement;
@@ -1385,7 +1486,7 @@ function restoreFocus(sig){
   const twin = focusTwin(sig);
   let target = null;
   if(twin) target = isTabbable(twin) ? twin : focusHolder(twin);
-  if(!target) target = document.querySelector("main");
+  if(!target) target = viewLead() || document.querySelector("main");
   if(!target) return;
   if(target.tabIndex < 0 && !target.hasAttribute("tabindex")) target.setAttribute("tabindex", "-1");
   try{ target.focus({preventScroll: true}); }catch(e){}
@@ -1402,11 +1503,29 @@ function restoreFocus(sig){
    explanation, rapid answer panel, drill result line, spot diagnosis); in every other
    view the region is emptied so a stale verdict is never re-read. The same text twice
    in a row gets a trailing no-break space, otherwise a reader sees no change to speak. */
+/* P2.V F31 - a verdict from a redraw that keeps no [data-verdict] on screen (pretest, self-explanation) */
+function sayLive(t){
+  const live = document.getElementById("live"); if(!live || !t) return;
+  live.textContent = t === live.textContent ? t + " " : t;
+}
+/* P2.V F31 - the words as written: labels set in capitals by CSS (text-transform) reached #live in
+   capitals ("NOT QUITE"), which a screen reader may spell out letter by letter. The transform is
+   lifted while the text is read, and each line of the verdict ends in punctuation, so the reader
+   pauses between the label and what follows. */
+function spokenText(e){
+  const caps = [e].concat(Array.from(e.querySelectorAll("*"))).filter(x => getComputedStyle(x).textTransform !== "none");
+  const was = caps.map(x => x.style.textTransform);
+  caps.forEach(x => { x.style.textTransform = "none"; });
+  const raw = e.innerText || e.textContent || "";
+  caps.forEach((x, i) => { x.style.textTransform = was[i]; });
+  return raw.split(/\n+/).map(l => l.replace(/\s+/g, " ").trim()).filter(Boolean)
+    .map(l => /[.!?:;,\u2014-]$/.test(l) ? l : l + ".").join(" ");
+}
 function announceFeedback(){
   const live = document.getElementById("live"); if(!live) return;
   let txt = "";
   document.querySelectorAll("#app [data-verdict]").forEach(e => {
-    const t = (e.innerText || e.textContent || "").replace(/\s+/g, " ").trim();
+    const t = spokenText(e);
     if(t) txt += (txt ? " " : "") + t;
   });
   const prev = live.textContent;
@@ -1415,30 +1534,138 @@ function announceFeedback(){
 }
 const viewFor = () => ({path:viewPath, learn:viewLearn, practice:viewPractice, drill:viewDrill,
   rapid:viewRapid, spot:viewSpot, weak:viewWeak, gloss:viewGloss}[S.mode] || viewPath);
+/* =====================================================================
+   RENDER-FAILURE RECOVERY (P2.V F42)
+   What was wrong: a view that threw fell back to the Path with nothing said,
+   in the view or in #live (console.error only). Every running set was dropped,
+   including sets on views that had not failed, and the header kept the failed
+   view highlighted because paintHeader() had run before the throw.
+   Now: the set that belongs to the failed view is ended (it may be what broke
+   it) and the others are kept; the Path is drawn under a notice that says what
+   failed, what was kept or ended and what to do; the header is repainted for
+   the Path; the notice is spoken through #live and takes focus. If the Path
+   cannot be drawn either, a small panel says so and links every other view.
+   The notice stays on the Path until the student opens another view or closes
+   it. RENDER_FAIL_LOG lets the page's own self-test see a failure that the
+   recovery would otherwise hide.
+   ===================================================================== */
+const SESSION_OF = {practice:"ps", rapid:"rf", drill:"dr", spot:"sp"};
+let RENDER_NOTE = null;
+const RENDER_FAIL_LOG = [];
+const modeLabel = m => (MODES.find(x => x[0] === m) || [m, "This view"])[1];
+const viewName = m => MODES.some(x => x[0] === m) ? "the " + modeLabel(m) + " view" : "this view";
+function sessionDesc(k){
+  const s = S[k]; if(!s) return "";
+  const n = Array.isArray(s.set) ? s.set.length : 0, at = Math.min(n, (+s.i || 0) + 1);
+  if(k === "ps"){ const a = s.ans ? Object.keys(s.ans).length : 0;
+    return {what:"your practice set", where:n ? (s.done ? "its summary" : "question " + at + " of " + n) : "",
+            kept:a ? "The " + a + " answer" + (a === 1 ? "" : "s") + " you gave in it " + (a === 1 ? "is" : "are") + " saved." : "Nothing in it had been answered yet."}; }
+  if(k === "rf") return {what:"your rapid-review set", where:n ? "item " + at + " of " + n : "",
+                         kept:"Every pick you made in it is saved."};
+  if(k === "sp") return {what:"your image set", where:n ? "image " + at + " of " + n : "",
+                         kept:"Every image you answered in it is saved."};
+  const d = DRILLS.find(x => x.id === s.id);
+  return {what:d ? "the drill “" + stripTags(d.t) + "”" : "your drill", where:"",
+          kept:"A drill is scored when it ends, so this run was not scored; your earlier runs are kept."};
+}
+function renderNoteHTML(){
+  const N = RENDER_NOTE; if(!N || N.at !== S.mode) return "";
+  const lines = [];
+  lines.push(N.pathFailed
+    ? "Something went wrong while drawing " + esc(N.label) + (N.failed !== "path" ? ", and the Path view could not be drawn either" : "") + "."
+    : "Something went wrong while drawing " + esc(N.label) + ", so you are on the Path view instead.");
+  lines.push("Your progress is saved: every answer, score and review date you have is kept.");
+  N.ended.forEach(e => lines.push(esc(e.what.charAt(0).toUpperCase() + e.what.slice(1)) + (e.where ? " (at " + esc(e.where) + ")" : "")
+    + " was closed, because it was on that screen. " + esc(e.kept)));
+  N.kept.forEach(e => lines.push(esc(e.what.charAt(0).toUpperCase() + e.what.slice(1)) + " is still open"
+    + (e.where ? ": " + esc(modeLabel(e.mode)) + " picks it up at " + esc(e.where) : ": " + esc(modeLabel(e.mode)) + " picks it up") + "."));
+  lines.push(N.pathFailed
+    ? "Open another view with a button below or from the menu. Reloading the page tries the Path view again."
+    : "You can open " + esc(N.label) + " again from the menu. If it fails again, reload the page, and if it still fails, "
+      + "use Download my progress at the foot of this page to keep a copy.");
+  return '<div class="call trap rendernote" id="rendernote" tabindex="-1"><span class="cl">' + esc(N.label.charAt(0).toUpperCase() + N.label.slice(1)) + ' could not be shown</span>'
+    + lines.map(l => '<p style="margin:.35em 0 0">' + l + '</p>').join("")
+    + (N.pathFailed ? '<div class="btnrow" style="margin-top:12px">' + MODES.filter(m => m[0] !== "path" && m[0] !== N.failed)
+        .map(m => '<button class="btn sm" data-m="' + m[0] + '">' + esc(m[1]) + '</button>').join("") + '</div>'
+      : '<div class="btnrow" style="margin-top:12px"><button class="btn sm gho" data-rnote-x="1">Close this notice</button></div>')
+    + '</div>';
+}
+/* P2.V F40 - a one-time result on the Path (the diagnostic's), shown and spoken like the notice above */
+let PATH_NOTE = null;
+function pathNoteHTML(){
+  const N = PATH_NOTE; if(!N || S.mode !== "path") return "";
+  return '<div class="call step pathnote" id="pathnote" tabindex="-1"><span class="cl">' + esc(N.title) + '</span>'
+    + N.lines.map(l => '<p style="margin:.35em 0 0">' + l + '</p>').join("")
+    + '<div class="btnrow" style="margin-top:12px"><button class="btn sm gho" data-pnote-x="1">Close this notice</button></div></div>';
+}
+const viewHTML = () => renderNoteHTML() + pathNoteHTML() + viewFor()();
+function recoverRender(err, phase){
+  const failed = S.mode;
+  console.error("Recovered from render failure in " + failed + " (" + phase + ")", err);
+  RENDER_FAIL_LOG.push({mode:failed, phase:phase, msg:String(err && err.message || err)});
+  if(RENDER_FAIL_LOG.length > 20) RENDER_FAIL_LOG.shift();
+  /* the failed view's own set may be what broke it, so it ends; a failure before any view
+     was drawn (state repair, header) cannot be pinned on one set, so every running set ends */
+  const own = SESSION_OF[failed], ends = (phase === "repair" || phase === "header") ? ["ps","rf","dr","sp"] : (own ? [own] : []);
+  const ended = [], kept = [];
+  ["ps","rf","dr","sp"].forEach(k => { if(!S[k]) return;
+    const d = Object.assign({mode:Object.keys(SESSION_OF).find(m => SESSION_OF[m] === k)}, sessionDesc(k));
+    if(ends.indexOf(k) >= 0){ ended.push(d); S[k] = null; } else kept.push(d); });
+  S.mode = "path"; S.scroll.path = 0; SET_EMPTY = null;
+  RENDER_NOTE = {at:"path", failed:failed, label:viewName(failed), ended:ended, kept:kept, pathFailed:failed === "path", fresh:true};
+  /* P5.V FIX 7: never persisted during ?selftest=1 (save() is a no-op there) */
+  try{ save(); }catch(_e){}
+  /* the header was painted for the failed view before the throw; paint it for the view shown */
+  try{ lastNavHTML = ""; paintHeader(); }catch(eh){ console.error("header repaint failed", eh); }
+  if(failed !== "path"){
+    let drawn = false;
+    try{ el("app").innerHTML = viewHTML(); wire(); drawn = true; }
+    catch(e2){ console.error("The Path view failed too", e2); RENDER_NOTE.pathFailed = true; }
+    /* the tutor dock is not the Path: a dock that cannot paint leaves the Path standing */
+    if(drawn){ try{ paintDock(); }catch(ed){ console.error("The tutor dock could not be drawn", ed); } return; }
+  }
+  /* last resort: no view code at all, only the notice and a way into every other view */
+  const app = el("app");
+  app.innerHTML = renderNoteHTML();
+  app.querySelectorAll("[data-m]").forEach(b => b.onclick = ()=>go(b.dataset.m));
+  try{ paintDock(); }catch(_e){}
+}
+/* after a recovery the notice is read out once and takes focus, so a keyboard or screen-reader
+   user hears what happened and continues from it rather than from the failed view's control */
+function announceRecovery(){
+  const R = RENDER_NOTE && RENDER_NOTE.fresh && el("rendernote") ? [RENDER_NOTE, el("rendernote")]
+          : PATH_NOTE && PATH_NOTE.fresh && el("pathnote") ? [PATH_NOTE, el("pathnote")] : null;
+  if(!R) return false;
+  const N = R[0], box = R[1];
+  N.fresh = false;
+  const live = el("live");
+  /* textContent, not innerText: the label is upper-cased by CSS, and spoken capitals get spelled out */
+  if(live){ const part = n => (n.textContent || "").replace(/\s+/g, " ").trim();
+    const t = [box.querySelector(".cl")].concat(Array.from(box.querySelectorAll("p"))).filter(Boolean)
+      .map((n, i) => part(n) + (i === 0 ? "." : "")).join(" ");
+    live.textContent = t === live.textContent ? t + "\u00A0" : t; }
+  try{ box.focus({preventScroll:true}); }catch(_e){}
+  window.scrollTo({top:0, behavior:"instant"});
+  return true;
+}
 function render(){
   /* P1.2 - remember who had focus before the subtree is thrown away */
   const keepFocus = captureFocus();
+  if(RENDER_NOTE && RENDER_NOTE.at !== S.mode) RENDER_NOTE = null;   /* the notice belongs to the view it was shown on */
+  if(PATH_NOTE && S.mode !== "path") PATH_NOTE = null;
+  let phase = "repair";
   try{
     repairState();
     ovScope();
-    paintHeader();
-    el("app").innerHTML = viewFor()();
-    wire(); paintDock();
-  }catch(err){
-    console.error("Recovered from render failure", err);
-    S.ps = S.rf = S.dr = S.sp = null;
-    S.mode = "path";
-    /* P5.V FIX 7: this recovery write had no __SELFTEST guard, unlike save()
-       and flushNow(), so one render exception during a ?selftest=1 session
-       would have written the self-test's synthetic S over the user's real
-       saved profile. It is the only place S is persisted outside save(). */
-    try{ if(!window.__SELFTEST) localStorage.setItem(LS_KEY, JSON.stringify(S)); }catch(_e){}
-    try{ el("app").innerHTML = viewPath(); wire(); paintDock(); }
-    catch(fatal){ el("app").innerHTML = '<div class="panel"><h3>The view recovered safely</h3><p>Your progress is intact. Refresh once to continue.</p></div>'; }
-  }
+    phase = "header"; paintHeader();
+    phase = "view"; el("app").innerHTML = viewHTML();
+    phase = "wire"; wire();
+    phase = "dock"; paintDock();
+  }catch(err){ recoverRender(err, phase); }
   /* P1.3 - speak the verdict for the view that was just built. Outside the try/catch so
      the recovery path clears the region too. */
   announceFeedback();
+  if(announceRecovery()) return;
   /* P1.2 - after the rebuild AND after wire(), put the reader back where
      they were. Outside the try/catch so the recovery path restores too. */
   restoreFocus(keepFocus);
@@ -1471,10 +1698,11 @@ function restoreLesson(k){
   });
 }
 function rerenderHere(){
-  const y = window.scrollY;
+  const y = window.scrollY, m0 = S.mode;
   S.scroll[S.mode] = y;
   const keep = captureLesson();
   save(); render();
+  if(S.mode !== m0) return;   /* P2.V F42: a failed redraw recovered to another view, which keeps its own scroll */
   restoreLesson(keep);
   requestAnimationFrame(()=>window.scrollTo({top:y,behavior:"instant"}));
 }
@@ -1492,7 +1720,7 @@ function renderAround(keep){
   try{
     repairState(); paintHeader();
     const tpl = document.createElement("div");
-    tpl.innerHTML = viewFor()();
+    tpl.innerHTML = viewHTML();
     const twin = tpl.querySelector("#" + keep.id);
     const oldUp = [], newUp = [];
     for(let x = keep; x && x !== app; x = x.parentNode) oldUp.push(x);
@@ -1530,6 +1758,19 @@ function hubLoad(){
   catch(e){ return {v:1, items:{}}; }
 }
 function hubSave(h){ try{ localStorage.setItem(HUB_KEY, JSON.stringify(h)); }catch(e){} }
+/* P2.V F28/N6 - one due queue, but two copies of each item: this block's record (S.rapid) and the
+   hub's. Another block's Due now answers this block's items in the hub only (wireRapid's foreign
+   branch), and hubSync below wrote this block's older copy back over it on the next save, so a
+   review done on the other page was undone and the item came due again. Before anything is
+   written, a hub record answered more times (n counts answers, and only ever grows) than this
+   block's copy is taken in. Pages built before this still write n, so their reviews count too. */
+function hubPull(){
+  const h = hubLoad(); let took = 0;
+  RAPID.forEach(r => { const it = h.items[r.i], rec = S.rapid[r.i];
+    if(!it || it.b !== META.key || !rec || !((+it.n || 0) > (+rec.n || 0))) return;
+    rec.box = it.box; rec.due = it.due; rec.miss = it.miss || 0; rec.n = it.n; took++; });
+  return took;
+}
 /* Only items the student has actually met get stored, which keeps the hub small. */
 function hubSync(){
   const h = hubLoad(); let touched = false;
@@ -1613,8 +1854,13 @@ function stageAllot(left, paceLeft, dueRapid, linkedN){
    stage is left, never more than the days left in the pace (the last day takes
    everything), 0 once every stage is done. peak is the heaviest of those days in
    stage plus due / linked minutes, and peakAt how many days after today it falls. */
+/* P2.V F8 - the review load the plan schedules and costs: the Due now and Linked queue sets as
+   their buttons serve them (rapidPool), so "High yield only" cuts the rows, their minutes and the
+   head's day count alike. The plan used hubDue().length and S.linked.length, which the filter
+   never touched: the due row read "4 items due" and served lower-yield items under the filter. */
+const reviewLoad = () => ({due:rapidPool("due").length, linked:rapidPool("linked").length});
 function planDaysLeft(){
-  const dueRapid = hubDue().length, linkedN = (S.linked||[]).length;
+  const {due:dueRapid, linked:linkedN} = reviewLoad();
   let left = PATH.filter(p=>!stageDone(p)), pl = paceLeftNow(), days = 0, peak = 0, peakAt = 0;
   while(left.length){ const a = stageAllot(left, pl, dueRapid, linkedN);
     const m = left.slice(0, a.take).reduce((s,p)=>s+p.mins, 0) + a.dueMins + a.linkedMins;
@@ -1626,56 +1872,76 @@ function todaysPlan(){
   const ev = diagnose(), out = [];
   const paceLeft = paceLeftNow();
   const stagesLeftArr = PATH.filter(p=>!stageDone(p));
-  const dueAll = hubDue(), dueRapid = dueAll.length, linkedN = (S.linked||[]).length;
+  const {due:dueRapid, linked:linkedN} = reviewLoad();
   const {budget, rmin, dueMins, linkedMins, take} = stageAllot(stagesLeftArr, paceLeft, dueRapid, linkedN);
-  const otherB = hubOtherBlocks(), otherN = Object.values(otherB).reduce((a,b)=>a+b,0);
+  /* under "High yield only" the due set holds no other block's items (rapidPool) */
+  const otherB = S.hiOnly ? {} : hubOtherBlocks(), otherN = Object.values(otherB).reduce((a,b)=>a+b,0);
   /* REVIEW FIRST. New material is what feels productive; due review is what
      survives to exam day, so it is not allowed to be crowded out at the bottom. */
   if(dueRapid){
     out.push({id:"due", t:"Review first &mdash; "+dueRapid+" item"+(dueRapid===1?"":"s")+" due",
-      d: otherN ? ("Most overdue first. "+otherN+" of these "+(otherN===1?"is":"are")+" from "+Object.keys(otherB).join(" and ")+
-                   " &mdash; spaced review only works if earlier blocks keep coming back.")
-                : "Most overdue first. Correct answers come back on a longer gap; misses come back tomorrow.",
-      mins:dueMins, act:["rf","due"]});
+      d: (dueRapid > RF_CAP ? "The "+RF_CAP+" most overdue first. " : "Most overdue first. ")
+         + (otherN ? otherN+" of these "+(otherN===1?"is":"are")+" from "+Object.keys(otherB).join(" and ")+
+                   " &mdash; spaced review only works if earlier blocks keep coming back."
+                /* P2.3: the rule as promote() and wireRapid() apply it (BOXES; +-15% jitter; capped
+                   by examCeiling). It used to say "misses come back tomorrow": a miss drops one box,
+                   never below the 15-minute one, so an early item is back in about 15 minutes. */
+                : "A right answer moves an item up one step (15 minutes, then 1, 3, 7 and 14 days) unless it took over 12 s, "
+                  + "which keeps it on its step; a miss moves it down one step, never below the 15-minute one."),
+      mins:dueMins, act:["rf","due"], n:dueRapid});
   }
+  /* P2.3: the row's text counts what the Linked queue set serves (setCount). P2.V F8: it is now also
+     shown and costed from that set (reviewLoad), so under "High yield only" a queue that holds only
+     lower-yield items gives no row, instead of a row that opened an empty set. */
+  const linkedC = setCount("rapid", "linked", ev);
   if(linkedN) out.push({id:"linked", t:"Clear your linked review queue",
-    d:linkedN+" item"+(linkedN>1?"s":"")+" queued automatically because you missed a question on that concept",
-    mins:linkedMins, act:["rf","linked"]});
+    d: (linkedC.n === linkedC.m ? linkedC.n : linkedC.n+" of "+linkedC.m)+" item"+(linkedC.m>1?"s":"")
+         +" queued automatically because you missed a question on that concept",
+    mins:linkedMins, act:["rf","linked"], n:linkedC.n});
   /* How much new material belongs in one day is exactly what "finish block in N
      days" is choosing, so the plan offers as many consecutive stages as the day's
      budget allows (stageAllot above). It used to offer the current stage plus one
      more no matter what, which is why 2 days and 14 days produced almost the same list. */
+  /* P2.V F8 - the path is not filtered: under "High yield only" each stage row says so (yx, shown
+     as a tag), since a stage covers its own topics and the diagnostic and final the whole block */
   stagesLeftArr.slice(0, take).forEach((p, i) => out.push({id:"stage:"+p.id,
     t: i===0 ? (p.kind==="diag" ? "Take the diagnostic" : "Continue: "+p.t) : "Then: "+p.t,
-    d:p.d, mins:p.mins, act:["stage",p.id]}));
-  const verifyN = QS.filter(q=>{ const a=S.qs[q.id];
-    return a && a.ok && !a.verified && a.verifyDue && a.verifyDue <= Date.now(); }).length;
-  if(verifyN) out.push({id:"verify", t:"Prove "+verifyN+" answer"+(verifyN>1?"s":"")+" were not lucky",
-    d:"You got these right once. They come back now — if you miss one, the first was a guess and it gets flagged.",
-    mins:rmin(8), act:["ps","verify"]});
-  const weak = ev.filter(e=>e.flag);
-  if(weak.length) out.push({id:"weak", t:"Targeted set on your weak spots",
-    d:"Ranked hardest first: "+weak.slice(0,3).map(e=>e.t.t).join(", "), mins:rmin(20), act:["ps","weak"]});
-  const dueQs = QS.filter(q => { const a = S.qs[q.id];
-    return a && a.box > 0 && a.due && a.due <= Date.now(); });
-  if(dueQs.length >= 4) out.push({id:"dueq",
-    t:dueQs.length+" question"+(dueQs.length>1?"s are":" is")+" due again",
-    d:"Vignettes you have already answered, coming back on the spacing schedule. "
+    d:p.d, mins:p.mins, act:["stage",p.id], yx:S.hiOnly ? stageYx(p) : "", dg:stageDiagTag(p)}));
+  /* P2.3: these rows count the set their button serves (setCount), capped and yield-filtered alike */
+  const verifyN = setCount("practice", "verify", ev).n;
+  if(verifyN) out.push({id:"verify", t:"Prove "+verifyN+" answer"+(verifyN>1?"s were":" was")+" not lucky",
+    d:"You got these right on your last try, and not yet twice in a row. They come back now &mdash; miss one and Weak Spots "
+     +"counts a failed re-test on its topic, because the right answer may have been a guess.",
+    mins:rmin(8), act:["ps","verify"], n:verifyN});
+  /* P2.V F8 - the topics named are the ones the set draws from: the high-yield ones under the filter */
+  const weak = ev.filter(e=>e.flag && (!S.hiOnly || hiKeep(e.t.id)));
+  if(weak.length && setCount("practice", "weak", ev).n) out.push({id:"weak", t:"Targeted set on your weak spots",
+    d:"Questions not yet answered or last answered wrong on your flagged"+(S.hiOnly?" high-yield":"")+" topics, most urgent first: "
+     +weak.slice(0,3).map(e=>e.t.t).join(", "), mins:rmin(20), act:["ps","weak"], tids:weak.slice(0,3).map(e=>e.t.id)});
+  const dueQ = setCount("practice", "due", ev);
+  if(dueQ.n >= 4) out.push({id:"dueq",
+    t:(dueQ.n === dueQ.m ? dueQ.n : dueQ.n+" of "+dueQ.m)+" question"+(dueQ.m>1?"s are":" is")+" due again",
+    d:"Questions you have already answered, right or wrong, back on the spacing schedule, most overdue first. "
      +"This is the format the exam actually uses, so it is the one worth re-testing.",
-    mins:rmin(Math.min(24, dueQs.length*1.4)), act:["ps","due"]});
+    mins:rmin(Math.min(24, dueQ.n*1.4)), act:["ps","due"], n:dueQ.n});
+  /* P2.V F8 - the rail hides lower-yield topics under "High yield only", and so does this row */
   const staleGrids = ALLT().filter(t => { const r = S.topics[t.id]||{};
-    return r.grid != null && r.due && r.due <= Date.now(); });
+    return r.grid != null && r.due && r.due <= Date.now() && (!S.hiOnly || yv(t) === "hi"); });
   if(staleGrids.length) out.push({id:"regrid",
     t:"Re-test recall on "+staleGrids.length+" topic"+(staleGrids.length>1?"s":""),
-    d:"You passed these recall checks a while ago. They are due again &mdash; "+
+    d:"Recall grids you have scored before, due again on the spacing schedule &mdash; "+
       staleGrids.slice(0,3).map(t=>t.t).join(", "),
-    mins:rmin(Math.min(18, staleGrids.length*3)), act:["t",staleGrids[0].id]});
-  const unseenImg = Object.keys(IMGS).filter(k=>!S.spot[k]).length;
-  if(unseenImg) out.push({id:"img", t:unseenImg+" image"+(unseenImg===1?"":"s")+" you have not identified",
-    d:"Name it from the raw slide first, then study the markup", mins:rmin(6), act:["sp","unseen"]});
-  const undrilled = DRILLS.filter(d=>!S.drills[d.id]);
+    mins:rmin(Math.min(18, staleGrids.length*3)), act:["t",staleGrids[0].id], n:staleGrids.length, tids:staleGrids.slice(0,3).map(t=>t.id)});
+  /* P2.4 (F20, reopened): the count is the "Not tried yet" set this row opens (spotPool), so it
+     follows "High yield only" as the set does, and the row goes when that set is empty */
+  const unseenImg = setCount("spot", "unseen").n;
+  if(unseenImg) out.push({id:"img", t:unseenImg+(S.hiOnly?" high-yield":"")+" image"+(unseenImg===1?"":"s")+" you have not tried yet",
+    d:"Name it from the raw slide first, then study the markup", mins:rmin(6), act:["sp","unseen"], n:unseenImg});
+  /* P2.6: the drill list (bldPool) keeps only high-yield topics under "High yield only"; this row
+     ignored it, so it could offer a drill the list hides. Same filter as the list and the other rows. */
+  const undrilled = DRILLS.filter(d => !S.drills[d.id] && (!S.hiOnly || hiKeep(d.c)));
   if(undrilled.length) out.push({id:"drill", t:"Drill: "+undrilled[0].t,
-    d:"Sort the decisive clues across a family of clinically similar conditions", mins:rmin(6), act:["dr",undrilled[0].id]});
+    d:drillKindLine(undrilled[0]), mins:rmin(6), act:["dr",undrilled[0].id]});
 
   /* P1.9 round 2 - every review row above is capped on its own, but nothing
      capped their SUM: with a populated cross-block hub they all fire at once
@@ -1690,6 +1956,7 @@ function todaysPlan(){
      of the day, linked at 6 min, against a half-day budget), so neither is
      ever trimmed and the pace arithmetic above gets the same numbers. */
   const reviewBudget = Math.max(10, Math.round(budget*0.5));
+  const cand = out.slice();   /* every row before the review cut (the self-test's yieldFilter reads it) */
   /* Value order for a student: items already decaying on the spacing schedule,
      then the gaps their own wrong answers flagged, then re-testing what may
      have been luck, then material that has simply never been seen. */
@@ -1728,17 +1995,18 @@ function todaysPlan(){
       picked.push(firstStage); mins += firstStage.mins;
     }
   }
-  return {picked, mins, budget};
+  return {picked, mins, budget, cand};
 }
+const planKey = p => p.id + "|" + p.act.join(":");
 function planHTML(){
   const {picked, mins, budget} = todaysPlan(), k = todayKey(), day = S.days[k] || {done:[], mins:0};
-  const dl = daysLeft(), st = streak(), passed = examDateGone(), examToday = examISO() === todayKey();
+  const dl = examDaysAway(), st = streak(), passed = examDateGone(), examToday = examISO() === todayKey();
   const stagesLeft = PATH.filter(p=>!stageDone(p)).length;
   const totalMinLeft = PATH.filter(p=>!stageDone(p)).reduce((a,p)=>a+p.mins,0);
   /* P2.V F4 - the days the plan really schedules (planDaysLeft steps todaysPlan's
      own rule), and the pace day the last stage lands on. */
   const bd = blockDay(), pd = S.paceDays||5, proj = planDaysLeft(), planDays = proj.days, lastDay = bd + planDays - 1;
-  const finishTxt = !stagesLeft ? "every stage done"
+  const finishTxt = !PATH.length ? "no stages yet" : !stagesLeft ? "every stage done"
     : planDays === 1 ? "<b>finishes today</b>, day "+bd+" of "+pd
     : "<b>"+planDays+" days to finish</b>, today included &middot; done on day "+lastDay+" of "+pd;
   return `<div class="plan">
@@ -1748,7 +2016,7 @@ function planHTML(){
              (S.paceSetAt), so the words now say what the number counts. */
             bd} of this pace &middot; ${new Date().toLocaleDateString(undefined,{weekday:"long",month:"short",day:"numeric"})}</div>
         <div class="pd2">${Math.round(mins)} min planned of a <b>${budget} min/day</b> target &middot;
-          ${stagesLeft} stage${stagesLeft===1?"":"s"} left (~${Math.round(totalMinLeft/60*10)/10} h) &rarr;
+          ${PATH.length ? stagesLeft+" stage"+(stagesLeft===1?"":"s")+" left (~"+Math.round(totalMinLeft/60*10)/10+" h) &rarr;" : ""}
           <span data-plandays="${planDays}">${finishTxt}</span> &middot;
           ${/* Once the date is behind us daysLeft() is pinned at 0, so this read
                  "0 days to Step 1" forever -- wrong, and it hid the problem instead of
@@ -1763,7 +2031,12 @@ function planHTML(){
             ' day'+(pd===1?'':'s')+' puts '+(mins > 300
               ? (Math.round(mins/60*10)/10)+' h of work in today'
               : 'about '+(Math.round(proj.peak/60*10)/10)+' h of work on day '+(bd + proj.peakAt))+', past the 5 h/day ceiling. '+
-            'Pick a longer pace if that is not realistic.</b>' : ''}</div></div>
+            'Pick a longer pace if that is not realistic.</b>' : ''}${/* P2.V N2 - with the exam set before the
+              pace ends, the head read "done on day 4 of 5 · 1 day to the exam" and never said that the plan
+              runs past the exam */
+            stagesLeft && !passed && planDays - 1 > dl ? '<br><b style="color:var(--warn)">At this pace the last stage lands on '
+              + (d => { d.setDate(d.getDate() + planDays - 1); return d; })(new Date()).toLocaleDateString(undefined, {month:"short", day:"numeric"})
+              + ', after '+esc(EXAM_NAME)+' ('+EXAM.toLocaleDateString(undefined, {month:"short", day:"numeric"})+'). A shorter pace finishes sooner.</b>' : ''}</div></div>
       <label class="examset" title="Choose how quickly to finish this block. The daily plan recalculates immediately.">
         <span class="exl">Finish block in</span>
         <select id="pacedays" aria-label="Days to finish this block">
@@ -1783,12 +2056,16 @@ function planHTML(){
       <div class="streak" title="Consecutive days studied"><b>${st}</b> day streak</div>
     </div>
     <div class="planlist">${picked.length ? picked.map((p,i)=>{
-      const done = day.done.indexOf(p.id) >= 0;
-      return `<button class="planrow${done?" done":""}" data-plan="${p.act.join(":")}" data-planid="${p.id}">
-        <span class="pn2">${done?"&#10003;":(i+1)}</span>
-        <span><span class="pl2t">${esc(p.t)}</span><span class="pl2d">${p.d}</span></span>
+      /* P2.V - a row was struck through with a tick as soon as it was clicked, while its items were
+         still due ("Review first - 3 items due", ticked). A row stays in the plan until its work is
+         done, so a click is now shown as what it is: "opened today", keyed on the row AND what it
+         opens (a different drill on the drill row is not marked by the first one). */
+      const opened = (day.done||[]).indexOf(planKey(p)) >= 0;
+      return `<button class="planrow${opened?" opened":""}" data-plan="${p.act.join(":")}" data-planid="${p.id}" data-plankey="${escA(planKey(p))}">
+        <span class="pn2">${i+1}</span>
+        <span><span class="pl2t">${esc(p.t)}${p.yx ? ' <span class="tag ghost" data-yx>'+esc(p.yx)+'</span>' : ""}${p.dg || ""}${opened ? ' <span class="tag ghost planopened">opened today</span>' : ""}</span><span class="pl2d">${p.d}</span></span>
         <span class="pl2m">${p.mins} min</span></button>`; }).join("")
-      : '<div style="padding:22px;text-align:center;color:var(--ink-3);font-style:italic">Nothing outstanding. Run the final simulation.</div>'}</div>
+      : '<div style="padding:22px;text-align:center;color:var(--ink-3);font-style:italic">'+(PATH.length ? "Nothing outstanding. Run the final simulation." : "Nothing to plan yet.")+'</div>'}</div>
     ${calStripHTML()}
   </div>`;
 }
@@ -1822,18 +2099,24 @@ function calDetailHTML(){
   const todayN = +new Date(todayKey()+"T00:00:00"), thisN = +new Date(CAL_SEL+"T00:00:00");
   let body;
   if(isExam){
-    body = "<b>"+esc(examNameCap())+".</b> Spaced review stops two days before this, so everything gets one final pass first.";
+    /* P2.3: examCeiling() caps every review date at two days before the exam (halfway there inside the last two days) */
+    body = "<b>"+esc(examNameCap())+".</b> No review is scheduled later than two days before this (inside the last two days, "
+         + "halfway to it), so every item comes due for a final pass first.";
   } else if(rec && rec.acts){
     const names = (rec.done||[]).length;
-    body = `<b>${rec.acts}</b> activit${rec.acts===1?"y":"ies"} &middot; <b>${Math.round(rec.mins||0)}</b> min`
-         + (names ? ` &middot; ${names} planned item${names===1?"":"s"} ticked off` : "");
+    const m = +rec.mins || 0;
+    body = `<span title="Answers given, recall grids scored and topics marked read"><b>${rec.acts}</b> activit${rec.acts===1?"y":"ies"}</span> &middot; <span title="Time on this page with a click, key press or scroll at most 5 minutes after the one before">${m < 1 ? "under <b>1</b> min" : "<b>"+Math.round(m)+"</b> min"} active</span>`
+         + (names ? ` &middot; ${names} plan item${names===1?"":"s"} opened` : "");   /* S.days[k].done records a plan row when it is clicked */
+  } else if(rec && +rec.mins >= 1 && thisN <= todayN){
+    /* P2.V F5: time on the page with no answer is still time */
+    body = "No answers or topics read" + (thisN === todayN ? " yet today" : " on this day") + " &middot; <b>" + Math.round(rec.mins) + "</b> min active on the page.";
   } else if(thisN < todayN){
     body = "Nothing recorded on this day.";
   } else if(thisN === todayN){
     body = "Today. Your plan is above &mdash; nothing logged yet.";
   } else {
     const away = Math.round((thisN-todayN)/864e5);
-    body = `${away} day${away===1?"":"s"} from now. Plans are built the morning of, from whatever is due then.`;
+    body = `${away} day${away===1?"":"s"} from now. That day's plan is built on the day, from whatever is due then.`;
   }
   return `<div class="caldetail"><div class="cdt">${when}</div><div class="cdb">${body}</div>
     <button type="button" class="cdx" data-calday="${CAL_SEL}" aria-label="Close">&times;</button></div>`;
@@ -1843,21 +2126,48 @@ function calDetailHTML(){
 /* =====================================================================
    VIEW: PATH
    ===================================================================== */
+/* P2.V F1 - a block whose study path is not written yet (no stages: the state of the real page until
+   the path task) threw here on currentStage().t, so every boot fell into the render recovery. The plan
+   and the progress file still work without stages, so they are drawn, with a line saying why the path
+   is missing. */
+function backupHTML(){
+  return `<div class="sectiontitle"><h3>Your progress file</h3><span class="st2">Everything is saved as you go &mdash; answers, scores, review dates and every item you have
+    flagged, notes included. This is your own copy of it.</span></div>
+  <div class="backup">
+    <button class="btn" id="expbtn">Download my progress</button>
+    ${/* P2.V F29 - a label for a hidden input is not focusable, so the keyboard could never reach it */""}<button class="btn" id="impbtn" type="button">Restore from a file</button>
+    <input type="file" id="impfile" accept="application/json,.json" hidden>
+    <button class="btn danger" id="rstbtn">Start this block over</button>
+    <span class="bkn" id="bkmsg">Clearing your browser data would otherwise wipe this.</span>
+  </div>`;
+}
 function viewPath(){
+  if(!PATH.length) return `${yieldBanner("path")}${planHTML()}
+    <div class="panel" style="margin:26px 0"><h3>No study path yet</h3><p style="color:var(--ink-2);max-width:62ch">This block has no stages yet,
+      so there is no path to follow. Every other view works with the material the block has so far.</p></div>
+    <div class="divider"></div>${backupHTML()}`;
   const cur = currentStage(), st = stats(), o = overall();
   const doneN = PATH.filter(stageDone).length, allDone = doneN === PATH.length;
-  const nextLabel = allDone ? "Run the final again"
-    : (cur.kind==="diag" ? "Take the diagnostic" : cur.kind==="final" ? "Start the final simulation" : nextStepLabel(cur));
+  const nPre = ALLT().filter(t => (t.pretest||[]).length).length, nVis = ALLT().filter(t => VISUAL_GUIDES[t.id]).length;
+  const nImg = Object.keys(IMGS).length, nAnn = Object.values(IMGS).filter(im => (im.ann||[]).length).length;
+  const nextLabel = (allDone ? "Run the final again"
+    : (cur.kind==="diag" ? "Take the diagnostic" : cur.kind==="final" ? "Start the final simulation" : nextStepLabel(cur)))
+    /* P2.V F8 - the diagnostic and the final measure the whole block, whatever the yield filter says */
+    + (S.hiOnly && (allDone || cur.kind==="diag" || cur.kind==="final") ? " (whole block)" : "");
   return `
-  ${yieldBanner()}
+  ${yieldBanner("path")}
   ${planHTML()}
   <div class="pathhero">
     <div class="phtop">
       <div class="eyebrow">${esc(META.short)} &middot; ${PATH.length} stages &middot; start to finish</div>
-      <h1>${allDone ? "You have finished this block" : (doneN ? "Stage "+(doneN+1)+" of "+PATH.length : "Start here")}</h1>
+      ${/* P2.V F3 - the heading read "Stage 2 of 4" above a next stage the content calls "Stage 1: Thyroid"
+             (it counted the diagnostic), and the lede sent the reader to "the rail on the left", which the
+             Path view does not have. The heading now counts stages done, which cannot clash with any stage
+             title, and the lede names the controls that are on this page. */""}
+      <h1>${allDone ? "You have finished this block" : (doneN ? doneN+" of "+PATH.length+" stages done" : "Start here")}</h1>
       <p class="lede">${allDone
         ? "Every stage is complete. Re-run the final simulation, or spend the time in <b>Weak Spots</b> &mdash; it now has real evidence to work with."
-        : "Work down the stages in order. Each one teaches, then makes you retrieve, then checks you before it lets you call it done. <b>You can jump anywhere</b> from the rail on the left, but the stages are the path that gets you finished."}</p>
+        : "Work down the stages in order. A teaching stage has you read its topics, then pass its stage check (75% right), then take a round of rapid picks, before it counts as done. <b>You can open any stage</b> from the list below, and any topic from Learn, but the stages in order are the path that gets you finished."}</p>
     </div>
     <div class="phbody">
       <div class="phnext">
@@ -1866,8 +2176,14 @@ function viewPath(){
         <div class="nd">${esc(cur.d)}</div>
         <div class="phmeta">
           <span class="tag ghost">${cur.mins} min</span>
-          ${cur.kind==="unit" ? '<span class="tag ghost">'+(cur.topics||[]).length+' topics</span>' : ""}
-          ${cur.kind!=="diag" ? '<span class="tag ghost">'+stageQs(cur).length+' questions</span>' : ""}
+          ${cur.kind==="unit" ? '<span class="tag ghost">'+(cur.topics||[]).length+' topic'+((cur.topics||[]).length===1?"":"s")+'</span>' : ""}
+          ${/* P2.V F3 sweep - the final serves finalN() questions (stageQs(final) is the whole bank), and a
+                 stage check adds questions from finished stages to its own (openStage) */
+            cur.kind==="final" ? '<span class="tag ghost">'+finalN()+' questions</span>'
+            : cur.kind==="unit" ? (n => '<span class="tag ghost" title="Questions in the stage check'
+                + (checkAddsReview(cur) ? '; it may add a few from the stages you have finished' : '')+'">'
+                + n + (checkAddsReview(cur) ? '+' : '') + ' questions</span>')(stageQs(cur).length) : ""}
+          ${S.hiOnly ? '<span class="tag ghost" data-yx>'+stageYx(cur)+'</span>' : ""}
         </div>
       </div>
       <div><button class="btn acc lg" data-stage="${cur.id}">${esc(nextLabel)} &rarr;</button></div>
@@ -1880,43 +2196,39 @@ function viewPath(){
     <div class="stat"><div class="sv tnum">${st.qDone}<span style="font-size:15px;color:var(--ink-3)">/${st.qTotal}</span></div><div class="sl">questions</div></div>
     <div class="stat"><div class="sv tnum">${st.read}<span style="font-size:15px;color:var(--ink-3)">/${st.topics}</span></div><div class="sl">topics read</div></div>
   </div>
-  <div class="sectiontitle"><h3>The path</h3><span class="st2">Green = finished. You can open any stage at any time.</span></div>
+  <div class="sectiontitle"><h3>The path</h3><span class="st2">Green = finished. You can open any stage at any time.${S.hiOnly
+    ? " High yield only does not filter the path: each stage covers its own topics, and the diagnostic and the final simulation cover the whole block." : ""}</span></div>
   <div class="stages">${PATH.map((p,i)=>{
     const pr = stageProgress(p), dn = stageDone(p), isCur = p.id===cur.id && !allDone;
     return `<button class="stage${dn?" done":""}${isCur?" cur":""}" data-stage="${p.id}">
       <span class="sn">${dn?"&#10003;":(i+1)}</span>
-      <span><span class="st">${esc(p.t)}</span><span class="sd">${esc(p.d)}</span></span>
+      <span><span class="st">${esc(p.t)}${S.hiOnly && (p.kind==="diag" || p.kind==="final") ? ' <span class="tag ghost" data-yx>'+stageYx(p)+'</span>' : ""}${stageDiagTag(p)}</span><span class="sd">${esc(p.d)}</span></span>
       <span class="sm"><span>${p.mins} min</span><span class="stagebar"><i style="width:${Math.round(pr*100)}%"></i></span></span>
     </button>`; }).join("")}</div>
   <div class="divider"></div>
   <div class="sectiontitle"><h3>How this tool is built</h3><span class="st2">Every mechanic is here because the evidence says it works.</span></div>
   <div class="method">
+    ${/* P2.V F3 sweep - each card now says only what this page does, with counts from the loaded content */""}
     <div class="mcard"><span class="mtag">Retrieval first</span><h4>You answer before you read</h4>
-      <p>Each topic opens with questions you are expected to get wrong. Guessing and being corrected encodes far better than reading first.</p></div>
+      <p>${nPre === ALLT().length ? "Each topic opens" : nPre+" of "+ALLT().length+" topics open"} with a few questions you are expected to get wrong. A guess that is then corrected is remembered better than the same fact only read.</p></div>
     <div class="mcard"><span class="mtag">Linked review</span><h4>A miss schedules its own revision</h4>
       <p>Get a question wrong and the related rapid items are queued automatically. You never have to notice a gap and act on it yourself.</p></div>
     <div class="mcard"><span class="mtag">Spacing</span><h4>Items return on expanding delays</h4>
-      <p>Gaps are scaled to the time left before the exam, not to one sitting: 15 min, 1 day, 3 days, 7 days, 14 days &mdash; and nothing is ever scheduled later than two days before ${esc(EXAM_NAME)}, so every item gets a last pass.</p></div>
+      <p>A right answer sends an item one step further out (15 minutes, then 1, 3, 7 and 14 days, each varied a little), except a rapid pick that took over 12 seconds, which stays on its step; a miss brings it back sooner. Nothing is scheduled later than two days before ${esc(EXAM_NAME)} (halfway to it, inside the last two days), so every item gets a last pass.</p></div>
     <div class="mcard"><span class="mtag">Across blocks</span><h4>Earlier blocks come back while you work on this one</h4>
-      <p>Due items are held in one store shared by every block, so your daily plan opens with review drawn from everything you have studied so far &mdash; not just the block you are in.</p></div>
+      <p>Rapid picks you have answered go into one store shared by every block opened in this browser from the same site, so the plan&rsquo;s review row also brings back other blocks&rsquo; due picks (not while High yield only is on).</p></div>
     <div class="mcard"><span class="mtag">Interleaving</span><h4>Topics are mixed, not blocked</h4>
-      <p>Sets deliberately shuffle topics. It feels harder and produces better retention and better discrimination.</p></div>
+      <p>Most sets mix topics on purpose. It feels harder, and it trains you to tell similar topics apart.</p></div>
     <div class="mcard"><span class="mtag">Dual coding</span><h4>Pictures carry their own labels</h4>
-      <p>${Object.keys(IMGS).length} annotated clinical images, ${Object.keys(FIGS).length} drawn figures and a dedicated visual map in every topic. Hover a shaded region to reveal its annotation beside the image; tap it on touch screens.</p></div>
+      <p>${nImg} image${nImg===1?"":"s"} (${nAnn} annotated), ${Object.keys(FIGS).length} drawn figure${Object.keys(FIGS).length===1?"":"s"} and a visual model in ${nVis === ALLT().length ? "every topic" : nVis+" of "+ALLT().length+" topics"}. An annotated image has numbered pins: hover, focus or tap one to outline its finding and show its label, or press <b>Show all findings</b>.</p></div>
     <div class="mcard"><span class="mtag">Calibration</span><h4>Confidence is scored too</h4>
-      <p>Confident and wrong is the strongest predictor of a miss on ${esc(EXAM_NAME)}, so it is weighted hardest in Weak Spots.</p></div>
+      <p>Every practice question asks how sure you are. A wrong answer marked Sure is a signal of its own in Weak Spots and raises that topic&rsquo;s priority, because a confident error is the one you would not think to check again.</p></div>
   </div>
   <div class="divider"></div>
-  <div class="sectiontitle"><h3>Your progress file</h3><span class="st2">Everything is saved as you go &mdash; answers, scores, review dates and every item you have
-    flagged, notes included. This is your own copy of it.</span></div>
-  <div class="backup">
-    <button class="btn" id="expbtn">Download my progress</button>
-    <label class="btn" for="impfile">Restore from a file</label>
-    <input type="file" id="impfile" accept="application/json" hidden>
-    <button class="btn danger" id="rstbtn">Start this block over</button>
-    <span class="bkn" id="bkmsg">Clearing your browser data would otherwise wipe this.</span>
-  </div>`;
+  ${backupHTML()}`;
 }
+/* openStage() mixes questions from finished stages that have topics into a stage check */
+const checkAddsReview = p => PATH.some(x => x !== p && (x.topics||[]).length && stageDone(x));
 function nextStepLabel(p){
   const st = S.stage[p.id] || {};
   const unread = (p.topics||[]).filter(id => !(S.topics[id]||{}).read);
@@ -1926,6 +2238,7 @@ function nextStepLabel(p){
 }
 function openStage(pid){
   const p = stageOf(pid); if(!p) return;
+  SET_EMPTY = null;   /* P2.6: a stage start is a set start too (the learn branch clears it in go()) */
   S.stg = pid;
   if(p.kind === "diag"){
     S.mode="rapid"; S.rf = {set:diagSet(), i:0, t0:Date.now(), src:"diag"}; save(); render();
@@ -2017,22 +2330,52 @@ function railHTML(curId){
       <span class="rnum">${bk>=0.12?Math.round(blockScore(b)*100)+"%":"&mdash;"}</span></h4>${inner}</div>`;
   }).join("");
 }
-function yieldBanner(){
+/* P2.V F8 - one rule for "High yield only", stated where it applies. It filters everything a set
+   button, the set builder or a review row of today's plan offers, and every count they show:
+   questions, rapid picks (Due now included), images, drills, and the Learn rail. It does not filter
+   the path (the diagnostic and the final simulation measure the whole block; a stage covers its own
+   topics), search, the glossary or the evidence in Weak Spots. The banner used to say "every
+   question, rapid pick and image is drawn from them" while Due now, the plan's due and re-test rows,
+   the diagnostic and the final served lower-yield items. where: "path"/"learn" (the whole rule),
+   "practice"/"rapid"/"spot"/"drill" (that menu's sets), "weak" (evidence vs buttons). */
+function stageYx(p){ return p.kind === "diag" || p.kind === "final" ? "whole block, not filtered" : "path stage, not filtered"; }
+function yieldBanner(where){
   if(!S.hiOnly) return "";
-  const hi = ALLT().filter(t=>yv(t)==="hi").length, all = ALLT().length;
-  return `<div class="yieldbanner"><b>High yield only (${YAXES[yAxis()]}).</b> Showing ${hi} of ${all} topics, and every
-    question and rapid pick is drawn from them. Turn this off in the header to see everything.</div>`;
+  const hi = ALLT().filter(t=>yv(t)==="hi").length, all = ALLT().length, ax = YAXES[yAxis()];
+  const rev = !where || where === "path" || where === "learn" || where === "practice" || where === "rapid";
+  const h = rev ? yHeld() : {low:0, other:0}, hn = h.low + h.other;
+  const items = n => n + " review item" + (n === 1 ? "" : "s");
+  const held = !hn ? "" : " " + (h.low ? items(h.low) + (h.low === 1 ? " on a lower-yield topic" : " on lower-yield topics") : "")
+    + (h.low && h.other ? " and " + h.other : h.other ? items(h.other) : "")
+    + (h.other ? (h.other === 1 ? " due from another block" : " due from other blocks") : "")
+    + (hn === 1 ? " waits" : " wait") + " until you turn it off.";
+  const head = `<b>High yield only (${ax}).</b> `, tail = " Turn this off in the header to see everything.";
+  const txt = where === "weak"
+    ? "The lists and the evidence on this page cover every topic. The buttons that start a set draw from the " + hi + " of " + all + " topics that are high yield."
+    : where === "drill" ? "The drills listed on this page are the ones on the " + hi + " of " + all + " topics that are high yield." + tail
+    : where === "practice" || where === "rapid" || where === "spot"
+    ? "The sets on this page, and the counts on their buttons, are drawn from the " + hi + " of " + all + " topics that are high yield"
+      + (where === "practice" || where === "rapid" ? ", due reviews included." + held : ".") + tail
+    : "The topic list shows " + hi + " of " + all + " topics. Every question, rapid pick, image and drill offered by a set button, "
+      + "the set builder or a review row of today's plan is drawn from them, and so is every count those show, due reviews included." + held
+      + " Not filtered: the path, whose diagnostic and final simulation cover the whole block and whose stages (and their rows in "
+      + "today's plan) cover their own topics; search; the glossary; and the evidence in Weak Spots." + tail;
+  return `<div class="yieldbanner" data-yieldbanner="${where || "path"}">${head}${txt}</div>`;
 }
 function viewLearn(){
   const all = ALLT(), t = findT(S.cur) || all[0];
+  /* P2.V F1: a block with no topics yet threw here on t.id */
+  if(!t) return yieldBanner("learn") + '<div class="panel"><h3>No topics yet</h3><p style="color:var(--ink-2)">This block has no lessons yet.</p></div>';
   S.cur = t.id;
-  const idx = all.findIndex(x=>x.id===t.id), prev = all[idx-1], next = all[idx+1];
+  /* P2.V F8 - under "High yield only" the previous / next buttons walk the topics the rail shows (and this one) */
+  const nav = S.hiOnly ? all.filter(x => x.id === t.id || yv(x) === "hi") : all;
+  const idx = nav.findIndex(x=>x.id===t.id), prev = nav[idx-1], next = nav[idx+1];
   /* P2.V F13: a finished pretest stays up, answered, until the student leaves the topic */
   const ptr = S.pre[t.id] || {}, ev = topicEvidence(t), pre = t.pretest && (!ptr.done || ptr.keep);
   /* P2.V N4 - where the rail stacks above the lesson (980 px and below) it folds behind this
      toggle, closed on every render, so a pick closes it again; above 980 px the toggle is
      hidden and the body is the sticky rail as before. */
-  return `${yieldBanner()}<div class="cols">
+  return `${yieldBanner("learn")}<div class="cols">
     <aside class="rail"><button type="button" class="railtoggle" aria-expanded="false" aria-controls="railbody">
       <span class="rtlab">Topics</span><span class="rtcur">${esc(t.t)}</span><span class="rtchev" aria-hidden="true">&#9662;</span></button>
       <div class="railbody" id="railbody">${railHTML(t.id)}</div></aside>
@@ -2206,7 +2549,7 @@ function deepReviewHTML(tid, label, pick, opt){
   const say = opt.say ? '<p class="'+(opt.sayCls||"rfsay")+'"><span class="sayk">Where to look</span>'+fmt(opt.say)+'</p>' : "";
   return `<details class="deepreview"${opt.open?" open":""}${hlA}><summary>${esc(label||"Open the deeper review: visual, comparison and lesson")}</summary>
     <div class="deepbody">${say}${media}${rows?`<div class="reviewgrid">${rows}</div>`:""}
-      <button class="btn pri" data-gototopic="${esc(tid)}">Open the full ${esc(t.t)} lesson &rarr;</button></div></details>`;
+      <button class="btn pri" data-gototopic="${esc(tid)}">Open the full lesson: ${esc(t.t)} &rarr;</button></div></details>`;
 }
 const stepsText = x => { const a = Array.isArray(x[1]) ? x[1] : [x[1], x[2]];
   return String(a[0]) + " " + (a[1]||[]).map(r=>r.join(" - ")).join("; "); };
@@ -2243,7 +2586,7 @@ function figHTML(key){
    through, and the prose is collapsed behind it rather than read first. */
 function palaceHTML(key){
   const p = PALACE[key]; if(!p) return "";
-  return `<div class="palace">
+  return `<div class="palace" data-pal="${escA(key)}">
     <div class="palhead"><span class="pl2">Memory scene</span><h4>${esc(p.t)}</h4></div>
     <div class="palboard">${p.keys.map(([ic,k,v],i)=>
       `<figure class="palcard">
@@ -2464,8 +2807,9 @@ function sexpHTML(o, used){
       <div class="cpd">${esc(o.q)}</div></div>
     <div class="cpbody"><div class="rgrid" style="grid-template-columns:1fr">${o.o.map((x,i)=>{
       let cls = "rgi"; if(done!=null){ if(i===o.a) cls+=" hit"; else if(i===done) cls+=" fp"; }
+      const tag = done==null ? "" : i===o.a ? '<span class="rgtag">'+(i===done ? "your pick, right" : "right")+'</span>' : i===done ? '<span class="rgtag">your pick</span>' : "";
       return `<button class="${cls}" data-sx="${o.id}" data-sxi="${i}"${done!=null?" disabled":""}>
-        <span class="bx">&#10003;</span><span>${fmt(x)}</span></button>`;}).join("")}</div>
+        <span class="bx">&#10003;</span><span>${fmt(x)}</span>${tag}</button>`;}).join("")}</div>
       ${done!=null?'<div class="ptwhy" style="margin-top:14px">'+ag(fmt(o.why))+'</div>':''}</div></div>`;
 }
 /* P2.V F13 sweep: the grid is drawn from state on every render. Before scoring, the taps
@@ -2491,10 +2835,12 @@ function gridHTML(t){
       <div class="cpd">${esc(g.q)} &mdash; tap every one that belongs. Some of these are decoys.</div></div>
     <div class="cpbody">
       <div class="rgrid">${g.items.map((it,i)=>{
-        let cls = "rgi";
-        if(picked){ const on = picked.indexOf(String(it[0])) >= 0; cls += on ? (it[1] ? " hit" : " fp") : (it[1] ? " miss" : ""); }
+        let cls = "rgi", tag = "";
+        /* P2.V sweep (F12): a scored item says what it was in words, not by its colour alone */
+        if(picked){ const on = picked.indexOf(String(it[0])) >= 0; cls += on ? (it[1] ? " hit" : " fp") : (it[1] ? " miss" : "");
+          tag = '<span class="rgtag">' + (on ? (it[1] ? "found" : "decoy, picked") : (it[1] ? "missed" : "decoy")) + '</span>'; }
         const st = done ? " disabled" : ' aria-pressed="' + (sel[i] ? "true" : "false") + '"';
-        return `<button class="${cls}" data-rg="${i}"${st}><span class="bx">&#10003;</span><span>${fmt(it[0])}</span></button>`; }).join("")}</div>
+        return `<button class="${cls}" data-rg="${i}"${st}><span class="bx">&#10003;</span><span>${fmt(it[0])}</span>${tag}</button>`; }).join("")}</div>
       <div class="cpscore">
         <span class="sc" id="rgscore">${score}</span>
         <button class="btn ${done?"":"acc"}" id="rgcheck"${done?" disabled":""}>${done?"Scored":"Check my recall"}</button>
@@ -2508,11 +2854,15 @@ function gridHTML(t){
    ===================================================================== */
 function practiceLabel(src){
   if(!src) return "Mixed practice";
-  if(src==="diag") return "Diagnostic sweep";
-  if(src==="final") return "Final simulation";
+  /* P2.V F8 - both measure the whole block, which "High yield only" does not narrow */
+  if(src==="diag") return "Diagnostic sweep" + (S.hiOnly ? " &middot; whole block, not filtered" : "");
+  if(src==="final") return "Final simulation" + (S.hiOnly ? " &middot; whole block, not filtered" : "");
   if(src==="weak") return "Targeted at your weak spots";
   if(src==="search") return "From search";
   if(src.startsWith("stage:")) return "Stage check &mdash; " + esc((stageOf(src.slice(6))||{t:""}).t);
+  /* P2.3: a named set keeps its button's name while it runs ("Mixed practice" hid which set it was) */
+  if(src==="custom") return "Your own set";
+  if(PS_NAME[src]) return esc(psName(src));
   return "Mixed practice";
 }
 /* A deterministic shuffle keyed on how many times this item has been served,
@@ -2599,8 +2949,11 @@ const BLD_DEF = {practice:{n:20,o:"shuffle"}, rapid:{n:20,o:"shuffle"},
 const BLD_STATUS = {
   practice:[["unseen","Never attempted"],["missed","Got wrong"],["ok","Got right"],["due","Due for review"]],
   rapid:[["unseen","Never seen"],["shaky","Not yet solid"],["due","Due now"],["seen","Seen before"]],
-  spot:[["unseen","Never identified"],["missed","Got wrong"],["ok","Got right"]],
-  drill:[["unseen","Not run yet"],["missed","Had misses"],["ok","Clean run"]]};
+  /* P2.4 (F20/F21, reopened): named for the rule bldMatch applies. An image is "unseen" until its
+     first answer (right or wrong), so "Never identified" also promised the images missed so far;
+     a drill record holds only its last run, so "Had misses" also promised drills since run clean */
+  spot:[["unseen","Not tried yet"],["missed","Got wrong"],["ok","Got right"]],
+  drill:[["unseen","Not run yet"],["missed","Misses on last run"],["ok","Clean last run"]]};
 const BLD_YIELD = [["hi","High yield"],["mid","Middling"],["lo","Lower"]];
 const POOLS = {
   practice:{noun:"question", all:()=>QS,    topic:x=>x.c, rec:x=>S.qs[x.id],   diff:x=>x.d||2},
@@ -2654,6 +3007,9 @@ function chipRow(m,kind,opts,sel){
 function bldHTML(m){
   const B = bld(m), P = POOLS[m], avail = bldPool(m).length, total = P.all().length;
   const take = B.n > 0 ? Math.min(B.n, avail) : avail;
+  /* P2.3: "My weak spots" selects the flagged topics only; with none flagged it is disabled
+     (it used to select the top five topics by priority, weak or not) */
+  const wN = diagnose().filter(e => e.flag).length;
   const short = t => t.length > 24 ? t.slice(0,23)+"…" : t;
   const topicChips = BLOCKS.map(b => '<div class="chiprow" style="margin-bottom:7px">'
     + '<span class="bldgl">'+esc(b.n)+'</span>'
@@ -2670,7 +3026,7 @@ function bldHTML(m){
    + '<div class="bldsub">Nothing selected means every topic. '+(B.t.length? B.t.length+' selected.' : '')+'</div>'
    + '<div class="chiprow" style="margin-bottom:9px">'
    + '<button class="btn sm gho" data-bldall="'+m+':all">Every topic</button>'
-   + '<button class="btn sm gho" data-bldall="'+m+':weak">My weak spots</button></div>'
+   + '<button class="btn sm gho" data-bldall="'+m+':weak"'+(wN?'':' disabled title="No topic is flagged weak yet"')+'>My weak spots ('+wN+')</button></div>'
    + topicChips + '</div></div>'
    + '<div class="bldrow"><span class="bldl">Yield</span><div class="chiprow">'+chipRow(m,"y",BLD_YIELD,B.y)+'</div></div>'
    + '<div class="bldrow"><span class="bldl">Status</span><div class="chiprow">'+chipRow(m,"s",BLD_STATUS[m],B.s)+'</div></div>'
@@ -2691,9 +3047,10 @@ function bldHTML(m){
 }
 function bldStart(m){
   const items = bldOrdered(m); if(!items.length) return;
+  SET_EMPTY = null;
   if(m==="practice"){ S.mode="practice"; S.ps = {set:items.map(x=>x.id), i:0, src:"custom", t0:Date.now()}; }
   else if(m==="rapid"){ S.mode="rapid"; S.rf = {set:items.map(x=>x.i), i:0, t0:Date.now(), src:"custom"}; }
-  else if(m==="spot"){ S.mode="spot"; S.sp = {set:items.map(x=>x.k), i:0}; buildSpotOpts(); }
+  else if(m==="spot"){ S.mode="spot"; S.sp = {set:items.map(x=>x.k), i:0, src:"custom", name:"Your own set"}; buildSpotOpts(); }
   save(); render(); window.scrollTo({top:0,behavior:"instant"});
 }
 function wireBld(app){
@@ -2710,8 +3067,8 @@ function wireBld(app){
   app.querySelectorAll("[data-bldall]").forEach(b => b.onclick = ()=>{
     const q = b.dataset.bldall.split(":"), B = bld(q[0]);
     if(q[1]==="all") B.t = [];
-    else if(q[1]==="weak"){ const w = diagnose().filter(e=>e.flag).map(e=>e.t.id);
-      B.t = w.length ? w : diagnose().slice(0,5).map(e=>e.t.id); }
+    else if(q[1]==="weak"){ const w = diagnose().filter(e=>e.flag).map(e=>e.t.id); if(!w.length) return;
+      B.t = w; }
     save(); render(); });
   app.querySelectorAll("[data-bldreset]").forEach(b => b.onclick = ()=>{
     const m = b.dataset.bldreset;
@@ -2731,12 +3088,10 @@ function viewPractice(){
   const fat = fatigueHTML(sessionFatigue());
   if(!S.ps || !S.ps.set || !S.ps.set.length){
     const ev = diagnose();
-    return fat + `<div class="toolbar"><span class="tl">Build a set</span>
-        <button class="btn acc" data-ps="weak">Target my weak spots</button>
-        <button class="btn" data-ps="verify">Verify my "correct" answers</button>
-        <button class="btn" data-ps="due">Previously missed</button>
-        <button class="btn" data-ps="unseen">Never attempted</button>
-        <button class="btn" data-ps="all">Everything, shuffled</button></div>
+    /* P2.3: every button names its own set and shows how many questions it serves (setCount) */
+    const psBtn = (k, cls) => '<button class="btn' + cls + '" data-ps="' + k + '">' + esc(psName(k)) + ' ' + setCount("practice", k, ev).txt + '</button>';
+    return fat + setEmptyHTML("practice", ev) + yieldBanner("practice") + `<div class="toolbar"><span class="tl">Build a set</span>
+        ${psBtn("weak", " acc")}${psBtn("verify", "")}${psBtn("missed", "")}${psBtn("unseen", "")}${psBtn("all", "")}</div>
       ${bldHTML("practice")}
       <div class="panel"><div class="sectiontitle"><h3>Question bank</h3>
         <span class="st2">${QS.length} questions &middot; ${stats().qDone} attempted &middot; ${stats().acc}% correct</span></div>
@@ -2745,8 +3100,12 @@ function viewPractice(){
         separates a lucky guess from real knowledge in <b>Weak Spots</b>. Miss one and the related rapid items
         are <b>queued automatically</b> for review. The bank mixes concise concept checks with longer,
         multi-step board-style clinical vignettes.</p>
-        ${ev.filter(e=>e.flag).length ? '<div class="call trap" style="margin-top:22px"><span class="cl">Right now</span>'+
-          ev.filter(e=>e.flag).length+' topics have hard evidence of weakness. The targeted set draws from those first.</div>' : ""}
+        ${(()=>{ const fl = ev.filter(e=>e.flag), k = fl.filter(e=>hiKeep(e.t.id)).length; if(!fl.length) return "";
+          /* P2.V F8 - under "High yield only" the targeted set keeps the high-yield flagged topics only */
+          return '<div class="call trap" style="margin-top:22px"><span class="cl">Right now</span>'+fl.length+' topic'+(fl.length===1?" has":"s have")
+            +' hard evidence of weakness. '+(!S.hiOnly ? "The targeted set draws from those first."
+              : k ? "With High yield only on, the targeted set draws from the "+k+" of them that "+(k===1?"is":"are")+" high yield."
+              : "None of them is high yield, so with High yield only on the targeted set has nothing to serve.")+'</div>'; })()}
       </div>`;
   }
   /* P2.3 (K11): a finished set stays on screen as its summary until the student leaves it */
@@ -2779,7 +3138,8 @@ function viewPractice(){
     .sort((a,b)=>slot[a.k]-slot[b.k])
     .map(x=>'<div><b>'+"ABCDE"[slot[x.k]]+'</b> &mdash; '+fmt(q.w&&q.w[x.k]!==undefined?q.w[x.k]:
       'This choice does not account for the stem\'s decisive pattern. Contrast it with <b>'+q.o[q.a]+'</b> and re-check the visual summary below.')+'</div>').join("") : "";
-  const justLinked = answered && ps.pick !== q.a ? RAPID.filter(r=>r.c===q.c).length : 0;
+  /* P2.V F8 follow-up - the number wirePractice queued on this miss (ps.linkQ), not every rapid item on the topic */
+  const lq = answered && ps.pick !== q.a && ps.linkQ && ps.linkQ.id === q.id ? ps.linkQ : null, justLinked = lq ? lq.n : 0;
   const vis = q.ef && FIGS[q.ef] ? {fig:q.ef} : (q.ei && IMGS[q.ei] ? {img:q.ei} : null);
   return fat + `<div class="toolbar">
       <span class="tl">${practiceLabel(ps.src)}</span>
@@ -2818,7 +3178,11 @@ function viewPractice(){
           : deepReviewHTML(q.c,"Open visual comparison and the full lesson")}
         ${vis && vis.fig && q.ei && IMGS[q.ei] ? '<div style="padding:0 26px 8px">'+imgHTML(q.ei)+'</div>' : ""}
         ${justLinked?`<div class="linked"><span><b>Queued for review:</b> ${justLinked} rapid item${justLinked>1?"s":""} on
-          <b>${esc(t.t)}</b> added to your linked queue, so this gap comes back before you forget it.</span></div>`:""}`:""}
+          <b>${esc(t.t)}</b> ${lq.fresh === lq.n ? "added to your linked queue"
+            : lq.fresh ? "in your linked queue ("+lq.fresh+" newly added, "+(lq.n-lq.fresh)+" already there)"
+            : (lq.n === 1 ? "was" : "were")+" already in your linked queue"}, ${/* P2.V F8 - the Linked queue set keeps high-yield topics only under the filter */
+          S.hiOnly && !hiKeep(q.c) ? "but this topic is not high yield, so the queue holds them back until High yield only is turned off."
+          : "so this gap comes back before you forget it."}</span></div>`:""}`:""}
       <div class="qfoot">
         ${!answered?`<div class="conf"><span class="cl2">How sure are you?</span>
           <button class="chip${ps.conf==="sure"?" on":""}" data-conf="sure" aria-pressed="${ps.conf==="sure"}">Sure</button>
@@ -2828,7 +3192,7 @@ function viewPractice(){
           <span class="pace" id="pace" title="${escA(examNameCap()+" gives you about "+SECS_PER_Q+" seconds a question")}">&mdash;</span>
           <span class="mono" id="confhint" style="font-size:11.5px;color:var(--ink-3)">${
             !ps.conf ? "Say how sure you are first" : ps.confKept ? "Same as the last question &mdash; change it if this one feels different" : "Now pick an answer above"}</span>`
-        :`<span class="mono" style="font-size:11.5px;color:var(--ink-3)">${rec&&rec.conf?"Marked: "+rec.conf:""}</span>
+        :`<span class="mono" style="font-size:11.5px;color:var(--ink-3)">${rec&&rec.conf?"Marked: "+({sure:"Sure", think:"Fairly sure", guess:"Guessing"}[rec.conf] || esc(rec.conf)):""}</span>
           <span style="flex:1"></span>
           <button class="btn ${ps.i+1<N?"pri":"acc"}" id="qnext">${ps.i+1<N?"Next question &rarr;":"Finish set &rarr;"}</button>`}
       </div></div>`;
@@ -2838,15 +3202,21 @@ function viewPractice(){
 /* =====================================================================
    VIEW: DRILLS
    ===================================================================== */
+/* P2.4 (F21, reopened): one line per drill kind, for every place that offers a drill (the list,
+   the plan's drill row, search), so each describes the drill its button starts */
+function drillKindLine(d){
+  return d.kind==="order" ? "Build the chain in order"
+    : d.kind==="multi" ? "Sort across "+(d.cols||[]).length+" related conditions" : "Sort each finding to the right side";
+}
 function viewDrill(){
   if(!S.dr){
-    return `<div class="sectiontitle"><h3>Discrimination drills</h3>
+    return `${yieldBanner("drill")}<div class="sectiontitle"><h3>Discrimination drills</h3>
       <span class="st2">Separate two-way look-alikes and larger families of related conditions by their decisive clues.</span></div>
       ${bldHTML("drill")}
       <div class="wlist">${bldOrdered("drill").map(d=>{
         const r = S.drills[d.id]||{}, n = (r.missed||[]).length;
         return `<button class="witem" data-dr="${d.id}" style="text-align:left;width:100%">
-          <span><span class="wt">${esc(d.t)}</span><span class="wd">${d.kind==="order"?"Build the chain in order":d.kind==="multi"?"Sort across "+d.cols.length+" related conditions":"Sort each finding to the right side"} &middot; ${(d.items||[]).length} items${r.done?" &middot; last run: "+(d.items.length-n)+"/"+d.items.length:""}</span></span>
+          <span><span class="wt">${esc(d.t)}</span><span class="wd">${drillKindLine(d)} &middot; ${(d.items||[]).length} items${r.done?" &middot; last run: "+(d.items.length-n)+"/"+d.items.length:""}</span></span>
           <span class="sev"><i style="width:${r.done?Math.round(100*(d.items.length-n)/d.items.length):0}%;background:${n>2?"var(--crit)":"var(--good)"}"></i></span>
         </button>`; }).join("") || '<div class="empty">No drill matches those filters.</div>'}</div>`;
   }
@@ -2878,33 +3248,61 @@ function drToggleWhy(b){
   const w = toggleCtlWhy(b);
   if(w && S.dr) (S.dr.open = S.dr.open || {})[w.id] = !w.hidden;
 }
+/* P2.V F21: a sort or multi pick used to move straight on, so its verdict was drawn under the
+   NEXT item and read as a claim about it ("Mid-cycle pain" above "This belongs to Luteal").
+   Now a pick keeps its item on screen: the sides come back disabled with the pick and the right
+   side marked, the verdict under them names the item, and the next item appears only when the
+   student presses Next. drJudged gives the item that verdict is about (st.last.ix; order[i-1]
+   for a verdict saved before this change), or -1 while an item waits for its answer. */
+function drJudged(d, st){
+  if(!d || !st || !st.last || !Array.isArray(st.order) || !(st.i >= 1 && st.i <= st.order.length)) return -1;
+  const ix = st.last.ix;
+  return Number.isInteger(ix) && ix >= 0 && ix < d.items.length ? ix : st.order[st.i - 1];
+}
+/* one side of the running board: a live button (attr = data-sort / data-sortm), or, once the
+   item is answered, a disabled one that says in words whether it was the pick and the right side */
+function drSideBtn(attr, val, label, last, right){
+  if(!last) return `<button class="btn" ${attr}="${escA(val)}">${label}</button>`;
+  const pick = last.pick === val, ok = val === right;
+  const note = pick && ok ? "your pick, right" : pick ? "your pick" : ok ? "right answer" : "";
+  return `<button class="btn${ok ? " dright" : pick ? " dwrong" : ""}" disabled>${label}${note ? '<span class="dres">' + note + "</span>" : ""}</button>`;
+}
+/* the verdict for the item on screen, then Next (or the results after the last item) */
+function drVerdictHTML(d, st, noLabel){
+  const last = st.i >= st.order.length;
+  return `<div class="call ${st.last.ok?"mnem":"trap"}" data-verdict style="margin-top:18px"><span class="cl">${st.last.ok?"Correct":noLabel}</span>${fmt(st.last.msg||"")}</div>
+    <div class="btnrow"><button class="btn pri" id="drnext">${last ? "See the results" : "Next item"}</button></div>
+    ${deepReviewHTML(d.c,"Refresher: "+((findT(d.c)||{}).t||"this topic"))}`;
+}
 /* P2.V K13: the column count rides in --dcols (not an inline grid-template-columns), so the
    .dmulti rule in the shell can drop the end screen and the board to one column on a phone */
 function multiDrillHTML(d){
   const st=S.dr, items=st.order||[], i=st.i||0;
-  if(i>=items.length){
+  if(i>=items.length && drJudged(d,st)<0){
     const missed=st.missed||[];
-    return `<div class="panel"><div class="sectiontitle"><h3>${esc(d.t)}</h3><span class="st2">${items.length-missed.length} of ${items.length} correct</span></div>
+    /* P2.V F31: the end screen replaced the last item's verdict and said nothing to #live; its score is the verdict now, and its heading takes focus */
+    return `<div class="panel"><div class="sectiontitle"><h3 data-viewlead>${esc(d.t)}</h3><span class="st2" data-verdict>${items.length-missed.length} of ${items.length} correct</span></div>
       <div class="dkey"><b>Sorting rule:</b> ${fmt(d.key)}</div>
       <div class="disc dmulti" style="--dcols:${Math.min(3,d.cols.length)}">${d.cols.map(c=>`<div class="disccol"><h5>${esc(c.l)}</h5><ul>${d.items.map((x,ix)=>x[1]===c.id?`<li>${drillWhyBtn(d,ix,"c","",`<span>${fmt(x[0])}</span>`)}</li>`:"").join("")}</ul></div>`).join("")}</div>
       ${missed.length?`<div class="call trap dmiss"><span class="cl">Review these</span>${missed.map(ix=>drillWhyBtn(d,ix,"m","",`<span>&bull; ${fmt(d.items[ix][0])} &rarr; <b>${esc((d.cols.find(c=>c.id===d.items[ix][1])||{}).l||"")}</b></span>`)).join("")}</div>`:'<div class="call mnem"><span class="cl">Clean run</span>Every discriminator landed correctly.</div>'}
       ${deepReviewHTML(d.c,"Open the visual comparison and complete lesson")}
       <div class="btnrow"><button class="btn pri" data-dr="__again">Run it again</button><button class="btn" data-dr="__quit">Back to drills</button></div></div>`;
   }
-  const ix=items[i], it=d.items[ix];
-  return `<div class="toolbar"><span class="tl">${esc(d.t)}</span><span class="mono">${i+1} / ${items.length}</span><span style="flex:1"></span>${flagCtrl("drill", d.id+"#"+ix)}<button class="btn sm gho" data-dr="__quit">End drill</button></div>
+  /* P2.V F21: an answered item stays on screen with its verdict until Next (drJudged) */
+  const jx=drJudged(d,st), ix=jx>=0?jx:items[i], it=d.items[ix];
+  return `<div class="toolbar"><span class="tl">${esc(d.t)}</span><span class="mono">${jx>=0?i:i+1} / ${items.length}</span><span style="flex:1"></span>${flagCtrl("drill", d.id+"#"+ix)}<button class="btn sm gho" data-dr="__quit">End drill</button></div>
     <div class="panel" style="max-width:820px;margin:0 auto">${it[2]&&IMGS[it[2]]?`<div class="imgbox" style="max-height:330px;display:flex;align-items:center;justify-content:center;margin-bottom:15px"><img src="${IMGS[it[2]].url}" alt="${escA(IMGS[it[2]].n||"Image to classify")}" style="max-height:330px;width:auto;max-width:100%"></div>`:""}<div class="sortitem">${fmt(it[0])}</div>
-      <div class="sortbtns dmulti" style="--dcols:${Math.min(3,d.cols.length)}">${d.cols.map(c=>`<button class="btn" data-sortm="${c.id}">${esc(c.l)}</button>`).join("")}</div>
+      <div class="sortbtns dmulti" style="--dcols:${Math.min(3,d.cols.length)}">${d.cols.map(c=>drSideBtn("data-sortm", c.id, esc(c.l), jx>=0?st.last:null, it[1])).join("")}</div>
       <!-- P1.3: the sort result was silent - a reader tapped a side and heard nothing.
            data-verdict sends this line to the live region. -->
-      ${st.last?`<div class="call ${st.last.ok?"mnem":"trap"}" data-verdict style="margin-top:18px"><span class="cl">${st.last.ok?"Correct":"Not this one"}</span>${fmt(st.last.msg)}</div>${deepReviewHTML(d.c,"Refresher: "+((findT(d.c)||{}).t||"this topic"))}`:""}</div>`;
+      ${jx>=0?drVerdictHTML(d,st,"Not this one"):""}</div>`;
 }
 function sortDrillHTML(d){
   const st = S.dr, i = st.i, items = st.order;
-  if(i >= items.length){
+  if(i >= items.length && drJudged(d, st) < 0){
     const missed = st.missed || [];
-    return `<div class="panel"><div class="sectiontitle"><h3>${esc(d.t)}</h3>
-        <span class="st2">${items.length-missed.length} of ${items.length} sorted correctly</span></div>
+    return `<div class="panel"><div class="sectiontitle"><h3 data-viewlead>${esc(d.t)}</h3>
+        <span class="st2" data-verdict>${items.length-missed.length} of ${items.length} sorted correctly</span></div>
       <div class="dkey"><b>The one discriminator:</b> ${fmt(d.key)}</div>
       ${missed.length?`<div class="call trap dmiss"><span class="cl">You put these on the wrong side</span>
         ${missed.map(ix=>drillWhyBtn(d,ix,"m","","<span>&bull; "+esc(d.items[ix][0])+" &mdash; belongs to <b>"+
@@ -2919,18 +3317,18 @@ function sortDrillHTML(d){
       <div class="btnrow"><button class="btn pri" data-dr="__again">Run it again</button>
         <button class="btn" data-dr="__quit">Back to drills</button></div></div>`;
   }
-  const ix = items[i], it = d.items[ix];
+  /* P2.V F21: an answered item stays on screen with its verdict until Next (drJudged) */
+  const jx = drJudged(d, st), ix = jx >= 0 ? jx : items[i], it = d.items[ix], last = jx >= 0 ? st.last : null;
   return `<div class="toolbar"><span class="tl">${esc(d.t)}</span>
-      <span class="mono" style="font-size:12px;color:var(--ink-3)">${i+1} / ${items.length}</span>
+      <span class="mono" style="font-size:12px;color:var(--ink-3)">${jx >= 0 ? i : i+1} / ${items.length}</span>
       <span style="flex:1"></span>${flagCtrl("drill", d.id+"#"+ix)}<button class="btn sm gho" data-dr="__quit">End drill</button></div>
     <div class="panel" style="max-width:660px;margin:0 auto">
       <div class="sortitem">${fmt(it[0])}</div>
       <div class="sortbtns">
-        <button class="btn" data-sort="a">${esc(d.a)}</button>
-        <button class="btn" data-sort="b">${esc(d.bb)}</button></div>
+        ${drSideBtn("data-sort", "a", esc(d.a), last, it[1])}
+        ${drSideBtn("data-sort", "b", esc(d.bb), last, it[1])}</div>
       <!-- P1.3: same silent feedback in the two-way sort; marked for the live region. -->
-      ${st.last?`<div class="call ${st.last.ok?"mnem":"trap"}" data-verdict style="margin-top:18px">
-        <span class="cl">${st.last.ok?"Correct":"No"}</span>${fmt(st.last.msg)}</div>${deepReviewHTML(d.c,"Refresher: "+((findT(d.c)||{}).t||"this topic"))}`:""}
+      ${jx >= 0 ? drVerdictHTML(d, st, "No") : ""}
     </div>`;
 }
 function orderDrillHTML(d){
@@ -2953,15 +3351,24 @@ function orderDrillHTML(d){
             return `<button class="oitem" data-ounp="${n}"><span class="on">${n+1}</span><span>${fmt(d.items[ix])}</span></button>`;}).join("")
             :'<span style="font-size:13.5px;color:var(--ink-3);padding:6px">Tap steps on the left, in order.</span>'}</div></div>
       </div>
+      <!-- P1.3: the order drill verdict was silent for the same reason as the sorts.
+           P2.V F21: it now names every step that is out of place and where it belongs (the
+           steps themselves said so only by color), and it sits right under the board it judges,
+           above the buttons. -->
+      ${checked?`<div class="call ${st.perfect?"mnem":"trap"}" data-verdict style="margin-top:18px">
+        <span class="cl">${st.perfect?"Exactly right":"Not the real order"}</span>${orderVerdictText(d, placed)} ${fmt(d.key)}</div>`:""}
       <div class="btnrow" style="margin-top:18px">
         ${checked?`<button class="btn pri" data-dr="__again">Try again</button>
                    <button class="btn" data-dr="__quit">Back to drills</button>`
                  :`<button class="btn acc" id="ocheck"${placed.length!==d.items.length?" disabled":""}>Check the sequence</button>`}
       </div>
-      <!-- P1.3: the order drill verdict was silent for the same reason as the sorts. -->
-      ${checked?`<div class="call ${st.perfect?"mnem":"trap"}" data-verdict style="margin-top:18px">
-        <span class="cl">${st.perfect?"Exactly right":"Not the real order"}</span>${fmt(d.key)}</div>`:""}
     </div>`;
+}
+function orderVerdictText(d, placed){
+  const off = placed.map((ix, n) => ix === n ? null : [ix, n]).filter(Boolean);
+  if(!off.length) return `All ${placed.length} steps are in order.`;
+  return `${off.length} of ${placed.length} steps are out of place: `
+    + off.map(([ix, n]) => `&ldquo;${fmt(d.items[ix])}&rdquo; belongs at step ${ix+1}, not ${n+1}`).join("; ") + ".";
 }
 
 /* @region engine.view-rapid-banner (ENGINE, engine) */
@@ -2981,13 +3388,15 @@ function viewRapid(){
      are on rather than two half-counts that never reach the threshold. */
   const fat = fatigueHTML(sessionFatigue());
   if(!S.rf || !S.rf.set || !S.rf.set.length){
-    const dueN = RAPID.filter(r => isDue(S.rapid[r.i]) && (S.rapid[r.i]||{}).box).length;
-    const linkedN = (S.linked||[]).length;
-    return fat + `<div class="toolbar"><span class="tl">Rapid picks</span>
-        ${linkedN?'<button class="btn acc" data-rf="linked">Linked queue ('+linkedN+')</button>':''}
-        <button class="btn${linkedN?"":" acc"}" data-rf="due">Due now (${dueN})</button>
-        <button class="btn" data-rf="weak">From my weak spots</button>
-        <button class="btn" data-rf="all">All ${RAPID.length}, shuffled</button></div>
+    /* P2.3: each count is the set that button serves (setCount): "Due now" counted this block's
+       due items but served the hub's (every block); "All N" served 40; weak fell back to due */
+    /* P2.V F8 - the Linked queue button shows when its set has something to serve (the filter can empty it) */
+    const ev = diagnose(), linkedN = rapidPool("linked").length, rc = k => setCount("rapid", k, ev);
+    return fat + setEmptyHTML("rapid", ev) + yieldBanner("rapid") + `<div class="toolbar"><span class="tl">Rapid picks</span>
+        ${linkedN?'<button class="btn acc" data-rf="linked">Linked queue '+rc("linked").txt+'</button>':''}
+        <button class="btn${linkedN?"":" acc"}" data-rf="due">Due now ${rc("due").txt}</button>
+        <button class="btn" data-rf="weak">From my weak spots ${rc("weak").txt}</button>
+        <button class="btn" data-rf="all">All ${rc("all").n}${S.hiOnly ? " high-yield" : ""}, shuffled</button></div>
       ${bldHTML("rapid")}
       <div class="panel"><div class="sectiontitle"><h3>Rapid picks</h3><span class="st2">One line, five options, fast retrieval.</span></div>
       <p style="color:var(--ink-2);font-size:15px;line-height:1.6;max-width:62ch">These are not flashcards &mdash; you
@@ -2995,8 +3404,10 @@ function viewRapid(){
       The <b>linked queue</b> fills automatically whenever you miss a Practice question on the same concept.</p></div>`;
   }
   const rf = S.rf, r = rItem(rf.set[rf.i]), N = rf.set.length, shown = rf.pick != null;
+  /* P2.V F28/N6 - an item from another block's hub came up with nothing to say where it was from */
+  const from = RBYID[rf.set[rf.i]] ? "" : " &middot; from " + esc(r.bn || r.b || "another block") + (r.ct ? ": " + esc(stripTags(String(r.ct))) : "");
   return fat + `<div class="rf">
-    <div class="rfmeta"><span class="mono" style="font-size:12px;color:var(--ink-3)">${rf.i+1} / ${N}${rf.src==="linked"?" &middot; linked review":""}</span>
+    <div class="rfmeta"><span class="mono" style="font-size:12px;color:var(--ink-3)">${rf.i+1} / ${N}${rf.src==="linked"?" &middot; linked review":""}${rf.src==="diag" && S.hiOnly ? " &middot; diagnostic: whole block, not filtered" : ""}${from}</span>
       ${flagCtrl("rapid", r.i)}
       <button class="btn sm gho" data-rf="quit">End</button></div>
     <div class="rfcard">
@@ -3033,11 +3444,12 @@ function viewRapid(){
    VIEW: IMAGES
    ===================================================================== */
 function viewSpot(){
-  const keys = Object.keys(IMGS);
   if(!S.sp){
-    return `<div class="toolbar"><span class="tl">Image recognition</span>
-        <button class="btn acc" data-sp="start">Start &mdash; ${keys.length} images</button>
-        <button class="btn" data-sp="unseen">Only ones I have not seen</button></div>
+    /* P2.4 (F20, reopened): each button names its set and shows how many images it serves
+       (setCount over spotPool, the pool startSpot serves); an empty set says so (setEmptyHTML) */
+    const spBtn = (k, cls) => '<button class="btn' + cls + '" data-sp="' + k + '">' + esc(spName(k)) + ' ' + setCount("spot", k).txt + '</button>';
+    return setEmptyHTML("spot") + yieldBanner("spot") + `<div class="toolbar"><span class="tl">Image recognition</span>
+        ${spBtn("all", " acc")}${spBtn("unseen", "")}</div>
       ${bldHTML("spot")}
       <div class="panel"><div class="sectiontitle"><h3>Images</h3>
         <span class="st2">Name it first from the raw image, then study the markup.</span></div>
@@ -3052,7 +3464,8 @@ function viewSpot(){
      directly under it; the note is looked up by label text because sp.opts is shuffled at
      presentation. The picked one opens at once; sp.open keeps the state across renders; the
      keyed option is aria-disabled instead of disabled. Same pattern as rapid and practice. */
-  return `<div class="toolbar"><span class="tl">Image ${sp.i+1} of ${N}</span>
+  /* P2.4 (F20, reopened): a running set keeps its button's name, as practice does (P2.3) */
+  return `<div class="toolbar"><span class="tl">${sp.name ? esc(sp.name) + " &middot; " : ""}Image ${sp.i+1} of ${N}</span>
       <span style="flex:1"></span>${flagCtrl("img", k)}<button class="btn sm gho" data-sp="quit">End</button></div>
     <div class="qcard">
       ${shown ? "" : `<div class="imgbox" style="max-height:460px;display:flex;align-items:center;justify-content:center">
@@ -3100,41 +3513,59 @@ function viewWeak(){
   const pWeak = flags.filter(e=>e.evidence>=2), sWeak = flags.filter(e=>e.evidence===1);
   const ranked = pWeak.concat(sWeak);
   const rx = ranked.length ? ranked.slice(0,5) : ev.slice(0,4);
-  const rxQs = rx.flatMap(e => QS.filter(q => q.c===e.t.id && (!S.qs[q.id] || !S.qs[q.id].ok))).slice(0,20);
-  return `
+  /* P2.V F25 sweep: the button's count is the set startSet("weak") builds - unanswered or
+     wrong questions on EVERY flagged topic, at most 20 - not a flat 20 when there are none,
+     and the rapid button only shows when those topics have rapid items to serve.
+     P2.3: both counts now come from the pools startSet / startRapid serve (setCount), and with
+     nothing left to target the button is the whole bank, shuffled, labelled as such. */
+  const rxQ = setCount("practice", "weak", ev), rxR = setCount("rapid", "weak", ev), rxAll = setCount("practice", "all", ev);
+  /* "because nothing has been answered wrongly yet" was printed whenever no topic was
+     flagged, including after misses that had not tripped a signal (pretest, self-explanation
+     and recall-grid misses are answers too) */
+  const anyMiss = QS.some(q => { const a = S.qs[q.id]; return !!a && (!a.ok || (a.hist||[]).some(h => h && !h.ok)); })
+    || RAPID.some(r => ((S.rapid[r.i]||{}).miss||0) > 0) || DRILLS.some(d => ((S.drills[d.id]||{}).missed||[]).length > 0)
+    || Object.keys(S.spot).some(k => S.spot[k] && S.spot[k].ok === false)
+    || Object.keys(S.pre||{}).some(k => S.pre[k] && Array.isArray(S.pre[k].ok) && S.pre[k].ok.some(x => x === false))
+    || ALLT().some(t => { const g = (S.topics[t.id]||{}).grid; return (g != null && g < 1)
+      || (t.body||[]).some(r => r && r[0] === "sexp" && r[1] && S.sexp[r[1].id] != null && S.sexp[r[1].id] !== r[1].a); });
+  /* P2.V F8 - under "High yield only" the set buttons say that they keep the high-yield topics */
+  const hy = S.hiOnly ? " high-yield" : "";
+  return `${yieldBanner("weak")}
   <div class="rx">
     <div class="rxhead"><div class="rxt">Your next 30 minutes</div>
       <div class="rxd">Built from what you actually got wrong &mdash; not from what you say you find hard.
       ${flags.length ? "Right now the evidence points at <b>"+esc(rx[0].t.t)+"</b> &mdash; "
           + (rx[0].evidence>=2
-             ? "proven weak on "+rx[0].evidence+" independent signals, so this is not a bad-day artifact."
+             ? "proven weak on "+rx[0].evidence+" separate signals, so more than one measurement agrees."
              : "suspected on one signal only, so this set confirms it as much as it fixes it.")
-        : "Nothing is flagged yet, because nothing has been answered wrongly yet. "
+        : (anyMiss ? "Nothing is flagged yet: the misses so far have not flagged any topic. "
+                   : "Nothing is flagged yet, because nothing has been answered wrongly yet. ")
           + "Work through a stage or a set of questions and this page starts naming specific topics."}</div></div>
     <div class="rxbody"><div class="btnrow">
       ${flags.length ? `
-        <button class="btn acc" data-ps="weak">${rxQs.length || 20} targeted question${rxQs.length===1?"":"s"}</button>
-        <button class="btn" data-rf="weak">Rapid picks on these topics</button>
+        ${rxQ.n ? '<button class="btn acc" data-ps="weak">' + (rxQ.n === rxQ.m ? rxQ.n : rxQ.n + " of " + rxQ.m) + " targeted question" + (rxQ.m === 1 ? "" : "s") + (S.hiOnly ? " on high-yield topics" : "") + '</button>'
+          : '<button class="btn acc" data-ps="all">A mixed set: all ' + rxAll.n + hy + ' questions, shuffled</button>'}
+        ${rxR.n ? '<button class="btn" data-rf="weak">' + (S.hiOnly ? "High-yield rapid picks" : "Rapid picks") + ' on these topics ' + rxR.txt + '</button>' : ""}
         ${rx[0] ? '<button class="btn" data-t="'+rx[0].t.id+'">Re-read '+esc(rx[0].t.t)+'</button>' : ""}`
       : `<button class="btn acc" data-m="path">Go to the path</button>
-         <button class="btn" data-ps="all">Answer a mixed set instead</button>`}
+         <button class="btn" data-ps="all">Answer a mixed set${hy ? " of" + hy + " questions" : ""} instead</button>`}
     </div></div>
   </div>
   <div class="statgrid" style="margin-bottom:28px">
     <div class="stat acc"><div class="sv tnum">${pWeak.length}</div><div class="sl">proven weak</div></div>
     <div class="stat"><div class="sv tnum">${sWeak.length}</div><div class="sl">suspected weak</div></div>
     <div class="stat"><div class="sv tnum">${blind.length}</div><div class="sl">untested</div></div>
-    <div class="stat"><div class="sv tnum">${st.acc}%</div><div class="sl">accuracy</div></div>
+    <div class="stat"><div class="sv tnum">${st.qDone?st.acc:"--"}%</div><div class="sl">accuracy</div></div>
     <div class="stat"><div class="sv tnum">${(cal.sure||{}).n?pct((cal.sure||{}).r,(cal.sure||{}).n):"--"}%</div><div class="sl">right when "sure"</div></div>
   </div>
   ${(cal.sure && cal.sure.n>=4 && cal.sure.r/cal.sure.n < 0.85) ? `<div class="call trap">
-    <span class="cl">Calibration problem</span>You marked <b>Sure</b> on ${cal.sure.n} questions and were right on
-    ${cal.sure.r}. Confident errors are the ones that survive to exam day, because you never revisit them.</div>` : ""}
+    <span class="cl">Calibration problem</span>Your latest answer was marked <b>Sure</b> on ${cal.sure.n} questions,
+    and ${cal.sure.r} of them ${cal.sure.r===1?"was":"were"} right. Confident errors are the ones that survive to exam day, because you never revisit them.</div>` : ""}
   <div class="sectiontitle" style="margin-top:30px"><h3>What the engine has actually observed</h3>
     <span class="st2">Nothing here is self-reported. This is the raw evidence behind every judgment.</span></div>
   <div class="tblwrap"><table><thead><tr><th>Topic</th><th>Q seen</th><th>Right</th>
     <th title="Right twice, so not a guess">Verified</th><th title="Right before, wrong on re-test">False conf.</th>
-    <th title="Missed faster than the stem itself could be read: ${fastRange}">Guessed</th><th>Rapid miss</th><th>Recall</th><th>Mastery</th></tr></thead><tbody>
+    <th title="Questions here whose latest answer was a miss given faster than the stem itself could be read: ${fastRange}">Too fast</th><th>Rapid miss</th><th>Recall</th><th>Mastery</th></tr></thead><tbody>
     ${ev.filter(e=>e.qSeen||e.rSeen||e.known>0.05).slice(0,16).map(e=>{
       const g = (S.topics[e.t.id]||{}).grid;
       return `<tr><td>${esc(e.t.t)}</td><td class="tnum">${e.qSeen}</td><td class="tnum">${e.qRight}</td>
@@ -3147,32 +3578,43 @@ function viewWeak(){
       || '<tr><td colspan="9" style="text-align:center;color:var(--ink-3);font-style:italic">No evidence yet — answer a set and this fills in.</td></tr>'}
   </tbody></table></div>
   <div class="call key" style="margin-top:18px"><span class="cl">How a gap is detected without asking you</span>
-    Independent signals, none of which you control: <b>accuracy</b> across questions on the concept;
-    <b>which wrong option</b> you keep choosing, which names the specific confusion; <b>how long</b> you took,
-    because a miss answered faster than the stem itself could be read is not a knowledge gap and a correct
-    answer over ${Math.round(SECS_PER_Q*13/15)} seconds is not yet automatic;
-    and <b>verification</b> &mdash; anything you get right is quietly re-asked hours later, and getting it wrong
-    the second time marks the first as luck and pushes the topic straight to the top of this list.
-    Trip <b>one</b> of them and a topic is listed as <b>suspected</b>; trip <b>two or more separate</b> ones and it is
-    <b>proven</b>, because no single bad session can produce two of these at once.</div>
+    Separate signals, each measured from your answers. A topic trips one for each of these: <b>question accuracy</b>
+    under 70% on 2 or more questions, or the only question answered there missed once you have read or practiced
+    the topic; <b>the same wrong option</b> chosen twice (on two questions of the topic, or twice on one rapid
+    pick), which names the specific confusion; a question whose latest answer was marked <b>Sure</b> and was
+    wrong; a <b>failed re-test</b> &mdash; a question you got right and then missed on a later attempt, which
+    marks the first answer as luck; a <b>recall grid</b> under 60%; <b>2 or more rapid misses</b>;
+    and <b>3 or more drill items</b> placed wrong. <b>How long</b> you took is not a signal on its own: a miss
+    answered faster than the stem itself could be read is sorted as a misread below, and a correct answer slower
+    than ${SECS_PER_Q} seconds (or 1.2 seconds a word of the stem, on a longer one) is marked not yet automatic.
+    Trip <b>one</b> and a topic is listed as <b>suspected</b>; trip <b>two or more</b> and it is <b>proven</b>
+    &mdash; in both cases only while its mastery is under ${Math.round(WEAK_BELOW*100)}%.</div>
   ${(()=>{ /* P3.4: one row renderer, two lists. The badge is the point -- a topic
        wrong in two independent ways is a different claim from one wrong on a
        single quiz, and only the first is worth an hour today. */
+    /* P2.V F25 sweep: a topic that tripped signals but sits at or above WEAK_BELOW is in
+       neither list, so an empty list says so instead of "no topic has failed" */
+    const hidP = ev.filter(e => !e.flag && e.evidence >= 2).length, hidS = ev.filter(e => !e.flag && e.evidence === 1).length;
+    const unlisted = (n, what) => n + " topic" + (n === 1 ? " has" : "s have") + " tripped " + what + ", but "
+      + (n === 1 ? "its" : "their") + " mastery is " + Math.round(WEAK_BELOW*100) + "% or higher, so "
+      + (n === 1 ? "it is" : "they are") + " not listed.";
     const row = e => `
     <button class="witem" data-t="${e.t.id}" style="text-align:left;width:100%">
       <span><span class="wt">${esc(e.t.t)} <span class="tag ${e.evidence>=2?"crit":"ghost"}">${e.evidence>=2?"Proven weak":"Suspected weak"}</span></span><span class="wd">${esc(e.t.blk.n)} &middot; ${e.reasons.join(" &middot; ")}</span></span>
       <span class="sev"><i style="width:${Math.round(e.mastery*100)}%;background:${e.mastery<0.5?"var(--m-lo)":e.mastery<0.75?"var(--m-mid)":"var(--m-hi)"}"></i></span>
     </button>`;
     return `<div class="sectiontitle" style="margin-top:34px"><h3>Proven weak</h3>
-      <span class="st2">Wrong in <b>two or more independent ways</b> &mdash; a quiz score and a recall grid, say, or the
-      same distractor twice and a failed re-test. One bad session cannot produce that. Spend your time here first.</span></div>
+      <span class="st2">Wrong on <b>two or more separate signals</b> &mdash; a quiz score and a recall grid, say, or the
+      same distractor twice and a failed re-test. Two measurements that agree are stronger evidence than any one.
+      Spend your time here first.</span></div>
     ${pWeak.length ? `<div class="wlist">${pWeak.map(row).join("")}</div>`
-      : '<div class="empty">Nothing is proven weak &mdash; no topic has failed on two separate measurements yet.</div>'}
+      : '<div class="empty">Nothing is proven weak &mdash; ' + (hidP ? unlisted(hidP, "two or more signals")
+        : 'no topic has tripped two separate signals yet.') + '</div>'}
     <div class="sectiontitle" style="margin-top:34px"><h3>Suspected weak</h3>
       <span class="st2">One signal each: enough to notice, not enough to trust. It may be one bad session.
       Every row names the single thing that would settle it.</span></div>
     ${sWeak.length ? `<div class="wlist">${sWeak.map(row).join("")}</div>`
-      : '<div class="empty">No single-signal suspicions right now.</div>'}`; })()}
+      : '<div class="empty">No single-signal suspicions right now' + (hidS ? ' &mdash; ' + unlisted(hidS, "one signal") : '.') + '</div>'}`; })()}
   ${/* P5.2: threads sit directly under the two topic lists because they reframe
        them -- four rows above can turn out to be one idea failing in four
        places, and a per-topic list is structurally unable to say so. */
@@ -3192,7 +3634,7 @@ function viewWeak(){
        at n=2 is always reachable, and no drill row is lost. */
     const pairs = conf.filter(c=>!c.drill), drs = conf.filter(c=>c.drill);
     const drillRow = c => `<button class="witem" data-dr="${c.drill.id}" style="text-align:left;width:100%">
-        <span><span class="wt">${esc(c.drill.t)}</span><span class="wd">mis-sorted <b>${c.n}</b> of ${c.of} items &middot; run the drill again</span></span>
+        <span><span class="wt">${esc(c.drill.t)}</span><span class="wd">placed <b>${c.n}</b> of ${c.of} items wrong on your last run &middot; run the drill again</span></span>
         <span class="sev"><i style="width:${Math.round(100*(c.of-c.n)/c.of)}%;background:var(--crit)"></i></span></button>`;
     const pairRow = c => { const t = findT(c.c)||{t:"?"};
       const instead = (c.right||[]).length
@@ -3200,21 +3642,23 @@ function viewWeak(){
       /* P2.5 (K20): a rapid pair names the item it happened on, since one rapid item is one fact */
       const onR = c.kind === "rapid" ? 'rapid review: on &ldquo;'+esc(stripTags(String(c.q||"")).slice(0,90))+'&rdquo; ' : "";
       return `<button class="witem" data-t="${c.c}" style="text-align:left;width:100%">
-        <span><span class="wt">${esc(t.t)}</span><span class="wd">${onR}you chose <b>&ldquo;${esc(stripTags(String(c.opt)))}&rdquo;</b> ${c.n} times${instead}</span></span>
+        <span><span class="wt">${esc(t.t)}</span><span class="wd">${onR}you chose <b>&ldquo;${esc(stripTags(String(c.opt)))}&rdquo;</b> ${
+          /* P2.V F25 sweep: a question pair counts QUESTIONS whose latest pick was this option */
+          c.kind === "rapid" ? c.n + " times" : "on " + c.n + " questions"}${instead}</span></span>
         <span class="sev"><i style="width:20%;background:var(--crit)"></i></span></button>`; };
     if(!pairs.length && !drs.length) return "";
     return `<div class="sectiontitle" style="margin-top:34px"><h3>Specific confusions</h3>
       <span class="st2">The same wrong answer, more than once.</span></div>`
       + (pairs.length
         ? `<div class="wlist">${pairs.slice(0,6).map(pairRow).join("")}</div>`
-        : `<div class="empty">No wrong option has been picked twice inside one topic yet. A pair needs the
+        : `<div class="empty">No pair has formed yet. A pair needs the
            <b>same</b> distractor on two questions of the same topic, or the same wrong pick twice on one rapid
            item, so this stays empty for a long time
            &mdash; it is not a claim that nothing is confused.</div>`)
       + (drs.length
-        ? `<div class="sectiontitle" style="margin-top:22px"><h3>Drills you keep mis-sorting</h3>
+        ? `<div class="sectiontitle" style="margin-top:22px"><h3>Drills with 3 or more misses</h3>
            <span class="st2">A different measurement, kept apart from the pairs above: how many items of one
-           sort went to the wrong side.</span></div>
+           drill went to the wrong place on your last run of it.</span></div>
            <div class="wlist">${drs.slice(0,6).map(drillRow).join("")}</div>`
         : "");
   })()}
@@ -3247,7 +3691,7 @@ function viewWeak(){
             class="btn sm gho" data-unflag="${escA(flagRef(f.kind,f.id))}">Unflag</button></span>
         </div>`; }).join("")}</div>`; })()}
   ${blind.length?`<div class="sectiontitle" style="margin-top:34px"><h3>Untested</h3>
-    <span class="st2">Not weak &mdash; unknown. These are the real risk this close to the exam.</span></div>
+    <span class="st2">Not weak &mdash; unknown: too little has been answered here to judge either way.</span></div>
     <div class="wlist">${blind.slice(0,12).map(e=>`
       <button class="witem" data-t="${e.t.id}" style="text-align:left;width:100%">
         <span><span class="wt">${esc(e.t.t)}</span><span class="wd">${esc(e.t.blk.n)} &middot; ${e.reasons.join(" &middot; ")}</span></span>
@@ -3258,14 +3702,80 @@ function viewWeak(){
 /* =====================================================================
    VIEW: GLOSSARY
    ===================================================================== */
+/* P2.V F10 - every entry links to the lesson section that introduces its term. The homes are
+   found the way viewLearn links terms: each topic's body is glossed in body order with the
+   topic's own used-map (explicitGloss, then autoGloss over headings, prose, call-outs, why
+   answers, table cells and steps; captions, image notes, scenes, guide cards and sexp options
+   carry only an author's {{key}} links). An author's own link wins over an automatic one;
+   otherwise the first topic in block order that links the term. hix is the section: the n-th
+   heading of that body, or -1 when the link comes before the first heading. */
+let GLOSS_HOME = null;
+function glossHomes(){
+  if(GLOSS_HOME) return GLOSS_HOME;
+  const home = {};
+  ALLT().forEach(t => {
+    const used = explicitGloss(t), ex = Object.assign({}, used), hs = [];
+    const take = html => (String(html).match(/data-g="[^"]+"/g) || []).forEach(m => {
+      const k = m.slice(8, -1), cur = home[k];
+      if(!GLOSS[k] || (cur && (cur.t === t.id || cur.ex || !ex[k]))) return;
+      home[k] = {t:t.id, hix:hs.length - 1, h:hs.length ? hs[hs.length - 1] : "", ex:!!ex[k]};
+    });
+    const ag = s => take(autoGloss(fmt(String(s == null ? "" : s)), used)), fm = s => { if(s) take(fmt(s)); };
+    (t.body || []).forEach(x => {
+      const k = x[0];
+      if(k === "h"){ hs.push(String(x[1])); take(autoGloss(esc(x[1]), used)); }
+      else if(k === "p") ag(x[1]);
+      else if(k === "call") ag(x[3]);
+      else if(k === "why") ag(x[2]);
+      else if(k === "t"){ (x[1] || []).forEach(c => fm(String(c))); (x[2] || []).forEach(r => r.forEach(ag)); }
+      else if(k === "steps"){ const a = Array.isArray(x[1]) ? x[1] : [x[1], x[2]]; (a[1] || []).forEach(r => { ag(r[0]); ag(r[1]); }); }
+      else if(k === "f" && FIGS[x[1]]){ fm(FIGS[x[1]].cap); fm(FIGS[x[1]].teach); }
+      else if(k === "img" && IMGS[x[1]]){ (IMGS[x[1]].ann || []).forEach(a => fm(a.l)); fm(IMGS[x[1]].look); }
+      else if(k === "palace" && PALACE[x[1]]){ PALACE[x[1]].keys.forEach(c => fm(c[2])); fm(PALACE[x[1]].story); }
+      else if(k === "vis" && VISUAL_GUIDES[x[1]]) VISUAL_GUIDES[x[1]].slice(1).forEach(z => fm(z[1]));
+      else if(k === "sexp" && x[1]) (x[1].o || []).forEach(fm);
+    });
+  });
+  return (GLOSS_HOME = home);
+}
 function viewGloss(){
   const ks = Object.keys(GLOSS).sort((a,b)=>GLOSS[a].t.localeCompare(GLOSS[b].t));
+  const H = glossHomes(), off = ks.filter(k => !H[k] || !findT(H[k].t)).length;
+  const link = k => { const h = H[k], t = h && findT(h.t); if(!t) return "";
+    return `<button type="button" class="glink" data-glosshome="${escA(k)}">In the lesson: <b>${esc(t.t)}</b>${
+      h.h ? ` &middot; &ldquo;${esc(h.h)}&rdquo;` : ""} &rarr;</button>`; };
+  const sub = ks.length + (ks.length === 1 ? " term." : " terms.")
+    + (off === ks.length ? " None is linked from a lesson yet."
+       : " The link under " + (off ? "an entry" : "each entry") + " opens the lesson at the section that introduces the term."
+         + (off ? " " + off + (off === 1 ? " term is" : " terms are") + " not linked from any lesson yet, so " + (off === 1 ? "it has" : "they have") + " no link." : ""));
   return `<div class="sectiontitle"><h3>Plain-language glossary</h3>
-      <span class="st2">${ks.length} terms. Every one is also explained the first time it appears in the reading.</span></div>
-    <input class="gsearch" id="gsearch" placeholder="Search a term..." autocomplete="off">
+      <span class="st2">${sub}</span></div>
+    <input class="gsearch" id="gsearch" placeholder="Search a term..." aria-label="Search the glossary" autocomplete="off">
     <div class="glist" id="glist">${ks.map(k=>
       `<div class="gitem" data-gk="${esc(GLOSS[k].t+" "+k+" "+GLOSS[k].d).toLowerCase()}">
-        <h5>${esc(GLOSS[k].t)}</h5><p>${fmt(GLOSS[k].d)}</p></div>`).join("")}</div>`;
+        <h5>${esc(GLOSS[k].t)}</h5><p>${fmt(GLOSS[k].d)}</p>${link(k)}</div>`).join("")}</div>`;
+}
+/* the entry's link lands like any topic change (go), then on the section that introduces the
+   term: the heading just under the sticky header, focused. A link inside a closed why block or
+   figure note is opened, and the term is marked for a moment so the eye finds it. */
+function glossGo(k){
+  const h = glossHomes()[k]; if(!h || !findT(h.t)) return;
+  go("learn", h.t);
+  const body = document.querySelector("#app .body-inner"); if(!body) return;
+  const term = Array.from(body.querySelectorAll(".gterm")).find(x => x.dataset.g === k && !x.closest(".gpop"));
+  const d = term && term.closest("details"); if(d && !d.open) d.open = true;
+  const target = (h.hix >= 0 && body.querySelectorAll(":scope > .sechead")[h.hix]) || term;
+  if(!target) return;
+  landAt(target);
+  if(term){ term.classList.add("ghere"); setTimeout(() => term.classList.remove("ghere"), 2600); }
+}
+/* put target just under the sticky header and focus it (or f, a control inside it) */
+function landAt(target, f){
+  const hd = document.querySelector("header");
+  window.scrollTo({top:Math.max(0, Math.round(target.getBoundingClientRect().top + window.scrollY - (hd ? hd.offsetHeight : 0) - 12)), behavior:"instant"});
+  f = f || target;
+  if(f.tabIndex < 0) f.setAttribute("tabindex", "-1");
+  try{ f.focus({preventScroll:true}); }catch(e){}
 }
 
 /* @region engine.search (ENGINE, engine) */
@@ -3293,6 +3803,33 @@ const srchPlain = s => { s = s == null ? "" : String(s);
 const srchNorm = s => " " + String(s).toLowerCase().replace(/&/g, " and ").replace(/[^\p{L}\p{N}]+/gu, " ").trim() + " ";
 const srchClip = (s, n) => { s = srchPlain(s); return s.length > n ? s.slice(0, n).trimEnd() + "…" : s; };
 const escText = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+/* P2.V sweep (K19): a hit found in a why, a table row, a bottom line or a where-to-look line
+   used to show only the item's title and stem, so the words that matched were nowhere on the
+   list. e.P holds the item's pieces as [label, text]; srchSnip() adds a third line with the
+   piece that matched (the phrase first, else the most query words), clipped around the match
+   and marked, whenever the title and the second line do not already show it. */
+const whyNot = o => "Why not \u201c" + srchClip(o, 48) + "\u201d";
+function figTitle(k){
+  const f = FIGS[k] || {}, m = /<text\b[^>]*\bclass="[^"]*\bttl\b[^"]*"[^>]*>([\s\S]*?)<\/text>/.exec(f.svg || "");
+  const a = /\baria-label="([^"]+)"/.exec(f.svg || "");
+  return (m && srchPlain(m[1])) || (a && srchPlain(a[1])) || k;
+}
+function srchSnip(e, Q){
+  const P = (e.P || []).filter(p => p[1]);
+  if(!P.length) return "";
+  const shown = srchNorm(e.tt + " | " + e.sub);
+  if(Q.phrase ? shown.indexOf(Q.phrase) >= 0 : Q.key.every(t => srchHit(shown, t, Q.whole))) return "";
+  const N = P.map(p => srchNorm(srchPlain(p[1])));
+  let at = Q.phrase ? N.findIndex(n => n.indexOf(Q.phrase) >= 0) : -1;
+  if(at < 0){ let best = 0; N.forEach((n, i) => { const c = Q.key.filter(t => srchHit(n, t, Q.whole)).length; if(c > best){ best = c; at = i; } }); }
+  if(at < 0) return "";
+  const s = srchPlain(P[at][1]), low = s.toLowerCase();
+  const ks = Q.key.map(t => low.indexOf(t)).filter(x => x >= 0), k = ks.length ? Math.min.apply(null, ks) : 0;
+  let a = Math.max(0, k - 50); if(a > 0){ const sp = s.indexOf(" ", a); a = sp > 0 && sp < k ? sp + 1 : a; }
+  let clip = s.slice(a, a + 170);
+  if(a + 170 < s.length){ const sp = clip.lastIndexOf(" "); clip = (sp > 110 ? clip.slice(0, sp) : clip) + "\u2026"; }
+  return '<div class="st3"><span class="sk">' + escText(srchPlain(P[at][0])) + '</span> ' + hi((a > 0 ? "\u2026" : "") + clip, Q) + '</div>';
+}
 function buildIndex(){
   if(SEARCH_INDEX) return SEARCH_INDEX;
   const ix = [], W = SRCH_W;
@@ -3313,7 +3850,16 @@ function buildIndex(){
       else if(x[0]==="p") F.push([x[1], W.body]);
       else if(x[0]==="steps") F.push([stepsText(x), W.body]);
     });
-    add({kind:"Topic", title:t.t, sub:srchPlain(t.blk.n)+" — "+srchPlain(t.sub), body:text, act:["t",t.id]}, F);
+    const P = [];
+    t.body.forEach(x => {
+      if(x[0]==="h") P.push(["Section", x[1]]);
+      else if(x[0]==="p") P.push(["Lesson", x[1]]);
+      else if(x[0]==="call") P.push([x[2], x[3]]);
+      else if(x[0]==="why") P.push(["Why", x[1]+" "+x[2]]);
+      else if(x[0]==="t") x[2].forEach(r => P.push(["Table", r.join(" · ")]));
+      else if(x[0]==="steps") P.push(["Steps", stepsText(x)]);
+    });
+    add({kind:"Topic", title:t.t, sub:srchPlain(t.blk.n)+" — "+srchPlain(t.sub), body:text, act:["t",t.id], P}, F);
   });
   /* P2.5 (K19): the explanation layers are searchable too - every per-option why (q.w, r.w,
      image ww), the comparison table cells (q.et), the bottom line (q.bl), the where-to-look
@@ -3325,22 +3871,29 @@ function buildIndex(){
   const cells = et => Array.isArray(et) ? [].concat(et[0] || [], ...(et[1] || [])) : [];
   QS.forEach(q => { const t = findT(q.c)||{t:""};
     add({kind:"Question", title:stripTags(q.l), sub:srchPlain(t.t)+" — "+srchClip(q.s, 110),
-      body:stripTags([q.s, q.o.join(" "), q.e, q.bl || "", notes(q.w), etText(q.et), say(q)].join(" ")), act:["q",q.id]},
+      body:stripTags([q.s, q.o.join(" "), q.e, q.bl || "", notes(q.w), etText(q.et), say(q)].join(" ")), act:["q",q.id],
+      P:[["Bottom line", q.bl], ["Where to look", say(q)]].concat(q.o.map((o, k) => [whyNot(o), q.w && q.w[k]]),
+        Array.isArray(q.et) && Array.isArray(q.et[1]) ? q.et[1].filter(Array.isArray).map(r => ["Table", r.join(" · ")]) : [],
+        [["Explanation", q.e], ["Question", q.s]])},
       [[q.bl, W.key], [say(q), W.key]].concat(vals(q.w).map(v => [v, W.why]), cells(q.et).map(c => [c, W.why]),
         [[q.s, W.body], [q.e, W.body], [t.t, W.body]], q.o.map(o => [o, W.body]))); });
   RAPID.forEach(r => { const t = findT(r.c)||{t:""};
     add({kind:"Rapid review", title:stripTags(r.q), sub:srchPlain(t.t)+" — "+srchPlain(r.o[r.a]),
-      body:stripTags([r.q, r.o.join(" "), r.x || "", notes(r.w), say(r)].join(" ")), act:["r",r.i]},
+      body:stripTags([r.q, r.o.join(" "), r.x || "", notes(r.w), say(r)].join(" ")), act:["r",r.i],
+      P:[["Where to look", say(r)]].concat(r.o.map(o => [whyNot(o), r.w && r.w[o]]), [["Explanation", r.x]])},
       [[say(r), W.key]].concat(vals(r.w).map(v => [v, W.why]), [[r.x, W.body], [t.t, W.body]], r.o.map(o => [o, W.body]))); });
-  DRILLS.forEach(d => add({kind:"Drill", title:d.t, sub:(d.a?srchPlain(d.a)+" vs "+srchPlain(d.bb):"Build the chain"),
+  /* P2.4 (F21, reopened): a multi drill has no a/bb, and its result used to say "Build the chain" (the order drill's line) */
+  DRILLS.forEach(d => add({kind:"Drill", title:d.t, sub:(d.kind!=="order" && d.kind!=="multi" && d.a ? srchPlain(d.a)+" vs "+srchPlain(d.bb) : drillKindLine(d)),
       body:stripTags((d.items||[]).map(x=>Array.isArray(x)?x[0]:x).join(" ")+" "+(d.key||"")), act:["d",d.id]},
       [[d.a, W.key], [d.bb, W.key], [d.key, W.body]].concat((d.items||[]).map(x => [Array.isArray(x)?x[0]:x, W.body]))));
   Object.keys(IMGS).forEach(k => { const im = IMGS[k];
     add({kind:"Image", title:im.n, sub:"Diagnosis: "+srchPlain(im.dx),
-      body:stripTags(im.n+" "+im.look+" "+im.dx+" "+(im.ann||[]).map(a=>a.l).join(" ")+" "+notes(im.ww)), act:["i",k]},
+      body:stripTags(im.n+" "+im.look+" "+im.dx+" "+(im.ann||[]).map(a=>a.l).join(" ")+" "+notes(im.ww)), act:["i",k],
+      P:(im.wrong||[]).map(o => [whyNot(o), im.ww && im.ww[o]]).concat([["What to look for", im.look]], (im.ann||[]).map(a => ["Finding", a.l]))},
       [[im.dx, W.key], [im.look, W.key]].concat((im.ann||[]).map(a => [a.l, W.why]), vals(im.ww).map(v => [v, W.why]))); });
-  Object.keys(FIGS).forEach(k => add({kind:"Diagram", title:k, sub:srchClip(FIGS[k].cap, 110),
-      body:stripTags(FIGS[k].cap+" "+(FIGS[k].teach||"")+" "+FIGS[k].svg.replace(/<[^>]+>/g," ")), act:["f",k]},
+  Object.keys(FIGS).forEach(k => add({kind:"Diagram", title:figTitle(k), sub:srchClip(FIGS[k].cap, 110),
+      body:stripTags(FIGS[k].cap+" "+(FIGS[k].teach||"")+" "+FIGS[k].svg.replace(/<[^>]+>/g," ")), act:["f",k],
+      P:[["Caption", FIGS[k].cap], ["More on this figure", FIGS[k].teach]]},
       [[FIGS[k].cap, W.key], [FIGS[k].teach, W.why], [FIGS[k].svg.replace(/<[^>]+>/g," "), W.body]]));
   Object.keys(PALACE).forEach(k => { const p = PALACE[k];
     add({kind:"Memory scene", title:p.t, sub:srchClip(p.story, 110),
@@ -3443,7 +3996,7 @@ function runSearch(q){
   res.innerHTML = order.map(k =>
     '<div class="sgroup">'+k+' &middot; '+groups[k].length+'</div>' +
     groups[k].map(e => `<button class="sitem" data-go="${e.act.join(":")}">
-      <div class="st1">${hi(e.tt, Q)}</div><div class="st2">${hi(e.sub, Q)}</div></button>`).join("")
+      <div class="st1">${hi(e.tt, Q)}</div><div class="st2">${hi(e.sub, Q)}</div>${srchSnip(e, Q)}</button>`).join("")
   ).join("");
   res.scrollTop = 0;
   const first = res.querySelector(".sitem"); if(first) first.classList.add("sel");
@@ -3476,16 +4029,33 @@ function hi(s, Q){
 }
 function searchGo(spec){
   const i = spec.indexOf(":"), kind = spec.slice(0,i), id = spec.slice(i+1);
-  if(kind === "t"){ go("learn", id); return; }
-  if(kind === "g"){ go("gloss"); setTimeout(()=>{ const inp = el("gsearch"); if(inp){ inp.value = GLOSS[id].t; inp.dispatchEvent(new Event("input")); } }, 40); return; }
-  if(kind === "q"){ S.mode="practice"; S.ps = {set:[id], i:0, src:"search", t0:Date.now()}; save(); render(); return; }
+  /* P2.6: every set start clears the empty-set notice (P2.3); q: and r: used to leave it, so it
+     came back on the landing page once the one-item set ended (t: and g: clear it in go()) */
+  SET_EMPTY = null;
+  /* P2.V F31: the dialog that held focus is gone before the view is drawn, so focus was left on the
+     body and the next Tab started at the top of the page. Every branch now lands it (landFocus):
+     on the question, the rapid prompt, the item to sort, the topic heading or the glossary entry. */
+  if(kind === "t"){ go("learn", id); landFocus(); return; }
+  if(kind === "g"){ go("gloss"); const inp = el("gsearch");
+    if(inp && GLOSS[id]){ inp.value = GLOSS[id].t; inp.dispatchEvent(new Event("input"));
+      const it = Array.from(document.querySelectorAll("#glist .gitem")).find(x => !x.classList.contains("hide"));
+      const h = it && it.querySelector("h5"); if(h){ h.setAttribute("tabindex", "-1"); try{ h.focus({preventScroll:true}); }catch(e){} } }
+    landFocus(); return; }
+  if(kind === "q"){ S.mode="practice"; S.ps = {set:[id], i:0, src:"search", t0:Date.now()}; save(); render(); landFocus(); return; }
   /* P2.2 (R14) - rapid ids are strings (META.key + hash); +id made NaN and dropped the set */
-  if(kind === "r"){ S.mode="rapid"; S.rf = {set:[id], i:0, t0:Date.now(), src:"search"}; save(); render(); return; }
-  if(kind === "d"){ startDrill(id); return; }
-  if(kind === "i"){ S.mode="spot"; S.sp = {set:[id], i:0}; buildSpotOpts(); save(); render(); return; }
+  if(kind === "r"){ S.mode="rapid"; S.rf = {set:[id], i:0, t0:Date.now(), src:"search"}; save(); render(); landFocus(); return; }
+  if(kind === "d"){ startDrill(id); landFocus(); return; }
+  if(kind === "i"){ S.mode="spot"; S.sp = {set:[id], i:0, src:"search", name:"From search"}; buildSpotOpts(); save(); render(); landFocus(); return; }
   if(kind === "f" || kind === "m"){
     const t = ALLT().find(t => t.body.some(x => (x[0]==="f"||x[0]==="palace") && x[1]===id));
-    if(t) go("learn", t.id);
+    if(!t) return;
+    go("learn", t.id);
+    /* P2.V sweep (K19): a diagram or scene hit lands on that diagram or scene, not on the top of
+       its lesson, and focus goes to its Enlarge button (a scene: the scene itself) */
+    const box = document.querySelector("#app .body-inner");
+    const fz = kind === "f" && box ? Array.from(box.querySelectorAll("figure [data-zoomfig]")).find(b => b.dataset.zoomfig === id) : null;
+    const pal = kind === "m" && box ? Array.from(box.querySelectorAll(".palace")).find(x => x.dataset.pal === id) : null;
+    if(fz) landAt(fz.closest("figure"), fz); else if(pal) landAt(pal);
   }
 }
 
@@ -3499,6 +4069,15 @@ async function getSample(){
     try{ if(window.claude && claude.use) SAMPLE = await claude.use("sample"); }catch(e){ SAMPLE = null; } }
   return SAMPLE;
 }
+/* P2.6 (F30): the tutor is never handed the answer to an item the student has not answered in
+   the CURRENT attempt, in any mode, Socratic or direct. "Answered" is read from the running
+   session (ps.pick, rf.pick, sp.pick, the drill run), never from the saved records: S.qs,
+   S.rapid, S.spot and S.drills remember earlier attempts, so an image served again was sent with
+   its diagnosis while unanswered (named came from S.spot), and a drill was sent its sorting rule,
+   which answers every item, before the run was over. An unanswered screen carries `lock`, the
+   item's key: the dock then sends and shows only the messages asked on that same unanswered
+   item (chatFor), because a reply given on any other screen, or on this item once it was
+   answered, can hold the answer. */
 function screenContext(){
   const t = findT(S.cur);
   if(S.mode === "practice" && S.ps && S.ps.set && S.ps.set.length && !S.ps.done){
@@ -3507,7 +4086,7 @@ function screenContext(){
        from the tutor entirely -- a prompt asking it not to tell is not a
        safeguard, it is an invitation. */
     const answered = S.ps.pick != null;
-    if(q) return {label:"Question", detail:stripTags(q.l).slice(0,60),
+    if(q) return {label:"Question", detail:stripTags(q.l).slice(0,60), lock: answered ? null : "q:"+q.id,
       text: answered
         ? "The student is on this question and has ALREADY ANSWERED.\nSTEM: "+stripTags(q.s)+
           "\nASKS: "+stripTags(q.l)+"\nOPTIONS: "+q.o.map(stripTags).join(" | ")+
@@ -3520,9 +4099,9 @@ function screenContext(){
           "\nASKS: "+stripTags(q.l)+"\nOPTIONS: "+q.o.map(stripTags).join(" | ")};
   }
   if(S.mode === "rapid" && S.rf && S.rf.set && S.rf.set.length){
-    const r = rItem(S.rf.set[S.rf.i]);
+    const id = S.rf.set[S.rf.i], r = rItem(id);
     const shown = S.rf.pick != null;
-    return {label:"Rapid pick", detail:stripTags(r.q).slice(0,60),
+    if(r) return {label:"Rapid pick", detail:stripTags(r.q).slice(0,60), lock: shown ? null : "r:"+id,
       text: shown
         ? "The student is on this rapid item and has answered.\nQ: "+stripTags(r.q)+
           "\nANSWER: "+stripTags(r.o[r.a])+(r.x?"\nNOTE: "+stripTags(r.x):"")
@@ -3531,9 +4110,9 @@ function screenContext(){
           "\nOPTIONS: "+r.o.map(stripTags).join(" | ")};
   }
   if(S.mode === "spot" && S.sp && S.sp.set){
-    const im = IMGS[S.sp.set[S.sp.i]];
-    const named = !!S.spot[S.sp.set[S.sp.i]];
-    return {label:"Image", detail:named ? im.n : "unidentified slide",
+    const k = S.sp.set[S.sp.i], im = IMGS[k];
+    const named = S.sp.pick != null;   /* in this attempt; S.spot[k] is any earlier answer */
+    if(im) return {label:"Image", detail:named ? im.n : "unidentified slide", lock: named ? null : "i:"+k,
       text: named
         ? "The student is looking at this image and has already named it.\nIMAGE: "+im.n+
           "\nDIAGNOSIS: "+im.dx+"\nWHAT TO SEE: "+stripTags(im.look)+
@@ -3542,16 +4121,42 @@ function screenContext(){
           "You have not been told the diagnosis. Ask them what they can actually see."};
   }
   if(S.mode === "drill" && S.dr){
-    const d = DRILLS.find(x=>x.id===S.dr.id);
-    if(d) return {label:"Drill", detail:d.t, text:"Discrimination drill: "+d.t+"\nKEY DISCRIMINATOR: "+stripTags(d.key||"")};
+    const d = DRILLS.find(x=>x.id===S.dr.id), st = S.dr;
+    /* the rule is on screen only on the end screen (order: once checked); until then the tutor
+       gets what the student sees: the item or the steps, never a side, a position or the rule */
+    /* P2.V F21: an answered item stays on screen, with its verdict, until Next (drJudged); the
+       tutor is given that item and that verdict, as it is for an answered question or image */
+    const jx = d && d.kind !== "order" ? drJudged(d, st) : -1;
+    const over = d && (d.kind === "order" ? !!st.checked : (st.i||0) >= (st.order||[]).length && jx < 0);
+    if(d && over) return {label:"Drill", detail:d.t, text:"Discrimination drill: "+d.t+
+      ". The student has finished this run and sees the result.\nKEY DISCRIMINATOR: "+stripTags(d.key||"")};
+    if(d && jx >= 0) return {label:"Drill", detail:d.t, text:"Discrimination drill: "+d.t+
+      ". The student is part-way through a run and has ALREADY ANSWERED the item on screen; its verdict is showing."+
+      "\nSORT INTO: "+(d.kind === "multi" ? (d.cols||[]).map(c=>stripTags(c.l)) : [stripTags(d.a), stripTags(d.bb)]).join(" | ")+
+      "\nITEM ON SCREEN: "+stripTags(d.items[jx][0])+"\nTHE VERDICT THEY SEE: "+stripTags(st.last.msg||"")};
+    if(d){ const step = j => stripTags(d.items[j]);
+      return {label:"Drill", detail:d.t, lock:"d:"+d.id,
+      text:"Discrimination drill: "+d.t+". The student is part-way through a run and has NOT finished it. You have "+
+        "deliberately not been told the rule or where any item belongs, so you cannot give it away. Help them "+
+        "reason about what is in front of them.\n"+(d.kind === "order"
+        ? "TASK: "+stripTags(d.q||"")+"\nTHEIR SEQUENCE SO FAR: "+((st.placed||[]).map(step).join(" > ") || "nothing placed yet")+
+          "\nSTEPS STILL TO PLACE (in the shuffled order shown): "+(st.pool||[]).map(step).join(" | ")
+        : "SORT INTO: "+(d.kind === "multi" ? (d.cols||[]).map(c=>stripTags(c.l)) : [stripTags(d.a), stripTags(d.bb)]).join(" | ")+
+          "\nITEM ON SCREEN: "+stripTags(d.items[st.order[st.i]][0]))}; }
   }
   if(S.mode === "learn" && t){
-    const text = stripTags(t.body.map(x => x[0]==="p"?x[1] : x[0]==="h"?("## "+x[1]) :
+    /* The lesson on screen. The pretest, self-explanation and recall-grid rows are never part of
+       it, answered or not, so their keys and notes stay out. With "Blank out key terms" on, every
+       term still blank on screen is blanked here too (P2.6), or the tutor would read them out. */
+    let text = stripTags(t.body.map(x => x[0]==="p"?x[1] : x[0]==="h"?("## "+x[1]) :
       x[0]==="call"?(x[2]+": "+x[3]) : x[0]==="why"?(x[1]+" "+x[2]) :
       x[0]==="steps"?stepsText(x) :
-      x[0]==="t"?(x[1].join(" | ")+" :: "+x[2].map(r=>r.join(" | ")).join(" ;; ")) : "").join("\n")).slice(0,6000);
-    return {label:"Reading", detail:t.t, text:"The student is reading this topic.\nTOPIC: "+t.t+" ("+
-      yWord(t)+" for "+YAXES[yAxis()]+")\n"+text};
+      x[0]==="t"?(x[1].join(" | ")+" :: "+x[2].map(r=>r.join(" | ")).join(" ;; ")) : "").join("\n"));
+    const blanks = S.cloze ? [...new Set([...document.querySelectorAll("#app .cz.blank")].map(s => s.textContent.trim()).filter(Boolean))] : [];
+    blanks.sort((a, b) => b.length - a.length).forEach(w => { text = text.split(w).join("_____"); });
+    return {label:"Reading", detail:t.t, text:"The student is reading this topic"+
+      (blanks.length ? ", with key terms blanked out to test their recall (shown as _____; you have not been told them)" : "")+
+      ".\nTOPIC: "+t.t+" ("+yWord(t)+" for "+YAXES[yAxis()]+")\n"+text.slice(0,6000)};
   }
   if(S.mode === "weak"){
     const ev = diagnose().filter(e=>e.flag).slice(0,6);
@@ -3583,6 +4188,9 @@ function dockDodge(){
 function dockDodgeSoon(){ if(!DODGE_RAF) DODGE_RAF = requestAnimationFrame(dockDodge); }
 ["scroll", "resize"].forEach(t => window.addEventListener(t, dockDodgeSoon, {passive:true}));
 ["click", "keyup", "toggle", "load"].forEach(t => document.addEventListener(t, dockDodgeSoon, true));
+/* P2.6: the messages the dock may show and send. On an unanswered item (ctx.lock) only those asked
+   on that same unanswered item; the rest stay in S.chat and come back once it is answered. */
+const chatFor = lock => (S.chat||[]).filter(m => !lock || m.k === lock);
 function paintDock(){
   let host = el("dockhost");
   if(!host){ host = document.createElement("div"); host.id = "dockhost"; document.body.appendChild(host); }
@@ -3593,12 +4201,13 @@ function paintDock(){
     dockDodgeSoon();
     return;
   }
-  const msgs = (S.chat||[]).slice(-14);
+  const msgs = chatFor(ctx.lock).slice(-14), held = !!ctx.lock && (S.chat||[]).some(m => m.k !== ctx.lock);
   host.innerHTML = `<div class="dock">
     <div class="dockhead"><b>Ask Claude</b>
       <span class="ctx">${esc(ctx.label)}<br>${esc(String(ctx.detail).slice(0,40))}</span>
       <button class="dockclose" id="dockclose" aria-label="close">&times;</button></div>
     <div class="dockbody" id="dockbody">
+      ${held ? '<div class="dmsg sys">Earlier messages are hidden until you answer this one, so they cannot give it away.</div>' : ""}
       ${msgs.length ? msgs.map(m=>`<div class="dmsg ${m.r}">${esc(m.t)}</div>`).join("")
         : '<div class="dmsg sys">I can see whatever is on your screen right now — the topic you are reading, the question you are on, the image you are looking at. Ask me anything about it, or use a shortcut below.</div>'}
     </div>
@@ -3636,18 +4245,22 @@ function paintDock(){
 }
 async function askDock(userText){
   const sample = await getSample();
+  /* P2.6: every message is tagged with the screen's lock, so the answer-free exchange on an
+     unanswered item is the only history sent (and shown) while it is unanswered (chatFor) */
+  const ctx = screenContext(), k = ctx.lock || null;
   S.chat = S.chat || [];
-  S.chat.push({r:"me", t:userText});
+  S.chat.push({r:"me", t:userText, k});
   if(!sample){
-    S.chat.push({r:"ai", t:"Claude is not reachable in this view, so the built-in explanations are your fallback. Everything else on the page still works."});
+    S.chat.push({r:"ai", t:"Claude is not reachable in this view, so the built-in explanations are your fallback. Everything else on the page still works.", k});
     save(); paintDock(); return;
   }
-  dockBusy = true; S.chat.push({r:"ai", t:"Thinking…"}); save(); paintDock();
-  const ctx = screenContext();
-  const style = S.socratic
-    ? "SOCRATIC MODE: do not give the answer outright. Ask ONE short leading question at a time that walks them toward it, then stop and wait. If their next reply shows they are stuck, give a hint, then the answer."
-    : "Answer directly and concretely.";
-  const prior = S.chat.filter(m => m.t !== "Thinking…").slice(-9, -1)
+  dockBusy = true; S.chat.push({r:"ai", t:"Thinking…", k}); save(); paintDock();
+  /* On an unanswered item the tutor holds no answer, so neither mode may tell it to give one */
+  const style = (S.socratic
+    ? "SOCRATIC MODE: do not give the answer outright. Ask ONE short leading question at a time that walks them toward it, then stop and wait. If their next reply shows they are stuck, give a hint"+(k ? "." : ", then the answer.")
+    : "Answer directly and concretely.")
+    + (k ? " The student has not answered what is on screen yet and you have not been told the answer, so do not name any option, side, position or diagnosis as the right one." : "");
+  const prior = chatFor(k).filter(m => m.t !== "Thinking…").slice(-9, -1)
     .map(m => ({role: m.r === "me" ? "user" : "assistant", content: m.t}));
   const head =
     "You are a tutor embedded in "+(META.title ? META.title+", " : "")+"a medical-school study tool, in the "+META.name+" block. "+
@@ -3658,10 +4271,10 @@ async function askDock(userText){
   try{
     const turns = prior.concat([{role:"user", content: head + userText}]);
     const r = await sample(turns, {modelTier:"default",
-      onText:({text}) => { S.chat[S.chat.length-1] = {r:"ai", t:text}; paintDock(); }});
-    S.chat[S.chat.length-1] = {r:"ai", t:r.text};
+      onText:({text}) => { S.chat[S.chat.length-1] = {r:"ai", t:text, k}; paintDock(); }});
+    S.chat[S.chat.length-1] = {r:"ai", t:r.text, k};
   }catch(e){
-    S.chat[S.chat.length-1] = {r:"ai", t:"Could not reach Claude just now. Everything else on this page still works."};
+    S.chat[S.chat.length-1] = {r:"ai", t:"Could not reach Claude just now. Everything else on this page still works.", k};
   }
   dockBusy = false; save(); paintDock();
 }
@@ -3754,18 +4367,55 @@ function glossOpen(s){
   const nx = host.nextElementSibling;
   if(nx && nx.classList && nx.classList.contains("gpop")){
     const same = nx.dataset.gfor === s.dataset.g;
-    nx.remove();
+    glossClose(nx, false);
     if(same) return;
   }
+  /* P2.V F10: the term is a disclosure button (aria-expanded, aria-controls); the popup's close
+     button and Escape (glossKeydown) close it and hand focus back to the term */
   const div = document.createElement("div"); div.className = "gpop";
+  div.id = "gpop" + (++GPOP_SEQ); div.dataset.gseq = GPOP_SEQ; div.__term = s;
+  div.setAttribute("role", "group"); div.setAttribute("aria-label", g.t + ", definition");
   div.dataset.gfor = s.dataset.g; div.dataset.gix = lessonTerms().indexOf(s);
-  div.innerHTML = '<button class="gclose" aria-label="close">&times;</button><h6>'+esc(g.t)+'</h6>'+fmt(g.d);
-  div.querySelector(".gclose").onclick = ()=>div.remove();
+  div.innerHTML = '<button type="button" class="gclose" aria-label="Close the definition">&times;</button><h6>'+esc(g.t)+'</h6>'+fmt(g.d);
+  div.querySelector(".gclose").onclick = ()=>glossClose(div, true);
+  div.querySelectorAll(".gterm").forEach(wireTerm);
   host.parentElement.insertBefore(div, host.nextSibling);
+  s.setAttribute("aria-expanded", "true"); s.setAttribute("aria-controls", div.id);
+}
+let GPOP_SEQ = 0;
+function glossClose(div, refocus){
+  const s = div.__term; div.remove();
+  if(!s || !s.isConnected) return;
+  s.setAttribute("aria-expanded", "false"); s.removeAttribute("aria-controls");
+  if(refocus) try{ s.focus({preventScroll:true}); }catch(e){}
+}
+/* Escape closes the popup the reader is in or on (else the newest one) and returns focus to its
+   term. It leaves the key to the lightbox, the search box and any field being typed in. */
+function glossKeydown(e){
+  if(e.key !== "Escape" || el("lightbox") || el("searchwrap")) return;
+  const a = document.activeElement, app = el("app");
+  if(a && !(app && (app.contains(a) || a.contains(app)))) return;   /* body and main hold #app */
+  const pops = Array.from(document.querySelectorAll("#app .gpop")); if(!pops.length) return;
+  const p = (a && a.closest && a.closest(".gpop")) || pops.find(x => x.__term === a)
+         || pops.reduce((m, x) => (+x.dataset.gseq > +m.dataset.gseq ? x : m));
+  e.preventDefault(); glossClose(p, true);
+}
+document.addEventListener("keydown", glossKeydown);
+/* every role="button" span of the lesson answers Enter and Space as well as a click; a key on a
+   cloze blank nested inside a term belongs to the blank (e.target), not to the term */
+function wireTerm(s){
+  if(!s.hasAttribute("aria-expanded")) s.setAttribute("aria-expanded", "false");
+  s.onclick = ()=>glossOpen(s);
+  s.onkeydown = e => { if(e.target !== s || (e.key !== "Enter" && e.key !== " ")) return; e.preventDefault(); glossOpen(s); };
 }
 function wire(){
   const app = el("app");
   app.querySelectorAll("[data-m]").forEach(b => b.onclick = ()=>go(b.dataset.m));
+  /* P2.V F42: closing the recovery notice redraws the view without it and parks focus on the view */
+  app.querySelectorAll("[data-pnote-x]").forEach(b => b.onclick = ()=>{ PATH_NOTE = null; render();
+    const m = document.querySelector("main"); if(m){ if(!m.hasAttribute("tabindex")) m.setAttribute("tabindex", "-1"); try{ m.focus({preventScroll:true}); }catch(e){} } });
+  app.querySelectorAll("[data-rnote-x]").forEach(b => b.onclick = ()=>{ RENDER_NOTE = null; render();
+    const m = document.querySelector("main"); if(m){ if(!m.hasAttribute("tabindex")) m.setAttribute("tabindex", "-1"); try{ m.focus({preventScroll:true}); }catch(e){} } });
   /* button[data-t], not [data-t]: a container carrying the attribute would swallow
      every click inside it and re-navigate, which is what broke the recall check. */
   app.querySelectorAll("button[data-t]").forEach(b => b.onclick = ()=>go("learn", b.dataset.t));
@@ -3800,7 +4450,8 @@ function wire(){
   };
   app.querySelectorAll("[data-plan]").forEach(b => b.onclick = ()=>{
     const k = todayKey(), d = S.days[k] = S.days[k] || {acts:0, mins:0, done:[]};
-    if(d.done.indexOf(b.dataset.planid) < 0) d.done.push(b.dataset.planid);
+    if(!Array.isArray(d.done)) d.done = [];
+    if(d.done.indexOf(b.dataset.plankey) < 0) d.done.push(b.dataset.plankey);
     const spec = b.dataset.plan, i = spec.indexOf(":"), kind = spec.slice(0,i), arg = spec.slice(i+1);
     if(kind === "stage") openStage(arg);
     else if(kind === "ps") startSet(arg);
@@ -3813,7 +4464,8 @@ function wire(){
     s.onkeydown = e => { if(e.key==="Enter"||e.key===" "){ e.preventDefault(); s.classList.toggle("blank"); } }; });
   CZ_DRAWN = !!S.cloze;
   const ct = el("clozeToggle"); if(ct) ct.onclick = ()=>{ S.cloze = !S.cloze; rerenderHere(); };
-  app.querySelectorAll(".gterm").forEach(s => s.onclick = ()=>glossOpen(s));
+  app.querySelectorAll(".gterm").forEach(wireTerm);
+  app.querySelectorAll("[data-glosshome]").forEach(b => b.onclick = ()=>glossGo(b.dataset.glosshome));
   /* [data-raw] (Hide markup) is wired in wirePins since P2.5, so the lightbox copy works too */
   /* P3.5 - button[data-flag], not [data-flag]: an ancestor carrying the
      attribute would swallow every click inside it, which is the bug that once
@@ -3864,9 +4516,10 @@ function wire(){
   wirePractice(app); wireDrill(app); wireRapid(app); wireSpot(app);
   if(el("pace")) startPace();
   fitAllFigures();
+  /* P2.V F29/F31 - every result of the three backup buttons goes to #live too; #bkmsg is not a live region */
+  const bk = t => { const n = el("bkmsg"); if(n) n.textContent = t; sayLive(t); };
   const eb = el("expbtn");
   if(eb) eb.onclick = async ()=>{
-    const m = el("bkmsg");
     const payload = JSON.stringify({app:"step1", block:META.key,
       saved:new Date().toISOString(), state:S, hub:hubLoad()}, null, 1);
     /* P3.5 - S.flags rides inside state because it is part of S, but nobody
@@ -3881,9 +4534,9 @@ function wire(){
     try{
       const dl = window.claude && window.claude.use ? await window.claude.use("downloads") : null;
       if(dl){ await dl.save({filename:name, data:payload});
-        if(m) m.textContent = "Saved." + withFlags; return; }
+        bk("Saved." + withFlags); return; }
     }catch(e){
-      if(m) m.textContent = (e && e.code === "cancelled") ? "Save canceled." : "Could not save the file.";
+      bk((e && e.code === "cancelled") ? "Save canceled." : "Could not save the file.");
       if(e && e.code === "cancelled") return;
     }
     /* running as a plain local file: the ordinary link still works there */
@@ -3891,32 +4544,42 @@ function wire(){
       const a = document.createElement("a");
       a.href = URL.createObjectURL(new Blob([payload], {type:"application/json"}));
       a.download = name; document.body.appendChild(a); a.click(); a.remove();
-      if(m) m.textContent = "Saved to your downloads." + withFlags;
-    }catch(e2){ if(m) m.textContent = "Downloading is not available here."; }
+      bk("Saved to your downloads." + withFlags);
+    }catch(e2){ bk("Downloading is not available here."); }
   };
+  const ibb = el("impbtn"); if(ibb) ibb.onclick = ()=>{ const f = el("impfile"); if(f){ f.value = ""; f.click(); } };
   const ib = el("impfile");
   if(ib) ib.onchange = ()=>{
     const f = ib.files && ib.files[0]; if(!f) return;
     const rd = new FileReader();
     rd.onload = ()=>{
-      const m = el("bkmsg");
       try{
         const d = JSON.parse(rd.result);
         if(!d || d.app !== "step1" || !d.state) throw new Error("not a progress file");
         if(d.block !== META.key) throw new Error("that file is from the " + d.block + " block");
         S = Object.assign(blank(), d.state);
-        if(d.hub) hubSave(d.hub);
+        /* P2.V F29 - the whole hub used to be replaced by the file's copy, which put every OTHER
+           block's items back to where they stood on the day of the export. Only this block's items
+           are replaced: they are dropped here and written again from the restored state by save(). */
+        const h = hubLoad();
+        Object.keys(h.items || {}).forEach(k => { if(h.items[k] && h.items[k].b === META.key) delete h.items[k]; });
+        hubSave(h);
+        /* the confirmation is on the Path (a file saved mid-set would otherwise open on that set) */
+        S.mode = "path";
         HUBCACHE = null; migrateRapidKeys(); repairState(); save(); render();
-      }catch(e){ if(m) m.textContent = "Could not restore: " + e.message; }
+        const when = new Date(d.saved), nq = Object.keys(S.qs || {}).length, nr = Object.keys(S.rapid || {}).length;
+        const msg = "Restored the progress saved " + (isFinite(+when) ? when.toLocaleString(undefined, {month:"short", day:"numeric", hour:"numeric", minute:"2-digit"}) : "in that file")
+          + ": " + nq + " question" + (nq === 1 ? "" : "s") + " and " + nr + " rapid pick" + (nr === 1 ? "" : "s") + " answered. It replaced what this browser held for this block.";
+        bk(msg);
+      }catch(e){ bk("Could not restore: " + e.message); }
     };
     rd.readAsText(f);
   };
   const rb = el("rstbtn");
   if(rb) rb.onclick = ()=>{
-    const m = el("bkmsg");
     if(rb.dataset.armed !== "1"){
       rb.dataset.armed = "1"; rb.textContent = "Really erase it? Click again";
-      if(m) m.textContent = "This wipes every answer, score and review schedule for this block. Download a copy first if you want one.";
+      bk("This wipes every answer, score and review schedule for this block. Download a copy first if you want one.");
       setTimeout(()=>{ if(rb){ rb.dataset.armed=""; rb.textContent="Start this block over"; } }, 6000);
       return;
     }
@@ -3924,6 +4587,8 @@ function wire(){
     Object.keys(h.items||{}).forEach(k => { if(h.items[k].b === META.key) delete h.items[k]; });
     hubSave(h); HUBCACHE = null;
     S = blank(); save(); render();
+    /* P2.V F29 - it used to end on the default line, with nothing to say the reset happened */
+    bk("This block was started over: its answers, scores, review dates and flags are erased. The exam date and other blocks are kept.");
   };
   const gs = el("gsearch");
   if(gs) gs.oninput = ()=>{ const q = gs.value.toLowerCase().trim();
@@ -3952,6 +4617,9 @@ function wirePretest(app){
     delete PT_OPEN[t.id+":"+i];
     if(t.pretest.every((_,k) => ptAnswered(rec, k))){ rec.done = true; rec.keep = true; }
     bumpDay(0); rerenderHere();
+    /* P2.V F31: the pick was drawn (green or red, and its note) but never spoken */
+    sayLive(j === p.a ? "Right: " + stripTags(String(p.o[j])) + "."
+      : "Not quite. You picked " + stripTags(String(p.o[j])) + "; the answer is " + stripTags(String(p.o[p.a])) + ". Why your pick is wrong is shown under the question.");
   });
 }
 function ptToggleWhy(t, i, b){
@@ -3963,7 +4631,15 @@ function ptToggleWhy(t, i, b){
 function wireSexp(app){
   app.querySelectorAll("[data-sx]").forEach(b => b.onclick = ()=>{
     if(S.sexp[b.dataset.sx] != null) return;
-    S.sexp[b.dataset.sx] = +b.dataset.sxi; bumpDay(0); rerenderHere(); });
+    S.sexp[b.dataset.sx] = +b.dataset.sxi; bumpDay(0); rerenderHere();
+    /* P2.V F31: focus goes to the explanation below, which does not say whether the pick was right */
+    { const t = findT(S.cur), row = t && (t.body||[]).find(x => x && x[0] === "sexp" && x[1] && x[1].id === b.dataset.sx), o = row && row[1];
+      if(o) sayLive(+b.dataset.sxi === o.a ? "Your pick is right." : "Not the best reasoning. The right one: " + stripTags(String(o.o[o.a])) + "."); }
+    /* P2.V sweep (F14): the options come back disabled and cannot hold focus, and the focus
+       fallback climbed to the whole lesson, so the next Tab restarted at its top. The reader
+       now goes on from the explanation that just appeared. */
+    const w = document.querySelector('.checkpoint[data-sexp="' + CSS.escape(b.dataset.sx) + '"] .ptwhy');
+    if(w){ w.setAttribute("tabindex", "-1"); try{ w.focus({preventScroll:true}); }catch(e){} } });
 }
 /* @region engine.lightbox (ENGINE, engine) */
 /* ---------- lightbox: every figure and photo gets a full-size view on demand ---------- */
@@ -4123,16 +4799,20 @@ function lbResize(){
   const box = document.querySelector("#lightboxhost .lbinner"), P = lbPhotoParts(box); if(!P) return;
   lbPhotoZoom(box, LB_PFIT ? P.fit : LB_PZ);
 }
-let lastFocusBeforeLightbox = null;
-function openLightbox(html, minW){
+let lastFocusBeforeLightbox = null, lastFocusSig = null;
+function openLightbox(html, minW, opener){
   let host = el("lightboxhost");
   if(!host){ host = document.createElement("div"); host.id = "lightboxhost"; document.body.appendChild(host); }
-  lastFocusBeforeLightbox = document.activeElement;
+  /* P2.V F31: the control that opened it (Enlarge, Diagram) gets focus back on close, even where a
+     mouse click does not focus a button; its signature finds the twin if a redraw replaced it */
+  lastFocusBeforeLightbox = opener || document.activeElement;
+  lastFocusSig = lastFocusBeforeLightbox ? captureFocus(lastFocusBeforeLightbox) : null;
   host.innerHTML = `<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
     <div class="lbinner"><button class="lbclose" id="lbclose" aria-label="Close">&times;</button>${html}</div>
   </div>`;
   const box = host.querySelector(".lbinner");
   box.querySelector(".imgbox") && wirePins(host);
+  box.querySelectorAll(".gterm").forEach(wireTerm);   /* P2.V F10: a term in an enlarged caption works too */
   box.querySelectorAll("svg.dia").forEach(sv => { delete sv.dataset.fitted; fitSvgText(sv); });
   lbZoomInit(box);   /* P4 repair: size the diagram from its own viewBox, not from the phone's box */
   lbPhotoInit(box, minW);
@@ -4147,11 +4827,34 @@ function closeLightbox(){
   host.innerHTML = "";
   document.removeEventListener("keydown", lbKeydown);
   window.removeEventListener("resize", lbResize);
-  if(lastFocusBeforeLightbox && lastFocusBeforeLightbox.focus) lastFocusBeforeLightbox.focus();
+  const back = lastFocusBeforeLightbox && lastFocusBeforeLightbox.isConnected ? lastFocusBeforeLightbox
+             : lastFocusSig ? focusTwin(lastFocusSig) : null;
+  if(back && back.focus) try{ back.focus(); }catch(e){}
+  lastFocusBeforeLightbox = lastFocusSig = null;
+}
+/* P2.V F31: the dialog is aria-modal, so Tab and Shift+Tab cycle through its own controls and
+   never reach the page behind it. Every Tab is handled here (not only at the two ends), so focus
+   that somehow sits outside the dialog is brought back in on the next key. */
+function lbTrapTab(e){
+  const dlg = el("lightbox"); if(!dlg) return;
+  const all = Array.from(dlg.querySelectorAll(FOCUSABLE_SEL)).filter(isTabbable);
+  e.preventDefault();
+  if(!all.length) return;
+  const a = document.activeElement, n = all.length;
+  let i = all.indexOf(a), next;
+  if(i >= 0) next = all[(i + (e.shiftKey ? n - 1 : 1)) % n];
+  else if(a && dlg.contains(a)){
+    /* on something inside that is not itself a Tab stop: continue from where it sits */
+    const after = all.filter(x => a.compareDocumentPosition(x) & Node.DOCUMENT_POSITION_FOLLOWING);
+    next = e.shiftKey ? (all.filter(x => after.indexOf(x) < 0).pop() || all[n - 1]) : (after[0] || all[0]);
+  }
+  else next = e.shiftKey ? all[n - 1] : all[0];
+  try{ next.focus(); }catch(_e){}
 }
 /* Escape closes; + and - zoom a photo or a figure (arrow keys pan the focused frame natively) */
 function lbKeydown(e){
   if(e.key === "Escape"){ closeLightbox(); return; }
+  if(e.key === "Tab"){ lbTrapTab(e); return; }
   if(e.ctrlKey || e.metaKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test((e.target && e.target.tagName) || "")) return;
   const k = e.key === "+" || e.key === "=" ? "in" : e.key === "-" || e.key === "_" ? "out" : "";
   const b = k && document.querySelector('#lightboxhost [data-lbp="' + k + '"], #lightboxhost [data-lbz="' + k + '"]');
@@ -4165,11 +4868,11 @@ function lbHighlight(b){
 }
 function wireZoom(app){
   app.querySelectorAll("[data-zoomfig]").forEach(b => b.onclick = e => {
-    e.stopPropagation(); openLightbox(figHTML(b.dataset.zoomfig)); lbHighlight(b); });
+    e.stopPropagation(); openLightbox(figHTML(b.dataset.zoomfig), 0, b); lbHighlight(b); });
   /* the enlarged photo opens at least as large as the copy it came from (P2.V K16) */
   app.querySelectorAll("[data-zoomimg]").forEach(b => b.onclick = e => {
     e.stopPropagation(); const ib = b.closest(".photo") && b.closest(".photo").querySelector(".imgbox");
-    openLightbox(imgHTML(b.dataset.zoomimg, true), ib ? ib.getBoundingClientRect().width : 0); lbHighlight(b); });
+    openLightbox(imgHTML(b.dataset.zoomimg, true), ib ? ib.getBoundingClientRect().width : 0, b); lbHighlight(b); });
 }
 /* Hover or focus previews a callout; a click pins it (touch too). What is pinned, and Hide
    markup, live in OV_PIN / OV_RAW (see ovScope): a click writes the state and ovSync draws it
@@ -4253,7 +4956,11 @@ function wireGrid(app){
   });
   const again = el("rgagain");
   if(again) again.onclick = ()=>{ const rec = S.topics[t.id] = S.topics[t.id] || {};
-    rec.gridRetake = true; delete GRID_SEL[t.id]; rerenderHere(); };
+    rec.gridRetake = true; delete GRID_SEL[t.id]; rerenderHere();
+    /* P2.V F31: "Test me again" is gone after the redraw, so restoreFocus() had no twin and
+       parked the reader on main; stand them on the first item of the fresh grid instead */
+    const first = document.querySelector("#rgrid [data-rg]");
+    if(first) try{ first.focus({preventScroll: true}); }catch(e){} };
   const btn = el("rgcheck");
   if(btn) btn.onclick = ()=>{
     const items = t.grid.items, picked = [];
@@ -4263,7 +4970,7 @@ function wireGrid(app){
     rec.grid = score; rec.gridAt = Date.now(); rec.gridPick = picked; promote(rec, score >= 0.75);
     rec.gridRetake = false;
     delete GRID_SEL[t.id];
-    if(!rec.read){ rec.read = true; bumpDay(t.mins||0); }
+    if(!rec.read){ rec.read = true; bumpDay(0); }   /* P2.V F5: minutes are measured (noteActive), not t.mins */
     /* P2.V F13 sweep: the scored grid (colours, score line, "Test me again") and the "read"
        chip are now drawn from state, so the view is simply redrawn in place */
     bumpDay(0); rerenderHere();
@@ -4295,7 +5002,7 @@ function startPace(){
    reading waits two frames, until go()'s scroll to the top and restoreScroll() have put the
    page where it stays. Only the same topic re-rendered in place (a sexp answer, the cloze
    toggle, a grid retake) keeps its running counters. */
-let dwellTimer = null, dwellTopic = null, dwellSeconds = 0, maxScrolled = 0, dwellListener = null;
+let dwellTimer = null, dwellTopic = null, dwellSeconds = 0, maxScrolled = 0, dwellListener = null, dwellSpan = null;
 function dwellNeed(t){ return Math.max(45, Math.round((t.mins || 8) * 60 * 0.35)); }
 /* the chip in the topic head follows every change to the topic's reading record: the dwell
    tick, and a scored recall grid, which marks the topic read on its own */
@@ -4309,13 +5016,18 @@ function startDwell(t){
   const same = dwellTimer !== null && !!dwellTopic && dwellTopic.id === t.id;
   clearInterval(dwellTimer); dwellTimer = null;
   if(dwellListener) window.removeEventListener("scroll", dwellListener);
-  if(!same){ dwellSeconds = 0; maxScrolled = 0; }
+  if(!same){ dwellSeconds = 0; maxScrolled = 0; dwellSpan = null; }
   dwellTopic = t;
   const need = dwellNeed(t);
+  /* P2.V F10: the credit is the stretch of the page the reader has actually scrolled through
+     (lowest to highest position seen on this visit), not the position alone. A lesson opened
+     part-way down (a glossary link lands on its section) starts with no scroll credit; from the
+     top of the page the two measures are the same. */
   const listener = dwellListener = () => {
-    const doc = document.documentElement;
+    const doc = document.documentElement, y = window.scrollY;
     const total = Math.max(1, doc.scrollHeight - window.innerHeight);
-    maxScrolled = Math.max(maxScrolled, Math.min(1, window.scrollY / total));
+    dwellSpan = dwellSpan ? [Math.min(dwellSpan[0], y), Math.max(dwellSpan[1], y)] : [y, y];
+    maxScrolled = Math.max(maxScrolled, Math.min(1, (dwellSpan[1] - dwellSpan[0]) / total));
   };
   window.addEventListener("scroll", listener, {passive:true});
   requestAnimationFrame(() => requestAnimationFrame(() => { if(dwellListener === listener) listener(); }));
@@ -4328,30 +5040,145 @@ function startDwell(t){
     rec.dwell = Math.max(rec.dwell || 0, dwellSeconds);
     rec.scrolled = Math.max(rec.scrolled || 0, maxScrolled);
     if(!rec.read && rec.dwell >= need && rec.scrolled >= 0.7){
-      rec.read = true; bumpDay(dwellTopic.mins || 0); save(); paintHeader();
+      rec.read = true; bumpDay(0); save(); paintHeader();   /* P2.V F5: minutes are measured (noteActive) */
     }
     paintDwellTag(dwellTopic);
     if(dwellSeconds % 10 === 0) save();
   }, 1000);
 }
+/* P2.3 (F23/F24, reopened 2026-09-28): one definition per named set. "Previously missed" used
+   to call the spacing-due branch (a second k==="due" branch, the missed one, could never run),
+   so it served right answers that were due, and every empty set was filled with 20 random
+   questions under the button's label. Now the buttons, the plan rows and Weak Spots count with
+   the same pool that startSet / startRapid serve, and an empty set says so (SET_EMPTY) instead.
+   S.qs[id] is rewritten by every answer, so rec.ok is the result of the MOST RECENT answer:
+     missed - answered, most recent answer wrong: a miss not since answered right. Earliest
+              review due first: every miss restarts at the 15-minute box, so the miss that has
+              waited longest leads and one made a minute ago comes last
+     due    - answered and due on the spacing ladder now, right or wrong; most overdue first
+     verify - most recent answer right, not yet verified, its re-check date reached
+     weak   - on a topic Weak Spots flags, never answered or most recent answer wrong
+     unseen - never answered;  all - every question
+   Rapid: linked - this block's items in S.linked;  due - hubDue() (every block, most overdue
+   first; this block's own due items when the hub is empty);  weak - flagged topics;  all.
+   "High yield only" filters before the cap. P2.V F8: that includes Due now. It used to return
+   the hub's list before the filter, so the button, the plan's review row and the set served
+   lower-yield items while the banner said every rapid pick came from the high-yield topics.
+   Under the filter Due now keeps this block's due items on high-yield topics; items from other
+   blocks in the shared hub are left out, because their yield is set on their own page, and the
+   yield banner counts what waits (yHeld). */
+const PS_CAP = 20, RF_CAP = 40;
+const PS_NAME = {weak:"Target my weak spots", verify:'Verify my "correct" answers', missed:"Previously missed",
+                 due:"Due for review", unseen:"Never attempted", all:"Everything, shuffled"};
+const RF_NAME = {linked:"Linked queue", due:"Due now", weak:"From my weak spots", all:"All rapid picks, shuffled"};
+/* P2.V F8 - under "High yield only" the whole-bank sets are not the whole bank, so their names say so */
+const psName = k => k === "all" && S.hiOnly ? "Every high-yield question, shuffled" : PS_NAME[k];
+const rfName = k => k === "all" && S.hiOnly ? "All high-yield rapid picks, shuffled" : RF_NAME[k];
+let SET_EMPTY = null;   /* {m:"practice"|"rapid", k}: the set just asked for had nothing to serve */
+const hiKeep = c => { const T = findT(c); return !!T && yv(T) === "hi"; };
+/* runs fn as if the header read "All yields" (the empty-set notice and the banner count what the filter holds back) */
+function unfiltered(fn){ const was = S.hiOnly; S.hiOnly = false; try{ return fn(); } finally { S.hiOnly = was; } }
+/* P2.V F8 - the review items "High yield only" holds back: this block's due or queued rapid picks
+   and due questions on lower-yield topics (low), and due rapid picks from other blocks in the
+   shared hub (other). The yield banner says how many wait until the filter is turned off. */
+function yHeld(){
+  if(!S.hiOnly) return {low:0, other:0};
+  const rIds = () => new Set(rapidPool("due").concat(rapidPool("linked"))), qIds = () => new Set(practicePool("due").map(q => q.id));
+  const keptR = rIds(), keptQ = qIds(), allR = unfiltered(rIds), allQ = unfiltered(qIds);
+  let low = 0, other = 0;
+  allR.forEach(i => { if(!keptR.has(i)){ if(RBYID[i]) low++; else other++; } });
+  allQ.forEach(i => { if(!keptQ.has(i)) low++; });
+  return {low, other};
+}
+function practicePool(k, ev){
+  const now = Date.now(), R = q => S.qs[q.id];
+  let out;
+  if(k === "missed") out = QS.filter(q => { const a = R(q); return !!a && !a.ok; })
+    .sort((x, y) => (R(x).due || R(x).ts || 0) - (R(y).due || R(y).ts || 0) || (R(x).ts || 0) - (R(y).ts || 0));
+  else if(k === "due") out = QS.filter(q => { const a = R(q); return !!a && a.box > 0 && a.due && a.due <= now; })
+    .sort((x, y) => R(x).due - R(y).due);
+  else if(k === "verify") out = QS.filter(q => { const a = R(q); return !!a && a.ok && !a.verified && a.verifyDue && a.verifyDue <= now; });
+  else if(k === "weak"){ const cs = new Set((ev || diagnose()).filter(e => e.flag).map(e => e.t.id));
+    out = QS.filter(q => cs.has(q.c) && (!R(q) || !R(q).ok)); }
+  else if(k === "unseen") out = QS.filter(q => !R(q));
+  else out = QS.slice();
+  return S.hiOnly ? out.filter(q => hiKeep(q.c)) : out;
+}
+function rapidPool(k, ev){
+  let out;
+  if(k === "linked"){ const set = new Set(S.linked || []); out = RAPID.filter(r => set.has(r.i)); }
+  else if(k === "due"){ const hub = hubDue();
+    if(hub.length) return (S.hiOnly ? hub.filter(it => RBYID[it.i] && hiKeep(RBYID[it.i].c)) : hub).map(it => it.i);
+    out = RAPID.filter(r => isDue(S.rapid[r.i])).sort((a, b) => overdue(S.rapid[b.i]) - overdue(S.rapid[a.i])); }
+  else if(k === "weak"){ const cs = new Set((ev || diagnose()).filter(e => e.flag).map(e => e.t.id));
+    out = RAPID.filter(r => cs.has(r.c)); }
+  else out = RAPID.slice();
+  return (S.hiOnly ? out.filter(r => hiKeep(r.c)) : out).map(r => r.i);
+}
+/* P2.4 (F20, reopened 2026-09-28): the image sets, defined once like the two above. "Only ones
+   I have not seen" used to fall back to every image when none was left, so a student who had
+   tried them all was served the whole set again under that label. S.spot[key] is written by
+   the first answer to an image, right or wrong, and rewritten by every later one:
+     unseen - no answer yet ("Not tried yet"; the plan's image row counts this pool)
+     all    - every image
+   Both are shuffled and uncapped; "High yield only" keeps the images whose teaching topic
+   (IMGTOPIC) is high yield, as the builder below them already did. */
+const spName = k => ({unseen:"Not tried yet", all:S.hiOnly ? "All high-yield images, shuffled" : "All images, shuffled"})[k];
+function spotPool(k){
+  let out = Object.keys(IMGS);
+  if(k === "unseen") out = out.filter(x => !S.spot[x]);
+  return S.hiOnly ? out.filter(x => hiKeep(IMGTOPIC[x])) : out;
+}
+/* what a button serves: the ordered sets keep their order, the rest are shuffled; "all" is uncapped */
+function practiceSet(k, ev){ const p = practicePool(k, ev), s = k === "missed" || k === "due" ? p : shuffle(p);
+  return k === "all" ? s : s.slice(0, PS_CAP); }
+function rapidSet(k, ev){ const p = rapidPool(k, ev), s = k === "due" ? p : shuffle(p);
+  return k === "all" ? s : s.slice(0, RF_CAP); }
+/* the label's count: "(n)" when the whole pool is served, "(n of m)" when the cap holds some back */
+function setCount(m, k, ev){
+  const all = (m === "rapid" ? rapidPool : m === "spot" ? spotPool : practicePool)(k, ev).length;
+  const n = k === "all" || m === "spot" ? all : Math.min(m === "rapid" ? RF_CAP : PS_CAP, all);
+  return {n, m:all, txt: n === all ? "(" + n + ")" : "(" + n + " of " + all + ")"};
+}
+/* An empty set is reported where it was asked for, with up to two non-empty sets to try instead */
+function setEmptyHTML(m, ev){
+  const E = SET_EMPTY; if(!E || E.m !== m) return "";
+  const k = E.k, P = m === "practice", SP = m === "spot";
+  const names = P ? {weak:psName("weak"), verify:psName("verify"), missed:psName("missed"), due:psName("due"), unseen:psName("unseen"), all:psName("all")}
+    : SP ? {unseen:spName("unseen"), all:spName("all")} : {linked:rfName("linked"), due:rfName("due"), weak:rfName("weak"), all:rfName("all")};
+  const flagged = (ev || diagnose()).filter(e => e.flag), fl = flagged.slice(0, 3).map(e => esc(e.t.t)).join(", ");
+  const noFlag = "No topic is flagged weak yet, so there is nothing to target. Weak Spots flags a topic from the evidence in your answers.";
+  let txt = P ? {
+    missed: "No question has a wrong answer as its most recent answer. A question joins this set when you miss it and leaves it when you answer it right.",
+    due: "No answered question is due for review yet. Each answer schedules the question's return: about 15 minutes after a miss, then further apart after each right answer in a row (1, 3, 7, then 14 days).",
+    verify: "No right answer is waiting to be re-checked. A question you get right comes back a day later, to check that the answer was not a lucky guess.",
+    weak: flagged.length ? "Your flagged topics (" + fl + ") have no question left that is unanswered or was last answered wrong." : noFlag,
+    unseen: "You have attempted every question.",
+    all: "There are no questions to serve."}[k] : SP ? {
+    unseen: "You have tried every image. An image leaves this set with your first answer to it, right or wrong. "
+      + "To go back over the ones you got wrong, open &ldquo;Build your own set&rdquo; below and choose &ldquo;Got wrong&rdquo;.",
+    all: "There are no images to serve."}[k] : {
+    linked: "The linked queue is empty. Missing a practice question queues the rapid picks on the same fact, and each one leaves the queue when you answer it right.",
+    due: "No rapid pick is due for review yet. Each answer schedules the pick's return on the spacing schedule.",
+    weak: flagged.length ? "Your flagged topics (" + fl + ") have no rapid picks." : noFlag,
+    all: "There are no rapid picks to serve."}[k];
+  if(S.hiOnly){ const hid = unfiltered(() => setCount(m, k, ev).m);
+    /* P2.V F8 - Due now is filtered too; its held-back items can also be other blocks' */
+    if(hid) txt = m === "rapid" && k === "due"
+      ? "Every due rapid pick is on a lower-yield topic or comes from another block, and the header is set to High yield only. Switch it to All yields to review them."
+      : "The " + (P ? "questions" : SP ? "images" : "rapid picks") + " that match are all on lower-yield topics, and the header is set to High yield only. Switch it to All yields to include them."; }
+  const alts = (P ? ["missed", "unseen", "all"] : SP ? ["unseen", "all"] : ["due", "linked", "all"]).filter(x => x !== k)
+    .map(x => [x, setCount(m, x, ev)]).filter(a => a[1].n > 0).slice(0, 2);
+  return '<div class="call step setempty" data-verdict><span class="cl">' + esc(names[k] || "This set") + ': nothing to serve</span>'
+    + (txt || "Nothing matches.") + (alts.length ? '<div class="btnrow" style="margin-top:12px"><span>Try instead:</span>'
+    + alts.map(a => '<button class="btn sm" data-' + (P ? "ps" : SP ? "sp" : "rf") + '="' + a[0] + '">' + esc(names[a[0]]) + ' ' + a[1].txt + '</button>').join("")
+    + '</div>' : "") + '</div>';
+}
 function startSet(k){
-  let set;
-  if(k==="due"){
-    const now = Date.now();
-    set = QS.filter(q => { const a = S.qs[q.id]; return a && a.box > 0 && a.due && a.due <= now; })
-      .sort((a,b) => S.qs[a.id].due - S.qs[b.id].due).slice(0,20);
-    if(!set.length) set = shuffle(QS).slice(0,20);
-  }
-  else if(k==="weak"){ const ev = diagnose().filter(e=>e.flag);
-    const cs = new Set((ev.length?ev:diagnose().slice(0,5)).map(e=>e.t.id));
-    set = shuffle(QS.filter(q=>cs.has(q.c) && (!S.qs[q.id] || !S.qs[q.id].ok))).slice(0,20); }
-  else if(k==="verify") set = shuffle(QS.filter(q=>{ const a=S.qs[q.id];
-    return a && a.ok && !a.verified && a.verifyDue && a.verifyDue <= Date.now(); })).slice(0,20);
-  else if(k==="due")    set = shuffle(QS.filter(q=>S.qs[q.id] && !S.qs[q.id].ok)).slice(0,20);
-  else if(k==="unseen") set = shuffle(QS.filter(q=>!S.qs[q.id])).slice(0,20);
-  else set = shuffle(QS);
-  if(S.hiOnly) set = set.filter(q => { const T = findT(q.c); return !!T && yv(T) === "hi"; });
-  if(!set.length) set = shuffle(QS).slice(0,20);
+  const set = practiceSet(k);
+  if(!set.length){ SET_EMPTY = {m:"practice", k}; S.mode = "practice"; S.ps = null; save(); render();
+    window.scrollTo({top:0,behavior:"instant"}); return; }
+  SET_EMPTY = null;
   S.mode="practice"; S.ps = {set:set.map(q=>q.id), i:0, src:k, t0:Date.now()}; save(); render();
   window.scrollTo({top:0,behavior:"instant"});
 }
@@ -4432,17 +5259,21 @@ function wirePractice(app){
         return {r, hits: kw.filter(x => want.has(x)).length};
       }).filter(x => x.hits > 0).sort((a,b) => b.hits - a.hits).slice(0, 6).map(x => x.r.i);
       const add = scored.length ? scored : sameC.slice(0, 4).map(r => r.i);
+      /* P2.V F8 follow-up - the notice reports what this miss queued (add, at most 6, or 4 with
+         no keyword match) and how many were new; it used to print every rapid item on the topic */
+      const had = new Set(S.linked||[]);
       S.linked = Array.from(new Set((S.linked||[]).concat(add)));
-    }
+      ps.linkQ = {id:q.id, n:add.length, fresh:add.filter(i => !had.has(i)).length};
+    } else ps.linkQ = null;
     /* P2.3: the confidence is no longer wiped after each answer. It carries to the next
        question as a visible default ("Same as the last question - change it ..."), so a
        set can be answered at the keyboard and the rating is still recorded every time. */
-    bumpDay(1); save(); render();
+    bumpDay(0); save(); render();   /* P2.V F5: minutes are measured (noteActive), not a flat 1 */
   });
   const nx = el("qnext");
   if(nx) nx.onclick = ()=>{
     const ps = S.ps;
-    if(ps.i + 1 < ps.set.length){ ps.i++; ps.pick=null; ps.shown=false; ps.open=null; ps.confKept=!!ps.conf; ps.t0=Date.now(); save(); render(); window.scrollTo({top:0,behavior:"instant"}); }
+    if(ps.i + 1 < ps.set.length){ ps.i++; ps.pick=null; ps.shown=false; ps.open=null; ps.linkQ=null; ps.confKept=!!ps.conf; ps.t0=Date.now(); save(); render(); window.scrollTo({top:0,behavior:"instant"}); }
     else finishSet();
   };
   if(S.ps && !S.ps.t0) S.ps.t0 = Date.now();
@@ -4510,6 +5341,7 @@ function practiceKeydown(e){
 document.addEventListener("keydown", practiceKeydown);
 function startDrill(id){
   const d = DRILLS.find(x=>x.id===id); if(!d) return;
+  SET_EMPTY = null;   /* P2.6: every set start clears the empty-set notice */
   S.mode = "drill";
   S.dr = d.kind==="order" ? {id, pool:shuffle(d.items.map((_,i)=>i)), placed:[], checked:false}
                           : {id, order:shuffle(d.items.map((_,i)=>i)), i:0, missed:[]};
@@ -4524,34 +5356,48 @@ function wireDrill(app){
     if(k==="__again"){ startDrill(S.dr.id); return; }
     startDrill(k);
   });
-  app.querySelectorAll("[data-sort]").forEach(b => b.onclick = ()=>{
-    const st = S.dr, d = DRILLS.find(x=>x.id===st.id);
-    if(!d || st.i>=st.order.length){ render(); return; }
-    const ix = st.order[st.i], side = b.dataset.sort, ok = d.items[ix][1] === side;
-    (st.hist=st.hist||[]).push({ix,pick:side,ok,ts:Date.now()});
-    if(!ok) (st.missed = st.missed || []).push(ix);
-    const why = (DRILL_WHY[d.id]||{})[d.items[ix][0]];
-    st.last = {ok, msg: (ok ? "<b>"+esc(d.items[ix][0])+"</b> does belong to "+(side==="a"?esc(d.a):esc(d.bb))+"."
-      : "<b>"+esc(d.items[ix][0])+"</b> belongs to <b>"+(d.items[ix][1]==="a"?esc(d.a):esc(d.bb))+"</b>.")
-      + (why ? " "+why : "")};
-    st.i++;
-    if(st.i >= st.order.length){ const prev=S.drills[d.id]||{}; S.drills[d.id] = {missed: st.missed||[], done:true, ts:Date.now(), n:(prev.n||0)+1,hist:(prev.hist||[]).concat(st.hist||[]).slice(-60)}; }
-    bumpDay(0); save(); render();
-  });
-  app.querySelectorAll("[data-sortm]").forEach(b => b.onclick = ()=>{
-    const st=S.dr, d=DRILLS.find(x=>x.id===st.id);
-    if(!d || st.i>=st.order.length){ render(); return; }
-    const ix=st.order[st.i], chosen=b.dataset.sortm;
-    const col=d.cols.find(c=>c.id===d.items[ix][1]), ok=d.items[ix][1]===chosen;
-    (st.hist=st.hist||[]).push({ix,pick:chosen,ok,ts:Date.now()});
+  /* P2.V F21: a pick records the verdict for THIS item (st.last.ix) and names it in the message;
+     the item stays on screen until Next. Focus goes to Next, so Enter moves on, and Next is
+     scrolled into view when the verdict would sit below the fold (a multi item with a photo at
+     400 px; the photo's height arrives after the render, so the scroll is repeated when it
+     loads). On the new item focus lands on the item itself (viewLead), never on a side, so a
+     second Enter cannot answer it unseen. */
+  const drPick = (d, st, pick, right, msg) => {
+    const ix = st.order[st.i], ok = pick === right, why = (DRILL_WHY[d.id]||{})[d.items[ix][0]];
+    (st.hist=st.hist||[]).push({ix,pick,ok,ts:Date.now()});
     if(!ok && !(st.missed||[]).includes(ix)) (st.missed=st.missed||[]).push(ix);
-    const why=(DRILL_WHY[d.id]||{})[d.items[ix][0]];
-    st.last={ok,msg:(ok?`<b>${fmt(d.items[ix][0])}</b> fits ${esc(col.l)}.`:`This belongs to <b>${esc(col.l)}</b>, not ${esc((d.cols.find(c=>c.id===chosen)||{}).l||chosen)}.`)
-      +(why?" "+why:"")};
+    st.last = {ix, pick, ok, msg: msg(ok) + (why ? " "+why : "")};
     st.i++;
     if(st.i>=st.order.length){ const prev=S.drills[d.id]||{}; S.drills[d.id]={missed:st.missed||[],done:true,ts:Date.now(),n:(prev.n||0)+1,hist:(prev.hist||[]).concat(st.hist||[]).slice(-60)}; }
     bumpDay(0); save(); render();
+    const next = el("drnext"), img = app.querySelector(".imgbox img");
+    drFocus(next);
+    const reveal = () => { const n = el("drnext"); if(n) n.scrollIntoView({block:"nearest", behavior:"instant"}); };
+    reveal();
+    if(img && !img.complete) img.addEventListener("load", reveal, {once:true});   /* the photo's height arrives late */
+  };
+  app.querySelectorAll("[data-sort]").forEach(b => b.onclick = ()=>{
+    const st = S.dr, d = DRILLS.find(x=>x.id===st.id);
+    if(!d || drJudged(d, st) >= 0 || st.i>=st.order.length){ render(); return; }
+    const it = d.items[st.order[st.i]], side = b.dataset.sort, nm = "<b>\u201c"+esc(it[0])+"\u201d</b>";
+    const sideL = x => x==="a" ? esc(d.a) : esc(d.bb);
+    drPick(d, st, side, it[1], ok => ok ? nm+" does belong to <b>"+sideL(side)+"</b>."
+      : nm+" belongs to <b>"+sideL(it[1])+"</b>, not "+sideL(side)+".");
   });
+  app.querySelectorAll("[data-sortm]").forEach(b => b.onclick = ()=>{
+    const st=S.dr, d=DRILLS.find(x=>x.id===st.id);
+    if(!d || drJudged(d, st) >= 0 || st.i>=st.order.length){ render(); return; }
+    const it=d.items[st.order[st.i]], chosen=b.dataset.sortm, nm=`<b>\u201c${fmt(it[0])}\u201d</b>`;
+    const colL = id => esc((d.cols.find(c=>c.id===id)||{}).l||id);
+    drPick(d, st, chosen, it[1], ok => ok ? `${nm} fits <b>${colL(chosen)}</b>.`
+      : `${nm} belongs to <b>${colL(it[1])}</b>, not ${colL(chosen)}.`);
+  });
+  const nx = el("drnext");
+  if(nx) nx.onclick = ()=>{
+    const st = S.dr; if(!st) return;
+    st.last = null; S.scroll.drill = 0; save(); render();
+    window.scrollTo({top:0,behavior:"instant"});
+  };
   app.querySelectorAll("[data-dwhy]").forEach(b => b.onclick = ()=>drToggleWhy(b));
   app.querySelectorAll("[data-op]").forEach(b => b.onclick = ()=>{
     const st = S.dr, ix = +b.dataset.op;
@@ -4568,23 +5414,16 @@ function wireDrill(app){
     bumpDay(0); save(); render();
   };
 }
+function drFocus(n){ if(n) try{ n.focus({preventScroll:true}); }catch(e){} }
 function startRapid(k){
-  let pool;
-  if(k==="linked"){ const set = new Set(S.linked||[]); pool = RAPID.filter(r => set.has(r.i)); }
-  else if(k==="due"){
-    /* Most overdue first, drawn from EVERY block, not just this one. */
-    HUBCACHE = null;
-    const ids = hubDue().map(it=>it.i).slice(0,40);
-    if(ids.length){ S.mode="rapid"; S.rf = {set:ids, i:0, t0:Date.now(), src:k}; save(); render();
-      window.scrollTo({top:0,behavior:"instant"}); return; }
-    pool = RAPID.filter(r=>isDue(S.rapid[r.i]));
-  }
-  else if(k==="weak"){ const cs = new Set(diagnose().filter(e=>e.flag).map(e=>e.t.id));
-    pool = RAPID.filter(r=>cs.has(r.c)); if(!pool.length) pool = RAPID.filter(r=>isDue(S.rapid[r.i])); }
-  else pool = RAPID;
-  if(S.hiOnly) pool = pool.filter(r => { const T = findT(r.c); return !!T && yv(T) === "hi"; });
-  if(!pool.length) pool = RAPID;
-  S.mode="rapid"; S.rf = {set:shuffle(pool).slice(0,40).map(r=>r.i), i:0, t0:Date.now(), src:k}; save(); render();
+  /* Due: most overdue first, drawn from EVERY block (the hub), not just this one. P2.3: the
+     sets are rapidSet() (see practicePool); an empty one is reported, never filled at random. */
+  if(k === "due") HUBCACHE = null;
+  const ids = rapidSet(k);
+  if(!ids.length){ SET_EMPTY = {m:"rapid", k}; S.mode = "rapid"; S.rf = null; save(); render();
+    window.scrollTo({top:0,behavior:"instant"}); return; }
+  SET_EMPTY = null;
+  S.mode="rapid"; S.rf = {set:ids, i:0, t0:Date.now(), src:k}; save(); render();
   window.scrollTo({top:0,behavior:"instant"});
 }
 function wireRapid(app){
@@ -4630,7 +5469,8 @@ function wireRapid(app){
     else{
       if(rf.src && rf.src.startsWith("stage:")) (S.stage[rf.src.slice(6)] = S.stage[rf.src.slice(6)]||{}).rapid = true;
       if(rf.src === "diag"){ const d = PATH.find(x=>x.kind==="diag");
-        if(d) S.stage[d.id] = {done:true, n:rf.set.length, total:rf.set.length}; }
+        if(d) S.stage[d.id] = {done:true, n:rf.set.length, total:rf.set.length};
+        PATH_NOTE = diagNote(rf.set); }
       const back = (rf.src && rf.src.startsWith("stage:")) || rf.src === "diag";
       S.rf = null; S.mode = back ? "path" : "rapid"; save(); render();
     }
@@ -4667,11 +5507,17 @@ function rapidKeydown(e){
   }
 }
 document.addEventListener("keydown", rapidKeydown);
+/* P2.4 (F20, reopened 2026-09-28): serves spotPool(k), the pool its button and the plan's image
+   row count. An empty set is reported (SET_EMPTY, the P2.3 notice), never refilled with every image. */
 function startSpot(k){
-  let keys = Object.keys(IMGS);
-  if(k==="unseen") keys = keys.filter(x=>!S.spot[x]);
-  if(!keys.length) keys = Object.keys(IMGS);
-  S.mode="spot"; S.sp = {set:shuffle(keys), i:0}; buildSpotOpts(); save(); render();
+  if(k !== "unseen") k = "all";
+  const set = shuffle(spotPool(k));
+  S.mode = "spot";
+  if(!set.length){ SET_EMPTY = {m:"spot", k}; S.sp = null; save(); render();
+    window.scrollTo({top:0,behavior:"instant"}); return; }
+  SET_EMPTY = null;
+  S.sp = {set, i:0, src:k, name:spName(k)}; buildSpotOpts(); save(); render();
+  window.scrollTo({top:0,behavior:"instant"});
 }
 function wireSpot(app){
   app.querySelectorAll("[data-sp]").forEach(b => b.onclick = ()=>{
@@ -4932,6 +5778,10 @@ load();
   if(bad.length) console.warn("P5.2: concept homes out of date: " + bad.join(", "));
 })();
 /* @region engine.threads (ENGINE, engine) */
+/* P2.V F25 - the listing rule, in one place. conceptThreads() applies it and returns it
+   (th.rule), threadsHTML() states it from there, and the page's self-test checks the
+   rendered sentence against it, so the words can never drift from the rule again. */
+const THREAD_MIN_MISSES = 3, THREAD_MIN_TOPICS = 2;
 function conceptThreads(){
   /* Attempts and misses for one item always come from the same source -- the
      stored hist where there is one, the summary record otherwise -- so the
@@ -5005,42 +5855,74 @@ function conceptThreads(){
        still cannot reach the bar at any spread. A mixed record still needs 5. */
     const need = e.miss === e.att ? Math.max(3, 6 - tops.length) : 5;
     const alias = isAlias(k, tops);
+    const strong = !alias && e.att >= need && rate >= 0.33 && (e.miss - exp) >= 1.3*sd;
+    /* P2.V F25 - which part of the promotion test a listed row failed, so the row can say
+       that and not a blanket "no worse than your average" (a 30%-wrong idea for a 5%-wrong
+       student is worse than average; it is only under the one-third bar). */
+    const reason = strong ? "" : alias ? "alias" : e.att < need ? "few" : rate < 0.33 ? "rate"
+                 : rate <= base ? "average" : "chance";
     return {tag:k, home:CONCEPT_HOME[k], miss:e.miss, att:e.att, rate, base, exp, score,
-            topics:tops, byTopic:e.topics, channels:chans, need, alias,
-            strong: !alias && e.att >= need && rate >= 0.33 && (e.miss - exp) >= 1.3*sd,
-            floor: e.miss >= 3 && tops.length >= 2}; });
+            topics:tops, byTopic:e.topics, channels:chans, need, alias, strong, reason,
+            floor: e.miss >= THREAD_MIN_MISSES && tops.length >= THREAD_MIN_TOPICS}; });
   const listed = rows.filter(r => r.floor).sort((a, b) => b.score - a.score);
+  /* every idea missed at least once that is not yet listed, closest first */
+  const pending = rows.filter(r => !r.floor && r.miss > 0).sort((a, b) => b.miss - a.miss || b.score - a.score);
   return {rows:listed, strong:listed.filter(r => r.strong), thin:listed.filter(r => !r.strong),
-          base, misses:totMiss, attempts:totAtt,
-          near: rows.filter(r => !r.floor && r.miss > 0).sort((a, b) => b.miss - a.miss || b.score - a.score)[0] || null};
+          base, misses:totMiss, attempts:totAtt, rule:{miss:THREAD_MIN_MISSES, topics:THREAD_MIN_TOPICS},
+          pending, near: pending[0] || null};
 }
 function threadsHTML(th){
   /* Every row ends somewhere the student can actually go: a button that opens
      the topic where the idea is taught, the exact section inside it named in
      words, and where one exists a button that opens the figure full size. */
-  const head = `<div class="sectiontitle" id="threadsec" style="margin-top:34px"><h3>Concept threads</h3>
-    <span class="st2">One idea, missed in more than one topic. Every list above can only name topics, so a student
-    who keeps failing the same reasoning in four places is told about four topics and never about the reasoning.
-    Each thread names the idea, where it has been going wrong, and the one place it is taught.
-    A thread is only promoted once it is further above your own average than chance explains.</span></div>`;
-  if(!th.rows.length){
-    const why = !th.misses
-      ? "Nothing has been missed yet, so there is no thread to follow. This fills in the moment the same idea goes wrong in two different topics."
-      : "Every miss so far sits inside a single topic &mdash; no idea has failed in two places yet, so there is nothing to thread. The topic lists above are the better guide today."
-        + (th.near ? " Closest is <b>" + esc(th.near.home.l) + "</b>, missed " + th.near.miss
-            + (th.near.miss === 1 ? " time in " : " times in ")
-            + esc((findT(th.near.topics[0]) || {t:"one topic"}).t) + "." : "");
-    return head + '<div class="empty">' + why + '</div>';
-  }
+  /* P2.V F25 - every sentence here is read off what conceptThreads() computed: the rule
+     comes from th.rule, a row or the near miss names EVERY topic the idea was missed in
+     with its own count, and the empty state no longer claims "every miss sits inside a
+     single topic" (it printed that, and one topic, for an idea missed once in each of
+     two topics). The self-test (extra.conceptThreads) checks this text against
+     conceptThreads() on seeded misses. */
+  const R = th.rule || {miss:THREAD_MIN_MISSES, topics:THREAD_MIN_TOPICS};
   const list = c => c.length <= 1 ? (c[0] || "") : c.slice(0, -1).join(", ") + " and " + c[c.length - 1];
   /* P5.V FIX 6: " misses in N attempts" was emitted unconditionally one clause
      after the author had handled exactly this for attempt/attempts, so a row
      could read "about 1 misses in 5 attempts". One helper now pluralises both. */
   const plur = (n, w, many) => n + " " + (n === 1 ? w : (many || w + "s"));
+  const topicT = id => esc((findT(id) || {t:"?"}).t);
+  const where = r => list(r.topics.map(id => topicT(id) + " (" + r.byTopic[id] + ")"));
+  const ruleTxt = "missed at least " + R.miss + " times across at least " + R.topics + " different topics";
+  const head = `<div class="sectiontitle" id="threadsec" style="margin-top:34px"><h3>Concept threads</h3>
+    <span class="st2">One idea, missed in more than one topic. Every list above can only name topics, so a student
+    who keeps failing the same reasoning in four places is told about four topics and never about the reasoning.
+    Each thread names the idea, every topic it has been missed in, and where it is taught.
+    An idea is listed once it has been ${ruleTxt}, and promoted only once it is further above your own average
+    than chance explains.</span></div>`;
+  if(!th.rows.length){
+    const n = th.near;
+    let why;
+    if(!th.misses) why = "No question or rapid pick has been missed yet, so there is no thread to follow."
+      + " An idea becomes a thread once it has been " + ruleTxt + ".";
+    else if(!n) why = "None of the misses so far is on an item that carries one of the ideas this section tracks,"
+      + " so there is no thread to follow. An idea becomes a thread once it has been " + ruleTxt + ".";
+    else {
+      /* what the closest idea still needs under the rule: more misses, and a miss in a new topic if it has
+         failed in fewer topics than the rule asks for */
+      const moreT = Math.max(0, R.topics - n.topics.length), need = Math.max(R.miss - n.miss, moreT, 1);
+      const other = n.topics.length === 1 ? "a topic other than " + topicT(n.topics[0])
+                  : moreT === 1 ? "another topic" : moreT + " topics it has not been missed in yet";
+      const after = !moreT ? ", in any topic"
+                  : need === moreT ? " in " + other
+                  : ", at least " + (moreT === 1 ? "one" : moreT) + " of them in " + other;
+      why = "No idea has been " + ruleTxt + " yet, so there is no thread to follow. Closest is <b>" + esc(n.home.l)
+        + "</b>, missed " + plur(n.miss, "time") + ": " + where(n) + ". It becomes a thread after "
+        + plur(need, "more miss", "more misses") + " (" + (n.miss + need) + " in all)" + after
+        + ". Until then the topic lists above are the better guide.";
+    }
+    return '<div id="threads">' + head + '<div class="empty">' + why + '</div></div>';
+  }
+  const TAGS = {alias:"another name for these topics", few:"too few attempts", rate:"under a third wrong",
+                average:"no worse than your average", chance:"within chance of your average"};
   const row = r => { const H = r.home, ht = findT(H.t) || {t:"?"};
     const seen = !!(S.topics[H.t] || {}).read, verb = seen ? "Re-read" : "Read";
-    const where = r.topics.slice(0, 3).map(id => esc((findT(id) || {t:"?"}).t) + " (" + r.byTopic[id] + ")").join(", ")
-                + (r.topics.length > 3 ? " and " + (r.topics.length - 3) + " more" : "");
     /* P5.V FIX 1: the second section, for tags whose items are taught in two
        places. Inside the same topic it is named as a section, because the
        Re-read button already opens that topic; a different topic is named in
@@ -5049,34 +5931,40 @@ function threadsHTML(th){
     const alsoTxt = !A ? "" : A.t === H.t
       ? ` Then the section &ldquo;${esc(A.h)}&rdquo; in the same topic.`
       : ` Then <span style="color:var(--ink);font-weight:600">${esc(at.t)}</span> &mdash; the section &ldquo;${esc(A.h)}&rdquo;.`;
+    const pc = x => Math.round(x*100) + "%";
+    const note = r.strong
+      ? " &middot; your own average predicts about " + plur(Math.round(r.exp), "miss", "misses") + " in "
+        + plur(r.att, "attempt") + ", and you have " + r.miss
+      : r.reason === "alias" ? " &middot; every item carrying this idea sits in those topics and it covers nearly all of them,"
+        + " so this row is those topics under another name and the lists above already have it &mdash; what it"
+        + " adds is where to read"
+      : r.reason === "few" ? " &middot; only " + plur(r.att, "attempt") + " so far and promoting it needs " + r.need
+        + ", so this is a lead rather than a verdict"
+      : r.reason === "rate" ? " &middot; " + pc(r.rate) + " of your attempts on it were wrong, under the third a thread"
+        + " needs before it is promoted"
+      : r.reason === "average" ? " &middot; you miss " + pc(r.base) + " of everything and " + pc(r.rate)
+        + " of this idea, so it is not out of line"
+      : " &middot; you miss " + pc(r.base) + " of everything and " + pc(r.rate) + " of this idea, a gap that chance"
+        + " can still explain at " + plur(r.att, "attempt");
     return `<div class="witem">
       <span><span class="wt">${esc(H.l)} <span class="tag ${r.strong ? "crit" : "ghost"}">${r.strong
-          ? r.topics.length + " topics &middot; " + Math.round(r.rate*100) + "% wrong"
-          : r.alias ? "another name for these topics"
-          : r.att < r.need ? "too few attempts" : "no worse than your average"}</span></span>
-        <span class="wd">Missed <b>${r.miss}</b> of ${r.att} ${r.att === 1 ? "attempt" : "attempts"} on this idea
-          &middot; ${where} &middot; ${list(r.channels)}${r.strong
-            ? " &middot; your own average predicts about " + plur(Math.round(r.exp), "miss", "misses") + " in "
-              + plur(r.att, "attempt") + ", and you have " + r.miss
-            : r.alias ? " &middot; every item carrying this idea sits in those topics and it covers nearly all of them,"
-              + " so this row is those topics under another name and the lists above already have it &mdash; what it"
-              + " adds is where to read"
-            : r.att < r.need ? " &middot; only " + plur(r.att, "attempt") + " so far, so this is a lead rather than a verdict"
-              : " &middot; you miss " + Math.round(r.base*100) + "% of everything, so this is not yet out of line"}.
+          ? r.topics.length + " topics &middot; " + pc(r.rate) + " wrong" : TAGS[r.reason]}</span></span>
+        <span class="wd">Missed <b>${r.miss}</b> of ${plur(r.att, "attempt")} on this idea: ${where(r)}
+          &middot; across ${list(r.channels)}${note}.
           <br>${verb} <span style="color:var(--ink);font-weight:600">${esc(ht.t)}</span> &mdash; the section &ldquo;${esc(H.h)}&rdquo;${
           H.f ? ", then the diagram that goes with it" : ""}.${alsoTxt}</span></span>
       <span class="frow"><button class="btn sm gho" data-t="${escA(H.t)}">${verb}</button>${
         A && A.t !== H.t ? '<button class="btn sm gho" data-t="' + escA(A.t) + '">Also read</button>' : ""}${
         H.f ? '<button class="btn sm gho" data-zoomfig="' + escA(H.f) + '">Diagram</button>' : ""}</span>
     </div>`; };
-  return head
+  return '<div id="threads">' + head
     + (th.strong.length ? `<div class="wlist">${th.strong.map(row).join("")}</div>` : "")
     + (th.thin.length ? `<div class="call" style="margin-top:16px"><span class="cl">Not yet a pattern</span>
-        ${th.strong.length ? "These also cross" : "These cross"} two topics, but they rest on too few attempts, they are
-        no further above your own average than chance explains, or the idea lives only in the topics it fired on, so
-        the lists above already say it. Answer a few more on them before rearranging a week
-        around them.</div>
-        <div class="wlist">${th.thin.map(row).join("")}</div>` : "");
+        ${th.strong.length ? "These also meet" : "These meet"} the listing rule, but each fails at least one part of the
+        test for promotion, and its row names one: too few attempts, under a third of them wrong, no further above your own average
+        than chance explains, or an idea that lives only in the topics it fired on, so the lists above already say it.
+        Answer a few more on them before rearranging a week around them.</div>
+        <div class="wlist">${th.thin.map(row).join("")}</div>` : "") + '</div>';
 }
 /* @region engine.boot-render (ENGINE, engine) */
 /* P2.2 (R10) - the audit snapshot is taken after every load-time transform and after

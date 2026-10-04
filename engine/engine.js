@@ -3248,11 +3248,37 @@ function drToggleWhy(b){
   const w = toggleCtlWhy(b);
   if(w && S.dr) (S.dr.open = S.dr.open || {})[w.id] = !w.hidden;
 }
+/* P2.V F21: a sort or multi pick used to move straight on, so its verdict was drawn under the
+   NEXT item and read as a claim about it ("Mid-cycle pain" above "This belongs to Luteal").
+   Now a pick keeps its item on screen: the sides come back disabled with the pick and the right
+   side marked, the verdict under them names the item, and the next item appears only when the
+   student presses Next. drJudged gives the item that verdict is about (st.last.ix; order[i-1]
+   for a verdict saved before this change), or -1 while an item waits for its answer. */
+function drJudged(d, st){
+  if(!d || !st || !st.last || !Array.isArray(st.order) || !(st.i >= 1 && st.i <= st.order.length)) return -1;
+  const ix = st.last.ix;
+  return Number.isInteger(ix) && ix >= 0 && ix < d.items.length ? ix : st.order[st.i - 1];
+}
+/* one side of the running board: a live button (attr = data-sort / data-sortm), or, once the
+   item is answered, a disabled one that says in words whether it was the pick and the right side */
+function drSideBtn(attr, val, label, last, right){
+  if(!last) return `<button class="btn" ${attr}="${escA(val)}">${label}</button>`;
+  const pick = last.pick === val, ok = val === right;
+  const note = pick && ok ? "your pick, right" : pick ? "your pick" : ok ? "right answer" : "";
+  return `<button class="btn${ok ? " dright" : pick ? " dwrong" : ""}" disabled>${label}${note ? '<span class="dres">' + note + "</span>" : ""}</button>`;
+}
+/* the verdict for the item on screen, then Next (or the results after the last item) */
+function drVerdictHTML(d, st, noLabel){
+  const last = st.i >= st.order.length;
+  return `<div class="call ${st.last.ok?"mnem":"trap"}" data-verdict style="margin-top:18px"><span class="cl">${st.last.ok?"Correct":noLabel}</span>${fmt(st.last.msg||"")}</div>
+    <div class="btnrow"><button class="btn pri" id="drnext">${last ? "See the results" : "Next item"}</button></div>
+    ${deepReviewHTML(d.c,"Refresher: "+((findT(d.c)||{}).t||"this topic"))}`;
+}
 /* P2.V K13: the column count rides in --dcols (not an inline grid-template-columns), so the
    .dmulti rule in the shell can drop the end screen and the board to one column on a phone */
 function multiDrillHTML(d){
   const st=S.dr, items=st.order||[], i=st.i||0;
-  if(i>=items.length){
+  if(i>=items.length && drJudged(d,st)<0){
     const missed=st.missed||[];
     /* P2.V F31: the end screen replaced the last item's verdict and said nothing to #live; its score is the verdict now, and its heading takes focus */
     return `<div class="panel"><div class="sectiontitle"><h3 data-viewlead>${esc(d.t)}</h3><span class="st2" data-verdict>${items.length-missed.length} of ${items.length} correct</span></div>
@@ -3262,17 +3288,18 @@ function multiDrillHTML(d){
       ${deepReviewHTML(d.c,"Open the visual comparison and complete lesson")}
       <div class="btnrow"><button class="btn pri" data-dr="__again">Run it again</button><button class="btn" data-dr="__quit">Back to drills</button></div></div>`;
   }
-  const ix=items[i], it=d.items[ix];
-  return `<div class="toolbar"><span class="tl">${esc(d.t)}</span><span class="mono">${i+1} / ${items.length}</span><span style="flex:1"></span>${flagCtrl("drill", d.id+"#"+ix)}<button class="btn sm gho" data-dr="__quit">End drill</button></div>
+  /* P2.V F21: an answered item stays on screen with its verdict until Next (drJudged) */
+  const jx=drJudged(d,st), ix=jx>=0?jx:items[i], it=d.items[ix];
+  return `<div class="toolbar"><span class="tl">${esc(d.t)}</span><span class="mono">${jx>=0?i:i+1} / ${items.length}</span><span style="flex:1"></span>${flagCtrl("drill", d.id+"#"+ix)}<button class="btn sm gho" data-dr="__quit">End drill</button></div>
     <div class="panel" style="max-width:820px;margin:0 auto">${it[2]&&IMGS[it[2]]?`<div class="imgbox" style="max-height:330px;display:flex;align-items:center;justify-content:center;margin-bottom:15px"><img src="${IMGS[it[2]].url}" alt="${escA(IMGS[it[2]].n||"Image to classify")}" style="max-height:330px;width:auto;max-width:100%"></div>`:""}<div class="sortitem">${fmt(it[0])}</div>
-      <div class="sortbtns dmulti" style="--dcols:${Math.min(3,d.cols.length)}">${d.cols.map(c=>`<button class="btn" data-sortm="${c.id}">${esc(c.l)}</button>`).join("")}</div>
+      <div class="sortbtns dmulti" style="--dcols:${Math.min(3,d.cols.length)}">${d.cols.map(c=>drSideBtn("data-sortm", c.id, esc(c.l), jx>=0?st.last:null, it[1])).join("")}</div>
       <!-- P1.3: the sort result was silent - a reader tapped a side and heard nothing.
            data-verdict sends this line to the live region. -->
-      ${st.last?`<div class="call ${st.last.ok?"mnem":"trap"}" data-verdict style="margin-top:18px"><span class="cl">${st.last.ok?"Correct":"Not this one"}</span>${fmt(st.last.msg)}</div>${deepReviewHTML(d.c,"Refresher: "+((findT(d.c)||{}).t||"this topic"))}`:""}</div>`;
+      ${jx>=0?drVerdictHTML(d,st,"Not this one"):""}</div>`;
 }
 function sortDrillHTML(d){
   const st = S.dr, i = st.i, items = st.order;
-  if(i >= items.length){
+  if(i >= items.length && drJudged(d, st) < 0){
     const missed = st.missed || [];
     return `<div class="panel"><div class="sectiontitle"><h3 data-viewlead>${esc(d.t)}</h3>
         <span class="st2" data-verdict>${items.length-missed.length} of ${items.length} sorted correctly</span></div>
@@ -3290,18 +3317,18 @@ function sortDrillHTML(d){
       <div class="btnrow"><button class="btn pri" data-dr="__again">Run it again</button>
         <button class="btn" data-dr="__quit">Back to drills</button></div></div>`;
   }
-  const ix = items[i], it = d.items[ix];
+  /* P2.V F21: an answered item stays on screen with its verdict until Next (drJudged) */
+  const jx = drJudged(d, st), ix = jx >= 0 ? jx : items[i], it = d.items[ix], last = jx >= 0 ? st.last : null;
   return `<div class="toolbar"><span class="tl">${esc(d.t)}</span>
-      <span class="mono" style="font-size:12px;color:var(--ink-3)">${i+1} / ${items.length}</span>
+      <span class="mono" style="font-size:12px;color:var(--ink-3)">${jx >= 0 ? i : i+1} / ${items.length}</span>
       <span style="flex:1"></span>${flagCtrl("drill", d.id+"#"+ix)}<button class="btn sm gho" data-dr="__quit">End drill</button></div>
     <div class="panel" style="max-width:660px;margin:0 auto">
       <div class="sortitem">${fmt(it[0])}</div>
       <div class="sortbtns">
-        <button class="btn" data-sort="a">${esc(d.a)}</button>
-        <button class="btn" data-sort="b">${esc(d.bb)}</button></div>
+        ${drSideBtn("data-sort", "a", esc(d.a), last, it[1])}
+        ${drSideBtn("data-sort", "b", esc(d.bb), last, it[1])}</div>
       <!-- P1.3: same silent feedback in the two-way sort; marked for the live region. -->
-      ${st.last?`<div class="call ${st.last.ok?"mnem":"trap"}" data-verdict style="margin-top:18px">
-        <span class="cl">${st.last.ok?"Correct":"No"}</span>${fmt(st.last.msg)}</div>${deepReviewHTML(d.c,"Refresher: "+((findT(d.c)||{}).t||"this topic"))}`:""}
+      ${jx >= 0 ? drVerdictHTML(d, st, "No") : ""}
     </div>`;
 }
 function orderDrillHTML(d){
@@ -3324,15 +3351,24 @@ function orderDrillHTML(d){
             return `<button class="oitem" data-ounp="${n}"><span class="on">${n+1}</span><span>${fmt(d.items[ix])}</span></button>`;}).join("")
             :'<span style="font-size:13.5px;color:var(--ink-3);padding:6px">Tap steps on the left, in order.</span>'}</div></div>
       </div>
+      <!-- P1.3: the order drill verdict was silent for the same reason as the sorts.
+           P2.V F21: it now names every step that is out of place and where it belongs (the
+           steps themselves said so only by color), and it sits right under the board it judges,
+           above the buttons. -->
+      ${checked?`<div class="call ${st.perfect?"mnem":"trap"}" data-verdict style="margin-top:18px">
+        <span class="cl">${st.perfect?"Exactly right":"Not the real order"}</span>${orderVerdictText(d, placed)} ${fmt(d.key)}</div>`:""}
       <div class="btnrow" style="margin-top:18px">
         ${checked?`<button class="btn pri" data-dr="__again">Try again</button>
                    <button class="btn" data-dr="__quit">Back to drills</button>`
                  :`<button class="btn acc" id="ocheck"${placed.length!==d.items.length?" disabled":""}>Check the sequence</button>`}
       </div>
-      <!-- P1.3: the order drill verdict was silent for the same reason as the sorts. -->
-      ${checked?`<div class="call ${st.perfect?"mnem":"trap"}" data-verdict style="margin-top:18px">
-        <span class="cl">${st.perfect?"Exactly right":"Not the real order"}</span>${fmt(d.key)}</div>`:""}
     </div>`;
+}
+function orderVerdictText(d, placed){
+  const off = placed.map((ix, n) => ix === n ? null : [ix, n]).filter(Boolean);
+  if(!off.length) return `All ${placed.length} steps are in order.`;
+  return `${off.length} of ${placed.length} steps are out of place: `
+    + off.map(([ix, n]) => `&ldquo;${fmt(d.items[ix])}&rdquo; belongs at step ${ix+1}, not ${n+1}`).join("; ") + ".";
 }
 
 /* @region engine.view-rapid-banner (ENGINE, engine) */
@@ -4088,9 +4124,16 @@ function screenContext(){
     const d = DRILLS.find(x=>x.id===S.dr.id), st = S.dr;
     /* the rule is on screen only on the end screen (order: once checked); until then the tutor
        gets what the student sees: the item or the steps, never a side, a position or the rule */
-    const over = d && (d.kind === "order" ? !!st.checked : (st.i||0) >= (st.order||[]).length);
+    /* P2.V F21: an answered item stays on screen, with its verdict, until Next (drJudged); the
+       tutor is given that item and that verdict, as it is for an answered question or image */
+    const jx = d && d.kind !== "order" ? drJudged(d, st) : -1;
+    const over = d && (d.kind === "order" ? !!st.checked : (st.i||0) >= (st.order||[]).length && jx < 0);
     if(d && over) return {label:"Drill", detail:d.t, text:"Discrimination drill: "+d.t+
       ". The student has finished this run and sees the result.\nKEY DISCRIMINATOR: "+stripTags(d.key||"")};
+    if(d && jx >= 0) return {label:"Drill", detail:d.t, text:"Discrimination drill: "+d.t+
+      ". The student is part-way through a run and has ALREADY ANSWERED the item on screen; its verdict is showing."+
+      "\nSORT INTO: "+(d.kind === "multi" ? (d.cols||[]).map(c=>stripTags(c.l)) : [stripTags(d.a), stripTags(d.bb)]).join(" | ")+
+      "\nITEM ON SCREEN: "+stripTags(d.items[jx][0])+"\nTHE VERDICT THEY SEE: "+stripTags(st.last.msg||"")};
     if(d){ const step = j => stripTags(d.items[j]);
       return {label:"Drill", detail:d.t, lock:"d:"+d.id,
       text:"Discrimination drill: "+d.t+". The student is part-way through a run and has NOT finished it. You have "+
@@ -5313,34 +5356,48 @@ function wireDrill(app){
     if(k==="__again"){ startDrill(S.dr.id); return; }
     startDrill(k);
   });
-  app.querySelectorAll("[data-sort]").forEach(b => b.onclick = ()=>{
-    const st = S.dr, d = DRILLS.find(x=>x.id===st.id);
-    if(!d || st.i>=st.order.length){ render(); return; }
-    const ix = st.order[st.i], side = b.dataset.sort, ok = d.items[ix][1] === side;
-    (st.hist=st.hist||[]).push({ix,pick:side,ok,ts:Date.now()});
-    if(!ok) (st.missed = st.missed || []).push(ix);
-    const why = (DRILL_WHY[d.id]||{})[d.items[ix][0]];
-    st.last = {ok, msg: (ok ? "<b>"+esc(d.items[ix][0])+"</b> does belong to "+(side==="a"?esc(d.a):esc(d.bb))+"."
-      : "<b>"+esc(d.items[ix][0])+"</b> belongs to <b>"+(d.items[ix][1]==="a"?esc(d.a):esc(d.bb))+"</b>.")
-      + (why ? " "+why : "")};
-    st.i++;
-    if(st.i >= st.order.length){ const prev=S.drills[d.id]||{}; S.drills[d.id] = {missed: st.missed||[], done:true, ts:Date.now(), n:(prev.n||0)+1,hist:(prev.hist||[]).concat(st.hist||[]).slice(-60)}; }
-    bumpDay(0); save(); render();
-  });
-  app.querySelectorAll("[data-sortm]").forEach(b => b.onclick = ()=>{
-    const st=S.dr, d=DRILLS.find(x=>x.id===st.id);
-    if(!d || st.i>=st.order.length){ render(); return; }
-    const ix=st.order[st.i], chosen=b.dataset.sortm;
-    const col=d.cols.find(c=>c.id===d.items[ix][1]), ok=d.items[ix][1]===chosen;
-    (st.hist=st.hist||[]).push({ix,pick:chosen,ok,ts:Date.now()});
+  /* P2.V F21: a pick records the verdict for THIS item (st.last.ix) and names it in the message;
+     the item stays on screen until Next. Focus goes to Next, so Enter moves on, and Next is
+     scrolled into view when the verdict would sit below the fold (a multi item with a photo at
+     400 px; the photo's height arrives after the render, so the scroll is repeated when it
+     loads). On the new item focus lands on the item itself (viewLead), never on a side, so a
+     second Enter cannot answer it unseen. */
+  const drPick = (d, st, pick, right, msg) => {
+    const ix = st.order[st.i], ok = pick === right, why = (DRILL_WHY[d.id]||{})[d.items[ix][0]];
+    (st.hist=st.hist||[]).push({ix,pick,ok,ts:Date.now()});
     if(!ok && !(st.missed||[]).includes(ix)) (st.missed=st.missed||[]).push(ix);
-    const why=(DRILL_WHY[d.id]||{})[d.items[ix][0]];
-    st.last={ok,msg:(ok?`<b>${fmt(d.items[ix][0])}</b> fits ${esc(col.l)}.`:`This belongs to <b>${esc(col.l)}</b>, not ${esc((d.cols.find(c=>c.id===chosen)||{}).l||chosen)}.`)
-      +(why?" "+why:"")};
+    st.last = {ix, pick, ok, msg: msg(ok) + (why ? " "+why : "")};
     st.i++;
     if(st.i>=st.order.length){ const prev=S.drills[d.id]||{}; S.drills[d.id]={missed:st.missed||[],done:true,ts:Date.now(),n:(prev.n||0)+1,hist:(prev.hist||[]).concat(st.hist||[]).slice(-60)}; }
     bumpDay(0); save(); render();
+    const next = el("drnext"), img = app.querySelector(".imgbox img");
+    drFocus(next);
+    const reveal = () => { const n = el("drnext"); if(n) n.scrollIntoView({block:"nearest", behavior:"instant"}); };
+    reveal();
+    if(img && !img.complete) img.addEventListener("load", reveal, {once:true});   /* the photo's height arrives late */
+  };
+  app.querySelectorAll("[data-sort]").forEach(b => b.onclick = ()=>{
+    const st = S.dr, d = DRILLS.find(x=>x.id===st.id);
+    if(!d || drJudged(d, st) >= 0 || st.i>=st.order.length){ render(); return; }
+    const it = d.items[st.order[st.i]], side = b.dataset.sort, nm = "<b>\u201c"+esc(it[0])+"\u201d</b>";
+    const sideL = x => x==="a" ? esc(d.a) : esc(d.bb);
+    drPick(d, st, side, it[1], ok => ok ? nm+" does belong to <b>"+sideL(side)+"</b>."
+      : nm+" belongs to <b>"+sideL(it[1])+"</b>, not "+sideL(side)+".");
   });
+  app.querySelectorAll("[data-sortm]").forEach(b => b.onclick = ()=>{
+    const st=S.dr, d=DRILLS.find(x=>x.id===st.id);
+    if(!d || drJudged(d, st) >= 0 || st.i>=st.order.length){ render(); return; }
+    const it=d.items[st.order[st.i]], chosen=b.dataset.sortm, nm=`<b>\u201c${fmt(it[0])}\u201d</b>`;
+    const colL = id => esc((d.cols.find(c=>c.id===id)||{}).l||id);
+    drPick(d, st, chosen, it[1], ok => ok ? `${nm} fits <b>${colL(chosen)}</b>.`
+      : `${nm} belongs to <b>${colL(it[1])}</b>, not ${colL(chosen)}.`);
+  });
+  const nx = el("drnext");
+  if(nx) nx.onclick = ()=>{
+    const st = S.dr; if(!st) return;
+    st.last = null; S.scroll.drill = 0; save(); render();
+    window.scrollTo({top:0,behavior:"instant"});
+  };
   app.querySelectorAll("[data-dwhy]").forEach(b => b.onclick = ()=>drToggleWhy(b));
   app.querySelectorAll("[data-op]").forEach(b => b.onclick = ()=>{
     const st = S.dr, ix = +b.dataset.op;
@@ -5357,6 +5414,7 @@ function wireDrill(app){
     bumpDay(0); save(); render();
   };
 }
+function drFocus(n){ if(n) try{ n.focus({preventScroll:true}); }catch(e){} }
 function startRapid(k){
   /* Due: most overdue first, drawn from EVERY block (the hub), not just this one. P2.3: the
      sets are rapidSet() (see practicePool); an empty one is reported, never filled at random. */
