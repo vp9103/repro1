@@ -1,0 +1,53 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.5-flash",
+ "key": "rp24_ilc",
+ "image_sha": "37b4bfdbbd372dc9",
+ "at": "2026-10-04 20:29:43",
+ "ann": [
+  {
+   "k": "e",
+   "x": 24.0,
+   "y": 38.0,
+   "rx": 6.0,
+   "ry": 3.0,
+   "rot": -30,
+   "px": 18.0,
+   "py": 38.0,
+   "l": "Single-file rows: Small, round tumor cells line up in single-file rows between collagen bundles. This characteristic 'indian filing' is due to the loss of E-cadherin, a cell-cell adhesion molecule, preventing them from forming cohesive nests or glands."
+  },
+  {
+   "k": "e",
+   "x": 82.0,
+   "y": 32.0,
+   "rx": 7.0,
+   "ry": 7.0,
+   "px": 82.0,
+   "py": 39.0,
+   "l": "Diffuse infiltration of fat: Individual tumor cells and thin cords infiltrate directly between mature adipocytes in the adipose tissue. Because they do not form a cohesive mass or induce a strong desmoplastic response, these tumors are often clinically and mammographically occult."
+  },
+  {
+   "k": "arrow",
+   "x": 54.0,
+   "y": 56.0,
+   "tx": 60.0,
+   "ty": 50.0,
+   "px": 60.0,
+   "py": 50.0,
+   "l": "Small uniform cells: The tumor cells are small, monotonous, and uniform, with round, dark, bland nuclei and very scant cytoplasm. They lack the marked nuclear pleomorphism, prominent nucleoli, and mitotic activity typically seen in invasive ductal carcinoma."
+  }
+ ],
+ "kinds": [
+  "e",
+  "e",
+  "arrow"
+ ],
+ "areaSum": 2.1,
+ "areaMax": 1.5,
+ "findings": [
+  "Single-file rows: small round cells line up one cell wide between collagen bundles, the pattern that results from loss of E-cadherin and cell cohesion.",
+  "Diffuse infiltration of fat: single cells and thin cords spread between fat cells at the upper right without forming a discrete mass, which is why lobular cancer can be missed on exam and mammography.",
+  "Small uniform cells: round, dark, bland nuclei with scant cytoplasm give a monotonous look compared with the pleomorphic cells of ductal carcinoma."
+ ],
+ "adjustments": []
+}

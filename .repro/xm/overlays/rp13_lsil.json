@@ -1,0 +1,64 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.5-flash",
+ "key": "rp13_lsil",
+ "image_sha": "f0131155c718066f",
+ "at": "2026-10-04 20:16:23",
+ "ann": [
+  {
+   "k": "e",
+   "x": 47.0,
+   "y": 48.0,
+   "rx": 7.0,
+   "ry": 7.0,
+   "px": 38.0,
+   "py": 48.0,
+   "l": "Koilocyte: This large squamous cell displays a prominent, sharp perinuclear halo (cleared cytoplasm) and a condensed, dark peripheral rim of cytoplasm. This characteristic cytopathic change is caused by productive HPV infection, defining LSIL."
+  },
+  {
+   "k": "arrow",
+   "x": 48.0,
+   "y": 44.0,
+   "tx": 55.0,
+   "ty": 38.0,
+   "px": 55.0,
+   "py": 38.0,
+   "l": "Nuclear enlargement: The nucleus of the koilocyte is several-fold larger than normal, showing coarse, dark chromatin and an irregular nuclear membrane, reflecting active viral replication and genomic instability."
+  },
+  {
+   "k": "e",
+   "x": 25.5,
+   "y": 70.5,
+   "rx": 5.0,
+   "ry": 5.0,
+   "px": 18.0,
+   "py": 70.5,
+   "l": "Binucleate cell: Two enlarged nuclei sit side-by-side within a single cleared cytoplasmic space. Binucleation is another classic cytopathic effect of HPV infection commonly observed in LSIL."
+  },
+  {
+   "k": "e",
+   "x": 36.0,
+   "y": 26.0,
+   "rx": 6.0,
+   "ry": 6.0,
+   "px": 36.0,
+   "py": 18.0,
+   "l": "Normal squamous cells: These mature cells (pink superficial and blue-green intermediate) have abundant, flat cytoplasm and tiny, round, condensed nuclei. They serve as an internal size benchmark to highlight the abnormal nuclear enlargement in koilocytes."
+  }
+ ],
+ "kinds": [
+  "e",
+  "arrow",
+  "e",
+  "e"
+ ],
+ "areaSum": 3.5,
+ "areaMax": 1.5,
+ "findings": [
+  "Koilocyte: a large squamous cell with an enlarged, irregular nucleus inside a sharp clear perinuclear halo and a dense rim of cytoplasm, the cytopathic effect of productive HPV infection.",
+  "Nuclear enlargement: the koilocyte nucleus is several times larger than the tiny round nuclei of neighboring normal squamous cells, with coarse chromatin and an uneven outline.",
+  "Binucleate cell: two nuclei sit side by side inside a cleared zone of cytoplasm, another common koilocytic change in LSIL.",
+  "Normal comparison cells: pink superficial and blue-green intermediate squamous cells have abundant flat cytoplasm and one small, round, dark nucleus, which sets the size benchmark for the abnormal cells."
+ ],
+ "adjustments": []
+}

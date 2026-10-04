@@ -1,0 +1,52 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.5-flash",
+ "key": "rp15_teratoma",
+ "image_sha": "71325caa9a025fba",
+ "at": "2026-10-04 20:22:58",
+ "ann": [
+  {
+   "k": "arrow",
+   "x": 43.0,
+   "y": 85.0,
+   "tx": 30.0,
+   "ty": 92.0,
+   "px": 30.0,
+   "py": 92.0,
+   "l": "Several well-formed teeth with white enamel crowns project from the specimen, proof that tissue from more than one germ layer has differentiated inside this ovarian germ cell tumor."
+  },
+  {
+   "k": "arrow",
+   "x": 33.0,
+   "y": 33.0,
+   "tx": 18.0,
+   "ty": 33.0,
+   "px": 18.0,
+   "py": 33.0,
+   "l": "A tuft of fine hairs grows from skin-like tissue at the left, because the lining of a dermoid contains skin with hair follicles and sebaceous glands."
+  },
+  {
+   "k": "arrow",
+   "x": 53.0,
+   "y": 60.0,
+   "tx": 70.0,
+   "ty": 55.0,
+   "px": 70.0,
+   "py": 55.0,
+   "l": "The teeth are embedded in a thick, solid piece of the cyst wall, the Rokitansky nodule, where bone, teeth and most solid tissue of a dermoid concentrate."
+  }
+ ],
+ "kinds": [
+  "arrow",
+  "arrow",
+  "arrow"
+ ],
+ "areaSum": 0.0,
+ "areaMax": 0.0,
+ "findings": [
+  "Teeth: several well-formed teeth with white enamel crowns project from the specimen, proof that tissue from more than one germ layer has differentiated inside this ovarian germ cell tumor.",
+  "Hair: a tuft of fine hairs grows from skin-like tissue at the left, because the lining of a dermoid contains skin with hair follicles and sebaceous glands.",
+  "Tooth-bearing nodule: the teeth are embedded in a thick, solid piece of the cyst wall, the Rokitansky nodule, where bone, teeth and most solid tissue of a dermoid concentrate."
+ ],
+ "adjustments": []
+}

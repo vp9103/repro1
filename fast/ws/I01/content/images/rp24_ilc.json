@@ -1,0 +1,31 @@
+{
+ "n": "Invasive lobular carcinoma of the breast",
+ "file": "rp24_ilc.jpg",
+ "dx": "Invasive lobular carcinoma",
+ "wrong": [
+  "Invasive ductal carcinoma (no special type)",
+  "Medullary carcinoma",
+  "Tubular carcinoma",
+  "Metastatic gastric signet-ring cell carcinoma"
+ ],
+ "ww": {
+  "Invasive ductal carcinoma (no special type)": "<b>Invasive ductal carcinoma</b> forms cohesive nests, cords or glands of pleomorphic cells in a desmoplastic stroma. Small, dyscohesive cells strung in single rows between collagen bundles, as here, are typical of lobular carcinoma.",
+  "Medullary carcinoma": "<b>Medullary carcinoma</b>, linked to BRCA1, forms soft, circumscribed syncytial sheets of large high-grade cells with many lymphocytes. This image shows small cells in thin infiltrating rows, not circumscribed sheets.",
+  "Tubular carcinoma": "<b>Tubular carcinoma</b> is built of small, open, well-formed tubules in a desmoplastic stroma and has an excellent outlook. No tubules form here; single cells and thin rows infiltrate the collagen.",
+  "Metastatic gastric signet-ring cell carcinoma": "<b>Metastatic signet-ring carcinoma</b>, usually from the stomach, also infiltrates as single cells and can mimic lobular cancer. Its cells swell with mucin that pushes the nucleus aside, and history and immunostains separate the two."
+ },
+ "look": "Instead of forming a lump, small round cells with scant cytoplasm stream through the pink collagen in single-file rows, one cell wide, and scatter among fat cells on the right. The cells have lost E-cadherin, so they neither stick together nor form glands, which is why lobular cancer can be hard to feel or to see on a mammogram.",
+ "cred": "Nephron · CC BY-SA 3.0 · Wikimedia Commons (resized)",
+ "by": "Nephron",
+ "lic": "CC BY-SA 3.0",
+ "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Lobular_carcinoma_-_intermed_mag.jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Single-file rows: small round cells line up one cell wide between collagen bundles, the pattern that results from loss of E-cadherin and cell cohesion.",
+  "Diffuse infiltration of fat: single cells and thin cords spread between fat cells at the upper right without forming a discrete mass, which is why lobular cancer can be missed on exam and mammography.",
+  "Small uniform cells: round, dark, bland nuclei with scant cytoplasm give a monotonous look compared with the pleomorphic cells of ductal carcinoma."
+ ],
+ "ann": []
+}

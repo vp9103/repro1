@@ -12,14 +12,15 @@ en9_hypercalcemia, en9_three_hpt missing.
 |---|---|---|---|
 | P2.4 | CLOSED 2026-10-04 | F21 | ledger row sha:e4e21f2f |
 | G01 | DONE (draft, accepted; spot-checked rp20q01-q05) | rp19 11q/15r/2 drills, rp20 15q/14r/3 drills | fast_check G01 ok; audit/G01-notes.md |
-| I01 | worker | images rp13, rp15, rp24 + Gemini overlays (fast/ws/I01) | fast_check I01 ok; audit/I01-sources.md |
-| P2.5 | worker | F35/F35b search snippet + landing (.repro/ws/P2_5) | --status P2.5 ok |
+| I01 | worker (resumed after restart; repro-worker Sonnet xhigh) | images rp13, rp15, rp24 + Gemini overlays (fast/ws/I01) | fast_check I01 ok; audit/I01-sources.md |
+| P2.5 | CLOSED 2026-10-04 | F35/F35b | ledger row sha:cd253105 |
 | G02 | DONE (draft, accepted 2026-10-04; spot-checked rp11r01/r05/r09, rp17r03/r09/r16) | rapid rp3 13, rp11 15, rp17 22 | fast_check G02 ok; audit/G02-notes.md |
 | G03 | DONE (draft, accepted; checked rp29 pins vs figure labels, d_rp16_multi) | rapid rp23 13, rp29 11; drills rp10 multi, rp11 sort, rp16 multi, rp17 order | fast_check G03 ok; audit/G03-notes.md (rp29 NO-VISUAL row in G03-novisual.md -> P6.9 on import) |
 | V1 | DONE (accepted; reviewed new figs rp4_origins, rp5_mullerian, rp6_dsd, rp7_engines) | rp4-rp7 visual shares met; 8 new figures | fast_check W04/W05 ok; NO-VISUAL rows W04/audit/P5.2.md, P6.2.md |
-| P2.6 | worker | F31a-c, F40, F33a-c, linkedNotice (.repro/ws/P2_6) | --status P2.6 ok |
-| V2 | worker | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
-| P1.V | HELD | token 5554dd5d05, 12 objectives | needs verifier at Opus max (host limit, asked user) |
+| P2.6 | CLOSED 2026-10-04 | F31a-c, F40, F33a-c, linkedNotice | ledger row sha:05f1ba73 |
+| P2.V | verifier (repro-verifier, Opus 5.5 max, confirmed) | token c8a9258425 + .repro/P2-REGRESSION.md | .repro/verify/P2-report.md |
+| V2 | QUEUED (worker lost in restart, no changes made) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
+| P1.V | verifier (repro-verifier, Opus 5.5 max, confirmed) | token 5554dd5d05, 12 objectives | .repro/verify/P1-report.md |
 
 ## Wave 1 (reproductive, Oct 9) queue
 1. Every rp topic now has questions, rapid and >= 1 drill. Figure gaps (hi blueprint items with no figure to pin a rapid item): BP-rp23-05 fat necrosis, BP-rp29-07 minors' consent, BP-rp11-04 bone/LDL, BP-rp17-10 molluscum, BP-rp17-05 perinatal HIV prevention, BP-rp17-12 HIV course and labs (en8_loop.svg has no JSON).
@@ -41,4 +42,4 @@ Questions only en1, en5; rapid only en5; drills only en5.
 ## External dependencies
 - GitHub push 403 (Claude GitHub App / connection for vp9103/repro1). Commits are local until fixed.
 - Canvas sign-in (P1.2 BLOCKED; optional Hendricks objectives doc only).
-- Verifier at max effort: project agents load only at session start (see REPRO-CONTINUATION.md).
+- (resolved) After the worker restart the repo's agent types loaded: repro-worker = claude-sonnet-5-5 xhigh, repro-verifier = claude-opus-5-5 max, confirmed from transcripts.

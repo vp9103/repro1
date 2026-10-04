@@ -1,0 +1,31 @@
+{
+ "n": "Granulosa cell tumor with Call-Exner bodies",
+ "file": "rp15_granulosa.jpg",
+ "dx": "Granulosa cell tumor",
+ "wrong": [
+  "Dysgerminoma",
+  "Yolk sac tumor",
+  "High-grade serous carcinoma",
+  "Sertoli-Leydig cell tumor"
+ ],
+ "ww": {
+  "Dysgerminoma": "<b>Dysgerminoma</b> forms sheets of large, round cells with clear cytoplasm and prominent nucleoli, divided by fibrous septa full of lymphocytes. These small, dark cells with tiny follicle-like spaces point to a granulosa cell tumor.",
+  "Yolk sac tumor": "<b>Yolk sac tumor</b> shows a lace-like network of spaces and glomerulus-like Schiller-Duval bodies, with a high serum AFP, in a young patient. It lacks uniform small cells and ring-like Call-Exner spaces.",
+  "High-grade serous carcinoma": "<b>High-grade serous carcinoma</b> has papillae and slit-like glands lined by markedly atypical, pleomorphic cells, often with psammoma bodies. The monotonous small cells and tiny rosette-like spaces here are not that.",
+  "Sertoli-Leydig cell tumor": "<b>Sertoli-Leydig cell tumor</b> forms hollow or solid tubules of Sertoli cells with clusters of Leydig cells between them, and it causes virilization. Call-Exner bodies are not its pattern."
+ },
+ "look": "Solid sheets of small, uniform cells with scant cytoplasm and oval nuclei are punctuated by tiny round spaces ringed by cells and holding pink material. These are Call-Exner bodies, miniature follicles that recall the granulosa cell's normal job, and they mark a tumor that makes estrogen. Spot them first, then recall inhibin as its serum marker.",
+ "cred": "Nephron · CC BY-SA 3.0 · Wikimedia Commons (resized)",
+ "by": "Nephron",
+ "lic": "CC BY-SA 3.0",
+ "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Granulosa_cell_tumour2.jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Call-Exner bodies: tiny round, follicle-like spaces ringed by tumor cells and often holding pink material are scattered through the sheets; they are the classic hallmark of a granulosa cell tumor.",
+  "Diffuse sheets of small, uniform cells: monotonous round to oval nuclei with scant cytoplasm show a single population that resembles follicular granulosa cells.",
+  "Fibrovascular stroma: a band of pink fibrous tissue with thin vessels runs diagonally through the lower left, separating the solid sheets of tumor into regions."
+ ],
+ "ann": []
+}

@@ -1,0 +1,32 @@
+{
+ "n": "LSIL on a Pap smear with koilocytes",
+ "file": "rp13_lsil.jpg",
+ "dx": "Low-grade squamous intraepithelial lesion (LSIL)",
+ "wrong": [
+  "High-grade squamous intraepithelial lesion (HSIL)",
+  "Atypical squamous cells of undetermined significance (ASC-US)",
+  "Reactive squamous cells with inflammation",
+  "Trichomonas vaginalis infection"
+ ],
+ "ww": {
+  "High-grade squamous intraepithelial lesion (HSIL)": "<b>HSIL</b> cells are smaller and more immature, with a very high nuclear-to-cytoplasmic ratio and dense, irregular nuclei. The abundant mature cytoplasm and clear halo seen here point to LSIL instead.",
+  "Atypical squamous cells of undetermined significance (ASC-US)": "<b>ASC-US</b> is an equivocal call: the nuclei are only slightly enlarged, and the changes are too few or too mild to name a lesion. Obvious koilocytes with large nuclei and clear halos, as here, are LSIL.",
+  "Reactive squamous cells with inflammation": "<b>Reactive</b> change from inflammation or repair leaves nuclei round, smooth and evenly stained, sometimes with small nucleoli. It lacks the enlarged, irregular nucleus and sharp perinuclear halo of the koilocyte.",
+  "Trichomonas vaginalis infection": "<b>Trichomonas</b> can leave a clear halo around a normal-sized nucleus (a pseudokoilocyte) among neutrophils, and pear-shaped flagellates may be seen. Here the nucleus is enlarged and irregular, as in a true koilocyte."
+ },
+ "look": "Compare the large central cell with its neighbors. The pink and blue-green mature squamous cells have tiny, round, dark nuclei, while the central cell has a nucleus several times larger with coarse chromatin, sitting in a sharp clear halo with a dense rim of cytoplasm. This is a koilocyte, the cytopathic effect of productive HPV infection, and it defines LSIL (CIN 1).",
+ "cred": "Nephron · CC BY-SA 3.0 · Wikimedia Commons (resized)",
+ "by": "Nephron",
+ "lic": "CC BY-SA 3.0",
+ "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Low_grade_squamous_intraepithelial_lesion.jpg",
+ "mod": true,
+ "modality": "cytology",
+ "findings": [
+  "Koilocyte: a large squamous cell with an enlarged, irregular nucleus inside a sharp clear perinuclear halo and a dense rim of cytoplasm, the cytopathic effect of productive HPV infection.",
+  "Nuclear enlargement: the koilocyte nucleus is several times larger than the tiny round nuclei of neighboring normal squamous cells, with coarse chromatin and an uneven outline.",
+  "Binucleate cell: two nuclei sit side by side inside a cleared zone of cytoplasm, another common koilocytic change in LSIL.",
+  "Normal comparison cells: pink superficial and blue-green intermediate squamous cells have abundant flat cytoplasm and one small, round, dark nucleus, which sets the size benchmark for the abnormal cells."
+ ],
+ "ann": []
+}
