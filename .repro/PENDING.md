@@ -18,6 +18,7 @@ en9_hypercalcemia, en9_three_hpt missing.
 | G03 | DONE (draft, accepted; checked rp29 pins vs figure labels, d_rp16_multi) | rapid rp23 13, rp29 11; drills rp10 multi, rp11 sort, rp16 multi, rp17 order | fast_check G03 ok; audit/G03-notes.md (rp29 NO-VISUAL row in G03-novisual.md -> P6.9 on import) |
 | V1 | DONE (accepted; reviewed new figs rp4_origins, rp5_mullerian, rp6_dsd, rp7_engines) | rp4-rp7 visual shares met; 8 new figures | fast_check W04/W05 ok; NO-VISUAL rows W04/audit/P5.2.md, P6.2.md |
 | P2.6 | worker | F31a-c, F40, F33a-c, linkedNotice (.repro/ws/P2_6) | --status P2.6 ok |
+| V2 | worker | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
 | P1.V | HELD | token 5554dd5d05, 12 objectives | needs verifier at Opus max (host limit, asked user) |
 
 ## Wave 1 (reproductive, Oct 9) queue
