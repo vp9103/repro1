@@ -1,0 +1,91 @@
+<svg class="dia" viewBox="0 0 900 540" role="img" aria-label="Four receptor families: Gs raises cAMP and protein kinase A, Gq activates phospholipase C to make IP3 and DAG, tyrosine kinase and JAK/STAT receptors phosphorylate proteins, and intracellular receptors bind response elements on DNA">
+<text class="ttl" x="14" y="24" font-size="17">Four receptor families and the messenger each one uses</text>
+<rect x="14" y="44" width="206" height="482" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<rect x="236" y="44" width="206" height="482" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<rect x="458" y="44" width="206" height="482" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="680" y="44" width="206" height="482" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="28" y="72" font-size="16">Gs: cAMP</text>
+<text class="b" x="250" y="72" font-size="16">Gq: IP3 and DAG</text>
+<text class="b" x="472" y="72" font-size="16">Tyrosine kinases</text>
+<text class="b" x="694" y="72" font-size="16">Intracellular</text>
+<rect x="24" y="96" width="186" height="16" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1"/>
+<rect x="246" y="96" width="186" height="16" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1"/>
+<rect x="468" y="96" width="186" height="16" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1"/>
+<rect x="690" y="96" width="186" height="16" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="s" x="30" y="109" font-size="13">cell membrane</text>
+<line x1="860" y1="80" x2="860" y2="122" stroke="var(--good)" stroke-width="2.5"/>
+<polygon points="854,120 860,130 866,120" fill="var(--good)"/>
+<rect x="24" y="124" width="186" height="30" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="36" y="144" font-size="14">Gs protein</text>
+<rect x="24" y="172" width="186" height="30" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="36" y="192" font-size="14">Adenylyl cyclase</text>
+<rect x="24" y="220" width="186" height="30" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="36" y="240" font-size="14">cAMP</text>
+<rect x="24" y="268" width="186" height="30" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="36" y="288" font-size="14">Protein kinase A</text>
+<line x1="117" y1="155" x2="117" y2="165" stroke="var(--a2)" stroke-width="2"/>
+<polygon points="112,164 117,171 122,164" fill="var(--a2)"/>
+<line x1="117" y1="203" x2="117" y2="213" stroke="var(--a2)" stroke-width="2"/>
+<polygon points="112,212 117,219 122,212" fill="var(--a2)"/>
+<line x1="117" y1="251" x2="117" y2="261" stroke="var(--a2)" stroke-width="2"/>
+<polygon points="112,260 117,267 122,260" fill="var(--a2)"/>
+<text class="b" x="28" y="332" font-size="14">Hormones</text>
+<text x="28" y="354" font-size="14">FSH, LH, ACTH, TSH</text>
+<text x="28" y="374" font-size="14">CRH, GHRH, hCG, MSH</text>
+<text x="28" y="394" font-size="14">PTH, calcitonin</text>
+<text x="28" y="414" font-size="14">glucagon, ADH at V2</text>
+<text class="b" x="28" y="452" font-size="14">Gi lowers cAMP:</text>
+<text x="28" y="474" font-size="14">dopamine at D2,</text>
+<text x="28" y="494" font-size="14">somatostatin</text>
+<rect x="246" y="124" width="186" height="30" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="256" y="144" font-size="14">Gq protein</text>
+<rect x="246" y="172" width="186" height="30" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="256" y="192" font-size="14">Phospholipase C</text>
+<rect x="246" y="220" width="186" height="30" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="256" y="240" font-size="14">IP3: ER calcium out</text>
+<rect x="246" y="268" width="186" height="30" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="256" y="288" font-size="13">DAG: protein kinase C</text>
+<line x1="339" y1="155" x2="339" y2="165" stroke="var(--a1)" stroke-width="2"/>
+<polygon points="334,164 339,171 344,164" fill="var(--a1)"/>
+<line x1="339" y1="203" x2="339" y2="213" stroke="var(--a1)" stroke-width="2"/>
+<polygon points="334,212 339,219 344,212" fill="var(--a1)"/>
+<line x1="339" y1="251" x2="339" y2="261" stroke="var(--a1)" stroke-width="2"/>
+<polygon points="334,260 339,267 344,260" fill="var(--a1)"/>
+<text class="b" x="250" y="332" font-size="14">Hormones</text>
+<text x="250" y="354" font-size="14">GnRH, TRH, oxytocin</text>
+<text x="250" y="374" font-size="14">ADH at V1 (vessels)</text>
+<text x="250" y="394" font-size="14">angiotensin II</text>
+<text x="250" y="414" font-size="14">histamine H1, gastrin</text>
+<text class="b" x="250" y="452" font-size="14">Typical effect:</text>
+<text x="250" y="474" font-size="14">smooth muscle contracts</text>
+<text x="250" y="494" font-size="14">(uterus, vessels)</text>
+<text class="b" x="472" y="140" font-size="14">Receptor is the kinase</text>
+<text x="472" y="162" font-size="14">insulin, IGF-1, EGF,</text>
+<text x="472" y="182" font-size="14">FGF, PDGF</text>
+<text class="b" x="472" y="218" font-size="14">JAK/STAT</text>
+<text x="472" y="240" font-size="14">receptor recruits JAK;</text>
+<text x="472" y="260" font-size="14">STAT enters nucleus</text>
+<text x="472" y="280" font-size="14">GH, prolactin, EPO,</text>
+<text x="472" y="300" font-size="14">cytokines</text>
+<line x1="472" y1="318" x2="650" y2="318" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="472" y="344" font-size="14">cGMP</text>
+<text x="472" y="366" font-size="14">guanylyl cyclase for</text>
+<text x="472" y="386" font-size="14">ANP, BNP (membrane)</text>
+<text x="472" y="406" font-size="14">nitric oxide (soluble)</text>
+<text x="472" y="426" font-size="14">relaxes smooth muscle</text>
+<text x="694" y="140" font-size="14">Lipid-soluble hormone</text>
+<text x="694" y="160" font-size="14">crosses the membrane</text>
+<text x="694" y="188" font-size="14">receptor in cytoplasm</text>
+<text x="694" y="208" font-size="14">or nucleus</text>
+<rect x="690" y="222" width="186" height="92" rx="30" fill="var(--surface)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="704" y="248" font-size="14">Nucleus</text>
+<text x="704" y="270" font-size="13">binds response element</text>
+<text x="704" y="292" font-size="13">gene transcription</text>
+<text class="b" x="694" y="344" font-size="14">Hormones</text>
+<text x="694" y="366" font-size="14">cortisol, aldosterone</text>
+<text x="694" y="386" font-size="14">estrogen, progesterone</text>
+<text x="694" y="406" font-size="14">testosterone</text>
+<text x="694" y="426" font-size="14">T3 and calcitriol</text>
+<text class="b" x="694" y="462" font-size="14">Onset: hours</text>
+<text x="694" y="484" font-size="14">effects last longer</text>
+</svg>

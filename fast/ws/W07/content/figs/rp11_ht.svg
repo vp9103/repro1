@@ -1,0 +1,68 @@
+<svg class="dia" viewBox="0 0 900 540" role="img" aria-label="Hormone therapy mechanics: oral estrogen passes the liver first and raises clotting factors, triglycerides, binding globulins and gallstones while transdermal estradiol bypasses the liver; a uterus needs a progestogen, because estrogen alone causes hyperplasia">
+<text class="ttl" x="14" y="24" font-size="17">Hormone therapy: the liver decides the route, the uterus decides the progestogen</text>
+<rect x="14" y="40" width="428" height="486" rx="10" fill="var(--surface)" stroke="var(--line)" stroke-width="1.4"/>
+<text class="b" x="30" y="66" font-size="15">Route: the liver sees oral estrogen first</text>
+<rect x="34" y="84" width="170" height="44" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.4"/>
+<text class="b" x="48" y="112" font-size="15">Oral estrogen</text>
+<line x1="110" y1="128" x2="110" y2="162" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="104,160 110,172 116,160" fill="var(--ink-2)"/>
+<text x="124" y="154" font-size="13">portal vein</text>
+<rect x="34" y="174" width="226" height="148" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.4"/>
+<text class="b" x="48" y="200" font-size="15">Liver (first pass)</text>
+<text x="48" y="226" font-size="14">Clotting factors up</text>
+<text x="48" y="250" font-size="14">Triglycerides up</text>
+<text x="48" y="274" font-size="14">SHBG and TBG up</text>
+<text x="48" y="298" font-size="14">Gallstones more likely</text>
+<line x1="110" y1="322" x2="110" y2="382" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="104,380 110,392 116,380" fill="var(--ink-2)"/>
+<rect x="292" y="84" width="134" height="62" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="304" y="110" font-size="15">Transdermal</text>
+<text x="304" y="132" font-size="14">estradiol</text>
+<line x1="376" y1="146" x2="376" y2="382" stroke="var(--a2)" stroke-width="2.5"/>
+<polygon points="370,380 376,392 382,380" fill="var(--a2)"/>
+<text class="a2" x="272" y="226" font-size="13">skips</text>
+<text class="a2" x="272" y="244" font-size="13">the</text>
+<text class="a2" x="272" y="262" font-size="13">liver</text>
+<rect x="34" y="394" width="392" height="44" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.4"/>
+<text class="b" x="48" y="422" font-size="14">Systemic circulation: hot flashes relieved</text>
+<text x="30" y="474" font-size="14">Transdermal = lower clot risk; prefer it with</text>
+<text x="30" y="496" font-size="14">high triglycerides, gallstones or migraine</text>
+<rect x="458" y="40" width="428" height="486" rx="10" fill="var(--surface)" stroke="var(--line)" stroke-width="1.4"/>
+<text class="b" x="474" y="66" font-size="15">Uterus: a progestogen protects the lining</text>
+<rect x="474" y="84" width="180" height="58" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="486" y="108" font-size="14">No uterus</text>
+<text x="486" y="130" font-size="14">after hysterectomy</text>
+<line x1="654" y1="113" x2="672" y2="113" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="670,107 682,113 670,119" fill="var(--ink-2)"/>
+<rect x="684" y="84" width="196" height="58" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="696" y="108" font-size="14">Estrogen alone</text>
+<text x="696" y="130" font-size="14">no progestogen</text>
+<rect x="474" y="164" width="180" height="58" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="486" y="188" font-size="14">Uterus present,</text>
+<text x="486" y="210" font-size="14">estrogen alone</text>
+<line x1="654" y1="193" x2="672" y2="193" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="670,187 682,193 670,199" fill="var(--ink-2)"/>
+<rect x="684" y="164" width="196" height="58" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.4"/>
+<text class="cr" x="696" y="188" font-size="14">Unopposed</text>
+<text x="696" y="210" font-size="14">hyperplasia, cancer</text>
+<rect x="474" y="244" width="180" height="58" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="486" y="268" font-size="14">Uterus present,</text>
+<text x="486" y="290" font-size="14">plus progestogen</text>
+<line x1="654" y1="273" x2="672" y2="273" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="670,267 682,273 670,279" fill="var(--ink-2)"/>
+<rect x="684" y="244" width="196" height="58" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.4"/>
+<text class="gd" x="696" y="268" font-size="14">Lining protected</text>
+<text x="696" y="290" font-size="14">cyclic or continuous</text>
+<rect x="474" y="324" width="180" height="58" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="486" y="348" font-size="14">Vaginal dryness</text>
+<text x="486" y="370" font-size="14">only (GSM)</text>
+<line x1="654" y1="353" x2="672" y2="353" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="670,347 682,353 670,359" fill="var(--ink-2)"/>
+<rect x="684" y="324" width="196" height="58" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="696" y="348" font-size="14">Vaginal estrogen</text>
+<text x="696" y="370" font-size="14">low dose, no progestin</text>
+<text x="474" y="420" font-size="13">Cyclic: progestogen 12 to 14 days a month,</text>
+<text x="474" y="438" font-size="13">then a scheduled withdrawal bleed</text>
+<text x="474" y="470" font-size="13">Continuous combined: both every day,</text>
+<text x="474" y="488" font-size="13">spotting at first, then usually no bleeding</text>
+</svg>

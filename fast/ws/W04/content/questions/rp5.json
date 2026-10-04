@@ -1,0 +1,918 @@
+[
+ {
+  "id": "rp5q01",
+  "d": 1,
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-02"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.9",
+   "EMBRYO-GU.1"
+  ],
+  "s": "A 28-year-old man is evaluated for infertility after 2 years of unprotected intercourse. He has had recurrent sinus infections since childhood. Semen analysis shows a low ejaculate volume, acidic pH and no sperm. The vas deferens cannot be palpated on either side, although both testes are normal in size.",
+  "l": "The missing structures develop from which embryonic structure?",
+  "o": [
+   "Mesonephric duct",
+   "Paramesonephric duct",
+   "Urogenital sinus",
+   "Genital tubercle",
+   "Gubernaculum"
+  ],
+  "a": 0,
+  "e": "Absent vasa deferentia with low-volume, acidic, sperm-free semen describe congenital bilateral absence of the vas deferens, classically from CFTR mutations, which his sinus disease suggests. The vas deferens, seminal vesicles and ejaculatory ducts all come from the **mesonephric duct**, so the alkaline, fructose-rich seminal vesicle fluid is missing as well. The paramesonephric duct forms female internal organs, the urogenital sinus forms the prostate and urethra, and the genital tubercle forms the penis.",
+  "w": {
+   "Paramesonephric duct": "The paramesonephric duct regresses in males under AMH and leaves only the appendix testis; it never forms the vas deferens or seminal vesicles.",
+   "Urogenital sinus": "The urogenital sinus forms the bladder, urethra, prostate and bulbourethral glands; the prostate contributes only a small, slightly acidic part of the ejaculate.",
+   "Genital tubercle": "The genital tubercle becomes the glans and shaft of the penis under DHT; it forms no internal duct that carries sperm.",
+   "Gubernaculum": "The gubernaculum guides testicular descent into the scrotum; a defect causes cryptorchidism, not absence of the ducts that carry sperm."
+  },
+  "et": [
+   [
+    "Option",
+    "Male derivatives",
+    "Female fate",
+    "Germ layer"
+   ],
+   [
+    [
+     "Mesonephric duct",
+     "Vas deferens, seminal vesicle, ejaculatory duct, epididymis",
+     "Regresses; Gartner duct remnant",
+     "Mesoderm"
+    ],
+    [
+     "Paramesonephric duct",
+     "Appendix testis remnant",
+     "Tubes, uterus, cervix, upper vagina",
+     "Mesoderm"
+    ],
+    [
+     "Urogenital sinus",
+     "Prostate, bulbourethral glands, urethra",
+     "Lower vagina, Skene and Bartholin glands",
+     "Endoderm"
+    ],
+    [
+     "Genital tubercle",
+     "Glans and shaft of the penis",
+     "Clitoris",
+     "Mesoderm under surface ectoderm"
+    ],
+    [
+     "Gubernaculum",
+     "Guides testicular descent",
+     "Ovarian and round ligaments",
+     "Mesenchyme"
+    ]
+   ]
+  ],
+  "bl": "The vas deferens, seminal vesicles and ejaculatory ducts come from the mesonephric duct; CFTR mutations can leave them absent.",
+  "ef": "rp5_ducts",
+  "pt": {
+   "hl": [
+    "Wolffian ducts: epididymis, vas"
+   ],
+   "say": "In the Leydig cell box, the Wolffian ducts are listed as epididymis, vas deferens, seminal vesicle and ejaculatory duct, the mesonephric duct derivatives missing here."
+  }
+ },
+ {
+  "id": "rp5q02",
+  "d": 2,
+  "tags": [
+   "sex-development-signals"
+  ],
+  "bp": [
+   "BP-rp5-01"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.8",
+   "EMBRYO-GU.3"
+  ],
+  "s": "A 9-month-old boy with normal male external genitalia undergoes surgery for bilateral undescended testes. At laparoscopy, the surgeon finds a small uterus and two fallopian tubes attached to the testes. Karyotype is 46,XY, testicular histology is normal and serum testosterone is appropriate for age.",
+  "l": "A defect in which signal best explains the internal findings?",
+  "o": [
+   "Anti-Müllerian hormone",
+   "Testosterone",
+   "Dihydrotestosterone",
+   "Testis-determining factor",
+   "Estradiol"
+  ],
+  "a": 0,
+  "e": "Normal male external genitalia and normal testosterone show that Leydig cells, the androgen receptor and 5α-reductase all work. What failed is Müllerian regression, the job of **anti-Müllerian hormone** from Sertoli cells, or of its receptor. This persistent Müllerian duct syndrome leaves a uterus and tubes that can tether the testes, which is why it often presents with cryptorchidism. Missing testis-determining factor would give no testis at all, and a lack of testosterone or DHT would undervirilize the genitalia.",
+  "w": {
+   "Testosterone": "Testosterone keeps the Wolffian ducts and drives virilization; it has no effect on Müllerian regression, and this boy's level and genitalia are normal.",
+   "Dihydrotestosterone": "DHT builds the penis, scrotum and prostate from the external primordia; its lack causes ambiguous genitalia but leaves Müllerian regression intact.",
+   "Testis-determining factor": "Without testis-determining factor the gonads would become streak gonads, so there would be no normal testes and no testosterone.",
+   "Estradiol": "Female ducts develop without any estrogen; estradiol plays no part in whether the Müllerian ducts persist or regress in the fetus."
+  },
+  "et": [
+   [
+    "Option",
+    "Source",
+    "Target in the embryo",
+    "Result of deficiency"
+   ],
+   [
+    [
+     "Anti-Müllerian hormone",
+     "Sertoli cells",
+     "Müllerian ducts",
+     "Uterus and tubes persist in a normal boy"
+    ],
+    [
+     "Testosterone",
+     "Leydig cells",
+     "Wolffian ducts",
+     "Female genitalia, no male ducts"
+    ],
+    [
+     "Dihydrotestosterone",
+     "5α-reductase in target tissue",
+     "External genitalia, prostate",
+     "Ambiguous genitalia, normal male ducts"
+    ],
+    [
+     "Testis-determining factor",
+     "SRY gene",
+     "Indifferent gonad",
+     "Streak gonads, female phenotype with uterus"
+    ],
+    [
+     "Estradiol",
+     "Ovary, placenta, aromatase",
+     "Not required for duct development",
+     "No effect on duct fate"
+    ]
+   ]
+  ],
+  "bl": "A uterus in a normally virilized 46,XY boy means absent anti-Müllerian hormone action: persistent Müllerian duct syndrome.",
+  "ef": "rp5_ducts",
+  "pt": {
+   "hl": [
+    "Sertoli cells → AMH",
+    "Müllerian ducts regress"
+   ],
+   "say": "The Sertoli cell box shows AMH making the Müllerian ducts regress; without anti-Müllerian hormone the uterus and tubes persist despite normal testosterone."
+  }
+ },
+ {
+  "id": "rp5q03",
+  "d": 2,
+  "tags": [
+   "steroidogenesis-enzymes",
+   "sex-development-signals"
+  ],
+  "bp": [
+   "BP-rp5-04"
+  ],
+  "obj": [
+   "EMBRYO-GU.3",
+   "EMBRYO-CLIN.8"
+  ],
+  "s": "A 14-year-old raised as a girl is brought in because her voice has deepened and her clitoris has enlarged over the past year. At birth she was noted to have a large clitoris and a separate blind vaginal pouch. Examination now shows increasing muscle mass, no breast development and firm gonads in both labioscrotal folds. Karyotype is 46,XY, and pelvic imaging shows no uterus.",
+  "l": "Deficiency of which enzyme best explains these findings?",
+  "o": [
+   "5α-reductase",
+   "Aromatase",
+   "21-hydroxylase",
+   "17α-hydroxylase",
+   "3β-hydroxysteroid dehydrogenase"
+  ],
+  "a": 0,
+  "e": "A 46,XY child who looks female at birth and virilizes at puberty has **5α-reductase** deficiency. Fetal external genitalia need DHT, which the enzyme makes from testosterone in genital skin, so they stay undervirilized. Testosterone itself keeps the Wolffian ducts and Sertoli cells still make AMH, so there are male internal ducts and no uterus. At puberty adult testosterone levels act on androgen receptors directly. 21-hydroxylase deficiency virilizes 46,XX infants, and 17α-hydroxylase deficiency prevents androgen synthesis altogether.",
+  "w": {
+   "Aromatase": "Aromatase converts androgens to estrogens; its fetal deficiency virilizes a 46,XX fetus and the mother, and it does not stop DHT from forming in a 46,XY child.",
+   "21-hydroxylase": "21-hydroxylase deficiency shunts adrenal precursors into androgens, so it virilizes 46,XX infants and causes salt wasting; genotypic males look normal at birth.",
+   "17α-hydroxylase": "17α-hydroxylase deficiency blocks all sex steroid synthesis, so a 46,XY patient stays female without pubertal virilization and has hypertension with hypokalemia.",
+   "3β-hydroxysteroid dehydrogenase": "3β-HSD deficiency blocks adrenal and gonadal steroid synthesis early, causing salt wasting in infancy; it does not leave testosterone free to virilize at puberty."
+  },
+  "et": [
+   [
+    "Option",
+    "Reaction blocked",
+    "46,XY genitalia at birth",
+    "Pubertal change"
+   ],
+   [
+    [
+     "5α-reductase",
+     "Testosterone to DHT",
+     "Female or ambiguous",
+     "Virilization"
+    ],
+    [
+     "Aromatase",
+     "Androgens to estrogens",
+     "Normal male",
+     "Unfused epiphyses, tall stature"
+    ],
+    [
+     "21-hydroxylase",
+     "Progesterone to 11-deoxycorticosterone",
+     "Normal male",
+     "Early androgen excess, salt wasting"
+    ],
+    [
+     "17α-hydroxylase",
+     "Pregnenolone to 17-hydroxypregnenolone",
+     "Female",
+     "No virilization; hypertension"
+    ],
+    [
+     "3β-hydroxysteroid dehydrogenase",
+     "Pregnenolone to progesterone",
+     "Ambiguous",
+     "Salt wasting from infancy"
+    ]
+   ]
+  ],
+  "bl": "46,XY with female genitalia at birth and virilization at puberty means 5α-reductase deficiency: no fetal DHT, intact testosterone.",
+  "ef": "rp5_ducts",
+  "pt": {
+   "hl": [
+    "5α-reductase → DHT"
+   ],
+   "say": "The bottom box of the male column shows 5α-reductase making DHT, the androgen the fetal penis, scrotum and prostate need."
+  }
+ },
+ {
+  "id": "rp5q04",
+  "d": 3,
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-10",
+   "BP-rp5-07"
+  ],
+  "obj": [
+   "EMBRYO-GU.2",
+   "EMBRYO-GU.4"
+  ],
+  "s": "A 13-year-old girl who began menstruating 6 months ago has worsening monthly pelvic pain. Her periods are regular. Examination shows normal breast and pubic hair development and a tender bulge in the right lateral vaginal wall. Ultrasound shows no right kidney. MRI shows two separate uterine bodies with two cervices and a right hemivagina distended with blood.",
+  "l": "Abnormal development of which single embryonic structure best explains both the renal and the genital findings?",
+  "o": [
+   "Mesonephric duct",
+   "Paramesonephric duct",
+   "Metanephric mesenchyme",
+   "Urogenital sinus",
+   "Genital ridge"
+  ],
+  "a": 0,
+  "e": "She has uterus didelphys with an obstructed right hemivagina and renal agenesis on the same side. The ureteric bud sprouts from the **mesonephric duct**, and the paramesonephric duct forms by growing along the mesonephric duct, so an early mesonephric defect on one side removes the kidney and disturbs fusion of the Müllerian ducts. A paramesonephric defect alone explains the uterus but not the kidney, and a metanephric mesenchyme defect explains the kidney but not the uterus. The urogenital sinus and genital ridge form neither organ here.",
+  "w": {
+   "Paramesonephric duct": "The paramesonephric ducts built the two uteri and cervices, so their fusion failed, but a primary Müllerian defect would not explain the absent kidney.",
+   "Metanephric mesenchyme": "Metanephric mesenchyme forms nephrons after the ureteric bud induces it; its failure alone causes renal agenesis without any Müllerian fusion defect.",
+   "Urogenital sinus": "The urogenital sinus forms the lower vagina and urethra; it neither induces the kidney nor guides the Müllerian ducts toward the midline.",
+   "Genital ridge": "The genital ridge forms the gonads, and her normal breasts and regular cycles show that her ovaries formed and function normally."
+  },
+  "et": [
+   [
+    "Option",
+    "What it forms",
+    "Link to the kidney",
+    "Link to the uterus"
+   ],
+   [
+    [
+     "Mesonephric duct",
+     "Male ducts; ureteric bud in both sexes",
+     "Gives rise to the ureteric bud",
+     "Guides paramesonephric duct growth"
+    ],
+    [
+     "Paramesonephric duct",
+     "Tubes, uterus, cervix, upper vagina",
+     "None directly",
+     "Forms the uterus itself"
+    ],
+    [
+     "Metanephric mesenchyme",
+     "Nephrons of the kidney",
+     "Forms nephrons",
+     "None"
+    ],
+    [
+     "Urogenital sinus",
+     "Lower vagina, bladder, urethra",
+     "None",
+     "None; lower vagina only"
+    ],
+    [
+     "Genital ridge",
+     "Gonads",
+     "None",
+     "None"
+    ]
+   ]
+  ],
+  "bl": "Müllerian anomalies with renal agenesis on the same side point to the mesonephric duct, which gives the ureteric bud and guides the Müllerian duct."
+ },
+ {
+  "id": "rp5q05",
+  "d": 3,
+  "tags": [
+   "imaging-to-diagnosis",
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-07"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.4",
+   "EMBRYO-GU.4",
+   "BICEP-WALSH.19"
+  ],
+  "s": "A 32-year-old woman has had three consecutive miscarriages at 9 to 11 weeks' gestation. Parental karyotypes, antiphospholipid antibody testing and thyroid studies are normal. Hysterosalpingography shows two uterine cavities separated by a midline filling defect, with one cervix. On T2-weighted MRI the external fundal contour is smooth and convex, and a thin low-signal band divides the cavity.",
+  "l": "Failure of which developmental step best explains her uterine anomaly?",
+  "o": [
+   "Resorption of the midline septum",
+   "Fusion of the paramesonephric ducts",
+   "Formation of one paramesonephric duct",
+   "Canalization of the vaginal plate",
+   "Regression of the mesonephric ducts"
+  ],
+  "a": 0,
+  "e": "Two cavities with a smooth, convex external fundus describe a **septate uterus**: the ducts fused normally, but the midline wall between them never resorbed. It is the most common Müllerian anomaly and the one most linked to recurrent pregnancy loss, because the poorly vascularized septum is a poor implantation site; hysteroscopic resection improves outcomes. Failed fusion of the paramesonephric ducts would give a bicornuate uterus with a deep fundal cleft, or didelphys with two cervices, and failure of one duct gives a unicornuate uterus.",
+  "w": {
+   "Fusion of the paramesonephric ducts": "Partial failure of fusion creates a bicornuate uterus whose fundus is indented by a deep external cleft; this patient's smooth outer contour rules that out.",
+   "Formation of one paramesonephric duct": "If one duct fails to form, a single horn with one tube remains, a unicornuate uterus, often with renal agenesis on the missing side.",
+   "Canalization of the vaginal plate": "Failed canalization of the vaginal plate obstructs the lower tract, causing a transverse vaginal septum or atresia with cyclic pain, not two cavities.",
+   "Regression of the mesonephric ducts": "Persistent mesonephric remnants in females form Gartner duct cysts in the lateral vaginal wall; they do not divide the uterine cavity."
+  },
+  "et": [
+   [
+    "Option",
+    "Resulting anomaly",
+    "External fundal contour",
+    "Cervix"
+   ],
+   [
+    [
+     "Resorption of the midline septum",
+     "Septate uterus",
+     "Smooth or minimally indented",
+     "One"
+    ],
+    [
+     "Fusion of the paramesonephric ducts",
+     "Bicornuate uterus or didelphys",
+     "Deep cleft or two uteri",
+     "One or two"
+    ],
+    [
+     "Formation of one paramesonephric duct",
+     "Unicornuate uterus",
+     "Single banana-shaped horn",
+     "One"
+    ],
+    [
+     "Canalization of the vaginal plate",
+     "Transverse vaginal septum or atresia",
+     "Normal",
+     "One, above an obstruction"
+    ],
+    [
+     "Regression of the mesonephric ducts",
+     "Gartner duct cyst",
+     "Normal",
+     "One, normal"
+    ]
+   ]
+  ],
+  "bl": "Two cavities with a smooth external fundus mean failed resorption of the midline septum: a septate uterus, the commonest anomaly."
+ },
+ {
+  "id": "rp5q06",
+  "d": 2,
+  "tags": [
+   "sex-development-signals"
+  ],
+  "bp": [
+   "BP-rp5-07"
+  ],
+  "obj": [
+   "EMBRYO-GU.4",
+   "HP-UTERUS-OVARY.4"
+  ],
+  "s": "A 16-year-old girl has never had a menstrual period. She has normal breast development and normal pubic and axillary hair. Pelvic examination shows a short, blind-ending vagina. Ultrasound shows normal ovaries but no uterus, and a renal ultrasound shows a pelvic kidney. Karyotype is 46,XX, and serum testosterone is in the normal female range.",
+  "l": "Which diagnosis best explains these findings?",
+  "o": [
+   "Müllerian agenesis",
+   "Complete androgen insensitivity",
+   "Imperforate hymen",
+   "Turner syndrome",
+   "Transverse vaginal septum"
+  ],
+  "a": 0,
+  "e": "A 46,XX patient with normal ovaries, normal breasts and pubic hair, and an absent uterus and upper vagina has **Müllerian agenesis** (Mayer-Rokitansky-Küster-Hauser syndrome). The paramesonephric ducts failed to form, but ovarian function is normal, so secondary sex characteristics develop, and a renal anomaly is common because the ducts develop alongside the mesonephric system. Complete androgen insensitivity also gives a blind vagina and no uterus, but with a 46,XY karyotype, male-range testosterone and sparse pubic hair. Imperforate hymen and a transverse septum leave the uterus present.",
+  "w": {
+   "Complete androgen insensitivity": "Androgen insensitivity also leaves a blind vagina and no uterus, but it needs a 46,XY karyotype with testes, male-range testosterone and sparse pubic hair.",
+   "Imperforate hymen": "An imperforate hymen leaves the uterus intact behind a closed membrane, so blood collects as hematocolpos with cyclic pain and a bulging introitus.",
+   "Turner syndrome": "Turner syndrome (45,X) causes streak ovaries, so estrogen is low and breast development fails; the uterus is present but small.",
+   "Transverse vaginal septum": "A transverse septum blocks the vagina above a normal hymen, but the uterus and cervix are present and menstrual blood collects above it."
+  },
+  "et": [
+   [
+    "Option",
+    "Karyotype",
+    "Uterus",
+    "Breast development"
+   ],
+   [
+    [
+     "Müllerian agenesis",
+     "46,XX",
+     "Absent",
+     "Normal"
+    ],
+    [
+     "Complete androgen insensitivity",
+     "46,XY",
+     "Absent",
+     "Normal, from aromatized testosterone"
+    ],
+    [
+     "Imperforate hymen",
+     "46,XX",
+     "Present, with hematocolpos",
+     "Normal"
+    ],
+    [
+     "Turner syndrome",
+     "45,X",
+     "Present but small",
+     "Absent without estrogen"
+    ],
+    [
+     "Transverse vaginal septum",
+     "46,XX",
+     "Present, blood above the septum",
+     "Normal"
+    ]
+   ]
+  ],
+  "bl": "Primary amenorrhea with normal breasts, normal ovaries, 46,XX and no uterus is Müllerian agenesis, often with renal anomalies."
+ },
+ {
+  "id": "rp5q07",
+  "d": 1,
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-08"
+  ],
+  "obj": [
+   "EMBRYO-GU.4"
+  ],
+  "s": "A 13-year-old girl has had crampy lower abdominal pain for a few days each month for the past 5 months. She has never menstruated. Breast and pubic hair development are Tanner stage 4. Examination shows a tense, bluish, bulging membrane at the introitus, and ultrasound shows a vagina distended with fluid.",
+  "l": "Which diagnosis is most likely?",
+  "o": [
+   "Imperforate hymen",
+   "Müllerian agenesis",
+   "Complete androgen insensitivity",
+   "Vaginal atresia",
+   "Gartner duct cyst"
+  ],
+  "a": 0,
+  "e": "Cyclic pain without menses, normal puberty and a bulging bluish membrane with blood distending the vagina (hematocolpos) define an **imperforate hymen**: the membrane where the vaginal plate meets the urogenital sinus never opened, so a normal uterus sheds into a closed vagina. A simple incision cures it. Müllerian agenesis and androgen insensitivity have no functioning uterus, so there is no cyclic pain or trapped blood. Vaginal atresia leaves a uterus above a missing lower vagina with no membrane at the introitus.",
+  "w": {
+   "Müllerian agenesis": "Müllerian agenesis removes the uterus and upper vagina, so there is usually no endometrium to shed, no monthly pain and no fluid-filled vagina.",
+   "Complete androgen insensitivity": "Androgen insensitivity gives a 46,XY patient a short blind vagina without a uterus; with no endometrium, blood cannot collect behind the introitus.",
+   "Vaginal atresia": "In vaginal atresia the lower vagina is replaced by fibrous tissue, so blood collects higher up and no thin membrane bulges at the introitus.",
+   "Gartner duct cyst": "A Gartner duct cyst is a mesonephric remnant in the lateral vaginal wall of a menstruating woman; it does not block menstrual flow."
+  },
+  "et": [
+   [
+    "Option",
+    "Level of the defect",
+    "Uterus",
+    "Introitus"
+   ],
+   [
+    [
+     "Imperforate hymen",
+     "Hymen at the introitus",
+     "Present",
+     "Bulging bluish membrane"
+    ],
+    [
+     "Müllerian agenesis",
+     "Uterus and upper vagina",
+     "Absent",
+     "Normal hymen, short vagina"
+    ],
+    [
+     "Complete androgen insensitivity",
+     "Androgen receptor",
+     "Absent",
+     "Short blind vagina"
+    ],
+    [
+     "Vaginal atresia",
+     "Lower vagina",
+     "Present",
+     "Dimple, no vaginal opening"
+    ],
+    [
+     "Gartner duct cyst",
+     "Lateral vaginal wall",
+     "Present",
+     "Normal"
+    ]
+   ]
+  ],
+  "bl": "Primary amenorrhea with cyclic pain and a bulging bluish membrane is an imperforate hymen with hematocolpos."
+ },
+ {
+  "id": "rp5q08",
+  "d": 1,
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-09",
+   "BP-rp5-05"
+  ],
+  "obj": [
+   "EMBRYO-GU.5",
+   "EMBRYO-CLIN.10"
+  ],
+  "s": "A full-term male newborn has a urethral opening on the underside of the penile shaft near the penoscrotal junction, a hooded foreskin that is incomplete ventrally, and downward curvature of the penis on erection. Both testes are palpable in the scrotum.",
+  "l": "Which embryologic failure explains this anomaly?",
+  "o": [
+   "Failure of the urethral folds to fuse",
+   "Abnormal positioning of the genital tubercle",
+   "Failure of the labioscrotal swellings to fuse",
+   "Persistence of the processus vaginalis",
+   "Persistence of the paramesonephric ducts"
+  ],
+  "a": 0,
+  "e": "A ventral opening with ventral hooding and chordee is **hypospadias**. Under DHT the urethral folds normally fuse from the base toward the glans to enclose the spongy urethra, so incomplete fusion leaves the meatus anywhere along the underside, from glans to perineum. Circumcision is deferred because the foreskin may be needed for repair. Epispadias comes from an abnormally positioned genital tubercle and puts the opening dorsally, and unfused labioscrotal swellings give a bifid scrotum.",
+  "w": {
+   "Abnormal positioning of the genital tubercle": "Abnormal tubercle position produces epispadias, a dorsal opening often with bladder exstrophy, which is the mirror image of this ventral defect.",
+   "Failure of the labioscrotal swellings to fuse": "Unfused labioscrotal swellings leave a bifid scrotum; this baby's scrotum holds both testes, and the defect lies in the urethra itself.",
+   "Persistence of the processus vaginalis": "A patent processus vaginalis causes an indirect inguinal hernia or hydrocele in the groin or scrotum; it does not affect the urethra.",
+   "Persistence of the paramesonephric ducts": "Retained Müllerian ducts leave a uterus and tubes inside a normally virilized boy; the external urethra develops normally."
+  },
+  "et": [
+   [
+    "Option",
+    "Resulting anomaly",
+    "Location of the finding",
+    "Classic association"
+   ],
+   [
+    [
+     "Failure of the urethral folds to fuse",
+     "Hypospadias",
+     "Ventral penis to perineum",
+     "Cryptorchidism, inguinal hernia"
+    ],
+    [
+     "Abnormal positioning of the genital tubercle",
+     "Epispadias",
+     "Dorsal penis",
+     "Bladder exstrophy"
+    ],
+    [
+     "Failure of the labioscrotal swellings to fuse",
+     "Bifid scrotum",
+     "Scrotum",
+     "Severe hypospadias"
+    ],
+    [
+     "Persistence of the processus vaginalis",
+     "Indirect hernia, hydrocele",
+     "Groin and scrotum",
+     "Prematurity"
+    ],
+    [
+     "Persistence of the paramesonephric ducts",
+     "Persistent Müllerian duct syndrome",
+     "Pelvis",
+     "Cryptorchidism"
+    ]
+   ]
+  ],
+  "bl": "Hypospadias is failure of the urethral folds to fuse, leaving a ventral meatus; epispadias is dorsal.",
+  "ef": "rp5_homologs",
+  "pt": {
+   "hl": [
+    "Urogenital folds",
+    "Ventral shaft, spongy urethra"
+   ],
+   "say": "The urogenital folds row shows that these folds form the ventral shaft and spongy urethra, so failure of the urethral folds to fuse leaves a ventral opening."
+  }
+ },
+ {
+  "id": "rp5q09",
+  "d": 2,
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-09"
+  ],
+  "obj": [
+   "EMBRYO-GU.5"
+  ],
+  "s": "A male newborn has an exposed, everted bladder plate on the lower abdominal wall below a low-set umbilicus. The pubic bones are widely separated. The penis is short and broad, with the urethral opening on its upper surface and an open urethral groove running along the dorsum.",
+  "l": "Which embryologic abnormality best explains the penile finding?",
+  "o": [
+   "Abnormal positioning of the genital tubercle",
+   "Failure of the urethral folds to fuse",
+   "Failure of the labioscrotal swellings to fuse",
+   "Persistence of the processus vaginalis",
+   "Persistence of the urachus"
+  ],
+  "a": 0,
+  "e": "A dorsal urethral opening is **epispadias**, and with an exposed bladder and separated pubic bones it is part of the bladder exstrophy complex. The genital tubercle forms in an abnormal position relative to the urogenital sinus, and the defective lower abdominal wall and cloacal membrane leave the bladder and dorsal urethra open. Failure of the urethral folds to fuse causes hypospadias, a ventral opening, and a persistent urachus leaks urine at the umbilicus without exposing the bladder.",
+  "w": {
+   "Failure of the urethral folds to fuse": "Unfused urethral folds leave the opening on the ventral surface, which is hypospadias; this infant's opening and groove are on the dorsum.",
+   "Failure of the labioscrotal swellings to fuse": "Unfused labioscrotal swellings produce a bifid scrotum, a scrotal finding that does not open the urethra along the top of the penis.",
+   "Persistence of the processus vaginalis": "A patent processus vaginalis allows an indirect inguinal hernia or hydrocele; it has nothing to do with the bladder or the urethral plate.",
+   "Persistence of the urachus": "A patent urachus drains urine from an intact bladder through the umbilicus; the bladder is not everted onto the abdominal wall."
+  },
+  "et": [
+   [
+    "Option",
+    "Resulting anomaly",
+    "Location of the finding",
+    "Classic association"
+   ],
+   [
+    [
+     "Abnormal positioning of the genital tubercle",
+     "Epispadias",
+     "Dorsal penis",
+     "Bladder exstrophy"
+    ],
+    [
+     "Failure of the urethral folds to fuse",
+     "Hypospadias",
+     "Ventral penis to perineum",
+     "Cryptorchidism, inguinal hernia"
+    ],
+    [
+     "Failure of the labioscrotal swellings to fuse",
+     "Bifid scrotum",
+     "Scrotum",
+     "Severe hypospadias"
+    ],
+    [
+     "Persistence of the processus vaginalis",
+     "Indirect hernia, hydrocele",
+     "Groin and scrotum",
+     "Prematurity"
+    ],
+    [
+     "Persistence of the urachus",
+     "Urachal fistula",
+     "Umbilicus",
+     "Urine leaking from the umbilicus"
+    ]
+   ]
+  ],
+  "bl": "Epispadias is a dorsal urethral opening from abnormal positioning of the genital tubercle and travels with bladder exstrophy."
+ },
+ {
+  "id": "rp5q10",
+  "d": 2,
+  "tags": [
+   "anatomic-relations",
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-06"
+  ],
+  "obj": [
+   "BICEP-MISHIMOTO.2",
+   "EMBRYO-GU.5",
+   "HP-MALE.10"
+  ],
+  "s": "A 7-month-old boy has a soft, painless swelling of the right hemiscrotum that is small in the morning and larger by evening or after crying. The swelling transilluminates brightly, the testis is palpable within it, and no bowel sounds are heard over it.",
+  "l": "Failure of which embryonic structure to close explains this swelling?",
+  "o": [
+   "Processus vaginalis",
+   "Gubernaculum",
+   "Urachus",
+   "Vitelline duct",
+   "Mesonephric duct"
+  ],
+  "a": 0,
+  "e": "A transilluminating scrotal swelling that changes size through the day is a communicating hydrocele: peritoneal fluid flows up and down a patent **processus vaginalis**. This peritoneal pouch runs ahead of the testis through the inguinal canal; its distal part becomes the tunica vaginalis, and the rest normally closes around birth. A wider opening lets bowel follow as an indirect inguinal hernia. The gubernaculum guides descent but is not a hollow channel, and a patent urachus or vitelline duct opens at the umbilicus.",
+  "w": {
+   "Gubernaculum": "The gubernaculum is a solid mesenchymal cord that guides the testis into the scrotum; it has no lumen, so it cannot carry peritoneal fluid.",
+   "Urachus": "The urachus connects the bladder dome to the umbilicus; a patent urachus leaks urine at the navel, far from the scrotum and groin.",
+   "Vitelline duct": "The vitelline duct joins the midgut to the yolk sac; remnants cause Meckel diverticulum or umbilical drainage of stool, not scrotal fluid.",
+   "Mesonephric duct": "The mesonephric duct forms the epididymis and vas deferens, which carry sperm; it has no connection to the peritoneal cavity."
+  },
+  "et": [
+   [
+    "Option",
+    "What it is",
+    "Normal fate",
+    "Persistence causes"
+   ],
+   [
+    [
+     "Processus vaginalis",
+     "Peritoneal pouch through the inguinal canal",
+     "Closes, leaving the tunica vaginalis",
+     "Indirect hernia, communicating hydrocele"
+    ],
+    [
+     "Gubernaculum",
+     "Mesenchymal cord to the scrotum",
+     "Scrotal ligament; ovarian and round ligaments in females",
+     "Maldescent if abnormal"
+    ],
+    [
+     "Urachus",
+     "Allantois remnant from the bladder",
+     "Median umbilical ligament",
+     "Urine at the umbilicus"
+    ],
+    [
+     "Vitelline duct",
+     "Midgut to yolk sac channel",
+     "Disappears",
+     "Meckel diverticulum"
+    ],
+    [
+     "Mesonephric duct",
+     "Embryonic kidney duct",
+     "Epididymis and vas deferens",
+     "Gartner duct cyst in females"
+    ]
+   ]
+  ],
+  "bl": "A communicating hydrocele or indirect hernia follows a patent processus vaginalis, the peritoneal pouch that forms the tunica vaginalis.",
+  "ef": "rp5_homologs",
+  "pt": {
+   "hl": [
+    "Processus vaginalis",
+    "Tunica vaginalis"
+   ],
+   "say": "The bottom row shows the processus vaginalis becoming the tunica vaginalis in males; a patent processus vaginalis lets peritoneal fluid reach the scrotum."
+  }
+ },
+ {
+  "id": "rp5q11",
+  "d": 2,
+  "tags": [
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp5-06"
+  ],
+  "obj": [
+   "EMBRYO-GU.5",
+   "EMBRYO-CLIN.10",
+   "HP-MALE.10"
+  ],
+  "s": "A 7-month-old boy has an empty left hemiscrotum. The left testis is palpable high in the inguinal canal and cannot be brought down into the scrotum. The right testis is normal. His parents ask about long-term consequences, and a surgeon recommends orchiopexy in the coming months.",
+  "l": "Which risk will remain increased in this boy even after successful orchiopexy?",
+  "o": [
+   "Germ cell tumor in either testis",
+   "Leydig cell tumor of the left testis",
+   "Torsion limited to the right testis",
+   "Varicocele of the left testis",
+   "Androgen deficiency with delayed puberty"
+  ],
+  "a": 0,
+  "e": "Cryptorchidism raises the risk of testicular **germ cell tumors**, especially seminoma, and the risk persists after orchiopexy and extends to the normally descended testis, which suggests an intrinsic defect of testicular development rather than a simple effect of position. Early orchiopexy improves fertility and makes the testis easy to examine but does not remove the cancer risk. Leydig cell tumors are not linked to maldescent, and a unilateral undescended testis usually leaves testosterone production and puberty normal.",
+  "w": {
+   "Leydig cell tumor of the left testis": "Leydig cell tumors are sex cord-stromal tumors that secrete androgens or estrogens; they are not the tumors linked to maldescent, which arise from germ cells.",
+   "Torsion limited to the right testis": "An undescended testis carries a higher torsion risk, but that risk belongs to the maldescended left side and falls after fixation in the scrotum.",
+   "Varicocele of the left testis": "A left varicocele comes from impaired drainage of the left testicular vein into the renal vein; it develops in adolescence and is unrelated to descent.",
+   "Androgen deficiency with delayed puberty": "Leydig cells tolerate heat better than germ cells, so one undescended testis rarely lowers testosterone, and puberty usually proceeds normally."
+  },
+  "et": [
+   [
+    "Option",
+    "Cell or structure involved",
+    "Usual cause",
+    "Effect of orchiopexy"
+   ],
+   [
+    [
+     "Germ cell tumor in either testis",
+     "Germ cells, from germ cell neoplasia in situ",
+     "Intrinsic testicular dysgenesis",
+     "Risk persists"
+    ],
+    [
+     "Leydig cell tumor of the left testis",
+     "Leydig (interstitial) cells",
+     "Sporadic stromal tumor",
+     "Not relevant"
+    ],
+    [
+     "Torsion limited to the right testis",
+     "Spermatic cord",
+     "Bell-clapper deformity",
+     "Fixation lowers left-sided risk"
+    ],
+    [
+     "Varicocele of the left testis",
+     "Pampiniform plexus",
+     "Left gonadal vein drainage",
+     "Not relevant here"
+    ],
+    [
+     "Androgen deficiency with delayed puberty",
+     "Leydig cells",
+     "Bilateral gonadal failure",
+     "Rare in unilateral cases"
+    ]
+   ]
+  ],
+  "bl": "Cryptorchidism raises germ cell tumor risk, mainly seminoma, in both testes; orchiopexy improves fertility but does not remove it."
+ },
+ {
+  "id": "rp5q12",
+  "d": 3,
+  "tags": [
+   "sex-development-signals",
+   "cell-of-origin"
+  ],
+  "bp": [
+   "BP-rp5-01"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.8",
+   "EMBRYO-GU.3"
+  ],
+  "s": "A 17-year-old girl has primary amenorrhea and no breast development. She is of normal height, and examination shows sparse pubic hair and normal female external genitalia. Ultrasound shows a small uterus and no identifiable ovaries. FSH and LH are markedly elevated. Karyotype is 46,XY, and sequencing shows a loss-of-function mutation in the SRY gene.",
+  "l": "Failure of which cell type to differentiate best explains why she has a uterus?",
+  "o": [
+   "Sertoli cells",
+   "Leydig cells",
+   "Granulosa cells",
+   "Primordial germ cells",
+   "Theca cells"
+  ],
+  "a": 0,
+  "e": "Without SRY the gonads never become testes and remain streak gonads, which is why FSH and LH are high and the breasts do not develop. The uterus specifically reflects missing **Sertoli cells**: SRY normally makes the supporting cells become Sertoli cells, whose anti-Müllerian hormone removes the Müllerian ducts. Absent Leydig cells explain the female external genitalia and missing Wolffian ducts, but androgen lack alone never preserves a uterus. Granulosa and theca cells belong to ovarian follicles, and germ cells do not secrete AMH.",
+  "w": {
+   "Leydig cells": "Absent Leydig cells explain the female external genitalia and missing male ducts, but testosterone has no role in removing Müllerian ducts, so they cannot explain the uterus.",
+   "Granulosa cells": "Granulosa cells are the ovarian partners of Sertoli cells; the fetal ovary makes little AMH, which is why a normal female keeps her uterus.",
+   "Primordial germ cells": "Germ cells migrate from the yolk sac and are needed to organize the gonad, but they secrete no hormone that controls duct regression.",
+   "Theca cells": "Theca cells surround ovarian follicles and supply androgen for aromatization after puberty; they never make the hormone that removes the Müllerian ducts."
+  },
+  "et": [
+   [
+    "Option",
+    "Gonad",
+    "Fetal product",
+    "Missing product causes"
+   ],
+   [
+    [
+     "Sertoli cells",
+     "Testis",
+     "Anti-Müllerian hormone",
+     "Uterus and tubes persist"
+    ],
+    [
+     "Leydig cells",
+     "Testis",
+     "Testosterone",
+     "Female genitalia, no Wolffian ducts"
+    ],
+    [
+     "Granulosa cells",
+     "Ovary",
+     "Estradiol after puberty; little fetal AMH",
+     "Absent puberty, no duct effect"
+    ],
+    [
+     "Primordial germ cells",
+     "Either",
+     "Gametes, no hormone",
+     "Gonadal dysgenesis, infertility"
+    ],
+    [
+     "Theca cells",
+     "Ovary",
+     "Androgen for aromatization",
+     "No fetal duct effect"
+    ]
+   ]
+  ],
+  "bl": "In Swyer syndrome, absent SRY means no Sertoli cells and no AMH, so a 46,XY girl keeps a uterus.",
+  "ef": "rp5_ducts",
+  "pt": {
+   "hl": [
+    "Sertoli cells → AMH"
+   ],
+   "say": "The first box of the male column shows Sertoli cells secreting AMH; without SRY no Sertoli cells form, so the Müllerian ducts persist as a uterus."
+  }
+ }
+]

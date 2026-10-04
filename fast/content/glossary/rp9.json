@@ -1,0 +1,43 @@
+[
+ {
+  "k": "rp9_poi",
+  "t": "Primary ovarian insufficiency",
+  "d": "Loss of ovarian follicle function before age 40, shown by amenorrhea with FSH in the menopausal range on two occasions. Causes include fragile X premutation, autoimmunity, Turner mosaicism and chemotherapy.",
+  "alt": []
+ },
+ {
+  "k": "rp9_fha",
+  "t": "Functional hypothalamic amenorrhea",
+  "d": "Amenorrhea from slowed GnRH pulses caused by low energy availability, intense exercise or stress, with low FSH, LH and estradiol and a risk of bone loss.",
+  "alt": []
+ },
+ {
+  "k": "rp9_shbg",
+  "t": "Sex hormone-binding globulin",
+  "d": "The liver protein that binds testosterone and estradiol in blood. Insulin lowers its production, so insulin resistance raises the free, active fraction of testosterone.",
+  "alt": [
+   "SHBG"
+  ]
+ },
+ {
+  "k": "rp9_rotterdam",
+  "t": "Rotterdam criteria",
+  "d": "The PCOS definition: two of oligo- or anovulation, clinical or biochemical hyperandrogenism and polycystic ovarian morphology, after excluding thyroid disease, hyperprolactinemia and nonclassic CAH.",
+  "alt": []
+ },
+ {
+  "k": "rp9_palm",
+  "t": "PALM-COEIN",
+  "d": "The FIGO system for abnormal uterine bleeding: structural causes polyp, adenomyosis, leiomyoma and malignancy or hyperplasia; nonstructural causes coagulopathy, ovulatory dysfunction, endometrial, iatrogenic and not otherwise classified.",
+  "alt": []
+ },
+ {
+  "k": "rp9_hsg",
+  "t": "Hysterosalpingography",
+  "d": "An X-ray study in which contrast is pushed through the cervix to outline the uterine cavity and tubes; free spill into the peritoneum shows the tubes are open.",
+  "alt": [
+   "HSG",
+   "hysterosalpingogram"
+  ]
+ }
+]

@@ -1,0 +1,52 @@
+<svg class="dia" viewBox="0 0 900 520" role="img" aria-label="Complete versus partial hydatidiform mole: an empty ovum fertilized by one sperm that duplicates gives an all-paternal 46,XX complete mole with no fetus; a normal ovum fertilized by two sperm gives a 69,XXY triploid partial mole with fetal parts; each side lists hCG, p57, ultrasound and cancer risk">
+<text class="ttl" x="14" y="24" font-size="17">Complete versus partial mole: count the parental genomes</text>
+<rect x="14" y="40" width="428" height="466" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="30" y="68" font-size="16">Complete mole</text>
+<circle cx="90" cy="150" r="46" fill="var(--surface)" stroke="var(--a1)" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="90" y="155" font-size="13" text-anchor="middle">no nucleus</text>
+<text x="90" y="214" font-size="14" text-anchor="middle">Empty ovum</text>
+<text x="152" y="158" font-size="22" text-anchor="middle">+</text>
+<ellipse cx="190" cy="150" rx="12" ry="8" fill="var(--a2)"/>
+<path d="M202 150 C 214 140, 224 160, 238 150" fill="none" stroke="var(--a2)" stroke-width="2"/>
+<text x="205" y="214" font-size="14" text-anchor="middle">1 sperm</text>
+<line x1="248" y1="150" x2="290" y2="150" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="290,145 298,150 290,155" fill="var(--ink-2)"/>
+<circle cx="356" cy="150" r="50" fill="var(--surface)" stroke="var(--a1)" stroke-width="2"/>
+<text class="b" x="356" y="146" font-size="15" text-anchor="middle">46,XX</text>
+<text x="356" y="168" font-size="13" text-anchor="middle">all paternal</text>
+<text x="356" y="222" font-size="13" text-anchor="middle">sperm DNA duplicates</text>
+<text x="30" y="262" font-size="14">No embryo or fetal parts</text>
+<text x="30" y="292" font-size="14">hCG very high, uterus large for dates</text>
+<text x="30" y="322" font-size="14">Snowstorm or cluster of grapes</text>
+<text x="30" y="352" font-size="14">p57 negative: no maternal genes</text>
+<text x="30" y="382" font-size="14">Hyperemesis, early preeclampsia</text>
+<text x="30" y="412" font-size="14">Hyperthyroidism, theca lutein cysts</text>
+<text x="30" y="442" font-size="14">Neoplasia in about 15 to 20%</text>
+<text x="30" y="472" font-size="14">Choriocarcinoma in about 2%</text>
+<rect x="458" y="40" width="428" height="466" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="474" y="68" font-size="16">Partial mole</text>
+<circle cx="534" cy="150" r="46" fill="var(--surface)" stroke="var(--a2)" stroke-width="2"/>
+<circle cx="534" cy="140" r="13" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="534" y="178" font-size="13" text-anchor="middle">23,X</text>
+<text x="534" y="214" font-size="14" text-anchor="middle">Normal ovum</text>
+<text x="596" y="158" font-size="22" text-anchor="middle">+</text>
+<ellipse cx="632" cy="134" rx="12" ry="8" fill="var(--a2)"/>
+<path d="M644 134 C 656 124, 666 144, 680 134" fill="none" stroke="var(--a2)" stroke-width="2"/>
+<ellipse cx="632" cy="166" rx="12" ry="8" fill="var(--a2)"/>
+<path d="M644 166 C 656 156, 666 176, 680 166" fill="none" stroke="var(--a2)" stroke-width="2"/>
+<text x="650" y="214" font-size="14" text-anchor="middle">2 sperm</text>
+<line x1="690" y1="150" x2="734" y2="150" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="734,145 742,150 734,155" fill="var(--ink-2)"/>
+<circle cx="800" cy="150" r="50" fill="var(--surface)" stroke="var(--a2)" stroke-width="2"/>
+<text class="b" x="800" y="146" font-size="15" text-anchor="middle">69,XXY</text>
+<text x="800" y="168" font-size="13" text-anchor="middle">triploid</text>
+<text x="800" y="222" font-size="13" text-anchor="middle">maternal + 2 paternal</text>
+<text x="474" y="262" font-size="14">Fetal parts present, abnormal</text>
+<text x="474" y="292" font-size="14">hCG normal or mildly raised</text>
+<text x="474" y="322" font-size="14">Focal cystic change in the placenta</text>
+<text x="474" y="352" font-size="14">p57 positive: maternal set present</text>
+<text x="474" y="382" font-size="14">Often looks like a missed abortion</text>
+<text x="474" y="412" font-size="14">Fewer hCG-driven complications</text>
+<text x="474" y="442" font-size="14">Neoplasia in under 5%</text>
+<text x="474" y="472" font-size="14">Choriocarcinoma very rare</text>
+</svg>

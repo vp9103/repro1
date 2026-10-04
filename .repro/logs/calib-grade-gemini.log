@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "C:\Users\varsh\repro-endo-path\xmodel.py", line 1355, in <module>
+    sys.exit(main(sys.argv[1:]))
+             ~~~~^^^^^^^^^^^^^^
+  File "C:\Users\varsh\repro-endo-path\xmodel.py", line 1321, in main
+    return cmd_calibrate(argv[1], prov or "codex")
+  File "C:\Users\varsh\repro-endo-path\xmodel.py", line 505, in cmd_calibrate
+    out, model = ask_json(provider, GRADE_PROMPT.format(items="\n".join(lines)), GRADE_SCHEMA, transcript_path("calibrate", f"grade-{provider}"))
+                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\repro-endo-path\xmodel.py", line 202, in ask_json
+    return (_codex if provider == "codex" else _gemini)(prompt, schema, transcript, images or [])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varsh\repro-endo-path\xmodel.py", line 196, in _gemini
+    raise RuntimeError("gemini failed on every model/format: " + str(last_err))
+RuntimeError: gemini failed on every model/format: gemini-3.1-pro-preview json_schema: HTTP 429 [{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota e

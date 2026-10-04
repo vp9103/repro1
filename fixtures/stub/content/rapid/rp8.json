@@ -1,0 +1,98 @@
+[
+ {
+  "id": "rp8r01",
+  "tags": [
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-rp8-01"
+  ],
+  "q": "Which hormone surge triggers ovulation?",
+  "o": [
+   "LH",
+   "FSH",
+   "Estradiol",
+   "Progesterone",
+   "Inhibin B"
+  ],
+  "a": 0,
+  "x": "Two days of high estradiol flip the pituitary to positive feedback; the LH surge that follows completes meiosis I and ruptures the follicle about 36 hours later.",
+  "w": {
+   "FSH": "FSH rises modestly with LH at mid-cycle, but its role is recruiting and growing follicles earlier in the cycle.",
+   "Estradiol": "Estradiol triggers the surge by switching feedback, but it is the LH surge itself that causes ovulation.",
+   "Progesterone": "Progesterone rises after ovulation from the corpus luteum; it follows ovulation rather than triggering it.",
+   "Inhibin B": "Inhibin B from granulosa cells suppresses FSH in the follicular phase and has no ovulatory role."
+  },
+  "media": "fig:rp8_cycle",
+  "pt": {
+   "hl": [
+    "LH surge triggers ovulation"
+   ],
+   "say": "At the start of the luteal panel, the LH surge triggers ovulation."
+  }
+ },
+ {
+  "id": "rp8r02",
+  "tags": [
+   "cycle-phases"
+  ],
+  "bp": [
+   "BP-rp8-01"
+  ],
+  "q": "Which phase keeps a fixed length of about 14 days?",
+  "o": [
+   "Luteal phase",
+   "Follicular phase",
+   "Menstrual phase",
+   "Proliferative phase",
+   "Ovulatory phase"
+  ],
+  "a": 0,
+  "x": "The corpus luteum lives about 14 days unless hCG rescues it, so the luteal phase is fixed and cycle length varies in the follicular phase.",
+  "w": {
+   "Follicular phase": "The follicular phase is the variable part, because follicle selection takes a different time each cycle.",
+   "Menstrual phase": "Menstrual flow lasts only three to seven days and overlaps the start of the follicular phase.",
+   "Proliferative phase": "The proliferative phase is the endometrial name for the follicular phase, so it varies too.",
+   "Ovulatory phase": "Ovulation is a brief event about 36 hours after the LH surge, not a two-week phase."
+  },
+  "media": "fig:rp8_cycle",
+  "pt": {
+   "hl": [
+    "Luteal phase (about 14 days)"
+   ],
+   "say": "The luteal phase panel is labeled about 14 days: the corpus luteum's lifespan fixes it."
+  }
+ },
+ {
+  "id": "rp8r03",
+  "tags": [
+   "cycle-phases"
+  ],
+  "bp": [
+   "BP-rp8-01"
+  ],
+  "q": "Which endometrial pattern follows ovulation?",
+  "o": [
+   "Secretory glands",
+   "Proliferative glands",
+   "Atrophic glands",
+   "Decidualized stroma",
+   "Hyperplastic glands"
+  ],
+  "a": 0,
+  "x": "Progesterone from the corpus luteum turns straight proliferative glands into coiled secretory glands with subnuclear vacuoles.",
+  "w": {
+   "Proliferative glands": "Straight proliferative glands with mitoses reflect estradiol before ovulation, not progesterone after it.",
+   "Atrophic glands": "Atrophic glands are small and inactive, as after menopause when estradiol is low.",
+   "Decidualized stroma": "Decidua needs sustained progesterone with hCG in pregnancy, not the ordinary luteal phase.",
+   "Hyperplastic glands": "Hyperplasia comes from unopposed estrogen and shows crowded glands, not secretory change."
+  },
+  "media": "img:rp8_endometrium",
+  "pt": {
+   "hl": [
+    "Secretory glands"
+   ],
+   "say": "Secretory glands, coiled and vacuolated, are the progesterone effect after ovulation."
+  }
+ }
+]

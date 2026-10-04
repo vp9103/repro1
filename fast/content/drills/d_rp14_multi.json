@@ -1,0 +1,111 @@
+{
+ "id": "d_rp14_multi",
+ "c": "rp14",
+ "kind": "multi",
+ "t": "Which uterine lesion fits?",
+ "tags": [
+  "histology-to-diagnosis",
+  "normal-vs-pathologic"
+ ],
+ "key": "Ask where the tissue sits and whether it is benign muscle: endometrium outside the uterus is endometriosis, endometrium inside the wall is adenomyosis, benign whorled muscle is leiomyoma, and muscle with atypia, necrosis and mitoses is leiomyosarcoma.",
+ "cols": [
+  {
+   "id": "endo",
+   "l": "Endometriosis"
+  },
+  {
+   "id": "adeno",
+   "l": "Adenomyosis"
+  },
+  {
+   "id": "leio",
+   "l": "Leiomyoma"
+  },
+  {
+   "id": "lms",
+   "l": "Leiomyosarcoma"
+  }
+ ],
+ "items": [
+  [
+   "Chocolate cyst of the ovary",
+   "endo",
+   "Cyclic bleeding into an ovarian endometrioma leaves thick brown fluid of old blood."
+  ],
+  [
+   "Powder-burn nodules on the peritoneum",
+   "endo",
+   "Hemosiderin from repeated old bleeding stains the peritoneal implants red-brown or black."
+  ],
+  [
+   "Painful defecation during menses",
+   "endo",
+   "Implants in the rectovaginal septum and uterosacral ligaments bleed and scar with each cycle."
+  ],
+  [
+   "Normal-sized uterus with infertility",
+   "endo",
+   "The tissue lies outside the uterus, so size is normal while adhesions distort the tubes and ovaries."
+  ],
+  [
+   "Uniformly enlarged, boggy, globular uterus",
+   "adeno",
+   "The myometrium thickens in reaction to glands scattered through the wall."
+  ],
+  [
+   "Heavy, painful periods at age 45 after several births",
+   "adeno",
+   "Glands inside the muscle bleed and the thickened wall cramps; the typical patient is multiparous and in her forties."
+  ],
+  [
+   "Endometrial glands and stroma between muscle bundles",
+   "adeno",
+   "That is the definition: basalis-type tissue extends deep into the myometrium."
+  ],
+  [
+   "Diagnosis proven on the hysterectomy specimen",
+   "adeno",
+   "Imaging suggests it, but only histology of the removed uterus proves glands within the muscle."
+  ],
+  [
+   "Whorled, sharply circumscribed gray-white nodule",
+   "leio",
+   "Interlacing smooth muscle bundles create the swirling cut surface and a sharp edge."
+  ],
+  [
+   "Shrinks after menopause",
+   "leio",
+   "Growth depends on estrogen and progesterone, and both fall at menopause."
+  ],
+  [
+   "Painful red degeneration during pregnancy",
+   "leio",
+   "Rapid growth outstrips the blood supply, causing hemorrhagic infarction of the fibroid."
+  ],
+  [
+   "More common in Black women",
+   "leio",
+   "Incidence is two to three times higher than in white women."
+  ],
+  [
+   "Arises de novo, not from a fibroid",
+   "lms",
+   "It is a separate malignant tumor; benign leiomyomas essentially never transform."
+  ],
+  [
+   "Solitary soft necrotic mass after menopause",
+   "lms",
+   "Postmenopausal age plus a single hemorrhagic, necrotic tumor suggests malignancy."
+  ],
+  [
+   "Atypia, necrosis and mitoses together",
+   "lms",
+   "No single feature suffices, because mitoses also occur in benign tumors of young women."
+  ],
+  [
+   "Spreads through the blood to the lungs",
+   "lms",
+   "Hematogenous metastasis is typical, and recurrence after surgery is common."
+  ]
+ ]
+}

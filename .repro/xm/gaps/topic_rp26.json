@@ -1,0 +1,137 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp26",
+ "hash": "55fb6c2369fe",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:18:48",
+ "gaps": [
+  {
+   "gid": "GAP-rp26-01",
+   "concept": "Gestational age is counted from the last menstrual period, approximately two weeks before fertilization; first-trimester crown–rump length is the most accurate ultrasound dating measure.",
+   "why_tested": "A stem asks for gestational age or reconciles menstrual dates with an early ultrasound.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp26-02",
+   "concept": "On transvaginal ultrasound, a gestational sac appears around five weeks, a yolk sac around 5.5 weeks, and an embryo around six weeks.",
+   "why_tested": "An early scan shows fewer structures than expected, requiring distinction between normal timing and pregnancy loss.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp26-03",
+   "concept": "Early pregnancy loss is diagnostic with crown–rump length ≥7 mm without cardiac activity or mean sac diameter ≥25 mm without an embryo.",
+   "why_tested": "Ultrasound measurements determine whether absent cardiac activity or an empty sac establishes nonviability.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp26-04",
+   "concept": "A slower hCG rise or an empty uterus alone cannot definitively diagnose ectopic pregnancy; early viable pregnancies may overlap.",
+   "why_tested": "A stable patient has uncertain pregnancy location and a borderline hCG trend.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp26-05",
+   "concept": "Tubal inflammation or scarring impairs ciliary transport of the embryo, causing ectopic implantation.",
+   "why_tested": "A patient with prior salpingitis develops a tubal pregnancy; the question asks for the underlying mechanism.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp26-06",
+   "concept": "An extraovarian adnexal mass or tubal ring suggests ectopic pregnancy; echogenic pelvic free fluid suggests bleeding.",
+   "why_tested": "A transvaginal ultrasound shows an empty uterus and an adnexal finding.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp26-07",
+   "concept": "A central intrauterine fluid collection can be a pseudogestational sac; a yolk sac or embryo confirms a true gestational sac.",
+   "why_tested": "An apparent uterine sac creates false reassurance in a patient with suspected ectopic pregnancy.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp26-08",
+   "concept": "Heterotopic pregnancy is simultaneous intrauterine and ectopic pregnancy, especially after assisted reproduction.",
+   "why_tested": "An intrauterine pregnancy is visible, but pain and an adnexal mass persist after IVF.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp26-09",
+   "concept": "Shoulder-tip pain from diaphragmatic irritation and hypotension from hemorrhage are clues to ruptured ectopic pregnancy.",
+   "why_tested": "A pregnant patient develops shoulder pain, syncope, or shock despite limited vaginal bleeding.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp26-10",
+   "concept": "Anembryonic pregnancy is an intrauterine gestational sac that develops without an embryo.",
+   "why_tested": "Ultrasound shows an empty sac meeting pregnancy-loss criteria.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp26-11",
+   "concept": "Retained products remain visible after incomplete abortion; the uterine cavity is empty after complete abortion.",
+   "why_tested": "Bleeding follows passage of tissue, and ultrasound must distinguish incomplete from complete loss.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp26-12",
+   "concept": "Septic abortion presents with fever, uterine tenderness, and foul discharge; treatment requires antibiotics and uterine evacuation.",
+   "why_tested": "A patient becomes febrile after pregnancy loss with retained tissue.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp26-13",
+   "concept": "Stable early pregnancy loss can be managed expectantly, with misoprostol, or with uterine aspiration; hemorrhage or infection favors urgent aspiration.",
+   "why_tested": "A stem asks for an appropriate first-line option after confirmed pregnancy loss.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp26-14",
+   "concept": "Trisomy 16 is the most common autosomal trisomy found in first-trimester miscarriages.",
+   "why_tested": "Cytogenetic testing after an early loss asks for the characteristic chromosomal finding.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp26-15",
+   "concept": "Molar pregnancy risk rises at extremes of maternal age and after a prior hydatidiform mole.",
+   "why_tested": "A stem asks which patient is at increased risk of gestational trophoblastic disease.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp26-16",
+   "concept": "Complete moles show diffusely hydropic chorionic villi with circumferential trophoblastic proliferation; partial moles have mixed villous sizes and focal proliferation.",
+   "why_tested": "A pathology image or description asks the student to distinguish complete from partial mole.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp26-17",
+   "concept": "Very high hCG stimulates TSH receptors because hCG and TSH share an alpha subunit, causing molar-pregnancy hyperthyroidism.",
+   "why_tested": "A molar-pregnancy vignette includes suppressed TSH and elevated thyroid hormones and asks for the mechanism.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp26-18",
+   "concept": "Complete moles have a substantially greater risk of persistent trophoblastic neoplasia than partial moles.",
+   "why_tested": "A question compares prognosis after the two histologic types of mole.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp26-19",
+   "concept": "Invasive mole contains hydropic chorionic villi invading the myometrium; choriocarcinoma has no villi.",
+   "why_tested": "Persistent hCG after molar evacuation is paired with a myometrial pathology specimen.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp26-20",
+   "concept": "Gestational choriocarcinoma can follow a normal delivery, miscarriage, or ectopic pregnancy and may present with persistent postpartum bleeding.",
+   "why_tested": "Vaginal bleeding and elevated hCG occur months after a nonmolar pregnancy.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp26-21",
+   "concept": "Placental-site trophoblastic tumor often has relatively low hCG despite tumor burden and is less chemotherapy-sensitive than other gestational trophoblastic neoplasms.",
+   "why_tested": "Delayed bleeding after pregnancy accompanies a uterine mass with modest hCG elevation.",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp26-1790443009693.jsonl"
+}

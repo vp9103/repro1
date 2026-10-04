@@ -1,0 +1,18 @@
+{
+  "errors": [
+    {
+      "what": "One solid estradiol feedback path is labeled “negative feedback” and “positive at mid-cycle: LH surge.”",
+      "why_wrong": "The annotation states the exception correctly, but the drawing does not distinguish the usual negative feedback from the mid-cycle positive switch. A student could read them as simultaneous effects.",
+      "severity": "misleading"
+    },
+    {
+      "what": "The hormone and feedback labels are small relative to the image.",
+      "why_wrong": "They remain readable at full size, but are difficult to scan at this displayed size.",
+      "severity": "cosmetic"
+    }
+  ],
+  "legibility": 4,
+  "teaches_caption": true,
+  "overall": 8,
+  "verdict": "Physiologically sound and clear enough for review. Separate visual states for usual feedback and the mid-cycle switch would make the key exception easier to learn."
+}

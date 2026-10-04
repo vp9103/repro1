@@ -1,0 +1,131 @@
+{
+ "cmd": "gaps",
+ "key": "topic:en5",
+ "hash": "e3dcf7446c67",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 11:51:15",
+ "gaps": [
+  {
+   "gid": "GAP-en5-01",
+   "concept": "Thyroid follicular cells arise from pharyngeal endoderm; a pyramidal lobe is persistent thyroglossal duct tissue.",
+   "why_tested": "An embryology stem asks which tissue forms follicles or identifies a projection above the isthmus.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en5-02",
+   "concept": "Hypothalamic TRH stimulates pituitary TSH; circulating T3 and T4 suppress both through negative feedback.",
+   "why_tested": "A hormone-axis stem asks why TSH changes when circulating thyroid hormone changes.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en5-03",
+   "concept": "TSH activates a basolateral Gs-coupled receptor, raising cAMP to stimulate follicular growth and hormone synthesis and release.",
+   "why_tested": "A signaling stem asks for the second messenger downstream of TSH.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en5-04",
+   "concept": "The sodium–iodide symporter takes up iodide basolaterally; pendrin transports it across the apical membrane into colloid.",
+   "why_tested": "A labeled follicle diagram asks where iodide enters the cell and colloid.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en5-05",
+   "concept": "Follicular cells endocytose iodinated colloid; lysosomal proteolysis releases T3 and T4, while MIT and DIT are deiodinated for recycling.",
+   "why_tested": "A synthesis diagram asks how stored hormone is released or iodide recovered.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en5-06",
+   "concept": "T3 binds an intracellular nuclear receptor that regulates gene transcription.",
+   "why_tested": "A receptor-mechanism stem contrasts thyroid hormone signaling with membrane receptor signaling.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en5-07",
+   "concept": "Excess iodide normally causes a transient Wolff–Chaikoff effect; reduced iodide uptake permits escape and renewed synthesis.",
+   "why_tested": "A time-course stem asks why hormone production resumes despite continued iodide exposure.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en5-08",
+   "concept": "Pendred syndrome results from biallelic SLC26A4 pendrin defects and links goiter or impaired iodide organification with sensorineural hearing loss.",
+   "why_tested": "A child with hearing loss and goiter prompts identification of the defective transporter.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en5-09",
+   "concept": "Iodine deficiency reduces hormone synthesis; compensatory TSH stimulation causes goiter and can impair fetal neurodevelopment.",
+   "why_tested": "A low-iodine dietary stem asks for the mechanism of goiter or congenital neurologic injury.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en5-10",
+   "concept": "Subclinical hypothyroidism has elevated TSH with normal free T4; subclinical hyperthyroidism has suppressed TSH with normal free T4 and T3.",
+   "why_tested": "A laboratory interpretation stem gives an abnormal TSH with thyroid hormones still in range.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en5-11",
+   "concept": "T3 thyrotoxicosis produces suppressed TSH and elevated T3 despite normal free T4.",
+   "why_tested": "A symptomatic patient has low TSH but normal free T4; T3 testing resolves the pattern.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en5-12",
+   "concept": "Low serum thyroglobulin favors exogenous thyroid hormone use; elevated thyroglobulin favors thyroiditis when radioactive iodine uptake is low.",
+   "why_tested": "Two patients have thyrotoxicosis and low uptake; thyroglobulin distinguishes hormone ingestion from gland leakage.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en5-13",
+   "concept": "High-dose biotin can falsely lower measured TSH and falsely elevate measured free T4 or T3 in susceptible immunoassays.",
+   "why_tested": "An asymptomatic supplement user has laboratory results resembling hyperthyroidism.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en5-14",
+   "concept": "THRB-related thyroid hormone resistance causes high free T4 or T3 with nonsuppressed TSH, resembling a TSH-secreting pituitary adenoma.",
+   "why_tested": "A high-thyroid-hormone, nonsuppressed-TSH stem asks for a receptor defect versus pituitary secretion.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en5-15",
+   "concept": "A hyperfunctioning ‘hot’ thyroid nodule is rarely malignant; a nonfunctioning ‘cold’ nodule warrants malignancy assessment.",
+   "why_tested": "A radionuclide scan asks how focal uptake changes cancer suspicion.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en5-16",
+   "concept": "Suspicious thyroid ultrasound findings include microcalcifications, marked hypoechogenicity, irregular margins, and taller-than-wide shape.",
+   "why_tested": "A nodule-imaging stem asks which lesion is most concerning for malignancy.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en5-17",
+   "concept": "Ultrasound-guided fine-needle aspiration provides cytology for a suspicious thyroid nodule.",
+   "why_tested": "A nodule-investigation stem asks which test samples a sonographically suspicious lesion.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en5-18",
+   "concept": "Serum thyroglobulin tracks differentiated follicular-cell thyroid cancer after thyroid removal; calcitonin is a marker of medullary C-cell cancer.",
+   "why_tested": "A postoperative marker stem asks which thyroid-cell product corresponds to the tumor lineage.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en5-19",
+   "concept": "Lithium inhibits thyroid hormone release; amiodarone can disrupt thyroid function and inhibit peripheral T4-to-T3 conversion.",
+   "why_tested": "A medication-exposure stem asks why thyroid hormone levels or TSH changed.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en5-20",
+   "concept": "Methimazole and propylthiouracil can cause agranulocytosis; propylthiouracil has greater severe liver-injury risk, and methimazole can cause embryopathy.",
+   "why_tested": "A thionamide-treated patient develops fever, liver injury, or a characteristic fetal defect.",
+   "yield": "hi"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-en5-1790441388513.jsonl"
+}

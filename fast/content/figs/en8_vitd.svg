@@ -1,0 +1,47 @@
+<svg class="dia" viewBox="0 0 900 440" role="img" aria-label="Vitamin D activation: skin makes vitamin D3 with UVB, the liver 25-hydroxylates it to the storage form, the kidney 1-alpha-hydroxylates it to calcitriol under PTH and FGF23 control, and granulomas make calcitriol without control">
+<text class="ttl" x="14" y="26" font-size="17">Vitamin D is activated in three organs; only the kidney step is regulated</text>
+<rect x="14" y="46" width="200" height="150" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="26" y="70" font-size="15">1. Skin</text>
+<text x="26" y="94" font-size="15">UVB converts</text>
+<text x="26" y="116" font-size="15">7-dehydrocholesterol</text>
+<text x="26" y="138" font-size="15">to vitamin D3</text>
+<text x="26" y="160" font-size="15">Diet adds D2 and D3</text>
+<line x1="216" y1="121" x2="230" y2="121" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="230,116 238,121 230,126" fill="var(--ink-2)"/>
+<rect x="238" y="46" width="200" height="150" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="250" y="70" font-size="15">2. Liver</text>
+<text x="250" y="94" font-size="15">25-hydroxylase makes</text>
+<text x="250" y="116" font-size="15">25-hydroxyvitamin D</text>
+<text x="250" y="138" font-size="15">Storage form and</text>
+<text x="250" y="160" font-size="15">the test of stores</text>
+<line x1="440" y1="121" x2="454" y2="121" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="454,116 462,121 454,126" fill="var(--ink-2)"/>
+<rect x="462" y="46" width="200" height="150" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="474" y="70" font-size="15">3. Kidney</text>
+<text x="474" y="94" font-size="15">Proximal tubule</text>
+<text x="474" y="116" font-size="15">1-alpha-hydroxylase</text>
+<text x="474" y="138" font-size="15">makes calcitriol,</text>
+<text x="474" y="160" font-size="15">the active hormone</text>
+<line x1="664" y1="121" x2="678" y2="121" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="678,116 686,121 678,126" fill="var(--ink-2)"/>
+<rect x="686" y="46" width="200" height="150" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="698" y="70" font-size="15">4. Gut and bone</text>
+<text x="698" y="94" font-size="15">More calcium and</text>
+<text x="698" y="116" font-size="15">phosphate absorbed</text>
+<text x="698" y="138" font-size="15">Supplies mineral</text>
+<text x="698" y="160" font-size="15">for bone</text>
+<rect x="14" y="222" width="424" height="96" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="246" font-size="15">Why 25-hydroxyvitamin D is the test</text>
+<text x="28" y="270" font-size="15">In deficiency, high PTH pushes the kidney step,</text>
+<text x="28" y="292" font-size="15">so calcitriol stays normal as stores run out</text>
+<rect x="462" y="222" width="424" height="96" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="476" y="246" font-size="15">Controls on 1-alpha-hydroxylase</text>
+<text x="476" y="270" font-size="15">Turned up: PTH, low phosphate</text>
+<text x="476" y="292" font-size="15">Turned down: FGF23, calcitriol, high phosphate</text>
+<line x1="562" y1="222" x2="562" y2="204" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="557,204 562,196 567,204" fill="var(--ink-2)"/>
+<rect x="14" y="338" width="872" height="90" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="28" y="362" font-size="15">Unregulated source: granulomas (sarcoidosis, TB) and some lymphomas</text>
+<text x="28" y="388" font-size="15">Macrophages carry their own 1-alpha-hydroxylase that ignores PTH, so calcitriol rises</text>
+<text x="28" y="410" font-size="15">Result: hypercalcemia with a suppressed PTH</text>
+</svg>

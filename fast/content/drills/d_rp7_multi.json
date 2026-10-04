@@ -1,0 +1,87 @@
+{
+ "id": "d_rp7_multi",
+ "c": "rp7",
+ "kind": "multi",
+ "t": "Why is puberty late?",
+ "tags": [
+  "feedback-logic",
+  "normal-vs-pathologic"
+ ],
+ "key": "Read LH and FSH first: high values mean the gonads failed (hypergonadotropic); low values mean GnRH or the pituitary is quiet, either temporarily with a delayed bone age and family history (constitutional delay) or from a real defect (hypogonadotropic).",
+ "cols": [
+  {
+   "id": "cdgp",
+   "l": "Constitutional delay"
+  },
+  {
+   "id": "hypo",
+   "l": "Hypogonadotropic hypogonadism"
+  },
+  {
+   "id": "hyper",
+   "l": "Hypergonadotropic hypogonadism"
+  }
+ ],
+ "items": [
+  [
+   "Father had his growth spurt at 16",
+   "cdgp",
+   "A late-maturing parent is the classic clue, because the timing of puberty is strongly inherited."
+  ],
+  [
+   "Bone age 2 years behind, LH fitting the bone age",
+   "cdgp",
+   "The whole clock runs late, so gonadotropins are appropriate for the skeletal age rather than truly deficient."
+  ],
+  [
+   "Steady growth along a low percentile",
+   "cdgp",
+   "Growth velocity is normal for bone age, unlike the falling velocity of a hormone deficiency."
+  ],
+  [
+   "Puberty starts on its own by 15 to 17",
+   "cdgp",
+   "The axis is healthy but late, so puberty eventually begins without treatment."
+  ],
+  [
+   "Anosmia with a cleft lip",
+   "hypo",
+   "Kallmann syndrome links failed GnRH neuron migration with olfactory failure and midline defects."
+  ],
+  [
+   "Gymnast with a BMI of 16",
+   "hypo",
+   "Low body fat lowers leptin, which suppresses GnRH pulses until energy balance improves."
+  ],
+  [
+   "Anorexia nervosa",
+   "hypo",
+   "Energy deficit causes a reversible, functional suppression of hypothalamic GnRH secretion."
+  ],
+  [
+   "Craniopharyngioma",
+   "hypo",
+   "A sellar mass compresses the pituitary and stalk, lowering LH and FSH along with other pituitary hormones."
+  ],
+  [
+   "Short girl with streak ovaries",
+   "hyper",
+   "Turner syndrome ovaries fail, so the pituitary raises FSH and LH against absent estrogen feedback."
+  ],
+  [
+   "47,XXY karyotype",
+   "hyper",
+   "Klinefelter testes fail at the tubules and Leydig cells, so FSH and LH climb."
+  ],
+  [
+   "Previous pelvic radiation for cancer",
+   "hyper",
+   "Radiation destroys oocytes or germ cells directly, a gonadal failure with high gonadotropins."
+  ],
+  [
+   "FSH markedly raised with low estradiol",
+   "hyper",
+   "High FSH against low sex steroids shows the pituitary is working and the gonad is not."
+  ]
+ ]
+}

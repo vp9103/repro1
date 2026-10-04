@@ -1,0 +1,97 @@
+<svg class="dia" viewBox="0 0 900 628" role="img" aria-label="Aneuploidy and neural tube screening patterns: quad screen markers for trisomy 21, trisomy 18, open neural tube defect, abdominal wall defect and twins; first-trimester screen markers for trisomy 21 and 18; and the diagnostic tests that confirm a positive screen">
+<text class="ttl" x="14" y="24" font-size="17">Screening patterns point to the diagnosis, then a test confirms it</text>
+<text class="b" x="14" y="56" font-size="15">Quad screen at 15 to 22 weeks: AFP, estriol, hCG, inhibin A</text>
+<rect x="14" y="66" width="872" height="30" rx="4" fill="var(--surface-3)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="b" x="22" y="86" font-size="14">Condition</text>
+<text class="b" x="350.0" y="86" font-size="14" text-anchor="middle">AFP</text>
+<text class="b" x="502.0" y="86" font-size="14" text-anchor="middle">Estriol</text>
+<text class="b" x="654.0" y="86" font-size="14" text-anchor="middle">hCG</text>
+<text class="b" x="806.0" y="86" font-size="14" text-anchor="middle">Inhibin A</text>
+<rect x="14" y="100" width="872" height="34" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="b" x="22" y="122" font-size="14">Trisomy 21 (Down syndrome)</text>
+<rect x="276" y="103" width="148" height="28" rx="4" fill="var(--a2-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="a2" x="350.0" y="122" font-size="14" text-anchor="middle">↓ low</text>
+<rect x="428" y="103" width="148" height="28" rx="4" fill="var(--a2-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="a2" x="502.0" y="122" font-size="14" text-anchor="middle">↓ low</text>
+<rect x="580" y="103" width="148" height="28" rx="4" fill="var(--warn-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="wn" x="654.0" y="122" font-size="14" text-anchor="middle">↑ high</text>
+<rect x="732" y="103" width="148" height="28" rx="4" fill="var(--warn-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="wn" x="806.0" y="122" font-size="14" text-anchor="middle">↑ high</text>
+<rect x="14" y="138" width="872" height="34" rx="4" fill="var(--surface)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="b" x="22" y="160" font-size="14">Trisomy 18 (Edwards syndrome)</text>
+<rect x="276" y="141" width="148" height="28" rx="4" fill="var(--a2-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="a2" x="350.0" y="160" font-size="14" text-anchor="middle">↓ low</text>
+<rect x="428" y="141" width="148" height="28" rx="4" fill="var(--a2-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="a2" x="502.0" y="160" font-size="14" text-anchor="middle">↓ low</text>
+<rect x="580" y="141" width="148" height="28" rx="4" fill="var(--a2-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="a2" x="654.0" y="160" font-size="14" text-anchor="middle">↓ low</text>
+<rect x="732" y="141" width="148" height="28" rx="4" fill="var(--a2-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="a2" x="806.0" y="160" font-size="14" text-anchor="middle">↓ low</text>
+<rect x="14" y="176" width="872" height="34" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="b" x="22" y="198" font-size="14">Open neural tube defect</text>
+<rect x="276" y="179" width="148" height="28" rx="4" fill="var(--warn-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="wn" x="350.0" y="198" font-size="14" text-anchor="middle">↑ high</text>
+<rect x="428" y="179" width="148" height="28" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<text x="502.0" y="198" font-size="14" text-anchor="middle">normal</text>
+<rect x="580" y="179" width="148" height="28" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<text x="654.0" y="198" font-size="14" text-anchor="middle">normal</text>
+<rect x="732" y="179" width="148" height="28" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<text x="806.0" y="198" font-size="14" text-anchor="middle">normal</text>
+<rect x="14" y="214" width="872" height="34" rx="4" fill="var(--surface)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="b" x="22" y="236" font-size="14">Abdominal wall defect</text>
+<rect x="276" y="217" width="148" height="28" rx="4" fill="var(--warn-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="wn" x="350.0" y="236" font-size="14" text-anchor="middle">↑ high</text>
+<rect x="428" y="217" width="148" height="28" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<text x="502.0" y="236" font-size="14" text-anchor="middle">normal</text>
+<rect x="580" y="217" width="148" height="28" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<text x="654.0" y="236" font-size="14" text-anchor="middle">normal</text>
+<rect x="732" y="217" width="148" height="28" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<text x="806.0" y="236" font-size="14" text-anchor="middle">normal</text>
+<rect x="14" y="252" width="872" height="34" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="b" x="22" y="274" font-size="14">Twin pregnancy</text>
+<rect x="276" y="255" width="148" height="28" rx="4" fill="var(--warn-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="wn" x="350.0" y="274" font-size="14" text-anchor="middle">↑ high</text>
+<rect x="428" y="255" width="148" height="28" rx="4" fill="var(--warn-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="wn" x="502.0" y="274" font-size="14" text-anchor="middle">↑ high</text>
+<rect x="580" y="255" width="148" height="28" rx="4" fill="var(--warn-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="wn" x="654.0" y="274" font-size="14" text-anchor="middle">↑ high</text>
+<rect x="732" y="255" width="148" height="28" rx="4" fill="var(--warn-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="wn" x="806.0" y="274" font-size="14" text-anchor="middle">↑ high</text>
+<text class="b" x="14" y="312" font-size="15">First-trimester screen at 10 to 13 weeks: nuchal translucency, PAPP-A, hCG</text>
+<rect x="14" y="322" width="872" height="30" rx="4" fill="var(--surface-3)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="b" x="22" y="342" font-size="14">Condition</text>
+<text class="b" x="374.0" y="342" font-size="14" text-anchor="middle">Nuchal translucency</text>
+<text class="b" x="578.0" y="342" font-size="14" text-anchor="middle">PAPP-A</text>
+<text class="b" x="782.0" y="342" font-size="14" text-anchor="middle">Free hCG</text>
+<rect x="14" y="356" width="872" height="34" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="b" x="22" y="378" font-size="14">Trisomy 21</text>
+<rect x="276" y="359" width="196" height="28" rx="4" fill="var(--warn-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="wn" x="374.0" y="378" font-size="14" text-anchor="middle">↑ high</text>
+<rect x="480" y="359" width="196" height="28" rx="4" fill="var(--a2-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="a2" x="578.0" y="378" font-size="14" text-anchor="middle">↓ low</text>
+<rect x="684" y="359" width="196" height="28" rx="4" fill="var(--warn-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="wn" x="782.0" y="378" font-size="14" text-anchor="middle">↑ high</text>
+<rect x="14" y="394" width="872" height="34" rx="4" fill="var(--surface)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="b" x="22" y="416" font-size="14">Trisomy 18</text>
+<rect x="276" y="397" width="196" height="28" rx="4" fill="var(--warn-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="wn" x="374.0" y="416" font-size="14" text-anchor="middle">↑ high</text>
+<rect x="480" y="397" width="196" height="28" rx="4" fill="var(--a2-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="a2" x="578.0" y="416" font-size="14" text-anchor="middle">↓ low</text>
+<rect x="684" y="397" width="196" height="28" rx="4" fill="var(--a2-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text class="a2" x="782.0" y="416" font-size="14" text-anchor="middle">↓ low</text>
+<text class="b" x="14" y="454" font-size="15">A positive screen needs a diagnostic test</text>
+<rect x="14" y="464" width="284" height="98" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="26" y="490" font-size="15">Cell-free DNA</text>
+<text x="26" y="516" font-size="14">From 10 weeks, placental DNA</text>
+<text x="26" y="542" font-size="14">A screen, not a diagnosis</text>
+<rect x="308" y="464" width="284" height="98" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.2"/>
+<text class="b" x="320" y="490" font-size="15">Chorionic villus sampling</text>
+<text x="320" y="516" font-size="14">10 to 13 weeks, placental tissue</text>
+<text x="320" y="542" font-size="14">Cannot detect neural tube defects</text>
+<rect x="602" y="464" width="284" height="98" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text class="b" x="614" y="490" font-size="15">Amniocentesis</text>
+<text x="614" y="516" font-size="14">From 15 weeks, fetal cells</text>
+<text x="614" y="542" font-size="14">Fluid AFP and acetylcholinesterase</text>
+<text class="b" x="14" y="590" font-size="14">High AFP: open neural tube or abdominal wall defect, twins, or underestimated dates.</text>
+<text class="b" x="14" y="614" font-size="14">Low AFP: trisomy 21 or 18, or overestimated dates.</text>
+</svg>

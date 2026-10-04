@@ -1,0 +1,38 @@
+<svg class="dia" viewBox="0 0 900 480" role="img" aria-label="Graves disease: one stimulating antibody against the TSH receptor acts on follicular cells, orbital fibroblasts and pretibial skin fibroblasts, and crosses the placenta to the fetus">
+<text class="ttl" x="14" y="26" font-size="17">One antibody, four targets: how Graves disease spreads beyond the gland</text>
+<rect x="14" y="116" width="290" height="236" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="28" y="146" font-size="15">Thyroid-stimulating</text>
+<text class="b" x="28" y="168" font-size="15">immunoglobulin (TSI)</text>
+<text x="28" y="196" font-size="14">IgG that activates the TSH</text>
+<text x="28" y="218" font-size="14">receptor, mimicking TSH</text>
+<text x="28" y="246" font-size="14">Type II hypersensitivity</text>
+<text x="28" y="268" font-size="14">(stimulating form)</text>
+<text x="28" y="296" font-size="14">Linked to HLA-DR3</text>
+<text x="28" y="318" font-size="14">Most often women aged 20-40</text>
+<rect x="340" y="44" width="546" height="86" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="354" y="70" font-size="15">Thyroid follicular cells</text>
+<text x="354" y="94" font-size="14">Diffuse goiter; T4 and T3 rise; TSH is suppressed</text>
+<text x="354" y="116" font-size="14">Histology: tall cells, scalloped colloid</text>
+<rect x="340" y="138" width="546" height="86" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="354" y="164" font-size="15">Orbital fibroblasts</text>
+<text x="354" y="188" font-size="14">Glycosaminoglycans and fat swell the orbit: exophthalmos</text>
+<text x="354" y="210" font-size="14">Smoking and radioactive iodine can worsen it</text>
+<rect x="340" y="232" width="546" height="86" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="354" y="258" font-size="15">Pretibial skin fibroblasts</text>
+<text x="354" y="282" font-size="14">Glycosaminoglycans: nonpitting pretibial myxedema</text>
+<text x="354" y="304" font-size="14">Same antigen and mechanism as the orbit</text>
+<rect x="340" y="326" width="546" height="86" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="354" y="352" font-size="15">Across the placenta</text>
+<text x="354" y="376" font-size="14">Maternal IgG stimulates the fetal thyroid</text>
+<text x="354" y="398" font-size="14">Transient neonatal thyrotoxicosis for weeks</text>
+<line x1="304" y1="200" x2="334" y2="90" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="330,95 336,86 338,97" fill="var(--ink-2)"/>
+<line x1="304" y1="220" x2="334" y2="182" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="328,184 337,178 334,189" fill="var(--ink-2)"/>
+<line x1="304" y1="250" x2="334" y2="275" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="328,276 338,279 333,270" fill="var(--ink-2)"/>
+<line x1="304" y1="280" x2="334" y2="364" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="329,360 336,369 338,358" fill="var(--ink-2)"/>
+<rect x="14" y="426" width="872" height="40" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="28" y="451" font-size="14">Lid lag and stare come from adrenergic excess in any thyrotoxicosis; exophthalmos is Graves only</text>
+</svg>

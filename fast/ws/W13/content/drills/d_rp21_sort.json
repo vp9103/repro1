@@ -1,0 +1,85 @@
+{
+ "id": "d_rp21_sort",
+ "c": "rp21",
+ "kind": "sort",
+ "t": "BPH or prostate cancer?",
+ "tags": [
+  "anatomic-relations",
+  "histology-to-diagnosis"
+ ],
+ "a": "Benign prostatic hyperplasia",
+ "bb": "Prostate adenocarcinoma",
+ "key": "Ask where the process sits and what the basal cells are doing: BPH is hyperplasia of the transition zone around the urethra with basal cells intact, while adenocarcinoma arises in the peripheral zone and has lost its basal cell layer.",
+ "items": [
+  [
+   "Arises in the transition zone",
+   "a",
+   "Periurethral glands and stroma overgrow here, which is why BPH narrows the urethra early."
+  ],
+  [
+   "Smooth symmetric gland on rectal exam",
+   "a",
+   "Diffuse nodular growth enlarges the whole gland evenly without a discrete hard nodule."
+  ],
+  [
+   "Basal cell layer is preserved",
+   "a",
+   "Hyperplastic glands keep their two-cell lining, so p63 stains the basal cells."
+  ],
+  [
+   "Driven by dihydrotestosterone",
+   "a",
+   "5-alpha-reductase type 2 converts testosterone to DHT, which stimulates gland and stromal growth."
+  ],
+  [
+   "Responds to tamsulosin within days",
+   "a",
+   "Alpha-1A blockade relaxes smooth muscle tone in the stroma and bladder neck."
+  ],
+  [
+   "Shrunk by finasteride over months",
+   "a",
+   "Blocking DHT formation reduces the bulk of the adenoma, and PSA falls by about half."
+  ],
+  [
+   "Not premalignant",
+   "a",
+   "Hyperplasia does not progress to carcinoma; the two diseases are separate processes."
+  ],
+  [
+   "Arises in the peripheral zone",
+   "b",
+   "Seventy to eighty percent of cancers begin in the posterior zone against the rectum."
+  ],
+  [
+   "Hard nodule on rectal exam",
+   "b",
+   "Posterior tumors are palpable as firm, irregular nodules."
+  ],
+  [
+   "Basal cell layer is absent",
+   "b",
+   "Loss of p63-positive basal cells in small crowded glands is the key diagnostic criterion."
+  ],
+  [
+   "AMACR is positive",
+   "b",
+   "Alpha-methylacyl-CoA racemase is overexpressed in malignant glands and helps confirm cancer."
+  ],
+  [
+   "Perineural invasion",
+   "b",
+   "Tumor cells wrap around nerves in the prostate, a typical feature of adenocarcinoma."
+  ],
+  [
+   "Osteoblastic bone metastases",
+   "b",
+   "Spread through the Batson venous plexus causes dense, sclerotic lesions in the spine and pelvis."
+  ],
+  [
+   "Graded by the Gleason system",
+   "b",
+   "Gland architecture, not nuclear atypia, defines the Gleason pattern and the Grade Group."
+  ]
+ ]
+}

@@ -1,0 +1,129 @@
+{
+  "gaps": [
+    {
+      "concept": "A low-trauma fragility fracture can establish osteoporosis even when the DEXA T-score is above −2.5.",
+      "why_tested": "An older adult fractures a hip after a standing-height fall despite a T-score outside the osteoporosis range.",
+      "yield": "hi"
+    },
+    {
+      "concept": "DEXA T-scores from −1.0 to −2.5 indicate osteopenia; Z-scores compare bone density with age-matched peers.",
+      "why_tested": "A stem asks whether reduced bone density meets the osteoporosis threshold or suggests an unusually low value for age.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Glucocorticoids suppress osteoblast formation and promote osteoblast and osteocyte apoptosis. [Source](https://www.ncbi.nlm.nih.gov/books/NBK278968/)",
+      "why_tested": "A patient develops vertebral fragility fractures after prolonged glucocorticoid therapy; the question asks for the cellular mechanism.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Hypogonadism, hyperparathyroidism, and malabsorption are secondary causes of osteoporosis.",
+      "why_tested": "A patient with unexpectedly early or severe osteoporosis has an endocrine disorder or chronic malabsorption.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Osteoporosis shows thinned trabeculae and enlarged marrow spaces while remaining normally mineralized.",
+      "why_tested": "A bone biopsy must distinguish loss of bone quantity from excess unmineralized osteoid.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Bisphosphonates are first-line drugs for typical osteoporosis and symptomatic Paget disease.",
+      "why_tested": "A treatment-choice question presents a postmenopausal fragility fracture or painful, active Paget disease.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Nitrogen-containing bisphosphonates inhibit farnesyl pyrophosphate synthase, preventing osteoclast protein prenylation.",
+      "why_tested": "A pharmacology stem asks for the intracellular target of alendronate or zoledronic acid.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Denosumab can cause hypocalcemia; stopping it may trigger rebound vertebral fractures. [Source](https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/125320s216lbl.pdf)",
+      "why_tested": "A patient develops symptomatic hypocalcemia after treatment or multiple vertebral fractures after discontinuation.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Romosozumab blocks osteocyte sclerostin, releasing Wnt-mediated osteoblast activity; it carries a myocardial infarction and stroke warning. [Source](https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/761062Orig1s000Lbl.pdf)",
+      "why_tested": "A stem asks how anti-sclerostin therapy forms bone or identifies its characteristic serious adverse effect.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Raloxifene is estrogenic in bone but antiestrogenic in breast and uterus; it lowers breast-cancer risk and increases venous thrombosis risk. [Source](https://www.ncbi.nlm.nih.gov/books/NBK279050/)",
+      "why_tested": "A postmenopausal patient with osteoporosis and elevated breast-cancer risk is offered a SERM.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Calcitonin directly inhibits osteoclast-mediated bone resorption and can lower serum calcium.",
+      "why_tested": "A drug-mechanism question asks how calcitonin affects osteoclasts and calcium.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Continuous PTH exposure favors osteoclast-mediated resorption, whereas intermittent PTH-analog exposure favors bone formation.",
+      "why_tested": "A stem contrasts hyperparathyroidism with intermittent teriparatide treatment.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Serum 25-hydroxyvitamin D is the best measure of vitamin D stores and is low in nutritional osteomalacia.",
+      "why_tested": "A patient with suspected vitamin D deficiency needs the appropriate vitamin D metabolite identified.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Secondary hyperparathyroidism in vitamin D deficiency can maintain serum calcium near normal while causing phosphate wasting.",
+      "why_tested": "A patient has osteomalacia with low phosphate and elevated PTH but a near-normal calcium level.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Adult osteomalacia commonly causes diffuse bone pain and proximal muscle weakness or waddling gait.",
+      "why_tested": "A patient has difficulty rising from a chair alongside bone tenderness and abnormal mineralization labs.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Osteomalacia biopsy shows broad seams of unmineralized osteoid. [Source](https://www.ncbi.nlm.nih.gov/books/NBK279150/)",
+      "why_tested": "A histology image must distinguish defective mineralization from osteoporosis.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Rickets radiographs show widened growth plates with metaphyseal cupping and fraying.",
+      "why_tested": "A child with bowed legs has an imaging question centered on the growth plate.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Vitamin D deficiency can result from poor intake or sunlight, malabsorption, or enzyme-inducing antiepileptic drugs.",
+      "why_tested": "A stem asks which exposure or condition explains new osteomalacia or rickets.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Renal 1α-hydroxylase deficiency causes low calcitriol; vitamin D receptor resistance causes high calcitriol despite rickets.",
+      "why_tested": "Two children with hereditary rickets are distinguished by their 1,25-dihydroxyvitamin D levels.",
+      "yield": "mid"
+    },
+    {
+      "concept": "X-linked PHEX loss increases FGF23, causing renal phosphate wasting and hypophosphatemic rickets. [Source](https://www.ncbi.nlm.nih.gov/books/NBK83985/)",
+      "why_tested": "A child has rickets, low phosphate, normal calcium, and a family history suggesting X-linked inheritance.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Paget disease progresses from excessive osteoclastic resorption to disorganized osteoblastic formation of weak woven bone.",
+      "why_tested": "A question asks why an enlarged, dense pagetic bone remains vulnerable to fracture.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Paget imaging can show cotton-wool skull opacities, flame-shaped long-bone lysis, or a picture-frame vertebra. [Source](https://www.ncbi.nlm.nih.gov/books/NBK279033/)",
+      "why_tested": "An older adult with elevated alkaline phosphatase has a characteristic skull, long-bone, or vertebral radiograph.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Familial Paget disease can involve SQSTM1/p62 mutations that enhance osteoclast RANK–NF-κB signaling.",
+      "why_tested": "A genetic-mechanism question describes relatives with focal, high-turnover bone disease.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Osteopetrosis may cause marrow failure and cranial-nerve compression despite increased bone density; radiographs can show Erlenmeyer-flask deformity.",
+      "why_tested": "A child has dense, fracture-prone bones with pancytopenia or visual impairment.",
+      "yield": "hi"
+    },
+    {
+      "concept": "CLCN7 or TCIRG1 defects can impair osteoclast acidification and cause osteopetrosis.",
+      "why_tested": "A genetics stem asks for an osteoclast defect beyond carbonic anhydrase II deficiency.",
+      "yield": "mid"
+    }
+  ]
+}

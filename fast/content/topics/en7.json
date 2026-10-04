@@ -1,0 +1,375 @@
+{
+ "id": "en7",
+ "t": "Hypothyroidism, thyroid nodules and thyroid cancer",
+ "sub": "Why the thyroid fails, how a nodule is worked up from the TSH onward, and how cell of origin predicts each cancer.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 16,
+ "bp": [
+  "BP-en7-01",
+  "BP-en7-02",
+  "BP-en7-03",
+  "BP-en7-04",
+  "BP-en7-05",
+  "BP-en7-06",
+  "BP-en7-07",
+  "BP-en7-08",
+  "BP-en7-09",
+  "BP-en7-10",
+  "BP-en7-11",
+  "BP-en7-12",
+  "BP-en7-13",
+  "BP-en7-14",
+  "BP-en7-15"
+ ],
+ "obj": [
+  "ENDO-THYROID.2",
+  "ENDO-THYROID.4",
+  "ENDO-THYROID.5",
+  "ENDO-PHARM.1",
+  "ENDO-PHARM.2"
+ ],
+ "pretest": [
+  {
+   "q": "A patient with a high TSH and a low free T4 has antibodies against thyroid peroxidase. What is the most likely diagnosis?",
+   "o": [
+    "Hashimoto thyroiditis",
+    "Graves disease",
+    "Central hypothyroidism",
+    "Riedel thyroiditis"
+   ],
+   "a": 0,
+   "why": "Anti-TPO antibodies with a high TSH and low free T4 mean autoimmune destruction of the gland itself, Hashimoto thyroiditis, the commonest cause of hypothyroidism where iodine intake is adequate.",
+   "w": {
+    "Graves disease": "Graves antibodies stimulate the TSH receptor, so free T4 rises and TSH is suppressed, the opposite of this laboratory pattern.",
+    "Central hypothyroidism": "Pituitary or hypothalamic failure gives a low or inappropriately normal TSH, because the stimulus itself is missing, so a high TSH excludes it.",
+    "Riedel thyroiditis": "Riedel disease is a rare IgG4-related fibrosis that makes the gland rock-hard and fixed; strong anti-TPO antibodies are the hallmark of Hashimoto disease instead."
+   }
+  },
+  {
+   "q": "Which blood test comes first when a thyroid nodule is found?",
+   "o": [
+    "TSH",
+    "Calcitonin",
+    "Thyroglobulin",
+    "Free T3"
+   ],
+   "a": 0,
+   "why": "TSH sorts nodules by function. A low TSH points to a hyperfunctioning nodule, which is rarely malignant and is imaged by scintigraphy; a normal or high TSH leads to ultrasound and, if suspicious, fine-needle aspiration.",
+   "w": {
+    "Calcitonin": "Calcitonin marks medullary carcinoma, a small minority of nodules, and it does not answer the first question of whether the nodule is making hormone.",
+    "Thyroglobulin": "Normal and malignant follicular cells both release thyroglobulin, so it cannot separate a benign nodule from cancer before surgery.",
+    "Free T3": "Free T3 helps confirm thyrotoxicosis once TSH is already low, but it is a poor first screen of thyroid function compared with TSH."
+   }
+  },
+  {
+   "q": "Which of these should be taken about 4 hours apart from levothyroxine?",
+   "o": [
+    "Calcium carbonate",
+    "Metformin",
+    "Lisinopril",
+    "Acetaminophen"
+   ],
+   "a": 0,
+   "why": "Calcium carbonate binds levothyroxine in the gut and lowers its absorption, so TSH can rise; iron, bile acid sequestrants and antacids act the same way and are separated from the tablet.",
+   "w": {
+    "Metformin": "Metformin lowers hepatic glucose output and does not bind thyroid hormone in the gut, so it can be taken at the same time.",
+    "Lisinopril": "Lisinopril blocks angiotensin-converting enzyme and has no binding interaction with thyroid hormone tablets in the intestine.",
+    "Acetaminophen": "Acetaminophen is absorbed quickly without forming complexes with thyroxine, so it does not reduce levothyroxine absorption."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "What goes wrong in Hashimoto thyroiditis?"
+  ],
+  [
+   "p",
+   "Where dietary iodine is adequate, as in the United States, the commonest cause of hypothyroidism is **Hashimoto thyroiditis**, an autoimmune attack on the gland. Cytotoxic T cells destroy follicular cells, antibodies against thyroid peroxidase (anti-TPO) and thyroglobulin mark the process, and risk is linked to HLA-DR3 and HLA-DR5. A biopsy shows lymphocytes organized into lymphoid follicles with **germinal centers**, plus {{en7_hurthle|Hürthle cells}}, follicular cells swollen with pink, mitochondria-rich cytoplasm. As follicles are lost, free T4 falls and the pituitary answers with a high TSH. Early on the gland is firm, painless and enlarged; late in the disease it shrinks and scars. Years of lymphoid stimulation explain a rare but classic complication, primary thyroid B-cell **lymphoma**."
+  ],
+  [
+   "f",
+   "en7_hashimoto"
+  ],
+  [
+   "p",
+   "Almost every symptom follows from a lower metabolic rate. With less thyroid hormone, cells make fewer sodium-potassium pumps and burn less fuel, so patients have **cold intolerance**, fatigue and weight gain. The heart expresses fewer beta-1 receptors, so the pulse slows and cardiac output falls, and slow gut motility causes constipation. The liver makes fewer LDL receptors, so LDL cholesterol rises, and a myopathy raises creatine kinase. Glycosaminoglycans accumulate in the dermis and bind water, producing nonpitting {{en7_myxedema|myxedema}}: a puffy face, thick tongue and hoarse voice. Deep tendon reflexes relax slowly, menstrual bleeding becomes heavy, the skin is dry and cool, and reduced free-water excretion can lower sodium."
+  ],
+  [
+   "h",
+   "Which other causes of low thyroid function must you recognize?"
+  ],
+  [
+   "p",
+   "Worldwide, the commonest cause of goiter and hypothyroidism is **iodine deficiency**. Without iodine the gland cannot finish hormone synthesis, so TSH rises and drives follicular growth, first as a diffuse **goiter** and later as a multinodular one, and children of deficient mothers can have endemic congenital hypothyroidism. Two drugs cause hypothyroidism with goiter. Lithium is concentrated by the gland and blocks hormone release. Amiodarone and iodinated contrast deliver an iodide load that shuts off organification, the {{en7_wolff|Wolff-Chaikoff effect}}; a healthy gland escapes within days, but a gland damaged by autoimmunity cannot. Riedel thyroiditis is different again: IgG4-related fibrosis makes the gland rock-hard and fixes it to the trachea and neck muscles, so it mimics anaplastic carcinoma until a biopsy shows fibrosis instead of tumor."
+  ],
+  [
+   "h",
+   "What happens when hypothyroidism starts at birth or turns into a coma?"
+  ],
+  [
+   "p",
+   "Thyroid hormone is essential for brain maturation in fetal life and early childhood, so **congenital hypothyroidism** is a preventable cause of intellectual disability. In iodine-sufficient regions the usual cause is thyroid dysgenesis, an absent, small or ectopic gland, followed by inherited defects of hormone synthesis. Some maternal T4 crosses the placenta, so affected newborns often look normal at birth, which is why every newborn has a heel-prick screening test. Untreated infants become pale and puffy-faced, with a large tongue, a pot belly with an umbilical hernia, prolonged jaundice, poor feeding and hypotonia. Levothyroxine started in the first weeks of life protects brain development."
+  ],
+  [
+   "p",
+   "Long-standing untreated hypothyroidism can decompensate into **myxedema coma** when infection, cold, surgery or a sedative adds stress. The low metabolic rate causes **hypothermia**, bradycardia and hypotension; weak respiratory drive causes hypoventilation with carbon dioxide retention; impaired free-water excretion lowers sodium; and confusion deepens into coma. Because gut edema makes oral absorption unreliable, treatment is intravenous levothyroxine together with intravenous hydrocortisone, plus ventilatory support, gradual rewarming and treatment of the trigger."
+  ],
+  [
+   "call",
+   "trap",
+   "Give the steroid with the first dose of thyroid hormone",
+   "Thyroid hormone speeds cortisol breakdown and raises the demand for it. If a patient in **myxedema coma** also has adrenal insufficiency, from autoimmune adrenalitis or pituitary failure, levothyroxine alone can precipitate adrenal crisis. Stress-dose hydrocortisone is therefore given with the first intravenous dose and continued until cortisol deficiency has been excluded."
+  ],
+  [
+   "h",
+   "How is levothyroxine used, and what blocks its absorption?"
+  ],
+  [
+   "p",
+   "**Levothyroxine**, synthetic T4, is the drug of choice for hypothyroidism of any cause. Tissues convert it to T3 as needed, and its **half-life** of about 7 days allows one steady daily dose; TSH is rechecked 4 to 8 weeks after a dose change. The tablet needs stomach acid to dissolve, so it is taken on an **empty stomach** with water, 30 to 60 minutes before breakfast. Calcium, iron and bile acid sequestrants bind it in the gut, proton pump inhibitors reduce the acid that dissolves it, and soy and coffee also lower absorption. Over-replacement causes iatrogenic thyrotoxicosis with atrial fibrillation and bone loss, so older patients and those with coronary disease start low. Liothyronine is synthetic T3; its short half-life produces peaks that cause palpitations, so it is not first-line."
+  ],
+  [
+   "t",
+   [
+    "Interacting factor",
+    "Why less hormone reaches tissues",
+    "Practical fix"
+   ],
+   [
+    [
+     "Calcium carbonate, ferrous sulfate",
+     "Bind T4 in the gut lumen",
+     "Take 4 hours apart"
+    ],
+    [
+     "Bile acid sequestrants such as cholestyramine",
+     "Bind T4 in the gut lumen",
+     "Take 4 to 5 hours apart"
+    ],
+    [
+     "Proton pump inhibitors",
+     "Less acid, so the tablet dissolves poorly",
+     "Recheck TSH; raise the dose if needed"
+    ],
+    [
+     "Estrogen, pregnancy",
+     "More thyroxine-binding globulin holds T4",
+     "Raise the dose; recheck TSH"
+    ],
+    [
+     "Rifampin, phenytoin, carbamazepine",
+     "Faster hepatic breakdown of T4",
+     "Raise the dose; recheck TSH"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "key",
+   "Pregnancy raises the dose right away",
+   "A woman taking **levothyroxine** needs about 30 to 50 percent more once she conceives, because estrogen raises thyroxine-binding globulin, the placenta degrades T4, and the fetus relies on maternal T4 until its own gland matures in mid-pregnancy. The dose is raised as soon as **pregnancy** is confirmed, often by two extra tablets a week, and TSH is checked every 4 weeks."
+  ],
+  [
+   "h",
+   "How is a thyroid nodule worked up?"
+  ],
+  [
+   "p",
+   "Thyroid nodules are common and mostly benign, so the work-up aims to find the few cancers without operating on everyone. A serum TSH comes first because it sorts nodules by function: a low TSH leads to radionuclide **scintigraphy**, and a normal or high TSH leads to **ultrasound**, which decides which nodules need a biopsy."
+  ],
+  [
+   "f",
+   "en7_nodule"
+  ],
+  [
+   "steps",
+   [
+    "Working up a nodule, and why each step comes next",
+    [
+     [
+      "Measure TSH first",
+      "Function lowers cancer risk, so a low TSH sends the patient to scintigraphy, while a normal or high TSH sends the patient to ultrasound."
+     ],
+     [
+      "Scan the low-TSH nodule",
+      "A hot nodule that traps tracer is rarely malignant and is treated as hyperthyroidism without biopsy; a cold nodule is handled like a normal-TSH nodule."
+     ],
+     [
+      "Image with ultrasound",
+      "Purely cystic and spongiform nodules are benign patterns, while solid hypoechoic nodules with microcalcifications, irregular margins or a taller-than-wide shape carry the most risk."
+     ],
+     [
+      "Aspirate the suspicious nodule",
+      "Ultrasound-guided **fine-needle aspiration** samples cells for cytology, which identifies papillary carcinoma or a benign nodule in most cases."
+     ],
+     [
+      "Send follicular lesions to histology",
+      "A follicular neoplasm on cytology may be adenoma or carcinoma, so molecular testing or lobectomy follows, because only the whole capsule shows invasion."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Which thyroid cancer is it, and how will it behave?"
+  ],
+  [
+   "p",
+   "Thyroid cancers are easiest to learn by cell of origin. The follicular cell gives rise to **papillary carcinoma**, by far the most common and linked to childhood neck radiation. Papillary tumors carry RET/PTC rearrangements or BRAF mutations; their nuclei look empty (Orphan Annie eye nuclei) and grooved, laminated {{en7_psammoma|psammoma bodies}} are common, and they spread through lymphatics to neck nodes yet have an excellent prognosis. **Follicular carcinoma** carries RAS mutations or a PAX8-PPARG fusion, looks like uniform follicles and is defined by **capsular** or vascular invasion, so it spreads through blood to bone and lung. Anaplastic carcinoma often arises from these differentiated tumors after TP53 loss, grows over weeks in older adults, invades the trachea and esophagus, and has a dismal prognosis."
+  ],
+  [
+   "p",
+   "Medullary carcinoma comes from the parafollicular C cells, which derive from neural crest, so it secretes **calcitonin**, its tumor marker, and its stroma holds **amyloid** formed from calcitonin that stains with Congo red. Activating RET mutations drive it, and about a quarter of cases are inherited in MEN2A or MEN2B, so relatives are tested for RET and carriers have the thyroid removed prophylactically in childhood. Because C cells do not trap iodide, radioiodine does not treat it. A rapidly enlarging gland in a patient with long-standing Hashimoto thyroiditis suggests primary thyroid lymphoma instead."
+  ],
+  [
+   "f",
+   "en7_cancers"
+  ],
+  [
+   "t",
+   [
+    "Cancer",
+    "Cell of origin",
+    "Histology clue",
+    "Gene or setting",
+    "Spread and outlook"
+   ],
+   [
+    [
+     "Papillary",
+     "Follicular cell",
+     "Orphan Annie nuclei, grooves, psammoma bodies",
+     "RET/PTC, BRAF; radiation",
+     "Lymph nodes; excellent"
+    ],
+    [
+     "**Follicular carcinoma**",
+     "Follicular cell",
+     "Capsular or vascular invasion",
+     "RAS, PAX8-PPARG",
+     "Blood to bone and lung; good"
+    ],
+    [
+     "Medullary",
+     "C cell (neural crest)",
+     "Amyloid stroma; calcitonin",
+     "RET; MEN2A, MEN2B",
+     "Nodes and distant organs; worse than papillary"
+    ],
+    [
+     "Anaplastic",
+     "Dedifferentiated follicular cell",
+     "Undifferentiated, pleomorphic cells",
+     "TP53 loss; older adults",
+     "Local invasion; dismal"
+    ],
+    [
+     "Primary lymphoma",
+     "B cell",
+     "Sheets of monotonous lymphocytes",
+     "Long-standing Hashimoto thyroiditis",
+     "Chemotherapy and radiation"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "What can thyroid surgery injure?"
+  ],
+  [
+   "p",
+   "Thyroidectomy puts three neighbors at risk. The {{en7_rln|recurrent laryngeal nerve}} climbs in the tracheoesophageal groove beside the inferior thyroid artery and supplies every intrinsic laryngeal muscle except the cricothyroid, so injury paralyzes a vocal fold and causes **hoarseness**; bilateral injury can obstruct the airway. The external branch of the superior laryngeal nerve runs with the superior thyroid artery to the cricothyroid, so its injury leaves a voice that tires and cannot reach high pitch. Removing or devascularizing the parathyroid glands causes **hypocalcemia**, with perioral tingling and carpal spasm within 1 to 3 days, and total thyroidectomy commits the patient to lifelong levothyroxine."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_en7_nodule",
+    "q": "A 2-cm thyroid nodule is found in a patient whose TSH is suppressed. Which reasoning best chooses the next test?",
+    "o": [
+     "Every nodule larger than 1 cm needs aspiration first, because cytology is the only test that can exclude cancer",
+     "A suppressed TSH suggests the nodule makes hormone on its own, and hot nodules are rarely malignant, so scintigraphy should come before any needle",
+     "A suppressed TSH means the pituitary has failed, so pituitary imaging should come before any thyroid test",
+     "A low TSH points to medullary carcinoma secreting calcitonin, so serum calcitonin should be measured first"
+    ],
+    "a": 1,
+    "why": "Negative feedback makes a suppressed TSH the sign of thyroid tissue secreting hormone without TSH drive. If scintigraphy shows the nodule concentrating tracer, it is a hot nodule, which is almost never malignant, and it is managed as hyperthyroidism. Aspirating it first invites confusion, because autonomous nodules often yield atypical-looking follicular cells. Pituitary failure would lower free T4 too, and medullary carcinoma cannot suppress TSH."
+   }
+  ],
+  [
+   "why",
+   "Why can radioiodine treat papillary carcinoma remnants but not medullary carcinoma?",
+   "Radioiodine works only on cells that trap iodide. Papillary and follicular carcinomas come from follicular cells, which keep the sodium-iodide symporter, so after total thyroidectomy a dose of iodine-131 is concentrated by any remaining thyroid tissue or tumor and destroys it with local radiation. The same cells keep making thyroglobulin, so a rising thyroglobulin after surgery signals recurrence. Medullary carcinoma comes from parafollicular C cells, which descend from neural crest and have no iodide transporter, so they ignore radioiodine entirely. Surgery is therefore their main treatment, and calcitonin, not thyroglobulin, tracks them."
+  ],
+  [
+   "vis",
+   "en7"
+  ]
+ ],
+ "grid": {
+  "q": "Which findings are expected in hypothyroidism?",
+  "items": [
+   [
+    "Cold intolerance",
+    1
+   ],
+   [
+    "Slow resting heart rate",
+    1
+   ],
+   [
+    "Constipation from slow gut motility",
+    1
+   ],
+   [
+    "Slow relaxation of deep tendon reflexes",
+    1
+   ],
+   [
+    "Heavy menstrual bleeding",
+    1
+   ],
+   [
+    "Raised LDL cholesterol",
+    1
+   ],
+   [
+    "Raised creatine kinase",
+    1
+   ],
+   [
+    "Nonpitting swelling of the face and tongue",
+    1
+   ],
+   [
+    "Mild hyponatremia",
+    1
+   ],
+   [
+    "Weight gain",
+    1
+   ],
+   [
+    "Heat intolerance with sweating",
+    0
+   ],
+   [
+    "Fine tremor and lid lag",
+    0
+   ],
+   [
+    "Frequent loose stools",
+    0
+   ],
+   [
+    "Exophthalmos with pretibial swelling",
+    0
+   ],
+   [
+    "New atrial fibrillation from excess hormone",
+    0
+   ]
+  ]
+ }
+}

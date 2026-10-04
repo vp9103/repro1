@@ -1,0 +1,84 @@
+{
+  "gaps": [
+    {
+      "concept": "Gender dysphoria requires at least six months of marked gender incongruence with clinically significant distress or impairment; transgender identity alone is not a disorder.",
+      "why_tested": "A vignette asks whether gender incongruence without distress meets diagnostic criteria. [APA](https://www.psychiatry.org/patients-families/gender-dysphoria/what-is-gender-dysphoria)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Continuous GnRH agonist exposure downregulates pituitary GnRH receptors, lowering LH, FSH, and gonadal sex steroids.",
+      "why_tested": "Hormone results after puberty suppression require the drug mechanism. [Endocrine Society](https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Prolonged sex-steroid suppression during adolescence can reduce bone mineral accrual.",
+      "why_tested": "A patient receiving puberty blockers has declining bone density. [Endocrine Society](https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence)",
+      "yield": "mid"
+    },
+    {
+      "concept": "Spironolactone antagonizes androgen receptors and reduces testosterone synthesis, in addition to blocking mineralocorticoid receptors.",
+      "why_tested": "A question asks how a potassium-sparing drug contributes to feminization. [UCSF](https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Estradiol suppresses pituitary LH and FSH through negative feedback, lowering endogenous testicular testosterone production.",
+      "why_tested": "A stem provides gonadotropin and testosterone levels during feminizing therapy. [Endocrine Society](https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence)",
+      "yield": "mid"
+    },
+    {
+      "concept": "Estrogen therapy can raise prolactin; new galactorrhea or headaches prompt consideration of hyperprolactinemia.",
+      "why_tested": "A patient develops galactorrhea during feminizing therapy. [Endocrine Society](https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence)",
+      "yield": "mid"
+    },
+    {
+      "concept": "Feminizing hormones can reduce sperm production without reliably preventing pregnancy in a partner.",
+      "why_tested": "A patient with retained testes asks whether estradiol provides contraception. [ACOG](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/03/health-care-for-transgender-and-gender-diverse-individuals)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Testosterone can cause vaginal epithelial atrophy, dryness, and dyspareunia in patients with a retained vagina.",
+      "why_tested": "A testosterone-treated patient reports painful intercourse and has thin vaginal mucosa. [ACOG](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/03/health-care-for-transgender-and-gender-diverse-individuals)",
+      "yield": "mid"
+    },
+    {
+      "concept": "Testosterone therapy can lower HDL and raise triglycerides.",
+      "why_tested": "A lipid panel changes after masculinizing therapy. [ACOG](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/03/health-care-for-transgender-and-gender-diverse-individuals)",
+      "yield": "mid"
+    },
+    {
+      "concept": "After gonadectomy, stopping sex-steroid therapy increases bone-loss risk.",
+      "why_tested": "A patient stops hormones after removal of the gonads and develops low bone density. [Endocrine Society](https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence)",
+      "yield": "mid"
+    },
+    {
+      "concept": "Gonorrhea and chlamydia NAAT specimens should come from exposed anatomic sites, including pharyngeal and rectal sites when relevant.",
+      "why_tested": "A negative urine test misses infection after receptive oral or anal sex. [CDC](https://www.cdc.gov/std/treatment-guidelines/trans.htm)",
+      "yield": "hi"
+    },
+    {
+      "concept": "HIV pre-exposure prophylaxis is an option based on exposure risk regardless of gender identity or gender-affirming hormone use.",
+      "why_tested": "A sexually active patient asks whether hormone therapy changes HIV prevention options. [CDC](https://www.cdc.gov/hivnexus/hcp/prep/index.html)",
+      "yield": "mid"
+    },
+    {
+      "concept": "Patients taking testosterone who can become pregnant may use effective contraception, including an IUD or progestin method.",
+      "why_tested": "A patient with amenorrhea on testosterone wants pregnancy prevention. [ACOG](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/03/health-care-for-transgender-and-gender-diverse-individuals)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Contraceptive sabotage, pregnancy pressure, and forced sex are forms of reproductive coercion that undermine voluntary consent.",
+      "why_tested": "A partner removes condoms or pressures a patient into pregnancy. [ACOG](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/02/reproductive-and-sexual-coercion)",
+      "yield": "mid"
+    },
+    {
+      "concept": "Adolescent confidentiality has limits for mandated reporting or serious safety threats; insurance explanations of benefits can inadvertently disclose care.",
+      "why_tested": "A minor seeks confidential STI care but fears parental notification through billing. [CDC](https://www.cdc.gov/std/treatment-guidelines/adolescents.htm)",
+      "yield": "mid"
+    },
+    {
+      "concept": "A patient's voluntary, informed preference governs permanent contraception; age, parity, or partner pressure alone must not determine the decision.",
+      "why_tested": "A clinician must respond to a young patient's sterilization request or a partner's demand. [ACOG](https://www.acog.org/clinical/clinical-guidance/committee-statement/articles/2024/02/permanent-contraception-ethical-issues-and-considerations)",
+      "yield": "mid"
+    }
+  ]
+}

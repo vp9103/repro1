@@ -1,0 +1,42 @@
+
+A: P1.1 marked DONE by hand, never --close'd
+  -> CAUGHT: P1.1: DONE but never closed through --close (the row was written by hand)
+
+B: P3.1 (topics) DONE while phase 1 is open (skipping ahead)
+  -> CAUGHT: P3.1: DONE while an earlier phase is open (P0.2, P0.3, P1.1, P1.2); phases run in order
+
+C: P1.V with a guessed verifier token
+  -> CAUGHT: P1.V: verifier token missing or not the one --verify P1 issued
+
+D: P1.2 BLOCKED with no TRIED/NARROWER/NEEDS-USER
+  -> CAUGHT: P1.2: BLOCKED without TRIED:, NARROWER:, NEEDS-USER:
+
+E: P1.1 DROPPED (nothing in this plan is droppable)
+  -> CAUGHT: P1.1: DROPPED but no task in this plan may be dropped
+
+F: main content edited outside any task (lock mismatch)
+  -> CAUGHT: MAIN CHANGED OUTSIDE --close: tracked files hash 38022cb922, lock says deadbeef00 (set by demo). Every change goes through a task workspace; restore main from .repro/backups or re-run the change as a 
+
+G: four content tasks IN_PROGRESS at once
+  -> CAUGHT: 4 tasks IN_PROGRESS at once (P3.1, P3.2, P3.3, P3.4); the limit is 3
+
+H: P3.1 IN_PROGRESS with no workspace (dispatched without --start)
+  -> CAUGHT: P3.1: IN_PROGRESS without a workspace (python check_repro.py --start P3.1)
+
+I: P1.5 DONE via a forged close record whose checks now fail
+  -> CAUGHT: P1.5: DONE but its check FAILS now -> concept vocabulary (closed, reasoning-level, 30-45 tags with labels): 1 problem(s): 0 tags (30-45)
+
+J: P1.V verifier judged FAIL but the row was still marked DONE
+  -> CAUGHT: P1.V: the verifier FAILED sampled items; reopen the owning task(s) (--reopen) and re-verify
+
+K: a content task BLOCKED to skip it (fields present, but it does not need the user)
+  -> CAUGHT: P1.3: BLOCKED, but only tasks that need the user or an outside service may block (P0.2, P1.1, P1.2, P4.1, P4.2, P4.3, P4.4, P4.5 ...); fix it, or the orchestrator records a GATE-CHANGE with the reason
+
+L: gate files edited, no GATE-CHANGE note (the recorded gate sha no longer matches)
+  -> CAUGHT: GATE FILES CHANGED: recorded sha:00000000, now sha:067a94be. Only the orchestrator may change the gate, with a Notes line 'GATE-CHANGE sha:067a94be reason: ...'
+
+ALL CAUGHT; the real ledger was never touched
+
+probe on the cardio reference page: errors [], js []
+wrote .repro/selftest-gate.json
+selftest exit 0

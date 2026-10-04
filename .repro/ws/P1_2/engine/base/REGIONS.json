@@ -1,0 +1,2877 @@
+{
+ "source": {
+  "sha256": "08f567b69746244865090b7f9942a66faa690030e94feab9cedaecb6e24fc444",
+  "bytes": 2250405,
+  "lines": 21777
+ },
+ "script": "engine/extract_engine.py",
+ "classes": [
+  "ENGINE",
+  "CONTENT",
+  "PATCH",
+  "MIXED",
+  "LITERALS"
+ ],
+ "actions": [
+  "shell",
+  "engine",
+  "selftest",
+  "build",
+  "drop"
+ ],
+ "counts": {
+  "ENGINE": 49,
+  "CONTENT": 66,
+  "PATCH": 25,
+  "MIXED": 0,
+  "LITERALS": 20
+ },
+ "substitutions": [
+  {
+   "region": "html.head",
+   "old": "<title>The Cardio Path</title>",
+   "new": "<title>@@TITLE@@</title>",
+   "count": 1
+  },
+  {
+   "region": "css.tokens",
+   "old": "--a1:#B23A32;",
+   "new": "--a1:@@A1@@;",
+   "count": 1
+  },
+  {
+   "region": "css.tokens",
+   "old": "--a2:#38538A;",
+   "new": "--a2:@@A2@@;",
+   "count": 1
+  },
+  {
+   "region": "css.tokens",
+   "old": "--a1:#E88A80;",
+   "new": "--a1:@@A1_DARK@@;",
+   "count": 2
+  },
+  {
+   "region": "css.tokens",
+   "old": "--a2:#8FADE0;",
+   "new": "--a2:@@A2_DARK@@;",
+   "count": 2
+  },
+  {
+   "region": "html.header",
+   "old": "<b>The Cardio Path</b>",
+   "new": "<b>@@TITLE@@</b>",
+   "count": 1
+  },
+  {
+   "region": "engine.view-path",
+   "old": "Cardio comes back while you are doing Renal",
+   "new": "Earlier blocks come back while you work on this one",
+   "count": 1
+  },
+  {
+   "region": "engine.view-drills",
+   "old": "alt=\"ECG to classify\"",
+   "new": "alt=\"${escA(IMGS[it[2]].n||\"Image to classify\")}\"",
+   "count": 1
+  }
+ ],
+ "regions": [
+  {
+   "name": "html.head",
+   "class": "LITERALS",
+   "action": "shell",
+   "anchor": "<!doctype html><html lang=\"en\">",
+   "lines": [
+    1,
+    1
+   ],
+   "sha": "0f9d80206760e2a5",
+   "statements": [],
+   "note": "doctype, head, <title> (brand -> @@TITLE@@)"
+  },
+  {
+   "name": "html.p11-comment",
+   "class": "ENGINE",
+   "action": "shell",
+   "anchor": "<!-- P1.1 fix, two defects",
+   "lines": [
+    2,
+    6
+   ],
+   "sha": "d98f22086e27a144",
+   "statements": [],
+   "note": "comment"
+  },
+  {
+   "name": "html.fonts",
+   "class": "ENGINE",
+   "action": "shell",
+   "anchor": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+   "lines": [
+    7,
+    10
+   ],
+   "sha": "d1297a1c87e4d1a7",
+   "statements": [],
+   "note": "Google Fonts links; opens the first <style>"
+  },
+  {
+   "name": "css.tokens",
+   "class": "LITERALS",
+   "action": "shell",
+   "anchor": "/* ============================ TOKENS",
+   "lines": [
+    11,
+    63
+   ],
+   "sha": "f5f625c422b2d368",
+   "statements": [],
+   "note": "design tokens; the block palette --a1/--a2 (light and two dark copies) -> placeholders"
+  },
+  {
+   "name": "css.base",
+   "class": "ENGINE",
+   "action": "shell",
+   "anchor": "/* ============================ BASE",
+   "lines": [
+    64,
+    621
+   ],
+   "sha": "f54ab2a0f1d1b782",
+   "statements": [],
+   "note": "component CSS to the first </style>"
+  },
+  {
+   "name": "html.header",
+   "class": "LITERALS",
+   "action": "shell",
+   "anchor": "<header>",
+   "lines": [
+    622,
+    637
+   ],
+   "sha": "b334d275c7ad1168",
+   "statements": [],
+   "note": "header: brand (-> @@TITLE@@), #countdown, nav#modes, ring, #savedot"
+  },
+  {
+   "name": "html.main",
+   "class": "ENGINE",
+   "action": "shell",
+   "anchor": "<main tabindex=\"-1\">",
+   "lines": [
+    638,
+    638
+   ],
+   "sha": "15b7c622a8b90aef",
+   "statements": [],
+   "note": "#app mount point"
+  },
+  {
+   "name": "html.live",
+   "class": "ENGINE",
+   "action": "shell",
+   "anchor": "<!-- P1.3 - screen-reader announcement channel",
+   "lines": [
+    639,
+    645
+   ],
+   "sha": "df14b1b45acf9123",
+   "statements": [],
+   "note": "#live aria-live region"
+  },
+  {
+   "name": "css.v2",
+   "class": "ENGINE",
+   "action": "shell",
+   "anchor": "ENGINE v2 COMPONENTS",
+   "lines": [
+    646,
+    1135
+   ],
+   "sha": "50e005521de09560",
+   "statements": [],
+   "note": "second <style>: engine v2 components"
+  },
+  {
+   "name": "html.script-open",
+   "class": "ENGINE",
+   "action": "shell",
+   "anchor": "<script>",
+   "lines": [
+    1136,
+    1136
+   ],
+   "sha": "cf14a32120c034ea",
+   "statements": [],
+   "note": "the single <script>; @@SCRIPT@@ follows it in the shell"
+  },
+  {
+   "name": "content.meta",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — META, GLOSSARY, MEMORY SCENES, IMAGES",
+   "lines": [
+    1137,
+    1141
+   ],
+   "sha": "40a47b9f0f30410b",
+   "statements": [
+    "var META"
+   ],
+   "note": "banner + META (build.py emits META from content/meta.json)"
+  },
+  {
+   "name": "engine.exam-date",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "/* The exam date is user-adjustable.",
+   "lines": [
+    1142,
+    1164
+   ],
+   "sha": "b077a45af948220f",
+   "statements": [
+    "var EXAM_KEY",
+    "fn parseExamDate",
+    "fn readExamDate",
+    "var EXAM",
+    "var pad2",
+    "var examISO",
+    "fn setExamDate"
+   ],
+   "note": "EXAM_KEY, EXAM_DEFAULT (literal date), parse/read/set, let EXAM"
+  },
+  {
+   "name": "engine.gloss-registry",
+   "class": "ENGINE",
+   "action": "build",
+   "anchor": "/* ---------------------------------------------------------------- glossary */",
+   "lines": [
+    1165,
+    1172
+   ],
+   "sha": "92724b6977a9b4bf",
+   "statements": [
+    "var GLOSS",
+    "var G"
+   ],
+   "note": "const GLOSS = {} and G(); build.py emits both"
+  },
+  {
+   "name": "content.glossary",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "G(\"preload\",\"Preload\"",
+   "lines": [
+    1173,
+    1230
+   ],
+   "sha": "a6bb0579529d21a8",
+   "statements": [
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G"
+   ],
+   "note": "cardio glossary terms"
+  },
+  {
+   "name": "engine.palace-registry",
+   "class": "ENGINE",
+   "action": "build",
+   "anchor": "/* ---------------------------------------------------------------- memory scenes */",
+   "lines": [
+    1231,
+    1233
+   ],
+   "sha": "e23e4803916429e6",
+   "statements": [
+    "var PALACE"
+   ],
+   "note": "const PALACE = {}; build.py emits it"
+  },
+  {
+   "name": "content.palace",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "PALACE.mi = {",
+   "lines": [
+    1234,
+    1282
+   ],
+   "sha": "337cce6e36d82b95",
+   "statements": [
+    "set PALACE.mi",
+    "set PALACE.cyanotic",
+    "set PALACE.murmur",
+    "set PALACE.endocarditis",
+    "set PALACE.antiarrhythmic"
+   ],
+   "note": "cardio memory scenes"
+  },
+  {
+   "name": "engine.imgs-registry",
+   "class": "ENGINE",
+   "action": "build",
+   "anchor": "/* ---------------------------------------------------------------- images",
+   "lines": [
+    1283,
+    1287
+   ],
+   "sha": "f2d3ef506dc50611",
+   "statements": [
+    "var IMGS"
+   ],
+   "note": "const IMGS = {}; build.py emits it"
+  },
+  {
+   "name": "content.images-1",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "IMGS.mi_stages = {",
+   "lines": [
+    1288,
+    1414
+   ],
+   "sha": "8acd250c64bc6c6d",
+   "statements": [
+    "set IMGS.mi_stages",
+    "set IMGS.cardiac_normal",
+    "set IMGS.athero_histo",
+    "set IMGS.mi_gross",
+    "set IMGS.athero_gross",
+    "set IMGS.aschoff",
+    "set IMGS.gca",
+    "set IMGS.dissection"
+   ],
+   "note": "cardio images, set 1"
+  },
+  {
+   "name": "content.glossary-2",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---- glossary terms introduced by the depth rewrites ---- */",
+   "lines": [
+    1415,
+    1421
+   ],
+   "sha": "03ef4a686e9d4fad",
+   "statements": [
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G",
+    "call G"
+   ],
+   "note": "cardio glossary terms, set 2"
+  },
+  {
+   "name": "engine.figs-registry",
+   "class": "ENGINE",
+   "action": "build",
+   "anchor": "CARDIOVASCULAR — FIGURES",
+   "lines": [
+    1422,
+    1428
+   ],
+   "sha": "54c2a65969120cd2",
+   "statements": [
+    "var FIGS"
+   ],
+   "note": "banner + const FIGS = {}; build.py emits FIGS"
+  },
+  {
+   "name": "content.figs-1",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------- 1. Wiggers diagram ---------- */",
+   "lines": [
+    1429,
+    2492
+   ],
+   "sha": "7eb3d36a97e7b263",
+   "statements": [
+    "set FIGS.wiggers",
+    "set FIGS.pvloop",
+    "set FIGS.apotent",
+    "set FIGS.conduction",
+    "set FIGS.coronary",
+    "set FIGS.mitime",
+    "set FIGS.murmurs",
+    "set FIGS.hfspiral",
+    "set FIGS.shunts",
+    "set FIGS.coag",
+    "set FIGS.raas",
+    "set FIGS.vasculitis",
+    "set FIGS.lipid"
+   ],
+   "note": "cardio figures 1-13"
+  },
+  {
+   "name": "content.figs-2",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------- Antiarrhythmic classes drawn ON the action potential",
+   "lines": [
+    2493,
+    2823
+   ],
+   "sha": "47d71cc4e17970ac",
+   "statements": [
+    "set FIGS.aaclasses",
+    "set FIGS.tof",
+    "set FIGS.drugtree",
+    "set FIGS.bugtree"
+   ],
+   "note": "aaclasses, tof, drugtree, bugtree"
+  },
+  {
+   "name": "content.figs-3",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------------- Frank-Starling curves",
+   "lines": [
+    2824,
+    3130
+   ],
+   "sha": "0022087dd8c1b0fe",
+   "statements": [
+    "set FIGS.starling",
+    "set FIGS.jvp",
+    "set FIGS.fetalcirc",
+    "set FIGS.guyton",
+    "set FIGS.axis"
+   ],
+   "note": "starling, jvp, fetalcirc, guyton, axis"
+  },
+  {
+   "name": "content.figs-p41",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------------- P4.1 Cardiomyopathy geometry",
+   "lines": [
+    3131,
+    3231
+   ],
+   "sha": "d41b2f5b3bd733e4",
+   "statements": [
+    "call Object.assign(FIGS"
+   ],
+   "note": "cmy_geometry"
+  },
+  {
+   "name": "content.figs-p42",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------------- P4.2 Heart sounds",
+   "lines": [
+    3232,
+    3436
+   ],
+   "sha": "adbb91a287c5ebd0",
+   "statements": [
+    "call Object.assign(FIGS"
+   ],
+   "note": "heart_sounds"
+  },
+  {
+   "name": "content.figs-p43",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------------- P4.3 AV block",
+   "lines": [
+    3437,
+    3705
+   ],
+   "sha": "68967d992f13b130",
+   "statements": [
+    "call Object.assign(FIGS"
+   ],
+   "note": "av_block"
+  },
+  {
+   "name": "content.figs-p44",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------------- P4.4 Digoxin",
+   "lines": [
+    3706,
+    3874
+   ],
+   "sha": "6e5fc862ed694eaf",
+   "statements": [
+    "call Object.assign(FIGS"
+   ],
+   "note": "digoxin"
+  },
+  {
+   "name": "content.figs-p45",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------------- P4.5 Shock",
+   "lines": [
+    3875,
+    4104
+   ],
+   "sha": "76f0e11d000dea3e",
+   "statements": [
+    "call Object.assign(FIGS"
+   ],
+   "note": "shock_table"
+  },
+  {
+   "name": "content.figs-p46",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------------- P4.6 Xanthoma types",
+   "lines": [
+    4105,
+    4270
+   ],
+   "sha": "64dce3b5a8dfd7c7",
+   "statements": [
+    "call Object.assign(FIGS"
+   ],
+   "note": "xanthomas"
+  },
+  {
+   "name": "content.figs-p47",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------------- P4.7 Secondary hypertension",
+   "lines": [
+    4271,
+    4425
+   ],
+   "sha": "5cb7ceb43d7a64b9",
+   "statements": [
+    "call Object.assign(FIGS"
+   ],
+   "note": "secondary_htn"
+  },
+  {
+   "name": "content.figs-p48-wall",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------------- P4.8r2 Vessel wall",
+   "lines": [
+    4426,
+    4648
+   ],
+   "sha": "f428fd0ca7b0037b",
+   "statements": [
+    "call Object.assign(FIGS"
+   ],
+   "note": "vesselwall"
+  },
+  {
+   "name": "content.figs-p48-arch",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------------- P4.8r2 The arterial pole",
+   "lines": [
+    4649,
+    4783
+   ],
+   "sha": "0b47cab279342967",
+   "statements": [
+    "call Object.assign(FIGS"
+   ],
+   "note": "archderiv"
+  },
+  {
+   "name": "content.figs-p18c",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------------- P1.8 part C: three small figures",
+   "lines": [
+    4784,
+    4900
+   ],
+   "sha": "2af1e0b612bfd8c9",
+   "statements": [
+    "call Object.assign(FIGS"
+   ],
+   "note": "figures for image-pinned rapid items"
+  },
+  {
+   "name": "content.figs-p19",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* P1.9: 29 rapid items had no visual.",
+   "lines": [
+    4901,
+    5378
+   ],
+   "sha": "11b573e1eacd4f61",
+   "statements": [
+    "call Object.assign(FIGS",
+    "call Object.assign(FIGS",
+    "call Object.assign(FIGS"
+   ],
+   "note": "figures for rapid items without a visual"
+  },
+  {
+   "name": "content.blocks-1",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — BLOCKS, part 1",
+   "lines": [
+    5379,
+    5621
+   ],
+   "sha": "f39966cd9a34dc9c",
+   "statements": [
+    "var BLOCKS"
+   ],
+   "note": "BLOCKS literal: found, phys"
+  },
+  {
+   "name": "content.blocks-2",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — BLOCKS, part 2",
+   "lines": [
+    5622,
+    5865
+   ],
+   "sha": "793a6f94000dd567",
+   "statements": [
+    "call BLOCKS.push"
+   ],
+   "note": "athero, ihd, arrhy"
+  },
+  {
+   "name": "content.blocks-3",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — BLOCKS, part 3",
+   "lines": [
+    5866,
+    6153
+   ],
+   "sha": "f9c1f7c92eaa7e3a",
+   "statements": [
+    "call BLOCKS.push"
+   ],
+   "note": "hf, valve, inflam, vasc"
+  },
+  {
+   "name": "content.blocks-4",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — BLOCKS, part 4",
+   "lines": [
+    6154,
+    6343
+   ],
+   "sha": "e4ab9be1312ba2a4",
+   "statements": [
+    "call BLOCKS.push"
+   ],
+   "note": "hemo, drugs"
+  },
+  {
+   "name": "content.deep-dive",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — DEEP DIVE ADDITIONS",
+   "lines": [
+    6344,
+    6457
+   ],
+   "sha": "e2f51ac684d872d4",
+   "statements": [
+    "set PALACE.drugsuffix",
+    "set PALACE.bugpairs",
+    "call BLOCKS.push"
+   ],
+   "note": "palaces drugsuffix/bugpairs; the congenital topic"
+  },
+  {
+   "name": "patch.enrich",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* ---------- splice the new visuals and memory systems into existing topics",
+   "lines": [
+    6458,
+    6483
+   ],
+   "sha": "45d29a7e233ab1b4",
+   "statements": [
+    "iife enrich"
+   ],
+   "note": "splices figures/palaces into d1, d2"
+  },
+  {
+   "name": "content.rewrite-1",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — DEPTH REWRITE, batch 1",
+   "lines": [
+    6484,
+    6616
+   ],
+   "sha": "afb7197e0c5f3751",
+   "statements": [
+    "var REWRITE",
+    "set REWRITE.c2",
+    "set REWRITE.i1",
+    "set REWRITE.v1"
+   ],
+   "note": "REWRITE c2, i1, v1"
+  },
+  {
+   "name": "patch.applyRewrite",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* ---------- apply the rewrites ---------- */",
+   "lines": [
+    6617,
+    6620
+   ],
+   "sha": "0479ff12898cccc5",
+   "statements": [
+    "iife applyRewrite"
+   ],
+   "note": "replaces topic bodies"
+  },
+  {
+   "name": "content.images-2",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — REAL IMAGES, set 2",
+   "lines": [
+    6621,
+    6738
+   ],
+   "sha": "f44032f46b8c4c90",
+   "statements": [
+    "set IMGS.ecg_af",
+    "set IMGS.ecg_flutter",
+    "set IMGS.ecg_wpw",
+    "set IMGS.ecg_stemi",
+    "set IMGS.ecg_torsades",
+    "set IMGS.ecg_block3",
+    "set IMGS.endocard_veg",
+    "set IMGS.valve_as"
+   ],
+   "note": "cardio images, set 2"
+  },
+  {
+   "name": "patch.placeImages",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* ---------- wire the new images into the topics that describe them",
+   "lines": [
+    6739,
+    6761
+   ],
+   "sha": "2521da7a740b6b59",
+   "statements": [
+    "iife placeImages"
+   ],
+   "note": "places set-2 images"
+  },
+  {
+   "name": "content.images-3",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — REAL IMAGES, set 3",
+   "lines": [
+    6762,
+    6849
+   ],
+   "sha": "0ac3b1abec4dcfd3",
+   "statements": [
+    "set IMGS.ecg_vt",
+    "set IMGS.ecg_vf",
+    "set IMGS.lvh_gross",
+    "set IMGS.mi_neutro",
+    "set IMGS.janeway",
+    "set IMGS.tof_spec"
+   ],
+   "note": "cardio images, set 3"
+  },
+  {
+   "name": "patch.placeImages3",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* ---------- place them, and restore the image the vasculitis rewrite dropped",
+   "lines": [
+    6850,
+    6872
+   ],
+   "sha": "a0255d47de24275c",
+   "statements": [
+    "iife placeImages3"
+   ],
+   "note": "places set-3 images"
+  },
+  {
+   "name": "content.credits",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "IMAGE CREDITS — author, licence and source",
+   "lines": [
+    6873,
+    6946
+   ],
+   "sha": "07df4ac83ec26a10",
+   "statements": [
+    "var CRED",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]",
+    "set CRED[]"
+   ],
+   "note": "CRED side table"
+  },
+  {
+   "name": "patch.applyCredits",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "(function applyCredits(){",
+   "lines": [
+    6947,
+    6954
+   ],
+   "sha": "a2019e1d3ef32b41",
+   "statements": [
+    "iife applyCredits"
+   ],
+   "note": "CRED -> IMGS credit fields"
+  },
+  {
+   "name": "content.images-set4",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* NEWIMAGESET4START */",
+   "lines": [
+    6955,
+    7176
+   ],
+   "sha": "21734d0c0d40b910",
+   "statements": [
+    "set IMGS.boot_heart",
+    "set IMGS.egg_string",
+    "set IMGS.rib_notch",
+    "set IMGS.tendon_xan",
+    "set IMGS.xanthelasma",
+    "set IMGS.splinter",
+    "set IMGS.kawasaki_tongue",
+    "set IMGS.nutmeg",
+    "set IMGS.angioedema",
+    "set IMGS.myxoma_gross",
+    "set IMGS.clubbing_cyanotic",
+    "set IMGS.buerger_gangrene",
+    "set IMGS.iga_purpura",
+    "set IMGS.fmd_beads"
+   ],
+   "note": "cardio images, set 4"
+  },
+  {
+   "name": "content.questions-1",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — QUESTIONS, RAPID PICKS, DRILLS, PATH",
+   "lines": [
+    7177,
+    7669
+   ],
+   "sha": "ab009139bd258ddd",
+   "statements": [
+    "var QS"
+   ],
+   "note": "QS literal"
+  },
+  {
+   "name": "content.rapid",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "RAPID PICKS — one line,",
+   "lines": [
+    7670,
+    7947
+   ],
+   "sha": "f976e1129e7d6e03",
+   "statements": [
+    "var RAPID"
+   ],
+   "note": "RAPID literal"
+  },
+  {
+   "name": "content.drills",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "\n   DRILLS\n",
+   "lines": [
+    7948,
+    8048
+   ],
+   "sha": "5f3b4f4299e191e0",
+   "statements": [
+    "var DRILLS"
+   ],
+   "note": "DRILLS literal"
+  },
+  {
+   "name": "content.path",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "PATH — the sequential spine",
+   "lines": [
+    8049,
+    8094
+   ],
+   "sha": "7521b9185bd1c808",
+   "statements": [
+    "var PATH"
+   ],
+   "note": "PATH literal"
+  },
+  {
+   "name": "content.rapid-x-1",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — RAPID ONE-LINERS, batch 1",
+   "lines": [
+    8095,
+    8194
+   ],
+   "sha": "065f8bddb03783ad",
+   "statements": [
+    "var RAPID_X"
+   ],
+   "note": "RAPID_X"
+  },
+  {
+   "name": "content.rapid-x-2",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — RAPID ONE-LINERS, batch 2, and the apply step",
+   "lines": [
+    8195,
+    8587
+   ],
+   "sha": "d416f8b264cbeaab",
+   "statements": [
+    "call Object.assign(RAPID_X",
+    "set RAPID_X[]",
+    "call Object.assign(RAPID_X",
+    "call Object.assign(RAPID_X",
+    "call Object.assign(RAPID_X",
+    "call Object.assign(RAPID_X"
+   ],
+   "note": "RAPID_X batches"
+  },
+  {
+   "name": "engine.applyRapidX",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "/* ---- apply: fill in any rapid item that has no one-liner",
+   "lines": [
+    8588,
+    8602
+   ],
+   "sha": "c34e824be608bafe",
+   "statements": [
+    "iife applyRapidX"
+   ],
+   "note": "E-T: r.x from RAPID_X (build.py emits RAPID_X = {})"
+  },
+  {
+   "name": "patch.explainTheAnswer",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* ---- explanations that named a true fact instead of explaining the answer",
+   "lines": [
+    8603,
+    8660
+   ],
+   "sha": "7549f3980bd6bd0b",
+   "statements": [
+    "iife explainTheAnswer"
+   ],
+   "note": "overrides r.x for 22 cardio items"
+  },
+  {
+   "name": "content.qdepth",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — DEEPER QUESTION WALK-THROUGHS",
+   "lines": [
+    8661,
+    8810
+   ],
+   "sha": "ccf8f9b7ae339ed1",
+   "statements": [
+    "var QDEPTH"
+   ],
+   "note": "QDEPTH"
+  },
+  {
+   "name": "engine.applyQDepth",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "(function applyQDepth(){",
+   "lines": [
+    8811,
+    8822
+   ],
+   "sha": "362d33976e7ca261",
+   "statements": [
+    "iife applyQDepth"
+   ],
+   "note": "E-T: merges QDEPTH (build.py emits QDEPTH = {})"
+  },
+  {
+   "name": "content.rewrite-2",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — DEPTH REWRITE, batch 2",
+   "lines": [
+    8823,
+    8922
+   ],
+   "sha": "ff4214f405b86d84",
+   "statements": [
+    "set REWRITE.d2",
+    "set REWRITE.a2",
+    "set REWRITE.p3"
+   ],
+   "note": "REWRITE d2, a2, p3"
+  },
+  {
+   "name": "patch.applyRewrite2",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* ---- apply batch 2 ---- */",
+   "lines": [
+    8923,
+    8926
+   ],
+   "sha": "92ecd29f3ea07f6b",
+   "statements": [
+    "iife applyRewrite2"
+   ],
+   "note": ""
+  },
+  {
+   "name": "patch.dropDuplicates",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — QUESTION BANK, batch 2",
+   "lines": [
+    8927,
+    8940
+   ],
+   "sha": "f991c7c521162dda",
+   "statements": [
+    "iife dropDuplicates"
+   ],
+   "note": "removes q3, q4"
+  },
+  {
+   "name": "content.qs2",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "const QS2 = [",
+   "lines": [
+    8941,
+    9242
+   ],
+   "sha": "a9091caabf75bbc7",
+   "statements": [
+    "var QS2",
+    "call QS2.forEach"
+   ],
+   "note": "QS2 and its merge"
+  },
+  {
+   "name": "content.images-4",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — REAL IMAGES, batch 4",
+   "lines": [
+    9243,
+    9360
+   ],
+   "sha": "bdfca53910cfca6f",
+   "statements": [
+    "set IMGS.ecg_pericarditis",
+    "set IMGS.mitral_gross",
+    "set IMGS.aaa_ct",
+    "set IMGS.cxr_chf",
+    "set IMGS.mi_granul",
+    "set IMGS.dvt_leg",
+    "set IMGS.pe_gross",
+    "set IMGS.schisto"
+   ],
+   "note": "cardio images, batch 4"
+  },
+  {
+   "name": "patch.applyCreditsLate",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* P1.4 — these eight images are declared AFTER applyCredits()",
+   "lines": [
+    9361,
+    9373
+   ],
+   "sha": "4c81f6499d9a1a47",
+   "statements": [
+    "iife applyCreditsLate"
+   ],
+   "note": ""
+  },
+  {
+   "name": "content.rewrite-3",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — DEPTH REWRITE, batch 3",
+   "lines": [
+    9374,
+    9520
+   ],
+   "sha": "ab341c8c233e24f8",
+   "statements": [
+    "set REWRITE.c1",
+    "set REWRITE.i2",
+    "set REWRITE.m1",
+    "set REWRITE.n1"
+   ],
+   "note": "REWRITE c1, i2, m1, n1"
+  },
+  {
+   "name": "patch.applyRewrite3",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* ---- apply batch 3 ---- */",
+   "lines": [
+    9521,
+    9524
+   ],
+   "sha": "3196c737e453bc9e",
+   "statements": [
+    "iife applyRewrite3"
+   ],
+   "note": ""
+  },
+  {
+   "name": "content.rewrite-4",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — DEPTH REWRITE, batch 4",
+   "lines": [
+    9525,
+    9664
+   ],
+   "sha": "a1b207f36aaeb494",
+   "statements": [
+    "set REWRITE.r1",
+    "set REWRITE.n2",
+    "set REWRITE.h1",
+    "set REWRITE.a1"
+   ],
+   "note": "REWRITE r1, n2, h1, a1"
+  },
+  {
+   "name": "patch.applyRewrite4",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* ---- apply batch 4 ---- */",
+   "lines": [
+    9665,
+    9668
+   ],
+   "sha": "4f30cff009cf41af",
+   "statements": [
+    "iife applyRewrite4"
+   ],
+   "note": ""
+  },
+  {
+   "name": "content.rewrite-5",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — DEPTH REWRITE, batch 5",
+   "lines": [
+    9669,
+    9819
+   ],
+   "sha": "2a8e1500f6f934b4",
+   "statements": [
+    "set REWRITE.d1",
+    "set REWRITE.f2",
+    "set REWRITE.p1",
+    "set REWRITE.p2",
+    "set REWRITE.f1"
+   ],
+   "note": "REWRITE d1, f2, p1, p2, f1"
+  },
+  {
+   "name": "patch.topUps",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* ---- top-ups: add the missing figures and a little more prose ---- */",
+   "lines": [
+    9820,
+    9844
+   ],
+   "sha": "a444c253befd159d",
+   "statements": [
+    "iife topUps"
+   ],
+   "note": "splices figures, re-applies REWRITE"
+  },
+  {
+   "name": "patch.splitVasculitis",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — final structural pass",
+   "lines": [
+    9845,
+    9927
+   ],
+   "sha": "39e93cf050ecdf17",
+   "statements": [
+    "iife splitVasculitis"
+   ],
+   "note": "c2 -> c2 + c3, regex re-tagging"
+  },
+  {
+   "name": "patch.trimLong",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* ---------- 2. trim the setup prose from the two remaining long topics",
+   "lines": [
+    9928,
+    9956
+   ],
+   "sha": "8e195f27c0b066b0",
+   "statements": [
+    "iife trimLong"
+   ],
+   "note": ""
+  },
+  {
+   "name": "content.topup",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------- 3. top up the topics still short of the bar",
+   "lines": [
+    9957,
+    9978
+   ],
+   "sha": "0a2d70754d9d4423",
+   "statements": [
+    "var TOPUP"
+   ],
+   "note": "TOPUP"
+  },
+  {
+   "name": "patch.applyTopups",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "(function applyTopups(){",
+   "lines": [
+    9979,
+    9986
+   ],
+   "sha": "ba9898324d24c5f8",
+   "statements": [
+    "iife applyTopups"
+   ],
+   "note": ""
+  },
+  {
+   "name": "content.topup-late",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "TOPUP.d1.push(",
+   "lines": [
+    9987,
+    9995
+   ],
+   "sha": "10ad3c5780e177f1",
+   "statements": [
+    "call TOPUP.d1.push",
+    "call TOPUP.f1.push",
+    "call TOPUP.f2.push"
+   ],
+   "note": "rows pushed after applyTopups"
+  },
+  {
+   "name": "patch.applyTopups2",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "(function applyTopups2(){",
+   "lines": [
+    9996,
+    10001
+   ],
+   "sha": "654bd5b2e4ff78ca",
+   "statements": [
+    "iife applyTopups2"
+   ],
+   "note": ""
+  },
+  {
+   "name": "content.qdepth2",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — WRONG-ANSWER DEPTH, batch 2",
+   "lines": [
+    10002,
+    10180
+   ],
+   "sha": "b92878e243b96ba8",
+   "statements": [
+    "var QDEPTH2"
+   ],
+   "note": "QDEPTH2"
+  },
+  {
+   "name": "engine.applyQDepth2",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "(function applyQDepth2(){",
+   "lines": [
+    10181,
+    10194
+   ],
+   "sha": "9d508dfca6a4aa95",
+   "statements": [
+    "iife applyQDepth2"
+   ],
+   "note": "E-T: QDEPTH2 option-text notes -> q.w (build.py emits QDEPTH2 = {})"
+  },
+  {
+   "name": "patch.panel-fixes",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — PANEL FIXES",
+   "lines": [
+    10195,
+    10560
+   ],
+   "sha": "3eb716f27e78b697",
+   "statements": [
+    "iife fixFigurePlacement",
+    "iife restoreAntithrombotics",
+    "iife addHaemodynamics",
+    "iife addEcgPatterns",
+    "iife addTumoursAndCmExtras",
+    "iife addCongenitalAssociations",
+    "iife addVascularLesions",
+    "iife addSmallGaps",
+    "iife fixQuestions",
+    "iife fixShockTable",
+    "iife fixChemoreceptors",
+    "iife useOrphanedAssets",
+    "iife trimOverweighted",
+    "iife moreQuestionFixes",
+    "iife rebalanceMinutes",
+    "iife addGuyton",
+    "iife addAxisAndPressors"
+   ],
+   "note": "17 panel-fix IIFEs"
+  },
+  {
+   "name": "patch.repairDrills",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — DRILL REPAIRS AND NEW DRILLS",
+   "lines": [
+    10561,
+    10596
+   ],
+   "sha": "f1bd5df0d0c620df",
+   "statements": [
+    "iife repairDrills"
+   ],
+   "note": ""
+  },
+  {
+   "name": "content.drills2",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---- I8: six topics had no discrimination drill ---- */",
+   "lines": [
+    10597,
+    10664
+   ],
+   "sha": "bf42d06178803b98",
+   "statements": [
+    "var DRILLS2",
+    "call DRILLS2.forEach"
+   ],
+   "note": "DRILLS2 and its merge"
+  },
+  {
+   "name": "content.sexp",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — SELF-EXPLANATION CHECKPOINTS",
+   "lines": [
+    10665,
+    10747
+   ],
+   "sha": "2221baca1513cd6f",
+   "statements": [
+    "var SEXP"
+   ],
+   "note": "SEXP"
+  },
+  {
+   "name": "engine.attachSexp",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "/* attach each one just before the topic's closing \"why\" block",
+   "lines": [
+    10748,
+    10759
+   ],
+   "sha": "94a4906dfb010300",
+   "statements": [
+    "iife attachSexp"
+   ],
+   "note": "E-T: SEXP -> sexp rows (build.py emits SEXP = {})"
+  },
+  {
+   "name": "patch.fixDeadDistractors",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "RAPID ITEMS — DISTRACTOR QUALITY",
+   "lines": [
+    10760,
+    10802
+   ],
+   "sha": "ec33d0dda5f9ba39",
+   "statements": [
+    "iife fixDeadDistractors"
+   ],
+   "note": ""
+  },
+  {
+   "name": "content.qs3",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — QUESTION BANK, batch 3",
+   "lines": [
+    10803,
+    11095
+   ],
+   "sha": "263918dea9cd5c78",
+   "statements": [
+    "var QS3",
+    "call QS3.forEach"
+   ],
+   "note": ""
+  },
+  {
+   "name": "content.qs4",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — QUESTION BANK, batch 4",
+   "lines": [
+    11096,
+    11366
+   ],
+   "sha": "b4401d0ab1763451",
+   "statements": [
+    "var QS4",
+    "call QS4.forEach"
+   ],
+   "note": ""
+  },
+  {
+   "name": "content.qs5",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — QUESTION BANK, batch 5",
+   "lines": [
+    11367,
+    11775
+   ],
+   "sha": "2aecd92031f4859b",
+   "statements": [
+    "var QS5",
+    "call QS5.forEach"
+   ],
+   "note": ""
+  },
+  {
+   "name": "content.fig-redraws",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "FIGURE REDRAWS",
+   "lines": [
+    11776,
+    11948
+   ],
+   "sha": "678843f9e148cc97",
+   "statements": [
+    "set FIGS.murmurs",
+    "set FIGS.lipid"
+   ],
+   "note": "murmurs, lipid redefined"
+  },
+  {
+   "name": "patch.treesToTables",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* ---------- the three text trees become honest tables",
+   "lines": [
+    11949,
+    11999
+   ],
+   "sha": "a2e523830eff071d",
+   "statements": [
+    "iife treesToTables"
+   ],
+   "note": ""
+  },
+  {
+   "name": "content.fig-tof",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ---------------- Tetralogy: the anatomy, not a sentence tree",
+   "lines": [
+    12000,
+    12052
+   ],
+   "sha": "c012efaf4a51f4fc",
+   "statements": [
+    "set FIGS.tof"
+   ],
+   "note": "tof redefined"
+  },
+  {
+   "name": "patch.shuntsToTable",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* shunts was two paragraph boxes",
+   "lines": [
+    12053,
+    12074
+   ],
+   "sha": "febacc99f1f4fea3",
+   "statements": [
+    "iife shuntsToTable",
+    "iife fixQ198"
+   ],
+   "note": ""
+  },
+  {
+   "name": "content.visual-guides",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* One original annotated concept image per topic.",
+   "lines": [
+    12075,
+    12112
+   ],
+   "sha": "ee8e939af14fa5b1",
+   "statements": [
+    "var VISUAL_GUIDES",
+    "var TOPIC_MEDIA"
+   ],
+   "note": "VISUAL_GUIDES, TOPIC_MEDIA"
+  },
+  {
+   "name": "engine.vis-insert",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "BLOCKS.forEach(b=>b.topics.forEach(t=>{ if(VISUAL_GUIDES[t.id]",
+   "lines": [
+    12113,
+    12115
+   ],
+   "sha": "89156eb58787037f",
+   "statements": [
+    "call BLOCKS.forEach"
+   ],
+   "note": "E-T: inserts [\"vis\",id] when a topic has a guide and no vis row"
+  },
+  {
+   "name": "content.adv-questions",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* Longer, two-step clinical vignettes",
+   "lines": [
+    12116,
+    12130
+   ],
+   "sha": "ea61aa744708cd64",
+   "statements": [
+    "call QS.push"
+   ],
+   "note": "adv1-adv8"
+  },
+  {
+   "name": "content.nbme",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* Forty-two additional multi-step board-style cases",
+   "lines": [
+    12131,
+    12400
+   ],
+   "sha": "6b38dc2516047dd3",
+   "statements": [
+    "var NBME_EXPANSION",
+    "var NB_WHY"
+   ],
+   "note": "NBME_EXPANSION, NB_WHY"
+  },
+  {
+   "name": "engine.nbme-convert",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "NBME_EXPANSION.forEach(x=>{",
+   "lines": [
+    12401,
+    12408
+   ],
+   "sha": "b757623db1ca31bd",
+   "statements": [
+    "call NBME_EXPANSION.forEach"
+   ],
+   "note": "E-T converter (literals b:\"mixed\", d:3; build.py emits NBME_EXPANSION = [])"
+  },
+  {
+   "name": "patch.p46-placements",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* P4.6 - the two nb* stems the xanthoma figure",
+   "lines": [
+    12409,
+    12582
+   ],
+   "sha": "f3bab6b801426329",
+   "statements": [
+    "iife placeXanthomaEf",
+    "iife placeSecondaryHtnEf",
+    "iife placeP48Visuals",
+    "iife placeP48r2Visuals"
+   ],
+   "note": "q.ef/q.ei by id"
+  },
+  {
+   "name": "content.multi-drills",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "DRILLS.push(\n {id:\"dm_vasc\"",
+   "lines": [
+    12583,
+    12645
+   ],
+   "sha": "ca5702f65eb41ee0",
+   "statements": [
+    "call DRILLS.push"
+   ],
+   "note": "multi drills"
+  },
+  {
+   "name": "engine.core",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "STEP 1 BLOCK ENGINE  v2",
+   "lines": [
+    12646,
+    12685
+   ],
+   "sha": "1609aa23cabf871d",
+   "statements": [
+    "var LS_KEY",
+    "var HUB_KEY",
+    "var BOXES",
+    "var DAILY_MIN",
+    "var DB",
+    "var blank",
+    "var S"
+   ],
+   "note": "LS_KEY, HUB_KEY, BOXES, blank(), S"
+  },
+  {
+   "name": "engine.flags",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "FLAGGED ITEMS (P3.5)",
+   "lines": [
+    12686,
+    12743
+   ],
+   "sha": "74e353b74f30f604",
+   "statements": [
+    "var FLAG_KINDS",
+    "var escA",
+    "var flagList",
+    "var flagIx",
+    "var flagRef",
+    "var unflagRef",
+    "fn flagCtrl",
+    "fn flagTarget"
+   ],
+   "note": "flags"
+  },
+  {
+   "name": "engine.persistence",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "function load(){",
+   "lines": [
+    12744,
+    12821
+   ],
+   "sha": "38a22b8d6e528e11",
+   "statements": [
+    "fn load",
+    "fn repairState",
+    "fn save",
+    "fn pushDb",
+    "fn flash",
+    "fn flushNow",
+    "call window.addEventListener",
+    "call window.addEventListener",
+    "call document.addEventListener",
+    "call setInterval"
+   ],
+   "note": "load, repairState, save, flush listeners"
+  },
+  {
+   "name": "engine.db-sync",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "function capOrNull(",
+   "lines": [
+    12822,
+    12886
+   ],
+   "sha": "80527151d47a74c7",
+   "statements": [
+    "fn capOrNull",
+    "fn mergeProgress",
+    "iife syncDb"
+   ],
+   "note": "capOrNull, mergeProgress, syncDb"
+  },
+  {
+   "name": "engine.helpers",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "/* ---------------------------------------------------------------- helpers */",
+   "lines": [
+    12887,
+    13062
+   ],
+   "sha": "eb843c4fc2dc695d",
+   "statements": [
+    "var el",
+    "fn migrateRapidKeys",
+    "var ALLT",
+    "var findT",
+    "var esc",
+    "var pct",
+    "var clamp",
+    "var stripTags",
+    "fn shuffle",
+    "fn examCeiling",
+    "fn promote",
+    "var isDue",
+    "var overdue",
+    "var todayKey",
+    "var BOLDN",
+    "fn fmt",
+    "var RBYID",
+    "var IMGTOPIC",
+    "var HUBCACHE",
+    "fn rItem",
+    "fn hashId",
+    "var GTERMS",
+    "fn glossTerms",
+    "fn autoCloze",
+    "fn autoGloss",
+    "fn tagEverything"
+   ],
+   "note": "helpers, fmt, glossary matcher, tagEverything"
+  },
+  {
+   "name": "engine.diagnosis",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "/* ---------------------------------------------------------------- diagnosis */",
+   "lines": [
+    13063,
+    13491
+   ],
+   "sha": "2b1d72bb242e716e",
+   "statements": [
+    "fn chanceAdj",
+    "fn topicEvidence",
+    "fn diagnose",
+    "fn confusions",
+    "fn stemFloorMs",
+    "fn errorTypes",
+    "fn errorTypesHTML",
+    "var SITTING_GAP",
+    "fn sittingAnswers",
+    "var FATIGUE_MIN",
+    "var FATIGUE_WIN",
+    "var FATIGUE_ON",
+    "var FATIGUE_OFF",
+    "var FATIGUE_MIX",
+    "var FATIGUE_HARD",
+    "fn sessionFatigue",
+    "fn fatigueHTML",
+    "fn leeches",
+    "fn trajectory",
+    "fn calibration"
+   ],
+   "note": "topicEvidence (option-count literals), errorTypes, fatigue"
+  },
+  {
+   "name": "engine.progress",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "/* ---------------------------------------------------------------- progress */",
+   "lines": [
+    13492,
+    13609
+   ],
+   "sha": "c13bae1c7cbc6b74",
+   "statements": [
+    "fn stageOf",
+    "fn stageQs",
+    "fn stageRapid",
+    "fn diagVerdict",
+    "fn stageProgress",
+    "var stageDone",
+    "fn currentStage",
+    "fn blockScore",
+    "fn blockKnown",
+    "fn overall",
+    "fn covered",
+    "fn stats",
+    "fn bumpDay",
+    "fn streak",
+    "var daysLeft",
+    "var examPassed",
+    "fn paceStartKey",
+    "fn blockDay"
+   ],
+   "note": "stages, overall, streak, days"
+  },
+  {
+   "name": "engine.header",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "/* ---------------------------------------------------------------- header */",
+   "lines": [
+    13610,
+    13673
+   ],
+   "sha": "b60827d2dc12bf57",
+   "statements": [
+    "var MODES",
+    "var lastNavHTML",
+    "fn paintHeader",
+    "fn bindChrome",
+    "fn go"
+   ],
+   "note": "MODES, paintHeader (exam-name literals), bindChrome, go"
+  },
+  {
+   "name": "engine.focus",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "FOCUS CONTINUITY (P1.2)",
+   "lines": [
+    13674,
+    13816
+   ],
+   "sha": "0ed03227d4a55778",
+   "statements": [
+    "var FOCUSABLE_SEL",
+    "fn isTabbable",
+    "fn captureFocus",
+    "fn focusTwin",
+    "fn focusHolder",
+    "fn restoreFocus",
+    "fn announceFeedback",
+    "fn render",
+    "fn rerenderHere",
+    "fn restoreScroll"
+   ],
+   "note": "focus continuity, render"
+  },
+  {
+   "name": "engine.hub",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "CROSS-BLOCK REVIEW HUB",
+   "lines": [
+    13817,
+    13850
+   ],
+   "sha": "b55ed17df3518afc",
+   "statements": [
+    "fn hubLoad",
+    "fn hubSave",
+    "fn hubSync",
+    "fn hubDue",
+    "fn hubOtherBlocks"
+   ],
+   "note": "hub"
+  },
+  {
+   "name": "engine.daily-plan",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "DAILY PLAN — 2 hours a day",
+   "lines": [
+    13851,
+    14102
+   ],
+   "sha": "9cf499095110b6cc",
+   "statements": [
+    "fn todaysPlan",
+    "fn planHTML",
+    "var CAL_SEL",
+    "fn dayKeyLocal",
+    "fn calStripHTML",
+    "fn calDetailHTML"
+   ],
+   "note": "todaysPlan, planHTML, calendar (exam-name literals)"
+  },
+  {
+   "name": "engine.view-path",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "   VIEW: PATH",
+   "lines": [
+    14103,
+    14249
+   ],
+   "sha": "1629a1da09192e18",
+   "statements": [
+    "fn viewPath",
+    "fn nextStepLabel",
+    "fn openStage",
+    "fn diagSet",
+    "fn reservedIds",
+    "var RESERVED",
+    "var isReserved",
+    "fn finalSet"
+   ],
+   "note": "viewPath, openStage, diagSet, finalSet (40)"
+  },
+  {
+   "name": "engine.view-learn",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "   VIEW: LEARN",
+   "lines": [
+    14250,
+    14359
+   ],
+   "sha": "7cb3df4297f43ac1",
+   "statements": [
+    "fn railHTML",
+    "fn yieldBanner",
+    "fn viewLearn",
+    "var cz",
+    "fn explicitGloss",
+    "fn bodyBlock",
+    "fn visualGuideHTML"
+   ],
+   "note": "railHTML, viewLearn, bodyBlock, visualGuideHTML"
+  },
+  {
+   "name": "engine.pick-comment",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "decides the visual: undefined falls back",
+   "lines": [
+    14360,
+    14364
+   ],
+   "sha": "44a22db98ae80544",
+   "statements": [],
+   "note": "comment that documents deepReviewHTML's pick argument"
+  },
+  {
+   "name": "content.rapid-media",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* Rapid item -> the one visual that actually shows",
+   "lines": [
+    14365,
+    14767
+   ],
+   "sha": "3b04b1bf2770178a",
+   "statements": [
+    "var RAPID_MEDIA"
+   ],
+   "note": "RAPID_MEDIA (build.py emits it from rapid.media)"
+  },
+  {
+   "name": "engine.rapid-media-fn",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "function rapidMedia(r){",
+   "lines": [
+    14768,
+    14773
+   ],
+   "sha": "19b7d8690e1a3be5",
+   "statements": [
+    "fn rapidMedia"
+   ],
+   "note": "rapidMedia"
+  },
+  {
+   "name": "content.rapid-point",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* P1.8: the pinned figure used to sit collapsed",
+   "lines": [
+    14774,
+    15092
+   ],
+   "sha": "f838d1b1989349d8",
+   "statements": [
+    "var RAPID_POINT"
+   ],
+   "note": "RAPID_POINT (build.py emits it from rapid.pt)"
+  },
+  {
+   "name": "engine.rapid-points",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "/* Runs at load, before anything renders: copies each point onto its item as r.pt.",
+   "lines": [
+    15093,
+    15156
+   ],
+   "sha": "3aed3c55d4277047",
+   "statements": [
+    "iife applyRapidPoints",
+    "fn highlightFigure"
+   ],
+   "note": "applyRapidPoints, highlightFigure"
+  },
+  {
+   "name": "engine.deep-review",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "function deepReviewHTML(tid, label, pick",
+   "lines": [
+    15157,
+    15302
+   ],
+   "sha": "ca43d9d12df8e2f3",
+   "statements": [
+    "fn deepReviewHTML",
+    "var stepsText",
+    "fn stepsHTML",
+    "fn tableHTML",
+    "fn figHTML",
+    "fn palaceHTML",
+    "fn credHTML",
+    "var IMG_RENDER_SEQ",
+    "fn imgHTML",
+    "fn pretestHTML",
+    "fn sexpHTML",
+    "fn gridHTML"
+   ],
+   "note": "deepReviewHTML, figHTML, palaceHTML, credHTML (source literal), imgHTML, pretest, sexp, grid"
+  },
+  {
+   "name": "engine.practice-helpers",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "   VIEW: PRACTICE",
+   "lines": [
+    15303,
+    15338
+   ],
+   "sha": "530fbe3d4626508e",
+   "statements": [
+    "fn practiceLabel",
+    "fn mix32",
+    "fn viewOrder"
+   ],
+   "note": "practiceLabel, mix32, viewOrder"
+  },
+  {
+   "name": "engine.set-builder",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "UNIVERSAL SET BUILDER",
+   "lines": [
+    15339,
+    15469
+   ],
+   "sha": "c24760ba3d60c018",
+   "statements": [
+    "var BLD_DEF",
+    "var BLD_STATUS",
+    "var BLD_YIELD",
+    "var POOLS",
+    "fn bld",
+    "fn bldMatch",
+    "fn bldPool",
+    "fn bldHard",
+    "fn bldOrdered",
+    "fn chipRow",
+    "fn bldHTML",
+    "fn bldStart",
+    "fn wireBld"
+   ],
+   "note": "set builder"
+  },
+  {
+   "name": "engine.view-practice",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "function viewPractice(){",
+   "lines": [
+    15470,
+    15565
+   ],
+   "sha": "0f7237a49f9b96bb",
+   "statements": [
+    "fn viewPractice"
+   ],
+   "note": "viewPractice (exam literals)"
+  },
+  {
+   "name": "engine.view-drills",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "   VIEW: DRILLS",
+   "lines": [
+    15566,
+    15664
+   ],
+   "sha": "299b5f7034500a4a",
+   "statements": [
+    "fn viewDrill",
+    "fn multiDrillHTML",
+    "fn sortDrillHTML",
+    "fn orderDrillHTML"
+   ],
+   "note": "viewDrill, multi/sort/order drill HTML"
+  },
+  {
+   "name": "engine.view-rapid-banner",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "   VIEW: RAPID",
+   "lines": [
+    15665,
+    15667
+   ],
+   "sha": "41530d5eb2bf07b7",
+   "statements": [],
+   "note": "banner"
+  },
+  {
+   "name": "content.tag-labels",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* P1.7: the rapid verdict never said what KIND of fact",
+   "lines": [
+    15668,
+    15694
+   ],
+   "sha": "df2827681c725530",
+   "statements": [
+    "var TAG_LABELS"
+   ],
+   "note": "TAG_LABELS (build.py emits it from concepts.labels)"
+  },
+  {
+   "name": "engine.view-rapid",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "function rfCatHTML(r){",
+   "lines": [
+    15695,
+    15754
+   ],
+   "sha": "860710d4081ff7c4",
+   "statements": [
+    "fn rfCatHTML",
+    "fn viewRapid"
+   ],
+   "note": "rfCatHTML, viewRapid (option-count literal)"
+  },
+  {
+   "name": "engine.view-spot",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "   VIEW: IMAGES",
+   "lines": [
+    15755,
+    15802
+   ],
+   "sha": "4a0a50c7a6a908f0",
+   "statements": [
+    "fn viewSpot",
+    "fn buildSpotOpts"
+   ],
+   "note": "viewSpot, buildSpotOpts (three-wrong literals)"
+  },
+  {
+   "name": "engine.view-weak",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "   VIEW: WEAK SPOTS",
+   "lines": [
+    15803,
+    15966
+   ],
+   "sha": "c98266e3ddeb0d0d",
+   "statements": [
+    "fn viewWeak"
+   ],
+   "note": "viewWeak"
+  },
+  {
+   "name": "engine.view-gloss",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "   VIEW: GLOSSARY",
+   "lines": [
+    15967,
+    15979
+   ],
+   "sha": "4a2530f37796aad0",
+   "statements": [
+    "fn viewGloss"
+   ],
+   "note": "viewGloss"
+  },
+  {
+   "name": "engine.search",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "   GLOBAL SEARCH",
+   "lines": [
+    15980,
+    16084
+   ],
+   "sha": "c8d868d80e74299c",
+   "statements": [
+    "var SEARCH_INDEX",
+    "fn buildIndex",
+    "fn openSearch",
+    "fn closeSearch",
+    "fn runSearch",
+    "fn hi",
+    "fn searchGo"
+   ],
+   "note": "search"
+  },
+  {
+   "name": "engine.tutor",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "   TUTOR DOCK",
+   "lines": [
+    16085,
+    16236
+   ],
+   "sha": "b2da499a732b03ac",
+   "statements": [
+    "var SAMPLE",
+    "fn getSample",
+    "fn screenContext",
+    "fn paintDock",
+    "fn askDock"
+   ],
+   "note": "tutor dock (exam literals)"
+  },
+  {
+   "name": "engine.svg-fitter",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "   SVG TEXT FITTER",
+   "lines": [
+    16237,
+    16281
+   ],
+   "sha": "ee36aedaf3c2957d",
+   "statements": [
+    "fn fitSvgText",
+    "fn fitAllFigures",
+    "if document.fonts && document.fonts.ready) "
+   ],
+   "note": "fitSvgText, fitAllFigures, fonts.ready re-fit"
+  },
+  {
+   "name": "engine.wiring",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "   WIRING",
+   "lines": [
+    16282,
+    16504
+   ],
+   "sha": "0e98e0701fe5c624",
+   "statements": [
+    "fn wire",
+    "fn wirePretest",
+    "fn wireSexp"
+   ],
+   "note": "wire, wirePretest, wireSexp"
+  },
+  {
+   "name": "engine.lightbox",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "/* ---------- lightbox: every figure and photo",
+   "lines": [
+    16505,
+    16677
+   ],
+   "sha": "313c889dd17172aa",
+   "statements": [
+    "var LB_Z",
+    "fn lbVbw",
+    "fn lbFitZ",
+    "fn lbBaseZ",
+    "fn lbApplyZoom",
+    "fn lbZoomTo",
+    "fn lbZoomInit",
+    "var lastFocusBeforeLightbox",
+    "fn openLightbox",
+    "fn closeLightbox",
+    "fn lbKeydown",
+    "fn lbHighlight",
+    "fn wireZoom",
+    "fn wirePins",
+    "fn wireGrid"
+   ],
+   "note": "lightbox, wireZoom, wirePins, wireGrid"
+  },
+  {
+   "name": "engine.practice-flow",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "/* Step 1 allows roughly 90 seconds a question.",
+   "lines": [
+    16678,
+    16851
+   ],
+   "sha": "a7d287ee5b5a3f82",
+   "statements": [
+    "var paceTimer",
+    "fn startPace",
+    "var dwellTimer",
+    "fn startDwell",
+    "fn startSet",
+    "fn wirePractice",
+    "fn finishSet",
+    "fn startDrill"
+   ],
+   "note": "startPace, dwell, startSet, wirePractice, finishSet (p0 literal), startDrill"
+  },
+  {
+   "name": "content.drill-why",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* DRILL_WHY -- one clause naming",
+   "lines": [
+    16852,
+    17238
+   ],
+   "sha": "192b63847f771691",
+   "statements": [
+    "var DRILL_WHY"
+   ],
+   "note": "DRILL_WHY (build.py emits it from the drill items)"
+  },
+  {
+   "name": "engine.wire-drill",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "function wireDrill(app){",
+   "lines": [
+    17239,
+    17410
+   ],
+   "sha": "1c11d08a439a00ce",
+   "statements": [
+    "fn wireDrill",
+    "fn startRapid",
+    "fn wireRapid",
+    "fn rfToggleWhy",
+    "fn rapidKeydown",
+    "call document.addEventListener",
+    "fn startSpot",
+    "fn wireSpot"
+   ],
+   "note": "wireDrill, startRapid, wireRapid, rapidKeydown, startSpot, wireSpot"
+  },
+  {
+   "name": "engine.normalise-comments",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "   NORMALISE + BOOT",
+   "lines": [
+    17411,
+    17423
+   ],
+   "sha": "f6ef0aecbdb9340f",
+   "statements": [],
+   "note": "history comments"
+  },
+  {
+   "name": "content.rapid-opts",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* PLAN-2 P1.1 -- five-option rapid review",
+   "lines": [
+    17424,
+    17815
+   ],
+   "sha": "867ae34215e66cea",
+   "statements": [
+    "var RAPID_OPTS"
+   ],
+   "note": "RAPID_OPTS"
+  },
+  {
+   "name": "content.rapid-opt-swap",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* {oldDistractor: newDistractor} per question",
+   "lines": [
+    17816,
+    17993
+   ],
+   "sha": "eadf33f0b173bf95",
+   "statements": [
+    "var RAPID_OPT_SWAP"
+   ],
+   "note": "RAPID_OPT_SWAP"
+  },
+  {
+   "name": "content.rapid-w",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* {optionText: why} per question -- keyed by OPTION TEXT",
+   "lines": [
+    17994,
+    20497
+   ],
+   "sha": "07794e5464f296f8",
+   "statements": [
+    "var RAPID_W"
+   ],
+   "note": "RAPID_W"
+  },
+  {
+   "name": "engine.applyRapidFive",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "/* Runs IMMEDIATELY BEFORE permuteOptions(), on purpose",
+   "lines": [
+    20498,
+    20521
+   ],
+   "sha": "1518e6d03a8c3528",
+   "statements": [
+    "iife applyRapidFive"
+   ],
+   "note": "E-T: RAPID_OPTS/SWAP/W (build.py emits them empty)"
+  },
+  {
+   "name": "engine.permuteOptions",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "(function permuteOptions(){",
+   "lines": [
+    20522,
+    20543
+   ],
+   "sha": "bfda4105bfbb2239",
+   "statements": [
+    "iife permuteOptions"
+   ],
+   "note": "seeded option permutation"
+  },
+  {
+   "name": "engine.audit",
+   "class": "LITERALS",
+   "action": "engine",
+   "anchor": "window.__cardioAudit = () => {",
+   "lines": [
+    20544,
+    20580
+   ],
+   "sha": "dbfe6254b309a71e",
+   "statements": [
+    "set window.__cardioAudit",
+    "set document.documentElement.dataset.cardioAudit"
+   ],
+   "note": "structural audit (name and thresholds are literals)"
+  },
+  {
+   "name": "patch.placeImages4",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "CARDIOVASCULAR — REAL IMAGES, set 4: wiring",
+   "lines": [
+    20581,
+    20638
+   ],
+   "sha": "08f9716f2779957b",
+   "statements": [
+    "iife placeImages4"
+   ],
+   "note": ""
+  },
+  {
+   "name": "patch.placeWhy",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* ============ P1.7 - self-explanation checkpoints",
+   "lines": [
+    20639,
+    20676
+   ],
+   "sha": "0aaa7086837943b9",
+   "statements": [
+    "iife placeWhy"
+   ],
+   "note": ""
+  },
+  {
+   "name": "patch.p4-placements",
+   "class": "PATCH",
+   "action": "drop",
+   "anchor": "/* ============ P4.1 - cmy_geometry into n2",
+   "lines": [
+    20677,
+    20882
+   ],
+   "sha": "dc22c0d30e262b8e",
+   "statements": [
+    "iife placeCmyGeometry",
+    "iife placeHeartSounds",
+    "iife placeAvBlock",
+    "iife placeDigoxin",
+    "iife placeShockTable",
+    "iife placeXanthomas",
+    "iife placeSecondaryHtn",
+    "iife placeVesselWall",
+    "iife placeArchDeriv"
+   ],
+   "note": "9 figure placements"
+  },
+  {
+   "name": "engine.deriveMinutes",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "/* ============ P1.6 - topic minutes derived from length",
+   "lines": [
+    20883,
+    20920
+   ],
+   "sha": "9f0fa350ea0136f8",
+   "statements": [
+    "iife deriveMinutes"
+   ],
+   "note": "E-T: minutes from word counts"
+  },
+  {
+   "name": "content.q-diff",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ============ P3.2 - difficulty re-rated",
+   "lines": [
+    20921,
+    20992
+   ],
+   "sha": "c137391c96f0a11a",
+   "statements": [
+    "var Q_DIFF",
+    "var Q_DIFF_R2"
+   ],
+   "note": "Q_DIFF, Q_DIFF_R2"
+  },
+  {
+   "name": "engine.applyQDiff",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "(function applyQDiff(){",
+   "lines": [
+    20993,
+    20998
+   ],
+   "sha": "996fa2c0c7cd3172",
+   "statements": [
+    "iife applyQDiff"
+   ],
+   "note": "E-T: q.d from Q_DIFF (build.py emits them empty)"
+  },
+  {
+   "name": "engine.boot-load",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "load();\ntagEverything();",
+   "lines": [
+    20999,
+    21000
+   ],
+   "sha": "24baded274b6aa55",
+   "statements": [
+    "call load",
+    "call tagEverything"
+   ],
+   "note": "boot: load, tagEverything"
+  },
+  {
+   "name": "content.concept-tags",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ================== P5.1  CONCEPT TAGS",
+   "lines": [
+    21001,
+    21278
+   ],
+   "sha": "ee7e0c6e6d1875e7",
+   "statements": [
+    "var CONCEPT_TAGS",
+    "var Q_TAGS",
+    "var R_TAGS"
+   ],
+   "note": "CONCEPT_TAGS, Q_TAGS, R_TAGS"
+  },
+  {
+   "name": "engine.applyConceptTags",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "(function applyConceptTags(){",
+   "lines": [
+    21279,
+    21291
+   ],
+   "sha": "7593ae399619da54",
+   "statements": [
+    "iife applyConceptTags"
+   ],
+   "note": "E-T: tags from Q_TAGS/R_TAGS"
+  },
+  {
+   "name": "content.concept-home",
+   "class": "CONTENT",
+   "action": "drop",
+   "anchor": "/* ===================== CONCEPT THREADS (P5.2)",
+   "lines": [
+    21292,
+    21378
+   ],
+   "sha": "a0e73eeaaa8374d0",
+   "statements": [
+    "var CONCEPT_HOME",
+    "var DRILL_TAGS"
+   ],
+   "note": "CONCEPT_HOME, DRILL_TAGS"
+  },
+  {
+   "name": "engine.verifyConceptHomes",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "(function verifyConceptHomes(){",
+   "lines": [
+    21379,
+    21400
+   ],
+   "sha": "a8224831cdd4d3ec",
+   "statements": [
+    "iife verifyConceptHomes"
+   ],
+   "note": "warns when a concept home names a missing heading"
+  },
+  {
+   "name": "engine.threads",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "function conceptThreads(){",
+   "lines": [
+    21401,
+    21546
+   ],
+   "sha": "35410addd39a5579",
+   "statements": [
+    "fn conceptThreads",
+    "fn threadsHTML"
+   ],
+   "note": "conceptThreads, threadsHTML"
+  },
+  {
+   "name": "engine.boot-render",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "bindChrome();\nrender();",
+   "lines": [
+    21547,
+    21548
+   ],
+   "sha": "08c75e334b8a750c",
+   "statements": [
+    "call bindChrome",
+    "call render"
+   ],
+   "note": "boot: bindChrome, render"
+  },
+  {
+   "name": "selftest.hooks",
+   "class": "LITERALS",
+   "action": "selftest",
+   "anchor": "/* P5.2 self-test hook.",
+   "lines": [
+    21549,
+    21674
+   ],
+   "sha": "c103f5adfcdfcb41",
+   "statements": [
+    "set window.__selftestExtra",
+    "set window.__selftestExtra",
+    "set window.__selftestExtra"
+   ],
+   "note": "__selftestExtra hooks (seed literals)"
+  },
+  {
+   "name": "selftest.main",
+   "class": "LITERALS",
+   "action": "selftest",
+   "anchor": "/* ======================= SELF-TEST  (?selftest=1)",
+   "lines": [
+    21675,
+    21773
+   ],
+   "sha": "8dcde21d7f50e5e7",
+   "statements": [
+    "if /[?&]selftest=1/.test(location.search)){"
+   ],
+   "note": "the ?selftest=1 block (cardio seed literals)"
+  },
+  {
+   "name": "engine.boot-tick",
+   "class": "ENGINE",
+   "action": "engine",
+   "anchor": "setInterval(paintHeader, 30000);",
+   "lines": [
+    21774,
+    21774
+   ],
+   "sha": "115705690bf34df2",
+   "statements": [
+    "call setInterval"
+   ],
+   "note": "header refresh timer"
+  },
+  {
+   "name": "html.script-close",
+   "class": "ENGINE",
+   "action": "shell",
+   "anchor": "</script>",
+   "lines": [
+    21775,
+    21777
+   ],
+   "sha": "b11e55532b18362b",
+   "statements": [],
+   "note": "closes the script, body and html"
+  }
+ ]
+}

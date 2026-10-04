@@ -1,0 +1,48 @@
+{
+  "errors": [
+    {
+      "what": "“TRH (pulsatile)” labels the hypothalamus → anterior pituitary arrow.",
+      "why_wrong": "The ovarian axis uses pulsatile GnRH. TRH belongs to the thyroid axis. [Source](https://www.ncbi.nlm.nih.gov/sites/books/NBK279070/)",
+      "severity": "error"
+    },
+    {
+      "what": "“TSH” labels an anterior pituitary → ovary arrow.",
+      "why_wrong": "The ovarian gonadotropins are LH and FSH. TSH primarily targets the thyroid. [Source](https://www.ncbi.nlm.nih.gov/books/NBK499898/)",
+      "severity": "error"
+    },
+    {
+      "what": "“ACTH” labels the other anterior pituitary → ovary arrow.",
+      "why_wrong": "ACTH primarily targets the adrenal cortex; this arrow should represent LH or FSH. [Source](https://www.ncbi.nlm.nih.gov/books/NBK499898/)",
+      "severity": "error"
+    },
+    {
+      "what": "“Solid (−): estradiol and progesterone suppress GnRH, LH and FSH for most of the cycle.”",
+      "why_wrong": "This treats progesterone as a major suppressive signal throughout the cycle, although it is low during much of the follicular phase and rises after ovulation. [Source](https://www.ncbi.nlm.nih.gov/books/NBK279054/)",
+      "severity": "misleading"
+    },
+    {
+      "what": "“Dotted (−): inhibin B from granulosa cells suppresses FSH only.”",
+      "why_wrong": "Inhibin B is chiefly the follicular phase form; inhibin A dominates in the luteal phase. The unqualified label can suggest that inhibin B supplies this feedback throughout the cycle. [Source](https://www.ncbi.nlm.nih.gov/books/NBK279054/figure/female_the-normal-menstrual-cycle-and-the-control-of-ovulation.F2/?report=objectonly)",
+      "severity": "misleading"
+    },
+    {
+      "what": "The solid and dashed feedback paths end in ordinary arrowheads, while their hormone identities and effects appear only in the small legend.",
+      "why_wrong": "The paths show where feedback goes but make inhibition versus stimulation difficult to distinguish from the drawing alone.",
+      "severity": "misleading"
+    },
+    {
+      "what": "The node labels, arrow labels, and legend are very small in the rendered image.",
+      "why_wrong": "Several labels require zooming to read comfortably.",
+      "severity": "cosmetic"
+    },
+    {
+      "what": "The figure occupies only the upper portion of a much taller image.",
+      "why_wrong": "The large blank area makes the teaching diagram smaller than necessary at this display size.",
+      "severity": "cosmetic"
+    }
+  ],
+  "legibility": 2,
+  "teaches_caption": false,
+  "overall": 2,
+  "verdict": "The feedback layout is recognizable, but three central hormone labels teach the wrong axis. Correcting them and enlarging the diagram are essential before use."
+}

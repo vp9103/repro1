@@ -1,0 +1,68 @@
+<svg class="dia" viewBox="0 0 900 540" role="img" aria-label="Three panels: the sacral plexus on the piriformis, which splits the greater sciatic foramen into a space above it for the superior gluteal nerve and a space below it for the sciatic, inferior gluteal and pudendal nerves; the pelvic floor seen from above with the puborectalis, pubococcygeus, iliococcygeus and coccygeus; and the bladder's three nerve supplies, parasympathetic pelvic splanchnic, sympathetic hypogastric and somatic pudendal">
+<text class="ttl" x="14" y="24" font-size="17">Pelvic nerves: the plexus on piriformis, the floor and the bladder switch</text>
+<rect x="14" y="40" width="280" height="486" rx="10" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+<text class="b" x="28" y="66" font-size="15">Sacral plexus on piriformis</text>
+<text x="28" y="92" font-size="14">Lumbosacral trunk (L4&#8211;L5)</text>
+<text x="28" y="110" font-size="14">and ventral rami S1&#8211;S4</text>
+<path d="M60 122 L 150 168 M110 122 L 150 168 M160 122 L 150 168 M210 122 L 150 168 M250 122 L 150 168" fill="none" stroke="var(--ink-3)" stroke-width="2"/>
+<rect x="30" y="172" width="248" height="70" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="a1" x="42" y="194" font-size="14">Above piriformis</text>
+<text x="42" y="214" font-size="14">Superior gluteal nerve</text>
+<text x="42" y="232" font-size="14">and vessels: hip abductors</text>
+<rect x="30" y="252" width="248" height="52" rx="12" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<text class="b" x="42" y="274" font-size="14">Piriformis</text>
+<text x="42" y="294" font-size="14">splits greater sciatic foramen</text>
+<rect x="30" y="314" width="248" height="122" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="42" y="336" font-size="14">Below piriformis</text>
+<text x="42" y="358" font-size="14">Sciatic nerve</text>
+<text x="42" y="378" font-size="14">Inferior gluteal nerve</text>
+<text x="42" y="398" font-size="14">Pudendal nerve (S2&#8211;S4)</text>
+<text x="42" y="418" font-size="14">Internal pudendal vessels</text>
+<text class="cr" x="28" y="466" font-size="14">Stab wound above the muscle:</text>
+<text x="28" y="486" font-size="14">weak hip abduction, pelvis</text>
+<text x="28" y="504" font-size="14">drops on the unsupported side</text>
+<rect x="306" y="40" width="288" height="486" rx="10" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+<text class="b" x="320" y="66" font-size="15">Pelvic floor seen from above</text>
+<text x="450" y="90" font-size="13" text-anchor="middle">Pubic symphysis</text>
+<ellipse cx="450" cy="230" rx="122" ry="130" fill="none" stroke="var(--line-strong)" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="438" y="98" width="24" height="12" rx="3" fill="var(--surface-3)" stroke="var(--line-strong)"/>
+<path d="M352 300 L 444 362 M548 300 L 456 362" fill="none" stroke="var(--ink-3)" stroke-width="7" stroke-linecap="round"/>
+<path d="M346 188 C 370 280, 410 330, 444 356 M554 188 C 530 280, 490 330, 456 356" fill="none" stroke="var(--a2)" stroke-width="5"/>
+<path d="M428 110 C 380 220, 395 320, 446 352 M472 110 C 520 220, 505 320, 454 352" fill="none" stroke="var(--a1)" stroke-width="5"/>
+<path d="M436 110 C 400 200, 412 252, 450 252 C 488 252, 500 200, 464 110" fill="none" stroke="var(--warn)" stroke-width="7"/>
+<circle cx="450" cy="140" r="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<ellipse cx="450" cy="172" rx="10" ry="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="450" cy="226" r="11" fill="var(--surface-3)" stroke="var(--ink-3)" stroke-width="1.5"/>
+<polygon points="440,356 460,356 450,372" fill="var(--surface-3)" stroke="var(--line-strong)"/>
+<text x="450" y="390" font-size="13" text-anchor="middle">Coccyx</text>
+<text class="b" x="320" y="414" font-size="14">Levator ani (3 parts) + coccygeus</text>
+<line x1="324" y1="430" x2="348" y2="430" stroke="var(--warn)" stroke-width="6"/>
+<text x="356" y="435" font-size="14">Puborectalis: anorectal sling</text>
+<line x1="324" y1="452" x2="348" y2="452" stroke="var(--a1)" stroke-width="5"/>
+<text x="356" y="457" font-size="14">Pubococcygeus: main mass</text>
+<line x1="324" y1="474" x2="348" y2="474" stroke="var(--a2)" stroke-width="5"/>
+<text x="356" y="479" font-size="14">Iliococcygeus: thin plate</text>
+<line x1="324" y1="496" x2="348" y2="496" stroke="var(--ink-3)" stroke-width="7"/>
+<text x="356" y="501" font-size="14">Coccygeus: the second muscle</text>
+<rect x="606" y="40" width="280" height="486" rx="10" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+<text class="b" x="620" y="66" font-size="15">Who runs the bladder</text>
+<rect x="618" y="80" width="256" height="124" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="630" y="102" font-size="14">Pelvic splanchnic (S2&#8211;S4)</text>
+<text class="a2" x="630" y="122" font-size="14">Parasympathetic</text>
+<text x="630" y="146" font-size="14">Detrusor contracts (M3)</text>
+<text x="630" y="166" font-size="14">Internal sphincter opens: void</text>
+<text x="630" y="186" font-size="14">Also erection</text>
+<rect x="618" y="214" width="256" height="124" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="630" y="236" font-size="14">Hypogastric nerves</text>
+<text class="a1" x="630" y="256" font-size="14">Sympathetic (T11&#8211;L2)</text>
+<text x="630" y="280" font-size="14">Detrusor relaxes (&#946;3)</text>
+<text x="630" y="300" font-size="14">Internal sphincter closes (&#945;1)</text>
+<text x="630" y="320" font-size="14">Store urine; emission</text>
+<rect x="618" y="348" width="256" height="104" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="630" y="370" font-size="14">Pudendal nerve (S2&#8211;S4)</text>
+<text x="630" y="390" font-size="14">Somatic, voluntary</text>
+<text x="630" y="414" font-size="14">External urethral sphincter</text>
+<text x="630" y="434" font-size="14">contracts to hold urine</text>
+<text class="cr" x="620" y="482" font-size="14">Trap: pelvic splanchnic nerves</text>
+<text class="cr" x="620" y="502" font-size="14">are parasympathetic</text>
+</svg>

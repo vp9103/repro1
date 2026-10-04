@@ -1,0 +1,36 @@
+{
+ "key": "stubrepro",
+ "name": "Stub block",
+ "short": "Stub block",
+ "title": "The Stub Path",
+ "palette": {
+  "a1": "#8A2E62",
+  "a2": "#1F6F68",
+  "a1Dark": "#E39AC6",
+  "a2Dark": "#7FD0C5"
+ },
+ "examKey": "stubrepro.examDate",
+ "examName": "the stub exam",
+ "examLabel": "Exam date",
+ "examDefault": "2026-10-09",
+ "examNote": "The engine test bed. Any date works.",
+ "finalN": 6,
+ "secsPerQ": 90,
+ "series": "step1",
+ "blocks": [
+  {
+   "id": "sthy",
+   "n": "Thyroid",
+   "topics": [
+    "en5"
+   ]
+  },
+  {
+   "id": "scyc",
+   "n": "The ovarian cycle",
+   "topics": [
+    "rp8"
+   ]
+  }
+ ]
+}

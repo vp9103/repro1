@@ -1,0 +1,456 @@
+[
+ {
+  "id": "rp9r01",
+  "tags": [
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp9-01"
+  ],
+  "q": "What is the most common cause of secondary amenorrhea?",
+  "o": [
+   "Pregnancy",
+   "Polycystic ovary syndrome",
+   "Hyperprolactinemia",
+   "Primary ovarian insufficiency",
+   "Asherman syndrome"
+  ],
+  "a": 0,
+  "x": "Pregnancy. A corpus luteum rescued by hCG keeps progesterone high, so the endometrium is not shed; that is why an hCG test comes first in every amenorrhea work-up.",
+  "w": {
+   "Polycystic ovary syndrome": "PCOS is the most common cause of chronic anovulation in women who are not pregnant, but pregnancy must be excluded before it is considered.",
+   "Hyperprolactinemia": "High prolactin suppresses GnRH and is a classic cause, but it accounts for a minority of cases and is tested only after hCG.",
+   "Primary ovarian insufficiency": "Ovarian insufficiency affects about 1 in 100 women before 40; it is diagnosed by high FSH once pregnancy is excluded.",
+   "Asherman syndrome": "Intrauterine adhesions after curettage are a rare, history-driven cause with normal hormone levels."
+  },
+  "media": "fig:rp9_workup",
+  "pt": {
+   "hl": [
+    "Pregnancy test (hCG)"
+   ],
+   "say": "Step 1 of the work-up is the pregnancy test (hCG), because pregnancy is the most common cause."
+  }
+ },
+ {
+  "id": "rp9r02",
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp9-01"
+  ],
+  "q": "By what age does absent menarche define primary amenorrhea in a girl with breasts?",
+  "o": [
+   "Age 15",
+   "Age 13",
+   "Age 12",
+   "Age 16",
+   "Age 18"
+  ],
+  "a": 0,
+  "x": "Age 15. A girl with breast development who has not menstruated by 15 needs evaluation; with no breast development at all, evaluation starts at 13 because puberty itself is delayed.",
+  "w": {
+   "Age 13": "Thirteen is the threshold when breasts have not developed at all, which signals delayed puberty rather than isolated amenorrhea.",
+   "Age 12": "Twelve is close to the average age of menarche in the United States, not a cutoff that triggers evaluation.",
+   "Age 16": "Sixteen was an older threshold; current guidance evaluates at 15 so that causes such as outflow obstruction are found sooner.",
+   "Age 18": "Waiting until 18 would delay the diagnosis of Turner syndrome, Müllerian agenesis and other treatable causes by years."
+  },
+  "media": "fig:rp9_workup",
+  "pt": {
+   "hl": [
+    "Primary: no menses by age 15"
+   ],
+   "say": "The left branch header reads primary: no menses by age 15 in a girl who has developed breasts."
+  }
+ },
+ {
+  "id": "rp9r03",
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp9-01"
+  ],
+  "q": "How long must menses be absent after regular cycles to define secondary amenorrhea?",
+  "o": [
+   "3 months",
+   "6 weeks",
+   "6 months",
+   "12 months",
+   "2 weeks"
+  ],
+  "a": 0,
+  "x": "3 months. After regular cycles, three missed months define secondary amenorrhea; after irregular cycles the threshold is 6 months, because long gaps are already part of her pattern.",
+  "w": {
+   "6 weeks": "A 6-week delay usually means one late ovulation or an early pregnancy; it is too short to define a menstrual disorder.",
+   "6 months": "Six months applies to women whose cycles were already irregular, not to someone who had regular periods.",
+   "12 months": "Twelve months without menses after age 45 defines menopause, which is a different definition.",
+   "2 weeks": "Two weeks late is common normal variation in the follicular phase and meets no definition."
+  },
+  "media": "fig:rp9_workup",
+  "pt": {
+   "hl": [
+    "Secondary: none for 3 months"
+   ],
+   "say": "The right branch header reads secondary: none for 3 months after regular cycles."
+  }
+ },
+ {
+  "id": "rp9r04",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp9-02"
+  ],
+  "q": "Which symptom sets Kallmann syndrome apart from other causes of low GnRH?",
+  "o": [
+   "Anosmia",
+   "Galactorrhea",
+   "Short stature",
+   "Hirsutism",
+   "Cyclic pelvic pain"
+  ],
+  "a": 0,
+  "x": "Anosmia. GnRH neurons migrate from the olfactory placode alongside olfactory axons; when migration fails, the patient has both hypogonadotropic hypogonadism and no sense of smell.",
+  "w": {
+   "Galactorrhea": "Galactorrhea points to hyperprolactinemia, which suppresses GnRH through prolactin rather than through failed neuron migration.",
+   "Short stature": "Short stature with ovarian failure suggests Turner syndrome, where FSH is high rather than low.",
+   "Hirsutism": "Hirsutism points to androgen excess, as in PCOS or congenital adrenal hyperplasia, not to GnRH deficiency.",
+   "Cyclic pelvic pain": "Cyclic pain with primary amenorrhea suggests blocked outflow, such as an imperforate hymen, with normal hormones."
+  },
+  "media": "fig:rp9_workup",
+  "pt": {
+   "hl": [
+    "Kallmann syndrome (anosmia)"
+   ],
+   "say": "Under no breasts with low FSH, the figure lists Kallmann syndrome (anosmia): smell and GnRH fail together."
+  }
+ },
+ {
+  "id": "rp9r05",
+  "tags": [
+   "diagnostic-cutoffs",
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-rp9-03"
+  ],
+  "q": "Which lab finding defines primary ovarian insufficiency before age 40?",
+  "o": [
+   "High FSH on two occasions",
+   "Low FSH with low estradiol",
+   "High prolactin",
+   "High 17-hydroxyprogesterone",
+   "Low TSH"
+  ],
+  "a": 0,
+  "x": "High FSH on two occasions weeks apart, with low estradiol. Without follicles there is no estradiol or inhibin feedback, so the pituitary drives FSH into the menopausal range.",
+  "w": {
+   "Low FSH with low estradiol": "This pattern places the failure above the ovary, as in functional hypothalamic amenorrhea or pituitary disease.",
+   "High prolactin": "High prolactin suppresses GnRH and lowers FSH, the opposite of the ovarian failure pattern.",
+   "High 17-hydroxyprogesterone": "This marks 21-hydroxylase deficiency, a cause of androgen excess rather than ovarian failure.",
+   "Low TSH": "A low TSH means hyperthyroidism, which can disturb cycles but does not define ovarian insufficiency."
+  },
+  "media": "fig:rp9_workup",
+  "pt": {
+   "hl": [
+    "High FSH before age 40"
+   ],
+   "say": "The box labeled high FSH before age 40 is primary ovarian insufficiency: the failed ovary sends no feedback."
+  }
+ },
+ {
+  "id": "rp9r06",
+  "tags": [
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp9-04"
+  ],
+  "q": "Which three findings make up the female athlete triad?",
+  "o": [
+   "Low energy, amenorrhea, low bone density",
+   "Obesity, anovulation, hirsutism",
+   "Galactorrhea, amenorrhea, headache",
+   "Anosmia, amenorrhea, low FSH",
+   "Anemia, amenorrhea, fatigue"
+  ],
+  "a": 0,
+  "x": "Low energy availability, menstrual dysfunction and low bone mineral density. Too little fuel for training slows GnRH pulses, estrogen falls, and bone resorption outpaces formation, so stress fractures follow.",
+  "w": {
+   "Obesity, anovulation, hirsutism": "This trio describes PCOS, an androgen-excess state with normal or high estrogen and preserved bone.",
+   "Galactorrhea, amenorrhea, headache": "This trio suggests a prolactinoma, where prolactin suppresses GnRH and the mass can press on nearby structures.",
+   "Anosmia, amenorrhea, low FSH": "This is Kallmann syndrome, a congenital GnRH deficiency present from birth rather than acquired through training.",
+   "Anemia, amenorrhea, fatigue": "Anemia and fatigue can accompany heavy training, but the triad centers on energy deficit and bone density."
+  }
+ },
+ {
+  "id": "rp9r07",
+  "tags": [
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp9-12"
+  ],
+  "q": "What does a withdrawal bleed after a progestin challenge show?",
+  "o": [
+   "Estrogen present, outflow tract open",
+   "Ovarian failure with low estrogen",
+   "Hypothalamic suppression of GnRH",
+   "Scarred endometrium from adhesions",
+   "Pituitary tumor lowering gonadotropins"
+  ],
+  "a": 0,
+  "x": "Estrogen is present and the outflow tract is open. Progestin withdrawal can only shed an endometrium that estrogen has already built, so the problem is anovulation, as in PCOS.",
+  "w": {
+   "Ovarian failure with low estrogen": "Ovarian failure leaves estrogen too low to build an endometrium, so progestin withdrawal produces no bleed.",
+   "Hypothalamic suppression of GnRH": "Hypothalamic suppression lowers FSH and estradiol, leaving a thin lining that does not bleed after progestin.",
+   "Scarred endometrium from adhesions": "Asherman adhesions replace the functional endometrium, so no bleed occurs even with estrogen priming.",
+   "Pituitary tumor lowering gonadotropins": "A pituitary tumor that lowers gonadotropins also lowers estradiol, which predicts a negative challenge."
+  },
+  "media": "fig:rp9_workup",
+  "pt": {
+   "hl": [
+    "Bleed: estrogen present, outflow open,"
+   ],
+   "say": "In the progestin challenge box, bleed means estrogen present, outflow open, so the problem is anovulation."
+  }
+ },
+ {
+  "id": "rp9r08",
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp9-05"
+  ],
+  "q": "Which criteria diagnose PCOS from two of three findings?",
+  "o": [
+   "Rotterdam criteria",
+   "Amsterdam criteria",
+   "Jones criteria",
+   "Duke criteria",
+   "Ranson criteria"
+  ],
+  "a": 0,
+  "x": "Rotterdam criteria: two of oligo- or anovulation, clinical or biochemical hyperandrogenism and polycystic ovarian morphology on ultrasound, after excluding thyroid disease, hyperprolactinemia and nonclassic CAH.",
+  "w": {
+   "Amsterdam criteria": "Amsterdam criteria identify families with Lynch syndrome, which raises the risk of colon and endometrial cancer.",
+   "Jones criteria": "Jones criteria diagnose acute rheumatic fever from carditis, arthritis, chorea and other signs after group A streptococcal pharyngitis.",
+   "Duke criteria": "Duke criteria diagnose infective endocarditis by combining positive blood cultures, echocardiographic vegetations and minor clinical signs.",
+   "Ranson criteria": "Ranson criteria estimate mortality in acute pancreatitis from age, laboratory values and fluid shifts."
+  }
+ },
+ {
+  "id": "rp9r09",
+  "tags": [
+   "binding-proteins",
+   "fuel-metabolism"
+  ],
+  "bp": [
+   "BP-rp9-13"
+  ],
+  "q": "Why is free testosterone high in PCOS when total testosterone is only mildly raised?",
+  "o": [
+   "Insulin lowers hepatic SHBG",
+   "Adrenal DHEA-S is very high",
+   "Aromatase is overactive",
+   "Albumin is low",
+   "5α-reductase is deficient"
+  ],
+  "a": 0,
+  "x": "Hyperinsulinemia suppresses the liver's production of sex hormone-binding globulin, so less testosterone is bound and the free, active fraction rises out of proportion to the total.",
+  "w": {
+   "Adrenal DHEA-S is very high": "A very high DHEA-S suggests an adrenal tumor; in PCOS it is normal or mildly raised and does not explain the free fraction.",
+   "Aromatase is overactive": "More aromatase would convert testosterone to estradiol, lowering androgen levels rather than raising the free fraction.",
+   "Albumin is low": "Albumin binds testosterone loosely and is normal in PCOS; SHBG is the carrier that insulin regulates.",
+   "5α-reductase is deficient": "5α-reductase deficiency lowers DHT and causes ambiguous genitalia in XY infants; it is unrelated to PCOS."
+  },
+  "media": "fig:rp9_pcos",
+  "pt": {
+   "hl": [
+    "Makes less SHBG"
+   ],
+   "say": "Insulin resistance points to the liver box, which makes less SHBG, so free testosterone rises."
+  }
+ },
+ {
+  "id": "rp9r10",
+  "tags": [
+   "hormone-source"
+  ],
+  "bp": [
+   "BP-rp9-09"
+  ],
+  "q": "Which hormone test separates an adrenal from an ovarian androgen-secreting tumor?",
+  "o": [
+   "DHEA-S",
+   "Total testosterone",
+   "LH",
+   "Estradiol",
+   "Cortisol"
+  ],
+  "a": 0,
+  "x": "DHEA-S. It is made almost entirely by the adrenal cortex, so a very high level points to an adrenal tumor, while very high testosterone with a normal DHEA-S points to the ovary.",
+  "w": {
+   "Total testosterone": "Testosterone is high with either tumor, so it signals a tumor but does not show which gland made the androgen.",
+   "LH": "LH is suppressed by a tumor's androgen or estrogen output and gives no clue to the source.",
+   "Estradiol": "Estradiol may rise from aromatization of tumor androgen in fat, which blurs rather than localizes the source.",
+   "Cortisol": "Cortisol can be high with an adrenal carcinoma, but pure androgen-secreting tumors often leave it normal."
+  }
+ },
+ {
+  "id": "rp9r11",
+  "tags": [
+   "bleeding-source"
+  ],
+  "bp": [
+   "BP-rp9-07"
+  ],
+  "q": "Which letter of PALM-COEIN covers von Willebrand disease?",
+  "o": [
+   "C, coagulopathy",
+   "O, ovulatory dysfunction",
+   "E, endometrial",
+   "I, iatrogenic",
+   "N, not otherwise classified"
+  ],
+  "a": 0,
+  "x": "C, coagulopathy. Von Willebrand disease is the most common inherited bleeding disorder and classically causes heavy menstrual bleeding from menarche, often with nosebleeds or bleeding after dental work.",
+  "w": {
+   "O, ovulatory dysfunction": "Ovulatory dysfunction means anovulation with irregular, unpredictable bleeding, as in PCOS or the first years after menarche.",
+   "E, endometrial": "Endometrial causes are local defects in hemostasis or repair within regular ovulatory cycles, with normal systemic clotting.",
+   "I, iatrogenic": "Iatrogenic covers bleeding from anticoagulants, hormonal contraception or an IUD, not inherited disorders.",
+   "N, not otherwise classified": "This group holds rare causes such as arteriovenous malformations and cesarean scar defects."
+  }
+ },
+ {
+  "id": "rp9r12",
+  "tags": [
+   "hormone-actions",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp9-08"
+  ],
+  "q": "What mediates the pain of primary dysmenorrhea?",
+  "o": [
+   "Prostaglandins from secretory endometrium",
+   "Ectopic endometrial implants",
+   "Endometrial glands within myometrium",
+   "Fibroid degeneration",
+   "Pelvic adhesions"
+  ],
+  "a": 0,
+  "x": "Prostaglandins, mainly PGF2α, released as the secretory endometrium breaks down cause strong uterine contractions and ischemia; NSAIDs block their synthesis and are first-line treatment.",
+  "w": {
+   "Ectopic endometrial implants": "Endometriosis implants cause secondary dysmenorrhea, often with dyspareunia and infertility, and pain that worsens over years.",
+   "Endometrial glands within myometrium": "Glands inside the myometrium define adenomyosis, a secondary cause with a boggy, enlarged uterus.",
+   "Fibroid degeneration": "Fibroid degeneration causes acute pain, often in pregnancy, rather than monthly cramps from menarche.",
+   "Pelvic adhesions": "Adhesions from surgery or infection cause chronic pelvic pain, a secondary cause with a structural lesion."
+  }
+ },
+ {
+  "id": "rp9r13",
+  "tags": [
+   "treatment-sequence",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp9-06",
+   "BP-rp9-14"
+  ],
+  "q": "Which drug is first-line for ovulation induction in PCOS?",
+  "o": [
+   "Letrozole",
+   "Clomiphene",
+   "Metformin",
+   "Spironolactone",
+   "Cabergoline"
+  ],
+  "a": 0,
+  "x": "Letrozole. By inhibiting aromatase it lowers estrogen feedback, so FSH rises and drives follicle growth, and it gives more live births than clomiphene in PCOS.",
+  "w": {
+   "Clomiphene": "Clomiphene raises FSH by blocking hypothalamic estrogen receptors; it works but gives fewer live births than letrozole in PCOS.",
+   "Metformin": "Metformin treats insulin resistance and helps metabolic risk but is a weak ovulation inducer on its own.",
+   "Spironolactone": "Spironolactone treats hirsutism by blocking androgen receptors and must be stopped before conception.",
+   "Cabergoline": "Cabergoline is a dopamine agonist that lowers prolactin; it restores ovulation in hyperprolactinemia, whereas prolactin is normal in PCOS."
+  }
+ },
+ {
+  "id": "rp9r14",
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp9-10"
+  ],
+  "q": "Which side effect is typical of clomiphene?",
+  "o": [
+   "Visual disturbances",
+   "Hyperkalemia",
+   "Lactic acidosis",
+   "Hirsutism",
+   "Galactorrhea"
+  ],
+  "a": 0,
+  "x": "Visual disturbances, along with hot flashes, come from clomiphene's anti-estrogen action; blurring or flashing lights are a reason to stop the drug.",
+  "w": {
+   "Hyperkalemia": "Hyperkalemia is a risk of spironolactone, a potassium-sparing androgen blocker used for hirsutism.",
+   "Lactic acidosis": "Lactic acidosis is the rare serious risk of metformin, especially with kidney failure or hypoxia.",
+   "Hirsutism": "Hirsutism reflects androgen excess; clomiphene acts on estrogen receptors and does not raise androgens.",
+   "Galactorrhea": "Galactorrhea follows high prolactin, as from dopamine antagonists, not from estrogen receptor blockade."
+  }
+ },
+ {
+  "id": "rp9r15",
+  "tags": [
+   "imaging-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp9-11"
+  ],
+  "q": "What does free spill of contrast on hysterosalpingography show?",
+  "o": [
+   "Patent fallopian tubes",
+   "Hydrosalpinx",
+   "Intrauterine adhesions",
+   "Bicornuate uterus",
+   "Endometrial polyp"
+  ],
+  "a": 0,
+  "x": "Patent fallopian tubes. Contrast pushed through the cervix spills into the peritoneal cavity only if the tubes are open; a dilated tube without spill is a hydrosalpinx.",
+  "w": {
+   "Hydrosalpinx": "A hydrosalpinx is a blocked, distended tube that fills with contrast but shows no spill into the peritoneum.",
+   "Intrauterine adhesions": "The adhesions of Asherman syndrome appear as irregular filling defects inside the uterine cavity.",
+   "Bicornuate uterus": "A bicornuate uterus shows a heart-shaped cavity with two horns; it concerns the cavity outline, not tubal spill.",
+   "Endometrial polyp": "A polyp appears as a smooth filling defect in the cavity and can cause intermenstrual spotting."
+  }
+ },
+ {
+  "id": "rp9r16",
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp9-10"
+  ],
+  "q": "What causes the fluid shift of ovarian hyperstimulation syndrome?",
+  "o": [
+   "VEGF-driven capillary leak",
+   "Ovarian torsion",
+   "Ruptured ectopic pregnancy",
+   "Tubo-ovarian abscess",
+   "Theca lutein cyst rupture"
+  ],
+  "a": 0,
+  "x": "VEGF-driven capillary leak. hCG from the trigger shot or an early pregnancy makes many luteinized follicles release VEGF, so fluid moves into the abdomen, causing ascites, hemoconcentration and thrombosis.",
+  "w": {
+   "Ovarian torsion": "Torsion is a complication of the enlarged ovaries, causing sudden severe pain, but it does not cause the fluid shift.",
+   "Ruptured ectopic pregnancy": "An ectopic pregnancy causes pain and bleeding from tubal implantation, not ascites from leaky capillaries.",
+   "Tubo-ovarian abscess": "A tubo-ovarian abscess follows pelvic infection with fever and a complex mass, not fertility drugs.",
+   "Theca lutein cyst rupture": "Theca lutein cysts come from very high hCG, as in molar pregnancy; rupture causes pain but not systemic capillary leak."
+  }
+ }
+]

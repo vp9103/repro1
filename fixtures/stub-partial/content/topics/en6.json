@@ -1,0 +1,101 @@
+{
+ "id": "en6",
+ "t": "Hyperthyroidism and thyroiditis",
+ "sub": "Why the uptake scan separates a gland that is overmaking hormone from one that is leaking it.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 8,
+ "pretest": [
+  {
+   "q": "Radioactive iodine uptake is low in a thyrotoxic patient. What is the most likely mechanism?",
+   "o": [
+    "Release of stored hormone from an inflamed gland",
+    "Stimulating antibodies at the TSH receptor",
+    "A toxic adenoma",
+    "A TSH-secreting adenoma"
+   ],
+   "a": 0,
+   "why": "Low uptake means the gland is not making new hormone: stored hormone is leaking from damaged follicles, as in subacute or painless thyroiditis, or hormone is exogenous.",
+   "w": {
+    "Stimulating antibodies at the TSH receptor": "Graves antibodies drive synthesis, so uptake is diffusely high, not low.",
+    "A toxic adenoma": "An autonomous nodule takes up iodine avidly and appears as a hot nodule with the rest of the gland suppressed.",
+    "A TSH-secreting adenoma": "Excess TSH drives the whole gland to make hormone, so uptake is high and TSH is inappropriately normal or high."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Making too much or leaking too much"
+  ],
+  [
+   "p",
+   "Thyrotoxicosis has two broad causes. The gland can **overproduce** hormone, as in Graves disease or a toxic nodule, and then radioactive iodine uptake is high. Or an inflamed gland can **leak** stored hormone, as in subacute thyroiditis, and then uptake is low because TSH is suppressed and no new hormone is being made."
+  ],
+  [
+   "h",
+   "What the scan adds"
+  ],
+  [
+   "p",
+   "The {{graves|Graves}} pattern is diffuse uptake, a toxic adenoma is a single hot nodule, and toxic multinodular goiter shows patchy hot areas. A low-uptake scan in a thyrotoxic patient points to thyroiditis or to hormone taken as a pill."
+  ],
+  [
+   "h",
+   "Treating the cause"
+  ],
+  [
+   "p",
+   "Thionamides stop synthesis and work only when the gland is overproducing; they do nothing for a leaking gland, which recovers on its own while a beta-blocker controls symptoms."
+  ],
+  [
+   "vis",
+   "en6"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these cause thyrotoxicosis with HIGH iodine uptake?",
+  "items": [
+   [
+    "Graves disease",
+    1
+   ],
+   [
+    "Toxic adenoma",
+    1
+   ],
+   [
+    "Toxic multinodular goiter",
+    1
+   ],
+   [
+    "TSH-secreting pituitary adenoma",
+    1
+   ],
+   [
+    "hCG-driven gestational thyrotoxicosis",
+    1
+   ],
+   [
+    "Iodine-driven hyperthyroidism in a nodular gland",
+    1
+   ],
+   [
+    "Subacute granulomatous thyroiditis",
+    0
+   ],
+   [
+    "Painless postpartum thyroiditis",
+    0
+   ],
+   [
+    "Factitious thyroid hormone use",
+    0
+   ],
+   [
+    "Struma ovarii (uptake is in the pelvis, not the neck)",
+    0
+   ]
+  ]
+ }
+}

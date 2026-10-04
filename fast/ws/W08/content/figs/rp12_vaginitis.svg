@@ -1,0 +1,65 @@
+<svg class="dia" viewBox="0 0 900 458" role="img" aria-label="Comparison grid of bacterial vaginosis, trichomoniasis and candidiasis by vaginal pH, discharge, exam clue, microscopy, cause and treatment">
+<text class="ttl" x="14" y="26" font-size="17">Vaginal discharge: sort by pH first, then by the slide</text>
+<rect x="14" y="44" width="150" height="40" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="26" y="69" font-size="15">Feature</text>
+<rect x="172" y="44" width="234" height="40" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="184" y="69" font-size="16">Bacterial vaginosis</text>
+<rect x="412" y="44" width="234" height="40" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="424" y="69" font-size="16">Trichomoniasis</text>
+<rect x="652" y="44" width="234" height="40" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="664" y="69" font-size="16">Candidiasis</text>
+<rect x="14" y="90" width="150" height="40" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="26" y="116" font-size="15">Vaginal pH</text>
+<rect x="172" y="90" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="184" y="115" font-size="14">Above 4.5</text>
+<rect x="412" y="90" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="424" y="115" font-size="14">Above 4.5</text>
+<rect x="652" y="90" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="664" y="115" font-size="14">4.5 or below (normal)</text>
+<rect x="14" y="136" width="150" height="40" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="26" y="162" font-size="15">Discharge</text>
+<rect x="172" y="136" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="184" y="161" font-size="14">Thin, gray, homogeneous</text>
+<rect x="412" y="136" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="424" y="161" font-size="14">Frothy, yellow-green</text>
+<rect x="652" y="136" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="664" y="161" font-size="14">Thick, white, curdlike</text>
+<rect x="14" y="182" width="150" height="40" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="26" y="208" font-size="15">Exam clue</text>
+<rect x="172" y="182" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="184" y="207" font-size="14">Fishy whiff with KOH</text>
+<rect x="412" y="182" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="424" y="207" font-size="14">Strawberry cervix</text>
+<rect x="652" y="182" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="664" y="207" font-size="14">Itching, red vulva</text>
+<rect x="14" y="228" width="150" height="40" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="26" y="254" font-size="15">Microscopy</text>
+<rect x="172" y="228" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="184" y="253" font-size="14">Clue cells, few WBCs</text>
+<rect x="412" y="228" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="424" y="253" font-size="14">Motile flagellated cells</text>
+<rect x="652" y="228" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="664" y="253" font-size="14">Pseudohyphae on KOH</text>
+<rect x="14" y="274" width="150" height="40" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="26" y="300" font-size="15">Cause</text>
+<rect x="172" y="274" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="184" y="299" font-size="14">Gardnerella, anaerobes</text>
+<rect x="412" y="274" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="424" y="299" font-size="14">Trichomonas (protozoan)</text>
+<rect x="652" y="274" width="234" height="40" rx="6" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="664" y="299" font-size="14">Candida albicans</text>
+<rect x="14" y="320" width="150" height="56" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="26" y="346" font-size="15">Treatment</text>
+<rect x="172" y="320" width="234" height="56" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="184" y="345" font-size="14">Metronidazole</text>
+<text x="184" y="366" font-size="14">or clindamycin</text>
+<rect x="412" y="320" width="234" height="56" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="424" y="345" font-size="14">Metronidazole;</text>
+<text x="424" y="366" font-size="14">treat partners too</text>
+<rect x="652" y="320" width="234" height="56" rx="6" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="664" y="345" font-size="14">Fluconazole;</text>
+<text x="664" y="366" font-size="14">topical azole if pregnant</text>
+<rect x="14" y="388" width="872" height="58" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="28" y="412" font-size="14">Lactobacilli turn glycogen into lactic acid and hold the pH at 3.8 to 4.5.</text>
+<text x="28" y="434" font-size="14">Lose them (BV) or add a protozoan (trichomoniasis) and pH rises; Candida leaves it normal.</text>
+</svg>

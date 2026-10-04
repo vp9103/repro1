@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0de6e-211d-7912-a775-e172f6a318c8"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"shows_claimed_dx\":\"yes\",\"modality_seen\":\"clinical photo\",\"findings_visible\":[],\"better_dx_if_not\":\"\",\"comment\":\"The fingertips appear enlarged, with increased nail curvature, consistent with digital clubbing.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":16780,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":205,"reasoning_output_tokens":149}}

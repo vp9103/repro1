@@ -1,0 +1,49 @@
+<svg class="dia" viewBox="0 0 900 440" role="img" aria-label="Thyroid embryology: follicular cells arise from pharyngeal floor endoderm at the foramen cecum and descend along the thyroglossal duct, leaving possible remnants; C cells arise separately from neural crest via the fourth pouch ultimobranchial body">
+<text class="ttl" x="14" y="26" font-size="17">Two origins, one gland: where thyroid cells come from</text>
+<rect x="14" y="44" width="524" height="382" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="30" y="72" font-size="16">Follicular cells: endoderm that descends</text>
+<rect x="30" y="90" width="236" height="70" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="42" y="115" font-size="15">Foramen cecum</text>
+<text x="42" y="137" font-size="14">origin at the tongue base</text>
+<rect x="30" y="196" width="236" height="70" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="42" y="221" font-size="15">Thyroglossal duct</text>
+<text x="42" y="243" font-size="14">descends past the hyoid</text>
+<rect x="30" y="302" width="236" height="70" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="42" y="327" font-size="15">Thyroid over the trachea</text>
+<text x="42" y="349" font-size="14">the duct normally involutes</text>
+<line x1="148" y1="160" x2="148" y2="188" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="143,188 148,196 153,188" fill="var(--ink-2)"/>
+<line x1="148" y1="266" x2="148" y2="294" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="143,294 148,302 153,294" fill="var(--ink-2)"/>
+<rect x="290" y="90" width="236" height="70" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.2"/>
+<text class="b" x="302" y="115" font-size="15">Lingual thyroid</text>
+<text x="302" y="137" font-size="14">failed descent</text>
+<rect x="290" y="196" width="236" height="70" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.2"/>
+<text class="b" x="302" y="221" font-size="15">Thyroglossal duct cyst</text>
+<text x="302" y="243" font-size="14">midline; moves with tongue</text>
+<rect x="290" y="302" width="236" height="70" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.2"/>
+<text class="b" x="302" y="327" font-size="15">Pyramidal lobe</text>
+<text x="302" y="349" font-size="14">lowest duct remnant</text>
+<line x1="266" y1="125" x2="290" y2="125" stroke="var(--ink-3)" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="266" y1="231" x2="290" y2="231" stroke="var(--ink-3)" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="266" y1="337" x2="290" y2="337" stroke="var(--ink-3)" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="30" y="404" font-size="14">Endoderm of the floor of the primitive pharynx</text>
+<rect x="556" y="44" width="330" height="382" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="572" y="72" font-size="16">C cells: a separate origin</text>
+<rect x="572" y="90" width="298" height="46" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="584" y="119" font-size="15">Neural crest cells</text>
+<rect x="572" y="162" width="298" height="46" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text x="584" y="191" font-size="15">4th pharyngeal pouch</text>
+<rect x="572" y="234" width="298" height="46" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text x="584" y="263" font-size="15">Ultimobranchial body</text>
+<rect x="572" y="306" width="298" height="46" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="584" y="335" font-size="15">Parafollicular C cells</text>
+<line x1="721" y1="136" x2="721" y2="154" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="716,154 721,162 726,154" fill="var(--ink-2)"/>
+<line x1="721" y1="208" x2="721" y2="226" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="716,226 721,234 726,226" fill="var(--ink-2)"/>
+<line x1="721" y1="280" x2="721" y2="298" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="716,298 721,306 726,298" fill="var(--ink-2)"/>
+<text x="572" y="382" font-size="14">Secrete calcitonin</text>
+<text x="572" y="404" font-size="14">Source of medullary carcinoma</text>
+</svg>

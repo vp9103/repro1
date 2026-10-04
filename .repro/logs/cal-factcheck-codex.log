@@ -1,0 +1,1 @@
+calibration factcheck / codex: PASSED  {"which": "factcheck", "provider": "codex", "model": "gpt-6-sol", "at": "2026-09-26 10:28:34", "caught": ["w1", "w2", "w3", "w4", "w5", "w6"], "planted": ["w1", "w2", "w3", "w4", "w5", "w6"], "falsePositive": [], "passed": true}

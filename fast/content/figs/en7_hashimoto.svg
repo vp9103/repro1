@@ -1,0 +1,50 @@
+<svg class="dia" viewBox="0 0 900 462" role="img" aria-label="Hashimoto thyroiditis as a chain: autoimmune attack with anti-TPO antibodies, biopsy with germinal centers and Hurthle cells, falling free T4 with rising TSH, and a long-term risk of B-cell lymphoma">
+<text class="ttl" x="14" y="26" font-size="17">Hashimoto thyroiditis: from autoimmune attack to a failing gland</text>
+<rect x="14" y="44" width="200" height="286" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="26" y="70" font-size="15">1. Autoimmune attack</text>
+<text x="26" y="96" font-size="15">HLA-DR3, HLA-DR5</text>
+<text x="26" y="118" font-size="15">Anti-TPO and</text>
+<text x="26" y="140" font-size="15">antithyroglobulin</text>
+<text x="26" y="162" font-size="15">antibodies mark it</text>
+<text x="26" y="184" font-size="15">Cytotoxic T cells</text>
+<text x="26" y="206" font-size="15">kill follicular cells</text>
+<text x="26" y="228" font-size="15">Mostly women</text>
+<line x1="216" y1="187" x2="230" y2="187" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="230,182 238,187 230,192" fill="var(--ink-2)"/>
+<rect x="238" y="44" width="200" height="286" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="250" y="70" font-size="15">2. What biopsy shows</text>
+<text x="250" y="96" font-size="15">Lymphoid follicles</text>
+<text x="250" y="118" font-size="15">with germinal centers</text>
+<text x="250" y="140" font-size="15">Hürthle cells: pink,</text>
+<text x="250" y="162" font-size="15">oncocytic follicular</text>
+<text x="250" y="184" font-size="15">cells</text>
+<text x="250" y="206" font-size="15">Fibrosis and atrophy</text>
+<text x="250" y="228" font-size="15">late in the course</text>
+<line x1="440" y1="187" x2="454" y2="187" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="454,182 462,187 454,192" fill="var(--ink-2)"/>
+<rect x="462" y="44" width="200" height="286" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="474" y="70" font-size="15">3. Hormone falls</text>
+<text x="474" y="96" font-size="15">Fewer follicles left</text>
+<text x="474" y="118" font-size="15">Free T4 falls</text>
+<text x="474" y="140" font-size="15">Pituitary senses it:</text>
+<text x="474" y="162" font-size="15">TSH rises</text>
+<text x="474" y="184" font-size="15">Early: firm, rubbery,</text>
+<text x="474" y="206" font-size="15">painless goiter</text>
+<text x="474" y="228" font-size="15">Late: small gland</text>
+<text x="474" y="250" font-size="15">Brief early leak can</text>
+<text x="474" y="272" font-size="15">cause thyrotoxicosis</text>
+<line x1="664" y1="187" x2="678" y2="187" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="678,182 686,187 678,192" fill="var(--ink-2)"/>
+<rect x="686" y="44" width="200" height="286" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="698" y="70" font-size="15">4. Long-term risks</text>
+<text x="698" y="96" font-size="15">Primary thyroid</text>
+<text x="698" y="118" font-size="15">B-cell lymphoma</text>
+<text x="698" y="140" font-size="15">(fast-growing gland)</text>
+<text x="698" y="162" font-size="15">Other autoimmune</text>
+<text x="698" y="184" font-size="15">diseases cluster</text>
+<text x="698" y="206" font-size="15">with it</text>
+<rect x="14" y="350" width="872" height="96" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="30" y="376" font-size="16">Lab signature: TSH high, free T4 low, anti-TPO antibodies present</text>
+<text x="30" y="402" font-size="15">The gland, not the pituitary, has failed, so the brake on TSH is released</text>
+<text x="30" y="426" font-size="15">Treatment: lifelong levothyroxine, dosed until the TSH is normal</text>
+</svg>

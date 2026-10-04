@@ -1,0 +1,110 @@
+{
+ "id": "d_rp6_multi",
+ "c": "rp6",
+ "kind": "multi",
+ "t": "Which disorder is it?",
+ "tags": [
+  "sex-development-signals",
+  "meiosis-karyotype"
+ ],
+ "key": "Place each finding by the link it reveals: a uterus means no AMH was made, female genitalia with testes mean androgen cannot act, ambiguity that virilizes means low DHT, and the karyotype separates the sex chromosome disorders.",
+ "cols": [
+  {
+   "id": "cais",
+   "l": "Androgen insensitivity"
+  },
+  {
+   "id": "srd",
+   "l": "5-alpha-reductase deficiency"
+  },
+  {
+   "id": "swyer",
+   "l": "Swyer syndrome"
+  },
+  {
+   "id": "turner",
+   "l": "Turner syndrome"
+  },
+  {
+   "id": "kline",
+   "l": "Klinefelter syndrome"
+  }
+ ],
+ "items": [
+  [
+   "Breasts but scant pubic hair",
+   "cais",
+   "Aromatized testosterone grows breasts, but pubic hair needs androgen action, which the defective receptor blocks."
+  ],
+  [
+   "Testis found in an inguinal hernia of a girl",
+   "cais",
+   "Testes form normally and often sit in the inguinal canal of a phenotypic girl with this receptor defect."
+  ],
+  [
+   "High testosterone and high LH with female genitalia",
+   "cais",
+   "The hypothalamus and pituitary ignore testosterone too, so LH climbs and testosterone rises without any androgen effect."
+  ],
+  [
+   "Ambiguous genitalia at birth, virilization at puberty",
+   "srd",
+   "Genital formation needs DHT, but the pubertal testosterone surge acts on the receptor directly and virilizes."
+  ],
+  [
+   "Normal testosterone with a low DHT",
+   "srd",
+   "The missing enzyme converts testosterone to DHT, so testosterone is normal and its ratio to DHT is high."
+  ],
+  [
+   "Autosomal recessive inheritance",
+   "srd",
+   "The enzyme defect needs two mutant copies, unlike the X-linked inheritance of androgen insensitivity."
+  ],
+  [
+   "46,XY with a uterus and no breasts",
+   "swyer",
+   "Streak gonads make neither AMH nor estrogen, so a uterus forms and breasts never develop."
+  ],
+  [
+   "SRY deletion",
+   "swyer",
+   "Without SRY the gonad never becomes a testis and stays a streak in a 46,XY person."
+  ],
+  [
+   "High gonadoblastoma risk in 46,XY streaks",
+   "swyer",
+   "Dysgenetic gonads that carry Y material can form gonadoblastoma, so they are removed at diagnosis."
+  ],
+  [
+   "Short stature with a webbed neck",
+   "turner",
+   "SHOX loss causes short stature, and a resolved fetal cystic hygroma leaves the webbed neck."
+  ],
+  [
+   "Coarctation of the aorta",
+   "turner",
+   "Aortic coarctation and a bicuspid aortic valve are the dangerous cardiovascular lesions of 45,X."
+  ],
+  [
+   "Horseshoe kidney",
+   "turner",
+   "Kidneys fused at their lower poles form a horseshoe kidney, a classic renal anomaly of 45,X."
+  ],
+  [
+   "Tall with small firm testes",
+   "kline",
+   "Tubular hyalinization shrinks the testes, and low testosterone delays growth-plate closure, so height increases."
+  ],
+  [
+   "Low inhibin B with high FSH",
+   "kline",
+   "Damaged Sertoli cells make little inhibin B, which removes the brake on pituitary FSH."
+  ],
+  [
+   "Barr body in a man",
+   "kline",
+   "The extra inactivated X of 47,XXY shows as a Barr body, which normal male cells lack."
+  ]
+ ]
+}

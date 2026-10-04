@@ -1,0 +1,42 @@
+{
+ "which": "factcheck",
+ "provider": "gemini",
+ "model": "gemini-3.5-flash",
+ "at": "2026-09-26 10:55:53",
+ "caught": [
+  "w1",
+  "w2",
+  "w3",
+  "w4",
+  "w5",
+  "w6"
+ ],
+ "planted": [
+  "w1",
+  "w2",
+  "w3",
+  "w4",
+  "w5",
+  "w6"
+ ],
+ "falsePositive": [],
+ "verdicts": {
+  "c1": "correct",
+  "c2": "correct",
+  "c3": "correct",
+  "c4": "correct",
+  "c5": "correct",
+  "c6": "correct",
+  "c7": "correct",
+  "c8": "correct",
+  "c9": "correct",
+  "c10": "correct",
+  "w1": "wrong",
+  "w2": "wrong",
+  "w3": "wrong",
+  "w4": "wrong",
+  "w5": "wrong",
+  "w6": "wrong"
+ },
+ "passed": true
+}

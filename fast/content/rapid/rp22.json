@@ -1,0 +1,532 @@
+[
+ {
+  "id": "rp22r01",
+  "tags": [
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-rp22-01"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.6"
+  ],
+  "q": "Low testosterone with a high LH points to failure of which structure?",
+  "o": [
+   "The testis",
+   "The anterior pituitary",
+   "The hypothalamus",
+   "The adrenal cortex",
+   "The seminal vesicles"
+  ],
+  "a": 0,
+  "x": "The testis. A failing testis cannot make testosterone or inhibin B, so negative feedback is lost and LH and FSH rise; this is primary, hypergonadotropic hypogonadism, as in Klinefelter syndrome.",
+  "w": {
+   "The anterior pituitary": "A failing pituitary would release too little LH, so testosterone and LH would both be low; a high LH shows the pituitary is working and being driven.",
+   "The hypothalamus": "Hypothalamic failure, as in Kallmann syndrome, lowers GnRH and therefore LH and FSH, giving low or inappropriately normal gonadotropins rather than a high LH.",
+   "The adrenal cortex": "The adrenal cortex makes weak androgens and cortisol but is not the main source of male testosterone, so its failure would not produce this pattern.",
+   "The seminal vesicles": "These glands add fluid to semen and do not produce hormones that regulate LH, so their absence leaves the hormone profile normal."
+  },
+  "media": "fig:rp22_axis",
+  "pt": {
+   "hl": [
+    "Primary hypogonadism"
+   ],
+   "say": "The primary hypogonadism row shows low testosterone with high LH and FSH, which places the defect in the testis."
+  }
+ },
+ {
+  "id": "rp22r02",
+  "tags": [
+   "feedback-logic",
+   "hormone-source"
+  ],
+  "bp": [
+   "BP-rp22-01"
+  ],
+  "obj": [
+   "BICEP-WEIAND.4"
+  ],
+  "q": "Which Sertoli cell product selectively suppresses FSH?",
+  "o": [
+   "Inhibin B",
+   "Androgen-binding protein",
+   "Anti-Müllerian hormone",
+   "Estradiol",
+   "Activin"
+  ],
+  "a": 0,
+  "x": "Inhibin B. Sertoli cells secrete it under FSH, and it feeds back on the pituitary to lower FSH without changing LH; a low inhibin B with a high FSH marks failure of the tubules.",
+  "w": {
+   "Androgen-binding protein": "Androgen-binding protein concentrates testosterone inside the seminiferous tubules and does not feed back on the pituitary.",
+   "Anti-Müllerian hormone": "Anti-Müllerian hormone causes regression of the Müllerian ducts in the fetus and falls at puberty, and it does not regulate FSH in the adult.",
+   "Estradiol": "Estradiol, made by aromatization, exerts central negative feedback on both LH and FSH, so it is not selective for FSH.",
+   "Activin": "Activin is a related peptide that stimulates FSH release, the opposite action to inhibin."
+  },
+  "media": "fig:rp22_axis",
+  "pt": {
+   "hl": [
+    "Inhibin B from Sertoli cells inhibits FSH only"
+   ],
+   "say": "The feedback note states that inhibin B from Sertoli cells inhibits FSH only, while testosterone and estradiol inhibit GnRH and LH."
+  }
+ },
+ {
+  "id": "rp22r03",
+  "tags": [
+   "embryologic-origin",
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-rp22-01"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.6"
+  ],
+  "q": "Which disorder combines low gonadotropins with anosmia?",
+  "o": [
+   "Kallmann syndrome",
+   "Klinefelter syndrome",
+   "Complete androgen insensitivity",
+   "5-alpha-reductase deficiency",
+   "Mumps orchitis"
+  ],
+  "a": 0,
+  "x": "Kallmann syndrome. GnRH neurons fail to migrate from the olfactory placode, so GnRH, LH and FSH are low and smell is absent, producing hypogonadotropic hypogonadism and delayed puberty.",
+  "w": {
+   "Klinefelter syndrome": "Klinefelter syndrome (47,XXY) causes primary testicular failure with high LH and FSH and a normal sense of smell.",
+   "Complete androgen insensitivity": "Complete androgen insensitivity causes a female phenotype with high testosterone and LH from receptor resistance, and smell is normal.",
+   "5-alpha-reductase deficiency": "This enzyme defect blocks DHT formation, giving undervirilized genitalia at birth with normal gonadotropins and normal smell.",
+   "Mumps orchitis": "Mumps orchitis after puberty damages the testis, causing primary hypogonadism with high gonadotropins and no loss of smell."
+  },
+  "media": "fig:rp22_axis",
+  "pt": {
+   "hl": [
+    "Kallmann (anosmia)"
+   ],
+   "say": "The secondary hypogonadism row lists Kallmann syndrome with anosmia as a cause of low testosterone with low or normal LH and FSH."
+  }
+ },
+ {
+  "id": "rp22r04",
+  "tags": [
+   "feedback-logic",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp22-02"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.9"
+  ],
+  "q": "What happens to the testes and sperm count with prolonged anabolic steroid use?",
+  "o": [
+   "Atrophy with azoospermia",
+   "Enlargement with a higher sperm count",
+   "Raised inhibin B",
+   "Raised LH",
+   "Higher intratesticular testosterone"
+  ],
+  "a": 0,
+  "x": "Atrophy with azoospermia. Exogenous androgens suppress LH and FSH, so intratesticular testosterone falls, the testes shrink and spermatogenesis stops until the axis recovers over months to years.",
+  "w": {
+   "Enlargement with a higher sperm count": "Without LH and FSH drive the testes shrink rather than enlarge, so sperm output falls rather than rises.",
+   "Raised inhibin B": "Inhibin B is made by Sertoli cells under FSH, so with FSH suppressed it falls rather than rises.",
+   "Raised LH": "Negative feedback from the high androgen level lowers LH, so a raised LH would suggest primary testicular failure instead.",
+   "Higher intratesticular testosterone": "Without LH, Leydig cells stop making testosterone inside the testis, so the local level collapses despite a high serum level."
+  },
+  "media": "fig:rp22_axis",
+  "pt": {
+   "hl": [
+    "Small testes, azoospermia,"
+   ],
+   "say": "The exogenous testosterone row lists small testes and azoospermia as the result of androgen-suppressed LH and FSH."
+  }
+ },
+ {
+  "id": "rp22r05",
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp22-08",
+   "BP-rp22-02"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.9"
+  ],
+  "q": "Which laboratory change must be monitored in men taking testosterone therapy?",
+  "o": [
+   "Rising hematocrit",
+   "Falling hematocrit",
+   "Rising HDL cholesterol",
+   "Falling PSA level",
+   "Rising LH level"
+  ],
+  "a": 0,
+  "x": "Rising hematocrit. Testosterone stimulates erythropoiesis, causing polycythemia, so hematocrit and PSA are monitored; injections carry the highest risk, and LH falls rather than rises because of feedback.",
+  "w": {
+   "Falling hematocrit": "Androgens stimulate red cell production, so hematocrit rises rather than falls with treatment.",
+   "Rising HDL cholesterol": "Testosterone and anabolic steroids lower HDL cholesterol, so HDL falls rather than rises.",
+   "Falling PSA level": "Therapy can raise PSA by stimulating prostate tissue, which is why it is monitored and why therapy is avoided in prostate cancer.",
+   "Rising LH level": "Exogenous testosterone suppresses LH by negative feedback, so LH falls rather than rises."
+  },
+  "media": "fig:rp22_axis",
+  "pt": {
+   "hl": [
+    "polycythemia, acne"
+   ],
+   "say": "The exogenous testosterone row lists polycythemia and acne, so a rising hematocrit is the laboratory change to monitor."
+  }
+ },
+ {
+  "id": "rp22r06",
+  "tags": [
+   "workup-sequence",
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp22-10",
+   "BP-rp22-03"
+  ],
+  "obj": [
+   "BICEP-WEIAND.6"
+  ],
+  "q": "Which diagnosis fits azoospermia with low-volume, acidic, fructose-negative semen?",
+  "o": [
+   "CBAVD or ejaculatory duct obstruction",
+   "Klinefelter syndrome with high FSH",
+   "Varicocele with heat injury",
+   "Kallmann syndrome with low FSH",
+   "Retrograde ejaculation with sperm in urine"
+  ],
+  "a": 0,
+  "x": "CBAVD or ejaculatory duct obstruction. Seminal vesicle fluid supplies most of the volume and all of the fructose, so when it cannot join the ejaculate the semen is small, acidic and fructose-negative.",
+  "w": {
+   "Klinefelter syndrome with high FSH": "Klinefelter syndrome causes non-obstructive azoospermia with normal semen volume, small firm testes and a high FSH.",
+   "Varicocele with heat injury": "Varicocele lowers sperm quality through heat but does not remove seminal vesicle fluid, so volume and fructose stay normal.",
+   "Kallmann syndrome with low FSH": "Kallmann syndrome gives hypogonadotropic hypogonadism with anosmia and low FSH, and seminal fructose is present.",
+   "Retrograde ejaculation with sperm in urine": "Retrograde ejaculation also lowers volume, but sperm are found in the post-ejaculatory urine and fructose is present if the vesicles work."
+  },
+  "media": "fig:rp22_semen",
+  "pt": {
+   "hl": [
+    "Low volume, acidic pH, no fructose"
+   ],
+   "say": "The left branch reads low volume, acidic pH and no fructose, which means seminal vesicle fluid is missing from duct obstruction or CBAVD."
+  }
+ },
+ {
+  "id": "rp22r07",
+  "tags": [
+   "inheritance-pattern"
+  ],
+  "bp": [
+   "BP-rp22-03"
+  ],
+  "obj": [
+   "BICEP-WEIAND.6"
+  ],
+  "q": "Which gene is mutated in most men with congenital absence of the vas deferens?",
+  "o": [
+   "CFTR",
+   "FMR1",
+   "SRY",
+   "ANOS1",
+   "AR"
+  ],
+  "a": 0,
+  "x": "CFTR. Mutations of the cystic fibrosis gene cause CBAVD even without lung disease, so the patient and his partner need carrier testing before assisted reproduction.",
+  "w": {
+   "FMR1": "FMR1 premutations cause fragile X tremor-ataxia and female primary ovarian insufficiency, not absent vasa.",
+   "SRY": "SRY on the Y chromosome initiates testis development; its loss causes sex reversal rather than an absent vas.",
+   "ANOS1": "This gene, formerly KAL1, is mutated in X-linked Kallmann syndrome, which causes anosmia and low gonadotropins.",
+   "AR": "Androgen receptor mutations cause androgen insensitivity, with high testosterone and a female or undervirilized phenotype."
+  },
+  "media": "fig:rp22_semen",
+  "pt": {
+   "hl": [
+    "CBAVD, CFTR mutations"
+   ],
+   "say": "The vas deferens absent box links CBAVD to CFTR mutations, so both partners are tested."
+  }
+ },
+ {
+  "id": "rp22r08",
+  "tags": [
+   "nerve-supply",
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp22-10"
+  ],
+  "obj": [
+   "BICEP-WEIAND.6"
+  ],
+  "q": "Sperm in the post-ejaculatory urine mean which problem?",
+  "o": [
+   "Retrograde ejaculation",
+   "Congenital absence of the vas deferens",
+   "Ejaculatory duct obstruction",
+   "Obstructive azoospermia from vasectomy",
+   "Hypogonadotropic hypogonadism"
+  ],
+  "a": 0,
+  "x": "Retrograde ejaculation. The bladder neck stays open during emission, so semen flows backward into the bladder; alpha-blockers, diabetic autonomic neuropathy and prostate surgery are causes.",
+  "w": {
+   "Congenital absence of the vas deferens": "With absent vasa, no sperm reach the ejaculate or the urine, so the post-orgasm sample contains none.",
+   "Ejaculatory duct obstruction": "A blocked ejaculatory duct stops sperm and vesicle fluid from entering the urethra, so no sperm appear in the urine either.",
+   "Obstructive azoospermia from vasectomy": "After vasectomy sperm cannot leave the epididymis and vas, so neither the ejaculate nor the urine contains them.",
+   "Hypogonadotropic hypogonadism": "Low gonadotropin drive reduces sperm production, so there are few sperm to find, and the bladder neck works normally."
+  },
+  "media": "fig:rp22_semen",
+  "pt": {
+   "hl": [
+    "post-ejaculatory urine"
+   ],
+   "say": "The bottom box says sperm in post-ejaculatory urine mean retrograde ejaculation, caused by alpha-blockers, diabetic neuropathy or prostate surgery."
+  }
+ },
+ {
+  "id": "rp22r09",
+  "tags": [
+   "hormone-timeline",
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp22-03"
+  ],
+  "obj": [
+   "BICEP-WEIAND.6"
+  ],
+  "q": "How long before a semen analysis does an insult to spermatogenesis show up?",
+  "o": [
+   "About 3 months",
+   "About 3 days",
+   "About 3 weeks",
+   "About 6 months",
+   "About 1 year"
+  ],
+  "a": 0,
+  "x": "About 3 months. Spermatogenesis takes about 74 days and epididymal transit another 10 to 14 days, so a fever, new drug or surgery shows up months later and any treatment needs 3 months before retesting.",
+  "w": {
+   "About 3 days": "Mature sperm already in the epididymis would be ejaculated within days; a defect in spermatogenesis takes much longer to appear.",
+   "About 3 weeks": "Three weeks covers only part of epididymal transit and a fraction of the 74-day cycle, so sperm from earlier stages are still developing.",
+   "About 6 months": "Six months overshoots the 74-day cycle plus transit, and an abnormality from six months ago would have passed through.",
+   "About 1 year": "A year is far longer than the cycle; stable abnormalities suggest a persistent cause rather than a single past insult."
+  },
+  "media": "fig:rp22_semen",
+  "pt": {
+   "hl": [
+    "repeat testing after 3 months"
+   ],
+   "say": "The note under the tree says to repeat testing after 3 months, because a sample reflects spermatogenesis from about three months earlier."
+  }
+ },
+ {
+  "id": "rp22r10",
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp22-05"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.8"
+  ],
+  "q": "Which erectile dysfunction drug is the most likely to cause blue-green vision?",
+  "o": [
+   "Sildenafil",
+   "Tadalafil",
+   "Alprostadil",
+   "Phentolamine",
+   "Papaverine"
+  ],
+  "a": 0,
+  "x": "Sildenafil. At higher levels it also inhibits phosphodiesterase type 6 in retinal photoreceptors, which causes transient blue-green tinted vision; tadalafil instead causes back pain through PDE11.",
+  "w": {
+   "Tadalafil": "Tadalafil inhibits PDE11, which is linked to back pain and myalgia, rather than the retinal PDE6 behind color changes.",
+   "Alprostadil": "Alprostadil is a PGE1 analog given locally, causing penile pain and priapism, and it has no systemic visual effects.",
+   "Phentolamine": "Phentolamine is an alpha-blocker used in injection mixtures; its adverse effects are hypotension and tachycardia.",
+   "Papaverine": "Papaverine is a nonselective phosphodiesterase inhibitor injected into the penis, causing priapism and fibrosis rather than visual changes."
+  },
+  "media": "fig:rp22_erection",
+  "pt": {
+   "hl": [
+    "blue-green vision (PDE6)"
+   ],
+   "say": "The adverse effects box links sildenafil to blue-green vision through PDE6."
+  }
+ },
+ {
+  "id": "rp22r11",
+  "tags": [
+   "drug-interactions"
+  ],
+  "bp": [
+   "BP-rp22-05"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.8"
+  ],
+  "q": "What is the minimum drug-free interval between tadalafil and a nitrate?",
+  "o": [
+   "48 hours",
+   "24 hours",
+   "12 hours",
+   "6 hours",
+   "72 hours"
+  ],
+  "a": 0,
+  "x": "48 hours. Tadalafil has a half-life of about 17 hours, so its effect on cGMP lasts longer than that of sildenafil or vardenafil, which need only 24 hours before a nitrate.",
+  "w": {
+   "24 hours": "This interval applies to sildenafil and vardenafil, whose half-lives are about 4 hours, not to tadalafil.",
+   "12 hours": "Twelve hours is too short for any PDE5 inhibitor, leaving enough drug to cause severe hypotension with a nitrate.",
+   "6 hours": "Six hours is not a recognized safe interval; sildenafil still has a measurable effect at that time.",
+   "72 hours": "Seventy-two hours is longer than required; guidelines use 48 hours for tadalafil, so this overstates the interval."
+  },
+  "media": "fig:rp22_erection",
+  "pt": {
+   "hl": [
+    "48 h (tadalafil)"
+   ],
+   "say": "The nitrate card says to wait 24 h after sildenafil and 48 hours after tadalafil before a nitrate."
+  }
+ },
+ {
+  "id": "rp22r12",
+  "tags": [
+   "receptor-signaling",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp22-11"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.8"
+  ],
+  "q": "Which second messenger does alprostadil raise in cavernosal smooth muscle?",
+  "o": [
+   "cAMP",
+   "cGMP",
+   "IP3",
+   "Calcium",
+   "Nitric oxide"
+  ],
+  "a": 0,
+  "x": "cAMP. Alprostadil, a PGE1 analog, binds a Gs-coupled receptor and raises cAMP, relaxing smooth muscle by a pathway parallel to the nitric oxide and cGMP route, so it works when PDE5 inhibitors fail.",
+  "w": {
+   "cGMP": "cGMP is raised by nitric oxide and preserved by PDE5 inhibitors, the other route to erection.",
+   "IP3": "IP3 is a Gq messenger that releases calcium and contracts smooth muscle, so raising it would oppose an erection.",
+   "Calcium": "A rise in intracellular calcium contracts cavernosal muscle, so relaxation requires its fall, not its rise.",
+   "Nitric oxide": "Nitric oxide is released by nerves and endothelium and is not the messenger raised by alprostadil; nitrates, not alprostadil, donate it."
+  },
+  "media": "fig:rp22_erection",
+  "pt": {
+   "hl": [
+    "Alprostadil (PGE1) raises cAMP"
+   ],
+   "say": "The alprostadil card says it raises cAMP by a parallel pathway that works when PDE5 inhibitors fail."
+  }
+ },
+ {
+  "id": "rp22r13",
+  "tags": [
+   "receptor-signaling",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp22-05"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.8"
+  ],
+  "q": "Which enzyme breaks down cGMP in the corpora cavernosa?",
+  "o": [
+   "PDE5",
+   "PDE3",
+   "PDE4",
+   "Adenylate cyclase",
+   "Guanylate cyclase"
+  ],
+  "a": 0,
+  "x": "PDE5. This phosphodiesterase hydrolyzes cGMP to 5'-GMP and ends the erection; sildenafil and the other PDE5 inhibitors block it, so cGMP persists.",
+  "w": {
+   "PDE3": "PDE3 breaks down cAMP in heart muscle and platelets and is the target of milrinone and cilostazol, not of erectile dysfunction drugs.",
+   "PDE4": "PDE4 degrades cAMP in inflammatory cells and is inhibited by roflumilast for COPD, not by erectile dysfunction drugs.",
+   "Adenylate cyclase": "Adenylate cyclase makes cAMP from ATP; it synthesizes a messenger rather than degrading cGMP.",
+   "Guanylate cyclase": "Soluble guanylate cyclase makes cGMP from GTP when nitric oxide binds it; it builds the signal rather than ending it."
+  },
+  "media": "fig:rp22_erection",
+  "pt": {
+   "hl": [
+    "Detumescence: PDE5 splits cGMP"
+   ],
+   "say": "The last step shows PDE5 splitting cGMP to 5'-GMP, which ends the erection and is blocked by sildenafil and similar drugs."
+  }
+ },
+ {
+  "id": "rp22r14",
+  "tags": [
+   "drug-mechanism",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp22-07"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.9"
+  ],
+  "q": "Which antiandrogen blocks the androgen receptor, inhibits androgen synthesis and causes gynecomastia?",
+  "o": [
+   "Spironolactone",
+   "Finasteride",
+   "Flutamide",
+   "Ketoconazole",
+   "Leuprolide"
+  ],
+  "a": 0,
+  "x": "Spironolactone. It antagonizes both the androgen receptor and androgen synthesis, so it causes gynecomastia, erectile dysfunction and reduced libido, and it is used for hirsutism.",
+  "w": {
+   "Finasteride": "Finasteride blocks 5-alpha-reductase, lowering DHT, and does not bind the androgen receptor.",
+   "Flutamide": "Flutamide blocks the androgen receptor only, and its notable harm is hepatotoxicity.",
+   "Ketoconazole": "Ketoconazole inhibits steroid synthesis through CYP enzymes but does not block the receptor.",
+   "Leuprolide": "Leuprolide is a GnRH agonist that lowers testosterone production through the pituitary, not through receptor blockade."
+  },
+  "media": "fig:rp22_androgen",
+  "pt": {
+   "hl": [
+    "Spironolactone also lowers synthesis: gynecomastia"
+   ],
+   "say": "The receptor blockers box shows spironolactone blocking the receptor and also lowering synthesis, which causes gynecomastia."
+  }
+ },
+ {
+  "id": "rp22r15",
+  "tags": [
+   "drug-mechanism",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp22-06"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.8"
+  ],
+  "q": "Which drug class treats premature ejaculation by raising the ejaculatory threshold?",
+  "o": [
+   "SSRIs",
+   "Alpha-1 blockers",
+   "PDE5 inhibitors",
+   "5-alpha-reductase inhibitors",
+   "Antimuscarinics"
+  ],
+  "a": 0,
+  "x": "SSRIs. Serotonin raises the central threshold for ejaculation, so paroxetine and related drugs delay it; the same effect causes delayed ejaculation and low libido in people taking them for depression.",
+  "w": {
+   "Alpha-1 blockers": "These cause retrograde or absent ejaculation by relaxing the bladder neck, which is not a treatment for premature ejaculation.",
+   "PDE5 inhibitors": "These treat erectile dysfunction and help premature ejaculation only when a failing erection is mimicking it.",
+   "5-alpha-reductase inhibitors": "These lower DHT for BPH and can reduce libido, but they do not delay ejaculation.",
+   "Antimuscarinics": "These block muscarinic receptors to reduce bladder urgency and have no effect on ejaculatory control or sexual function."
+  }
+ }
+]

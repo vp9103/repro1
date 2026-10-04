@@ -1,0 +1,107 @@
+{
+ "cmd": "gaps",
+ "key": "topic:en1",
+ "hash": "772c5bd184c1",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 11:50:08",
+ "gaps": [
+  {
+   "gid": "GAP-en1-01",
+   "concept": "Gs activates adenylyl cyclase, raising cAMP and protein kinase A activity.",
+   "why_tested": "A receptor-signaling stem asks which enzyme or kinase acts downstream of Gs. [Source](https://www.ncbi.nlm.nih.gov/books/NBK20/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en1-02",
+   "concept": "Gq activates phospholipase C; IP3 releases calcium, while DAG activates protein kinase C.",
+   "why_tested": "A signaling diagram asks for the branch missing from an IP3–calcium pathway. [Source](https://www.ncbi.nlm.nih.gov/books/NBK538154/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en1-03",
+   "concept": "Gi-coupled dopamine D2 and somatostatin receptors inhibit adenylyl cyclase and lower cAMP.",
+   "why_tested": "A prolactin or growth-hormone stem asks which G protein mediates inhibition. [Sources](https://www.ncbi.nlm.nih.gov/books/NBK551686/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en1-04",
+   "concept": "Dopamine tonically inhibits prolactin; D2 blockade or pituitary stalk disruption increases prolactin.",
+   "why_tested": "A patient develops galactorrhea after antipsychotic use or a sellar mass. [Source](https://www.ncbi.nlm.nih.gov/books/NBK537331/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en1-05",
+   "concept": "Insulin receptor autophosphorylation recruits IRS proteins; PI3K–Akt signaling moves GLUT4 to muscle and adipose cell membranes.",
+   "why_tested": "A postprandial glucose-uptake stem asks for the pathway downstream of insulin binding. [Source](https://www.ncbi.nlm.nih.gov/books/NBK378978/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en1-06",
+   "concept": "Leptin signals chiefly through a receptor-associated JAK–STAT pathway.",
+   "why_tested": "An obesity or appetite-regulation stem asks which receptor-signaling class leptin uses. [Source](https://www.ncbi.nlm.nih.gov/books/NBK537038/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en1-07",
+   "concept": "Anti-Müllerian hormone and activin signal through serine/threonine kinase receptors and SMAD transcription factors.",
+   "why_tested": "A reproductive hormone stem asks for a receptor class absent from the usual GPCR, tyrosine-kinase, and nuclear-receptor choices. [Source](https://www.ncbi.nlm.nih.gov/books/NBK544351/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en1-08",
+   "concept": "ANP and BNP activate membrane guanylyl cyclase; nitric oxide activates soluble guanylyl cyclase.",
+   "why_tested": "A cGMP stem asks which receptor or enzyme each ligand activates. [Sources](https://pmc.ncbi.nlm.nih.gov/articles/PMC2647281/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en1-09",
+   "concept": "Pulsatile GnRH maintains LH and FSH secretion; continuous GnRH agonism causes an initial flare followed by receptor desensitization and suppression.",
+   "why_tested": "A GnRH-agonist stem asks why gonadal hormone levels rise briefly, then fall. [Source](https://www.ncbi.nlm.nih.gov/books/NBK279126/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en1-10",
+   "concept": "Inhibin selectively suppresses FSH; activin stimulates FSH synthesis.",
+   "why_tested": "A gonadal-feedback stem asks why FSH changes disproportionately to LH. [Source](https://ncbi.nlm.nih.gov/books/NBK279031/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en1-11",
+   "concept": "FSH, LH, TSH, and hCG share an alpha subunit; distinct beta subunits confer specificity, though high hCG can stimulate TSH receptors.",
+   "why_tested": "A molar-pregnancy stem pairs very high hCG with thyrotoxicosis. [Source](https://www.ncbi.nlm.nih.gov/books/n/nap232757/pdf/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en1-12",
+   "concept": "Primary hormone excess suppresses its trophic hormone; a trophic-hormone-secreting pituitary lesion raises both hormones.",
+   "why_tested": "A two-hormone lab pattern asks whether excess production originates in the peripheral gland or pituitary. [Source](https://www.ncbi.nlm.nih.gov/books/NBK26/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en1-13",
+   "concept": "Target-organ hormone resistance can produce high peripheral hormone and high trophic hormone despite intact production.",
+   "why_tested": "High hormone with unsuppressed trophic hormone suggests impaired receptor response rather than gland failure. [Source](https://www.ncbi.nlm.nih.gov/books/NBK459117/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en1-14",
+   "concept": "Prolonged exogenous glucocorticoids suppress CRH and ACTH, causing adrenal cortical atrophy.",
+   "why_tested": "A chronic steroid-use stem asks why endogenous cortisol remains low after withdrawal. [Source](https://www.ncbi.nlm.nih.gov/books/NBK13158/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en1-15",
+   "concept": "Postzygotic activating GNAS mutations cause constitutive Gs–cAMP signaling in McCune–Albright syndrome.",
+   "why_tested": "Precocious puberty, irregular café-au-lait patches, and polyostotic fibrous dysplasia identify a signaling defect. [Source](https://www.ncbi.nlm.nih.gov/books/NBK66130/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en1-16",
+   "concept": "Maternally inherited inactivating GNAS mutations cause Gs deficiency and resistance to PTH and sometimes other Gs-linked hormones.",
+   "why_tested": "Elevated PTH with hypocalcemia and Albright hereditary osteodystrophy prompts identification of the defective signaling protein. [Source](https://www.ncbi.nlm.nih.gov/books/NBK459117/)",
+   "yield": "hi"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-en1-1790441291133.jsonl"
+}

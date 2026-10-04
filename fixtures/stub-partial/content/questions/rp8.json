@@ -1,0 +1,220 @@
+[
+ {
+  "id": "rp8q01",
+  "d": 2,
+  "tags": [
+   "cycle-phases"
+  ],
+  "bp": [
+   "BP-rp8-01"
+  ],
+  "s": "A 26-year-old woman tracks her cycles with an app. Her cycles range from 26 to 35 days, and her periods always begin about two weeks after a rise in basal body temperature.",
+  "l": "Which phase of her cycle accounts for the variation in length?",
+  "o": [
+   "Follicular phase",
+   "Luteal phase",
+   "Menstrual phase",
+   "Ovulatory phase",
+   "Secretory phase"
+  ],
+  "a": 0,
+  "e": "The corpus luteum has a fixed lifespan of about 14 days, so the **luteal** half is constant, as her steady two-week gap after the temperature rise shows. The **follicular phase** varies because the time needed to select a dominant follicle and build enough estradiol for the LH surge varies. Menstrual and ovulatory events are too brief to change length by nine days, and the secretory phase is the luteal phase.",
+  "w": {
+   "Luteal phase": "The luteal phase is fixed near 14 days by the corpus luteum's lifespan, which her steady two-week gap after the temperature rise shows.",
+   "Menstrual phase": "Menstrual flow lasts about three to seven days in every cycle and cannot account for a nine-day range in cycle length.",
+   "Ovulatory phase": "Ovulation is a brief event about 36 hours after the LH surge begins; it does not stretch to fill a longer cycle.",
+   "Secretory phase": "The secretory phase is the endometrial name for the luteal phase, so it is equally fixed by the corpus luteum."
+  },
+  "et": [
+   [
+    "Option",
+    "Typical length",
+    "Set by",
+    "Varies?"
+   ],
+   [
+    [
+     "Follicular phase",
+     "10 to 21 days",
+     "Time to select a dominant follicle",
+     "Yes"
+    ],
+    [
+     "Luteal phase",
+     "About 14 days",
+     "Corpus luteum lifespan",
+     "No"
+    ],
+    [
+     "Menstrual phase",
+     "3 to 7 days",
+     "Shedding of the functional layer",
+     "Slightly"
+    ],
+    [
+     "Ovulatory phase",
+     "About 36 hours",
+     "LH surge",
+     "No"
+    ],
+    [
+     "Secretory phase",
+     "About 14 days",
+     "Progesterone from the corpus luteum",
+     "No"
+    ]
+   ]
+  ],
+  "bl": "Cycle length varies in the follicular phase; the luteal phase is fixed near 14 days.",
+  "ef": "rp8_cycle",
+  "pt": {
+   "hl": [
+    "Follicular phase (varies)"
+   ],
+   "say": "The follicular phase panel is the one that stretches or shrinks; the luteal phase stays near 14 days because the corpus luteum's lifespan is fixed."
+  }
+ },
+ {
+  "id": "rp8q02",
+  "d": 1,
+  "tags": [
+   "cycle-phases"
+  ],
+  "bp": [
+   "BP-rp8-01"
+  ],
+  "s": "A 29-year-old woman with regular 28-day cycles is being evaluated for infertility. A serum progesterone drawn on day 21 is high, and an endometrial biopsy that day shows coiled glands with subnuclear vacuoles.",
+  "l": "Which structure produced the progesterone?",
+  "o": [
+   "Corpus luteum",
+   "Dominant follicle",
+   "Anterior pituitary",
+   "Endometrial stroma",
+   "Placenta"
+  ],
+  "a": 0,
+  "e": "After ovulation the granulosa and theca cells luteinize into the **corpus luteum**, which secretes progesterone for about 14 days. A high day-21 progesterone and a secretory biopsy together confirm ovulation. The dominant follicle makes estradiol before ovulation, the pituitary makes LH and FSH, the endometrium is the target, and the placenta takes over only after about 10 weeks of pregnancy.",
+  "w": {
+   "Dominant follicle": "The dominant follicle makes estradiol before ovulation; its cells produce much progesterone only after they luteinize into the corpus luteum.",
+   "Anterior pituitary": "The anterior pituitary secretes LH and FSH that drive the ovary but makes no sex steroids itself.",
+   "Endometrial stroma": "The endometrium is the target of progesterone, which makes the glands secretory; it does not produce the hormone.",
+   "Placenta": "The placenta takes over progesterone production only after about 10 weeks of pregnancy; she is not pregnant."
+  },
+  "et": [
+   [
+    "Option",
+    "Main product",
+    "When it matters",
+    "Fits day 21?"
+   ],
+   [
+    [
+     "Corpus luteum",
+     "Progesterone",
+     "Luteal phase",
+     "Yes"
+    ],
+    [
+     "Dominant follicle",
+     "Estradiol",
+     "Late follicular phase",
+     "No"
+    ],
+    [
+     "Anterior pituitary",
+     "LH and FSH",
+     "Whole cycle",
+     "No"
+    ],
+    [
+     "Endometrial stroma",
+     "Target tissue, no hormone",
+     "Whole cycle",
+     "No"
+    ],
+    [
+     "Placenta",
+     "Progesterone and hCG",
+     "Pregnancy after 10 weeks",
+     "No"
+    ]
+   ]
+  ],
+  "bl": "Luteal-phase progesterone comes from the corpus luteum; a secretory biopsy confirms ovulation.",
+  "ei": "rp8_endometrium",
+  "pt": {
+   "hl": [
+    "Secretory glands"
+   ],
+   "say": "Secretory glands are the progesterone effect: the corpus luteum's hormone turned straight proliferative glands into coiled ones."
+  }
+ },
+ {
+  "id": "rp8q03",
+  "d": 3,
+  "tags": [
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-rp8-01"
+  ],
+  "s": "A 31-year-old woman with endometriosis starts monthly injections of a long-acting GnRH agonist. In the first week her pelvic pain worsens; by six weeks she has hot flashes and a serum estradiol in the postmenopausal range.",
+  "l": "Which cells' response to the drug explains the fall in estradiol?",
+  "o": [
+   "Pituitary gonadotrophs",
+   "Corpus luteum",
+   "Dominant follicle",
+   "Endometrial stroma",
+   "Placenta"
+  ],
+  "a": 0,
+  "e": "Continuous GnRH agonist first stimulates **pituitary gonadotrophs** (the flare), then downregulates and desensitizes their GnRH receptors, so LH and FSH fall and the ovary stops making estradiol. The ovarian cells are healthy but unstimulated, the endometrium is only the target, and the placenta is irrelevant without pregnancy.",
+  "w": {
+   "Corpus luteum": "The corpus luteum depends on LH, so it fails as a consequence of the drug; it is not where the drug acts.",
+   "Dominant follicle": "Follicles stop maturing because FSH falls, but the drug acts upstream at the pituitary; the follicle itself is healthy.",
+   "Endometrial stroma": "The endometrium shrinks because estradiol falls; it is the therapeutic target, not the cause of the fall.",
+   "Placenta": "The placenta makes hormones only in pregnancy; she is not pregnant, and GnRH agonists do not act on it."
+  },
+  "et": [
+   [
+    "Option",
+    "Role in the axis",
+    "Effect of continuous GnRH agonist",
+    "Explains the fall?"
+   ],
+   [
+    [
+     "Pituitary gonadotrophs",
+     "Make LH and FSH",
+     "Flare, then receptor downregulation",
+     "Yes"
+    ],
+    [
+     "Corpus luteum",
+     "Makes progesterone",
+     "Fails once LH falls",
+     "No, a consequence"
+    ],
+    [
+     "Dominant follicle",
+     "Makes estradiol",
+     "Stops maturing once FSH falls",
+     "No, a consequence"
+    ],
+    [
+     "Endometrial stroma",
+     "Target tissue",
+     "Atrophies",
+     "No, the target"
+    ],
+    [
+     "Placenta",
+     "Pregnancy hormones",
+     "None",
+     "No"
+    ]
+   ]
+  ],
+  "bl": "Continuous GnRH agonist downregulates pituitary gonadotrophs after a flare, so LH, FSH and estradiol fall."
+ }
+]

@@ -1,0 +1,20 @@
+{
+  "items": [
+    {"id":"c1","verdict":"correct","claim":"","correction":"","key_is_best":true},
+    {"id":"c2","verdict":"correct","claim":"","correction":"","key_is_best":true},
+    {"id":"c3","verdict":"correct","claim":"","correction":"","key_is_best":true},
+    {"id":"c4","verdict":"correct","claim":"","correction":"","key_is_best":true},
+    {"id":"c5","verdict":"correct","claim":"","correction":"","key_is_best":true},
+    {"id":"c6","verdict":"correct","claim":"","correction":"","key_is_best":true},
+    {"id":"c7","verdict":"correct","claim":"","correction":"","key_is_best":true},
+    {"id":"c8","verdict":"correct","claim":"","correction":"","key_is_best":true},
+    {"id":"c9","verdict":"correct","claim":"","correction":"","key_is_best":true},
+    {"id":"c10","verdict":"correct","claim":"","correction":"","key_is_best":true},
+    {"id":"w1","verdict":"wrong","claim":"Inhibin is high and FSH is low because Sertoli cells are overactive.","correction":"In adult Klinefelter syndrome, Sertoli cell dysfunction causes low inhibin B and elevated FSH. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279145/)","key_is_best":true},
+    {"id":"w2","verdict":"wrong","claim":"Invasive lobular carcinoma of the breast is defined by overexpression of E-cadherin, which makes its cells grow in single-file lines.","correction":"Classic invasive lobular carcinoma typically loses E-cadherin expression; reduced cell adhesion produces the single-file pattern. [Review](https://pmc.ncbi.nlm.nih.gov/articles/PMC7359988/)","key_is_best":true},
+    {"id":"w3","verdict":"wrong","claim":"A complete hydatidiform mole is triploid (69,XXY) and usually contains fetal parts.","correction":"A complete mole is usually androgenetic diploid (46,XX or 46,XY) and lacks fetal parts. Triploidy with possible fetal tissue describes a partial mole. [NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK470267/)","key_is_best":true},
+    {"id":"w4","verdict":"wrong","claim":"Hypocalcemia after thyroidectomy is caused by injury to the recurrent laryngeal nerve.","correction":"Post-thyroidectomy hypocalcemia results from parathyroid injury, removal, or loss of blood supply; recurrent laryngeal nerve injury causes voice changes. [JAMA Surgery](https://jamanetwork.com/journals/jamasurgery/fullarticle/401446)","key_is_best":true},
+    {"id":"w5","verdict":"wrong","claim":"In central diabetes insipidus, urine concentrates during water deprivation and does not respond to desmopressin.","correction":"In central diabetes insipidus, urine concentrates poorly during water deprivation and its osmolality rises after desmopressin. [Endotext](https://www.ncbi.nlm.nih.gov/sites/books/NBK537591/)","key_is_best":true},
+    {"id":"w6","verdict":"wrong","claim":"Pheochromocytoma should be treated with a beta-blocker first and an alpha-blocker second.","correction":"Begin alpha blockade first; add beta blockade afterward if needed for tachycardia. Beta blockade first can precipitate hypertensive crisis through unopposed alpha stimulation. [Endocrine Society guideline](https://doi.org/10.1210/jc.2014-1498)","key_is_best":true}
+  ]
+}

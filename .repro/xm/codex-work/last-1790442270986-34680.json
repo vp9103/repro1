@@ -1,0 +1,109 @@
+{
+  "gaps": [
+    {
+      "concept": "Combined hormonal contraception is available as an oral pill, transdermal patch, or vaginal ring.",
+      "why_tested": "A stem asks whether these delivery routes share the same estrogen-related risks.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Estrogen increases hepatic clotting-factor synthesis, explaining the increased risk of venous thromboembolism.",
+      "why_tested": "A patient develops a pulmonary embolism after starting a combined contraceptive; the question asks for the mechanism.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Inherited thrombophilia, including factor V Leiden, makes estrogen-containing contraception unsafe.",
+      "why_tested": "A patient with a known clotting disorder needs a contraceptive choice. [CDC](https://cdc.gov/contraception/hcp/usmec/combined-hormonal-contraceptives.html)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Nausea, breast tenderness, and breakthrough bleeding are common adverse effects of combined hormonal contraception.",
+      "why_tested": "A new pill user reports spotting and breast tenderness without signs of a serious complication.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Progestin-only contraception is an option when estrogen is contraindicated, including during breastfeeding.",
+      "why_tested": "A breastfeeding patient or one with migraine with aura needs a suitable method.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Traditional progestin-only pills primarily alter cervical mucus; ovulation may continue, and late pills reduce protection.",
+      "why_tested": "A patient becomes pregnant despite taking a progestin-only pill inconsistently. [CDC](https://www.cdc.gov/contraception/hcp/usspr/progestin-only-pills.html)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Levonorgestrel IUDs act mainly locally and commonly reduce menstrual bleeding or cause amenorrhea.",
+      "why_tested": "A patient with heavy menses seeks contraception, or an IUD user develops scant periods. [CDC](https://www.cdc.gov/contraception/hcp/usspr/intrauterine-contraception.html)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Irregular bleeding or spotting is common with the etonogestrel implant and DMPA; amenorrhea may develop with DMPA.",
+      "why_tested": "A progestin-method user presents with unpredictable bleeding or absent periods. [CDC](https://cdc.gov/contraception/hcp/usspr/injectables.html)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Active pelvic inflammatory disease or gonococcal or chlamydial cervicitis precludes IUD insertion.",
+      "why_tested": "A patient with purulent cervical discharge requests an IUD. [CDC](https://www.cdc.gov/contraception/hcp/usspr/intrauterine-contraception.html)",
+      "yield": "hi"
+    },
+    {
+      "concept": "IUD insertion carries a small early risk of pelvic infection; expulsion or uterine perforation can cause missing strings.",
+      "why_tested": "A patient develops pelvic pain or cannot feel IUD strings after insertion.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Pregnancy with an IUD in place requires consideration of ectopic pregnancy, despite the IUD lowering overall pregnancy risk.",
+      "why_tested": "An IUD user has a positive pregnancy test and unilateral pelvic pain. [CDC](https://www.cdc.gov/contraception/hcp/usspr/intrauterine-contraception.html)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Copper IUDs are contraindicated in Wilson disease.",
+      "why_tested": "A patient with impaired copper excretion requests nonhormonal contraception. [FDA](https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/018680s074lbl.pdf)",
+      "yield": "mid"
+    },
+    {
+      "concept": "Condoms reduce sexually transmitted infection transmission; hormonal methods and IUDs do not provide that protection.",
+      "why_tested": "A patient using highly effective contraception asks about protection from HIV or other infections. [CDC](https://cdc.gov/contraception/hcp/usmec/summary-contraceptive.html)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Levonorgestrel emergency contraception works best within 72 hours; ulipristal and copper IUD remain effective through five days.",
+      "why_tested": "A patient presents four days after unprotected intercourse. [ACOG](https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2015/09/emergency-contraception)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Ulipristal can delay follicular rupture after the LH rise begins; levonorgestrel is most effective before that rise.",
+      "why_tested": "A periovulatory patient needs oral emergency contraception. [ACOG](https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2015/09/emergency-contraception)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Starting hormonal contraception immediately after ulipristal can blunt its ovulation-delaying effect.",
+      "why_tested": "A patient takes ulipristal and starts a progestin pill the next day. [CDC](https://cdc.gov/contraception/hcp/usspr/emergency-contraception.html)",
+      "yield": "mid"
+    },
+    {
+      "concept": "Oral emergency contraceptives prevent or delay ovulation; they do not terminate an established pregnancy.",
+      "why_tested": "A question asks whether emergency contraception and medication abortion have the same effect. [ACOG](https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2015/09/emergency-contraception)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Mifepristone also antagonizes glucocorticoid receptors and is contraindicated with chronic adrenal failure or long-term corticosteroid use.",
+      "why_tested": "A patient taking chronic glucocorticoids is considered for medication abortion. [FDA](https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/020687Orig1s026lbl.pdf)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Mifepristone–misoprostol does not treat ectopic pregnancy.",
+      "why_tested": "Persistent pain after medication abortion reveals an extrauterine pregnancy. [FDA](https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/020687Orig1s026lbl.pdf)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Medication abortion commonly causes cramping and bleeding; misoprostol also causes nausea, diarrhea, fever, or chills.",
+      "why_tested": "Symptoms begin after misoprostol, and the question asks for an expected drug effect. [FDA](https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/020687Orig1s026lbl.pdf)",
+      "yield": "hi"
+    },
+    {
+      "concept": "Lactational amenorrhea provides contraception when breastfeeding is exclusive or nearly exclusive, menses have not returned, and delivery was under six months ago.",
+      "why_tested": "A postpartum patient asks whether breastfeeding alone prevents ovulation. [CDC](https://www.cdc.gov/contraception/hcp/usmec/lactational-amenorrhea-method.html)",
+      "yield": "mid"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp16",
+ "hash": "020df3783d11",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:10:21",
+ "gaps": [
+  {
+   "gid": "GAP-rp16-01",
+   "concept": "Chlamydial cervicitis causes mucopurulent discharge, cervical friability, and postcoital bleeding; infection is often asymptomatic.",
+   "why_tested": "A sexually active patient has a friable cervix and positive chlamydial NAAT despite few symptoms.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp16-02",
+   "concept": "Chlamydial urethritis can cause dysuria and pyuria without organisms on Gram stain or routine urine culture.",
+   "why_tested": "A patient has urethral symptoms, white cells in urine, and a negative routine culture.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp16-03",
+   "concept": "C. trachomatis forms glycogen-containing intracytoplasmic inclusions visible with iodine or Giemsa stain.",
+   "why_tested": "A cytology or microscopy image shows inclusions in infected epithelial cells.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp16-04",
+   "concept": "Gonorrhea commonly causes purulent urethral discharge in men; cervical infection in women may be asymptomatic.",
+   "why_tested": "A stem contrasts a symptomatic male partner with a female partner who has few symptoms.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp16-05",
+   "concept": "N. gonorrhoeae is oxidase positive, ferments glucose but not maltose, and grows on selective Thayer-Martin medium.",
+   "why_tested": "Culture and biochemical results distinguish gonococcus from other Neisseria species.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp16-06",
+   "concept": "NAAT is the preferred diagnostic test for uncomplicated genital gonorrhea; culture permits antimicrobial susceptibility testing.",
+   "why_tested": "A stem asks which test diagnoses infection or investigates suspected antibiotic resistance.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp16-07",
+   "concept": "Gonococcal lipooligosaccharide drives inflammation and lacks the long O-antigen chains of typical lipopolysaccharide.",
+   "why_tested": "A mechanism question links gonococcal mucosal infection to endotoxin-mediated inflammation.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp16-08",
+   "concept": "Gonorrhea and chlamydia frequently coexist; add doxycycline to gonorrhea treatment when chlamydia has not been excluded.",
+   "why_tested": "A patient with confirmed gonorrhea has no chlamydia result, and the question asks for initial therapy.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp16-09",
+   "concept": "Gonococcal ophthalmia typically appears 2–5 days after birth with copious pus; chlamydial conjunctivitis usually appears after 5 days.",
+   "why_tested": "An infant’s age and ocular discharge distinguish the causes of neonatal conjunctivitis.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp16-10",
+   "concept": "Chlamydial or gonococcal epididymitis causes gradual unilateral scrotal pain and swelling, often with concurrent urethritis.",
+   "why_tested": "A sexually active young man has epididymal tenderness and a positive STI test.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp16-11",
+   "concept": "M. genitalium lacks a cell wall, resists beta-lactams, and is associated with persistent urethritis, cervicitis, and PID.",
+   "why_tested": "Urethritis persists after usual therapy, or a drug-mechanism question asks why penicillin fails.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp16-12",
+   "concept": "T. pallidum is a thin motile spirochete poorly seen on Gram stain; silver stain can reveal organisms in tissue.",
+   "why_tested": "A lesion specimen shows spiral organisms on darkfield or silver stain despite an unrevealing Gram stain.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp16-13",
+   "concept": "Syphilitic lesions characteristically show plasma cell infiltrates and obliterative endarteritis.",
+   "why_tested": "A biopsy asks for the characteristic inflammatory cells or vascular lesion.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp16-14",
+   "concept": "Syphilitic aortitis results from obliterative endarteritis of the vasa vasorum and can cause ascending aneurysm or aortic regurgitation.",
+   "why_tested": "A late-syphilis stem asks for the mechanism of thoracic aortic disease.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp16-15",
+   "concept": "RPR and VDRL detect anticardiolipin antibodies; titers track disease activity, whereas treponemal tests generally remain positive after treatment.",
+   "why_tested": "A previously treated patient has persistent treponemal positivity but falling nontreponemal titers.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp16-16",
+   "concept": "Very high antibody concentrations can cause a false-negative RPR or VDRL through the prozone effect; dilution restores reactivity.",
+   "why_tested": "A patient with convincing secondary syphilis has an unexpectedly negative screening test.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp16-17",
+   "concept": "Reactive CSF-VDRL is highly specific for neurosyphilis but is insufficiently sensitive to exclude it when negative.",
+   "why_tested": "Neurologic symptoms and serum syphilis tests conflict with a negative cerebrospinal fluid test.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp16-18",
+   "concept": "Congenital syphilis crosses the placenta and may cause stillbirth, snuffles, rash, hepatosplenomegaly, and long-bone abnormalities.",
+   "why_tested": "An infant of an untreated mother has persistent rhinitis and abnormal long-bone radiographs.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp16-19",
+   "concept": "Late congenital syphilis causes Hutchinson teeth, interstitial keratitis, and sensorineural hearing loss.",
+   "why_tested": "A child with notched incisors and hearing loss is linked to maternal infection.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp16-20",
+   "concept": "Penicillin G is required for syphilis in pregnancy; patients with penicillin allergy require desensitization to prevent congenital infection.",
+   "why_tested": "A pregnant patient with syphilis reports penicillin allergy, and the question asks for effective therapy.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp16-21",
+   "concept": "Acute PID produces neutrophilic salpingitis and may form a pus-filled tube (pyosalpinx); chronic scarring can cause hydrosalpinx.",
+   "why_tested": "A tubal specimen or imaging study shows pus or a dilated fluid-filled tube after PID.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp16-22",
+   "concept": "Transvaginal ultrasound findings supporting PID include thickened, fluid-filled fallopian tubes and a tubo-ovarian complex.",
+   "why_tested": "Pelvic pain and cervical tenderness are paired with an imaging finding to identify PID.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp16-23",
+   "concept": "PID can be present without fever or a positive gonorrhea or chlamydia test.",
+   "why_tested": "A patient with pelvic pain and cervical motion tenderness has normal temperature and negative cervical STI tests.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp16-24",
+   "concept": "Sexually transmitted LGV is caused by invasive C. trachomatis serovars L1–L3 and is treated with doxycycline.",
+   "why_tested": "A transient genital lesion precedes painful inguinal lymphadenopathy, and the question asks for organism classification or therapy.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp16-25",
+   "concept": "Azithromycin is a first-line treatment option for chancroid and granuloma inguinale.",
+   "why_tested": "An ulcer vignette identifies either organism and asks for an appropriate antibiotic.",
+   "yield": "lo"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp16-1790442514275.jsonl"
+}

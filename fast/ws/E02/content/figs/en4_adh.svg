@@ -1,0 +1,46 @@
+<svg class="dia" viewBox="0 0 900 440" role="img" aria-label="ADH pathway: rising plasma osmolality or large volume loss stimulates hypothalamic neurons, the posterior pituitary releases ADH, and V2 receptors insert aquaporin-2 in the collecting duct; central DI, nephrogenic DI and SIADH each break a different link">
+<text class="ttl" x="14" y="24" font-size="17">ADH: from stimulus to concentrated urine</text>
+<rect x="14" y="44" width="210" height="190" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="72" font-size="16">Stimuli</text>
+<text x="28" y="100" font-size="15">Plasma osmolality</text>
+<text x="28" y="124" font-size="15">rises (osmoreceptors)</text>
+<text x="28" y="160" font-size="15">Large volume loss</text>
+<text x="28" y="184" font-size="15">(baroreceptors)</text>
+<line x1="224" y1="140" x2="236" y2="140" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="236,135 244,140 236,145" fill="var(--ink-2)"/>
+<rect x="244" y="44" width="200" height="190" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="258" y="72" font-size="16">Hypothalamus</text>
+<text x="258" y="100" font-size="15">Supraoptic and</text>
+<text x="258" y="124" font-size="15">paraventricular</text>
+<text x="258" y="148" font-size="15">neurons make ADH</text>
+<text x="258" y="184" font-size="15">Posterior pituitary</text>
+<text x="258" y="208" font-size="15">releases it</text>
+<line x1="444" y1="140" x2="456" y2="140" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="456,135 464,140 456,145" fill="var(--ink-2)"/>
+<rect x="464" y="44" width="422" height="190" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="478" y="72" font-size="16">Collecting duct principal cell</text>
+<text x="478" y="100" font-size="15">V2 receptor, Gs, cAMP, protein kinase A</text>
+<text x="478" y="126" font-size="15">Aquaporin-2 inserted in the apical membrane</text>
+<text x="478" y="152" font-size="15">Water moves into the salty medulla</text>
+<text x="478" y="178" font-size="15">Small volume of concentrated urine</text>
+<text x="478" y="212" font-size="15">V1 on arterioles: vasoconstriction</text>
+<text class="b" x="14" y="262" font-size="16">Where each disorder breaks the chain</text>
+<rect x="14" y="274" width="276" height="150" rx="10" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="a1" x="28" y="302" font-size="16">Central DI</text>
+<text x="28" y="330" font-size="15">Too little ADH released</text>
+<text x="28" y="356" font-size="15">Surgery, head trauma,</text>
+<text x="28" y="382" font-size="15">tumors, infiltration</text>
+<text x="28" y="408" font-size="15">Treat: desmopressin</text>
+<rect x="310" y="274" width="280" height="150" rx="10" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="cr" x="326" y="302" font-size="16">Nephrogenic DI</text>
+<text x="326" y="330" font-size="15">Kidney ignores ADH</text>
+<text x="326" y="356" font-size="15">Lithium, demeclocycline,</text>
+<text x="326" y="382" font-size="15">high calcium, low potassium</text>
+<text x="326" y="408" font-size="15">Treat: thiazide, amiloride</text>
+<rect x="610" y="274" width="276" height="150" rx="10" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="a2" x="626" y="302" font-size="16">SIADH</text>
+<text x="626" y="330" font-size="15">ADH with no stimulus</text>
+<text x="626" y="356" font-size="15">Small cell lung cancer,</text>
+<text x="626" y="382" font-size="15">CNS disease, drugs</text>
+<text x="626" y="408" font-size="15">Treat: fluid restriction</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg class="dia" viewBox="0 0 900 470" role="img" aria-label="Thyroid hormone synthesis: iodide moves from blood into the follicular cell, is organified in the colloid by thyroid peroxidase, and T4 and T3 return to the blood">
+<text class="ttl" x="14" y="24" font-size="17">Thyroid hormone synthesis in one follicular cell</text>
+<rect x="14" y="44" width="170" height="410" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="30" y="74" font-size="16">Blood</text>
+<text x="30" y="124" font-size="15">Iodide in</text>
+<text x="30" y="394" font-size="15">T4 and T3 out</text>
+<rect x="206" y="44" width="370" height="410" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="222" y="74" font-size="16">Follicular cell</text>
+<text x="230" y="124" font-size="15">Sodium-iodide symporter</text>
+<text x="222" y="344" font-size="15">Lysosome frees T4 and T3</text>
+<text x="222" y="424" font-size="15">TSH receptor drives each step</text>
+<rect x="598" y="44" width="288" height="410" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="614" y="74" font-size="16">Colloid</text>
+<text x="622" y="124" font-size="15">Thyroid peroxidase</text>
+<text x="614" y="164" font-size="15">Thyroglobulin + iodine</text>
+<text x="614" y="214" font-size="15">MIT + DIT &#8594; T3</text>
+<text x="614" y="250" font-size="15">DIT + DIT &#8594; T4</text>
+<text x="614" y="344" font-size="15">Endocytosis into the cell</text>
+<line x1="168" y1="119" x2="214" y2="119" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="214,114 222,119 214,124" fill="var(--ink-2)"/>
+<line x1="560" y1="119" x2="606" y2="119" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="606,114 614,119 606,124" fill="var(--ink-2)"/>
+<line x1="606" y1="339" x2="560" y2="339" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="560,334 552,339 560,344" fill="var(--ink-2)"/>
+<line x1="214" y1="389" x2="168" y2="389" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="168,384 160,389 168,394" fill="var(--ink-2)"/>
+</svg>

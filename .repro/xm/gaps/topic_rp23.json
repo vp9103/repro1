@@ -1,0 +1,119 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp23",
+ "hash": "36d330330180",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:15:07",
+ "gaps": [
+  {
+   "gid": "GAP-rp23-01",
+   "concept": "Fibrocystic change causes bilateral, lumpy breast tenderness that worsens before menstruation and improves afterward.",
+   "why_tested": "A premenopausal patient has breast pain and nodularity that fluctuate with the menstrual cycle.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp23-02",
+   "concept": "Fibrocystic cysts may appear as blue-domed cysts; apocrine cells have abundant eosinophilic cytoplasm.",
+   "why_tested": "A gross specimen or biopsy asks for the benign lesion behind a palpable cyst.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp23-03",
+   "concept": "Sclerosing adenosis has increased, compressed acini within lobules and an intact myoepithelial layer; it can mimic invasive carcinoma.",
+   "why_tested": "A biopsy shows distorted glands in dense stroma, but myoepithelial cells are preserved.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp23-04",
+   "concept": "Radial scar is a benign stellate lesion with central fibrosis and radiating entrapped ducts that can mimic carcinoma on mammography.",
+   "why_tested": "A spiculated mammographic lesion proves benign on biopsy.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp23-05",
+   "concept": "Usual ductal hyperplasia has heterogeneous cells and irregular slitlike spaces; atypical ductal hyperplasia has uniform cells and rigid secondary spaces.",
+   "why_tested": "A ductal proliferation must be classified by atypia and associated cancer risk.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp23-06",
+   "concept": "Intraductal papilloma contains branching fibrovascular cores lined by epithelial and myoepithelial cells.",
+   "why_tested": "Histology of a subareolar lesion causing bloody discharge asks for the diagnosis.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp23-07",
+   "concept": "Phyllodes tumors often grow rapidly; malignant stromal cells spread hematogenously, especially to the lungs, while nodal spread is rare.",
+   "why_tested": "A rapidly enlarging fibroepithelial mass is followed by distant metastasis without axillary nodal disease.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp23-08",
+   "concept": "Fat necrosis shows lipid-laden macrophages, multinucleated giant cells, and later fibrosis.",
+   "why_tested": "A firm post-traumatic mass mimics carcinoma clinically and on imaging.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp23-09",
+   "concept": "Mammary duct ectasia can cause nipple retraction; dilated ducts contain debris and lipid-laden macrophages.",
+   "why_tested": "An older patient has colored nipple discharge and retraction, raising concern for cancer.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp23-10",
+   "concept": "Periductal mastitis produces keratin plugs that obstruct ducts and may lead to recurrent subareolar fistulas.",
+   "why_tested": "A smoker has repeated subareolar abscesses with a draining tract.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp23-11",
+   "concept": "Galactocele is a painless milk-retention cyst from duct obstruction during or after lactation; aspiration yields milky fluid.",
+   "why_tested": "A recently breastfeeding patient develops a noninflamed breast mass.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp23-12",
+   "concept": "A first-degree family history of breast cancer further raises risk when benign biopsy shows atypical hyperplasia.",
+   "why_tested": "A risk-comparison question combines family history with breast-biopsy findings.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp23-13",
+   "concept": "Physiologic gynecomastia occurs in newborns, puberty, and older men; it is typically symmetric and centered beneath the areola.",
+   "why_tested": "A tender subareolar breast enlargement appears at a characteristic age without another illness.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp23-14",
+   "concept": "Spironolactone, cimetidine, antiandrogens, and anabolic steroid withdrawal are classic drug-associated causes of gynecomastia.",
+   "why_tested": "A medication exposure precedes new male breast enlargement.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp23-15",
+   "concept": "Gynecomastia can result from primary hypogonadism, cirrhosis, hyperthyroidism, or an hCG-secreting testicular tumor.",
+   "why_tested": "A male breast mass accompanies low testosterone, liver disease, thyrotoxicosis, or a testicular mass.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp23-16",
+   "concept": "True gynecomastia has palpable glandular tissue beneath the areola; pseudogynecomastia is adipose tissue without glandular proliferation.",
+   "why_tested": "An obese man has breast enlargement, and the question asks whether glandular tissue has grown.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp23-17",
+   "concept": "Gynecomastia is usually concentric beneath the nipple; male breast carcinoma more often forms a hard, eccentric mass with nipple changes.",
+   "why_tested": "An older man presents with unilateral breast enlargement and nipple retraction.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp23-18",
+   "concept": "Breast implant-associated anaplastic large cell lymphoma typically presents years later as a peri-implant seroma or mass and is ALK-negative.",
+   "why_tested": "Delayed swelling around a textured implant yields atypical CD30-positive cells.",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp23-1790442833744.jsonl"
+}

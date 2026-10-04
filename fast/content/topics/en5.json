@@ -1,0 +1,359 @@
+{
+ "id": "en5",
+ "t": "The thyroid: structure, hormone synthesis and function tests",
+ "sub": "How the follicle traps iodide and builds T4, what T3 does in tissues, and how TSH and free T4 together locate a thyroid problem.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 12,
+ "bp": [
+  "BP-en5-01",
+  "BP-en5-02",
+  "BP-en5-03",
+  "BP-en5-04",
+  "BP-en5-05",
+  "BP-en5-06",
+  "BP-en5-07",
+  "BP-en5-08",
+  "BP-en5-09",
+  "BP-en5-10",
+  "BP-en5-11",
+  "BP-en5-12",
+  "BP-en5-13",
+  "BP-en5-14",
+  "BP-en5-15"
+ ],
+ "obj": [
+  "ENDO-THYROID.1",
+  "ENDO-THYROID.4",
+  "ENDO-THYROID.5"
+ ],
+ "pretest": [
+  {
+   "q": "A child has a midline neck mass that rises when she sticks out her tongue. What is it most likely to be?",
+   "o": [
+    "Thyroglossal duct cyst",
+    "Branchial cleft cyst",
+    "Cystic hygroma",
+    "Enlarged cervical lymph node"
+   ],
+   "a": 0,
+   "why": "The thyroid descends from the foramen cecum at the tongue base along the thyroglossal duct. A persisting segment of that duct stays tethered to the tongue and hyoid, so the cyst sits in the midline and moves up with swallowing or tongue protrusion.",
+   "w": {
+    "Branchial cleft cyst": "A branchial cleft cyst comes from a persisting pharyngeal cleft and sits laterally, along the front border of the sternocleidomastoid, not in the midline.",
+    "Cystic hygroma": "A cystic hygroma is a lymphatic malformation of the posterior triangle, often linked with Turner syndrome; it transilluminates and does not track with the tongue.",
+    "Enlarged cervical lymph node": "Reactive or malignant nodes lie along the jugular chain lateral to the midline and are not attached to the hyoid, so they do not rise with tongue protrusion."
+   }
+  },
+  {
+   "q": "Which step of thyroid hormone synthesis do methimazole and propylthiouracil both block?",
+   "o": [
+    "Organification and coupling by thyroid peroxidase",
+    "Iodide uptake by the sodium-iodide symporter",
+    "Release of hormone from thyroglobulin",
+    "Conversion of T4 to T3 in tissues"
+   ],
+   "a": 0,
+   "why": "Both thionamides inhibit thyroid peroxidase, the apical enzyme that oxidizes iodide, attaches it to tyrosines on thyroglobulin and couples iodotyrosines into T4 and T3. Only propylthiouracil adds a second, peripheral action on deiodinase.",
+   "w": {
+    "Iodide uptake by the sodium-iodide symporter": "Uptake is blocked by perchlorate and pertechnetate, anions that compete with iodide at the basolateral transporter; thionamides leave trapping intact.",
+    "Release of hormone from thyroglobulin": "Release needs endocytosis and lysosomal proteolysis; large doses of iodide and lithium slow it, which is why iodide helps in thyroid storm.",
+    "Conversion of T4 to T3 in tissues": "Peripheral 5'-deiodinase is inhibited by propylthiouracil but not by methimazole, so this step is not shared by both drugs."
+   }
+  },
+  {
+   "q": "A woman taking oral estrogen has a high total T4. Her free T4 and TSH are normal. Why?",
+   "o": [
+    "Estrogen raises thyroxine-binding globulin",
+    "Estrogen stimulates the TSH receptor",
+    "Estrogen blocks 5'-deiodinase",
+    "Estrogen causes thyroiditis"
+   ],
+   "a": 0,
+   "why": "Estrogen increases hepatic synthesis of thyroxine-binding globulin, so more T4 circulates bound. The gland makes extra hormone until the free fraction, which acts and feeds back, is normal again, so she is euthyroid.",
+   "w": {
+    "Estrogen stimulates the TSH receptor": "hCG, not estrogen, is the hormone that cross-reacts with the TSH receptor, and that would lower TSH rather than leave it normal.",
+    "Estrogen blocks 5'-deiodinase": "Deiodinase is inhibited by propylthiouracil, propranolol, glucocorticoids and amiodarone; blocking it would lower T3 and mildly raise T4, yet free T4 here is normal.",
+    "Estrogen causes thyroiditis": "Thyroiditis releases stored hormone, raising free T4 and suppressing TSH; this patient's free hormone and TSH are both normal."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Where does the thyroid come from, and what can it leave behind?"
+  ],
+  [
+   "p",
+   "The thyroid begins as a bud of **endoderm** in the floor of the primitive pharynx, at a point on the tongue that remains as the **foramen cecum**. Because the bud migrates down the midline to sit in front of the trachea, it trails a tube behind it, the thyroglossal duct, which passes in front of the hyoid bone and normally involutes. Any part of the duct can persist. A {{en5_tgdc|thyroglossal duct cyst}} is therefore a midline neck mass that rises when the patient swallows or protrudes the tongue, because the remnant is still tethered to the tongue base. The lowest remnant often becomes the **pyramidal lobe**, and a bud that never descends is a lingual thyroid at the back of the tongue."
+  ],
+  [
+   "p",
+   "The C cells have a different origin. **Neural crest** cells migrate into the fourth pharyngeal pouch, which forms the **ultimobranchial body**, and this body fuses with the descending thyroid. Its cells become the {{en5_pfc|parafollicular C cells}}, scattered between the follicles, which secrete calcitonin. Because these cells come from neural crest rather than endoderm, their tumor, medullary carcinoma, secretes calcitonin and behaves like other neuroendocrine tumors instead of making thyroglobulin."
+  ],
+  [
+   "f",
+   "en5_embryo"
+  ],
+  [
+   "call",
+   "trap",
+   "Midline versus lateral neck masses",
+   "A mass that moves with tongue protrusion sits in the midline because it hangs from the thyroglossal duct track. A **branchial cleft cyst** lies laterally along the front of the sternocleidomastoid, and a cystic hygroma sits in the posterior triangle. Before removing a lump at the tongue base, confirm that thyroid tissue exists in the neck, because a lingual thyroid can be the only functioning gland."
+  ],
+  [
+   "h",
+   "How does the follicle build T4 and T3, and which drug blocks each step?"
+  ],
+  [
+   "p",
+   "Each follicle is a ring of cuboidal cells around a lake of colloid, the stored protein **thyroglobulin**. TSH, acting through a Gs-coupled receptor that raises cAMP, drives every step. The {{en5_nis|sodium-iodide symporter}} on the basolateral membrane traps iodide using the sodium gradient, and perchlorate and pertechnetate compete with iodide there. At the apical membrane, {{en5_tpo|thyroid peroxidase}} oxidizes iodide, attaches it to tyrosines on thyroglobulin to make MIT and DIT, and then performs **coupling**: DIT plus DIT gives T4, and MIT plus DIT gives T3. The hormone stays attached to thyroglobulin until TSH triggers endocytosis, and lysosomal proteases cut T4 and T3 free for secretion. Because thionamides block thyroid peroxidase, they stop new synthesis but not the release of weeks of stored hormone."
+  ],
+  [
+   "f",
+   "en5_synthesis"
+  ],
+  [
+   "t",
+   [
+    "Step",
+    "Where it happens",
+    "What blocks it"
+   ],
+   [
+    [
+     "Iodide trapping",
+     "Basolateral membrane, sodium-iodide symporter",
+     "Perchlorate, pertechnetate"
+    ],
+    [
+     "Oxidation, organification, coupling",
+     "Apical membrane, thyroid peroxidase",
+     "Methimazole, propylthiouracil; a large iodide load"
+    ],
+    [
+     "Release from thyroglobulin",
+     "Endocytosis, then lysosomal proteolysis",
+     "Iodide in large doses, lithium"
+    ],
+    [
+     "T4 to T3 conversion",
+     "Liver, kidney and target tissues",
+     "Propylthiouracil, propranolol, glucocorticoids, amiodarone"
+    ]
+   ]
+  ],
+  [
+   "steps",
+   [
+    "From iodide in the blood to T3 in the nucleus",
+    [
+     [
+      "Trap iodide at the base of the cell",
+      "The symporter moves two sodium ions with each iodide, so the sodium gradient concentrates iodide inside the follicular cell far above its plasma level."
+     ],
+     [
+      "Oxidize and organify",
+      "Thyroid peroxidase oxidizes iodide and attaches it to tyrosine residues on thyroglobulin, giving monoiodotyrosine (MIT) and diiodotyrosine (DIT)."
+     ],
+     [
+      "Couple the iodotyrosines",
+      "The same enzyme joins two DIT residues into T4, or one MIT and one DIT into T3, while both remain part of thyroglobulin in the colloid."
+     ],
+     [
+      "Release on demand",
+      "TSH triggers endocytosis of colloid; lysosomes digest thyroglobulin and free T4 and T3, which leave the cell, mostly as T4."
+     ],
+     [
+      "Activate in tissues",
+      "5'-deiodinase removes one outer-ring iodine and turns T4 into T3, the form that binds the nuclear receptor with about ten times the affinity."
+     ]
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Iodide itself regulates the gland. A sudden large iodide load, from iodinated contrast, amiodarone or kelp, briefly shuts down organification, the {{en5_wc|Wolff-Chaikoff effect}}, which protects against making too much hormone. A healthy gland escapes within days, but a gland already damaged by Hashimoto thyroiditis may not escape and becomes hypothyroid. The opposite response, the **Jod-Basedow** phenomenon, occurs when an iodine-deficient patient with autonomous nodules receives iodine: the nodules ignore TSH, so they turn the new substrate straight into excess hormone."
+  ],
+  [
+   "call",
+   "key",
+   "T4 is the product; T3 is the hormone",
+   "The gland secretes about 80 percent T4 and 20 percent T3, and more than 99 percent of both circulates bound to proteins. Tissue {{en5_deiod|5'-deiodinase}} converts T4 into T3, which binds the nuclear receptor with roughly ten times the affinity, so T4 acts as a long-lived reservoir. Removing an inner-ring iodine instead makes {{en5_rt3|reverse T3}}, which is inactive."
+  ],
+  [
+   "h",
+   "What does T3 do once it reaches the nucleus?"
+  ],
+  [
+   "p",
+   "T3 enters cells through membrane transporters and binds thyroid hormone receptors already sitting on DNA, so it changes which genes are transcribed. It induces **Na+/K+-ATPase**, and pumping sodium burns ATP and oxygen, so basal metabolic rate and heat production rise. It increases **beta-1** adrenergic receptors in the heart, so heart rate, contractility and cardiac output climb. It drives glycogenolysis, gluconeogenesis and lipolysis, raises LDL-receptor expression and lowers cholesterol, and acts with growth hormone on bone growth. In the fetus and infant it is essential for brain maturation, which is why untreated congenital hypothyroidism causes permanent intellectual disability."
+  ],
+  [
+   "why",
+   "Why does a thyrotoxic patient have a fast pulse that settles quickly with propranolol?",
+   "T3 raises the number of beta-1 adrenergic receptors on cardiac myocytes, so ordinary levels of norepinephrine and epinephrine now produce a larger rise in heart rate and contractility. The tachycardia, tremor and anxiety are therefore amplified adrenergic signaling, and blocking the receptor removes them within hours, long before the hormone level falls. Propranolol adds a small second benefit at high doses, because it also inhibits 5'-deiodinase and lowers conversion of T4 to T3. The hormone excess itself is untouched, so a beta-blocker controls symptoms while other treatment fixes the cause."
+  ],
+  [
+   "h",
+   "How do TSH and free T4 together locate the problem?"
+  ],
+  [
+   "p",
+   "Free T4, not bound T4, acts on the pituitary thyrotrophs and hypothalamus through **negative feedback**, and TSH answers small changes in free hormone with large opposite changes. That makes TSH the best single screening test when the pituitary is healthy. A high TSH with a low free T4 is primary hypothyroidism, and a low TSH with a high free T4 is primary hyperthyroidism. When TSH is abnormal but free T4 is still normal, the disease is **subclinical**: a high TSH marks subclinical hypothyroidism, and a low TSH marks subclinical hyperthyroidism, or **T3 toxicosis** if T3 is high. If TSH and free T4 move in the same direction, the problem sits above the gland."
+  ],
+  [
+   "f",
+   "en5_tft"
+  ],
+  [
+   "t",
+   [
+    "Pattern",
+    "TSH",
+    "Free T4",
+    "What it means"
+   ],
+   [
+    [
+     "Primary hypothyroidism",
+     "High",
+     "Low",
+     "The gland fails, so the pituitary brake is released"
+    ],
+    [
+     "Subclinical hypothyroidism",
+     "High",
+     "Normal",
+     "Early gland failure; TSH rises first"
+    ],
+    [
+     "Primary hyperthyroidism",
+     "Low",
+     "High",
+     "An autonomous or stimulated gland suppresses TSH"
+    ],
+    [
+     "Subclinical hyperthyroidism",
+     "Low",
+     "Normal, with normal T3",
+     "Mild excess; a high T3 instead means T3 toxicosis"
+    ],
+    [
+     "Central hypothyroidism",
+     "Low or inappropriately normal",
+     "Low",
+     "Pituitary or hypothalamic failure"
+    ],
+    [
+     "TSH-secreting adenoma",
+     "High or normal",
+     "High",
+     "The pituitary drives the gland"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "A normal TSH does not rule out central hypothyroidism",
+   "In **central hypothyroidism**, damaged thyrotrophs release too little TSH, or TSH with poor biological activity, so the level is low or **inappropriately normal** while free T4 is low. Screening with TSH alone would call the patient euthyroid. When pituitary disease, pituitary surgery, Sheehan syndrome or other failing axes are present, measure free T4 directly."
+  ],
+  [
+   "h",
+   "Why can total T4 be abnormal in a patient who is euthyroid?"
+  ],
+  [
+   "p",
+   "About 70 percent of T4 rides on {{en5_tbg|thyroxine-binding globulin}} (TBG), made in the liver. Estrogen raises TBG, so in **pregnancy** or with oral contraceptives more hormone is bound; the gland makes extra until free T4 is normal again, leaving **total T4** high with a normal free T4 and TSH. Androgens, glucocorticoids, nephrotic syndrome and liver failure lower TBG, so total T4 falls while the patient stays euthyroid. Pregnancy adds a second effect: hCG shares its alpha subunit with TSH and weakly stimulates the TSH receptor, so TSH dips in the first trimester, when hCG peaks."
+  ],
+  [
+   "p",
+   "Severe illness also changes the numbers without thyroid disease. In sepsis, starvation or after major surgery, cytokines and cortisol inhibit 5'-deiodinase, so T3 falls and reverse T3 rises, while TSH and free T4 stay normal or slightly low. This **sick euthyroid** state, also called nonthyroidal illness, needs no hormone. To ask whether the gland is making hormone at all, the **radioactive iodine uptake** test measures how much tracer the gland traps: uptake is high when the gland overproduces and low when hormone leaks from an injured gland or comes from outside. Under the microscope, a resting follicle has flat to cuboidal cells and abundant colloid, while a stimulated follicle has tall columnar cells and scalloped colloid."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_en5_tbg",
+    "q": "A patient with nephrotic syndrome has a low total T4 but a normal free T4 and TSH. Which reasoning is correct?",
+    "o": [
+     "The low total T4 proves the gland is failing, so levothyroxine should be started before TSH rises",
+     "Urinary loss of thyroxine-binding globulin lowers bound hormone only; free T4 drives feedback, so TSH stays normal and the patient is euthyroid",
+     "Protein loss must also remove TSH in the urine, so a normal TSH here hides central hypothyroidism",
+     "Less binding protein frees more hormone, so the patient must be mildly thyrotoxic despite the numbers"
+    ],
+    "a": 1,
+    "why": "Thyroxine-binding globulin leaks through the damaged glomerulus, so the amount of bound T4 falls. Bound hormone is only a carrier pool; the free fraction enters cells and feeds back on the pituitary. As free T4 dips, TSH briefly rises and the gland makes enough extra hormone to restore free T4, and TSH then settles back to normal. The total is low, the free level and TSH are normal, and the patient is euthyroid, so no treatment is needed. Central hypothyroidism would lower free T4 itself."
+   }
+  ],
+  [
+   "why",
+   "Why does a woman taking levothyroxine need a larger dose as soon as she becomes pregnant?",
+   "Three changes raise the demand at once. Estrogen increases thyroxine-binding globulin, so more of each dose is bound and a larger total pool is needed to keep free T4 normal. The placenta inactivates some maternal T4 and plasma volume expands. Most important, the fetal thyroid does not start working until about 10 to 12 weeks, so early brain development depends on maternal T4 crossing the placenta. A healthy gland simply makes more, but a woman without a working gland cannot, so her dose is raised by roughly 30 percent at the first positive test and TSH is checked every few weeks."
+  ],
+  [
+   "vis",
+   "en5"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these are steps or controls in thyroid hormone synthesis and release?",
+  "items": [
+   [
+    "Iodide trapping by the sodium-iodide symporter",
+    1
+   ],
+   [
+    "Oxidation of iodide by thyroid peroxidase",
+    1
+   ],
+   [
+    "Iodination of tyrosines on thyroglobulin",
+    1
+   ],
+   [
+    "Coupling of DIT with DIT to form T4",
+    1
+   ],
+   [
+    "Coupling of MIT with DIT to form T3",
+    1
+   ],
+   [
+    "TSH stimulation through a Gs-coupled receptor",
+    1
+   ],
+   [
+    "Endocytosis and proteolysis of colloid",
+    1
+   ],
+   [
+    "Peripheral conversion of T4 to T3 by 5'-deiodinase",
+    1
+   ],
+   [
+    "Transient block of organification by excess iodide",
+    1
+   ],
+   [
+    "Hydroxylation of tyrosine to L-DOPA",
+    0
+   ],
+   [
+    "Aromatization of androgens to estrogens",
+    0
+   ],
+   [
+    "Cleavage of proopiomelanocortin",
+    0
+   ],
+   [
+    "Calcitonin secretion by follicular cells",
+    0
+   ],
+   [
+    "Binding of T4 to a cell-surface receptor",
+    0
+   ]
+  ]
+ }
+}

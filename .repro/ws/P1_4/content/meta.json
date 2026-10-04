@@ -1,0 +1,160 @@
+{
+ "key": "reproendo",
+ "name": "Reproductive and Endocrine",
+ "short": "Repro-Endo block",
+ "title": "The Repro-Endo Path",
+ "palette": {
+  "a1": "#8A2E62",
+  "a2": "#1F6F68",
+  "a1Dark": "#E39AC6",
+  "a2Dark": "#7FD0C5"
+ },
+ "examKey": "reproendo.examDate",
+ "examName": "your exam",
+ "examLabel": "Exam date",
+ "examDefault": "2026-10-09",
+ "examNote": "Defaults to the BSE 638 final (Fri 9 Oct 2026). Change it to your Step 1 date when that is the next exam.",
+ "finalN": 40,
+ "secsPerQ": 90,
+ "series": "step1",
+ "blocks": [
+  {
+   "id": "rpanat",
+   "n": "Reproductive anatomy",
+   "topics": [
+    "rp1",
+    "rp2",
+    "rp3"
+   ]
+  },
+  {
+   "id": "rpdev",
+   "n": "Development: embryo, sex and puberty",
+   "topics": [
+    "rp4",
+    "rp5",
+    "rp6",
+    "rp7"
+   ]
+  },
+  {
+   "id": "rpcycle",
+   "n": "The cycle and its disorders",
+   "topics": [
+    "rp8",
+    "rp9",
+    "rp10",
+    "rp11"
+   ]
+  },
+  {
+   "id": "rpgyn",
+   "n": "Female genital tract pathology",
+   "topics": [
+    "rp12",
+    "rp13",
+    "rp14",
+    "rp15"
+   ]
+  },
+  {
+   "id": "rpinf",
+   "n": "Sexually transmitted and perinatal infections",
+   "topics": [
+    "rp16",
+    "rp17",
+    "rp18"
+   ]
+  },
+  {
+   "id": "rpmale",
+   "n": "The male reproductive system",
+   "topics": [
+    "rp19",
+    "rp20",
+    "rp21",
+    "rp22"
+   ]
+  },
+  {
+   "id": "rpbreast",
+   "n": "The breast",
+   "topics": [
+    "rp23",
+    "rp24"
+   ]
+  },
+  {
+   "id": "rppreg",
+   "n": "Pregnancy",
+   "topics": [
+    "rp25",
+    "rp30",
+    "rp26",
+    "rp27",
+    "rp28"
+   ]
+  },
+  {
+   "id": "rpcare",
+   "n": "Whole-person reproductive care",
+   "topics": [
+    "rp29"
+   ]
+  },
+  {
+   "id": "enaxes",
+   "n": "Hormones and the pituitary",
+   "topics": [
+    "en1",
+    "en2",
+    "en3",
+    "en4"
+   ]
+  },
+  {
+   "id": "enthy",
+   "n": "Thyroid",
+   "topics": [
+    "en5",
+    "en6",
+    "en7"
+   ]
+  },
+  {
+   "id": "enca",
+   "n": "Calcium, parathyroid and bone",
+   "topics": [
+    "en8",
+    "en9",
+    "en10"
+   ]
+  },
+  {
+   "id": "enadr",
+   "n": "Adrenal",
+   "topics": [
+    "en11",
+    "en12",
+    "en13"
+   ]
+  },
+  {
+   "id": "enpanc",
+   "n": "Endocrine pancreas and diabetes",
+   "topics": [
+    "en14",
+    "en15",
+    "en16",
+    "en17"
+   ]
+  },
+  {
+   "id": "enneo",
+   "n": "Endocrine tumor syndromes",
+   "topics": [
+    "en18"
+   ]
+  }
+ ]
+}

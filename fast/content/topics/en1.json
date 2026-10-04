@@ -1,0 +1,313 @@
+{
+ "id": "en1",
+ "t": "How hormones work: receptors, messengers, transport and feedback",
+ "sub": "Where a hormone's receptor sits, what carries it in the blood, and how feedback turns two lab values into a location.",
+ "yld": "mid",
+ "exam": "lo",
+ "mins": 12,
+ "bp": [
+  "BP-en1-01",
+  "BP-en1-02",
+  "BP-en1-03",
+  "BP-en1-04",
+  "BP-en1-05",
+  "BP-en1-06",
+  "BP-en1-07",
+  "BP-en1-08",
+  "BP-en1-09",
+  "BP-en1-10",
+  "BP-en1-11",
+  "BP-en1-12"
+ ],
+ "obj": [],
+ "pretest": [
+  {
+   "q": "A hormone raises cAMP inside its target cell. Which enzyme did its receptor's G protein switch on?",
+   "o": [
+    "Adenylyl cyclase",
+    "Phospholipase C",
+    "Guanylyl cyclase",
+    "Janus kinase"
+   ],
+   "a": 0,
+   "why": "A Gs protein stimulates adenylyl cyclase, which turns ATP into cAMP; cAMP then activates protein kinase A. FSH, LH, ACTH, TSH, PTH and glucagon all signal this way.",
+   "w": {
+    "Phospholipase C": "Phospholipase C is the Gq enzyme; it splits a membrane lipid into IP3 and DAG, raising calcium rather than cAMP.",
+    "Guanylyl cyclase": "Guanylyl cyclase makes cGMP, the messenger for natriuretic peptides and nitric oxide, and it is not driven by Gs proteins.",
+    "Janus kinase": "Janus kinase is recruited by receptors that lack their own kinase, such as the growth hormone and prolactin receptors, and it phosphorylates STAT proteins."
+   }
+  },
+  {
+   "q": "Estrogen therapy raises the liver's output of binding globulins. Once a new steady state is reached, what has happened to the free hormone levels?",
+   "o": [
+    "They are back to normal",
+    "They rose and stay high",
+    "They fell and stay low",
+    "They doubled along with the totals"
+   ],
+   "a": 0,
+   "why": "More binding protein briefly lowers the free fraction, so the trophic hormone rises and the gland secretes more until the free level is normal again. Only the total level stays high.",
+   "w": {
+    "They rose and stay high": "Extra carrier protein soaks up hormone rather than releasing it, so the free level dips first; in a healthy axis it never climbs above normal.",
+    "They fell and stay low": "The dip is transient, because the pituitary senses the free fraction and drives the gland harder until that fraction is restored.",
+    "They doubled along with the totals": "Only the bound pool grows; the gland adds just enough hormone to refill the unbound pool, so totals rise while free levels settle at normal."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Why does a hormone's chemistry decide where its receptor sits?"
+  ],
+  [
+   "p",
+   "A hormone's chemistry decides almost everything else about it. **Peptide** hormones such as insulin, ACTH and PTH are water-soluble chains of amino acids, so they are made ahead of time, stored in secretory granules and released by exocytosis when the cell is stimulated. Because they dissolve in plasma, most travel unbound and are cleared quickly, which gives them a **half-life** of minutes. They cannot cross the lipid membrane, so their receptors sit on the cell surface and act through second messengers within seconds. **Steroid** hormones are the opposite. They are lipid-soluble derivatives of cholesterol, so they cannot be stored and must be made on demand; they travel bound to carrier proteins, last for hours, and cross the membrane to reach receptors inside the cell."
+  ],
+  [
+   "p",
+   "Every steroid begins with the same step. The {{en1_star|StAR}} protein moves cholesterol into the inner mitochondrial membrane, where **desmolase (CYP11A1)**, the side-chain cleavage enzyme, converts it to **pregnenolone**. Delivery by StAR is the rate-limiting step, and it is the step that trophic hormones speed up: ACTH does this in the adrenal cortex and LH does it in Leydig and theca cells, both through cAMP. Amine hormones split between the two patterns. Catecholamines behave like peptides, stored in granules and acting on surface receptors, while thyroid hormone behaves like a steroid, carried on binding proteins and acting on a receptor in the nucleus."
+  ],
+  [
+   "t",
+   [
+    "Class",
+    "Examples",
+    "Storage and half-life",
+    "Carried in blood",
+    "Receptor"
+   ],
+   [
+    [
+     "Peptide",
+     "Insulin, ACTH, PTH, ADH",
+     "Stored in granules; minutes",
+     "Mostly free",
+     "Cell surface"
+    ],
+    [
+     "Steroid",
+     "Cortisol, aldosterone, estradiol, testosterone",
+     "Made on demand; hours",
+     "Bound to globulins and albumin",
+     "Inside the cell"
+    ],
+    [
+     "Thyroid hormone (amine)",
+     "T4 and T3",
+     "Stored in colloid; T4 lasts about a week",
+     "Mostly bound, largely to TBG",
+     "Nucleus"
+    ],
+    [
+     "Catecholamine (amine)",
+     "Epinephrine, norepinephrine",
+     "Stored in granules; minutes",
+     "Loosely bound or free",
+     "Cell surface"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Which second messenger does each membrane receptor use?"
+  ],
+  [
+   "p",
+   "Most surface receptors for peptides are coupled to G proteins, and the G protein decides the messenger. A **Gs protein** activates **adenylyl cyclase**, which turns ATP into cAMP; cAMP then activates **protein kinase A**, which phosphorylates enzymes and channels. FSH, LH, ACTH, TSH, CRH, GHRH, hCG, MSH, PTH, calcitonin, glucagon and ADH at its V2 receptor all work this way. A Gi protein does the reverse and lowers cAMP, which is how dopamine at D2 receptors and somatostatin switch cells off. A Gq protein activates phospholipase C, which splits a membrane lipid into IP3 and DAG. IP3 releases calcium from the endoplasmic reticulum, and DAG activates protein kinase C. GnRH, TRH, oxytocin, ADH at its V1 receptor, angiotensin II, histamine at H1 receptors and gastrin use this pathway."
+  ],
+  [
+   "f",
+   "en1_receptors"
+  ],
+  [
+   "p",
+   "Three other membrane systems skip the classic G proteins. The receptors for insulin, IGF-1, EGF, FGF and PDGF are themselves a **receptor tyrosine kinase**: hormone binding makes two receptors pair up and phosphorylate each other, which starts the signal. Receptors for GH, prolactin, EPO and many cytokines have no kinase of their own, so they recruit Janus kinase and use the {{en1_jakstat|JAK/STAT pathway}} to carry the signal to the nucleus. Atrial and brain natriuretic peptides (ANP, BNP) bind a receptor that is itself a guanylyl cyclase, and nitric oxide activates a soluble one; both raise **cGMP**, which relaxes smooth muscle. Steroids, thyroid hormone and calcitriol (vitamin D) bind **intracellular receptors**, many of them nuclear, that act as transcription factors on {{en1_hre|response elements}} in DNA, which is why their effects start over hours and outlast the hormone."
+  ],
+  [
+   "call",
+   "key",
+   "One hormone, two receptors, two messengers",
+   "The receptor, not the hormone, picks the messenger. ADH acting on **V2 receptors** in the collecting duct raises cAMP and inserts aquaporin-2 water channels, while the same ADH acting on **V1 receptors** in vascular smooth muscle raises IP3 and calcium and causes vasoconstriction. Desmopressin is selective for V2, so it concentrates urine with little effect on blood pressure."
+  ],
+  [
+   "t",
+   [
+    "Pathway",
+    "Enzyme chain",
+    "Hormones"
+   ],
+   [
+    [
+     "Gs",
+     "Adenylyl cyclase, cAMP, protein kinase A",
+     "FSH, LH, ACTH, TSH, PTH, glucagon, ADH at V2"
+    ],
+    [
+     "Gi",
+     "Adenylyl cyclase inhibited, cAMP falls",
+     "Dopamine at D2, somatostatin"
+    ],
+    [
+     "Gq",
+     "Phospholipase C, then IP3 with calcium and DAG with protein kinase C",
+     "GnRH, TRH, oxytocin, ADH at V1, angiotensin II"
+    ],
+    [
+     "Receptor tyrosine kinase",
+     "Receptor phosphorylates itself",
+     "Insulin, IGF-1, EGF, FGF, PDGF"
+    ],
+    [
+     "JAK/STAT",
+     "Receptor-associated Janus kinase, then STAT",
+     "GH, prolactin, EPO, cytokines"
+    ],
+    [
+     "cGMP",
+     "Membrane or soluble guanylyl cyclase",
+     "ANP, BNP, nitric oxide"
+    ],
+    [
+     "Intracellular receptor",
+     "Hormone-receptor complex binds a response element",
+     "Steroids, T3, calcitriol"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Why does the free hormone, not the total, run the body?"
+  ],
+  [
+   "p",
+   "Steroids and thyroid hormone travel mostly bound to carrier proteins made by the liver. {{en1_shbg|Sex hormone-binding globulin}} (**SHBG**) carries testosterone and estradiol, thyroxine-binding globulin (**TBG**) carries T4, and cortisol-binding globulin (CBG) carries cortisol. Only the small unbound portion, the **free hormone**, can leave the blood, act on tissues and feed back on the pituitary. Estrogen, from pregnancy or an oral contraceptive, raises SHBG, TBG and CBG. More binding protein briefly lowers the free fraction, so the trophic hormone rises and the gland secretes more until the free level is normal again. The result is a high total level with a normal free level, a normal trophic hormone and a patient without symptoms."
+  ],
+  [
+   "call",
+   "trap",
+   "A high total level is not a high hormone state",
+   "A pregnant woman or a woman taking an oral contraceptive often has a high **total T4** and a high **total cortisol**, yet she is neither hyperthyroid nor cushingoid, because her free levels and her TSH and ACTH are normal. The reverse happens when binding proteins fall, as in nephrotic syndrome or androgen use: totals drop while free levels stay normal. Read the free level."
+  ],
+  [
+   "h",
+   "How does feedback turn a lab panel into a location?"
+  ],
+  [
+   "p",
+   "Most axes run on **negative feedback**: the target hormone inhibits both the hypothalamus and the pituitary, so its own level holds the {{en1_trophic|trophic hormone}} in check. That loop lets two numbers locate a lesion. In **primary** failure the gland itself fails, the brake comes off, and the trophic hormone rises while the target hormone falls: a high TSH with a low free T4, or a high ACTH with a low cortisol in Addison disease. In **secondary** failure the pituitary cannot make the trophic hormone, so both numbers are low, or the trophic hormone is inappropriately normal for a low target level. Failure of the hypothalamus, sometimes called tertiary, gives the same low pattern."
+  ],
+  [
+   "p",
+   "Three more patterns complete the picture. When a gland makes hormone on its own, the excess **suppresses** the trophic hormone: a cortisol-secreting adrenal adenoma gives a high cortisol with a low ACTH, and Graves disease gives a high free T4 with a low TSH. When a tumor makes the trophic hormone itself, both numbers rise together, as in Cushing disease or a TSH-secreting pituitary adenoma. Finally, {{en1_resist|end-organ resistance}} gives a high hormone level with signs of deficiency, because the target cells cannot respond: androgen insensitivity shows high testosterone with high LH, pseudohypoparathyroidism shows high PTH with low calcium, and Laron syndrome shows high GH with low IGF-1."
+  ],
+  [
+   "f",
+   "en1_feedback"
+  ],
+  [
+   "steps",
+   [
+    "Reading any axis from two numbers, in order",
+    [
+     [
+      "Decide whether the tissues show too much or too little effect",
+      "Start with the clinical picture and the target hormone, because the pattern you look for depends on whether the tissues are over-stimulated or under-stimulated."
+     ],
+     [
+      "Check the direction of the trophic hormone",
+      "If it moves opposite to the target hormone, the gland is the problem; if both move the same way, look upstream at the pituitary or hypothalamus, or for a tumor making the trophic hormone."
+     ],
+     [
+      "Look for a hormone that is high while the tissue acts deficient",
+      "That combination means the receptor or its signaling has failed, so the body keeps raising the hormone without getting a response."
+     ],
+     [
+      "Confirm with a dynamic test",
+      "Suppression tests prove autonomy, because a normal axis shuts off when extra hormone is given, while stimulation tests prove failure, because a damaged gland cannot respond to its trophic hormone."
+     ]
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Two well-known loops run the other way. In **positive feedback** a hormone drives its own further release until an outside event ends the loop. Estradiol that stays high for about two days switches the pituitary from inhibition to stimulation and produces the mid-cycle **LH surge** that triggers ovulation. During labor, stretch of the cervix releases oxytocin, oxytocin strengthens contractions, and stronger contractions stretch the cervix further. This is the Ferguson reflex, and it ends only with delivery."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_en1_resist",
+    "q": "A 46,XY patient with female external genitalia has a high testosterone and a high LH. Which reasoning best explains both levels?",
+    "o": [
+     "A high LH means the testes have failed, so the high testosterone must be coming from the adrenal glands instead",
+     "Both hormones are high, so an LH-secreting pituitary tumor must be driving the testes to overproduce testosterone",
+     "Testosterone always masculinizes the genitalia, so the female appearance must come from a lack of estrogen rather than androgen",
+     "Normal testosterone should hold LH down, so high levels of both with a female phenotype mean the androgen receptor cannot respond"
+    ],
+    "a": 3,
+    "why": "Negative feedback means that a normal testosterone level keeps LH low. When testosterone and LH are both high, either a tumor is driving the testes or the body cannot sense the testosterone. The tissues settle it: a trophic tumor would produce signs of androgen excess, whereas female genitalia in a 46,XY person show that the androgen receptor is not responding. The hypothalamus and pituitary carry the same defective receptor, so they read the level as low and keep LH high. This is end-organ resistance, the same logic as pseudohypoparathyroidism and Laron syndrome."
+   }
+  ],
+  [
+   "why",
+   "Why does a woman taking an oral contraceptive have a high total cortisol but no signs of Cushing syndrome?",
+   "Estrogen increases the liver's production of cortisol-binding globulin. With more carrier protein in the blood, more cortisol circulates bound, and the free fraction dips for a short time. The hypothalamus and pituitary sense only free cortisol, so ACTH rises slightly and the adrenal glands secrete more cortisol until the free level is back to normal. At that new steady state the total cortisol is high, but the free cortisol, the part that acts on tissues, is normal, and so is ACTH. Because her tissues see a normal amount of hormone, she develops none of the features of cortisol excess. Tests that measure free cortisol, such as late-night salivary cortisol or 24-hour urine free cortisol, avoid the trap."
+  ],
+  [
+   "vis",
+   "en1"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these hormones act through a G protein-coupled receptor on the cell surface?",
+  "items": [
+   [
+    "TSH acting on the thyroid",
+    1
+   ],
+   [
+    "Glucagon acting on the liver",
+    1
+   ],
+   [
+    "GnRH acting on gonadotrophs",
+    1
+   ],
+   [
+    "Oxytocin acting on the uterus",
+    1
+   ],
+   [
+    "ADH acting at V2 receptors",
+    1
+   ],
+   [
+    "PTH acting on the kidney",
+    1
+   ],
+   [
+    "Dopamine acting at D2 receptors",
+    1
+   ],
+   [
+    "Insulin acting on muscle",
+    0
+   ],
+   [
+    "Growth hormone acting on the liver",
+    0
+   ],
+   [
+    "Cortisol acting on the liver",
+    0
+   ],
+   [
+    "T3 acting on the heart",
+    0
+   ],
+   [
+    "ANP acting on the kidney",
+    0
+   ]
+  ]
+ }
+}

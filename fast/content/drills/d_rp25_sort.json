@@ -1,0 +1,26 @@
+{
+ "id": "d_rp25_sort",
+ "c": "rp25",
+ "kind": "sort",
+ "t": "Up or down in normal pregnancy?",
+ "tags": ["normal-vs-pathologic"],
+ "a": "Rises",
+ "bb": "Falls",
+ "key": "Ask what drives each value: hormonal vasodilation lowers resistance and pressure, volume expansion raises output and dilutes the blood, progesterone lowers carbon dioxide, and higher filtration lowers creatinine.",
+ "items": [
+  ["Cardiac output", "a", "Expanded plasma volume raises preload and stroke volume, and heart rate climbs later, for a 40 to 50 percent rise."],
+  ["Plasma volume", "a", "Renin, angiotensin and aldosterone retain sodium and water, expanding plasma volume by about 40 to 50 percent."],
+  ["Tidal volume", "a", "Progesterone sensitizes the respiratory center to carbon dioxide, so each breath gets deeper while the rate barely changes."],
+  ["Glomerular filtration rate", "a", "Renal plasma flow rises early in pregnancy, lifting filtration by about half."],
+  ["Fibrinogen", "a", "Estrogen drives the liver to make more fibrinogen and clotting factors, a hypercoagulable state that limits blood loss at delivery."],
+  ["Total T4", "a", "Estrogen raises thyroxine-binding globulin, so more T4 circulates bound while the free fraction stays normal."],
+  ["Prolactin", "a", "Estrogen stimulates pituitary lactotrophs, which multiply and enlarge the gland as prolactin climbs toward term."],
+  ["Systemic vascular resistance", "b", "Progesterone, estrogen, relaxin and nitric oxide dilate arterioles, and the placenta adds a low-resistance circuit."],
+  ["Blood pressure in the second trimester", "b", "Resistance falls more than output rises, so pressure reaches its nadir in the second trimester."],
+  ["Functional residual capacity", "b", "The uterus pushes the diaphragm up about 4 cm, shrinking the air left in the lungs at rest."],
+  ["Arterial PaCO2", "b", "Ventilation outpaces carbon dioxide production, so PaCO2 falls to about 30 mm Hg."],
+  ["Serum bicarbonate", "b", "The kidney excretes bicarbonate to compensate for the respiratory alkalosis, keeping pH only slightly alkaline."],
+  ["Serum creatinine", "b", "Filtration rises about 50 percent, so creatinine falls to roughly 0.4 to 0.8 mg/dL."],
+  ["Hemoglobin concentration", "b", "Plasma expands more than red cell mass, so hemoglobin concentration falls even though red cells increase."]
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp2",
+ "hash": "6016c6d3a95c",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:01:36",
+ "gaps": [
+  {
+   "gid": "GAP-rp2-01",
+   "concept": "Above the pectinate line, the anal canal receives superior rectal arterial blood; below it, inferior rectal branches of the internal pudendal artery.",
+   "why_tested": "A vascular diagram asks which artery supplies an anal lesion on either side of the line.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp2-02",
+   "concept": "Superior rectal veins drain to the portal system; inferior rectal veins drain to the systemic circulation, forming a portosystemic anastomosis.",
+   "why_tested": "A stem asks for the venous drainage of a lesion above or below the pectinate line.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp2-03",
+   "concept": "The upper anal canal derives from hindgut endoderm and has columnar epithelium; the lower canal derives from proctodeal ectoderm and has squamous epithelium.",
+   "why_tested": "Histology or embryology identifies which side of the pectinate line is shown.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp2-04",
+   "concept": "The internal anal sphincter is involuntary smooth muscle; the external anal sphincter is voluntary skeletal muscle supplied by the inferior rectal nerve.",
+   "why_tested": "An injury causes loss of voluntary anal continence while internal sphincter tone persists.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp2-05",
+   "concept": "Puborectalis maintains the anorectal angle; it is part of the levator ani, which forms the pelvic diaphragm with coccygeus.",
+   "why_tested": "A pelvic floor injury or diagram asks which muscle supports continence.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp2-06",
+   "concept": "The perineal body anchors pelvic floor muscles; obstetric tears can weaken support and cause pelvic organ prolapse.",
+   "why_tested": "Postpartum prolapse follows a tear between the vaginal opening and anus.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp2-07",
+   "concept": "The internal pudendal artery leaves the pelvis through the greater sciatic foramen, enters through the lesser sciatic foramen, and supplies the perineum.",
+   "why_tested": "A dissection or vascular injury near the ischial spine asks for the vessel involved.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp2-08",
+   "concept": "The dorsal nerve of the penis or clitoris is a pudendal branch carrying somatic sensation from the glans.",
+   "why_tested": "A genital sensory deficit is localized despite preserved autonomic erectile function.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp2-09",
+   "concept": "The ilioinguinal nerve supplies the anterior scrotum or labia majora; pudendal branches supply most posterior external genital skin.",
+   "why_tested": "Sensory loss after inguinal surgery must be distinguished from pudendal injury.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp2-10",
+   "concept": "Penile shaft skin drains to superficial inguinal nodes; the glans and deep erectile tissues drain chiefly to deep inguinal or pelvic nodes.",
+   "why_tested": "A penile lesion’s location predicts the first affected lymph nodes.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp2-11",
+   "concept": "The uterine fundus can drain along the round ligament to superficial inguinal nodes.",
+   "why_tested": "Inguinal adenopathy accompanies a fundal uterine lesion despite its pelvic location.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp2-12",
+   "concept": "The prostate drains chiefly to internal iliac, obturator, and sacral lymph nodes.",
+   "why_tested": "A prostate malignancy has regional pelvic lymphadenopathy.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp2-13",
+   "concept": "Nitric oxide raises cavernosal cGMP, relaxing smooth muscle and increasing arterial inflow; expanding corpora compress venous outflow.",
+   "why_tested": "An erectile dysfunction stem asks for the signaling or vascular event producing erection.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp2-14",
+   "concept": "PDE5 inhibitors preserve cavernosal cGMP; concurrent nitrates can cause severe hypotension.",
+   "why_tested": "A patient develops hypotension after combining an erectile dysfunction drug with nitroglycerin.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp2-15",
+   "concept": "Injury to cavernous autonomic nerves during prostate surgery can impair erection while pudendal-mediated genital sensation remains intact.",
+   "why_tested": "Postoperative erectile dysfunction occurs without loss of penile sensation.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp2-16",
+   "concept": "A painless unilateral Bartholin duct obstruction causes a cyst; infection produces a tender, fluctuant posterolateral vestibular mass.",
+   "why_tested": "A vulvar swelling vignette asks for the involved structure or cause.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp2-17",
+   "concept": "Failure of urethral fold fusion causes hypospadias, with a ventral urethral opening; epispadias has a dorsal opening and associates with bladder exstrophy.",
+   "why_tested": "A newborn’s urethral opening is displaced, and the stem asks for the defect or associated anomaly.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp2-18",
+   "concept": "Genital tubercle forms penis or clitoris; labioscrotal swellings form scrotum or labia majora; urethral folds form ventral penis or labia minora.",
+   "why_tested": "An embryology diagram asks for male and female external genital homologs.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp2-19",
+   "concept": "Dihydrotestosterone drives male external genital development; 5α-reductase deficiency causes undervirilized genitalia at birth with virilization at puberty.",
+   "why_tested": "A 46,XY child with ambiguous external genitalia develops virilization during adolescence.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp2-20",
+   "concept": "A straddle injury suggests anterior bulbar urethral rupture; blood at the meatus and inability to void are key clues.",
+   "why_tested": "A trauma vignette asks which urethral segment was injured before describing urine spread.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp2-21",
+   "concept": "Rupture of the tunica albuginea during erection causes penile fracture: an audible snap, immediate detumescence, pain, and hematoma.",
+   "why_tested": "A sudden penile injury during intercourse asks for the torn structure.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp2-22",
+   "concept": "Fournier gangrene is rapidly progressive necrotizing infection of perineal fascia, often with pain, crepitus, and relative sparing of the testes.",
+   "why_tested": "A patient with diabetes develops a rapidly spreading, crepitant scrotal and perineal infection.",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp2-1790441986236.jsonl"
+}

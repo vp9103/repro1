@@ -1,0 +1,264 @@
+[
+ {
+  "id": "rp11q01", "d": 1, "tags": ["feedback-logic", "hormone-timeline"], "bp": ["BP-rp11-01"], "obj": ["BICEP-WILLIAMS.5"],
+  "s": "A 53-year-old woman has had no menstrual period for 14 months. She reports hot flashes several times a day and vaginal dryness. She takes no medications, and a pregnancy test is negative. Her physician orders serum hormone levels to illustrate the changes for a teaching conference.",
+  "l": "Which of the following sets of findings is most likely?",
+  "o": ["High FSH, high LH, low estradiol", "Low FSH, low LH, low estradiol", "Normal FSH, normal LH, high prolactin", "High FSH, low LH, high estradiol", "Low FSH, high LH, high testosterone"],
+  "a": 0,
+  "e": "After menopause the ovary has run out of follicles, so granulosa cells no longer secrete estradiol or inhibin B. Losing both negative feedback signals releases the pituitary, and FSH rises most, with LH rising too: **high FSH, high LH, low estradiol**. Low FSH and LH with low estradiol would point to hypothalamic or pituitary failure, a high prolactin to a prolactinoma or drug effect, and a high LH with high testosterone to polycystic ovary syndrome.",
+  "w": {
+   "Low FSH, low LH, low estradiol": "This is hypogonadotropic hypogonadism from hypothalamic amenorrhea or pituitary disease; with failing ovaries the pituitary is released from feedback, so gonadotropins climb instead.",
+   "Normal FSH, normal LH, high prolactin": "Hyperprolactinemia suppresses GnRH and is a menopause mimic worth excluding, but her age, 14 months of amenorrhea and vasomotor symptoms fit ovarian failure.",
+   "High FSH, low LH, high estradiol": "High estradiol would feed back to lower FSH, and it would not cause hot flashes or vaginal dryness, which reflect estrogen deficiency.",
+   "Low FSH, high LH, high testosterone": "A high LH with androgen excess is the pattern of polycystic ovary syndrome in reproductive-age women with irregular cycles and hirsutism."
+  },
+  "et": [["Option", "Level of the defect", "Estradiol feedback", "Typical condition"], [
+   ["High FSH, high LH, low estradiol", "Ovary", "Lost", "Menopause or ovarian insufficiency"],
+   ["Low FSH, low LH, low estradiol", "Hypothalamus or pituitary", "Irrelevant; no drive", "Hypothalamic amenorrhea"],
+   ["Normal FSH, normal LH, high prolactin", "Pituitary lactotrophs", "Prolactin suppresses GnRH", "Prolactinoma"],
+   ["High FSH, low LH, high estradiol", "Not physiologic", "Would lower FSH", "No real condition"],
+   ["Low FSH, high LH, high testosterone", "Ovary and pulse frequency", "Chronic estrone exposure", "Polycystic ovary syndrome"]]],
+  "bl": "Menopause is primary ovarian failure: high FSH, high LH and low estradiol, with FSH the most useful marker.",
+  "ef": "rp11_axis",
+  "pt": {"hl": ["FSH high (best marker)", "Estradiol low", "LH high"], "say": "The lab row of the axis gives the pattern: high FSH, high LH and low estradiol, because depleted follicles no longer feed estradiol and inhibin back to the pituitary."}
+ },
+ {
+  "id": "rp11q02", "d": 2, "tags": ["hormone-synthesis", "unopposed-estrogen"], "bp": ["BP-rp11-01"], "obj": ["BICEP-WILLIAMS.5"],
+  "s": "A 62-year-old woman with a BMI of 41 kg/m2 and type 2 diabetes comes for a routine visit. Her last menstrual period was at age 52, and she has never taken hormone therapy. Transvaginal ultrasonography done for pelvic pressure shows an endometrial stripe thicker than expected for her age. Her physician explains that her body still produces a meaningful amount of estrogen.",
+  "l": "The predominant estrogen in this patient is produced mainly by which process?",
+  "o": ["Aromatization of androstenedione in adipose tissue", "Aromatization of testosterone in granulosa cells", "Secretion of estradiol by the adrenal cortex", "Hepatic conversion of estradiol to estriol", "Placental conversion of fetal DHEA sulfate"],
+  "a": 0,
+  "e": "After menopause the ovary has almost no follicles, so granulosa-cell estradiol disappears. The main estrogen becomes **estrone**, made by aromatase in **adipose tissue** from androstenedione supplied by the adrenal cortex and ovarian stroma. The more fat, the more estrone, which is why obesity keeps estrogen levels higher after menopause and exposes the endometrium to unopposed estrogen, raising her risk of hyperplasia and endometrial cancer. Granulosa-cell aromatization requires follicles she no longer has, and the adrenal cortex secretes androgen precursors, not estradiol.",
+  "w": {
+   "Aromatization of testosterone in granulosa cells": "Granulosa cells aromatize theca androgens only inside growing follicles; ten years after menopause her ovaries have essentially none left.",
+   "Secretion of estradiol by the adrenal cortex": "The adrenal zona reticularis secretes DHEA and androstenedione, precursors that peripheral tissues convert; it does not release meaningful estradiol itself.",
+   "Hepatic conversion of estradiol to estriol": "Estriol is a weak metabolite made in the liver and, in pregnancy, by the placenta; it is not the main estrogen after menopause.",
+   "Placental conversion of fetal DHEA sulfate": "The fetoplacental unit makes estriol from fetal DHEA sulfate only during pregnancy, so this pathway has no relevance to a postmenopausal woman."
+  },
+  "et": [["Option", "Tissue", "Main product", "Active after menopause"], [
+   ["Aromatization of androstenedione in adipose tissue", "Adipose stromal cells", "Estrone", "Yes, more with obesity"],
+   ["Aromatization of testosterone in granulosa cells", "Ovarian follicles", "Estradiol", "No; follicles depleted"],
+   ["Secretion of estradiol by the adrenal cortex", "Zona reticularis", "DHEA and androstenedione", "Yes, but not estradiol"],
+   ["Hepatic conversion of estradiol to estriol", "Liver", "Estriol, a weak metabolite", "Minor"],
+   ["Placental conversion of fetal DHEA sulfate", "Placenta", "Estriol", "No; pregnancy only"]]],
+  "bl": "After menopause the main estrogen is estrone, made by aromatization of androstenedione in adipose tissue, so obesity raises endometrial risk.",
+  "ef": "rp11_axis",
+  "pt": {"hl": ["Adipose tissue (aromatase)", "Androstenedione to estrone"], "say": "The adipose box shows the postmenopausal estrogen source: aromatase in fat converts androstenedione to estrone, and more fat means more estrone."}
+ },
+ {
+  "id": "rp11q03", "d": 2, "tags": ["inheritance-pattern", "diagnostic-cutoffs"], "bp": ["BP-rp11-02"], "obj": ["BICEP-WILLIAMS.4", "BICEP-WALSH.15"],
+  "s": "A 33-year-old woman has had no menses for 9 months and reports hot flashes and poor sleep. Menarche was at 12, and her cycles were regular until a year ago. She is 165 cm tall. Serum FSH is 68 mIU/mL on two occasions 6 weeks apart, estradiol is low, and hCG is negative. Her sister's son has intellectual disability, and her maternal grandfather developed a tremor and gait ataxia in his sixties.",
+  "l": "Which of the following tests is most likely to reveal the cause of her condition?",
+  "o": ["FMR1 CGG-repeat analysis", "Peripheral blood karyotype", "Antiadrenal antibody testing", "BRCA1 and BRCA2 sequencing", "Pituitary MRI"],
+  "a": 0,
+  "e": "Amenorrhea with a high FSH before age 40 is **primary ovarian insufficiency**. The family history points to the **fragile X** gene, FMR1: a nephew with intellectual disability suggests a full mutation, and a grandfather with late-onset tremor and ataxia suggests the premutation-associated tremor-ataxia syndrome. About 20 percent of women who carry a premutation (55 to 200 CGG repeats) develop ovarian insufficiency, and the premutation can expand when passed on. A karyotype is also part of the work-up, because Turner mosaicism causes this condition, but her normal height, regular early cycles and family history make FMR1 the higher-yield test.",
+  "w": {
+   "Peripheral blood karyotype": "A karyotype detects Turner syndrome or mosaicism, another cause of ovarian insufficiency, but her normal height and the fragile X family history make FMR1 testing more revealing.",
+   "Antiadrenal antibody testing": "Autoimmune oophoritis often accompanies adrenal autoimmunity and is worth screening for, but it does not explain a nephew with intellectual disability or a grandfather with ataxia.",
+   "BRCA1 and BRCA2 sequencing": "BRCA mutations raise breast and ovarian cancer risk and prompt risk-reducing surgery, but they do not cause ovarian failure at 33.",
+   "Pituitary MRI": "Imaging the pituitary is useful when FSH is low or normal with amenorrhea; her high FSH shows the pituitary is responding appropriately to failing ovaries."
+  },
+  "et": [["Option", "Condition detected", "Family clues it explains", "Expected FSH"], [
+   ["FMR1 CGG-repeat analysis", "Fragile X premutation", "Nephew's disability, grandfather's ataxia", "High"],
+   ["Peripheral blood karyotype", "Turner syndrome or mosaicism", "None", "High"],
+   ["Antiadrenal antibody testing", "Autoimmune oophoritis", "None", "High"],
+   ["BRCA1 and BRCA2 sequencing", "Hereditary breast and ovarian cancer", "None", "Normal"],
+   ["Pituitary MRI", "Pituitary tumor", "None", "Low or normal"]]],
+  "bl": "Primary ovarian insufficiency with family intellectual disability and late-onset ataxia calls for FMR1 CGG-repeat analysis for the fragile X premutation."
+ },
+ {
+  "id": "rp11q04", "d": 3, "tags": ["drug-mechanism", "adverse-effects"], "bp": ["BP-rp11-03", "BP-rp11-09"], "obj": ["MENOPAUSE.7", "MENOPAUSE.2"],
+  "s": "A 56-year-old woman has 10 to 12 severe hot flashes a day that wake her at night. Two years ago she had an unprovoked pulmonary embolism, and she takes apixaban. She tried venlafaxine but stopped it because of nausea. Her physician prescribes a once-daily oral drug and orders liver transaminase levels before treatment and periodically during the first months.",
+  "l": "This drug most likely acts at which target?",
+  "o": ["Neurokinin 3 receptor on hypothalamic neurons", "Serotonin transporter in the raphe nuclei", "Alpha-2 adrenergic receptor in the brainstem", "Alpha-2-delta subunit of calcium channels", "Estrogen receptor in the preoptic area"],
+  "a": 0,
+  "e": "A prior pulmonary embolism rules out systemic estrogen, and venlafaxine failed. A once-daily drug that requires liver enzyme monitoring is **fezolinetant**, a **neurokinin 3 receptor** antagonist. After menopause, estrogen no longer restrains hypothalamic KNDy neurons, whose neurokinin B signal through NK3 receptors narrows the thermoneutral zone; blocking the receptor restores it and reduces hot flashes by acting on their cause. Gabapentin acts at the alpha-2-delta subunit and causes sedation rather than liver injury, clonidine at alpha-2 receptors causes hypotension, and estrogen receptor agonism is what her clot history forbids.",
+  "w": {
+   "Serotonin transporter in the raphe nuclei": "SSRIs and SNRIs block the serotonin transporter and help hot flashes, but she already stopped venlafaxine, and these drugs do not require transaminase monitoring.",
+   "Alpha-2 adrenergic receptor in the brainstem": "Clonidine is a central alpha-2 agonist with modest effect on hot flashes; its problems are hypotension, dry mouth and rebound hypertension, not hepatotoxicity.",
+   "Alpha-2-delta subunit of calcium channels": "Gabapentin binds this subunit and is useful for night sweats, but it causes sedation and dizziness and needs renal, not hepatic, dose monitoring.",
+   "Estrogen receptor in the preoptic area": "Estrogen is the most effective treatment, but a prior unprovoked pulmonary embolism is a contraindication to systemic estrogen by any route."
+  },
+  "et": [["Option", "Drug", "Key safety issue", "Monitoring needed"], [
+   ["Neurokinin 3 receptor on hypothalamic neurons", "Fezolinetant", "Hepatotoxicity", "Liver transaminases"],
+   ["Serotonin transporter in the raphe nuclei", "Paroxetine, venlafaxine", "Nausea, sexual dysfunction", "Mood; blood pressure with SNRIs"],
+   ["Alpha-2 adrenergic receptor in the brainstem", "Clonidine", "Hypotension, rebound hypertension", "Blood pressure"],
+   ["Alpha-2-delta subunit of calcium channels", "Gabapentin", "Sedation, dizziness", "Renal function for dosing"],
+   ["Estrogen receptor in the preoptic area", "Estradiol", "Venous thromboembolism", "Not applicable; contraindicated"]]],
+  "bl": "Fezolinetant blocks neurokinin 3 receptors on KNDy neurons to treat hot flashes when estrogen is contraindicated; monitor liver enzymes.",
+  "ef": "rp11_axis",
+  "pt": {"hl": ["Neurokinin B at NK3 receptors", "Fezolinetant blocks NK3"], "say": "The hot-flash arm of the axis shows neurokinin B acting at NK3 receptors on the way to the thermoregulatory center, the neurokinin receptor that fezolinetant blocks."}
+ },
+ {
+  "id": "rp11q05", "d": 2, "tags": ["unopposed-estrogen"], "bp": ["BP-rp11-06"], "obj": ["MENOPAUSE.6"],
+  "s": "A 57-year-old woman comes to the office because of 2 weeks of vaginal bleeding. For the past 3 years she has used an oral estradiol tablet prescribed through an online menopause service for hot flashes. She has an intact uterus. Transvaginal ultrasonography shows an endometrial thickness of 14 mm, and endometrial biopsy shows hyperplasia without atypia.",
+  "l": "Concurrent use of which of the following would most likely have prevented this finding?",
+  "o": ["Micronized progesterone", "Transdermal testosterone", "Ospemifene", "Tamoxifen", "Clomiphene citrate"],
+  "a": 0,
+  "e": "Estrogen alone in a woman with a uterus is **unopposed estrogen**: it drives continuous endometrial proliferation, and over years that becomes hyperplasia and eventually endometrioid cancer. Adding a progestogen such as **micronized progesterone**, either cyclically for 12 to 14 days a month or continuously, converts the lining to a secretory state and prevents this. Tamoxifen and ospemifene have estrogen-like effects on the endometrium and would add to the stimulation, and testosterone does not oppose estrogen in the uterus. Her hyperplasia without atypia is usually treated with a progestin and repeat sampling.",
+  "w": {
+   "Transdermal testosterone": "Testosterone is used off-label for low sexual desire after menopause, but it does not induce secretory change in the endometrium or oppose estrogen there.",
+   "Ospemifene": "Ospemifene is a SERM that acts as an estrogen agonist on vaginal epithelium for painful intercourse; it has mild endometrial agonist activity and offers no protection.",
+   "Tamoxifen": "Tamoxifen blocks estrogen in the breast but is a partial agonist in the endometrium, so it causes hyperplasia, polyps and cancer rather than preventing them.",
+   "Clomiphene citrate": "Clomiphene blocks hypothalamic estrogen receptors to raise gonadotropins and induce ovulation in younger women; it has no role in protecting a postmenopausal endometrium."
+  },
+  "et": [["Option", "Class", "Endometrial effect", "Main use"], [
+   ["Micronized progesterone", "Progestogen", "Secretory change, protects the lining", "Endometrial protection during estrogen therapy"],
+   ["Transdermal testosterone", "Androgen", "No protection", "Low sexual desire"],
+   ["Ospemifene", "SERM", "Mild agonist", "Painful intercourse from vaginal atrophy"],
+   ["Tamoxifen", "SERM", "Partial agonist, hyperplasia risk", "Estrogen receptor-positive breast cancer"],
+   ["Clomiphene citrate", "SERM", "Not protective", "Ovulation induction"]]],
+  "bl": "A woman with a uterus taking systemic estrogen needs a progestogen such as micronized progesterone to prevent endometrial hyperplasia."
+ },
+ {
+  "id": "rp11q06", "d": 2, "tags": ["workup-sequence", "diagnostic-cutoffs"], "bp": ["BP-rp11-05", "BP-rp11-14"], "obj": ["MENOPAUSE.11", "BICEP-WILLIAMS.7"],
+  "s": "A 64-year-old woman comes to the office because of three episodes of vaginal spotting over the past month. Her final menstrual period was at age 51, and she has never used hormone therapy. She has hypertension and a BMI of 34 kg/m2. Speculum examination shows a normal cervix and mildly atrophic vaginal mucosa. Transvaginal ultrasonography shows an endometrial thickness of 9 mm.",
+  "l": "Which of the following is the most appropriate next step in management?",
+  "o": ["Endometrial biopsy", "Repeat ultrasonography in 6 months", "Vaginal estrogen cream", "Serum CA-125 measurement", "Total abdominal hysterectomy"],
+  "a": 0,
+  "e": "Bleeding after menopause is endometrial cancer until proven otherwise. A fully seen endometrial stripe of 4 mm or less makes cancer unlikely, but hers is 9 mm, the bleeding has recurred and obesity adds risk, so tissue is required: **endometrial biopsy** in the office, or hysteroscopy with curettage if the sample is inadequate. Mild vaginal atrophy is common at her age and must not be accepted as the explanation while the endometrium is thick; treating it with vaginal estrogen first would delay a cancer diagnosis. CA-125 is an ovarian marker, and hysterectomy comes only after a tissue diagnosis.",
+  "w": {
+   "Repeat ultrasonography in 6 months": "Watchful waiting is acceptable only for a single episode with a thin, fully seen stripe and no risk factors; a 9-mm stripe with recurrent bleeding needs tissue now.",
+   "Vaginal estrogen cream": "Her mild atrophy could bleed, but a thickened endometrium must be sampled first; attributing the bleeding to atrophy would risk missing endometrial cancer.",
+   "Serum CA-125 measurement": "CA-125 helps evaluate an adnexal mass for ovarian cancer; it is neither sensitive nor specific for endometrial cancer and does not replace tissue.",
+   "Total abdominal hysterectomy": "Surgery may be the eventual treatment, but it is planned only after a tissue diagnosis shows whether she has hyperplasia or cancer and of what grade."
+  },
+  "et": [["Option", "Gives a tissue diagnosis", "Role in postmenopausal bleeding", "Appropriate timing"], [
+   ["Endometrial biopsy", "Yes", "Samples a thick stripe", "Now"],
+   ["Repeat ultrasonography in 6 months", "No", "Follow-up of a thin stripe only", "Not with a 9-mm stripe"],
+   ["Vaginal estrogen cream", "No", "Treats atrophy once cancer is excluded", "After sampling"],
+   ["Serum CA-125 measurement", "No", "Ovarian mass work-up", "Not indicated"],
+   ["Total abdominal hysterectomy", "Yes, but excessive first", "Treatment after diagnosis", "After biopsy"]]],
+  "bl": "Postmenopausal bleeding with an endometrium over 4 mm, or recurrent bleeding, requires endometrial biopsy to exclude cancer."
+ },
+ {
+  "id": "rp11q07", "d": 3, "tags": ["drug-interactions", "adverse-effects"], "bp": ["BP-rp11-17", "BP-rp11-09"], "obj": ["MENOPAUSE.7", "MENOPAUSE.8"],
+  "s": "A 48-year-old woman had a lumpectomy and radiation for estrogen receptor-positive breast cancer 1 year ago and now takes tamoxifen. Since starting tamoxifen she has had frequent, severe hot flashes and night sweats that disrupt her sleep and work. She has mild depressive symptoms. Blood pressure is 122/76 mm Hg. She asks for a medication to reduce the hot flashes.",
+  "l": "Which of the following is the most appropriate treatment?",
+  "o": ["Venlafaxine", "Paroxetine", "Fluoxetine", "Transdermal estradiol", "Conjugated estrogens with bazedoxifene"],
+  "a": 0,
+  "e": "Systemic estrogen in any form is contraindicated after estrogen receptor-positive breast cancer, which rules out transdermal estradiol and conjugated estrogens with bazedoxifene. Among antidepressants, **paroxetine** and fluoxetine strongly inhibit **CYP2D6**, the enzyme that converts tamoxifen to its most active metabolite, endoxifen, so they may reduce tamoxifen's protection. **Venlafaxine** inhibits CYP2D6 only weakly, relieves hot flashes within weeks and may help her mood, making it the preferred choice; gabapentin and fezolinetant are other options.",
+  "w": {
+   "Paroxetine": "Low-dose paroxetine is FDA-approved for hot flashes, but it is a strong CYP2D6 inhibitor that blocks conversion of tamoxifen to endoxifen, so it is avoided with tamoxifen.",
+   "Fluoxetine": "Fluoxetine shares paroxetine's strong CYP2D6 inhibition, lowering endoxifen levels and possibly the benefit of tamoxifen against breast cancer recurrence.",
+   "Transdermal estradiol": "Changing the route lowers clot risk but still delivers systemic estrogen, which is contraindicated after estrogen receptor-positive breast cancer.",
+   "Conjugated estrogens with bazedoxifene": "Bazedoxifene protects the endometrium, but the conjugated estrogens in this combination are still systemic estrogen and are unsafe after breast cancer."
+  },
+  "et": [["Option", "Class", "CYP2D6 inhibition", "Systemic estrogen", "Hot flash evidence"], [
+   ["Venlafaxine", "SNRI", "Weak", "No", "Good"],
+   ["Paroxetine", "SSRI", "Strong", "No", "Low dose FDA-approved"],
+   ["Fluoxetine", "SSRI", "Strong", "No", "Modest"],
+   ["Transdermal estradiol", "Estrogen", "None", "Yes", "Most effective"],
+   ["Conjugated estrogens with bazedoxifene", "Estrogen plus SERM", "None", "Yes", "Effective"]]],
+  "bl": "With tamoxifen, avoid paroxetine and fluoxetine, strong CYP2D6 inhibitors; venlafaxine, gabapentin or fezolinetant treat hot flashes instead."
+ },
+ {
+  "id": "rp11q08", "d": 3, "tags": ["drug-interactions", "unopposed-estrogen"], "bp": ["BP-rp11-15", "BP-rp11-06"], "obj": ["MENOPAUSE.8", "MENOPAUSE.6"],
+  "s": "A 51-year-old woman has had moderate to severe hot flashes and night sweats since her final menstrual period 14 months ago. She has an intact uterus. She had symptomatic gallstones 5 years ago, managed without surgery, and her fasting triglycerides are 380 mg/dL. She does not smoke, has no history of cancer or clots, and her 10-year cardiovascular risk is estimated at 4%.",
+  "l": "Which of the following regimens is most appropriate?",
+  "o": ["Transdermal estradiol with oral micronized progesterone", "Oral conjugated estrogens alone", "Oral conjugated estrogens with medroxyprogesterone", "Transdermal estradiol alone", "Low-dose vaginal estradiol alone"],
+  "a": 0,
+  "e": "She is a good candidate: under 60, within 10 years of menopause, low cardiovascular risk and no contraindication. Two features choose the regimen. Her intact uterus requires a progestogen, which excludes estrogen alone by either route. Her gallstones and high triglycerides make oral estrogen a poor choice, because first-pass hepatic exposure raises triglycerides and promotes gallstones, whereas **transdermal estradiol** bypasses the liver; oral **micronized progesterone** protects the endometrium. Oral conjugated estrogens with medroxyprogesterone protects the uterus but brings the hepatic effects, and vaginal estradiol treats genitourinary symptoms, not hot flashes.",
+  "w": {
+   "Oral conjugated estrogens alone": "Unopposed estrogen in a woman with a uterus causes endometrial hyperplasia and cancer, and the oral route would also raise her triglycerides and gallstone risk.",
+   "Oral conjugated estrogens with medroxyprogesterone": "The progestin protects her endometrium, but oral estrogen's first pass through the liver raises triglycerides and gallbladder risk, which her history makes important.",
+   "Transdermal estradiol alone": "The patch avoids hepatic effects, but without a progestogen her intact endometrium would be exposed to unopposed estrogen and hyperplasia.",
+   "Low-dose vaginal estradiol alone": "Vaginal estrogen at low dose is barely absorbed; it treats dryness and urinary symptoms but does not relieve moderate to severe hot flashes."
+  },
+  "et": [["Option", "Protects the endometrium", "Hepatic first pass", "Treats hot flashes"], [
+   ["Transdermal estradiol with oral micronized progesterone", "Yes", "Avoided for the estrogen", "Yes"],
+   ["Oral conjugated estrogens alone", "No", "Yes", "Yes"],
+   ["Oral conjugated estrogens with medroxyprogesterone", "Yes", "Yes", "Yes"],
+   ["Transdermal estradiol alone", "No", "Avoided", "Yes"],
+   ["Low-dose vaginal estradiol alone", "Not needed", "Minimal absorption", "No"]]],
+  "bl": "With a uterus plus gallstones or high triglycerides, choose transdermal estradiol with a progestogen such as micronized progesterone.",
+  "ef": "rp11_ht",
+  "pt": {"hl": ["Transdermal", "Triglycerides up", "plus progestogen"], "say": "The route panel shows oral estrogen raising triglycerides and gallstones in the liver while transdermal estradiol skips it, and the uterus panel shows the progestogen her lining needs."}
+ },
+ {
+  "id": "rp11q09", "d": 2, "tags": ["hormone-actions"], "bp": ["BP-rp11-04"], "obj": ["MENOPAUSE.4", "MENOPAUSE.3"],
+  "s": "A 66-year-old woman comes to the emergency department after lifting a bag of groceries and feeling sudden midback pain. Menopause occurred at 48, and she never used hormone therapy. Radiographs show an anterior wedge compression fracture of T12. DXA shows a lumbar spine T-score of -3.0. Serum calcium, phosphate, alkaline phosphatase, PTH and 25-hydroxyvitamin D are normal.",
+  "l": "Estrogen deficiency most likely caused her bone loss by which mechanism?",
+  "o": ["Increased RANKL signaling with less osteoprotegerin", "Defective mineralization of osteoid", "Increased parathyroid hormone secretion", "Defective type I collagen synthesis", "Disordered osteoclast activity with mosaic bone"],
+  "a": 0,
+  "e": "Estrogen normally lowers osteoblast and stromal-cell production of RANKL and raises **osteoprotegerin**, a decoy receptor that binds RANKL. After menopause, **increased RANKL signaling** recruits and activates osteoclasts and prolongs their lifespan, so resorption outpaces formation. Trabecular bone, with its large surface area, is lost first, which is why vertebral compression fractures are an early sign. Her normal calcium, phosphate, alkaline phosphatase, PTH and vitamin D exclude osteomalacia, hyperparathyroidism and Paget disease, and a type I collagen defect would have caused fractures since childhood.",
+  "w": {
+   "Defective mineralization of osteoid": "Osteomalacia comes from vitamin D deficiency or phosphate loss, with low phosphate, high alkaline phosphatase and bone pain; her labs are normal.",
+   "Increased parathyroid hormone secretion": "Hyperparathyroidism would raise calcium and PTH and thin cortical bone first, but her calcium and PTH are normal.",
+   "Defective type I collagen synthesis": "Osteogenesis imperfecta, from COL1A1 or COL1A2 mutations, causes fractures from childhood with blue sclerae and hearing loss, not new fractures after menopause.",
+   "Disordered osteoclast activity with mosaic bone": "Paget disease produces enlarged, deformed bones with mosaic lamellar bone and a markedly high alkaline phosphatase, which she does not have."
+  },
+  "et": [["Option", "Disease", "Key labs", "Bone affected first"], [
+   ["Increased RANKL signaling with less osteoprotegerin", "Postmenopausal osteoporosis", "Normal", "Trabecular: vertebrae, distal radius"],
+   ["Defective mineralization of osteoid", "Osteomalacia", "Low phosphate and vitamin D, high ALP", "Diffuse; pseudofractures"],
+   ["Increased parathyroid hormone secretion", "Hyperparathyroidism", "High calcium and PTH", "Cortical"],
+   ["Defective type I collagen synthesis", "Osteogenesis imperfecta", "Normal", "All bone, from childhood"],
+   ["Disordered osteoclast activity with mosaic bone", "Paget disease", "Very high ALP", "Skull, pelvis, long bones"]]],
+  "bl": "Postmenopausal osteoporosis results from increased RANKL signaling and less osteoprotegerin, so osteoclasts resorb trabecular bone first."
+ },
+ {
+  "id": "rp11q10", "d": 1, "tags": ["adverse-effects", "risk-factors"], "bp": ["BP-rp11-08"], "obj": ["MENOPAUSE.13", "BICEP-WILLIAMS.6"],
+  "s": "In the Women's Health Initiative, postmenopausal women aged 50 to 79 with an intact uterus were randomized to daily oral conjugated equine estrogen plus medroxyprogesterone acetate or to placebo. The trial was stopped early in 2002 after an average of about 5 years.",
+  "l": "Compared with placebo, which of the following outcomes was less frequent in the treatment group?",
+  "o": ["Hip fracture", "Invasive breast cancer", "Ischemic stroke", "Pulmonary embolism", "Coronary heart disease events"],
+  "a": 0,
+  "e": "The combined arm of the WHI showed that estrogen with medroxyprogesterone reduced **hip fracture** by about a third and also lowered colorectal cancer, because estrogen restrains osteoclast-mediated bone resorption. The same regimen increased invasive breast cancer, stroke, venous thromboembolism including pulmonary embolism, and coronary events, which is why the trial stopped. Later analyses showed these harms were concentrated in older women who started therapy many years after menopause, the basis of the timing hypothesis, and hormone therapy is not used first-line for osteoporosis alone.",
+  "w": {
+   "Invasive breast cancer": "Breast cancer increased with estrogen plus medroxyprogesterone, about 26 percent in relative terms, whereas the estrogen-alone arm did not show an increase.",
+   "Ischemic stroke": "Stroke rose in both the combined and the estrogen-alone arms, reflecting estrogen's prothrombotic effect in older women.",
+   "Pulmonary embolism": "Venous thromboembolism roughly doubled with oral combined therapy, because oral estrogen raises hepatic production of clotting factors.",
+   "Coronary heart disease events": "Coronary events increased in the combined arm, especially in older women far from menopause, contradicting earlier observational studies that suggested protection."
+  },
+  "et": [["Option", "Change with combined therapy", "Mechanism", "Estrogen-alone arm"], [
+   ["Hip fracture", "Decreased", "Less osteoclast resorption", "Also decreased"],
+   ["Invasive breast cancer", "Increased", "Estrogen plus progestin stimulates breast tissue", "Not increased"],
+   ["Ischemic stroke", "Increased", "Prothrombotic effect", "Increased"],
+   ["Pulmonary embolism", "Increased", "Hepatic clotting factors", "Increased"],
+   ["Coronary heart disease events", "Increased in older starters", "Plaque instability, thrombosis", "No overall increase"]]],
+  "bl": "In the WHI, combined estrogen plus medroxyprogesterone lowered hip fracture and colorectal cancer but raised breast cancer, stroke, clots and coronary events."
+ },
+ {
+  "id": "rp11q11", "d": 2, "tags": ["workup-sequence", "normal-vs-pathologic"], "bp": ["BP-rp11-10", "BP-rp11-13"], "obj": ["MENOPAUSE.12", "MENOPAUSE.9"],
+  "s": "A 42-year-old woman comes to the office because she has had no menstrual period for 4 months. She reports hot flashes, trouble sleeping and irritability. Her cycles had been regular. She is sexually active with her husband and uses condoms most of the time. She takes no medications. Vital signs and examination are normal.",
+  "l": "Which of the following is the most appropriate initial test?",
+  "o": ["Serum or urine hCG", "Serum FSH", "Serum anti-Müllerian hormone", "Pelvic ultrasonography", "Endometrial biopsy"],
+  "a": 0,
+  "e": "Amenorrhea in a sexually active woman of reproductive age is pregnancy until proven otherwise, and inconsistent condom use makes it plausible, so a **urine or serum hCG** comes first. Menopause mimics are then excluded: TSH for thyroid disease and prolactin for hyperprolactinemia. Because she is younger than 45, an FSH level is useful after pregnancy is excluded; two high values would indicate early menopause or, before 40, primary ovarian insufficiency. Anti-Müllerian hormone estimates ovarian reserve but does not diagnose menopause, and imaging or biopsy has no role before these blood tests.",
+  "w": {
+   "Serum FSH": "FSH helps confirm early menopause or ovarian insufficiency in a woman under 45, but pregnancy must be excluded first because it is the most common cause of amenorrhea.",
+   "Serum anti-Müllerian hormone": "AMH reflects the size of the remaining follicle pool and falls toward menopause, but it cannot confirm menopause and does not exclude pregnancy.",
+   "Pelvic ultrasonography": "Ultrasound can show an intrauterine pregnancy or ovarian pathology, but a simple hCG test answers the first question faster and more cheaply.",
+   "Endometrial biopsy": "Endometrial sampling evaluates abnormal bleeding in women at risk of hyperplasia; it has no role in the initial work-up of amenorrhea."
+  },
+  "et": [["Option", "Question it settles", "Order in the work-up", "Invasive"], [
+   ["Serum or urine hCG", "Is she pregnant?", "First", "No"],
+   ["Serum FSH", "Has the ovary failed?", "After pregnancy is excluded", "No"],
+   ["Serum anti-Müllerian hormone", "How large is the follicle pool?", "Optional, not diagnostic", "No"],
+   ["Pelvic ultrasonography", "Is there a pregnancy or mass?", "If findings require it", "No"],
+   ["Endometrial biopsy", "Is there hyperplasia or cancer?", "Not for amenorrhea", "Yes"]]],
+  "bl": "In amenorrhea with menopausal symptoms, first exclude pregnancy with a urine or serum hCG, then check FSH, TSH and prolactin."
+ },
+ {
+  "id": "rp11q12", "d": 1, "tags": ["drug-mechanism"], "bp": ["BP-rp11-16", "BP-rp11-03"], "obj": ["MENOPAUSE.2", "MENOPAUSE.6"],
+  "s": "A 61-year-old woman reports vaginal dryness, pain with intercourse and three urinary tract infections in the past year. She has no hot flashes. She has an intact uterus and no history of cancer or clots. Examination shows pale, thin vaginal mucosa with loss of rugae, and vaginal pH is 6.5.",
+  "l": "Which of the following is the most appropriate treatment?",
+  "o": ["Low-dose vaginal estradiol", "Oral estradiol with micronized progesterone", "Transdermal estradiol with micronized progesterone", "Paroxetine", "Fezolinetant"],
+  "a": 0,
+  "e": "She has the **genitourinary syndrome of menopause**: estrogen loss thins the vaginal epithelium, glycogen and lactobacilli decline, pH rises, and dryness, dyspareunia and recurrent urinary infections follow. **Low-dose vaginal estradiol** restores the epithelium and lowers pH while keeping serum estradiol in the postmenopausal range, so it needs no progestogen even with a uterus. Systemic estrogen, oral or transdermal, is reserved for vasomotor symptoms she does not have, and paroxetine and fezolinetant treat hot flashes but not the vaginal tissue.",
+  "w": {
+   "Oral estradiol with micronized progesterone": "Systemic therapy would help the vaginal tissue, but it adds clot and breast risk and a progestogen for symptoms that local estrogen treats alone.",
+   "Transdermal estradiol with micronized progesterone": "A patch lowers clot risk compared with oral estrogen, but systemic exposure is unnecessary without hot flashes, and local therapy works better for atrophy.",
+   "Paroxetine": "Low-dose paroxetine reduces hot flashes through serotonin reuptake inhibition, but it does nothing for thin vaginal epithelium and can worsen sexual function.",
+   "Fezolinetant": "Fezolinetant blocks hypothalamic NK3 receptors to reduce hot flashes; it has no effect on the vaginal epithelium or the urinary tract."
+  },
+  "et": [["Option", "Target", "Systemic estrogen exposure", "Treats vaginal atrophy", "Needs a progestogen with a uterus"], [
+   ["Low-dose vaginal estradiol", "Vaginal estrogen receptors", "Minimal", "Yes", "No"],
+   ["Oral estradiol with micronized progesterone", "Estrogen receptors everywhere", "Full, with hepatic first pass", "Yes", "Yes, included"],
+   ["Transdermal estradiol with micronized progesterone", "Estrogen receptors everywhere", "Full, no first pass", "Yes", "Yes, included"],
+   ["Paroxetine", "Serotonin transporter", "None", "No", "No"],
+   ["Fezolinetant", "NK3 receptor", "None", "No", "No"]]],
+  "bl": "Genitourinary syndrome of menopause without hot flashes is treated with low-dose vaginal estradiol, which needs no progestogen.",
+  "ef": "rp11_ht",
+  "pt": {"hl": ["Vaginal estrogen", "low dose, no progestin"], "say": "The bottom row of the uterus panel matches her case: vaginal dryness alone is treated with low-dose vaginal estrogen, which needs no progestin."}
+ }
+]

@@ -1,0 +1,27 @@
+<svg class="dia" viewBox="0 0 900 490" role="img" aria-label="Water deprivation test: urine osmolality during water deprivation and after desmopressin; normal and primary polydipsia concentrate without desmopressin, central DI concentrates only after desmopressin, nephrogenic DI never concentrates">
+<text class="ttl" x="14" y="24" font-size="17">Water deprivation, then desmopressin</text>
+<text x="90" y="50" font-size="14">Urine osmolality (mOsm/kg)</text>
+<line x1="90" y1="64" x2="700" y2="64" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="90" y1="162" x2="700" y2="162" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="90" y1="298" x2="700" y2="298" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="90" y1="60" x2="90" y2="400" stroke="var(--line-strong)" stroke-width="1.5"/>
+<line x1="90" y1="400" x2="700" y2="400" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="82" y="69" font-size="14" text-anchor="end">1000</text>
+<text x="82" y="167" font-size="14" text-anchor="end">700</text>
+<text x="82" y="303" font-size="14" text-anchor="end">300</text>
+<text x="82" y="405" font-size="14" text-anchor="end">0</text>
+<line x1="480" y1="60" x2="480" y2="400" stroke="var(--ink-3)" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="488" y="84" font-size="14">Desmopressin given</text>
+<polyline points="90,298 300,165 480,138 700,132" fill="none" stroke="var(--good)" stroke-width="3"/>
+<polyline points="90,366 300,285 480,220 700,214" fill="none" stroke="var(--a2)" stroke-width="3"/>
+<polyline points="90,352 480,346 560,252 700,244" fill="none" stroke="var(--a1)" stroke-width="3"/>
+<polyline points="90,358 480,354 700,350" fill="none" stroke="var(--crit)" stroke-width="3"/>
+<text class="gd" x="712" y="137" font-size="15">Normal</text>
+<text class="a2" x="712" y="219" font-size="15">Primary polydipsia</text>
+<text class="a1" x="712" y="249" font-size="15">Central DI</text>
+<text class="cr" x="712" y="355" font-size="15">Nephrogenic DI</text>
+<text x="285" y="424" font-size="14" text-anchor="middle">Water withheld (hours)</text>
+<text x="590" y="424" font-size="14" text-anchor="middle">After desmopressin</text>
+<text x="14" y="456" font-size="14">Central DI: urine osmolality rises by more than half after desmopressin.</text>
+<text x="14" y="478" font-size="14">Nephrogenic DI barely changes; primary polydipsia concentrates during deprivation.</text>
+</svg>

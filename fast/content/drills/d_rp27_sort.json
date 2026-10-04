@@ -1,0 +1,77 @@
+{
+ "id": "d_rp27_sort",
+ "c": "rp27",
+ "kind": "sort",
+ "t": "Placenta previa or placental abruption?",
+ "tags": [
+  "bleeding-source"
+ ],
+ "bp": [
+  "BP-rp27-06"
+ ],
+ "a": "Placenta previa",
+ "bb": "Placental abruption",
+ "key": "Ask whether it hurts: a placenta over the os bleeds painlessly from a soft uterus, while a separating placenta bleeds behind itself and makes the uterus painful, tender and hypertonic.",
+ "items": [
+  [
+   "Painless bright red bleeding",
+   "a",
+   "The placenta over the os bleeds as the lower segment stretches, without irritating the myometrium, so there is no pain."
+  ],
+  [
+   "Soft, nontender uterus",
+   "a",
+   "Blood escapes through the cervix instead of collecting behind the placenta, so the myometrium stays relaxed."
+  ],
+  [
+   "Digital cervical exam is contraindicated",
+   "a",
+   "A finger through the os can tear a placenta lying over it and start torrential bleeding."
+  ],
+  [
+   "Placenta over the internal os on ultrasound",
+   "a",
+   "This is the definition of previa; ultrasound, including the transvaginal route, makes the diagnosis safely."
+  ],
+  [
+   "Delivery must be by cesarean",
+   "a",
+   "A placenta covering the os blocks the birth canal, so a vaginal birth would tear through it."
+  ],
+  [
+   "Fetal heart rate usually normal at first",
+   "a",
+   "The blood lost is maternal and the placenta is still attached, so fetal oxygenation holds until bleeding is heavy."
+  ],
+  [
+   "Painful bleeding with a rigid uterus",
+   "b",
+   "Blood collecting between placenta and wall irritates the myometrium, causing pain and a hypertonic, board-like uterus."
+  ],
+  [
+   "Shock out of proportion to visible blood",
+   "b",
+   "A concealed retroplacental clot can hold a large volume behind the placenta, so the blood seen underestimates the loss."
+  ],
+  [
+   "Recent cocaine use",
+   "b",
+   "Cocaine causes intense maternal vasoconstriction that can shear the placenta off the uterine wall."
+  ],
+  [
+   "Low fibrinogen and oozing IV sites",
+   "b",
+   "Tissue factor released from damaged decidua triggers DIC, which consumes fibrinogen and platelets."
+  ],
+  [
+   "Late decelerations on the fetal tracing",
+   "b",
+   "Separation removes part of the exchange surface, so the fetus becomes hypoxic during contractions."
+  ],
+  [
+   "Motor vehicle crash with abdominal trauma",
+   "b",
+   "A sudden shearing force can separate a normally implanted placenta even without visible injury to the mother."
+  ]
+ ]
+}

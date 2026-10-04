@@ -1,0 +1,91 @@
+{
+ "id": "d_en5_multi",
+ "c": "en5",
+ "kind": "multi",
+ "t": "Which step does it block?",
+ "tags": [
+  "hormone-synthesis",
+  "drug-mechanism"
+ ],
+ "key": "Place each agent at the one step it stops: anions compete at the symporter, thionamides and iodide excess stop organification, high-dose iodide and lithium slow release, and several drugs and illness block peripheral deiodination.",
+ "cols": [
+  {
+   "id": "trap",
+   "l": "Iodide uptake"
+  },
+  {
+   "id": "org",
+   "l": "Organification and coupling"
+  },
+  {
+   "id": "rel",
+   "l": "Release from thyroglobulin"
+  },
+  {
+   "id": "deio",
+   "l": "T4 to T3 in tissues"
+  }
+ ],
+ "items": [
+  [
+   "Perchlorate",
+   "trap",
+   "Perchlorate is an anion similar to iodide that competes for the sodium-iodide symporter, so less iodide enters the cell."
+  ],
+  [
+   "Pertechnetate",
+   "trap",
+   "Pertechnetate is carried by the symporter like iodide, which is why technetium scans image trapping without organification."
+  ],
+  [
+   "Thiocyanate",
+   "trap",
+   "Thiocyanate, from cyanide metabolism in smokers or cassava diets, competitively inhibits iodide transport into the follicular cell."
+  ],
+  [
+   "Methimazole",
+   "org",
+   "Methimazole inhibits thyroid peroxidase, so iodide is not attached to tyrosines and iodotyrosines are not coupled."
+  ],
+  [
+   "Carbimazole",
+   "org",
+   "Carbimazole is a prodrug converted to methimazole, so it blocks thyroid peroxidase exactly as methimazole does."
+  ],
+  [
+   "A large iodide load (Wolff-Chaikoff)",
+   "org",
+   "Excess iodide transiently shuts down organification, a protective reflex that a damaged gland may fail to escape."
+  ],
+  [
+   "Inherited thyroid peroxidase deficiency",
+   "org",
+   "Peroxidase gene mutations are the commonest cause of dyshormonogenesis, so iodide is trapped but never organified, causing goiter."
+  ],
+  [
+   "Lithium",
+   "rel",
+   "Lithium is concentrated by the gland and inhibits release of T4 and T3 from thyroglobulin, causing goiter and hypothyroidism."
+  ],
+  [
+   "Potassium iodide in thyroid storm",
+   "rel",
+   "High-dose iodide rapidly inhibits proteolysis of thyroglobulin, so stored hormone stops leaving the gland within hours."
+  ],
+  [
+   "Propranolol at high doses",
+   "deio",
+   "Beyond beta blockade, high-dose propranolol modestly inhibits 5'-deiodinase, lowering conversion of T4 to active T3."
+  ],
+  [
+   "Glucocorticoids",
+   "deio",
+   "Glucocorticoids inhibit 5'-deiodinase, which is one reason they are given in thyroid storm."
+  ],
+  [
+   "Severe illness or starvation",
+   "deio",
+   "Cytokines, cortisol and fasting inhibit deiodinase, producing the low T3 and high reverse T3 of sick euthyroid syndrome."
+  ]
+ ]
+}

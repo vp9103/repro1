@@ -1,0 +1,137 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp7",
+ "hash": "7ac0449fac56",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:04:46",
+ "gaps": [
+  {
+   "gid": "GAP-rp7-01",
+   "concept": "Precocious puberty begins before age 8 in girls or 9 in boys; delayed puberty means no breasts by 13 or testicular enlargement by 14.",
+   "why_tested": "Age and physical findings determine whether a vignette describes abnormal pubertal timing.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp7-02",
+   "concept": "In boys, testicular volume of at least 4 mL marks gonadarche; pubic hair alone does not establish true puberty.",
+   "why_tested": "Distinguishes early testicular maturation from isolated adrenarche.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp7-03",
+   "concept": "LH stimulates Leydig-cell testosterone production; FSH supports Sertoli cells and spermatogenesis and stimulates ovarian granulosa-cell aromatase.",
+   "why_tested": "Links gonadotropin changes to the source of pubertal sex steroids.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp7-04",
+   "concept": "Sex steroids increase growth through GH–IGF-1; estrogen drives epiphyseal maturation and closure in both sexes.",
+   "why_tested": "Explains why early puberty initially accelerates growth but can reduce adult height.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp7-05",
+   "concept": "Central precocious puberty follows the usual sequence with bilateral testicular enlargement; peripheral androgen excess may cause virilization without testicular enlargement.",
+   "why_tested": "An early-virilizing boy’s testicular size distinguishes central from peripheral puberty.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp7-06",
+   "concept": "Hypothalamic hamartoma can cause central precocious puberty with gelastic seizures.",
+   "why_tested": "Episodes of inappropriate laughter accompany early pubertal development.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp7-07",
+   "concept": "Familial male-limited precocious puberty (testotoxicosis) results from activating LHCGR mutations, producing testosterone despite suppressed gonadotropins.",
+   "why_tested": "A boy has familial early virilization and high testosterone with low LH.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp7-08",
+   "concept": "hCG-secreting tumors stimulate Leydig-cell LH receptors, causing testosterone-mediated precocity in boys despite suppressed pituitary LH.",
+   "why_tested": "A boy has elevated hCG, high testosterone, and low LH.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp7-09",
+   "concept": "Granulosa-cell tumors secrete estrogen and can cause early breast development or bleeding; Leydig-cell tumors secrete androgens and cause virilization.",
+   "why_tested": "The sex steroid pattern identifies the tumor behind peripheral precocity.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp7-10",
+   "concept": "In 21-hydroxylase deficiency, elevated 17-hydroxyprogesterone and adrenal androgens cause early pubarche with suppressed gonadotropins.",
+   "why_tested": "A child has early androgenic signs without gonadal maturation.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp7-11",
+   "concept": "McCune–Albright syndrome arises from a postzygotic mosaic GNAS mutation; autonomous ovarian estrogen production can cause episodic vaginal bleeding.",
+   "why_tested": "Recurrent bleeding and asymmetric skin lesions accompany gonadotropin-independent puberty.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp7-12",
+   "concept": "Severe primary hypothyroidism can cause precocious breast development or bleeding with delayed bone age (Van Wyk–Grumbach syndrome).",
+   "why_tested": "Delayed skeletal maturation distinguishes this presentation from typical precocious puberty.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp7-13",
+   "concept": "Premature thelarche has isolated breast development without accelerated growth or advanced bone age.",
+   "why_tested": "An otherwise well young girl has breast budding without progressive puberty.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp7-14",
+   "concept": "Premature adrenarche causes pubic or axillary hair, body odor, and acne without breast development or testicular enlargement.",
+   "why_tested": "Early hair growth occurs while the gonadal axis remains prepubertal.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp7-15",
+   "concept": "Pubertal gynecomastia reflects a transient increase in the estrogen-to-androgen effect during otherwise normal male puberty.",
+   "why_tested": "A pubertal boy develops bilateral breast tissue without other evidence of disease.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp7-16",
+   "concept": "Hypogonadotropic delayed puberty has low sex steroids with low or inappropriately normal LH/FSH; primary gonadal failure has low sex steroids with high LH/FSH.",
+   "why_tested": "Hormone results localize delayed puberty to the central axis or gonads.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp7-17",
+   "concept": "Kallmann syndrome results from failed migration of GnRH neurons from the olfactory placode; anosmia accompanies low LH/FSH and delayed puberty.",
+   "why_tested": "An adolescent with absent puberty also reports impaired smell.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp7-18",
+   "concept": "Micropenis or cryptorchidism favors congenital GnRH deficiency over constitutional delay in a boy with late puberty.",
+   "why_tested": "Early-life reproductive findings distinguish persistent hypogonadism from a late normal variant.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp7-19",
+   "concept": "Turner syndrome (45,X) causes streak ovaries, low estrogen, high FSH/LH, absent breast development, and primary amenorrhea; pubic hair may develop normally.",
+   "why_tested": "A short adolescent has absent gonadarche despite preserved adrenal hair growth.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp7-20",
+   "concept": "Klinefelter syndrome (47,XXY) causes small firm testes, seminiferous-tubule hyalinization, low testosterone, high FSH/LH, and often gynecomastia.",
+   "why_tested": "A tall adolescent has incomplete virilization and persistently small testes.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp7-21",
+   "concept": "Chronic illness and hyperprolactinemia can suppress GnRH, producing functional hypogonadotropic delayed puberty.",
+   "why_tested": "Systemic disease or elevated prolactin accompanies delayed maturation with low gonadotropins.",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp7-1790442172411.jsonl"
+}

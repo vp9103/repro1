@@ -1,0 +1,62 @@
+<svg class="dia" viewBox="0 0 900 560" role="img" aria-label="Left breast seen from the front: lateral lymph flows to axillary nodes at levels I, II and III around pectoralis minor, with the sentinel node first; medial lymph flows to internal mammary nodes beside the sternum; cards list the long thoracic, thoracodorsal and intercostobrachial nerves and the deficit each injury causes">
+<text class="ttl" x="14" y="24" font-size="17">Where breast lymph drains, and the axillary nerves at risk</text>
+<text class="b" x="24" y="58" font-size="15">Internal mammary nodes</text>
+<text x="24" y="77" font-size="14">drain the medial quadrants</text>
+<text x="24" y="95" font-size="14">(with internal thoracic vessels)</text>
+<rect x="24" y="112" width="30" height="390" rx="6" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<line x1="72" y1="112" x2="72" y2="500" stroke="var(--crit)" stroke-width="2.5"/>
+<g fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2">
+<circle cx="72" cy="250" r="7"/><circle cx="72" cy="300" r="7"/><circle cx="72" cy="350" r="7"/><circle cx="72" cy="400" r="7"/>
+</g>
+<path d="M292 252 C 336 212, 376 192, 410 190 C 408 218, 378 258, 330 300 Z" fill="var(--warn-soft)" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="230" cy="330" r="108" fill="var(--warn-soft)" stroke="var(--ink)" stroke-width="2"/>
+<line x1="122" y1="330" x2="338" y2="330" stroke="var(--ink-3)" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="230" y1="222" x2="230" y2="438" stroke="var(--ink-3)" stroke-width="1.2" stroke-dasharray="5 4"/>
+<circle cx="230" cy="330" r="22" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="230" cy="330" r="7" fill="var(--a1)"/>
+<text x="150" y="200" font-size="14">Upper outer quadrant</text>
+<line x1="262" y1="205" x2="274" y2="256" stroke="var(--ink-3)" stroke-width="1.2"/>
+<line x1="120" y1="350" x2="88" y2="350" stroke="var(--a2)" stroke-width="2.5"/>
+<polygon points="88,345 80,350 88,355" fill="var(--a2)"/>
+<polygon points="540,70 578,80 500,236 466,228" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="424" y="62" font-size="15">Pectoralis minor</text>
+<g fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2">
+<circle cx="492" cy="108" r="7"/><circle cx="508" cy="86" r="7"/>
+<circle cx="540" cy="262" r="7"/><circle cx="566" cy="244" r="7"/><circle cx="526" cy="290" r="7"/>
+</g>
+<g fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2" stroke-dasharray="3 2">
+<circle cx="520" cy="150" r="7"/><circle cx="506" cy="178" r="7"/>
+</g>
+<circle cx="526" cy="290" r="13" fill="none" stroke="var(--crit)" stroke-width="2" stroke-dasharray="4 3"/>
+<line x1="336" y1="292" x2="508" y2="288" stroke="var(--a2)" stroke-width="2.5"/>
+<polygon points="508,283 516,288 508,293" fill="var(--a2)"/>
+<line x1="537" y1="252" x2="524" y2="196" stroke="var(--a2)" stroke-width="2"/>
+<polygon points="519,197 522,188 529,195" fill="var(--a2)"/>
+<line x1="510" y1="140" x2="501" y2="124" stroke="var(--a2)" stroke-width="2"/>
+<polygon points="496,127 497,117 505,122" fill="var(--a2)"/>
+<text class="b" x="582" y="270" font-size="15">I</text>
+<text class="b" x="548" y="170" font-size="15">II</text>
+<text class="b" x="458" y="96" font-size="15">III</text>
+<text x="356" y="314" font-size="14">75% of lymph</text>
+<text x="486" y="322" font-size="14">Sentinel node</text>
+<text x="110" y="486" font-size="14">Axillary levels are named by pectoralis minor:</text>
+<text x="110" y="506" font-size="14">I lateral to it, II behind it, III medial to it</text>
+<text x="18" y="530" font-size="14">Sternum</text>
+<text class="b" x="600" y="62" font-size="15">Axillary nerves at risk</text>
+<rect x="600" y="76" width="286" height="116" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="614" y="102" font-size="15">Long thoracic nerve</text>
+<text x="614" y="127" font-size="14">Runs down the medial wall</text>
+<text x="614" y="146" font-size="14">on serratus anterior</text>
+<text x="614" y="174" font-size="14"><tspan class="b">Injury:</tspan> winged scapula</text>
+<rect x="600" y="204" width="286" height="116" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="614" y="230" font-size="15">Thoracodorsal nerve</text>
+<text x="614" y="255" font-size="14">Runs along the posterior wall</text>
+<text x="614" y="274" font-size="14">to latissimus dorsi</text>
+<text x="614" y="302" font-size="14"><tspan class="b">Injury:</tspan> weak adduction, extension</text>
+<rect x="600" y="332" width="286" height="116" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="614" y="358" font-size="15">Intercostobrachial nerve</text>
+<text x="614" y="383" font-size="14">Sensory branch of T2 crossing</text>
+<text x="614" y="402" font-size="14">the axilla to the medial arm</text>
+<text x="614" y="430" font-size="14"><tspan class="b">Injury:</tspan> numb medial upper arm</text>
+<text x="600" y="476" font-size="14">Skin: intercostal nerves T4 to T6</text>
+</svg>

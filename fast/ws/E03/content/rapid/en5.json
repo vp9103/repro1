@@ -1,0 +1,458 @@
+[
+ {
+  "id": "en5r01",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-en5-01"
+  ],
+  "q": "Which tongue landmark marks where the thyroid began?",
+  "o": [
+   "Foramen cecum",
+   "Circumvallate papillae",
+   "Lingual tonsil",
+   "Median glossal sulcus",
+   "Lingual frenulum"
+  ],
+  "a": 0,
+  "x": "The thyroid bud forms in pharyngeal-floor endoderm at the foramen cecum and descends along the thyroglossal duct; the foramen cecum is the pit left on the tongue when the duct involutes.",
+  "w": {
+   "Circumvallate papillae": "These taste papillae form a V just in front of the sulcus terminalis; they mark taste-bud territory served by the glossopharyngeal nerve, not thyroid origin.",
+   "Lingual tonsil": "The lingual tonsil is lymphoid tissue on the posterior tongue; a lingual thyroid can sit nearby, but the tonsil is not the embryologic starting point.",
+   "Median glossal sulcus": "This groove marks where the two lateral lingual swellings fused in the midline of the anterior tongue; the thyroid began farther back.",
+   "Lingual frenulum": "The frenulum is a mucosal fold under the tongue that anchors it to the floor of the mouth; it has no link to thyroid descent."
+  },
+  "media": "fig:en5_embryo",
+  "pt": {
+   "hl": [
+    "Foramen cecum"
+   ],
+   "say": "Start at the top of the descent path: the foramen cecum at the tongue base is where the follicular-cell endoderm began its migration."
+  }
+ },
+ {
+  "id": "en5r02",
+  "tags": [
+   "embryologic-origin",
+   "cell-of-origin"
+  ],
+  "bp": [
+   "BP-en5-02"
+  ],
+  "q": "Which embryologic tissue gives rise to thyroid C cells?",
+  "o": [
+   "Neural crest",
+   "Pharyngeal floor endoderm",
+   "Third pouch endoderm",
+   "Second arch mesoderm",
+   "Stomodeal ectoderm"
+  ],
+  "a": 0,
+  "x": "C cells come from neural crest that migrates into the fourth pharyngeal pouch, forms the ultimobranchial body and fuses with the thyroid; that origin explains why medullary carcinoma secretes calcitonin.",
+  "w": {
+   "Pharyngeal floor endoderm": "Pharyngeal floor endoderm forms the follicular cells that make thyroglobulin, T4 and T3; the calcitonin-secreting cells arrive separately.",
+   "Third pouch endoderm": "The third pouch forms the inferior parathyroids and thymus, which descend together; it contributes no cells to the thyroid gland.",
+   "Second arch mesoderm": "Second-arch mesoderm forms the muscles of facial expression and the stapes, supplied by the facial nerve; it forms no endocrine cells.",
+   "Stomodeal ectoderm": "Stomodeal ectoderm forms Rathke's pouch, the origin of the anterior pituitary, not any cell population inside the thyroid."
+  },
+  "media": "fig:en5_embryo",
+  "pt": {
+   "hl": [
+    "Neural crest cells"
+   ],
+   "say": "Follow the right panel: neural crest cells reach the fourth pouch and ultimobranchial body, then become parafollicular C cells."
+  }
+ },
+ {
+  "id": "en5r03",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-en5-14"
+  ],
+  "q": "Which thyroid structure is the lowest remnant of the thyroglossal duct?",
+  "o": [
+   "Pyramidal lobe",
+   "Isthmus",
+   "Lingual thyroid",
+   "Ligament of Berry",
+   "Tubercle of Zuckerkandl"
+  ],
+  "a": 0,
+  "x": "The pyramidal lobe projects upward from the isthmus toward the hyoid; it is the lowest segment of the thyroglossal duct that failed to involute, and it is found in many normal people.",
+  "w": {
+   "Isthmus": "The isthmus is the normal bridge joining the two lobes across the upper tracheal rings; it is the gland itself, not a duct remnant.",
+   "Lingual thyroid": "A lingual thyroid is tissue that never descended and stays at the tongue base, the top of the duct path rather than its lowest end.",
+   "Ligament of Berry": "Berry's ligament is the posterior suspensory ligament fixing the gland to the cricoid and trachea, which is why the thyroid moves with swallowing.",
+   "Tubercle of Zuckerkandl": "This is a posterior projection of the lateral lobe near the recurrent laryngeal nerve; it is normal lobe tissue, not a duct remnant."
+  },
+  "media": "fig:en5_embryo",
+  "pt": {
+   "hl": [
+    "Pyramidal lobe"
+   ],
+   "say": "Look at the bottom remnant box: the pyramidal lobe marks where the lowest segment of the thyroglossal duct persisted above the isthmus."
+  }
+ },
+ {
+  "id": "en5r04",
+  "tags": [
+   "drug-mechanism",
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-en5-03"
+  ],
+  "q": "Which agent blocks iodide uptake at the sodium-iodide symporter?",
+  "o": [
+   "Perchlorate",
+   "Methimazole",
+   "Propylthiouracil",
+   "Lithium",
+   "Amiodarone"
+  ],
+  "a": 0,
+  "x": "Perchlorate, like pertechnetate, is an anion of similar size and charge to iodide, so it competes for the basolateral sodium-iodide symporter and starves the gland of substrate.",
+  "w": {
+   "Methimazole": "Methimazole acts later, inhibiting thyroid peroxidase so iodide already inside the cell is not organified or coupled; trapping continues normally.",
+   "Propylthiouracil": "Propylthiouracil blocks thyroid peroxidase and peripheral 5'-deiodinase; neither action prevents the transporter from concentrating iodide.",
+   "Lithium": "Lithium is concentrated by the gland and inhibits hormone release from thyroglobulin, which is why it causes goiter and hypothyroidism, not an uptake block.",
+   "Amiodarone": "Amiodarone delivers a huge iodine load and inhibits deiodinase; it floods the gland with iodide rather than blocking its entry."
+  },
+  "media": "fig:en5_synthesis",
+  "pt": {
+   "hl": [
+    "Sodium-iodide symporter",
+    "perchlorate"
+   ],
+   "say": "Step 1 on the blood side: the sodium-iodide symporter traps iodide, and perchlorate or pertechnetate competes for it."
+  }
+ },
+ {
+  "id": "en5r05",
+  "tags": [
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-en5-03",
+   "BP-en5-04"
+  ],
+  "q": "Which enzyme attaches iodine to tyrosines on thyroglobulin?",
+  "o": [
+   "Thyroid peroxidase",
+   "5'-deiodinase",
+   "Tyrosine hydroxylase",
+   "Lysosomal protease",
+   "Iodotyrosine dehalogenase"
+  ],
+  "a": 0,
+  "x": "Thyroid peroxidase, on the apical membrane, oxidizes iodide and iodinates tyrosine residues on thyroglobulin to form MIT and DIT, then couples them; thionamides inhibit it.",
+  "w": {
+   "5'-deiodinase": "Deiodinase removes iodine rather than adding it, converting T4 into T3 in peripheral tissues after the hormone is secreted.",
+   "Tyrosine hydroxylase": "Tyrosine hydroxylase adds a hydroxyl group to make L-DOPA, the first step of catecholamine synthesis, not iodination.",
+   "Lysosomal protease": "Lysosomal proteases digest thyroglobulin after endocytosis to free finished T4 and T3; iodination happened earlier in the colloid.",
+   "Iodotyrosine dehalogenase": "This enzyme strips iodine from free MIT and DIT released during proteolysis so the gland can recycle it; it removes rather than attaches iodine."
+  },
+  "media": "fig:en5_synthesis",
+  "pt": {
+   "hl": [
+    "Thyroid peroxidase"
+   ],
+   "say": "In the colloid column, step 2 shows thyroid peroxidase iodinating tyrosines on thyroglobulin, the step methimazole and PTU block."
+  }
+ },
+ {
+  "id": "en5r06",
+  "tags": [
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-en5-04"
+  ],
+  "q": "Coupling which two iodotyrosines produces T3?",
+  "o": [
+   "MIT and DIT",
+   "DIT and DIT",
+   "MIT and MIT",
+   "DIT and reverse T3",
+   "MIT and tyrosine"
+  ],
+  "a": 0,
+  "x": "Coupling MIT and DIT gives triiodothyronine, T3, with three iodines, while DIT plus DIT gives T4 with four; thyroid peroxidase performs both couplings on thyroglobulin.",
+  "w": {
+   "DIT and DIT": "Two DITs carry four iodines between them, so their coupling makes T4, the main secreted product, not T3.",
+   "MIT and MIT": "Two MITs would carry only two iodines, which forms no active thyroid hormone; MIT is used only in combination with DIT.",
+   "DIT and reverse T3": "Reverse T3 is an inactive peripheral product of inner-ring deiodination of T4; it is never a coupling substrate in the colloid.",
+   "MIT and tyrosine": "Uniodinated tyrosine residues are not coupled; iodination by thyroid peroxidase must come first, making MIT or DIT before any coupling."
+  },
+  "media": "fig:en5_synthesis",
+  "pt": {
+   "hl": [
+    "MIT + DIT"
+   ],
+   "say": "Look at step 3 in the colloid: coupling MIT and DIT makes T3, while DIT plus DIT makes T4."
+  }
+ },
+ {
+  "id": "en5r07",
+  "tags": [
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-en5-04"
+  ],
+  "q": "Which hormone makes up most of the thyroid gland's secretion?",
+  "o": [
+   "T4",
+   "T3",
+   "Reverse T3",
+   "Calcitonin",
+   "Thyroglobulin"
+  ],
+  "a": 0,
+  "x": "About 80 percent of secreted hormone is T4, a prohormone with a long half-life; tissue 5'-deiodinase converts it to T3, which binds the nuclear receptor far more strongly.",
+  "w": {
+   "T3": "T3 is the active hormone, but only about 20 percent of it comes straight from the gland; most is made in tissues from T4.",
+   "Reverse T3": "Reverse T3 is an inactive product of inner-ring deiodination in tissues; the gland secretes very little of it.",
+   "Calcitonin": "Calcitonin comes from the parafollicular C cells in small amounts and lowers calcium; it is not a metabolic thyroid hormone.",
+   "Thyroglobulin": "Thyroglobulin is the storage scaffold in the colloid; only traces leak into blood, which is why it serves as a tumor marker after thyroidectomy."
+  },
+  "media": "fig:en5_synthesis",
+  "pt": {
+   "hl": [
+    "T4 (80%) and"
+   ],
+   "say": "Read the blood column: T4 makes up about 80 percent of what the gland releases, and T3 only about 20 percent."
+  }
+ },
+ {
+  "id": "en5r08",
+  "tags": [
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-en5-05"
+  ],
+  "q": "What is the brief block of organification after a large iodide load called?",
+  "o": [
+   "Wolff-Chaikoff effect",
+   "Jod-Basedow phenomenon",
+   "Sick euthyroid syndrome",
+   "Hashitoxicosis",
+   "Hook effect"
+  ],
+  "a": 0,
+  "x": "The Wolff-Chaikoff effect is autoregulation: a large iodide load transiently inhibits organification, protecting against hormone excess; a normal gland escapes in days, but a damaged gland can become hypothyroid.",
+  "w": {
+   "Jod-Basedow phenomenon": "Jod-Basedow is the opposite outcome: iodine given to a deficient patient with autonomous nodules increases synthesis and causes thyrotoxicosis.",
+   "Sick euthyroid syndrome": "Sick euthyroid syndrome is reduced peripheral conversion of T4 to T3 during severe illness, with high reverse T3, not an organification block.",
+   "Hashitoxicosis": "Hashitoxicosis is the transient thyrotoxic leak of stored hormone early in Hashimoto thyroiditis, caused by follicle destruction rather than iodide.",
+   "Hook effect": "The hook effect is an immunoassay artifact in which huge antigen levels give a falsely low result, as with giant prolactinomas; it is not physiology."
+  },
+  "media": "fig:en5_synthesis",
+  "pt": {
+   "hl": [
+    "Wolff-Chaikoff"
+   ],
+   "say": "In the colloid column, the Wolff-Chaikoff line marks how iodide excess briefly halts organification by thyroid peroxidase."
+  }
+ },
+ {
+  "id": "en5r09",
+  "tags": [
+   "hormone-source",
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-en5-05"
+  ],
+  "q": "Iodinated contrast makes a patient with an iodine-deficient nodular goiter thyrotoxic. What is this called?",
+  "o": [
+   "Jod-Basedow phenomenon",
+   "Wolff-Chaikoff effect",
+   "Hashitoxicosis",
+   "Thyroid storm",
+   "de Quervain thyroiditis"
+  ],
+  "a": 0,
+  "x": "In the Jod-Basedow phenomenon, autonomous nodules that were substrate-limited by iodine deficiency convert the new iodine into excess hormone, because they do not respond to TSH suppression.",
+  "w": {
+   "Wolff-Chaikoff effect": "The Wolff-Chaikoff effect is a transient shutdown of organification after iodide excess, which tends toward hypothyroidism rather than thyrotoxicosis.",
+   "Hashitoxicosis": "Hashitoxicosis is a brief leak of stored hormone from autoimmune follicle destruction; it is not triggered by an iodine load on nodules.",
+   "Thyroid storm": "Thyroid storm is life-threatening decompensated thyrotoxicosis with fever and delirium; contrast can precipitate it, but iodine-fueled nodular overproduction has its own name.",
+   "de Quervain thyroiditis": "De Quervain thyroiditis follows a viral illness and causes a painful, tender gland with a high ESR and low uptake, not iodine-driven synthesis."
+  },
+  "media": "fig:en6_uptake",
+  "pt": {
+   "hl": [
+    "toxic multinodular goiter"
+   ],
+   "say": "In the high-uptake panel, the toxic multinodular goiter holds autonomous nodules; given iodine, they produce the Jod-Basedow phenomenon."
+  }
+ },
+ {
+  "id": "en5r10",
+  "tags": [
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-en5-06"
+  ],
+  "q": "Thyroid hormone raises heart rate chiefly by increasing which receptor?",
+  "o": [
+   "Beta-1 adrenergic receptor",
+   "Alpha-1 adrenergic receptor",
+   "M2 muscarinic receptor",
+   "Beta-2 adrenergic receptor",
+   "Dopamine D1 receptor"
+  ],
+  "a": 0,
+  "x": "T3 increases transcription of cardiac beta-1 adrenergic receptors, so normal catecholamine levels produce more tachycardia and contractility; that is why beta-blockers relieve thyrotoxic symptoms quickly.",
+  "w": {
+   "Alpha-1 adrenergic receptor": "Alpha-1 receptors constrict vascular smooth muscle; thyrotoxicosis actually lowers systemic vascular resistance, and alpha-1 activity does not set heart rate.",
+   "M2 muscarinic receptor": "M2 receptors carry vagal slowing of the sinoatrial node; more M2 signaling would lower heart rate, the opposite of thyrotoxic tachycardia.",
+   "Beta-2 adrenergic receptor": "Beta-2 receptors relax bronchial and vascular smooth muscle; they contribute little to sinus rate, which is driven by cardiac beta-1 receptors.",
+   "Dopamine D1 receptor": "D1 receptors dilate renal and splanchnic vessels; thyroid hormone does not raise heart rate through dopaminergic signaling."
+  },
+  "media": "fig:en5_synthesis",
+  "pt": {
+   "hl": [
+    "beta-1 receptors"
+   ],
+   "say": "Look at the tissue band: T3 on its nuclear receptor induces beta-1 receptors, which raises heart rate and contractility."
+  }
+ },
+ {
+  "id": "en5r11",
+  "tags": [
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-en5-15",
+   "BP-en5-07"
+  ],
+  "q": "Which lab pattern indicates central hypothyroidism?",
+  "o": [
+   "Low free T4, normal or low TSH",
+   "Low free T4, high TSH",
+   "Normal free T4, high TSH",
+   "High free T4, low TSH",
+   "Normal free T4, low TSH"
+  ],
+  "a": 0,
+  "x": "In central hypothyroidism the pituitary or hypothalamus fails, so TSH cannot rise as free T4 falls; it stays low or inappropriately normal, and screening by TSH alone misses it.",
+  "w": {
+   "Low free T4, high TSH": "A high TSH with low free T4 means the gland itself is failing, as in Hashimoto thyroiditis, while the pituitary responds normally.",
+   "Normal free T4, high TSH": "This is subclinical hypothyroidism: early gland failure in which TSH rises first to hold free T4 in range.",
+   "High free T4, low TSH": "An autonomous or stimulated gland, as in Graves disease, suppresses TSH through feedback; this is primary hyperthyroidism.",
+   "Normal free T4, low TSH": "This is subclinical hyperthyroidism, or T3 toxicosis if T3 is high; hCG in the first trimester can also produce it."
+  },
+  "media": "fig:en5_tft",
+  "pt": {
+   "hl": [
+    "Central hypothyroidism",
+    "TSH inappropriately normal"
+   ],
+   "say": "Find the low free T4 column: central hypothyroidism sits where TSH is inappropriately normal or low, because the pituitary cannot respond."
+  }
+ },
+ {
+  "id": "en5r12",
+  "tags": [
+   "binding-proteins"
+  ],
+  "bp": [
+   "BP-en5-08"
+  ],
+  "q": "Which drug raises total T4 while leaving free T4 normal?",
+  "o": [
+   "Oral estrogen",
+   "Testosterone",
+   "Prednisone",
+   "Methimazole",
+   "Lithium"
+  ],
+  "a": 0,
+  "x": "Oral estrogen increases hepatic synthesis of thyroxine-binding globulin, so more T4 is bound; the gland makes extra until free T4 and TSH are normal again, leaving only total T4 high.",
+  "w": {
+   "Testosterone": "Androgens lower thyroxine-binding globulin, so total T4 falls, not rises, while free T4 and TSH stay normal.",
+   "Prednisone": "Glucocorticoids lower binding globulin and inhibit 5'-deiodinase, so total T4 tends to fall and T3 drops; they do not raise total T4.",
+   "Methimazole": "Methimazole blocks thyroid peroxidase, reducing synthesis of both total and free T4 rather than changing binding proteins.",
+   "Lithium": "Lithium inhibits release of hormone from the gland and can cause hypothyroidism with a high TSH; it lowers free and total T4."
+  },
+  "media": "fig:en5_tft",
+  "pt": {
+   "hl": [
+    "Euthyroid"
+   ],
+   "say": "In the center box the patient is euthyroid; oral estrogen raises binding globulin, which moves total T4 but not free T4."
+  }
+ },
+ {
+  "id": "en5r13",
+  "tags": [
+   "hormone-synthesis",
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-en5-10"
+  ],
+  "q": "Which finding marks sick euthyroid syndrome?",
+  "o": [
+   "High reverse T3",
+   "High TSH",
+   "High free T4",
+   "Positive anti-TPO antibodies",
+   "High thyroglobulin"
+  ],
+  "a": 0,
+  "x": "Severe illness inhibits 5'-deiodinase, so T3 falls while inner-ring deiodination makes more reverse T3, which is also cleared slowly; TSH and free T4 stay near normal, and no treatment is needed.",
+  "w": {
+   "High TSH": "A high TSH signals primary hypothyroidism; in sick euthyroid syndrome TSH is normal or low, sometimes briefly rising during recovery.",
+   "High free T4": "High free T4 with suppressed TSH marks thyrotoxicosis; critical illness leaves free T4 normal or slightly low.",
+   "Positive anti-TPO antibodies": "Anti-thyroid peroxidase antibodies mark autoimmune thyroid disease such as Hashimoto thyroiditis, an intrinsic gland problem unrelated to illness.",
+   "High thyroglobulin": "Thyroglobulin rises when follicles are destroyed or stimulated, as in thyroiditis or Graves disease, not with reduced peripheral deiodination."
+  },
+  "media": "fig:en5_tft",
+  "pt": {
+   "hl": [
+    "high reverse T3"
+   ],
+   "say": "Look at the low TSH, low free T4 corner: severe illness gives low T3 with high reverse T3, the sick euthyroid pattern."
+  }
+ },
+ {
+  "id": "en5r14",
+  "tags": [
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-en5-12"
+  ],
+  "q": "Which follicle appearance shows active stimulation by TSH or Graves antibodies?",
+  "o": [
+   "Tall columnar cells, scalloped colloid",
+   "Flat cells, abundant dense colloid",
+   "Lymphoid follicles with germinal centers",
+   "Granulomas with multinucleated giant cells",
+   "Dense fibrosis replacing follicles"
+  ],
+  "a": 0,
+  "x": "Stimulation makes follicular cells tall and columnar, and rapid endocytosis leaves scalloped, pale colloid at the cell edge; a resting follicle has flatter cells and abundant stored colloid.",
+  "w": {
+   "Flat cells, abundant dense colloid": "Flat cells full of stored colloid are a resting or suppressed follicle, as when TSH is low, the opposite of active stimulation.",
+   "Lymphoid follicles with germinal centers": "Germinal centers and Hurthle cells define Hashimoto thyroiditis, an autoimmune destruction that eventually lowers hormone output.",
+   "Granulomas with multinucleated giant cells": "Granulomas with giant cells mark subacute granulomatous (de Quervain) thyroiditis, a painful, destructive process after a viral illness.",
+   "Dense fibrosis replacing follicles": "Fibrosis extending beyond the capsule is Riedel thyroiditis, a hard, fixed gland that is usually euthyroid or hypothyroid."
+  },
+  "media": "fig:en6_graves",
+  "pt": {
+   "hl": [
+    "tall cells, scalloped colloid"
+   ],
+   "say": "In the follicular-cell box, Graves antibodies produce tall cells with scalloped colloid, the look of a gland that is actively stimulated."
+  }
+ }
+]

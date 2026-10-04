@@ -1,0 +1,369 @@
+{
+ "id": "rp13",
+ "t": "The cervix, HPV and cervical cancer screening",
+ "sub": "Why cervical cancer starts in the transformation zone, how HPV E6 and E7 drive it, and how screening catches it early.",
+ "yld": "hi",
+ "exam": "hi",
+ "mins": 14,
+ "bp": [
+  "BP-rp13-01",
+  "BP-rp13-02",
+  "BP-rp13-03",
+  "BP-rp13-04",
+  "BP-rp13-05",
+  "BP-rp13-06",
+  "BP-rp13-07",
+  "BP-rp13-08",
+  "BP-rp13-09",
+  "BP-rp13-10",
+  "BP-rp13-11",
+  "BP-rp13-12",
+  "BP-rp13-13",
+  "BP-rp13-14"
+ ],
+ "obj": [
+  "HP-CERVIX-VULVA.1",
+  "HP-CERVIX-VULVA.2",
+  "HP-CERVIX-VULVA.8",
+  "HP-CERVIX-VULVA.9",
+  "PATHPHARM-CERVIX-HPV.1",
+  "PATHPHARM-CERVIX-HPV.2",
+  "PATHPHARM-CERVIX-HPV.3",
+  "PATHPHARM-CERVIX-HPV.4",
+  "SIM-COLPO.1",
+  "SIM-COLPO.2",
+  "SIM-COLPO.3",
+  "BICEP-BROWN.1",
+  "BICEP-BROWN.3",
+  "BICEP-BROWN.4"
+ ],
+ "pretest": [
+  {
+   "q": "Which HPV protein inactivates the retinoblastoma (Rb) protein?",
+   "o": [
+    "E7",
+    "E6",
+    "L1",
+    "E2"
+   ],
+   "a": 0,
+   "why": "E7 binds Rb and releases E2F transcription factors, so the cell passes from G1 into S phase without its normal checkpoint; E6 is the partner protein that destroys p53.",
+   "w": {
+    "E6": "E6 attacks the other brake: it binds p53 and tags it for ubiquitin-mediated destruction, so damaged cells avoid arrest and apoptosis.",
+    "L1": "L1 is the major capsid protein that builds the viral shell; the vaccine uses it to make virus-like particles, and it has no role in the cell cycle.",
+    "E2": "E2 is the viral repressor that normally keeps E6 and E7 low; integration into host DNA disrupts E2, which is why expression of the oncoproteins rises."
+   }
+  },
+  {
+   "q": "Where on the cervix does squamous metaplasia create the cells that high-risk HPV transforms?",
+   "o": [
+    "Transformation zone",
+    "Internal os",
+    "Mid-portion of the ectocervix",
+    "Vaginal fornix"
+   ],
+   "a": 0,
+   "why": "Estrogen everts columnar epithelium onto the ectocervix, and acidic vaginal fluid drives it to become squamous. The immature metaplastic cells of this transformation zone are the ones HPV infects and transforms.",
+   "w": {
+    "Internal os": "The internal os is where the endocervical canal meets the uterine cavity; it is lined by glandular cells and is not the usual site of squamous neoplasia.",
+    "Mid-portion of the ectocervix": "The outer ectocervix carries mature, glycogen-rich squamous epithelium that finished metaplasia long ago, so it is far less vulnerable to viral transformation.",
+    "Vaginal fornix": "The fornix is lined by vaginal squamous epithelium; vaginal cancers are rare and usually spread from the cervix rather than arising there first."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Why does cervical cancer start in the transformation zone?"
+  ],
+  [
+   "p",
+   "The cervix has two linings that meet at a line. The **ectocervix**, the part that bulges into the vagina, is covered by tough stratified squamous epithelium, while the **endocervix** lines the canal with columnar cells whose crypts secrete mucus. Estrogen at puberty everts the columnar lining onto the ectocervix, and the acidic vagina then converts that exposed lining to squamous epithelium by **metaplasia**. The band between the original and the active squamocolumnar junction is the {{rp13_tz|transformation zone}}, and its immature metaplastic cells are the cells that high-risk HPV infects and transforms."
+  ],
+  [
+   "f",
+   "rp13_tz"
+  ],
+  [
+   "p",
+   "Endocervical **mucus** changes with the cycle: estrogen near ovulation makes it thin and stretchy so sperm can pass, and progesterone thickens it into a barrier. When metaplastic epithelium grows over a crypt opening, the trapped mucus forms a {{rp13_nabothian|nabothian cyst}}, a smooth, harmless dome that needs no treatment. Sampling also depends on the zone. A Pap specimen with too few squamous cells, or one hidden by blood or inflammation, is reported as **unsatisfactory** and repeated in 2 to 4 months, because the cells most likely to be abnormal may never have been collected."
+  ],
+  [
+   "call",
+   "trap",
+   "After menopause the junction hides in the canal",
+   "Low estrogen lets the squamocolumnar junction recede up the endocervical canal, so a spatula on the ectocervix can miss the **transformation zone**. Use an endocervical brush, and expect colposcopy to be inadequate when the whole junction cannot be seen; **endocervical curettage** then samples the canal. A report that no endocervical or zone cells were seen means the most vulnerable cells were not examined."
+  ],
+  [
+   "h",
+   "How does high-risk HPV turn a cervical cell into a cancer cell?"
+  ],
+  [
+   "p",
+   "Human papillomavirus is a small, nonenveloped DNA virus that reaches basal cells through tiny epithelial breaks. Low-risk types 6 and 11 cause genital warts, while **high-risk** types, above all 16 and then 18, cause most cervical cancers. Most infections clear within one to two years, so the requirement for cancer is **persistent** infection. Persistence lets the viral genome **integrate** into host DNA, and integration usually breaks the viral E2 gene, the repressor that keeps the E6 and E7 oncogenes quiet. With E2 gone, E6 and E7 are overexpressed and switch off two key tumor suppressors."
+  ],
+  [
+   "f",
+   "rp13_e6e7"
+  ],
+  [
+   "t",
+   [
+    "Viral protein",
+    "Host target",
+    "What the cell loses",
+    "Why it matters"
+   ],
+   [
+    [
+     "**E6**",
+     "p53",
+     "Arrest and apoptosis after DNA damage",
+     "Mutations accumulate unchecked"
+    ],
+    [
+     "**E7**",
+     "Rb",
+     "The G1 checkpoint, as E2F is released",
+     "Cells enter S phase at will; p16 rises"
+    ],
+    [
+     "E2, lost at integration",
+     "Viral E6 and E7 genes",
+     "Control of viral oncogene output",
+     "Explains why integration is the key step"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "key",
+   "E6 destroys p53; E7 disables Rb",
+   "**E6** binds p53 and sends it to the proteasome, and **E7** binds Rb and frees E2F. Because working Rb normally holds p16 down, E7 activity makes p16 pile up, so diffuse block {{rp13_p16|p16 staining}} marks a lesion driven by high-risk HPV."
+  ],
+  [
+   "h",
+   "How do CIN grades map onto LSIL and HSIL?"
+  ],
+  [
+   "p",
+   "**Cervical intraepithelial neoplasia** (CIN) is graded by how far atypical, basal-type cells climb up the epithelium. In CIN 1 they occupy the **lower third**, in CIN 2 the lower two-thirds, and in CIN 3 more than two-thirds up to the full thickness, which includes **carcinoma in situ**. Because the basement membrane is intact in every grade, CIN cannot metastasize. The two-tier squamous intraepithelial lesion terms group CIN 1 as LSIL and CIN 2 or 3 as HSIL. {{rp13_koil|Koilocytes}}, squamous cells with wrinkled, raisinoid nuclei and a clear perinuclear halo, show productive viral infection and are typical of LSIL. CIN 1 usually regresses, whereas CIN 3 tends to progress, and diffuse p16 staining settles a lesion that looks like CIN 2 as HSIL."
+  ],
+  [
+   "f",
+   "rp13_cin"
+  ],
+  [
+   "steps",
+   [
+    "From HPV infection to invasive carcinoma",
+    [
+     [
+      "Infection of the transformation zone",
+      "Virus enters immature basal cells through microabrasions, and most women clear it within two years."
+     ],
+     [
+      "Persistence and integration",
+      "In a minority the infection persists, especially with type 16, smoking or immunosuppression, and the viral DNA integrates into the host genome."
+     ],
+     [
+      "E6 and E7 overexpression",
+      "Loss of E2 releases the oncoproteins, p53 and Rb stop working, and dividing cells collect mutations; this is CIN 2 and CIN 3."
+     ],
+     [
+      "Breach of the basement membrane",
+      "Invasion of the stroma turns HSIL into carcinoma, usually over many years, so screening every few years works."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Who is screened, with which test, and how often?"
+  ],
+  [
+   "p",
+   "Screening looks for **precancer** in people without symptoms, and its rules follow how slowly HPV lesions progress. Average-risk screening starts at age 21, whatever the sexual history. From 21 to 29, **cytology** alone is repeated every 3 years, because HPV infection is so common and transient at these ages that testing for it would flag lesions destined to regress. From 30 to 65, the USPSTF options are primary HPV testing every 5 years, a **cotest** (cytology plus HPV) every 5 years, or cytology alone every 3 years; the American Cancer Society starts primary HPV testing at 25. Screening stops after 65 when prior results were adequately negative, and after a total hysterectomy for benign disease."
+  ],
+  [
+   "t",
+   [
+    "Group",
+    "Recommended test",
+    "Interval or condition"
+   ],
+   [
+    [
+     "21 to 29",
+     "Cytology alone",
+     "Every 3 years"
+    ],
+    [
+     "30 to 65",
+     "Primary HPV test, cotest, or cytology alone",
+     "5 years, 5 years, or 3 years"
+    ],
+    [
+     "Over 65 with adequate negative results",
+     "Stop screening",
+     "No CIN 2 or worse in the past 25 years"
+    ],
+    [
+     "Total hysterectomy for benign disease",
+     "Stop screening",
+     "Cervix removed; no high-grade history"
+    ],
+    [
+     "HIV or other immunosuppression",
+     "Start within a year of sexual debut or at diagnosis",
+     "More often, and lifelong"
+    ]
+   ]
+  ],
+  [
+   "f",
+   "rp13_screen"
+  ],
+  [
+   "p",
+   "Screening, diagnosis and treatment are separate steps. A **screening** test, cytology or HPV testing, sorts well people by risk and never makes a diagnosis. **Diagnosis** comes from {{rp13_colpo|colposcopy}}: the cervix is magnified after acetic acid is applied, abnormal areas turn white, and those areas are biopsied, with endocervical curettage when the zone extends up the canal. ASCCP guidelines base each decision on the estimated risk of CIN 3 or worse; at roughly 4 percent immediate risk, colposcopy is advised. Biopsy-proven LSIL is usually watched with repeat testing, while HSIL is treated by excision with a {{rp13_leep|loop electrosurgical excision procedure}} (LEEP) or by cold-knife **conization**."
+  ],
+  [
+   "call",
+   "trap",
+   "Excision treats precancer but can weaken the cervix",
+   "Removing a cone of cervical stroma treats HSIL, but the shorter, weaker cervix can dilate painlessly in a later pregnancy: **cervical insufficiency**, with second-trimester loss or **preterm** birth. Cold-knife cones remove more tissue and carry more risk than LEEP, and punch biopsies carry essentially none."
+  ],
+  [
+   "why",
+   "Why does dysplastic epithelium turn white when acetic acid is applied at colposcopy?",
+   "Acetic acid briefly dehydrates cells and coagulates their nuclear proteins. Normal mature squamous cells are mostly cytoplasm and glycogen, so light passes through them to the red stroma beneath and the surface looks pink. Dysplastic cells have large nuclei and little cytoplasm, so a field of them is dense with coagulated nuclear protein that reflects light, and the area turns acetowhite. Because the whitening tracks nuclear density, it marks where the highest-grade cells are, which is exactly where the colposcopist aims the biopsy."
+  ],
+  [
+   "h",
+   "How does invasive cervical cancer present, and how does it kill?"
+  ],
+  [
+   "p",
+   "About three-quarters of invasive cervical cancers are **squamous cell carcinoma**; adenocarcinoma, from the glandular cells of the canal, comes second and is linked more closely to HPV 18. Risk follows HPV exposure and persistence: early first intercourse, many partners, smoking, immunosuppression, HIV and long gaps in screening. Early cancers are silent and found only by screening, while larger tumors cause **postcoital** bleeding, irregular bleeding and a watery, blood-tinged discharge. The tumor spreads by direct extension into the parametria and pelvic side walls, where it compresses the ureters, and the resulting bilateral **hydronephrosis** and renal failure are a leading cause of death."
+  ],
+  [
+   "h",
+   "How do vaccination, HIV and cervicitis change the plan?"
+  ],
+  [
+   "p",
+   "The HPV **vaccine** is primary prevention. The **9-valent** vaccine contains recombinant L1 capsid proteins that self-assemble into virus-like particles, so it carries no viral DNA and cannot cause infection; it covers types 6, 11, 16, 18, 31, 33, 45, 52 and 58. It is given routinely at age 11 or 12, as two doses if started before 15 and three doses after that or with immunosuppression, with catch-up through age 26 and shared decisions from 27 to 45. Vaccinated women still follow the same screening schedule, because the vaccine does not cover every oncogenic type or clear an infection already present."
+  ],
+  [
+   "p",
+   "HIV changes the timeline because immunosuppression lets HPV persist: the lower the **CD4** count, the higher the rates of persistent infection and CIN. Women with HIV begin screening within a year of sexual debut or at diagnosis, screen more often, and never age out at 65. People with HIV also face more **anal cancer**, because the anal canal has its own transformation zone that the same virus infects, so they are offered anal cytology. **Cervicitis** is a separate problem: chlamydia or gonorrhea causes a mucopurulent endocervical discharge and a friable cervix that bleeds when swabbed, and nucleic acid amplification testing finds the organism."
+  ],
+  [
+   "t",
+   [
+    "Preventive service",
+    "Who",
+    "When"
+   ],
+   [
+    [
+     "Chlamydia and gonorrhea NAAT",
+     "Sexually active women",
+     "Age 24 and younger, or older with risk"
+    ],
+    [
+     "Mammography",
+     "Average-risk women",
+     "Every 2 years from 40 to 74 (USPSTF)"
+    ],
+    [
+     "Colorectal cancer screening",
+     "Average-risk adults",
+     "From 45 to 75"
+    ]
+   ]
+  ],
+  [
+   "vis",
+   "rp13"
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp13_zone",
+    "q": "A 60-year-old's colposcopy cannot show the whole squamocolumnar junction. Which reasoning best explains the next step?",
+    "o": [
+     "The junction has spread outward across the ectocervix after menopause, so a wider ectocervical biopsy will capture the zone",
+     "Low estrogen has made the transformation zone disappear, so the patient no longer needs any cervical sampling",
+     "Low estrogen has drawn the junction up the canal, so the unseen zone must be sampled by endocervical curettage",
+     "Chronic inflammation has hidden the junction, so treating cervicitis first will bring the zone back into view"
+    ],
+    "a": 2,
+    "why": "Estrogen keeps the cervix large and everted; after menopause the cervix shrinks and the squamocolumnar junction retreats into the endocervical canal. The transformation zone still exists, and it is still where HPV-driven lesions live, but it is now out of sight, so the colposcopy is inadequate. Endocervical curettage samples the canal where the hidden zone lies. Biopsying the visible ectocervix samples mature squamous epithelium that is rarely the problem, and inflammation does not set the junction's position."
+   }
+  ],
+  [
+   "why",
+   "Why can HPV testing be spaced every 5 years when cytology alone needs every 3 years?",
+   "A negative HPV test means no high-risk virus is present, and without the virus a precancer cannot develop, so the risk of CIN 3 over the next five years is very low. Cytology is a single look at cells and misses a meaningful share of existing lesions, so its negative result is less reassuring and must be repeated sooner. Because progression from new infection to invasive cancer usually takes many years, a five-year gap after a negative HPV test still catches lesions long before they invade."
+  ]
+ ],
+ "grid": {
+  "q": "Which of these raise the risk of cervical cancer?",
+  "items": [
+   [
+    "Persistent HPV 16 infection",
+    1
+   ],
+   [
+    "Cigarette smoking",
+    1
+   ],
+   [
+    "HIV infection with a low CD4 count",
+    1
+   ],
+   [
+    "Early age at first intercourse",
+    1
+   ],
+   [
+    "Many sexual partners",
+    1
+   ],
+   [
+    "Long gaps in cervical screening",
+    1
+   ],
+   [
+    "Immunosuppressive drugs after a transplant",
+    1
+   ],
+   [
+    "Persistent HPV 18 infection",
+    1
+   ],
+   [
+    "HPV 6 or 11 infection",
+    0
+   ],
+   [
+    "Obesity with unopposed estrogen",
+    0
+   ],
+   [
+    "Never having given birth",
+    0
+   ],
+   [
+    "Germline BRCA1 mutation",
+    0
+   ],
+   [
+    "Completed 9-valent vaccination",
+    0
+   ]
+  ]
+ }
+}

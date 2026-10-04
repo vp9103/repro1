@@ -1,0 +1,174 @@
+{
+  "gaps": [
+    {
+      "concept": "BPH histology shows papillary gland infoldings and often corpora amylacea within enlarged glands.",
+      "why_tested": "A prostate specimen shows benign glandular proliferation with laminated luminal concretions.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Five-alpha-reductase inhibitors can cause decreased libido, erectile dysfunction, and gynecomastia.",
+      "why_tested": "A patient develops sexual adverse effects after starting finasteride for urinary symptoms.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Alpha-1A blockade can impair ejaculation.",
+      "why_tested": "A patient develops abnormal ejaculation after starting tamsulosin.",
+      "yield": "mid"
+    },
+    {
+      "concept": "PSA rises with BPH and prostatitis as well as cancer; an elevated value is not cancer-specific.",
+      "why_tested": "A patient with a tender prostate or benign enlargement has an elevated PSA.",
+      "yield": "hi"
+    },
+    {
+      "concept": "The free-to-total PSA ratio tends to be lower in prostate cancer than in BPH.",
+      "why_tested": "Two patients have similar total PSA values, and the question asks which is more likely to have cancer.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Prostate cancer may feel hard and irregular on digital rectal examination; BPH typically causes smooth, symmetric enlargement.",
+      "why_tested": "An examination finding must distinguish malignancy from benign enlargement.",
+      "yield": "hi"
+    },
+    {
+      "concept": "High-grade prostatic intraepithelial neoplasia is a carcinoma precursor with atypical luminal cells but retained basal cells.",
+      "why_tested": "A biopsy shows atypical glands with an intact basal-cell layer.",
+      "yield": "hi"
+    },
+    {
+      "concept": "TMPRSS2–ERG fusion drives androgen-regulated ERG expression in many prostate cancers; PTEN loss can cooperate in progression.",
+      "why_tested": "A prostate tumor is described by its characteristic gene fusion or cooperating tumor-suppressor loss.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Prostate adenocarcinoma arises from secretory luminal epithelium; PSA, prostatic acid phosphatase, and NKX3.1 support prostatic origin in metastases.",
+      "why_tested": "Immunostains are used to identify the source of an adenocarcinoma in bone or a lymph node.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Continuous GnRH agonist exposure downregulates pituitary GnRH receptors, lowering LH, FSH, and testosterone after the initial flare.",
+      "why_tested": "Hormone levels are measured after sustained leuprolide treatment.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Androgen deprivation can cause hot flashes, reduced libido, gynecomastia, and bone loss.",
+      "why_tested": "A patient develops characteristic adverse effects during prostate cancer hormone therapy.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Abiraterone can cause mineralocorticoid excess with hypertension, hypokalemia, and fluid retention.",
+      "why_tested": "A patient develops a characteristic blood-pressure and electrolyte pattern after CYP17 inhibition.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Chronic pelvic pain syndrome causes persistent pelvic or perineal pain without a reproducibly positive bacterial culture.",
+      "why_tested": "Recurrent pelvic pain must be distinguished from chronic bacterial prostatitis.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Hypospadias is a ventral urethral opening caused by incomplete urethral-fold fusion, often with ventral curvature.",
+      "why_tested": "A newborn has a ventral meatus and a downward-curved penis.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Epispadias is a dorsal urethral opening associated with the bladder-exstrophy spectrum.",
+      "why_tested": "A newborn has a dorsal urethral defect and an exposed bladder.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Condyloma acuminata are exophytic genital warts caused mainly by HPV 6 and 11; histology shows koilocytes.",
+      "why_tested": "A penile wart is paired with its viral type or microscopic appearance.",
+      "yield": "hi"
+    },
+    {
+      "concept": "High-risk HPV E6 degrades p53 and E7 inactivates RB, promoting penile squamous neoplasia.",
+      "why_tested": "A question asks how HPV-associated penile carcinoma disrupts cell-cycle control.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Erythroplasia of Queyrat forms a velvety red glans plaque; Bowen disease a shaft plaque; bowenoid papulosis multiple papules.",
+      "why_tested": "The appearance and location of an in-situ penile squamous lesion must be identified.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Invasive penile squamous carcinoma breaches the basement membrane and may show keratin pearls.",
+      "why_tested": "A penile biopsy must distinguish carcinoma in situ from invasive disease.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Penile squamous carcinoma often presents as a persistent painless ulcer or exophytic mass and spreads to inguinal lymph nodes.",
+      "why_tested": "A nonhealing penile lesion is accompanied by enlarged groin nodes.",
+      "yield": "hi"
+    },
+    {
+      "concept": "An HPV-independent pathway to penile squamous carcinoma is associated with lichen sclerosus and chronic inflammation.",
+      "why_tested": "A carcinoma develops beside longstanding sclerotic penile lesions without evidence of high-risk HPV.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Candida commonly causes balanitis, particularly in uncircumcised patients or those with diabetes.",
+      "why_tested": "A patient with diabetes develops an inflamed, itchy glans and foreskin.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Genital herpes typically causes grouped painful vesicles that ulcerate; primary syphilis causes a painless, indurated chancre.",
+      "why_tested": "The morphology and pain of a penile lesion distinguish two common infections.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Chancroid causes a painful, soft-edged genital ulcer with tender suppurative inguinal lymphadenopathy.",
+      "why_tested": "A painful penile ulcer with a fluctuant groin node must be distinguished from syphilis.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Gonococcal urethritis classically produces purulent discharge; chlamydial urethritis often causes less conspicuous discharge.",
+      "why_tested": "Penile discharge and dysuria are used to distinguish likely infectious causes.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Parasympathetic S2–S4 activity mediates erection; sympathetic T11–L2 activity mediates emission and ejaculation.",
+      "why_tested": "A spinal or pelvic nerve lesion is linked to impaired erection or ejaculation.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Nitric oxide raises cavernosal cGMP to relax smooth muscle; PDE5 inhibitors prolong this signal during sexual stimulation.",
+      "why_tested": "A question asks for the physiologic mechanism of sildenafil or tadalafil.",
+      "yield": "hi"
+    },
+    {
+      "concept": "PDE5 inhibitors are contraindicated with nitrates because combined cGMP signaling can cause severe hypotension.",
+      "why_tested": "A patient taking nitroglycerin requests sildenafil.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Sildenafil can cause headache, flushing, and blue-tinged vision from PDE6 inhibition.",
+      "why_tested": "Visual color changes follow treatment for erectile dysfunction.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Preserved nocturnal or morning erections favor psychogenic over vascular or neurologic erectile dysfunction.",
+      "why_tested": "A patient reports situational erectile difficulty but retains spontaneous erections.",
+      "yield": "hi"
+    },
+    {
+      "concept": "SSRIs delay ejaculation and can be used for premature ejaculation; sexual dysfunction is also a common adverse effect.",
+      "why_tested": "A question asks why an SSRI helps premature ejaculation or causes sexual symptoms.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Ischemic priapism is painful, rigid, and low-flow; nonischemic priapism often follows trauma and is less painful.",
+      "why_tested": "An erection after perineal trauma must be distinguished from a painful low-flow episode.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Penile fracture classically causes an audible pop, immediate detumescence, swelling, and deformity; blood at the meatus suggests urethral injury.",
+      "why_tested": "A sudden injury during intercourse is identified from its characteristic sequence of findings.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Peyronie disease is associated with Dupuytren contracture, another fibrotic disorder.",
+      "why_tested": "A patient with penile curvature also has palmar fibrous contractures.",
+      "yield": "mid"
+    }
+  ]
+}

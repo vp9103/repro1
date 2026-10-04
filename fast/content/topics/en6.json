@@ -1,0 +1,365 @@
+{
+ "id": "en6",
+ "t": "Hyperthyroidism and thyroiditis",
+ "sub": "Why Graves disease, toxic nodules and thyroiditis all suppress TSH, how uptake separates making hormone from leaking it, and which treatment fits each patient.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 12,
+ "bp": [
+  "BP-en6-01",
+  "BP-en6-02",
+  "BP-en6-03",
+  "BP-en6-04",
+  "BP-en6-05",
+  "BP-en6-06",
+  "BP-en6-07",
+  "BP-en6-08",
+  "BP-en6-09",
+  "BP-en6-10",
+  "BP-en6-11",
+  "BP-en6-12",
+  "BP-en6-13",
+  "BP-en6-14",
+  "BP-en6-15",
+  "BP-en6-16"
+ ],
+ "obj": [
+  "ENDO-THYROID.3",
+  "ENDO-THYROID.2"
+ ],
+ "pretest": [
+  {
+   "q": "A thyrotoxic patient has very low radioactive iodine uptake. Which diagnosis fits best?",
+   "o": [
+    "Subacute granulomatous thyroiditis",
+    "Graves disease",
+    "Toxic multinodular goiter",
+    "Toxic adenoma"
+   ],
+   "a": 0,
+   "why": "Low uptake means the gland is not making new hormone. In subacute thyroiditis, damaged follicles leak stored hormone, which suppresses TSH, so the remaining cells stop trapping iodine. Graves disease and autonomous nodules synthesize hormone and take up iodine avidly.",
+   "w": {
+    "Graves disease": "Stimulating antibodies drive every follicle to trap iodine and make hormone, so uptake is high and diffuse across the whole gland.",
+    "Toxic multinodular goiter": "Autonomous nodules take up tracer avidly and produce a patchy scan with high or high-normal overall uptake, not a very low one.",
+    "Toxic adenoma": "A single autonomous nodule concentrates tracer as a hot spot while suppressing the rest of the gland; its own uptake is high."
+   }
+  },
+  {
+   "q": "Why is propylthiouracil preferred over methimazole in the first trimester of pregnancy?",
+   "o": [
+    "Methimazole can cause aplasia cutis and other birth defects",
+    "Propylthiouracil does not cross the placenta",
+    "Propylthiouracil never causes agranulocytosis",
+    "Methimazole is too slow to act in pregnancy"
+   ],
+   "a": 0,
+   "why": "Methimazole exposure during organogenesis is linked to aplasia cutis and choanal or esophageal atresia, so propylthiouracil is used in the first trimester. After that, patients switch back to methimazole, because propylthiouracil can cause severe liver injury.",
+   "w": {
+    "Propylthiouracil does not cross the placenta": "Both thionamides cross the placenta, so both can cause fetal goiter and hypothyroidism if overdosed; the choice rests on teratogenicity, not transfer.",
+    "Propylthiouracil never causes agranulocytosis": "Agranulocytosis is a shared, idiosyncratic risk of both drugs, so fever or sore throat on either one demands a neutrophil count.",
+    "Methimazole is too slow to act in pregnancy": "Methimazole is actually more potent and longer acting than propylthiouracil; its drawback in early pregnancy is structural birth defects."
+   }
+  },
+  {
+   "q": "Which type of hypersensitivity reaction causes Graves disease?",
+   "o": [
+    "Type II",
+    "Type I",
+    "Type III",
+    "Type IV"
+   ],
+   "a": 0,
+   "why": "Graves disease is antibody mediated: IgG binds a cell-surface antigen, the TSH receptor. It is the stimulating form of type II hypersensitivity, because the antibody activates the receptor instead of destroying the cell.",
+   "w": {
+    "Type I": "Type I reactions are IgE-mediated mast cell degranulation, as in anaphylaxis and asthma; no IgE is involved in Graves disease.",
+    "Type III": "Type III reactions deposit immune complexes in vessels and glomeruli, as in lupus; Graves antibodies act directly on a receptor instead.",
+    "Type IV": "Type IV reactions are delayed, T cell-mediated injury, as in contact dermatitis; the thyroid stimulation in Graves is carried by circulating IgG."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "What makes a thyroid overactive, and how do you tell the causes apart?"
+  ],
+  [
+   "p",
+   "**Thyrotoxicosis** is the clinical state of too much thyroid hormone; hyperthyroidism means the gland itself is overproducing. In every primary cause, free T4 or T3 is high and TSH is suppressed by negative feedback, so TSH cannot name the cause. Three mechanisms produce the excess. The gland can be driven to make new hormone, by stimulating antibodies in Graves disease, by autonomous nodules in a {{en6_mng|toxic multinodular goiter}} or a single toxic adenoma, or by hCG. Damaged follicles can leak **preformed** hormone, as in thyroiditis. Or the hormone can come from outside the gland, as in factitious ingestion or struma ovarii."
+  ],
+  [
+   "p",
+   "The {{en6_raiu|radioactive iodine uptake}} test sorts these mechanisms. A gland that is making hormone traps tracer avidly, so uptake is high: diffuse in Graves disease, patchy in a toxic multinodular goiter, and confined to one **hot nodule** in a toxic adenoma, where the nodule, usually carrying an activating TSH-receptor mutation, suppresses the rest of the gland. A gland that is leaking stored hormone, or that has been silenced by hormone taken from outside, has low uptake. Serum thyroglobulin then separates the two: it is high when injured follicles spill their colloid, and low in **factitious** thyrotoxicosis, because exogenous T4 suppresses TSH and the gland releases almost nothing."
+  ],
+  [
+   "f",
+   "en6_uptake"
+  ],
+  [
+   "t",
+   [
+    "Cause",
+    "Mechanism",
+    "Uptake",
+    "Clue"
+   ],
+   [
+    [
+     "Graves disease",
+     "Stimulating IgG against the TSH receptor",
+     "High, diffuse",
+     "Ophthalmopathy, pretibial myxedema"
+    ],
+    [
+     "Toxic multinodular goiter",
+     "Several autonomous nodules",
+     "High, patchy",
+     "Older patient, long-standing goiter"
+    ],
+    [
+     "Toxic adenoma",
+     "One nodule with an activating TSH-receptor mutation",
+     "Hot nodule, rest suppressed",
+     "Single palpable nodule"
+    ],
+    [
+     "hCG-driven",
+     "Very high hCG activates the TSH receptor",
+     "High",
+     "Molar pregnancy, hyperemesis gravidarum"
+    ],
+    [
+     "Subacute granulomatous thyroiditis",
+     "Virus-triggered granulomatous destruction",
+     "Low",
+     "Painful gland, high ESR"
+    ],
+    [
+     "Painless or postpartum thyroiditis",
+     "Lymphocytic destruction",
+     "Low",
+     "Painless; within a year of delivery"
+    ],
+    [
+     "Factitious thyrotoxicosis",
+     "Ingested thyroid hormone",
+     "Low",
+     "Low thyroglobulin, small gland"
+    ],
+    [
+     "Struma ovarii",
+     "Thyroid tissue in an ovarian teratoma",
+     "Low in neck, high in pelvis",
+     "Adnexal mass"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "Thionamides cannot stop a leak",
+   "In a destructive thyroiditis the excess hormone is already made, so blocking thyroid peroxidase with a **thionamide** does nothing useful. Treat the adrenergic symptoms with a **beta-blocker**, add NSAIDs or glucocorticoids for the pain of subacute thyroiditis, and wait: the leak stops when the stores run out. Reserve methimazole for disorders that truly overproduce hormone."
+  ],
+  [
+   "h",
+   "How does one antibody cause the goiter, the eyes and the shins in Graves disease?"
+  ],
+  [
+   "p",
+   "Graves disease is the commonest cause of hyperthyroidism, most often in women aged 20 to 40, and it is linked to HLA-DR3. B cells make {{en6_tsi|thyroid-stimulating immunoglobulin}}, an IgG that binds the TSH receptor and activates it as TSH would. This is the stimulating form of **type II hypersensitivity**: the antibody targets a cell-surface antigen but switches it on instead of destroying the cell. The follicles become hyperplastic, with tall columnar cells and scalloped colloid, the gland enlarges diffusely and may carry a bruit, and free T4 rises while TSH is suppressed. Because the same receptor sits on orbital and pretibial fibroblasts, the antibody reaches beyond the gland."
+  ],
+  [
+   "p",
+   "Activated orbital fibroblasts secrete **glycosaminoglycans** such as hyaluronic acid, which draw in water, and some differentiate into fat cells; T cells add inflammation. The extraocular muscles and orbital fat swell inside a fixed bony box, so the globe is pushed forward, producing **exophthalmos**, periorbital edema and diplopia. Smoking worsens this {{en6_go|Graves ophthalmopathy}}, and radioactive iodine can flare it. The same deposition in the skin of the shins gives nonpitting **pretibial** myxedema. Because the antibody is IgG, it crosses the placenta, so a baby born to a mother with high antibody levels can have transient neonatal thyrotoxicosis that fades over weeks as maternal IgG is cleared, even when the mother's own gland was ablated years earlier."
+  ],
+  [
+   "f",
+   "en6_graves"
+  ],
+  [
+   "call",
+   "key",
+   "Lid lag is adrenergic; exophthalmos is immune",
+   "Any thyrotoxicosis produces lid lag and a stare, because sympathetic overactivity tightens the superior tarsal muscle, the smooth muscle that helps lift the upper lid. These signs fade with a beta-blocker. True **exophthalmos**, periorbital edema and diplopia need antibody-driven orbital swelling, so they point specifically to Graves disease and can persist after the patient is euthyroid."
+  ],
+  [
+   "p",
+   "The clinical picture follows from what excess T3 does. More Na+/K+-ATPase activity raises heat production, so patients report **heat intolerance**, sweating and weight loss despite a good appetite. More cardiac beta-1 receptors cause palpitations and tachycardia, and in older patients **atrial fibrillation** may be the only sign. Faster gut transit causes frequent stools, increased bone resorption leads to osteoporosis and sometimes mild hypercalcemia, and muscle catabolism produces proximal weakness. Tremor, anxiety, hyperreflexia and menstrual irregularity complete the picture."
+  ],
+  [
+   "h",
+   "Which thyroiditis hurts, and why does each one swing from hyper to hypo?"
+  ],
+  [
+   "p",
+   "**Subacute granulomatous thyroiditis**, also called {{en6_dq|de Quervain thyroiditis}}, usually follows a viral upper respiratory infection. The gland is **painful** and tender, often with pain radiating to the jaw or ear, fever and a very high ESR, and biopsy shows granulomas with multinucleated giant cells around damaged follicles. Painless (silent) thyroiditis and {{en6_ppt|postpartum thyroiditis}}, which appears within a year after delivery, are lymphocytic instead: the gland is small and nontender, and anti-thyroid peroxidase antibodies are often positive. An early flare of Hashimoto thyroiditis, sometimes called hashitoxicosis, behaves the same way. All are destructive, so uptake is low and thionamides are useless."
+  ],
+  [
+   "steps",
+   [
+    "The course of a destructive thyroiditis, phase by phase",
+    [
+     [
+      "Follicles are injured",
+      "A virus-triggered granulomatous reaction or a lymphocytic attack breaks open follicles, so stored thyroglobulin and hormone spill into the blood."
+     ],
+     [
+      "Thyrotoxic phase, for weeks",
+      "The released preformed T4 and T3 suppress TSH, and the remaining follicles stop trapping iodine, so radioactive iodine uptake is low."
+     ],
+     [
+      "Hypothyroid phase",
+      "Once the stores are spent and the injured cells cannot yet make new hormone, free T4 falls and TSH rises, often for weeks to months."
+     ],
+     [
+      "Recovery",
+      "Follicles regenerate and most patients become euthyroid again, although some, especially after postpartum thyroiditis, later develop permanent hypothyroidism."
+     ]
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Two more causes are easy to miss. Amiodarone, an iodine-rich antiarrhythmic, can cause hypothyroidism through the Wolff-Chaikoff effect, or thyrotoxicosis in two ways: iodine-fueled synthesis in a nodular gland (type 1, treated with a thionamide) or a destructive thyroiditis (type 2, treated with glucocorticoids). Very high hCG from a molar pregnancy or hyperemesis gravidarum activates the TSH receptor, because hCG and TSH share an alpha subunit and have similar beta subunits. Finally, **struma ovarii**, an ovarian teratoma made mostly of thyroid tissue, can secrete enough hormone to suppress the neck gland."
+  ],
+  [
+   "h",
+   "Which drug fits which patient, and in what order during a storm?"
+  ],
+  [
+   "p",
+   "Methimazole and {{en6_ptu|propylthiouracil}} are thionamides that inhibit thyroid peroxidase, blocking organification and coupling; propylthiouracil also inhibits peripheral 5'-deiodinase. Methimazole is the usual choice because it is taken once daily and is gentler on the liver. Propylthiouracil is preferred in the first trimester, because methimazole can cause **aplasia cutis** and other embryopathy, and in thyroid storm. After the first trimester patients switch back, because propylthiouracil can be **hepatotoxic**, occasionally causing fulminant liver failure, and can cause ANCA-associated vasculitis. Both drugs can cause **agranulocytosis**, so a patient with fever or sore throat stops the drug and has a neutrophil count checked."
+  ],
+  [
+   "p",
+   "Beta-blockers such as propranolol control tremor, palpitations and anxiety within hours, whatever the cause. Definitive treatment for Graves disease or a toxic nodule is **radioactive iodine**, surgery or a long course of methimazole. Iodine-131 is trapped by the overactive follicles and destroys them over months; it is contraindicated in pregnancy and breastfeeding and can worsen ophthalmopathy, which glucocorticoids help prevent. **Ablation** or total thyroidectomy usually leaves permanent hypothyroidism. In thyroid storm, a life-threatening decompensation triggered by surgery, infection, childbirth or iodinated contrast, treatment follows a strict order."
+  ],
+  [
+   "f",
+   "en6_storm"
+  ],
+  [
+   "t",
+   [
+    "Drug",
+    "How it works",
+    "When it is chosen",
+    "Signature harm"
+   ],
+   [
+    [
+     "Methimazole",
+     "Inhibits thyroid peroxidase",
+     "First-line thionamide; after the first trimester",
+     "Agranulocytosis; aplasia cutis early in pregnancy"
+    ],
+    [
+     "Propylthiouracil",
+     "Inhibits thyroid peroxidase and 5'-deiodinase",
+     "First trimester; thyroid storm",
+     "Agranulocytosis, hepatotoxicity, ANCA vasculitis"
+    ],
+    [
+     "Propranolol",
+     "Blocks beta receptors; high doses slow T4 to T3",
+     "Symptoms in any thyrotoxicosis",
+     "Bronchospasm, bradycardia"
+    ],
+    [
+     "Potassium iodide",
+     "Blocks release of stored hormone",
+     "Storm, after a thionamide; before surgery",
+     "Feeds synthesis if given first"
+    ],
+    [
+     "Radioactive iodine",
+     "Destroys follicular cells over months",
+     "Definitive therapy outside pregnancy",
+     "Permanent hypothyroidism; eye disease flare"
+    ],
+    [
+     "Glucocorticoids",
+     "Inhibit 5'-deiodinase; reduce inflammation",
+     "Storm, painful thyroiditis, eye disease",
+     "Hyperglycemia, infection"
+    ]
+   ]
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_en6_storm",
+    "q": "In thyroid storm, why is potassium iodide given only after a thionamide has been started?",
+    "o": [
+     "Iodide works only in the liver, and the thionamide must first induce the enzymes that activate it",
+     "Iodide and thionamides compete for the same transporter, so giving iodide first blocks thionamide entry",
+     "Iodide causes agranulocytosis unless a thionamide is already protecting the marrow",
+     "Given alone, iodide becomes fresh substrate that stimulated or autonomous follicles turn into more hormone; a thionamide blocks that synthesis first"
+    ],
+    "a": 3,
+    "why": "High-dose iodide rapidly blocks the release of stored hormone, which is exactly what a storm needs. But iodide is also the raw material of synthesis. In a gland driven by stimulating antibodies or autonomous nodules, iodide given before synthesis is blocked can be organified into new hormone, enlarging the stores and worsening thyrotoxicosis, the same logic as the Jod-Basedow phenomenon. Starting propylthiouracil or methimazole first, and waiting about an hour, shuts down thyroid peroxidase, so the iodide can only do its useful job."
+   }
+  ],
+  [
+   "why",
+   "Why does radioactive iodine or thyroidectomy for Graves disease usually mean lifelong levothyroxine?",
+   "Graves disease is driven by an antibody that keeps stimulating every follicle, so a partial fix tends to fail: any remaining follicles are driven into thyrotoxicosis again. Definitive treatment therefore removes or destroys nearly all functioning tissue. Iodine-131 is concentrated by the overactive follicles, and its beta radiation kills them over the following months; a total thyroidectomy removes them at once. Either way, too few follicular cells remain to make hormone, and the resulting permanent hypothyroidism is the expected outcome, not a complication. Levothyroxine replaces T4, and TSH is followed to adjust the dose."
+  ],
+  [
+   "vis",
+   "en6"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these fit Graves disease?",
+  "items": [
+   [
+    "Thyroid-stimulating immunoglobulin against the TSH receptor",
+    1
+   ],
+   [
+    "Diffuse, symmetric goiter with a bruit",
+    1
+   ],
+   [
+    "High, diffuse radioactive iodine uptake",
+    1
+   ],
+   [
+    "Exophthalmos from orbital glycosaminoglycans",
+    1
+   ],
+   [
+    "Nonpitting pretibial myxedema",
+    1
+   ],
+   [
+    "Tall follicular cells with scalloped colloid",
+    1
+   ],
+   [
+    "Association with HLA-DR3",
+    1
+   ],
+   [
+    "Transient thyrotoxicosis in the newborn",
+    1
+   ],
+   [
+    "Painful, tender gland after a viral illness",
+    0
+   ],
+   [
+    "Low thyroglobulin with low uptake",
+    0
+   ],
+   [
+    "Single hot nodule with a suppressed surrounding gland",
+    0
+   ],
+   [
+    "Granulomas with multinucleated giant cells",
+    0
+   ]
+  ]
+ }
+}

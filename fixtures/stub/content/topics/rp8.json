@@ -1,0 +1,208 @@
+{
+ "id": "rp8",
+ "t": "The ovary, oogenesis and the menstrual cycle",
+ "sub": "Two phases with different rules: a follicular phase that varies and a luteal phase fixed by the corpus luteum.",
+ "yld": "hi",
+ "exam": "hi",
+ "mins": 12,
+ "bp": [
+  "BP-rp8-01"
+ ],
+ "obj": [
+  "PHYS-MENSTRUAL.1"
+ ],
+ "pretest": [
+  {
+   "q": "Which hormone surge triggers ovulation?",
+   "o": [
+    "LH",
+    "FSH",
+    "Progesterone",
+    "Inhibin B"
+   ],
+   "a": 0,
+   "why": "Sustained high estradiol switches the pituitary to positive feedback, producing the LH surge; ovulation follows about 36 hours after the surge begins.",
+   "w": {
+    "FSH": "FSH rises a little at mid-cycle alongside LH, but its main job is earlier: recruiting and growing the follicle cohort.",
+    "Progesterone": "Progesterone rises after ovulation, from the corpus luteum; it is a result of ovulation, not its trigger.",
+    "Inhibin B": "Inhibin B from granulosa cells selectively suppresses FSH in the follicular phase; it does not trigger ovulation."
+   }
+  },
+  {
+   "q": "Which structure makes most of the progesterone in the luteal phase?",
+   "o": [
+    "Corpus luteum",
+    "Dominant follicle",
+    "Anterior pituitary",
+    "Endometrial stroma"
+   ],
+   "a": 0,
+   "why": "After ovulation, granulosa and theca cells luteinize into the corpus luteum, which secretes progesterone for about 14 days unless hCG rescues it.",
+   "w": {
+    "Dominant follicle": "The dominant follicle makes estradiol before ovulation; its cells make progesterone only after they luteinize into the corpus luteum.",
+    "Anterior pituitary": "The anterior pituitary makes LH and FSH that drive the ovary; it does not secrete sex steroids.",
+    "Endometrial stroma": "The endometrium is the target of progesterone, which turns it secretory; it does not produce the hormone."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Two phases, one fixed"
+  ],
+  [
+   "p",
+   "The ovarian cycle has two halves with different rules. In the follicular phase, **FSH** recruits a cohort of follicles and the dominant one makes rising **estradiol**, which rebuilds the endometrium. After ovulation, the {{cl|corpus luteum}} makes **progesterone** for about 14 days; without hCG it regresses and menses begin. Because the luteal lifespan is fixed, cycle length varies almost entirely in the follicular phase."
+  ],
+  [
+   "f",
+   "rp8_cycle"
+  ],
+  [
+   "call",
+   "key",
+   "Estradiol flips from brake to accelerator",
+   "Low or moderate estradiol inhibits LH release, but estradiol that stays high for about two days switches the pituitary to **positive feedback**, and the resulting {{lhsurge|LH surge}} triggers ovulation about 36 hours later."
+  ],
+  [
+   "h",
+   "What the endometrium shows"
+  ],
+  [
+   "img",
+   "rp8_endometrium"
+  ],
+  [
+   "t",
+   [
+    "Phase",
+    "Dominant hormone",
+    "Endometrium"
+   ],
+   [
+    [
+     "Follicular",
+     "Estradiol",
+     "Proliferative: straight tubular glands with mitoses"
+    ],
+    [
+     "Luteal",
+     "Progesterone",
+     "Secretory: coiled glands, subnuclear vacuoles, then stromal edema"
+    ],
+    [
+     "Menses",
+     "Falling progesterone",
+     "Spiral artery constriction and shedding of the functional layer"
+    ]
+   ]
+  ],
+  [
+   "steps",
+   [
+    "Why menses follows when no pregnancy occurs",
+    [
+     [
+      "The corpus luteum regresses",
+      "Without hCG from an implanted embryo, the corpus luteum undergoes luteolysis after about 14 days."
+     ],
+     [
+      "Progesterone falls",
+      "The secretory endometrium loses the hormone that maintained its stroma and its spiral arteries."
+     ],
+     [
+      "Spiral arteries constrict",
+      "Prostaglandins cause vasoconstriction, ischemia and shedding of the functional layer, which is menstrual flow."
+     ]
+    ]
+   ]
+  ],
+  [
+   "palace",
+   "pal_rp8_cycle"
+  ],
+  [
+   "h",
+   "How drugs exploit the feedback loop"
+  ],
+  [
+   "p",
+   "Continuous GnRH agonist therapy first causes a flare, then **downregulates** pituitary GnRH receptors, so LH and FSH fall and estradiol drops. Pulsatile GnRH, by contrast, stimulates the pituitary; the pattern of delivery, not the molecule, decides the effect. {{granulosa|Granulosa cells}} need FSH to aromatize the androgens that theca cells make, so a fall in FSH starves the follicle of estradiol."
+  ],
+  [
+   "why",
+   "Why does basal body temperature rise after ovulation?",
+   "Progesterone acts on the hypothalamic thermoregulatory center and raises the set point by about 0.3 to 0.5 degrees Celsius. Because progesterone is produced in quantity only by the corpus luteum after ovulation, a sustained rise in basal body temperature is retrospective evidence that ovulation occurred. The rise lasts as long as the corpus luteum does, so a temperature that stays up beyond about 16 days suggests that hCG has rescued the corpus luteum and that pregnancy is likely."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp8_len",
+    "q": "A woman's cycles range from 25 to 40 days. Which reasoning best explains the range?",
+    "o": [
+     "The luteal phase varies because the corpus luteum lives as long as LH stays high",
+     "Menstrual flow lasts longer in long cycles, so the whole cycle stretches",
+     "The follicular phase varies because follicle selection takes a variable time, while the luteal phase stays near 14 days",
+     "Ovulation happens on day 14 in every cycle, so the extra days come after it"
+    ],
+    "a": 2,
+    "why": "The corpus luteum has a built-in lifespan of about 14 days, so the luteal phase barely changes from cycle to cycle. What varies is how long it takes a follicle to become dominant and produce enough estradiol to trigger the LH surge. A 40-day cycle therefore means ovulation around day 26, which is why fertility tracking counts back 14 days from the next period rather than forward from the last one."
+   }
+  ],
+  [
+   "vis",
+   "rp8"
+  ],
+  [
+   "call",
+   "trap",
+   "Day-21 progesterone assumes a 28-day cycle",
+   "A mid-luteal progesterone confirms ovulation only if it is drawn about 7 days before the next period. In a 35-day cycle, day 21 is still follicular, so a low value there does not mean anovulation."
+  ]
+ ],
+ "grid": {
+  "q": "Which of these happen in the luteal phase?",
+  "items": [
+   [
+    "Corpus luteum secretes progesterone",
+    1
+   ],
+   [
+    "Endometrial glands become coiled and secretory",
+    1
+   ],
+   [
+    "Basal body temperature rises",
+    1
+   ],
+   [
+    "Subnuclear vacuoles appear in gland cells",
+    1
+   ],
+   [
+    "Inhibin A rises with progesterone",
+    1
+   ],
+   [
+    "Length stays near 14 days",
+    1
+   ],
+   [
+    "FSH recruits a new follicle cohort",
+    0
+   ],
+   [
+    "Endometrium is proliferative with straight glands",
+    0
+   ],
+   [
+    "LH surge begins",
+    0
+   ],
+   [
+    "Estradiol switches to positive feedback",
+    0
+   ]
+  ]
+ }
+}

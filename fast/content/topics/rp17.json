@@ -1,0 +1,316 @@
+{
+ "id": "rp17",
+ "t": "Viral STIs: HIV, HSV, HPV and molluscum",
+ "sub": "HIV integrates, herpes hides in ganglia and HPV rides maturing skin cells, so each virus's life cycle predicts its tests, drugs and prevention.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 14,
+ "bp": [
+  "BP-rp17-01", "BP-rp17-02", "BP-rp17-03", "BP-rp17-04", "BP-rp17-05", "BP-rp17-06", "BP-rp17-07", "BP-rp17-08", "BP-rp17-09",
+  "BP-rp17-10", "BP-rp17-11", "BP-rp17-12", "BP-rp17-13", "BP-rp17-14", "BP-rp17-15", "BP-rp17-16", "BP-rp17-17"
+ ],
+ "obj": [
+  "VIRAL-STI-TORCH.1",
+  "VIRAL-STI-TORCH.2",
+  "VIRAL-STI-TORCH.3",
+  "VIRAL-STI-TORCH.4",
+  "VIRAL-STI-TORCH.5",
+  "VIRAL-STI-TORCH.6",
+  "VIRAL-STI-TORCH.8",
+  "VIRAL-STI-TORCH.9",
+  "VIRAL-STI-TORCH.10"
+ ],
+ "pretest": [
+  {
+   "q": "Which HIV protein binds the CD4 molecule on a helper T cell?",
+   "o": [
+    "gp120",
+    "gp41",
+    "p24",
+    "Integrase"
+   ],
+   "a": 0,
+   "why": "The envelope glycoprotein gp120 binds CD4 and then a coreceptor, CCR5 or CXCR4; only after that does gp41 unfold and fuse the viral envelope with the cell membrane.",
+   "w": {
+    "gp41": "gp41 is the transmembrane envelope protein that performs fusion after gp120 has docked; enfuvirtide blocks it, but it does not recognize the receptor.",
+    "p24": "p24 forms the capsid inside the envelope and is the antigen measured by fourth-generation tests; it never touches the cell surface.",
+    "Integrase": "Integrase is a pol enzyme that works later, inside the nucleus, inserting viral DNA into the host chromosome as a provirus."
+   }
+  },
+  {
+   "q": "Which enzyme must act first for acyclovir to become active?",
+   "o": [
+    "Viral thymidine kinase",
+    "Host guanylate kinase",
+    "Viral DNA polymerase",
+    "Reverse transcriptase"
+   ],
+   "a": 0,
+   "why": "Only the viral thymidine kinase in infected cells adds acyclovir's first phosphate; host kinases then make the triphosphate, which blocks viral DNA polymerase. This first step gives the drug its selectivity.",
+   "w": {
+    "Host guanylate kinase": "Cellular kinases add the second and third phosphates, but they cannot start the process, which is why uninfected cells leave the drug inactive.",
+    "Viral DNA polymerase": "The polymerase is the target that acyclovir triphosphate inhibits at the end of the pathway, not the enzyme that activates the drug.",
+    "Reverse transcriptase": "Reverse transcriptase belongs to retroviruses such as HIV; herpes simplex is a DNA virus, and acyclovir has no role against this enzyme."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How do these viruses use the host cell and then persist?"
+  ],
+  [
+   "p",
+   "Viruses are **obligate intracellular** parasites. A virion carries a genome and a few enzymes but no ribosomes and no energy supply, so it must borrow the host cell's ribosomes, nucleotides and polymerases to replicate. The sexually transmitted viruses differ in how they stay. HIV, a retrovirus, copies its RNA into DNA with {{rp17rt|reverse transcriptase}}, and **integrase** splices that DNA permanently into a host chromosome as a provirus. Herpes simplex virus, a DNA virus, circularizes its genome as an **episome** in sensory neurons and enters latency, making only latency-associated transcripts. HPV keeps an episome in basal keratinocytes and makes virions only as those cells mature, and the molluscum poxvirus replicates in the cytoplasm of keratinocytes."
+  ],
+  [
+   "t",
+   [
+    "Virus",
+    "Genome",
+    "Tropism and persistence",
+    "Immune evasion"
+   ],
+   [
+    [
+     "HIV",
+     "Two copies of positive-strand RNA",
+     "Integrated provirus in CD4 T cells and macrophages",
+     "Rapid mutation; kills the CD4 cells that coordinate defense"
+    ],
+    [
+     "HSV-2",
+     "Linear double-stranded DNA",
+     "Latent episome in sacral dorsal root ganglia",
+     "Latency with almost no viral protein; lowers MHC class I"
+    ],
+    [
+     "HPV",
+     "Circular double-stranded DNA",
+     "Episome in basal squamous cells",
+     "Stays in epithelium with little inflammation or viremia"
+    ],
+    [
+     "Molluscum contagiosum",
+     "Double-stranded DNA poxvirus",
+     "Keratinocytes of the skin",
+     "Dampens local inflammation, so papules last months"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How does HIV enter, copy itself and deplete CD4 cells?"
+  ],
+  [
+   "p",
+   "HIV carries two copies of positive-strand RNA inside a cone-shaped **p24** capsid. Its structural genes are gag (capsid and matrix), pol (reverse transcriptase, integrase and protease) and env, whose gp160 precursor is cut into **gp120** and **gp41**. Gp120 binds CD4 and then a coreceptor: CCR5 on macrophages and memory T cells, used by the strains that dominate early infection, or CXCR4 on T cells, used by strains that emerge late and predict faster decline. Gp41 then fuses the envelope with the cell membrane. A person homozygous for the CCR5 delta-32 deletion lacks the coreceptor and resists CCR5-tropic virus, while heterozygotes progress more slowly. Because reverse transcriptase does not proofread, every cycle creates mutants."
+  ],
+  [
+   "f",
+   "rp17_hiv"
+  ],
+  [
+   "p",
+   "Antiretroviral therapy targets enzymes the host lacks and always combines drugs, usually two nucleoside analogs plus an integrase inhibitor, because a single drug quickly selects a resistant mutant. NRTIs such as tenofovir, emtricitabine, abacavir and zidovudine are phosphorylated by host kinases; the triphosphate lacks a 3' hydroxyl, so its insertion causes **chain termination**. Tenofovir is already a nucleotide. NNRTIs such as efavirenz bind reverse transcriptase at an **allosteric** site and need no activation. Integrase inhibitors, the -tegravir drugs, block strand transfer and chelate divalent cations, so antacids, iron and calcium reduce their absorption. Protease inhibitors, the -navir drugs, block cleavage of the gag-pol **polyprotein**, so virions bud but never mature."
+  ],
+  [
+   "t",
+   [
+    "Drug or class",
+    "Mechanism",
+    "Signature toxicity"
+   ],
+   [
+    [
+     "Abacavir (NRTI)",
+     "Chain terminator",
+     "Hypersensitivity in HLA-B*57:01 carriers, so test first"
+    ],
+    [
+     "Zidovudine (NRTI)",
+     "Chain terminator",
+     "Bone marrow suppression, macrocytic anemia, myopathy"
+    ],
+    [
+     "Tenofovir disoproxil (NRTI)",
+     "Nucleotide chain terminator",
+     "Proximal tubule injury and bone loss"
+    ],
+    [
+     "Didanosine, stavudine (older NRTIs)",
+     "Also block mitochondrial DNA polymerase gamma",
+     "Lactic acidosis, hepatic steatosis, pancreatitis, neuropathy"
+    ],
+    [
+     "Efavirenz, nevirapine (NNRTIs)",
+     "Allosteric reverse transcriptase block",
+     "Efavirenz vivid dreams; nevirapine hepatotoxicity"
+    ],
+    [
+     "Protease inhibitors (-navir)",
+     "Block polyprotein cleavage",
+     "Lipodystrophy, hyperglycemia; indinavir kidney stones"
+    ],
+    [
+     "Maraviroc; enfuvirtide",
+     "Block CCR5; block gp41 fusion",
+     "Maraviroc needs a tropism test; injection-site reactions"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "key",
+   "Ritonavir is given for its side effect",
+   "Ritonavir is a protease inhibitor used at a dose too low to suppress HIV. Its purpose is to **inhibit CYP3A4**, the liver enzyme that clears most protease inhibitors, so a small dose raises the level and lengthens the half-life of a partner drug. Cobicistat does the same job with no antiviral activity. The price of boosting is a long list of drug interactions."
+  ],
+  [
+   "h",
+   "How is HIV diagnosed, staged and prevented?"
+  ],
+  [
+   "p",
+   "Two to four weeks after infection many patients develop {{rp17ars|acute retroviral syndrome}}, a mononucleosis-like illness of fever, pharyngitis, rash and lymphadenopathy, when the **viral load** is enormous but antibodies may not yet exist. Clinical latency follows for years while the virus replicates in lymph nodes and CD4 cells fall. AIDS is a **CD4 count** below 200 cells/mm³ or an AIDS-defining illness such as Pneumocystis pneumonia or Kaposi sarcoma. Viral load measures replication and treatment response; CD4 count measures immune damage. Everyone aged 13 to 64 is offered opt-out screening, and every pregnancy is tested, with a fourth-generation antigen/antibody immunoassay that detects p24 before antibodies form, followed by an antibody differentiation assay and, if needed, an HIV RNA test."
+  ],
+  [
+   "p",
+   "Condoms block sexual transmission. **Pre-exposure** prophylaxis (PrEP) is daily oral tenofovir with emtricitabine or injected long-acting cabotegravir every 2 months. **Post-exposure** prophylaxis (PEP) is a 28-day, three-drug regimen started within 72 hours. A person on treatment with an undetectable viral load does not transmit HIV sexually: undetectable equals untransmittable. To prevent **perinatal** transmission the mother takes ART throughout pregnancy; if her viral load near delivery is above 1,000 copies/mL, she receives intrapartum IV zidovudine and a scheduled cesarean at 38 weeks. The newborn receives zidovudine prophylaxis, and US guidance recommends formula feeding, with shared decision-making for mothers who keep a suppressed viral load."
+  ],
+  [
+   "call",
+   "trap",
+   "A newborn's positive HIV antibody test belongs to the mother",
+   "Maternal IgG crosses the placenta and can persist in the infant for up to **18 months**, so an antibody or antigen/antibody test in a baby born to a mother with HIV is positive whether or not the baby is infected. Infant infection is diagnosed with HIV **nucleic acid** tests, PCR for viral DNA or RNA, repeated over the first months of life."
+  ],
+  [
+   "h",
+   "Why does herpes keep returning, and how does acyclovir work?"
+  ],
+  [
+   "p",
+   "Genital herpes, usually HSV-2 and increasingly HSV-1, causes painful grouped **vesicles** on an erythematous base that break into shallow ulcers; a first episode adds fever, dysuria and tender inguinal nodes. During that first infection the virus travels up sensory axons and becomes latent in the **sacral** dorsal root ganglia. Stress, menses, illness or immunosuppression reactivate it, and asymptomatic viral **shedding** causes most transmission. Lesion PCR is the most sensitive test and tells HSV-1 from HSV-2; a Tzanck smear shows multinucleated giant cells but cannot tell herpes simplex from varicella-zoster. Type-specific serologic tests help evaluate partners but are not used to screen people without symptoms, including pregnant women."
+  ],
+  [
+   "f",
+   "rp17_acyclovir"
+  ],
+  [
+   "p",
+   "Acyclovir is a guanosine analog that stays inert until viral {{rp17tk|thymidine kinase}} adds its first phosphate; host kinases then make the triphosphate, which inhibits viral DNA polymerase and terminates the chain. Because only infected cells contain the viral kinase, uninfected cells are spared. Valacyclovir is a prodrug with better oral absorption. High-dose IV acyclovir can precipitate as **crystals** in renal tubules, so patients are hydrated. Resistance, seen mainly in AIDS, comes from thymidine kinase mutation; **foscarnet**, a pyrophosphate analog that binds DNA polymerase directly, treats it at the cost of nephrotoxicity and low calcium and magnesium. Daily **suppressive** therapy cuts recurrences and halves transmission, and suppression from 36 weeks makes lesions at delivery, which would require cesarean birth, less likely."
+  ],
+  [
+   "steps",
+   [
+    "How acyclovir reaches its target only in infected cells",
+    [
+     [
+      "The drug enters every cell",
+      "Acyclovir diffuses into infected and uninfected cells alike, but as an unphosphorylated nucleoside analog it cannot act."
+     ],
+     [
+      "Viral thymidine kinase adds the first phosphate",
+      "Only a cell infected by herpes simplex or varicella-zoster virus makes this enzyme, so activation begins only there."
+     ],
+     [
+      "Host kinases finish the job",
+      "Cellular kinases add the second and third phosphates, producing acyclovir triphosphate, which stays trapped inside the cell."
+     ],
+     [
+      "Viral DNA polymerase is blocked",
+      "The triphosphate competes with the natural guanosine nucleotide and, once inserted, ends the viral DNA chain because it lacks a 3' hydroxyl."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How does HPV cause warts or cancer, and how are warts treated?"
+  ],
+  [
+   "p",
+   "HPV is a nonenveloped, circular double-stranded DNA virus spread by **skin-to-skin** contact, so condoms reduce but do not prevent transmission. It reaches basal cells through microabrasions, and infected cells show koilocytes. Low-risk types 6 and 11 cause **genital warts**, the soft cauliflower-like condylomata acuminata. High-risk types 16 and 18 cause cancers of the cervix, anus, oropharynx and penis: once integrated, their E6 protein degrades p53 and E7 inactivates Rb. The 9-valent vaccine is made of {{rp17vlp|virus-like particles}} of types 6, 11, 16, 18, 31, 33, 45, 52 and 58, given at 11 to 12 years, in two doses if started before age 15 and three doses after that, with catch-up through 26. People with HIV clear HPV poorly and are screened more often for cervical and anal cancer."
+  ],
+  [
+   "p",
+   "Wart treatment removes the lesion, not the virus, so recurrences are common. Patients can apply **imiquimod**, an immune response modifier that activates toll-like receptor 7 and induces local interferon, or **podofilox**, purified podophyllotoxin, an antimitotic that binds tubulin and is avoided in pregnancy. Clinicians use **cryotherapy** with liquid nitrogen, trichloroacetic acid, a caustic that coagulates protein and is safe in pregnancy, or surgical removal. Molluscum contagiosum, a poxvirus, causes firm, pearly, dome-shaped umbilicated papules; biopsy shows large eosinophilic cytoplasmic molluscum bodies. In adults the genital lesions are sexually transmitted and fade within months, but many large facial lesions suggest HIV with a low CD4 count."
+  ],
+  [
+   "why",
+   "Why does acyclovir shorten a herpes outbreak but never cure the infection?",
+   "Acyclovir only works where viral DNA is being copied. It needs viral thymidine kinase for activation, and its triphosphate acts on viral DNA polymerase, so it stops the burst of replication in skin and mucosa that produces vesicles and shedding. The latent virus in the sacral ganglia is doing none of this. It sits as a circular episome in the neuron's nucleus, making only latency-associated transcripts, with no thymidine kinase and no polymerase activity for the drug to act on. When therapy stops, the next reactivation starts from that untouched reservoir, which is also why daily suppressive therapy reduces outbreaks and transmission only while it is taken."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp17_window",
+    "q": "Three weeks after a high-risk exposure, a man has fever, rash and a negative antibody-only HIV test. Which reasoning is correct?",
+    "o": [
+     "A negative antibody test rules out HIV, because antibodies appear within days of any viral infection",
+     "Antibodies take weeks to form, but viral RNA and p24 antigen are already high, so an RNA test or antigen/antibody assay can detect acute infection",
+     "The CD4 count must fall below 200 before any HIV test turns positive, so testing should wait until symptoms of AIDS appear",
+     "Borrowed maternal IgG can hide adult infection for months, so the negative test reflects antibody from someone else"
+    ],
+    "a": 1,
+    "why": "In acute HIV the virus replicates explosively before the immune system has made detectable antibody, so an antibody-only test is negative during this window period. Viral RNA appears first, at about 10 days, and p24 antigen soon after, which is why fourth-generation antigen/antibody assays and nucleic acid tests detect infection weeks earlier. The CD4 count does not decide test results, and maternal antibody matters only in infants. His fever and rash are acute retroviral syndrome, when viral load and transmission risk peak."
+   }
+  ],
+  [
+   "vis",
+   "rp17"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these are true of herpes simplex or its treatment?",
+  "items": [
+   [
+    "Latency in sacral dorsal root ganglia",
+    1
+   ],
+   [
+    "Painful grouped vesicles on a red base",
+    1
+   ],
+   [
+    "Asymptomatic shedding transmits most infections",
+    1
+   ],
+   [
+    "Tzanck smear shows multinucleated giant cells",
+    1
+   ],
+   [
+    "Acyclovir needs viral thymidine kinase to activate",
+    1
+   ],
+   [
+    "Foscarnet treats thymidine kinase-deficient virus",
+    1
+   ],
+   [
+    "Suppressive therapy from 36 weeks of pregnancy",
+    1
+   ],
+   [
+    "High-dose IV acyclovir can cause crystalline nephropathy",
+    1
+   ],
+   [
+    "Integrated provirus in CD4 T cells",
+    0
+   ],
+   [
+    "E6 protein degrades p53",
+    0
+   ],
+   [
+    "Umbilicated papules with molluscum bodies",
+    0
+   ],
+   [
+    "Routine serologic screening of all pregnant women",
+    0
+   ]
+  ]
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp6",
+ "hash": "ad2fecafe8e0",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:03:11",
+ "gaps": [
+  {
+   "gid": "GAP-rp6-01",
+   "concept": "Sertoli cells secrete anti-Müllerian hormone, which causes Müllerian duct regression; Leydig-cell testosterone maintains Wolffian ducts, while DHT masculinizes external genitalia.",
+   "why_tested": "A 46,XY newborn has discordant internal and external genital anatomy; the stem asks which fetal hormone or cell function failed.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp6-02",
+   "concept": "Complete androgen insensitivity causes normal breast development because testosterone is aromatized to estrogen despite defective androgen signaling.",
+   "why_tested": "A patient with primary amenorrhea has breasts, scant pubic hair, and no uterus, distinguishing androgen insensitivity from gonadal dysgenesis.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp6-03",
+   "concept": "Partial androgen insensitivity causes a spectrum of 46,XY undervirilization, including hypospadias, micropenis, and bifid scrotum.",
+   "why_tested": "A newborn has ambiguous genitalia, testes, and normal or elevated testosterone; the stem asks about partial androgen resistance.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp6-04",
+   "concept": "5-alpha-reductase deficiency preserves testosterone-dependent Wolffian structures and anti-Müllerian hormone–mediated uterine regression despite undervirilized external genitalia.",
+   "why_tested": "Internal reproductive anatomy distinguishes 5-alpha-reductase deficiency from impaired testicular development.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp6-05",
+   "concept": "An elevated testosterone-to-DHT ratio, especially after hCG stimulation, supports 5-alpha-reductase deficiency.",
+   "why_tested": "A laboratory stem asks which result identifies a 46,XY child with undervirilized genitalia.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp6-06",
+   "concept": "Persistent Müllerian duct syndrome results from defective anti-Müllerian hormone or its receptor; a 46,XY male has a uterus and undescended testes.",
+   "why_tested": "A phenotypic male undergoing surgery for cryptorchidism is found to have a uterus.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp6-07",
+   "concept": "Swyer syndrome causes absent spontaneous breast development and primary amenorrhea with low estrogen and elevated gonadotropins.",
+   "why_tested": "Pubertal findings distinguish 46,XY gonadal dysgenesis from complete androgen insensitivity.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp6-08",
+   "concept": "Placental aromatase deficiency involves CYP19A1; failure to convert androgens to estrogens can produce low maternal estriol.",
+   "why_tested": "A pregnancy has low estriol and virilization of both mother and 46,XX fetus.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp6-09",
+   "concept": "Maternal androgen excess from a pregnancy luteoma or exogenous androgens can virilize a 46,XX fetus with otherwise normal ovaries.",
+   "why_tested": "A virilized newborn and maternal androgen exposure prompt a differential diagnosis with CAH and aromatase deficiency.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp6-10",
+   "concept": "Klinefelter testes show hyalinized, fibrotic seminiferous tubules with germ-cell loss and Leydig-cell hyperplasia.",
+   "why_tested": "A testicular biopsy from an infertile man with small, firm testes asks for the characteristic histology.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp6-11",
+   "concept": "Turner syndrome short stature reflects SHOX haploinsufficiency in the pseudoautosomal region of the X chromosome.",
+   "why_tested": "A genetics stem asks which gene dosage change explains short stature in 45,X.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp6-12",
+   "concept": "Prenatal Turner syndrome may present as a cystic hygroma or increased nuchal translucency from abnormal lymphatic development.",
+   "why_tested": "Fetal ultrasound findings precede the postnatal Turner phenotype.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp6-13",
+   "concept": "Short fourth metacarpal and cubitus valgus are characteristic skeletal clues to Turner syndrome.",
+   "why_tested": "A physical-exam stem adds skeletal findings to primary amenorrhea and short stature.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp6-14",
+   "concept": "Turner mosaicism containing Y-chromosome material increases gonadoblastoma risk in dysgenetic gonads.",
+   "why_tested": "A 45,X/46,XY karyotype changes the expected tumor association.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp6-15",
+   "concept": "Mixed gonadal dysgenesis commonly has 45,X/46,XY mosaicism, one dysgenetic testis, a contralateral streak gonad, and asymmetric genital structures.",
+   "why_tested": "Asymmetric gonads and ambiguous genitalia distinguish mixed dysgenesis from pure 46,XY gonadal dysgenesis.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp6-16",
+   "concept": "47,XXX syndrome often has tall stature, mild learning or language difficulties, preserved fertility, and two Barr bodies.",
+   "why_tested": "A sex-chromosome karyotype or Barr-body count asks for the expected phenotype.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp6-17",
+   "concept": "Ovotesticular DSD is defined by both ovarian and testicular tissue, sometimes within one ovotestis; the karyotype is often 46,XX.",
+   "why_tested": "Gonadal histology identifies the diagnosis in a child with ambiguous genitalia.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp6-18",
+   "concept": "46,XX testicular DSD can produce testes and male external genitalia but commonly causes azoospermia because Y-chromosome spermatogenesis genes are absent.",
+   "why_tested": "An infertile phenotypic male has a 46,XX karyotype and SRY-positive testing.",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp6-1790442126363.jsonl"
+}

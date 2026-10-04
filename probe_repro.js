@@ -1,0 +1,380 @@
+/* probe_repro.js -- gate-owned runtime measurement for REPRO-PLAN.md (The Repro-Endo Path).
+
+   check_repro.py appends this as a SECOND classic <script> to a COPY of the built page
+   (under .repro/, with a <base href> back to the page's directory so assets resolve) and
+   opens it with ?selftest=1 in headless Chrome at 1280x900 and 400x800. Both scripts are
+   classic scripts on one page, so the page's top-level const/let (QS, RAPID, IMGS, FIGS,
+   BLOCKS, PATH, S ...) are visible here. The page's own self-test runs first and leaves
+   window.__SELFTEST set, so save()/flushNow() are no-ops for everything below.
+
+   This probe owns the RUNTIME half of the contract (renderers, legibility, pacing, a11y,
+   glossary reach, search, state). The STATIC half (every field of every item) is checked
+   by check_repro.py directly from content/*.json. Implementers never edit this file; if a
+   check cannot pass because the contract is wrong, the task goes BLOCKED naming the field.
+   Every section is isolated: one throwing records an error and does not blank the report. */
+(function(){
+  var OUT = { errors: [], viewport: window.innerWidth, probeVersion: 1 };
+  function sec(name, fn){ try { OUT[name] = fn(); } catch(e){ OUT.errors.push(name + ": " + (e && e.message || e)); OUT[name] = null; } }
+  function strip(h){ return String(h == null ? "" : h).replace(/<[^>]+>/g, " ").replace(/&[a-z]+;|&#\d+;/g, " ").replace(/\s+/g, " ").trim(); }
+  function words(s){ return strip(s).split(/\s+/).filter(Boolean); }
+  function kws(s){ return strip(s).toLowerCase().split(/[^a-z0-9²⁺₂₃α-ω\-]+/).filter(function(w){ return w.length >= 4; }); }
+  function median(a){ if(!a.length) return null; var b = a.slice().sort(function(x, y){ return x - y; }); var m = b.length >> 1; return b.length % 2 ? b[m] : (b[m - 1] + b[m]) / 2; }
+  function sharesFive(a, b){ var A = kws(a), B = new Set(kws(b)); var c = 0; A.forEach(function(w){ if(B.has(w)) c++; }); return c >= Math.min(5, Math.max(1, kws(b).length)); }
+  function visible(el){ if(!el) return false; var r = el.getBoundingClientRect(); var cs = getComputedStyle(el); return cs.display !== "none" && cs.visibility !== "hidden" && (r.width > 0 || r.height > 0); }
+  function main(){ return document.querySelector("main"); }
+  function mainText(){ return (main() || { innerText: "" }).innerText; }
+  var topicsAll = (typeof BLOCKS !== "undefined") ? BLOCKS.flatMap(function(b){ return b.topics; }) : [];
+  var errs = []; window.addEventListener("error", function(e){ errs.push(String(e.message)); });
+
+  var SNAP = JSON.stringify(S);
+  function fresh(){ Object.keys(S).forEach(function(k){ delete S[k]; }); Object.assign(S, blank()); }
+  function restore(){ try { Object.keys(S).forEach(function(k){ delete S[k]; }); Object.assign(S, JSON.parse(SNAP)); S.mode = "path"; render(); } catch(e){ OUT.errors.push("restore: " + e.message); } }
+
+  /* ---------------- identity + counts ------------------------------------------ */
+  sec("counts", function(){
+    return { meta: (typeof META !== "undefined") ? { key: META.key, title: META.title || document.title } : null,
+             topics: topicsAll.length, questions: QS.length, rapid: RAPID.length, drills: DRILLS.length,
+             images: Object.keys(IMGS).length, figures: Object.keys(FIGS).length, gloss: Object.keys(GLOSS).length,
+             palace: Object.keys(PALACE).length, path: PATH.length, title: document.title, lang: document.documentElement.lang,
+             titleTags: document.querySelectorAll("title").length };
+  });
+
+  /* ---------------- the page's own audit and self-test ------------------------- */
+  sec("pageAudit", function(){
+    var fn = window.__pathAudit || window.__blockAudit || window.__cardioAudit;
+    if(typeof fn !== "function") return { present: false };
+    var a = fn(); var lists = {};
+    Object.keys(a).forEach(function(k){ if(Array.isArray(a[k])) lists[k] = a[k].slice(0, 12); });
+    var bad = Object.keys(lists).filter(function(k){ return lists[k].length; });
+    return { present: true, name: window.__pathAudit ? "__pathAudit" : (window.__blockAudit ? "__blockAudit" : "__cardioAudit"), counts: a.counts || null, nonEmpty: bad, lists: lists };
+  });
+  sec("pageSelftest", function(){
+    var pre = document.getElementById("selftest"); if(!pre) return { present: false };
+    var j = JSON.parse(pre.textContent); return { present: true, ok: j.ok, errors: (j.errors || []).slice(0, 8), auditListsEmpty: j.auditListsEmpty, viewFailures: j.viewFailures };
+  });
+
+  /* ---------------- every view renders, at this viewport, without leaks --------- */
+  sec("views", function(){
+    var modes = (typeof MODES !== "undefined" ? MODES.map(function(m){ return m[0]; }) : ["path","learn","practice","drill","rapid","spot","weak","gloss"]);
+    var fail = [], overflow = {};
+    modes.forEach(function(m){ try { fresh(); S.mode = m; if(m === "learn" && topicsAll[0]) S.cur = topicsAll[0].id; render();
+      var t = mainText(); if(/\bNaN\b|\bundefined\b|\[object /.test(t)) fail.push(m + ":leak");
+      overflow[m] = document.documentElement.scrollWidth - window.innerWidth; } catch(e){ fail.push(m + ":" + e.message); } });
+    return { modes: modes, failures: fail, overflow: overflow, maxOverflow: Math.max.apply(null, Object.values(overflow).concat([0])) };
+  });
+
+  /* ---------------- click-any-wrong-option-for-why (shared helper) -------------- */
+  function clickWrongAndReadWhy(sel, wrongText){
+    var btns = Array.prototype.slice.call(document.querySelectorAll(sel));
+    var picked = btns.filter(function(b){ return b.classList.contains("wrong"); });
+    var pickedOpen = picked.length ? Array.prototype.slice.call(document.querySelectorAll(".optwhy")).filter(visible).length > 0 : null;
+    var others = btns.filter(function(b){ return !b.classList.contains("right") && !b.classList.contains("wrong") && (b.classList.contains("dim") || b.dataset.why != null); });
+    var wrong = others.length ? others : picked;
+    if(!wrong.length) return { wrongClickable: false, whyRevealed: false, pickedWhyOpen: pickedOpen, note: "no wrong buttons found" };
+    var b = wrong[0];
+    var clickable = !b.disabled || b.getAttribute("aria-disabled") === "true";
+    var before = Array.prototype.slice.call(document.querySelectorAll(".optwhy")).filter(visible).length;
+    b.click();
+    var why = Array.prototype.slice.call(document.querySelectorAll(".optwhy")).filter(visible);
+    var txt = why.map(function(w){ return strip(w.textContent); }).join(" ");
+    var expanded = b.getAttribute("aria-expanded");
+    var expect = typeof wrongText === "function" ? wrongText(b) : wrongText;
+    return { wrongClickable: clickable, whyRevealed: why.length > before && words(txt).length >= 8, whyMatches: expect ? sharesFive(txt, expect) : null,
+             pickedWhyOpen: pickedOpen, ariaExpanded: expanded === "true" };
+  }
+  function pickFirstWith(arr, pred){ for(var i = 0; i < arr.length; i++){ if(pred(arr[i])) return arr[i]; } return arr[0]; }
+
+  /* ---------------- rapid ------------------------------------------------------- */
+  sec("renderRapid", function(){
+    fresh(); var r = pickFirstWith(RAPID, function(x){ return typeof rapidMedia === "function" && rapidMedia(x) && rapidMedia(x).fig && x.pt; });
+    if(!r) return null;
+    S.mode = "rapid"; S.rf = { set: [r.i], i: 0, pick: null, src: "all" }; render();
+    var res = { id: r.i, optionsRendered: document.querySelectorAll("[data-rfo]").length };
+    var wrongIdx = r.o.findIndex(function(_, i){ return i !== r.a; });
+    var btn = document.querySelector('[data-rfo="' + wrongIdx + '"]'); if(!btn) throw new Error("no rapid option button");
+    btn.click();
+    var otherIdx = r.o.findIndex(function(_, i){ return i !== r.a && i !== wrongIdx; });
+    Object.assign(res, clickWrongAndReadWhy(".rfopt", r.w ? r.w[r.o[otherIdx]] : ""));
+    var cat = document.querySelector(".rfcat"); res.catChip = !!cat && words(cat.textContent).length >= 1 && words(cat.textContent).length <= 6;
+    var det = document.querySelector("main details.deepreview"); res.detailsOpen = det ? det.hasAttribute("open") : null;
+    res.highlightCount = document.querySelectorAll("main figure .hl, main figure .hlbox, main .photo .hot, main .photo .hl").length;
+    var say = document.querySelector(".rfsay, .ptsay"); res.sayShown = !!say && words(say.textContent).length >= 6;
+    var rec = S.rapid[r.i] || {}; res.pickRecorded = typeof rec.lastPick === "string" && rec.lastPick.length > 0;
+    res.liveVerdict = Array.prototype.slice.call(document.querySelectorAll("[aria-live]")).some(function(e){ return /correct|not quite|answer/i.test(e.innerText || ""); });
+    fresh(); S.mode = "rapid"; S.rf = { set: [r.i], i: 0, pick: null, src: "all" }; render();
+    document.dispatchEvent(new KeyboardEvent("keydown", { key: "2", bubbles: true }));
+    res.keyboardPick = !!(S.rf && S.rf.pick === 1);
+    res.scrollOverflow = document.documentElement.scrollWidth - window.innerWidth;
+    return res;
+  });
+
+  /* ---------------- practice ---------------------------------------------------- */
+  sec("renderPractice", function(){
+    fresh(); var q = pickFirstWith(QS, function(x){ return x.et && x.bl && (x.ef || x.ei) && x.pt; });
+    if(!q) return null;
+    S.mode = "practice"; S.ps = { set: [q.id], i: 0, pick: null, shown: false, conf: "think", src: "all", ans: {} }; render();
+    var res = { id: q.id, optionsRendered: document.querySelectorAll("[data-opt]").length };
+    var wrongIdx = q.o.findIndex(function(_, i){ return i !== q.a; });
+    var btn = document.querySelector('[data-opt="' + wrongIdx + '"]'); if(!btn) throw new Error("no practice option button");
+    btn.click();
+    res.answered = !!document.querySelector(".qexp");
+    var otherQ = q.o.findIndex(function(_, i){ return i !== q.a && i !== wrongIdx; });
+    Object.assign(res, clickWrongAndReadWhy(".qopt", function(b){ return q.w ? (q.w[+b.dataset.opt] || "") : ""; }));
+    res.tableShown = !!document.querySelector(".qexp .tblwrap.et, main .tblwrap.et");
+    res.tableKeyRow = !!document.querySelector(".tblwrap.et .etkey, .tblwrap.et tr.etkey");
+    var bl = document.querySelector(".qbl"); res.blShown = !!bl && words(bl.textContent).length >= 6;
+    var say = document.querySelector(".qsay, .ptsay"); res.sayShown = !!say && words(say.textContent).length >= 6;
+    var det = document.querySelector("main details.deepreview"); res.detailsOpen = det ? det.hasAttribute("open") : null;
+    res.highlightCount = document.querySelectorAll("main figure .hl, main figure .hlbox, main .photo .hot").length;
+    res.flagControl = !!document.querySelector("main [data-flag]");
+    res.liveVerdict = Array.prototype.slice.call(document.querySelectorAll("[aria-live]")).some(function(e){ return /correct|not quite|why the answer/i.test(e.innerText || ""); });
+    fresh(); S.mode = "practice"; S.ps = { set: [q.id], i: 0, pick: null, shown: false, conf: "think", src: "all", ans: {} }; render();
+    document.dispatchEvent(new KeyboardEvent("keydown", { key: "b", bubbles: true }));
+    res.keyboardPick = !!(S.ps && S.ps.shown);
+    /* confidence gate: with no confidence chosen, a click must not score */
+    fresh(); S.mode = "practice"; S.ps = { set: [q.id], i: 0, pick: null, shown: false, src: "all", ans: {} }; render();
+    var b0 = document.querySelector('[data-opt="' + q.a + '"]'); if(b0) b0.click();
+    res.confidenceGate = !(S.qs[q.id] && S.qs[q.id].n);
+    /* set summary: answer two, finish, expect .setsummary rows that expand */
+    fresh(); var q2 = QS.find(function(x){ return x.id !== q.id; }) || q;
+    S.mode = "practice"; S.ps = { set: [q.id, q2.id], i: 0, pick: null, shown: false, conf: "think", src: "all", ans: {} }; render();
+    var b1 = document.querySelector('[data-opt="' + q.a + '"]'); if(b1) b1.click();
+    var nx = document.getElementById("qnext"); if(nx) nx.click();
+    var w2 = q2.o.findIndex(function(_, i){ return i !== q2.a; }); var b2 = document.querySelector('[data-opt="' + w2 + '"]'); if(b2) b2.click();
+    nx = document.getElementById("qnext"); if(nx) nx.click();
+    var rows = document.querySelectorAll(".setsummary [data-sumq]"); res.summaryRows = rows.length;
+    if(rows.length){ rows[0].click(); var ex = Array.prototype.slice.call(document.querySelectorAll(".setsummary .sumexp")).filter(visible); res.summaryExpandable = ex.length > 0 && words(ex[0].textContent).length >= 8; } else res.summaryExpandable = false;
+    res.scrollOverflow = document.documentElement.scrollWidth - window.innerWidth;
+    return res;
+  });
+
+  /* ---------------- image spot + overlay renderer ------------------------------- */
+  sec("renderSpot", function(){
+    var keys = Object.keys(IMGS); if(!keys.length) return null;
+    fresh(); var k = keys[0]; var im = IMGS[k];
+    S.mode = "spot"; S.sp = { set: [k], i: 0, pick: null }; if(typeof buildSpotOpts === "function") buildSpotOpts(); render();
+    var res = { key: k, optionsRendered: document.querySelectorAll("[data-spo]").length };
+    var opts = S.sp.opts || []; var wi = opts.findIndex(function(o){ return o !== im.dx; });
+    var btn = document.querySelector('[data-spo="' + wi + '"]'); if(!btn) throw new Error("no spot option button");
+    btn.click();
+    var otherW = opts.find(function(o, i){ return o !== im.dx && i !== wi; });
+    Object.assign(res, clickWrongAndReadWhy(".qopt", im.ww ? im.ww[otherW || opts[wi]] : ""));
+    var shapes = document.querySelectorAll("main .photo .oshape"); res.shapesRendered = shapes.length;
+    res.filledShapes = Array.prototype.slice.call(shapes).filter(function(s){ var cs = getComputedStyle(s); return s.classList.contains("fill") && parseFloat(cs.opacity) > 0.12; }).length;
+    res.pinsRendered = document.querySelectorAll("main .photo .opin, main .photo [data-pin]").length;
+    res.showAllToggle = !!document.querySelector("main [data-showall]");
+    res.hideMarkup = !!document.querySelector("main [data-raw]");
+    res.credit = !!document.querySelector("main .photo .cred, main .cred");
+    res.liveVerdict = Array.prototype.slice.call(document.querySelectorAll("[aria-live]")).some(function(e){ return (e.innerText || "").indexOf(strip(im.dx)) >= 0; });
+    /* every overlay kind of the contract renders an element (synthetic image, removed after) */
+    var kinds = { r: { k: "r", x: 10, y: 10, w: 10, h: 10 }, e: { k: "e", x: 40, y: 20, rx: 5, ry: 4 }, c: { k: "c", x: 70, y: 20, r: 4 },
+      poly: { k: "poly", x: 20, y: 60, pts: [[15, 55], [25, 55], [20, 65]] }, arrow: { k: "arrow", x: 50, y: 60, tx: 60, ty: 70 },
+      bracket: { k: "bracket", x: 70, y: 50, x2: 70, y2: 70 }, spot: { k: "spot", x: 50, y: 50, rx: 10, ry: 8 },
+      inset: { k: "inset", x: 80, y: 80, w: 8, h: 8, ix: 2, iy: 80, iw: 16, ih: 16 }, none: { k: "none", x: 90, y: 10 } };
+    var kindRender = {};
+    Object.keys(kinds).forEach(function(kd){
+      var a = kinds[kd]; a.px = a.x; a.py = a.y; a.l = "Probe label for kind " + kd + " with enough words to satisfy the renderer.";
+      IMGS.__probe = { n: "probe", url: im.url, dx: "probe", wrong: [], ww: {}, look: "", cred: "", ann: [a] };
+      var d = document.createElement("div"); try { d.innerHTML = imgHTML("__probe"); } catch(e){ kindRender[kd] = "throws: " + e.message; return; }
+      var html = d.innerHTML; kindRender[kd] = !/NaN|undefined/.test(html) && d.querySelectorAll(".photo *").length > 2;
+    });
+    delete IMGS.__probe; res.kindRender = kindRender;
+    res.scrollOverflow = document.documentElement.scrollWidth - window.innerWidth;
+    return res;
+  });
+
+  /* ---------------- drills ------------------------------------------------------ */
+  sec("renderDrill", function(){
+    var res = {};
+    var d = DRILLS.find(function(x){ return x.kind === "sort"; });
+    if(d){ fresh(); var n = d.items.length; S.mode = "drill"; S.dr = { id: d.id, order: Array.from({ length: n }, function(_, i){ return i; }), i: n, missed: [0, 1] }; render();
+      res.sortId = d.id; res.endRendered = !!document.querySelector(".disc, main [data-dwhy]");
+      var whyBtns = document.querySelectorAll("main [data-dwhy]"); res.itemsClickable = whyBtns.length;
+      if(whyBtns.length){ whyBtns[0].click(); var w = Array.prototype.slice.call(document.querySelectorAll("main .optwhy")).filter(visible); res.whyRevealed = w.length > 0 && words(w[0].textContent).length >= 8; } else res.whyRevealed = false; }
+    var od = DRILLS.find(function(x){ return x.kind === "order"; }); res.orderDrill = od ? od.id : null;
+    if(od){ fresh(); S.mode = "drill"; S.dr = { id: od.id, placed: od.items.map(function(_, i){ return i; }), pool: [], checked: true, perfect: true }; render(); res.orderClickable = document.querySelectorAll("main [data-dwhy]").length; }
+    var md = DRILLS.find(function(x){ return x.kind === "multi"; }); res.multiDrill = md ? md.id : null;
+    if(md){ fresh(); S.mode = "drill"; S.dr = { id: md.id, order: md.items.map(function(_, i){ return i; }), i: md.items.length, missed: [0] }; render(); res.multiClickable = document.querySelectorAll("main [data-dwhy]").length; }
+    return res;
+  });
+
+  /* ---------------- pretest, sexp, grid, cloze, why ------------------------------ */
+  sec("renderLearn", function(){
+    var t = topicsAll.find(function(x){ return x.pretest && x.pretest.length; }); if(!t) return null;
+    var res = { topic: t.id };
+    fresh(); S.mode = "learn"; S.cur = t.id; render();
+    var p = t.pretest[0]; var wj = p.o.findIndex(function(_, j){ return j !== p.a; });
+    var b = document.querySelector('[data-pti="0"][data-ptj="' + wj + '"]');
+    if(b){ b.click(); var why = document.querySelector('[data-pt="0"] .ptwhy'); var txt = why ? strip(why.textContent) : "";
+      res.pretestWhy = words(txt).length >= 6; res.pretestWrongSpecific = p.w && p.w[p.o[wj]] ? sharesFive(txt, p.w[p.o[wj]]) : false; }
+    else res.pretestWhy = false;
+    fresh(); S.mode = "learn"; S.cur = t.id; S.pre = {}; S.pre[t.id] = { done: true, ok: [] }; render();
+    res.sexp = document.querySelectorAll("main .checkpoint[data-sexp]").length;
+    var sb = document.querySelector("main [data-sx]"); if(sb){ sb.click(); res.sexpAnswered = !!document.querySelector("main .checkpoint[data-sexp] .ptwhy"); }
+    res.grid = document.querySelectorAll("main #rgrid [data-rg]").length;
+    /* recall grid scores and marks the topic (reading credit flows through wireGrid) */
+    var gbtn = document.querySelectorAll("main #rgrid [data-rg]"); if(gbtn.length){ gbtn[0].click(); gbtn[1] && gbtn[1].click(); var chk = document.getElementById("rgcheck"); if(chk) chk.click();
+      res.gridScored = !!(S.topics[t.id] && S.topics[t.id].grid != null); }
+    res.why = document.querySelectorAll("main details.why").length;
+    res.vis = document.querySelectorAll("main .conceptvisual").length;
+    var cz = document.getElementById("clozeToggle"); if(cz){ cz.click(); res.clozeBlanks = document.querySelectorAll("main .cz.blank").length; S.cloze = false; }
+    fresh(); S.mode = "learn"; S.cur = t.id; S.pre = {}; S.pre[t.id] = { done: true, ok: [] }; render();
+    var gt = document.querySelector("main .gterm"); if(gt){ gt.click(); res.glossPopup = !!document.querySelector("main .gpop"); }
+    return res;
+  });
+
+  /* ---------------- glossary reach + per-topic learn metrics --------------------- */
+  sec("topics", function(){
+    var linked = {}, per = {};
+    topicsAll.forEach(function(t){ fresh(); S.mode = "learn"; S.cur = t.id; S.pre = {}; S.pre[t.id] = { done: true, ok: [] }; render();
+      var keys = {}; document.querySelectorAll("main .gterm").forEach(function(g){ keys[g.dataset.g] = 1; linked[g.dataset.g] = 1; });
+      per[t.id] = { gterms: Object.keys(keys).length, strong: document.querySelectorAll("main .prose strong, main .call strong, main .tblwrap strong").length,
+                    figs: document.querySelectorAll("main figure svg.dia").length, photos: document.querySelectorAll("main .photo").length, text: mainText().length }; });
+    var never = Object.keys(GLOSS).filter(function(k){ return !linked[k]; });
+    return { perTopic: per, glossTerms: Object.keys(GLOSS).length, neverLinked: never };
+  });
+
+  /* ---------------- figures: glyph size, overlap and clipping --------------------- */
+  function svgGlyphs(sv){
+    var vb = (sv.getAttribute("viewBox") || "").split(/[\s,]+/).map(Number); var vw = vb.length === 4 && vb[2] > 0 ? vb[2] : null;
+    var rect = sv.getBoundingClientRect(); if(!vw || rect.width <= 0) return [];
+    var scale = rect.width / vw, hs = [];
+    sv.querySelectorAll("text").forEach(function(tn){ var fs = parseFloat(getComputedStyle(tn).fontSize); if(fs > 0) hs.push(fs * scale); });
+    return hs;
+  }
+  function textBoxes(sv){
+    var out = []; sv.querySelectorAll("text").forEach(function(tn){ try { var b = tn.getBBox(); if(b.width > 0 && b.height > 0 && strip(tn.textContent)) out.push({ t: strip(tn.textContent).slice(0, 40), x: b.x, y: b.y, w: b.width, h: b.height }); } catch(e){} }); return out;
+  }
+  sec("figs", function(){
+    var per = {}, seen = {}, below9 = [], overlaps = {}, clipped = {};
+    topicsAll.forEach(function(t){ fresh(); S.mode = "learn"; S.cur = t.id; S.pre = {}; S.pre[t.id] = { done: true, ok: [] }; render();
+      if(typeof fitAllFigures === "function") try { fitAllFigures(); } catch(e){}
+      document.querySelectorAll("main figure").forEach(function(fig){ var z = fig.querySelector("[data-zoomfig]"); var sv = fig.querySelector("svg.dia"); if(!z || !sv) return;
+        var key = z.dataset.zoomfig; if(seen[key]) return; seen[key] = 1;
+        var hs = svgGlyphs(sv); var med = hs.length ? +median(hs).toFixed(2) : null; per[key] = med; if(med != null && med < 9) below9.push(key);
+        var vb = (sv.getAttribute("viewBox") || "0 0 0 0").split(/[\s,]+/).map(Number); var bx = textBoxes(sv), ov = [], cl = [];
+        bx.forEach(function(a, i){ if(a.x < vb[0] - 1 || a.y < vb[1] - 1 || a.x + a.w > vb[0] + vb[2] + 1 || a.y + a.h > vb[1] + vb[3] + 1) cl.push(a.t);
+          for(var j = i + 1; j < bx.length; j++){ var b = bx[j]; var ix = Math.min(a.x + a.w, b.x + b.w) - Math.max(a.x, b.x), iy = Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y);
+            if(ix > 2 && iy > 2) ov.push(a.t + " | " + b.t); } });
+        if(ov.length) overlaps[key] = ov.slice(0, 4); if(cl.length) clipped[key] = cl.slice(0, 4); }); });
+    var unplaced = Object.keys(FIGS).filter(function(k){ return !seen[k]; });
+    var vals = Object.values(per).filter(function(v){ return v != null; });
+    var res = { measured: Object.keys(per).length, perFig: per, medianAll: vals.length ? +median(vals).toFixed(2) : null, below9: below9, overlaps: overlaps, clipped: clipped, notInAnyBody: unplaced };
+    try { var first = topicsAll.find(function(t){ return (t.body || []).some(function(x){ return x[0] === "f"; }); });
+      if(first){ fresh(); S.mode = "learn"; S.cur = first.id; S.pre = {}; S.pre[first.id] = { done: true, ok: [] }; render();
+        var zb = document.querySelector("[data-zoomfig]"); zb.click(); var lb = document.querySelector(".lightbox"); var sv2 = lb.querySelector("svg.dia") || lb.querySelector("svg");
+        var hs2 = sv2 ? svgGlyphs(sv2) : []; var pane = sv2 ? sv2.parentElement : lb;
+        res.lightbox = { fig: zb.dataset.zoomfig, medianGlyph: hs2.length ? +median(hs2).toFixed(2) : null, pan: Math.max(0, pane.scrollWidth - pane.clientWidth) };
+        var fit = Array.prototype.slice.call(lb.querySelectorAll("button")).find(function(b){ return /fit/i.test(b.textContent); });
+        if(fit){ fit.click(); var hs3 = svgGlyphs(sv2); res.lightbox.afterFitGlyph = hs3.length ? +median(hs3).toFixed(2) : null; }
+        document.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape", bubbles: true })); var still = document.querySelector(".lightbox"); if(still) still.remove(); } } catch(e){ res.lightbox = { error: e.message }; }
+    return res;
+  });
+
+  /* ---------------- search ------------------------------------------------------- */
+  sec("search", function(){
+    var idx = null; try { idx = buildIndex(); } catch(e){}
+    if(!Array.isArray(idx)) return { indexReadable: false };
+    var bodies = idx.map(function(e){ return strip((e && (e.body || e.text || e.t || "")) + " " + (e && (e.title || e.h || ""))).toLowerCase(); }).join("\n");
+    function has(s){ var w = words(s).slice(0, 4).join(" ").toLowerCase(); return w.length > 6 ? bodies.indexOf(w) >= 0 : null; }
+    var q = QS.find(function(x){ return x.w && Object.keys(x.w).length; }); var qe = QS.find(function(x){ return x.et; }); var qb = QS.find(function(x){ return x.bl; });
+    var r = RAPID.find(function(x){ return x.w && Object.keys(x.w).length; });
+    return { indexReadable: true, entries: idx.length, whyFindable: q ? has(q.w[Object.keys(q.w)[0]]) : null,
+             tableFindable: qe ? has(qe.et[1][0].slice(1).join(" ")) : null, bottomLineFindable: qb ? has(qb.bl) : null,
+             rapidWhyFindable: r ? has(r.w[Object.keys(r.w)[0]]) : null,
+             topicsIndexed: topicsAll.every(function(t){ return bodies.indexOf(strip(t.t).toLowerCase().slice(0, 20)) >= 0; }) };
+  });
+
+  /* ---------------- state, confusions, export, flags ----------------------------- */
+  sec("state", function(){
+    fresh(); var id = RAPID[0] && RAPID[0].i; if(!id) return null;
+    S.rapid[id] = { box: 1, n: 2, lastPick: "probe-pick", picks: ["probe-pick", "probe-pick"], hist: [{ ok: false, ts: Date.now() }, { ok: false, ts: Date.now() }] };
+    if(typeof repairState === "function") repairState();
+    var kept = !!(S.rapid[id] && S.rapid[id].lastPick === "probe-pick");
+    var conf = null; try { conf = (typeof confusions === "function") ? confusions() : null; } catch(e){ conf = "err:" + e.message; }
+    var confHasRapid = Array.isArray(conf) ? conf.some(function(r){ return r && (r.kind === "rapid" || r.src === "rapid" || r.rapid === true); }) : null;
+    var src = String(typeof wire === "function" ? wire : "");
+    return { repairKeepsLastPick: kept, confusionsHasRapidKind: confHasRapid, exportHasFlags: /flags/.test(src) || /S\.flags/.test(src),
+             flagKinds: (typeof FLAG_KINDS !== "undefined") ? Object.keys(FLAG_KINDS) : [] };
+  });
+
+  /* ---------------- pacing promise, review share, late reset ---------------------- */
+  sec("pacing", function(){
+    if(typeof todaysPlan !== "function" || !PATH.length) return null;
+    var RealDate = window.Date, offset = 0, out = {};
+    function FakeDate(){ var a = Array.prototype.slice.call(arguments); if(!a.length) return new RealDate(RealDate.now() + offset); return new (Function.prototype.bind.apply(RealDate, [null].concat(a)))(); }
+    FakeDate.prototype = RealDate.prototype; FakeDate.now = function(){ return RealDate.now() + offset; }; FakeDate.UTC = RealDate.UTC; FakeDate.parse = RealDate.parse;
+    var realTopic = function(){ return { read: true, dwell: 600, grid: 1, gridAt: Date.now() }; };
+    function complete(p){ if(p.kind === "diag") S.stage[p.id] = { done: true, n: 5, total: 5, acc: 1 };
+      else if(p.kind === "final") S.stage[p.id] = { quiz: { done: true, acc: 1, n: 40, total: 40 } };
+      else { (p.topics || []).forEach(function(id){ S.topics[id] = realTopic(); }); S.stage[p.id] = { quiz: { done: true, acc: 1, n: 7, total: 7 }, rapid: true }; } }
+    var hubLoad0 = window.hubLoad; try { if(typeof hubLoad === "function") window.hubLoad = function(){ return { v: 1, items: {} }; }; } catch(e){}
+    window.Date = FakeDate;
+    try { [2, 3, 5, 7, 10, 14].forEach(function(N){ fresh(); offset = 0; S.paceDays = N; var day = 0;
+        while(day < 40){ if(!PATH.filter(function(p){ return !stageDone(p); }).length) break; day++;
+          var plan = todaysPlan(); var sr = plan.picked.filter(function(r){ return r.act && r.act[0] === "stage"; }); if(!sr.length){ day = -1; break; }
+          sr.forEach(function(r){ complete(stageOf(r.act[1])); }); bumpDay(plan.mins); offset += 864e5; }
+        out[N] = day; }); }
+    finally { window.Date = RealDate; if(hubLoad0) window.hubLoad = hubLoad0; }
+    var exact = Object.keys(out).every(function(k){ return +k === out[k]; });
+    fresh(); RAPID.forEach(function(r){ S.rapid[r.i] = { box: 1, due: Date.now() - 6e5, n: 1, miss: 1 }; }); S.paceDays = 14;
+    var plan14 = todaysPlan(); var review = plan14.picked.filter(function(r){ return !/^stage:/.test(r.id); }).reduce(function(a, r){ return a + r.mins; }, 0);
+    return { paceDays: out, exact: exact, reviewShare14: +(review / Math.max(1, plan14.budget)).toFixed(2) };
+  });
+
+  /* ---------------- option-position bias (display permutation) ------------------- */
+  sec("bias", function(){
+    if(typeof viewOrder !== "function") return null;
+    var chis = [0, 1, 2, 3].map(function(s){ var d = [0, 0, 0, 0, 0]; QS.forEach(function(q){ var ord = viewOrder(q, s); d[ord.indexOf(q.a)]++; });
+      var e = d.reduce(function(a, b){ return a + b; }, 0) / d.length; return +d.reduce(function(a, o){ return a + (o - e) * (o - e) / Math.max(1e-9, e); }, 0).toFixed(1); });
+    return { chi: chis, max: Math.max.apply(null, chis), n: QS.length };
+  });
+
+  /* ---------------- accessibility + exam-date guard ------------------------------ */
+  sec("a11y", function(){
+    fresh(); S.mode = "path"; render(); var b = document.querySelector("main button"); if(b) b.focus(); render();
+    return { htmlLang: document.documentElement.lang, titleTags: document.querySelectorAll("title").length,
+             focusAfterRender: document.activeElement === document.body ? "BODY" : document.activeElement.tagName, liveRegion: !!document.getElementById("live") };
+  });
+  sec("examPast", function(){
+    if(typeof EXAM === "undefined") return null; var E0 = EXAM; fresh();
+    try { EXAM = new Date(Date.now() - 5 * 864e5); S.mode = "path"; render(); var t = mainText();
+      return { bannerShown: /date has passed|has passed|set a new date/i.test(t), ceilingInPast: (typeof examCeiling === "function") ? examCeiling() < Date.now() : null };
+    } finally { EXAM = E0; }
+  });
+
+  /* ---------------- two yield axes (Step 1 vs the course exam) -------------------- */
+  sec("yieldAxes", function(){
+    var src = String(typeof render === "function" ? render : "") + String(typeof bindChrome === "function" ? bindChrome : "") + String(typeof railHTML === "function" ? railHTML : "");
+    var hiY = topicsAll.filter(function(t){ return t.yld === "hi"; }).length, hiE = topicsAll.filter(function(t){ return t.exam === "hi"; }).length;
+    var differ = topicsAll.filter(function(t){ return t.yld !== t.exam; }).length;
+    return { axisToggle: /yAxis|yieldAxis|data-yaxis/.test(src), hiStep1: hiY, hiExam: hiE, topics: topicsAll.length, axesDiffer: differ };
+  });
+
+  /* ---------------- weak spots, threads, tutor, calendar ------------------------- */
+  sec("weak", function(){
+    fresh(); var byTopic = {};
+    QS.forEach(function(q){ (byTopic[q.c] = byTopic[q.c] || []).push(q); });
+    Object.keys(byTopic).slice(0, 3).forEach(function(tid){ byTopic[tid].slice(0, 3).forEach(function(q){ var wrong = (q.a + 1) % q.o.length;
+      S.qs[q.id] = { ok: false, conf: "sure", pick: wrong, n: 1, ts: Date.now(), ms: 30000, hist: [{ ok: false, conf: "sure", pick: wrong, ms: 30000, ts: Date.now(), d: q.d || 2 }] }; }); });
+    S.mode = "weak"; render(); var t = mainText();
+    return { rendered: t.length > 200, threadsSection: /concept thread/i.test(t), errorTypes: /knowledge gap|misread|confusion/i.test(t), proven: /proven|suspected/i.test(t) };
+  });
+  sec("tutor", function(){
+    if(typeof paintDock !== "function") return { present: false };
+    var src = String(paintDock) + String(typeof askDock === "function" ? askDock : "");
+    return { present: true, degrades: /not reachable|fallback/i.test(src), socratic: /socratic/i.test(src) };
+  });
+  sec("calendar", function(){ fresh(); S.mode = "path"; render(); return { strip: !!document.querySelector("main [data-calday]"), pace: !!document.getElementById("pacedays"), examInput: !!document.getElementById("examdate"), exportBtn: !!document.getElementById("expbtn") }; });
+
+  /* ---------------- images actually decode ---------------------------------------- */
+  var IMG_PROBES = [];
+  sec("images", function(){ Object.keys(IMGS).forEach(function(k){ var el = document.createElement("img"); el.src = IMGS[k].url; el.style.cssText = "position:absolute;left:-9999px;width:10px"; document.body.appendChild(el); IMG_PROBES.push([k, el]); }); return { n: IMG_PROBES.length }; });
+  function finishImages(){ var o = OUT.images; if(!o) return; o.dims = {}; o.broken = []; IMG_PROBES.forEach(function(p){ var el = p[1]; o.dims[p[0]] = [el.naturalWidth, el.naturalHeight]; if(!(el.complete && el.naturalWidth > 0)) o.broken.push(p[0]); el.remove(); }); }
+
+  restore();
+  try { finishImages(); } catch(e){ OUT.errors.push("images: " + e.message); }
+  OUT.jsErrors = errs.slice(0, 12);
+  var pre = document.createElement("pre"); pre.id = "probe"; pre.style.cssText = "position:fixed;left:0;bottom:0;z-index:99999;max-height:30vh;overflow:auto;background:#003;color:#9cf;font:11px/1.3 monospace;padding:8px;margin:0";
+  pre.textContent = JSON.stringify(OUT); document.body.appendChild(pre);
+})();

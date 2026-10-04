@@ -1,0 +1,87 @@
+{
+ "id": "d_rp8_multi",
+ "c": "rp8",
+ "kind": "multi",
+ "t": "Which part of the cycle is it?",
+ "tags": [
+  "cycle-phases"
+ ],
+ "key": "Sort each finding by the hormone that causes it: estradiol drives the follicular phase, the LH surge marks ovulation, and progesterone defines the luteal phase.",
+ "cols": [
+  {
+   "id": "fol",
+   "l": "Follicular"
+  },
+  {
+   "id": "ovu",
+   "l": "Ovulation"
+  },
+  {
+   "id": "lut",
+   "l": "Luteal"
+  }
+ ],
+ "items": [
+  [
+   "Proliferative endometrium",
+   "fol",
+   "Estradiol without progesterone makes straight, dividing glands in the first half of the cycle."
+  ],
+  [
+   "Estradiol rising from the dominant follicle",
+   "fol",
+   "The dominant follicle's granulosa cells aromatize androgens, so estradiol climbs before ovulation."
+  ],
+  [
+   "FSH highest at the start of the phase",
+   "fol",
+   "Falling luteal hormones release FSH at cycle start to recruit the next cohort."
+  ],
+  [
+   "Length varies from cycle to cycle",
+   "fol",
+   "Follicle selection takes a variable time, so this phase sets the cycle length."
+  ],
+  [
+   "LH surge",
+   "ovu",
+   "Two days of high estradiol flip feedback and release the surge that triggers ovulation."
+  ],
+  [
+   "Oocyte completes meiosis I",
+   "ovu",
+   "The LH surge restarts meiosis, so meiosis I finishes just before the follicle ruptures."
+  ],
+  [
+   "Thin, stretchy cervical mucus",
+   "ovu",
+   "Peak estradiol just before ovulation makes mucus watery and stretchy so sperm can pass."
+  ],
+  [
+   "Mid-cycle pain (mittelschmerz)",
+   "ovu",
+   "Follicle rupture can irritate the peritoneum, causing one-sided pain at ovulation."
+  ],
+  [
+   "Secretory endometrium",
+   "lut",
+   "Progesterone turns glands coiled and vacuolated after ovulation.",
+   "rp8_endometrium"
+  ],
+  [
+   "Progesterone from the corpus luteum",
+   "lut",
+   "The luteinized follicle secretes progesterone for about 14 days after ovulation."
+  ],
+  [
+   "Basal body temperature rises",
+   "lut",
+   "Progesterone raises the hypothalamic set point, so temperature stays up through this phase."
+  ],
+  [
+   "Fixed length of about 14 days",
+   "lut",
+   "The corpus luteum's lifespan fixes this phase unless hCG rescues it."
+  ]
+ ]
+}

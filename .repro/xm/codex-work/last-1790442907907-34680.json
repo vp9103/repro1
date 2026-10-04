@@ -1,0 +1,139 @@
+{
+  "gaps": [
+    {
+      "concept": "Breast density and alcohol use independently increase breast cancer risk.",
+      "why_tested": "A risk-factor stem asks about exposures beyond reproductive history and inherited mutations.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Nonproliferative breast changes confer little added risk; proliferative lesions without atypia confer modest risk; atypical hyperplasia confers substantially greater risk.",
+      "why_tested": "A biopsy stem asks how a benign finding changes future cancer risk.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Atypical ductal hyperplasia resembles low-grade DCIS but involves only part of a duct or a limited area.",
+      "why_tested": "A histology stem asks the student to distinguish a precursor lesion from DCIS.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Inherited BRCA1/2 pathogenic variants act as autosomal dominant cancer predispositions; tumor formation typically requires somatic loss of the remaining functional allele.",
+      "why_tested": "A pedigree and tumor-genetics stem tests the two-hit mechanism.",
+      "yield": "hi"
+    },
+    {
+      "concept": "BRCA1/2 pathogenic variants also increase ovarian cancer risk.",
+      "why_tested": "A family history combining breast and ovarian cancers points to hereditary BRCA susceptibility.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Normal breast ducts and lobules have a myoepithelial layer and basement membrane; loss of these boundaries supports invasion.",
+      "why_tested": "A biopsy stem asks the student to distinguish in situ from invasive carcinoma.",
+      "yield": "hi"
+    },
+    {
+      "concept": "DCIS is usually unilateral and can progress to invasive carcinoma in the affected breast.",
+      "why_tested": "A stem contrasts the natural history of DCIS with LCIS-associated bilateral risk.",
+      "yield": "hi"
+    },
+    {
+      "concept": "LCIS consists of discohesive, relatively uniform cells expanding lobules and usually lacks mammographic calcifications.",
+      "why_tested": "An incidental biopsy finding must be distinguished from calcification-associated DCIS.",
+      "yield": "hi"
+    },
+    {
+      "concept": "High-grade DCIS commonly shows HER2 positivity; classic LCIS is usually ER positive and HER2 negative.",
+      "why_tested": "A biomarker or histology stem asks the student to identify an in situ lesion.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Invasive breast carcinoma commonly presents as a painless, hard, irregular mass; fibrosis pulling Cooper ligaments causes skin dimpling or nipple retraction.",
+      "why_tested": "A physical-examination stem asks for the mechanism of a characteristic malignant finding.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Invasive lobular carcinoma can infiltrate diffusely without a distinct mass and may contain signet-ring cells.",
+      "why_tested": "A subtle imaging finding or signet-ring histology stem points to lobular carcinoma.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Invasive lobular carcinoma has a relative tendency to metastasize to the peritoneum, gastrointestinal tract, and ovaries.",
+      "why_tested": "A patient with prior lobular carcinoma develops an unusual abdominal metastatic lesion.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Medullary carcinoma can have a better prognosis than its high-grade appearance suggests.",
+      "why_tested": "A morphology-and-prognosis stem tests the medullary subtype's characteristic exception.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Mucinous carcinoma shows tumor cells floating in abundant extracellular mucin.",
+      "why_tested": "A histology image asks the student to identify the subtype.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Tubular carcinoma forms small, well-differentiated, angulated tubules infiltrating stroma.",
+      "why_tested": "A histology image asks the student to distinguish a favorable invasive subtype.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Metaplastic carcinoma may show malignant squamous or spindle-cell differentiation.",
+      "why_tested": "A breast tumor with non-glandular malignant cells must be classified.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Male breasts generally lack developed lobules, making lobular carcinoma exceptionally rare in men.",
+      "why_tested": "A male breast cancer stem asks why ductal histology predominates.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Nottingham histologic grade scores tubule formation, nuclear pleomorphism, and mitotic activity.",
+      "why_tested": "A pathology report asks which microscopic features determine tumor grade.",
+      "yield": "mid"
+    },
+    {
+      "concept": "ER and PR positivity predicts benefit from endocrine therapy.",
+      "why_tested": "A receptor-profile stem asks which treatment class is likely to work.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Triple-negative tumors lack ER, PR, and HER2 targets, so endocrine and HER2-directed therapies are ineffective.",
+      "why_tested": "A receptor-profile stem asks why those targeted treatments are unsuitable.",
+      "yield": "hi"
+    },
+    {
+      "concept": "HER2 dimerization activates PI3K–AKT and RAS–MAPK growth signaling; pertuzumab blocks HER2 dimerization.",
+      "why_tested": "A molecular-mechanism stem asks how HER2 amplification drives growth or how pertuzumab acts.",
+      "yield": "mid"
+    },
+    {
+      "concept": "HER2 protein overexpression is assessed by immunohistochemistry; ERBB2 gene amplification can be confirmed by in situ hybridization.",
+      "why_tested": "A pathology stem asks how an equivocal HER2 result is resolved.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Tamoxifen antagonizes estrogen receptors in breast tissue but has estrogen-like effects in endometrium and bone.",
+      "why_tested": "A drug-mechanism stem asks why tamoxifen treats breast cancer yet increases endometrial risk.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Aromatase inhibitors reduce peripheral conversion of androgens to estrogen; ovarian estrogen production limits their use alone before menopause.",
+      "why_tested": "A premenopausal versus postmenopausal treatment stem tests the source of estrogen.",
+      "yield": "hi"
+    },
+    {
+      "concept": "CDK4/6 inhibitors prevent retinoblastoma-protein phosphorylation and G1-to-S cell-cycle progression.",
+      "why_tested": "A drug-mechanism stem asks how these agents slow hormone-receptor-positive tumor growth.",
+      "yield": "mid"
+    },
+    {
+      "concept": "PARP inhibition is synthetically lethal in BRCA-deficient tumors because unrepaired DNA breaks accumulate.",
+      "why_tested": "A BRCA-mutant tumor stem asks why a DNA-repair inhibitor is effective.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Breast cancer bone metastases are commonly osteolytic and may cause hypercalcemia.",
+      "why_tested": "A patient with breast cancer develops bone pain, lytic lesions, and elevated calcium.",
+      "yield": "mid"
+    }
+  ]
+}

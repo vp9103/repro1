@@ -1,0 +1,5 @@
+{"type": "turn.started", "provider": "gemini", "model": "gemini-3.1-pro-preview", "format": "json_schema", "images": 0, "prompt_sha": "3d42a846fa"}
+{"type": "error", "model": "gemini-3.1-pro-preview", "error": "gemini-3.1-pro-preview json_schema: HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e"}
+{"type": "turn.started", "provider": "gemini", "model": "gemini-3.5-flash", "format": "json_schema", "images": 0, "prompt_sha": "3d42a846fa"}
+{"type": "item.completed", "model": "gemini-3.5-flash", "usage": {"completion_tokens": 5, "prompt_tokens": 13, "total_tokens": 232}}
+{"type": "turn.completed", "provider": "gemini", "model": "gemini-3.5-flash"}

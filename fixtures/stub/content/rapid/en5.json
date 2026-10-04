@@ -1,0 +1,98 @@
+[
+ {
+  "id": "en5r01",
+  "tags": [
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-en5-01"
+  ],
+  "q": "Which enzyme couples iodotyrosines into T4?",
+  "o": [
+   "Thyroid peroxidase",
+   "5'-deiodinase",
+   "Thyroglobulin protease",
+   "Sodium-iodide symporter",
+   "Tyrosine hydroxylase"
+  ],
+  "a": 0,
+  "x": "Thyroid peroxidase oxidizes iodide, iodinates tyrosines on thyroglobulin and couples DIT with DIT to form T4, all at the apical membrane; thionamides block it.",
+  "w": {
+   "5'-deiodinase": "Deiodinase removes iodine to convert T4 into T3 in tissues; it acts after secretion, not during coupling in the colloid.",
+   "Thyroglobulin protease": "Lysosomal proteases cut finished T4 and T3 off thyroglobulin after endocytosis; coupling has already happened.",
+   "Sodium-iodide symporter": "The symporter only traps iodide at the basolateral membrane; it has no enzymatic role in iodination or coupling.",
+   "Tyrosine hydroxylase": "Tyrosine hydroxylase starts catecholamine synthesis; thyroid hormone is built by iodination, not hydroxylation."
+  },
+  "media": "fig:en5_synthesis",
+  "pt": {
+   "hl": [
+    "Thyroid peroxidase"
+   ],
+   "say": "Thyroid peroxidase sits on the colloid side, where iodination and coupling happen."
+  }
+ },
+ {
+  "id": "en5r02",
+  "tags": [
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-en5-01"
+  ],
+  "q": "Which hormone form binds the nuclear receptor most avidly?",
+  "o": [
+   "T3",
+   "T4",
+   "Reverse T3",
+   "Thyroglobulin",
+   "TSH"
+  ],
+  "a": 0,
+  "x": "T3 binds the thyroid hormone receptor with about ten times the affinity of T4, so tissues convert T4 to T3 before it acts.",
+  "w": {
+   "T4": "T4 is the main secreted form but binds the receptor weakly; tissues must deiodinate it to T3 first.",
+   "Reverse T3": "Reverse T3 is an inactive product of inner-ring deiodination that rises in severe illness.",
+   "Thyroglobulin": "Thyroglobulin is the storage scaffold in the colloid and never leaves the follicle in useful amounts.",
+   "TSH": "TSH acts on a cell-surface G protein-coupled receptor on follicular cells, not a nuclear receptor."
+  },
+  "media": "fig:en5_synthesis",
+  "pt": {
+   "hl": [
+    "MIT + DIT"
+   ],
+   "say": "Coupling MIT with DIT makes T3, the form the nuclear receptor binds best."
+  }
+ },
+ {
+  "id": "en5r03",
+  "tags": [
+   "binding-proteins"
+  ],
+  "bp": [
+   "BP-en5-01"
+  ],
+  "q": "What raises total T4 but leaves free T4 normal?",
+  "o": [
+   "High thyroxine-binding globulin",
+   "Graves disease",
+   "Iodine deficiency",
+   "Central hypothyroidism",
+   "Amiodarone toxicity"
+  ],
+  "a": 0,
+  "x": "More thyroxine-binding globulin, as with estrogen or pregnancy, binds more T4; the gland makes extra until free T4, and so TSH, are normal again.",
+  "w": {
+   "Graves disease": "Graves antibodies raise free T4 and suppress TSH, so the free hormone is high, not normal.",
+   "Iodine deficiency": "Iodine deficiency lowers hormone synthesis, raising TSH and eventually lowering free T4 and total T4.",
+   "Central hypothyroidism": "Central hypothyroidism lowers free T4 with a low or normal TSH; total T4 falls rather than rises.",
+   "Amiodarone toxicity": "Amiodarone can cause hyper- or hypothyroidism, changing free T4, and it blocks deiodination rather than binding proteins."
+  },
+  "media": "img:en5_follicles",
+  "pt": {
+   "hl": [
+    "Colloid-filled follicle"
+   ],
+   "say": "The follicles are normal; the extra thyroxine-binding globulin comes from the liver, not the thyroid."
+  }
+ }
+]

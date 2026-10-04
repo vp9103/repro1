@@ -1,0 +1,281 @@
+{
+ "id": "en2",
+ "t": "The hypothalamus and pituitary",
+ "sub": "Two lobes with two origins: releasing hormones reach the anterior lobe in portal blood, while the posterior lobe stores hormones made in the hypothalamus.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 12,
+ "bp": [
+  "BP-en2-01",
+  "BP-en2-02",
+  "BP-en2-03",
+  "BP-en2-04",
+  "BP-en2-05",
+  "BP-en2-06",
+  "BP-en2-07",
+  "BP-en2-08",
+  "BP-en2-09",
+  "BP-en2-10",
+  "BP-en2-11",
+  "BP-en2-12",
+  "BP-en2-13",
+  "BP-en2-14",
+  "BP-en2-15"
+ ],
+ "obj": [
+  "ENDO-PITUITARY.1",
+  "ENDO-PITUITARY.2",
+  "ENDO-PITUITARY.3"
+ ],
+ "pretest": [
+  {
+   "q": "Which embryonic tissue forms the posterior pituitary?",
+   "o": [
+    "Neuroectoderm of the diencephalon",
+    "Oral ectoderm of Rathke pouch",
+    "Neural crest",
+    "Foregut endoderm"
+   ],
+   "a": 0,
+   "why": "The posterior lobe is a downgrowth of the diencephalon, so it is neural tissue: axons from hypothalamic neurons plus supporting glia. The anterior lobe comes from Rathke pouch, an upgrowth of oral ectoderm.",
+   "w": {
+    "Oral ectoderm of Rathke pouch": "Rathke pouch rises from the roof of the embryonic mouth and becomes the anterior lobe, the true glandular part of the pituitary.",
+    "Neural crest": "Neural crest cells migrate to form the adrenal medulla, melanocytes and parafollicular C cells, but they build neither pituitary lobe.",
+    "Foregut endoderm": "Foregut endoderm gives rise to the thyroid follicles and the lining of the gut, not to any part of the pituitary gland."
+   }
+  },
+  {
+   "q": "Which hypothalamic signal holds prolactin secretion down most of the time?",
+   "o": [
+    "Dopamine",
+    "Somatostatin",
+    "TRH",
+    "GnRH"
+   ],
+   "a": 0,
+   "why": "Dopamine from the hypothalamus reaches lactotrophs in portal blood and acts on D2 receptors to inhibit prolactin tonically, so cutting the stalk or blocking D2 receptors raises prolactin.",
+   "w": {
+    "Somatostatin": "Somatostatin mainly inhibits growth hormone and TSH release; it is not the tonic brake that keeps lactotrophs quiet.",
+    "TRH": "TRH stimulates prolactin release rather than inhibiting it, which is why severe primary hypothyroidism can cause hyperprolactinemia.",
+    "GnRH": "GnRH drives gonadotrophs to release LH and FSH; prolactin works against it by suppressing the GnRH pulses."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Why is the pituitary really two glands?"
+  ],
+  [
+   "p",
+   "The pituitary sits in the sella turcica of the sphenoid bone, hanging from the hypothalamus on a thin stalk, and it is really two glands with two origins. The **anterior pituitary** (adenohypophysis) grows up from {{en2_rathke|Rathke pouch}}, a finger of oral ectoderm in the roof of the embryonic mouth, so it is a true gland whose cells make and secrete hormones. The **posterior pituitary** (neurohypophysis) grows down from the diencephalon, so it is **neuroectoderm**: a bundle of axons whose cell bodies live in the hypothalamus. The posterior lobe makes no hormone of its own; it stores and releases what the hypothalamus sends down."
+  ],
+  [
+   "p",
+   "The two posterior lobe hormones are made in large hypothalamic neurons. ADH (vasopressin) comes mainly from the **supraoptic** nucleus and oxytocin mainly from the **paraventricular** nucleus. Each hormone is packaged with a carrier protein, neurophysin, and carried down unmyelinated axons in the stalk to swollen axon endings called {{en2_herring|Herring bodies}}, where it waits until an action potential releases it into the systemic blood. The only cells native to the posterior lobe are pituicytes, glial cells that support the axons."
+  ],
+  [
+   "t",
+   [
+    "Feature",
+    "Anterior pituitary",
+    "Posterior pituitary"
+   ],
+   [
+    [
+     "Embryologic origin",
+     "Rathke pouch (oral ectoderm)",
+     "Diencephalon (neuroectoderm)"
+    ],
+    [
+     "Tissue",
+     "Glandular cells: acidophils and basophils",
+     "Axons, pituicytes and Herring bodies"
+    ],
+    [
+     "How the signal arrives",
+     "Releasing hormones in portal blood",
+     "Action potentials down axons"
+    ],
+    [
+     "Hormones released",
+     "GH, prolactin, TSH, ACTH, LH, FSH",
+     "ADH and oxytocin, made in the hypothalamus"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How do hypothalamic signals reach the anterior pituitary?"
+  ],
+  [
+   "p",
+   "The anterior lobe is controlled by blood, not nerves. Hypothalamic neurons release small peptides and dopamine into capillaries of the median eminence, and these drain through the {{en2_portal|hypophyseal portal system}} into a second capillary bed that bathes the anterior pituitary cells. Because **portal** blood reaches the gland before it mixes with the general circulation, tiny amounts of each releasing hormone are enough. Thyrotropin-releasing hormone (**TRH**) drives thyrotrophs to make TSH, corticotropin-releasing hormone (**CRH**) drives corticotrophs to make ACTH, gonadotropin-releasing hormone (GnRH) drives gonadotrophs to make LH and FSH, and growth hormone-releasing hormone (GHRH) drives somatotrophs to make GH. Somatostatin inhibits GH and TSH, and dopamine inhibits prolactin."
+  ],
+  [
+   "p",
+   "On a standard stain the anterior cells fall into two groups. **Acidophils** take up eosin and make GH and prolactin; somatotrophs are the most numerous cell type. **Basophils** take up basic dyes and make the glycoprotein and POMC-derived hormones: FSH, LH, ACTH and TSH. Chromophobes stain poorly. Each target hormone then acts by **negative feedback** on both the pituitary and the hypothalamus, which is why the pattern of trophic and target hormones can locate a disease."
+  ],
+  [
+   "f",
+   "en2_axes"
+  ],
+  [
+   "call",
+   "key",
+   "Four hormones share one alpha subunit",
+   "TSH, LH, FSH and hCG are glycoproteins built from a common **alpha subunit** and a hormone-specific **beta subunit**, so the beta subunit gives each one its identity. Pregnancy tests therefore detect **beta-hCG**. Very high hCG, as in a molar pregnancy or severe hyperemesis, can stimulate the TSH receptor and cause hyperthyroidism with a suppressed TSH."
+  ],
+  [
+   "h",
+   "Why is prolactin the one hormone held back by the hypothalamus?"
+  ],
+  [
+   "p",
+   "Prolactin is the only anterior pituitary hormone whose main hypothalamic control is inhibitory. **Dopamine** from the hypothalamus reaches lactotrophs in portal blood and acts on D2 receptors to suppress prolactin **tonically**, all day and night. TRH stimulates prolactin, which is why severe primary hypothyroidism can raise it. Anything that stops dopamine from arriving raises prolactin: dopamine-blocking drugs such as antipsychotics and metoclopramide, or a mass that compresses the stalk. Prolactin in turn suppresses pulsatile **GnRH** release, so high prolactin lowers LH and FSH and causes amenorrhea and infertility in women and low libido in men, along with galactorrhea."
+  ],
+  [
+   "call",
+   "trap",
+   "A high prolactin is not always a prolactinoma",
+   "A nonfunctioning macroadenoma that presses on the stalk cuts off dopamine delivery and raises prolactin modestly, far less than a prolactinoma of the same size would, even though the tumor makes no prolactin. Pregnancy, dopamine-blocking drugs and primary hypothyroidism also raise it. Before calling a mass a **prolactinoma**, match the prolactin level to the tumor size and check medications and TSH."
+  ],
+  [
+   "h",
+   "How are growth hormone and ACTH controlled?"
+  ],
+  [
+   "p",
+   "Growth hormone is released in pulses, mostly during deep sleep. GHRH stimulates it, and so do hypoglycemia, exercise, fasting and stress; a glucose load and **somatostatin** suppress it. GH acts partly on its own, raising blood glucose and breaking down fat, but most of its growth effects come from **IGF-1**, which the liver makes in response to GH. IGF-1 feeds back to inhibit GH. Somatostatin also inhibits TSH, insulin, glucagon and gastrin, and the long-acting analog **octreotide** uses the same receptors to lower GH in acromegaly and to control hormone-secreting gut tumors."
+  ],
+  [
+   "p",
+   "Corticotrophs make ACTH by cutting a larger precursor, {{en2_pomc|proopiomelanocortin}} (**POMC**). The same precursor also yields beta-endorphin and melanocyte-stimulating hormone (**MSH**), and ACTH itself can stimulate melanocyte receptors. Whenever ACTH production is driven hard, the skin darkens: most clearly in primary adrenal insufficiency, where low cortisol removes feedback, and with ectopic ACTH from a lung tumor. Adrenal causes of cortisol excess suppress ACTH, so they never darken the skin."
+  ],
+  [
+   "h",
+   "Why does the pattern of GnRH matter more than the dose?"
+  ],
+  [
+   "p",
+   "Gonadotrophs respond to GnRH best when it arrives in **pulses**, roughly one every 60 to 90 minutes; between pulses the receptors recover. Pulsatile GnRH therefore keeps LH and FSH flowing. A **continuous** GnRH agonist such as leuprolide does the opposite. It first releases stored LH and FSH, a flare that can last one to two weeks, and then constant receptor occupancy causes **downregulation** and desensitization of the GnRH receptors, so LH, FSH and sex steroids fall to castrate levels. This medical castration treats prostate cancer, central precocious puberty, endometriosis and uterine fibroids, and in prostate cancer an antiandrogen is given at the start to cover the flare."
+  ],
+  [
+   "f",
+   "en2_gnrh"
+  ],
+  [
+   "steps",
+   [
+    "What happens after continuous leuprolide is started",
+    [
+     [
+      "Days 1 to 14: the flare",
+      "The agonist binds GnRH receptors and releases stored LH and FSH, so testosterone or estradiol rises and bone pain from prostate metastases can briefly worsen."
+     ],
+     [
+      "The receptors are downregulated",
+      "Constant occupancy uncouples the receptors from their signal and removes them from the cell surface, so the gonadotrophs stop responding."
+     ],
+     [
+      "LH and FSH fall",
+      "Without working receptors, the gonadotrophs release little LH or FSH, even though the drug is still present at the receptor."
+     ],
+     [
+      "Sex steroids reach castrate levels",
+      "The testes or ovaries lose their drive within about two to four weeks, which is the goal of therapy and also causes hot flashes and bone loss."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "What lies around the sella, and what does a mass press on?"
+  ],
+  [
+   "p",
+   "The **optic chiasm** sits just above the sella, separated from the gland only by a thin dural roof. In the chiasm the fibers from each **nasal retina** cross to the opposite side, and because the nasal retina sees the temporal visual field, a mass pushing up from below compresses these crossing fibers and produces **bitemporal hemianopia**. The lower fibers of the chiasm carry the inferior nasal retina, which sees the superior temporal field, so the loss usually starts in the upper outer quadrants."
+  ],
+  [
+   "f",
+   "en2_sella"
+  ],
+  [
+   "p",
+   "On each side of the sella lies the {{en2_cavsinus|cavernous sinus}}. Cranial nerves III, IV, V1 and V2 run in its lateral wall, while cranial nerve VI runs through the sinus beside the internal carotid artery. A pituitary mass that grows sideways, or bleeds suddenly in apoplexy, can therefore cause **diplopia**, ptosis, **ophthalmoplegia** and facial numbness. The gland also changes in pregnancy: estrogen causes **lactotroph hyperplasia** that enlarges it markedly, while its blood supply, which arrives largely through the low-pressure portal system, stays fragile."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_en2_prl",
+    "q": "A woman taking risperidone has galactorrhea and has missed three periods. Which reasoning best explains both findings?",
+    "o": [
+     "Risperidone stimulates TRH release, and TRH raises both TSH and prolactin, so the missed periods come from hypothyroidism",
+     "Blocking D2 receptors removes the dopamine brake on lactotrophs; the high prolactin causes galactorrhea and suppresses GnRH pulses, lowering LH and FSH",
+     "Risperidone damages the ovaries directly, and the resulting fall in estrogen makes the breasts secrete milk",
+     "Blocking dopamine speeds up GnRH pulses, and the extra LH and FSH stimulate the breast to secrete milk"
+    ],
+    "a": 1,
+    "why": "Lactotrophs are held down tonically by hypothalamic dopamine acting on D2 receptors. Risperidone blocks those receptors, so prolactin rises even though the pituitary is normal. Prolactin acts on the breast to produce galactorrhea, and it also suppresses the hypothalamic GnRH pulse generator, so LH and FSH fall, the ovaries make little estradiol and menses stop. Nothing here is primary thyroid or ovarian failure: TSH would be normal, and FSH would be low rather than high."
+   }
+  ],
+  [
+   "why",
+   "Why does severe blood loss during childbirth threaten the pituitary more than it would at other times?",
+   "During pregnancy estrogen drives lactotroph hyperplasia, so the anterior pituitary grows larger and needs more blood. Yet most of its blood arrives through the hypophyseal portal veins, a low-pressure route that depends on systemic blood pressure. When a postpartum hemorrhage causes shock, flow through the portal vessels falls while the enlarged gland's demand stays high, and the anterior lobe infarcts. The posterior lobe, fed directly by arteries, is usually spared. Because prolactin is needed right away, failure to lactate is often the first sign, followed by amenorrhea, fatigue from cortisol and thyroid deficiency, and loss of pubic and axillary hair. This is Sheehan syndrome."
+  ],
+  [
+   "vis",
+   "en2"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these are true of the anterior pituitary?",
+  "items": [
+   [
+    "Develops from Rathke pouch",
+    1
+   ],
+   [
+    "Receives releasing hormones through portal blood",
+    1
+   ],
+   [
+    "Contains acidophils that make GH and prolactin",
+    1
+   ],
+   [
+    "Contains basophils that make TSH, LH, FSH and ACTH",
+    1
+   ],
+   [
+    "Corticotrophs cut ACTH from POMC",
+    1
+   ],
+   [
+    "Lactotrophs are held down by dopamine",
+    1
+   ],
+   [
+    "Enlarges in pregnancy through lactotroph hyperplasia",
+    1
+   ],
+   [
+    "Releases ADH made in the supraoptic nucleus",
+    0
+   ],
+   [
+    "Contains Herring bodies and pituicytes",
+    0
+   ],
+   [
+    "Develops from a downgrowth of the diencephalon",
+    0
+   ],
+   [
+    "Receives its signals as action potentials down axons",
+    0
+   ]
+  ]
+ }
+}

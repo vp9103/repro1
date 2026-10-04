@@ -1,0 +1,94 @@
+{
+  "gaps": [
+    {
+      "concept": "Whipple triad requires symptoms, documented low plasma glucose during symptoms, and relief when glucose is corrected.",
+      "why_tested": "Distinguishes true hypoglycemia from symptoms without a measured low glucose.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Hyperglycemia causes osmotic diuresis, producing polyuria, polydipsia, tachycardia, hypotension, and prerenal azotemia.",
+      "why_tested": "Explains vital signs and laboratory findings in a patient presenting with DKA or HHS.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Measured sodium falls as hyperglycemia draws water into extracellular fluid; corrected sodium rises about 1.6 mEq/L per 100 mg/dL glucose above 100.",
+      "why_tested": "Enables interpretation of apparent hyponatremia in a hyperglycemic crisis.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Effective serum osmolality is approximately 2 × measured sodium + glucose/18; urea is excluded because it crosses cell membranes.",
+      "why_tested": "Identifies hypertonicity underlying neurologic symptoms in HHS.",
+      "yield": "hi"
+    },
+    {
+      "concept": "DKA typically has pH <7.3 and bicarbonate <18 mEq/L; HHS usually has pH ≥7.3 and bicarbonate ≥18 mEq/L.",
+      "why_tested": "Distinguishes the two emergencies when glucose is markedly elevated.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Urine nitroprusside tests detect acetoacetate but miss beta-hydroxybutyrate, potentially underestimating early DKA and appearing worse during recovery.",
+      "why_tested": "Explains a weak urine ketone result despite severe ketoacidosis, or persistent ketonuria after improvement.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Anion gap equals sodium minus chloride plus bicarbonate: Na − (Cl + HCO3).",
+      "why_tested": "Requires calculation of the metabolic disturbance from an electrolyte panel.",
+      "yield": "hi"
+    },
+    {
+      "concept": "DKA can be the first presentation of type 1 diabetes; DKA and HHS can overlap in the same patient.",
+      "why_tested": "Prevents classification based only on age, diabetes type, or a single laboratory feature.",
+      "yield": "mid"
+    },
+    {
+      "concept": "HHS develops over days to weeks, often with greater free-water loss than DKA; focal deficits or seizures can accompany hyperosmolality.",
+      "why_tested": "Supports HHS in a gradually deteriorating patient with marked dehydration and neurologic findings.",
+      "yield": "mid"
+    },
+    {
+      "concept": "In HHS, fluid replacement precedes insulin because profound volume depletion is the immediate physiologic problem.",
+      "why_tested": "Tests the first treatment choice for a severely dehydrated patient with HHS.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Alcohol raises hepatic NADH, inhibiting gluconeogenesis and causing fasting hypoglycemia when glycogen stores are depleted.",
+      "why_tested": "Explains hypoglycemia after heavy drinking with poor food intake.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Insulinoma classically causes fasting or exercise-related hypoglycemia; a supervised fast can reproduce inappropriate insulin secretion.",
+      "why_tested": "Distinguishes insulinoma from primarily postprandial hypoglycemia.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Insulinoma is a pancreatic neuroendocrine tumor associated with MEN1, especially when diagnosed at a young age.",
+      "why_tested": "Connects fasting hypoglycemia to other endocrine tumors or a family history of MEN1.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Excess insulin suppresses ketogenesis, so beta-hydroxybutyrate is low during insulin-mediated hypoglycemia.",
+      "why_tested": "Interprets a hypoglycemia panel when insulin, C-peptide, and ketone results must be reconciled.",
+      "yield": "mid"
+    },
+    {
+      "concept": "A non-islet-cell tumor secreting IGF-2 causes hypoglycemia with suppressed insulin and C-peptide despite an insulin-like effect.",
+      "why_tested": "Explains hypoglycemia with low insulin markers in a patient with a large tumor.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Neonatal hypoglycemia after maternal diabetes results from persistent fetal hyperinsulinemia after delivery removes the maternal glucose supply.",
+      "why_tested": "Explains low glucose shortly after birth in an infant of a diabetic mother.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Severe symptomatic hypoglycemia is treated with glucose if IV access is available, or glucagon when it is unavailable.",
+      "why_tested": "Tests immediate treatment of an unconscious patient with a low bedside glucose.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Recurrent hypoglycemia can blunt the sympathoadrenal warning response, causing hypoglycemia unawareness.",
+      "why_tested": "Explains sudden neuroglycopenia without preceding tremor or palpitations in a patient with diabetes.",
+      "yield": "mid"
+    }
+  ]
+}

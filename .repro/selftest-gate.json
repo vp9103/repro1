@@ -1,0 +1,21 @@
+{
+ "at": "2026-09-26 21:42:18",
+ "demoAllCaught": true,
+ "demo": {
+  "A: P1.1 marked DONE by hand, never --close'd": true,
+  "B: P3.1 (topics) DONE while phase 1 is open (skipping ahead)": true,
+  "C: P1.V with a guessed verifier token": true,
+  "D: P1.2 BLOCKED with no TRIED/NARROWER/NEEDS-USER": true,
+  "E: P1.1 DROPPED (nothing in this plan is droppable)": true,
+  "F: main content edited outside any task (lock mismatch)": true,
+  "G: four content tasks IN_PROGRESS at once": true,
+  "H: P3.1 IN_PROGRESS with no workspace (dispatched without --start)": true,
+  "I: P15.1 DONE via a forged close record whose checks now fail": true,
+  "J: P1.V verifier judged FAIL but the row was still marked DONE": true,
+  "K: a content task BLOCKED to skip it (fields present, but it does not need the user)": true,
+  "L: gate files edited, no GATE-CHANGE note (the recorded gate sha no longer matches)": true
+ },
+ "probeReferenceErrors": [],
+ "stubErrors": [],
+ "gate": "dd9a6866"
+}

@@ -1,0 +1,36 @@
+<svg class="dia" viewBox="0 0 900 480" role="img" aria-label="Mass effects of a pituitary macroadenoma: upward on the optic chiasm, sideways into the cavernous sinus, onto the stalk, and against the normal pituitary tissue">
+<text class="ttl" x="14" y="24" font-size="17">What a pituitary macroadenoma presses on</text>
+<rect x="270" y="44" width="360" height="100" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="286" y="72" font-size="16">Optic chiasm (above)</text>
+<text x="286" y="100" font-size="15">Crossing nasal retinal fibers pressed</text>
+<text x="286" y="126" font-size="15">Bitemporal hemianopia</text>
+<rect x="320" y="180" width="260" height="130" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="336" y="208" font-size="16">Macroadenoma</text>
+<text x="336" y="234" font-size="15">1 cm or larger on MRI</text>
+<text x="336" y="260" font-size="15">Microadenoma: under 1 cm,</text>
+<text x="336" y="286" font-size="15">too small to press</text>
+<rect x="14" y="170" width="272" height="150" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="30" y="198" font-size="16">Cavernous sinus (sides)</text>
+<text x="30" y="226" font-size="15">CN III, IV, VI: diplopia</text>
+<text x="30" y="252" font-size="15">and ophthalmoplegia</text>
+<text x="30" y="278" font-size="15">CN V1, V2: facial numbness</text>
+<text x="30" y="304" font-size="15">Internal carotid encased</text>
+<rect x="614" y="170" width="272" height="150" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="630" y="198" font-size="16">Pituitary stalk</text>
+<text x="630" y="226" font-size="15">Dopamine cannot reach</text>
+<text x="630" y="252" font-size="15">the lactotrophs</text>
+<text x="630" y="278" font-size="15">Prolactin rises modestly</text>
+<text x="630" y="304" font-size="15">(stalk effect)</text>
+<rect x="170" y="350" width="560" height="112" rx="10" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="186" y="378" font-size="16">Compressed normal pituitary</text>
+<text x="186" y="406" font-size="15">Hormones fail in order: GH, LH and FSH, TSH, ACTH</text>
+<text x="186" y="434" font-size="15">ACTH is lost last, but its loss causes shock</text>
+<line x1="450" y1="180" x2="450" y2="152" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,152 450,144 455,152" fill="var(--ink-2)"/>
+<line x1="320" y1="245" x2="294" y2="245" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="294,240 286,245 294,250" fill="var(--ink-2)"/>
+<line x1="580" y1="245" x2="606" y2="245" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="606,240 614,245 606,250" fill="var(--ink-2)"/>
+<line x1="450" y1="310" x2="450" y2="342" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,342 450,350 455,342" fill="var(--ink-2)"/>
+</svg>

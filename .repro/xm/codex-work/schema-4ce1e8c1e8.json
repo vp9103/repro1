@@ -1,0 +1,1 @@
+{"type": "object", "additionalProperties": false, "properties": {"gaps": {"type": "array", "items": {"type": "object", "additionalProperties": false, "properties": {"concept": {"type": "string"}, "why_tested": {"type": "string"}, "yield": {"type": "string", "enum": ["hi", "mid", "lo"]}}, "required": ["concept", "why_tested", "yield"]}}}, "required": ["gaps"]}

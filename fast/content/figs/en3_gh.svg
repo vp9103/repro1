@@ -1,0 +1,50 @@
+<svg class="dia" viewBox="0 0 900 470" role="img" aria-label="Growth hormone axis in acromegaly: GHRH and somatostatin control the somatotroph, pulsatile GH drives steady hepatic IGF-1, an oral glucose load fails to suppress GH, and surgery, octreotide and pegvisomant act at different steps">
+<text class="ttl" x="14" y="24" font-size="17">Acromegaly: where the tests and the drugs act</text>
+<rect x="300" y="44" width="300" height="96" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="316" y="72" font-size="16">Hypothalamus</text>
+<text x="316" y="100" font-size="15">GHRH stimulates GH</text>
+<text x="316" y="126" font-size="15">Somatostatin inhibits GH</text>
+<line x1="450" y1="140" x2="450" y2="164" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,164 450,172 455,164" fill="var(--ink-2)"/>
+<rect x="300" y="172" width="300" height="72" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="316" y="200" font-size="16">Somatotroph adenoma</text>
+<text x="316" y="228" font-size="15">GH released in pulses</text>
+<line x1="450" y1="244" x2="450" y2="264" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,264 450,272 455,264" fill="var(--ink-2)"/>
+<rect x="300" y="272" width="300" height="72" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="316" y="300" font-size="16">Liver</text>
+<text x="316" y="328" font-size="15">IGF-1: steady, so it screens</text>
+<line x1="450" y1="344" x2="450" y2="364" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,364 450,372 455,364" fill="var(--ink-2)"/>
+<rect x="300" y="372" width="300" height="74" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="316" y="400" font-size="16">Bone and soft tissue</text>
+<text x="316" y="428" font-size="15">Large hands, feet and tongue</text>
+<rect x="14" y="172" width="266" height="172" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="28" y="198" font-size="16">Confirming it</text>
+<text x="28" y="224" font-size="15">Give 75 g oral glucose</text>
+<text x="28" y="250" font-size="15">Normal: GH suppressed</text>
+<text x="28" y="276" font-size="15">Acromegaly: GH stays</text>
+<text x="28" y="302" font-size="15">high or even rises</text>
+<text x="28" y="328" font-size="15">Then MRI of the sella</text>
+<line x1="280" y1="208" x2="292" y2="208" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="292,203 300,208 292,213" fill="var(--ink-2)"/>
+<rect x="14" y="372" width="266" height="74" rx="10" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="28" y="400" font-size="16">GH opposes insulin</text>
+<text x="28" y="428" font-size="15">Glucose intolerance, diabetes</text>
+<rect x="620" y="44" width="266" height="402" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="634" y="72" font-size="16">Treatment, by site</text>
+<text x="634" y="102" font-size="15">Transsphenoidal surgery:</text>
+<text x="634" y="126" font-size="15">first line, removes tumor</text>
+<text x="634" y="160" font-size="15">Octreotide, lanreotide:</text>
+<text x="634" y="184" font-size="15">somatostatin analogs</text>
+<text x="634" y="208" font-size="15">lower GH at the tumor</text>
+<text x="634" y="232" font-size="15">Side effects: gallstones,</text>
+<text x="634" y="256" font-size="15">steatorrhea, nausea</text>
+<text x="634" y="290" font-size="15">Pegvisomant: blocks the</text>
+<text x="634" y="314" font-size="15">GH receptor, so IGF-1</text>
+<text x="634" y="338" font-size="15">falls while GH stays high</text>
+<line x1="620" y1="208" x2="608" y2="208" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="608,203 600,208 608,213" fill="var(--ink-2)"/>
+<line x1="620" y1="308" x2="608" y2="308" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="608,303 600,308 608,313" fill="var(--ink-2)"/>
+</svg>

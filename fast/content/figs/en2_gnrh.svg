@@ -1,0 +1,28 @@
+<svg class="dia" viewBox="0 0 900 470" role="img" aria-label="Two panels: pulsatile GnRH keeps LH and FSH released because receptors recover between pulses, while a continuous agonist such as leuprolide causes an initial flare and then receptor downregulation, so LH, FSH and sex steroids fall">
+<text class="ttl" x="14" y="24" font-size="17">Same receptor, opposite results: pulsatile GnRH versus a continuous agonist</text>
+<rect x="14" y="44" width="430" height="336" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="28" y="70" font-size="15">Pulsatile GnRH (natural rhythm)</text>
+<path d="M40 150 L64 150 L70 104 L76 150 L144 150 L150 104 L156 150 L224 150 L230 104 L236 150 L304 150 L310 104 L316 150 L384 150 L390 104 L396 150 L420 150" fill="none" stroke="var(--a1)" stroke-width="2.5"/>
+<text x="40" y="174" font-size="13">GnRH pulses, about one every 90 minutes</text>
+<path d="M40 244 Q 70 226 100 244 T 160 244 T 220 244 T 280 244 T 340 244 T 400 244 T 420 238" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<text class="a2" x="40" y="278" font-size="13">LH and FSH released in pulses</text>
+<text x="28" y="314" font-size="14">Receptors recover between pulses,</text>
+<text x="28" y="336" font-size="14">so gonadotrophs keep responding</text>
+<text x="28" y="358" font-size="14">Use: a pump can restore ovulation</text>
+<rect x="456" y="44" width="430" height="336" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="470" y="70" font-size="15">Continuous agonist (leuprolide)</text>
+<text x="480" y="98" font-size="13">constant receptor occupancy</text>
+<line x1="480" y1="112" x2="864" y2="112" stroke="var(--a1)" stroke-width="4"/>
+<line x1="480" y1="244" x2="864" y2="244" stroke="var(--line-strong)" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="800" y="236" font-size="13">baseline</text>
+<path d="M480 244 C 510 244, 520 196, 545 196 C 575 196, 600 300, 660 304 L 864 304" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<text class="wn" x="560" y="186" font-size="13">flare: LH and testosterone rise</text>
+<text x="680" y="288" font-size="13">receptors downregulate</text>
+<text class="cr" x="680" y="330" font-size="13">LH, FSH, sex steroids fall</text>
+<line x1="480" y1="342" x2="864" y2="342" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="500" y="364" font-size="13">week 1</text>
+<text x="660" y="364" font-size="13">weeks 2 to 4 and onward</text>
+<rect x="14" y="392" width="872" height="64" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text x="28" y="418" font-size="14">Uses of continuous agonists: prostate cancer, central precocious puberty, endometriosis, fibroids</text>
+<text x="28" y="442" font-size="14">An antiandrogen covers the flare; a GnRH antagonist (degarelix) suppresses with no flare</text>
+</svg>

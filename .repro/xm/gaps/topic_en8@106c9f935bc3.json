@@ -1,0 +1,245 @@
+{
+ "cmd": "gaps",
+ "key": "topic:en8",
+ "hash": "106c9f935bc3",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 11:53:40",
+ "gaps": [
+  {
+   "gid": "GAP-en8-01",
+   "concept": "Parathyroid chief cells secrete PTH; elevated ionized calcium suppresses its release.",
+   "why_tested": "A parathyroid histology image or calcium challenge asks which cells and feedback response produce PTH.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-02",
+   "concept": "Primary hyperparathyroidism usually results from a solitary chief-cell adenoma: high calcium, low phosphate, and elevated or inappropriately normal PTH.",
+   "why_tested": "A patient with incidental hypercalcemia must be distinguished from patients with suppressed PTH.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-03",
+   "concept": "Parathyroid adenoma shows a cellular, often encapsulated mass with little fat and a rim of compressed normal gland.",
+   "why_tested": "A parathyroid specimen asks for the histologic diagnosis.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-04",
+   "concept": "MEN1-associated parathyroid hyperplasia often causes primary hyperparathyroidism and accompanies pituitary and pancreatic neuroendocrine tumors.",
+   "why_tested": "Hypercalcemia occurs alongside prolactinoma or a pancreatic endocrine tumor.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-05",
+   "concept": "MEN2A can cause parathyroid hyperplasia with medullary thyroid carcinoma and pheochromocytoma through activating RET mutations.",
+   "why_tested": "A familial tumor syndrome includes hypercalcemia and asks for its genetic defect.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-06",
+   "concept": "Osteitis fibrosa cystica from excess PTH causes subperiosteal phalangeal resorption, a salt-and-pepper skull, and brown tumors.",
+   "why_tested": "Skeletal imaging accompanies hypercalcemia and elevated PTH.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-07",
+   "concept": "Brown tumors contain fibrous tissue, osteoclast-like giant cells, and hemosiderin.",
+   "why_tested": "A bone lesion biopsy accompanies biochemical hyperparathyroidism.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-08",
+   "concept": "Hypercalcemia causes nephrolithiasis, constipation, polyuria, weakness, and neuropsychiatric symptoms; ECG shows a shortened QT interval.",
+   "why_tested": "A symptom cluster or ECG finding prompts recognition of elevated calcium.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-09",
+   "concept": "Chronic kidney disease causes secondary hyperparathyroidism through phosphate retention and reduced calcitriol: high PTH, high phosphate, low or normal calcium.",
+   "why_tested": "Renal failure and bone disease require distinguishing secondary from primary hyperparathyroidism.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-10",
+   "concept": "Prolonged secondary hyperparathyroidism can become autonomous tertiary hyperparathyroidism, with elevated PTH and hypercalcemia despite persistent kidney disease.",
+   "why_tested": "A dialysis or kidney-transplant patient develops hypercalcemia after longstanding high PTH.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-11",
+   "concept": "Renal osteodystrophy from sustained PTH excess may produce osteosclerosis of vertebral endplates, the rugger-jersey spine.",
+   "why_tested": "Spinal imaging in chronic kidney disease asks for the underlying mineral disorder.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-12",
+   "concept": "Postsurgical hypoparathyroidism causes low PTH, low calcium, and high phosphate after thyroid or neck surgery.",
+   "why_tested": "Tetany after thyroidectomy requires identifying the injured gland and expected laboratory pattern.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-13",
+   "concept": "AIRE-related autoimmune polyglandular syndrome type 1 combines hypoparathyroidism, chronic mucocutaneous candidiasis, and adrenal insufficiency.",
+   "why_tested": "Childhood candidiasis and hypocalcemia point to an inherited autoimmune syndrome.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-14",
+   "concept": "Pseudohypoparathyroidism type 1A is maternally inherited GNAS-mediated PTH resistance: low calcium, high phosphate, high PTH, and Albright hereditary osteodystrophy.",
+   "why_tested": "Hypocalcemia with elevated PTH and shortened fourth or fifth metacarpals distinguishes hormone resistance from gland failure.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-15",
+   "concept": "Paternally inherited GNAS defects cause pseudopseudohypoparathyroidism: Albright skeletal features without PTH resistance or abnormal calcium-phosphate labs.",
+   "why_tested": "Similar skeletal findings in relatives but different laboratory patterns test genomic imprinting.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-16",
+   "concept": "Familial hypocalciuric hypercalcemia results from inactivating CaSR mutations: lifelong mild hypercalcemia, low urinary calcium, and nonsuppressed PTH.",
+   "why_tested": "Low urine calcium distinguishes this inherited condition from primary hyperparathyroidism.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-17",
+   "concept": "Activating CaSR mutations cause autosomal dominant hypocalcemia with low PTH and inappropriately high urinary calcium.",
+   "why_tested": "Familial hypocalcemia with hypercalciuria asks for the opposite CaSR defect from familial hypocalciuric hypercalcemia.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-18",
+   "concept": "Severe magnesium deficiency can cause resistance to PTH as well as impaired PTH secretion.",
+   "why_tested": "Hypocalcemia persists despite calcium replacement in a patient with marked hypomagnesemia.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-19",
+   "concept": "Tumor-secreted PTHrP causes high calcium, low phosphate, and suppressed endogenous PTH, classically with squamous cell carcinoma.",
+   "why_tested": "Hypercalcemia in a patient with a solid tumor requires identifying the circulating mediator.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-20",
+   "concept": "Osteolytic malignancy, especially multiple myeloma, causes hypercalcemia through local bone destruction with suppressed PTH.",
+   "why_tested": "Lytic lesions and hypercalcemia must be distinguished from PTHrP-mediated disease.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-21",
+   "concept": "Serum 25-hydroxyvitamin D reflects vitamin D stores; 1,25-dihydroxyvitamin D may remain normal in deficiency because PTH stimulates activation.",
+   "why_tested": "A suspected nutritional deficiency asks which vitamin D metabolite to measure.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-22",
+   "concept": "Vitamin D deficiency or malabsorption produces low 25-hydroxyvitamin D, secondary PTH elevation, low phosphate, and elevated alkaline phosphatase.",
+   "why_tested": "Bone pain or deformity with a malabsorption history asks for the expected hormone and mineral pattern.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-23",
+   "concept": "Rickets is defective growth-plate mineralization: bowed legs, widened wrists, rachitic rosary, and metaphyseal widening, cupping, and fraying.",
+   "why_tested": "A child with limb deformity has characteristic examination and radiograph findings.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-24",
+   "concept": "Adult osteomalacia causes unmineralized osteoid, bone pain, proximal muscle weakness, and Looser pseudofractures.",
+   "why_tested": "An adult with fractures and low vitamin D must be distinguished from osteoporosis.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-25",
+   "concept": "Osteoporosis has reduced bone mass with normal mineralization and usually normal calcium, phosphate, and alkaline phosphatase.",
+   "why_tested": "Fragility fractures with normal mineral studies distinguish osteoporosis from osteomalacia.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-26",
+   "concept": "Vitamin D-dependent rickets type 1A results from defective renal 1-alpha-hydroxylase: normal 25-hydroxyvitamin D but low calcitriol.",
+   "why_tested": "A child with rickets and normal vitamin D stores has impaired activation.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-27",
+   "concept": "Vitamin D-dependent rickets type 2 results from vitamin D receptor resistance, with high calcitriol and sometimes alopecia.",
+   "why_tested": "Rickets with elevated active vitamin D and hair loss identifies receptor resistance.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-28",
+   "concept": "The vitamin D receptor is an intracellular nuclear receptor that regulates gene transcription.",
+   "why_tested": "A receptor-mechanism question asks how calcitriol increases intestinal calcium transport proteins.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-29",
+   "concept": "Excess vitamin D causes hypercalcemia and hyperphosphatemia with suppressed PTH and possible nephrocalcinosis.",
+   "why_tested": "Supplement use and elevated calcium plus phosphate distinguish vitamin D toxicity from primary hyperparathyroidism.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-30",
+   "concept": "Milk-alkali syndrome from excess calcium carbonate causes hypercalcemia, metabolic alkalosis, and kidney injury.",
+   "why_tested": "Heavy antacid use accompanies a distinctive calcium and acid-base pattern.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-31",
+   "concept": "Calcitonin is produced by thyroid parafollicular C cells derived from the ultimobranchial bodies.",
+   "why_tested": "An embryology or thyroid histology image asks for the origin of calcitonin-secreting cells.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-32",
+   "concept": "Loss of PHEX function raises FGF23, causing renal phosphate wasting with normal calcium in X-linked hypophosphatemic rickets.",
+   "why_tested": "Familial rickets with low phosphate but normal calcium asks for the genetic defect.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-33",
+   "concept": "Thiazides decrease urinary calcium and can raise serum calcium; loop diuretics increase urinary calcium.",
+   "why_tested": "A diuretic exposure asks for the direction of calcium excretion or explains hypercalcemia.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-34",
+   "concept": "Lithium raises the calcium threshold for CaSR-mediated PTH suppression and can cause hyperparathyroidism.",
+   "why_tested": "Hypercalcemia in a patient taking lithium asks for the drug’s effect on PTH regulation.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-35",
+   "concept": "Cinacalcet increases CaSR sensitivity to calcium, lowering PTH secretion in hyperparathyroidism.",
+   "why_tested": "A drug-mechanism question describes treatment of elevated PTH in kidney disease.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-36",
+   "concept": "Denosumab blocks RANKL, preventing osteoclast formation and activity; hypocalcemia is a potential adverse effect.",
+   "why_tested": "An antiresorptive monoclonal antibody is identified by its target or calcium effect.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-37",
+   "concept": "Bisphosphonates bind bone and inhibit osteoclast-mediated resorption; they are first-line drugs for most patients with osteoporosis.",
+   "why_tested": "A fracture-prevention or hypercalcemia drug question asks for the antiresorptive mechanism.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en8-38",
+   "concept": "Bisphosphonates can cause esophagitis, osteonecrosis of the jaw, and atypical femoral fractures with prolonged use.",
+   "why_tested": "A medication history accompanies dysphagia, a dental complication, or a subtrochanteric fracture.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en8-39",
+   "concept": "Rapid skeletal calcium uptake after parathyroidectomy can cause hungry bone syndrome and persistent postoperative hypocalcemia.",
+   "why_tested": "Hypocalcemia after removal of a PTH-secreting adenoma requires a mechanism beyond gland injury.",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-en8-1790441500442.jsonl"
+}

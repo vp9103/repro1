@@ -1,0 +1,756 @@
+[
+ {
+  "id": "en5q01",
+  "d": 1,
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-en5-01"
+  ],
+  "s": "A 5-year-old girl is brought to the clinic because of a painless lump in the front of her neck that her mother noticed two weeks ago. Examination shows a 2-cm smooth, round, midline mass just below the hyoid bone that moves upward when she protrudes her tongue. Thyroid function tests are normal.",
+  "l": "Which is the most likely diagnosis?",
+  "o": [
+   "Thyroglossal duct cyst",
+   "Branchial cleft cyst",
+   "Cystic hygroma",
+   "Dermoid cyst",
+   "Reactive cervical lymph node"
+  ],
+  "a": 0,
+  "e": "The mass is a **thyroglossal duct cyst**. The thyroid descends from the foramen cecum at the tongue base through the thyroglossal duct, which passes by the hyoid bone and normally involutes. A persisting segment stays tethered to the tongue base and hyoid, so the cyst sits in the midline and rises with tongue protrusion or swallowing. A dermoid cyst can also be midline, but it is not attached to the duct track, so it does not move with the tongue. A branchial cleft cyst is lateral, along the sternocleidomastoid.",
+  "w": {
+   "Branchial cleft cyst": "A branchial cleft cyst arises from a persisting second pharyngeal cleft and lies laterally along the anterior border of the sternocleidomastoid, not in the midline under the hyoid.",
+   "Cystic hygroma": "A cystic hygroma is a soft, transilluminating lymphatic malformation of the posterior triangle, often seen in Turner syndrome, and it does not track with tongue movement.",
+   "Dermoid cyst": "A dermoid cyst can sit in the midline, but it is a trapped nest of skin elements that is not attached to the hyoid or tongue, so it stays still when the tongue protrudes.",
+   "Reactive cervical lymph node": "Reactive nodes follow an infection, are often tender and lie along the jugular chain lateral to the midline; they have no attachment to the tongue base."
+  },
+  "et": [
+   [
+    "Option",
+    "Position",
+    "Moves with tongue",
+    "Origin"
+   ],
+   [
+    [
+     "Thyroglossal duct cyst",
+     "Midline, near the hyoid",
+     "Yes",
+     "Persisting thyroglossal duct"
+    ],
+    [
+     "Branchial cleft cyst",
+     "Lateral, anterior to sternocleidomastoid",
+     "No",
+     "Persisting pharyngeal cleft"
+    ],
+    [
+     "Cystic hygroma",
+     "Posterior triangle",
+     "No",
+     "Lymphatic malformation"
+    ],
+    [
+     "Dermoid cyst",
+     "Midline",
+     "No",
+     "Trapped ectodermal elements"
+    ],
+    [
+     "Reactive cervical lymph node",
+     "Lateral, jugular chain",
+     "No",
+     "Lymphoid response to infection"
+    ]
+   ]
+  ],
+  "bl": "A midline neck mass that rises with tongue protrusion is a thyroglossal duct cyst, a remnant of thyroid descent.",
+  "ef": "en5_embryo",
+  "pt": {
+   "hl": [
+    "Thyroglossal duct cyst"
+   ],
+   "say": "Look at the remnant boxes: a thyroglossal duct cyst forms along the descent path from the foramen cecum, so it stays midline and tethered to the tongue."
+  }
+ },
+ {
+  "id": "en5q02",
+  "d": 2,
+  "tags": [
+   "embryologic-origin",
+   "cell-of-origin"
+  ],
+  "bp": [
+   "BP-en5-02"
+  ],
+  "s": "A 38-year-old man has a firm, 2-cm nodule in the upper part of the right thyroid lobe. His father had a thyroid operation and a pheochromocytoma. Fine-needle aspiration shows spindle-shaped cells in an amyloid background, and serum calcitonin is markedly elevated. Thyroid function tests are normal.",
+  "l": "The cells that gave rise to this tumor originated from which embryologic source?",
+  "o": [
+   "Neural crest",
+   "Endoderm of the pharyngeal floor",
+   "Endoderm of the third pharyngeal pouch",
+   "Mesoderm of the second pharyngeal arch",
+   "Surface ectoderm of the stomodeum"
+  ],
+  "a": 0,
+  "e": "Calcitonin, amyloid and a family history of pheochromocytoma identify medullary carcinoma, a tumor of parafollicular C cells. C cells come from **neural crest** that migrates into the fourth pharyngeal pouch, forms the ultimobranchial body and then joins the thyroid, which is why the tumor behaves like other neuroendocrine tumors. Follicular cells, by contrast, come from endoderm of the pharyngeal floor at the foramen cecum and make thyroglobulin, not calcitonin. Third-pouch endoderm forms the inferior parathyroids and thymus.",
+  "w": {
+   "Endoderm of the pharyngeal floor": "Pharyngeal-floor endoderm forms the follicular cells that make thyroglobulin, T4 and T3; tumors of those cells are papillary or follicular carcinomas, which do not secrete calcitonin or deposit amyloid.",
+   "Endoderm of the third pharyngeal pouch": "The third pouch forms the inferior parathyroid glands and the thymus; it contributes no cells to the thyroid, so it cannot explain a calcitonin-secreting thyroid tumor.",
+   "Mesoderm of the second pharyngeal arch": "Second-arch mesoderm builds the muscles of facial expression, the stapes and the styloid process; it forms no endocrine cells in the neck.",
+   "Surface ectoderm of the stomodeum": "Stomodeal ectoderm forms Rathke's pouch and the anterior pituitary, not thyroid cells, so a calcitonin-secreting neck tumor cannot come from it."
+  },
+  "et": [
+   [
+    "Option",
+    "Structures it forms",
+    "Tumor it could explain"
+   ],
+   [
+    [
+     "Neural crest",
+     "Parafollicular C cells via the ultimobranchial body",
+     "Medullary carcinoma with calcitonin and amyloid"
+    ],
+    [
+     "Endoderm of the pharyngeal floor",
+     "Thyroid follicular cells",
+     "Papillary or follicular carcinoma"
+    ],
+    [
+     "Endoderm of the third pharyngeal pouch",
+     "Inferior parathyroids, thymus",
+     "Parathyroid adenoma"
+    ],
+    [
+     "Mesoderm of the second pharyngeal arch",
+     "Facial muscles, stapes, styloid",
+     "No endocrine tumor"
+    ],
+    [
+     "Surface ectoderm of the stomodeum",
+     "Anterior pituitary via Rathke pouch",
+     "Pituitary adenoma, craniopharyngioma"
+    ]
+   ]
+  ],
+  "bl": "Medullary carcinoma arises from C cells, which come from neural crest through the fourth pouch ultimobranchial body.",
+  "ef": "en5_embryo",
+  "pt": {
+   "hl": [
+    "Neural crest cells",
+    "Parafollicular C cells"
+   ],
+   "say": "Follow the right-hand chain: neural crest cells pass through the fourth pouch and ultimobranchial body to become the parafollicular C cells that secrete calcitonin."
+  }
+ },
+ {
+  "id": "en5q03",
+  "d": 2,
+  "tags": [
+   "hormone-synthesis",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-en5-03"
+  ],
+  "s": "A 62-year-old man with a large multinodular goiter needs a contrast-enhanced CT scan for suspected pulmonary embolism. His TSH is 0.3 mU/L and free T4 is at the upper limit of normal. To lower the risk of iodine-induced thyrotoxicosis, he is given potassium perchlorate before the scan.",
+  "l": "Perchlorate protects the gland by acting at which site?",
+  "o": [
+   "Sodium-iodide symporter",
+   "Thyroid peroxidase",
+   "Lysosomal proteases",
+   "Type 1 5'-deiodinase",
+   "TSH receptor"
+  ],
+  "a": 0,
+  "e": "Perchlorate is an anion that competes with iodide at the basolateral **sodium-iodide symporter**, so the flood of iodide released from contrast cannot enter the follicular cell and feed autonomous nodules. That prevents the Jod-Basedow response of a nodular gland to a large iodine load. Thionamides such as methimazole act one step later, at thyroid peroxidase, and are often given alongside perchlorate. Lysosomal proteases release stored hormone, a step slowed by iodide and lithium, and deiodinase acts outside the gland.",
+  "w": {
+   "Thyroid peroxidase": "Thyroid peroxidase is the target of methimazole and propylthiouracil, which block organification and coupling; perchlorate has no effect on this apical enzyme.",
+   "Lysosomal proteases": "Proteases free T4 and T3 from thyroglobulin after endocytosis; large doses of iodide and lithium slow this release step, not perchlorate.",
+   "Type 1 5'-deiodinase": "Deiodinase converts T4 to T3 in the liver, kidney and tissues; propylthiouracil, propranolol and glucocorticoids inhibit it, but it has nothing to do with iodide entry.",
+   "TSH receptor": "The TSH receptor is a Gs-coupled receptor stimulated by TSH, hCG or Graves antibodies; no anion blocks it, and blocking it would not stop autonomous nodules."
+  },
+  "et": [
+   [
+    "Option",
+    "Step",
+    "Location",
+    "Blocked by"
+   ],
+   [
+    [
+     "Sodium-iodide symporter",
+     "Iodide trapping",
+     "Basolateral membrane",
+     "Perchlorate, pertechnetate"
+    ],
+    [
+     "Thyroid peroxidase",
+     "Organification and coupling",
+     "Apical membrane",
+     "Methimazole, propylthiouracil"
+    ],
+    [
+     "Lysosomal proteases",
+     "Release from thyroglobulin",
+     "Lysosomes",
+     "Iodide in large doses, lithium"
+    ],
+    [
+     "Type 1 5'-deiodinase",
+     "T4 to T3 conversion",
+     "Liver, kidney",
+     "Propylthiouracil, propranolol, glucocorticoids"
+    ],
+    [
+     "TSH receptor",
+     "Stimulus for every step",
+     "Basolateral membrane",
+     "No clinical blocker"
+    ]
+   ]
+  ],
+  "bl": "Perchlorate and pertechnetate compete with iodide at the sodium-iodide symporter, the first step of hormone synthesis.",
+  "ef": "en5_synthesis",
+  "pt": {
+   "hl": [
+    "Sodium-iodide symporter",
+    "perchlorate"
+   ],
+   "say": "Start at the basolateral side: step 1, the sodium-iodide symporter, is where perchlorate and pertechnetate compete with iodide for entry."
+  }
+ },
+ {
+  "id": "en5q04",
+  "d": 3,
+  "tags": [
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-en5-05"
+  ],
+  "s": "A 45-year-old woman with positive anti-thyroid peroxidase antibodies and a normal TSH one year ago begins taking a kelp supplement containing several milligrams of iodine daily. Two months later she has fatigue, constipation and cold intolerance. TSH is 14 mU/L and free T4 is low. She takes no other medications, and her thyroid is firm, nontender and slightly enlarged.",
+  "l": "Which mechanism best explains her hypothyroidism?",
+  "o": [
+   "Failure to escape from iodide-induced inhibition of organification",
+   "Iodide-driven hormone synthesis by autonomous nodules",
+   "Competitive block of the sodium-iodide symporter",
+   "Stimulating antibodies against the TSH receptor",
+   "Inhibition of peripheral 5'-deiodinase"
+  ],
+  "a": 0,
+  "e": "A large iodide load normally shuts down organification for a few days, the **Wolff-Chaikoff effect**, and a healthy gland then escapes by reducing iodide uptake. A gland already injured by Hashimoto thyroiditis, marked here by anti-thyroid peroxidase antibodies, often cannot escape, so organification stays blocked and she becomes hypothyroid with a high TSH. Iodide-driven synthesis by autonomous nodules is the opposite Jod-Basedow response and causes thyrotoxicosis. Deiodinase inhibition lowers T3 but would not produce a low free T4 with a TSH of 14.",
+  "w": {
+   "Iodide-driven hormone synthesis by autonomous nodules": "That is the Jod-Basedow phenomenon, which makes an iodine-deficient nodular gland thyrotoxic; this woman has a high TSH and low free T4, the opposite direction.",
+   "Competitive block of the sodium-iodide symporter": "Perchlorate and pertechnetate block the symporter; iodide itself is the substrate the symporter carries, so a kelp supplement increases iodide entry rather than blocking it.",
+   "Stimulating antibodies against the TSH receptor": "Stimulating antibodies cause Graves disease with a suppressed TSH and high free T4; her antibodies target thyroid peroxidase and her TSH is elevated.",
+   "Inhibition of peripheral 5'-deiodinase": "Blocking deiodinase lowers T3 and raises reverse T3, but free T4 stays normal or rises and TSH changes little; it cannot explain a low free T4."
+  },
+  "et": [
+   [
+    "Option",
+    "Effect on hormone",
+    "Expected TSH",
+    "Typical trigger"
+   ],
+   [
+    [
+     "Failure to escape from iodide-induced inhibition of organification",
+     "Synthesis stays blocked",
+     "High",
+     "Iodine load on a Hashimoto gland"
+    ],
+    [
+     "Iodide-driven hormone synthesis by autonomous nodules",
+     "Excess synthesis",
+     "Low",
+     "Iodine load on a deficient nodular gland"
+    ],
+    [
+     "Competitive block of the sodium-iodide symporter",
+     "Less iodide trapped",
+     "High if prolonged",
+     "Perchlorate, pertechnetate"
+    ],
+    [
+     "Stimulating antibodies against the TSH receptor",
+     "Excess synthesis",
+     "Low",
+     "Graves disease"
+    ],
+    [
+     "Inhibition of peripheral 5'-deiodinase",
+     "Less T3, free T4 normal",
+     "Normal",
+     "Propylthiouracil, amiodarone, illness"
+    ]
+   ]
+  ],
+  "bl": "A Hashimoto gland may fail to escape the Wolff-Chaikoff inhibition of organification, so an iodine load causes hypothyroidism.",
+  "ef": "en5_synthesis",
+  "pt": {
+   "hl": [
+    "Wolff-Chaikoff"
+   ],
+   "say": "In the colloid column, the Wolff-Chaikoff line shows iodide excess halting organification; a Hashimoto gland fails to escape, so synthesis stays off."
+  }
+ },
+ {
+  "id": "en5q05",
+  "d": 2,
+  "tags": [
+   "hormone-source",
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-en5-05"
+  ],
+  "s": "A 71-year-old woman who grew up in an iodine-deficient mountain region has had a slowly enlarging nodular goiter for decades and was euthyroid last year. Three weeks after a contrast-enhanced CT scan of the abdomen, she develops palpitations, weight loss and a tremor. TSH is suppressed and free T4 is high. She has no eye findings.",
+  "l": "Which mechanism best explains her thyrotoxicosis?",
+  "o": [
+   "Iodide-driven hormone synthesis by autonomous nodules",
+   "Failure to escape from iodide-induced inhibition of organification",
+   "Stimulating antibodies against the TSH receptor",
+   "Release of preformed hormone from damaged follicles",
+   "Competitive block of the sodium-iodide symporter"
+  ],
+  "a": 0,
+  "e": "This is the **Jod-Basedow** phenomenon. Nodules in a long-standing goiter often become autonomous, meaning they make hormone without waiting for TSH. In an iodine-deficient patient their output is limited by substrate, so she stayed euthyroid; the iodine in contrast removes that limit, and the autonomous nodules convert it straight into excess T4 and T3. Stimulating antibodies would point to Graves disease, which usually brings a diffuse goiter and eye signs. Failure to escape Wolff-Chaikoff inhibition causes hypothyroidism, the opposite result.",
+  "w": {
+   "Failure to escape from iodide-induced inhibition of organification": "Failure to escape Wolff-Chaikoff inhibition blocks synthesis and causes hypothyroidism in a damaged gland; her suppressed TSH and high free T4 show excess hormone instead.",
+   "Stimulating antibodies against the TSH receptor": "Graves antibodies drive a diffuse goiter, often with ophthalmopathy, in a younger patient; a decades-old nodular goiter tipped over by contrast points to autonomous nodules.",
+   "Release of preformed hormone from damaged follicles": "Leak of stored hormone defines thyroiditis, which follows a viral illness, pregnancy or amiodarone and has low iodine uptake; contrast iodine supplies substrate rather than damaging follicles.",
+   "Competitive block of the sodium-iodide symporter": "A symporter block, as with perchlorate, would lower iodide entry and reduce synthesis; perchlorate is actually used to prevent this very complication before contrast studies."
+  },
+  "et": [
+   [
+    "Option",
+    "Effect on hormone",
+    "Typical setting",
+    "Key discriminator"
+   ],
+   [
+    [
+     "Iodide-driven hormone synthesis by autonomous nodules",
+     "Excess synthesis",
+     "Iodine load on an iodine-deficient nodular goiter",
+     "Nodular gland, no eye signs, recent contrast"
+    ],
+    [
+     "Failure to escape from iodide-induced inhibition of organification",
+     "Synthesis blocked",
+     "Iodine load on a Hashimoto gland",
+     "High TSH, low free T4"
+    ],
+    [
+     "Stimulating antibodies against the TSH receptor",
+     "Excess synthesis",
+     "Graves disease",
+     "Diffuse goiter, ophthalmopathy"
+    ],
+    [
+     "Release of preformed hormone from damaged follicles",
+     "Leak of stored hormone",
+     "Thyroiditis",
+     "Low radioactive iodine uptake"
+    ],
+    [
+     "Competitive block of the sodium-iodide symporter",
+     "Less iodide trapped",
+     "Perchlorate given",
+     "Lowers synthesis"
+    ]
+   ]
+  ],
+  "bl": "Iodine given to an iodine-deficient nodular goiter lets autonomous nodules overproduce hormone: the Jod-Basedow phenomenon.",
+  "ef": "en6_uptake",
+  "pt": {
+   "hl": [
+    "toxic multinodular goiter",
+    "autonomous nodules"
+   ],
+   "say": "In the high-uptake panel, the toxic multinodular goiter box shows autonomous nodules; given iodine, those nodules synthesize hormone without TSH control."
+  }
+ },
+ {
+  "id": "en5q06",
+  "d": 1,
+  "tags": [
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-en5-06"
+  ],
+  "s": "A 30-year-old woman with untreated Graves disease has heat intolerance, sweating and weight loss despite a large appetite. Her resting oxygen consumption is increased. Her physician explains that thyroid hormone raises the basal metabolic rate by inducing a membrane protein whose activity consumes much of the cell's ATP.",
+  "l": "Which protein is this?",
+  "o": [
+   "Na+/K+-ATPase",
+   "Beta-1 adrenergic receptor",
+   "Glucose transporter 4",
+   "LDL receptor",
+   "Insulin receptor"
+  ],
+  "a": 0,
+  "e": "T3 acts on nuclear receptors to increase transcription of **Na+/K+-ATPase**. Each pump cycle uses ATP, so more pumps mean more ATP turnover, more oxygen consumption and more heat, which is the rise in basal metabolic rate behind heat intolerance and weight loss. T3 also increases beta-1 adrenergic receptors, but that explains her tachycardia, not her oxygen consumption. The LDL receptor is also induced, lowering cholesterol, yet receptor-mediated uptake of lipoprotein does not burn ATP on that scale.",
+  "w": {
+   "Beta-1 adrenergic receptor": "T3 does increase cardiac beta-1 receptors, which explains tachycardia and palpitations, but a G protein-coupled receptor does not itself consume ATP or set the metabolic rate.",
+   "Glucose transporter 4": "GLUT4 is the insulin-responsive transporter in muscle and fat; it moves glucose by facilitated diffusion, which needs no ATP, so it cannot drive heat production.",
+   "LDL receptor": "T3 raises LDL-receptor expression, which is why hypothyroidism raises cholesterol, but receptor-mediated uptake of lipoprotein consumes little energy and does not raise oxygen use.",
+   "Insulin receptor": "The insulin receptor is a tyrosine kinase that signals glucose uptake and storage; thyroid hormone does not raise metabolic rate by increasing it."
+  },
+  "et": [
+   [
+    "Option",
+    "Effect of T3 on it",
+    "Uses ATP directly",
+    "Clinical result"
+   ],
+   [
+    [
+     "Na+/K+-ATPase",
+     "Induced",
+     "Yes, each pump cycle",
+     "Higher basal metabolic rate and heat"
+    ],
+    [
+     "Beta-1 adrenergic receptor",
+     "Induced",
+     "No",
+     "Tachycardia, palpitations"
+    ],
+    [
+     "Glucose transporter 4",
+     "Little direct effect",
+     "No",
+     "Insulin-driven glucose uptake"
+    ],
+    [
+     "LDL receptor",
+     "Induced",
+     "No",
+     "Lower serum cholesterol"
+    ],
+    [
+     "Insulin receptor",
+     "Little direct effect",
+     "No",
+     "Glucose storage signaling"
+    ]
+   ]
+  ],
+  "bl": "T3 induces Na+/K+-ATPase, and the extra pumping burns ATP and oxygen, raising basal metabolic rate and heat production.",
+  "ef": "en5_synthesis",
+  "pt": {
+   "hl": [
+    "Na+/K+-ATPase"
+   ],
+   "say": "Read the tissue band at the bottom: T3 on its nuclear receptor induces Na+/K+-ATPase, and pumping sodium burns ATP, raising basal metabolic rate."
+  }
+ },
+ {
+  "id": "en5q07",
+  "d": 2,
+  "tags": [
+   "binding-proteins"
+  ],
+  "bp": [
+   "BP-en5-08"
+  ],
+  "s": "A 52-year-old man with nephrotic syndrome from membranous nephropathy has 9 g of proteinuria per day. He feels well apart from leg edema. Routine tests show a total T4 below the reference range, a normal free T4 and a TSH of 2.1 mU/L. He has no goiter and takes no thyroid medication.",
+  "l": "Which is the best explanation for his thyroid test results?",
+  "o": [
+   "Urinary loss of thyroxine-binding globulin",
+   "Pituitary failure with reduced TSH output",
+   "Autoimmune destruction of the thyroid gland",
+   "Reduced T4-to-T3 conversion from illness",
+   "Inadequate dietary iodine for synthesis"
+  ],
+  "a": 0,
+  "e": "Nephrotic syndrome leaks proteins such as **thyroxine-binding globulin** into the urine, so less T4 is bound and the total falls. Free T4, the fraction that acts and feeds back, is normal, so TSH is normal and he is euthyroid; no treatment is needed. Pituitary failure would lower free T4 itself, and autoimmune destruction of the gland would raise TSH. Reduced conversion from illness, the sick euthyroid pattern, lowers T3 first, with high reverse T3, in a patient who is acutely ill rather than well.",
+  "w": {
+   "Pituitary failure with reduced TSH output": "Central hypothyroidism lowers free T4 while TSH stays low or inappropriately normal; here free T4 is normal, so the pituitary axis is intact.",
+   "Autoimmune destruction of the thyroid gland": "A failing gland, as in Hashimoto thyroiditis, lowers free T4 and releases the pituitary brake, so TSH rises well above normal; his TSH of 2.1 and normal free T4 exclude it.",
+   "Reduced T4-to-T3 conversion from illness": "Nonthyroidal illness mainly lowers T3 and raises reverse T3 in a critically ill patient; this man is well, and his abnormality is limited to bound T4.",
+   "Inadequate dietary iodine for synthesis": "Iodine lack reduces hormone production, so TSH rises and a goiter develops; a normal TSH and free T4 show the gland is making enough hormone."
+  },
+  "et": [
+   [
+    "Option",
+    "Total T4",
+    "Free T4",
+    "TSH"
+   ],
+   [
+    [
+     "Urinary loss of thyroxine-binding globulin",
+     "Low",
+     "Normal",
+     "Normal"
+    ],
+    [
+     "Pituitary failure with reduced TSH output",
+     "Low",
+     "Low",
+     "Low or inappropriately normal"
+    ],
+    [
+     "Autoimmune destruction of the thyroid gland",
+     "Low",
+     "Low",
+     "High"
+    ],
+    [
+     "Reduced T4-to-T3 conversion from illness",
+     "Normal or low",
+     "Normal or low, with low T3",
+     "Normal or low"
+    ],
+    [
+     "Inadequate dietary iodine for synthesis",
+     "Low",
+     "Low or normal",
+     "High, with goiter"
+    ]
+   ]
+  ],
+  "bl": "Low thyroxine-binding globulin, as in nephrotic syndrome, lowers total T4 while free T4 and TSH stay normal.",
+  "ef": "en5_tft",
+  "pt": {
+   "hl": [
+    "Euthyroid",
+    "total T4, not free T4"
+   ],
+   "say": "Find the center box: with normal TSH and free T4 the patient is euthyroid, and low thyroxine-binding globulin changes only total T4."
+  }
+ },
+ {
+  "id": "en5q08",
+  "d": 3,
+  "tags": [
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-en5-15"
+  ],
+  "s": "A 31-year-old woman has fatigue, cold intolerance and inability to breastfeed 5 months after a vaginal delivery complicated by massive hemorrhage requiring transfusion of 6 units of blood. She has not had a menstrual period since delivery. Her skin is pale and dry. TSH is 1.1 mU/L (reference 0.4 to 4.0) and free T4 is 0.5 ng/dL (reference 0.8 to 1.8). Anti-thyroid peroxidase antibodies are negative.",
+  "l": "Which is the most likely cause of her low free T4?",
+  "o": [
+   "Anterior pituitary infarction",
+   "Postpartum thyroiditis",
+   "Hashimoto thyroiditis",
+   "Increased thyroxine-binding globulin",
+   "Nonthyroidal illness"
+  ],
+  "a": 0,
+  "e": "Postpartum hemorrhage can infarct the enlarged pituitary of pregnancy (Sheehan syndrome), and failed lactation and amenorrhea show that prolactin and gonadotropins were lost along with TSH. A low free T4 with a TSH that is inappropriately normal is **central hypothyroidism**: the thyrotrophs no longer drive a healthy gland. Postpartum thyroiditis and Hashimoto thyroiditis injure the gland itself, so their hypothyroid phase raises TSH. Increased thyroxine-binding globulin changes total, not free, T4.",
+  "w": {
+   "Postpartum thyroiditis": "The hypothyroid phase of postpartum thyroiditis comes from follicle damage, so TSH rises; it does not stop lactation or menses, and it is usually antibody positive.",
+   "Hashimoto thyroiditis": "Hashimoto thyroiditis is primary gland failure with a high TSH and usually positive anti-thyroid peroxidase antibodies; her antibodies are negative and her TSH is normal.",
+   "Increased thyroxine-binding globulin": "Estrogen-driven increases in binding globulin raise total T4 while free T4 stays normal; her free T4 is truly low, so binding proteins cannot explain it.",
+   "Nonthyroidal illness": "Critical illness lowers T3 through reduced deiodination, sometimes with a low TSH, but she is an outpatient months after delivery with failed lactation and amenorrhea."
+  },
+  "et": [
+   [
+    "Option",
+    "TSH",
+    "Free T4",
+    "Other clue"
+   ],
+   [
+    [
+     "Anterior pituitary infarction",
+     "Low or inappropriately normal",
+     "Low",
+     "Failed lactation, amenorrhea after hemorrhage"
+    ],
+    [
+     "Postpartum thyroiditis",
+     "High in the hypothyroid phase",
+     "Low",
+     "Often preceded by a thyrotoxic phase"
+    ],
+    [
+     "Hashimoto thyroiditis",
+     "High",
+     "Low",
+     "Anti-thyroid peroxidase antibodies"
+    ],
+    [
+     "Increased thyroxine-binding globulin",
+     "Normal",
+     "Normal",
+     "Only total T4 is high"
+    ],
+    [
+     "Nonthyroidal illness",
+     "Normal or low",
+     "Normal or low",
+     "Low T3, high reverse T3 in a sick patient"
+    ]
+   ]
+  ],
+  "bl": "Low free T4 with an inappropriately normal TSH after postpartum hemorrhage is central hypothyroidism from anterior pituitary infarction.",
+  "ef": "en5_tft",
+  "pt": {
+   "hl": [
+    "Central hypothyroidism",
+    "TSH inappropriately normal"
+   ],
+   "say": "Look at the low free T4 column, normal TSH row: central hypothyroidism, because an infarcted anterior pituitary cannot raise TSH for a healthy gland."
+  }
+ },
+ {
+  "id": "en5q09",
+  "d": 2,
+  "tags": [
+   "receptor-crosstalk"
+  ],
+  "bp": [
+   "BP-en5-09"
+  ],
+  "s": "A 27-year-old woman at 10 weeks' gestation has nausea and occasional palpitations. She has no goiter, no eye findings and no history of thyroid disease. Her pulse is 92/min. TSH is 0.2 mU/L (reference 0.4 to 4.0), free T4 is at the upper limit of normal and TSH-receptor antibodies are negative.",
+  "l": "Which is the most likely explanation for her low TSH?",
+  "o": [
+   "hCG stimulation of the TSH receptor",
+   "Stimulating antibodies against the TSH receptor",
+   "Estrogen-induced rise in thyroxine-binding globulin",
+   "Leak of stored hormone from inflamed follicles",
+   "An autonomous hyperfunctioning nodule"
+  ],
+  "a": 0,
+  "e": "hCG shares its alpha subunit with TSH, and its beta subunit is similar enough that the very high levels of the first trimester weakly activate the TSH receptor. The gland makes slightly more hormone, free T4 drifts up and TSH falls, a transient physiologic change that peaks around 10 to 12 weeks and needs no treatment. Stimulating antibodies would mean Graves disease, but her receptor antibodies are negative and she has no goiter or eye signs. A rise in binding globulin raises total T4 without lowering TSH.",
+  "w": {
+   "Stimulating antibodies against the TSH receptor": "Graves antibodies would suppress TSH with a clearly high free T4, usually with goiter or ophthalmopathy; her antibody test is negative and her free T4 is only upper-normal.",
+   "Estrogen-induced rise in thyroxine-binding globulin": "Higher binding globulin raises total T4, but the gland compensates until free T4 and TSH are normal; it cannot push TSH below the reference range.",
+   "Leak of stored hormone from inflamed follicles": "Thyroiditis would release enough hormone to push free T4 clearly above normal, and it classically appears in the first year after delivery rather than in early pregnancy.",
+   "An autonomous hyperfunctioning nodule": "A toxic adenoma is a palpable nodule that makes hormone independently of TSH and does not regress; she has no nodule, and her change tracks the hCG peak."
+  },
+  "et": [
+   [
+    "Option",
+    "Mechanism",
+    "Free T4",
+    "Course"
+   ],
+   [
+    [
+     "hCG stimulation of the TSH receptor",
+     "Placental hormone mimics TSH",
+     "Upper normal or slightly high",
+     "Resolves after the first trimester"
+    ],
+    [
+     "Stimulating antibodies against the TSH receptor",
+     "Autoantibody agonist",
+     "High",
+     "Persists; goiter, eye signs"
+    ],
+    [
+     "Estrogen-induced rise in thyroxine-binding globulin",
+     "More bound hormone",
+     "Normal",
+     "Total T4 high, TSH normal"
+    ],
+    [
+     "Leak of stored hormone from inflamed follicles",
+     "Follicle injury",
+     "High",
+     "Hyper then hypo, usually postpartum"
+    ],
+    [
+     "An autonomous hyperfunctioning nodule",
+     "TSH-independent nodule",
+     "High",
+     "Persists; palpable nodule"
+    ]
+   ]
+  ],
+  "bl": "In the first trimester, high hCG weakly stimulates the TSH receptor, lowering TSH transiently; it needs no treatment.",
+  "ef": "en5_tft",
+  "pt": {
+   "hl": [
+    "hCG in the first trimester"
+   ],
+   "say": "Check the low TSH, normal free T4 box: hCG in the first trimester stimulates the TSH receptor, so TSH dips while free T4 stays near normal."
+  }
+ },
+ {
+  "id": "en5q10",
+  "d": 3,
+  "tags": [
+   "hormone-synthesis",
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-en5-10"
+  ],
+  "s": "A 66-year-old man has been in the intensive care unit for 9 days with pneumococcal pneumonia and septic shock. He has no history of thyroid disease and takes no thyroid-active drugs. Laboratory studies show a low total T3, a high reverse T3, a free T4 at the low end of normal and a TSH of 0.9 mU/L.",
+  "l": "Which mechanism best explains this pattern?",
+  "o": [
+   "Reduced outer-ring deiodination of T4",
+   "Autoimmune destruction of thyroid follicles",
+   "Loss of pituitary thyrotrophs",
+   "Increased thyroxine-binding globulin",
+   "Inhibition of thyroid peroxidase"
+  ],
+  "a": 0,
+  "e": "Severe illness, starvation and high cortisol inhibit 5'-deiodinase, the enzyme that removes an outer-ring iodine to make T3. With **reduced outer-ring deiodination**, T3 falls, and more T4 is shunted to inner-ring deiodination as reverse T3, which is also cleared more slowly. TSH and free T4 stay near normal, so this sick euthyroid pattern is an adaptation that needs no hormone. Loss of pituitary thyrotrophs would clearly lower free T4 with a low TSH, and follicle destruction would raise TSH.",
+  "w": {
+   "Autoimmune destruction of thyroid follicles": "Hashimoto destruction lowers free T4 and raises TSH as the pituitary tries to drive the failing gland; this man's TSH is normal and free T4 is preserved.",
+   "Loss of pituitary thyrotrophs": "Central hypothyroidism lowers free T4 below normal with a low or normal TSH; it would not selectively raise reverse T3 or spare free T4.",
+   "Increased thyroxine-binding globulin": "More binding globulin, as with estrogen, raises total T4 and leaves T3 and reverse T3 proportionate; critical illness tends to lower binding proteins instead.",
+   "Inhibition of thyroid peroxidase": "Blocking peroxidase, as thionamides do, reduces synthesis of both T4 and T3 inside the gland; it does not raise reverse T3, and he takes no such drug."
+  },
+  "et": [
+   [
+    "Option",
+    "T3",
+    "Reverse T3",
+    "TSH and free T4"
+   ],
+   [
+    [
+     "Reduced outer-ring deiodination of T4",
+     "Low",
+     "High",
+     "Normal or low-normal"
+    ],
+    [
+     "Autoimmune destruction of thyroid follicles",
+     "Low",
+     "Low or normal",
+     "TSH high, free T4 low"
+    ],
+    [
+     "Loss of pituitary thyrotrophs",
+     "Low",
+     "Low or normal",
+     "Both low"
+    ],
+    [
+     "Increased thyroxine-binding globulin",
+     "Total T3 high",
+     "Normal",
+     "Both normal"
+    ],
+    [
+     "Inhibition of thyroid peroxidase",
+     "Low",
+     "Low",
+     "TSH rises, free T4 falls"
+    ]
+   ]
+  ],
+  "bl": "In sick euthyroid syndrome, reduced 5'-deiodinase activity lowers T3 and raises reverse T3 while TSH stays normal.",
+  "ef": "en5_synthesis",
+  "pt": {
+   "hl": [
+    "5'-deiodinase",
+    "reverse T3"
+   ],
+   "say": "Look at the tissue band: 5'-deiodinase makes T3, and when illness reduces outer-ring deiodination, T4 is diverted to inactive reverse T3."
+  }
+ }
+]

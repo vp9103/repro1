@@ -1,0 +1,2657 @@
+#!/usr/bin/env python
+"""check_repro.py -- the gate for REPRO-PLAN.md (The Repro-Endo Path).
+
+Agents drift, skip, tunnel, over-build, and report quality they did not reach. A sentence
+asking them not to is absent at the moment they decide they are done; this script is not.
+It is the Stop hook, and it never reads anyone's prose. For every task it RE-EXECUTES the
+task's checks against the real content (static checks on content/*.json, runtime checks
+through the gate-owned probe in headless Chrome, second-model records from xmodel.py).
+
+Every task that changes files runs in its own WORKSPACE (.repro/ws/<task>/, a copy of the
+project). `--close` merges back only the files the task OWNS; anything else the task
+touched is listed as drift and thrown away, so drift cannot reach the page. Main is locked
+to the hash of the last merge, so an edit made outside a task is a named ledger problem.
+
+  python check_repro.py --next                  what to do now, and any ledger problems
+  python check_repro.py --start P3.2            open a workspace for P3.2 (sets the row IN_PROGRESS)
+  python check_repro.py --status P3.2 --ws P3.2 run P3.2's checks inside its workspace (implementers do this)
+  python check_repro.py --close P3.2            check, merge owned files, re-check on main, write the DONE row
+  python check_repro.py --reopen P3.2 "why"     a verifier failed something: fresh workspace, row back to IN_PROGRESS
+  python check_repro.py --block P8.2 "TRIED: ... NARROWER: ... NEEDS-USER: ..."
+  python check_repro.py --verify P3             phase verification: token + seeded sample the verifier must judge
+  python check_repro.py --record P3.V "verifier-run: ... sampled: ... clicked: ..."   (also publish / live-check rows)
+  python check_repro.py --status [P3]           every task, its status, and whether its checks pass NOW
+  python check_repro.py --build [--ws T]        assemble the page (build.py) for main or a workspace
+  python check_repro.py --runtime [--ws T]      build + run the probe at 1280 and 400 px (cached by hash)
+  python check_repro.py --baseline              lock main and record the gate hash (P0.3)
+  python check_repro.py --selfcheck             print the gate's own hash (GATE sha)
+  python check_repro.py --demo                  fake ledger rows and show the gate names each one
+  python check_repro.py --selftest              demo + probe-on-reference + (if the engine exists) stub build; P0.1
+  python check_repro.py --gate                  Stop-hook mode (reads the hook payload on stdin)
+
+Release valves: no .repro-active -> not enforced; .repro-complete / .repro-abort -> released;
+a BLOCKED task with TRIED / NARROWER / NEEDS-USER is honoured; after MAX_BLOCKS refusals in
+a row the gate lets go and says why. Implementers never edit this file, repro_common.py,
+xmodel.py, build.py, probe_repro.js, serve.py or fixtures/; a change needs a GATE-CHANGE note.
+"""
+from __future__ import annotations
+
+import fnmatch
+import hashlib
+import html as htmllib
+import json
+import os
+import random
+import re
+import shutil
+import subprocess
+import sys
+import tempfile
+import time
+from pathlib import Path
+
+import repro_common as rc
+
+for _s in (sys.stdout, sys.stderr):  # Windows consoles default to cp1252; never crash on a non-Latin character
+    try:
+        _s.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, ValueError):
+        pass
+
+ROOT = Path(__file__).resolve().parent
+LEDGER = ROOT / "REPRO-LEDGER.md"
+STATE = ROOT / ".repro"
+SNAP = STATE / "snap"
+WS = STATE / "ws"
+VERIFY = STATE / "verify"
+BACKUPS = STATE / "backups"
+RUNTIME = STATE / "runtime"
+XM = STATE / "xm"
+LOCK = STATE / "lock.json"
+GATE_STATE = STATE / "gate.json"
+PAGE = "repro-endo-path.html"
+ASSETS = "repro-endo-assets"
+TRACKED = ("content", "engine", "scope", "audit", ASSETS)
+GATE_FILES = ("check_repro.py", "repro_common.py", "xmodel.py", "build.py", "probe_repro.js", "serve.py")
+CARDIO = Path(r"C:\Users\varsh\Documents\Codex\2026-09-15\there-s-an-artifact-on-clot\outputs")
+CHROME = [r"C:\Program Files\Google\Chrome\Application\chrome.exe", r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+          os.path.expandvars(r"%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe")]
+MAX_BLOCKS = 8
+MAX_PAR = 3
+STATUSES = ("NOT_STARTED", "IN_PROGRESS", "DONE", "BLOCKED", "DROPPED")
+ROW = re.compile(r"^\|\s*(P\d+\.(?:\d+|V))\s*\|(.*?)\|\s*(NOT_STARTED|IN_PROGRESS|DONE|BLOCKED|DROPPED)\s*\|(.*?)\|(.*?)\|\s*$", re.M)
+BLOCK_FIELDS = ("TRIED:", "NARROWER:", "NEEDS-USER:")
+
+# ----------------------------------------------------------------------------
+# the topic registry (REPRO-PLAN.md §9, machine form)
+# ----------------------------------------------------------------------------
+TOPICS = {
+    "rp1": "The pelvis, pelvic floor and pelvic viscera", "rp2": "The perineum, external genitalia and lymph drainage",
+    "rp3": "Breast anatomy and histology", "rp4": "Early embryology, the placenta and twinning",
+    "rp5": "Sex determination and genital development", "rp6": "Disorders of sex development and sex chromosome disorders",
+    "rp7": "Puberty: normal, early and late", "rp8": "The ovary, oogenesis and the menstrual cycle",
+    "rp9": "Amenorrhea, abnormal bleeding, PCOS and female infertility", "rp10": "Contraception, emergency contraception and medication abortion",
+    "rp11": "Menopause and hormone therapy", "rp12": "Vulva and vagina: infections and lesions",
+    "rp13": "The cervix, HPV and cervical cancer screening", "rp14": "The uterus: endometrium and myometrium",
+    "rp15": "Ovary and fallopian tube: cysts, adnexal masses and tumors", "rp16": "Bacterial STIs and pelvic inflammatory disease",
+    "rp17": "Viral STIs: HIV, HSV, HPV and molluscum", "rp18": "Infections in pregnancy and the newborn",
+    "rp19": "The testis, spermatogenesis and male reproductive hormones", "rp20": "Scrotal and testicular disorders",
+    "rp21": "The prostate and the penis", "rp22": "Male hypogonadism, infertility, sexual dysfunction and androgen drugs",
+    "rp23": "Benign breast disease and gynecomastia", "rp24": "Breast cancer",
+    "rp25": "Maternal physiology and the hormones of pregnancy", "rp26": "Early pregnancy: ectopic, pregnancy loss and trophoblastic disease",
+    "rp27": "Complications of later pregnancy", "rp28": "Labor, delivery and the postpartum period",
+    "rp29": "Gender-affirming care, sexual health and reproductive ethics", "rp30": "Prenatal care: dating, screening, teratogens and vaccines",
+    "en1": "How hormones work: receptors, messengers, transport and feedback", "en2": "The hypothalamus and pituitary",
+    "en3": "Pituitary tumors and hypopituitarism", "en4": "Water balance: ADH, diabetes insipidus and SIADH",
+    "en5": "The thyroid: structure, hormone synthesis and function tests", "en6": "Hyperthyroidism and thyroiditis",
+    "en7": "Hypothyroidism, thyroid nodules and thyroid cancer", "en8": "Calcium, PTH, vitamin D and calcitonin",
+    "en9": "Parathyroid disease and disorders of calcium", "en10": "Bone turnover: osteoporosis, osteomalacia and bone-active drugs",
+    "en11": "The adrenal cortex, steroid synthesis and congenital adrenal hyperplasia", "en12": "Cortisol excess and adrenal insufficiency",
+    "en13": "Aldosterone, the adrenal medulla and endocrine hypertension", "en14": "Insulin, glucagon and fuel regulation",
+    "en15": "Diabetes mellitus: types, diagnosis and chronic complications", "en16": "Diabetic emergencies and hypoglycemia",
+    "en17": "Diabetes and weight-management pharmacology", "en18": "Endocrine tumor syndromes: MEN, pancreatic NETs and carcinoid",
+}
+GROUPS = {
+    "G1": ["rp1", "rp2", "rp3"], "G2": ["rp4", "rp5", "rp6"], "G3": ["rp7", "rp8", "rp9"], "G4": ["rp10", "rp11", "rp29"],
+    "G5": ["rp12", "rp13", "rp14"], "G6": ["rp15", "rp23", "rp24"], "G7": ["rp16", "rp17", "rp18"], "G8": ["rp19", "rp20", "rp21", "rp22"],
+    "G9": ["rp25", "rp30", "rp26"], "G10": ["rp27", "rp28"],
+    "G11": ["en1", "en2", "en3"], "G12": ["en4", "en5", "en6"], "G13": ["en7", "en8", "en9"], "G14": ["en10", "en11", "en12"],
+    "G15": ["en13", "en14", "en15"], "G16": ["en16", "en17", "en18"],
+}
+WAVE1 = [t for g in ("G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10") for t in GROUPS[g]]
+WAVE2 = [t for g in ("G11", "G12", "G13", "G14", "G15", "G16") for t in GROUPS[g]]
+NO_IMAGE_OK = {"rp29", "en1", "en8"}          # topics where a NO-IMAGE audit row needs no special argument
+NO_IMAGE_MAX = {1: 3, 2: 4}                    # per wave, including the ones above
+
+# ----------------------------------------------------------------------------
+# bands (REPRO-PLAN.md §7; floors = cardio's measured minimums or PLAN-2's bar, whichever is higher)
+# ----------------------------------------------------------------------------
+B = {
+    "topic_words": (900, 2600), "sub_words": (8, 30), "rows_min": 13,
+    "h_words": (2, 16), "p_words": (20, 170), "call_label": (2, 14), "call_text": (25, 110),
+    "why_q": (8, 26), "why_a": (60, 160), "t_cols": (2, 6), "t_rows": (2, 14),
+    "steps_title": (3, 14), "steps_rows": (2, 7), "steps_head": (2, 18), "steps_body": (12, 110),
+    "sexp_q": (8, 30), "sexp_o": (6, 35), "sexp_why": (50, 120),
+    "pre_n": (2, 3), "pre_q": (7, 35), "pre_o": (1, 15), "pre_why": (18, 70), "pre_w": (12, 50),
+    "grid_n": (10, 16), "grid_item": (2, 18), "grid_true": 6, "grid_decoy": 3,
+    "gloss_min": 3, "gloss_t": (1, 8), "gloss_d": (12, 70),
+    "cap": (20, 110), "teach_max": 400, "svg_kb": 60, "svg_texts": 8, "svg_vbw": (840, 1000),
+    "q_s": (25, 180), "q_l": (4, 28), "q_o_words": 25, "q_e": (60, 170), "q_w": (15, 70), "q_bl": (8, 28), "q_say": (8, 60),
+    "q_min": 9, "q_min_hi": 10, "q_vis_share": 0.80, "q_d3_min": 2, "q_d1_min": 1, "q_d2plus_stem": 40,
+    "r_q": (4, 28), "r_o_words": (1, 12), "r_x": (20, 65), "r_w": (12, 60), "r_say": (8, 60),
+    "r_min": 10, "r_min_hi": 12, "r_media_share": 0.90,
+    "img_n": (2, 12), "img_dx": (1, 10), "img_look": (30, 90), "img_ww": (12, 45), "img_finding": (10, 60), "img_px": 800,
+    "ann_n": (1, 12), "ann_label": (10, 60), "ann_max": 15.0, "ann_sum": 35.0,
+    "drill_key": (12, 70), "drill_why": (8, 45), "sort_n": (10, 16), "multi_cols": (3, 8), "multi_n": (12, 24), "order_n": (5, 9),
+    "pal_story": (60, 180), "pal_cards": (4, 9), "pal_label": (1, 8), "pal_text": (4, 26),
+    "guide_title": (2, 6), "guide_head": (1, 6), "guide_body": (3, 16),
+    "bold_words": 8, "bold_spans": 3,
+}
+ROW_KINDS = {"h", "p", "call", "why", "t", "steps", "sexp", "f", "img", "vis", "palace"}
+CALL_KINDS = {"key", "trap", "mnem", "step"}
+MODALITIES = {"histology", "cytology", "gross", "imaging", "clinical", "micro", "diagram"}
+HEX = re.compile(r"(?<![&\w])#[0-9a-fA-F]{3,8}\b")
+
+
+# ============================================================================
+# small helpers
+# ============================================================================
+def sha(p: Path, n=8) -> str:
+    return hashlib.sha256(p.read_bytes()).hexdigest()[:n] if p.is_file() else "--------"[:n]
+
+
+def gate_sha() -> str:
+    h = hashlib.sha256()
+    for f in GATE_FILES + ("docs/ENGINE-MAP.md", "docs/CONTENT-SCHEMA.md"):
+        p = ROOT / f
+        if p.is_file():
+            h.update(p.read_bytes())
+    fx = ROOT / "fixtures"
+    if fx.is_dir():
+        for p in sorted(fx.rglob("*")):
+            if p.is_file() and p.suffix.lower() != ".html" and "__pycache__" not in p.parts:
+                h.update(str(p.relative_to(ROOT)).encode())
+                h.update(p.read_bytes())
+    return h.hexdigest()[:8]
+
+
+def load_json(p: Path, default=None):
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return default
+
+
+def save_json(p: Path, obj):
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(obj, indent=1, ensure_ascii=False), encoding="utf-8")
+
+
+def now():
+    return time.strftime("%Y-%m-%d %H:%M:%S")
+
+
+def tree_files(root: Path) -> dict[str, str]:
+    """{relative posix path: sha256[:16]} for every tracked file under root."""
+    out = {}
+    for d in TRACKED:
+        base = root / d
+        if not base.exists():
+            continue
+        for p in sorted(base.rglob("*")):
+            if p.is_file() and "__pycache__" not in p.parts:
+                out[p.relative_to(root).as_posix()] = hashlib.sha256(p.read_bytes()).hexdigest()[:16]
+    return out
+
+
+def tree_hash(files: dict[str, str]) -> str:
+    return hashlib.sha256(json.dumps(files, sort_keys=True).encode()).hexdigest()[:10]
+
+
+def phase_of(tid: str) -> int:
+    return int(tid[1:].split(".")[0])
+
+
+def is_verify(tid: str) -> bool:
+    return tid.endswith(".V")
+
+
+def sort_key(tid: str):
+    ph, n = tid[1:].split(".")
+    return (int(ph), 10_000 if n == "V" else int(n))
+
+
+def ws_root(task: str) -> Path:
+    return WS / task.replace(".", "_")
+
+
+def find_chrome():
+    return next((c for c in CHROME if c and Path(c).is_file()), None)
+
+
+def problems_fmt(name: str, probs: list[str], limit=6) -> tuple[bool, str]:
+    if probs:
+        return False, f"{name}: {len(probs)} problem(s): " + "; ".join(probs[:limit]) + (" ..." if len(probs) > limit else "")
+    return True, f"{name}: ok"
+
+
+# ============================================================================
+# runtime: build the page and run the probe (cached by page+probe hash)
+# ============================================================================
+def build_page(root: Path, engine: Path | None = None, out: Path | None = None) -> tuple[Path | None, list[str]]:
+    import build as _b
+    try:
+        if out:
+            Path(out).parent.mkdir(parents=True, exist_ok=True)
+        page, warn = _b.build(root, out=out, quiet=True, engine=engine)
+        return page, warn
+    except SystemExit as e:
+        return None, [str(e)]
+    except Exception as e:  # a broken build must never pass silently
+        return None, [f"build.py raised {type(e).__name__}: {e}"]
+
+
+def assets_sig(base: Path) -> str:
+    d = base / ASSETS
+    if not d.is_dir():
+        return "none"
+    return hashlib.sha256(json.dumps(sorted((p.name, p.stat().st_size) for p in d.iterdir() if p.is_file())).encode()).hexdigest()[:12]
+
+
+def _dump(chrome, url, size):
+    base = STATE / "chrome-profile"
+    base.mkdir(parents=True, exist_ok=True)
+    prof = Path(tempfile.mkdtemp(prefix="run-", dir=base))   # one profile per run: parallel tasks probe at the same time
+    try:
+        r = subprocess.run([chrome, "--headless=new", "--disable-gpu", "--no-sandbox", "--disable-extensions", "--allow-file-access-from-files",
+                            f"--user-data-dir={prof}", "--window-size=" + size, "--virtual-time-budget=30000", "--dump-dom", url],
+                           capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=300)
+        return r.stdout
+    finally:
+        shutil.rmtree(prof, ignore_errors=True)
+
+
+def _pre(dom, pid):
+    i = dom.rfind(f'<pre id="{pid}"')
+    if i < 0:
+        return None
+    m = re.match(r'<pre id="%s"[^>]*>(.*?)</pre>' % pid, dom[i:], re.S)
+    try:
+        return json.loads(htmllib.unescape(m.group(1))) if m else None
+    except ValueError:
+        return None
+
+
+def runtime(root: Path, force=False, page: Path | None = None, engine: Path | None = None, cache_only=False) -> dict | None:
+    """Probe the page built from `root` (or an explicit page file). None when Chrome or the build fails.
+    engine: build `root`'s content with another engine directory (the stub fixture with a workspace's engine);
+    the page then goes to .repro/runtime/builds/ and relative asset URLs still resolve against `root`."""
+    base_dir = Path(root)
+    if page is None:
+        out = None
+        if engine is not None:
+            out = RUNTIME / "builds" / (Path(root).name + "-" + hashlib.sha256(str(Path(engine).resolve()).encode()).hexdigest()[:10] + ".html")
+        page, warn = build_page(root, engine, out)
+        if page is None:
+            return None
+    else:
+        warn = []
+        base_dir = page.parent
+    key = hashlib.sha256((sha(page, 64) + sha(ROOT / "probe_repro.js", 64) + assets_sig(base_dir)).encode()).hexdigest()[:16]
+    cache = RUNTIME / f"{key}.json"
+    if not force:
+        c = load_json(cache)
+        if c:
+            return c
+    if cache_only:
+        return None
+    chrome = find_chrome()
+    if not chrome:
+        return None
+    src = page.read_text(encoding="utf-8", errors="replace")
+    base = f'<base href="{base_dir.resolve().as_uri()}/">'
+    h = src.find("<head>")
+    if h >= 0:
+        src = src[:h + 6] + base + src[h + 6:]
+    i = src.rfind("</script>")
+    if i < 0:
+        return None
+    copy = src[:i + 9] + "\n<script>\n" + (ROOT / "probe_repro.js").read_text(encoding="utf-8") + "\n</script>\n" + src[i + 9:]
+    RUNTIME.mkdir(parents=True, exist_ok=True)
+    cp = RUNTIME / f"probe-copy-{key}.html"
+    cp.write_text(copy, encoding="utf-8")
+    url = cp.resolve().as_uri() + "?selftest=1"
+    try:
+        p1 = _pre(_dump(chrome, url, "1280,900"), "probe")
+        p4 = _pre(_dump(chrome, url, "400,800"), "probe")
+    except (subprocess.TimeoutExpired, OSError):
+        return None
+    finally:
+        try:
+            cp.unlink()
+        except OSError:
+            pass
+    if not p1:
+        return None
+    data = {"probe": p1, "probe400": p4 or {}, "pageSha": sha(page), "buildWarnings": warn, "ranAt": now(), "root": str(root)}
+    save_json(cache, data)
+    return data
+
+
+def rget(rt, path, default=None):
+    d = rt
+    for k in path.split("."):
+        if not isinstance(d, dict):
+            return default
+        d = d.get(k)
+    return default if d is None else d
+
+
+# ============================================================================
+# static checks: topics (T phases)
+# ============================================================================
+def yield_table() -> dict[str, tuple[str, str]]:
+    p = ROOT / "scope" / "YIELD.md"
+    out = {}
+    if p.is_file():
+        for m in re.finditer(r"^\|\s*((?:en|rp)\d+)\s*\|\s*(hi|mid|lo)\s*\|\s*(hi|mid|lo)\s*\|", p.read_text(encoding="utf-8"), re.M):
+            out[m.group(1)] = (m.group(2), m.group(3))
+    return out
+
+
+def inband(n, band):
+    return band[0] <= n <= band[1]
+
+
+def bold_problems(where: str, s: str) -> list[str]:
+    out = []
+    spans = re.findall(r"\*\*(.+?)\*\*", s or "")
+    if len(spans) > B["bold_spans"]:
+        out.append(f"{where}: {len(spans)} **bold** spans (max {B['bold_spans']} per string)")
+    for sp in spans + re.findall(r"<b>(.*?)</b>", s or "", re.S):
+        if rc.wc(sp) > B["bold_words"]:
+            out.append(f"{where}: bold span of {rc.wc(sp)} words ('{rc.strip(sp)[:40]}...'); bold marks a term, not a clause")
+            break
+    return out
+
+
+def glossary_keys(ct: rc.Content) -> set[str]:
+    return {str(e.get("k")) for g in ct.glossary.values() for e in (g or [])}
+
+
+def fig_problems(key: str, f: dict) -> list[str]:
+    P = []
+    svg = f.get("svg", "")
+    if not inband(rc.wc(f.get("cap", "")), B["cap"]):
+        P.append(f"fig {key}: caption {rc.wc(f.get('cap', ''))} words (20-110; overflow goes to 'teach')")
+    if f.get("teach") and rc.wc(f["teach"]) > B["teach_max"]:
+        P.append(f"fig {key}: teach {rc.wc(f['teach'])} words (max {B['teach_max']})")
+    if not svg.lstrip().startswith("<svg"):
+        P.append(f"fig {key}: svg missing or not starting with <svg")
+        return P
+    head = svg[:400]
+    if 'class="dia"' not in head:
+        P.append(f"fig {key}: root <svg> lacks class=\"dia\"")
+    if 'role="img"' not in head or "aria-label=" not in head:
+        P.append(f"fig {key}: root <svg> needs role=\"img\" and an aria-label")
+    m = re.search(r'viewBox="\s*0\s+0\s+(\d+(?:\.\d+)?)\s+(\d+(?:\.\d+)?)"', head)
+    if not m:
+        P.append(f"fig {key}: viewBox missing (use \"0 0 900 H\")")
+    elif not inband(float(m.group(1)), B["svg_vbw"]):
+        P.append(f"fig {key}: viewBox width {m.group(1)} (840-1000; 900 is house style)")
+    n_text = len(re.findall(r"<text\b", svg))
+    if n_text < B["svg_texts"]:
+        P.append(f"fig {key}: only {n_text} <text> labels; a teaching figure labels what it draws (>= {B['svg_texts']})")
+    if HEX.search(re.sub(r"<!--.*?-->", "", svg, flags=re.S)):
+        P.append(f"fig {key}: hard-coded hex colour ({HEX.search(svg).group(0)}); use theme tokens var(--...) only")
+    if "var(--" not in svg:
+        P.append(f"fig {key}: no theme tokens (var(--ink), var(--a1) ...)")
+    if re.search(r"<text\b[^>]*>(?:(?!</text>).)*<b>", svg, re.S):
+        P.append(f"fig {key}: <b> inside <text> breaks the page; use <tspan class=\"b\">")
+    if len(svg.encode("utf-8")) > B["svg_kb"] * 1024:
+        P.append(f"fig {key}: svg {len(svg.encode('utf-8')) // 1024} KB (max {B['svg_kb']})")
+    if re.search(r"<script|<foreignObject|xlink:href=\"http|href=\"http", svg, re.I):
+        P.append(f"fig {key}: scripts, foreignObject or external links are not allowed in figures")
+    if rc.british_hits(" ".join(rc.svg_texts(svg)) + " " + f.get("cap", "")):
+        P.append(f"fig {key}: British spelling {rc.british_hits(' '.join(rc.svg_texts(svg)) + ' ' + f.get('cap', ''))}")
+    return P
+
+
+def topic_problems(ct: rc.Content, tid: str) -> list[str]:
+    P = []
+    t = ct.topics.get(tid)
+    if not t:
+        return [f"{tid}: content/topics/{tid}.json missing"]
+    if t.get("id") != tid:
+        P.append(f"{tid}: id field is '{t.get('id')}'")
+    if t.get("t") != TOPICS.get(tid):
+        P.append(f"{tid}: title must be exactly the §9 title '{TOPICS.get(tid)}'")
+    if not inband(rc.wc(t.get("sub", "")), B["sub_words"]):
+        P.append(f"{tid}: sub {rc.wc(t.get('sub', ''))} words (8-30)")
+    yt = yield_table().get(tid)
+    if not yt:
+        P.append(f"{tid}: no row in scope/YIELD.md (task P1.4)")
+    elif (t.get("yld"), t.get("exam")) != yt:
+        P.append(f"{tid}: yld/exam {t.get('yld')}/{t.get('exam')} differ from scope/YIELD.md {yt[0]}/{yt[1]}")
+    body = t.get("body")
+    if not isinstance(body, list):
+        return P + [f"{tid}: body is not a list"]
+    kinds = {}
+    gk = glossary_keys(ct)
+    words = 0
+    for i, b in enumerate(body):
+        w = f"{tid} row {i}"
+        if not isinstance(b, list) or not b or b[0] not in ROW_KINDS:
+            P.append(f"{w}: unknown row {str(b)[:40]}")
+            continue
+        k = b[0]
+        kinds[k] = kinds.get(k, 0) + 1
+        try:
+            if k == "h":
+                if not inband(rc.wc(b[1]), B["h_words"]):
+                    P.append(f"{w}: heading {rc.wc(b[1])} words (2-16)")
+            elif k == "p":
+                n = rc.wc(b[1]); words += n
+                if not inband(n, B["p_words"]):
+                    P.append(f"{w}: paragraph {n} words (20-170)")
+                if re.match(r"^\s*([-*\u2022]|\d+[.)])\s", rc.strip(b[1])):
+                    P.append(f"{w}: paragraph starts like a bullet; write prose")
+                P += bold_problems(w, b[1])
+            elif k == "call":
+                if b[1] not in CALL_KINDS:
+                    P.append(f"{w}: call kind '{b[1]}' (key/trap/mnem/step)")
+                if not inband(rc.wc(b[2]), B["call_label"]) or not inband(rc.wc(b[3]), B["call_text"]):
+                    P.append(f"{w}: call label {rc.wc(b[2])} (2-14) / text {rc.wc(b[3])} (25-110) words")
+                words += rc.wc(b[3]); P += bold_problems(w, b[3])
+            elif k == "why":
+                if not inband(rc.wc(b[1]), B["why_q"]) or not rc.strip(b[1]).endswith("?"):
+                    P.append(f"{w}: why question {rc.wc(b[1])} words (8-26) ending in '?'")
+                if not inband(rc.wc(b[2]), B["why_a"]):
+                    P.append(f"{w}: why answer {rc.wc(b[2])} words (60-160)")
+                words += rc.wc(b[2]); P += bold_problems(w, b[2])
+            elif k == "t":
+                head, rows = b[1], b[2]
+                if not inband(len(head), B["t_cols"]) or not inband(len(rows), B["t_rows"]):
+                    P.append(f"{w}: table {len(head)} cols (2-6) x {len(rows)} rows (2-14)")
+                for j, r in enumerate(rows):
+                    if len(r) != len(head):
+                        P.append(f"{w}: table row {j} has {len(r)} cells, header has {len(head)}")
+                words += sum(rc.wc(c) for r in rows for c in r)
+            elif k == "steps":
+                a = b[1] if isinstance(b[1], list) else [b[1], b[2]]
+                title, rows = a[0], a[1]
+                if not inband(rc.wc(title), B["steps_title"]) or not inband(len(rows), B["steps_rows"]):
+                    P.append(f"{w}: steps title {rc.wc(title)} words (3-14), {len(rows)} rows (2-7)")
+                for j, r in enumerate(rows):
+                    if not (isinstance(r, list) and len(r) == 2 and inband(rc.wc(r[0]), B["steps_head"]) and inband(rc.wc(r[1]), B["steps_body"])):
+                        P.append(f"{w}: steps row {j} must be [head 2-18 words, body 12-110 words]")
+                    else:
+                        words += rc.wc(r[1]); P += bold_problems(f"{w} step {j}", r[1])
+            elif k == "sexp":
+                s = b[1]
+                if not (isinstance(s, dict) and str(s.get("id", "")).startswith(f"sx_{tid}_")):
+                    P.append(f"{w}: sexp id must start 'sx_{tid}_'")
+                elif (not inband(rc.wc(s.get("q", "")), B["sexp_q"]) or len(s.get("o") or []) != 4 or not all(inband(rc.wc(o), B["sexp_o"]) for o in s["o"])
+                      or s.get("a") not in (0, 1, 2, 3) or not inband(rc.wc(s.get("why", "")), B["sexp_why"])):
+                    P.append(f"{w}: sexp needs q 8-30 words, 4 reasoning options of 6-35 words, a in 0-3, why 50-120 words")
+            elif k == "f":
+                if b[1] not in ct.figs:
+                    P.append(f"{w}: figure '{b[1]}' does not exist")
+            elif k == "img":
+                if b[1] not in ct.images:
+                    P.append(f"{w}: image '{b[1]}' does not exist")
+            elif k == "vis":
+                if b[1] != tid:
+                    P.append(f"{w}: vis row must name its own topic ({tid})")
+            elif k == "palace":
+                if b[1] not in ct.palace:
+                    P.append(f"{w}: palace '{b[1]}' does not exist")
+        except (IndexError, TypeError, KeyError, AttributeError) as e:
+            P.append(f"{w}: malformed {k} row ({type(e).__name__})")
+    for key, need in (("h", 3), ("p", 2), ("t", 1), ("steps", 1), ("why", 1), ("sexp", 1), ("f", 1)):
+        if kinds.get(key, 0) < need:
+            P.append(f"{tid}: needs >= {need} '{key}' row(s), has {kinds.get(key, 0)}")
+    if t.get("yld") == "hi" and kinds.get("f", 0) < 2:
+        P.append(f"{tid}: a Step-1 high-yield topic needs >= 2 figures in its body")
+    if kinds.get("vis", 0) != 1:
+        P.append(f"{tid}: needs exactly one ['vis','{tid}'] row (has {kinds.get('vis', 0)})")
+    calls = [b[1] for b in body if isinstance(b, list) and b and b[0] == "call" and len(b) > 1]
+    if "key" not in calls or "trap" not in calls:
+        P.append(f"{tid}: needs >= 1 'key' and >= 1 'trap' call-out")
+    if len(body) < B["rows_min"]:
+        P.append(f"{tid}: {len(body)} body rows (>= {B['rows_min']})")
+    bw = rc.body_words(t)
+    if not inband(bw, B["topic_words"]):
+        P.append(f"{tid}: body {bw} words ({B['topic_words'][0]}-{B['topic_words'][1]}; split or deepen)")
+    # pretest
+    pre = t.get("pretest") or []
+    if not inband(len(pre), B["pre_n"]):
+        P.append(f"{tid}: {len(pre)} pretest items (2-3)")
+    for i, p in enumerate(pre):
+        w = f"{tid} pretest {i}"
+        o = p.get("o") or []
+        if len(o) != 4 or len({rc.strip(x).lower() for x in o}) != 4 or p.get("a") not in (0, 1, 2, 3):
+            P.append(f"{w}: 4 distinct options and a in 0-3"); continue
+        if any("<" in x or "**" in x for x in o):
+            P.append(f"{w}: pretest options are plain text")
+        if any(rc.THROWAWAY.match(rc.strip(x)) for j, x in enumerate(o) if j != p["a"]):
+            P.append(f"{w}: throwaway distractor")
+        if not inband(rc.wc(p.get("q", "")), B["pre_q"]) or not inband(rc.wc(p.get("why", "")), B["pre_why"]):
+            P.append(f"{w}: q 7-35 words, why 18-70 words")
+        ww = p.get("w") or {}
+        for j, x in enumerate(o):
+            if j == p["a"]:
+                continue
+            n = ww.get(x)
+            if not n or not inband(rc.wc(n), B["pre_w"]):
+                P.append(f"{w}: wrong option '{x[:30]}' needs a p.w note of 12-50 words keyed by its text")
+            elif len(rc.novel_words(n, x, p.get("q", ""))) < 3:
+                P.append(f"{w}: note for '{x[:30]}' restates the option")
+    # grid
+    g = t.get("grid") or {}
+    items = g.get("items") or []
+    if not inband(len(items), B["grid_n"]):
+        P.append(f"{tid}: grid has {len(items)} items (10-16)")
+    else:
+        tr = sum(1 for it in items if it[1])
+        if tr < B["grid_true"] or len(items) - tr < B["grid_decoy"]:
+            P.append(f"{tid}: grid needs >= 6 true items and >= 3 decoys ({tr} / {len(items) - tr})")
+        if len({rc.strip(it[0]).lower() for it in items}) != len(items):
+            P.append(f"{tid}: grid items repeat")
+        long_ = [rc.strip(it[0])[:30] for it in items if not inband(rc.wc(it[0]), B["grid_item"])]
+        if long_:
+            P.append(f"{tid}: grid items must be 2-18 words ({long_[:2]})")
+    # glossary + guide + explicit glossary links
+    gl = ct.glossary.get(tid) or []
+    if len(gl) < B["gloss_min"]:
+        P.append(f"{tid}: content/glossary/{tid}.json needs >= 3 terms (has {len(gl)})")
+    for e in gl:
+        if not re.match(r"^[A-Za-z0-9_-]+$", str(e.get("k", ""))) or not inband(rc.wc(e.get("t", "")), B["gloss_t"]) or not inband(rc.wc(e.get("d", "")), B["gloss_d"]):
+            P.append(f"{tid}: glossary '{e.get('k')}' needs key [A-Za-z0-9_-], term 1-8 words, definition 12-70 words")
+    for m in re.finditer(r"\{\{([^}|]+)(?:\|[^}]*)?\}\}", json.dumps(t, ensure_ascii=False)):
+        if m.group(1) not in gk:
+            P.append(f"{tid}: {{{{{m.group(1)}}}}} links a glossary key that does not exist")
+    gd = ct.guides.get(tid) or {}
+    v = gd.get("vis") or []
+    ok_vis = (len(v) == 4 and inband(rc.wc(v[0]), B["guide_title"]) and all(isinstance(c, list) and len(c) == 2 and inband(rc.wc(c[0]), B["guide_head"]) and inband(rc.wc(c[1]), B["guide_body"]) for c in v[1:]))
+    if not ok_vis:
+        P.append(f"{tid}: content/guides/{tid}.json 'vis' must be [title 2-6 words, [head 1-6, body 3-16] x 3]")
+    med = gd.get("media") or {}
+    if not ((med.get("fig") and med["fig"] in ct.figs) or (med.get("img") and med["img"] in ct.images)):
+        P.append(f"{tid}: guide 'media' must name an existing fig or img")
+    # figures owned by this topic
+    for k, f in ct.figs.items():
+        if k.startswith(tid + "_"):
+            P += fig_problems(k, f)
+    # spelling
+    brit = rc.british_hits(json.dumps(t, ensure_ascii=False) + json.dumps(gl, ensure_ascii=False))
+    if brit:
+        P.append(f"{tid}: British spelling {brit} (American spelling throughout)")
+    return P
+
+
+def coverage_terms_problems(ct: rc.Content, tid: str) -> list[str]:
+    """Blueprint key terms and TOPIC-MAP objective terms present in the topic's rendered text."""
+    P = []
+    text = rc.topic_text(ct, tid)
+    for bid, b in rc.blueprint().items():
+        if b["topic"] == tid and b["yield"] != "x":
+            miss = rc.terms_present(text, b["terms"])
+            if miss:
+                P.append(f"{bid} key term(s) {miss} absent")
+    for oid, row in rc.topic_map_rows().items():
+        if row["topics"] and row["topics"][0] == tid:
+            if not row["terms"]:
+                P.append(f"{oid}: TOPIC-MAP row has no terms (P1.4)")
+                continue
+            miss = rc.terms_present(text, row["terms"])
+            if miss:
+                P.append(f"{oid} term(s) {miss} absent")
+    return P
+
+
+# ============================================================================
+# static checks: questions, rapid, drills, images, palace, concepts, path
+# ============================================================================
+def media_text_nodes(ct: rc.Content, ef=None, ei=None, media=None):
+    if media:
+        kind, _, key = str(media).partition(":")
+        ef, ei = (key, None) if kind == "fig" else (None, key)
+    if ef and ef in ct.figs:
+        return rc.svg_texts(ct.figs[ef].get("svg", "")), rc.fig_text(ct.figs[ef])
+    if ei and ei in ct.images:
+        im = ct.images[ei]
+        return [rc.strip(a.get("l", "")) for a in im.get("ann") or []] + [rc.strip(f) for f in im.get("findings") or []], rc.img_text(im) + " " + " ".join(rc.strip(f) for f in im.get("findings") or [])
+    return None, None
+
+
+def point_problems(where, pt, nodes, answer, band) -> list[str]:
+    P = []
+    if not isinstance(pt, dict) or not isinstance(pt.get("hl"), list) or not (1 <= len(pt["hl"]) <= 3) or not pt.get("say"):
+        return [f"{where}: pt must be {{hl:[1-3 strings], say:'...'}}"]
+    low = [n.lower() for n in nodes]
+    for h in pt["hl"]:
+        hh = rc.strip(h).lower()
+        if len(hh) < 3 or not any(hh in n for n in low):
+            P.append(f"{where}: pt.hl '{h}' is not a label in the visual")
+    if not inband(rc.wc(pt["say"]), band):
+        P.append(f"{where}: say-line {rc.wc(pt['say'])} words ({band[0]}-{band[1]})")
+    if not rc.names_answer(pt["say"], answer):
+        P.append(f"{where}: say-line does not name the keyed answer")
+    return P
+
+
+def ids_valid(item, tid, objs, bp, tmap) -> list[str]:
+    ref = (item.get("obj") or []) + (item.get("bp") or [])
+    if not ref:
+        return ["no obj/bp reference"]
+    bad = [r for r in ref if r not in objs and r not in bp]
+    if bad:
+        return [f"unknown ids {bad[:3]}"]
+    mine = [r for r in ref if (r in bp and bp[r]["topic"] == tid) or (r in tmap and tid in tmap[r])]
+    return [] if mine else ["none of its obj/bp ids belongs to this topic"]
+
+
+def audit_rows(root: Path, task: str, tag: str) -> dict[str, str]:
+    p = root / "audit" / f"{task}.md"
+    out = {}
+    if p.is_file():
+        for m in re.finditer(r"^\|\s*([A-Za-z0-9_.#:-]+)\s*\|\s*" + re.escape(tag) + r"\s*\|\s*([^|]*?)\s*\|", p.read_text(encoding="utf-8"), re.M):
+            out[m.group(1)] = m.group(2)
+    return out
+
+
+def jacc(a, b):
+    A, Bb = set(rc.kws(a, 5)), set(rc.kws(b, 5))
+    return len(A & Bb) / max(1, len(A | Bb))
+
+
+def question_problems(ct: rc.Content, tid: str, root: Path, task: str) -> list[str]:
+    P = []
+    qs = ct.questions.get(tid)
+    if qs is None:
+        return [f"{tid}: content/questions/{tid}.json missing"]
+    t = ct.topics.get(tid) or {}
+    need = B["q_min_hi"] if t.get("yld") == "hi" else B["q_min"]
+    if len(qs) < need:
+        P.append(f"{tid}: {len(qs)} questions (>= {need})")
+    objs, bp, tmap = rc.objectives(), rc.blueprint(), rc.topic_map()
+    tags = set((ct.concepts or {}).get("tags") or [])
+    novis = audit_rows(root, task, "NO-VISUAL")
+    seen_ids, d = set(), {1: 0, 2: 0, 3: 0}
+    with_vis = 0
+    wrong_sets = []
+    for q in qs:
+        qid = str(q.get("id"))
+        w = f"q {qid}"
+        if not re.match(rf"^{tid}q\d{{2}}$", qid) or qid in seen_ids:
+            P.append(f"{w}: id must be unique '{tid}qNN'")
+        seen_ids.add(qid)
+        o, a = q.get("o") or [], q.get("a")
+        if len(o) != 5 or len({rc.strip(x).lower() for x in o}) != 5 or a not in range(5) or any(not rc.strip(x) for x in o):
+            P.append(f"{w}: exactly 5 distinct non-empty options and a in 0-4"); continue
+        ans = o[a]
+        wrong = [x for i, x in enumerate(o) if i != a]
+        wrong_sets.append(set(rc.strip(x).lower() for x in wrong))
+        if any(rc.wc(x) > B["q_o_words"] for x in o):
+            P.append(f"{w}: an option is over {B['q_o_words']} words (an option never carries its own explanation)")
+        if any(rc.THROWAWAY.match(rc.strip(x)) for x in wrong):
+            P.append(f"{w}: throwaway distractor")
+        L = [len(rc.strip(x)) for x in o]
+        if L[a] == max(L) and L[a] > 1.35 * max(L[i] for i in range(5) if i != a):
+            P.append(f"{w}: keyed option is conspicuously the longest (> 1.35x)")
+        if not inband(rc.wc(q.get("s", "")), B["q_s"]):
+            P.append(f"{w}: stem {rc.wc(q.get('s', ''))} words (25-180)")
+        if not inband(rc.wc(q.get("l", "")), B["q_l"]) or not rc.strip(q.get("l", "")).endswith("?"):
+            P.append(f"{w}: lead-in 4-28 words ending in '?'")
+        dd = q.get("d")
+        if dd not in (1, 2, 3):
+            P.append(f"{w}: d must be 1, 2 or 3 (rubric)")
+        else:
+            d[dd] += 1
+            if dd >= 2 and rc.wc(q.get("s", "")) < B["q_d2plus_stem"]:
+                P.append(f"{w}: a d{dd} item needs an NBME-length vignette (>= {B['q_d2plus_stem']} words)")
+        e = q.get("e", "")
+        if not inband(rc.wc(e), B["q_e"]):
+            P.append(f"{w}: explanation {rc.wc(e)} words (60-170)")
+        if not rc.names_answer(e, ans):
+            P.append(f"{w}: explanation never names the keyed answer")
+        if not any(set(rc.kws(x, 5)) & set(rc.kws(e, 5)) for x in wrong):
+            P.append(f"{w}: explanation rejects no distractor by name")
+        P += bold_problems(w + " e", e)
+        ws = q.get("w") or {}
+        if set(ws) != set(wrong):
+            P.append(f"{w}: w must be keyed by the exact text of each of the 4 wrong options")
+        for x in wrong:
+            n = ws.get(x, "")
+            if n and not inband(rc.wc(n), B["q_w"]):
+                P.append(f"{w}: why-note for '{x[:30]}' is {rc.wc(n)} words (15-70)")
+            elif n and len(rc.novel_words(n, x, q.get("s", "") + " " + q.get("l", ""))) < 3:
+                P.append(f"{w}: why-note for '{x[:30]}' restates the option")
+        et = q.get("et")
+        if not (isinstance(et, list) and len(et) == 2 and isinstance(et[0], list) and isinstance(et[1], list)):
+            P.append(f"{w}: et must be [header[], rows[]]")
+        else:
+            head, rows = et
+            if not (3 <= len(head) <= 5) or len(rows) != 5:
+                P.append(f"{w}: et needs 3-5 columns and one row per option (5)")
+            elif {rc.strip(r[0]).lower() for r in rows if r} != {rc.strip(x).lower() for x in o}:
+                P.append(f"{w}: et rows must be keyed by the exact option texts (first cell)")
+            elif any(len(r) != len(head) or any(not rc.strip(c) for c in r) for r in rows):
+                P.append(f"{w}: et has a short row or an empty cell")
+            elif len({rc.strip(" | ".join(r[1:])).lower() for r in rows}) != 5:
+                P.append(f"{w}: et has two identical rows")
+            if any(re.search(r"correct|answer|right\?", rc.strip(h), re.I) for h in head[1:]):
+                P.append(f"{w}: et has a 'Correct?/Answer' column; columns are the features the stem turns on")
+        bl = q.get("bl", "")
+        if not inband(rc.wc(bl), B["q_bl"]) or not rc.names_answer(bl, ans):
+            P.append(f"{w}: bottom line 8-28 words naming the answer")
+        tg = q.get("tags") or []
+        if not (1 <= len(tg) <= 3) or any(x not in tags for x in tg):
+            P.append(f"{w}: 1-3 tags from content/concepts.json")
+        P += [f"{w}: {m}" for m in ids_valid(q, tid, objs, bp, tmap)]
+        if q.get("ef") or q.get("ei"):
+            nodes, mtext = media_text_nodes(ct, q.get("ef"), q.get("ei"))
+            if nodes is None:
+                P.append(f"{w}: visual {q.get('ef') or q.get('ei')} does not exist")
+            else:
+                with_vis += 1
+                if not rc.names_answer(mtext, ans):
+                    P.append(f"{w}: the attached visual does not contain the keyed answer")
+                P += point_problems(w, q.get("pt"), nodes, ans, B["q_say"])
+        elif qid not in novis or len(novis[qid]) < 20:
+            P.append(f"{w}: no visual and no 'NO-VISUAL' row (>= 20-char reason) in audit/{task}.md")
+        big = [x for x in rc.kws(ans, 5)]
+        if len(big) >= 2 and all(x in rc.strip(q.get("s", "") + " " + q.get("l", "")).lower() for x in big):
+            P.append(f"{w}: the stem contains the keyed answer's words (giveaway)")
+        brit = rc.british_hits(json.dumps(q, ensure_ascii=False))
+        if brit:
+            P.append(f"{w}: British spelling {brit}")
+    if qs:
+        if with_vis / len(qs) < B["q_vis_share"]:
+            P.append(f"{tid}: {with_vis}/{len(qs)} questions carry a visual (>= {int(B['q_vis_share'] * 100)}%)")
+        if d[3] < B["q_d3_min"] or d[1] < B["q_d1_min"]:
+            P.append(f"{tid}: difficulty spread d1/d2/d3 = {d[1]}/{d[2]}/{d[3]} (>= 1 at d1, >= 2 at d3)")
+        for i in range(len(qs)):
+            for j in range(i + 1, len(qs)):
+                if jacc(qs[i].get("s", ""), qs[j].get("s", "")) >= 0.55:
+                    P.append(f"{tid}: {qs[i].get('id')} and {qs[j].get('id')} are near-duplicate stems")
+        shared = any(wrong_sets[i] & wrong_sets[j] for i in range(len(wrong_sets)) for j in range(i + 1, len(wrong_sets)))
+        if len(qs) >= 3 and not shared:
+            P.append(f"{tid}: no two questions share a wrong-option text (Weak Spots can only name a confusion that recurs)")
+    return P
+
+
+def rapid_problems(ct: rc.Content, tid: str, root: Path, task: str) -> list[str]:
+    P = []
+    rs = ct.rapid.get(tid)
+    if rs is None:
+        return [f"{tid}: content/rapid/{tid}.json missing"]
+    t = ct.topics.get(tid) or {}
+    need = B["r_min_hi"] if t.get("yld") == "hi" else B["r_min"]
+    if len(rs) < need:
+        P.append(f"{tid}: {len(rs)} rapid items (>= {need})")
+    objs, bp, tmap = rc.objectives(), rc.blueprint(), rc.topic_map()
+    tags = set((ct.concepts or {}).get("tags") or [])
+    novis = audit_rows(root, task, "NO-VISUAL")
+    allq = {}
+    for tt, r in ct.all_rapid():
+        allq.setdefault(re.sub(r"\s+", " ", rc.strip(r.get("q", ""))).lower(), []).append(r.get("id"))
+    seen, with_media = set(), 0
+    for r in rs:
+        rid = str(r.get("id"))
+        w = f"r {rid}"
+        if not re.match(rf"^{tid}r\d{{2}}$", rid) or rid in seen:
+            P.append(f"{w}: id must be unique '{tid}rNN'")
+        seen.add(rid)
+        o, a = r.get("o") or [], r.get("a")
+        if len(o) != 5 or len({rc.strip(x).lower() for x in o}) != 5 or a not in range(5) or any(len(rc.strip(x)) < 2 for x in o):
+            P.append(f"{w}: exactly 5 distinct options (>= 2 chars) and a in 0-4"); continue
+        ans = o[a]
+        wrong = [x for i, x in enumerate(o) if i != a]
+        if any(not inband(rc.wc(x), B["r_o_words"]) for x in o):
+            P.append(f"{w}: options are 1-12 words")
+        if any(rc.THROWAWAY.match(rc.strip(x)) for x in wrong):
+            P.append(f"{w}: throwaway distractor")
+        L = [len(rc.strip(x)) for x in o]
+        if L[a] == max(L) and L[a] > 1.4 * max(L[i] for i in range(5) if i != a):
+            P.append(f"{w}: keyed option is conspicuously the longest (> 1.4x)")
+        if not inband(rc.wc(r.get("q", "")), B["r_q"]) or not rc.strip(r.get("q", "")).endswith("?"):
+            P.append(f"{w}: question 4-28 words ending in '?'")
+        if len(allq.get(re.sub(r"\s+", " ", rc.strip(r.get("q", ""))).lower(), [])) > 1:
+            P.append(f"{w}: the same rapid question text appears twice in the block")
+        x = r.get("x", "")
+        if not inband(rc.wc(x), B["r_x"]) or not rc.names_answer(x, ans):
+            P.append(f"{w}: x must be 20-65 words and name the keyed answer (mechanism, not restatement)")
+        ws = r.get("w") or {}
+        if set(ws) != set(wrong):
+            P.append(f"{w}: w must be keyed by the exact text of each of the 4 wrong options")
+        for xx in wrong:
+            n = ws.get(xx, "")
+            if n and not inband(rc.wc(n), B["r_w"]):
+                P.append(f"{w}: why for '{xx[:30]}' is {rc.wc(n)} words (12-60)")
+            elif n and len(rc.novel_words(n, xx, r.get("q", ""))) < 3:
+                P.append(f"{w}: why for '{xx[:30]}' restates the option")
+        tg = r.get("tags") or []
+        if not (1 <= len(tg) <= 3) or any(t_ not in tags for t_ in tg):
+            P.append(f"{w}: 1-3 tags from content/concepts.json")
+        P += [f"{w}: {m}" for m in ids_valid(r, tid, objs, bp, tmap)]
+        if r.get("media"):
+            nodes, mtext = media_text_nodes(ct, media=r["media"])
+            if nodes is None:
+                P.append(f"{w}: media {r['media']} does not exist")
+            else:
+                with_media += 1
+                if not rc.names_answer(mtext, ans):
+                    P.append(f"{w}: the pinned visual does not contain the keyed answer")
+                P += point_problems(w, r.get("pt"), nodes, ans, B["r_say"])
+        elif rid not in novis or len(novis[rid]) < 20:
+            P.append(f"{w}: no media and no 'NO-VISUAL' row (>= 20-char reason) in audit/{task}.md")
+        brit = rc.british_hits(json.dumps(r, ensure_ascii=False))
+        if brit:
+            P.append(f"{w}: British spelling {brit}")
+    if rs and with_media / len(rs) < B["r_media_share"]:
+        P.append(f"{tid}: {with_media}/{len(rs)} rapid items pin a visual (>= {int(B['r_media_share'] * 100)}%)")
+    return P
+
+
+def drill_problems(ct: rc.Content, tids: list[str]) -> list[str]:
+    P = []
+    tags = set((ct.concepts or {}).get("tags") or [])
+    mine = {k: d for k, d in ct.drills.items() if any(k.startswith(f"d_{t}_") for t in tids)}
+    for t in tids:
+        if not any(d.get("c") == t for d in mine.values()):
+            P.append(f"{t}: no drill has c='{t}' (every topic needs its drill channel)")
+    for k, d in mine.items():
+        w = f"drill {k}"
+        if d.get("id") != k or d.get("c") not in tids:
+            P.append(f"{w}: id must equal the file name and c must be one of this task's topics")
+        kind = d.get("kind")
+        if kind not in ("sort", "multi", "order"):
+            P.append(f"{w}: kind must be sort / multi / order"); continue
+        if not inband(rc.wc(d.get("key", "")), B["drill_key"]):
+            P.append(f"{w}: key {rc.wc(d.get('key', ''))} words (12-70): the one discriminator, stated exactly")
+        tg = d.get("tags") or []
+        if not (1 <= len(tg) <= 2) or any(x not in tags for x in tg):
+            P.append(f"{w}: 1-2 tags from content/concepts.json")
+        items = d.get("items") or []
+        texts = [str(it[0]) for it in items if isinstance(it, list) and it]
+        if len(set(t.lower() for t in texts)) != len(texts):
+            P.append(f"{w}: repeated item text")
+        if kind == "sort":
+            if not inband(len(items), B["sort_n"]):
+                P.append(f"{w}: {len(items)} items (10-16)")
+            sides = [it[1] for it in items]
+            if sides.count("a") < 0.35 * len(items) or sides.count("b") < 0.35 * len(items):
+                P.append(f"{w}: sides unbalanced (each side >= 35% of items)")
+            for it in items:
+                if len(it) < 3 or it[1] not in ("a", "b") or not inband(rc.wc(it[2]), B["drill_why"]) or "<" in str(it[0]) or "**" in str(it[0]):
+                    P.append(f"{w}: sort item must be [plain text, 'a'|'b', why 8-45 words]"); break
+        elif kind == "multi":
+            cols = {c.get("id") for c in d.get("cols") or []}
+            if not inband(len(cols), B["multi_cols"]) or not inband(len(items), B["multi_n"]):
+                P.append(f"{w}: {len(cols)} columns (3-8), {len(items)} items (12-24)")
+            for it in items:
+                if len(it) < 3 or it[1] not in cols or not inband(rc.wc(it[2]), B["drill_why"]) or (len(it) > 3 and it[3] and it[3] not in ct.images):
+                    P.append(f"{w}: multi item must be [text, existing column id, why 8-45 words, optional image key]"); break
+            for c in cols:
+                n = sum(1 for it in items if len(it) > 1 and it[1] == c)
+                if not 2 <= n <= 6:
+                    P.append(f"{w}: column '{c}' has {n} items (2-6)")
+        else:
+            if not inband(rc.wc(d.get("q", "")), (8, 40)) or not inband(len(items), B["order_n"]):
+                P.append(f"{w}: order drill needs a q of 8-40 words and 5-9 steps")
+            for it in items:
+                if not (isinstance(it, list) and len(it) == 2 and inband(rc.wc(it[0]), (3, 25)) and inband(rc.wc(it[1]), B["drill_why"])):
+                    P.append(f"{w}: order step must be [step 3-25 words, why-it-sits-here 8-45 words]"); break
+        brit = rc.british_hits(json.dumps(d, ensure_ascii=False))
+        if brit:
+            P.append(f"{w}: British spelling {brit}")
+    return P
+
+
+def image_problems(ct: rc.Content, root: Path, tids: list[str], task: str, with_ann: bool) -> list[str]:
+    P = []
+    placed = {}
+    for tid, t in ct.topics.items():
+        for b in t.get("body") or []:
+            if isinstance(b, list) and len(b) > 1 and b[0] == "img":
+                placed.setdefault(b[1], []).append(tid)
+    keep_small = audit_rows(root, task, "KEEP-SMALL")
+    for k, im in ct.images.items():
+        if not any(k.startswith(t + "_") for t in tids):
+            continue
+        w = f"img {k}"
+        f = root / ASSETS / str(im.get("file", ""))
+        if not f.is_file() or not str(im.get("file", "")).startswith(k.split("_")[0] + "_"):
+            P.append(f"{w}: file {ASSETS}/{im.get('file')} missing or not prefixed with the topic id"); continue
+        sz = rc.jpeg_size(f)
+        if not sz:
+            P.append(f"{w}: unreadable image header")
+        elif max(sz) < B["img_px"] and (k not in keep_small or len(keep_small[k]) < 20):
+            P.append(f"{w}: {sz[0]}x{sz[1]} px (< 800 on the long side) and no KEEP-SMALL row with a reason")
+        for fld, band in (("n", B["img_n"]), ("dx", B["img_dx"]), ("look", B["img_look"])):
+            if not inband(rc.wc(im.get(fld, "")), band):
+                P.append(f"{w}: {fld} {rc.wc(im.get(fld, ''))} words ({band[0]}-{band[1]})")
+        wr = im.get("wrong") or []
+        if len(wr) != 4 or len({x.lower() for x in wr}) != 4 or any(x.lower() == str(im.get("dx", "")).lower() for x in wr):
+            P.append(f"{w}: exactly 4 distinct wrong labels, none equal to dx")
+        ww = im.get("ww") or {}
+        if set(ww) != set(wr) or any(not inband(rc.wc(ww[x]), B["img_ww"]) for x in ww):
+            P.append(f"{w}: ww needs a 12-45 word note for each wrong label, keyed by its text")
+        lic = str(im.get("lic", ""))
+        if rc.NC_LICENSE.search(lic):
+            P.append(f"{w}: licence '{lic}' is non-commercial; not allowed without the user's decision (BLOCK with NEEDS-USER)")
+        elif not rc.ALLOWED_LICENSES.match(lic):
+            P.append(f"{w}: licence '{lic}' not in the allowed set (CC0, public domain, CC BY, CC BY-SA)")
+        for fld in ("cred", "by", "srcurl"):
+            if not str(im.get(fld, "")).strip():
+                P.append(f"{w}: '{fld}' missing (attribution is copied from the source page, never typed from memory)")
+        if not str(im.get("srcurl", "")).startswith("https://"):
+            P.append(f"{w}: srcurl must be the https source page")
+        if im.get("mod") not in (None, True, False):
+            P.append(f"{w}: mod must be a boolean")
+        if im.get("modality") not in MODALITIES:
+            P.append(f"{w}: modality must be one of {sorted(MODALITIES)}")
+        fi = im.get("findings") or []
+        if not (1 <= len(fi) <= 8) or any(not inband(rc.wc(x), B["img_finding"]) for x in fi):
+            P.append(f"{w}: 1-8 findings of 10-60 words (what the overlay must teach)")
+        pl = placed.get(k, [])
+        if len(pl) != 1 or not k.startswith(pl[0] + "_"):
+            P.append(f"{w}: must be placed in exactly one body, its own topic's (placed in {pl})")
+        if with_ann:
+            ann = im.get("ann") or []
+            if not inband(len(ann), B["ann_n"]):
+                P.append(f"{w}: {len(ann)} callouts (1-12)")
+            tot = 0.0
+            for i, a in enumerate(ann):
+                ar = rc.ann_area(a)
+                if a.get("k") == "sh":
+                    P.append(f"{w}: callout {i} is a filled shape; nothing may be filled")
+                if ar < 0:
+                    P.append(f"{w}: callout {i} is malformed")
+                elif ar > B["ann_max"]:
+                    P.append(f"{w}: callout {i} covers {ar:.1f}% (max 15%)")
+                tot += max(0, ar)
+                if not inband(rc.wc(a.get("l", "")), B["ann_label"]):
+                    P.append(f"{w}: callout {i} label {rc.wc(a.get('l', ''))} words (10-60)")
+            if tot > B["ann_sum"]:
+                P.append(f"{w}: callouts cover {tot:.1f}% in total (max 35%)")
+        brit = rc.british_hits(json.dumps(im, ensure_ascii=False))
+        if brit:
+            P.append(f"{w}: British spelling {brit}")
+    return P
+
+
+def image_coverage_problems(ct: rc.Content, root: Path, tids: list[str], task: str, wave: int) -> list[str]:
+    P = []
+    noimg = audit_rows(root, task, "NO-IMAGE")
+    lacking = []
+    for t in tids:
+        if not any(k.startswith(t + "_") for k in ct.images):
+            if t not in noimg or len(noimg[t]) < 20:
+                P.append(f"{t}: no image and no 'NO-IMAGE' row (>= 20-char reason) in audit/{task}.md")
+            lacking.append(t)
+    return P
+
+
+def overlay_problems(ct: rc.Content, root: Path, keys: list[str], task: str = "-") -> list[str]:
+    P = []
+    adjusted = audit_rows(root, task, "ADJUSTED")
+    for k in keys:
+        im = ct.images.get(k)
+        if not im:
+            P.append(f"{k}: no such image"); continue
+        prop = load_json(XM / "overlays" / f"{k}.json")
+        if not prop or prop.get("provider") not in ("codex", "gemini"):
+            P.append(f"{k}: no design from xmodel.py overlay"); continue
+        f = root / ASSETS / str(im.get("file", ""))
+        if f.is_file() and prop.get("image_sha") != rc.fhash(f, 16):
+            P.append(f"{k}: design was made for a different image file"); continue
+        tr = XM / "overlays" / f"{k}.propose.jsonl"
+        if not tr.is_file() or "turn.completed" not in tr.read_text(encoding="utf-8", errors="replace"):
+            P.append(f"{k}: no completed design transcript"); continue
+        rev = load_json(XM / "overlays" / f"{k}.review.json")
+        if not rev or rev.get("provider") not in ("codex", "gemini") or rev.get("provider") == prop.get("provider"):
+            P.append(f"{k}: needs a review by the OTHER model (xmodel.py overlay-review {k})"); continue
+        if rev.get("proposal_hash") != rc.jhash(prop.get("ann")):
+            P.append(f"{k}: review is for an older design"); continue
+        bad = [s.get("i") for s in rev.get("shapes") or [] if s.get("covers_finding") or s.get("points_at_right_thing") is False]
+        if bad or (rev.get("overall") or 0) < 7:
+            P.append(f"{k}: review overall {rev.get('overall')}/10, failing callouts {bad}"); continue
+        page_ann, des = im.get("ann") or [], prop.get("ann") or []
+        geo = ("k", "x", "y", "w", "h", "rx", "ry", "r", "rot", "px", "py", "pts", "tx", "ty", "x2", "y2", "ix", "iy", "iw", "ih", "l")
+        diff = [i for i, (c, p) in enumerate(zip(page_ann, des)) if any(c.get(g) != p.get(g) for g in geo)]
+        adj = {int(r.split("#", 1)[1]) for r, why in adjusted.items() if r.startswith(k + "#") and r.split("#", 1)[1].isdigit() and len(why) >= 15}
+        if len(page_ann) != len(des) or [i for i in diff if i not in adj] or len(adj) > 2:
+            P.append(f"{k}: content ann differs from the reviewed design (at most 2 callouts, each logged '| {k}#<i> | ADJUSTED | reason |' in audit/{task}.md)")
+    return P
+
+
+def palace_problems(ct: rc.Content, tids: list[str], min_n: int) -> list[str]:
+    P = []
+    placed = {}
+    for tid, t in ct.topics.items():
+        for b in t.get("body") or []:
+            if isinstance(b, list) and len(b) > 1 and b[0] == "palace":
+                placed.setdefault(b[1], []).append(tid)
+    mine = {k: p for k, p in ct.palace.items() if any(k.startswith(f"pal_{t}_") for t in tids)}
+    if len(mine) < min_n:
+        P.append(f"{len(mine)} memory scenes for this wave (>= {min_n})")
+    for k, p in mine.items():
+        w = f"palace {k}"
+        if not inband(rc.wc(p.get("t", "")), (3, 13)) or not inband(rc.wc(p.get("story", "")), B["pal_story"]):
+            P.append(f"{w}: title 3-13 words, story 60-180 words")
+        cards = p.get("keys") or []
+        if not inband(len(cards), B["pal_cards"]) or any(not (isinstance(c, list) and len(c) == 3 and inband(rc.wc(c[1]), B["pal_label"]) and inband(rc.wc(c[2]), B["pal_text"])) for c in cards):
+            P.append(f"{w}: 4-9 cards of [emoji, label 1-8 words, text 4-26 words]")
+        if len(placed.get(k, [])) != 1:
+            P.append(f"{w}: must be placed in exactly one topic body (placed in {placed.get(k, [])})")
+    return P
+
+
+def concept_problems(ct: rc.Content, tids: list[str], cross_share: float | None) -> list[str]:
+    P = []
+    c = ct.concepts or {}
+    tags = c.get("tags") or []
+    labels, home = c.get("labels") or {}, c.get("home") or {}
+    used = {}
+    for tid, q in ct.all_questions():
+        for x in q.get("tags") or []:
+            used.setdefault(x, set()).add(tid)
+    for tid, r in ct.all_rapid():
+        for x in r.get("tags") or []:
+            used.setdefault(x, set()).add(tid)
+    for k, d in ct.drills.items():
+        for x in d.get("tags") or []:
+            used.setdefault(x, set()).add(d.get("c"))
+    for tg in tags:
+        if not inband(rc.wc(labels.get(tg, "")), (1, 6)):
+            P.append(f"tag {tg}: label must be 1-6 words")
+    for tg in used:
+        h = home.get(tg)
+        if not h:
+            P.append(f"tag {tg}: used but has no CONCEPT_HOME entry"); continue
+        t = ct.topics.get(h.get("t"))
+        heads = {rc.strip(b[1]) for b in (t or {}).get("body") or [] if isinstance(b, list) and b and b[0] == "h"}
+        if not t or rc.strip(h.get("h", "")) not in heads:
+            P.append(f"tag {tg}: home heading '{h.get('h')}' is not a heading of topic {h.get('t')}")
+        if h.get("f") and h["f"] not in ct.figs:
+            P.append(f"tag {tg}: home figure '{h['f']}' does not exist")
+        if not inband(rc.wc(h.get("l", "")), (1, 8)):
+            P.append(f"tag {tg}: home label must be 1-8 words")
+    if cross_share is not None and used:
+        cross = sum(1 for s in used.values() if len(s) >= 2) / len(used)
+        if cross < cross_share:
+            P.append(f"only {int(cross * 100)}% of used tags span >= 2 topics (>= {int(cross_share * 100)}%: a thread needs two topics)")
+    return P
+
+
+def path_problems(ct: rc.Content, tids: list[str]) -> list[str]:
+    P = []
+    path = ct.path or []
+    if not path or path[0].get("id") != "p0" or path[0].get("kind") != "diag":
+        P.append("path[0] must be {id:'p0', kind:'diag'}")
+    if not path or path[-1].get("kind") != "final":
+        P.append("the last path stage must be kind 'final'")
+    seen = {}
+    for s in path:
+        if s.get("kind") == "unit":
+            if not inband(len(s.get("topics") or []), (1, 4)):
+                P.append(f"stage {s.get('id')}: 1-4 topics")
+            for t in s.get("topics") or []:
+                seen[t] = seen.get(t, 0) + 1
+                if t not in ct.topics:
+                    P.append(f"stage {s.get('id')}: topic {t} does not exist")
+        if not inband(rc.wc(s.get("t", "")), (2, 8)) or not inband(rc.wc(s.get("d", "")), (12, 70)):
+            P.append(f"stage {s.get('id')}: title 2-8 words, description 12-70 words")
+    for t in tids:
+        if seen.get(t) != 1:
+            P.append(f"{t} is in {seen.get(t, 0)} unit stages (exactly 1)")
+    return P
+
+
+# ============================================================================
+# second-model record checks
+# ============================================================================
+def xm_record(cmd, key, h=None):
+    """The record for exactly this content (hash-addressed); None = never reviewed in this form (missing or stale)."""
+    return load_json(XM / cmd / (re.sub(r"[^A-Za-z0-9_.-]", "_", key) + (f"@{h}" if h else "") + ".json"))
+
+
+def adjudicated(cmd, key, h, item=None):
+    """The OTHER provider upheld the author's rebuttal for exactly this content (and this item, when given)."""
+    a = xm_record("adjudicate", f"{cmd}-{key}" + (f"#{item}" if item else ""), h)
+    return bool(a and a.get("ruling") == "rebuttal-upheld" and a.get("hash") == h and a.get("provider") != a.get("flag_provider") and transcript_ok(a))
+
+
+def calibrated(which, provider):
+    r = load_json(XM / "calibration" / f"{which}-{provider}.json")
+    return bool(r and r.get("passed"))
+
+
+def transcript_ok(rec):
+    p = ROOT / str(rec.get("transcript", ""))
+    return p.is_file() and "turn.completed" in p.read_text(encoding="utf-8", errors="replace")
+
+
+def xm_fact(ct: rc.Content, kind: str, spec: str) -> list[str]:
+    import xmodel
+    P = []
+    for key, h, _ in xmodel.fact_items(ct, kind, spec):
+        r = xm_record("factcheck", key, h)
+        if not r or r.get("hash") != h:
+            P.append(f"{key}: factcheck missing or stale (python xmodel.py factcheck {kind} ...)"); continue
+        if not calibrated("factcheck", r.get("provider")):
+            P.append(f"{key}: factcheck by an uncalibrated provider"); continue
+        if not transcript_ok(r):
+            P.append(f"{key}: factcheck has no completed transcript"); continue
+        if r.get("verdict") == "wrong" and not adjudicated("factcheck", key, h):
+            P.append(f"{key}: judged WRONG ({r.get('claim', '')[:60]} -> {r.get('correction', '')[:70]})")
+    return P
+
+
+def xm_grade(ct: rc.Content, kind: str, spec: str) -> list[str]:
+    import xmodel
+    P = []
+    for key, h, _ in xmodel.grade_items(ct, kind, spec):
+        r = xm_record("grade", key, h)
+        if not r or r.get("hash") != h:
+            P.append(f"{key}: distractor grade missing or stale (python xmodel.py grade {kind} ...)"); continue
+        if not calibrated("grade", r.get("provider")) or not transcript_ok(r):
+            P.append(f"{key}: grade by an uncalibrated provider or without a transcript"); continue
+        bad = [o for o, v in (r.get("verdicts") or {}).items() if v.get("verdict") in ("throwaway", "unknown") and not adjudicated("grade", key, h, o)]
+        if bad:
+            P.append(f"{key}: throwaway distractor '{rc.strip(bad[0])[:40]}'")
+    return P
+
+
+def xm_coverage(ct: rc.Content, tids: list[str], root: Path, task: str) -> list[str]:
+    import xmodel
+    P = []
+    ok_partial = audit_rows(root, task, "PARTIAL-OK")
+    for tid in tids:
+        text, acc = xmodel.coverage_payload(ct, tid)
+        h = rc.jhash({"text": text, "acc": acc})
+        r = xm_record("coverage", f"topic:{tid}", h)
+        if not r or r.get("hash") != h:
+            P.append(f"{tid}: coverage review missing or stale (python xmodel.py coverage {tid})"); continue
+        if not calibrated("coverage", r.get("provider")) or not transcript_ok(r):
+            P.append(f"{tid}: coverage by an uncalibrated provider or without a transcript"); continue
+        for i, v in (r.get("verdicts") or {}).items():
+            if v.get("verdict") in ("missing", "unknown") and not adjudicated("coverage", f"topic:{tid}", h, i):
+                P.append(f"{tid}: {i} judged {v.get('verdict').upper()} ({v.get('note', '')[:70]})")
+            elif v.get("verdict") == "partial" and len(ok_partial.get(i, "")) < 20:
+                P.append(f"{tid}: {i} judged PARTIAL with no 'PARTIAL-OK' row (>= 20 chars) in audit/{task}.md")
+    return P
+
+
+def xm_figs(ct: rc.Content, keys: list[str]) -> list[str]:
+    P = []
+    for k in keys:
+        f = ct.figs[k]
+        h = rc.jhash({"svg": f.get("svg"), "cap": f.get("cap")})
+        r = xm_record("figreview", f"fig:{k}", h)
+        if not r or r.get("hash") != h:
+            P.append(f"fig {k}: figure review missing or stale (python xmodel.py figreview {k})"); continue
+        if not calibrated("figreview", r.get("provider")) or not transcript_ok(r):
+            P.append(f"fig {k}: review by an uncalibrated provider or without a transcript"); continue
+        errs = [e for e in r.get("errors") or [] if e.get("severity") in ("error", "misleading")]
+        if adjudicated("figreview", f"fig:{k}", h):
+            continue
+        if errs or (r.get("overall") or 0) < 7 or (r.get("legibility") or 0) < 3 or r.get("teaches_caption") is not True:
+            P.append(f"fig {k}: review {r.get('overall')}/10, legibility {r.get('legibility')}/5, teaches caption {r.get('teaches_caption')}, {len(errs)} error(s): {errs[0]['what'][:60] if errs else ''}")
+    return P
+
+
+def xm_imgs(ct: rc.Content, root: Path, keys: list[str]) -> list[str]:
+    P = []
+    for k in keys:
+        im = ct.images[k]
+        f = root / ASSETS / str(im.get("file", ""))
+        if not f.is_file():
+            continue
+        labels = [rc.strip(a.get("l", "")) for a in im.get("ann") or []]
+        h = rc.jhash({"file": rc.fhash(f), "dx": im.get("dx"), "n": im.get("n"), "look": im.get("look"), "labels": labels})
+        r = xm_record("imgverify", f"img:{k}", h)
+        if not r or r.get("hash") != h:
+            P.append(f"img {k}: image verification missing or stale (python xmodel.py imgverify {k})"); continue
+        if not calibrated("imgverify", r.get("provider")) or not transcript_ok(r):
+            P.append(f"img {k}: verified by an uncalibrated provider or without a transcript"); continue
+        if r.get("shows_claimed_dx") != "yes" and not adjudicated("imgverify", f"img:{k}", h):
+            P.append(f"img {k}: the picture was judged '{r.get('shows_claimed_dx')}' for the claimed diagnosis ({r.get('better_dx_if_not', '')[:60]})")
+    return P
+
+
+# ============================================================================
+# check builders (each returns a callable ctx -> (ok, msg))
+# ============================================================================
+def C(name, fn):
+    def f(ctx):
+        return problems_fmt(name, fn(ctx))
+    f.label = name
+    return f
+
+
+def rt_check(name, fn):
+    """A runtime check: fn(rt) -> list of problems; fails when the runtime is unavailable."""
+    def f(ctx):
+        rt = ctx.get("rt")
+        if not rt:
+            return False, f"{name}: runtime unavailable (build failed or headless Chrome missing; python check_repro.py --runtime)"
+        return problems_fmt(name, fn(rt))
+    f.label = name
+    return f
+
+
+def close_only(chk):
+    """Checked when the task closes; not re-run by validate (see run_checks). Only page-wide release checks use this."""
+    chk.close_only = True
+    return chk
+
+
+def figs_of(ct, tids):
+    return [k for k in ct.figs if any(k.startswith(t + "_") for t in tids)]
+
+
+def imgs_of(ct, tids):
+    return [k for k in ct.images if any(k.startswith(t + "_") for t in tids)]
+
+
+def topic_checks(tids, task):
+    return [
+        C("topic structure and bands", lambda ctx: [p for t in tids for p in topic_problems(ctx["ct"], t)]),
+        C("blueprint + objective key terms taught", lambda ctx: [f"{t}: {p}" for t in tids for p in coverage_terms_problems(ctx["ct"], t)]),
+        C("second model: topic facts", lambda ctx: xm_fact(ctx["ct"], "topic", ",".join(tids)) + xm_fact(ctx["ct"], "gloss", ",".join(tids)) + xm_fact(ctx["ct"], "guide", ",".join(tids))),
+        C("second model: figure captions and labels", lambda ctx: xm_fact(ctx["ct"], "fig", ",".join(tids))),
+        C("second model: coverage of objectives and blueprint", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
+        C("second model: figures reviewed as pictures", lambda ctx: xm_figs(ctx["ct"], figs_of(ctx["ct"], tids))),
+        C("second model: pretest distractors", lambda ctx: xm_grade(ctx["ct"], "pretest", ",".join(tids))),
+        rt_check("rendered: figures legible, no overlapping or clipped labels", lambda rt: [f"{k}: median glyph {rget(rt, 'probe.figs.perFig', {}).get(k)} px (< 9)" for k in rget(rt, "probe.figs.below9", []) if any(k.startswith(t + "_") for t in tids)]
+                 + [f"{k}: labels overlap {v[:2]}" for k, v in rget(rt, "probe.figs.overlaps", {}).items() if any(k.startswith(t + "_") for t in tids)]
+                 + [f"{k}: labels clipped {v[:2]}" for k, v in rget(rt, "probe.figs.clipped", {}).items() if any(k.startswith(t + "_") for t in tids)]),
+        rt_check("rendered: glossary links and cloze targets per topic", lambda rt: [f"{t}: {rget(rt, 'probe.topics.perTopic', {}).get(t, {}).get('gterms', 0)} glossary links (>= 4)" for t in tids if rget(rt, "probe.topics.perTopic", {}).get(t, {}).get("gterms", 0) < 4]
+                 + [f"{t}: {rget(rt, 'probe.topics.perTopic', {}).get(t, {}).get('strong', 0)} bold key terms in prose/call/table (>= 5 for the cloze toggle)" for t in tids if rget(rt, "probe.topics.perTopic", {}).get(t, {}).get("strong", 0) < 5]),
+        rt_check("rendered: every view, no JS errors, no leaks", lambda rt: rget(rt, "probe.views.failures", []) + rget(rt, "probe.errors", []) + rget(rt, "probe.jsErrors", [])),
+    ]
+
+
+def question_checks(tids, task):
+    return [
+        C("questions: structure, bands, visuals, tables, bottom lines", lambda ctx: [p for t in tids for p in question_problems(ctx["ct"], t, ctx["root"], task)]),
+        C("second model: question facts and best answer", lambda ctx: xm_fact(ctx["ct"], "q", ",".join(tids))),
+        C("second model: question distractors", lambda ctx: xm_grade(ctx["ct"], "q", ",".join(tids))),
+        C("figures touched by this task still reviewed (picture, facts, structure)", lambda ctx: xm_figs(ctx["ct"], figs_of(ctx["ct"], tids)) + xm_fact(ctx["ct"], "fig", ",".join(tids))
+          + [p for k in figs_of(ctx["ct"], tids) for p in fig_problems(k, ctx["ct"].figs[k])]),
+        C("second model: coverage still current for these topics (a changed body figure changes what the topic teaches)", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
+        rt_check("rendered: practice answered view (why-click, table, bottom line, point)", lambda rt: [] if all(rget(rt, f"probe.renderPractice.{k}") for k in ("wrongClickable", "whyRevealed", "tableShown", "blShown", "detailsOpen")) else [f"renderPractice {json.dumps(rget(rt, 'probe.renderPractice', {}))[:200]}"]),
+        rt_check("rendered: every view, no JS errors", lambda rt: rget(rt, "probe.views.failures", []) + rget(rt, "probe.errors", []) + rget(rt, "probe.jsErrors", [])),
+    ]
+
+
+def rapid_checks(tids, task):
+    return [
+        C("rapid: structure, bands, media, points", lambda ctx: [p for t in tids for p in rapid_problems(ctx["ct"], t, ctx["root"], task)]),
+        C("second model: rapid distractors", lambda ctx: xm_grade(ctx["ct"], "rapid", ",".join(tids))),
+        C("second model: rapid facts", lambda ctx: xm_fact(ctx["ct"], "rapid", ",".join(tids))),
+        C("figures touched by this task still reviewed (picture, facts, structure)", lambda ctx: xm_figs(ctx["ct"], figs_of(ctx["ct"], tids)) + xm_fact(ctx["ct"], "fig", ",".join(tids))
+          + [p for k in figs_of(ctx["ct"], tids) for p in fig_problems(k, ctx["ct"].figs[k])]),
+        C("second model: coverage still current for these topics", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
+        rt_check("rendered: rapid answered view", lambda rt: [] if all(rget(rt, f"probe.renderRapid.{k}") for k in ("wrongClickable", "whyRevealed", "catChip", "detailsOpen", "sayShown")) else [f"renderRapid {json.dumps(rget(rt, 'probe.renderRapid', {}))[:200]}"]),
+        rt_check("rendered: every view, no JS errors", lambda rt: rget(rt, "probe.views.failures", []) + rget(rt, "probe.errors", []) + rget(rt, "probe.jsErrors", [])),
+    ]
+
+
+def image_checks(tids, task, wave):
+    return [
+        C("images: files, size, licence, labels, distractors, placement", lambda ctx: image_problems(ctx["ct"], ctx["root"], tids, task, with_ann=False)),
+        C("every topic has an image (or a reasoned NO-IMAGE row)", lambda ctx: image_coverage_problems(ctx["ct"], ctx["root"], tids, task, wave)),
+        C("second model: the picture shows the claimed diagnosis", lambda ctx: xm_imgs(ctx["ct"], ctx["root"], imgs_of(ctx["ct"], tids))),
+        C("second model: image facts", lambda ctx: xm_fact(ctx["ct"], "img", ",".join(tids))),
+        C("second model: spot distractors", lambda ctx: xm_grade(ctx["ct"], "spot", ",".join(tids))),
+        C("second model: coverage re-run with the placed images", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
+        rt_check("rendered: images decode", lambda rt: [k for k in rget(rt, "probe.images.broken", []) if any(k.startswith(t + "_") for t in tids)]),
+    ]
+
+
+def overlay_checks(tids, task):
+    return [
+        C("overlays: designed, cross-reviewed, applied as reviewed", lambda ctx: overlay_problems(ctx["ct"], ctx["root"], imgs_of(ctx["ct"], tids), task)),
+        C("overlay geometry and labels", lambda ctx: image_problems(ctx["ct"], ctx["root"], tids, "-", with_ann=True)),
+        C("second model re-run on the labelled images (picture, facts)", lambda ctx: xm_imgs(ctx["ct"], ctx["root"], imgs_of(ctx["ct"], tids)) + xm_fact(ctx["ct"], "img", ",".join(tids))),
+        C("second model: coverage re-run with the image labels", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
+        rt_check("rendered: spot view and overlay kinds", lambda rt: ([] if rget(rt, "probe.renderSpot.filledShapes", 1) == 0 else ["filled shapes"]) + [f"kind {k} does not render" for k, v in rget(rt, "probe.renderSpot.kindRender", {}).items() if v is not True]),
+    ]
+
+
+def drill_checks(tids):
+    return [
+        C("drills: every topic has one; items, whys, balance", lambda ctx: drill_problems(ctx["ct"], tids)),
+        C("second model: drill facts", lambda ctx: xm_fact(ctx["ct"], "drill", ",".join(tids))),
+        rt_check("rendered: drill end screens clickable", lambda rt: [] if (rget(rt, "probe.renderDrill.itemsClickable", 0) >= 10 and rget(rt, "probe.renderDrill.whyRevealed") and rget(rt, "probe.renderDrill.orderClickable", 0) >= 5) else [f"renderDrill {json.dumps(rget(rt, 'probe.renderDrill', {}))[:200]}"]),
+    ]
+
+
+def engine_rt(name, keys: list[tuple[str, object]]):
+    """Engine checks read probe fields: (path, expected) where expected is a value or a predicate."""
+    def fn(rt):
+        out = []
+        for path, exp in keys:
+            v = rget(rt, path)
+            ok = exp(v) if callable(exp) else v == exp
+            if not ok:
+                out.append(f"{path} = {json.dumps(v)[:80]}")
+        return out
+    return rt_check(name, fn)
+
+
+def engine_src(name, pats_present=(), pats_absent=()):
+    def fn(ctx):
+        eng = ctx["root"] / "engine"
+        src = "".join((eng / f).read_text(encoding="utf-8", errors="replace") for f in ("shell.html", "engine.js", "selftest.js") if (eng / f).is_file())
+        code = re.sub(r"/\*.*?\*/|(?<![:\"'])//[^\n]*", "", src, flags=re.S)
+        out = [f"missing: {p}" for p in pats_present if not re.search(p, code)]
+        out += [f"still present: {p} ({re.search(p, code).group(0)[:40]})" for p in pats_absent if re.search(p, code)]
+        return out
+    return C(name, fn)
+
+
+CARDIO_DENY = [r"The Cardio Path", r"\bCardiovascular\b", r"\bcardio\b(?!-path)", r"\bECG to classify\b", r"Cardio comes back", r"infarct-timeline",
+               r"S\.cur\s*=\s*\"f1\"", r"S\.stage\[\"p0\"\]", r"set:\[\+id\]", r"\"ABCD\"\[", r"wrong[^;\n]{0,24}\.slice\(0,\s*3\)", r"three options", r"Step 1 in <b>",
+               r"__cardioAudit"]
+
+
+# ============================================================================
+# the task registry
+# ============================================================================
+class Task:
+    def __init__(self, tid, title, checks, owns=(), par=False, kind="content", rules=None, doc_regex=None, droppable=False, sample=None):
+        self.id, self.title, self.checks, self.owns, self.par = tid, title, checks, list(owns), par
+        self.kind, self.rules, self.doc_regex, self.droppable, self.sample = kind, rules or {}, doc_regex, droppable, sample
+
+
+TASKS: dict[str, Task] = {}
+
+
+def add(t: Task):
+    TASKS[t.id] = t
+
+
+def V(ph, sample):
+    add(Task(f"P{ph}.V", f"Phase {ph} verification by a fresh verifier (token + seeded sample + real clicks)", [], kind="verify", sample=sample))
+
+
+def doc_file(path, pred, msg):
+    def f(ctx):
+        p = ctx["root"] / path
+        if not p.is_file():
+            return False, f"{path} missing"
+        return (bool(pred(p.read_text(encoding="utf-8", errors="replace"))), msg)
+    f.label = msg
+    return f
+
+
+def f_exists(path, msg):
+    return lambda ctx: ((ctx["root"] / path).is_file() or (ROOT / path).is_file(), msg)
+
+
+# ---- P0: claim and prove the tooling ---------------------------------------
+add(Task("P0.1", "Claim (.repro-active); gate self-test: demo catches every faked row; probe clean on the cardio reference", [
+    lambda ctx: ((ROOT / ".repro-active").is_file(), ".repro-active exists"),
+    lambda ctx: ((lambda s: (bool(s) and s.get("demoAllCaught") is True and s.get("probeReferenceErrors") == [], f"gate self-test: demo all caught {s.get('demoAllCaught') if s else None}, probe errors {s.get('probeReferenceErrors') if s else None}"))(load_json(STATE / "selftest-gate.json"))),
+], kind="orchestrator"))
+add(Task("P0.2", "Second models answer and are calibrated (planted-error sets): GPT for all five checks, Gemini for fact-check and grading", [
+    lambda ctx: ((lambda bad: (not bad, "calibrated: " + (", ".join(bad) + " NOT passed" if bad else "codex x5, gemini x2")))(
+        [f"{w}-{p}" for w, p in [(w, "codex") for w in ("factcheck", "grade", "coverage", "figreview", "imgverify")] + [("factcheck", "gemini"), ("grade", "gemini")] if not calibrated(w, p)])),
+], kind="orchestrator"))
+add(Task("P0.3", "Baseline: lock main, record BASELINE and GATE sha in the ledger", [
+    lambda ctx: (LOCK.is_file(), "main is locked (.repro/lock.json)"),
+    lambda ctx: (re.search(r"GATE(?:-CHANGE)?\s+sha:" + gate_sha(), ctx["ledger"]) is not None, f"ledger records GATE sha:{gate_sha()} (BASELINE or a GATE-CHANGE note)"),
+], kind="orchestrator"))
+
+# ---- P1: scope ---------------------------------------------------------------
+def objective_count_ok(ctx):
+    o = rc.objectives(ctx["root"] / "scope")
+    base = [k for k in o if not k.startswith("BICEP-")]
+    bic = {k.rsplit(".", 1)[0] for k in o if k.startswith("BICEP-")}
+    return (len(base) >= 326 and len(bic) >= 5, f"{len(base)} lecture objectives (>= 326, original IDs kept) and {len(bic)} BiCEP cases with objectives (>= 5)")
+
+
+add(Task("P1.1", "Canvas scope: verify 41 sessions/326 objectives; add BiCEP learning objectives; weekly-quiz topic signals", [
+    objective_count_ok,
+    doc_file("scope/QUIZ-SIGNALS.md", lambda s: len(re.findall(r"^\|\s*(?:\d{6})\s*\|", s, re.M)) >= 6, "scope/QUIZ-SIGNALS.md has a row per weekly quiz (>= 6)"),
+], owns=["scope/CANVAS-SCOPE.md", "scope/QUIZ-SIGNALS.md", "audit/P1.1.md"], par=True, kind="doc"))
+
+
+def lecture_files_ok(ctx):
+    scope = (ctx["root"] / "scope" / "CANVAS-SCOPE.md").read_text(encoding="utf-8")
+    ids = sorted(set(re.findall(r"^\s+FILE (\d+/\d+) \|", scope, re.M)))
+    skip = {}
+    p = ctx["root"] / "scope" / "LECTURE-FILES.md"
+    if p.is_file():
+        for m in re.finditer(r"^\|\s*(\d+/\d+)\s*\|\s*SKIP\s*\|\s*([^|]{20,}?)\s*\|", p.read_text(encoding="utf-8"), re.M):
+            skip[m.group(1)] = m.group(2)
+    got, missing = 0, []
+    for i in ids:
+        f = ctx["root"] / "scope" / "lectures" / (i.replace("/", "_") + ".md")
+        if f.is_file() and rc.wc(f.read_text(encoding="utf-8", errors="replace")) >= 150:
+            got += 1
+        elif i not in skip:
+            missing.append(i)
+    return (not missing and got >= 0.8 * len(ids), f"{got}/{len(ids)} lecture files extracted (>= 80%), the rest SKIP with reasons; missing: {missing[:6]}")
+
+
+add(Task("P1.2", "Lecture material: text of every lecture deck/handout/reading into scope/lectures/ (or a reasoned SKIP)", [lecture_files_ok],
+         owns=["scope/lectures/*", "scope/LECTURE-FILES.md", "audit/P1.2.md"], par=True, kind="doc"))
+
+
+def gaps_ok(ctx):
+    rec_dir = XM / "gaps"
+    P = []
+    doc = ctx["root"] / "scope" / "BP-GAPS.md"
+    text = doc.read_text(encoding="utf-8") if doc.is_file() else ""
+    bp = rc.blueprint(ctx["root"] / "scope")
+    for tid in TOPICS:
+        r = load_json(rec_dir / f"topic_{tid}.json")
+        if not r or not transcript_ok(r):
+            P.append(f"{tid}: no gap review (python xmodel.py gaps {tid})"); continue
+        for g in r.get("gaps") or []:
+            gid = g.get("gid")
+            m = re.search(r"^\|\s*" + re.escape(gid) + r"\s*\|\s*(ADDED|REJECTED)\s*\|\s*([^|]+?)\s*\|", text, re.M)
+            if not m:
+                P.append(f"{gid}: no row in scope/BP-GAPS.md")
+            elif m.group(1) == "ADDED" and not re.match(r"BP-(?:en|rp)\d+-\d+", m.group(2).strip()) or (m.group(1) == "ADDED" and m.group(2).strip() not in bp):
+                P.append(f"{gid}: ADDED row must name the new BP id that now exists")
+            elif m.group(1) == "REJECTED" and len(m.group(2)) < 20:
+                P.append(f"{gid}: REJECTED row needs a reason >= 20 chars")
+    return problems_fmt("blueprint gap review (every topic; every suggestion ADDED or REJECTED)", P)
+
+
+add(Task("P1.3", "Blueprint gap-finding: a second model lists missing Step 1 concepts per topic; each ADDED to the blueprint or REJECTED with a reason", [gaps_ok,
+    lambda ctx: (len(rc.blueprint(ctx["root"] / "scope")) >= 523, f"blueprint has {len(rc.blueprint(ctx['root'] / 'scope'))} items (>= 523; items are only ever added)")],
+    owns=["scope/STEP1-BLUEPRINT.md", "scope/BP-GAPS.md", "audit/P1.3.md"], kind="doc"))
+
+
+def topicmap_ok(ctx):
+    rows = rc.topic_map_rows(ctx["root"] / "scope")
+    objs = rc.objectives(ctx["root"] / "scope")
+    P = [f"{o}: no TOPIC-MAP row" for o in objs if o not in rows]
+    for o, r in rows.items():
+        if any(t not in TOPICS for t in r["topics"]):
+            P.append(f"{o}: unknown topic in {r['topics']}")
+        if not (2 <= len(r["terms"]) <= 4) or any(not all(len(a) >= 5 or a.isupper() or re.search(r"\d", a) for a in alts) for alts in r["terms"]):
+            P.append(f"{o}: needs 2-4 key terms (each >= 5 chars, or an abbreviation)")
+    return problems_fmt("TOPIC-MAP complete (every objective -> topic + 2-4 key terms)", P)
+
+
+def yield_ok(ctx):
+    yt = {}
+    p = ctx["root"] / "scope" / "YIELD.md"
+    if p.is_file():
+        for m in re.finditer(r"^\|\s*((?:en|rp)\d+)\s*\|\s*(hi|mid|lo)\s*\|\s*(hi|mid|lo)\s*\|\s*([^|]{15,}?)\s*\|", p.read_text(encoding="utf-8"), re.M):
+            yt[m.group(1)] = (m.group(2), m.group(3))
+    P = [f"{t}: no YIELD row with a reason" for t in TOPICS if t not in yt]
+    if yt:
+        n = len(yt)
+        if sum(1 for v in yt.values() if v[0] == "hi") > 0.7 * n or sum(1 for v in yt.values() if v[1] == "hi") > 0.7 * n:
+            P.append("an axis marks more than 70% of topics 'hi' (it then says nothing)")
+        if sum(1 for v in yt.values() if v[0] != v[1]) < 8:
+            P.append("the two axes agree on almost every topic (< 8 differ); they are different questions")
+    return problems_fmt("YIELD.md: Step 1 yield and course-exam likelihood per topic, both informative", P)
+
+
+add(Task("P1.4", "Topic map completed (key terms per objective) and the two yield axes (Step 1 / course final) set with reasons", [topicmap_ok, yield_ok],
+         owns=["scope/TOPIC-MAP.md", "scope/YIELD.md", "audit/P1.4.md"], kind="doc"))
+
+
+def concepts_vocab_ok(ctx):
+    c = rc.Content(ctx["root"]).concepts or {}
+    tags = c.get("tags") or []
+    P = []
+    if not 30 <= len(tags) <= 45:
+        P.append(f"{len(tags)} tags (30-45)")
+    P += [f"'{t}' not kebab-case" for t in tags if not re.match(r"^[a-z0-9]+(-[a-z0-9]+)*$", t)]
+    P += [f"'{t}' label must be 1-6 words" for t in tags if not inband(rc.wc((c.get("labels") or {}).get(t, "")), (1, 6))]
+    return problems_fmt("concept vocabulary (closed, reasoning-level, 30-45 tags with labels)", P)
+
+
+add(Task("P1.5", "Concept-tag vocabulary: 30-45 reasoning-level tags with 1-6 word labels", [concepts_vocab_ok],
+         owns=["content/concepts.json", "audit/P1.5.md"], kind="doc"))
+V(1, ("objective", 12))
+
+# ---- P2: engine --------------------------------------------------------------
+ENG = ["engine/*", "audit/P2.*"]
+
+
+EXTRACT_OUT = ("shell.html", "engine.js", "selftest.js", "REGIONS.json")
+REGION_CLASSES = ("ENGINE", "CONTENT", "PATCH", "MIXED", "LITERALS")
+
+
+def run_extract(eng: Path, src: Path, out: Path) -> tuple[bool, str]:
+    try:
+        r = subprocess.run([sys.executable, str(eng / "extract_engine.py"), "--src", str(src), "--out", str(out)], capture_output=True, text=True,
+                           encoding="utf-8", errors="replace", timeout=600)
+    except (subprocess.TimeoutExpired, OSError) as e:
+        return False, f"{type(e).__name__}: {e}"
+    return r.returncode == 0, (r.stdout + r.stderr)[-500:]
+
+
+def regions_of(p: Path) -> dict[str, dict]:
+    data = load_json(p) or {}
+    return {str(r.get("name")): r for r in data.get("regions") or [] if isinstance(r, dict)}
+
+
+def extraction_problems(root: Path, sub: str) -> list[str]:
+    """engine/<sub>/ holds a FROZEN copy of the cardio page and what extract_engine.py made from it;
+    re-running the script on the frozen copy must reproduce every output byte for byte."""
+    eng = root / "engine"
+    base = eng / sub
+    need = [eng / "extract_engine.py"] + [base / f for f in EXTRACT_OUT + ("cardio-source.html", "SOURCE.json")]
+    P = [f"{p.relative_to(root).as_posix()} missing" for p in need if not p.is_file()]
+    if P:
+        return P
+    src = load_json(base / "SOURCE.json") or {}
+    if src.get("sha256") != sha(base / "cardio-source.html", 64):
+        P.append(f"engine/{sub}/SOURCE.json sha256 does not match engine/{sub}/cardio-source.html")
+    regs = regions_of(base / "REGIONS.json")
+    if len(regs) < 60:
+        P.append(f"engine/{sub}/REGIONS.json lists {len(regs)} regions; it must list EVERY region of the cardio page (ENGINE-MAP §1a has 120+)")
+    bad = [n for n, r in regs.items() if r.get("class") not in REGION_CLASSES or not r.get("sha")]
+    if bad:
+        P.append(f"regions without a class in {REGION_CLASSES} or without a sha: {bad[:4]}")
+    tmp = Path(tempfile.mkdtemp(prefix="repro-extract-"))
+    try:
+        ok, log = run_extract(eng, base / "cardio-source.html", tmp)
+        if not ok:
+            P.append(f"extract_engine.py --src engine/{sub}/cardio-source.html failed: {log}")
+        else:
+            for f in EXTRACT_OUT:
+                if sha(tmp / f, 16) != sha(base / f, 16):
+                    P.append(f"re-running the extraction does not reproduce engine/{sub}/{f} (hand edits, or a non-deterministic script)")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    return P
+
+
+def extract_ok(ctx):
+    eng = ctx["root"] / "engine"
+    P = extraction_problems(ctx["root"], "base")
+    P += [f"engine/{f} missing" for f in ("shell.html", "engine.js", "selftest.js", "ENGINE-GLOBALS.md") if not (eng / f).is_file()]
+    return problems_fmt("engine extracted by script from a frozen cardio copy (reproducible, every region classified)", P)
+
+
+def rlist_ok(ctx):
+    """Every risk R<n> in docs/ENGINE-MAP.md §5 has a row in audit/P2.2.md: FIXED / NOT-APPLICABLE / CONTENT-RULE + how."""
+    ids = re.findall(r"^- \*\*(R\d+)\.", (ROOT / "docs" / "ENGINE-MAP.md").read_text(encoding="utf-8"), re.M)
+    p = ctx["root"] / "audit" / "P2.2.md"
+    txt = p.read_text(encoding="utf-8") if p.is_file() else ""
+    miss = [r for r in ids if not re.search(r"^\|\s*" + r + r"\s*\|\s*(FIXED|NOT-APPLICABLE|CONTENT-RULE)\s*\|\s*[^|]{20,}\|", txt, re.M)]
+    return (not miss, f"audit/P2.2.md answers all {len(ids)} ENGINE-MAP risks (FIXED / NOT-APPLICABLE / CONTENT-RULE + how)" + (f"; missing {miss[:8]}" if miss else ""))
+
+
+def stub_rt_ctx(ctx, fixture="stub"):
+    eng = ctx["root"] / "engine"
+    return runtime(ROOT / "fixtures" / fixture, engine=eng if (eng / "shell.html").is_file() else None, cache_only=not ctx.get("want_rt", True))
+
+
+def stub_check(name, fn, fixture="stub"):
+    def f(ctx):
+        key = "rt_" + fixture
+        rt = ctx.get(key) or stub_rt_ctx(ctx, fixture)
+        ctx[key] = rt
+        if not rt:
+            if not ctx.get("want_rt", True):
+                return False, f"{name}: runtime unavailable (not cached; the Stop hook never launches Chrome)"
+            return False, f"{name}: {fixture} page did not build or probe (python build.py --root fixtures/{fixture} --engine <your workspace>/engine --out .repro/runtime/{fixture}.html)"
+        return problems_fmt(name, fn(rt))
+    f.label = name
+    return f
+
+
+def pacing_problems(rt, need_all=False):
+    """The pacing promise: finish on day N when the pace is N days. The stub has only a few stages, so it is held to
+    every N no larger than its stage count; real content (need_all) must hit every N the probe tries."""
+    pace = rget(rt, "probe.pacing.paceDays", {}) or {}
+    stages = rget(rt, "probe.counts.path", 0) or 0
+    bad = [f"pace {k} days -> finished day {v}" for k, v in pace.items() if (need_all or int(k) <= stages) and int(k) != v]
+    return bad + ([] if pace else ["probe.pacing missing"])
+
+
+BIAS_MAX = 18.47   # chi-square, 4 df, p = 0.001: a real positional cue scores in the hundreds; 9.49 (p = .05) flakes on 4 seeds
+
+
+def fields(rt, keys):
+    out = []
+    for path, exp in keys:
+        v = rget(rt, path)
+        if not (exp(v) if callable(exp) else v == exp):
+            out.append(f"{path} = {json.dumps(v)[:70]}")
+    return out
+
+
+PRACTICE_KEYS = ("wrongClickable", "whyRevealed", "whyMatches", "pickedWhyOpen", "ariaExpanded", "tableShown", "tableKeyRow", "blShown", "sayShown",
+                 "detailsOpen", "keyboardPick", "confidenceGate", "summaryExpandable", "liveVerdict", "flagControl")
+RAPID_KEYS = ("wrongClickable", "whyRevealed", "whyMatches", "pickedWhyOpen", "ariaExpanded", "catChip", "detailsOpen", "sayShown", "pickRecorded", "keyboardPick", "liveVerdict")
+SPOT_KEYS = ("wrongClickable", "whyRevealed", "whyMatches", "pickedWhyOpen", "hideMarkup", "credit", "liveVerdict")
+
+add(Task("P2.1", "Extract the engine from a frozen copy of the cardio page by script (every region classified, fail-loud), build the stub, probe clean", [
+    extract_ok,
+    engine_src("no cardio brand literals left in the engine", pats_absent=CARDIO_DENY[:5]),
+    stub_check("stub page: loads, every view renders, the probe runs clean", lambda rt: fields(rt, [("probe.errors", []), ("probe.jsErrors", []), ("probe.views.failures", [])])),
+    stub_check("stub-partial page: a topic with no items and no stage yet still renders everywhere (the mid-wave state)",
+               lambda rt: fields(rt, [("probe.errors", []), ("probe.jsErrors", []), ("probe.views.failures", []), ("probe.counts.topics", 3)]), fixture="stub-partial"),
+], owns=ENG, kind="engine"))
+add(Task("P2.2", "Generalize and repair the engine: META-driven strings/palette/exam date, two yield axes, every ENGINE-MAP risk R1-R31 answered", [
+    rlist_ok,
+    engine_src("engine generalized", pats_present=[r"let\s+AUTOGLOSS_USED|var\s+AUTOGLOSS_USED", r"META\.examName", r"META\.title", r"META\.examDefault", r"yAxis"], pats_absent=CARDIO_DENY),
+    stub_check("stub page: exam date, yield axes, a11y, pacing, bias, own self-test", lambda rt: fields(rt, [("probe.yieldAxes.axisToggle", True), ("probe.examPast.bannerShown", True), ("probe.examPast.ceilingInPast", False),
+        ("probe.a11y.htmlLang", "en"), ("probe.a11y.titleTags", 1), ("probe.a11y.liveRegion", True), ("probe.a11y.focusAfterRender", lambda v: v != "BODY"),
+        ("probe.pageSelftest.ok", True), ("probe.counts.meta.key", "stubrepro"), ("probe.counts.title", "The Stub Path")]) + pacing_problems(rt)),
+], owns=ENG, kind="engine"))
+add(Task("P2.3", "Practice and rapid contracts (PLAN-2 §8): clickable whys, picked-why-first, table, bottom line, pointed visual, set summary, keyboard", [
+    stub_check("stub page: practice answered view", lambda rt: fields(rt, [(f"probe.renderPractice.{k}", True) for k in PRACTICE_KEYS]
+        + [("probe.renderPractice.summaryRows", 2), ("probe.renderPractice.highlightCount", lambda v: (v or 0) >= 1), ("probe.renderPractice.optionsRendered", 5)])),
+    stub_check("stub page: rapid answered view", lambda rt: fields(rt, [(f"probe.renderRapid.{k}", True) for k in RAPID_KEYS]
+        + [("probe.renderRapid.optionsRendered", 5), ("probe.renderRapid.highlightCount", lambda v: (v or 0) >= 1)])),
+], owns=ENG, kind="engine"))
+add(Task("P2.4", "Spot, drill and pretest contracts: 5-option spot with why-click, clickable drill end screens incl. order steps, pretest per-option whys", [
+    stub_check("stub page: spot", lambda rt: fields(rt, [("probe.renderSpot.optionsRendered", 5)] + [(f"probe.renderSpot.{k}", True) for k in SPOT_KEYS])),
+    stub_check("stub page: drills", lambda rt: fields(rt, [("probe.renderDrill.itemsClickable", lambda v: (v or 0) >= 10), ("probe.renderDrill.whyRevealed", True), ("probe.renderDrill.orderClickable", lambda v: (v or 0) >= 5), ("probe.renderDrill.multiClickable", lambda v: (v or 0) >= 12)])),
+    stub_check("stub page: learn view (pretest, sexp, grid, cloze, glossary)", lambda rt: fields(rt, [(f"probe.renderLearn.{k}", True) for k in ("pretestWhy", "pretestWrongSpecific", "sexpAnswered", "gridScored", "glossPopup")]
+        + [("probe.renderLearn.clozeBlanks", lambda v: (v or 0) >= 3), ("probe.renderLearn.sexp", lambda v: (v or 0) >= 1), ("probe.renderLearn.vis", 1), ("probe.renderLearn.why", lambda v: (v or 0) >= 1)])),
+], owns=ENG, kind="engine"))
+add(Task("P2.5", "Overlay kinds + show-all, figure legibility (inline >= 9 px, lightbox >= 10 px and pannable at 400), FIGS.teach, search, rapid confusions, 400 px", [
+    stub_check("stub page: overlay renderer", lambda rt: fields(rt, [("probe.renderSpot.filledShapes", 0), ("probe.renderSpot.showAllToggle", True), ("probe.renderSpot.pinsRendered", lambda v: (v or 0) >= 1)])
+        + [f"kind {k} = {v}" for k, v in rget(rt, "probe.renderSpot.kindRender", {}).items() if v is not True] + ([] if len(rget(rt, "probe.renderSpot.kindRender", {})) == 9 else ["kindRender missing kinds"])),
+    stub_check("stub page: figures legible at 1280; lightbox at 400", lambda rt: fields(rt, [("probe.figs.below9", []), ("probe.figs.overlaps", {}), ("probe.figs.clipped", {}), ("probe400.figs.lightbox.medianGlyph", lambda v: v is not None and v >= 10),
+        ("probe400.figs.lightbox.pan", lambda v: (v or 0) > 0), ("probe400.figs.lightbox.afterFitGlyph", lambda v: v is None or v >= 9)])),
+    stub_check("stub page: search, confusions, phone width", lambda rt: fields(rt, [(f"probe.search.{k}", True) for k in ("indexReadable", "whyFindable", "tableFindable", "bottomLineFindable", "rapidWhyFindable", "topicsIndexed")]
+        + [("probe.state.confusionsHasRapidKind", True), ("probe.state.repairKeepsLastPick", True), ("probe400.views.maxOverflow", lambda v: v is not None and v <= 1),
+           ("probe400.renderRapid.scrollOverflow", lambda v: v is not None and v <= 1), ("probe400.renderPractice.scrollOverflow", lambda v: v is not None and v <= 1), ("probe400.renderSpot.scrollOverflow", lambda v: v is not None and v <= 1)])),
+    engine_src("figure 'teach' text renders under a disclosure", pats_present=[r"\.teach[\s\S]{0,300}<details|teach[\s\S]{0,200}details"]),
+], owns=ENG, kind="engine"))
+add(Task("P2.6", "The page's own ?selftest=1 and __pathAudit generalized to any content (green on the stub); weak spots, threads, tutor, calendar, export", [
+    stub_check("stub page: own self-test and audit", lambda rt: fields(rt, [("probe.pageSelftest.present", True), ("probe.pageSelftest.ok", True), ("probe.pageSelftest.errors", []), ("probe.pageAudit.name", "__pathAudit"), ("probe.pageAudit.nonEmpty", [])])),
+    stub_check("stub page: weak spots, tutor, calendar, flags", lambda rt: fields(rt, [(f"probe.weak.{k}", True) for k in ("rendered", "threadsSection", "errorTypes", "proven")] + [("probe.tutor.degrades", True), ("probe.tutor.socratic", True)]
+        + [(f"probe.calendar.{k}", True) for k in ("strip", "pace", "examInput", "exportBtn")] + [("probe.state.exportHasFlags", True)])),
+    engine_src("self-test carries no cardio literals", pats_absent=CARDIO_DENY),
+], owns=ENG, kind="engine"))
+
+V(2, ("feature", 10))
+
+
+# ---- content phases (wave 1: P3-P7, wave 2: P9-P13) ---------------------------
+def content_phase(ph_topics, ph_images, ph_q, ph_r, ph_x, groups, wave, image_batches):
+    for i, g in enumerate(groups, 1):
+        tids = GROUPS[g]
+        tk = f"P{ph_topics}.{i}"
+        add(Task(tk, f"Topics {', '.join(tids)}: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed", topic_checks(tids, tk),
+                 owns=[f"content/topics/{t}.json" for t in tids] + [f"content/figs/{t}_*" for t in tids] + [f"content/glossary/{t}.json" for t in tids]
+                 + [f"content/guides/{t}.json" for t in tids] + [f"content/palace/pal_{t}_*" for t in tids] + [f"audit/{tk}.md"], par=True))
+    V(ph_topics, ("topic", 4))
+    for i, batch in enumerate(image_batches, 1):
+        tids = [t for g in batch for t in GROUPS[g]]
+        tk = f"P{ph_images}.{i}"
+        add(Task(tk, f"Images for {', '.join(tids)}: licensed, >= 800 px, verified by a second model, 4 look-alike distractors with whys, placed", image_checks(tids, tk, wave),
+                 owns=[f"content/images/{t}_*" for t in tids] + [f"{ASSETS}/{t}_*" for t in tids] + [f"content/topics/{t}.json" for t in tids] + [f"audit/{tk}.md"],
+                 par=True, rules={f"content/topics/{t}.json": "insert-only:img" for t in tids}))
+    n = len(image_batches)
+    add(Task(f"P{ph_images}.{n + 1}", "Overlays: designed by the bake-off winner (GPT or Gemini), reviewed from the rendered PNG by the other, applied exactly", overlay_checks([t for g in groups for t in GROUPS[g]], f"P{ph_images}.{n + 1}"),
+             owns=[f"content/images/{t}_*" for g in groups for t in GROUPS[g]] + [f"audit/P{ph_images}.{n + 1}.md"], rules={f"content/images/{t}_*": "field-only:ann" for g in groups for t in GROUPS[g]}))
+    V(ph_images, ("image", 8))
+    for i, g in enumerate(groups, 1):
+        tids = GROUPS[g]
+        tk = f"P{ph_q}.{i}"
+        add(Task(tk, f"Practice questions for {', '.join(tids)}: NBME-style, 5 options, whys, comparison table, bottom line, pointed visual", question_checks(tids, tk),
+                 owns=[f"content/questions/{t}.json" for t in tids] + [f"content/figs/{t}_*" for t in tids] + [f"audit/{tk}.md"], par=True))
+    V(ph_q, ("question", 14))
+    for i, g in enumerate(groups, 1):
+        tids = GROUPS[g]
+        tk = f"P{ph_r}.{i}"
+        add(Task(tk, f"Rapid review for {', '.join(tids)}: 5 plausible options, a why for each wrong one, a pinned visual that shows the answer", rapid_checks(tids, tk),
+                 owns=[f"content/rapid/{t}.json" for t in tids] + [f"content/figs/{t}_*" for t in tids] + [f"audit/{tk}.md"], par=True))
+    V(ph_r, ("rapid", 16))
+    wave_tids = [t for g in groups for t in GROUPS[g]]
+    size = -(-len(groups) // 3)
+    dgroups = [groups[i:i + size] for i in range(0, len(groups), size)]
+    for i, dg in enumerate(dgroups, 1):
+        tids = [t for g in dg for t in GROUPS[g]]
+        tk = f"P{ph_x}.{i}"
+        add(Task(tk, f"Drills for {', '.join(tids)}: sort / multi / order, a why for every item and step", drill_checks(tids),
+                 owns=[f"content/drills/d_{t}_*" for t in tids] + [f"audit/{tk}.md"], par=True))
+    k = len(dgroups)
+    add(Task(f"P{ph_x}.{k + 1}", f"Memory scenes for wave {wave} (>= {6 if wave == 1 else 4}), placed in their topics", [
+        C("memory scenes", lambda ctx, wt=wave_tids, w=wave: palace_problems(ctx["ct"], wt, 6 if w == 1 else 4)),
+        C("second model: memory-scene facts", lambda ctx, wt=wave_tids: xm_fact(ctx["ct"], "palace", ",".join(wt))),
+        C("second model: coverage re-run where scenes were placed", lambda ctx, wt=wave_tids, tk=f"P{ph_x}.{k + 1}": xm_coverage(ctx["ct"], wt, ctx["root"], tk))],
+        owns=[f"content/palace/pal_{t}_*" for t in wave_tids] + [f"content/topics/{t}.json" for t in wave_tids] + [f"audit/P{ph_x}.{k + 1}.md"],
+        rules={f"content/topics/{t}.json": "insert-only:palace" for t in wave_tids}))
+    all_tids = WAVE1 if wave == 1 else WAVE1 + WAVE2
+    add(Task(f"P{ph_x}.{k + 2}", "Concept homes and the study path (diag, unit stages, final); weak-spot threads work on real content", [
+        C("concept homes", lambda ctx, w=wave: concept_problems(ctx["ct"], all_tids, None if w == 1 else 0.6)),
+        C("study path", lambda ctx, at=all_tids: path_problems(ctx["ct"], at)),
+        close_only(rt_check("rendered: pacing promise, page self-test, weak spots on real content", lambda rt: pacing_problems(rt, need_all=True) + fields(rt, [("probe.pacing.reviewShare14", lambda v: v is not None and v <= 0.6),
+            ("probe.pageSelftest.ok", True), ("probe.pageAudit.nonEmpty", []), ("probe.weak.threadsSection", True), ("probe.views.failures", [])])))],
+        owns=["content/concepts.json", "content/path.json", f"audit/P{ph_x}.{k + 2}.md"], rules={"content/concepts.json": "field-only:home,labels"}))
+    V(ph_x, ("drill", 8))
+
+
+content_phase(3, 4, 5, 6, 7, ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10"], 1, [["G1", "G2"], ["G3", "G4"], ["G5", "G6"], ["G7", "G8"], ["G9", "G10"]])
+
+# ---- P8: wave-1 release ---------------------------------------------------------
+# The parity list is not typed from memory: F-ids are parsed from docs/ENGINE-MAP.md §2 (every feature of the
+# cardio page), K-ids are the PLAN-2 contracts (ENGINE-MAP §3 + PLAN-2 phases 2-5), N-ids are new in this block.
+CONTRACTS = {
+    "K1": "Rapid: 5 options, a why for each wrong option", "K2": "Rapid: wrong options stay clickable and toggle .optwhy; keyed option aria-disabled",
+    "K3": "Rapid: pointed visual (r.pt) highlights figure labels / image pins", "K4": "Rapid: category chip .rfcat", "K5": "Rapid: say-line .rfsay + deep review open",
+    "K6": "Rapid: lastPick/picks recorded; keys 1-5 and Enter", "K7": "Practice: wrong options clickable for their why; old list under details",
+    "K8": "Practice: comparison table (q.et, .tblwrap.et, .etkey)", "K9": "Practice: bottom line .qbl", "K10": "Practice: pointed visual q.pt, .qsay, deep review open",
+    "K11": "Practice: set summary with expandable rows", "K12": "Spot: 5 options, every wrong option clickable for its why",
+    "K13": "Drills: end screens with a why per item, order steps included", "K14": "Pretest: per-option why, picked why shown first",
+    "K15": "Overlays: nine kinds, nothing filled, show-all toggle, hide markup", "K16": "Images >= 800 px or KEEP-SMALL",
+    "K17": "Picked option's why opens first, aria-expanded (rapid, practice, spot)", "K18": "Figure 'teach' text under a disclosure",
+    "K19": "Search finds whys, tables, bottom lines, say-lines", "K20": "Weak Spots: rapid confusions", "K21": "Keyboard answering in practice and spot",
+    "K22": "Figures legible: >= 9 px inline at 1280, >= 10 px lightbox at 400, pannable",
+}
+NEW_FEATURES = {
+    "N1": "Two yield axes (Step 1 vs the course final) with a toggle", "N2": "Exam date defaults to the course final; passed-date guard",
+    "N3": "Self-explanation rows in the body with varied answer positions", "N4": "Phone width 400 px: no horizontal scroll in any view",
+    "N5": "Dark theme: every figure, overlay and table readable", "N6": "Hub: cardio and repro-endo rapid items share one due queue (same origin)",
+}
+
+
+def feature_ids() -> list[str]:
+    em = (ROOT / "docs" / "ENGINE-MAP.md").read_text(encoding="utf-8")
+    return re.findall(r"^- \*\*(F\d+)\.", em, re.M) + list(CONTRACTS) + list(NEW_FEATURES)
+
+
+def clickthrough(doc):
+    def f(ctx):
+        p = ctx["root"] / "audit" / doc
+        txt = p.read_text(encoding="utf-8", errors="replace") if p.is_file() else ""
+        ids = feature_ids()
+        miss = [s for s in ids if not re.search(r"^\|\s*" + re.escape(s) + r"\s*\|\s*PASS\s*\|\s*\S[^|]{40,}\|", txt, re.M)]
+        fails = re.findall(r"^\|\s*([FKN]\d+)\s*\|\s*FAIL\s*\|", txt, re.M)
+        return (not miss and not fails, f"audit/{doc}: a PASS row (>= 40 chars of what was clicked and seen) for all {len(ids)} features (F = cardio inventory, K = PLAN-2 contracts, N = new)"
+                + (f"; missing {miss[:8]}" if miss else "") + (f"; FAIL rows {fails[:8]}" if fails else ""))
+    f.label = "click-through parity"
+    return f
+
+
+add(Task("P8.1", "Wave-1 click-through: every cardio feature (F1-F42), PLAN-2 contract (K1-K22) and new feature (N1-N6), real clicks at 1280 and 400 px, both themes", [
+    clickthrough("CLICKTHROUGH-W1.md"),
+    close_only(rt_check("rendered: whole page clean", lambda rt: fields(rt, [("probe.errors", []), ("probe.jsErrors", []), ("probe.views.failures", []), ("probe.pageSelftest.ok", True), ("probe.pageAudit.nonEmpty", [])])))],
+    owns=["audit/CLICKTHROUGH-W1.md", "audit/P8.1.md"], kind="doc"))
+add(Task("P8.2", "Publish Version 1 (the reproductive half) as a NEW artifact (needs the user)", [
+    lambda ctx: (re.search(r"published:\s*\S+.*https://claude\.ai/", ctx["evidence"] or "") is not None, "evidence records 'published: <version> <artifact url>'")], kind="user"))
+add(Task("P8.3", "Live check of Version 1", [lambda ctx: (re.search(r"live-check:\s*\S", ctx["evidence"] or "") is not None, "evidence records 'live-check: ...'")], kind="user"))
+V(8, ("surface", 8))
+
+# ---- wave 2 ------------------------------------------------------------------------
+content_phase(9, 10, 11, 12, 13, ["G11", "G12", "G13", "G14", "G15", "G16"], 2, [["G11", "G12"], ["G13", "G14"], ["G15", "G16"]])
+
+
+# ---- P14: integration, engine re-sync, polish -------------------------------------
+def integration_problems(ct: rc.Content) -> list[str]:
+    P = []
+    qs = [q for _, q in ct.all_questions()]
+    if qs:
+        d = {1: 0, 2: 0, 3: 0}
+        for q in qs:
+            d[q.get("d", 2)] = d.get(q.get("d", 2), 0) + 1
+        if d[1] < 0.12 * len(qs) or max(d.values()) > 0.55 * len(qs):
+            P.append(f"difficulty across the block {d} (level 1 >= 12%, no level > 55%)")
+    stems = [(q.get("id"), q.get("s", ""), rc.strip(q["o"][q["a"]]).lower()) for q in qs if q.get("o")]
+    for i in range(len(stems)):
+        for j in range(i + 1, len(stems)):
+            if stems[i][2] == stems[j][2] and jacc(stems[i][1], stems[j][1]) >= 0.4:
+                P.append(f"{stems[i][0]} and {stems[j][0]}: same keyed answer and similar stems (near-duplicate across topics)")
+    sx = [b[1].get("a") for t in ct.topics.values() for b in t.get("body") or [] if isinstance(b, list) and b and b[0] == "sexp"]
+    if sx and max(sx.count(k) for k in range(4)) > 0.5 * len(sx):
+        P.append("self-explanation answers sit at one position > 50% of the time (a positional cue)")
+    channels = {}
+    for tid in TOPICS:
+        c = set()
+        if ct.questions.get(tid): c.add("q")
+        if ct.rapid.get(tid): c.add("r")
+        if any(d.get("c") == tid for d in ct.drills.values()): c.add("d")
+        if (ct.topics.get(tid) or {}).get("grid"): c.add("g")
+        if any(k.startswith(tid + "_") for k in ct.images): c.add("i")
+        if any(b[0] == "sexp" for b in (ct.topics.get(tid) or {}).get("body") or [] if isinstance(b, list) and b): c.add("s")
+        channels[tid] = c
+    short = [t for t, c in channels.items() if len(c) < 6]
+    if len(short) > len(TOPICS) - int(0.9 * len(TOPICS)):
+        P.append(f"{len(short)} topics lack one of the six mastery channels (>= 90% need all six): {short[:8]}")
+    return P
+
+
+def resync_ok(ctx):
+    """P14.1: engine/resync/ is a frozen copy of the CURRENT cardio page and its extraction; every non-content region that
+    differs from engine/base/ (the P2.1 snapshot) has a row PORTED / NOT-NEEDED / ALREADY in audit/ENGINE-RESYNC.md."""
+    root = ctx["root"]
+    P = extraction_problems(root, "resync")
+    live = CARDIO / "cardio-path.html"
+    if live.is_file() and sha(root / "engine" / "resync" / "cardio-source.html", 64) != sha(live, 64):
+        P.append("engine/resync/cardio-source.html is not the current cardio page: the cardio engine changed after the re-sync; port the new changes")
+    old, new = regions_of(root / "engine" / "base" / "REGIONS.json"), regions_of(root / "engine" / "resync" / "REGIONS.json")
+    changed = sorted(n for n in set(old) | set(new)
+                     if (old.get(n) or {}).get("sha") != (new.get(n) or {}).get("sha") and ((new.get(n) or old.get(n) or {}).get("class") != "CONTENT"))
+    p = root / "audit" / "ENGINE-RESYNC.md"
+    txt = p.read_text(encoding="utf-8") if p.is_file() else ""
+    miss = [n for n in changed if not re.search(r"^\|\s*" + re.escape(n) + r"\s*\|\s*(PORTED|NOT-NEEDED|ALREADY)\s*\|\s*[^|]{15,}\|", txt, re.M)]
+    if miss:
+        P.append(f"{len(miss)} changed cardio engine region(s) with no PORTED/NOT-NEEDED/ALREADY row: {miss[:6]}")
+    return problems_fmt(f"engine re-sync ({len(changed)} changed cardio regions, each answered)", P)
+
+
+add(Task("P14.1", "Engine re-sync with the final cardio engine: every cardio region that changed since P2.1 ported or reasoned out (computed, not remembered)", [
+    resync_ok,
+    rt_check("rendered: every engine contract still holds on real content", lambda rt: fields(rt, [(f"probe.renderPractice.{k}", True) for k in PRACTICE_KEYS]
+        + [(f"probe.renderRapid.{k}", True) for k in RAPID_KEYS] + [(f"probe.renderSpot.{k}", True) for k in SPOT_KEYS]
+        + [("probe.renderSpot.optionsRendered", 5), ("probe.renderSpot.showAllToggle", True), ("probe.pageSelftest.ok", True), ("probe.pageAudit.nonEmpty", [])])),
+    stub_check("stub page still green with the re-synced engine", lambda rt: fields(rt, [("probe.errors", []), ("probe.jsErrors", []), ("probe.views.failures", []), ("probe.pageSelftest.ok", True)]))],
+    owns=ENG + ["audit/ENGINE-RESYNC.md", "audit/P14.1.md"], kind="engine"))
+add(Task("P14.2", "Whole-block integration: cross-topic duplicates, difficulty spread, mastery channels, glossary reach, threads across waves", [
+    C("integration", lambda ctx: integration_problems(ctx["ct"])),
+    C("concept threads cross topics", lambda ctx: concept_problems(ctx["ct"], WAVE1 + WAVE2, 0.6)),
+    rt_check("rendered: glossary reach, search, pacing, self-test", lambda rt: fields(rt, [("probe.topics.neverLinked", lambda v: v is not None and len(v) <= max(2, int(0.02 * max(1, rget(rt, "probe.counts.gloss", 1))))),
+        ("probe.search.topicsIndexed", True), ("probe.pageSelftest.ok", True), ("probe.bias.max", lambda v: v is not None and v < BIAS_MAX)]) + pacing_problems(rt, need_all=True)),
+    doc_file("audit/P14.2.md", lambda s: True, "audit/P14.2.md lists every file this task changed with a reason")],
+    owns=["content/*", "audit/P14.2.md"], rules={"content/*": "reason-per-file"}))
+add(Task("P14.3", "Accessibility, legibility and phone width across the whole block (every figure, every view, both themes)", [
+    rt_check("rendered: a11y + legibility + 400 px", lambda rt: fields(rt, [("probe.a11y.focusAfterRender", lambda v: v != "BODY"), ("probe.figs.below9", []), ("probe.figs.overlaps", {}), ("probe.figs.clipped", {}),
+        ("probe400.figs.lightbox.medianGlyph", lambda v: v is not None and v >= 10), ("probe400.views.maxOverflow", lambda v: v is not None and v <= 1), ("probe.renderPractice.liveVerdict", True), ("probe.renderRapid.liveVerdict", True), ("probe.renderSpot.liveVerdict", True)])),
+    doc_file("audit/P14.3.md", lambda s: True, "audit/P14.3.md lists every file this task changed with a reason")],
+    owns=ENG + ["content/figs/*", "audit/P14.3.md"], rules={"content/figs/*": "reason-per-file"}))
+V(14, ("feature", 10))
+
+# ---- P15: ship -----------------------------------------------------------------------
+add(Task("P15.1", "Final click-through: every feature F/K/N over both waves, real clicks at 1280 and 400 px, both themes -> audit/CLICKTHROUGH-FINAL.md", [
+    clickthrough("CLICKTHROUGH-FINAL.md"),
+    rt_check("rendered: whole page clean", lambda rt: fields(rt, [("probe.errors", []), ("probe.jsErrors", []), ("probe.views.failures", []), ("probe.pageSelftest.ok", True), ("probe.pageAudit.nonEmpty", [])]))],
+    owns=["audit/CLICKTHROUGH-FINAL.md", "audit/P15.1.md"], kind="doc"))
+add(Task("P15.2", "Publish Version 2 (the whole block) to the SAME artifact URL as Version 1 (needs the user)", [
+    lambda ctx: (re.search(r"published:\s*\S+.*https://claude\.ai/", ctx["evidence"] or "") is not None, "evidence records 'published: <version> <artifact url>'")], kind="user"))
+add(Task("P15.3", "Live check of Version 2", [lambda ctx: (re.search(r"live-check:\s*\S", ctx["evidence"] or "") is not None, "evidence records 'live-check: ...'")], kind="user"))
+add(Task("P15.V", "Reconciliation: every task listed with its final status; every phase token refreshed; create .repro-complete", [
+    lambda ctx: (re.search(r"reconciled:\s*\d+ tasks", ctx["evidence"] or "") is not None, "evidence 'reconciled: N tasks (...)'")], kind="verify"))
+
+DROPPABLE: set[str] = set()
+# BLOCKED is for work that needs the user (downloads, publishing, a licence decision) or an outside service that is down
+# after three tries. Any other task is fixed, not blocked; a stuck implementer escalates to the orchestrator.
+BLOCKABLE = {"P0.2", "P1.1", "P1.2", "P8.2", "P8.3", "P15.2", "P15.3"} | {t for t in TASKS if phase_of(t) in (4, 10) and not is_verify(t)}
+
+
+# ============================================================================
+# ledger
+# ============================================================================
+def parse_ledger(path=None):
+    p = path or LEDGER
+    if not p.is_file():
+        return None, {}
+    text = p.read_text(encoding="utf-8", errors="replace")
+    rows = {}
+    for m in ROW.finditer(text):
+        rows[m.group(1)] = {"title": m.group(2).strip(), "status": m.group(3), "evidence": m.group(4).strip(), "verified": m.group(5).strip()}
+    return text, rows
+
+
+def set_row(tid, status, evidence, verified=None, path=None):
+    p = path or LEDGER
+    text = p.read_text(encoding="utf-8")
+    evidence = evidence.replace("|", "/").replace("\n", " ")
+    pat = re.compile(r"^(\|\s*" + re.escape(tid) + r"\s*\|[^|]*\|)\s*\w+\s*\|[^|]*\|([^|]*)\|\s*$", re.M)
+    m = pat.search(text)
+    if not m:
+        raise SystemExit(f"{tid}: no ledger row")
+    ver = verified if verified is not None else m.group(2).strip()
+    text = text[:m.start()] + f"{m.group(1)} {status} | {evidence} | {ver} |" + text[m.end():]
+    p.write_text(text, encoding="utf-8", newline="\n")
+
+
+def append_note(line, path=None):
+    p = path or LEDGER
+    t = p.read_text(encoding="utf-8").rstrip("\n") + "\n- " + time.strftime("%Y-%m-%d") + " " + line.replace("\n", " ") + "\n"
+    p.write_text(t, encoding="utf-8", newline="\n")
+
+
+# ============================================================================
+# running checks
+# ============================================================================
+def run_checks(tid, root: Path, rt=None, ledger_text="", evidence="", want_rt=True, revalidate=False):
+    """revalidate=True (validate, the Stop hook, the post-merge regression pass) skips checks marked close_only:
+    page-wide release checks of wave 1 that wave-2 work-in-progress legitimately changes; P14/P15 re-establish them."""
+    task = TASKS[tid]
+    ct = rc.Content(root)
+    ctx = {"root": root, "ct": ct, "rt": rt, "ledger": ledger_text, "evidence": evidence, "task": tid, "want_rt": want_rt}
+    needs_rt = any("runtime" in getattr(c, "__name__", "") or getattr(c, "label", "").startswith("rendered") for c in task.checks)
+    if want_rt and rt is None and needs_rt:
+        ctx["rt"] = runtime(root)
+    out = []
+    if ct.errors:
+        out.append((False, "content JSON invalid: " + "; ".join(ct.errors[:3])))
+    for chk in task.checks:
+        if revalidate and getattr(chk, "close_only", False):
+            continue
+        try:
+            ok, msg = chk(ctx)
+        except Exception as e:  # a broken check must never pass
+            ok, msg = False, f"check raised {type(e).__name__}: {e}"
+        out.append((bool(ok), msg))
+    return out
+
+
+def verify_token(ph: int) -> str:
+    files = tree_files(ROOT)
+    return hashlib.sha256(f"{tree_hash(files)}|{sha(ROOT / PAGE, 16)}|P{ph}|repro".encode()).hexdigest()[:10]
+
+
+def seeded_sample(ph: int) -> list[str]:
+    task = TASKS.get(f"P{ph}.V")
+    if not task or not task.sample:
+        return []
+    kind, n = task.sample
+    ct = rc.Content(ROOT)
+    tids = sorted({t for tk, tt in TASKS.items() if phase_of(tk) == ph and not is_verify(tk) for t in TOPICS if any(f"/{t}." in o or f"/{t}_" in o or f"_{t}_" in o for o in tt.owns)})
+    pool = {
+        "objective": list(rc.objectives()),
+        "feature": feature_ids(),
+        "topic": tids,
+        "image": [k for k in ct.images if any(k.startswith(t + "_") for t in tids)],
+        "question": [q["id"] for t in tids for q in ct.questions.get(t) or []],
+        "rapid": [r["id"] for t in tids for r in ct.rapid.get(t) or []],
+        "drill": [k for k in ct.drills if any(k.startswith(f"d_{t}_") for t in tids)] + [k for k in ct.palace if any(k.startswith(f"pal_{t}_") for t in tids)],
+        "surface": feature_ids(),
+    }.get(kind, [])
+    rnd = random.Random(f"{tree_hash(tree_files(ROOT))}|P{ph}")
+    picked = [f"{kind}:{x}" for x in rnd.sample(sorted(pool), min(n, len(pool)))]
+    # every rebuttal the other model upheld in this phase's topics goes to the verifier too (up to 6): a lenient judge is checked by a fresh reader
+    adj = []
+    for p in sorted((XM / "adjudicate").glob("*.json")) if (XM / "adjudicate").is_dir() else []:
+        if "@" in p.stem:
+            continue
+        a = load_json(p) or {}
+        k = str(a.get("key", "")) + ("#" + str(a.get("item")) if a.get("item") else "")
+        if a.get("ruling") == "rebuttal-upheld" and any(re.search(rf"(?<![a-z0-9]){t}(?![0-9])", k) for t in tids):
+            adj.append("adjudicated:" + re.sub(r"[^A-Za-z0-9_.:#-]", "_", f"{a.get('of')}-{k}"))
+    return picked + rnd.sample(adj, min(6, len(adj)))
+
+
+# ============================================================================
+# validation (what --next, --status and the Stop hook enforce)
+# ============================================================================
+def resumed() -> set[str]:
+    """Tasks resumed after being BLOCKED on the user (and the verification of their phase). They may run while later
+    phases are open: the user's answer arrived late, which is nobody's fault and must not stall the plan."""
+    return {p.name[:-len(".resumed")] for p in SNAP.glob("*.resumed")} if SNAP.is_dir() else set()
+
+
+def validate(rows, ledger_text, rt_main=None, check_done=True):
+    problems, notices = [], []
+    order = sorted(TASKS, key=sort_key)
+    res = resumed()
+    for tid in order:
+        if tid not in rows:
+            problems.append(f"{tid}: missing from REPRO-LEDGER.md (rows are never deleted)")
+    m = re.search(r"GATE\s+sha:([0-9a-f]{8})", ledger_text or "")
+    if m and m.group(1) != gate_sha() and not re.search(r"GATE-CHANGE\s+sha:" + gate_sha() + r"\s+reason:\s*\S", ledger_text or ""):
+        problems.append(f"GATE FILES CHANGED: recorded sha:{m.group(1)}, now sha:{gate_sha()}. Only the orchestrator may change the gate, with a Notes line 'GATE-CHANGE sha:{gate_sha()} reason: ...'")
+    lock = load_json(LOCK)
+    if lock:
+        cur = tree_hash(tree_files(ROOT))
+        if cur != lock.get("tree"):
+            problems.append(f"MAIN CHANGED OUTSIDE --close: tracked files hash {cur}, lock says {lock.get('tree')} (set by {lock.get('by')}). Every change goes through a task workspace; restore main from .repro/backups or re-run the change as a task")
+    inprog = [t for t in order if rows.get(t, {}).get("status") == "IN_PROGRESS"]
+    if len(inprog) > MAX_PAR:
+        problems.append(f"{len(inprog)} tasks IN_PROGRESS at once ({', '.join(inprog)}); the limit is {MAX_PAR}")
+    if any(not TASKS[t].par for t in inprog) and len(inprog) > 1:
+        problems.append(f"a non-parallel task is IN_PROGRESS alongside others ({', '.join(inprog)}); engine/document/integration tasks run alone")
+    for tid in order:
+        row = rows.get(tid)
+        if not row:
+            continue
+        st, ev = row["status"], row["evidence"]
+        ph = phase_of(tid)
+        if st in ("IN_PROGRESS", "DONE", "BLOCKED"):
+            prev = [t for t in order if phase_of(t) < ph and rows.get(t, {}).get("status") in ("NOT_STARTED", "IN_PROGRESS", None) and t not in res]
+            if prev and tid not in res:
+                problems.append(f"{tid}: {st} while an earlier phase is open ({', '.join(prev[:4])}); phases run in order")
+        if st == "IN_PROGRESS" and TASKS[tid].kind not in ("verify", "user", "orchestrator") and not (SNAP / f"{tid}.start.json").is_file():
+            problems.append(f"{tid}: IN_PROGRESS without a workspace (python check_repro.py --start {tid})")
+        if st == "DONE":
+            if TASKS[tid].kind not in ("verify", "user", "orchestrator"):
+                done = load_json(SNAP / f"{tid}.done.json")
+                if not done:
+                    problems.append(f"{tid}: DONE but never closed through --close (the row was written by hand)")
+                elif f"closed:{done.get('closeId')}" not in ev:
+                    problems.append(f"{tid}: evidence lacks 'closed:{done.get('closeId')}' written by --close")
+            if is_verify(tid) and tid != "P15.V":
+                vrec = load_json(VERIFY / f"P{ph}.json") or {}
+                mm = re.search(r"verifier-run:\s*([0-9a-f]{10})", ev)
+                if not mm or mm.group(1) != vrec.get("token"):
+                    problems.append(f"{tid}: verifier token missing or not the one --verify P{ph} issued")
+                for sid in vrec.get("sample", []):
+                    short = sid.split(":", 1)[1]
+                    if not re.search(r"(?<![\w.])" + re.escape(short) + r"\s*=\s*(PASS|FAIL)", ev):
+                        problems.append(f"{tid}: sampled id '{sid}' has no =PASS/=FAIL verdict in the evidence"); break
+                if not re.search(r"clicked:\s*\S", ev):
+                    problems.append(f"{tid}: evidence lacks 'clicked:'")
+                if re.search(r"=FAIL", ev):
+                    problems.append(f"{tid}: the verifier FAILED sampled items; reopen the owning task(s) (--reopen) and re-verify")
+            if check_done:
+                for ok, msg in run_checks(tid, ROOT, rt_main, ledger_text, ev, want_rt=rt_main is not None, revalidate=True):
+                    if not ok and not (rt_main is None and "runtime unavailable" in msg):
+                        problems.append(f"{tid}: DONE but its check FAILS now -> {msg}")
+        elif st == "BLOCKED":
+            miss = [f for f in BLOCK_FIELDS if f.lower() not in ev.lower()]
+            if miss:
+                problems.append(f"{tid}: BLOCKED without {', '.join(miss)}")
+            if tid not in BLOCKABLE:
+                problems.append(f"{tid}: BLOCKED, but only tasks that need the user or an outside service may block ({', '.join(sorted(BLOCKABLE, key=sort_key)[:8])} ...); fix it, or the orchestrator records a GATE-CHANGE with the reason")
+        elif st == "DROPPED":
+            if tid not in DROPPABLE:
+                problems.append(f"{tid}: DROPPED but no task in this plan may be dropped")
+        if is_verify(tid) and st == "DONE":
+            open_sib = [t for t in order if phase_of(t) == ph and not is_verify(t) and rows.get(t, {}).get("status") in ("NOT_STARTED", "IN_PROGRESS")]
+            if open_sib:
+                problems.append(f"{tid}: verification DONE while {', '.join(open_sib)} are open")
+    outstanding = [t for t in order if rows.get(t, {}).get("status") in ("NOT_STARTED", "IN_PROGRESS", None)]
+    return problems, outstanding, notices
+
+
+def next_task(rows):
+    order = sorted(TASKS, key=sort_key)
+    res = resumed()
+    extra = [t for t in order if t in res and is_verify(t) and rows.get(t, {}).get("status") == "NOT_STARTED"
+             and not [x for x in order if phase_of(x) == phase_of(t) and not is_verify(x) and rows.get(x, {}).get("status") in ("NOT_STARTED", "IN_PROGRESS")]]
+    open_ = [t for t in order if rows.get(t, {}).get("status") in ("NOT_STARTED", "IN_PROGRESS", None) and t not in res]
+    if not open_:
+        return (extra[0] if extra else None), extra
+    ph = phase_of(open_[0])
+    same = [t for t in open_ if phase_of(t) == ph]
+    startable = []
+    inprog = [t for t in same if rows.get(t, {}).get("status") == "IN_PROGRESS"]
+    # a resumed task running from an earlier phase still counts toward the parallel limit and the run-alone rule
+    inprog += [t for t in order if t in res and rows.get(t, {}).get("status") == "IN_PROGRESS"]
+    for t in same:
+        if rows.get(t, {}).get("status") == "IN_PROGRESS":
+            continue
+        if is_verify(t):
+            if not [x for x in same if not is_verify(x)] and not inprog:
+                startable.append(t)
+            continue
+        if TASKS[t].par and all(TASKS[x].par for x in inprog) and len(inprog) + len(startable) < MAX_PAR:
+            startable.append(t)
+        elif not inprog and not startable:
+            startable.append(t)
+            break
+        if not TASKS[t].par:
+            break
+    return open_[0], startable + [t for t in extra if t not in startable]
+
+
+# ============================================================================
+# workspaces: --start / --close / --reopen
+# ============================================================================
+def owned(task: Task, rel: str) -> bool:
+    return any(fnmatch.fnmatch(rel, pat) for pat in task.owns)
+
+
+def rule_for(task: Task, rel: str):
+    for pat, rule in task.rules.items():
+        if fnmatch.fnmatch(rel, pat):
+            return rule
+    return None
+
+
+def rule_violations(rule: str, old_p: Path, new_p: Path, rel: str, reasons: dict) -> list[str]:
+    if rule == "reason-per-file":
+        return [] if rel in reasons and len(reasons[rel]) >= 15 else [f"{rel}: changed without a '| {rel} | CHANGED | reason |' row in the task's audit file"]
+    old = load_json(old_p, None) if old_p.is_file() else None
+    new = load_json(new_p, None) if new_p.is_file() else None
+    if rule.startswith("insert-only:"):
+        kind = rule.split(":", 1)[1]
+        if old is None:
+            return [f"{rel}: may only gain ['{kind}', ...] rows, but the file is new"]
+        ob, nb = old.get("body") or [], [b for b in (new or {}).get("body") or [] if not (isinstance(b, list) and b and b[0] == kind and b not in (old.get("body") or []))]
+        if nb != ob or {k: v for k, v in (new or {}).items() if k != "body"} != {k: v for k, v in old.items() if k != "body"}:
+            return [f"{rel}: only insertions of ['{kind}', key] rows are allowed in this task; other content changed"]
+        return []
+    if rule.startswith("field-only:"):
+        allowed = set(rule.split(":", 1)[1].split(","))
+        if old is None or new is None:
+            return [f"{rel}: may only change fields {sorted(allowed)}; file created or deleted"]
+        diff = {k for k in set(old) | set(new) if old.get(k) != new.get(k)}
+        return [] if diff <= allowed else [f"{rel}: changed fields {sorted(diff - allowed)} (only {sorted(allowed)} allowed)"]
+    return []
+
+
+def copy_tree(src_root: Path, dst_root: Path):
+    for d in TRACKED:
+        s = src_root / d
+        if s.exists():
+            shutil.copytree(s, dst_root / d, dirs_exist_ok=True)
+
+
+def cmd_start(tid, fresh=False):
+    if tid not in TASKS:
+        print(f"unknown task {tid}"); return 1
+    task = TASKS[tid]
+    text, rows = parse_ledger()
+    if text is None:
+        print("REPRO-LEDGER.md missing"); return 1
+    if rows.get(tid, {}).get("status") == "DONE":
+        print(f"{tid} is DONE; use --reopen {tid} \"reason\" to fix it"); return 1
+    first, startable = next_task(rows)
+    if rows.get(tid, {}).get("status") == "BLOCKED":
+        SNAP.mkdir(parents=True, exist_ok=True)
+        (SNAP / f"{tid}.resumed").write_text(now(), encoding="utf-8")
+        vt = f"P{phase_of(tid)}.V"
+        if vt in TASKS and vt != tid and rows.get(vt, {}).get("status") == "DONE":
+            set_row(vt, "NOT_STARTED", f"re-verify: {tid} resumed from BLOCKED")
+            (VERIFY / f"P{phase_of(tid)}.json").unlink(missing_ok=True)
+            (SNAP / f"{vt}.resumed").write_text(now(), encoding="utf-8")
+            print(f"{vt} reset: the phase is re-verified once {tid} closes")
+        print(f"{tid} resumed from BLOCKED (it may run while later phases are open).")
+    elif tid not in startable and rows.get(tid, {}).get("status") != "IN_PROGRESS":
+        print(f"{tid} cannot start now. Startable: {', '.join(startable) or '(none)'}; first open task: {first}")
+        return 2
+    if task.kind in ("verify", "user", "orchestrator"):
+        set_row(tid, "IN_PROGRESS", rows[tid]["evidence"])
+        print(f"{tid} set IN_PROGRESS (no workspace for a {task.kind} task).")
+        return 0
+    w = ws_root(tid)
+    if rows.get(tid, {}).get("status") == "IN_PROGRESS" and w.exists() and (SNAP / f"{tid}.start.json").is_file() and not fresh:
+        print(f"{tid} is already IN_PROGRESS; its workspace is kept: {w}")
+        print(f"(to throw the work away and start over: python check_repro.py --start {tid} --fresh)")
+        print("OWNS:")
+        for p in task.owns:
+            print(f"   {p}")
+        return 0
+    if w.exists():
+        shutil.rmtree(w)
+    w.mkdir(parents=True)
+    copy_tree(ROOT, w)
+    rec = {"task": tid, "at": now(), "files": tree_files(ROOT), "tree": tree_hash(tree_files(ROOT))}
+    save_json(SNAP / f"{tid}.start.json", rec)
+    (SNAP / f"{tid}.done.json").unlink(missing_ok=True)
+    set_row(tid, "IN_PROGRESS", f"started {rec['at']} ws:{w.relative_to(ROOT).as_posix()}")
+    print(f"workspace for {tid}: {w}")
+    print("OWNS (only these files are merged back; everything else you change is discarded as drift):")
+    for p in task.owns:
+        print(f"   {p}")
+    for p, r in task.rules.items():
+        print(f"   rule {p}: {r}")
+    print(f"Self-check inside the workspace:  python check_repro.py --status {tid} --ws {tid}")
+    print(f"Build/preview the workspace page: python build.py --root {w.relative_to(ROOT).as_posix()}")
+    print(f"When the subagent returns:        python check_repro.py --close {tid}")
+    return 0
+
+
+def cmd_close(tid, ack_drift=False):
+    if tid not in TASKS:
+        print(f"unknown task {tid}"); return 1
+    task = TASKS[tid]
+    start = load_json(SNAP / f"{tid}.start.json")
+    w = ws_root(tid)
+    if not start or not w.exists():
+        print(f"no workspace for {tid}; run --start {tid} first"); return 1
+    main_now, ws_files = tree_files(ROOT), tree_files(w)
+    base = start["files"]
+    changed = sorted(r for r in set(ws_files) | set(base) if ws_files.get(r) != base.get(r))
+    own = [r for r in changed if owned(task, r)]
+    drift = [r for r in changed if not owned(task, r)]
+    conflicts = [r for r in own if main_now.get(r) != base.get(r)]
+    print(f"== closing {tid}: {len(own)} owned file(s) changed, {len(drift)} drift file(s), {len(conflicts)} conflict(s) ==")
+    if conflicts:
+        print("CONFLICT: main changed these owned files since --start (another close or a hand edit): " + ", ".join(conflicts[:8]))
+        return 2
+    if drift and not ack_drift:
+        print("DRIFT (changed outside this task's ownership; will be DISCARDED, never merged):")
+        for r in drift[:25]:
+            print(f"   {r}")
+        print(f"Read the list. If the task's own checks depend on any of these, it is not done. Re-run with --ack-drift to close and discard them.")
+        return 2
+    reasons = {}
+    ap = w / "audit" / f"{tid}.md"
+    if ap.is_file():
+        for m in re.finditer(r"^\|\s*([^|]+?)\s*\|\s*CHANGED\s*\|\s*([^|]+?)\s*\|", ap.read_text(encoding="utf-8"), re.M):
+            reasons[m.group(1)] = m.group(2)
+    viol = []
+    for r in own:
+        rule = rule_for(task, r)
+        if rule:
+            viol += rule_violations(rule, ROOT / r, w / r, r, reasons)
+    if viol:
+        print("SCOPE RULE VIOLATIONS (not merged):")
+        for v in viol[:20]:
+            print("   " + v)
+        return 2
+    if not own and task.checks:
+        print("WARNING: nothing owned changed. If this task produces content, nothing was done.")
+    print("checking inside the workspace ...")
+    res = run_checks(tid, w)
+    for ok, msg in res:
+        print(f"   {'ok ' if ok else 'XX '} {msg[:400]}")
+    if not all(ok for ok, _ in res):
+        print("\nCHECKS FAIL in the workspace: not merged. Send the failing lines back to the implementer (same workspace).")
+        return 2
+    stamp = time.strftime("%Y%m%d-%H%M%S")
+    bdir = BACKUPS / f"{tid}-{stamp}"
+    for r in own:
+        if (ROOT / r).is_file():
+            (bdir / r).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(ROOT / r, bdir / r)
+    save_json(bdir / "manifest.json", {"task": tid, "own": own, "existed": [r for r in own if (ROOT / r).is_file()]})
+    for r in own:
+        if (w / r).is_file():
+            (ROOT / r).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(w / r, ROOT / r)
+        elif (ROOT / r).is_file():
+            (ROOT / r).unlink()
+    print("merged; re-checking on main ...")
+    rt_main = runtime(ROOT)
+    res2 = run_checks(tid, ROOT, rt_main)
+    for ok, msg in res2:
+        print(f"   {'ok ' if ok else 'XX '} {msg[:400]}")
+    regress = []
+    if all(ok for ok, _ in res2):
+        print("regression pass: re-running the checks of every DONE task on the merged main ...")
+        _, rows_now = parse_ledger()
+        for t2 in sorted(TASKS, key=sort_key):
+            if t2 != tid and rows_now.get(t2, {}).get("status") == "DONE":
+                for ok, msg in run_checks(t2, ROOT, rt_main, LEDGER.read_text(encoding="utf-8"), rows_now[t2]["evidence"], want_rt=rt_main is not None, revalidate=True):
+                    if not ok and not (rt_main is None and "runtime unavailable" in msg):
+                        regress.append(f"{t2}: {msg[:300]}")
+        for r in regress[:20]:
+            print("   XX REGRESSION " + r)
+    if not all(ok for ok, _ in res2) or regress:
+        man = load_json(bdir / "manifest.json")
+        for r in man["own"]:
+            if r in man["existed"]:
+                shutil.copy2(bdir / r, ROOT / r)
+            elif (ROOT / r).is_file():
+                (ROOT / r).unlink()
+        print("\nCHECKS FAIL on main after the merge" + (" (this task broke DONE work listed above: refresh the records it staled, or change less)" if regress else " (an interaction with other merged work)") + ": main restored. Not closed.")
+        return 2
+    page, _ = build_page(ROOT)
+    files = tree_files(ROOT)
+    close_id = hashlib.sha256(f"{tid}|{tree_hash(files)}|{stamp}".encode()).hexdigest()[:8]
+    save_json(SNAP / f"{tid}.done.json", {"task": tid, "closeId": close_id, "at": now(), "own": own, "drift": drift, "tree": tree_hash(files), "page": sha(page) if page else None})
+    save_json(LOCK, {"tree": tree_hash(files), "by": f"--close {tid}", "at": now()})
+    ev = f"sha:{sha(page) if page else '--------'} tree:{tree_hash(files)} closed:{close_id} files:{len(own)} drift-discarded:{len(drift)} checks:{len(res2)}/{len(res2)}"
+    set_row(tid, "DONE", ev)
+    print(f"\nCLOSED {tid}. Ledger row written: {ev}")
+    return 0
+
+
+def cmd_reopen(tid, reason):
+    if tid not in TASKS or len(reason) < 15:
+        print("usage: --reopen <task> \"reason (>= 15 chars)\""); return 1
+    (SNAP / f"{tid}.done.json").unlink(missing_ok=True)
+    set_row(tid, "NOT_STARTED", f"reopened: {reason}")
+    append_note(f"{tid} reopened: {reason}")
+    vt = f"P{phase_of(tid)}.V"
+    _, rows = parse_ledger()
+    if vt in TASKS and vt != tid and rows.get(vt, {}).get("status") == "DONE":
+        set_row(vt, "NOT_STARTED", f"re-verify: {tid} was reopened")
+        (VERIFY / f"P{phase_of(tid)}.json").unlink(missing_ok=True)
+        print(f"{vt} reset to NOT_STARTED: the phase must be re-verified after {tid} closes again")
+    print(f"{tid} reopened (NOT_STARTED). Now: python check_repro.py --start {tid}")
+    return 0
+
+
+def cmd_block(tid, text):
+    miss = [f for f in BLOCK_FIELDS if f.lower() not in text.lower()]
+    if miss:
+        print(f"BLOCKED needs {', '.join(miss)}"); return 1
+    if tid not in BLOCKABLE:
+        print(f"{tid} may not be BLOCKED: only tasks that need the user or an outside service can block. Fix it (reopen, narrower dispatch), or record a GATE-CHANGE."); return 2
+    set_row(tid, "BLOCKED", text)
+    print(f"{tid} BLOCKED."); return 0
+
+
+def cmd_record(tid, text):
+    if tid not in TASKS:
+        print(f"unknown task {tid}"); return 1
+    task = TASKS[tid]
+    if task.kind not in ("verify", "user", "orchestrator"):
+        print(f"{tid} is closed by --close, not recorded by hand"); return 1
+    _, rows = parse_ledger()
+    ctx_ev = text
+    res = run_checks(tid, ROOT, None, LEDGER.read_text(encoding="utf-8"), ctx_ev, want_rt=False) if not is_verify(tid) else []
+    if is_verify(tid) and tid != "P15.V":
+        ph = phase_of(tid)
+        vrec = load_json(VERIFY / f"P{ph}.json") or {}
+        mm = re.search(r"verifier-run:\s*([0-9a-f]{10})", text)
+        if not mm or mm.group(1) != vrec.get("token"):
+            print("the verifier-run token is missing or not the one --verify issued"); return 2
+        missing = [s for s in vrec.get("sample", []) if not re.search(r"(?<![\w.])" + re.escape(s.split(":", 1)[1]) + r"\s*=\s*(PASS|FAIL)", text)]
+        if missing:
+            print(f"no verdict for sampled ids: {missing[:8]}"); return 2
+        if not re.search(r"clicked:\s*\S", text):
+            print("evidence needs 'clicked: ...'"); return 2
+        if "=FAIL" in text:
+            print("the verifier failed items: reopen the owning tasks first; this row is not recorded"); return 2
+        rp = VERIFY / f"P{ph}-report.md"
+        rtxt = rp.read_text(encoding="utf-8", errors="replace") if rp.is_file() else ""
+        thin = [s for s in vrec.get("sample", []) if not re.search(r"^\|\s*" + re.escape(s.split(":", 1)[1]) + r"\s*\|\s*(PASS|FAIL)\s*\|\s*[^|]{30,}\|", rtxt, re.M)]
+        if vrec.get("token", "?") not in rtxt or thin:
+            print(f"the verifier's report .repro/verify/P{ph}-report.md must carry the token and a row '| id | PASS/FAIL | reason >= 30 chars |' per sampled id; missing: {thin[:6]}"); return 2
+        stamp = "V:" + time.strftime("%Y-%m-%d")
+        for t2 in TASKS:
+            if phase_of(t2) == ph and not is_verify(t2) and rows.get(t2, {}).get("status") == "DONE":
+                set_row(t2, "DONE", rows[t2]["evidence"], stamp)
+    elif tid == "P15.V":
+        _, rows2 = parse_ledger()
+        probs, outstanding, notices = validate(rows2, LEDGER.read_text(encoding="utf-8"), None, check_done=False)
+        stale = [n for n in notices if "token stale" in n]
+        if [t for t in outstanding if t != "P15.V"] or stale:
+            print(f"cannot reconcile: outstanding {outstanding[:6]}, stale verifications {stale[:4]}"); return 2
+    else:
+        bad = [m for ok, m in res if not ok]
+        if bad:
+            print("not recorded: " + "; ".join(bad)); return 2
+    set_row(tid, "DONE", text)
+    print(f"{tid} recorded DONE.")
+    if tid == "P15.V":
+        (ROOT / ".repro-complete").write_text("done " + now() + "\n", encoding="utf-8")
+        print(".repro-complete created.")
+    return 0
+
+
+# ============================================================================
+# commands
+# ============================================================================
+def cmd_status(phase=None, ws=None):
+    text, rows = parse_ledger()
+    if text is None:
+        print("REPRO-LEDGER.md missing"); return 1
+    root = ws_root(ws) if ws else ROOT
+    print(f"root: {root}  gate:{gate_sha()}  tree:{tree_hash(tree_files(root))}")
+    targets = [t for t in sorted(TASKS, key=sort_key) if (ws and t == ws) or (not ws and (phase is None or phase_of(t) == phase))]
+    for tid in targets:
+        row = rows.get(tid, {"status": "MISSING", "evidence": ""})
+        res = run_checks(tid, root, None, text, row.get("evidence", ""), want_rt=True)
+        print(f"{tid:<7} {row['status']:<12} checks:{'PASS' if all(ok for ok, _ in res) else 'FAIL'}  {TASKS[tid].title[:90]}")
+        for ok, msg in res:
+            print(f"          {'ok ' if ok else 'XX '} {msg[:600]}")
+    return 0
+
+
+def cmd_next():
+    text, rows = parse_ledger()
+    if text is None:
+        print("REPRO-LEDGER.md missing"); return 1
+    problems, outstanding, notices = validate(rows, text, None, check_done=True)
+    if problems:
+        print("LEDGER PROBLEMS (fix these before anything else):")
+        for p in problems[:40]:
+            print("  - " + p)
+    for n in notices[:8]:
+        print("  notice: " + n)
+    first, startable = next_task(rows)
+    if not first:
+        print("\nALL TASKS TERMINAL." + (" But the problems above must be fixed." if problems else ""))
+        return 0 if not problems else 2
+    inprog = [t for t in sorted(TASKS, key=sort_key) if rows.get(t, {}).get("status") == "IN_PROGRESS"]
+    print(f"\nIN PROGRESS: {', '.join(inprog) or 'none'}")
+    print(f"NEXT (startable now): {', '.join(startable) or '(wait for the in-progress tasks to close)'}")
+    print(f"{len(outstanding)} task(s) outstanding: {', '.join(outstanding[:16])}{' ...' if len(outstanding) > 16 else ''}")
+    for t in startable[:3]:
+        k = TASKS[t].kind
+        how = {"verify": f"python check_repro.py --verify P{phase_of(t)}  (a FRESH verifier subagent, §3.2)", "user": "BLOCK it with NEEDS-USER, ask the user, then --record",
+               "orchestrator": "do it yourself (REPRO-PLAN.md §10, P0), then --record"}.get(k, f"python check_repro.py --start {t}  then dispatch §3.1; after: --close {t}")
+        print(f"   {t}: {TASKS[t].title[:100]}\n      -> {how}")
+    return 0 if not problems else 2
+
+
+def cmd_verify(ph):
+    text, rows = parse_ledger()
+    sib = [t for t in sorted(TASKS, key=sort_key) if phase_of(t) == ph and not is_verify(t)]
+    open_ = [t for t in sib if rows.get(t, {}).get("status") in ("NOT_STARTED", "IN_PROGRESS")]
+    if open_:
+        print(f"PHASE NOT VERIFIABLE: open tasks {open_}"); return 2
+    bad = []
+    rt = runtime(ROOT)
+    for t in sib:
+        if rows.get(t, {}).get("status") == "DONE":
+            for ok, msg in run_checks(t, ROOT, rt, text, rows[t]["evidence"]):
+                if not ok:
+                    bad.append(f"{t}: {msg}")
+    if bad:
+        print("PHASE NOT VERIFIABLE, checks fail now:")
+        for b in bad[:20]:
+            print("  - " + b)
+        return 2
+    tok, sample = verify_token(ph), seeded_sample(ph)
+    save_json(VERIFY / f"P{ph}.json", {"token": tok, "sample": sample, "at": now(), "tree": tree_hash(tree_files(ROOT))})
+    print(f"verifier-run: {tok}")
+    print("sampled (judge EVERY one against REPRO-PLAN.md §7; write '<id>=PASS' or '<id>=FAIL(reason)'):")
+    print("  " + " ".join(sample))
+    return 0
+
+
+def cmd_runtime(ws=None):
+    root = ws_root(ws) if ws else ROOT
+    rt = runtime(root, force=True)
+    if not rt:
+        print("RUNTIME FAILED (build error or no Chrome). Try: python build.py" + (f" --root {root}" if ws else "")); return 1
+    p, p4 = rt["probe"], rt.get("probe400", {})
+    print(f"page sha:{rt['pageSha']} probe errors {p.get('errors')} js {p.get('jsErrors')} build warnings {len(rt.get('buildWarnings') or [])}")
+    for k in ("counts", "pageSelftest", "pageAudit", "views", "renderRapid", "renderPractice", "renderSpot", "renderDrill", "renderLearn", "search", "state", "pacing", "bias", "a11y", "examPast", "yieldAxes", "weak", "tutor", "calendar"):
+        print(f"  {k:<15} {json.dumps(p.get(k))[:260]}")
+    f = p.get("figs") or {}
+    print(f"  figs            measured {f.get('measured')} median {f.get('medianAll')} below9 {f.get('below9')} overlaps {list((f.get('overlaps') or {}).keys())} clipped {list((f.get('clipped') or {}).keys())}")
+    print(f"  @400            views {json.dumps(p4.get('views'))[:160]} lightbox {json.dumps((p4.get('figs') or {}).get('lightbox'))}")
+    for w in (rt.get("buildWarnings") or [])[:20]:
+        print("  BUILD WARNING " + w)
+    return 0
+
+
+def cmd_baseline():
+    STATE.mkdir(exist_ok=True)
+    files = tree_files(ROOT)
+    save_json(LOCK, {"tree": tree_hash(files), "by": "--baseline", "at": now()})
+    save_json(STATE / "baseline.json", {"at": now(), "files": files, "gate": gate_sha(),
+                                        "canvasObjectives": {k: v for k, v in rc.objectives().items()}, "blueprintIds": sorted(rc.blueprint())})
+    print("main locked; baseline saved. Paste into REPRO-LEDGER.md BASELINE:")
+    print(f"  BASELINE tree:{tree_hash(files)} at:{now()}")
+    print(f"  GATE sha:{gate_sha()}")
+    return 0
+
+
+def cmd_gate():
+    raw = sys.stdin.read() or "{}"
+    try:
+        payload = json.loads(raw)
+    except ValueError:
+        try:
+            payload = json.loads(raw.replace("\\", "\\\\"))   # tolerate unescaped Windows paths
+        except ValueError:
+            payload = {}
+    cwd = str(payload.get("cwd") or os.getcwd())
+
+    def release(reason):
+        save_json(GATE_STATE, {"blocks": 0, "released": reason, "ts": time.time()})
+        print(json.dumps({"decision": "approve", "reason": reason}))
+        return 0
+
+    def block(reason, count):
+        save_json(GATE_STATE, {"blocks": count, "ts": time.time()})
+        print(json.dumps({"decision": "block", "reason": reason}))
+        print(reason, file=sys.stderr)
+        return 2
+
+    if cwd:
+        try:
+            Path(cwd).resolve().relative_to(ROOT)
+        except (ValueError, OSError):
+            return release(f"session cwd {cwd} is outside {ROOT.name}; this gate only holds sessions working on REPRO-PLAN.md")
+    for f, why in ((".repro-complete", "released by .repro-complete"), (".repro-abort", "released by .repro-abort")):
+        if (ROOT / f).exists():
+            return release(why)
+    if not (ROOT / ".repro-active").exists():
+        return release("no .repro-active: REPRO-PLAN.md has not been claimed (P0.1), so completion is not enforced")
+    text, rows = parse_ledger()
+    if text is None:
+        return release("no REPRO-LEDGER.md")
+    problems, outstanding, _ = validate(rows, text, None, check_done=True)
+    if not problems and not outstanding:
+        return release(f"plan complete: all {len(TASKS)} tasks terminal and every DONE check passes")
+    count = int((load_json(GATE_STATE) or {}).get("blocks", 0)) + 1
+    if count > MAX_BLOCKS:
+        return release(f"gate released after {MAX_BLOCKS} refusals in a row; report exactly what is outstanding and why")
+    first, startable = next_task(rows)
+    lines = ["REPRO-PLAN IS NOT FINISHED. Do not stop.", ""]
+    if problems:
+        lines.append("Ledger problems (what a skipped, faked or drifted task looks like; fix them first):")
+        lines += ["  - " + p for p in problems[:10]]
+        lines.append("")
+    lines.append(f"Startable now: {', '.join(startable) or '(close the in-progress tasks)'}; {len(outstanding)} outstanding.")
+    lines += ["Run python check_repro.py --next, then --start / dispatch / --close. To stop legitimately, BLOCK the current task",
+              "with TRIED:, NARROWER:, NEEDS-USER: (python check_repro.py --block <task> \"...\").",
+              f"(refusal {count} of {MAX_BLOCKS})"]
+    return block("\n".join(lines), count)
+
+
+# ============================================================================
+# demo + self-test (prove the gate catches faked work before anyone relies on it)
+# ============================================================================
+def cmd_demo():
+    global LEDGER, SNAP, LOCK, VERIFY
+    if not LEDGER.is_file():
+        print("no ledger to demo against"); return 1
+    tmp = Path(tempfile.mkdtemp(prefix="repro-demo-"))
+    saved = (LEDGER, SNAP, LOCK, VERIFY)
+    LEDGER, SNAP, LOCK, VERIFY = tmp / "REPRO-LEDGER.md", tmp / "snap", tmp / "lock.json", tmp / "verify"
+    shutil.copy2(saved[0], LEDGER)
+    SNAP.mkdir(); VERIFY.mkdir()
+    original = LEDGER.read_text(encoding="utf-8")
+    results = {}
+
+    def reset():
+        LEDGER.write_text(original, encoding="utf-8")
+        for p in SNAP.glob("*"):
+            p.unlink()
+        LOCK.unlink(missing_ok=True)
+
+    def mark(*pairs):
+        for tid, st, ev in pairs:
+            set_row(tid, st, ev)
+
+    def failing_task():
+        # case I needs a task whose checks fail on main today (it hard-coded P1.5, which passes once P1.5 is done)
+        for t in sorted(TASKS, key=sort_key, reverse=True):
+            if TASKS[t].kind in ("verify", "user", "orchestrator"):
+                continue
+            if any(not ok and "runtime unavailable" not in msg for ok, msg in run_checks(t, ROOT, None, original, "", want_rt=False, revalidate=True)):
+                return t
+        return "P1.5"
+    FORGE = failing_task()
+
+    P0_DONE = [("P0.1", "DONE", "ok"), ("P0.2", "DONE", "ok"), ("P0.3", "DONE", "ok")]
+    cases = [
+        ("A: P1.1 marked DONE by hand, never --close'd", lambda: mark(*P0_DONE, ("P1.1", "DONE", "sha:12345678 did the scope")), "P1.1", "never closed"),
+        ("B: P3.1 (topics) DONE while phase 1 is open (skipping ahead)", lambda: mark(("P3.1", "DONE", "sha:1 closed:x")), "P3.1", "earlier phase is open"),
+        ("C: P1.V with a guessed verifier token", lambda: mark(*P0_DONE, ("P1.V", "DONE", "verifier-run: 0123456789 sampled: x clicked: y")), "P1.V", "token"),
+        ("D: P1.2 BLOCKED with no TRIED/NARROWER/NEEDS-USER", lambda: mark(*P0_DONE, ("P1.2", "BLOCKED", "could not finish")), "P1.2", "BLOCKED without"),
+        ("E: P1.1 DROPPED (nothing in this plan is droppable)", lambda: mark(*P0_DONE, ("P1.1", "DROPPED", "REASON: bored")), "P1.1", "DROPPED"),
+        ("F: main content edited outside any task (lock mismatch)", lambda: (mark(*P0_DONE), save_json(LOCK, {"tree": "deadbeef00", "by": "demo"})), "MAIN", "MAIN CHANGED"),
+        ("G: four content tasks IN_PROGRESS at once", lambda: mark(*P0_DONE, ("P3.1", "IN_PROGRESS", "x"), ("P3.2", "IN_PROGRESS", "x"), ("P3.3", "IN_PROGRESS", "x"), ("P3.4", "IN_PROGRESS", "x")), "", "IN_PROGRESS at once"),
+        ("H: P3.1 IN_PROGRESS with no workspace (dispatched without --start)", lambda: mark(*P0_DONE, ("P3.1", "IN_PROGRESS", "x")), "P3.1", "without a workspace"),
+        (f"I: {FORGE} DONE via a forged close record whose checks now fail", lambda: (mark(*P0_DONE, (FORGE, "DONE", "x closed:aa")),
+                                                                        save_json(SNAP / f"{FORGE}.done.json", {"closeId": "aa"})), FORGE, "check FAILS"),
+        ("J: P1.V verifier judged FAIL but the row was still marked DONE", lambda: (mark(*P0_DONE), save_json(VERIFY / "P1.json", {"token": "abcdef0123", "sample": ["objective:X.1"]}),
+                                                                                      mark(("P1.V", "DONE", "verifier-run: abcdef0123 sampled: X.1=FAIL(wrong) clicked: yes"))), "P1.V", "FAILED"),
+        ("K: a content task BLOCKED to skip it (fields present, but it does not need the user)",
+         lambda: mark(*P0_DONE, ("P1.3", "BLOCKED", "TRIED: once NARROWER: none NEEDS-USER: nothing really")), "P1.3", "only tasks that need the user"),
+        ("L: gate files edited, no GATE-CHANGE note (the recorded gate sha no longer matches)",
+         lambda: (mark(*P0_DONE), LEDGER.write_text(LEDGER.read_text(encoding="utf-8").replace("BASELINE: (written at P0.3", "BASELINE: GATE sha:00000000 (written at P0.3"), encoding="utf-8")), "GATE", "GATE FILES CHANGED"),
+    ]
+    all_caught = True
+    try:
+        for title, setup, target, needle in cases:
+            reset()
+            setup()
+            text, rows = parse_ledger()
+            probs, _, _ = validate(rows, text, None, check_done=True)
+            hits = [p for p in probs if (target and p.startswith(target)) or (not target and needle in p) or (target == "MAIN" and p.startswith("MAIN"))]
+            hits = [p for p in hits if needle.lower() in p.lower()]
+            caught = bool(hits)
+            all_caught &= caught
+            results[title] = caught
+            print(f"\n{title}\n  -> {'CAUGHT' if caught else 'MISSED'}" + (f": {hits[0][:200]}" if hits else ""))
+    finally:
+        LEDGER, SNAP, LOCK, VERIFY = saved
+        shutil.rmtree(tmp, ignore_errors=True)
+    print(f"\n{'ALL CAUGHT' if all_caught else 'SOME MISSED'}; the real ledger was never touched")
+    return all_caught, results
+
+
+def cmd_selftest():
+    all_caught, results = cmd_demo()
+    ref = None
+    if (CARDIO / "cardio-path.html").is_file():
+        tmpd = STATE / "reference"
+        tmpd.mkdir(parents=True, exist_ok=True)
+        rt = runtime(CARDIO, force=True, page=CARDIO / "cardio-path.html")
+        ref = rt["probe"].get("errors") if rt else None
+        print(f"\nprobe on the cardio reference page: errors {ref}, js {rt['probe'].get('jsErrors') if rt else None}")
+    stub = None
+    if (ROOT / "engine" / "shell.html").is_file():
+        srt = runtime(ROOT / "fixtures" / "stub", force=True)
+        stub = srt["probe"].get("errors") if srt else "build/probe failed"
+        print(f"probe on the stub page: {stub}")
+    save_json(STATE / "selftest-gate.json", {"at": now(), "demoAllCaught": all_caught, "demo": results, "probeReferenceErrors": ref, "stubErrors": stub, "gate": gate_sha()})
+    print("wrote .repro/selftest-gate.json")
+    return 0 if all_caught and ref == [] else 2
+
+
+def main(argv):
+    if not argv or argv[0] in ("-h", "--help"):
+        print(__doc__); return 0
+    cmd = argv[0]
+    ws = argv[argv.index("--ws") + 1] if "--ws" in argv else None
+    if cmd == "--next":
+        return cmd_next()
+    if cmd == "--status":
+        a = argv[1] if len(argv) > 1 and not argv[1].startswith("--") else None
+        if a and "." in a:
+            return cmd_status(None, ws or a) if ws else cmd_status(phase_of(a), None)
+        return cmd_status(int(a[1:]) if a else None, ws)
+    if cmd == "--start":
+        return cmd_start(argv[1], "--fresh" in argv)
+    if cmd == "--close":
+        return cmd_close(argv[1], "--ack-drift" in argv)
+    if cmd == "--reopen":
+        return cmd_reopen(argv[1], argv[2] if len(argv) > 2 else "")
+    if cmd == "--block":
+        return cmd_block(argv[1], argv[2] if len(argv) > 2 else "")
+    if cmd == "--record":
+        return cmd_record(argv[1], argv[2] if len(argv) > 2 else "")
+    if cmd == "--verify":
+        return cmd_verify(int(argv[1].lstrip("Pp")))
+    if cmd == "--build":
+        import build as _b
+        _, w = _b.build(ws_root(ws) if ws else ROOT)
+        return 0
+    if cmd == "--runtime":
+        return cmd_runtime(ws)
+    if cmd == "--baseline":
+        return cmd_baseline()
+    if cmd == "--selfcheck":
+        print(f"GATE sha:{gate_sha()}"); return 0
+    if cmd == "--gate":
+        return cmd_gate()
+    if cmd == "--demo":
+        ok, _ = cmd_demo()
+        return 0 if ok else 2
+    if cmd == "--selftest":
+        return cmd_selftest()
+    print(__doc__)
+    return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

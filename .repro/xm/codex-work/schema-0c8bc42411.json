@@ -1,0 +1,1 @@
+{"type": "object", "additionalProperties": false, "properties": {"items": {"type": "array", "items": {"type": "object", "additionalProperties": false, "properties": {"id": {"type": "string"}, "verdict": {"type": "string", "enum": ["taught", "partial", "missing"]}, "note": {"type": "string"}}, "required": ["id", "verdict", "note"]}}}, "required": ["items"]}

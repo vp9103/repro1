@@ -1,0 +1,1181 @@
+{
+ "probe": {
+  "errors": [],
+  "viewport": 1264,
+  "probeVersion": 1,
+  "counts": {
+   "meta": {
+    "key": "reproendo",
+    "title": "The Repro-Endo Path"
+   },
+   "topics": 30,
+   "questions": 226,
+   "rapid": 204,
+   "drills": 17,
+   "images": 0,
+   "figures": 73,
+   "gloss": 167,
+   "palace": 0,
+   "path": 14,
+   "title": "The Repro-Endo Path",
+   "lang": "en",
+   "titleTags": 1
+  },
+  "pageAudit": {
+   "present": true,
+   "name": "__pathAudit",
+   "counts": {
+    "topics": 30,
+    "questions": 226,
+    "rapid": 204,
+    "drills": 17,
+    "images": 0,
+    "figures": 73
+   },
+   "nonEmpty": [
+    "brokenFigureRefs"
+   ],
+   "lists": {
+    "duplicateQuestionIds": [],
+    "badQuestionTopics": [],
+    "badRapidTopics": [],
+    "shortQuestionOptions": [],
+    "shortRapidOptions": [],
+    "dupQuestionOptions": [],
+    "dupRapidOptions": [],
+    "unannotatedImages": [],
+    "topicsWithoutVisual": [],
+    "brokenImageRefs": [],
+    "brokenFigureRefs": [
+     "en9:en9_hypercalcemia",
+     "en9:en9_three_hpt"
+    ],
+    "badMultiDrills": [],
+    "drillWhyOrphanKeys": [],
+    "drillItemsWithoutWhy": []
+   }
+  },
+  "pageSelftest": {
+   "present": true,
+   "ok": false,
+   "errors": [
+    "assert auditListsEmpty: brokenFigureRefs (2)",
+    "assert linkedNotice: second miss: \"Queued for review: 6 rapid items on The thyroid: structure, hormone synthesis and function\" with the queue at 7"
+   ],
+   "auditListsEmpty": false,
+   "viewFailures": []
+  },
+  "views": {
+   "modes": [
+    "path",
+    "learn",
+    "practice",
+    "drill",
+    "rapid",
+    "spot",
+    "weak",
+    "gloss"
+   ],
+   "failures": [],
+   "overflow": {
+    "path": -15,
+    "learn": -15,
+    "practice": 0,
+    "drill": -15,
+    "rapid": 0,
+    "spot": 0,
+    "weak": -15,
+    "gloss": -15
+   },
+   "maxOverflow": 0
+  },
+  "renderRapid": {
+   "id": "reproendo.oi1n39",
+   "optionsRendered": 5,
+   "wrongClickable": true,
+   "whyRevealed": true,
+   "whyMatches": true,
+   "pickedWhyOpen": true,
+   "ariaExpanded": true,
+   "catChip": true,
+   "detailsOpen": true,
+   "highlightCount": 2,
+   "sayShown": true,
+   "pickRecorded": true,
+   "liveVerdict": true,
+   "keyboardPick": true,
+   "scrollOverflow": -15
+  },
+  "renderPractice": {
+   "id": "en1q01",
+   "optionsRendered": 5,
+   "answered": true,
+   "wrongClickable": true,
+   "whyRevealed": true,
+   "whyMatches": true,
+   "pickedWhyOpen": true,
+   "ariaExpanded": true,
+   "tableShown": true,
+   "tableKeyRow": true,
+   "blShown": true,
+   "sayShown": true,
+   "detailsOpen": true,
+   "highlightCount": 4,
+   "flagControl": true,
+   "liveVerdict": true,
+   "keyboardPick": true,
+   "confidenceGate": true,
+   "summaryRows": 2,
+   "summaryExpandable": true,
+   "scrollOverflow": -15
+  },
+  "renderSpot": null,
+  "renderDrill": {
+   "sortId": "d_rp13_sort",
+   "endRendered": true,
+   "itemsClickable": 14,
+   "whyRevealed": true,
+   "orderDrill": null,
+   "multiDrill": "d_en5_multi",
+   "multiClickable": 13
+  },
+  "renderLearn": {
+   "topic": "rp3",
+   "pretestWhy": true,
+   "pretestWrongSpecific": true,
+   "sexp": 1,
+   "sexpAnswered": true,
+   "grid": 14,
+   "gridScored": true,
+   "why": 1,
+   "vis": 1,
+   "clozeBlanks": 32,
+   "glossPopup": true
+  },
+  "topics": {
+   "perTopic": {
+    "rp3": {
+     "gterms": 8,
+     "strong": 26,
+     "figs": 3,
+     "photos": 0,
+     "text": 15636
+    },
+    "rp4": {
+     "gterms": 10,
+     "strong": 35,
+     "figs": 3,
+     "photos": 0,
+     "text": 17179
+    },
+    "rp5": {
+     "gterms": 10,
+     "strong": 29,
+     "figs": 3,
+     "photos": 0,
+     "text": 15925
+    },
+    "rp6": {
+     "gterms": 9,
+     "strong": 27,
+     "figs": 3,
+     "photos": 0,
+     "text": 16323
+    },
+    "rp7": {
+     "gterms": 7,
+     "strong": 22,
+     "figs": 3,
+     "photos": 0,
+     "text": 14659
+    },
+    "rp8": {
+     "gterms": 10,
+     "strong": 25,
+     "figs": 4,
+     "photos": 0,
+     "text": 17516
+    },
+    "rp9": {
+     "gterms": 15,
+     "strong": 21,
+     "figs": 3,
+     "photos": 0,
+     "text": 17981
+    },
+    "rp10": {
+     "gterms": 7,
+     "strong": 19,
+     "figs": 3,
+     "photos": 0,
+     "text": 15890
+    },
+    "rp11": {
+     "gterms": 9,
+     "strong": 30,
+     "figs": 3,
+     "photos": 0,
+     "text": 17637
+    },
+    "rp12": {
+     "gterms": 9,
+     "strong": 42,
+     "figs": 3,
+     "photos": 0,
+     "text": 17100
+    },
+    "rp13": {
+     "gterms": 7,
+     "strong": 33,
+     "figs": 4,
+     "photos": 0,
+     "text": 17176
+    },
+    "rp15": {
+     "gterms": 12,
+     "strong": 24,
+     "figs": 3,
+     "photos": 0,
+     "text": 16120
+    },
+    "rp16": {
+     "gterms": 6,
+     "strong": 30,
+     "figs": 4,
+     "photos": 0,
+     "text": 18597
+    },
+    "rp17": {
+     "gterms": 5,
+     "strong": 28,
+     "figs": 3,
+     "photos": 0,
+     "text": 17769
+    },
+    "rp18": {
+     "gterms": 6,
+     "strong": 25,
+     "figs": 3,
+     "photos": 0,
+     "text": 17901
+    },
+    "rp19": {
+     "gterms": 9,
+     "strong": 33,
+     "figs": 3,
+     "photos": 0,
+     "text": 17575
+    },
+    "rp20": {
+     "gterms": 12,
+     "strong": 30,
+     "figs": 4,
+     "photos": 0,
+     "text": 17832
+    },
+    "rp23": {
+     "gterms": 11,
+     "strong": 29,
+     "figs": 3,
+     "photos": 0,
+     "text": 17089
+    },
+    "rp24": {
+     "gterms": 7,
+     "strong": 29,
+     "figs": 3,
+     "photos": 0,
+     "text": 16724
+    },
+    "rp25": {
+     "gterms": 13,
+     "strong": 22,
+     "figs": 3,
+     "photos": 0,
+     "text": 15689
+    },
+    "rp26": {
+     "gterms": 7,
+     "strong": 26,
+     "figs": 3,
+     "photos": 0,
+     "text": 16750
+    },
+    "rp27": {
+     "gterms": 6,
+     "strong": 30,
+     "figs": 4,
+     "photos": 0,
+     "text": 18982
+    },
+    "rp28": {
+     "gterms": 7,
+     "strong": 26,
+     "figs": 3,
+     "photos": 0,
+     "text": 16952
+    },
+    "rp29": {
+     "gterms": 5,
+     "strong": 43,
+     "figs": 2,
+     "photos": 0,
+     "text": 17553
+    },
+    "en1": {
+     "gterms": 14,
+     "strong": 24,
+     "figs": 3,
+     "photos": 0,
+     "text": 16794
+    },
+    "en2": {
+     "gterms": 6,
+     "strong": 32,
+     "figs": 4,
+     "photos": 0,
+     "text": 16873
+    },
+    "en5": {
+     "gterms": 12,
+     "strong": 20,
+     "figs": 4,
+     "photos": 0,
+     "text": 17109
+    },
+    "en6": {
+     "gterms": 11,
+     "strong": 21,
+     "figs": 4,
+     "photos": 0,
+     "text": 17881
+    },
+    "en7": {
+     "gterms": 9,
+     "strong": 25,
+     "figs": 4,
+     "photos": 0,
+     "text": 19412
+    },
+    "en9": {
+     "gterms": 2,
+     "strong": 25,
+     "figs": 0,
+     "photos": 0,
+     "text": 13577
+    }
+   },
+   "glossTerms": 167,
+   "neverLinked": []
+  },
+  "figs": {
+   "measured": 66,
+   "perFig": {
+    "rp3_section": 11.23,
+    "rp3_axilla": 10.48,
+    "rp4_weeks": 11.23,
+    "rp4_twins": 11.23,
+    "rp5_ducts": 11.23,
+    "rp5_homologs": 11.23,
+    "rp6_signals": 11.23,
+    "rp6_sexchrom": 11.23,
+    "rp7_sequence": 11.23,
+    "rp7_precocious": 11.23,
+    "rp8_oocyte": 11.23,
+    "rp8_twocell": 11.23,
+    "rp8_curves": 11.23,
+    "rp9_workup": 11.23,
+    "rp9_pcos": 11.23,
+    "rp10_methods": 10.48,
+    "rp10_timeline": 10.48,
+    "rp11_axis": 11.23,
+    "rp11_ht": 10.48,
+    "rp12_vaginitis": 10.48,
+    "rp12_vulvar_scc": 10.48,
+    "rp13_tz": 11.23,
+    "rp13_e6e7": 11.23,
+    "rp13_cin": 11.23,
+    "rp15_adnexal": 10.48,
+    "rp15_origin": 10.48,
+    "rp16_pid": 10.48,
+    "rp16_ulcers": 11.23,
+    "rp16_syphilis": 10.48,
+    "rp17_hiv": 11.23,
+    "rp17_acyclovir": 10.48,
+    "rp18_routes": 11.23,
+    "rp18_signatures": 10.48,
+    "rp19_tubule": 11.23,
+    "rp19_axis": 11.23,
+    "rp20_torsion": 11.23,
+    "rp20_masses": 11.23,
+    "rp20_gct": 11.23,
+    "rp23_age": 10.48,
+    "rp23_risk": 10.48,
+    "rp24_sequence": 10.48,
+    "rp24_classes": 10.48,
+    "rp25_hormones": 10.48,
+    "rp25_circulation": 10.48,
+    "rp26_framework": 10.48,
+    "rp26_moles": 10.48,
+    "rp27_spiral": 10.48,
+    "rp27_gdm": 10.48,
+    "rp27_bleeding": 10.48,
+    "rp28_fhr": 10.48,
+    "rp28_pph": 10.86,
+    "rp29_hormones": 10.48,
+    "en1_receptors": 10.48,
+    "en1_feedback": 10.48,
+    "en2_axes": 10.48,
+    "en2_gnrh": 9.74,
+    "en2_sella": 9.74,
+    "en5_embryo": 11.23,
+    "en5_synthesis": 10.48,
+    "en5_tft": 10.48,
+    "en6_uptake": 11.23,
+    "en6_graves": 10.48,
+    "en6_storm": 10.48,
+    "en7_hashimoto": 11.23,
+    "en7_nodule": 11.23,
+    "en7_cancers": 11.23
+   },
+   "medianAll": 10.48,
+   "below9": [],
+   "overlaps": {
+    "rp3_section": [
+     "Lobule (terminal duct | lobular unit, TDLU)"
+    ]
+   },
+   "clipped": {},
+   "notInAnyBody": [
+    "en3_gh",
+    "en3_mass",
+    "en3_prl",
+    "en4_adh",
+    "en4_wdt",
+    "rp14_map",
+    "rp14_types"
+   ],
+   "lightbox": {
+    "fig": "rp3_section",
+    "medianGlyph": 18.07,
+    "pan": 0,
+    "afterFitGlyph": 18.07
+   }
+  },
+  "search": {
+   "indexReadable": true,
+   "entries": 717,
+   "whyFindable": true,
+   "tableFindable": true,
+   "bottomLineFindable": true,
+   "rapidWhyFindable": true,
+   "topicsIndexed": true
+  },
+  "state": {
+   "repairKeepsLastPick": true,
+   "confusionsHasRapidKind": true,
+   "exportHasFlags": true,
+   "flagKinds": [
+    "q",
+    "rapid",
+    "img",
+    "drill"
+   ]
+  },
+  "pacing": {
+   "paceDays": {
+    "2": 2,
+    "3": 3,
+    "5": 5,
+    "7": 7,
+    "10": 10,
+    "14": 13
+   },
+   "exact": false,
+   "reviewShare14": 0.36
+  },
+  "bias": {
+   "chi": [
+    2.3,
+    4.9,
+    2.7,
+    0.7
+   ],
+   "max": 4.9,
+   "n": 226
+  },
+  "a11y": {
+   "htmlLang": "en",
+   "titleTags": 1,
+   "focusAfterRender": "BUTTON",
+   "liveRegion": true
+  },
+  "examPast": {
+   "bannerShown": true,
+   "ceilingInPast": false
+  },
+  "yieldAxes": {
+   "axisToggle": true,
+   "hiStep1": 19,
+   "hiExam": 14,
+   "topics": 30,
+   "axesDiffer": 20
+  },
+  "weak": {
+   "rendered": true,
+   "threadsSection": true,
+   "errorTypes": true,
+   "proven": true
+  },
+  "tutor": {
+   "present": true,
+   "degrades": true,
+   "socratic": true
+  },
+  "calendar": {
+   "strip": true,
+   "pace": true,
+   "examInput": true,
+   "exportBtn": true
+  },
+  "images": {
+   "n": 0,
+   "dims": {},
+   "broken": []
+  },
+  "jsErrors": []
+ },
+ "probe400": {
+  "errors": [],
+  "viewport": 500,
+  "probeVersion": 1,
+  "counts": {
+   "meta": {
+    "key": "reproendo",
+    "title": "The Repro-Endo Path"
+   },
+   "topics": 30,
+   "questions": 226,
+   "rapid": 204,
+   "drills": 17,
+   "images": 0,
+   "figures": 73,
+   "gloss": 167,
+   "palace": 0,
+   "path": 14,
+   "title": "The Repro-Endo Path",
+   "lang": "en",
+   "titleTags": 1
+  },
+  "pageAudit": {
+   "present": true,
+   "name": "__pathAudit",
+   "counts": {
+    "topics": 30,
+    "questions": 226,
+    "rapid": 204,
+    "drills": 17,
+    "images": 0,
+    "figures": 73
+   },
+   "nonEmpty": [
+    "brokenFigureRefs"
+   ],
+   "lists": {
+    "duplicateQuestionIds": [],
+    "badQuestionTopics": [],
+    "badRapidTopics": [],
+    "shortQuestionOptions": [],
+    "shortRapidOptions": [],
+    "dupQuestionOptions": [],
+    "dupRapidOptions": [],
+    "unannotatedImages": [],
+    "topicsWithoutVisual": [],
+    "brokenImageRefs": [],
+    "brokenFigureRefs": [
+     "en9:en9_hypercalcemia",
+     "en9:en9_three_hpt"
+    ],
+    "badMultiDrills": [],
+    "drillWhyOrphanKeys": [],
+    "drillItemsWithoutWhy": []
+   }
+  },
+  "pageSelftest": {
+   "present": true,
+   "ok": false,
+   "errors": [
+    "assert auditListsEmpty: brokenFigureRefs (2)",
+    "assert linkedNotice: second miss: \"Queued for review: 6 rapid items on The thyroid: structure, hormone synthesis and function\" with the queue at 7"
+   ],
+   "auditListsEmpty": false,
+   "viewFailures": []
+  },
+  "views": {
+   "modes": [
+    "path",
+    "learn",
+    "practice",
+    "drill",
+    "rapid",
+    "spot",
+    "weak",
+    "gloss"
+   ],
+   "failures": [],
+   "overflow": {
+    "path": -15,
+    "learn": -15,
+    "practice": -15,
+    "drill": -15,
+    "rapid": 0,
+    "spot": 0,
+    "weak": -15,
+    "gloss": -15
+   },
+   "maxOverflow": 0
+  },
+  "renderRapid": {
+   "id": "reproendo.oi1n39",
+   "optionsRendered": 5,
+   "wrongClickable": true,
+   "whyRevealed": true,
+   "whyMatches": true,
+   "pickedWhyOpen": true,
+   "ariaExpanded": true,
+   "catChip": true,
+   "detailsOpen": true,
+   "highlightCount": 2,
+   "sayShown": true,
+   "pickRecorded": true,
+   "liveVerdict": true,
+   "keyboardPick": true,
+   "scrollOverflow": -15
+  },
+  "renderPractice": {
+   "id": "en1q01",
+   "optionsRendered": 5,
+   "answered": true,
+   "wrongClickable": true,
+   "whyRevealed": true,
+   "whyMatches": true,
+   "pickedWhyOpen": true,
+   "ariaExpanded": true,
+   "tableShown": true,
+   "tableKeyRow": true,
+   "blShown": true,
+   "sayShown": true,
+   "detailsOpen": true,
+   "highlightCount": 4,
+   "flagControl": true,
+   "liveVerdict": true,
+   "keyboardPick": true,
+   "confidenceGate": true,
+   "summaryRows": 2,
+   "summaryExpandable": true,
+   "scrollOverflow": -15
+  },
+  "renderSpot": null,
+  "renderDrill": {
+   "sortId": "d_rp13_sort",
+   "endRendered": true,
+   "itemsClickable": 14,
+   "whyRevealed": true,
+   "orderDrill": null,
+   "multiDrill": "d_en5_multi",
+   "multiClickable": 13
+  },
+  "renderLearn": {
+   "topic": "rp3",
+   "pretestWhy": true,
+   "pretestWrongSpecific": true,
+   "sexp": 1,
+   "sexpAnswered": true,
+   "grid": 14,
+   "gridScored": true,
+   "why": 1,
+   "vis": 1,
+   "clozeBlanks": 32,
+   "glossPopup": true
+  },
+  "topics": {
+   "perTopic": {
+    "rp3": {
+     "gterms": 8,
+     "strong": 26,
+     "figs": 3,
+     "photos": 0,
+     "text": 13818
+    },
+    "rp4": {
+     "gterms": 10,
+     "strong": 35,
+     "figs": 3,
+     "photos": 0,
+     "text": 15376
+    },
+    "rp5": {
+     "gterms": 10,
+     "strong": 29,
+     "figs": 3,
+     "photos": 0,
+     "text": 14120
+    },
+    "rp6": {
+     "gterms": 9,
+     "strong": 27,
+     "figs": 3,
+     "photos": 0,
+     "text": 14534
+    },
+    "rp7": {
+     "gterms": 7,
+     "strong": 22,
+     "figs": 3,
+     "photos": 0,
+     "text": 12844
+    },
+    "rp8": {
+     "gterms": 10,
+     "strong": 25,
+     "figs": 4,
+     "photos": 0,
+     "text": 15714
+    },
+    "rp9": {
+     "gterms": 15,
+     "strong": 21,
+     "figs": 3,
+     "photos": 0,
+     "text": 16193
+    },
+    "rp10": {
+     "gterms": 7,
+     "strong": 19,
+     "figs": 3,
+     "photos": 0,
+     "text": 14106
+    },
+    "rp11": {
+     "gterms": 9,
+     "strong": 30,
+     "figs": 3,
+     "photos": 0,
+     "text": 15820
+    },
+    "rp12": {
+     "gterms": 9,
+     "strong": 42,
+     "figs": 3,
+     "photos": 0,
+     "text": 15294
+    },
+    "rp13": {
+     "gterms": 7,
+     "strong": 33,
+     "figs": 4,
+     "photos": 0,
+     "text": 15375
+    },
+    "rp15": {
+     "gterms": 12,
+     "strong": 24,
+     "figs": 3,
+     "photos": 0,
+     "text": 14332
+    },
+    "rp16": {
+     "gterms": 6,
+     "strong": 30,
+     "figs": 4,
+     "photos": 0,
+     "text": 16797
+    },
+    "rp17": {
+     "gterms": 5,
+     "strong": 28,
+     "figs": 3,
+     "photos": 0,
+     "text": 15962
+    },
+    "rp18": {
+     "gterms": 6,
+     "strong": 25,
+     "figs": 3,
+     "photos": 0,
+     "text": 16094
+    },
+    "rp19": {
+     "gterms": 9,
+     "strong": 33,
+     "figs": 3,
+     "photos": 0,
+     "text": 15787
+    },
+    "rp20": {
+     "gterms": 12,
+     "strong": 30,
+     "figs": 4,
+     "photos": 0,
+     "text": 16018
+    },
+    "rp23": {
+     "gterms": 11,
+     "strong": 29,
+     "figs": 3,
+     "photos": 0,
+     "text": 15281
+    },
+    "rp24": {
+     "gterms": 7,
+     "strong": 29,
+     "figs": 3,
+     "photos": 0,
+     "text": 14891
+    },
+    "rp25": {
+     "gterms": 13,
+     "strong": 22,
+     "figs": 3,
+     "photos": 0,
+     "text": 13892
+    },
+    "rp26": {
+     "gterms": 7,
+     "strong": 26,
+     "figs": 3,
+     "photos": 0,
+     "text": 14970
+    },
+    "rp27": {
+     "gterms": 6,
+     "strong": 30,
+     "figs": 4,
+     "photos": 0,
+     "text": 17168
+    },
+    "rp28": {
+     "gterms": 7,
+     "strong": 26,
+     "figs": 3,
+     "photos": 0,
+     "text": 15147
+    },
+    "rp29": {
+     "gterms": 5,
+     "strong": 43,
+     "figs": 2,
+     "photos": 0,
+     "text": 15767
+    },
+    "en1": {
+     "gterms": 14,
+     "strong": 24,
+     "figs": 3,
+     "photos": 0,
+     "text": 15012
+    },
+    "en2": {
+     "gterms": 6,
+     "strong": 32,
+     "figs": 4,
+     "photos": 0,
+     "text": 15057
+    },
+    "en5": {
+     "gterms": 12,
+     "strong": 20,
+     "figs": 4,
+     "photos": 0,
+     "text": 15323
+    },
+    "en6": {
+     "gterms": 11,
+     "strong": 21,
+     "figs": 4,
+     "photos": 0,
+     "text": 16066
+    },
+    "en7": {
+     "gterms": 9,
+     "strong": 25,
+     "figs": 4,
+     "photos": 0,
+     "text": 17616
+    },
+    "en9": {
+     "gterms": 2,
+     "strong": 25,
+     "figs": 0,
+     "photos": 0,
+     "text": 11775
+    }
+   },
+   "glossTerms": 167,
+   "neverLinked": []
+  },
+  "figs": {
+   "measured": 66,
+   "perFig": {
+    "rp3_section": 7.67,
+    "rp3_axilla": 7.16,
+    "rp4_weeks": 7.67,
+    "rp4_twins": 7.67,
+    "rp5_ducts": 7.67,
+    "rp5_homologs": 7.67,
+    "rp6_signals": 7.67,
+    "rp6_sexchrom": 7.67,
+    "rp7_sequence": 7.67,
+    "rp7_precocious": 7.67,
+    "rp8_oocyte": 7.67,
+    "rp8_twocell": 7.67,
+    "rp8_curves": 7.67,
+    "rp9_workup": 7.67,
+    "rp9_pcos": 7.67,
+    "rp10_methods": 7.16,
+    "rp10_timeline": 7.16,
+    "rp11_axis": 7.67,
+    "rp11_ht": 7.16,
+    "rp12_vaginitis": 7.16,
+    "rp12_vulvar_scc": 7.16,
+    "rp13_tz": 7.67,
+    "rp13_e6e7": 7.67,
+    "rp13_cin": 7.67,
+    "rp15_adnexal": 7.16,
+    "rp15_origin": 7.16,
+    "rp16_pid": 7.16,
+    "rp16_ulcers": 7.67,
+    "rp16_syphilis": 7.16,
+    "rp17_hiv": 7.67,
+    "rp17_acyclovir": 7.16,
+    "rp18_routes": 7.67,
+    "rp18_signatures": 7.16,
+    "rp19_tubule": 7.67,
+    "rp19_axis": 7.67,
+    "rp20_torsion": 7.67,
+    "rp20_masses": 7.67,
+    "rp20_gct": 7.67,
+    "rp23_age": 7.16,
+    "rp23_risk": 7.16,
+    "rp24_sequence": 7.16,
+    "rp24_classes": 7.16,
+    "rp25_hormones": 7.16,
+    "rp25_circulation": 7.16,
+    "rp26_framework": 7.16,
+    "rp26_moles": 7.16,
+    "rp27_spiral": 7.16,
+    "rp27_gdm": 7.16,
+    "rp27_bleeding": 7.16,
+    "rp28_fhr": 7.16,
+    "rp28_pph": 7.41,
+    "rp29_hormones": 7.16,
+    "en1_receptors": 7.16,
+    "en1_feedback": 7.16,
+    "en2_axes": 7.16,
+    "en2_gnrh": 6.64,
+    "en2_sella": 6.64,
+    "en5_embryo": 7.67,
+    "en5_synthesis": 7.16,
+    "en5_tft": 7.16,
+    "en6_uptake": 7.67,
+    "en6_graves": 7.16,
+    "en6_storm": 7.16,
+    "en7_hashimoto": 7.67,
+    "en7_nodule": 7.67,
+    "en7_cancers": 7.67
+   },
+   "medianAll": 7.16,
+   "below9": [
+    "rp3_section",
+    "rp3_axilla",
+    "rp4_weeks",
+    "rp4_twins",
+    "rp5_ducts",
+    "rp5_homologs",
+    "rp6_signals",
+    "rp6_sexchrom",
+    "rp7_sequence",
+    "rp7_precocious",
+    "rp8_oocyte",
+    "rp8_twocell",
+    "rp8_curves",
+    "rp9_workup",
+    "rp9_pcos",
+    "rp10_methods",
+    "rp10_timeline",
+    "rp11_axis",
+    "rp11_ht",
+    "rp12_vaginitis",
+    "rp12_vulvar_scc",
+    "rp13_tz",
+    "rp13_e6e7",
+    "rp13_cin",
+    "rp15_adnexal",
+    "rp15_origin",
+    "rp16_pid",
+    "rp16_ulcers",
+    "rp16_syphilis",
+    "rp17_hiv",
+    "rp17_acyclovir",
+    "rp18_routes",
+    "rp18_signatures",
+    "rp19_tubule",
+    "rp19_axis",
+    "rp20_torsion",
+    "rp20_masses",
+    "rp20_gct",
+    "rp23_age",
+    "rp23_risk",
+    "rp24_sequence",
+    "rp24_classes",
+    "rp25_hormones",
+    "rp25_circulation",
+    "rp26_framework",
+    "rp26_moles",
+    "rp27_spiral",
+    "rp27_gdm",
+    "rp27_bleeding",
+    "rp28_fhr",
+    "rp28_pph",
+    "rp29_hormones",
+    "en1_receptors",
+    "en1_feedback",
+    "en2_axes",
+    "en2_gnrh",
+    "en2_sella",
+    "en5_embryo",
+    "en5_synthesis",
+    "en5_tft",
+    "en6_uptake",
+    "en6_graves",
+    "en6_storm",
+    "en7_hashimoto",
+    "en7_nodule",
+    "en7_cancers"
+   ],
+   "overlaps": {},
+   "clipped": {},
+   "notInAnyBody": [
+    "en3_gh",
+    "en3_mass",
+    "en3_prl",
+    "en4_adh",
+    "en4_wdt",
+    "rp14_map",
+    "rp14_types"
+   ],
+   "lightbox": {
+    "fig": "rp3_section",
+    "medianGlyph": 15,
+    "pan": 500
+   }
+  },
+  "search": {
+   "indexReadable": true,
+   "entries": 717,
+   "whyFindable": true,
+   "tableFindable": true,
+   "bottomLineFindable": true,
+   "rapidWhyFindable": true,
+   "topicsIndexed": true
+  },
+  "state": {
+   "repairKeepsLastPick": true,
+   "confusionsHasRapidKind": true,
+   "exportHasFlags": true,
+   "flagKinds": [
+    "q",
+    "rapid",
+    "img",
+    "drill"
+   ]
+  },
+  "pacing": {
+   "paceDays": {
+    "2": 2,
+    "3": 3,
+    "5": 5,
+    "7": 7,
+    "10": 10,
+    "14": 13
+   },
+   "exact": false,
+   "reviewShare14": 0.36
+  },
+  "bias": {
+   "chi": [
+    2.3,
+    4.9,
+    2.7,
+    0.7
+   ],
+   "max": 4.9,
+   "n": 226
+  },
+  "a11y": {
+   "htmlLang": "en",
+   "titleTags": 1,
+   "focusAfterRender": "BUTTON",
+   "liveRegion": true
+  },
+  "examPast": {
+   "bannerShown": true,
+   "ceilingInPast": false
+  },
+  "yieldAxes": {
+   "axisToggle": true,
+   "hiStep1": 19,
+   "hiExam": 14,
+   "topics": 30,
+   "axesDiffer": 20
+  },
+  "weak": {
+   "rendered": true,
+   "threadsSection": true,
+   "errorTypes": true,
+   "proven": true
+  },
+  "tutor": {
+   "present": true,
+   "degrades": true,
+   "socratic": true
+  },
+  "calendar": {
+   "strip": true,
+   "pace": true,
+   "examInput": true,
+   "exportBtn": true
+  },
+  "images": {
+   "n": 0,
+   "dims": {},
+   "broken": []
+  },
+  "jsErrors": []
+ },
+ "pageSha": "3b990554",
+ "buildWarnings": [
+  "meta.blocks lists topic rp1 but content/topics/rp1.json does not exist",
+  "meta.blocks lists topic rp2 but content/topics/rp2.json does not exist",
+  "meta.blocks lists topic rp14 but content/topics/rp14.json does not exist",
+  "meta.blocks lists topic rp21 but content/topics/rp21.json does not exist",
+  "meta.blocks lists topic rp22 but content/topics/rp22.json does not exist",
+  "meta.blocks lists topic rp30 but content/topics/rp30.json does not exist",
+  "meta.blocks lists topic en3 but content/topics/en3.json does not exist",
+  "meta.blocks lists topic en4 but content/topics/en4.json does not exist",
+  "meta.blocks lists topic en8 but content/topics/en8.json does not exist",
+  "en9: body figure 'en9_hypercalcemia' does not exist",
+  "en9: body figure 'en9_three_hpt' does not exist",
+  "meta.blocks lists topic en10 but content/topics/en10.json does not exist",
+  "meta.blocks lists topic en11 but content/topics/en11.json does not exist",
+  "meta.blocks lists topic en12 but content/topics/en12.json does not exist",
+  "meta.blocks lists topic en13 but content/topics/en13.json does not exist",
+  "meta.blocks lists topic en14 but content/topics/en14.json does not exist",
+  "meta.blocks lists topic en15 but content/topics/en15.json does not exist",
+  "meta.blocks lists topic en16 but content/topics/en16.json does not exist",
+  "meta.blocks lists topic en17 but content/topics/en17.json does not exist",
+  "meta.blocks lists topic en18 but content/topics/en18.json does not exist"
+ ],
+ "ranAt": "2026-10-03 17:21:40",
+ "root": "fast"
+}

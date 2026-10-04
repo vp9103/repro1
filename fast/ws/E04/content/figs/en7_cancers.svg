@@ -1,0 +1,67 @@
+<svg class="dia" viewBox="0 0 900 612" role="img" aria-label="Thyroid cancers grouped by cell of origin: the follicular cell gives papillary, follicular and anaplastic carcinoma; the C cell gives medullary carcinoma; B cells give primary thyroid lymphoma in Hashimoto thyroiditis">
+<text class="ttl" x="14" y="26" font-size="17">Thyroid cancers sort by the cell they come from</text>
+<rect x="24" y="42" width="636" height="66" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="40" y="66" font-size="16">Follicular cell (endoderm): makes thyroglobulin, traps iodine</text>
+<text x="40" y="92" font-size="15">Three cancers; the first two stay well differentiated</text>
+<rect x="672" y="42" width="204" height="66" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="686" y="66" font-size="16">C cell</text>
+<text x="686" y="92" font-size="15">(neural crest)</text>
+<line x1="126" y1="108" x2="126" y2="130" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="121,130 126,138 131,130" fill="var(--ink-2)"/>
+<line x1="342" y1="108" x2="342" y2="130" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="337,130 342,138 347,130" fill="var(--ink-2)"/>
+<line x1="558" y1="108" x2="558" y2="130" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="553,130 558,138 563,130" fill="var(--ink-2)"/>
+<line x1="774" y1="108" x2="774" y2="130" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="769,130 774,138 779,130" fill="var(--ink-2)"/>
+<rect x="24" y="140" width="204" height="298" rx="10" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="38" y="166" font-size="16">Papillary</text>
+<text x="38" y="190" font-size="15">About 80% of cases</text>
+<text x="38" y="212" font-size="15">Risk: neck radiation</text>
+<text x="38" y="234" font-size="15">Orphan Annie nuclei</text>
+<text x="38" y="256" font-size="15">Nuclear grooves</text>
+<text x="38" y="278" font-size="15">Psammoma bodies</text>
+<text x="38" y="300" font-size="15">RET/PTC or BRAF</text>
+<text x="38" y="322" font-size="15">Spreads by lymph</text>
+<text x="38" y="344" font-size="15">to neck nodes</text>
+<text class="gd" x="38" y="370" font-size="15">Excellent outlook</text>
+<rect x="240" y="140" width="204" height="298" rx="10" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="254" y="166" font-size="15">Follicular carcinoma</text>
+<text x="254" y="190" font-size="15">Uniform follicles</text>
+<text x="254" y="212" font-size="15">Capsular or vascular</text>
+<text x="254" y="234" font-size="15">invasion defines it</text>
+<text x="254" y="256" font-size="15">Needs histology,</text>
+<text x="254" y="278" font-size="15">not FNA</text>
+<text x="254" y="300" font-size="15">RAS or PAX8-PPARG</text>
+<text x="254" y="322" font-size="15">Spreads by blood</text>
+<text x="254" y="344" font-size="15">to bone and lung</text>
+<text class="gd" x="254" y="370" font-size="15">Good outlook</text>
+<rect x="456" y="140" width="204" height="298" rx="10" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="470" y="166" font-size="16">Anaplastic</text>
+<text x="470" y="190" font-size="15">Older adults</text>
+<text x="470" y="212" font-size="15">Undifferentiated</text>
+<text x="470" y="234" font-size="15">Grows over weeks</text>
+<text x="470" y="256" font-size="15">Invades trachea,</text>
+<text x="470" y="278" font-size="15">esophagus, nerves</text>
+<text x="470" y="300" font-size="15">TP53 loss</text>
+<text x="470" y="322" font-size="15">Often arises from</text>
+<text x="470" y="344" font-size="15">the first two</text>
+<text class="cr" x="470" y="370" font-size="15">Dismal outlook</text>
+<rect x="672" y="140" width="204" height="298" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="686" y="166" font-size="16">Medullary</text>
+<text x="686" y="190" font-size="15">Secretes calcitonin</text>
+<text x="686" y="212" font-size="15">Amyloid stroma</text>
+<text x="686" y="234" font-size="15">(Congo red)</text>
+<text x="686" y="256" font-size="15">RET gain of function</text>
+<text x="686" y="278" font-size="15">Sporadic or MEN2A,</text>
+<text x="686" y="300" font-size="15">MEN2B: remove the</text>
+<text x="686" y="322" font-size="15">gland in carriers</text>
+<text x="686" y="344" font-size="15">Radioiodine fails:</text>
+<text x="686" y="366" font-size="15">C cells ignore iodine</text>
+<rect x="24" y="456" width="852" height="64" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="40" y="480" font-size="16">Primary thyroid lymphoma: B cells, not thyroid cells</text>
+<text x="40" y="505" font-size="15">Arises in long-standing Hashimoto thyroiditis as a fast-growing, firm gland</text>
+<rect x="24" y="534" width="852" height="64" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="40" y="558" font-size="16">Tumor markers after thyroidectomy</text>
+<text x="40" y="583" font-size="15">Thyroglobulin: papillary and follicular. Calcitonin (and CEA): medullary. None: anaplastic.</text>
+</svg>

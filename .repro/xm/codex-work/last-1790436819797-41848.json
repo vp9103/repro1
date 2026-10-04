@@ -1,0 +1,33 @@
+{
+  "errors": [
+    {
+      "what": "“TRH (pulsatile)” on the hypothalamus-to-pituitary arrow",
+      "why_wrong": "This ovarian axis uses pulsatile GnRH. TRH primarily regulates thyroid-stimulating hormone (TSH), so this label teaches the wrong hypothalamic signal. [Endotext](https://www.ncbi.nlm.nih.gov/sites/books/NBK279070/)",
+      "severity": "error"
+    },
+    {
+      "what": "“TSH and ACTH” on the pituitary-to-ovary arrow",
+      "why_wrong": "The anterior pituitary signals the ovary through LH and FSH, not TSH or ACTH. [Endotext](https://www.ncbi.nlm.nih.gov/sites/books/NBK279070/)",
+      "severity": "error"
+    },
+    {
+      "what": "The solid estradiol feedback arrows and “(positive at mid-cycle: LH surge)”",
+      "why_wrong": "The same arrows depict both negative feedback and the mid-cycle positive switch without showing which effect applies when. The distinction is left entirely to the label.",
+      "severity": "misleading"
+    },
+    {
+      "what": "The dashed inhibin arrow ends at the undifferentiated “Anterior pituitary” box",
+      "why_wrong": "Although the nearby text says inhibin suppresses FSH only, the diagram does not identify an FSH output or show its selective suppression.",
+      "severity": "misleading"
+    },
+    {
+      "what": "Small diagram labels and low-contrast brown text",
+      "why_wrong": "The labels are readable at the supplied size but require effort; no text appears clipped or overlapping.",
+      "severity": "cosmetic"
+    }
+  ],
+  "legibility": 4,
+  "teaches_caption": false,
+  "overall": 2,
+  "verdict": "The caption describes the ovarian axis correctly, but the diagram labels its two central hormone pathways with hormones from other endocrine axes."
+}

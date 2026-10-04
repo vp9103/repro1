@@ -1,0 +1,185 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp22",
+ "hash": "354d75c14fa9",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:15:29",
+ "gaps": [
+  {
+   "gid": "GAP-rp22-01",
+   "concept": "LH stimulates Leydig testosterone production; FSH stimulates Sertoli cells and spermatogenesis; Sertoli inhibin B selectively suppresses FSH.",
+   "why_tested": "An infertility panel separates Leydig dysfunction from impaired sperm production. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279031/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-02",
+   "concept": "Low inhibin B with high FSH and normal testosterone suggests isolated seminiferous tubule damage.",
+   "why_tested": "An azoospermic man has normal virilization but impaired Sertoli cell function. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279145/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-03",
+   "concept": "Confirm low testosterone with repeat early-morning testing; altered sex hormone–binding globulin can make total and free testosterone disagree.",
+   "why_tested": "An obese or older man has a borderline total testosterone result. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279145/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp22-04",
+   "concept": "Kallmann syndrome causes anosmia and hypogonadotropic hypogonadism through failed migration of olfactory and GnRH neurons.",
+   "why_tested": "A man with delayed puberty and infertility cannot smell. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279078/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-05",
+   "concept": "Klinefelter syndrome is usually 47,XXY, with small firm testes, azoospermia, hyalinized seminiferous tubules, and Leydig cell hyperplasia.",
+   "why_tested": "A tall infertile man has gynecomastia and markedly small testes. [NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK482314/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-06",
+   "concept": "Hyperprolactinemia suppresses GnRH; dopamine agonists can restore gonadotropin secretion when a prolactinoma causes hypogonadism.",
+   "why_tested": "An infertile man has low libido, low LH, and elevated prolactin. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279160/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-07",
+   "concept": "Pulsatile GnRH or hCG plus FSH can restore spermatogenesis in hypogonadotropic infertility; hCG acts at the LH receptor.",
+   "why_tested": "A man with secondary hypogonadism wants fertility while receiving testosterone. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279078/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-08",
+   "concept": "Y-chromosome AZF-region microdeletions cause severe oligospermia or nonobstructive azoospermia, often without other abnormalities.",
+   "why_tested": "An otherwise healthy man has severe sperm-production failure and a normal examination. [GeneReviews](https://www.ncbi.nlm.nih.gov/books/NBK1339/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp22-09",
+   "concept": "Congenital bilateral absence of the vas deferens can produce low-volume, acidic semen lacking fructose when seminal vesicles are also absent.",
+   "why_tested": "Azoospermia occurs despite preserved testicular sperm production. [NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK578191/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp22-10",
+   "concept": "A left-sided, standing-dependent “bag of worms” varicocele impairs spermatogenesis by disrupting pampiniform heat exchange.",
+   "why_tested": "A subfertile man has a scrotal mass that diminishes when supine. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279160/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-11",
+   "concept": "Retrograde ejaculation causes low-volume or absent ejaculate with sperm in postejaculatory urine, often after autonomic injury or prostate surgery.",
+   "why_tested": "An infertile man reports a dry orgasm after pelvic surgery. [NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK564369/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp22-12",
+   "concept": "Sulfasalazine can reversibly reduce sperm count and motility.",
+   "why_tested": "A man taking sulfasalazine develops infertility despite normal sexual function. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279160/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp22-13",
+   "concept": "Parasympathetic S2–S4 nitric oxide release activates guanylyl cyclase and cGMP for erection; sympathetic T11–L2 activity mediates emission.",
+   "why_tested": "A spinal injury or pelvic operation causes erectile or ejaculatory dysfunction. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK278925/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-14",
+   "concept": "PDE5 inhibitors amplify the nitric oxide–cGMP response and therefore require sexual stimulation; they do not directly increase libido.",
+   "why_tested": "A patient expects sildenafil to produce an erection without arousal. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK278925/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-15",
+   "concept": "Intracavernosal alprostadil is a PGE1 analog that raises cAMP to relax cavernosal smooth muscle; adverse effects include penile pain and priapism.",
+   "why_tested": "Erectile dysfunction persists despite oral therapy, or an injection is followed by prolonged erection. [NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK542217/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-16",
+   "concept": "Diabetes can cause erectile dysfunction through both autonomic neuropathy and endothelial dysfunction.",
+   "why_tested": "A diabetic man loses spontaneous erections and has vascular disease. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK278925/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-17",
+   "concept": "SSRIs can delay ejaculation therapeutically but also cause decreased libido, erectile dysfunction, and anorgasmia.",
+   "why_tested": "Sexual symptoms begin after starting an antidepressant. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK278925/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp22-18",
+   "concept": "Peyronie disease produces a fibrous tunica albuginea plaque, painful curved erections, and sometimes erectile dysfunction.",
+   "why_tested": "A man reports penile curvature and a palpable plaque during erection. [NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK560628/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp22-19",
+   "concept": "Gynecomastia reflects an increased estrogen-to-androgen effect; a firm subareolar glandular disk distinguishes it from diffuse fatty enlargement.",
+   "why_tested": "Breast enlargement accompanies low testosterone, obesity, or medication use. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279105/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-20",
+   "concept": "5α-reductase inhibitors lower DHT and can cause decreased libido, erectile dysfunction, reduced ejaculate volume, and lower measured PSA.",
+   "why_tested": "Sexual symptoms or a changed PSA follow finasteride treatment. [FDA label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/020180s048lbl.pdf)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-21",
+   "concept": "Type 2 5α-reductase deficiency causes low DHT, an elevated testosterone-to-DHT ratio, undervirilized external genitalia, and pubertal virilization.",
+   "why_tested": "A 46,XY adolescent raised female develops male secondary sexual characteristics at puberty. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279000/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-22",
+   "concept": "Androgen receptor loss of function causes androgen insensitivity: normal-to-high testosterone and LH despite impaired virilization.",
+   "why_tested": "A 46,XY person has testes but discordant external genital development and hormone results. [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279160/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-23",
+   "concept": "α1 blockers relax prostatic and bladder-neck smooth muscle; adverse effects include orthostatic hypotension and ejaculatory dysfunction.",
+   "why_tested": "A man treated for urinary symptoms develops dizziness or reduced ejaculation. [NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK310305/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp22-24",
+   "concept": "Continuous GnRH agonists such as leuprolide initially raise LH and testosterone, then downregulate pituitary receptors and suppress both.",
+   "why_tested": "Prostate-cancer symptoms briefly worsen after starting androgen deprivation. [NCI](https://www.cancer.gov/types/prostate/prostate-hormone-therapy-fact-sheet)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-25",
+   "concept": "GnRH antagonists such as degarelix suppress testosterone without the initial tumor flare caused by GnRH agonists.",
+   "why_tested": "A prostate-cancer vignette asks which androgen-deprivation drug avoids flare. [NCI](https://www.cancer.gov/types/prostate/prostate-hormone-therapy-fact-sheet)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-26",
+   "concept": "Abiraterone inhibits CYP17 androgen synthesis; mineralocorticoid excess can cause hypertension, fluid retention, and hypokalemia.",
+   "why_tested": "A patient on androgen-deprivation therapy develops hypertension and low potassium. [FDA label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/202379s027s028lbl.pdf)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp22-27",
+   "concept": "Androgen-deprivation therapy can cause hot flashes, loss of libido, erectile dysfunction, and reduced bone density.",
+   "why_tested": "Systemic adverse effects appear after treatment for prostate cancer. [NCI](https://www.cancer.gov/types/prostate/prostate-hormone-therapy-fact-sheet)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp22-28",
+   "concept": "Flutamide can cause hepatotoxicity; ketoconazole can suppress adrenal steroid synthesis and cause adrenal insufficiency.",
+   "why_tested": "An antiandrogen-treated patient develops liver injury or cortisol deficiency. [NCI](https://www.cancer.gov/types/prostate/prostate-hormone-therapy-fact-sheet)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp22-29",
+   "concept": "Oral 17α-alkylated anabolic steroids are associated with cholestasis, peliosis hepatis, and hepatic adenomas.",
+   "why_tested": "A bodybuilder using anabolic steroids presents with jaundice or a liver mass. [LiverTox](https://www.ncbi.nlm.nih.gov/books/NBK548931/)",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp22-1790442758226.jsonl"
+}

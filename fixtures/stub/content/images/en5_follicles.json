@@ -1,0 +1,68 @@
+{
+ "n": "Thyroid follicles (synthetic test image)",
+ "file": "en5_follicles.jpg",
+ "dx": "Normal thyroid follicles",
+ "wrong": [
+  "Papillary thyroid carcinoma",
+  "Graves disease follicles",
+  "Hashimoto thyroiditis",
+  "Medullary thyroid carcinoma"
+ ],
+ "ww": {
+  "Papillary thyroid carcinoma": "Papillary carcinoma shows branching papillae with optically clear, grooved nuclei, not round follicles full of colloid.",
+  "Graves disease follicles": "Graves follicles are lined by tall hyperplastic cells with pale, scalloped colloid from rapid hormone release.",
+  "Hashimoto thyroiditis": "Hashimoto thyroiditis shows lymphoid follicles with germinal centers and pink Hurthle cells replacing the follicles.",
+  "Medullary thyroid carcinoma": "Medullary carcinoma is sheets of parafollicular C cells with amyloid stroma, not colloid-filled follicles."
+ },
+ "look": "Round follicles lined by a single layer of flat to cuboidal cells, each filled with a lake of pink colloid. The colloid is stored thyroglobulin, waiting for TSH to trigger its endocytosis and the release of T4 and T3.",
+ "cred": "Synthetic test image made for the engine test bed",
+ "by": "Test bed",
+ "lic": "CC0",
+ "licurl": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "srcurl": "https://example.org/stub-image",
+ "mod": false,
+ "modality": "diagram",
+ "findings": [
+  "A colloid-filled follicle, the storage lake of thyroglobulin",
+  "The single layer of follicular cells lining it"
+ ],
+ "ann": [
+  {
+   "k": "c",
+   "x": 30,
+   "y": 36,
+   "r": 7,
+   "px": 30,
+   "py": 18,
+   "l": "<b>Colloid-filled follicle.</b> The pink lake is thyroglobulin stored outside the cells, waiting for TSH to trigger its endocytosis."
+  },
+  {
+   "k": "arrow",
+   "x": 55,
+   "y": 52,
+   "tx": 70,
+   "ty": 66,
+   "px": 70,
+   "py": 66,
+   "l": "<b>Follicular cell layer.</b> A single row of cuboidal cells traps iodide and makes thyroglobulin; they grow tall when TSH or Graves antibodies stimulate them."
+  },
+  {
+   "k": "bracket",
+   "x": 84,
+   "y": 20,
+   "x2": 84,
+   "y2": 42,
+   "px": 88,
+   "py": 18,
+   "l": "<b>Follicle diameter.</b> Large, colloid-rich follicles mean hormone is being stored rather than released quickly."
+  },
+  {
+   "k": "none",
+   "x": 12,
+   "y": 88,
+   "px": 12,
+   "py": 88,
+   "l": "<b>Whole-field pattern.</b> Uniform round follicles with no papillae and no lymphoid infiltrate is the normal architecture."
+  }
+ ]
+}

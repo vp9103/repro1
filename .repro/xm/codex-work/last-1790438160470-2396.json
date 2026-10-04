@@ -1,0 +1,33 @@
+{
+  "errors": [
+    {
+      "what": "“Estradiol and progesterone suppress GnRH, LH and FSH for most of the cycle.”",
+      "why_wrong": "This makes progesterone sound like a sustained regulator throughout the follicular phase, when its major rise and negative feedback occur after ovulation. The feedback varies by cycle phase.",
+      "severity": "misleading"
+    },
+    {
+      "what": "“Inhibin B from granulosa cells suppresses FSH only.”",
+      "why_wrong": "Its selective effect on FSH is correct, but presenting inhibin B as the inhibin feedback loop for the whole cycle omits inhibin A, which predominates in the luteal phase. See [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279054/).",
+      "severity": "misleading"
+    },
+    {
+      "what": "“(+) mid-cycle only: LH surge”",
+      "why_wrong": "The LH surge is the dominant response, but a smaller FSH surge also occurs at mid-cycle. The label can suggest FSH does not rise. See [Endotext](https://www.ncbi.nlm.nih.gov/books/NBK279054/).",
+      "severity": "misleading"
+    },
+    {
+      "what": "The dotted inhibin arrow ends at the “Anterior pituitary” box.",
+      "why_wrong": "The arrow does not visually identify the FSH output as its selective target; that distinction relies on the nearby text.",
+      "severity": "misleading"
+    },
+    {
+      "what": "The diagram and legend occupy only the upper part of a tall image, with very small labels.",
+      "why_wrong": "The unused space makes the feedback labels and legend unnecessarily hard to read at the supplied size.",
+      "severity": "cosmetic"
+    }
+  ],
+  "legibility": 3,
+  "teaches_caption": true,
+  "overall": 6,
+  "verdict": "The main arrow directions and feedback relationships are sound, and the figure covers the caption. Phase-specific hormone roles and the smaller mid-cycle FSH surge need clearer treatment."
+}

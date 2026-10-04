@@ -1,0 +1,131 @@
+{
+ "cmd": "gaps",
+ "key": "topic:en13",
+ "hash": "3f3df3e09ee6",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 11:57:30",
+ "gaps": [
+  {
+   "gid": "GAP-en13-01",
+   "concept": "Zona glomerulosa aldosterone secretion responds chiefly to angiotensin II and elevated potassium, with little sustained dependence on ACTH.",
+   "why_tested": "Identifies the adrenal layer and stimulus when a stem changes potassium, renin, or ACTH.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en13-02",
+   "concept": "Aldosterone increases ENaC and Na⁺/K⁺-ATPase activity in principal cells and hydrogen secretion by intercalated cells.",
+   "why_tested": "Explains sodium retention, potassium loss, and metabolic alkalosis in a mechanism question.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en13-03",
+   "concept": "Familial hyperaldosteronism type I results from a CYP11B1–CYP11B2 fusion that makes aldosterone ACTH-responsive and glucocorticoid-suppressible.",
+   "why_tested": "Identifies inherited, early-onset hypertension that improves with glucocorticoid suppression.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en13-04",
+   "concept": "17α-hydroxylase deficiency increases deoxycorticosterone, causing hypertension and hypokalemia with low renin, low aldosterone, and impaired sexual development.",
+   "why_tested": "Distinguishes this enzyme deficiency from other causes of mineralocorticoid excess.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en13-05",
+   "concept": "11β-HSD2 normally converts cortisol to cortisone; its loss lets cortisol activate mineralocorticoid receptors despite low aldosterone.",
+   "why_tested": "Explains the hormone pattern after licorice ingestion or inherited apparent mineralocorticoid excess.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en13-06",
+   "concept": "Spironolactone can cause gynecomastia through antiandrogen effects; eplerenone is more selective for mineralocorticoid receptors.",
+   "why_tested": "Distinguishes adverse effects of the two drugs used for bilateral adrenal hyperplasia.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en13-07",
+   "concept": "Adrenal medullary chromaffin cells derive from neural crest and act as modified sympathetic postganglionic neurons stimulated by preganglionic acetylcholine.",
+   "why_tested": "Identifies embryologic origin or the receptor mediating stress-induced catecholamine release.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en13-08",
+   "concept": "Cortisol from the adrenal cortex induces medullary PNMT, promoting conversion of norepinephrine to epinephrine.",
+   "why_tested": "Explains why the adrenal medulla produces epinephrine and why extra-adrenal tumors may produce less.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en13-09",
+   "concept": "Tyrosine hydroxylase catalyzes the rate-limiting step of catecholamine synthesis and is inhibited by metyrosine.",
+   "why_tested": "Identifies the enzyme or drug target in a catecholamine synthesis question.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en13-10",
+   "concept": "COMT converts epinephrine and norepinephrine to metanephrine and normetanephrine, respectively.",
+   "why_tested": "Connects the measured metabolites to the catecholamines produced by a suspected pheochromocytoma.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en13-11",
+   "concept": "Extra-adrenal sympathetic chromaffin tumors are paragangliomas; head and neck parasympathetic paragangliomas are usually nonsecretory.",
+   "why_tested": "Distinguishes an adrenal catecholamine-secreting mass from a similar extra-adrenal or nonsecretory tumor.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en13-12",
+   "concept": "Tumor manipulation, anesthesia, and surgery can precipitate a pheochromocytoma hypertensive crisis.",
+   "why_tested": "Explains abrupt severe hypertension during a procedure on an unsuspected adrenal mass.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en13-13",
+   "concept": "MEN2A pairs pheochromocytoma with medullary thyroid carcinoma and hyperparathyroidism; MEN2B features medullary thyroid carcinoma, mucosal neuromas, and marfanoid habitus.",
+   "why_tested": "Distinguishes the RET-associated syndromes from accompanying findings in a pheochromocytoma stem.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en13-14",
+   "concept": "SDHB-associated paragangliomas have a higher metastatic risk than many other hereditary pheochromocytoma or paraganglioma syndromes.",
+   "why_tested": "Links a specific SDH mutation to an aggressive extra-adrenal tumor.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en13-15",
+   "concept": "Metastasis to tissue without normal chromaffin cells establishes metastatic pheochromocytoma; zellballen histology alone cannot establish that behavior.",
+   "why_tested": "Distinguishes a characteristic microscopic pattern from evidence of metastatic disease.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en13-16",
+   "concept": "Catecholamine excess in pheochromocytoma can cause hyperglycemia through reduced insulin secretion and increased hepatic glucose output.",
+   "why_tested": "Explains hyperglycemia accompanying episodic hypertension and adrenergic symptoms.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en13-17",
+   "concept": "Neuroblastoma metastases can cause periorbital ecchymoses and proptosis or bluish skin nodules in infants.",
+   "why_tested": "Identifies an adrenal medullary tumor from characteristic metastatic findings in a young child.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en13-18",
+   "concept": "Some neuroblastomas secrete vasoactive intestinal peptide, producing profuse watery diarrhea and hypokalemia.",
+   "why_tested": "Connects otherwise unexplained secretory diarrhea with a pediatric sympathetic tumor.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en13-19",
+   "concept": "Neuroblastoma can show tumor calcifications and encasement of major vessels on abdominal imaging.",
+   "why_tested": "Helps distinguish a pediatric adrenal mass from a renal mass on imaging.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en13-20",
+   "concept": "Germline activating ALK mutations predispose to familial neuroblastoma.",
+   "why_tested": "Identifies the inherited mutation in a child with neuroblastoma and affected relatives.",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-en13-1790441710438.jsonl"
+}

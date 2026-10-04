@@ -1,0 +1,114 @@
+{
+ "id": "d_rp3_multi",
+ "c": "rp3",
+ "kind": "multi",
+ "t": "Which structure explains the finding?",
+ "tags": [
+  "anatomic-relations",
+  "nerve-supply"
+ ],
+ "key": "Match each finding to the structure whose job explains it: ligaments tether the skin, the fascial plane governs mobility, each axillary nerve owns one muscle or skin territory, and lymphatics carry tumor to nodes in order.",
+ "cols": [
+  {
+   "id": "coop",
+   "l": "Cooper ligaments"
+  },
+  {
+   "id": "fasc",
+   "l": "Retromammary space and pectoral fascia"
+  },
+  {
+   "id": "lt",
+   "l": "Long thoracic nerve"
+  },
+  {
+   "id": "td",
+   "l": "Thoracodorsal nerve"
+  },
+  {
+   "id": "icb",
+   "l": "Intercostobrachial nerve"
+  },
+  {
+   "id": "lymph",
+   "l": "Lymphatics and nodes"
+  }
+ ],
+ "items": [
+  [
+   "Skin dimpling over a carcinoma",
+   "coop",
+   "Tumor that infiltrates and shortens these fibrous bands pulls the attached dermis inward over the mass."
+  ],
+  [
+   "Hold the breast up from dermis to deep fascia",
+   "coop",
+   "These suspensory bands run through the gland between lobes and anchor the skin to the pectoral fascia."
+  ],
+  [
+   "Stretch with age and pregnancy, letting the breast sag",
+   "coop",
+   "When the suspensory bands lengthen, the gland is less supported and droops on the chest wall."
+  ],
+  [
+   "Lets the breast glide over the chest wall",
+   "fasc",
+   "Loose connective tissue behind the gland allows a normal breast and a benign mass to slide over pectoralis major."
+  ],
+  [
+   "Mass locks in place when pectoralis contracts",
+   "fasc",
+   "Tumor that has crossed the gliding plane and attached to the muscle's fascia moves with the contracting muscle."
+  ],
+  [
+   "Plane for placing a subglandular implant",
+   "fasc",
+   "An implant placed behind the gland but in front of the muscle sits in the gliding plane above the fascia."
+  ],
+  [
+   "Winged scapula after axillary dissection",
+   "lt",
+   "Loss of serratus anterior lets the medial border of the scapula lift off the ribs when the patient pushes forward."
+  ],
+  [
+   "Runs down the medial axillary wall on serratus anterior",
+   "lt",
+   "Its superficial course on the side of the chest wall puts it in the field of axillary node surgery."
+  ],
+  [
+   "Weak arm adduction and extension after surgery",
+   "td",
+   "Its muscle, latissimus dorsi, pulls the raised arm down and back, as in climbing or reaching a back pocket."
+  ],
+  [
+   "Runs with its vessels to latissimus dorsi",
+   "td",
+   "It travels along the posterior axillary wall with the thoracodorsal artery and vein, close to the lower nodes."
+  ],
+  [
+   "Numb skin of the medial upper arm after node removal",
+   "icb",
+   "This purely sensory nerve crosses the axillary fat, so it is often cut when nodes are cleared."
+  ],
+  [
+   "Sensory branch of the second intercostal nerve",
+   "icb",
+   "It is the lateral cutaneous branch of T2, which is why its territory is the armpit and inner arm."
+  ],
+  [
+   "Sentinel node found with blue dye or radiotracer",
+   "lymph",
+   "The first node on the drainage path from the tumor is mapped and removed to stage the axilla."
+  ],
+  [
+   "Medial tumor spreads to nodes beside the sternum",
+   "lymph",
+   "The medial quadrants also drain to internal mammary nodes that run with the internal thoracic vessels."
+  ],
+  [
+   "Arm swelling after axillary dissection",
+   "lymph",
+   "Removing many axillary nodes interrupts lymph return from the arm, which causes lymphedema."
+  ]
+ ]
+}

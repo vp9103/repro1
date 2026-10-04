@@ -1,0 +1,52 @@
+<svg class="dia" viewBox="0 0 900 612" role="img" aria-label="Amenorrhea work-up: pregnancy test first; primary amenorrhea sorted by breasts and uterus; secondary amenorrhea sorted by TSH, prolactin and FSH; then a progestin challenge">
+<text class="ttl" x="14" y="24" font-size="17">Amenorrhea work-up: hCG first, then find the failing level</text>
+<rect x="210" y="38" width="480" height="54" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="226" y="60" font-size="16">Step 1 &#183; Pregnancy test (hCG)</text>
+<text x="226" y="82" font-size="15">Positive means pregnancy, the most common cause</text>
+<line x1="450" y1="92" x2="450" y2="104" stroke="var(--ink-2)" stroke-width="2.5"/>
+<line x1="227" y1="104" x2="673" y2="104" stroke="var(--ink-2)" stroke-width="2.5"/>
+<line x1="227" y1="104" x2="227" y2="112" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="221,112 227,120 233,112" fill="var(--ink-2)"/>
+<line x1="673" y1="104" x2="673" y2="112" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="667,112 673,120 679,112" fill="var(--ink-2)"/>
+<rect x="14" y="120" width="426" height="40" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="28" y="146" font-size="16">Primary: no menses by age 15</text>
+<rect x="460" y="120" width="426" height="40" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="474" y="146" font-size="16">Secondary: none for 3 months</text>
+<rect x="14" y="172" width="426" height="104" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="28" y="196" font-size="15">No breasts: no estrogen</text>
+<text x="28" y="220" font-size="15">High FSH: Turner syndrome (45,X)</text>
+<text x="28" y="242" font-size="15">Low FSH: Kallmann syndrome (anosmia)</text>
+<text x="28" y="264" font-size="15">or constitutional delay</text>
+<rect x="14" y="288" width="426" height="80" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="28" y="312" font-size="15">Breasts, no uterus</text>
+<text x="28" y="336" font-size="15">46,XX: M&#252;llerian (vaginal) agenesis</text>
+<text x="28" y="358" font-size="15">46,XY: androgen insensitivity</text>
+<rect x="14" y="380" width="426" height="80" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="28" y="404" font-size="15">Breasts and uterus</text>
+<text x="28" y="428" font-size="15">Imperforate hymen or vaginal septum;</text>
+<text x="28" y="450" font-size="15">otherwise work up as secondary</text>
+<rect x="14" y="472" width="426" height="128" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="28" y="496" font-size="15">Step 3 &#183; Progestin challenge</text>
+<text x="28" y="520" font-size="15">Bleed: estrogen present, outflow open,</text>
+<text x="28" y="542" font-size="15">so the problem is anovulation</text>
+<text x="28" y="566" font-size="15">No bleed: low estrogen or</text>
+<text x="28" y="588" font-size="15">blocked outflow (Asherman)</text>
+<rect x="460" y="172" width="426" height="40" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="474" y="198" font-size="15">Step 2 &#183; TSH, prolactin, FSH</text>
+<rect x="460" y="224" width="426" height="62" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="474" y="248" font-size="15">High prolactin (or TSH)</text>
+<text x="474" y="272" font-size="15">Prolactinoma, drugs, hypothyroidism</text>
+<rect x="460" y="298" width="426" height="82" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="474" y="322" font-size="15">High FSH before age 40</text>
+<text x="474" y="346" font-size="15">Primary ovarian insufficiency:</text>
+<text x="474" y="368" font-size="15">fragile X premutation, autoimmune</text>
+<rect x="460" y="392" width="426" height="82" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="474" y="416" font-size="15">Low or normal FSH, low estradiol</text>
+<text x="474" y="440" font-size="15">Hypothalamic: weight loss, athlete, stress</text>
+<text x="474" y="462" font-size="15">Pituitary: Sheehan, empty sella, Cushing</text>
+<rect x="460" y="486" width="426" height="82" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="474" y="510" font-size="15">All normal</text>
+<text x="474" y="534" font-size="15">Androgen excess: PCOS</text>
+<text x="474" y="556" font-size="15">Prior curettage: Asherman syndrome</text>
+</svg>

@@ -1,0 +1,215 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp9",
+ "hash": "7a25c42d99f0",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:07:07",
+ "gaps": [
+  {
+   "gid": "GAP-rp9-01",
+   "concept": "High FSH with low estradiol indicates ovarian insufficiency; low or normal FSH with low estradiol indicates hypothalamic or pituitary suppression.",
+   "why_tested": "Distinguishes ovarian failure from central causes in an amenorrhea hormone panel. [ASRM](https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-02",
+   "concept": "An FMR1 premutation, autoimmunity, chemotherapy, or pelvic radiation can cause primary ovarian insufficiency before age 40.",
+   "why_tested": "Identifies the cause of amenorrhea with elevated FSH in a young patient. [Merck](https://www.merckmanuals.com/professional/gynecology-and-obstetrics/abnormal-uterine-bleeding/primary-ovarian-insufficiency)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp9-03",
+   "concept": "Turner syndrome causes 45,X gonadal dysgenesis with streak ovaries, low estrogen, elevated FSH, short stature, and an intact uterus.",
+   "why_tested": "Explains primary amenorrhea without breast development in a short adolescent. [ACOG](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/01/mullerian-agenesis-diagnosis-management-and-treatment)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-04",
+   "concept": "Kallmann syndrome results from failed migration of GnRH neurons and causes anosmia with low gonadotropins and delayed puberty.",
+   "why_tested": "Links absent smell to hypogonadotropic primary amenorrhea.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-05",
+   "concept": "MRKH syndrome is Müllerian agenesis in a 46,XX patient with ovaries, normal breasts and pubic hair, absent uterus, and possible renal anomalies.",
+   "why_tested": "Distinguishes MRKH from androgen insensitivity when imaging shows no uterus. [ACOG](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/01/mullerian-agenesis-diagnosis-management-and-treatment)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-06",
+   "concept": "Complete androgen insensitivity causes a 46,XY phenotype with testes, absent uterus, scant pubic hair, male-range testosterone, and breast development through aromatization.",
+   "why_tested": "Distinguishes androgen insensitivity from MRKH in a patient with primary amenorrhea. [ACOG](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/01/mullerian-agenesis-diagnosis-management-and-treatment)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-07",
+   "concept": "An imperforate hymen causes cyclic pelvic pain, hematocolpos, and a bulging bluish membrane despite normal breast development.",
+   "why_tested": "Identifies an outflow obstruction in an adolescent with primary amenorrhea. [ACOG](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/01/mullerian-agenesis-diagnosis-management-and-treatment)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-08",
+   "concept": "Elevated prolactin suppresses GnRH, lowering LH and FSH; galactorrhea with amenorrhea suggests hyperprolactinemia.",
+   "why_tested": "Explains anovulation in a patient with spontaneous milk discharge. [Merck](https://www.merckmanuals.com/en-ca/professional/endocrine-and-metabolic-disorders/pituitary-disorders/prolactinoma)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-09",
+   "concept": "Primary hypothyroidism raises TRH, which stimulates prolactin release and can cause amenorrhea with galactorrhea.",
+   "why_tested": "Links elevated TSH and prolactin in a patient with menstrual loss. [Merck](https://www.merckmanuals.com/en-ca/professional/endocrine-and-metabolic-disorders/pituitary-disorders/prolactinoma)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-10",
+   "concept": "Dopamine-blocking drugs, especially antipsychotics and metoclopramide, can raise prolactin and cause amenorrhea.",
+   "why_tested": "Makes medication history decisive in a galactorrhea vignette. [Merck](https://www.merckmanuals.com/professional/gynecology-and-obstetrics/abnormal-uterine-bleeding/amenorrhea)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-11",
+   "concept": "Sheehan syndrome is postpartum pituitary infarction after severe hemorrhage; failure to lactate can precede amenorrhea.",
+   "why_tested": "Identifies pituitary failure after postpartum bleeding.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-12",
+   "concept": "Asherman syndrome is intrauterine scarring, often after postpartum curettage, causing secondary amenorrhea or infertility.",
+   "why_tested": "Connects uterine instrumentation to absent menses despite preserved ovarian function. [Merck](https://www.merckmanuals.com/professional/gynecology-and-obstetrics/abnormal-uterine-bleeding/abnormal-uterine-bleeding)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-13",
+   "concept": "No progestin-withdrawal bleed suggests low estrogen or damaged endometrium/outflow obstruction; no bleed after estrogen-progestin challenge favors the latter.",
+   "why_tested": "Interprets sequential challenge tests in secondary amenorrhea. [Merck](https://www.merckmanuals.com/professional/gynecology-and-obstetrics/abnormal-uterine-bleeding/amenorrhea)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-14",
+   "concept": "During lactation, elevated prolactin suppresses GnRH and ovulation, producing physiologic amenorrhea.",
+   "why_tested": "Explains absent menses in a breastfeeding patient.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp9-15",
+   "concept": "In PCOS, elevated LH and hyperinsulinemia stimulate ovarian theca cells to produce excess androgens.",
+   "why_tested": "Asks for the hormone-producing cell or mechanism behind hyperandrogenism. [ACOG](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2019/10/screening-and-management-of-the-hyperandrogenic-adolescent)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-16",
+   "concept": "Hyperinsulinemia suppresses hepatic sex hormone-binding globulin, increasing free testosterone despite modest total testosterone elevation.",
+   "why_tested": "Explains hirsutism when total testosterone is only mildly elevated. [ACOG](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2019/10/screening-and-management-of-the-hyperandrogenic-adolescent)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-17",
+   "concept": "PCOS follicles arrest before ovulation, producing numerous small peripheral follicles rather than mature ovulatory follicles.",
+   "why_tested": "Interprets polycystic ovarian morphology on ultrasound.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp9-18",
+   "concept": "Peripheral aromatization of androgens produces estrone in PCOS, while absent ovulation prevents cyclic progesterone secretion.",
+   "why_tested": "Explains persistent endometrial proliferation in a patient with irregular menses.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp9-19",
+   "concept": "Letrozole inhibits aromatase, lowering estrogen feedback and raising FSH to promote follicular development.",
+   "why_tested": "Asks how the listed first-line PCOS ovulation drug works.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-20",
+   "concept": "Spironolactone blocks androgen receptors; hyperkalemia and feminization of a male fetus are relevant adverse effects.",
+   "why_tested": "Tests the mechanism or adverse effect of a hirsutism prescription.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp9-21",
+   "concept": "Anovulatory bleeding follows prolonged estrogen-driven endometrial proliferation without progesterone, causing irregular, sometimes heavy, shedding.",
+   "why_tested": "Distinguishes irregular anovulatory bleeding from heavy but regular ovulatory bleeding. [Merck](https://www.merckmanuals.com/professional/gynecology-and-obstetrics/abnormal-uterine-bleeding/abnormal-uterine-bleeding)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-22",
+   "concept": "Heavy bleeding beginning at menarche, especially with easy bruising or epistaxis, suggests von Willebrand disease.",
+   "why_tested": "Identifies a coagulopathy from an adolescent abnormal-bleeding history. [Merck](https://www.merckmanuals.com/professional/gynecology-and-obstetrics/abnormal-uterine-bleeding/abnormal-uterine-bleeding)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-23",
+   "concept": "Leiomyomas are estrogen-responsive benign smooth-muscle tumors with firm, whorled cut surfaces; submucosal lesions can cause heavy bleeding and infertility.",
+   "why_tested": "Identifies fibroids from an enlarged irregular uterus, imaging, or gross pathology. [Merck](https://www.merckmanuals.com/professional/gynecology-and-obstetrics/uterine-fibroids/uterine-fibroids)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-24",
+   "concept": "Adenomyosis consists of endometrial glands and stroma within myometrium, producing heavy painful menses and a diffusely enlarged, boggy uterus.",
+   "why_tested": "Distinguishes adenomyosis from discrete fibroids or extrauterine endometriosis. [Merck](https://www.merckmanuals.com/en-ca/professional/gynecology-and-obstetrics/miscellaneous-gynecologic-disorders/uterine-adenomyosis)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-25",
+   "concept": "Endometriosis has ectopic endometrial glands and stroma; progressive dysmenorrhea, deep dyspareunia, infertility, powder-burn implants, or chocolate cysts are clues.",
+   "why_tested": "Identifies endometriosis from symptoms, laparoscopy, or ovarian pathology. [Merck](https://www.merckmanuals.com/professional/gynecology-and-obstetrics/endometriosis/endometriosis)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-26",
+   "concept": "Continuous GnRH agonist exposure suppresses gonadotropins and estrogen in endometriosis; hypoestrogenic hot flashes and bone loss may follow.",
+   "why_tested": "Tests the mechanism and adverse effects of hormonal suppression for endometriosis.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp9-27",
+   "concept": "Endometrial polyps can cause intermenstrual bleeding; histology shows glands in fibrous stroma with thick-walled vessels.",
+   "why_tested": "Identifies a focal uterine lesion on ultrasound or biopsy. [NCBI](https://www.ncbi.nlm.nih.gov/books/NBK557824/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp9-28",
+   "concept": "Endometrial hyperplasia shows crowded glands with an increased gland-to-stroma ratio; cytologic atypia increases malignant potential.",
+   "why_tested": "Interprets biopsy after prolonged anovulation and abnormal bleeding. [NCBI](https://www.ncbi.nlm.nih.gov/books/NBK560693/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp9-29",
+   "concept": "Pregnancy must also be excluded in reproductive-age abnormal uterine bleeding, including bleeding that appears to be a menstrual period.",
+   "why_tested": "Makes a pregnancy test the first diagnostic step in a bleeding vignette. [Merck](https://www.merckmanuals.com/professional/gynecology-and-obstetrics/abnormal-uterine-bleeding/abnormal-uterine-bleeding)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp9-30",
+   "concept": "Transvaginal ultrasound assesses structural causes of abnormal bleeding; endometrial sampling assesses malignancy risk in older or high-risk patients.",
+   "why_tested": "Selects the diagnostic test for a structural lesion or concerning endometrial bleeding. [Merck](https://www.merckmanuals.com/professional/gynecology-and-obstetrics/abnormal-uterine-bleeding/abnormal-uterine-bleeding)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp9-31",
+   "concept": "A midluteal progesterone level above 3 ng/mL supports recent ovulation; urinary LH kits detect the preceding surge.",
+   "why_tested": "Interprets ovulation testing during infertility evaluation. [ASRM](https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp9-32",
+   "concept": "Low anti-Müllerian hormone or a low antral follicle count suggests diminished ovarian reserve.",
+   "why_tested": "Interprets ovarian-reserve tests in a patient with infertility. [ASRM](https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp9-33",
+   "concept": "Free intraperitoneal contrast spill on hysterosalpingography indicates tubal patency; absent spill suggests obstruction.",
+   "why_tested": "Requires interpretation of the named infertility imaging test. [ASRM](https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp9-34",
+   "concept": "Ovarian hyperstimulation after gonadotropins or hCG involves VEGF-mediated vascular leakage, causing enlarged ovaries, ascites, hemoconcentration, and thrombosis risk.",
+   "why_tested": "Explains abdominal distension and hemoconcentration after ovulation induction. [ASRM](https://integration.asrm.org/globalassets/_asrm/practice-guidance/practice-guidelines/pdf/prevention_and_treatment_of_moderate_to_severe_ohss.pdf)",
+   "yield": "hi"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp9-1790442247781.jsonl"
+}

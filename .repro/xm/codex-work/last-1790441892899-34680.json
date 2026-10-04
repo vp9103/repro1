@@ -1,0 +1,124 @@
+{
+  "gaps": [
+    {
+      "concept": "MEN1 and MEN2 are autosomal dominant; MEN1 tumors follow a two-hit tumor-suppressor mechanism, whereas RET encodes an activated receptor tyrosine kinase.",
+      "why_tested": "Distinguishes the inheritance and cancer mechanisms in a family with multiple endocrine tumors.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Primary hyperparathyroidism is usually the earliest MEN1 manifestation; elevated calcium with elevated PTH commonly reflects multigland disease.",
+      "why_tested": "Identifies MEN1 in a young patient with hypercalcemia before other tumors become apparent.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Prolactinoma is the most common pituitary tumor in MEN1.",
+      "why_tested": "Links galactorrhea, amenorrhea, or hypogonadism to a familial endocrine tumor syndrome.",
+      "yield": "mid"
+    },
+    {
+      "concept": "MEN2B usually lacks the parathyroid disease seen in MEN2A.",
+      "why_tested": "Separates the two MEN2 syndromes when thyroid and adrenal tumors coexist.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Medullary thyroid carcinoma arises from calcitonin-secreting C cells and contains stromal amyloid derived from calcitonin.",
+      "why_tested": "Identifies the thyroid tumor from elevated calcitonin or Congo red-positive stroma.",
+      "yield": "hi"
+    },
+    {
+      "concept": "MEN2-associated medullary thyroid carcinoma often arises from C-cell hyperplasia and is multifocal or bilateral.",
+      "why_tested": "Distinguishes inherited medullary thyroid carcinoma from a sporadic solitary lesion.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Pheochromocytomas arise from neural crest-derived adrenal medullary chromaffin cells and secrete catecholamines.",
+      "why_tested": "Connects adrenal tumor origin to episodic sympathetic symptoms.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Pheochromocytoma classically causes episodic headache, sweating, palpitations, and hypertension.",
+      "why_tested": "Recognizes a catecholamine-secreting tumor from a characteristic symptom cluster.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Pheochromocytoma is detected by elevated plasma free or urinary fractionated metanephrines.",
+      "why_tested": "Selects the biochemical finding in a patient with episodic hypertension or MEN2.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Pheochromocytoma shows vascular nests of chromaffin cells in a Zellballen pattern.",
+      "why_tested": "Identifies the tumor from an adrenal histology image.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Alpha blockade precedes beta blockade in pheochromocytoma; beta blockade first can provoke unopposed alpha-mediated hypertensive crisis.",
+      "why_tested": "Tests the consequence of starting a beta blocker in a catecholamine-secreting tumor.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Hereditary pheochromocytomas may be bilateral; associated syndromes include MEN2, von Hippel–Lindau disease, and neurofibromatosis type 1.",
+      "why_tested": "Links bilateral adrenal tumors or a syndromic family history to inherited pheochromocytoma.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Loss of succinate dehydrogenase function predisposes to hereditary pheochromocytoma and extra-adrenal paraganglioma.",
+      "why_tested": "Identifies the genetic defect in a family with multiple catecholamine-producing tumors.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Insulinoma causes fasting hypoglycemia with symptoms that resolve after glucose administration: Whipple triad.",
+      "why_tested": "Recognizes an insulin-secreting tumor in a patient with recurrent fasting confusion or diaphoresis.",
+      "yield": "hi"
+    },
+    {
+      "concept": "During insulinoma-induced hypoglycemia, insulin, C-peptide, and proinsulin remain inappropriately elevated; exogenous insulin suppresses C-peptide.",
+      "why_tested": "Distinguishes endogenous insulin secretion from injected insulin in a hypoglycemia workup.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Sulfonylurea exposure mimics insulinoma's insulin and C-peptide pattern; a drug screen distinguishes them.",
+      "why_tested": "Resolves a hypoglycemia vignette when both insulin and C-peptide are elevated.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Gastrinoma produces high fasting gastrin with low gastric pH; proton pump inhibitors or atrophic gastritis can raise gastrin without acid hypersecretion.",
+      "why_tested": "Distinguishes Zollinger–Ellison syndrome from other causes of hypergastrinemia.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Excess gastric acid in Zollinger–Ellison syndrome inactivates pancreatic enzymes, contributing to malabsorption and diarrhea.",
+      "why_tested": "Explains diarrhea accompanying recurrent peptic ulcers.",
+      "yield": "mid"
+    },
+    {
+      "concept": "VIPoma causes secretory diarrhea that persists during fasting, with bicarbonate loss producing non-anion-gap metabolic acidosis.",
+      "why_tested": "Separates VIPoma from osmotic diarrhea and predicts its acid–base pattern.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Somatostatinoma suppresses insulin, cholecystokinin, and gastrin release, explaining diabetes, gallstones, and low gastric acid.",
+      "why_tested": "Connects the tumor's hormone to its combination of metabolic and digestive findings.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Serotonin-producing carcinoid tumors commonly originate from midgut enterochromaffin cells.",
+      "why_tested": "Identifies the likely primary tumor in a patient with carcinoid syndrome and liver metastases.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Bronchial or ovarian carcinoids can cause carcinoid syndrome without liver metastases because their venous drainage bypasses portal circulation.",
+      "why_tested": "Explains carcinoid symptoms when imaging shows no liver metastases.",
+      "yield": "mid"
+    },
+    {
+      "concept": "Carcinoid heart disease typically causes tricuspid regurgitation and pulmonic stenosis through fibrotic valve plaques; pulmonary serotonin inactivation usually spares left-sided valves.",
+      "why_tested": "Predicts the specific valve lesions or explains predominantly right-sided findings.",
+      "yield": "hi"
+    },
+    {
+      "concept": "Carcinoid tumors may trigger acute flushing, bronchospasm, and hemodynamic instability during anesthesia or tumor manipulation.",
+      "why_tested": "Identifies carcinoid crisis in a perioperative vignette.",
+      "yield": "mid"
+    }
+  ]
+}

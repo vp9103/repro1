@@ -1,0 +1,46 @@
+<svg class="dia" viewBox="0 0 900 520" role="img" aria-label="Nine-box grid of thyroid function tests: TSH high, normal or low against free T4 low, normal or high, with the diagnosis each combination points to">
+<text class="ttl" x="14" y="26" font-size="17">Read TSH and free T4 together: the nine-box grid</text>
+<text class="b" x="162" y="72" font-size="15">Free T4 low</text>
+<text class="b" x="408" y="72" font-size="15">Free T4 normal</text>
+<text class="b" x="654" y="72" font-size="15">Free T4 high</text>
+<text class="b" x="22" y="160" font-size="15">TSH high</text>
+<text class="b" x="22" y="302" font-size="15">TSH normal</text>
+<text class="b" x="22" y="444" font-size="15">TSH low</text>
+<rect x="150" y="90" width="234" height="130" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.3"/>
+<text class="b" x="162" y="118" font-size="15">Primary hypothyroidism</text>
+<text x="162" y="142" font-size="14">gland fails, brake is off</text>
+<text x="162" y="164" font-size="14">Hashimoto, iodine lack</text>
+<rect x="396" y="90" width="234" height="130" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.3"/>
+<text class="b" x="408" y="118" font-size="15">Subclinical hypothyroid</text>
+<text x="408" y="142" font-size="14">TSH rises before free T4</text>
+<text x="408" y="164" font-size="14">falls; anti-TPO often +</text>
+<rect x="642" y="90" width="234" height="130" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.3"/>
+<text class="b" x="654" y="118" font-size="15">TSH-secreting adenoma</text>
+<text x="654" y="142" font-size="14">pituitary drives the gland</text>
+<text x="654" y="164" font-size="14">TSH and free T4 both high</text>
+<rect x="150" y="232" width="234" height="130" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.3"/>
+<text class="b" x="162" y="260" font-size="15">Central hypothyroidism</text>
+<text x="162" y="284" font-size="14">TSH inappropriately normal</text>
+<text x="162" y="306" font-size="14">pituitary or hypothalamus</text>
+<rect x="396" y="232" width="234" height="130" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.3"/>
+<text class="b" x="408" y="260" font-size="15">Euthyroid</text>
+<text x="408" y="284" font-size="14">High or low TBG moves</text>
+<text x="408" y="306" font-size="14">total T4, not free T4</text>
+<rect x="642" y="232" width="234" height="130" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.3"/>
+<text class="b" x="654" y="260" font-size="15">Hormone resistance</text>
+<text x="654" y="284" font-size="14">receptor defect: TSH is</text>
+<text x="654" y="306" font-size="14">normal despite high T4</text>
+<rect x="150" y="374" width="234" height="130" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.3"/>
+<text class="b" x="162" y="402" font-size="15">Sick euthyroid, central</text>
+<text x="162" y="426" font-size="14">severe illness: low T3,</text>
+<text x="162" y="448" font-size="14">high reverse T3</text>
+<rect x="396" y="374" width="234" height="130" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.3"/>
+<text class="b" x="408" y="402" font-size="15">Subclinical hyperthyroid</text>
+<text x="408" y="426" font-size="14">if T3 is high: T3 toxicosis</text>
+<text x="408" y="448" font-size="14">hCG in the first trimester</text>
+<text x="408" y="470" font-size="14">also lowers TSH</text>
+<rect x="642" y="374" width="234" height="130" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.3"/>
+<text class="b" x="654" y="402" font-size="15">Primary hyperthyroidism</text>
+<text x="654" y="426" font-size="14">Graves, toxic nodule,</text>
+<text x="654" y="448" font-size="14">thyroiditis, exogenous T4</text>
+</svg>

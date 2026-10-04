@@ -1,0 +1,41 @@
+<svg class="dia" viewBox="0 0 900 520" role="img" aria-label="Decision diagram for thyrotoxicosis: radioactive iodine uptake separates new synthesis (Graves, toxic multinodular goiter, toxic adenoma, hCG or TSH drive) from leak or an outside source (subacute and painless thyroiditis, factitious hormone, struma ovarii)">
+<text class="ttl" x="14" y="26" font-size="17">Low TSH, high free T4: is the gland making hormone or losing it?</text>
+<rect x="250" y="42" width="400" height="44" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.3"/>
+<text class="b" x="266" y="70" font-size="15">Thyrotoxicosis: TSH low, free T4 high</text>
+<line x1="450" y1="86" x2="450" y2="104" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,104 450,112 455,104" fill="var(--ink-2)"/>
+<rect x="250" y="112" width="400" height="44" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.3"/>
+<text class="b" x="266" y="140" font-size="15">Radioactive iodine uptake (RAIU)</text>
+<line x1="300" y1="156" x2="230" y2="186" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="236,180 228,187 238,188" fill="var(--ink-2)"/>
+<line x1="600" y1="156" x2="670" y2="186" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="662,188 672,187 664,180" fill="var(--ink-2)"/>
+<rect x="14" y="192" width="430" height="316" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="28" y="218" font-size="16">High uptake: new synthesis</text>
+<rect x="26" y="232" width="406" height="60" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="38" y="256" font-size="15">Diffuse: Graves disease</text>
+<text x="38" y="280" font-size="14">TSI stimulates every follicle; eye signs</text>
+<rect x="26" y="300" width="406" height="60" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="38" y="324" font-size="15">Patchy: toxic multinodular goiter</text>
+<text x="38" y="348" font-size="14">autonomous nodules; older, no eye signs</text>
+<rect x="26" y="368" width="406" height="60" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="38" y="392" font-size="15">One hot nodule: toxic adenoma</text>
+<text x="38" y="416" font-size="14">activating TSH-receptor mutation</text>
+<rect x="26" y="436" width="406" height="60" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="38" y="460" font-size="15">Diffuse with hCG or TSH drive</text>
+<text x="38" y="484" font-size="14">molar pregnancy; TSH-secreting adenoma</text>
+<rect x="456" y="192" width="430" height="316" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="470" y="218" font-size="16">Low uptake: leak or outside source</text>
+<rect x="468" y="232" width="406" height="60" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="480" y="256" font-size="15">Subacute granulomatous (de Quervain)</text>
+<text x="480" y="280" font-size="14">painful; giant-cell granulomas; high ESR</text>
+<rect x="468" y="300" width="406" height="60" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="480" y="324" font-size="15">Painless or postpartum thyroiditis</text>
+<text x="480" y="348" font-size="14">lymphocytic; thyroglobulin high</text>
+<rect x="468" y="368" width="406" height="60" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="480" y="392" font-size="15">Factitious thyroid hormone</text>
+<text x="480" y="416" font-size="14">low thyroglobulin: pills, not the gland</text>
+<rect x="468" y="436" width="406" height="60" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="480" y="460" font-size="15">Struma ovarii</text>
+<text x="480" y="484" font-size="14">uptake sits in a pelvic teratoma</text>
+</svg>

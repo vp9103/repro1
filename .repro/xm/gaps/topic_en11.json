@@ -1,0 +1,155 @@
+{
+ "cmd": "gaps",
+ "key": "topic:en11",
+ "hash": "bf9248c2badd",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 11:55:56",
+ "gaps": [
+  {
+   "gid": "GAP-en11-01",
+   "concept": "Most congenital adrenal hyperplasias are autosomal recessive; 21-hydroxylase deficiency results from CYP21A2 variants.",
+   "why_tested": "A sibling with salt-wasting CAH prompts an inheritance or recurrence-risk question. [Source](https://www.ncbi.nlm.nih.gov/books/NBK1171/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en11-02",
+   "concept": "StAR transfers cholesterol into mitochondria, the rate-limiting step of steroidogenesis.",
+   "why_tested": "A pathway diagram asks what supplies cholesterol to mitochondrial steroid-synthesis enzymes. [Source](https://pmc.ncbi.nlm.nih.gov/articles/PMC5235947/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en11-03",
+   "concept": "CYP11A1, or cholesterol desmolase, converts cholesterol to pregnenolone, the common precursor of adrenal steroids.",
+   "why_tested": "An enzyme-block question asks for the first product formed from cholesterol.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en11-04",
+   "concept": "3β-hydroxysteroid dehydrogenase converts pregnenolone to progesterone, 17-hydroxypregnenolone to 17-hydroxyprogesterone, and DHEA to androstenedione.",
+   "why_tested": "A steroid-pathway diagram requires identifying the enzyme connecting precursor pairs.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en11-05",
+   "concept": "21-hydroxylase converts progesterone to deoxycorticosterone and 17-hydroxyprogesterone to 11-deoxycortisol.",
+   "why_tested": "A metabolite pattern asks which blocked reaction causes low mineralocorticoid and cortisol production. [Source](https://pmc.ncbi.nlm.nih.gov/articles/PMC5624825/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en11-06",
+   "concept": "11β-hydroxylase converts 11-deoxycortisol to cortisol; elevated 11-deoxycortisol distinguishes its deficiency from 17α-hydroxylase deficiency.",
+   "why_tested": "A hypertensive child with CAH has a steroid panel requiring identification of the deficient enzyme. [Source](https://pmc.ncbi.nlm.nih.gov/articles/PMC4976049/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en11-07",
+   "concept": "Zona glomerulosa lacks 17α-hydroxylase and uses aldosterone synthase, CYP11B2, for the final mineralocorticoid steps.",
+   "why_tested": "A zonal enzyme-expression question asks why glomerulosa makes aldosterone but not cortisol.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en11-08",
+   "concept": "Reticularis produces DHEA and DHEA-S, precursors of androstenedione and testosterone.",
+   "why_tested": "An adrenal androgen panel or pathway diagram asks for the principal secreted adrenal androgen.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en11-09",
+   "concept": "Fasciculata contains lipid-rich pale cells in straight cords; glomerulosa forms clusters; reticularis has branching cords and lipofuscin.",
+   "why_tested": "An adrenal histology image asks which cortical zone is shown. [Source](https://www.ncbi.nlm.nih.gov/books/NBK278945/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en11-10",
+   "concept": "Simple virilizing 21-hydroxylase deficiency preserves enough aldosterone to avoid neonatal salt wasting.",
+   "why_tested": "A virilized child with normal electrolytes must be distinguished from salt-wasting classic CAH.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en11-11",
+   "concept": "Affected 46,XY newborns with 21-hydroxylase deficiency usually have normal external genitalia and may first present with adrenal crisis.",
+   "why_tested": "A male newborn develops vomiting and dehydration after an initially normal examination.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en11-12",
+   "concept": "In 46,XX CAH, the uterus and ovaries remain present despite virilized external genitalia.",
+   "why_tested": "Pelvic imaging in an infant with ambiguous genitalia distinguishes adrenal androgen exposure from absent Müllerian structures.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en11-13",
+   "concept": "Excess adrenal androgens cause premature pubic hair, advanced bone age, rapid childhood growth, and reduced adult height.",
+   "why_tested": "A child with early androgen effects and advanced skeletal maturation has untreated CAH. [Source](https://www.ncbi.nlm.nih.gov/books/NBK1171/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en11-14",
+   "concept": "Cortisol deficiency can cause neonatal hypoglycemia; excess ACTH can cause hyperpigmentation in CAH.",
+   "why_tested": "A newborn with salt wasting also has low glucose or darkened skin.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en11-15",
+   "concept": "Salt-wasting 21-hydroxylase deficiency raises plasma renin activity.",
+   "why_tested": "A neonatal electrolyte panel includes renin and asks whether mineralocorticoid production is deficient.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en11-16",
+   "concept": "In 11β-hydroxylase deficiency, deoxycorticosterone suppresses renin and usually aldosterone despite mineralocorticoid excess.",
+   "why_tested": "A hypertensive, virilized child has low aldosterone, requiring recognition of another mineralocorticoid.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en11-17",
+   "concept": "17α-hydroxylase deficiency increases deoxycorticosterone and corticosterone, suppressing renin and usually aldosterone.",
+   "why_tested": "A hypertensive patient with absent puberty has low aldosterone despite mineralocorticoid effects. [Source](https://pubmed.ncbi.nlm.nih.gov/8070426/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en11-18",
+   "concept": "High corticosterone in 17α-hydroxylase deficiency supplies glucocorticoid activity, making adrenal crisis uncommon despite low cortisol.",
+   "why_tested": "A patient with markedly low cortisol has hypertension without the expected adrenal crisis. [Source](https://pmc.ncbi.nlm.nih.gov/articles/PMC4976049/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en11-19",
+   "concept": "A 46,XY patient with 17α-hydroxylase deficiency has testes and no uterus because testicular anti-Müllerian hormone remains active.",
+   "why_tested": "Imaging of a phenotypically female adolescent with hypertension distinguishes this defect from gonadal dysgenesis.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en11-20",
+   "concept": "Nonclassic 21-hydroxylase deficiency shows elevated basal or ACTH-stimulated 17-hydroxyprogesterone, distinguishing it from PCOS.",
+   "why_tested": "A patient with hirsutism and irregular menses needs a discriminating hormone result. [Source](https://pmc.ncbi.nlm.nih.gov/articles/PMC5624825/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en11-21",
+   "concept": "3β-hydroxysteroid dehydrogenase deficiency causes salt wasting, elevated 17-hydroxypregnenolone and DHEA, and undervirilization of 46,XY infants.",
+   "why_tested": "An infant has adrenal insufficiency and atypical genitalia with a precursor pattern unlike 21-hydroxylase deficiency.",
+   "yield": "lo"
+  },
+  {
+   "gid": "GAP-en11-22",
+   "concept": "StAR deficiency causes lipoid adrenal hyperplasia with accumulated adrenal cholesterol, severe steroid deficiency, and undervirilization of 46,XY infants.",
+   "why_tested": "A newborn with adrenal crisis and enlarged lipid-laden adrenals has a block before pregnenolone formation. [Source](https://pmc.ncbi.nlm.nih.gov/articles/PMC5624825/)",
+   "yield": "lo"
+  },
+  {
+   "gid": "GAP-en11-23",
+   "concept": "Metyrapone inhibits 11β-hydroxylase, lowering cortisol and raising 11-deoxycortisol when pituitary ACTH secretion is intact.",
+   "why_tested": "A pharmacologic stimulation test asks for the expected steroid response after enzyme inhibition. [Source](https://pmc.ncbi.nlm.nih.gov/articles/PMC4974254/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en11-24",
+   "concept": "Abiraterone inhibits CYP17A1, reducing androgen synthesis and causing ACTH-driven mineralocorticoid excess.",
+   "why_tested": "A patient receiving prostate-cancer therapy develops hypertension and hypokalemia. [Source](https://pubmed.ncbi.nlm.nih.gov/22170708/)",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-en11-1790441620635.jsonl"
+}

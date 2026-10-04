@@ -1,0 +1,381 @@
+{
+ "id": "rp24",
+ "t": "Breast cancer",
+ "sub": "How a duct cell becomes an invasive cancer, and how genes, receptors and lymph nodes decide prognosis and the drug each patient gets.",
+ "yld": "hi",
+ "exam": "hi",
+ "mins": 14,
+ "bp": [
+  "BP-rp24-01",
+  "BP-rp24-02",
+  "BP-rp24-03",
+  "BP-rp24-04",
+  "BP-rp24-05",
+  "BP-rp24-06",
+  "BP-rp24-07",
+  "BP-rp24-08",
+  "BP-rp24-09",
+  "BP-rp24-10",
+  "BP-rp24-11",
+  "BP-rp24-12",
+  "BP-rp24-13",
+  "BP-rp24-14",
+  "BP-rp24-15"
+ ],
+ "obj": [
+  "BREAST-HISTO.1",
+  "BREAST-HISTO.2",
+  "BREAST-HISTO.3",
+  "BREAST-HISTO.4",
+  "TBL-BREAST.10",
+  "TBL-BREAST.11",
+  "TBL-BREAST.12",
+  "TBL-BREAST.13",
+  "TBL-BREAST.14",
+  "TBL-BREAST.15",
+  "TBL-BREAST.16",
+  "TBL-BREAST.17",
+  "BICEP-BROWN.2"
+ ],
+ "pretest": [
+  {
+   "q": "Which gene is lost in invasive lobular carcinoma, letting the tumor cells spread in single file?",
+   "o": [
+    "CDH1",
+    "ERBB2",
+    "TP53",
+    "BRCA2"
+   ],
+   "a": 0,
+   "why": "CDH1 encodes E-cadherin, the adhesion protein that holds epithelial cells together. Lobular cells that lose it no longer stick to each other, so they drift through the stroma one cell at a time and often involve both breasts.",
+   "w": {
+    "ERBB2": "ERBB2 encodes the HER2 receptor; its amplification drives growth in about one in five cancers, mostly ductal, and does not change cell adhesion.",
+    "TP53": "TP53 mutation is common in high-grade and triple-negative cancers and causes Li-Fraumeni syndrome, but it does not create the single-file growth pattern.",
+    "BRCA2": "BRCA2 repairs double-strand DNA breaks; its carriers develop mostly estrogen receptor-positive ductal cancers and male breast cancer, not a lobular pattern."
+   }
+  },
+  {
+   "q": "Which drug lowers estrogen by blocking its synthesis in fat after menopause?",
+   "o": [
+    "Anastrozole",
+    "Tamoxifen",
+    "Trastuzumab",
+    "Fulvestrant"
+   ],
+   "a": 0,
+   "why": "Anastrozole is an aromatase inhibitor. After menopause most estrogen is made by aromatase in fat, which converts androstenedione to estrone, so blocking the enzyme starves an estrogen receptor-positive tumor of its hormone.",
+   "w": {
+    "Tamoxifen": "Tamoxifen blocks the estrogen receptor in breast tissue but leaves estrogen production untouched; it works at the receptor, not at synthesis.",
+    "Trastuzumab": "Trastuzumab is an antibody against the HER2 receptor; it treats HER2-amplified tumors and has no effect on circulating estrogen.",
+    "Fulvestrant": "Fulvestrant binds the estrogen receptor and causes its degradation, so it removes the receptor rather than lowering estrogen synthesis."
+   }
+  },
+  {
+   "q": "Which screening mammogram finding is most typical of ductal carcinoma in situ?",
+   "o": [
+    "Clustered microcalcifications",
+    "Spiculated mass",
+    "Smooth oval mass",
+    "Diffuse skin thickening"
+   ],
+   "a": 0,
+   "why": "DCIS cells fill the duct, and the cells in the center outgrow their blood supply and die. The necrotic debris calcifies, so clustered, linear or branching microcalcifications are how most DCIS is found.",
+   "w": {
+    "Spiculated mass": "A spiculated mass reflects invasive carcinoma pulling on surrounding tissue through desmoplasia; DCIS has not invaded and rarely forms a mass.",
+    "Smooth oval mass": "A smooth, well-circumscribed oval mass suggests a benign fibroadenoma or cyst rather than ducts filled with carcinoma in situ.",
+    "Diffuse skin thickening": "Diffuse skin thickening with redness points to inflammatory carcinoma, in which tumor emboli block the lymphatics of the dermis."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Who is at risk, and why does estrogen matter?"
+  ],
+  [
+   "p",
+   "Breast epithelium divides each time estrogen rises in a menstrual cycle, and every division is a chance to copy a DNA error. Therefore anything that adds cycles or adds estrogen raises risk: early **menarche**, late menopause, nulliparity or a first birth after 30, obesity after menopause (fat makes estrogen through aromatase), combined hormone therapy and alcohol. **Dense breast tissue** adds risk and also hides tumors on a mammogram. Chest radiation in youth and atypia on an earlier biopsy raise risk further, while **breastfeeding** lowers it, partly because it suppresses ovulation and completes the maturation of the lobules."
+  ],
+  [
+   "p",
+   "Inherited mutations cause about 5 to 10 percent of breast cancers, so the family history matters. Several affected first-degree relatives, cancer before 50, bilateral or male breast cancer, or ovarian cancer in the family should prompt genetic counseling. {{rp24_brca|BRCA1 and BRCA2}} encode proteins that repair double-strand DNA breaks by **homologous recombination**; a carrier's breast cell that loses the second copy piles up errors. Other genes carry their own syndromes: TP53 in Li-Fraumeni syndrome, PTEN in Cowden syndrome, CDH1 in lobular cancer with diffuse gastric cancer, and STK11 in Peutz-Jeghers syndrome, while PALB2, ATM and CHEK2 add moderate risk."
+  ],
+  [
+   "call",
+   "key",
+   "BRCA1 and BRCA2 make different cancers",
+   "**BRCA1** carriers tend to develop high-grade, triple-negative (basal-like) cancers, often with a medullary pattern, plus high-grade serous ovarian cancer. **BRCA2** carriers tend to develop estrogen receptor-positive cancers and carry the highest risk of male breast cancer, and pancreatic and prostate cancers cluster in their families."
+  ],
+  [
+   "h",
+   "How does a normal duct become an invasive cancer?"
+  ],
+  [
+   "p",
+   "A normal duct has two cell layers, inner luminal cells and outer {{rp24_myo|myoepithelial cells}}, resting on a **basement membrane**. The proposed **precursor** sequence runs from usual ductal hyperplasia to atypical ductal hyperplasia, then to ductal carcinoma in situ (DCIS) and invasive ductal carcinoma; on the lobular side, atypical lobular hyperplasia leads to lobular carcinoma in situ (LCIS) and invasive lobular carcinoma. Atypical cells look like cancer but fill too little space to earn the name. Carcinoma in situ stays inside the basement membrane, so it cannot reach lymphatics or blood vessels. Invasion begins when tumor cells cross the membrane; the myoepithelial layer is gone, and the stroma answers with scar-like **desmoplasia**."
+  ],
+  [
+   "f",
+   "rp24_sequence"
+  ],
+  [
+   "p",
+   "DCIS fills and stretches ducts with malignant cells in solid, **cribriform** (sieve-like, with punched-out spaces) or papillary patterns. In the high-grade **comedo** pattern, the central cells outgrow their blood supply and die, and the necrotic debris calcifies, so DCIS usually appears as clustered **microcalcifications** on a screening mammogram rather than as a lump. LCIS is different: its cells have lost {{rp24_ecad|E-cadherin}}, so they are small, round and loosely attached, they rarely calcify, and LCIS is usually an incidental finding in a biopsy done for another reason."
+  ],
+  [
+   "t",
+   [
+    "Feature",
+    "DCIS",
+    "LCIS"
+   ],
+   [
+    [
+     "Cells",
+     "Pleomorphic and cohesive; E-cadherin kept",
+     "Small, uniform, dyscohesive; **E-cadherin lost**"
+    ],
+    [
+     "Pattern",
+     "Solid, cribriform, papillary or comedo",
+     "Lobules filled and expanded by bland cells"
+    ],
+    [
+     "Mammogram",
+     "Clustered or branching microcalcifications",
+     "Usually invisible; found incidentally"
+    ],
+    [
+     "Risk it carries",
+     "Invasive ductal cancer in the same breast",
+     "Invasive cancer in either breast (bilateral)"
+    ],
+    [
+     "Management",
+     "Excision, often radiation, tamoxifen if ER-positive",
+     "Close surveillance and risk-reducing drugs"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "LCIS is a risk marker, not a lesion to chase",
+   "Because LCIS predicts cancer in **both breasts**, removing the biopsy site does not remove the risk, and the cancers that follow are often ductal. LCIS is therefore managed with surveillance and risk-reducing drugs, while DCIS is excised because it becomes invasive where it sits."
+  ],
+  [
+   "h",
+   "Which invasive type is it, and what does each look like?"
+  ],
+  [
+   "p",
+   "**Invasive ductal carcinoma** (no special type) causes about 70 to 80 percent of cases. Its desmoplastic stroma makes a hard, gritty, stellate mass that tethers the skin. **Invasive lobular carcinoma** carries the same CDH1 loss as LCIS, so its cells infiltrate in **single-file** rows without forming a discrete mass; it is more often bilateral or multicentric, it can hide on a mammogram, and it spreads to unusual sites such as the peritoneum, gut, ovaries and meninges. Most cancers arise in the upper outer quadrant because that quadrant, with its axillary tail (tail of Spence), holds the most glandular tissue."
+  ],
+  [
+   "p",
+   "**Medullary** carcinoma, linked to BRCA1, forms soft, well-circumscribed syncytial sheets of large cells surrounded by lymphocytes. Mucinous (colloid) carcinoma floats small nests of cells in lakes of mucin, favors older women and has a good prognosis, as does tubular carcinoma, built of small well-formed tubules. Metaplastic carcinoma, with squamous or spindle-cell elements, is triple-negative and aggressive. **Inflammatory carcinoma** is a clinical picture rather than a cell type: tumor emboli plug dermal lymphatics, so the breast turns red, warm and swollen with dimpled **peau d'orange** skin, and the prognosis is poor. {{rp24_paget|Paget disease of the nipple}} is a crusted, eczematous nipple caused by carcinoma cells that spread into the epidermis from an underlying DCIS or invasive cancer."
+  ],
+  [
+   "t",
+   [
+    "Type",
+    "Look",
+    "Clue",
+    "Outlook"
+   ],
+   [
+    [
+     "Invasive ductal",
+     "Stellate mass, desmoplasia",
+     "Most common",
+     "Set by grade, receptors and nodes"
+    ],
+    [
+     "Invasive lobular",
+     "Single-file cells, no mass",
+     "E-cadherin loss; bilateral",
+     "Similar to ductal; odd metastases"
+    ],
+    [
+     "Medullary",
+     "Syncytial sheets, lymphocytes",
+     "BRCA1; triple-negative",
+     "Better than its grade suggests"
+    ],
+    [
+     "Mucinous (colloid)",
+     "Cell nests in mucin lakes",
+     "Older women",
+     "Good"
+    ],
+    [
+     "Tubular",
+     "Small, well-formed tubules",
+     "Often found on screening",
+     "Excellent"
+    ],
+    [
+     "Metaplastic",
+     "Squamous or spindle elements",
+     "Triple-negative",
+     "Poor"
+    ],
+    [
+     "Inflammatory",
+     "Tumor in dermal lymphatics",
+     "Red breast, peau d'orange",
+     "Poor"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How do receptors decide prognosis and treatment?"
+  ],
+  [
+   "p",
+   "Every invasive cancer is tested for the **estrogen receptor**, the progesterone receptor and HER2, because each one is a drug target. Gene expression profiling sorts invasive ductal carcinomas into four molecular classes. **Luminal A** tumors are hormone receptor-positive, HER2-negative and slow-growing, with a low Ki-67 index, so they respond to endocrine therapy and have the best prognosis. Luminal B tumors are also ER-positive but divide faster or carry HER2, so they often need chemotherapy. HER2-enriched tumors have ERBB2 amplification and respond to anti-HER2 drugs. Basal-like, mostly **triple-negative** tumors lack all three receptors; they are common in BRCA1 carriers and young Black women, grow fast and depend on chemotherapy. For an ER-positive, node-negative cancer, a 21-gene recurrence score estimates whether chemotherapy adds benefit."
+  ],
+  [
+   "f",
+   "rp24_classes"
+  ],
+  [
+   "p",
+   "{{rp24_her2|HER2}}, encoded by **ERBB2**, is a receptor tyrosine kinase with no ligand of its own. When the gene is amplified, the crowded receptors pair with each other and with other HER family members, and their kinase domains switch on the RAS-MAPK and PI3K-AKT pathways that drive growth and survival. **Trastuzumab**, a monoclonal antibody against the receptor's outer domain, blocks this signal and marks the cells for immune attack; its main adverse effect is cardiotoxicity, a fall in ejection fraction that usually reverses when the drug is held."
+  ],
+  [
+   "steps",
+   [
+    "From ERBB2 amplification to targeted drugs",
+    [
+     [
+      "Gene amplification",
+      "Extra copies of ERBB2 crowd the cell surface with HER2 receptors, which is what HER2 testing detects."
+     ],
+     [
+      "Pairing and kinase activation",
+      "Crowded receptors dimerize without a ligand and their tyrosine kinase domains phosphorylate each other; pertuzumab blocks this pairing."
+     ],
+     [
+      "Growth signals",
+      "The active receptor switches on RAS-MAPK and PI3K-AKT signaling, so the cell divides and resists apoptosis; lapatinib and tucatinib block the kinase inside the cell."
+     ],
+     [
+      "Antibody attack",
+      "Trastuzumab binds the outer domain, reduces signaling and recruits natural killer cells; antibody-drug conjugates such as trastuzumab deruxtecan carry a toxic payload inside."
+     ]
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Endocrine therapy starves receptor-positive cancer of estrogen signaling, and the drug depends on where the estrogen comes from. **Tamoxifen**, the usual choice before menopause, is a selective estrogen receptor modulator: it blocks the receptor in breast but stimulates it in endometrium and bone, so it raises the risk of endometrial cancer and venous thromboembolism while protecting bone. **Aromatase inhibitors** (anastrozole, letrozole, exemestane) block the peripheral conversion of androgens to estrogens and are used after menopause; they cause bone loss and joint pain. Fulvestrant degrades the receptor, CDK4/6 inhibitors add cell-cycle blockade in advanced disease, and raloxifene lowers breast cancer risk without stimulating the endometrium. PARP inhibitors such as olaparib kill BRCA-deficient cells, which cannot repair the DNA breaks that pile up when PARP is blocked."
+  ],
+  [
+   "why",
+   "Why do aromatase inhibitors work only after menopause?",
+   "Before menopause the ovary makes most estrogen under the drive of FSH and LH. An aromatase inhibitor lowers estrogen, the pituitary senses the fall and releases more gonadotropins, and the stimulated ovary overcomes the partial block. After menopause the ovary no longer responds, and most estrogen comes from aromatase in fat, which converts androstenedione to estrone. Blocking that enzyme removes nearly all of the remaining estrogen. A premenopausal woman can take an aromatase inhibitor only if her ovaries are also suppressed with a GnRH agonist or removed."
+  ],
+  [
+   "call",
+   "trap",
+   "Two drugs, two kinds of heart damage",
+   "Trastuzumab lowers the ejection fraction by blocking HER2 survival signals in cardiac myocytes; the damage is not dose-dependent and usually recovers when the drug is held. Anthracyclines such as doxorubicin kill myocytes through free radicals, so their cardiotoxicity is dose-dependent and largely permanent. Echocardiography monitors both."
+  ],
+  [
+   "h",
+   "What predicts outcome, and how is cancer found early?"
+  ],
+  [
+   "p",
+   "Axillary **lymph node** status is the strongest single predictor of prognosis, because nodal spread proves the tumor can leave the breast. Tumor size, histologic grade, receptor status and distant metastasis complete the picture and set the stage. Breast cancer spreads first to axillary nodes and then to bone, liver, lung and brain. Screening **mammography** finds cancers before they can be felt; as of 2024 the USPSTF recommends a mammogram every two years from age 40 to 74 for women at average risk, and BRCA carriers add yearly MRI. Male breast cancer is rare, usually invasive ductal and ER-positive, and linked to BRCA2 and Klinefelter syndrome."
+  ],
+  [
+   "call",
+   "key",
+   "The node beats the tumor",
+   "A small tumor with positive axillary nodes usually has a worse prognosis than a larger tumor with negative nodes. That is why sentinel lymph node biopsy is part of surgery: the first node draining the tumor shows whether spread has begun, and a negative sentinel node spares a full axillary dissection."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp24_parp",
+    "q": "A BRCA1 carrier has triple-negative breast cancer. Which reasoning best explains why a PARP inhibitor helps her?",
+    "o": [
+     "PARP inhibitors block estrogen synthesis, which drives the growth of triple-negative tumors",
+     "Her tumor cells lack homologous recombination, so blocking PARP leaves DNA breaks they cannot fix",
+     "PARP inhibitors bind HER2 on the tumor surface and recruit natural killer cells",
+     "The drug restores BRCA1 function, so the tumor cells regain DNA repair and stop dividing"
+    ],
+    "a": 1,
+    "why": "PARP repairs single-strand DNA breaks. When PARP is blocked, those breaks become double-strand breaks during replication. Normal cells fix them by homologous recombination, but tumor cells that have lost both BRCA1 copies cannot, so they die while her normal cells, which keep one working copy, survive. This is synthetic lethality: either defect alone is tolerated, but both together kill the cell."
+   }
+  ],
+  [
+   "vis",
+   "rp24"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these raise the risk of breast cancer?",
+  "items": [
+   [
+    "Menarche at age 10",
+    1
+   ],
+   [
+    "Menopause at age 56",
+    1
+   ],
+   [
+    "First full-term pregnancy at 36",
+    1
+   ],
+   [
+    "Obesity after menopause",
+    1
+   ],
+   [
+    "Combined estrogen-progestin hormone therapy",
+    1
+   ],
+   [
+    "Two alcoholic drinks a day",
+    1
+   ],
+   [
+    "Dense breast tissue on mammography",
+    1
+   ],
+   [
+    "Atypical ductal hyperplasia on a prior biopsy",
+    1
+   ],
+   [
+    "Chest radiation for lymphoma at 15",
+    1
+   ],
+   [
+    "A pathogenic BRCA2 variant",
+    1
+   ],
+   [
+    "Breastfeeding for more than a year",
+    0
+   ],
+   [
+    "First full-term pregnancy at 20",
+    0
+   ],
+   [
+    "A simple breast cyst drained last year",
+    0
+   ],
+   [
+    "Premenopausal oophorectomy",
+    0
+   ]
+  ]
+ }
+}

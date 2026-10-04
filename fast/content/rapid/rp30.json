@@ -1,0 +1,630 @@
+[
+ {
+  "id": "rp30r01",
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp30-01"
+  ],
+  "q": "Naegele's rule estimates the due date by adding which adjustment to the first day of the last menstrual period?",
+  "o": [
+   "7 days and subtract 3 months",
+   "14 days and add 3 months",
+   "7 days and add 3 months",
+   "28 days and subtract 3 months",
+   "40 days and subtract 3 months"
+  ],
+  "a": 0,
+  "x": "Naegele's rule assumes a 28-day cycle with ovulation on day 14, so adding 7 days and subtracting 3 months lands about 280 days after the last menstrual period; irregular cycles break that assumption and call for an early ultrasound date.",
+  "w": {
+   "14 days and add 3 months": "Adding 3 months reaches only the end of the first trimester, nowhere near term; a pregnancy lasts nine months, which equals one year minus three months.",
+   "7 days and add 3 months": "Moving forward 3 months lands near week 13, the end of the first trimester; the full 40 weeks is reached by counting back three months from the following year.",
+   "28 days and subtract 3 months": "Adding a full 28 days overshoots by three weeks, because nine calendar months plus 7 days approximates 280 days after the last menstrual period.",
+   "40 days and subtract 3 months": "Forty days overshoots by more than five weeks; the extra 7 days only compensate for the difference between nine calendar months and forty weeks."
+  },
+  "media": "fig:rp30_timeline",
+  "pt": {
+   "hl": [
+    "0 (LMP)"
+   ],
+   "say": "Week 0 on the axis is the first day of the last menstrual period, and Naegele's rule adds 7 days to it and subtracts 3 months to reach the due date."
+  }
+ },
+ {
+  "id": "rp30r02",
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp30-01"
+  ],
+  "q": "Which gestational age marks the beginning of a term pregnancy?",
+  "o": [
+   "37 weeks",
+   "34 weeks",
+   "35 weeks",
+   "39 weeks",
+   "41 weeks"
+  ],
+  "a": 0,
+  "x": "Term begins at 37 weeks, preterm covers 20 to 36 6/7 weeks, and post-term starts at 42 weeks; a loss before 20 weeks is called an abortion.",
+  "w": {
+   "34 weeks": "At 34 weeks the infant is still preterm, with immature lungs and a risk of respiratory distress and feeding problems, so it is not classified as term.",
+   "35 weeks": "A 35-week infant is late preterm and carries risks of hypoglycemia, jaundice and breathing difficulty, so term has not yet begun.",
+   "39 weeks": "Thirty-nine weeks is full term, a subcategory inside the term range that began two weeks earlier, so it is not the start of term.",
+   "41 weeks": "Forty-one weeks is late term, still within the term range, and the post-term label begins a full week later at 42 weeks."
+  },
+  "media": "fig:rp30_timeline",
+  "pt": {
+   "hl": [
+    "Term",
+    "Preterm: 20 to 36 6/7 weeks"
+   ],
+   "say": "The Term box begins at 37 weeks, just where the preterm box ends at 36 6/7 weeks."
+  }
+ },
+ {
+  "id": "rp30r03",
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp30-02"
+  ],
+  "q": "In TPAL notation, which events are counted in the A digit?",
+  "o": [
+   "Pregnancy losses before 20 weeks",
+   "Births at 37 weeks or later",
+   "Births from 20 to 36 6/7 weeks",
+   "Living children",
+   "Pregnancies including the current one"
+  ],
+  "a": 0,
+  "x": "The A digit counts spontaneous or induced losses before 20 weeks, including miscarriages, ectopic pregnancies and elective abortions; births at 20 weeks or later are counted in the T or P digits instead.",
+  "w": {
+   "Births at 37 weeks or later": "These are term births, which fill the T digit, the first of the four TPAL digits, rather than the abortion digit.",
+   "Births from 20 to 36 6/7 weeks": "These are preterm births and fill the P digit, because they occur after the 20-week threshold but before term.",
+   "Living children": "Living children are counted in the final L digit, with each twin counted separately, whenever the pregnancy ended.",
+   "Pregnancies including the current one": "That total is gravidity, the G in G P TPAL, which counts every pregnancy including the current one, whatever its outcome."
+  },
+  "media": "fig:rp30_timeline",
+  "pt": {
+   "hl": [
+    "Abortion: loss before 20 weeks"
+   ],
+   "say": "The abortion bar covers the first 20 weeks of the axis, so ectopic and miscarried pregnancies count as pregnancy losses before 20 weeks in the A digit."
+  }
+ },
+ {
+  "id": "rp30r04",
+  "tags": [
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp30-03"
+  ],
+  "q": "Which quad screen pattern suggests trisomy 21?",
+  "o": [
+   "Low AFP and estriol, high hCG and inhibin A",
+   "High AFP with normal estriol, hCG and inhibin A",
+   "All four markers low",
+   "All four markers high",
+   "Low AFP and hCG with high estriol and inhibin A"
+  ],
+  "a": 0,
+  "x": "Trisomy 21 gives a distinctive quad pattern: AFP and estriol fall while hCG and inhibin A rise. Trisomy 18 lowers all four markers, open defects raise only AFP, and twins raise all four.",
+  "w": {
+   "High AFP with normal estriol, hCG and inhibin A": "An isolated AFP rise is the pattern of an open neural tube defect or an abdominal wall defect, not of an aneuploidy.",
+   "All four markers low": "Low AFP, estriol, hCG and inhibin A together form the trisomy 18 pattern, which is more severe than trisomy 21.",
+   "All four markers high": "Twin pregnancies roughly double every marker because two fetuses and two placentas contribute, so all four rise together.",
+   "Low AFP and hCG with high estriol and inhibin A": "No common aneuploidy produces this mixed pattern; in trisomy 21 hCG rises while estriol falls, so those two directions are reversed here."
+  },
+  "media": "fig:rp30_screens",
+  "pt": {
+   "hl": [
+    "Trisomy 21 (Down syndrome)"
+   ],
+   "say": "The trisomy 21 row shows low AFP and estriol with high hCG and inhibin A, the only row with that mixed pattern."
+  }
+ },
+ {
+  "id": "rp30r05",
+  "tags": [
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp30-11",
+   "BP-rp30-03"
+  ],
+  "q": "Which first-trimester screening pattern suggests trisomy 18?",
+  "o": [
+   "Increased nuchal translucency, low PAPP-A, low hCG",
+   "Increased nuchal translucency, low PAPP-A, high hCG",
+   "Normal nuchal translucency, high PAPP-A, high hCG",
+   "Increased nuchal translucency, high PAPP-A, low hCG",
+   "Decreased nuchal translucency, low PAPP-A, low hCG"
+  ],
+  "a": 0,
+  "x": "Both trisomy 21 and trisomy 18 thicken the nuchal translucency and lower PAPP-A, and hCG separates them: free hCG is low in trisomy 18 and high in trisomy 21.",
+  "w": {
+   "Increased nuchal translucency, low PAPP-A, high hCG": "This is the trisomy 21 pattern, because a rising free hCG distinguishes Down syndrome from Edwards syndrome.",
+   "Normal nuchal translucency, high PAPP-A, high hCG": "Normal thickness with raised placental markers is a reassuring result, so it does not point to any common trisomy.",
+   "Increased nuchal translucency, high PAPP-A, low hCG": "A raised PAPP-A argues against aneuploidy, since placental PAPP-A falls in both trisomies, so this mixed result fits neither.",
+   "Decreased nuchal translucency, low PAPP-A, low hCG": "Aneuploidy thickens the nuchal translucency rather than thinning it, so a decreased measurement does not support trisomy 18."
+  },
+  "media": "fig:rp30_screens",
+  "pt": {
+   "hl": [
+    "Trisomy 18"
+   ],
+   "say": "The trisomy 18 row in the first-trimester screen shows high nuchal translucency with low PAPP-A and low free hCG, whereas trisomy 21 has high hCG."
+  }
+ },
+ {
+  "id": "rp30r06",
+  "tags": [
+   "tumor-markers"
+  ],
+  "bp": [
+   "BP-rp30-04"
+  ],
+  "q": "Which finding most often raises maternal serum alpha-fetoprotein?",
+  "o": [
+   "Open neural tube defect",
+   "Trisomy 21",
+   "Trisomy 18",
+   "Overestimated gestational age",
+   "Maternal obesity"
+  ],
+  "a": 0,
+  "x": "An open defect exposes neural tissue, so fetal serum protein leaks into amniotic fluid and then maternal blood, raising AFP while estriol, hCG and inhibin A stay normal; gastroschisis, twins and underestimated dates also raise it.",
+  "w": {
+   "Trisomy 21": "Down syndrome lowers maternal AFP, together with a low estriol and a high hCG and inhibin A.",
+   "Trisomy 18": "Edwards syndrome lowers AFP along with the other three quad markers rather than raising it.",
+   "Overestimated gestational age": "If the dates are overestimated, the expected AFP for that week is higher than the measured value, so the result looks low rather than high.",
+   "Maternal obesity": "Maternal weight dilutes serum markers, so greater weight lowers the measured AFP, and laboratories adjust results for weight."
+  },
+  "media": "fig:rp30_screens",
+  "pt": {
+   "hl": [
+    "Open neural tube defect"
+   ],
+   "say": "In the open neural tube defect row only AFP is high, because fetal serum leaks from the exposed tissue into amniotic fluid and maternal blood."
+  }
+ },
+ {
+  "id": "rp30r07",
+  "tags": [
+   "tumor-markers",
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp30-08"
+  ],
+  "q": "Which amniotic fluid enzyme is the confirmatory marker for an open neural tube defect?",
+  "o": [
+   "Acetylcholinesterase",
+   "Alkaline phosphatase",
+   "Lactate dehydrogenase",
+   "Creatine kinase",
+   "Amylase"
+  ],
+  "a": 0,
+  "x": "Acetylcholinesterase leaks from exposed fetal neural tissue into amniotic fluid, so a positive result with a raised amniotic fluid AFP confirms an open neural tube defect, whereas an elevated AFP alone has other causes.",
+  "w": {
+   "Alkaline phosphatase": "This enzyme comes from bone, liver and placenta and is not released by open neural tissue, so it is not used for neural tube defects.",
+   "Lactate dehydrogenase": "Lactate dehydrogenase is a nonspecific marker of tissue injury and hemolysis and does not identify exposed neural tissue.",
+   "Creatine kinase": "Creatine kinase reflects muscle and brain injury in adults and has no role in amniotic fluid testing for open defects.",
+   "Amylase": "Amylase measures pancreatic and salivary activity and is unrelated to neural tube defects, which amniotic testing detects with AFP and a neural enzyme."
+  },
+  "media": "fig:rp30_screens",
+  "pt": {
+   "hl": [
+    "acetylcholinesterase"
+   ],
+   "say": "The amniocentesis box lists fluid AFP and acetylcholinesterase, the two amniotic fluid markers that together confirm an open neural tube defect."
+  }
+ },
+ {
+  "id": "rp30r08",
+  "tags": [
+   "workup-sequence",
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp30-08"
+  ],
+  "q": "Which prenatal test cannot detect a neural tube defect?",
+  "o": [
+   "Chorionic villus sampling",
+   "Amniocentesis",
+   "Detailed ultrasonography",
+   "Maternal serum AFP",
+   "Amniotic fluid acetylcholinesterase"
+  ],
+  "a": 0,
+  "x": "Chorionic villus sampling removes placental tissue for karyotype, so there is no amniotic fluid to measure for AFP or acetylcholinesterase; open neural tube defects are found by serum AFP, ultrasound and amniocentesis instead.",
+  "w": {
+   "Amniocentesis": "Amniotic fluid contains AFP and acetylcholinesterase that leak from an open defect, so amniocentesis can confirm one.",
+   "Detailed ultrasonography": "A detailed scan can directly show a spinal defect or anencephaly, often with a lemon or banana sign, so it is the usual first test.",
+   "Maternal serum AFP": "A raised maternal serum AFP is the screening clue for an open defect and prompts a detailed scan.",
+   "Amniotic fluid acetylcholinesterase": "This neural enzyme is the confirmatory marker for an open defect, so testing it can detect one."
+  },
+  "media": "fig:rp30_screens",
+  "pt": {
+   "hl": [
+    "Chorionic villus sampling",
+    "Cannot detect neural tube defects"
+   ],
+   "say": "The chorionic villus sampling box states in its last line that it cannot detect neural tube defects because it samples placental tissue."
+  }
+ },
+ {
+  "id": "rp30r09",
+  "tags": [
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp30-04"
+  ],
+  "q": "What daily folic acid dose is advised before conception for patients at ordinary risk?",
+  "o": [
+   "0.4 mg",
+   "2 mg",
+   "4 mg",
+   "10 mg",
+   "40 mg"
+  ],
+  "a": 0,
+  "x": "Folic acid 0.4 mg daily, begun at least a month before conception and continued through the first trimester, cuts neural tube defects because the tube closes about 28 days after conception; 4 mg is reserved for a prior affected pregnancy.",
+  "w": {
+   "2 mg": "No guideline uses this dose; the standard is a small daily supplement, with a ten-times higher dose reserved for patients with a prior neural tube defect.",
+   "4 mg": "This higher dose is for patients who already had a pregnancy with a neural tube defect, not for those at ordinary risk.",
+   "10 mg": "Ten milligrams is far above any recommended prenatal dose and could mask vitamin B12 deficiency without adding neural tube protection.",
+   "40 mg": "Forty milligrams is a pharmacologic dose never used in prenatal care, and large folate doses can hide the anemia of vitamin B12 deficiency."
+  },
+  "media": "fig:rp30_timeline",
+  "pt": {
+   "hl": [
+    "Folic acid 0.4 mg daily"
+   ],
+   "say": "The first bar gives folic acid 0.4 mg daily, starting before conception, with 4 mg reserved for a prior neural tube defect."
+  }
+ },
+ {
+  "id": "rp30r10",
+  "tags": [
+   "screening-prevention",
+   "maternal-fetal-transfer"
+  ],
+  "bp": [
+   "BP-rp30-05"
+  ],
+  "q": "At what gestational age is Tdap given in every pregnancy?",
+  "o": [
+   "27 to 36 weeks",
+   "12 to 16 weeks",
+   "20 to 24 weeks",
+   "37 to 40 weeks",
+   "Immediately after delivery"
+  ],
+  "a": 0,
+  "x": "Tdap is given at 27 to 36 weeks of every pregnancy so that maternal IgG crosses the placenta and protects the newborn from pertussis until its own vaccines begin; antibody fades, so the dose is repeated each time.",
+  "w": {
+   "12 to 16 weeks": "Antibody made this early would wane before delivery, so the newborn would receive little passive protection against pertussis.",
+   "20 to 24 weeks": "Vaccination at this stage still leaves too long before birth for antibody levels to stay high, and transfer through the placenta is greatest later.",
+   "37 to 40 weeks": "Waiting until term leaves too little time for antibody to build and cross the placenta, and an early delivery would miss the dose.",
+   "Immediately after delivery": "A postpartum dose protects the mother but gives the newborn no placental antibody, which is the main defense against early pertussis."
+  },
+  "media": "fig:rp30_timeline",
+  "pt": {
+   "hl": [
+    "Tdap in every pregnancy"
+   ],
+   "say": "The Tdap bar runs from 27 to 36 weeks on the axis, and its label says every pregnancy."
+  }
+ },
+ {
+  "id": "rp30r11",
+  "tags": [
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp30-05"
+  ],
+  "q": "Which vaccine is contraindicated during pregnancy?",
+  "o": [
+   "MMR vaccine",
+   "Tdap vaccine",
+   "Inactivated influenza vaccine",
+   "RSV vaccine",
+   "Hepatitis B vaccine"
+  ],
+  "a": 0,
+  "x": "The MMR vaccine contains live attenuated viruses that could infect the fetus, so it is deferred until after delivery, when it is safe during breastfeeding; varicella and intranasal influenza vaccines are also live and are avoided.",
+  "w": {
+   "Tdap vaccine": "Tdap is a toxoid and protein product with no replicating organism, and it is recommended in every pregnancy.",
+   "Inactivated influenza vaccine": "The inactivated flu shot is safe in any trimester and lowers severe maternal illness and preterm birth during the season.",
+   "RSV vaccine": "The prefusion RSV vaccine is a protein subunit product given at 32 to 36 weeks, so it is not a live vaccine.",
+   "Hepatitis B vaccine": "Hepatitis B vaccine is a recombinant surface-antigen product that is safe in pregnancy and given when the patient is at risk."
+  },
+  "media": "fig:rp30_timeline",
+  "pt": {
+   "hl": [
+    "Avoid live vaccines (MMR, varicella) until after delivery."
+   ],
+   "say": "The closing note says that live vaccines such as the MMR vaccine and varicella wait until after delivery."
+  }
+ },
+ {
+  "id": "rp30r12",
+  "tags": [
+   "maternal-fetal-transfer",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp30-06",
+   "BP-rp30-10"
+  ],
+  "q": "Which anticoagulant does not cross the placenta and is used for venous thromboembolism in pregnancy?",
+  "o": [
+   "Low-molecular-weight heparin",
+   "Warfarin taken by mouth",
+   "Rivaroxaban, a factor Xa inhibitor",
+   "Apixaban, a factor Xa inhibitor",
+   "Dabigatran, a thrombin inhibitor"
+  ],
+  "a": 0,
+  "x": "Heparin and low-molecular-weight heparin are large, strongly charged molecules that cannot cross the placenta, so they anticoagulate the mother without reaching the fetus; warfarin crosses, and the direct oral anticoagulants lack safety data.",
+  "w": {
+   "Warfarin taken by mouth": "Warfarin crosses the placenta and causes nasal hypoplasia and stippled epiphyses in the first trimester and fetal bleeding later.",
+   "Rivaroxaban, a factor Xa inhibitor": "This small molecule crosses the placenta, and direct oral anticoagulants lack pregnancy safety data, so they are avoided.",
+   "Apixaban, a factor Xa inhibitor": "Like other direct oral anticoagulants, apixaban reaches the fetus and has too little pregnancy safety data to be used.",
+   "Dabigatran, a thrombin inhibitor": "Dabigatran, a direct thrombin inhibitor, crosses the placenta and is avoided because evidence of fetal safety is lacking."
+  },
+  "media": "fig:rp30_signatures",
+  "pt": {
+   "hl": [
+    "Warfarin",
+    "Heparin does not cross"
+   ],
+   "say": "The warfarin row carries the pearl that heparin does not cross the placenta, which is why heparin replaces warfarin in pregnancy."
+  }
+ },
+ {
+  "id": "rp30r13",
+  "tags": [
+   "teratogen-timing",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp30-10"
+  ],
+  "q": "First-trimester lithium exposure is most associated with which fetal cardiac defect?",
+  "o": [
+   "Ebstein anomaly",
+   "Tetralogy of Fallot",
+   "Patent ductus arteriosus",
+   "Coarctation of the aorta",
+   "Transposition of the great arteries"
+  ],
+  "a": 0,
+  "x": "Lithium in the first trimester is linked to Ebstein anomaly, a downward displacement of the tricuspid valve into the right ventricle; the absolute risk is small, so treatment decisions weigh the risk of relapse.",
+  "w": {
+   "Tetralogy of Fallot": "This conotruncal defect is linked to the 22q11 deletion and to maternal diabetes or isotretinoin, not to lithium.",
+   "Patent ductus arteriosus": "A patent ductus is the classic defect of congenital rubella and prematurity rather than of lithium exposure.",
+   "Coarctation of the aorta": "Coarctation is associated with Turner syndrome and a bicuspid aortic valve rather than with lithium exposure.",
+   "Transposition of the great arteries": "Transposition is the cyanotic defect most tied to maternal pregestational diabetes, not to lithium."
+  },
+  "media": "fig:rp30_signatures",
+  "pt": {
+   "hl": [
+    "Lithium",
+    "Ebstein anomaly"
+   ],
+   "say": "The lithium row pairs Ebstein anomaly with a tricuspid valve displaced downward."
+  }
+ },
+ {
+  "id": "rp30r14",
+  "tags": [
+   "teratogen-timing",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp30-10"
+  ],
+  "q": "Which limb defect is the signature of thalidomide exposure?",
+  "o": [
+   "Phocomelia",
+   "Polydactyly",
+   "Syndactyly",
+   "Clubfoot",
+   "Hypoplastic nails and distal phalanges"
+  ],
+  "a": 0,
+  "x": "Thalidomide taken in weeks 4 to 8 after fertilization blocks limb bud outgrowth, so the long bones are absent or shortened and the hands and feet sit near the trunk, a defect called phocomelia.",
+  "w": {
+   "Polydactyly": "Extra digits arise from abnormal patterning, such as in trisomy 13, and not from the block of limb bud outgrowth caused by thalidomide.",
+   "Syndactyly": "Fused digits reflect failed apoptosis between the digit rays, as in Apert syndrome, and are not the thalidomide signature.",
+   "Clubfoot": "Clubfoot is a positional foot deformity linked to oligohydramnios or neuromuscular disease rather than to thalidomide.",
+   "Hypoplastic nails and distal phalanges": "Underdeveloped nails and fingertips are the hallmark of fetal hydantoin syndrome from phenytoin, not of thalidomide exposure."
+  },
+  "media": "fig:rp30_signatures",
+  "pt": {
+   "hl": [
+    "Thalidomide",
+    "Phocomelia"
+   ],
+   "say": "The thalidomide row lists phocomelia, and its pearl says the limb buds are affected in weeks 4 to 8."
+  }
+ },
+ {
+  "id": "rp30r15",
+  "tags": [
+   "teratogen-timing",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp30-10"
+  ],
+  "q": "Which fetal complication follows NSAID use late in pregnancy?",
+  "o": [
+   "Premature closure of the ductus arteriosus",
+   "Persistent patency of the ductus arteriosus",
+   "Neural tube defect with spina bifida",
+   "Cleft lip with or without cleft palate",
+   "Yellow-brown discoloration of the teeth"
+  ],
+  "a": 0,
+  "x": "NSAIDs block the prostaglandins that keep the ductus arteriosus open in fetal life, so late pregnancy exposure causes premature closure of the ductus arteriosus and also oligohydramnios from reduced fetal renal blood flow.",
+  "w": {
+   "Persistent patency of the ductus arteriosus": "Patency is the opposite problem, which prostaglandin E1 maintains in ductal-dependent heart disease and which prematurity or rubella can cause, whereas NSAIDs close the vessel.",
+   "Neural tube defect with spina bifida": "Neural tube defects follow valproate or carbamazepine exposure around closure at 4 weeks, not an NSAID given late in pregnancy.",
+   "Cleft lip with or without cleft palate": "Clefts arise in the first trimester after exposures such as topiramate or phenytoin, whereas NSAIDs act late on the ductus.",
+   "Yellow-brown discoloration of the teeth": "Stained teeth follow tetracyclines, which bind calcium in developing teeth, rather than prostaglandin inhibitors."
+  },
+  "media": "fig:rp30_signatures",
+  "pt": {
+   "hl": [
+    "NSAIDs, late pregnancy",
+    "Premature ductus arteriosus closure"
+   ],
+   "say": "The NSAID row lists premature ductus arteriosus closure with oligohydramnios, the fetal effects of prostaglandin inhibition in late pregnancy."
+  }
+ },
+ {
+  "id": "rp30r16",
+  "tags": [
+   "teratogen-timing",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp30-10"
+  ],
+  "q": "Which fetal finding follows tetracycline exposure after the first trimester?",
+  "o": [
+   "Yellow-brown tooth discoloration",
+   "Eighth-nerve deafness",
+   "Nasal hypoplasia",
+   "Neural tube defect",
+   "Premature ductus closure"
+  ],
+  "a": 0,
+  "x": "Tetracyclines bind calcium and deposit in developing teeth and bone, causing permanent yellow-brown discoloration and enamel hypoplasia when given after the first trimester, so doxycycline is avoided in pregnancy.",
+  "w": {
+   "Eighth-nerve deafness": "Deafness from eighth-nerve injury is the fetal toxicity of aminoglycosides such as streptomycin and kanamycin, not of tetracyclines.",
+   "Nasal hypoplasia": "Nasal hypoplasia with stippled epiphyses follows first-trimester warfarin, which interferes with bone protein carboxylation.",
+   "Neural tube defect": "These defects follow valproate or carbamazepine exposure around neural tube closure at 4 weeks, not later antibiotic exposure.",
+   "Premature ductus closure": "Early closure of the ductus follows prostaglandin inhibition by NSAIDs in the third trimester, not an antibiotic."
+  },
+  "media": "fig:rp30_signatures",
+  "pt": {
+   "hl": [
+    "Tetracyclines",
+    "Yellow-brown tooth discoloration"
+   ],
+   "say": "The tetracycline row lists yellow-brown tooth discoloration, and its pearl places the injury in the second and third trimesters."
+  }
+ },
+ {
+  "id": "rp30r17",
+  "tags": [
+   "teratogen-timing",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp30-10"
+  ],
+  "q": "In utero exposure to diethylstilbestrol most increases the risk of which cancer in daughters?",
+  "o": [
+   "Vaginal clear cell adenocarcinoma",
+   "Cervical squamous cell carcinoma",
+   "Endometrial adenocarcinoma",
+   "Ovarian serous carcinoma",
+   "Vulvar squamous cell carcinoma"
+  ],
+  "a": 0,
+  "x": "Diethylstilbestrol exposure before birth causes vaginal adenosis that can progress to clear cell adenocarcinoma of the vagina or cervix in daughters, often after puberty, along with a T-shaped uterus and cervical incompetence.",
+  "w": {
+   "Cervical squamous cell carcinoma": "Squamous carcinoma of the cervix follows persistent high-risk HPV infection rather than prenatal hormone exposure.",
+   "Endometrial adenocarcinoma": "Endometrial cancer reflects unopposed estrogen in adulthood from obesity, anovulation or tamoxifen, not diethylstilbestrol exposure.",
+   "Ovarian serous carcinoma": "Serous ovarian cancer is tied to BRCA mutations and ovulation number rather than to in utero diethylstilbestrol.",
+   "Vulvar squamous cell carcinoma": "Vulvar squamous cancer arises from HPV or lichen sclerosus, not from prenatal diethylstilbestrol exposure."
+  },
+  "media": "fig:rp30_signatures",
+  "pt": {
+   "hl": [
+    "Diethylstilbestrol (DES)",
+    "Vaginal clear cell adenocarcinoma"
+   ],
+   "say": "The diethylstilbestrol row lists vaginal clear cell adenocarcinoma and a T-shaped uterus, with the pearl that effects appear in daughters."
+  }
+ },
+ {
+  "id": "rp30r18",
+  "tags": [
+   "screening-prevention",
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp30-07"
+  ],
+  "q": "At what gestational age is the glucose challenge test performed?",
+  "o": [
+   "24 to 28 weeks",
+   "12 to 16 weeks",
+   "18 to 22 weeks",
+   "32 to 34 weeks",
+   "36 to 37 weeks"
+  ],
+  "a": 0,
+  "x": "The 1-hour glucose challenge test is done at 24 to 28 weeks, when placental hormones such as human placental lactogen have raised insulin resistance enough to unmask gestational diabetes; an abnormal result leads to a 3-hour diagnostic test.",
+  "w": {
+   "12 to 16 weeks": "Insulin resistance is still mild this early, so screening would miss gestational diabetes; early testing is reserved for patients at high risk.",
+   "18 to 22 weeks": "This window is for the anatomy scan; placental hormones have not yet produced the insulin resistance the glucose challenge test detects.",
+   "32 to 34 weeks": "Testing this late delays treatment and misses the chance to prevent macrosomia and shoulder dystocia from untreated hyperglycemia.",
+   "36 to 37 weeks": "This window is for the group B strep culture, and diabetes screening here would come far too late to guide management."
+  },
+  "media": "fig:rp30_timeline",
+  "pt": {
+   "hl": [
+    "Glucose challenge test"
+   ],
+   "say": "The glucose challenge test bar sits at 24 to 28 weeks on the axis, just before the Tdap window opens."
+  }
+ },
+ {
+  "id": "rp30r19",
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp30-07"
+  ],
+  "q": "At 20 weeks of gestation, the uterine fundus reaches which landmark?",
+  "o": [
+   "Umbilicus",
+   "Pubic symphysis",
+   "Xiphoid process",
+   "Costal margin",
+   "Iliac crest"
+  ],
+  "a": 0,
+  "x": "From 20 weeks the fundal height in centimeters roughly equals the weeks of gestation; the fundus reaches the pubic symphysis at 12 weeks, the umbilicus at 20 weeks and the xiphoid process near 36 weeks.",
+  "w": {
+   "Pubic symphysis": "The fundus rises out of the pelvis to the symphysis at about 12 weeks, so this landmark marks the end of the first trimester.",
+   "Xiphoid process": "The fundus reaches the xiphoid process near 36 weeks, just before the fetal head engages and the fundus sinks slightly.",
+   "Costal margin": "The costal margin is approached close to term and is not a standard landmark for dating the uterus.",
+   "Iliac crest": "The iliac crest is a pelvic bony landmark and does not mark the fundal position at any gestational age."
+  },
+  "media": "fig:rp30_timeline",
+  "pt": {
+   "hl": [
+    "Fundal height (cm) = weeks"
+   ],
+   "say": "The fundal height bar begins at 20 weeks, when the fundus reaches the umbilicus and the height in centimeters equals the weeks."
+  }
+ }
+]

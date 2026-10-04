@@ -1,0 +1,39 @@
+<svg class="dia" viewBox="0 0 900 480" role="img" aria-label="Prolactin control: hypothalamic dopamine constantly inhibits the lactotroph and TRH stimulates it; antipsychotics, metoclopramide, stalk compression, hypothyroidism, pregnancy and kidney failure raise prolactin, and dopamine agonists restore the brake">
+<text class="ttl" x="14" y="24" font-size="17">Prolactin runs on a brake: dopamine</text>
+<rect x="300" y="44" width="300" height="96" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="316" y="72" font-size="16">Hypothalamus</text>
+<text x="316" y="100" font-size="15">Dopamine: constant brake</text>
+<text x="316" y="126" font-size="15">TRH: accelerator</text>
+<line x1="450" y1="140" x2="450" y2="196" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,196 450,204 455,196" fill="var(--ink-2)"/>
+<text x="462" y="178" font-size="14">Stalk portal blood</text>
+<rect x="300" y="204" width="300" height="80" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="316" y="232" font-size="16">Lactotroph (D2 receptors)</text>
+<text x="316" y="262" font-size="15">Secretes prolactin</text>
+<line x1="450" y1="284" x2="450" y2="328" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,328 450,336 455,328" fill="var(--ink-2)"/>
+<rect x="250" y="336" width="400" height="128" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="266" y="362" font-size="16">Prolactin excess</text>
+<text x="266" y="388" font-size="15">Galactorrhea from the breast</text>
+<text x="266" y="414" font-size="15">GnRH suppressed: low LH and FSH</text>
+<text x="266" y="440" font-size="15">Amenorrhea, infertility, low libido</text>
+<rect x="14" y="150" width="266" height="180" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="28" y="176" font-size="16">What lifts the brake</text>
+<text x="28" y="202" font-size="15">Antipsychotics (D2 block)</text>
+<text x="28" y="226" font-size="15">Metoclopramide</text>
+<text x="28" y="250" font-size="15">Stalk compression</text>
+<text x="28" y="274" font-size="15">Hypothyroidism (TRH up)</text>
+<text x="28" y="298" font-size="15">Pregnancy (estrogen)</text>
+<text x="28" y="322" font-size="15">Kidney failure</text>
+<rect x="620" y="150" width="266" height="180" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="634" y="176" font-size="16">Restoring the brake</text>
+<text x="634" y="202" font-size="15">Dopamine agonists</text>
+<text x="634" y="226" font-size="15">Cabergoline (first choice)</text>
+<text x="634" y="250" font-size="15">Bromocriptine</text>
+<text x="634" y="274" font-size="15">Shrink even large tumors</text>
+<text x="634" y="298" font-size="15">Surgery only if they fail</text>
+<line x1="280" y1="244" x2="292" y2="244" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="292,239 300,244 292,249" fill="var(--ink-2)"/>
+<line x1="620" y1="244" x2="608" y2="244" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="608,239 600,244 608,249" fill="var(--ink-2)"/>
+</svg>

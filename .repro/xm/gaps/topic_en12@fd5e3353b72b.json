@@ -1,0 +1,167 @@
+{
+ "cmd": "gaps",
+ "key": "topic:en12",
+ "hash": "fd5e3353b72b",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 11:55:30",
+ "gaps": [
+  {
+   "gid": "GAP-en12-01",
+   "concept": "CRH stimulates pituitary ACTH release; ACTH stimulates zona fasciculata cortisol synthesis; cortisol inhibits CRH and ACTH by negative feedback.",
+   "why_tested": "Explains hormone changes after an adrenal lesion, pituitary lesion, or glucocorticoid exposure.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en12-02",
+   "concept": "Glucocorticoids bind intracellular receptors that regulate gene transcription.",
+   "why_tested": "A drug mechanism question asks how steroids produce their delayed effects.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en12-03",
+   "concept": "Exogenous glucocorticoid excess causes cushingoid features with low ACTH, low endogenous cortisol, and bilateral adrenal atrophy.",
+   "why_tested": "A cushingoid patient taking steroids has unexpectedly low measured cortisol and ACTH.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en12-04",
+   "concept": "ACTH-dependent Cushing syndrome causes bilateral adrenal cortical hyperplasia.",
+   "why_tested": "Bilateral adrenal enlargement must be distinguished from a cortisol-secreting unilateral adrenal tumor.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en12-05",
+   "concept": "Failure of morning cortisol to suppress after low-dose dexamethasone supports Cushing syndrome.",
+   "why_tested": "A stem supplies results of an overnight dexamethasone screening test.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en12-06",
+   "concept": "Pituitary Cushing disease usually increases ACTH after CRH; a central-to-peripheral ACTH gradient on petrosal sampling favors a pituitary source.",
+   "why_tested": "Dynamic-test results distinguish a corticotroph adenoma from ectopic ACTH secretion.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en12-07",
+   "concept": "Severe cortisol excess overwhelms renal 11β-HSD2, activating mineralocorticoid receptors and causing hypokalemic metabolic alkalosis with low renin and aldosterone.",
+   "why_tested": "Hypertension and hypokalemia occur despite suppressed aldosterone.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en12-08",
+   "concept": "In children, weight gain with slowing linear growth is a characteristic clue to Cushing syndrome.",
+   "why_tested": "A child gains weight while crossing downward on the height growth chart.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en12-09",
+   "concept": "Adrenocortical carcinoma may co-secrete androgens, causing rapidly progressive Cushing features with virilization.",
+   "why_tested": "Rapid onset and virilization help identify an adrenal carcinoma.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en12-10",
+   "concept": "Alcohol use disorder and major depression can produce reversible, non-neoplastic hypercortisolism resembling Cushing syndrome.",
+   "why_tested": "Cushing-like findings accompany a condition that can activate the HPA axis.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en12-11",
+   "concept": "Primary adrenal insufficiency causes high ACTH and high renin alongside low cortisol and aldosterone.",
+   "why_tested": "A hormone panel must localize adrenal failure to the adrenal cortex.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en12-12",
+   "concept": "Elevated ACTH-derived melanocyte-stimulating peptides cause Addison hyperpigmentation, especially in skin creases and oral mucosa.",
+   "why_tested": "Mucosal pigmentation distinguishes primary from central adrenal insufficiency.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en12-13",
+   "concept": "Aldosterone deficiency in primary adrenal insufficiency causes salt craving, volume depletion, and hyperkalemic non-anion-gap metabolic acidosis.",
+   "why_tested": "Salt craving and an acid–base result clarify the source of hypotension.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en12-14",
+   "concept": "Cortisol deficiency increases ADH release, causing dilutional hyponatremia even when aldosterone is preserved in central adrenal insufficiency.",
+   "why_tested": "Hyponatremia without hyperkalemia points toward central adrenal insufficiency.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en12-15",
+   "concept": "Autoimmune Addison disease is associated with 21-hydroxylase antibodies and lymphocytic destruction of the adrenal cortex.",
+   "why_tested": "An antibody result or adrenal histology identifies the cause of primary insufficiency.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en12-16",
+   "concept": "Adrenal tuberculosis can produce caseating granulomas and bilateral adrenal enlargement or calcification.",
+   "why_tested": "Adrenal imaging or pathology distinguishes tuberculosis from autoimmune adrenalitis.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en12-17",
+   "concept": "The cosyntropin test shows little cortisol rise in primary insufficiency; recent central insufficiency may respond before adrenal atrophy develops.",
+   "why_tested": "A normal stimulation result after a new pituitary injury does not exclude central insufficiency.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en12-18",
+   "concept": "Pituitary disease or surgery can cause secondary adrenal insufficiency; hypothalamic disease can cause tertiary insufficiency.",
+   "why_tested": "A low ACTH–low cortisol pattern follows a sellar lesion or operation.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en12-19",
+   "concept": "Primary adrenal insufficiency requires glucocorticoid and mineralocorticoid replacement; central insufficiency generally requires glucocorticoid replacement alone.",
+   "why_tested": "A treatment-choice question hinges on whether aldosterone production is preserved.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en12-20",
+   "concept": "Hydrocortisone has glucocorticoid and mineralocorticoid activity; dexamethasone is long acting and has negligible mineralocorticoid activity.",
+   "why_tested": "Drug properties determine which steroid can replace cortisol or serve in a suppression test.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en12-21",
+   "concept": "Ketoconazole inhibits adrenal steroid-synthesizing CYP enzymes and may cause hepatotoxicity, reduced testosterone, and gynecomastia.",
+   "why_tested": "Adverse effects identify the steroidogenesis inhibitor used for hypercortisolism.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en12-22",
+   "concept": "Metyrapone increases androgen and deoxycorticosterone precursors, potentially causing hirsutism, hypertension, and hypokalemia.",
+   "why_tested": "New hirsutism or mineralocorticoid effects follow treatment of Cushing syndrome.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en12-23",
+   "concept": "Glucocorticoid-induced neutrophilia results chiefly from neutrophil demargination, despite impaired inflammatory cell migration.",
+   "why_tested": "Leukocytosis after steroid administration occurs without evidence of bacterial infection.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en12-24",
+   "concept": "AIRE deficiency impairs thymic negative selection, causing the autoimmune manifestations of APS-1.",
+   "why_tested": "An immune-tolerance mechanism explains candidiasis and multiple endocrine failures.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en12-25",
+   "concept": "X-linked ABCD1 transporter deficiency prevents peroxisomal handling of very-long-chain fatty acids in adrenoleukodystrophy.",
+   "why_tested": "A boy with adrenal failure and demyelination has a peroxisomal transporter defect.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en12-26",
+   "concept": "Transsphenoidal resection is first-line treatment for a pituitary ACTH-secreting adenoma.",
+   "why_tested": "A first-line treatment question presents confirmed Cushing disease.",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-en12-1790441625357.jsonl"
+}

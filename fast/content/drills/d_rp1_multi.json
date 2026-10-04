@@ -1,0 +1,106 @@
+{
+ "id": "d_rp1_multi",
+ "c": "rp1",
+ "kind": "multi",
+ "t": "Which ligament is it?",
+ "tags": [
+  "anatomic-relations",
+  "blood-supply"
+ ],
+ "key": "Ask what the structure carries and where it runs: ovarian vessels mean infundibulopelvic, uterine vessels mean cardinal, the inguinal canal means round, and a peritoneal sheet means broad.",
+ "cols": [
+  {
+   "id": "ip",
+   "l": "Infundibulopelvic"
+  },
+  {
+   "id": "card",
+   "l": "Cardinal"
+  },
+  {
+   "id": "round",
+   "l": "Round"
+  },
+  {
+   "id": "broad",
+   "l": "Broad"
+  }
+ ],
+ "items": [
+  [
+   "Carries the ovarian artery and vein",
+   "ip",
+   "The ovarian vessels come from the aorta and enter the pelvis in this fold from the side wall to the ovary."
+  ],
+  [
+   "Clamped when an ovary is removed",
+   "ip",
+   "Tying this pedicle controls the main ovarian inflow in an oophorectomy."
+  ],
+  [
+   "Ureter lies just medial to it at the brim",
+   "ip",
+   "The ureter crosses the pelvic brim beside the ovarian vessels, so it is identified before clamping."
+  ],
+  [
+   "Twists with the ovary in torsion",
+   "ip",
+   "Torsion rotates the ovary on this vascular pedicle, first blocking venous outflow and then arterial inflow."
+  ],
+  [
+   "Carries the uterine artery and vein",
+   "card",
+   "The uterine vessels run medially along its upper border toward the cervix."
+  ],
+  [
+   "Ureter passes under the artery here",
+   "card",
+   "About 2 cm lateral to the cervix the ureter runs beneath the uterine artery on this ligament."
+  ],
+  [
+   "Main support of the cervix",
+   "card",
+   "With the uterosacral ligaments it suspends the cervix and upper vagina; its failure causes apical prolapse."
+  ],
+  [
+   "Condensation of endopelvic fascia",
+   "card",
+   "Also called the transverse cervical ligament, it is thickened fascia rather than a peritoneal fold."
+  ],
+  [
+   "Passes through the inguinal canal",
+   "round",
+   "It leaves the uterine horn and enters the deep inguinal ring, like the spermatic cord in men."
+  ],
+  [
+   "Ends in the labia majora",
+   "round",
+   "Its fibers blend into the labia majora, the female homolog of the scrotum."
+  ],
+  [
+   "Remnant of the gubernaculum",
+   "round",
+   "The female gubernaculum attaches to the uterus, leaving the ovarian ligament above and this cord below."
+  ],
+  [
+   "Met during an indirect hernia repair in a woman",
+   "round",
+   "It occupies the female inguinal canal, so a surgeon repairing an indirect hernia meets it."
+  ],
+  [
+   "Double fold of peritoneum",
+   "broad",
+   "It is peritoneum draped over the uterus, tubes and ovaries, not a condensation of fascia."
+  ],
+  [
+   "Includes mesosalpinx and mesovarium",
+   "broad",
+   "Its named parts are the mesometrium beside the uterus, the mesosalpinx around the tube and the mesovarium."
+  ],
+  [
+   "Gives almost no mechanical support",
+   "broad",
+   "As a thin sheet it carries structures but does not hold the uterus up against prolapse."
+  ]
+ ]
+}

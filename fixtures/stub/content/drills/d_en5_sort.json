@@ -1,0 +1,74 @@
+{
+ "id": "d_en5_sort",
+ "c": "en5",
+ "kind": "sort",
+ "t": "Primary or central hypothyroidism?",
+ "tags": [
+  "feedback-logic"
+ ],
+ "a": "Primary (thyroid)",
+ "bb": "Central (pituitary or hypothalamus)",
+ "key": "Read the TSH first: a failing gland releases the brake on the pituitary, so TSH rises in primary disease and is low or inappropriately normal in central disease.",
+ "items": [
+  [
+   "TSH high, free T4 low",
+   "a",
+   "A failing gland releases pituitary feedback, so TSH climbs as free T4 falls."
+  ],
+  [
+   "Hashimoto thyroiditis",
+   "a",
+   "Autoimmune destruction of follicles is the commonest cause of primary hypothyroidism in iodine-sufficient areas."
+  ],
+  [
+   "After radioactive iodine ablation",
+   "a",
+   "Radioiodine destroys the gland itself, so the pituitary responds with a high TSH."
+  ],
+  [
+   "Iodine deficiency goiter",
+   "a",
+   "Without iodine the gland cannot make hormone, TSH rises and drives the goiter."
+  ],
+  [
+   "Lithium-induced hypothyroidism",
+   "a",
+   "Lithium blocks hormone release from the gland, a thyroid-level defect with a high TSH."
+  ],
+  [
+   "Anti-thyroid peroxidase antibodies present",
+   "a",
+   "These antibodies mark autoimmune thyroid disease, which injures the gland itself."
+  ],
+  [
+   "TSH low-normal, free T4 low",
+   "b",
+   "The gland is idle because its stimulus is missing, the signature of central disease."
+  ],
+  [
+   "Sheehan syndrome",
+   "b",
+   "Postpartum pituitary infarction removes thyrotrophs along with the other anterior pituitary cells."
+  ],
+  [
+   "After pituitary surgery",
+   "b",
+   "Surgery can remove or damage thyrotrophs, leaving a healthy gland without TSH."
+  ],
+  [
+   "Craniopharyngioma compressing the stalk",
+   "b",
+   "Stalk compression cuts TRH delivery to the pituitary, a hypothalamic-pituitary cause."
+  ],
+  [
+   "Other anterior pituitary hormones also low",
+   "b",
+   "Several failing axes at once point to the pituitary, not to the thyroid alone."
+  ],
+  [
+   "Hypothalamic TRH deficiency",
+   "b",
+   "Without TRH the thyrotrophs are not driven, so TSH and free T4 both fall."
+  ]
+ ]
+}

@@ -1,0 +1,155 @@
+{
+ "cmd": "gaps",
+ "key": "topic:en7",
+ "hash": "93c21587b79b",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 11:53:20",
+ "gaps": [
+  {
+   "gid": "GAP-en7-01",
+   "concept": "Primary hypothyroidism causes high TSH and low free T4; central hypothyroidism causes low free T4 with low or inappropriately normal TSH.",
+   "why_tested": "Distinguishes thyroid failure from pituitary or hypothalamic disease in a hormone panel.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en7-02",
+   "concept": "Subclinical hypothyroidism has elevated TSH with normal free T4.",
+   "why_tested": "Identifies early thyroid failure in an asymptomatic patient with an abnormal screening result.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en7-03",
+   "concept": "Hashimoto thyroid destruction is primarily T-cell mediated; thyroid antibodies are diagnostic markers.",
+   "why_tested": "Tests the mechanism behind a painless goiter with positive anti-TPO antibodies.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en7-04",
+   "concept": "Primary hypothyroidism raises TRH, which can increase prolactin and cause galactorrhea or menstrual disturbance.",
+   "why_tested": "Explains reproductive symptoms alongside high TSH and low free T4.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en7-05",
+   "concept": "Hypothyroid myxedema is nonpitting edema caused by dermal glycosaminoglycan accumulation.",
+   "why_tested": "Asks for the tissue change underlying a puffy face or thickened skin.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en7-06",
+   "concept": "Severe hypothyroidism can cause pericardial effusion.",
+   "why_tested": "Connects an enlarged cardiac silhouette with longstanding hypothyroid findings.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en7-07",
+   "concept": "Iodine deficiency causes low thyroid hormone, compensatory TSH elevation, and goiter; it is the leading worldwide cause of hypothyroidism.",
+   "why_tested": "Identifies the cause of goiter and hypothyroidism in a patient from an iodine-deficient region.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en7-08",
+   "concept": "Lithium inhibits thyroid hormone release; excess iodine, including from amiodarone, can cause hypothyroidism through a persistent Wolff–Chaikoff effect.",
+   "why_tested": "Explains new hypothyroidism after starting a characteristic medication.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en7-09",
+   "concept": "Thyroidectomy or radioactive iodine treatment can cause acquired hypothyroidism.",
+   "why_tested": "Links a history of thyroid treatment to a later low free T4 and high TSH.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en7-10",
+   "concept": "De Quervain thyroiditis follows a viral illness and causes a painful thyroid, high ESR, granulomatous inflammation, and low radioactive iodine uptake.",
+   "why_tested": "Distinguishes transient destructive thyroiditis from a hyperfunctioning thyroid disorder.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en7-11",
+   "concept": "Painless postpartum thyroiditis may cause transient thyrotoxicosis followed by hypothyroidism and has low radioactive iodine uptake.",
+   "why_tested": "Identifies the cause of changing thyroid symptoms after delivery.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en7-12",
+   "concept": "Congenital hypothyroidism can result from failed thyroid descent, producing ectopic lingual thyroid tissue.",
+   "why_tested": "Explains a newborn’s hypothyroidism with thyroid tissue at the tongue base.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en7-13",
+   "concept": "Inherited thyroid dyshormonogenesis, often involving thyroid peroxidase, causes congenital hypothyroidism despite a normally located gland.",
+   "why_tested": "Distinguishes a hormone-synthesis defect from thyroid dysgenesis in an affected newborn.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en7-14",
+   "concept": "In pregnancy, estrogen raises thyroid-binding globulin and total T4; free T4 stays near normal, while hCG can lower first-trimester TSH.",
+   "why_tested": "Interprets thyroid tests in an otherwise euthyroid pregnant patient.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en7-15",
+   "concept": "Pregnancy increases levothyroxine requirements; adequate maternal T4 is essential for early fetal brain development.",
+   "why_tested": "Explains rising TSH during pregnancy in a patient previously stable on levothyroxine.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en7-16",
+   "concept": "Levothyroxine is T4, a long-lived prohormone converted peripherally to active T3; TSH response to a dose change takes weeks.",
+   "why_tested": "Tests the pharmacology behind delayed laboratory response to replacement therapy.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en7-17",
+   "concept": "Suspicious thyroid ultrasound features include a solid hypoechoic nodule, irregular margins, microcalcifications, and a taller-than-wide shape.",
+   "why_tested": "Identifies which nodule warrants aspiration despite a normal TSH.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en7-18",
+   "concept": "A hard fixed thyroid nodule, cervical lymphadenopathy, or unexplained hoarseness raises concern for malignancy.",
+   "why_tested": "Distinguishes a concerning thyroid mass from a benign-appearing nodule on examination.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en7-19",
+   "concept": "Papillary thyroid carcinoma often has branching papillae with fibrovascular cores and can be multifocal or bilateral.",
+   "why_tested": "Recognizes additional histologic or gross findings in a papillary cancer specimen.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en7-20",
+   "concept": "Parafollicular C cells derive from neural crest cells via the ultimobranchial body.",
+   "why_tested": "Asks the embryologic origin of medullary thyroid carcinoma.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en7-21",
+   "concept": "MEN2A pairs medullary carcinoma with pheochromocytoma and parathyroid hyperplasia; MEN2B pairs it with pheochromocytoma and mucosal neuromas.",
+   "why_tested": "Distinguishes MEN2 subtypes from accompanying findings in a RET-associated cancer vignette.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en7-22",
+   "concept": "Medullary thyroid carcinoma can elevate CEA and cause secretory diarrhea; unlike follicular-cell cancers, it does not concentrate radioactive iodine.",
+   "why_tested": "Identifies the tumor from its markers, hormone effects, or lack of iodine uptake.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en7-23",
+   "concept": "Serum thyroglobulin can indicate persistent or recurrent differentiated thyroid cancer after thyroidectomy.",
+   "why_tested": "Interprets a rising tumor marker after treatment of papillary or follicular carcinoma.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en7-24",
+   "concept": "Primary thyroid lymphoma is usually a B-cell lymphoma presenting as a rapidly enlarging thyroid mass.",
+   "why_tested": "Distinguishes lymphoma from another rapidly growing thyroid malignancy in a patient with Hashimoto thyroiditis.",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-en7-1790441475427.jsonl"
+}

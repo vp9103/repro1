@@ -1,0 +1,42 @@
+<svg class="dia" viewBox="0 0 900 560" role="img" aria-label="Thyroid hormone synthesis: iodide trapped by the sodium-iodide symporter, oxidized and organified by thyroid peroxidase in the colloid, coupled into T4 and T3, released by endocytosis and proteolysis, then converted to T3 in tissues, with the drug that blocks each step">
+<text class="ttl" x="14" y="26" font-size="17">Thyroid hormone synthesis, step by step, and the drug that blocks each step</text>
+<rect x="14" y="44" width="180" height="400" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="72" font-size="16">Blood</text>
+<text x="28" y="122" font-size="15">Iodide in</text>
+<text x="28" y="392" font-size="15">T4 (80%) and</text>
+<text x="28" y="414" font-size="15">T3 (20%) out</text>
+<rect x="210" y="44" width="382" height="400" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="226" y="72" font-size="16">Follicular cell</text>
+<text class="b" x="226" y="122" font-size="15">1 Sodium-iodide symporter</text>
+<text class="cr" x="226" y="146" font-size="14">Blocked by perchlorate, pertechnetate</text>
+<text x="226" y="200" font-size="14">TSH receptor (Gs, cAMP) drives each step</text>
+<text x="226" y="244" font-size="14">Thyroglobulin is made and exported</text>
+<text class="b" x="226" y="330" font-size="15">4 Endocytosis, lysosomal proteolysis</text>
+<text class="cr" x="226" y="354" font-size="14">Iodide and lithium slow release</text>
+<rect x="608" y="44" width="278" height="400" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="622" y="72" font-size="16">Colloid</text>
+<text class="b" x="622" y="122" font-size="15">2 Thyroid peroxidase</text>
+<text x="622" y="146" font-size="14">oxidizes iodide, iodinates</text>
+<text x="622" y="168" font-size="14">tyrosines on thyroglobulin</text>
+<text class="cr" x="622" y="192" font-size="14">Blocked by methimazole, PTU</text>
+<text class="wn" x="622" y="216" font-size="14">Wolff-Chaikoff: iodide excess</text>
+<text class="b" x="622" y="258" font-size="15">3 Coupling (peroxidase)</text>
+<text x="622" y="282" font-size="14">MIT + DIT &#8594; T3</text>
+<text x="622" y="304" font-size="14">DIT + DIT &#8594; T4</text>
+<text x="622" y="354" font-size="14">Stored until TSH triggers</text>
+<text x="622" y="376" font-size="14">endocytosis</text>
+<line x1="102" y1="130" x2="210" y2="130" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="202,125 210,130 202,135" fill="var(--ink-2)"/>
+<line x1="560" y1="116" x2="608" y2="116" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="600,111 608,116 600,121" fill="var(--ink-2)"/>
+<line x1="608" y1="324" x2="570" y2="324" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="578,319 570,324 578,329" fill="var(--ink-2)"/>
+<line x1="210" y1="402" x2="150" y2="402" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="158,397 150,402 158,407" fill="var(--ink-2)"/>
+<rect x="14" y="460" width="872" height="88" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="486" font-size="15">5 In tissues, 5'-deiodinase: T4 &#8594; T3</text>
+<text class="cr" x="28" y="510" font-size="14">Blocked by PTU, propranolol, glucocorticoids, amiodarone</text>
+<text x="28" y="534" font-size="14">T3 on its nuclear receptor induces Na+/K+-ATPase (BMR) and beta-1 receptors (heart rate)</text>
+<text x="560" y="486" font-size="14">Inner-ring cut: reverse T3 (inactive)</text>
+<text x="560" y="510" font-size="14">rises in severe illness</text>
+</svg>

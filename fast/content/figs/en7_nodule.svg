@@ -1,0 +1,78 @@
+<svg class="dia" viewBox="0 0 900 640" role="img" aria-label="Thyroid nodule work-up: TSH first; a low TSH leads to scintigraphy, where a hot nodule is rarely malignant; a normal or high TSH leads to ultrasound, and a suspicious pattern leads to fine-needle aspiration with three possible results">
+<text class="ttl" x="14" y="26" font-size="17">Thyroid nodule work-up: the TSH decides the next test</text>
+<rect x="260" y="42" width="380" height="58" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="450" y="66" font-size="16" text-anchor="middle">Nodule found on exam or imaging</text>
+<text x="450" y="89" font-size="15" text-anchor="middle">Step 1: measure serum TSH</text>
+<line x1="350" y1="100" x2="236" y2="134" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="232,128 226,137 237,139" fill="var(--ink-2)"/>
+<line x1="550" y1="100" x2="664" y2="134" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="663,128 674,137 663,139" fill="var(--ink-2)"/>
+<rect x="24" y="140" width="400" height="58" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="40" y="164" font-size="16">TSH low: gland may be overactive</text>
+<text x="40" y="187" font-size="15">Step 2: radionuclide scintigraphy</text>
+<rect x="476" y="140" width="400" height="58" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="492" y="164" font-size="16">TSH normal or high</text>
+<text x="492" y="187" font-size="15">Step 2: neck ultrasound</text>
+<line x1="120" y1="198" x2="120" y2="228" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="115,228 120,236 125,228" fill="var(--ink-2)"/>
+<line x1="328" y1="198" x2="328" y2="228" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="323,228 328,236 333,228" fill="var(--ink-2)"/>
+<line x1="576" y1="198" x2="576" y2="228" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="571,228 576,236 581,228" fill="var(--ink-2)"/>
+<line x1="780" y1="198" x2="780" y2="228" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="775,228 780,236 785,228" fill="var(--ink-2)"/>
+<rect x="24" y="238" width="192" height="152" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="38" y="262" font-size="15">Hot nodule</text>
+<text x="38" y="286" font-size="15">Takes up tracer</text>
+<text x="38" y="308" font-size="15">Rarely malignant</text>
+<text x="38" y="330" font-size="15">Treat the</text>
+<text x="38" y="352" font-size="15">hyperthyroidism;</text>
+<text x="38" y="374" font-size="15">no FNA needed</text>
+<rect x="232" y="238" width="192" height="152" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="246" y="262" font-size="15">Cold nodule</text>
+<text x="246" y="286" font-size="15">No tracer uptake</text>
+<text x="246" y="308" font-size="15">Same risk as a</text>
+<text x="246" y="330" font-size="15">normal-TSH nodule,</text>
+<text x="246" y="352" font-size="15">so image it with</text>
+<text x="246" y="374" font-size="15">ultrasound next</text>
+<polyline points="424,314 450,314 450,169 466,169" fill="none" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="466,164 474,169 466,174" fill="var(--ink-2)"/>
+<rect x="476" y="238" width="192" height="152" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="490" y="262" font-size="15">Benign pattern</text>
+<text x="490" y="286" font-size="15">Purely cystic or</text>
+<text x="490" y="308" font-size="15">spongiform</text>
+<text x="490" y="330" font-size="15">Usually no FNA;</text>
+<text x="490" y="352" font-size="15">repeat ultrasound</text>
+<text x="490" y="374" font-size="15">over time</text>
+<rect x="684" y="238" width="192" height="152" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="698" y="262" font-size="15">Suspicious pattern</text>
+<text x="698" y="286" font-size="15">Solid, hypoechoic</text>
+<text x="698" y="308" font-size="15">Microcalcifications</text>
+<text x="698" y="330" font-size="15">Irregular margin</text>
+<text x="698" y="352" font-size="15">Taller than wide</text>
+<text x="698" y="374" font-size="15">Size above cutoff</text>
+<line x1="780" y1="390" x2="780" y2="418" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="775,418 780,426 785,418" fill="var(--ink-2)"/>
+<rect x="260" y="428" width="616" height="58" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="276" y="452" font-size="16">Step 3: fine-needle aspiration (FNA) for cytology</text>
+<text x="276" y="475" font-size="15">Reads single cells: it cannot see the capsule or the vessels</text>
+<line x1="330" y1="486" x2="200" y2="512" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="199,506 191,514 202,516" fill="var(--ink-2)"/>
+<line x1="450" y1="486" x2="450" y2="510" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,510 450,518 455,510" fill="var(--ink-2)"/>
+<line x1="740" y1="486" x2="740" y2="510" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="735,510 740,518 745,510" fill="var(--ink-2)"/>
+<rect x="24" y="520" width="272" height="104" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="38" y="544" font-size="15">Benign cytology</text>
+<text x="38" y="568" font-size="15">Follow with ultrasound;</text>
+<text x="38" y="590" font-size="15">most nodules end here</text>
+<rect x="314" y="520" width="272" height="104" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="328" y="544" font-size="15">Follicular neoplasm</text>
+<text x="328" y="568" font-size="15">Adenoma or carcinoma?</text>
+<text x="328" y="590" font-size="15">Molecular testing or</text>
+<text x="328" y="612" font-size="15">lobectomy to see capsule</text>
+<rect x="604" y="520" width="272" height="104" rx="10" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="618" y="544" font-size="15">Malignant or suspicious</text>
+<text x="618" y="568" font-size="15">Surgery: lobectomy or</text>
+<text x="618" y="590" font-size="15">total thyroidectomy</text>
+</svg>

@@ -1,0 +1,241 @@
+[
+ {
+  "id": "rp10q01", "d": 1, "tags": ["adverse-effects", "risk-factors"], "bp": ["BP-rp10-03", "BP-rp10-05"],
+  "s": "A 38-year-old woman comes to the clinic for contraception. She smokes one pack of cigarettes daily and has declined help with quitting. She has regular, moderately heavy menses and plans no further pregnancies for at least 5 years. Blood pressure is 124/78 mm Hg, and examination is normal.",
+  "l": "Which of the following is the most appropriate contraceptive for this patient?",
+  "o": ["Combined oral contraceptive pill", "Transdermal contraceptive patch", "Contraceptive vaginal ring", "Extended-cycle combined pill", "Levonorgestrel intrauterine device"],
+  "a": 4,
+  "e": "Smoking after age 35 makes every estrogen-containing method unacceptable, because ethinyl estradiol raises hepatic clotting factors and smoking adds endothelial injury, so the risk of myocardial infarction and stroke climbs steeply. The pill, the **transdermal patch**, the vaginal ring and an extended-cycle pill all contain estrogen, so they share the contraindication. The **levonorgestrel intrauterine device** contains only a progestin, acts mainly inside the uterus, lasts years with a typical-use failure rate under 1 percent and lightens heavy periods, making it the best fit.",
+  "w": {
+   "Combined oral contraceptive pill": "Its ethinyl estradiol raises clotting factors, and in a daily smoker older than 35 that combination sharply increases the risk of myocardial infarction and stroke.",
+   "Transdermal contraceptive patch": "The patch delivers ethinyl estradiol continuously and produces higher estrogen exposure than most pills, so it carries at least the same thrombotic risk for her.",
+   "Contraceptive vaginal ring": "The ring releases ethinyl estradiol with etonogestrel; bypassing the gut does not remove estrogen's effect on hepatic clotting factors, so smoking still rules it out.",
+   "Extended-cycle combined pill": "Extending the active pills only reduces the number of withdrawal bleeds; every tablet still contains estrogen, so it is unsafe for a smoker older than 35."
+  },
+  "et": [["Option", "Hormones", "Estrogen clot risk", "Typical-use failure", "Effect on heavy menses"], [
+   ["Combined oral contraceptive pill", "Ethinyl estradiol + progestin", "Yes", "About 7 in 100", "Lighter"],
+   ["Transdermal contraceptive patch", "Ethinyl estradiol + progestin", "Yes, higher exposure", "About 7 in 100", "Lighter"],
+   ["Contraceptive vaginal ring", "Ethinyl estradiol + etonogestrel", "Yes", "About 7 in 100", "Lighter"],
+   ["Extended-cycle combined pill", "Ethinyl estradiol + progestin", "Yes", "About 7 in 100", "Fewer bleeds"],
+   ["Levonorgestrel intrauterine device", "Levonorgestrel only", "No", "Under 1 in 100", "Much lighter or absent"]]],
+  "bl": "Estrogen is contraindicated in smokers over 35, so choose a progestin-only method such as the levonorgestrel IUD.",
+  "ef": "rp10_methods",
+  "pt": {"hl": ["Levonorgestrel IUD", "smoker 35+, aura, prior clot"], "say": "The red note bars the whole estrogen column for a smoker over 35, so the choice moves to the progestin-only column, where the levonorgestrel IUD sits in the top row."}
+ },
+ {
+  "id": "rp10q02", "d": 2, "tags": ["adverse-effects"], "bp": ["BP-rp10-03"], "obj": ["PATHPHARM-MENSES-CONTRA.2"],
+  "s": "A 27-year-old woman comes to the office because of worsening headaches during the past 3 months. She started a combined oral contraceptive 4 months ago. Each headache is preceded by 20 minutes of flickering zigzag lines in her right visual field, followed by a throbbing left-sided headache with nausea. She does not smoke. Blood pressure is 118/74 mm Hg, and neurologic examination is normal between episodes.",
+  "l": "Which of the following serious adverse outcomes is the main reason to stop her current contraceptive?",
+  "o": ["Ischemic stroke", "Hepatic adenoma rupture", "Cholestatic jaundice", "Malignant hypertension", "Pseudotumor cerebri"],
+  "a": 0,
+  "e": "Her headaches are **migraine with aura**: a spreading visual aura precedes a unilateral throbbing headache. Migraine with aura already raises the risk of **ischemic stroke**, and the estrogen in combined pills adds a prothrombotic effect, so together the risks multiply; that is why migraine with aura is an absolute contraindication to estrogen-containing contraception at any age. A progestin-only method or a copper IUD is the safe switch. Hepatic adenoma and cholestasis are rare estrogen effects that neither explain her symptoms nor drive the decision.",
+  "w": {
+   "Hepatic adenoma rupture": "Estrogen can stimulate hepatic adenomas, but they are rare, present with right upper quadrant pain or hemorrhage, and have nothing to do with a visual aura.",
+   "Cholestatic jaundice": "Estrogen can impair bile secretion and cause pruritus and jaundice, mainly in women with prior cholestasis of pregnancy, not recurrent neurologic episodes.",
+   "Malignant hypertension": "Combined pills can raise blood pressure modestly, but her pressure is normal, and severe hypertension is not what makes aura dangerous with estrogen.",
+   "Pseudotumor cerebri": "Idiopathic intracranial hypertension causes daily headache with papilledema, usually in obese women; a stereotyped visual aura with a normal examination points instead to migraine."
+  },
+  "et": [["Option", "Link to estrogen", "Typical presentation", "Relation to her aura"], [
+   ["Ischemic stroke", "Estrogen adds clotting risk", "Sudden focal deficit", "Aura multiplies the risk"],
+   ["Hepatic adenoma rupture", "Estrogen stimulates adenoma growth", "Right upper quadrant pain, bleeding", "None"],
+   ["Cholestatic jaundice", "Estrogen slows bile secretion", "Itching and jaundice", "None"],
+   ["Malignant hypertension", "Small blood pressure rise", "Very high pressure, organ injury", "None; her pressure is normal"],
+   ["Pseudotumor cerebri", "Weak association", "Daily headache, papilledema", "Aura is not a feature"]]],
+  "bl": "Migraine with aura plus estrogen multiplies ischemic stroke risk, so combined hormonal contraception is contraindicated."
+ },
+ {
+  "id": "rp10q03", "d": 2, "tags": ["drug-interactions"], "bp": ["BP-rp10-04"],
+  "s": "A 23-year-old woman has a positive pregnancy test. She has taken a combined oral contraceptive every day at the same time for 2 years without missed pills. Four months ago she began carbamazepine for focal seizures after a normal brain MRI. She also takes a daily multivitamin and used amoxicillin for sinusitis 6 weeks ago.",
+  "l": "Which of the following best explains the contraceptive failure?",
+  "o": ["Induction of hepatic CYP3A4 by carbamazepine", "Loss of gut bacteria that recycle estrogen after amoxicillin", "Binding of hormone in the gut by the multivitamin", "Inhibition of progesterone receptors by carbamazepine", "Increased renal clearance of ethinyl estradiol"],
+  "a": 0,
+  "e": "Carbamazepine is an **enzyme inducer**: it increases hepatic CYP3A4 activity, so ethinyl estradiol and the progestin are metabolized faster, their levels fall below the contraceptive threshold, and ovulation escapes suppression. Rifampin, phenytoin, topiramate and St John's wort do the same. The old idea that antibiotics such as amoxicillin disrupt gut bacteria and enterohepatic recycling of estrogen has not held up; pharmacokinetic studies show no fall in hormone levels. She needs a method unaffected by induction, such as an IUD or DMPA.",
+  "w": {
+   "Loss of gut bacteria that recycle estrogen after amoxicillin": "This enterohepatic theory was once taught, but controlled studies show broad-spectrum antibiotics other than rifampin do not lower contraceptive hormone levels or efficacy.",
+   "Binding of hormone in the gut by the multivitamin": "Vitamins and minerals do not chelate steroid hormones; binding interactions of that kind matter for levothyroxine and tetracyclines, not for oral contraceptives.",
+   "Inhibition of progesterone receptors by carbamazepine": "Carbamazepine blocks voltage-gated sodium channels and induces liver enzymes; it has no antiprogestin action, which is how mifepristone and ulipristal work.",
+   "Increased renal clearance of ethinyl estradiol": "Ethinyl estradiol is cleared mainly by hepatic metabolism and conjugation, not by the kidney, so a renal mechanism cannot explain the drop in exposure."
+  },
+  "et": [["Option", "Proposed mechanism", "Evidence for pill failure", "Drugs that do it"], [
+   ["Induction of hepatic CYP3A4 by carbamazepine", "Faster hepatic steroid metabolism", "Strong; hormone levels fall", "Rifampin, phenytoin, St John's wort"],
+   ["Loss of gut bacteria that recycle estrogen after amoxicillin", "Less enterohepatic recycling", "Not supported", "None proven"],
+   ["Binding of hormone in the gut by the multivitamin", "Chelation in the gut", "Not supported", "None for steroids"],
+   ["Inhibition of progesterone receptors by carbamazepine", "Receptor blockade", "Not a carbamazepine action", "Mifepristone, ulipristal"],
+   ["Increased renal clearance of ethinyl estradiol", "Faster kidney excretion", "Not supported", "None"]]],
+  "bl": "Enzyme inducers such as carbamazepine and rifampin induce CYP3A4 and cause pill failure; ordinary antibiotics do not."
+ },
+ {
+  "id": "rp10q04", "d": 1, "tags": ["adverse-effects"], "bp": ["BP-rp10-05"],
+  "s": "A 17-year-old girl has received an intramuscular contraceptive injection every 3 months for the past 2 years. She has had no menses for 18 months and has gained 4 kg. She asks whether the injection has any long-term effects she should know about.",
+  "l": "Which of the following adverse effects is most characteristic of this method?",
+  "o": ["Decreased bone mineral density", "Increased risk of ovarian cancer", "Hyperkalemia", "Hepatic adenoma", "Heavier menstrual bleeding"],
+  "a": 0,
+  "e": "The injection is depot medroxyprogesterone acetate (**DMPA**). Its high, sustained progestin dose suppresses gonadotropins so strongly that estradiol falls to low levels, which is why amenorrhea is common and why **bone mineral density** declines during use. The loss is largely regained after stopping, so DMPA remains acceptable in adolescents, but the decline is its signature long-term effect. Hyperkalemia belongs to the progestin drospirenone, hepatic adenoma to estrogen, and heavier bleeding to the copper IUD.",
+  "w": {
+   "Increased risk of ovarian cancer": "Suppressing ovulation lowers ovarian cancer risk rather than raising it, and DMPA suppresses ovulation more strongly than most other methods.",
+   "Hyperkalemia": "Drospirenone, a spironolactone-like progestin in some pills, has antimineralocorticoid activity that can raise potassium; medroxyprogesterone does not.",
+   "Hepatic adenoma": "Hepatic adenomas are linked to estrogen exposure from combined pills; a progestin-only injection carries no such association.",
+   "Heavier menstrual bleeding": "DMPA thins the endometrium and usually produces amenorrhea, as in this patient; heavier, crampier menses are typical of the copper IUD."
+  },
+  "et": [["Option", "Usual cause", "Mechanism", "Time course"], [
+   ["Decreased bone mineral density", "DMPA", "Low estradiol from strong gonadotropin suppression", "Accrues during use, mostly regained after stopping"],
+   ["Increased risk of ovarian cancer", "Not a contraceptive effect", "Ovulation suppression lowers the risk", "Protection persists after stopping"],
+   ["Hyperkalemia", "Drospirenone", "Antimineralocorticoid action", "While taking the pill"],
+   ["Hepatic adenoma", "Estrogen-containing pills", "Estrogen stimulates hepatocyte growth", "Years of use"],
+   ["Heavier menstrual bleeding", "Copper IUD", "Local inflammation and prostaglandins", "From insertion onward"]]],
+  "bl": "DMPA's signature long-term adverse effect is decreased bone mineral density, from low estradiol during strong gonadotropin suppression."
+ },
+ {
+  "id": "rp10q05", "d": 3, "tags": ["drug-mechanism", "selective-modulators"], "bp": ["BP-rp10-07", "BP-rp10-11"], "obj": ["BICEP-BROWN.7"],
+  "s": "A 25-year-old woman comes to an urgent care clinic requesting emergency contraception. A condom broke during intercourse 4 days ago, on day 9 of her regular 30-day cycle. She takes no medications. She declines insertion of any intrauterine device because of cervical stenosis noted during a prior procedure. Her BMI is 33 kg/m2. A urine pregnancy test is negative.",
+  "l": "Which of the following is the most effective option for her?",
+  "o": ["Ulipristal acetate", "Levonorgestrel 1.5 mg", "Combined estrogen-progestin pills", "Mifepristone and misoprostol", "Norethindrone daily"],
+  "a": 0,
+  "e": "With the copper IUD declined, **ulipristal** is the most effective choice. It is a selective progesterone receptor modulator that works up to 5 days (120 hours) after intercourse and can still delay follicle rupture after LH has begun to rise, which matters because she is approaching ovulation. Levonorgestrel is labeled for 72 hours, fails once the LH surge begins and loses effectiveness with obesity, all of which count against it here. Combined pills, the old Yuzpe method, are weaker still, and mifepristone with misoprostol ends an implanted pregnancy rather than preventing one.",
+  "w": {
+   "Levonorgestrel 1.5 mg": "Levonorgestrel is labeled for use within 72 hours, cannot stop ovulation once the LH surge starts and is less effective with a BMI above 30, so it is the weaker choice here.",
+   "Combined estrogen-progestin pills": "The older Yuzpe regimen of high-dose combined pills is less effective than either dedicated emergency pill and causes more nausea, so it is no longer preferred.",
+   "Mifepristone and misoprostol": "This regimen ends a pregnancy that has already implanted; it is medication abortion, not emergency contraception, and it is not used to prevent pregnancy after intercourse.",
+   "Norethindrone daily": "Starting a daily progestin-only pill gives ongoing contraception after a few days, but it does not reliably delay an imminent ovulation, and a progestin started within 5 days weakens ulipristal."
+  },
+  "et": [["Option", "Class", "Window after intercourse", "Works after LH starts rising", "Effect of obesity"], [
+   ["Ulipristal acetate", "Selective progesterone receptor modulator", "Up to 5 days", "Yes, until near the peak", "Modest loss"],
+   ["Levonorgestrel 1.5 mg", "High-dose progestin", "Best within 72 hours", "No", "Marked loss"],
+   ["Combined estrogen-progestin pills", "Estrogen plus progestin (Yuzpe)", "Within 72 hours", "No", "Not well studied"],
+   ["Mifepristone and misoprostol", "Antiprogestin plus prostaglandin", "Used after implantation", "Not relevant", "Not relevant"],
+   ["Norethindrone daily", "Progestin-only pill", "Not an emergency method", "No", "Not studied"]]],
+  "bl": "Beyond 72 hours, when a copper IUD is declined, ulipristal is the most effective emergency contraceptive, especially with obesity.",
+  "ef": "rp10_timeline",
+  "pt": {"hl": ["Ulipristal", "only if taken before the surge"], "say": "Compare the two emergency bars: levonorgestrel stops before the LH surge, while the ulipristal bar runs past it, which is why ulipristal still works late in the window."}
+ },
+ {
+  "id": "rp10q06", "d": 2, "tags": ["adverse-effects", "drug-mechanism"], "bp": ["BP-rp10-08"], "obj": ["PATHPHARM-MENSES-CONTRA.3"],
+  "s": "A 31-year-old woman at 7 weeks' gestation, with an intrauterine pregnancy confirmed by ultrasonography, requests medication abortion. She has primary adrenal insufficiency treated with hydrocortisone and fludrocortisone. Her physician explains that the first drug of the standard regimen, a competitive progesterone receptor antagonist, requires special caution in her.",
+  "l": "Blockade of which additional receptor by this drug explains the caution?",
+  "o": ["Glucocorticoid receptor", "Mineralocorticoid receptor", "Estrogen receptor alpha", "Prostaglandin E receptor", "Oxytocin receptor"],
+  "a": 0,
+  "e": "The first drug is **mifepristone**, which binds the progesterone receptor as a competitive antagonist and, at higher concentrations, also blocks the **glucocorticoid receptor**. In a woman who depends on replacement hydrocortisone, that antiglucocorticoid effect can precipitate adrenal crisis, which is why chronic adrenal failure and long-term corticosteroid therapy are listed contraindications; the same property lets mifepristone treat Cushing syndrome. It has little effect at the mineralocorticoid receptor, and prostaglandin E receptors are stimulated by the second drug, misoprostol.",
+  "w": {
+   "Mineralocorticoid receptor": "Mifepristone has negligible mineralocorticoid antagonism; blocking that receptor is the action of spironolactone and eplerenone, and her fludrocortisone would still work.",
+   "Estrogen receptor alpha": "Mifepristone does not antagonize estrogen receptors; selective estrogen receptor modulators such as tamoxifen and raloxifene act there.",
+   "Prostaglandin E receptor": "Prostaglandin E receptors are activated by misoprostol, the second drug, which contracts the uterus; mifepristone does not block them.",
+   "Oxytocin receptor": "Oxytocin receptors multiply late in pregnancy and are targeted by oxytocin and atosiban; mifepristone's second target is a steroid receptor instead."
+  },
+  "et": [["Option", "Drug acting there", "Effect on this patient", "Clinical use of that action"], [
+   ["Glucocorticoid receptor", "Mifepristone (antagonist)", "Can precipitate adrenal crisis", "Cushing syndrome"],
+   ["Mineralocorticoid receptor", "Spironolactone, eplerenone", "Little mifepristone effect", "Hyperaldosteronism, heart failure"],
+   ["Estrogen receptor alpha", "Tamoxifen, raloxifene", "Not affected", "Breast cancer, osteoporosis"],
+   ["Prostaglandin E receptor", "Misoprostol (agonist)", "Uterine contraction", "Abortion regimen, ulcer prevention"],
+   ["Oxytocin receptor", "Atosiban (antagonist)", "Not affected", "Preterm labor outside the US"]]],
+  "bl": "Mifepristone blocks progesterone and glucocorticoid receptors, so adrenal insufficiency and chronic steroid therapy are contraindications."
+ },
+ {
+  "id": "rp10q07", "d": 2, "tags": ["drug-mechanism", "adverse-effects"], "bp": ["BP-rp10-08"],
+  "s": "A 34-year-old woman with rheumatoid arthritis takes high-dose naproxen daily. Because she had an NSAID-induced gastric ulcer last year, her physician adds a drug to protect the gastric mucosa and counsels her to use reliable contraception, because the drug can cause miscarriage if she becomes pregnant.",
+  "l": "Which of the following best describes the mechanism of the added drug?",
+  "o": ["Prostaglandin E1 analog that contracts the myometrium", "Proton pump inhibitor that blocks acid secretion", "Histamine H2 receptor antagonist with antiandrogen effects", "Progesterone receptor antagonist that breaks down decidua", "Oxytocin receptor agonist that stimulates labor"],
+  "a": 0,
+  "e": "The drug is **misoprostol**, a prostaglandin E1 analog. In the stomach it increases mucus and bicarbonate secretion and reduces acid output, replacing the protective prostaglandins that NSAIDs suppress. In the uterus it stimulates myometrial contraction and softens the cervix, which is exactly why it follows mifepristone in medication abortion and why it is contraindicated in pregnancy when used for ulcer prevention. A proton pump inhibitor would also protect her stomach but carries no risk of miscarriage, and mifepristone is the progesterone receptor antagonist of the abortion regimen.",
+  "w": {
+   "Proton pump inhibitor that blocks acid secretion": "Omeprazole and similar drugs also prevent NSAID ulcers, but they have no effect on uterine muscle, so they would not require contraception counseling.",
+   "Histamine H2 receptor antagonist with antiandrogen effects": "That description fits cimetidine, whose antiandrogen and enzyme-inhibiting effects cause gynecomastia and drug interactions, but it does not cause miscarriage.",
+   "Progesterone receptor antagonist that breaks down decidua": "This describes mifepristone, the first drug of medication abortion; it has no role in protecting the stomach from NSAID injury.",
+   "Oxytocin receptor agonist that stimulates labor": "Oxytocin is a peptide given intravenously for labor induction and postpartum hemorrhage; it is inactive by mouth and does not protect the stomach."
+  },
+  "et": [["Option", "Example drug", "Stomach effect", "Uterine effect"], [
+   ["Prostaglandin E1 analog that contracts the myometrium", "Misoprostol", "More mucus and bicarbonate, less acid", "Contractions and cervical ripening"],
+   ["Proton pump inhibitor that blocks acid secretion", "Omeprazole", "Blocks the proton pump", "None"],
+   ["Histamine H2 receptor antagonist with antiandrogen effects", "Cimetidine", "Less acid secretion", "None"],
+   ["Progesterone receptor antagonist that breaks down decidua", "Mifepristone", "None", "Decidual breakdown, cervical softening"],
+   ["Oxytocin receptor agonist that stimulates labor", "Oxytocin", "None; inactive by mouth", "Contractions in late pregnancy"]]],
+  "bl": "Misoprostol, a prostaglandin E1 analog, protects the stomach from NSAIDs but contracts the uterus, so it is avoided in pregnancy."
+ },
+ {
+  "id": "rp10q08", "d": 3, "tags": ["drug-mechanism", "adverse-effects"], "bp": ["BP-rp10-05", "BP-rp10-12", "BP-rp10-03"], "obj": ["BICEP-BROWN.6"],
+  "s": "A 32-year-old woman requests contraception. Her menses last 8 days with passage of clots, and she has iron deficiency anemia with a hemoglobin of 10.1 g/dL. She has migraine with visual aura. She hopes to conceive in about 18 months and wants her fertility to return promptly when she stops. Pelvic ultrasonography shows a normal uterus without fibroids.",
+  "l": "Which of the following is the most appropriate contraceptive for this patient?",
+  "o": ["Levonorgestrel intrauterine device", "Copper intrauterine device", "Depot medroxyprogesterone acetate", "Combined oral contraceptive pill", "Etonogestrel implant"],
+  "a": 0,
+  "e": "Three facts decide the method. Migraine with aura rules out estrogen, so the combined pill is contraindicated. Heavy menstrual bleeding with anemia calls for a method that thins the endometrium, and the **levonorgestrel intrauterine device** releases progestin inside the uterus, cutting menstrual blood loss dramatically and often producing amenorrhea. Her plan to conceive in 18 months favors a method whose effect ends on removal. **Depot medroxyprogesterone** would also reduce bleeding, but the return of fertility can be delayed for many months, and the copper IUD would worsen her bleeding.",
+  "w": {
+   "Copper intrauterine device": "The copper IUD is hormone-free and safe with aura, but its local inflammation increases menstrual blood loss and cramping, which would worsen her anemia.",
+   "Depot medroxyprogesterone acetate": "DMPA often causes amenorrhea, but ovulation can take many months to resume after the last injection, which conflicts with her plan to conceive soon after stopping.",
+   "Combined oral contraceptive pill": "Combined pills would lighten her periods, but migraine with aura plus estrogen multiplies ischemic stroke risk, so estrogen is contraindicated for her.",
+   "Etonogestrel implant": "The implant is highly effective and estrogen-free, but it causes unpredictable spotting and does not reliably treat heavy menstrual bleeding."
+  },
+  "et": [["Option", "Estrogen", "Effect on heavy bleeding", "Return of fertility"], [
+   ["Levonorgestrel intrauterine device", "None", "Marked reduction, often amenorrhea", "Prompt after removal"],
+   ["Copper intrauterine device", "None", "Worse, with cramping", "Prompt after removal"],
+   ["Depot medroxyprogesterone acetate", "None", "Amenorrhea over time", "Delayed for months"],
+   ["Combined oral contraceptive pill", "Yes, contraindicated with aura", "Lighter periods", "Prompt"],
+   ["Etonogestrel implant", "None", "Unpredictable spotting", "Prompt after removal"]]],
+  "bl": "With heavy menstrual bleeding, migraine with aura and pregnancy planned soon, the levonorgestrel IUD is the best contraceptive.",
+  "ef": "rp10_methods",
+  "pt": {"hl": ["Levonorgestrel IUD", "Whole column: avoid if"], "say": "Aura removes the whole estrogen column, and of the top-row methods only the levonorgestrel IUD also thins the endometrium to control her heavy bleeding."}
+ },
+ {
+  "id": "rp10q09", "d": 1, "tags": ["risk-factors", "drug-mechanism"], "bp": ["BP-rp10-02"],
+  "s": "A 45-year-old woman used combined oral contraceptives continuously from age 20 to 35. Her mother died of ovarian cancer at 60. Genetic testing shows no BRCA mutation. She asks how her years of pill use affect her own risk of ovarian cancer.",
+  "l": "Her lower risk is best explained by which effect of the pill?",
+  "o": ["Suppression of ovulation", "Thickening of cervical mucus", "Thinning of the endometrium", "Increase in sex hormone-binding globulin", "Reduction in menstrual blood loss"],
+  "a": 0,
+  "e": "Epithelial ovarian cancer risk tracks the number of lifetime ovulations. Each ovulation disrupts the ovarian surface and the adjacent fallopian tube epithelium, and repeated repair gives mutations a chance to arise. Combined pills cause **suppression of ovulation**, so 15 years of use removes most of her ovulatory cycles and lowers her risk substantially, with protection lasting decades. Thinning of the endometrium explains the pill's protection against endometrial cancer, not ovarian cancer, and cervical mucus changes block sperm transport but do not affect the ovary.",
+  "w": {
+   "Thickening of cervical mucus": "Thick mucus blocks sperm from reaching the uterus and tubes; it prevents pregnancy but has no effect on the ovarian surface epithelium where risk arises.",
+   "Thinning of the endometrium": "The progestin's thinning of the lining explains the pill's protection against endometrial cancer, a separate benefit from the reduced ovarian cancer risk.",
+   "Increase in sex hormone-binding globulin": "Higher SHBG lowers free testosterone and improves acne and hirsutism, but it has no known role in ovarian carcinogenesis.",
+   "Reduction in menstrual blood loss": "Lighter periods reduce iron deficiency and ease dysmenorrhea, but the amount of bleeding has no influence on the ovarian epithelium."
+  },
+  "et": [["Option", "Main benefit it explains", "Tissue affected", "Link to ovarian epithelium"], [
+   ["Suppression of ovulation", "Lower ovarian cancer risk", "Ovary and tubal epithelium", "Fewer rupture and repair cycles"],
+   ["Thickening of cervical mucus", "Contraception", "Cervix", "None"],
+   ["Thinning of the endometrium", "Lower endometrial cancer risk", "Endometrium", "None"],
+   ["Increase in sex hormone-binding globulin", "Less acne and hirsutism", "Liver and skin", "None"],
+   ["Reduction in menstrual blood loss", "Less iron deficiency", "Endometrium", "None known"]]],
+  "bl": "Combined pills lower ovarian cancer risk mainly through suppression of ovulation, which reduces cycles of epithelial injury and repair."
+ },
+ {
+  "id": "rp10q10", "d": 3, "tags": ["drug-mechanism", "hormone-timeline"], "bp": ["BP-rp10-07", "BP-rp10-11"], "obj": ["BICEP-BROWN.7"],
+  "s": "A 28-year-old woman has a positive pregnancy test 3 weeks after taking levonorgestrel 1.5 mg for emergency contraception. She had unprotected intercourse on day 14 of her regular 28-day cycle and took the tablet 20 hours later, on day 15. She had used an ovulation predictor kit that turned positive on the morning of day 13. She takes no other medications, and her BMI is 22 kg/m2.",
+  "l": "Which of the following best explains why the emergency contraception failed?",
+  "o": ["The LH surge had begun before she took the tablet", "Levonorgestrel disrupted implantation only partially", "The tablet was taken outside the 72-hour window", "Her body weight reduced the drug's effectiveness", "An interacting drug induced hepatic metabolism"],
+  "a": 0,
+  "e": "Levonorgestrel works by postponing the **LH surge**, so it helps only when taken before the surge starts. Her ovulation kit detected LH on day 13, so by the time she took the tablet on day 15 the surge was under way and ovulation followed on schedule; the drug could no longer prevent it. It does not act after fertilization, so the idea of partially disrupted implantation is wrong, and she took it well within the 72-hour window, has a normal BMI and takes no enzyme inducers. Ulipristal or a copper IUD would have been more effective at this point in her cycle.",
+  "w": {
+   "Levonorgestrel disrupted implantation only partially": "Levonorgestrel has no meaningful effect on implantation or on an implanted pregnancy; its only established action is delaying ovulation, which was no longer possible here.",
+   "The tablet was taken outside the 72-hour window": "She took the tablet 20 hours after intercourse, well inside the labeled window, so timing relative to intercourse was not the problem; timing relative to her surge was.",
+   "Her body weight reduced the drug's effectiveness": "Reduced effectiveness is seen with obesity, roughly a BMI over 30, but her BMI is 22, so drug exposure should have been adequate.",
+   "An interacting drug induced hepatic metabolism": "Enzyme inducers such as rifampin or carbamazepine lower levonorgestrel levels, but she takes no medications, so no interaction is possible."
+  },
+  "et": [["Option", "What it requires", "Present in her case", "Established for levonorgestrel"], [
+   ["The LH surge had begun before she took the tablet", "Tablet taken after surge onset", "Yes; kit positive on day 13", "Yes; it cannot stop ovulation then"],
+   ["Levonorgestrel disrupted implantation only partially", "An action on implantation", "Not applicable", "No; it does not affect implantation"],
+   ["The tablet was taken outside the 72-hour window", "More than 72 hours after sex", "No; taken at 20 hours", "Yes; efficacy falls with delay"],
+   ["Her body weight reduced the drug's effectiveness", "Obesity", "No; BMI 22", "Yes; less effective above BMI 30"],
+   ["An interacting drug induced hepatic metabolism", "An enzyme inducer", "No; no medications", "Yes; inducers lower levels"]]],
+  "bl": "Levonorgestrel only delays ovulation; taken after the LH surge has begun, it cannot prevent ovulation or pregnancy.",
+  "ef": "rp10_timeline",
+  "pt": {"hl": ["only if taken before the surge", "LH surge"], "say": "The levonorgestrel bar ends before the LH surge node: once the surge had begun, as her day-13 kit showed, the drug could not delay ovulation."}
+ },
+ {
+  "id": "rp10q11", "d": 1, "tags": ["consent-ethics"], "bp": ["BP-rp10-10"], "obj": ["PATHPHARM-MENSES-CONTRA.4"],
+  "s": "A 16-year-old girl comes to the clinic alone and asks for contraception. She has been sexually active with one partner for 3 months and uses condoms inconsistently. She asks that her parents not be told about the visit. She lives in a state that allows minors to consent to contraceptive care.",
+  "l": "Which of the following is the most appropriate next step?",
+  "o": ["Counsel her and provide contraception confidentially", "Obtain parental consent before prescribing", "Inform her parents because she is a minor", "Perform a pelvic examination before prescribing", "Advise abstinence and defer contraception until age 18"],
+  "a": 0,
+  "e": "Where state law lets minors consent to contraception, as it does here, the physician should **counsel her and provide contraception confidentially**. Confidential care makes adolescents more likely to seek care and use contraception, so the visit includes time alone, a sexual history, STI screening and a discussion of long-acting methods and condom use for infection prevention, with parental involvement encouraged but not required. Parental consent or notification is not needed, and a pelvic examination is not required before starting pills, a patch, a ring, an injection or an implant.",
+  "w": {
+   "Obtain parental consent before prescribing": "Her state allows minors to consent to contraceptive services, so requiring a parent's signature adds a barrier that makes unintended pregnancy more likely.",
+   "Inform her parents because she is a minor": "Breaking confidentiality without a safety concern such as abuse or a risk of serious harm damages trust and is not legally required here.",
+   "Perform a pelvic examination before prescribing": "Guidelines do not require a pelvic examination before hormonal contraception; it is needed only before IUD insertion or when symptoms suggest disease.",
+   "Advise abstinence and defer contraception until age 18": "She is already sexually active, and withholding contraception does not delay sexual activity; it only raises her risk of unintended pregnancy."
+  },
+  "et": [["Option", "Legally required here", "Effect on her care", "Guideline position"], [
+   ["Counsel her and provide contraception confidentially", "Permitted", "Removes barriers to effective use", "Recommended"],
+   ["Obtain parental consent before prescribing", "No", "Delays or prevents care", "Not recommended"],
+   ["Inform her parents because she is a minor", "No", "Breaks trust", "Only for safety concerns"],
+   ["Perform a pelvic examination before prescribing", "No", "Unneeded barrier", "Not needed for most methods"],
+   ["Advise abstinence and defer contraception until age 18", "No", "Raises pregnancy risk", "Not recommended"]]],
+  "bl": "Where minors may consent, counsel the adolescent and provide contraception confidentially; parental consent and pelvic exams are not required."
+ }
+]

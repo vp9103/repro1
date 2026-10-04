@@ -1,0 +1,44 @@
+{
+ "tags": [
+  "feedback-logic",
+  "binding-proteins",
+  "hormone-synthesis",
+  "cycle-phases"
+ ],
+ "labels": {
+  "feedback-logic": "Feedback logic",
+  "binding-proteins": "Binding proteins",
+  "hormone-synthesis": "Hormone synthesis",
+  "cycle-phases": "Cycle phases"
+ },
+ "home": {
+  "feedback-logic": {
+   "l": "Feedback logic",
+   "t": "en5",
+   "f": "en5_synthesis",
+   "h": "Reading thyroid function tests",
+   "also": {
+    "t": "rp8",
+    "h": "How drugs exploit the feedback loop"
+   }
+  },
+  "binding-proteins": {
+   "l": "Binding proteins",
+   "t": "en5",
+   "f": "",
+   "h": "Reading thyroid function tests"
+  },
+  "hormone-synthesis": {
+   "l": "Hormone synthesis",
+   "t": "en5",
+   "f": "en5_synthesis",
+   "h": "How the follicle builds thyroid hormone"
+  },
+  "cycle-phases": {
+   "l": "Cycle phases",
+   "t": "rp8",
+   "f": "rp8_cycle",
+   "h": "Two phases, one fixed"
+  }
+ }
+}

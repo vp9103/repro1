@@ -1,0 +1,50 @@
+[
+ {
+  "k": "en1_star",
+  "t": "StAR protein",
+  "d": "Steroidogenic acute regulatory protein, which carries cholesterol from the outer to the inner mitochondrial membrane; this delivery is the rate-limiting step of steroid synthesis, and ACTH and LH speed it up.",
+  "alt": [
+   "StAR"
+  ]
+ },
+ {
+  "k": "en1_jakstat",
+  "t": "JAK/STAT pathway",
+  "d": "The route used by receptors that lack their own kinase: hormone binding recruits Janus kinase (JAK), which phosphorylates STAT proteins that enter the nucleus; GH, prolactin and EPO signal this way.",
+  "alt": []
+ },
+ {
+  "k": "en1_hre",
+  "t": "Hormone response element",
+  "d": "A short DNA sequence near a target gene where a hormone-receptor complex for a steroid, thyroid hormone or calcitriol binds to switch transcription on or off.",
+  "alt": [
+   "response element",
+   "response elements"
+  ]
+ },
+ {
+  "k": "en1_shbg",
+  "t": "Sex hormone-binding globulin",
+  "d": "The liver protein that carries testosterone and estradiol. Estrogen and thyroid hormone raise it, while androgens, obesity and insulin resistance lower it, which changes the free hormone fraction.",
+  "alt": [
+   "SHBG"
+  ]
+ },
+ {
+  "k": "en1_trophic",
+  "t": "Trophic hormone",
+  "d": "A pituitary hormone whose job is to drive another endocrine gland, such as TSH, ACTH, LH or FSH; its level is the first number to read when locating a defect in an axis.",
+  "alt": [
+   "trophic hormones",
+   "tropic hormone"
+  ]
+ },
+ {
+  "k": "en1_resist",
+  "t": "End-organ resistance",
+  "d": "Failure of target cells to respond to a hormone because of a receptor or signaling defect, so the hormone level is high while the patient shows signs of deficiency.",
+  "alt": [
+   "hormone resistance"
+  ]
+ }
+]

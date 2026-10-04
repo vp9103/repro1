@@ -1,0 +1,143 @@
+{
+ "cmd": "gaps",
+ "key": "topic:en3",
+ "hash": "84e82560e1b9",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 11:49:47",
+ "gaps": [
+  {
+   "gid": "GAP-en3-01",
+   "concept": "ACTH-secreting pituitary adenoma causes Cushing disease: elevated ACTH and cortisol with central weight gain, proximal weakness, easy bruising, and purple striae.",
+   "why_tested": "A patient with Cushing features and a pituitary lesion requires identifying the hormone-producing tumor.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en3-02",
+   "concept": "Pituitary ACTH secretion is usually suppressed by high-dose dexamethasone and stimulated by CRH; ectopic ACTH usually shows neither response.",
+   "why_tested": "Dynamic endocrine tests distinguish Cushing disease from an ectopic ACTH source.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en3-03",
+   "concept": "Excess prolactin suppresses hypothalamic GnRH, lowering LH, FSH, and sex steroids.",
+   "why_tested": "A prolactinoma stem asks why amenorrhea, infertility, sexual dysfunction, or bone loss occurs.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en3-04",
+   "concept": "Marked prolactin elevation favors prolactinoma; stalk compression usually causes a more modest elevation.",
+   "why_tested": "Prolactin level helps distinguish a secreting adenoma from a nonfunctioning sellar mass.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en3-05",
+   "concept": "GH drives hepatic IGF-1 production; excess GH also causes insulin resistance.",
+   "why_tested": "A stem asks which mediator produces tissue growth or why acromegaly causes hyperglycemia.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en3-06",
+   "concept": "Acromegaly can cause prognathism, frontal bossing, carpal tunnel syndrome, and obstructive sleep apnea.",
+   "why_tested": "These clues identify GH excess when hand enlargement or the pituitary mass is unstated.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en3-07",
+   "concept": "Acromegaly is associated with colonic polyps.",
+   "why_tested": "A vignette links a GH-secreting pituitary adenoma with an increased polyp burden.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en3-08",
+   "concept": "Octreotide is a somatostatin analog that suppresses GH secretion; gallstones are a characteristic adverse effect.",
+   "why_tested": "A treatment vignette asks for the drug mechanism or adverse effect.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en3-09",
+   "concept": "Central adrenal insufficiency causes low ACTH and cortisol, often with hyponatremia; aldosterone and potassium are usually preserved, without hyperpigmentation.",
+   "why_tested": "Hormone and electrolyte patterns distinguish pituitary ACTH loss from primary adrenal failure.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en3-10",
+   "concept": "Central hypothyroidism produces low free T4 with low or inappropriately normal TSH.",
+   "why_tested": "A normal-range TSH can conceal pituitary hormone deficiency in a patient with a sellar lesion.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en3-11",
+   "concept": "Pituitary gonadotropin deficiency produces low LH/FSH and low sex steroids, causing amenorrhea or reduced libido.",
+   "why_tested": "Paired gonadotropin and sex-steroid results distinguish central from primary gonadal failure.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en3-12",
+   "concept": "Central diabetes insipidus results from deficient posterior-pituitary ADH: polyuria, dilute urine, and possible hypernatremia.",
+   "why_tested": "A sellar lesion with intense thirst and hypotonic polyuria points to posterior-pituitary dysfunction.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en3-13",
+   "concept": "In central diabetes insipidus, urine stays dilute during water deprivation but concentrates after desmopressin.",
+   "why_tested": "A water-deprivation vignette distinguishes central diabetes insipidus from nephrogenic diabetes insipidus and primary polydipsia.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en3-14",
+   "concept": "Diabetes insipidus is unusual with a pituitary adenoma and favors a stalk or posterior-pituitary lesion such as craniopharyngioma.",
+   "why_tested": "Polyuria helps discriminate among otherwise similar sellar masses.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en3-15",
+   "concept": "MEN1 is an autosomal dominant menin tumor-suppressor defect associated with pituitary adenomas, parathyroid tumors, and pancreatic neuroendocrine tumors.",
+   "why_tested": "A patient with a pituitary adenoma and other endocrine tumors prompts identification of the inherited syndrome.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en3-16",
+   "concept": "Adamantinomatous craniopharyngioma shows stratified squamous epithelium, peripheral palisading, and wet keratin.",
+   "why_tested": "Histology of a calcified suprasellar mass identifies craniopharyngioma.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en3-17",
+   "concept": "The anterior pituitary arises from oral ectoderm via Rathke pouch; the posterior pituitary arises from neuroectoderm.",
+   "why_tested": "An embryology question asks which tissue gives rise to a pituitary region or its tumor.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en3-18",
+   "concept": "Bitemporal hemianopia results from compression of crossing nasal retinal fibers in the optic chiasm.",
+   "why_tested": "A visual-field diagram asks which fibers a suprasellar pituitary mass compresses.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en3-19",
+   "concept": "Lateral pituitary tumor extension into the cavernous sinus can cause ocular motor cranial nerve palsies.",
+   "why_tested": "Diplopia or ptosis accompanying a sellar mass localizes extension beyond the sella.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en3-20",
+   "concept": "Empty sella occurs when CSF herniates through the diaphragma sellae and flattens the pituitary on imaging.",
+   "why_tested": "An MRI showing a CSF-filled sella asks for the anatomic mechanism.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en3-21",
+   "concept": "Lymphocytic hypophysitis is autoimmune inflammation that can enlarge the pituitary or stalk and cause multiple pituitary hormone deficits.",
+   "why_tested": "A peripartum patient with a sellar mass and new hypopituitarism may have inflammation rather than an adenoma.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en3-22",
+   "concept": "Prolonged exogenous glucocorticoid use suppresses CRH and ACTH; abrupt withdrawal can reveal secondary adrenal insufficiency.",
+   "why_tested": "A patient becomes hypotensive after stopping steroids despite no primary adrenal disease.",
+   "yield": "hi"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-en3-1790441291137.jsonl"
+}

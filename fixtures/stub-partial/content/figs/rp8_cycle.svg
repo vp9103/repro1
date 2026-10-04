@@ -1,0 +1,19 @@
+<svg class="dia" viewBox="0 0 900 450" role="img" aria-label="The ovarian cycle: a variable follicular phase driven by FSH and estradiol, the LH surge, and a fixed luteal phase driven by progesterone from the corpus luteum">
+<text class="ttl" x="14" y="24" font-size="17">One cycle, two phases with different rules</text>
+<rect x="14" y="44" width="428" height="392" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="30" y="74" font-size="16">Follicular phase (varies)</text>
+<text x="30" y="118" font-size="15">FSH recruits follicles</text>
+<text x="30" y="154" font-size="15">Estradiol rises</text>
+<text x="30" y="190" font-size="15">High estradiol flips feedback</text>
+<text x="30" y="226" font-size="15">Proliferative endometrium</text>
+<path d="M34 410 C 180 404, 320 330, 420 286" fill="none" stroke="var(--a1)" stroke-width="3"/>
+<text x="250" y="300" font-size="15">Estradiol</text>
+<rect x="458" y="44" width="428" height="392" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="474" y="74" font-size="16">Luteal phase (about 14 days)</text>
+<text x="474" y="118" font-size="15">LH surge triggers ovulation</text>
+<text x="474" y="154" font-size="15">Corpus luteum makes progesterone</text>
+<text x="474" y="190" font-size="15">Secretory endometrium</text>
+<text x="474" y="226" font-size="15">No hCG: luteolysis, menses</text>
+<path d="M478 410 C 600 300, 760 300, 870 410" fill="none" stroke="var(--a2)" stroke-width="3"/>
+<text x="624" y="290" font-size="15">Progesterone</text>
+</svg>

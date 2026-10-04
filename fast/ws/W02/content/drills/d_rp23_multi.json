@@ -1,0 +1,87 @@
+{
+ "id": "d_rp23_multi",
+ "c": "rp23",
+ "kind": "multi",
+ "t": "How much does it raise breast cancer risk?",
+ "tags": [
+  "risk-factors",
+  "histology-to-diagnosis"
+ ],
+ "key": "Ask two questions: is the epithelium proliferating, and are the proliferating cells atypical? No proliferation means no added risk, proliferation alone adds a little, and atypia raises risk about fourfold to fivefold.",
+ "cols": [
+  {
+   "id": "non",
+   "l": "No added risk"
+  },
+  {
+   "id": "pro",
+   "l": "About 1.5 to 2 times"
+  },
+  {
+   "id": "aty",
+   "l": "About 4 to 5 times"
+  }
+ ],
+ "items": [
+  [
+   "Simple cyst",
+   "non",
+   "Fluid-filled cysts are part of nonproliferative fibrocystic change and leave the epithelium unchanged."
+  ],
+  [
+   "Apocrine metaplasia",
+   "non",
+   "Cyst-lining cells that turn large, pink and snouted are a metaplasia, not a proliferation, so risk is unchanged."
+  ],
+  [
+   "Stromal fibrosis",
+   "non",
+   "Scarring after cyst rupture changes the stroma, not the epithelium, so it carries no added risk."
+  ],
+  [
+   "Duct ectasia",
+   "non",
+   "Dilated ducts with plasma cells and thick secretions are an inflammatory change without epithelial proliferation."
+  ],
+  [
+   "Simple fibroadenoma",
+   "non",
+   "A fibroadenoma without complex features is a benign stromal tumor that does not raise later cancer risk."
+  ],
+  [
+   "Fat necrosis",
+   "non",
+   "Injured fat with calcium soaps can mimic cancer on imaging but is a healing response, not a risk marker."
+  ],
+  [
+   "Florid usual ductal hyperplasia",
+   "pro",
+   "Extra layers of mixed, streaming cells fill the duct, a proliferation without atypia that adds slight risk."
+  ],
+  [
+   "Sclerosing adenosis",
+   "pro",
+   "Increased, compressed acini with intact myoepithelium are proliferative without atypia and add slight risk."
+  ],
+  [
+   "Solitary intraductal papilloma",
+   "pro",
+   "A papillary proliferation in a large duct counts as proliferative disease without atypia."
+  ],
+  [
+   "Atypical ductal hyperplasia",
+   "aty",
+   "A monotonous, clonal proliferation resembling low-grade carcinoma in situ raises risk about fourfold to fivefold."
+  ],
+  [
+   "Atypical lobular hyperplasia",
+   "aty",
+   "Uniform, loosely cohesive cells partly filling acini carry the same moderate risk as ductal atypia."
+  ],
+  [
+   "Monotonous cells partly filling a duct",
+   "aty",
+   "Evenly spaced, identical cells that do not fill the whole duct describe atypical hyperplasia, not carcinoma in situ."
+  ]
+ ]
+}

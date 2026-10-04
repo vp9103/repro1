@@ -1,0 +1,204 @@
+{
+ "id": "en5",
+ "t": "The thyroid: structure, hormone synthesis and function tests",
+ "sub": "How the follicle builds T4 and T3, and how one TSH value tells you where a thyroid problem lives.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 12,
+ "bp": [
+  "BP-en5-01"
+ ],
+ "obj": [
+  "ENDO-THYROID.1"
+ ],
+ "pretest": [
+  {
+   "q": "A drug blocks the enzyme that attaches iodine to thyroglobulin. Which step stops first?",
+   "o": [
+    "Organification of iodide",
+    "Iodide uptake into the cell",
+    "Conversion of T4 to T3 in the liver",
+    "Release of TSH"
+   ],
+   "a": 0,
+   "why": "Thyroid peroxidase oxidizes iodide and attaches it to tyrosines on thyroglobulin (organification), then couples the iodotyrosines. Thionamides block it, so new hormone synthesis stops.",
+   "w": {
+    "Iodide uptake into the cell": "Uptake happens earlier, at the basolateral sodium-iodide symporter, which perchlorate blocks; thionamides leave the trap working.",
+    "Conversion of T4 to T3 in the liver": "Peripheral conversion uses 5'-deiodinase, a different enzyme; propylthiouracil inhibits it only as a second action.",
+    "Release of TSH": "TSH comes from pituitary thyrotrophs; when synthesis falls, TSH release actually rises because negative feedback is lost."
+   }
+  },
+  {
+   "q": "Which thyroid hormone form is most active at the nuclear receptor?",
+   "o": [
+    "T3",
+    "T4",
+    "Reverse T3",
+    "Thyroglobulin"
+   ],
+   "a": 0,
+   "why": "T3 binds the thyroid hormone receptor with about ten times the affinity of T4, which is why the gland's T4 output is converted peripherally before it acts.",
+   "w": {
+    "T4": "T4 is the main secreted form but acts mostly as a prohormone that deiodinase converts into the active T3 inside tissues.",
+    "Reverse T3": "Reverse T3 is an inactive product of inner-ring deiodination that rises in severe illness while active T3 falls.",
+    "Thyroglobulin": "Thyroglobulin is the storage scaffold inside the colloid; it never binds the nuclear receptor."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How the follicle builds thyroid hormone"
+  ],
+  [
+   "p",
+   "Thyroid hormone is built on a protein scaffold inside the follicle. The follicular cell pulls iodide in from the blood through the {{nis|sodium-iodide symporter}}, then {{tpo|thyroid peroxidase}} oxidizes it and attaches it to tyrosine residues on **thyroglobulin** in the colloid. Coupling two diiodotyrosines gives **T4**; one monoiodotyrosine plus one diiodotyrosine gives **T3**. TSH drives every step, from iodide uptake to the endocytosis that frees the hormone."
+  ],
+  [
+   "f",
+   "en5_synthesis"
+  ],
+  [
+   "call",
+   "key",
+   "Most active hormone is made outside the thyroid",
+   "The gland secretes mostly **T4**. Peripheral **5'-deiodinase** converts it to T3, the form that binds the nuclear receptor with high affinity, so T4 behaves as a prohormone and drugs that block deiodination lower the active hormone quickly."
+  ],
+  [
+   "t",
+   [
+    "Step",
+    "Where",
+    "What blocks it"
+   ],
+   [
+    [
+     "Iodide uptake",
+     "Basolateral membrane (symporter)",
+     "Perchlorate, pertechnetate"
+    ],
+    [
+     "Oxidation, organification, coupling",
+     "Apical membrane (**thyroid peroxidase**)",
+     "Methimazole, propylthiouracil"
+    ],
+    [
+     "Peripheral T4 to T3",
+     "Liver, kidney, target tissues",
+     "Propylthiouracil, propranolol, glucocorticoids"
+    ]
+   ]
+  ],
+  [
+   "steps",
+   [
+    "From iodide to circulating hormone, in order",
+    [
+     [
+      "Trap iodide",
+      "The symporter concentrates iodide in the follicular cell, driven by the sodium gradient that the sodium-potassium pump maintains."
+     ],
+     [
+      "Oxidize and organify",
+      "Thyroid peroxidase oxidizes iodide and attaches it to tyrosines on thyroglobulin, making MIT and DIT."
+     ],
+     [
+      "Couple",
+      "Thyroid peroxidase joins DIT with DIT to make T4, or MIT with DIT to make T3, while both are still attached to thyroglobulin."
+     ],
+     [
+      "Release",
+      "TSH triggers endocytosis of colloid; lysosomal proteases cut T4 and T3 free, and the cell secretes them into the blood."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Reading thyroid function tests"
+  ],
+  [
+   "p",
+   "Because free T4 feeds back on the pituitary, the TSH level tells you where the problem is. A high TSH with a low free T4 means the gland itself is failing, which is **primary hypothyroidism**; a low TSH with a high free T4 means the gland is overactive on its own. When TSH and free T4 move in the same direction, suspect the pituitary or hypothalamus."
+  ],
+  [
+   "img",
+   "en5_follicles"
+  ],
+  [
+   "call",
+   "trap",
+   "A low TSH is not always hyperthyroidism",
+   "In **central hypothyroidism** TSH is low or inappropriately normal while free T4 is low. Reading TSH alone would call this patient hyperthyroid; reading both values together shows the pituitary is the organ that failed."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_en5_tsh",
+    "q": "A patient has a low TSH and a low free T4. Which reasoning best locates the defect?",
+    "o": [
+     "A failing gland would release the pituitary brake and raise TSH, so a low TSH points upstream to the pituitary or hypothalamus",
+     "A low free T4 always means the thyroid itself has been destroyed, whatever the TSH shows",
+     "A low TSH means the thyroid is overactive and is suppressing the pituitary",
+     "A low binding globulin lowers both numbers together, so nothing is wrong"
+    ],
+    "a": 0,
+    "why": "Negative feedback makes the two values move in opposite directions when the thyroid is the problem: a failing gland produces a high TSH, and an autonomous gland produces a low one. When both are low, the thyroid has lost its stimulus, so the defect sits in the pituitary thyrotrophs or the hypothalamic TRH neurons. Binding-globulin changes alter total T4, not free T4, and leave TSH normal."
+   }
+  ],
+  [
+   "why",
+   "Why does a pregnant woman have a high total T4 but a normal free T4?",
+   "Estrogen raises the level of {{tbg|thyroxine-binding globulin}}, so more T4 circulates bound. The gland responds by making more hormone until the free fraction, the part that acts on tissues and feeds back on the pituitary, returns to normal. Total T4 therefore rises while free T4 and TSH stay normal, and she is euthyroid. The same logic explains why a low binding-globulin state, such as nephrotic syndrome or androgen use, lowers total T4 without causing hypothyroidism. Always read the free hormone when binding proteins change."
+  ],
+  [
+   "vis",
+   "en5"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these are steps or controls of thyroid hormone synthesis?",
+  "items": [
+   [
+    "Iodide trapping by the symporter",
+    1
+   ],
+   [
+    "Organification by thyroid peroxidase",
+    1
+   ],
+   [
+    "Coupling of iodotyrosines",
+    1
+   ],
+   [
+    "Endocytosis of colloid",
+    1
+   ],
+   [
+    "TSH stimulation of the follicular cell",
+    1
+   ],
+   [
+    "Peripheral conversion of T4 to T3",
+    1
+   ],
+   [
+    "Hydroxylation of tyrosine to L-DOPA",
+    0
+   ],
+   [
+    "Aromatization of androgens",
+    0
+   ],
+   [
+    "Cleavage of proopiomelanocortin",
+    0
+   ],
+   [
+    "Sulfation of cholesterol side chains",
+    0
+   ]
+  ]
+ }
+}

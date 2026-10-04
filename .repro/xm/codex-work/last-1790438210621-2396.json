@@ -1,0 +1,43 @@
+{
+  "errors": [
+    {
+      "what": "“TRH (pulsatile)” labels the hypothalamus-to-pituitary arrow.",
+      "why_wrong": "The ovarian axis uses pulsatile GnRH. TRH regulates the thyroid axis. [Source](https://www.ncbi.nlm.nih.gov/books/NBK499898/)",
+      "severity": "error"
+    },
+    {
+      "what": "“TSH” labels one pituitary-to-ovary arrow.",
+      "why_wrong": "This arrow should represent FSH or LH. TSH primarily stimulates the thyroid gland. [Source](https://www.ncbi.nlm.nih.gov/books/NBK499898/)",
+      "severity": "error"
+    },
+    {
+      "what": "“ACTH” labels the other pituitary-to-ovary arrow.",
+      "why_wrong": "This arrow should represent LH or FSH. ACTH primarily stimulates the adrenal cortex. [Source](https://www.ncbi.nlm.nih.gov/books/NBK499898/)",
+      "severity": "error"
+    },
+    {
+      "what": "“Estradiol and progesterone suppress GnRH, LH and FSH for most of the cycle.”",
+      "why_wrong": "This makes progesterone seem like a major suppressor throughout the cycle, although its inhibitory role is chiefly luteal; estradiol is central to follicular-phase feedback. [Source](https://www.ncbi.nlm.nih.gov/sites/books/NBK279070/)",
+      "severity": "misleading"
+    },
+    {
+      "what": "“Inhibin B from granulosa cells suppresses FSH only” describes the dotted loop without a cycle phase.",
+      "why_wrong": "Inhibin B is prominent in the follicular phase, while inhibin A predominates in the luteal phase. The unqualified label can imply that B is the ovarian inhibin throughout the cycle. [Source](https://www.ncbi.nlm.nih.gov/books/NBK279054/)",
+      "severity": "misleading"
+    },
+    {
+      "what": "The solid negative-feedback and dashed positive-feedback paths both end in ordinary arrowheads.",
+      "why_wrong": "Their opposing effects are conveyed only by distant text and line style; the arrowheads themselves can look like stimulation in both cases.",
+      "severity": "misleading"
+    },
+    {
+      "what": "The diagram and legend labels are very small, and most of the PNG below the figure is blank.",
+      "why_wrong": "The labels are difficult to read at the supplied size, and the unused space makes the teaching diagram appear smaller.",
+      "severity": "cosmetic"
+    }
+  ],
+  "legibility": 2,
+  "teaches_caption": false,
+  "overall": 2,
+  "verdict": "The three main forward-axis labels name hormones from other endocrine axes. Although the feedback paths broadly match the caption, the picture does not correctly show GnRH driving LH and FSH."
+}

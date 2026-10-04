@@ -1,0 +1,197 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp28",
+ "hash": "f9ca71a54827",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:20:29",
+ "gaps": [
+  {
+   "gid": "GAP-rp28-01",
+   "concept": "True labor causes progressive cervical dilation or effacement; Braxton Hicks contractions do not.",
+   "why_tested": "Distinguishes painful contractions that establish labor from false labor.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-02",
+   "concept": "Bishop score combines dilation, effacement, fetal station, cervical consistency, and cervical position; station zero is at the ischial spines.",
+   "why_tested": "Interprets a cervical examination before induction.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-03",
+   "concept": "Active labor begins around 6 cm dilation; active-phase arrest requires no cervical change despite adequate contractions.",
+   "why_tested": "Distinguishes slow latent labor from true arrest.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp28-04",
+   "concept": "Cephalopelvic disproportion or persistent occiput-posterior position can prevent descent despite adequate uterine contractions.",
+   "why_tested": "Identifies a cause of second-stage arrest when contractions are adequate.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp28-05",
+   "concept": "External Doppler records fetal heart rate and a tocodynamometer records contractions; internal scalp electrodes and pressure catheters require ruptured membranes.",
+   "why_tested": "Identifies monitoring equipment and when internal monitoring is possible.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp28-06",
+   "concept": "A reactive nonstress test after 32 weeks has at least two fetal heart accelerations of 15 beats/minute for 15 seconds within 20 minutes.",
+   "why_tested": "Classifies an antepartum fetal surveillance tracing.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-07",
+   "concept": "Biophysical profile scores fetal breathing, movement, tone, amniotic fluid, and nonstress testing; each component receives zero or two points.",
+   "why_tested": "Interprets an ultrasound and fetal monitoring score.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp28-08",
+   "concept": "Normal fetal heart baseline is 110–160/min with moderate variability; absent variability plus recurrent decelerations or bradycardia is category III.",
+   "why_tested": "Recognizes a tracing concerning for fetal acidemia.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-09",
+   "concept": "A sinusoidal fetal heart tracing is associated with severe fetal anemia.",
+   "why_tested": "Links a distinctive smooth, wave-like tracing to its cause.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp28-10",
+   "concept": "Uterine tachysystole is more than five contractions per 10 minutes and can follow oxytocin or prostaglandin administration.",
+   "why_tested": "Explains fetal heart abnormalities during induction.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-11",
+   "concept": "Oxytocin activates Gq-linked receptors to raise myometrial intracellular calcium; prolonged high-dose exposure can cause water retention and hyponatremia.",
+   "why_tested": "Tests the induction drug’s mechanism or an adverse-effect vignette.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp28-12",
+   "concept": "Misoprostol increases uterine rupture risk in patients with a prior cesarean scar.",
+   "why_tested": "Identifies an unsafe cervical-ripening drug in a scarred uterus.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp28-13",
+   "concept": "Ruptured membranes cause vaginal fluid pooling, positive ferning, and alkaline nitrazine testing.",
+   "why_tested": "Distinguishes amniotic fluid leakage from urine or ordinary discharge.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-14",
+   "concept": "Intraamniotic infection presents during labor with maternal fever, uterine tenderness, and fetal tachycardia, often after prolonged membrane rupture.",
+   "why_tested": "Identifies the cause of fever and fetal tachycardia during labor.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-15",
+   "concept": "Maternal group B streptococcal colonization warrants intrapartum penicillin to prevent early neonatal infection.",
+   "why_tested": "Tests the purpose and timing of antibiotic prophylaxis during delivery.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-16",
+   "concept": "Umbilical cord prolapse after membrane rupture, especially with breech or an unengaged presenting part, causes sudden fetal bradycardia.",
+   "why_tested": "Explains abrupt fetal deterioration immediately after the membranes rupture.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-17",
+   "concept": "Uterine rupture is associated with a prior uterine scar and presents with sudden pain, fetal bradycardia, and loss of fetal station.",
+   "why_tested": "Distinguishes rupture from ordinary labor pain or slow progression.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-18",
+   "concept": "Shoulder dystocia may produce the turtle sign; McRoberts positioning with suprapubic pressure is the initial maneuver.",
+   "why_tested": "Recognizes an impacted shoulder after delivery of the head.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-19",
+   "concept": "A boggy uterus indicates uterine atony; overdistension, prolonged labor, and intraamniotic infection increase its risk.",
+   "why_tested": "Identifies the cause of heavy bleeding immediately after delivery.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-20",
+   "concept": "Persistent postpartum bleeding with a firm, contracted uterus suggests cervical or vaginal laceration.",
+   "why_tested": "Distinguishes genital tract trauma from uterine atony.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-21",
+   "concept": "Obstetric disseminated intravascular coagulation causes bleeding from puncture sites, thrombocytopenia, prolonged PT/PTT, and low fibrinogen.",
+   "why_tested": "Identifies coagulopathy as the cause of postpartum hemorrhage.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp28-22",
+   "concept": "Placenta accreta results from deficient decidua basalis, often after prior cesarean delivery, and causes failure of placental separation with hemorrhage.",
+   "why_tested": "Explains a retained, adherent placenta during the third stage.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-23",
+   "concept": "Uterine inversion causes severe postpartum hemorrhage and shock with an absent palpable fundus, often after excessive cord traction.",
+   "why_tested": "Identifies a third-stage complication from the abdominal and pelvic examination.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-24",
+   "concept": "Amniotic fluid embolism causes sudden hypoxia, hypotension, and disseminated intravascular coagulation during or immediately after delivery.",
+   "why_tested": "Distinguishes abrupt cardiopulmonary collapse from isolated postpartum hemorrhage.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-25",
+   "concept": "Accidental dural puncture during epidural placement causes a postpartum headache that worsens upright and improves supine.",
+   "why_tested": "Explains a positional headache following labor analgesia.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp28-26",
+   "concept": "Postpartum endometritis is usually polymicrobial and presents with fever, uterine tenderness, and foul lochia, especially after cesarean delivery.",
+   "why_tested": "Distinguishes uterine infection from normal postpartum discharge.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-27",
+   "concept": "Lactational mastitis commonly involves Staphylococcus aureus and causes fever with a tender, wedge-shaped erythematous breast area.",
+   "why_tested": "Distinguishes mastitis from uncomplicated breast engorgement.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-28",
+   "concept": "Severe postpartum hemorrhage can infarct the enlarged anterior pituitary, causing low prolactin, failure to lactate, and later amenorrhea.",
+   "why_tested": "Identifies Sheehan syndrome from its mechanism and hormone pattern.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-29",
+   "concept": "Postpartum thyroiditis is painless autoimmune thyroid inflammation; destructive thyrotoxicosis may precede hypothyroidism and has low radioactive iodine uptake.",
+   "why_tested": "Distinguishes postpartum thyroiditis from Graves disease.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp28-30",
+   "concept": "Suckling reduces hypothalamic dopamine, increasing prolactin; prolactin suppresses GnRH and can delay ovulation.",
+   "why_tested": "Explains the hormone pattern behind lactational amenorrhea.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp28-31",
+   "concept": "An unsensitized Rh-negative mother receives anti-D immune globulin after delivering an Rh-positive infant to prevent alloimmunization.",
+   "why_tested": "Tests postpartum prevention of Rh hemolytic disease in a future pregnancy.",
+   "yield": "hi"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp28-1790443078293.jsonl"
+}

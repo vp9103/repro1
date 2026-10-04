@@ -1,0 +1,156 @@
+[
+ {
+  "id": "p0",
+  "kind": "diag",
+  "mins": 10,
+  "t": "Ten-minute triage",
+  "d": "One quick recall item per topic before you study, so the plan knows where to start."
+ },
+ {
+  "id": "s1",
+  "kind": "unit",
+  "topics": [
+   "rp1",
+   "rp2",
+   "rp3"
+  ],
+  "t": "Stage 1: Reproductive anatomy",
+  "d": "rp1; rp2; rp3"
+ },
+ {
+  "id": "s2",
+  "kind": "unit",
+  "topics": [
+   "rp4",
+   "rp5",
+   "rp6",
+   "rp7"
+  ],
+  "t": "Stage 2: Development: embryo, sex and puberty",
+  "d": "rp4; rp5; rp6; rp7"
+ },
+ {
+  "id": "s3",
+  "kind": "unit",
+  "topics": [
+   "rp8",
+   "rp9",
+   "rp10",
+   "rp11"
+  ],
+  "t": "Stage 3: The cycle and its disorders",
+  "d": "rp8; rp9; rp10; rp11"
+ },
+ {
+  "id": "s4",
+  "kind": "unit",
+  "topics": [
+   "rp12",
+   "rp13",
+   "rp14",
+   "rp15"
+  ],
+  "t": "Stage 4: Female genital tract pathology",
+  "d": "rp12; rp13; rp14; rp15"
+ },
+ {
+  "id": "s5",
+  "kind": "unit",
+  "topics": [
+   "rp16",
+   "rp17",
+   "rp18"
+  ],
+  "t": "Stage 5: Sexually transmitted and perinatal infections",
+  "d": "rp16; rp17; rp18"
+ },
+ {
+  "id": "s6",
+  "kind": "unit",
+  "topics": [
+   "rp19",
+   "rp20",
+   "rp21",
+   "rp22"
+  ],
+  "t": "Stage 6: The male reproductive system",
+  "d": "rp19; rp20; rp21; rp22"
+ },
+ {
+  "id": "s7",
+  "kind": "unit",
+  "topics": [
+   "rp23",
+   "rp24"
+  ],
+  "t": "Stage 7: The breast",
+  "d": "rp23; rp24"
+ },
+ {
+  "id": "s8",
+  "kind": "unit",
+  "topics": [
+   "rp25",
+   "rp30",
+   "rp26",
+   "rp27"
+  ],
+  "t": "Stage 8: Pregnancy",
+  "d": "rp25; rp30; rp26; rp27"
+ },
+ {
+  "id": "s9",
+  "kind": "unit",
+  "topics": [
+   "rp28"
+  ],
+  "t": "Stage 9: Pregnancy",
+  "d": "rp28"
+ },
+ {
+  "id": "s10",
+  "kind": "unit",
+  "topics": [
+   "rp29"
+  ],
+  "t": "Stage 10: Whole-person reproductive care",
+  "d": "rp29"
+ },
+ {
+  "id": "s11",
+  "kind": "unit",
+  "topics": [
+   "en1",
+   "en2"
+  ],
+  "t": "Stage 11: Hormones and the pituitary",
+  "d": "en1; en2"
+ },
+ {
+  "id": "s12",
+  "kind": "unit",
+  "topics": [
+   "en5",
+   "en6",
+   "en7"
+  ],
+  "t": "Stage 12: Thyroid",
+  "d": "en5; en6; en7"
+ },
+ {
+  "id": "s13",
+  "kind": "unit",
+  "topics": [
+   "en9"
+  ],
+  "t": "Stage 13: Calcium, parathyroid and bone",
+  "d": "en9"
+ },
+ {
+  "id": "pf",
+  "kind": "final",
+  "mins": 30,
+  "t": "Final check",
+  "d": "A mixed set across every finished topic, weighted toward what you have missed."
+ }
+]

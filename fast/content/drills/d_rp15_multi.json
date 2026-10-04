@@ -1,0 +1,31 @@
+{
+ "id": "d_rp15_multi",
+ "c": "rp15",
+ "kind": "multi",
+ "t": "Which family does the ovarian tumor belong to?",
+ "tags": ["cell-of-origin", "tumor-markers"],
+ "key": "Name the normal cell the tumor imitates: surface epithelium gives serous, mucinous, endometrioid and Brenner tumors; germ cells give teratomas and marker-secreting tumors; sex cord-stromal cells make hormones; bilateral signet-ring or mucinous masses point to a gut primary.",
+ "cols": [
+  {"id": "epi", "l": "Surface epithelial"},
+  {"id": "germ", "l": "Germ cell"},
+  {"id": "scs", "l": "Sex cord-stromal"},
+  {"id": "met", "l": "Metastatic"}
+ ],
+ "items": [
+  ["Psammoma bodies in a bilateral serous tumor", "epi", "Serous tumors come from Müllerian-type surface epithelium, and their carcinomas lay down concentric calcified psammoma bodies."],
+  ["Transitional-type nests with coffee-bean nuclei", "epi", "The Brenner tumor is an epithelial tumor of urothelium-like cells and is usually benign."],
+  ["Carcinoma arising in an endometriotic cyst", "epi", "Clear cell and endometrioid carcinomas grow from endometriosis, which is displaced Müllerian epithelium."],
+  ["Precursor lesion in the fimbriated tube", "epi", "Serous tubal intraepithelial carcinoma is the epithelial precursor of high-grade serous carcinoma."],
+  ["Schiller-Duval bodies with a high AFP", "germ", "The yolk sac tumor imitates embryonic yolk sac, which makes alpha-fetoprotein."],
+  ["Clear fried-egg cells with a high LDH", "germ", "Dysgerminoma is the ovarian counterpart of seminoma and is made of primitive germ cells."],
+  ["Hair, teeth and sebum in a cyst", "germ", "The mature cystic teratoma holds tissues from all three germ layers, so it comes from a germ cell."],
+  ["Thyroid tissue causing hyperthyroidism", "germ", "Struma ovarii is a monodermal teratoma made mostly of thyroid follicles, so it is a germ cell tumor."],
+  ["Call-Exner bodies with a high inhibin", "scs", "Granulosa cell tumors copy follicle granulosa cells, which normally make estrogen and inhibin."],
+  ["Virilization from a solid ovarian mass", "scs", "Sertoli-Leydig cell tumors copy testicular-type stromal cells and secrete androgens."],
+  ["Ascites and right pleural effusion that resolve after surgery", "scs", "The fibroma of Meigs syndrome is a stromal tumor of collagen-producing fibroblasts."],
+  ["Precocious puberty from an ovarian mass in a girl", "scs", "A juvenile granulosa cell tumor secretes estrogen, which drives breast development and bleeding."],
+  ["Signet-ring cells in both ovaries", "met", "Mucin-filled signet-ring cells in both ovaries define a Krukenberg tumor, a metastasis."],
+  ["Diffuse gastric adenocarcinoma found on endoscopy", "met", "The stomach is the usual source of Krukenberg tumors, which spread to the ovaries."],
+  ["Pseudomyxoma peritonei with an appendiceal tumor", "met", "Gelatinous peritoneal mucin usually comes from an appendiceal mucinous tumor that has seeded the ovaries."]
+ ]
+}

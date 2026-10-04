@@ -1,0 +1,36 @@
+<svg class="dia" viewBox="0 0 900 480" role="img" aria-label="Postpartum hemorrhage: the four Ts of tone, trauma, tissue and thrombin, and the ordered uterotonic ladder for atony with the contraindication of each drug">
+<text class="ttl" x="14" y="26" font-size="17">Postpartum hemorrhage: find the T, then climb the drug ladder</text>
+<text x="14" y="52" font-size="14">Normal vaginal loss under 500 mL; hemorrhage is 1000 mL or more, or loss with hypovolemia</text>
+<rect x="14" y="66" width="380" height="400" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="92" font-size="16">The four Ts</text>
+<rect x="26" y="106" width="356" height="78" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="38" y="132" font-size="15">Tone: uterine atony</text>
+<text x="38" y="158" font-size="14">Most common; soft, boggy uterus</text>
+<rect x="26" y="192" width="356" height="78" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="38" y="218" font-size="15">Trauma</text>
+<text x="38" y="244" font-size="14">Lacerations, hematoma, inversion</text>
+<rect x="26" y="278" width="356" height="78" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="38" y="304" font-size="15">Tissue</text>
+<text x="38" y="330" font-size="14">Retained placenta or accreta</text>
+<rect x="26" y="364" width="356" height="78" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="38" y="390" font-size="15">Thrombin</text>
+<text x="38" y="416" font-size="14">DIC: abruption, amniotic fluid embolism</text>
+<line x1="384" y1="140" x2="412" y2="140" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="412,135 420,140 412,145" fill="var(--ink-2)"/>
+<rect x="410" y="66" width="476" height="400" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="424" y="92" font-size="16">Atony: treat in this order</text>
+<rect x="422" y="106" width="452" height="64" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="434" y="130" font-size="15">1. Massage + oxytocin</text>
+<text x="434" y="154" font-size="14">First line; also given at every delivery</text>
+<rect x="422" y="178" width="452" height="64" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="434" y="202" font-size="15">2. Methylergonovine</text>
+<text x="434" y="226" font-size="14">Ergot vasoconstrictor: avoid in hypertension</text>
+<rect x="422" y="250" width="452" height="64" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="434" y="274" font-size="15">3. Carboprost (PGF2&#945;)</text>
+<text x="434" y="298" font-size="14">Constricts bronchi: avoid in asthma</text>
+<rect x="422" y="322" width="452" height="64" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="434" y="346" font-size="15">4. Misoprostol (PGE1)</text>
+<text x="434" y="370" font-size="14">Safe in hypertension and asthma</text>
+<text class="a2" x="424" y="414" font-size="14">Tranexamic acid within 3 hours of birth</text>
+<text x="424" y="440" font-size="14">Still bleeding: balloon, embolization, surgery</text>
+</svg>

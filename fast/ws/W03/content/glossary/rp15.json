@@ -1,0 +1,38 @@
+[
+ {
+  "k": "rp15_folcyst",
+  "t": "Follicular cyst",
+  "d": "The most common functional ovarian cyst: a follicle that fails to rupture and keeps filling with fluid, forming a thin-walled simple cyst that usually resolves within one or two cycles.",
+  "alt": ["follicular cysts"]
+ },
+ {
+  "k": "rp15_kruk",
+  "t": "Krukenberg tumor",
+  "d": "Metastatic carcinoma in both ovaries made of mucin-filled signet-ring cells, usually from a gastric primary; the ovaries are enlarged, solid and often bilateral.",
+  "alt": []
+ },
+ {
+  "k": "rp15_bord",
+  "t": "Borderline tumor",
+  "d": "An ovarian epithelial tumor with stratification and atypia but no destructive stromal invasion; its peritoneal implants are usually noninvasive and most patients are cured by surgery.",
+  "alt": ["borderline tumors"]
+ },
+ {
+  "k": "rp15_stic",
+  "t": "Serous tubal intraepithelial carcinoma",
+  "d": "A TP53-mutant carcinoma confined to the epithelium of the fimbriated fallopian tube; it is the precursor of most high-grade serous carcinomas and is often found in BRCA carriers' tubes.",
+  "alt": ["STIC"]
+ },
+ {
+  "k": "rp15_sd",
+  "t": "Schiller-Duval bodies",
+  "d": "Glomerulus-like structures of a central blood vessel wrapped by tumor cells in a space lined by tumor cells; they are the histologic hallmark of yolk sac tumor, which secretes AFP.",
+  "alt": ["Schiller-Duval body"]
+ },
+ {
+  "k": "rp15_ce",
+  "t": "Call-Exner bodies",
+  "d": "Small follicle-like rosettes of granulosa cells around eosinophilic material; with grooved coffee-bean nuclei, they identify the estrogen-making granulosa cell tumor.",
+  "alt": ["Call-Exner body"]
+ }
+]

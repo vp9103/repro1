@@ -1,0 +1,3 @@
+{"type": "turn.started", "provider": "gemini", "model": "gemini-3.5-flash", "format": "json_schema", "images": 0, "prompt_sha": "b08a912e41"}
+{"type": "item.completed", "model": "gemini-3.5-flash", "usage": {"completion_tokens": 991, "prompt_tokens": 1204, "total_tokens": 4813}}
+{"type": "turn.completed", "provider": "gemini", "model": "gemini-3.5-flash"}

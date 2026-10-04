@@ -1,0 +1,107 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp13",
+ "hash": "d5a15c00e2cd",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:08:23",
+ "gaps": [
+  {
+   "gid": "GAP-rp13-01",
+   "concept": "Ectocervix has nonkeratinized stratified squamous epithelium; endocervix has mucus-secreting simple columnar epithelium.",
+   "why_tested": "Identifies the tissue and cell type shown on cervical histology. [Source](https://extranet.who.int/ncdccs/Data/ZMB_D1_VIA-CryoReferenceManualZambiaMarch2015.pdf)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp13-02",
+   "concept": "Estrogen makes cervical mucus thin and permeable to sperm; progesterone makes it thick and relatively impermeable.",
+   "why_tested": "Explains mucus changes across the menstrual cycle or with hormonal contraception.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp13-03",
+   "concept": "HPV 6 and 11 are low-risk types associated with condylomata, unlike oncogenic HPV 16 and 18.",
+   "why_tested": "Distinguishes a wart-associated HPV type from one associated with cervical cancer. [Source](https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-11-human-papillomavirus.html)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp13-04",
+   "concept": "Persistent high-risk HPV infection over years, rather than transient infection, drives progression to cervical precancer and cancer.",
+   "why_tested": "Explains why most HPV infections resolve while a persistent infection can progress. [Source](https://www.cancer.gov/types/cervical/causes-risk-prevention)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp13-05",
+   "concept": "Integration of high-risk HPV DNA can disrupt viral E2, increasing E6 and E7 expression.",
+   "why_tested": "Connects viral integration in a tumor specimen to increased oncogene expression. [Source](https://pmc.ncbi.nlm.nih.gov/articles/PMC3945621/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp13-06",
+   "concept": "HPV E7-mediated Rb inactivation increases p16 expression; diffuse p16 staining supports an HPV-associated high-grade lesion.",
+   "why_tested": "Interprets p16 immunostaining on a cervical biopsy. [Source](https://pmc.ncbi.nlm.nih.gov/articles/PMC3945621/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp13-07",
+   "concept": "CIN 1, 2, and 3 involve atypia in the lower third, lower two thirds, and nearly full epithelial thickness, respectively.",
+   "why_tested": "Assigns a CIN grade from the depth of epithelial atypia on biopsy. [Source](https://www.ncbi.nlm.nih.gov/books/NBK321760/pdf/Bookshelf_NBK321760.pdf)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp13-08",
+   "concept": "CIN remains above an intact basement membrane; stromal invasion distinguishes invasive cervical carcinoma.",
+   "why_tested": "Separates carcinoma in situ from invasive cancer on histology. [Source](https://www.ncbi.nlm.nih.gov/books/NBK424408/pdf/Bookshelf_NBK424408.pdf)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp13-09",
+   "concept": "HPV 18 is particularly associated with cervical glandular neoplasia, including adenocarcinoma arising in the endocervix.",
+   "why_tested": "Links a gland-forming endocervical lesion to its characteristic HPV association. [Source](https://dceg.cancer.gov/news-events/news/2020/hpv-genotyping)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp13-10",
+   "concept": "Cervical cancer can present with postcoital bleeding or persistent watery, blood-tinged vaginal discharge.",
+   "why_tested": "Recognizes the symptomatic cervical cancer vignette. [Source](https://www.cancer.gov/types/cervical/symptoms)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp13-11",
+   "concept": "In utero diethylstilbestrol exposure increases the risk of cervical clear cell adenocarcinoma.",
+   "why_tested": "Identifies the cervical cancer associated with maternal DES use. [Source](https://www.cancer.gov/types/cervical/causes-risk-prevention)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp13-12",
+   "concept": "Cervical dysplasia often appears acetowhite after acetic acid application during colposcopy.",
+   "why_tested": "Identifies an abnormal area targeted for cervical biopsy. [Source](https://publications.iarc.who.int/_publications/media/download/4577/f2c8072ead1ed906e8bdb439fd36ffdd707bba2a.pdf)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp13-13",
+   "concept": "HPV vaccination prevents new infections but does not treat existing infection; vaccinated patients still need cervical screening.",
+   "why_tested": "Tests prevention counseling after vaccination or a positive HPV result. [Source](https://www.cdc.gov/cervical-cancer/prevention/index.html)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp13-14",
+   "concept": "Prior CIN 2 or worse requires prolonged surveillance after treatment, including beyond age 65 when applicable.",
+   "why_tested": "Distinguishes routine screening cessation from follow-up after high-grade precancer. [Source](https://asccp.org/wp-content/uploads/2025/09/2019_ASCCP_Risk_Based_Management_Consensus.3.pdf)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp13-15",
+   "concept": "LEEP or cone excision increases the risk of subsequent preterm birth through cervical weakening.",
+   "why_tested": "Explains an obstetric complication after treatment of cervical dysplasia. [Source](https://www.acog.org/womens-health/faqs/loop-electrosurgical-excision-procedure)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp13-16",
+   "concept": "HPV 16 or 18 positivity warrants colposcopic evaluation even when concurrent cervical cytology is negative.",
+   "why_tested": "Tests risk-based follow-up for a discordant HPV-positive, Pap-negative result. [Source](https://asccp.org/wp-content/uploads/2025/09/2019_ASCCP_Risk_Based_Management_Consensus.3.pdf)",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp13-1790442385849.jsonl"
+}

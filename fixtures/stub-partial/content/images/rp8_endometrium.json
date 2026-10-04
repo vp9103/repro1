@@ -1,0 +1,102 @@
+{
+ "n": "Endometrial glands (synthetic test image)",
+ "file": "rp8_endometrium.jpg",
+ "dx": "Secretory endometrium",
+ "wrong": [
+  "Proliferative endometrium",
+  "Atrophic endometrium",
+  "Endometrial hyperplasia",
+  "Decidualized endometrium of pregnancy"
+ ],
+ "ww": {
+  "Proliferative endometrium": "Proliferative glands are straight and tubular with mitoses and no vacuoles, reflecting estradiol without progesterone.",
+  "Atrophic endometrium": "Atrophic endometrium has sparse, small, inactive glands in a thin stroma, as after menopause.",
+  "Endometrial hyperplasia": "Hyperplasia shows crowded glands with a high gland-to-stroma ratio from unopposed estrogen, not coiled secretory glands.",
+  "Decidualized endometrium of pregnancy": "Decidua shows large polygonal stromal cells with abundant cytoplasm under sustained progesterone and hCG."
+ },
+ "look": "Coiled, saw-toothed glands with vacuoles under the nuclei and an edematous stroma. These are progesterone effects, so they mark the luteal phase and are indirect evidence that ovulation occurred.",
+ "cred": "Synthetic test image made for the engine test bed",
+ "by": "Test bed",
+ "lic": "CC0",
+ "licurl": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "srcurl": "https://example.org/stub-image",
+ "mod": false,
+ "modality": "diagram",
+ "findings": [
+  "Coiled secretory glands",
+  "Subnuclear vacuoles",
+  "Edematous stroma"
+ ],
+ "ann": [
+  {
+   "k": "e",
+   "x": 28,
+   "y": 30,
+   "rx": 9,
+   "ry": 7,
+   "px": 28,
+   "py": 16,
+   "l": "<b>Secretory glands.</b> Coiled, saw-toothed glands appear after ovulation because progesterone switches the endometrium from growth to secretion."
+  },
+  {
+   "k": "r",
+   "x": 60,
+   "y": 18,
+   "w": 14,
+   "h": 12,
+   "px": 67,
+   "py": 12,
+   "l": "<b>Subnuclear vacuoles.</b> Glycogen collects below the nuclei a few days after ovulation, the earliest progesterone effect in the glands."
+  },
+  {
+   "k": "poly",
+   "x": 22,
+   "y": 72,
+   "pts": [
+    [
+     14,
+     64
+    ],
+    [
+     30,
+     64
+    ],
+    [
+     30,
+     80
+    ],
+    [
+     14,
+     80
+    ]
+   ],
+   "px": 10,
+   "py": 60,
+   "l": "<b>Edematous stroma.</b> Late in the luteal phase the stroma swells, preparing a receptive bed for implantation."
+  },
+  {
+   "k": "spot",
+   "x": 70,
+   "y": 64,
+   "rx": 9,
+   "ry": 8,
+   "px": 82,
+   "py": 76,
+   "l": "<b>Gland lumen with secretions.</b> Glycogen-rich secretions move into the lumen, food for an embryo before the placenta forms."
+  },
+  {
+   "k": "inset",
+   "x": 44,
+   "y": 44,
+   "w": 8,
+   "h": 8,
+   "ix": 76,
+   "iy": 4,
+   "iw": 20,
+   "ih": 20,
+   "px": 48,
+   "py": 40,
+   "l": "<b>Magnified gland cell.</b> Enlarged here, the vacuole sits between the nucleus and the basement membrane, which is what subnuclear means."
+  }
+ ]
+}

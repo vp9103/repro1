@@ -1,0 +1,814 @@
+[
+ {
+  "id": "en1q01",
+  "d": 1,
+  "tags": [
+   "receptor-signaling"
+  ],
+  "bp": [
+   "BP-en1-01",
+   "BP-en1-11"
+  ],
+  "s": "A pharmacologist is testing a compound that selectively inhibits adenylyl cyclase in hepatocytes. Isolated liver cells are exposed to several hormones, each at a dose that normally produces a strong metabolic response, before and after the compound is added.",
+  "l": "The response to which hormone will be most reduced by the compound?",
+  "o": [
+   "Glucagon",
+   "Insulin",
+   "Cortisol",
+   "Growth hormone",
+   "Thyroxine"
+  ],
+  "a": 0,
+  "e": "**Glucagon** binds a Gs-coupled receptor on hepatocytes, so its signal runs through adenylyl cyclase, cAMP and protein kinase A to switch on glycogenolysis and gluconeogenesis. Blocking adenylyl cyclase removes that messenger, so the compound blunts the one hormone on the list whose receptor is coupled to Gs. Insulin acts through a receptor tyrosine kinase, growth hormone through JAK/STAT, and cortisol and thyroxine through intracellular receptors that change gene transcription, so none of them needs cAMP to act.",
+  "w": {
+   "Insulin": "Insulin's receptor is itself a tyrosine kinase that phosphorylates insulin receptor substrates, so its action on liver cells does not depend on cAMP production.",
+   "Cortisol": "Cortisol diffuses into the hepatocyte and binds an intracellular glucocorticoid receptor that changes gene transcription over hours, bypassing membrane enzymes entirely.",
+   "Growth hormone": "Growth hormone uses a receptor that recruits Janus kinase and signals through STAT proteins, so blocking cAMP synthesis leaves its effect on IGF-1 production intact.",
+   "Thyroxine": "Thyroxine is converted to T3 inside the cell, and T3 acts on a nuclear receptor bound to DNA, a pathway that needs no second messenger."
+  },
+  "et": [
+   [
+    "Option",
+    "Receptor location",
+    "Receptor type",
+    "Signal carrier"
+   ],
+   [
+    [
+     "Glucagon",
+     "Cell surface",
+     "Gs protein-coupled",
+     "cAMP and protein kinase A"
+    ],
+    [
+     "Insulin",
+     "Cell surface",
+     "Receptor tyrosine kinase",
+     "Receptor autophosphorylation"
+    ],
+    [
+     "Cortisol",
+     "Cytoplasm",
+     "Glucocorticoid receptor",
+     "Gene transcription"
+    ],
+    [
+     "Growth hormone",
+     "Cell surface",
+     "Cytokine-type receptor",
+     "JAK/STAT"
+    ],
+    [
+     "Thyroxine",
+     "Nucleus (as T3)",
+     "Thyroid hormone receptor",
+     "Gene transcription in the nucleus"
+    ]
+   ]
+  ],
+  "bl": "Glucagon signals through Gs, adenylyl cyclase and cAMP, so blocking adenylyl cyclase blunts its effect on the liver.",
+  "ef": "en1_receptors",
+  "pt": {
+   "hl": [
+    "Adenylyl cyclase",
+    "glucagon, ADH at V2"
+   ],
+   "say": "Look at the Gs column: glucagon is listed under the chain that runs through adenylyl cyclase, cAMP and protein kinase A, the enzyme the compound blocks."
+  }
+ },
+ {
+  "id": "en1q02",
+  "d": 1,
+  "tags": [
+   "receptor-signaling"
+  ],
+  "bp": [
+   "BP-en1-02",
+   "BP-en1-11"
+  ],
+  "s": "A 29-year-old woman at 41 weeks' gestation is given an intravenous infusion of oxytocin to induce labor. Within an hour her uterine contractions become stronger and more frequent.",
+  "l": "Which enzyme is activated first after oxytocin binds its receptor on myometrial cells?",
+  "o": [
+   "Phospholipase C",
+   "Adenylyl cyclase",
+   "Guanylyl cyclase",
+   "Janus kinase",
+   "Phosphodiesterase"
+  ],
+  "a": 0,
+  "e": "The oxytocin receptor is coupled to Gq, which activates **phospholipase C**. Phospholipase C splits a membrane phospholipid into IP3, which releases calcium from the sarcoplasmic reticulum, and DAG, which activates protein kinase C; the rise in calcium drives stronger myometrial contraction. Adenylyl cyclase belongs to Gs receptors, and the cAMP it makes tends to relax the uterus, which is why beta-2 agonists were once used to stop preterm labor. Guanylyl cyclase and Janus kinase serve other receptor families.",
+  "w": {
+   "Adenylyl cyclase": "Adenylyl cyclase is the Gs enzyme; the cAMP it makes relaxes uterine smooth muscle, the opposite of what oxytocin does during labor.",
+   "Guanylyl cyclase": "Guanylyl cyclase makes cGMP for natriuretic peptides and nitric oxide, and cGMP relaxes smooth muscle rather than making it contract.",
+   "Janus kinase": "Janus kinase carries signals from cytokine-type receptors such as the prolactin receptor; the oxytocin receptor is a G protein-coupled receptor instead.",
+   "Phosphodiesterase": "Phosphodiesterase breaks down cAMP and cGMP to end a signal; it is not the first enzyme that a Gq protein switches on."
+  },
+  "et": [
+   [
+    "Option",
+    "Pathway",
+    "Product",
+    "Effect on smooth muscle"
+   ],
+   [
+    [
+     "Phospholipase C",
+     "Gq",
+     "IP3 and DAG",
+     "Contraction through calcium release"
+    ],
+    [
+     "Adenylyl cyclase",
+     "Gs",
+     "cAMP",
+     "Relaxation of uterus and airways"
+    ],
+    [
+     "Guanylyl cyclase",
+     "ANP, BNP, nitric oxide",
+     "cGMP",
+     "Relaxation"
+    ],
+    [
+     "Janus kinase",
+     "Cytokine-type receptors",
+     "Phosphorylated STAT",
+     "No direct effect"
+    ],
+    [
+     "Phosphodiesterase",
+     "Ends cAMP and cGMP signals",
+     "AMP and GMP",
+     "Ends the signal"
+    ]
+   ]
+  ],
+  "bl": "Oxytocin acts through Gq and phospholipase C, generating IP3 and calcium that make the myometrium contract.",
+  "ef": "en1_receptors",
+  "pt": {
+   "hl": [
+    "Phospholipase C",
+    "GnRH, TRH, oxytocin"
+   ],
+   "say": "In the Gq column, oxytocin sits under the chain that starts with phospholipase C and ends in calcium release, which is why it contracts the uterus."
+  }
+ },
+ {
+  "id": "en1q03",
+  "d": 3,
+  "tags": [
+   "receptor-signaling",
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-en1-04",
+   "BP-en1-12"
+  ],
+  "s": "A 6-year-old boy is evaluated for short stature. He is well below the first percentile for height, with a prominent forehead, a small face and truncal adiposity. His parents are of average height. Serum growth hormone is markedly elevated, and serum IGF-1 is very low. Thyroid function and cortisol are normal. One week of injections of recombinant growth hormone does not raise his IGF-1.",
+  "l": "Which signaling step is most directly impaired in this child?",
+  "o": [
+   "Activation of Janus kinase by the receptor",
+   "Autophosphorylation of a receptor tyrosine kinase",
+   "Activation of adenylyl cyclase by Gs",
+   "Activation of phospholipase C by Gq",
+   "Binding of a hormone-receptor complex to DNA"
+  ],
+  "a": 0,
+  "e": "High GH with a low IGF-1 that does not respond to GH injections is **GH resistance**, Laron syndrome, caused by a defective GH receptor. The GH receptor has no kinase of its own; when GH binds, the receptor recruits **Janus kinase (JAK)**, which phosphorylates STAT proteins that switch on IGF-1 production in the liver. A defect here leaves GH high, because the low IGF-1 removes feedback. Autophosphorylation of a receptor tyrosine kinase is how insulin and the IGF-1 receptor work; an IGF-1 receptor defect would give a high IGF-1, not a low one.",
+  "w": {
+   "Autophosphorylation of a receptor tyrosine kinase": "That is how the IGF-1 and insulin receptors signal; a defect in the IGF-1 receptor would leave IGF-1 high because the liver still responds to GH.",
+   "Activation of adenylyl cyclase by Gs": "Gs and cAMP carry the GHRH signal inside somatotrophs, but this child makes plenty of GH, so the failure lies downstream of GH secretion.",
+   "Activation of phospholipase C by Gq": "Gq and phospholipase C serve GnRH, TRH and oxytocin; no Gq receptor sits between circulating GH and hepatic IGF-1 production.",
+   "Binding of a hormone-receptor complex to DNA": "Nuclear receptor binding is how steroids and thyroid hormone act; his thyroid and cortisol tests are normal, and GH does not use a nuclear receptor."
+  },
+  "et": [
+   [
+    "Option",
+    "Receptors that use it",
+    "Expected GH",
+    "Expected IGF-1"
+   ],
+   [
+    [
+     "Activation of Janus kinase by the receptor",
+     "GH, prolactin, EPO",
+     "High",
+     "Low"
+    ],
+    [
+     "Autophosphorylation of a receptor tyrosine kinase",
+     "Insulin, IGF-1",
+     "Normal or high",
+     "High (IGF-1 receptor defect)"
+    ],
+    [
+     "Activation of adenylyl cyclase by Gs",
+     "GHRH, TSH, ACTH, glucagon",
+     "Low (GHRH signal lost)",
+     "Low"
+    ],
+    [
+     "Activation of phospholipase C by Gq",
+     "GnRH, TRH, oxytocin",
+     "Normal",
+     "Normal"
+    ],
+    [
+     "Binding of a hormone-receptor complex to DNA",
+     "Steroids, thyroid hormone",
+     "Normal",
+     "Normal"
+    ]
+   ]
+  ],
+  "bl": "High GH with low IGF-1 that GH cannot correct means GH receptor failure, and the GH receptor signals through Janus kinase (JAK/STAT).",
+  "ef": "en1_receptors",
+  "pt": {
+   "hl": [
+    "JAK/STAT",
+    "GH, prolactin, EPO"
+   ],
+   "say": "In the tyrosine kinase column, GH sits under JAK/STAT: the receptor recruits Janus kinase, so a broken GH receptor leaves GH high and IGF-1 low."
+  }
+ },
+ {
+  "id": "en1q04",
+  "d": 2,
+  "tags": [
+   "binding-proteins"
+  ],
+  "bp": [
+   "BP-en1-06"
+  ],
+  "s": "A 31-year-old woman is referred because a serum cortisol drawn at 8 AM during an evaluation for fatigue was 32 μg/dL (reference 5 to 23). She has taken a combined estrogen-progestin oral contraceptive for 6 years. She has no weight gain, bruising, striae or proximal weakness, and her blood pressure is 118/74 mm Hg. Late-night salivary cortisol and 24-hour urine free cortisol are normal, and plasma ACTH is normal.",
+  "l": "Which change best explains her elevated serum cortisol?",
+  "o": [
+   "Increased cortisol-binding globulin",
+   "Cushing disease",
+   "Cortisol-secreting adrenal adenoma",
+   "Ectopic ACTH secretion",
+   "Glucocorticoid receptor resistance"
+  ],
+  "a": 0,
+  "e": "Estrogen raises the liver's production of **cortisol-binding globulin**, so more cortisol circulates bound and the total serum cortisol rises. The free cortisol, which acts on tissues and feeds back on the pituitary, is normal, as her salivary and urine free cortisol show, so ACTH is normal and she has no features of excess. Cushing disease and ectopic ACTH would raise free cortisol and ACTH, and an adrenal adenoma would raise free cortisol while suppressing ACTH. Glucocorticoid receptor resistance raises ACTH and free cortisol together.",
+  "w": {
+   "Cushing disease": "An ACTH-secreting pituitary adenoma would raise ACTH and free cortisol, giving a high late-night salivary cortisol and features such as striae and bruising.",
+   "Cortisol-secreting adrenal adenoma": "An autonomous adrenal tumor raises free cortisol and suppresses ACTH, so her normal ACTH and normal urine free cortisol argue against it.",
+   "Ectopic ACTH secretion": "Ectopic ACTH, usually from a small cell lung carcinoma, drives very high ACTH and free cortisol, often with hypokalemia and rapid weakness.",
+   "Glucocorticoid receptor resistance": "Receptor resistance removes feedback, so ACTH and free cortisol both rise; the excess ACTH also drives mineralocorticoid and androgen effects she does not have."
+  },
+  "et": [
+   [
+    "Option",
+    "Free cortisol",
+    "ACTH",
+    "Clinical features of excess"
+   ],
+   [
+    [
+     "Increased cortisol-binding globulin",
+     "Normal",
+     "Normal",
+     "None"
+    ],
+    [
+     "Cushing disease",
+     "High",
+     "High or normal",
+     "Present"
+    ],
+    [
+     "Cortisol-secreting adrenal adenoma",
+     "High",
+     "Low",
+     "Present"
+    ],
+    [
+     "Ectopic ACTH secretion",
+     "Very high",
+     "Very high",
+     "Present, often with hypokalemia"
+    ],
+    [
+     "Glucocorticoid receptor resistance",
+     "High",
+     "High",
+     "No cushingoid features"
+    ]
+   ]
+  ],
+  "bl": "Estrogen raises cortisol-binding globulin, so total cortisol rises while free cortisol and ACTH stay normal."
+ },
+ {
+  "id": "en1q05",
+  "d": 2,
+  "tags": [
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-en1-07"
+  ],
+  "s": "A 42-year-old woman has had 3 months of fatigue, anorexia, weight loss and lightheadedness on standing. Her blood pressure is 92/58 mm Hg lying and 78/50 mm Hg standing. She has patches of vitiligo on her hands. Serum sodium is 129 mEq/L and potassium is 5.8 mEq/L. Morning serum cortisol is low, and plasma ACTH is markedly elevated.",
+  "l": "Where is the lesion that explains these findings?",
+  "o": [
+   "Adrenal cortex",
+   "Anterior pituitary",
+   "Hypothalamus",
+   "Glucocorticoid receptor",
+   "Adrenal medulla"
+  ],
+  "a": 0,
+  "e": "A low cortisol with a high ACTH means the gland has failed and the brake on the pituitary is gone: **primary adrenal insufficiency** from destruction of the **adrenal cortex**, most often autoimmune in the United States, which fits her vitiligo. Loss of aldosterone from the same cortex explains the hyponatremia, hyperkalemia and orthostatic hypotension. Failure of the anterior pituitary or hypothalamus would give a low ACTH, and it would spare aldosterone, which is driven mainly by angiotensin II and potassium.",
+  "w": {
+   "Anterior pituitary": "Pituitary failure is secondary insufficiency, with a low or inappropriately normal ACTH and preserved aldosterone, so potassium would not be high.",
+   "Hypothalamus": "Loss of CRH also lowers ACTH, the opposite of her markedly raised level, and it leaves the renin-angiotensin control of aldosterone intact.",
+   "Glucocorticoid receptor": "Receptor resistance produces a high cortisol together with a high ACTH, whereas her cortisol is low, so the target hormone itself is missing.",
+   "Adrenal medulla": "The medulla makes catecholamines under sympathetic control; losing it does not change cortisol, ACTH, sodium or potassium in this way."
+  },
+  "et": [
+   [
+    "Option",
+    "Cortisol",
+    "ACTH",
+    "Aldosterone and potassium"
+   ],
+   [
+    [
+     "Adrenal cortex",
+     "Low",
+     "High",
+     "Aldosterone low, potassium high"
+    ],
+    [
+     "Anterior pituitary",
+     "Low",
+     "Low or normal",
+     "Preserved"
+    ],
+    [
+     "Hypothalamus",
+     "Low",
+     "Low",
+     "Preserved, normal potassium"
+    ],
+    [
+     "Glucocorticoid receptor",
+     "High",
+     "High",
+     "Mineralocorticoid excess, potassium low"
+    ],
+    [
+     "Adrenal medulla",
+     "Normal",
+     "Normal",
+     "Unaffected"
+    ]
+   ]
+  ],
+  "bl": "Low cortisol with high ACTH and hyperkalemia localizes the lesion to the adrenal cortex: primary adrenal insufficiency.",
+  "ef": "en1_feedback",
+  "pt": {
+   "hl": [
+    "Primary gland failure",
+    "Addison disease"
+   ],
+   "say": "In the first grid row, primary gland failure shows the trophic hormone high and the target hormone low; Addison disease is the adrenal cortex version, with high ACTH and low cortisol."
+  }
+ },
+ {
+  "id": "en1q06",
+  "d": 3,
+  "tags": [
+   "receptor-signaling",
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-en1-12",
+   "BP-en1-01"
+  ],
+  "s": "A 9-year-old girl is evaluated for muscle cramps and tingling around her mouth. She is short for her age and has a round face, obesity and shortened fourth and fifth metacarpals. Serum calcium is 7.1 mg/dL, phosphate is 6.4 mg/dL, and PTH is markedly elevated. Serum creatinine and 25-hydroxyvitamin D are normal. An infusion of PTH fails to raise her urinary cyclic AMP.",
+  "l": "A defect in which component best explains her findings?",
+  "o": [
+   "Gs alpha subunit in target cells",
+   "Parathyroid chief cells",
+   "Calcium-sensing receptor",
+   "Renal 1-alpha-hydroxylase",
+   "Vitamin D receptor"
+  ],
+  "a": 0,
+  "e": "Low calcium and high phosphate with a markedly high PTH mean the hormone is present but not working: **end-organ resistance**, pseudohypoparathyroidism. The PTH receptor signals through Gs, adenylyl cyclase and cAMP, and in type 1a an inactivating GNAS mutation lowers the **Gs alpha subunit** in kidney and bone, so PTH cannot raise cAMP or calcium. The short fourth and fifth metacarpals and round face fit this form. Failure of parathyroid chief cells would give a low PTH, and a vitamin D defect would lower phosphate rather than raise it.",
+  "w": {
+   "Parathyroid chief cells": "Chief-cell failure is hypoparathyroidism, which also gives low calcium and high phosphate, but PTH would be low rather than markedly elevated.",
+   "Calcium-sensing receptor": "An activating calcium-sensing receptor mutation makes the glands sense calcium as high, so PTH is low or inappropriately normal, not markedly raised.",
+   "Renal 1-alpha-hydroxylase": "Loss of calcitriol synthesis causes low calcium with a high PTH, but phosphate falls because PTH still works on the kidney, and rickets follows.",
+   "Vitamin D receptor": "Calcitriol resistance lowers calcium and raises PTH, yet the working PTH receptor drives phosphate out in the urine, so phosphate would be low."
+  },
+  "et": [
+   [
+    "Option",
+    "PTH",
+    "Phosphate",
+    "Urine cAMP after PTH"
+   ],
+   [
+    [
+     "Gs alpha subunit in target cells",
+     "High",
+     "High",
+     "Blunted"
+    ],
+    [
+     "Parathyroid chief cells",
+     "Low",
+     "High",
+     "Normal rise"
+    ],
+    [
+     "Calcium-sensing receptor",
+     "Low or normal",
+     "High",
+     "Normal rise"
+    ],
+    [
+     "Renal 1-alpha-hydroxylase",
+     "High",
+     "Low",
+     "Normal rise"
+    ],
+    [
+     "Vitamin D receptor",
+     "High",
+     "Low",
+     "Normal rise, often with alopecia"
+    ]
+   ]
+  ],
+  "bl": "High PTH with low calcium, high phosphate and no cAMP response means PTH resistance from a defective Gs alpha subunit.",
+  "ef": "en1_feedback",
+  "pt": {
+   "hl": [
+    "End-organ resistance",
+    "target cells cannot respond"
+   ],
+   "say": "Look at the last grid row: end-organ resistance keeps the hormone high while the tissue acts deficient, because the Gs alpha subunit in the target cells cannot pass the PTH signal on."
+  }
+ },
+ {
+  "id": "en1q07",
+  "d": 3,
+  "tags": [
+   "feedback-logic",
+   "hormone-source"
+  ],
+  "bp": [
+   "BP-en1-12"
+  ],
+  "s": "A 38-year-old man has 6 months of palpitations, heat intolerance, weight loss and headaches. Pulse is 108/min. He has a fine tremor and a small diffuse goiter without eye signs. Free T4 is 3.4 ng/dL (reference 0.8 to 1.8), and TSH is 3.9 mU/L (reference 0.4 to 4.0). Thyroid-stimulating immunoglobulin is negative. MRI shows a 1.4-cm sellar mass.",
+  "l": "Which diagnosis best explains his laboratory results?",
+  "o": [
+   "TSH-secreting pituitary adenoma",
+   "Graves disease",
+   "Thyroid hormone resistance",
+   "Increased thyroxine-binding globulin",
+   "Toxic multinodular goiter"
+  ],
+  "a": 0,
+  "e": "A high free T4 should suppress TSH. A normal or high TSH alongside a high free T4 means the thyroid is being driven from above or the body cannot sense its hormone. His symptoms show tissues exposed to excess hormone, and the sellar mass points to a **TSH-secreting pituitary adenoma**, a trophic-hormone tumor that raises both numbers. Thyroid hormone resistance gives the same numbers but usually little thyrotoxicosis and no mass. Graves disease and a toxic multinodular goiter make hormone autonomously, which suppresses TSH, and extra binding globulin raises total, not free, T4.",
+  "w": {
+   "Graves disease": "Stimulating antibodies make the gland autonomous, so the high free T4 would suppress TSH to undetectable levels; his antibody test is also negative.",
+   "Thyroid hormone resistance": "Receptor resistance also pairs a high free T4 with a nonsuppressed TSH, but tissues are resistant, so thyrotoxic symptoms are mild and no sellar mass is expected.",
+   "Increased thyroxine-binding globulin": "More binding globulin raises total T4 while free T4 and TSH stay normal; his free T4 is clearly high and he is symptomatic.",
+   "Toxic multinodular goiter": "Autonomous nodules secrete hormone independently of TSH, so the pituitary would be suppressed, and the gland would be nodular rather than diffusely enlarged."
+  },
+  "et": [
+   [
+    "Option",
+    "Free T4",
+    "TSH",
+    "Distinguishing clue"
+   ],
+   [
+    [
+     "TSH-secreting pituitary adenoma",
+     "High",
+     "Normal or high",
+     "Sellar mass, thyrotoxic symptoms"
+    ],
+    [
+     "Graves disease",
+     "High",
+     "Suppressed",
+     "Stimulating antibodies, eye signs"
+    ],
+    [
+     "Thyroid hormone resistance",
+     "High",
+     "Normal or high",
+     "Few symptoms, no mass"
+    ],
+    [
+     "Increased thyroxine-binding globulin",
+     "Normal",
+     "Normal",
+     "Only total T4 is high"
+    ],
+    [
+     "Toxic multinodular goiter",
+     "High",
+     "Suppressed",
+     "Nodular gland, older patient"
+    ]
+   ]
+  ],
+  "bl": "A high free T4 with a nonsuppressed TSH and a sellar mass is a TSH-secreting pituitary adenoma, a trophic-hormone tumor.",
+  "ef": "en1_feedback",
+  "pt": {
+   "hl": [
+    "Trophic-hormone tumor",
+    "TSH-secreting adenoma"
+   ],
+   "say": "Look at the trophic-hormone tumor row: both the trophic and target hormones are high with signs of excess, the pattern of a TSH-secreting pituitary adenoma."
+  }
+ },
+ {
+  "id": "en1q08",
+  "d": 2,
+  "tags": [
+   "steroidogenesis-enzymes"
+  ],
+  "bp": [
+   "BP-en1-10"
+  ],
+  "s": "A newborn with a 46,XY karyotype has female-appearing external genitalia. On day 7 of life the infant becomes lethargic and vomits. Serum sodium is 124 mEq/L and potassium is 6.9 mEq/L. Cortisol, aldosterone, 17-hydroxyprogesterone and testosterone are all low, and ACTH and renin are markedly high. Imaging shows massively enlarged adrenal glands filled with lipid.",
+  "l": "A defect in which protein best explains these findings?",
+  "o": [
+   "StAR protein",
+   "21-hydroxylase",
+   "17-alpha-hydroxylase",
+   "5-alpha-reductase",
+   "Aromatase"
+  ],
+  "a": 0,
+  "e": "Every steroid is low, from cortisol and aldosterone to testosterone, so the block sits at the very first step, before pregnenolone is made. The **StAR protein** moves cholesterol into mitochondria for desmolase (CYP11A1); without it, cholesterol piles up and the adrenals swell with lipid, which is congenital lipoid adrenal hyperplasia. Lack of testosterone leaves a 46,XY infant with female genitalia, and lack of aldosterone causes salt wasting. 21-hydroxylase deficiency also causes salt wasting, but 17-hydroxyprogesterone and adrenal androgens rise, so a 46,XY infant is not undervirilized.",
+  "w": {
+   "21-hydroxylase": "This block raises 17-hydroxyprogesterone and diverts precursors to androgens, so a 46,XY infant has normal male genitalia; here 17-hydroxyprogesterone is low.",
+   "17-alpha-hydroxylase": "This block lowers cortisol and sex steroids but piles up mineralocorticoid precursors, causing hypertension and hypokalemia rather than salt wasting with hyperkalemia.",
+   "5-alpha-reductase": "This enzyme converts testosterone to DHT in genital skin; its loss spares the adrenal glands, so cortisol, aldosterone and electrolytes are normal.",
+   "Aromatase": "Aromatase turns androgens into estrogens; its loss virilizes 46,XX fetuses and their mothers but does not remove cortisol or aldosterone."
+  },
+  "et": [
+   [
+    "Option",
+    "Cortisol and aldosterone",
+    "Androgens",
+    "Blood pressure and potassium"
+   ],
+   [
+    [
+     "StAR protein",
+     "Both low",
+     "Low",
+     "Salt wasting, high potassium"
+    ],
+    [
+     "21-hydroxylase",
+     "Both low",
+     "High",
+     "Salt wasting, high potassium"
+    ],
+    [
+     "17-alpha-hydroxylase",
+     "Cortisol low, mineralocorticoid precursors high",
+     "Low",
+     "Hypertension, low potassium"
+    ],
+    [
+     "5-alpha-reductase",
+     "Normal",
+     "Testosterone normal, DHT low",
+     "Normal"
+    ],
+    [
+     "Aromatase",
+     "Normal",
+     "High",
+     "Normal"
+    ]
+   ]
+  ],
+  "bl": "When every steroid is low and the adrenals are full of lipid, the block is cholesterol delivery by the StAR protein."
+ },
+ {
+  "id": "en1q09",
+  "d": 1,
+  "tags": [
+   "receptor-signaling"
+  ],
+  "bp": [
+   "BP-en1-09"
+  ],
+  "s": "A physiology student is given data on an unknown hormone. It is stored in secretory granules, circulates mostly unbound in plasma, has a half-life of about 10 minutes and produces its effect within seconds by binding a receptor on the plasma membrane.",
+  "l": "Which hormone best fits this description?",
+  "o": [
+   "ACTH",
+   "Cortisol",
+   "Thyroxine",
+   "Aldosterone",
+   "Calcitriol"
+  ],
+  "a": 0,
+  "e": "Storage in granules, a short half-life, travel unbound and a surface receptor are the marks of a **peptide hormone**, and **ACTH** is the only peptide listed. It binds a Gs-coupled receptor on adrenal cortical cells and raises cAMP within seconds. Cortisol, aldosterone and calcitriol are steroids made on demand, carried on binding proteins and acting on intracellular receptors. Thyroxine is an amine stored in colloid, but it is almost entirely protein-bound, lasts about a week and acts through a nuclear receptor.",
+  "w": {
+   "Cortisol": "Cortisol is a steroid made on demand rather than stored, carried mostly on cortisol-binding globulin and acting on an intracellular receptor over hours.",
+   "Thyroxine": "Thyroxine is stored as thyroglobulin in colloid, but it circulates almost entirely bound to TBG with a half-life near a week and acts in the nucleus.",
+   "Aldosterone": "Aldosterone is a steroid synthesized when angiotensin II or potassium signals the zona glomerulosa, and it acts through a cytoplasmic mineralocorticoid receptor.",
+   "Calcitriol": "Calcitriol is a secosteroid formed by renal hydroxylation, carried by vitamin D-binding protein, and it changes gene transcription through a nuclear receptor."
+  },
+  "et": [
+   [
+    "Option",
+    "Chemical class",
+    "Storage",
+    "Receptor location"
+   ],
+   [
+    [
+     "ACTH",
+     "Peptide",
+     "Secretory granules",
+     "Cell surface"
+    ],
+    [
+     "Cortisol",
+     "Steroid",
+     "None, made on demand",
+     "Cytoplasm"
+    ],
+    [
+     "Thyroxine",
+     "Amine (iodinated tyrosine)",
+     "Colloid, as thyroglobulin",
+     "Nucleus"
+    ],
+    [
+     "Aldosterone",
+     "Steroid",
+     "None, made on demand",
+     "Cytoplasm, mineralocorticoid receptor"
+    ],
+    [
+     "Calcitriol",
+     "Secosteroid",
+     "None",
+     "Nucleus"
+    ]
+   ]
+  ],
+  "bl": "Granule storage, a short half-life and a surface receptor mark a peptide hormone such as ACTH.",
+  "ef": "en1_receptors",
+  "pt": {
+   "hl": [
+    "FSH, LH, ACTH, TSH",
+    "Gs protein"
+   ],
+   "say": "In the Gs column, ACTH is listed among the peptide hormones whose surface receptors switch on a Gs protein and cAMP within seconds."
+  }
+ },
+ {
+  "id": "en1q10",
+  "d": 2,
+  "tags": [
+   "feedback-logic",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-en1-08"
+  ],
+  "s": "A 27-year-old woman is tracking her menstrual cycle with daily blood tests as part of a fertility study. Her cycles are regular at 28 days. On cycle day 12, her serum estradiol has been above 250 pg/mL for the past 48 hours, and ultrasound shows a dominant follicle of 19 mm. LH and FSH are still at early follicular levels.",
+  "l": "Which mechanism will trigger the next major hormonal event in her cycle?",
+  "o": [
+   "Positive feedback of estradiol on the pituitary",
+   "Negative feedback of estradiol on the pituitary",
+   "Negative feedback of inhibin B on FSH",
+   "Positive feedback of progesterone on the hypothalamus",
+   "Loss of dopamine inhibition of the pituitary"
+  ],
+  "a": 0,
+  "e": "Estradiol usually restrains LH, but estradiol that stays high, roughly above 200 pg/mL for about two days, flips the pituitary to **positive feedback**: GnRH responsiveness climbs and the mid-cycle **LH surge** follows, triggering ovulation about 36 hours later. Negative feedback of estradiol is what held LH down earlier in the follicular phase, and inhibin B selectively restrains FSH. Progesterone rises mainly after ovulation, from the corpus luteum, so it cannot be the primary trigger.",
+  "w": {
+   "Negative feedback of estradiol on the pituitary": "Low and moderate estradiol levels restrain LH during the early follicular phase; that restraint is exactly what sustained high estradiol overturns at mid-cycle.",
+   "Negative feedback of inhibin B on FSH": "Inhibin B from granulosa cells selectively lowers FSH during follicle selection, but it does not produce the surge that releases the oocyte.",
+   "Positive feedback of progesterone on the hypothalamus": "Progesterone comes mainly from the corpus luteum after ovulation and raises body temperature; its small preovulatory rise only amplifies an estradiol-triggered surge.",
+   "Loss of dopamine inhibition of the pituitary": "Dopamine removal raises prolactin, which suppresses GnRH pulses, so it would delay ovulation rather than trigger the LH surge."
+  },
+  "et": [
+   [
+    "Option",
+    "Signal",
+    "When it operates",
+    "Effect on LH"
+   ],
+   [
+    [
+     "Positive feedback of estradiol on the pituitary",
+     "Sustained high estradiol",
+     "Late follicular, mid-cycle",
+     "Triggers the surge"
+    ],
+    [
+     "Negative feedback of estradiol on the pituitary",
+     "Low or moderate estradiol",
+     "Early follicular phase",
+     "Holds LH down"
+    ],
+    [
+     "Negative feedback of inhibin B on FSH",
+     "Inhibin B from granulosa cells",
+     "Follicular phase",
+     "Lowers FSH, little effect on LH"
+    ],
+    [
+     "Positive feedback of progesterone on the hypothalamus",
+     "Progesterone",
+     "Mostly after ovulation",
+     "Amplifies but does not start the surge"
+    ],
+    [
+     "Loss of dopamine inhibition of the pituitary",
+     "Prolactin rise",
+     "Any time",
+     "Lowers LH through GnRH suppression"
+    ]
+   ]
+  ],
+  "bl": "Estradiol held high for about two days switches to positive feedback and triggers the LH surge that releases the oocyte."
+ },
+ {
+  "id": "en1q11",
+  "d": 2,
+  "tags": [
+   "binding-proteins"
+  ],
+  "bp": [
+   "BP-en1-06"
+  ],
+  "s": "A 45-year-old man with nephrotic syndrome from membranous nephropathy loses 9 g of protein in his urine each day and has generalized edema. He feels well apart from the swelling and has no fatigue, cold intolerance or constipation. Serum albumin is 1.9 g/dL. Total T4 is low, while free T4 and TSH are within the reference ranges.",
+  "l": "Which mechanism best explains his thyroid test results?",
+  "o": [
+   "Urinary loss of thyroxine-binding globulin",
+   "Primary hypothyroidism",
+   "Central hypothyroidism",
+   "Thyroid hormone resistance",
+   "Increased thyroxine-binding globulin"
+  ],
+  "a": 0,
+  "e": "Heavy proteinuria carries **thyroxine-binding globulin** into the urine along with albumin, so less T4 circulates bound and total T4 falls. The free T4, the fraction that acts on tissues and feeds back on the pituitary, is normal, so TSH is normal and he is euthyroid. Primary hypothyroidism would lower free T4 and raise TSH, and central hypothyroidism would lower free T4 with a low or normal TSH. Thyroid hormone resistance raises free T4, and increased binding globulin raises total T4 rather than lowering it.",
+  "w": {
+   "Primary hypothyroidism": "A failing thyroid lowers free T4 and releases the pituitary brake, so TSH would be high; both are normal here, and he has no symptoms.",
+   "Central hypothyroidism": "Pituitary or hypothalamic failure lowers free T4 with a low or inappropriately normal TSH, but his free T4 is normal.",
+   "Thyroid hormone resistance": "Receptor resistance produces a high free T4 with a nonsuppressed TSH, usually with a goiter, which does not match a normal free T4.",
+   "Increased thyroxine-binding globulin": "Estrogen or pregnancy raises binding globulin and total T4 together; his total T4 is low, the opposite direction, because globulin is being lost."
+  },
+  "et": [
+   [
+    "Option",
+    "Total T4",
+    "Free T4",
+    "TSH"
+   ],
+   [
+    [
+     "Urinary loss of thyroxine-binding globulin",
+     "Low",
+     "Normal",
+     "Normal"
+    ],
+    [
+     "Primary hypothyroidism",
+     "Low",
+     "Low",
+     "High"
+    ],
+    [
+     "Central hypothyroidism",
+     "Low",
+     "Low",
+     "Low or normal"
+    ],
+    [
+     "Thyroid hormone resistance",
+     "High",
+     "High",
+     "Normal or high"
+    ],
+    [
+     "Increased thyroxine-binding globulin",
+     "High",
+     "Normal",
+     "Normal"
+    ]
+   ]
+  ],
+  "bl": "Low total T4 with normal free T4 and TSH in nephrotic syndrome reflects urinary loss of thyroxine-binding globulin."
+ }
+]

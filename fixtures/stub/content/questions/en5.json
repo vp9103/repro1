@@ -1,0 +1,227 @@
+[
+ {
+  "id": "en5q01",
+  "d": 2,
+  "tags": [
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-en5-01"
+  ],
+  "s": "A 34-year-old woman has heat intolerance, weight loss and a diffusely enlarged, nontender thyroid. Radioactive iodine uptake is high throughout the gland. She is started on a drug that inhibits the enzyme that both oxidizes iodide and couples iodotyrosines inside the follicle.",
+  "l": "Which enzyme does the drug inhibit?",
+  "o": [
+   "Thyroid peroxidase",
+   "5'-deiodinase",
+   "Sodium-iodide symporter",
+   "Lysosomal protease",
+   "Tyrosine hydroxylase"
+  ],
+  "a": 0,
+  "e": "Methimazole and propylthiouracil inhibit **thyroid peroxidase**, the apical enzyme that oxidizes iodide, attaches it to tyrosines on thyroglobulin and couples the iodotyrosines. Blocking it stops new synthesis, although stored hormone keeps the patient thyrotoxic for weeks. Propylthiouracil also blocks peripheral 5'-deiodinase, but that is a second action, not the one described. Perchlorate, not a thionamide, blocks the symporter, and tyrosine hydroxylase makes catecholamines.",
+  "w": {
+   "5'-deiodinase": "Deiodinase converts T4 to T3 in peripheral tissues; propylthiouracil blocks it as a second action, but the stem describes oxidation and coupling inside the follicle.",
+   "Sodium-iodide symporter": "The symporter traps iodide at the basolateral membrane; perchlorate and pertechnetate compete for it, while thionamides leave uptake intact.",
+   "Lysosomal protease": "Proteases free T4 and T3 from thyroglobulin after endocytosis; iodide and lithium slow release, but no thionamide targets this step.",
+   "Tyrosine hydroxylase": "Tyrosine hydroxylase is the rate-limiting enzyme of catecholamine synthesis; tyrosine is shared, but thyroid hormone needs iodination, not hydroxylation."
+  },
+  "et": [
+   [
+    "Option",
+    "Step it controls",
+    "Where",
+    "Drug that blocks it"
+   ],
+   [
+    [
+     "Thyroid peroxidase",
+     "Oxidation, organification, coupling",
+     "Apical membrane",
+     "Methimazole, propylthiouracil"
+    ],
+    [
+     "5'-deiodinase",
+     "T4 to T3 conversion",
+     "Peripheral tissues",
+     "Propylthiouracil, propranolol"
+    ],
+    [
+     "Sodium-iodide symporter",
+     "Iodide trapping",
+     "Basolateral membrane",
+     "Perchlorate, pertechnetate"
+    ],
+    [
+     "Lysosomal protease",
+     "Release from thyroglobulin",
+     "Lysosome",
+     "Iodide, lithium"
+    ],
+    [
+     "Tyrosine hydroxylase",
+     "Catecholamine synthesis",
+     "Adrenal medulla, neurons",
+     "Metyrosine"
+    ]
+   ]
+  ],
+  "bl": "Thionamides block thyroid peroxidase, so no new hormone is made; stored hormone still lasts for weeks.",
+  "ef": "en5_synthesis",
+  "pt": {
+   "hl": [
+    "Thyroid peroxidase"
+   ],
+   "say": "Look at the colloid side of the cell: thyroid peroxidase oxidizes iodide and couples the tyrosines, the step thionamides block."
+  }
+ },
+ {
+  "id": "en5q02",
+  "d": 1,
+  "tags": [
+   "binding-proteins"
+  ],
+  "bp": [
+   "BP-en5-01"
+  ],
+  "s": "A 30-year-old woman at 12 weeks' gestation has routine blood tests. Her total T4 is elevated, while free T4 and TSH are within the reference ranges. She has no symptoms.",
+  "l": "Which change best explains these results?",
+  "o": [
+   "Increased thyroxine-binding globulin",
+   "Graves disease",
+   "Hashimoto thyroiditis",
+   "Increased peripheral deiodination",
+   "TSH-secreting pituitary adenoma"
+  ],
+  "a": 0,
+  "e": "Estrogen increases hepatic synthesis of **thyroxine-binding globulin**, so more T4 circulates bound. Free T4, the fraction that acts and feeds back, is normal, so TSH is normal and she is euthyroid. Graves disease and a TSH-secreting adenoma would raise free T4, Hashimoto thyroiditis would raise TSH, and more peripheral deiodination would lower T4 rather than raise it.",
+  "w": {
+   "Graves disease": "Graves antibodies stimulate synthesis, raising free T4 and suppressing TSH; here free T4 and TSH are normal.",
+   "Hashimoto thyroiditis": "Hashimoto thyroiditis destroys follicles and raises TSH as free T4 falls; this patient's TSH is normal.",
+   "Increased peripheral deiodination": "Faster conversion of T4 to T3 would lower T4, not raise it, and would not explain a normal free T4.",
+   "TSH-secreting pituitary adenoma": "A TSH-secreting adenoma raises both TSH and free T4; here both are normal, so the pituitary is behaving."
+  },
+  "et": [
+   [
+    "Option",
+    "Free T4",
+    "TSH",
+    "Why it fits or fails"
+   ],
+   [
+    [
+     "Increased thyroxine-binding globulin",
+     "Normal",
+     "Normal",
+     "Only total T4 rises; the patient is euthyroid"
+    ],
+    [
+     "Graves disease",
+     "High",
+     "Low",
+     "Free T4 would be high"
+    ],
+    [
+     "Hashimoto thyroiditis",
+     "Low or normal",
+     "High",
+     "TSH would be high"
+    ],
+    [
+     "Increased peripheral deiodination",
+     "Low or normal",
+     "Normal",
+     "T4 would fall, not rise"
+    ],
+    [
+     "TSH-secreting pituitary adenoma",
+     "High",
+     "High or normal",
+     "Free T4 would be high"
+    ]
+   ]
+  ],
+  "bl": "Estrogen raises thyroxine-binding globulin: total T4 rises while free T4 and TSH stay normal.",
+  "ei": "en5_follicles",
+  "pt": {
+   "hl": [
+    "Colloid-filled follicle"
+   ],
+   "say": "The colloid-filled follicles look normal because the gland is not diseased; the change in thyroxine-binding globulin happens in the liver."
+  }
+ },
+ {
+  "id": "en5q03",
+  "d": 3,
+  "tags": [
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-en5-01"
+  ],
+  "s": "A 45-year-old man has fatigue, cold intolerance and dry skin four months after surgery for a nonfunctioning pituitary macroadenoma. Free T4 is low and TSH is 0.6 mU/L (reference 0.4 to 4.0). He also has low morning cortisol.",
+  "l": "Where is the defect that explains his thyroid results?",
+  "o": [
+   "Anterior pituitary thyrotrophs",
+   "Thyroid follicular cells",
+   "Hepatic binding-globulin synthesis",
+   "5'-deiodinase",
+   "Thyroid hormone receptor"
+  ],
+  "a": 0,
+  "e": "A low free T4 with a TSH that is low or inappropriately normal means the thyroid has lost its stimulus: **central hypothyroidism** from loss of **thyrotrophs** after pituitary surgery, also shown by his low cortisol. A primary thyroid failure would raise TSH. Binding-globulin changes alter total, not free, T4. Deiodinase and receptor defects would leave free T4 normal or high.",
+  "w": {
+   "Thyroid follicular cells": "Follicular-cell failure is primary hypothyroidism, which releases the pituitary brake and raises TSH well above the reference range.",
+   "Hepatic binding-globulin synthesis": "A low binding globulin lowers total T4 but leaves free T4 and TSH normal, so the patient would be euthyroid.",
+   "5'-deiodinase": "Deiodinase deficiency lowers T3 but leaves free T4 normal or high, because T4 is simply not converted.",
+   "Thyroid hormone receptor": "Receptor resistance raises free T4 and leaves TSH normal or high, because the pituitary also fails to sense the hormone."
+  },
+  "et": [
+   [
+    "Option",
+    "Free T4",
+    "TSH",
+    "Other clue"
+   ],
+   [
+    [
+     "Anterior pituitary thyrotrophs",
+     "Low",
+     "Low or inappropriately normal",
+     "Other pituitary axes also fail"
+    ],
+    [
+     "Thyroid follicular cells",
+     "Low",
+     "High",
+     "Anti-thyroid peroxidase antibodies"
+    ],
+    [
+     "Hepatic binding-globulin synthesis",
+     "Normal",
+     "Normal",
+     "Only total T4 is low"
+    ],
+    [
+     "5'-deiodinase",
+     "Normal or high",
+     "Normal",
+     "Low T3"
+    ],
+    [
+     "Thyroid hormone receptor",
+     "High",
+     "Normal or high",
+     "Goiter without thyrotoxicosis"
+    ]
+   ]
+  ],
+  "bl": "Low free T4 with a low or normal TSH is central hypothyroidism: the pituitary thyrotrophs failed, not the gland.",
+  "ef": "en5_synthesis",
+  "pt": {
+   "hl": [
+    "TSH receptor drives each step"
+   ],
+   "say": "The TSH receptor drives every step; with no TSH from the anterior pituitary thyrotrophs, the gland idles and free T4 falls."
+  }
+ }
+]

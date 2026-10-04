@@ -1,0 +1,12 @@
+{
+ "which": "coverage",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 10:55:53",
+ "verdicts": {
+  "k1": "taught",
+  "k2": "taught",
+  "k3": "missing"
+ },
+ "passed": true
+}

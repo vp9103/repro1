@@ -1,0 +1,137 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp25",
+ "hash": "585f6830b953",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:17:58",
+ "gaps": [
+  {
+   "gid": "GAP-rp25-01",
+   "concept": "Syncytiotrophoblasts secrete hCG, which acts like LH to maintain the corpus luteum and its progesterone secretion.",
+   "why_tested": "An early pregnancy stem asks which placental cell and hormonal action prevent corpus luteum regression. [Source](https://www.ncbi.nlm.nih.gov/books/NBK278962/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp25-02",
+   "concept": "Pregnancy tests detect the β subunit of hCG; its α subunit is shared with LH, FSH, and TSH.",
+   "why_tested": "A positive pregnancy test asks which hormone subunit provides specificity. [Source](https://www.ncbi.nlm.nih.gov/books/NBK704/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp25-03",
+   "concept": "The luteal–placental progesterone shift occurs around gestational weeks 7–10; the placenta becomes the dominant source after week 10.",
+   "why_tested": "A corpus luteum removal stem asks when placental progesterone can sustain pregnancy. [Source](https://www.ncbi.nlm.nih.gov/books/NBK278962/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp25-04",
+   "concept": "Progesterone maintains the decidualized endometrium and inhibits myometrial contractions.",
+   "why_tested": "An early pregnancy stem asks how progesterone supports implantation and uterine quiescence. [Source](https://www.ncbi.nlm.nih.gov/books/NBK278962/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp25-05",
+   "concept": "Placenta lacks CYP17 activity and uses fetal adrenal DHEA-S to synthesize estrogens; fetal liver modification supplies estriol precursors.",
+   "why_tested": "A fetoplacental steroid pathway asks why placental estrogen synthesis depends on the fetus. [Source](https://www.ncbi.nlm.nih.gov/books/NBK278962/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp25-06",
+   "concept": "Estrogen promotes uterine enlargement and mammary duct growth; progesterone promotes mammary lobuloalveolar development.",
+   "why_tested": "A pregnancy hormone stem asks which steroid drives each reproductive tissue change. [Source](https://www.ncbi.nlm.nih.gov/books/NBK559304/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp25-07",
+   "concept": "High estrogen and progesterone suppress milk secretion despite rising prolactin; placental delivery removes this inhibition.",
+   "why_tested": "A postpartum stem asks why copious milk secretion begins after delivery. [Source](https://www.ncbi.nlm.nih.gov/sites/books/NBK148965/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp25-08",
+   "concept": "Placental hPL promotes maternal lipolysis and free fatty acid use, sparing glucose for the fetus.",
+   "why_tested": "A metabolic stem asks how maternal fuel use changes as fetal glucose demand increases. [Source](https://www.ncbi.nlm.nih.gov/books/NBK278962/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp25-09",
+   "concept": "Maternal pancreatic β cells increase insulin secretion to compensate for pregnancy insulin resistance; fasting glucose tends to fall.",
+   "why_tested": "A glucose tolerance stem contrasts normal pregnancy adaptation with gestational diabetes. [Source](https://www.ncbi.nlm.nih.gov/books/NBK278962/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp25-10",
+   "concept": "hCG weakly stimulates TSH receptors, transiently lowering maternal TSH in the first trimester.",
+   "why_tested": "An early pregnancy thyroid panel shows mildly suppressed TSH without primary hyperthyroidism. [Source](https://www.ncbi.nlm.nih.gov/books/NBK539766/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp25-11",
+   "concept": "Free T4 remains approximately normal despite increased total T4 from estrogen-induced TBG.",
+   "why_tested": "A thyroid panel asks whether increased total T4 indicates hyperthyroidism in pregnancy. [Source](https://www.ncbi.nlm.nih.gov/books/NBK278962/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp25-12",
+   "concept": "Estrogen-driven lactotroph hyperplasia enlarges the pituitary, increasing susceptibility to ischemic necrosis after severe postpartum hemorrhage.",
+   "why_tested": "Failure to lactate after hemorrhagic delivery points to Sheehan syndrome. [Source](https://www.ncbi.nlm.nih.gov/books/NBK278962/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp25-13",
+   "concept": "Renin and aldosterone rise despite lower blood pressure, promoting maternal sodium and water retention.",
+   "why_tested": "A hormone panel asks why plasma volume expands during a vasodilated pregnancy. [Source](https://www.ncbi.nlm.nih.gov/books/NBK559304/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp25-14",
+   "concept": "Increased blood flow can produce a benign systolic ejection murmur and S3 during pregnancy.",
+   "why_tested": "An asymptomatic pregnant patient with a new systolic murmur asks whether it reflects normal physiology. [Source](https://www.ncbi.nlm.nih.gov/books/NBK539766/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp25-15",
+   "concept": "Venous stasis from uterine compression adds to pregnancy-associated thrombosis risk.",
+   "why_tested": "A venous thrombosis stem asks for a mechanical contributor beyond elevated clotting factors. [Source](https://www.ncbi.nlm.nih.gov/books/NBK559304/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp25-16",
+   "concept": "Platelet counts may fall mildly in normal pregnancy because of hemodilution and increased consumption.",
+   "why_tested": "A mildly low platelet count without bleeding or hypertension asks whether gestational thrombocytopenia is plausible. [Source](https://www.ncbi.nlm.nih.gov/books/NBK559304/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp25-17",
+   "concept": "Physiologic dilutional anemia is usually normocytic; microcytosis with low ferritin suggests iron deficiency.",
+   "why_tested": "A low hemoglobin stem asks which findings exceed expected plasma-volume dilution. [Source](https://www.ncbi.nlm.nih.gov/books/NBK557783/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp25-18",
+   "concept": "Respiratory rate is usually unchanged; increased tidal volume raises minute ventilation.",
+   "why_tested": "A pulmonary physiology stem asks which breathing variable accounts for increased ventilation. [Source](https://www.ncbi.nlm.nih.gov/books/NBK539766/)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp25-19",
+   "concept": "Renal plasma flow rises, serum BUN falls, and urinary protein excretion may physiologically approach 300 mg/day.",
+   "why_tested": "A renal panel or urine collection asks which results can occur in an uncomplicated pregnancy. [Source](https://www.ncbi.nlm.nih.gov/books/NBK559304/)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp25-20",
+   "concept": "Placental alkaline phosphatase raises maternal serum alkaline phosphatase without implying liver injury.",
+   "why_tested": "An otherwise normal liver panel shows isolated alkaline phosphatase elevation late in pregnancy. [Source](https://www.merckmanuals.com/professional/gynecology-and-obstetrics/approach-to-the-pregnant-woman-and-prenatal-care/physiology-of-pregnancy)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp25-21",
+   "concept": "Estrogen increases biliary cholesterol saturation, while progesterone reduces gallbladder motility, promoting gallstones.",
+   "why_tested": "A pregnant patient with biliary colic asks for the hormonal mechanism behind gallstone risk. [Source](https://www.ncbi.nlm.nih.gov/books/NBK559304/)",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp25-1790442916858.jsonl"
+}

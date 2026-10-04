@@ -1,0 +1,947 @@
+[
+ {
+  "id": "rp18q01",
+  "d": 1,
+  "tags": [
+   "pathogen-clues",
+   "teratogen-timing"
+  ],
+  "bp": [
+   "BP-rp18-04"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.7"
+  ],
+  "s": "A 3-week-old boy is referred after failing his newborn hearing screen in both ears. He was born at term to a 24-year-old woman who works at a daycare center and had a mild illness with fever and fatigue during the first trimester. His head circumference is below the 3rd percentile. Head ultrasound shows calcifications lining the lateral ventricles.",
+  "l": "Which organism most likely caused these findings?",
+  "o": [
+   "Cytomegalovirus",
+   "Toxoplasma gondii",
+   "Rubella virus",
+   "Treponema pallidum",
+   "Herpes simplex virus type 2"
+  ],
+  "a": 0,
+  "e": "Periventricular calcifications, microcephaly and sensorineural hearing loss in an infant whose mother works with young children point to congenital **cytomegalovirus**, the most common congenital infection. CMV spreads in the saliva and urine of toddlers and attacks the germinal matrix around the ventricles. *Toxoplasma gondii* also calcifies the brain, but its calcifications are diffuse and it follows cat litter or undercooked meat. Rubella causes cataracts and a patent ductus, and herpes simplex causes vesicles or encephalitis after birth.",
+  "w": {
+   "Toxoplasma gondii": "Congenital toxoplasmosis produces diffuse, scattered calcifications with hydrocephalus and chorioretinitis, and the exposure is cat feces or undercooked meat rather than young children.",
+   "Rubella virus": "Congenital rubella causes cataracts, a patent ductus arteriosus and deafness; it does not produce periventricular calcifications, and vaccination has made it rare.",
+   "Treponema pallidum": "Early congenital syphilis shows snuffles, a palm-sole rash, hepatosplenomegaly and periostitis; its deafness is a late eighth-nerve finding years after birth.",
+   "Herpes simplex virus type 2": "Neonatal herpes is usually acquired at delivery and presents in the first weeks with vesicles, encephalitis or sepsis, not with microcephaly present at birth."
+  },
+  "et": [
+   [
+    "Option",
+    "Brain imaging",
+    "Hearing",
+    "Maternal exposure"
+   ],
+   [
+    [
+     "Cytomegalovirus",
+     "Periventricular calcifications, microcephaly",
+     "Sensorineural loss, often progressive",
+     "Saliva and urine of young children"
+    ],
+    [
+     "Toxoplasma gondii",
+     "Diffuse calcifications, hydrocephalus",
+     "Usually spared",
+     "Cat feces, undercooked meat"
+    ],
+    [
+     "Rubella virus",
+     "No typical calcification pattern",
+     "Sensorineural deafness",
+     "Nonimmune mother, first-trimester rash"
+    ],
+    [
+     "Treponema pallidum",
+     "Usually normal",
+     "Late eighth-nerve deafness",
+     "Untreated maternal syphilis"
+    ],
+    [
+     "Herpes simplex virus type 2",
+     "Encephalitis after birth",
+     "Not typical",
+     "Genital lesions at delivery"
+    ]
+   ]
+  ],
+  "bl": "Periventricular calcifications with hearing loss mean congenital cytomegalovirus, the most common congenital infection.",
+  "ef": "rp18_signatures",
+  "pt": {
+   "hl": [
+    "Cytomegalovirus"
+   ],
+   "say": "The cytomegalovirus row pairs a toddler exposure with periventricular calcifications and hearing loss, exactly this infant's picture."
+  }
+ },
+ {
+  "id": "rp18q02",
+  "d": 2,
+  "tags": [
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp18-01"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.7"
+  ],
+  "s": "A 29-year-old woman, gravida 1, para 0, at 24 weeks' gestation has a routine ultrasound that shows enlarged lateral ventricles and scattered echogenic foci throughout the fetal brain tissue. She is healthy, up to date on vaccines and rubella immune. Four months ago she adopted two kittens and has cleaned their litter box daily. She also often eats rare steak.",
+  "l": "Which additional finding is most likely in this infant after birth?",
+  "o": [
+   "Chorioretinitis",
+   "Cataracts",
+   "Patent ductus arteriosus",
+   "Limb hypoplasia",
+   "Notched upper incisors"
+  ],
+  "a": 0,
+  "e": "Hydrocephalus and diffuse intracranial calcifications after exposure to cat feces and undercooked meat indicate congenital toxoplasmosis, whose third classic finding is **chorioretinitis**. *Toxoplasma gondii* cysts in the retina can reactivate for years, so infected children need eye follow-up. Cataracts and a patent ductus arteriosus belong to congenital rubella, and she is rubella immune. Limb hypoplasia follows maternal varicella, and notched incisors are a late sign of congenital syphilis.",
+  "w": {
+   "Cataracts": "Cataracts are the eye finding of congenital rubella, which requires a nonimmune mother; this patient is immune and has a toxoplasma exposure instead.",
+   "Patent ductus arteriosus": "A patent ductus is the classic heart defect of congenital rubella acquired in the first trimester, not a feature of toxoplasmosis.",
+   "Limb hypoplasia": "Limb hypoplasia with dermatomal scars marks congenital varicella syndrome after maternal chickenpox before 20 weeks, not a cat exposure.",
+   "Notched upper incisors": "Notched, peg-shaped incisors are Hutchinson teeth, a late sign of congenital syphilis that appears when permanent teeth erupt."
+  },
+  "et": [
+   [
+    "Option",
+    "Classic organism",
+    "Organ affected",
+    "Maternal clue"
+   ],
+   [
+    [
+     "Chorioretinitis",
+     "Toxoplasma, also CMV",
+     "Retina",
+     "Cat litter, undercooked meat"
+    ],
+    [
+     "Cataracts",
+     "Rubella",
+     "Lens",
+     "Nonimmune mother with rash"
+    ],
+    [
+     "Patent ductus arteriosus",
+     "Rubella",
+     "Heart",
+     "First-trimester rash and joint pain"
+    ],
+    [
+     "Limb hypoplasia",
+     "Varicella",
+     "Limbs and skin",
+     "Chickenpox before 20 weeks"
+    ],
+    [
+     "Notched upper incisors",
+     "Syphilis",
+     "Permanent teeth",
+     "Untreated maternal syphilis"
+    ]
+   ]
+  ],
+  "bl": "Hydrocephalus and diffuse calcifications after cat or raw-meat exposure mean toxoplasmosis; expect chorioretinitis too.",
+  "ef": "rp18_signatures",
+  "pt": {
+   "hl": [
+    "Toxoplasma"
+   ],
+   "say": "The Toxoplasma row links cat litter and undercooked meat to chorioretinitis, hydrocephalus and diffuse calcifications."
+  }
+ },
+ {
+  "id": "rp18q03",
+  "d": 2,
+  "tags": [
+   "screening-prevention",
+   "teratogen-timing"
+  ],
+  "bp": [
+   "BP-rp18-03"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.7"
+  ],
+  "s": "A 2-day-old girl has a continuous machine-like murmur and cloudy lenses in both eyes. Her skin shows scattered purple papules, and she fails the hearing screen. Her mother, who moved to the United States during the pregnancy and had no prenatal care, recalls a rash with swollen neck glands and joint pain at about 8 weeks' gestation.",
+  "l": "Which measure would most likely have prevented this condition?",
+  "o": [
+   "Live attenuated vaccination before pregnancy",
+   "Intravenous penicillin during labor",
+   "Acyclovir suppression from 36 weeks",
+   "Avoiding cat litter and undercooked meat",
+   "Immune globulin to the newborn within 12 hours"
+  ],
+  "a": 0,
+  "e": "Cataracts, a patent ductus arteriosus, sensorineural deafness and a blueberry-muffin rash after a first-trimester rash with lymphadenopathy and arthralgia define congenital rubella. The only prevention is maternal immunity from **live attenuated vaccination** (MMR) before pregnancy. Because the vaccine is live, it is never given during pregnancy, so a nonimmune patient is vaccinated after delivery. Intravenous penicillin in labor prevents group B strep disease, and immune globulin within 12 hours is part of the hepatitis B strategy.",
+  "w": {
+   "Intravenous penicillin during labor": "Penicillin in labor prevents early-onset group B strep sepsis acquired at delivery; rubella injures the embryo months earlier, during organogenesis.",
+   "Acyclovir suppression from 36 weeks": "Late acyclovir reduces herpes shedding at delivery; it has no activity against rubella, which had already damaged the fetus in the first trimester.",
+   "Avoiding cat litter and undercooked meat": "Litter and meat precautions prevent toxoplasmosis, which causes hydrocephalus, chorioretinitis and diffuse calcifications rather than cataracts and a patent ductus.",
+   "Immune globulin to the newborn within 12 hours": "Immune globulin with vaccine at birth prevents hepatitis B, a virus caught mostly at delivery; congenital rubella is established long before birth."
+  },
+  "et": [
+   [
+    "Option",
+    "Infection it targets",
+    "When it acts",
+    "Route blocked"
+   ],
+   [
+    [
+     "Live attenuated vaccination before pregnancy",
+     "Rubella",
+     "Before conception",
+     "Transplacental"
+    ],
+    [
+     "Intravenous penicillin during labor",
+     "Group B strep",
+     "During labor",
+     "Birth canal"
+    ],
+    [
+     "Acyclovir suppression from 36 weeks",
+     "Herpes simplex",
+     "Late third trimester",
+     "Birth canal"
+    ],
+    [
+     "Avoiding cat litter and undercooked meat",
+     "Toxoplasma",
+     "Throughout pregnancy",
+     "Transplacental"
+    ],
+    [
+     "Immune globulin to the newborn within 12 hours",
+     "Hepatitis B",
+     "First hours of life",
+     "Perinatal"
+    ]
+   ]
+  ],
+  "bl": "Congenital rubella is prevented only by live vaccination before pregnancy; never vaccinate during pregnancy.",
+  "ef": "rp18_routes",
+  "pt": {
+   "hl": [
+    "Vaccinate nonimmune patients after delivery"
+   ],
+   "say": "The in-utero prevention box says to check rubella immunity early and vaccinate nonimmune patients after delivery, because live vaccination must happen outside pregnancy."
+  }
+ },
+ {
+  "id": "rp18q04",
+  "d": 2,
+  "tags": [
+   "treatment-sequence",
+   "maternal-fetal-transfer"
+  ],
+  "bp": [
+   "BP-rp18-05"
+  ],
+  "obj": [
+   "PRENATAL-CARE.14"
+  ],
+  "s": "A 26-year-old woman, gravida 2, para 1, at 39 weeks' gestation is admitted in active labor with intact membranes. She has had recurrent genital herpes for 6 years and has taken valacyclovir since 36 weeks. Since yesterday she has felt burning and tingling in the vulva, the same warning she usually has before outbreaks. Examination shows no visible lesions. The fetal heart tracing is reassuring.",
+  "l": "Which is the most appropriate management?",
+  "o": [
+   "Cesarean delivery",
+   "Vaginal delivery with a fetal scalp electrode",
+   "Vaginal delivery with IV acyclovir in labor",
+   "Oxytocin augmentation and vaginal delivery",
+   "Vaginal delivery, then acyclovir to the newborn"
+  ],
+  "a": 0,
+  "e": "Prodromal symptoms mean viral shedding may already be under way, so they are treated like a visible lesion: **cesarean delivery** is indicated when genital lesions or prodromal symptoms are present at the onset of labor. Suppressive valacyclovir from 36 weeks lowers the chance of an outbreak but does not make vaginal birth safe once prodrome appears. A fetal scalp electrode would breach the fetal skin and raise the risk of neonatal herpes, and IV acyclovir in labor cannot clear shedding in time.",
+  "w": {
+   "Vaginal delivery with a fetal scalp electrode": "Scalp electrodes puncture fetal skin and are avoided in maternal herpes because they create an entry point for the virus during vaginal birth.",
+   "Vaginal delivery with IV acyclovir in labor": "Acyclovir started during labor cannot stop shedding already present in the birth canal, so the newborn is still exposed during a vaginal birth.",
+   "Oxytocin augmentation and vaginal delivery": "Speeding labor does not remove virus from the birth canal, and prodrome signals shedding that can infect the newborn during passage.",
+   "Vaginal delivery, then acyclovir to the newborn": "Treating the newborn after exposure does not replace preventing exposure; neonatal herpes carries high mortality and disability even with IV acyclovir."
+  },
+  "et": [
+   [
+    "Option",
+    "Newborn passes through birth canal",
+    "Effect on viral shedding",
+    "Added risk"
+   ],
+   [
+    [
+     "Cesarean delivery",
+     "No",
+     "Exposure avoided",
+     "Surgical morbidity for the mother"
+    ],
+    [
+     "Vaginal delivery with a fetal scalp electrode",
+     "Yes",
+     "None",
+     "Skin breach adds a viral entry point"
+    ],
+    [
+     "Vaginal delivery with IV acyclovir in labor",
+     "Yes",
+     "Too slow to clear shedding",
+     "False reassurance"
+    ],
+    [
+     "Oxytocin augmentation and vaginal delivery",
+     "Yes",
+     "None",
+     "Faster labor, same exposure"
+    ],
+    [
+     "Vaginal delivery, then acyclovir to the newborn",
+     "Yes",
+     "None before exposure",
+     "Treats rather than prevents infection"
+    ]
+   ]
+  ],
+  "bl": "Genital lesions or prodromal symptoms at the onset of labor call for cesarean delivery.",
+  "ef": "rp18_routes",
+  "pt": {
+   "hl": [
+    "Cesarean for HSV lesions or prodrome"
+   ],
+   "say": "In the delivery box, cesarean for HSV lesions or prodrome is the rule; her burning and tingling are prodrome."
+  }
+ },
+ {
+  "id": "rp18q05",
+  "d": 3,
+  "tags": [
+   "virulence-factors",
+   "maternal-fetal-transfer"
+  ],
+  "bp": [
+   "BP-rp18-06"
+  ],
+  "obj": [
+   "PREG-REVIEW.14"
+  ],
+  "s": "A 30-year-old woman, gravida 2, para 1, at 18 weeks' gestation teaches second grade. Three weeks ago several of her students had bright red cheeks followed by a lacy rash on the arms, and she then developed painful swelling of both wrists and hands. Today ultrasound shows fetal ascites, a pericardial effusion and scalp edema. Doppler shows an elevated peak systolic velocity in the fetal middle cerebral artery. Her red cell antibody screen is negative.",
+  "l": "Which process best explains the fetal findings?",
+  "o": [
+   "Viral destruction of erythroid progenitor cells",
+   "Maternal anti-D antibodies hemolyzing fetal red cells",
+   "Viral myocarditis causing low-output heart failure",
+   "Viral destruction of hepatocytes lowering albumin",
+   "Placental inflammation reducing oxygen transfer"
+  ],
+  "a": 0,
+  "e": "Her students had erythema infectiosum, and she developed the symmetric hand and wrist arthropathy typical of adult **parvovirus B19** infection. The virus enters **erythroid progenitor cells** through the P antigen and kills them, and a fetus with short-lived red cells and an expanding blood volume becomes profoundly anemic; the raised middle cerebral artery velocity reflects that anemia. High-output failure then produces hydrops. Anti-D hemolysis is excluded by the negative antibody screen, and low-output myocarditis would not raise cerebral flow velocity. Intrauterine transfusion treats the anemia.",
+  "w": {
+   "Maternal anti-D antibodies hemolyzing fetal red cells": "Alloimmune hemolysis also causes fetal anemia and hydrops, but it requires maternal red cell antibodies, and her antibody screen is negative.",
+   "Viral myocarditis causing low-output heart failure": "Parvovirus can inflame the fetal heart, but the raised middle cerebral artery velocity signals anemia with a high-output circulation, not pump failure.",
+   "Viral destruction of hepatocytes lowering albumin": "Hypoalbuminemia can cause edema, but parvovirus targets red cell precursors, and liver failure would not explain the anemia shown by the Doppler.",
+   "Placental inflammation reducing oxygen transfer": "Placental insufficiency causes growth restriction and oligohydramnios, not an anemic, high-output hydrops with raised cerebral flow velocity."
+  },
+  "et": [
+   [
+    "Option",
+    "Cell or organ targeted",
+    "Fetal anemia",
+    "Middle cerebral artery velocity"
+   ],
+   [
+    [
+     "Viral destruction of erythroid progenitor cells",
+     "Red cell precursors (P antigen)",
+     "Severe",
+     "High"
+    ],
+    [
+     "Maternal anti-D antibodies hemolyzing fetal red cells",
+     "Mature fetal red cells",
+     "Severe",
+     "High"
+    ],
+    [
+     "Viral myocarditis causing low-output heart failure",
+     "Myocardium",
+     "Absent",
+     "Not raised"
+    ],
+    [
+     "Viral destruction of hepatocytes lowering albumin",
+     "Liver",
+     "Absent",
+     "Normal"
+    ],
+    [
+     "Placental inflammation reducing oxygen transfer",
+     "Placenta",
+     "Absent",
+     "Normal or low"
+    ]
+   ]
+  ],
+  "bl": "Parvovirus B19 destroys erythroid progenitor cells, and fetal anemia with high-output failure produces hydrops.",
+  "ef": "rp18_signatures",
+  "pt": {
+   "hl": [
+    "Parvovirus B19"
+   ],
+   "say": "The Parvovirus B19 row links a child with slapped-cheek rash to fetal anemia and hydrops fetalis; the anemia comes from destroyed erythroid progenitor cells."
+  }
+ },
+ {
+  "id": "rp18q06",
+  "d": 2,
+  "tags": [
+   "drug-mechanism",
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp18-02",
+   "BP-rp18-16"
+  ],
+  "obj": [
+   "TBL-STI.3"
+  ],
+  "s": "A 9-year-old boy adopted at age 5 is evaluated for progressive hearing loss and blurred vision. He has notched, peg-shaped upper central incisors, a flattened nasal bridge and forward bowing of both tibias. Slit-lamp examination shows corneal vascularization and scarring. Audiometry confirms bilateral sensorineural hearing loss. His birth mother had no prenatal care.",
+  "l": "Which drug given to his mother during pregnancy would most likely have prevented this condition?",
+  "o": [
+   "Penicillin G benzathine",
+   "Oral doxycycline",
+   "Intramuscular ceftriaxone",
+   "Oral azithromycin",
+   "Oral acyclovir"
+  ],
+  "a": 0,
+  "e": "Hutchinson teeth, saddle nose, saber shins, interstitial keratitis and eighth-nerve deafness are late congenital syphilis, and the teeth, keratitis and deafness form the Hutchinson triad. Transplacental *Treponema pallidum* is prevented by screening every pregnancy and treating with **penicillin G benzathine**, the only drug accepted in pregnancy; allergic patients are desensitized. Doxycycline treats nonpregnant patients but is avoided in pregnancy because tetracyclines stain developing teeth and slow bone growth, and ceftriaxone and azithromycin are not reliable substitutes.",
+  "w": {
+   "Oral doxycycline": "Doxycycline is a nonpregnant alternative for syphilis, but tetracyclines cross the placenta, discolor developing teeth and slow bone growth, so they are avoided in pregnancy.",
+   "Intramuscular ceftriaxone": "Ceftriaxone treats gonorrhea and has some treponemal activity, but no alternative to penicillin is accepted for preventing congenital syphilis.",
+   "Oral azithromycin": "Azithromycin treats chlamydia in pregnancy, but macrolide-resistant treponemes are widespread and the drug does not reliably treat the fetus.",
+   "Oral acyclovir": "Acyclovir suppresses herpes simplex from 36 weeks; it has no activity against spirochetes and would not prevent syphilis."
+  },
+  "et": [
+   [
+    "Option",
+    "Main target",
+    "Status in pregnancy",
+    "Fetal effect"
+   ],
+   [
+    [
+     "Penicillin G benzathine",
+     "Treponema pallidum",
+     "Only accepted syphilis drug",
+     "Crosses the placenta and cures fetal infection"
+    ],
+    [
+     "Oral doxycycline",
+     "Treponemes, chlamydia, rickettsiae",
+     "Avoided",
+     "Tooth staining, slowed bone growth"
+    ],
+    [
+     "Intramuscular ceftriaxone",
+     "Gonorrhea, meningitis organisms",
+     "Safe, not a syphilis standard",
+     "Unproven for congenital syphilis"
+    ],
+    [
+     "Oral azithromycin",
+     "Chlamydia",
+     "Safe",
+     "Poor fetal treatment, resistance"
+    ],
+    [
+     "Oral acyclovir",
+     "Herpes simplex, varicella",
+     "Safe",
+     "No antitreponemal activity"
+    ]
+   ]
+  ],
+  "bl": "Late congenital syphilis is prevented by penicillin G benzathine in pregnancy; desensitize allergic patients first.",
+  "ef": "rp18_routes",
+  "pt": {
+   "hl": [
+    "Screen for syphilis; treat with penicillin G"
+   ],
+   "say": "The in-utero prevention box says to screen for syphilis and treat with penicillin G, which prevents the late signs this boy shows."
+  }
+ },
+ {
+  "id": "rp18q07",
+  "d": 1,
+  "tags": [
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp18-15",
+   "BP-rp18-09"
+  ],
+  "obj": [
+   "PRENATAL-CARE.15"
+  ],
+  "s": "A 2-day-old girl born at 40 weeks becomes lethargic and febrile with grunting respirations. Her mother's prenatal records were lost. Blood cultures grow gram-positive cocci in chains that produce a clear zone of beta hemolysis on blood agar, are resistant to bacitracin and give a positive CAMP test.",
+  "l": "Which organism is most likely responsible?",
+  "o": [
+   "Streptococcus agalactiae",
+   "Streptococcus pyogenes",
+   "Listeria monocytogenes",
+   "Escherichia coli",
+   "Staphylococcus aureus"
+  ],
+  "a": 0,
+  "e": "Beta-hemolytic gram-positive cocci in chains that are **bacitracin-resistant** and CAMP-positive are group B strep, *Streptococcus agalactiae*, the leading cause of early-onset neonatal sepsis, pneumonia and meningitis. Its CAMP factor enlarges the hemolysis zone of *Staphylococcus aureus*. *Streptococcus pyogenes* is also beta-hemolytic but bacitracin-sensitive, *Listeria monocytogenes* is a gram-positive rod with tumbling motility, and *Escherichia coli* is a gram-negative rod. Intrapartum penicillin for carriers prevents this disease.",
+  "w": {
+   "Streptococcus pyogenes": "Group A strep is beta-hemolytic too, but it is bacitracin-sensitive and CAMP-negative, and it rarely causes neonatal sepsis.",
+   "Listeria monocytogenes": "Listeria is a gram-positive rod, not a coccus in chains; it shows tumbling motility, grows in the cold and follows unpasteurized dairy exposure.",
+   "Escherichia coli": "E. coli causes neonatal sepsis and meningitis through its K1 capsule, but it is a gram-negative rod that ferments lactose.",
+   "Staphylococcus aureus": "Staphylococcus aureus grows as gram-positive cocci in clusters, is catalase-positive, and is the organism whose hemolysis the CAMP factor enhances."
+  },
+  "et": [
+   [
+    "Option",
+    "Gram stain and shape",
+    "Hemolysis",
+    "Key test"
+   ],
+   [
+    [
+     "Streptococcus agalactiae",
+     "Positive cocci in chains",
+     "Beta",
+     "Bacitracin-resistant, CAMP-positive"
+    ],
+    [
+     "Streptococcus pyogenes",
+     "Positive cocci in chains",
+     "Beta",
+     "Bacitracin-sensitive"
+    ],
+    [
+     "Listeria monocytogenes",
+     "Positive rod",
+     "Narrow beta",
+     "Tumbling motility, cold growth"
+    ],
+    [
+     "Escherichia coli",
+     "Negative rod",
+     "Variable",
+     "Lactose fermenter, K1 capsule"
+    ],
+    [
+     "Staphylococcus aureus",
+     "Positive cocci in clusters",
+     "Beta",
+     "Catalase- and coagulase-positive"
+    ]
+   ]
+  ],
+  "bl": "Bacitracin-resistant, CAMP-positive, beta-hemolytic cocci in chains are Streptococcus agalactiae, group B strep.",
+  "ef": "rp18_routes",
+  "pt": {
+   "hl": [
+    "Group B strep"
+   ],
+   "say": "Group B strep sits on the delivery side of the figure: Streptococcus agalactiae colonizes the birth canal and causes early-onset sepsis."
+  }
+ },
+ {
+  "id": "rp18q08",
+  "d": 3,
+  "tags": [
+   "screening-prevention",
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp18-09"
+  ],
+  "obj": [
+   "PRENATAL-CARE.15"
+  ],
+  "s": "A 31-year-old woman, gravida 2, para 1, at 34 weeks' gestation comes to labor and delivery with regular painful contractions every 4 minutes. Her cervix is 5 cm dilated, and membranes are intact. She has not yet had a group B strep culture. Her first child, born at term, was healthy. She has no drug allergies and is afebrile.",
+  "l": "Which is the most appropriate step to prevent neonatal infection?",
+  "o": [
+   "Start IV penicillin G now and send a rectovaginal culture",
+   "Send a culture and give antibiotics only if it is positive",
+   "Give oral amoxicillin to clear colonization before delivery",
+   "Withhold prophylaxis until 36 weeks, when screening is due",
+   "Give intramuscular ceftriaxone to the newborn after birth"
+  ],
+  "a": 0,
+  "e": "Preterm labor with unknown group B strep status is an indication for **intrapartum antibiotic prophylaxis**: start IV penicillin G now, send a rectovaginal culture, and stop the drug if the culture is negative and labor stops. Culture results take 24 to 48 hours and delivery may come first, so waiting for a positive result leaves the preterm newborn unprotected. Oral amoxicillin does not eradicate carriage because the rectum recolonizes the vagina, and ceftriaxone to the newborn after birth comes too late to prevent disease acquired in labor.",
+  "w": {
+   "Send a culture and give antibiotics only if it is positive": "Cultures take a day or two to grow; a preterm delivery can happen first, and prophylaxis works only when given at least 4 hours before birth.",
+   "Give oral amoxicillin to clear colonization before delivery": "Oral antibiotics before labor do not prevent early-onset disease, because the gastrointestinal reservoir recolonizes the genital tract within weeks.",
+   "Withhold prophylaxis until 36 weeks, when screening is due": "The 36-to-37-week culture is for patients still pregnant near term; preterm labor with unknown status needs prophylaxis now, and preterm newborns are at higher risk.",
+   "Give intramuscular ceftriaxone to the newborn after birth": "Early-onset GBS disease often begins within hours of birth from exposure in labor, so prevention must reach fetal blood beforehand through maternal IV penicillin."
+  },
+  "et": [
+   [
+    "Option",
+    "Timing",
+    "Covers exposure in labor",
+    "Main weakness"
+   ],
+   [
+    [
+     "Start IV penicillin G now and send a rectovaginal culture",
+     "During labor",
+     "Yes",
+     "Stopped if culture is negative"
+    ],
+    [
+     "Send a culture and give antibiotics only if it is positive",
+     "After results",
+     "Often too late",
+     "Results may arrive after delivery"
+    ],
+    [
+     "Give oral amoxicillin to clear colonization before delivery",
+     "Before labor",
+     "No",
+     "Carriage returns from the rectum"
+    ],
+    [
+     "Withhold prophylaxis until 36 weeks, when screening is due",
+     "Delayed",
+     "No",
+     "Ignores preterm labor"
+    ],
+    [
+     "Give intramuscular ceftriaxone to the newborn after birth",
+     "After birth",
+     "No",
+     "Exposure already occurred"
+    ]
+   ]
+  ],
+  "bl": "Preterm labor with unknown GBS status: start IV penicillin G in labor and send a culture.",
+  "ef": "rp18_routes",
+  "pt": {
+   "hl": [
+    "GBS culture at 36-37 wk, penicillin in labor"
+   ],
+   "say": "The delivery box pairs the GBS culture with penicillin in labor; with preterm labor and no culture yet, IV penicillin G starts now."
+  }
+ },
+ {
+  "id": "rp18q09",
+  "d": 2,
+  "tags": [
+   "pathogen-clues",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp18-12"
+  ],
+  "obj": [
+   "TBL-STI.3"
+  ],
+  "s": "A 10-day-old boy is brought in for swelling of both eyelids and a watery discharge that has become thicker over 3 days. He was born vaginally at term after a pregnancy with no prenatal care and received erythromycin eye ointment at birth. He is afebrile and feeding well. A Giemsa-stained conjunctival scraping shows intracytoplasmic inclusions in epithelial cells.",
+  "l": "Which is the most appropriate treatment?",
+  "o": [
+   "Oral erythromycin",
+   "Topical erythromycin ointment",
+   "Intramuscular ceftriaxone",
+   "Intravenous acyclovir",
+   "Topical polymyxin B-trimethoprim"
+  ],
+  "a": 0,
+  "e": "Onset between days 5 and 14 with a watery, then mucopurulent discharge and intracytoplasmic inclusions identifies chlamydial conjunctivitis, a form of **ophthalmia neonatorum** that eye prophylaxis does not reliably prevent. *Chlamydia trachomatis* also colonizes the nasopharynx and can cause pneumonia at 4 to 12 weeks, so treatment is systemic: **oral erythromycin**, or azithromycin. Topical erythromycin ointment would not clear the nasopharynx. Intramuscular ceftriaxone treats gonococcal conjunctivitis, which is hyperacute and purulent on days 2 to 5.",
+  "w": {
+   "Topical erythromycin ointment": "Ointment reaches only the conjunctiva; the organism also lives in the nasopharynx, and untreated carriage can progress to afebrile pneumonia with a staccato cough.",
+   "Intramuscular ceftriaxone": "A single ceftriaxone dose treats gonococcal conjunctivitis, which starts on days 2 to 5 with a hyperacute purulent discharge and gram-negative diplococci.",
+   "Intravenous acyclovir": "IV acyclovir treats neonatal herpes, which causes keratoconjunctivitis with vesicles and multinucleated giant cells rather than intracytoplasmic inclusions.",
+   "Topical polymyxin B-trimethoprim": "Topical drops suit mild bacterial conjunctivitis in older children; they do not reach Chlamydia, an obligate intracellular organism, or its nasopharyngeal reservoir."
+  },
+  "et": [
+   [
+    "Option",
+    "Organism treated",
+    "Route",
+    "Typical onset in the newborn"
+   ],
+   [
+    [
+     "Oral erythromycin",
+     "Chlamydia trachomatis",
+     "Systemic",
+     "Days 5 to 14"
+    ],
+    [
+     "Topical erythromycin ointment",
+     "Prophylaxis against gonococcus",
+     "Eye only",
+     "Given at birth"
+    ],
+    [
+     "Intramuscular ceftriaxone",
+     "Neisseria gonorrhoeae",
+     "Systemic",
+     "Days 2 to 5"
+    ],
+    [
+     "Intravenous acyclovir",
+     "Herpes simplex",
+     "Systemic",
+     "Days to weeks, with vesicles"
+    ],
+    [
+     "Topical polymyxin B-trimethoprim",
+     "Common skin and eye bacteria",
+     "Eye only",
+     "Older infants and children"
+    ]
+   ]
+  ],
+  "bl": "Chlamydial conjunctivitis on days 5 to 14 needs oral erythromycin because ointment misses the nasopharynx.",
+  "ef": "rp18_routes",
+  "pt": {
+   "hl": [
+    "Chlamydia"
+   ],
+   "say": "Chlamydia sits on the delivery side: the newborn catches it in the birth canal, and oral erythromycin treats both the eye and the nasopharynx."
+  }
+ },
+ {
+  "id": "rp18q10",
+  "d": 3,
+  "tags": [
+   "drug-mechanism",
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp18-08",
+   "BP-rp18-15"
+  ],
+  "s": "A 25-year-old woman at 31 weeks' gestation has fever, myalgia and diarrhea 1 week after eating unpasteurized queso fresco. She delivers a preterm boy after fever in labor; the amniotic fluid is brown and cloudy. At 2 days of age he feeds poorly and has a bulging fontanelle. Cerebrospinal fluid Gram stain shows gram-positive rods, and a wet mount shows end-over-end tumbling motility.",
+  "l": "Which antibiotic is essential in this newborn's regimen?",
+  "o": [
+   "Ampicillin",
+   "Ceftriaxone",
+   "Vancomycin",
+   "Metronidazole",
+   "Aztreonam"
+  ],
+  "a": 0,
+  "e": "Unpasteurized soft cheese, a febrile flu-like illness in pregnancy, preterm birth and gram-positive rods with tumbling motility identify *Listeria monocytogenes*. **Ampicillin**, usually with gentamicin for synergy, is essential because *Listeria* is intrinsically resistant to cephalosporins: its penicillin-binding proteins bind them poorly. Ceftriaxone, the usual backbone of adult meningitis therapy, therefore fails; vancomycin is not a dependable treatment for listeriosis; and aztreonam covers only gram-negative rods. This is why every neonatal sepsis regimen includes ampicillin.",
+  "w": {
+   "Ceftriaxone": "Ceftriaxone covers pneumococcus, meningococcus and group B strep, but Listeria's penicillin-binding proteins resist all cephalosporins, so it fails when used alone.",
+   "Vancomycin": "Vancomycin targets resistant gram-positive cocci such as MRSA and penicillin-resistant pneumococcus; clinical failures make it unreliable for listeriosis.",
+   "Metronidazole": "Metronidazole kills anaerobes and protozoa such as Trichomonas; Listeria is a facultative intracellular organism outside its spectrum.",
+   "Aztreonam": "Aztreonam is a monobactam active only against aerobic gram-negative rods, so it cannot treat a gram-positive rod such as Listeria."
+  },
+  "et": [
+   [
+    "Option",
+    "Spectrum",
+    "Activity against Listeria",
+    "Place in neonatal sepsis"
+   ],
+   [
+    [
+     "Ampicillin",
+     "Gram-positives including Listeria and enterococci",
+     "Drug of choice",
+     "Part of every empiric regimen"
+    ],
+    [
+     "Ceftriaxone",
+     "Streptococci, Neisseria, many gram-negatives",
+     "Intrinsic resistance",
+     "Misses Listeria"
+    ],
+    [
+     "Vancomycin",
+     "Gram-positive cocci including MRSA",
+     "Unreliable",
+     "Added for suspected MRSA"
+    ],
+    [
+     "Metronidazole",
+     "Anaerobes, protozoa",
+     "None",
+     "Anaerobic coverage only"
+    ],
+    [
+     "Aztreonam",
+     "Aerobic gram-negative rods",
+     "None",
+     "Rarely used"
+    ]
+   ]
+  ],
+  "bl": "Listeria resists cephalosporins, so ampicillin is essential in neonatal sepsis and meningitis coverage.",
+  "ef": "rp18_routes",
+  "pt": {
+   "hl": [
+    "Listeria"
+   ],
+   "say": "Listeria sits in the in-utero panel: it crosses the placenta after contaminated food, and ampicillin treats it because cephalosporins fail."
+  }
+ },
+ {
+  "id": "rp18q11",
+  "d": 1,
+  "tags": [
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp18-10"
+  ],
+  "obj": [
+   "PREG-REVIEW.14"
+  ],
+  "s": "A 27-year-old woman delivers a healthy boy at 39 weeks. Her prenatal screening showed a positive hepatitis B surface antigen, a positive hepatitis B e antigen and a high viral load, for which she took tenofovir in the third trimester. The newborn is examined 1 hour after birth.",
+  "l": "Which is the most appropriate management for the newborn now?",
+  "o": [
+   "Hepatitis B vaccine and hepatitis B immune globulin",
+   "Hepatitis B vaccine alone",
+   "Hepatitis B immune globulin alone",
+   "Oral tenofovir for 6 months",
+   "Test the newborn for HBsAg before any treatment"
+  ],
+  "a": 0,
+  "e": "An infant born to an HBsAg-positive mother receives **hepatitis B immune globulin** for immediate passive protection and the first dose of hepatitis B vaccine for lasting active immunity, both within 12 hours of birth and at different sites. Together they prevent most perinatal infections, which otherwise become chronic in about 90 percent of infected newborns. Vaccine alone is enough only when the mother is HBsAg-negative, immune globulin alone gives no lasting immunity, and waiting for infant testing loses the 12-hour window.",
+  "w": {
+   "Hepatitis B vaccine alone": "Vaccine alone is the birth dose for infants of HBsAg-negative mothers; with a positive mother, passive antibody is also needed while active immunity develops.",
+   "Hepatitis B immune globulin alone": "Immune globulin gives only temporary passive protection that fades over months; without vaccine the infant never develops lasting immunity.",
+   "Oral tenofovir for 6 months": "Tenofovir is given to the mother with a high viral load in the third trimester to reduce transmission; it is not newborn prophylaxis.",
+   "Test the newborn for HBsAg before any treatment": "Infant testing belongs at 9 to 12 months, after the vaccine series; delaying prophylaxis past 12 hours lets perinatal infection become established."
+  },
+  "et": [
+   [
+    "Option",
+    "Passive antibody",
+    "Active immunity",
+    "Timing"
+   ],
+   [
+    [
+     "Hepatitis B vaccine and hepatitis B immune globulin",
+     "Yes",
+     "Yes",
+     "Both within 12 hours"
+    ],
+    [
+     "Hepatitis B vaccine alone",
+     "No",
+     "Yes",
+     "Birth dose when the mother is HBsAg-negative"
+    ],
+    [
+     "Hepatitis B immune globulin alone",
+     "Yes",
+     "No",
+     "Protection fades"
+    ],
+    [
+     "Oral tenofovir for 6 months",
+     "No",
+     "No",
+     "Maternal drug in the third trimester"
+    ],
+    [
+     "Test the newborn for HBsAg before any treatment",
+     "No",
+     "No",
+     "Testing belongs at 9 to 12 months"
+    ]
+   ]
+  ],
+  "bl": "The newborn of an HBsAg-positive mother gets hepatitis B vaccine plus HBIG within 12 hours of birth.",
+  "ef": "rp18_routes",
+  "pt": {
+   "hl": [
+    "HBIG plus vaccine within 12 hours"
+   ],
+   "say": "The delivery box gives the rule: HBIG plus hepatitis B vaccine within 12 hours for the newborn of an HBsAg-positive mother."
+  }
+ },
+ {
+  "id": "rp18q12",
+  "d": 2,
+  "tags": [
+   "screening-prevention",
+   "serology-reading"
+  ],
+  "bp": [
+   "BP-rp18-07"
+  ],
+  "obj": [
+   "PREG-REVIEW.14"
+  ],
+  "s": "A 28-year-old woman, gravida 1, para 0, at 14 weeks' gestation calls because her nephew, whom she babysat 3 days ago, broke out in chickenpox yesterday. She does not remember having chickenpox and has never been vaccinated against it. She feels well and has no rash. Serum varicella-zoster IgG is negative.",
+  "l": "Which is the most appropriate next step?",
+  "o": [
+   "Varicella-zoster immune globulin",
+   "Live attenuated varicella vaccine",
+   "Intravenous acyclovir",
+   "Reassurance with no treatment",
+   "Measles-mumps-rubella vaccine"
+  ],
+  "a": 0,
+  "e": "A nonimmune pregnant patient exposed to chickenpox should receive **varicella-zoster immune globulin**, ideally as soon as possible and within 10 days of exposure, to prevent or soften maternal varicella. Varicella can cause severe pneumonia in pregnancy and, before 20 weeks, congenital varicella syndrome with limb hypoplasia and dermatomal scars. The live attenuated varicella vaccine is contraindicated during pregnancy and is given after delivery. Intravenous acyclovir is reserved for established severe disease such as varicella pneumonia.",
+  "w": {
+   "Live attenuated varicella vaccine": "The varicella vaccine is live and contraindicated in pregnancy; a nonimmune patient receives it after delivery so future pregnancies are protected.",
+   "Intravenous acyclovir": "Intravenous acyclovir treats established severe varicella, such as pneumonia or encephalitis; a well patient after exposure needs passive antibody instead.",
+   "Reassurance with no treatment": "Without passive antibody, a nonimmune patient faces a high attack rate, severe maternal pneumonia and a risk of congenital varicella syndrome at 14 weeks.",
+   "Measles-mumps-rubella vaccine": "MMR is also live and contraindicated in pregnancy, and it protects against measles, mumps and rubella rather than varicella."
+  },
+  "et": [
+   [
+    "Option",
+    "Type",
+    "Allowed in pregnancy",
+    "Protects after exposure"
+   ],
+   [
+    [
+     "Varicella-zoster immune globulin",
+     "Passive antibody",
+     "Yes",
+     "Yes, within 10 days"
+    ],
+    [
+     "Live attenuated varicella vaccine",
+     "Live vaccine",
+     "No",
+     "Not reliably"
+    ],
+    [
+     "Intravenous acyclovir",
+     "Antiviral",
+     "Yes",
+     "Treats disease, not exposure"
+    ],
+    [
+     "Reassurance with no treatment",
+     "No intervention",
+     "Not applicable",
+     "No"
+    ],
+    [
+     "Measles-mumps-rubella vaccine",
+     "Live vaccine",
+     "No",
+     "No varicella coverage"
+    ]
+   ]
+  ],
+  "bl": "Exposed, nonimmune pregnant patients receive varicella-zoster immune globulin; live varicella vaccine waits until after delivery.",
+  "ef": "rp18_signatures",
+  "pt": {
+   "hl": [
+    "Varicella"
+   ],
+   "say": "The Varicella row shows why a nonimmune exposure matters: limb hypoplasia and scars, which varicella-zoster immune globulin helps prevent."
+  }
+ }
+]

@@ -1,0 +1,69 @@
+<svg class="dia" viewBox="0 0 900 460" role="img" aria-label="Four molecular classes of invasive breast cancer compared by ER and PR, HER2, proliferation, main drugs and prognosis: luminal A best, luminal B intermediate, HER2-enriched improved by trastuzumab, triple-negative worst">
+<text class="ttl" x="14" y="26" font-size="17">Molecular class decides the drug</text>
+<rect x="196" y="44" width="168" height="48" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="2"/>
+<text class="b" x="280" y="74" font-size="16" text-anchor="middle">Luminal A</text>
+<rect x="370" y="44" width="168" height="48" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<text class="b" x="454" y="74" font-size="16" text-anchor="middle">Luminal B</text>
+<rect x="544" y="44" width="168" height="48" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="2"/>
+<text class="b" x="628" y="74" font-size="16" text-anchor="middle">HER2-enriched</text>
+<rect x="718" y="44" width="168" height="48" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="2"/>
+<text class="b" x="802" y="74" font-size="16" text-anchor="middle">Triple-negative</text>
+<rect x="14" y="100" width="176" height="54" rx="8" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="26" y="132" font-size="15">ER and PR</text>
+<rect x="196" y="100" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="280" y="132" font-size="14" text-anchor="middle">Positive</text>
+<rect x="370" y="100" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="454" y="132" font-size="14" text-anchor="middle">Positive</text>
+<rect x="544" y="100" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="628" y="132" font-size="14" text-anchor="middle">Negative</text>
+<rect x="718" y="100" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.2"/>
+<text x="802" y="132" font-size="14" text-anchor="middle">Negative</text>
+<rect x="14" y="160" width="176" height="54" rx="8" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="26" y="192" font-size="15">HER2</text>
+<rect x="196" y="160" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="280" y="192" font-size="14" text-anchor="middle">Negative</text>
+<rect x="370" y="160" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="454" y="182" font-size="14" text-anchor="middle">Negative or</text>
+<text x="454" y="201" font-size="14" text-anchor="middle">positive</text>
+<rect x="544" y="160" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="628" y="182" font-size="14" text-anchor="middle">Amplified</text>
+<text x="628" y="201" font-size="14" text-anchor="middle">(ERBB2)</text>
+<rect x="718" y="160" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.2"/>
+<text x="802" y="192" font-size="14" text-anchor="middle">Negative</text>
+<rect x="14" y="220" width="176" height="54" rx="8" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="26" y="252" font-size="15">Proliferation</text>
+<rect x="196" y="220" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="280" y="252" font-size="14" text-anchor="middle">Low Ki-67</text>
+<rect x="370" y="220" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="454" y="252" font-size="14" text-anchor="middle">High Ki-67</text>
+<rect x="544" y="220" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="628" y="252" font-size="14" text-anchor="middle">High</text>
+<rect x="718" y="220" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.2"/>
+<text x="802" y="252" font-size="14" text-anchor="middle">Very high</text>
+<rect x="14" y="280" width="176" height="54" rx="8" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="26" y="312" font-size="15">Main drugs</text>
+<rect x="196" y="280" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="280" y="312" font-size="14" text-anchor="middle">Tamoxifen or AI</text>
+<rect x="370" y="280" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="454" y="302" font-size="14" text-anchor="middle">Endocrine therapy</text>
+<text x="454" y="321" font-size="14" text-anchor="middle">plus chemotherapy</text>
+<rect x="544" y="280" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="628" y="302" font-size="14" text-anchor="middle">Trastuzumab</text>
+<text x="628" y="321" font-size="14" text-anchor="middle">plus chemotherapy</text>
+<rect x="718" y="280" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.2"/>
+<text x="802" y="302" font-size="14" text-anchor="middle">Chemotherapy;</text>
+<text x="802" y="321" font-size="14" text-anchor="middle">PARP if BRCA</text>
+<rect x="14" y="340" width="176" height="54" rx="8" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="26" y="372" font-size="15">Prognosis</text>
+<rect x="196" y="340" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="280" y="372" font-size="14" text-anchor="middle">Best</text>
+<rect x="370" y="340" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="454" y="372" font-size="14" text-anchor="middle">Intermediate</text>
+<rect x="544" y="340" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="628" y="362" font-size="14" text-anchor="middle">Improved by</text>
+<text x="628" y="381" font-size="14" text-anchor="middle">trastuzumab</text>
+<rect x="718" y="340" width="168" height="54" rx="8" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.2"/>
+<text x="802" y="372" font-size="14" text-anchor="middle">Worst</text>
+<text x="14" y="422" font-size="14">Triple-negative (basal-like) cancers cluster in BRCA1 carriers and young Black women.</text>
+<text x="14" y="444" font-size="14">AI = aromatase inhibitor, used after menopause; tamoxifen is the usual choice before it.</text>
+</svg>

@@ -1,0 +1,50 @@
+[
+ {
+  "k": "rp22_primary",
+  "t": "Primary hypogonadism",
+  "d": "Low testosterone caused by failure of the testis itself, as in Klinefelter syndrome, mumps orchitis or chemotherapy. Feedback is lost, so LH and FSH are high; this is called hypergonadotropic hypogonadism.",
+  "alt": [
+   "hypergonadotropic hypogonadism"
+  ]
+ },
+ {
+  "k": "rp22_secondary",
+  "t": "Secondary hypogonadism",
+  "d": "Low testosterone caused by failure of the hypothalamus or pituitary, as in Kallmann syndrome, a pituitary tumor, hyperprolactinemia or opioid use. LH and FSH are low or inappropriately normal; this is hypogonadotropic hypogonadism.",
+  "alt": [
+   "hypogonadotropic hypogonadism"
+  ]
+ },
+ {
+  "k": "rp22_inhibin",
+  "t": "Inhibin B",
+  "d": "A peptide secreted by Sertoli cells under FSH. It feeds back on the pituitary to suppress FSH selectively, and a low level, with a high FSH, marks failure of the seminiferous tubules.",
+  "alt": [
+   "inhibin"
+  ]
+ },
+ {
+  "k": "rp22_shbg",
+  "t": "SHBG",
+  "d": "Sex hormone-binding globulin, a liver protein that binds testosterone tightly. It falls in obesity and insulin resistance and rises with aging, thyroid excess and cirrhosis, so total testosterone can mislead while free testosterone is the active fraction.",
+  "alt": [
+   "sex hormone-binding globulin"
+  ]
+ },
+ {
+  "k": "rp22_cbavd",
+  "t": "CBAVD",
+  "d": "Congenital bilateral absence of the vas deferens. It is usually due to CFTR mutations, so it causes obstructive azoospermia with a low-volume, acidic, fructose-negative ejaculate and normal testes, and both partners need cystic fibrosis carrier testing.",
+  "alt": [
+   "congenital bilateral absence of the vas deferens"
+  ]
+ },
+ {
+  "k": "rp22_pde5",
+  "t": "PDE5 inhibitor",
+  "d": "A drug such as sildenafil, vardenafil, tadalafil or avanafil that blocks the enzyme breaking down cGMP in cavernosal smooth muscle. It amplifies nitric oxide signaling, needs sexual stimulation, and is contraindicated with nitrates.",
+  "alt": [
+   "PDE5 inhibitors"
+  ]
+ }
+]

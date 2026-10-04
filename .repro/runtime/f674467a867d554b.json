@@ -1,0 +1,614 @@
+{
+ "probe": {
+  "errors": [],
+  "viewport": 1254,
+  "probeVersion": 1,
+  "counts": {
+   "meta": {
+    "key": "stubrepro",
+    "title": "The Stub Path"
+   },
+   "topics": 2,
+   "questions": 6,
+   "rapid": 6,
+   "drills": 3,
+   "images": 2,
+   "figures": 2,
+   "gloss": 6,
+   "palace": 1,
+   "path": 4,
+   "title": "The Stub Path",
+   "lang": "en",
+   "titleTags": 1
+  },
+  "pageAudit": {
+   "present": true,
+   "name": "__pathAudit",
+   "counts": {
+    "topics": 2,
+    "questions": 6,
+    "rapid": 6,
+    "drills": 3,
+    "images": 2,
+    "figures": 2
+   },
+   "nonEmpty": [],
+   "lists": {
+    "duplicateQuestionIds": [],
+    "badQuestionTopics": [],
+    "badRapidTopics": [],
+    "shortQuestionOptions": [],
+    "shortRapidOptions": [],
+    "dupQuestionOptions": [],
+    "dupRapidOptions": [],
+    "unannotatedImages": [],
+    "topicsWithoutVisual": [],
+    "brokenImageRefs": [],
+    "brokenFigureRefs": [],
+    "badMultiDrills": [],
+    "drillWhyOrphanKeys": [],
+    "drillItemsWithoutWhy": []
+   }
+  },
+  "pageSelftest": {
+   "present": true,
+   "ok": true,
+   "errors": [],
+   "auditListsEmpty": true,
+   "viewFailures": []
+  },
+  "views": {
+   "modes": [
+    "path",
+    "learn",
+    "practice",
+    "drill",
+    "rapid",
+    "spot",
+    "weak",
+    "gloss"
+   ],
+   "failures": [],
+   "overflow": {
+    "path": -15,
+    "learn": -15,
+    "practice": 0,
+    "drill": 0,
+    "rapid": 0,
+    "spot": 0,
+    "weak": -15,
+    "gloss": 0
+   },
+   "maxOverflow": 0
+  },
+  "renderRapid": {
+   "id": "stubrepro.cj0ml5",
+   "optionsRendered": 5,
+   "wrongClickable": true,
+   "whyRevealed": true,
+   "whyMatches": true,
+   "pickedWhyOpen": true,
+   "ariaExpanded": true,
+   "catChip": true,
+   "detailsOpen": true,
+   "highlightCount": 2,
+   "sayShown": true,
+   "pickRecorded": true,
+   "liveVerdict": true,
+   "keyboardPick": true,
+   "scrollOverflow": -15
+  },
+  "renderPractice": {
+   "id": "en5q01",
+   "optionsRendered": 5,
+   "answered": true,
+   "wrongClickable": true,
+   "whyRevealed": true,
+   "whyMatches": true,
+   "pickedWhyOpen": true,
+   "ariaExpanded": true,
+   "tableShown": true,
+   "tableKeyRow": true,
+   "blShown": true,
+   "sayShown": true,
+   "detailsOpen": true,
+   "highlightCount": 2,
+   "flagControl": true,
+   "liveVerdict": true,
+   "keyboardPick": true,
+   "confidenceGate": true,
+   "summaryRows": 2,
+   "summaryExpandable": true,
+   "scrollOverflow": -15
+  },
+  "renderSpot": {
+   "key": "en5_follicles",
+   "optionsRendered": 5,
+   "wrongClickable": true,
+   "whyRevealed": true,
+   "whyMatches": true,
+   "pickedWhyOpen": true,
+   "ariaExpanded": true,
+   "shapesRendered": 1,
+   "filledShapes": 0,
+   "pinsRendered": 4,
+   "showAllToggle": true,
+   "hideMarkup": true,
+   "credit": true,
+   "liveVerdict": true,
+   "kindRender": {
+    "r": true,
+    "e": true,
+    "c": true,
+    "poly": true,
+    "arrow": true,
+    "bracket": true,
+    "spot": true,
+    "inset": true,
+    "none": true
+   },
+   "scrollOverflow": -15
+  },
+  "renderDrill": {
+   "sortId": "d_en5_sort",
+   "endRendered": true,
+   "itemsClickable": 14,
+   "whyRevealed": true,
+   "orderDrill": "d_rp8_order",
+   "orderClickable": 6,
+   "multiDrill": "d_rp8_multi",
+   "multiClickable": 13
+  },
+  "renderLearn": {
+   "topic": "en5",
+   "pretestWhy": true,
+   "pretestWrongSpecific": true,
+   "sexp": 1,
+   "sexpAnswered": true,
+   "grid": 10,
+   "gridScored": true,
+   "why": 1,
+   "vis": 1,
+   "clozeBlanks": 10,
+   "glossPopup": true
+  },
+  "topics": {
+   "perTopic": {
+    "en5": {
+     "gterms": 3,
+     "strong": 8,
+     "figs": 2,
+     "photos": 1,
+     "text": 5552
+    },
+    "rp8": {
+     "gterms": 3,
+     "strong": 5,
+     "figs": 2,
+     "photos": 1,
+     "text": 5790
+    }
+   },
+   "glossTerms": 6,
+   "neverLinked": []
+  },
+  "figs": {
+   "measured": 2,
+   "perFig": {
+    "en5_synthesis": 11.23,
+    "rp8_cycle": 11.23
+   },
+   "medianAll": 11.23,
+   "below9": [],
+   "overlaps": {},
+   "clipped": {},
+   "notInAnyBody": [],
+   "lightbox": {
+    "fig": "en5_synthesis",
+    "medianGlyph": 17.9,
+    "pan": 0,
+    "afterFitGlyph": 17.9
+   }
+  },
+  "search": {
+   "indexReadable": true,
+   "entries": 28,
+   "whyFindable": true,
+   "tableFindable": true,
+   "bottomLineFindable": true,
+   "rapidWhyFindable": true,
+   "topicsIndexed": true
+  },
+  "state": {
+   "repairKeepsLastPick": true,
+   "confusionsHasRapidKind": true,
+   "exportHasFlags": true,
+   "flagKinds": [
+    "q",
+    "rapid",
+    "img",
+    "drill"
+   ]
+  },
+  "pacing": {
+   "paceDays": {
+    "2": 2,
+    "3": 3,
+    "5": 4,
+    "7": 4,
+    "10": 4,
+    "14": 4
+   },
+   "exact": false,
+   "reviewShare14": 0.43
+  },
+  "bias": {
+   "chi": [
+    2.3,
+    5.7,
+    2.3,
+    9
+   ],
+   "max": 9,
+   "n": 6
+  },
+  "a11y": {
+   "htmlLang": "en",
+   "titleTags": 1,
+   "focusAfterRender": "BUTTON",
+   "liveRegion": true
+  },
+  "examPast": {
+   "bannerShown": true,
+   "ceilingInPast": false
+  },
+  "yieldAxes": {
+   "axisToggle": true,
+   "hiStep1": 2,
+   "hiExam": 1,
+   "topics": 2,
+   "axesDiffer": 1
+  },
+  "weak": {
+   "rendered": true,
+   "threadsSection": true,
+   "errorTypes": true,
+   "proven": true
+  },
+  "tutor": {
+   "present": true,
+   "degrades": true,
+   "socratic": true
+  },
+  "calendar": {
+   "strip": true,
+   "pace": true,
+   "examInput": true,
+   "exportBtn": true
+  },
+  "images": {
+   "n": 2,
+   "dims": {
+    "en5_follicles": [
+     1200,
+     900
+    ],
+    "rp8_endometrium": [
+     1200,
+     900
+    ]
+   },
+   "broken": []
+  },
+  "jsErrors": []
+ },
+ "probe400": {
+  "errors": [],
+  "viewport": 526,
+  "probeVersion": 1,
+  "counts": {
+   "meta": {
+    "key": "stubrepro",
+    "title": "The Stub Path"
+   },
+   "topics": 2,
+   "questions": 6,
+   "rapid": 6,
+   "drills": 3,
+   "images": 2,
+   "figures": 2,
+   "gloss": 6,
+   "palace": 1,
+   "path": 4,
+   "title": "The Stub Path",
+   "lang": "en",
+   "titleTags": 1
+  },
+  "pageAudit": {
+   "present": true,
+   "name": "__pathAudit",
+   "counts": {
+    "topics": 2,
+    "questions": 6,
+    "rapid": 6,
+    "drills": 3,
+    "images": 2,
+    "figures": 2
+   },
+   "nonEmpty": [],
+   "lists": {
+    "duplicateQuestionIds": [],
+    "badQuestionTopics": [],
+    "badRapidTopics": [],
+    "shortQuestionOptions": [],
+    "shortRapidOptions": [],
+    "dupQuestionOptions": [],
+    "dupRapidOptions": [],
+    "unannotatedImages": [],
+    "topicsWithoutVisual": [],
+    "brokenImageRefs": [],
+    "brokenFigureRefs": [],
+    "badMultiDrills": [],
+    "drillWhyOrphanKeys": [],
+    "drillItemsWithoutWhy": []
+   }
+  },
+  "pageSelftest": {
+   "present": true,
+   "ok": true,
+   "errors": [],
+   "auditListsEmpty": true,
+   "viewFailures": []
+  },
+  "views": {
+   "modes": [
+    "path",
+    "learn",
+    "practice",
+    "drill",
+    "rapid",
+    "spot",
+    "weak",
+    "gloss"
+   ],
+   "failures": [],
+   "overflow": {
+    "path": -15,
+    "learn": -15,
+    "practice": -15,
+    "drill": 0,
+    "rapid": 0,
+    "spot": 0,
+    "weak": -15,
+    "gloss": -15
+   },
+   "maxOverflow": 0
+  },
+  "renderRapid": {
+   "id": "stubrepro.cj0ml5",
+   "optionsRendered": 5,
+   "wrongClickable": true,
+   "whyRevealed": true,
+   "whyMatches": true,
+   "pickedWhyOpen": true,
+   "ariaExpanded": true,
+   "catChip": true,
+   "detailsOpen": true,
+   "highlightCount": 2,
+   "sayShown": true,
+   "pickRecorded": true,
+   "liveVerdict": true,
+   "keyboardPick": true,
+   "scrollOverflow": -15
+  },
+  "renderPractice": {
+   "id": "en5q01",
+   "optionsRendered": 5,
+   "answered": true,
+   "wrongClickable": true,
+   "whyRevealed": true,
+   "whyMatches": true,
+   "pickedWhyOpen": true,
+   "ariaExpanded": true,
+   "tableShown": true,
+   "tableKeyRow": true,
+   "blShown": true,
+   "sayShown": true,
+   "detailsOpen": true,
+   "highlightCount": 2,
+   "flagControl": true,
+   "liveVerdict": true,
+   "keyboardPick": true,
+   "confidenceGate": true,
+   "summaryRows": 2,
+   "summaryExpandable": true,
+   "scrollOverflow": -15
+  },
+  "renderSpot": {
+   "key": "en5_follicles",
+   "optionsRendered": 5,
+   "wrongClickable": true,
+   "whyRevealed": true,
+   "whyMatches": true,
+   "pickedWhyOpen": true,
+   "ariaExpanded": true,
+   "shapesRendered": 1,
+   "filledShapes": 0,
+   "pinsRendered": 4,
+   "showAllToggle": true,
+   "hideMarkup": true,
+   "credit": true,
+   "liveVerdict": true,
+   "kindRender": {
+    "r": true,
+    "e": true,
+    "c": true,
+    "poly": true,
+    "arrow": true,
+    "bracket": true,
+    "spot": true,
+    "inset": true,
+    "none": true
+   },
+   "scrollOverflow": -15
+  },
+  "renderDrill": {
+   "sortId": "d_en5_sort",
+   "endRendered": true,
+   "itemsClickable": 14,
+   "whyRevealed": true,
+   "orderDrill": "d_rp8_order",
+   "orderClickable": 6,
+   "multiDrill": "d_rp8_multi",
+   "multiClickable": 13
+  },
+  "renderLearn": {
+   "topic": "en5",
+   "pretestWhy": true,
+   "pretestWrongSpecific": true,
+   "sexp": 1,
+   "sexpAnswered": true,
+   "grid": 10,
+   "gridScored": true,
+   "why": 1,
+   "vis": 1,
+   "clozeBlanks": 10,
+   "glossPopup": true
+  },
+  "topics": {
+   "perTopic": {
+    "en5": {
+     "gterms": 3,
+     "strong": 8,
+     "figs": 2,
+     "photos": 1,
+     "text": 5468
+    },
+    "rp8": {
+     "gterms": 3,
+     "strong": 5,
+     "figs": 2,
+     "photos": 1,
+     "text": 5690
+    }
+   },
+   "glossTerms": 6,
+   "neverLinked": []
+  },
+  "figs": {
+   "measured": 2,
+   "perFig": {
+    "en5_synthesis": 7.67,
+    "rp8_cycle": 7.67
+   },
+   "medianAll": 7.67,
+   "below9": [
+    "en5_synthesis",
+    "rp8_cycle"
+   ],
+   "overlaps": {},
+   "clipped": {},
+   "notInAnyBody": [],
+   "lightbox": {
+    "fig": "en5_synthesis",
+    "medianGlyph": 15,
+    "pan": 506
+   }
+  },
+  "search": {
+   "indexReadable": true,
+   "entries": 28,
+   "whyFindable": true,
+   "tableFindable": true,
+   "bottomLineFindable": true,
+   "rapidWhyFindable": true,
+   "topicsIndexed": true
+  },
+  "state": {
+   "repairKeepsLastPick": true,
+   "confusionsHasRapidKind": true,
+   "exportHasFlags": true,
+   "flagKinds": [
+    "q",
+    "rapid",
+    "img",
+    "drill"
+   ]
+  },
+  "pacing": {
+   "paceDays": {
+    "2": 2,
+    "3": 3,
+    "5": 4,
+    "7": 4,
+    "10": 4,
+    "14": 4
+   },
+   "exact": false,
+   "reviewShare14": 0.43
+  },
+  "bias": {
+   "chi": [
+    2.3,
+    5.7,
+    2.3,
+    9
+   ],
+   "max": 9,
+   "n": 6
+  },
+  "a11y": {
+   "htmlLang": "en",
+   "titleTags": 1,
+   "focusAfterRender": "BUTTON",
+   "liveRegion": true
+  },
+  "examPast": {
+   "bannerShown": true,
+   "ceilingInPast": false
+  },
+  "yieldAxes": {
+   "axisToggle": true,
+   "hiStep1": 2,
+   "hiExam": 1,
+   "topics": 2,
+   "axesDiffer": 1
+  },
+  "weak": {
+   "rendered": true,
+   "threadsSection": true,
+   "errorTypes": true,
+   "proven": true
+  },
+  "tutor": {
+   "present": true,
+   "degrades": true,
+   "socratic": true
+  },
+  "calendar": {
+   "strip": true,
+   "pace": true,
+   "examInput": true,
+   "exportBtn": true
+  },
+  "images": {
+   "n": 2,
+   "dims": {
+    "en5_follicles": [
+     1200,
+     900
+    ],
+    "rp8_endometrium": [
+     1200,
+     900
+    ]
+   },
+   "broken": []
+  },
+  "jsErrors": []
+ },
+ "pageSha": "25f3a445",
+ "buildWarnings": [],
+ "ranAt": "2026-09-27 02:20:38",
+ "root": "C:\\Users\\varsh\\repro-endo-path\\fixtures\\stub"
+}

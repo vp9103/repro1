@@ -1,0 +1,368 @@
+{
+ "id": "en9",
+ "t": "Parathyroid disease and disorders of calcium",
+ "sub": "How reading PTH against the calcium sorts every high or low calcium, from an adenoma or FHH to cancer, kidney failure and PTH resistance.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 14,
+ "bp": [
+  "BP-en9-01",
+  "BP-en9-05",
+  "BP-en9-06",
+  "BP-en9-17"
+ ],
+ "obj": [
+  "ENDO-THYROID.6"
+ ],
+ "pretest": [
+  {
+   "q": "A patient has a high serum calcium and a PTH in the upper half of the reference range. What does that PTH value mean?",
+   "o": [
+    "PTH secretion is inappropriate for the calcium",
+    "The parathyroid glands are responding normally",
+    "The calcium result must be an artifact",
+    "Vitamin D excess is driving the calcium"
+   ],
+   "a": 0,
+   "why": "A high calcium should switch PTH off through the calcium-sensing receptor. A PTH that stays in the reference range is unsuppressed, so the glands are driving the calcium: primary hyperparathyroidism, familial hypocalciuric hypercalcemia or lithium.",
+   "w": {
+    "The parathyroid glands are responding normally": "Healthy glands read a high calcium and cut PTH to the bottom of the range or below it, so a mid-range value shows the brake has failed.",
+    "The calcium result must be an artifact": "An abnormal albumin can distort total calcium, but correcting for albumin never explains why PTH failed to fall; the pattern still needs a parathyroid explanation.",
+    "Vitamin D excess is driving the calcium": "Calcitriol or vitamin D toxicity raises calcium from outside the glands, which respond by suppressing PTH to low values instead of leaving it normal."
+   }
+  },
+  {
+   "q": "Which finding best separates familial hypocalciuric hypercalcemia from primary hyperparathyroidism?",
+   "o": [
+    "Low urine calcium",
+    "High serum PTH",
+    "Low serum phosphate",
+    "Mild hypercalcemia"
+   ],
+   "a": 0,
+   "why": "In familial hypocalciuric hypercalcemia the kidney's calcium-sensing receptor is inactivated too, so the tubule keeps reclaiming calcium and urine calcium is low (clearance ratio below 0.01). In primary hyperparathyroidism the filtered load is large and urine calcium is high.",
+   "w": {
+    "High serum PTH": "Both disorders can show a PTH that is high or inappropriately normal, because in both the glands fail to switch off at a raised calcium.",
+    "Low serum phosphate": "PTH wastes phosphate at the proximal tubule in both conditions, so phosphate runs low or low-normal in each and cannot tell them apart.",
+    "Mild hypercalcemia": "Primary hyperparathyroidism found on routine blood work is usually mild as well, so the size of the rise does not discriminate."
+   }
+  },
+  {
+   "q": "A child has short fourth and fifth metacarpals, low calcium, high phosphate and a high PTH. What is the underlying defect?",
+   "o": [
+    "End-organ resistance to PTH",
+    "Absent parathyroid glands",
+    "Autoimmune destruction of the parathyroids",
+    "Vitamin D deficiency"
+   ],
+   "a": 0,
+   "why": "This is pseudohypoparathyroidism type 1A: a maternally inherited GNAS mutation blunts the Gs signal of the PTH receptor, so kidney and bone ignore PTH. Calcium falls, phosphate rises, the glands answer with a high PTH, and the skeleton shows Albright hereditary osteodystrophy.",
+   "w": {
+    "Absent parathyroid glands": "DiGeorge syndrome removes the glands, so PTH is low rather than high, and the child has thymic and conotruncal heart defects instead of short metacarpals.",
+    "Autoimmune destruction of the parathyroids": "Autoimmune hypoparathyroidism, as in APS-1, lowers PTH; a high PTH proves the glands are working and the target organs are not responding.",
+    "Vitamin D deficiency": "Vitamin D deficiency raises PTH too, but that PTH then wastes phosphate, so phosphate is low rather than high and the hands are normal."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How do you sort a high calcium with one lab value?"
+  ],
+  [
+   "p",
+   "Every calcium problem starts at the parathyroid brake. Chief cells read ionized calcium through the calcium-sensing receptor, so a high calcium should shut PTH secretion off. Therefore, once an albumin-corrected **hypercalcemia** is confirmed, the next step is to measure PTH. If PTH is high, or even **inappropriately normal**, the glands are driving the calcium, because any **unsuppressed** PTH is wrong when calcium is high. That points to primary hyperparathyroidism, familial hypocalciuric hypercalcemia or lithium. If PTH is suppressed, something outside the glands is pushing calcium into the blood, and the glands are responding correctly."
+  ],
+  [
+   "f",
+   "en9_hypercalcemia"
+  ],
+  [
+   "call",
+   "key",
+   "A normal PTH can still be the wrong PTH",
+   "With a high calcium, the healthy response is a PTH near the bottom of the range or undetectable. A value anywhere inside the reference range is therefore **inappropriately normal** and still points to PTH-driven disease, while PTHrP, osteolysis, calcitriol and vitamin D excess always suppress PTH."
+  ],
+  [
+   "h",
+   "Why does primary hyperparathyroidism cause stones, bones and groans?"
+  ],
+  [
+   "p",
+   "In primary hyperparathyroidism the gland itself makes too much PTH. A single benign **adenoma** causes about 85 percent of cases; four-gland hyperplasia causes most of the rest and is the pattern seen in MEN1 and MEN2A, and carcinoma is rare. PTH frees calcium from bone, reclaims it in the distal tubule and activates 1-alpha-hydroxylase, while it wastes phosphate at the proximal tubule. The result is high calcium, low phosphate, high PTH and high urine calcium, because the filtered load outruns the extra distal reabsorption. Most patients are found on routine labs with few symptoms."
+  ],
+  [
+   "p",
+   "When symptoms appear they follow the calcium. Urine calcium forms **kidney stones**, and calcium in the collecting duct blunts the response to ADH, a nephrogenic diabetes insipidus that causes polyuria. Abdominal **groans** come from constipation, because calcium slows smooth muscle, and from pancreatitis and peptic ulcer. Weakness, fatigue and depression follow, and the ECG shows a **shortened QT interval**. Long-standing disease produces {{en9_ofc|osteitis fibrosa cystica}}: subperiosteal resorption on the radial side of the middle phalanges, a salt-and-pepper skull and brown tumors, cystic spaces filled with giant cells and hemosiderin."
+  ],
+  [
+   "t",
+   [
+    "Complaint",
+    "Mechanism",
+    "What you find"
+   ],
+   [
+    [
+     "Stones",
+     "Filtered calcium exceeds what the tubule can reclaim",
+     "Hypercalciuria and calcium **kidney stones**"
+    ],
+    [
+     "Bones",
+     "PTH drives osteoclasts through osteoblast RANKL",
+     "Subperiosteal resorption, brown tumors, fractures"
+    ],
+    [
+     "Groans",
+     "Calcium slows gut smooth muscle and raises gastrin",
+     "Constipation, pancreatitis, peptic ulcer"
+    ],
+    [
+     "Thrones",
+     "Calcium blunts ADH action in the collecting duct",
+     "Polyuria and thirst (nephrogenic diabetes insipidus)"
+    ],
+    [
+     "Psychiatric overtones",
+     "High calcium dampens nerve excitability",
+     "Fatigue, depression, confusion"
+    ],
+    [
+     "Heart",
+     "Faster ventricular repolarization",
+     "**Shortened QT interval**"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How is familial hypocalciuric hypercalcemia told apart from an adenoma?"
+  ],
+  [
+   "p",
+   "{{en9_fhh|Familial hypocalciuric hypercalcemia}} is an autosomal dominant, inactivating mutation of the **calcium-sensing receptor**. With fewer working receptors, both the parathyroid and the kidney read a normal calcium as low. The glands therefore defend a higher set point, giving lifelong mild hypercalcemia with a normal or slightly high PTH, and the tubule keeps reclaiming calcium, so urine calcium is low, with a calcium-to-creatinine clearance ratio usually below 0.01. There are no stones and no bone loss. Because every gland carries the mutation, surgery does not help; management is reassurance and family screening."
+  ],
+  [
+   "call",
+   "trap",
+   "Do not send FHH to the surgeon",
+   "Mild hypercalcemia with an unsuppressed PTH looks exactly like primary hyperparathyroidism on a routine panel. Check a 24-hour urine calcium before referral: a **low clearance ratio** points to FHH, where parathyroidectomy fails because every gland carries the receptor defect. Thiazides and lithium also lower urine calcium, so review the drug list."
+  ],
+  [
+   "h",
+   "What raises calcium when PTH is switched off?"
+  ],
+  [
+   "p",
+   "In hypercalcemia of malignancy PTH is always suppressed. The commonest route is {{en9_pthrp|PTHrP}}, made by squamous cell carcinomas of the lung and head and neck, renal and bladder carcinomas, breast cancer and HTLV-1 adult T-cell lymphoma. It binds the PTH receptor, so it copies PTH, including **low phosphate**, yet the PTH assay reads low. Local **osteolysis** is the second route: myeloma and breast metastases release cytokines that activate osteoclasts around the tumor. Third, lymphomas and granulomas such as sarcoidosis turn 25-hydroxyvitamin D into calcitriol, which raises gut absorption of calcium and phosphate."
+  ],
+  [
+   "p",
+   "Other PTH-independent causes are easy to miss because they are not tumors. **Vitamin D toxicity** from high-dose supplements behaves like a calcitriol-making granuloma, so phosphate is high-normal or high rather than low. Milk-alkali syndrome follows heavy calcium carbonate intake: alkalosis increases calcium reabsorption and the resulting kidney injury traps calcium. Thiazide diuretics increase distal calcium reabsorption, and immobilization and hyperthyroidism speed bone resorption. Lithium is the exception that keeps PTH unsuppressed, because it resets the parathyroid set point."
+  ],
+  [
+   "h",
+   "How do you bring a dangerous calcium down?"
+  ],
+  [
+   "steps",
+   [
+    "Treating severe hypercalcemia, in order of action",
+    [
+     [
+      "Give intravenous normal saline",
+      "Calcium blunts ADH action, so these patients lose water, filter less and reclaim more calcium with sodium. Restoring volume raises filtration and calcium excretion, which is why saline comes first; a loop diuretic is added only after volume is restored."
+     ],
+     [
+      "Add calcitonin for a fast drop",
+      "Calcitonin inhibits osteoclasts and increases calcium excretion within hours, but its receptors downregulate within about two days, so it only bridges the gap until slower drugs work."
+     ],
+     [
+      "Give an intravenous bisphosphonate",
+      "Zoledronic acid or pamidronate binds bone mineral and triggers osteoclast apoptosis; the effect starts in two to four days and lasts weeks. Denosumab is an option when kidney failure limits bisphosphonates."
+     ],
+     [
+      "Treat the cause",
+      "Glucocorticoids stop calcitriol production in lymphoma and granulomatous disease. Symptomatic primary hyperparathyroidism goes to **parathyroidectomy**, and cinacalcet lowers PTH when surgery is not possible."
+     ]
+    ]
+   ]
+  ],
+  [
+   "p",
+   "{{en9_cinacalcet|Cinacalcet}} is a **calcimimetic**: it binds the calcium-sensing receptor and makes it more sensitive, so the gland reads the current calcium as higher and releases less PTH. It treats the secondary hyperparathyroidism of dialysis patients, parathyroid carcinoma and primary disease when surgery is impossible, and its predictable adverse effect is hypocalcemia. For symptomatic primary hyperparathyroidism the first-line treatment is surgery, and removing a single adenoma located by sestamibi scan or ultrasound cures most patients."
+  ],
+  [
+   "h",
+   "Why does kidney failure push the parathyroids into overdrive?"
+  ],
+  [
+   "p",
+   "In **secondary hyperparathyroidism** the glands are normal and are answering a real stimulus. The failing kidney retains phosphate, which binds calcium and directly stimulates PTH, and it loses 1-alpha-hydroxylase, so calcitriol falls and less calcium is absorbed from the gut. Vitamin D deficiency drives PTH the same way through poor absorption. Calcium is low or normal and PTH is high, while phosphate is high in kidney disease but low in vitamin D deficiency. The mixed bone disease of kidney failure, from high-turnover osteitis fibrosa cystica to poorly mineralized bone, is called **renal osteodystrophy**."
+  ],
+  [
+   "p",
+   "Years of stimulation make the glands hyperplastic, and some nodules become autonomous. This is **tertiary hyperparathyroidism**: PTH stays very high and calcium rises even after the stimulus is removed, classically after a kidney transplant. Because the glands no longer obey calcium, the treatment is parathyroidectomy, whereas secondary disease is managed with phosphate binders, calcitriol and cinacalcet."
+  ],
+  [
+   "f",
+   "en9_three_hpt"
+  ],
+  [
+   "h",
+   "What does a low calcium look like when PTH is low or high?"
+  ],
+  [
+   "p",
+   "Hypoparathyroidism means too little PTH, so calcium falls and phosphate is retained: low calcium, **high phosphate** and low PTH. The commonest cause is neck surgery, when the glands are removed or devascularized during thyroidectomy. Autoimmune destruction occurs in APS-1, with mucocutaneous candidiasis and adrenal insufficiency, and DiGeorge syndrome leaves the glands absent. Low ionized calcium makes nerves hyperexcitable: perioral tingling, Chvostek and Trousseau signs, tetany, a prolonged QT interval and seizures. Tetany, seizures, laryngospasm or arrhythmia call for intravenous **calcium gluconate** at once."
+  ],
+  [
+   "p",
+   "In {{en9_php|pseudohypoparathyroidism}} type 1A the glands work but the targets do not. An inactivating **GNAS** mutation disables Gs-alpha, which couples the PTH receptor to cAMP, and the disease appears when the mutation comes from the mother. Kidney resistance gives low calcium, high phosphate and a high PTH. The same mutation causes {{en9_aho|Albright hereditary osteodystrophy}}: short fourth and fifth metacarpals, short stature, a round face and obesity. Inherited from the father, it causes **pseudopseudohypoparathyroidism**, with the same body habitus but normal calcium and PTH."
+  ],
+  [
+   "p",
+   "Some causes lower calcium without parathyroid disease. In acute **pancreatitis**, lipase frees fatty acids that bind calcium as soaps in fat necrosis (saponification). Massive transfusion delivers **citrate**, which chelates ionized calcium. After a large adenoma is removed, starved bone can take up calcium and phosphate for weeks, the hungry bone syndrome. Severe hypomagnesemia also lowers calcium, because PTH is neither released nor effective without magnesium."
+  ],
+  [
+   "t",
+   [
+    "Cause",
+    "Calcium",
+    "Phosphate",
+    "PTH",
+    "Key clue"
+   ],
+   [
+    [
+     "Hypoparathyroidism",
+     "Low",
+     "High",
+     "Low",
+     "Recent thyroidectomy, APS-1 or DiGeorge"
+    ],
+    [
+     "Pseudohypoparathyroidism type 1A",
+     "Low",
+     "High",
+     "High",
+     "Short 4th and 5th metacarpals"
+    ],
+    [
+     "Pseudopseudohypoparathyroidism",
+     "Normal",
+     "Normal",
+     "Normal",
+     "Same habitus, paternal allele"
+    ],
+    [
+     "Vitamin D deficiency",
+     "Low or normal",
+     "Low",
+     "High",
+     "Low 25-hydroxyvitamin D"
+    ],
+    [
+     "Chronic kidney disease",
+     "Low or normal",
+     "High",
+     "High",
+     "High creatinine, low calcitriol"
+    ],
+    [
+     "Acute pancreatitis or massive transfusion",
+     "Low",
+     "Normal",
+     "High",
+     "Calcium soaps or citrate binding"
+    ]
+   ]
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_en9_fhh",
+    "q": "A woman has lifelong mild hypercalcemia, a normal PTH and a very low urine calcium. Which reasoning is correct?",
+    "o": [
+     "A normal PTH means the glands are healthy, so the calcium must come from a PTH-independent source such as a hidden tumor",
+     "Low urine calcium means the kidney is failing to filter calcium, so this is early kidney disease with tertiary hyperparathyroidism",
+     "PTH is unsuppressed despite hypercalcemia and the kidney is also retaining calcium, so both organs misread calcium through an inactive sensing receptor",
+     "An adenoma is secreting PTH, so removing the largest parathyroid gland will cure her hypercalcemia"
+    ],
+    "a": 2,
+    "why": "A PTH that is normal while calcium is high is unsuppressed, so the disorder is PTH-dependent; a hidden tumor would suppress PTH through PTHrP or osteolysis. Among PTH-dependent causes, an adenoma raises urine calcium, whereas a very low urine calcium means the renal calcium-sensing receptor also reads calcium as low. That lifelong, mild pattern is familial hypocalciuric hypercalcemia. Every gland carries the defect, so surgery fails, and kidney failure would raise phosphate and creatinine rather than produce this picture."
+   }
+  ],
+  [
+   "why",
+   "Why does a GNAS mutation from the mother cause PTH resistance when the same mutation from the father does not?",
+   "GNAS is imprinted in a tissue-specific way. Most tissues express both copies, but the renal proximal tubule silences the paternal copy, so it depends on the maternal allele to make Gs-alpha. A maternal mutation therefore leaves the tubule with almost no working Gs protein: PTH binds its receptor but cannot raise cAMP, so phosphate is retained, calcitriol is not made, calcium falls and PTH climbs. A paternal mutation spares the maternal copy in the kidney, so calcium and PTH stay normal. Bone and other tissues use both copies, so either parent's mutation halves Gs-alpha there, which is why both forms share the Albright body habitus."
+  ],
+  [
+   "vis",
+   "en9"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these can cause hypercalcemia?",
+  "items": [
+   [
+    "Parathyroid adenoma",
+    1
+   ],
+   [
+    "PTHrP from squamous cell lung cancer",
+    1
+   ],
+   [
+    "Multiple myeloma",
+    1
+   ],
+   [
+    "Sarcoidosis",
+    1
+   ],
+   [
+    "Thiazide diuretics",
+    1
+   ],
+   [
+    "Lithium therapy",
+    1
+   ],
+   [
+    "Milk-alkali syndrome",
+    1
+   ],
+   [
+    "Vitamin D toxicity",
+    1
+   ],
+   [
+    "Prolonged immobilization",
+    1
+   ],
+   [
+    "Acute pancreatitis",
+    0
+   ],
+   [
+    "Massive blood transfusion",
+    0
+   ],
+   [
+    "Pseudohypoparathyroidism type 1A",
+    0
+   ],
+   [
+    "Loop diuretics after saline",
+    0
+   ],
+   [
+    "Removal of all four parathyroids",
+    0
+   ]
+  ]
+ }
+}

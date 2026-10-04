@@ -1,0 +1,119 @@
+{
+ "cmd": "gaps",
+ "key": "topic:en17",
+ "hash": "b78b4cba7435",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:00:46",
+ "gaps": [
+  {
+   "gid": "GAP-en17-01",
+   "concept": "Type 1 diabetes requires basal and mealtime insulin because autoimmune beta-cell loss leaves little or no endogenous insulin.",
+   "why_tested": "A newly diagnosed patient with type 1 diabetes needs a drug regimen that replaces both background and meal-related insulin.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en17-02",
+   "concept": "Insulin activates a receptor tyrosine kinase, promoting GLUT4 translocation in muscle and adipose tissue.",
+   "why_tested": "A question asks how injected insulin increases glucose uptake after a meal.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en17-03",
+   "concept": "Insulin drives potassium into cells through Na+/K+-ATPase activation and can cause hypokalemia.",
+   "why_tested": "Serum potassium falls after insulin is given for hyperkalemia or diabetic ketoacidosis.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en17-04",
+   "concept": "Rapid-acting insulin covers meals; NPH has a pronounced peak; long-acting analogs provide flatter basal coverage.",
+   "why_tested": "The timing of hypoglycemia after an insulin injection identifies the preparation.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en17-05",
+   "concept": "Glucagon treats severe hypoglycemia by stimulating hepatic glycogenolysis and is less effective when liver glycogen is depleted.",
+   "why_tested": "A patient cannot swallow during a hypoglycemic episode, or fails to respond after prolonged fasting.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en17-06",
+   "concept": "Metformin activates AMPK, contributing to reduced hepatic gluconeogenesis.",
+   "why_tested": "A mechanism question asks for the intracellular pathway targeted by a first-line diabetes drug.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en17-07",
+   "concept": "Sulfonylureas and meglitinides require functioning beta cells; short-acting meglitinides primarily control postprandial glucose.",
+   "why_tested": "A meal-related glucose spike or absent endogenous insulin distinguishes a meglitinide from insulin therapy.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en17-08",
+   "concept": "Chlorpropamide can enhance antidiuretic hormone action and cause SIADH-like hyponatremia.",
+   "why_tested": "An older patient taking a first-generation sulfonylurea develops low serum sodium.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en17-09",
+   "concept": "DPP-4 inhibitors can cause pancreatitis; saxagliptin is associated with increased heart-failure hospitalization.",
+   "why_tested": "Abdominal pain or new heart failure follows initiation of a weight-neutral diabetes drug. [FDA label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/022350s026lbl.pdf)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en17-10",
+   "concept": "Alpha-glucosidase inhibitors delay intestinal brush-border carbohydrate digestion, reducing postprandial hyperglycemia.",
+   "why_tested": "A drug lowers glucose excursions after meals without stimulating insulin secretion. [FDA label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2015/020482s027lbl.pdf)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en17-11",
+   "concept": "Pramlintide replaces beta-cell-derived amylin and can supplement mealtime insulin in type 1 or type 2 diabetes.",
+   "why_tested": "A patient using mealtime insulin receives an additional injectable hormone analog. [FDA label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2015/021332s025lbl.pdf)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en17-12",
+   "concept": "SGLT2 inhibitors rarely cause Fournier gangrene, a necrotizing infection of the perineum.",
+   "why_tested": "Perineal pain and systemic illness develop after a drug that causes glucosuria. [FDA label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/204629s041lbl.pdf)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en17-13",
+   "concept": "Phentermine can cause tachycardia, hypertension, and insomnia; hyperthyroidism and cardiovascular disease argue against its use.",
+   "why_tested": "A patient develops adrenergic symptoms after starting an appetite suppressant. [Drug label](https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=315b8a94-b7cc-1b47-e063-6294a90a2d39)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en17-14",
+   "concept": "Topiramate in phentermine/topiramate increases fetal cleft-lip and cleft-palate risk.",
+   "why_tested": "A pregnant patient reports taking combination weight-loss medication early in gestation. [FDA label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/022580s026lbl.pdf)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en17-15",
+   "concept": "Topiramate inhibits carbonic anhydrase and can cause metabolic acidosis and calcium-phosphate kidney stones.",
+   "why_tested": "Low bicarbonate or nephrolithiasis follows phentermine/topiramate treatment. [FDA label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/022580s031lbl.pdf)",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en17-16",
+   "concept": "Bupropion stimulates hypothalamic POMC appetite pathways; naltrexone blocks opioid feedback that limits this stimulation.",
+   "why_tested": "A question asks how the two components of a weight-loss combination suppress appetite.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-en17-17",
+   "concept": "Naltrexone/bupropion can precipitate opioid withdrawal and increase seizure risk; avoid it with chronic opioid use or seizure disorders.",
+   "why_tested": "A patient taking opioids or with a seizure history is considered for appetite suppression. [FDA label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/200063s020lbl.pdf)",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-en17-18",
+   "concept": "Insulin does not cross the placenta and is a standard pharmacologic choice for gestational diabetes.",
+   "why_tested": "Persistent hyperglycemia in pregnancy prompts selection of a fetal-safe glucose-lowering drug.",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-en17-1790441892093.jsonl"
+}

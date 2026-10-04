@@ -1,0 +1,37 @@
+{
+ "id": "d_rp8_order",
+ "c": "rp8",
+ "kind": "order",
+ "t": "From follicle to ovulation",
+ "tags": [
+  "cycle-phases"
+ ],
+ "q": "Put the events that lead to ovulation in order, earliest first.",
+ "key": "Each step creates the signal for the next: FSH grows follicles, their estradiol flips pituitary feedback, and the LH surge completes meiosis I and ruptures the follicle.",
+ "items": [
+  [
+   "FSH recruits a cohort of antral follicles",
+   "Early follicular FSH rescues a group of follicles from atresia, which is why FSH is highest at the start of the cycle."
+  ],
+  [
+   "One dominant follicle emerges and makes more estradiol",
+   "The follicle with the most FSH receptors keeps growing as FSH falls, while its estradiol and inhibin starve the others."
+  ],
+  [
+   "Estradiol stays high for about two days",
+   "Sustained high estradiol is the trigger that flips the pituitary from negative to positive feedback."
+  ],
+  [
+   "The pituitary releases the LH surge",
+   "Positive feedback produces a surge of LH that begins about a day and a half before ovulation."
+  ],
+  [
+   "The oocyte completes meiosis I",
+   "The LH surge restarts meiosis, so the oocyte finishes meiosis I and arrests again in metaphase II."
+  ],
+  [
+   "The follicle ruptures and releases the oocyte",
+   "Proteases activated by the surge weaken the follicle wall, and ovulation follows about 36 hours after the surge begins."
+  ]
+ ]
+}

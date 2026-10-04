@@ -1,0 +1,44 @@
+{
+ "which": "figreview",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 11:04:30",
+ "result": {
+  "good": {
+   "errors": [
+    {
+     "what": "The dotted inhibin loop ends in a flat bar on the FSH arrow below the anterior pituitary.",
+     "why_wrong": "Inhibin reduces FSH production and secretion at the anterior pituitary. Placing the bar on the outgoing FSH pathway may suggest that inhibin acts on FSH after its release.",
+     "severity": "misleading"
+    }
+   ],
+   "overall": 7
+  },
+  "bad": {
+   "errors": [
+    {
+     "what": "“TRH (pulsatile)” labels the hypothalamus-to-anterior-pituitary arrow.",
+     "why_wrong": "The ovarian axis uses pulsatile GnRH. TRH primarily regulates TSH and prolactin.",
+     "severity": "error"
+    },
+    {
+     "what": "“ACTH” and “TSH” label the two anterior-pituitary-to-ovary arrows.",
+     "why_wrong": "The ovarian gonadotropins are LH and FSH. ACTH primarily targets the adrenal cortex, and TSH targets the thyroid.",
+     "severity": "error"
+    },
+    {
+     "what": "The dotted inhibin feedback ends at the pituitary output labeled “ACTH,” while its text says “FSH only (−).”",
+     "why_wrong": "The arrow contradicts the label and caption. It should terminate on an output labeled FSH.",
+     "severity": "error"
+    },
+    {
+     "what": "“LH surge and a smaller FSH surge” sits beside the dashed ovarian feedback arrows, but neither pituitary output shows a surge.",
+     "why_wrong": "The diagram names the surges without showing increased LH and FSH release toward the ovary, so the causal sequence is incomplete.",
+     "severity": "misleading"
+    }
+   ],
+   "overall": 3
+  }
+ },
+ "passed": true
+}

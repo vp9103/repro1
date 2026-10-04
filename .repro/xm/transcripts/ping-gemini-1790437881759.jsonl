@@ -1,0 +1,7 @@
+{"type": "turn.started", "provider": "gemini", "model": "gemini-3.5-flash", "format": "json_schema", "images": 0, "prompt_sha": "3d42a846fa"}
+{"type": "error", "model": "gemini-3.5-flash", "error": "gemini-3.5-flash json_schema: HTTP 503 [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]"}
+{"type": "turn.started", "provider": "gemini", "model": "gemini-3.5-flash", "format": "json_schema", "images": 0, "prompt_sha": "3d42a846fa"}
+{"type": "error", "model": "gemini-3.5-flash", "error": "gemini-3.5-flash json_schema: HTTP 503 [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]"}
+{"type": "turn.started", "provider": "gemini", "model": "gemini-3.5-flash", "format": "json_schema", "images": 0, "prompt_sha": "3d42a846fa"}
+{"type": "item.completed", "model": "gemini-3.5-flash", "usage": {"completion_tokens": 6, "prompt_tokens": 13, "total_tokens": 230}}
+{"type": "turn.completed", "provider": "gemini", "model": "gemini-3.5-flash"}

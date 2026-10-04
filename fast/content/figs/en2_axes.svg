@@ -1,0 +1,117 @@
+<svg class="dia" viewBox="0 0 900 600" role="img" aria-label="The five anterior pituitary axes, each drawn from hypothalamic signal to pituitary cell to hormone to target, with acidophils and basophils marked, and the posterior pituitary pathway from the supraoptic and paraventricular nuclei down axons to Herring bodies">
+<text class="ttl" x="14" y="24" font-size="17">Hypothalamic signal, pituitary cell, target: the five anterior axes</text>
+<text class="b" x="24" y="58" font-size="14">Hypothalamus</text>
+<text class="b" x="264" y="58" font-size="14">Anterior pituitary cell</text>
+<text class="b" x="512" y="58" font-size="14">Hormone</text>
+<text class="b" x="672" y="58" font-size="14">Target and product</text>
+<text class="s" x="24" y="80" font-size="13">releasing hormones reach the lobe in portal blood</text>
+<text x="512" y="80" font-size="13">anterior lobe grows from Rathke pouch</text>
+<rect x="14" y="96" width="200" height="52" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="26" y="118" font-size="14">TRH</text>
+<text x="26" y="138" font-size="13">stimulates</text>
+<rect x="252" y="96" width="210" height="52" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text class="b" x="264" y="118" font-size="14">Thyrotroph</text>
+<text x="264" y="138" font-size="13">basophil</text>
+<rect x="500" y="96" width="130" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="512" y="127" font-size="14">TSH</text>
+<rect x="660" y="96" width="226" height="52" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="672" y="118" font-size="14">Thyroid</text>
+<text x="672" y="138" font-size="13">T4 and T3</text>
+<rect x="14" y="158" width="200" height="52" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="26" y="180" font-size="14">CRH</text>
+<text x="26" y="200" font-size="13">stimulates</text>
+<rect x="252" y="158" width="210" height="52" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text class="b" x="264" y="180" font-size="14">Corticotroph</text>
+<text x="264" y="200" font-size="13">basophil</text>
+<rect x="500" y="158" width="130" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="512" y="180" font-size="14">ACTH</text>
+<text x="512" y="200" font-size="13">cut from POMC</text>
+<rect x="660" y="158" width="226" height="52" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="672" y="180" font-size="14">Adrenal cortex</text>
+<text x="672" y="200" font-size="13">cortisol</text>
+<rect x="14" y="220" width="200" height="52" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="26" y="242" font-size="14">GnRH</text>
+<text x="26" y="262" font-size="13">in pulses</text>
+<rect x="252" y="220" width="210" height="52" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text class="b" x="264" y="242" font-size="14">Gonadotroph</text>
+<text x="264" y="262" font-size="13">basophil</text>
+<rect x="500" y="220" width="130" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="512" y="251" font-size="14">LH and FSH</text>
+<rect x="660" y="220" width="226" height="52" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="672" y="242" font-size="14">Ovary or testis</text>
+<text x="672" y="262" font-size="13">sex steroids, gametes</text>
+<rect x="14" y="282" width="200" height="52" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="26" y="304" font-size="14">GHRH stimulates</text>
+<text x="26" y="324" font-size="13">somatostatin inhibits</text>
+<rect x="252" y="282" width="210" height="52" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.2"/>
+<text class="b" x="264" y="304" font-size="14">Somatotroph</text>
+<text x="264" y="324" font-size="13">acidophil, most numerous</text>
+<rect x="500" y="282" width="130" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="512" y="313" font-size="14">GH</text>
+<rect x="660" y="282" width="226" height="52" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="672" y="304" font-size="14">Liver and tissues</text>
+<text x="672" y="324" font-size="13">IGF-1 drives growth</text>
+<rect x="14" y="344" width="200" height="52" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="26" y="366" font-size="14">Dopamine inhibits</text>
+<text x="26" y="386" font-size="13">TRH stimulates</text>
+<rect x="252" y="344" width="210" height="52" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.2"/>
+<text class="b" x="264" y="366" font-size="14">Lactotroph</text>
+<text x="264" y="386" font-size="13">acidophil</text>
+<rect x="500" y="344" width="130" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="512" y="375" font-size="14">Prolactin</text>
+<rect x="660" y="344" width="226" height="52" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="672" y="366" font-size="14">Breast</text>
+<text x="672" y="386" font-size="13">milk production</text>
+<line x1="214" y1="122" x2="242" y2="122" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="242,117 250,122 242,127" fill="var(--ink-2)"/>
+<line x1="462" y1="122" x2="490" y2="122" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="490,117 498,122 490,127" fill="var(--ink-2)"/>
+<line x1="630" y1="122" x2="650" y2="122" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="650,117 658,122 650,127" fill="var(--ink-2)"/>
+<line x1="214" y1="184" x2="242" y2="184" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="242,179 250,184 242,189" fill="var(--ink-2)"/>
+<line x1="462" y1="184" x2="490" y2="184" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="490,179 498,184 490,189" fill="var(--ink-2)"/>
+<line x1="630" y1="184" x2="650" y2="184" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="650,179 658,184 650,189" fill="var(--ink-2)"/>
+<line x1="214" y1="246" x2="242" y2="246" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="242,241 250,246 242,251" fill="var(--ink-2)"/>
+<line x1="462" y1="246" x2="490" y2="246" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="490,241 498,246 490,251" fill="var(--ink-2)"/>
+<line x1="630" y1="246" x2="650" y2="246" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="650,241 658,246 650,251" fill="var(--ink-2)"/>
+<line x1="214" y1="308" x2="242" y2="308" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="242,303 250,308 242,313" fill="var(--ink-2)"/>
+<line x1="462" y1="308" x2="490" y2="308" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="490,303 498,308 490,313" fill="var(--ink-2)"/>
+<line x1="630" y1="308" x2="650" y2="308" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="650,303 658,308 650,313" fill="var(--ink-2)"/>
+<line x1="214" y1="370" x2="242" y2="370" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="242,365 250,370 242,375" fill="var(--ink-2)"/>
+<line x1="462" y1="370" x2="490" y2="370" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="490,365 498,370 490,375" fill="var(--ink-2)"/>
+<line x1="630" y1="370" x2="650" y2="370" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="650,365 658,370 650,375" fill="var(--ink-2)"/>
+<rect x="14" y="414" width="872" height="170" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="440" font-size="14">Posterior pituitary (neuroectoderm): hormones made in the hypothalamus travel down axons</text>
+<rect x="28" y="456" width="300" height="50" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text class="b" x="40" y="477" font-size="14">Supraoptic nucleus</text>
+<text x="40" y="496" font-size="13">mainly ADH (vasopressin)</text>
+<rect x="28" y="518" width="300" height="50" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text class="b" x="40" y="539" font-size="14">Paraventricular nucleus</text>
+<text x="40" y="558" font-size="13">mainly oxytocin</text>
+<line x1="328" y1="481" x2="358" y2="500" stroke="var(--ink-2)" stroke-width="2"/>
+<line x1="328" y1="543" x2="358" y2="524" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="356,506 366,512 356,518" fill="var(--ink-2)"/>
+<rect x="368" y="456" width="220" height="112" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="380" y="480" font-size="14">Axons in the stalk</text>
+<text x="380" y="502" font-size="13">carry hormone bound</text>
+<text x="380" y="522" font-size="13">to neurophysin</text>
+<line x1="588" y1="512" x2="610" y2="512" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="610,507 618,512 610,517" fill="var(--ink-2)"/>
+<rect x="620" y="456" width="252" height="112" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.2"/>
+<text class="b" x="632" y="480" font-size="14">Posterior lobe</text>
+<text x="632" y="502" font-size="13">Herring bodies store it;</text>
+<text x="632" y="522" font-size="13">pituicytes support axons;</text>
+<text x="632" y="542" font-size="13">release into systemic blood</text>
+</svg>

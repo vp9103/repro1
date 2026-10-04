@@ -1,0 +1,73 @@
+<svg class="dia" viewBox="0 0 900 520" role="img" aria-label="Left: a coronal view of the sella with the optic chiasm above the pituitary, the sphenoid sinus below, and the cavernous sinus on each side holding the internal carotid artery and cranial nerves III, IV, V1, V2 and VI. Right: crossing nasal retina fibers in the chiasm explain bitemporal hemianopia when a mass presses from below">
+<text class="ttl" x="14" y="24" font-size="17">What surrounds the sella, and why a mass from below takes both temporal fields</text>
+<rect x="14" y="44" width="546" height="462" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="70" font-size="15">Coronal view through the sella</text>
+<rect x="190" y="112" width="120" height="18" rx="9" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="28" y="126" font-size="14">Optic chiasm</text>
+<line x1="130" y1="121" x2="186" y2="121" stroke="var(--ink-3)" stroke-width="1.2"/>
+<rect x="242" y="130" width="16" height="78" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="266" y="172" font-size="13">stalk</text>
+<line x1="222" y1="204" x2="222" y2="142" stroke="var(--crit)" stroke-width="2.5"/>
+<polygon points="216,144 222,134 228,144" fill="var(--crit)"/>
+<text class="cr" x="96" y="176" font-size="13">upward growth</text>
+<ellipse cx="250" cy="250" rx="66" ry="42" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.8"/>
+<text class="b" x="250" y="255" font-size="14" text-anchor="middle">Pituitary</text>
+<path d="M178 236 C 178 318, 322 318, 322 236" fill="none" stroke="var(--ink-3)" stroke-width="3"/>
+<rect x="170" y="326" width="160" height="66" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text x="250" y="364" font-size="14" text-anchor="middle">Sphenoid sinus</text>
+<rect x="66" y="206" width="100" height="96" rx="18" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="140" cy="262" r="15" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<circle cx="108" cy="276" r="6" fill="var(--warn)"/>
+<circle cx="78" cy="222" r="5" fill="var(--warn)"/>
+<circle cx="78" cy="240" r="5" fill="var(--warn)"/>
+<circle cx="78" cy="258" r="5" fill="var(--warn)"/>
+<circle cx="78" cy="276" r="5" fill="var(--warn)"/>
+<text x="116" y="322" font-size="13" text-anchor="middle">Cavernous sinus</text>
+<rect x="334" y="206" width="100" height="96" rx="18" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="360" cy="262" r="15" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<circle cx="392" cy="276" r="6" fill="var(--warn)"/>
+<circle cx="422" cy="222" r="5" fill="var(--warn)"/>
+<circle cx="422" cy="240" r="5" fill="var(--warn)"/>
+<circle cx="422" cy="258" r="5" fill="var(--warn)"/>
+<circle cx="422" cy="276" r="5" fill="var(--warn)"/>
+<line x1="428" y1="222" x2="466" y2="222" stroke="var(--ink-3)" stroke-width="1"/>
+<line x1="428" y1="240" x2="466" y2="240" stroke="var(--ink-3)" stroke-width="1"/>
+<line x1="428" y1="258" x2="466" y2="258" stroke="var(--ink-3)" stroke-width="1"/>
+<line x1="428" y1="276" x2="466" y2="276" stroke="var(--ink-3)" stroke-width="1"/>
+<line x1="397" y1="280" x2="466" y2="296" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="472" y="226" font-size="13">CN III</text>
+<text x="472" y="244" font-size="13">CN IV</text>
+<text x="472" y="262" font-size="13">CN V1</text>
+<text x="472" y="280" font-size="13">CN V2</text>
+<text x="472" y="300" font-size="13">CN VI</text>
+<line x1="360" y1="277" x2="360" y2="312" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="344" y="326" font-size="13">Internal carotid artery</text>
+<text class="s" x="28" y="430" font-size="13">Lateral wall: CN III, IV, V1, V2. Free in the sinus: CN VI</text>
+<text class="s" x="28" y="452" font-size="13">beside the carotid. Sideways growth gives diplopia,</text>
+<text class="s" x="28" y="474" font-size="13">ophthalmoplegia and facial numbness.</text>
+<rect x="574" y="44" width="312" height="462" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="588" y="70" font-size="15">Why the temporal fields go</text>
+<circle cx="660" cy="108" r="26" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="1.5"/>
+<circle cx="800" cy="108" r="26" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="1.5"/>
+<path d="M660 82 A 26 26 0 0 0 660 134 Z" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<path d="M800 82 A 26 26 0 0 1 800 134 Z" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="cr" x="730" y="162" font-size="14" text-anchor="middle">bitemporal hemianopia</text>
+<ellipse cx="660" cy="196" rx="24" ry="14" fill="var(--surface-2)" stroke="var(--ink-2)" stroke-width="1.5"/>
+<ellipse cx="800" cy="196" rx="24" ry="14" fill="var(--surface-2)" stroke="var(--ink-2)" stroke-width="1.5"/>
+<polyline points="648,210 700,300 700,420" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<polyline points="812,210 760,300 760,420" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<polyline points="672,210 730,300 760,330 760,420" fill="none" stroke="var(--a1)" stroke-width="2.5"/>
+<polyline points="788,210 730,300 700,330 700,420" fill="none" stroke="var(--a1)" stroke-width="2.5"/>
+<rect x="690" y="288" width="80" height="24" rx="10" fill="none" stroke="var(--a1)" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text class="b" x="588" y="305" font-size="14">Chiasm</text>
+<line x1="646" y1="300" x2="686" y2="300" stroke="var(--ink-3)" stroke-width="1"/>
+<circle cx="730" cy="352" r="16" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.8"/>
+<text class="cr" x="588" y="360" font-size="13">mass from</text>
+<text class="cr" x="588" y="378" font-size="13">below</text>
+<line x1="652" y1="362" x2="712" y2="356" stroke="var(--crit)" stroke-width="1"/>
+<text x="770" y="410" font-size="13">optic tracts</text>
+<line x1="592" y1="446" x2="616" y2="446" stroke="var(--a1)" stroke-width="3"/>
+<text x="622" y="451" font-size="13">nasal retina fibers cross</text>
+<line x1="592" y1="472" x2="616" y2="472" stroke="var(--a2)" stroke-width="3"/>
+<text x="622" y="477" font-size="13">temporal fibers stay uncrossed</text>
+</svg>

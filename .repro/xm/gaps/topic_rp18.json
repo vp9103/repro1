@@ -1,0 +1,209 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp18",
+ "hash": "4975d6a9acbf",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:12:38",
+ "gaps": [
+  {
+   "gid": "GAP-rp18-01",
+   "concept": "Congenital toxoplasmosis is most severe after early gestational infection, although fetal transmission becomes more likely later in pregnancy.",
+   "why_tested": "A stem gives the gestational timing of maternal infection and asks about fetal risk or severity.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp18-02",
+   "concept": "Maternal toxoplasmosis without established fetal infection is treated with spiramycin; confirmed fetal infection uses pyrimethamine, sulfadiazine, and leucovorin.",
+   "why_tested": "A stem asks which drug regimen reduces transmission or treats an infected fetus.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp18-03",
+   "concept": "Interstitial keratitis completes the late congenital syphilis triad with Hutchinson teeth and sensorineural deafness.",
+   "why_tested": "A child has dental abnormalities and hearing loss, and the question asks for another expected finding.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-04",
+   "concept": "Congenital syphilis causes long-bone osteochondritis or periostitis, producing painful pseudoparalysis.",
+   "why_tested": "A neonate with maternal syphilis does not move an extremity and has abnormal long-bone radiographs.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-05",
+   "concept": "Penicillin G is the only reliably effective treatment for fetal syphilis; penicillin-allergic pregnant patients require desensitization.",
+   "why_tested": "A penicillin-allergic pregnant patient has syphilis, and the stem asks how to prevent congenital infection.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-06",
+   "concept": "A neonatal nontreponemal syphilis titer at least fourfold higher than the maternal titer strongly supports congenital infection.",
+   "why_tested": "Maternal and infant RPR titers are provided, and the question asks whether infant seroreactivity reflects infection.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp18-07",
+   "concept": "Maternal rubella infection in the first trimester carries the greatest risk of congenital anomalies.",
+   "why_tested": "A pregnant patient develops rubella at a specified gestational age, and the stem asks about fetal risk.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-08",
+   "concept": "Congenital CMV may cause petechiae, thrombocytopenia, jaundice, and hepatosplenomegaly.",
+   "why_tested": "A newborn has hearing loss plus a petechial rash or low platelet count, distinguishing CMV from other congenital infections.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-09",
+   "concept": "Congenital CMV is confirmed by saliva PCR with urine confirmation within three weeks of birth; infant antibody tests cannot establish it.",
+   "why_tested": "A newborn fails hearing screening, and the question asks which test distinguishes congenital from postnatal CMV.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-10",
+   "concept": "Symptomatic congenital CMV may be treated with ganciclovir or valganciclovir, which can cause neutropenia.",
+   "why_tested": "A symptomatic CMV-infected newborn receives antiviral therapy, and the stem asks for the drug or adverse effect.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp18-11",
+   "concept": "New maternal genital HSV infection near delivery has much greater neonatal transmission risk than recurrent HSV because protective maternal antibodies are absent.",
+   "why_tested": "A stem contrasts first-episode and recurrent maternal HSV at delivery.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-12",
+   "concept": "Suspected neonatal HSV is evaluated with HSV PCR and treated with intravenous acyclovir, including CNS or disseminated disease.",
+   "why_tested": "A newborn develops vesicles, seizures, or sepsis after maternal genital HSV exposure.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-13",
+   "concept": "Maternal parvovirus B19 infection may present with slapped-cheek rash, lacy rash, or arthralgia after exposure to an infected child.",
+   "why_tested": "A pregnant teacher has rash or joint pain before fetal anemia or hydrops is detected.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp18-14",
+   "concept": "Maternal varicella rash from five days before through two days after delivery risks severe neonatal varicella because protective IgG has not transferred.",
+   "why_tested": "A mother develops chickenpox immediately around delivery, and the stem asks why her newborn is at high risk.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-15",
+   "concept": "Neonatal listeriosis can produce granulomatosis infantiseptica; Listeria is a motile, intracellular gram-positive rod.",
+   "why_tested": "A febrile pregnant patient delivers a septic neonate with disseminated granulomas or characteristic bacterial motility.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-16",
+   "concept": "GBS is Streptococcus agalactiae: a beta-hemolytic, CAMP-positive, bacitracin-resistant gram-positive coccus.",
+   "why_tested": "A neonatal sepsis isolate is described by culture reactions rather than named directly.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-17",
+   "concept": "GBS bacteriuria in the current pregnancy or a previous infant with invasive GBS disease independently indicates intrapartum prophylaxis.",
+   "why_tested": "A laboring patient has no current rectovaginal culture result but has one of these histories.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-18",
+   "concept": "Prolonged membrane rupture, prematurity, and intrapartum fever increase early-onset neonatal GBS risk; prophylaxis does not prevent late-onset disease.",
+   "why_tested": "A stem asks whether intrapartum antibiotics prevent disease in a newborn presenting weeks after birth.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp18-19",
+   "concept": "Maternal HBeAg indicates high HBV replication and increased perinatal transmission risk.",
+   "why_tested": "A pregnant HBsAg-positive patient has additional serology, and the question asks which marker predicts infectivity.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-20",
+   "concept": "Perinatally acquired HBV has a much higher risk of chronic infection than adult-acquired HBV.",
+   "why_tested": "A stem asks why immediate newborn HBV immunoprophylaxis matters despite an asymptomatic infant.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp18-21",
+   "concept": "Hepatitis C has no vaccine or effective immune-globulin prophylaxis for exposed newborns.",
+   "why_tested": "A newborn of an HCV-positive mother is compared with one exposed to HBV.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-22",
+   "concept": "Maternal antiretroviral therapy and viral suppression markedly reduce perinatal HIV transmission; HIV-exposed newborns receive antiretroviral prophylaxis.",
+   "why_tested": "A pregnant patient has HIV, and the stem asks how maternal viremia or infant prophylaxis affects transmission.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-23",
+   "concept": "HIV-exposed infants require HIV nucleic-acid testing; transplacental maternal IgG makes antibody tests unreliable before 18 months.",
+   "why_tested": "An infant of a mother with HIV has a positive antibody test, and the stem asks how to establish infection.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-24",
+   "concept": "HIV can transmit before birth, during delivery, or through breast milk; maternal viral load strongly affects transmission risk.",
+   "why_tested": "A question asks for a transmission route or interprets risk from maternal viral suppression.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-25",
+   "concept": "Congenital Zika can cause cortical thinning, subcortical calcifications, and arthrogryposis.",
+   "why_tested": "A microcephalic infant has neuroimaging findings that distinguish Zika from periventricular CMV or diffuse toxoplasmosis.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-26",
+   "concept": "Zika is transmitted by Aedes mosquitoes and can also spread sexually to a pregnant partner.",
+   "why_tested": "A pregnant patient has no travel history but has a partner who recently returned from an affected region.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp18-27",
+   "concept": "Erythromycin eye ointment prevents gonococcal ophthalmia but not chlamydial ophthalmia; established gonococcal infection requires systemic ceftriaxone.",
+   "why_tested": "A newborn develops purulent conjunctivitis despite eye prophylaxis, or the stem asks which infection prophylaxis prevents.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-28",
+   "concept": "Gonococcal ophthalmia may show intracellular gram-negative diplococci and can cause corneal perforation or blindness.",
+   "why_tested": "A rapidly progressive neonatal eye infection includes a conjunctival Gram stain or asks about its complication.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-29",
+   "concept": "Neonatal chlamydial infection can cause afebrile pneumonia at one to three months with staccato cough, hyperinflation, and eosinophilia.",
+   "why_tested": "An infant with maternal chlamydia exposure develops cough weeks after conjunctivitis.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-30",
+   "concept": "Neonatal chlamydial conjunctivitis requires systemic macrolide treatment; topical eye ointment alone is inadequate.",
+   "why_tested": "A newborn has chlamydial ophthalmia, and the question asks why topical prophylaxis or treatment is insufficient.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp18-31",
+   "concept": "HPV types 6 and 11 can cause juvenile recurrent respiratory papillomatosis after perinatal exposure.",
+   "why_tested": "A child develops recurrent hoarseness or laryngeal papillomas after maternal genital warts.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp18-32",
+   "concept": "Escherichia coli bearing the K1 capsule is another major cause of early neonatal sepsis and meningitis.",
+   "why_tested": "A septic neonate has gram-negative rods in blood or cerebrospinal fluid rather than GBS or Listeria.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp18-33",
+   "concept": "Ascending polymicrobial intra-amniotic infection presents with maternal fever, uterine tenderness, fetal tachycardia, and sometimes foul-smelling amniotic fluid.",
+   "why_tested": "A laboring patient has prolonged membrane rupture and signs of infection, and the question asks for the diagnosis.",
+   "yield": "hi"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp18-1790442599893.jsonl"
+}

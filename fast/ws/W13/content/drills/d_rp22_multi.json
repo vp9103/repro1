@@ -1,0 +1,101 @@
+{
+ "id": "d_rp22_multi",
+ "c": "rp22",
+ "kind": "multi",
+ "t": "Where has the male axis failed?",
+ "tags": [
+  "feedback-logic",
+  "workup-sequence"
+ ],
+ "key": "Ask where the failure sits and what LH and FSH are doing: a failing testis raises them, a failing pituitary or hypothalamus leaves them low, a blocked duct leaves everything normal, and an outside androgen suppresses them.",
+ "cols": [
+  {
+   "id": "prim",
+   "l": "Primary hypogonadism"
+  },
+  {
+   "id": "sec",
+   "l": "Secondary hypogonadism"
+  },
+  {
+   "id": "obs",
+   "l": "Obstructive azoospermia"
+  },
+  {
+   "id": "exo",
+   "l": "Exogenous androgen effect"
+  }
+ ],
+ "items": [
+  [
+   "Klinefelter syndrome",
+   "prim",
+   "Tubular dysgenesis with Leydig failure leaves testosterone low, so feedback is lost and LH and FSH are high."
+  ],
+  [
+   "Mumps orchitis after puberty",
+   "prim",
+   "Inflammation inside the tight tunica destroys tubules, so LH and FSH rise."
+  ],
+  [
+   "Alkylating chemotherapy",
+   "prim",
+   "Cytotoxic drugs kill germ cells and often Leydig cells, producing a high FSH."
+  ],
+  [
+   "Bilateral cryptorchidism",
+   "prim",
+   "Heat damages germ cells, so tubule failure raises FSH and the testes are small."
+  ],
+  [
+   "Kallmann syndrome with anosmia",
+   "sec",
+   "GnRH neurons fail to migrate with the olfactory placode, so LH and FSH are low."
+  ],
+  [
+   "Prolactinoma",
+   "sec",
+   "Prolactin suppresses GnRH pulses, giving low LH, FSH and testosterone."
+  ],
+  [
+   "Chronic opioid use",
+   "sec",
+   "Opioids suppress GnRH release centrally, causing opioid-induced androgen deficiency."
+  ],
+  [
+   "Hemochromatosis",
+   "sec",
+   "Iron deposition in the pituitary lowers gonadotropins, so testosterone falls with low LH and FSH."
+  ],
+  [
+   "Vasectomy",
+   "obs",
+   "The vas is cut, so sperm cannot enter the ejaculate, but testis size and FSH stay normal."
+  ],
+  [
+   "Congenital absence of the vas deferens",
+   "obs",
+   "CFTR mutations cause CBAVD with low-volume, fructose-negative semen and a normal FSH."
+  ],
+  [
+   "Ejaculatory duct obstruction",
+   "obs",
+   "A blocked duct stops seminal vesicle fluid, so volume is low and fructose is absent."
+  ],
+  [
+   "Testosterone injections for bodybuilding",
+   "exo",
+   "Negative feedback shuts off LH and FSH, so the testes shrink and sperm vanish."
+  ],
+  [
+   "Anabolic steroid use",
+   "exo",
+   "Synthetic androgens suppress gonadotropins in the same way, giving atrophy and azoospermia."
+  ],
+  [
+   "Testosterone gel in a man wanting children",
+   "exo",
+   "Even topical testosterone suppresses LH and FSH and lowers intratesticular testosterone."
+  ]
+ ]
+}

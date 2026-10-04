@@ -1,0 +1,34 @@
+[
+ {
+  "id": "p0",
+  "kind": "diag",
+  "mins": 5,
+  "t": "Five-minute triage",
+  "d": "One quick recall item per topic before you study anything, so the plan knows where to start."
+ },
+ {
+  "id": "s1",
+  "kind": "unit",
+  "topics": [
+   "en5"
+  ],
+  "t": "Stage 1: Thyroid",
+  "d": "How the follicle builds thyroid hormone and how to read TSH and free T4 together."
+ },
+ {
+  "id": "s2",
+  "kind": "unit",
+  "topics": [
+   "rp8"
+  ],
+  "t": "Stage 2: The cycle",
+  "d": "The two phases of the ovarian cycle and why only one of them changes length."
+ },
+ {
+  "id": "pf",
+  "kind": "final",
+  "mins": 15,
+  "t": "Final check",
+  "d": "A mixed set across both topics, weighted toward what you have missed so far."
+ }
+]

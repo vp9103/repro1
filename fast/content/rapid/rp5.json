@@ -1,0 +1,463 @@
+[
+ {
+  "id": "rp5r01",
+  "tags": [
+   "sex-development-signals"
+  ],
+  "bp": [
+   "BP-rp5-01"
+  ],
+  "q": "Which Y-chromosome gene starts testis development?",
+  "o": [
+   "SRY",
+   "SOX9",
+   "DAX1",
+   "WNT4",
+   "Androgen receptor gene"
+  ],
+  "a": 0,
+  "x": "SRY, the sex-determining region on the short arm of the Y chromosome, encodes testis-determining factor, which switches on SOX9 and makes the supporting cells of the indifferent gonad become Sertoli cells.",
+  "w": {
+   "SOX9": "SOX9 is the autosomal gene on chromosome 17 that SRY switches on; it carries out testis formation but sits downstream, not on the Y.",
+   "DAX1": "DAX1 lies on the X chromosome and opposes testis formation when duplicated; it is an antagonist of the male pathway, not its trigger.",
+   "WNT4": "WNT4 is an autosomal gene that promotes ovarian development and Müllerian duct formation, pushing the gonad toward the female path.",
+   "Androgen receptor gene": "The androgen receptor gene is on the X chromosome and acts after the testis exists, when target tissues respond to testosterone and DHT."
+  },
+  "media": "fig:rp5_ducts",
+  "pt": {
+   "hl": [
+    "SRY → testis-determining factor"
+   ],
+   "say": "The first line of the male column reads SRY → testis-determining factor, the step that starts testis development."
+  }
+ },
+ {
+  "id": "rp5r02",
+  "tags": [
+   "cell-of-origin",
+   "sex-development-signals"
+  ],
+  "bp": [
+   "BP-rp5-01"
+  ],
+  "q": "Which fetal testis cells secrete anti-Müllerian hormone?",
+  "o": [
+   "Sertoli cells",
+   "Leydig cells",
+   "Spermatogonia",
+   "Peritubular myoid cells",
+   "Rete testis epithelium"
+  ],
+  "a": 0,
+  "x": "Sertoli cells, the first cells SRY creates, secrete anti-Müllerian hormone from about week 8, making the Müllerian duct on the same side regress; they also nurse germ cells inside the seminiferous cords.",
+  "w": {
+   "Leydig cells": "Leydig cells in the interstitium secrete testosterone under hCG stimulation, which keeps the Wolffian ducts but does not remove the Müllerian ducts.",
+   "Spermatogonia": "Spermatogonia come from primordial germ cells that migrated from the yolk sac; they are gametes in waiting and secrete no duct hormone.",
+   "Peritubular myoid cells": "Peritubular myoid cells are contractile cells around the seminiferous cords that help move fluid and sperm; they make no AMH.",
+   "Rete testis epithelium": "The rete testis is a channel network linking the seminiferous tubules to the efferent ductules; its lining secretes no hormone that shapes ducts."
+  },
+  "media": "fig:rp5_ducts",
+  "pt": {
+   "hl": [
+    "Sertoli cells → AMH"
+   ],
+   "say": "The Sertoli cells → AMH box shows the source of anti-Müllerian hormone and its effect: the Müllerian ducts regress."
+  }
+ },
+ {
+  "id": "rp5r03",
+  "tags": [
+   "sex-development-signals"
+  ],
+  "bp": [
+   "BP-rp5-04"
+  ],
+  "q": "Which hormone preserves the Wolffian ducts in a male fetus?",
+  "o": [
+   "Testosterone",
+   "Dihydrotestosterone",
+   "Anti-Müllerian hormone",
+   "Estradiol",
+   "Inhibin B"
+  ],
+  "a": 0,
+  "x": "Testosterone from fetal Leydig cells acts directly on the neighboring Wolffian ducts, which do not need DHT, turning them into the epididymis, vas deferens, seminal vesicle and ejaculatory duct.",
+  "w": {
+   "Dihydrotestosterone": "DHT builds the penis, scrotum and prostate; 5α-reductase deficiency leaves normal Wolffian ducts, proving that testosterone alone is enough for them.",
+   "Anti-Müllerian hormone": "AMH removes the Müllerian ducts but does nothing to maintain the Wolffian ducts, which regress without androgen even when AMH is present.",
+   "Estradiol": "Estradiol is not needed for duct development in either sex; the female ducts develop simply because AMH and testosterone are absent.",
+   "Inhibin B": "Inhibin B from Sertoli cells feeds back on pituitary FSH after birth; it has no role in maintaining fetal genital ducts."
+  },
+  "media": "fig:rp5_ducts",
+  "pt": {
+   "hl": [
+    "Leydig cells → testosterone"
+   ],
+   "say": "The Leydig cells → testosterone box shows testosterone keeping the Wolffian ducts that build the epididymis and vas deferens."
+  }
+ },
+ {
+  "id": "rp5r04",
+  "tags": [
+   "steroidogenesis-enzymes"
+  ],
+  "bp": [
+   "BP-rp5-04"
+  ],
+  "q": "Which enzyme converts testosterone to DHT in genital skin?",
+  "o": [
+   "5α-reductase",
+   "Aromatase",
+   "17β-hydroxysteroid dehydrogenase",
+   "21-hydroxylase",
+   "Desmolase"
+  ],
+  "a": 0,
+  "x": "5α-reductase (type 2) converts testosterone to the more potent DHT in the genital tubercle, folds, swellings and urogenital sinus, so its deficiency leaves a 46,XY infant undervirilized with normal Wolffian ducts.",
+  "w": {
+   "Aromatase": "Aromatase converts testosterone to estradiol and androstenedione to estrone in fat, placenta and granulosa cells, lowering rather than raising androgen potency.",
+   "17β-hydroxysteroid dehydrogenase": "17β-HSD makes testosterone from androstenedione in Leydig cells, one step before the conversion that genital skin performs.",
+   "21-hydroxylase": "21-hydroxylase is an adrenal enzyme needed for cortisol and aldosterone; its deficiency causes congenital adrenal hyperplasia.",
+   "Desmolase": "Desmolase (cholesterol side-chain cleavage) is the first step of all steroid synthesis, converting cholesterol to pregnenolone in mitochondria."
+  },
+  "media": "fig:rp5_ducts",
+  "pt": {
+   "hl": [
+    "5α-reductase → DHT"
+   ],
+   "say": "The bottom male box shows 5α-reductase → DHT, the conversion that builds the penis, scrotum and prostate."
+  }
+ },
+ {
+  "id": "rp5r05",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-02"
+  ],
+  "q": "Which embryonic duct forms the seminal vesicle?",
+  "o": [
+   "Mesonephric duct",
+   "Paramesonephric duct",
+   "Urogenital sinus",
+   "Ureteric bud",
+   "Allantois"
+  ],
+  "a": 0,
+  "x": "The seminal vesicle buds from the caudal mesonephric (Wolffian) duct, which also forms the epididymis, vas deferens and ejaculatory duct; all four depend on testosterone and are remembered as SEED.",
+  "w": {
+   "Paramesonephric duct": "The paramesonephric duct regresses in males under anti-Müllerian hormone, leaving only the appendix testis as a remnant.",
+   "Urogenital sinus": "The urogenital sinus forms the prostate, bulbourethral glands, bladder and urethra, glands that lie below the seminal vesicles.",
+   "Ureteric bud": "The ureteric bud also sprouts from the mesonephric duct but forms the ureter and collecting system rather than a genital gland.",
+   "Allantois": "The allantois becomes the urachus between the bladder and umbilicus and forms no part of the male genital tract."
+  },
+  "media": "fig:rp5_ducts",
+  "pt": {
+   "hl": [
+    "seminal vesicle"
+   ],
+   "say": "The Leydig cell box lists the Wolffian duct products, including the seminal vesicle; all come from the mesonephric duct."
+  }
+ },
+ {
+  "id": "rp5r06",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-03",
+   "BP-rp5-13"
+  ],
+  "q": "Which female structure comes from the urogenital sinus rather than the Müllerian ducts?",
+  "o": [
+   "Lower vagina",
+   "Upper vagina",
+   "Cervix",
+   "Uterine fundus",
+   "Fallopian tube"
+  ],
+  "a": 0,
+  "x": "The fused Müllerian ducts form the tubes, uterus, cervix and upper vagina, while the sinovaginal bulbs of the endodermal urogenital sinus form the lower vagina; the two meet at the vaginal plate, which canalizes.",
+  "w": {
+   "Upper vagina": "The upper vagina comes from the fused caudal ends of the Müllerian ducts, together with the cervix, above the vaginal plate.",
+   "Cervix": "The cervix forms from the fused lower Müllerian ducts, which is why cervical duplication accompanies complete fusion failure in didelphys.",
+   "Uterine fundus": "The fundus forms where the Müllerian ducts fuse highest; incomplete fusion there produces a bicornuate uterus.",
+   "Fallopian tube": "The fallopian tubes are the unfused cranial parts of the Müllerian ducts, whose funnel openings become the fimbriated infundibula."
+  }
+ },
+ {
+  "id": "rp5r07",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-02"
+  ],
+  "q": "A Gartner duct cyst is a remnant of which duct?",
+  "o": [
+   "Mesonephric duct",
+   "Paramesonephric duct",
+   "Urachus",
+   "Vitelline duct",
+   "Thyroglossal duct"
+  ],
+  "a": 0,
+  "x": "Without testosterone the mesonephric duct regresses in females, but remnants can persist along the lateral wall of the vagina and cervix and fill with fluid as a Gartner duct cyst.",
+  "w": {
+   "Paramesonephric duct": "The paramesonephric ducts do not regress in females; they form the tubes, uterus, cervix and upper vagina themselves.",
+   "Urachus": "The urachus is the allantois remnant between bladder dome and umbilicus; its cysts sit in the midline abdominal wall.",
+   "Vitelline duct": "Vitelline duct remnants produce Meckel diverticulum or umbilical cysts along the path from midgut to umbilicus.",
+   "Thyroglossal duct": "Thyroglossal duct cysts are midline neck masses that move with swallowing, left behind by the descending thyroid."
+  },
+  "media": "fig:rp5_ducts",
+  "pt": {
+   "hl": [
+    "Gartner duct cyst"
+   ],
+   "say": "In the female column the Wolffian ducts regress, with one remnant noted: a Gartner duct cyst from the mesonephric duct."
+  }
+ },
+ {
+  "id": "rp5r08",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-05"
+  ],
+  "q": "The labioscrotal swellings become which female structure?",
+  "o": [
+   "Labia majora",
+   "Labia minora",
+   "Clitoris",
+   "Vestibule",
+   "Hymen"
+  ],
+  "a": 0,
+  "x": "Without DHT the labioscrotal swellings stay separate as the labia majora; in males DHT makes them fuse in the midline into the scrotum, which is why a bifid scrotum reflects incomplete fusion.",
+  "w": {
+   "Labia minora": "The labia minora come from the urogenital folds, the homologs of the ventral penile shaft and spongy urethra.",
+   "Clitoris": "The clitoris comes from the genital tubercle, the same primordium that forms the glans and shaft of the penis.",
+   "Vestibule": "The vestibule is the space between the labia minora, derived from the urogenital sinus, into which urethra and vagina open.",
+   "Hymen": "The hymen is the membrane at the junction of the vaginal plate and urogenital sinus; failure to perforate causes hematocolpos."
+  },
+  "media": "fig:rp5_homologs",
+  "pt": {
+   "hl": [
+    "Labioscrotal swellings",
+    "Labia majora"
+   ],
+   "say": "Follow the labioscrotal swellings row to the right: in females they become the labia majora."
+  }
+ },
+ {
+  "id": "rp5r09",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-09"
+  ],
+  "q": "Failure of which embryonic fusion causes hypospadias?",
+  "o": [
+   "Urethral folds",
+   "Labioscrotal swellings",
+   "Müllerian ducts",
+   "Sinovaginal bulbs",
+   "Palatine shelves"
+  ],
+  "a": 0,
+  "x": "Under DHT the urethral folds fuse along the underside of the phallus to enclose the spongy urethra; incomplete fusion of the urethral folds leaves the opening on the ventral shaft, scrotum or perineum.",
+  "w": {
+   "Labioscrotal swellings": "Unfused labioscrotal swellings produce a bifid scrotum, which can accompany severe hypospadias but does not itself misplace the meatus.",
+   "Müllerian ducts": "Failed Müllerian fusion produces uterine anomalies such as didelphys or a bicornuate uterus, not a penile defect.",
+   "Sinovaginal bulbs": "The sinovaginal bulbs form the lower vagina from the urogenital sinus; problems there cause vaginal atresia in females.",
+   "Palatine shelves": "Unfused palatine shelves produce a cleft palate; the process looks similar but belongs to the face, not the genitalia."
+  },
+  "media": "fig:rp5_homologs",
+  "pt": {
+   "hl": [
+    "Urogenital folds"
+   ],
+   "say": "The urogenital folds row shows these folds forming the ventral shaft and spongy urethra; unfused urethral folds leave hypospadias."
+  }
+ },
+ {
+  "id": "rp5r10",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-07"
+  ],
+  "q": "Which uterine anomaly is most common and most linked to recurrent miscarriage?",
+  "o": [
+   "Septate uterus",
+   "Bicornuate uterus",
+   "Uterus didelphys",
+   "Unicornuate uterus",
+   "Arcuate uterus"
+  ],
+  "a": 0,
+  "x": "A septate uterus forms when the midline septum between the fused Müllerian ducts fails to resorb; the poorly vascularized septum is a poor implantation site, and hysteroscopic resection improves outcomes.",
+  "w": {
+   "Bicornuate uterus": "A bicornuate uterus comes from partial failure of fusion and shows a deep external fundal cleft; it carries more preterm birth than early loss.",
+   "Uterus didelphys": "Didelphys is complete fusion failure with two uteri and two cervices; it is rarer and often found with an obstructed hemivagina.",
+   "Unicornuate uterus": "A unicornuate uterus follows failure of one duct to form; it is uncommon and often accompanies renal agenesis on the missing side.",
+   "Arcuate uterus": "An arcuate uterus has only a shallow fundal indentation of the cavity and is usually considered a normal variant with little effect."
+  }
+ },
+ {
+  "id": "rp5r11",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-10"
+  ],
+  "q": "Which kidney anomaly most often accompanies a unicornuate uterus?",
+  "o": [
+   "Ipsilateral renal agenesis",
+   "Polycystic kidney disease",
+   "Horseshoe kidney",
+   "Wilms tumor",
+   "Renal artery stenosis"
+  ],
+  "a": 0,
+  "x": "The ureteric bud arises from the mesonephric duct, which also guides the Müllerian duct, so a unicornuate uterus often comes with ipsilateral renal agenesis on the side of the missing horn; image the kidneys in every Müllerian anomaly.",
+  "w": {
+   "Polycystic kidney disease": "Polycystic kidney disease is an inherited disorder of tubular cilia (PKD1, PKD2 or PKHD1) with no shared embryonic origin with the Müllerian ducts.",
+   "Horseshoe kidney": "A horseshoe kidney forms when the lower poles fuse and ascent is trapped under the inferior mesenteric artery, a separate event.",
+   "Wilms tumor": "Wilms tumor is an embryonal kidney cancer of early childhood linked to WT1 syndromes, including gonadal dysgenesis, not Müllerian defects.",
+   "Renal artery stenosis": "Renal artery stenosis comes from fibromuscular dysplasia or atherosclerosis and causes hypertension; it is acquired, not an embryonic defect."
+  }
+ },
+ {
+  "id": "rp5r12",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-06"
+  ],
+  "q": "The gubernaculum persists as which ligaments in females?",
+  "o": [
+   "Ovarian and round ligaments",
+   "Broad ligament",
+   "Cardinal ligaments",
+   "Uterosacral ligaments",
+   "Suspensory ligaments of the ovary"
+  ],
+  "a": 0,
+  "x": "The gubernaculum runs from the gonad to the labioscrotal swelling; in females the uterus interrupts it, leaving the ovarian ligament above and the round ligament below, which passes through the inguinal canal to the labia majora.",
+  "w": {
+   "Broad ligament": "The broad ligament is a double fold of peritoneum draped over the uterus and tubes, formed as the Müllerian ducts fuse.",
+   "Cardinal ligaments": "The cardinal ligaments are condensed pelvic fascia at the cervix carrying the uterine vessels; they are not gubernacular remnants.",
+   "Uterosacral ligaments": "Uterosacral ligaments are fascial bands from the cervix to the sacrum that support the uterus, formed from pelvic connective tissue.",
+   "Suspensory ligaments of the ovary": "The suspensory (infundibulopelvic) ligament carries the ovarian vessels from the pelvic wall and marks the ovary's original high position."
+  },
+  "media": "fig:rp5_homologs",
+  "pt": {
+   "hl": [
+    "Gubernaculum",
+    "Ovarian and round ligaments"
+   ],
+   "say": "In the gubernaculum row, the female side reads ovarian and round ligaments; the male side anchors the testis in the scrotum."
+  }
+ },
+ {
+  "id": "rp5r13",
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp5-12"
+  ],
+  "q": "Which abdominal wall layer gives the spermatic cord its cremaster muscle?",
+  "o": [
+   "Internal oblique",
+   "External oblique aponeurosis",
+   "Transversalis fascia",
+   "Parietal peritoneum",
+   "Scarpa fascia"
+  ],
+  "a": 0,
+  "x": "As the testis passes the internal oblique it carries muscle fibers that become the cremaster; contraction lifts the testis in the cremasteric reflex, and the motor supply is the genital branch of the genitofemoral nerve.",
+  "w": {
+   "External oblique aponeurosis": "The external oblique aponeurosis gives the outermost covering, the external spermatic fascia, at the superficial inguinal ring.",
+   "Transversalis fascia": "The transversalis fascia gives the innermost covering, the internal spermatic fascia, at the deep inguinal ring.",
+   "Parietal peritoneum": "The parietal peritoneum provides the processus vaginalis, whose remnant becomes the tunica vaginalis around the testis itself.",
+   "Scarpa fascia": "Scarpa fascia continues into the perineum as Colles fascia and the dartos layer of the scrotum; it does not wrap the cord."
+  }
+ },
+ {
+  "id": "rp5r14",
+  "tags": [
+   "anatomic-relations",
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-06"
+  ],
+  "obj": [
+   "BICEP-MISHIMOTO.2"
+  ],
+  "q": "Which peritoneal pouch becomes the tunica vaginalis?",
+  "o": [
+   "Processus vaginalis",
+   "Gubernaculum",
+   "Tunica albuginea",
+   "Dartos fascia",
+   "Rectovesical pouch"
+  ],
+  "a": 0,
+  "x": "The processus vaginalis is an outpouching of peritoneum that precedes the testis through the inguinal canal; its distal part stays as the tunica vaginalis, and a patent proximal part allows indirect hernias and communicating hydroceles.",
+  "w": {
+   "Gubernaculum": "The gubernaculum is the solid mesenchymal cord that guides the testis downward; it becomes a scrotal ligament, not a serous sac.",
+   "Tunica albuginea": "The tunica albuginea is the dense fibrous capsule of the testis itself, formed from gonadal mesenchyme beneath the tunica vaginalis.",
+   "Dartos fascia": "The dartos is smooth muscle in the scrotal subcutaneous tissue that wrinkles the skin for temperature control; it is not peritoneum.",
+   "Rectovesical pouch": "The rectovesical pouch is the lowest peritoneal recess in the male pelvis, between bladder and rectum, far from the scrotum."
+  },
+  "media": "fig:rp5_homologs",
+  "pt": {
+   "hl": [
+    "Processus vaginalis",
+    "Tunica vaginalis"
+   ],
+   "say": "The last row of the figure shows the processus vaginalis becoming the tunica vaginalis in males."
+  }
+ },
+ {
+  "id": "rp5r15",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp5-11"
+  ],
+  "q": "Where do primordial germ cells arise before migrating to the gonad?",
+  "o": [
+   "Wall of the yolk sac",
+   "Genital ridge",
+   "Mesonephric duct",
+   "Neural crest",
+   "Primitive streak"
+  ],
+  "a": 0,
+  "x": "Primordial germ cells arise in the wall of the yolk sac near the allantois and migrate along the dorsal mesentery to the genital ridge during weeks 4 to 6; without them the gonad fails to develop normally.",
+  "w": {
+   "Genital ridge": "The genital ridge is the destination, a strip of intermediate mesoderm beside the mesonephros that provides the supporting cells, not the germ cells.",
+   "Mesonephric duct": "The mesonephric duct drains the embryonic kidney and becomes the male genital ducts; it lies lateral to the gonad and makes no gametes.",
+   "Neural crest": "Neural crest cells migrate to form ganglia, melanocytes and the adrenal medulla, but gametes have a separate, earlier lineage.",
+   "Primitive streak": "The primitive streak is where epiblast cells ingress to form mesoderm and endoderm in week 3; it is not where germ cells gather."
+  },
+  "media": "fig:rp5_ducts",
+  "pt": {
+   "hl": [
+    "germ cells from the yolk sac"
+   ],
+   "say": "The top band of the figure notes germ cells from the yolk sac joining the genital ridge gonad in the indifferent stage."
+  }
+ }
+]

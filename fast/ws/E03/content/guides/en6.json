@@ -1,0 +1,20 @@
+{
+ "vis": [
+  "Thyrotoxicosis sorting map",
+  [
+   "Uptake high",
+   "The gland is making new hormone."
+  ],
+  [
+   "Uptake low",
+   "Hormone is leaking or comes from outside."
+  ],
+  [
+   "Treat",
+   "Beta-blocker for all; thionamides only for synthesis."
+  ]
+ ],
+ "media": {
+  "fig": "en6_uptake"
+ }
+}

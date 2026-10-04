@@ -1,0 +1,816 @@
+[
+ {
+  "id": "rp4q01",
+  "d": 1,
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp4-05"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.1"
+  ],
+  "s": "A 27-year-old woman comes for her first prenatal visit. The first day of her last menstrual period was exactly 10 weeks ago, her cycles are regular at 28 days, and the crown-rump length on ultrasound matches her dates. A medical student is asked how long ago conception most likely occurred.",
+  "l": "Which embryonic (fertilization) age best fits this pregnancy?",
+  "o": [
+   "8 weeks",
+   "6 weeks",
+   "10 weeks",
+   "12 weeks",
+   "9 weeks"
+  ],
+  "a": 0,
+  "e": "Gestational age is counted from the last menstrual period, while fertilization happens about 2 weeks later, near ovulation in a 28-day cycle. Her gestational age is 10 weeks, so her embryonic age is **8 weeks**. Choosing 10 weeks confuses the two clocks, and 12 weeks adds the 2 weeks instead of subtracting them. Nine weeks and 6 weeks do not match the fixed 2-week offset that a regular 28-day cycle produces.",
+  "w": {
+   "6 weeks": "Six weeks subtracts 4 weeks from the menstrual dating; the offset between gestational and embryonic age is only the 2 weeks between the period and ovulation.",
+   "10 weeks": "Ten weeks is her gestational age, counted from the first day of the last period; conception happened about 2 weeks after that date, near ovulation.",
+   "12 weeks": "Twelve weeks adds the 2-week offset instead of subtracting it; embryonic age is always the smaller number because conception follows the period.",
+   "9 weeks": "Nine weeks would fit ovulation 1 week after the period began, which does not happen in a regular 28-day cycle, where ovulation falls near day 14."
+  },
+  "et": [
+   [
+    "Option",
+    "What it would represent",
+    "Offset from the LMP"
+   ],
+   [
+    [
+     "8 weeks",
+     "Embryonic age: time since conception",
+     "2 weeks less"
+    ],
+    [
+     "6 weeks",
+     "Conception 4 weeks after the LMP",
+     "4 weeks less"
+    ],
+    [
+     "10 weeks",
+     "Gestational age from the LMP",
+     "No offset"
+    ],
+    [
+     "12 weeks",
+     "LMP dating plus 2 weeks",
+     "2 weeks more"
+    ],
+    [
+     "9 weeks",
+     "Conception 1 week after the LMP",
+     "1 week less"
+    ]
+   ]
+  ],
+  "bl": "Embryonic age equals gestational age minus 2 weeks, so 10 weeks from the LMP means 8 weeks since conception.",
+  "ef": "rp4_weeks",
+  "pt": {
+   "hl": [
+    "Gestational age from the LMP runs 2 weeks ahead"
+   ],
+   "say": "The footnote under the timeline says gestational age from the LMP runs 2 weeks ahead, so 10 weeks of gestational age is 8 weeks of embryonic age."
+  }
+ },
+ {
+  "id": "rp4q02",
+  "d": 2,
+  "tags": [
+   "meiosis-karyotype"
+  ],
+  "bp": [
+   "BP-rp4-13"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.2"
+  ],
+  "s": "A 31-year-old woman undergoing in vitro fertilization has several oocytes inseminated in the laboratory. The next morning one zygote shows three pronuclei, and genetic testing of that embryo would show a 69,XXY karyotype with two paternal chromosome sets. The embryologist explains that a normal oocyte has a mechanism that should have prevented this.",
+  "l": "Which process normally prevents this abnormality?",
+  "o": [
+   "Cortical reaction",
+   "Acrosome reaction",
+   "Capacitation",
+   "Completion of meiosis II",
+   "Compaction of the morula"
+  ],
+  "a": 0,
+  "e": "Three pronuclei with two paternal sets mean two sperm entered the oocyte, which is polyspermy. After the first sperm fuses, cortical granules release enzymes that harden the zona pellucida and inactivate its sperm receptors; this **cortical reaction** is the block to polyspermy. The acrosome reaction and capacitation help sperm reach the oocyte rather than stopping extra sperm, and completion of meiosis II forms the female pronucleus without blocking entry. Dispermic fertilization of this kind also produces the triploid karyotype of a partial mole.",
+  "w": {
+   "Acrosome reaction": "The acrosome reaction releases enzymes that let a sperm digest a path through the zona pellucida; it promotes entry, so it cannot be the block that stops a second sperm.",
+   "Capacitation": "Capacitation strips cholesterol and glycoproteins from the sperm membrane in the female tract so sperm can bind the zona; it prepares sperm and never blocks them.",
+   "Completion of meiosis II": "Sperm fusion triggers the oocyte to finish meiosis II and form the female pronucleus; this happens after entry and would not keep out an additional sperm.",
+   "Compaction of the morula": "Compaction tightens blastomere contacts around day 3, long after fertilization; the extra paternal set was already present on the first day."
+  },
+  "et": [
+   [
+    "Option",
+    "When it happens",
+    "What it does",
+    "Effect on extra sperm"
+   ],
+   [
+    [
+     "Cortical reaction",
+     "Right after sperm-oocyte fusion",
+     "Hardens the zona pellucida",
+     "Blocks them"
+    ],
+    [
+     "Acrosome reaction",
+     "When sperm reach the zona",
+     "Digests a path through the zona",
+     "Helps them enter"
+    ],
+    [
+     "Capacitation",
+     "In the female tract before contact",
+     "Readies sperm to bind the zona",
+     "Helps them enter"
+    ],
+    [
+     "Completion of meiosis II",
+     "After fusion",
+     "Forms the female pronucleus",
+     "None"
+    ],
+    [
+     "Compaction of the morula",
+     "About day 3",
+     "Tightens blastomere contacts",
+     "None; far too late"
+    ]
+   ]
+  ],
+  "bl": "The cortical reaction hardens the zona pellucida after the first sperm fuses; its failure allows polyspermy and a triploid zygote."
+ },
+ {
+  "id": "rp4q03",
+  "d": 1,
+  "tags": [
+   "cell-of-origin",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp4-01"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.4",
+   "EMBRYO-CLIN.5"
+  ],
+  "s": "A 24-year-old woman has a positive serum pregnancy test 9 days after ovulation, before her period is due. The hormone measured shares an alpha subunit with LH, FSH and TSH, and its level will roughly double every 2 days over the next few weeks.",
+  "l": "Which cells secrete the hormone detected by this test?",
+  "o": [
+   "Syncytiotrophoblast",
+   "Cytotrophoblast",
+   "Corpus luteum",
+   "Decidua basalis",
+   "Epiblast"
+  ],
+  "a": 0,
+  "e": "The test detects hCG, which the **syncytiotrophoblast** secretes once the blastocyst implants at about day 6; serum levels become detectable about a week after fertilization. hCG acts on LH receptors to keep the corpus luteum making progesterone. The cytotrophoblast is the dividing inner layer that feeds new cells into the syncytium, the corpus luteum is the hormone's target, and the decidua basalis and epiblast make no hCG.",
+  "w": {
+   "Cytotrophoblast": "The cytotrophoblast is the inner, mitotically active trophoblast layer; it supplies cells that fuse into the syncytium but is not the main hormone-secreting layer.",
+   "Corpus luteum": "The corpus luteum responds to hCG through its LH receptors and keeps secreting progesterone; it is the target of the hormone, not its source.",
+   "Decidua basalis": "The decidua basalis is transformed maternal endometrium under the implantation site; it forms the maternal side of the placenta and secretes prolactin, not hCG.",
+   "Epiblast": "The epiblast is the embryonic layer of the bilaminar disc that will produce all three germ layers; it has no endocrine role in early pregnancy."
+  },
+  "et": [
+   [
+    "Option",
+    "Location",
+    "Main role",
+    "Hormone product"
+   ],
+   [
+    [
+     "Syncytiotrophoblast",
+     "Outer trophoblast, on every villus",
+     "Invades the endometrium",
+     "hCG, hPL, later progesterone"
+    ],
+    [
+     "Cytotrophoblast",
+     "Inner trophoblast layer",
+     "Divides to renew the syncytium",
+     "Little hormone"
+    ],
+    [
+     "Corpus luteum",
+     "Ovary",
+     "Progesterone before 8 to 10 weeks",
+     "Progesterone, estradiol"
+    ],
+    [
+     "Decidua basalis",
+     "Maternal endometrium",
+     "Maternal side of the placenta",
+     "Prolactin"
+    ],
+    [
+     "Epiblast",
+     "Bilaminar disc",
+     "Source of all germ layers",
+     "None"
+    ]
+   ]
+  ],
+  "bl": "hCG comes from the syncytiotrophoblast and rescues the corpus luteum until the placenta makes enough progesterone.",
+  "ef": "rp4_weeks",
+  "pt": {
+   "hl": [
+    "Syncytiotrophoblast makes hCG"
+   ],
+   "say": "In the week 2 panel, the outer trophoblast layer is labeled: the syncytiotrophoblast makes hCG from implantation onward."
+  }
+ },
+ {
+  "id": "rp4q04",
+  "d": 2,
+  "tags": [
+   "teratogen-timing"
+  ],
+  "bp": [
+   "BP-rp4-03"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.11",
+   "EMBRYO-CLIN.2"
+  ],
+  "s": "A 29-year-old woman with regular 28-day cycles has a positive pregnancy test. Her last menstrual period began 4 weeks ago. She took a drug with known teratogenic effects for 3 days, starting about 8 days after conception, before she knew she was pregnant. She has had no bleeding, and ultrasound 4 weeks later shows a normal intrauterine pregnancy with cardiac activity.",
+  "l": "Which outcome best describes the risk from this exposure?",
+  "o": [
+   "Either early loss or normal development",
+   "Major limb malformations",
+   "Neural tube defect",
+   "Fetal growth restriction without malformation",
+   "Cardiac outflow tract defect"
+  ],
+  "a": 0,
+  "e": "The exposure fell in the second week after conception, before gastrulation, when the embryo is a small group of interchangeable cells. Injury then follows an **all-or-none** rule: enough cell loss ends the pregnancy, and lesser loss is replaced without a structural defect. Because the pregnancy continued, the expected outcome is normal development. Limb, neural tube and cardiac outflow malformations need exposure during organogenesis in weeks 3 to 8, and isolated growth restriction reflects exposure in the fetal period.",
+  "w": {
+   "Major limb malformations": "Limb buds form and pattern during weeks 4 to 8 after conception; thalidomide caused limb defects only when taken in that organogenesis window, not in week 2.",
+   "Neural tube defect": "The neural tube closes during week 4 after conception, so an injury that disrupts closure must act after gastrulation has produced the neural plate.",
+   "Fetal growth restriction without malformation": "Growth effects without malformation are the signature of exposure in the fetal period after week 8, when organs are already formed and are only growing.",
+   "Cardiac outflow tract defect": "The outflow tract septates during weeks 5 to 8 after conception; a drug taken in week 2 acts before the heart tube even exists."
+  },
+  "et": [
+   [
+    "Option",
+    "Window when it arises",
+    "Stage of the conceptus",
+    "Type of injury"
+   ],
+   [
+    [
+     "Either early loss or normal development",
+     "Weeks 1 to 2 after conception",
+     "Blastocyst and bilaminar disc",
+     "All-or-none"
+    ],
+    [
+     "Major limb malformations",
+     "Weeks 4 to 8",
+     "Limb bud patterning",
+     "Structural malformation"
+    ],
+    [
+     "Neural tube defect",
+     "Week 4",
+     "Neural plate folding",
+     "Failed closure"
+    ],
+    [
+     "Fetal growth restriction without malformation",
+     "After week 8",
+     "Fetus with formed organs",
+     "Growth and function"
+    ],
+    [
+     "Cardiac outflow tract defect",
+     "Weeks 5 to 8",
+     "Heart tube septation",
+     "Structural malformation"
+    ]
+   ]
+  ],
+  "bl": "Exposure before week 3 after conception is all-or-none: the embryo is lost or develops normally without malformation.",
+  "ef": "rp4_weeks",
+  "pt": {
+   "hl": [
+    "all-or-none"
+   ],
+   "say": "The first timeline box marks weeks 1–2 as all-or-none: an exposure this early ends in loss or in normal development."
+  }
+ },
+ {
+  "id": "rp4q05",
+  "d": 3,
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp4-04"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.3"
+  ],
+  "s": "A 3-day-old boy has not passed meconium and has a distended abdomen. A rectal suction biopsy shows no ganglion cells in the submucosal and myenteric plexuses. His pediatrician explains that the defect lies in a migratory embryonic cell population that failed to reach the distal colon.",
+  "l": "The same embryonic cell population normally gives rise to which other structure?",
+  "o": [
+   "Chromaffin cells of the adrenal medulla",
+   "Cortisol-secreting cells of the adrenal cortex",
+   "Follicular cells of the thyroid gland",
+   "Hormone-secreting cells of the anterior pituitary",
+   "Photoreceptors of the retina"
+  ],
+  "a": 0,
+  "e": "Absent enteric ganglia define Hirschsprung disease, a failure of neural crest cells to migrate to the distal colon. Neural crest also forms the **chromaffin cells of the adrenal medulla**, peripheral and autonomic ganglia, Schwann cells and melanocytes. The adrenal cortex sits around the medulla but comes from mesoderm, which is the classic trap. Thyroid follicular cells are endoderm, the anterior pituitary is surface ectoderm from Rathke pouch, and the retina is neuroectoderm from the optic cup.",
+  "w": {
+   "Cortisol-secreting cells of the adrenal cortex": "The adrenal cortex develops from mesoderm lining the coelom near the gonadal ridge; only the medulla inside it is colonized by migrating neural crest cells.",
+   "Follicular cells of the thyroid gland": "Thyroid follicular cells come from endoderm of the foregut floor, which descends from the foramen cecum of the tongue along the thyroglossal duct.",
+   "Hormone-secreting cells of the anterior pituitary": "The anterior pituitary comes from Rathke pouch, an outgrowth of the surface ectoderm of the primitive mouth, not from migrating neural crest.",
+   "Photoreceptors of the retina": "The retina is neuroectoderm, an outgrowth of the neural tube itself through the optic vesicle, rather than crest cells that leave the folding tube."
+  },
+  "et": [
+   [
+    "Option",
+    "Germ layer origin",
+    "Embryonic source",
+    "Hormone or product"
+   ],
+   [
+    [
+     "Chromaffin cells of the adrenal medulla",
+     "Neural crest",
+     "Crest cells migrating into the adrenal",
+     "Epinephrine, norepinephrine"
+    ],
+    [
+     "Cortisol-secreting cells of the adrenal cortex",
+     "Mesoderm",
+     "Coelomic epithelium near the genital ridge",
+     "Cortisol, aldosterone, androgens"
+    ],
+    [
+     "Follicular cells of the thyroid gland",
+     "Endoderm",
+     "Foregut floor at the foramen cecum",
+     "Thyroxine"
+    ],
+    [
+     "Hormone-secreting cells of the anterior pituitary",
+     "Surface ectoderm",
+     "Rathke pouch",
+     "GH, ACTH, TSH, LH, FSH, prolactin"
+    ],
+    [
+     "Photoreceptors of the retina",
+     "Neuroectoderm",
+     "Optic vesicle of the neural tube",
+     "None; light detection"
+    ]
+   ]
+  ],
+  "bl": "Hirschsprung disease is a neural crest migration failure; neural crest also forms adrenal medulla chromaffin cells, while the cortex is mesoderm."
+ },
+ {
+  "id": "rp4q06",
+  "d": 2,
+  "tags": [
+   "histology-to-diagnosis",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp4-06"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.6"
+  ],
+  "s": "A 36-year-old woman, gravida 4, para 3, delivers vaginally at 39 weeks. Her three earlier children were born by cesarean delivery, and ultrasound in this pregnancy showed a low-lying anterior placenta. After the birth the placenta does not separate, and attempts at manual removal cause heavy bleeding that requires hysterectomy. Histology shows chorionic villi lying directly on myometrium.",
+  "l": "Deficiency of which tissue layer best explains this complication?",
+  "o": [
+   "Decidua basalis",
+   "Decidua capsularis",
+   "Decidua parietalis",
+   "Chorion laeve",
+   "Amnion"
+  ],
+  "a": 0,
+  "e": "Villi resting directly on myometrium define placenta accreta. Normally the **decidua basalis**, the transformed endometrium under the implantation site, separates villi from myometrium and provides a cleavage plane for placental separation. A cesarean scar has little endometrium to decidualize, so repeated cesareans and a low anterior placenta over the scar raise the risk. The decidua capsularis and parietalis cover the rest of the sac and do not anchor villi, and the chorion laeve and amnion are fetal membranes.",
+  "w": {
+   "Decidua capsularis": "The decidua capsularis covers the side of the gestational sac facing the uterine cavity and later fuses with the parietalis; villi there regress rather than anchor the placenta.",
+   "Decidua parietalis": "The decidua parietalis lines the rest of the uterine cavity away from the implantation site; it never lies under the placenta, so it cannot explain abnormal adherence.",
+   "Chorion laeve": "The chorion laeve is the smooth fetal chorion whose villi degenerate on the capsular side; it is part of the fetal membranes, not the anchoring maternal layer.",
+   "Amnion": "The amnion is the innermost fetal membrane around the fluid; it lines the chorion and plays no part in anchoring villi to the uterine wall."
+  },
+  "et": [
+   [
+    "Option",
+    "Maternal or fetal",
+    "Position",
+    "Role at delivery"
+   ],
+   [
+    [
+     "Decidua basalis",
+     "Maternal",
+     "Under the implantation site",
+     "Cleavage plane for placental separation"
+    ],
+    [
+     "Decidua capsularis",
+     "Maternal",
+     "Over the sac, facing the cavity",
+     "Fuses with parietalis; no anchoring"
+    ],
+    [
+     "Decidua parietalis",
+     "Maternal",
+     "Rest of the uterine lining",
+     "Shed with the membranes"
+    ],
+    [
+     "Chorion laeve",
+     "Fetal",
+     "Smooth chorion of the membranes",
+     "Delivered with the membranes"
+    ],
+    [
+     "Amnion",
+     "Fetal",
+     "Innermost membrane",
+     "Delivered with the chorion"
+    ]
+   ]
+  ],
+  "bl": "Placenta accreta follows a deficient decidua basalis, often over a cesarean scar, so villi attach directly to myometrium."
+ },
+ {
+  "id": "rp4q07",
+  "d": 3,
+  "tags": [
+   "embryologic-origin",
+   "imaging-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp4-10",
+   "BP-rp4-17"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.11"
+  ],
+  "s": "A 30-year-old woman is pregnant with spontaneously conceived twins. At 20 weeks, ultrasound shows a single placenta with a thin dividing membrane that meets the placenta at a right angle. One twin is small, with a nearly empty bladder and severe oligohydramnios; the other is larger, with a distended bladder, polyhydramnios and early signs of heart failure.",
+  "l": "At what stage of development did the original embryo most likely divide?",
+  "o": [
+   "Days 4 to 8, at the blastocyst stage",
+   "Days 0 to 4, at the cleavage stage",
+   "Days 8 to 12, at the bilaminar disc stage",
+   "After day 13, during gastrulation",
+   "The twins came from two separate zygotes"
+  ],
+  "a": 0,
+  "e": "The donor twin with oligohydramnios and the recipient with polyhydramnios and heart failure show twin-twin transfusion, which needs vessel connections in a shared monochorionic placenta. A thin membrane meeting the placenta at a right angle (the T sign) confirms one chorion with two amnions. Monochorionic diamniotic twins come from a split of the inner cell mass at **days 4 to 8**, after the trophoblast formed but before the amnion. A split at days 0 to 4 gives two chorions, days 8 to 12 give one amnion, and two separate zygotes are always dichorionic.",
+  "w": {
+   "Days 0 to 4, at the cleavage stage": "A split during cleavage happens before the trophoblast forms, so each twin builds its own chorion and placenta; dichorionic twins cannot share the vessels that transfusion requires.",
+   "Days 8 to 12, at the bilaminar disc stage": "Splitting the bilaminar disc happens after the amnion forms, so the twins would share one amniotic sac with no dividing membrane at all.",
+   "After day 13, during gastrulation": "A split this late is incomplete and produces conjoined twins in one amnion, not separate twins with a dividing membrane as seen here.",
+   "The twins came from two separate zygotes": "Dizygotic twins each make their own trophoblast, so they are always dichorionic, with a thick membrane and a lambda sign; a shared chorion proves one zygote."
+  },
+  "et": [
+   [
+    "Option",
+    "Chorions",
+    "Amnions",
+    "Shared placental vessels"
+   ],
+   [
+    [
+     "Days 4 to 8, at the blastocyst stage",
+     "One",
+     "Two",
+     "Yes"
+    ],
+    [
+     "Days 0 to 4, at the cleavage stage",
+     "Two",
+     "Two",
+     "No"
+    ],
+    [
+     "Days 8 to 12, at the bilaminar disc stage",
+     "One",
+     "One",
+     "Yes, in one sac"
+    ],
+    [
+     "After day 13, during gastrulation",
+     "One",
+     "One, conjoined twins",
+     "Yes, with fused bodies"
+    ],
+    [
+     "The twins came from two separate zygotes",
+     "Two",
+     "Two",
+     "No, separate circulations"
+    ]
+   ]
+  ],
+  "bl": "Twin-twin transfusion requires one shared chorion; one chorion with two amnions means the embryo split at days 4 to 8.",
+  "ef": "rp4_twins",
+  "pt": {
+   "hl": [
+    "Split at days 4–8",
+    "twin-twin transfusion"
+   ],
+   "say": "The second column, split at days 4–8, shows one chorion around two amnions, the pattern with a shared placenta and separate sacs where twin-twin transfusion arises."
+  }
+ },
+ {
+  "id": "rp4q08",
+  "d": 2,
+  "tags": [
+   "fuel-metabolism",
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp4-07"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.5"
+  ],
+  "s": "A 31-year-old woman at 26 weeks' gestation has a 1-hour glucose challenge result of 168 mg/dL, and a follow-up 3-hour glucose tolerance test confirms gestational diabetes. Her fasting glucose before pregnancy was normal. The physician explains that a placental hormone whose level rises steadily with placental mass antagonizes insulin to keep glucose available for the fetus.",
+  "l": "Which hormone is primarily responsible for this insulin resistance?",
+  "o": [
+   "Human placental lactogen",
+   "Human chorionic gonadotropin",
+   "Estriol",
+   "Relaxin",
+   "Oxytocin"
+  ],
+  "a": 0,
+  "e": "**Human placental lactogen**, made by the syncytiotrophoblast in proportion to placental mass, antagonizes insulin and increases lipolysis, so maternal tissues burn fat and leave glucose and amino acids for the fetus. Insulin resistance therefore climbs through the second and third trimesters, which is when gestational diabetes appears. Human chorionic gonadotropin peaks at 8 to 10 weeks and then falls, so its timing does not fit. Estriol, relaxin and oxytocin have no major role in maternal glucose handling.",
+  "w": {
+   "Human chorionic gonadotropin": "hCG rescues the corpus luteum and peaks at about 8 to 10 weeks before falling, while insulin resistance keeps rising through the third trimester.",
+   "Estriol": "Estriol is made by the placenta from fetal adrenal DHEA-S and serves as a marker of fetoplacental health; it does not drive maternal insulin resistance.",
+   "Relaxin": "Relaxin from the corpus luteum and placenta softens the cervix and pelvic ligaments and relaxes vascular tone; it has no major effect on glucose.",
+   "Oxytocin": "Oxytocin from the posterior pituitary contracts the uterus at labor and ejects milk; it does not rise with placental mass or oppose insulin."
+  },
+  "et": [
+   [
+    "Option",
+    "Source",
+    "Peak timing",
+    "Main action"
+   ],
+   [
+    [
+     "Human placental lactogen",
+     "Syncytiotrophoblast",
+     "Rises to term with placental mass",
+     "Insulin resistance, lipolysis"
+    ],
+    [
+     "Human chorionic gonadotropin",
+     "Syncytiotrophoblast",
+     "8 to 10 weeks",
+     "Keeps the corpus luteum alive"
+    ],
+    [
+     "Estriol",
+     "Placenta, from fetal DHEA-S",
+     "Rises to term",
+     "Marker of fetal well-being"
+    ],
+    [
+     "Relaxin",
+     "Corpus luteum and placenta",
+     "First trimester",
+     "Softens ligaments and cervix"
+    ],
+    [
+     "Oxytocin",
+     "Posterior pituitary",
+     "Labor and nursing",
+     "Uterine contraction, milk ejection"
+    ]
+   ]
+  ],
+  "bl": "Human placental lactogen rises with placental mass and causes the maternal insulin resistance behind gestational diabetes."
+ },
+ {
+  "id": "rp4q09",
+  "d": 3,
+  "tags": [
+   "steroidogenesis-enzymes",
+   "hormone-source"
+  ],
+  "bp": [
+   "BP-rp4-07"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.5",
+   "EMBRYO-CLIN.11"
+  ],
+  "s": "A 34-year-old woman at 20 weeks' gestation has a quadruple screen showing markedly elevated alpha-fetoprotein and a very low unconjugated estriol. Ultrasound shows absence of the cranial vault and cerebral hemispheres. The genetic counselor explains that the low estriol reflects the fetal defect, because placental estriol synthesis depends on a precursor supplied by the fetus.",
+  "l": "Which structure normally supplies the precursor that is lacking here?",
+  "o": [
+   "Fetal adrenal cortex",
+   "Fetal kidney",
+   "Corpus luteum",
+   "Maternal adrenal cortex",
+   "Fetal thyroid gland"
+  ],
+  "a": 0,
+  "e": "Anencephaly removes hypothalamic drive to the fetal pituitary, so fetal ACTH is low and the fetal adrenal cortex is small. The large fetal zone of a normal **fetal adrenal cortex** makes DHEA-S, which the fetal liver hydroxylates and the placenta converts to estriol; the placenta cannot make androgens itself because it lacks 17α-hydroxylase. Maternal adrenal DHEA-S becomes mostly estrone and estradiol, so maternal output cannot compensate. The corpus luteum matters only early in pregnancy, and the fetal kidney and thyroid make no estriol precursor.",
+  "w": {
+   "Fetal kidney": "Fetal kidneys make the urine that forms most amniotic fluid after 16 weeks; they supply no steroid precursor, so a renal problem changes fluid volume, not estriol.",
+   "Corpus luteum": "The corpus luteum supplies progesterone until the luteal-placental shift at 8 to 10 weeks; it does not make the androgen precursor that estriol requires.",
+   "Maternal adrenal cortex": "Maternal DHEA-S reaches the placenta but becomes mostly estrone and estradiol; about 90 percent of estriol precursor comes from the fetus, which is why estriol tracks fetal health.",
+   "Fetal thyroid gland": "The fetal thyroid begins making hormone at about 10 to 12 weeks and supports brain growth, but it produces no androgen that the placenta can aromatize."
+  },
+  "et": [
+   [
+    "Option",
+    "Main product",
+    "Route to the placenta",
+    "Change in anencephaly"
+   ],
+   [
+    [
+     "Fetal adrenal cortex",
+     "DHEA-S from the fetal zone",
+     "Via fetal liver 16-hydroxylation",
+     "Atrophies without ACTH drive"
+    ],
+    [
+     "Fetal kidney",
+     "Urine for amniotic fluid",
+     "None for steroids",
+     "Usually unaffected"
+    ],
+    [
+     "Corpus luteum",
+     "Progesterone early in pregnancy",
+     "Ovarian, not fetal",
+     "Unaffected"
+    ],
+    [
+     "Maternal adrenal cortex",
+     "DHEA-S for estrone and estradiol",
+     "Maternal circulation",
+     "Unaffected"
+    ],
+    [
+     "Fetal thyroid gland",
+     "Thyroxine from 10 to 12 weeks",
+     "None for steroids",
+     "Usually normal"
+    ]
+   ]
+  ],
+  "bl": "Placental estriol needs DHEA-S from the fetal adrenal cortex, so anencephaly and fetal adrenal failure lower maternal estriol."
+ },
+ {
+  "id": "rp4q10",
+  "d": 2,
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp4-11",
+   "BP-rp4-16"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.11"
+  ],
+  "s": "A male newborn dies of respiratory failure shortly after birth. The pregnancy was complicated by severe oligohydramnios from 18 weeks onward. Examination shows widely spaced eyes, a flattened nose, a receding chin, low-set ears and clubbed feet, and autopsy shows small, underdeveloped lungs.",
+  "l": "Which primary defect best explains these findings?",
+  "o": [
+   "Bilateral renal agenesis",
+   "Esophageal atresia",
+   "Anencephaly",
+   "Duodenal atresia",
+   "Congenital diaphragmatic hernia"
+  ],
+  "a": 0,
+  "e": "After about 16 weeks most amniotic fluid is fetal urine, so absent kidneys produce severe oligohydramnios. The uterus then compresses the fetus, flattening the face and deforming the limbs, and too little fluid in the airways prevents normal lung growth; this cascade is the Potter sequence, and pulmonary hypoplasia is what kills. **Bilateral renal agenesis** is the classic primary defect. Esophageal and duodenal atresia and anencephaly impair swallowing and cause polyhydramnios, and a diaphragmatic hernia causes lung hypoplasia without this facial and limb pattern.",
+  "w": {
+   "Esophageal atresia": "Esophageal atresia prevents the fetus from swallowing amniotic fluid, so fluid accumulates and causes polyhydramnios, the opposite of the reduced volume seen here.",
+   "Anencephaly": "Anencephaly impairs fetal swallowing and often causes polyhydramnios; it also leaves an absent cranial vault, which this infant does not have.",
+   "Duodenal atresia": "Duodenal atresia blocks absorption of swallowed fluid in the fetal gut, causing polyhydramnios and a double-bubble sign rather than oligohydramnios.",
+   "Congenital diaphragmatic hernia": "A diaphragmatic hernia compresses the developing lung with abdominal organs, but it does not reduce amniotic fluid or cause the compressed face and clubbed feet."
+  },
+  "et": [
+   [
+    "Option",
+    "Amniotic fluid",
+    "Mechanism",
+    "Lung outcome"
+   ],
+   [
+    [
+     "Bilateral renal agenesis",
+     "Oligohydramnios",
+     "No fetal urine",
+     "Pulmonary hypoplasia"
+    ],
+    [
+     "Esophageal atresia",
+     "Polyhydramnios",
+     "Cannot swallow fluid",
+     "Normal lungs"
+    ],
+    [
+     "Anencephaly",
+     "Polyhydramnios",
+     "Impaired swallowing",
+     "Not the main problem"
+    ],
+    [
+     "Duodenal atresia",
+     "Polyhydramnios",
+     "Cannot absorb swallowed fluid",
+     "Normal lungs"
+    ],
+    [
+     "Congenital diaphragmatic hernia",
+     "Normal or increased",
+     "Bowel herniates into the chest",
+     "Hypoplasia on the hernia side"
+    ]
+   ]
+  ],
+  "bl": "Bilateral renal agenesis removes fetal urine, causing oligohydramnios and the Potter sequence with fatal pulmonary hypoplasia."
+ },
+ {
+  "id": "rp4q11",
+  "d": 1,
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp4-09"
+  ],
+  "obj": [
+   "EMBRYO-CLIN.4"
+  ],
+  "s": "A 10-day-old girl is brought in because her umbilicus stays wet. Clear, yellow fluid leaks from the umbilicus, especially when she cries, and the fluid has the chemical composition of urine. The umbilical stump otherwise looks healthy.",
+  "l": "Failure of which embryonic structure to obliterate explains this finding?",
+  "o": [
+   "Allantois",
+   "Vitelline duct",
+   "Umbilical vein",
+   "Cloacal membrane",
+   "Mesonephric duct"
+  ],
+  "a": 0,
+  "e": "Urine at the umbilicus means an open channel from the bladder, a patent urachus. The **allantois** grows from the hindgut into the connecting stalk; its intraembryonic part, the urachus, normally closes into the median umbilical ligament, and partial closure leaves a urachal cyst or sinus instead. A persistent vitelline duct connects the ileum to the umbilicus and drains stool or leaves a Meckel diverticulum, and the umbilical vein becomes the ligamentum teres.",
+  "w": {
+   "Vitelline duct": "The vitelline duct joins the midgut to the yolk sac; a patent duct leaks meconium or stool at the umbilicus, and a partial remnant is a Meckel diverticulum.",
+   "Umbilical vein": "The umbilical vein carries oxygenated blood to the fetus and closes after birth into the ligamentum teres hepatis; it never carries urine.",
+   "Cloacal membrane": "The cloacal membrane closes the caudal end of the hindgut and ruptures to open the urogenital and anal outlets; its defects cause exstrophy, not umbilical leakage.",
+   "Mesonephric duct": "The mesonephric duct drains the embryonic kidney into the cloaca and forms the male genital ducts and the ureteric bud; it does not reach the umbilicus."
+  },
+  "et": [
+   [
+    "Option",
+    "Embryonic connection",
+    "Normal adult remnant",
+    "Persistence causes"
+   ],
+   [
+    [
+     "Allantois",
+     "Hindgut and bladder to connecting stalk",
+     "Median umbilical ligament",
+     "Urine at the umbilicus"
+    ],
+    [
+     "Vitelline duct",
+     "Midgut to yolk sac",
+     "Usually disappears",
+     "Stool at umbilicus, Meckel diverticulum"
+    ],
+    [
+     "Umbilical vein",
+     "Placenta to fetal liver",
+     "Ligamentum teres hepatis",
+     "No urinary leak"
+    ],
+    [
+     "Cloacal membrane",
+     "Closes the hindgut end",
+     "Ruptures to form outlets",
+     "Exstrophy if defective"
+    ],
+    [
+     "Mesonephric duct",
+     "Mesonephros to cloaca",
+     "Male genital ducts, ureter",
+     "Gartner duct cyst in females"
+    ]
+   ]
+  ],
+  "bl": "Urine leaking from the umbilicus means a patent urachus, the unobliterated intraembryonic part of the allantois."
+ }
+]

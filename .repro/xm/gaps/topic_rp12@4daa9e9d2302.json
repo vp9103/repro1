@@ -1,0 +1,185 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp12",
+ "hash": "4daa9e9d2302",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:08:34",
+ "gaps": [
+  {
+   "gid": "GAP-rp12-01",
+   "concept": "Low estrogen causes vaginal atrophy: reduced glycogen and lactobacilli, elevated pH, parabasal cells, dryness, and dyspareunia.",
+   "why_tested": "Distinguishes postmenopausal atrophy from infectious vaginitis in a patient with irritation and elevated vaginal pH.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-02",
+   "concept": "Bacterial vaginosis is polymicrobial anaerobic dysbiosis with little inflammation or leukocyte response.",
+   "why_tested": "Explains thin discharge and clue cells without prominent vulvar inflammation.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp12-03",
+   "concept": "Vulvovaginal candidiasis causes intense pruritus and vulvar erythema, typically without a fishy odor.",
+   "why_tested": "Separates candidiasis from bacterial vaginosis when the stem emphasizes itching and inflammation.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-04",
+   "concept": "Bartholin glands are mucus-secreting vestibular glands; abscesses are often polymicrobial, including enteric bacteria and anaerobes.",
+   "why_tested": "Identifies the affected gland and likely microbiology of a painful unilateral vestibular mass.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp12-05",
+   "concept": "Lichen sclerosus often causes intense pruritus and a vulvar-perianal figure-eight pattern; biopsy shows epidermal atrophy and dermal sclerosis.",
+   "why_tested": "Identifies lichen sclerosus from a pruritic white lesion or histologic specimen.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-06",
+   "concept": "High-potency topical corticosteroids are first-line treatment for vulvar lichen sclerosus.",
+   "why_tested": "Tests the initial treatment of a characteristic pruritic white vulvar lesion.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp12-07",
+   "concept": "Erosive lichen planus can involve the vagina and cause erosions or scarring; lichen sclerosus generally spares vaginal mucosa.",
+   "why_tested": "Distinguishes two inflammatory vulvar lesions when vaginal involvement is described.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp12-08",
+   "concept": "HPV-associated vulvar intraepithelial neoplasia is usually HPV-16–related, p16-positive, and shows squamous atypia without stromal invasion.",
+   "why_tested": "Identifies a precancerous vulvar biopsy and separates it from invasive squamous carcinoma.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-09",
+   "concept": "Differentiated vulvar intraepithelial neoplasia is HPV-independent and often shows abnormal p53 staining.",
+   "why_tested": "Distinguishes the precursor of HPV-negative vulvar carcinoma from HPV-associated vulvar intraepithelial neoplasia.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp12-10",
+   "concept": "Vulvar squamous carcinoma commonly spreads first to inguinal lymph nodes.",
+   "why_tested": "Predicts regional nodal spread from an invasive vulvar lesion.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp12-11",
+   "concept": "Vulvar extramammary Paget disease typically appears as a chronic pruritic, eczematous red plaque.",
+   "why_tested": "Identifies Paget disease from a persistent vulvar rash that resembles dermatitis.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp12-12",
+   "concept": "Condyloma acuminatum produces exophytic, cauliflower-like anogenital warts.",
+   "why_tested": "Connects the visible lesion with the listed HPV types and koilocytes.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-13",
+   "concept": "Genital molluscum contagiosum causes umbilicated papules; biopsy shows large intracytoplasmic Henderson–Patterson inclusions.",
+   "why_tested": "Distinguishes poxvirus papules from HPV warts on the vulva.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp12-14",
+   "concept": "Genital herpes causes painful grouped vesicles that rupture into ulcers; HSV-2 more commonly causes recurrent genital disease.",
+   "why_tested": "Distinguishes herpes from other causes of genital ulcers.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-15",
+   "concept": "HSV cytology shows multinucleated giant cells with Cowdry type A inclusions; genital HSV establishes latency in sacral sensory ganglia.",
+   "why_tested": "Links an ulcer specimen or recurrent episodes to HSV pathogenesis.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-16",
+   "concept": "Acyclovir and valacyclovir treat genital HSV; viral thymidine kinase activates acyclovir, which inhibits viral DNA polymerase.",
+   "why_tested": "Tests the drug mechanism in a patient with recurrent painful genital vesicles.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-17",
+   "concept": "Primary syphilis causes a painless, indurated chancre with usually nontender regional lymphadenopathy.",
+   "why_tested": "Distinguishes a syphilitic vulvar ulcer from painful herpes or chancroid.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-18",
+   "concept": "Secondary syphilis can cause broad, flat, moist condylomata lata, unlike exophytic HPV condylomata acuminata.",
+   "why_tested": "Separates similarly named anogenital lesions caused by different pathogens.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-19",
+   "concept": "Syphilis is screened with RPR or VDRL and confirmed with treponemal testing; penicillin G is first-line treatment.",
+   "why_tested": "Connects a characteristic genital lesion to its diagnostic tests and initial treatment.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-20",
+   "concept": "Haemophilus ducreyi causes chancroid: painful soft ulcers with ragged edges and tender suppurative inguinal nodes.",
+   "why_tested": "Distinguishes chancroid from a painless syphilitic chancre.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp12-21",
+   "concept": "Chlamydia trachomatis L1–L3 causes lymphogranuloma venereum: a transient painless lesion followed by painful inguinal buboes.",
+   "why_tested": "Identifies the organism from the sequence of a fleeting genital lesion and later lymphadenopathy.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp12-22",
+   "concept": "Klebsiella granulomatis causes donovanosis: painless beefy-red genital ulcers, usually without lymphadenopathy, with intracellular Donovan bodies.",
+   "why_tested": "Distinguishes donovanosis from other ulcerative sexually transmitted infections.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp12-23",
+   "concept": "Chlamydia trachomatis or Neisseria gonorrhoeae cervicitis causes mucopurulent discharge and a friable cervix; nucleic acid amplification tests identify the pathogen.",
+   "why_tested": "Separates cervical discharge from vaginitis in a reproductive-tract infection vignette.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-24",
+   "concept": "Vaginal upper two-thirds derives from Müllerian ducts; the lower third derives from urogenital sinus sinovaginal bulbs.",
+   "why_tested": "Tests vaginal embryologic origin in a congenital-anomaly stem.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-25",
+   "concept": "A Gartner duct cyst is a remnant of the mesonephric, or Wolffian, duct.",
+   "why_tested": "Asks the embryologic source of a lateral vaginal-wall cyst.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-26",
+   "concept": "Imperforate hymen from failed canalization causes primary amenorrhea, cyclic pelvic pain, hematocolpos, and a bulging bluish hymen.",
+   "why_tested": "Identifies vaginal outflow obstruction in an adolescent with cyclic pain but no menses.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp12-27",
+   "concept": "DES-associated vaginal adenosis consists of glandular columnar epithelium replacing normal squamous mucosa and may appear as red granular patches.",
+   "why_tested": "Identifies the precursor finding in a patient exposed to DES in utero.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp12-28",
+   "concept": "Sarcoma botryoides has a cambium layer of densely packed malignant cells immediately beneath the vaginal epithelium.",
+   "why_tested": "Identifies the characteristic histology of a child's grape-like vaginal tumor.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp12-29",
+   "concept": "Primary vaginal squamous carcinoma is associated with high-risk HPV; vaginal intraepithelial neoplasia is its squamous precursor.",
+   "why_tested": "Distinguishes primary HPV-related vaginal cancer from carcinoma extending from the cervix.",
+   "yield": "mid"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp12-1790442384428.jsonl"
+}

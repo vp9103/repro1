@@ -1,0 +1,74 @@
+{
+ "id": "d_rp8_sort",
+ "c": "rp8",
+ "kind": "sort",
+ "t": "Theca cell or granulosa cell?",
+ "tags": [
+  "steroidogenesis-enzymes"
+ ],
+ "a": "Theca interna cell",
+ "bb": "Granulosa cell",
+ "key": "Ask which side of the basement membrane the cell sits on: theca cells live with the capillaries and make androgen under LH, while avascular granulosa cells inside use FSH-induced aromatase to finish estradiol.",
+ "items": [
+  [
+   "Makes androstenedione from cholesterol under LH",
+   "a",
+   "LH drives side-chain cleavage and 17-hydroxylase activity in theca cells, which end the pathway at androgen."
+  ],
+  [
+   "Lies outside the follicle basement membrane",
+   "a",
+   "The theca forms around the follicle once it becomes secondary, outside the membrane that encloses the granulosa layers."
+  ],
+  [
+   "Has a capillary blood supply before ovulation",
+   "a",
+   "Capillaries reach the theca but not the granulosa, which is why theca cells can take up circulating cholesterol."
+  ],
+  [
+   "Expresses 17α-hydroxylase",
+   "a",
+   "This enzyme is needed to make androgens; granulosa cells lack it and so depend on theca androstenedione."
+  ],
+  [
+   "Takes up LDL cholesterol from blood",
+   "a",
+   "With direct capillary access, theca cells import LDL cholesterol as the starting material for steroid synthesis."
+  ],
+  [
+   "Has little aromatase of its own",
+   "a",
+   "Because theca cells cannot aromatize much, their androgen must cross to the granulosa to become estradiol."
+  ],
+  [
+   "Expresses FSH-induced aromatase",
+   "b",
+   "FSH binding switches on CYP19 aromatase in granulosa cells, the FSH half of the two-cell model."
+  ],
+  [
+   "Converts androstenedione to estrone and estradiol",
+   "b",
+   "Granulosa aromatase turns the diffusing androgen into estrone, which 17β-hydroxysteroid dehydrogenase converts to estradiol."
+  ],
+  [
+   "Secretes inhibin B",
+   "b",
+   "Granulosa inhibin B travels to the pituitary and selectively lowers FSH during the follicular phase."
+  ],
+  [
+   "Secretes anti-Müllerian hormone",
+   "b",
+   "Granulosa cells of small growing follicles make AMH, which is why AMH reflects ovarian reserve."
+  ],
+  [
+   "Forms the cumulus oophorus around the oocyte",
+   "b",
+   "The cumulus and corona radiata are granulosa cells that stay attached to the oocyte at ovulation."
+  ],
+  [
+   "Is avascular until ovulation",
+   "b",
+   "The basement membrane keeps vessels out of the granulosa layer until the follicle ruptures and luteinizes."
+  ]
+ ]
+}

@@ -1,0 +1,197 @@
+{
+ "cmd": "gaps",
+ "key": "topic:rp4",
+ "hash": "935367074777",
+ "provider": "codex",
+ "model": "gpt-6-sol",
+ "at": "2026-09-26 12:02:52",
+ "gaps": [
+  {
+   "gid": "GAP-rp4-01",
+   "concept": "Sperm capacitation enables the acrosome reaction; acrosomal enzymes penetrate the zona pellucida.",
+   "why_tested": "Identifies the fertilization step disrupted when sperm cannot penetrate the oocyte.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-02",
+   "concept": "The oocyte’s cortical reaction modifies the zona pellucida and blocks polyspermy.",
+   "why_tested": "Explains how fertilization normally prevents entry of a second sperm.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-03",
+   "concept": "The secondary oocyte remains arrested in metaphase II until fertilization triggers completion of meiosis II.",
+   "why_tested": "Identifies the meiotic stage of the ovulated oocyte.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-04",
+   "concept": "Cleavage produces a morula around day 3 and a blastocyst around day 5; the blastocyst sheds its zona pellucida before implantation.",
+   "why_tested": "Tests the order of early developmental stages and the prerequisite for implantation.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-05",
+   "concept": "The blastocyst’s inner cell mass forms the embryo; its outer trophoblast contributes to the placenta.",
+   "why_tested": "Asks which blastocyst cell population gives rise to embryonic versus placental tissue.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-06",
+   "concept": "During gastrulation, epiblast cells migrate through the primitive streak to form endoderm and mesoderm; remaining epiblast becomes ectoderm.",
+   "why_tested": "Tests the cellular origin of all three definitive germ layers.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-07",
+   "concept": "Persistent primitive streak cells can form a sacrococcygeal teratoma containing tissues from multiple germ layers.",
+   "why_tested": "Explains a neonatal sacrococcygeal mass with several tissue types.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-08",
+   "concept": "The fetal period begins in week 9 and is characterized mainly by growth and functional maturation.",
+   "why_tested": "Distinguishes effects of later fetal exposures from structural defects during organogenesis.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-09",
+   "concept": "The yolk sac is the first site of hematopoiesis and an early source of primordial germ cells.",
+   "why_tested": "Identifies the extraembryonic structure responsible for early blood formation or germ-cell origin.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-10",
+   "concept": "Epiblast forms the amnion; hypoblast forms the yolk-sac lining; trophoblast and extraembryonic mesoderm form the chorion.",
+   "why_tested": "Matches extraembryonic membranes to their embryologic sources.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-11",
+   "concept": "Ruptured amnion can produce fibrous bands that cause asymmetric limb constrictions or amputations.",
+   "why_tested": "Explains irregular fetal limb defects without a Mendelian pattern.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-12",
+   "concept": "Fetal capillaries lie within chorionic villi; maternal blood surrounds the villi, so the two circulations usually remain separate.",
+   "why_tested": "Tests the path of maternal–fetal exchange on a placental diagram or histologic section.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-13",
+   "concept": "Primary villi contain trophoblast, secondary villi acquire mesoderm, and tertiary villi develop fetal blood vessels.",
+   "why_tested": "Identifies the developmental stage at which chorionic villi establish fetal circulation.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-14",
+   "concept": "Extravillous trophoblast remodels maternal spiral arteries into low-resistance vessels; shallow invasion contributes to preeclampsia and fetal growth restriction.",
+   "why_tested": "Links abnormal placentation to maternal hypertension or reduced fetal perfusion.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-15",
+   "concept": "Maternal IgG crosses the placenta through Fc receptors; IgM generally does not.",
+   "why_tested": "Distinguishes passive fetal immunity from fetal IgM production after intrauterine infection.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-16",
+   "concept": "hPL reduces maternal glucose use and promotes fat use, increasing glucose availability to the fetus.",
+   "why_tested": "Explains the fetal advantage of pregnancy-associated maternal insulin resistance.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-17",
+   "concept": "Progesterone maintains the decidua and suppresses uterine contractions during pregnancy.",
+   "why_tested": "Asks how corpus-luteum or placental progesterone supports an established pregnancy.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-18",
+   "concept": "Tubal ectopic pregnancy most often implants in the ampulla; prior pelvic inflammatory disease or tubal surgery increases risk.",
+   "why_tested": "Explains early pregnancy with pelvic pain and bleeding after tubal damage.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-19",
+   "concept": "Ectopic pregnancy can show a positive β-hCG test, slower-than-expected β-hCG rise, and no intrauterine gestational sac on ultrasound.",
+   "why_tested": "Distinguishes ectopic implantation from a normally developing intrauterine pregnancy.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-20",
+   "concept": "Methotrexate inhibits dihydrofolate reductase and can treat a stable, unruptured ectopic pregnancy.",
+   "why_tested": "Connects an antifolate drug mechanism to treatment of tubal trophoblast.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-21",
+   "concept": "Placenta previa covers the internal cervical os and classically causes painless third-trimester bleeding.",
+   "why_tested": "Distinguishes low placental implantation from painful placental abruption.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-22",
+   "concept": "Placenta accreta follows deficient decidua basalis, often at a cesarean scar; villi adhere to myometrium and the placenta fails to separate.",
+   "why_tested": "Explains retained placenta and severe postpartum hemorrhage after prior uterine surgery.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-23",
+   "concept": "In placenta increta, villi invade myometrium; in percreta, they penetrate through the uterine wall.",
+   "why_tested": "Distinguishes placental invasion depth from a pathology description.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-24",
+   "concept": "Placental abruption is premature placental separation, causing painful bleeding and a tender uterus; hypertension and cocaine are risk factors.",
+   "why_tested": "Separates abruption from previa in a late-pregnancy bleeding vignette.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-25",
+   "concept": "Vasa previa involves unprotected fetal vessels over the cervical os; membrane rupture causes painless bleeding with fetal distress.",
+   "why_tested": "Distinguishes fetal-vessel bleeding from maternal bleeding due to placenta previa.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-26",
+   "concept": "Twin–twin transfusion results from vascular anastomoses in a shared placenta: the donor develops anemia and oligohydramnios; the recipient develops polycythemia and polyhydramnios.",
+   "why_tested": "Interprets discordant amniotic fluid and blood findings in monochorionic twins.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-27",
+   "concept": "Monoamniotic twins share one amniotic sac and are vulnerable to umbilical cord entanglement.",
+   "why_tested": "Identifies the distinctive complication of twins with no dividing membrane.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-28",
+   "concept": "A thick intertwin membrane with a lambda sign suggests dichorionic twins; a thin membrane with a T sign suggests monochorionic twins.",
+   "why_tested": "Determines chorionicity from a twin ultrasound.",
+   "yield": "mid"
+  },
+  {
+   "gid": "GAP-rp4-29",
+   "concept": "Oligohydramnios can cause pulmonary hypoplasia, flattened facies, and limb deformities as components of Potter sequence.",
+   "why_tested": "Recognizes the fetal consequences of prolonged low amniotic fluid.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-30",
+   "concept": "Complete hydatidiform mole is androgenetic diploid, with diffuse swollen villi, marked trophoblast proliferation, and no fetus.",
+   "why_tested": "Explains very high β-hCG, absent fetal tissue, and a cystic placental appearance.",
+   "yield": "hi"
+  },
+  {
+   "gid": "GAP-rp4-31",
+   "concept": "Partial hydatidiform mole is usually diandric triploid, with focal villous swelling and possible fetal tissue.",
+   "why_tested": "Distinguishes partial from complete mole using karyotype and pathology.",
+   "yield": "hi"
+  }
+ ],
+ "transcript": ".repro\\xm\\transcripts\\gaps-rp4-1790442061377.jsonl"
+}
