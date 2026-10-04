@@ -2,7 +2,7 @@
 
 The single source of truth for REPRO-PLAN.md. `check_repro.py` reads it on every `--next`, `--status` and Stop-hook run.
 
-CURRENT POSITION: 2026-10-03 FAST TRACK: live page fast/repro-endo-path.html served on 8744 (24/30 repro topics); 11 writers filling repro gaps; then endocrine gaps (E01-E09); re-run .repro/fast_merge.py after each batch. Gated tasks paused where they stand.
+CURRENT POSITION: 2026-10-04 cloud continuation (REPRO-CONTINUATION.md, .repro/PENDING.md). In flight: P2.4 F21 redo (worker, .repro/ws/P2_4); fast drafts G01 (rp19/rp20 questions, rapid, drills) and G02 (rapid rp3/rp11/rp17). P1.V token 5554dd5d05 issued, verifier held (needs Opus max). Next: P2.5 F35, P2.6 F31/F40/F33, P2.V; wave-1 gaps (rapid rp23/rp29, drills rp10/11/16/17, visual pointers); then P3 imports.
 
 BASELINE: (written at P0.3 from `python check_repro.py --baseline`) BASELINE tree:38022cb922 at:2026-09-26 11:11:54 · GATE sha:067a94be
 
