@@ -53,13 +53,13 @@
   ],
   "q": "In which compartment of the seminiferous tubule do spermatogonia sit?",
   "o": [
-   "Basal compartment, outside the barrier",
    "Adluminal compartment, inside the barrier",
    "Interstitium beside the capillaries",
    "Lumen of the tubule",
+   "Basal compartment, outside the barrier",
    "Rete testis"
   ],
-  "a": 0,
+  "a": 3,
   "x": "Basal compartment. Spermatogonia rest on the basement membrane below the Sertoli tight junctions, so they lie outside the blood-testis barrier; committed daughter cells cross the junctions to reach the adluminal compartment for meiosis.",
   "w": {
    "Adluminal compartment, inside the barrier": "The adluminal compartment lies above the junctions and holds primary and secondary spermatocytes and spermatids, the cells whose antigens the barrier hides from the immune system.",
@@ -92,13 +92,13 @@
   ],
   "q": "Which Sertoli cell product keeps testosterone concentrated inside the seminiferous tubule?",
   "o": [
-   "Androgen-binding protein",
    "Inhibin B",
+   "Androgen-binding protein",
    "Anti-Müllerian hormone",
    "Sex hormone-binding globulin",
    "Estradiol"
   ],
-  "a": 0,
+  "a": 1,
   "x": "Androgen-binding protein. Under FSH, Sertoli cells secrete it into the tubule, where it holds testosterone at 50 to 100 times the serum level, the high local concentration that spermatogenesis requires.",
   "w": {
    "Inhibin B": "Inhibin B travels to the pituitary and suppresses FSH; it signals the state of the tubules rather than binding testosterone locally.",
@@ -129,13 +129,13 @@
   ],
   "q": "Which step of spermatogenesis remodels spermatids into spermatozoa without cell division?",
   "o": [
-   "Spermiogenesis",
    "Spermiation",
    "Meiosis I",
    "Meiosis II",
-   "Spermatocytogenesis"
+   "Spermatocytogenesis",
+   "Spermiogenesis"
   ],
-  "a": 0,
+  "a": 4,
   "x": "Spermiogenesis. The Golgi apparatus builds the acrosome, a centriole grows the flagellum, mitochondria wrap the midpiece and Sertoli cells engulf the shed cytoplasm, all without any division of the haploid spermatid.",
   "w": {
    "Spermiation": "Spermiation is the release of finished sperm into the lumen after remodeling is complete; it frees the cell and does not change its shape.",
@@ -166,13 +166,13 @@
   ],
   "q": "In what state are sperm when they are released into the tubule lumen?",
   "o": [
-   "Immotile and unable to fertilize",
    "Motile but not yet capacitated",
    "Fully capacitated",
+   "Immotile and unable to fertilize",
    "Hyperactivated with the acrosome reacted",
    "Motile and able to fertilize"
   ],
-  "a": 0,
+  "a": 2,
   "x": "Immotile and unable to fertilize. The testis builds the sperm, the epididymis then gives it forward motility, and capacitation and the acrosome reaction occur only in the female tract.",
   "w": {
    "Motile but not yet capacitated": "That describes sperm after epididymal transit, where the head and body of the epididymis give them forward motility; sperm leaving the testis have not had this maturation.",
@@ -202,13 +202,13 @@
   ],
   "q": "Which binding protein rises with age and makes free testosterone fall faster than total testosterone?",
   "o": [
-   "SHBG",
    "Albumin",
    "Androgen-binding protein",
+   "SHBG",
    "Transcortin",
    "Thyroxine-binding globulin"
   ],
-  "a": 0,
+  "a": 2,
   "x": "SHBG. Liver production of sex hormone-binding globulin increases with age, binding more testosterone tightly, so the free and bioavailable fractions decline faster than the roughly 1 percent a year fall in total testosterone.",
   "w": {
    "Albumin": "Albumin binds testosterone only loosely and counts toward bioavailable hormone; its level changes little with normal aging, so it does not explain the faster fall in free hormone.",
@@ -276,13 +276,13 @@
   ],
   "q": "How much higher is the testosterone concentration inside the seminiferous tubule than in serum?",
   "o": [
-   "About 50 to 100 times",
    "About the same",
    "About 2 times",
    "About 10 times",
-   "About 1000 times"
+   "About 1000 times",
+   "About 50 to 100 times"
   ],
-  "a": 0,
+  "a": 4,
   "x": "About 50 to 100 times. Androgen-binding protein keeps testosterone made by Leydig cells concentrated in the tubule, and spermatogenesis needs this gradient; injected testosterone suppresses LH, collapses the local level and stops sperm production.",
   "w": {
    "About the same": "If tubular and serum levels were equal, spermatogenesis would not depend on LH-driven local production, yet injected testosterone, which raises blood levels, still causes azoospermia.",
@@ -313,13 +313,13 @@
   ],
   "q": "Which pattern of GnRH secretion keeps LH and FSH release going?",
   "o": [
-   "Pulses every 1 to 2 hours",
    "Continuous infusion",
+   "Pulses every 1 to 2 hours",
    "One surge each day",
    "Release only at night",
    "Release only during puberty"
   ],
-  "a": 0,
+  "a": 1,
   "x": "Pulses every 1 to 2 hours. The pituitary needs pulsatile GnRH; continuous exposure, as from a long-acting agonist such as leuprolide, downregulates the receptors, shuts off LH and FSH and lowers testosterone.",
   "w": {
    "Continuous infusion": "Continuous GnRH desensitizes the pituitary and downregulates its receptors, which is why agonists such as leuprolide lower testosterone after an initial flare.",
@@ -348,13 +348,13 @@
   ],
   "q": "Which nerves carry the sympathetic fibers that cause emission of semen?",
   "o": [
-   "Hypogastric nerves",
    "Pelvic splanchnic nerves",
    "Pudendal nerve",
    "Genitofemoral nerve",
+   "Hypogastric nerves",
    "Ilioinguinal nerve"
   ],
-  "a": 0,
+  "a": 3,
   "x": "Hypogastric nerves. Sympathetic fibers from T10 to L2 contract the ductus deferens, seminal vesicles and prostate and close the bladder neck, moving semen into the urethra before pudendal-driven ejaculation expels it.",
   "w": {
    "Pelvic splanchnic nerves": "Pelvic splanchnic nerves carry parasympathetic fibers from S2 to S4 that produce erection by nitric oxide release, not the sympathetic squeeze of emission.",
@@ -384,13 +384,13 @@
   ],
   "q": "Which nerve drives the rhythmic bulbospongiosus contractions of ejaculation?",
   "o": [
-   "Pudendal nerve",
    "Hypogastric nerves",
    "Pelvic splanchnic nerves",
    "Genitofemoral nerve",
-   "Inferior rectal nerve"
+   "Inferior rectal nerve",
+   "Pudendal nerve"
   ],
-  "a": 0,
+  "a": 4,
   "x": "Pudendal nerve. Somatic fibers from S2 to S4 make the bulbospongiosus and ischiocavernosus contract rhythmically to expel semen, whereas sympathetic damage leaves orgasm with retrograde or absent ejaculate.",
   "w": {
    "Hypogastric nerves": "Hypogastric nerves are sympathetic and cause emission and bladder neck closure before ejaculation; they do not drive the rhythmic muscular expulsion itself.",
@@ -421,13 +421,13 @@
   ],
   "q": "Which enzyme makes cGMP in cavernosal smooth muscle after nitric oxide arrives?",
   "o": [
-   "Guanylate cyclase",
    "Adenylate cyclase",
    "Nitric oxide synthase",
+   "Guanylate cyclase",
    "Phosphodiesterase type 5",
    "Protein kinase G"
   ],
-  "a": 0,
+  "a": 2,
   "x": "Guanylate cyclase. Nitric oxide activates soluble guanylate cyclase, which converts GTP to cGMP; cGMP activates protein kinase G, calcium falls, the smooth muscle relaxes and the sinusoids fill, while PDE5 later breaks cGMP down.",
   "w": {
    "Adenylate cyclase": "Adenylate cyclase makes cAMP, the messenger used by alprostadil and prostaglandin receptors, a parallel route to erection rather than the nitric oxide pathway.",
@@ -458,13 +458,13 @@
   ],
   "q": "Which gland's secretion supplies the fructose that sperm use for energy?",
   "o": [
-   "Seminal vesicles",
    "Prostate",
+   "Seminal vesicles",
    "Bulbourethral glands",
    "Epididymis",
    "Efferent ductules"
   ],
-  "a": 0,
+  "a": 1,
   "x": "Seminal vesicles. They add an alkaline, fructose-rich fluid that makes up about 65 to 75 percent of semen volume; when obstruction or absent vasa remove it, the ejaculate becomes scant, acidic and fructose-negative.",
   "w": {
    "Prostate": "The prostate adds PSA, citrate, zinc and acid phosphatase, and PSA liquefies the coagulum; it supplies about 20 to 30 percent of the volume but not the sperm fuel.",
@@ -490,7 +490,8 @@
    "BP-rp19-11"
   ],
   "obj": [
-   "PATHPHARM-MALE.2"
+   "PATHPHARM-MALE.2",
+   "ANAT-PELVIS-LAB.13"
   ],
   "q": "Which zone of the prostate is felt on rectal examination and gives rise to most cancers?",
   "o": [
@@ -528,17 +529,18 @@
   ],
   "obj": [
    "PATHPHARM-MALE.2",
-   "BICEP-MISHIMOTO.1"
+   "BICEP-MISHIMOTO.1",
+   "ANAT-PELVIS-LAB.13"
   ],
   "q": "Which venous network cools arterial blood on its way to the testis by countercurrent exchange?",
   "o": [
-   "Pampiniform plexus",
    "Cremasteric veins",
    "Dorsal vein of the penis",
    "Prostatic venous plexus",
+   "Pampiniform plexus",
    "Vertebral venous plexus"
   ],
-  "a": 0,
+  "a": 3,
   "x": "Pampiniform plexus. These veins wrap the testicular artery in the spermatic cord, so warm arterial blood hands heat to cooler venous blood before reaching the testis, keeping it 2 to 4 degrees Celsius below core temperature for spermatogenesis.",
   "w": {
    "Cremasteric veins": "The cremasteric veins drain the cremaster and cord coverings and do not wrap the testicular artery, so they are not the heat exchanger; the cremaster muscle instead adjusts the testis position.",

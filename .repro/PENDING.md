@@ -12,11 +12,12 @@ en9_hypercalcemia, en9_three_hpt missing.
 |---|---|---|---|
 | P2.4 | worker (Sonnet xhigh) | F21 multi-drill verdict placement, .repro/ws/P2_4 | --status P2.4 ok; audit/P2.4.md 2026-10-04 section |
 | G01 | worker | rp19, rp20 questions + rapid + drills (fast/ws/G01) | fast_check G01 ok |
-| G02 | worker | rapid rp3, rp11, rp17 (fast/ws/G02) | fast_check G02 ok |
+| G02 | DONE (draft, accepted 2026-10-04; spot-checked rp11r01/r05/r09, rp17r03/r09/r16) | rapid rp3 13, rp11 15, rp17 22 | fast_check G02 ok; audit/G02-notes.md |
+| G03 | worker | rapid rp23, rp29; drills rp10, rp11, rp16, rp17 (fast/ws/G03) | fast_check G03 ok |
 | P1.V | HELD | token 5554dd5d05, 12 objectives | needs verifier at Opus max (host limit, asked user) |
 
 ## Wave 1 (reproductive, Oct 9) queue
-1. Rapid rp23, rp29; drills rp10, rp11, rp16, rp17.
+1. (G03 in flight.) Figure gaps from G02 (hi blueprint items with no figure to pin): BP-rp11-04 bone/LDL, BP-rp17-10 molluscum, BP-rp17-05 perinatal HIV prevention, BP-rp17-12 HIV course and labs (en8_loop.svg has no JSON).
 2. Visual pointers (ef/pt or fig media) or NO-VISUAL rows - per topic q/r missing:
    rp3 q4 · rp4 q7/r7 · rp5 q6/r4 · rp6 q6/r4 · rp7 q6/r6 · rp8 q4/r5 · rp9 q5/r9 · rp10 q7/r8 · rp11 q7 · rp12 q10/r6 ·
    rp13 r2 · rp14 q4/r6 · rp15 q4/r4 · rp16 q7/r7 · rp17 q8 · rp18 r2 · rp21 q1/r1 · rp22 q1/r1 · rp23 q6 · rp24 q7/r14 ·

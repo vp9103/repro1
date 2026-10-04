@@ -1,0 +1,129 @@
+{
+ "id": "d_rp20_multi",
+ "c": "rp20",
+ "kind": "multi",
+ "t": "Which testicular tumor?",
+ "tags": [
+  "tumor-markers",
+  "cell-of-origin"
+ ],
+ "bp": [
+  "BP-rp20-08",
+  "BP-rp20-09",
+  "BP-rp20-11"
+ ],
+ "key": "Sort by cell of origin and marker: seminoma has fried-egg cells and never AFP, yolk sac makes AFP with Schiller-Duval bodies, choriocarcinoma makes very high hCG and spreads by blood, embryonal carcinoma is hemorrhagic with variable markers, Leydig tumors make hormones instead of markers, and lymphoma is the mass after age 60.",
+ "cols": [
+  {
+   "id": "sem",
+   "l": "Seminoma"
+  },
+  {
+   "id": "ys",
+   "l": "Yolk sac tumor"
+  },
+  {
+   "id": "cc",
+   "l": "Choriocarcinoma"
+  },
+  {
+   "id": "ec",
+   "l": "Embryonal carcinoma"
+  },
+  {
+   "id": "ley",
+   "l": "Leydig cell tumor"
+  },
+  {
+   "id": "lym",
+   "l": "Lymphoma"
+  }
+ ],
+ "items": [
+  [
+   "Fried-egg cells with lymphocytes in fibrous septa",
+   "sem",
+   "Uniform large cells with clear cytoplasm arranged in lobules, separated by septa that contain lymphocytes, are the classic seminoma histology."
+  ],
+  [
+   "PLAP positive, and AFP is never raised",
+   "sem",
+   "Seminoma cells express placental alkaline phosphatase but lack yolk sac differentiation, so any raised AFP means another germ cell element is present."
+  ],
+  [
+   "Highly radiosensitive with the best prognosis",
+   "sem",
+   "Seminoma is highly sensitive to radiation and chemotherapy and spreads late through lymphatics, so outcomes are the best of the germ cell tumors."
+  ],
+  [
+   "Mildly raised hCG from scattered syncytiotrophoblast cells",
+   "sem",
+   "A few syncytiotrophoblast cells release small amounts of hCG, so a mild rise is compatible with pure seminoma."
+  ],
+  [
+   "Schiller-Duval bodies",
+   "ys",
+   "These glomerulus-like structures, a central vessel ringed by tumor cells, are the hallmark of yolk sac tumor."
+  ],
+  [
+   "High AFP",
+   "ys",
+   "Yolk sac elements secrete alpha-fetoprotein, so a raised AFP points to this tumor or to a mixed tumor that contains it."
+  ],
+  [
+   "Most common testicular tumor in boys younger than 3",
+   "ys",
+   "Prepubertal yolk sac tumor is the usual testicular cancer of toddlers and has a very good prognosis."
+  ],
+  [
+   "Very high hCG",
+   "cc",
+   "Syncytiotrophoblast cells make large amounts of hCG, far above the mild rise that can accompany seminoma."
+  ],
+  [
+   "Early blood spread to the lungs, with hemoptysis",
+   "cc",
+   "The tumor invades vessels and spreads through the blood to the lungs and brain, rather than first through lymphatics."
+  ],
+  [
+   "Gynecomastia and hyperthyroidism caused by hCG",
+   "cc",
+   "hCG stimulates Leydig cells to make estrogen and weakly stimulates the TSH receptor, so breast enlargement and thyrotoxicosis can appear."
+  ],
+  [
+   "Hemorrhagic, necrotic mass of primitive pleomorphic cells",
+   "ec",
+   "Primitive cells that grow in sheets and glands outstrip their blood supply, producing the hemorrhagic and necrotic gross appearance."
+  ],
+  [
+   "AFP or hCG variably raised",
+   "ec",
+   "Embryonal carcinoma is often mixed with yolk sac or trophoblastic elements, so its markers vary with the mixture."
+  ],
+  [
+   "Reinke crystals in a golden-brown nodule",
+   "ley",
+   "Rod-shaped crystalloids in eosinophilic polygonal cells identify a Leydig cell tumor."
+  ],
+  [
+   "Precocious puberty in a boy or gynecomastia in a man, with normal AFP and hCG",
+   "ley",
+   "The tumor makes androgens and estrogens rather than tumor markers, so the hormonal syndrome is the clue."
+  ],
+  [
+   "Most common testicular mass in men older than 60",
+   "lym",
+   "Germ cell tumors peak in young men, so a testicular mass after age 60 is most likely lymphoma."
+  ],
+  [
+   "Often bilateral",
+   "lym",
+   "Unlike germ cell tumors, which are usually unilateral, lymphoma frequently involves both testes."
+  ],
+  [
+   "Usually diffuse large B-cell type, with night sweats and weight loss",
+   "lym",
+   "Systemic lymphoma symptoms and sheets of large atypical lymphoid cells distinguish it from germ cell tumors, and AFP and hCG remain normal."
+  ]
+ ]
+}

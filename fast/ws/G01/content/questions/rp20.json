@@ -314,7 +314,7 @@
    "PATHPHARM-MALE.7",
    "MDR-REVIEW.2"
   ],
-  "s": "A 63-year-old man has had 3 months of dull left flank discomfort and one episode of gross hematuria. He reports a new left scrotal swelling. On standing, a soft tangle is palpable above the left testis; unlike a typical varicocele, it does not collapse when he lies down. The testes are normal. Blood pressure is 150/92 mm Hg, and hemoglobin is 17.5 g/dL.",
+  "s": "A 63-year-old man has had 3 months of dull left flank discomfort and one episode of gross hematuria. He reports a new left scrotal swelling. On standing, a soft tangle is palpable above the left testis; unlike a typical varicocele, it does not collapse when he lies down. The testes are normal. Blood pressure is 150/92 mm Hg, and hemoglobin is 18.4 g/dL.",
   "l": "Which is the most likely cause of the scrotal finding?",
   "o": [
    "Nutcracker compression of the left renal vein",
@@ -557,18 +557,18 @@
   "l": "Which interpretation of these results is most appropriate?",
   "o": [
    "A nonseminomatous component is present despite the histology",
-   "The raised hCG alone excludes a pure seminoma",
-   "A raised AFP is a usual finding in pure seminoma",
-   "The raised LDH proves metastatic disease",
-   "Syncytiotrophoblast cells explain both markers"
+   "The mildly raised hCG alone excludes a pure seminoma",
+   "A raised AFP is a usual finding in classic pure seminoma",
+   "The raised LDH proves widespread metastatic disease",
+   "Syncytiotrophoblast cells in the tumor explain both markers"
   ],
   "a": 0,
   "e": "Pure **seminoma** never makes AFP, because its cells lack yolk sac differentiation. A raised AFP therefore means that a nonseminomatous element, usually yolk sac tumor, is present even if sampling missed it, and the patient is staged and treated as having a **nonseminomatous germ cell tumor**. A mild hCG rise is compatible with seminoma, since scattered syncytiotrophoblast cells make small amounts, and LDH reflects tumor bulk rather than tumor type. The distinction matters because seminoma is highly radiosensitive, whereas nonseminomatous tumors are treated mainly with chemotherapy and surgery.",
   "w": {
-   "The raised hCG alone excludes a pure seminoma": "Scattered syncytiotrophoblast cells in some seminomas release small amounts of hCG, so a mild rise is compatible with pure seminoma and does not exclude it.",
-   "A raised AFP is a usual finding in pure seminoma": "Pure seminoma never secretes AFP, because its cells lack yolk sac differentiation, so an elevated AFP always signals another germ cell element.",
-   "The raised LDH proves metastatic disease": "LDH reflects tumor bulk and helps with staging in any germ cell tumor, but it is nonspecific and does not by itself prove metastasis.",
-   "Syncytiotrophoblast cells explain both markers": "Syncytiotrophoblast cells in seminoma can explain a mild hCG rise, but they do not secrete AFP, so they cannot account for this man's markedly elevated AFP."
+   "The mildly raised hCG alone excludes a pure seminoma": "Scattered syncytiotrophoblast cells in some seminomas release small amounts of hCG, so a mild rise is compatible with pure seminoma and does not exclude it.",
+   "A raised AFP is a usual finding in classic pure seminoma": "Pure seminoma never secretes AFP, because its cells lack yolk sac differentiation, so an elevated AFP always signals another germ cell element.",
+   "The raised LDH proves widespread metastatic disease": "LDH reflects tumor bulk and helps with staging in any germ cell tumor, but it is nonspecific and does not by itself prove metastasis.",
+   "Syncytiotrophoblast cells in the tumor explain both markers": "Syncytiotrophoblast cells in seminoma can explain a mild hCG rise, but they do not secrete AFP, so they cannot account for this man's markedly elevated AFP."
   },
   "et": [
    [
@@ -583,22 +583,22 @@
      "Only yolk sac or embryonal cells make AFP"
     ],
     [
-     "The raised hCG alone excludes a pure seminoma",
+     "The mildly raised hCG alone excludes a pure seminoma",
      "hCG rules out seminoma",
      "Syncytiotrophoblast cells in seminoma can make mild hCG"
     ],
     [
-     "A raised AFP is a usual finding in pure seminoma",
+     "A raised AFP is a usual finding in classic pure seminoma",
      "AFP is normal for seminoma",
      "Seminoma cells make no AFP"
     ],
     [
-     "The raised LDH proves metastatic disease",
+     "The raised LDH proves widespread metastatic disease",
      "LDH shows metastasis",
      "LDH tracks tumor bulk, not tumor type"
     ],
     [
-     "Syncytiotrophoblast cells explain both markers",
+     "Syncytiotrophoblast cells in the tumor explain both markers",
      "One cell type explains both markers",
      "Syncytiotrophoblast cells make hCG, not AFP"
     ]
@@ -707,7 +707,8 @@
   ],
   "obj": [
    "HP-MALE.11",
-   "HP-MALE.18"
+   "HP-MALE.18",
+   "MDR-REVIEW.1"
   ],
   "s": "A 31-year-old man has a painless, firm left testicular mass found on self-examination. At age 6 he underwent left orchiopexy for an undescended testis. Ultrasonography shows a solid, homogeneous intratesticular lesion. After radical inguinal orchiectomy, the pathologist finds a pale, fleshy tumor of uniform large cells with clear cytoplasm and lymphocytes in fibrous septa. In the adjacent seminiferous tubules, atypical large germ cells with clear cytoplasm lie along the basement membrane, confined within the tubules.",
   "l": "Which lesion in the adjacent tubules is the precursor of this tumor?",
@@ -719,7 +720,7 @@
    "Leydig cell hyperplasia"
   ],
   "a": 3,
-  "e": "Most testicular germ cell tumors, including seminoma, arise from **germ cell neoplasia in situ** (GCNIS), atypical large germ cells with clear cytoplasm that sit inside the seminiferous tubules next to the invasive tumor. Cryptorchidism reflects testicular dysgenesis, so the risk remains raised after orchiopexy and in the other testis. An undescended testis also shows tubular atrophy with a thickened basement membrane and loss of spermatogonia, but that explains infertility, not cancer. Sertoli cell-only tubules, maturation arrest and Leydig cell hyperplasia are not neoplastic precursors.",
+  "e": "Most testicular germ cell tumors, including seminoma, arise from **germ cell neoplasia in situ** (GCNIS), atypical large germ cells with clear cytoplasm that sit inside the seminiferous tubules next to the invasive tumor. Cryptorchidism reflects testicular dysgenesis, so the risk of germ cell tumor stays raised in the repaired testis and in the other testis; orchiopexy between 6 and 18 months protects fertility and allows examination but does not remove it. An undescended testis also shows tubular atrophy with a thickened basement membrane and loss of spermatogonia, but that explains infertility, not cancer. Sertoli cell-only tubules, maturation arrest and Leydig cell hyperplasia are not neoplastic precursors.",
   "w": {
    "Sertoli cell-only tubules": "Sertoli cell-only tubules lack germ cells entirely and reflect germ cell aplasia, which causes infertility with a high FSH but is not a malignant precursor; the cells here are atypical germ cells.",
    "Atrophic tubules with a thickened basement membrane": "Thickened basement membranes and loss of spermatogonia are typical of an undescended testis and explain infertility, but they are degenerative changes, not the neoplastic precursor.",
@@ -784,24 +785,25 @@
   "obj": [
    "HP-MALE.18",
    "BICEP-MISHIMOTO.5",
-   "PATHPHARM-MALE.7"
+   "PATHPHARM-MALE.7",
+   "MDR-REVIEW.1"
   ],
   "s": "A 27-year-old man has a 3-week history of a painless, firm right testicular mass. Ultrasonography shows a 3-cm solid hypoechoic intratesticular lesion with no hydrocele. He is afebrile and has no urinary symptoms. Blood has been drawn for AFP, hCG and LDH. He has no children and hopes to have them. His surgeon plans definitive diagnosis and treatment.",
   "l": "Which approach is most appropriate?",
   "o": [
-   "Transscrotal needle biopsy of the mass",
+   "Transscrotal needle biopsy of the testicular mass",
    "Scrotal orchiectomy with preservation of the cord",
    "Observation with repeat ultrasonography in 6 weeks",
-   "Empiric antibiotics for presumed orchitis",
-   "Radical inguinal orchiectomy with high ligation of the cord"
+   "Empiric antibiotics for presumed epididymo-orchitis",
+   "Radical inguinal orchiectomy with high cord ligation"
   ],
   "a": 4,
   "e": "A solid intratesticular mass in a young man is a germ cell tumor until proven otherwise. The testis develops near the kidney, so its lymph drains to **para-aortic nodes**, whereas scrotal skin drains to the superficial inguinal nodes. Entering the scrotum could spill tumor into the scrotal wall and open a second nodal route, so the testis and cord are removed through the groin by **radical inguinal orchiectomy** with high ligation of the cord. Markers are drawn first, and sperm banking is offered before treatment. Biopsy, scrotal surgery, observation and antibiotics would delay or compromise cure.",
   "w": {
-   "Transscrotal needle biopsy of the mass": "Violating the scrotal wall can seed tumor into scrotal tissue and open lymphatics to the inguinal nodes, creating a second drainage route that complicates staging, so biopsy through the scrotum is avoided.",
+   "Transscrotal needle biopsy of the testicular mass": "Violating the scrotal wall can seed tumor into scrotal tissue and open lymphatics to the inguinal nodes, creating a second drainage route that complicates staging, so biopsy through the scrotum is avoided.",
    "Scrotal orchiectomy with preservation of the cord": "Operating through the scrotum carries the same risk as a transscrotal biopsy, and leaving the cord behind leaves tumor-bearing lymphatics and vessels in place.",
    "Observation with repeat ultrasonography in 6 weeks": "Waiting 6 weeks delays treatment of a presumed germ cell tumor, which is highly curable when treated early; a solid intratesticular mass is not expected to resolve.",
-   "Empiric antibiotics for presumed orchitis": "Antibiotics treat epididymo-orchitis, which is painful and gradual with inflammation and increased flow; this painless solid mass is cancer until proven otherwise."
+   "Empiric antibiotics for presumed epididymo-orchitis": "Antibiotics treat epididymo-orchitis, which is painful and gradual with inflammation and increased flow; this painless solid mass is cancer until proven otherwise."
   },
   "et": [
    [
@@ -811,7 +813,7 @@
    ],
    [
     [
-     "Transscrotal needle biopsy of the mass",
+     "Transscrotal needle biopsy of the testicular mass",
      "Opens scrotal lymphatics toward the inguinal nodes",
      "Risks seeding the scrotal wall"
     ],
@@ -826,12 +828,12 @@
      "Delays curable treatment"
     ],
     [
-     "Empiric antibiotics for presumed orchitis",
+     "Empiric antibiotics for presumed epididymo-orchitis",
      "None",
      "Treats infection, not tumor"
     ],
     [
-     "Radical inguinal orchiectomy with high ligation of the cord",
+     "Radical inguinal orchiectomy with high cord ligation",
      "Keeps drainage to para-aortic nodes only",
      "Removes testis and cord intact"
     ]
@@ -858,22 +860,23 @@
    "BP-rp20-04"
   ],
   "obj": [
-   "HP-MALE.13"
+   "HP-MALE.13",
+   "MDR-REVIEW.1"
   ],
   "s": "A 19-year-old man who never received routine childhood vaccines had parotid swelling and a low-grade fever 6 days ago. He now has a temperature of 38.7 °C and a swollen, exquisitely tender right testis with reddened scrotal skin. The testis and epididymis cannot be separated on palpation, and urinalysis is normal. Eight months later, ultrasonography shows a small, atrophic right testis.",
   "l": "Which mechanism best explains the atrophy of the testis?",
   "o": [
-   "Pressure necrosis of seminiferous tubules within the tunica albuginea",
+   "Pressure necrosis of tubules within the tunica albuginea",
    "Direct viral destruction of Leydig cells",
-   "Bacterial abscess formation in the epididymis",
+   "Bacterial abscess formation within the epididymis",
    "Venous obstruction from torsion of the spermatic cord",
    "Heat injury from loss of pampiniform cooling"
   ],
   "a": 0,
   "e": "Mumps is the classic cause of viral **orchitis**, inflaming the testis in roughly 20 to 30 percent of males infected after puberty, usually about a week after parotitis. The inflamed testis swells inside the tough, inelastic **tunica albuginea**, so pressure rises and compresses the seminiferous tubules and their blood supply, causing pressure necrosis and atrophy. Damage to the blood-testis barrier adds an immune attack, and bilateral disease can cause infertility. The tubules suffer more than the Leydig cells, the process is sterile rather than bacterial, and torsion would start abruptly with an absent cremasteric reflex.",
   "w": {
-   "Direct viral destruction of Leydig cells": "Mumps orchitis damages the tubules more than the interstitium; Leydig cells are relatively spared, so testosterone usually remains adequate even when sperm production is lost.",
-   "Bacterial abscess formation in the epididymis": "Mumps is viral and the orchitis is sterile inflammation with edema and lymphocytes; the epididymis is not the site of an abscess here, and the urinalysis shows no pyuria.",
+   "Direct viral destruction of Leydig cells": "Mumps orchitis damages the tubules more than the interstitium; Leydig cells are relatively spared, so sperm production is lost more often than androgen production.",
+   "Bacterial abscess formation within the epididymis": "Mumps is viral and the orchitis is sterile inflammation with edema and lymphocytes; the epididymis is not the site of an abscess here, and the urinalysis shows no pyuria.",
    "Venous obstruction from torsion of the spermatic cord": "Torsion begins abruptly in an adolescent with an absent cremasteric reflex; this man has a preceding viral illness with parotitis, redness and a gradual course.",
    "Heat injury from loss of pampiniform cooling": "The pampiniform plexus continues to cool arterial blood in orchitis; the damage comes from inflammation and trapped swelling, not from loss of heat exchange."
   },
@@ -885,7 +888,7 @@
    ],
    [
     [
-     "Pressure necrosis of seminiferous tubules within the tunica albuginea",
+     "Pressure necrosis of tubules within the tunica albuginea",
      "Mumps orchitis after puberty",
      "Tubular atrophy; infertility if bilateral"
     ],
@@ -895,7 +898,7 @@
      "Would cause androgen deficiency"
     ],
     [
-     "Bacterial abscess formation in the epididymis",
+     "Bacterial abscess formation within the epididymis",
      "Bacterial epididymo-orchitis",
      "Pus and pyuria"
     ],

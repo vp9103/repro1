@@ -1,0 +1,54 @@
+{
+ "id": "d_rp19_order",
+ "c": "rp19",
+ "kind": "order",
+ "t": "From stem cell to fertilizing sperm",
+ "tags": [
+  "meiosis-karyotype",
+  "anatomic-relations"
+ ],
+ "bp": [
+  "BP-rp19-02",
+  "BP-rp19-03"
+ ],
+ "q": "Put the events in a sperm's life in order, from the stem cell on the basement membrane to a sperm able to fertilize an egg.",
+ "key": "The order follows both the sperm's route and its maturation: mitosis, meiosis I and II, remodeling, release, transit through the ducts, epididymal motility, ejaculation and finally capacitation in the female tract; the testis builds the sperm, the epididymis makes it move and the female tract makes it fertile.",
+ "items": [
+  [
+   "Spermatogonia divide by mitosis on the basement membrane",
+   "Diploid stem cells must renew themselves and send committed daughters inward before any meiosis can happen, so this mitotic step comes first."
+  ],
+  [
+   "Primary spermatocytes replicate DNA and complete meiosis I",
+   "Committed cells cross the Sertoli tight junctions, copy their DNA and divide to give haploid secondary spermatocytes, so meiosis I precedes meiosis II."
+  ],
+  [
+   "Secondary spermatocytes complete meiosis II to form haploid spermatids",
+   "The second division follows within hours and splits the sister chromatids, leaving round haploid spermatids that no longer divide."
+  ],
+  [
+   "Spermatids remodel in spermiogenesis: acrosome, flagellum, shed cytoplasm",
+   "Without dividing, each spermatid builds its acrosome from the Golgi, grows a tail and sheds cytoplasm, so shape change comes only after meiosis ends."
+  ],
+  [
+   "Spermiation releases immotile sperm into the tubule lumen",
+   "Remodeled sperm are freed into the tubule fluid only once their shape is complete, and they are still unable to swim."
+  ],
+  [
+   "Sperm pass through the rete testis and efferent ductules",
+   "Tubular fluid carries immotile sperm out of the testis, and the ductules reabsorb most of the fluid before the sperm reach the epididymis."
+  ],
+  [
+   "Sperm gain motility and are stored in the epididymis",
+   "Transit through the epididymal head and body gives forward motility, and the tail stores the sperm until ejaculation."
+  ],
+  [
+   "Emission and ejaculation carry sperm through the ductus deferens to the urethra",
+   "Sympathetic emission moves sperm and gland fluids into the urethra before pudendal-driven contractions expel the semen."
+  ],
+  [
+   "Capacitation and the acrosome reaction occur in the female tract",
+   "Only after ejaculation do female tract secretions make sperm able to fertilize, so these steps cannot occur in the testis or epididymis."
+  ]
+ ]
+}

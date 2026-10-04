@@ -180,7 +180,7 @@
   "s": "A 46-year-old man with a BMI of 39 kg/m² has fatigue, reduced libido and new bilateral breast tenderness. He takes no medications and drinks little alcohol. His testes are normal in size and consistency. Morning total testosterone is low and serum estradiol is high. LH is in the low-normal range, and prolactin and TSH are normal.",
   "l": "Which mechanism best explains these findings?",
   "o": [
-   "Increased aromatization of testosterone in adipose tissue",
+   "Increased aromatization of testosterone in fat",
    "Primary failure of Leydig cells",
    "Reduced 5-alpha-reductase activity in genital skin",
    "Excess inhibin B secretion by Sertoli cells",
@@ -190,7 +190,7 @@
   "e": "Adipose tissue is the main site of **aromatase**, which converts testosterone to estradiol. In obesity the expanded fat mass makes more estradiol, which suppresses GnRH and LH by negative feedback, so testosterone falls while LH stays low or inappropriately normal. The excess of estrogen relative to androgen causes breast tenderness and gynecomastia. A failing testis would leave LH high because feedback is lost, so primary Leydig failure does not fit. Reduced 5-alpha-reductase would not raise estradiol, inhibin B acts on FSH alone, and faster GnRH pulses would raise LH and testosterone.",
   "w": {
    "Primary failure of Leydig cells": "Failing Leydig cells would lower testosterone, but the loss of feedback would raise LH; this man's LH is low-normal and his estradiol is high, which points to a source of estrogen rather than a failing testis.",
-   "Reduced 5-alpha-reductase activity in genital skin": "This enzyme converts testosterone to DHT in the prostate, skin and hair follicles; reduced activity would not lower total testosterone or raise estradiol, and DHT is not made in fat.",
+   "Reduced 5-alpha-reductase activity in genital skin": "This enzyme converts testosterone to DHT in the prostate, skin and hair follicles; reduced activity would not lower total testosterone or raise estradiol, because estradiol comes from aromatase rather than from DHT.",
    "Excess inhibin B secretion by Sertoli cells": "Inhibin B suppresses FSH only and has no effect on testosterone or estradiol production, so a selective effect on FSH would leave this man's androgen and estrogen levels unexplained.",
    "Increased frequency of hypothalamic GnRH pulses": "Faster GnRH pulses would drive more LH and testosterone output, the opposite of this low-testosterone, low-LH pattern."
   },
@@ -203,7 +203,7 @@
    ],
    [
     [
-     "Increased aromatization of testosterone in adipose tissue",
+     "Increased aromatization of testosterone in fat",
      "Falls",
      "Rises",
      "Low or normal"
@@ -423,19 +423,19 @@
   "s": "A 30-year-old man has a semen analysis as part of a preconception evaluation requested by his wife. About 10 weeks ago he had influenza with a temperature of 39.8 °C (103.6 °F) lasting 4 days, and he has recovered fully. He takes no medications and does not smoke. Both testes measure 20 mL, and no varicocele is palpable. The semen analysis shows a sperm concentration of 8 million/mL with reduced motility. Serum FSH and testosterone are normal.",
   "l": "Which is the most appropriate next step?",
   "o": [
-   "Testicular biopsy to examine spermatogenesis",
+   "Testicular biopsy to assess the seminiferous tubules",
    "Karyotype and Y chromosome microdeletion testing",
-   "Reassurance and a repeat semen analysis in about 3 months",
-   "Empiric clomiphene to raise FSH and LH",
-   "Surgical ligation of the testicular veins"
+   "Reassurance and repeat semen analysis in 3 months",
+   "Empiric clomiphene to raise serum FSH and LH",
+   "Surgical ligation of the internal spermatic veins"
   ],
   "a": 2,
   "e": "Spermatogenesis takes about 64 to 74 days and epididymal transit adds about 2 weeks, so a sample reflects events roughly **3 months** earlier. A high fever about 10 weeks ago injured germ cells in the early stages of that cycle, and they are reaching the ejaculate now. His normal testis size, FSH and testosterone show intact tubules and no hypogonadism, so the best step is **reassurance and a repeat semen analysis** after about 3 months. Biopsy, genetic testing for severe oligospermia, clomiphene and varicocele repair address other causes, and none is indicated for a transient insult.",
   "w": {
-   "Testicular biopsy to examine spermatogenesis": "Biopsy is reserved for azoospermia of unclear cause, and a transient dip after a fever recovers on its own; an invasive test would be premature with normal testis size and FSH.",
+   "Testicular biopsy to assess the seminiferous tubules": "Biopsy is reserved for azoospermia of unclear cause, and a transient dip after a fever recovers on its own; an invasive test would be premature with normal testis size and FSH.",
    "Karyotype and Y chromosome microdeletion testing": "Genetic testing is advised for severe oligospermia below 5 million/mL or azoospermia; 8 million/mL with a recent fever does not meet that threshold and has an obvious transient cause.",
-   "Empiric clomiphene to raise FSH and LH": "Clomiphene raises gonadotropins in secondary hypogonadism; his FSH and testosterone are normal, so there is no deficiency to correct, and treatment would not shorten the 3-month sperm cycle.",
-   "Surgical ligation of the testicular veins": "Venous ligation treats a palpable varicocele with abnormal semen, and none is found on examination; it also would not explain an abnormality that began after a fever."
+   "Empiric clomiphene to raise serum FSH and LH": "Clomiphene raises gonadotropins in secondary hypogonadism; his FSH and testosterone are normal, so there is no deficiency to correct, and treatment would not shorten the 3-month sperm cycle.",
+   "Surgical ligation of the internal spermatic veins": "Venous ligation treats a palpable varicocele with abnormal semen, and none is found on examination; it also would not explain an abnormality that began after a fever."
   },
   "et": [
    [
@@ -445,7 +445,7 @@
    ],
    [
     [
-     "Testicular biopsy to examine spermatogenesis",
+     "Testicular biopsy to assess the seminiferous tubules",
      "Azoospermia of unclear cause",
      "Sperm are present; testis size and FSH normal"
     ],
@@ -455,17 +455,17 @@
      "8 million/mL with a recent fever"
     ],
     [
-     "Reassurance and a repeat semen analysis in about 3 months",
+     "Reassurance and repeat semen analysis in 3 months",
      "Transient insult such as a fever or new drug",
      "Fever 10 weeks ago and normal testes"
     ],
     [
-     "Empiric clomiphene to raise FSH and LH",
+     "Empiric clomiphene to raise serum FSH and LH",
      "Low FSH and LH with low testosterone",
      "FSH and testosterone are normal"
     ],
     [
-     "Surgical ligation of the testicular veins",
+     "Surgical ligation of the internal spermatic veins",
      "Palpable varicocele with abnormal semen",
      "No varicocele on examination"
     ]
@@ -799,7 +799,8 @@
   "obj": [
    "HP-MALE.4",
    "PATHPHARM-MALE.1",
-   "BICEP-MISHIMOTO.1"
+   "BICEP-MISHIMOTO.1",
+   "ANAT-PELVIS-LAB.13"
   ],
   "s": "A scrotal specimen from a 41-year-old man shows many cross-sections of a single, highly coiled duct. It is lined by tall pseudostratified columnar cells with long, nonmotile apical projections and is surrounded by only a thin layer of circular smooth muscle. The lumens are packed with spermatozoa.",
   "l": "Which structure is this?",

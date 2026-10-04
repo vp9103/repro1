@@ -444,8 +444,8 @@
  {
   "id": "rp11r13",
   "tags": [
-   "workup-sequence",
-   "normal-vs-pathologic"
+   "feedback-logic",
+   "workup-sequence"
   ],
   "bp": [
    "BP-rp11-10"
@@ -453,29 +453,29 @@
   "obj": [
    "MENOPAUSE.12"
   ],
-  "q": "Which tests rule out pregnancy, thyroid disease and hyperprolactinemia in a woman with new amenorrhea and hot flashes?",
+  "q": "Hyperprolactinemia can mimic menopause with amenorrhea and hot flashes by suppressing which hypothalamic hormone?",
   "o": [
-   "FSH, LH and estradiol",
-   "hCG, TSH and prolactin",
-   "AMH, inhibin B and estradiol",
-   "Testosterone, DHEAS and 17-hydroxyprogesterone",
-   "hCG, FSH and estradiol"
+   "TRH",
+   "GnRH",
+   "Dopamine",
+   "CRH",
+   "Somatostatin"
   ],
   "a": 1,
-  "x": "Pregnancy, thyroid disease and hyperprolactinemia can mimic menopause with missed periods, flushing, mood changes and sleep problems, so hCG, TSH and prolactin are checked when the picture is atypical or the woman is young. FSH alone would not separate these causes from ovarian failure.",
+  "x": "Excess prolactin suppresses GnRH pulses, so LH and FSH fall and estradiol falls, producing amenorrhea, hot flashes and vaginal dryness like menopause. Unlike menopause, FSH is low or normal rather than high, and galactorrhea may occur, which is why prolactin is measured along with hCG and TSH when the picture is atypical.",
   "w": {
-   "FSH, LH and estradiol": "These gonadal hormones show whether the ovary is failing and are normal or erratic in the transition, but none excludes pregnancy, thyroid disease or prolactin excess; they confirm the pattern rather than exclude look-alikes.",
-   "AMH, inhibin B and estradiol": "These are markers of ovarian reserve, and none excludes pregnancy, hypothyroidism or a prolactinoma; AMH values vary too much between women to date menopause, so they add little.",
-   "Testosterone, DHEAS and 17-hydroxyprogesterone": "These are androgen tests used when hirsutism or acne suggests polycystic ovary syndrome or nonclassic congenital adrenal hyperplasia, which cause irregular cycles in young women, not the look-alikes of menopause.",
-   "hCG, FSH and estradiol": "This panel includes the pregnancy test, which is essential, and adds ovarian markers, but it leaves out the thyroid and prolactin checks, so hypothyroidism or a prolactinoma could still explain the symptoms."
+   "TRH": "TRH stimulates TSH and also prolactin, so hypothyroidism can raise prolactin; the direction is reversed here, since prolactin excess does not switch TRH off, and the gonadal axis is what fails.",
+   "Dopamine": "Dopamine is the hypothalamic brake on prolactin, and prolactin excess actually increases dopamine release through short-loop feedback; the signal that fails in this case is the gonadotropin-releasing signal, not the brake.",
+   "CRH": "CRH drives ACTH and cortisol, and chronic stress can suppress the reproductive axis, but prolactin excess acts on the kisspeptin and GnRH neurons themselves rather than through the stress pathway.",
+   "Somatostatin": "Somatostatin inhibits release of growth hormone and TSH; it is not the signal that prolactin excess suppresses, and losing it would raise growth hormone rather than cause amenorrhea."
   },
-  "media": "fig:rp9_workup",
+  "media": "fig:en3_prl",
   "pt": {
    "hl": [
-    "Step 1 · Pregnancy test (hCG)",
-    "Step 2 · TSH, prolactin, FSH"
+    "Prolactin excess",
+    "GnRH suppressed: low LH and FSH"
    ],
-   "say": "The amenorrhea work-up begins with the pregnancy test (hCG) in step 1, then step 2 checks TSH, prolactin and FSH, so hCG, TSH and prolactin exclude the common mimics."
+   "say": "In the prolactin excess chain, GnRH suppressed with low LH and FSH leads to amenorrhea like menopause, but with a low rather than high FSH, so GnRH is the hormone prolactin excess suppresses."
   }
  },
  {
