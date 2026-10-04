@@ -470,7 +470,15 @@
     ]
    ]
   ],
-  "bl": "Subnuclear vacuoles are the earliest secretory change, appearing about 2 days after ovulation under rising progesterone."
+  "bl": "Subnuclear vacuoles are the earliest secretory change, appearing about 2 days after ovulation under rising progesterone.",
+  "ef": "rp8_endometrium",
+  "pt": {
+   "hl": [
+    "+2 days",
+    "Subnuclear vacuoles"
+   ],
+   "say": "The clock row at +2 days reads subnuclear vacuoles, the first sign of progesterone, while stromal edema waits until +7 days, so the biopsy was taken about 2 days after ovulation."
+  }
  },
  {
   "id": "rp8q07",
@@ -541,7 +549,15 @@
     ]
    ]
   ],
-  "bl": "Kartagener syndrome disables the tube's ciliated cells, so the oocyte is not moved toward the uterus: infertility and ectopic pregnancy."
+  "bl": "Kartagener syndrome disables the tube's ciliated cells, so the oocyte is not moved toward the uterus: infertility and ectopic pregnancy.",
+  "ef": "rp8_tract",
+  "pt": {
+   "hl": [
+    "Ciliated cells beat toward the uterus",
+    "Kartagener syndrome"
+   ],
+   "say": "The fallopian tube row shows ciliated cells beating toward the uterus to carry the oocyte, and Kartagener syndrome disables exactly these cells, causing infertility and ectopic pregnancy."
+  }
  },
  {
   "id": "rp8q08",
@@ -689,7 +705,15 @@
     ]
    ]
   ],
-  "bl": "The stratum basalis regenerates the endometrium each cycle; curettage that removes it causes Asherman adhesions and amenorrhea."
+  "bl": "The stratum basalis regenerates the endometrium each cycle; curettage that removes it causes Asherman adhesions and amenorrhea.",
+  "ef": "rp8_endometrium",
+  "pt": {
+   "hl": [
+    "Stratum basalis",
+    "Asherman syndrome: scarring"
+   ],
+   "say": "The stratum basalis, fed by straight arteries, is never shed and regrows the functionalis each cycle, so curettage that removes it leaves scar adhesions and no regrowth: Asherman syndrome."
+  }
  },
  {
   "id": "rp8q10",
@@ -763,6 +787,14 @@
     ]
    ]
   ],
-  "bl": "hCG from the embryo binds corpus luteum LH receptors and rescues it, keeping progesterone high until the placenta takes over."
+  "bl": "hCG from the embryo binds corpus luteum LH receptors and rescues it, keeping progesterone high until the placenta takes over.",
+  "ef": "rp25_hormones",
+  "pt": {
+   "hl": [
+    "hCG rescues the corpus luteum until the placenta takes over",
+    "rescued by hCG"
+   ],
+   "say": "The title and the progesterone panel show hCG from the syncytiotrophoblast rescuing the corpus luteum, so progesterone stays high past day 28 until the placenta takes over at about 10 weeks."
+  }
  }
 ]

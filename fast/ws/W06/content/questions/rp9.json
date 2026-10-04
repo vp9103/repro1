@@ -148,7 +148,15 @@
     ]
    ]
   ],
-  "bl": "Oligo-ovulation plus hyperandrogenism, with TSH, prolactin and 17-hydroxyprogesterone normal, is polycystic ovary syndrome by Rotterdam criteria."
+  "bl": "Oligo-ovulation plus hyperandrogenism, with TSH, prolactin and 17-hydroxyprogesterone normal, is polycystic ovary syndrome by Rotterdam criteria.",
+  "ef": "rp9_aub",
+  "pt": {
+   "hl": [
+    "Polycystic ovary syndrome",
+    "Rotterdam criteria: two of three"
+   ],
+   "say": "Her cycles every 45 to 90 days from menarche plus clinical hyperandrogenism meet two of the three Rotterdam criteria, and TSH, prolactin and 17-hydroxyprogesterone are normal: polycystic ovary syndrome."
+  }
  },
  {
   "id": "rp9q03",
@@ -540,7 +548,15 @@
     ]
    ]
   ],
-  "bl": "A prolactinoma suppresses GnRH, causing amenorrhea with galactorrhea; a dopamine agonist such as cabergoline is first-line treatment."
+  "bl": "A prolactinoma suppresses GnRH, causing amenorrhea with galactorrhea; a dopamine agonist such as cabergoline is first-line treatment.",
+  "ef": "en3_prl",
+  "pt": {
+   "hl": [
+    "GnRH suppressed: low LH and FSH",
+    "Cabergoline (first choice)"
+   ],
+   "say": "Excess prolactin suppresses GnRH, so LH and FSH fall and menses stop with galactorrhea; cabergoline, a dopamine agonist that restores the brake on the lactotroph, is the first-choice treatment."
+  }
  },
  {
   "id": "rp9q08",
@@ -692,7 +708,15 @@
     ]
    ]
   ],
-  "bl": "Heavy menstrual bleeding since menarche with nosebleeds suggests coagulopathy, usually von Willebrand disease: the C in PALM-COEIN."
+  "bl": "Heavy menstrual bleeding since menarche with nosebleeds suggests coagulopathy, usually von Willebrand disease: the C in PALM-COEIN.",
+  "ef": "rp9_aub",
+  "pt": {
+   "hl": [
+    "Coagulopathy",
+    "von Willebrand disease"
+   ],
+   "say": "On the nonstructural COEIN side, C is coagulopathy: von Willebrand disease causes heavy bleeding since menarche with nosebleeds and bleeding after dental work, with a mildly prolonged aPTT."
+  }
  },
  {
   "id": "rp9q10",
@@ -766,7 +790,15 @@
     ]
    ]
   ],
-  "bl": "Bilateral hydrosalpinges with no spill after pelvic infection mean tubal factor infertility; in vitro fertilization bypasses the tubes."
+  "bl": "Bilateral hydrosalpinges with no spill after pelvic infection mean tubal factor infertility; in vitro fertilization bypasses the tubes.",
+  "ef": "rp9_infertility",
+  "pt": {
+   "hl": [
+    "Dilated, no spill: hydrosalpinx",
+    "IVF bypasses the tubes"
+   ],
+   "say": "On hysterosalpingography a dilated tube with no spill is a hydrosalpinx, and in the tubes column in vitro fertilization bypasses the damaged tubes after the hydrosalpinges are clipped or removed."
+  }
  },
  {
   "id": "rp9q11",
@@ -840,6 +872,14 @@
     ]
    ]
   ],
-  "bl": "Letrozole is first-line ovulation induction in PCOS: aromatase inhibition lowers estrogen feedback, so FSH rises and a follicle matures."
+  "bl": "Letrozole is first-line ovulation induction in PCOS: aromatase inhibition lowers estrogen feedback, so FSH rises and a follicle matures.",
+  "ef": "rp9_infertility",
+  "pt": {
+   "hl": [
+    "Letrozole first in PCOS",
+    "Aromatase inhibitor lowers estrogen"
+   ],
+   "say": "In the ovulation column letrozole comes first in PCOS: as an aromatase inhibitor it lowers estrogen feedback, so FSH rises and a follicle matures."
+  }
  }
 ]

@@ -1,0 +1,32 @@
+after 1280x900 light rapid right #live: PASS "Binding proteins and free hormone. Correct: SHBG. SHBG. Liver production of sex hormone-binding glob"
+after 1280x900 light rapid right next lands on prompt: PASS DIV.rfq {} i=1
+after 1280x900 light rapid right extra Enter answers nothing: PASS {"i":1,"pick":null}
+after 1280x900 light rapid wrong #live: PASS "Feedback logic and axis labs. Wrong: Prolactin rises from the pituitary. Correct: High LH drives testicular aromatase. High LH, released because testosterone is" want "Wrong: Prolactin rises from the pituitary. Correct: High LH drives testicular aromatase."
+after 1280x900 light rapid wrong next lands on prompt: PASS DIV.rfq {} i=1
+after 1280x900 light rapid wrong extra Enter answers nothing: PASS {"i":1,"pick":null}
+after 1280x900 light practice right next lands on stem: PASS DIV.qstem {} i=1
+after 1280x900 light practice extra Enter answers nothing: PASS {"i":1,"shown":false}
+after 1280x900 dark rapid right #live: PASS "Tumor and serum markers. Correct: It falls by about half. It falls by about half. Finasteride and du"
+after 1280x900 dark rapid right next lands on prompt: PASS DIV.rfq {} i=1
+after 1280x900 dark rapid right extra Enter answers nothing: PASS {"i":1,"pick":null}
+after 1280x900 dark rapid wrong #live: PASS "Source of abnormal bleeding. Wrong: Endometrial polyp. Correct: Adenomyosis. Adenomyosis places endometrial glands and stroma inside the myometrium, and the mus" want "Wrong: Endometrial polyp. Correct: Adenomyosis."
+after 1280x900 dark rapid wrong next lands on prompt: PASS DIV.rfq {} i=1
+after 1280x900 dark rapid wrong extra Enter answers nothing: PASS {"i":1,"pick":null}
+after 1280x900 dark practice right next lands on stem: PASS DIV.qstem {} i=1
+after 1280x900 dark practice extra Enter answers nothing: PASS {"i":1,"shown":false}
+after 400x860 light rapid right #live: PASS "Inheritance pattern and recurrence risk. Correct: BRCA2. BRCA2 carriers have the highest risk of mal"
+after 400x860 light rapid right next lands on prompt: PASS DIV.rfq {} i=1
+after 400x860 light rapid right extra Enter answers nothing: PASS {"i":1,"pick":null}
+after 400x860 light rapid wrong #live: PASS "Drug target and mechanism. Wrong: Newly made viral RNA. Correct: The gag-pol polyprotein. The viral protease cuts the gag-pol polyprotein into mature capsid pro" want "Wrong: Newly made viral RNA. Correct: The gag-pol polyprotein."
+after 400x860 light rapid wrong next lands on prompt: PASS DIV.rfq {} i=1
+after 400x860 light rapid wrong extra Enter answers nothing: PASS {"i":1,"pick":null}
+after 400x860 light practice right next lands on stem: PASS DIV.qstem {} i=1
+after 400x860 light practice extra Enter answers nothing: PASS {"i":1,"shown":false}
+after 400x860 dark rapid right #live: PASS "Nerve supply and nerve injury. Correct: Hypogastric nerves. Hypogastric nerves. Sympathetic fibers f"
+after 400x860 dark rapid right next lands on prompt: PASS DIV.rfq {} i=1
+after 400x860 dark rapid right extra Enter answers nothing: PASS {"i":1,"pick":null}
+after 400x860 dark rapid wrong #live: PASS "Pathogen from clinical and lab clues. Wrong: Types 16 and 18. Correct: Types 6 and 11. Low-risk HPV types 6 and 11 cause genital warts, the soft cauliflower-lik" want "Wrong: Types 16 and 18. Correct: Types 6 and 11."
+after 400x860 dark rapid wrong next lands on prompt: PASS DIV.rfq {} i=1
+after 400x860 dark rapid wrong extra Enter answers nothing: PASS {"i":1,"pick":null}
+after 400x860 dark practice right next lands on stem: PASS DIV.qstem {} i=1
+after 400x860 dark practice extra Enter answers nothing: PASS {"i":1,"shown":false}

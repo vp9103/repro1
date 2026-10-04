@@ -1,36 +1,36 @@
-after 1280x900 light sort pick: focus on Next item: PASS #drnext live="Correct. “Hypothalamic TRH deficiency” does belong to Central (pituita"
+after 1280x900 light sort pick: focus on Next item: PASS #drnext live="Correct. “Lithium-induced hypothyroidism” does belong to Primary (thyr"
 after 1280x900 light sort next lands on the item: PASS DIV.sortitem {} {"top":233,"bottom":286,"hd":91,"vh":900,"inView":true}
 after 1280x900 light sort extra Enter answers nothing: PASS {"i":1,"last":false}
-after 1280x900 light multi pick: focus on Next item: PASS #drnext live="Correct. “Estradiol rising from the dominant follicle” fits Follicular"
+after 1280x900 light multi pick: focus on Next item: PASS #drnext live="Correct. “Length varies from cycle to cycle” fits Follicular. Follicle"
 after 1280x900 light multi next lands on the item: PASS DIV.sortitem {} {"top":233,"bottom":286,"hd":91,"vh":900,"inView":true}
 after 1280x900 light multi extra Enter answers nothing: PASS {"i":1,"last":false}
 after 1280x900 light order: every placement keeps focus on the moved step (in view): PASS 0:ok 1:ok 2:ok 3:ok 4:ok 5:ok
-after 1280x900 light order: returning a step keeps focus on it in the pool: PASS {"op":"5","txt":"+The follicle ruptures and releases the oocyte","inPool":true} {"top":315,"bottom":361,"hd":91,"vh":900,"inView":true}
-after 1280x900 light order: Check the sequence lands on the verdict (in view): PASS #ordverdict {"top":680,"bottom":822,"hd":91,"vh":900,"inView":true} live="Not the real order. 5 of 6 steps are out of place: “Estradiol stays high for about two day"
+after 1280x900 light order: returning a step keeps focus on it in the pool: PASS {"op":"1","txt":"+One dominant follicle emerges and makes more estradiol","inPool":true} {"top":315,"bottom":361,"hd":91,"vh":900,"inView":true}
+after 1280x900 light order: Check the sequence lands on the verdict (in view): PASS #ordverdict {"top":680,"bottom":844,"hd":91,"vh":900,"inView":true} live="Not the real order. 6 of 6 steps are out of place: “The pituitary releases the LH surge” b"
 after 1280x900 dark sort pick: focus on Next item: PASS #drnext live="Correct. “Anti-thyroid peroxidase antibodies present” does belong to P"
 after 1280x900 dark sort next lands on the item: PASS DIV.sortitem {} {"top":233,"bottom":286,"hd":91,"vh":900,"inView":true}
 after 1280x900 dark sort extra Enter answers nothing: PASS {"i":1,"last":false}
-after 1280x900 dark multi pick: focus on Next item: PASS #drnext live="Correct. “Mid-cycle pain (mittelschmerz)” fits Ovulation. Follicle rup"
-after 1280x900 dark multi next lands on the item: PASS DIV.sortitem {} {"top":248,"bottom":301,"hd":91,"vh":900,"inView":true}
+after 1280x900 dark multi pick: focus on Next item: PASS #drnext live="Correct. “Oocyte completes meiosis I” fits Ovulation. The LH surge res"
+after 1280x900 dark multi next lands on the item: PASS DIV.sortitem {} {"top":233,"bottom":286,"hd":91,"vh":900,"inView":true}
 after 1280x900 dark multi extra Enter answers nothing: PASS {"i":1,"last":false}
 after 1280x900 dark order: every placement keeps focus on the moved step (in view): PASS 0:ok 1:ok 2:ok 3:ok 4:ok 5:ok
-after 1280x900 dark order: returning a step keeps focus on it in the pool: PASS {"op":"2","txt":"+Estradiol stays high for about two days","inPool":true} {"top":315,"bottom":361,"hd":91,"vh":900,"inView":true}
-after 1280x900 dark order: Check the sequence lands on the verdict (in view): PASS #ordverdict {"top":680,"bottom":822,"hd":91,"vh":900,"inView":true} live="Not the real order. 4 of 6 steps are out of place: “The follicle ruptures and releases the"
-after 400x860 light sort pick: focus on Next item: PASS #drnext live="Correct. “Other anterior pituitary hormones also low” does belong to C"
+after 1280x900 dark order: returning a step keeps focus on it in the pool: PASS {"op":"1","txt":"+One dominant follicle emerges and makes more estradiol","inPool":true} {"top":315,"bottom":361,"hd":91,"vh":900,"inView":true}
+after 1280x900 dark order: Check the sequence lands on the verdict (in view): PASS #ordverdict {"top":680,"bottom":822,"hd":91,"vh":900,"inView":true} live="Not the real order. 5 of 6 steps are out of place: “Estradiol stays high for about two day"
+after 400x860 light sort pick: focus on Next item: PASS #drnext live="Correct. “After pituitary surgery” does belong to Central (pituitary o"
 after 400x860 light sort next lands on the item: PASS DIV.sortitem {} {"top":247,"bottom":300,"hd":80,"vh":860,"inView":true}
 after 400x860 light sort extra Enter answers nothing: PASS {"i":1,"last":false}
-after 400x860 light multi pick: focus on Next item: PASS #drnext live="Correct. “FSH highest at the start of the phase” fits Follicular. Fall"
+after 400x860 light multi pick: focus on Next item: PASS #drnext live="Correct. “Fixed length of about 14 days” fits Luteal. The corpus luteu"
 after 400x860 light multi next lands on the item: PASS DIV.sortitem {} {"top":253,"bottom":306,"hd":80,"vh":860,"inView":true}
 after 400x860 light multi extra Enter answers nothing: PASS {"i":1,"last":false}
 after 400x860 light order: every placement keeps focus on the moved step (in view): PASS 0:ok 1:ok 2:ok 3:ok 4:ok 5:ok
-after 400x860 light order: returning a step keeps focus on it in the pool: PASS {"op":"2","txt":"+Estradiol stays high for about two days","inPool":true} {"top":310,"bottom":376,"hd":80,"vh":860,"inView":true}
-after 400x860 light order: Check the sequence lands on the verdict (in view): PASS #ordverdict {"top":727,"bottom":1163,"hd":80,"vh":860,"inView":true} live="Not the real order. 6 of 6 steps are out of place: “The follicle ruptures and releases the"
-after 400x860 dark sort pick: focus on Next item: PASS #drnext live="Correct. “Lithium-induced hypothyroidism” does belong to Primary (thyr"
+after 400x860 light order: returning a step keeps focus on it in the pool: PASS {"op":"1","txt":"+One dominant follicle emerges and makes more estradiol","inPool":true} {"top":310,"bottom":376,"hd":80,"vh":860,"inView":true}
+after 400x860 light order: Check the sequence lands on the verdict (in view): PASS #ordverdict {"top":229,"bottom":665,"hd":80,"vh":860,"inView":true} live="Not the real order. 6 of 6 steps are out of place: “The pituitary releases the LH surge” b"
+after 400x860 dark sort pick: focus on Next item: PASS #drnext live="Correct. “Craniopharyngioma compressing the stalk” does belong to Cent"
 after 400x860 dark sort next lands on the item: PASS DIV.sortitem {} {"top":247,"bottom":300,"hd":80,"vh":860,"inView":true}
 after 400x860 dark sort extra Enter answers nothing: PASS {"i":1,"last":false}
-after 400x860 dark multi pick: focus on Next item: PASS #drnext live="Correct. “Progesterone from the corpus luteum” fits Luteal. The lutein"
-after 400x860 dark multi next lands on the item: PASS DIV.sortitem {} {"top":268,"bottom":321,"hd":80,"vh":860,"inView":true}
+after 400x860 dark multi pick: focus on Next item: PASS #drnext live="Correct. “Basal body temperature rises” fits Luteal. Progesterone rais"
+after 400x860 dark multi next lands on the item: PASS DIV.sortitem {} {"top":253,"bottom":306,"hd":80,"vh":860,"inView":true}
 after 400x860 dark multi extra Enter answers nothing: PASS {"i":1,"last":false}
 after 400x860 dark order: every placement keeps focus on the moved step (in view): PASS 0:ok 1:ok 2:ok 3:ok 4:ok 5:ok
-after 400x860 dark order: returning a step keeps focus on it in the pool: PASS {"op":"0","txt":"+FSH recruits a cohort of antral follicles","inPool":true} {"top":310,"bottom":376,"hd":80,"vh":860,"inView":true}
-after 400x860 dark order: Check the sequence lands on the verdict (in view): PASS #ordverdict {"top":727,"bottom":1028,"hd":80,"vh":860,"inView":true} live="Not the real order. 3 of 6 steps are out of place: “The oocyte completes meiosis I” belong"
+after 400x860 dark order: returning a step keeps focus on it in the pool: PASS {"op":"4","txt":"+The oocyte completes meiosis I","inPool":true} {"top":310,"bottom":355,"hd":80,"vh":860,"inView":true}
+after 400x860 dark order: Check the sequence lands on the verdict (in view): PASS #ordverdict {"top":274,"bottom":665,"hd":80,"vh":860,"inView":true} live="Not the real order. 5 of 6 steps are out of place: “One dominant follicle emerges and make"

@@ -460,17 +460,28 @@ if(/[?&]selftest=1/.test(location.search)){
      queue's growth (at most 6 keyword matches, or 4), not every rapid item on the topic. A second
      miss on the same question queues nothing new, and the notice must say the items were already
      there. The wrong option is clicked on the rendered question. */
+  /* P2.6 (reopened 2026-10-04) - the second miss is made on the SAME wrong option as the first.
+     data-opt is the option's own index, but a served question is displayed in an order seeded by its
+     attempt count, so "the first wrong option on screen" was a different option on the second serve;
+     wirePractice queues rapid items by the keywords of the wrong option picked (q.w[pick]), so a
+     different pick can honestly add items ("1 newly added, 5 already there") and the check failed on
+     any bank whose wrong-option notes differ, while the stub's tiny bank hid it. */
   sec("linkedNotice", () => { const q = QS.find(x => RAPID.some(r => r.c === x.c)); if(!q) return {skipped:"no question with rapid items on its topic"};
-    const bad = [], serve = () => { S.mode = "practice"; S.ps = {set:[q.id], i:0, src:"all", t0:Date.now(), conf:"sure"}; SET_EMPTY = null; render();
-      const b = [...document.querySelectorAll("main [data-opt]")].find(x => +x.dataset.opt !== q.a); if(b) b.click();
+    const wrong = (q.a + 1) % q.o.length, bad = [], serve = pick => { S.mode = "practice"; S.ps = {set:[q.id], i:0, src:"all", t0:Date.now(), conf:"sure"}; SET_EMPTY = null; render();
+      const b = document.querySelector('main [data-opt="' + pick + '"]'); if(b) b.click();
       const t = ((document.querySelector("main .linked") || {}).textContent || "").replace(/\s+/g, " ").trim(), m = /Queued for review:\s*(\d+)/.exec(t);
       return {t, n:m ? +m[1] : 0}; };
-    fresh(); const a = serve(), grew = S.linked.length, onTopic = RAPID.filter(r => r.c === q.c).length;
+    fresh(); const a = serve(wrong), grew = S.linked.length, onTopic = RAPID.filter(r => r.c === q.c).length;
     if(!grew || a.n !== grew) bad.push("first miss: the notice says " + a.n + ", the queue grew by " + grew);
     if(!/added to your linked queue/.test(a.t)) bad.push("first miss: the notice does not say the items were added");
-    const b2 = serve();
+    const b2 = serve(wrong);
     if(b2.n !== grew || S.linked.length !== grew || !/already in your linked queue/.test(b2.t)) bad.push("second miss: \"" + b2.t.slice(0, 90) + "\" with the queue at " + S.linked.length);
-    return {question:q.id, rapidOnTopic:onTopic, queued:grew, first:a.t, second:b2.t, bad, pass:!bad.length}; });
+    /* a miss on a DIFFERENT wrong option may queue other items; the notice must then say exactly how many */
+    const others = q.o.map((o, i) => i).filter(i => i !== q.a && i !== wrong), third = [];
+    others.forEach(i => { const before = S.linked.length, c = serve(i), g = S.linked.length - before, m = /\((\d+) newly added, (\d+) already there\)/.exec(c.t); third.push(c.t);
+      if(g === 0 ? !/already in your linked queue/.test(c.t) : g === c.n ? !/added to your linked queue/.test(c.t) : !(m && +m[1] === g && +m[2] === c.n - g))
+        bad.push("miss on option " + i + ": the queue grew by " + g + " of " + c.n + " and the notice says \"" + c.t.slice(0, 160) + "\""); });
+    return {question:q.id, rapidOnTopic:onTopic, queued:grew, first:a.t, second:b2.t, third, bad, pass:!bad.length}; });
   /* P2.6 (F30) - the tutor is never handed the answer to an item not answered in the CURRENT
      attempt. The first question, rapid item, image and drill of each kind in the loaded content is
      recorded as answered in an earlier attempt, then served again unanswered: its context must
@@ -753,6 +764,191 @@ if(/[?&]selftest=1/.test(location.search)){
     fresh(); S.mode = "path"; render();
     return {skipped:checked.length ? undefined : "no piece of 320+ characters in this content", checked, landing, bad, pass:!bad.length};
   });
+  /* P2.V F31 / F31a / F31b / F31c (reopened 2026-10-04) - focus and #live after the moves the verifier caught.
+     (a) After a right or wrong answer the reader is on an answer option, and Enter there means "next" (rapid, image
+     and practice). The new item must put them on its prompt (.rfq / .qstem), never on the same-position option of
+     the new item, and a second Enter must answer nothing. Drill Next lands on the item (.sortitem). (b) Order drill:
+     a placed step keeps focus in "Your sequence", a returned step in the pool, and "Check the sequence" lands on
+     its verdict. (c) A wrong rapid pick says "Wrong: <pick>. Correct: <answer>." in the page and in #live; a right
+     one says only "Correct". Each case is played through the rendered controls; a kind of item the loaded content
+     does not have is skipped and named. */
+  sec("focusNext", () => {
+    const bad = [], seen = [], notRun = [];
+    const key = (t, k) => t.dispatchEvent(new KeyboardEvent("keydown", {key:k, bubbles:true, cancelable:true}));
+    const plain = h => { const t = document.createElement("div"); t.innerHTML = fmt(h); return t.textContent.replace(/\s+/g, " ").trim(); };
+    const live = () => String((el("live") || {}).textContent || "").replace(/[\s ]+/g, " ").trim();
+    const at = () => { const a = document.activeElement; return !a ? "nothing" : a === document.body ? "BODY" : a.tagName + (a.id ? "#" + a.id : "") + (a.className ? "." + String(a.className).split(" ")[0] : ""); };
+    const on = sel => { const a = document.activeElement; return !!a && a.matches && a.matches(sel); };
+    /* rapid, image, practice: answer with the control, stand on that option, press Enter (next), then Enter again */
+    const flow = (name, setup, optSel, answered, leadSel, next, idle) => {
+      fresh(); const pick = setup(); const b = document.querySelector(optSel(pick));
+      if(!b){ bad.push(name + ": no option to press"); return; }
+      b.focus(); b.click();
+      const again = document.querySelector(optSel(pick)); if(again) again.focus();   /* the reader is on the option they pressed */
+      if(!answered()){ bad.push(name + ": the press did not answer"); return; }
+      const said = live();
+      key(document.activeElement || document.body, "Enter");
+      if(!on(leadSel)) bad.push(name + ": after Enter for next, focus is on " + at() + ", not the new item's prompt (" + leadSel + ")");
+      if(!next()) bad.push(name + ": Enter for next did not move to the next item");
+      key(document.activeElement || document.body, "Enter");
+      if(!idle()) bad.push(name + ": a second Enter answered the new item");
+      seen.push(name); return said;
+    };
+    if(RAPID.length < 2) notRun.push("rapid: fewer than two items");
+    else ["right", "wrong"].forEach(kind => { const ids = RAPID.slice(0, 2).map(r => r.i), r = rItem(ids[0]);
+      const pick = kind === "right" ? r.a : (r.a + 1) % r.o.length;
+      const said = flow("rapid " + kind, () => { S.mode = "rapid"; S.rf = {set:ids.slice(), i:0, t0:Date.now(), src:"all"}; SET_EMPTY = null; render(); return pick; },
+        p => '.rfopts [data-rfo="' + p + '"]', () => S.rf && S.rf.pick === pick, ".rfq", () => S.rf && S.rf.i === 1 && S.rf.pick == null, () => S.rf.i === 1 && S.rf.pick == null);
+      const wrong = "Wrong: " + plain(r.o[pick]), right = "Correct: " + plain(r.o[r.a]);
+      if(said == null) return;
+      if(kind === "wrong"){
+        if(said.indexOf(wrong) < 0 || said.indexOf(right) < 0 || said.indexOf(wrong) > said.indexOf(right))
+          bad.push("rapid wrong: #live says \"" + said.slice(0, 120) + "\", not \"" + wrong + ". " + right + ".\"");
+        else if(said.indexOf(wrong + ". " + right) < 0) bad.push("rapid wrong: #live does not say \"" + wrong + ". " + right + "\" (" + said.slice(0, 120) + ")"); }
+      else if(said.indexOf(right) < 0 || /Wrong:/.test(said)) bad.push("rapid right: #live says \"" + said.slice(0, 120) + "\"");
+    });
+    const imgs = Object.keys(IMGS);
+    if(imgs.length < 2) notRun.push("image: fewer than two images");
+    else flow("image right", () => { S.mode = "spot"; S.sp = {set:imgs.slice(0, 2), i:0, src:"all", name:"All"}; buildSpotOpts(); SET_EMPTY = null; render();
+        return S.sp.opts.indexOf(IMGS[imgs[0]].dx); },
+      p => '.qopts [data-spo="' + p + '"]', () => S.sp && S.sp.pick != null, ".qstem", () => S.sp && S.sp.i === 1 && S.sp.pick == null, () => S.sp.i === 1 && S.sp.pick == null);
+    if(QS.length < 2) notRun.push("practice: fewer than two questions");
+    else flow("practice right", () => { const q = QS[0]; S.mode = "practice"; S.ps = {set:[QS[0].id, QS[1].id], i:0, src:"all", t0:Date.now(), conf:"sure"}; SET_EMPTY = null; render(); return q.a; },
+      p => '.qopts [data-opt="' + p + '"]', () => S.ps && S.ps.shown, ".qstem", () => S.ps && S.ps.i === 1 && !S.ps.shown, () => S.ps.i === 1 && !S.ps.shown);
+    ["sort", "multi"].forEach(k => { const d = DRILLS.find(x => (x.kind || "sort") === k && x.items.length > 1);
+      if(!d){ notRun.push(k + " drill: none"); return; }
+      fresh(); S.mode = "drill"; S.dr = {id:d.id, order:d.items.map((_, i) => i), i:0, missed:[]}; render();
+      const attr = k === "multi" ? "data-sortm" : "data-sort", b = document.querySelector("#app [" + attr + '="' + d.items[0][1] + '"]');
+      if(!b){ bad.push(k + " drill: no side to press"); return; }
+      b.click();
+      if(!on("#drnext")) bad.push(k + " drill: after a pick focus is on " + at() + ", not Next");
+      const nx = el("drnext"); if(!nx){ bad.push(k + " drill: no Next"); return; }
+      nx.click();
+      if(!on(".sortitem")) bad.push(k + " drill: after Next focus is on " + at() + ", not the item");
+      if(!(S.dr && S.dr.i === 1 && !S.dr.last)) bad.push(k + " drill: Next did not leave the next item unanswered");
+      seen.push(k + " drill"); });
+    const od = DRILLS.find(x => x.kind === "order" && x.items.length > 2);
+    if(!od) notRun.push("order drill: none");
+    else { fresh(); S.mode = "drill"; S.dr = {id:od.id, pool:od.items.map((_, i) => i).reverse(), placed:[], checked:false}; render();
+      const order = S.dr.pool.slice(), steps = od.items.map(plain), cut = s => s.slice(0, 24);
+      let ok = true;
+      order.forEach((ix, n) => { const b = document.querySelector('#app [data-op="' + ix + '"]'); if(!b){ ok = false; return; }
+        b.focus(); b.click(); const a = document.activeElement;
+        if(!a || a.getAttribute("data-ounp") !== String(n) || (a.textContent || "").indexOf(cut(steps[ix])) < 0){ ok = false; bad.push("order drill: after placing step " + (n + 1) + " focus is on " + at() + ", not the placed step"); } });
+      const back = document.querySelector('#app [data-ounp="1"]');
+      if(back){ const ix = S.dr.placed[1]; back.focus(); back.click(); const a = document.activeElement;
+        if(!a || a.getAttribute("data-op") !== String(ix) || !a.closest(".orderpool")){ ok = false; bad.push("order drill: after returning a step focus is on " + at() + ", not that step in the pool"); }
+        const b = document.querySelector('#app [data-op="' + ix + '"]'); if(b){ b.focus(); b.click(); } }
+      const ck = el("ocheck");
+      if(!ck || ck.disabled){ ok = false; bad.push("order drill: Check the sequence is not available after placing every step"); }
+      else { ck.focus(); ck.click(); if(!on("#ordverdict")){ ok = false; bad.push("order drill: after Check the sequence focus is on " + at() + ", not the verdict"); }
+        if(!/\S/.test((el("ordverdict") || {}).textContent || "") || live().indexOf(plain(String(S.dr.perfect ? "Exactly right" : "Not the real order"))) < 0) bad.push("order drill: the verdict did not reach #live"); }
+      if(ok) seen.push("order drill"); }
+    return {seen, notRun, bad, pass:!bad.length};
+  });
+  /* P2.V F40 (reopened 2026-10-04) - the diagnostic's result notice, shown when its last item is answered, must be
+     where the reader is: focused, in the window, with nothing queued to scroll the page back to where the Path was
+     (restoreScroll's frame used to run after the notice scrolled to the top, so the notice sat 157 px / 570 px
+     above the window while holding focus). The Path is scrolled down in the saved state first, the diagnostic is
+     opened with its button and every item answered through the option and Next buttons. */
+  sec("diagResult", () => {
+    const bad = [];
+    /* the control: a plain redraw of a view still queues that view's saved position (a landing cancels it, nothing else does) */
+    fresh(); S.mode = "weak"; S.scroll.weak = 700; render();
+    if(pendingScroll() !== 700) bad.push("a plain redraw queues " + pendingScroll() + " px instead of the saved 700, so a view would no longer reopen where it was left");
+    const dg = PATH.length ? diagStage() : null;
+    if(!dg || !diagSet().length) return {skipped:bad.length ? undefined : "no diagnostic stage or items", bad, pass:!bad.length};
+    fresh(); S.mode = "path"; render(); S.scroll.path = 400;
+    const btn = document.querySelector('main [data-stage="' + dg.id + '"]'); if(!btn) return {bad:["no diagnostic button on the Path"], pass:false};
+    btn.click();
+    for(let n = 0; n < 200 && S.rf; n++){ const o = document.querySelector(".rfopts [data-rfo]"); if(!o) break; o.click();
+      const nx = el("rfnext"); if(!nx) break; nx.click(); }
+    const note = el("pathnote"), a = document.activeElement, hd = document.querySelector("header"), r = note ? note.getBoundingClientRect() : null;
+    if(!note) bad.push("no result notice on the Path after the last item");
+    else {
+      if(a !== note) bad.push("the notice does not hold focus (" + (a ? a.tagName + (a.id ? "#" + a.id : "") : "nothing") + ")");
+      if(pendingScroll() !== 0) bad.push("the frame queued by the redraw would scroll the Path to " + pendingScroll() + " px, away from the notice");
+      if(window.innerHeight > 200 && (r.top < (hd ? hd.getBoundingClientRect().bottom : 0) - 2 || r.top > window.innerHeight - 24))
+        bad.push("the notice is outside the window (top " + Math.round(r.top) + " px of " + window.innerHeight + ")"); }
+    return {noteTop:r ? Math.round(r.top) : null, queuedScroll:pendingScroll(), bad, pass:!bad.length};
+  });
+  /* P2.V F33 (reopened 2026-10-04) - the schedule the page describes is the schedule it runs. The sentences are
+     read off the rendered page (the plan's Review row, the method card, Weak Spots' knowledge-gap line, the empty
+     practice and rapid sets, the diagnostic notice) and compared with BOXES, SLOW_RAPID_MS and VERIFY_GAP; the
+     scheduler is then played through real answers (a first answer, every step, a slow right pick, a miss) and
+     must land each item on the step and gap those sentences give. EXAM is moved far off so its ceiling caps none. */
+  sec("schedule", () => {
+    const bad = [], seen = [], hl = window.hubLoad, EX = EXAM, L = BOXES;
+    const mins = L[1] / 6e4, days = L.slice(2).map(ms => ms / 864e5), slowS = SLOW_RAPID_MS / 1000, verifyDays = VERIFY_GAP.first / 864e5;
+    const text = h => String(h).replace(/<[^>]+>/g, " ").replace(/&[a-z#0-9]+;/g, " ").replace(/\s+/g, " ").trim();
+    const nums = s => s.split(/, | and /).map(Number), same = (a, b) => a.length === b.length && a.every((v, i) => v === b[i]);
+    const L1 = "(\\d+) minutes?", LT = "(\\d+(?:, \\d+)*(?: and \\d+)?) days?";
+    const need = (where, t, re, f) => { const m = new RegExp(re).exec(t); if(!m){ bad.push(where + ": \"" + t.slice(0, 140) + "\" lacks " + re); return; } const w = f(m); if(w) bad.push(where + ": " + w); else seen.push(where); };
+    const ladder = (where, t) => need(where + " ladder", t, L1 + ", then " + LT, m => +m[1] !== mins || !same(nums(m[2]), days) ? "says " + m[0] + ", the scheduler has " + mins + " minutes, then " + days.join(", ") + " days" : "");
+    const tail = (where, t) => need(where + " steps", t, "up one step \\(" + LT + "\\)", m => !same(nums(m[1]), days) ? "says " + m[1] + " days, the scheduler has " + days.join(", ") : "");
+    const first = (where, t, re) => need(where, t, re, m => +m[1] !== mins ? "says " + m[1] + " minutes, the scheduler has " + mins : "");
+    const slow = (where, t) => need(where + " slow", t, "took over (\\d+) seconds", m => +m[1] !== slowS ? "says " + m[1] + " seconds, the scheduler has " + slowS : "");
+    const noTomorrow = (where, t) => { if(/tomorrow/i.test(t)) bad.push(where + ": still says \"tomorrow\""); };
+    /* the last pass: "later than two days before" is read back as a number and compared with the ceiling itself */
+    const WORDS = {one:1, two:2, three:3, four:4, five:5, six:6, seven:7, eight:8, nine:9, ten:10};
+    const lastPass = (where, t) => need(where + " last pass", t, "later than (\\w+) days? before", m => (WORDS[m[1]] || +m[1]) * 864e5 !== LAST_PASS_MS ? "says " + m[1] + " days, the scheduler stops " + LAST_PASS_MS / 864e5 + " days before the exam" : "");
+    const main2 = () => text(document.querySelector("main").innerText);
+    try{
+      window.hubLoad = () => ({v:1, items:{}}); HUBCACHE = null; SET_EMPTY = null;
+      /* the sentences */
+      if(PATH.length && RAPID.length){ fresh(); RAPID.forEach(r => { S.rapid[r.i] = {box:1, due:RealDate.now() - 6e5, n:1, miss:1}; });
+        const row = todaysPlan().cand.find(r => r.id === "due");
+        if(!row) bad.push("plan: no Review row with due rapid items");
+        else { const t = text(row.d); ladder("plan row", t); slow("plan row", t); first("plan row", t, "never below the (\\d+)-minute one"); noTomorrow("plan row", t);
+          if(!/keeps it on its step/.test(t)) bad.push("plan row: does not say a slow right pick keeps its step"); } }
+      if(PATH.length){ fresh(); S.mode = "path"; render();
+        const card = [...document.querySelectorAll("main .mcard")].find(c => /Spacing/.test(c.textContent));
+        if(!card) bad.push("method card: no Spacing card on the Path");
+        else { const t = text(card.textContent); ladder("method card", t); slow("method card", t); first("method card", t, "never sooner than " + L1); noTomorrow("method card", t); lastPass("method card", t);
+          if(!/stays on its step/.test(t)) bad.push("method card: does not say a slow right pick stays on its step"); } }
+      if(QS.length){ fresh(); const q = QS[0]; S.qs[q.id] = {ok:false, conf:"think", pick:(q.a + 1) % q.o.length, ms:30000, n:1, ts:RealDate.now(), hist:[{ok:false, conf:"think", pick:(q.a + 1) % q.o.length, ms:30000, ts:RealDate.now(), d:q.d || 2}]};
+        S.mode = "weak"; render(); const t = main2();
+        if(t.indexOf("Knowledge gap") < 0) bad.push("Weak Spots: no knowledge-gap line to check");
+        else { first("Weak Spots", t, "a miss returns in about " + L1); noTomorrow("Weak Spots", t); } }
+      fresh(); S.mode = "practice"; startSet("due"); { const t = main2();
+        first("practice due set", t, "in about " + L1 + "; each further right answer"); need("practice due set steps", t, "moves it up one step \\(" + LT + "\\)", m => !same(nums(m[1]), days) ? "says " + m[1] + " days, the scheduler has " + days.join(", ") : "");
+        first("practice due set (miss)", t, "a miss puts it back at " + L1); noTomorrow("practice due set", t); }
+      fresh(); S.mode = "practice"; startSet("verify"); { const t = main2();
+        need("practice verify set", t, "re-check (\\d+) days? later", m => +m[1] !== verifyDays ? "says " + m[1] + " day(s), the scheduler has " + verifyDays : ""); }
+      fresh(); S.mode = "rapid"; startRapid("due"); { const t = main2();
+        first("rapid due set", t, "in about " + L1 + "; each right answer"); tail("rapid due set", t); slow("rapid due set", t); first("rapid due set (miss)", t, "never below the (\\d+)-minute one"); noTomorrow("rapid due set", t); }
+      { const t = text(diagNote(diagSet()).lines.join(" ")); first("diagnostic notice", t, "a first answer in about " + L1); noTomorrow("diagnostic notice", t); }
+      /* the last pass: the exam day's calendar note, and the ceiling itself, outside and inside the last two days */
+      { const CS = CAL_SEL; EXAM = new RealDate(RealDate.now() + 10 * 864e5); CAL_SEL = examISO(); const t = text(calDetailHTML()); CAL_SEL = CS; lastPass("exam day note", t);
+        const gap = +EXAM - examCeiling(); if(Math.abs(gap - LAST_PASS_MS) > 1000) bad.push("examCeiling is " + Math.round(gap / 864e5 * 10) / 10 + " days before the exam, the scheduler constant is " + LAST_PASS_MS / 864e5);
+        EXAM = new RealDate(RealDate.now() + 864e5); const c = examCeiling(); if(!(c > RealDate.now() && c < +EXAM)) bad.push("inside the last two days the ceiling is not between now and the exam"); }
+      /* the scheduler, through real answers */
+      EXAM = new RealDate(RealDate.now() + 400 * 864e5);
+      const tol = ms => ms * (JITTER + 0.001) + 3000, due = (rec, t0, ms) => rec && Math.abs(rec.due - t0 - ms) <= tol(ms);
+      const top = L.length - 1, upTo = (k, kind) => kind === "right" ? Math.min(k + 1, top) : kind === "slow" ? Math.max(k, 1) : Math.max(k - 1, 1);
+      if(RAPID.length){ const r = RAPID[0];
+        for(let k = 0; k <= top; k++) for(const kind of ["right", "slow", "miss"]){
+          fresh(); if(k) S.rapid[r.i] = {box:k, due:RealDate.now() - 6e5, n:1, miss:0};
+          S.mode = "rapid"; S.rf = {set:[r.i], i:0, t0:RealDate.now(), src:"all"}; SET_EMPTY = null; render();
+          if(kind === "slow") S.rf.t0 = RealDate.now() - SLOW_RAPID_MS - 3000;
+          const t0 = RealDate.now(), b = document.querySelector('.rfopts [data-rfo="' + (kind === "miss" ? (r.a + 1) % r.o.length : r.a) + '"]');
+          if(!b){ bad.push("rapid: no option to press"); continue; }
+          b.click(); const rec = S.rapid[r.i], want = kind === "miss" && k === 0 ? 1 : upTo(k, kind);
+          if(!rec || rec.box !== want || !due(rec, t0, L[want])) bad.push("rapid " + (k ? "on step " + k : "first answer") + ", " + kind + ": box " + (rec && rec.box) + " due in " + (rec ? Math.round((rec.due - t0) / 6e4) : "?") + " min, expected box " + want + " due in " + Math.round(L[want] / 6e4) + " min"); }
+        seen.push("rapid: every step x right / slow / miss"); }
+      if(QS.length){ const q = QS[0];
+        for(const k of [0, 1, 3, top]) for(const kind of ["right", "miss"]){
+          fresh(); if(k) S.qs[q.id] = {ok:true, conf:"sure", pick:q.a, ms:20000, n:1, ts:RealDate.now() - 864e5, box:k, due:RealDate.now() - 6e5, hist:[]};
+          S.mode = "practice"; S.ps = {set:[q.id], i:0, src:"all", t0:RealDate.now(), conf:"sure"}; SET_EMPTY = null; render();
+          const t0 = RealDate.now(), b = document.querySelector('.qopts [data-opt="' + (kind === "miss" ? (q.a + 1) % q.o.length : q.a) + '"]');
+          if(!b){ bad.push("practice: no option to press"); continue; }
+          b.click(); const rec = S.qs[q.id], want = kind === "miss" ? 1 : Math.min(k + 1, top);
+          if(!rec || rec.box !== want || !due(rec, t0, L[want])) bad.push("practice " + (k ? "on step " + k : "first answer") + ", " + kind + ": box " + (rec && rec.box) + " due in " + (rec ? Math.round((rec.due - t0) / 6e4) : "?") + " min, expected box " + want + " due in " + Math.round(L[want] / 6e4) + " min");
+          if(!k && kind === "right" && !(rec && Math.abs(rec.verifyDue - t0 - VERIFY_GAP.first) <= 5000)) bad.push("practice first right answer: re-check not " + verifyDays + " day(s) out"); }
+        seen.push("practice: first answer / right / miss"); }
+    } finally { window.hubLoad = hl; HUBCACHE = null; EXAM = EX; SET_EMPTY = null; }
+    return {ladder:mins + " min, then " + days.join(", ") + " days", slowSeconds:slowS, recheckDays:verifyDays, seen, bad, pass:!bad.length};
+  });
   sec("maps", () => ({ qIdsByTopic:QS.reduce((a,q)=>{ (a[q.c]=a[q.c]||[]).push(q.id); return a; },{}), rapidIx:RAPID.map(r=>r.ix), imgKeys:Object.keys(IMGS),
     qeHash:Object.fromEntries(QS.map(q=>[q.id, fnv(String(q.e||""))])), qwHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.w||{}))])), rxHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(String(r.x||""))])),
     optHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.o))])), roptHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(JSON.stringify(r.o))])) }));
@@ -776,7 +972,7 @@ if(/[?&]selftest=1/.test(location.search)){
   /* P2.V F42 - the recovery says what happened; and no section's render fell into it unasked */
   must("renderRecovery", !!R.renderRecovery && R.renderRecovery.pass === true, ((R.renderRecovery||{}).bad||[]).join("; "));
   /* P2.V F5 / F3 / F31 follow-up - calendar minutes, the Path hero, verdict case in #live */
-  ["dayMinutes", "pathHero", "liveCase", "drillVerdict", "searchSnippet"].forEach(k => { const v = R[k];
+  ["dayMinutes", "pathHero", "liveCase", "drillVerdict", "searchSnippet", "focusNext", "diagResult", "schedule"].forEach(k => { const v = R[k];
     must(k, !!v && (!!v.skipped || v.pass === true), ((v||{}).bad||[]).join("; ")); });
   R.renderFailures = RENDER_FAIL_LOG.slice(failN0).map(f => f.mode + " (" + f.phase + "): " + f.msg);
   must("renderFailures", !R.renderFailures.length, R.renderFailures.slice(0, 4).join("; "));

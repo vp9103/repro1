@@ -64,7 +64,12 @@
    ["Antiadrenal antibody testing", "Autoimmune oophoritis", "None", "High"],
    ["BRCA1 and BRCA2 sequencing", "Hereditary breast and ovarian cancer", "None", "Normal"],
    ["Pituitary MRI", "Pituitary tumor", "None", "Low or normal"]]],
-  "bl": "Primary ovarian insufficiency with family intellectual disability and late-onset ataxia calls for FMR1 CGG-repeat analysis for the fragile X premutation."
+  "bl": "Primary ovarian insufficiency with family intellectual disability and late-onset ataxia calls for FMR1 CGG-repeat analysis for the fragile X premutation.",
+  "ef": "rp11_firstmove",
+  "pt": {
+   "hl": ["Primary ovarian insufficiency", "Karyotype, FMR1 CGG-repeat test"],
+   "say": "Under 40 with a high FSH is primary ovarian insufficiency, and the first-move column adds a karyotype and FMR1 CGG-repeat testing for the fragile X premutation that her family history suggests."
+  }
  },
  {
   "id": "rp11q04", "d": 3, "tags": ["drug-mechanism", "adverse-effects"], "bp": ["BP-rp11-03", "BP-rp11-09"], "obj": ["MENOPAUSE.7", "MENOPAUSE.2"],
@@ -108,7 +113,12 @@
    ["Ospemifene", "SERM", "Mild agonist", "Painful intercourse from vaginal atrophy"],
    ["Tamoxifen", "SERM", "Partial agonist, hyperplasia risk", "Estrogen receptor-positive breast cancer"],
    ["Clomiphene citrate", "SERM", "Not protective", "Ovulation induction"]]],
-  "bl": "A woman with a uterus taking systemic estrogen needs a progestogen such as micronized progesterone to prevent endometrial hyperplasia."
+  "bl": "A woman with a uterus taking systemic estrogen needs a progestogen such as micronized progesterone to prevent endometrial hyperplasia.",
+  "ef": "rp11_firstmove",
+  "pt": {
+   "hl": ["Estrogen plus a progestogen", "such as micronized progesterone"],
+   "say": "A woman with a uterus on systemic estrogen needs a progestogen such as micronized progesterone; estrogen alone is unopposed and leads to hyperplasia and cancer."
+  }
  },
  {
   "id": "rp11q06", "d": 2, "tags": ["workup-sequence", "diagnostic-cutoffs"], "bp": ["BP-rp11-05", "BP-rp11-14"], "obj": ["MENOPAUSE.11", "BICEP-WILLIAMS.7"],
@@ -129,7 +139,12 @@
    ["Vaginal estrogen cream", "No", "Treats atrophy once cancer is excluded", "After sampling"],
    ["Serum CA-125 measurement", "No", "Ovarian mass work-up", "Not indicated"],
    ["Total abdominal hysterectomy", "Yes, but excessive first", "Treatment after diagnosis", "After biopsy"]]],
-  "bl": "Postmenopausal bleeding with an endometrium over 4 mm, or recurrent bleeding, requires endometrial biopsy to exclude cancer."
+  "bl": "Postmenopausal bleeding with an endometrium over 4 mm, or recurrent bleeding, requires endometrial biopsy to exclude cancer.",
+  "ef": "rp11_firstmove",
+  "pt": {
+   "hl": ["Endometrial biopsy if the stripe", "is over 4 mm or bleeding recurs"],
+   "say": "Any bleeding after menopause needs an endometrial biopsy when the stripe is over 4 mm or bleeding recurs; hers is 9 mm and recurrent, and atrophy is a diagnosis of exclusion."
+  }
  },
  {
   "id": "rp11q07", "d": 3, "tags": ["drug-interactions", "adverse-effects"], "bp": ["BP-rp11-17", "BP-rp11-09"], "obj": ["MENOPAUSE.7", "MENOPAUSE.8"],
@@ -150,7 +165,12 @@
    ["Fluoxetine", "SSRI", "Strong", "No", "Modest"],
    ["Transdermal estradiol", "Estrogen", "None", "Yes", "Most effective"],
    ["Conjugated estrogens with bazedoxifene", "Estrogen plus SERM", "None", "Yes", "Effective"]]],
-  "bl": "With tamoxifen, avoid paroxetine and fluoxetine, strong CYP2D6 inhibitors; venlafaxine, gabapentin or fezolinetant treat hot flashes instead."
+  "bl": "With tamoxifen, avoid paroxetine and fluoxetine, strong CYP2D6 inhibitors; venlafaxine, gabapentin or fezolinetant treat hot flashes instead.",
+  "ef": "rp11_firstmove",
+  "pt": {
+   "hl": ["Venlafaxine or gabapentin,", "paroxetine and fluoxetine:"],
+   "say": "With breast cancer on tamoxifen, estrogen is unsafe, so the row offers venlafaxine or gabapentin and warns against paroxetine and fluoxetine, which are strong CYP2D6 inhibitors."
+  }
  },
  {
   "id": "rp11q08", "d": 3, "tags": ["drug-interactions", "unopposed-estrogen"], "bp": ["BP-rp11-15", "BP-rp11-06"], "obj": ["MENOPAUSE.8", "MENOPAUSE.6"],
@@ -194,7 +214,12 @@
    ["Increased parathyroid hormone secretion", "Hyperparathyroidism", "High calcium and PTH", "Cortical"],
    ["Defective type I collagen synthesis", "Osteogenesis imperfecta", "Normal", "All bone, from childhood"],
    ["Disordered osteoclast activity with mosaic bone", "Paget disease", "Very high ALP", "Skull, pelvis, long bones"]]],
-  "bl": "Postmenopausal osteoporosis results from increased RANKL signaling and less osteoprotegerin, so osteoclasts resorb trabecular bone first."
+  "bl": "Postmenopausal osteoporosis results from increased RANKL signaling and less osteoprotegerin, so osteoclasts resorb trabecular bone first.",
+  "ef": "rp11_bonewhi",
+  "pt": {
+   "hl": ["Increased RANKL signaling", "less osteoprotegerin"],
+   "say": "After menopause estrogen falls, so RANKL signaling increases and osteoprotegerin decreases, recruiting osteoclasts; trabecular bone goes first, giving vertebral compression fractures."
+  }
  },
  {
   "id": "rp11q10", "d": 1, "tags": ["adverse-effects", "risk-factors"], "bp": ["BP-rp11-08"], "obj": ["MENOPAUSE.13", "BICEP-WILLIAMS.6"],
@@ -215,7 +240,12 @@
    ["Ischemic stroke", "Increased", "Prothrombotic effect", "Increased"],
    ["Pulmonary embolism", "Increased", "Hepatic clotting factors", "Increased"],
    ["Coronary heart disease events", "Increased in older starters", "Plaque instability, thrombosis", "No overall increase"]]],
-  "bl": "In the WHI, combined estrogen plus medroxyprogesterone lowered hip fracture and colorectal cancer but raised breast cancer, stroke, clots and coronary events."
+  "bl": "In the WHI, combined estrogen plus medroxyprogesterone lowered hip fracture and colorectal cancer but raised breast cancer, stroke, clots and coronary events.",
+  "ef": "rp11_bonewhi",
+  "pt": {
+   "hl": ["Fewer events", "Hip fracture"],
+   "say": "In the Women's Health Initiative the estrogen plus medroxyprogesterone arm had fewer hip fractures and colorectal cancers than placebo, but more invasive breast cancer, stroke, clots and coronary events."
+  }
  },
  {
   "id": "rp11q11", "d": 2, "tags": ["workup-sequence", "normal-vs-pathologic"], "bp": ["BP-rp11-10", "BP-rp11-13"], "obj": ["MENOPAUSE.12", "MENOPAUSE.9"],
@@ -236,7 +266,12 @@
    ["Serum anti-Müllerian hormone", "How large is the follicle pool?", "Optional, not diagnostic", "No"],
    ["Pelvic ultrasonography", "Is there a pregnancy or mass?", "If findings require it", "No"],
    ["Endometrial biopsy", "Is there hyperplasia or cancer?", "Not for amenorrhea", "Yes"]]],
-  "bl": "In amenorrhea with menopausal symptoms, first exclude pregnancy with a urine or serum hCG, then check FSH, TSH and prolactin."
+  "bl": "In amenorrhea with menopausal symptoms, first exclude pregnancy with a urine or serum hCG, then check FSH, TSH and prolactin.",
+  "ef": "rp11_firstmove",
+  "pt": {
+   "hl": ["Serum or urine hCG first", "then FSH, TSH and prolactin"],
+   "say": "Missed periods at 42 with hot flashes need a serum or urine hCG first, then FSH, TSH and prolactin; menopause is not assumed."
+  }
  },
  {
   "id": "rp11q12", "d": 1, "tags": ["drug-mechanism"], "bp": ["BP-rp11-16", "BP-rp11-03"], "obj": ["MENOPAUSE.2", "MENOPAUSE.6"],

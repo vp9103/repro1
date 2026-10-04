@@ -216,22 +216,27 @@ const BOXES  = [0, 15*60e3, 24*3600e3, 3*24*3600e3, 7*24*3600e3, 14*24*3600e3];
    Every gap carries +-15% jitter and is capped by examCeiling(). */
 const SLOW_RAPID_MS = 12000;                     /* a right rapid pick slower than this is recognised, not known */
 const VERIFY_GAP    = {first: 24*3600e3, again: 3*24*3600e3};
-function spanWord(ms){
-  const m = Math.round(ms/6e4); if(m < 60) return m + (m === 1 ? " minute" : " minutes");
-  const h = Math.round(ms/36e5); if(h < 24) return h + (h === 1 ? " hour" : " hours");
-  const d = Math.round(ms/864e5); return d + (d === 1 ? " day" : " days"); }
+const LAST_PASS_MS  = 2*24*3600e3;               /* nothing is scheduled later than this before the exam (examCeiling) */
+const JITTER        = 0.15;                      /* each gap is varied by +-15% so items do not clump */
+const gapMs         = box => BOXES[box] * (1 - JITTER + Math.random() * 2 * JITTER);
+const NUM_WORD = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+function spanWord(ms, spell){
+  const m = Math.round(ms/6e4), h = Math.round(ms/36e5), d = Math.round(ms/864e5);
+  const [n, u] = m < 60 ? [m, "minute"] : h < 24 ? [h, "hour"] : [d, "day"];
+  return (spell && NUM_WORD[n] ? NUM_WORD[n] : n) + " " + u + (n === 1 ? "" : "s"); }
 /* the steps after the first, "1, 3, 7 and 14 days"; the first step alone is "15 minutes" */
 function ladderTail(){
   const st = BOXES.slice(2).map(ms => Math.round(ms/864e5));
   return st.length > 1 ? st.slice(0, -1).join(", ") + " and " + st[st.length-1] + " days" : st.length ? st[0] + (st[0] === 1 ? " day" : " days") : ""; }
 const ladderWords = () => spanWord(BOXES[1]) + (BOXES.length > 2 ? ", then " + ladderTail() : "");
 const slowWords   = () => (SLOW_RAPID_MS/1000) + " seconds";
+const spanAdj     = ms => spanWord(ms).replace(/s$/, "").replace(" ", "-");   /* "15-minute", for "the 15-minute one" */
 /* the two rules as one sentence each, for the places that explain a set that has nothing due */
 const schedQuestionRule = () => "The first answer to a question, right or wrong, brings it back in about " + spanWord(BOXES[1])
   + "; each further right answer moves it up one step (" + ladderTail() + "), and a miss puts it back at " + spanWord(BOXES[1]) + ".";
 const schedRapidRule = () => "The first answer to a pick, right or wrong, brings it back in about " + spanWord(BOXES[1])
   + "; each right answer moves it up one step (" + ladderTail() + ") unless it took over " + slowWords()
-  + ", which keeps it on its step; a miss moves it down one step, never below the " + spanWord(BOXES[1]) + " one.";
+  + ", which keeps it on its step; a miss moves it down one step, never below the " + spanAdj(BOXES[1]) + " one.";
 const DAILY_MIN    = 120;              /* fallback when no pace is selected */
 /* P1.9 - REVIEW_FLOOR used to protect a flat 40 minutes for due review. On a
    30-minute day (a 14-day pace) that was more than the whole day, so a short
@@ -534,7 +539,7 @@ function examCeiling(){
      to "no cap" rather than reaching state as an Infinity or a NaN. */
   if(!isFinite(e) || e <= now) return Infinity;
   /* everything gets one last pass two days out */
-  const last = e - 2*24*3600e3;
+  const last = e - LAST_PASS_MS;
   if(last > now) return last;
   /* P2.V F6 - inside the last 48 h "two days out" is already behind now: with the
      exam tomorrow a correct answer was given a due date the day before, stayed due
@@ -547,8 +552,7 @@ function examCeiling(){
    dropped it from 14 days to 7 where every lower step simply held. */
 function promote(rec, ok, hold){
   rec.box = ok ? (hold ? Math.max(rec.box||0, 1) : Math.min((rec.box||0)+1, BOXES.length-1)) : Math.max((rec.box||0)-1, 1);
-  const gap = BOXES[rec.box] * (0.85 + Math.random()*0.3);   /* jitter stops clumping */
-  rec.due = Math.min(Date.now() + gap, examCeiling());
+  rec.due = Math.min(Date.now() + gapMs(rec.box), examCeiling());
   rec.n = (rec.n||0)+1; rec.last = Date.now(); return rec;
 }
 /* An item never seen is NOT due -- it is new. Mixing the two made the due queue
@@ -1531,8 +1535,12 @@ function applyLand(L){
   const lead = !t; if(!t) t = viewLead() || document.querySelector("main"); if(!t) return false;
   if(!t.hasAttribute("tabindex") && t.tabIndex < 0) t.setAttribute("tabindex", "-1");
   try{ t.focus({preventScroll: true}); }catch(e){}
+  /* a new item is where the reader starts: the frame restoreScroll() queued for the old position must not
+     take them back (it left the prompt above the window after Next) */
+  if(lead) cancelRestore();
   /* reveal "start": a result to be read (the order verdict) comes up under the header unless all of it is already in view */
-  if((L.reveal || lead) && !inWindow(t, L.reveal === "start")) t.scrollIntoView({block: lead || L.reveal === "start" ? "start" : "nearest", behavior: "instant"});
+  if((L.reveal || lead) && !inWindow(t, L.reveal === "start")){ cancelRestore();
+    t.scrollIntoView({block: lead || L.reveal === "start" ? "start" : "nearest", behavior: "instant"}); }
   return document.activeElement === t;
 }
 function restoreFocus(sig){
@@ -1709,7 +1717,7 @@ function announceRecovery(){
   try{ box.focus({preventScroll:true}); }catch(_e){}
   /* the notice is the first thing on the Path: the view starts at the top, and that is its position now
      (restoreScroll, run after wire() and still waiting for its frame, must not take the reader back) */
-  S.scroll[S.mode] = 0;
+  cancelRestore(); S.scroll[S.mode] = 0;
   window.scrollTo({top:0, behavior:"instant"});
   return true;
 }
@@ -1808,17 +1816,19 @@ function renderAround(keep){
   }catch(err){ console.error("renderAround fell back to render", err); render(); return; }
   announceFeedback();
 }
-/* P2.6 (F40, reopened 2026-10-04) - the saved position is read when the frame runs, not when it is
-   asked for. A render that lands the reader somewhere on purpose (the diagnostic result, a recovery
-   notice, a next item) scrolls and records that position first, and this frame used to scroll back to
-   the one captured before it: the diagnostic result sat 157 px (1280) and 570 px (400) above the
-   window while holding focus. The scroll event of the landing runs before this frame, so S.scroll
-   already holds where the reader now is. */
+/* P2.6 (F40, reopened 2026-10-04) - restoreScroll() asks for the saved position of the view in the next
+   frame, after wire(); a render that then lands the reader somewhere on purpose (the diagnostic result,
+   a recovery notice, the next item) scrolled first, and this frame scrolled back to the position saved
+   before it: the diagnostic result sat 157 px (1280) and 570 px (400) above the window while holding
+   focus, and "Next" left the new item's prompt above the window in the same way. A deliberate landing
+   now cancels the frame it would lose to (cancelRestore). pendingScroll() is what the frame would apply. */
+let SCROLL_Y = 0, SCROLL_RAF = 0;
+function cancelRestore(){ if(SCROLL_RAF) cancelAnimationFrame(SCROLL_RAF); SCROLL_RAF = 0; SCROLL_Y = 0; }
+const pendingScroll = () => SCROLL_Y;
 function restoreScroll(){
-  const y = S.scroll[S.mode];
-  if(typeof y === "number" && y > 0) requestAnimationFrame(()=>{
-    const now = S.scroll[S.mode];
-    if(typeof now === "number" && now > 0) window.scrollTo({top:now, behavior:"instant"}); });
+  const y = S.scroll[S.mode]; cancelRestore();
+  if(typeof y === "number" && y > 0){ SCROLL_Y = y;
+    SCROLL_RAF = requestAnimationFrame(()=>{ const t = SCROLL_Y; SCROLL_RAF = 0; SCROLL_Y = 0; if(t > 0) window.scrollTo({top:t, behavior:"instant"}); }); }
 }
 
 /* @region engine.hub (ENGINE, engine) */
@@ -1962,7 +1972,7 @@ function todaysPlan(){
                    by examCeiling). It used to say "misses come back tomorrow": a miss drops one box,
                    never below the 15-minute one, so an early item is back in about 15 minutes. */
                 : "A right answer moves an item up one step (" + ladderWords() + ") unless it took over " + slowWords() + ", "
-                  + "which keeps it on its step; a miss moves it down one step, never below the " + spanWord(BOXES[1]) + " one."),
+                  + "which keeps it on its step; a miss moves it down one step, never below the " + spanAdj(BOXES[1]) + " one."),
       mins:dueMins, act:["rf","due"], n:dueRapid});
   }
   /* P2.3: the row's text counts what the Linked queue set serves (setCount). P2.V F8: it is now also
@@ -2175,7 +2185,7 @@ function calDetailHTML(){
   let body;
   if(isExam){
     /* P2.3: examCeiling() caps every review date at two days before the exam (halfway there inside the last two days) */
-    body = "<b>"+esc(examNameCap())+".</b> No review is scheduled later than two days before this (inside the last two days, "
+    body = "<b>"+esc(examNameCap())+".</b> No review is scheduled later than "+spanWord(LAST_PASS_MS, true)+" before this (inside the last "+spanWord(LAST_PASS_MS, true)+", "
          + "halfway to it), so every item comes due for a final pass first.";
   } else if(rec && rec.acts){
     const names = (rec.done||[]).length;
@@ -2289,7 +2299,7 @@ function viewPath(){
     <div class="mcard"><span class="mtag">Linked review</span><h4>A miss schedules its own revision</h4>
       <p>Get a question wrong and the related rapid items are queued automatically. You never have to notice a gap and act on it yourself.</p></div>
     <div class="mcard"><span class="mtag">Spacing</span><h4>Items return on expanding delays</h4>
-      <p>A right answer sends an item one step further out (${ladderWords()}, each varied a little), except a rapid pick that took over ${slowWords()}, which stays on its step. A miss brings a rapid pick back one step sooner (never sooner than ${spanWord(BOXES[1])}) and a question back to the first step. Nothing is scheduled later than two days before ${esc(EXAM_NAME)} (halfway to it, inside the last two days), so every item gets a last pass.</p></div>
+      <p>A right answer sends an item one step further out (${ladderWords()}, each varied a little), except a rapid pick that took over ${slowWords()}, which stays on its step. A miss brings a rapid pick back one step sooner (never sooner than ${spanWord(BOXES[1])}) and a question back to the first step. Nothing is scheduled later than ${spanWord(LAST_PASS_MS, true)} before ${esc(EXAM_NAME)} (halfway to it, inside the last ${spanWord(LAST_PASS_MS, true)}), so every item gets a last pass.</p></div>
     <div class="mcard"><span class="mtag">Across blocks</span><h4>Earlier blocks come back while you work on this one</h4>
       <p>Rapid picks you have answered go into one store shared by every block opened in this browser from the same site, so the plan&rsquo;s review row also brings back other blocks&rsquo; due picks (not while High yield only is on).</p></div>
     <div class="mcard"><span class="mtag">Interleaving</span><h4>Topics are mixed, not blocked</h4>
@@ -5479,7 +5489,7 @@ function wirePractice(app){
        Vignettes are the format the exam uses, so they are the ones that most
        need to come back. */
     rec.box = ok ? Math.min((prev.box||0)+1, BOXES.length-1) : 1;
-    rec.due = Math.min(Date.now() + BOXES[rec.box]*(0.85+Math.random()*0.3), examCeiling());
+    rec.due = Math.min(Date.now() + gapMs(rec.box), examCeiling());
     S.qs[q.id] = rec;
     (ps.ans = ps.ans || {})[q.id] = ok;
     (ps.picks = ps.picks || {})[q.id] = pick;   /* P2.3 (K11): what the summary shows as picked */

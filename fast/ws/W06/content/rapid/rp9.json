@@ -183,6 +183,15 @@
    "Galactorrhea, amenorrhea, headache": "This trio suggests a prolactinoma, where prolactin suppresses GnRH and the mass can press on nearby structures.",
    "Anosmia, amenorrhea, low FSH": "This is Kallmann syndrome, a congenital GnRH deficiency present from birth rather than acquired through training.",
    "Anemia, amenorrhea, fatigue": "Anemia and fatigue can accompany heavy training, but the triad centers on energy deficit and bone density."
+  },
+  "media": "fig:rp9_aub",
+  "pt": {
+   "hl": [
+    "Female athlete triad",
+    "Low energy, amenorrhea",
+    "low bone density"
+   ],
+   "say": "The O branch names the female athlete triad: low energy availability, amenorrhea and low bone density, with slowed GnRH pulses lowering estradiol."
   }
  },
  {
@@ -240,6 +249,13 @@
    "Jones criteria": "Jones criteria diagnose acute rheumatic fever from carditis, arthritis, chorea and other signs after group A streptococcal pharyngitis.",
    "Duke criteria": "Duke criteria diagnose infective endocarditis by combining positive blood cultures, echocardiographic vegetations and minor clinical signs.",
    "Ranson criteria": "Ranson criteria estimate mortality in acute pancreatitis from age, laboratory values and fluid shifts."
+  },
+  "media": "fig:rp9_aub",
+  "pt": {
+   "hl": [
+    "Rotterdam criteria: two of three"
+   ],
+   "say": "The polycystic ovary syndrome box lists the Rotterdam criteria: two of three findings (oligo-ovulation, hyperandrogenism, polycystic ovaries) once TSH, prolactin and 17-hydroxyprogesterone are excluded."
   }
  },
  {
@@ -298,6 +314,14 @@
    "LH": "LH is suppressed by a tumor's androgen or estrogen output and gives no clue to the source.",
    "Estradiol": "Estradiol may rise from aromatization of tumor androgen in fat, which blurs rather than localizes the source.",
    "Cortisol": "Cortisol can be high with an adrenal carcinoma, but pure androgen-secreting tumors often leave it normal."
+  },
+  "media": "fig:rp9_aub",
+  "pt": {
+   "hl": [
+    "DHEA-S very high",
+    "Testosterone very high"
+   ],
+   "say": "The androgen source box separates the tumors: a very high DHEA-S points to an adrenal tumor, while very high testosterone with a normal DHEA-S points to an ovarian one."
   }
  },
  {
@@ -323,6 +347,13 @@
    "E, endometrial": "Endometrial causes are local defects in hemostasis or repair within regular ovulatory cycles, with normal systemic clotting.",
    "I, iatrogenic": "Iatrogenic covers bleeding from anticoagulants, hormonal contraception or an IUD, not inherited disorders.",
    "N, not otherwise classified": "This group holds rare causes such as arteriovenous malformations and cesarean scar defects."
+  },
+  "media": "fig:rp9_aub",
+  "pt": {
+   "hl": [
+    "Coagulopathy"
+   ],
+   "say": "In PALM-COEIN the C is coagulopathy: von Willebrand disease causes heavy bleeding since menarche, nosebleeds and bleeding after dental work."
   }
  },
  {
@@ -349,6 +380,13 @@
    "Endometrial glands within myometrium": "Glands inside the myometrium define adenomyosis, a secondary cause with a boggy, enlarged uterus.",
    "Fibroid degeneration": "Fibroid degeneration causes acute pain, often in pregnancy, rather than monthly cramps from menarche.",
    "Pelvic adhesions": "Adhesions from surgery or infection cause chronic pelvic pain, a secondary cause with a structural lesion."
+  },
+  "media": "fig:rp8_endometrium",
+  "pt": {
+   "hl": [
+    "Progesterone falls: prostaglandins surge"
+   ],
+   "say": "At the end of the secretory phase, falling progesterone makes the endometrium release prostaglandins, which spasm the spiral arteries and cause the cramps of primary dysmenorrhea."
   }
  },
  {
@@ -376,6 +414,13 @@
    "Metformin": "Metformin treats insulin resistance and helps metabolic risk but is a weak ovulation inducer on its own.",
    "Spironolactone": "Spironolactone treats hirsutism by blocking androgen receptors and must be stopped before conception.",
    "Cabergoline": "Cabergoline is a dopamine agonist that lowers prolactin; it restores ovulation in hyperprolactinemia, whereas prolactin is normal in PCOS."
+  },
+  "media": "fig:rp9_infertility",
+  "pt": {
+   "hl": [
+    "Letrozole first in PCOS"
+   ],
+   "say": "The ovulation column puts letrozole first in PCOS: an aromatase inhibitor that lowers estrogen feedback, so FSH rises and a follicle matures."
   }
  },
  {
@@ -401,6 +446,14 @@
    "Lactic acidosis": "Lactic acidosis is the rare serious risk of metformin, especially with kidney failure or hypoxia.",
    "Hirsutism": "Hirsutism reflects androgen excess; clomiphene acts on estrogen receptors and does not raise androgens.",
    "Galactorrhea": "Galactorrhea follows high prolactin, as from dopamine antagonists, not from estrogen receptor blockade."
+  },
+  "media": "fig:rp9_infertility",
+  "pt": {
+   "hl": [
+    "Clomiphene side effects",
+    "visual disturbances"
+   ],
+   "say": "The ovulation column lists clomiphene's side effects: hot flashes, visual disturbances and multiple births, from its anti-estrogen action."
   }
  },
  {
@@ -426,6 +479,13 @@
    "Intrauterine adhesions": "The adhesions of Asherman syndrome appear as irregular filling defects inside the uterine cavity.",
    "Bicornuate uterus": "A bicornuate uterus shows a heart-shaped cavity with two horns; it concerns the cavity outline, not tubal spill.",
    "Endometrial polyp": "A polyp appears as a smooth filling defect in the cavity and can cause intermenstrual spotting."
+  },
+  "media": "fig:rp9_infertility",
+  "pt": {
+   "hl": [
+    "Free spill: patent tubes"
+   ],
+   "say": "In the tubes column, free spill of contrast on hysterosalpingography means patent tubes, while a dilated tube with no spill is a hydrosalpinx."
   }
  },
  {
@@ -451,6 +511,14 @@
    "Ruptured ectopic pregnancy": "An ectopic pregnancy causes pain and bleeding from tubal implantation, not ascites from leaky capillaries.",
    "Tubo-ovarian abscess": "A tubo-ovarian abscess follows pelvic infection with fever and a complex mass, not fertility drugs.",
    "Theca lutein cyst rupture": "Theca lutein cysts come from very high hCG, as in molar pregnancy; rupture causes pain but not systemic capillary leak."
+  },
+  "media": "fig:rp9_infertility",
+  "pt": {
+   "hl": [
+    "Gonadotropins risk OHSS: VEGF-driven",
+    "capillary leak, ascites, clots"
+   ],
+   "say": "Gonadotropin treatment risks ovarian hyperstimulation: VEGF-driven capillary leak moves fluid into the abdomen, causing ascites, hemoconcentration and clots."
   }
  }
 ]

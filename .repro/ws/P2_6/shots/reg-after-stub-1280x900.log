@@ -1,0 +1,24 @@
+after 1280x900 light F6 exam date typed then arrowed: PASS 2026-10-27 -> 2026-10-28
+after 1280x900 light F6 ceiling never before now (exam tomorrow): PASS 
+after 1280x900 light F4 plan header days == plan days: PASS {"head":4,"proj":4}
+after 1280x900 light F8 High yield only filters + labels: PASS {"hi":true,"banner":true,"pathLabel":true} All 3 high-yield, shuffled
+after 1280x900 light F13 pretest first answer stored once and kept on reload: PASS {"en5":{"ok":[true],"pick":["Organification of iodide"]}}
+after 1280x900 light scroll restored per view: PASS 700 -> 700
+after 1280x900 light F23/F24 Previously missed serves exactly the latest-wrong: PASS ["rp8q03"] miss=rp8q03
+after 1280x900 light N6/F28 hub keeps the other block's newer review: PASS {"box":4,"own":1}
+after 1280x900 light F42 render failure shows notice, #live, header repaint, focus: PASS {"note":true,"mode":"path","live":"The Weak Spots view could not be shown. Something went wrong","cur":"Path","focus":"rendernote"}
+after 1280x900 light F25 Weak Spots draws, no sideways scroll: PASS {"threads":true,"hs":0}
+after 1280x900 light F31d multi verdict names the item it judges (page + #live): PASS Not this one“Thin, stretchy cervical mucus” belongs to Ovulation, not Follicular. Peak estradiol jus
+after 1280x900 light F35 search returns hits: PASS hits 11
+after 1280x900 dark F6 exam date typed then arrowed: PASS 2026-10-27 -> 2026-10-28
+after 1280x900 dark F6 ceiling never before now (exam tomorrow): PASS 
+after 1280x900 dark F4 plan header days == plan days: PASS {"head":4,"proj":4}
+after 1280x900 dark F8 High yield only filters + labels: PASS {"hi":true,"banner":true,"pathLabel":true} All 3 high-yield, shuffled
+after 1280x900 dark F13 pretest first answer stored once and kept on reload: PASS {"en5":{"ok":[true],"pick":["Organification of iodide"]}}
+after 1280x900 dark scroll restored per view: PASS 700 -> 700
+after 1280x900 dark F23/F24 Previously missed serves exactly the latest-wrong: PASS ["rp8q02"] miss=rp8q02
+after 1280x900 dark N6/F28 hub keeps the other block's newer review: PASS {"box":4,"own":1}
+after 1280x900 dark F42 render failure shows notice, #live, header repaint, focus: PASS {"note":true,"mode":"path","live":"The Weak Spots view could not be shown. Something went wrong","cur":"Path","focus":"rendernote"}
+after 1280x900 dark F25 Weak Spots draws, no sideways scroll: PASS {"threads":true,"hs":0}
+after 1280x900 dark F31d multi verdict names the item it judges (page + #live): PASS Not this one“Proliferative endometrium” belongs to Follicular, not Ovulation. Estradiol without prog
+after 1280x900 dark F35 search returns hits: PASS hits 11
