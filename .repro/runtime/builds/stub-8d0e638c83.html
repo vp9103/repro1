@@ -866,6 +866,7 @@ tr.srhit td{background:var(--warn-soft)}
 .sitem .st2{font-size:12.8px;color:var(--ink-3);margin-top:2px}
 .sitem .st3{font-size:12.6px;line-height:1.45;color:var(--ink-2);margin-top:4px}
 .sitem .st3 .sk{font:600 10.5px/1.2 var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);margin-right:3px}
+.sitem .st3 .sl{font:500 10.5px/1.2 var(--mono);color:var(--ink-3);margin-right:3px}
 .sitem mark{background:var(--a1-soft);color:var(--a1);padding:0;box-shadow:0 0 0 1px var(--a1-soft);border-radius:2px;font-weight:600}
 .sempty{padding:34px 22px;text-align:center;color:var(--ink-3);font-family:var(--serif);
   font-size:16.5px;font-style:italic}
@@ -5232,9 +5233,9 @@ const srchClip = (s, n) => { s = srchPlain(s); return s.length > n ? s.slice(0, 
 const escText = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 /* P2.V sweep (K19): a hit found in a why, a table row, a bottom line or a where-to-look line
    used to show only the item's title and stem, so the words that matched were nowhere on the
-   list. e.P holds the item's pieces as [label, text]; srchSnip() adds a third line with the
-   piece that matched (the phrase first, else the most query words), clipped around the match
-   and marked, whenever the title and the second line do not already show it. */
+   list. e.P holds the item's pieces as [label, text, at?]; srchSnip() adds a third line with the
+   piece that matched best (see srchFind), clipped around the match and marked, whenever the
+   title and the second line, as printed, do not already show it. */
 const whyNot = o => "Why not \u201c" + srchClip(o, 48) + "\u201d";
 function figTitle(k){
   const f = FIGS[k] || {}, m = /<text\b[^>]*\bclass="[^"]*\bttl\b[^"]*"[^>]*>([\s\S]*?)<\/text>/.exec(f.svg || "");
@@ -5320,7 +5321,11 @@ function srchSnip(e, Q, pk){
   let b = Math.max(a + SRCH_CLIP, me);
   if(b < len){ const sp = s.lastIndexOf(" ", b); b = sp > me && sp > a + 60 ? sp : b; }
   const clip = s.slice(a, b).trimEnd();
-  return '<div class="st3"><span class="sk">' + escText(srchPlain(pk.p[0])) + '</span> ' + hi((a > 0 ? "…" : "") + clip + (b < len ? "…" : ""), Q) + '</div>';
+  /* a question, rapid item or image opens unanswered: what it says in its bottom line, whys, table and
+     where-to-look line is drawn only after the answer, so the line says so instead of leaving the
+     student to look for it (opening it would have to record an answer to show it) */
+  const late = /^(Question|Rapid review|Image)$/.test(e.kind) && pk.p[0] !== "Question" ? '<span class="sl">(after you answer)</span> ' : "";
+  return '<div class="st3"><span class="sk">' + escText(srchPlain(pk.p[0])) + '</span> ' + late + hi((a > 0 ? "…" : "") + clip + (b < len ? "…" : ""), Q) + '</div>';
 }
 function buildIndex(){
   if(SEARCH_INDEX) return SEARCH_INDEX;
@@ -5350,7 +5355,8 @@ function buildIndex(){
       else if(x[0]==="p") P.push(["Lesson", x[1], ""+bi]);
       else if(x[0]==="call") P.push([x[2], x[3], ""+bi]);
       else if(x[0]==="why") P.push(["Why", x[1]+" "+x[2], ""+bi]);
-      else if(x[0]==="t") x[2].forEach((r, ri) => P.push(["Table", r.join(" · "), bi+"."+ri]));
+      else if(x[0]==="t"){ x[2].forEach((r, ri) => P.push(["Table", r.join(" · "), bi+"."+ri]));
+        P.push(["Table columns", x[1].join(" · "), ""+bi]); }
       else if(x[0]==="steps") P.push(["Steps", stepsText(x), ""+bi]);
     });
     add({kind:"Topic", title:t.t, sub:srchPlain(t.blk.n)+" — "+srchPlain(t.sub), body:text, act:["t",t.id], P}, F);
@@ -8271,7 +8277,7 @@ if(/[?&]selftest=1/.test(location.search)){
         const pk = srchPick(e, Q);
         if(!pk || pk.p !== p) continue;                   /* the title or another piece already shows it */
         kinds[e.kind] = 1; checked.push(e.kind + ": " + phrase);
-        const html = srchSnip(e, Q, pk), line = html.replace(/^.*?<\/span> /, ""), txt = dec(line), marks = (line.match(/<mark>.*?<\/mark>/g) || []).map(dec);
+        const html = srchSnip(e, Q, pk), line = html.replace(/^<div class="st3">(<span class="s[kl]">.*?<\/span> )+/, ""), txt = dec(line), marks = (line.match(/<mark>.*?<\/mark>/g) || []).map(dec);
         if(!clean(html)) bad.push(e.kind + ": markup not clean: " + html.slice(0, 160));
         if(!marks.some(m => srchNorm(m) === srchNorm(phrase))) bad.push(e.kind + ": phrase “" + phrase + "” is not one mark in: " + txt);
         const at = txt.indexOf(phrase);

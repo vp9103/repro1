@@ -16,6 +16,7 @@ en9_hypercalcemia, en9_three_hpt missing.
 | P2.5 | worker | F35/F35b search snippet + landing (.repro/ws/P2_5) | --status P2.5 ok |
 | G02 | DONE (draft, accepted 2026-10-04; spot-checked rp11r01/r05/r09, rp17r03/r09/r16) | rapid rp3 13, rp11 15, rp17 22 | fast_check G02 ok; audit/G02-notes.md |
 | G03 | DONE (draft, accepted; checked rp29 pins vs figure labels, d_rp16_multi) | rapid rp23 13, rp29 11; drills rp10 multi, rp11 sort, rp16 multi, rp17 order | fast_check G03 ok; audit/G03-notes.md (rp29 NO-VISUAL row in G03-novisual.md -> P6.9 on import) |
+| V1 | worker | visual pointers rp4-rp7 (owns W04/W05 question+rapid files; merge with --skip W04 --skip W05 until done) | fast_check W04/W05 ok |
 | P1.V | HELD | token 5554dd5d05, 12 objectives | needs verifier at Opus max (host limit, asked user) |
 
 ## Wave 1 (reproductive, Oct 9) queue
