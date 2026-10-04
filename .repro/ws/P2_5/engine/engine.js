@@ -4147,9 +4147,9 @@ function srchFlash(hot, rng){
 function srchShow(hot, o){
   const rng = o.Q ? srchRange(o.text || hot, o.Q) : null, box = rng ? rng.getBoundingClientRect() : null;
   const wrap = hot.closest(".tblwrap");
-  if(wrap && rng){ const wr = wrap.getBoundingClientRect(), r1 = rng.getClientRects()[0] || box;
-    if(r1.right > wr.right - 8) wrap.scrollLeft += Math.max(0, Math.min(r1.right - wr.right + 16, r1.left - wr.left - 8));
-    else if(r1.left < wr.left + 8) wrap.scrollLeft -= wr.left - r1.left + 16; }
+  if(wrap && rng){ const wr = wrap.getBoundingClientRect(), n0 = rng.startContainer, cell = (n0.nodeType === 1 ? n0 : n0.parentElement).closest("td,th"), r1 = (cell || rng).getBoundingClientRect();
+    if(r1.right > wr.right - 4) wrap.scrollLeft += Math.max(0, Math.min(r1.right - wr.right + 6, r1.left - wr.left - 4));
+    else if(r1.left < wr.left + 4) wrap.scrollLeft -= wr.left - r1.left + 6; }
   const hd = document.querySelector("header"), H = hd ? hd.offsetHeight : 0, avail = window.innerHeight - H;
   const place = o.place || hot, pr = place.getBoundingClientRect(), fits = pr.height <= avail * 0.85;
   const lead = hot === place || o.pad === undefined ? 12 : o.pad;   /* a row in a table too tall for the screen: some rows above it */

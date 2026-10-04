@@ -2393,7 +2393,7 @@ function viewLearn(){
         <p class="sub">${esc(t.sub)}</p>
       </div>
       ${pre ? pretestHTML(t) : ""}
-      <div class="body-inner">${(AUTOGLOSS_USED = explicitGloss(t), (t.body||[]).map(bodyBlock).join(""))}</div>
+      <div class="body-inner">${(AUTOGLOSS_USED = explicitGloss(t), (t.body||[]).map((x, i) => bodyTag(bodyBlock(x), i)).join(""))}</div>
       ${t.grid ? gridHTML(t) : ""}
       <div class="navfoot">
         <div>${prev?'<button class="btn gho" data-t="'+prev.id+'">&larr; '+esc(prev.t)+'</button>':''}</div>
@@ -2418,6 +2418,9 @@ function explicitGloss(t){
     const k = m.slice(2, -2).split("|")[0]; if(GLOSS[k]) used[k] = 1; });
   return used;
 }
+/* P2.5 F35b: every block carries its index in t.body (data-bi), so a search hit can land on the
+   block, and on the row of a table, that the result quoted (srchLand) */
+const bodyTag = (h, i) => h.replace(/^(\s*<[a-z][a-z0-9]*)/i, '$1 data-bi="' + i + '"');
 function bodyBlock(x){
   const k = x[0];
   /* A section heading is where a term is INTRODUCED, so it is the honest place
@@ -3248,11 +3251,37 @@ function drToggleWhy(b){
   const w = toggleCtlWhy(b);
   if(w && S.dr) (S.dr.open = S.dr.open || {})[w.id] = !w.hidden;
 }
+/* P2.V F21: a sort or multi pick used to move straight on, so its verdict was drawn under the
+   NEXT item and read as a claim about it ("Mid-cycle pain" above "This belongs to Luteal").
+   Now a pick keeps its item on screen: the sides come back disabled with the pick and the right
+   side marked, the verdict under them names the item, and the next item appears only when the
+   student presses Next. drJudged gives the item that verdict is about (st.last.ix; order[i-1]
+   for a verdict saved before this change), or -1 while an item waits for its answer. */
+function drJudged(d, st){
+  if(!d || !st || !st.last || !Array.isArray(st.order) || !(st.i >= 1 && st.i <= st.order.length)) return -1;
+  const ix = st.last.ix;
+  return Number.isInteger(ix) && ix >= 0 && ix < d.items.length ? ix : st.order[st.i - 1];
+}
+/* one side of the running board: a live button (attr = data-sort / data-sortm), or, once the
+   item is answered, a disabled one that says in words whether it was the pick and the right side */
+function drSideBtn(attr, val, label, last, right){
+  if(!last) return `<button class="btn" ${attr}="${escA(val)}">${label}</button>`;
+  const pick = last.pick === val, ok = val === right;
+  const note = pick && ok ? "your pick, right" : pick ? "your pick" : ok ? "right answer" : "";
+  return `<button class="btn${ok ? " dright" : pick ? " dwrong" : ""}" disabled>${label}${note ? '<span class="dres">' + note + "</span>" : ""}</button>`;
+}
+/* the verdict for the item on screen, then Next (or the results after the last item) */
+function drVerdictHTML(d, st, noLabel){
+  const last = st.i >= st.order.length;
+  return `<div class="call ${st.last.ok?"mnem":"trap"}" data-verdict style="margin-top:18px"><span class="cl">${st.last.ok?"Correct":noLabel}</span>${fmt(st.last.msg||"")}</div>
+    <div class="btnrow"><button class="btn pri" id="drnext">${last ? "See the results" : "Next item"}</button></div>
+    ${deepReviewHTML(d.c,"Refresher: "+((findT(d.c)||{}).t||"this topic"))}`;
+}
 /* P2.V K13: the column count rides in --dcols (not an inline grid-template-columns), so the
    .dmulti rule in the shell can drop the end screen and the board to one column on a phone */
 function multiDrillHTML(d){
   const st=S.dr, items=st.order||[], i=st.i||0;
-  if(i>=items.length){
+  if(i>=items.length && drJudged(d,st)<0){
     const missed=st.missed||[];
     /* P2.V F31: the end screen replaced the last item's verdict and said nothing to #live; its score is the verdict now, and its heading takes focus */
     return `<div class="panel"><div class="sectiontitle"><h3 data-viewlead>${esc(d.t)}</h3><span class="st2" data-verdict>${items.length-missed.length} of ${items.length} correct</span></div>
@@ -3262,17 +3291,18 @@ function multiDrillHTML(d){
       ${deepReviewHTML(d.c,"Open the visual comparison and complete lesson")}
       <div class="btnrow"><button class="btn pri" data-dr="__again">Run it again</button><button class="btn" data-dr="__quit">Back to drills</button></div></div>`;
   }
-  const ix=items[i], it=d.items[ix];
-  return `<div class="toolbar"><span class="tl">${esc(d.t)}</span><span class="mono">${i+1} / ${items.length}</span><span style="flex:1"></span>${flagCtrl("drill", d.id+"#"+ix)}<button class="btn sm gho" data-dr="__quit">End drill</button></div>
+  /* P2.V F21: an answered item stays on screen with its verdict until Next (drJudged) */
+  const jx=drJudged(d,st), ix=jx>=0?jx:items[i], it=d.items[ix];
+  return `<div class="toolbar"><span class="tl">${esc(d.t)}</span><span class="mono">${jx>=0?i:i+1} / ${items.length}</span><span style="flex:1"></span>${flagCtrl("drill", d.id+"#"+ix)}<button class="btn sm gho" data-dr="__quit">End drill</button></div>
     <div class="panel" style="max-width:820px;margin:0 auto">${it[2]&&IMGS[it[2]]?`<div class="imgbox" style="max-height:330px;display:flex;align-items:center;justify-content:center;margin-bottom:15px"><img src="${IMGS[it[2]].url}" alt="${escA(IMGS[it[2]].n||"Image to classify")}" style="max-height:330px;width:auto;max-width:100%"></div>`:""}<div class="sortitem">${fmt(it[0])}</div>
-      <div class="sortbtns dmulti" style="--dcols:${Math.min(3,d.cols.length)}">${d.cols.map(c=>`<button class="btn" data-sortm="${c.id}">${esc(c.l)}</button>`).join("")}</div>
+      <div class="sortbtns dmulti" style="--dcols:${Math.min(3,d.cols.length)}">${d.cols.map(c=>drSideBtn("data-sortm", c.id, esc(c.l), jx>=0?st.last:null, it[1])).join("")}</div>
       <!-- P1.3: the sort result was silent - a reader tapped a side and heard nothing.
            data-verdict sends this line to the live region. -->
-      ${st.last?`<div class="call ${st.last.ok?"mnem":"trap"}" data-verdict style="margin-top:18px"><span class="cl">${st.last.ok?"Correct":"Not this one"}</span>${fmt(st.last.msg)}</div>${deepReviewHTML(d.c,"Refresher: "+((findT(d.c)||{}).t||"this topic"))}`:""}</div>`;
+      ${jx>=0?drVerdictHTML(d,st,"Not this one"):""}</div>`;
 }
 function sortDrillHTML(d){
   const st = S.dr, i = st.i, items = st.order;
-  if(i >= items.length){
+  if(i >= items.length && drJudged(d, st) < 0){
     const missed = st.missed || [];
     return `<div class="panel"><div class="sectiontitle"><h3 data-viewlead>${esc(d.t)}</h3>
         <span class="st2" data-verdict>${items.length-missed.length} of ${items.length} sorted correctly</span></div>
@@ -3290,18 +3320,18 @@ function sortDrillHTML(d){
       <div class="btnrow"><button class="btn pri" data-dr="__again">Run it again</button>
         <button class="btn" data-dr="__quit">Back to drills</button></div></div>`;
   }
-  const ix = items[i], it = d.items[ix];
+  /* P2.V F21: an answered item stays on screen with its verdict until Next (drJudged) */
+  const jx = drJudged(d, st), ix = jx >= 0 ? jx : items[i], it = d.items[ix], last = jx >= 0 ? st.last : null;
   return `<div class="toolbar"><span class="tl">${esc(d.t)}</span>
-      <span class="mono" style="font-size:12px;color:var(--ink-3)">${i+1} / ${items.length}</span>
+      <span class="mono" style="font-size:12px;color:var(--ink-3)">${jx >= 0 ? i : i+1} / ${items.length}</span>
       <span style="flex:1"></span>${flagCtrl("drill", d.id+"#"+ix)}<button class="btn sm gho" data-dr="__quit">End drill</button></div>
     <div class="panel" style="max-width:660px;margin:0 auto">
       <div class="sortitem">${fmt(it[0])}</div>
       <div class="sortbtns">
-        <button class="btn" data-sort="a">${esc(d.a)}</button>
-        <button class="btn" data-sort="b">${esc(d.bb)}</button></div>
+        ${drSideBtn("data-sort", "a", esc(d.a), last, it[1])}
+        ${drSideBtn("data-sort", "b", esc(d.bb), last, it[1])}</div>
       <!-- P1.3: same silent feedback in the two-way sort; marked for the live region. -->
-      ${st.last?`<div class="call ${st.last.ok?"mnem":"trap"}" data-verdict style="margin-top:18px">
-        <span class="cl">${st.last.ok?"Correct":"No"}</span>${fmt(st.last.msg)}</div>${deepReviewHTML(d.c,"Refresher: "+((findT(d.c)||{}).t||"this topic"))}`:""}
+      ${jx >= 0 ? drVerdictHTML(d, st, "No") : ""}
     </div>`;
 }
 function orderDrillHTML(d){
@@ -3324,15 +3354,24 @@ function orderDrillHTML(d){
             return `<button class="oitem" data-ounp="${n}"><span class="on">${n+1}</span><span>${fmt(d.items[ix])}</span></button>`;}).join("")
             :'<span style="font-size:13.5px;color:var(--ink-3);padding:6px">Tap steps on the left, in order.</span>'}</div></div>
       </div>
+      <!-- P1.3: the order drill verdict was silent for the same reason as the sorts.
+           P2.V F21: it now names every step that is out of place and where it belongs (the
+           steps themselves said so only by color), and it sits right under the board it judges,
+           above the buttons. -->
+      ${checked?`<div class="call ${st.perfect?"mnem":"trap"}" data-verdict style="margin-top:18px">
+        <span class="cl">${st.perfect?"Exactly right":"Not the real order"}</span>${orderVerdictText(d, placed)} ${fmt(d.key)}</div>`:""}
       <div class="btnrow" style="margin-top:18px">
         ${checked?`<button class="btn pri" data-dr="__again">Try again</button>
                    <button class="btn" data-dr="__quit">Back to drills</button>`
                  :`<button class="btn acc" id="ocheck"${placed.length!==d.items.length?" disabled":""}>Check the sequence</button>`}
       </div>
-      <!-- P1.3: the order drill verdict was silent for the same reason as the sorts. -->
-      ${checked?`<div class="call ${st.perfect?"mnem":"trap"}" data-verdict style="margin-top:18px">
-        <span class="cl">${st.perfect?"Exactly right":"Not the real order"}</span>${fmt(d.key)}</div>`:""}
     </div>`;
+}
+function orderVerdictText(d, placed){
+  const off = placed.map((ix, n) => ix === n ? null : [ix, n]).filter(Boolean);
+  if(!off.length) return `All ${placed.length} steps are in order.`;
+  return `${off.length} of ${placed.length} steps are out of place: `
+    + off.map(([ix, n]) => `&ldquo;${fmt(d.items[ix])}&rdquo; belongs at step ${ix+1}, not ${n+1}`).join("; ") + ".";
 }
 
 /* @region engine.view-rapid-banner (ENGINE, engine) */
@@ -3716,7 +3755,7 @@ function viewGloss(){
       <span class="st2">${sub}</span></div>
     <input class="gsearch" id="gsearch" placeholder="Search a term..." aria-label="Search the glossary" autocomplete="off">
     <div class="glist" id="glist">${ks.map(k=>
-      `<div class="gitem" data-gk="${esc(GLOSS[k].t+" "+k+" "+GLOSS[k].d).toLowerCase()}">
+      `<div class="gitem" data-gk="${esc(GLOSS[k].t+" "+k+" "+GLOSS[k].d).toLowerCase()}" data-gkey="${escA(k)}">
         <h5>${esc(GLOSS[k].t)}</h5><p>${fmt(GLOSS[k].d)}</p>${link(k)}</div>`).join("")}</div>`;
 }
 /* the entry's link lands like any topic change (go), then on the section that introduces the
@@ -3769,30 +3808,99 @@ const srchClip = (s, n) => { s = srchPlain(s); return s.length > n ? s.slice(0, 
 const escText = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 /* P2.V sweep (K19): a hit found in a why, a table row, a bottom line or a where-to-look line
    used to show only the item's title and stem, so the words that matched were nowhere on the
-   list. e.P holds the item's pieces as [label, text]; srchSnip() adds a third line with the
-   piece that matched (the phrase first, else the most query words), clipped around the match
-   and marked, whenever the title and the second line do not already show it. */
+   list. e.P holds the item's pieces as [label, text, at?]; srchSnip() adds a third line with the
+   piece that matched best (see srchFind), clipped around the match and marked, whenever the
+   title and the second line, as printed, do not already show it. */
 const whyNot = o => "Why not \u201c" + srchClip(o, 48) + "\u201d";
 function figTitle(k){
   const f = FIGS[k] || {}, m = /<text\b[^>]*\bclass="[^"]*\bttl\b[^"]*"[^>]*>([\s\S]*?)<\/text>/.exec(f.svg || "");
   const a = /\baria-label="([^"]+)"/.exec(f.svg || "");
   return (m && srchPlain(m[1])) || (a && srchPlain(a[1])) || k;
 }
-function srchSnip(e, Q){
-  const P = (e.P || []).filter(p => p[1]);
-  if(!P.length) return "";
-  const shown = srchNorm(e.tt + " | " + e.sub);
-  if(Q.phrase ? shown.indexOf(Q.phrase) >= 0 : Q.key.every(t => srchHit(shown, t, Q.whole))) return "";
-  const N = P.map(p => srchNorm(srchPlain(p[1])));
-  let at = Q.phrase ? N.findIndex(n => n.indexOf(Q.phrase) >= 0) : -1;
-  if(at < 0){ let best = 0; N.forEach((n, i) => { const c = Q.key.filter(t => srchHit(n, t, Q.whole)).length; if(c > best){ best = c; at = i; } }); }
-  if(at < 0) return "";
-  const s = srchPlain(P[at][1]), low = s.toLowerCase();
-  const ks = Q.key.map(t => low.indexOf(t)).filter(x => x >= 0), k = ks.length ? Math.min.apply(null, ks) : 0;
-  let a = Math.max(0, k - 50); if(a > 0){ const sp = s.indexOf(" ", a); a = sp > 0 && sp < k ? sp + 1 : a; }
-  let clip = s.slice(a, a + 170);
-  if(a + 170 < s.length){ const sp = clip.lastIndexOf(" "); clip = (sp > 110 ? clip.slice(0, sp) : clip) + "\u2026"; }
-  return '<div class="st3"><span class="sk">' + escText(srchPlain(P[at][0])) + '</span> ' + hi((a > 0 ? "\u2026" : "") + clip, Q) + '</div>';
+/* P2.V F35 redo (2026-10-04): the line used to clip around the first place ANY query word
+   appeared, so an exact phrase late in a long why or explanation showed unrelated text with
+   one word marked. It now clips around where the query really lands, best first:
+     tier 3  the whole phrase;
+     tier 2  else the tightest run of words that holds every scoring word (no longer than the
+             clip), the "all words" window;
+     tier 1  else the window of that length that holds the most rarity (idf) of distinct
+             words, which is the single rarest word when no two sit near each other.
+   Each piece of the entry is tried the same way and the best piece wins (tier, then the
+   tighter window, then the earlier piece). Everything runs on plain text cut into words by
+   SRCH_WORD, the same cut hi() uses, so the marks and the window can never disagree, and
+   hi() still marks once over plain text. e.P pieces are [label, text, at]; `at` says where
+   the piece sits on its own page (a topic block "3", a table row "6.2", "teach", "story") so
+   that opening the hit can land there (searchGo). */
+const SRCH_CLIP = 170, SRCH_SHOW = 190;
+const srchCut = s => s.length > SRCH_SHOW ? s.slice(0, SRCH_SHOW).trimEnd() + "…" : s;
+const srchWords = s => { const w = []; let m; SRCH_WORD.lastIndex = 0;
+  while((m = SRCH_WORD.exec(s))) w.push([m.index, m.index + m[0].length, m[0] === "&" ? "and" : m[0].toLowerCase()]);
+  return w; };
+/* where term t sits in word x (a [start, end, lower] triple), or -1: at the start of the word, inside it
+   for terms of 4+ letters, or as the whole word (short terms) */
+const srchAt = (x, t, whole) => whole ? (x[2] === t ? 0 : -1) : x[2].startsWith(t) ? 0 : t.length >= 4 ? x[2].indexOf(t) : -1;
+/* the span of term t in word x, or null (a word whose lower case changes length is marked whole) */
+const srchSpan = (x, t, whole) => { const k = srchAt(x, t, whole);
+  return k < 0 ? null : x[2].length === x[1] - x[0] ? [x[0] + k, x[0] + k + t.length] : [x[0], x[1]]; };
+function srchFind(s, Q){
+  const w = srchWords(s), n = Q.toks.length, K = Q.key, idf = Q.idf || K.map(() => 1);
+  if(Q.phrase) for(let i = 0; i + n <= w.length; i++)
+    if(Q.toks.every((t, j) => j < n - 1 ? w[i+j][2] === t : w[i+j][2].startsWith(t)))
+      return {tier:3, a:w[i][0], b:srchSpan(w[i+n-1], Q.toks[n-1], false)[1], k:n, w:0};
+  const hit = w.map(x => { const r = []; K.forEach((t, j) => { if(srchAt(x, t, Q.whole) >= 0) r.push(j); }); return r; });
+  let best = null;
+  for(let i = 0; i < w.length; i++){
+    if(!hit[i].length) continue;
+    const seen = new Set(); let wt = 0, end = w[i][1], last = i;
+    for(let j = i; j < w.length && w[j][1] - w[i][0] <= SRCH_CLIP; j++){
+      hit[j].forEach(t => { if(!seen.has(t)){ seen.add(t); wt += idf[t]; end = w[j][1]; last = j; } });
+      if(seen.size === K.length) break;
+    }
+    const c = {tier:seen.size === K.length ? 2 : 1, a:w[i][0], b:end, k:last - i + 1, w:wt};
+    if(!best || srchBetter(c, best)) best = c;
+  }
+  return best;
+}
+/* is match c better than d? (both from the same piece or from two pieces of one entry) */
+function srchBetter(c, d){
+  if(c.tier !== d.tier) return c.tier > d.tier;
+  if(c.tier === 3) return false;
+  if(c.tier === 2) return c.k < d.k || (c.k === d.k && c.b - c.a < d.b - d.a);
+  return c.w > d.w + 1e-9 || (Math.abs(c.w - d.w) <= 1e-9 && c.b - c.a < d.b - d.a);
+}
+/* the piece of entry e that the "why it matched" line quotes, with where the query lands in it; null when
+   the title and the second line, as printed, already show the match, or nothing in a piece does */
+function srchPick(e, Q){
+  const P = e.P; if(!P || !P.length) return null;
+  const shown = srchNorm(srchCut(e.tt) + " | " + srchCut(e.sub));
+  if(Q.phrase ? shown.indexOf(Q.phrase) >= 0 : Q.key.every(t => srchHit(shown, t, Q.whole))) return null;
+  if(!Q.idf){ const N = buildIndex().length; Q.idf = Q.key.map(t => Math.log(1 + N / (1 + srchTerm(t, Q.whole).df))); }
+  let best = null;
+  P.forEach(p => { if(!p[1]) return;
+    const c = p.c || (p.c = {s:srchPlain(p[1])});
+    if(c.n === undefined) c.n = srchNorm(c.s);
+    if(!(Q.phrase && c.n.indexOf(Q.phrase) >= 0) && !Q.key.some(t => c.n.indexOf(t) >= 0)) return;   /* no word of the query is in this piece */
+    const m = srchFind(c.s, Q);
+    if(m && (!best || srchBetter(m, best.m))) best = {p, s:c.s, m};
+  });
+  return best;
+}
+/* the third line: the label of the piece and the clip of it centered on the match, marked */
+function srchSnip(e, Q, pk){
+  pk = pk === undefined ? srchPick(e, Q) : pk;
+  if(!pk) return "";
+  const s = pk.s, len = s.length, ms = pk.m.a, me = pk.m.b, span = me - ms;
+  let a = span >= SRCH_CLIP - 20 ? ms : ms - Math.floor((SRCH_CLIP - span) / 2);
+  a = Math.max(0, Math.min(a, len - SRCH_CLIP));
+  if(a > 0 && s[a - 1] !== " "){ const sp = s.indexOf(" ", a); a = sp >= 0 && sp < ms ? sp + 1 : (s.lastIndexOf(" ", a) + 1); }
+  let b = Math.max(a + SRCH_CLIP, me);
+  if(b < len){ const sp = s.lastIndexOf(" ", b); b = sp > me && sp > a + 60 ? sp : b; }
+  const clip = s.slice(a, b).trimEnd();
+  /* a question, rapid item or image opens unanswered: what it says in its bottom line, whys, table and
+     where-to-look line is drawn only after the answer, so the line says so instead of leaving the
+     student to look for it (opening it would have to record an answer to show it) */
+  const late = /^(Question|Rapid review|Image)$/.test(e.kind) && pk.p[0] !== "Question" ? '<span class="sl">(after you answer)</span> ' : "";
+  return '<div class="st3"><span class="sk">' + escText(srchPlain(pk.p[0])) + '</span> ' + late + hi((a > 0 ? "…" : "") + clip + (b < len ? "…" : ""), Q) + '</div>';
 }
 function buildIndex(){
   if(SEARCH_INDEX) return SEARCH_INDEX;
@@ -3814,14 +3922,17 @@ function buildIndex(){
       else if(x[0]==="p") F.push([x[1], W.body]);
       else if(x[0]==="steps") F.push([stepsText(x), W.body]);
     });
+    /* P2.5 F35b: the third item of a piece is where it sits in the lesson, the body block's index
+       ("3"; a table row "6.2"), which the lesson draws back as data-bi, so a hit can land on it */
     const P = [];
-    t.body.forEach(x => {
-      if(x[0]==="h") P.push(["Section", x[1]]);
-      else if(x[0]==="p") P.push(["Lesson", x[1]]);
-      else if(x[0]==="call") P.push([x[2], x[3]]);
-      else if(x[0]==="why") P.push(["Why", x[1]+" "+x[2]]);
-      else if(x[0]==="t") x[2].forEach(r => P.push(["Table", r.join(" · ")]));
-      else if(x[0]==="steps") P.push(["Steps", stepsText(x)]);
+    t.body.forEach((x, bi) => {
+      if(x[0]==="h") P.push(["Section", x[1], ""+bi]);
+      else if(x[0]==="p") P.push(["Lesson", x[1], ""+bi]);
+      else if(x[0]==="call") P.push([x[2], x[3], ""+bi]);
+      else if(x[0]==="why") P.push(["Why", x[1]+" "+x[2], ""+bi]);
+      else if(x[0]==="t"){ x[2].forEach((r, ri) => P.push(["Table", r.join(" · "), bi+"."+ri]));
+        P.push(["Table columns", x[1].join(" · "), ""+bi]); }
+      else if(x[0]==="steps") P.push(["Steps", stepsText(x), ""+bi]);
     });
     add({kind:"Topic", title:t.t, sub:srchPlain(t.blk.n)+" — "+srchPlain(t.sub), body:text, act:["t",t.id], P}, F);
   });
@@ -3857,14 +3968,15 @@ function buildIndex(){
       [[im.dx, W.key], [im.look, W.key]].concat((im.ann||[]).map(a => [a.l, W.why]), vals(im.ww).map(v => [v, W.why]))); });
   Object.keys(FIGS).forEach(k => add({kind:"Diagram", title:figTitle(k), sub:srchClip(FIGS[k].cap, 110),
       body:stripTags(FIGS[k].cap+" "+(FIGS[k].teach||"")+" "+FIGS[k].svg.replace(/<[^>]+>/g," ")), act:["f",k],
-      P:[["Caption", FIGS[k].cap], ["More on this figure", FIGS[k].teach]]},
+      P:[["Caption", FIGS[k].cap, "cap"], ["More on this figure", FIGS[k].teach, "teach"]]},
       [[FIGS[k].cap, W.key], [FIGS[k].teach, W.why], [FIGS[k].svg.replace(/<[^>]+>/g," "), W.body]]));
   Object.keys(PALACE).forEach(k => { const p = PALACE[k];
     add({kind:"Memory scene", title:p.t, sub:srchClip(p.story, 110),
-      body:stripTags(p.story+" "+p.keys.map(x=>x[1]+" "+x[2]).join(" ")), act:["m",k]},
+      body:stripTags(p.story+" "+p.keys.map(x=>x[1]+" "+x[2]).join(" ")), act:["m",k],
+      P:p.keys.map((x, i) => [x[1], x[2], "c"+i]).concat([["Story", p.story, "story"]])},
       [[p.story, W.body]].concat(p.keys.map(x => [x[1]+" "+x[2], W.why]))); });
   Object.keys(GLOSS).forEach(k => add({kind:"Glossary", title:GLOSS[k].t, sub:srchPlain(GLOSS[k].d),
-      body:GLOSS[k].t+" "+k+" "+GLOSS[k].d, act:["g",k]}, [[k, W.key], [GLOSS[k].d, W.why]]));
+      body:GLOSS[k].t+" "+k+" "+GLOSS[k].d, act:["g",k], P:[["Definition", GLOSS[k].d, "d"]]}, [[k, W.key], [GLOSS[k].d, W.why]]));
   SEARCH_INDEX = ix; return ix;
 }
 /* A query is split the way the pieces are. Stop words and 1-2 character tokens never
@@ -3938,7 +4050,7 @@ function runSearch(q){
   const Q = srchQuery(q);
   if(!Q.key.length){ res.innerHTML = '<div class="sempty">Keep typing: a search needs a word that is not just &ldquo;a&rdquo;, &ldquo;the&rdquo; or punctuation.</div>'; return; }
   const ix = buildIndex(), T = Q.key.map(t => srchTerm(t, Q.whole)), S = Q.short.map(t => srchTerm(t, true)), rows = [];
-  const idf = T.map(r => Math.log(1 + ix.length / (1 + r.df)));
+  const idf = Q.idf = T.map(r => Math.log(1 + ix.length / (1 + r.df)));
   ix.forEach((e, n) => {
     let got = 0, score = 0;
     T.forEach((r, j) => { const b = r.best[n]; if(b){ got++; score += b * idf[j]; } });
@@ -3957,14 +4069,16 @@ function runSearch(q){
   const named = new Set(hits.map(h => h.tier)).size > 1;
   hits.forEach(h => { const k = (named ? TL[h.tier] + " &middot; " : "") + h.e.kind;
     if(!groups[k]){ groups[k] = []; order.push(k); } groups[k].push(h.e); });
+  /* P2.5 F35b: the piece the third line quotes is also where the hit opens (data-at) */
   res.innerHTML = order.map(k =>
     '<div class="sgroup">'+k+' &middot; '+groups[k].length+'</div>' +
-    groups[k].map(e => `<button class="sitem" data-go="${e.act.join(":")}">
-      <div class="st1">${hi(e.tt, Q)}</div><div class="st2">${hi(e.sub, Q)}</div>${srchSnip(e, Q)}</button>`).join("")
+    groups[k].map(e => { const pk = srchPick(e, Q), at = pk && pk.p[2] ? ` data-at="${escA(pk.p[2])}"` : "";
+      return `<button class="sitem" data-go="${e.act.join(":")}"${at}>
+      <div class="st1">${hi(e.tt, Q)}</div><div class="st2">${hi(e.sub, Q)}</div>${srchSnip(e, Q, pk)}</button>`; }).join("")
   ).join("");
   res.scrollTop = 0;
   const first = res.querySelector(".sitem"); if(first) first.classList.add("sel");
-  res.querySelectorAll("[data-go]").forEach(b => b.onclick = () => { closeSearch(); searchGo(b.dataset.go); });
+  res.querySelectorAll("[data-go]").forEach(b => b.onclick = () => { closeSearch(); searchGo(b.dataset.go, {Q, at:b.dataset.at || ""}); });
 }
 /* s is plain text. It is cut into words once (letters and digits; "&" reads as "and", as in
    srchNorm) and marked the way the ranking matches: the phrase first, then the terms
@@ -3974,37 +4088,108 @@ function runSearch(q){
    text is ever turned into a pattern. */
 const SRCH_WORD = /[\p{L}\p{N}]+|&/gu;
 function hi(s, Q){
-  s = String(s); if(s.length > 190) s = s.slice(0, 190).trimEnd() + "…";
+  s = srchCut(String(s));
   if(!Q) return escText(s);
-  const w = [], R = []; let m; SRCH_WORD.lastIndex = 0;
-  while((m = SRCH_WORD.exec(s))) w.push([m.index, m.index + m[0].length, m[0] === "&" ? "and" : m[0].toLowerCase()]);
+  const w = srchWords(s), R = [];
   const n = Q.toks.length, terms = Q.key.concat(Q.short).sort((a, b) => b.length - a.length);
-  /* the span of term t in word x, or null (a word whose lower case changes length is marked whole) */
-  const span = (x, t, whole) => { const k = whole ? (x[2] === t ? 0 : -1) : x[2].startsWith(t) ? 0 : t.length >= 4 ? x[2].indexOf(t) : -1;
-    return k < 0 ? null : x[2].length === x[1] - x[0] ? [x[0] + k, x[0] + k + t.length] : [x[0], x[1]]; };
   for(let i = 0; i < w.length; i++){
     if(Q.phrase && i + n <= w.length && Q.toks.every((t, j) => j < n - 1 ? w[i+j][2] === t : w[i+j][2].startsWith(t))){
-      R.push([w[i][0], span(w[i+n-1], Q.toks[n-1], false)[1]]); i += n - 1; continue; }
-    for(const t of terms){ const r = span(w[i], t, Q.whole || t.length < 3); if(r){ R.push(r); break; } }
+      R.push([w[i][0], srchSpan(w[i+n-1], Q.toks[n-1], false)[1]]); i += n - 1; continue; }
+    for(const t of terms){ const r = srchSpan(w[i], t, Q.whole || t.length < 3); if(r){ R.push(r); break; } }
   }
   let out = "", last = 0;
   R.forEach(r => { out += escText(s.slice(last, r[0])) + "<mark>" + escText(s.slice(r[0], r[1])) + "</mark>"; last = r[1]; });
   return out + escText(s.slice(last));
 }
-function searchGo(spec){
-  const i = spec.indexOf(":"), kind = spec.slice(0,i), id = spec.slice(i+1);
+/* P2.5 F35b - opening a hit lands on the piece the result quoted, not on the top of the item. The
+   piece is data-at on the button (a lesson block "3", a table row "6.2", a figure's "teach", a
+   scene's "story" or card "c1", a glossary "d"). Landing:
+     1. opens what holds it shut (a why block, a figure's note, a scene's story);
+     2. scrolls it into view, just under the sticky header (the whole table, if it fits, so its
+        column heads show; the matched words, if the block is taller than the screen), and slides
+        a table that scrolls inside its own box (400 px) so the matched cell shows;
+     3. marks the block and, with the CSS Custom Highlight API where the browser has it, the matched
+        words, for about three seconds, without touching the markup;
+     4. moves focus there (a why's summary, a table row, the block itself).
+   The matched words are found again in the DRAWN text with the same srchFind the result line used. */
+let SRCH_FLASH_T = 0;
+function srchRange(root, Q){
+  const segs = []; let txt = "", prev = null;
+  const tw = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  /* a space goes where one block ends and the next begins (table cells, the WHY label and its
+     question) and nowhere inside a line, so a word split by a gloss link or bold stays one word */
+  const blockOf = n => { for(let q = n.parentElement; q && q !== root; q = q.parentElement){
+    const d = getComputedStyle(q).display; if(d !== "inline" && d !== "contents") return q; } return root; };
+  for(let n = tw.nextNode(); n; n = tw.nextNode()){
+    if(!n.nodeValue || (n.parentElement && n.parentElement.closest(".gpop"))) continue;
+    const bk = blockOf(n); if(prev && bk !== prev) txt += " "; prev = bk;
+    segs.push([txt.length, n]); txt += n.nodeValue;
+  }
+  const m = srchFind(txt, Q); if(!m) return null;
+  const pos = (off, end) => { for(let i = segs.length - 1; i >= 0; i--){ const g = segs[i];
+    if(end ? off > g[0] : off >= g[0]) return [g[1], Math.min(off - g[0], g[1].nodeValue.length)]; } return null; };
+  const a = pos(m.a, false), b = pos(m.b, true); if(!a || !b) return null;
+  const r = document.createRange(); r.setStart(a[0], a[1]); r.setEnd(b[0], b[1]); return r;
+}
+function srchFlashOff(){
+  clearTimeout(SRCH_FLASH_T);
+  document.querySelectorAll(".srhit").forEach(x => x.classList.remove("srhit"));
+  try{ if(window.CSS && CSS.highlights) CSS.highlights.delete("srhit"); }catch(e){}
+}
+function srchFlash(hot, rng){
+  srchFlashOff();
+  hot.classList.add("srhit");
+  try{ if(rng && window.CSS && CSS.highlights && typeof Highlight === "function") CSS.highlights.set("srhit", new Highlight(rng)); }catch(e){}
+  SRCH_FLASH_T = setTimeout(srchFlashOff, 3200);
+}
+/* hot: the element to mark and, unless o.text, the text to search; o.focus: what takes focus;
+   o.place: what to bring under the header when it fits (default hot); o.pad: gap below the header */
+function srchShow(hot, o){
+  const rng = o.Q ? srchRange(o.text || hot, o.Q) : null, box = rng ? rng.getBoundingClientRect() : null;
+  const wrap = hot.closest(".tblwrap");
+  if(wrap && rng){ const wr = wrap.getBoundingClientRect(), n0 = rng.startContainer, cell = (n0.nodeType === 1 ? n0 : n0.parentElement).closest("td,th"), r1 = (cell || rng).getBoundingClientRect();
+    if(r1.right > wr.right - 4) wrap.scrollLeft += Math.max(0, Math.min(r1.right - wr.right + 6, r1.left - wr.left - 4));
+    else if(r1.left < wr.left + 4) wrap.scrollLeft -= wr.left - r1.left + 6; }
+  const hd = document.querySelector("header"), H = hd ? hd.offsetHeight : 0, avail = window.innerHeight - H;
+  const place = o.place || hot, pr = place.getBoundingClientRect(), fits = pr.height <= avail * 0.85;
+  const lead = hot === place || o.pad === undefined ? 12 : o.pad;   /* a row in a table too tall for the screen: some rows above it */
+  let y = (fits ? pr.top : hot.getBoundingClientRect().top) - H - (fits ? 12 : lead);
+  if(box && box.bottom - y > window.innerHeight - 28) y = box.top - H - Math.round(avail * 0.3);
+  window.scrollTo({top:Math.max(0, Math.round(window.scrollY + y)), behavior:"instant"});
+  const f = o.focus || hot;
+  if(f.tabIndex < 0) f.setAttribute("tabindex", "-1");
+  try{ f.focus({preventScroll:true}); }catch(e){}
+  srchFlash(hot, rng);
+}
+/* a lesson hit: the block data-bi, and for a table the row; a closed why is opened and focus goes to its summary */
+function srchLandTopic(at, Q){
+  const box = document.querySelector("#app .body-inner"), ix = String(at || "").split("."); if(!box || !Q || !at) return false;
+  const blk = box.querySelector(':scope > [data-bi="' + (+ix[0]) + '"]'); if(!blk) return false;
+  let hot = blk, f = blk, place = blk;
+  if(blk.tagName === "DETAILS"){ blk.open = true; f = blk.querySelector("summary") || blk; }
+  const row = ix.length > 1 ? blk.querySelectorAll("tbody tr")[+ix[1]] : null;
+  if(row){ hot = f = row; }
+  srchShow(hot, {Q, focus:f, place, pad:Math.round(window.innerHeight * 0.2)});
+  return true;
+}
+function searchGo(spec, ctx){
+  const i = spec.indexOf(":"), kind = spec.slice(0,i), id = spec.slice(i+1), at = (ctx && ctx.at) || "", Q = (ctx && ctx.Q) || null;
   /* P2.6: every set start clears the empty-set notice (P2.3); q: and r: used to leave it, so it
      came back on the landing page once the one-item set ended (t: and g: clear it in go()) */
   SET_EMPTY = null;
   /* P2.V F31: the dialog that held focus is gone before the view is drawn, so focus was left on the
      body and the next Tab started at the top of the page. Every branch now lands it (landFocus):
-     on the question, the rapid prompt, the item to sort, the topic heading or the glossary entry. */
-  if(kind === "t"){ go("learn", id); landFocus(); return; }
-  if(kind === "g"){ go("gloss"); const inp = el("gsearch");
+     on the question, the rapid prompt, the item to sort, the topic heading or the glossary entry.
+     P2.5 F35b: a lesson hit lands on the block or table row it quoted (srchLandTopic), and the
+     glossary hit on its own entry, found by key (the filter by title can leave several entries). */
+  if(kind === "t"){ go("learn", id); if(!srchLandTopic(at, Q)) landFocus(); return; }
+  if(kind === "g"){ go("gloss"); const inp = el("gsearch"); let landed = false;
     if(inp && GLOSS[id]){ inp.value = GLOSS[id].t; inp.dispatchEvent(new Event("input"));
-      const it = Array.from(document.querySelectorAll("#glist .gitem")).find(x => !x.classList.contains("hide"));
-      const h = it && it.querySelector("h5"); if(h){ h.setAttribute("tabindex", "-1"); try{ h.focus({preventScroll:true}); }catch(e){} } }
-    landFocus(); return; }
+      const all = Array.from(document.querySelectorAll("#glist .gitem")),
+        it = all.find(x => x.dataset.gkey === id) || all.find(x => !x.classList.contains("hide"));
+      const h = it && it.querySelector("h5");
+      if(h){ landed = true; srchShow(it, {Q, focus:h, text:at === "d" ? it.querySelector("p") : null, pad:Math.round(window.innerHeight * 0.2)}); } }
+    if(!landed) landFocus(); return; }
   if(kind === "q"){ S.mode="practice"; S.ps = {set:[id], i:0, src:"search", t0:Date.now()}; save(); render(); landFocus(); return; }
   /* P2.2 (R14) - rapid ids are strings (META.key + hash); +id made NaN and dropped the set */
   if(kind === "r"){ S.mode="rapid"; S.rf = {set:[id], i:0, t0:Date.now(), src:"search"}; save(); render(); landFocus(); return; }
@@ -4015,11 +4200,19 @@ function searchGo(spec){
     if(!t) return;
     go("learn", t.id);
     /* P2.V sweep (K19): a diagram or scene hit lands on that diagram or scene, not on the top of
-       its lesson, and focus goes to its Enlarge button (a scene: the scene itself) */
+       its lesson, and focus goes to its Enlarge button (a scene: the scene itself).
+       P2.5 F35b: a hit in a figure's note (K18, under a disclosure) or in a scene's story opens it
+       and lands on the matched words; a hit on a scene card lands on that card. */
     const box = document.querySelector("#app .body-inner");
     const fz = kind === "f" && box ? Array.from(box.querySelectorAll("figure [data-zoomfig]")).find(b => b.dataset.zoomfig === id) : null;
     const pal = kind === "m" && box ? Array.from(box.querySelectorAll(".palace")).find(x => x.dataset.pal === id) : null;
-    if(fz) landAt(fz.closest("figure"), fz); else if(pal) landAt(pal);
+    const pad = Math.round(window.innerHeight * 0.2), fig = fz && fz.closest("figure");
+    const det = fig && at === "teach" ? fig.querySelector("details.figteach") : pal && at === "story" ? pal.querySelector("details.palstorywrap") : null;
+    const card = pal && /^c\d+$/.test(at) ? pal.querySelectorAll(".palcard")[+at.slice(1)] : null;
+    if(det && Q){ det.open = true; srchShow(det, {Q, focus:det.querySelector("summary") || det, text:det.querySelector(".figteachbody, .palstory"), place:fig || pal, pad}); }
+    else if(card && Q) srchShow(card, {Q, focus:card, place:pal, pad});
+    else if(fz && Q && at === "cap") srchShow(fig.querySelector("figcaption") || fig, {Q, focus:fz, place:fig, pad});
+    else if(fz) landAt(fig, fz); else if(pal) landAt(pal);
   }
 }
 
@@ -4088,9 +4281,16 @@ function screenContext(){
     const d = DRILLS.find(x=>x.id===S.dr.id), st = S.dr;
     /* the rule is on screen only on the end screen (order: once checked); until then the tutor
        gets what the student sees: the item or the steps, never a side, a position or the rule */
-    const over = d && (d.kind === "order" ? !!st.checked : (st.i||0) >= (st.order||[]).length);
+    /* P2.V F21: an answered item stays on screen, with its verdict, until Next (drJudged); the
+       tutor is given that item and that verdict, as it is for an answered question or image */
+    const jx = d && d.kind !== "order" ? drJudged(d, st) : -1;
+    const over = d && (d.kind === "order" ? !!st.checked : (st.i||0) >= (st.order||[]).length && jx < 0);
     if(d && over) return {label:"Drill", detail:d.t, text:"Discrimination drill: "+d.t+
       ". The student has finished this run and sees the result.\nKEY DISCRIMINATOR: "+stripTags(d.key||"")};
+    if(d && jx >= 0) return {label:"Drill", detail:d.t, text:"Discrimination drill: "+d.t+
+      ". The student is part-way through a run and has ALREADY ANSWERED the item on screen; its verdict is showing."+
+      "\nSORT INTO: "+(d.kind === "multi" ? (d.cols||[]).map(c=>stripTags(c.l)) : [stripTags(d.a), stripTags(d.bb)]).join(" | ")+
+      "\nITEM ON SCREEN: "+stripTags(d.items[jx][0])+"\nTHE VERDICT THEY SEE: "+stripTags(st.last.msg||"")};
     if(d){ const step = j => stripTags(d.items[j]);
       return {label:"Drill", detail:d.t, lock:"d:"+d.id,
       text:"Discrimination drill: "+d.t+". The student is part-way through a run and has NOT finished it. You have "+
@@ -5313,34 +5513,48 @@ function wireDrill(app){
     if(k==="__again"){ startDrill(S.dr.id); return; }
     startDrill(k);
   });
-  app.querySelectorAll("[data-sort]").forEach(b => b.onclick = ()=>{
-    const st = S.dr, d = DRILLS.find(x=>x.id===st.id);
-    if(!d || st.i>=st.order.length){ render(); return; }
-    const ix = st.order[st.i], side = b.dataset.sort, ok = d.items[ix][1] === side;
-    (st.hist=st.hist||[]).push({ix,pick:side,ok,ts:Date.now()});
-    if(!ok) (st.missed = st.missed || []).push(ix);
-    const why = (DRILL_WHY[d.id]||{})[d.items[ix][0]];
-    st.last = {ok, msg: (ok ? "<b>"+esc(d.items[ix][0])+"</b> does belong to "+(side==="a"?esc(d.a):esc(d.bb))+"."
-      : "<b>"+esc(d.items[ix][0])+"</b> belongs to <b>"+(d.items[ix][1]==="a"?esc(d.a):esc(d.bb))+"</b>.")
-      + (why ? " "+why : "")};
-    st.i++;
-    if(st.i >= st.order.length){ const prev=S.drills[d.id]||{}; S.drills[d.id] = {missed: st.missed||[], done:true, ts:Date.now(), n:(prev.n||0)+1,hist:(prev.hist||[]).concat(st.hist||[]).slice(-60)}; }
-    bumpDay(0); save(); render();
-  });
-  app.querySelectorAll("[data-sortm]").forEach(b => b.onclick = ()=>{
-    const st=S.dr, d=DRILLS.find(x=>x.id===st.id);
-    if(!d || st.i>=st.order.length){ render(); return; }
-    const ix=st.order[st.i], chosen=b.dataset.sortm;
-    const col=d.cols.find(c=>c.id===d.items[ix][1]), ok=d.items[ix][1]===chosen;
-    (st.hist=st.hist||[]).push({ix,pick:chosen,ok,ts:Date.now()});
+  /* P2.V F21: a pick records the verdict for THIS item (st.last.ix) and names it in the message;
+     the item stays on screen until Next. Focus goes to Next, so Enter moves on, and Next is
+     scrolled into view when the verdict would sit below the fold (a multi item with a photo at
+     400 px; the photo's height arrives after the render, so the scroll is repeated when it
+     loads). On the new item focus lands on the item itself (viewLead), never on a side, so a
+     second Enter cannot answer it unseen. */
+  const drPick = (d, st, pick, right, msg) => {
+    const ix = st.order[st.i], ok = pick === right, why = (DRILL_WHY[d.id]||{})[d.items[ix][0]];
+    (st.hist=st.hist||[]).push({ix,pick,ok,ts:Date.now()});
     if(!ok && !(st.missed||[]).includes(ix)) (st.missed=st.missed||[]).push(ix);
-    const why=(DRILL_WHY[d.id]||{})[d.items[ix][0]];
-    st.last={ok,msg:(ok?`<b>${fmt(d.items[ix][0])}</b> fits ${esc(col.l)}.`:`This belongs to <b>${esc(col.l)}</b>, not ${esc((d.cols.find(c=>c.id===chosen)||{}).l||chosen)}.`)
-      +(why?" "+why:"")};
+    st.last = {ix, pick, ok, msg: msg(ok) + (why ? " "+why : "")};
     st.i++;
     if(st.i>=st.order.length){ const prev=S.drills[d.id]||{}; S.drills[d.id]={missed:st.missed||[],done:true,ts:Date.now(),n:(prev.n||0)+1,hist:(prev.hist||[]).concat(st.hist||[]).slice(-60)}; }
     bumpDay(0); save(); render();
+    const next = el("drnext"), img = app.querySelector(".imgbox img");
+    drFocus(next);
+    const reveal = () => { const n = el("drnext"); if(n) n.scrollIntoView({block:"nearest", behavior:"instant"}); };
+    reveal();
+    if(img && !img.complete) img.addEventListener("load", reveal, {once:true});   /* the photo's height arrives late */
+  };
+  app.querySelectorAll("[data-sort]").forEach(b => b.onclick = ()=>{
+    const st = S.dr, d = DRILLS.find(x=>x.id===st.id);
+    if(!d || drJudged(d, st) >= 0 || st.i>=st.order.length){ render(); return; }
+    const it = d.items[st.order[st.i]], side = b.dataset.sort, nm = "<b>\u201c"+esc(it[0])+"\u201d</b>";
+    const sideL = x => x==="a" ? esc(d.a) : esc(d.bb);
+    drPick(d, st, side, it[1], ok => ok ? nm+" does belong to <b>"+sideL(side)+"</b>."
+      : nm+" belongs to <b>"+sideL(it[1])+"</b>, not "+sideL(side)+".");
   });
+  app.querySelectorAll("[data-sortm]").forEach(b => b.onclick = ()=>{
+    const st=S.dr, d=DRILLS.find(x=>x.id===st.id);
+    if(!d || drJudged(d, st) >= 0 || st.i>=st.order.length){ render(); return; }
+    const it=d.items[st.order[st.i]], chosen=b.dataset.sortm, nm=`<b>\u201c${fmt(it[0])}\u201d</b>`;
+    const colL = id => esc((d.cols.find(c=>c.id===id)||{}).l||id);
+    drPick(d, st, chosen, it[1], ok => ok ? `${nm} fits <b>${colL(chosen)}</b>.`
+      : `${nm} belongs to <b>${colL(it[1])}</b>, not ${colL(chosen)}.`);
+  });
+  const nx = el("drnext");
+  if(nx) nx.onclick = ()=>{
+    const st = S.dr; if(!st) return;
+    st.last = null; S.scroll.drill = 0; save(); render();
+    window.scrollTo({top:0,behavior:"instant"});
+  };
   app.querySelectorAll("[data-dwhy]").forEach(b => b.onclick = ()=>drToggleWhy(b));
   app.querySelectorAll("[data-op]").forEach(b => b.onclick = ()=>{
     const st = S.dr, ix = +b.dataset.op;
@@ -5357,6 +5571,7 @@ function wireDrill(app){
     bumpDay(0); save(); render();
   };
 }
+function drFocus(n){ if(n) try{ n.focus({preventScroll:true}); }catch(e){} }
 function startRapid(k){
   /* Due: most overdue first, drawn from EVERY block (the hub), not just this one. P2.3: the
      sets are rapidSet() (see practicePool); an empty one is reported, never filled at random. */

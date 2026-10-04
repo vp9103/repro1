@@ -702,6 +702,15 @@ button.dwbtn:hover > span:first-child{text-decoration:underline;text-decoration-
 .gitem .glink b{font-weight:700}
 .gitem .glink:hover{color:var(--ink)}
 .gterm.ghere{background:var(--a2-soft);box-shadow:0 0 0 2px var(--a2);border-radius:3px}
+/* P2.5 F35b: where a search hit landed. The block (or table row) the result quoted wears a ring for
+   about three seconds, and the matched words are marked with the CSS Custom Highlight API where the
+   browser has it (nothing in the markup changes). Declared after :focus-visible so the ring wins
+   while focus sits on the same element. */
+.srhit{outline:3px solid var(--warn);outline-offset:3px;border-radius:var(--r)}
+tr.srhit{outline-offset:-3px;border-radius:0}
+tr.srhit td{background:var(--warn-soft)}
+.gitem.srhit{outline-offset:-3px;border-radius:0}
+::highlight(srhit){background-color:color-mix(in srgb, var(--warn) 42%, transparent);color:inherit}
 .gsearch{width:100%;max-width:420px;padding:11px 15px;border:1px solid var(--line-strong);border-radius:var(--r);
   background:var(--surface);color:var(--ink);font-size:15px;margin-bottom:20px;font-family:var(--sans)}
 .gsearch:focus{outline:2px solid var(--a1);border-color:transparent}
@@ -857,6 +866,7 @@ button.dwbtn:hover > span:first-child{text-decoration:underline;text-decoration-
 .sitem .st2{font-size:12.8px;color:var(--ink-3);margin-top:2px}
 .sitem .st3{font-size:12.6px;line-height:1.45;color:var(--ink-2);margin-top:4px}
 .sitem .st3 .sk{font:600 10.5px/1.2 var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);margin-right:3px}
+.sitem .st3 .sl{font:500 10.5px/1.2 var(--mono);color:var(--ink-3);margin-right:3px}
 .sitem mark{background:var(--a1-soft);color:var(--a1);padding:0;box-shadow:0 0 0 1px var(--a1-soft);border-radius:2px;font-weight:600}
 .sempty{padding:34px 22px;text-align:center;color:var(--ink-3);font-family:var(--serif);
   font-size:16.5px;font-style:italic}
@@ -3808,7 +3818,7 @@ function viewLearn(){
         <p class="sub">${esc(t.sub)}</p>
       </div>
       ${pre ? pretestHTML(t) : ""}
-      <div class="body-inner">${(AUTOGLOSS_USED = explicitGloss(t), (t.body||[]).map(bodyBlock).join(""))}</div>
+      <div class="body-inner">${(AUTOGLOSS_USED = explicitGloss(t), (t.body||[]).map((x, i) => bodyTag(bodyBlock(x), i)).join(""))}</div>
       ${t.grid ? gridHTML(t) : ""}
       <div class="navfoot">
         <div>${prev?'<button class="btn gho" data-t="'+prev.id+'">&larr; '+esc(prev.t)+'</button>':''}</div>
@@ -3833,6 +3843,9 @@ function explicitGloss(t){
     const k = m.slice(2, -2).split("|")[0]; if(GLOSS[k]) used[k] = 1; });
   return used;
 }
+/* P2.5 F35b: every block carries its index in t.body (data-bi), so a search hit can land on the
+   block, and on the row of a table, that the result quoted (srchLand) */
+const bodyTag = (h, i) => h.replace(/^(\s*<[a-z][a-z0-9]*)/i, '$1 data-bi="' + i + '"');
 function bodyBlock(x){
   const k = x[0];
   /* A section heading is where a term is INTRODUCED, so it is the honest place
@@ -5167,7 +5180,7 @@ function viewGloss(){
       <span class="st2">${sub}</span></div>
     <input class="gsearch" id="gsearch" placeholder="Search a term..." aria-label="Search the glossary" autocomplete="off">
     <div class="glist" id="glist">${ks.map(k=>
-      `<div class="gitem" data-gk="${esc(GLOSS[k].t+" "+k+" "+GLOSS[k].d).toLowerCase()}">
+      `<div class="gitem" data-gk="${esc(GLOSS[k].t+" "+k+" "+GLOSS[k].d).toLowerCase()}" data-gkey="${escA(k)}">
         <h5>${esc(GLOSS[k].t)}</h5><p>${fmt(GLOSS[k].d)}</p>${link(k)}</div>`).join("")}</div>`;
 }
 /* the entry's link lands like any topic change (go), then on the section that introduces the
@@ -5220,30 +5233,99 @@ const srchClip = (s, n) => { s = srchPlain(s); return s.length > n ? s.slice(0, 
 const escText = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 /* P2.V sweep (K19): a hit found in a why, a table row, a bottom line or a where-to-look line
    used to show only the item's title and stem, so the words that matched were nowhere on the
-   list. e.P holds the item's pieces as [label, text]; srchSnip() adds a third line with the
-   piece that matched (the phrase first, else the most query words), clipped around the match
-   and marked, whenever the title and the second line do not already show it. */
+   list. e.P holds the item's pieces as [label, text, at?]; srchSnip() adds a third line with the
+   piece that matched best (see srchFind), clipped around the match and marked, whenever the
+   title and the second line, as printed, do not already show it. */
 const whyNot = o => "Why not \u201c" + srchClip(o, 48) + "\u201d";
 function figTitle(k){
   const f = FIGS[k] || {}, m = /<text\b[^>]*\bclass="[^"]*\bttl\b[^"]*"[^>]*>([\s\S]*?)<\/text>/.exec(f.svg || "");
   const a = /\baria-label="([^"]+)"/.exec(f.svg || "");
   return (m && srchPlain(m[1])) || (a && srchPlain(a[1])) || k;
 }
-function srchSnip(e, Q){
-  const P = (e.P || []).filter(p => p[1]);
-  if(!P.length) return "";
-  const shown = srchNorm(e.tt + " | " + e.sub);
-  if(Q.phrase ? shown.indexOf(Q.phrase) >= 0 : Q.key.every(t => srchHit(shown, t, Q.whole))) return "";
-  const N = P.map(p => srchNorm(srchPlain(p[1])));
-  let at = Q.phrase ? N.findIndex(n => n.indexOf(Q.phrase) >= 0) : -1;
-  if(at < 0){ let best = 0; N.forEach((n, i) => { const c = Q.key.filter(t => srchHit(n, t, Q.whole)).length; if(c > best){ best = c; at = i; } }); }
-  if(at < 0) return "";
-  const s = srchPlain(P[at][1]), low = s.toLowerCase();
-  const ks = Q.key.map(t => low.indexOf(t)).filter(x => x >= 0), k = ks.length ? Math.min.apply(null, ks) : 0;
-  let a = Math.max(0, k - 50); if(a > 0){ const sp = s.indexOf(" ", a); a = sp > 0 && sp < k ? sp + 1 : a; }
-  let clip = s.slice(a, a + 170);
-  if(a + 170 < s.length){ const sp = clip.lastIndexOf(" "); clip = (sp > 110 ? clip.slice(0, sp) : clip) + "\u2026"; }
-  return '<div class="st3"><span class="sk">' + escText(srchPlain(P[at][0])) + '</span> ' + hi((a > 0 ? "\u2026" : "") + clip, Q) + '</div>';
+/* P2.V F35 redo (2026-10-04): the line used to clip around the first place ANY query word
+   appeared, so an exact phrase late in a long why or explanation showed unrelated text with
+   one word marked. It now clips around where the query really lands, best first:
+     tier 3  the whole phrase;
+     tier 2  else the tightest run of words that holds every scoring word (no longer than the
+             clip), the "all words" window;
+     tier 1  else the window of that length that holds the most rarity (idf) of distinct
+             words, which is the single rarest word when no two sit near each other.
+   Each piece of the entry is tried the same way and the best piece wins (tier, then the
+   tighter window, then the earlier piece). Everything runs on plain text cut into words by
+   SRCH_WORD, the same cut hi() uses, so the marks and the window can never disagree, and
+   hi() still marks once over plain text. e.P pieces are [label, text, at]; `at` says where
+   the piece sits on its own page (a topic block "3", a table row "6.2", "teach", "story") so
+   that opening the hit can land there (searchGo). */
+const SRCH_CLIP = 170, SRCH_SHOW = 190;
+const srchCut = s => s.length > SRCH_SHOW ? s.slice(0, SRCH_SHOW).trimEnd() + "…" : s;
+const srchWords = s => { const w = []; let m; SRCH_WORD.lastIndex = 0;
+  while((m = SRCH_WORD.exec(s))) w.push([m.index, m.index + m[0].length, m[0] === "&" ? "and" : m[0].toLowerCase()]);
+  return w; };
+/* where term t sits in word x (a [start, end, lower] triple), or -1: at the start of the word, inside it
+   for terms of 4+ letters, or as the whole word (short terms) */
+const srchAt = (x, t, whole) => whole ? (x[2] === t ? 0 : -1) : x[2].startsWith(t) ? 0 : t.length >= 4 ? x[2].indexOf(t) : -1;
+/* the span of term t in word x, or null (a word whose lower case changes length is marked whole) */
+const srchSpan = (x, t, whole) => { const k = srchAt(x, t, whole);
+  return k < 0 ? null : x[2].length === x[1] - x[0] ? [x[0] + k, x[0] + k + t.length] : [x[0], x[1]]; };
+function srchFind(s, Q){
+  const w = srchWords(s), n = Q.toks.length, K = Q.key, idf = Q.idf || K.map(() => 1);
+  if(Q.phrase) for(let i = 0; i + n <= w.length; i++)
+    if(Q.toks.every((t, j) => j < n - 1 ? w[i+j][2] === t : w[i+j][2].startsWith(t)))
+      return {tier:3, a:w[i][0], b:srchSpan(w[i+n-1], Q.toks[n-1], false)[1], k:n, w:0};
+  const hit = w.map(x => { const r = []; K.forEach((t, j) => { if(srchAt(x, t, Q.whole) >= 0) r.push(j); }); return r; });
+  let best = null;
+  for(let i = 0; i < w.length; i++){
+    if(!hit[i].length) continue;
+    const seen = new Set(); let wt = 0, end = w[i][1], last = i;
+    for(let j = i; j < w.length && w[j][1] - w[i][0] <= SRCH_CLIP; j++){
+      hit[j].forEach(t => { if(!seen.has(t)){ seen.add(t); wt += idf[t]; end = w[j][1]; last = j; } });
+      if(seen.size === K.length) break;
+    }
+    const c = {tier:seen.size === K.length ? 2 : 1, a:w[i][0], b:end, k:last - i + 1, w:wt};
+    if(!best || srchBetter(c, best)) best = c;
+  }
+  return best;
+}
+/* is match c better than d? (both from the same piece or from two pieces of one entry) */
+function srchBetter(c, d){
+  if(c.tier !== d.tier) return c.tier > d.tier;
+  if(c.tier === 3) return false;
+  if(c.tier === 2) return c.k < d.k || (c.k === d.k && c.b - c.a < d.b - d.a);
+  return c.w > d.w + 1e-9 || (Math.abs(c.w - d.w) <= 1e-9 && c.b - c.a < d.b - d.a);
+}
+/* the piece of entry e that the "why it matched" line quotes, with where the query lands in it; null when
+   the title and the second line, as printed, already show the match, or nothing in a piece does */
+function srchPick(e, Q){
+  const P = e.P; if(!P || !P.length) return null;
+  const shown = srchNorm(srchCut(e.tt) + " | " + srchCut(e.sub));
+  if(Q.phrase ? shown.indexOf(Q.phrase) >= 0 : Q.key.every(t => srchHit(shown, t, Q.whole))) return null;
+  if(!Q.idf){ const N = buildIndex().length; Q.idf = Q.key.map(t => Math.log(1 + N / (1 + srchTerm(t, Q.whole).df))); }
+  let best = null;
+  P.forEach(p => { if(!p[1]) return;
+    const c = p.c || (p.c = {s:srchPlain(p[1])});
+    if(c.n === undefined) c.n = srchNorm(c.s);
+    if(!(Q.phrase && c.n.indexOf(Q.phrase) >= 0) && !Q.key.some(t => c.n.indexOf(t) >= 0)) return;   /* no word of the query is in this piece */
+    const m = srchFind(c.s, Q);
+    if(m && (!best || srchBetter(m, best.m))) best = {p, s:c.s, m};
+  });
+  return best;
+}
+/* the third line: the label of the piece and the clip of it centered on the match, marked */
+function srchSnip(e, Q, pk){
+  pk = pk === undefined ? srchPick(e, Q) : pk;
+  if(!pk) return "";
+  const s = pk.s, len = s.length, ms = pk.m.a, me = pk.m.b, span = me - ms;
+  let a = span >= SRCH_CLIP - 20 ? ms : ms - Math.floor((SRCH_CLIP - span) / 2);
+  a = Math.max(0, Math.min(a, len - SRCH_CLIP));
+  if(a > 0 && s[a - 1] !== " "){ const sp = s.indexOf(" ", a); a = sp >= 0 && sp < ms ? sp + 1 : (s.lastIndexOf(" ", a) + 1); }
+  let b = Math.max(a + SRCH_CLIP, me);
+  if(b < len){ const sp = s.lastIndexOf(" ", b); b = sp > me && sp > a + 60 ? sp : b; }
+  const clip = s.slice(a, b).trimEnd();
+  /* a question, rapid item or image opens unanswered: what it says in its bottom line, whys, table and
+     where-to-look line is drawn only after the answer, so the line says so instead of leaving the
+     student to look for it (opening it would have to record an answer to show it) */
+  const late = /^(Question|Rapid review|Image)$/.test(e.kind) && pk.p[0] !== "Question" ? '<span class="sl">(after you answer)</span> ' : "";
+  return '<div class="st3"><span class="sk">' + escText(srchPlain(pk.p[0])) + '</span> ' + late + hi((a > 0 ? "…" : "") + clip + (b < len ? "…" : ""), Q) + '</div>';
 }
 function buildIndex(){
   if(SEARCH_INDEX) return SEARCH_INDEX;
@@ -5265,14 +5347,17 @@ function buildIndex(){
       else if(x[0]==="p") F.push([x[1], W.body]);
       else if(x[0]==="steps") F.push([stepsText(x), W.body]);
     });
+    /* P2.5 F35b: the third item of a piece is where it sits in the lesson, the body block's index
+       ("3"; a table row "6.2"), which the lesson draws back as data-bi, so a hit can land on it */
     const P = [];
-    t.body.forEach(x => {
-      if(x[0]==="h") P.push(["Section", x[1]]);
-      else if(x[0]==="p") P.push(["Lesson", x[1]]);
-      else if(x[0]==="call") P.push([x[2], x[3]]);
-      else if(x[0]==="why") P.push(["Why", x[1]+" "+x[2]]);
-      else if(x[0]==="t") x[2].forEach(r => P.push(["Table", r.join(" · ")]));
-      else if(x[0]==="steps") P.push(["Steps", stepsText(x)]);
+    t.body.forEach((x, bi) => {
+      if(x[0]==="h") P.push(["Section", x[1], ""+bi]);
+      else if(x[0]==="p") P.push(["Lesson", x[1], ""+bi]);
+      else if(x[0]==="call") P.push([x[2], x[3], ""+bi]);
+      else if(x[0]==="why") P.push(["Why", x[1]+" "+x[2], ""+bi]);
+      else if(x[0]==="t"){ x[2].forEach((r, ri) => P.push(["Table", r.join(" · "), bi+"."+ri]));
+        P.push(["Table columns", x[1].join(" · "), ""+bi]); }
+      else if(x[0]==="steps") P.push(["Steps", stepsText(x), ""+bi]);
     });
     add({kind:"Topic", title:t.t, sub:srchPlain(t.blk.n)+" — "+srchPlain(t.sub), body:text, act:["t",t.id], P}, F);
   });
@@ -5308,14 +5393,15 @@ function buildIndex(){
       [[im.dx, W.key], [im.look, W.key]].concat((im.ann||[]).map(a => [a.l, W.why]), vals(im.ww).map(v => [v, W.why]))); });
   Object.keys(FIGS).forEach(k => add({kind:"Diagram", title:figTitle(k), sub:srchClip(FIGS[k].cap, 110),
       body:stripTags(FIGS[k].cap+" "+(FIGS[k].teach||"")+" "+FIGS[k].svg.replace(/<[^>]+>/g," ")), act:["f",k],
-      P:[["Caption", FIGS[k].cap], ["More on this figure", FIGS[k].teach]]},
+      P:[["Caption", FIGS[k].cap, "cap"], ["More on this figure", FIGS[k].teach, "teach"]]},
       [[FIGS[k].cap, W.key], [FIGS[k].teach, W.why], [FIGS[k].svg.replace(/<[^>]+>/g," "), W.body]]));
   Object.keys(PALACE).forEach(k => { const p = PALACE[k];
     add({kind:"Memory scene", title:p.t, sub:srchClip(p.story, 110),
-      body:stripTags(p.story+" "+p.keys.map(x=>x[1]+" "+x[2]).join(" ")), act:["m",k]},
+      body:stripTags(p.story+" "+p.keys.map(x=>x[1]+" "+x[2]).join(" ")), act:["m",k],
+      P:p.keys.map((x, i) => [x[1], x[2], "c"+i]).concat([["Story", p.story, "story"]])},
       [[p.story, W.body]].concat(p.keys.map(x => [x[1]+" "+x[2], W.why]))); });
   Object.keys(GLOSS).forEach(k => add({kind:"Glossary", title:GLOSS[k].t, sub:srchPlain(GLOSS[k].d),
-      body:GLOSS[k].t+" "+k+" "+GLOSS[k].d, act:["g",k]}, [[k, W.key], [GLOSS[k].d, W.why]]));
+      body:GLOSS[k].t+" "+k+" "+GLOSS[k].d, act:["g",k], P:[["Definition", GLOSS[k].d, "d"]]}, [[k, W.key], [GLOSS[k].d, W.why]]));
   SEARCH_INDEX = ix; return ix;
 }
 /* A query is split the way the pieces are. Stop words and 1-2 character tokens never
@@ -5389,7 +5475,7 @@ function runSearch(q){
   const Q = srchQuery(q);
   if(!Q.key.length){ res.innerHTML = '<div class="sempty">Keep typing: a search needs a word that is not just &ldquo;a&rdquo;, &ldquo;the&rdquo; or punctuation.</div>'; return; }
   const ix = buildIndex(), T = Q.key.map(t => srchTerm(t, Q.whole)), S = Q.short.map(t => srchTerm(t, true)), rows = [];
-  const idf = T.map(r => Math.log(1 + ix.length / (1 + r.df)));
+  const idf = Q.idf = T.map(r => Math.log(1 + ix.length / (1 + r.df)));
   ix.forEach((e, n) => {
     let got = 0, score = 0;
     T.forEach((r, j) => { const b = r.best[n]; if(b){ got++; score += b * idf[j]; } });
@@ -5408,14 +5494,16 @@ function runSearch(q){
   const named = new Set(hits.map(h => h.tier)).size > 1;
   hits.forEach(h => { const k = (named ? TL[h.tier] + " &middot; " : "") + h.e.kind;
     if(!groups[k]){ groups[k] = []; order.push(k); } groups[k].push(h.e); });
+  /* P2.5 F35b: the piece the third line quotes is also where the hit opens (data-at) */
   res.innerHTML = order.map(k =>
     '<div class="sgroup">'+k+' &middot; '+groups[k].length+'</div>' +
-    groups[k].map(e => `<button class="sitem" data-go="${e.act.join(":")}">
-      <div class="st1">${hi(e.tt, Q)}</div><div class="st2">${hi(e.sub, Q)}</div>${srchSnip(e, Q)}</button>`).join("")
+    groups[k].map(e => { const pk = srchPick(e, Q), at = pk && pk.p[2] ? ` data-at="${escA(pk.p[2])}"` : "";
+      return `<button class="sitem" data-go="${e.act.join(":")}"${at}>
+      <div class="st1">${hi(e.tt, Q)}</div><div class="st2">${hi(e.sub, Q)}</div>${srchSnip(e, Q, pk)}</button>`; }).join("")
   ).join("");
   res.scrollTop = 0;
   const first = res.querySelector(".sitem"); if(first) first.classList.add("sel");
-  res.querySelectorAll("[data-go]").forEach(b => b.onclick = () => { closeSearch(); searchGo(b.dataset.go); });
+  res.querySelectorAll("[data-go]").forEach(b => b.onclick = () => { closeSearch(); searchGo(b.dataset.go, {Q, at:b.dataset.at || ""}); });
 }
 /* s is plain text. It is cut into words once (letters and digits; "&" reads as "and", as in
    srchNorm) and marked the way the ranking matches: the phrase first, then the terms
@@ -5425,37 +5513,108 @@ function runSearch(q){
    text is ever turned into a pattern. */
 const SRCH_WORD = /[\p{L}\p{N}]+|&/gu;
 function hi(s, Q){
-  s = String(s); if(s.length > 190) s = s.slice(0, 190).trimEnd() + "…";
+  s = srchCut(String(s));
   if(!Q) return escText(s);
-  const w = [], R = []; let m; SRCH_WORD.lastIndex = 0;
-  while((m = SRCH_WORD.exec(s))) w.push([m.index, m.index + m[0].length, m[0] === "&" ? "and" : m[0].toLowerCase()]);
+  const w = srchWords(s), R = [];
   const n = Q.toks.length, terms = Q.key.concat(Q.short).sort((a, b) => b.length - a.length);
-  /* the span of term t in word x, or null (a word whose lower case changes length is marked whole) */
-  const span = (x, t, whole) => { const k = whole ? (x[2] === t ? 0 : -1) : x[2].startsWith(t) ? 0 : t.length >= 4 ? x[2].indexOf(t) : -1;
-    return k < 0 ? null : x[2].length === x[1] - x[0] ? [x[0] + k, x[0] + k + t.length] : [x[0], x[1]]; };
   for(let i = 0; i < w.length; i++){
     if(Q.phrase && i + n <= w.length && Q.toks.every((t, j) => j < n - 1 ? w[i+j][2] === t : w[i+j][2].startsWith(t))){
-      R.push([w[i][0], span(w[i+n-1], Q.toks[n-1], false)[1]]); i += n - 1; continue; }
-    for(const t of terms){ const r = span(w[i], t, Q.whole || t.length < 3); if(r){ R.push(r); break; } }
+      R.push([w[i][0], srchSpan(w[i+n-1], Q.toks[n-1], false)[1]]); i += n - 1; continue; }
+    for(const t of terms){ const r = srchSpan(w[i], t, Q.whole || t.length < 3); if(r){ R.push(r); break; } }
   }
   let out = "", last = 0;
   R.forEach(r => { out += escText(s.slice(last, r[0])) + "<mark>" + escText(s.slice(r[0], r[1])) + "</mark>"; last = r[1]; });
   return out + escText(s.slice(last));
 }
-function searchGo(spec){
-  const i = spec.indexOf(":"), kind = spec.slice(0,i), id = spec.slice(i+1);
+/* P2.5 F35b - opening a hit lands on the piece the result quoted, not on the top of the item. The
+   piece is data-at on the button (a lesson block "3", a table row "6.2", a figure's "teach", a
+   scene's "story" or card "c1", a glossary "d"). Landing:
+     1. opens what holds it shut (a why block, a figure's note, a scene's story);
+     2. scrolls it into view, just under the sticky header (the whole table, if it fits, so its
+        column heads show; the matched words, if the block is taller than the screen), and slides
+        a table that scrolls inside its own box (400 px) so the matched cell shows;
+     3. marks the block and, with the CSS Custom Highlight API where the browser has it, the matched
+        words, for about three seconds, without touching the markup;
+     4. moves focus there (a why's summary, a table row, the block itself).
+   The matched words are found again in the DRAWN text with the same srchFind the result line used. */
+let SRCH_FLASH_T = 0;
+function srchRange(root, Q){
+  const segs = []; let txt = "", prev = null;
+  const tw = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  /* a space goes where one block ends and the next begins (table cells, the WHY label and its
+     question) and nowhere inside a line, so a word split by a gloss link or bold stays one word */
+  const blockOf = n => { for(let q = n.parentElement; q && q !== root; q = q.parentElement){
+    const d = getComputedStyle(q).display; if(d !== "inline" && d !== "contents") return q; } return root; };
+  for(let n = tw.nextNode(); n; n = tw.nextNode()){
+    if(!n.nodeValue || (n.parentElement && n.parentElement.closest(".gpop"))) continue;
+    const bk = blockOf(n); if(prev && bk !== prev) txt += " "; prev = bk;
+    segs.push([txt.length, n]); txt += n.nodeValue;
+  }
+  const m = srchFind(txt, Q); if(!m) return null;
+  const pos = (off, end) => { for(let i = segs.length - 1; i >= 0; i--){ const g = segs[i];
+    if(end ? off > g[0] : off >= g[0]) return [g[1], Math.min(off - g[0], g[1].nodeValue.length)]; } return null; };
+  const a = pos(m.a, false), b = pos(m.b, true); if(!a || !b) return null;
+  const r = document.createRange(); r.setStart(a[0], a[1]); r.setEnd(b[0], b[1]); return r;
+}
+function srchFlashOff(){
+  clearTimeout(SRCH_FLASH_T);
+  document.querySelectorAll(".srhit").forEach(x => x.classList.remove("srhit"));
+  try{ if(window.CSS && CSS.highlights) CSS.highlights.delete("srhit"); }catch(e){}
+}
+function srchFlash(hot, rng){
+  srchFlashOff();
+  hot.classList.add("srhit");
+  try{ if(rng && window.CSS && CSS.highlights && typeof Highlight === "function") CSS.highlights.set("srhit", new Highlight(rng)); }catch(e){}
+  SRCH_FLASH_T = setTimeout(srchFlashOff, 3200);
+}
+/* hot: the element to mark and, unless o.text, the text to search; o.focus: what takes focus;
+   o.place: what to bring under the header when it fits (default hot); o.pad: gap below the header */
+function srchShow(hot, o){
+  const rng = o.Q ? srchRange(o.text || hot, o.Q) : null, box = rng ? rng.getBoundingClientRect() : null;
+  const wrap = hot.closest(".tblwrap");
+  if(wrap && rng){ const wr = wrap.getBoundingClientRect(), n0 = rng.startContainer, cell = (n0.nodeType === 1 ? n0 : n0.parentElement).closest("td,th"), r1 = (cell || rng).getBoundingClientRect();
+    if(r1.right > wr.right - 4) wrap.scrollLeft += Math.max(0, Math.min(r1.right - wr.right + 6, r1.left - wr.left - 4));
+    else if(r1.left < wr.left + 4) wrap.scrollLeft -= wr.left - r1.left + 6; }
+  const hd = document.querySelector("header"), H = hd ? hd.offsetHeight : 0, avail = window.innerHeight - H;
+  const place = o.place || hot, pr = place.getBoundingClientRect(), fits = pr.height <= avail * 0.85;
+  const lead = hot === place || o.pad === undefined ? 12 : o.pad;   /* a row in a table too tall for the screen: some rows above it */
+  let y = (fits ? pr.top : hot.getBoundingClientRect().top) - H - (fits ? 12 : lead);
+  if(box && box.bottom - y > window.innerHeight - 28) y = box.top - H - Math.round(avail * 0.3);
+  window.scrollTo({top:Math.max(0, Math.round(window.scrollY + y)), behavior:"instant"});
+  const f = o.focus || hot;
+  if(f.tabIndex < 0) f.setAttribute("tabindex", "-1");
+  try{ f.focus({preventScroll:true}); }catch(e){}
+  srchFlash(hot, rng);
+}
+/* a lesson hit: the block data-bi, and for a table the row; a closed why is opened and focus goes to its summary */
+function srchLandTopic(at, Q){
+  const box = document.querySelector("#app .body-inner"), ix = String(at || "").split("."); if(!box || !Q || !at) return false;
+  const blk = box.querySelector(':scope > [data-bi="' + (+ix[0]) + '"]'); if(!blk) return false;
+  let hot = blk, f = blk, place = blk;
+  if(blk.tagName === "DETAILS"){ blk.open = true; f = blk.querySelector("summary") || blk; }
+  const row = ix.length > 1 ? blk.querySelectorAll("tbody tr")[+ix[1]] : null;
+  if(row){ hot = f = row; }
+  srchShow(hot, {Q, focus:f, place, pad:Math.round(window.innerHeight * 0.2)});
+  return true;
+}
+function searchGo(spec, ctx){
+  const i = spec.indexOf(":"), kind = spec.slice(0,i), id = spec.slice(i+1), at = (ctx && ctx.at) || "", Q = (ctx && ctx.Q) || null;
   /* P2.6: every set start clears the empty-set notice (P2.3); q: and r: used to leave it, so it
      came back on the landing page once the one-item set ended (t: and g: clear it in go()) */
   SET_EMPTY = null;
   /* P2.V F31: the dialog that held focus is gone before the view is drawn, so focus was left on the
      body and the next Tab started at the top of the page. Every branch now lands it (landFocus):
-     on the question, the rapid prompt, the item to sort, the topic heading or the glossary entry. */
-  if(kind === "t"){ go("learn", id); landFocus(); return; }
-  if(kind === "g"){ go("gloss"); const inp = el("gsearch");
+     on the question, the rapid prompt, the item to sort, the topic heading or the glossary entry.
+     P2.5 F35b: a lesson hit lands on the block or table row it quoted (srchLandTopic), and the
+     glossary hit on its own entry, found by key (the filter by title can leave several entries). */
+  if(kind === "t"){ go("learn", id); if(!srchLandTopic(at, Q)) landFocus(); return; }
+  if(kind === "g"){ go("gloss"); const inp = el("gsearch"); let landed = false;
     if(inp && GLOSS[id]){ inp.value = GLOSS[id].t; inp.dispatchEvent(new Event("input"));
-      const it = Array.from(document.querySelectorAll("#glist .gitem")).find(x => !x.classList.contains("hide"));
-      const h = it && it.querySelector("h5"); if(h){ h.setAttribute("tabindex", "-1"); try{ h.focus({preventScroll:true}); }catch(e){} } }
-    landFocus(); return; }
+      const all = Array.from(document.querySelectorAll("#glist .gitem")),
+        it = all.find(x => x.dataset.gkey === id) || all.find(x => !x.classList.contains("hide"));
+      const h = it && it.querySelector("h5");
+      if(h){ landed = true; srchShow(it, {Q, focus:h, text:at === "d" ? it.querySelector("p") : null, pad:Math.round(window.innerHeight * 0.2)}); } }
+    if(!landed) landFocus(); return; }
   if(kind === "q"){ S.mode="practice"; S.ps = {set:[id], i:0, src:"search", t0:Date.now()}; save(); render(); landFocus(); return; }
   /* P2.2 (R14) - rapid ids are strings (META.key + hash); +id made NaN and dropped the set */
   if(kind === "r"){ S.mode="rapid"; S.rf = {set:[id], i:0, t0:Date.now(), src:"search"}; save(); render(); landFocus(); return; }
@@ -5466,11 +5625,19 @@ function searchGo(spec){
     if(!t) return;
     go("learn", t.id);
     /* P2.V sweep (K19): a diagram or scene hit lands on that diagram or scene, not on the top of
-       its lesson, and focus goes to its Enlarge button (a scene: the scene itself) */
+       its lesson, and focus goes to its Enlarge button (a scene: the scene itself).
+       P2.5 F35b: a hit in a figure's note (K18, under a disclosure) or in a scene's story opens it
+       and lands on the matched words; a hit on a scene card lands on that card. */
     const box = document.querySelector("#app .body-inner");
     const fz = kind === "f" && box ? Array.from(box.querySelectorAll("figure [data-zoomfig]")).find(b => b.dataset.zoomfig === id) : null;
     const pal = kind === "m" && box ? Array.from(box.querySelectorAll(".palace")).find(x => x.dataset.pal === id) : null;
-    if(fz) landAt(fz.closest("figure"), fz); else if(pal) landAt(pal);
+    const pad = Math.round(window.innerHeight * 0.2), fig = fz && fz.closest("figure");
+    const det = fig && at === "teach" ? fig.querySelector("details.figteach") : pal && at === "story" ? pal.querySelector("details.palstorywrap") : null;
+    const card = pal && /^c\d+$/.test(at) ? pal.querySelectorAll(".palcard")[+at.slice(1)] : null;
+    if(det && Q){ det.open = true; srchShow(det, {Q, focus:det.querySelector("summary") || det, text:det.querySelector(".figteachbody, .palstory"), place:fig || pal, pad}); }
+    else if(card && Q) srchShow(card, {Q, focus:card, place:pal, pad});
+    else if(fz && Q && at === "cap") srchShow(fig.querySelector("figcaption") || fig, {Q, focus:fz, place:fig, pad});
+    else if(fz) landAt(fig, fz); else if(pal) landAt(pal);
   }
 }
 
@@ -8085,6 +8252,66 @@ if(/[?&]selftest=1/.test(location.search)){
     });
     return {seen, bad, pass:!bad.length};
   });
+  /* P2.5 F35 / F35b (reopened 2026-10-04) - the search result's "why it matched" line is centered on where the
+     query lands, and opening a lesson hit lands on the block it quoted. Seeded from the loaded content: one
+     piece (320+ characters) from each kind of entry that has one, up to six. (a) The query is five consecutive
+     words from about two thirds in: the line must hold them as ONE mark, with text on both sides of them.
+     (b) The query is four words of that stretch in reverse order, so no phrase exists: every one of the words
+     must be marked in the line. The markup must be clean either way (marks balanced, none inside another,
+     no loose "&"). (c) For the first lesson with a why block, and one with a table: opening the hit opens the
+     why, marks the block (.srhit), and puts focus on its summary (the table row). A content set with no piece
+     that long says "skipped". */
+  sec("searchSnippet", () => {
+    const ix = buildIndex(), kinds = {}, bad = [], checked = [];
+    const dec = h => srchPlain(h.replace(/<[^>]+>/g, ""));
+    const clean = h => (h.match(/<mark>/g) || []).length === (h.match(/<\/mark>/g) || []).length && !/<mark>[^<]*<mark>/.test(h) && !/&(?!amp;|lt;|gt;)/.test(h);
+    ix.forEach(e => {
+      if(kinds[e.kind] || checked.length >= 6 || !e.P) return;
+      for(const p of e.P){
+        if(!p[1]) continue;
+        const c = srchPlain(p[1]); if(c.length < 320) continue;
+        const w = srchWords(c), i = Math.floor(w.length * 0.66), run = w.slice(i, i + 5);
+        if(run.length < 5) continue;
+        const phrase = c.slice(run[0][0], run[4][1]), Q = srchQuery(phrase);
+        if(Q.key.length < 3 || !Q.phrase) continue;
+        const pk = srchPick(e, Q);
+        if(!pk || pk.p !== p) continue;                   /* the title or another piece already shows it */
+        kinds[e.kind] = 1; checked.push(e.kind + ": " + phrase);
+        const html = srchSnip(e, Q, pk), line = html.replace(/^<div class="st3">(<span class="s[kl]">.*?<\/span> )+/, ""), txt = dec(line), marks = (line.match(/<mark>.*?<\/mark>/g) || []).map(dec);
+        if(!clean(html)) bad.push(e.kind + ": markup not clean: " + html.slice(0, 160));
+        if(!marks.some(m => srchNorm(m) === srchNorm(phrase))) bad.push(e.kind + ": phrase “" + phrase + "” is not one mark in: " + txt);
+        const at = txt.indexOf(phrase);
+        if(at >= 0 && (at < 30 || txt.length - at - phrase.length < 30)) bad.push(e.kind + ": phrase sits at the edge of the line (" + at + " of " + txt.length + ")");
+        const back = run.slice(0, 4).map(x => x[2]).reverse().join(" "), Q2 = srchQuery(back);
+        if(Q2.key.length < 2) break;
+        const pk2 = srchPick(e, Q2), h2 = pk2 ? srchSnip(e, Q2, pk2) : "", m2 = (h2.match(/<mark>.*?<\/mark>/g) || []).map(dec).map(srchNorm).join("|");
+        if(!pk2 || !Q2.key.every(t => m2.indexOf(t) >= 0)) bad.push(e.kind + ": not every word of “" + back + "” is marked in: " + (pk2 ? dec(h2) : "(no line)"));
+        else if(!clean(h2)) bad.push(e.kind + ": reversed query, markup not clean");
+        break;
+      }
+    });
+    const landing = [];
+    ALLT().forEach(t => {
+      if(landing.length >= 2) return;
+      const bi = t.body.findIndex(x => x[0] === "why"), ti = t.body.findIndex(x => x[0] === "t" && x[2].length);
+      [["why", bi, 0], ["row", ti, 1]].forEach(([what, k, row]) => {
+        if(k < 0 || landing.some(l => l.indexOf(what) === 0)) return;
+        const text = what === "why" ? t.body[k][2] : t.body[k][2][row].join(" "), w = srchWords(srchPlain(text));
+        if(w.length < 6) return;
+        const Q = srchQuery(srchPlain(text).slice(w[w.length - 6][0], w[w.length - 1][1]));
+        if(Q.key.length < 2) return;
+        fresh(); S.mode = "learn"; S.cur = t.id; render();
+        document.querySelectorAll("#app details.why").forEach(d => { d.open = false; });
+        const ok = srchLandTopic(what === "why" ? "" + k : k + "." + row, Q), hot = document.querySelector("#app .srhit"), a = document.activeElement;
+        const good = ok && hot && (what === "why" ? hot.tagName === "DETAILS" && hot.open && a === hot.querySelector("summary") : hot.tagName === "TR" && a === hot);
+        srchFlashOff();
+        landing.push(what + " " + t.id + (good ? " ok" : " FAILED"));
+        if(!good) bad.push("landing on a " + what + " in " + t.id + ": " + (ok ? "ring on " + (hot ? hot.tagName : "nothing") + ", focus on " + (a ? a.tagName : "nothing") : "no landing"));
+      });
+    });
+    fresh(); S.mode = "path"; render();
+    return {skipped:checked.length ? undefined : "no piece of 320+ characters in this content", checked, landing, bad, pass:!bad.length};
+  });
   sec("maps", () => ({ qIdsByTopic:QS.reduce((a,q)=>{ (a[q.c]=a[q.c]||[]).push(q.id); return a; },{}), rapidIx:RAPID.map(r=>r.ix), imgKeys:Object.keys(IMGS),
     qeHash:Object.fromEntries(QS.map(q=>[q.id, fnv(String(q.e||""))])), qwHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.w||{}))])), rxHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(String(r.x||""))])),
     optHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.o))])), roptHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(JSON.stringify(r.o))])) }));
@@ -8108,7 +8335,7 @@ if(/[?&]selftest=1/.test(location.search)){
   /* P2.V F42 - the recovery says what happened; and no section's render fell into it unasked */
   must("renderRecovery", !!R.renderRecovery && R.renderRecovery.pass === true, ((R.renderRecovery||{}).bad||[]).join("; "));
   /* P2.V F5 / F3 / F31 follow-up - calendar minutes, the Path hero, verdict case in #live */
-  ["dayMinutes", "pathHero", "liveCase", "drillVerdict"].forEach(k => { const v = R[k];
+  ["dayMinutes", "pathHero", "liveCase", "drillVerdict", "searchSnippet"].forEach(k => { const v = R[k];
     must(k, !!v && (!!v.skipped || v.pass === true), ((v||{}).bad||[]).join("; ")); });
   R.renderFailures = RENDER_FAIL_LOG.slice(failN0).map(f => f.mode + " (" + f.phase + "): " + f.msg);
   must("renderFailures", !R.renderFailures.length, R.renderFailures.slice(0, 4).join("; "));

@@ -520,7 +520,14 @@ nav.modes button[aria-current="true"] .nbadge{background:var(--ground);color:var
 .sortitem{background:var(--surface);border:1.5px solid var(--line);border-radius:var(--r);
   padding:14px 17px;font-size:16px;line-height:1.45;margin-bottom:14px;font-family:var(--serif)}
 .sortbtns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.sortbtns .btn{padding:13px 14px;font-size:14.5px}
+.sortbtns .btn{padding:13px 14px;font-size:14.5px;flex-wrap:wrap;gap:2px 8px}
+/* P2.V F21: an answered item keeps its sides on screen, disabled; the pick and the right side
+   say so in words (.dres) as well as by color */
+.sortbtns .btn.dright,.sortbtns .btn.dwrong{opacity:1;cursor:default;color:var(--ink)}
+.sortbtns .btn.dright{border-color:var(--good);background:var(--good-soft)}
+.sortbtns .btn.dwrong{border-color:var(--crit);background:var(--crit-soft)}
+.sortbtns .btn .dres{font-size:12px;font-weight:600;color:var(--ink-2)}
+#drnext{scroll-margin-bottom:24px}
 /* P2.V K13: the multi drill set its column count as an inline repeat(3,1fr), which no media
    query can override, so at 400 px the end screen kept three columns (about 590 px) inside a
    330 px .disc with overflow hidden and the last column's items and why toggles were clipped.
@@ -695,6 +702,15 @@ button.dwbtn:hover > span:first-child{text-decoration:underline;text-decoration-
 .gitem .glink b{font-weight:700}
 .gitem .glink:hover{color:var(--ink)}
 .gterm.ghere{background:var(--a2-soft);box-shadow:0 0 0 2px var(--a2);border-radius:3px}
+/* P2.5 F35b: where a search hit landed. The block (or table row) the result quoted wears a ring for
+   about three seconds, and the matched words are marked with the CSS Custom Highlight API where the
+   browser has it (nothing in the markup changes). Declared after :focus-visible so the ring wins
+   while focus sits on the same element. */
+.srhit{outline:3px solid var(--warn);outline-offset:3px;border-radius:var(--r)}
+tr.srhit{outline-offset:-3px;border-radius:0}
+tr.srhit td{background:var(--warn-soft)}
+.gitem.srhit{outline-offset:-3px;border-radius:0}
+::highlight(srhit){background-color:color-mix(in srgb, var(--warn) 42%, transparent);color:inherit}
 .gsearch{width:100%;max-width:420px;padding:11px 15px;border:1px solid var(--line-strong);border-radius:var(--r);
   background:var(--surface);color:var(--ink);font-size:15px;margin-bottom:20px;font-family:var(--sans)}
 .gsearch:focus{outline:2px solid var(--a1);border-color:transparent}
@@ -850,6 +866,7 @@ button.dwbtn:hover > span:first-child{text-decoration:underline;text-decoration-
 .sitem .st2{font-size:12.8px;color:var(--ink-3);margin-top:2px}
 .sitem .st3{font-size:12.6px;line-height:1.45;color:var(--ink-2);margin-top:4px}
 .sitem .st3 .sk{font:600 10.5px/1.2 var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);margin-right:3px}
+.sitem .st3 .sl{font:500 10.5px/1.2 var(--mono);color:var(--ink-3);margin-right:3px}
 .sitem mark{background:var(--a1-soft);color:var(--a1);padding:0;box-shadow:0 0 0 1px var(--a1-soft);border-radius:2px;font-weight:600}
 .sempty{padding:34px 22px;text-align:center;color:var(--ink-3);font-family:var(--serif);
   font-size:16.5px;font-style:italic}

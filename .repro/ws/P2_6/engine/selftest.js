@@ -664,6 +664,95 @@ if(/[?&]selftest=1/.test(location.search)){
     if(!labels.length) return {skipped:"no verdict label is styled in capitals", live:live.slice(0, 80)};
     return {labels, live:live.slice(0, 120), bad, pass:!bad.length};
   });
+  /* P2.V F21 - a sort or multi pick keeps its item on screen, and the verdict names that item, in the page and in
+     #live; the next item comes only on Next, with no verdict carried over. Played through the real side buttons
+     (a wrong pick) on the first sort and multi drill of the loaded content. */
+  sec("drillVerdict", () => {
+    const ds = ["sort", "multi"].map(k => DRILLS.find(x => (x.kind || "sort") === k && x.items.length > 1)).filter(Boolean);
+    if(!ds.length) return {skipped:"no sort or multi drill"};
+    const bad = [], seen = [], plain = h => { const t = document.createElement("div"); t.innerHTML = fmt(h); return t.textContent.replace(/\s+/g, " ").trim(); };
+    const txt = q => String((document.querySelector(q) || {}).textContent || "").replace(/\s+/g, " ").trim();
+    /* a sort item is escaped in its feedback and formatted on the card; either way the same words */
+    const names = (hay, h) => hay.indexOf(plain(h)) >= 0 || hay.indexOf(String(h).replace(/\s+/g, " ").trim()) >= 0;
+    ds.forEach(d => {
+      const k = d.kind || "sort", attr = k === "multi" ? "data-sortm" : "data-sort", it = d.items[0];
+      fresh(); S.mode = "drill"; S.dr = {id:d.id, order:d.items.map((_, i) => i), i:0, missed:[]}; render();
+      const b = [...document.querySelectorAll("#app [" + attr + "]")].find(x => x.getAttribute(attr) !== it[1]);
+      if(!b){ bad.push(k + ": no side to pick"); return; }
+      b.click();
+      const live = String((el("live") || {}).textContent || "").replace(/\s+/g, " ");
+      if(txt("#app .sortitem") !== plain(it[0])) bad.push(k + ": after the pick the screen shows \"" + txt("#app .sortitem") + "\", not the item it judges");
+      if(!names(txt("#app [data-verdict]"), it[0])) bad.push(k + ": the verdict does not name the item");
+      if(!names(live, it[0])) bad.push(k + ": #live does not name the item");
+      if(document.querySelector("#app .sortbtns .btn:not(:disabled)")) bad.push(k + ": a side can still be pressed");
+      const nx = el("drnext"); if(!nx){ bad.push(k + ": no Next button"); return; }
+      nx.click();
+      if(txt("#app .sortitem") !== plain(d.items[1][0])) bad.push(k + ": Next did not bring the next item");
+      if(document.querySelector("#app [data-verdict]") || String((el("live") || {}).textContent || "").trim()) bad.push(k + ": the verdict stayed after Next");
+      seen.push(k + ": " + plain(it[0]));
+    });
+    return {seen, bad, pass:!bad.length};
+  });
+  /* P2.5 F35 / F35b (reopened 2026-10-04) - the search result's "why it matched" line is centered on where the
+     query lands, and opening a lesson hit lands on the block it quoted. Seeded from the loaded content: one
+     piece (320+ characters) from each kind of entry that has one, up to six. (a) The query is five consecutive
+     words from about two thirds in: the line must hold them as ONE mark, with text on both sides of them.
+     (b) The query is four words of that stretch in reverse order, so no phrase exists: every one of the words
+     must be marked in the line. The markup must be clean either way (marks balanced, none inside another,
+     no loose "&"). (c) For the first lesson with a why block, and one with a table: opening the hit opens the
+     why, marks the block (.srhit), and puts focus on its summary (the table row). A content set with no piece
+     that long says "skipped". */
+  sec("searchSnippet", () => {
+    const ix = buildIndex(), kinds = {}, bad = [], checked = [];
+    const dec = h => srchPlain(h.replace(/<[^>]+>/g, ""));
+    const clean = h => (h.match(/<mark>/g) || []).length === (h.match(/<\/mark>/g) || []).length && !/<mark>[^<]*<mark>/.test(h) && !/&(?!amp;|lt;|gt;)/.test(h);
+    ix.forEach(e => {
+      if(kinds[e.kind] || checked.length >= 6 || !e.P) return;
+      for(const p of e.P){
+        if(!p[1]) continue;
+        const c = srchPlain(p[1]); if(c.length < 320) continue;
+        const w = srchWords(c), i = Math.floor(w.length * 0.66), run = w.slice(i, i + 5);
+        if(run.length < 5) continue;
+        const phrase = c.slice(run[0][0], run[4][1]), Q = srchQuery(phrase);
+        if(Q.key.length < 3 || !Q.phrase) continue;
+        const pk = srchPick(e, Q);
+        if(!pk || pk.p !== p) continue;                   /* the title or another piece already shows it */
+        kinds[e.kind] = 1; checked.push(e.kind + ": " + phrase);
+        const html = srchSnip(e, Q, pk), line = html.replace(/^<div class="st3">(<span class="s[kl]">.*?<\/span> )+/, ""), txt = dec(line), marks = (line.match(/<mark>.*?<\/mark>/g) || []).map(dec);
+        if(!clean(html)) bad.push(e.kind + ": markup not clean: " + html.slice(0, 160));
+        if(!marks.some(m => srchNorm(m) === srchNorm(phrase))) bad.push(e.kind + ": phrase “" + phrase + "” is not one mark in: " + txt);
+        const at = txt.indexOf(phrase);
+        if(at >= 0 && (at < 30 || txt.length - at - phrase.length < 30)) bad.push(e.kind + ": phrase sits at the edge of the line (" + at + " of " + txt.length + ")");
+        const back = run.slice(0, 4).map(x => x[2]).reverse().join(" "), Q2 = srchQuery(back);
+        if(Q2.key.length < 2) break;
+        const pk2 = srchPick(e, Q2), h2 = pk2 ? srchSnip(e, Q2, pk2) : "", m2 = (h2.match(/<mark>.*?<\/mark>/g) || []).map(dec).map(srchNorm).join("|");
+        if(!pk2 || !Q2.key.every(t => m2.indexOf(t) >= 0)) bad.push(e.kind + ": not every word of “" + back + "” is marked in: " + (pk2 ? dec(h2) : "(no line)"));
+        else if(!clean(h2)) bad.push(e.kind + ": reversed query, markup not clean");
+        break;
+      }
+    });
+    const landing = [];
+    ALLT().forEach(t => {
+      if(landing.length >= 2) return;
+      const bi = t.body.findIndex(x => x[0] === "why"), ti = t.body.findIndex(x => x[0] === "t" && x[2].length);
+      [["why", bi, 0], ["row", ti, 1]].forEach(([what, k, row]) => {
+        if(k < 0 || landing.some(l => l.indexOf(what) === 0)) return;
+        const text = what === "why" ? t.body[k][2] : t.body[k][2][row].join(" "), w = srchWords(srchPlain(text));
+        if(w.length < 6) return;
+        const Q = srchQuery(srchPlain(text).slice(w[w.length - 6][0], w[w.length - 1][1]));
+        if(Q.key.length < 2) return;
+        fresh(); S.mode = "learn"; S.cur = t.id; render();
+        document.querySelectorAll("#app details.why").forEach(d => { d.open = false; });
+        const ok = srchLandTopic(what === "why" ? "" + k : k + "." + row, Q), hot = document.querySelector("#app .srhit"), a = document.activeElement;
+        const good = ok && hot && (what === "why" ? hot.tagName === "DETAILS" && hot.open && a === hot.querySelector("summary") : hot.tagName === "TR" && a === hot);
+        srchFlashOff();
+        landing.push(what + " " + t.id + (good ? " ok" : " FAILED"));
+        if(!good) bad.push("landing on a " + what + " in " + t.id + ": " + (ok ? "ring on " + (hot ? hot.tagName : "nothing") + ", focus on " + (a ? a.tagName : "nothing") : "no landing"));
+      });
+    });
+    fresh(); S.mode = "path"; render();
+    return {skipped:checked.length ? undefined : "no piece of 320+ characters in this content", checked, landing, bad, pass:!bad.length};
+  });
   sec("maps", () => ({ qIdsByTopic:QS.reduce((a,q)=>{ (a[q.c]=a[q.c]||[]).push(q.id); return a; },{}), rapidIx:RAPID.map(r=>r.ix), imgKeys:Object.keys(IMGS),
     qeHash:Object.fromEntries(QS.map(q=>[q.id, fnv(String(q.e||""))])), qwHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.w||{}))])), rxHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(String(r.x||""))])),
     optHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.o))])), roptHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(JSON.stringify(r.o))])) }));
@@ -687,7 +776,7 @@ if(/[?&]selftest=1/.test(location.search)){
   /* P2.V F42 - the recovery says what happened; and no section's render fell into it unasked */
   must("renderRecovery", !!R.renderRecovery && R.renderRecovery.pass === true, ((R.renderRecovery||{}).bad||[]).join("; "));
   /* P2.V F5 / F3 / F31 follow-up - calendar minutes, the Path hero, verdict case in #live */
-  ["dayMinutes", "pathHero", "liveCase"].forEach(k => { const v = R[k];
+  ["dayMinutes", "pathHero", "liveCase", "drillVerdict", "searchSnippet"].forEach(k => { const v = R[k];
     must(k, !!v && (!!v.skipped || v.pass === true), ((v||{}).bad||[]).join("; ")); });
   R.renderFailures = RENDER_FAIL_LOG.slice(failN0).map(f => f.mode + " (" + f.phase + "): " + f.msg);
   must("renderFailures", !R.renderFailures.length, R.renderFailures.slice(0, 4).join("; "));
