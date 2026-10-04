@@ -1,0 +1,89 @@
+{
+ "id": "d_rp20_sort",
+ "c": "rp20",
+ "kind": "sort",
+ "t": "Torsion or epididymitis?",
+ "tags": [
+  "blood-supply",
+  "imaging-to-diagnosis"
+ ],
+ "bp": [
+  "BP-rp20-02",
+  "BP-rp20-03"
+ ],
+ "a": "Testicular torsion",
+ "bb": "Epididymitis",
+ "key": "The cremasteric reflex and the clock decide it: torsion is an abrupt vascular emergency with an absent reflex, a high horizontal testis and absent Doppler flow, whereas epididymitis is gradual infection with a present reflex, relief on lifting and increased flow.",
+ "items": [
+  [
+   "Pain begins abruptly over minutes",
+   "a",
+   "A twisted cord cuts off venous outflow within moments, so severe pain arrives suddenly instead of building over days as infection does."
+  ],
+  [
+   "Absent cremasteric reflex",
+   "a",
+   "Torsion abolishes the reflex in nearly every case, whereas infection leaves it intact, making it the best single bedside discriminator."
+  ],
+  [
+   "High-riding testis with a horizontal lie",
+   "a",
+   "Twisting shortens the cord and rotates the testis, lifting it and turning it sideways, while an infected epididymis leaves the lie normal."
+  ],
+  [
+   "Nausea and vomiting at onset",
+   "a",
+   "Sudden severe pain from an ischemic organ triggers autonomic symptoms, whereas epididymitis tends to cause local pain with urinary symptoms."
+  ],
+  [
+   "Absent or reduced flow on Doppler",
+   "a",
+   "Venous and then arterial inflow are blocked by the twist, while inflamed tissue shows increased flow."
+  ],
+  [
+   "Bell-clapper deformity",
+   "a",
+   "A tunica vaginalis attached too high lets the testis hang free and twist on its cord, and the defect is usually bilateral."
+  ],
+  [
+   "Peak age 12 to 18 years",
+   "a",
+   "Torsion peaks in adolescence, with a smaller peak in newborns, whereas epididymitis affects sexually active men and older men with urinary obstruction."
+  ],
+  [
+   "Pain builds gradually over days",
+   "b",
+   "Infection ascends from the urethra or bladder and inflames the epididymis progressively, so symptoms evolve over days rather than minutes."
+  ],
+  [
+   "Cremasteric reflex is present",
+   "b",
+   "The cord is not twisted, so the reflex arc is intact and stroking the inner thigh still lifts the testis."
+  ],
+  [
+   "Lifting the testis eases the pain (Prehn sign)",
+   "b",
+   "Elevation relieves tension on an inflamed epididymis, but a twisted cord gains no relief, although the sign is unreliable and must not delay surgery."
+  ],
+  [
+   "Urethral discharge or pyuria",
+   "b",
+   "Ascending infection from the urethra or bladder leaves signs of urinary tract inflammation, which are absent in torsion."
+  ],
+  [
+   "Increased flow on Doppler",
+   "b",
+   "Inflammation raises perfusion of the epididymis and testis, the opposite of the reduced flow caused by torsion."
+  ],
+  [
+   "Chlamydia or gonorrhea in a man younger than 35",
+   "b",
+   "These sexually transmitted organisms are the usual cause in younger men, whereas enteric rods dominate in older men."
+  ],
+  [
+   "Treated with antibiotics rather than emergency surgery",
+   "b",
+   "Infection responds to antimicrobials such as ceftriaxone with doxycycline, while a twisted cord needs surgery within hours."
+  ]
+ ]
+}

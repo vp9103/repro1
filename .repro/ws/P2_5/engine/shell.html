@@ -702,6 +702,15 @@ button.dwbtn:hover > span:first-child{text-decoration:underline;text-decoration-
 .gitem .glink b{font-weight:700}
 .gitem .glink:hover{color:var(--ink)}
 .gterm.ghere{background:var(--a2-soft);box-shadow:0 0 0 2px var(--a2);border-radius:3px}
+/* P2.5 F35b: where a search hit landed. The block (or table row) the result quoted wears a ring for
+   about three seconds, and the matched words are marked with the CSS Custom Highlight API where the
+   browser has it (nothing in the markup changes). Declared after :focus-visible so the ring wins
+   while focus sits on the same element. */
+.srhit{outline:3px solid var(--warn);outline-offset:3px;border-radius:var(--r)}
+tr.srhit{outline-offset:-3px;border-radius:0}
+tr.srhit td{background:var(--warn-soft)}
+.gitem.srhit{outline-offset:-3px;border-radius:0}
+::highlight(srhit){background-color:color-mix(in srgb, var(--warn) 42%, transparent);color:inherit}
 .gsearch{width:100%;max-width:420px;padding:11px 15px;border:1px solid var(--line-strong);border-radius:var(--r);
   background:var(--surface);color:var(--ink);font-size:15px;margin-bottom:20px;font-family:var(--sans)}
 .gsearch:focus{outline:2px solid var(--a1);border-color:transparent}

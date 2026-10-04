@@ -3,15 +3,17 @@
 Updated 2026-10-04. Counts from `.repro/fast_check.py` / the gate's structural checks on fast/content.
 
 ## Fast-track state (fast/repro-endo-path.html, drafts, unreviewed)
-36 topics (30 rp + en1 en2 en5 en6 en7 en9) · 347 questions · 360 rapid · 95 figures · 25 drills · 0 images · 0 memory scenes.
+36 topics (30 rp + en1 en2 en5 en6 en7 en9) · 373 questions · 439 rapid · 95 figures · 30 drills · 0 images · 0 memory scenes (after merging G01+G02, 2026-10-04).
 All 30 rp topics pass topic structure + key-term coverage. Build warnings: 12 en topics missing; en9 body figures
 en9_hypercalcemia, en9_three_hpt missing.
 
 ## In flight
 | id | owner | scope | evidence when done |
 |---|---|---|---|
-| P2.4 | worker (Sonnet xhigh) | F21 multi-drill verdict placement, .repro/ws/P2_4 | --status P2.4 ok; audit/P2.4.md 2026-10-04 section |
-| G01 | worker | rp19, rp20 questions + rapid + drills (fast/ws/G01) | fast_check G01 ok |
+| P2.4 | CLOSED 2026-10-04 | F21 | ledger row sha:e4e21f2f |
+| G01 | DONE (draft, accepted; spot-checked rp20q01-q05) | rp19 11q/15r/2 drills, rp20 15q/14r/3 drills | fast_check G01 ok; audit/G01-notes.md |
+| I01 | worker | images rp13, rp15, rp24 + Gemini overlays (fast/ws/I01) | fast_check I01 ok; audit/I01-sources.md |
+| P2.5 | worker | F35/F35b search snippet + landing (.repro/ws/P2_5) | --status P2.5 ok |
 | G02 | DONE (draft, accepted 2026-10-04; spot-checked rp11r01/r05/r09, rp17r03/r09/r16) | rapid rp3 13, rp11 15, rp17 22 | fast_check G02 ok; audit/G02-notes.md |
 | G03 | worker | rapid rp23, rp29; drills rp10, rp11, rp16, rp17 (fast/ws/G03) | fast_check G03 ok |
 | P1.V | HELD | token 5554dd5d05, 12 objectives | needs verifier at Opus max (host limit, asked user) |

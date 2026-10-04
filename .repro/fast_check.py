@@ -40,12 +40,18 @@ def main() -> int:
             shutil.copytree(ws / "content", tmp / "content", dirs_exist_ok=True)
         for f in ("meta.json", "concepts.json"):
             shutil.copy2(ROOT / "content" / f, tmp / "content" / f)
+        shutil.copytree(ROOT / "fast" / "repro-endo-assets", tmp / "repro-endo-assets") if (ROOT / "fast" / "repro-endo-assets").is_dir() else None
+        if (ws / "repro-endo-assets").is_dir():
+            shutil.copytree(ws / "repro-endo-assets", tmp / "repro-endo-assets", dirs_exist_ok=True)
+        sys.path.insert(0, str(ROOT / ".repro"))
+        from fast_merge import apply_placements  # noqa: E402
+        pl_probs = apply_placements(tmp / "content", [ws])
         if (ws / "audit").is_dir():
             shutil.copytree(ws / "audit", tmp / "audit")
             if task == "-":  # no task named: every audit row in the workspace counts (NO-VISUAL etc.)
                 (tmp / "audit" / "-.md").write_text("\n".join(f.read_text(encoding="utf-8") for f in sorted((ws / "audit").glob("*.md"))), encoding="utf-8")
         ct = rc.Content(tmp)
-        results = [("content loads", ct.errors)]
+        results = [("content loads", ct.errors), ("image placements", pl_probs)]
         for t in tids:
             if (ws / "content" / "topics" / f"{t}.json").is_file():
                 results.append((f"{t} topic structure", cr.topic_problems(ct, t)))
@@ -56,6 +62,10 @@ def main() -> int:
                 results.append((f"{t} rapid", cr.rapid_problems(ct, t, tmp, task)))
             if list((ws / "content" / "drills").glob(f"d_{t}_*.json")) if (ws / "content" / "drills").is_dir() else []:
                 results.append((f"{t} drills", cr.drill_problems(ct, [t])))
+            if [k for k in ct.images if k.startswith(t + "_") and (ws / "content" / "images" / f"{k}.json").is_file()]:
+                results.append((f"{t} images (files, size, licence, labels, distractors, placement, overlay geometry)",
+                                cr.image_problems(ct, tmp, [t], task, with_ann=True)))
+                results.append((f"{t} overlays: Gemini design applied exactly", cr.overlay_problems(ct, tmp, cr.imgs_of(ct, [t]), task)))
             figs = [k for k in ct.figs if k.startswith(t + "_") and (ws / "content" / "figs" / f"{k}.json").is_file()]
             if figs:
                 results.append((f"{t} figures", [p for k in figs for p in cr.fig_problems(k, ct.figs[k])]))
