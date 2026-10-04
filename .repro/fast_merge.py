@@ -1,4 +1,17 @@
-"""Fast track: merge every worker folder into fast/content, write path.json from the finished topics, build the page."""
+"""Fast track: merge every worker folder into fast/content and build fast/repro-endo-path.html, safely.
+
+  python3 .repro/fast_merge.py [--probe] [--prefer <dest>=<ws> ...]
+
+1. Collects fast/ws/*/content/<kind>/<file>. The same destination from two workspaces with different bytes is a
+   CONFLICT: nothing is written and the script exits 1 (resolve it, or pass --prefer kind/name=WS once reviewed).
+2. Stages a complete candidate in fast/.stage/ (content + page), validates it (content loads with no errors,
+   build succeeds, optional --probe: the gate's headless probe has no JS errors and every view renders).
+3. Only then promotes: the current fast/content and page move to fast/.prev/, the candidate takes their place.
+   A failed run leaves the last working page untouched.
+"""
+from __future__ import annotations
+
+import hashlib
 import json
 import shutil
 import subprocess
@@ -8,58 +21,121 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 FAST = ROOT / "fast"
 DST = FAST / "content"
-KINDS = ("topics", "figs", "glossary", "guides", "questions", "rapid", "drills")
+STAGE = FAST / ".stage"
+PREV = FAST / ".prev"
+PAGE = "repro-endo-path.html"
+KINDS = ("topics", "figs", "glossary", "guides", "questions", "rapid", "drills", "palace", "images")
 
-if DST.exists():
-    shutil.rmtree(DST)
-DST.mkdir(parents=True)
-shutil.copy2(ROOT / "content" / "meta.json", DST / "meta.json")
-shutil.copy2(ROOT / "content" / "concepts.json", DST / "concepts.json")
-for k in KINDS:
-    (DST / k).mkdir()
 
-done = []
-for ws in sorted((FAST / "ws").iterdir()):
-    src = ws / "content"
+def digest(p: Path) -> str:
+    return hashlib.sha256(p.read_bytes()).hexdigest()
+
+
+def collect(prefer: dict[str, str]):
+    srcs: dict[str, list[tuple[str, Path]]] = {}
+    for ws in sorted(p for p in (FAST / "ws").iterdir() if p.is_dir()):
+        for k in KINDS:
+            d = ws / "content" / k
+            if d.is_dir():
+                for f in sorted(d.iterdir()):
+                    if f.is_file():
+                        srcs.setdefault(f"{k}/{f.name}", []).append((ws.name, f))
+    chosen, conflicts = {}, []
+    for dest, lst in srcs.items():
+        if len({digest(f) for _, f in lst}) == 1:
+            chosen[dest] = lst[-1][1]
+        elif dest in prefer and any(w == prefer[dest] for w, _ in lst):
+            chosen[dest] = next(f for w, f in lst if w == prefer[dest])
+        else:
+            conflicts.append(f"{dest}: " + ", ".join(w for w, _ in lst))
+    return chosen, conflicts
+
+
+def write_path(content: Path, have: set[str]):
+    meta = json.loads((content / "meta.json").read_text(encoding="utf-8"))
+    stages = [{"id": "p0", "kind": "diag", "mins": 10, "t": "Ten-minute triage",
+               "d": "One quick recall item per topic before you study, so the plan knows where to start."}]
+    n = 0
+    for b in meta["blocks"]:
+        ts = [t for t in b["topics"] if t in have]
+        for i in range(0, len(ts), 4):
+            chunk = ts[i:i + 4]
+            n += 1
+            titles = []
+            for t in chunk:
+                try:
+                    titles.append(json.loads((content / "topics" / f"{t}.json").read_text(encoding="utf-8")).get("title", t))
+                except (OSError, ValueError):
+                    titles.append(t)
+            stages.append({"id": f"s{n}", "kind": "unit", "topics": chunk, "t": f"Stage {n}: {b['n']}", "d": "; ".join(titles)[:160]})
+    stages.append({"id": "pf", "kind": "final", "mins": 30, "t": "Final check",
+                   "d": "A mixed set across every finished topic, weighted toward what you have missed."})
+    (content / "path.json").write_text(json.dumps(stages, indent=1, ensure_ascii=False), encoding="utf-8")
+    return n
+
+
+def main(argv: list[str]) -> int:
+    prefer = {}
+    for i, a in enumerate(argv):
+        if a == "--prefer" and i + 1 < len(argv) and "=" in argv[i + 1]:
+            d, w = argv[i + 1].split("=", 1)
+            prefer[d] = w
+    chosen, conflicts = collect(prefer)
+    if conflicts:
+        print("CONFLICT (nothing written):\n  " + "\n  ".join(conflicts))
+        return 1
+
+    if STAGE.exists():
+        shutil.rmtree(STAGE)
+    sc = STAGE / "content"
     for k in KINDS:
-        d = src / k
-        if d.is_dir():
-            for f in d.iterdir():
-                if f.is_file():
-                    shutil.copy2(f, DST / k / f.name)
-    done += [p.stem for p in (src / "topics").glob("*.json")] if (src / "topics").is_dir() else []
+        (sc / k).mkdir(parents=True, exist_ok=True)
+    shutil.copy2(ROOT / "content" / "meta.json", sc / "meta.json")
+    shutil.copy2(ROOT / "content" / "concepts.json", sc / "concepts.json")
+    for dest, f in chosen.items():
+        shutil.copy2(f, sc / dest)
+    have = {p.stem for p in (sc / "topics").glob("*.json")}
+    n = write_path(sc, have)
 
-meta = json.loads((DST / "meta.json").read_text(encoding="utf-8"))
-have = set(done)
-stages = [{"id": "p0", "kind": "diag", "mins": 10, "t": "Ten-minute triage",
-           "d": "One quick recall item per topic before you study, so the plan knows where to start."}]
-n = 0
-for b in meta["blocks"]:
-    ts = [t for t in b["topics"] if t in have]
-    for i in range(0, len(ts), 4):
-        chunk = ts[i:i + 4]
-        if not chunk:
-            continue
-        n += 1
-        titles = []
-        for t in chunk:
-            try:
-                titles.append(json.loads((DST / "topics" / f"{t}.json").read_text(encoding="utf-8")).get("title", t))
-            except Exception:
-                titles.append(t)
-        stages.append({"id": f"s{n}", "kind": "unit", "topics": chunk, "t": f"Stage {n}: {b['n']}",
-                       "d": "; ".join(titles)[:160]})
-stages.append({"id": "pf", "kind": "final", "mins": 30, "t": "Final check",
-               "d": "A mixed set across every finished topic, weighted toward what you have missed."})
-(DST / "path.json").write_text(json.dumps(stages, indent=1, ensure_ascii=False), encoding="utf-8")
+    sys.path.insert(0, str(ROOT))
+    import repro_common as rc  # noqa: E402
+    ct = rc.Content(STAGE)
+    if ct.errors:
+        print("CANDIDATE INVALID (content errors), page not replaced:", ct.errors[:8])
+        return 1
+    r = subprocess.run([sys.executable, str(ROOT / "build.py"), "--root", str(STAGE), "--engine", str(ROOT / "engine"),
+                        "--out", str(STAGE / PAGE)], capture_output=True, text=True, cwd=ROOT)
+    if r.returncode not in (0, 3) or not (STAGE / PAGE).is_file():  # 3 = built with BUILD WARNINGs
+        print("CANDIDATE BUILD FAILED, page not replaced:\n", r.stdout[-1500:], r.stderr[-1500:])
+        return 1
+    warns = [ln.strip() for ln in r.stdout.splitlines() if "BUILD WARNING" in ln]
+    if warns:
+        print(f"{len(warns)} build warning(s) (page still built):\n  " + "\n  ".join(warns[:20]))
+    if "--probe" in argv:
+        import check_repro as cr  # noqa: E402
+        rt = cr.runtime(STAGE, force=True, page=STAGE / PAGE)
+        bad = (cr.rget(rt, "probe.views.failures", []) + cr.rget(rt, "probe.errors", []) + cr.rget(rt, "probe.jsErrors", [])) if rt else ["runtime unavailable"]
+        if bad:
+            print("CANDIDATE PROBE FAILED, page not replaced:", bad[:8])
+            return 1
 
-sys.path.insert(0, str(ROOT))
-import repro_common as rc  # noqa: E402
-ct = rc.Content(FAST)
-print("topics:", sorted(have, key=lambda t: (t[:2], int(t[2:]))))
-print("content errors:", ct.errors[:5])
-print("counts: questions", sum(len(v or []) for v in ct.questions.values()), "rapid", sum(len(v or []) for v in ct.rapid.values()),
-      "figures", len(ct.figs), "drills", len(ct.drills), "stages", n)
-r = subprocess.run([sys.executable, str(ROOT / "build.py"), "--root", str(FAST), "--engine", str(ROOT / "engine"),
-                    "--out", str(FAST / "repro-endo-path.html")], capture_output=True, text=True, cwd=ROOT)
-print(r.stdout[-1500:], r.stderr[-1500:])
+    if PREV.exists():
+        shutil.rmtree(PREV)
+    PREV.mkdir()
+    if DST.exists():
+        DST.rename(PREV / "content")
+    if (FAST / PAGE).is_file():
+        (FAST / PAGE).rename(PREV / PAGE)
+    sc.rename(DST)
+    (STAGE / PAGE).rename(FAST / PAGE)
+    shutil.rmtree(STAGE, ignore_errors=True)
+
+    ct = rc.Content(FAST)
+    print("PROMOTED. topics:", len(ct.topics), sorted(ct.topics, key=lambda t: (t[:2], int(t[2:]))))
+    print("counts: questions", sum(len(v or []) for v in ct.questions.values()), "rapid", sum(len(v or []) for v in ct.rapid.values()),
+          "figures", len(ct.figs), "drills", len(ct.drills), "palace", len(ct.palace), "images", len(ct.images), "stages", n)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

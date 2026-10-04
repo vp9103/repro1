@@ -1,7 +1,7 @@
 {
  "probe": {
   "errors": [],
-  "viewport": 1254,
+  "viewport": 1280,
   "probeVersion": 1,
   "counts": {
    "meta": {
@@ -205,9 +205,9 @@
    "notInAnyBody": [],
    "lightbox": {
     "fig": "en5_synthesis",
-    "medianGlyph": 17.9,
+    "medianGlyph": 18.33,
     "pan": 0,
-    "afterFitGlyph": 17.9
+    "afterFitGlyph": 18.33
    }
   },
   "search": {
@@ -304,7 +304,7 @@
  },
  "probe400": {
   "errors": [],
-  "viewport": 526,
+  "viewport": 500,
   "probeVersion": 1,
   "counts": {
    "meta": {
@@ -512,7 +512,7 @@
    "lightbox": {
     "fig": "en5_synthesis",
     "medianGlyph": 15,
-    "pan": 474
+    "pan": 500
    }
   },
   "search": {
@@ -609,6 +609,6 @@
  },
  "pageSha": "9660f6db",
  "buildWarnings": [],
- "ranAt": "2026-09-29 02:22:53",
- "root": "C:\\Users\\varsh\\repro-endo-path\\fixtures\\stub"
+ "ranAt": "2026-10-04 18:21:38",
+ "root": "/home/user/repro1/fixtures/stub"
 }

@@ -61,8 +61,12 @@ TRANSCRIPTS = XM / "transcripts"
 CALIB = XM / "calibration"
 OVERLAYS = XM / "overlays"
 PROVIDER_FILE = OVERLAYS / "PROVIDER"
-CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
-CARDIO = Path(r"C:\Users\varsh\Documents\Codex\2026-09-15\there-s-an-artifact-on-clot\outputs")
+CHROME = next((c for c in [os.environ.get("REPRO_CHROME", ""), r"C:\Program Files\Google\Chrome\Application\chrome.exe"]
+               + sorted(str(x) for x in Path("/opt/pw-browsers").glob("chromium-*/chrome-linux/chrome")) if c and Path(c).is_file()),
+              r"C:\Program Files\Google\Chrome\Application\chrome.exe")
+CARDIO = Path(os.environ.get("REPRO_CARDIO") or r"C:\Users\varsh\Documents\Codex\2026-09-15\there-s-an-artifact-on-clot\outputs")
+if not CARDIO.is_dir() and (Path(__file__).resolve().parent / "ref" / "cardio").is_dir():
+    CARDIO = Path(__file__).resolve().parent / "ref" / "cardio"  # read-only snapshot copy on non-Windows hosts
 GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta/openai/"
 # 2026-09-26: this key has no quota for gemini-3.1-pro-preview (429) and gemini-2.5-pro is retired for new users (404);
 # gemini-3.5-flash answers but returns 503 under load, so transient errors are retried with backoff before moving on.
@@ -115,6 +119,9 @@ def codex_model() -> str:
 
 def gemini_key() -> str:
     k = os.environ.get("GEMINI_API_KEY")
+    kf = Path.home() / ".config" / "repro" / "gemini_key"  # cloud host: key kept outside the repo
+    if not k and kf.is_file():
+        k = kf.read_text(encoding="utf-8").strip()
     if not k and GEMINI_ENV_FILE.is_file():
         for line in GEMINI_ENV_FILE.read_text(encoding="utf-8", errors="replace").splitlines():
             if line.startswith("GEMINI_API_KEY="):

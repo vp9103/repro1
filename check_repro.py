@@ -73,9 +73,16 @@ PAGE = "repro-endo-path.html"
 ASSETS = "repro-endo-assets"
 TRACKED = ("content", "engine", "scope", "audit", ASSETS)
 GATE_FILES = ("check_repro.py", "repro_common.py", "xmodel.py", "build.py", "probe_repro.js", "serve.py")
-CARDIO = Path(r"C:\Users\varsh\Documents\Codex\2026-09-15\there-s-an-artifact-on-clot\outputs")
-CHROME = [r"C:\Program Files\Google\Chrome\Application\chrome.exe", r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
-          os.path.expandvars(r"%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe")]
+CARDIO = Path(os.environ.get("REPRO_CARDIO") or r"C:\Users\varsh\Documents\Codex\2026-09-15\there-s-an-artifact-on-clot\outputs")
+if not CARDIO.is_dir() and (ROOT / "ref" / "cardio").is_dir():
+    CARDIO = ROOT / "ref" / "cardio"  # read-only snapshot copy (ref/SNAPSHOT.md) on hosts without the Windows folder
+CHROME = [os.environ.get("REPRO_CHROME", ""), r"C:\Program Files\Google\Chrome\Application\chrome.exe", r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+          os.path.expandvars(r"%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe")] + sorted(
+          str(c) for c in Path("/opt/pw-browsers").glob("chromium-*/chrome-linux/chrome")) + [shutil.which("chromium") or "", shutil.which("google-chrome") or ""]
+# Second-model reviews (GPT/Gemini fact-check, grade, coverage, figure and image review) were dropped by the user on
+# 2026-10-04 ("there doesnt need to be a gpt/gemini review; only need gemini for labeling the images for overlay").
+# Off = those checks are not part of any task; overlays still need a Gemini design applied exactly.
+SECOND_MODEL = False
 MAX_BLOCKS = 8
 MAX_PAR = 3
 STATUSES = ("NOT_STARTED", "IN_PROGRESS", "DONE", "BLOCKED", "DROPPED")
@@ -168,9 +175,9 @@ def gate_sha() -> str:
             h.update(p.read_bytes())
     fx = ROOT / "fixtures"
     if fx.is_dir():
-        for p in sorted(fx.rglob("*")):
+        for p in sorted(fx.rglob("*"), key=lambda q: [x.lower() for x in q.relative_to(ROOT).parts]):
             if p.is_file() and p.suffix.lower() != ".html" and "__pycache__" not in p.parts:
-                h.update(str(p.relative_to(ROOT)).encode())
+                h.update("\\".join(p.relative_to(ROOT).parts).encode())
                 h.update(p.read_bytes())
     return h.hexdigest()[:8]
 
@@ -1011,20 +1018,20 @@ def overlay_problems(ct: rc.Content, root: Path, keys: list[str], task: str = "-
         tr = XM / "overlays" / f"{k}.propose.jsonl"
         if not tr.is_file() or "turn.completed" not in tr.read_text(encoding="utf-8", errors="replace"):
             P.append(f"{k}: no completed design transcript"); continue
-        rev = load_json(XM / "overlays" / f"{k}.review.json")
-        if not rev or rev.get("provider") not in ("codex", "gemini") or rev.get("provider") == prop.get("provider"):
+        rev = load_json(XM / "overlays" / f"{k}.review.json") if SECOND_MODEL else None
+        if SECOND_MODEL and (not rev or rev.get("provider") not in ("codex", "gemini") or rev.get("provider") == prop.get("provider")):
             P.append(f"{k}: needs a review by the OTHER model (xmodel.py overlay-review {k})"); continue
-        if rev.get("proposal_hash") != rc.jhash(prop.get("ann")):
+        if SECOND_MODEL and rev.get("proposal_hash") != rc.jhash(prop.get("ann")):
             P.append(f"{k}: review is for an older design"); continue
-        bad = [s.get("i") for s in rev.get("shapes") or [] if s.get("covers_finding") or s.get("points_at_right_thing") is False]
-        if bad or (rev.get("overall") or 0) < 7:
+        bad = [s.get("i") for s in (rev or {}).get("shapes") or [] if s.get("covers_finding") or s.get("points_at_right_thing") is False]
+        if SECOND_MODEL and (bad or (rev.get("overall") or 0) < 7):
             P.append(f"{k}: review overall {rev.get('overall')}/10, failing callouts {bad}"); continue
         page_ann, des = im.get("ann") or [], prop.get("ann") or []
         geo = ("k", "x", "y", "w", "h", "rx", "ry", "r", "rot", "px", "py", "pts", "tx", "ty", "x2", "y2", "ix", "iy", "iw", "ih", "l")
         diff = [i for i, (c, p) in enumerate(zip(page_ann, des)) if any(c.get(g) != p.get(g) for g in geo)]
         adj = {int(r.split("#", 1)[1]) for r, why in adjusted.items() if r.startswith(k + "#") and r.split("#", 1)[1].isdigit() and len(why) >= 15}
         if len(page_ann) != len(des) or [i for i in diff if i not in adj] or len(adj) > 2:
-            P.append(f"{k}: content ann differs from the reviewed design (at most 2 callouts, each logged '| {k}#<i> | ADJUSTED | reason |' in audit/{task}.md)")
+            P.append(f"{k}: content ann differs from the design (at most 2 callouts, each logged '| {k}#<i> | ADJUSTED | reason |' in audit/{task}.md)")
     return P
 
 
@@ -1131,7 +1138,7 @@ def calibrated(which, provider):
 
 
 def transcript_ok(rec):
-    p = ROOT / str(rec.get("transcript", ""))
+    p = ROOT / str(rec.get("transcript", "")).replace("\\", "/")
     return p.is_file() and "turn.completed" in p.read_text(encoding="utf-8", errors="replace")
 
 
@@ -1258,78 +1265,83 @@ def imgs_of(ct, tids):
     return [k for k in ct.images if any(k.startswith(t + "_") for t in tids)]
 
 
+def C2(label, fn):
+    """A second-model check: part of a task only while SECOND_MODEL is on."""
+    return C(label, fn) if SECOND_MODEL else None
+
+
 def topic_checks(tids, task):
-    return [
+    return [c for c in [
         C("topic structure and bands", lambda ctx: [p for t in tids for p in topic_problems(ctx["ct"], t)]),
         C("blueprint + objective key terms taught", lambda ctx: [f"{t}: {p}" for t in tids for p in coverage_terms_problems(ctx["ct"], t)]),
-        C("second model: topic facts", lambda ctx: xm_fact(ctx["ct"], "topic", ",".join(tids)) + xm_fact(ctx["ct"], "gloss", ",".join(tids)) + xm_fact(ctx["ct"], "guide", ",".join(tids))),
-        C("second model: figure captions and labels", lambda ctx: xm_fact(ctx["ct"], "fig", ",".join(tids))),
-        C("second model: coverage of objectives and blueprint", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
-        C("second model: figures reviewed as pictures", lambda ctx: xm_figs(ctx["ct"], figs_of(ctx["ct"], tids))),
-        C("second model: pretest distractors", lambda ctx: xm_grade(ctx["ct"], "pretest", ",".join(tids))),
+        C2("second model: topic facts", lambda ctx: xm_fact(ctx["ct"], "topic", ",".join(tids)) + xm_fact(ctx["ct"], "gloss", ",".join(tids)) + xm_fact(ctx["ct"], "guide", ",".join(tids))),
+        C2("second model: figure captions and labels", lambda ctx: xm_fact(ctx["ct"], "fig", ",".join(tids))),
+        C2("second model: coverage of objectives and blueprint", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
+        C2("second model: figures reviewed as pictures", lambda ctx: xm_figs(ctx["ct"], figs_of(ctx["ct"], tids))),
+        C2("second model: pretest distractors", lambda ctx: xm_grade(ctx["ct"], "pretest", ",".join(tids))),
         rt_check("rendered: figures legible, no overlapping or clipped labels", lambda rt: [f"{k}: median glyph {rget(rt, 'probe.figs.perFig', {}).get(k)} px (< 9)" for k in rget(rt, "probe.figs.below9", []) if any(k.startswith(t + "_") for t in tids)]
                  + [f"{k}: labels overlap {v[:2]}" for k, v in rget(rt, "probe.figs.overlaps", {}).items() if any(k.startswith(t + "_") for t in tids)]
                  + [f"{k}: labels clipped {v[:2]}" for k, v in rget(rt, "probe.figs.clipped", {}).items() if any(k.startswith(t + "_") for t in tids)]),
         rt_check("rendered: glossary links and cloze targets per topic", lambda rt: [f"{t}: {rget(rt, 'probe.topics.perTopic', {}).get(t, {}).get('gterms', 0)} glossary links (>= 4)" for t in tids if rget(rt, "probe.topics.perTopic", {}).get(t, {}).get("gterms", 0) < 4]
                  + [f"{t}: {rget(rt, 'probe.topics.perTopic', {}).get(t, {}).get('strong', 0)} bold key terms in prose/call/table (>= 5 for the cloze toggle)" for t in tids if rget(rt, "probe.topics.perTopic", {}).get(t, {}).get("strong", 0) < 5]),
         rt_check("rendered: every view, no JS errors, no leaks", lambda rt: rget(rt, "probe.views.failures", []) + rget(rt, "probe.errors", []) + rget(rt, "probe.jsErrors", [])),
-    ]
+    ] if c]
 
 
 def question_checks(tids, task):
-    return [
+    return [c for c in [
         C("questions: structure, bands, visuals, tables, bottom lines", lambda ctx: [p for t in tids for p in question_problems(ctx["ct"], t, ctx["root"], task)]),
-        C("second model: question facts and best answer", lambda ctx: xm_fact(ctx["ct"], "q", ",".join(tids))),
-        C("second model: question distractors", lambda ctx: xm_grade(ctx["ct"], "q", ",".join(tids))),
-        C("figures touched by this task still reviewed (picture, facts, structure)", lambda ctx: xm_figs(ctx["ct"], figs_of(ctx["ct"], tids)) + xm_fact(ctx["ct"], "fig", ",".join(tids))
-          + [p for k in figs_of(ctx["ct"], tids) for p in fig_problems(k, ctx["ct"].figs[k])]),
-        C("second model: coverage still current for these topics (a changed body figure changes what the topic teaches)", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
+        C2("second model: question facts and best answer", lambda ctx: xm_fact(ctx["ct"], "q", ",".join(tids))),
+        C2("second model: question distractors", lambda ctx: xm_grade(ctx["ct"], "q", ",".join(tids))),
+        C("figures touched by this task: structure", lambda ctx: [p for k in figs_of(ctx["ct"], tids) for p in fig_problems(k, ctx["ct"].figs[k])]),
+        C2("figures touched by this task still reviewed (picture, facts)", lambda ctx: xm_figs(ctx["ct"], figs_of(ctx["ct"], tids)) + xm_fact(ctx["ct"], "fig", ",".join(tids))),
+        C2("second model: coverage still current for these topics (a changed body figure changes what the topic teaches)", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
         rt_check("rendered: practice answered view (why-click, table, bottom line, point)", lambda rt: [] if all(rget(rt, f"probe.renderPractice.{k}") for k in ("wrongClickable", "whyRevealed", "tableShown", "blShown", "detailsOpen")) else [f"renderPractice {json.dumps(rget(rt, 'probe.renderPractice', {}))[:200]}"]),
         rt_check("rendered: every view, no JS errors", lambda rt: rget(rt, "probe.views.failures", []) + rget(rt, "probe.errors", []) + rget(rt, "probe.jsErrors", [])),
-    ]
+    ] if c]
 
 
 def rapid_checks(tids, task):
-    return [
+    return [c for c in [
         C("rapid: structure, bands, media, points", lambda ctx: [p for t in tids for p in rapid_problems(ctx["ct"], t, ctx["root"], task)]),
-        C("second model: rapid distractors", lambda ctx: xm_grade(ctx["ct"], "rapid", ",".join(tids))),
-        C("second model: rapid facts", lambda ctx: xm_fact(ctx["ct"], "rapid", ",".join(tids))),
-        C("figures touched by this task still reviewed (picture, facts, structure)", lambda ctx: xm_figs(ctx["ct"], figs_of(ctx["ct"], tids)) + xm_fact(ctx["ct"], "fig", ",".join(tids))
-          + [p for k in figs_of(ctx["ct"], tids) for p in fig_problems(k, ctx["ct"].figs[k])]),
-        C("second model: coverage still current for these topics", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
+        C2("second model: rapid distractors", lambda ctx: xm_grade(ctx["ct"], "rapid", ",".join(tids))),
+        C2("second model: rapid facts", lambda ctx: xm_fact(ctx["ct"], "rapid", ",".join(tids))),
+        C("figures touched by this task: structure", lambda ctx: [p for k in figs_of(ctx["ct"], tids) for p in fig_problems(k, ctx["ct"].figs[k])]),
+        C2("figures touched by this task still reviewed (picture, facts)", lambda ctx: xm_figs(ctx["ct"], figs_of(ctx["ct"], tids)) + xm_fact(ctx["ct"], "fig", ",".join(tids))),
+        C2("second model: coverage still current for these topics", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
         rt_check("rendered: rapid answered view", lambda rt: [] if all(rget(rt, f"probe.renderRapid.{k}") for k in ("wrongClickable", "whyRevealed", "catChip", "detailsOpen", "sayShown")) else [f"renderRapid {json.dumps(rget(rt, 'probe.renderRapid', {}))[:200]}"]),
         rt_check("rendered: every view, no JS errors", lambda rt: rget(rt, "probe.views.failures", []) + rget(rt, "probe.errors", []) + rget(rt, "probe.jsErrors", [])),
-    ]
+    ] if c]
 
 
 def image_checks(tids, task, wave):
-    return [
+    return [c for c in [
         C("images: files, size, licence, labels, distractors, placement", lambda ctx: image_problems(ctx["ct"], ctx["root"], tids, task, with_ann=False)),
         C("every topic has an image (or a reasoned NO-IMAGE row)", lambda ctx: image_coverage_problems(ctx["ct"], ctx["root"], tids, task, wave)),
-        C("second model: the picture shows the claimed diagnosis", lambda ctx: xm_imgs(ctx["ct"], ctx["root"], imgs_of(ctx["ct"], tids))),
-        C("second model: image facts", lambda ctx: xm_fact(ctx["ct"], "img", ",".join(tids))),
-        C("second model: spot distractors", lambda ctx: xm_grade(ctx["ct"], "spot", ",".join(tids))),
-        C("second model: coverage re-run with the placed images", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
+        C2("second model: the picture shows the claimed diagnosis", lambda ctx: xm_imgs(ctx["ct"], ctx["root"], imgs_of(ctx["ct"], tids))),
+        C2("second model: image facts", lambda ctx: xm_fact(ctx["ct"], "img", ",".join(tids))),
+        C2("second model: spot distractors", lambda ctx: xm_grade(ctx["ct"], "spot", ",".join(tids))),
+        C2("second model: coverage re-run with the placed images", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
         rt_check("rendered: images decode", lambda rt: [k for k in rget(rt, "probe.images.broken", []) if any(k.startswith(t + "_") for t in tids)]),
-    ]
+    ] if c]
 
 
 def overlay_checks(tids, task):
-    return [
-        C("overlays: designed, cross-reviewed, applied as reviewed", lambda ctx: overlay_problems(ctx["ct"], ctx["root"], imgs_of(ctx["ct"], tids), task)),
+    return [c for c in [
+        C("overlays: designed, cross-reviewed, applied as reviewed" if SECOND_MODEL else "overlays: Gemini design applied exactly (at most 2 logged ADJUSTED callouts)", lambda ctx: overlay_problems(ctx["ct"], ctx["root"], imgs_of(ctx["ct"], tids), task)),
         C("overlay geometry and labels", lambda ctx: image_problems(ctx["ct"], ctx["root"], tids, "-", with_ann=True)),
-        C("second model re-run on the labelled images (picture, facts)", lambda ctx: xm_imgs(ctx["ct"], ctx["root"], imgs_of(ctx["ct"], tids)) + xm_fact(ctx["ct"], "img", ",".join(tids))),
-        C("second model: coverage re-run with the image labels", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
+        C2("second model re-run on the labelled images (picture, facts)", lambda ctx: xm_imgs(ctx["ct"], ctx["root"], imgs_of(ctx["ct"], tids)) + xm_fact(ctx["ct"], "img", ",".join(tids))),
+        C2("second model: coverage re-run with the image labels", lambda ctx: xm_coverage(ctx["ct"], tids, ctx["root"], task)),
         rt_check("rendered: spot view and overlay kinds", lambda rt: ([] if rget(rt, "probe.renderSpot.filledShapes", 1) == 0 else ["filled shapes"]) + [f"kind {k} does not render" for k, v in rget(rt, "probe.renderSpot.kindRender", {}).items() if v is not True]),
-    ]
+    ] if c]
 
 
 def drill_checks(tids):
-    return [
+    return [c for c in [
         C("drills: every topic has one; items, whys, balance", lambda ctx: drill_problems(ctx["ct"], tids)),
-        C("second model: drill facts", lambda ctx: xm_fact(ctx["ct"], "drill", ",".join(tids))),
+        C2("second model: drill facts", lambda ctx: xm_fact(ctx["ct"], "drill", ",".join(tids))),
         rt_check("rendered: drill end screens clickable", lambda rt: [] if (rget(rt, "probe.renderDrill.itemsClickable", 0) >= 10 and rget(rt, "probe.renderDrill.whyRevealed") and rget(rt, "probe.renderDrill.orderClickable", 0) >= 5) else [f"renderDrill {json.dumps(rget(rt, 'probe.renderDrill', {}))[:200]}"]),
-    ]
+    ] if c]
 
 
 def engine_rt(name, keys: list[tuple[str, object]]):
@@ -1720,10 +1732,10 @@ def content_phase(ph_topics, ph_images, ph_q, ph_r, ph_x, groups, wave, image_ba
         add(Task(tk, f"Drills for {', '.join(tids)}: sort / multi / order, a why for every item and step", drill_checks(tids),
                  owns=[f"content/drills/d_{t}_*" for t in tids] + [f"audit/{tk}.md"], par=True))
     k = len(dgroups)
-    add(Task(f"P{ph_x}.{k + 1}", f"Memory scenes for wave {wave} (>= {6 if wave == 1 else 4}), placed in their topics", [
+    add(Task(f"P{ph_x}.{k + 1}", f"Memory scenes for wave {wave} (>= {6 if wave == 1 else 4}), placed in their topics", [c for c in [
         C("memory scenes", lambda ctx, wt=wave_tids, w=wave: palace_problems(ctx["ct"], wt, 6 if w == 1 else 4)),
-        C("second model: memory-scene facts", lambda ctx, wt=wave_tids: xm_fact(ctx["ct"], "palace", ",".join(wt))),
-        C("second model: coverage re-run where scenes were placed", lambda ctx, wt=wave_tids, tk=f"P{ph_x}.{k + 1}": xm_coverage(ctx["ct"], wt, ctx["root"], tk))],
+        C2("second model: memory-scene facts", lambda ctx, wt=wave_tids: xm_fact(ctx["ct"], "palace", ",".join(wt))),
+        C2("second model: coverage re-run where scenes were placed", lambda ctx, wt=wave_tids, tk=f"P{ph_x}.{k + 1}": xm_coverage(ctx["ct"], wt, ctx["root"], tk))] if c],
         owns=[f"content/palace/pal_{t}_*" for t in wave_tids] + [f"content/topics/{t}.json" for t in wave_tids] + [f"audit/P{ph_x}.{k + 1}.md"],
         rules={f"content/topics/{t}.json": "insert-only:palace" for t in wave_tids}))
     all_tids = WAVE1 if wave == 1 else WAVE1 + WAVE2
