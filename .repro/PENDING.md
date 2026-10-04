@@ -20,7 +20,8 @@ en9_hypercalcemia, en9_three_hpt missing.
 | P2.6 | CLOSED 2026-10-04 | F31a-c, F40, F33a-c, linkedNotice | ledger row sha:05f1ba73 |
 | P2.V | verifier (repro-verifier, Opus 5.5 max, confirmed) | token c8a9258425 + .repro/P2-REGRESSION.md | .repro/verify/P2-report.md |
 | V2 | QUEUED (worker lost in restart, no changes made) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
-| P1.V | verifier (repro-verifier, Opus 5.5 max, confirmed) | token 5554dd5d05, 12 objectives | .repro/verify/P1-report.md |
+| P1.V | FAILED 4/12 -> P1.4 reopened | report .repro/verify/P1-report.md | re-verify after P1.4 closes |
+| P1.4 | worker (repro-worker) | clause-by-clause term pass of 396 TOPIC-MAP rows + yield fixes (.repro/ws/P1_4) | --status P1.4 ok; audit/P1.4-coverage-impact.md |
 
 ## Wave 1 (reproductive, Oct 9) queue
 1. Every rp topic now has questions, rapid and >= 1 drill. Figure gaps (hi blueprint items with no figure to pin a rapid item): BP-rp23-05 fat necrosis, BP-rp29-07 minors' consent, BP-rp11-04 bone/LDL, BP-rp17-10 molluscum, BP-rp17-05 perinatal HIV prevention, BP-rp17-12 HIV course and labs (en8_loop.svg has no JSON).

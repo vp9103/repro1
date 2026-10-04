@@ -27,5 +27,36 @@
   "Loss of maturation: nuclei near the top look as immature as those at the base and stay crowded, instead of becoming small and flat with glycogen-rich cytoplasm as normal squamous cells do near the surface.",
   "Intact basement membrane: the epithelium rests on a smooth, flat lower border above the stroma, with no nests of tumor cells beneath it, so this is carcinoma in situ and not invasive cancer."
  ],
- "ann": []
+ "ann": [
+  {
+   "k": "r",
+   "x": 19.0,
+   "y": 28.0,
+   "w": 12.0,
+   "h": 48.0,
+   "px": 16.0,
+   "py": 52.0,
+   "l": "Full-thickness atypia: Dark, crowded, and irregular nuclei fill the epithelium from the basal layer almost all the way to the surface. This involvement of the entire thickness of the epithelium is the hallmark of CIN 3 (HSIL) and distinguishes it from lower-grade lesions."
+  },
+  {
+   "k": "e",
+   "x": 55.0,
+   "y": 33.0,
+   "rx": 10.0,
+   "ry": 5.0,
+   "px": 55.0,
+   "py": 25.0,
+   "l": "Loss of maturation: Nuclei near the surface remain large, dark, and crowded. They fail to flatten or acquire abundant, glycogen-rich cytoplasm, which normally characterizes mature superficial squamous cells."
+  },
+  {
+   "k": "arrow",
+   "x": 75.0,
+   "y": 76.0,
+   "tx": 75.0,
+   "ty": 85.0,
+   "px": 75.0,
+   "py": 85.0,
+   "l": "Intact basement membrane: The epithelium rests on a clean, well-defined boundary with no nests of atypical cells invading the underlying stroma. This confirms it is carcinoma in situ (pre-invasive)."
+  }
+ ]
 }

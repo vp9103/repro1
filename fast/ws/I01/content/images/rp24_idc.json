@@ -28,5 +28,46 @@
   "Invasion of fat: tumor nests lie directly among fat cells at the right, which proves the cells have crossed the basement membrane and are invasive, not in situ.",
   "Desmoplastic stroma: dense pink collagen surrounds and separates the cords, the scar-like reaction that makes invasive ductal cancers hard, gritty and stellate on palpation."
  ],
- "ann": []
+ "ann": [
+  {
+   "k": "e",
+   "x": 15.0,
+   "y": 35.0,
+   "rx": 7.0,
+   "ry": 7.0,
+   "px": 22.0,
+   "py": 35.0,
+   "l": "Cohesive nests and cords: These cohesive clusters of tumor cells with pink cytoplasm hold together as nests and cords. This pattern is characteristic of ductal carcinoma, contrasting with the single-file, dyscohesive cells typical of lobular carcinoma."
+  },
+  {
+   "k": "arrow",
+   "x": 30.0,
+   "y": 23.0,
+   "tx": 35.0,
+   "ty": 20.0,
+   "px": 35.0,
+   "py": 20.0,
+   "l": "Malignant nuclei: Note the enlarged, pleomorphic nuclei of variable size with prominent nucleoli. This high degree of nuclear variation raises the histologic grade of the tumor."
+  },
+  {
+   "k": "e",
+   "x": 78.0,
+   "y": 82.0,
+   "rx": 6.0,
+   "ry": 5.0,
+   "px": 72.0,
+   "py": 82.0,
+   "l": "Invasion of fat: Tumor nests lie directly among mature fat cells (adipocytes) at the right. This direct contact proves the malignant cells have crossed the basement membrane and are invasive, rather than in situ."
+  },
+  {
+   "k": "e",
+   "x": 45.0,
+   "y": 88.0,
+   "rx": 7.0,
+   "ry": 5.0,
+   "px": 45.0,
+   "py": 83.0,
+   "l": "Desmoplastic stroma: Dense pink collagen surrounds and separates the invasive cords. This scar-like fibroblastic reaction (desmoplasia) is what makes invasive ductal carcinomas feel hard, gritty, and stellate on palpation."
+  }
+ ]
 }

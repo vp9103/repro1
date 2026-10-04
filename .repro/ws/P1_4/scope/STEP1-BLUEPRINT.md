@@ -81,6 +81,8 @@ BP-en4-09 [hi] Correcting chronic hyponatremia too fast causes osmotic demyelina
 BP-en4-10 [mid] Hyperglycemia and hyperlipidemia can lower measured sodium (translational/pseudo-hyponatremia) {k: pseudohyponatremia|translational}
 BP-en4-11 [mid] Sorting polyuria: water diuresis (DI, primary polydipsia; low urine osmolality) vs solute (osmotic) diuresis (hyperglycemia with glucosuria, mannitol; urine osmolality not low) {k: osmotic diuresis; glucosuria|glycosuria}
 BP-en4-12 [mid] Desmopressin (V2-selective ADH analog): central DI, nocturnal enuresis, von Willebrand disease and mild hemophilia A (releases vWF and factor VIII); adverse effect hyponatremia {k: desmopressin; von willebrand; hyponatremia}
+BP-en4-13 [mid] Serum sodium separates the polyurias: DI loses free water, so sodium runs high-normal and rises to hypernatremia only when thirst or water access fails; primary polydipsia dilutes the plasma, so serum sodium and osmolality are low-normal {k: hypernatremia; thirst; primary polydipsia}
+BP-en4-14 [mid] Euvolemic hyponatremia with concentrated urine is not always SIADH: glucocorticoid deficiency (even secondary adrenal insufficiency, because cortisol normally restrains ADH release) and severe hypothyroidism must be excluded first {k: glucocorticoid deficiency|cortisol deficiency; hypothyroidism}
 
 ## en5 — Thyroid structure, hormone synthesis and function tests
 BP-en5-01 [hi] Thyroid develops from the foramen cecum; thyroglossal duct cyst is a midline neck mass that moves with swallowing/tongue protrusion; lingual thyroid {k: foramen cecum; thyroglossal}
@@ -96,6 +98,8 @@ BP-en5-10 [mid] Sick euthyroid (nonthyroidal illness): low T3, high reverse T3, 
 BP-en5-11 [mid] Radioactive iodine uptake separates overproduction (high uptake) from leak/exogenous (low uptake) {k: radioactive iodine uptake|raiu}
 BP-en5-12 [mid] Histology: follicles of cuboidal cells around colloid; tall cells and scalloped colloid when stimulated {k: colloid; follicle}
 BP-en5-13 [mid] Subclinical thyroid disease: high TSH with normal free T4 (subclinical hypothyroidism); low TSH with normal free T4 and T3 (subclinical hyperthyroidism); T3 toxicosis: low TSH, normal free T4, high T3 {k: subclinical; t3 toxicosis|t3 thyrotoxicosis}
+BP-en5-14 [mid] Thyroid follicular cells derive from endoderm of the floor of the primitive pharynx; a persisting part of the thyroglossal duct remains as the pyramidal lobe {k: endoderm; pyramidal lobe}
+BP-en5-15 [hi] Central (secondary) hypothyroidism: low free T4 with a low or inappropriately normal TSH, so a normal TSH alone does not exclude hypothyroidism when pituitary or hypothalamic disease is suspected {k: central hypothyroidism; inappropriately normal}
 
 ## en6 — Hyperthyroidism and thyroiditis
 BP-en6-01 [hi] Graves: thyroid-stimulating immunoglobulin (IgG, type II hypersensitivity) -> diffuse goiter, ophthalmopathy, pretibial myxedema; HLA-DR3 {k: thyroid-stimulating immunoglobulin|tsi; pretibial; ophthalmopathy}
@@ -113,6 +117,7 @@ BP-en6-12 [mid] Amiodarone-induced thyroid dysfunction (hypo or hyper) {k: amiod
 BP-en6-13 [mid] Destructive thyroiditis (subacute, painless, postpartum, early Hashimoto "hashitoxicosis") releases preformed hormone: low radioactive iodine uptake; treat symptoms with beta-blockers (NSAIDs or glucocorticoids for painful subacute thyroiditis); thionamides do not help because synthesis is not increased {k: preformed; beta-blocker|beta blocker|β-blocker; thionamide}
 BP-en6-14 [lo] PTU can cause ANCA-associated vasculitis {k: anca; vasculitis}
 BP-en6-15 [mid] Maternal TSH-receptor-stimulating IgG crosses the placenta and causes transient neonatal thyrotoxicosis (neonatal Graves disease) {k: neonatal; placenta}
+BP-en6-16 [mid] Radioactive iodine ablation or total thyroidectomy for Graves disease usually leaves permanent hypothyroidism, so lifelong levothyroxine replacement follows {k: permanent hypothyroidism; levothyroxine}
 
 ## en7 — Hypothyroidism, nodules and thyroid cancer
 BP-en7-01 [hi] Hashimoto thyroiditis: anti-TPO and antithyroglobulin; lymphocytic infiltrate with germinal centers and Hurthle cells; HLA-DR3/DR5; risk of thyroid lymphoma {k: hashimoto; hurthle|hürthle; germinal}
@@ -160,6 +165,9 @@ BP-en9-11 [mid] Other hypercalcemia: thiazides, lithium, vitamin D toxicity, mil
 BP-en9-12 [mid] Other hypocalcemia: vitamin D deficiency, CKD, acute pancreatitis (saponification), massive transfusion (citrate), hungry bone {k: pancreatitis; citrate}
 BP-en9-13 [mid] Hypercalcemia effects: nephrolithiasis, polyuria from nephrogenic DI (the dehydration worsens hypercalcemia), constipation, pancreatitis, peptic ulcer, weakness, confusion; shortened QT interval {k: shortened qt|short qt; nephrogenic; constipation}
 BP-en9-14 [mid] First-line treatments: symptomatic primary hyperparathyroidism -> parathyroidectomy; severe symptomatic hypocalcemia (tetany, seizures, arrhythmia) -> IV calcium gluconate {k: parathyroidectomy; calcium gluconate}
+BP-en9-15 [mid] PTH-independent hypercalcemia from vitamin D excess (vitamin D toxicity, calcitriol-making granulomas) raises calcium with high-normal or high phosphate (more gut absorption) and suppressed PTH, unlike the low phosphate of PTH or PTHrP excess {k: vitamin d toxicity; high phosphate|hyperphosphatemia}
+BP-en9-16 [mid] Cinacalcet is a calcimimetic: it sensitizes the parathyroid calcium-sensing receptor so PTH falls (secondary hyperparathyroidism of CKD, parathyroid carcinoma); adverse effect hypocalcemia {k: calcimimetic; calcium-sensing}
+BP-en9-17 [mid] With hypercalcemia any unsuppressed PTH is inappropriate: a PTH inside the reference range still points to PTH-driven disease (primary hyperparathyroidism; also FHH and lithium), because PTH-independent causes suppress it {k: inappropriately normal; unsuppressed}
 
 ## en10 — Bone turnover: osteoporosis, osteomalacia, Paget disease and bone-active drugs
 BP-en10-01 [hi] Osteoporosis: low bone mass with normal mineralization; postmenopausal estrogen loss raises RANKL/lowers OPG -> osteoclast activity; normal serum Ca, phosphate, ALP {k: osteoporosis; rankl; osteoprotegerin|opg}
@@ -170,6 +178,12 @@ BP-en10-05 [hi] Denosumab (RANKL antibody), teriparatide/abaloparatide (intermit
 BP-en10-06 [hi] Osteomalacia/rickets: defective mineralization from vitamin D deficiency; low Ca and phosphate, high PTH and ALP; bowed legs, rachitic rosary, craniotabes, Looser zones {k: osteomalacia; rickets; rosary}
 BP-en10-07 [hi] Paget disease of bone: disordered remodeling, mosaic lamellar bone, isolated high ALP, bone pain, enlarging skull, hearing loss, high-output failure, osteosarcoma risk {k: paget; mosaic}
 BP-en10-08 [mid] Osteopetrosis contrast: failed osteoclasts (carbonic anhydrase II) {k: osteopetrosis}
+BP-en10-09 [hi] Osteoporosis is diagnosed by a DEXA T-score of -2.5 or lower or by a fragility fracture (fall from standing height) of the hip or vertebra; a T-score between -1 and -2.5 is osteopenia {k: fragility fracture; osteopenia}
+BP-en10-10 [mid] Secondary causes of osteoporosis beyond drugs: hyperparathyroidism, hyperthyroidism, hypogonadism (anorexia nervosa, low estrogen or testosterone), malabsorption, multiple myeloma {k: secondary osteoporosis|secondary cause; hypogonadism; malabsorption}
+BP-en10-11 [mid] Bisphosphonates are first-line drug therapy for postmenopausal osteoporosis and for symptomatic Paget disease of bone {k: first-line; paget}
+BP-en10-12 [hi] Raloxifene is a SERM: estrogen agonist at bone, antagonist at breast and endometrium, so it treats osteoporosis and lowers breast cancer risk without raising endometrial cancer risk; it raises VTE risk and causes hot flashes {k: raloxifene; selective estrogen receptor modulator|serm; thromboembolism|vte}
+BP-en10-13 [mid] Osteomalacia and rickets leave excess unmineralized osteoid (wide osteoid seams on biopsy); adults have diffuse bone pain and proximal muscle weakness; children's radiographs show widened growth plates with metaphyseal cupping and fraying {k: osteoid; proximal muscle weakness|proximal weakness; metaphyseal}
+BP-en10-14 [mid] Causes of vitamin D deficiency: little sunlight or dietary intake, fat malabsorption (celiac disease, pancreatic insufficiency, gastric bypass), liver or kidney disease (lost hydroxylation), enzyme-inducing anticonvulsants such as phenytoin {k: malabsorption; phenytoin}
 
 ## en11 — Adrenal cortex: zones, steroidogenesis and congenital adrenal hyperplasia
 BP-en11-01 [hi] Zones: glomerulosa (aldosterone; angiotensin II, K+), fasciculata (cortisol; ACTH), reticularis (androgens; ACTH); medulla (catecholamines) {k: glomerulosa; fasciculata; reticularis}
@@ -182,6 +196,8 @@ BP-en11-07 [hi] High ACTH drives bilateral adrenal hyperplasia in all CAH; treat
 BP-en11-08 [mid] Nonclassic (late-onset) CAH mimics PCOS: hirsutism, oligomenorrhea {k: nonclassic|late-onset}
 BP-en11-09 [mid] CAH is autosomal recessive (21-hydroxylase deficiency most common); each sibling of an affected child has a 25% risk {k: autosomal recessive; 25%}
 BP-en11-10 [hi] Sex-specific CAH presentation: 46,XX infants have virilized external genitalia with normal ovaries and uterus (no AMH); 46,XY infants have normal genitalia and present with a salt-wasting crisis in the first weeks, or later with precocious pseudopuberty {k: 46,xx; 46,xy; uterus}
+BP-en11-11 [mid] 3-beta-hydroxysteroid dehydrogenase converts pregnenolone to progesterone, 17-hydroxypregnenolone to 17-hydroxyprogesterone and DHEA to androstenedione (an early step shared by all three zones) {k: 3-beta|3β; androstenedione}
+BP-en11-12 [mid] Renin in CAH: 21-hydroxylase deficiency raises renin (aldosterone is lost); 11-beta- and 17-alpha-hydroxylase deficiencies accumulate deoxycorticosterone, which suppresses renin and usually aldosterone as well {k: renin; deoxycorticosterone}
 
 ## en12 — Cortisol excess and deficiency
 BP-en12-01 [hi] Cortisol actions: gluconeogenesis, lipolysis, proteolysis, insulin resistance, anti-inflammatory (lipocortin inhibits phospholipase A2, blocks IL-2), upregulates alpha-1 receptors, inhibits bone formation, diurnal peak in the morning {k: phospholipase a2; alpha-1|α1; gluconeogenesis}
@@ -201,6 +217,7 @@ BP-en12-14 [hi] Glucocorticoid adverse effects: iatrogenic Cushing, HPA suppress
 BP-en12-15 [mid] Steroidogenesis blockers: ketoconazole, metyrapone (11-beta-hydroxylase), osilodrostat, mitotane (adrenolytic); mifepristone blocks the glucocorticoid receptor; pasireotide for Cushing disease {k: metyrapone; mitotane}
 BP-en12-16 [mid] Adrenoleukodystrophy: VLCFA accumulation, adrenal insufficiency in boys {k: adrenoleukodystrophy|vlcfa}
 BP-en12-17 [lo] Metyrapone stimulation test: metyrapone blocks 11-beta-hydroxylase; normally cortisol falls and ACTH and 11-deoxycortisol rise; in primary adrenal insufficiency ACTH is high but 11-deoxycortisol stays low; in secondary or tertiary insufficiency both stay low {k: metyrapone; 11-deoxycortisol}
+BP-en12-18 [mid] Adrenal morphology in Cushing syndrome: ACTH-dependent causes (pituitary adenoma, ectopic ACTH) give bilateral adrenal cortical hyperplasia; exogenous glucocorticoids suppress ACTH and cause bilateral cortical atrophy; a cortisol-secreting adenoma atrophies the other gland {k: bilateral adrenal hyperplasia|bilateral cortical hyperplasia; bilateral cortical atrophy|bilateral adrenal atrophy}
 
 ## en13 — Aldosterone, the adrenal medulla and endocrine hypertension
 BP-en13-01 [hi] Primary hyperaldosteronism (Conn): adenoma or bilateral hyperplasia; hypertension, hypokalemia (not always), metabolic alkalosis, LOW renin, no edema (aldosterone escape) {k: conn; low renin; aldosterone escape}
@@ -230,6 +247,8 @@ BP-en14-11 [hi] Liver enzyme switches: insulin (dephosphorylation) activates gly
 BP-en14-12 [mid] Insulin and fat: activates adipose lipoprotein lipase (triglyceride uptake) and acetyl-CoA carboxylase (malonyl-CoA blocks CPT-1, halting fatty-acid oxidation and ketogenesis); inhibits hormone-sensitive lipase (lipolysis) {k: lipoprotein lipase; hormone-sensitive lipase; malonyl-coa}
 BP-en14-13 [mid] Muscle contraction recruits GLUT4 without insulin, so exercise lowers glucose (exercise-induced hypoglycemia in insulin-treated diabetes) {k: exercise; glut4}
 BP-en14-14 [mid] Ketone use: the liver makes ketone bodies but cannot use them (lacks thiophorase); brain and muscle oxidize them in prolonged fasting; red cells cannot (no mitochondria) {k: thiophorase; mitochondria}
+BP-en14-15 [mid] Beta-cell glucokinase (low affinity, high Km) is the glucose sensor that sets the insulin-secretion threshold; heterozygous loss (glucokinase MODY) raises the threshold and gives mild, stable, lifelong fasting hyperglycemia {k: glucokinase; glucose sensor}
+BP-en14-16 [mid] Only skeletal muscle and adipose tissue need insulin for glucose uptake (GLUT4); liver, beta cells, kidney and intestine use GLUT2, and brain, RBCs and placenta use GLUT1 or GLUT3, all insulin-independent {k: glut2; insulin-independent}
 
 ## en15 — Diabetes mellitus: types, diagnosis and chronic complications
 BP-en15-01 [hi] Type 1: autoimmune beta-cell destruction (GAD65, insulin, IA-2, ZnT8 antibodies), HLA-DR3/DR4, insulitis, absolute insulin deficiency, ketoacidosis-prone {k: gad65|gad; hla-dr4; insulitis}
@@ -245,6 +264,7 @@ BP-en15-10 [mid] HbA1c reflects ~3 months; falsely low with shortened RBC surviv
 BP-en15-11 [mid] Secondary diabetes: pancreatic destruction (chronic pancreatitis, cystic fibrosis, hemochromatosis "bronze diabetes", pancreatectomy) or counter-regulatory hormone excess (glucocorticoids/Cushing syndrome, acromegaly, pheochromocytoma, glucagonoma) {k: hemochromatosis; cystic fibrosis; glucocorticoid}
 BP-en15-12 [hi] Diabetic nephropathy sequence: glomerular hyperfiltration (high GFR from efferent arteriolar hyalinosis and glomerular hypertension) -> GBM thickening and diffuse mesangial expansion -> Kimmelstiel-Wilson nodules; microalbuminuria is the first sign; ACE inhibitors/ARBs lower intraglomerular pressure {k: hyperfiltration; efferent; mesangial}
 BP-en15-13 [mid] Diabetic ischemic oculomotor (CN III) palsy spares the pupil (central motor fibers infarct; peripheral parasympathetic fibers survive), unlike a compressive posterior communicating artery aneurysm {k: pupil; oculomotor|cn iii|third nerve}
+BP-en15-14 [hi] Classic presentation of diabetes: polyuria and polydipsia (glucosuria drives osmotic diuresis), polyphagia and weight loss (catabolism without insulin action); type 1 typically presents acutely in youth, often as DKA {k: polyuria; polydipsia; polyphagia}
 
 ## en16 — Diabetic emergencies and hypoglycemia
 BP-en16-01 [hi] DKA: insulin deficiency + glucagon excess -> ketogenesis (beta-hydroxybutyrate, acetoacetate), anion-gap acidosis, Kussmaul breathing, fruity breath, abdominal pain, dehydration {k: beta-hydroxybutyrate|β-hydroxybutyrate; anion gap; kussmaul}
@@ -304,6 +324,7 @@ BP-rp1-12 [hi] Uterus parts, anteverted/anteflexed position, layers (endometrium
 BP-rp1-13 [mid] Male pelvic viscera: ductus deferens path, seminal vesicles, ejaculatory ducts, prostate relations, prostatic urethra {k: ejaculatory duct; seminal vesicle}
 BP-rp1-14 [mid] Pelvic organ prolapse by compartment: anterior wall -> cystocele (bladder), posterior wall -> rectocele (rectum), apical -> uterine or vaginal vault prolapse; risks are vaginal childbirth, age and estrogen loss {k: cystocele; rectocele}
 BP-rp1-15 [mid] Micturition: parasympathetic pelvic splanchnics (S2-S4, muscarinic M3) contract the detrusor to void; sympathetic hypogastric fibers relax the detrusor and close the internal urethral sphincter for storage {k: detrusor; muscarinic|m3}
+BP-rp1-16 [mid] In males the ductus deferens crosses over the ureter near the posterior bladder wall (the male version of "water under the bridge"), a relation at risk in pelvic surgery {k: ductus deferens; ureter}
 
 ## rp2 — The perineum, external genitalia and lymphatic drainage
 BP-rp2-01 [hi] Urogenital vs anal triangles; perineal membrane; superficial and deep perineal pouches and their contents {k: perineal membrane; superficial perineal; deep perineal}
@@ -348,6 +369,7 @@ BP-rp4-13 [mid] Fertilization steps: capacitation in the female tract, the acros
 BP-rp4-14 [mid] Week 1: cleavage -> morula (about day 3) -> blastocyst (about day 5) with an inner cell mass (embryo) and trophoblast (placenta); the blastocyst hatches from the zona pellucida and implants about day 6 {k: morula; blastocyst; inner cell mass}
 BP-rp4-15 [lo] Persistent primitive streak remnants form a sacrococcygeal teratoma (the most common neonatal tumor; tissues from all three germ layers) {k: sacrococcygeal; primitive streak}
 BP-rp4-16 [mid] Errors in morphogenesis: malformation (intrinsic developmental error), deformation (extrinsic compression, e.g., oligohydramnios), disruption (breakdown of normal tissue, e.g., amniotic band syndrome), sequence (one defect cascading, e.g., Potter sequence) {k: malformation; deformation; disruption; amniotic band}
+BP-rp4-17 [mid] Twin-twin transfusion syndrome (monochorionic placenta with vascular anastomoses): the donor twin becomes anemic and growth-restricted with oligohydramnios; the recipient becomes polycythemic and volume-overloaded with polyhydramnios and can develop heart failure {k: donor; recipient; polycythemi}
 
 ## rp5 — Sex determination and genital development
 BP-rp5-01 [hi] SRY on Y -> testis determining factor -> Sertoli cells make AMH (Mullerian regression) and Leydig cells make testosterone (Wolffian development) {k: sry; anti-mullerian|anti-müllerian|amh; leydig}
@@ -362,6 +384,7 @@ BP-rp5-09 [hi] Hypospadias (urethral folds fail to fuse; ventral opening; common
 BP-rp5-10 [mid] Mullerian anomalies travel with renal anomalies (shared mesonephric origin): unilateral renal agenesis {k: renal agenesis}
 BP-rp5-11 [mid] Gonads arise from the genital ridge; primordial germ cells migrate from the yolk sac {k: genital ridge; primordial germ}
 BP-rp5-12 [mid] Spermatic cord coverings come from the abdominal wall layers the testis passes during descent: external spermatic fascia (external oblique), cremasteric muscle and fascia (internal oblique), internal spermatic fascia (transversalis fascia); cord contents are the vas deferens, testicular artery, pampiniform plexus and genital branch of the genitofemoral nerve {k: external spermatic fascia; cremaster; internal spermatic fascia}
+BP-rp5-13 [mid] The endodermal urogenital sinus forms the prostate and bulbourethral (Cowper) glands in males and the lower vagina, Skene (paraurethral) and Bartholin (greater vestibular) glands in females {k: urogenital sinus; skene}
 
 ## rp6 — Disorders of sex development and sex chromosome disorders
 BP-rp6-01 [hi] Complete androgen insensitivity (46,XY): androgen receptor defect; female external genitalia, blind vaginal pouch, no uterus, testes (inguinal/abdominal); high testosterone, estrogen and LH; scant pubic/axillary hair {k: androgen insensitivity; blind; androgen receptor}
@@ -374,6 +397,7 @@ BP-rp6-07 [hi] Klinefelter (47,XXY): tall, small firm testes, gynecomastia, infe
 BP-rp6-08 [hi] Kallmann syndrome: failed GnRH neuron migration + anosmia; low GnRH, FSH, LH, sex steroids; delayed puberty {k: kallmann; anosmia}
 BP-rp6-09 [mid] 47,XYY (tall, normal fertility), ovotesticular DSD, 46,XX testicular DSD (SRY translocation) {k: xyy; ovotesticular}
 BP-rp6-10 [hi] Lab-pattern table: testosterone, DHT, LH, estrogen, AMH/uterus presence separate AIS, 5-ARD, Swyer and CAH {k: amh; uterus}
+BP-rp6-11 [mid] Turner lymphatic defects start in fetal life: cystic hygroma (with increased nuchal translucency) on prenatal ultrasound, then webbed neck and lymphedema of the hands and feet in the newborn {k: cystic hygroma; lymphedema}
 
 ## rp7 — Puberty: normal, early and late
 BP-rp7-01 [hi] Pulsatile GnRH reactivation at puberty (kisspeptin; leptin permissive); gonadarche vs adrenarche (DHEA-S) {k: pulsatile; kisspeptin; adrenarche}
@@ -400,6 +424,7 @@ BP-rp8-10 [mid] Mittelschmerz (ovulation pain); follicular cyst from a follicle 
 BP-rp8-11 [hi] Cervix histology by site: endocervix mucinous columnar, ectocervix nonkeratinized squamous, transformation zone between (see rp13) {k: endocervix; ectocervix}
 BP-rp8-12 [mid] Ploidy and DNA content in gametogenesis: primary oocyte or spermatocyte 2N, 4C (after DNA replication); secondary oocyte or spermatocyte 1N, 2C; ovum or spermatid 1N, 1C {k: 4c; 2c}
 BP-rp8-13 [mid] Endometrial layers: the stratum functionalis (fed by spiral arteries) is shed at menses; the stratum basalis (straight arteries) remains and regenerates it; curettage that removes the basalis causes Asherman syndrome {k: functionalis; basalis}
+BP-rp8-14 [mid] Hormone curves across a 28-day cycle: estradiol peaks just before the LH surge and rises again in the mid-luteal phase; progesterone peaks about 7 days after ovulation (a day-21 progesterone confirms ovulation); as the corpus luteum regresses, falling estradiol, progesterone and inhibin let FSH rise to recruit the next follicles {k: mid-luteal|midluteal; day 21|day-21}
 
 ## rp9 — Amenorrhea, abnormal bleeding, PCOS and female infertility
 BP-rp9-01 [hi] Pregnancy first in any amenorrhea; primary amenorrhea (none by 15, or 13 without breasts) vs secondary (none for 3 cycles/6 months) {k: primary amenorrhea; secondary amenorrhea; pregnancy}
@@ -414,6 +439,8 @@ BP-rp9-09 [hi] Hirsutism/virilization work-up: rapid onset or virilization sugge
 BP-rp9-10 [hi] Infertility work-up and ovulation induction: clomiphene (SERM at hypothalamus -> more GnRH; hot flashes, visual changes, multiples), letrozole (first-line in PCOS), gonadotropins, hCG trigger; ovarian hyperstimulation syndrome {k: clomiphene; ovarian hyperstimulation}
 BP-rp9-11 [mid] Tubal factor infertility after PID or endometriosis; hysterosalpingography {k: hysterosalpingogra|hsg; tubal}
 BP-rp9-12 [mid] Progestin challenge logic: withdrawal bleed means estrogen is present and outflow tract is intact {k: progestin challenge|withdrawal bleed}
+BP-rp9-13 [mid] PCOS androgen excess: high LH drives theca-cell androgen production, and hyperinsulinemia both stimulates theca cells and suppresses hepatic SHBG, raising free testosterone even when total testosterone is only mildly high {k: theca; shbg; free testosterone}
+BP-rp9-14 [mid] Letrozole induces ovulation by inhibiting aromatase: less estrogen means less negative feedback, so FSH rises and drives follicle growth {k: letrozole; aromatase}
 
 ## rp10 — Contraception, emergency contraception and medication abortion
 BP-rp10-01 [hi] Combined hormonal contraception: estrogen + progestin suppress FSH/LH (no ovulation); progestin thickens cervical mucus and thins endometrium {k: combined; cervical mucus; ovulation}
@@ -427,6 +454,8 @@ BP-rp10-08 [hi] Medication abortion: mifepristone (progesterone receptor antagon
 BP-rp10-09 [mid] Efficacy tiers (typical use) and barrier methods/sterilization {k: typical use}
 BP-rp10-10 [mid] Counseling and consent for adolescents; confidential contraception for minors (links rp29) {k: confidential; adolescent}
 BP-rp10-11 [mid] Emergency contraception windows: levonorgestrel works best within 72 hours and only before the LH surge (it delays ovulation); ulipristal works up to 5 days and can still act after the LH rise begins; a copper IUD inserted within 5 days is most effective; none disrupts an implanted pregnancy {k: 72 hours; 5 days|five days; implant}
+BP-rp10-12 [mid] Bleeding pattern differs by progestin method: the levonorgestrel IUD thins the endometrium and lightens menses (often amenorrhea; also a treatment for heavy menstrual bleeding); the etonogestrel implant causes unpredictable spotting; DMPA commonly leads to amenorrhea {k: spotting; heavy menstrual bleeding}
+BP-rp10-13 [mid] IUD insertion carries a small early risk of pelvic infection, so active PID or purulent cervicitis contraindicates insertion until treated {k: pelvic infection; insertion}
 
 ## rp11 — Menopause and hormone therapy
 BP-rp11-01 [hi] Menopause (~51): follicle depletion -> low estradiol and inhibin -> high FSH (most useful marker), high LH, high GnRH; estrone from adipose becomes main estrogen {k: fsh; follicle depletion|depletion}
@@ -462,6 +491,7 @@ BP-rp12-11 [hi] Sarcoma botryoides (embryonal rhabdomyosarcoma): girls < 5, grap
 BP-rp12-12 [mid] Vaginal SCC usually spreads from cervix; Gartner duct cyst on the lateral vaginal wall {k: gartner}
 BP-rp12-13 [hi] Vulvar squamous precursors by marker: HPV-associated HSIL (usual VIN; diffuse block p16 staining, wild-type p53, koilocytes; younger women; warty or basaloid carcinoma) vs HPV-independent differentiated VIN (basal atypia, aberrant p53, absent or focal p16; older women with lichen sclerosus; keratinizing carcinoma); vulvar carcinoma spreads first to inguinal nodes {k: p16; p53; differentiated vin|dvin}
 BP-rp12-14 [mid] Vulvar dermatoses: lichen sclerosus (figure-of-eight white atrophic vulvar and perianal skin, dermal sclerosis, spares the vagina; high-potency topical corticosteroids) vs lichen planus (T-cell-mediated; erosive, involves vaginal and oral mucosa, can scar) {k: figure-of-eight|figure of 8|figure-of-8|figure of eight; lichen planus; corticosteroid}
+BP-rp12-15 [lo] Sarcoma botryoides histology: small round blue cells crowded into a dense subepithelial cambium layer just beneath the vaginal epithelium (course pathology lectures) {k: cambium; small round blue}
 
 ## rp13 — Cervix, HPV and cervical cancer screening
 BP-rp13-01 [hi] Transformation zone (squamocolumnar junction) is where metaplasia and CIN occur; a Pap that misses it is inadequate {k: transformation zone; squamocolumnar; metaplasia}
@@ -475,6 +505,9 @@ BP-rp13-08 [mid] Cervicitis: chlamydia, gonorrhea (mucopurulent discharge, friab
 BP-rp13-09 [mid] Screening vs diagnosis vs treatment in gynecologic cancer prevention {k: screening test|screening; diagnosis}
 BP-rp13-10 [mid] Nabothian cysts (benign trapped endocervical glands) {k: nabothian}
 BP-rp13-11 [mid] p16 immunostaining: E7 inactivation of Rb causes p16 overexpression, so diffuse block p16 staining marks HPV-driven high-grade lesions and resolves CIN 2 as HSIL {k: p16; hsil}
+BP-rp13-12 [hi] CIN natural history and grading: most HPV infections clear, and persistent high-risk HPV drives dysplasia that starts in the basal layer; CIN 1 involves the lower third, CIN 2 the lower two-thirds and CIN 3 more than two-thirds up to the full thickness (carcinoma in situ); breach of the basement membrane defines invasive carcinoma {k: persistent; lower third|lower one-third|basal third; basement membrane}
+BP-rp13-13 [mid] Invasive cervical carcinoma presents with postcoital or irregular vaginal bleeding and a watery, blood-tinged discharge; early lesions are found only by screening {k: postcoital; discharge}
+BP-rp13-14 [mid] Excisional treatment of the cervix (LEEP or cone) can cause later cervical insufficiency with second-trimester loss or preterm birth, so excision is kept for high-grade lesions (SIM-COLPO lecture notes) {k: cervical insufficiency|cervical incompetence; preterm}
 
 ## rp14 — Uterus: endometrium and myometrium
 BP-rp14-01 [hi] Endometriosis: endometrial glands and stroma outside the uterus (retrograde menstruation, metaplasia, lymphatic spread); ovary (endometrioma/chocolate cyst), pelvic peritoneum (powder-burn), dysmenorrhea, dyspareunia, dyschezia, infertility; normal-sized uterus {k: endometriosis; chocolate cyst|endometrioma; retrograde menstruation}
@@ -491,6 +524,7 @@ BP-rp14-11 [mid] Endometrial polyp; Asherman syndrome (adhesions after curettage
 BP-rp14-12 [mid] Sampling procedures: endometrial biopsy, D&C, hysteroscopy (what each samples and when used) {k: dilation and curettage|d&c; hysteroscopy}
 BP-rp14-13 [lo] Tamoxifen is a partial estrogen agonist at the endometrium (hyperplasia, polyps, cancer) {k: tamoxifen}
 BP-rp14-14 [hi] Endometrial carcinoma risk tracks lifetime unopposed estrogen: obesity, nulliparity, early menarche, late menopause, anovulation (PCOS), estrogen-only therapy, tamoxifen, diabetes, Lynch syndrome; progestins, combined oral contraceptives and pregnancy protect {k: nulliparity|nulliparous; obesity; oral contraceptive}
+BP-rp14-15 [mid] Danazol is a synthetic androgen (partial androgen-receptor agonist) that suppresses gonadotropins; used for endometriosis and hereditary angioedema; adverse effects are androgenic (acne, hirsutism, voice deepening), weight gain, low HDL and hepatotoxicity {k: danazol; hirsutism; hereditary angioedema}
 
 ## rp15 — Ovary and fallopian tube: cysts, torsion, adnexal masses and tumors
 BP-rp15-01 [hi] Tumor classification by cell of origin: surface epithelium, germ cells, sex cord-stromal cells, metastases {k: surface epithel; germ cell; sex cord}
@@ -509,6 +543,8 @@ BP-rp15-13 [hi] Tumor markers: CA-125 (epithelial; nonspecific premenopause), AF
 BP-rp15-14 [mid] Tubal lesions: hydrosalpinx, salpingitis, tubal ectopic (links rp26); paratubal cyst {k: hydrosalpinx}
 BP-rp15-15 [hi] Ovarian epithelial tumor spectrum: benign -> borderline (atypia and stratification without destructive stromal invasion; noninvasive implants) -> carcinoma; type I low-grade carcinomas (low-grade serous, mucinous, endometrioid, clear cell; KRAS/BRAF; arise from borderline tumors or endometriosis) vs type II high-grade serous carcinoma (TP53, from tubal intraepithelial carcinoma, aggressive) {k: borderline; kras; stromal invasion}
 BP-rp15-16 [hi] Ovarian carcinoma presentation: vague bloating, early satiety and rising abdominal girth; spreads by peritoneal seeding (ascites, omental caking); CA-125 and ultrasound fail as screening tests for average-risk women {k: bloating; early satiety; omental|omentum}
+BP-rp15-17 [mid] Ovarian torsion compresses the thin-walled veins and lymphatics first while arterial inflow continues, so the ovary swells with edema before arterial occlusion causes hemorrhagic infarction (Doppler flow can persist early) {k: venous; hemorrhagic infarction|infarction}
+BP-rp15-18 [mid] Laterality of ovarian epithelial tumors: serous tumors are often bilateral, while primary mucinous tumors are usually large and unilateral, so bilateral mucinous masses suggest metastasis (Krukenberg tumor, appendiceal primary) {k: bilateral; unilateral}
 
 ## rp16 — Bacterial STIs and pelvic inflammatory disease
 BP-rp16-01 [hi] Chlamydia trachomatis D-K: obligate intracellular; elementary body (infectious) and reticulate body (replicating); NAAT; doxycycline (azithromycin in pregnancy); reactive arthritis; neonatal conjunctivitis and afebrile staccato pneumonia {k: elementary bod; reticulate bod; naat}
@@ -527,6 +563,8 @@ BP-rp16-13 [mid] Chlamydia microbiology: obligate intracellular (cannot make its
 BP-rp16-14 [mid] Neisseria gonorrhoeae microbiology: gram-negative, oxidase-positive diplococcus that ferments glucose but not maltose (meningococcus ferments both); grown on Thayer-Martin selective medium; lipooligosaccharide endotoxin; no polysaccharide capsule and no vaccine (pilus antigenic variation) {k: maltose; thayer-martin; lipooligosaccharide}
 BP-rp16-15 [mid] Gonorrhea and chlamydia often coexist: treat gonorrhea with ceftriaxone and add doxycycline when chlamydia has not been excluded (CDC 2021); treat partners {k: coinfect|coexist; ceftriaxone; doxycycline}
 BP-rp16-16 [mid] Syphilis in pregnancy: only penicillin G reliably treats the fetus, so a penicillin-allergic pregnant patient is desensitized rather than switched to another drug {k: desensitiz; penicillin}
+BP-rp16-17 [mid] Chlamydia and gonorrhea are often asymptomatic, especially cervical infection in women (hence yearly NAAT screening of sexually active women under 25); men more often have dysuria or, with gonorrhea, purulent urethral discharge {k: asymptomatic; under 25|younger than 25}
+BP-rp16-18 [mid] Nontreponemal tests (VDRL, RPR) detect anticardiolipin antibody and their titers fall after successful treatment, so they follow therapy; treponemal tests usually stay positive for life and cannot separate past from current infection {k: cardiolipin; titer}
 
 ## rp17 — Viral STIs: HIV, HSV, HPV and molluscum
 BP-rp17-01 [hi] Viruses as obligate intracellular parasites; retrovirus (RNA -> DNA via reverse transcriptase, integrase inserts provirus) vs DNA viruses (latency as episomes) {k: reverse transcriptase; integrase; latency|latent}
@@ -544,6 +582,8 @@ BP-rp17-12 [hi] HIV course and labs: acute retroviral syndrome (fever, rash, pha
 BP-rp17-13 [mid] Infants of mothers with HIV carry maternal anti-HIV IgG for up to 18 months, so infant infection is diagnosed by HIV nucleic acid (PCR) testing, not antibody tests {k: 18 months; nucleic acid|pcr}
 BP-rp17-14 [mid] A homozygous CCR5 deletion (delta-32) protects against CCR5-tropic HIV; heterozygotes progress more slowly {k: homozygous; delta 32|delta-32|δ32}
 BP-rp17-15 [mid] More ART toxicities: NRTI mitochondrial toxicity (lactic acidosis, hepatic steatosis; pancreatitis and neuropathy with older NRTIs such as didanosine and stavudine) and indinavir nephrolithiasis {k: lactic acidosis; indinavir; pancreatitis}
+BP-rp17-16 [mid] HIV coreceptor tropism: CCR5-using (macrophage-tropic) strains dominate early infection; CXCR4-using (T-cell-tropic) strains emerge later in disease {k: cxcr4; macrophage}
+BP-rp17-17 [hi] ART mechanisms by replication step: NRTIs are phosphorylated to nucleotide analogs that terminate viral DNA chains (tenofovir is already a nucleotide); NNRTIs bind reverse transcriptase allosterically without activation; integrase inhibitors block provirus insertion; protease inhibitors block cleavage of gag-pol polyproteins, leaving immature noninfectious virions; drugs are always given in combination because rapid mutation selects resistance to any single agent {k: chain termination|chain terminator; allosteric; polyprotein}
 
 ## rp18 — Infections in pregnancy and the newborn
 BP-rp18-01 [hi] Toxoplasma: cat feces/undercooked meat; chorioretinitis, hydrocephalus, diffuse intracranial calcifications {k: toxoplasm; chorioretinitis; hydrocephalus}
@@ -561,6 +601,7 @@ BP-rp18-12 [hi] Neonatal conjunctivitis: gonococcal (days 2-5, purulent) vs chla
 BP-rp18-13 [mid] Determining immune status (IgG vs IgM, avidity) {k: igm; igg}
 BP-rp18-14 [mid] Neonatal HSV risk is highest when the mother acquires a first genital infection near delivery (no protective maternal IgG yet); recurrent maternal HSV carries far lower risk; neonatal HSV is treated with IV acyclovir {k: first episode|primary infection|primary genital|first genital; iv acyclovir|intravenous acyclovir}
 BP-rp18-15 [mid] Lab identity of neonatal sepsis bacteria: group B strep = beta-hemolytic, bacitracin-resistant, CAMP-positive gram-positive cocci in chains; Listeria = motile (tumbling) facultative intracellular gram-positive rod (granulomatosis infantiseptica); E. coli with the K1 capsule causes neonatal meningitis {k: camp; bacitracin; tumbling; k1}
+BP-rp18-16 [mid] More congenital syphilis findings: early hepatosplenomegaly and periostitis or osteochondritis of long bones (painful pseudoparalysis); late interstitial keratitis, which with Hutchinson teeth and eighth-nerve deafness forms the Hutchinson triad {k: interstitial keratitis; periostitis|osteochondritis}
 
 ## rp19 — Testis, spermatogenesis and male reproductive endocrinology
 BP-rp19-01 [hi] Seminiferous tubule: Sertoli cells (FSH receptors; androgen-binding protein, inhibin B, AMH; blood-testis barrier via tight junctions; nurse cells) and germ cells; Leydig cells in the interstitium (LH -> testosterone; Reinke crystals) {k: sertoli; blood-testis barrier; androgen-binding protein}
@@ -587,6 +628,8 @@ BP-rp20-08 [hi] Germ cell tumors (~95%): seminoma (most common; fried-egg cells;
 BP-rp20-09 [hi] Non-germ cell: Leydig cell tumor (Reinke crystals; androgen/estrogen -> gynecomastia, precocious puberty), Sertoli cell tumor; lymphoma is the most common testicular mass in men > 60 (DLBCL, often bilateral) {k: leydig cell tumor; reinke; lymphoma}
 BP-rp20-10 [hi] Testicular tumor spread to para-aortic nodes; radical inguinal orchiectomy (never transscrotal biopsy); germ cell neoplasia in situ; isochromosome 12p; markers AFP, hCG, LDH {k: orchiectomy; para-aortic; 12p}
 BP-rp20-11 [mid] Tumor markers sort testicular germ cell tumors: pure seminoma never raises AFP (an elevated AFP means a nonseminomatous component) though syncytiotrophoblast cells can mildly raise hCG and placental alkaline phosphatase marks seminoma; AFP = yolk sac tumor, very high hCG = choriocarcinoma {k: afp; hcg; placental alkaline phosphatase|plap}
+BP-rp20-12 [mid] Testicular torsion twists the spermatic cord so the thin-walled veins occlude before the arteries: the testis congests, then undergoes hemorrhagic infarction; Doppler shows absent flow, whereas epididymo-orchitis shows increased flow {k: hemorrhagic infarction|infarction; doppler}
+BP-rp20-13 [hi] Testicular germ cell tumors present in men aged about 15-35 as a painless, firm intratesticular mass that does not transilluminate (unlike hydrocele or spermatocele); ultrasound shows a solid lesion {k: painless; intratesticular}
 
 ## rp21 — Prostate and penis
 BP-rp21-01 [hi] BPH: DHT-driven nodular hyperplasia of glands and stroma in the transition/periurethral zone; LUTS, retention, UTIs, bladder hypertrophy, hydronephrosis; not premalignant {k: bph|benign prostatic hyperplasia; transition zone}
@@ -607,6 +650,7 @@ BP-rp21-15 [mid] BPH drug adverse effects: 5-alpha-reductase inhibitors cause de
 BP-rp21-16 [hi] PSA is organ-specific, not cancer-specific: raised by BPH, prostatitis, instrumentation, urinary retention and ejaculation; halved by 5-alpha-reductase inhibitors; a lower free-to-total PSA ratio favors cancer {k: organ-specific; prostatitis; free-to-total|free psa}
 BP-rp21-17 [mid] Androgen deprivation adverse effects: hot flashes, loss of libido and erections, gynecomastia, fatigue and bone loss; abiraterone causes mineralocorticoid excess (hypertension, hypokalemia, fluid retention) because ACTH rises, so it is given with prednisone {k: hot flash; bone loss|osteoporosis; mineralocorticoid}
 BP-rp21-18 [mid] Priapism types: ischemic (low-flow; painful, rigid, dark acidotic cavernosal blood; sickle cell disease, trazodone, intracavernosal drugs; emergency) vs nonischemic (high-flow; painless, partly rigid; perineal trauma with an arterial-cavernosal fistula) {k: ischemic; nonischemic|non-ischemic; high-flow|high flow}
+BP-rp21-19 [lo] Peyronie disease is a fibromatosis of the tunica albuginea that travels with Dupuytren contracture and plantar fibromatosis (PATHPHARM-MALE lecture); the scarred tunica also causes venous-leak erectile dysfunction {k: dupuytren; fibromatosis}
 
 ## rp22 — Male hypogonadism, infertility, sexual dysfunction and androgen pharmacology
 BP-rp22-01 [hi] Primary hypogonadism: low testosterone, HIGH LH/FSH (Klinefelter, orchitis, chemotherapy, cryptorchidism); secondary: low testosterone with low/normal LH/FSH (Kallmann, pituitary tumor, hyperprolactinemia, opioids, anabolic steroids, obesity) {k: primary hypogonadism; secondary hypogonadism}
@@ -632,6 +676,8 @@ BP-rp23-07 [hi] Galactorrhea causes: prolactinoma, antipsychotics/metoclopramide
 BP-rp23-08 [mid] Congenital/developmental: polythelia/polymastia along the milk line, amastia, Poland syndrome; juvenile hypertrophy {k: milk line|polythelia; poland}
 BP-rp23-09 [mid] Silicone implants: capsular contracture, rupture, siliconoma; breast-implant associated anaplastic large cell lymphoma (textured implants, CD30+); no proven autoimmune disease link {k: capsular contracture; anaplastic large cell}
 BP-rp23-10 [mid] Gynecomastia mechanism: estrogen:androgen imbalance (see rp22) {k: estrogen:androgen|estrogen-to-androgen|imbalance}
+BP-rp23-11 [mid] Fibrocystic change presents in premenopausal women as bilateral, multifocal lumpy breasts that are tender before menses and improve afterward {k: premenstrual; multifocal}
+BP-rp23-12 [mid] Physiologic gynecomastia occurs at three ages (newborns from maternal estrogen, puberty, older men as testosterone falls) and is concentric beneath the areola, whereas male breast cancer is a hard, eccentric mass with nipple retraction or discharge {k: physiologic; eccentric}
 
 ## rp24 — Breast cancer
 BP-rp24-01 [hi] Risk factors: female sex, age, BRCA1/2, family history, early menarche/late menopause, nulliparity/late first birth, obesity after menopause, combined HT, chest radiation, atypia; breastfeeding protective {k: brca1; brca2; menarche}
@@ -648,6 +694,7 @@ BP-rp24-11 [mid] Male breast cancer: BRCA2, Klinefelter; usually invasive ductal
 BP-rp24-12 [mid] Precursor sequence: usual hyperplasia -> ADH -> DCIS -> invasive ductal; ALH -> LCIS -> invasive lobular {k: precursor}
 BP-rp24-13 [mid] Mammography screening; spread to axillary nodes, bone, liver, lung, brain {k: mammogra}
 BP-rp24-14 [mid] Most breast carcinomas arise in the upper outer quadrant, which holds the most glandular tissue (including the axillary tail) {k: upper outer quadrant; axillary tail|tail of spence}
+BP-rp24-15 [mid] Further breast cancer risk factors: alcohol use (dose-related) and dense breast tissue on mammography (which also hides tumors and lowers mammographic sensitivity) {k: alcohol; breast density|dense breast}
 
 ## rp25 — Maternal physiology and the hormones of pregnancy
 BP-rp25-01 [hi] Cardiovascular: cardiac output up ~40-50% (stroke volume then heart rate), SVR down, BP lowest in 2nd trimester, supine hypotension (IVC compression) {k: cardiac output; systemic vascular resistance|svr; supine}
@@ -659,6 +706,7 @@ BP-rp25-06 [hi] Endocrine: hPL insulin resistance, rising prolactin, TBG up (tot
 BP-rp25-07 [hi] hCG doubles about every 48 h early; peaks ~10 weeks; progesterone from corpus luteum then placenta {k: doubl; 10 weeks}
 BP-rp25-08 [mid] Skin in pregnancy: melasma, linea nigra, striae, spider angiomas {k: melasma; linea nigra}
 BP-rp25-09 [lo] Normal pregnancy lab shifts: serum alkaline phosphatase rises from the placenta without liver disease; BUN and creatinine fall; fibrinogen rises {k: alkaline phosphatase; fibrinogen}
+BP-rp25-10 [mid] Plasma volume expands in pregnancy because estrogen and the fall in systemic vascular resistance activate the renin-angiotensin-aldosterone system, which retains sodium and water despite lower blood pressure {k: renin; aldosterone}
 
 ## rp30 — Prenatal care: dating, screening, teratogens and vaccines
 BP-rp30-01 [hi] Dating: first-trimester crown-rump length is most accurate; Naegele's rule; term 37-42 weeks (preterm < 37, post-term >= 42) {k: crown-rump; naegele; preterm}
@@ -671,6 +719,7 @@ BP-rp30-07 [mid] Routine prenatal labs and ultrasound by trimester; fundal heigh
 BP-rp30-08 [mid] Open neural tube defects leak AFP: high maternal serum and amniotic fluid AFP, with amniotic acetylcholinesterase as the confirmatory marker; closed defects may not raise AFP; CVS samples placental tissue and cannot detect neural tube defects {k: acetylcholinesterase; amniotic fluid}
 BP-rp30-09 [mid] Screen for and treat asymptomatic bacteriuria in pregnancy: progesterone-related ureteral dilation and uterine compression raise the risk of pyelonephritis, which can trigger preterm labor {k: asymptomatic bacteriuria; pyelonephritis}
 BP-rp30-10 [hi] Signature teratogen effects: ACE inhibitors/ARBs (fetal renal failure, oligohydramnios), warfarin (nasal hypoplasia, stippled epiphyses; heparin does not cross the placenta), isotretinoin (craniofacial, cardiac, CNS defects), valproate and carbamazepine (neural tube defects), phenytoin (fetal hydantoin syndrome: hypoplastic nails and distal phalanges), methotrexate (limb and craniofacial defects), thalidomide (phocomelia), tetracyclines (tooth discoloration), aminoglycosides (ototoxicity), alcohol (fetal alcohol syndrome: smooth philtrum, thin upper lip, microcephaly), misoprostol (Mobius sequence), mycophenolate (microtia, clefts), topiramate (cleft lip), NSAIDs late in pregnancy (premature ductus arteriosus closure, oligohydramnios) {k: phocomelia; stippled epiphyses; smooth philtrum; ductus arteriosus}
+BP-rp30-11 [hi] First-trimester screen patterns (10-13 weeks): trisomy 21 = increased nuchal translucency and high hCG with low PAPP-A; trisomy 18 = low hCG and low PAPP-A (nuchal translucency also increased) {k: papp-a; first-trimester|first trimester}
 
 ## rp26 — Early pregnancy complications: ectopic, pregnancy loss and gestational trophoblastic disease
 BP-rp26-01 [hi] Framework: pregnant? (hCG) -> intrauterine? (transvaginal ultrasound; gestational sac, yolk sac, fetal pole, cardiac activity) -> viable? -> unstable? {k: gestational sac; yolk sac; fetal pole}
@@ -706,6 +755,8 @@ BP-rp27-16 [mid] ABO vs Rh hemolytic disease: ABO disease (type O mother with Ig
 BP-rp27-17 [mid] Fetal growth restriction (estimated weight under the 10th percentile): symmetric (early insult such as aneuploidy or congenital infection) vs asymmetric head-sparing (late placental insufficiency from pre-eclampsia, hypertension or smoking) {k: 10th percentile; asymmetric; head-sparing|head sparing}
 BP-rp27-18 [mid] Amniotic fluid embolism: sudden hypoxemia, hypotension and DIC during labor or right after delivery {k: amniotic fluid embolism; dic|disseminated intravascular}
 BP-rp27-19 [mid] Gestational diabetes risk factors: obesity, prior gestational diabetes or macrosomic infant, PCOS, family history of type 2 diabetes, older maternal age; high-risk patients are tested at the first prenatal visit and everyone else at 24-28 weeks (THIRD-TRI objectives 4-5) {k: prior gestational diabetes|previous gestational diabetes; first prenatal visit}
+BP-rp27-20 [mid] Placental abruption can bleed behind the placenta (concealed retroplacental hemorrhage), so shock, a rigid tender uterus and fetal distress can be out of proportion to the visible bleeding {k: concealed; retroplacental}
+BP-rp27-21 [mid] Chorioamnionitis (intra-amniotic infection, usually ascending after prolonged membrane rupture): maternal fever with fetal tachycardia, uterine tenderness or purulent, foul-smelling amniotic fluid; treated with broad-spectrum antibiotics and delivery; it raises neonatal sepsis risk {k: intra-amniotic; fetal tachycardia}
 
 ## rp28 — Labor, delivery and the postpartum period
 BP-rp28-01 [hi] Onset of labor: fetal cortisol/placental CRH, rising estrogen:progesterone, prostaglandins, oxytocin receptors; gap junctions (connexin 43) synchronize contraction; Ferguson reflex {k: gap junction; connexin; ferguson}
