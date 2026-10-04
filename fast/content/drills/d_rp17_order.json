@@ -1,0 +1,48 @@
+{
+ "id": "d_rp17_order",
+ "c": "rp17",
+ "kind": "order",
+ "t": "The HIV replication cycle, step by step",
+ "tags": [
+  "drug-mechanism",
+  "virulence-factors"
+ ],
+ "bp": [
+  "BP-rp17-01",
+  "BP-rp17-02",
+  "BP-rp17-06",
+  "BP-rp17-17"
+ ],
+ "q": "Put the steps of one HIV replication cycle in order, from the virion reaching a CD4 cell to a mature infectious virion. Most steps are the target of a drug class.",
+ "key": "The order follows the flow of genetic information: the virus must dock before it fuses, copy RNA into DNA before integrating, integrate before the host can transcribe it, and assemble before protease can mature it. Drugs target attachment, fusion, reverse transcription, integration and maturation, but not the host's own transcription.",
+ "items": [
+  [
+   "Attachment: gp120 binds CD4, then a CCR5 or CXCR4 coreceptor",
+   "Entry begins with docking, so the virion must bind CD4 and a coreceptor before anything else can happen; maraviroc blocks CCR5 at this step."
+  ],
+  [
+   "Fusion: gp41 pulls the viral envelope into the cell membrane",
+   "Binding changes the shape of gp41, so fusion can occur only after attachment; it releases the viral core into the cytoplasm, and enfuvirtide blocks this step."
+  ],
+  [
+   "Reverse transcription: viral RNA is copied into DNA",
+   "Once the core is inside, the RNA genome must become DNA before the cell can integrate it; this error-prone copying is blocked by nucleoside and nonnucleoside inhibitors."
+  ],
+  [
+   "Integration: integrase inserts the viral DNA into a host chromosome as a provirus",
+   "Only DNA can be spliced into host DNA, so integration follows reverse transcription; the provirus makes infection lifelong, and integrase inhibitors block strand transfer."
+  ],
+  [
+   "Transcription and translation: host machinery makes viral RNA and gag-pol polyproteins",
+   "The provirus is read like a host gene, so it can be expressed only after integration; the long polyproteins made here are the substrate for the later cleavage step."
+  ],
+  [
+   "Assembly and budding: immature virions leave the cell",
+   "New RNA and polyproteins gather at the membrane and bud out, which must come before maturation because protease acts on polyproteins already packaged inside the particle."
+  ],
+  [
+   "Maturation: protease cuts gag-pol into functional proteins",
+   "Cleavage turns the immature particle into an infectious virion with a mature p24 capsid; protease inhibitors leave virions that bud but are not infectious."
+  ]
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "id": "d_rp16_multi",
+ "c": "rp16",
+ "kind": "multi",
+ "t": "Which genital ulcer is it?",
+ "tags": [
+  "pathogen-clues",
+  "histology-to-diagnosis"
+ ],
+ "bp": [
+  "BP-rp16-02",
+  "BP-rp16-04",
+  "BP-rp16-06",
+  "BP-rp16-07",
+  "BP-rp16-08"
+ ],
+ "key": "Ask two questions in order: does the ulcer hurt, and what are the inguinal nodes doing? Painful ulcers are herpes with grouped vesicles and chancroid with a ragged ulcer and suppurating node; painless ulcers are syphilis with a clean chancre and rubbery nodes, LGV with a fleeting ulcer then buboes, and donovanosis with a beefy-red ulcer and no true nodes.",
+ "cols": [
+  {
+   "id": "hsv",
+   "l": "Genital herpes"
+  },
+  {
+   "id": "chancroid",
+   "l": "Chancroid"
+  },
+  {
+   "id": "syph",
+   "l": "Primary syphilis"
+  },
+  {
+   "id": "lgv",
+   "l": "Lymphogranuloma venereum"
+  },
+  {
+   "id": "donov",
+   "l": "Donovanosis"
+  }
+ ],
+ "items": [
+  [
+   "Painful grouped vesicles on a red base",
+   "hsv",
+   "Herpes simplex virus kills epithelial cells as it replicates, so clustered vesicles on an inflamed base break into shallow ulcers that expose sensory nerve endings and hurt."
+  ],
+  [
+   "Multinucleated giant cells on a Tzanck smear",
+   "hsv",
+   "Infected cells fuse into multinucleated giant cells with inclusions; the smear cannot tell herpes simplex from varicella-zoster, so lesion PCR is the more sensitive and specific test."
+  ],
+  [
+   "Latent virus in sacral ganglia that reactivates with stress",
+   "hsv",
+   "The virus travels up sensory axons and persists as an episome in the sacral dorsal root ganglia, so stress, menses or immunosuppression can trigger recurrences at the same site."
+  ],
+  [
+   "Treated with acyclovir or valacyclovir",
+   "hsv",
+   "These guanosine analogs are activated by viral thymidine kinase and stop viral DNA polymerase; they shorten outbreaks and suppress recurrences but do not eradicate latent virus."
+  ],
+  [
+   "Deep ragged ulcer with a gray purulent base",
+   "chancroid",
+   "Haemophilus ducreyi enters through microabrasions and causes a necrotic, undermined, painful ulcer with a purulent base, unlike the clean-based chancre of syphilis."
+  ],
+  [
+   "Gram-negative rods lined up like a school of fish",
+   "chancroid",
+   "H. ducreyi is a small gram-negative rod that lies in chains or parallel groups in ulcer exudate, giving the classic school-of-fish appearance on Gram stain."
+  ],
+  [
+   "Painful ulcer plus a tender unilateral node that may suppurate",
+   "chancroid",
+   "The painful ulcer is the clue that separates this from LGV: the node enlarges on one side, becomes tender, and can rupture through the skin."
+  ],
+  [
+   "Treated with a single dose of azithromycin or ceftriaxone",
+   "chancroid",
+   "One oral dose of azithromycin or one intramuscular dose of ceftriaxone treats it, in contrast with LGV and donovanosis, which need weeks of therapy."
+  ],
+  [
+   "Single painless indurated ulcer with a clean base",
+   "syph",
+   "Treponema pallidum provokes a lymphocytic and plasma cell reaction around small vessels, which produces a firm, clean-based ulcer, and the absence of pain is why it is often missed."
+  ],
+  [
+   "Spirochetes seen on darkfield microscopy",
+   "syph",
+   "T. pallidum is too thin for a Gram stain, so fluid from the chancre is examined by darkfield microscopy, which can be positive before serology turns positive."
+  ],
+  [
+   "Rubbery, painless nodes on both sides",
+   "syph",
+   "Regional nodes enlarge without acute inflammation, so they are firm, mobile and painless, unlike the painful buboes of chancroid and LGV."
+  ],
+  [
+   "Treated with benzathine penicillin G",
+   "syph",
+   "One intramuscular dose of long-acting penicillin treats primary syphilis because the spirochete stays penicillin-sensitive, and the first dose can cause a Jarisch-Herxheimer reaction."
+  ],
+  [
+   "Small ulcer that heals before the nodes swell",
+   "lgv",
+   "Chlamydia trachomatis serovars L1 to L3 produce a tiny painless papule or ulcer that heals within days, so patients usually come in weeks later because of the nodes."
+  ],
+  [
+   "Matted painful buboes with a groove sign",
+   "lgv",
+   "The L serovars spread through lymphatics to the inguinal and femoral nodes, which swell above and below the inguinal ligament, leave a groove between them, and may drain through sinus tracts."
+  ],
+  [
+   "Treated with doxycycline for 21 days",
+   "lgv",
+   "These invasive serovars need a longer course than the 7 days that clears cervical chlamydia, so doxycycline is given for 21 days."
+  ],
+  [
+   "Proctocolitis after rectal exposure",
+   "lgv",
+   "Rectal infection with L serovars causes bloody discharge, tenesmus and pain that can mimic inflammatory bowel disease, especially in men who have sex with men."
+  ],
+  [
+   "Beefy-red ulcer that bleeds on contact",
+   "donov",
+   "Klebsiella granulomatis causes highly vascular, friable granulation tissue that bleeds easily and is painless, which sets it apart from the clean-based syphilis chancre."
+  ],
+  [
+   "Donovan bodies in macrophages",
+   "donov",
+   "A Giemsa-stained smear or biopsy shows rod-shaped organisms with a safety-pin look inside macrophages, called Donovan bodies, which are the diagnostic clue."
+  ],
+  [
+   "Subcutaneous swellings without true node enlargement",
+   "donov",
+   "Granulomatous inflammation forms subcutaneous masses in the groin, called pseudobuboes, rather than true lymphadenopathy, so enlarged nodes are not the main finding."
+  ],
+  [
+   "Treated with azithromycin for at least 3 weeks",
+   "donov",
+   "Therapy continues until the lesions have fully healed, with azithromycin for at least 3 weeks, the longest course in this group."
+  ]
+ ]
+}

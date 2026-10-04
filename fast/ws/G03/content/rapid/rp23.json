@@ -1,0 +1,483 @@
+[
+ {
+  "id": "rp23r01",
+  "tags": [
+   "risk-factors",
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp23-01"
+  ],
+  "obj": [
+   "TBL-BREAST.3"
+  ],
+  "q": "A new breast mass in a postmenopausal woman is treated as which diagnosis until proven otherwise?",
+  "o": [
+   "Fibroadenoma",
+   "Fibrocystic change",
+   "Carcinoma",
+   "Phyllodes tumor",
+   "Fat necrosis"
+  ],
+  "a": 2,
+  "x": "After menopause the lobules involute, so benign lesions that depend on cyclic hormones, such as fibroadenoma and fibrocystic change, become uncommon, while cancer risk keeps rising with age. A new mass at this age is therefore carcinoma until imaging and biopsy show otherwise.",
+  "w": {
+   "Fibroadenoma": "A fibroadenoma is a hormone-responsive tumor of young women that usually shrinks and calcifies after menopause, so it is an unlikely explanation for a new mass at this age and cannot be assumed.",
+   "Fibrocystic change": "Fibrocystic change is an exaggerated response to cyclic ovarian hormones that makes both breasts lumpy and tender before menses, so it fades once the ovaries stop cycling and does not explain a new discrete mass.",
+   "Phyllodes tumor": "Phyllodes tumors peak around age 50 and grow quickly, but they are uncommon, whereas carcinoma is far more frequent in older women, so the safe working assumption for any new mass is cancer.",
+   "Fat necrosis": "Fat necrosis follows trauma or surgery and can mimic carcinoma on imaging, but it is a diagnosis reached after history and biopsy, not a presumption for an unexplained new mass."
+  },
+  "media": "fig:rp23_age",
+  "pt": {
+   "hl": [
+    "Carcinoma",
+    "Postmenopausal, hard mass"
+   ],
+   "say": "In the Women panel, the Carcinoma bar begins around menopause and is labeled postmenopausal, hard mass, so a new mass after menopause is carcinoma until proven otherwise."
+  }
+ },
+ {
+  "id": "rp23r02",
+  "tags": [
+   "histology-to-diagnosis",
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp23-06",
+   "BP-rp23-01"
+  ],
+  "obj": [
+   "TBL-BREAST.5"
+  ],
+  "q": "Which condition gives thick green-brown nipple discharge in an older multiparous woman?",
+  "o": [
+   "Duct ectasia",
+   "Intraductal papilloma",
+   "Periductal mastitis",
+   "Galactorrhea",
+   "Paget disease of the nipple"
+  ],
+  "a": 0,
+  "x": "In duct ectasia the subareolar ducts of older multiparous women dilate and fill with thick secretions, and plasma cells ring the walls. The stagnant, sticky material produces green-brown discharge and sometimes a periareolar mass, rather than blood from a single duct.",
+  "w": {
+   "Intraductal papilloma": "A papilloma grows in a large duct beneath the areola and its fragile fibrovascular cores bleed, so the discharge is bloody and comes from a single duct, not thick and green-brown.",
+   "Periductal mastitis": "This condition affects smokers, whose ducts plug with keratin after squamous metaplasia; it presents as a recurrent subareolar abscess, fistula and nipple inversion rather than a sticky green-brown discharge.",
+   "Galactorrhea": "Galactorrhea is milky discharge from many ducts of both breasts, driven by high prolactin from a prolactinoma, dopamine-blocking drugs or hypothyroidism, so it differs in color and in pattern.",
+   "Paget disease of the nipple": "Paget disease appears as an eczema-like, crusted, scaly nipple caused by malignant cells in the epidermis that usually spread from an underlying ductal carcinoma, not as thick discharge from dilated ducts."
+  },
+  "media": "fig:rp23_age",
+  "pt": {
+   "hl": [
+    "Duct ectasia",
+    "Green-brown discharge"
+   ],
+   "say": "In the Women panel, duct ectasia is paired with green-brown discharge and sits late on the age axis, after the papilloma bar that is labeled bloody discharge."
+  }
+ },
+ {
+  "id": "rp23r03",
+  "tags": [
+   "normal-vs-pathologic",
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp23-12",
+   "BP-rp23-01"
+  ],
+  "obj": [
+   "TBL-BREAST.3"
+  ],
+  "q": "Which finding best separates male breast cancer from gynecomastia on examination?",
+  "o": [
+   "Tenderness beneath the nipple",
+   "A rubbery disc centered under the areola",
+   "Enlargement of both breasts",
+   "Onset during puberty",
+   "A hard mass off center from the nipple"
+  ],
+  "a": 4,
+  "x": "Gynecomastia is ductal and stromal growth directly beneath the nipple, so it forms a rubbery disc centered on the areola, often on both sides. Carcinoma arises at one point in the gland, so it forms a hard, fixed mass off center, and it may retract the nipple or bleed.",
+  "w": {
+   "Tenderness beneath the nipple": "Tenderness is common in new gynecomastia because the tissue is growing quickly, whereas most male breast cancers are painless, so tenderness points toward the benign process.",
+   "A rubbery disc centered under the areola": "This is the typical gynecomastia disc, a firm, smooth, concentric plate of ductal and stromal tissue beneath the nipple, and it signals the benign process rather than cancer.",
+   "Enlargement of both breasts": "Bilateral, often asymmetric enlargement fits hormonal causes such as puberty, cirrhosis or drugs; carcinoma is usually one-sided, so involvement of both sides favors gynecomastia.",
+   "Onset during puberty": "Pubertal onset is the physiologic pattern, in which estradiol rises before testosterone does, and it usually resolves within months to a couple of years; cancer in boys is extremely rare."
+  },
+  "media": "fig:rp23_age",
+  "pt": {
+   "hl": [
+    "Male breast cancer",
+    "Hard, eccentric mass"
+   ],
+   "say": "In the Men panel, male breast cancer is labeled a hard, eccentric mass, while gynecomastia is centered under the areola, so an off-center hard lump is the separating sign."
+  }
+ },
+ {
+  "id": "rp23r04",
+  "tags": [
+   "normal-vs-pathologic",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp23-12"
+  ],
+  "obj": [
+   "TBL-BREAST.3"
+  ],
+  "q": "At which ages is gynecomastia physiologic?",
+  "o": [
+   "Newborn, early childhood and puberty",
+   "Newborn, puberty and older age",
+   "Puberty, young adulthood and older age",
+   "Newborn, young adulthood and older age",
+   "Early childhood, puberty and older age"
+  ],
+  "a": 1,
+  "x": "Gynecomastia is physiologic whenever estrogen action briefly outweighs androgen action: in newborns exposed to maternal estrogen, at puberty when estradiol rises before testosterone reaches adult levels, and in older men as testosterone falls and fat converts more androgen to estrogen. At other ages, look for a drug or a disease.",
+  "w": {
+   "Newborn, early childhood and puberty": "Early childhood is not a physiologic window: before puberty the testes are quiet, so a boy with breast enlargement needs a search for an estrogen source, and this list also leaves out the older-age peak.",
+   "Puberty, young adulthood and older age": "Young adulthood is not a physiologic window: testosterone is high and keeps the estrogen-to-androgen ratio low, so new gynecomastia in a young man suggests a drug, liver disease or a tumor; the list also omits newborns.",
+   "Newborn, young adulthood and older age": "This list swaps puberty for young adulthood. The pubertal peak is the most common reason for a visit, because estradiol rises before testosterone does, whereas young adulthood has no such physiologic imbalance.",
+   "Early childhood, puberty and older age": "Early childhood is not physiologic, since the prepubertal testis is quiet and enlarging breast tissue then points to an exogenous estrogen or a tumor; the list also leaves out the newborn peak caused by maternal estrogen."
+  },
+  "media": "fig:rp23_age",
+  "pt": {
+   "hl": [
+    "Newborn",
+    "Puberty",
+    "Gynecomastia"
+   ],
+   "say": "In the Men panel, the three gynecomastia bars sit at newborn, puberty and the older ages on the axis, which marks the three physiologic windows."
+  }
+ },
+ {
+  "id": "rp23r05",
+  "tags": [
+   "risk-factors",
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp23-02"
+  ],
+  "obj": [
+   "TBL-BREAST.6",
+   "TBL-BREAST.7"
+  ],
+  "q": "Which biopsy finding adds no risk of later breast cancer?",
+  "o": [
+   "Sclerosing adenosis",
+   "Usual ductal hyperplasia",
+   "Intraductal papilloma",
+   "Apocrine metaplasia",
+   "Atypical lobular hyperplasia"
+  ],
+  "a": 3,
+  "x": "Apocrine metaplasia turns cyst-lining cells into large pink cells with apical snouts and is one of the nonproliferative changes of fibrocystic disease, so it adds no cancer risk. Lesions that add epithelial layers, such as sclerosing adenosis, usual hyperplasia and papilloma, raise risk slightly, and atypia raises it more.",
+  "w": {
+   "Sclerosing adenosis": "Sclerosing adenosis crowds distorted acini together with preserved myoepithelial cells, which counts as proliferative disease without atypia and raises later risk by about 1.5 to 2 times.",
+   "Usual ductal hyperplasia": "Usual ductal hyperplasia stacks extra layers of mixed cells in the duct, so it is proliferative without atypia and carries a small added risk of about 1.5 to 2 times, not none.",
+   "Intraductal papilloma": "A papilloma is a proliferation of papillary fronds with fibrovascular cores inside a large duct; it is proliferative without atypia, so it modestly raises the risk compared with nonproliferative cysts.",
+   "Atypical lobular hyperplasia": "Atypical lobular hyperplasia fills part of the acini with monotonous cells that resemble lobular carcinoma in situ, so it is an atypical proliferation that raises risk about 4 to 5 times."
+  },
+  "media": "fig:rp23_risk",
+  "pt": {
+   "hl": [
+    "Nonproliferative",
+    "apocrine metaplasia",
+    "No added risk"
+   ],
+   "say": "In the Nonproliferative bar, the list of cysts, fibrosis and apocrine metaplasia is labeled relative risk about 1 and no added risk, so apocrine metaplasia adds none."
+  }
+ },
+ {
+  "id": "rp23r06",
+  "tags": [
+   "risk-factors",
+   "inheritance-pattern"
+  ],
+  "bp": [
+   "BP-rp23-02"
+  ],
+  "obj": [
+   "TBL-BREAST.7"
+  ],
+  "q": "A woman has one first-degree relative with breast cancer. How does that change her own risk?",
+  "o": [
+   "About doubles it",
+   "Does not change it",
+   "Raises it 4 to 5 times",
+   "Raises it 8 to 10 times",
+   "Raises it only if BRCA is found"
+  ],
+  "a": 0,
+  "x": "A first-degree relative shares half of one's genes, so one affected mother, sister or daughter roughly doubles breast cancer risk, and the risk climbs further when the relative was young at diagnosis, when several relatives are affected, or when the family carries a BRCA mutation. This multiplier is separate from the biopsy category.",
+  "w": {
+   "Does not change it": "Family history is an established independent risk factor, reflecting shared inherited variants and, in some families, a BRCA mutation, so it matters even when every biopsy has been normal.",
+   "Raises it 4 to 5 times": "A four- to fivefold increase is the figure for atypical hyperplasia on biopsy, a specific lesion, not for a single affected relative, whose effect is considerably smaller.",
+   "Raises it 8 to 10 times": "An eightfold to tenfold risk is the figure for carcinoma in situ, which already contains malignant cells inside the ducts; one relative with the disease confers a much smaller increase.",
+   "Raises it only if BRCA is found": "Even without a BRCA mutation, shared genes and environment still operate, so one affected first-degree relative raises risk about twofold whatever the test result; a BRCA mutation adds further risk on top."
+  },
+  "media": "fig:rp23_risk",
+  "pt": {
+   "hl": [
+    "first-degree relative"
+   ],
+   "say": "The family history line under the title reads that a first-degree relative about doubles risk, a multiplier that is separate from the biopsy bars."
+  }
+ },
+ {
+  "id": "rp23r07",
+  "tags": [
+   "histology-to-diagnosis",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp23-02",
+   "BP-rp23-04"
+  ],
+  "obj": [
+   "TBL-BREAST.6",
+   "BREAST-HISTO.1"
+  ],
+  "q": "Intraductal papilloma, usual ductal hyperplasia and sclerosing adenosis fall into which risk category?",
+  "o": [
+   "Nonproliferative disease",
+   "Carcinoma in situ",
+   "Proliferative disease without atypia",
+   "Proliferative disease with atypia",
+   "Invasive carcinoma"
+  ],
+  "a": 2,
+  "x": "These three lesions add extra epithelial layers or glandular crowding from a mixed, nonclonal cell population, so they are proliferative without atypia and raise later cancer risk only about 1.5 to 2 times. Nonproliferative change adds none, and atypia, a monotonous resemblance to carcinoma in situ, raises it 4 to 5 times.",
+  "w": {
+   "Nonproliferative disease": "Nonproliferative change, such as simple cysts, fibrosis and apocrine metaplasia, shows no extra epithelial layers and adds no risk, whereas these three lesions do show proliferation and add a small risk.",
+   "Carcinoma in situ": "Carcinoma in situ means malignant cells filling ducts or lobules with the basement membrane intact; none of these three lesions has malignant cytology, and DCIS or LCIS raises later invasive cancer risk 8 to 10 times.",
+   "Proliferative disease with atypia": "Atypical hyperplasia needs a monotonous, evenly spaced clonal population partly filling a duct or lobule; these three lesions are made of mixed cells, so their risk is smaller than the 4- to 5-fold risk of atypia.",
+   "Invasive carcinoma": "Invasive carcinoma has crossed the basement membrane and lost its myoepithelial layer; these three lesions are benign, keep both, and do not spread."
+  },
+  "media": "fig:rp23_risk",
+  "pt": {
+   "hl": [
+    "without atypia",
+    "sclerosing adenosis",
+    "intraductal papilloma"
+   ],
+   "say": "The second bar, Proliferative without atypia, lists usual ductal hyperplasia, sclerosing adenosis and intraductal papilloma together at a relative risk of 1.5 to 2."
+  }
+ },
+ {
+  "id": "rp23r08",
+  "tags": [
+   "treatment-sequence",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp23-02"
+  ],
+  "obj": [
+   "TBL-BREAST.6"
+  ],
+  "q": "A core biopsy of a breast lesion shows atypical ductal hyperplasia. What is the usual next step?",
+  "o": [
+   "Reassure and continue yearly mammograms",
+   "Repeat the core biopsy in 6 months",
+   "Start tamoxifen without surgery",
+   "Perform a mastectomy",
+   "Excise the lesion"
+  ],
+  "a": 4,
+  "x": "A needle core samples only part of a lesion, and atypical hyperplasia may sit beside ductal carcinoma in situ or invasive cancer that was missed, so it is excised to exclude one. The finding also marks her as high risk, which calls for risk counseling and closer follow-up.",
+  "w": {
+   "Reassure and continue yearly mammograms": "Routine surveillance ignores the real chance that the core missed carcinoma in situ or invasive cancer nearby, and it treats a lesion that raises risk four- to fivefold as if it were harmless.",
+   "Repeat the core biopsy in 6 months": "Repeating a needle sample later does not answer whether more serious disease already coexists; excision gives pathologists the whole lesion to examine.",
+   "Start tamoxifen without surgery": "Risk-reducing drugs such as tamoxifen or raloxifene may be offered after excision, but they do not exclude coexisting carcinoma, so drug therapy cannot replace removing the lesion for complete sampling.",
+   "Perform a mastectomy": "A mastectomy is excessive for a premalignant lesion; atypical hyperplasia is managed with local excision and risk-reducing measures, and breast removal is reserved for extensive or invasive disease or selected very high-risk patients."
+  },
+  "media": "fig:rp23_risk",
+  "pt": {
+   "hl": [
+    "Atypical hyperplasia",
+    "excised when found"
+   ],
+   "say": "Under the Atypical hyperplasia bar, the last note says the lesion is excised when found, because a needle core of atypia can hide carcinoma that the sample missed."
+  }
+ },
+ {
+  "id": "rp23r09",
+  "tags": [
+   "histology-to-diagnosis",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp23-02"
+  ],
+  "obj": [
+   "BREAST-HISTO.1"
+  ],
+  "q": "Which cell layer stays intact around atypical hyperplasia and in situ carcinoma but is lost in invasive carcinoma?",
+  "o": [
+   "Luminal epithelial cells",
+   "Myoepithelial cells",
+   "Stromal fibroblasts",
+   "Adipocytes",
+   "Plasma cells"
+  ],
+  "a": 1,
+  "x": "Myoepithelial cells wrap the duct and lobule outside the luminal cells, resting on the basement membrane. In hyperplasia and in situ carcinoma they stay intact, so the lesion has not invaded. Invasive carcinoma breaks through, and the missing layer shows as absent p63 or smooth muscle actin staining.",
+  "w": {
+   "Luminal epithelial cells": "Luminal cells line the lumen and are the cells that proliferate; they form the tumor in both in situ and invasive carcinoma, so they are present in every one of these lesions.",
+   "Stromal fibroblasts": "Fibroblasts increase rather than disappear when carcinoma invades, because tumor cells induce a dense, collagenous desmoplastic stroma that makes the mass hard and fixed.",
+   "Adipocytes": "Fat cells fill the breast stroma in every state and are displaced only locally by the invading tumor, so their presence or absence does not separate in situ from invasive disease.",
+   "Plasma cells": "Plasma cells are inflammatory cells that gather around dilated ducts in duct ectasia and in many other inflammatory settings, so they are not a structural layer whose loss defines invasion."
+  },
+  "media": "fig:rp23_risk",
+  "pt": {
+   "hl": [
+    "myoepithelial layer and basement membrane",
+    "invasion begins only when tumor cells cross them"
+   ],
+   "say": "The two-line note under the title says all of these lesions keep the myoepithelial layer and basement membrane, and that invasion begins only when tumor cells cross them."
+  }
+ },
+ {
+  "id": "rp23r10",
+  "tags": [
+   "feedback-logic",
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp23-07"
+  ],
+  "obj": [
+   "TBL-BREAST.3"
+  ],
+  "q": "Which endocrine disorder can cause milky discharge from both breasts by raising TRH?",
+  "o": [
+   "Graves disease",
+   "Cushing syndrome",
+   "Primary hyperaldosteronism",
+   "Primary hypothyroidism",
+   "Primary hyperparathyroidism"
+  ],
+  "a": 3,
+  "x": "In primary hypothyroidism, low thyroid hormone removes feedback on the hypothalamus, so TRH rises. TRH also stimulates lactotrophs, so prolactin climbs and can cause milky discharge from many ducts of both breasts, often with amenorrhea. Thyroid hormone replacement lowers prolactin and stops the discharge.",
+  "w": {
+   "Graves disease": "Graves disease raises thyroid hormone, which suppresses TRH, so it does not lift prolactin by that route; its usual breast effect in men is gynecomastia from more SHBG and aromatization, not galactorrhea.",
+   "Cushing syndrome": "Excess cortisol suppresses the gonadal axis and causes central weight gain, striae and hypertension; it does not raise TRH or prolactin, so it is not a cause of galactorrhea.",
+   "Primary hyperaldosteronism": "Excess aldosterone from an adrenal adenoma causes hypertension and hypokalemia with metabolic alkalosis; it does not change TRH or lactotroph activity, so it is not a cause of galactorrhea.",
+   "Primary hyperparathyroidism": "High PTH causes hypercalcemia, kidney stones and bone resorption; it does not alter TRH or lactotroph activity, so it does not produce milky discharge."
+  },
+  "media": "fig:en3_prl",
+  "pt": {
+   "hl": [
+    "Hypothyroidism (TRH up)",
+    "Galactorrhea from the breast"
+   ],
+   "say": "In the What lifts the brake list at the left, hypothyroidism is marked TRH up, and the Prolactin excess box shows galactorrhea from the breast as the result."
+  }
+ },
+ {
+  "id": "rp23r11",
+  "tags": [
+   "adverse-effects",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp23-10",
+   "BP-rp23-12"
+  ],
+  "obj": [
+   "TBL-BREAST.3"
+  ],
+  "q": "Which acid-suppressing drug can cause gynecomastia by blocking androgen receptors?",
+  "o": [
+   "Cimetidine",
+   "Famotidine",
+   "Omeprazole",
+   "Sucralfate",
+   "Misoprostol"
+  ],
+  "a": 0,
+  "x": "Cimetidine, an H2 blocker, acts as a weak androgen receptor antagonist and also inhibits cytochrome P450 enzymes, so androgen action falls while estrogen action is relatively preserved. The shifted estrogen-to-androgen ratio causes gynecomastia and sometimes impotence; famotidine lacks this effect.",
+  "w": {
+   "Famotidine": "Famotidine is also an H2 blocker, but it lacks cimetidine's antiandrogen activity and strong cytochrome P450 inhibition, so it does not shift the estrogen-to-androgen ratio.",
+   "Omeprazole": "Omeprazole is a proton pump inhibitor that irreversibly blocks the parietal cell H+/K+ ATPase; it has no meaningful androgen receptor activity, and its long-term risks are hypomagnesemia and fractures.",
+   "Sucralfate": "Sucralfate forms a protective paste over ulcer craters and is barely absorbed, so it has no systemic hormonal effect and cannot change the estrogen-to-androgen ratio.",
+   "Misoprostol": "Misoprostol, a prostaglandin E1 analog, protects the gastric mucosa and contracts the uterus, so it is contraindicated in pregnancy; it has no antiandrogen action."
+  },
+  "media": "fig:rp22_androgen",
+  "pt": {
+   "hl": [
+    "Drugs that cause gynecomastia",
+    "cimetidine"
+   ],
+   "say": "The bold note at the bottom of the figure lists the drugs that cause gynecomastia, and cimetidine is named there beside spironolactone and ketoconazole."
+  }
+ },
+ {
+  "id": "rp23r12",
+  "tags": [
+   "pathogen-clues",
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp23-06"
+  ],
+  "obj": [
+   "TBL-BREAST.5"
+  ],
+  "q": "How is acute mastitis in a nursing mother managed?",
+  "o": [
+   "Stop breastfeeding to rest the breast",
+   "Treat with fluconazole for the mother and infant",
+   "Continue nursing and give dicloxacillin or cephalexin",
+   "Perform an excisional breast biopsy",
+   "Delay antibiotics until the infant is weaned"
+  ],
+  "a": 2,
+  "x": "Acute mastitis follows milk stasis and bacteria, usually Staphylococcus aureus, entering through cracked nipple skin. The milk does not harm the infant, and emptying the breast keeps stasis from worsening, so nursing or pumping continues while an antistaphylococcal antibiotic such as dicloxacillin or cephalexin treats the infection; an abscess is drained.",
+  "w": {
+   "Stop breastfeeding to rest the breast": "Stopping leaves milk in the inflamed breast, which worsens stasis and engorgement and can turn cellulitis into an abscess; the infant is not harmed by the milk, so emptying the breast is part of treatment.",
+   "Treat with fluconazole for the mother and infant": "Fluconazole treats Candida, which causes burning nipple pain and shiny skin with infant thrush; it has no activity against the staphylococci that cause a febrile, red, wedge-shaped infection.",
+   "Perform an excisional breast biopsy": "Biopsy is reserved for a mass that persists after treatment or for suspected inflammatory carcinoma, which does not respond to antibiotics; a typical febrile lactational infection is treated first without surgery.",
+   "Delay antibiotics until the infant is weaned": "Delay risks abscess formation, and weaning is not needed because the milk is safe; most cases improve within days of antibiotics with continued emptying of the breast."
+  }
+ },
+ {
+  "id": "rp23r13",
+  "tags": [
+   "histology-to-diagnosis",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp23-03"
+  ],
+  "obj": [
+   "TBL-BREAST.9"
+  ],
+  "q": "Which feature favors a phyllodes tumor over a fibroadenoma?",
+  "o": [
+   "A smooth, mobile, well-circumscribed mass",
+   "Epithelium and stroma in the same tumor",
+   "Onset before age 35",
+   "Rapid growth to a large size",
+   "Growth during pregnancy"
+  ],
+  "a": 3,
+  "x": "Both tumors grow from specialized intralobular stroma and feel smooth and mobile, so the difference lies in the stroma and its behavior. A phyllodes tumor has hypercellular, mitotically active stroma that overgrows the ducts, so it grows quickly to a large size, usually around age 50, whereas a fibroadenoma stays small and grows slowly in young women.",
+  "w": {
+   "A smooth, mobile, well-circumscribed mass": "Both tumors share this feel and smooth margins on imaging, which is why a small core biopsy can mislabel a phyllodes tumor as a fibroadenoma; it cannot be used to tell them apart.",
+   "Epithelium and stroma in the same tumor": "Both are biphasic, with duct-lining epithelium and specialized stroma, so this histologic feature is shared; the difference is that phyllodes stroma is overgrown and cellular.",
+   "Onset before age 35": "A fibroadenoma is typically a tumor of women under 35, so early onset favors it, whereas phyllodes tumors usually appear a decade or two later.",
+   "Growth during pregnancy": "Fibroadenomas are estrogen-sensitive and may enlarge in pregnancy, then shrink or calcify after menopause, so growth under hormonal stimulation points toward a fibroadenoma rather than phyllodes."
+  },
+  "media": "fig:rp23_age",
+  "pt": {
+   "hl": [
+    "Large, fast-growing",
+    "Mobile, rubbery"
+   ],
+   "say": "In the Women panel, the phyllodes tumor bar is labeled large, fast-growing, whereas the fibroadenoma bar above it is labeled mobile, rubbery, so rapid growth to a large size favors phyllodes."
+  }
+ }
+]

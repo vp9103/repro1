@@ -3808,9 +3808,9 @@ const srchClip = (s, n) => { s = srchPlain(s); return s.length > n ? s.slice(0, 
 const escText = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 /* P2.V sweep (K19): a hit found in a why, a table row, a bottom line or a where-to-look line
    used to show only the item's title and stem, so the words that matched were nowhere on the
-   list. e.P holds the item's pieces as [label, text]; srchSnip() adds a third line with the
-   piece that matched (the phrase first, else the most query words), clipped around the match
-   and marked, whenever the title and the second line do not already show it. */
+   list. e.P holds the item's pieces as [label, text, at?]; srchSnip() adds a third line with the
+   piece that matched best (see srchFind), clipped around the match and marked, whenever the
+   title and the second line, as printed, do not already show it. */
 const whyNot = o => "Why not \u201c" + srchClip(o, 48) + "\u201d";
 function figTitle(k){
   const f = FIGS[k] || {}, m = /<text\b[^>]*\bclass="[^"]*\bttl\b[^"]*"[^>]*>([\s\S]*?)<\/text>/.exec(f.svg || "");
@@ -3896,7 +3896,11 @@ function srchSnip(e, Q, pk){
   let b = Math.max(a + SRCH_CLIP, me);
   if(b < len){ const sp = s.lastIndexOf(" ", b); b = sp > me && sp > a + 60 ? sp : b; }
   const clip = s.slice(a, b).trimEnd();
-  return '<div class="st3"><span class="sk">' + escText(srchPlain(pk.p[0])) + '</span> ' + hi((a > 0 ? "…" : "") + clip + (b < len ? "…" : ""), Q) + '</div>';
+  /* a question, rapid item or image opens unanswered: what it says in its bottom line, whys, table and
+     where-to-look line is drawn only after the answer, so the line says so instead of leaving the
+     student to look for it (opening it would have to record an answer to show it) */
+  const late = /^(Question|Rapid review|Image)$/.test(e.kind) && pk.p[0] !== "Question" ? '<span class="sl">(after you answer)</span> ' : "";
+  return '<div class="st3"><span class="sk">' + escText(srchPlain(pk.p[0])) + '</span> ' + late + hi((a > 0 ? "…" : "") + clip + (b < len ? "…" : ""), Q) + '</div>';
 }
 function buildIndex(){
   if(SEARCH_INDEX) return SEARCH_INDEX;
@@ -3926,7 +3930,8 @@ function buildIndex(){
       else if(x[0]==="p") P.push(["Lesson", x[1], ""+bi]);
       else if(x[0]==="call") P.push([x[2], x[3], ""+bi]);
       else if(x[0]==="why") P.push(["Why", x[1]+" "+x[2], ""+bi]);
-      else if(x[0]==="t") x[2].forEach((r, ri) => P.push(["Table", r.join(" · "), bi+"."+ri]));
+      else if(x[0]==="t"){ x[2].forEach((r, ri) => P.push(["Table", r.join(" · "), bi+"."+ri]));
+        P.push(["Table columns", x[1].join(" · "), ""+bi]); }
       else if(x[0]==="steps") P.push(["Steps", stepsText(x), ""+bi]);
     });
     add({kind:"Topic", title:t.t, sub:srchPlain(t.blk.n)+" — "+srchPlain(t.sub), body:text, act:["t",t.id], P}, F);
@@ -4126,13 +4131,16 @@ function srchRange(root, Q){
   const a = pos(m.a, false), b = pos(m.b, true); if(!a || !b) return null;
   const r = document.createRange(); r.setStart(a[0], a[1]); r.setEnd(b[0], b[1]); return r;
 }
-function srchFlash(hot, rng){
+function srchFlashOff(){
   clearTimeout(SRCH_FLASH_T);
   document.querySelectorAll(".srhit").forEach(x => x.classList.remove("srhit"));
+  try{ if(window.CSS && CSS.highlights) CSS.highlights.delete("srhit"); }catch(e){}
+}
+function srchFlash(hot, rng){
+  srchFlashOff();
   hot.classList.add("srhit");
   try{ if(rng && window.CSS && CSS.highlights && typeof Highlight === "function") CSS.highlights.set("srhit", new Highlight(rng)); }catch(e){}
-  SRCH_FLASH_T = setTimeout(() => { hot.classList.remove("srhit");
-    try{ if(window.CSS && CSS.highlights) CSS.highlights.delete("srhit"); }catch(e){} }, 3200);
+  SRCH_FLASH_T = setTimeout(srchFlashOff, 3200);
 }
 /* hot: the element to mark and, unless o.text, the text to search; o.focus: what takes focus;
    o.place: what to bring under the header when it fits (default hot); o.pad: gap below the header */
@@ -4144,7 +4152,8 @@ function srchShow(hot, o){
     else if(r1.left < wr.left + 8) wrap.scrollLeft -= wr.left - r1.left + 16; }
   const hd = document.querySelector("header"), H = hd ? hd.offsetHeight : 0, avail = window.innerHeight - H;
   const place = o.place || hot, pr = place.getBoundingClientRect(), fits = pr.height <= avail * 0.85;
-  let y = (fits ? pr.top : hot.getBoundingClientRect().top) - H - (fits ? 12 : (o.pad === undefined ? 12 : o.pad));
+  const lead = hot === place || o.pad === undefined ? 12 : o.pad;   /* a row in a table too tall for the screen: some rows above it */
+  let y = (fits ? pr.top : hot.getBoundingClientRect().top) - H - (fits ? 12 : lead);
   if(box && box.bottom - y > window.innerHeight - 28) y = box.top - H - Math.round(avail * 0.3);
   window.scrollTo({top:Math.max(0, Math.round(window.scrollY + y)), behavior:"instant"});
   const f = o.focus || hot;

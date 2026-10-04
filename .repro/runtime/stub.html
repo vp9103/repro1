@@ -866,6 +866,7 @@ tr.srhit td{background:var(--warn-soft)}
 .sitem .st2{font-size:12.8px;color:var(--ink-3);margin-top:2px}
 .sitem .st3{font-size:12.6px;line-height:1.45;color:var(--ink-2);margin-top:4px}
 .sitem .st3 .sk{font:600 10.5px/1.2 var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);margin-right:3px}
+.sitem .st3 .sl{font:500 10.5px/1.2 var(--mono);color:var(--ink-3);margin-right:3px}
 .sitem mark{background:var(--a1-soft);color:var(--a1);padding:0;box-shadow:0 0 0 1px var(--a1-soft);border-radius:2px;font-weight:600}
 .sempty{padding:34px 22px;text-align:center;color:var(--ink-3);font-family:var(--serif);
   font-size:16.5px;font-style:italic}
@@ -5232,9 +5233,9 @@ const srchClip = (s, n) => { s = srchPlain(s); return s.length > n ? s.slice(0, 
 const escText = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 /* P2.V sweep (K19): a hit found in a why, a table row, a bottom line or a where-to-look line
    used to show only the item's title and stem, so the words that matched were nowhere on the
-   list. e.P holds the item's pieces as [label, text]; srchSnip() adds a third line with the
-   piece that matched (the phrase first, else the most query words), clipped around the match
-   and marked, whenever the title and the second line do not already show it. */
+   list. e.P holds the item's pieces as [label, text, at?]; srchSnip() adds a third line with the
+   piece that matched best (see srchFind), clipped around the match and marked, whenever the
+   title and the second line, as printed, do not already show it. */
 const whyNot = o => "Why not \u201c" + srchClip(o, 48) + "\u201d";
 function figTitle(k){
   const f = FIGS[k] || {}, m = /<text\b[^>]*\bclass="[^"]*\bttl\b[^"]*"[^>]*>([\s\S]*?)<\/text>/.exec(f.svg || "");
@@ -5320,7 +5321,11 @@ function srchSnip(e, Q, pk){
   let b = Math.max(a + SRCH_CLIP, me);
   if(b < len){ const sp = s.lastIndexOf(" ", b); b = sp > me && sp > a + 60 ? sp : b; }
   const clip = s.slice(a, b).trimEnd();
-  return '<div class="st3"><span class="sk">' + escText(srchPlain(pk.p[0])) + '</span> ' + hi((a > 0 ? "…" : "") + clip + (b < len ? "…" : ""), Q) + '</div>';
+  /* a question, rapid item or image opens unanswered: what it says in its bottom line, whys, table and
+     where-to-look line is drawn only after the answer, so the line says so instead of leaving the
+     student to look for it (opening it would have to record an answer to show it) */
+  const late = /^(Question|Rapid review|Image)$/.test(e.kind) && pk.p[0] !== "Question" ? '<span class="sl">(after you answer)</span> ' : "";
+  return '<div class="st3"><span class="sk">' + escText(srchPlain(pk.p[0])) + '</span> ' + late + hi((a > 0 ? "…" : "") + clip + (b < len ? "…" : ""), Q) + '</div>';
 }
 function buildIndex(){
   if(SEARCH_INDEX) return SEARCH_INDEX;
@@ -5350,7 +5355,8 @@ function buildIndex(){
       else if(x[0]==="p") P.push(["Lesson", x[1], ""+bi]);
       else if(x[0]==="call") P.push([x[2], x[3], ""+bi]);
       else if(x[0]==="why") P.push(["Why", x[1]+" "+x[2], ""+bi]);
-      else if(x[0]==="t") x[2].forEach((r, ri) => P.push(["Table", r.join(" · "), bi+"."+ri]));
+      else if(x[0]==="t"){ x[2].forEach((r, ri) => P.push(["Table", r.join(" · "), bi+"."+ri]));
+        P.push(["Table columns", x[1].join(" · "), ""+bi]); }
       else if(x[0]==="steps") P.push(["Steps", stepsText(x), ""+bi]);
     });
     add({kind:"Topic", title:t.t, sub:srchPlain(t.blk.n)+" — "+srchPlain(t.sub), body:text, act:["t",t.id], P}, F);
@@ -5550,13 +5556,16 @@ function srchRange(root, Q){
   const a = pos(m.a, false), b = pos(m.b, true); if(!a || !b) return null;
   const r = document.createRange(); r.setStart(a[0], a[1]); r.setEnd(b[0], b[1]); return r;
 }
-function srchFlash(hot, rng){
+function srchFlashOff(){
   clearTimeout(SRCH_FLASH_T);
   document.querySelectorAll(".srhit").forEach(x => x.classList.remove("srhit"));
+  try{ if(window.CSS && CSS.highlights) CSS.highlights.delete("srhit"); }catch(e){}
+}
+function srchFlash(hot, rng){
+  srchFlashOff();
   hot.classList.add("srhit");
   try{ if(rng && window.CSS && CSS.highlights && typeof Highlight === "function") CSS.highlights.set("srhit", new Highlight(rng)); }catch(e){}
-  SRCH_FLASH_T = setTimeout(() => { hot.classList.remove("srhit");
-    try{ if(window.CSS && CSS.highlights) CSS.highlights.delete("srhit"); }catch(e){} }, 3200);
+  SRCH_FLASH_T = setTimeout(srchFlashOff, 3200);
 }
 /* hot: the element to mark and, unless o.text, the text to search; o.focus: what takes focus;
    o.place: what to bring under the header when it fits (default hot); o.pad: gap below the header */
@@ -5568,7 +5577,8 @@ function srchShow(hot, o){
     else if(r1.left < wr.left + 8) wrap.scrollLeft -= wr.left - r1.left + 16; }
   const hd = document.querySelector("header"), H = hd ? hd.offsetHeight : 0, avail = window.innerHeight - H;
   const place = o.place || hot, pr = place.getBoundingClientRect(), fits = pr.height <= avail * 0.85;
-  let y = (fits ? pr.top : hot.getBoundingClientRect().top) - H - (fits ? 12 : (o.pad === undefined ? 12 : o.pad));
+  const lead = hot === place || o.pad === undefined ? 12 : o.pad;   /* a row in a table too tall for the screen: some rows above it */
+  let y = (fits ? pr.top : hot.getBoundingClientRect().top) - H - (fits ? 12 : lead);
   if(box && box.bottom - y > window.innerHeight - 28) y = box.top - H - Math.round(avail * 0.3);
   window.scrollTo({top:Math.max(0, Math.round(window.scrollY + y)), behavior:"instant"});
   const f = o.focus || hot;
@@ -8242,6 +8252,66 @@ if(/[?&]selftest=1/.test(location.search)){
     });
     return {seen, bad, pass:!bad.length};
   });
+  /* P2.5 F35 / F35b (reopened 2026-10-04) - the search result's "why it matched" line is centered on where the
+     query lands, and opening a lesson hit lands on the block it quoted. Seeded from the loaded content: one
+     piece (320+ characters) from each kind of entry that has one, up to six. (a) The query is five consecutive
+     words from about two thirds in: the line must hold them as ONE mark, with text on both sides of them.
+     (b) The query is four words of that stretch in reverse order, so no phrase exists: every one of the words
+     must be marked in the line. The markup must be clean either way (marks balanced, none inside another,
+     no loose "&"). (c) For the first lesson with a why block, and one with a table: opening the hit opens the
+     why, marks the block (.srhit), and puts focus on its summary (the table row). A content set with no piece
+     that long says "skipped". */
+  sec("searchSnippet", () => {
+    const ix = buildIndex(), kinds = {}, bad = [], checked = [];
+    const dec = h => srchPlain(h.replace(/<[^>]+>/g, ""));
+    const clean = h => (h.match(/<mark>/g) || []).length === (h.match(/<\/mark>/g) || []).length && !/<mark>[^<]*<mark>/.test(h) && !/&(?!amp;|lt;|gt;)/.test(h);
+    ix.forEach(e => {
+      if(kinds[e.kind] || checked.length >= 6 || !e.P) return;
+      for(const p of e.P){
+        if(!p[1]) continue;
+        const c = srchPlain(p[1]); if(c.length < 320) continue;
+        const w = srchWords(c), i = Math.floor(w.length * 0.66), run = w.slice(i, i + 5);
+        if(run.length < 5) continue;
+        const phrase = c.slice(run[0][0], run[4][1]), Q = srchQuery(phrase);
+        if(Q.key.length < 3 || !Q.phrase) continue;
+        const pk = srchPick(e, Q);
+        if(!pk || pk.p !== p) continue;                   /* the title or another piece already shows it */
+        kinds[e.kind] = 1; checked.push(e.kind + ": " + phrase);
+        const html = srchSnip(e, Q, pk), line = html.replace(/^<div class="st3">(<span class="s[kl]">.*?<\/span> )+/, ""), txt = dec(line), marks = (line.match(/<mark>.*?<\/mark>/g) || []).map(dec);
+        if(!clean(html)) bad.push(e.kind + ": markup not clean: " + html.slice(0, 160));
+        if(!marks.some(m => srchNorm(m) === srchNorm(phrase))) bad.push(e.kind + ": phrase “" + phrase + "” is not one mark in: " + txt);
+        const at = txt.indexOf(phrase);
+        if(at >= 0 && (at < 30 || txt.length - at - phrase.length < 30)) bad.push(e.kind + ": phrase sits at the edge of the line (" + at + " of " + txt.length + ")");
+        const back = run.slice(0, 4).map(x => x[2]).reverse().join(" "), Q2 = srchQuery(back);
+        if(Q2.key.length < 2) break;
+        const pk2 = srchPick(e, Q2), h2 = pk2 ? srchSnip(e, Q2, pk2) : "", m2 = (h2.match(/<mark>.*?<\/mark>/g) || []).map(dec).map(srchNorm).join("|");
+        if(!pk2 || !Q2.key.every(t => m2.indexOf(t) >= 0)) bad.push(e.kind + ": not every word of “" + back + "” is marked in: " + (pk2 ? dec(h2) : "(no line)"));
+        else if(!clean(h2)) bad.push(e.kind + ": reversed query, markup not clean");
+        break;
+      }
+    });
+    const landing = [];
+    ALLT().forEach(t => {
+      if(landing.length >= 2) return;
+      const bi = t.body.findIndex(x => x[0] === "why"), ti = t.body.findIndex(x => x[0] === "t" && x[2].length);
+      [["why", bi, 0], ["row", ti, 1]].forEach(([what, k, row]) => {
+        if(k < 0 || landing.some(l => l.indexOf(what) === 0)) return;
+        const text = what === "why" ? t.body[k][2] : t.body[k][2][row].join(" "), w = srchWords(srchPlain(text));
+        if(w.length < 6) return;
+        const Q = srchQuery(srchPlain(text).slice(w[w.length - 6][0], w[w.length - 1][1]));
+        if(Q.key.length < 2) return;
+        fresh(); S.mode = "learn"; S.cur = t.id; render();
+        document.querySelectorAll("#app details.why").forEach(d => { d.open = false; });
+        const ok = srchLandTopic(what === "why" ? "" + k : k + "." + row, Q), hot = document.querySelector("#app .srhit"), a = document.activeElement;
+        const good = ok && hot && (what === "why" ? hot.tagName === "DETAILS" && hot.open && a === hot.querySelector("summary") : hot.tagName === "TR" && a === hot);
+        srchFlashOff();
+        landing.push(what + " " + t.id + (good ? " ok" : " FAILED"));
+        if(!good) bad.push("landing on a " + what + " in " + t.id + ": " + (ok ? "ring on " + (hot ? hot.tagName : "nothing") + ", focus on " + (a ? a.tagName : "nothing") : "no landing"));
+      });
+    });
+    fresh(); S.mode = "path"; render();
+    return {skipped:checked.length ? undefined : "no piece of 320+ characters in this content", checked, landing, bad, pass:!bad.length};
+  });
   sec("maps", () => ({ qIdsByTopic:QS.reduce((a,q)=>{ (a[q.c]=a[q.c]||[]).push(q.id); return a; },{}), rapidIx:RAPID.map(r=>r.ix), imgKeys:Object.keys(IMGS),
     qeHash:Object.fromEntries(QS.map(q=>[q.id, fnv(String(q.e||""))])), qwHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.w||{}))])), rxHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(String(r.x||""))])),
     optHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.o))])), roptHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(JSON.stringify(r.o))])) }));
@@ -8265,7 +8335,7 @@ if(/[?&]selftest=1/.test(location.search)){
   /* P2.V F42 - the recovery says what happened; and no section's render fell into it unasked */
   must("renderRecovery", !!R.renderRecovery && R.renderRecovery.pass === true, ((R.renderRecovery||{}).bad||[]).join("; "));
   /* P2.V F5 / F3 / F31 follow-up - calendar minutes, the Path hero, verdict case in #live */
-  ["dayMinutes", "pathHero", "liveCase", "drillVerdict"].forEach(k => { const v = R[k];
+  ["dayMinutes", "pathHero", "liveCase", "drillVerdict", "searchSnippet"].forEach(k => { const v = R[k];
     must(k, !!v && (!!v.skipped || v.pass === true), ((v||{}).bad||[]).join("; ")); });
   R.renderFailures = RENDER_FAIL_LOG.slice(failN0).map(f => f.mode + " (" + f.phase + "): " + f.msg);
   must("renderFailures", !R.renderFailures.length, R.renderFailures.slice(0, 4).join("; "));

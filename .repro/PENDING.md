@@ -15,11 +15,11 @@ en9_hypercalcemia, en9_three_hpt missing.
 | I01 | worker | images rp13, rp15, rp24 + Gemini overlays (fast/ws/I01) | fast_check I01 ok; audit/I01-sources.md |
 | P2.5 | worker | F35/F35b search snippet + landing (.repro/ws/P2_5) | --status P2.5 ok |
 | G02 | DONE (draft, accepted 2026-10-04; spot-checked rp11r01/r05/r09, rp17r03/r09/r16) | rapid rp3 13, rp11 15, rp17 22 | fast_check G02 ok; audit/G02-notes.md |
-| G03 | worker | rapid rp23, rp29; drills rp10, rp11, rp16, rp17 (fast/ws/G03) | fast_check G03 ok |
+| G03 | DONE (draft, accepted; checked rp29 pins vs figure labels, d_rp16_multi) | rapid rp23 13, rp29 11; drills rp10 multi, rp11 sort, rp16 multi, rp17 order | fast_check G03 ok; audit/G03-notes.md (rp29 NO-VISUAL row in G03-novisual.md -> P6.9 on import) |
 | P1.V | HELD | token 5554dd5d05, 12 objectives | needs verifier at Opus max (host limit, asked user) |
 
 ## Wave 1 (reproductive, Oct 9) queue
-1. (G03 in flight.) Figure gaps from G02 (hi blueprint items with no figure to pin): BP-rp11-04 bone/LDL, BP-rp17-10 molluscum, BP-rp17-05 perinatal HIV prevention, BP-rp17-12 HIV course and labs (en8_loop.svg has no JSON).
+1. Every rp topic now has questions, rapid and >= 1 drill. Figure gaps (hi blueprint items with no figure to pin a rapid item): BP-rp23-05 fat necrosis, BP-rp29-07 minors' consent, BP-rp11-04 bone/LDL, BP-rp17-10 molluscum, BP-rp17-05 perinatal HIV prevention, BP-rp17-12 HIV course and labs (en8_loop.svg has no JSON).
 2. Visual pointers (ef/pt or fig media) or NO-VISUAL rows - per topic q/r missing:
    rp3 q4 · rp4 q7/r7 · rp5 q6/r4 · rp6 q6/r4 · rp7 q6/r6 · rp8 q4/r5 · rp9 q5/r9 · rp10 q7/r8 · rp11 q7 · rp12 q10/r6 ·
    rp13 r2 · rp14 q4/r6 · rp15 q4/r4 · rp16 q7/r7 · rp17 q8 · rp18 r2 · rp21 q1/r1 · rp22 q1/r1 · rp23 q6 · rp24 q7/r14 ·
