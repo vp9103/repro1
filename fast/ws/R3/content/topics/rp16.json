@@ -1,0 +1,376 @@
+{
+ "id": "rp16",
+ "t": "Bacterial STIs and pelvic inflammatory disease",
+ "sub": "Chlamydia and gonorrhea climb from the cervix to cause PID, while ulcer pain and two kinds of blood test sort syphilis from its look-alikes.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 12,
+ "bp": [
+  "BP-rp16-01",
+  "BP-rp16-02",
+  "BP-rp16-03",
+  "BP-rp16-04",
+  "BP-rp16-05",
+  "BP-rp16-06",
+  "BP-rp16-07",
+  "BP-rp16-08",
+  "BP-rp16-09",
+  "BP-rp16-10",
+  "BP-rp16-11",
+  "BP-rp16-12",
+  "BP-rp16-13",
+  "BP-rp16-14",
+  "BP-rp16-15",
+  "BP-rp16-16",
+  "BP-rp16-17",
+  "BP-rp16-18"
+ ],
+ "obj": [
+  "TBL-STI.1",
+  "TBL-STI.2",
+  "HP-UTERUS-OVARY.6",
+  "BICEP-BROWN.5"
+ ],
+ "pretest": [
+  {
+   "q": "Which form of Chlamydia trachomatis infects a new host cell?",
+   "o": [
+    "Elementary body",
+    "Reticulate body",
+    "Glycogen inclusion",
+    "Endospore"
+   ],
+   "a": 0,
+   "why": "The small, tough elementary body survives outside cells and enters epithelium by endocytosis. Inside the cell it turns into the reticulate body, which divides and then changes back into new elementary bodies.",
+   "w": {
+    "Reticulate body": "The reticulate body is the larger form that divides inside the cell. It is fragile and cannot survive outside the host, so it cannot start a new infection.",
+    "Glycogen inclusion": "The inclusion is the membrane-bound pocket where reticulate bodies multiply, and iodine stains its glycogen. It is a growth site, not an infectious particle.",
+    "Endospore": "Endospores are dormant forms made by gram-positive rods such as Clostridium and Bacillus. Chlamydiae never make spores, even though elementary bodies are also hardy."
+   }
+  },
+  {
+   "q": "Which bedside finding most strongly suggests pelvic inflammatory disease in a woman with lower abdominal pain?",
+   "o": [
+    "Cervical motion tenderness",
+    "Strawberry cervix",
+    "Positive Murphy sign",
+    "Painless vulvar ulcer"
+   ],
+   "a": 0,
+   "why": "Moving the cervix tugs on an inflamed uterus, tubes and pelvic peritoneum, so it hurts. Cervical motion tenderness with uterine or adnexal tenderness is the clinical signature of PID and justifies treatment.",
+   "w": {
+    "Strawberry cervix": "Tiny hemorrhages on the cervix are the classic sign of trichomoniasis, an infection of the lower tract that does not by itself inflame the tubes.",
+    "Positive Murphy sign": "Stopping a deep breath when the right upper quadrant is pressed points to gallbladder inflammation. PID perihepatitis can mimic it, but it is not the pelvic sign.",
+    "Painless vulvar ulcer": "A painless genital ulcer suggests primary syphilis or donovanosis. These are skin ulcer diseases, not infections that climb into the upper genital tract."
+   }
+  },
+  {
+   "q": "Which syphilis test result falls after successful treatment?",
+   "o": [
+    "RPR titer",
+    "FTA-ABS result",
+    "TP-PA result",
+    "Treponemal immunoassay"
+   ],
+   "a": 0,
+   "why": "The RPR measures antibody to cardiolipin, which the body makes only while spirochetes are damaging tissue. So a fourfold drop in titer shows cure. Treponemal antibodies last for life and cannot track treatment.",
+   "w": {
+    "FTA-ABS result": "This fluorescent test detects antibody to the spirochete itself, which usually stays detectable for life. It confirms past exposure but cannot monitor treatment.",
+    "TP-PA result": "The particle agglutination assay is another treponemal test. Its antibodies persist after penicillin, so it confirms a reactive screen rather than following the response.",
+    "Treponemal immunoassay": "Automated treponemal immunoassays are used to screen first in reverse-sequence testing. Like other treponemal tests they stay reactive after cure, so they never show successful treatment."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Why do chlamydia and gonorrhea behave so differently in the lab?"
+  ],
+  [
+   "p",
+   "*Chlamydia trachomatis* is an **obligate intracellular** bacterium. It cannot make its own ATP, so it must live inside a host cell. The small, tough {{rp16eb|elementary body}} is the infectious form and enters columnar epithelial cells by endocytosis. Inside the cell it turns into the **reticulate body**, the form that divides. The dividing bacteria build a glycogen-rich inclusion that stains with Giemsa or iodine. Later they turn back into elementary bodies, which burst out and infect nearby cells. The cell wall lacks the usual peptidoglycan, so penicillins and cephalosporins fail. Doxycycline, which blocks the bacterial ribosome, works instead. Serovars D to K infect the genital tract, and a nucleic acid amplification test (**NAAT**) makes the diagnosis."
+  ],
+  [
+   "p",
+   "*Neisseria gonorrhoeae* is a gram-negative, oxidase-positive **diplococcus**, a pair of round bacteria that sits inside neutrophils in urethral pus. It ferments glucose but not **maltose**, which separates it from the meningococcus, and it grows on **Thayer-Martin** medium, whose antibiotics suppress normal flora. Unlike the meningococcus, it has no polysaccharide capsule. Its pili stick to epithelium and keep changing their antigens, so one infection gives no lasting immunity and no vaccine exists. An IgA protease cuts mucosal antibody, and lipooligosaccharide acts as an endotoxin. People who lack the terminal complement proteins C5 to C9 get recurrent Neisseria infections."
+  ],
+  [
+   "img",
+   "rp16_gonococci"
+  ],
+  [
+   "h",
+   "Who is screened, and how are these infections treated?"
+  ],
+  [
+   "call",
+   "key",
+   "Screen because most infections are silent",
+   "Most cervical chlamydia and gonorrhea infections are **asymptomatic**, yet they can still climb into the tubes. So guidelines advise a yearly **NAAT** for every sexually active woman younger than 25, and for older women at higher risk. Men more often notice burning on urination, and gonorrhea typically gives them a purulent urethral discharge."
+  ],
+  [
+   "p",
+   "A woman who has symptoms has **cervicitis**: a yellow, pus-like discharge and a cervix that bleeds easily when touched. Gonorrhea is treated with **ceftriaxone**, a cephalosporin, because gonococci have become resistant to older drugs. Chlamydia is treated with **doxycycline** for 7 days, or with azithromycin in pregnancy because doxycycline harms fetal bones and teeth. The two infections often coexist, so a patient treated for gonorrhea also gets doxycycline unless chlamydia has been ruled out. Sex partners are treated too, and {{rp16ept|expedited partner therapy}} lets the clinician hand the patient medication for a partner who has not been examined. Reinfection is common, so patients are retested after about 3 months."
+  ],
+  [
+   "p",
+   "Urethritis with no gonococci on testing is called nongonococcal urethritis. Chlamydia is the classic cause, and other causes are *Mycoplasma genitalium*, Trichomonas and Ureaplasma. If urethritis persists after doxycycline, think of *M. genitalium*. It has no cell wall at all, so beta-lactam antibiotics cannot work against it."
+  ],
+  [
+   "h",
+   "How does a cervical infection become pelvic inflammatory disease?"
+  ],
+  [
+   "p",
+   "Pelvic inflammatory disease (PID) is infection of the upper genital tract. It starts at the cervix and climbs along continuous mucosal surfaces. Chlamydia and gonorrhea usually begin it, but the infection is **polymicrobial**, because vaginal anaerobes and enteric gram-negative rods join in. Menstruation helps the climb, because the cervical mucus barrier thins during menses. The organisms cause **endometritis** first, then salpingitis, which is infection of the fallopian tubes. Pus leaking from the fimbriated end of the tube can form a **tubo-ovarian abscess**. The patient has lower abdominal pain, fever and purulent cervical discharge. The key exam finding is {{rp16cmt|cervical motion tenderness}}, also called the chandelier sign, with tenderness of the uterus or adnexa (the tubes and ovaries)."
+  ],
+  [
+   "f",
+   "rp16_pid"
+  ],
+  [
+   "p",
+   "The pathology follows the climb. In endometritis, neutrophils appear in the glands and plasma cells in the stroma. In acute salpingitis, neutrophils flood the tubal folds and pus fills the lumen. If the swollen fimbriated end seals shut, the tube distends with pus as a {{rp16pyo|pyosalpinx}}. After the infection clears, scar tissue fuses the tubal folds, and a sealed tube that fills with clear fluid is a hydrosalpinx."
+  ],
+  [
+   "f",
+   "rp16_tube"
+  ],
+  [
+   "p",
+   "The lasting damage is scarring. Fused folds and sealed fimbriae block the path of egg and sperm, which causes infertility. A fertilized egg that gets stuck implants in the tube as an **ectopic pregnancy**. Adhesions cause chronic pelvic pain, even after a mild, unrecognized episode. Infection can also track up the right paracolic gutter, the groove beside the colon, to the liver capsule. This perihepatitis is called {{rp16fhc|Fitz-Hugh-Curtis syndrome}}, and it leaves violin-string adhesions between the liver capsule and the abdominal wall."
+  ],
+  [
+   "call",
+   "trap",
+   "Right upper quadrant pain is not always the gallbladder",
+   "A young woman with right upper quadrant pain and fever looks like she has cholecystitis. But if the gallbladder is normal on ultrasound and the pelvic exam shows cervical motion tenderness, the diagnosis is **perihepatitis** from PID. Liver enzymes are usually normal, and the treatment is the PID regimen, not surgery."
+  ],
+  [
+   "steps",
+   [
+    "From a silent cervicitis to tubal infertility",
+    [
+     [
+      "Colonization of the cervix",
+      "Chlamydia or gonorrhea infects the endocervix, often without symptoms, so nothing prompts treatment."
+     ],
+     [
+      "Ascent into the uterus",
+      "At menses the mucus barrier thins, and organisms reach the endometrium and cause endometritis."
+     ],
+     [
+      "Infection of the tubes",
+      "Salpingitis fills the tube with pus, and leakage from the fimbriae can form a tubo-ovarian abscess."
+     ],
+     [
+      "Healing by fibrosis",
+      "Scar blocks the tube, causing infertility, or traps a fertilized egg as an ectopic pregnancy."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How is PID diagnosed and treated?"
+  ],
+  [
+   "p",
+   "PID is diagnosed clinically, because no single test is both sensitive and specific and delay scars the tubes. So a sexually active young woman with lower abdominal pain is treated at once if she has cervical motion, uterine or adnexal tenderness."
+  ],
+  [
+   "p",
+   "Treatment must cover gonorrhea, chlamydia and anaerobes. The outpatient regimen is **ceftriaxone** plus **doxycycline** plus **metronidazole**. Ceftriaxone covers the gonococci, doxycycline covers chlamydia, and metronidazole covers the anaerobes and the bacterial vaginosis that often accompany PID. Sex partners are treated for chlamydia and gonorrhea."
+  ],
+  [
+   "h",
+   "Which genital ulcer is it, and does it hurt?"
+  ],
+  [
+   "p",
+   "Two questions sort genital ulcers: does the ulcer hurt, and what are the inguinal (groin) lymph nodes doing? Herpes simplex virus is the most common cause in the United States, and it causes painful grouped vesicles that break into shallow ulcers. **Chancroid**, from *Haemophilus ducreyi*, also hurts. This small gram-negative rod lines up like a \"school of fish\" on a smear. It causes deep, ragged ulcers with a purulent base and a tender node on one side that can suppurate and drain. Any genital ulcer raises the risk of catching HIV."
+  ],
+  [
+   "p",
+   "Three organisms cause painless ulcers. The syphilis chancre is a single, firm, clean-based ulcer with rubbery, painless nodes. In **lymphogranuloma venereum** (LGV), caused by *Chlamydia trachomatis* serovars L1 to L3, the small ulcer heals so fast that most patients never see it. Weeks later the inguinal nodes swell into painful, matted **buboes** that can drain through the skin. A node biopsy shows granulomas with stellate abscesses, star-shaped collections of neutrophils ringed by epithelioid histiocytes. Nodes above and below the inguinal ligament make the groove sign, and rectal exposure causes proctocolitis."
+  ],
+  [
+   "p",
+   "The third painless ulcer is **granuloma inguinale**, also called donovanosis, which comes from *Klebsiella granulomatis*. It is a beefy-red ulcer that bleeds on contact. Biopsy shows Donovan bodies, the bacteria packed inside macrophages."
+  ],
+  [
+   "f",
+   "rp16_ulcers"
+  ],
+  [
+   "t",
+   [
+    "Infection",
+    "Ulcer",
+    "Nodes",
+    "Clue",
+    "Treatment"
+   ],
+   [
+    [
+     "Genital herpes",
+     "Painful grouped vesicles, shallow ulcers",
+     "Tender, both sides",
+     "Tzanck smear, PCR",
+     "Acyclovir or valacyclovir"
+    ],
+    [
+     "Chancroid",
+     "Painful, ragged, purulent base",
+     "Painful, one side, may suppurate",
+     "School-of-fish rods",
+     "Azithromycin or ceftriaxone"
+    ],
+    [
+     "Primary syphilis",
+     "Painless, firm, clean base",
+     "Rubbery, painless",
+     "Darkfield, serology",
+     "Benzathine penicillin G"
+    ],
+    [
+     "Lymphogranuloma venereum",
+     "Painless, small, often missed",
+     "Painful buboes, groove sign",
+     "NAAT for L serovars",
+     "Doxycycline for several weeks"
+    ],
+    [
+     "Donovanosis",
+     "Painless, beefy-red, bleeds easily",
+     "Pseudobuboes only",
+     "Donovan bodies",
+     "Azithromycin for several weeks"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How does syphilis progress, and why are there two blood tests?"
+  ],
+  [
+   "p",
+   "*Treponema pallidum* is a spirochete, a thin spiral bacterium too narrow to see on Gram stain. So fluid from a chancre is examined by **darkfield** microscopy, and a silver stain such as Warthin-Starry shows the organisms in tissue. Biopsy of a syphilitic lesion shows obliterative endarteritis, where swollen endothelium narrows small vessels, with many plasma cells around the vessels. About three weeks after exposure, a painless **chancre** appears and heals on its own. Weeks to months later comes secondary syphilis. It brings a rash that includes the palms and soles, painless lymph node swelling and **condylomata lata**, which are moist flat plaques full of organisms."
+  ],
+  [
+   "img",
+   "rp16_chancre"
+  ],
+  [
+   "p",
+   "A silent latent stage follows, with positive blood tests but no symptoms. Years later, some untreated patients reach tertiary syphilis. It causes gummas, which are rubbery inflammatory nodules, and aortitis of the ascending aorta, because obliterated vasa vasorum starve the aortic wall. It also causes neurosyphilis. Tabes dorsalis destroys the dorsal columns, so patients lose position sense, and the Argyll Robertson pupil constricts to near focus but not to light."
+  ],
+  [
+   "f",
+   "rp16_syphilis"
+  ],
+  [
+   "p",
+   "Screening uses a {{rp16ntt|nontreponemal test}}, the VDRL or RPR. It detects antibody against **cardiolipin**, a lipid released from damaged host cells. The result is a **titer**, and a fourfold fall after treatment shows cure, so this is the test that follows therapy. Cardiolipin antibodies also appear in lupus, antiphospholipid syndrome, pregnancy and viral infections. So a reactive result is confirmed with a **treponemal** test such as FTA-ABS or TP-PA. These detect antibody to the organism itself and stay positive for life. In secondary syphilis, excess antibody can block the reaction (the prozone effect) and make the RPR falsely negative."
+  ],
+  [
+   "p",
+   "Benzathine penicillin G treats syphilis. Neurosyphilis needs IV penicillin G instead, because benzathine penicillin does not reach the cerebrospinal fluid. The first dose can cause a Jarisch-Herxheimer reaction of fever and muscle aches, as dying spirochetes release inflammatory lipoproteins."
+  ],
+  [
+   "call",
+   "trap",
+   "Penicillin allergy does not change the drug in pregnancy",
+   "A nonpregnant adult with penicillin allergy can take doxycycline for syphilis. But doxycycline harms fetal bones and teeth, and only **penicillin** G reliably treats the fetus. So a pregnant patient with penicillin allergy undergoes **desensitization** and then receives penicillin."
+  ],
+  [
+   "why",
+   "Why does a positive treponemal test with a negative RPR usually mean an old infection?",
+   "The two tests measure different antibodies with different lifespans. Once the immune system makes antibody against the organism itself, it keeps making it for life, even after penicillin has cleared every spirochete. The RPR detects antibody against cardiolipin, which the body makes only while treponemes are damaging tissue. So its titer falls, and often disappears, after treatment. A positive treponemal test with a negative RPR therefore usually means syphilis that was treated long ago."
+  ],
+  [
+   "h",
+   "What happens when the infection spreads beyond the genital tract?"
+  ],
+  [
+   "p",
+   "Gonococci that reach the bloodstream cause **disseminated** gonococcal infection, which is more likely during menstruation, pregnancy or terminal complement deficiency. The patient has fever, migratory joint pain, tenosynovitis (inflamed tendon sheaths) of the wrists and a few pustules on the limbs. Or the infection settles in one joint as a septic arthritis of the knee. Ceftriaxone treats it. Chlamydia can instead trigger reactive arthritis in patients who carry HLA-B27, with arthritis, urethritis and conjunctivitis."
+  ],
+  [
+   "p",
+   "Newborns catch both infections during delivery. Gonococcal ophthalmia neonatorum is a hyperacute, purulent conjunctivitis that appears within 2 to 5 days, and erythromycin ointment at birth prevents it. Chlamydial conjunctivitis appears later, at 5 to 14 days. Chlamydia can also cause an afebrile pneumonia with a staccato cough. The ointment does not reliably prevent either chlamydial illness."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp16_ulcer",
+    "q": "A man had a painless genital ulcer that healed, then painful matted inguinal nodes. Which reasoning best identifies the cause?",
+    "o": [
+     "Painful nodes mean a painful infection, so this is chancroid from Haemophilus ducreyi",
+     "Any painless ulcer is syphilis, so the swollen nodes are secondary syphilis",
+     "A fleeting painless ulcer followed by painful buboes fits lymphogranuloma venereum from chlamydia serovars L1 to L3",
+     "Swelling nodes after the ulcer heals mean reactivation of latent herpes"
+    ],
+    "a": 2,
+    "why": "Read the history in two phases. A small painless ulcer that heals quickly, followed weeks later by painful, matted inguinal buboes, is lymphogranuloma venereum. It is caused by the L1 to L3 serovars of Chlamydia trachomatis, which travel through lymphatics to the nodes. Chancroid hurts from the start, with ulcer and node together. Syphilitic nodes are rubbery and painless, and herpes recurrences bring vesicles, not buboes."
+   }
+  ],
+  [
+   "vis",
+   "rp16"
+  ]
+ ],
+ "grid": {
+  "q": "Which findings fit pelvic inflammatory disease or its complications?",
+  "items": [
+   [
+    "Cervical motion tenderness",
+    1
+   ],
+   [
+    "Salpingitis with pus in the tube",
+    1
+   ],
+   [
+    "Tubo-ovarian abscess",
+    1
+   ],
+   [
+    "Violin-string adhesions on the liver capsule",
+    1
+   ],
+   [
+    "Ectopic pregnancy after tubal scarring",
+    1
+   ],
+   [
+    "Plasma cells in the endometrial stroma",
+    1
+   ],
+   [
+    "Started by chlamydia or gonorrhea",
+    1
+   ],
+   [
+    "Treated with ceftriaxone, doxycycline and metronidazole",
+    1
+   ],
+   [
+    "Strawberry cervix with frothy discharge",
+    0
+   ],
+   [
+    "Painless indurated chancre",
+    0
+   ],
+   [
+    "Clue cells on a wet mount",
+    0
+   ],
+   [
+    "Umbilicated pearly papules",
+    0
+   ]
+  ]
+ }
+}

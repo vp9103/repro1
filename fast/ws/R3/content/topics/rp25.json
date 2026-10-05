@@ -1,0 +1,336 @@
+{
+ "id": "rp25",
+ "t": "Maternal physiology and the hormones of pregnancy",
+ "sub": "hCG, progesterone and placental hormones reshape the heart, blood, lungs and kidneys, and these changes tell you which lab values are normal in pregnancy.",
+ "yld": "mid",
+ "exam": "hi",
+ "mins": 12,
+ "bp": [
+  "BP-rp25-01",
+  "BP-rp25-02",
+  "BP-rp25-03",
+  "BP-rp25-04",
+  "BP-rp25-05",
+  "BP-rp25-06",
+  "BP-rp25-07",
+  "BP-rp25-08",
+  "BP-rp25-09",
+  "BP-rp25-10"
+ ],
+ "obj": [
+  "MATERNAL-PHYS.1",
+  "MATERNAL-PHYS.2",
+  "MATERNAL-PHYS.3",
+  "MATERNAL-PHYS.4",
+  "MATERNAL-PHYS.5",
+  "TBL-EARLY-PREG.1",
+  "PREG-REVIEW.1",
+  "PREG-REVIEW.6",
+  "PREG-REVIEW.7"
+ ],
+ "pretest": [
+  {
+   "q": "Which structure makes most of the progesterone that sustains a pregnancy at 6 weeks?",
+   "o": [
+    "Corpus luteum",
+    "Placental syncytiotrophoblast",
+    "Fetal adrenal gland",
+    "Maternal adrenal cortex"
+   ],
+   "a": 0,
+   "why": "hCG from the syncytiotrophoblast rescues the corpus luteum, which makes the progesterone of early pregnancy. The placenta takes over only at the luteal-placental shift, at about 7 to 10 weeks.",
+   "w": {
+    "Placental syncytiotrophoblast": "The placenta becomes the main progesterone source only after the shift at about 7 to 10 weeks. At 6 weeks its main product is hCG.",
+    "Fetal adrenal gland": "The fetal adrenal supplies DHEA-S, which the placenta turns into estriol. It does not make the progesterone that holds the decidua in place.",
+    "Maternal adrenal cortex": "The maternal adrenal raises its cortisol and aldosterone output in pregnancy, but it contributes little progesterone to the decidua."
+   }
+  },
+  {
+   "q": "Which acid-base pattern is normal in the third trimester of pregnancy?",
+   "o": [
+    "Compensated respiratory alkalosis",
+    "Compensated respiratory acidosis",
+    "Metabolic acidosis with a high anion gap",
+    "Metabolic alkalosis from vomiting"
+   ],
+   "a": 0,
+   "why": "Progesterone makes the respiratory center more sensitive to carbon dioxide, so tidal volume and minute ventilation rise. PaCO2 falls to about 30 mm Hg, and the kidney excretes bicarbonate to compensate.",
+   "w": {
+    "Compensated respiratory acidosis": "Respiratory acidosis needs a high PaCO2 from hypoventilation. Pregnancy does the opposite, because progesterone drives breathing harder than metabolism requires.",
+    "Metabolic acidosis with a high anion gap": "A high anion gap signals added acid such as ketones or lactate. The low bicarbonate of pregnancy is renal compensation with a normal gap.",
+    "Metabolic alkalosis from vomiting": "Vomiting raises bicarbonate, as in hyperemesis gravidarum. A normal pregnancy lowers bicarbonate to offset the low carbon dioxide."
+   }
+  },
+  {
+   "q": "Why is hemoglobin lower in pregnancy even though red cell mass has increased?",
+   "o": [
+    "Plasma volume rises more than red cell mass",
+    "The placenta destroys red cells faster",
+    "Erythropoietin falls in pregnancy",
+    "All maternal iron is diverted to the fetus"
+   ],
+   "a": 0,
+   "why": "Plasma volume rises about 40 to 50 percent while red cell mass rises only 20 to 30 percent. Hemoglobin concentration therefore falls by dilution, the physiologic dilutional anemia of pregnancy.",
+   "w": {
+    "The placenta destroys red cells faster": "Red cell survival is essentially normal in pregnancy. Hemolysis would raise bilirubin and LDH, which simple dilution does not do.",
+    "Erythropoietin falls in pregnancy": "Erythropoietin actually rises in pregnancy, which is why red cell mass increases at all. Plasma simply expands even faster.",
+    "All maternal iron is diverted to the fetus": "Fetal demand can cause true iron deficiency, but the normal fall in hemoglobin happens even in iron-replete women because of dilution."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "What do hCG and progesterone do in early pregnancy?"
+  ],
+  [
+   "p",
+   "Pregnancy survives its first weeks because the embryo signals the ovary. After implantation, the {{rp25_syncytio|syncytiotrophoblast}} secretes **human chorionic gonadotropin (hCG)**. It acts on LH receptors and rescues the corpus luteum from the regression that would bring on menses. The rescued corpus luteum keeps making **progesterone**. hCG shares its alpha subunit with LH, FSH and TSH, but its beta subunit is unique, so pregnancy tests measure beta-hCG. It is detectable in blood about 8 days after ovulation. In a normal pregnancy hCG roughly doubles every 48 hours in the early weeks, peaks near 10 weeks, and then falls to a lower plateau."
+  ],
+  [
+   "f",
+   "rp25_hormones"
+  ],
+  [
+   "call",
+   "key",
+   "The luteal-placental shift sets the danger window",
+   "hCG keeps the **corpus luteum** alive, so the ovary supplies progesterone until the {{rp25_lps|luteal-placental shift}} at about 7 to 10 weeks. After that the placenta makes enough on its own. Removing the corpus luteum before the shift, for example during surgery for a bleeding ovarian cyst, can end the pregnancy unless progesterone is replaced."
+  ],
+  [
+   "p",
+   "Progesterone does two jobs. In the endometrium it drives {{rp25_decid|decidualization}}. Stromal cells enlarge, fill with glycogen and lipid, and become decidual cells that feed the embryo and keep the trophoblast from burrowing into the myometrium. In the myometrium (the uterine muscle) it keeps the uterus **quiescent**: it reduces gap junctions and oxytocin receptors, so contractions do not expel the embryo. Both jobs depend on progesterone, which is why the antagonist mifepristone breaks down the decidua and starts contractions."
+  ],
+  [
+   "p",
+   "The placenta also changes the mother's metabolism. As it grows, the syncytiotrophoblast makes more {{rp25_hpl|human placental lactogen}} (hPL). hPL opposes insulin and promotes lipolysis, so maternal tissues burn fat while glucose and amino acids stay available for the fetus. This **insulin resistance** is greatest in the third trimester. Placental estrogen, built from fetal adrenal androgen precursors, makes the liver produce more binding proteins and clotting factors. It also stimulates the prolactin-making pituitary cells (lactotrophs), so **prolactin** rises and the pituitary enlarges. High estrogen and progesterone hold back milk production until delivery."
+  ],
+  [
+   "t",
+   [
+    "Hormone",
+    "Made by",
+    "What it does in pregnancy"
+   ],
+   [
+    [
+     "hCG",
+     "Syncytiotrophoblast",
+     "Rescues the corpus luteum; peaks near 10 weeks; weak TSH-like action"
+    ],
+    [
+     "Progesterone",
+     "Corpus luteum, then placenta after 7 to 10 weeks",
+     "Maintains the decidua, relaxes smooth muscle, drives ventilation"
+    ],
+    [
+     "hPL",
+     "Syncytiotrophoblast",
+     "Insulin resistance and lipolysis that spare glucose for the fetus"
+    ],
+    [
+     "Estrogen (mainly estriol)",
+     "Placenta, from fetal adrenal precursors",
+     "Raises binding proteins, clotting factors, angiotensinogen and prolactin"
+    ],
+    [
+     "{{rp25_relaxin|Relaxin}}",
+     "Corpus luteum and placenta",
+     "Loosens pelvic ligaments; adds to vasodilation"
+    ],
+    [
+     "Prolactin",
+     "Maternal pituitary lactotrophs",
+     "Prepares the breast; milk waits until estrogen and progesterone fall"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Why does cardiac output rise while blood pressure falls?"
+  ],
+  [
+   "p",
+   "The circulation changes first at the arterioles. Progesterone, estrogen, relaxin and nitric oxide dilate resistance vessels, and the placenta adds a low-resistance circuit in parallel. So **systemic vascular resistance** falls early in the first trimester. Because pressure equals cardiac output times resistance, blood pressure falls too, and the diastolic pressure falls more than the systolic. Pressure reaches its **nadir in the second trimester** (its lowest point) and climbs back toward the pre-pregnancy value by term. Meanwhile **cardiac output** rises 40 to 50 percent. It rises first through stroke volume and later through a heart rate 10 to 20 beats per minute higher. The volume that drives this rise comes from the kidney, as the steps below show."
+  ],
+  [
+   "f",
+   "rp25_circulation"
+  ],
+  [
+   "call",
+   "trap",
+   "Supine hypotension is a preload problem",
+   "After about 20 weeks, lying flat lets the uterus compress the **inferior vena cava**. Venous return, stroke volume and blood pressure fall, and the patient feels faint or nauseated. This {{rp25_supine|supine hypotensive syndrome}} is not hemorrhage or heart failure. Tilting her onto her left side moves the uterus off the cava and restores the pressure within minutes."
+  ],
+  [
+   "steps",
+   [
+    "How vasodilation ends up expanding plasma volume",
+    [
+     [
+      "Arterioles dilate",
+      "Hormones and nitric oxide relax resistance vessels, and the placenta adds a parallel low-resistance bed, so systemic vascular resistance falls."
+     ],
+     [
+      "The kidney senses underfilling",
+      "Lower arterial pressure, plus estrogen-driven angiotensinogen production by the liver, raises **renin** and **aldosterone**."
+     ],
+     [
+      "Sodium and water are retained",
+      "Aldosterone makes the collecting duct reabsorb sodium, and water follows, so plasma volume rises by about 40 to 50 percent by the third trimester."
+     ],
+     [
+      "Output rises",
+      "The larger volume raises preload, the blood filling the heart, so stroke volume rises first and the heart rate follows."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "What changes in the blood, lungs and kidneys, and why?"
+  ],
+  [
+   "p",
+   "Plasma volume rises by about 40 to 50 percent, but red cell mass rises only 20 to 30 percent. **Erythropoietin** rises and the marrow makes more cells, but the plasma expands faster and dilutes them. Hemoglobin therefore falls to about 11 to 12 g/dL, a physiologic {{rp25_dilanemia|dilutional anemia}}. It also thins the blood, which helps it flow through the placenta. The extra red cells and the fetus need more iron, which is why prenatal vitamins contain iron. The white cell count also rises, a physiologic **leukocytosis** that is mostly neutrophils."
+  ],
+  [
+   "p",
+   "Estrogen makes the liver produce more **fibrinogen** and factors VII, VIII, IX, X and XII. Protein S falls and fibrinolysis slows, so pregnancy is **hypercoagulable**. This protects against hemorrhage at delivery but raises the risk of deep vein thrombosis, especially in the left leg. There the right iliac artery crosses over the left iliac vein, and the uterus adds compression. Because fibrinogen raises the sedimentation rate, ESR is not a useful test in pregnancy."
+  ],
+  [
+   "p",
+   "Breathing changes for three reasons. The first is hormonal. Progesterone acts on the medullary respiratory center and raises **ventilatory drive**: the center becomes more sensitive to carbon dioxide, so each breath is deeper. Tidal volume rises by about 30 to 40 percent while the respiratory rate barely changes, so minute ventilation rises by about the same amount. The second is metabolic. Oxygen consumption rises about 20 percent because of the fetus, placenta, uterus and working maternal heart. Ventilation rises more than metabolism does, so the lungs overshoot. PaCO2 falls to about 30 mm Hg, PaO2 rises to about 100 to 105 mm Hg, and the kidney excretes bicarbonate to about 20 mEq/L. The result is a compensated **respiratory alkalosis** with a pH of about 7.40 to 7.45. The low maternal PaCO2 also helps fetal carbon dioxide cross the placenta."
+  ],
+  [
+   "p",
+   "The third reason is structural. The growing uterus pushes the diaphragm up about 4 cm, so the lungs rest in a smaller space. {{rp25_frc|Functional residual capacity}} (FRC) falls by about 20 percent, as do its two parts, expiratory reserve volume and **residual volume**. The rib cage flares outward, so inspiration is not limited and **total lung capacity** stays nearly unchanged. The result is a smaller oxygen reserve with a higher oxygen demand. A pregnant patient desaturates within seconds of apnea, which matters during intubation, and she feels the mild dyspnea of pregnancy without having lung disease."
+  ],
+  [
+   "f",
+   "rp25_lungs"
+  ],
+  [
+   "p",
+   "The kidneys filter far more. Renal plasma flow and **glomerular filtration rate** (GFR) rise by about 50 percent, so serum **creatinine** and BUN fall. A creatinine of 1.0 mg/dL, normal before pregnancy, suggests reduced renal function in a pregnant woman. The filtered load of glucose can exceed tubular reabsorption, so **glucosuria** appears without hyperglycemia. Progesterone relaxes ureteral smooth muscle and the uterus compresses the ureters at the pelvic brim, more on the right. This causes physiologic hydroureter and hydronephrosis. Urinary stasis lets asymptomatic bacteriuria ascend, so pyelonephritis is more common and pregnant women are screened and treated for bacteriuria."
+  ],
+  [
+   "h",
+   "Which other changes are normal, and which lab values mislead?"
+  ],
+  [
+   "p",
+   "Progesterone relaxes smooth muscle throughout the gut, so transit slows and **constipation** follows. A relaxed lower esophageal sphincter and rising abdominal pressure cause **reflux**. They also raise the risk of aspiration, even though gastric emptying itself is not delayed until labor. A sluggish gallbladder and estrogen-rich bile favor cholesterol gallstones. Relaxin loosens the pubic symphysis and pelvic ligaments, and the growing uterus shifts the center of gravity forward. Women develop lumbar **lordosis** and back pain, and fluid retention can compress the median nerve and cause carpal tunnel syndrome. In the skin, stimulated melanocytes cause melasma and a linea nigra, estrogen causes spider angiomas and palmar erythema, and stretching causes striae."
+  ],
+  [
+   "p",
+   "Estrogen raises liver-made binding proteins, so {{rp25_tbg|thyroxine-binding globulin}} lifts total T4 while free T4 stays normal, and corticosteroid-binding globulin lifts total cortisol. In the first trimester, peak hCG weakly stimulates the TSH receptor, so TSH can dip slightly. The placenta can double or triple serum **alkaline phosphatase** without any liver disease, and dilution lowers albumin. A value that is normal outside pregnancy can therefore be abnormal inside it, so pregnancy reference ranges matter."
+  ],
+  [
+   "h",
+   "How do these normal changes explain the dangers of pregnancy?"
+  ],
+  [
+   "p",
+   "Every normal change becomes a vulnerability when something else goes wrong. After 20 weeks the gravid uterus lies on the inferior vena cava and the aorta, and this {{rp25_aortocaval|aortocaval compression}} cuts venous return when she is supine. It also lowers **uterine blood flow**, which rises from about 50 mL/min before pregnancy to 500 to 700 mL/min at term. The uterine vessels are already maximally dilated and cannot autoregulate, so flow follows maternal pressure and falls with hypotension, hemorrhage or vasoconstrictor drugs. The larger blood volume is the matching protection. A vaginal delivery loses about 500 mL and a cesarean about 1,000 mL with little change in vital signs, so tachycardia and hypotension appear late."
+  ],
+  [
+   "p",
+   "Hypercoagulability, venous stasis and endothelial injury at delivery complete Virchow's triad. Progesterone dilates veins, and the uterus compresses the pelvic veins. Pregnancy and the weeks after delivery therefore carry a several-fold higher risk of venous **thromboembolism**. A swollen left leg, or sudden dyspnea with tachycardia, is deep vein thrombosis or pulmonary embolism until proven otherwise. The anticoagulant is heparin, which does not cross the placenta. Cardiac output rises further in labor and peaks just after delivery, when the contracted uterus returns blood to the circulation. Women with stenotic valve disease decompensate then. Pressure is lowest in mid-pregnancy and returns toward baseline by term, so a reading of 140/90 mm Hg or more on two occasions after 20 weeks is abnormal."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp25_bp",
+    "q": "A woman at 24 weeks has a blood pressure of 100/60 mm Hg, down from 120/78 before pregnancy. Which reasoning best explains it?",
+    "o": [
+     "Cardiac output has fallen because the enlarging uterus limits how much the heart can fill, so pressure drops",
+     "Systemic vascular resistance has fallen more than cardiac output has risen, because hormones dilate arterioles and the placenta adds a low-resistance circuit",
+     "Plasma volume has contracted because fluid shifts into the fetus, so there is less blood to generate pressure",
+     "The renin-angiotensin system is suppressed in pregnancy, so the kidney wastes sodium and pressure falls"
+    ],
+    "a": 1,
+    "why": "Pressure equals cardiac output times systemic vascular resistance. Cardiac output rises 40 to 50 percent, so a lower pressure means resistance must have fallen even more. Hormones and nitric oxide dilate arterioles, and the placenta acts as a low-resistance parallel circuit. Plasma volume expands rather than contracts, and the renin-angiotensin-aldosterone system is activated, not suppressed, which is how the volume expands despite the lower pressure."
+   }
+  ],
+  [
+   "why",
+   "Why does insulin resistance develop in the second half of pregnancy?",
+   "Insulin resistance tracks placental mass. As the placenta grows, the syncytiotrophoblast makes more hPL. Together with cortisol, progesterone and prolactin, hPL blunts insulin signaling beyond the receptor. Maternal muscle and fat take up less glucose and burn more fatty acids. Glucose crosses the placenta by facilitated diffusion while maternal insulin does not, so the fetus gets a steady supply. A healthy pancreas answers by making two to three times as much insulin. When beta cells cannot keep up, gestational diabetes appears, usually on the 24 to 28 week screen. Because the cause is placental, the resistance disappears within days of delivery."
+  ],
+  [
+   "vis",
+   "rp25"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these are normal in the third trimester?",
+  "items": [
+   [
+    "Cardiac output about 40 to 50 percent above baseline",
+    1
+   ],
+   [
+    "Lower serum creatinine than before pregnancy",
+    1
+   ],
+   [
+    "Compensated respiratory alkalosis",
+    1
+   ],
+   [
+    "Reduced functional residual capacity",
+    1
+   ],
+   [
+    "Glucosuria with a normal blood glucose",
+    1
+   ],
+   [
+    "Raised total T4 with a normal free T4",
+    1
+   ],
+   [
+    "Higher fibrinogen level",
+    1
+   ],
+   [
+    "Mild dilutional anemia",
+    1
+   ],
+   [
+    "Raised alkaline phosphatase from the placenta",
+    1
+   ],
+   [
+    "Raised systemic vascular resistance",
+    0
+   ],
+   [
+    "Respiratory acidosis with a high PaCO2",
+    0
+   ],
+   [
+    "Reduced glomerular filtration rate",
+    0
+   ],
+   [
+    "Fall in total red cell mass",
+    0
+   ],
+   [
+    "Suppressed renin and aldosterone",
+    0
+   ],
+   [
+    "Respiratory rate almost unchanged",
+    1
+   ],
+   [
+    "Total lung capacity falls by 20 percent",
+    0
+   ]
+  ]
+ }
+}

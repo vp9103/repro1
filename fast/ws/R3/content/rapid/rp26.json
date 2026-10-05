@@ -1,0 +1,494 @@
+[
+ {
+  "id": "rp26r01",
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp26-03"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.6"
+  ],
+  "q": "Where do most ectopic pregnancies implant?",
+  "o": [
+   "Ampulla of the uterine tube",
+   "Isthmus of the uterine tube",
+   "Ovary",
+   "Cervix",
+   "Abdominal peritoneum"
+  ],
+  "a": 0,
+  "x": "Most tubal ectopic pregnancies implant in the ampulla, the long, wide segment where fertilization normally happens. If transport is slowed by tubal damage, the embryo invades the wall before it reaches the uterus.",
+  "w": {
+   "Isthmus of the uterine tube": "The narrow isthmus near the uterus hosts fewer tubal ectopics. Its thick muscular wall stretches poorly, so these rupture earlier.",
+   "Ovary": "Ovarian pregnancy is rare, because fertilization normally happens after the fimbriae sweep the egg into the tube, away from the ovarian surface.",
+   "Cervix": "Cervical implantation is rare and dangerous, because the cervix is fibrous and very vascular and can bleed massively.",
+   "Abdominal peritoneum": "Abdominal pregnancy is rare and usually follows a tubal rupture that reimplants the embryo on bowel or omentum."
+  },
+  "media": "fig:rp26_framework",
+  "pt": {
+   "hl": [
+    "Most in the ampulla"
+   ],
+   "say": "The ectopic box notes most in the ampulla, the wide middle segment of the tube where fertilization occurs."
+  }
+ },
+ {
+  "id": "rp26r02",
+  "tags": [
+   "pathogen-clues",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp26-03"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.6"
+  ],
+  "q": "Which sexually transmitted organism most often causes the tubal scarring behind ectopic pregnancy?",
+  "o": [
+   "Chlamydia trachomatis",
+   "Trichomonas vaginalis",
+   "Herpes simplex virus 2",
+   "Treponema pallidum",
+   "Human papillomavirus"
+  ],
+  "a": 0,
+  "x": "Chlamydia trachomatis ascends from the cervix, often silently, and causes salpingitis that destroys ciliated cells and leaves adhesions; the damaged tube slows the embryo, which then implants in the tube wall.",
+  "w": {
+   "Trichomonas vaginalis": "This flagellated protozoan causes frothy, malodorous vaginitis with a strawberry cervix; it stays in the lower tract and is not a classic cause of salpingitis.",
+   "Herpes simplex virus 2": "HSV-2 produces painful genital ulcers and latent infection of sacral ganglia; it does not ascend to scar the tubes.",
+   "Treponema pallidum": "Syphilis causes a painless chancre and later systemic disease; it crosses the placenta to infect the fetus but does not cause tubal adhesions.",
+   "Human papillomavirus": "HPV infects the cervical transformation zone and drives dysplasia and cancer through E6 and E7; it causes no tubal inflammation."
+  },
+  "media": "fig:rp26_framework",
+  "pt": {
+   "hl": [
+    "Chlamydial PID, prior ectopic"
+   ],
+   "say": "The ectopic box lists chlamydial PID as a key risk factor: Chlamydia trachomatis salpingitis scars the tube and slows the embryo."
+  }
+ },
+ {
+  "id": "rp26r03",
+  "tags": [
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp26-03"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.6"
+  ],
+  "q": "Which enzyme does methotrexate inhibit when it is used to treat an ectopic pregnancy?",
+  "o": [
+   "Dihydrofolate reductase",
+   "Thymidylate synthase",
+   "Ribonucleotide reductase",
+   "Topoisomerase II",
+   "Inosine monophosphate dehydrogenase"
+  ],
+  "a": 0,
+  "x": "Methotrexate binds dihydrofolate reductase, so dividing trophoblast cannot regenerate the tetrahydrofolate needed for thymidine and purine synthesis. The cells stall in S phase and die, and the ectopic is resorbed.",
+  "w": {
+   "Thymidylate synthase": "Thymidylate synthase is blocked directly by 5-fluorouracil. Methotrexate affects it only indirectly, by depleting the folate cofactor it needs.",
+   "Ribonucleotide reductase": "Hydroxyurea inhibits ribonucleotide reductase, which makes deoxyribonucleotides. It is used for sickle cell disease, not for ectopic pregnancy.",
+   "Topoisomerase II": "Etoposide and doxorubicin poison topoisomerase II and break DNA strands. Etoposide appears in regimens for high-risk trophoblastic neoplasia, not for a tubal ectopic.",
+   "Inosine monophosphate dehydrogenase": "Mycophenolate inhibits this enzyme to block guanine synthesis in lymphocytes. It is an immunosuppressant used after transplants."
+  }
+ },
+ {
+  "id": "rp26r04",
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp26-02"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.4"
+  ],
+  "q": "Above about what serum hCG level should transvaginal ultrasound show a normal intrauterine gestational sac?",
+  "o": [
+   "About 3,500 mIU/mL",
+   "About 25 mIU/mL",
+   "About 350 mIU/mL",
+   "About 35,000 mIU/mL",
+   "About 100,000 mIU/mL"
+  ],
+  "a": 0,
+  "x": "The discriminatory level is about 3,500 mIU/mL in current guidance. Above it, an empty uterus suggests ectopic pregnancy or a completed loss. Below it, an unseen sac may simply be too small.",
+  "w": {
+   "About 25 mIU/mL": "Around 20 to 25 mIU/mL is where urine pregnancy tests turn positive, days after implantation, long before a sac is large enough to see.",
+   "About 350 mIU/mL": "At a few hundred mIU/mL a normal pregnancy is usually too early to see, so an empty uterus there calls for a repeat hCG.",
+   "About 35,000 mIU/mL": "Waiting for this level would leave many ectopics undiagnosed until rupture. Normal intrauterine sacs are visible at a tenth of this value.",
+   "About 100,000 mIU/mL": "About 100,000 is the usual peak near 10 weeks, when an embryo with a heartbeat is easily seen. Values far above it suggest a molar pregnancy."
+  },
+  "media": "fig:rp26_framework",
+  "pt": {
+   "hl": [
+    "hCG above about 3,500 mIU/mL:"
+   ],
+   "say": "Below the location row, the label reads hCG above about 3,500 mIU/mL: suspect ectopic, the discriminatory level for an empty uterus."
+  }
+ },
+ {
+  "id": "rp26r05",
+  "tags": [
+   "diagnostic-cutoffs",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp26-02"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.4"
+  ],
+  "q": "What is the smallest 48-hour rise in hCG that usually fits a viable intrauterine pregnancy?",
+  "o": [
+   "About 35 percent",
+   "About 5 percent",
+   "About 15 percent",
+   "About 100 percent",
+   "About 300 percent"
+  ],
+  "a": 0,
+  "x": "A viable intrauterine pregnancy usually raises hCG by at least about 35 percent in 48 hours. Slower rises or plateaus suggest an ectopic or failing pregnancy.",
+  "w": {
+   "About 5 percent": "A rise this small is essentially a plateau, the pattern that raises concern for ectopic pregnancy or a failing pregnancy.",
+   "About 15 percent": "A 15 percent rise is slower than expected for a viable pregnancy and raises concern for an ectopic or failing pregnancy.",
+   "About 100 percent": "Doubling in 48 hours is a typical rise, not the minimum. Calling every slower rise abnormal would label many normal pregnancies as ectopic.",
+   "About 300 percent": "Normal trophoblast does not quadruple its output in two days. A rise of that size suggests a laboratory error or a mistaken interval."
+  },
+  "media": "fig:rp26_framework",
+  "pt": {
+   "hl": [
+    "normal rise: 35 percent or more"
+   ],
+   "say": "Under the repeat-hCG label, the framework reads normal rise: 35 percent or more in 48 hours, the minimum for a viable pregnancy."
+  }
+ },
+ {
+  "id": "rp26r06",
+  "tags": [
+   "imaging-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp26-01"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.3"
+  ],
+  "q": "Which transvaginal ultrasound finding is the first definite sign of an intrauterine pregnancy?",
+  "o": [
+   "Yolk sac",
+   "Gestational sac",
+   "Thickened decidua",
+   "Fetal pole",
+   "Cardiac activity"
+  ],
+  "a": 0,
+  "x": "The yolk sac, seen at 5 to 6 weeks, is the first finding that proves a pregnancy is inside the uterus. A fluid collection from an ectopic can mimic a gestational sac but never contains a yolk sac.",
+  "w": {
+   "Gestational sac": "The sac appears first, at about 5 weeks, but an ectopic can create a fluid pseudosac that looks similar, so a sac alone is not proof.",
+   "Thickened decidua": "The endometrium thickens under progesterone in any pregnancy, ectopic included, so a thick lining says nothing about where the embryo is.",
+   "Fetal pole": "The embryo appears at about 6 weeks and does confirm an intrauterine pregnancy, but the yolk sac reaches that milestone a few days earlier.",
+   "Cardiac activity": "Cardiac motion at 6 to 7 weeks proves both location and viability, but it is the last of the early milestones, not the first."
+  },
+  "media": "fig:rp26_framework",
+  "pt": {
+   "hl": [
+    "Yolk sac",
+    "Sac with yolk sac in uterus"
+   ],
+   "say": "The location row reads sac with yolk sac in uterus: intrauterine pregnancy, and the bottom strip places the yolk sac at 5 to 6 weeks."
+  }
+ },
+ {
+  "id": "rp26r07",
+  "tags": [
+   "imaging-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp26-04"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.3"
+  ],
+  "q": "What does absent cardiac activity in a visible embryo on transvaginal ultrasound indicate?",
+  "o": [
+   "Early pregnancy loss",
+   "A normal finding that needs no repeat scan",
+   "Ectopic pregnancy",
+   "Pregnancy of unknown location",
+   "Complete molar pregnancy"
+  ],
+  "a": 0,
+  "x": "A visible embryo with no cardiac activity means the pregnancy has failed. Cardiac activity is normally seen by 6 to 7 weeks, so a missing heartbeat in a visible embryo is an early pregnancy loss.",
+  "w": {
+   "A normal finding that needs no repeat scan": "A visible embryo should have a heartbeat by 6 to 7 weeks. A missing heartbeat is not a normal finding, so it is not ignored.",
+   "Ectopic pregnancy": "Ectopic pregnancy is a question of where the pregnancy is, not whether the embryo is alive. Absent cardiac activity in a visible embryo speaks to viability.",
+   "Pregnancy of unknown location": "A pregnancy of unknown location means nothing is seen in or outside the uterus. Here an embryo is visible, so its location is known.",
+   "Complete molar pregnancy": "A complete mole has no embryo at all, so there is no heartbeat to look for. A visible embryo without a heartbeat fits a failed pregnancy, not a mole."
+  },
+  "media": "fig:rp26_framework",
+  "pt": {
+   "hl": [
+    "No heartbeat at 7 mm or more:"
+   ],
+   "say": "The viability row reads no heartbeat means pregnancy loss, so a visible embryo without cardiac activity is an early pregnancy loss."
+  }
+ },
+ {
+  "id": "rp26r08",
+  "tags": [
+   "treatment-sequence",
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp26-01",
+   "BP-rp26-03"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.7"
+  ],
+  "q": "What is the management of a suspected ruptured ectopic pregnancy in a hypotensive patient?",
+  "o": [
+   "Emergency surgery",
+   "Intramuscular methotrexate",
+   "Repeat hCG in 48 hours",
+   "Expectant management",
+   "Misoprostol"
+  ],
+  "a": 0,
+  "x": "Hypotension with a suspected ectopic means rupture and hemoperitoneum, so the patient is resuscitated and taken for emergency surgery, usually removal of the tube. Stability is checked before any other step in the framework.",
+  "w": {
+   "Intramuscular methotrexate": "Methotrexate needs a stable patient with an unruptured tube and works over days. It cannot stop active bleeding into the abdomen.",
+   "Repeat hCG in 48 hours": "Serial hCG is for locating a pregnancy in a stable woman. Waiting two days in shock risks death from bleeding.",
+   "Expectant management": "Watchful waiting is reserved for women with no symptoms, a very low and falling hCG and no rupture. A hypotensive patient is the opposite.",
+   "Misoprostol": "This prostaglandin expels a failed intrauterine pregnancy by contracting the uterus. It does nothing for bleeding from a torn tube."
+  },
+  "media": "fig:rp26_framework",
+  "pt": {
+   "hl": [
+    "Shock or shoulder pain",
+    "means rupture: surgery"
+   ],
+   "say": "The first check reads shock or shoulder pain means rupture: surgery, ahead of every test in the framework."
+  }
+ },
+ {
+  "id": "rp26r10",
+  "tags": [
+   "meiosis-karyotype",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp26-04"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.5"
+  ],
+  "q": "What causes at least half of first-trimester pregnancy losses?",
+  "o": [
+   "Fetal chromosomal abnormalities",
+   "Maternal exercise or stress",
+   "Luteal phase progesterone deficiency",
+   "Uterine fibroids",
+   "Antiphospholipid antibodies"
+  ],
+  "a": 0,
+  "x": "At least half of first-trimester losses come from fetal chromosomal abnormalities, mostly autosomal trisomies. They become more frequent as maternal age rises, and the loss is not caused by anything the woman did.",
+  "w": {
+   "Maternal exercise or stress": "Exercise, intercourse, work and emotional stress do not cause early loss, which many women need to hear because they blame themselves.",
+   "Luteal phase progesterone deficiency": "Luteal phase deficiency has not been shown to cause most losses, and routine progesterone does not prevent miscarriage in unselected women.",
+   "Uterine fibroids": "Submucosal fibroids that distort the cavity can impair implantation, but they cause a small minority of losses compared with abnormal karyotypes.",
+   "Antiphospholipid antibodies": "Antiphospholipid syndrome is an important treatable cause of recurrent loss, but it explains only a small share of single sporadic miscarriages."
+  }
+ },
+ {
+  "id": "rp26r11",
+  "tags": [
+   "meiosis-karyotype"
+  ],
+  "bp": [
+   "BP-rp26-07"
+  ],
+  "obj": [
+   "GTD.5"
+  ],
+  "q": "Which karyotype is typical of a partial hydatidiform mole?",
+  "o": [
+   "69,XXY",
+   "46,XX",
+   "45,X",
+   "47,XXY",
+   "47,XX,+16"
+  ],
+  "a": 0,
+  "x": "A partial mole is triploid, usually 69,XXY or 69,XXX, from a normal egg fertilized by two sperm. Its maternal set allows fetal parts and p57 expression, while the extra paternal set swells some villi.",
+  "w": {
+   "46,XX": "A 46,XX karyotype with every chromosome paternal is the complete mole, which has no fetal parts and the highest hCG and cancer risk.",
+   "45,X": "Monosomy X is Turner syndrome, the most common single abnormal karyotype in early miscarriage, often with a cystic hygroma rather than molar villi.",
+   "47,XXY": "Klinefelter syndrome is compatible with life and causes small testes and infertility in adult men. It has no molar placenta.",
+   "47,XX,+16": "Trisomy 16 is the most common trisomy in first-trimester miscarriage. It gives an ordinary failed pregnancy, not a molar placenta."
+  },
+  "media": "fig:rp26_moles",
+  "pt": {
+   "hl": [
+    "69,XXY",
+    "triploid"
+   ],
+   "say": "The partial mole column shows a normal ovum plus 2 sperm, giving 69,XXY, triploid with one maternal set."
+  }
+ },
+ {
+  "id": "rp26r12",
+  "tags": [
+   "histology-to-diagnosis",
+   "meiosis-karyotype"
+  ],
+  "bp": [
+   "BP-rp26-06",
+   "BP-rp26-07"
+  ],
+  "obj": [
+   "GTD.5"
+  ],
+  "q": "Which immunostain is negative in a complete mole but positive in a partial mole?",
+  "o": [
+   "p57",
+   "Cytokeratin",
+   "Ki-67",
+   "Inhibin",
+   "Human placental lactogen"
+  ],
+  "a": 0,
+  "x": "p57 is made from a maternally expressed gene, so it needs a maternal genome. The all-paternal complete mole is p57 negative, while the partial mole, with one maternal set, stains positive.",
+  "w": {
+   "Cytokeratin": "Cytokeratin marks every epithelial and trophoblastic cell, so it stains both complete and partial moles and cannot tell them apart.",
+   "Ki-67": "Ki-67 marks dividing cells of any parentage. It shows how fast trophoblast proliferates but says nothing about which parent supplied the genome.",
+   "Inhibin": "Inhibin highlights trophoblast and sex cord-stromal tumors such as granulosa cell tumor, and it is present whether or not maternal chromosomes are.",
+   "Human placental lactogen": "hPL marks intermediate trophoblast and is the signature product of placental site trophoblastic tumor. It does not depend on maternal imprinted genes."
+  },
+  "media": "fig:rp26_moles",
+  "pt": {
+   "hl": [
+    "p57 negative: no maternal genes",
+    "p57 positive: maternal set present"
+   ],
+   "say": "Compare the two columns: p57 negative in the complete mole, which has no maternal genes, and p57 positive in the partial mole."
+  }
+ },
+ {
+  "id": "rp26r13",
+  "tags": [
+   "receptor-crosstalk",
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp26-06"
+  ],
+  "obj": [
+   "GTD.5"
+  ],
+  "q": "Which ovarian lesion forms when a complete mole drives hCG to very high levels?",
+  "o": [
+   "Theca lutein cysts",
+   "Endometriomas",
+   "Mature cystic teratomas",
+   "Serous cystadenomas",
+   "Polycystic ovarian morphology"
+  ],
+  "a": 0,
+  "x": "Theca lutein cysts are bilateral, many-chambered cysts formed when very high hCG overstimulates LH receptors on theca cells. They appear with moles and multiple gestations and regress over weeks to months once hCG falls.",
+  "w": {
+   "Endometriomas": "Endometriomas are chocolate cysts of ectopic endometrium that bleed with each cycle. They reflect endometriosis, not hCG excess.",
+   "Mature cystic teratomas": "Dermoid cysts are germ cell tumors with hair, teeth and sebum that are present before pregnancy and do not respond to hCG.",
+   "Serous cystadenomas": "These benign epithelial tumors arise from the ovarian surface and grow independently of hCG. They do not regress after a mole is evacuated.",
+   "Polycystic ovarian morphology": "Many small peripheral follicles reflect the anovulation and androgen excess of polycystic ovary syndrome, a chronic condition unrelated to a molar pregnancy."
+  },
+  "media": "fig:rp26_moles",
+  "pt": {
+   "hl": [
+    "Hyperthyroidism, theca lutein cysts"
+   ],
+   "say": "The complete mole column pairs very high hCG with hyperthyroidism and theca lutein cysts, both driven by the excess hormone."
+  }
+ },
+ {
+  "id": "rp26r14",
+  "tags": [
+   "tumor-progression",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp26-12",
+   "BP-rp26-08"
+  ],
+  "obj": [
+   "GTD.2"
+  ],
+  "q": "After which pregnancy event is gestational trophoblastic neoplasia most likely to develop?",
+  "o": [
+   "Complete mole",
+   "Partial mole",
+   "Term delivery",
+   "Spontaneous abortion",
+   "Ectopic pregnancy"
+  ],
+  "a": 0,
+  "x": "About 15 to 20 percent of complete moles progress to gestational trophoblastic neoplasia, compared with only a few percent of partial moles. This is why hCG is followed to zero after every molar evacuation.",
+  "w": {
+   "Partial mole": "Partial moles carry a maternal genome and less trophoblastic overgrowth, so persistent neoplasia follows only a few percent, far below the complete mole's rate.",
+   "Term delivery": "Neoplasia, almost always choriocarcinoma, can follow a normal delivery, but the risk per birth is tiny compared with the risk after a mole.",
+   "Spontaneous abortion": "Choriocarcinoma can follow a miscarriage, but the absolute risk is very low because the trophoblast of an ordinary loss is not molar.",
+   "Ectopic pregnancy": "Neoplasia after an ectopic pregnancy is rare. The bigger concern after a tubal pregnancy is persistent trophoblast when hCG fails to fall."
+  },
+  "media": "fig:rp26_moles",
+  "pt": {
+   "hl": [
+    "Neoplasia in about 15 to 20%",
+    "Neoplasia in under 5%"
+   ],
+   "say": "The foot of each column compares risk: neoplasia in about 15 to 20 percent after a complete mole versus a few percent after a partial mole."
+  }
+ },
+ {
+  "id": "rp26r15",
+  "tags": [
+   "tumor-progression",
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp26-09"
+  ],
+  "obj": [
+   "GTD.6"
+  ],
+  "q": "Which villus-free trophoblastic cancer spreads early through the blood to the lungs?",
+  "o": [
+   "Choriocarcinoma",
+   "Invasive mole",
+   "Placental site trophoblastic tumor",
+   "Dysgerminoma",
+   "Yolk sac tumor"
+  ],
+  "a": 0,
+  "x": "Choriocarcinoma is made of sheets of cytotrophoblast and syncytiotrophoblast with no villi. It invades vessels early, spreads by blood to the lungs, vagina, brain and liver, makes abundant hCG and is highly chemosensitive.",
+  "w": {
+   "Invasive mole": "An invasive mole keeps its villi as it burrows into the myometrium and rarely spreads far. It is not villus-free.",
+   "Placental site trophoblastic tumor": "This rare tumor of intermediate trophoblast usually follows a term pregnancy and makes hPL with little hCG. It resists chemotherapy, so hysterectomy is the treatment.",
+   "Dysgerminoma": "Dysgerminoma is an ovarian germ cell tumor, the counterpart of seminoma, marked by LDH rather than by a preceding mole.",
+   "Yolk sac tumor": "Yolk sac tumor is a germ cell tumor of children and young women with Schiller-Duval bodies and high AFP. It is not gestational."
+  },
+  "media": "fig:rp26_moles",
+  "pt": {
+   "hl": [
+    "Choriocarcinoma in about 2%"
+   ],
+   "say": "At the foot of the complete mole column, the choriocarcinoma label marks the cancer that spreads early by blood."
+  }
+ }
+]
