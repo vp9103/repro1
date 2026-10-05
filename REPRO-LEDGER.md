@@ -2,7 +2,7 @@
 
 The single source of truth for REPRO-PLAN.md. `check_repro.py` reads it on every `--next`, `--status` and Stop-hook run.
 
-CURRENT POSITION: 2026-10-05. P2 verified (run 9). All 30 wave-1 lessons accepted (P3.1-P3.10 DONE) and every coverage-review PARTIAL/MISSING/ERROR row fixed (batches 1, 2a, 2b closed). P1.4 round 8 closed; P1.V run 8 in flight (token 4cf4bec0ee). Images I03 (rp16, rp17, rp26) in flight. Next: P3.V (coverage-row sample), then P4 images/overlays, P5/P6/P7 imports, memory scenes, P8; then endocrine wave 2.
+CURRENT POSITION: 2026-10-05. User direction: lessons are Step 1 only in smooth plain prose (REPRO-CONTINUATION.md). All 30 wave-1 lessons rewritten (S01-S06), imported and closed (P3.1-P3.10); page published privately at https://claude.ai/artifact/NQUiTXZwk9sKBk68SFdQ9T (progress sync only). Practice-item pass: P03 merged, P01/P02 running. Images I04 (rp23, rp18, rp21) running. Next: P3.V on the rewrites, P1.V rerun, then P4 images/overlays, P5/P6/P7 imports, memory scenes, P8; endocrine wave 2.
 
 BASELINE: (written at P0.3 from `python check_repro.py --baseline`) BASELINE tree:38022cb922 at:2026-09-26 11:11:54 · GATE sha:067a94be
 
@@ -38,13 +38,13 @@ BASELINE: (written at P0.3 from `python check_repro.py --baseline`) BASELINE tre
 | P3.1 | Topics rp1, rp2, rp3: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:a072affb tree:444080d1df closed:69f7e957 files:6 drift-discarded:0 checks:5/5 |  |
 | P3.2 | Topics rp4, rp5, rp6: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:eb46cb8c tree:fcc6d0925e closed:263dd02c files:6 drift-discarded:0 checks:5/5 |  |
 | P3.3 | Topics rp7, rp8, rp9: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:799187cd tree:0d7354dc4d closed:45c1aa9c files:6 drift-discarded:0 checks:5/5 |  |
-| P3.4 | Topics rp10, rp11, rp29: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | IN_PROGRESS | started 2026-10-05 22:08:02 ws:.repro/ws/P3_4 |  |
-| P3.5 | Topics rp12, rp13, rp14: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:e0c0c75c tree:e93845d3b9 closed:fa5789ed files:3 drift-discarded:0 checks:5/5 |  |
-| P3.6 | Topics rp15, rp23, rp24: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:3aa14533 tree:12dc1ee4da closed:1a1771fb files:2 drift-discarded:0 checks:5/5 |  |
-| P3.7 | Topics rp16, rp17, rp18: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:3b1fa81a tree:91f303ef23 closed:347e504c files:3 drift-discarded:0 checks:5/5 |  |
-| P3.8 | Topics rp19, rp20, rp21, rp22: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:4c9ad251 tree:a92d6a3046 closed:eb7a0232 files:3 drift-discarded:0 checks:5/5 |  |
-| P3.9 | Topics rp25, rp30, rp26: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:c0dda2c6 tree:37b1a3e9f0 closed:6a55063e files:4 drift-discarded:0 checks:5/5 |  |
-| P3.10 | Topics rp27, rp28: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:a1b1b67f tree:e6c06af3d5 closed:97ad57e2 files:21 drift-discarded:0 checks:5/5 |  |
+| P3.4 | Topics rp10, rp11, rp29: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:a796b1a3 tree:daab0bdfac closed:3f035420 files:6 drift-discarded:0 checks:5/5 |  |
+| P3.5 | Topics rp12, rp13, rp14: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:b60231d0 tree:351e97f610 closed:35dc513d files:6 drift-discarded:0 checks:5/5 |  |
+| P3.6 | Topics rp15, rp23, rp24: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:b66d7a7d tree:00d882a1c9 closed:c9fc6c70 files:6 drift-discarded:0 checks:5/5 |  |
+| P3.7 | Topics rp16, rp17, rp18: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:9e4671d0 tree:59de6a9382 closed:8aff5692 files:6 drift-discarded:0 checks:5/5 |  |
+| P3.8 | Topics rp19, rp20, rp21, rp22: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:a4c2d094 tree:b7d2f7e006 closed:f3e2900d files:8 drift-discarded:0 checks:5/5 |  |
+| P3.9 | Topics rp25, rp30, rp26: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:0aa43602 tree:ad1188af9d closed:2025eea3 files:6 drift-discarded:0 checks:5/5 |  |
+| P3.10 | Topics rp27, rp28: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:b0737ded tree:baa1512f81 closed:76aee256 files:4 drift-discarded:0 checks:5/5 |  |
 | P3.V | Phase 3 verification by a fresh verifier (token + seeded sample + real clicks) | NOT_STARTED |  |  |
 |  | **Phase 4: Wave 1 images and overlays** |  |  |  |
 | P4.1 | Images for rp1, rp2, rp3, rp4, rp5, rp6: licensed, >= 800 px, verified by a second model, 4 look-alike distractors with whys, placed | NOT_STARTED |  |  |
@@ -276,3 +276,10 @@ BASELINE: (written at P0.3 from `python check_repro.py --baseline`) BASELINE tre
 - 2026-10-05 P3.2 reopened: user direction 2026-10-05: lessons rewritten to Step 1 only in smooth plain prose (fast workspaces S01-S06, orchestrator fact sweep); import the rewrite (img rows stay with P4)
 - 2026-10-05 P3.3 reopened: user direction 2026-10-05: lessons rewritten to Step 1 only in smooth plain prose (fast workspaces S01-S06, orchestrator fact sweep); import the rewrite (img rows stay with P4)
 - 2026-10-05 P3.4 reopened: user direction 2026-10-05: lessons rewritten to Step 1 only in smooth plain prose (fast workspaces S01-S06, orchestrator fact sweep); import the rewrite (img rows stay with P4)
+- 2026-10-05 P3.5 reopened: user direction 2026-10-05: lessons rewritten to Step 1 only in smooth plain prose (fast workspaces S01-S06, orchestrator fact sweep); import the rewrite (img rows stay with P4)
+- 2026-10-05 P3.6 reopened: user direction 2026-10-05: lessons rewritten to Step 1 only in smooth plain prose (fast workspaces S01-S06, orchestrator fact sweep); import the rewrite (img rows stay with P4)
+- 2026-10-05 P3.7 reopened: user direction 2026-10-05: lessons rewritten to Step 1 only in smooth plain prose (fast workspaces S01-S06, orchestrator fact sweep); import the rewrite (img rows stay with P4)
+- 2026-10-05 P3.8 reopened: user direction 2026-10-05: lessons rewritten to Step 1 only in smooth plain prose (fast workspaces S01-S06, orchestrator fact sweep); import the rewrite (img rows stay with P4)
+- 2026-10-05 P3.9 reopened: user direction 2026-10-05: lessons rewritten to Step 1 only in smooth plain prose (fast workspaces S01-S06, orchestrator fact sweep); import the rewrite (img rows stay with P4)
+- 2026-10-05 P3.10 reopened: user direction 2026-10-05: lessons rewritten to Step 1 only in smooth plain prose (fast workspaces S01-S06, orchestrator fact sweep); import the rewrite (img rows stay with P4)
+- 2026-10-05 Gated reconciliation done: P3.1-P3.10 reopened, the Step 1 rewrites imported (img rows stripped), all ten closed 5/5 (ledger rows above). P3.V next (fresh verifier on the rewritten lessons) when a slot frees; P01, P02 (practice items) and I04 (images rp23, rp18, rp21) running.

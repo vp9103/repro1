@@ -2,7 +2,7 @@
  {
   "k": "rp15_folcyst",
   "t": "Follicular cyst",
-  "d": "The most common functional ovarian cyst: a follicle that fails to rupture and keeps filling with fluid, forming a thin-walled simple cyst that usually resolves within one or two cycles.",
+  "d": "The most common functional ovarian cyst. A follicle fails to rupture and keeps filling with fluid, forming a thin-walled simple cyst that usually resolves within one or two cycles.",
   "alt": [
    "follicular cysts"
   ]
@@ -10,13 +10,13 @@
  {
   "k": "rp15_kruk",
   "t": "Krukenberg tumor",
-  "d": "Metastatic carcinoma in both ovaries made of mucin-filled signet-ring cells, usually from a gastric primary; the ovaries are enlarged, solid and often bilateral.",
+  "d": "Cancer that has spread to both ovaries, made of mucin-filled signet-ring cells and usually coming from a stomach primary. The ovaries are enlarged and solid.",
   "alt": []
  },
  {
   "k": "rp15_bord",
   "t": "Borderline tumor",
-  "d": "An ovarian epithelial tumor with stratification and atypia but no destructive stromal invasion; its peritoneal implants are usually noninvasive and most patients are cured by surgery.",
+  "d": "An ovarian epithelial tumor with atypia and stratified cells but no destructive invasion of the stroma. Its peritoneal implants are usually noninvasive, and surgery cures most patients.",
   "alt": [
    "borderline tumors"
   ]
@@ -24,7 +24,7 @@
  {
   "k": "rp15_stic",
   "t": "Serous tubal intraepithelial carcinoma",
-  "d": "A TP53-mutant carcinoma confined to the epithelium of the fimbriated fallopian tube; it is the precursor of most high-grade serous carcinomas and is often found in BRCA carriers' tubes.",
+  "d": "A TP53-mutant carcinoma confined to the lining of the fimbriated end of the fallopian tube. It is the precursor of most high-grade serous carcinomas and is often found in BRCA carriers.",
   "alt": [
    "STIC"
   ]
@@ -32,7 +32,7 @@
  {
   "k": "rp15_sd",
   "t": "Schiller-Duval bodies",
-  "d": "Glomerulus-like structures of a central blood vessel wrapped by tumor cells in a space lined by tumor cells; they are the histologic hallmark of yolk sac tumor, which secretes AFP.",
+  "d": "Glomerulus-like structures, each with a central blood vessel wrapped by tumor cells. They are the microscopic hallmark of the AFP-secreting yolk sac tumor.",
   "alt": [
    "Schiller-Duval body"
   ]
@@ -40,7 +40,7 @@
  {
   "k": "rp15_ce",
   "t": "Call-Exner bodies",
-  "d": "Small follicle-like rosettes of granulosa cells around eosinophilic material; with grooved coffee-bean nuclei, they identify the estrogen-making granulosa cell tumor.",
+  "d": "Small follicle-like rosettes of granulosa cells around pink material. Together with grooved coffee-bean nuclei, they identify the estrogen-making granulosa cell tumor.",
   "alt": [
    "Call-Exner body"
   ]
@@ -48,7 +48,7 @@
  {
   "k": "rp15_orads",
   "t": "O-RADS",
-  "d": "The Ovarian-Adnexal Reporting and Data System: an ultrasound lexicon that sorts an adnexal mass into categories 1 to 5 by risk of malignancy, from normal and almost certainly benign (under 1 percent) to high risk (50 percent or more).",
+  "d": "The Ovarian-Adnexal Reporting and Data System, an ultrasound scoring system that sorts an adnexal mass into risk categories, from almost certainly benign to high risk of malignancy.",
   "alt": [
    "O-RADS US"
   ]
@@ -56,7 +56,7 @@
  {
   "k": "rp15_rok",
   "t": "Rokitansky nodule",
-  "d": "The raised, echogenic plug in the wall of a mature cystic teratoma where hair, teeth and other tissues of all three germ layers gather; it casts an acoustic shadow on ultrasound and is also called the dermoid plug.",
+  "d": "The raised, bright plug in the wall of a mature cystic teratoma where hair, teeth and other tissues gather. It casts a shadow on ultrasound and is also called the dermoid plug.",
   "alt": [
    "Rokitansky nodules"
   ]

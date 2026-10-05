@@ -2,7 +2,7 @@
  {
   "k": "rp30_naegele",
   "t": "Naegele's rule",
-  "d": "Estimates the due date by adding 7 days to the first day of the last menstrual period and subtracting 3 months; it assumes a regular 28-day cycle with ovulation on day 14, so irregular cycles need ultrasound dating.",
+  "d": "Estimates the due date by adding 7 days to the first day of the last menstrual period and subtracting 3 months. It assumes a regular 28-day cycle, so irregular cycles need ultrasound dating.",
   "alt": [
    "Naegele rule"
   ]
@@ -10,7 +10,7 @@
  {
   "k": "rp30_tpal",
   "t": "G P TPAL",
-  "d": "Obstetric history shorthand: G is gravidity, every pregnancy including the current one; P is parity, births at 20 weeks or later; the four TPAL digits count term births, preterm births, abortions (losses before 20 weeks) and living children.",
+  "d": "Shorthand for obstetric history. G is gravidity, every pregnancy including the current one. P is parity, births at 20 weeks or later. The TPAL digits count term births, preterm births, abortions and living children.",
   "alt": [
    "TPAL",
    "gravidity and parity"
@@ -19,13 +19,13 @@
  {
   "k": "rp30_nt",
   "t": "Nuchal translucency",
-  "d": "Fluid under the skin at the back of the fetal neck, measured by ultrasound at 10 to 13 weeks; an increased thickness suggests aneuploidy, especially trisomy 21, and also congenital heart defects.",
+  "d": "Fluid under the skin at the back of the fetal neck, measured by ultrasound at 10 to 13 weeks. A thick measurement suggests aneuploidy, especially trisomy 21, and sometimes a heart defect.",
   "alt": []
  },
  {
   "k": "rp30_cfdna",
   "t": "Cell-free DNA screening",
-  "d": "A maternal blood test, possible from 10 weeks, that measures placental DNA fragments to screen for trisomies 21, 18 and 13; it is the most sensitive aneuploidy screen but is not diagnostic, so a positive result is confirmed.",
+  "d": "A maternal blood test, possible from 10 weeks, that measures placental DNA fragments to screen for trisomies 21, 18 and 13. It is the most sensitive aneuploidy screen but is not diagnostic, so a positive result is confirmed.",
   "alt": [
    "cell-free DNA",
    "cfDNA"
@@ -34,39 +34,31 @@
  {
   "k": "rp30_ache",
   "t": "Acetylcholinesterase",
-  "d": "An enzyme that leaks from exposed fetal neural tissue into amniotic fluid; a positive amniotic fluid acetylcholinesterase together with a raised amniotic AFP confirms an open neural tube defect.",
+  "d": "An enzyme that leaks from exposed fetal neural tissue into amniotic fluid. A positive amniotic fluid result with a raised amniotic AFP confirms an open neural tube defect.",
   "alt": []
  },
  {
   "k": "rp30_organogenesis",
   "t": "Organogenesis",
-  "d": "Weeks 3 to 8 after fertilization, when the organs form; teratogens in this period cause major structural malformations, while exposure in the first 2 weeks is all or none.",
+  "d": "Weeks 3 to 8 after fertilization, when the organs form. Teratogens in this period cause major structural malformations, while exposure in the first 2 weeks is all or none.",
   "alt": []
  },
  {
   "k": "rp30_phocomelia",
   "t": "Phocomelia",
-  "d": "Severe shortening or absence of the long bones of the limbs, so the hands and feet attach close to the trunk like flippers; it is the signature defect of thalidomide exposure in weeks 4 to 8.",
+  "d": "Severe shortening or absence of the long limb bones, so the hands and feet attach close to the trunk like flippers. It is the signature defect of thalidomide exposure in weeks 4 to 8.",
   "alt": []
  },
  {
   "k": "rp30_fas",
   "t": "Fetal alcohol syndrome",
-  "d": "Prenatal alcohol injury with growth restriction, microcephaly, short palpebral fissures, a smooth philtrum, a thin upper lip and intellectual disability; it is the leading preventable cause of intellectual disability.",
+  "d": "Injury from prenatal alcohol, with growth restriction, microcephaly, short palpebral fissures, a smooth philtrum, a thin upper lip and intellectual disability. It is the leading preventable cause of intellectual disability.",
   "alt": []
- },
- {
-  "k": "rp30_redate",
-  "t": "Redating",
-  "d": "Replacing the last-menstrual-period due date with the ultrasound date when they differ by more than a threshold that widens with age: more than 5 days before 9 weeks, more than 7 days from 9 to 16 weeks, then more than 10, 14 and 21 days.",
-  "alt": [
-   "redate"
-  ]
  },
  {
   "k": "rp30_banana",
   "t": "Banana sign",
-  "d": "An ultrasound sign of open spina bifida with a Chiari II malformation: the cerebellum is pulled down and wrapped around the brainstem; scalloped frontal bones, the lemon sign, accompany it.",
+  "d": "An ultrasound sign of open spina bifida with a Chiari II malformation: the cerebellum is pulled down and wrapped around the brainstem. The lemon sign, scalloped frontal bones, accompanies it.",
   "alt": [
    "lemon sign"
   ]

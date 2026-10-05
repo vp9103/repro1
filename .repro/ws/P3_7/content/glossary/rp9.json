@@ -2,13 +2,13 @@
  {
   "k": "rp9_poi",
   "t": "Primary ovarian insufficiency",
-  "d": "Loss of ovarian follicle function before age 40, shown by amenorrhea with FSH in the menopausal range on two occasions. Causes include fragile X premutation, autoimmunity, Turner mosaicism and chemotherapy.",
+  "d": "Loss of ovarian follicle function before age 40, shown by amenorrhea with an FSH in the menopausal range on two occasions. Causes include fragile X premutation, autoimmunity, Turner mosaicism and chemotherapy.",
   "alt": []
  },
  {
   "k": "rp9_fha",
   "t": "Functional hypothalamic amenorrhea",
-  "d": "Amenorrhea from slowed GnRH pulses caused by low energy availability, intense exercise or stress, with low FSH, LH and estradiol and a risk of bone loss.",
+  "d": "Amenorrhea from slowed GnRH pulses caused by low energy availability, intense exercise or stress. FSH, LH and estradiol are low, and bone loss is a risk.",
   "alt": []
  },
  {
@@ -22,19 +22,19 @@
  {
   "k": "rp9_rotterdam",
   "t": "Rotterdam criteria",
-  "d": "The PCOS definition: two of oligo- or anovulation, clinical or biochemical hyperandrogenism and polycystic ovarian morphology, after excluding thyroid disease, hyperprolactinemia and nonclassic CAH.",
+  "d": "The PCOS definition: two of oligo- or anovulation, hyperandrogenism, and polycystic ovaries on ultrasound, after excluding thyroid disease, hyperprolactinemia and nonclassic congenital adrenal hyperplasia.",
   "alt": []
  },
  {
   "k": "rp9_palm",
   "t": "PALM-COEIN",
-  "d": "The FIGO system for abnormal uterine bleeding: structural causes polyp, adenomyosis, leiomyoma and malignancy or hyperplasia; nonstructural causes coagulopathy, ovulatory dysfunction, endometrial, iatrogenic and not otherwise classified.",
+  "d": "A memory scheme for abnormal uterine bleeding. Structural causes are polyp, adenomyosis, leiomyoma and malignancy or hyperplasia. Nonstructural causes are coagulopathy, ovulatory dysfunction, endometrial, iatrogenic and not otherwise classified.",
   "alt": []
  },
  {
   "k": "rp9_hsg",
   "t": "Hysterosalpingography",
-  "d": "An X-ray study in which contrast is pushed through the cervix to outline the uterine cavity and tubes; free spill into the peritoneum shows the tubes are open.",
+  "d": "An x-ray study in which contrast is pushed through the cervix to outline the uterine cavity and tubes. Free spill into the peritoneum shows the tubes are open.",
   "alt": [
    "HSG",
    "hysterosalpingogram"
@@ -43,7 +43,7 @@
  {
   "k": "rp9_compart",
   "t": "Four compartments of amenorrhea",
-  "d": "A framework that sorts amenorrhea by failing level: compartment I the uterus and outflow tract, II the ovary, III the anterior pituitary, IV the hypothalamus and higher centers. Failure of II is hypergonadotropic; III or IV is hypogonadotropic.",
+  "d": "A scheme that sorts amenorrhea by the failing level: I the uterus and outflow tract, II the ovary, III the anterior pituitary, IV the hypothalamus. Failure of II is hypergonadotropic, and III or IV is hypogonadotropic.",
   "alt": [
    "four compartments",
    "compartments"
@@ -58,7 +58,7 @@
  {
   "k": "rp9_icsi",
   "t": "Intracytoplasmic sperm injection",
-  "d": "An in vitro fertilization step in which a single sperm is injected directly into each egg. It treats severe male-factor infertility and is paired with surgical sperm retrieval when the ejaculate contains no sperm.",
+  "d": "An in vitro fertilization step in which a single sperm is injected directly into each egg. It treats severe male-factor infertility and is paired with surgical sperm retrieval when the ejaculate has no sperm.",
   "alt": [
    "ICSI"
   ]

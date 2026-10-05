@@ -1,0 +1,370 @@
+{
+ "id": "rp29",
+ "t": "Gender-affirming care, sexual health and reproductive ethics",
+ "sub": "How gender-affirming hormones work and are monitored, how to screen by organ inventory, and how consent, history and law shape reproductive care.",
+ "yld": "lo",
+ "exam": "hi",
+ "mins": 14,
+ "bp": [
+  "BP-rp29-01",
+  "BP-rp29-02",
+  "BP-rp29-03",
+  "BP-rp29-04",
+  "BP-rp29-05",
+  "BP-rp29-06",
+  "BP-rp29-07",
+  "BP-rp29-08",
+  "BP-rp29-09",
+  "BP-rp29-10",
+  "BP-rp29-11",
+  "BP-rp29-12"
+ ],
+ "obj": [
+  "PATHPHARM-MENSES-CONTRA.4",
+  "TRANSGENDER-LEC.1",
+  "TRANSGENDER-LEC.2",
+  "TRANSGENDER-LEC.3",
+  "TRANSGENDER-LEC.4",
+  "TRANSGENDER-LEC.5",
+  "TRANSGENDER-LEC.6",
+  "LIFESPAN-PANEL.1",
+  "LIFESPAN-PANEL.2",
+  "LIFESPAN-PANEL.3",
+  "LIFESPAN-PANEL.4",
+  "LIFESPAN-PANEL.5",
+  "LIFESPAN-CASES.1",
+  "LIFESPAN-CASES.2",
+  "LIFESPAN-CASES.3",
+  "LIFESPAN-CASES.4",
+  "LIFESPAN-CASES.5",
+  "BICEP-BROWN.8",
+  "BICEP-BROWN.9",
+  "BICEP-WALSH.23"
+ ],
+ "pretest": [
+  {
+   "q": "Which laboratory value is monitored most closely in a patient taking testosterone?",
+   "o": [
+    "Hematocrit",
+    "Serum potassium",
+    "Prolactin",
+    "Platelet count"
+   ],
+   "a": 0,
+   "why": "Testosterone stimulates erythropoietin, so red cell mass rises; hematocrit is checked about every 3 months in the first year and the dose is lowered if it passes about 54%.",
+   "w": {
+    "Serum potassium": "Potassium is watched in feminizing regimens that use spironolactone, because blocking aldosterone can cause hyperkalemia.",
+    "Prolactin": "Prolactin is sometimes checked on estrogen, which can stimulate lactotrophs; testosterone does not raise it.",
+    "Platelet count": "Testosterone increases red cell production, not platelets; thrombocytosis is not an expected effect of androgen therapy."
+   }
+  },
+  {
+   "q": "How does a continuous GnRH agonist pause puberty?",
+   "o": [
+    "It downregulates pituitary GnRH receptors",
+    "It blocks androgen receptors in skin",
+    "It inhibits aromatase in fat",
+    "It stimulates pulsatile LH release"
+   ],
+   "a": 0,
+   "why": "Continuous occupation of GnRH receptors causes a brief flare and then receptor downregulation, so LH, FSH and gonadal sex steroids fall; stopping the drug restores pulsatile signaling.",
+   "w": {
+    "It blocks androgen receptors in skin": "Receptor blockade in target tissue is how spironolactone or bicalutamide works; it leaves LH, FSH and gonadal steroids untouched.",
+    "It inhibits aromatase in fat": "Aromatase inhibitors such as letrozole block estrogen synthesis; they do not stop pituitary gonadotropin release.",
+    "It stimulates pulsatile LH release": "Pulsed GnRH drives puberty forward; a blocker works precisely because its signal is constant rather than pulsed."
+   }
+  },
+  {
+   "q": "In most states, which service may a 15-year-old consent to without a parent?",
+   "o": [
+    "Testing and treatment for STIs",
+    "Elective knee surgery",
+    "Abortion without any parental involvement",
+    "Enrollment in a drug trial"
+   ],
+   "a": 0,
+   "why": "All states allow minors to consent to care for sexually transmitted infections, and most extend this to contraception and prenatal care, so fear of disclosure does not stop treatment.",
+   "w": {
+    "Elective knee surgery": "Nonurgent procedures still require a parent's consent for an unemancipated minor; only emergencies are an exception.",
+    "Abortion without any parental involvement": "Many states require a parent's notice or consent for a minor's abortion, with a judicial bypass as the alternative.",
+    "Enrollment in a drug trial": "Research on children requires a parent's permission plus the child's assent under federal human-subjects rules."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Which words describe sex, gender and orientation?"
+  ],
+  [
+   "p",
+   "**Sex assigned at birth** is the label recorded from the external genitalia at delivery. {{rp29_gi|Gender identity}} is a person's internal sense of being a man, a woman, both or neither; people whose identity sits outside the man-woman binary may call themselves nonbinary. Gender expression is how someone presents, and sexual orientation describes whom a person is attracted to. A transgender person's identity differs from the sex assigned at birth. Sex itself has layers that can disagree: phenotypic sex is the anatomy, genotypic sex the karyotype and gonadal sex the testes or ovaries, as in androgen insensitivity, where a 46,XY karyotype and testes come with female anatomy. These ideas are independent, so ask instead of assuming."
+  ],
+  [
+   "p",
+   "Respectful language is a clinical skill. Ask every patient what name and pronouns they use, such as he, she, they or ze, and record the **chosen name** and pronouns with sex assigned at birth and gender identity as separate fields. When in doubt use a **neutral pronoun**, and if you **misgender** someone, apologize once, correct yourself and move on. Current usage prefers transgender over transsexual, pronouns over preferred pronouns and gender-affirming surgery over gender reassignment surgery; transgender is an adjective, never a noun. Inclusive language, such as partner instead of husband or wife, avoids assumptions."
+  ],
+  [
+   "p",
+   "Diagnostic labels changed as understanding improved. DSM-5 replaced gender identity disorder with {{rp29_gd|gender dysphoria}}: a marked incongruence between experienced gender and assigned sex lasting at least **6 months**, with **clinically significant distress** or impairment. Being transgender is not itself a disorder; the diagnosis names the distress that care aims to relieve. ICD-11 uses **gender incongruence** and files it under sexual health rather than mental disorders, and many clinicians now prefer that term."
+  ],
+  [
+   "h",
+   "How do gender-affirming hormones and puberty blockers work?"
+  ],
+  [
+   "p",
+   "**Feminizing** therapy pairs estradiol with an antiandrogen. Estradiol suppresses LH and so lowers testosterone; transdermal estradiol or oral 17-beta estradiol is used rather than ethinyl estradiol. **Spironolactone** blocks androgen receptors and reduces testosterone synthesis, but it is also an aldosterone antagonist, so potassium and blood pressure are monitored; a GnRH agonist is the costlier alternative. Breasts grow, skin softens, and erections, testicular volume and sperm production fall. The main danger is **venous thromboembolism**, highest with oral estrogen and smoking; high triglycerides and gallstones follow."
+  ],
+  [
+   "p",
+   "**Masculinizing** therapy uses testosterone by injection or gel. It deepens the voice, grows facial and body hair, enlarges the clitoris, adds muscle, causes acne and stops menses within a few months; voice and clitoral changes are permanent. Testosterone stimulates erythropoietin, so the key test is the **hematocrit**, checked about every 3 months in the first year and then once or twice a year; polycythemia, above about 54%, calls for a lower dose. It also lowers HDL and causes **vaginal atrophy**, with dryness and painful intercourse. Menstrual suppression with continuous combined pills, a progestin (DMPA, implant or levonorgestrel IUD) or a GnRH agonist reduces bleeding and dysphoria before testosterone starts or when bleeding continues. Pregnancy, unstable coronary disease and polycythemia are contraindications, and testosterone virilizes a female fetus."
+  ],
+  [
+   "p",
+   "**Puberty blockers** are GnRH agonists given continuously, such as leuprolide injections or a histrelin implant. A constant signal downregulates pituitary receptors after a brief flare, so sex steroids fall to prepubertal levels. Started at Tanner stage 2 in an adolescent with a well-established diagnosis, a **GnRH agonist** pauses puberty, and puberty resumes when the drug stops, so the pause is reversible. The costs are slower bone mineral accrual while sex steroids are low and, if hormones follow directly, gametes that never mature."
+  ],
+  [
+   "f",
+   "rp29_hormones"
+  ],
+  [
+   "t",
+   [
+    "Regimen",
+    "Main drugs",
+    "Expected effects",
+    "Key risks",
+    "Monitor"
+   ],
+   [
+    [
+     "Feminizing",
+     "Estradiol plus **spironolactone** or a GnRH agonist",
+     "Breast growth, softer skin, smaller testes",
+     "VTE, hyperkalemia, high triglycerides",
+     "Potassium, estradiol, testosterone"
+    ],
+    [
+     "Masculinizing",
+     "Testosterone injection or gel",
+     "Deeper voice, facial hair, amenorrhea",
+     "Erythrocytosis, low HDL, vaginal atrophy",
+     "**Hematocrit**, lipids, testosterone"
+    ],
+    [
+     "Puberty blocker",
+     "Continuous GnRH agonist",
+     "Puberty pauses, resumes when stopped",
+     "Lower bone accrual, fertility concerns",
+     "Bone density, growth, Tanner stage"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "Hormones are not contraception",
+   "Testosterone is **not contraception**: ovulation can continue despite amenorrhea, so a transgender man with a uterus and ovaries whose partner makes sperm can conceive, and the testosterone would harm the fetus. Offer an **IUD**, an implant or another progestin method. Estradiol lowers but does not reliably stop sperm production either. Neither hormone protects against infection, so condoms still matter, and testosterone-induced vaginal atrophy raises the risk of bacterial vaginosis, cervicitis and cystitis."
+  ],
+  [
+   "steps",
+   [
+    "How a continuous GnRH agonist pauses puberty",
+    [
+     [
+      "The agonist binds pituitary GnRH receptors continuously",
+      "Leuprolide or histrelin occupies the receptors constantly instead of in natural pulses; LH and FSH rise briefly, so sex steroids flare for a few days."
+     ],
+     [
+      "Receptors downregulate",
+      "Constant occupation desensitizes and internalizes the receptors, so gonadotrophs stop answering GnRH."
+     ],
+     [
+      "Sex steroids fall and puberty pauses",
+      "Without LH and FSH the gonads make little estradiol or testosterone, so puberty stalls at the stage reached."
+     ],
+     [
+      "Stopping the drug reverses it",
+      "Pulsatile signaling returns when the drug is withdrawn, so puberty resumes and the pause is reversible."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "What do fertility preservation and surgery involve?"
+  ],
+  [
+   "p",
+   "Because hormones and surgery can end fertility, **fertility preservation** is discussed before treatment starts. Sperm banking, or **cryopreservation**, is simple after male puberty; oocyte or embryo cryopreservation needs ovarian stimulation and retrieval. A transgender man who keeps his uterus can carry a pregnancy after stopping testosterone."
+  ],
+  [
+   "p",
+   "Surgery is optional and individualized, hormones need not stop around it, and some insurers require a health-assessment letter documenting persistent gender incongruence. Chest surgery for transgender men is a **mastectomy** with contouring; some breast tissue remains, so chest and axillary examination continues. A **hysterectomy**, with or without oophorectomy, is an option when the uterus causes dysphoria or bleeding on testosterone, and keeping the ovaries depends on fertility wishes. A **vaginoplasty** removes the testes and builds a neovagina that needs lifelong dilation, with risks of stenosis, fistula and urethral narrowing. A phalloplasty builds a phallus from a forearm or thigh flap, and urethral fistula and stricture are common; a penile implant can follow later."
+  ],
+  [
+   "h",
+   "What preventive care follows from the organ inventory?"
+  ],
+  [
+   "p",
+   "Preventive care starts with an {{rp29_oi|organ inventory}} and a sexual history; screening follows the organs present, not gender identity. A transgender man with a cervix follows the usual **cervical cancer screening** schedule; testosterone thins the epithelium and causes more unsatisfactory samples, so primary HPV testing, which can be self-collected, helps. A transgender woman keeps her **prostate** after vaginoplasty, so prostate cancer screening follows the usual age-based discussion from about 55 to 69, with the gland felt through the neovagina; estrogen and antiandrogens lower prostate-specific antigen, so a normal value is read with caution. Breast screening follows tissue and hormone exposure: mammography as for other women, with tissue remaining after mastectomy. The figure lists each organ's rule."
+  ],
+  [
+   "f",
+   "rp29_inventory"
+  ],
+  [
+   "p",
+   "A sexual history asks about behavior and anatomy, not identity. The CDC's **5 Ps** are partners, practices, protection from sexually transmitted infections, past infections and pregnancy intention; the practices question includes whether sex is consensual, and pregnancy intention opens contraceptive counseling. Ask what parts partners have, whether oral or anal sex occurs and whether anyone could become pregnant, because infection risk follows anatomy and practices, not identity, and the answers decide which sites receive STI screening: urethra, vagina or neovagina, rectum and throat. Receptive anal sex carries the highest HIV risk and transgender women carry a high HIV burden, so pre-exposure prophylaxis (PrEP) is offered to those at risk. HPV vaccination is offered. Mental health screening covers depression, anxiety, suicide risk and substance use, and every visit asks about intimate partner violence, because stigma drives high rates of each; about 4 in 10 transgender adults report a lifetime suicide attempt."
+  ],
+  [
+   "call",
+   "key",
+   "Screen the organs that are present",
+   "Screen from the organ inventory, not from gender identity or sex assigned at birth: a transgender man with a cervix needs cervical screening, a transgender woman keeps her prostate, and a neovagina has no cervix."
+  ],
+  [
+   "h",
+   "Why do LGBTQ+ patients face barriers, and what helps?"
+  ],
+  [
+   "p",
+   "Transgender people are under 1 percent of the US population, yet studies report that up to a quarter have been **refused care**. Their needs combine ordinary primary care with hormone care, fertility counseling, mental health support and HIV and STI prevention, and LGBTQ+ patients carry higher rates of depression, suicide attempts, substance use and violence. These disparities come from barriers rather than identity: discrimination and bias, a clinician **knowledge deficit**, and **insurance coverage** that excludes hormones, supplies, mental health care or surgery. Legal transition adds another layer. A legal name change never requires hormones or surgery, and the name, license marker and birth certificate follow state law: some states accept self-attestation and an X marker, others restrict changes, and Medicaid coverage of gender-affirming care is mandated in some states and banned in others. As of 2025, more than 20 states restrict puberty blockers or hormones for minors, although major medical societies support such care."
+  ],
+  [
+   "p",
+   "Clinic settings shape care. Assumptions, such as that a patient is cisgender or heterosexual, produce {{rp29_microagg|microaggressions}}: using the wrong name, voicing surprise or asking curious questions that do not serve care. An **intake form** with only male and female boxes, or no space for chosen name and pronouns, tells the patient they were not expected. Forms and records that ask for name used, pronouns, gender identity and sex assigned at birth as separate fields, and staff trained in the same language, make disclosure safer."
+  ],
+  [
+   "p",
+   "Gender-affirming care is multidisciplinary. Primary care and endocrinology prescribe hormones, ob/gyn and reproductive endocrinology cover fertility and gynecologic care, urology and **plastic surgery** operate, **speech** pathology trains the voice (testosterone deepens it, but estrogen does not raise pitch), and mental health and **social work** provide assessment, letters and support. Referral is appropriate when a need exceeds one clinician's skill, and coordination spares the patient from retelling the story at every step."
+  ],
+  [
+   "h",
+   "When can an adolescent consent, and what makes consent valid?"
+  ],
+  [
+   "p",
+   "Minors usually need a parent's consent, but the law makes exceptions so that fear of disclosure does not block care. In most states a **minor** can consent without **parental consent** to contraception, testing and treatment for sexually transmitted infections, and prenatal care; emergencies and emancipated minors are also exceptions. Abortion is the common outlier, since many states require parental notice or consent unless a judge grants a bypass. Gender-affirming hormones for a minor usually need a parent's permission plus the adolescent's assent, which respects growing autonomy without removing the parent's role. Every adolescent visit includes time alone, and the clinician explains confidentiality and its limits: abuse or a serious risk of harm must be acted on."
+  ],
+  [
+   "p",
+   "**Informed consent** has several parts. The patient must have {{rp29_cap|decision-making capacity}} for this decision: understanding the information, appreciating how it applies to them, reasoning and communicating a choice. The clinician discloses the procedure, its risks and benefits, and the reasonable **alternatives**, including doing nothing. The choice must be voluntary, free of coercion from family, clinicians or institutions. Capacity is a clinical judgment about one decision; competence is a legal status that only a court decides."
+  ],
+  [
+   "why",
+   "Why may a 16-year-old consent to chlamydia treatment but not always to her own abortion?",
+   "Sexually transmitted infections spread when untreated, and teenagers who fear that parents will find out skip testing, so every state lets minors consent to STI care, and most extend that logic to contraception and prenatal care. Legislatures have treated abortion as a question of parental rights instead, so many states require a parent's notice or consent, with a judicial bypass. Law, ethics and clinical judgment answer different questions and can reach different conclusions for one patient."
+  ],
+  [
+   "h",
+   "How do history, bias and law shape reproductive care?"
+  ],
+  [
+   "p",
+   "Mistrust of medicine has causes. In the **Tuskegee** study, from 1932 to 1972, US Public Health Service researchers followed Black men with syphilis without treating them, even after penicillin became standard; the outcry led to federal research rules and the {{rp29_belmont|Belmont Report}} of 1979, whose principles are respect for persons, beneficence and justice. Through much of the 20th century, Black, Latina, Native American, disabled and incarcerated women underwent coerced **sterilization**, often without meaningful informed consent. These abuses explain why some patients meet reproductive care with mistrust, and why pressure toward long-acting contraception feels like history repeating."
+  ],
+  [
+   "p",
+   "Health **disparities** follow structural patterns rather than individual failings. **Maternal mortality** shows it: Black women in the United States die of pregnancy-related causes at about three times the rate of White women, and the gap persists across income and education. These outcomes reflect **social determinants** of health and structural racism, so a note should name the barrier instead of blaming the patient. Menopause care shows the pattern too: Black women report more frequent and longer-lasting hot flashes, yet are less often offered hormone therapy, and few clinicians have menopause training, so symptoms go undertreated. Health equity means directing effort where barriers fall."
+  ],
+  [
+   "p",
+   "Clinicians carry assumptions too. **Implicit bias** shapes counseling and pain treatment without awareness, and an unexamined assumption, such as that a transgender man cannot be pregnant, can miss a diagnosis. {{rp29_tic|Trauma-informed care}} explains each step before doing it, asks permission, offers a chaperone, lets the patient stop at any time, delays the pelvic exam until rapport exists, examines only what is needed and lets the patient choose the speculum size and insert it themselves. Culturally responsive care adds a professional **interpreter** rather than a relative, {{rp29_humility|cultural humility}}, which is ongoing self-reflection rather than expertise in a culture, and shared decision-making that keeps the patient's goals at the center."
+  ],
+  [
+   "p",
+   "Law, ethics and clinical judgment answer different questions. The **standard of care** is a legal measure, what a reasonably prudent clinician would do. Mandatory reporting laws require a report of suspected child abuse, of infections such as syphilis and chlamydia to the health department, and in some states of violence, even when the patient asks for confidentiality. A clinician's {{rp29_conscient|conscientious objection}} to a service is an ethical position that does not remove the duty to refer, to give emergency care and not to abandon the patient. Analyzing a hard case from clinical, ethical, legal, psychosocial and health-equity angles in turn, with autonomy, beneficence, nonmaleficence and justice, shows where the answers diverge; the figure works one case through all five."
+  ],
+  [
+   "f",
+   "rp29_ethics"
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp29_contra",
+    "q": "A transgender man on testosterone for a year has no periods and asks whether he needs contraception. Which reasoning is best?",
+    "o": [
+     "Amenorrhea proves ovulation has stopped, so he cannot become pregnant on testosterone",
+     "Testosterone is itself a reliable contraceptive once serum levels reach the usual male range",
+     "Testosterone stops bleeding but not reliably ovulation, so pregnancy is possible and a progestin or IUD method is needed",
+     "Only estrogen-containing pills are safe with testosterone, so combined pills are his one option"
+    ],
+    "a": 2,
+    "why": "Testosterone suppresses the hypothalamic-pituitary-ovarian axis enough to stop bleeding in most patients, but the suppression is incomplete, so ovulation can still occur. A man who keeps his uterus and ovaries and has a partner who makes sperm can conceive, and testosterone can virilize a female fetus. Amenorrhea is not proof of infertility, and an IUD, implant or progestin injection gives reliable contraception without estrogen."
+   }
+  ],
+  [
+   "vis",
+   "rp29"
+  ]
+ ],
+ "grid": {
+  "q": "Which statements about gender-affirming hormones are true?",
+  "items": [
+   [
+    "Spironolactone requires potassium monitoring",
+    1
+   ],
+   [
+    "Testosterone raises the hematocrit",
+    1
+   ],
+   [
+    "Oral estrogen carries more clotting risk than transdermal",
+    1
+   ],
+   [
+    "Testosterone can cause vaginal atrophy",
+    1
+   ],
+   [
+    "Puberty suppression with a GnRH agonist is reversible",
+    1
+   ],
+   [
+    "Fertility preservation is discussed before hormones start",
+    1
+   ],
+   [
+    "Voice deepening on testosterone is permanent",
+    1
+   ],
+   [
+    "Estradiol lowers but does not reliably stop sperm production",
+    1
+   ],
+   [
+    "Testosterone is reliable contraception",
+    0
+   ],
+   [
+    "Estradiol raises the pitch of the voice",
+    0
+   ],
+   [
+    "Puberty blockers permanently end puberty",
+    0
+   ],
+   [
+    "Spironolactone causes low potassium",
+    0
+   ],
+   [
+    "Amenorrhea on testosterone proves infertility",
+    0
+   ],
+   [
+    "Screening follows the organs present",
+    1
+   ],
+   [
+    "A transgender woman who keeps her prostate needs no screening discussion",
+    0
+   ]
+  ]
+ }
+}

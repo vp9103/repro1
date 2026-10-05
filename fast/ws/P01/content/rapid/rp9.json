@@ -20,7 +20,7 @@
   "w": {
    "Polycystic ovary syndrome": "PCOS is the most common cause of chronic anovulation in women who are not pregnant, but pregnancy must be excluded before it is considered.",
    "Hyperprolactinemia": "High prolactin suppresses GnRH and is a classic cause, but it accounts for a minority of cases and is tested only after hCG.",
-   "Primary ovarian insufficiency": "Ovarian insufficiency affects about 1 in 100 women before 40; it is diagnosed by high FSH once pregnancy is excluded.",
+   "Primary ovarian insufficiency": "Ovarian insufficiency is diagnosed by a high FSH once pregnancy is excluded. It is far less common than pregnancy.",
    "Asherman syndrome": "Intrauterine adhesions after curettage are a rare, history-driven cause with normal hormone levels."
   },
   "media": "fig:rp9_workup",
@@ -52,7 +52,7 @@
   "w": {
    "Age 13": "Thirteen is the threshold when breasts have not developed at all, which signals delayed puberty rather than isolated amenorrhea.",
    "Age 12": "Twelve is close to the average age of menarche in the United States, not a cutoff that triggers evaluation.",
-   "Age 16": "Sixteen was an older threshold; current guidance evaluates at 15 so that causes such as outflow obstruction are found sooner.",
+   "Age 16": "Sixteen is later than the current cutoff. Evaluating at 15 finds causes such as outflow obstruction sooner.",
    "Age 18": "Waiting until 18 would delay the diagnosis of Turner syndrome, Müllerian agenesis and other treatable causes by years."
   },
   "media": "fig:rp9_workup",
@@ -440,7 +440,7 @@
    "Galactorrhea"
   ],
   "a": 0,
-  "x": "Visual disturbances, along with hot flashes, come from clomiphene's anti-estrogen action; blurring or flashing lights are a reason to stop the drug.",
+  "x": "Clomiphene blocks estrogen receptors in the brain, so the typical side effects are hot flashes and visual disturbances. Multiple births can also follow ovarian overstimulation.",
   "w": {
    "Hyperkalemia": "Hyperkalemia is a risk of spironolactone, a potassium-sparing androgen blocker used for hirsutism.",
    "Lactic acidosis": "Lactic acidosis is the rare serious risk of metformin, especially with kidney failure or hypoxia.",

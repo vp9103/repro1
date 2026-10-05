@@ -4,7 +4,7 @@
  "sub": "How SRY, AMH, testosterone and DHT turn one indifferent embryo into male or female ducts and genitalia, and what each failure looks like.",
  "yld": "hi",
  "exam": "hi",
- "mins": 15,
+ "mins": 13,
  "bp": [
   "BP-rp5-01",
   "BP-rp5-02",
@@ -45,11 +45,11 @@
     "Granulosa cells"
    ],
    "a": 0,
-   "why": "SRY makes the supporting cells of the gonad differentiate into Sertoli cells, which secrete anti-Müllerian hormone and make the Müllerian ducts regress. Leydig cells, induced next, secrete testosterone that keeps the Wolffian ducts.",
+   "why": "SRY makes the supporting cells of the gonad become Sertoli cells, which secrete anti-Müllerian hormone and make the Müllerian ducts regress. Leydig cells, induced next, secrete testosterone, which keeps the Wolffian ducts.",
    "w": {
-    "Leydig cells": "Leydig cells in the testis interstitium secrete testosterone, which preserves the Wolffian ducts; they do not make the hormone that removes the female ducts.",
-    "Germ cells": "Germ cells migrate in from the yolk sac and become spermatogonia; they are needed for gonad development but secrete no duct-regulating hormone.",
-    "Granulosa cells": "Granulosa cells are the ovarian counterpart of Sertoli cells; the fetal ovary makes little of this hormone, which is why the female ducts persist."
+    "Leydig cells": "Leydig cells in the testis interstitium secrete testosterone, which preserves the Wolffian ducts. They do not make the hormone that removes the female ducts.",
+    "Germ cells": "Germ cells migrate in from the yolk sac and become spermatogonia. They are needed for gonad development but secrete no duct-regulating hormone.",
+    "Granulosa cells": "Granulosa cells are the ovarian counterpart of Sertoli cells. The fetal ovary makes little of this hormone, which is why the female ducts persist."
    }
   },
   {
@@ -61,11 +61,11 @@
     "Genital tubercle"
    ],
    "a": 0,
-   "why": "The fused Müllerian ducts form the uterus, cervix and upper vagina, while the sinovaginal bulbs of the urogenital sinus form the lower vagina. The two meet at the vaginal plate, which must canalize to open the canal.",
+   "why": "The fused Müllerian ducts form the uterus, cervix and upper vagina. The sinovaginal bulbs of the urogenital sinus form the lower vagina. The two meet at the vaginal plate, which must canalize to open the canal.",
    "w": {
-    "Paramesonephric ducts": "The paramesonephric ducts fuse to build the uterus, cervix and upper vagina; the lowest part of the canal comes from a different, endodermal source.",
-    "Mesonephric ducts": "The mesonephric ducts regress in females without testosterone; a remnant can persist in the lateral vaginal wall as a Gartner duct cyst.",
-    "Genital tubercle": "The genital tubercle becomes the clitoris in females; it forms external erectile tissue, not any part of the internal vaginal canal."
+    "Paramesonephric ducts": "The paramesonephric ducts fuse to build the uterus, cervix and upper vagina. The lowest part of the canal comes from a different, endodermal source.",
+    "Mesonephric ducts": "The mesonephric ducts regress in females without testosterone. A remnant can persist in the lateral vaginal wall as a Gartner duct cyst.",
+    "Genital tubercle": "The genital tubercle becomes the clitoris in females. It forms external erectile tissue, not any part of the internal vaginal canal."
    }
   },
   {
@@ -80,8 +80,8 @@
    "why": "In males, DHT makes the urethral folds fuse along the underside of the phallus to enclose the spongy urethra. Incomplete fusion leaves the urethral opening on the ventral shaft, scrotum or perineum, which is hypospadias.",
    "w": {
     "Positioning of the genital tubercle": "An abnormally placed genital tubercle gives epispadias, with the opening on the dorsal surface, often together with bladder exstrophy.",
-    "Fusion of the labioscrotal swellings": "Failed labioscrotal fusion leaves a bifid scrotum, which can accompany severe cases but does not itself place the urethral meatus.",
-    "Closure of the processus vaginalis": "A patent processus vaginalis causes an indirect inguinal hernia or communicating hydrocele; it has no role in forming the urethra."
+    "Fusion of the labioscrotal swellings": "Failed labioscrotal fusion leaves a bifid scrotum. It can accompany severe cases but does not itself place the urethral meatus.",
+    "Closure of the processus vaginalis": "A patent processus vaginalis causes an indirect inguinal hernia or a communicating hydrocele. It has no role in forming the urethra."
    }
   }
  ],
@@ -92,15 +92,15 @@
   ],
   [
    "p",
-   "Every embryo starts with the same parts. The gonad forms on the **genital ridge**, a strip of intermediate mesoderm beside the developing kidney, and it becomes a real gonad only after primordial germ cells migrate into it from the wall of the yolk sac during weeks 4 to 6. Until about week 7 the gonad is **bipotent**, able to become a testis or an ovary, and both duct pairs are present: the mesonephric (Wolffian) ducts and the paramesonephric (Müllerian) ducts. Chromosomal sex is fixed at fertilization, but it acts through one gene: the {{rp5_sry|sex-determining region of the Y chromosome}} encodes **testis-determining factor**, which switches on {{rp5_sox9|SOX9}} in the supporting cells and turns them into Sertoli cells, the first step in building a testis."
+   "Every embryo starts with the same parts. The gonad forms on the **genital ridge**, a strip of intermediate mesoderm beside the developing kidney. It becomes a true gonad only after primordial germ cells migrate into it from the wall of the yolk sac during weeks 4 to 6. Until about week 7 the gonad is **bipotent**, able to become a testis or an ovary. Both duct pairs are present: the mesonephric (Wolffian) ducts and the paramesonephric (Müllerian) ducts. Chromosomal sex is fixed at fertilization, but it acts through one gene. The {{rp5_sry|sex-determining region of the Y chromosome}} (SRY) encodes **testis-determining factor**. This switches on {{rp5_sox9|SOX9}} in the supporting cells and turns them into Sertoli cells, the first step in building a testis."
   ],
   [
    "p",
-   "Sertoli cells secrete {{rp5_amh|anti-Müllerian hormone}} (AMH), a SOX9 target, which makes the Müllerian duct on the same side regress. Sertoli cells then induce **Leydig cells**, which secrete testosterone from about week 8 under placental hCG; testosterone stabilizes the Wolffian ducts. In genital skin and the urogenital sinus, **5α-reductase** converts testosterone to **dihydrotestosterone** (DHT), a stronger androgen that builds the penis, scrotum and prostate. Without SRY there are no Sertoli or Leydig cells, so there is no AMH and no testosterone: the gonad becomes an ovary, the Müllerian ducts develop, the Wolffian ducts regress and the genitalia become female. Female development is the default and needs no ovarian hormone."
+   "Sertoli cells secrete {{rp5_amh|anti-Müllerian hormone}} (AMH), a SOX9 target, which makes the Müllerian duct on the same side regress. Sertoli cells then induce **Leydig cells**, which secrete testosterone from about week 8 under placental hCG. Testosterone stabilizes the Wolffian ducts. In genital skin and the urogenital sinus, **5α-reductase** converts testosterone to **dihydrotestosterone** (DHT), a stronger androgen that builds the penis, scrotum and prostate. Without SRY there are no Sertoli or Leydig cells, so there is no AMH and no testosterone. The gonad becomes an ovary, the Müllerian ducts develop, the Wolffian ducts regress and the genitalia become female. Female development is the default and needs no ovarian hormone."
   ],
   [
    "p",
-   "Inside the gonad the two sexes organize the germ cells differently. In the testis, Sertoli cells and germ cells form testis cords that hollow into seminiferous tubules, which join the mesonephric duct through the rete testis and efferent ductules, while Leydig cells fill the spaces between them. In the ovary, germ cells become oogonia, enter meiosis I and arrest as primary oocytes inside primordial follicles."
+   "Inside the gonad the two sexes organize the germ cells differently. In the testis, Sertoli cells and germ cells form testis cords that hollow into seminiferous tubules, with Leydig cells between them. In the ovary, germ cells become oogonia, enter meiosis I and arrest as primary oocytes inside primordial follicles."
   ],
   [
    "f",
@@ -110,7 +110,7 @@
    "call",
    "key",
    "Three male signals, three separate jobs",
-   "**AMH** removes the Müllerian ducts, **testosterone** keeps the Wolffian ducts, and **DHT** builds the external genitalia and prostate. Because each signal has its own target, each defect has its own pattern, and the disorders of sex development are sorted by it: missing AMH leaves a uterus in a normal-looking boy, missing androgen action leaves female genitalia with no uterus, and missing DHT leaves male internal ducts with undervirilized external genitalia."
+   "**AMH** removes the Müllerian ducts, **testosterone** keeps the Wolffian ducts, and **DHT** builds the external genitalia and prostate. Each signal has its own target, so each defect has its own pattern. Missing AMH leaves a uterus in a normal-looking boy. Missing androgen action leaves female genitalia with no uterus. Missing DHT leaves male internal ducts with undervirilized external genitalia."
   ],
   [
    "h",
@@ -118,11 +118,11 @@
   ],
   [
    "p",
-   "The **mesonephric** (Wolffian) duct first drains the embryonic kidney, and in males testosterone turns it into the epididymis, vas deferens, seminal vesicle and ejaculatory duct. Its caudal end also sprouts the **ureteric bud** in both sexes, which becomes the ureter and collecting system. In females the duct regresses, leaving the epoophoron beside the ovary and a remnant in the lateral vaginal wall that can form a {{rp5_gartner|Gartner duct cyst}}."
+   "The **mesonephric** (Wolffian) duct first drains the embryonic kidney. In males, testosterone turns it into the epididymis, vas deferens, seminal vesicle and ejaculatory duct. Its lower end also sprouts the **ureteric bud** in both sexes, which becomes the ureter and collecting system. In females the duct regresses, leaving the epoophoron beside the ovary and a remnant in the lateral vaginal wall that can form a {{rp5_gartner|Gartner duct cyst}}."
   ],
   [
    "p",
-   "The **paramesonephric** (Müllerian) ducts form alongside the mesonephric ducts: their unfused upper parts become the fallopian tubes, and their fused lower parts form the uterus, cervix and upper vagina. In males AMH removes them except for the appendix testis, a nubbin on the testis whose torsion mimics testicular torsion and shows as a blue dot. The lower vagina comes from the endodermal urogenital sinus, which also forms the prostate and bulbourethral glands in males and the Skene and Bartholin glands in females."
+   "The **paramesonephric** (Müllerian) ducts form alongside the mesonephric ducts. Their unfused upper parts become the fallopian tubes, and their fused lower parts form the uterus, cervix and upper vagina. In males AMH removes them, except for a small remnant, the appendix testis. The lower vagina comes from the endodermal urogenital sinus. The sinus also forms the prostate and bulbourethral glands in males and the Skene and Bartholin glands in females."
   ],
   [
    "t",
@@ -165,15 +165,15 @@
   ],
   [
    "p",
-   "Before the external genitalia can form, the **cloaca**, the common end of the hindgut and the allantois, must be divided. The **urorectal septum** grows down between them and splits the cloaca into the urogenital sinus in front and the anorectal canal behind. Failure of this division leaves a fistula between the rectum and the urethra or vagina together with an imperforate anus, and a newborn boy may pass meconium in the urine."
+   "Before the external genitalia can form, the **cloaca**, the common end of the hindgut and the allantois, must be divided. The **urorectal septum** grows down between them and splits the cloaca into the urogenital sinus in front and the anorectal canal behind. Failure of this division leaves a fistula between the rectum and the urethra or vagina, together with an imperforate anus. A newborn boy may then pass meconium in the urine."
   ],
   [
    "p",
-   "The external genitalia also start identical. Around the cloacal membrane lie a midline **genital tubercle**, paired **urogenital folds** and, outside them, paired **labioscrotal** swellings. In a male, DHT makes the tubercle elongate into the glans and shaft of the penis, the urogenital folds fuse along the underside to enclose the spongy urethra, and the labioscrotal swellings fuse in the midline to form the scrotum. The urethra within the glans forms separately, from an ingrowth of surface ectoderm that meets the spongy urethra. Without DHT the tubercle becomes the clitoris, the folds stay open as the labia minora, and the swellings become the labia majora."
+   "The external genitalia also start identical. Around the cloacal membrane lie a midline **genital tubercle**, paired **urogenital folds** and, outside them, paired **labioscrotal** swellings. In a male, DHT makes the tubercle elongate into the glans and shaft of the penis. The urogenital folds fuse along the underside to enclose the spongy urethra, and the labioscrotal swellings fuse in the midline to form the scrotum. The urethra within the glans forms separately, from an ingrowth of surface ectoderm. Without DHT the tubercle becomes the clitoris, the folds stay open as the labia minora, and the swellings become the labia majora."
   ],
   [
    "p",
-   "The sexes are recognizable by about week 12, and because each female structure has a male homolog, one embryonic error can be traced in either sex. When androgen exposure is partial or comes from the wrong source, the structures stall between the two fates and the newborn has ambiguous genitalia, the subject of the next topic."
+   "The sexes are recognizable by about week 12, and each female structure has a male homolog. When androgen exposure is partial or comes from the wrong source, the structures stall between the two fates. The newborn then has ambiguous genitalia, the subject of the next topic."
   ],
   [
    "f",
@@ -183,7 +183,7 @@
    "call",
    "trap",
    "Hypospadias is ventral; epispadias is dorsal",
-   "**Hypospadias** is common and comes from urethral folds that fail to fuse, so the opening sits on the underside of the penis, often with chordee; circumcision is delayed because the foreskin may be needed for repair. **Epispadias** is rare, puts the opening on the dorsal surface, comes from an abnormally positioned genital tubercle and travels with bladder **exstrophy**."
+   "**Hypospadias** is common. The urethral folds fail to fuse, so the opening sits on the underside of the penis, often with chordee, a downward curve. Circumcision is delayed because the foreskin may be needed for repair. **Epispadias** is rare. The opening is on the dorsal surface because the genital tubercle was abnormally positioned, and it travels with bladder **exstrophy**."
   ],
   [
    "h",
@@ -196,19 +196,19 @@
     [
      [
       "The two ducts form",
-      "Each paramesonephric duct grows down beside a mesonephric duct. If both fail to form, the result is Müllerian agenesis; if one fails, a unicornuate uterus results."
+      "Each paramesonephric duct grows down beside a mesonephric duct. If both fail to form, the result is Müllerian agenesis. If one fails, a unicornuate uterus results."
      ],
      [
       "The lower ducts fuse",
-      "The caudal ducts meet in the midline to form one uterovaginal canal. Complete failure of fusion gives uterus didelphys with two cervices; partial failure gives a bicornuate uterus."
+      "The lower ducts meet in the midline to form one uterovaginal canal. Complete failure of fusion gives uterus didelphys with two cervices, and partial failure gives a bicornuate uterus."
      ],
      [
       "Septal resorption removes the midline wall",
-      "The wall between the fused ducts must dissolve by resorption. A persisting septum leaves a septate uterus, the most common anomaly and a cause of recurrent pregnancy loss."
+      "The wall between the fused ducts must dissolve. A persisting septum leaves a septate uterus, the most common anomaly and a cause of recurrent pregnancy loss."
      ],
      [
       "Canalization hollows the vaginal plate",
-      "Solid tissue where the ducts meet the urogenital sinus must hollow out by canalization. Failure leaves vaginal atresia, a transverse vaginal septum or an imperforate hymen."
+      "Solid tissue where the ducts meet the urogenital sinus must hollow out. Failure leaves vaginal atresia, a transverse vaginal septum or an imperforate hymen."
      ]
     ]
    ]
@@ -219,7 +219,7 @@
   ],
   [
    "p",
-   "The clinical weight of each anomaly is obstetric. The septum of a septate uterus is poorly vascularized, so an embryo that implants on it often fails, and the anomaly causes recurrent **pregnancy loss** that hysteroscopic resection improves. A bicornuate, didelphys or unicornuate uterus has a smaller or distorted cavity, so pregnancies more often end in **preterm** labor, breech presentation or second-trimester loss. In {{rp5_mrkh|Mayer-Rokitansky-Küster-Hauser syndrome}}, a 46,XX patient has normal ovaries, breasts and pubic hair but no uterus or upper vagina, so she presents with **primary amenorrhea** and a short, blind vaginal pouch. Prenatal exposure to diethylstilbestrol, a drug stopped in the early 1970s, disturbs the same ducts and leaves a T-shaped uterus with similar risks."
+   "The clinical weight of each anomaly is obstetric. The septum of a septate uterus is poorly vascularized, so an embryo that implants on it often fails. This causes recurrent **pregnancy loss**, which resection of the septum improves. A bicornuate, didelphys or unicornuate uterus has a smaller or distorted cavity, so pregnancies more often end in **preterm** labor, breech presentation or second-trimester loss. In {{rp5_mrkh|Mayer-Rokitansky-Küster-Hauser syndrome}}, a 46,XX patient has normal ovaries, breasts and pubic hair but no uterus or upper vagina. She presents with **primary amenorrhea** and a short, blind vaginal pouch. Prenatal exposure to diethylstilbestrol disturbs the same ducts and leaves a T-shaped uterus with similar risks."
   ],
   [
    "t",
@@ -263,15 +263,7 @@
   ],
   [
    "p",
-   "Telling these anomalies apart depends on the outside of the uterus as much as the inside. Hysterosalpingography fills only the cavity, so a septate and a bicornuate uterus can look alike. **Magnetic resonance** imaging solves this: **T2-weighted** images show bright endometrium, a dark junctional zone and intermediate-signal outer myometrium, and coronal views show whether the fundal contour is smooth or cleft. A septate uterus keeps a smooth or nearly smooth fundus with a septum that can be resected hysteroscopically, whereas a bicornuate uterus has a deep fundal cleft between two horns."
-  ],
-  [
-   "p",
-   "Sagittal T2 images also let you name the cervix and vagina, which lie in one line between the bladder in front and the rectum behind. The cervix is the tubular segment below the isthmus at the internal os: a thick ring of dark fibrous stroma surrounds a bright core of endocervical mucus, and its lower end projects into the vagina, which wraps around it as the fornices. The vagina is the collapsed tube that runs down and forward to the introitus, behind the urethra and bladder base and in front of the rectum; its dark muscular wall surrounds a thin bright mucosal stripe, and on axial slices the flattened lumen makes an H shape."
-  ],
-  [
-   "p",
-   "Outflow obstruction behaves differently from agenesis because a working uterus is present. With an **imperforate hymen**, the membrane where the vaginal plate meets the urogenital sinus fails to open, so menstrual blood collects behind it as **hematocolpos**: a girl with normal breasts and pubic hair has primary amenorrhea, monthly pelvic pain and a bulging, bluish membrane at the introitus. A transverse vaginal septum causes the same cyclic pain with a normal hymen, and vaginal atresia leaves a uterus above a missing lower vagina. MRKH usually lacks functioning endometrium, so cyclic pain is uncommon."
+   "Outflow obstruction differs from agenesis because a working uterus is present. With an **imperforate hymen**, the membrane where the vaginal plate meets the urogenital sinus fails to open, so menstrual blood collects behind it as **hematocolpos**. A girl with normal breasts and pubic hair has primary amenorrhea, monthly pelvic pain and a bulging, bluish membrane at the introitus. A transverse vaginal septum causes the same cyclic pain with a normal hymen, and vaginal atresia leaves a uterus above a missing lower vagina. MRKH usually lacks functioning endometrium, so cyclic pain is uncommon."
   ],
   [
    "h",
@@ -279,11 +271,7 @@
   ],
   [
    "p",
-   "The paramesonephric duct forms along the mesonephric duct, and the same mesonephric duct sprouts the **ureteric bud**, so an early mesonephric defect can remove both the kidney and the Müllerian structures on that side. A unicornuate uterus, or a didelphys uterus with an obstructed hemivagina, therefore often comes with **renal agenesis** on the **ipsilateral** side, and every Müllerian anomaly deserves a renal ultrasound. In a man the same logic pairs unilateral renal agenesis with an absent vas deferens and seminal vesicle on that side."
-  ],
-  [
-   "p",
-   "The reverse error happens when the ureteric bud arises too far down the mesonephric duct. The ureter is then carried along with the duct and opens in the wrong place, an **ectopic ureter**, most often draining the upper pole of a duplicated kidney. In a boy it enters a mesonephric derivative such as the seminal vesicle or vas deferens above the external sphincter, so it causes recurrent infection or epididymitis rather than leaking urine. In a girl it opens into the lower urethra, vagina or vestibule below the sphincter, so she is wet continuously despite normal voiding."
+   "The paramesonephric duct forms along the mesonephric duct, and the same mesonephric duct sprouts the **ureteric bud**. So an early mesonephric defect can remove both the kidney and the Müllerian structures on that side. A unicornuate uterus, or a didelphys uterus with an obstructed hemivagina, therefore often comes with **renal agenesis** on the ipsilateral side. Every Müllerian anomaly deserves a renal ultrasound. In a man, the same logic pairs unilateral renal agenesis with an absent vas deferens and seminal vesicle on that side. If the bud arises too low on the duct, the ureter opens in the wrong place, an **ectopic ureter**."
   ],
   [
    "h",
@@ -291,11 +279,11 @@
   ],
   [
    "p",
-   "The testis forms high on the posterior abdominal wall and descends in two phases. In the **transabdominal** phase, {{rp5_insl3|INSL3}} from Leydig cells swells the {{rp5_gub|gubernaculum}}, a cord from the lower pole of the gonad to the labioscrotal swelling, which holds the testis near the future deep inguinal ring while the abdomen grows past it. In the **inguinoscrotal** phase, mostly in the last trimester and dependent on androgen, the gubernaculum guides the testis through the inguinal canal into the scrotum. In females the same cord becomes the ovarian ligament and the round ligament of the uterus."
+   "The testis forms high on the posterior abdominal wall and descends in two phases. In the **transabdominal** phase, {{rp5_insl3|INSL3}} from Leydig cells swells the {{rp5_gub|gubernaculum}}, a cord from the lower pole of the gonad to the labioscrotal swelling. It holds the testis near the future deep inguinal ring while the abdomen grows past it. In the **inguinoscrotal** phase, mostly in the last trimester and dependent on androgen, the gubernaculum guides the testis through the inguinal canal into the scrotum. In females the same cord becomes the ovarian ligament and the round ligament of the uterus."
   ],
   [
    "p",
-   "Ahead of the testis a pouch of peritoneum, the {{rp5_pv|processus vaginalis}}, pushes through the **deep inguinal ring**, an opening in the transversalis fascia lateral to the inferior epigastric vessels, and leaves the canal through the superficial ring in the external oblique aponeurosis. As the testis passes each layer of the wall it picks up a covering, so the **spermatic cord** is wrapped in layers that mirror the wall. After the testis arrives, the proximal processus vaginalis obliterates and the distal part persists as the **tunica vaginalis**, a peritoneal sac around the front and sides of the testis."
+   "Ahead of the testis, a pouch of peritoneum called the {{rp5_pv|processus vaginalis}} pushes through the **deep inguinal ring**. This ring is an opening in the transversalis fascia, lateral to the inferior epigastric vessels. It leaves the canal through the superficial ring in the external oblique aponeurosis. As the testis passes each layer of the wall it picks up a covering, so the **spermatic cord** is wrapped in layers that mirror the wall. After the testis arrives, the proximal processus vaginalis closes. The distal part persists as the **tunica vaginalis**, a peritoneal sac around the front and sides of the testis."
   ],
   [
    "f",
@@ -332,12 +320,12 @@
   ],
   [
    "p",
-   "When descent fails, the consequences follow from the anatomy. **Cryptorchidism**, a testis that stays in the abdomen or canal after either phase fails, affects about 1 percent of boys at 1 year; the warmer position impairs spermatogenesis, and germ cell tumor risk, especially seminoma, rises in both testes, so orchiopexy is done in infancy. If the processus vaginalis stays patent, bowel can follow it as an indirect inguinal hernia, or peritoneal fluid can fill it as a communicating **hydrocele**, which transilluminates. Inside the cord run the vas deferens, testicular artery, pampiniform plexus and the genital branch of the genitofemoral nerve, which supplies the cremaster; stroking the inner thigh makes the ipsilateral cremaster lift the testis, the cremasteric reflex, whose afferent limb is the femoral branch of the same nerve."
+   "When descent fails, the consequences follow from the anatomy. **Cryptorchidism** is a testis that stays in the abdomen or canal. The warmer position impairs spermatogenesis, and the risk of germ cell tumor, especially seminoma, rises in both testes, so orchiopexy is done in infancy. If the processus vaginalis stays patent, bowel can follow it as an indirect inguinal hernia. Peritoneal fluid can instead fill it as a communicating **hydrocele**, which transilluminates. Inside the cord run the vas deferens, testicular artery, pampiniform plexus and the genital branch of the genitofemoral nerve, which supplies the cremaster. Stroking the inner thigh makes the ipsilateral cremaster lift the testis, the cremasteric reflex, whose afferent limb is the femoral branch of the same nerve."
   ],
   [
    "why",
    "Why does a 46,XY child with 5α-reductase deficiency look female at birth but virilize at puberty?",
-   "Before birth the external genitalia depend on DHT, because genital skin needs the stronger androgen that 5α-reductase makes locally. Without the enzyme the tubercle stays small, the urethral folds stay open and the labioscrotal swellings stay unfused, so the genitalia look female or ambiguous. The internal ducts are normal, because testosterone itself keeps the Wolffian ducts and Sertoli cells still make AMH, so there is a vas deferens but no uterus. At puberty the testes make adult amounts of testosterone, enough to act on androgen receptors directly, so the phallus enlarges and the voice deepens."
+   "Before birth the external genitalia depend on DHT, because genital skin needs the stronger androgen that 5α-reductase makes locally. Without the enzyme the tubercle stays small, the urethral folds stay open and the labioscrotal swellings stay unfused, so the genitalia look female or ambiguous. The internal ducts are normal. Testosterone itself keeps the Wolffian ducts, and Sertoli cells still make AMH, so there is a vas deferens but no uterus. At puberty the testes make adult amounts of testosterone, enough to act on androgen receptors directly, so the phallus enlarges and the voice deepens."
   ],
   [
    "sexp",

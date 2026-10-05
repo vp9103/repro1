@@ -542,7 +542,7 @@
   "e": "Acyclovir, valacyclovir and famciclovir all need the viral **thymidine kinase** to add their first phosphate. A kinase-deficient mutant, selected by long drug exposure in people with very low CD4 counts, is therefore resistant to all of them. Ganciclovir and valganciclovir are activated by the same herpes kinase in HSV-infected cells, so they fail too. Foscarnet is a pyrophosphate analog that binds viral DNA polymerase directly and needs no activation, so it works against thymidine kinase-deficient virus. Its main toxicity is kidney injury, and it also lowers calcium and magnesium.",
   "w": {
    "Famciclovir": "Famciclovir is converted to penciclovir, which also needs viral thymidine kinase for its first phosphate, so a kinase-deficient isolate resists it.",
-   "Ganciclovir": "Ganciclovir needs a viral kinase for activation. In herpes simplex infection that kinase is thymidine kinase, which this isolate lacks.",
+   "Ganciclovir": "Ganciclovir also needs a viral kinase to be activated. In herpes simplex that is thymidine kinase, which this mutant lacks, so the drug stays inactive.",
    "Intravenous acyclovir": "Higher blood levels cannot overcome resistance caused by a missing activating enzyme. Without thymidine kinase the drug is never phosphorylated at any dose.",
    "Valganciclovir": "Valganciclovir is the oral prodrug of ganciclovir, used mainly for cytomegalovirus. It depends on the same viral kinase and fails against this mutant."
   },
