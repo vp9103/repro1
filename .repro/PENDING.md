@@ -21,7 +21,8 @@ en9_hypercalcemia, en9_three_hpt missing.
 | I02 | worker (merge with --skip I02 until done) | images rp12, rp14, rp20 + Gemini overlays (fast/ws/I02) | fast_check I02 ok |
 | P2.V | DONE 2026-10-05 (run 9: 10/10 + 19/19 regression) | | ledger row |
 | P3.1 | CLOSED 2026-10-05 (rp1-rp3, 40 gap lines) | | ledger row sha:1c20a979 |
-| P3.2 | worker | rp4, rp5, rp6 (.repro/ws/P3_2) | --status P3.2 ok |
+| P3.2 | CLOSED 2026-10-05 (rp4-rp6, 16 gap lines) | | ledger row sha:ec2eeecd |
+| P3.3 | worker | rp7, rp8, rp9 (.repro/ws/P3_3) | --status P3.3 ok |
 | P2.6 | CLOSED 2026-10-05 (F3) | ledger row sha:29b015ac | |
 | V2 | DONE (finished before the restart; 8 new figures reviewed 2026-10-05) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
 | P1.4 | CLOSED 2026-10-05 (round 3, part->anchor proposals A.md/B.md) | 302 rows, 48 UNANCHORED, 4 topic changes | ledger row |

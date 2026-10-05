@@ -82,7 +82,11 @@
   ],
   [
    "p",
-   "Sex has layers, and a disorder of sex development (DSD) is a congenital condition in which the layers do not line up in the usual way. **Genotypic sex** is the karyotype, fixed at fertilization by whether the sperm carries an X or a Y. Gonadal sex is whether the gonad becomes a testis or an ovary. **Phenotypic sex** is the body that hormones build: the internal ducts, the external genitalia and, later, the secondary sex characteristics. **Gender identity** is a person's inner sense of being a woman, a man or another gender. It cannot be read from the karyotype or the anatomy, so clinicians ask rather than assume."
+   "Sex has layers, and a disorder of sex development (DSD) is a congenital condition in which the layers do not line up in the usual way. **Genotypic sex** is the karyotype, fixed at fertilization by whether the sperm carries an X or a Y. Gonadal sex is whether the gonad becomes a testis or an ovary. **Phenotypic sex** is the body that hormones build: the internal ducts, the external genitalia and, later, the secondary sex characteristics. **Gender identity** is a person's inner sense of being a woman, a man or another gender. It cannot be read from the karyotype or the anatomy, so clinicians ask rather than assume. Sexual orientation, whom a person is attracted to, is a separate axis that no layer predicts."
+  ],
+  [
+   "f",
+   "rp6_layers"
   ],
   [
    "p",
@@ -108,11 +112,19 @@
   ],
   [
    "p",
-   "In {{rp6_5ard|5-alpha-reductase deficiency}}, an autosomal recessive defect, testosterone is normal but DHT is low, so the **testosterone-to-DHT ratio** is high. Testosterone alone is enough for the Wolffian ducts, so the epididymis, vas deferens and seminal vesicles form, and AMH still removes the uterus. The external genitalia depend on DHT, so the newborn has ambiguous genitalia: a small phallus, hypospadias, a bifid scrotum and a blind vaginal pouch. At **puberty** the testosterone surge is large enough to act on the receptor directly, so the child **virilizes**: the phallus grows, the voice deepens and muscle mass increases, while beard growth and the prostate stay small."
+   "In {{rp6_5ard|5-alpha-reductase deficiency}}, an autosomal recessive defect, testosterone is normal but DHT is low, so the **testosterone-to-DHT ratio** is high. Testosterone alone is enough for the Wolffian ducts, so the epididymis, vas deferens and seminal vesicles form, and AMH still removes the uterus. The external genitalia depend on DHT, so the newborn has ambiguous genitalia: a small phallus, hypospadias from unfused urethral folds, a bifid scrotum and a blind vaginal pouch. At **puberty** the testosterone surge is large enough to act on the receptor directly, so the child **virilizes**: the phallus grows, the voice deepens and muscle mass increases, while beard growth and the prostate stay small."
   ],
   [
    "p",
-   "**Swyer syndrome** is 46,XY pure gonadal dysgenesis, most often from a mutation or deletion of SRY. The gonad never becomes a testis and stays a fibrous {{rp6_streak|streak gonad}} that makes neither AMH nor testosterone. Without AMH a uterus and fallopian tubes form, and without testosterone the genitalia are female. At puberty there is no estrogen, so the girl has no breast development and primary amenorrhea, with high FSH and LH because nothing feeds back on the pituitary. A dysgenetic gonad that contains Y material carries a high risk of **gonadoblastoma**, so both streaks are removed once the diagnosis is made."
+   "**Swyer syndrome** is 46,XY pure gonadal dysgenesis, classically from a mutation or deletion of SRY, although many cases have no identified cause. The gonad never becomes a testis and stays a fibrous {{rp6_streak|streak gonad}} that makes neither AMH nor testosterone. Without AMH a uterus and fallopian tubes form, and without testosterone the genitalia are female. At puberty there is no estrogen, so the girl has no breast development and primary amenorrhea, with high FSH and LH because nothing feeds back on the pituitary. A dysgenetic gonad that contains Y material carries a high risk of **gonadoblastoma**, so gonadectomy is advised."
+  ],
+  [
+   "p",
+   "Gonadectomy, removal of the gonads, follows from the cancer risk of each gonad. Streak gonads with Y material, as in Swyer syndrome, are removed at diagnosis because gonadoblastoma risk is high; estrogen then progestin induce puberty and menses, and the uterus can carry a pregnancy from a donated oocyte. In complete androgen insensitivity the testes carry a low tumor risk before puberty, so they are often left until puberty is complete, because their testosterone is aromatized to the estrogen that grows the breasts, and then removed, followed by estrogen replacement."
+  ],
+  [
+   "f",
+   "rp6_dsd"
   ],
   [
    "t",
@@ -179,7 +191,7 @@
   ],
   [
    "p",
-   "**Congenital adrenal hyperplasia** is the most common cause of ambiguous genitalia in a 46,XX newborn. In 21-hydroxylase deficiency the adrenal cannot make cortisol, ACTH rises, and the stalled precursors are shunted into adrenal androgens. The androgen enlarges the clitoris and fuses the labioscrotal folds, but the internal organs stay female, with ovaries, a uterus and tubes, because no testis ever made AMH. Severe forms also waste salt and can cause shock in the first weeks of life, and 17-hydroxyprogesterone is high. The enzyme details belong to the adrenal topic (en11)."
+   "**Congenital adrenal hyperplasia** is the most common cause of ambiguous genitalia in a 46,XX newborn. In 21-hydroxylase deficiency the adrenal cannot make cortisol, ACTH rises, and the stalled precursors are shunted into adrenal androgens. The androgen enlarges the clitoris and partly fuses the labioscrotal swellings, but the internal organs stay female, with ovaries, a uterus and tubes, because no testis ever made AMH. Severe forms also waste salt and can cause shock in the first weeks of life, and 17-hydroxyprogesterone is high. The enzyme details belong to the adrenal topic (en11)."
   ],
   [
    "p",
@@ -224,7 +236,7 @@
   ],
   [
    "p",
-   "**Klinefelter syndrome** (47,XXY) is the most common cause of primary hypogonadism in men and comes from meiotic nondisjunction. The extra X damages the seminiferous tubules, which scar, so the testes are small and firm and the man is infertile. Sertoli cell loss lowers **inhibin** B, so FSH rises; Leydig cell failure lowers testosterone, so LH rises. High LH drives testicular aromatase, estradiol rises relative to testosterone, and the result is gynecomastia, a female pattern of hair and fat, and a higher risk of male breast cancer. Low testosterone delays closure of the growth plates, so he is tall with long legs. The inactivated extra X shows as a {{rp6_barr|Barr body}}."
+   "**Klinefelter syndrome** (47,XXY) is the most common cause of primary hypogonadism in men and comes from meiotic nondisjunction. The extra X damages the seminiferous tubules, which hyalinize and scar, so the testes are small and firm and the man is infertile with {{rp6_azoo|azoospermia}}, although testicular sperm extraction recovers sperm in some. Sertoli cell loss lowers **inhibin** B, so FSH rises; Leydig cell failure lowers testosterone, so LH rises. High LH drives testicular aromatase, estradiol rises relative to testosterone, and the result is gynecomastia, a female pattern of hair and fat, and a higher risk of male breast cancer. Low testosterone delays closure of the growth plates, so he is tall with long legs. The inactivated extra X shows as a {{rp6_barr|Barr body}}."
   ],
   [
    "f",
@@ -236,7 +248,11 @@
   ],
   [
    "p",
-   "**Kallmann syndrome** is a failure of GnRH neurons to migrate from the olfactory placode to the hypothalamus. The olfactory neurons travel the same path and fail with them, so the patient has **anosmia**. Without GnRH, FSH, LH and sex steroids are all low, puberty does not start, and the karyotype is normal. Three chromosomal variants round out the list. 47,XYY gives tall stature with normal genitalia and normal fertility, so it is usually found by chance. In 46,XX testicular DSD, SRY crossed onto an X chromosome during paternal meiosis, so a 46,XX person develops testes and a male body but makes no sperm. In **ovotesticular** DSD one person has both ovarian and testicular tissue, often in one ovotestis, with ambiguous genitalia."
+   "**Kallmann syndrome** is a failure of GnRH neurons to migrate from the olfactory placode to the hypothalamus. The olfactory neurons travel the same path and fail with them, so the patient has **anosmia**. Without GnRH, FSH, LH and sex steroids are all low, puberty does not start, and the karyotype is normal."
+  ],
+  [
+   "p",
+   "Three variants round out the list. **XYY syndrome** (47,XYY) comes from nondisjunction at paternal meiosis II; the man is tall, often has severe acne and mild learning or behavioral difficulties, and has normal testes, hormones and fertility, so it is usually found by chance. In 46,XX testicular DSD, SRY crossed onto an X chromosome during paternal meiosis, so a 46,XX person develops testes and a male body but, lacking other Y genes, has small testes and no sperm. In **ovotesticular** DSD one person has both ovarian and testicular tissue, often in one ovotestis, with ambiguous genitalia; the karyotype is most often 46,XX."
   ],
   [
    "sexp",
@@ -316,6 +332,14 @@
    [
     "Kallmann syndrome: high LH",
     0
+   ],
+   [
+    "47,XYY syndrome: tall stature with normal fertility",
+    1
+   ],
+   [
+    "Complete androgen insensitivity: gonadectomy after puberty",
+    1
    ]
   ]
  }

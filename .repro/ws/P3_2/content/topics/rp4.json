@@ -90,7 +90,7 @@
   ],
   [
    "p",
-   "Two clocks run in every pregnancy. **Gestational age** counts from the first day of the **last menstrual period**, because that date is usually known, so a term birth falls at 40 weeks, or 280 days. **Fertilization age**, also called embryonic age, counts from conception, which happens about 2 weeks after the period begins, so birth falls at about 38 weeks, or 266 days. Gestational age is therefore always about 2 weeks more than embryonic age. Due dates and ultrasound reports use gestational age, while embryology texts that speak of weeks 3 to 8 use embryonic age."
+   "Two clocks run in every pregnancy. **Gestational age** counts from the first day of the **last menstrual period**, because that date is usually known, so a term birth falls at 40 weeks, or 280 days. **Fertilization age**, also called embryonic age, counts from conception, which happens about 2 weeks after the period begins, so birth falls at about 38 weeks, or 266 days. Gestational age is therefore always about 2 weeks more than embryonic age. Due dates and ultrasound reports use gestational age; embryology texts that speak of weeks 3 to 8 use embryonic age."
   ],
   [
    "h",
@@ -98,7 +98,7 @@
   ],
   [
    "p",
-   "Fertilization happens in the **ampulla** of the uterine tube. Sperm must first complete {{rp4_cap|capacitation}} in the female tract; the **acrosome reaction** then digests a path through the zona pellucida, and once one sperm fuses, the **cortical reaction** hardens the zona against a second sperm. The oocyte finishes meiosis II and the two pronuclei merge. Cleavage divides the zygote without growth into a morula by about day 3, and fluid opens a cavity to make a blastocyst by about day 5."
+   "Fertilization happens in the **ampulla** of the uterine tube. Sperm must first complete {{rp4_cap|capacitation}}; the **acrosome reaction** then digests a path through the zona pellucida, and the **cortical reaction** hardens the zona against a second sperm. Cleavage then divides the zygote, without growth, into a morula and a blastocyst."
   ],
   [
    "p",
@@ -152,7 +152,19 @@
   ],
   [
    "p",
-   "Each germ layer builds a predictable set of tissues, so a defect in one layer links anomalies that look unrelated. Surface **ectoderm** forms the epidermis, lens, enamel and anterior pituitary, and neuroectoderm forms the brain, spinal cord and retina. Neural crest cells leave the folding neural tube to form peripheral ganglia, Schwann cells, melanocytes and the adrenal medulla. **Mesoderm** forms muscle, bone, the heart and vessels, blood, kidneys, gonads and the adrenal cortex. **Endoderm** lines the gut and airway and forms the liver, pancreas and thyroid follicular cells."
+   "Each germ layer builds a predictable set of tissues, so a defect in one layer links anomalies that look unrelated. Surface **ectoderm** forms the epidermis, lens, enamel and anterior pituitary, and neuroectoderm forms the brain, spinal cord and retina. {{rp4_crest|Neural crest}} cells leave the folding neural tube to form peripheral ganglia, Schwann cells, melanocytes and the adrenal medulla. **Mesoderm** forms muscle, bone, the heart and vessels, blood, kidneys, gonads and the adrenal cortex. **Endoderm** lines the gut and airway and forms the liver, pancreas and thyroid follicular cells."
+  ],
+  [
+   "p",
+   "The notochord induces the overlying ectoderm to thicken into the **neural plate**, which folds and closes into the **neural tube**, the future brain and spinal cord, while cells at the crest of each fold detach as the neural crest and migrate away. Closure ends at the two open ends, the neuropores: the anterior neuropore shuts at about day 25 and the posterior at about day 27, both in week 4. Failure of the anterior end leaves anencephaly and failure of the posterior end leaves spina bifida; together these are neural tube defects. Closure finishes before many women know they are pregnant, so folic acid is advised before conception, and a raised maternal serum alpha-fetoprotein screens for an open defect."
+  ],
+  [
+   "p",
+   "Mesoderm forms three strips beside the notochord. **Paraxial mesoderm** segments into paired **somites**, which become the vertebrae, trunk skeletal muscle and dermis; the notochord that organized them persists as the nucleus pulposus. Intermediate mesoderm forms the kidneys, gonads and genital ducts, and lateral plate mesoderm forms the heart, vessels and body wall. Folding rolls endoderm inside the embryo as the gut tube, and the foregut also buds the airway. A **tracheoesophageal** septum normally divides trachea from esophagus; if it forms abnormally, esophageal atresia with a fistula makes the newborn choke and turn blue at the first feed, and polyhydramnios appears because the fetus could not swallow."
+  ],
+  [
+   "f",
+   "rp4_origins"
   ],
   [
    "t",
@@ -178,14 +190,19 @@
      "Hirschsprung disease"
     ],
     [
-     "Mesoderm",
-     "Muscle, bone, heart, vessels, kidneys, gonads, adrenal cortex",
-     "VACTERL association"
+     "Paraxial mesoderm (somites)",
+     "Vertebrae, skeletal muscle of the trunk, dermis",
+     "Vertebral defects in VACTERL"
+    ],
+    [
+     "Intermediate and lateral plate mesoderm",
+     "Kidneys, gonads, heart, vessels, adrenal cortex",
+     "Renal agenesis; heart defects"
     ],
     [
      "Endoderm",
      "Gut and airway lining, liver, pancreas, thyroid follicles",
-     "Duodenal atresia"
+     "Duodenal atresia; tracheoesophageal fistula"
     ]
    ]
   ],
@@ -195,17 +212,29 @@
   ],
   [
    "p",
-   "The **amnion** grows from the epiblast and fills with fluid that cushions the embryo, while the **yolk sac** makes the first blood cells and the primordial germ cells. The **chorion** is extraembryonic mesoderm plus both trophoblast layers, and its villi mature from primary to tertiary villi by the end of week 3, when fetal capillaries fill their cores. The allantois, a hindgut outpouching, becomes the urachus, and the vitelline duct links midgut to yolk sac. Villi facing the implantation site form the chorion frondosum, the fetal side of the placenta, anchored in the {{rp4_decbas|decidua basalis}}, the maternal side."
+   "Four membranes surround the embryo. The **amnion** grows from the epiblast and fills with fluid that cushions the embryo, lets it move and, once inhaled, drives lung growth. The **yolk sac** makes the first blood cells and carries the primordial germ cells. The allantois, a hindgut outpouching, and the vitelline duct, which links the midgut to the yolk sac, run in the connecting stalk of the cord. The **chorion**, made of extraembryonic mesoderm plus both trophoblast layers, builds the placenta."
   ],
   [
    "p",
-   "Maternal and fetal blood never mix; they exchange across the villus wall. Invading trophoblast remodels the **spiral arteries** into wide, low-resistance channels that pour maternal blood into the **intervillous** space around the villi. When remodeling fails, the placenta is underperfused, which underlies preeclampsia and fetal growth restriction. The umbilical cord carries two **umbilical arteries**, which return deoxygenated blood from the fetal internal iliac arteries, and one umbilical vein, which brings oxygenated blood back. A single umbilical artery is a marker for fetal renal and other anomalies."
+   "The placenta is built from {{rp4_vill|chorionic villi}}, fingers of chorion that grow into maternal blood. In week 2 the cytotrophoblast pushes columns into the syncytiotrophoblast to make primary villi. In week 3 extraembryonic mesoderm fills each core to make secondary villi, and fetal capillaries then make tertiary villi, ready to exchange once the heart beats in week 4. Villi facing the implantation site form the **chorion frondosum**, the fetal side of the placenta, anchored in the {{rp4_decbas|decidua basalis}}, the maternal side; villi elsewhere regress to leave the smooth chorion laeve. The decidua also has a capsularis over the embryo and a parietalis lining the rest of the uterus."
+  ],
+  [
+   "f",
+   "rp4_placenta"
+  ],
+  [
+   "p",
+   "Maternal and fetal blood never mix; they exchange gases, nutrients and wastes across the villus wall, and maternal IgG crosses it to give the newborn passive immunity. Invading trophoblast remodels the **spiral arteries** into wide, low-resistance channels that pour maternal blood into the **intervillous** space around the villi. When remodeling fails, the placenta is underperfused, which underlies preeclampsia and fetal growth restriction. The umbilical cord carries two **umbilical arteries**, which return deoxygenated blood from the fetal internal iliac arteries, and one umbilical vein, which brings oxygenated blood back. A single umbilical artery is a marker for fetal renal and other anomalies. After birth the vein becomes the ligamentum teres of the liver and the arteries become the medial umbilical ligaments."
   ],
   [
    "call",
    "trap",
    "The umbilical vein carries the oxygen",
-   "Cord vessels are named for direction, not oxygen content. The umbilical arteries carry blood away from the fetus, so they carry deoxygenated blood to the placenta, and the single umbilical vein carries the most oxygenated blood in the fetus back toward the liver and heart. A question about the highest oxygen saturation in the fetal circulation wants the umbilical vein."
+   "Cord vessels are named for direction, not oxygen content. The umbilical arteries carry blood away from the fetus, so they carry deoxygenated blood to the placenta, and the single umbilical vein carries the most oxygenated blood in the fetus back toward the heart, most of it bypassing the liver through the ductus venosus. A question about the highest oxygen saturation in the fetal circulation wants the umbilical vein."
+  ],
+  [
+   "p",
+   "Two channels in the cord normally vanish. The allantois becomes the **urachus**, a fibrous cord from the bladder dome to the umbilicus that survives as the median umbilical ligament; if it stays open, a patent urachus leaks urine at the umbilicus, and a closed stretch can form a urachal cyst or sinus. The vitelline duct normally closes in the embryonic period; a persistent remnant is a **Meckel diverticulum**, an ileal outpouching that can hold gastric or pancreatic tissue and bleed, and a fully open duct passes stool through the umbilicus."
   ],
   [
    "h",
@@ -213,7 +242,7 @@
   ],
   [
    "p",
-   "**Human chorionic gonadotropin** from the syncytiotrophoblast acts on the LH receptor of the corpus luteum and rescues it from its usual 14-day lifespan, so it keeps making progesterone. hCG doubles about every 2 days early on and peaks at 8 to 10 weeks, when the placenta makes enough progesterone itself, the luteal-placental shift. {{rp4_hpl|Human placental lactogen}} rises with placental mass and causes maternal **insulin resistance** and lipolysis, sparing glucose for the fetus and driving gestational diabetes. The placenta makes **estriol** only from fetal adrenal DHEA-S that the fetal liver has hydroxylated, so a low estriol can signal fetal adrenal failure."
+   "**Human chorionic gonadotropin** from the syncytiotrophoblast acts on the LH receptor of the corpus luteum and rescues it from its usual 14-day lifespan, so it keeps making progesterone, which decidualizes the endometrium and keeps the myometrium quiescent. hCG doubles about every 2 days early on and peaks at 8 to 10 weeks, when the placenta makes enough progesterone itself, the luteal-placental shift. {{rp4_hpl|Human placental lactogen}} rises with placental mass and causes maternal **insulin resistance** and lipolysis. The free fatty acids released fuel the mother and spare glucose and amino acids for the fetus, the evolutionary advantage, but the same insulin resistance drives gestational diabetes in a mother who cannot compensate. The placenta makes **estriol** only from fetal adrenal DHEA-S that the fetal liver has hydroxylated, so a low estriol can signal fetal adrenal failure."
   ],
   [
    "why",
@@ -226,7 +255,32 @@
   ],
   [
    "p",
-   "Abnormal sites and depths of implantation explain three classic emergencies. An **ectopic pregnancy** implants outside the uterine cavity, most often in the ampulla, usually because tubal scarring slows transport; the trophoblast invades the thin tubal wall, and rupture causes pain and bleeding with an hCG that rises too slowly. **Placenta previa** implants in the lower uterine segment over or near the internal os, so it bleeds painlessly late in pregnancy. The **placenta accreta** spectrum follows a deficient decidua basalis, often over a cesarean scar, so villi attach to, invade or penetrate the myometrium and cannot separate after delivery."
+   "Abnormal sites and depths of implantation explain three classic emergencies, because the trophoblast invades whatever it touches and only the decidua stops it. An **ectopic pregnancy** implants outside the uterine cavity, most often in the ampulla, because tubal scarring slows transport; the tubal wall has no decidua, so the trophoblast erodes vessels and the tube ruptures. **Placenta previa** implants in the lower uterine segment over or near the internal os. The **placenta accreta** spectrum follows a deficient decidua basalis, often over a cesarean scar, so villi attach to, invade or penetrate the myometrium and cannot separate after delivery."
+  ],
+  [
+   "t",
+   [
+    "Condition",
+    "Risk factors",
+    "Classic presentation"
+   ],
+   [
+    [
+     "Ectopic pregnancy",
+     "Pelvic inflammatory disease, tubal surgery, prior ectopic pregnancy",
+     "Pain and bleeding with an hCG that rises too slowly; rupture causes shock"
+    ],
+    [
+     "Placenta previa",
+     "Prior cesarean, multiple gestation",
+     "Painless bright-red bleeding late in pregnancy, unlike painful abruption; avoid a digital exam"
+    ],
+    [
+     "Placenta accreta spectrum",
+     "Cesarean scar, placenta previa",
+     "Villi touch (accreta), invade (increta) or pass through (percreta) the myometrium; severe hemorrhage at delivery"
+    ]
+   ]
   ],
   [
    "h",
@@ -245,12 +299,44 @@
    "A shared chorion means a shared placenta, which often contains vessels connecting the two circulations. When flow through them is unbalanced, {{rp4_ttts|twin-twin transfusion syndrome}} develops: the **donor** twin loses volume, becomes anemic and growth-restricted, and makes little urine, so it sits in oligohydramnios; the **recipient** twin gains volume, becomes polycythemic, makes excess urine and develops polyhydramnios and heart failure. Dichorionic twins have separate placental circulations and cannot develop this syndrome."
   ],
   [
+   "p",
+   "{{rp4_chor|Chorionicity}}, the number of chorions, sets the risk, so first-trimester ultrasound reads it. Dichorionic twins show a thick wedge of placental tissue between the sacs, the lambda or twin-peak sign; monochorionic diamniotic twins show a thin membrane meeting the placenta at a right angle, the T sign. A shared placenta carries twin-twin transfusion and a shared amnion adds cord entanglement, so monochorionic pregnancies are scanned more often. Dizygotic twinning rises with maternal age and assisted reproduction; the monozygotic rate stays near 4 per 1000 births."
+  ],
+  [
    "h",
    "What does amniotic fluid tell you?"
   ],
   [
    "p",
-   "After about 16 weeks most amniotic fluid is fetal urine, and the fetus removes fluid by swallowing, so fluid volume reads out fetal kidneys and gut. **Oligohydramnios** follows missing urine, as in bilateral renal agenesis; the compressed fetus develops a flat face, limb deformities and fatal pulmonary hypoplasia, the **Potter sequence**. **Polyhydramnios** follows failed swallowing or absorption, as in esophageal or duodenal atresia or anencephaly, or fetal osmotic diuresis from maternal diabetes. A malformation is an intrinsic error of development, a deformation is molding by outside force, a disruption destroys normal tissue, as amniotic band syndrome does, and a sequence is one defect cascading into others."
+   "After about 16 weeks most amniotic fluid is fetal urine, and the fetus removes fluid by swallowing, so fluid volume reads out fetal kidneys and gut. **Oligohydramnios** follows missing urine, as in bilateral renal agenesis, urinary outlet obstruction or fetal kidney damage from ACE inhibitors in the second and third trimesters; the compressed fetus develops a flat face, limb deformities and fatal pulmonary hypoplasia, the **Potter sequence**. **Polyhydramnios** follows failed swallowing or absorption, as in esophageal or duodenal atresia or anencephaly, or fetal osmotic diuresis from maternal diabetes."
+  ],
+  [
+   "p",
+   "A **malformation** is an intrinsic error of development, such as a neural tube defect. A **deformation** is molding of normal tissue by outside force, as in the compressed limbs of oligohydramnios. A **disruption** destroys normal tissue, as amniotic band syndrome does when torn amnion strands constrict a limb. A sequence is one defect cascading into others, as renal agenesis leads to the Potter sequence. A teratogen is an exposure that causes such defects."
+  ],
+  [
+   "h",
+   "How do you solve an embryology vignette?"
+  ],
+  [
+   "steps",
+   [
+    "Three moves that solve an embryology vignette",
+    [
+     [
+      "Date the insult against the three windows",
+      "Subtract 2 weeks from gestational age, then match the embryonic age to the window: all-or-none before week 3, organogenesis in weeks 3 to 8, growth afterward."
+     ],
+     [
+      "Name the primordium and its siblings",
+      "Trace the abnormal structure to the layer or primordium that made it, then expect anomalies in everything from the same source: the mesonephric duct links kidney and uterus, and VACTERL joins vertebral, anal, cardiac, tracheoesophageal, renal and limb defects."
+     ],
+     [
+      "Read the fluid, cord and placenta",
+      "Oligohydramnios means no fetal urine, polyhydramnios means no swallowing, a single umbilical artery flags renal anomalies and chorionicity sets the twin risk. For ambiguous genitalia, ask which male signal failed."
+     ]
+    ]
+   ]
   ],
   [
    "sexp",
@@ -321,6 +407,10 @@
    ],
    [
     "External genitalia become recognizably male or female",
+    0
+   ],
+   [
+    "The anterior neuropore of the neural tube closes",
     0
    ]
   ]
