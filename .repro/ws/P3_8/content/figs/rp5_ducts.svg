@@ -1,0 +1,36 @@
+<svg class="dia" viewBox="0 0 900 530" role="img" aria-label="Sex determination pathway: in a 46,XY embryo SRY makes a testis whose Sertoli cells secrete AMH to remove the Mullerian ducts and whose Leydig cells secrete testosterone to keep the Wolffian ducts, with DHT building the external genitalia; in a 46,XX embryo the default path keeps the Mullerian ducts and the Wolffian ducts regress">
+<text class="ttl" x="14" y="24" font-size="17">One indifferent embryo, two duct systems, and the signals that choose</text>
+<rect x="14" y="40" width="872" height="60" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="64" font-size="16">Weeks 1–6: indifferent stage</text>
+<text x="28" y="89" font-size="15">Genital ridge gonad, germ cells from the yolk sac, and both duct pairs (Wolffian and Müllerian)</text>
+<rect x="14" y="112" width="430" height="350" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="28" y="138" font-size="16">46,XY: SRY present</text>
+<text x="28" y="164" font-size="15">SRY → testis-determining factor</text>
+<rect x="28" y="176" width="402" height="94" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="42" y="200" font-size="15">Sertoli cells → AMH</text>
+<text x="42" y="226" font-size="15">Müllerian ducts regress</text>
+<text x="42" y="252" font-size="15">(remnant: appendix testis)</text>
+<rect x="28" y="280" width="402" height="94" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="42" y="304" font-size="15">Leydig cells → testosterone</text>
+<text x="42" y="330" font-size="15">Wolffian ducts: epididymis, vas</text>
+<text x="42" y="356" font-size="15">deferens, seminal vesicle, ejaculatory duct</text>
+<rect x="28" y="384" width="402" height="66" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="42" y="408" font-size="15">5α-reductase → DHT</text>
+<text x="42" y="434" font-size="15">Penis, scrotum and prostate</text>
+<rect x="456" y="112" width="430" height="350" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="470" y="138" font-size="16">46,XX: no SRY (default path)</text>
+<text x="470" y="164" font-size="15">No SRY → the gonad becomes an ovary</text>
+<rect x="470" y="176" width="402" height="94" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="484" y="200" font-size="15">No AMH</text>
+<text x="484" y="226" font-size="15">Müllerian ducts build tubes,</text>
+<text x="484" y="252" font-size="15">uterus, cervix, upper vagina</text>
+<rect x="470" y="280" width="402" height="94" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="484" y="304" font-size="15">No testosterone</text>
+<text x="484" y="330" font-size="15">Wolffian ducts regress</text>
+<text x="484" y="356" font-size="15">(remnant: Gartner duct cyst)</text>
+<rect x="470" y="384" width="402" height="66" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="484" y="408" font-size="15">No DHT</text>
+<text x="484" y="434" font-size="15">Clitoris, labia minora and majora</text>
+<text x="14" y="492" font-size="15">Female ducts need no hormone. Male ducts need two testis signals: AMH removes the Müllerian</text>
+<text x="14" y="516" font-size="15">ducts and testosterone keeps the Wolffian ducts; DHT then builds the external genitalia.</text>
+</svg>

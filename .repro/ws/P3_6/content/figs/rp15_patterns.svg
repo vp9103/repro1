@@ -1,0 +1,111 @@
+<svg class="dia" viewBox="0 0 900 524" role="img" aria-label="Five ultrasound echo patterns and the adnexal mass each one names: simple cyst, hemorrhagic cyst, endometrioma, dermoid and torsion, plus a key to the words anechoic, echogenic, shadow and enhancement">
+<text class="ttl" x="14" y="26" font-size="17">Echo patterns that name the mass</text>
+<rect x="14" y="44" width="282" height="224" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="72" font-size="17">Simple cyst</text>
+<ellipse cx="155" cy="128" rx="88" ry="38" fill="var(--surface-3)" stroke="var(--ink-2)" stroke-width="2"/>
+<path d="M103 178 Q155 192 207 178" fill="none" stroke="var(--a1)" stroke-width="3"/>
+<text x="28" y="200" font-size="15">Anechoic, thin wall</text>
+<text x="28" y="224" font-size="15">No solid part, no flow</text>
+<text x="28" y="248" font-size="15">Plan: repeat scan</text>
+<rect x="309" y="44" width="282" height="224" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="323" y="72" font-size="17">Hemorrhagic cyst</text>
+<ellipse cx="450" cy="128" rx="88" ry="38" fill="var(--surface-3)" stroke="var(--ink-2)" stroke-width="2"/>
+<path d="M406 118 L440 146 M422 104 L472 152 M456 98 L494 144 M484 100 L506 126 M408 144 L446 106 M436 156 L482 100 M472 154 L506 112" fill="none" stroke="var(--ink-3)" stroke-width="1.6"/>
+<text x="323" y="200" font-size="15">Lace-like reticular echoes</text>
+<text x="323" y="224" font-size="15">Retracting clot, no flow</text>
+<text x="323" y="248" font-size="15">Resolves on repeat scan</text>
+<rect x="604" y="44" width="282" height="224" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="618" y="72" font-size="17">Endometrioma</text>
+<ellipse cx="745" cy="128" rx="88" ry="38" fill="var(--surface-3)" stroke="var(--ink-2)" stroke-width="2"/>
+<circle cx="725" cy="100" r="1.7" fill="var(--ink-3)"/>
+<circle cx="737" cy="100" r="1.7" fill="var(--ink-3)"/>
+<circle cx="749" cy="100" r="1.7" fill="var(--ink-3)"/>
+<circle cx="761" cy="100" r="1.7" fill="var(--ink-3)"/>
+<circle cx="773" cy="100" r="1.7" fill="var(--ink-3)"/>
+<circle cx="683" cy="111" r="1.7" fill="var(--ink-3)"/>
+<circle cx="695" cy="111" r="1.7" fill="var(--ink-3)"/>
+<circle cx="707" cy="111" r="1.7" fill="var(--ink-3)"/>
+<circle cx="719" cy="111" r="1.7" fill="var(--ink-3)"/>
+<circle cx="731" cy="111" r="1.7" fill="var(--ink-3)"/>
+<circle cx="743" cy="111" r="1.7" fill="var(--ink-3)"/>
+<circle cx="755" cy="111" r="1.7" fill="var(--ink-3)"/>
+<circle cx="767" cy="111" r="1.7" fill="var(--ink-3)"/>
+<circle cx="779" cy="111" r="1.7" fill="var(--ink-3)"/>
+<circle cx="791" cy="111" r="1.7" fill="var(--ink-3)"/>
+<circle cx="803" cy="111" r="1.7" fill="var(--ink-3)"/>
+<circle cx="677" cy="122" r="1.7" fill="var(--ink-3)"/>
+<circle cx="689" cy="122" r="1.7" fill="var(--ink-3)"/>
+<circle cx="701" cy="122" r="1.7" fill="var(--ink-3)"/>
+<circle cx="713" cy="122" r="1.7" fill="var(--ink-3)"/>
+<circle cx="725" cy="122" r="1.7" fill="var(--ink-3)"/>
+<circle cx="737" cy="122" r="1.7" fill="var(--ink-3)"/>
+<circle cx="749" cy="122" r="1.7" fill="var(--ink-3)"/>
+<circle cx="761" cy="122" r="1.7" fill="var(--ink-3)"/>
+<circle cx="773" cy="122" r="1.7" fill="var(--ink-3)"/>
+<circle cx="785" cy="122" r="1.7" fill="var(--ink-3)"/>
+<circle cx="797" cy="122" r="1.7" fill="var(--ink-3)"/>
+<circle cx="809" cy="122" r="1.7" fill="var(--ink-3)"/>
+<circle cx="821" cy="122" r="1.7" fill="var(--ink-3)"/>
+<circle cx="671" cy="133" r="1.7" fill="var(--ink-3)"/>
+<circle cx="683" cy="133" r="1.7" fill="var(--ink-3)"/>
+<circle cx="695" cy="133" r="1.7" fill="var(--ink-3)"/>
+<circle cx="707" cy="133" r="1.7" fill="var(--ink-3)"/>
+<circle cx="719" cy="133" r="1.7" fill="var(--ink-3)"/>
+<circle cx="731" cy="133" r="1.7" fill="var(--ink-3)"/>
+<circle cx="743" cy="133" r="1.7" fill="var(--ink-3)"/>
+<circle cx="755" cy="133" r="1.7" fill="var(--ink-3)"/>
+<circle cx="767" cy="133" r="1.7" fill="var(--ink-3)"/>
+<circle cx="779" cy="133" r="1.7" fill="var(--ink-3)"/>
+<circle cx="791" cy="133" r="1.7" fill="var(--ink-3)"/>
+<circle cx="803" cy="133" r="1.7" fill="var(--ink-3)"/>
+<circle cx="815" cy="133" r="1.7" fill="var(--ink-3)"/>
+<circle cx="689" cy="144" r="1.7" fill="var(--ink-3)"/>
+<circle cx="701" cy="144" r="1.7" fill="var(--ink-3)"/>
+<circle cx="713" cy="144" r="1.7" fill="var(--ink-3)"/>
+<circle cx="725" cy="144" r="1.7" fill="var(--ink-3)"/>
+<circle cx="737" cy="144" r="1.7" fill="var(--ink-3)"/>
+<circle cx="749" cy="144" r="1.7" fill="var(--ink-3)"/>
+<circle cx="761" cy="144" r="1.7" fill="var(--ink-3)"/>
+<circle cx="773" cy="144" r="1.7" fill="var(--ink-3)"/>
+<circle cx="785" cy="144" r="1.7" fill="var(--ink-3)"/>
+<circle cx="797" cy="144" r="1.7" fill="var(--ink-3)"/>
+<circle cx="809" cy="144" r="1.7" fill="var(--ink-3)"/>
+<circle cx="719" cy="155" r="1.7" fill="var(--ink-3)"/>
+<circle cx="731" cy="155" r="1.7" fill="var(--ink-3)"/>
+<circle cx="743" cy="155" r="1.7" fill="var(--ink-3)"/>
+<circle cx="755" cy="155" r="1.7" fill="var(--ink-3)"/>
+<circle cx="767" cy="155" r="1.7" fill="var(--ink-3)"/>
+<circle cx="779" cy="155" r="1.7" fill="var(--ink-3)"/>
+<text x="618" y="200" font-size="15">Uniform ground-glass echoes</text>
+<text x="618" y="224" font-size="15">Old blood, chocolate cyst</text>
+<text x="618" y="248" font-size="15">Pain and infertility</text>
+<rect x="14" y="284" width="282" height="224" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="312" font-size="17">Dermoid (mature teratoma)</text>
+<ellipse cx="155" cy="368" rx="88" ry="38" fill="var(--surface-3)" stroke="var(--ink-2)" stroke-width="2"/>
+<ellipse cx="127" cy="388" rx="30" ry="14" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="2"/>
+<path d="M163 352 q 24 -8 50 4 M167 366 q 26 -8 52 4 M161 380 q 22 -6 44 2" fill="none" stroke="var(--ink-3)" stroke-width="1.6"/>
+<polygon points="103,402 153,402 169,424 87,424" fill="var(--line)" fill-opacity="0.7"/>
+<text x="28" y="440" font-size="15">Rokitansky nodule, hair lines</text>
+<text x="28" y="464" font-size="15">Shadow behind the nodule</text>
+<text x="28" y="488" font-size="15">Torsion risk; cystectomy</text>
+<rect x="309" y="284" width="282" height="224" rx="10" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="cr" x="323" y="312" font-size="17">Torsion: emergency</text>
+<ellipse cx="421" cy="368" rx="74" ry="42" fill="var(--surface)" stroke="var(--crit)" stroke-width="2.5"/>
+<circle cx="476" cy="368" r="6" fill="var(--surface-3)" stroke="var(--ink-2)" stroke-width="1.5"/>
+<circle cx="448" cy="393" r="6" fill="var(--surface-3)" stroke="var(--ink-2)" stroke-width="1.5"/>
+<circle cx="394" cy="393" r="6" fill="var(--surface-3)" stroke="var(--ink-2)" stroke-width="1.5"/>
+<circle cx="366" cy="368" r="6" fill="var(--surface-3)" stroke="var(--ink-2)" stroke-width="1.5"/>
+<circle cx="394" cy="343" r="6" fill="var(--surface-3)" stroke="var(--ink-2)" stroke-width="1.5"/>
+<circle cx="448" cy="343" r="6" fill="var(--surface-3)" stroke="var(--ink-2)" stroke-width="1.5"/>
+<path d="M547.0 368.0 L547.2 368.2 L547.4 368.5 L547.5 368.8 L547.6 369.2 L547.6 369.5 L547.6 369.9 L547.6 370.3 L547.5 370.7 L547.3 371.1 L547.0 371.5 L546.8 371.9 L546.4 372.3 L546.0 372.6 L545.5 372.9 L545.0 373.1 L544.4 373.3 L543.8 373.4 L543.2 373.5 L542.6 373.5 L541.9 373.4 L541.2 373.2 L540.6 372.9 L539.9 372.6 L539.3 372.1 L538.7 371.6 L538.2 371.0 L537.7 370.4 L537.3 369.6 L537.0 368.8 L536.7 368.0 L536.6 367.1 L536.5 366.2 L536.5 365.2 L536.7 364.3 L536.9 363.3 L537.3 362.4 L537.8 361.5 L538.3 360.6 L539.0 359.8 L539.8 359.0 L540.7 358.3 L541.7 357.7 L542.7 357.2 L543.8 356.8 L545.0 356.6 L546.2 356.4 L547.5 356.4 L548.7 356.5 L550.0 356.8 L551.2 357.2 L552.5 357.7 L553.6 358.4 L554.7 359.2 L555.8 360.2 L556.7 361.2 L557.5 362.4 L558.3 363.7 L558.8 365.1 L559.3 366.5 L559.6 368.0 L559.7 369.5 L559.7 371.1 L559.5 372.7 L559.1 374.3 L558.5 375.8 L557.8 377.3 L556.9 378.7 L555.9 380.1 L554.7 381.3 L553.3 382.4 L551.9 383.4 L550.3 384.2 L548.6 384.9 L546.8 385.4 L545.0 385.7 L543.1 385.8 L541.2 385.7 L539.3 385.4 L537.5 384.9 L535.6 384.2 L533.9 383.3 L532.2 382.2 L530.6 381.0 L529.1 379.5 L527.9 377.9 L526.7 376.1 L525.8 374.2 L525.0 372.2 L524.5 370.2 L524.2 368.0 L524.1 365.8 L524.2 363.6 L524.6 361.4 L525.2 359.2 L526.0 357.1 L527.1 355.0 L528.4 353.1 L529.9 351.3 L531.6 349.6 L533.5 348.1 L535.6 346.8 L537.8 345.8 L540.1 344.9 L542.5 344.3 L545.0 344.0 L547.5 343.9 L550.1 344.1 L552.6 344.6 L555.1 345.3 L557.5 346.3 L559.8 347.6 L562.0 349.1 L564.1 350.8 L565.9 352.8 L567.6 355.0 L569.0 357.3 L570.2 359.8 L571.1 362.4 L571.8 365.2 L572.1 368.0 L572.2 370.9 L571.9 373.7 L571.4 376.6 L570.6 379.4 L569.4 382.1 L568.0 384.7 L566.3 387.1 L564.3 389.4 L562.1 391.5 L559.6 393.3 L557.0 394.9 L554.2 396.2 L551.2 397.2 L548.1 397.9 L545.0 398.3 L541.8 398.3 L538.6 398.0 L535.5 397.4 L532.3 396.4 L529.3 395.1 L526.5 393.5 L523.8 391.6 L521.3 389.4 L519.0 386.9 L517.0 384.2 L515.2 381.3 L513.8 378.1 L512.7 374.9 L512.0 371.5 L511.6 368.0 L511.6 364.5 L511.9 361.0 L512.6 357.5 L513.7 354.1 L515.2 350.8 L516.9 347.6 L519.1 344.7 L521.5 341.9 L524.3 339.4 L527.2 337.2 L530.5 335.4 L533.9 333.8 L537.5 332.7 L541.2 331.9 L545.0 331.4 L548.8 331.4 L552.7 331.8 L556.5 332.6 L560.2 333.8 L563.8 335.4 L567.2 337.4 L570.4 339.7 L573.4 342.4 L576.1 345.4 L578.5 348.7 L580.5 352.2 L582.2 355.9 L583.4 359.8 L584.3 363.9 L584.7 368.0" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<path d="M491 368 L539 368" fill="none" stroke="var(--ink-3)" stroke-width="2"/>
+<text x="323" y="440" font-size="15">Large, edematous ovary</text>
+<text x="323" y="464" font-size="15">Follicles pushed to the edge</text>
+<text x="323" y="488" font-size="15">Whirlpool sign; Doppler</text>
+<rect x="604" y="284" width="282" height="224" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="618" y="312" font-size="17">How to read the screen</text>
+<text x="618" y="362" font-size="15">Anechoic: fluid, no echoes</text>
+<text x="618" y="396" font-size="15">Echogenic: solid, bright</text>
+<text x="618" y="430" font-size="15">Shadow: sound is blocked</text>
+<text x="618" y="464" font-size="15">Enhancement: bright behind fluid</text>
+</svg>

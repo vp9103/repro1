@@ -1,0 +1,419 @@
+{
+ "id": "rp8",
+ "t": "The ovary, oogenesis and the menstrual cycle",
+ "sub": "Follicles, two oocyte arrests and the two-cell model explain the hormone curves, and the hormone curves explain every change in the endometrium.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 14,
+ "bp": [
+  "BP-rp8-01",
+  "BP-rp8-02",
+  "BP-rp8-03",
+  "BP-rp8-04",
+  "BP-rp8-05",
+  "BP-rp8-06",
+  "BP-rp8-07",
+  "BP-rp8-08",
+  "BP-rp8-09",
+  "BP-rp8-10",
+  "BP-rp8-11",
+  "BP-rp8-12",
+  "BP-rp8-13",
+  "BP-rp8-14"
+ ],
+ "obj": [
+  "HP-UTERUS-OVARY.1",
+  "HP-UTERUS-OVARY.2",
+  "PHYS-MENSTRUAL.1",
+  "PHYS-MENSTRUAL.2",
+  "PHYS-MENSTRUAL.3",
+  "PHYS-MENSTRUAL.4",
+  "PHYS-MENSTRUAL.5",
+  "BICEP-WALSH.20"
+ ],
+ "pretest": [
+  {
+   "q": "At which stage does a primary oocyte wait from fetal life until the LH surge?",
+   "o": [
+    "Prophase I",
+    "Metaphase II",
+    "Anaphase I",
+    "Prophase II"
+   ],
+   "a": 0,
+   "why": "Oocytes enter meiosis I before birth and stop in prophase I, sometimes for five decades. The LH surge restarts meiosis I, and the secondary oocyte then waits again in metaphase II until a sperm enters.",
+   "w": {
+    "Metaphase II": "Metaphase II is the second arrest, reached only after the surge finishes meiosis I; the ovulated secondary oocyte waits there for fertilization.",
+    "Anaphase I": "Anaphase I is the brief moment homologous chromosomes separate after the surge; errors there cause nondisjunction, but nothing rests in it.",
+    "Prophase II": "Prophase II is passed quickly after the first polar body forms; the secondary oocyte moves on to metaphase II and stops there."
+   }
+  },
+  {
+   "q": "Which follicle cell converts androgens into estradiol?",
+   "o": [
+    "Granulosa cell",
+    "Theca interna cell",
+    "Oocyte",
+    "Surface epithelial cell"
+   ],
+   "a": 0,
+   "why": "FSH induces aromatase in granulosa cells, which converts androstenedione made by the theca into estrone and then estradiol. Theca cells make the androgen but have little aromatase.",
+   "w": {
+    "Theca interna cell": "Theca cells use LH to turn cholesterol into androstenedione, but they have little aromatase, so they must hand the androgen across the basement membrane.",
+    "Oocyte": "The oocyte steers follicle growth with paracrine signals but has no steroid enzymes; the surrounding somatic cells make all the hormones.",
+    "Surface epithelial cell": "The surface epithelium is a mesothelial covering of the ovary and the origin of epithelial ovarian tumors, not a hormone source."
+   }
+  },
+  {
+   "q": "What does progesterone do to the endometrium after ovulation?",
+   "o": [
+    "Makes it secretory",
+    "Makes it proliferative",
+    "Makes it atrophic",
+    "Triggers its shedding"
+   ],
+   "a": 0,
+   "why": "Progesterone from the corpus luteum converts the estrogen-primed lining into secretory endometrium, with glycogen vacuoles, coiled glands and stromal edema ready for implantation. Its withdrawal, not its presence, triggers menses.",
+   "w": {
+    "Makes it proliferative": "Proliferation with straight glands and mitoses is the estradiol effect of the follicular phase, before any corpus luteum exists.",
+    "Makes it atrophic": "Atrophy follows prolonged lack of estrogen, as after menopause or with long-term progestin-only therapy, not normal luteal progesterone.",
+    "Triggers its shedding": "Shedding follows the fall of progesterone when the corpus luteum regresses; while progesterone stays high, the lining is maintained."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How is the ovary built, and how does a follicle grow?"
+  ],
+  [
+   "p",
+   "The ovary has an outer **cortex** and an inner medulla. The medulla is loose connective tissue that carries blood vessels, lymphatics and nerves, while the cortex holds the follicles in a cellular stroma under a dense tunica albuginea, and a single layer of cuboidal surface epithelium (mesothelium) covers the organ; most ovarian cancers are epithelial, though many high-grade serous carcinomas start in the tube. Every follicle starts as a {{rp8_prim|primordial follicle}}: a primary oocyte wrapped in one layer of flat pregranulosa cells. When a follicle is recruited, its cells turn cuboidal and a zona pellucida forms, making a primary follicle. Granulosa layers then multiply, a fluid-filled antrum opens and theca cells gather outside the basement membrane, making a secondary follicle. The mature **Graafian follicle** has a large antrum, with the oocyte on a mound of cells called the cumulus oophorus. After ovulation its wall becomes the **corpus luteum**, which later shrinks to a white scar, the corpus albicans. Most follicles never get that far; they die by atresia."
+  ],
+  [
+   "p",
+   "A woman is born with 1 to 2 million primordial follicles and enters puberty with about 300,000 to 400,000; only about 400 will ever ovulate. The rest are lost to **atresia**, the apoptosis of a follicle, which can strike at any stage. Growth from the primordial to the preantral stage goes on steadily without gonadotropins. Only at the early antral stage does a follicle depend on FSH. The FSH rise at the end of each luteal phase rescues a cohort of these small antral follicles, and the one with the most FSH receptors becomes the **dominant follicle**. Because the number of small antral follicles tracks the pool that remains, the antral follicle count on ultrasound, like AMH, estimates ovarian reserve."
+  ],
+  [
+   "h",
+   "Why does the oocyte pause twice, and what does age cost?"
+  ],
+  [
+   "p",
+   "Oogonia divide by mitosis in the fetal ovary, then enter meiosis I and stop in **prophase I**. These primary oocytes have already copied their DNA, so each is 2N with 4C of DNA, and each can wait 12 to 50 years. Meiosis I restarts only at the LH surge of the cycle in which its follicle becomes dominant. The division is lopsided: one large secondary oocyte (1N, 2C) keeps the cytoplasm and a tiny first polar body is discarded. The secondary oocyte arrests again in **metaphase II**, and that is the cell released at ovulation. Meiosis II finishes only if a sperm enters, which yields the ovum and a second polar body. Because paired chromosomes are held together for decades by proteins that are never replaced, **nondisjunction** becomes more common with maternal age."
+  ],
+  [
+   "f",
+   "rp8_oocyte"
+  ],
+  [
+   "t",
+   [
+    "Cell",
+    "Where it stops or what happens",
+    "Ploidy and DNA",
+    "Male counterpart"
+   ],
+   [
+    [
+     "Oogonium",
+     "Divides by mitosis in the fetal ovary",
+     "2N, 2C",
+     "Spermatogonium"
+    ],
+    [
+     "Primary oocyte",
+     "Arrested in prophase I from fetal life until the LH surge",
+     "2N, 4C",
+     "Primary spermatocyte"
+    ],
+    [
+     "Secondary oocyte",
+     "Arrested in metaphase II; ovulated with the first polar body",
+     "1N, 2C",
+     "Secondary spermatocyte"
+    ],
+    [
+     "Ovum",
+     "Forms only when a sperm enters and meiosis II finishes",
+     "1N, 1C",
+     "Spermatid"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "Ovulation releases a secondary oocyte, not an ovum",
+   "The cell that leaves the follicle is still arrested in **metaphase II**, wrapped in its zona pellucida and corona radiata. It becomes an ovum only if a sperm triggers the end of meiosis II, so an unfertilized egg never completes meiosis. The first polar body forms at the LH surge; the second forms at fertilization."
+  ],
+  [
+   "h",
+   "How do two cells and two gonadotropins make estradiol?"
+  ],
+  [
+   "p",
+   "No single follicle cell can make estradiol alone. {{rp8_theca|Theca interna}} cells sit outside the basement membrane next to capillaries, so they can take up LDL cholesterol. LH drives StAR and {{rp8_desmolase|desmolase}}, the cholesterol side-chain cleavage enzyme, which turns cholesterol into pregnenolone, the first and rate-limiting step. 17α-hydroxylase/17,20-lyase and 3β-hydroxysteroid dehydrogenase then carry pregnenolone on to **androstenedione**. Theca cells have little aromatase, so the androgen diffuses into the {{rp8_granulosa|granulosa cells}}, which have no blood supply before ovulation and cannot make androgens themselves. FSH induces **aromatase** in granulosa cells, which converts androstenedione to estrone and then, through 17β-hydroxysteroid dehydrogenase, to estradiol. This is the two-cell, two-gonadotropin model: LH feeds the theca, FSH feeds the granulosa, and the follicle needs both."
+  ],
+  [
+   "f",
+   "rp8_twocell"
+  ],
+  [
+   "p",
+   "The three estrogens differ by source. **Estradiol** comes from the ovarian follicle and is the most potent. **Estrone** is made mainly by aromatase in adipose tissue from adrenal and ovarian androstenedione; this peripheral conversion makes estrone the main estrogen after menopause and adds estrogen in obesity. **Estriol**, the weakest, comes from the placenta in pregnancy. In men the testes make little estradiol, so most of it comes from the same peripheral aromatization of testosterone in fat, bone and brain. Granulosa cells also send two protein signals. Inhibin B selectively suppresses pituitary FSH, and anti-Müllerian hormone (AMH), made by small growing follicles, tracks how many follicles remain, so AMH is a test of ovarian reserve."
+  ],
+  [
+   "call",
+   "key",
+   "Fat keeps making estrogen after the ovaries stop",
+   "Adipose aromatase works whether or not follicles remain, so a postmenopausal woman with obesity makes more estrone than a thin woman of the same age. Nothing opposes that estrogen with progesterone, which raises her risk of endometrial hyperplasia. The same **peripheral conversion** of testosterone to estradiol explains gynecomastia in men with obesity."
+  ],
+  [
+   "h",
+   "What drives the rise and fall of each hormone across the cycle?"
+  ],
+  [
+   "p",
+   "The hypothalamus releases GnRH in a **pulsatile** pattern, and the gonadotroph cells of the anterior pituitary answer with FSH and LH; continuous GnRH would shut them down. The pulse frequency also chooses the hormone: slow pulses favor FSH, fast pulses favor LH. When the previous corpus luteum dies, estradiol, progesterone and inhibin fall and FSH rises on the slow pulses of the late luteal phase, recruiting a cohort of follicles in the early **follicular phase**. The pulses then quicken, which favors LH. The antral follicle with the most FSH receptors becomes dominant. Its estradiol and inhibin B lower FSH, and the others become atretic. Low or moderate estradiol inhibits LH, but estradiol that stays high for about two days switches the pituitary to positive feedback. The result is the {{rp8_lhsurge|LH surge}}, and ovulation follows about 36 hours after the surge begins."
+  ],
+  [
+   "call",
+   "key",
+   "Estradiol switches from brake to accelerator",
+   "For most of the cycle, estradiol and progesterone hold LH and FSH down by negative feedback. The exception is the late follicular phase: estradiol above a threshold for about 48 hours makes the pituitary far more sensitive to GnRH, so LH surges instead of falling. That is why the estradiol peak comes about a day before the LH peak, and why luteal progesterone, which blocks the switch, prevents a second surge."
+  ],
+  [
+   "f",
+   "rp8_curves"
+  ],
+  [
+   "p",
+   "After ovulation the follicle collapses and its cells undergo {{rp8_lutein|luteinization}}: granulosa and theca cells swell with lipid, capillaries invade the once-avascular granulosa layer, and the {{rp8_cl|corpus luteum}} secretes progesterone, estradiol and inhibin A. Progesterone slows GnRH pulses, so LH and FSH stay low through the luteal phase. Progesterone peaks in the **mid-luteal** phase, about seven days after ovulation, which is day 21 of a 28-day cycle, and estradiol makes a smaller second rise in the same phase. The corpus luteum lives about 14 days unless hCG from an implanted embryo rescues it. When it regresses, all three hormones fall, FSH rises for the next cohort, and **progesterone withdrawal** triggers menses. Because the luteal phase is fixed, cycle length varies almost entirely in the follicular phase."
+  ],
+  [
+   "t",
+   [
+    "Hormone and source",
+    "Main job",
+    "Landmark on the graph"
+   ],
+   [
+    [
+     "GnRH, from hypothalamic neurons in pulses",
+     "Releases FSH and LH from gonadotrophs",
+     "Pulses quicken before ovulation and slow in the luteal phase; a pulse train cannot be read from a smooth curve"
+    ],
+    [
+     "FSH, from pituitary gonadotrophs",
+     "Recruits follicles; induces granulosa aromatase",
+     "High at the start of the cycle, a small rise at mid-cycle, low in the luteal phase"
+    ],
+    [
+     "LH, from pituitary gonadotrophs",
+     "Theca androgen; the surge ruptures the follicle and drives luteinization",
+     "Sharp peak near day 14, with ovulation soon after"
+    ],
+    [
+     "Estradiol, from granulosa cells, then the corpus luteum",
+     "Proliferative endometrium; positive feedback",
+     "Peak just before the LH surge, then a second rise in the mid-luteal phase"
+    ],
+    [
+     "Progesterone, from the corpus luteum",
+     "Secretory endometrium; slows GnRH pulses; raises body temperature",
+     "Low until ovulation, peak near day 21, falls to start menses"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "Day 21 is mid-luteal only in a 28-day cycle",
+   "A progesterone level confirms ovulation when it is drawn about seven days before the next period, at the **mid-luteal** peak. In a woman with 35-day cycles, ovulation happens near day 21, so a day-21 sample is drawn at ovulation and reads low even though she ovulates normally. Count back seven days from the expected period instead of forward from the last one."
+  ],
+  [
+   "steps",
+   [
+    "What the LH surge sets in motion, and how the cycle ends",
+    [
+     [
+      "Meiosis I resumes",
+      "Within hours of the surge the primary oocyte finishes meiosis I, extrudes the first polar body and arrests again in metaphase II."
+     ],
+     [
+      "The follicle ruptures",
+      "Surge-induced proteases and prostaglandins weaken the follicle wall, which opens about 36 hours after the surge begins. Fluid or blood irritating the peritoneum can cause one-sided **mittelschmerz**, and a follicle that fails to rupture can keep growing into a follicular cyst."
+     ],
+     [
+      "The corpus luteum forms",
+      "LH drives luteinization: the remaining granulosa and theca cells become large, lipid-filled granulosa lutein cells and smaller theca lutein cells, and new capillaries bring them LDL cholesterol. Together they secrete progesterone for about 14 days."
+     ],
+     [
+      "Luteolysis and menses",
+      "Without hCG the corpus luteum becomes a corpus albicans. Progesterone falls, the spiral arteries constrict, and the ischemic functional layer is shed as menstrual flow."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "What do the endometrium, cervix and tube show in each phase?"
+  ],
+  [
+   "p",
+   "The endometrium has two layers with different blood supplies. The {{rp8_functionalis|stratum functionalis}} is fed by coiled spiral arteries and is shed every month. The **stratum basalis** is fed by short straight arteries, stays behind and regrows the functionalis; curettage that removes the basalis leaves scarred adhesions, which is Asherman syndrome. In the **proliferative** phase, estradiol makes straight tubular glands with many mitoses. In the **secretory** phase, progesterone first pushes glycogen into subnuclear vacuoles about two days after ovulation. The vacuoles then move above the nuclei, the glands coil into a saw-tooth outline and fill with secretions, and the stroma swells with edema. Late in the phase, stromal cells enlarge into predecidual cells."
+  ],
+  [
+   "f",
+   "rp8_endometrium"
+  ],
+  [
+   "p",
+   "Beneath the endometrium lies the myometrium, thick smooth muscle that contracts in labor, and the outermost layer is the **perimetrium**, a serosa continuous with the pelvic peritoneum. If pregnancy occurs, the blastocyst implants into the secretory lining about 6 to 7 days after ovulation, and hCG from the trophoblast rescues the corpus luteum, so progesterone stays high and menses do not come. Under that progesterone the predecidual cells swell with glycogen and lipid and become the cells of the decidua. This {{rp8_decid|decidualization}} makes a nourished bed for the embryo and also restrains how deeply trophoblast can invade."
+  ],
+  [
+   "p",
+   "The cervix and tube change too. Estradiol makes cervical mucus thin, watery and stretchy (spinnbarkeit), so sperm swim through at mid-cycle, while progesterone makes it thick and scant. The **endocervix** is lined by mucus-secreting simple columnar cells, the **ectocervix** by nonkeratinized stratified squamous epithelium, and dysplasia starts in the transformation zone between them. The fallopian tube has a folded mucosa lined by **ciliated** cells and secretory peg cells, and the lining follows the cycle: estrogen raises the ciliated cells and their beating around ovulation, while luteal progesterone shrinks the cilia and leaves the cells secretory and atrophic. Its fimbriae sweep the oocyte into the ampulla, where fertilization usually happens, and cilia beat toward the uterus, so the immotile cilia of Kartagener syndrome cause infertility and ectopic pregnancy."
+  ],
+  [
+   "f",
+   "rp8_tract"
+  ],
+  [
+   "t",
+   [
+    "Feature",
+    "Follicular (proliferative) phase",
+    "Luteal (secretory) phase"
+   ],
+   [
+    [
+     "Dominant ovarian hormone",
+     "Estradiol from the growing follicle",
+     "Progesterone from the corpus luteum"
+    ],
+    [
+     "Pituitary",
+     "FSH high early, then falls; LH surge at the end",
+     "LH and FSH held low"
+    ],
+    [
+     "Endometrial glands",
+     "Straight and tubular, with mitoses",
+     "Subnuclear vacuoles, then coiled saw-tooth glands"
+    ],
+    [
+     "Stroma and vessels",
+     "Thickening functionalis",
+     "Edema, coiled spiral arteries, predecidual cells"
+    ],
+    [
+     "Cervical mucus",
+     "Thin, watery, stretchy",
+     "Thick and scant"
+    ],
+    [
+     "Fallopian tube",
+     "Ciliated cells tall and beating best near ovulation",
+     "Cilia shrink; cells secretory and atrophic"
+    ],
+    [
+     "Basal body temperature",
+     "Lower",
+     "Up about 0.3 to 0.5 °C"
+    ],
+    [
+     "Length",
+     "Varies from cycle to cycle",
+     "Fixed near 14 days"
+    ]
+   ]
+  ],
+  [
+   "why",
+   "Why does a woman in her early forties have a higher risk of a trisomic pregnancy?",
+   "Every oocyte she ovulates entered meiosis I before she was born and has waited in prophase I ever since. During that arrest the paired homologous chromosomes are held together by crossovers and cohesin proteins, and cohesin is not replaced. After four decades those links weaken, so at the LH surge a pair can separate early or fail to separate, and both copies go to the same cell. That **nondisjunction** in meiosis I produces an egg with an extra or missing chromosome, and fertilization then produces a trisomy such as Down syndrome. Sperm come from spermatogonia that keep dividing throughout adult life, so paternal age adds far less risk of this kind."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp8_prolif",
+    "q": "A biopsy on day 26 of a 28-day cycle shows straight glands with mitoses and no vacuoles. Which reasoning best explains it?",
+    "o": [
+     "No ovulation occurred, so no corpus luteum formed and the endometrium never received progesterone",
+     "Excess progesterone has overstimulated the glands, so they keep dividing instead of turning secretory",
+     "The follicular phase was unusually short, which gave the endometrium extra time to proliferate",
+     "Estradiol fell at ovulation, and falling estradiol by itself turns secretory glands back into proliferative ones"
+    ],
+    "a": 0,
+    "why": "Secretory change needs progesterone, and in quantity progesterone comes only from a corpus luteum, which forms only after ovulation. Straight glands with mitoses late in the cycle therefore mean the endometrium has seen estrogen alone, an anovulatory cycle. This is the histology of unopposed estrogen, the state behind irregular bleeding and endometrial hyperplasia in polycystic ovary syndrome. A short follicular phase would bring ovulation, and secretory change, earlier rather than later."
+   }
+  ],
+  [
+   "vis",
+   "rp8"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these belong to the follicular half of the cycle?",
+  "items": [
+   [
+    "FSH recruits a cohort of follicles",
+    1
+   ],
+   [
+    "Estradiol rises from the dominant follicle",
+    1
+   ],
+   [
+    "Proliferative endometrium with straight glands",
+    1
+   ],
+   [
+    "Thin, stretchy cervical mucus near its end",
+    1
+   ],
+   [
+    "Length varies from cycle to cycle",
+    1
+   ],
+   [
+    "Inhibin B suppresses FSH",
+    1
+   ],
+   [
+    "Granulosa cells aromatize theca androgens",
+    1
+   ],
+   [
+    "Corpus luteum secretes progesterone",
+    0
+   ],
+   [
+    "Subnuclear vacuoles in gland cells",
+    0
+   ],
+   [
+    "Basal body temperature stays raised",
+    0
+   ],
+   [
+    "Progesterone reaches its peak",
+    0
+   ],
+   [
+    "Stromal edema and predecidual cells",
+    0
+   ],
+   [
+    "Dominant antral follicle picked from the FSH-rescued cohort",
+    1
+   ],
+   [
+    "Luteinization of granulosa and theca cells",
+    0
+   ]
+  ]
+ }
+}

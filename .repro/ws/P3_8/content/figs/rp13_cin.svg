@@ -1,0 +1,60 @@
+<svg class="dia" viewBox="0 0 900 490" role="img" aria-label="Cervical intraepithelial neoplasia graded by how far atypical cells extend up the epithelium, from normal through CIN 1, CIN 2 and CIN 3 to invasive carcinoma that breaches the basement membrane, with the usual management of each">
+<text class="ttl" x="14" y="24" font-size="17">CIN grade is how far the atypical cells climb</text>
+<text class="b" x="28" y="62" font-size="16">Normal</text>
+<text x="28" y="86" font-size="15">Negative</text>
+<text class="b" x="204" y="62" font-size="16">CIN 1</text>
+<text x="204" y="86" font-size="15">LSIL</text>
+<text class="b" x="380" y="62" font-size="16">CIN 2</text>
+<text x="380" y="86" font-size="15">HSIL</text>
+<text class="b" x="556" y="62" font-size="16">CIN 3</text>
+<text x="556" y="86" font-size="15">HSIL</text>
+<text class="b" x="732" y="62" font-size="16">Invasive</text>
+<text x="732" y="86" font-size="15">Carcinoma</text>
+<rect x="28" y="100" width="140" height="200" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="204" y="100" width="140" height="200" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="204" y="233" width="140" height="67" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<rect x="380" y="100" width="140" height="200" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="380" y="167" width="140" height="133" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<rect x="556" y="100" width="140" height="200" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<rect x="732" y="100" width="140" height="200" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<ellipse cx="760" cy="318" rx="14" ry="9" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<ellipse cx="802" cy="326" rx="16" ry="10" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<ellipse cx="844" cy="316" rx="12" ry="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text x="42" y="160" font-size="15">Cells mature</text>
+<text x="42" y="184" font-size="15">as they rise</text>
+<text x="218" y="160" font-size="15">Koilocytes</text>
+<text x="218" y="184" font-size="15">near surface</text>
+<text x="394" y="130" font-size="15">Upper third</text>
+<text x="394" y="152" font-size="15">still matures</text>
+<text x="570" y="160" font-size="15">No maturation</text>
+<text x="570" y="184" font-size="15">at any level</text>
+<text x="746" y="160" font-size="15">Nests cross</text>
+<text x="746" y="184" font-size="15">the membrane</text>
+<line x1="14" y1="300" x2="886" y2="300" stroke="var(--ink)" stroke-width="3"/>
+<text class="b" x="28" y="326" font-size="15">Basement membrane</text>
+<text x="28" y="362" font-size="15">No atypia</text>
+<text x="28" y="386" font-size="15">Full maturation</text>
+<text x="28" y="410" font-size="15">Negative cytology</text>
+<text class="b" x="28" y="446" font-size="15">Routine</text>
+<text class="b" x="28" y="470" font-size="15">screening</text>
+<text x="204" y="362" font-size="15">Lower third</text>
+<text x="204" y="386" font-size="15">Viral effect</text>
+<text x="204" y="410" font-size="15">Often regresses</text>
+<text class="b" x="204" y="446" font-size="15">Surveillance,</text>
+<text class="b" x="204" y="470" font-size="15">repeat testing</text>
+<text x="380" y="362" font-size="15">Lower two-thirds</text>
+<text x="380" y="386" font-size="15">p16 confirms HSIL</text>
+<text x="380" y="410" font-size="15">May regress</text>
+<text class="b" x="380" y="446" font-size="15">Excision, or</text>
+<text class="b" x="380" y="470" font-size="15">watch if young</text>
+<text x="556" y="362" font-size="15">Over two-thirds</text>
+<text x="556" y="386" font-size="15">to full thickness</text>
+<text x="556" y="410" font-size="15">Carcinoma in situ</text>
+<text class="b" x="556" y="446" font-size="15">LEEP or</text>
+<text class="b" x="556" y="470" font-size="15">cone excision</text>
+<text x="732" y="362" font-size="15">Stromal invasion</text>
+<text x="732" y="386" font-size="15">Keratin pearls</text>
+<text x="732" y="410" font-size="15">Nodes and ureters</text>
+<text class="b" x="732" y="446" font-size="15">Stage, then</text>
+<text class="b" x="732" y="470" font-size="15">treat cancer</text>
+</svg>

@@ -86,7 +86,7 @@
   ],
   [
    "p",
-   "Age is the strongest clue to what a breast lump is. In adolescents and women under about 35, the usual solid mass is a **fibroadenoma**. From the 20s until menopause, lumpy, tender breasts usually mean {{rp23_fcc|fibrocystic change}}, and bloody discharge from one duct usually means an intraductal papilloma. After menopause the lobules involute, benign lumps become uncommon, and a new mass in a **postmenopausal** woman is carcinoma until proven otherwise. Imaging follows the same logic: ultrasound comes first under 30, because dense glandular tissue hides lesions on mammograms. In men the common lesion is **gynecomastia**, and male breast cancer is rare."
+   "Age is the strongest clue to what a breast lump is. In adolescents and women under about 35, the usual solid mass is a **fibroadenoma**. From the 20s until menopause, lumpy, tender breasts usually mean {{rp23_fcc|fibrocystic change}}, and bloody discharge from one duct usually means an {{rp23_idp|intraductal papilloma}}. After menopause the lobules involute, benign lumps become uncommon, and a new mass in a **postmenopausal** woman is carcinoma until proven otherwise. Imaging follows the same logic: ultrasound comes first under 30, because dense glandular tissue hides lesions on mammograms. In men the common lesion is **gynecomastia**, and male breast cancer is rare."
   ],
   [
    "f",
@@ -94,7 +94,31 @@
   ],
   [
    "p",
-   "Fibrocystic change is the most common breast condition of premenopausal women, and it is an exaggerated response to cyclic hormones rather than a true disease. It presents as bilateral, **multifocal** lumpiness that is tender in the **premenstrual** week and eases after menses. Three nonproliferative changes make it up: fluid-filled cysts, some of which look blue through their wall; stromal fibrosis after cysts rupture; and **apocrine metaplasia**, in which cyst-lining cells become large and pink with apical snouts like apocrine sweat gland cells. A palpable cyst can be aspirated, and if the fluid is not bloody and the mass disappears, no further work-up is needed."
+   "Fibrocystic change is the most common breast condition of premenopausal women, and it is an exaggerated response to cyclic hormones rather than a true disease. It presents as bilateral, **multifocal** lumpiness that is tender in the **premenstrual** week and eases after menses. Three nonproliferative changes make it up: fluid-filled cysts, some of which look blue through their wall; stromal fibrosis after cysts rupture; and **apocrine metaplasia**, in which cyst-lining cells become large and pink with apical snouts like apocrine sweat gland cells."
+  ],
+  [
+   "steps",
+   [
+    "How a palpable breast lump is worked up",
+    [
+     [
+      "Exam and age set the path",
+      "Note whether the lump is mobile, tender, cyclic or fixed, and whether nipple discharge or skin change is present; the patient's age then chooses the imaging."
+     ],
+     [
+      "Imaging by age",
+      "Start with ultrasound under 30. From 30 on, diagnostic mammography is added to ultrasound, because dense glandular tissue in younger women hides lesions on mammograms."
+     ],
+     [
+      "Cyst or solid",
+      "A palpable simple cyst can be aspirated; clear fluid and complete resolution need no more work-up, while bloody fluid or a residual mass goes to cytology and biopsy."
+     ],
+     [
+      "Core needle biopsy",
+      "A solid mass gets a core needle biopsy, because histology (fibroadenoma, papilloma, atypia or carcinoma) decides follow-up or excision; the triple assessment is exam, imaging and biopsy in agreement."
+     ]
+    ]
+   ]
   ],
   [
    "h",
@@ -103,6 +127,10 @@
   [
    "p",
    "Benign changes are sorted by two questions: is the epithelium proliferating, and do the proliferating cells look atypical? **Nonproliferative** changes such as cysts, fibrosis, apocrine metaplasia and a simple fibroadenoma add no risk. Proliferative disease without atypia, which includes usual ductal hyperplasia, **sclerosing adenosis** and intraductal papilloma, raises the relative risk of invasive cancer to about 1.5 to 2. {{rp23_adh|Atypical ductal hyperplasia}} and atypical lobular hyperplasia, monotonous proliferations that share some features of carcinoma in situ, raise it to about 4 to 5. The added risk is not confined to the biopsied breast, so these lesions mainly mark a woman at risk, and all of them keep their **myoepithelial** layer and basement membrane."
+  ],
+  [
+   "p",
+   "A **radial scar** is a stellate lesion with a central fibroelastic core and entrapped ducts radiating from it. It forms a spiculated mass on mammography that mimics carcinoma, so it is biopsied, and it counts as proliferative without atypia unless atypia or carcinoma is found nearby."
   ],
   [
    "p",
@@ -129,7 +157,7 @@
     ],
     [
      "Proliferative without atypia",
-     "Usual ductal hyperplasia, sclerosing adenosis, intraductal papilloma",
+     "Usual ductal hyperplasia, sclerosing adenosis, intraductal papilloma, radial scar",
      "Extra layers of mixed cells; myoepithelium intact",
      "1.5 to 2"
     ],
@@ -165,7 +193,11 @@
   ],
   [
    "p",
-   "Both tumors grow from the specialized intralobular stroma and carry ducts with them, so both are biphasic. A **fibroadenoma** appears in young women as a mobile, rubbery, well-circumscribed mass whose stroma surrounds and compresses the ducts into slits. It is estrogen-sensitive, so it may grow in pregnancy and shrink or calcify after menopause, and a simple fibroadenoma does not become cancer. A {{rp23_phy|phyllodes tumor}} peaks a decade or two later, around 50, grows quickly and can become very large. Its **stromal overgrowth** pushes into cystic spaces as **leaf-like** fronds covered by epithelium. Phyllodes tumors range from benign to malignant; even benign ones recur if excised with a close margin, and malignant ones spread through the blood rather than to axillary nodes."
+   "Both tumors grow from the specialized intralobular stroma and carry ducts with them, so both are **biphasic**. A **fibroadenoma** appears in young women as a mobile, rubbery, well-circumscribed mass. Its stroma either compresses the ducts into slits (the intracanalicular pattern) or surrounds open, round ducts (the **pericanalicular** pattern). It is estrogen-sensitive, so it may grow in pregnancy and shrink or calcify after menopause, and a simple fibroadenoma does not become cancer."
+  ],
+  [
+   "p",
+   "A {{rp23_phy|phyllodes tumor}} peaks a decade or two later, around 50, grows quickly and can become very large. Its **stromal overgrowth** pushes into cystic spaces as **leaf-like** fronds covered by epithelium. Phyllodes tumors range from benign to malignant by stromal cellularity, atypia and mitoses; even benign ones recur if excised with a close margin, and malignant ones spread through the blood to the lungs rather than to axillary nodes."
   ],
   [
    "t",
@@ -192,7 +224,7 @@
     ],
     [
      "Architecture",
-     "Ducts compressed into slits",
+     "Ducts compressed into slits or kept round, with stroma around them",
      "Leaf-like fronds projecting into clefts"
     ],
     [
@@ -214,7 +246,7 @@
   ],
   [
    "p",
-   "The color and pattern of nipple discharge point to its source. **Bloody** discharge from a single duct in a premenopausal woman usually comes from an {{rp23_idp|intraductal papilloma}}, a benign papillary growth in a large lactiferous duct beneath the areola whose fronds have fibrovascular cores covered by luminal and myoepithelial cells. Milky discharge from both breasts and many ducts is **galactorrhea**, caused by high prolactin: a prolactinoma, dopamine-blocking drugs such as antipsychotics and metoclopramide, primary hypothyroidism (high TRH also stimulates lactotrophs), or repeated nipple stimulation. Thick, sticky green-brown discharge in an older woman suggests duct ectasia."
+   "The color and pattern of nipple discharge point to its source. **Bloody** discharge from a single duct in a premenopausal woman usually comes from an intraductal papilloma, a benign papillary growth in a large lactiferous duct beneath the areola whose fronds have fibrovascular cores covered by luminal and myoepithelial cells. Milky discharge from both breasts and many ducts is **galactorrhea**, caused by high prolactin: a prolactinoma, dopamine-blocking drugs such as antipsychotics and metoclopramide, primary hypothyroidism (high TRH also stimulates lactotrophs), or repeated nipple stimulation. Thick, sticky green-brown discharge in an older woman suggests duct ectasia."
   ],
   [
    "p",
@@ -285,11 +317,15 @@
   ],
   [
    "p",
-   "The body walls off any **silicone** implant in a fibrous capsule. When that capsule thickens and tightens, the breast becomes firm, painful and distorted, which is **capsular contracture**, the most common implant complication. Rupture lets silicone leak into or beyond the capsule, where it provokes a foreign-body giant cell reaction and can travel to axillary nodes. Large studies have not proven that implants cause breast carcinoma or **autoimmune** connective tissue disease. The best-established cancer link is {{rp23_alcl|breast implant-associated anaplastic large cell lymphoma}}, a CD30-positive, ALK-negative T-cell lymphoma that arises around textured implants and usually presents years later as a sudden fluid collection."
+   "The body walls off any silicone implant in a **fibrous capsule**. When the capsule thickens and tightens, the breast becomes firm, painful and distorted, which is **capsular contracture**, the most common implant complication. Rupture lets silicone leak into or beyond the capsule, where it provokes a foreign-body giant cell reaction, a **silicone granuloma** that can mimic carcinoma on imaging, and silicone can travel to axillary nodes."
   ],
   [
    "p",
-   "Congenital anomalies trace back to the **milk line**, a ridge of ectoderm that runs from the axilla to the groin in the embryo and normally regresses everywhere except the chest. Remnants along it produce {{rp23_poly|polythelia}}, extra nipples often mistaken for moles, or polymastia, accessory breast tissue most often in the axilla that swells in pregnancy and can develop any breast disease. **Amastia**, complete absence of a breast, is rare. **Poland syndrome** combines unilateral absence of the sternal head of pectoralis major with ipsilateral breast hypoplasia or amastia and hand anomalies such as short, webbed fingers. At puberty, juvenile hypertrophy can enlarge one or both breasts rapidly and massively."
+   "Large studies have not shown that implants cause breast carcinoma. Reports link them to **autoimmune** connective tissue disease, mainly scleroderma (systemic sclerosis) and Sjögren syndrome, but the absolute risk is small and causation is unproven. The best-established cancer link is {{rp23_alcl|breast implant-associated anaplastic large cell lymphoma}}, a CD30-positive, ALK-negative T-cell lymphoma that arises around **textured** implants and usually presents years later as a sudden fluid collection."
+  ],
+  [
+   "p",
+   "Congenital anomalies trace back to the **milk line**, a ridge of ectoderm that runs from the axilla to the groin in the embryo and normally regresses everywhere except the chest. Remnants along it produce {{rp23_poly|polythelia}}, extra nipples often mistaken for moles, or polymastia, accessory breast tissue most often in the axilla that swells in pregnancy and can develop any breast disease. Amastia, complete absence of a breast, is rare. **Poland syndrome** combines unilateral absence of the sternal head of pectoralis major with ipsilateral breast hypoplasia or amastia and hand anomalies such as short, webbed fingers. At puberty, juvenile hypertrophy can enlarge one or both breasts rapidly and massively, while a **tuberous breast** has a constricted base, with tissue herniating through the areola."
   ],
   [
    "p",
@@ -378,6 +414,14 @@
    [
     "Pubertal gynecomastia usually needs surgery",
     0
+   ],
+   [
+    "A radial scar can mimic carcinoma on mammography",
+    1
+   ],
+   [
+    "Tuberous breast has a constricted base with areolar herniation",
+    1
    ]
   ]
  }

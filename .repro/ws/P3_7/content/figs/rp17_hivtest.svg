@@ -1,0 +1,62 @@
+<svg class="dia" viewBox="0 0 900 560" role="img" aria-label="HIV markers over the first 90 days after exposure, with viral RNA first, then p24 antigen, then antibody, the day each type of test first turns positive, and the three-step CDC testing algorithm">
+<text class="ttl" x="14" y="26" font-size="17">HIV tests: when each marker appears, and the CDC testing algorithm</text>
+<rect x="14" y="44" width="552" height="502" rx="10" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="30" y="70" font-size="15">Markers in blood after exposure</text>
+<rect x="64" y="96" width="120" height="234" fill="var(--warn-soft)" stroke="none"/>
+<text x="72" y="120" font-size="13">Window:</text>
+<text x="72" y="138" font-size="13">antibody</text>
+<text x="72" y="156" font-size="13">tests still</text>
+<text x="72" y="174" font-size="13">negative</text>
+<line x1="64" y1="90" x2="64" y2="330" stroke="var(--ink-3)" stroke-width="1.6"/>
+<line x1="64" y1="330" x2="540" y2="330" stroke="var(--ink-3)" stroke-width="1.6"/>
+<line x1="116" y1="330" x2="116" y2="336" stroke="var(--ink-3)" stroke-width="1.4"/>
+<line x1="220" y1="330" x2="220" y2="336" stroke="var(--ink-3)" stroke-width="1.4"/>
+<line x1="298" y1="330" x2="298" y2="336" stroke="var(--ink-3)" stroke-width="1.4"/>
+<line x1="376" y1="330" x2="376" y2="336" stroke="var(--ink-3)" stroke-width="1.4"/>
+<line x1="532" y1="330" x2="532" y2="336" stroke="var(--ink-3)" stroke-width="1.4"/>
+<text x="64" y="354" font-size="13" text-anchor="middle">0</text>
+<text x="116" y="354" font-size="13" text-anchor="middle">10</text>
+<text x="220" y="354" font-size="13" text-anchor="middle">30</text>
+<text x="298" y="354" font-size="13" text-anchor="middle">45</text>
+<text x="376" y="354" font-size="13" text-anchor="middle">60</text>
+<text x="532" y="354" font-size="13" text-anchor="middle">90</text>
+<text x="298" y="374" font-size="13" text-anchor="middle">Days after exposure</text>
+<path d="M64 328 L 100 326 C 126 322, 150 196, 190 128 C 204 104, 214 100, 226 100 C 262 102, 300 176, 376 204 L 532 210" fill="none" stroke="var(--crit)" stroke-width="3"/>
+<path d="M64 330 L 146 330 C 170 326, 192 262, 216 190 C 232 180, 256 200, 270 250 C 284 296, 296 322, 312 330 L 532 330" fill="none" stroke="var(--warn)" stroke-width="3"/>
+<path d="M64 330 L 176 330 C 200 328, 236 292, 262 244 C 296 180, 340 140, 400 126 C 450 116, 490 112, 532 112" fill="none" stroke="var(--a2)" stroke-width="3"/>
+<line x1="70" y1="396" x2="100" y2="396" stroke="var(--crit)" stroke-width="3"/>
+<text x="108" y="401" font-size="14">HIV RNA</text>
+<line x1="200" y1="396" x2="230" y2="396" stroke="var(--warn)" stroke-width="3"/>
+<text x="238" y="401" font-size="14">p24 antigen</text>
+<line x1="352" y1="396" x2="382" y2="396" stroke="var(--a2)" stroke-width="3"/>
+<text x="390" y="401" font-size="14">Antibody</text>
+<text class="b" x="64" y="432" font-size="14">First positive: RNA test, about day 10</text>
+<rect x="116" y="440" width="416" height="12" rx="3" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.2"/>
+<text class="b" x="64" y="476" font-size="14">Antigen/antibody test, about day 18</text>
+<rect x="158" y="484" width="374" height="12" rx="3" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.2"/>
+<text class="b" x="64" y="520" font-size="14">Antibody-only test, about day 23</text>
+<rect x="184" y="528" width="348" height="12" rx="3" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<rect x="584" y="44" width="302" height="502" rx="10" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="600" y="70" font-size="15">CDC algorithm, three steps</text>
+<rect x="600" y="84" width="270" height="118" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="614" y="108" font-size="14">1  Fourth-generation test</text>
+<text x="614" y="130" font-size="14">Antigen/antibody immunoassay</text>
+<text x="614" y="156" font-size="14">Nonreactive: HIV negative</text>
+<text class="a1" x="614" y="180" font-size="14">Reactive: go to step 2</text>
+<line x1="735" y1="202" x2="735" y2="224" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="730,224 735,232 740,224" fill="var(--ink-2)"/>
+<rect x="600" y="232" width="270" height="118" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="614" y="256" font-size="14">2  Differentiation assay</text>
+<text x="614" y="278" font-size="14">HIV-1 / HIV-2 antibody test</text>
+<text x="614" y="304" font-size="14">Positive: HIV-1 or HIV-2</text>
+<text class="a1" x="614" y="328" font-size="14">Negative/indeterminate: step 3</text>
+<line x1="735" y1="350" x2="735" y2="372" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="730,372 735,380 740,372" fill="var(--ink-2)"/>
+<rect x="600" y="380" width="270" height="94" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="614" y="404" font-size="14">3  HIV-1 RNA test</text>
+<text x="614" y="430" font-size="14">Detected: acute HIV-1</text>
+<text x="614" y="454" font-size="14">Not detected: false positive</text>
+<rect x="600" y="486" width="270" height="48" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.4"/>
+<text x="614" y="506" font-size="13">Antibody-only tests miss the</text>
+<text x="614" y="524" font-size="13">first weeks; RNA and p24 come first.</text>
+</svg>

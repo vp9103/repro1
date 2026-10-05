@@ -1,0 +1,40 @@
+<svg class="dia" viewBox="0 0 900 530" role="img" aria-label="Timeline from follicle growth through the LH surge, ovulation, fertilization and implantation to an established pregnancy, with bars showing where the combined pill, levonorgestrel, ulipristal, the copper IUD, and mifepristone with misoprostol act">
+<text class="ttl" x="14" y="24" font-size="17">Emergency contraception acts before implantation; abortion drugs act after it</text>
+<rect x="14" y="40" width="574" height="34" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="28" y="63" font-size="14">Before implantation: contraception and emergency contraception</text>
+<rect x="612" y="40" width="274" height="34" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.4"/>
+<text class="b" x="626" y="63" font-size="14">After implantation: abortion</text>
+<line x1="600" y1="84" x2="600" y2="470" stroke="var(--line-strong)" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="36" y1="146" x2="866" y2="146" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="866,140 878,146 866,152" fill="var(--ink-2)"/>
+<circle cx="70" cy="146" r="8" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="190" cy="146" r="8" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="310" cy="146" r="8" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="440" cy="146" r="8" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="600" cy="146" r="9" fill="var(--ink)" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="770" cy="146" r="8" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/>
+<text class="b" x="70" y="124" font-size="15" text-anchor="middle">Follicle grows</text>
+<text class="b" x="190" y="124" font-size="15" text-anchor="middle">LH surge</text>
+<text class="b" x="310" y="124" font-size="15" text-anchor="middle">Ovulation</text>
+<text class="b" x="440" y="124" font-size="15" text-anchor="middle">Fertilization</text>
+<text class="b" x="600" y="104" font-size="15" text-anchor="middle">Implantation</text>
+<text class="b" x="770" y="124" font-size="15" text-anchor="middle">Pregnancy</text>
+<text x="70" y="176" font-size="13" text-anchor="middle">FSH, estradiol</text>
+<text x="310" y="176" font-size="13" text-anchor="middle">36 h after surge</text>
+<text x="440" y="176" font-size="13" text-anchor="middle">in the tube</text>
+<text x="600" y="176" font-size="13" text-anchor="middle">about a week later</text>
+<text x="770" y="176" font-size="13" text-anchor="middle">hCG rising</text>
+<text x="40" y="222" font-size="14">Combined pill: no dominant follicle and no LH surge</text>
+<rect x="40" y="230" width="200" height="12" rx="6" fill="var(--a1)"/>
+<text x="40" y="274" font-size="14">Levonorgestrel: delays ovulation only if taken before the surge</text>
+<rect x="40" y="282" width="140" height="12" rx="6" fill="var(--a2)"/>
+<line x1="186" y1="276" x2="186" y2="300" stroke="var(--crit)" stroke-width="3"/>
+<text x="40" y="326" font-size="14">Ulipristal: can still delay rupture after LH starts rising</text>
+<rect x="40" y="334" width="250" height="12" rx="6" fill="var(--a2)"/>
+<text x="250" y="378" font-size="14">Copper IUD: toxic to sperm and ova</text>
+<rect x="250" y="386" width="340" height="12" rx="6" fill="var(--warn)"/>
+<text x="612" y="430" font-size="14">Mifepristone, then misoprostol</text>
+<rect x="612" y="438" width="262" height="12" rx="6" fill="var(--crit)"/>
+<text x="14" y="492" font-size="14">No emergency method disrupts an implanted pregnancy, so none is an abortifacient.</text>
+<text x="14" y="516" font-size="14">Windows: levonorgestrel best within 72 hours; ulipristal and a copper IUD up to 5 days.</text>
+</svg>
