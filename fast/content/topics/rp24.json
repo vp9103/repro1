@@ -302,6 +302,57 @@
    ]
   ],
   [
+   "p",
+   "The type also predicts age, receptor class and treatment. The special types that are ER-positive, low grade and slow growing (lobular, mucinous, tubular) are treated with surgery and endocrine therapy and benefit less from chemotherapy. The triple-negative types (medullary, metaplastic) have no hormone or HER2 target, so chemotherapy carries their systemic treatment. Ductal carcinoma can fall into any molecular class, so its receptors, not its name, choose the drugs."
+  ],
+  [
+   "t",
+   [
+    "Type",
+    "Usual age",
+    "Receptors and class",
+    "Treatment emphasis"
+   ],
+   [
+    [
+     "Invasive ductal",
+     "Postmenopausal; risk rises with age",
+     "Any class: ER-positive, HER2-positive or triple-negative",
+     "Surgery and radiation, then drugs matched to the receptors"
+    ],
+    [
+     "Invasive lobular",
+     "Postmenopausal, often in the 60s",
+     "ER-positive, HER2-negative luminal type; CDH1 loss",
+     "Surgery and endocrine therapy; MRI maps the extent; less chemotherapy benefit"
+    ],
+    [
+     "Medullary",
+     "Younger, often under 50",
+     "Triple-negative, basal-like; BRCA1 link",
+     "Surgery, radiation and chemotherapy; test for BRCA1"
+    ],
+    [
+     "Mucinous (colloid)",
+     "Older women, often over 60",
+     "ER-positive, HER2-negative luminal A",
+     "Surgery and endocrine therapy; chemotherapy rarely needed"
+    ],
+    [
+     "Tubular",
+     "Women in their 50s, found on screening",
+     "ER-positive, HER2-negative, low grade",
+     "Excision and endocrine therapy; chemotherapy rarely needed"
+    ],
+    [
+     "Metaplastic",
+     "Middle-aged and older women",
+     "Triple-negative, basal-like",
+     "Surgery and chemotherapy, though responses are often poor"
+    ]
+   ]
+  ],
+  [
    "h",
    "How do receptors decide prognosis and treatment?"
   ],

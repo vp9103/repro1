@@ -100,7 +100,7 @@
   ],
   [
    "p",
-   "The cervix has two linings that meet at a line. The **ectocervix**, the part that bulges into the vagina, is covered by tough nonkeratinized stratified squamous epithelium, like the vagina. The endocervix lines the canal with mucus-secreting columnar cells that fold into branching crypts, the **plicae palmatae** or \"palm folds\", which act as the cervical glands. Estrogen at puberty everts the columnar lining onto the ectocervix, and the acidic vagina then converts that exposed lining to squamous epithelium by **metaplasia**. The band between the original and the active squamocolumnar junction is the {{rp13_tz|transformation zone}}, and its immature metaplastic cells are the cells that high-risk HPV infects and transforms."
+   "The cervix has two linings that meet at a line. The **ectocervix**, the part that bulges into the vagina, is covered by tough nonkeratinized stratified squamous epithelium, like the vagina. The endocervix lines the canal with mucus-secreting columnar cells that fold into branching crypts, the **plicae palmatae** or \"palm folds\". Estrogen at puberty everts the columnar lining onto the ectocervix, and the acidic vagina then converts that exposed lining to squamous epithelium by **metaplasia**. The band between the original and the active squamocolumnar junction is the {{rp13_tz|transformation zone}}, and high-risk HPV infects and transforms its immature metaplastic cells."
   ],
   [
    "f",
@@ -108,13 +108,13 @@
   ],
   [
    "p",
-   "Endocervical **mucus** changes with the cycle: estrogen near ovulation makes it abundant, thin, alkaline and stretchy so sperm can pass and survive, and progesterone thickens it into a barrier. When metaplastic epithelium grows over a crypt opening, the trapped mucus forms a {{rp13_nabothian|nabothian cyst}}, a smooth, harmless dome that needs no treatment. Sampling also depends on the zone. A Pap specimen with too few squamous cells, or one hidden by blood or inflammation, is reported as **unsatisfactory** and repeated in 2 to 4 months. A satisfactory specimen can still lack an **endocervical component**: no endocervical or metaplastic cells were seen, the report says so, and a negative result is then a possible false-negative."
+   "Endocervical **mucus** changes with the cycle: estrogen near ovulation makes it abundant, thin, alkaline and stretchy so sperm can pass and survive, and progesterone thickens it into a barrier. When metaplastic epithelium grows over a crypt opening, the trapped mucus forms a {{rp13_nabothian|nabothian cyst}}, a smooth, harmless dome. Sampling also depends on the zone. A Pap specimen with too few squamous cells, or one hidden by blood or inflammation, is reported as **unsatisfactory** and repeated in 2 to 4 months. A satisfactory specimen can still lack an **endocervical component**: no endocervical or metaplastic cells were seen, and a negative result is then a possible false-negative."
   ],
   [
    "call",
    "trap",
    "After menopause the junction hides in the canal",
-   "Low estrogen lets the squamocolumnar junction recede up the endocervical canal, so a spatula on the ectocervix can miss the **transformation zone**. Use an endocervical brush, and expect colposcopy to be inadequate when the whole junction cannot be seen; **endocervical curettage** then samples the canal. A hidden zone is why a normal Pap in an older woman can be a false-negative."
+   "Low estrogen lets the squamocolumnar junction recede up the endocervical canal, so a spatula on the ectocervix can miss the **transformation zone**. Use an endocervical brush, and expect colposcopy to be inadequate when the whole junction cannot be seen; **endocervical curettage** then samples the canal."
   ],
   [
    "h",
@@ -126,7 +126,7 @@
   ],
   [
    "p",
-   "Scarring changes the canal in the opposite direction. **Stenosis** of the os follows excision of the zone, radiation or severe inflammation, and low estrogen can narrow it after menopause. When the os closes, menstrual blood cannot escape and the uterus fills with blood, **hematometra**, causing cyclic pain and an enlarged uterus in a patient who is not bleeding. A shortened, weakened cervix after excision can instead dilate painlessly in pregnancy: **cervical insufficiency**. Advanced cancer compresses the ureters through the parametria and causes hydronephrosis."
+   "Scarring changes the canal in the opposite direction. **Stenosis** of the os follows excision of the zone, radiation or severe inflammation, and low estrogen can narrow it after menopause. When the os closes, menstrual blood cannot escape and the uterus fills with blood, **hematometra**, causing cyclic pain and an enlarged uterus in a patient who is not bleeding. A shortened, weakened cervix after excision can instead dilate painlessly in pregnancy: **cervical insufficiency**."
   ],
   [
    "h",
@@ -186,6 +186,10 @@
   [
    "f",
    "rp13_cin"
+  ],
+  [
+   "p",
+   "Cell by cell, the grades differ. On a Pap smear, LSIL cells are large, mature squamous cells with abundant cytoplasm and a modestly enlarged nucleus. HSIL cells are smaller and immature with scant cytoplasm, so the nucleus fills most of the cell (a high nuclear-to-cytoplasmic ratio) and is hyperchromatic, with coarse chromatin and an irregular, notched membrane. In tissue the same cells crowd the epithelium without maturing, and mitoses, some abnormal, appear above the basal layer."
   ],
   [
    "p",
@@ -277,7 +281,7 @@
   ],
   [
    "p",
-   "Screening, diagnosis and treatment are separate steps. HPV vaccination is primary prevention, because it stops infection; screening is **secondary prevention**, because it finds precancer early enough to remove. A screening test sorts well people by risk and never makes a diagnosis. **Diagnosis** comes from {{rp13_colpo|colposcopy}}: the cervix is magnified after acetic acid, abnormal areas turn white and are biopsied, with endocervical curettage when the zone extends up the canal. ASCCP guidelines (2019) base each decision on the estimated risk of CIN 3 or worse, which combines today's result with past results (the ASCCP app does the calculation); at roughly 4 percent immediate risk, colposcopy is advised."
+   "HPV vaccination is primary prevention, because it stops infection; screening is **secondary prevention**, because it finds precancer early enough to remove. A screening test sorts well people by risk and never makes a diagnosis. **Diagnosis** comes from {{rp13_colpo|colposcopy}}: the cervix is magnified after acetic acid, abnormal areas turn white and are biopsied, with endocervical curettage when the zone extends up the canal. ASCCP guidelines (2019) base each decision on the estimated risk of CIN 3 or worse, which combines today's result with past results; at roughly 4 percent immediate risk, colposcopy is advised."
   ],
   [
    "t",
@@ -335,7 +339,11 @@
   ],
   [
    "p",
-   "About three-quarters of invasive cervical cancers are **squamous cell carcinoma**; adenocarcinoma, from the glandular cells of the canal, comes second and is linked more closely to HPV 18. Risk follows HPV exposure and persistence: early first intercourse, many partners, smoking, immunosuppression, HIV and long gaps in screening. Early cancers are silent and found only by screening, while larger tumors cause **postcoital** bleeding, irregular bleeding and a watery, blood-tinged discharge. The tumor spreads by direct extension into the parametria and pelvic side walls, where it compresses the ureters, and the resulting bilateral **hydronephrosis** and renal failure are a leading cause of death. Stage guides treatment: early disease confined to the cervix is cured by surgery, and tumor beyond it needs chemoradiation."
+   "About three-quarters of invasive cervical cancers are **squamous cell carcinoma**; adenocarcinoma, from the glandular cells of the canal, comes second and is linked more closely to HPV 18. Under the microscope, squamous carcinoma is irregular nests and cords of atypical cells that have crossed the basement membrane to infiltrate the stroma, with a fibrous desmoplastic reaction. The keratinizing type forms **keratin pearls**, whorls of keratin, and shows intercellular bridges; the nonkeratinizing type grows as sheets with little keratin. Adenocarcinoma forms invasive glands of mucin-secreting cells."
+  ],
+  [
+   "p",
+   "Risk follows HPV exposure and persistence: early first intercourse, many partners, smoking, immunosuppression, HIV and long gaps in screening. Early cancers are silent and found only by screening, while larger tumors cause **postcoital** bleeding, irregular bleeding and a watery, blood-tinged discharge. The tumor spreads by direct extension into the parametria and pelvic side walls, where it compresses the ureters, and the resulting bilateral **hydronephrosis** and renal failure are a leading cause of death. Stage guides treatment: early disease confined to the cervix is cured by surgery, and tumor beyond it needs chemoradiation."
   ],
   [
    "h",
@@ -415,7 +423,7 @@
   [
    "why",
    "Why can HPV testing be spaced every 5 years when cytology alone needs every 3 years?",
-   "A negative HPV test means no high-risk virus is present, and without the virus a precancer cannot develop, so the risk of CIN 3 over the next five years is very low. Cytology is a single look at cells and misses a meaningful share of existing lesions, so its negative result is less reassuring and must be repeated sooner. Because progression from new infection to invasive cancer usually takes many years, a five-year gap after a negative HPV test still catches lesions long before they invade."
+   "A negative HPV test means no high-risk virus is present, and without the virus a precancer cannot develop, so the risk of CIN 3 over the next five years is very low. Cytology is a single look at cells and misses a meaningful share of lesions, so a negative result is less reassuring and is repeated sooner. Because progression from new infection to invasive cancer usually takes many years, a five-year gap after a negative HPV test still catches lesions long before they invade."
   ]
  ],
  "grid": {

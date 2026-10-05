@@ -1,0 +1,454 @@
+{
+ "id": "rp21",
+ "t": "The prostate and the penis",
+ "sub": "BPH grows in the transition zone and cancer in the peripheral zone; the tunica albuginea explains Peyronie disease, fracture and priapism, and HPV drives penile cancer.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 14,
+ "bp": [
+  "BP-rp21-01",
+  "BP-rp21-02",
+  "BP-rp21-03",
+  "BP-rp21-04",
+  "BP-rp21-05",
+  "BP-rp21-06",
+  "BP-rp21-07",
+  "BP-rp21-08",
+  "BP-rp21-09",
+  "BP-rp21-10",
+  "BP-rp21-11",
+  "BP-rp21-12",
+  "BP-rp21-13",
+  "BP-rp21-14",
+  "BP-rp21-15",
+  "BP-rp21-16",
+  "BP-rp21-17",
+  "BP-rp21-18",
+  "BP-rp21-19"
+ ],
+ "obj": [
+  "HP-MALE.7",
+  "HP-MALE.8",
+  "HP-MALE.9",
+  "HP-MALE.15",
+  "HP-MALE.16",
+  "HP-MALE.17",
+  "HP-MALE.19",
+  "HP-MALE.20",
+  "HP-MALE.21",
+  "HP-MALE.22"
+ ],
+ "pretest": [
+  {
+   "q": "In which zone of the prostate does benign prostatic hyperplasia arise?",
+   "o": [
+    "Transition zone",
+    "Peripheral zone",
+    "Central zone",
+    "Anterior fibromuscular stroma"
+   ],
+   "a": 0,
+   "why": "BPH is hyperplasia of glands and stroma in the transition zone, which surrounds the urethra, so it obstructs urine flow early. The peripheral zone at the back is where most cancers arise.",
+   "w": {
+    "Peripheral zone": "This zone forms about 70% of the gland and lies against the rectum; most adenocarcinomas arise here and can be felt as a hard nodule, but it does not squeeze the urethra.",
+    "Central zone": "The central zone surrounds the ejaculatory ducts at the base of the gland and is rarely diseased, so neither hyperplasia nor cancer usually begins there.",
+    "Anterior fibromuscular stroma": "This anterior band contains muscle and fibrous tissue but no glands, so it cannot give rise to glandular hyperplasia or adenocarcinoma."
+   }
+  },
+  {
+   "q": "Which biopsy finding most strongly favors prostate adenocarcinoma over benign glands?",
+   "o": [
+    "Absent basal cell layer",
+    "Corpora amylacea",
+    "Papillary infoldings",
+    "Two-cell lining"
+   ],
+   "a": 0,
+   "why": "Benign prostate glands keep a layer of basal cells that stains with p63. Cancer glands lose it, and they are small, crowded and lined by one cell layer with prominent nucleoli.",
+   "w": {
+    "Corpora amylacea": "These laminated concretions accumulate in the lumens of benign glands in older men, so finding them argues for normal or hyperplastic tissue rather than cancer.",
+    "Papillary infoldings": "Papillary infolding of the epithelium is a normal architectural feature of benign prostate glands and of hyperplasia, not a sign of malignancy.",
+    "Two-cell lining": "Normal glands have a basal layer beneath the secretory layer, so a two-cell lining is the benign pattern; malignant glands have only one layer."
+   }
+  },
+  {
+   "q": "Which drug class lowers the measured PSA by about half within months?",
+   "o": [
+    "5-alpha-reductase inhibitors",
+    "Alpha-1 blockers",
+    "PDE5 inhibitors",
+    "Antimuscarinic drugs"
+   ],
+   "a": 0,
+   "why": "Finasteride and dutasteride block DHT formation, shrink the gland and lower PSA about 50%, so the measured value is doubled when screening for cancer.",
+   "w": {
+    "Alpha-1 blockers": "Tamsulosin and similar drugs relax smooth muscle to improve flow but do not shrink epithelium, so they leave the PSA level unchanged.",
+    "PDE5 inhibitors": "Tadalafil raises cGMP in smooth muscle to ease urinary symptoms and erections, and it has no effect on prostate epithelial secretion of PSA.",
+    "Antimuscarinic drugs": "These relax the detrusor to reduce urgency and have no action on prostate tissue, so serum PSA does not change with them."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Which zone of the prostate gets which disease?"
+  ],
+  [
+   "p",
+   "The prostate is a walnut-sized gland that wraps around the urethra just below the bladder, and its zones decide which disease appears. The {{rp21_tz|transition zone}} hugs the urethra, so overgrowth there squeezes it early; this is **benign prostatic hyperplasia** (BPH). The {{rp21_pz|peripheral zone}} is about 70% of the gland and lies at the back against the rectum, so a hard nodule there is felt on a digital rectal exam, and it gives rise to 70 to 80% of cancers. The central zone surrounds the ejaculatory ducts and is rarely diseased, and the anterior fibromuscular stroma has no glands. Normal glands are tubuloalveolar with papillary infoldings and a two-cell lining, and older men show laminated concretions called **corpora amylacea**; the seminal vesicle looks similar but is highly folded and has none."
+  ],
+  [
+   "f",
+   "rp21_zones"
+  ],
+  [
+   "h",
+   "What drives BPH, and which drug treats which part?"
+  ],
+  [
+   "p",
+   "BPH is true **hyperplasia**: both gland cells and stromal cells multiply, and it affects up to 90 percent of men by age 80. DHT raises stromal proliferation and lowers epithelial apoptosis, and estrogen may amplify its effect as testosterone falls with age. Testosterone is converted by 5-alpha-reductase type 2 into {{rp21_dht|dihydrotestosterone}} (DHT), which binds the androgen receptor more tightly and drives the growth, so men castrated before puberty or born without the enzyme never develop BPH. Nodules can raise the gland to 100 g. As the urethra narrows, lower urinary tract symptoms (LUTS) appear: weak stream, hesitancy and incomplete emptying, plus frequency, urgency and nocturia. The bladder wall thickens and then fails, so retention, infections, stones and bilateral hydronephrosis can follow. BPH is not premalignant, and size does not predict cancer."
+  ],
+  [
+   "p",
+   "BPH obstructs in two ways. The static part is the bulk of the overgrown tissue, which **5-alpha-reductase inhibitors** (finasteride, dutasteride) shrink by about 20 to 25 percent over 6 months by blocking DHT formation. The dynamic part is smooth-muscle tone in the stroma, capsule and bladder neck, which **alpha-1 blockers** relax within days. Tamsulosin and silodosin are alpha-1A selective, whereas terazosin and doxazosin are nonselective and also lower blood pressure. Daily tadalafil treats LUTS and erectile dysfunction together."
+  ],
+  [
+   "f",
+   "rp21_bphdrugs"
+  ],
+  [
+   "t",
+   [
+    "Drug class",
+    "Examples",
+    "Adverse effects to know"
+   ],
+   [
+    [
+     "Alpha-1A-selective blockers",
+     "Tamsulosin, silodosin",
+     "Retrograde or absent ejaculation; floppy iris syndrome at cataract surgery"
+    ],
+    [
+     "Nonselective alpha-1 blockers",
+     "Terazosin, doxazosin",
+     "Orthostatic hypotension, first-dose syncope"
+    ],
+    [
+     "5-alpha-reductase inhibitors",
+     "Finasteride, dutasteride",
+     "Decreased libido, erectile dysfunction, gynecomastia; PSA halves; teratogenic to handle"
+    ],
+    [
+     "PDE5 inhibitor",
+     "Tadalafil 5 mg daily",
+     "Headache, flushing; never with nitrates"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "key",
+   "Bulk gets a 5-ARI, tone gets an alpha-blocker",
+   "Size correlates poorly with symptoms, because a 30 g gland with high muscle tone can obstruct more than a 90 g gland. An alpha-blocker works in days and is the usual first drug. A **5-alpha-reductase inhibitor** takes months and helps most when the gland is large, and the two together slow progression best."
+  ],
+  [
+   "p",
+   "Management follows the symptom burden. Mild symptoms get **watchful waiting** with behavioral measures (less evening fluid and caffeine, timed voiding), because BPH progresses slowly and many men never need more. Bothersome symptoms get an alpha-blocker, a 5-alpha-reductase inhibitor for a large gland, or both. Minimally invasive procedures (water-vapor thermal therapy, prostatic urethral lift) preserve ejaculation. Retention, recurrent infection, stones or hydronephrosis, or failed drugs, call for **transurethral** resection of the prostate (TURP), laser enucleation or, for the largest glands, simple prostatectomy. TURP removes transition zone tissue, so it treats BPH but not peripheral zone cancer, and it can cause retrograde ejaculation and, from absorbed hypotonic irrigant, hyponatremia."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp21_zone",
+    "q": "A 68-year-old man has a weak stream and nocturia, and a smooth, symmetric, enlarged prostate. Which reasoning best explains why his gland obstructs the urethra yet is probably benign?",
+    "o": [
+     "The overgrowth is in the peripheral zone, which compresses the urethra from behind, while cancer usually arises around the urethra",
+     "A smooth gland proves the enlargement is infectious, because prostatitis always produces a symmetric gland with fever",
+     "The overgrowth is in the transition zone, which surrounds the urethra, while cancer usually arises in the peripheral zone at the back",
+     "Hypertrophy of existing cells, not hyperplasia, is responsible, so the gland cannot contain malignant cells"
+    ],
+    "a": 2,
+    "why": "BPH is hyperplasia of glands and stroma in the transition zone, the tissue that wraps the urethra, so even modest growth narrows it and causes a weak stream and nocturia. Prostate cancer usually starts in the peripheral zone, far from the urethra, where it grows silently and often feels like a hard nodule rather than a smooth gland. A smooth, symmetric, enlarged gland with obstructive symptoms therefore points to BPH, and a mild PSA rise fits BPH too, because PSA is organ-specific rather than cancer-specific."
+   }
+  ],
+  [
+   "h",
+   "What causes prostatitis, and what should be avoided?"
+  ],
+  [
+   "p",
+   "Prostatitis has four patterns. **Acute bacterial prostatitis** causes fever, dysuria and a very tender, swollen, boggy prostate; E. coli is the usual cause, reaching the gland by intraprostatic reflux of infected urine, and in sexually active young men Chlamydia trachomatis and Neisseria gonorrhoeae are common. Vigorous massage is avoided because it can push bacteria into the blood. **Chronic bacterial prostatitis** appears as recurrent urinary infections with the same organism, because the gland acts as a reservoir that only lipid-soluble antibiotics (fluoroquinolones, trimethoprim-sulfamethoxazole) reach, so treatment lasts weeks. **Chronic pelvic pain syndrome**, with pain and negative cultures, is the most common type, and repeated antibiotics do not help it. Granulomatous prostatitis, often after BCG for bladder cancer, feels hard and can mimic cancer."
+  ],
+  [
+   "h",
+   "Who gets prostate cancer, and how is it recognized?"
+  ],
+  [
+   "p",
+   "Prostate adenocarcinoma is the most common cancer in men and the second leading cause of their cancer deaths. Risk rises with age, is higher in men of African ancestry, and doubles with an affected first-degree relative, so a family history matters; germline **BRCA2** mutations predict aggressive disease. Most tumors are multifocal in the peripheral zone and silent, so a raised {{rp21_psa|PSA}} and needle biopsy find them, although a hard nodule can be felt on rectal exam."
+  ],
+  [
+   "p",
+   "The tumor cell is a **luminal secretory cell**: it keeps the androgen receptor and makes PSA and keratins 8 and 18, but it has lost the basal cell markers, which is why androgen deprivation works at first. The commonest driver is the {{rp21_tmprss2|TMPRSS2-ERG fusion}}, which places the ERG transcription factor under an androgen-regulated promoter, and PTEN loss, MYC gain and TP53 loss accompany advanced disease. Small, crowded glands grow in an infiltrative pattern between and around benign glands with little stroma, have a single cell layer and show enlarged nuclei with prominent nucleoli and perineural invasion. The key criterion is loss of the {{rp21_basal|basal cell layer}}: p63 and keratin stains are negative, while AMACR is positive. High-grade PIN, found in about 80 percent of cases, is the likely precursor. The Gleason grade, which scores gland architecture, is grouped into Grade Groups 1 to 5."
+  ],
+  [
+   "f",
+   "rp21_histology"
+  ],
+  [
+   "t",
+   [
+    "Feature",
+    "BPH",
+    "Prostate adenocarcinoma"
+   ],
+   [
+    [
+     "Zone",
+     "Transition zone, around the urethra",
+     "Peripheral zone, at the back"
+    ],
+    [
+     "Rectal exam",
+     "Smooth, symmetric enlargement",
+     "Hard, irregular nodule"
+    ],
+    [
+     "Glands",
+     "Hyperplastic, two cell layers",
+     "Small, crowded, one cell layer"
+    ],
+    [
+     "Basal cells",
+     "Present, p63 positive",
+     "Absent, p63 negative, AMACR positive"
+    ],
+    [
+     "Premalignant",
+     "No",
+     "High-grade PIN may precede it"
+    ],
+    [
+     "Spread",
+     "None",
+     "Osteoblastic bone metastases"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "PSA is a protease that liquefies semen, so it is **organ-specific, not cancer-specific**: BPH, prostatitis, urinary retention, instrumentation and ejaculation raise it, while 5-alpha-reductase inhibitors halve it, so the value is doubled. A low free-to-total PSA ratio favors cancer. Because screening finds many slow tumors, the USPSTF (2018, still current as of 2025) recommends shared decision-making for men 55 to 69 and against screening from age 70; men at higher risk, such as those of African ancestry or with a BRCA mutation or family history, are often offered it earlier."
+  ],
+  [
+   "p",
+   "Autopsy studies show **latent** cancers in many older men, but only a **clinically significant** cancer, usually Gleason 7 or higher, needs treatment; treating the rest is overdiagnosis, so low-risk disease is followed by {{rp21_as|active surveillance}} with serial PSA, MRI and repeat biopsy. Advanced cancer reaches the lumbar spine and pelvis through the Batson venous plexus as osteoblastic metastases, with a raised alkaline phosphatase."
+  ],
+  [
+   "why",
+   "Why does leuprolide first raise testosterone before it lowers it?",
+   "Leuprolide is a GnRH agonist, so at first it stimulates the pituitary receptor just as natural GnRH does, and LH and testosterone surge for one to two weeks. In advanced cancer this flare can worsen bone pain or urinary obstruction. Natural GnRH arrives in pulses, and the receptor needs the pauses to recover. A continuous signal makes the gonadotrophs downregulate the receptor, so LH release collapses and testosterone falls to castrate levels within weeks. An antiandrogen such as bicalutamide, started first, blocks the flare at the androgen receptor, and the antagonist degarelix has no flare."
+  ],
+  [
+   "steps",
+   [
+    "Building androgen deprivation therapy in order",
+    [
+     [
+      "Lower testosterone at the pituitary",
+      "A GnRH agonist (leuprolide, goserelin) with an antiandrogen to cover the flare, or the antagonist degarelix, which works at once."
+     ],
+     [
+      "Block the receptor or the synthesis",
+      "Bicalutamide, flutamide (hepatotoxic) and enzalutamide block the androgen receptor. Abiraterone inhibits CYP17A1; cortisol falls, ACTH rises and mineralocorticoid excess (hypertension, hypokalemia) follows unless prednisone is added."
+     ],
+     [
+      "Expect the toll",
+      "Hot flashes, lost libido and erections, gynecomastia, fatigue and bone loss; check bone density and give calcium, vitamin D and an antiresorptive drug if fracture risk is high."
+     ]
+    ]
+   ]
+  ],
+  [
+   "f",
+   "rp21_adt"
+  ],
+  [
+   "h",
+   "What goes wrong with the foreskin, glans and urethral opening?"
+  ],
+  [
+   "p",
+   "**Phimosis** is a foreskin that cannot be pulled back. It is normal in boys until about age 3 to 5, and the right management is then non-pharmacologic: hygiene, gentle retraction without force and observation. It is pathologic with lichen sclerosus, recurrent balanitis or diabetes, and then topical steroids come first and circumcision follows for recurrent or severe disease. Smegma and poor hygiene under the foreskin cause balanoposthitis, inflammation of the glans and prepuce. **Paraphimosis** is a retracted foreskin that cannot be brought forward; venous congestion and edema threaten the arterial supply, so it is an emergency, often caused by not replacing the foreskin after a catheter, and it is treated by manual reduction."
+  ],
+  [
+   "p",
+   "Hypospadias, a ventral urethral opening on the glans, shaft or perineum, comes from incomplete fusion of the urethral folds and travels with cryptorchidism and inguinal hernia. A narrowed meatus gives a deflected stream and urinary infections, and severe forms affect sexual function and fertility. Repair is surgical urethroplasty at 6 to 18 months, and circumcision waits because the foreskin is used for the reconstruction. Epispadias, a dorsal opening from a misplaced genital tubercle, is often part of bladder exstrophy and causes incontinence, so it needs a complex repair."
+  ],
+  [
+   "f",
+   "rp21_penis"
+  ],
+  [
+   "t",
+   [
+    "Cause of balanitis or ulcer",
+    "Typical clue",
+    "Note"
+   ],
+   [
+    [
+     "Candida",
+     "Red itchy glans, satellite papules; diabetes",
+     "Antifungal cream"
+    ],
+    [
+     "Herpes simplex",
+     "Grouped painful vesicles, shallow ulcers",
+     "Giant cells on Tzanck smear"
+    ],
+    [
+     "Primary syphilis",
+     "Single painless indurated chancre",
+     "Treponema pallidum; penicillin"
+    ],
+    [
+     "Chancroid",
+     "Painful ragged ulcer, tender nodes",
+     "Haemophilus ducreyi"
+    ],
+    [
+     "Condyloma acuminata",
+     "Cauliflower warts with koilocytes",
+     "HPV 6 and 11"
+    ],
+    [
+     "Smegma, lichen sclerosus",
+     "Red, swollen glans and prepuce, a tight foreskin",
+     "Hygiene; topical steroid; circumcision if it recurs"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "What scars, ruptures or traps blood in the erect penis?"
+  ],
+  [
+   "p",
+   "The {{rp21_ta|tunica albuginea}} is the inelastic sheath around the corpora cavernosa. In **Peyronie disease**, repeated microtrauma causes bleeding under it and, through disordered TGF-beta wound healing, a **fibrous plaque** that does not stretch. The erect penis shows painful curvature toward the plaque, with shortening and sometimes erectile dysfunction from venous leak. It is a fibromatosis that travels with Dupuytren contracture and plantar fibromatosis, and it stays active and painful for 6 to 18 months before it becomes stable."
+  ],
+  [
+   "p",
+   "Treatment waits for the stable phase, because nothing is injected or cut while the plaque is active. Oral pentoxifylline, traction and shockwave therapy have limited evidence. Intralesional **collagenase** (Clostridium histolyticum), given with penile modeling, is the only FDA-approved injection, and verapamil or interferon are off-label alternatives. Surgery depends on the curvature: **plication** of the side opposite the plaque for moderate curvature with good erections, plaque incision or excision with a graft for severe curvature, and a penile prosthesis when erectile dysfunction coexists."
+  ],
+  [
+   "p",
+   "In **penile fracture**, the thinned tunica of an erect penis ruptures with a pop, sudden detumescence, pain and an eggplant-shaped hematoma that Buck fascia confines to the shaft. Urethral injury occurs in 10 to 20%, with blood at the meatus or inability to void, so a retrograde urethrogram precedes catheterization and repair is urgent."
+  ],
+  [
+   "t",
+   [
+    "Priapism",
+    "Ischemic (low flow)",
+    "Nonischemic (high flow)"
+   ],
+   [
+    [
+     "Exam",
+     "Painful and rigid",
+     "Painless, partly rigid"
+    ],
+    [
+     "Cavernosal blood",
+     "Dark and acidotic",
+     "Bright red, arterial"
+    ],
+    [
+     "Causes",
+     "Sickle cell disease, trazodone, cocaine, PDE5 inhibitors, injections",
+     "Perineal trauma, arterial fistula"
+    ],
+    [
+     "Urgency",
+     "Emergency",
+     "Observe or embolize"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "Ischemic priapism is a urologic emergency",
+   "An erection lasting over 4 hours with pain means blood is trapped in the corpora, which turns acidotic and hypoxic, and fibrosis starts within 24 to 48 hours, ending in erectile dysfunction. Treat at once by aspiration, phenylephrine injection or a shunt; painless **nonischemic** priapism after perineal trauma is not an emergency."
+  ],
+  [
+   "h",
+   "How does penile squamous neoplasia progress?"
+  ],
+  [
+   "p",
+   "Condyloma acuminata, caused by low-risk HPV 6 and 11, forms cauliflower warts with koilocytes and rarely progresses; treatment is topical (imiquimod, podophyllin), cryotherapy or excision. Premalignant lesions come from high-risk HPV 16 and 18 and show full-thickness atypia above an intact basement membrane: **Bowen disease** on the shaft, **erythroplasia of Queyrat**, a red velvety plaque on the glans, and bowenoid papulosis, small papules in young men that usually regress. Topical 5-fluorouracil, laser or excision treats them."
+  ],
+  [
+   "p",
+   "About 10% of penile intraepithelial neoplasia becomes **squamous cell carcinoma**, 95% of penile cancers, a crusted, indurated, ulcerated lesion of the glans or foreskin that does not heal; risks are HPV 16 and 18, lack of circumcision, phimosis, lichen sclerosus, chronic inflammation and smoking. **Verrucous carcinoma** is a papillary variant unrelated to HPV, with pushing margins and minimal atypia; it invades locally but rarely metastasizes. Treatment spares the organ when possible: partial penectomy, glansectomy or Mohs surgery for early tumors, and total penectomy with lymph node dissection, radiation and chemotherapy for advanced ones. Local destruction and nodal spread are the complications: penile lymph drains to inguinal nodes, so groin nodes set the prognosis, whereas the testis drains to para-aortic nodes."
+  ],
+  [
+   "vis",
+   "rp21"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these fit benign prostatic hyperplasia rather than prostate cancer?",
+  "items": [
+   [
+    "Arises in the transition zone",
+    1
+   ],
+   [
+    "Smooth symmetric gland on rectal exam",
+    1
+   ],
+   [
+    "Basal cell layer is preserved",
+    1
+   ],
+   [
+    "Driven by DHT",
+    1
+   ],
+   [
+    "Weak stream and nocturia",
+    1
+   ],
+   [
+    "Relieved by tamsulosin",
+    1
+   ],
+   [
+    "Not premalignant",
+    1
+   ],
+   [
+    "Arises in the peripheral zone",
+    0
+   ],
+   [
+    "Basal cells are absent",
+    0
+   ],
+   [
+    "AMACR is positive",
+    0
+   ],
+   [
+    "Osteoblastic bone metastases",
+    0
+   ],
+   [
+    "Scored by Gleason grade",
+    0
+   ]
+  ]
+ }
+}

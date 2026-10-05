@@ -1,0 +1,52 @@
+<svg class="dia" viewBox="0 0 900 470" role="img" aria-label="A seminiferous tubule drawn from outside to inside: the interstitium with Leydig cells beside a capillary, the basal compartment with spermatogonia, the adluminal compartment with spermatocytes and spermatids behind the Sertoli cell tight junctions, and the lumen with released spermatozoa">
+<text class="ttl" x="14" y="24" font-size="17">Inside a seminiferous tubule: two compartments, two drivers</text>
+<rect x="14" y="44" width="180" height="412" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="26" y="72" font-size="16">Interstitium</text>
+<text x="26" y="106" font-size="15">Leydig cells</text>
+<text x="26" y="130" font-size="15">LH receptors</text>
+<text x="26" y="154" font-size="15">Make testosterone</text>
+<text x="26" y="178" font-size="15">Reinke crystals</text>
+<ellipse cx="56" cy="226" rx="20" ry="13" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<ellipse cx="104" cy="244" rx="20" ry="13" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="152" cy="222" r="15" fill="none" stroke="var(--crit)" stroke-width="2"/>
+<text x="26" y="296" font-size="15">Capillary beside</text>
+<text x="26" y="320" font-size="15">the Leydig cells</text>
+<text class="a2" x="24" y="432" font-size="15">Outside the barrier</text>
+<rect x="206" y="44" width="180" height="412" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="218" y="72" font-size="15">Basal compartment</text>
+<text x="218" y="106" font-size="15">Spermatogonia</text>
+<text x="218" y="130" font-size="15">Diploid stem cells</text>
+<text x="218" y="154" font-size="15">Divide by mitosis</text>
+<text x="218" y="178" font-size="15">Sit on the basement</text>
+<text x="218" y="202" font-size="15">membrane</text>
+<circle cx="246" cy="252" r="14" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="292" cy="252" r="14" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="338" cy="252" r="14" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<line x1="392" y1="92" x2="392" y2="318" stroke="var(--warn)" stroke-width="3" stroke-dasharray="7 5"/>
+<rect x="398" y="44" width="310" height="412" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="410" y="72" font-size="15">Adluminal compartment</text>
+<text x="410" y="106" font-size="15">Primary spermatocytes: meiosis I</text>
+<text x="410" y="130" font-size="14">Secondary spermatocytes: meiosis II</text>
+<text x="410" y="154" font-size="15">Spermatids: spermiogenesis</text>
+<text x="410" y="178" font-size="15">Hidden from immune cells</text>
+<circle cx="440" cy="236" r="17" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="502" cy="236" r="12" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="556" cy="236" r="8" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<ellipse cx="610" cy="236" rx="10" ry="5" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<path d="M620 236 C 632 228, 642 244, 656 236" fill="none" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="410" y="298" font-size="15">Germ cells move toward the lumen</text>
+<rect x="720" y="44" width="166" height="412" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="732" y="72" font-size="16">Lumen</text>
+<text x="732" y="106" font-size="15">Spermatozoa</text>
+<text x="732" y="130" font-size="15">Released but</text>
+<text x="732" y="154" font-size="15">still immotile</text>
+<text x="732" y="178" font-size="15">Flow on to the</text>
+<text x="732" y="202" font-size="15">rete testis</text>
+<ellipse cx="770" cy="252" rx="10" ry="6" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="1.5"/>
+<path d="M780 252 C 794 242, 806 262, 822 252 S 846 244, 858 252" fill="none" stroke="var(--ink-2)" stroke-width="1.5"/>
+<rect x="206" y="328" width="502" height="72" rx="8" fill="var(--surface)" stroke="var(--a1)" stroke-width="2"/>
+<text class="b" x="220" y="356" font-size="15">Sertoli cell: spans both compartments</text>
+<text x="220" y="384" font-size="15">FSH receptors; makes ABP, inhibin B and AMH</text>
+<rect x="206" y="410" width="502" height="38" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text x="220" y="435" font-size="15">Sertoli tight junctions form the blood-testis barrier</text>
+</svg>

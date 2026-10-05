@@ -1,0 +1,422 @@
+{
+ "id": "rp27",
+ "t": "Complications of later pregnancy",
+ "sub": "How a shallow placenta causes preeclampsia, why placental hormones unmask diabetes, and how to tell apart the causes of late bleeding.",
+ "yld": "hi",
+ "exam": "hi",
+ "mins": 16,
+ "bp": [
+  "BP-rp27-01",
+  "BP-rp27-02",
+  "BP-rp27-03",
+  "BP-rp27-04",
+  "BP-rp27-05",
+  "BP-rp27-06",
+  "BP-rp27-07",
+  "BP-rp27-08",
+  "BP-rp27-09",
+  "BP-rp27-10",
+  "BP-rp27-11",
+  "BP-rp27-12",
+  "BP-rp27-13",
+  "BP-rp27-14",
+  "BP-rp27-15",
+  "BP-rp27-16",
+  "BP-rp27-17",
+  "BP-rp27-18",
+  "BP-rp27-19",
+  "BP-rp27-20",
+  "BP-rp27-21"
+ ],
+ "obj": [
+  "THIRD-TRI.1",
+  "THIRD-TRI.2",
+  "THIRD-TRI.3",
+  "THIRD-TRI.4",
+  "THIRD-TRI.5",
+  "THIRD-TRI.6",
+  "PREG-REVIEW.7",
+  "PREG-REVIEW.8",
+  "PREG-REVIEW.9",
+  "PREG-REVIEW.10",
+  "PREG-REVIEW.11",
+  "PREG-REVIEW.12",
+  "PREG-REVIEW.15",
+  "PREG-REVIEW.17",
+  "BICEP-LEWIS.7",
+  "BICEP-LEWIS.9",
+  "BICEP-LEWIS.10",
+  "BICEP-LEWIS.11",
+  "BICEP-LEWIS.12",
+  "BICEP-LEWIS.13"
+ ],
+ "pretest": [
+  {
+   "q": "Which placental change starts the chain of events in preeclampsia?",
+   "o": [
+    "Shallow remodeling of the spiral arteries",
+    "Premature separation of the placenta",
+    "Placental attachment over the internal os",
+    "Villi invading through the myometrium"
+   ],
+   "a": 0,
+   "why": "In preeclampsia, cytotrophoblast fails to convert the maternal spiral arteries into wide channels, so the placenta becomes ischemic and releases sFlt-1, which injures the mother's endothelium.",
+   "w": {
+    "Premature separation of the placenta": "That is placental abruption, a painful bleeding emergency that preeclampsia can trigger; it is a complication, not the starting defect of the disease.",
+    "Placental attachment over the internal os": "That describes placenta previa, which bleeds painlessly from the lower segment and has no link to the vascular defect behind preeclampsia.",
+    "Villi invading through the myometrium": "That is the accreta spectrum, caused by missing decidua over a scar; there trophoblast invades too deeply, the opposite of preeclampsia."
+   }
+  },
+  {
+   "q": "Which hormone chiefly causes insulin resistance in the second half of pregnancy?",
+   "o": [
+    "Human placental lactogen",
+    "Human chorionic gonadotropin",
+    "Relaxin",
+    "Oxytocin"
+   ],
+   "a": 0,
+   "why": "Human placental lactogen rises with placental mass and blunts insulin action, so the mother burns fat and spares glucose for the fetus; when beta cells cannot compensate, gestational diabetes appears.",
+   "w": {
+    "Human chorionic gonadotropin": "hCG peaks near 10 weeks and rescues the corpus luteum; it is falling just as insulin resistance starts to climb late in the second trimester.",
+    "Relaxin": "Relaxin loosens pelvic ligaments and helps soften the cervix; it has no meaningful effect on how muscle and fat respond to insulin.",
+    "Oxytocin": "Oxytocin contracts the uterus in labor and breast myoepithelial cells during nursing; it does not oppose insulin at its target tissues."
+   }
+  },
+  {
+   "q": "An Rh-negative woman with a negative antibody screen is at 28 weeks. Which step best protects a future Rh-positive baby?",
+   "o": [
+    "Antenatal betamethasone",
+    "Anti-D immune globulin now",
+    "Low-dose aspirin",
+    "Intrauterine transfusion"
+   ],
+   "a": 1,
+   "why": "Anti-D immune globulin at 28 weeks, and again within 72 hours of delivering an Rh-positive baby, clears fetal red cells before she makes her own IgG anti-D. It prevents sensitization but cannot reverse it once antibodies exist.",
+   "w": {
+    "Antenatal betamethasone": "Betamethasone matures fetal lungs when preterm delivery is expected; it has no effect on maternal antibody formation against fetal red cells.",
+    "Low-dose aspirin": "Aspirin lowers preeclampsia risk in high-risk patients by improving placental perfusion; it does not prevent Rh sensitization.",
+    "Intrauterine transfusion": "Transfusion treats a fetus already made anemic by maternal antibodies; she has none yet, so there is nothing to treat and no sensitization to prevent."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How does blood pressure change, and when is it preeclampsia?"
+  ],
+  [
+   "p",
+   "Blood pressure normally falls early in pregnancy. Progesterone and nitric oxide relax the arterioles and the low-resistance placental circuit opens, so **systemic vascular resistance** drops even as blood volume and cardiac output rise. Pressure reaches its **nadir** in the second trimester and returns toward the pre-pregnancy baseline by term, so a reading of 140/90 or higher on two occasions is abnormal at any stage. Hypertension before 20 weeks is chronic. New hypertension after 20 weeks without proteinuria is gestational hypertension; with proteinuria of 300 mg or more per 24 hours, or with end-organ damage, it is **preeclampsia**. Seizures make it eclampsia, and hemolysis with liver injury and low platelets is {{rp27_hellp|HELLP syndrome}}."
+  ],
+  [
+   "t",
+   [
+    "Disorder",
+    "Timing",
+    "Defining finding"
+   ],
+   [
+    [
+     "Chronic hypertension",
+     "Before 20 weeks",
+     "140/90 or higher"
+    ],
+    [
+     "Gestational hypertension",
+     "After 20 weeks",
+     "New hypertension; no proteinuria or organ damage"
+    ],
+    [
+     "Preeclampsia without severe features",
+     "After 20 weeks",
+     "New hypertension plus proteinuria (ratio 0.3 or more); normal labs"
+    ],
+    [
+     "Preeclampsia with severe features",
+     "After 20 weeks",
+     "160/110 or higher, platelets under 100,000, creatinine over 1.1 mg/dL, **transaminases** twice normal, pulmonary edema, new headache or visual change"
+    ],
+    [
+     "HELLP syndrome",
+     "Third trimester or postpartum",
+     "Hemolysis (schistocytes, high LDH), AST or ALT twice normal, platelets under 100,000"
+    ],
+    [
+     "Eclampsia",
+     "Before, during or after delivery",
+     "New generalized seizures"
+    ],
+    [
+     "Superimposed preeclampsia",
+     "After 20 weeks, with chronic hypertension",
+     "New proteinuria or organ damage"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "What does preeclampsia look like, and what do HELLP and eclampsia add?"
+  ],
+  [
+   "p",
+   "Many patients feel well, and the disease is found by checking pressure and urine protein at every prenatal visit. The warning symptoms come from organ injury. A persistent **headache** and visual changes (scotomata, blurring) reflect cerebral vasoconstriction and edema. Pain in the **right upper quadrant** or epigastrium, often with nausea, means the swollen liver capsule is stretching and warns of hepatic injury. Sudden facial and hand swelling, brisk reflexes with clonus and rapid weight gain suggest severe disease, although mild leg edema alone is common in normal pregnancy and proves nothing. The laboratory screen is urine protein, platelet count, creatinine and liver transaminases; a falling platelet count and rising AST and ALT mark progression."
+  ],
+  [
+   "p",
+   "HELLP is a microangiopathy: damaged endothelium shreds red cells into schistocytes (hemolysis, with high LDH and low haptoglobin), fibrin deposits in the liver sinusoids raise AST and ALT, and platelets are consumed. Hypertension can be mild or absent, so epigastric pain, nausea and low platelets need these labs even when pressure is normal. **Eclampsia** is a generalized tonic-clonic seizure from cerebral vasospasm and edema; it can follow mild hypertension and strikes before delivery, during labor or after birth, usually within 48 hours when postpartum. A seizure in a pregnant or recently delivered woman is eclampsia until proven otherwise."
+  ],
+  [
+   "h",
+   "Why does a shallow placenta injure the mother's endothelium?"
+  ],
+  [
+   "p",
+   "In a normal pregnancy, cytotrophoblast invades the decidua and inner myometrium and replaces the muscular wall of the maternal **spiral arteries**, turning them into wide channels that cannot constrict. In preeclampsia that remodeling stays shallow, so the arteries keep their muscle, flow falls and the placenta becomes ischemic. The ischemic placenta releases {{rp27_sflt|sFlt-1}}, a soluble decoy receptor that traps VEGF and placental growth factor. Without free VEGF, **endothelial dysfunction** spreads through the mother: arterioles constrict, capillaries leak, swollen glomerular endothelium lets protein through and platelets activate. Placental vessels show fibrinoid necrosis. Because the placenta is the source, **delivery** is the only cure."
+  ],
+  [
+   "f",
+   "rp27_spiral"
+  ],
+  [
+   "p",
+   "Risk factors follow from the mechanism, because more placenta or a poorer vascular bed raises risk. They include prior preeclampsia, nulliparity, multifetal gestation such as twins, chronic hypertension, pregestational diabetes, chronic kidney disease, antiphospholipid syndrome or lupus, and obesity. A molar pregnancy can cause preeclampsia before 20 weeks, the one exception to the timing rule. High-risk patients take **low-dose aspirin** (81 mg), started at 12 to 16 weeks and continued until delivery, which lowers their risk."
+  ],
+  [
+   "h",
+   "How is severe preeclampsia treated, and why magnesium?"
+  ],
+  [
+   "steps",
+   [
+    "Managing preeclampsia with severe features",
+    [
+     [
+      "Lower severe-range pressure",
+      "A pressure of 160/110 or higher risks maternal stroke, so it is lowered within an hour with IV **labetalol**, IV hydralazine or oral nifedipine. Hydralazine dilates arterioles directly and can cause reflex tachycardia; labetalol is avoided in asthma. ACE inhibitors are avoided because they injure the fetal kidney."
+     ],
+     [
+      "Give seizure prophylaxis",
+      "**Magnesium sulfate** is the **seizure prophylaxis** of choice and also treats eclamptic seizures; it does not lower pressure. It runs through labor and for 24 hours after delivery, because eclampsia can strike postpartum."
+     ],
+     [
+      "Plan the delivery",
+      "Delivery removes the source of sFlt-1 and is definitive. With severe features she is delivered at 34 weeks or later once stable, or sooner if she or the fetus becomes unstable; before 34 weeks, selected stable patients may be watched in hospital while betamethasone matures the lungs. Without severe features, delivery is planned at 37 weeks."
+     ]
+    ]
+   ]
+  ],
+  [
+   "call",
+   "key",
+   "Magnesium toxicity follows the reflexes",
+   "Magnesium is cleared only by the kidneys, so toxicity is most likely when preeclampsia has cut urine output. The **patellar reflex**, respiratory rate and urine output are checked hourly: loss of the deep tendon reflexes comes first, then respiratory depression, then cardiac arrest. The antidote is IV **calcium gluconate**, which opposes magnesium at the membrane."
+  ],
+  [
+   "h",
+   "Why do placental hormones unmask diabetes, and what does that do to the fetus?"
+  ],
+  [
+   "p",
+   "As the placenta grows it secretes rising amounts of {{rp27_hpl|human placental lactogen}}, which, with cortisol and progesterone, causes **insulin resistance** in the second half of pregnancy. Lactogen also drives lipolysis, so between meals the mother runs on **free fatty acids** and ketones and spares glucose and amino acids for the fetus. The evolutionary advantage is a steady fetal glucose supply even when she fasts or eats poorly. A woman whose beta cells cannot raise insulin output enough develops **gestational diabetes**."
+  ],
+  [
+   "p",
+   "Obesity, prior gestational diabetes, a prior macrosomic baby, **polycystic** ovary syndrome, type 2 diabetes in the family and older age raise the risk. High-risk women are tested at the first prenatal visit; everyone else is screened at 24 to 28 weeks, when resistance peaks. The two-step method starts with a nonfasting 1-hour 50-g **glucose challenge**; if it is abnormal (130 to 140 mg/dL or more), a fasting 3-hour 100-g test follows, and two abnormal values by the **Carpenter-Coustan** cut-offs (95, 180, 155 and 140 mg/dL) make the diagnosis. The one-step method is a fasting 2-hour 75-g test, where one abnormal value (92, 180 or 153 mg/dL) is enough. Treating glucose lowers macrosomia, shoulder dystocia and preeclampsia: diet and exercise come first, and insulin is added if glucose stays high."
+  ],
+  [
+   "p",
+   "The fetal effects follow one rule: glucose crosses the placenta but maternal insulin does not. The fetus answers hyperglycemia with beta-cell **hyperplasia** and hyperinsulinemia, and insulin is a fetal growth hormone, so fat builds up into **macrosomia**, which sets up shoulder dystocia. At birth the glucose supply stops but the extra insulin does not, causing neonatal hypoglycemia. Insulin also delays **surfactant** production, so respiratory distress is more likely; high fetal oxygen use drives polycythemia, and hypocalcemia can follow. Fetal polyuria causes polyhydramnios. The mother has more preeclampsia and cesarean delivery. After delivery her resistance vanishes, but her lifetime risk of type 2 diabetes stays high, so she is retested 4 to 12 weeks postpartum."
+  ],
+  [
+   "f",
+   "rp27_gdm"
+  ],
+  [
+   "call",
+   "trap",
+   "Pregestational diabetes harms earlier and differently",
+   "Gestational diabetes begins after organogenesis, so it causes overgrowth, not malformations. Pregestational diabetes exposes the embryo to high glucose during weeks 3 to 8, raising the risk of congenital anomalies: heart defects such as **transposition** of the great arteries and VSD, neural tube defects, **caudal regression** syndrome and stillbirth. Control must be tight before conception, with an A1c under 6.5 percent."
+  ],
+  [
+   "h",
+   "Which placental problem is bleeding in the third trimester?"
+  ],
+  [
+   "p",
+   "Late bleeding is sorted by pain and by where the placenta sits. In **placenta previa** the placenta lies over or near the internal os, so as the lower segment stretches it bleeds bright red and painlessly from a soft uterus. A digital exam can tear the placenta, so ultrasound comes first and delivery is by cesarean. In {{rp27_abruption|abruption}}, a normally implanted placenta undergoes premature separation from the uterine wall and bleeds into the gap behind it; the uterus is painful, tender and hypertonic, and a concealed retroplacental clot can make shock and fetal distress out of proportion to the blood seen. Hypertension, cocaine, smoking and trauma raise the risk, and consumed clotting factors can cause DIC."
+  ],
+  [
+   "f",
+   "rp27_bleeding"
+  ],
+  [
+   "p",
+   "Two more problems hide in the attachment. The {{rp27_accreta|placenta accreta spectrum}} forms where the **decidua basalis** is missing, usually over a cesarean scar, so villi attach to the myometrium (accreta), invade it (increta) or pass through it, sometimes into the bladder (percreta). It is painless before delivery but bleeds massively when the placenta will not separate. In **vasa previa** unprotected fetal vessels cross the os inside the membranes; when the membranes rupture the vessels tear, and the blood lost is the fetus's, so fetal bradycardia appears while the mother stays stable. Ultrasound finds all three before labor, which matters because a scheduled cesarean (with hysterectomy for accreta) avoids rupture of the vessels and unplanned hemorrhage."
+  ],
+  [
+   "p",
+   "The differential also includes **uterine rupture**, usually through a prior cesarean scar or in a labor strengthened with oxytocin or prostaglandins: sudden pain, a retreating presenting part and fetal bradycardia, often with little vaginal blood. A **bloody show**, by contrast, is the normal pink mucus that passes as the cervix effaces near term. Work-up begins with vital signs, fetal monitoring, blood count, blood type and fibrinogen, and ultrasound of the placental site; a digital exam waits until previa is excluded."
+  ],
+  [
+   "why",
+   "Why can a placental abruption cause disseminated intravascular coagulation?",
+   "The decidua and placenta are among the richest sources of tissue factor in the body. When the placenta shears off, tissue factor from the damaged decidua enters the maternal circulation and triggers the extrinsic pathway throughout the vessels, while the large retroplacental clot consumes fibrinogen and platelets. Fibrin forms in small vessels as the remaining blood loses its ability to clot, so bleeding from the placental bed, IV sites and wounds worsens. A falling fibrinogen is the earliest useful warning, and delivery plus blood products stops the process."
+  ],
+  [
+   "h",
+   "How does an Rh-negative mother come to attack her next baby?"
+  ],
+  [
+   "p",
+   "An Rh-negative mother carrying an Rh-positive fetus meets fetal red cells through **fetomaternal hemorrhage**, mostly at delivery but also with miscarriage, ectopic pregnancy, abruption, trauma or amniocentesis. Such a sensitizing event starts **sensitization**: her first response is IgM, which cannot cross the placenta, so the first pregnancy is spared. In the next Rh-positive pregnancy, memory cells make IgG anti-D, which crosses and coats fetal red cells for splenic destruction. This {{rp27_alloimm|alloimmunization}} causes hemolytic disease of the fetus and newborn."
+  ],
+  [
+   "p",
+   "The fetus becomes anemic and, when severe, develops **hydrops** (edema, ascites, effusions) from high-output failure. After birth the placenta no longer clears bilirubin, so unconjugated bilirubin can enter the basal ganglia and cause kernicterus. Prevention is passive: **anti-D immune globulin** at 28 weeks and within 72 hours of delivering an Rh-positive baby or any bleeding event clears fetal cells before she responds, and a {{rp27_kb|Kleihauer-Betke test}} sizes the dose. Once she is sensitized, immune globulin cannot help; Doppler of the fetal middle cerebral artery tracks anemia, and intrauterine transfusion treats it. ABO disease, by contrast, strikes a type O mother's first pregnancy, stays mild, gives a weakly positive Coombs test and cannot be prevented."
+  ],
+  [
+   "f",
+   "rp27_rh"
+  ],
+  [
+   "h",
+   "How are preterm labor and ruptured membranes managed?"
+  ],
+  [
+   "p",
+   "Preterm labor, meaning contractions with cervical change before 37 weeks, is managed to buy time. Prior preterm birth, multifetal gestation, a short cervix, infection and smoking raise the risk, and vaginal progesterone lowers it when the cervix is short. A **tocolytic** such as nifedipine, indomethacin (only before 32 weeks, because it can close the ductus arteriosus and cause oligohydramnios) or terbutaline delays delivery about 48 hours, long enough for **betamethasone** to mature the fetal lungs. Magnesium before 32 weeks gives **neuroprotection** against cerebral palsy, and group B strep prophylaxis starts when status is unknown."
+  ],
+  [
+   "p",
+   "Premature rupture of membranes is leakage of fluid before labor: pooling in the vagina, alkaline fluid that turns nitrazine paper blue and a fern pattern on drying confirm it. It invites ascending infection. Chorioamnionitis (intra-amniotic infection) shows as maternal fever with fetal tachycardia, uterine tenderness or foul fluid, and is treated with broad-spectrum antibiotics and delivery; it raises the risk of neonatal sepsis."
+  ],
+  [
+   "h",
+   "How is fetal growth checked, and what restricts it?"
+  ],
+  [
+   "p",
+   "Fundal height in centimeters roughly equals gestational age in weeks from 20 to 36 weeks, so a gap of more than 3 cm prompts ultrasound. Ultrasound adds the head and abdominal circumferences, biparietal diameter and femur length to calculate the **estimated fetal weight**; fetal growth restriction means an estimate under the 10th percentile. Doppler of the **umbilical artery** measures placental resistance, and absent or reversed end-diastolic flow means a failing placenta and prompts early delivery."
+  ],
+  [
+   "p",
+   "**Symmetric** restriction starts early, from aneuploidy or congenital infection, and shrinks head and body alike. **Asymmetric**, head-sparing restriction starts late from placental insufficiency, as in preeclampsia, hypertension or smoking: the fetus diverts blood to its brain, so the abdomen lags, and poor kidney perfusion causes oligohydramnios. These infants face stillbirth and perinatal asphyxia, and as adults more hypertension, type 2 diabetes and **metabolic syndrome**, because poor fetal nutrition programs later metabolism. Macrosomia is the opposite error, usually from maternal diabetes."
+  ],
+  [
+   "h",
+   "Which late itches and liver diseases matter, and what is amniotic fluid embolism?"
+  ],
+  [
+   "p",
+   "Late itching is sorted by the rash and by fetal risk. **Intrahepatic cholestasis** raises bile acids, which reach the fetus and can cause sudden stillbirth; PUPPP is harmless; pemphigoid gestationis is autoimmune, and its IgG can cross to the fetus. **Amniotic fluid embolism** is a different emergency, in which fluid entering the maternal circulation during labor causes sudden hypoxemia, hypotension and DIC."
+  ],
+  [
+   "t",
+   [
+    "Disorder",
+    "Clue",
+    "What follows"
+   ],
+   [
+    [
+     "Intrahepatic cholestasis of pregnancy",
+     "Itchy palms and soles, no rash, high bile acids",
+     "Stillbirth risk; ursodiol, delivery at 36 to 37 weeks"
+    ],
+    [
+     "PUPPP (pruritic urticarial papules and plaques)",
+     "Papules in abdominal striae, sparing the umbilicus",
+     "Benign"
+    ],
+    [
+     "Pemphigoid gestationis",
+     "Periumbilical blisters from IgG against a skin anchoring protein",
+     "Newborn blisters, growth restriction"
+    ],
+    [
+     "Acute fatty liver of pregnancy",
+     "Liver failure with hypoglycemia",
+     "Prompt delivery"
+    ],
+    [
+     "Amniotic fluid embolism",
+     "Sudden hypoxemia, hypotension and DIC in labor",
+     "Supportive care; often fatal"
+    ]
+   ]
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp27_cure",
+    "q": "A woman at 34 weeks has new hypertension and proteinuria. Which reasoning explains why delivery, not drugs, cures her?",
+    "o": [
+     "Lowering blood pressure removes the stimulus for proteinuria, so drugs alone reverse the disease",
+     "The ischemic placenta keeps releasing sFlt-1, so only removing it ends the endothelial injury",
+     "Delivery shrinks the plasma volume, and volume overload is what raises her pressure",
+     "Magnesium cures the disease, and delivery only lets the magnesium be stopped"
+    ],
+    "a": 1,
+    "why": "Preeclampsia is driven by the placenta. Shallow spiral artery remodeling leaves it ischemic, and it secretes sFlt-1, which injures maternal endothelium. Antihypertensives prevent stroke but leave that source untouched, so proteinuria, low platelets and liver injury can progress while the pressure looks controlled, and magnesium only prevents seizures. Once the placenta is delivered, sFlt-1 falls and the disease resolves over days."
+   }
+  ],
+  [
+   "vis",
+   "rp27"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these are severe features of preeclampsia?",
+  "items": [
+   [
+    "Blood pressure of 160/110 or higher",
+    1
+   ],
+   [
+    "Platelets under 100,000",
+    1
+   ],
+   [
+    "New headache that does not respond to medication",
+    1
+   ],
+   [
+    "Visual disturbances",
+    1
+   ],
+   [
+    "Pulmonary edema",
+    1
+   ],
+   [
+    "Liver enzymes twice the upper limit of normal",
+    1
+   ],
+   [
+    "Creatinine over 1.1 mg/dL",
+    1
+   ],
+   [
+    "Proteinuria over 5 g per day",
+    0
+   ],
+   [
+    "Fetal growth restriction",
+    0
+   ],
+   [
+    "Blood pressure of 140/90",
+    0
+   ],
+   [
+    "Onset before 20 weeks",
+    0
+   ],
+   [
+    "Painless vaginal bleeding",
+    0
+   ]
+  ]
+ }
+}
