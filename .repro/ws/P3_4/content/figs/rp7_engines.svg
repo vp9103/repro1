@@ -1,0 +1,52 @@
+<svg class="dia" viewBox="0 0 900 534" role="img" aria-label="Two engines drive puberty: gonadarche runs from kisspeptin and GnRH to LH and FSH and the gonadal hormones, with estradiol causing the breast bud, estrogen fusing the growth plates and transient pubertal gynecomastia in boys; adrenarche runs from ACTH to DHEA-S and pubic hair, and 21-hydroxylase deficiency adds excess adrenal androgen">
+<text class="ttl" x="14" y="26" font-size="18">Two engines drive puberty: GnRH for the gonads, ACTH for the adrenals</text>
+<rect x="14" y="44" width="552" height="474" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="72" font-size="16">Gonadarche: the GnRH engine</text>
+<rect x="24" y="84" width="532" height="58" rx="6" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="38" y="110" font-size="15">Kisspeptin neurons drive the GnRH pulse generator</text>
+<text x="38" y="132" font-size="14">Leptin is permissive: low body fat delays puberty</text>
+<line x1="290" y1="142" x2="290" y2="152" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="285,152 290,160 295,152" fill="var(--ink-2)"/>
+<rect x="24" y="160" width="532" height="38" rx="6" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="38" y="185" font-size="15">Pulsatile GnRH releases LH and FSH</text>
+<line x1="290" y1="198" x2="290" y2="208" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="285,208 290,216 295,208" fill="var(--ink-2)"/>
+<rect x="24" y="216" width="532" height="58" rx="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="38" y="242" font-size="15">Girls</text>
+<text x="108" y="242" font-size="14">Estradiol: breast bud (thelarche)</text>
+<text x="108" y="264" font-size="14">The uterus grows; menarche 2 to 3 years later</text>
+<rect x="24" y="282" width="532" height="58" rx="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="38" y="308" font-size="15">Boys</text>
+<text x="108" y="308" font-size="14">Testosterone: penis, voice, muscle</text>
+<text x="108" y="330" font-size="14">FSH enlarges the testes to 4 mL or more</text>
+<rect x="24" y="348" width="532" height="58" rx="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="38" y="374" font-size="15">Both</text>
+<text x="108" y="374" font-size="14">Estrogen fuses the growth plates</text>
+<text x="108" y="396" font-size="14">Boys make it by aromatizing testosterone</text>
+<rect x="24" y="414" width="532" height="82" rx="6" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="38" y="440" font-size="15">Boys</text>
+<text x="108" y="440" font-size="14">Pubertal gynecomastia: tender, transient</text>
+<text x="108" y="462" font-size="14">Estradiol briefly outruns testosterone</text>
+<text x="108" y="484" font-size="14">Reassurance and reexamination</text>
+<rect x="580" y="44" width="306" height="474" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="594" y="72" font-size="16">Adrenarche: the ACTH engine</text>
+<rect x="590" y="84" width="286" height="58" rx="6" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="604" y="110" font-size="15">Ages 6 to 8: the zona</text>
+<text x="604" y="132" font-size="14">reticularis matures</text>
+<line x1="733" y1="142" x2="733" y2="152" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="728,152 733,160 738,152" fill="var(--ink-2)"/>
+<rect x="590" y="160" width="286" height="38" rx="6" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="604" y="185" font-size="15">ACTH drives DHEA-S</text>
+<line x1="733" y1="198" x2="733" y2="208" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="728,208 733,216 738,208" fill="var(--ink-2)"/>
+<rect x="590" y="216" width="286" height="82" rx="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text x="604" y="242" font-size="14">Pubic and axillary hair,</text>
+<text x="604" y="264" font-size="14">odor and acne</text>
+<text x="604" y="286" font-size="14">No breast or testis growth</text>
+<rect x="590" y="312" width="286" height="150" rx="6" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text x="604" y="338" font-size="14">Too much adrenal androgen</text>
+<text class="b" x="604" y="364" font-size="15">21-hydroxylase deficiency</text>
+<text x="604" y="392" font-size="14">Testes stay small</text>
+<text x="604" y="416" font-size="14">17-hydroxyprogesterone high</text>
+<text x="604" y="440" font-size="14">Advanced bone age</text>
+</svg>

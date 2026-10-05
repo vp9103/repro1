@@ -1,0 +1,53 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.6-flash",
+ "key": "rp20_yolksac",
+ "image_sha": "58cd239570601d33",
+ "at": "2026-10-05 02:29:59",
+ "ann": [
+  {
+   "k": "e",
+   "x": 27.0,
+   "y": 75.0,
+   "rx": 7.0,
+   "ry": 11.0,
+   "rot": -10,
+   "px": 34.0,
+   "py": 75.0,
+   "l": "Schiller-Duval body: this signature structure features a papilla with a central vessel lined by tumor cells projecting into a surrounding space, mimicking a renal glomerulus. It is pathognomonic for yolk sac tumor, the most common testicular tumor in children under 3 years old."
+  },
+  {
+   "k": "r",
+   "x": 39.0,
+   "y": 15.0,
+   "w": 18.0,
+   "h": 14.0,
+   "px": 48.0,
+   "py": 29.0,
+   "l": "Papillary architecture: tumor cells form branching papillae supported by central fibrovascular cores, interspersed with lacy, reticular spaces. This lacy network is the predominant histological growth pattern in yolk sac tumors."
+  },
+  {
+   "k": "arrow",
+   "x": 18.0,
+   "y": 48.0,
+   "tx": 8.0,
+   "ty": 48.0,
+   "px": 8.0,
+   "py": 48.0,
+   "l": "Lining epithelium: papillae are lined by crowded, primitive cuboidal tumor cells with prominent nuclei and high N:C ratios. These neoplastic cells synthesize alpha-fetoprotein (AFP), causing markedly elevated serum AFP levels."
+  }
+ ],
+ "kinds": [
+  "e",
+  "r",
+  "arrow"
+ ],
+ "areaSum": 4.9,
+ "areaMax": 2.5,
+ "findings": [
+  "Schiller-Duval body: at the lower left, a papilla has a central capillary full of red blood cells, wrapped by a layer of tumor cells that projects into an open space, giving the glomerulus-like structure typical of yolk sac tumor.",
+  "Papillary architecture: branching papillae with fibrovascular cores are lined by cuboidal to columnar tumor cells with dark nuclei, and open spaces between them give the lacy pattern typical of yolk sac tumor.",
+  "Lining epithelium: the cells that cover the papillae are crowded, with high nuclear-to-cytoplasmic ratio and prominent nuclei, a primitive epithelium that secretes alpha-fetoprotein, so the serum AFP is raised."
+ ],
+ "adjustments": []
+}

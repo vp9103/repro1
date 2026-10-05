@@ -39,5 +39,28 @@
    "HSG",
    "hysterosalpingogram"
   ]
+ },
+ {
+  "k": "rp9_compart",
+  "t": "Four compartments of amenorrhea",
+  "d": "A framework that sorts amenorrhea by failing level: compartment I the uterus and outflow tract, II the ovary, III the anterior pituitary, IV the hypothalamus and higher centers. Failure of II is hypergonadotropic; III or IV is hypogonadotropic.",
+  "alt": [
+   "four compartments",
+   "compartments"
+  ]
+ },
+ {
+  "k": "rp9_hemato",
+  "t": "Hematocolpos",
+  "d": "Menstrual blood trapped in the vagina behind an imperforate hymen or transverse vaginal septum. It presents at puberty with primary amenorrhea, cyclic pelvic pain, a bulging bluish membrane and a lower-abdominal mass.",
+  "alt": []
+ },
+ {
+  "k": "rp9_icsi",
+  "t": "Intracytoplasmic sperm injection",
+  "d": "An in vitro fertilization step in which a single sperm is injected directly into each egg. It treats severe male-factor infertility and is paired with surgical sperm retrieval when the ejaculate contains no sperm.",
+  "alt": [
+   "ICSI"
+  ]
  }
 ]

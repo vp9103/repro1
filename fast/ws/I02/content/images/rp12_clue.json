@@ -28,5 +28,43 @@
   "Intact nucleus: each epithelial cell still shows a pale, round central nucleus, which marks it as an intact squamous cell; the bacteria cover the surface and do not invade the cell.",
   "Sparse background: only a few small cells lie outside the clue cells, instead of the sheets of neutrophils seen in trichomoniasis or cervicitis, which fits the noninflammatory nature of bacterial vaginosis."
  ],
- "ann": []
+ "ann": [
+  {
+   "k": "arrow",
+   "x": 35.0,
+   "y": 76.0,
+   "tx": 20.0,
+   "ty": 84.0,
+   "px": 20.0,
+   "py": 84.0,
+   "l": "Clue cell (lower left): The squamous epithelial cell border is blurred and heavily stippled by dense Gardnerella vaginalis and anaerobic coccobacilli, obscuring the normal distinct margin."
+  },
+  {
+   "k": "arrow",
+   "x": 60.0,
+   "y": 33.0,
+   "tx": 75.0,
+   "ty": 22.0,
+   "px": 75.0,
+   "py": 22.0,
+   "l": "Clue cell (upper right): A second overlapping epithelial cell exhibits the same fuzzy, bacteria-laden edge, demonstrating generalized bacterial adherence across the smear."
+  },
+  {
+   "k": "c",
+   "x": 45.8,
+   "y": 71.0,
+   "r": 2.5,
+   "px": 45.8,
+   "py": 67.5,
+   "l": "Intact nucleus: A pale, round nucleus remains clearly visible within the cell, confirming intact squamous architecture with superficial bacterial coating rather than cellular destruction."
+  },
+  {
+   "k": "none",
+   "x": 25.0,
+   "y": 40.0,
+   "px": 25.0,
+   "py": 40.0,
+   "l": "Sparse background: The field lacks the sheets of neutrophils typical of trichomoniasis or cervicitis, consistent with the noninflammatory pathogenesis of bacterial vaginosis."
+  }
+ ]
 }

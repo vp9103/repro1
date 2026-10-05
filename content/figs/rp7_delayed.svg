@@ -1,0 +1,44 @@
+<svg class="dia" viewBox="0 0 900 640" role="img" aria-label="Delayed puberty sorted by LH and FSH: high LH and FSH means failed gonads such as Turner or Klinefelter syndrome and the next step is a karyotype; low LH and FSH means constitutional delay with a delayed bone age, functional hypogonadotropism from low leptin, Kallmann syndrome with anosmia, or another central cause">
+<text class="ttl" x="14" y="26" font-size="18">Late puberty: LH and FSH sort the cause, then the bone age</text>
+<rect x="14" y="44" width="872" height="62" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="70" font-size="15">No breast bud by age 13, or testes under 4 mL by age 14</text>
+<text x="28" y="94" font-size="14">Measure LH and FSH, and get a bone age X-ray</text>
+<line x1="450" y1="106" x2="450" y2="120" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,120 450,128 455,120" fill="var(--ink-2)"/>
+<rect x="14" y="130" width="330" height="452" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="28" y="158" font-size="15">LH and FSH high: gonads failed</text>
+<rect x="24" y="172" width="310" height="116" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="36" y="198" font-size="15">Turner syndrome (45,X)</text>
+<text x="36" y="222" font-size="14">Streak ovaries, short stature</text>
+<text x="36" y="246" font-size="14">No breast development</text>
+<rect x="24" y="296" width="310" height="116" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="36" y="322" font-size="15">Klinefelter syndrome (47,XXY)</text>
+<text x="36" y="346" font-size="14">Small, firm testes</text>
+<text x="36" y="370" font-size="14">Tall, long legs</text>
+<rect x="24" y="420" width="310" height="84" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="36" y="446" font-size="15">Chemotherapy or radiation</text>
+<text x="36" y="470" font-size="14">Damaged ovaries or testes</text>
+<rect x="24" y="512" width="310" height="64" rx="6" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="36" y="552" font-size="15">Next step: karyotype</text>
+<rect x="358" y="130" width="528" height="452" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="372" y="158" font-size="15">LH and FSH low: the axis is quiet</text>
+<rect x="368" y="172" width="508" height="112" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="380" y="198" font-size="15">Constitutional delay: the most common cause</text>
+<text x="380" y="222" font-size="14">Healthy, short, a parent who matured late</text>
+<text x="380" y="246" font-size="14">Bone age delayed about 2 years</text>
+<text x="380" y="270" font-size="14">Low LH and FSH fit the bone age; it starts on its own</text>
+<rect x="368" y="292" width="508" height="88" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="380" y="318" font-size="15">Functional: low leptin suppresses GnRH pulses</text>
+<text x="380" y="342" font-size="14">Anorexia, hard training, chronic illness</text>
+<text x="380" y="366" font-size="14">Treat the cause: restore energy balance</text>
+<rect x="368" y="388" width="508" height="88" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="380" y="414" font-size="15">Kallmann syndrome</text>
+<text x="380" y="438" font-size="14">GnRH neurons fail to migrate from the olfactory placode</text>
+<text x="380" y="462" font-size="14">Anosmia: loss of smell; normal karyotype</text>
+<rect x="368" y="484" width="508" height="88" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="380" y="510" font-size="15">Other central causes</text>
+<text x="380" y="534" font-size="14">Pituitary mass, prolactin excess, hypothyroidism</text>
+<text x="380" y="558" font-size="14">Check TSH and prolactin; MRI if suspected</text>
+<rect x="14" y="592" width="872" height="38" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="28" y="617" font-size="14">Bone age is delayed in every cause; the LH and FSH level picks the next test.</text>
+</svg>

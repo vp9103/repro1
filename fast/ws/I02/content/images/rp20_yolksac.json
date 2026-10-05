@@ -27,5 +27,36 @@
   "Papillary architecture: branching papillae with fibrovascular cores are lined by cuboidal to columnar tumor cells with dark nuclei, and open spaces between them give the lacy pattern typical of yolk sac tumor.",
   "Lining epithelium: the cells that cover the papillae are crowded, with high nuclear-to-cytoplasmic ratio and prominent nuclei, a primitive epithelium that secretes alpha-fetoprotein, so the serum AFP is raised."
  ],
- "ann": []
+ "ann": [
+  {
+   "k": "e",
+   "x": 28.0,
+   "y": 60.0,
+   "rx": 9.0,
+   "ry": 14.0,
+   "px": 35.4,
+   "py": 52.0,
+   "l": "Schiller-Duval body: a papilla with a central capillary, lined by tumor cells and projecting into an open space, resembles a renal glomerulus. This structure is characteristic of yolk sac tumor, the most common testicular tumor in boys younger than 3."
+  },
+  {
+   "k": "r",
+   "x": 39.0,
+   "y": 15.0,
+   "w": 18.0,
+   "h": 14.0,
+   "px": 48.0,
+   "py": 29.0,
+   "l": "Papillary architecture: tumor cells form branching papillae supported by central fibrovascular cores, interspersed with lacy, reticular spaces. This lacy network is the predominant histological growth pattern in yolk sac tumors."
+  },
+  {
+   "k": "arrow",
+   "x": 18.0,
+   "y": 48.0,
+   "tx": 8.0,
+   "ty": 48.0,
+   "px": 8.0,
+   "py": 48.0,
+   "l": "Lining epithelium: papillae are lined by crowded, primitive cuboidal tumor cells with prominent nuclei and high N:C ratios. These neoplastic cells synthesize alpha-fetoprotein (AFP), causing markedly elevated serum AFP levels."
+  }
+ ]
 }

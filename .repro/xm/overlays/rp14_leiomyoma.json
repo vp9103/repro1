@@ -1,0 +1,64 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "key": "rp14_leiomyoma",
+ "image_sha": "454238e11ea6d40c",
+ "at": "2026-10-05 02:25:08",
+ "ann": [
+  {
+   "k": "e",
+   "x": 77.0,
+   "y": 64.0,
+   "rx": 9.0,
+   "ry": 10.0,
+   "px": 77.0,
+   "py": 74.0,
+   "l": "Glistening pink-white smooth muscle bundles interlace and sweep in swirling, concentric whorls across the cut face. This classic whorled appearance reflects the organized fascicular growth of benign smooth muscle cells and represents the gross hallmark of a leiomyoma."
+  },
+  {
+   "k": "arrow",
+   "x": 93.0,
+   "y": 30.0,
+   "tx": 96.0,
+   "ty": 16.0,
+   "px": 96.0,
+   "py": 16.0,
+   "l": "The cut surface terminates in a distinct, smooth, rounded boundary rather than invading adjacent tissue. Because leiomyomas are benign, non-infiltrative tumors with pushing borders, surgeons can readily enucleate ('shell out') the nodule while sparing surrounding uterine myometrium."
+  },
+  {
+   "k": "arrow",
+   "x": 65.0,
+   "y": 45.0,
+   "tx": 52.0,
+   "ty": 28.0,
+   "px": 52.0,
+   "py": 28.0,
+   "l": "The parenchyma is uniformly tan-white, firm, and glistening without mottled softening, dark hemorrhage, or cystic necrosis. In contrast, malignant leiomyosarcomas exhibit high cellular turnover and vascular fragility, producing a soft, variegated, fleshy surface with prominent hemorrhage and necrosis."
+  },
+  {
+   "k": "arrow",
+   "x": 16.0,
+   "y": 55.0,
+   "tx": 6.0,
+   "ty": 40.0,
+   "px": 6.0,
+   "py": 40.0,
+   "l": "The unsectioned left half reveals a rounded, rougher exterior with fine fibrous tags. These adhesions mark the surgical cleavage plane where the benign pseudoencapsulated nodule was peeled away from the surrounding muscular wall of the uterus."
+  }
+ ],
+ "kinds": [
+  "e",
+  "arrow",
+  "arrow",
+  "arrow"
+ ],
+ "areaSum": 2.8,
+ "areaMax": 2.8,
+ "findings": [
+  "Whorled cut surface: on the right piece, glistening pink-white bundles of smooth muscle sweep in swirling curves around the center of the cut face, the gross hallmark of a leiomyoma.",
+  "Sharp, pushing border: the cut face ends in a smooth, rounded edge with no ragged invasion of neighboring tissue, because a leiomyoma is benign and well circumscribed, which lets surgeons shell it out.",
+  "Uniform pale tissue without hemorrhage or necrosis: the nodule is evenly tan-white and firm, unlike the soft, fleshy, hemorrhagic and necrotic cut surface of a leiomyosarcoma.",
+  "Outer surface of the nodule: the left piece shows the rounded, rougher outer face with ragged tags of surrounding tissue where the nodule was separated from the muscle of the uterine wall."
+ ],
+ "adjustments": []
+}

@@ -1,0 +1,13 @@
+{"type": "turn.started", "provider": "gemini", "model": "gemini-3.7-flash", "format": "json_schema", "images": 1, "prompt_sha": "59eba9c784"}
+{"type": "error", "model": "gemini-3.7-flash", "error": "gemini-3.7-flash json_schema: HTTP 503 [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]"}
+{"type": "turn.started", "provider": "gemini", "model": "gemini-3.7-flash", "format": "json_schema", "images": 1, "prompt_sha": "59eba9c784"}
+{"type": "error", "model": "gemini-3.7-flash", "error": "gemini-3.7-flash json_schema: HTTP 503 [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]"}
+{"type": "turn.started", "provider": "gemini", "model": "gemini-3.7-flash", "format": "json_schema", "images": 1, "prompt_sha": "59eba9c784"}
+{"type": "error", "model": "gemini-3.7-flash", "error": "gemini-3.7-flash json_schema: HTTP 503 [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]"}
+{"type": "turn.started", "provider": "gemini", "model": "gemini-3.7-flash", "format": "json_schema", "images": 1, "prompt_sha": "59eba9c784"}
+{"type": "error", "model": "gemini-3.7-flash", "error": "gemini-3.7-flash json_schema: HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e"}
+{"type": "turn.started", "provider": "gemini", "model": "gemini-3.8-flash", "format": "json_schema", "images": 1, "prompt_sha": "59eba9c784"}
+{"type": "error", "model": "gemini-3.8-flash", "error": "gemini-3.8-flash json_schema: HTTP 503 [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]"}
+{"type": "turn.started", "provider": "gemini", "model": "gemini-3.8-flash", "format": "json_schema", "images": 1, "prompt_sha": "59eba9c784"}
+{"type": "item.completed", "model": "gemini-3.8-flash", "usage": {"completion_tokens": 822, "prompt_tokens": 1806, "total_tokens": 6035}}
+{"type": "turn.completed", "provider": "gemini", "model": "gemini-3.8-flash"}

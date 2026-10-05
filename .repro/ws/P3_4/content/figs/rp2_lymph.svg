@@ -1,0 +1,41 @@
+<svg class="dia" viewBox="0 0 900 510" role="img" aria-label="Lymph drainage map: ovary and testis to para-aortic nodes; uterine body, cervix, upper vagina, prostate and bladder to iliac and obturator nodes; the uterine fundus along the round ligament, the lower vagina and vulva, the scrotum and penile shaft skin and the anal canal below the pectinate line to superficial inguinal nodes; the glans to deep inguinal nodes">
+<text class="ttl" x="14" y="24" font-size="17">First lymph nodes for each pelvic and perineal structure</text>
+<path d="M330 72 L 600 92 M330 112 L 600 92" fill="none" stroke="var(--a1)" stroke-width="2.5"/>
+<path d="M330 162 L 600 202 M330 202 L 600 202 M330 242 L 600 202" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<path d="M330 302 L 600 362 M330 342 L 600 362 M330 382 L 600 362 M330 422 L 600 362" fill="none" stroke="var(--warn)" stroke-width="2.5"/>
+<path d="M330 472 L 600 472" fill="none" stroke="var(--crit)" stroke-width="2.5"/>
+<rect x="14" y="58" width="316" height="28" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="28" y="77" font-size="14">Ovary</text>
+<rect x="14" y="98" width="316" height="28" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="28" y="117" font-size="14">Testis</text>
+<rect x="14" y="148" width="316" height="28" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text x="28" y="167" font-size="14">Uterine body and cervix</text>
+<rect x="14" y="188" width="316" height="28" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text x="28" y="207" font-size="14">Upper vagina</text>
+<rect x="14" y="228" width="316" height="28" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text x="28" y="247" font-size="14">Prostate and bladder</text>
+<rect x="14" y="288" width="316" height="28" rx="6" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.5"/>
+<text x="28" y="307" font-size="14">Uterine fundus via round ligament</text>
+<rect x="14" y="328" width="316" height="28" rx="6" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.5"/>
+<text x="28" y="347" font-size="14">Lower vagina and vulva</text>
+<rect x="14" y="368" width="316" height="28" rx="6" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.5"/>
+<text x="28" y="387" font-size="14">Scrotum and penile shaft skin</text>
+<rect x="14" y="408" width="316" height="28" rx="6" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.5"/>
+<text x="28" y="427" font-size="14">Anal canal below pectinate line</text>
+<rect x="14" y="458" width="316" height="28" rx="6" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.5"/>
+<text x="28" y="477" font-size="14">Glans penis or clitoris</text>
+<rect x="600" y="58" width="286" height="68" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="614" y="84" font-size="14">Para-aortic (lumbar) nodes</text>
+<text x="614" y="108" font-size="14">where the gonadal arteries start</text>
+<rect x="600" y="148" width="286" height="108" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="614" y="180" font-size="14">Iliac and obturator nodes</text>
+<text x="614" y="204" font-size="14">internal and external iliac</text>
+<text x="614" y="228" font-size="14">on the pelvic side wall</text>
+<rect x="600" y="288" width="286" height="148" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="614" y="356" font-size="14">Superficial inguinal nodes</text>
+<text x="614" y="380" font-size="14">below the inguinal ligament</text>
+<rect x="600" y="452" width="286" height="42" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="614" y="478" font-size="14">Deep inguinal nodes</text>
+<text class="a1" x="344" y="140" font-size="13">gonads follow their vessels</text>
+<text class="wn" x="344" y="278" font-size="13">perineal skin drains to the groin</text>
+</svg>

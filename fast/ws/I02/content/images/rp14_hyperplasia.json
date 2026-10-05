@@ -28,5 +28,45 @@
   "Bland nuclei: the cells lining the glands are small, oval and uniform, without enlarged rounded nuclei or prominent nucleoli, so there is no atypia and the cancer risk is low, about 1 to 3 percent.",
   "Intervening stroma: bands of cellular endometrial stroma still separate neighboring glands almost everywhere, which distinguishes hyperplasia from carcinoma, where glands fuse back to back with no stroma between them."
  ],
- "ann": []
+ "ann": [
+  {
+   "k": "none",
+   "x": 50.0,
+   "y": 50.0,
+   "px": 50.0,
+   "py": 50.0,
+   "l": "Crowded glands: Tightly packed glands fill most of the field, so the gland-to-stroma ratio is higher than in normal proliferative endometrium, the defining feature of hyperplasia driven by unopposed estrogen."
+  },
+  {
+   "k": "e",
+   "x": 20.0,
+   "y": 18.0,
+   "rx": 11.0,
+   "ry": 7.0,
+   "rot": -15,
+   "px": 20.0,
+   "py": 11.0,
+   "l": "Variable gland size and shape: Some glands are large and dilated while others are small, round or branching, which gives the architectural complexity that earns the name complex hyperplasia; a large dilated gland sits at the upper left."
+  },
+  {
+   "k": "arrow",
+   "x": 62.0,
+   "y": 74.0,
+   "tx": 75.0,
+   "ty": 74.0,
+   "px": 75.0,
+   "py": 74.0,
+   "l": "Bland nuclei: The cells lining the glands are small, oval and uniform, without enlarged rounded nuclei or prominent nucleoli, so there is no atypia and the cancer risk is low, about 1 to 3 percent."
+  },
+  {
+   "k": "arrow",
+   "x": 45.0,
+   "y": 38.0,
+   "tx": 45.0,
+   "ty": 25.0,
+   "px": 45.0,
+   "py": 25.0,
+   "l": "Intervening stroma: Bands of cellular endometrial stroma still separate neighboring glands almost everywhere, which distinguishes hyperplasia from carcinoma, where glands fuse back to back with no stroma between them."
+  }
+ ]
 }

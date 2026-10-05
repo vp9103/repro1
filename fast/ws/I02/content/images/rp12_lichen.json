@@ -27,5 +27,36 @@
   "Homogenized dermal collagen: directly beneath the epidermis, a broad, pale pink band of collagen has lost its fiber pattern and almost all of its cells; this sclerosis gives the white color and later scarring.",
   "Lymphocytic infiltrate: below the pale band the dermis turns more cellular, with scattered small dark lymphocytes around the adnexal structures at the lower left; this T-cell mediated inflammation causes the itching and drives the scarring."
  ],
- "ann": []
+ "ann": [
+  {
+   "k": "arrow",
+   "x": 45.0,
+   "y": 25.0,
+   "tx": 45.0,
+   "ty": 10.0,
+   "px": 45.0,
+   "py": 10.0,
+   "l": "Thin epidermis: a narrow, flattened ribbon of squamous cells runs across the top with loss of the rete ridges, which explains the thin, wrinkled, parchment-like white skin seen in the clinic."
+  },
+  {
+   "k": "r",
+   "x": 29.0,
+   "y": 33.0,
+   "w": 22.0,
+   "h": 14.0,
+   "px": 40.0,
+   "py": 33.0,
+   "l": "Homogenized dermal collagen: directly beneath the epidermis, a broad, pale pink band of collagen has lost its fiber pattern and almost all of its cells; this sclerosis gives the white color and later scarring."
+  },
+  {
+   "k": "e",
+   "x": 22.0,
+   "y": 88.0,
+   "rx": 7.0,
+   "ry": 5.0,
+   "px": 22.0,
+   "py": 93.0,
+   "l": "Lymphocytic infiltrate: scattered small dark lymphocytes surround the adnexal structures in the deeper dermis at the lower left, below the pale band; this T-cell mediated inflammation causes the itching and drives the scarring."
+  }
+ ]
 }
