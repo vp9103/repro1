@@ -1,0 +1,63 @@
+<svg class="dia" viewBox="0 0 900 580" role="img" aria-label="Coronal section of the male urogenital triangle: the levator ani above, the deep perineal pouch with the external urethral sphincter, membranous urethra and bulbourethral glands, the perineal membrane between the ischiopubic rami, the superficial pouch with the bulb, crura, bulbospongiosus and ischiocavernosus, and Colles fascia below; two panels show where urine spreads after spongy and membranous urethral tears">
+<text class="ttl" x="14" y="24" font-size="17">Urogenital triangle in coronal section: two pouches, one membrane, Colles fascia</text>
+<path d="M232 252 L 488 252 L 488 258 Q 482 336 360 340 Q 238 336 232 258 Z" fill="var(--a1-soft)" stroke="none"/>
+<rect x="232" y="190" width="256" height="60" fill="var(--a2-soft)" stroke="none"/>
+<ellipse cx="360" cy="92" rx="60" ry="36" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="2"/>
+<ellipse cx="360" cy="156" rx="36" ry="22" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="2"/>
+<path d="M212 138 L 326 182 M508 138 L 394 182" fill="none" stroke="var(--warn)" stroke-width="8" stroke-linecap="round"/>
+<line x1="360" y1="178" x2="360" y2="292" stroke="var(--ink-2)" stroke-width="3"/>
+<rect x="342" y="196" width="36" height="48" rx="8" fill="none" stroke="var(--a2)" stroke-width="3.5"/>
+<circle cx="326" cy="236" r="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="2"/>
+<circle cx="394" cy="236" r="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="2"/>
+<rect x="210" y="236" width="24" height="30" rx="6" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="486" y="236" width="24" height="30" rx="6" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<line x1="232" y1="251" x2="488" y2="251" stroke="var(--ink)" stroke-width="4"/>
+<ellipse cx="258" cy="268" rx="22" ry="10" fill="var(--surface)" stroke="var(--a1)" stroke-width="2"/>
+<ellipse cx="462" cy="268" rx="22" ry="10" fill="var(--surface)" stroke="var(--a1)" stroke-width="2"/>
+<ellipse cx="360" cy="282" rx="32" ry="16" fill="var(--surface)" stroke="var(--a1)" stroke-width="2"/>
+<circle cx="360" cy="282" r="4" fill="var(--ink-2)"/>
+<path d="M326 286 Q 360 318 394 286" fill="none" stroke="var(--crit)" stroke-width="4"/>
+<path d="M236 274 Q 258 292 280 274 M440 274 Q 462 292 484 274" fill="none" stroke="var(--crit)" stroke-width="3"/>
+<path d="M232 258 Q 238 336 360 340 Q 482 336 488 258" fill="none" stroke="var(--a1)" stroke-width="3"/>
+<text x="360" y="97" font-size="14" text-anchor="middle">Bladder</text>
+<text x="360" y="161" font-size="14" text-anchor="middle">Prostate</text>
+<text class="wn" x="14" y="140" font-size="14">Levator ani</text>
+<line x1="98" y1="136" x2="228" y2="146" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="a2" x="14" y="200" font-size="14">Deep perineal pouch</text>
+<line x1="160" y1="196" x2="240" y2="206" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="14" y="228" font-size="14">Ischiopubic ramus</text>
+<line x1="146" y1="226" x2="210" y2="244" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="b" x="14" y="258" font-size="14">Perineal membrane</text>
+<line x1="152" y1="254" x2="232" y2="251" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="a1" x="14" y="298" font-size="14">Superficial perineal pouch</text>
+<text x="14" y="316" font-size="14">Bartholin glands in women</text>
+<line x1="208" y1="294" x2="300" y2="300" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="a1" x="14" y="342" font-size="14">Colles fascia</text>
+<line x1="112" y1="338" x2="270" y2="330" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="576" y="178" font-size="14">Membranous urethra</text>
+<line x1="572" y1="174" x2="364" y2="188" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="a2" x="576" y="208" font-size="14">External urethral sphincter</text>
+<line x1="572" y1="204" x2="380" y2="214" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="576" y="230" font-size="14">Bulbourethral glands</text>
+<line x1="572" y1="226" x2="401" y2="235" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="576" y="280" font-size="14">Crus and ischiocavernosus</text>
+<line x1="572" y1="276" x2="485" y2="272" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="576" y="304" font-size="14">Bulb with spongy urethra</text>
+<line x1="572" y1="300" x2="392" y2="284" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="cr" x="576" y="330" font-size="14">Bulbospongiosus</text>
+<line x1="572" y1="326" x2="384" y2="300" stroke="var(--ink-3)" stroke-width="1"/>
+<rect x="14" y="372" width="430" height="196" rx="10" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="28" y="398" font-size="14">Spongy urethra torn below the membrane</text>
+<text x="28" y="424" font-size="14">Straddle injury: urine fills the superficial pouch</text>
+<text x="28" y="448" font-size="14">Colles fascia steers it into the scrotum, penis</text>
+<text x="28" y="472" font-size="14">and up the abdominal wall under Scarpa fascia</text>
+<text class="cr" x="28" y="500" font-size="14">Not the thighs: fused to the fascia lata</text>
+<text class="cr" x="28" y="524" font-size="14">Not the anal triangle: fused to the membrane</text>
+<rect x="456" y="372" width="430" height="196" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="470" y="398" font-size="14">Membranous urethra torn above the membrane</text>
+<text x="470" y="424" font-size="14">Pelvic fracture: urine enters the deep pouch</text>
+<text x="470" y="448" font-size="14">and rises into the retropubic space</text>
+<text x="470" y="472" font-size="14">Scrotum and penis usually stay dry</text>
+<text class="a2" x="470" y="500" font-size="14">High-riding prostate, blood at the meatus</text>
+<text class="a2" x="470" y="524" font-size="14">Retrograde urethrogram before a catheter</text>
+</svg>
