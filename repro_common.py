@@ -408,7 +408,7 @@ def term_hit(low: str, term: str) -> bool:
     'training' inside 'straining'); a stem may run on ('koilocyt' finds 'koilocytes'). A term of 3 characters or
     fewer is an abbreviation and must also end the word, a plural allowed ('whi' is not found in 'which')."""
     tail = r"(?:e?s)?(?![a-z])" if len(term) <= 3 else ""
-    return re.search(r"(?<![a-z0-9])" + re.escape(term) + tail, low) is not None
+    return re.search(r"(?<![a-z0-9])(?<![0-9][.,])" + re.escape(term) + tail, low) is not None  # '1 cm' not inside '2.1 cm'
 
 
 def terms_present(text: str, terms: list[list[str]]) -> list[str]:

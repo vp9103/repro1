@@ -1,6 +1,6 @@
-# P3 coverage gaps (generated 2026-10-05 from the gate's coverage_terms_problems on fast/content after P1.4 round 3)
+# P3 coverage gaps (regenerated 2026-10-05 after P1.4 round 4, from the gate's coverage_terms_problems on fast/content)
 
-Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms are absent from the topic's rendered text. The topic must TEACH the missing part (a sentence or more of real explanation), not just mention the word. The part each term anchors is in .repro/P1.4-proposals/A.md or B.md (anchors column).
+Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms are absent from the topic's rendered text. The topic must TEACH the missing part (real explanation), not just mention the word. What part each term anchors: the anchors column in .repro/P1.4-proposals/A.md or B.md (round-4 changes: audit/P1.4.md).
 
 
 ## rp1 (21)
@@ -71,8 +71,9 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 - EMBRYO-CLIN.10 term(s) ['insl3', 'ambiguous genitalia'] absent
 - BICEP-MISHIMOTO.2 term(s) ['patent'] absent
 
-## rp6 (2)
+## rp6 (3)
 
+- BP-rp6-09 key term(s) ['xyy'] absent
 - BICEP-WALSH.21 term(s) ['azoospermia'] absent
 - BICEP-WALSH.22 term(s) ['gonadectomy'] absent
 
@@ -96,7 +97,7 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 - PHYS-MENSTRUAL.4 term(s) ['day 14', 'pulse frequency', 'second rise'] absent
 - PHYS-MENSTRUAL.5 term(s) ['luteinization'] absent
 
-## rp9 (14)
+## rp9 (15)
 
 - HP-UTERUS-OVARY.3 term(s) ['follicular cyst', 'endometrioma', 'pelvic adhesion'] absent
 - PATHPHARM-MENSES-CONTRA.1 term(s) ['transvaginal', 'laparoscop', 'dyschezia'] absent
@@ -106,6 +107,7 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 - BICEP-WEIAND.7 term(s) ['intracytoplasmic', 'sperm retrieval'] absent
 - BICEP-WALSH.7 term(s) ['thelarche'] absent
 - BICEP-WALSH.9 term(s) ['compartment', 'hypogonadotropic', 'hypergonadotropic'] absent
+- BICEP-WALSH.10 term(s) ['previously regular'] absent
 - BICEP-WALSH.13 term(s) ['hematocolpos', 'rokitansky'] absent
 - BICEP-WALSH.14 term(s) ['adrenal tumor'] absent
 - BICEP-WALSH.15 term(s) ['alkylating'] absent
@@ -219,7 +221,7 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 
 ## rp20 (8)
 
-- HP-MALE.11 term(s) ['inguinal hernia', 'contralateral'] absent
+- HP-MALE.11 term(s) ['inguinal hernia', 'contralateral', 'bilateral cryptorchidism'] absent
 - HP-MALE.12 term(s) ['detorsion'] absent
 - HP-MALE.13 term(s) ['sperm antigen'] absent
 - HP-MALE.14 term(s) ['filaria', 'chylocele'] absent
@@ -291,7 +293,7 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 - THIRD-TRI.4 term(s) ['75 g', 'carpenter'] absent
 - THIRD-TRI.5 term(s) ['polycystic'] absent
 - THIRD-TRI.6 term(s) ['decidua basalis', 'premature separation'] absent
-- PREG-REVIEW.7 term(s) ['vascular resistance'] absent
+- PREG-REVIEW.7 term(s) ['prepregnancy', 'vascular resistance'] absent
 - PREG-REVIEW.8 term(s) ['patellar'] absent
 - PREG-REVIEW.9 term(s) ['sensitiz'] absent
 - PREG-REVIEW.12 term(s) ['estimated fetal weight', 'umbilical artery'] absent
@@ -300,13 +302,14 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 - BICEP-LEWIS.12 term(s) ['metabolic syndrome'] absent
 - BICEP-LEWIS.13 term(s) ['kernicterus', 'sensitiz'] absent
 
-## rp28 (11)
+## rp28 (12)
 
 - LABOR-DELIVERY.1 term(s) ['fetal adrenal'] absent
 - LABOR-DELIVERY.2 term(s) ['action potential', 'upregulat'] absent
 - LABOR-DELIVERY.3 term(s) ['placental separation'] absent
 - LABOR-DELIVERY.4 term(s) ['pitocin', 'active management'] absent
 - LABOR-DELIVERY.6 term(s) ['internal anal sphincter', 'bulbospongiosus'] absent
+- PRENATAL-CARE.11 term(s) ['cervical position'] absent
 - PRENATAL-CARE.13 term(s) ['vertex', 'transverse lie', 'frank breech'] absent
 - PRENATAL-CARE.16 term(s) ['amniotic fluid index'] absent
 - PRENATAL-CARE.17 term(s) ['nitrous oxide', 'respiratory depression'] absent

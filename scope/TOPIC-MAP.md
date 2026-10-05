@@ -100,7 +100,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | HP-MALE.8 | rp21,rp16,rp17 | - | balanitis; candida; herpes; syphilis |
 | HP-MALE.9 | rp21 | - | fibrous plaque; curvature; collagenase; plication |
 | HP-MALE.10 | rp5,rp20 | - | inguinal canal; deep inguinal ring |
-| HP-MALE.11 | rp20 | - | inguinal hernia; contralateral; germ cell tumor |
+| HP-MALE.11 | rp20 | - | inguinal hernia; contralateral; germ cell tumor; bilateral cryptorchidism |
 | HP-MALE.12 | rp20 | - | high-riding; detorsion; congestion; salvage |
 | HP-MALE.13 | rp20 | - | granulomatous; enteric; sperm antigen |
 | HP-MALE.14 | rp20 | - | patent processus; communicating; filaria; chylocele |
@@ -240,7 +240,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | PRENATAL-CARE.8 | rp30 | - | pertussis; influenza; respiratory syncytial; varicella |
 | PRENATAL-CARE.9 | rp30 | - | 0.4 mg; dna synthesis; banana sign |
 | PRENATAL-CARE.10 | rp28 | - | tocodynamometer; doppler; intrauterine pressure catheter; fetal scalp electrode |
-| PRENATAL-CARE.11 | rp28 | - | dilation; effacement; station; consistency |
+| PRENATAL-CARE.11 | rp28 | - | cervical position; effacement; station; consistency |
 | PRENATAL-CARE.12 | rp28 | - | misoprostol; pge1; collagen |
 | PRENATAL-CARE.13 | rp28 | - | vertex; transverse lie; frank breech; planned cesarean |
 | PRENATAL-CARE.14 | rp18 | - | acyclovir; prodrom; active lesion; disseminated |
@@ -255,7 +255,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | THIRD-TRI.6 | rp27 | - | internal os; decidua basalis; percreta; premature separation |
 | GTD.1 | rp26 | - | nlrp7; nulliparity; familial |
 | GTD.2 | rp26 | - | antecedent; theca lutein; 100,000 |
-| GTD.3 | rp26 | - | uterotonic; hysterectomy; thyroid function |
+| GTD.3 | rp26 | - | uterotonic; immune globulin; thyroid function |
 | GTD.4 | rp26 | - | plateau; actinomycin; risk score; gynecologic oncolog |
 | GTD.5 | rp26 | - | hydropic; trophoblastic hyperplasia; p57; duplicat |
 | GTD.6 | rp26 | - | hematogenous; cytotrophoblast; intermediate trophoblast; epithelioid trophoblastic |
@@ -296,7 +296,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | PREG-REVIEW.4 | rp30 | - | 0.4 mg; preconception; fortif |
 | PREG-REVIEW.5 | rp30 | - | carrier screening; spinal muscular; microarray; cell-free dna |
 | PREG-REVIEW.6 | rp25 | - | thyroxine-binding; lower esophageal sphincter; residual volume |
-| PREG-REVIEW.7 | rp27,rp25 | - | nadir; baseline; vascular resistance |
+| PREG-REVIEW.7 | rp27,rp25 | - | nadir; prepregnancy; vascular resistance |
 | PREG-REVIEW.8 | rp27 | - | proteinuria; seizure; hemolysis; patellar |
 | PREG-REVIEW.9 | rp27 | - | rh-negative; hydrops; sensitiz; 72 hours |
 | PREG-REVIEW.10 | rp27 | - | prior preterm; short cervix; chronic hypertension |
@@ -398,7 +398,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | BICEP-WALSH.7 | rp9,rp7 | - | delayed puberty; age 15; age 13; thelarche |
 | BICEP-WALSH.8 | rp30 | - | living children; abortion; twins |
 | BICEP-WALSH.9 | rp9 | - | outflow tract; compartment; hypogonadotropic; hypergonadotropic |
-| BICEP-WALSH.10 | rp9 | - | age 15; 3 months; 6 months |
+| BICEP-WALSH.10 | rp9 | - | age 15; previously regular; 6 months |
 | BICEP-WALSH.11 | rp9,rp6 | - | kallmann; anosmia; leptin; migrat |
 | BICEP-WALSH.12 | rp9,en3 | - | prolactinoma; sheehan; empty sella; cushing |
 | BICEP-WALSH.13 | rp9,rp5 | - | imperforate hymen; hematocolpos; rokitansky; curettage |

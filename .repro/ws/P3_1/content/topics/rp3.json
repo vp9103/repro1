@@ -2,7 +2,7 @@
  "id": "rp3",
  "t": "Breast anatomy and histology",
  "sub": "A modified sweat gland hung from the skin and resting on the pectoral fascia, whose layers, lymphatics and two-cell epithelium explain the exam and the pathology.",
- "yld": "lo",
+ "yld": "mid",
  "exam": "mid",
  "mins": 12,
  "bp": [
@@ -103,7 +103,7 @@
   ],
   [
    "p",
-   "The clinical exam follows the anatomy. On inspection the examiner looks at the nipple and areola for new inversion, scaling or discharge, and at the skin for dimpling, which is easiest to see when the patient raises her arms or tenses her chest muscles. On palpation every quadrant is covered, and the **upper outer quadrant** gets special attention because it holds the most glandular tissue, including the axillary tail. The exam then moves into the axilla and above the clavicle, because those node beds are where breast cancer spreads first. A hard, irregular or fixed mass, or new **nipple retraction** from tumor shortening the lactiferous ducts, needs imaging and biopsy."
+   "The clinical exam follows the anatomy. On inspection the examiner looks at the nipple and areola for new inversion, scaling or discharge, and at the skin for dimpling, which is easiest to see when the patient raises her arms or tenses her chest muscles. On palpation every quadrant is covered, and the **upper outer quadrant** gets special attention because it holds the most glandular tissue, including the axillary tail. It lies at 9 to 12 o'clock in the right breast and 12 to 3 o'clock in the left, because a lump is recorded by breast, clock-face position and distance from the nipple (left breast, 2 o'clock, 3 cm from the nipple), so the next examiner or radiologist finds the same spot. The exam then moves into the axilla and above the clavicle, because those node beds are where breast cancer spreads first. A hard, irregular or fixed mass, or new **nipple retraction** from tumor shortening the lactiferous ducts, needs imaging and biopsy."
   ],
   [
    "h",
@@ -111,11 +111,11 @@
   ],
   [
    "p",
-   "The breast has a double arterial supply that mirrors its position between the sternum and the axilla. Medially, perforating branches of the **internal thoracic artery** (internal mammary artery) emerge through the upper intercostal spaces beside the sternum. Laterally, the **lateral thoracic artery**, a branch of the axillary artery, supplies the outer breast, helped by pectoral branches of the thoracoacromial artery and by branches of the posterior intercostal arteries. Veins follow the arteries, so most blood drains to the axillary vein and the rest to the internal thoracic and **intercostal veins**. Intercostal veins connect with the valveless vertebral venous plexus, a route that lets breast cancer seed the spine."
+   "The breast has a double arterial supply that mirrors its position between the sternum and the axilla. Medially, perforating branches of the **internal thoracic artery** (internal mammary artery) emerge through the upper intercostal spaces beside the sternum. Laterally, the **lateral thoracic artery**, a branch of the axillary artery, supplies the outer breast, helped by pectoral branches of the thoracoacromial artery and by branches of the posterior intercostal arteries. Veins follow the arteries, so most blood drains to the axillary vein and the rest to the internal thoracic and **intercostal veins**. Intercostal veins connect with the valveless vertebral venous plexus of {{rp3_batson|Batson}}, so a rise in chest pressure can send tumor cells straight to the vertebrae, a route to spinal metastases."
   ],
   [
    "p",
-   "Lymph follows a similar split. About 75 percent of breast lymph, especially from the lateral quadrants, flows to the **axillary nodes**, which surgeons group into three levels by their relation to pectoralis minor: level I lies lateral to the muscle, level II behind it, and level III medial to it at the apex of the axilla. The medial quadrants also drain to the {{rp3_imn|internal mammary nodes}} along the internal thoracic vessels, and a smaller share crosses to the opposite breast or runs toward abdominal nodes. Because tumor cells travel along this path in order, the first node on it, the **sentinel node**, is found with blue dye or a radiotracer and removed; if it is free of tumor, the rest of the axilla can usually be left alone."
+   "Lymph follows a similar split. About 75 percent of breast lymph, especially from the lateral quadrants, flows to the **axillary nodes**, which surgeons group into three levels by their relation to pectoralis minor: level I lies lateral to the muscle, level II behind it, and level III medial to it at the apex of the axilla. The medial quadrants also drain to the {{rp3_imn|internal mammary nodes}} along the internal thoracic vessels, and a smaller share crosses to the opposite breast or runs toward abdominal nodes. Because tumor cells travel along this path in order, the first node on it, the {{rp3_sentinel|sentinel node}}, is found with blue dye or a radiotracer and removed; if it is free of tumor, the rest of the axilla can usually be left alone. Apical (level III) nodes drain on to the supraclavicular nodes, and a hard supraclavicular node on the same side signals advanced regional disease (N3 in staging)."
   ],
   [
    "p",
@@ -207,14 +207,14 @@
      ],
      [
       "Myoepithelial cells contract",
-      "Oxytocin makes the myoepithelial cells contract around the alveoli, pushing milk into the ducts and out of the nipple; this let-down reflex can also be triggered by a crying infant."
+      "Oxytocin makes the myoepithelial cells contract around the alveoli, pushing milk into the ducts and out of the nipple; this milk ejection (let-down) reflex can also be triggered by a crying infant."
      ]
     ]
    ]
   ],
   [
    "p",
-   "The microscope shows these hormonal states plainly. A resting adult breast is mostly dense fibrous tissue and fat with scattered small ducts and a few small lobules. A **lactating** breast is almost all epithelium: lobules swell into crowded, dilated **alveoli** lined by cuboidal cells with vacuolated cytoplasm, and the lumens fill with milk. The cells use two export routes. Milk proteins such as casein leave by **merocrine** secretion, the exocytosis of secretory vesicles, while fat droplets bulge from the cell apex and pinch off wrapped in cell membrane, which is apocrine secretion. After menopause the lobules involute and fat replaces the fibrous stroma, which is why older breasts look darker and easier to read on mammography."
+   "The microscope shows these hormonal states plainly. A resting adult breast is mostly dense fibrous tissue and fat with scattered small ducts and a few small lobules. A **lactating** breast is almost all epithelium: lobules swell into crowded, dilated **alveoli** lined by cuboidal cells with vacuolated cytoplasm, and the lumens fill with milk. The cells use two export routes. Milk proteins such as casein leave by **merocrine** secretion, the exocytosis of secretory vesicles, while each lipid droplet bulges from the cell apex and pinches off wrapped in cell membrane, which is apocrine secretion. After menopause the lobules involute and fat replaces the fibrous stroma, which is why older breasts look darker and easier to read on mammography."
   ],
   [
    "why",
@@ -228,11 +228,11 @@
     "q": "A breast mass glides freely at rest but stops moving when the patient presses her hands on her hips. Which reasoning is best?",
     "o": [
      "The tumor has shortened Cooper ligaments, which pull on the skin whenever the chest muscle tightens",
-     "The tumor has crossed the retromammary space into the pectoral fascia, so it now moves with the contracting muscle",
      "The tumor has blocked dermal lymphatics, so the swollen skin grips the mass during contraction",
+     "The tumor has crossed the retromammary space into the pectoral fascia, so it now moves with the contracting muscle",
      "Contraction compresses any mass, so loss of mobility means nothing unless the mass is also painful"
     ],
-    "a": 1,
+    "a": 2,
     "why": "The retromammary space is loose connective tissue that normally lets the breast slide over pectoralis major. A mass that is mobile at rest but locks in place when the muscle contracts has grown through that plane and attached to the pectoral fascia, which means deep invasion and a higher stage. Cooper ligament involvement causes skin dimpling, and dermal lymphatic blockage causes peau d'orange; neither anchors the mass to muscle. Pain does not reliably separate benign from malignant disease."
    }
   ],
@@ -299,6 +299,14 @@
    [
     "Invasive carcinoma nests keep a complete myoepithelial rim",
     0
+   ],
+   [
+    "A breast lump is recorded by clock-face position and distance from the nipple",
+    1
+   ],
+   [
+    "A hard supraclavicular node on the same side signals advanced regional disease",
+    1
    ]
   ]
  }

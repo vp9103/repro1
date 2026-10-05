@@ -24,7 +24,7 @@ en9_hypercalcemia, en9_three_hpt missing.
 | P2.6 | CLOSED 2026-10-05 (F3) | ledger row sha:29b015ac | |
 | V2 | DONE (finished before the restart; 8 new figures reviewed 2026-10-05) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
 | P1.4 | CLOSED 2026-10-05 (round 3, part->anchor proposals A.md/B.md) | 302 rows, 48 UNANCHORED, 4 topic changes | ledger row |
-| P1.V | run 3 verifier (token 80c4fa9a83) | 12 objectives + 10 spot-checks | .repro/verify/P1-report.md |
+| P1.V | run 4 verifier (token 3174cc2441); run 3 was 11/12 | 12 objectives + round-4 rows + spot-checks | .repro/verify/P1-report.md |
 
 ## Wave 1 (reproductive, Oct 9) queue
 1. Every rp topic now has questions, rapid and >= 1 drill. Figure gaps (hi blueprint items with no figure to pin a rapid item): BP-rp23-05 fat necrosis, BP-rp29-07 minors' consent, BP-rp11-04 bone/LDL, BP-rp17-10 molluscum, BP-rp17-05 perinatal HIV prevention, BP-rp17-12 HIV course and labs (en8_loop.svg has no JSON).
@@ -53,3 +53,6 @@ Questions only en1, en5; rapid only en5; drills only en5.
 
 ## Gemini
 - Free key: 20 requests/day PER MODEL; xmodel.py falls back gemini-3.7 -> 3.8 -> 3.6 -> 3.5 -> 3-flash-preview (GATE-CHANGE sha:904e79ee). Budget overlays accordingly (~1-3 requests per image).
+
+## For P1.3's next reopen
+- Generic BP alternatives: BP-rp27-12 'returns', BP-rp18-14 'primary infection', BP-rp30-05 'live' (matches 'liver'); STEP1-BLUEPRINT header still promises a second-model review.
