@@ -1,0 +1,48 @@
+<svg class="dia" viewBox="0 0 900 556" role="img" aria-label="Reading azoospermia: semen volume, pH and fructose point to ejaculatory duct obstruction or CBAVD, while testis size and FSH separate obstructive azoospermia from testicular failure and hypogonadotropic disease, and sperm in post-ejaculatory urine mean retrograde ejaculation">
+<text class="ttl" x="14" y="24" font-size="17">Azoospermia: read the ejaculate first, then testis size and FSH</text>
+<rect x="250" y="44" width="400" height="44" rx="8" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="450" y="72" font-size="15" text-anchor="middle">Two semen analyses show no sperm</text>
+<line x1="330" y1="88" x2="235.39" y2="124.742" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="227.0,128.0 234.1,118.8 238.5,130.0" fill="var(--ink-2)"/>
+<line x1="570" y1="88" x2="664.61" y2="124.742" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="673.0,128.0 661.5,130.0 665.9,118.8" fill="var(--ink-2)"/>
+<rect x="14" y="128" width="426" height="64" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="30" y="154" font-size="15">Low volume, acidic pH, no fructose</text>
+<text x="30" y="178" font-size="14">Seminal vesicle fluid is missing</text>
+<rect x="460" y="128" width="426" height="64" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="476" y="154" font-size="15">Fructose present, volume normal</text>
+<text x="476" y="178" font-size="14">Next: testis size, FSH and testosterone</text>
+<line x1="227" y1="192" x2="227" y2="213" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="227.0,222.0 221.0,212.0 233.0,212.0" fill="var(--ink-2)"/>
+<rect x="14" y="222" width="426" height="64" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="30" y="248" font-size="15">Duct system blocked or vas absent</text>
+<text x="30" y="272" font-size="14">Ejaculatory duct obstruction or CBAVD</text>
+<line x1="190" y1="286" x2="124.261" y2="314.428" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="116.0,318.0 122.8,308.5 127.6,319.5" fill="var(--ink-2)"/>
+<line x1="264" y1="286" x2="329.739" y2="314.428" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="338.0,318.0 326.4,319.5 331.2,308.5" fill="var(--ink-2)"/>
+<rect x="14" y="320" width="205" height="92" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="26" y="344" font-size="14">Vas deferens absent</text>
+<text x="26" y="368" font-size="14">CBAVD, CFTR mutations</text>
+<text x="26" y="390" font-size="14">Test the partner too</text>
+<rect x="235" y="320" width="205" height="92" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="247" y="344" font-size="14">Vas deferens present</text>
+<text x="247" y="368" font-size="14">Ejaculatory duct block</text>
+<text x="247" y="390" font-size="14">Confirm by imaging</text>
+<line x1="673" y1="192" x2="673" y2="213" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="673.0,222.0 667.0,212.0 679.0,212.0" fill="var(--ink-2)"/>
+<rect x="460" y="222" width="426" height="58" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="476" y="247" font-size="15">Normal testes, normal FSH</text>
+<text x="476" y="269" font-size="14">Obstructive: vasectomy, epididymal block</text>
+<rect x="460" y="288" width="426" height="58" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="476" y="313" font-size="15">Small, soft testes, high FSH</text>
+<text x="476" y="335" font-size="14">Non-obstructive: testicular failure</text>
+<rect x="460" y="354" width="426" height="58" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="476" y="379" font-size="15">Low testosterone, low FSH and LH</text>
+<text x="476" y="401" font-size="14">Hypogonadotropic: Kallmann, prolactinoma</text>
+<rect x="14" y="424" width="872" height="40" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="30" y="450" font-size="14">Karyotype and Y microdeletions if fewer than 5 million sperm per mL; repeat testing after 3 months</text>
+<rect x="14" y="476" width="872" height="66" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="30" y="504" font-size="15">Low volume but sperm in post-ejaculatory urine: retrograde ejaculation</text>
+<text x="30" y="530" font-size="14">Causes: tamsulosin and other alpha-blockers, diabetic neuropathy, prostate surgery</text>
+</svg>

@@ -25,7 +25,8 @@ en9_hypercalcemia, en9_three_hpt missing.
 | P3.3 | CLOSED 2026-10-05 (rp7-rp9, 29 gap lines) | | ledger row sha:92b2ca5d |
 | P3.4 | CLOSED 2026-10-05 (rp10, rp11, rp29) | | ledger row sha:455e012e |
 | P3.6 | CLOSED 2026-10-05 (rp15, rp23, rp24; img rows: audit/P3.6.md section 4) | | ledger row sha:e5370435 |
-| P3.8 | worker | rp19, rp20, rp21, rp22 (.repro/ws/P3_8) | --status P3.8 ok |
+| P3.8 | CLOSED 2026-10-05 (rp19-rp22; rp20 img rows: audit/P3.8.md section 4) | | ledger row sha:858855ec |
+| COV-A | reviewer (repro-worker) | coverage rp1-rp15 -> .repro/coverage/wave1-A.md | TAUGHT/PARTIAL/MISSING per id |
 | P3.9 | CLOSED 2026-10-05 (rp25, rp30, rp26) | | ledger row sha:28e99992 |
 | P3.10 | worker | rp27, rp28 (.repro/ws/P3_10) | --status P3.10 ok |
 | P3.5 | CLOSED 2026-10-05 (rp12-rp14; img rows to re-insert in P4.3: audit/P3.5.md section 5) | | ledger row sha:0e4d2e10 |
