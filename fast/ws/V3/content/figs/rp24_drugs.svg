@@ -1,0 +1,69 @@
+<svg class="dia" viewBox="0 0 900 612" role="img" aria-label="Breast cancer drugs by target and signature problem: tamoxifen, raloxifene, aromatase inhibitors, trastuzumab, anthracyclines and PARP inhibitors, with the reason aromatase inhibitors need a quiet ovary">
+<text class="ttl" x="14" y="26" font-size="17">Breast cancer drugs: where each acts and what to remember</text>
+<text class="b" x="26" y="52" font-size="15">Drug</text>
+<text class="b" x="236" y="52" font-size="15">How it acts</text>
+<text class="b" x="590" y="52" font-size="15">Signature point</text>
+<rect x="14" y="62" width="214" height="68" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="26" y="86" font-size="16">Tamoxifen</text>
+<text x="26" y="103" font-size="13">SERM; usual choice</text>
+<text x="26" y="119" font-size="13">before menopause</text>
+<text x="236" y="86" font-size="14.5">Blocks the receptor in breast;</text>
+<text x="236" y="106" font-size="14.5">stimulates it in endometrium and bone</text>
+<text class="b" x="590" y="86" font-size="14.5">Endometrial cancer and clots (VTE)</text>
+<text x="590" y="106" font-size="14.5">Protects bone after menopause</text>
+<line x1="228" y1="131" x2="886" y2="131" stroke="var(--line)" stroke-width="1"/>
+<rect x="14" y="134" width="214" height="58" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="26" y="158" font-size="16">Raloxifene</text>
+<text x="26" y="175" font-size="13">SERM</text>
+<text x="236" y="158" font-size="14.5">Blocks the receptor in breast</text>
+<text x="236" y="178" font-size="14.5">without stimulating the endometrium</text>
+<text class="b" x="590" y="158" font-size="14.5">Lowers breast cancer risk</text>
+<text x="590" y="178" font-size="14.5">No endometrial stimulation</text>
+<line x1="228" y1="193" x2="886" y2="193" stroke="var(--line)" stroke-width="1"/>
+<rect x="14" y="196" width="214" height="68" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="26" y="220" font-size="16">Aromatase inhibitors</text>
+<text x="26" y="237" font-size="13">anastrozole, letrozole,</text>
+<text x="26" y="253" font-size="13">exemestane</text>
+<text x="236" y="220" font-size="14.5">Block the making of estrogen</text>
+<text x="236" y="240" font-size="14.5">from androgens (aromatase)</text>
+<text class="b" x="590" y="220" font-size="14.5">After menopause</text>
+<text x="590" y="240" font-size="14.5">Bone loss and joint pain</text>
+<line x1="228" y1="265" x2="886" y2="265" stroke="var(--line)" stroke-width="1"/>
+<rect x="14" y="268" width="214" height="68" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="26" y="292" font-size="16">Trastuzumab</text>
+<text x="26" y="309" font-size="13">anti-HER2 antibody</text>
+<text x="236" y="292" font-size="14.5">Binds the outer part of HER2</text>
+<text x="236" y="312" font-size="14.5">and blocks its growth signal</text>
+<text class="cr" x="590" y="292" font-size="14.5">Reversible cardiotoxicity</text>
+<text x="590" y="312" font-size="14.5">Blocks HER2 survival signals</text>
+<text x="590" y="332" font-size="14.5">in heart muscle cells</text>
+<line x1="228" y1="337" x2="886" y2="337" stroke="var(--line)" stroke-width="1"/>
+<rect x="14" y="340" width="214" height="58" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="26" y="364" font-size="16">Anthracyclines</text>
+<text x="26" y="381" font-size="13">doxorubicin, for contrast</text>
+<text x="236" y="364" font-size="14.5">Free radicals kill heart</text>
+<text x="236" y="384" font-size="14.5">muscle cells</text>
+<text class="cr" x="590" y="364" font-size="14.5">Dose-dependent, largely</text>
+<text class="cr" x="590" y="384" font-size="14.5">permanent cardiotoxicity</text>
+<line x1="228" y1="399" x2="886" y2="399" stroke="var(--line)" stroke-width="1"/>
+<rect x="14" y="402" width="214" height="54" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="26" y="426" font-size="16">PARP inhibitors</text>
+<text x="26" y="443" font-size="13">olaparib</text>
+<text x="236" y="426" font-size="14.5">Block repair of DNA breaks</text>
+<text class="b" x="590" y="426" font-size="14.5">Kill BRCA-deficient cells,</text>
+<text x="590" y="446" font-size="14.5">which cannot repair them</text>
+<line x1="228" y1="457" x2="886" y2="457" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="14" y="480" font-size="17">Why an aromatase inhibitor needs a quiet ovary</text>
+<rect x="14" y="492" width="430" height="106" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="28" y="518" font-size="16">Before menopause</text>
+<text x="28" y="542" font-size="15">Estrogen falls, so FSH and LH rise</text>
+<text x="28" y="564" font-size="15">The stimulated ovary makes more estrogen</text>
+<text class="wn" x="28" y="586" font-size="14.5">Needs ovarian suppression or removal first</text>
+<rect x="456" y="492" width="430" height="106" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="470" y="518" font-size="16">After menopause</text>
+<text x="470" y="542" font-size="15">The ovary no longer responds</text>
+<text x="470" y="564" font-size="15">Estrogen comes from aromatase in fat</text>
+<text class="gd" x="470" y="586" font-size="14.5">Blocking it removes nearly all estrogen</text>
+<line x1="444" y1="545" x2="450.0" y2="545.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="456,545 450.0,548.7 450.0,541.3" fill="var(--ink-2)"/>
+</svg>

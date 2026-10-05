@@ -1,0 +1,60 @@
+<svg class="dia" viewBox="0 0 900 546" role="img" aria-label="High-grade serous ovarian carcinoma: it begins in the fimbriated end of the fallopian tube, sheds cells onto peritoneal surfaces, presents late with bloating and ascites, is treated with surgery and platinum chemotherapy, and is prevented by fewer ovulations or by removing the tube">
+<text class="ttl" x="14" y="26" font-size="17">High-grade serous carcinoma: a tubal cancer that presents late</text>
+<rect x="14" y="40" width="872" height="74" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<circle cx="40" cy="77" r="13" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="40" y="82" font-size="14" text-anchor="middle">1</text>
+<ellipse cx="146" cy="80" rx="22" ry="16" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<path d="M82 59 C 110 53, 122 71, 126 83" fill="none" stroke="var(--ink-2)" stroke-width="4" />
+<line x1="126" y1="83" x2="134" y2="77" stroke="var(--ink-2)" stroke-width="2"/>
+<line x1="126" y1="83" x2="136" y2="87" stroke="var(--ink-2)" stroke-width="2"/>
+<line x1="126" y1="83" x2="130" y2="97" stroke="var(--ink-2)" stroke-width="2"/>
+<circle cx="124" cy="85" r="5" fill="var(--crit)" stroke="var(--crit)" stroke-width="1"/>
+<text class="b" x="186" y="68" font-size="17">Starts at the fimbriated end of the tube</text>
+<text x="186" y="90" font-size="15">Serous tubal intraepithelial carcinoma (STIC) with an early TP53 mutation</text>
+<text x="186" y="109" font-size="15">The ovarian cancer of BRCA1 and BRCA2 carriers</text>
+<line x1="40" y1="114" x2="40.0" y2="116.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="40,122 36.3,116.0 43.7,116.0" fill="var(--ink-2)"/>
+<rect x="14" y="122" width="872" height="74" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="40" cy="159" r="13" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="40" y="164" font-size="14" text-anchor="middle">2</text>
+<path d="M84 169 C 102 153, 120 181, 138 167 S 166 157, 178 167" fill="none" stroke="var(--ink-3)" stroke-width="3" />
+<circle cx="96" cy="149" r="4.5" fill="var(--crit)" stroke="var(--crit)" stroke-width="1"/>
+<circle cx="116" cy="155" r="4.5" fill="var(--crit)" stroke="var(--crit)" stroke-width="1"/>
+<circle cx="136" cy="151" r="4.5" fill="var(--crit)" stroke="var(--crit)" stroke-width="1"/>
+<circle cx="158" cy="143" r="4.5" fill="var(--crit)" stroke="var(--crit)" stroke-width="1"/>
+<circle cx="174" cy="151" r="4.5" fill="var(--crit)" stroke="var(--crit)" stroke-width="1"/>
+<text class="b" x="186" y="150" font-size="17">Cells shed onto peritoneal surfaces</text>
+<text x="186" y="172" font-size="15">They seed the ovary, the omentum and the peritoneum</text>
+<text x="186" y="191" font-size="15">Women notice nothing until the spread is wide</text>
+<line x1="40" y1="196" x2="40.0" y2="198.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="40,204 36.3,198.0 43.7,198.0" fill="var(--ink-2)"/>
+<rect x="14" y="204" width="872" height="74" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<circle cx="40" cy="241" r="13" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="40" y="246" font-size="14" text-anchor="middle">3</text>
+<ellipse cx="130" cy="241" rx="44" ry="25" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<path d="M100 233 C 112 228, 122 238, 130 233 S 150 228, 160 233" fill="none" stroke="var(--a2)" stroke-width="2" />
+<path d="M100 244 C 112 239, 122 249, 130 244 S 150 239, 160 244" fill="none" stroke="var(--a2)" stroke-width="2" />
+<path d="M100 254 C 112 249, 122 259, 130 254 S 150 249, 160 254" fill="none" stroke="var(--a2)" stroke-width="2" />
+<text class="b" x="186" y="232" font-size="17">Presents late</text>
+<text x="186" y="254" font-size="15">Bloating, early satiety, rising girth</text>
+<text x="186" y="273" font-size="15">Ascites and omental caking; CA-125 is raised</text>
+<line x1="40" y1="278" x2="40.0" y2="280.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="40,286 36.3,280.0 43.7,280.0" fill="var(--ink-2)"/>
+<rect x="14" y="286" width="872" height="74" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<circle cx="40" cy="323" r="13" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="40" y="328" font-size="14" text-anchor="middle">4</text>
+<path d="M130 297 C 114 319, 112 337, 130 347 C 148 337, 146 319, 130 297 Z" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2" />
+<text class="b" x="186" y="314" font-size="17">Debulking surgery plus platinum chemotherapy</text>
+<text x="186" y="336" font-size="15">A PARP inhibitor is added for BRCA carriers</text>
+<text x="186" y="355" font-size="15">Complete removal at the first operation improves the outcome</text>
+<text class="b" x="14" y="392" font-size="17">What protects</text>
+<rect x="14" y="402" width="420" height="100" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="28" y="428" font-size="16">Fewer lifetime ovulations</text>
+<text x="28" y="452" font-size="15">Oral contraceptives, pregnancy, breastfeeding</text>
+<text x="28" y="474" font-size="15">Early menarche and late menopause raise risk</text>
+<rect x="446" y="402" width="440" height="100" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="460" y="428" font-size="16">Salpingectomy or tubal ligation</text>
+<text x="460" y="452" font-size="15">Removes the tissue where most of these start</text>
+<text x="460" y="474" font-size="14">BRCA carriers: salpingo-oophorectomy after childbearing</text>
+<text x="14" y="534" font-size="14">Yearly CA-125 and ultrasound do not lower deaths in average-risk women (USPSTF, as of 2025)</text>
+</svg>

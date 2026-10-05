@@ -1,0 +1,558 @@
+[
+ {
+  "id": "rp28r01",
+  "tags": [
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp28-01"
+  ],
+  "q": "Which protein forms the myometrial gap junctions that let the uterus contract as one unit in labor?",
+  "o": [
+   "Connexin 43",
+   "E-cadherin",
+   "Occludin",
+   "Desmoglein",
+   "Integrin"
+  ],
+  "a": 0,
+  "x": "Connexin 43 assembles into gap junction channels that pass ions between myometrial cells, so an action potential spreads from cell to cell and the uterus contracts in synchrony; rising estrogen near term multiplies these junctions, while progesterone suppresses them.",
+  "w": {
+   "E-cadherin": "E-cadherin builds adherens junctions that hold epithelial cells together through calcium-dependent adhesion; it carries no current, so it cannot coordinate electrical activity across the myometrium.",
+   "Occludin": "Occludin is a tight junction protein that seals the space between epithelial cells against leakage; it blocks passage between cells rather than opening a channel for ions.",
+   "Desmoglein": "Desmoglein is the cadherin of desmosomes, spot welds that anchor intermediate filaments and resist shearing; they give tissue tensile strength but pass no ions between cells.",
+   "Integrin": "Integrins anchor cells to the extracellular matrix and basement membrane, as in hemidesmosomes; they link a cell to matrix, not one muscle cell to its neighbor."
+  },
+  "media": "fig:rp28_onset",
+  "pt": {
+   "hl": [
+    "Connexin 43 gap junctions"
+   ],
+   "say": "In the cascade, connexin 43 gap junctions let the myometrium contract as one unit."
+  }
+ },
+ {
+  "id": "rp28r02",
+  "tags": [
+   "hormone-source",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp28-01"
+  ],
+  "q": "Which hormone rises steeply from the placenta near term and drives fetal cortisol production before labor?",
+  "o": [
+   "Corticotropin-releasing hormone",
+   "Human chorionic gonadotropin",
+   "Human placental lactogen",
+   "Progesterone",
+   "Relaxin"
+  ],
+  "a": 0,
+  "x": "Placental corticotropin-releasing hormone climbs steeply in the last weeks of pregnancy and stimulates fetal ACTH, cortisol and adrenal DHEA-S; cortisol in turn stimulates more placental CRH, a positive feedback loop that raises estrogen and helps time the onset of labor.",
+  "w": {
+   "Human chorionic gonadotropin": "hCG peaks at about 10 weeks to rescue the corpus luteum and then falls to a plateau; it has no rising role near term and does not drive fetal cortisol.",
+   "Human placental lactogen": "Human placental lactogen rises with placental mass and causes maternal insulin resistance that shunts glucose to the fetus; it does not stimulate the fetal adrenal axis.",
+   "Progesterone": "Progesterone from the placenta keeps the myometrium quiet throughout pregnancy; labor follows a functional withdrawal of its effect, not a progesterone-driven rise in fetal cortisol.",
+   "Relaxin": "Relaxin from the corpus luteum and placenta loosens pelvic ligaments and softens connective tissue; it peaks in the first trimester and does not activate the fetal adrenal axis."
+  },
+  "media": "fig:rp28_onset",
+  "pt": {
+   "hl": [
+    "corticotropin-releasing hormone"
+   ],
+   "say": "The cascade starts with placental corticotropin-releasing hormone, which rises steeply near term and drives fetal ACTH."
+  }
+ },
+ {
+  "id": "rp28r03",
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp28-02"
+  ],
+  "q": "Which stage of labor runs from full cervical dilation to delivery of the infant?",
+  "o": [
+   "Second stage",
+   "First stage, active phase",
+   "First stage, latent phase",
+   "Third stage",
+   "Fourth stage"
+  ],
+  "a": 0,
+  "x": "The second stage begins at full dilation of 10 cm and ends with birth of the baby. Pushing adds maternal effort to the contractions, and arrest is diagnosed after about 3 hours without descent in a first labor.",
+  "w": {
+   "First stage, active phase": "The active phase lasts from about 6 cm to full dilation, while the cervix opens quickly; it ends where the second stage begins, so it never includes the birth itself.",
+   "First stage, latent phase": "The latent phase is the slow early part of labor, as the cervix softens and thins up to about 6 cm; it is far from full dilation and birth.",
+   "Third stage": "The third stage starts after the baby is born and ends with delivery of the placenta, normally within 30 minutes; a longer wait defines a retained placenta.",
+   "Fourth stage": "The fourth stage is the first hour or so after the placenta delivers, when the uterus must stay contracted to prevent hemorrhage; it comes after birth, not before."
+  },
+  "media": "fig:rp28_stages",
+  "pt": {
+   "hl": [
+    "Second stage",
+    "Full dilation at 10 cm"
+   ],
+   "say": "The second stage runs from full dilation at 10 cm through pushing to the birth of the baby."
+  }
+ },
+ {
+  "id": "rp28r04",
+  "tags": [
+   "anatomic-relations",
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp28-04"
+  ],
+  "q": "Which part of the cervical exam describes the presenting part's level relative to the ischial spines?",
+  "o": [
+   "Station",
+   "Effacement",
+   "Dilation",
+   "Position",
+   "Consistency"
+  ],
+  "a": 0,
+  "x": "Station is the level of the presenting part in centimeters above (negative) or below (positive) the ischial spines, with 0 at the spines; together with dilation, effacement, consistency and position, it makes up the Bishop score.",
+  "w": {
+   "Effacement": "Effacement is the thinning and shortening of the cervix as it is drawn up into the lower uterine segment, recorded as a percentage; it describes the cervix, not fetal descent.",
+   "Dilation": "Dilation is the opening of the cervical os in centimeters, from closed to 10 cm at full dilation; it measures the cervix itself rather than how far the fetus has descended.",
+   "Position": "Position in the Bishop score describes where the cervix points, posterior, mid or anterior; a cervix that swings anterior is ripening, but this says nothing about fetal descent.",
+   "Consistency": "Consistency grades how firm or soft the cervix feels; a soft cervix scores higher because collagen breakdown has ripened it, but it does not locate the fetus."
+  },
+  "media": "fig:rp28_stages",
+  "pt": {
+   "hl": [
+    "Station"
+   ],
+   "say": "Station is one of the five Bishop score items and measures the presenting part's level relative to the ischial spines."
+  }
+ },
+ {
+  "id": "rp28r05",
+  "tags": [
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp28-04"
+  ],
+  "q": "Which cervical ripening drug is a prostaglandin E2 preparation?",
+  "o": [
+   "Dinoprostone",
+   "Misoprostol",
+   "Carboprost",
+   "Methylergonovine",
+   "Oxytocin"
+  ],
+  "a": 0,
+  "x": "Dinoprostone is prostaglandin E2, given as a vaginal insert or cervical gel. It softens the cervix by breaking down collagen, much as natural prostaglandins do before labor.",
+  "w": {
+   "Misoprostol": "Misoprostol is a prostaglandin E1 analog used to ripen the cervix, so its prostaglandin is E1, not E2.",
+   "Carboprost": "Carboprost is 15-methyl prostaglandin F2-alpha, a strong uterotonic used for postpartum hemorrhage from atony; it is not used to ripen the cervix and is avoided in asthma.",
+   "Methylergonovine": "Methylergonovine is an ergot alkaloid that causes sustained uterine contraction after delivery; it is dangerous before birth because a tetanic uterus cuts off fetal oxygen.",
+   "Oxytocin": "Oxytocin is a peptide hormone that stimulates contractions through Gq-coupled receptors; it induces labor once the cervix is favorable but does not itself soften the cervix."
+  },
+  "media": "fig:rp28_onset",
+  "pt": {
+   "hl": [
+    "Dinoprostone: prostaglandin E2"
+   ],
+   "say": "The ripening list names dinoprostone as prostaglandin E2, given as a vaginal gel or insert, while misoprostol is the E1 analog."
+  }
+ },
+ {
+  "id": "rp28r06",
+  "tags": [
+   "blood-supply",
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp28-05"
+  ],
+  "q": "Which process causes late decelerations on a fetal heart rate tracing?",
+  "o": [
+   "Uteroplacental insufficiency",
+   "Umbilical cord compression",
+   "Fetal head compression",
+   "Severe fetal anemia",
+   "Fetal sleep cycle"
+  ],
+  "a": 0,
+  "x": "Late decelerations reflect uteroplacental insufficiency: each contraction pauses maternal flow into the intervillous space, a placenta with little reserve cannot keep fetal oxygen up, and chemoreceptors slow the heart only after oxygen falls, so the nadir comes after the contraction peak.",
+  "w": {
+   "Umbilical cord compression": "Cord compression produces variable decelerations, abrupt V-shaped drops that occur at any time relative to contractions and recover quickly once the cord is freed.",
+   "Fetal head compression": "Head compression raises intracranial pressure and triggers a vagal reflex, giving early decelerations that mirror the contraction and are benign, with the nadir at the peak.",
+   "Severe fetal anemia": "Severe fetal anemia produces a smooth sinusoidal pattern with absent variability, not decelerations tied to contractions; it suggests alloimmunization or fetomaternal hemorrhage.",
+   "Fetal sleep cycle": "A fetal sleep cycle briefly reduces variability, but it does not produce a deceleration after each contraction."
+  },
+  "media": "fig:rp28_fhr",
+  "pt": {
+   "hl": [
+    "Uteroplacental insufficiency",
+    "Nadir after the peak"
+   ],
+   "say": "In the late deceleration panel, the nadir after the peak is labeled uteroplacental insufficiency, the process that delays the heart rate fall until after each contraction."
+  }
+ },
+ {
+  "id": "rp28r07",
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp28-14"
+  ],
+  "q": "A smooth, sine-wave fetal heart rate pattern with absent variability signals which condition?",
+  "o": [
+   "Severe fetal anemia",
+   "Umbilical cord compression",
+   "Fetal head compression",
+   "Fetal sleep cycle",
+   "Maternal fever"
+  ],
+  "a": 0,
+  "x": "A sinusoidal pattern, a regular smooth undulation of the baseline with no beat-to-beat variability, signals severe fetal anemia, as from Rh alloimmunization, parvovirus B19 or fetomaternal hemorrhage.",
+  "w": {
+   "Umbilical cord compression": "Cord compression causes abrupt variable decelerations superimposed on a normal baseline with preserved variability, not a continuous smooth oscillation of the whole tracing.",
+   "Fetal head compression": "Head compression produces early decelerations that mirror contractions through a vagal reflex; between them, the baseline keeps its normal moderate variability.",
+   "Fetal sleep cycle": "Sleep can briefly flatten variability, but the baseline stays straight rather than swinging in a regular wave, and it recovers when the fetus wakes.",
+   "Maternal fever": "Maternal fever, as in chorioamnionitis, raises the fetal baseline above 160/min, a fetal tachycardia, rather than producing a regular wave-like pattern."
+  },
+  "media": "fig:rp28_fhr",
+  "pt": {
+   "hl": [
+    "Sinusoidal: severe fetal anemia"
+   ],
+   "say": "Read the bottom line of the figure: a sinusoidal pattern means severe fetal anemia, the condition behind a smooth sine-wave tracing without variability."
+  }
+ },
+ {
+  "id": "rp28r08",
+  "tags": [
+   "nerve-supply",
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp28-07"
+  ],
+  "q": "Which bony landmark guides a transvaginal pudendal nerve block for the second stage of labor?",
+  "o": [
+   "Ischial spine",
+   "Ischial tuberosity",
+   "Sacral promontory",
+   "Pubic symphysis",
+   "Coccyx"
+  ],
+  "a": 0,
+  "x": "The pudendal nerve (S2 to S4) curves around the ischial spine as it passes from the greater to the lesser sciatic foramen, so anesthetic injected just medial and posterior to the palpable spine numbs the perineum for delivery or repair.",
+  "w": {
+   "Ischial tuberosity": "The ischial tuberosity is the sitting bone that anchors the hamstrings; it lies well below the point where the pudendal nerve hooks around the spine, so it cannot guide the needle.",
+   "Sacral promontory": "The sacral promontory marks the back of the pelvic inlet and is used to estimate the diagonal conjugate; it is too high and too far from the pudendal nerve to guide this block.",
+   "Pubic symphysis": "The pubic symphysis is the anterior midline joint under which the occiput pivots at delivery; the pudendal nerve runs posterolaterally on the pelvic sidewall, far from it.",
+   "Coccyx": "The coccyx lies in the posterior midline and moves backward to enlarge the outlet during birth; it sits behind the anus, nowhere near the nerve's turn on the pelvic sidewall."
+  },
+  "media": "fig:rp2_pudendal",
+  "pt": {
+   "hl": [
+    "Hooks around the ischial spine (sacrospinous lig.)",
+    "Pudendal block: inject here, felt through the vagina"
+   ],
+   "say": "The pudendal nerve hooks around the ischial spine, and the figure marks that spot as where a pudendal block is injected, felt through the vagina."
+  }
+ },
+ {
+  "id": "rp28r09",
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp28-08"
+  ],
+  "q": "Which nerve roots are stretched in Erb palsy after shoulder dystocia?",
+  "o": [
+   "C5 and C6",
+   "C8 and T1",
+   "C6 and C7",
+   "C3 to C5",
+   "C7 and C8"
+  ],
+  "a": 0,
+  "x": "Downward traction on the head widens the angle between neck and shoulder and stretches the upper trunk, C5 and C6, weakening shoulder abductors, external rotators and the biceps; the arm hangs adducted and internally rotated with the elbow extended, the waiter's tip.",
+  "w": {
+   "C8 and T1": "C8 and T1 form the lower trunk, injured when the arm is pulled above the head; that causes Klumpke palsy with a claw hand and sometimes Horner syndrome, not the waiter's tip.",
+   "C6 and C7": "C7 forms the middle trunk and joins only more severe stretch injuries; Erb palsy is defined by the upper trunk, whose roots bear the most strain when the neck is bent away from the shoulder.",
+   "C3 to C5": "C3 to C5 form the phrenic nerve, which can be injured along with an upper plexus stretch and paralyze the diaphragm; these roots do not produce the arm posture of Erb palsy.",
+   "C7 and C8": "C7 and C8 supply wrist and finger extensors and long finger flexors through the middle and lower trunks; their loss weakens the hand and wrist rather than the shoulder and elbow."
+  },
+  "media": "fig:rp28_birth",
+  "pt": {
+   "hl": [
+    "Upper trunk: C5 and C6"
+   ],
+   "say": "Erb palsy stretches the upper trunk, C5 and C6, after traction on the head in shoulder dystocia, and gives the waiter's tip arm."
+  }
+ },
+ {
+  "id": "rp28r10",
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp28-09"
+  ],
+  "q": "Which structure is torn in a fourth-degree perineal laceration but intact in a third-degree one?",
+  "o": [
+   "Anorectal mucosa",
+   "External anal sphincter",
+   "Internal anal sphincter",
+   "Perineal body",
+   "Bulbospongiosus muscle"
+  ],
+  "a": 0,
+  "x": "Perineal tears are graded by the deepest layer: skin or vaginal mucosa (first), perineal body muscles (second), anal sphincter complex (third) and anorectal mucosa (fourth). A fourth-degree tear opens the rectal lining and risks rectovaginal fistula and incontinence.",
+  "w": {
+   "External anal sphincter": "The external anal sphincter is torn in every third-degree laceration, partly or completely; it is the defining structure of that grade, so its injury cannot separate the two degrees.",
+   "Internal anal sphincter": "The internal anal sphincter can also be torn in the most severe third-degree tears; only extension through the lining of the anal canal and rectum makes the injury fourth degree.",
+   "Perineal body": "The perineal body is the fibromuscular center torn in second-degree lacerations; deeper tears pass through it on their way to the sphincter, so it is torn in both grades.",
+   "Bulbospongiosus muscle": "Bulbospongiosus is one of the perineal body muscles torn in a second-degree laceration; deeper tears include it as well, so it does not distinguish the two grades."
+  },
+  "media": "fig:rp28_tears",
+  "pt": {
+   "hl": [
+    "Fourth-degree",
+    "Rectal mucosa"
+   ],
+   "say": "Only the fourth-degree tear goes through the rectal mucosa; a third-degree tear stops at the external anal sphincter."
+  }
+ },
+ {
+  "id": "rp28r11",
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp28-10"
+  ],
+  "q": "What cumulative blood loss defines postpartum hemorrhage, whatever the route of delivery?",
+  "o": [
+   "1000 mL or more",
+   "500 mL or more",
+   "750 mL or more",
+   "1500 mL or more",
+   "2000 mL or more"
+  ],
+  "a": 0,
+  "x": "ACOG defines postpartum hemorrhage as a cumulative loss of 1000 mL or more, or any loss with signs of hypovolemia, within 24 hours of birth. A normal vaginal delivery loses about 500 mL.",
+  "w": {
+   "500 mL or more": "About 500 mL is the loss of a normal vaginal delivery, so it does not define hemorrhage; the definition starts at 1000 mL.",
+   "750 mL or more": "750 mL lies between a normal vaginal loss of about 500 mL and the hemorrhage threshold; it deserves attention but is not a defining cutoff.",
+   "1500 mL or more": "1500 mL is a level at which many protocols call for blood transfusion; waiting for it before calling the bleeding a hemorrhage would delay treatment.",
+   "2000 mL or more": "2000 mL is massive, life-threatening bleeding, roughly a third of the expanded blood volume of late pregnancy; defining hemorrhage there would miss most women who need treatment."
+  },
+  "media": "fig:rp28_pph",
+  "pt": {
+   "hl": [
+    "hemorrhage is 1000 mL or more"
+   ],
+   "say": "Read the top line of the figure: normal vaginal loss is under 500 mL, while hemorrhage is 1000 mL or more, or any loss with hypovolemia."
+  }
+ },
+ {
+  "id": "rp28r12",
+  "tags": [
+   "bleeding-source"
+  ],
+  "bp": [
+   "BP-rp28-10"
+  ],
+  "q": "What is the most common cause of postpartum hemorrhage?",
+  "o": [
+   "Uterine atony",
+   "Genital tract laceration",
+   "Retained placental tissue",
+   "Coagulopathy",
+   "Uterine inversion"
+  ],
+  "a": 0,
+  "x": "Uterine atony causes most postpartum hemorrhages because the spiral arteries of the placental bed are closed mainly by contracting myometrial fibers acting as living ligatures; when the uterus stays soft and boggy, those vessels keep bleeding.",
+  "w": {
+   "Genital tract laceration": "Lacerations of the cervix, vagina or perineum are the trauma T, the second main cause; they bleed despite a firm uterus and are suspected after rapid or instrument-assisted births.",
+   "Retained placental tissue": "Retained fragments or accreta are the tissue T; they block full contraction and can cause early or delayed bleeding, but they account for a smaller share than atony.",
+   "Coagulopathy": "Coagulopathy, the thrombin T, follows abruption, amniotic fluid embolism, sepsis or massive transfusion; it is the least common cause and shows as oozing blood that will not clot.",
+   "Uterine inversion": "Inversion, the fundus turned inside out through the cervix, is a rare trauma cause often linked to cord traction before separation; shock is out of proportion to visible bleeding."
+  },
+  "media": "fig:rp28_pph",
+  "pt": {
+   "hl": [
+    "Tone: uterine atony",
+    "Most common; soft, boggy uterus"
+   ],
+   "say": "Look at the four Ts: the first box, Tone: uterine atony, is marked most common, with a soft, boggy uterus that cannot clamp the placental-bed vessels."
+  }
+ },
+ {
+  "id": "rp28r13",
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp28-10"
+  ],
+  "q": "Which maternal condition rules out methylergonovine for postpartum hemorrhage?",
+  "o": [
+   "Hypertension",
+   "Asthma",
+   "Gestational diabetes",
+   "Chorioamnionitis",
+   "Prior cesarean delivery"
+  ],
+  "a": 0,
+  "x": "Methylergonovine, an ergot alkaloid, contracts vascular as well as uterine smooth muscle through alpha-adrenergic and serotonin receptors, so it can cause a hypertensive crisis, stroke or seizure; it is avoided in hypertension and preeclampsia, where carboprost or misoprostol is used instead.",
+  "w": {
+   "Asthma": "Asthma contraindicates carboprost, the prostaglandin F2-alpha analog that constricts bronchi; methylergonovine does not cause bronchospasm and is the usual second drug for an asthmatic woman with normal pressure.",
+   "Gestational diabetes": "Gestational diabetes raises the risk of a large infant and therefore of atony, but it does not interact with ergot alkaloids; methylergonovine can be given if blood pressure is normal.",
+   "Chorioamnionitis": "Chorioamnionitis weakens myometrial contraction and raises the risk of atony, so uterotonics are often needed; infection is not a reason to withhold an ergot alkaloid.",
+   "Prior cesarean delivery": "A prior cesarean bars misoprostol for cervical ripening because strong contractions can rupture the scar before birth; after delivery an ergot alkaloid can be given safely."
+  },
+  "media": "fig:rp28_pph",
+  "pt": {
+   "hl": [
+    "2. Methylergonovine",
+    "Ergot vasoconstrictor: avoid in hypertension"
+   ],
+   "say": "On the atony ladder, step 2, methylergonovine, carries the warning avoid in hypertension, because the ergot vasoconstrictor can push blood pressure into crisis."
+  }
+ },
+ {
+  "id": "rp28r14",
+  "tags": [
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp28-11"
+  ],
+  "q": "Which hormone keeps breast alveolar cells producing milk after delivery?",
+  "o": [
+   "Prolactin",
+   "Oxytocin",
+   "Human placental lactogen",
+   "Estrogen",
+   "Progesterone"
+  ],
+  "a": 0,
+  "x": "Prolactin from anterior pituitary lactotrophs drives milk synthesis by alveolar cells; each suckling episode triggers a prolactin surge, and once placental estrogen and progesterone fall after delivery, prolactin can act on the breast without being blocked.",
+  "w": {
+   "Oxytocin": "Oxytocin from the posterior pituitary contracts the myoepithelial cells around the alveoli to eject milk, the let-down reflex; it moves milk already made but does not drive its synthesis.",
+   "Human placental lactogen": "Human placental lactogen helps prepare the breast during pregnancy and raises maternal insulin resistance, but it leaves with the placenta at birth, so it cannot sustain lactation afterward.",
+   "Estrogen": "Estrogen grows the ducts during pregnancy but blocks prolactin's action on the alveoli; its fall after delivery of the placenta is what allows lactation to begin.",
+   "Progesterone": "Progesterone develops the lobules in pregnancy and, like estrogen, inhibits milk synthesis; its withdrawal after the placenta is delivered starts lactation rather than maintaining it."
+  },
+  "media": "fig:rp28_milk",
+  "pt": {
+   "hl": [
+    "Prolactin makes the milk"
+   ],
+   "say": "After delivery, prolactin keeps the alveolar cells making milk, while oxytocin causes let-down."
+  }
+ },
+ {
+  "id": "rp28r15",
+  "tags": [
+   "normal-vs-pathologic",
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp28-12"
+  ],
+  "q": "Postpartum blues normally resolve within what time after delivery?",
+  "o": [
+   "2 weeks",
+   "48 hours",
+   "6 weeks",
+   "3 months",
+   "12 months"
+  ],
+  "a": 0,
+  "x": "Postpartum blues, the tearfulness, mood swings and anxiety affecting most new mothers, begin 2 to 3 days after delivery and resolve within 2 weeks without treatment; symptoms that last longer or impair functioning suggest postpartum depression and need screening.",
+  "w": {
+   "48 hours": "Blues usually begin around 2 to 3 days after birth, as estrogen and progesterone drop, so 48 hours is closer to their start than to their end.",
+   "6 weeks": "Six weeks is roughly when the uterus has finished involuting; mood symptoms persisting that long point to postpartum depression rather than the brief, self-limited blues.",
+   "3 months": "Three months of low mood is far beyond the blues and meets the duration for a depressive episode; postpartum depression can begin at any time in the first year.",
+   "12 months": "Twelve months is the window in which postpartum depression is usually counted, not the course of the blues, which are brief and self-limited."
+  },
+  "media": "fig:rp28_milk",
+  "pt": {
+   "hl": [
+    "Fades within 2 weeks"
+   ],
+   "say": "Postpartum blues affect most mothers and fade within 2 weeks, unlike postpartum depression, which lasts longer."
+  }
+ },
+ {
+  "id": "rp28r16",
+  "tags": [
+   "fuel-metabolism"
+  ],
+  "bp": [
+   "BP-rp28-13"
+  ],
+  "q": "Which infant condition is an absolute contraindication to breastfeeding?",
+  "o": [
+   "Classic galactosemia",
+   "Phenylketonuria",
+   "Breast milk jaundice",
+   "Cystic fibrosis",
+   "Congenital hypothyroidism"
+  ],
+  "a": 0,
+  "x": "Milk lactose is split into glucose and galactose, and in classic galactosemia the missing galactose-1-phosphate uridyltransferase lets galactose-1-phosphate accumulate, causing vomiting, jaundice, liver failure, cataracts and E. coli sepsis; the infant needs a lactose-free soy formula.",
+  "w": {
+   "Phenylketonuria": "Infants with phenylketonuria can take some breast milk, which is low in phenylalanine, alongside a phenylalanine-free formula with blood-level monitoring; it needs careful balancing, not stopping.",
+   "Breast milk jaundice": "Breast milk jaundice is a benign, prolonged unconjugated hyperbilirubinemia from milk factors such as beta-glucuronidase; nursing usually continues, with a brief pause only in rare severe cases.",
+   "Cystic fibrosis": "Breast milk is recommended for infants with cystic fibrosis, given with pancreatic enzymes when needed; its antibodies may reduce respiratory infections.",
+   "Congenital hypothyroidism": "Congenital hypothyroidism is treated with daily levothyroxine started early, and nursing continues normally; milk does not interfere with treatment when the dose is monitored."
+  },
+  "media": "fig:rp28_milk",
+  "pt": {
+   "hl": [
+    "Classic galactosemia in the infant"
+   ],
+   "say": "Classic galactosemia in the infant is the absolute contraindication, because the infant cannot metabolize the galactose in milk."
+  }
+ },
+ {
+  "id": "rp28r17",
+  "tags": [
+   "electrolyte-acid-base",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp28-15"
+  ],
+  "q": "Which electrolyte disorder can follow prolonged high-dose oxytocin given in dilute intravenous fluid?",
+  "o": [
+   "Hyponatremia",
+   "Hypernatremia",
+   "Hyperkalemia",
+   "Hypocalcemia",
+   "Hypomagnesemia"
+  ],
+  "a": 0,
+  "x": "Oxytocin differs from ADH by only two amino acids, so at high doses it activates renal V2 receptors, inserting aquaporins and retaining free water; given with large volumes of dilute fluid, it causes water intoxication with hyponatremia, confusion and seizures.",
+  "w": {
+   "Hypernatremia": "Hypernatremia follows free water loss, as in diabetes insipidus when ADH is missing; oxytocin's ADH-like effect does the opposite and retains free water.",
+   "Hyperkalemia": "Hyperkalemia comes from renal failure, cell breakdown or blocked aldosterone; oxytocin's ADH-like effect retains water without changing how the kidney handles potassium.",
+   "Hypocalcemia": "Hypocalcemia follows hypoparathyroidism, vitamin D deficiency or massive transfusion of citrated blood; oxytocin does not affect parathyroid hormone or calcium balance.",
+   "Hypomagnesemia": "Hypomagnesemia results from gut or renal magnesium loss, such as diarrhea or diuretics; in labor the more familiar magnesium problem is toxicity from magnesium sulfate."
+  },
+  "media": "fig:rp28_onset",
+  "pt": {
+   "hl": [
+    "Hyponatremia from water intoxication"
+   ],
+   "say": "Oxytocin resembles ADH, so large doses in dilute intravenous fluid can cause water intoxication with hyponatremia."
+  }
+ }
+]

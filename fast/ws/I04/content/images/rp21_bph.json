@@ -1,0 +1,31 @@
+{
+ "n": "Nodular hyperplasia of the prostate",
+ "file": "rp21_bph.jpg",
+ "dx": "Benign prostatic hyperplasia",
+ "wrong": [
+  "Prostatic adenocarcinoma",
+  "High-grade prostatic intraepithelial neoplasia",
+  "Chronic prostatitis",
+  "Normal peripheral zone prostate"
+ ],
+ "ww": {
+  "Prostatic adenocarcinoma": "<b>Prostatic adenocarcinoma</b> is a crowd of small, angulated glands with one cell layer and prominent nucleoli, infiltrating between benign glands with little stroma. Here most glands are large, dilated and infolded, grouped in a nodule inside abundant stroma.",
+  "High-grade prostatic intraepithelial neoplasia": "<b>High-grade PIN</b> shows crowded, atypical cells with prominent nucleoli lining pre-existing glands. Here the glands are lined by tall, pale, orderly secretory cells with small nuclei, and the change is overgrowth in size and number, not atypia.",
+  "Chronic prostatitis": "<b>Chronic prostatitis</b> shows lymphocytes and plasma cells in the stroma and around glands. Here the stroma holds no dense inflammatory infiltrate, and the main change is large, dilated glands inside expanded stroma.",
+  "Normal peripheral zone prostate": "<b>Normal peripheral zone</b> prostate has small, evenly spaced glands in thin stroma. This field shows an overgrowth of both parts: large dilated glands with folds, and thick pink stromal bands between them."
+ },
+ "look": "Notice that the glands vary a lot in size. Large, dilated glands with wavy infoldings sit at the right and left edges, and a cluster of smaller glands forms a nodule in the center. Thick pink bands of fibromuscular stroma separate all of them. Both the glands and the stroma have grown, which is the nodular hyperplasia of benign prostatic hyperplasia, in the transition zone around the urethra.",
+ "cred": "Nephron · CC BY-SA 3.0 · Wikimedia Commons (resized)",
+ "by": "Nephron",
+ "lic": "CC BY-SA 3.0",
+ "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Nodular_hyperplasia_of_the_prostate.jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Dilated glands with infoldings: large glands with wavy, papillary infoldings lie at the upper right, right and left edges, and they are lined by a tall, pale secretory layer. This is the glandular overgrowth of hyperplasia.",
+  "Glandular nodule: at the center a rounded cluster of smaller, closely grouped glands is surrounded by larger dilated glands, so gland size changes in an orderly way. This nodular pattern is typical of hyperplasia.",
+  "Expanded stroma: broad bands of pink fibromuscular stroma separate the glands across the field, because smooth muscle and stroma multiply as well as the glands. Alpha-1 blockers relax this smooth muscle."
+ ],
+ "ann": []
+}

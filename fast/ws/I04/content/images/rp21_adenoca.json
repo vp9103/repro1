@@ -1,0 +1,32 @@
+{
+ "n": "Prostate adenocarcinoma with crowded small glands",
+ "file": "rp21_adenoca.jpg",
+ "dx": "Prostatic adenocarcinoma",
+ "wrong": [
+  "Benign prostatic hyperplasia",
+  "Normal prostate with corpora amylacea",
+  "High-grade prostatic intraepithelial neoplasia",
+  "Chronic prostatitis"
+ ],
+ "ww": {
+  "Benign prostatic hyperplasia": "<b>Benign prostatic hyperplasia</b> has large, dilated glands with papillary infoldings, grouped in nodules inside expanded fibromuscular stroma. Here the glands are small and irregular, and they run haphazardly through the stroma with little tissue between them.",
+  "Normal prostate with corpora amylacea": "<b>Normal prostate</b> has glands of varied size that fold into papillae and often hold pink, layered corpora amylacea. Here the glands are small, uniform and crowded, with open lumens, and none contains a corpus amylaceum.",
+  "High-grade prostatic intraepithelial neoplasia": "<b>High-grade PIN</b> is atypical cells with prominent nucleoli lining pre-existing large glands and ducts, which keep a basal layer. Here the abnormal glands are small, crowded and infiltrating the stroma between benign structures.",
+  "Chronic prostatitis": "<b>Chronic prostatitis</b> shows glands and stroma infiltrated by lymphocytes and plasma cells, with preserved gland architecture. Here no dense inflammatory infiltrate is present, and the finding is a crowd of small glands invading stroma."
+ },
+ "look": "Notice how many small glands are packed into this needle core, scattered between bundles of pink fibromuscular stroma instead of sitting in neat lobules. Each gland is small and lined by one layer of cells, and little stroma lies between them. This crowded, infiltrative growth, with no basal layer on p63 staining, is the pattern of prostatic adenocarcinoma.",
+ "cred": "Nephron · CC BY-SA 3.0 · Wikimedia Commons (resized)",
+ "by": "Nephron",
+ "lic": "CC BY-SA 3.0",
+ "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Prostate_adenocarcinoma_intermed_mag_hps.jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Crowded small glands: closely packed small to medium glands with open lumens fill the whole needle core, most densely across the top center and upper right, with very little stroma between them.",
+  "Infiltrative pattern: the glands run haphazardly through bands of pink fibromuscular stroma, wrapping around the fibers at the left and lower center instead of forming a rounded lobule. This is how the cancer grows into the stroma.",
+  "Single cell layer: each gland is lined by one layer of cuboidal to columnar cells with dark nuclei. Cancer glands lack the outer basal cell layer that benign glands keep, so p63 staining would be negative and AMACR positive.",
+  "Needle core: the narrow curved strip of tissue with blank white background above and below is a needle biopsy core, the way prostate cancer is usually found after a raised PSA."
+ ],
+ "ann": []
+}

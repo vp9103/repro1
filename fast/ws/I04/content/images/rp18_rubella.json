@@ -1,0 +1,31 @@
+{
+ "n": "Bilateral cataracts in congenital rubella",
+ "file": "rp18_rubella.jpg",
+ "dx": "Congenital rubella cataracts",
+ "wrong": [
+  "Retinoblastoma with leukocoria",
+  "Congenital glaucoma with corneal clouding",
+  "Interstitial keratitis of congenital syphilis",
+  "Retinopathy of prematurity"
+ ],
+ "ww": {
+  "Retinoblastoma with leukocoria": "<b>Retinoblastoma</b> causes a white pupillary reflex, called leukocoria, from a retinal tumor, most often in one eye of a toddler. Here a pearly opacity sits within the lens of both eyes.",
+  "Congenital glaucoma with corneal clouding": "<b>Congenital glaucoma</b> enlarges the eye and makes the whole cornea cloudy, often with tearing and light sensitivity. Here the cornea is clear and the opacity is a discrete white spot in the center of each pupil.",
+  "Interstitial keratitis of congenital syphilis": "<b>Interstitial keratitis</b> is a hazy, vascularized cornea that appears in later childhood, so the pupil is blurred through the cloudy cornea. Here the cornea is transparent and the opacity lies behind it, inside the lens.",
+  "Retinopathy of prematurity": "<b>Retinopathy of prematurity</b> is abnormal retinal vessel growth after premature birth and oxygen exposure, and it shows on dilated fundus examination. Here a white opacity is visible in the pupils of both eyes."
+ },
+ "look": "Look at the pupils. Each dark pupil holds a pearly white opacity in its center, while the cornea in front stays clear and the iris looks normal. So the cloudiness sits in the lens, not on the surface of the eye. Opacities in both eyes of an infant point to a congenital infection, and rubella in the first trimester is the classic cause.",
+ "cred": "CDC · Public domain · Wikimedia Commons (resized)",
+ "by": "CDC",
+ "lic": "Public domain",
+ "licurl": "",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Cataracts_due_to_Congenital_Rubella_Syndrome_(CRS)_PHIL_4284_lores.jpg",
+ "mod": true,
+ "modality": "clinical",
+ "findings": [
+  "Cataract at the right of the photograph: the pupil shows a dense pearly white opacity in the center of the lens, with a dark rim of clear lens around it and a small bright light reflex at its lower edge.",
+  "Cataract at the left of the photograph: this pupil holds a similar pale bluish-white central opacity, so the lens change is present in both eyes, which supports a congenital cause such as rubella.",
+  "Clear cornea: the transparent cornea and normal-looking iris around each opacity show that the cloudiness lies in the lens behind the pupil, not on the corneal surface."
+ ],
+ "ann": []
+}
