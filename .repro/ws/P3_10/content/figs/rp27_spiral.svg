@@ -1,0 +1,64 @@
+<svg class="dia" viewBox="0 0 900 560" role="img" aria-label="Normal spiral artery remodeling compared with shallow remodeling in preeclampsia, and the sFlt-1 pathway from an ischemic placenta to maternal endothelial injury">
+<text class="ttl" x="14" y="26" font-size="17">Why a shallow placenta raises the mother's blood pressure</text>
+<rect x="14" y="44" width="428" height="296" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="30" y="70" font-size="16">Normal pregnancy</text>
+<rect x="30" y="84" width="396" height="32" rx="4" fill="var(--surface)" stroke="var(--line-strong)"/>
+<text x="40" y="105" font-size="14">Placenta</text>
+<rect x="30" y="116" width="396" height="52" fill="var(--surface-2)" stroke="var(--line)"/>
+<text x="40" y="147" font-size="14">Decidua</text>
+<rect x="30" y="168" width="396" height="52" fill="var(--surface-3)" stroke="var(--line)"/>
+<text x="40" y="199" font-size="14">Myometrium</text>
+<path d="M292 220 C 292 180, 280 140, 262 116 L 338 116 C 320 140, 308 180, 308 220 Z" fill="var(--crit-soft)" stroke="var(--a2)" stroke-width="2"/>
+<circle cx="276" cy="134" r="4" fill="var(--a1)"/>
+<circle cx="324" cy="134" r="4" fill="var(--a1)"/>
+<circle cx="284" cy="170" r="4" fill="var(--a1)"/>
+<circle cx="316" cy="170" r="4" fill="var(--a1)"/>
+<circle cx="287" cy="204" r="4" fill="var(--a1)"/>
+<circle cx="313" cy="204" r="4" fill="var(--a1)"/>
+<text x="30" y="248" font-size="15">Trophoblast (dots) invades the myometrium</text>
+<text x="30" y="274" font-size="15">Muscle wall replaced: wide, lax channel</text>
+<text x="30" y="300" font-size="15">Low resistance, high placental flow</text>
+<text class="a2" x="30" y="326" font-size="15">Placenta well perfused</text>
+<rect x="458" y="44" width="428" height="296" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="474" y="70" font-size="16">Preeclampsia</text>
+<rect x="474" y="84" width="396" height="32" rx="4" fill="var(--surface)" stroke="var(--line-strong)"/>
+<text x="484" y="105" font-size="14">Placenta</text>
+<rect x="474" y="116" width="396" height="52" fill="var(--surface-2)" stroke="var(--line)"/>
+<text x="484" y="147" font-size="14">Decidua</text>
+<rect x="474" y="168" width="396" height="52" fill="var(--surface-3)" stroke="var(--line)"/>
+<text x="484" y="199" font-size="14">Myometrium</text>
+<rect x="738" y="116" width="12" height="104" fill="var(--crit-soft)"/>
+<line x1="735" y1="116" x2="735" y2="220" stroke="var(--a1)" stroke-width="6"/>
+<line x1="753" y1="116" x2="753" y2="220" stroke="var(--a1)" stroke-width="6"/>
+<circle cx="724" cy="126" r="4" fill="var(--a1)"/>
+<circle cx="764" cy="126" r="4" fill="var(--a1)"/>
+<text x="474" y="248" font-size="15">Invasion stops in the superficial decidua</text>
+<text x="474" y="274" font-size="15">Spiral arteries keep their muscle wall</text>
+<text x="474" y="300" font-size="15">High resistance, low placental flow</text>
+<text class="cr" x="474" y="326" font-size="15">Ischemic placenta releases sFlt-1</text>
+<text class="b" x="14" y="378" font-size="16">What sFlt-1 does to the mother</text>
+<rect x="22" y="392" width="196" height="96" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="32" y="418" font-size="14">sFlt-1 in the blood</text>
+<text x="32" y="442" font-size="14">a soluble decoy</text>
+<text x="32" y="466" font-size="14">VEGF receptor</text>
+<rect x="242" y="392" width="196" height="96" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="252" y="418" font-size="14">Traps VEGF and PlGF</text>
+<text x="252" y="442" font-size="14">free VEGF falls</text>
+<text x="252" y="466" font-size="14">in the circulation</text>
+<rect x="462" y="392" width="196" height="96" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="472" y="418" font-size="14">Endothelial injury</text>
+<text x="472" y="442" font-size="14">arterioles constrict</text>
+<text x="472" y="466" font-size="14">capillaries leak</text>
+<rect x="682" y="392" width="196" height="96" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="692" y="418" font-size="14">Maternal disease</text>
+<text x="692" y="442" font-size="14">high BP, proteinuria</text>
+<text x="692" y="466" font-size="14">HELLP, seizures</text>
+<line x1="220" y1="440" x2="233" y2="440" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="233,435 241,440 233,445" fill="var(--ink-2)"/>
+<line x1="440" y1="440" x2="453" y2="440" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="453,435 461,440 453,445" fill="var(--ink-2)"/>
+<line x1="660" y1="440" x2="673" y2="440" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="673,435 681,440 673,445" fill="var(--ink-2)"/>
+<text class="b" x="14" y="518" font-size="15">Fibrinoid necrosis marks placental vessels; delivery removes the sFlt-1 source</text>
+<text x="14" y="544" font-size="15">Low-dose aspirin from 12 weeks lowers the risk in high-risk patients</text>
+</svg>
