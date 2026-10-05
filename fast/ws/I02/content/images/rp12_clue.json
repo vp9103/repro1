@@ -1,0 +1,32 @@
+{
+ "n": "Clue cells in bacterial vaginosis",
+ "file": "rp12_clue.jpg",
+ "dx": "Clue cells of bacterial vaginosis",
+ "wrong": [
+  "Trichomonas vaginalis trophozoites",
+  "Candida pseudohyphae and budding yeast",
+  "Normal squamous cells with lactobacilli",
+  "Cervicitis with many neutrophils"
+ ],
+ "ww": {
+  "Trichomonas vaginalis trophozoites": "<b>Trichomonas</b> are motile, pear-shaped flagellates, a little larger than a white cell, usually among many neutrophils. Here the cells are plain epithelial cells with a stippled bacterial film and no protozoa, so this is not trichomoniasis.",
+  "Candida pseudohyphae and budding yeast": "<b>Candida</b> shows budding yeast and branching pseudohyphae, easiest to see after potassium hydroxide dissolves the cells. No hyphae are visible here; instead tiny bacteria blur the outline of each epithelial cell.",
+  "Normal squamous cells with lactobacilli": "<b>Normal</b> squamous cells keep a crisp, smooth edge, and the lactobacilli are long rods lying free beside them. A stippled coat of tiny coccobacilli that hides the cell border is what turns a normal cell into a clue cell.",
+  "Cervicitis with many neutrophils": "<b>Cervicitis</b> or another inflammatory vaginitis fills the field with neutrophils around clean-edged squamous cells. Bacterial vaginosis is not inflammatory: white cells are scarce, and the bacterial coat sits on the epithelial cells themselves."
+ },
+ "look": "Look at the two large, flat epithelial cells in the center. Their edges are fuzzy and stippled because a dense coat of tiny coccobacilli, mainly Gardnerella, clings to the membrane and hides the true border, while the nucleus still shows as a clear round spot. A normal squamous cell would have a sharp outline. This is the clue cell of bacterial vaginosis.",
+ "cred": "CDC/ M. Rein · Public domain · Wikimedia Commons (resized)",
+ "by": "CDC/ M. Rein",
+ "lic": "Public domain",
+ "licurl": "",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Clue_cells_-_CDC_PHIL_3720.jpg",
+ "mod": true,
+ "modality": "micro",
+ "findings": [
+  "Clue cell, lower left: a large squamous epithelial cell whose edge is blurred and stippled by a dense coat of small coccobacilli, mainly Gardnerella vaginalis and other anaerobes, so the true cell border cannot be traced.",
+  "Clue cell, upper right: a second epithelial cell overlaps the first and shows the same granular, stippled rim, which shows that the bacterial coating covers many cells in the smear rather than one.",
+  "Intact nucleus: each epithelial cell still shows a pale, round central nucleus, which marks it as an intact squamous cell; the bacteria cover the surface and do not invade the cell.",
+  "Sparse background: only a few small cells lie outside the clue cells, instead of the sheets of neutrophils seen in trichomoniasis or cervicitis, which fits the noninflammatory nature of bacterial vaginosis."
+ ],
+ "ann": []
+}

@@ -1,0 +1,32 @@
+{
+ "n": "Complex endometrial hyperplasia without atypia",
+ "file": "rp14_hyperplasia.jpg",
+ "dx": "Endometrial hyperplasia without atypia",
+ "wrong": [
+  "Endometrial hyperplasia with atypia (EIN)",
+  "Endometrioid adenocarcinoma of the endometrium",
+  "Normal proliferative endometrium",
+  "Endometrial polyp"
+ ],
+ "ww": {
+  "Endometrial hyperplasia with atypia (EIN)": "<b>Atypia</b> means enlarged, rounded, vesicular nuclei with prominent nucleoli and lost polarity in crowded glands. The glands here are complex, but their lining cells are small, uniform and bland, so atypia is absent.",
+  "Endometrioid adenocarcinoma of the endometrium": "<b>Endometrioid carcinoma</b> packs glands back to back with little or no stroma between them, often in cribriform or solid sheets. Here narrow bands of cellular stroma still separate the glands.",
+  "Normal proliferative endometrium": "<b>Normal proliferative</b> endometrium has evenly spaced, tubular glands of similar size in abundant stroma. These glands are crowded, vary in size and outline, and some are dilated, so the gland-to-stroma ratio is increased.",
+  "Endometrial polyp": "<b>Endometrial polyp</b> is a focal lesion with a fibrous stromal core and thick-walled vessels, covered by surface epithelium. This field is a diffuse overgrowth of glands in cellular stroma, with no fibrous core."
+ },
+ "look": "Count the glands against the stroma. Instead of evenly spaced, round proliferative glands, the field is crowded with glands of varying size and odd shapes: some are dilated, some branch, and all lie closer together than normal. The lining cells are small and uniform, with no enlarged rounded nuclei, and cellular stroma still separates the glands. This is complex hyperplasia without atypia, driven by unopposed estrogen.",
+ "cred": "Ed Uthman from Houston, TX, USA · CC BY 2.0 · Wikimedia Commons (resized)",
+ "by": "Ed Uthman from Houston, TX, USA",
+ "lic": "CC BY 2.0",
+ "licurl": "https://creativecommons.org/licenses/by/2.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Complex_Hyperplasia_of_the_Endometrium_(no_atypia)_(4745672105).jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Crowded glands: tightly packed glands fill most of the field, so the gland-to-stroma ratio is higher than in normal proliferative endometrium, the defining feature of hyperplasia driven by unopposed estrogen.",
+  "Variable gland size and shape: some glands are large and dilated while others are small, round or branching, which gives the architectural complexity that earns the name complex hyperplasia; a large dilated gland sits at the upper left.",
+  "Bland nuclei: the cells lining the glands are small, oval and uniform, without enlarged rounded nuclei or prominent nucleoli, so there is no atypia and the cancer risk is low, about 1 to 3 percent.",
+  "Intervening stroma: narrow bands of cellular endometrial stroma still separate neighboring glands, which distinguishes hyperplasia from carcinoma, where glands fuse back to back with no stroma between them."
+ ],
+ "ann": []
+}

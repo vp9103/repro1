@@ -18,9 +18,10 @@ en9_hypercalcemia, en9_three_hpt missing.
 | G03 | DONE (draft, accepted; checked rp29 pins vs figure labels, d_rp16_multi) | rapid rp23 13, rp29 11; drills rp10 multi, rp11 sort, rp16 multi, rp17 order | fast_check G03 ok; audit/G03-notes.md (rp29 NO-VISUAL row in G03-novisual.md -> P6.9 on import) |
 | V1 | DONE (accepted; reviewed new figs rp4_origins, rp5_mullerian, rp6_dsd, rp7_engines) | rp4-rp7 visual shares met; 8 new figures | fast_check W04/W05 ok; NO-VISUAL rows W04/audit/P5.2.md, P6.2.md |
 | P2.6 | CLOSED 2026-10-04 | F31a-c, F40, F33a-c, linkedNotice | ledger row sha:05f1ba73 |
-| I02 | worker | images rp12, rp14, rp20 + Gemini overlays (fast/ws/I02) | fast_check I02 ok |
+| I02 | worker (merge with --skip I02 until done) | images rp12, rp14, rp20 + Gemini overlays (fast/ws/I02) | fast_check I02 ok |
 | P2.V | DONE 2026-10-05 (run 9: 10/10 + 19/19 regression) | | ledger row |
-| P3.1 | worker (repro-worker) | rp1, rp2, rp3: import fast topics + close coverage gaps (.repro/ws/P3_1) | --status P3.1 ok |
+| P3.1 | CLOSED 2026-10-05 (rp1-rp3, 40 gap lines) | | ledger row sha:1c20a979 |
+| P3.2 | worker | rp4, rp5, rp6 (.repro/ws/P3_2) | --status P3.2 ok |
 | P2.6 | CLOSED 2026-10-05 (F3) | ledger row sha:29b015ac | |
 | V2 | DONE (finished before the restart; 8 new figures reviewed 2026-10-05) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
 | P1.4 | CLOSED 2026-10-05 (round 3, part->anchor proposals A.md/B.md) | 302 rows, 48 UNANCHORED, 4 topic changes | ledger row |

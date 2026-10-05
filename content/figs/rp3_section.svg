@@ -1,0 +1,59 @@
+<svg class="dia" viewBox="0 0 900 600" role="img" aria-label="Section through the breast: lobules and lactiferous ducts converge on the nipple, Cooper ligaments run from the skin to the pectoral fascia, and the retromammary space separates the gland from pectoralis major and the ribs">
+<text class="ttl" x="14" y="24" font-size="17">From skin to chest wall: a section through the breast</text>
+<rect x="14" y="392" width="872" height="26" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="14" y1="420" x2="886" y2="420" stroke="var(--ink)" stroke-width="3"/>
+<rect x="14" y="422" width="872" height="50" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<rect x="14" y="474" width="872" height="52" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<ellipse cx="430" cy="500" rx="42" ry="16" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="1.5"/>
+<ellipse cx="570" cy="500" rx="42" ry="16" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="1.5"/>
+<ellipse cx="710" cy="500" rx="42" ry="16" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="1.5"/>
+<ellipse cx="840" cy="500" rx="36" ry="16" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="1.5"/>
+<path d="M180 392 C 190 250, 290 140, 382 128 L 386 108 Q 400 100 414 108 L 418 128 C 510 140, 610 250, 620 392 Z" fill="var(--warn-soft)" stroke="var(--ink)" stroke-width="2"/>
+<path d="M354 134.5 Q 368 130 382 128" fill="none" stroke="var(--a1)" stroke-width="5"/>
+<path d="M418 128 Q 432 130 446 134.5" fill="none" stroke="var(--a1)" stroke-width="5"/>
+<circle cx="362" cy="129" r="4" fill="var(--a1)"/>
+<circle cx="438" cy="129" r="4" fill="var(--a1)"/>
+<path d="M250 211 C 258 280, 256 340, 248 392" fill="none" stroke="var(--a1)" stroke-width="2"/>
+<path d="M313 154 C 330 240, 336 320, 330 392" fill="none" stroke="var(--a1)" stroke-width="2"/>
+<path d="M487 154 C 470 240, 464 320, 470 392" fill="none" stroke="var(--a1)" stroke-width="2"/>
+<path d="M550 211 C 542 280, 544 340, 552 392" fill="none" stroke="var(--a1)" stroke-width="2"/>
+<path d="M298 288 C 320 220, 372 180, 392 112" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<path d="M400 252 L 400 112" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<path d="M502 288 C 480 220, 428 180, 408 112" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<path d="M232 344 C 250 320, 270 300, 290 296" fill="none" stroke="var(--a2)" stroke-width="2"/>
+<path d="M568 344 C 550 320, 530 300, 510 296" fill="none" stroke="var(--a2)" stroke-width="2"/>
+<ellipse cx="400" cy="170" rx="8" ry="16" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<g fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5">
+<circle cx="281" cy="294" r="7"/><circle cx="296" cy="291" r="7"/><circle cx="300" cy="305" r="7"/><circle cx="288" cy="311" r="7"/><circle cx="278" cy="307" r="7"/>
+<circle cx="391" cy="256" r="7"/><circle cx="406" cy="253" r="7"/><circle cx="410" cy="267" r="7"/><circle cx="398" cy="273" r="7"/><circle cx="388" cy="269" r="7"/>
+<circle cx="519" cy="294" r="7"/><circle cx="504" cy="291" r="7"/><circle cx="500" cy="305" r="7"/><circle cx="512" cy="311" r="7"/><circle cx="522" cy="307" r="7"/>
+<circle cx="217" cy="346" r="7"/><circle cx="232" cy="343" r="7"/><circle cx="236" cy="357" r="7"/><circle cx="224" cy="363" r="7"/><circle cx="214" cy="359" r="7"/>
+<circle cx="583" cy="346" r="7"/><circle cx="568" cy="343" r="7"/><circle cx="564" cy="357" r="7"/><circle cx="576" cy="363" r="7"/><circle cx="586" cy="359" r="7"/>
+</g>
+<g stroke="var(--ink-3)" stroke-width="1.2" fill="none">
+<line x1="448" y1="90" x2="415" y2="106"/>
+<line x1="515" y1="127" x2="447" y2="134"/>
+<line x1="555" y1="171" x2="409" y2="169"/>
+<line x1="595" y1="219" x2="477" y2="233"/>
+<line x1="635" y1="271" x2="528" y2="296"/>
+<line x1="635" y1="331" x2="547" y2="326"/>
+<line x1="635" y1="367" x2="602" y2="376"/>
+<line x1="226" y1="199" x2="256" y2="207"/>
+<line x1="70" y1="378" x2="70" y2="419"/>
+</g>
+<text x="452" y="94" font-size="15">Nipple</text>
+<text x="520" y="132" font-size="15">Areola and Montgomery tubercles</text>
+<text x="560" y="176" font-size="15">Lactiferous sinus (ampulla)</text>
+<text x="600" y="224" font-size="15">Lactiferous duct</text>
+<text x="640" y="272" font-size="15">Lobule (terminal duct</text>
+<text x="640" y="290" font-size="15">lobular unit, TDLU)</text>
+<text x="640" y="336" font-size="15">Cooper (suspensory) ligament</text>
+<text x="640" y="372" font-size="15">Subcutaneous fat</text>
+<text x="190" y="204" font-size="15">Skin</text>
+<text x="20" y="372" font-size="15">Pectoral fascia</text>
+<text x="650" y="410" font-size="14">Retromammary space</text>
+<text class="b" x="24" y="452" font-size="15">Pectoralis major</text>
+<text x="24" y="505" font-size="15">Ribs and intercostal muscles</text>
+<text x="14" y="558" font-size="15"><tspan class="b">Dimpling:</tspan> tumor shortening a Cooper ligament pulls the skin inward</text>
+<text x="14" y="586" font-size="15"><tspan class="b">Fixation:</tspan> tumor crossing the retromammary space anchors the mass</text>
+</svg>

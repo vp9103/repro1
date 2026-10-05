@@ -1,0 +1,32 @@
+{
+ "n": "Seminoma with fried-egg cells and lymphocytes",
+ "file": "rp20_seminoma.jpg",
+ "dx": "Seminoma of the testis",
+ "wrong": [
+  "Embryonal carcinoma",
+  "Leydig cell tumor",
+  "Diffuse large B-cell lymphoma of the testis",
+  "Choriocarcinoma"
+ ],
+ "ww": {
+  "Embryonal carcinoma": "<b>Embryonal carcinoma</b> is made of crowded, primitive, pleomorphic cells with overlapping, irregular nuclei in glandular or papillary sheets, often with necrosis. These cells are uniform, with clear cytoplasm and sharp borders, and lymphocytes accompany them.",
+  "Leydig cell tumor": "<b>Leydig cell tumor</b> has round cells with abundant pink, eosinophilic cytoplasm and sometimes rod-shaped Reinke crystals. These cells have pale, clear cytoplasm and central nucleoli, with small dark lymphocytes between them.",
+  "Diffuse large B-cell lymphoma of the testis": "<b>Diffuse large B-cell lymphoma</b> affects men older than 60 as sheets of large lymphoid cells with scant cytoplasm and irregular nuclei. This tumor has abundant clear cytoplasm and distinct cell borders, with lymphocytes as a separate population.",
+  "Choriocarcinoma": "<b>Choriocarcinoma</b> combines large multinucleated syncytiotrophoblasts with smaller cytotrophoblasts and extensive hemorrhage. Here one uniform cell type with clear cytoplasm is present, with no multinucleated giant cells and no hemorrhage."
+ },
+ "look": "Notice that the tumor cells are large, round to polygonal and look alike. Each has a central nucleus with a prominent nucleolus inside pale, clear cytoplasm bounded by a distinct cell membrane, like a fried egg. Small dark lymphocytes cluster between the nests. Uniform fried-egg cells with a lymphocytic infiltrate are the signature of seminoma.",
+ "cred": "Nephron · CC BY-SA 3.0 · Wikimedia Commons (resized)",
+ "by": "Nephron",
+ "lic": "CC BY-SA 3.0",
+ "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Seminoma_high_mag.jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Fried-egg cells: large polygonal tumor cells with a central round nucleus, a prominent nucleolus and clear, glycogen-rich cytoplasm bounded by a sharp cell membrane fill most of the field.",
+  "Lymphocytes: clusters of small, dark, round lymphocytes lie between the tumor nests, especially at the right and left edges; this infiltrate along the thin septa is a hallmark of seminoma.",
+  "Distinct cell borders: the membranes of neighboring tumor cells stay crisp, giving a cobblestone look in the central nests, unlike the overlapping, indistinct borders of embryonal carcinoma.",
+  "Uniform nuclei: the nuclei are all similar in size, round and vesicular with coarse chromatin, which contrasts with the pleomorphic, overlapping nuclei of embryonal carcinoma."
+ ],
+ "ann": []
+}
