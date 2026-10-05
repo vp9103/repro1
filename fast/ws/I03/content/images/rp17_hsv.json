@@ -1,0 +1,31 @@
+{
+ "n": "Herpes simplex cytopathic effect on a Pap smear",
+ "file": "rp17_hsv.jpg",
+ "dx": "Herpes simplex virus infection",
+ "wrong": [
+  "Koilocytes of HPV infection",
+  "Cytomegalovirus-infected cell",
+  "High-grade squamous intraepithelial lesion",
+  "Benign endocervical cell cluster"
+ ],
+ "ww": {
+  "Koilocytes of HPV infection": "<b>Koilocytes</b> are mature squamous cells with a sharply outlined clear halo around a shrunken, wrinkled, raisin-like nucleus, usually one or two per cell. This cluster has molded, overlapping, ground-glass nuclei with no cleared halos.",
+  "Cytomegalovirus-infected cell": "<b>Cytomegalovirus</b> enlarges a cell and places one huge dark intranuclear inclusion with a clear halo in it, the owl's-eye look. Here several nuclei share each cell and are molded against each other, with no single dominant inclusion.",
+  "High-grade squamous intraepithelial lesion": "<b>HSIL</b> shows small immature cells with a very high nuclear-to-cytoplasmic ratio, dark coarse chromatin and irregular nuclear folds. These nuclei are large, pale and glassy, and they overlap in one multinucleated mass.",
+  "Benign endocervical cell cluster": "<b>Benign endocervical cells</b> form flat honeycomb sheets or strips of columnar cells with evenly spaced round nuclei and fine, granular chromatin. This cluster is a syncytium with nuclei molded together and glassy, smudged chromatin."
+ },
+ "look": "Look at the large cluster at the left. Several nuclei lie in one shared cytoplasm, and each is pressed against its neighbors, which is called molding. The chromatin looks pale, smudged and glassy, while the flat blue-green squamous cells nearby have small crisp nuclei. Multinucleation with molding and ground-glass nuclei is the cytopathic effect of herpes simplex virus, the same change a Tzanck smear shows.",
+ "cred": "Drhan9394 · CC0 · Wikimedia Commons",
+ "by": "Drhan9394",
+ "lic": "CC0",
+ "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Herpes_simplex_virus_pap.jpg",
+ "mod": false,
+ "modality": "cytology",
+ "findings": [
+  "Multinucleated cluster, left center: several large nuclei share one syncytial cytoplasm because infected cells fuse. These multinucleated giant cells are what a Pap smear or Tzanck smear shows in herpes infection.",
+  "Molded nuclei: inside the cluster the nuclei press against one another and take on flattened, interlocking edges, called nuclear molding, because crowding in the shared cytoplasm deforms them.",
+  "Ground-glass nuclei: the infected nuclei look pale, smudged and glassy, with chromatin pushed to a thickened rim along the nuclear membrane, because viral replication fills the nucleus and disperses the chromatin.",
+  "Normal squamous cells: the flat blue-green cells at the top center and on the right have small, crisp, single nuclei and give a size comparison, since the infected nuclei are several times larger and overlap."
+ ]
+}

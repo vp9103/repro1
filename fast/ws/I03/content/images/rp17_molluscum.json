@@ -1,0 +1,31 @@
+{
+ "n": "Molluscum bodies in a crateriform lesion",
+ "file": "rp17_molluscum.jpg",
+ "dx": "Molluscum contagiosum",
+ "wrong": [
+  "Keratoacanthoma",
+  "Condyloma acuminatum",
+  "Epidermal inclusion cyst",
+  "Herpes simplex skin infection"
+ ],
+ "ww": {
+  "Keratoacanthoma": "<b>Keratoacanthoma</b> is a crater packed with keratin, bordered by well-differentiated squamous cells with glassy pink cytoplasm and lipped edges. Here the cells beneath the crater carry rounded cytoplasmic inclusions that keratinocytes of a keratoacanthoma do not have.",
+  "Condyloma acuminatum": "<b>Condyloma acuminatum</b> has a warty surface with papillomatosis, hyperkeratosis and koilocytes, which are cells with a raisin-like nucleus inside a clear halo. This lesion is a smooth cup whose cells hold granular cytoplasmic bodies, not halos.",
+  "Epidermal inclusion cyst": "<b>Epidermal inclusion cyst</b> has a wall of epidermis with a granular layer around a cavity of flaky, laminated keratin. Here the cells beneath the crater are full of round, granular inclusions that grow larger toward the surface.",
+  "Herpes simplex skin infection": "<b>Herpes</b> infection shows ballooned keratinocytes and multinucleated giant cells with ground-glass nuclei inside a vesicle. Here each cell has one nucleus pushed to the edge by a large cytoplasmic inclusion, and no vesicle is present."
+ },
+ "look": "Look at the central crater, plugged with bright red keratin and cell debris. In the epidermal cells lining it, round, granular, pink inclusions fill the cytoplasm and push each nucleus to the edge. The inclusions grow larger and darker as the cells rise toward the plug. These molluscum bodies, also called Henderson-Paterson bodies, are the cytoplasmic factories of the poxvirus that cause molluscum contagiosum.",
+ "cred": "CoRus13 · CC BY-SA 4.0 · Wikimedia Commons (resized)",
+ "by": "CoRus13",
+ "lic": "CC BY-SA 4.0",
+ "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Molluscum_contagiosum,_high_mag.jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Keratin-filled crater: a funnel-shaped opening at the top center holds a plug of bright red shed keratinocytes and debris. Seen from above, this crater is the central dimple that makes the papule umbilicated.",
+  "Molluscum bodies, mid-lesion: rounded, granular, pink cytoplasmic inclusions fill the keratinocytes below the plug and push each nucleus aside. They are masses of poxvirus, which replicates in the cytoplasm of the cell.",
+  "Maturing bodies at the plug: nearer the surface the inclusions become larger and turn purple, then red as the cells keratinize and die and shed their viral contents into the crater, where the virus spreads to new skin.",
+  "Spared basal layer: at the lower edge of the cup, the palisaded basal and parabasal cells contain no inclusions, because bodies appear only after infected cells begin to mature above the basal layer."
+ ]
+}

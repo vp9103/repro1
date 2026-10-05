@@ -1,0 +1,31 @@
+{
+ "n": "Hydropic villus with trophoblast hyperplasia",
+ "file": "rp26_hydropic.jpg",
+ "dx": "Hydropic villi of a complete mole",
+ "wrong": [
+  "Partial hydatidiform mole",
+  "Hydropic abortion (non-molar)",
+  "Choriocarcinoma",
+  "Placental site trophoblastic tumor"
+ ],
+ "ww": {
+  "Partial hydatidiform mole": "<b>Partial mole</b> has two villous populations, swollen and normal-sized, with scalloped outlines and only focal trophoblastic hyperplasia. Here a rounded villus has a central cistern and a circumferential rim of proliferating trophoblast, which favors complete mole; p57 staining confirms it.",
+  "Hydropic abortion (non-molar)": "<b>Hydropic abortion</b> has mildly swollen villi without circumferential trophoblastic proliferation, and the villi are usually smaller with scalloped or fibrotic stroma. A rim of proliferating, atypical trophoblast around a large swollen villus points to a mole.",
+  "Choriocarcinoma": "<b>Choriocarcinoma</b> is a sheet of malignant cytotrophoblast and syncytiotrophoblast with hemorrhage and necrosis, and it has no villi. This field shows an intact villus with a stromal cistern, so the trophoblast is growing on a villus, not as a villus-free tumor.",
+  "Placental site trophoblastic tumor": "<b>Placental site trophoblastic tumor</b> is a mass of monotonous intermediate trophoblast that infiltrates the myometrium between muscle fibers, with no villi. This section is built around a swollen villus, so it is molar tissue, not a solid tumor of intermediate trophoblast."
+ },
+ "look": "Look at the large villus in the center. Its core is pale, loose and nearly empty, a central acellular cistern formed by edema, and no blood vessels are visible in it. Along the upper and right rim, layers of trophoblast with larger, atypical nuclei form a circumferential collar, and a pool of blood lies at the left. Hydropic villi with circumferential trophoblast proliferation mark a complete mole.",
+ "cred": "Ed Uthman from Houston, TX, USA · CC BY 2.0 · Wikimedia Commons (resized)",
+ "by": "Ed Uthman from Houston, TX, USA",
+ "lic": "CC BY 2.0",
+ "licurl": "https://creativecommons.org/licenses/by/2.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Complete_Hydatidiform_Mole_(6032015405).jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Hydropic villus: a large rounded villus with pale, loose, edematous stroma and a central acellular cistern sits at the center, swollen by fluid. This is the microscopic form of the grape-like vesicle seen on gross inspection.",
+  "Trophoblastic hyperplasia: along the upper and right border of the villus, layers of proliferating trophoblast with enlarged, atypical nuclei and vacuolated cytoplasm form a collar around it, reflecting paternal genes that drive trophoblast growth.",
+  "Absent fetal vessels: the swollen stroma is loose and nearly acellular with no visible capillaries, because the embryo failed to form and no fetal circulation supplies the villus.",
+  "Hemorrhage: a dense pool of red cells at the left edge, with fragments of villi, reflects the vaginal bleeding that brings most patients to care."
+ ]
+}
