@@ -18,7 +18,7 @@
  {
   "k": "rp21_dht",
   "t": "Dihydrotestosterone (DHT)",
-  "d": "A strong androgen made from testosterone by 5-alpha-reductase in the prostate and genital skin. It binds the androgen receptor more tightly than testosterone does and drives prostate growth, so BPH needs it.",
+  "d": "A strong androgen made from testosterone by 5-alpha-reductase in the prostate, genital skin and hair follicles. It binds the androgen receptor more tightly than testosterone does. It builds the male external genitalia and prostate and drives balding and acne, so BPH needs it.",
   "alt": [
    "DHT"
   ]
@@ -35,18 +35,13 @@
   "k": "rp21_basal",
   "t": "Basal cell layer",
   "d": "The flat layer of cells under the secretory cells of normal prostate glands, shown by p63 and high-molecular-weight keratin stains. Its absence in small crowded glands is the key sign of prostate adenocarcinoma.",
-  "alt": [
-   "basal cells",
-   "basal cell"
-  ]
+  "alt": []
  },
  {
   "k": "rp21_ta",
   "t": "Tunica albuginea",
-  "d": "The tough, inelastic fibrous sheath around the corpora cavernosa. It traps blood during an erection, scars into a plaque in Peyronie disease, and can rupture in penile fracture when the erect penis is bent.",
-  "alt": [
-   "tunica"
-  ]
+  "d": "The tough, inelastic fibrous capsule of the testis and of the corpora cavernosa of the penis. Because it cannot stretch, swelling inside the testis raises pressure and can kill tissue. In the penis it traps blood during an erection, scars into a plaque in Peyronie disease, and can rupture in penile fracture.",
+  "alt": []
  },
  {
   "k": "rp21_as",

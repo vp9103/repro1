@@ -37,14 +37,14 @@ BASELINE: (written at P0.3 from `python check_repro.py --baseline`) BASELINE tre
 |  | **Phase 3: Wave 1 (reproductive) topics** |  |  |  |
 | P3.1 | Topics rp1, rp2, rp3: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:08c168d4 tree:9e50d72bf8 closed:d6e73013 files:8 drift-discarded:0 checks:5/5 |  |
 | P3.2 | Topics rp4, rp5, rp6: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:a55e75c8 tree:2e8a3a5561 closed:fb5d04cc files:6 drift-discarded:0 checks:5/5 |  |
-| P3.3 | Topics rp7, rp8, rp9: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | IN_PROGRESS | started 2026-10-05 23:55:42 ws:.repro/ws/P3_3 |  |
-| P3.4 | Topics rp10, rp11, rp29: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:a796b1a3 tree:daab0bdfac closed:3f035420 files:6 drift-discarded:0 checks:5/5 |  |
-| P3.5 | Topics rp12, rp13, rp14: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:b60231d0 tree:351e97f610 closed:35dc513d files:6 drift-discarded:0 checks:5/5 |  |
-| P3.6 | Topics rp15, rp23, rp24: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:b66d7a7d tree:00d882a1c9 closed:c9fc6c70 files:6 drift-discarded:0 checks:5/5 |  |
-| P3.7 | Topics rp16, rp17, rp18: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:9e4671d0 tree:59de6a9382 closed:8aff5692 files:6 drift-discarded:0 checks:5/5 |  |
-| P3.8 | Topics rp19, rp20, rp21, rp22: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:a4c2d094 tree:b7d2f7e006 closed:f3e2900d files:8 drift-discarded:0 checks:5/5 |  |
-| P3.9 | Topics rp25, rp30, rp26: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:0aa43602 tree:ad1188af9d closed:2025eea3 files:6 drift-discarded:0 checks:5/5 |  |
-| P3.10 | Topics rp27, rp28: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:b0737ded tree:baa1512f81 closed:76aee256 files:4 drift-discarded:0 checks:5/5 |  |
+| P3.3 | Topics rp7, rp8, rp9: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:ce3d1fd6 tree:55dc1e51c5 closed:d1e4c8fc files:7 drift-discarded:0 checks:5/5 |  |
+| P3.4 | Topics rp10, rp11, rp29: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:0fbffe80 tree:e8ca529360 closed:b8a4c61d files:10 drift-discarded:0 checks:5/5 |  |
+| P3.5 | Topics rp12, rp13, rp14: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:762d42e7 tree:85ac43eefb closed:65f98d01 files:9 drift-discarded:0 checks:5/5 |  |
+| P3.6 | Topics rp15, rp23, rp24: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:24bf6dcb tree:56936b3886 closed:ab8d7c8d files:6 drift-discarded:0 checks:5/5 |  |
+| P3.7 | Topics rp16, rp17, rp18: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:2e5d2aa2 tree:186052a2fc closed:beed66e1 files:5 drift-discarded:0 checks:5/5 |  |
+| P3.8 | Topics rp19, rp20, rp21, rp22: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:933429e8 tree:341741f003 closed:e75cdeda files:14 drift-discarded:0 checks:5/5 |  |
+| P3.9 | Topics rp25, rp30, rp26: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:cccee80f tree:ba8ec7974e closed:d8abef85 files:9 drift-discarded:0 checks:5/5 |  |
+| P3.10 | Topics rp27, rp28: prose, figures, pretest, grid, sexp, glossary, visual guide; second-model reviewed | DONE | sha:b689d17e tree:8148c6b2e2 closed:2652e1b1 files:8 drift-discarded:0 checks:5/5 |  |
 | P3.V | Phase 3 verification by a fresh verifier (token + seeded sample + real clicks) | NOT_STARTED |  |  |
 |  | **Phase 4: Wave 1 images and overlays** |  |  |  |
 | P4.1 | Images for rp1, rp2, rp3, rp4, rp5, rp6: licensed, >= 800 px, verified by a second model, 4 look-alike distractors with whys, placed | NOT_STARTED |  |  |
@@ -295,3 +295,10 @@ BASELINE: (written at P0.3 from `python check_repro.py --baseline`) BASELINE tre
 - 2026-10-05 P3.2 reopened: P3.V run 2 (token d911370d3b) FAIL 0/4 plus coverage audits A (47) and B (52): import repair rounds R1-R3 (lessons, glossaries, figures) from the fast page
 - 2026-10-05 Repair R3 READY and merged: all 52 audit-B rows applied (rp23 b5 DCIS same breast / LCIS either; rp17 b15 HIV breastfeeding as of 2025, consistent with rp28; rp26_gtn caption trimmed; rubella kept as togavirus with the 2019 matonavirus reclassification noted); rp26q09/rp26r07 re-pointed. Republished. Reconciliation 2 running (P3.1-P3.10 reopen/import lessons+glossaries+repaired figures/close). Practice audit E (rp15-rp18, rp21-rp23) dispatched; C, D running; F (rp24-rp30) next.
 - 2026-10-05 P3.3 reopened: P3.V run 2 (token d911370d3b) FAIL 0/4 plus coverage audits A (47) and B (52): import repair rounds R1-R3 (lessons, glossaries, figures) from the fast page
+- 2026-10-05 P3.4 reopened: P3.V run 2 (token d911370d3b) FAIL 0/4 plus coverage audits A (47) and B (52): import repair rounds R1-R3 (lessons, glossaries, figures) from the fast page
+- 2026-10-05 P3.5 reopened: P3.V run 2 (token d911370d3b) FAIL 0/4 plus coverage audits A (47) and B (52): import repair rounds R1-R3 (lessons, glossaries, figures) from the fast page
+- 2026-10-05 P3.6 reopened: P3.V run 2 (token d911370d3b) FAIL 0/4 plus coverage audits A (47) and B (52): import repair rounds R1-R3 (lessons, glossaries, figures) from the fast page
+- 2026-10-05 P3.7 reopened: P3.V run 2 (token d911370d3b) FAIL 0/4 plus coverage audits A (47) and B (52): import repair rounds R1-R3 (lessons, glossaries, figures) from the fast page
+- 2026-10-05 P3.8 reopened: P3.V run 2 (token d911370d3b) FAIL 0/4 plus coverage audits A (47) and B (52): import repair rounds R1-R3 (lessons, glossaries, figures) from the fast page
+- 2026-10-05 P3.9 reopened: P3.V run 2 (token d911370d3b) FAIL 0/4 plus coverage audits A (47) and B (52): import repair rounds R1-R3 (lessons, glossaries, figures) from the fast page
+- 2026-10-05 P3.10 reopened: P3.V run 2 (token d911370d3b) FAIL 0/4 plus coverage audits A (47) and B (52): import repair rounds R1-R3 (lessons, glossaries, figures) from the fast page

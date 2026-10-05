@@ -1,0 +1,53 @@
+<svg class="dia" viewBox="0 0 900 574" role="img" aria-label="Androgen deprivation therapy: GnRH agonists such as leuprolide, GnRH antagonists such as degarelix, abiraterone blocking CYP17, and bicalutamide, flutamide and enzalutamide blocking the androgen receptor, with the adverse effects of androgen deprivation">
+<text class="ttl" x="14" y="24" font-size="17">Androgen deprivation: where each prostate cancer drug acts</text>
+<rect x="14" y="44" width="286" height="56" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="68" font-size="15">Hypothalamus</text>
+<text x="28" y="90" font-size="14">GnRH released in pulses</text>
+<line x1="157" y1="100" x2="157" y2="121" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="157.0,130.0 151.0,120.0 163.0,120.0" fill="var(--ink-2)"/>
+<rect x="14" y="132" width="286" height="56" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="156" font-size="15">Pituitary</text>
+<text x="28" y="178" font-size="14">LH released</text>
+<line x1="157" y1="188" x2="157" y2="209" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="157.0,218.0 151.0,208.0 163.0,208.0" fill="var(--ink-2)"/>
+<rect x="14" y="220" width="286" height="56" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="244" font-size="15">Testis, Leydig cells</text>
+<text x="28" y="266" font-size="14">Testosterone, then DHT</text>
+<line x1="157" y1="276" x2="157" y2="297" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="157.0,306.0 151.0,296.0 163.0,296.0" fill="var(--ink-2)"/>
+<rect x="14" y="308" width="286" height="78" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="28" y="332" font-size="15">Prostate cancer cell</text>
+<text x="28" y="354" font-size="14">DHT binds the androgen</text>
+<text x="28" y="374" font-size="14">receptor: growth</text>
+<line x1="157" y1="428" x2="157" y2="396" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="157.0,387.0 163.0,397.0 151.0,397.0" fill="var(--ink-2)"/>
+<rect x="14" y="430" width="286" height="56" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="454" font-size="15">Adrenal cortex</text>
+<text x="28" y="476" font-size="14">Androgen precursors</text>
+<rect x="330" y="44" width="556" height="84" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="346" y="68" font-size="15">Leuprolide, goserelin: GnRH agonists</text>
+<text x="346" y="92" font-size="14">Continuous GnRH desensitizes the pituitary receptor</text>
+<text x="346" y="114" font-size="14">Testosterone flares first, then falls to castrate levels</text>
+<rect x="330" y="138" width="556" height="62" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="346" y="162" font-size="15">Degarelix, relugolix: GnRH antagonists</text>
+<text x="346" y="184" font-size="14">Block the receptor at once, so there is no flare</text>
+<line x1="300" y1="160" x2="316" y2="160" stroke="var(--ink-2)" stroke-width="2.5"/>
+<line x1="316" y1="86" x2="316" y2="168" stroke="var(--ink-2)" stroke-width="2.5"/>
+<line x1="316" y1="86" x2="330" y2="86" stroke="var(--ink-2)" stroke-width="2.5"/>
+<line x1="316" y1="168" x2="330" y2="168" stroke="var(--ink-2)" stroke-width="2.5"/>
+<rect x="330" y="210" width="556" height="104" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="346" y="234" font-size="15">Abiraterone: CYP17A1 inhibitor</text>
+<text x="346" y="258" font-size="14">Blocks androgen synthesis in testis, adrenal and tumor</text>
+<text x="346" y="280" font-size="14">Given with prednisone: ACTH rises, so mineralocorticoid</text>
+<text x="346" y="302" font-size="14">excess (hypertension, hypokalemia) is prevented</text>
+<line x1="300" y1="248" x2="330" y2="248" stroke="var(--ink-2)" stroke-width="2.5"/>
+<rect x="330" y="324" width="556" height="104" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="346" y="348" font-size="15">Bicalutamide, flutamide, enzalutamide</text>
+<text x="346" y="372" font-size="14">Block the androgen receptor</text>
+<text x="346" y="394" font-size="14">Started before the agonist to cover the flare</text>
+<text x="346" y="416" font-size="14">Flutamide is hepatotoxic</text>
+<line x1="300" y1="346" x2="330" y2="346" stroke="var(--ink-2)" stroke-width="2.5"/>
+<rect x="14" y="498" width="872" height="66" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="30" y="522" font-size="15">Toll of androgen deprivation</text>
+<text x="30" y="546" font-size="14">Hot flashes, lost libido and erections, gynecomastia, fatigue and bone loss: check bone density</text>
+</svg>

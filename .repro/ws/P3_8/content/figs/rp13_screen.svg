@@ -1,4 +1,4 @@
-<svg class="dia" viewBox="0 0 900 684" role="img" aria-label="Cervical screening by age and risk group, the screen then diagnose then treat sequence, the 9-valent HPV vaccine schedule and other preventive services at the same visit, including HIV and hepatitis C testing">
+<svg class="dia" viewBox="0 0 900 644" role="img" aria-label="Cervical screening by age and risk group, the screen then diagnose then treat sequence, the 9-valent HPV vaccine, and cervicitis">
 <text class="ttl" x="14" y="24" font-size="17">Cervical cancer prevention: who is screened, with what, and how often</text>
 <rect x="14" y="40" width="282" height="140" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
 <text class="b" x="28" y="67" font-size="16">Under 21</text>
@@ -10,18 +10,15 @@
 <text x="323" y="94" font-size="15">Cytology alone</text>
 <text x="323" y="118" font-size="15">Every 3 years</text>
 <text x="323" y="142" font-size="15">HPV testing not used yet</text>
-<text x="323" y="166" font-size="15">ACS 2020: primary HPV from 25</text>
 <rect x="604" y="40" width="282" height="140" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
 <text class="b" x="618" y="67" font-size="16">30 to 65</text>
 <text x="618" y="94" font-size="15">Primary HPV every 5 years</text>
 <text x="618" y="118" font-size="15">or cotest every 5 years</text>
 <text x="618" y="142" font-size="15">or cytology every 3 years</text>
-<text x="618" y="166" font-size="15">ACS 2020: primary HPV preferred</text>
 <rect x="14" y="192" width="282" height="116" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
 <text class="b" x="28" y="219" font-size="16">Over 65</text>
 <text x="28" y="246" font-size="15">Stop after adequate</text>
 <text x="28" y="270" font-size="15">negative screening</text>
-<text x="28" y="294" font-size="15">No CIN 2 or worse in 25 years</text>
 <rect x="309" y="192" width="282" height="116" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
 <text class="b" x="323" y="219" font-size="16">After hysterectomy</text>
 <text x="323" y="246" font-size="15">Total, for benign disease:</text>
@@ -53,19 +50,13 @@
 <polygon points="307,385 315,390 307,395" fill="var(--ink-2)"/>
 <line x1="585" y1="390" x2="608" y2="390" stroke="var(--ink-2)" stroke-width="2"/>
 <polygon points="608,385 616,390 608,395" fill="var(--ink-2)"/>
-<rect x="14" y="476" width="430" height="190" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<rect x="14" y="476" width="430" height="150" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
 <text class="b" x="28" y="503" font-size="16">9-valent HPV vaccine</text>
 <text x="28" y="530" font-size="15">Recombinant L1 capsid protein</text>
 <text x="28" y="554" font-size="15">Forms virus-like particles, no DNA</text>
 <text x="28" y="578" font-size="15">Types 6, 11, 16, 18, 31, 33, 45, 52, 58</text>
 <text x="28" y="602" font-size="15">Age 11 to 12; catch-up through 26</text>
-<text x="28" y="626" font-size="15">Shared decision from 27 to 45</text>
-<text x="28" y="650" font-size="15">Two doses before 15, else three</text>
-<rect x="458" y="476" width="428" height="190" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
-<text class="b" x="472" y="503" font-size="16">Same visit: other screening</text>
-<text x="472" y="530" font-size="15">Chlamydia and gonorrhea NAAT, age 24 and under</text>
-<text x="472" y="554" font-size="15">Cervicitis: pus at the os; NAAT confirms</text>
-<text x="472" y="578" font-size="15">Mammography every 2 years, 40 to 74</text>
-<text x="472" y="602" font-size="15">Colorectal screening from 45 to 75</text>
-<text x="472" y="626" font-size="15">HIV test 15 to 65; hepatitis C once, 18 to 79</text>
+<rect x="458" y="476" width="428" height="150" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="472" y="503" font-size="16">Cervicitis</text>
+<text x="472" y="530" font-size="15">Cervicitis: usually chlamydia; NAAT confirms</text>
 </svg>

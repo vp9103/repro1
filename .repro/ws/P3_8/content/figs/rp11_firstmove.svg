@@ -1,4 +1,4 @@
-<svg class="dia" viewBox="0 0 900 589" role="img" aria-label="Menopause care: the first move depends on the presentation; primary ovarian insufficiency before 40 needs a karyotype and FMR1 testing, amenorrhea at 42 needs a pregnancy test first, hot flashes with a uterus need estrogen plus a progestogen, hot flashes with breast cancer need a nonhormonal drug that avoids CYP2D6 inhibitors with tamoxifen, dryness alone needs vaginal estradiol, and any postmenopausal bleeding needs endometrial biopsy when the stripe exceeds 4 mm">
+<svg class="dia" viewBox="0 0 900 589" role="img" aria-label="Menopause care: the first move depends on the presentation; primary ovarian insufficiency before 40 needs a karyotype and FMR1 testing, amenorrhea at 42 needs a pregnancy test first, hot flashes with a uterus need estrogen plus a progestogen, hot flashes with breast cancer need a nonhormonal drug that avoids CYP2D6 inhibitors with tamoxifen, dryness alone needs vaginal estradiol, and any postmenopausal bleeding needs ultrasound plus endometrial sampling for most patients as of 2026">
 <text class="ttl" x="14" y="24" font-size="17">Menopause: the first move depends on the presentation</text>
 <rect x="14" y="42" width="262" height="34" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.4"/>
 <text class="b" x="26" y="65" font-size="15">Presentation</text>
@@ -13,7 +13,7 @@
 <text x="26" y="131" font-size="14">low estradiol, no menses</text>
 <text class="b" x="294" y="110" font-size="14">Primary ovarian insufficiency</text>
 <text x="294" y="131" font-size="14">Karyotype, FMR1 CGG-repeat test</text>
-<text x="294" y="152" font-size="14">(fragile X), adrenal antibodies</text>
+<text x="294" y="152" font-size="14">(fragile X)</text>
 <text class="b" x="634" y="110" font-size="14">Estrogen until about age 51</text>
 <text x="634" y="131" font-size="14">the usual age of menopause</text>
 <rect x="14" y="178" width="262" height="65" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.4"/>
@@ -59,8 +59,8 @@
 <rect x="622" y="491" width="264" height="86" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2"/>
 <text class="b" x="26" y="517" font-size="14">Any bleeding after</text>
 <text x="26" y="538" font-size="14">menopause</text>
-<text class="b" x="294" y="517" font-size="14">Endometrial biopsy if the stripe</text>
-<text x="294" y="538" font-size="14">is over 4 mm or bleeding recurs</text>
+<text class="b" x="294" y="517" font-size="14">Ultrasound plus endometrial</text>
+<text x="294" y="538" font-size="14">sampling for most patients (2026)</text>
 <text x="294" y="559" font-size="14">Hysteroscopy if sampling fails</text>
 <text class="b" x="634" y="517" font-size="14">Cancer until proven otherwise</text>
 <text x="634" y="538" font-size="14">Atrophy is a diagnosis of</text>

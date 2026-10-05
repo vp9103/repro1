@@ -1,4 +1,4 @@
-<svg class="dia" viewBox="0 0 900 560" role="img" aria-label="Medication abortion uses two drugs: mifepristone, a competitive progesterone receptor antagonist that also blocks the glucocorticoid receptor, then misoprostol, a prostaglandin E1 analog that contracts the uterus 24 to 48 hours later; the regimen runs through 70 days of gestation as of 2025 and has listed contraindications">
+<svg class="dia" viewBox="0 0 900 532" role="img" aria-label="Medication abortion uses two drugs: mifepristone, a competitive progesterone receptor antagonist that also blocks the glucocorticoid receptor, then misoprostol, a prostaglandin E1 analog that contracts the uterus 24 to 48 hours later">
 <text class="ttl" x="14" y="24" font-size="17">Medication abortion: two drugs, two receptors, 24 to 48 hours apart</text>
 <rect x="14" y="40" width="412" height="330" rx="8" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.6"/>
 <rect x="14" y="40" width="412" height="40" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.6"/>
@@ -27,16 +27,14 @@
 <text x="502" y="258" font-size="14">More mucus and bicarbonate, less acid</text>
 <text x="502" y="290" font-size="14">Never in pregnancy: it can cause</text>
 <text x="502" y="312" font-size="14">miscarriage, so counsel contraception</text>
-<rect x="14" y="384" width="412" height="160" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.4"/>
-<text class="b" x="28" y="412" font-size="15">Regimen as of 2025</text>
-<text x="28" y="438" font-size="14">Through 70 days of gestation</text>
-<text x="28" y="462" font-size="14">Mifepristone 200 mg, then misoprostol</text>
-<text x="28" y="484" font-size="14">800 mcg 24 to 48 hours later</text>
-<text x="28" y="516" font-size="14">Expect heavy cramping and bleeding</text>
-<rect x="474" y="384" width="412" height="160" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.4"/>
+<rect x="14" y="384" width="412" height="132" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.4"/>
+<text class="b" x="28" y="412" font-size="15">Regimen</text>
+<text x="28" y="438" font-size="14">Mifepristone first, then misoprostol</text>
+<text x="28" y="460" font-size="14">24 to 48 hours later</text>
+<text x="28" y="492" font-size="14">Expect heavy cramping and bleeding</text>
+<rect x="474" y="384" width="412" height="132" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.4"/>
 <text class="b" x="488" y="412" font-size="15">Not suitable if</text>
-<text x="488" y="438" font-size="14">Suspected ectopic pregnancy or IUD in place</text>
-<text x="488" y="462" font-size="14">Bleeding disorder or anticoagulant use</text>
-<text x="488" y="486" font-size="14">Chronic adrenal failure or long-term</text>
-<text x="488" y="508" font-size="14">corticosteroids; allergy to either drug</text>
+<text x="488" y="438" font-size="14">Suspected ectopic pregnancy</text>
+<text x="488" y="462" font-size="14">Chronic adrenal failure or long-term</text>
+<text x="488" y="484" font-size="14">corticosteroids</text>
 </svg>

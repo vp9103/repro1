@@ -1,10 +1,10 @@
 {
  "id": "rp28",
  "t": "Labor, delivery and the postpartum period",
- "sub": "What starts and coordinates labor, how to read its stages and the fetal heart, and how to prevent the injuries and bleeding that follow birth.",
+ "sub": "What starts and coordinates labor, how to read its stages and the fetal heart rate, and how to explain the injuries and bleeding that can follow birth.",
  "yld": "mid",
  "exam": "hi",
- "mins": 16,
+ "mins": 14,
  "bp": [
   "BP-rp28-01",
   "BP-rp28-02",
@@ -49,11 +49,11 @@
     "Hemidesmosomes"
    ],
    "a": 0,
-   "why": "Gap junctions made of connexin 43 multiply near term and couple myometrial cells electrically, so action potentials spread from cell to cell and the uterus contracts in synchrony.",
+   "why": "Gap junctions made of connexin 43 multiply near term and couple myometrial cells electrically. Action potentials then spread from cell to cell, and the uterus contracts in synchrony.",
    "w": {
-    "Desmosomes": "Desmosomes anchor cells mechanically through cadherins and intermediate filaments; they hold tissue together but pass no electrical current between cells.",
-    "Tight junctions": "Tight junctions seal the spaces between epithelial cells to block leakage; they do not couple smooth muscle cells electrically.",
-    "Hemidesmosomes": "Hemidesmosomes attach basal epithelial cells to the basement membrane; they connect a cell to matrix, not one muscle cell to another."
+    "Desmosomes": "Desmosomes anchor cells mechanically through cadherins and intermediate filaments. They hold tissue together but pass no electrical current between cells.",
+    "Tight junctions": "Tight junctions seal the spaces between epithelial cells to block leakage. They do not couple smooth muscle cells electrically.",
+    "Hemidesmosomes": "Hemidesmosomes attach basal epithelial cells to the basement membrane. They connect a cell to matrix, not one muscle cell to another."
    }
   },
   {
@@ -65,10 +65,10 @@
     "Progesterone"
    ],
    "a": 0,
-   "why": "Suckling signals the hypothalamus to release oxytocin from the posterior pituitary, which contracts myoepithelial cells around the alveoli and ejects milk into the ducts; prolactin makes the milk.",
+   "why": "Suckling signals the hypothalamus to release oxytocin from the posterior pituitary. Oxytocin contracts the myoepithelial cells around the alveoli and ejects milk into the ducts, while prolactin makes the milk.",
    "w": {
     "Prolactin": "Prolactin from the anterior pituitary drives milk production by alveolar cells, but it does not squeeze milk out of the alveoli.",
-    "Estrogen": "Estrogen grows the ducts during pregnancy but blocks milk production; its fall after delivery of the placenta allows lactation to begin.",
+    "Estrogen": "Estrogen grows the ducts during pregnancy but blocks milk production. Its fall after delivery of the placenta allows lactation to begin.",
     "Progesterone": "Progesterone develops the lobules and alveoli in pregnancy and, like estrogen, inhibits milk synthesis until the placenta is delivered."
    }
   },
@@ -81,10 +81,10 @@
     "T2 and T3"
    ],
    "a": 2,
-   "why": "Lateral neck traction stretches the upper trunk, C5 and C6, weakening the deltoid, biceps and rotator cuff, so the arm hangs in the waiter's tip position of Erb palsy.",
+   "why": "Lateral neck traction stretches the upper trunk, C5 and C6. This weakens the deltoid, biceps and rotator cuff, so the arm hangs in the waiter's tip position of Erb palsy.",
    "w": {
-    "C8 and T1": "Injury to the lower trunk causes Klumpke palsy, a claw hand with weak finger flexion, sometimes with Horner syndrome; the shoulder and elbow keep working.",
-    "C3 to C5": "These roots form the phrenic nerve; a birth injury causes diaphragmatic paralysis and respiratory distress, not an adducted, internally rotated arm.",
+    "C8 and T1": "Injury to the lower trunk causes Klumpke palsy, a claw hand with weak finger flexion, sometimes with Horner syndrome. The shoulder and elbow keep working.",
+    "C3 to C5": "These roots form the phrenic nerve. A birth injury there causes diaphragmatic paralysis and respiratory distress, not an adducted, internally rotated arm.",
     "T2 and T3": "These thoracic roots supply the chest wall and lie outside the brachial plexus, so their injury would not change arm posture."
    }
   }
@@ -96,17 +96,17 @@
   ],
   [
    "p",
-   "Labor starts through a cascade, not a single switch. Near term, placental corticotropin-releasing hormone rises steeply and drives the fetal pituitary to release ACTH. The **fetal adrenal** gland then makes cortisol, which matures the lungs, and DHEA-S, which the placenta converts to estrogen. The rising **estrogen-to-progesterone ratio** lifts progesterone's quieting effect on the myometrium, and estrogen upregulates oxytocin receptors, connexin 43 and the **prostaglandins** that ripen the cervix. Oxytocin from the posterior pituitary joins in, and the {{rp28_ferguson|Ferguson reflex}} sustains it: the head stretching the cervix releases more oxytocin, a positive feedback loop that ends with delivery."
+   "Labor starts through a cascade, not a single switch. Near term, placental corticotropin-releasing hormone (CRH) rises steeply and drives the fetal pituitary to release ACTH. The **fetal adrenal** gland then makes cortisol, which matures the lungs, and DHEA-S, which the placenta converts to estrogen. The rising **estrogen-to-progesterone ratio** lifts progesterone's quieting effect on the myometrium (the uterine muscle). Estrogen also upregulates oxytocin receptors, connexin 43 and the **prostaglandins** that ripen the cervix. Oxytocin from the posterior pituitary joins in. The {{rp28_ferguson|Ferguson reflex}} sustains it: the head stretching the cervix releases more oxytocin, a positive feedback loop that ends with delivery."
   ],
   [
    "p",
-   "Gap junctions built from connexin 43 are channels that pass ions directly between myometrial cells. An **action potential** that starts in one cell therefore spreads to its neighbors, so each contraction sweeps the uterus in synchrony instead of flickering in patches."
+   "Gap junctions built from connexin 43 are channels that pass ions directly between myometrial cells. An **action potential** that starts in one cell therefore spreads to its neighbors. Each contraction then sweeps the uterus in synchrony instead of flickering in patches."
   ],
   [
    "call",
    "key",
    "Oxytocin acts through Gq, and excess has two costs",
-   "Oxytocin binds a **Gq-coupled** myometrial receptor, raising IP3 and intracellular calcium. Excess causes **tachysystole**, more than 5 contractions in 10 minutes, which starves the fetus of oxygen between squeezes. Because oxytocin resembles ADH, large doses in dilute fluid can also cause water intoxication with **hyponatremia**."
+   "Oxytocin binds a **Gq-coupled** myometrial receptor, raising IP3 and intracellular calcium. Excess causes **tachysystole**, more than 5 contractions in 10 minutes. This starves the fetus of oxygen between squeezes, so the first fix is to stop the infusion. Because oxytocin resembles ADH, large doses in dilute fluid can also cause water intoxication with **hyponatremia**."
   ],
   [
    "h",
@@ -114,11 +114,11 @@
   ],
   [
    "p",
-   "A cervical exam records five features: dilation, effacement (thinning), the station of the presenting part relative to the ischial spines, the cervix's consistency (firm to soft) and its **cervical position** (posterior to anterior). Together these make the {{rp28_bishop|Bishop score}}, which runs from 0 to 13: a ripe cervix is open, thin, soft, anterior and low. A score of 8 or more predicts a successful induction, while a lower score calls for cervical ripening first."
+   "A cervical exam records five features: dilation, effacement (thinning), station (the presenting part's level relative to the ischial spines), consistency (firm to soft) and **cervical position** (posterior to anterior). Together these make the {{rp28_bishop|Bishop score}}, which runs from 0 to 13. A ripe cervix is open, thin, soft, anterior and low. A score of 8 or more predicts a successful induction. A lower score calls for cervical ripening first."
   ],
   [
    "p",
-   "Ripening agents copy what prostaglandins do before spontaneous labor: they break down cervical collagen so the cervix softens. The options are **misoprostol**, a prostaglandin E1 analog; **dinoprostone**, prostaglandin E2, as a vaginal gel or insert; and a transcervical balloon that ripens the cervix mechanically. Prostaglandins can cause tachysystole and are avoided after a cesarean, which raises the risk of uterine rupture; the balloon is used instead. Oxytocin then drives contractions. Induction is offered when delivery is safer than waiting, as with preeclampsia, ruptured membranes or a pregnancy past 41 weeks."
+   "Ripening agents copy what prostaglandins do before spontaneous labor: they break down cervical collagen so the cervix softens. The options are **misoprostol**, a prostaglandin E1 analog; **dinoprostone**, prostaglandin E2, as a vaginal gel or insert; and a transcervical balloon that ripens the cervix mechanically. Prostaglandins can cause tachysystole and are avoided after a cesarean, because the scar can rupture, so the balloon is used instead. Oxytocin then drives the contractions."
   ],
   [
    "h",
@@ -126,50 +126,15 @@
   ],
   [
    "p",
-   "The first stage runs from regular contractions to full dilation at 10 cm: a slow latent phase while the cervix softens and thins, then an **active phase** from 6 cm, when dilation speeds up. A latent phase beyond about 20 hours in a first labor is prolonged but is not itself a reason for cesarean. The second stage runs from full dilation to delivery of the baby, and the third stage from the baby to the placenta, normally within 30 minutes."
+   "The first stage runs from regular contractions to full dilation at 10 cm. It has a slow latent phase while the cervix softens and thins, then an **active phase** from 6 cm, when dilation speeds up. The second stage runs from full dilation to delivery of the baby. The third stage runs from the baby to the placenta, normally within 30 minutes."
   ],
   [
    "p",
-   "Slow labor is traced to the three Ps: power (contractions), passenger (the fetus) and passage (the pelvis). **Protraction** is dilation or descent slower than expected; arrest is none at all. First-stage arrest means no cervical change at 6 cm or more for 4 hours of adequate contractions with ruptured membranes, or 6 hours of inadequate contractions despite oxytocin. Second-stage arrest means no descent after 3 hours of pushing in a first labor or 2 hours in later labors, an hour longer with an epidural. Weak contractions get oxytocin; disproportion usually needs cesarean delivery."
+   "Slow labor is traced to the three Ps: power (contractions), passenger (the fetus) and passage (the pelvis). **Protraction** is dilation or descent slower than expected, and arrest is none at all. First-stage arrest means no cervical change at 6 cm or more after 4 hours of adequate contractions with ruptured membranes. Second-stage arrest means no descent after about 3 hours of pushing in a first labor. Weak contractions get oxytocin, while disproportion usually needs cesarean delivery."
   ],
   [
    "f",
    "rp28_stages"
-  ],
-  [
-   "t",
-   [
-    "Stage",
-    "From",
-    "To",
-    "Abnormal"
-   ],
-   [
-    [
-     "First, latent",
-     "Regular contractions",
-     "About 6 cm",
-     "Prolonged latent phase"
-    ],
-    [
-     "First, active",
-     "About 6 cm",
-     "Full dilation (10 cm)",
-     "Protraction, then arrest (4 hours)"
-    ],
-    [
-     "Second",
-     "Full dilation",
-     "Birth of the baby",
-     "Arrest after 3 hours of pushing (first labor)"
-    ],
-    [
-     "Third",
-     "Birth of the baby",
-     "Delivery of the placenta",
-     "Retained placenta after 30 minutes"
-    ]
-   ]
   ],
   [
    "h",
@@ -177,7 +142,7 @@
   ],
   [
    "p",
-   "Labor pain has two routes. First-stage contractions and dilation send visceral pain through sympathetic afferents to T10 to L1; second-stage stretching of the perineum sends somatic pain through the pudendal nerve to S2 to S4. An **epidural** covers both routes, but its sympathetic block can drop blood pressure, especially when she lies supine and the uterus compresses the vena cava (aortocaval compression); a left lateral tilt and IV fluids help."
+   "Labor pain has two routes. First-stage contractions and dilation send visceral pain through sympathetic nerves to T10 to L1. Second-stage stretching of the perineum sends somatic pain through the pudendal nerve to S2 to S4. An **epidural** covers both routes. Its sympathetic block can drop blood pressure, especially when she lies supine and the uterus compresses the vena cava (aortocaval compression). Uterine blood flow follows maternal pressure, so hypotension can also slow the fetal heart rate. A left lateral tilt and IV fluids help."
   ],
   [
    "t",
@@ -189,13 +154,8 @@
    [
     [
      "Systemic **opioid**",
-     "Easy to give; dulls pain",
+     "Dulls pain; easy to give",
      "Crosses the placenta: neonatal respiratory depression"
-    ],
-    [
-     "Nitrous oxide",
-     "Self-administered with oxygen",
-     "Nausea; only modest relief, no neonatal depression"
     ],
     [
      "Epidural",
@@ -204,13 +164,8 @@
     ],
     [
      "**Pudendal block**",
-     "Perineum, near the ischial spine",
+     "Perineum, injected near the ischial spine",
      "Leaves uterine pain untouched"
-    ],
-    [
-     "Local anesthetic infiltration",
-     "Perineum for repair",
-     "Brief; toxic if injected into a vessel"
     ]
    ]
   ],
@@ -220,11 +175,11 @@
   ],
   [
    "p",
-   "The four **Leopold maneuvers** palpate which fetal part fills the fundus, where the back and small parts lie, what presents over the pelvic inlet and whether it has engaged. Lie is the fetal long axis against the mother's: longitudinal, **transverse lie** or oblique. Presentation is the part entering the pelvis first: a vertex, the flexed head with the occiput leading, in about 96 percent of term babies, or a breech."
+   "The four **Leopold maneuvers** palpate the fetus through the abdomen. They show which part fills the fundus, where the back and small parts lie, what presents over the pelvic inlet and whether it has engaged. Lie is the fetal long axis against the mother's: longitudinal, **transverse lie** or oblique. Presentation is the part entering the pelvis first. Most term babies present vertex, the flexed head with the occiput leading. The alternative is a breech."
   ],
   [
    "p",
-   "About 3 to 4 percent of fetuses are still **breech** at term. In a **frank breech** the hips are flexed and the knees extended, the most common type. At 36 to 37 weeks an external cephalic version, turning the fetus head-down through the abdomen under a tocolytic, can be offered; placenta previa, ruptured membranes and fetal compromise forbid it. If it fails or is declined, a planned cesarean is usually chosen because a vaginal breech birth risks entrapment of the head. A transverse lie that persists to labor also needs cesarean."
+   "In a **breech** presentation the buttocks or feet lead. In a **frank breech**, the most common type, the hips are flexed and the knees extended. Near term, an external cephalic version can turn the fetus head-down through the mother's abdomen. If it fails or is declined, a planned cesarean is usually chosen, because a vaginal breech birth risks entrapment of the head. A transverse lie that persists to labor also needs cesarean."
   ],
   [
    "h",
@@ -232,15 +187,15 @@
   ],
   [
    "p",
-   "External monitoring uses a **tocodynamometer**, a pressure sensor on the abdomen that shows how often the uterus contracts but not how strongly, and a Doppler ultrasound probe for the fetal heart rate. Internal monitoring needs ruptured membranes and an open cervix: a fetal scalp electrode reads the fetal ECG directly, and an intrauterine pressure catheter measures contraction strength. Before labor, a **non-stress test** is reactive when the heart rate accelerates at least 15/min for 15 seconds twice in 20 minutes, showing a well-oxygenated autonomic system."
+   "Monitoring can be external, with a **tocodynamometer** (which shows how often, not how strongly, the uterus contracts) and a Doppler probe. It can also be internal, with a scalp electrode and a pressure catheter, which need ruptured membranes. Before labor, a **non-stress test** is reactive when the heart rate accelerates at least 15/min for 15 seconds twice in 20 minutes, a sign of a well-oxygenated fetus."
   ],
   [
    "p",
-   "A {{rp28_bpp|biophysical profile}} adds four ultrasound items (breathing, movement, tone and amniotic fluid) to the non-stress test, each scored 0 or 2. The **amniotic fluid index**, the sum of the deepest pocket in each of four uterine quadrants, is normal at 5 to 25 cm; below 5 is oligohydramnios. These tests follow pregnancies at risk of stillbirth, such as growth restriction, hypertension and post-term gestation, and an abnormal result leads to induction or delivery."
+   "A {{rp28_bpp|biophysical profile}} adds four ultrasound items (breathing, movement, tone and amniotic fluid) to the non-stress test, each scored 0 or 2. An amniotic fluid index below 5 cm means oligohydramnios (too little fluid)."
   ],
   [
    "p",
-   "A reassuring tracing has a baseline of 110 to 160/min, moderate **variability** and accelerations. Decelerations are read against the contraction. **Early decelerations** mirror it because head compression triggers a vagal reflex, and they are benign. Variable decelerations are abrupt drops at any time from cord compression. **Late decelerations** reach their lowest point after the contraction peak, because a placenta with little reserve cannot supply enough oxygen while the contracting uterus squeezes off maternal flow. Recurrent lates with absent variability signal fetal acidemia and call for resuscitation (left lateral position, fluids, stopping oxytocin) and often delivery; a sinusoidal pattern signals severe fetal anemia."
+   "A reassuring tracing has a baseline of 110 to 160/min, moderate **variability** (beat-to-beat variation) and accelerations. Decelerations are read against the contraction. **Early decelerations** mirror it and are benign, because head compression triggers a vagal reflex. Variable decelerations are abrupt drops at any time from cord compression. **Late decelerations** reach their lowest point after the contraction peak, a sign of uteroplacental insufficiency. Recurrent lates with absent variability signal acid in the fetal blood (acidemia) and call for resuscitation and often delivery. A sinusoidal pattern signals severe fetal anemia."
   ],
   [
    "f",
@@ -249,7 +204,7 @@
   [
    "why",
    "Why does a late deceleration signal hypoxia while an early one does not?",
-   "An early deceleration is a vagal reflex to head compression: the heart slows in step with the squeeze and recovers as it ends, while oxygen delivery never falls. A late deceleration is a supply failure. Each contraction compresses the spiral arteries and pauses maternal flow into the placenta; a healthy placenta bridges the pause, a failing one cannot, so fetal oxygen falls and chemoreceptors slow the heart only after the peak."
+   "An early deceleration is a vagal reflex to head compression. The heart slows in step with the squeeze and recovers as it ends, while oxygen delivery never falls. A late deceleration is a supply failure. Each contraction compresses the spiral arteries and pauses maternal blood flow into the placenta. A healthy placenta bridges the pause. A failing one cannot, so fetal oxygen falls and chemoreceptors slow the heart only after the peak."
   ],
   [
    "h",
@@ -266,7 +221,7 @@
      ],
      [
       "Descent and flexion",
-      "Contractions push the head down, and pelvic floor resistance tucks the chin onto the chest so the smallest diameter leads."
+      "Contractions push the head down, and pelvic floor resistance tucks the chin onto the chest, so the smallest diameter leads."
      ],
      [
       "Internal rotation",
@@ -289,41 +244,41 @@
   ],
   [
    "p",
-   "In **shoulder dystocia** the head is born but the anterior shoulder catches behind the pubic symphysis. Macrosomia, maternal diabetes and obesity are the main risks. The team hyperflexes the mother's hips (McRoberts maneuver) and presses above the pubis to free the shoulder, avoiding hard pulls on the head, because lateral traction stretches the brachial plexus. Stretching the upper trunk, C5 and C6, causes {{rp28_erb|Erb palsy}}: the arm hangs adducted and internally rotated with the elbow extended and the wrist flexed, the waiter's tip posture. Traction on an arm pulled above the head injures the lower trunk, C8 and T1, causing **Klumpke palsy**, a claw hand, sometimes with Horner syndrome."
+   "In **shoulder dystocia** the head is born but the anterior shoulder catches behind the pubic symphysis. The main risks are macrosomia (a very large baby), maternal diabetes and obesity. The McRoberts maneuver (hyperflexing the mother's hips) frees the shoulder, and hard pulls on the head are avoided because lateral traction stretches the brachial plexus. Stretching the upper trunk, C5 and C6, causes {{rp28_erb|Erb palsy}}. The arm hangs adducted and internally rotated with the elbow extended and the wrist flexed, the waiter's tip posture. Traction on an arm pulled above the head injures the lower trunk, C8 and T1. This causes **Klumpke palsy**, a claw hand, sometimes with Horner syndrome."
   ],
   [
    "p",
-   "In **cord prolapse** the umbilical cord slips below the presenting part after the membranes rupture, most often with a breech or transverse lie, polyhydramnios or an unengaged head. The presenting part squeezes the cord, so severe variable decelerations or bradycardia follow. The examiner lifts the presenting part off the cord, the mother kneels chest down, and emergency cesarean follows."
+   "In **cord prolapse** the umbilical cord slips below the presenting part after the membranes rupture. It is most likely with a breech or transverse lie, polyhydramnios or an unengaged head. The presenting part squeezes the cord, so severe variable decelerations or bradycardia follow. This is an emergency, and delivery is by emergency cesarean."
   ],
   [
    "p",
-   "Perineal tears are graded by the deepest structure torn. The perineal body is the central tendon where the **bulbospongiosus** and transverse perineal muscles meet the external anal sphincter. A third-degree tear is 3a (under half the external sphincter), 3b (more than half) or 3c (the **internal anal sphincter** too); a fourth-degree tear also crosses the rectal mucosa. Careful layered repair matters because a poorly healed sphincter causes fecal incontinence; a midline episiotomy extends into the sphincter more often than a mediolateral one."
+   "Perineal tears are graded by the deepest structure torn, as the table shows. The perineal body is the central tendon where the **bulbospongiosus** and transverse perineal muscles meet the external anal sphincter. Careful layered repair matters because a poorly healed sphincter causes fecal incontinence."
   ],
   [
    "t",
    [
-    "Degree of laceration",
+    "Laceration",
     "Deepest structure torn",
     "Main risk"
    ],
    [
     [
-     "First",
+     "First-degree",
      "Vaginal mucosa or perineal skin",
      "Minor discomfort"
     ],
     [
-     "Second",
+     "Second-degree",
      "Muscles of the **perineal body**",
      "Pain, painful intercourse"
     ],
     [
-     "Third",
-     "External anal sphincter (3c: internal sphincter too)",
+     "Third-degree",
+     "External anal sphincter, partial or complete (sometimes the internal sphincter too)",
      "Fecal incontinence"
     ],
     [
-     "Fourth",
+     "Fourth-degree",
      "Rectal mucosa",
      "Incontinence, rectovaginal fistula"
     ]
@@ -331,39 +286,11 @@
   ],
   [
    "h",
-   "How is the baby delivered by hand, and how does the placenta follow?"
-  ],
-  [
-   "steps",
-   [
-    "Delivering the baby and the placenta, in order",
-    [
-     [
-      "Control the head",
-      "As the head crowns, one hand slows its birth while the other presses forward on the perineum behind the anus, the modified **Ritgen** maneuver, to guide extension and spare the perineum."
-     ],
-     [
-      "Check the neck",
-      "Slip a finger around the neck. A loose **nuchal cord** is lifted over the head; a tight one is clamped twice and cut."
-     ],
-     [
-      "Deliver the shoulders",
-      "After restitution, gentle downward traction frees the **anterior shoulder** under the symphysis; upward traction frees the posterior shoulder."
-     ],
-     [
-      "Clamp and cut the cord",
-      "Wait 30 to 60 seconds before the **cord clamp**, so the newborn keeps extra blood and iron; then clamp twice, cut between the clamps and place the baby skin to skin."
-     ],
-     [
-      "Deliver the placenta",
-      "Wait for **placental separation**: a gush of blood, a lengthening cord and a firm, rising uterus. Then guide the placenta out and check that it is complete."
-     ]
-    ]
-   ]
+   "How does the placenta separate, and what can go wrong in the third stage?"
   ],
   [
    "p",
-   "The placenta shears away as the uterus contracts and shrinks its bed. A third stage beyond 30 minutes is retained placenta, from atony, a placenta trapped behind a closing cervix or an accreta; it needs manual removal, because the open bed bleeds and invites endometritis. **Uterine inversion** turns the fundus inside out through the cervix, classically from cord traction on a fundal placenta that has not separated. Sudden hemorrhage and vagal shock out of proportion to the blood lost follow, with a vaginal mass and no fundus felt abdominally. Traction stops, the uterus is pushed back up (nitroglycerin relaxes it) and oxytocin follows only after replacement."
+   "As the uterus contracts and shrinks, the placenta shears away from its bed. Signs of **placental separation** are a gush of blood, a lengthening cord and a firm, rising uterus. A third stage beyond 30 minutes is retained placenta, from {{rp28_atony|uterine atony}}, a placenta trapped behind a closing cervix or an accreta, a placenta that grows into the uterine wall. It needs manual removal, because the open bed bleeds and invites endometritis. **Uterine inversion** turns the fundus inside out through the cervix, classically from cord traction on a fundal placenta that has not separated. Sudden hemorrhage and vagal shock out of proportion to the blood lost follow, with a vaginal mass and no fundus felt abdominally. The uterus is pushed back up before oxytocin is given."
   ],
   [
    "h",
@@ -371,7 +298,7 @@
   ],
   [
    "p",
-   "A vaginal delivery normally loses about 500 mL of blood; postpartum hemorrhage is a cumulative loss of 1000 mL or more, or any loss with signs of hypovolemia, within 24 hours. Once the placenta separates, the open spiral arteries of its bed are closed mainly by the contracting myometrium, whose crisscrossing fibers act as living ligatures. That is why {{rp28_atony|uterine atony}}, a soft, boggy uterus, causes most hemorrhages. The other causes are trauma (lacerations, hematoma, inversion), tissue (retained placenta or accreta) and thrombin (coagulopathy). **Active management** of the third stage prevents many hemorrhages: oxytocin (Pitocin) given as the baby delivers, then controlled cord traction and uterine massage."
+   "A vaginal delivery normally loses about 500 mL of blood. Postpartum hemorrhage is a cumulative loss of 1000 mL or more, or any loss with signs of hypovolemia, within 24 hours. After the placenta separates, the contracting myometrium closes the open spiral arteries of its bed, because its crisscrossing fibers act as living ligatures. That is why uterine atony, a soft, boggy uterus, causes most hemorrhages. The other causes are trauma (lacerations, hematoma, inversion), tissue (retained placenta or accreta) and thrombin (coagulopathy). **Active management** of the third stage prevents many hemorrhages: oxytocin given as the baby delivers, then controlled cord traction and uterine massage."
   ],
   [
    "f",
@@ -381,7 +308,7 @@
    "call",
    "trap",
    "Check the contraindication before the second drug",
-   "If massage and oxytocin fail, the next drug depends on the mother. **Methylergonovine**, an ergot alkaloid, constricts vessels through alpha-adrenergic and serotonin receptors and can cause a hypertensive crisis, so it is avoided in hypertension and preeclampsia. **Carboprost**, a prostaglandin F2-alpha analog, constricts bronchi and is avoided in asthma. Misoprostol has neither limit."
+   "If massage and oxytocin fail, the next drug depends on the mother. **Methylergonovine**, an ergot alkaloid, constricts vessels through alpha-adrenergic and serotonin receptors and can cause a hypertensive crisis, so it is avoided in hypertension and preeclampsia. **Carboprost**, a prostaglandin F2-alpha analog, constricts bronchi and is avoided in asthma. Misoprostol has neither limit. Tranexamic acid, an antifibrinolytic, helps as an addition but does not make the uterus contract."
   ],
   [
    "h",
@@ -389,15 +316,15 @@
   ],
   [
    "p",
-   "Prolactin rises throughout pregnancy, but high placental estrogen and progesterone block its action on the breast. Delivery of the placenta lifts that block, and milk comes in over 2 to 3 days. Suckling then drives two reflexes: prolactin keeps alveolar cells making milk, and oxytocin contracts the **myoepithelial** cells around the alveoli, the {{rp28_letdown|let-down reflex}}. Suckling-driven prolactin also suppresses GnRH, causing **lactational amenorrhea**, which protects against pregnancy during exclusive nursing for up to 6 months. Breastfeeding is avoided with active untreated tuberculosis, certain drugs and infant galactosemia, because that infant cannot metabolize milk galactose; maternal HIV in the United States was a contraindication, though as of 2025 shared decision-making is accepted when viral load is suppressed."
+   "Prolactin rises throughout pregnancy, but high placental estrogen and progesterone block its action on the breast. Delivery of the placenta lifts that block, and milk comes in over 2 to 3 days. Suckling then drives two reflexes. Prolactin keeps the alveolar cells making milk. Oxytocin contracts the **myoepithelial** cells around the alveoli, the {{rp28_letdown|let-down reflex}}. Suckling-driven prolactin also suppresses GnRH, causing **lactational amenorrhea**, which protects against pregnancy during exclusive nursing for up to 6 months. Breastfeeding is avoided with active untreated tuberculosis, certain drugs and infant galactosemia, because that infant cannot metabolize milk galactose. Maternal HIV was a contraindication in the United States, although as of 2025 shared decision-making is accepted when viral load is suppressed."
   ],
   [
    "p",
-   "After delivery the uterus involutes, from the umbilicus to a pelvic organ in about 2 weeks and near its original size by 6 weeks. Lochia, the discharge from the healing placental site, turns from red to pinkish-brown to yellow-white over several weeks. Fever with a tender uterus and foul lochia suggests endometritis, most common after cesarean delivery. Mastitis, a red, tender wedge of breast with fever, is usually *Staphylococcus aureus* from the infant's mouth; treat with continued emptying and dicloxacillin. Pregnancy is hypercoagulable, so thromboembolism risk peaks after delivery. Postpartum thyroiditis (thyrotoxicosis, then hypothyroidism) and Sheehan syndrome (pituitary infarction after hemorrhage, with failure to lactate) can also follow."
+   "After delivery the uterus involutes, from the umbilicus to a pelvic organ in about 2 weeks and near its original size by 6 weeks. Lochia, the discharge from the healing placental site, turns from red to pinkish-brown to yellow-white over several weeks. Fever with a tender uterus and foul lochia suggests endometritis, most common after cesarean delivery. Mastitis, a red, tender wedge of breast with fever, is usually *Staphylococcus aureus* from the infant's mouth and is treated with continued emptying and dicloxacillin. Pregnancy is hypercoagulable, so thromboembolism risk peaks after delivery. Postpartum thyroiditis (thyrotoxicosis, then hypothyroidism) and Sheehan syndrome (pituitary infarction after hemorrhage, with failure to lactate) can also follow."
   ],
   [
    "p",
-   "Mood changes are graded by severity: postpartum blues affect most mothers and fade within 2 weeks; **postpartum depression** lasts longer and needs treatment; postpartum psychosis, with delusions or hallucinations, is an emergency for mother and infant."
+   "Mood changes are graded by severity. Postpartum blues affect most mothers and fade within 2 weeks. **Postpartum depression** lasts longer and needs treatment. Postpartum psychosis, with delusions or hallucinations, is an emergency for mother and infant."
   ],
   [
    "sexp",
@@ -411,7 +338,7 @@
      "Her other conditions decide, because ergots raise blood pressure and carboprost narrows airways"
     ],
     "a": 3,
-    "why": "Atony is a failure of contraction, so another uterotonic comes next, and each drug's receptors decide its side effects. Methylergonovine constricts vascular smooth muscle and can trigger a hypertensive crisis in preeclampsia; carboprost, a prostaglandin F2-alpha analog, constricts bronchial smooth muscle and can provoke bronchospasm in asthma. Tranexamic acid helps as an addition but does not make the uterus contract."
+    "why": "Atony is a failure of contraction, so another uterotonic comes next, and each drug's receptors decide its side effects. Methylergonovine constricts vascular smooth muscle and can trigger a hypertensive crisis in preeclampsia. Carboprost, a prostaglandin F2-alpha analog, constricts bronchial smooth muscle and can provoke bronchospasm in asthma. Tranexamic acid helps as an addition but does not make the uterus contract."
    }
   ],
   [

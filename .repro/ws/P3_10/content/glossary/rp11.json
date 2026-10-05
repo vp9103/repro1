@@ -2,7 +2,7 @@
  {
   "k": "rp11_estrone",
   "t": "Estrone",
-  "d": "The main estrogen after menopause, made when aromatase in fat tissue converts androstenedione from the adrenal glands and ovarian stroma. More body fat means more estrone and a higher endometrial cancer risk.",
+  "d": "A weak estrogen made when aromatase converts androstenedione, in granulosa cells before menopause and mainly in fat tissue after it. It is the main estrogen after menopause, so more body fat means more estrone and a higher endometrial cancer risk.",
   "alt": []
  },
  {
@@ -53,9 +53,7 @@
   "k": "rp11_unopposed",
   "t": "Unopposed estrogen",
   "d": "Estrogen without a progestogen in a woman with a uterus. It drives continuous endometrial growth, so hyperplasia and endometrial cancer follow. A progestogen turns the lining secretory and prevents this.",
-  "alt": [
-   "unopposed"
-  ]
+  "alt": []
  },
  {
   "k": "rp11_timing",

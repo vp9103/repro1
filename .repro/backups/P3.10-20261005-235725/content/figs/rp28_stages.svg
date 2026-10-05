@@ -1,0 +1,63 @@
+<svg class="dia" viewBox="0 0 900 500" role="img" aria-label="Cervical dilation over time through the latent phase, the active phase from 6 centimeters, the second and third stages, with protraction and arrest curves, beside the five parts of the Bishop score">
+<text class="ttl" x="14" y="26" font-size="17">Where progress is judged: the dilation curve and the Bishop score</text>
+<rect x="14" y="44" width="542" height="442" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="70" font-size="16">Cervical dilation through labor</text>
+<line x1="72" y1="120" x2="72" y2="330" stroke="var(--ink-3)" stroke-width="2"/>
+<line x1="72" y1="330" x2="546" y2="330" stroke="var(--ink-3)" stroke-width="2"/>
+<text x="64" y="126" font-size="13" text-anchor="end">10 cm</text>
+<text x="64" y="210" font-size="13" text-anchor="end">6 cm</text>
+<text x="64" y="334" font-size="13" text-anchor="end">0</text>
+<line x1="72" y1="120" x2="546" y2="120" stroke="var(--line-strong)" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="72" y1="204" x2="546" y2="204" stroke="var(--line-strong)" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="246" y1="120" x2="246" y2="342" stroke="var(--line-strong)" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="351" y1="120" x2="351" y2="342" stroke="var(--line-strong)" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="456" y1="120" x2="456" y2="342" stroke="var(--line-strong)" stroke-width="1" stroke-dasharray="4 4"/>
+<path d="M76 330 C 130 326, 200 300, 246 204 C 266 162, 300 126, 351 120 L 456 120" fill="none" stroke="var(--a2)" stroke-width="3.5"/>
+<path d="M246 204 C 300 190, 400 150, 500 122" fill="none" stroke="var(--warn)" stroke-width="3" stroke-dasharray="7 5"/>
+<path d="M246 204 L 540 204" fill="none" stroke="var(--crit)" stroke-width="3.5"/>
+<text x="84" y="196" font-size="13">Active phase from 6 cm</text>
+<text x="84" y="114" font-size="13">Full dilation at 10 cm</text>
+<text class="a2" x="252" y="164" font-size="13" text-anchor="end">Normal</text>
+<text class="wn" x="404" y="182" font-size="13">Protraction</text>
+<text class="cr" x="440" y="226" font-size="13">Arrest</text>
+<rect x="76" y="342" width="170" height="26" rx="4" fill="var(--surface-2)" stroke="var(--line)"/>
+<rect x="246" y="342" width="105" height="26" rx="4" fill="var(--a2-soft)" stroke="var(--a2)"/>
+<rect x="351" y="342" width="105" height="26" rx="4" fill="var(--a1-soft)" stroke="var(--a1)"/>
+<rect x="456" y="342" width="90" height="26" rx="4" fill="var(--warn-soft)" stroke="var(--warn)"/>
+<text x="92" y="360" font-size="13">Latent phase</text>
+<text x="256" y="360" font-size="13">Active</text>
+<text x="361" y="360" font-size="13">Pushing</text>
+<text x="466" y="360" font-size="13">Placenta</text>
+<line x1="76" y1="376" x2="346" y2="376" stroke="var(--ink-3)" stroke-width="2"/>
+<line x1="355" y1="376" x2="451" y2="376" stroke="var(--ink-3)" stroke-width="2"/>
+<line x1="460" y1="376" x2="546" y2="376" stroke="var(--ink-3)" stroke-width="2"/>
+<text class="b" x="76" y="396" font-size="13">First stage</text>
+<text class="b" x="355" y="396" font-size="13">Second stage</text>
+<text class="b" x="460" y="396" font-size="13">Third stage</text>
+<line x1="30" y1="420" x2="62" y2="420" stroke="var(--a2)" stroke-width="3.5"/>
+<text x="72" y="425" font-size="13.5">Normal: dilation speeds up from 6 cm</text>
+<line x1="30" y1="442" x2="62" y2="442" stroke="var(--warn)" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="72" y="447" font-size="13.5">Protraction: slower than expected</text>
+<line x1="30" y1="464" x2="62" y2="464" stroke="var(--crit)" stroke-width="3.5"/>
+<text x="72" y="469" font-size="13.5">Arrest: no change for 4 hours at 6 cm or more</text>
+<rect x="576" y="44" width="310" height="442" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="590" y="70" font-size="16">Bishop score, 0 to 13</text>
+<rect x="590" y="84" width="282" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)"/>
+<text class="b" x="602" y="106" font-size="14.5">Dilation</text>
+<text x="602" y="127" font-size="13.5">closed (0) to 5 cm or more (3)</text>
+<rect x="590" y="144" width="282" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)"/>
+<text class="b" x="602" y="166" font-size="14.5">Effacement</text>
+<text x="602" y="187" font-size="13.5">30% or less (0) to 80% or more (3)</text>
+<rect x="590" y="204" width="282" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)"/>
+<text class="b" x="602" y="226" font-size="14.5">Station</text>
+<text x="602" y="247" font-size="13.5">-3 (0) to +1 or +2 (3)</text>
+<rect x="590" y="264" width="282" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)"/>
+<text class="b" x="602" y="286" font-size="14.5">Consistency</text>
+<text x="602" y="307" font-size="13.5">firm (0), medium (1), soft (2)</text>
+<rect x="590" y="324" width="282" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)"/>
+<text class="b" x="602" y="346" font-size="14.5">Cervical position</text>
+<text x="602" y="367" font-size="13.5">posterior (0) to anterior (2)</text>
+<text class="gd" x="590" y="410" font-size="14">8 or more: induction likely to work</text>
+<text class="wn" x="590" y="436" font-size="14">Under 8: ripen the cervix first</text>
+<text x="590" y="466" font-size="13.5">Ripe cervix: open, thin, soft, low, forward</text>
+</svg>
