@@ -16,12 +16,12 @@
    "Rectouterine pouch"
   ],
   "a": 0,
-  "x": "Fertilization usually happens in the ampulla, the widest and longest part of the uterine tube, where capacitated sperm meet the oocyte within about a day of ovulation; the ampulla is also the commonest site of ectopic implantation.",
+  "x": "Fertilization usually happens in the ampulla, the widest and longest part of the uterine tube. Capacitated sperm meet the oocyte there within about a day of ovulation.",
   "w": {
-   "Isthmus of the uterine tube": "The isthmus is the narrow segment next to the uterus that the zygote passes through while cleaving, days after fertilization in the wider tube.",
-   "Uterine fundus": "The upper posterior uterine wall is the usual implantation site on about day 6, reached only after the zygote has become a blastocyst.",
-   "Infundibulum at the fimbriae": "The fimbriated infundibulum captures the ovulated oocyte and sweeps it inward; fertilization occurs a little deeper, once sperm arrive.",
-   "Rectouterine pouch": "The pouch of Douglas is a site of rare abdominal ectopic pregnancy, not the normal meeting place of sperm and oocyte."
+   "Isthmus of the uterine tube": "The isthmus is the narrow segment next to the uterus. The zygote passes through it days after fertilization, while it is cleaving.",
+   "Uterine fundus": "The uterine wall is where the blastocyst implants on about day 6, long after fertilization has taken place in the tube.",
+   "Infundibulum at the fimbriae": "The fimbriated infundibulum captures the ovulated oocyte and sweeps it into the tube. Fertilization happens a little deeper, once sperm arrive.",
+   "Rectouterine pouch": "The rectouterine pouch is a peritoneal recess behind the uterus, not the normal meeting place of sperm and oocyte."
   },
   "media": "fig:rp4_weeks",
   "pt": {
@@ -75,9 +75,9 @@
   "a": 0,
   "x": "The zygote cleaves to a morula by day 3 and becomes a blastocyst by day 5; after hatching from the zona pellucida it begins to implant at about day 6 and is fully embedded by about day 12.",
   "w": {
-   "Day 1": "Day 1 is the zygote stage just after fertilization, still in the ampulla and still wrapped in the zona pellucida, far from the uterus.",
-   "Day 3": "Day 3 is the morula stage, a solid ball of blastomeres that is only just reaching the uterine cavity and cannot implant yet.",
-   "Day 14": "By day 14 implantation is complete and the bilaminar disc is preparing for gastrulation; invasion began about a week earlier.",
+   "Day 1": "Day 1 is the zygote stage just after fertilization, still in the ampulla and still wrapped in the zona pellucida.",
+   "Day 3": "Day 3 is the morula stage, a solid ball of cells that is only just reaching the uterine cavity and cannot implant yet.",
+   "Day 14": "By day 14 implantation is complete and the bilaminar disc is preparing for gastrulation. Invasion began about a week earlier.",
    "Day 21": "Day 21 falls in week 3, when the trilaminar disc and neural plate form; implantation finished roughly nine days before."
   },
   "media": "fig:rp4_weeks",
@@ -108,10 +108,10 @@
   "a": 0,
   "x": "The syncytiotrophoblast is the outer, multinucleated layer that erodes the endometrium and maternal vessels and secretes hCG, which keeps the corpus luteum producing progesterone; the cytotrophoblast beneath it divides to supply new syncytium.",
   "w": {
-   "Cytotrophoblast": "The cytotrophoblast is the inner, mitotic layer; it feeds cells into the syncytium and forms villus cores but does not lead the invasion.",
-   "Hypoblast": "The hypoblast is the ventral layer of the bilaminar disc that lines the yolk sac; it belongs to the embryo side, not the trophoblast.",
-   "Epiblast": "The epiblast is the dorsal layer of the bilaminar disc that forms the amnion and all three germ layers; it secretes no hormone.",
-   "Extraembryonic mesoderm": "Extraembryonic mesoderm lines the trophoblast and forms the connective core and vessels of the villi, not their invasive endocrine surface."
+   "Cytotrophoblast": "The cytotrophoblast is the inner, dividing layer. It feeds cells into the syncytium and does not lead the invasion.",
+   "Hypoblast": "The hypoblast is the lower layer of the bilaminar disc that lines the yolk sac. It is part of the embryo, not the trophoblast.",
+   "Epiblast": "The epiblast is the upper layer of the bilaminar disc. It forms the amnion and all three germ layers and secretes no hormone.",
+   "Extraembryonic mesoderm": "Extraembryonic mesoderm lines the trophoblast and forms the connective core and vessels of the villi, not their invasive surface."
   },
   "media": "fig:rp4_weeks",
   "pt": {
@@ -142,7 +142,7 @@
   "w": {
    "Week 1": "Week 1 covers fertilization, cleavage to a morula and blastocyst formation, ending as implantation begins; there is no embryonic disc yet.",
    "Week 2": "Week 2 follows the rule of 2s, producing a bilaminar disc of epiblast and hypoblast; the third layer appears only in the next week.",
-   "Week 5": "By week 5 the germ layers already exist and organ primordia such as the limb buds and heart chambers are forming.",
+   "Week 5": "By week 5 the germ layers already exist and organs such as the limb buds and heart are forming.",
    "Week 8": "Week 8 ends the embryonic period of organogenesis; the fetal period of growth begins afterward, long after gastrulation."
   },
   "media": "fig:rp4_weeks",
@@ -174,8 +174,8 @@
   "w": {
    "Weeks 1 to 2": "The first two weeks are all-or-none: injured embryos are either lost or replace the damaged cells and develop normally.",
    "Weeks 9 to 12": "By week 9 the embryo has become a fetus with all organs formed; exposure now affects growth, brain maturation and organ function.",
-   "Weeks 20 to 28": "Mid-pregnancy exposure acts on organs that are already built, causing growth restriction or functional injury such as fetal renal damage.",
-   "Weeks 36 to 38": "Near term, drugs mainly cause acute fetal or neonatal effects such as withdrawal or ductal constriction rather than malformations."
+   "Weeks 20 to 28": "Mid-pregnancy exposure acts on organs that are already built. It causes growth restriction or loss of function, not malformations.",
+   "Weeks 36 to 38": "Near term, drugs mainly cause effects on the newborn, such as withdrawal, rather than malformations."
   },
   "media": "fig:rp4_weeks",
   "pt": {
@@ -300,11 +300,11 @@
    "Yolk sac"
   ],
   "a": 0,
-  "x": "The allantois grows from the hindgut into the connecting stalk; its intraembryonic part, the urachus, normally closes into the median umbilical ligament, so a patent urachus leaks urine from the bladder at the umbilicus.",
+  "x": "The allantois grows from the hindgut into the connecting stalk. Its lower part, the urachus, normally closes into the median umbilical ligament. A patent urachus leaks urine at the umbilicus, and a partly closed one can leave a cyst or sinus.",
   "w": {
-   "Vitelline duct": "The vitelline duct links the midgut to the yolk sac; a remnant forms a Meckel diverticulum or a fistula that drains stool.",
+   "Vitelline duct": "The vitelline duct links the midgut to the yolk sac. A remnant forms a Meckel diverticulum or a fistula that drains stool.",
    "Umbilical vein": "The umbilical vein carries oxygenated blood from the placenta and closes after birth into the ligamentum teres of the liver.",
-   "Cloaca": "The cloaca is the common hindgut chamber that the urorectal septum divides into the rectum and the urogenital sinus, below the umbilicus.",
+   "Cloaca": "The cloaca is the common end chamber of the embryonic hindgut, deep in the pelvis. It is not the structure that leaves a channel to the umbilicus.",
    "Yolk sac": "The yolk sac makes the first blood cells and primordial germ cells, and its stalk is the vitelline duct, not the urachus."
   },
   "media": "fig:rp4_origins",
@@ -336,7 +336,7 @@
   "x": "By day 6 the trophoblast has formed one chorion around the blastocyst, but the amnion has not yet appeared, so dividing the inner cell mass gives monochorionic diamniotic twins, the most common monozygotic pattern and the one at risk of twin-twin transfusion.",
   "w": {
    "Dichorionic diamniotic": "Two chorions require a split during days 0 to 4, before the trophoblast forms, and are also the pattern of every dizygotic pair.",
-   "Monochorionic monoamniotic": "A shared amnion requires a split at days 8 to 12, after the amnion has formed from the epiblast, with a risk of cord entanglement.",
+   "Monochorionic monoamniotic": "A shared amnion requires a split at days 8 to 12, after the amnion has formed from the epiblast.",
    "Conjoined twins": "Conjoined twins result from an incomplete split after about day 13, once the embryonic disc has started gastrulation.",
    "Dizygotic twins": "Dizygotic twins come from two oocytes and two sperm; they never share a zygote, so the timing of a split does not apply to them."
   },
@@ -400,7 +400,7 @@
   "a": 0,
   "x": "The large fetal zone of the fetal adrenal cortex secretes DHEA-S; the fetal liver hydroxylates it and the placenta aromatizes it to estriol, so low maternal estriol can signal fetal adrenal failure or anencephaly.",
   "w": {
-   "Fetal thyroid": "The fetal thyroid makes thyroxine from about 10 to 12 weeks for brain growth; it produces no androgen for the placenta.",
+   "Fetal thyroid": "The fetal thyroid makes thyroid hormone for brain growth. It produces no androgen for the placenta.",
    "Fetal kidney": "The fetal kidney makes the urine that becomes most amniotic fluid; it contributes no steroid precursor to the placenta.",
    "Fetal pituitary": "The fetal pituitary drives the adrenal through ACTH, which is why anencephaly lowers estriol, but it does not make DHEA-S itself.",
    "Fetal pancreas": "The fetal pancreas secretes insulin in response to maternal glucose that crosses the placenta, not androgen precursors."
@@ -426,16 +426,16 @@
    "Preeclampsia",
    "Placenta previa",
    "Placenta accreta",
-   "Vasa previa",
-   "Velamentous cord insertion"
+   "Placental abruption",
+   "Single umbilical artery"
   ],
   "a": 0,
   "x": "Normally trophoblast invades the spiral arteries and converts them into wide, low-resistance vessels; when remodeling fails they stay narrow, the placenta becomes ischemic and releases factors that injure maternal endothelium, producing preeclampsia and fetal growth restriction.",
   "w": {
-   "Placenta previa": "Placenta previa reflects where the blastocyst implanted, low in the uterus over the internal os; it causes painless bleeding, not hypertension.",
+   "Placenta previa": "Placenta previa means the placenta implanted low in the uterus over the cervix. It causes painless bleeding, not hypertension.",
    "Placenta accreta": "Accreta reflects too little decidua basalis, so villi invade too deeply into myometrium; the problem is excess attachment, not shallow invasion.",
-   "Vasa previa": "Vasa previa means fetal vessels run through the membranes over the cervix, so rupture of the membranes bleeds fetal blood.",
-   "Velamentous cord insertion": "A velamentous cord inserts into the membranes instead of the placental disc, leaving vessels unprotected by Wharton jelly."
+   "Placental abruption": "Abruption is early separation of the placenta from the uterine wall, which causes painful bleeding. It is not the direct result of failed spiral artery remodeling.",
+   "Single umbilical artery": "A single umbilical artery is a cord anomaly that marks a higher risk of renal and other anomalies. It does not come from failed spiral artery remodeling."
   },
   "media": "fig:rp27_spiral",
   "pt": {

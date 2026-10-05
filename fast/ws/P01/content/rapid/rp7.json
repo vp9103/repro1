@@ -1,10 +1,20 @@
 [
  {
   "id": "rp7r01",
-  "tags": ["hormone-timeline"],
-  "bp": ["BP-rp7-02"],
+  "tags": [
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp7-02"
+  ],
   "q": "What is usually the first sign of puberty in girls?",
-  "o": ["Thelarche", "Pubarche", "Menarche", "Adrenarche", "Peak height velocity"],
+  "o": [
+   "Thelarche",
+   "Pubarche",
+   "Menarche",
+   "Adrenarche",
+   "Peak height velocity"
+  ],
   "a": 0,
   "x": "Thelarche, the estrogen-driven breast bud, usually comes first at about age 10; pubic hair follows within months, and menarche arrives 2 to 3 years later.",
   "w": {
@@ -15,18 +25,30 @@
   },
   "media": "fig:rp7_sequence",
   "pt": {
-   "hl": ["Thelarche (breast bud)"],
+   "hl": [
+    "Thelarche (breast bud)"
+   ],
    "say": "In the girls panel, the thelarche bar starts first; pubarche, the growth spurt peak and menarche follow."
   }
  },
  {
   "id": "rp7r02",
-  "tags": ["diagnostic-cutoffs"],
-  "bp": ["BP-rp7-09"],
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp7-09"
+  ],
   "q": "What testicular volume marks the onset of puberty in boys?",
-  "o": ["4 mL", "1 mL", "10 mL", "15 mL", "25 mL"],
+  "o": [
+   "4 mL",
+   "1 mL",
+   "10 mL",
+   "15 mL",
+   "25 mL"
+  ],
   "a": 0,
-  "x": "A testicular volume of 4 mL or more, or a length of at least 2.5 cm, marks gonadarche in boys, because FSH and LH have begun enlarging the seminiferous tubules.",
+  "x": "A testicular volume of 4 mL or more marks gonadarche in boys, because FSH and LH have begun enlarging the seminiferous tubules.",
   "w": {
    "1 mL": "One to three milliliters is the normal prepubertal range, so a testis this small shows that puberty has not begun.",
    "10 mL": "A testis of this size is already well into puberty, around genital stage 3 to 4, not at its first sign.",
@@ -35,36 +57,61 @@
   },
   "media": "fig:rp7_sequence",
   "pt": {
-   "hl": ["Testicular enlargement to 4 mL"],
+   "hl": [
+    "Testicular enlargement to 4 mL"
+   ],
    "say": "The first bar in the boys panel is testicular enlargement to 4 mL, the size that marks the start of puberty."
   }
  },
  {
   "id": "rp7r03",
-  "tags": ["pulsatile-signaling"],
-  "bp": ["BP-rp7-01"],
+  "tags": [
+   "pulsatile-signaling"
+  ],
+  "bp": [
+   "BP-rp7-01"
+  ],
   "q": "Which hypothalamic neuropeptide drives GnRH pulses at the onset of puberty?",
-  "o": ["Kisspeptin", "Leptin", "GABA", "Neuropeptide Y", "Ghrelin"],
+  "o": [
+   "Kisspeptin",
+   "Leptin",
+   "Dopamine",
+   "Somatostatin",
+   "Ghrelin"
+  ],
   "a": 0,
-  "x": "Kisspeptin neurons stimulate GnRH neurons through the kisspeptin receptor and restart pulsatile GnRH at puberty; loss-of-function mutations block puberty and gain-of-function mutations cause central precocious puberty.",
+  "x": "Kisspeptin neurons stimulate GnRH neurons and restart pulsatile GnRH at puberty. Leptin is only permissive, telling the brain that energy stores can support reproduction.",
   "w": {
    "Leptin": "Leptin comes from fat and is permissive: it signals adequate energy stores and acts partly through kisspeptin neurons, but it is not the direct driver.",
-   "GABA": "This inhibitory transmitter restrains GnRH neurons during childhood, so its tone must fall, rather than rise, for puberty to start.",
-   "Neuropeptide Y": "This peptide rises in energy deficit and inhibits the reproductive axis, which helps explain delayed puberty in undernutrition.",
+   "Dopamine": "Dopamine inhibits prolactin release from the pituitary. It is not the driver of GnRH pulses at puberty.",
+   "Somatostatin": "Somatostatin inhibits growth hormone and other pituitary hormones. It does not start GnRH pulses.",
    "Ghrelin": "Ghrelin is a stomach hormone that signals hunger and tends to suppress, not start, GnRH secretion."
   },
   "media": "fig:rp7_engines",
   "pt": {
-   "hl": ["Kisspeptin neurons drive the GnRH pulse generator"],
+   "hl": [
+    "Kisspeptin neurons drive the GnRH pulse generator"
+   ],
    "say": "The top box of the gonadarche engine shows kisspeptin neurons driving the GnRH pulse generator, with leptin permissive; pulsatile GnRH then releases LH and FSH."
   }
  },
  {
   "id": "rp7r04",
-  "tags": ["hormone-source", "hormone-timeline"],
-  "bp": ["BP-rp7-01"],
+  "tags": [
+   "hormone-source",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp7-01"
+  ],
   "q": "Which adrenal androgen rises at adrenarche?",
-  "o": ["DHEA-S", "Dihydrotestosterone", "Estradiol", "Cortisol", "Aldosterone"],
+  "o": [
+   "DHEA-S",
+   "Dihydrotestosterone",
+   "Estradiol",
+   "Cortisol",
+   "Aldosterone"
+  ],
   "a": 0,
   "x": "DHEA-S rises as the zona reticularis matures around ages 6 to 8 under ACTH, independent of GnRH; it causes pubic and axillary hair, body odor and mild acne.",
   "w": {
@@ -75,36 +122,61 @@
   },
   "media": "fig:rp7_engines",
   "pt": {
-   "hl": ["ACTH drives DHEA-S"],
+   "hl": [
+    "ACTH drives DHEA-S"
+   ],
    "say": "The adrenal engine runs on ACTH, which drives DHEA-S from the maturing zona reticularis; it causes pubic and axillary hair, odor and acne without breast or testis growth."
   }
  },
  {
   "id": "rp7r05",
-  "tags": ["diagnostic-cutoffs"],
-  "bp": ["BP-rp7-09"],
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp7-09"
+  ],
   "q": "Breast development before what age defines precocious puberty in girls?",
-  "o": ["8 years", "6 years", "10 years", "11 years", "13 years"],
+  "o": [
+   "8 years",
+   "6 years",
+   "10 years",
+   "11 years",
+   "13 years"
+  ],
   "a": 0,
   "x": "Pubertal signs before 8 years in girls, or before 9 years in boys, define precocious puberty, so a 7-year-old with breast buds needs evaluation while a 9-year-old usually does not.",
   "w": {
-   "6 years": "Age 6 marks urgency within precocious puberty: central puberty starting before then most clearly threatens adult height and warrants treatment.",
+   "6 years": "Age 6 is younger than the cutoff of 8, so it would miss girls whose breast buds appear between 6 and 8.",
    "10 years": "Ten is the average age of thelarche, so breast buds at that age are entirely normal.",
    "11 years": "Breast development at 11 is well within the normal range; it is neither early nor late.",
    "13 years": "Thirteen is the cutoff for delayed puberty in girls: no breast development by then warrants evaluation."
   },
   "media": "fig:rp7_precocious",
   "pt": {
-   "hl": ["Signs before age 8 in girls or age 9 in boys"],
+   "hl": [
+    "Signs before age 8 in girls or age 9 in boys"
+   ],
    "say": "The top box states the cutoff: signs before age 8 in girls, or 9 years in boys, define precocious puberty."
   }
  },
  {
   "id": "rp7r06",
-  "tags": ["hormone-actions", "hormone-synthesis"],
-  "obj": ["BICEP-WALSH.5"],
+  "tags": [
+   "hormone-actions",
+   "hormone-synthesis"
+  ],
+  "obj": [
+   "BICEP-WALSH.5"
+  ],
   "q": "Which hormone fuses the epiphyseal growth plates in both sexes?",
-  "o": ["Estrogen", "Testosterone", "Growth hormone", "IGF-1", "DHEA-S"],
+  "o": [
+   "Estrogen",
+   "Testosterone",
+   "Growth hormone",
+   "IGF-1",
+   "DHEA-S"
+  ],
   "a": 0,
   "x": "Estrogen fuses the growth plates in both sexes; boys make it by aromatizing testosterone, which is why men lacking aromatase or the estrogen receptor stay tall with open epiphyses.",
   "w": {
@@ -115,16 +187,29 @@
   },
   "media": "fig:rp7_engines",
   "pt": {
-   "hl": ["Estrogen fuses the growth plates"],
+   "hl": [
+    "Estrogen fuses the growth plates"
+   ],
    "say": "The Both card states that estrogen fuses the growth plates in both sexes; boys make it by aromatizing testosterone."
   }
  },
  {
   "id": "rp7r07",
-  "tags": ["pulsatile-signaling", "drug-mechanism"],
-  "bp": ["BP-rp7-04"],
+  "tags": [
+   "pulsatile-signaling",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp7-04"
+  ],
   "q": "What is the treatment of central precocious puberty?",
-  "o": ["Continuous GnRH agonist", "Pulsatile GnRH", "Aromatase inhibitor", "Growth hormone", "Spironolactone"],
+  "o": [
+   "Continuous GnRH agonist",
+   "Pulsatile GnRH",
+   "Aromatase inhibitor",
+   "Growth hormone",
+   "Spironolactone"
+  ],
   "a": 0,
   "x": "A continuous GnRH agonist such as depot leuprolide first stimulates, then downregulates pituitary GnRH receptors, so LH, FSH and sex steroids fall, puberty stops and adult height is protected.",
   "w": {
@@ -135,38 +220,62 @@
   },
   "media": "fig:rp7_precocious",
   "pt": {
-   "hl": ["Treat: continuous GnRH agonist"],
+   "hl": [
+    "Treat: continuous GnRH agonist"
+   ],
    "say": "The last line of the central column names the treatment: a continuous GnRH agonist, which downregulates the pituitary receptors."
   }
  },
  {
   "id": "rp7r08",
-  "tags": ["receptor-signaling"],
-  "bp": ["BP-rp7-05"],
+  "tags": [
+   "receptor-signaling"
+  ],
+  "bp": [
+   "BP-rp7-05"
+  ],
   "q": "Which mutation causes McCune-Albright syndrome?",
-  "o": ["Activating GNAS mutation", "Inactivating NF1 mutation", "Activating LH receptor mutation", "Activating KISS1R mutation", "Inactivating CYP21A2 mutation"],
+  "o": [
+   "Activating GNAS mutation",
+   "Inactivating NF1 mutation",
+   "Activating LH receptor mutation",
+   "Androgen receptor mutation",
+   "Inactivating 21-hydroxylase mutation"
+  ],
   "a": 0,
   "x": "A postzygotic activating GNAS mutation keeps the Gs alpha protein on in a mosaic of cells, causing autonomous ovarian estrogen, café-au-lait macules with jagged borders and polyostotic fibrous dysplasia.",
   "w": {
    "Inactivating NF1 mutation": "Neurofibromatosis type 1 causes smooth-bordered café-au-lait macules and neurofibromas, and its precocious puberty is central, from optic gliomas.",
-   "Activating LH receptor mutation": "This change causes familial male-limited precocious puberty in boys, without skin or bone lesions.",
-   "Activating KISS1R mutation": "Gain of function in the kisspeptin receptor causes central precocious puberty with high LH, not peripheral puberty with skin findings.",
-   "Inactivating CYP21A2 mutation": "Loss of this gene causes 21-hydroxylase deficiency, an adrenal cause of peripheral puberty with androgen excess rather than estrogen."
+   "Activating LH receptor mutation": "This change causes familial testotoxicosis in boys, without skin or bone lesions.",
+   "Androgen receptor mutation": "Androgen receptor mutations cause androgen insensitivity in a 46,XY person, not precocious puberty with skin and bone lesions.",
+   "Inactivating 21-hydroxylase mutation": "Loss of 21-hydroxylase causes an adrenal form of peripheral puberty from androgen excess, not estrogen."
   },
   "media": "fig:rp7_precocious",
   "pt": {
-   "hl": ["McCune-Albright (GNAS)"],
+   "hl": [
+    "McCune-Albright (GNAS)"
+   ],
    "say": "The peripheral column lists McCune-Albright (GNAS): an activating GNAS mutation makes ovarian cysts secrete estrogen on their own."
   }
  },
  {
   "id": "rp7r09",
-  "tags": ["hormone-source"],
-  "bp": ["BP-rp7-04"],
+  "tags": [
+   "hormone-source"
+  ],
+  "bp": [
+   "BP-rp7-04"
+  ],
   "q": "Which brain lesion classically causes central precocious puberty in young boys?",
-  "o": ["Hypothalamic hamartoma", "Craniopharyngioma", "Prolactinoma", "Pineal germinoma", "Medulloblastoma"],
+  "o": [
+   "Hypothalamic hamartoma",
+   "Craniopharyngioma",
+   "Prolactinoma",
+   "Pineal germinoma",
+   "Medulloblastoma"
+  ],
   "a": 0,
-  "x": "A hypothalamic hamartoma contains its own GnRH neurons and fires GnRH pulses early, so LH is pubertal; it often appears before age 4 and can cause laughing seizures.",
+  "x": "A hypothalamic hamartoma contains its own GnRH neurons and fires GnRH pulses early, so LH is pubertal. It can cause laughing seizures.",
   "w": {
    "Craniopharyngioma": "This sellar tumor compresses the pituitary and stalk and usually delays puberty, with growth failure and visual loss.",
    "Prolactinoma": "Prolactin excess suppresses GnRH and delays puberty or causes amenorrhea; these tumors are rare in young children.",
@@ -175,16 +284,28 @@
   },
   "media": "fig:rp7_precocious",
   "pt": {
-   "hl": ["Boys: hamartoma, CNS lesion"],
+   "hl": [
+    "Boys: hamartoma, CNS lesion"
+   ],
    "say": "The central column notes that boys often have a lesion, classically a hypothalamic hamartoma that makes its own GnRH pulses."
   }
  },
  {
   "id": "rp7r10",
-  "tags": ["normal-vs-pathologic"],
-  "bp": ["BP-rp7-06"],
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp7-06"
+  ],
   "q": "What is the most common cause of delayed puberty?",
-  "o": ["Constitutional delay", "Kallmann syndrome", "Turner syndrome", "Klinefelter syndrome", "Anorexia nervosa"],
+  "o": [
+   "Constitutional delay",
+   "Kallmann syndrome",
+   "Turner syndrome",
+   "Klinefelter syndrome",
+   "Anorexia nervosa"
+  ],
   "a": 0,
   "x": "Constitutional delay of growth and puberty is the most common cause, especially in boys: a healthy, short child with a delayed bone age and often a late-maturing parent, whose puberty starts on its own.",
   "w": {
@@ -195,16 +316,28 @@
   },
   "media": "fig:rp7_delayed",
   "pt": {
-   "hl": ["Constitutional delay: the most common cause"],
+   "hl": [
+    "Constitutional delay: the most common cause"
+   ],
    "say": "The first card on the low LH and FSH side is constitutional delay, labeled the most common cause: a healthy, short child with a delayed bone age and often a late-maturing parent."
   }
  },
  {
   "id": "rp7r11",
-  "tags": ["feedback-logic"],
-  "bp": ["BP-rp7-06"],
+  "tags": [
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-rp7-06"
+  ],
   "q": "What LH and FSH pattern marks hypergonadotropic hypogonadism?",
-  "o": ["High LH and FSH, low sex steroids", "Low LH and FSH, low sex steroids", "Low LH and FSH, high sex steroids", "High LH and FSH, high sex steroids", "Normal LH and FSH, high prolactin"],
+  "o": [
+   "High LH and FSH, low sex steroids",
+   "Low LH and FSH, low sex steroids",
+   "Low LH and FSH, high sex steroids",
+   "High LH and FSH, high sex steroids",
+   "Normal LH and FSH, high prolactin"
+  ],
   "a": 0,
   "x": "High LH and FSH with low sex steroids mean the gonads have failed and the pituitary is pushing against absent feedback, as in Turner syndrome or Klinefelter syndrome; a karyotype comes next.",
   "w": {
@@ -215,18 +348,33 @@
   },
   "media": "fig:rp6_sexchrom",
   "pt": {
-   "hl": ["Both: hypergonadotropic hypogonadism", "Primary amenorrhea, FSH and LH high"],
+   "hl": [
+    "Both: hypergonadotropic hypogonadism",
+    "Primary amenorrhea, FSH and LH high"
+   ],
    "say": "The bottom band names hypergonadotropic hypogonadism, and both panels show why: failed gonads send no feedback, so FSH and LH are high."
   }
  },
  {
   "id": "rp7r12",
-  "tags": ["workup-sequence", "normal-vs-pathologic"],
-  "bp": ["BP-rp7-06", "BP-rp7-08"],
+  "tags": [
+   "workup-sequence",
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp7-06",
+   "BP-rp7-08"
+  ],
   "q": "What does the bone age show in constitutional delay of puberty?",
-  "o": ["Delayed by about 2 years", "Advanced by about 2 years", "Equal to chronologic age", "Advanced by 4 years", "Growth plates already fused"],
+  "o": [
+   "Delayed by about 2 years",
+   "Advanced by about 2 years",
+   "Equal to chronologic age",
+   "Advanced by 4 years",
+   "Growth plates already fused"
+  ],
   "a": 0,
-  "x": "Bone age is delayed by about 2 years, matching the child's height age; because the growth plates stay open longer, growth continues later and adult height reaches the low-normal range.",
+  "x": "Bone age is delayed by about 2 years, matching the child's height age, because the whole pubertal clock runs late and the growth plates stay open longer.",
   "w": {
    "Advanced by about 2 years": "An advanced skeleton reflects early sex steroid exposure, as in precocious puberty, the opposite of a slow clock.",
    "Equal to chronologic age": "A skeleton matching the calendar fits a normal child or premature thelarche, not a lag of the whole pubertal clock.",
@@ -235,16 +383,28 @@
   },
   "media": "fig:rp7_delayed",
   "pt": {
-   "hl": ["Bone age delayed about 2 years"],
+   "hl": [
+    "Bone age delayed about 2 years"
+   ],
    "say": "The constitutional delay card lists a bone age delayed about 2 years, so low LH and FSH are normal for that bone age and puberty starts on its own."
   }
  },
  {
   "id": "rp7r13",
-  "tags": ["normal-vs-pathologic"],
-  "bp": ["BP-rp7-07"],
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp7-07"
+  ],
   "q": "What distinguishes premature thelarche from central precocious puberty?",
-  "o": ["Normal growth velocity and bone age", "Pubertal basal LH", "Advanced bone age", "Vaginal bleeding", "Rapidly enlarging breasts"],
+  "o": [
+   "Normal growth velocity and bone age",
+   "Pubertal basal LH",
+   "Advanced bone age",
+   "Vaginal bleeding",
+   "Rapidly enlarging breasts"
+  ],
   "a": 0,
   "x": "Premature thelarche is isolated breast budding with normal growth velocity, a bone age near chronologic age and prepubertal LH; central puberty adds a growth spurt, an advancing bone age and pubertal LH.",
   "w": {
@@ -255,16 +415,29 @@
   },
   "media": "fig:rp7_precocious",
   "pt": {
-   "hl": ["No growth acceleration", "Bone age near normal"],
+   "hl": [
+    "No growth acceleration",
+    "Bone age near normal"
+   ],
    "say": "The normal-variant column lists no growth acceleration and bone age near normal, the features that separate premature thelarche from central puberty."
   }
  },
  {
   "id": "rp7r14",
-  "tags": ["normal-vs-pathologic"],
-  "bp": ["BP-rp7-07"],
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp7-07"
+  ],
   "q": "Which pubertal change in a boy is a normal variant that usually resolves?",
-  "o": ["Tender breast enlargement", "Enlargement of one testis", "Galactorrhea", "Pubic hair at age 6", "Testes under 4 mL at 15"],
+  "o": [
+   "Tender breast enlargement",
+   "Enlargement of one testis",
+   "Galactorrhea",
+   "Pubic hair at age 6",
+   "Testes under 4 mL at 15"
+  ],
   "a": 0,
   "x": "Tender breast enlargement, pubertal gynecomastia, affects about half of boys in mid-puberty because estradiol briefly rises faster than testosterone; it usually resolves within one to two years.",
   "w": {
@@ -275,7 +448,9 @@
   },
   "media": "fig:rp7_engines",
   "pt": {
-   "hl": ["Pubertal gynecomastia: tender, transient"],
+   "hl": [
+    "Pubertal gynecomastia: tender, transient"
+   ],
    "say": "The last card of the gonadarche panel describes tender pubertal gynecomastia in mid-puberty as transient: estradiol briefly outruns testosterone, so it needs only reassurance."
   }
  }

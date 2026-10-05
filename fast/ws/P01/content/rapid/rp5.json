@@ -11,17 +11,17 @@
   "o": [
    "SRY",
    "SOX9",
-   "DAX1",
-   "WNT4",
+   "AMH gene",
+   "5α-reductase gene",
    "Androgen receptor gene"
   ],
   "a": 0,
-  "x": "SRY, the sex-determining region on the short arm of the Y chromosome, encodes testis-determining factor, which switches on SOX9 and makes the supporting cells of the indifferent gonad become Sertoli cells.",
+  "x": "SRY, the sex-determining region of the Y chromosome, encodes testis-determining factor. It switches on SOX9 and makes the supporting cells of the gonad become Sertoli cells.",
   "w": {
-   "SOX9": "SOX9 is the autosomal gene on chromosome 17 that SRY switches on; it carries out testis formation but sits downstream, not on the Y.",
-   "DAX1": "DAX1 lies on the X chromosome and opposes testis formation when duplicated; it is an antagonist of the male pathway, not its trigger.",
-   "WNT4": "WNT4 is an autosomal gene that promotes ovarian development and Müllerian duct formation, pushing the gonad toward the female path.",
-   "Androgen receptor gene": "The androgen receptor gene is on the X chromosome and acts after the testis exists, when target tissues respond to testosterone and DHT."
+   "SOX9": "SOX9 is an autosomal gene that SRY switches on. It carries out testis formation but sits downstream, not on the Y chromosome.",
+   "AMH gene": "The AMH gene is an autosomal gene that SOX9 switches on in Sertoli cells. It acts after testis development has begun, not at the start.",
+   "5α-reductase gene": "The 5α-reductase gene makes the enzyme that converts testosterone to DHT. It acts after the testis exists and does not start testis development.",
+   "Androgen receptor gene": "The androgen receptor gene is on the X chromosome. It acts after the testis exists, when target tissues respond to testosterone and DHT."
   },
   "media": "fig:rp5_ducts",
   "pt": {
@@ -45,16 +45,16 @@
    "Sertoli cells",
    "Leydig cells",
    "Spermatogonia",
-   "Peritubular myoid cells",
-   "Rete testis epithelium"
+   "Granulosa cells",
+   "Theca cells"
   ],
   "a": 0,
-  "x": "Sertoli cells, the first cells SRY creates, secrete anti-Müllerian hormone from about week 8, making the Müllerian duct on the same side regress; they also nurse germ cells inside the seminiferous cords.",
+  "x": "Sertoli cells, the first cells SRY creates, secrete anti-Müllerian hormone from about week 8, making the Müllerian duct on the same side regress. They also support the germ cells inside the testis cords.",
   "w": {
    "Leydig cells": "Leydig cells in the interstitium secrete testosterone under hCG stimulation, which keeps the Wolffian ducts but does not remove the Müllerian ducts.",
-   "Spermatogonia": "Spermatogonia come from primordial germ cells that migrated from the yolk sac; they are gametes in waiting and secrete no duct hormone.",
-   "Peritubular myoid cells": "Peritubular myoid cells are contractile cells around the seminiferous cords that help move fluid and sperm; they make no AMH.",
-   "Rete testis epithelium": "The rete testis is a channel network linking the seminiferous tubules to the efferent ductules; its lining secretes no hormone that shapes ducts."
+   "Spermatogonia": "Spermatogonia come from primordial germ cells that migrated in from the yolk sac. They are future gametes and secrete no duct hormone.",
+   "Granulosa cells": "Granulosa cells are the ovarian counterpart of Sertoli cells. They are not in the fetal testis, and the fetal ovary makes little AMH.",
+   "Theca cells": "Theca cells surround ovarian follicles and supply androgens. They are not in the fetal testis and make no AMH."
   },
   "media": "fig:rp5_ducts",
   "pt": {
@@ -86,7 +86,7 @@
    "Dihydrotestosterone": "DHT builds the penis, scrotum and prostate; 5α-reductase deficiency leaves normal Wolffian ducts, proving that testosterone alone is enough for them.",
    "Anti-Müllerian hormone": "AMH removes the Müllerian ducts but does nothing to maintain the Wolffian ducts, which regress without androgen even when AMH is present.",
    "Estradiol": "Estradiol is not needed for duct development in either sex; the female ducts develop simply because AMH and testosterone are absent.",
-   "Inhibin B": "Inhibin B from Sertoli cells feeds back on pituitary FSH after birth; it has no role in maintaining fetal genital ducts."
+   "Inhibin B": "Inhibin B from Sertoli cells feeds back on pituitary FSH after birth. It plays no part in keeping the fetal genital ducts."
   },
   "media": "fig:rp5_ducts",
   "pt": {
@@ -113,12 +113,12 @@
    "Desmolase"
   ],
   "a": 0,
-  "x": "5α-reductase (type 2) converts testosterone to the more potent DHT in the genital tubercle, folds, swellings and urogenital sinus, so its deficiency leaves a 46,XY infant undervirilized with normal Wolffian ducts.",
+  "x": "5α-reductase converts testosterone to the more potent DHT in the genital tubercle, folds, swellings and urogenital sinus. Its deficiency leaves a 46,XY infant undervirilized with normal Wolffian ducts.",
   "w": {
-   "Aromatase": "Aromatase converts testosterone to estradiol and androstenedione to estrone in fat, placenta and granulosa cells, lowering rather than raising androgen potency.",
-   "17β-hydroxysteroid dehydrogenase": "17β-HSD makes testosterone from androstenedione in Leydig cells, one step before the conversion that genital skin performs.",
-   "21-hydroxylase": "21-hydroxylase is an adrenal enzyme needed for cortisol and aldosterone; its deficiency causes congenital adrenal hyperplasia.",
-   "Desmolase": "Desmolase (cholesterol side-chain cleavage) is the first step of all steroid synthesis, converting cholesterol to pregnenolone in mitochondria."
+   "Aromatase": "Aromatase converts testosterone to estradiol. It lowers androgen potency instead of raising it.",
+   "17β-hydroxysteroid dehydrogenase": "17β-hydroxysteroid dehydrogenase makes testosterone from androstenedione in Leydig cells, one step before the conversion that genital skin performs.",
+   "21-hydroxylase": "21-hydroxylase is an adrenal enzyme needed for cortisol and aldosterone. Its deficiency causes congenital adrenal hyperplasia.",
+   "Desmolase": "Desmolase (cholesterol side-chain cleavage) is the first step of all steroid synthesis, converting cholesterol to pregnenolone."
   },
   "media": "fig:rp5_ducts",
   "pt": {
@@ -178,12 +178,12 @@
    "Fallopian tube"
   ],
   "a": 0,
-  "x": "The fused Müllerian ducts form the tubes, uterus, cervix and upper vagina, while the sinovaginal bulbs of the endodermal urogenital sinus form the lower vagina; the two meet at the vaginal plate, which canalizes.",
+  "x": "The fused Müllerian ducts form the tubes, uterus, cervix and upper vagina, while the endodermal urogenital sinus forms the lower vagina. The two meet at the vaginal plate, which hollows out.",
   "w": {
-   "Upper vagina": "The upper vagina comes from the fused caudal ends of the Müllerian ducts, together with the cervix, above the vaginal plate.",
-   "Cervix": "The cervix forms from the fused lower Müllerian ducts, which is why cervical duplication accompanies complete fusion failure in didelphys.",
-   "Uterine fundus": "The fundus forms where the Müllerian ducts fuse highest; incomplete fusion there produces a bicornuate uterus.",
-   "Fallopian tube": "The fallopian tubes are the unfused cranial parts of the Müllerian ducts, whose funnel openings become the fimbriated infundibula."
+   "Upper vagina": "The upper vagina comes from the fused lower ends of the Müllerian ducts, together with the cervix.",
+   "Cervix": "The cervix forms from the fused lower Müllerian ducts, which is why complete fusion failure in didelphys gives two cervices.",
+   "Uterine fundus": "The uterine body and fundus form where the Müllerian ducts fuse. Incomplete fusion there produces a bicornuate uterus.",
+   "Fallopian tube": "The fallopian tubes are the unfused upper parts of the Müllerian ducts, not of the urogenital sinus."
   },
   "media": "fig:rp5_mullerian",
   "pt": {
@@ -271,7 +271,7 @@
    "Urethral folds",
    "Labioscrotal swellings",
    "Müllerian ducts",
-   "Sinovaginal bulbs",
+   "Urorectal septum",
    "Palatine shelves"
   ],
   "a": 0,
@@ -279,7 +279,7 @@
   "w": {
    "Labioscrotal swellings": "Unfused labioscrotal swellings produce a bifid scrotum, which can accompany severe hypospadias but does not itself misplace the meatus.",
    "Müllerian ducts": "Failed Müllerian fusion produces uterine anomalies such as didelphys or a bicornuate uterus, not a penile defect.",
-   "Sinovaginal bulbs": "The sinovaginal bulbs form the lower vagina from the urogenital sinus; problems there cause vaginal atresia in females.",
+   "Urorectal septum": "The urorectal septum divides the cloaca into the urogenital sinus and the anorectal canal. Failure leaves a fistula with the rectum, not hypospadias.",
    "Palatine shelves": "Unfused palatine shelves produce a cleft palate; the process looks similar but belongs to the face, not the genitalia."
   },
   "media": "fig:rp5_homologs",
@@ -304,15 +304,15 @@
    "Bicornuate uterus",
    "Uterus didelphys",
    "Unicornuate uterus",
-   "Arcuate uterus"
+   "T-shaped uterus"
   ],
   "a": 0,
-  "x": "A septate uterus forms when the midline septum between the fused Müllerian ducts fails to resorb; the poorly vascularized septum is a poor implantation site, and hysteroscopic resection improves outcomes.",
+  "x": "A septate uterus forms when the midline septum between the fused Müllerian ducts fails to resorb. The poorly vascularized septum is a poor implantation site, so this is the anomaly most linked to recurrent miscarriage.",
   "w": {
-   "Bicornuate uterus": "A bicornuate uterus comes from partial failure of fusion and shows a deep external fundal cleft; it carries more preterm birth than early loss.",
-   "Uterus didelphys": "Didelphys is complete fusion failure with two uteri and two cervices; it is rarer and often found with an obstructed hemivagina.",
+   "Bicornuate uterus": "A bicornuate uterus comes from partial failure of fusion and shows a deep external fundal cleft. It carries more preterm birth than early loss.",
+   "Uterus didelphys": "Didelphys is complete fusion failure with two uteri and two cervices. It is rarer and is often found with an obstructed hemivagina.",
    "Unicornuate uterus": "A unicornuate uterus follows failure of one duct to form; it is uncommon and often accompanies renal agenesis on the missing side.",
-   "Arcuate uterus": "An arcuate uterus has only a shallow fundal indentation of the cavity and is usually considered a normal variant with little effect."
+   "T-shaped uterus": "A T-shaped uterus follows prenatal diethylstilbestrol exposure. It is rare and is not the anomaly most linked to recurrent miscarriage."
   },
   "media": "fig:rp5_mullerian",
   "pt": {
@@ -340,12 +340,12 @@
    "Renal artery stenosis"
   ],
   "a": 0,
-  "x": "The ureteric bud arises from the mesonephric duct, which also guides the Müllerian duct, so a unicornuate uterus often comes with ipsilateral renal agenesis on the side of the missing horn; image the kidneys in every Müllerian anomaly.",
+  "x": "The ureteric bud arises from the mesonephric duct, which also guides the Müllerian duct. A unicornuate uterus therefore often comes with renal agenesis on the same side as the missing horn.",
   "w": {
-   "Polycystic kidney disease": "Polycystic kidney disease is an inherited disorder of tubular cilia (PKD1, PKD2 or PKHD1) with no shared embryonic origin with the Müllerian ducts.",
-   "Horseshoe kidney": "A horseshoe kidney forms when the lower poles fuse and ascent is trapped under the inferior mesenteric artery, a separate event.",
-   "Wilms tumor": "Wilms tumor is an embryonal kidney cancer of early childhood linked to WT1 syndromes, including gonadal dysgenesis, not Müllerian defects.",
-   "Renal artery stenosis": "Renal artery stenosis comes from fibromuscular dysplasia or atherosclerosis and causes hypertension; it is acquired, not an embryonic defect."
+   "Polycystic kidney disease": "Polycystic kidney disease is an inherited disorder of the kidney tubules. It has no shared embryonic origin with the Müllerian ducts.",
+   "Horseshoe kidney": "A horseshoe kidney forms when the lower poles fuse and ascent is blocked. That is a separate event from Müllerian development.",
+   "Wilms tumor": "Wilms tumor is an embryonal kidney cancer of early childhood. It is not linked to Müllerian defects.",
+   "Renal artery stenosis": "Renal artery stenosis is acquired, from fibromuscular dysplasia or atherosclerosis, and causes hypertension. It is not an embryonic defect."
   },
   "media": "fig:rp5_mullerian",
   "pt": {
@@ -476,7 +476,7 @@
    "Primitive streak"
   ],
   "a": 0,
-  "x": "Primordial germ cells arise in the wall of the yolk sac near the allantois and migrate along the dorsal mesentery to the genital ridge during weeks 4 to 6; without them the gonad fails to develop normally.",
+  "x": "Primordial germ cells arise in the wall of the yolk sac and migrate to the genital ridge during weeks 4 to 6. Without them the gonad fails to develop normally.",
   "w": {
    "Genital ridge": "The genital ridge is the destination, a strip of intermediate mesoderm beside the mesonephros that provides the supporting cells, not the germ cells.",
    "Mesonephric duct": "The mesonephric duct drains the embryonic kidney and becomes the male genital ducts; it lies lateral to the gonad and makes no gametes.",
