@@ -6,6 +6,7 @@
    CONFLICT: nothing is written and the script exits 1 (resolve it, or pass --prefer kind/name=WS once reviewed).
 2. Stages a complete candidate in fast/.stage/ (content + page), validates it (content loads with no errors,
    build succeeds, optional --probe: the gate's headless probe has no JS errors and every view renders).
+   Accepted (gated, closed) files in main content/ and repro-endo-assets/ supersede drafts of the same name.
 3. Only then promotes: the current fast/content and page move to fast/.prev/, the candidate takes their place.
    A failed run leaves the last working page untouched.
 """
@@ -117,6 +118,14 @@ def main(argv: list[str]) -> int:
             prefer[d] = w
     skip = {argv[i + 1] for i, a in enumerate(argv) if a == "--skip" and i + 1 < len(argv)}  # workspaces still being written
     chosen, conflicts = collect(prefer, skip)
+    # accepted (gated, closed) content in main content/ supersedes the fast-track drafts of the same file
+    accepted = {f"{k}/{f.name}": f for k in KINDS if (ROOT / "content" / k).is_dir() for f in (ROOT / "content" / k).iterdir() if f.is_file()}
+    if (ROOT / ASSETS).is_dir():
+        accepted.update({f"{ASSETS}/{f.name}": f for f in (ROOT / ASSETS).iterdir() if f.is_file()})
+    conflicts = [c for c in conflicts if c.split(":", 1)[0] not in accepted]
+    chosen.update(accepted)
+    if accepted:
+        print(f"{len(accepted)} accepted file(s) from main content/ supersede drafts")
     if conflicts:
         print("CONFLICT (nothing written):\n  " + "\n  ".join(conflicts))
         return 1

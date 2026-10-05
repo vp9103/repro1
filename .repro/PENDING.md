@@ -19,7 +19,8 @@ en9_hypercalcemia, en9_three_hpt missing.
 | V1 | DONE (accepted; reviewed new figs rp4_origins, rp5_mullerian, rp6_dsd, rp7_engines) | rp4-rp7 visual shares met; 8 new figures | fast_check W04/W05 ok; NO-VISUAL rows W04/audit/P5.2.md, P6.2.md |
 | P2.6 | CLOSED 2026-10-04 | F31a-c, F40, F33a-c, linkedNotice | ledger row sha:05f1ba73 |
 | I02 | worker | images rp12, rp14, rp20 + Gemini overlays (fast/ws/I02) | fast_check I02 ok |
-| P2.V | run 9 verifier (token 723a850e02) | + F3 regression row | .repro/verify/P2-report.md |
+| P2.V | DONE 2026-10-05 (run 9: 10/10 + 19/19 regression) | | ledger row |
+| P3.1 | worker (repro-worker) | rp1, rp2, rp3: import fast topics + close coverage gaps (.repro/ws/P3_1) | --status P3.1 ok |
 | P2.6 | CLOSED 2026-10-05 (F3) | ledger row sha:29b015ac | |
 | V2 | DONE (finished before the restart; 8 new figures reviewed 2026-10-05) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
 | P1.4 | CLOSED 2026-10-05 (round 3, part->anchor proposals A.md/B.md) | 302 rows, 48 UNANCHORED, 4 topic changes | ledger row |
