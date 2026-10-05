@@ -1,0 +1,477 @@
+{
+ "id": "rp9",
+ "t": "Amenorrhea, abnormal bleeding, PCOS and female infertility",
+ "sub": "Rule out pregnancy, then find the failing level: hypothalamus, pituitary, ovary or outflow tract. The same logic sorts bleeding, PCOS and infertility.",
+ "yld": "hi",
+ "exam": "hi",
+ "mins": 15,
+ "bp": [
+  "BP-rp9-01",
+  "BP-rp9-02",
+  "BP-rp9-03",
+  "BP-rp9-04",
+  "BP-rp9-05",
+  "BP-rp9-06",
+  "BP-rp9-07",
+  "BP-rp9-08",
+  "BP-rp9-09",
+  "BP-rp9-10",
+  "BP-rp9-11",
+  "BP-rp9-12",
+  "BP-rp9-13",
+  "BP-rp9-14"
+ ],
+ "obj": [
+  "HP-UTERUS-OVARY.3",
+  "PATHPHARM-MENSES-CONTRA.1",
+  "BICEP-WILLIAMS.1",
+  "BICEP-WILLIAMS.2",
+  "BICEP-WILLIAMS.3",
+  "BICEP-WEIAND.1",
+  "BICEP-WEIAND.2",
+  "BICEP-WEIAND.3",
+  "BICEP-WEIAND.5",
+  "BICEP-WEIAND.7",
+  "BICEP-WALSH.7",
+  "BICEP-WALSH.9",
+  "BICEP-WALSH.10",
+  "BICEP-WALSH.11",
+  "BICEP-WALSH.12",
+  "BICEP-WALSH.13",
+  "BICEP-WALSH.14",
+  "BICEP-WALSH.15",
+  "BICEP-WALSH.16",
+  "BICEP-WALSH.17",
+  "BICEP-WALSH.18"
+ ],
+ "pretest": [
+  {
+   "q": "What is the first test in any woman with amenorrhea?",
+   "o": [
+    "Pregnancy test",
+    "Serum prolactin",
+    "Serum FSH",
+    "Pelvic MRI"
+   ],
+   "a": 0,
+   "why": "Pregnancy is the most common cause of secondary amenorrhea, so an hCG test comes first, even when she reports no sexual activity. Prolactin, TSH and FSH come next to localize the failing level.",
+   "w": {
+    "Serum prolactin": "Prolactin belongs to the second step with TSH and FSH; pregnancy itself raises prolactin, so testing it before hCG can mislead.",
+    "Serum FSH": "FSH separates ovarian failure from brain causes, but only after pregnancy has been excluded by a negative hCG.",
+    "Pelvic MRI": "Imaging is reserved for specific questions such as a suspected pituitary mass or unclear anatomy, never as the opening test."
+   }
+  },
+  {
+   "q": "Which drug is first-line for inducing ovulation in polycystic ovary syndrome?",
+   "o": [
+    "Letrozole",
+    "Spironolactone",
+    "Cabergoline",
+    "Leuprolide"
+   ],
+   "a": 0,
+   "why": "Letrozole inhibits aromatase, so estrogen feedback falls and FSH rises enough to grow a follicle. In PCOS it gives more live births than clomiphene, the older alternative.",
+   "w": {
+    "Spironolactone": "Spironolactone blocks androgen receptors to treat hirsutism; it does not induce ovulation and should be stopped before conception because it can feminize a male fetus.",
+    "Cabergoline": "Cabergoline is a dopamine agonist that restores ovulation in hyperprolactinemia, a different cause of anovulation with normal androgens.",
+    "Leuprolide": "Continuous leuprolide downregulates pituitary GnRH receptors and shuts ovulation off; it treats endometriosis and precocious puberty."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "What counts as amenorrhea, and what comes first?"
+  ],
+  [
+   "p",
+   "Amenorrhea is the absence of menses. **Primary amenorrhea** means no menarche by age 15 in a girl with normal breast development, or by age 13 with no breast development at all. The second criterion is also the definition of delayed puberty, which asks only whether thelarche, the breast bud, has begun: in delayed puberty the axis has not started, while primary amenorrhea with breasts present means puberty began and something blocks menses. **Secondary amenorrhea** means no menses for 3 months in a woman with previously regular cycles, or for 6 months after irregular ones. Pregnancy is the most common cause, so a pregnancy test for human chorionic gonadotropin (hCG) comes first in every case, even when she reports no sexual activity. Pregnancy is not the only physiologic cause: lactation and menopause also stop periods."
+  ],
+  [
+   "p",
+   "In primary amenorrhea, two exam findings sort the causes: breasts show that estrogen has been made, and a uterus shows that the Müllerian ducts developed. A girl without breasts lacks estrogen. A high follicle-stimulating hormone (FSH) means **hypergonadotropic** hypogonadism, a failed gonad such as Turner syndrome, confirmed by karyotype. A low FSH means **hypogonadotropic** hypogonadism, a failure above the ovary, as in constitutional delay or **Kallmann syndrome**, where GnRH neurons fail to migrate with olfactory neurons and anosmia results. Breasts without a uterus mean Müllerian agenesis with vaginal agenesis, the Mayer-Rokitansky-Küster-Hauser syndrome (46,XX), or complete androgen insensitivity (46,XY)."
+  ],
+  [
+   "p",
+   "Breasts and a uterus suggest an outflow block or a cause of secondary amenorrhea. An **imperforate hymen** or a transverse vaginal septum traps menstrual blood behind it. Over months the vagina fills, a state called {{rp9_hemato|hematocolpos}}, and the girl has cyclic pelvic pain, a bulging bluish membrane and a lower-abdominal mass, sometimes with urinary retention. Incision of the membrane cures it."
+  ],
+  [
+   "p",
+   "Primary and secondary amenorrhea share one logic: find the failing level, classically sorted into {{rp9_compart|four compartments}}. Compartment I is the uterus and outflow tract (Asherman syndrome, imperforate hymen, Müllerian agenesis); II is the ovary; III is the anterior pituitary; IV is the hypothalamus. Failure in II is hypergonadotropic (high FSH), failure in III or IV is hypogonadotropic (low FSH and LH), and failure in I leaves the hormones normal."
+  ],
+  [
+   "h",
+   "How do three blood tests localize secondary amenorrhea?"
+  ],
+  [
+   "p",
+   "Once hCG is negative, measure thyroid-stimulating hormone (TSH), prolactin and FSH, and add a pelvic ultrasound when anatomy is in question. **Prolactin** suppresses GnRH pulses, so a high level lowers FSH and LH; causes include a prolactinoma, dopamine-blocking drugs and hypothyroidism, because high TRH also stimulates prolactin; a high level with no drug or thyroid cause calls for a pituitary MRI. A high FSH on two occasions before age 40 means ovarian failure. A low or normal FSH with low estradiol places the failure above the ovary: functional hypothalamic amenorrhea, Sheehan syndrome after postpartum hemorrhage, Cushing syndrome or an empty sella. Normal results suggest PCOS when androgens are high, or Asherman syndrome after curettage."
+  ],
+  [
+   "p",
+   "{{rp9_poi|Primary ovarian insufficiency}} means the follicles stop working before age 40: amenorrhea or oligomenorrhea, an FSH in the menopausal range (above 25 mIU/mL) on two samples at least a month apart, and a low estradiol that causes hot flashes and vaginal dryness. Without follicles, no estradiol or inhibin restrains the pituitary. Causes include alkylating chemotherapy such as cyclophosphamide, pelvic radiation, a fragile X premutation, autoimmune oophoritis, Turner syndrome and, often, no cause found. Work-up adds a karyotype and FMR1 testing. Hormone therapy until about age 51 protects bone and the heart."
+  ],
+  [
+   "f",
+   "rp9_workup"
+  ],
+  [
+   "t",
+   [
+    "Cause",
+    "Why menses stop",
+    "Clue",
+    "Key labs"
+   ],
+   [
+    [
+     "Pregnancy",
+     "hCG keeps the corpus luteum alive",
+     "Sexually active",
+     "Positive hCG"
+    ],
+    [
+     "Functional hypothalamic",
+     "Low energy or stress slows GnRH",
+     "Weight loss, athlete",
+     "Low FSH, LH, estradiol"
+    ],
+    [
+     "Hyperprolactinemia",
+     "Prolactin suppresses GnRH",
+     "Galactorrhea, headache",
+     "High prolactin"
+    ],
+    [
+     "Primary ovarian insufficiency",
+     "Follicles depleted before 40",
+     "Hot flashes",
+     "High FSH twice"
+    ],
+    [
+     "PCOS",
+     "Anovulation with androgen excess",
+     "Hirsutism, obesity",
+     "Normal FSH, high androgens"
+    ],
+    [
+     "Asherman syndrome",
+     "Basalis scarred by curettage",
+     "Prior curettage",
+     "Normal hormones"
+    ],
+    [
+     "Sheehan syndrome",
+     "Pituitary infarction after delivery",
+     "No lactation",
+     "Low pituitary hormones"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "key",
+   "A withdrawal bleed proves estrogen and an open outflow tract",
+   "In a **progestin challenge**, the woman takes a progestin for 7 to 10 days and then stops. A withdrawal bleed means estrogen had already built an endometrium and blood can escape, so the problem is anovulation, as in PCOS. No bleed means estrogen is low or outflow is blocked; if estrogen plus progestin still gives no bleed, the uterus or outflow tract is at fault."
+  ],
+  [
+   "p",
+   "{{rp9_fha|Functional hypothalamic amenorrhea}} follows weight loss, intense exercise or stress, with or without **disordered eating**. Low energy availability lowers leptin and raises cortisol, which slows GnRH pulses, so FSH, LH and estradiol all fall. The **female athlete triad** links low energy availability, menstrual dysfunction and low bone mineral density, because estrogen normally restrains bone resorption; stress fractures follow. The newer **relative energy deficiency** in sport also covers the thyroid, immune and cardiac effects and male athletes. Treatment restores energy intake, since a birth control pill brings back bleeding but does not repair bone."
+  ],
+  [
+   "call",
+   "trap",
+   "Normal hormones do not rule out a uterine cause",
+   "After a postpartum or post-abortion curettage, a woman may stop menstruating because the basalis was scraped away and adhesions formed: Asherman syndrome. Her FSH, prolactin, TSH and estradiol are normal and she still ovulates, so the labs look reassuring. The history is the clue, and hysteroscopy is the proof. In Sheehan syndrome, by contrast, the pituitary that enlarged in pregnancy outgrows its blood supply and infarcts after a hemorrhage, so lactation fails first."
+  ],
+  [
+   "h",
+   "Why does PCOS cause anovulation, androgen excess and endometrial risk?"
+  ],
+  [
+   "p",
+   "In polycystic ovary syndrome, GnRH pulses run fast, which favors LH over FSH, and LH drives {{rp8_theca|theca cells}} to make more androgen. **Insulin resistance** adds to it: high insulin also stimulates theca cells and lowers the liver's output of {{rp9_shbg|sex hormone-binding globulin}} (SHBG), so **free testosterone** rises even when total testosterone is only mildly high. Low FSH and local androgen stall follicles at the small antral stage, so many small follicles line the ovary and none becomes dominant. Without ovulation there is no corpus luteum and no progesterone, and the endometrium meets **unopposed estrogen**, including estrone made by aromatase in fat. That is why PCOS raises the risk of endometrial hyperplasia and cancer, infertility and type 2 diabetes."
+  ],
+  [
+   "f",
+   "rp9_pcos"
+  ],
+  [
+   "p",
+   "The {{rp9_rotterdam|Rotterdam criteria}} require two of three findings: oligo- or anovulation, clinical or biochemical hyperandrogenism, and polycystic ovaries on pelvic ultrasound, after thyroid disease, hyperprolactinemia and nonclassic **congenital adrenal hyperplasia** (high 17-hydroxyprogesterone) are excluded. The course slides use the proposed name polyendocrine metabolic ovarian syndrome (PMOS). Losing 5 to 10 percent of body weight can restore ovulation. A combined oral contraceptive suppresses LH, raises SHBG and protects the endometrium, and cyclic progestin protects it when a pill is not wanted. Metformin treats insulin resistance. **Spironolactone** blocks androgen receptors for hirsutism, with contraception because it can feminize a male fetus. For fertility, **letrozole** is first-line."
+  ],
+  [
+   "h",
+   "Which other endocrine disorders stop periods or add androgen?"
+  ],
+  [
+   "p",
+   "Disease outside the ovary stops periods by three routes: excess prolactin or cortisol suppresses GnRH, excess androgen blocks follicle maturation, and excess estrone from fat feeds back on the pituitary. A fourth route is loss of pituitary function, as in an **empty sella**: a sella turcica filled with cerebrospinal fluid, so MRI shows the pituitary flattened against its floor. Primary empty sella follows an incompetent diaphragma sellae, typically in obese women, often with headaches; secondary empty sella follows pituitary surgery, radiation or infarction. Most patients have normal hormones, but a squeezed gland causes hypopituitarism with low FSH and LH, and a squeezed stalk cuts off dopamine's restraint on prolactin, causing mild hyperprolactinemia."
+  ],
+  [
+   "t",
+   [
+    "Disorder",
+    "Why periods stop or androgen rises",
+    "Exam clue and key lab"
+   ],
+   [
+    [
+     "Obesity",
+     "Fat aromatizes androgen to estrone and insulin drives ovarian androgen, so ovulation fails",
+     "Acanthosis nigricans; insulin resistance"
+    ],
+    [
+     "Thyroid disease",
+     "In hypothyroidism high TRH raises prolactin, which suppresses GnRH; thyrotoxicosis also disrupts cycles",
+     "Goiter, cold or heat intolerance; abnormal TSH, high prolactin"
+    ],
+    [
+     "Nonclassic CAH",
+     "21-hydroxylase deficiency shunts steroid into adrenal androgen",
+     "PCOS-like hirsutism; high morning 17-hydroxyprogesterone"
+    ],
+    [
+     "Adrenal tumor",
+     "Autonomous androgen secretion blocks ovulation",
+     "Rapid virilization; very high DHEA-S"
+    ],
+    [
+     "Cushing syndrome",
+     "Cortisol excess suppresses GnRH and adds adrenal androgen",
+     "Striae, central obesity; high late-night salivary cortisol"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "key",
+   "Fast-onset virilization means a tumor until proven otherwise",
+   "PCOS hirsutism starts around puberty and progresses slowly. Rapid onset or **virilization**, such as clitoromegaly, a deepening voice and temporal balding, suggests an androgen-secreting tumor. Very high testosterone with a normal dehydroepiandrosterone sulfate (**DHEA-S**) points to an ovarian tumor; a very high DHEA-S points to an adrenal tumor, because DHEA-S comes almost entirely from the adrenal cortex."
+  ],
+  [
+   "h",
+   "How is abnormal uterine bleeding named and sorted?"
+  ],
+  [
+   "p",
+   "**Heavy menstrual bleeding**, once menorrhagia, means more than 80 mL of blood lost per cycle or periods longer than 7 days; in practice it is flow that disrupts daily life. Intermenstrual bleeding, once metrorrhagia, falls between regular periods, and menometrorrhagia is heavy and irregular. Oligomenorrhea means cycles longer than 35 days and polymenorrhea cycles shorter than 21 days. Irregular menstrual bleeding means a wide variation in cycle length, more than about 7 to 9 days between the shortest and longest cycle in a year. **Postmenopausal bleeding** is any bleeding 12 months or more after the final period and is endometrial cancer until proven otherwise."
+  ],
+  [
+   "p",
+   "First confirm the source. Gastrointestinal bleeding (hemorrhoids, colorectal lesions) and hematuria (infection, stones, bladder tumors) can mimic vaginal bleeding, the cervix and vagina bleed from cervicitis, polyps, cancer, trauma or a foreign body, and pregnancy, including miscarriage and ectopic pregnancy, must be excluded with hCG. Abnormal uterine bleeding is then sorted with {{rp9_palm|PALM-COEIN}}: four structural causes seen on imaging or histology and five nonstructural ones. Transvaginal ultrasound is the first image, saline infusion sonography or hysteroscopy shows the cavity, and endometrial biopsy is added from age 45, or earlier with obesity, PCOS or failed treatment."
+  ],
+  [
+   "f",
+   "rp9_aub"
+  ],
+  [
+   "t",
+   [
+    "Letter",
+    "Cause",
+    "Typical clue"
+   ],
+   [
+    [
+     "P",
+     "Polyp",
+     "Intermenstrual spotting; focal mass on ultrasound"
+    ],
+    [
+     "A",
+     "Adenomyosis",
+     "Heavy, painful periods; enlarged boggy uterus"
+    ],
+    [
+     "L",
+     "Leiomyoma",
+     "Heavy bleeding; firm, irregular enlarged uterus"
+    ],
+    [
+     "M",
+     "Malignancy or hyperplasia",
+     "Postmenopausal bleeding or long unopposed estrogen"
+    ],
+    [
+     "C",
+     "Coagulopathy",
+     "Heavy bleeding since menarche; von Willebrand disease"
+    ],
+    [
+     "O",
+     "Ovulatory dysfunction",
+     "Irregular, unpredictable bleeding"
+    ],
+    [
+     "E",
+     "Endometrial",
+     "Regular cycles with a local hemostasis defect"
+    ],
+    [
+     "I",
+     "Iatrogenic",
+     "Anticoagulants, hormonal contraception, IUD"
+    ],
+    [
+     "N",
+     "Not otherwise classified",
+     "Arteriovenous malformation, cesarean scar defect"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Ovulatory dysfunction is the most common nonstructural cause: without a corpus luteum, estrogen builds a thick, fragile lining that no progesterone stabilizes, so it breaks down in patches. It is common just after menarche, when the LH surge is not yet reliable, and in perimenopause, when a dwindling follicle pool lowers estradiol and inhibin B, FSH rises and cycles turn irregular and anovulatory."
+  ],
+  [
+   "h",
+   "Which pelvic changes cause pain, cysts and infertility?"
+  ],
+  [
+   "p",
+   "**Primary dysmenorrhea** begins within a year or two of menarche, once cycles are ovulatory. The secretory endometrium releases prostaglandins, mainly PGF2α, which cause strong uterine contractions and ischemia, so NSAIDs are first-line. Secondary dysmenorrhea has a pelvic cause: endometriosis, adenomyosis, fibroids or adhesions after pelvic infection."
+  ],
+  [
+   "p",
+   "In **endometriosis**, endometrial glands and stroma grow outside the uterus, most often on the ovaries, the pelvic peritoneum, the uterosacral ligaments and the pouch of Douglas. Retrograde menstruation carries tissue there, and the implants respond to estrogen: they bleed each cycle and provoke inflammation and scarring. Bleeding into an ovary forms an **endometrioma**, a cyst of old brown blood, and repeated bleeding and healing bind pelvic organs together as **pelvic adhesions**, which distort the tubes and ovaries and cause infertility. Pain is cyclic: dysmenorrhea, deep dyspareunia and, with bowel involvement, painful defecation, called dyschezia. Transvaginal ultrasound shows an endometrioma, but only laparoscopy sees small implants and gives tissue proof. Treatment is NSAIDs plus estrogen suppression with hormonal contraceptives, progestins or GnRH agonists, or removal of lesions at laparoscopy."
+  ],
+  [
+   "p",
+   "A **follicular cyst** is the simplest structural change in ovulation: a follicle that never ruptures keeps filling with fluid beyond 3 cm. It is thin walled, usually painless, and resolves within a few cycles; a large cyst can rupture or twist the ovary. In PCOS, by contrast, many small follicles stall and no single cyst forms."
+  ],
+  [
+   "h",
+   "How is infertility defined, investigated and treated?"
+  ],
+  [
+   "p",
+   "Infertility is failure to conceive after 12 months of regular unprotected intercourse, or after 6 months at age 35 or older, because fertility falls with maternal age. **Primary infertility** means no prior pregnancy; secondary infertility follows at least one. Both partners are evaluated together: a semen analysis checks the male side, where a varicocele is a common treatable cause. For the woman, regular cycles and a mid-luteal progesterone confirm ovulation, and AMH and the antral follicle count estimate ovarian reserve. Risk factors in women are age, pelvic inflammatory disease (which scars the tubes), endometriosis, PCOS, obesity and smoking; in men, varicocele, undescended testes, heat and gonadotoxic drugs."
+  ],
+  [
+   "p",
+   "{{rp9_hsg|Hysterosalpingography}} pushes contrast through the cervix to outline the cavity and tubes. Free spill into the peritoneum proves tubal **patency**; a blocked, fluid-filled hydrosalpinx dilates and shows no spill. A **filling defect** inside the cavity means something occupies it: a polyp, a submucosal fibroid, the adhesions of Asherman syndrome or a clot."
+  ],
+  [
+   "f",
+   "rp9_infertility"
+  ],
+  [
+   "p",
+   "Ovulation induction uses letrozole or clomiphene, and intrauterine insemination suits mild male factor or unexplained infertility with open tubes. In vitro fertilization bypasses blocked tubes: gonadotropins stimulate several follicles, an hCG trigger matures the eggs, and they are retrieved, fertilized in the laboratory and transferred. For severe male factor, {{rp9_icsi|intracytoplasmic sperm injection}} places one sperm in each egg, and when the ejaculate holds no sperm, surgical **sperm retrieval** from the testis or epididymis supplies them."
+  ],
+  [
+   "steps",
+   [
+    "How letrozole and clomiphene make a follicle grow",
+    [
+     [
+      "The brain sees less estrogen",
+      "Letrozole inhibits **aromatase**, so estradiol falls; clomiphene, a selective estrogen receptor modulator, blocks hypothalamic estrogen receptors. Either way, negative feedback is removed."
+     ],
+     [
+      "GnRH and FSH rise",
+      "The hypothalamus speeds GnRH pulses, and the pituitary releases more FSH and LH, which rescues one or more follicles from atresia."
+     ],
+     [
+      "A follicle matures and ovulates",
+      "Estradiol from the growing follicle triggers an LH surge, or an hCG injection, acting on LH receptors, is timed to trigger ovulation."
+     ],
+     [
+      "Risks follow from overstimulation",
+      "More than one follicle can ovulate, causing twins. Injected gonadotropins with an hCG trigger can cause **ovarian hyperstimulation** syndrome: enlarged ovaries and leaky capillaries with ascites and clotting."
+     ]
+    ]
+   ]
+  ],
+  [
+   "why",
+   "Why can clomiphene, a drug that blocks estrogen receptors, cause ovulation?",
+   "Clomiphene blocks estrogen receptors in the hypothalamus, which reads the block as a lack of estrogen, so it speeds GnRH pulses and the pituitary releases more FSH and LH. The extra FSH grows follicles, and the dominant follicle's rising estradiol triggers an LH surge. The same blockade explains the side effects: hot flashes and visual changes from central receptors, and a thin endometrium and thick cervical mucus from blockade in those tissues."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp9_prog",
+    "q": "A 24-year-old with 8 months of amenorrhea, a negative hCG and normal TSH and prolactin bleeds after a progestin challenge. Which reasoning is best?",
+    "o": [
+     "Bleeding proves ovarian failure, because only a high FSH primes the endometrium",
+     "Bleeding means estrogen primed the lining and the outflow tract is open, so she is not ovulating",
+     "Bleeding means the endometrium is scarred and bleeds when progesterone stops",
+     "Bleeding means her hypothalamus is suppressed and estradiol is high"
+    ],
+    "a": 1,
+    "why": "Progestin withdrawal can cause bleeding only if estrogen has already built an endometrium and blood has a way out. A positive challenge therefore places her problem at ovulation: she makes estrogen but forms no corpus luteum, so no progesterone. PCOS is the classic cause. Ovarian failure and hypothalamic suppression both leave estrogen low, and Asherman scarring would prevent bleeding altogether."
+   }
+  ],
+  [
+   "vis",
+   "rp9"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these point to polycystic ovary syndrome?",
+  "items": [
+   [
+    "Cycles every 45 to 90 days since menarche",
+    1
+   ],
+   [
+    "Slowly progressive hirsutism and acne",
+    1
+   ],
+   [
+    "Acanthosis nigricans",
+    1
+   ],
+   [
+    "High free testosterone with low SHBG",
+    1
+   ],
+   [
+    "Many small antral follicles on ultrasound",
+    1
+   ],
+   [
+    "Proliferative endometrium late in the cycle",
+    1
+   ],
+   [
+    "Withdrawal bleed after a progestin challenge",
+    1
+   ],
+   [
+    "FSH in the menopausal range",
+    0
+   ],
+   [
+    "Anosmia since childhood",
+    0
+   ],
+   [
+    "Very high DHEA-S with rapid virilization",
+    0
+   ],
+   [
+    "Galactorrhea with high prolactin",
+    0
+   ],
+   [
+    "No lactation after postpartum hemorrhage",
+    0
+   ],
+   [
+    "Bulging bluish hymen with cyclic pelvic pain",
+    0
+   ],
+   [
+    "Chocolate cyst with painful defecation",
+    0
+   ],
+   [
+    "Letrozole as first-line ovulation induction",
+    1
+   ]
+  ]
+ }
+}

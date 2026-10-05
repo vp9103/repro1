@@ -16,10 +16,10 @@
    "Prophase II"
   ],
   "a": 0,
-  "x": "Prophase I. Oocytes enter meiosis I in the fetal ovary and stay paused there, 2N with 4C of DNA, for up to five decades until the LH surge of their own cycle restarts division.",
+  "x": "Prophase I. Oocytes enter meiosis I in the fetal ovary and stay paused there, 2N with 4C of DNA, until the LH surge of their own cycle restarts division.",
   "w": {
-   "Metaphase II": "Metaphase II is the second pause, reached only after the surge completes meiosis I; it lasts from ovulation until fertilization.",
-   "Anaphase I": "Anaphase I is the moment homologues separate after the surge; it takes minutes and is where nondisjunction errors appear.",
+   "Metaphase II": "Metaphase II is the second pause, reached only after the surge completes meiosis I. It lasts from ovulation until fertilization.",
+   "Anaphase I": "Anaphase I is the moment homologous chromosomes separate after the surge. It takes minutes and is where nondisjunction errors appear.",
    "Telophase I": "Telophase I is the brief end of meiosis I, when the first polar body pinches off just before ovulation.",
    "Prophase II": "Prophase II is crossed quickly on the way to metaphase II; the secondary oocyte never rests there."
   },
@@ -109,15 +109,15 @@
    "Oocyte",
    "Cumulus cell",
    "Surface epithelial cell",
-   "Theca externa cell"
+   "Leydig cell"
   ],
   "a": 0,
   "x": "Theca interna cells. LH drives them to convert LDL cholesterol into androstenedione, which crosses the basement membrane for granulosa aromatase to turn into estradiol.",
   "w": {
-   "Oocyte": "The oocyte directs follicle growth with paracrine signals but has no steroid enzymes to make androgens.",
+   "Oocyte": "The oocyte directs follicle growth with signals but has no steroid enzymes to make androgens.",
    "Cumulus cell": "Cumulus cells are granulosa cells around the oocyte; like other granulosa cells they aromatize androgen rather than make it.",
-   "Surface epithelial cell": "The surface epithelium is a mesothelial covering and the origin of epithelial ovarian tumors, not a steroid source.",
-   "Theca externa cell": "The theca externa is a fibromuscular outer capsule of the follicle; the interna, with its LH receptors, makes the androgen."
+   "Surface epithelial cell": "The surface epithelium is a mesothelial covering and the origin of epithelial ovarian tumors. It is not a steroid source.",
+   "Leydig cell": "Leydig cells are the testicular androgen-making cells. The ovarian follicle uses theca interna cells for this job."
   },
   "media": "fig:rp8_twocell",
   "pt": {
@@ -174,7 +174,7 @@
    "Estradiol",
    "Estriol",
    "Ethinyl estradiol",
-   "Equilin"
+   "Androstenedione"
   ],
   "a": 0,
   "x": "Estrone. Once the follicles are gone, most estrogen comes from aromatase in adipose tissue converting androstenedione to estrone, so heavier women make more of it.",
@@ -182,7 +182,7 @@
    "Estradiol": "Estradiol is the potent follicular estrogen of the reproductive years; its production collapses when the follicle pool is exhausted.",
    "Estriol": "Estriol is the weak placental estrogen of pregnancy, made from fetal adrenal precursors.",
    "Ethinyl estradiol": "Ethinyl estradiol is the synthetic estrogen in most combined oral contraceptives, not a hormone the body makes.",
-   "Equilin": "Equilin is a horse estrogen found in conjugated equine estrogen tablets, not a human hormone."
+   "Androstenedione": "Androstenedione is the androgen that fat converts into estrone. It is a precursor, not an estrogen."
   },
   "media": "fig:rp8_twocell",
   "pt": {
@@ -338,7 +338,7 @@
    "Stratum functionalis",
    "Myometrium",
    "Perimetrium",
-   "Stratum spongiosum"
+   "Mesometrium"
   ],
   "a": 0,
   "x": "The stratum basalis, fed by straight arteries, is not shed; its glands and stroma rebuild the functionalis each cycle, and removing it by curettage causes Asherman adhesions.",
@@ -346,7 +346,7 @@
    "Stratum functionalis": "The functionalis, fed by spiral arteries, is the layer that is shed, so it cannot regenerate itself.",
    "Myometrium": "The myometrium is smooth muscle beneath the endometrium; it contracts during menses but never makes new glands.",
    "Perimetrium": "The perimetrium is the outer serosal coat of the uterus, far from the cavity lining.",
-   "Stratum spongiosum": "The spongiosum is the deeper part of the functionalis and is shed along with the compactum."
+   "Mesometrium": "The mesometrium is the part of the broad ligament that wraps the uterus. It lies outside the uterus and does not regrow the lining."
   },
   "media": "fig:rp8_endometrium",
   "pt": {
