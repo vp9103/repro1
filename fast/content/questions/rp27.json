@@ -19,12 +19,12 @@
    "Eclampsia"
   ],
   "a": 0,
-  "e": "New hypertension after 20 weeks with proteinuria is **preeclampsia**, and two findings make it preeclampsia with severe features: a pressure of 160/110 mm Hg or higher and a new headache unrelieved by analgesics. Either one alone would qualify. Gestational hypertension is excluded by the proteinuria. Her normal pressure at 12 weeks rules out chronic hypertension, so the disease is not superimposed. Normal platelets and transaminases argue against HELLP syndrome, and she has not had a seizure, so this is not eclampsia.",
+  "e": "New hypertension after 20 weeks with proteinuria is **preeclampsia**. Two findings make it preeclampsia with severe features: a pressure of 160/110 or higher, and a new headache that does not respond to analgesics. Either one alone would qualify. The proteinuria rules out gestational hypertension. Her normal pressure at 12 weeks rules out chronic hypertension, so the disease is not superimposed. Normal platelets and liver enzymes argue against HELLP syndrome, and she has not had a seizure, so this is not eclampsia.",
   "w": {
-   "Gestational hypertension": "Gestational hypertension is new hypertension after 20 weeks without proteinuria or organ damage; her 2+ protein and persistent headache move her beyond that diagnosis into preeclampsia.",
-   "Chronic hypertension with superimposed preeclampsia": "Superimposed disease requires hypertension that predates pregnancy or 20 weeks; her pressure of 112/70 at 12 weeks shows the hypertension is new, not chronic.",
-   "HELLP syndrome": "HELLP needs hemolysis, elevated liver enzymes and a platelet count under 100,000; her platelets and transaminases are normal, so liver and marrow involvement has not appeared.",
-   "Eclampsia": "Eclampsia is defined by new generalized seizures in a woman with preeclampsia; a headache is a warning sign that seizures may follow, but she has not convulsed."
+   "Gestational hypertension": "Gestational hypertension is new hypertension after 20 weeks without proteinuria or organ damage. Her 2+ protein and persistent headache take her beyond that diagnosis.",
+   "Chronic hypertension with superimposed preeclampsia": "Superimposed disease needs hypertension that was present before pregnancy or before 20 weeks. Her pressure of 112/70 at 12 weeks shows the hypertension is new.",
+   "HELLP syndrome": "HELLP needs hemolysis, high liver enzymes and a platelet count under 100,000. Her platelets and liver enzymes are normal.",
+   "Eclampsia": "Eclampsia is defined by new generalized seizures in a woman with preeclampsia. A headache is a warning that seizures may follow, but she has not convulsed."
   },
   "et": [
    [
@@ -88,12 +88,12 @@
    "Intravenous furosemide"
   ],
   "a": 0,
-  "e": "Magnesium is cleared only by the kidneys, so her falling urine output and rising creatinine let it accumulate. Loss of patellar reflexes is the first sign of toxicity and respiratory depression the next, so she is heading toward cardiac arrest. After the infusion stops, IV **calcium gluconate** antagonizes magnesium at the neuromuscular junction and cardiac membrane and reverses the depression within minutes. Naloxone reverses opioids, which she has not received. Phenytoin is not needed because magnesium already protects against seizures, and labetalol is unnecessary at 150/96 mm Hg.",
+  "e": "Magnesium is cleared only by the kidneys, so her falling urine output and rising creatinine let it build up. Loss of patellar reflexes is the first sign of toxicity and respiratory depression comes next, so she is heading toward cardiac arrest. After the infusion is stopped, IV **calcium gluconate** opposes magnesium at the nerve-muscle junction and the heart and reverses the depression within minutes. Naloxone reverses opioids, which she has not received. Phenytoin is not needed because magnesium already protects against seizures, and labetalol is unnecessary at 150/96 mm Hg.",
   "w": {
-   "Intravenous naloxone": "Naloxone reverses opioid-induced respiratory depression; her slow breathing comes from magnesium accumulating with renal failure, and she has no opioid exposure to reverse.",
-   "Intravenous labetalol": "Labetalol treats severe-range pressure of 160/110 or higher; her pressure of 150/96 does not need urgent lowering, and lowering it would not restore her breathing.",
-   "Intravenous phenytoin": "Phenytoin is a second-line anticonvulsant used only when magnesium fails or cannot be given; her problem is too much magnesium, not uncontrolled seizures.",
-   "Intravenous furosemide": "A loop diuretic can hasten magnesium excretion only when kidneys work; with oliguria and a doubled creatinine it will not act quickly enough to protect her breathing."
+   "Intravenous naloxone": "Naloxone reverses opioid respiratory depression. Her slow breathing comes from magnesium building up in kidney failure, and she has no opioid exposure.",
+   "Intravenous labetalol": "Labetalol treats severe-range pressure of 160/110 or higher. Her pressure of 150/96 does not need urgent lowering, and lowering it would not restore her breathing.",
+   "Intravenous phenytoin": "Phenytoin is a second-line anticonvulsant used only when magnesium fails or cannot be given. Her problem is too much magnesium, not uncontrolled seizures.",
+   "Intravenous furosemide": "A loop diuretic speeds magnesium loss only when the kidneys work. With oliguria and a doubled creatinine it will not act fast enough to protect her breathing."
   },
   "et": [
    [
@@ -156,12 +156,12 @@
    "Hyperfiltration from pregnancy-induced glomerular hypertension"
   ],
   "a": 0,
-  "e": "Her placenta is underperfused, as the growth restriction and high uterine artery resistance show, because the spiral arteries were never remodeled. The ischemic placenta releases sFlt-1, a soluble **VEGF antagonist**. Glomerular endothelial cells depend on VEGF from podocytes, so trapping it makes them swell and lose their fenestrations, and protein leaks. Immune complexes in the basement membrane describe lupus or postinfectious disease, anti-phospholipase A2 receptor antibodies cause membranous nephropathy, and podocyte effacement from a circulating factor is the minimal change or FSGS pattern.",
+  "e": "Her placenta is underperfused, as the growth restriction and high uterine artery resistance show, because the spiral arteries were never remodeled. The ischemic placenta releases sFlt-1, a soluble **VEGF antagonist**. Glomerular endothelial cells depend on VEGF from podocytes, so trapping it makes them swell and lose their fenestrations, and protein leaks. Immune complexes in the basement membrane describe lupus or postinfectious disease. Anti-phospholipase A2 receptor antibodies cause membranous nephropathy. Podocyte effacement from a circulating factor is the minimal change or FSGS pattern.",
   "w": {
-   "Immune complexes deposited in the glomerular basement membrane": "Immune complex deposits mark lupus nephritis or postinfectious glomerulonephritis, which bring hematuria, casts and low complement; preeclamptic kidneys show swollen endothelium without complex deposits.",
-   "Circulating factor effacing podocyte foot processes": "Diffuse foot process effacement is the lesion of minimal change disease or primary FSGS; in preeclampsia the injured cell is the endothelium, and effacement is at most secondary.",
-   "Antibodies against the podocyte phospholipase A2 receptor": "Anti-PLA2R antibodies cause primary membranous nephropathy, usually in older adults and unrelated to gestational age; her proteinuria began after 20 weeks together with new hypertension.",
-   "Hyperfiltration from pregnancy-induced glomerular hypertension": "Normal pregnancy raises the glomerular filtration rate by about half yet causes little proteinuria; hyperfiltration cannot explain new hypertension, growth restriction and 3+ protein appearing together."
+   "Immune complexes deposited in the glomerular basement membrane": "Immune complex deposits mark lupus nephritis or postinfectious glomerulonephritis, with hematuria, casts and low complement. Preeclamptic kidneys show swollen endothelium without complex deposits.",
+   "Circulating factor effacing podocyte foot processes": "Diffuse foot process effacement is the lesion of minimal change disease or primary FSGS. In preeclampsia the injured cell is the endothelium.",
+   "Antibodies against the podocyte phospholipase A2 receptor": "Anti-PLA2R antibodies cause primary membranous nephropathy, usually in older adults. Her proteinuria began after 20 weeks together with new hypertension.",
+   "Hyperfiltration from pregnancy-induced glomerular hypertension": "Normal pregnancy raises the filtration rate but causes little proteinuria. Hyperfiltration cannot explain new hypertension, growth restriction and 3+ protein appearing together."
   },
   "et": [
    [
@@ -232,12 +232,12 @@
    "Cervical ectropion"
   ],
   "a": 0,
-  "e": "Painless, bright red bleeding from a soft, nontender uterus in the third trimester is the classic picture of **placenta previa**: the placenta lies over or near the internal os and bleeds as the lower segment thins. Her prior cesarean and multiparity raise the risk. Placental abruption is painful with a tender, hypertonic uterus. Vasa previa bleeds at membrane rupture and quickly causes fetal distress, but her fetal tracing is reassuring. Uterine rupture causes pain and fetal bradycardia, and an ectropion causes only light spotting.",
+  "e": "Painless, bright red bleeding from a soft, nontender uterus in the third trimester is the classic picture of **placenta previa**. The placenta lies over or near the internal os and bleeds as the lower segment thins. Her prior cesarean and multiple births raise the risk. Placental abruption is painful with a tender, hypertonic uterus. Vasa previa bleeds at membrane rupture and quickly causes fetal distress, but her fetal tracing is reassuring. Uterine rupture causes pain and fetal bradycardia, and a cervical ectropion causes only light spotting.",
   "w": {
-   "Placental abruption": "Abruption bleeds from a separating, normally placed placenta and causes abdominal pain with a tender, hypertonic uterus, often with fetal distress; her uterus is soft and she has no pain.",
-   "Vasa previa": "Vasa previa bleeds only when the membranes rupture, and the blood is fetal, so the fetal heart rate drops quickly; her membranes are intact and the tracing is reassuring.",
-   "Uterine rupture": "Rupture of a prior cesarean scar happens mostly during labor and brings sudden pain, loss of fetal station and fetal bradycardia, none of which she shows.",
-   "Cervical ectropion": "An ectropion causes light spotting after intercourse or a speculum exam; it does not produce a pool of bright red blood in the third trimester."
+   "Placental abruption": "Abruption bleeds from a separating, normally placed placenta and causes pain with a tender, hypertonic uterus, often with fetal distress. Her uterus is soft and she has no pain.",
+   "Vasa previa": "Vasa previa bleeds only when the membranes rupture, and the blood is fetal, so the fetal heart rate drops quickly. Her membranes are intact and the tracing is reassuring.",
+   "Uterine rupture": "Rupture of a prior cesarean scar happens mostly in labor and brings sudden pain, loss of fetal station and fetal bradycardia. She shows none of these.",
+   "Cervical ectropion": "An ectropion causes light spotting after intercourse or a speculum exam. It does not produce a pool of bright red blood in the third trimester."
   },
   "et": [
    [
@@ -310,12 +310,12 @@
    "Amniotic fluid embolism"
   ],
   "a": 0,
-  "e": "A painful, firm, tender uterus with only a little dark blood but shock out of proportion points to **placental abruption** with a concealed retroplacental clot. Cocaine constricts the maternal vessels and is a classic cause. Separation cuts off oxygen exchange, producing late decelerations, and tissue factor from the damaged decidua has started DIC, as the low fibrinogen shows. Placenta previa bleeds painlessly from a soft uterus. Uterine rupture usually occurs in labor at a prior scar, and amniotic fluid embolism presents with sudden hypoxemia.",
+  "e": "A painful, firm, tender uterus with only a little dark blood but shock out of proportion points to **placental abruption** with a concealed retroplacental clot. Cocaine constricts the maternal vessels and is a classic cause. Separation cuts off oxygen exchange, which causes late decelerations, and tissue factor from the damaged decidua has started DIC, as the low fibrinogen shows. Placenta previa bleeds painlessly from a soft uterus. Uterine rupture usually occurs in labor at a prior scar, and amniotic fluid embolism presents with sudden hypoxemia.",
   "w": {
-   "Placenta previa": "Previa bleeds bright red and painlessly from a soft uterus because the placenta sits over the os; her pain, rigid uterus and hidden blood loss point elsewhere.",
-   "Vasa previa": "Vasa previa loses fetal blood when the membranes rupture, so the mother stays stable; she is hypotensive and tachycardic with a tender uterus, which a fetal bleed cannot explain.",
-   "Uterine rupture": "Rupture happens mostly during labor at a prior cesarean scar, which the stem does not describe; cocaine-induced vasoconstriction and a hypertonic, tender uterus point instead to placental separation.",
-   "Amniotic fluid embolism": "Amniotic fluid embolism causes sudden hypoxemia and cardiovascular collapse during labor or right after delivery; her illness began with pain and a hypertonic uterus, not respiratory failure."
+   "Placenta previa": "Previa bleeds bright red and painlessly from a soft uterus because the placenta sits over the os. Her pain, rigid uterus and hidden blood loss point elsewhere.",
+   "Vasa previa": "Vasa previa loses fetal blood when the membranes rupture, so the mother stays stable. She is hypotensive and tachycardic with a tender uterus, which a fetal bleed cannot explain.",
+   "Uterine rupture": "Rupture happens mostly in labor at a prior cesarean scar, which the stem does not describe. Cocaine and a hypertonic, tender uterus point to placental separation instead.",
+   "Amniotic fluid embolism": "Amniotic fluid embolism causes sudden hypoxemia and collapse during labor or right after delivery. Her illness began with pain and a hypertonic uterus, not respiratory failure."
   },
   "et": [
    [
@@ -386,12 +386,12 @@
    "Laceration of the cervix during labor"
   ],
   "a": 0,
-  "e": "A velamentous insertion leaves umbilical vessels running unprotected through the membranes, and where they cross the os, membrane rupture tears them. The blood lost is the fetus's, so bleeding from torn **fetal vessels** causes immediate fetal bradycardia while the mother's vital signs stay normal. This is vasa previa. A separating placenta would cause pain and a tender uterus, and a previa usually bleeds before labor without sudden fetal collapse. Uterine rupture brings pain and loss of fetal station, and a cervical laceration bleeds after delivery.",
+  "e": "A velamentous insertion leaves umbilical vessels running unprotected through the membranes. Where they cross the os, membrane rupture tears them. The blood lost is the fetus's, so bleeding from torn **fetal vessels** causes immediate fetal bradycardia while the mother's vital signs stay normal. This is vasa previa. A separating placenta would cause pain and a tender uterus, and a previa usually bleeds before labor without sudden fetal collapse. Uterine rupture brings pain and loss of fetal station, and a cervical laceration bleeds after delivery.",
   "w": {
-   "Separation of a normally implanted placenta": "Abruption bleeds from the maternal side, causing pain, a tender hypertonic uterus and maternal tachycardia; her vitals are stable and she is pain-free between contractions while only the fetus is failing.",
-   "Placental tissue lying over the internal os": "A previa bleeds maternal blood, usually painlessly before labor begins; bleeding that starts exactly at membrane rupture with instant fetal collapse points to torn fetal vessels instead.",
-   "Rupture of the uterine wall": "Uterine rupture causes severe pain, loss of fetal station and maternal shock; her stable vital signs and pain-free intervals do not fit a torn uterine wall.",
-   "Laceration of the cervix during labor": "Cervical lacerations happen as the fetus is delivered and bleed afterward, causing maternal blood loss; they do not coincide with membrane rupture or cause fetal bradycardia."
+   "Separation of a normally implanted placenta": "Abruption bleeds from the maternal side, causing pain, a tender hypertonic uterus and maternal tachycardia. Her vital signs are stable and she is pain-free between contractions while only the fetus is failing.",
+   "Placental tissue lying over the internal os": "A previa bleeds maternal blood, usually painlessly before labor begins. Bleeding that starts exactly at membrane rupture with instant fetal collapse points to torn fetal vessels instead.",
+   "Rupture of the uterine wall": "Uterine rupture causes severe pain, loss of fetal station and maternal shock. Her stable vital signs and pain-free intervals do not fit a torn uterine wall.",
+   "Laceration of the cervix during labor": "Cervical lacerations happen as the fetus is delivered and bleed afterward, causing maternal blood loss. They do not coincide with membrane rupture or cause fetal bradycardia."
   },
   "et": [
    [
@@ -463,12 +463,12 @@
    "Fetal vessels running unprotected through the membranes"
   ],
   "a": 0,
-  "e": "This is the placenta accreta spectrum, and the underlying abnormality is **absent decidua basalis** at the prior scar. Decidua normally limits how deep villi can attach; where a cesarean scar has destroyed it, villi anchor to or invade the myometrium, so the placenta cannot separate and its open vessels bleed massively. A previa over a prior scar is the strongest risk. Shallow trophoblast invasion is the opposite problem and causes preeclampsia. Uterine atony can follow, but it does not explain a placenta that will not separate.",
+  "e": "This is the placenta accreta spectrum, and the underlying abnormality is **absent decidua basalis** at the prior scar. Decidua normally limits how deep villi can attach. Where a cesarean scar has destroyed it, villi anchor to or invade the myometrium, so the placenta cannot separate and its open vessels bleed massively. A previa over a prior scar is the strongest risk. Shallow trophoblast invasion is the opposite problem and causes preeclampsia. Uterine atony can follow, but it does not explain a placenta that will not separate.",
   "w": {
-   "Shallow trophoblast invasion of the spiral arteries": "Shallow invasion leaves spiral arteries muscular and causes preeclampsia and growth restriction; her placenta invaded too deeply, which is the opposite defect.",
-   "Retroplacental hematoma from a ruptured maternal vessel": "A retroplacental hematoma defines abruption, which separates the placenta too early; her problem is the reverse, a placenta that would not separate at all.",
-   "Failure of the myometrium to contract after delivery": "Atony is the commonest cause of postpartum hemorrhage, but it follows delivery of the placenta; here the placenta itself stayed fused to the wall, which atony cannot explain.",
-   "Fetal vessels running unprotected through the membranes": "Vasa previa bleeds fetal blood at membrane rupture before delivery; her hemorrhage is maternal and began only when the placenta failed to separate."
+   "Shallow trophoblast invasion of the spiral arteries": "Shallow invasion leaves the spiral arteries muscular and causes preeclampsia and growth restriction. Her placenta invaded too deeply, which is the opposite defect.",
+   "Retroplacental hematoma from a ruptured maternal vessel": "A retroplacental hematoma defines abruption, which separates the placenta too early. Her problem is the reverse, a placenta that would not separate at all.",
+   "Failure of the myometrium to contract after delivery": "Atony is the commonest cause of postpartum hemorrhage, but it follows delivery of the placenta. Here the placenta itself stayed fused to the wall, which atony cannot explain.",
+   "Fetal vessels running unprotected through the membranes": "Vasa previa bleeds fetal blood at membrane rupture before delivery. Her hemorrhage is maternal and began only when the placenta failed to separate."
   },
   "et": [
    [
@@ -539,12 +539,12 @@
    "Perform amniocentesis for fetal Rh typing"
   ],
   "a": 0,
-  "e": "An unsensitized Rh-negative woman carrying the baby of an Rh-positive partner should receive **anti-D immune globulin** at 28 weeks. Small, silent fetomaternal bleeds happen in the third trimester, and the injected antibody clears fetal red cells before her immune system can respond. A second dose follows within 72 hours of delivery if the newborn is Rh-positive, so waiting until delivery alone leaves her exposed for 12 weeks. Doppler studies and amniocentesis are for women who are already sensitized, which her negative screen excludes.",
+  "e": "An unsensitized Rh-negative woman carrying the baby of an Rh-positive partner should receive **anti-D immune globulin** at 28 weeks. Small, silent fetomaternal bleeds happen in the third trimester, and the injected antibody clears fetal red cells before her immune system can respond. A second dose follows within 72 hours of delivery if the newborn is Rh-positive, so waiting until delivery alone leaves her exposed for weeks. Doppler studies and amniocentesis are for women who are already sensitized, which her negative screen excludes.",
   "w": {
-   "Give anti-D immune globulin only after delivery": "The postpartum dose is needed too, but some women become sensitized during the third trimester from silent bleeds; the 28-week dose closes that window.",
-   "Repeat the antibody screen at 36 weeks": "Watching without treating allows sensitization to happen, and a positive screen at 36 weeks would be permanent; prophylaxis must come before she forms antibodies.",
-   "Begin serial middle cerebral artery Doppler studies": "Middle cerebral artery Doppler detects fetal anemia when a sensitized mother's antibodies are attacking fetal cells; her negative screen means no such attack is under way.",
-   "Perform amniocentesis for fetal Rh typing": "Amniocentesis carries risk and can itself cause fetomaternal bleeding; fetal typing matters mostly in sensitized women, and prophylaxis is simply given without knowing fetal type."
+   "Give anti-D immune globulin only after delivery": "The postpartum dose is needed too, but some women become sensitized in the third trimester from silent bleeds. The 28-week dose closes that window.",
+   "Repeat the antibody screen at 36 weeks": "Watching without treating allows sensitization to happen, and a positive screen at 36 weeks would be permanent. Prophylaxis must come before she forms antibodies.",
+   "Begin serial middle cerebral artery Doppler studies": "Middle cerebral artery Doppler detects fetal anemia when a sensitized mother's antibodies are attacking fetal cells. Her negative screen means no such attack is under way.",
+   "Perform amniocentesis for fetal Rh typing": "Amniocentesis carries risk and can itself cause fetomaternal bleeding. Fetal typing matters mostly in sensitized women, and prophylaxis is simply given without knowing the fetal type."
   },
   "et": [
    [
@@ -609,12 +609,12 @@
    "Defective fatty acid oxidation in the liver"
   ],
   "a": 0,
-  "e": "Maternal glucose crosses the placenta freely, but maternal insulin does not. The fetus answers months of hyperglycemia with **beta-cell hyperplasia** and high insulin output, which also drove his macrosomia. When the cord is clamped, the glucose supply stops but his hyperinsulinemia continues, so glucose falls within hours. His polycythemia fits too, because fetal hyperinsulinemia raises oxygen consumption. Transplacental maternal insulin is the tempting answer, but insulin does not cross, and depleted glycogen belongs to a growth-restricted infant, not a macrosomic one.",
+  "e": "Maternal glucose crosses the placenta freely, but maternal insulin does not. The fetus answers months of hyperglycemia with **beta-cell hyperplasia** and high insulin output, which also drove his macrosomia. When the cord is clamped, the glucose supply stops but his hyperinsulinemia continues, so his glucose falls within hours. His polycythemia fits too, because fetal hyperinsulinemia raises oxygen use. Transplacental maternal insulin is the tempting answer, but insulin does not cross, and depleted glycogen belongs to a growth-restricted infant, not a macrosomic one.",
   "w": {
-   "Transplacental passage of maternal insulin": "Maternal insulin barely crosses the placenta, which is exactly why fetal beta cells must respond to maternal glucose on their own; the excess insulin is his own.",
-   "Depleted glycogen stores from placental insufficiency": "Low glycogen and fat stores cause hypoglycemia in growth-restricted infants after placental insufficiency; a 4,600-g newborn has abundant stores, and his problem is excess insulin.",
-   "Cortisol deficiency from adrenal hypoplasia": "Adrenal insufficiency can cause neonatal hypoglycemia, usually with shock or salt wasting; nothing suggests it, and his mother's uncontrolled diabetes gives a direct cause.",
-   "Defective fatty acid oxidation in the liver": "Fatty acid oxidation defects cause hypoketotic hypoglycemia during fasting, usually after days to months; low glucose at 2 hours in a macrosomic infant of a diabetic mother reflects hyperinsulinemia."
+   "Transplacental passage of maternal insulin": "Maternal insulin barely crosses the placenta, which is why fetal beta cells must respond to maternal glucose on their own. The excess insulin is his own.",
+   "Depleted glycogen stores from placental insufficiency": "Low glycogen and fat stores cause hypoglycemia in growth-restricted infants. A 4,600-g newborn has abundant stores, and his problem is excess insulin.",
+   "Cortisol deficiency from adrenal hypoplasia": "Adrenal insufficiency can cause neonatal hypoglycemia, usually with shock or salt wasting. Nothing suggests it, and his mother's uncontrolled diabetes gives a direct cause.",
+   "Defective fatty acid oxidation in the liver": "Fatty acid oxidation defects cause low glucose without ketones during fasting, usually after days to months. Low glucose at 2 hours in a macrosomic infant of a diabetic mother reflects hyperinsulinemia."
   },
   "et": [
    [
@@ -676,7 +676,7 @@
   "bp": [
    "BP-rp27-04"
   ],
-  "s": "A 26-year-old woman, gravida 2, para 1, at 26 weeks' gestation comes for a routine visit. She has no history of diabetes, and her body mass index before pregnancy was 23 kg/m2. One hour after a 50-g oral glucose load, taken without fasting, her plasma glucose is 152 mg/dL. Her previous pregnancy was uncomplicated.",
+  "s": "A 26-year-old woman, gravida 2, para 1, at 26 weeks' gestation comes for a routine visit. She has no history of diabetes, and her body mass index before pregnancy was 23 kg/m2. One hour after a 50-g oral glucose load, taken without fasting, her plasma glucose is above the screening cutoff. Her previous pregnancy was uncomplicated.",
   "l": "Which is the most appropriate next step?",
   "o": [
    "3-hour 100-g oral glucose tolerance test",
@@ -686,12 +686,12 @@
    "Fasting glucose each morning for a week"
   ],
   "a": 0,
-  "e": "The two-step approach screens with a nonfasting 1-hour, 50-g glucose challenge; a value above the cutoff (130 to 140 mg/dL, depending on the program) is only a positive screen. The diagnosis requires a fasting **3-hour, 100-g glucose tolerance test**, in which two or more abnormal values confirm gestational diabetes. Starting insulin would treat a diagnosis not yet made, and hemoglobin A1c is too insensitive to the late hyperglycemia of pregnancy to diagnose it. Repeating the screen at 32 weeks would delay treatment past the point where it prevents macrosomia.",
+  "e": "The two-step approach screens with a nonfasting 1-hour, 50-g glucose challenge. A value above the cutoff is only a positive screen. The diagnosis requires a fasting **3-hour, 100-g glucose tolerance test**. Starting insulin would treat a diagnosis not yet made, and hemoglobin A1c is too insensitive to the late hyperglycemia of pregnancy to diagnose it. Repeating the screen at 32 weeks would delay treatment past the point where it prevents macrosomia.",
   "w": {
-   "Hemoglobin A1c measurement": "A1c reflects three months of glucose and misses the post-meal hyperglycemia that develops late in pregnancy; it helps detect preexisting diabetes early but cannot confirm gestational diabetes.",
-   "Begin insulin therapy": "A 1-hour challenge is a screen with many false positives; treatment starts only after the diagnostic test, and even then diet and exercise usually come before insulin.",
-   "Repeat the 50-g test at 32 weeks": "Repeating the screen later wastes the window when treatment prevents fetal overgrowth; an abnormal screen at 24 to 28 weeks is followed promptly by the diagnostic test.",
-   "Fasting glucose each morning for a week": "Home fasting values help monitor diagnosed patients, but they are not a validated diagnostic test and miss the post-load hyperglycemia that defines gestational diabetes."
+   "Hemoglobin A1c measurement": "A1c reflects three months of glucose and misses the after-meal hyperglycemia that develops late in pregnancy. It helps find preexisting diabetes early but cannot confirm gestational diabetes.",
+   "Begin insulin therapy": "A 1-hour challenge is a screen with many false positives. Treatment starts only after the diagnostic test, and even then diet and exercise usually come before insulin.",
+   "Repeat the 50-g test at 32 weeks": "Repeating the screen later wastes the window when treatment prevents fetal overgrowth. An abnormal screen is followed promptly by the diagnostic test.",
+   "Fasting glucose each morning for a week": "Home fasting values help monitor diagnosed patients, but they are not a validated diagnostic test and miss the after-load hyperglycemia that defines gestational diabetes."
   },
   "et": [
    [

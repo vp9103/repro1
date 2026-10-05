@@ -3,22 +3,73 @@
  "c": "rp24",
  "kind": "sort",
  "t": "Ductal or lobular lineage?",
- "tags": ["histology-to-diagnosis", "tumor-progression"],
+ "tags": [
+  "histology-to-diagnosis",
+  "tumor-progression"
+ ],
  "a": "Ductal (DCIS, invasive ductal)",
  "bb": "Lobular (LCIS, invasive lobular)",
  "key": "Ask whether the cells still stick together. Ductal cells keep E-cadherin, so they fill ducts, necrose, calcify and form masses; lobular cells lose E-cadherin, so they fall apart, rarely calcify and spread in single file.",
  "items": [
-  ["Comedo necrosis in the center of the duct", "a", "Cohesive ductal cells pack the duct so tightly that the central cells lose their blood supply and die."],
-  ["Linear branching microcalcifications", "a", "Calcified comedo debris is the mammographic signature of ductal carcinoma in situ."],
-  ["Cribriform pattern with punched-out spaces", "a", "Cohesive DCIS cells bridge the duct and leave sieve-like holes, a ductal architecture."],
-  ["Hard stellate mass with desmoplasia", "a", "Invasive ductal carcinoma provokes a dense fibrous stroma that makes a gritty, spiculated mass."],
-  ["Paget disease of the nipple", "a", "Paget cells come from an underlying ductal carcinoma that has traveled up the lactiferous ducts."],
-  ["Most common invasive breast cancer", "a", "Invasive ductal carcinoma of no special type makes up about three quarters of cases."],
-  ["Complete loss of E-cadherin staining", "b", "Lobular cells lose the CDH1 product, which is why they no longer hold together."],
-  ["Single-file cells infiltrating the stroma", "b", "Dyscohesive lobular cells slip through the stroma one behind another instead of forming glands."],
-  ["Incidental finding on a biopsy done for another lesion", "b", "LCIS rarely calcifies or forms a mass, so it is usually discovered by chance."],
-  ["Marks raised cancer risk in both breasts", "b", "LCIS is a bilateral risk marker rather than a precursor confined to the biopsy site."],
-  ["Metastases to peritoneum, ovary and meninges", "b", "Invasive lobular carcinoma favors unusual sites such as serosal surfaces and the leptomeninges."],
-  ["Germline CDH1 with diffuse gastric cancer", "b", "Hereditary diffuse gastric cancer families also develop lobular breast cancer through the same adhesion defect."]
+  [
+   "Comedo necrosis in the center of the duct",
+   "a",
+   "Cohesive ductal cells pack the duct so tightly that the central cells lose their blood supply and die."
+  ],
+  [
+   "Linear branching microcalcifications",
+   "a",
+   "Calcified comedo debris is the mammographic signature of ductal carcinoma in situ."
+  ],
+  [
+   "Cribriform pattern with punched-out spaces",
+   "a",
+   "Cohesive DCIS cells bridge the duct and leave sieve-like holes, a ductal architecture."
+  ],
+  [
+   "Hard stellate mass with desmoplasia",
+   "a",
+   "Invasive ductal carcinoma provokes a dense fibrous stroma that makes a gritty, spiculated mass."
+  ],
+  [
+   "Paget disease of the nipple",
+   "a",
+   "Paget cells come from an underlying ductal carcinoma that has traveled up the lactiferous ducts."
+  ],
+  [
+   "Most common invasive breast cancer",
+   "a",
+   "Invasive ductal carcinoma of no special type makes up about three quarters of cases."
+  ],
+  [
+   "Complete loss of E-cadherin staining",
+   "b",
+   "Lobular cells lose the CDH1 product, which is why they no longer hold together."
+  ],
+  [
+   "Single-file cells infiltrating the stroma",
+   "b",
+   "Dyscohesive lobular cells slip through the stroma one behind another instead of forming glands."
+  ],
+  [
+   "Incidental finding on a biopsy done for another lesion",
+   "b",
+   "LCIS rarely calcifies or forms a mass, so it is usually discovered by chance."
+  ],
+  [
+   "Marks raised cancer risk in both breasts",
+   "b",
+   "LCIS is a bilateral risk marker rather than a precursor confined to the biopsy site."
+  ],
+  [
+   "Metastases to peritoneum, gut and ovary",
+   "b",
+   "Invasive lobular carcinoma favors unusual sites such as serosal surfaces, the gut and the ovaries."
+  ],
+  [
+   "Germline CDH1 with diffuse gastric cancer",
+   "b",
+   "Hereditary diffuse gastric cancer families also develop lobular breast cancer through the same adhesion defect."
+  ]
  ]
 }

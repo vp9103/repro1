@@ -2,96 +2,229 @@
  {
   "id": "rp17q01",
   "d": 1,
-  "tags": ["virulence-factors"],
-  "bp": ["BP-rp17-02"],
-  "obj": ["VIRAL-STI-TORCH.4"],
+  "tags": [
+   "virulence-factors"
+  ],
+  "bp": [
+   "BP-rp17-02"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.4"
+  ],
   "s": "A researcher studies HIV entry into cultured helper T cells. Adding a monoclonal antibody that prevents the virion from docking onto the CD4 molecule completely blocks infection, even though the cells express normal CCR5 coreceptors.",
   "l": "Which viral protein does this antibody most likely bind?",
-  "o": ["gp120", "gp41", "p24", "Reverse transcriptase", "Integrase"],
+  "o": [
+   "gp120",
+   "gp41",
+   "p24",
+   "Reverse transcriptase",
+   "Integrase"
+  ],
   "a": 0,
-  "e": "HIV entry is a two-step handshake. The envelope glycoprotein **gp120** first binds CD4, then changes shape to bind a coreceptor, CCR5 or CXCR4. Only after both contacts does gp41, the transmembrane subunit, unfold and fuse the viral envelope with the cell membrane, the step enfuvirtide blocks. An antibody that prevents docking on CD4 must therefore target gp120. The p24 capsid, reverse transcriptase and integrase sit inside the virion and act after entry, so antibodies against them cannot stop attachment.",
+  "e": "HIV entry is a two-step handshake. The envelope protein **gp120** first binds CD4, then changes shape to bind a coreceptor, CCR5 or CXCR4. Only after both contacts does gp41 unfold and fuse the viral envelope with the cell membrane, the step that enfuvirtide blocks. An antibody that stops docking on CD4 must therefore bind gp120. The p24 capsid, reverse transcriptase and integrase sit inside the virion and act after entry, so antibodies against them cannot stop attachment.",
   "w": {
-   "gp41": "gp41 is the transmembrane envelope subunit that performs fusion only after gp120 has bound CD4 and a coreceptor; enfuvirtide targets it, not the first contact.",
-   "p24": "p24 forms the capsid inside the viral envelope and is the antigen measured by fourth-generation tests; it is hidden from the cell surface during attachment.",
-   "Reverse transcriptase": "Reverse transcriptase copies viral RNA into DNA in the cytoplasm after entry, so blocking it prevents replication but cannot stop the virion attaching to cells.",
-   "Integrase": "Integrase inserts viral DNA into the host chromosome inside the nucleus, a late step that the -tegravir drugs block long after attachment has happened."
+   "gp41": "gp41 does the fusion step only after gp120 has bound CD4 and a coreceptor. Enfuvirtide targets it, not the first contact.",
+   "p24": "p24 forms the capsid inside the viral envelope and is the antigen measured by fourth-generation tests. It is hidden from the cell surface during attachment.",
+   "Reverse transcriptase": "Reverse transcriptase copies viral RNA into DNA after entry. Blocking it stops replication but cannot stop the virion from attaching to cells.",
+   "Integrase": "Integrase inserts viral DNA into the host chromosome inside the nucleus, a late step that the -tegravir drugs block long after attachment."
   },
   "et": [
-   ["Option", "Location in the virion", "Replication step", "Acts before or after entry"],
    [
-    ["gp120", "Envelope surface", "Binds CD4, then coreceptor", "Before entry"],
-    ["gp41", "Envelope, transmembrane", "Fuses envelope with membrane", "At entry, after docking"],
-    ["p24", "Capsid core", "Protects the genome", "Inside the virion"],
-    ["Reverse transcriptase", "Inside the capsid", "Copies RNA into DNA", "After entry"],
-    ["Integrase", "Inside the capsid", "Inserts the provirus", "After entry, in the nucleus"]
+    "Option",
+    "Location in the virion",
+    "Replication step",
+    "Acts before or after entry"
+   ],
+   [
+    [
+     "gp120",
+     "Envelope surface",
+     "Binds CD4, then coreceptor",
+     "Before entry"
+    ],
+    [
+     "gp41",
+     "Envelope, transmembrane",
+     "Fuses envelope with membrane",
+     "At entry, after docking"
+    ],
+    [
+     "p24",
+     "Capsid core",
+     "Protects the genome",
+     "Inside the virion"
+    ],
+    [
+     "Reverse transcriptase",
+     "Inside the capsid",
+     "Copies RNA into DNA",
+     "After entry"
+    ],
+    [
+     "Integrase",
+     "Inside the capsid",
+     "Inserts the provirus",
+     "After entry, in the nucleus"
+    ]
    ]
   ],
   "bl": "gp120 binds CD4 and then CCR5 or CXCR4; gp41 fuses the membranes only after that docking step.",
   "ef": "rp17_hiv",
   "pt": {
-   "hl": ["gp120 binds CD4, then a"],
+   "hl": [
+    "gp120 binds CD4, then a"
+   ],
    "say": "Look at step 1, attachment: gp120 binds CD4, then a coreceptor, CCR5 or CXCR4, before gp41 performs fusion in step 2."
   }
  },
  {
   "id": "rp17q02",
   "d": 2,
-  "tags": ["virulence-factors"],
-  "bp": ["BP-rp17-14", "BP-rp17-16"],
-  "obj": ["VIRAL-STI-TORCH.3"],
+  "tags": [
+   "virulence-factors"
+  ],
+  "bp": [
+   "BP-rp17-14",
+   "BP-rp17-16"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.3"
+  ],
   "s": "A 35-year-old man comes for counseling. For 8 years he has had frequent condomless intercourse with a partner who has untreated HIV infection, yet repeated HIV tests have been negative. In a research study, his CD4 T cells cannot be infected by macrophage-tropic HIV isolates in culture but are readily infected by T-cell-tropic isolates.",
   "l": "Which genetic finding best explains his resistance to infection?",
-  "o": ["Homozygous CCR5 deletion", "Heterozygous CCR5 deletion", "Homozygous CXCR4 deletion", "HLA-B*57:01 allele", "CD4 gene duplication"],
+  "o": [
+   "Homozygous CCR5 deletion",
+   "Heterozygous CCR5 deletion",
+   "Homozygous CXCR4 deletion",
+   "HLA-B*57:01 allele",
+   "CD4 gene duplication"
+  ],
   "a": 0,
-  "e": "Transmission and early infection depend on CCR5-tropic, macrophage-tropic strains, which need gp120 to bind CD4 and then the CCR5 coreceptor. People **homozygous** for the CCR5 delta-32 deletion make no functional CCR5, so these strains cannot enter, which matches his cells resisting macrophage-tropic isolates while CXCR4-using T-cell-tropic isolates still infect them. Heterozygotes express less CCR5 and progress more slowly but are not protected from infection. HLA-B*57:01 is linked to slower progression and to abacavir hypersensitivity, not to resistance to infection.",
+  "e": "Transmission and early infection depend on CCR5-using, macrophage-tropic strains, which need gp120 to bind CD4 and then the CCR5 coreceptor. People who are **homozygous** for the CCR5 delta-32 deletion make no working CCR5, so these strains cannot enter. That matches his cells, which resist macrophage-tropic isolates but are still infected by CXCR4-using, T-cell-tropic isolates. Heterozygotes have less CCR5 and progress more slowly, but they are not protected from infection. HLA-B*57:01 is linked to abacavir hypersensitivity, not to resistance to infection.",
   "w": {
-   "Heterozygous CCR5 deletion": "One copy of the delta-32 allele lowers CCR5 density and slows progression after infection, but enough coreceptor remains for macrophage-tropic virus to establish infection.",
-   "Homozygous CXCR4 deletion": "Losing CXCR4 would block T-cell-tropic strains, yet his cells are infected by exactly those isolates and resist the CCR5-using strains that transmit infection.",
-   "HLA-B*57:01 allele": "This class I allele is associated with slow progression in people already infected and with abacavir hypersensitivity; it does not stop the virus entering cells.",
-   "CD4 gene duplication": "Extra CD4 would, if anything, give the virus more receptor to bind; both macrophage-tropic and T-cell-tropic strains need CD4, so it cannot explain selective resistance."
+   "Heterozygous CCR5 deletion": "One copy of the delta-32 allele lowers CCR5 levels and slows progression after infection, but enough coreceptor remains for the virus to establish infection.",
+   "Homozygous CXCR4 deletion": "Losing CXCR4 would block T-cell-tropic strains. His cells are infected by exactly those isolates and resist the CCR5-using strains that spread infection.",
+   "HLA-B*57:01 allele": "This allele is linked to abacavir hypersensitivity. It does not stop the virus from entering cells.",
+   "CD4 gene duplication": "Extra CD4 would give the virus more receptor to bind. Both macrophage-tropic and T-cell-tropic strains need CD4, so it cannot explain resistance to only one kind."
   },
   "et": [
-   ["Option", "Effect on receptor or coreceptor", "Macrophage-tropic strains", "Clinical effect"],
    [
-    ["Homozygous CCR5 deletion", "No functional CCR5", "Cannot enter", "Strong protection from infection"],
-    ["Heterozygous CCR5 deletion", "Less CCR5", "Enter less efficiently", "Slower progression"],
-    ["Homozygous CXCR4 deletion", "No CXCR4", "Enter normally", "Would block only late strains"],
-    ["HLA-B*57:01 allele", "None", "Enter normally", "Slow progression; abacavir reaction"],
-    ["CD4 gene duplication", "More CD4", "Enter normally", "No protection"]
+    "Option",
+    "Effect on receptor or coreceptor",
+    "Macrophage-tropic strains",
+    "Clinical effect"
+   ],
+   [
+    [
+     "Homozygous CCR5 deletion",
+     "No functional CCR5",
+     "Cannot enter",
+     "Strong protection from infection"
+    ],
+    [
+     "Heterozygous CCR5 deletion",
+     "Less CCR5",
+     "Enter less efficiently",
+     "Slower progression"
+    ],
+    [
+     "Homozygous CXCR4 deletion",
+     "No CXCR4",
+     "Enter normally",
+     "Would block only late strains"
+    ],
+    [
+     "HLA-B*57:01 allele",
+     "None",
+     "Enter normally",
+     "Abacavir hypersensitivity"
+    ],
+    [
+     "CD4 gene duplication",
+     "More CD4",
+     "Enter normally",
+     "No protection"
+    ]
    ]
   ],
   "bl": "A homozygous CCR5 delta-32 deletion removes the coreceptor that transmitted, macrophage-tropic HIV needs, protecting against infection.",
   "ef": "rp17_hiv",
   "pt": {
-   "hl": ["coreceptor: CCR5 or CXCR4"],
+   "hl": [
+    "coreceptor: CCR5 or CXCR4"
+   ],
    "say": "Step 1 shows gp120 needing a coreceptor, CCR5 or CXCR4; a homozygous CCR5 deletion removes the one that early, transmitted strains use."
   }
  },
  {
   "id": "rp17q03",
   "d": 2,
-  "tags": ["serology-reading", "workup-sequence"],
-  "bp": ["BP-rp17-03", "BP-rp17-12"],
-  "obj": ["VIRAL-STI-TORCH.8"],
+  "tags": [
+   "serology-reading",
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp17-03",
+   "BP-rp17-12"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.8"
+  ],
   "s": "A 24-year-old man comes to the clinic because of fever, sore throat and a rash for 5 days. Three weeks ago he had condomless intercourse with a new partner. Temperature is 38.6°C. Examination shows a diffuse maculopapular rash on the trunk, shallow oral ulcers and generalized lymphadenopathy. A heterophile antibody test is negative. A rapid antibody-only HIV test is also negative.",
   "l": "Which test is most likely to confirm the diagnosis at this stage?",
-  "o": ["HIV-1 RNA nucleic acid test", "Repeat antibody-only test today", "CD4 T-cell count", "HIV-1/HIV-2 antibody differentiation assay", "Western blot for HIV antibodies"],
+  "o": [
+   "HIV-1 RNA nucleic acid test",
+   "Repeat antibody-only test today",
+   "CD4 T-cell count",
+   "HIV-1/HIV-2 antibody differentiation assay",
+   "Western blot for HIV antibodies"
+  ],
   "a": 0,
-  "e": "Fever, pharyngitis, rash, oral ulcers and lymphadenopathy 2 to 4 weeks after a sexual exposure, with a negative heterophile test, suggest acute retroviral syndrome. The virus is replicating to very high levels, but antibodies may not yet be detectable, so an antibody-only test is negative during this window period. An HIV-1 **RNA nucleic acid test** detects viremia about 10 days after infection and confirms acute HIV. Repeating the antibody test, a Western blot or a differentiation assay all depend on antibody that has not formed, and the CD4 count does not diagnose HIV.",
+  "e": "Fever, pharyngitis, rash, oral ulcers and lymphadenopathy 2 to 4 weeks after sexual exposure, with a negative heterophile test, suggest acute retroviral syndrome. The virus is replicating to very high levels, but antibodies are not yet detectable, so an antibody-only test is negative during this window period. An HIV-1 **RNA test** finds the virus about 10 days after infection and confirms acute HIV. Repeating the antibody test, or running a Western blot or differentiation assay, all depend on antibody that has not formed yet. The CD4 count does not diagnose HIV.",
   "w": {
-   "Repeat antibody-only test today": "Antibody takes about 3 to 12 weeks to become detectable, so repeating the same antibody test on the same day gives the same false-negative result.",
-   "CD4 T-cell count": "The CD4 count measures immune damage and guides prophylaxis; in acute infection it may dip briefly, but it never diagnoses HIV on its own.",
-   "HIV-1/HIV-2 antibody differentiation assay": "The differentiation assay is the second step after a reactive antigen/antibody screen; it detects antibodies too and is often negative in acute infection.",
-   "Western blot for HIV antibodies": "Western blot is an older antibody confirmation test that is no longer part of the algorithm, and like any antibody test it misses the window period."
+   "Repeat antibody-only test today": "Antibody takes weeks to become detectable, so repeating the same antibody test today gives the same false-negative result.",
+   "CD4 T-cell count": "The CD4 count measures immune damage and guides prophylaxis. It never diagnoses HIV on its own.",
+   "HIV-1/HIV-2 antibody differentiation assay": "The differentiation assay is the second step after a reactive antigen/antibody screen. It also detects antibody, so it is often negative in acute infection.",
+   "Western blot for HIV antibodies": "Western blot is an older antibody confirmation test. Like any antibody test, it misses the window period."
   },
   "et": [
-   ["Option", "What it detects", "Earliest positive after infection", "Role in the algorithm"],
    [
-    ["HIV-1 RNA nucleic acid test", "Viral RNA", "About 10 days", "Confirms acute infection"],
-    ["Repeat antibody-only test today", "Anti-HIV antibody", "About 3 to 12 weeks", "Rapid or home screening"],
-    ["CD4 T-cell count", "Helper T cells", "Not a diagnostic test", "Staging and prophylaxis"],
-    ["HIV-1/HIV-2 antibody differentiation assay", "Antibody type", "Weeks, after antibody forms", "Second step after a reactive screen"],
-    ["Western blot for HIV antibodies", "Antibody bands", "Weeks, after antibody forms", "Retired confirmation test"]
+    "Option",
+    "What it detects",
+    "Earliest positive after infection",
+    "Role in the algorithm"
+   ],
+   [
+    [
+     "HIV-1 RNA nucleic acid test",
+     "Viral RNA",
+     "About 10 days",
+     "Confirms acute infection"
+    ],
+    [
+     "Repeat antibody-only test today",
+     "Anti-HIV antibody",
+     "Weeks",
+     "Rapid or home screening"
+    ],
+    [
+     "CD4 T-cell count",
+     "Helper T cells",
+     "Not a diagnostic test",
+     "Staging and prophylaxis"
+    ],
+    [
+     "HIV-1/HIV-2 antibody differentiation assay",
+     "Antibody type",
+     "Weeks, after antibody forms",
+     "Second step after a reactive screen"
+    ],
+    [
+     "Western blot for HIV antibodies",
+     "Antibody bands",
+     "Weeks, after antibody forms",
+     "Retired confirmation test"
+    ]
    ]
   ],
   "bl": "Suspected acute HIV with a negative antibody test calls for an HIV-1 RNA nucleic acid test, because antibodies lag behind viremia."
@@ -99,28 +232,70 @@
  {
   "id": "rp17q04",
   "d": 1,
-  "tags": ["adverse-effects"],
-  "bp": ["BP-rp17-06"],
-  "obj": ["VIRAL-STI-TORCH.9"],
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp17-06"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.9"
+  ],
   "s": "A 40-year-old man with newly diagnosed HIV infection is about to start a single-tablet regimen containing abacavir, lamivudine and dolutegravir. His CD4 count is 450 cells/mm³, and his viral load is 60,000 copies/mL. Hepatitis B serologies are negative.",
   "l": "Screening for which of the following is required before this regimen is started?",
-  "o": ["HLA-B*57:01", "HLA-B*15:02", "HLA-B27", "G6PD activity", "CCR5 tropism assay"],
+  "o": [
+   "HLA-B*57:01",
+   "HLA-B*15:02",
+   "HLA-B27",
+   "G6PD activity",
+   "CCR5 tropism assay"
+  ],
   "a": 0,
-  "e": "Abacavir causes a potentially fatal **hypersensitivity reaction**, with fever, rash, gastrointestinal and respiratory symptoms, in people who carry HLA-B*57:01, because the drug binds that HLA molecule and changes the peptides it presents to T cells. Screening before the first dose and avoiding abacavir in carriers has nearly eliminated the reaction. HLA-B*15:02 predicts carbamazepine-induced Stevens-Johnson syndrome, HLA-B27 is linked to spondyloarthritis, G6PD deficiency matters for oxidant drugs such as primaquine and dapsone, and a tropism assay is needed only before maraviroc.",
+  "e": "Abacavir can cause a dangerous **hypersensitivity reaction**, with fever, rash, and stomach and breathing symptoms, in people who carry HLA-B*57:01. Testing before the first dose and avoiding abacavir in carriers prevents it. HLA-B*15:02 predicts carbamazepine-induced Stevens-Johnson syndrome. HLA-B27 is linked to spondyloarthritis. G6PD deficiency matters for oxidant drugs such as primaquine and dapsone. A tropism assay is needed only before maraviroc.",
   "w": {
-   "HLA-B*15:02": "HLA-B*15:02, common in people of Southeast Asian ancestry, predicts Stevens-Johnson syndrome from carbamazepine and related anticonvulsants, not a reaction to antiretroviral drugs.",
-   "HLA-B27": "HLA-B27 is linked to ankylosing spondylitis and reactive arthritis; it predicts no reaction to abacavir and is not checked before antiretroviral therapy.",
-   "G6PD activity": "G6PD deficiency causes hemolysis with oxidant drugs such as primaquine, dapsone and sulfonamides; none of this regimen's drugs require the test.",
-   "CCR5 tropism assay": "A tropism assay is needed only before maraviroc, which works solely against CCR5-using virus; this regimen contains no entry inhibitor."
+   "HLA-B*15:02": "HLA-B*15:02 predicts Stevens-Johnson syndrome from carbamazepine and related anticonvulsants. It is not tied to antiretroviral reactions.",
+   "HLA-B27": "HLA-B27 is linked to ankylosing spondylitis and reactive arthritis. It does not predict a reaction to abacavir.",
+   "G6PD activity": "G6PD deficiency causes hemolysis with oxidant drugs such as primaquine, dapsone and sulfonamides. None of this regimen's drugs require the test.",
+   "CCR5 tropism assay": "A tropism assay is needed only before maraviroc, which works only against CCR5-using virus. This regimen has no entry inhibitor."
   },
   "et": [
-   ["Option", "Drug it guides", "What it predicts", "Type of test"],
    [
-    ["HLA-B*57:01", "Abacavir", "Severe hypersensitivity reaction", "Host HLA genotype"],
-    ["HLA-B*15:02", "Carbamazepine", "Stevens-Johnson syndrome", "Host HLA genotype"],
-    ["HLA-B27", "No drug", "Spondyloarthritis risk", "Host HLA genotype"],
-    ["G6PD activity", "Primaquine, dapsone", "Oxidant hemolysis", "Host enzyme level"],
-    ["CCR5 tropism assay", "Maraviroc", "Whether CCR5 blockade will work", "Viral coreceptor use"]
+    "Option",
+    "Drug it guides",
+    "What it predicts",
+    "Type of test"
+   ],
+   [
+    [
+     "HLA-B*57:01",
+     "Abacavir",
+     "Severe hypersensitivity reaction",
+     "Host HLA genotype"
+    ],
+    [
+     "HLA-B*15:02",
+     "Carbamazepine",
+     "Stevens-Johnson syndrome",
+     "Host HLA genotype"
+    ],
+    [
+     "HLA-B27",
+     "No drug",
+     "Spondyloarthritis risk",
+     "Host HLA genotype"
+    ],
+    [
+     "G6PD activity",
+     "Primaquine, dapsone",
+     "Oxidant hemolysis",
+     "Host enzyme level"
+    ],
+    [
+     "CCR5 tropism assay",
+     "Maraviroc",
+     "Whether CCR5 blockade will work",
+     "Viral coreceptor use"
+    ]
    ]
   ],
   "bl": "Screen for HLA-B*57:01 before abacavir, because carriers develop a severe, potentially fatal hypersensitivity reaction."
@@ -128,28 +303,71 @@
  {
   "id": "rp17q05",
   "d": 3,
-  "tags": ["adverse-effects", "drug-mechanism"],
-  "bp": ["BP-rp17-15"],
-  "obj": ["VIRAL-STI-TORCH.9"],
+  "tags": [
+   "adverse-effects",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp17-15"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.9"
+  ],
   "s": "A 45-year-old woman with HIV infection has been treated for many years with an older regimen that includes stavudine and didanosine. She comes to the emergency department because of nausea, abdominal pain and rapid breathing for 1 week. Respiratory rate is 28/min. The liver is enlarged. Arterial pH is 7.26, serum bicarbonate is 13 mEq/L and serum lactate is 7 mmol/L. Ultrasound shows diffuse hepatic steatosis. Serum lipase is mildly elevated.",
   "l": "Inhibition of which enzyme is the most likely cause of her condition?",
-  "o": ["Mitochondrial DNA polymerase gamma", "Pyruvate dehydrogenase", "Hepatic CYP3A4", "Reverse transcriptase", "Nuclear DNA polymerase alpha"],
+  "o": [
+   "Mitochondrial DNA polymerase gamma",
+   "Pyruvate dehydrogenase",
+   "Hepatic CYP3A4",
+   "Reverse transcriptase",
+   "Nuclear DNA polymerase alpha"
+  ],
   "a": 0,
-  "e": "Lactic acidosis with hepatomegaly and steatosis in a patient taking older nucleoside analogs is NRTI **mitochondrial toxicity**. The drugs are meant to terminate viral DNA made by reverse transcriptase, but they also inhibit mitochondrial DNA polymerase gamma, so cells lose mitochondrial DNA and oxidative phosphorylation, shift to anaerobic glycolysis and release lactate, while fat builds up in the liver. Stavudine and didanosine were the worst offenders, which is also why they caused pancreatitis and neuropathy. Pyruvate dehydrogenase failure also raises lactate, but these drugs do not act on it, and CYP3A4 inhibition is ritonavir's boosting action.",
+  "e": "Lactic acidosis with an enlarged liver and fatty change in a patient taking older nucleoside analogs is NRTI **mitochondrial toxicity**. These drugs are meant to end viral DNA chains made by reverse transcriptase, but they also inhibit mitochondrial DNA polymerase gamma. Cells lose mitochondrial DNA and oxidative phosphorylation, shift to anaerobic glycolysis and release lactate, while fat builds up in the liver. Stavudine and didanosine were the worst offenders, which is also why they caused pancreatitis and neuropathy. Pyruvate dehydrogenase failure also raises lactate, but these drugs do not act on it. CYP3A4 inhibition is ritonavir's boosting action.",
   "w": {
-   "Pyruvate dehydrogenase": "Pyruvate dehydrogenase deficiency or thiamine deficiency also causes lactic acidosis, but nucleoside analogs do not target this enzyme; their target is mitochondrial DNA replication.",
-   "Hepatic CYP3A4": "CYP3A4 inhibition is how ritonavir and cobicistat boost other drugs; it causes drug interactions, not mitochondrial failure with lactic acidosis.",
-   "Reverse transcriptase": "Blocking reverse transcriptase is the intended antiviral action of these drugs; human cells do not depend on it for their own DNA, so it cannot explain the liver injury.",
-   "Nuclear DNA polymerase alpha": "Nucleoside analogs bind host nuclear polymerases only weakly, which is why dividing cells are largely spared; the susceptible host enzyme is the mitochondrial polymerase."
+   "Pyruvate dehydrogenase": "Pyruvate dehydrogenase deficiency or thiamine deficiency also causes lactic acidosis, but nucleoside analogs do not target this enzyme. They target mitochondrial DNA replication.",
+   "Hepatic CYP3A4": "CYP3A4 inhibition is how ritonavir boosts other drugs. It causes drug interactions, not mitochondrial failure with lactic acidosis.",
+   "Reverse transcriptase": "Blocking reverse transcriptase is the intended antiviral action of these drugs. Human cells do not use it to copy their own DNA, so it cannot explain the liver injury.",
+   "Nuclear DNA polymerase alpha": "Nucleoside analogs bind the host nuclear polymerases only weakly, which is why dividing cells are mostly spared. The vulnerable host enzyme is the mitochondrial polymerase."
   },
   "et": [
-   ["Option", "Normal role", "Effect of inhibition", "Classic cause of inhibition"],
    [
-    ["Mitochondrial DNA polymerase gamma", "Copies mitochondrial DNA", "Lactic acidosis, hepatic steatosis", "Older NRTIs such as stavudine"],
-    ["Pyruvate dehydrogenase", "Feeds pyruvate into the TCA cycle", "Lactic acidosis, neurologic signs", "Thiamine deficiency, arsenic"],
-    ["Hepatic CYP3A4", "Metabolizes many drugs", "Higher levels of partner drugs", "Ritonavir, cobicistat"],
-    ["Reverse transcriptase", "Copies HIV RNA into DNA", "Stops viral replication", "All NRTIs and NNRTIs"],
-    ["Nuclear DNA polymerase alpha", "Replicates nuclear DNA", "Blocks cell division", "Cytarabine"]
+    "Option",
+    "Normal role",
+    "Effect of inhibition",
+    "Classic cause of inhibition"
+   ],
+   [
+    [
+     "Mitochondrial DNA polymerase gamma",
+     "Copies mitochondrial DNA",
+     "Lactic acidosis, hepatic steatosis",
+     "Older NRTIs such as stavudine"
+    ],
+    [
+     "Pyruvate dehydrogenase",
+     "Feeds pyruvate into the TCA cycle",
+     "Lactic acidosis, neurologic signs",
+     "Thiamine deficiency, arsenic"
+    ],
+    [
+     "Hepatic CYP3A4",
+     "Metabolizes many drugs",
+     "Higher levels of partner drugs",
+     "Ritonavir, cobicistat"
+    ],
+    [
+     "Reverse transcriptase",
+     "Copies HIV RNA into DNA",
+     "Stops viral replication",
+     "All NRTIs and NNRTIs"
+    ],
+    [
+     "Nuclear DNA polymerase alpha",
+     "Replicates nuclear DNA",
+     "Blocks cell division",
+     "Cytarabine"
+    ]
    ]
   ],
   "bl": "Older NRTIs inhibit mitochondrial DNA polymerase gamma, causing lactic acidosis with hepatic steatosis, pancreatitis and neuropathy."
@@ -157,57 +375,144 @@
  {
   "id": "rp17q06",
   "d": 2,
-  "tags": ["maternal-fetal-transfer", "screening-prevention"],
-  "bp": ["BP-rp17-05"],
-  "obj": ["VIRAL-STI-TORCH.4"],
-  "s": "A 27-year-old woman with HIV infection comes for a prenatal visit at 36 weeks' gestation. She started antiretroviral therapy at 20 weeks but has missed many doses. Her HIV RNA level now is 2,400 copies/mL, and her CD4 count is 380 cells/mm³. The pregnancy has otherwise been uncomplicated, and the fetus is in cephalic presentation.",
+  "tags": [
+   "maternal-fetal-transfer",
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp17-05"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.4"
+  ],
+  "s": "A 27-year-old woman with HIV infection comes for a prenatal visit at 36 weeks' gestation. She started antiretroviral therapy at 20 weeks but has missed many doses, and her viral load is still high. Her CD4 count is 380 cells/mm³. The pregnancy has otherwise been uncomplicated, and the fetus is in cephalic presentation.",
   "l": "Which plan best reduces the risk of transmission to the infant at delivery?",
-  "o": ["Scheduled cesarean at 38 weeks with IV zidovudine", "Induction of labor at 39 weeks with early amniotomy", "Vaginal delivery with a fetal scalp electrode", "Stopping antiretrovirals to limit infant drug exposure", "Vaginal delivery followed by breastfeeding with infant nevirapine"],
+  "o": [
+   "Scheduled cesarean at 38 weeks with IV zidovudine",
+   "Induction of labor with early rupture of membranes",
+   "Vaginal delivery after prolonged rupture of membranes",
+   "Stopping antiretrovirals to limit infant drug exposure",
+   "Vaginal delivery followed by breastfeeding"
+  ],
   "a": 0,
-  "e": "Most perinatal transmission happens during labor and delivery, and the risk rises with the maternal viral load. When the HIV RNA level near delivery is above 1,000 copies/mL, a **scheduled cesarean** at 38 weeks, before labor and membrane rupture, reduces the infant's exposure to maternal blood and secretions, and intrapartum IV zidovudine gives the fetus drug that crosses the placenta. Early amniotomy and scalp electrodes increase exposure, stopping antiretrovirals would let viremia rise, and breastfeeding adds postnatal transmission, so US guidance recommends formula. The infant also receives zidovudine prophylaxis after birth.",
+  "e": "Most perinatal transmission happens during labor and delivery, and the risk rises with the mother's viral load. When the viral load is high near delivery, a **scheduled cesarean** at about 38 weeks, before labor and rupture of membranes, lowers the baby's exposure to maternal blood and secretions. Intravenous zidovudine in labor gives the baby drug that crosses the placenta, and the newborn also receives zidovudine after birth. Early rupture of membranes or a long labor increases exposure. Stopping antiretrovirals would let the viral load rise. Breastfeeding adds transmission after birth, so US guidance advises formula.",
   "w": {
-   "Induction of labor at 39 weeks with early amniotomy": "Prolonged rupture of membranes lengthens the infant's exposure to maternal secretions, and labor itself is when most transmission happens with a detectable viral load.",
-   "Vaginal delivery with a fetal scalp electrode": "Scalp electrodes breach the fetal skin and let maternal blood and secretions in, so invasive fetal monitoring is avoided when the mother is viremic.",
-   "Stopping antiretrovirals to limit infant drug exposure": "Stopping therapy lets the viral load climb higher, raising transmission risk; antiretrovirals are recommended throughout pregnancy and continued through delivery.",
-   "Vaginal delivery followed by breastfeeding with infant nevirapine": "Breastfeeding transmits HIV, especially when the mother's virus is not suppressed, so US guidance recommends formula; vaginal birth is planned only with a suppressed viral load."
+   "Induction of labor with early rupture of membranes": "Ruptured membranes lengthen the baby's exposure to maternal secretions, and labor is when most transmission happens if the viral load is detectable.",
+   "Vaginal delivery after prolonged rupture of membranes": "Long rupture of membranes lengthens the baby's exposure to maternal secretions. It adds risk when the mother is viremic.",
+   "Stopping antiretrovirals to limit infant drug exposure": "Stopping therapy lets the viral load climb and raises transmission risk. Antiretrovirals continue throughout pregnancy and delivery.",
+   "Vaginal delivery followed by breastfeeding": "Breastfeeding transmits HIV, especially when the mother's virus is not suppressed, so US guidance advises formula. Vaginal birth is planned only when the viral load is suppressed."
   },
   "et": [
-   ["Option", "Effect on intrapartum exposure", "Effect on maternal viral load", "Postnatal risk"],
    [
-    ["Scheduled cesarean at 38 weeks with IV zidovudine", "Reduced; no labor or rupture", "Unchanged; zidovudine reaches the fetus", "None added"],
-    ["Induction of labor at 39 weeks with early amniotomy", "Increased by prolonged rupture", "Unchanged", "None added"],
-    ["Vaginal delivery with a fetal scalp electrode", "Increased by breached fetal skin", "Unchanged", "None added"],
-    ["Stopping antiretrovirals to limit infant drug exposure", "Increased as viremia rises", "Rises after stopping", "Rebound viremia postpartum"],
-    ["Vaginal delivery followed by breastfeeding with infant nevirapine", "Unchanged vaginal exposure", "Unchanged", "Transmission through breast milk"]
+    "Option",
+    "Effect on intrapartum exposure",
+    "Effect on maternal viral load",
+    "Postnatal risk"
+   ],
+   [
+    [
+     "Scheduled cesarean at 38 weeks with IV zidovudine",
+     "Reduced; no labor or rupture",
+     "Unchanged; zidovudine reaches the fetus",
+     "None added"
+    ],
+    [
+     "Induction of labor with early rupture of membranes",
+     "Increased by prolonged rupture",
+     "Unchanged",
+     "None added"
+    ],
+    [
+     "Vaginal delivery after prolonged rupture of membranes",
+     "Increased by long rupture",
+     "Unchanged",
+     "None added"
+    ],
+    [
+     "Stopping antiretrovirals to limit infant drug exposure",
+     "Increased as viremia rises",
+     "Rises after stopping",
+     "Rebound viremia postpartum"
+    ],
+    [
+     "Vaginal delivery followed by breastfeeding",
+     "Unchanged vaginal exposure",
+     "Unchanged",
+     "Transmission through breast milk"
+    ]
    ]
   ],
-  "bl": "With a maternal viral load above 1,000 copies/mL, plan a scheduled cesarean at 38 weeks with intrapartum IV zidovudine."
+  "bl": "When the viral load is high near delivery, plan a scheduled cesarean at about 38 weeks with intrapartum IV zidovudine."
  },
  {
   "id": "rp17q07",
   "d": 1,
-  "tags": ["virulence-factors", "pathogen-clues"],
-  "bp": ["BP-rp17-07", "BP-rp17-01"],
-  "obj": ["VIRAL-STI-TORCH.5"],
+  "tags": [
+   "virulence-factors",
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp17-07",
+   "BP-rp17-01"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.5"
+  ],
   "s": "A 22-year-old woman comes to the clinic because of painful genital sores, fever and pain with urination for 3 days. Examination shows clusters of small vesicles and shallow ulcers on an erythematous base on both labia, with tender bilateral inguinal lymph nodes. A Tzanck smear of a lesion shows multinucleated giant cells.",
   "l": "Between outbreaks, where does this virus persist?",
-  "o": ["Sacral dorsal root ganglia", "Trigeminal ganglion", "Basal keratinocytes", "Inguinal lymph nodes", "Memory CD4 T cells"],
+  "o": [
+   "Sacral dorsal root ganglia",
+   "Trigeminal ganglion",
+   "Basal keratinocytes",
+   "Inguinal lymph nodes",
+   "Memory CD4 T cells"
+  ],
   "a": 0,
-  "e": "Painful grouped vesicles and shallow ulcers with multinucleated giant cells are genital herpes, usually HSV-2. During the first infection the virus enters sensory nerve endings and travels up the axons to neurons of the **sacral dorsal root ganglia**, where its genome persists as a circular episome that makes only latency-associated transcripts. Reactivation sends virus back down the nerve to the skin. HSV-1 typically becomes latent in the trigeminal ganglion after oral infection. Basal keratinocytes are where HPV persists, memory CD4 T cells harbor latent HIV, and lymph nodes only swell in response.",
+  "e": "Painful grouped vesicles and shallow ulcers with multinucleated giant cells are genital herpes, usually HSV-2. In the first infection the virus enters sensory nerve endings and travels up the axons to neurons of the **sacral dorsal root ganglia**, where its genome stays as a circular episome. Later it reactivates and travels back down the nerve to the skin. HSV-1 usually becomes latent in the trigeminal ganglion after oral infection. HPV persists in basal keratinocytes, HIV hides in memory CD4 T cells, and lymph nodes only swell in response.",
   "w": {
-   "Trigeminal ganglion": "The trigeminal ganglion is where HSV-1 hides after oral infection and cold sores; genital infection travels up sacral sensory nerves instead.",
-   "Basal keratinocytes": "Basal keratinocytes are where HPV keeps its episome and drives warts; herpes kills the epithelial cells it infects and must retreat into neurons to persist.",
-   "Inguinal lymph nodes": "The inguinal nodes enlarge and become tender because they drain the infected skin, but they are a site of immune response, not viral latency.",
-   "Memory CD4 T cells": "Resting memory CD4 T cells carry integrated HIV provirus for years; herpes simplex does not infect T cells or integrate into their genome."
+   "Trigeminal ganglion": "The trigeminal ganglion is where HSV-1 hides after oral infection and cold sores. Genital infection travels up the sacral sensory nerves instead.",
+   "Basal keratinocytes": "Basal keratinocytes are where HPV keeps its episome and causes warts. Herpes kills the epithelial cells it infects and survives by retreating into neurons.",
+   "Inguinal lymph nodes": "The inguinal nodes enlarge and become tender because they drain the infected skin. They are a site of immune response, not of viral latency.",
+   "Memory CD4 T cells": "Resting memory CD4 T cells carry HIV provirus for years. Herpes simplex does not infect T cells or integrate into their genome."
   },
   "et": [
-   ["Option", "Virus that persists there", "Form of persistence", "What reactivation causes"],
    [
-    ["Sacral dorsal root ganglia", "HSV-2 after genital infection", "Latent episome in neurons", "Recurrent genital vesicles"],
-    ["Trigeminal ganglion", "HSV-1 after oral infection", "Latent episome in neurons", "Cold sores"],
-    ["Basal keratinocytes", "HPV", "Episome in dividing cells", "Warts or dysplasia"],
-    ["Inguinal lymph nodes", "None", "Reactive enlargement only", "Nothing; nodes shrink"],
-    ["Memory CD4 T cells", "HIV", "Integrated provirus", "Viral rebound off therapy"]
+    "Option",
+    "Virus that persists there",
+    "Form of persistence",
+    "What reactivation causes"
+   ],
+   [
+    [
+     "Sacral dorsal root ganglia",
+     "HSV-2 after genital infection",
+     "Latent episome in neurons",
+     "Recurrent genital vesicles"
+    ],
+    [
+     "Trigeminal ganglion",
+     "HSV-1 after oral infection",
+     "Latent episome in neurons",
+     "Cold sores"
+    ],
+    [
+     "Basal keratinocytes",
+     "HPV",
+     "Episome in dividing cells",
+     "Warts or dysplasia"
+    ],
+    [
+     "Inguinal lymph nodes",
+     "None",
+     "Reactive enlargement only",
+     "Nothing; nodes shrink"
+    ],
+    [
+     "Memory CD4 T cells",
+     "HIV",
+     "Integrated provirus",
+     "Viral rebound off therapy"
+    ]
    ]
   ],
   "bl": "Genital HSV-2 persists as a latent episome in the sacral dorsal root ganglia and reactivates to cause recurrent vesicles."
@@ -215,96 +520,227 @@
  {
   "id": "rp17q08",
   "d": 3,
-  "tags": ["drug-mechanism"],
-  "bp": ["BP-rp17-08"],
-  "obj": ["VIRAL-STI-TORCH.9"],
+  "tags": [
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp17-08"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.9"
+  ],
   "s": "A 38-year-old man with AIDS has had enlarging painful perianal ulcers for 4 weeks. His CD4 count is 40 cells/mm³, and he stopped antiretroviral therapy 1 year ago. PCR of ulcer fluid is positive for herpes simplex virus type 2. The ulcers have continued to grow despite 2 weeks of high-dose valacyclovir taken as directed. Laboratory testing shows that the viral isolate lacks thymidine kinase activity.",
   "l": "Which drug is most appropriate for this infection?",
-  "o": ["Foscarnet", "Famciclovir", "Ganciclovir", "Intravenous acyclovir", "Valganciclovir"],
+  "o": [
+   "Foscarnet",
+   "Famciclovir",
+   "Ganciclovir",
+   "Intravenous acyclovir",
+   "Valganciclovir"
+  ],
   "a": 0,
-  "e": "Acyclovir, valacyclovir and famciclovir all need the viral **thymidine kinase** to add their first phosphate, so a kinase-deficient mutant, selected by long drug exposure in people with very low CD4 counts, is resistant to every one of them. Ganciclovir and valganciclovir are activated by the same herpes kinase in HSV-infected cells, so they fail too. Foscarnet is a pyrophosphate analog that binds viral DNA polymerase directly and needs no activation, so it works against thymidine kinase-deficient virus. Its costs are nephrotoxicity and chelation of divalent cations, causing low calcium and magnesium, so kidney function and electrolytes are monitored.",
+  "e": "Acyclovir, valacyclovir and famciclovir all need the viral **thymidine kinase** to add their first phosphate. A kinase-deficient mutant, selected by long drug exposure in people with very low CD4 counts, is therefore resistant to all of them. Ganciclovir and valganciclovir are activated by the same herpes kinase in HSV-infected cells, so they fail too. Foscarnet is a pyrophosphate analog that binds viral DNA polymerase directly and needs no activation, so it works against thymidine kinase-deficient virus. Its main toxicity is kidney injury, and it also lowers calcium and magnesium.",
   "w": {
-   "Famciclovir": "Famciclovir is converted to penciclovir, which needs viral thymidine kinase for its first phosphorylation, so a kinase-deficient isolate resists it as well.",
-   "Ganciclovir": "Ganciclovir is phosphorylated by the CMV UL97 kinase in cytomegalovirus infection and by thymidine kinase in herpes simplex infection, so this isolate cannot activate it.",
-   "Intravenous acyclovir": "Higher blood levels cannot overcome resistance that comes from missing the activating enzyme; without thymidine kinase the drug is never phosphorylated at any dose.",
-   "Valganciclovir": "Valganciclovir is the oral prodrug of ganciclovir, used mainly for cytomegalovirus; it depends on the same viral kinase and fails against this mutant."
+   "Famciclovir": "Famciclovir is converted to penciclovir, which also needs viral thymidine kinase for its first phosphate, so a kinase-deficient isolate resists it.",
+   "Ganciclovir": "Ganciclovir also needs a viral kinase to be activated. In herpes simplex that is thymidine kinase, which this mutant lacks, so the drug stays inactive.",
+   "Intravenous acyclovir": "Higher blood levels cannot overcome resistance caused by a missing activating enzyme. Without thymidine kinase the drug is never phosphorylated at any dose.",
+   "Valganciclovir": "Valganciclovir is the oral prodrug of ganciclovir, used mainly for cytomegalovirus. It depends on the same viral kinase and fails against this mutant."
   },
   "et": [
-   ["Option", "First activation step", "Works without viral thymidine kinase", "Key toxicity"],
    [
-    ["Foscarnet", "None; binds polymerase directly", "Yes", "Nephrotoxicity, low calcium and magnesium"],
-    ["Famciclovir", "Viral thymidine kinase", "No", "Headache, nausea"],
-    ["Ganciclovir", "Viral kinase (UL97 in CMV)", "No", "Neutropenia"],
-    ["Intravenous acyclovir", "Viral thymidine kinase", "No", "Crystalline nephropathy"],
-    ["Valganciclovir", "Converted to ganciclovir, then viral kinase", "No", "Neutropenia, oral prodrug"]
+    "Option",
+    "First activation step",
+    "Works without viral thymidine kinase",
+    "Key toxicity"
+   ],
+   [
+    [
+     "Foscarnet",
+     "None; binds polymerase directly",
+     "Yes",
+     "Nephrotoxicity, low calcium and magnesium"
+    ],
+    [
+     "Famciclovir",
+     "Viral thymidine kinase",
+     "No",
+     "Headache, nausea"
+    ],
+    [
+     "Ganciclovir",
+     "Viral kinase (UL97 in CMV)",
+     "No",
+     "Neutropenia"
+    ],
+    [
+     "Intravenous acyclovir",
+     "Viral thymidine kinase",
+     "No",
+     "Crystalline nephropathy"
+    ],
+    [
+     "Valganciclovir",
+     "Converted to ganciclovir, then viral kinase",
+     "No",
+     "Neutropenia, oral prodrug"
+    ]
    ]
   ],
   "bl": "Thymidine kinase-deficient HSV resists acyclovir, valacyclovir and famciclovir; foscarnet binds DNA polymerase directly and treats it.",
   "ef": "rp17_acyclovir",
   "pt": {
-   "hl": ["Foscarnet binds DNA polymerase"],
+   "hl": [
+    "Foscarnet binds DNA polymerase"
+   ],
    "say": "Read the resistance panel: kinase-deficient mutants never activate acyclovir, but foscarnet binds DNA polymerase directly with no kinase needed."
   }
  },
  {
   "id": "rp17q09",
   "d": 2,
-  "tags": ["adverse-effects"],
-  "bp": ["BP-rp17-08"],
-  "obj": ["VIRAL-STI-TORCH.9"],
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp17-08"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.9"
+  ],
   "s": "A 60-year-old woman is admitted with fever, confusion and a seizure. MRI shows temporal lobe hyperintensity, and cerebrospinal fluid PCR is positive for herpes simplex virus. She is started on high-dose intravenous acyclovir. On day 3, her serum creatinine has risen from 0.8 to 2.6 mg/dL. Urine microscopy shows needle-shaped, birefringent crystals.",
   "l": "Which measure would most likely have prevented this complication?",
-  "o": ["Aggressive intravenous saline hydration", "Coadministration of probenecid", "Calcium and magnesium supplements", "Coadministration of leucovorin", "Acidification of the urine"],
+  "o": [
+   "Aggressive intravenous saline hydration",
+   "Coadministration of probenecid",
+   "Calcium and magnesium supplements",
+   "Coadministration of leucovorin",
+   "Acidification of the urine"
+  ],
   "a": 0,
-  "e": "Acyclovir is excreted unchanged by the kidneys, and at high intravenous doses its concentration in tubular fluid can exceed its solubility, so it precipitates as needle-shaped crystals that obstruct tubules and cause acute kidney injury, **crystalline nephropathy**. Keeping tubular flow high with aggressive IV saline hydration and infusing the drug slowly prevents it, and doses are adjusted for kidney function. Probenecid is given with cidofovir to block its tubular secretion, calcium and magnesium are replaced during foscarnet therapy, leucovorin rescues cells from methotrexate or pyrimethamine, and urine acidification is not a recommended measure.",
+  "e": "Acyclovir leaves the body unchanged in the urine. At high intravenous doses its concentration in the tubules can pass its solubility limit, so it forms needle-shaped crystals that block tubules and cause acute kidney injury, called **crystalline nephropathy**. Aggressive IV saline hydration keeps urine flow high and prevents it. Probenecid is given with cidofovir to block its tubular secretion. Calcium and magnesium are replaced during foscarnet therapy. Leucovorin rescues cells from methotrexate or pyrimethamine. Acidifying the urine is not a recommended measure.",
   "w": {
-   "Coadministration of probenecid": "Probenecid blocks tubular secretion of cidofovir and is given with saline to limit that drug's nephrotoxicity; it does not prevent acyclovir crystals.",
-   "Calcium and magnesium supplements": "Foscarnet chelates divalent cations and causes low calcium and magnesium; acyclovir does not, and replacing these ions would not dissolve tubular crystals.",
-   "Coadministration of leucovorin": "Leucovorin supplies reduced folate to rescue normal cells from methotrexate or pyrimethamine; it has no effect on drug precipitation in the kidney.",
-   "Acidification of the urine": "Changing urine pH is not how acyclovir crystal injury is prevented; the protective measure is diluting the drug with high urine flow from IV fluids."
+   "Coadministration of probenecid": "Probenecid blocks the tubular secretion of cidofovir and is given with saline to limit that drug's kidney toxicity. It does not prevent acyclovir crystals.",
+   "Calcium and magnesium supplements": "Foscarnet binds calcium and magnesium and lowers their levels. Acyclovir does not, and replacing these ions would not dissolve crystals in the tubules.",
+   "Coadministration of leucovorin": "Leucovorin supplies reduced folate to rescue normal cells from methotrexate or pyrimethamine. It has no effect on drug crystals in the kidney.",
+   "Acidification of the urine": "Changing the urine pH is not how acyclovir crystal injury is prevented. The protective measure is diluting the drug with high urine flow from IV fluids."
   },
   "et": [
-   ["Option", "Drug it accompanies", "How it protects", "Toxicity it addresses"],
    [
-    ["Aggressive intravenous saline hydration", "High-dose IV acyclovir", "Keeps tubular flow high and drug dilute", "Crystalline nephropathy"],
-    ["Coadministration of probenecid", "Cidofovir", "Blocks tubular secretion", "Cidofovir nephrotoxicity"],
-    ["Calcium and magnesium supplements", "Foscarnet", "Replaces chelated cations", "Hypocalcemia, hypomagnesemia"],
-    ["Coadministration of leucovorin", "Methotrexate, pyrimethamine", "Restores reduced folate", "Bone marrow suppression"],
-    ["Acidification of the urine", "No standard pairing", "Not an accepted protective measure", "None established"]
+    "Option",
+    "Drug it accompanies",
+    "How it protects",
+    "Toxicity it addresses"
+   ],
+   [
+    [
+     "Aggressive intravenous saline hydration",
+     "High-dose IV acyclovir",
+     "Keeps tubular flow high and drug dilute",
+     "Crystalline nephropathy"
+    ],
+    [
+     "Coadministration of probenecid",
+     "Cidofovir",
+     "Blocks tubular secretion",
+     "Cidofovir nephrotoxicity"
+    ],
+    [
+     "Calcium and magnesium supplements",
+     "Foscarnet",
+     "Replaces chelated cations",
+     "Hypocalcemia, hypomagnesemia"
+    ],
+    [
+     "Coadministration of leucovorin",
+     "Methotrexate, pyrimethamine",
+     "Restores reduced folate",
+     "Bone marrow suppression"
+    ],
+    [
+     "Acidification of the urine",
+     "No standard pairing",
+     "Not an accepted protective measure",
+     "None established"
+    ]
    ]
   ],
   "bl": "High-dose IV acyclovir can cause crystalline nephropathy; aggressive IV saline hydration keeps the drug dissolved and prevents it.",
   "ef": "rp17_acyclovir",
   "pt": {
-   "hl": ["crystalline nephropathy. Prevent it", "with IV saline hydration"],
+   "hl": [
+    "crystalline nephropathy. Prevent it",
+    "with IV saline hydration"
+   ],
    "say": "In the toxicity panel, high IV doses form crystals in renal tubules, crystalline nephropathy, which aggressive IV saline hydration prevents."
   }
  },
  {
   "id": "rp17q10",
   "d": 1,
-  "tags": ["screening-prevention"],
-  "bp": ["BP-rp17-09"],
-  "obj": ["VIRAL-STI-TORCH.6"],
+  "tags": [
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp17-09"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.6"
+  ],
   "s": "An 11-year-old girl is brought for a well-child visit. Her mother agrees to the human papillomavirus vaccine but is worried that the injection could give her daughter an HPV infection or genital warts. The girl is healthy and takes no medications.",
   "l": "Which feature of the vaccine explains why it cannot cause infection?",
-  "o": ["Virus-like particles of L1 protein without DNA", "Live attenuated HPV types 16 and 18", "Inactivated whole virions of types 6 and 11", "Recombinant E6 and E7 oncoproteins", "Heat-killed HPV grown in cell culture"],
+  "o": [
+   "Virus-like particles of L1 protein without DNA",
+   "Live attenuated HPV types 16 and 18",
+   "Inactivated whole virions of types 6 and 11",
+   "Recombinant E6 and E7 oncoproteins",
+   "Heat-killed HPV grown in cell culture"
+  ],
   "a": 0,
-  "e": "The HPV vaccine is made by expressing the major capsid protein L1 in yeast or insect cells, where it self-assembles into empty shells called **virus-like particles**. They look like the virus to B cells and induce high titers of neutralizing antibody, but they contain no viral DNA, so they cannot replicate, infect, or cause warts or cancer. The 9-valent vaccine covers types 6, 11, 16, 18, 31, 33, 45, 52 and 58. It is not live attenuated or made of inactivated virions, and it contains no E6 or E7, the oncoproteins that drive cancer.",
+  "e": "The HPV vaccine is made by expressing the major capsid protein L1 in yeast or insect cells, where it self-assembles into empty shells called **virus-like particles**. They look like the virus to B cells and trigger neutralizing antibody, but they contain no viral DNA, so they cannot replicate, infect, or cause warts or cancer. The 9-valent vaccine covers types 6, 11, 16 and 18 plus five other high-risk types. It is not live attenuated or made of inactivated virions, and it contains no E6 or E7, the oncoproteins that drive cancer.",
   "w": {
-   "Live attenuated HPV types 16 and 18": "Live attenuated vaccines such as MMR and varicella contain weakened virus that replicates; the HPV vaccine contains no genome at all, so nothing can replicate.",
-   "Inactivated whole virions of types 6 and 11": "Papillomaviruses cannot be grown efficiently in routine culture, so no whole-virion vaccine exists; the product is assembled from recombinant capsid protein instead.",
-   "Recombinant E6 and E7 oncoproteins": "E6 and E7 are the proteins that degrade p53 and inactivate Rb inside infected cells; the vaccine instead targets the capsid to block entry.",
-   "Heat-killed HPV grown in cell culture": "A killed vaccine would require growing large amounts of virus, which papillomaviruses resist because they replicate only in differentiating squamous epithelium."
+   "Live attenuated HPV types 16 and 18": "Live attenuated vaccines such as MMR and varicella contain weakened virus that replicates. The HPV vaccine has no viral genome at all, so nothing can replicate.",
+   "Inactivated whole virions of types 6 and 11": "Papillomaviruses cannot be grown efficiently in routine culture, so no whole-virion vaccine exists. The vaccine is built from recombinant capsid protein.",
+   "Recombinant E6 and E7 oncoproteins": "E6 and E7 are the proteins that degrade p53 and inactivate Rb inside infected cells. The vaccine targets the capsid instead, to block entry.",
+   "Heat-killed HPV grown in cell culture": "A killed vaccine would need large amounts of virus grown in culture, which papillomaviruses resist because they replicate only in maturing squamous epithelium."
   },
   "et": [
-   ["Option", "Contains viral DNA", "Can replicate", "Antigen presented"],
    [
-    ["Virus-like particles of L1 protein without DNA", "No", "No", "Capsid surface of 9 types"],
-    ["Live attenuated HPV types 16 and 18", "Yes", "Yes", "Whole weakened virus"],
-    ["Inactivated whole virions of types 6 and 11", "Yes, damaged", "No", "Whole killed virus"],
-    ["Recombinant E6 and E7 oncoproteins", "No", "No", "Intracellular oncoproteins"],
-    ["Heat-killed HPV grown in cell culture", "Yes, damaged", "No", "Heat-altered virus"]
+    "Option",
+    "Contains viral DNA",
+    "Can replicate",
+    "Antigen presented"
+   ],
+   [
+    [
+     "Virus-like particles of L1 protein without DNA",
+     "No",
+     "No",
+     "Capsid surface of 9 types"
+    ],
+    [
+     "Live attenuated HPV types 16 and 18",
+     "Yes",
+     "Yes",
+     "Whole weakened virus"
+    ],
+    [
+     "Inactivated whole virions of types 6 and 11",
+     "Yes, damaged",
+     "No",
+     "Whole killed virus"
+    ],
+    [
+     "Recombinant E6 and E7 oncoproteins",
+     "No",
+     "No",
+     "Intracellular oncoproteins"
+    ],
+    [
+     "Heat-killed HPV grown in cell culture",
+     "Yes, damaged",
+     "No",
+     "Heat-altered virus"
+    ]
    ]
   ],
   "bl": "The HPV vaccine is made of L1 virus-like particles that carry no DNA, so it induces antibody but cannot cause infection."
@@ -312,28 +748,70 @@
  {
   "id": "rp17q11",
   "d": 2,
-  "tags": ["drug-mechanism"],
-  "bp": ["BP-rp17-09"],
-  "obj": ["VIRAL-STI-TORCH.10"],
-  "s": "A 29-year-old man comes to the clinic because of painless growths on the shaft of his penis for 2 months. Examination shows six soft, flesh-colored, cauliflower-like papules. He prefers a treatment he can apply himself at home. He is prescribed a cream applied three times a week at bedtime; after several weeks the lesions become red and inflamed, then regress.",
+  "tags": [
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp17-09"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.10"
+  ],
+  "s": "A 29-year-old man comes to the clinic because of painless growths on the shaft of his penis for 2 months. Examination shows six soft, flesh-colored, cauliflower-like papules. He prefers a treatment he can apply himself at home, and his physician prescribes a cream. After several weeks the lesions become red and inflamed, and then they regress.",
   "l": "Which is the mechanism of action of the prescribed drug?",
-  "o": ["Activation of toll-like receptor 7", "Binding of tubulin to arrest mitosis", "Protein coagulation by a caustic acid", "Inhibition of viral DNA polymerase", "Freezing that lyses infected cells"],
+  "o": [
+   "Activation of toll-like receptor 7",
+   "Binding of tubulin to arrest mitosis",
+   "Protein coagulation by a caustic acid",
+   "Inhibition of viral DNA polymerase",
+   "Freezing that lyses infected cells"
+  ],
   "a": 0,
-  "e": "Soft cauliflower-like papules are condylomata acuminata from HPV types 6 and 11. The cream applied three times a week at bedtime is **imiquimod**, an immune response modifier that activates toll-like receptor 7 on dendritic cells and macrophages, inducing interferon-alpha and other cytokines that recruit a local cell-mediated attack on infected keratinocytes. That is why the warts become red and inflamed before they regress. Podofilox, the other home treatment, is an antimitotic that binds tubulin; trichloroacetic acid and cryotherapy are clinic treatments that destroy tissue directly. No drug that inhibits HPV DNA replication is used for warts.",
+  "e": "Soft cauliflower-like papules are condylomata acuminata from HPV types 6 and 11. A cream that the patient applies at home, and that makes the warts red and inflamed before they regress, is **imiquimod**. It is an immune response modifier that activates toll-like receptor 7 on dendritic cells and macrophages. This releases interferon-alpha and other cytokines, which recruit a local cell-mediated attack on infected keratinocytes. Podofilox, the other home treatment, is an antimitotic that binds tubulin. Trichloroacetic acid and cryotherapy are clinic treatments that destroy tissue directly. No drug that blocks HPV DNA replication is used for warts.",
   "w": {
-   "Binding of tubulin to arrest mitosis": "This is podofilox, purified podophyllotoxin, a home-applied antimitotic used twice daily for 3 days a week; it kills wart cells directly without an inflammatory phase.",
-   "Protein coagulation by a caustic acid": "Trichloroacetic acid coagulates tissue proteins and is applied by a clinician in the office rather than at home, and it is safe in pregnancy.",
-   "Inhibition of viral DNA polymerase": "HPV relies on host polymerases to copy its genome, so there is no viral polymerase to target; acyclovir-type drugs work on herpes, not warts.",
-   "Freezing that lyses infected cells": "Cryotherapy with liquid nitrogen destroys warts by freeze-thaw cytolysis, but it is done in the clinic, not applied as a cream at home."
+   "Binding of tubulin to arrest mitosis": "This is podofilox, purified podophyllotoxin, a home-applied antimitotic. It kills wart cells directly, without an inflammatory phase.",
+   "Protein coagulation by a caustic acid": "Trichloroacetic acid coagulates tissue proteins. A clinician applies it in the office, not at home, and it is safe in pregnancy.",
+   "Inhibition of viral DNA polymerase": "HPV uses host polymerases to copy its genome, so it has no viral polymerase to target. Acyclovir-type drugs work on herpes, not warts.",
+   "Freezing that lyses infected cells": "Cryotherapy with liquid nitrogen destroys warts by freezing, but it is done in the clinic and is not a cream applied at home."
   },
   "et": [
-   ["Option", "Drug or method", "Who applies it", "Why lesions disappear"],
    [
-    ["Activation of toll-like receptor 7", "Imiquimod cream", "Patient at home", "Immune attack after local inflammation"],
-    ["Binding of tubulin to arrest mitosis", "Podofilox", "Patient at home", "Wart cells stop dividing and die"],
-    ["Protein coagulation by a caustic acid", "Trichloroacetic acid", "Clinician", "Chemical destruction of tissue"],
-    ["Inhibition of viral DNA polymerase", "No wart drug works this way", "Nobody", "No such HPV target"],
-    ["Freezing that lyses infected cells", "Liquid nitrogen cryotherapy", "Clinician", "Freeze-thaw cytolysis"]
+    "Option",
+    "Drug or method",
+    "Who applies it",
+    "Why lesions disappear"
+   ],
+   [
+    [
+     "Activation of toll-like receptor 7",
+     "Imiquimod cream",
+     "Patient at home",
+     "Immune attack after local inflammation"
+    ],
+    [
+     "Binding of tubulin to arrest mitosis",
+     "Podofilox",
+     "Patient at home",
+     "Wart cells stop dividing and die"
+    ],
+    [
+     "Protein coagulation by a caustic acid",
+     "Trichloroacetic acid",
+     "Clinician",
+     "Chemical destruction of tissue"
+    ],
+    [
+     "Inhibition of viral DNA polymerase",
+     "No wart drug works this way",
+     "Nobody",
+     "No such HPV target"
+    ],
+    [
+     "Freezing that lyses infected cells",
+     "Liquid nitrogen cryotherapy",
+     "Clinician",
+     "Freeze-thaw cytolysis"
+    ]
    ]
   ],
   "bl": "Imiquimod treats genital warts by activating toll-like receptor 7, inducing interferon and a local immune attack on infected cells."
@@ -341,28 +819,70 @@
  {
   "id": "rp17q12",
   "d": 3,
-  "tags": ["pathogen-clues"],
-  "bp": ["BP-rp17-10"],
-  "obj": ["VIRAL-STI-TORCH.3"],
+  "tags": [
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp17-10"
+  ],
+  "obj": [
+   "VIRAL-STI-TORCH.3"
+  ],
   "s": "A 34-year-old man comes to the clinic because of many bumps on his face and groin that have spread over 3 months. He has lost 7 kg (15 lb) and has had intermittent diarrhea. Examination shows dozens of firm, pearly, dome-shaped papules with central umbilication, some larger than 1 cm, on the face, neck and genitals, and white plaques on the tongue and buccal mucosa that scrape off. A biopsy of one papule shows large eosinophilic intracytoplasmic inclusions in keratinocytes.",
   "l": "Which additional laboratory finding is most likely?",
-  "o": ["CD4 count below 200 cells/mm³", "Positive heterophile antibody test", "Reactive RPR at a high titer", "Serum IgE above 2,000 IU/mL", "Positive HLA-B27 genotype"],
+  "o": [
+   "CD4 count below 200 cells/mm³",
+   "Positive heterophile antibody test",
+   "Reactive RPR at a high titer",
+   "Serum IgE above 2,000 IU/mL",
+   "Positive HLA-B27 genotype"
+  ],
   "a": 0,
-  "e": "Umbilicated pearly papules with large eosinophilic cytoplasmic inclusions, the molluscum or Henderson-Patterson bodies, are **molluscum contagiosum**, a poxvirus infection. In healthy adults it causes a few genital papules that clear within months, because cell-mediated immunity eventually controls it. Dozens of large facial lesions with weight loss, diarrhea and oral thrush point to advanced HIV infection, and widespread molluscum typically appears when the CD4 count has fallen below 200 cells/mm³. A heterophile test diagnoses infectious mononucleosis, a high-titer RPR suggests secondary syphilis, whose condylomata lata are flat and moist, and markedly high IgE suggests hyper-IgE syndrome.",
+  "e": "Umbilicated pearly papules with large eosinophilic cytoplasmic inclusions (molluscum or Henderson-Patterson bodies) are **molluscum contagiosum**, a poxvirus infection. In healthy adults it causes a few genital papules that clear within months. Dozens of large lesions on the face, with weight loss, diarrhea and oral thrush, point to advanced HIV infection. Widespread molluscum typically appears when the CD4 count has fallen below 200 cells/mm³. A heterophile test diagnoses infectious mononucleosis. A high-titer RPR suggests secondary syphilis, whose condylomata lata are flat and moist. A very high IgE suggests hyper-IgE syndrome.",
   "w": {
-   "Positive heterophile antibody test": "A heterophile test diagnoses Epstein-Barr mononucleosis, with fever, pharyngitis and splenomegaly; it does not explain spreading umbilicated papules with molluscum bodies.",
+   "Positive heterophile antibody test": "A heterophile test diagnoses Epstein-Barr mononucleosis, with fever, sore throat and a large spleen. It does not explain spreading umbilicated papules with molluscum bodies.",
    "Reactive RPR at a high titer": "Secondary syphilis causes a high-titer RPR with a palms-and-soles rash and moist, flat condylomata lata, not firm pearly papules with central umbilication.",
-   "Serum IgE above 2,000 IU/mL": "Very high IgE marks hyper-IgE syndrome, with eczema, cold staphylococcal abscesses and retained primary teeth, rather than extensive poxvirus skin infection in an adult.",
-   "Positive HLA-B27 genotype": "HLA-B27 is linked to reactive arthritis and ankylosing spondylitis; it confers no susceptibility to viral skin infections such as molluscum contagiosum."
+   "Serum IgE above 2,000 IU/mL": "A very high IgE marks hyper-IgE syndrome, with eczema, cold staphylococcal abscesses and retained primary teeth. It does not cause extensive poxvirus skin infection in an adult.",
+   "Positive HLA-B27 genotype": "HLA-B27 is linked to reactive arthritis and ankylosing spondylitis. It does not make people susceptible to viral skin infections such as molluscum."
   },
   "et": [
-   ["Option", "Condition it suggests", "Typical skin or mucosal finding", "Other key features"],
    [
-    ["CD4 count below 200 cells/mm³", "Advanced HIV infection (AIDS)", "Widespread molluscum, oral thrush", "Weight loss, diarrhea, opportunistic infections"],
-    ["Positive heterophile antibody test", "Infectious mononucleosis", "Palatal petechiae, rash after ampicillin", "Fever, pharyngitis, splenomegaly"],
-    ["Reactive RPR at a high titer", "Secondary syphilis", "Palms-soles rash, condylomata lata", "Generalized painless lymphadenopathy"],
-    ["Serum IgE above 2,000 IU/mL", "Hyper-IgE syndrome", "Eczema, cold abscesses", "Retained primary teeth"],
-    ["Positive HLA-B27 genotype", "Spondyloarthritis", "Keratoderma in reactive arthritis", "Back pain, uveitis"]
+    "Option",
+    "Condition it suggests",
+    "Typical skin or mucosal finding",
+    "Other key features"
+   ],
+   [
+    [
+     "CD4 count below 200 cells/mm³",
+     "Advanced HIV infection (AIDS)",
+     "Widespread molluscum, oral thrush",
+     "Weight loss, diarrhea, opportunistic infections"
+    ],
+    [
+     "Positive heterophile antibody test",
+     "Infectious mononucleosis",
+     "Palatal petechiae, rash after ampicillin",
+     "Fever, pharyngitis, splenomegaly"
+    ],
+    [
+     "Reactive RPR at a high titer",
+     "Secondary syphilis",
+     "Palms-soles rash, condylomata lata",
+     "Generalized painless lymphadenopathy"
+    ],
+    [
+     "Serum IgE above 2,000 IU/mL",
+     "Hyper-IgE syndrome",
+     "Eczema, cold abscesses",
+     "Retained primary teeth"
+    ],
+    [
+     "Positive HLA-B27 genotype",
+     "Spondyloarthritis",
+     "Keratoderma in reactive arthritis",
+     "Back pain, uveitis"
+    ]
    ]
   ],
   "bl": "Extensive molluscum contagiosum in an adult suggests HIV infection with a CD4 count below 200 cells/mm³."

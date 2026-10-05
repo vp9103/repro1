@@ -23,12 +23,12 @@
    "Serum quantitative hCG level"
   ],
   "a": 0,
-  "e": "A crown-rump length measured in the first trimester is the most accurate way to date a pregnancy, within about 5 to 7 days, because embryos of the same age are almost the same size. Her irregular cycles and uncertain last menstrual period make **Naegele's rule** unreliable, since it assumes a 28-day cycle with ovulation on day 14. Fundal height is not measured until 20 weeks and reflects uterine size, which fibroids, twins and fluid distort. The biparietal diameter dates less accurately because fetal growth varies more as pregnancy advances, and an early date is not revised by later scans. Quantitative hCG overlaps widely between patients and cannot date a pregnancy.",
+  "e": "A crown-rump length measured in the first trimester is the most accurate way to date a pregnancy, within about 5 to 7 days, because embryos of the same age are almost the same size. Her irregular cycles and uncertain last menstrual period make **Naegele's rule** unreliable, since it assumes a 28-day cycle with ovulation on day 14. Fundal height is not measured until 20 weeks, and fibroids, twins or extra fluid throw it off. Later ultrasound measurements, such as the biparietal diameter, are less precise because fetuses grow at different rates. Quantitative hCG overlaps too much between patients to give a date.",
   "w": {
-   "Naegele's rule applied to her estimated last menstrual period": "This rule assumes a regular 28-day cycle with ovulation on day 14, so with irregular cycles the calculated due date can be wrong by weeks; it is only the fallback when no early ultrasound exists.",
-   "Fundal height measured at the next visit": "Fundal height is used only from 20 weeks, when it matches the gestational age in centimeters, and it reflects uterine size, so fibroids, twins or excess fluid mislead it; it follows growth rather than dating.",
-   "Biparietal diameter on second-trimester ultrasonography": "Head size in the second trimester varies with each fetus's growth potential, so the biparietal diameter dates the pregnancy only within about 10 to 14 days, less precisely than an early crown-rump measurement.",
-   "Serum quantitative hCG level": "Serum hCG varies widely between healthy pregnancies of the same age and peaks near 10 weeks, so a single value cannot assign a due date; it is used to follow early pregnancy complications."
+   "Naegele's rule applied to her estimated last menstrual period": "This rule assumes a regular 28-day cycle with ovulation on day 14. With irregular cycles the due date it gives can be off by weeks, so it is only a fallback when no early ultrasound exists.",
+   "Fundal height measured at the next visit": "Fundal height is not used before 20 weeks, and fibroids, twins or extra fluid mislead it. It follows growth over time rather than setting the due date.",
+   "Biparietal diameter on second-trimester ultrasonography": "Head size in the second trimester varies with each fetus's growth, so this measurement dates the pregnancy less precisely than an early crown-rump length.",
+   "Serum quantitative hCG level": "Serum hCG differs widely between healthy pregnancies of the same age and falls after 10 weeks, so a single value cannot give a due date."
   },
   "et": [
    [
@@ -54,7 +54,7 @@
     ],
     [
      "Biparietal diameter on second-trimester ultrasonography",
-     "Within 10 to 14 days",
+     "Less precise than early crown-rump length",
      "Fetal growth varies by midpregnancy"
     ],
     [
@@ -97,12 +97,12 @@
    "G4 P1011"
   ],
   "a": 0,
-  "e": "Gravidity counts every pregnancy, including the current one, so three earlier pregnancies plus this one make **G4**. The TPAL digits then count term births (the delivery at 39 weeks, 1), preterm births (a stillbirth at 24 weeks is a birth after 20 weeks but before 37, so 1), abortions (the ectopic pregnancy ended before 20 weeks, so 1) and living children (the daughter, 1). The formula is G4 P1111. A formula of G3 P1111 omits the current pregnancy, and losses at 20 weeks or later are births, not abortions.",
+  "e": "Gravidity counts every pregnancy, including the current one, so three earlier pregnancies plus this one make **G4**. The TPAL digits count term births (the delivery at 39 weeks: 1), preterm births (a stillbirth at 24 weeks is a birth after 20 weeks but before 37 weeks: 1), abortions (the ectopic pregnancy ended before 20 weeks: 1) and living children (her daughter: 1). That gives G4 P1111. G3 P1111 forgets the current pregnancy, and a loss at 20 weeks or later is counted as a birth, not an abortion.",
   "w": {
-   "G3 P1111": "This formula leaves out the current pregnancy; gravidity always includes it, so a patient with three earlier pregnancies is G4 at this visit.",
-   "G4 P2011": "This formula counts the stillbirth as a term birth, but at 24 weeks it falls before the 37-week cutoff, so it belongs in the preterm digit rather than the term digit.",
-   "G4 P1021": "This formula counts the stillbirth as an abortion, but a loss at 20 weeks or later is a birth that adds to parity, so only losses before 20 weeks go in the abortion digit.",
-   "G4 P1011": "This formula drops the stillbirth from the preterm digit, but TPAL counts every birth at 20 weeks or later whether or not the infant survived."
+   "G3 P1111": "This formula leaves out the current pregnancy. Gravidity always includes it, so three earlier pregnancies make her G4 at this visit.",
+   "G4 P2011": "This formula counts the stillbirth as a term birth. At 24 weeks it falls before the 37-week cutoff, so it belongs in the preterm digit.",
+   "G4 P1021": "This formula counts the stillbirth as an abortion. A loss at 20 weeks or later is a birth, so only losses before 20 weeks go in the abortion digit.",
+   "G4 P1011": "This formula drops the stillbirth from the preterm digit. TPAL counts every birth at 20 weeks or later, whether or not the baby survived."
   },
   "et": [
    [
@@ -177,12 +177,12 @@
    "Gastroschisis"
   ],
   "a": 0,
-  "e": "Low AFP and estriol with high hCG and inhibin A is the quad screen signature of **trisomy 21**. Trisomy 18 lowers all four markers, so hCG and inhibin A would be low rather than high. An open neural tube defect or gastroschisis raises AFP and leaves the other markers unchanged, and twins raise all four markers because there is twice the placental and fetal mass. Because a quad screen is only a screening test, the next step is to offer cell-free DNA or a diagnostic test such as amniocentesis, which gives a karyotype.",
+  "e": "Low AFP and estriol with high hCG and inhibin A is the quad screen pattern of **trisomy 21**. Trisomy 18 lowers all four markers, so hCG and inhibin A would be low. An open neural tube defect or gastroschisis raises AFP and leaves the other markers unchanged. Twins raise all four markers, which does not match her low AFP and estriol. A quad screen is only a screen, so the next step is a diagnostic test such as amniocentesis, which gives a karyotype.",
   "w": {
-   "Trisomy 18": "Edwards syndrome lowers all four markers, including hCG and inhibin A, so the high hCG and inhibin A seen here argue against it; its first-trimester screen shows low PAPP-A and low hCG.",
-   "Open neural tube defect": "Leakage of fetal serum raises maternal AFP while estriol, hCG and inhibin A stay unchanged, so a low AFP with other abnormal markers does not fit an open defect.",
-   "Twin pregnancy": "Two fetuses and two placentas raise all four markers roughly twofold, including AFP, whereas this patient's AFP and estriol are low, so twins do not explain the pattern.",
-   "Gastroschisis": "An abdominal wall defect exposes bowel and lets AFP leak, so maternal AFP rises while estriol, hCG and inhibin A stay normal; AFP is low in this patient."
+   "Trisomy 18": "Edwards syndrome lowers all four markers, including hCG and inhibin A. The high hCG and inhibin A seen here argue against it.",
+   "Open neural tube defect": "Leakage of fetal serum raises maternal AFP, while estriol, hCG and inhibin A stay unchanged. A low AFP with other abnormal markers does not fit an open defect.",
+   "Twin pregnancy": "Twins raise all four markers because there is more fetal and placental tissue. Her AFP and estriol are low, so twins do not explain the pattern.",
+   "Gastroschisis": "An abdominal wall defect exposes bowel and lets AFP leak, so maternal AFP rises while the other markers stay normal. Her AFP is low."
   },
   "et": [
    [
@@ -202,7 +202,7 @@
      "Trisomy 18",
      "Low",
      "All three low",
-     "Increased nuchal translucency, clenched fists"
+     "Increased nuchal translucency, low PAPP-A"
     ],
     [
      "Open neural tube defect",
@@ -258,12 +258,12 @@
    "Reassurance with an anatomy scan at 20 weeks"
   ],
   "a": 0,
-  "e": "A nuchal translucency this large, with low PAPP-A and low hCG, is a high-risk first-trimester screen that fits **trisomy 18**, and a positive screen needs a diagnostic test rather than another screen. At 12 weeks the only diagnostic option is chorionic villus sampling, which takes placental tissue for karyotype or microarray and fits her wish for an early answer. Cell-free DNA is only a screen with limited scope, and an increased nuchal translucency can accompany many abnormalities that it does not detect. Amniocentesis is done from 15 weeks, so it delays the answer, and repeating the quad screen or waiting for the anatomy scan only postpones a diagnosis.",
+  "e": "A nuchal translucency this thick with low PAPP-A and low hCG is a high-risk first-trimester screen, and the pattern fits **trisomy 18**. A positive screen needs a diagnostic test, not another screen. At 12 weeks the only diagnostic option is chorionic villus sampling, which takes placental tissue for a karyotype or microarray and gives her the early answer she wants. Cell-free DNA is only a screen. Amniocentesis starts at 15 weeks, so it delays the answer. Repeating the quad screen or waiting for the anatomy scan only postpones the diagnosis.",
   "w": {
-   "Cell-free DNA testing": "This remains a screening test that looks only at the common trisomies, so it cannot diagnose a chromosomal abnormality, and a markedly increased nuchal translucency calls for diagnostic testing that can also find microarray changes.",
-   "Repeat the quad screen at 16 weeks": "Repeating a screening test adds delay without giving a diagnosis, and a second screen cannot overrule a high-risk result; confirmation needs fetal or placental cells for karyotype.",
-   "Amniocentesis at 16 weeks": "This is a valid diagnostic test, but it is performed from 15 weeks, so it postpones the answer by several weeks, while villus sampling is available now at 10 to 13 weeks.",
-   "Reassurance with an anatomy scan at 20 weeks": "An anatomy scan can find structural anomalies but cannot detect a trisomy reliably, so a high-risk screen should not be answered with reassurance and a later scan."
+   "Cell-free DNA testing": "Cell-free DNA is a screening test, not a diagnosis. She already has a high-risk screen and needs a test that gives a definite answer from fetal or placental cells.",
+   "Repeat the quad screen at 16 weeks": "Repeating a screening test adds delay without giving a diagnosis, and a second screen cannot overrule a high-risk result. Confirmation needs fetal or placental cells for a karyotype.",
+   "Amniocentesis at 16 weeks": "This is a valid diagnostic test, but it is done from 15 weeks, so it postpones the answer by several weeks. Villus sampling is available now, at 10 to 13 weeks.",
+   "Reassurance with an anatomy scan at 20 weeks": "An anatomy scan finds structural defects but cannot reliably detect a trisomy. A high-risk screen should not be answered with reassurance and a later scan."
   },
   "et": [
    [
@@ -283,7 +283,7 @@
      "Cell-free DNA testing",
      "Maternal blood, placental DNA",
      "From 10 weeks",
-     "Screen only, limited scope"
+     "Screen only, not diagnostic"
     ],
     [
      "Repeat the quad screen at 16 weeks",
@@ -340,12 +340,12 @@
    "Fetal death"
   ],
   "a": 0,
-  "e": "AFP rises each week through the second trimester, so a level is interpreted against the true gestational age. This fetus measures 19 weeks, 4 weeks more than the examination date, so a level that looked high for 15 weeks is expected at 19 weeks; **underestimated gestational age** is the explanation. The scan excludes the alternatives: the spine and skull are normal, which argues against open spina bifida, the abdominal wall is intact, which argues against omphalocele, and a single live fetus excludes twins and fetal death. The result is recalculated using the ultrasound age, and no amniocentesis is needed.",
+  "e": "AFP rises each week through the second trimester, so a level has to be read against the true gestational age. This fetus measures 19 weeks, which is 4 weeks more than the examination date. A level that looked high for 15 weeks is expected at 19 weeks, so the explanation is **underestimated gestational age**. The scan rules out the others: a normal spine and skull argue against open spina bifida, an intact abdominal wall argues against omphalocele, and a single live fetus excludes twins and fetal death. The result is reinterpreted using the ultrasound age.",
   "w": {
-   "Open spina bifida (myelomeningocele)": "An open defect would show a splayed spine or a lemon-shaped skull and banana-shaped cerebellum on ultrasound, but this scan shows a normal spine and skull, so a leaking lesion does not explain the elevated AFP.",
-   "Twin gestation": "Twins raise AFP and the other markers by doubling fetal and placental mass, but the scan shows a single fetus and the other three markers are normal here.",
-   "Omphalocele": "A ventral wall defect leaks AFP from exposed membranes or bowel, but the abdominal wall appears intact on ultrasonography, so this does not account for the high level.",
-   "Fetal death": "Fetal demise lets AFP escape from degenerating tissue and raises maternal levels, but this fetus is alive and measuring appropriately, so demise cannot be the explanation."
+   "Open spina bifida (myelomeningocele)": "An open defect would show a splayed spine, a lemon-shaped skull or a banana-shaped cerebellum on ultrasound. This scan shows a normal spine and skull.",
+   "Twin gestation": "Twins raise AFP, but the scan shows a single fetus, and the other three markers are normal here.",
+   "Omphalocele": "An abdominal wall defect leaks AFP from the exposed organs, but the abdominal wall looks intact on this scan, so it cannot explain the high level.",
+   "Fetal death": "Fetal death releases AFP from degenerating tissue and raises the maternal level, but this fetus is alive and measuring appropriately."
   },
   "et": [
    [
@@ -414,12 +414,12 @@
    "Cell-free DNA testing"
   ],
   "a": 0,
-  "e": "A raised AFP with confirmed dates needs a cause, and the first step is a detailed ultrasound, which is noninvasive and can show an open neural tube defect, an abdominal wall defect, twins or fetal death. Amniocentesis for amniotic fluid AFP and **acetylcholinesterase** is reserved for a raised AFP that the scan cannot explain. Chorionic villus sampling samples placental tissue and cannot detect a neural tube defect. Cell-free DNA looks for trisomies and is not a test for neural tube defects, and repeating the AFP only delays the search for a cause.",
+  "e": "A raised AFP with confirmed dates needs a cause, and the first step is **detailed ultrasonography**. It is noninvasive and can show an open neural tube defect, an abdominal wall defect, twins or fetal death. Amniocentesis for amniotic fluid AFP and acetylcholinesterase is kept for a raised AFP that the scan cannot explain. Chorionic villus sampling takes placental tissue and cannot detect a neural tube defect. Cell-free DNA looks for trisomies, and repeating the AFP only delays the search for a cause.",
   "w": {
-   "Chorionic villus sampling": "Villus sampling yields placental tissue for karyotype, not amniotic fluid, so it cannot measure fluid AFP or acetylcholinesterase and cannot detect a neural tube defect.",
-   "Repeat the maternal serum AFP in 1 week": "A second blood sample adds delay without information because the date is confirmed and the level is clearly raised; ultrasound is the quickest way to look for a structural cause.",
-   "Amniocentesis for fluid AFP and acetylcholinesterase": "This is the appropriate follow-up when ultrasound cannot explain the raised AFP, but it is invasive and carries a small risk of fetal loss, so noninvasive imaging comes first.",
-   "Cell-free DNA testing": "This blood test screens for trisomies 21, 18 and 13 from placental DNA and does not detect open neural tube defects, so it would not explain an isolated high AFP."
+   "Chorionic villus sampling": "Villus sampling gives placental tissue for a karyotype, not amniotic fluid. It cannot measure fluid AFP or acetylcholinesterase, so it cannot find a neural tube defect.",
+   "Repeat the maternal serum AFP in 1 week": "Her dates are confirmed and the level is clearly high, so a second blood test adds delay without new information. A scan is the quickest way to look for a structural cause.",
+   "Amniocentesis for fluid AFP and acetylcholinesterase": "This is the right follow-up when ultrasound cannot explain the raised AFP. It is invasive and carries a small risk of fetal loss, so noninvasive imaging comes first.",
+   "Cell-free DNA testing": "This blood test screens for trisomies 21, 18 and 13 using placental DNA. It does not detect open neural tube defects, so it cannot explain an isolated high AFP."
   },
   "et": [
    [
@@ -494,12 +494,12 @@
    "Dietary folate alone, with no supplement"
   ],
   "a": 0,
-  "e": "Folic acid taken before conception reduces neural tube defects because the neural tube closes about 28 days after conception, before many patients know they are pregnant. After a previous child with a neural tube defect such as myelomeningocele, the dose rises from the usual 0.4 mg to **4 mg** daily, started at least a month before conception and continued through the first trimester. The routine 0.4 mg dose is for patients without a prior affected pregnancy. Starting at the first visit or in the second trimester is too late to protect neural tube closure, and diet alone does not reliably supply enough folate.",
+  "e": "Folic acid supports DNA synthesis, and the neural tube closes about 28 days after conception, before many patients know they are pregnant. The usual dose is 0.4 mg daily, but after a child with a neural tube defect such as myelomeningocele it rises to **4 mg** daily. It is started at least a month before conception and continued through the first trimester. Starting at the first prenatal visit or in the second trimester is too late to protect neural tube closure, and food folate alone is absorbed too poorly to be enough.",
   "w": {
-   "0.4 mg, started at the first prenatal visit": "By the first visit the neural tube has already closed, so supplementation begun then cannot prevent a defect, and the usual 0.4 mg dose is too low after a previous affected child.",
-   "0.4 mg, started at least 1 month before conception": "The timing is right but 0.4 mg is the dose for patients at ordinary risk; a prior neural tube defect raises the recurrence risk and calls for ten times that amount.",
-   "4 mg, started in the second trimester": "The dose is correct but the timing is far too late, because neural tube closure finishes within about 4 weeks of conception, long before the second trimester begins.",
-   "Dietary folate alone, with no supplement": "Food folate is poorly absorbed compared with synthetic folic acid and rarely reaches the amount needed, so every patient who could conceive, and especially one with a prior affected child, takes a supplement."
+   "0.4 mg, started at the first prenatal visit": "By the first visit the neural tube has already closed, so starting then cannot prevent a defect. The usual 0.4 mg dose is also too low after an affected child.",
+   "0.4 mg, started at least 1 month before conception": "The timing is right, but 0.4 mg is the dose for ordinary risk. A prior neural tube defect calls for ten times that amount.",
+   "4 mg, started in the second trimester": "The dose is right, but the timing is far too late. The neural tube closes within about 4 weeks of conception, long before the second trimester.",
+   "Dietary folate alone, with no supplement": "Food folate is absorbed poorly, so every patient who could become pregnant takes a supplement, and one with an affected child needs the higher dose."
   },
   "et": [
    [
@@ -575,12 +575,12 @@
    "Lithium"
   ],
   "a": 0,
-  "e": "Nasal hypoplasia with stippled epiphyses is **warfarin embryopathy**, caused by first-trimester exposure when the drug blocks vitamin K-dependent carboxylation of bone and cartilage proteins. The mother's mechanical valve explains the indication, and heparin, which does not cross the placenta, is the safer anticoagulant in pregnancy. Phenytoin causes hypoplastic nails and distal phalanges, isotretinoin causes craniofacial, cardiac and central nervous system defects, valproate causes neural tube defects, and lithium causes Ebstein anomaly.",
+  "e": "Nasal hypoplasia with stippled epiphyses is **warfarin embryopathy**. Warfarin crosses the placenta and blocks vitamin K-dependent carboxylation of bone and cartilage proteins, and exposure at 6 to 12 weeks causes this pattern. The mother's mechanical valve explains why she took it. Heparin does not cross the placenta, so it is the safer anticoagulant in pregnancy. Phenytoin causes hypoplastic nails and distal phalanges, isotretinoin causes craniofacial, cardiac and central nervous system defects, valproate causes neural tube defects, and lithium causes Ebstein anomaly.",
   "w": {
-   "Phenytoin": "Fetal hydantoin syndrome features hypoplastic nails and distal phalanges, orofacial clefts and growth restriction, not a flat nose with punctate epiphyseal calcifications.",
-   "Isotretinoin": "Retinoic acid embryopathy damages the ears, face, thymus and heart outflow tract, so expect microtia and cleft palate rather than stippled epiphyses; the drug treats severe acne, not a valve.",
-   "Valproate": "Valproate mainly causes neural tube defects such as spina bifida, along with facial clefts and later cognitive impairment, and it is an antiepileptic rather than a drug for valve disease.",
-   "Lithium": "First-trimester lithium exposure is linked to Ebstein anomaly, a downward displacement of the tricuspid valve, and a mood disorder rather than a mechanical valve would be the indication."
+   "Phenytoin": "Fetal hydantoin syndrome causes hypoplastic nails and distal phalanges, not a flat nose with punctate calcifications at the ends of the long bones.",
+   "Isotretinoin": "Isotretinoin causes craniofacial, cardiac and central nervous system defects, so expect facial and heart findings rather than stippled epiphyses. It treats severe acne, not a valve.",
+   "Valproate": "Valproate mainly causes neural tube defects such as spina bifida. It is an antiseizure drug, not a drug for valve disease.",
+   "Lithium": "First-trimester lithium is linked to Ebstein anomaly, a malformed tricuspid valve. It treats a mood disorder, not a mechanical valve."
   },
   "et": [
    [
@@ -651,12 +651,12 @@
    "Phocomelia"
   ],
   "a": 0,
-  "e": "Enalapril, an **ACE inhibitor**, blocks angiotensin II, which the fetal kidney needs to maintain glomerular filtration, so exposure in the second and third trimesters causes fetal renal failure with little urine, oligohydramnios and small kidneys, as seen here. Without amniotic fluid the fetal chest is compressed and the lungs cannot grow, producing pulmonary hypoplasia, which causes neonatal respiratory failure. Neural tube defects follow valproate or carbamazepine, Ebstein anomaly follows lithium, tooth discoloration follows tetracyclines, and phocomelia follows thalidomide.",
+  "e": "Enalapril is an **ACE inhibitor**. It blocks angiotensin II, which the fetal kidney needs to keep filtering, so exposure in the second and third trimesters causes fetal renal failure, little urine and oligohydramnios, as seen here. Without amniotic fluid the fetal chest is compressed and the lungs cannot grow, which causes pulmonary hypoplasia and breathing failure at birth. Neural tube defects follow valproate or carbamazepine, Ebstein anomaly follows lithium, tooth discoloration follows tetracyclines, and phocomelia follows thalidomide.",
   "w": {
-   "Neural tube defect": "Neural tube closure is complete about 4 weeks after conception, and the drugs linked to it are valproate and carbamazepine; late exposure to an ACE inhibitor does not reopen the tube.",
-   "Ebstein anomaly": "This cardiac malformation follows first-trimester lithium exposure during organogenesis, whereas this fetus shows a late renal and amniotic fluid problem.",
-   "Yellow-brown tooth discoloration": "Staining of developing teeth occurs with tetracyclines given after the first trimester, and that drug is not the cause of an empty bladder, small kidneys and low fluid.",
-   "Phocomelia": "Thalidomide taken during weeks 4 to 8 after fertilization stops limb bud growth, while this woman's late exposure to an antihypertensive affected the kidneys instead."
+   "Neural tube defect": "The neural tube closes about 4 weeks after conception, and valproate and carbamazepine are the drugs linked to defects. Late exposure to an ACE inhibitor does not reopen it.",
+   "Ebstein anomaly": "This heart malformation follows first-trimester lithium exposure, while the heart is forming. This fetus shows a late kidney and amniotic fluid problem.",
+   "Yellow-brown tooth discoloration": "Tetracyclines given after the first trimester stain developing teeth. They do not cause an empty bladder, small kidneys or low fluid.",
+   "Phocomelia": "Thalidomide taken in weeks 4 to 8 stops limb bud growth. This woman's late exposure to an antihypertensive injured the kidneys instead."
   },
   "et": [
    [
@@ -732,12 +732,12 @@
    "Opioids"
   ],
   "a": 0,
-  "e": "Short palpebral fissures, a smooth philtrum and a thin upper lip with growth restriction, microcephaly and a septal defect are the features of **fetal alcohol syndrome**, which results from alcohol exposure during pregnancy and is the leading preventable cause of intellectual disability. Cocaine constricts placental vessels and causes abruption, preterm birth and low birth weight, smoking lowers birth weight and raises the risk of sudden infant death, and opioids cause neonatal withdrawal. Diethylstilbestrol affects the genital tract of daughters, not the face.",
+  "e": "Short palpebral fissures, a smooth philtrum and a thin upper lip, with growth restriction, microcephaly and a septal defect, make up **fetal alcohol syndrome**. There is no safe dose of alcohol in pregnancy, and it is the leading preventable cause of intellectual disability. Cocaine constricts placental vessels and causes abruption, preterm birth and low birth weight. Smoking lowers birth weight and raises the risk of preterm birth. Opioids cause neonatal withdrawal. Diethylstilbestrol affects the genital tract of daughters, not the face.",
   "w": {
-   "Cocaine": "Cocaine causes vasoconstriction in the placenta, leading to abruption, preterm delivery and growth restriction, but it does not produce the characteristic facial dysmorphism seen in this infant.",
-   "Cigarette smoking": "Smoking reduces birth weight and increases the risk of preterm birth and sudden infant death, yet it does not cause a recognizable facial pattern or cardiac septal defects.",
-   "Diethylstilbestrol": "Exposure in utero causes clear cell adenocarcinoma of the vagina and structural uterine anomalies in female offspring decades later, not a newborn with facial dysmorphism and microcephaly.",
-   "Opioids": "Opioid exposure causes neonatal withdrawal with irritability and high-pitched crying, but it does not cause the smooth philtrum, thin lip and short palpebral fissures seen here."
+   "Cocaine": "Cocaine constricts placental vessels, causing abruption, preterm birth and low birth weight. It does not produce the facial pattern seen in this infant.",
+   "Cigarette smoking": "Smoking lowers birth weight and raises the risk of preterm birth and placental abruption. It does not cause a recognizable facial pattern or a septal defect.",
+   "Diethylstilbestrol": "Exposure in utero causes vaginal clear cell adenocarcinoma in daughters decades later. It does not cause facial changes or microcephaly in a newborn.",
+   "Opioids": "Opioid exposure causes neonatal withdrawal with irritability and a high-pitched cry. It is not a birth defect and does not cause this facial pattern."
   },
   "et": [
    [
@@ -758,7 +758,7 @@
     ],
     [
      "Cigarette smoking",
-     "Low birth weight, sudden infant death",
+     "Low birth weight, preterm birth",
      "No distinctive facies"
     ],
     [
@@ -807,12 +807,12 @@
    "No vaccines until after delivery"
   ],
   "a": 0,
-  "e": "Inactivated and toxoid vaccines are safe in pregnancy, so she should receive **Tdap** now, within the 27 to 36 week window, and inactivated influenza vaccine because it is October. Her rubella nonimmunity is addressed with MMR after delivery, because MMR is a live attenuated vaccine and is contraindicated in pregnancy; it is safe during breastfeeding. Giving MMR now risks fetal infection, so the plans that include it are wrong. Withholding all vaccines or delaying Tdap and influenza until delivery forfeits maternal IgG transfer that protects the newborn from pertussis and influenza.",
+  "e": "Inactivated and toxoid vaccines are safe in pregnancy, so she should receive **Tdap** now, within the 27 to 36 week window, and inactivated influenza vaccine because it is October. MMR is a live vaccine and is contraindicated in pregnancy, so her rubella nonimmunity is handled with MMR after delivery, which is safe even when breastfeeding. Giving MMR now risks fetal infection. Delaying Tdap or influenza vaccine until delivery loses the maternal IgG that protects the newborn.",
   "w": {
-   "Tdap and MMR now; influenza vaccine after delivery": "This plan gives a live vaccine during pregnancy, which is contraindicated, and delays the influenza vaccine that protects her and her newborn during the season; both elements are wrong.",
-   "MMR and inactivated influenza now; Tdap after delivery": "Delaying Tdap until after delivery loses the antibody transfer that protects the newborn from pertussis in the first months, and giving the live rubella-containing vaccine now exposes the fetus.",
-   "Tdap now; no other vaccines during pregnancy or postpartum": "Her rubella nonimmunity needs MMR after delivery to prevent congenital rubella in a later pregnancy, and influenza vaccine is recommended in season, so omitting them leaves risks uncovered.",
-   "No vaccines until after delivery": "Withholding every vaccine forfeits protection for the newborn through placental IgG and exposes her to avoidable infection, and only the live vaccines need to be deferred."
+   "Tdap and MMR now; influenza vaccine after delivery": "This plan gives a live vaccine during pregnancy, which is contraindicated, and delays the influenza vaccine that is given in season. Both parts are wrong.",
+   "MMR and inactivated influenza now; Tdap after delivery": "Waiting on Tdap until after delivery loses the antibody transfer that protects the newborn from pertussis. Giving the live rubella-containing vaccine now also puts the fetus at risk.",
+   "Tdap now; no other vaccines during pregnancy or postpartum": "Her rubella nonimmunity needs MMR after delivery, and inactivated influenza vaccine is given in season. Leaving both out leaves risks uncovered.",
+   "No vaccines until after delivery": "Withholding every vaccine loses the antibody transfer that protects the newborn. Only the live vaccines need to wait until after delivery."
   },
   "et": [
    [
@@ -888,12 +888,12 @@
    "Counseling about termination of pregnancy"
   ],
   "a": 0,
-  "e": "Cell-free DNA is the most sensitive aneuploidy screen, but it is still a screen: in a young patient with a low prior probability, many high-risk results are false positives, for example from confined placental mosaicism. A positive result must therefore be confirmed with a diagnostic test before any irreversible decision. At 16 weeks the window for **chorionic villus sampling** (10 to 13 weeks) has closed, so amniocentesis, which is performed from 15 weeks and gives fetal cells for karyotype, is the appropriate test. Repeating the cell-free DNA test or sending a quad screen only adds another screen, and counseling about termination before confirmation is premature.",
+  "e": "Cell-free DNA is the most sensitive aneuploidy screen, but it is still a screen, not a diagnosis. Placental mosaicism causes false positives, so a positive result must be confirmed with a diagnostic test before any irreversible decision. At 16 weeks the window for chorionic villus sampling (10 to 13 weeks) has closed, so **amniocentesis**, which is done from 15 weeks and gives fetal cells for a karyotype, is the right test. Repeating cell-free DNA or sending a quad screen only adds another screen, and discussing termination before confirmation is premature.",
   "w": {
-   "Chorionic villus sampling": "Villus sampling is done at 10 to 13 weeks, so it is no longer available at 16 weeks, and its placental tissue can also show mosaicism that complicates interpretation.",
-   "Repeat cell-free DNA testing": "A second blood test is still a screening test and could repeat a false positive from placental mosaicism; it cannot establish whether the fetus is affected.",
-   "Quad screen": "The quad screen is a lower-sensitivity maternal serum screen, and a normal result would not outweigh a high-risk cell-free DNA result, so it adds uncertainty rather than a diagnosis.",
-   "Counseling about termination of pregnancy": "Irreversible decisions should wait for a definitive karyotype, because a positive screen in a low-risk patient is frequently a false positive, so discussing termination first is premature."
+   "Chorionic villus sampling": "Villus sampling is done at 10 to 13 weeks, so the window has closed by 16 weeks. Amniocentesis, done from 15 weeks, is the test that is still available.",
+   "Repeat cell-free DNA testing": "A second blood test is still only a screen and could repeat a false positive from placental mosaicism. It cannot tell whether the fetus is affected.",
+   "Quad screen": "The quad screen is another screening test. A normal result would not cancel a high-risk cell-free DNA result, so it adds uncertainty instead of a diagnosis.",
+   "Counseling about termination of pregnancy": "Irreversible decisions should wait for a confirmed karyotype. A positive screen is often a false positive, so discussing termination first is premature."
   },
   "et": [
    [

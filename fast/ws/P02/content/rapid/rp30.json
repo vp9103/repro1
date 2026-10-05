@@ -16,12 +16,12 @@
    "40 days and subtract 3 months"
   ],
   "a": 0,
-  "x": "Naegele's rule assumes a 28-day cycle with ovulation on day 14, so adding 7 days and subtracting 3 months lands about 280 days after the last menstrual period; irregular cycles break that assumption and call for an early ultrasound date.",
+  "x": "Naegele's rule is to add 7 days and subtract 3 months from the first day of the last menstrual period. It assumes a 28-day cycle with ovulation on day 14, so the date lands about 280 days after the last menstrual period. Irregular cycles break that assumption and need an ultrasound date.",
   "w": {
-   "14 days and add 3 months": "Adding 3 months reaches only the end of the first trimester, nowhere near term; a pregnancy lasts nine months, which equals one year minus three months.",
-   "7 days and add 3 months": "Moving forward 3 months lands near week 13, the end of the first trimester; the full 40 weeks is reached by counting back three months from the following year.",
-   "28 days and subtract 3 months": "Adding a full 28 days overshoots by three weeks, because nine calendar months plus 7 days approximates 280 days after the last menstrual period.",
-   "40 days and subtract 3 months": "Forty days overshoots by more than five weeks; the extra 7 days only compensate for the difference between nine calendar months and forty weeks."
+   "14 days and add 3 months": "Adding 3 months reaches only the end of the first trimester. A pregnancy lasts nine months, which is a year minus 3 months.",
+   "7 days and add 3 months": "Adding 3 months lands near week 13, the end of the first trimester. Nine months is reached by subtracting 3 months, which counts into the next year.",
+   "28 days and subtract 3 months": "Adding 28 days overshoots by three weeks. Nine calendar months plus 7 days comes to about 280 days after the last menstrual period.",
+   "40 days and subtract 3 months": "Adding 40 days overshoots by more than five weeks. The extra 7 days only make up the gap between nine calendar months and forty weeks."
   },
   "media": "fig:rp30_timeline",
   "pt": {
@@ -44,16 +44,16 @@
    "37 weeks",
    "34 weeks",
    "35 weeks",
-   "39 weeks",
+   "40 weeks",
    "41 weeks"
   ],
   "a": 0,
-  "x": "Term begins at 37 weeks, preterm covers 20 to 36 6/7 weeks, and post-term starts at 42 weeks; a loss before 20 weeks is called an abortion.",
+  "x": "Term begins at 37 weeks. A birth before 37 weeks is preterm, and post-term starts at 42 weeks or later. A loss before 20 weeks is called an abortion, and a birth at 20 weeks or later counts toward parity.",
   "w": {
-   "34 weeks": "At 34 weeks the infant is still preterm, with immature lungs and a risk of respiratory distress and feeding problems, so it is not classified as term.",
-   "35 weeks": "A 35-week infant is late preterm and carries risks of hypoglycemia, jaundice and breathing difficulty, so term has not yet begun.",
-   "39 weeks": "Thirty-nine weeks is full term, a subcategory inside the term range that began two weeks earlier, so it is not the start of term.",
-   "41 weeks": "Forty-one weeks is late term, still within the term range, and the post-term label begins a full week later at 42 weeks."
+   "34 weeks": "A baby born at 34 weeks is still preterm, with immature lungs and a risk of breathing trouble, so it is not classified as term.",
+   "35 weeks": "At 35 weeks the baby is still preterm and at risk of breathing and feeding problems, so term has not yet begun.",
+   "40 weeks": "Forty weeks is the usual due date and sits in the middle of the term range, so term begins earlier, at 37 weeks.",
+   "41 weeks": "A pregnancy at 41 weeks is still term. The post-term label begins a full week later, at 42 weeks."
   },
   "media": "fig:rp30_timeline",
   "pt": {
@@ -81,12 +81,12 @@
    "Pregnancies including the current one"
   ],
   "a": 0,
-  "x": "The A digit counts spontaneous or induced losses before 20 weeks, including miscarriages, ectopic pregnancies and elective abortions; births at 20 weeks or later are counted in the T or P digits instead.",
+  "x": "The A digit counts pregnancy losses before 20 weeks, including miscarriages, ectopic pregnancies and elective abortions. Births at 20 weeks or later are counted in the T or P digits instead.",
   "w": {
-   "Births at 37 weeks or later": "These are term births, which fill the T digit, the first of the four TPAL digits, rather than the abortion digit.",
-   "Births from 20 to 36 6/7 weeks": "These are preterm births and fill the P digit, because they occur after the 20-week threshold but before term.",
-   "Living children": "Living children are counted in the final L digit, with each twin counted separately, whenever the pregnancy ended.",
-   "Pregnancies including the current one": "That total is gravidity, the G in G P TPAL, which counts every pregnancy including the current one, whatever its outcome."
+   "Births at 37 weeks or later": "These are term births, so they fill the T digit, the first of the four TPAL digits, not the abortion digit.",
+   "Births from 20 to 36 6/7 weeks": "These are preterm births and fill the P digit, because they come after 20 weeks but before term.",
+   "Living children": "Living children fill the last digit, the L. Each living child counts, even when twins come from one birth.",
+   "Pregnancies including the current one": "That total is gravidity, the G in G P TPAL. It counts every pregnancy, including the current one, whatever its outcome."
   },
   "media": "fig:rp30_timeline",
   "pt": {
@@ -175,15 +175,15 @@
    "Trisomy 21",
    "Trisomy 18",
    "Overestimated gestational age",
-   "Maternal obesity"
+   "A normal fetus with correct dates"
   ],
   "a": 0,
-  "x": "An open defect exposes neural tissue, so fetal serum protein leaks into amniotic fluid and then maternal blood, raising AFP while estriol, hCG and inhibin A stay normal; gastroschisis, twins and underestimated dates also raise it.",
+  "x": "An open defect exposes neural tissue, so fetal serum protein leaks into amniotic fluid and then maternal blood, raising AFP. Estriol, hCG and inhibin A stay normal. Gastroschisis, twins and underestimated dates also raise AFP.",
   "w": {
    "Trisomy 21": "Down syndrome lowers maternal AFP, together with a low estriol and a high hCG and inhibin A.",
    "Trisomy 18": "Edwards syndrome lowers AFP along with the other three quad markers rather than raising it.",
    "Overestimated gestational age": "If the dates are overestimated, the expected AFP for that week is higher than the measured value, so the result looks low rather than high.",
-   "Maternal obesity": "Maternal weight dilutes serum markers, so greater weight lowers the measured AFP, and laboratories adjust results for weight."
+   "A normal fetus with correct dates": "With correct dates and a normal fetus, AFP is normal for the week. It is high only when fetal protein leaks or when the dates are too early."
   },
   "media": "fig:rp30_screens",
   "pt": {
@@ -281,8 +281,8 @@
   "w": {
    "2 mg": "No guideline uses this dose; the standard is a small daily supplement, with a ten-times higher dose reserved for patients with a prior neural tube defect.",
    "4 mg": "This higher dose is for patients who already had a pregnancy with a neural tube defect, not for those at ordinary risk.",
-   "10 mg": "Ten milligrams is far above any recommended prenatal dose and could mask vitamin B12 deficiency without adding neural tube protection.",
-   "40 mg": "Forty milligrams is a pharmacologic dose never used in prenatal care, and large folate doses can hide the anemia of vitamin B12 deficiency."
+   "10 mg": "Ten milligrams is far above any prenatal dose and adds no extra protection for patients at ordinary risk.",
+   "40 mg": "Forty milligrams is a drug-level dose that is never used for routine prenatal supplementation."
   },
   "media": "fig:rp30_timeline",
   "pt": {
@@ -342,12 +342,12 @@
    "Hepatitis B vaccine"
   ],
   "a": 0,
-  "x": "The MMR vaccine contains live attenuated viruses that could infect the fetus, so it is deferred until after delivery, when it is safe during breastfeeding; varicella and intranasal influenza vaccines are also live and are avoided.",
+  "x": "The MMR vaccine contains live weakened viruses that could infect the fetus, so it waits until after delivery, when it is safe even during breastfeeding. Varicella and intranasal influenza vaccines are also live and are avoided.",
   "w": {
-   "Tdap vaccine": "Tdap is a toxoid and protein product with no replicating organism, and it is recommended in every pregnancy.",
-   "Inactivated influenza vaccine": "The inactivated flu shot is safe in any trimester and lowers severe maternal illness and preterm birth during the season.",
-   "RSV vaccine": "The prefusion RSV vaccine is a protein subunit product given at 32 to 36 weeks, so it is not a live vaccine.",
-   "Hepatitis B vaccine": "Hepatitis B vaccine is a recombinant surface-antigen product that is safe in pregnancy and given when the patient is at risk."
+   "Tdap vaccine": "Tdap is a toxoid and protein vaccine with no replicating organism, and it is given in every pregnancy.",
+   "Inactivated influenza vaccine": "The inactivated flu shot is safe in any trimester and protects the mother during the season.",
+   "RSV vaccine": "The RSV vaccine given at 32 to 36 weeks is a protein vaccine, not a live virus.",
+   "Hepatitis B vaccine": "Hepatitis B vaccine is made from a purified surface protein, not a live virus, so it is not the vaccine that must wait."
   },
   "media": "fig:rp30_timeline",
   "pt": {
@@ -376,12 +376,12 @@
    "Dabigatran, a thrombin inhibitor"
   ],
   "a": 0,
-  "x": "Heparin and low-molecular-weight heparin are large, strongly charged molecules that cannot cross the placenta, so they anticoagulate the mother without reaching the fetus; warfarin crosses, and the direct oral anticoagulants lack safety data.",
+  "x": "Heparin and low-molecular-weight heparin are large, strongly charged molecules that cannot cross the placenta, so they thin the mother's blood without reaching the fetus. Warfarin crosses the placenta, and the direct oral anticoagulants are not used in pregnancy.",
   "w": {
-   "Warfarin taken by mouth": "Warfarin crosses the placenta and causes nasal hypoplasia and stippled epiphyses in the first trimester and fetal bleeding later.",
-   "Rivaroxaban, a factor Xa inhibitor": "This small molecule crosses the placenta, and direct oral anticoagulants lack pregnancy safety data, so they are avoided.",
-   "Apixaban, a factor Xa inhibitor": "Like other direct oral anticoagulants, apixaban reaches the fetus and has too little pregnancy safety data to be used.",
-   "Dabigatran, a thrombin inhibitor": "Dabigatran, a direct thrombin inhibitor, crosses the placenta and is avoided because evidence of fetal safety is lacking."
+   "Warfarin taken by mouth": "Warfarin crosses the placenta. It causes nasal hypoplasia and stippled epiphyses in the first trimester and fetal bleeding later.",
+   "Rivaroxaban, a factor Xa inhibitor": "This small molecule reaches the fetus across the placenta, and direct oral anticoagulants are avoided in pregnancy.",
+   "Apixaban, a factor Xa inhibitor": "Like the other direct oral anticoagulants, apixaban reaches the fetus and is not used in pregnancy.",
+   "Dabigatran, a thrombin inhibitor": "Dabigatran also crosses the placenta and is avoided in pregnancy, like the other direct oral anticoagulants."
   },
   "media": "fig:rp30_signatures",
   "pt": {
@@ -410,12 +410,12 @@
    "Transposition of the great arteries"
   ],
   "a": 0,
-  "x": "Lithium in the first trimester is linked to Ebstein anomaly, a downward displacement of the tricuspid valve into the right ventricle; the absolute risk is small, so treatment decisions weigh the risk of relapse.",
+  "x": "Lithium in the first trimester is linked to Ebstein anomaly, a malformed tricuspid valve displaced down into the right ventricle. Other drugs have their own signature defects, such as warfarin with nasal hypoplasia and thalidomide with phocomelia.",
   "w": {
-   "Tetralogy of Fallot": "This conotruncal defect is linked to the 22q11 deletion and to maternal diabetes or isotretinoin, not to lithium.",
-   "Patent ductus arteriosus": "A patent ductus is the classic defect of congenital rubella and prematurity rather than of lithium exposure.",
-   "Coarctation of the aorta": "Coarctation is associated with Turner syndrome and a bicuspid aortic valve rather than with lithium exposure.",
-   "Transposition of the great arteries": "Transposition is the cyanotic defect most tied to maternal pregestational diabetes, not to lithium."
+   "Tetralogy of Fallot": "Tetralogy of Fallot is a conotruncal defect that goes with the 22q11.2 deletion, not with lithium exposure.",
+   "Patent ductus arteriosus": "A patent ductus arteriosus is the classic defect of congenital rubella, not of lithium exposure.",
+   "Coarctation of the aorta": "Coarctation of the aorta is the aortic defect seen in Turner syndrome, not a lithium effect.",
+   "Transposition of the great arteries": "Transposition of the great arteries is the heart defect most tied to maternal pregestational diabetes, not to lithium."
   },
   "media": "fig:rp30_signatures",
   "pt": {
@@ -446,9 +446,9 @@
   "a": 0,
   "x": "Thalidomide taken in weeks 4 to 8 after fertilization blocks limb bud outgrowth, so the long bones are absent or shortened and the hands and feet sit near the trunk, a defect called phocomelia.",
   "w": {
-   "Polydactyly": "Extra digits arise from abnormal patterning, such as in trisomy 13, and not from the block of limb bud outgrowth caused by thalidomide.",
-   "Syndactyly": "Fused digits reflect failed apoptosis between the digit rays, as in Apert syndrome, and are not the thalidomide signature.",
-   "Clubfoot": "Clubfoot is a positional foot deformity linked to oligohydramnios or neuromuscular disease rather than to thalidomide.",
+   "Polydactyly": "Thalidomide stops limb buds from growing out, so limbs end up short or absent. It does not add extra digits.",
+   "Syndactyly": "Fused fingers or toes are not the thalidomide defect, which is a block of limb bud outgrowth that leaves short or absent long bones.",
+   "Clubfoot": "Clubfoot is a foot turned inward and down. Thalidomide instead leaves the long bones short or absent, with hands and feet near the trunk.",
    "Hypoplastic nails and distal phalanges": "Underdeveloped nails and fingertips are the hallmark of fetal hydantoin syndrome from phenytoin, not of thalidomide exposure."
   },
   "media": "fig:rp30_signatures",
@@ -478,12 +478,12 @@
    "Yellow-brown discoloration of the teeth"
   ],
   "a": 0,
-  "x": "NSAIDs block the prostaglandins that keep the ductus arteriosus open in fetal life, so late pregnancy exposure causes premature closure of the ductus arteriosus and also oligohydramnios from reduced fetal renal blood flow.",
+  "x": "NSAIDs block the prostaglandins that keep the ductus arteriosus open in fetal life, so exposure late in pregnancy causes premature closure of the ductus arteriosus. They can also cause oligohydramnios.",
   "w": {
-   "Persistent patency of the ductus arteriosus": "Patency is the opposite problem, which prostaglandin E1 maintains in ductal-dependent heart disease and which prematurity or rubella can cause, whereas NSAIDs close the vessel.",
+   "Persistent patency of the ductus arteriosus": "Patency is the opposite problem. NSAIDs close the vessel because they block the prostaglandins that keep it open.",
    "Neural tube defect with spina bifida": "Neural tube defects follow valproate or carbamazepine exposure around closure at 4 weeks, not an NSAID given late in pregnancy.",
-   "Cleft lip with or without cleft palate": "Clefts arise in the first trimester after exposures such as topiramate or phenytoin, whereas NSAIDs act late on the ductus.",
-   "Yellow-brown discoloration of the teeth": "Stained teeth follow tetracyclines, which bind calcium in developing teeth, rather than prostaglandin inhibitors."
+   "Cleft lip with or without cleft palate": "Clefts arise in the first trimester after exposures such as topiramate or smoking, whereas NSAIDs act late, on the ductus.",
+   "Yellow-brown discoloration of the teeth": "Stained teeth follow tetracyclines, which bind calcium in developing teeth, not prostaglandin inhibitors."
   },
   "media": "fig:rp30_signatures",
   "pt": {
@@ -512,12 +512,12 @@
    "Premature ductus closure"
   ],
   "a": 0,
-  "x": "Tetracyclines bind calcium and deposit in developing teeth and bone, causing permanent yellow-brown discoloration and enamel hypoplasia when given after the first trimester, so doxycycline is avoided in pregnancy.",
+  "x": "Tetracyclines bind calcium and deposit in developing teeth, causing permanent yellow-brown discoloration when given after the first trimester, so they are avoided in pregnancy.",
   "w": {
-   "Eighth-nerve deafness": "Deafness from eighth-nerve injury is the fetal toxicity of aminoglycosides such as streptomycin and kanamycin, not of tetracyclines.",
-   "Nasal hypoplasia": "Nasal hypoplasia with stippled epiphyses follows first-trimester warfarin, which interferes with bone protein carboxylation.",
-   "Neural tube defect": "These defects follow valproate or carbamazepine exposure around neural tube closure at 4 weeks, not later antibiotic exposure.",
-   "Premature ductus closure": "Early closure of the ductus follows prostaglandin inhibition by NSAIDs in the third trimester, not an antibiotic."
+   "Eighth-nerve deafness": "Eighth-nerve deafness is the fetal toxicity of aminoglycosides such as streptomycin, not of tetracyclines.",
+   "Nasal hypoplasia": "Nasal hypoplasia with stippled epiphyses follows first-trimester warfarin, which blocks vitamin K-dependent carboxylation of bone proteins.",
+   "Neural tube defect": "These defects follow valproate or carbamazepine exposure around neural tube closure at 4 weeks, not an antibiotic given later.",
+   "Premature ductus closure": "Early closure of the ductus follows NSAID use late in pregnancy, not an antibiotic."
   },
   "media": "fig:rp30_signatures",
   "pt": {
@@ -546,11 +546,11 @@
    "Vulvar squamous cell carcinoma"
   ],
   "a": 0,
-  "x": "Diethylstilbestrol exposure before birth causes vaginal adenosis that can progress to clear cell adenocarcinoma of the vagina or cervix in daughters, often after puberty, along with a T-shaped uterus and cervical incompetence.",
+  "x": "Diethylstilbestrol exposure before birth causes vaginal clear cell adenocarcinoma in daughters, often after puberty, along with a T-shaped uterus. The injury appears in the daughter, not in the woman who took the drug.",
   "w": {
-   "Cervical squamous cell carcinoma": "Squamous carcinoma of the cervix follows persistent high-risk HPV infection rather than prenatal hormone exposure.",
-   "Endometrial adenocarcinoma": "Endometrial cancer reflects unopposed estrogen in adulthood from obesity, anovulation or tamoxifen, not diethylstilbestrol exposure.",
-   "Ovarian serous carcinoma": "Serous ovarian cancer is tied to BRCA mutations and ovulation number rather than to in utero diethylstilbestrol.",
+   "Cervical squamous cell carcinoma": "Squamous carcinoma of the cervix follows persistent high-risk HPV infection, not prenatal hormone exposure.",
+   "Endometrial adenocarcinoma": "Endometrial cancer reflects unopposed estrogen in adult life, not diethylstilbestrol exposure before birth.",
+   "Ovarian serous carcinoma": "Serous ovarian cancer is tied to BRCA mutations rather than to in utero diethylstilbestrol exposure.",
    "Vulvar squamous cell carcinoma": "Vulvar squamous cancer arises from HPV or lichen sclerosus, not from prenatal diethylstilbestrol exposure."
   },
   "media": "fig:rp30_signatures",
@@ -580,12 +580,12 @@
    "36 to 37 weeks"
   ],
   "a": 0,
-  "x": "The 1-hour glucose challenge test is done at 24 to 28 weeks, when placental hormones such as human placental lactogen have raised insulin resistance enough to unmask gestational diabetes; an abnormal result leads to a 3-hour diagnostic test.",
+  "x": "The glucose challenge test is done at 24 to 28 weeks, when placental hormones have made the mother resistant enough to insulin to reveal gestational diabetes. An abnormal result is followed by a diagnostic glucose test.",
   "w": {
-   "12 to 16 weeks": "Insulin resistance is still mild this early, so screening would miss gestational diabetes; early testing is reserved for patients at high risk.",
-   "18 to 22 weeks": "This window is for the anatomy scan; placental hormones have not yet produced the insulin resistance the glucose challenge test detects.",
-   "32 to 34 weeks": "Testing this late delays treatment and misses the chance to prevent macrosomia and shoulder dystocia from untreated hyperglycemia.",
-   "36 to 37 weeks": "This window is for the group B strep culture, and diabetes screening here would come far too late to guide management."
+   "12 to 16 weeks": "Insulin resistance is still mild this early, so screening would miss most gestational diabetes.",
+   "18 to 22 weeks": "This window is for the anatomy scan. Placental hormones have not yet caused the insulin resistance that the test detects.",
+   "32 to 34 weeks": "Testing this late delays treatment, so the baby may already be large from untreated high glucose.",
+   "36 to 37 weeks": "This window is for the group B strep culture. Diabetes screening here would come too late to guide care."
   },
   "media": "fig:rp30_timeline",
   "pt": {
@@ -612,11 +612,11 @@
    "Iliac crest"
   ],
   "a": 0,
-  "x": "From 20 weeks the fundal height in centimeters roughly equals the weeks of gestation; the fundus reaches the pubic symphysis at 12 weeks, the umbilicus at 20 weeks and the xiphoid process near 36 weeks.",
+  "x": "From 20 weeks the fundal height in centimeters roughly equals the weeks of gestation. The fundus reaches the pubic symphysis at 12 weeks and the umbilicus at 20 weeks.",
   "w": {
-   "Pubic symphysis": "The fundus rises out of the pelvis to the symphysis at about 12 weeks, so this landmark marks the end of the first trimester.",
-   "Xiphoid process": "The fundus reaches the xiphoid process near 36 weeks, just before the fetal head engages and the fundus sinks slightly.",
-   "Costal margin": "The costal margin is approached close to term and is not a standard landmark for dating the uterus.",
+   "Pubic symphysis": "The fundus rises out of the pelvis and reaches the symphysis at about 12 weeks, the end of the first trimester.",
+   "Xiphoid process": "The fundus climbs to the xiphoid process only late in pregnancy, near 36 weeks, well after it passes the umbilicus.",
+   "Costal margin": "The costal margin is approached near term and is not a standard landmark for dating the uterus.",
    "Iliac crest": "The iliac crest is a pelvic bony landmark and does not mark the fundal position at any gestational age."
   },
   "media": "fig:rp30_timeline",

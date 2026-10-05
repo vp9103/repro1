@@ -1,149 +1,256 @@
 [
  {
   "id": "rp24r01",
-  "tags": ["tumor-genetics"],
-  "bp": ["BP-rp24-02"],
+  "tags": [
+   "tumor-genetics"
+  ],
+  "bp": [
+   "BP-rp24-02"
+  ],
   "q": "Which gene encodes the adhesion protein E-cadherin?",
-  "o": ["CDH1", "ERBB2", "TP53", "PTEN", "STK11"],
+  "o": [
+   "CDH1",
+   "ERBB2",
+   "TP53",
+   "PTEN",
+   "STK11"
+  ],
   "a": 0,
-  "x": "CDH1 encodes E-cadherin, the adhesion protein lost in lobular carcinoma in situ and invasive lobular carcinoma; the loss makes cells dyscohesive, so they invade in single file. Germline CDH1 variants also cause hereditary diffuse gastric cancer.",
+  "x": "CDH1 encodes E-cadherin, the adhesion protein lost in lobular carcinoma in situ and invasive lobular carcinoma. The loss makes cells loosely attached, so they invade in single file. Germline CDH1 variants also cause hereditary diffuse gastric cancer.",
   "w": {
    "ERBB2": "ERBB2 encodes HER2, a receptor tyrosine kinase that is amplified in HER2-positive tumors and targeted by trastuzumab.",
-   "TP53": "TP53 encodes p53, which halts the cell cycle or triggers apoptosis after DNA damage; germline loss causes Li-Fraumeni syndrome.",
-   "PTEN": "PTEN encodes a phosphatase that restrains PI3K-AKT signaling; germline loss causes Cowden syndrome with breast and thyroid cancer.",
-   "STK11": "STK11 encodes a serine-threonine kinase; germline loss causes Peutz-Jeghers syndrome with mucosal freckling and hamartomatous polyps."
+   "TP53": "TP53 encodes p53, which halts the cell cycle or triggers apoptosis after DNA damage. Germline loss causes Li-Fraumeni syndrome.",
+   "PTEN": "PTEN encodes a phosphatase that restrains PI3K-AKT signaling. Germline loss causes Cowden syndrome with breast and thyroid cancer.",
+   "STK11": "STK11 encodes a kinase that restrains growth. Germline loss causes Peutz-Jeghers syndrome with pigmented lips and hamartomatous polyps."
   }
  },
  {
   "id": "rp24r02",
-  "tags": ["histology-to-diagnosis", "imaging-to-diagnosis"],
-  "bp": ["BP-rp24-03"],
+  "tags": [
+   "histology-to-diagnosis",
+   "imaging-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp24-03"
+  ],
   "q": "Which breast lesion shows comedo necrosis that calcifies on mammography?",
-  "o": ["Ductal carcinoma in situ", "Lobular carcinoma in situ", "Fibroadenoma", "Intraductal papilloma", "Phyllodes tumor"],
+  "o": [
+   "Ductal carcinoma in situ",
+   "Lobular carcinoma in situ",
+   "Fibroadenoma",
+   "Intraductal papilloma",
+   "Phyllodes tumor"
+  ],
   "a": 0,
-  "x": "High-grade ductal carcinoma in situ packs ducts so tightly that the central cells die; the necrotic debris calcifies and shows up as linear, branching microcalcifications on a screening mammogram, often before any lump.",
+  "x": "High-grade ductal carcinoma in situ packs ducts so tightly that the central cells die. The necrotic debris calcifies and shows up as linear, branching microcalcifications on a screening mammogram, often before any lump.",
   "w": {
-   "Lobular carcinoma in situ": "LCIS cells are small and dyscohesive from E-cadherin loss; they fill lobules without necrosis and rarely calcify, so LCIS is found incidentally.",
-   "Fibroadenoma": "Fibroadenomas are benign fibroepithelial tumors of young women; older ones can develop coarse popcorn calcifications, not comedo necrosis.",
+   "Lobular carcinoma in situ": "LCIS cells are small and loosely attached from E-cadherin loss. They fill lobules without necrosis and rarely calcify, so LCIS is found by chance.",
+   "Fibroadenoma": "Fibroadenomas are benign tumors of young women. Older ones can develop coarse popcorn calcifications, not comedo necrosis.",
    "Intraductal papilloma": "An intraductal papilloma is a benign papillary growth in a large subareolar duct that presents with bloody nipple discharge.",
-   "Phyllodes tumor": "Phyllodes tumors are fibroepithelial tumors of older women with leaf-like fronds of overgrown stroma rather than necrotic ducts."
+   "Phyllodes tumor": "Phyllodes tumors are fibroepithelial tumors of older women with leaf-like fronds of overgrown stroma, not necrotic ducts."
   }
  },
  {
   "id": "rp24r03",
-  "tags": ["histology-to-diagnosis"],
-  "bp": ["BP-rp24-04"],
+  "tags": [
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp24-04"
+  ],
   "q": "Which invasive breast cancer infiltrates the stroma in single-file rows?",
-  "o": ["Invasive lobular carcinoma", "Invasive ductal carcinoma", "Medullary carcinoma", "Tubular carcinoma", "Mucinous carcinoma"],
+  "o": [
+   "Invasive lobular carcinoma",
+   "Invasive ductal carcinoma",
+   "Medullary carcinoma",
+   "Tubular carcinoma",
+   "Mucinous carcinoma"
+  ],
   "a": 0,
-  "x": "Invasive lobular carcinoma has lost E-cadherin, so its cells cannot form glands or sheets; they slip through the stroma one behind another, often without a palpable mass and often in both breasts.",
+  "x": "Invasive lobular carcinoma has lost E-cadherin, so its cells cannot form glands or sheets. They slip through the stroma one behind another, often without a palpable mass and often in both breasts.",
   "w": {
-   "Invasive ductal carcinoma": "Invasive ductal carcinoma forms glands, cords and nests in a desmoplastic stroma that creates a hard, stellate mass.",
-   "Medullary carcinoma": "Medullary-pattern carcinoma grows in syncytial sheets of large pleomorphic cells with a lymphocytic infiltrate and pushing borders.",
-   "Tubular carcinoma": "Tubular carcinoma forms small, well-formed angulated tubules lined by a single cell layer and has an excellent prognosis.",
-   "Mucinous carcinoma": "Mucinous carcinoma floats clusters of tumor cells in pools of extracellular mucin, making a soft, well-circumscribed mass in older women."
+   "Invasive ductal carcinoma": "Invasive ductal carcinoma forms glands, cords and nests in a scarred stroma that creates a hard, stellate mass.",
+   "Medullary carcinoma": "Medullary carcinoma grows in sheets of large, irregular cells with many lymphocytes and pushing borders.",
+   "Tubular carcinoma": "Tubular carcinoma forms small, well-formed tubules lined by a single cell layer and has an excellent prognosis.",
+   "Mucinous carcinoma": "Mucinous carcinoma floats clusters of tumor cells in pools of mucin, making a soft, well-circumscribed mass in older women."
   }
  },
  {
   "id": "rp24r04",
-  "tags": ["tumor-progression", "histology-to-diagnosis"],
-  "bp": ["BP-rp24-05"],
+  "tags": [
+   "tumor-progression",
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp24-05"
+  ],
   "q": "Which process produces peau d'orange skin in inflammatory breast carcinoma?",
-  "o": ["Tumor emboli in dermal lymphatics", "Neutrophils infiltrating the dermis", "Carcinoma cells in the epidermis", "Fat necrosis beneath the skin", "Traction on suspensory ligaments"],
+  "o": [
+   "Tumor emboli in dermal lymphatics",
+   "Neutrophils infiltrating the dermis",
+   "Carcinoma cells in the epidermis",
+   "Fat necrosis beneath the skin",
+   "Traction on suspensory ligaments"
+  ],
   "a": 0,
-  "x": "Tumor emboli in dermal lymphatics block lymph drainage, so the skin swells with edema while hair follicles stay anchored; the result is dimpled, orange-peel skin with redness and warmth that mimic infection but do not respond to antibiotics.",
+  "x": "Tumor emboli in dermal lymphatics block lymph drainage, so the skin swells with edema while hair follicles stay anchored. The result is dimpled, orange-peel skin with redness and warmth that mimics infection but does not respond to antibiotics.",
   "w": {
-   "Neutrophils infiltrating the dermis": "Neutrophilic dermal inflammation occurs in mastitis and cellulitis, which usually bring fever and respond to antibiotics.",
-   "Carcinoma cells in the epidermis": "Carcinoma cells within the epidermis define Paget disease, an eczematous lesion confined to the nipple and areola.",
-   "Fat necrosis beneath the skin": "Fat necrosis after trauma forms a firm mass that may retract the skin, but it does not cause diffuse edema and redness.",
-   "Traction on suspensory ligaments": "Tumor traction on suspensory (Cooper) ligaments produces a focal skin dimple over a mass, not diffuse edematous thickening."
+   "Neutrophils infiltrating the dermis": "Neutrophils in the dermis occur in mastitis and cellulitis, which usually bring fever and respond to antibiotics.",
+   "Carcinoma cells in the epidermis": "Carcinoma cells within the epidermis define Paget disease, an eczema-like lesion confined to the nipple and areola.",
+   "Fat necrosis beneath the skin": "Fat necrosis after trauma forms a firm mass that may pull in the skin. It does not cause diffuse edema and redness.",
+   "Traction on suspensory ligaments": "Tumor traction on the suspensory (Cooper) ligaments produces a focal skin dimple over a mass, not diffuse swollen skin."
   }
  },
  {
   "id": "rp24r05",
-  "tags": ["tumor-progression", "receptor-signaling"],
-  "bp": ["BP-rp24-07"],
+  "tags": [
+   "tumor-progression",
+   "receptor-signaling"
+  ],
+  "bp": [
+   "BP-rp24-07"
+  ],
   "q": "Which molecular class of breast cancer has the best prognosis?",
-  "o": ["Luminal A", "Luminal B", "HER2-enriched", "Basal-like", "Claudin-low"],
+  "o": [
+   "Luminal A",
+   "Luminal B",
+   "HER2-enriched",
+   "Basal-like",
+   "Metaplastic"
+  ],
   "a": 0,
-  "x": "Luminal A tumors are estrogen and progesterone receptor-positive, HER2-negative and slowly proliferating with a low Ki-67, so they respond to endocrine therapy and carry the best prognosis of the molecular classes.",
+  "x": "Luminal A tumors are estrogen receptor-positive, HER2-negative and slow-growing with a low Ki-67. They respond to endocrine therapy and carry the best prognosis of the molecular classes.",
   "w": {
-   "Luminal B": "Luminal B tumors are ER-positive but proliferate faster or carry HER2, so they recur more often and usually need chemotherapy.",
-   "HER2-enriched": "HER2-enriched tumors grow aggressively from ERBB2 amplification; trastuzumab has greatly improved, but not equalized, their outcome.",
-   "Basal-like": "Basal-like tumors are mostly triple-negative, high-grade and common in BRCA1 carriers; they have the worst prognosis.",
-   "Claudin-low": "Claudin-low tumors are a rare triple-negative group with stem-like, mesenchymal features and a poor outlook."
+   "Luminal B": "Luminal B tumors are ER-positive but divide faster or carry HER2, so they recur more often and usually need chemotherapy.",
+   "HER2-enriched": "HER2-enriched tumors grow aggressively from ERBB2 amplification. Trastuzumab has greatly improved their outcome but not made it as good as luminal A.",
+   "Basal-like": "Basal-like tumors are mostly triple-negative, high-grade and common in BRCA1 carriers. They have the worst prognosis.",
+   "Metaplastic": "Metaplastic carcinoma is a triple-negative type with squamous or spindle-cell elements and a poor outlook."
   }
  },
  {
   "id": "rp24r06",
-  "tags": ["adverse-effects"],
-  "bp": ["BP-rp24-09"],
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp24-09"
+  ],
   "q": "Which adverse effect is most characteristic of trastuzumab?",
-  "o": ["Reversible cardiotoxicity", "Hemorrhagic cystitis", "Pulmonary fibrosis", "Peripheral neuropathy", "Ototoxicity"],
+  "o": [
+   "Reversible cardiotoxicity",
+   "Hemorrhagic cystitis",
+   "Pulmonary fibrosis",
+   "Peripheral neuropathy",
+   "Ototoxicity"
+  ],
   "a": 0,
-  "x": "Trastuzumab blocks HER2 survival signaling in cardiac myocytes, so it can lower the ejection fraction; unlike anthracycline damage, this cardiotoxicity is not dose-dependent and usually recovers when the drug is held.",
+  "x": "Trastuzumab blocks HER2 survival signaling in cardiac myocytes, so it can lower the ejection fraction. Unlike anthracycline damage, this cardiotoxicity is not dose-dependent and usually recovers when the drug is held.",
   "w": {
    "Hemorrhagic cystitis": "Hemorrhagic cystitis comes from acrolein, a metabolite of cyclophosphamide and ifosfamide, and is prevented with mesna.",
    "Pulmonary fibrosis": "Pulmonary fibrosis is the classic toxicity of bleomycin, busulfan and amiodarone, not of an antibody against HER2.",
-   "Peripheral neuropathy": "Neuropathy follows microtubule drugs such as paclitaxel and vincristine and platinum drugs; in trastuzumab regimens it comes from the partner chemotherapy.",
+   "Peripheral neuropathy": "Neuropathy follows microtubule drugs such as paclitaxel and vincristine and platinum drugs. In trastuzumab regimens it comes from the partner chemotherapy.",
    "Ototoxicity": "Ototoxicity is typical of cisplatin and aminoglycosides, which damage cochlear hair cells."
   }
  },
  {
   "id": "rp24r07",
-  "tags": ["selective-modulators", "adverse-effects"],
-  "bp": ["BP-rp24-10"],
+  "tags": [
+   "selective-modulators",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp24-10"
+  ],
   "q": "Which endocrine drug for breast cancer raises the risk of endometrial cancer?",
-  "o": ["Tamoxifen", "Anastrozole", "Raloxifene", "Fulvestrant", "Letrozole"],
+  "o": [
+   "Tamoxifen",
+   "Anastrozole",
+   "Raloxifene",
+   "Fulvestrant",
+   "Letrozole"
+  ],
   "a": 0,
-  "x": "Tamoxifen is a selective estrogen receptor modulator that blocks the receptor in breast but acts as a partial agonist in the endometrium, causing hyperplasia, polyps and endometrial carcinoma; abnormal bleeding on tamoxifen needs evaluation.",
+  "x": "Tamoxifen is a selective estrogen receptor modulator that blocks the receptor in breast but acts as a partial agonist in the endometrium. It can cause hyperplasia, polyps and endometrial carcinoma, so abnormal bleeding on tamoxifen needs evaluation.",
   "w": {
-   "Anastrozole": "Anastrozole blocks aromatase and lowers estrogen everywhere, so the endometrium atrophies; its signature harms are bone loss and joint pain.",
-   "Raloxifene": "Raloxifene is an antagonist in the endometrium, so it lowers breast cancer risk and builds bone without stimulating the uterine lining.",
+   "Anastrozole": "Anastrozole blocks aromatase and lowers estrogen everywhere, so the endometrium thins. Its signature harms are bone loss and joint pain.",
+   "Raloxifene": "Raloxifene blocks the receptor in the endometrium, so it lowers breast cancer risk and builds bone without stimulating the uterine lining.",
    "Fulvestrant": "Fulvestrant is a pure antiestrogen that degrades the receptor in every tissue, so it has no endometrial agonist effect.",
-   "Letrozole": "Letrozole is another aromatase inhibitor that removes estrogen after menopause; it thins rather than stimulates the endometrium."
+   "Letrozole": "Letrozole is another aromatase inhibitor that removes estrogen after menopause. It thins rather than stimulates the endometrium."
   }
  },
  {
   "id": "rp24r08",
-  "tags": ["drug-mechanism", "feedback-logic"],
-  "bp": ["BP-rp24-10"],
+  "tags": [
+   "drug-mechanism",
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-rp24-10"
+  ],
   "q": "Which drug class works alone only after ovarian estrogen production has stopped?",
-  "o": ["Aromatase inhibitors", "Selective estrogen receptor modulators", "Selective estrogen receptor degraders", "HER2 monoclonal antibodies", "PARP inhibitors"],
+  "o": [
+   "Aromatase inhibitors",
+   "Selective estrogen receptor modulators",
+   "Selective estrogen receptor degraders",
+   "HER2 monoclonal antibodies",
+   "PARP inhibitors"
+  ],
   "a": 0,
   "x": "Aromatase inhibitors block the conversion of androgens to estrogens in fat. Before menopause, falling estrogen raises FSH and LH and the stimulated ovary overrides the block, so these drugs are used after menopause or with ovarian suppression.",
   "w": {
    "Selective estrogen receptor modulators": "SERMs such as tamoxifen block the estrogen receptor in breast tissue whatever the estrogen level, so they work before menopause.",
-   "Selective estrogen receptor degraders": "Fulvestrant degrades the estrogen receptor itself; it is used mostly after menopause, but its action does not depend on stopping estrogen synthesis.",
+   "Selective estrogen receptor degraders": "Fulvestrant degrades the estrogen receptor itself. It is used mostly after menopause, but its action does not depend on stopping estrogen synthesis.",
    "HER2 monoclonal antibodies": "Trastuzumab and pertuzumab target the HER2 receptor and work regardless of menopausal status in HER2-amplified tumors.",
-   "PARP inhibitors": "PARP inhibitors exploit defective homologous recombination in BRCA-mutant cells and do not act on estrogen at all."
+   "PARP inhibitors": "PARP inhibitors exploit defective homologous recombination in BRCA-mutant cells. They do not act on estrogen at all."
   }
  },
  {
   "id": "rp24r09",
-  "tags": ["tumor-progression", "lymph-drainage"],
-  "bp": ["BP-rp24-08"],
+  "tags": [
+   "tumor-progression",
+   "lymph-drainage"
+  ],
+  "bp": [
+   "BP-rp24-08"
+  ],
   "q": "What is the strongest single predictor of breast cancer prognosis?",
-  "o": ["Axillary lymph node status", "Tumor size", "Histologic grade", "Patient age", "Estrogen receptor status"],
+  "o": [
+   "Axillary lymph node status",
+   "Tumor size",
+   "Histologic grade",
+   "Patient age",
+   "Estrogen receptor status"
+  ],
   "a": 0,
-  "x": "Axillary lymph node status is the strongest predictor because tumor in the nodes proves the cancer has entered lymphatics and can spread; prognosis worsens with each additional involved node, which is why sentinel node biopsy is routine.",
+  "x": "Axillary lymph node status is the strongest predictor because tumor in the nodes proves the cancer has entered lymphatics and can spread. Prognosis worsens with each additional involved node, which is why sentinel node biopsy is part of surgery.",
   "w": {
-   "Tumor size": "Size is part of the T stage and correlates with spread, but it predicts outcome less strongly than proven nodal involvement.",
-   "Histologic grade": "Histologic grade reflects tubule formation, pleomorphism and mitoses; it refines prognosis but ranks below nodal status.",
+   "Tumor size": "Size is part of the T stage and tracks with spread, but it predicts outcome less strongly than proven nodal involvement.",
+   "Histologic grade": "Grade reflects tubule formation, pleomorphism and mitoses. It refines prognosis but ranks below nodal status.",
    "Patient age": "Very young women tend to have aggressive tumors, but age adds little once nodes, size, grade and receptors are known.",
    "Estrogen receptor status": "Estrogen receptor positivity is favorable and predicts endocrine response, but it predicts survival less strongly than nodal spread."
   }
  },
  {
   "id": "rp24r10",
-  "tags": ["anatomic-relations", "risk-factors"],
-  "bp": ["BP-rp24-14"],
+  "tags": [
+   "anatomic-relations",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp24-14"
+  ],
   "q": "In which quadrant do most breast carcinomas arise?",
-  "o": ["Upper outer", "Upper inner", "Lower outer", "Lower inner", "Central subareolar"],
+  "o": [
+   "Upper outer",
+   "Upper inner",
+   "Lower outer",
+   "Lower inner",
+   "Central subareolar"
+  ],
   "a": 0,
-  "x": "Most carcinomas arise in the upper outer quadrant because it holds the most glandular tissue, including the axillary tail of Spence that extends toward the armpit; more epithelium means more cells at risk.",
+  "x": "Most carcinomas arise in the upper outer quadrant because it holds the most glandular tissue, including the axillary tail that extends toward the armpit. More epithelium means more cells at risk.",
   "w": {
-   "Upper inner": "The upper inner quadrant holds less glandular tissue, so fewer cancers arise there; inner tumors may drain to internal mammary nodes.",
+   "Upper inner": "The upper inner quadrant holds less glandular tissue, so fewer cancers arise there than in the upper outer quadrant.",
    "Lower outer": "The lower outer quadrant is a less common site because it contains less gland than the upper outer region and axillary tail.",
    "Lower inner": "The lower inner quadrant has the least glandular tissue and is the least common site of breast carcinoma.",
    "Central subareolar": "Central tumors beneath the areola are less common and more likely to cause early nipple retraction or discharge."
@@ -151,62 +258,104 @@
  },
  {
   "id": "rp24r11",
-  "tags": ["inheritance-pattern", "risk-factors"],
-  "bp": ["BP-rp24-11"],
+  "tags": [
+   "inheritance-pattern",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp24-11"
+  ],
   "q": "Which germline gene is most strongly linked to male breast cancer?",
-  "o": ["BRCA2", "BRCA1", "TP53", "PTEN", "CDH1"],
+  "o": [
+   "BRCA2",
+   "BRCA1",
+   "TP53",
+   "PTEN",
+   "CDH1"
+  ],
   "a": 0,
-  "x": "BRCA2 carriers have the highest risk of male breast cancer, usually an estrogen receptor-positive invasive ductal carcinoma, and their families also show ovarian, prostate and pancreatic cancer. Klinefelter syndrome is the other major risk factor.",
+  "x": "BRCA2 carriers have the highest risk of male breast cancer, usually an estrogen receptor-positive invasive ductal carcinoma. Their families also show ovarian, prostate and pancreatic cancer. Klinefelter syndrome is the other major risk factor.",
   "w": {
-   "BRCA1": "BRCA1 raises male breast cancer risk only slightly and in women produces mostly triple-negative breast and serous ovarian cancer.",
+   "BRCA1": "BRCA1 raises male breast cancer risk only slightly. In women it produces mostly triple-negative breast and serous ovarian cancer.",
    "TP53": "Germline TP53 causes Li-Fraumeni syndrome, with sarcomas, adrenocortical carcinoma and early breast cancer in women.",
    "PTEN": "PTEN causes Cowden syndrome with hamartomas, macrocephaly, and breast, thyroid and endometrial cancer, mostly in women.",
-   "CDH1": "CDH1 links hereditary diffuse gastric cancer with lobular breast cancer in women; it is not a major male breast cancer gene."
+   "CDH1": "CDH1 links hereditary diffuse gastric cancer with lobular breast cancer in women. It is not a major male breast cancer gene."
   }
  },
  {
   "id": "rp24r12",
-  "tags": ["inheritance-pattern", "tumor-genetics"],
-  "bp": ["BP-rp24-02"],
+  "tags": [
+   "inheritance-pattern",
+   "tumor-genetics"
+  ],
+  "bp": [
+   "BP-rp24-02"
+  ],
   "q": "Which syndrome combines early breast cancer with sarcoma and adrenocortical carcinoma?",
-  "o": ["Li-Fraumeni syndrome", "Cowden syndrome", "Peutz-Jeghers syndrome", "Lynch syndrome", "Klinefelter syndrome"],
+  "o": [
+   "Li-Fraumeni syndrome",
+   "Cowden syndrome",
+   "Peutz-Jeghers syndrome",
+   "Lynch syndrome",
+   "Klinefelter syndrome"
+  ],
   "a": 0,
-  "x": "Li-Fraumeni syndrome comes from a germline TP53 mutation; without p53, damaged cells escape arrest and apoptosis, so sarcomas, breast cancer, brain tumors, adrenocortical carcinoma and leukemia appear at young ages.",
+  "x": "Li-Fraumeni syndrome comes from a germline TP53 mutation. Without p53, damaged cells escape arrest and apoptosis, so sarcomas, breast cancer, brain tumors and adrenocortical carcinoma appear at young ages.",
   "w": {
-   "Cowden syndrome": "Cowden syndrome (PTEN) brings trichilemmomas, macrocephaly and breast, follicular thyroid and endometrial cancer, not sarcomas.",
-   "Peutz-Jeghers syndrome": "Peutz-Jeghers syndrome (STK11) causes mucosal freckles and hamartomatous polyps with raised breast and pancreatic cancer risk.",
-   "Lynch syndrome": "Lynch syndrome is a mismatch repair defect causing colorectal, endometrial and ovarian cancer; breast cancer is not a hallmark.",
-   "Klinefelter syndrome": "Klinefelter syndrome (47,XXY) raises male breast cancer risk through a high estrogen-to-androgen ratio, but it does not cause sarcomas."
+   "Cowden syndrome": "Cowden syndrome (PTEN) brings hamartomas, macrocephaly and breast, thyroid and endometrial cancer, not sarcomas.",
+   "Peutz-Jeghers syndrome": "Peutz-Jeghers syndrome (STK11) causes pigmented lips and hamartomatous polyps with a raised risk of breast and gut cancer.",
+   "Lynch syndrome": "Lynch syndrome is a mismatch repair defect that causes colorectal, endometrial and ovarian cancer. Breast cancer is not a hallmark.",
+   "Klinefelter syndrome": "Klinefelter syndrome (47,XXY) raises male breast cancer risk through a high estrogen-to-androgen ratio. It does not cause sarcomas."
   }
  },
  {
   "id": "rp24r13",
-  "tags": ["selective-modulators"],
-  "bp": ["BP-rp24-10"],
+  "tags": [
+   "selective-modulators"
+  ],
+  "bp": [
+   "BP-rp24-10"
+  ],
   "q": "Which drug lowers breast cancer risk without stimulating the endometrium?",
-  "o": ["Raloxifene", "Tamoxifen", "Clomiphene", "Conjugated estrogens", "Medroxyprogesterone"],
+  "o": [
+   "Raloxifene",
+   "Tamoxifen",
+   "Clomiphene",
+   "Conjugated estrogens",
+   "Medroxyprogesterone"
+  ],
   "a": 0,
-  "x": "Raloxifene is a selective estrogen receptor modulator that blocks the receptor in breast and endometrium but acts as an agonist in bone, so it lowers invasive breast cancer risk and treats osteoporosis without causing endometrial cancer.",
+  "x": "Raloxifene is a selective estrogen receptor modulator that blocks the receptor in breast and endometrium but acts as an agonist in bone. It lowers breast cancer risk and treats osteoporosis without causing endometrial cancer.",
   "w": {
    "Tamoxifen": "Tamoxifen also lowers breast cancer risk, but its partial agonism in the endometrium raises the risk of hyperplasia and endometrial cancer.",
-   "Clomiphene": "Clomiphene blocks hypothalamic estrogen receptors to raise FSH and LH for ovulation induction; it is not used for breast cancer prevention.",
-   "Conjugated estrogens": "Estrogen therapy stimulates both breast and endometrium; combined with a progestin it slightly raises breast cancer risk.",
-   "Medroxyprogesterone": "Medroxyprogesterone protects the endometrium from estrogen, but added to estrogen in hormone therapy it raises rather than lowers breast cancer risk."
+   "Clomiphene": "Clomiphene blocks estrogen receptors in the hypothalamus to raise FSH and LH for ovulation induction. It is not used to prevent breast cancer.",
+   "Conjugated estrogens": "Estrogen therapy stimulates both the breast and the endometrium. Combined with a progestin, it slightly raises breast cancer risk.",
+   "Medroxyprogesterone": "Medroxyprogesterone protects the endometrium from estrogen, but added to estrogen in hormone therapy it raises breast cancer risk."
   }
  },
  {
   "id": "rp24r14",
-  "tags": ["histology-to-diagnosis"],
-  "bp": ["BP-rp24-03"],
+  "tags": [
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp24-03"
+  ],
   "q": "Which DCIS pattern shows sieve-like, punched-out spaces within the duct?",
-  "o": ["Cribriform", "Comedo", "Solid", "Micropapillary", "Papillary"],
+  "o": [
+   "Cribriform",
+   "Comedo",
+   "Solid",
+   "Signet-ring",
+   "Papillary"
+  ],
   "a": 0,
-  "x": "Cribriform DCIS fills the duct with malignant cells arranged around round, punched-out spaces, like a sieve; comedo DCIS instead has central necrosis that calcifies, and solid DCIS fills the duct without spaces.",
+  "x": "Cribriform DCIS fills the duct with malignant cells arranged around round, punched-out spaces, like a sieve. Comedo DCIS instead has central necrosis that calcifies, and solid DCIS fills the duct without spaces.",
   "w": {
    "Comedo": "Comedo DCIS is high grade with central necrosis that calcifies into linear, branching microcalcifications.",
    "Solid": "Solid DCIS fills the duct completely with sheets of tumor cells and leaves no rounded spaces.",
-   "Micropapillary": "Micropapillary DCIS forms bulbous tufts of cells projecting into the lumen without fibrovascular cores.",
-   "Papillary": "Papillary DCIS has fronds with fibrovascular cores covered by malignant cells, with myoepithelial cells missing from the cores."
+   "Signet-ring": "Signet-ring cells are a feature of diffuse gastric cancer and some lobular carcinomas, not a DCIS pattern.",
+   "Papillary": "Papillary DCIS has fronds with fibrovascular cores covered by malignant cells, not sieve-like holes."
   }
  }
 ]
