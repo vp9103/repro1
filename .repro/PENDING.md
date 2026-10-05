@@ -26,7 +26,8 @@ en9_hypercalcemia, en9_three_hpt missing.
 | P2.6 | CLOSED 2026-10-05 (F3) | ledger row sha:29b015ac | |
 | V2 | DONE (finished before the restart; 8 new figures reviewed 2026-10-05) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
 | P1.4 | CLOSED 2026-10-05 (round 3, part->anchor proposals A.md/B.md) | 302 rows, 48 UNANCHORED, 4 topic changes | ledger row |
-| P1.V | run 4 verifier (token 3174cc2441); run 3 was 11/12 | 12 objectives + round-4 rows + spot-checks | .repro/verify/P1-report.md |
+| P1.V | run 4: 11/12 (TRANSGENDER-LEC.6) + 3 round-4 edits weak | | re-verify after round 5 |
+| P1.4-R5 | worker | full sweep with block-level evidence -> .repro/P1.4-proposals/R5.md (rp7-rp9 deferred) | then reopen P1.4, integrate --partial, close, --verify P1 |
 
 ## Wave 1 (reproductive, Oct 9) queue
 1. Every rp topic now has questions, rapid and >= 1 drill. Figure gaps (hi blueprint items with no figure to pin a rapid item): BP-rp23-05 fat necrosis, BP-rp29-07 minors' consent, BP-rp11-04 bone/LDL, BP-rp17-10 molluscum, BP-rp17-05 perinatal HIV prevention, BP-rp17-12 HIV course and labs (en8_loop.svg has no JSON).

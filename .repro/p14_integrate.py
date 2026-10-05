@@ -1,6 +1,6 @@
 """Integrate the P1.4 round-3 row proposals (.repro/P1.4-proposals/A.md, B.md) into the gated workspace.
 
-  python3 .repro/p14_integrate.py [--dry]
+  python3 .repro/p14_integrate.py [--dry] [--partial R5.md ...]
 
 Each proposal line: | OBJ-ID | topics | terms | anchors | unanchored | note |
 Validates: every TOPIC-MAP row proposed exactly once; topics exist; 2-4 terms, lowercase, no '|', each >= 5 chars or an
@@ -28,7 +28,9 @@ LINE = re.compile(r"^\|\s*([A-Z][A-Z0-9-]+\.\d+)\s*\|([^|]*)\|([^|]*)\|([^|]*)\|
 def main(argv: list[str]) -> int:
     rows = rc.topic_map_rows(WS / "scope")
     props, probs = {}, []
-    for f in sorted(PROPS.glob("*.md")):
+    only = [a for a in argv if a.endswith(".md")]  # --partial R5.md: integrate just these files' rows
+    partial = "--partial" in argv
+    for f in ([PROPS / o for o in only] if only else sorted(PROPS.glob("*.md"))):
         for ln in f.read_text(encoding="utf-8").splitlines():
             m = LINE.match(ln.strip())
             if not m or m.group(1) == "OBJ-ID":
@@ -37,7 +39,7 @@ def main(argv: list[str]) -> int:
             if oid in props:
                 probs.append(f"{oid}: proposed twice ({f.name})")
             props[oid] = {k: m.group(i).strip() for i, k in enumerate(("topics", "terms", "anchors", "unanchored", "note"), 2)}
-    missing = [o for o in rows if o not in props]
+    missing = [] if partial else [o for o in rows if o not in props]
     extra = [o for o in props if o not in rows]
     if missing:
         probs.append(f"{len(missing)} rows not proposed: {missing[:8]}")
@@ -78,6 +80,12 @@ def main(argv: list[str]) -> int:
             out.append(new)
         else:
             out.append(ln)
+    # the reference list under '## Objective text' repeats each row's topics: keep it in step with the table
+    ref = re.compile(r"^- `([A-Z][A-Z0-9-]+\.\d+)` → ([^ ]+) — (.*)$")
+    table = {m.group(1): m.group(2).strip().replace(" ", "") for m in (re.match(r"^\|\s*([A-Z][A-Z0-9-]+\.\d+)\s*\|([^|]*)\|", ln) for ln in out) if m}
+    out = [(lambda m: f"- `{m.group(1)}` → {table[m.group(1)]} — {m.group(3)}" if m and m.group(1) in table else ln)(ref.match(ln)) for ln in out]
+    out = [ln.replace("Each term is matched as a lowercase substring of the first topic's rendered text",
+                      "Each term is matched in the first topic's rendered text at the start of a word (gate rule repro_common.term_hit: stems run on, terms of <= 3 characters and numbers must end there, hyphens optional)") for ln in out]
     tm.write_text("\n".join(out) + "\n", encoding="utf-8")
     un = [f"| {o} | UNANCHORED | {p['unanchored']} |" for o, p in props.items() if p["unanchored"] not in ("", "-")]
     au = WS / "audit" / "P1.4.md"

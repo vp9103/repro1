@@ -407,8 +407,18 @@ def term_hit(low: str, term: str) -> bool:
     """A key term is found only at the start of a word (so 'plication' is not found inside 'complication', nor
     'training' inside 'straining'); a stem may run on ('koilocyt' finds 'koilocytes'). A term of 3 characters or
     fewer is an abbreviation and must also end the word, a plural allowed ('whi' is not found in 'which')."""
-    tail = r"(?:e?s)?(?![a-z])" if len(term) <= 3 else ""
-    return re.search(r"(?<![a-z0-9])(?<![0-9][.,])" + re.escape(term) + tail, low) is not None  # '1 cm' not inside '2.1 cm'
+    # hyphens are tried as written, as spaces and removed, in text and term alike: 'prepregnancy' finds 'pre-pregnancy',
+    # 'determining factor' still finds 'sex-determining factor'
+    for sub in (None, " ", ""):
+        t2, l2 = (term, low) if sub is None else (term.replace("-", sub), low.replace("-", sub))
+        if not t2:
+            continue
+        tail = r"(?:e?s)?(?![a-z])" if len(t2) <= 3 else ""
+        if t2[-1].isdigit():
+            tail += r"(?![0-9])(?![.,][0-9])"  # '69' is not found in '69,000', '126' not in '1260'
+        if re.search(r"(?<![a-z0-9])(?<![0-9][.,])" + re.escape(t2) + tail, l2):  # '1 cm' not inside '2.1 cm'
+            return True
+    return False
 
 
 def terms_present(text: str, terms: list[list[str]]) -> list[str]:
