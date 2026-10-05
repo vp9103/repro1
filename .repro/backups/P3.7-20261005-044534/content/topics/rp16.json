@@ -1,0 +1,426 @@
+{
+ "id": "rp16",
+ "t": "Bacterial STIs and pelvic inflammatory disease",
+ "sub": "Chlamydia and gonorrhea climb from the cervix to cause PID, while ulcer pain and two kinds of blood test sort syphilis from its look-alikes.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 14,
+ "bp": [
+  "BP-rp16-01",
+  "BP-rp16-02",
+  "BP-rp16-03",
+  "BP-rp16-04",
+  "BP-rp16-05",
+  "BP-rp16-06",
+  "BP-rp16-07",
+  "BP-rp16-08",
+  "BP-rp16-09",
+  "BP-rp16-10",
+  "BP-rp16-11",
+  "BP-rp16-12",
+  "BP-rp16-13",
+  "BP-rp16-14",
+  "BP-rp16-15",
+  "BP-rp16-16",
+  "BP-rp16-17",
+  "BP-rp16-18"
+ ],
+ "obj": [
+  "TBL-STI.1",
+  "TBL-STI.2",
+  "HP-UTERUS-OVARY.6",
+  "BICEP-BROWN.5"
+ ],
+ "pretest": [
+  {
+   "q": "Which form of Chlamydia trachomatis infects a new host cell?",
+   "o": [
+    "Elementary body",
+    "Reticulate body",
+    "Glycogen inclusion",
+    "Endospore"
+   ],
+   "a": 0,
+   "why": "The small, hardy elementary body survives outside cells and enters epithelium by endocytosis. Inside the vacuole it becomes the reticulate body, which divides and then reorganizes into new elementary bodies.",
+   "w": {
+    "Reticulate body": "The reticulate body is the larger replicating form that divides inside the vacuole; it is fragile and cannot survive outside the host.",
+    "Glycogen inclusion": "The inclusion is the membrane-bound vacuole where reticulate bodies multiply; iodine stains its glycogen, but it is a growth site, not a particle.",
+    "Endospore": "Endospores are dormant forms of gram-positive rods such as Clostridium and Bacillus; chlamydiae never make spores, though elementary bodies are similarly hardy."
+   }
+  },
+  {
+   "q": "Which bedside finding most strongly suggests pelvic inflammatory disease in a woman with lower abdominal pain?",
+   "o": [
+    "Cervical motion tenderness",
+    "Strawberry cervix",
+    "Positive Murphy sign",
+    "Painless vulvar ulcer"
+   ],
+   "a": 0,
+   "why": "Moving the cervix stretches an inflamed uterus, tubes and pelvic peritoneum, so cervical motion tenderness with uterine or adnexal tenderness is the clinical signature of PID and justifies empiric treatment.",
+   "w": {
+    "Strawberry cervix": "Punctate hemorrhages on the cervix are the classic sign of trichomoniasis, a lower-tract infection that does not by itself inflame the tubes.",
+    "Positive Murphy sign": "Inspiratory arrest during right upper quadrant palpation points to gallbladder inflammation; perihepatitis from PID can mimic it, but it is not the pelvic sign.",
+    "Painless vulvar ulcer": "A painless genital ulcer suggests primary syphilis or donovanosis, which are skin ulcer diseases rather than ascending infections of the upper tract."
+   }
+  },
+  {
+   "q": "Which syphilis test result falls after successful treatment?",
+   "o": [
+    "RPR titer",
+    "FTA-ABS result",
+    "TP-PA result",
+    "Treponemal immunoassay"
+   ],
+   "a": 0,
+   "why": "The RPR measures antibody to cardiolipin, made only while spirochetes damage tissue, so a fourfold drop in titer documents cure. Treponemal antibodies persist for life and cannot track treatment.",
+   "w": {
+    "FTA-ABS result": "The fluorescent treponemal antibody test detects antibody to the spirochete itself, which usually remains detectable for life, so it confirms exposure but cannot monitor therapy.",
+    "TP-PA result": "The particle agglutination assay is another treponemal test; its antibodies persist after penicillin, so it confirms a reactive screen rather than following response.",
+    "Treponemal immunoassay": "Automated treponemal immunoassays start reverse-sequence screening; like other treponemal tests they stay reactive after cure, so they never mark successful treatment."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Why do chlamydia and gonorrhea behave so differently in the lab?"
+  ],
+  [
+   "p",
+   "*Chlamydia trachomatis* is an **obligate intracellular** bacterium because it cannot make its own ATP. It alternates between two forms. The small, hardy {{rp16eb|elementary body}} is the infectious form and enters columnar epithelial cells by endocytosis. Inside the vacuole it becomes the **reticulate body**, which divides and fills a glycogen-rich inclusion that stains with Giemsa or iodine, then reorganizes into new elementary bodies that burst out. Its cell wall lacks classic peptidoglycan, with little muramic acid, so penicillins and cephalosporins are unreliable and doxycycline, which blocks the bacterial ribosome, is used instead. Serovars D to K infect the genital tract, and the diagnosis is made by **NAAT**."
+  ],
+  [
+   "p",
+   "*Neisseria gonorrhoeae* is a gram-negative, oxidase-positive **diplococcus** usually seen inside neutrophils in urethral pus. It ferments glucose but not **maltose**, which separates it from the meningococcus, and it grows on **Thayer-Martin** medium, whose antibiotics suppress normal flora. It has no polysaccharide capsule. Its pili attach to epithelium and keep switching their antigens, an IgA protease cleaves mucosal antibody, and lipooligosaccharide acts as endotoxin. Antigenic variation of the pili is why one infection gives no lasting immunity and why there is no vaccine. Recurrent disseminated Neisseria infections suggest a deficiency of the terminal complement proteins C5 to C9."
+  ],
+  [
+   "t",
+   [
+    "Feature",
+    "Chlamydia trachomatis",
+    "Neisseria gonorrhoeae"
+   ],
+   [
+    [
+     "Appearance",
+     "Rarely seen on Gram stain; inclusions in cells",
+     "Gram-negative diplococci inside neutrophils"
+    ],
+    [
+     "Growth",
+     "Obligate intracellular; cannot make ATP",
+     "Thayer-Martin; ferments glucose, not maltose"
+    ],
+    [
+     "Virulence",
+     "Elementary body invades; little peptidoglycan",
+     "Pili with antigenic variation, IgA protease"
+    ],
+    [
+     "Usual disease",
+     "Silent cervicitis; reactive arthritis",
+     "Purulent urethritis; disseminated infection"
+    ],
+    [
+     "Treatment (CDC 2021)",
+     "Doxycycline 100 mg twice daily for 7 days; azithromycin 1 g once in pregnancy",
+     "Ceftriaxone 500 mg IM once (1 g if 150 kg or more)"
+    ],
+    [
+     "Newborn",
+     "Conjunctivitis at 5 to 14 days; staccato pneumonia",
+     "Purulent ophthalmia at 2 to 5 days"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Who should be screened for which infections, and how?"
+  ],
+  [
+   "call",
+   "key",
+   "Screen because most infections are silent",
+   "Cervical chlamydia and gonorrhea are **asymptomatic** in most women, yet they can still climb to the tubes. CDC and USPSTF therefore advise a yearly nucleic acid amplification test for every sexually active woman younger than 25 years, and for older women at increased risk. A vaginal swab is the best specimen in women, and a **self-collected** swab is as sensitive as one a clinician collects; first-catch urine is best in men. Men more often notice dysuria, and gonorrhea in men typically causes a purulent discharge."
+  ],
+  [
+   "p",
+   "Testing follows the exposure. Men who have sex with men are tested at the urethra, rectum and throat, because infections at the last two sites are usually silent and urine alone misses them. A symptomatic woman may have **cervicitis**, with a yellow mucopurulent discharge and a friable cervix that bleeds when touched; women at risk are treated presumptively with doxycycline. Herpes, trichomoniasis and bacterial vaginosis are not screened for in women without symptoms, except for annual trichomonas testing in women with HIV."
+  ],
+  [
+   "t",
+   [
+    "Infection",
+    "Who is screened",
+    "How"
+   ],
+   [
+    [
+     "Chlamydia and gonorrhea",
+     "Sexually active women younger than 25 years; older women at risk; pregnant women younger than 25 or at risk; men who have sex with men",
+     "NAAT on a vaginal swab or first-catch urine; throat and rectal swabs by exposure"
+    ],
+    [
+     "Syphilis",
+     "Every pregnant woman at the first visit; anyone at increased risk",
+     "Nontreponemal test confirmed by a treponemal test, or a treponemal immunoassay first"
+    ],
+    [
+     "HIV",
+     "Everyone aged 15 to 65 (CDC: 13 to 64), and every pregnancy",
+     "Fourth-generation antigen/antibody test, opt-out"
+    ],
+    [
+     "Hepatitis B and C",
+     "Hepatitis B surface antigen in every pregnancy; hepatitis C in adults 18 to 79 and every pregnancy",
+     "HBsAg; hepatitis C antibody, then RNA if reactive"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Treatment follows the CDC 2021 guideline, still current as of 2025. Gonorrhea gets **ceftriaxone** 500 mg IM once, or 1 g if the patient weighs 150 kg or more, because gonococci have become resistant to the older drugs. Chlamydia gets **doxycycline** 100 mg twice daily for 7 days, and azithromycin 1 g once in pregnancy. The two infections often coexist, so a patient treated for gonorrhea also receives doxycycline whenever chlamydia has not been excluded. Partners from the previous 60 days need treatment, and {{rp16ept|expedited partner therapy}} lets the clinician give the patient medication for a partner who has not been examined. Reinfection is common, so everyone treated is retested about 3 months later, and a pregnant patient also has a test of cure about 4 weeks after treatment. Urethritis that persists after doxycycline suggests *Mycoplasma genitalium*, which has no cell wall, so beta-lactams fail; Trichomonas and Ureaplasma are other causes of nongonococcal urethritis."
+  ],
+  [
+   "h",
+   "How does a cervical infection become pelvic inflammatory disease?"
+  ],
+  [
+   "p",
+   "Pelvic inflammatory disease is infection of the upper genital tract that starts at the cervix and climbs along continuous mucosal surfaces. Chlamydia and gonorrhea begin it, but only about half of women with PID test positive for either, because the infection is **polymicrobial**. Menstruation thins the cervical mucus barrier, and vaginal anaerobes, *Gardnerella*, enteric gram-negative rods and *Streptococcus agalactiae* join in. Organisms cause **endometritis**, then salpingitis, and pus leaking from the fimbriated end can form a **tubo-ovarian abscess** and inflame the pelvic peritoneum. The patient has lower abdominal pain, fever and purulent cervical discharge. The key sign is {{rp16cmt|cervical motion tenderness}}, the chandelier sign, with uterine or adnexal tenderness. Risk rises with prior PID, adolescence, new or multiple partners and no condom use; an IUD adds risk only in the first 3 weeks after insertion."
+  ],
+  [
+   "f",
+   "rp16_pid"
+  ],
+  [
+   "p",
+   "The pathology follows the climb. In endometritis neutrophils appear in the glands and plasma cells in the stroma. In acute salpingitis neutrophils flood the tubal folds and the lumen fills with pus; if the swollen fimbriated end seals, the tube distends as a {{rp16pyo|pyosalpinx}}, and when pus reaches the ovary the two organs fuse into a tubo-ovarian abscess. Once the infection clears, fibrosis fuses the folds, and a sealed tube that fills with clear fluid is a hydrosalpinx. Tuberculous salpingitis, rare in the United States, is another cause of tubal scarring and infertility, with caseating granulomas."
+  ],
+  [
+   "f",
+   "rp16_tube"
+  ],
+  [
+   "p",
+   "The lasting damage is scarring. Fused folds and sealed fimbriae stop a fertilized egg from passing, causing tubal factor infertility and **ectopic pregnancy**, and adhesions cause chronic pelvic pain; even a mild, unrecognized episode can do this. Infection that tracks up the right paracolic gutter inflames the liver capsule, a perihepatitis called {{rp16fhc|Fitz-Hugh-Curtis syndrome}}, which leaves violin-string adhesions between the capsule and the abdominal wall."
+  ],
+  [
+   "call",
+   "trap",
+   "Right upper quadrant pain is not always the gallbladder",
+   "A young woman with right upper quadrant pain, fever and pain on deep breathing looks like she has cholecystitis. If the gallbladder is normal on ultrasound and the pelvic exam shows cervical motion tenderness, the diagnosis is **perihepatitis** from PID. Liver enzymes are usually normal because only the capsule is inflamed, and the treatment is the PID regimen, not surgery."
+  ],
+  [
+   "steps",
+   [
+    "From a silent cervicitis to tubal infertility",
+    [
+     [
+      "Colonization of the cervix",
+      "Chlamydia or gonorrhea infects the columnar cells of the endocervix, often without symptoms, so nothing prompts treatment."
+     ],
+     [
+      "Ascent into the uterus",
+      "Around menses the mucus barrier thins and organisms reach the endometrium, causing endometritis with plasma cells in the stroma."
+     ],
+     [
+      "Infection of the tubes",
+      "Salpingitis fills the lumen with neutrophils; anaerobes join, and pus leaking from the fimbriae can form a tubo-ovarian abscess."
+     ],
+     [
+      "Healing by fibrosis",
+      "Scar blocks or distorts the tube, so sperm cannot reach the egg or a fertilized egg implants in the tube as an ectopic pregnancy."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How is PID diagnosed and treated?"
+  ],
+  [
+   "p",
+   "PID is diagnosed clinically, because no single finding is both sensitive and specific and delay scars the tubes, so the threshold to treat is low. A sexually active young woman with pelvic or lower abdominal pain and no other cause is treated if she has cervical motion, uterine or adnexal tenderness. Fever above 38.3 degrees C, mucopurulent cervical discharge, white cells on a saline wet mount, a raised ESR or C-reactive protein, or a positive NAAT strengthen the diagnosis. A pregnancy test excludes ectopic pregnancy, and transvaginal ultrasound looks for thickened fluid-filled tubes or a tubo-ovarian complex."
+  ],
+  [
+   "p",
+   "The outpatient regimen is **ceftriaxone** 500 mg IM once plus **doxycycline** 100 mg and **metronidazole** 500 mg, each twice daily for 14 days; metronidazole covers the anaerobes and the bacterial vaginosis that accompany PID. Admission with IV cefoxitin or cefotetan plus doxycycline is used for a tubo-ovarian abscess, pregnancy, severe illness, vomiting, no response within 72 hours, or when appendicitis cannot be excluded. An IUD can stay in place. Partners from the previous 60 days are treated for chlamydia and gonorrhea, and the patient is retested at 3 months."
+  ],
+  [
+   "h",
+   "Which genital ulcer is it, and does it hurt?"
+  ],
+  [
+   "p",
+   "Two questions sort genital ulcers: is the ulcer **painful** or **painless**, and what are the inguinal nodes doing? Herpes is the commonest cause in the United States, followed by syphilis, and any genital ulcer raises the risk of acquiring HIV, so every patient with one is tested for HIV and syphilis. Herpes simplex virus causes painful grouped vesicles that break into shallow ulcers. **Chancroid**, from *Haemophilus ducreyi*, a small gram-negative rod that lines up like a school of fish, gives deep, ragged, painful ulcers with a gray purulent base and a tender node on one side that can suppurate and drain. It is rare in the United States and is treated with azithromycin 1 g once or ceftriaxone 250 mg IM once."
+  ],
+  [
+   "p",
+   "The painless ulcers belong to three organisms. The syphilis chancre is single, indurated and clean-based, with rubbery nodes. In **lymphogranuloma venereum**, caused by *Chlamydia trachomatis* serovars L1 to L3, the small ulcer heals so fast that most patients never see it; weeks later the inguinal nodes swell into painful, matted **buboes** that can drain through sinus tracts, and nodes above and below the inguinal ligament make the groove sign. Rectal exposure causes proctocolitis. Treatment is doxycycline for 21 days. **Granuloma inguinale**, or donovanosis, from *Klebsiella granulomatis*, is a beefy-red ulcer that bleeds on contact; biopsy shows Donovan bodies inside macrophages, and treatment is azithromycin for at least 3 weeks, until the lesions heal."
+  ],
+  [
+   "f",
+   "rp16_ulcers"
+  ],
+  [
+   "t",
+   [
+    "Infection",
+    "Ulcer",
+    "Nodes",
+    "Clue",
+    "Treatment"
+   ],
+   [
+    [
+     "Genital herpes",
+     "Painful grouped vesicles, shallow ulcers",
+     "Tender, bilateral",
+     "Tzanck smear, PCR",
+     "Acyclovir or valacyclovir"
+    ],
+    [
+     "Chancroid",
+     "Painful, ragged, purulent base",
+     "Painful, one side, may suppurate",
+     "School-of-fish rods",
+     "Azithromycin or ceftriaxone"
+    ],
+    [
+     "Primary syphilis",
+     "Painless, indurated, clean base",
+     "Rubbery, painless",
+     "Darkfield, serology",
+     "Benzathine penicillin G"
+    ],
+    [
+     "Lymphogranuloma venereum",
+     "Painless, small, often missed",
+     "Painful buboes, groove sign",
+     "NAAT for L serovars",
+     "Doxycycline for 21 days"
+    ],
+    [
+     "Donovanosis",
+     "Painless, beefy-red, bleeds easily",
+     "Pseudobuboes only",
+     "Donovan bodies",
+     "Azithromycin for 3 weeks or more"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How does syphilis progress, and why are there two blood tests?"
+  ],
+  [
+   "p",
+   "*Treponema pallidum* is a spirochete too thin to see on Gram stain, so fluid from a chancre is examined by **darkfield** microscopy. About three weeks after exposure a painless **chancre** appears and heals by itself. Weeks to months later, secondary syphilis brings a rash that includes the palms and soles, generalized painless lymphadenopathy and **condylomata lata**, moist flat plaques full of organisms. A latent stage with positive serology but no signs follows, early within the first year and late after that. Years later about a third of untreated patients reach tertiary syphilis: gummas, aortitis of the ascending aorta from obliterated vasa vasorum, and neurosyphilis. Tabes dorsalis destroys the dorsal columns, and the Argyll Robertson pupil constricts to near focus but not to light."
+  ],
+  [
+   "f",
+   "rp16_syphilis"
+  ],
+  [
+   "p",
+   "Screening uses a {{rp16ntt|nontreponemal test}}, the VDRL or RPR, which detects antibody against **cardiolipin**, a lipid released from damaged host cells. It is reported as a **titer**, and a fourfold fall after treatment shows cure, so it is the test used to follow therapy. Cardiolipin antibodies also appear in lupus, antiphospholipid syndrome, pregnancy and viral infections, so a reactive result is confirmed with a **treponemal** test such as FTA-ABS or TP-PA, which detects antibody to the organism itself and stays positive for life. In secondary syphilis, so much antibody can block the reaction (the prozone effect) that the RPR reads falsely negative until the serum is diluted."
+  ],
+  [
+   "p",
+   "Benzathine penicillin G is the treatment: 2.4 million units IM once for primary, secondary or early latent syphilis, and three weekly doses for late latent syphilis or latent disease of unknown duration. Neurosyphilis needs IV aqueous penicillin G for 10 to 14 days, because benzathine penicillin does not reach the cerebrospinal fluid. The first dose can cause a Jarisch-Herxheimer reaction of fever and myalgia as dying spirochetes release inflammatory lipoproteins."
+  ],
+  [
+   "call",
+   "trap",
+   "Penicillin allergy does not change the drug in pregnancy",
+   "Doxycycline can treat syphilis in a nonpregnant adult with penicillin allergy, but it harms fetal bones and teeth, and only **penicillin** G reliably treats the fetus. A pregnant patient with a penicillin allergy therefore undergoes **desensitization** and then receives penicillin, rather than switching to a drug that would leave the fetus at risk of congenital syphilis."
+  ],
+  [
+   "why",
+   "Why does a positive treponemal test with a negative RPR usually mean an old infection?",
+   "The two tests measure different antibodies with different lifespans. The treponemal test detects antibody against the organism's own proteins, and once the immune system makes that antibody it keeps making it for life, even after penicillin has cleared every spirochete. The RPR detects antibody against cardiolipin, which is produced only while treponemes are damaging tissue, so its titer falls and often disappears after successful treatment. A positive treponemal result with a negative RPR therefore usually means syphilis treated in the past. Laboratories that screen with a treponemal immunoassay settle this pair with a second treponemal test, such as TP-PA."
+  ],
+  [
+   "h",
+   "What happens when the infection spreads beyond the genital tract?"
+  ],
+  [
+   "p",
+   "Gonococci that reach the bloodstream cause **disseminated** gonococcal infection, more often with menstruation, pregnancy or terminal complement deficiency: fever, migratory polyarthralgia, tenosynovitis of the wrists and a few pustules on the limbs, or a purulent septic arthritis of the knee. It is treated with ceftriaxone 1 g IM or IV daily. Chlamydia instead triggers reactive arthritis in HLA-B27-positive patients, with arthritis, urethritis and conjunctivitis. Newborns are infected during delivery: gonococcal ophthalmia neonatorum is a hyperacute purulent conjunctivitis within 2 to 5 days that erythromycin ointment at birth prevents, while chlamydial conjunctivitis and a later afebrile pneumonia with a staccato cough are not prevented by the ointment."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp16_ulcer",
+    "q": "A man had a painless genital ulcer that healed, then painful matted inguinal nodes. Which reasoning best identifies the cause?",
+    "o": [
+     "Painful nodes mean a painful infection, so this must be chancroid from Haemophilus ducreyi",
+     "Any painless ulcer is syphilis, so the enlarging nodes are the lymphadenopathy of secondary syphilis",
+     "A fleeting painless ulcer followed by painful buboes fits lymphogranuloma venereum from chlamydia serovars L1 to L3",
+     "Nodes that swell after the ulcer heals mean reactivation of latent herpes in the sacral ganglia"
+    ],
+    "a": 2,
+    "why": "The history has two phases, and the diagnosis depends on reading them in order. A small painless ulcer that heals quickly, followed weeks later by painful, matted inguinal buboes, is the course of lymphogranuloma venereum, caused by the invasive L1 to L3 serovars of Chlamydia trachomatis, which travel through lymphatics to the nodes. Chancroid is painful from the start, with ulcer and node together. Syphilitic nodes are rubbery and painless, and herpes recurrences bring vesicles rather than buboes."
+   }
+  ],
+  [
+   "vis",
+   "rp16"
+  ]
+ ],
+ "grid": {
+  "q": "Which findings fit pelvic inflammatory disease or its complications?",
+  "items": [
+   [
+    "Cervical motion tenderness",
+    1
+   ],
+   [
+    "Salpingitis with pus in the tube",
+    1
+   ],
+   [
+    "Tubo-ovarian abscess",
+    1
+   ],
+   [
+    "Violin-string adhesions on the liver capsule",
+    1
+   ],
+   [
+    "Ectopic pregnancy after tubal scarring",
+    1
+   ],
+   [
+    "Plasma cells in the endometrial stroma",
+    1
+   ],
+   [
+    "Started by chlamydia or gonorrhea",
+    1
+   ],
+   [
+    "Treated with ceftriaxone, doxycycline and metronidazole",
+    1
+   ],
+   [
+    "Strawberry cervix with frothy discharge",
+    0
+   ],
+   [
+    "Painless indurated chancre",
+    0
+   ],
+   [
+    "Clue cells on a wet mount",
+    0
+   ],
+   [
+    "Umbilicated pearly papules",
+    0
+   ]
+  ]
+ }
+}

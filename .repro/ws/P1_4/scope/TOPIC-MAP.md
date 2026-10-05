@@ -35,7 +35,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | ANAT-PELVIS-LEC.4 | rp1 | - | vesicouterine; rectovesical; retropubic; retrorectal |
 | ANAT-PELVIS-LEC.5 | rp1 | - | fimbria; external os; fornices; ovarian fossa |
 | ANAT-PELVIS-LEC.6 | rp1 | - | fructose; liquef; seminal colliculus; retrograde ejaculation |
-| ANAT-PELVIS-LEC.7 | rp1 | - | inferior vesical; middle rectal; uterovaginal; internal iliac vein |
+| ANAT-PELVIS-LEC.7 | rp1 | - | inferior vesical; middle rectal; portal vein; internal iliac vein |
 | ANAT-PELVIS-LEC.8 | rp1 | - | parametri; ischial spine; common iliac |
 | ANAT-PELVIS-LEC.9 | rp1 | - | embolization; prostatectomy; superior rectal; anastomos |
 | ANAT-PELVIS-LAB.1 | rp1 | - | sacroiliac; sacrospinous; sacrotuberous; ischium |

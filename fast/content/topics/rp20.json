@@ -111,7 +111,7 @@
   ],
   [
    "p",
-   "Testicular **torsion** happens when the testis rotates and twists its spermatic cord. The usual setup in adolescents is the {{rp20bellclap|bell-clapper deformity}}: the tunica vaginalis attaches too high, so the testis hangs free, and the defect is usually on both sides; neonatal torsion has no such defect. Twisting compresses the thin-walled veins before the thicker arteries, so blood enters but cannot leave; venous congestion swells the testis, which then undergoes **hemorrhagic infarction**. The typical patient has sudden, severe pain, nausea and vomiting, a high-riding testis with a horizontal lie and an absent {{rp20cremreflex|cremasteric reflex}}, and sometimes earlier pain that resolved on its own, which suggests intermittent torsion. The reflex runs through the genitofemoral nerve (L1 to L2): stroking the inner thigh signals up its femoral branch, and its genital branch makes the cremaster lift the ipsilateral testis."
+   "Testicular **torsion** happens when the testis rotates and twists its spermatic cord. The usual setup in adolescents is the {{rp20bellclap|bell-clapper deformity}}: the tunica vaginalis attaches too high, so the testis hangs free; neonatal torsion has no such defect. Twisting compresses the thin-walled veins before the thicker arteries, so blood enters but cannot leave; venous congestion swells the testis, which then undergoes **hemorrhagic infarction**. The typical patient has sudden, severe pain, nausea and vomiting, a high-riding testis with a horizontal lie and an absent {{rp20cremreflex|cremasteric reflex}}, and sometimes earlier pain that resolved on its own, which suggests intermittent torsion. The reflex runs through the genitofemoral nerve (L1 to L2): stroking the inner thigh signals up its femoral branch, and its genital branch makes the cremaster lift the ipsilateral testis."
   ],
   [
    "p",
@@ -186,7 +186,7 @@
   ],
   [
    "p",
-   "Testicular pain is not always testicular. A **ureteral stone** can refer pain to the testis because the ureter and the testis share spinal sensory levels, and an incarcerated inguinal hernia can do the same, so the flank, abdomen and groin are examined too. Blunt trauma can rupture the testis, orchitis swells and tenderizes the whole gland, Fournier gangrene causes pain out of proportion to the exam with crepitus in the perineum, and a firm painless intratesticular mass is a tumor until proven otherwise. The work-up follows the exam: check the reflex and the lie first, send a urinalysis and a urethral nucleic acid amplification test (NAAT) when infection is likely, and use Doppler ultrasound to confirm torsion or to show the increased flow of epididymo-orchitis, but never let imaging delay surgery."
+   "Testicular pain is not always testicular. A **ureteral stone** can refer pain to the testis because the ureter and the testis share spinal sensory levels, and an incarcerated inguinal hernia can do the same, so the flank, abdomen and groin are examined too. Blunt trauma can rupture the testis, orchitis swells and tenderizes the whole gland, Fournier gangrene causes pain out of proportion to the exam with crepitus in the perineum, and a firm painless intratesticular mass is a tumor until proven otherwise. The work-up follows the exam: check the reflex and the lie first, send a urinalysis and a urethral nucleic acid amplification test (NAAT) when infection is likely, and use Doppler ultrasound to confirm torsion or to show the increased flow of epididymo-orchitis."
   ],
   [
    "h",
@@ -342,6 +342,47 @@
    "Pure seminoma never secretes **AFP**. If a tumor reported as seminoma comes with a raised AFP, it contains a nonseminomatous component, usually yolk sac tumor, and it is treated as a nonseminomatous tumor. A mildly raised **hCG** fits seminoma, because scattered syncytiotrophoblast cells make it; only very high hCG points to choriocarcinoma. LDH is nonspecific and tracks tumor bulk, so it helps with prognosis, not with typing."
   ],
   [
+   "h",
+   "How is each scrotal condition treated?"
+  ],
+  [
+   "t",
+   [
+    "Condition",
+    "Treatment"
+   ],
+   [
+    [
+     "Hydrocele",
+     "Observe in infants, since most close by 12 to 24 months; repair if it persists or a hernia accompanies it. Adults need a hydrocelectomy only if it is large or painful."
+    ],
+    [
+     "Spermatocele",
+     "Observe; excise only if large or painful, because surgery can scar the epididymis."
+    ],
+    [
+     "Varicocele",
+     "Observe if painless with normal semen. Varicocelectomy or embolization for pain, infertility with abnormal semen, or loss of testicular size in an adolescent."
+    ],
+    [
+     "Orchitis",
+     "Mumps orchitis is supportive (scrotal support, NSAIDs, ice); bacterial orchitis gets the epididymitis antibiotics; tuberculosis gets antituberculous drugs."
+    ],
+    [
+     "Any testicular cancer",
+     "Sperm banking, then radical inguinal orchiectomy."
+    ],
+    [
+     "Seminoma",
+     "Stage I: surveillance, one dose of carboplatin or para-aortic radiation. Advanced disease: cisplatin-based chemotherapy."
+    ],
+    [
+     "Nonseminoma",
+     "Low-risk stage I: surveillance. Otherwise BEP (bleomycin, etoposide, cisplatin), then retroperitoneal lymph node dissection for any residual mass, because teratoma resists chemotherapy."
+    ]
+   ]
+  ],
+  [
    "sexp",
    {
     "id": "sx_rp20_rightvar",
@@ -353,13 +394,13 @@
      "Varicoceles come from arterial malformations, so Doppler of the testicular artery will settle the diagnosis"
     ],
     "a": 1,
-    "why": "Varicoceles are usually left-sided because the left testicular vein enters the left renal vein at a right angle, giving a long, high-pressure column. The right vein enters the inferior vena cava obliquely and rarely backs up. A new right-sided varicocele, or one that does not collapse when the patient lies flat, therefore implies an obstruction downstream, classically renal cell carcinoma growing into the vena cava. The next step is imaging of the abdomen, not reassurance."
+    "why": "Varicoceles are usually left-sided because the left testicular vein enters the left renal vein at a right angle, giving a long, high-pressure column. The right vein enters the inferior vena cava obliquely and rarely backs up. A new right-sided varicocele, or one that stays full lying flat, therefore implies obstruction downstream, classically renal cell carcinoma growing into the vena cava, so the abdomen is imaged."
    }
   ],
   [
    "why",
    "Why must a suspected testicular cancer be removed through the groin rather than the scrotum?",
-   "The testis develops near the kidney and drags its vessels and lymphatics with it as it descends, so its lymph drains to para-aortic nodes at the level of the renal vessels, whereas the scrotal skin drains to superficial inguinal nodes. Cutting through the scrotum could spill tumor into the scrotal wall and open a route to the inguinal nodes, adding a second nodal basin and complicating staging and treatment. Surgeons therefore perform a radical inguinal orchiectomy, removing the testis and spermatic cord through the groin and tying the cord high, so the tumor never touches the scrotal lymphatics."
+   "The testis develops near the kidney and drags its vessels and lymphatics with it as it descends, so its lymph drains to para-aortic nodes at the level of the renal vessels, whereas scrotal skin drains to superficial inguinal nodes. Cutting through the scrotum could spill tumor into the scrotal wall and open that second nodal route, complicating staging and treatment. A radical inguinal orchiectomy removes the testis and cord through the groin and ties the cord high, so the tumor never touches the scrotal lymphatics."
   ],
   [
    "vis",

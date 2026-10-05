@@ -101,11 +101,11 @@
   ],
   [
    "p",
-   "Gestational age counts from the first day of the **last menstrual period** (LMP), so it runs about two weeks ahead of conception. {{rp30_naegele|Naegele's rule}} gives the due date by adding 7 days to the LMP and subtracting 3 months, so an LMP of March 10 gives a due date of December 17. It assumes a regular 28-day cycle with ovulation on day 14, so irregular cycles or a forgotten LMP call for ultrasound. In the first trimester the **crown-rump length** is the most accurate method, within about 5 to 7 days, because embryos of the same age are almost the same size. Later the biparietal diameter, head circumference, abdominal circumference and femur length are combined, but fetal growth varies so much that they date less precisely."
+   "Gestational age counts from the first day of the **last menstrual period** (LMP), so it runs about two weeks ahead of conception. {{rp30_naegele|Naegele's rule}} gives the due date by adding 7 days to the LMP and subtracting 3 months, so an LMP of March 10 gives a due date of December 17. It assumes a regular 28-day cycle with ovulation on day 14, so irregular cycles or a forgotten LMP call for ultrasound. In the first trimester the **crown-rump length** is the most accurate method, within about 5 to 7 days, because embryos of the same age are almost the same size. Later the biparietal diameter, head circumference, abdominal circumference and femur length are combined, but they date less precisely because fetal growth varies."
   ],
   [
    "p",
-   "Ultrasound {{rp30_redate|redates}} the pregnancy only when it differs from the LMP date by more than a threshold that widens with gestational age (ACOG, as of 2025), because an early scan is the most precise; a date set in the first trimester is not changed again. A pregnancy conceived by in vitro fertilization is dated from the embryo transfer date and the age of the embryo, because conception is known: the day a 5-day blastocyst is transferred counts as 2 weeks and 5 days."
+   "Ultrasound {{rp30_redate|redates}} the pregnancy only when it differs from the LMP date by more than a threshold that widens with gestational age (ACOG, as of 2025), because an early scan is the most precise; a date set in the first trimester is not changed again. An in vitro fertilization pregnancy is dated from the embryo transfer date and embryo age, because conception is known: the day a 5-day blastocyst is transferred counts as 2 weeks and 5 days."
   ],
   [
    "t",
@@ -177,7 +177,7 @@
    "call",
    "key",
    "Date the pregnancy before reading any screen",
-   "Every prenatal test is interpreted against gestational age: AFP climbs each week, hCG falls after 10 weeks, and the quad screen window is 15 to 22 weeks. A wrong due date makes a normal result look abnormal, so the crown-rump length comes first."
+   "AFP climbs each week, hCG falls after 10 weeks, and the quad screen window is 15 to 22 weeks, so a wrong due date makes a normal result look abnormal; the crown-rump length comes first."
   ],
   [
    "h",
@@ -242,7 +242,28 @@
   ],
   [
    "p",
-   "Every visit measures **blood pressure** and weight, tests the urine by dipstick for protein and glucose, listens to the fetal heart and asks about symptoms and fetal movement. Fetal heart tones are heard from about 10 to 12 weeks and quickening, the first movement the mother feels, comes at 18 to 20 weeks. Visits are every 4 weeks to 28 weeks, every 2 weeks to 36 weeks, then weekly. From 20 weeks the fundal height in centimeters matches the gestational age in weeks, within 2 cm, until about 36 weeks: the fundus reaches the pubic symphysis at 12 weeks and the umbilicus at 20 weeks. A uterus larger or smaller than expected calls for ultrasound; Leopold maneuvers from 36 weeks check the presentation."
+   "Every visit measures **blood pressure** and weight, tests the urine by dipstick for protein and glucose, listens to the fetal heart and asks the trimester questions listed next. Fetal heart tones are heard from about 10 to 12 weeks and quickening, the first movement the mother feels, comes at 18 to 20 weeks. Visits are every 4 weeks to 28 weeks, every 2 weeks to 36 weeks, then weekly. From 20 weeks the fundal height in centimeters matches the gestational age in weeks, within 2 cm, until about 36 weeks: the fundus reaches the pubic symphysis at 12 weeks and the umbilicus at 20 weeks. A uterus larger or smaller than expected calls for ultrasound; Leopold maneuvers from 36 weeks check the presentation."
+  ],
+  [
+   "t",
+   [
+    "Trimester",
+    "Questions to ask"
+   ],
+   [
+    [
+     "First",
+     "Nausea and vomiting, bleeding, cramping, urinary symptoms, new medicines or exposures"
+    ],
+    [
+     "Second",
+     "Fetal movement from quickening, leaking fluid, bleeding, regular cramping or pelvic pressure"
+    ],
+    [
+     "Third",
+     "Contractions, bleeding, leaking fluid, decreased fetal movement; headache, visual change or right upper quadrant pain (preeclampsia)"
+    ]
+   ]
   ],
   [
    "t",
@@ -295,7 +316,7 @@
   ],
   [
    "p",
-   "Every patient is offered aneuploidy screening, whatever her age. {{rp30_cfdna|Cell-free DNA}} from 10 weeks measures placental DNA fragments in maternal blood and is the most sensitive screen for **trisomy 21**, but it remains a screen: placental mosaicism causes false positives, so a positive result is confirmed. The first-trimester screen at 10 to 13 weeks combines {{rp30_nt|nuchal translucency}}, PAPP-A and hCG. The **quad screen** at 15 to 22 weeks measures AFP, estriol, hCG and inhibin A. Trisomy 21 lowers AFP and estriol and raises hCG and inhibin A, trisomy 18 lowers all four (inhibin A can be near normal), and either trisomy raises nuchal translucency and lowers PAPP-A. Chorionic villus sampling at 10 to 13 weeks (placental tissue) or amniocentesis from 15 weeks (fetal cells) confirms a positive screen."
+   "Every patient is offered aneuploidy screening, whatever her age. {{rp30_cfdna|Cell-free DNA}} from 10 weeks measures placental DNA fragments in maternal blood and is the most sensitive screen for **trisomy 21**, but it remains a screen: placental mosaicism causes false positives, so a positive result is confirmed. The first-trimester screen at 10 to 13 weeks combines {{rp30_nt|nuchal translucency}}, PAPP-A and hCG. The **quad screen** at 15 to 22 weeks measures AFP, estriol, hCG and inhibin A. Trisomy 21 lowers AFP and estriol and raises hCG and inhibin A, trisomy 18 lowers all four (inhibin A can be near normal), and either trisomy raises nuchal translucency and lowers PAPP-A. Chorionic villus sampling (placental tissue) or amniocentesis (fetal cells) confirms a positive screen."
   ],
   [
    "f",
@@ -307,7 +328,7 @@
   ],
   [
    "p",
-   "**Alpha-fetoprotein** (AFP) is made by the fetal liver and yolk sac and leaks into amniotic fluid and maternal blood. It rises with an open neural tube defect, such as anencephaly or open spina bifida, and with an abdominal wall defect, either gastroschisis, with no covering sac, or omphalocele, covered by a membrane. It also rises with twins, fetal death and underestimated gestational age, because AFP climbs weekly, and it falls with the trisomies. Closed defects do not leak, so AFP may stay normal. Amniotic fluid {{rp30_ache|acetylcholinesterase}} confirms an open defect, and on ultrasound open spina bifida with a Chiari II malformation shows the {{rp30_banana|banana sign}}, a cerebellum wrapped around the brainstem, and the lemon sign, scalloped frontal bones."
+   "**Alpha-fetoprotein** (AFP) is made by the fetal liver and yolk sac and leaks into amniotic fluid and maternal blood. It rises with an open neural tube defect, such as anencephaly or open spina bifida, and with an abdominal wall defect, either gastroschisis or omphalocele. It also rises with twins, fetal death and underestimated dates, and falls with the trisomies. Closed defects do not leak, so AFP may stay normal. Amniotic fluid {{rp30_ache|acetylcholinesterase}} confirms an open defect, and on ultrasound open spina bifida with a Chiari II malformation shows the {{rp30_banana|banana sign}}, a cerebellum wrapped around the brainstem, and the lemon sign, scalloped frontal bones."
   ],
   [
    "steps",
@@ -337,11 +358,11 @@
    "call",
    "trap",
    "Villus sampling cannot find a neural tube defect",
-   "Chorionic villus sampling takes placental tissue, so it gives a karyotype but no amniotic fluid for AFP or acetylcholinesterase, and a normal result does not exclude a neural tube defect. A raised maternal AFP is followed by ultrasound and, if needed, amniocentesis."
+   "Chorionic villus sampling takes placental tissue, so it gives a karyotype but no amniotic fluid for AFP or acetylcholinesterase, and a normal result does not exclude a neural tube defect."
   ],
   [
    "p",
-   "Folic acid supports **DNA synthesis**: tetrahydrofolate carries the one-carbon units for purine and thymidylate synthesis, so rapidly dividing cells, including the closing neural tube, depend on it. The tube closes about 28 days after conception, before many patients know they are pregnant, so every patient who could become pregnant takes **0.4 mg** (400 mcg) of folic acid daily, starting at least a month before conception and continuing through the first trimester. This cuts neural tube defects by roughly 70 percent; as of 2025 the USPSTF advises 0.4 to 0.8 mg."
+   "Folic acid supports **DNA synthesis**: tetrahydrofolate carries the one-carbon units for purine and thymidylate synthesis, so rapidly dividing cells, including the closing neural tube, depend on it. The tube closes about 28 days after conception, before many patients know they are pregnant, so every patient who could become pregnant takes **0.4 mg** of folic acid daily, starting at least a month before conception and continuing through the first trimester. This cuts neural tube defects by roughly 70 percent; as of 2025 the USPSTF advises 0.4 to 0.8 mg."
   ],
   [
    "p",
@@ -353,7 +374,7 @@
   ],
   [
    "p",
-   "The 18 to 22 week anatomy scan finds most major structural anomalies. **Fetal echocardiography** follows a suspected heart defect or a risk factor such as pregestational diabetes, lithium exposure or a family history of congenital heart disease. A structural anomaly also prompts a detailed scan and chromosomal microarray."
+   "The 18 to 22 week anatomy scan finds most major structural anomalies. **Fetal echocardiography** follows a suspected heart defect or a risk factor such as pregestational diabetes, lithium exposure or a family history of congenital heart disease."
   ],
   [
    "t",
@@ -379,6 +400,11 @@
      "Both raise AFP; omphalocele goes with aneuploidy"
     ],
     [
+     "Gastrointestinal",
+     "Duodenal atresia: double-bubble sign; esophageal atresia: small or absent stomach bubble",
+     "Both cause polyhydramnios; duodenal atresia goes with Down syndrome"
+    ],
+    [
      "Chest",
      "**Congenital diaphragmatic hernia**: stomach or bowel in the chest, heart pushed aside",
      "Usually left-sided; pulmonary hypoplasia"
@@ -389,9 +415,19 @@
      "Pulmonary hypoplasia; lethal"
     ],
     [
+     "Urinary tract",
+     "Hydronephrosis (dilated renal pelvis); posterior urethral valves: dilated bladder and urethra (keyhole sign) in a male fetus",
+     "Valves cause oligohydramnios and pulmonary hypoplasia"
+    ],
+    [
      "Face",
      "Cleft lip with or without palate",
      "Topiramate and smoking raise the risk"
+    ],
+    [
+     "Skeletal",
+     "Clubfoot (foot turned inward and down), limb reduction, skeletal dysplasia (short, bowed long bones)",
+     "A short femur suggests dysplasia or Down syndrome"
     ]
    ]
   ],
@@ -401,7 +437,7 @@
   ],
   [
    "p",
-   "Timing decides the injury. In the first 2 weeks after fertilization damage is all or none: the embryo either dies or recovers. During weeks 3 to 8, {{rp30_organogenesis|organogenesis}}, a teratogen causes major structural malformations, and each organ has its own window. After week 9 the fetal period brings growth restriction and functional injury, and the brain stays vulnerable throughout. A drug reaches the fetus when it is small, lipid soluble and un-ionized, which is why heparin and insulin, large and charged, stay in the mother."
+   "Timing decides the injury. In the first 2 weeks after fertilization damage is all or none: the embryo either dies or recovers. During weeks 3 to 8, {{rp30_organogenesis|organogenesis}}, a teratogen causes major structural malformations, and each organ has its own window. After week 9 the fetal period brings growth restriction and functional injury, and the brain stays vulnerable throughout. A drug reaches the fetus when it is small, lipid soluble and un-ionized."
   ],
   [
    "f",
@@ -459,11 +495,6 @@
      "Aminoglycosides",
      "Fetal period",
      "Damage inner-ear hair cells: eighth-nerve deafness"
-    ],
-    [
-     "Alcohol",
-     "Any trimester",
-     "Disrupts neuronal migration and midface growth: smooth philtrum, thin upper lip, microcephaly"
     ]
    ]
   ],
@@ -473,7 +504,7 @@
   ],
   [
    "p",
-   "Lithium causes Ebstein anomaly and phenytoin causes hypoplastic nails and distal phalanges. **Methimazole** causes aplasia cutis and choanal atresia, so propylthiouracil is used in the first trimester. Misoprostol causes the Mobius sequence, mycophenolate microtia and clefts, and topiramate cleft lip. Diethylstilbestrol in utero causes vaginal clear cell adenocarcinoma in the daughter."
+   "Lithium causes Ebstein anomaly and phenytoin causes hypoplastic nails and distal phalanges. **Methimazole** causes aplasia cutis and choanal atresia, so propylthiouracil is used in the first trimester. Misoprostol causes the Mobius sequence, and mycophenolate microtia and clefts. Diethylstilbestrol in utero causes vaginal clear cell adenocarcinoma in the daughter."
   ],
   [
    "p",
@@ -489,7 +520,7 @@
    [
     [
      "Alcohol",
-     "{{rp30_fas|Fetal alcohol syndrome}}: smooth philtrum, thin upper lip, microcephaly",
+     "{{rp30_fas|Fetal alcohol syndrome}} at any stage, from disrupted neuronal migration and midface growth: smooth philtrum, thin upper lip, microcephaly",
      "No safe dose; leading preventable cause of intellectual disability"
     ],
     [
@@ -512,7 +543,7 @@
   [
    "why",
    "Why can heparin treat a pregnant patient when warfarin cannot?",
-   "Warfarin is a small, lipid-soluble molecule that crosses the placenta. There it blocks vitamin K-dependent carboxylation of clotting factors and bone proteins, so exposure at 6 to 12 weeks causes **nasal hypoplasia** and stippled epiphyses, and later exposure causes fetal bleeding and brain injury. Heparin is a large, strongly negatively charged polysaccharide, so it cannot cross the placenta and anticoagulates only the mother. A pregnant patient with venous thromboembolism therefore receives heparin."
+   "Warfarin is small and lipid soluble, so it crosses the placenta and blocks vitamin K-dependent carboxylation of clotting factors and bone proteins: exposure at 6 to 12 weeks causes **nasal hypoplasia** and stippled epiphyses, and later exposure causes fetal bleeding and brain injury. Heparin is a large, strongly negatively charged polysaccharide that cannot cross, so it anticoagulates only the mother."
   ],
   [
    "h",
@@ -520,7 +551,7 @@
   ],
   [
    "p",
-   "Inactivated, toxoid and protein vaccines are safe in any trimester, and as of 2025 three are routine. **Tdap** is given in every pregnancy at 27 to 36 weeks, because maternal IgG crosses the placenta and protects the newborn until its own pertussis vaccines begin at 2 months; antibody fades, so the dose is repeated each time. **Live vaccines** carry a replicating virus that could infect the fetus, so they are contraindicated; nonimmune patients are vaccinated after delivery, even when breastfeeding, and avoid conception for a month. An accidental dose is not a reason to end a pregnancy."
+   "Inactivated, toxoid and protein vaccines are safe in any trimester, and as of 2025 three are routine. **Tdap** is given in every pregnancy at 27 to 36 weeks, because maternal IgG crosses the placenta and protects the newborn until its own pertussis vaccines begin at 2 months. **Live vaccines** carry a replicating virus that could infect the fetus, so they are contraindicated; nonimmune patients are vaccinated after delivery, even when breastfeeding, and avoid conception for a month. An accidental dose is not a reason to end a pregnancy."
   ],
   [
    "t",
@@ -579,7 +610,7 @@
      "Early vaccination lets the fetus make memory B cells before organogenesis ends, so timing matters little"
     ],
     "a": 0,
-    "why": "Pertussis is most dangerous before the infant's own vaccines work. Tdap is an inactivated toxoid vaccine, so it is safe, and the maternal IgG it induces crosses the placenta through the neonatal Fc receptor, with transfer rising in the third trimester. Giving it at 27 to 36 weeks maximizes antibody at birth. IgM is too large to cross, and antibody wanes within a year, so the dose is repeated in every pregnancy."
+    "why": "Tdap is an inactivated toxoid vaccine, so it is safe, and the maternal IgG it induces crosses the placenta through the neonatal Fc receptor, with transfer rising in the third trimester. Giving it at 27 to 36 weeks maximizes antibody at birth. IgM is too large to cross, and antibody wanes within a year, so each pregnancy needs its own dose."
    }
   ],
   [

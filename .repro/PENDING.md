@@ -1,6 +1,6 @@
 # Pending work and evidence (orchestrator checklist; keep current)
 
-Updated 2026-10-04. Counts from `.repro/fast_check.py` / the gate's structural checks on fast/content.
+Updated 2026-10-05. Counts from `.repro/fast_check.py` / the gate's structural checks on fast/content.
 
 ## Fast-track state (fast/repro-endo-path.html, drafts, unreviewed)
 36 topics (30 rp + en1 en2 en5 en6 en7 en9) · 373 questions · 439 rapid · 95 figures · 30 drills · 12 images · 0 memory scenes (after merging G01+G02, 2026-10-04).
@@ -31,7 +31,7 @@ en9_hypercalcemia, en9_three_hpt missing.
 | COV-fix-1 | CLOSED 2026-10-05 (P3.1, P3.3, P3.4; 14 rows incl. rp29 + ERROR) | | ledger rows |
 | I03 | worker (merge with --skip I03 until done) | images rp16, rp17, rp26 + Gemini overlays (fast/ws/I03) | fast_check I03 ok |
 | COV-fix-2a | CLOSED 2026-10-05 (P3.2, P3.5, P3.6) | | ledger rows |
-| COV-fix-2b | worker | P3.7 (rp16, rp17), P3.8 (rp19, rp20), P3.9 (rp25 ERROR, rp26 RhIG, rp30) | --status ok |
+| COV-fix-2b | CLOSED 2026-10-05 (P3.7, P3.8, P3.9; RhIG kept for mole and ectopic) | P3.7 (rp16, rp17), P3.8 (rp19, rp20), P3.9 (rp25 ERROR, rp26 RhIG, rp30) | ledger rows |
 | P3.9 | CLOSED 2026-10-05 (rp25, rp30, rp26) | | ledger row sha:28e99992 |
 | P3.10 | CLOSED 2026-10-05 (rp27, rp28) - all 30 wave-1 lessons accepted | | ledger row sha:a1b1b67f |
 | P3.5 | CLOSED 2026-10-05 (rp12-rp14; img rows to re-insert in P4.3: audit/P3.5.md section 5) | | ledger row sha:0e4d2e10 |
@@ -39,7 +39,9 @@ en9_hypercalcemia, en9_three_hpt missing.
 | P2.6 | CLOSED 2026-10-05 (F3) | ledger row sha:29b015ac | |
 | V2 | DONE (finished before the restart; 8 new figures reviewed 2026-10-05) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
 | P1.4 | CLOSED 2026-10-05 (round 3, part->anchor proposals A.md/B.md) | 302 rows, 48 UNANCHORED, 4 topic changes | ledger row |
-| P1.V | run 7 verifier (token 4fdd098705); run 6 was 11/12 | | .repro/verify/P1-report.md |
+| P1.V | run 8 verifier (token 4cf4bec0ee); run 7 was 11/12 (ANAT-PELVIS-LEC.7 -> round 8) | | .repro/verify/P1-report.md |
+| P1.4 | CLOSED 2026-10-05 round 8 (portal vein; GTD.4 reason); GATE-CHANGE aa550aa5 | | ledger row |
+| P3.V | next: verifier with coverage-row sample (all P3 DONE) | | .repro/verify/P3-report.md |
 | P1.4 | CLOSED 2026-10-05 round 5 (47 rows, block-evidence sweep) | | ledger row |
 
 ## Wave 1 (reproductive, Oct 9) queue

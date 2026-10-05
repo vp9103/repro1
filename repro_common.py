@@ -414,6 +414,7 @@ def term_hit(low: str, term: str) -> bool:
         if not t2:
             continue
         short_tail = "-" in term and len(term.rsplit("-", 1)[1]) <= 3  # 'anti-d' is not 'antidote' or 'anti-dsDNA'; 'add-on' not 'add one'
+        short_tail = short_tail or (" " in term and len(term.rsplit(" ", 1)[1]) <= 2)  # 'vitamin d' is not 'vitamin deficiency'
         tail = r"(?:e?s)?(?![a-z])" if len(t2) <= 3 or short_tail else ""
         if t2[-1].isdigit():
             tail += r"(?![0-9])(?![.,][0-9])"  # '69' is not found in '69,000', '126' not in '1260'
