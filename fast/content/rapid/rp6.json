@@ -18,8 +18,8 @@
   "a": 0,
   "x": "The androgen receptor is defective, so testosterone and DHT are made but cannot act. The testes still make AMH, which removes the uterus, and aromatized testosterone grows breasts at puberty.",
   "w": {
-   "Estrogen receptor": "Estrogen receptors work normally in this syndrome; that is why aromatized testosterone grows normal breasts at puberty.",
-   "LH receptor": "An inactivating LH receptor defect causes Leydig cell hypoplasia with low testosterone, whereas androgen insensitivity has high testosterone.",
+   "Estrogen receptor": "Estrogen receptors work normally in this syndrome. That is why aromatized testosterone grows normal breasts at puberty.",
+   "LH receptor": "An inactivating LH receptor defect lowers testosterone, whereas androgen insensitivity has high testosterone.",
    "FSH receptor": "FSH receptor defects impair follicle growth or spermatogenesis but do not stop androgen from shaping the genitalia.",
    "AMH receptor": "An AMH receptor defect leaves a uterus in an otherwise normal male, the opposite of the absent uterus in androgen insensitivity."
   },
@@ -113,11 +113,11 @@
    "Serous cystadenoma"
   ],
   "a": 0,
-  "x": "Gonadoblastoma arises in dysgenetic gonads that carry Y material, as in Swyer syndrome or Turner mosaics with a Y cell line, and it can progress to dysgerminoma, so the streaks are removed.",
+  "x": "Gonadoblastoma arises in dysgenetic gonads that carry Y material, as in Swyer syndrome or Turner mosaics with a Y cell line, so the streaks are removed.",
   "w": {
-   "Granulosa cell tumor": "Granulosa cell tumors come from follicle cells of a functioning ovary and make estrogen; streak gonads have no follicles.",
-   "Mature teratoma": "Mature teratomas arise from germ cells of normal ovaries in young women and are not linked to Y material in dysgenetic gonads.",
-   "Leydig cell tumor": "Leydig cell tumors arise in normal testes and secrete testosterone or estrogen; they are not the typical tumor of streak gonads.",
+   "Granulosa cell tumor": "Granulosa cell tumors come from follicle cells of a functioning ovary and make estrogen. Streak gonads have no follicles.",
+   "Mature teratoma": "Mature teratomas arise from germ cells of normal ovaries in young women. They are not linked to Y material in dysgenetic gonads.",
+   "Leydig cell tumor": "Leydig cell tumors arise in normal testes and secrete testosterone or estrogen. They are not the typical tumor of streak gonads.",
    "Serous cystadenoma": "Serous cystadenomas are surface epithelial tumors of normal adult ovaries and have no connection to gonadal dysgenesis."
   },
   "media": "fig:rp6_dsd",
@@ -150,9 +150,9 @@
   "x": "Congenital adrenal hyperplasia, usually 21-hydroxylase deficiency, is the commonest cause: blocked cortisol synthesis raises ACTH, which shunts precursors into adrenal androgens that virilize the external genitalia while the uterus and ovaries stay normal.",
   "w": {
    "Placental aromatase deficiency": "Placental aromatase deficiency virilizes a 46,XX fetus and the mother too, but it is rare compared with adrenal hyperplasia.",
-   "Maternal androgen-secreting tumor": "A maternal luteoma or androgen-secreting tumor can virilize a female fetus, but it is uncommon and usually virilizes the mother as well.",
+   "Maternal androgen-secreting tumor": "A maternal androgen-secreting tumor can virilize a female fetus, but it is uncommon and usually virilizes the mother too.",
    "Ovotesticular DSD": "Having both ovarian and testicular tissue is a rare cause of ambiguous genitalia in children with two X chromosomes.",
-   "Maternal progestin exposure": "Older androgenic progestins could virilize a female fetus, but modern exposure is rare and does not rival adrenal hyperplasia."
+   "Maternal progestin exposure": "Some older androgenic progestins could virilize a female fetus, but this is rare today and does not rival adrenal hyperplasia."
   },
   "media": "fig:rp6_signals",
   "pt": {
@@ -179,9 +179,9 @@
    "Multicystic dysplastic kidney"
   ],
   "a": 0,
-  "x": "A horseshoe kidney, fused at the lower poles and caught under the inferior mesenteric artery during its ascent, is the classic renal anomaly of Turner syndrome and adds to its urinary tract problems.",
+  "x": "A horseshoe kidney, with the lower poles fused across the midline, is the classic renal anomaly of Turner syndrome. Along with the heart lesions, it is one of the structural defects of 45,X.",
   "w": {
-   "Autosomal dominant polycystic kidneys": "Polycystic kidney disease is inherited through PKD1 or PKD2 and presents in adults with enlarging cystic kidneys, not as part of Turner syndrome.",
+   "Autosomal dominant polycystic kidneys": "Polycystic kidney disease is inherited and presents in adults with enlarging cystic kidneys. It is not part of Turner syndrome.",
    "Bilateral renal agenesis": "Bilateral renal agenesis causes oligohydramnios and Potter sequence and is incompatible with life, unlike the renal anomaly of Turner syndrome.",
    "Posterior urethral valves": "Posterior urethral valves obstruct the urethra of male infants and are not associated with a 45,X karyotype.",
    "Multicystic dysplastic kidney": "A multicystic dysplastic kidney is a sporadic nonfunctioning cluster of cysts, not the fusion anomaly linked to 45,X."
@@ -244,12 +244,12 @@
    "Balance"
   ],
   "a": 0,
-  "x": "Smell is lost because olfactory neurons and GnRH neurons migrate together from the olfactory placode; when migration fails, the patient has anosmia plus hypogonadotropic hypogonadism.",
+  "x": "Smell is lost because olfactory neurons and GnRH neurons migrate together from the olfactory placode. When migration fails, the patient has anosmia plus hypogonadotropic hypogonadism.",
   "w": {
    "Taste": "Taste buds are served by cranial nerves VII, IX and X, which do not share the olfactory migration path.",
    "Hearing": "Sensorineural deafness occurs in some genetic forms, but the defining sensory loss is smell, from failed olfactory neuron migration.",
-   "Vision": "Vision is spared; visual loss with delayed puberty points to a pituitary or hypothalamic mass such as a craniopharyngioma.",
-   "Balance": "Vestibular function is not part of Kallmann syndrome; the defect is limited to olfactory and GnRH neuron migration."
+   "Vision": "Vision is spared in Kallmann syndrome. Visual loss with delayed puberty points to a pituitary or hypothalamic mass.",
+   "Balance": "Vestibular function is not part of Kallmann syndrome. The defect is limited to olfactory and GnRH neuron migration."
   },
   "media": "fig:rp7_delayed",
   "pt": {
@@ -271,17 +271,17 @@
   "o": [
    "SRY",
    "Androgen receptor gene",
-   "CYP21A2",
+   "21-hydroxylase gene",
    "SHOX",
-   "ANOS1 (KAL1)"
+   "5-alpha-reductase gene"
   ],
   "a": 0,
-  "x": "SRY on the Y chromosome starts testis formation; without it the gonads become streaks, so a 46,XY person develops a uterus and female genitalia and has no puberty without hormone replacement.",
+  "x": "SRY on the Y chromosome starts testis formation. Without it the gonads become streaks, so a 46,XY person develops a uterus and female genitalia and has no puberty without hormone replacement.",
   "w": {
    "Androgen receptor gene": "Mutations here cause androgen insensitivity, in which testes form normally and AMH removes the uterus.",
-   "CYP21A2": "This gene encodes 21-hydroxylase; its mutations cause congenital adrenal hyperplasia, which virilizes 46,XX fetuses.",
-   "SHOX": "Loss of one copy causes the short stature of Turner syndrome; it does not affect testis determination.",
-   "ANOS1 (KAL1)": "Mutations here cause X-linked Kallmann syndrome, in which testes form normally but hypothalamic GnRH is missing."
+   "21-hydroxylase gene": "This gene encodes 21-hydroxylase. Its mutations cause congenital adrenal hyperplasia, which virilizes 46,XX fetuses.",
+   "SHOX": "Loss of one copy causes the short stature of Turner syndrome. It does not affect testis determination.",
+   "5-alpha-reductase gene": "Mutations here cause 5-alpha-reductase deficiency, in which testes form normally but DHT is low."
   },
   "media": "fig:rp6_signals",
   "pt": {
@@ -314,9 +314,9 @@
   "x": "AMH from Sertoli cells acts through its own receptor, which is normal in androgen insensitivity, so the Müllerian ducts regress and no uterus, cervix or upper vagina forms.",
   "w": {
    "Testosterone from Leydig cells": "Testosterone maintains the Wolffian ducts rather than removing the Müllerian ducts, and in this syndrome it cannot act at all.",
-   "DHT from peripheral conversion": "DHT shapes the external genitalia and prostate; it has no role in Müllerian regression and cannot act here anyway.",
-   "Estradiol from aromatase": "Estradiol grows the breasts in this syndrome; it supports rather than removes Müllerian tissue.",
-   "Inhibin from Sertoli cells": "Inhibin B suppresses pituitary FSH secretion; it does not cause the Müllerian ducts to regress."
+   "DHT from peripheral conversion": "DHT shapes the external genitalia and prostate. It has no role in Müllerian regression and cannot act here anyway.",
+   "Estradiol from aromatase": "Estradiol grows the breasts in this syndrome. It supports rather than removes Müllerian tissue.",
+   "Inhibin from Sertoli cells": "Inhibin B suppresses pituitary FSH secretion. It does not cause the Müllerian ducts to regress."
   },
   "media": "fig:rp6_signals",
   "pt": {
@@ -345,7 +345,7 @@
    "Polyhydramnios"
   ],
   "a": 0,
-  "x": "Virilization of the mother, with acne, hirsutism and a deeper voice, occurs because fetal adrenal androgens are not aromatized by the placenta and spill into her circulation; it fades after delivery.",
+  "x": "Virilization of the mother, with acne, hirsutism and a deeper voice, occurs because fetal adrenal androgens are not aromatized by the placenta and spill into her circulation. It fades after delivery.",
   "w": {
    "Gestational diabetes": "Gestational diabetes reflects placental hormones such as human placental lactogen causing insulin resistance, not failed aromatization of fetal androgens.",
    "Preeclampsia": "Preeclampsia stems from abnormal spiral artery remodeling and placental ischemia, not from a steroid enzyme defect.",
@@ -381,9 +381,9 @@
   "a": 0,
   "x": "High LH, released because testosterone is low, drives testicular aromatase, so estradiol rises relative to testosterone and the altered ratio stimulates ductal growth in breast tissue.",
   "w": {
-   "Prolactin rises from the pituitary": "Prolactin is normal in Klinefelter syndrome; a prolactinoma would lower LH and FSH, whereas these men have high gonadotropins.",
-   "hCG from a hidden germ cell tumor": "hCG does drive aromatase, and mediastinal germ cell tumors are more frequent in Klinefelter syndrome, but the usual gynecomastia comes from elevated LH.",
-   "Androgen receptors are defective": "Receptor defects cause androgen insensitivity in a 46,XY person who looks female; Klinefelter men respond to testosterone replacement.",
+   "Prolactin rises from the pituitary": "Prolactin is normal in Klinefelter syndrome. A prolactinoma would lower LH and FSH, whereas these men have high gonadotropins.",
+   "hCG from a hidden germ cell tumor": "hCG does drive aromatase, but the usual gynecomastia in Klinefelter syndrome comes from elevated LH.",
+   "Androgen receptors are defective": "Receptor defects cause androgen insensitivity in a 46,XY person who looks female. Klinefelter men respond to testosterone replacement.",
    "The liver clears estrogen poorly": "Poor hepatic clearance explains gynecomastia in cirrhosis, not in young men with small firm testes and normal liver function."
   },
   "media": "fig:rp6_sexchrom",
@@ -412,11 +412,11 @@
    "Choroid plexus cyst"
   ],
   "a": 0,
-  "x": "A cystic hygroma forms when the jugular lymph sacs fail to drain into the veins; the fluid behind the neck raises nuchal translucency and later leaves a webbed neck.",
+  "x": "A cystic hygroma forms when the jugular lymph sacs fail to drain into the veins. The fluid behind the neck raises nuchal translucency and later leaves a webbed neck.",
   "w": {
    "Double bubble sign": "The double bubble of duodenal atresia is a Down syndrome clue and reflects a gut obstruction, not a lymphatic defect.",
-   "Echogenic bowel": "Bright fetal bowel suggests cystic fibrosis, fetal infection or swallowed blood rather than a 45,X karyotype.",
-   "Omphalocele": "A midline wall defect covered by membrane points to trisomy 13, trisomy 18 or Beckwith-Wiedemann syndrome.",
+   "Echogenic bowel": "Bright fetal bowel suggests cystic fibrosis or fetal infection rather than a 45,X karyotype.",
+   "Omphalocele": "A midline abdominal wall defect covered by a membrane points to trisomy 13 or 18 or Beckwith-Wiedemann syndrome.",
    "Choroid plexus cyst": "These cysts are usually harmless and, when significant, point to trisomy 18 rather than 45,X."
   },
   "media": "fig:rp6_sexchrom",
@@ -444,7 +444,7 @@
    "Sexual orientation"
   ],
   "a": 0,
-  "x": "Gender identity is a person's inner sense of being a woman, a man or another gender; it is learned by asking, because the karyotype, gonads and anatomy do not determine it.",
+  "x": "Gender identity is a person's inner sense of being a woman, a man or another gender. It is learned by asking, because the karyotype, gonads and anatomy do not determine it.",
   "w": {
    "Phenotypic sex": "This term describes the body that hormones build, such as genitalia and breasts, which can differ from how a person identifies.",
    "Genotypic sex": "This term means the chromosomal complement, such as 46,XX or 46,XY, fixed at fertilization.",

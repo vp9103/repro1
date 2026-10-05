@@ -23,10 +23,10 @@
   "a": 2,
   "x": "The terminal duct lobular unit, a lobule and its terminal duct, is where hormone-responsive luminal cells proliferate, so most carcinomas and most benign proliferative changes begin there. The large lactiferous ducts mainly carry milk to the nipple and are the origin of only a few lesions.",
   "w": {
-   "Lactiferous sinus beneath the areola": "The sinus is a short widened ampulla where milk collects before leaving the nipple; it is a collecting passage rather than a hormone-responsive secretory unit, so few cancers or benign proliferations start there.",
-   "Interlobular fibrous stroma": "Dense fibrous stroma and fat fill the spaces between lobules and give support, but stromal tumors are uncommon beside the epithelial disease that dominates breast pathology.",
-   "Large subareolar lactiferous ducts": "Large ducts near the nipple carry milk outward and give rise to only a few lesions, such as a solitary intraductal papilloma; the hormone-responsive epithelium of the lobule is the usual starting point.",
-   "Montgomery glands of the areola": "Montgomery glands are small areolar glands that lubricate the nipple during nursing and enlarge in pregnancy; they belong to the skin of the areola, not to the milk-making lobules."
+   "Lactiferous sinus beneath the areola": "The sinus is a short widened part of the duct where milk collects before it reaches the nipple. It is a collecting passage, not a hormone-responsive unit.",
+   "Interlobular fibrous stroma": "Dense fibrous stroma and fat fill the spaces between lobules and give support. Stromal tumors are uncommon next to epithelial disease.",
+   "Large subareolar lactiferous ducts": "Large ducts near the nipple carry milk outward and give rise to only a few lesions. The hormone-responsive lobule is the usual starting point.",
+   "Montgomery glands of the areola": "Montgomery glands are small glands of the areola that lubricate the nipple during nursing. They are skin glands, not milk-making lobules."
   },
   "media": "fig:rp3_section",
   "pt": {
@@ -57,12 +57,12 @@
    "Subareolar lymphatic plexus"
   ],
   "a": 0,
-  "x": "Montgomery tubercles are the openings of areolar glands on the surface of the areola. They enlarge in pregnancy and secrete an oily lubricant that protects the nipple and areola during nursing, and they show as small raised bumps around the nipple.",
+  "x": "Montgomery tubercles are small raised bumps around the nipple where areolar glands open. They enlarge in pregnancy and secrete an oily lubricant that protects the nipple during nursing.",
   "w": {
-   "Lactiferous sinuses": "The sinuses are widened ampullae of the milk ducts beneath the areola where milk collects; they lie deep to the skin and secrete no lubricant, so they cannot form the surface bumps seen in pregnancy.",
-   "Areolar smooth muscle": "Smooth muscle in the areola contracts to firm and erect the nipple for latching; it moves tissue and secretes nothing, so it neither lubricates the skin nor forms visible bumps.",
-   "Suspensory ligaments": "Cooper ligaments are fibrous bands that run from the dermis to the deep fascia and hold the gland up; they are connective tissue that carries no ducts and secretes nothing.",
-   "Subareolar lymphatic plexus": "The Sappey plexus is a network of lymph channels beneath the areola that drains toward the axillary nodes; it moves fluid and has no gland that could secrete an oily lubricant."
+   "Lactiferous sinuses": "The sinuses are widened ducts beneath the areola where milk collects. They lie deep to the skin and secrete no lubricant.",
+   "Areolar smooth muscle": "Smooth muscle in the areola contracts to firm the nipple for latching. It secretes nothing, so it does not lubricate the skin.",
+   "Suspensory ligaments": "Cooper ligaments are fibrous bands that hold the gland up. They are connective tissue and secrete nothing.",
+   "Subareolar lymphatic plexus": "The subareolar lymphatic plexus is a network of lymph channels that drains toward the axillary nodes. It has no gland that could secrete a lubricant."
   },
   "media": "fig:rp3_section",
   "pt": {
@@ -93,12 +93,12 @@
    "Skin and the retromammary space"
   ],
   "a": 3,
-  "x": "Cooper ligaments are fibrous bands that run from the dermis through the breast to the pectoral fascia, holding the gland up like the ropes of a hammock. Tumor that infiltrates and shortens them pulls the skin inward, which is why carcinoma can cause dimpling or retraction.",
+  "x": "Cooper ligaments are fibrous bands that run from the dermis through the breast to the pectoral fascia, holding the gland up like the ropes of a hammock. Tumor that shortens them pulls the skin inward as dimpling or retraction.",
   "w": {
-   "Nipple and the lactiferous sinus": "The nipple and sinus are joined by the lactiferous duct, a milk passage lined by epithelium and not a supporting ligament; the ligaments instead anchor the gland to the skin above and the chest wall fascia below.",
-   "Pectoralis major and the ribs": "Muscle attaches to the ribs and sternum through its own tendons and fascia; the pectoral fascia covers pectoralis major, and Cooper ligaments extend forward from that fascia into the breast rather than joining muscle to bone.",
-   "Lobules and the basement membrane": "Lobules rest on a basement membrane at the microscopic level, a thin sheet beneath the epithelium; Cooper ligaments are macroscopic fibrous bands that span the whole breast from skin to chest wall.",
-   "Skin and the retromammary space": "The retromammary space is loose connective tissue behind the gland that lets it glide; tough ligaments anchored there would pin the breast down and defeat that gliding, so the ligaments reach the fascia instead."
+   "Nipple and the lactiferous sinus": "The nipple and sinus are joined by the lactiferous duct, a milk passage. The ligaments are supporting bands that anchor the gland to the skin and the chest wall fascia.",
+   "Pectoralis major and the ribs": "Muscle attaches to the ribs through its own tendons. Cooper ligaments run forward from the pectoral fascia into the breast, not from muscle to bone.",
+   "Lobules and the basement membrane": "Lobules rest on a basement membrane, a thin sheet under the epithelium. Cooper ligaments are large fibrous bands that span the breast from skin to chest wall.",
+   "Skin and the retromammary space": "The retromammary space is loose tissue behind the gland that lets it glide. Tough ligaments anchored there would pin the breast down."
   },
   "media": "fig:rp3_section",
   "pt": {
@@ -130,10 +130,10 @@
   "a": 1,
   "x": "The retromammary space is a thin plane of loose connective tissue between the gland and the pectoral fascia, so a normal breast or a benign mass slides over the chest wall. A carcinoma that crosses it is fixed to the fascia, and the mass then moves with the contracting muscle.",
   "w": {
-   "Pectoral fascia": "The pectoral fascia is the dense sheet covering pectoralis major and forms the deep boundary of the plane rather than the plane itself; a tumor that reaches it is tethered to muscle and stops gliding.",
-   "Clavipectoral fascia": "This fascia stretches from the clavicle around pectoralis minor toward the axillary wall, deep to pectoralis major, so it lies behind the muscle and plays no part in the movement of the breast.",
-   "Subcutaneous fat layer": "Subcutaneous fat surrounds the gland between the skin and the glandular lobes and gives bulk and insulation, but breast movement over the chest wall occurs behind the gland, not within this layer.",
-   "Cooper ligament layer": "Cooper ligaments tether the gland to the skin and deep fascia and suspend the breast rather than letting it slide; shortening them by tumor dimples the skin instead."
+   "Pectoral fascia": "The pectoral fascia is the dense sheet over pectoralis major and forms the deep edge of the gliding plane. A tumor that reaches it is tethered to muscle.",
+   "Clavipectoral fascia": "The clavipectoral fascia lies deep to pectoralis major, behind the muscle. It plays no part in how the breast moves over the chest.",
+   "Subcutaneous fat layer": "Subcutaneous fat surrounds the gland and gives it bulk. The gliding happens behind the gland, not in this layer.",
+   "Cooper ligament layer": "Cooper ligaments tether the gland to the skin and deep fascia and hold it up rather than letting it slide. Shortening them by tumor dimples the skin instead."
   },
   "media": "fig:rp3_section",
   "pt": {
@@ -163,12 +163,12 @@
    "75%"
   ],
   "a": 4,
-  "x": "About 75% of breast lymph, chiefly from the lateral quadrants, drains to the axillary nodes. The medial quadrants also drain to internal mammary nodes beside the sternum, and a smaller share reaches the opposite breast or abdominal nodes, so the axilla is the first place spread is looked for.",
+  "x": "About 75% of breast lymph, chiefly from the lateral quadrants, drains to the axillary nodes. The medial quadrants also drain to the internal mammary nodes beside the sternum, so the axilla is the first place to look for spread.",
   "w": {
-   "50%": "Half would mean the internal mammary route carried as much as the axilla; instead the axillary route dominates, especially for the lateral quadrants where most carcinomas arise, so the axilla is examined and sampled first.",
-   "25%": "A quarter is closer to the share that leaves by other routes, mainly the internal mammary chain along the sternum; the axilla carries the large majority, which is why sentinel mapping starts there.",
-   "10%": "A tenth underestimates the axillary route by a wide margin; because most lymph passes through the axillary levels, tumor cells reach them first and axillary node status is a major prognostic factor.",
-   "Nearly 100%": "Other pathways exist: the medial quadrants drain to internal mammary nodes, and some lymph crosses to the opposite breast or runs toward abdominal nodes, so a clear axilla does not guarantee a node-free breast."
+   "50%": "Half would mean the internal mammary route carried as much as the axilla. The axillary route dominates, especially for the lateral quadrants where most carcinomas arise.",
+   "25%": "A quarter is closer to the share that leaves by other routes, mainly the internal mammary chain. The axilla carries the large majority.",
+   "10%": "A tenth badly underestimates the axillary route. Most lymph passes through the axillary levels, so tumor cells reach them first.",
+   "Nearly 100%": "Other routes exist. The medial quadrants also drain to the internal mammary nodes beside the sternum, so the axilla does not take all the lymph."
   },
   "media": "fig:rp3_axilla",
   "pt": {
@@ -201,10 +201,10 @@
   "a": 2,
   "x": "Axillary levels are defined by pectoralis minor: level I lies lateral to the muscle, level II behind it, and level III medial to it at the apex of the axilla. Spread usually moves up through these levels in order, so involvement of level III signals extensive nodal disease.",
   "w": {
-   "Lateral to the muscle": "Lateral to the muscle is level I, the lowest group, which receives lymph first from most of the breast and usually contains the sentinel node, so it is sampled before the higher levels.",
-   "Posterior to the muscle": "Behind the muscle lies level II, the central group, which is reached after level I and is removed with it in a standard dissection of levels I and II.",
-   "Between the two pectoral muscles": "Nodes between pectoralis major and minor are the interpectoral (Rotter) nodes, often counted with level II; they form a small separate group rather than the apical chain of level III.",
-   "Along the edge of the sternum": "Nodes along the sternal edge form the internal mammary chain, which follows the internal thoracic vessels and drains the medial quadrants; it is a separate pathway from the axillary levels."
+   "Lateral to the muscle": "Lateral to the muscle is level I, the lowest group. It receives lymph first from most of the breast and usually holds the sentinel node.",
+   "Posterior to the muscle": "Behind the muscle lies level II, the central group, which is reached after level I.",
+   "Between the two pectoral muscles": "Nodes between pectoralis major and minor are not level III. Level III lies medial to pectoralis minor, at the apex of the axilla.",
+   "Along the edge of the sternum": "Nodes along the sternal edge form the internal mammary chain, which drains the medial quadrants. It is a separate pathway from the axillary levels."
   },
   "media": "fig:rp3_axilla",
   "pt": {
@@ -236,10 +236,10 @@
   "a": 0,
   "x": "The long thoracic nerve, from roots C5 to C7, runs down the medial wall of the axilla on the surface of serratus anterior and supplies it. That muscle holds the scapula against the ribs, so cutting the nerve lets the medial border lift away, a winged scapula seen when pushing against a wall.",
   "w": {
-   "Latissimus dorsi": "The thoracodorsal nerve supplies latissimus dorsi along the posterior axillary wall; its loss weakens arm extension, adduction and internal rotation but leaves the scapula flat against the chest.",
-   "Pectoralis minor": "Pectoralis minor takes its supply from the medial pectoral nerve; injury causes subtle chest muscle weakness and wasting but not scapular winging, because that muscle does not hold the scapula against the ribs.",
-   "Rhomboid major": "Rhomboid major is supplied by the dorsal scapular nerve, which arises from the C5 root in the neck and lies above the axilla, so axillary node surgery does not endanger it.",
-   "Trapezius": "Trapezius is supplied by the spinal accessory nerve running in the posterior triangle of the neck; injury there droops the shoulder and weakens shrugging, a different pattern from axillary nerve injury."
+   "Latissimus dorsi": "The thoracodorsal nerve supplies latissimus dorsi. Its loss weakens arm extension, adduction and internal rotation but leaves the scapula flat.",
+   "Pectoralis minor": "Pectoralis minor is supplied by the medial pectoral nerve. Injury weakens the chest wall muscles but does not wing the scapula.",
+   "Rhomboid major": "Rhomboid major is supplied by the dorsal scapular nerve, which arises in the neck above the axilla, so axillary node surgery does not endanger it.",
+   "Trapezius": "Trapezius is supplied by the spinal accessory nerve in the neck. Injury droops the shoulder and weakens shrugging, a different pattern."
   },
   "media": "fig:rp3_axilla",
   "pt": {
@@ -272,10 +272,10 @@
   "a": 3,
   "x": "The intercostobrachial nerve is the sensory lateral branch of the second intercostal nerve (T2) and crosses the axilla to the medial arm. It is often stretched or cut during node dissection, leaving numbness of the medial upper arm and armpit without any muscle weakness.",
   "w": {
-   "Axillary nerve": "The axillary nerve wraps around the surgical neck of the humerus to supply deltoid and teres minor and the skin over the lateral shoulder, so its sensory loss lies over the deltoid, not the inner arm.",
-   "Musculocutaneous nerve": "The musculocutaneous nerve supplies the anterior arm muscles and ends as the lateral cutaneous nerve of the forearm, so its sensory loss lies on the lateral forearm rather than the medial upper arm.",
-   "Thoracodorsal nerve": "The thoracodorsal nerve is purely motor to latissimus dorsi; injury weakens extension, adduction and internal rotation of the arm and causes no numbness.",
-   "Lateral pectoral nerve": "The lateral pectoral nerve supplies pectoralis major and is mainly motor; injury gives weakness and wasting of the upper chest rather than numbness of the inner arm."
+   "Axillary nerve": "The axillary nerve wraps around the surgical neck of the humerus to supply the deltoid and the skin over the lateral shoulder. Its sensory loss is not on the inner arm.",
+   "Musculocutaneous nerve": "The musculocutaneous nerve supplies the anterior arm muscles and the skin of the lateral forearm, not the medial upper arm.",
+   "Thoracodorsal nerve": "The thoracodorsal nerve is purely motor to latissimus dorsi. Injury weakens the arm but causes no numbness.",
+   "Lateral pectoral nerve": "The lateral pectoral nerve is mainly motor to pectoralis major. Injury weakens the upper chest and does not numb the inner arm."
   },
   "media": "fig:rp3_axilla",
   "pt": {
@@ -306,12 +306,12 @@
    "Thoracodorsal artery"
   ],
   "a": 1,
-  "x": "Perforating branches of the internal thoracic (internal mammary) artery pass through the upper intercostal spaces beside the sternum and supply the medial breast. The lateral thoracic branch of the axillary artery supplies the lateral breast, so the gland has a double supply that mirrors its place between sternum and axilla.",
+  "x": "Perforating branches of the internal thoracic (internal mammary) artery pass through the upper intercostal spaces beside the sternum and supply the medial breast. The lateral thoracic artery supplies the lateral breast, so the gland has a double supply.",
   "w": {
-   "Lateral thoracic artery": "The lateral thoracic artery, a branch of the axillary artery, runs down the lateral chest wall and supplies the outer breast, the opposite side of the gland from the sternal border.",
-   "Thoracoacromial artery": "The pectoral branch of the thoracoacromial artery supplies the pectoral muscles and contributes to the upper breast; it arises from the axillary artery rather than from vessels emerging beside the sternum.",
-   "Posterior intercostal arteries": "Posterior intercostal arteries arise from the thoracic aorta and reach the breast from behind and from the side as lateral branches, so they do not enter the gland beside the sternum.",
-   "Thoracodorsal artery": "The thoracodorsal artery is a branch of the subscapular artery that accompanies the nerve to latissimus dorsi; it supplies that muscle at the back wall of the axilla rather than the medial breast."
+   "Lateral thoracic artery": "The lateral thoracic artery, a branch of the axillary artery, supplies the outer breast, the opposite side of the gland from the sternum.",
+   "Thoracoacromial artery": "The thoracoacromial artery arises from the axillary artery and supplies the pectoral muscles and part of the upper breast. It does not enter beside the sternum.",
+   "Posterior intercostal arteries": "Posterior intercostal arteries arise from the thoracic aorta and reach the breast from the side. They do not enter the gland beside the sternum.",
+   "Thoracodorsal artery": "The thoracodorsal artery supplies latissimus dorsi at the back wall of the axilla, not the medial breast."
   },
   "media": "fig:rp3_axilla",
   "pt": {
@@ -341,12 +341,12 @@
    "Upper outer quadrant"
   ],
   "a": 4,
-  "x": "The upper outer quadrant contains the most glandular tissue, including the axillary tail, so about half of breast cancers begin there. That is why the clinical exam examines this quadrant closely and then moves into the axilla, the first node bed for lateral tumors.",
+  "x": "The upper outer quadrant holds the most glandular tissue, including the axillary tail, so about half of breast cancers begin there. Its lymph drains to the axilla, the first node bed for lateral tumors.",
   "w": {
-   "Upper inner quadrant": "The upper inner quadrant holds less glandular tissue and a smaller share of cancers; tumors here drain partly to the internal mammary nodes beside the sternum rather than only to the axilla.",
-   "Lower outer quadrant": "The lower outer quadrant holds less glandular tissue than the upper outer region and only a modest share of tumors, so it is examined routinely but is not where most cancers are found.",
-   "Lower inner quadrant": "The lower inner quadrant is the least common site of breast carcinoma and has the least glandular tissue; its lymph may drain to internal mammary nodes rather than to the axilla.",
-   "Central subareolar area": "The central area beneath the nipple and areola holds mostly large ducts and fat and accounts for a smaller share of cancers than the upper outer region, which carries the axillary tail."
+   "Upper inner quadrant": "The upper inner quadrant holds less glandular tissue and fewer cancers. Tumors here drain partly to the internal mammary nodes beside the sternum.",
+   "Lower outer quadrant": "The lower outer quadrant holds less glandular tissue than the upper outer region and only a modest share of tumors.",
+   "Lower inner quadrant": "This is the least common site of breast cancer because it holds the least glandular tissue. Its lymph may also reach the internal mammary nodes.",
+   "Central subareolar area": "The central area beneath the nipple and areola holds mostly large ducts and fat. It accounts for a smaller share of cancers than the upper outer region."
   },
   "media": "fig:rp3_axilla",
   "pt": {
@@ -378,12 +378,12 @@
    "Areolar smooth muscle cells"
   ],
   "a": 2,
-  "x": "Luminal cells form the inner layer of every duct and lobule, make milk under prolactin and carry estrogen and progesterone receptors. Most carcinomas, ductal and lobular alike, arise from them, whereas the outer myoepithelial layer is contractile and only rarely becomes malignant.",
+  "x": "Luminal cells form the inner layer of every duct and lobule, make milk under prolactin and carry estrogen and progesterone receptors. Most carcinomas, ductal and lobular alike, arise from them. The outer myoepithelial layer is contractile and only rarely becomes malignant.",
   "w": {
-   "Myoepithelial cells": "Myoepithelial cells are the flat, contractile outer layer packed with actin and myosin that squeezes milk toward the nipple; they are rarely the source of cancer, and their loss around a nest signals invasion.",
-   "Intralobular stromal fibroblasts": "Specialized fibroblasts of the loose intralobular stroma respond to hormones and support the lobule; their tumors, such as phyllodes tumor, are far less common than epithelial carcinoma.",
-   "Adipocytes of the surrounding fat": "Fat cells fill the spaces between lobes and add bulk with age; liposarcoma is exceptionally rare, so fat does not account for the common epithelial cancers that dominate the breast.",
-   "Areolar smooth muscle cells": "Smooth muscle of the areola erects the nipple; it is a small muscular layer in the skin of the areola, and its tumors are very rare, so it is not the usual origin of breast carcinoma."
+   "Myoepithelial cells": "Myoepithelial cells are the flat, contractile outer layer that squeezes milk toward the nipple. They are rarely the source of cancer, and loss of this layer around a nest signals invasion.",
+   "Intralobular stromal fibroblasts": "Intralobular fibroblasts support the lobule and respond to hormones. Their tumors, such as phyllodes tumor, are far less common than epithelial carcinoma.",
+   "Adipocytes of the surrounding fat": "Fat cells fill the spaces between lobes. Fat tumors are very rare, so fat does not explain the common epithelial cancers of the breast.",
+   "Areolar smooth muscle cells": "Smooth muscle in the areola erects the nipple. Its tumors are very rare, so it is not the usual origin of breast carcinoma."
   },
   "media": "fig:rp24_sequence",
   "pt": {
@@ -417,10 +417,10 @@
   "a": 0,
   "x": "Prolactin from anterior pituitary lactotrophs switches on milk synthesis in the luminal cells once the fall in progesterone after delivery of the placenta lifts the block. Suckling keeps prolactin high, whereas oxytocin from the posterior pituitary only squeezes the milk out.",
   "w": {
-   "Oxytocin": "Oxytocin, released from the posterior pituitary when the infant suckles, makes myoepithelial cells contract and eject milk, the let-down reflex; it moves milk that has already been made rather than making it.",
-   "Progesterone": "High progesterone in pregnancy builds lobules but blocks full milk secretion; its abrupt fall after delivery of the placenta removes that brake, so it permits lactation instead of driving synthesis.",
-   "Estradiol": "Estrogen branches the ducts and sensitizes the gland, and the high levels of pregnancy also restrain milk secretion; it stimulates growth rather than the production of milk components.",
-   "Human placental lactogen": "Despite its name, human placental lactogen mainly alters maternal metabolism, raising insulin resistance and sparing glucose for the fetus; it disappears with the placenta, so it cannot sustain milk synthesis after delivery."
+   "Oxytocin": "Oxytocin from the posterior pituitary makes myoepithelial cells contract and eject milk, the let-down reflex. It moves milk that is already made.",
+   "Progesterone": "High progesterone in pregnancy builds lobules but blocks full milk secretion. Its fall after delivery of the placenta removes that brake, so it permits lactation instead of driving it.",
+   "Estradiol": "Estrogen branches the ducts, and the high levels of pregnancy also restrain milk secretion. It drives growth, not milk production.",
+   "Human placental lactogen": "Human placental lactogen mainly alters maternal metabolism, raising insulin resistance. It disappears with the placenta, so it cannot sustain milk synthesis after delivery."
   },
   "media": "fig:en2_axes",
   "pt": {
@@ -452,12 +452,12 @@
    "Passive diffusion"
   ],
   "a": 3,
-  "x": "Casein and other milk proteins are packaged in Golgi-derived secretory vesicles that fuse with the apical membrane, so the cell releases them by merocrine secretion (exocytosis) and stays intact. Milk fat is the exception: lipid droplets bulge out and pinch off wrapped in membrane, which is apocrine secretion.",
+  "x": "Casein and other milk proteins are packaged in secretory vesicles that fuse with the apical membrane, so the cell releases them by merocrine secretion (exocytosis) and stays intact. Milk fat is the exception: lipid droplets pinch off wrapped in membrane, which is apocrine secretion.",
   "w": {
-   "Apocrine secretion": "Apocrine release pinches off the cell apex with a thin rim of cytoplasm and membrane; in the breast that is the route of milk fat droplets, not of casein, which leaves by vesicle fusion.",
-   "Holocrine secretion": "Holocrine secretion destroys the whole cell, as in sebaceous glands where cells fill with lipid and burst; lactating luminal cells survive to make milk again, so this mechanism does not apply.",
-   "Transcytosis": "Transcytosis moves intact proteins across the cell in vesicles, as for maternal IgA crossing into milk through the polymeric immunoglobulin receptor; casein is synthesized by the luminal cell itself and needs no such crossing.",
-   "Passive diffusion": "Large proteins cannot cross a lipid membrane by diffusion, which suits only small uncharged molecules and gases; casein is a large protein that needs vesicular export from the cell instead."
+   "Apocrine secretion": "Apocrine release pinches off the cell apex with a thin rim of membrane. In the breast that is the route of milk fat droplets, not casein.",
+   "Holocrine secretion": "Holocrine secretion destroys the whole cell, as in sebaceous glands. Lactating luminal cells survive to make milk again.",
+   "Transcytosis": "Transcytosis moves intact proteins across the cell, as for maternal IgA entering milk. Casein is made by the luminal cell itself and needs no such crossing.",
+   "Passive diffusion": "Large proteins cannot cross a lipid membrane by diffusion. Casein needs vesicular export from the cell."
   }
  }
 ]

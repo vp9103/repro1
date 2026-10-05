@@ -1,172 +1,282 @@
 [
  {
   "id": "rp10r01",
-  "tags": ["drug-mechanism"],
-  "bp": ["BP-rp10-01", "BP-rp10-05"],
+  "tags": [
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp10-01",
+   "BP-rp10-05"
+  ],
   "q": "Which hormone class is present in every hormonal contraceptive method?",
-  "o": ["Progestin", "Estrogen", "Androgen", "Gonadotropin", "Prostaglandin"],
+  "o": [
+   "Progestin",
+   "Estrogen",
+   "Androgen",
+   "Gonadotropin",
+   "Prostaglandin"
+  ],
   "a": 0,
-  "x": "Progestin. It blocks the LH surge, thickens cervical mucus and thins the endometrium, which prevents pregnancy on its own; estrogen is added only in the pill, patch and ring for cycle control, and it brings the clot risk.",
+  "x": "Progestin. It blocks the LH surge, thickens cervical mucus and thins the endometrium, which prevents pregnancy on its own. Estrogen is added only in the pill, patch and ring for cycle control, and it brings the clot risk.",
   "w": {
-   "Estrogen": "Estrogen is found only in the pill, patch and ring; it suppresses FSH and steadies bleeding, but the minipill, injection, implant and hormonal IUD contain none.",
-   "Androgen": "No contraceptive adds an androgen; older progestins derived from testosterone can cause acne and hirsutism, which is why less androgenic progestins were developed.",
-   "Gonadotropin": "FSH and LH are the gonadotropins that contraception suppresses; giving them would stimulate follicle growth, which is how ovulation induction treats infertility.",
-   "Prostaglandin": "Misoprostol, a prostaglandin E1 analog, contracts the uterus in medication abortion; no contraceptive relies on a prostaglandin to prevent pregnancy."
+   "Estrogen": "Estrogen is found only in the pill, patch and ring. The minipill, injection, implant and hormonal IUD contain none.",
+   "Androgen": "No contraceptive adds an androgen. Some older progestins were derived from testosterone and could cause acne.",
+   "Gonadotropin": "FSH and LH are the gonadotropins that contraception suppresses. Giving them would stimulate follicle growth, as in ovulation induction.",
+   "Prostaglandin": "Misoprostol, a prostaglandin E1 analog, contracts the uterus in medication abortion. No contraceptive relies on a prostaglandin to prevent pregnancy."
   },
   "media": "fig:rp10_methods",
   "pt": {
-   "hl": ["Estrogen + progestin", "Progestin only"],
+   "hl": [
+    "Estrogen + progestin",
+    "Progestin only"
+   ],
    "say": "Both hormonal columns, Estrogen + progestin and Progestin only, contain a progestin; no column holds estrogen alone."
   }
  },
  {
   "id": "rp10r02",
-  "tags": ["drug-mechanism", "feedback-logic"],
-  "bp": ["BP-rp10-01"],
+  "tags": [
+   "drug-mechanism",
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-rp10-01"
+  ],
   "q": "Which action of the estrogen in a combined pill stops a dominant follicle from forming?",
-  "o": ["Suppressing FSH", "Blocking the LH surge", "Thickening cervical mucus", "Thinning the endometrium", "Raising SHBG"],
+  "o": [
+   "Suppressing FSH",
+   "Blocking the LH surge",
+   "Thickening cervical mucus",
+   "Thinning the endometrium",
+   "Raising SHBG"
+  ],
   "a": 0,
-  "x": "Suppressing FSH. Ethinyl estradiol keeps negative feedback on the pituitary switched on, so FSH stays too low to recruit and select a dominant follicle; the progestin separately blocks the LH surge and thickens mucus.",
+  "x": "Suppressing FSH. Ethinyl estradiol keeps negative feedback on the pituitary switched on, so FSH stays too low to recruit and select a dominant follicle. The progestin separately blocks the LH surge and thickens mucus.",
   "w": {
-   "Blocking the LH surge": "Stopping the surge is the progestin's main job; it prevents ovulation even without estrogen, which is why progestin-only methods still work.",
-   "Thickening cervical mucus": "Thick, scanty mucus is a progestin effect that keeps sperm out of the uterus; estrogen on its own makes mucus thin and stretchy, as before ovulation.",
-   "Thinning the endometrium": "A thin, inactive lining comes from the progestin; estrogen stabilizes the endometrium so bleeding stays predictable, which is its cycle-control role.",
-   "Raising SHBG": "Estrogen does raise hepatic SHBG, which lowers free testosterone and improves acne, but this binding-protein effect does nothing to stop follicle growth."
+   "Blocking the LH surge": "Stopping the surge is the progestin's main job. It prevents ovulation even without estrogen, which is why progestin-only methods still work.",
+   "Thickening cervical mucus": "Thick, scanty mucus is a progestin effect that keeps sperm out of the uterus. Estrogen on its own makes mucus thin and stretchy.",
+   "Thinning the endometrium": "A thin, inactive lining comes from the progestin. Estrogen stabilizes the endometrium so bleeding stays predictable, which is its cycle-control role.",
+   "Raising SHBG": "Estrogen does raise hepatic SHBG, which lowers free testosterone and improves acne. This binding-protein effect does nothing to stop follicle growth."
   },
   "media": "fig:rp10_pitfalls",
   "pt": {
-   "hl": ["Suppressing FSH by negative"],
+   "hl": [
+    "Suppressing FSH by negative"
+   ],
    "say": "The first row shows estrogen suppressing FSH by negative feedback, so no dominant follicle forms and ovulation is blocked."
   }
  },
  {
   "id": "rp10r03",
-  "tags": ["adverse-effects"],
-  "bp": ["BP-rp10-03"],
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp10-03"
+  ],
   "q": "Which serious adverse effect of combined hormonal contraception comes mainly from its estrogen?",
-  "o": ["Venous thromboembolism", "Loss of bone mineral density", "Unpredictable spotting", "Delayed return of fertility", "Heavier menstrual bleeding"],
+  "o": [
+   "Venous thromboembolism",
+   "Loss of bone mineral density",
+   "Unpredictable spotting",
+   "Delayed return of fertility",
+   "Heavier menstrual bleeding"
+  ],
   "a": 0,
-  "x": "Venous thromboembolism. Ethinyl estradiol passes through the liver and raises its production of clotting factors such as fibrinogen and factor VII, so deep vein thrombosis and pulmonary embolism become several times more likely, especially in the first year of use.",
+  "x": "Venous thromboembolism. Ethinyl estradiol passes through the liver and raises its production of clotting factors, so deep vein thrombosis and pulmonary embolism become more likely, especially in the first year of use.",
   "w": {
-   "Loss of bone mineral density": "Bone loss is the DMPA warning; its strong gonadotropin suppression lowers estradiol, whereas combined pills supply estrogen and do not thin bone.",
-   "Unpredictable spotting": "Irregular spotting is typical of progestin-only methods such as the implant; the estrogen in combined methods stabilizes the endometrium and makes bleeding predictable.",
-   "Delayed return of fertility": "Fertility returns within weeks of stopping combined methods; a delay of many months is the hallmark of the DMPA injection, whose depot lingers.",
-   "Heavier menstrual bleeding": "Combined methods usually make periods lighter and less painful; heavier, crampier bleeding is the typical complaint with the copper IUD."
+   "Loss of bone mineral density": "Bone loss is the DMPA warning. Its strong gonadotropin suppression lowers estradiol, whereas combined pills supply estrogen and do not thin bone.",
+   "Unpredictable spotting": "Irregular spotting is typical of progestin-only methods such as the implant. The estrogen in combined methods stabilizes the endometrium and makes bleeding predictable.",
+   "Delayed return of fertility": "Fertility returns within weeks of stopping combined methods. A delay of many months is the hallmark of the DMPA injection, whose depot lingers.",
+   "Heavier menstrual bleeding": "Combined methods usually make periods lighter and less painful. Heavier, crampier bleeding is the typical complaint with the copper IUD."
   },
   "media": "fig:rp10_pitfalls",
   "pt": {
-   "hl": ["Venous thromboembolism"],
+   "hl": [
+    "Venous thromboembolism"
+   ],
    "say": "The liver row shows first-pass estrogen raising clotting factors such as fibrinogen, which causes venous thromboembolism: deep vein thrombosis and pulmonary embolism."
   }
  },
  {
   "id": "rp10r04",
-  "tags": ["risk-factors"],
-  "bp": ["BP-rp10-03"],
+  "tags": [
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp10-03"
+  ],
   "q": "Which headache history rules out estrogen-containing contraception?",
-  "o": ["Migraine with aura", "Migraine without aura", "Tension-type headache", "Cluster headache", "Medication-overuse headache"],
+  "o": [
+   "Migraine with aura",
+   "Migraine without aura",
+   "Tension-type headache",
+   "Cluster headache",
+   "Medication-overuse headache"
+  ],
   "a": 0,
   "x": "Migraine with aura. Aura marks a higher baseline risk of ischemic stroke, and estrogen, which raises clotting factors, multiplies that risk, so every pill, patch and ring is avoided and a progestin-only or copper method is used instead.",
   "w": {
-   "Migraine without aura": "Migraine without aura does not carry the same stroke risk, so under the CDC criteria the benefits of combined methods generally outweigh the risks.",
+   "Migraine without aura": "Migraine without aura does not carry the same stroke risk, so combined methods are generally acceptable.",
    "Tension-type headache": "Tension-type headaches are common, pressing and bilateral, with no link to stroke, so they do not rule out estrogen-containing methods.",
-   "Cluster headache": "Cluster headache brings brief, severe orbital pain with tearing, mostly in men; it is not one of the estrogen contraindications listed by the CDC.",
-   "Medication-overuse headache": "This headache comes from frequent analgesic use and is treated by withdrawing the drug; it is not a reason to avoid estrogen."
+   "Cluster headache": "Cluster headache brings brief, severe pain around one eye, mostly in men. It is not a contraindication to estrogen-containing methods.",
+   "Medication-overuse headache": "This headache comes from frequent analgesic use and is treated by withdrawing the drug. It is not a reason to avoid estrogen."
   },
   "media": "fig:rp10_methods",
   "pt": {
-   "hl": ["smoker 35+, aura, prior clot"],
+   "hl": [
+    "smoker 35+, aura, prior clot"
+   ],
    "say": "The Whole column note lists aura with smoking after 35 and prior clot, so migraine with aura rules out every estrogen method."
   }
  },
  {
   "id": "rp10r05",
-  "tags": ["risk-factors"],
-  "bp": ["BP-rp10-03"],
+  "tags": [
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp10-03"
+  ],
   "q": "For which woman is a combined pill still an acceptable choice?",
-  "o": ["A 28-year-old smoker", "A 38-year-old smoker", "A woman with migraine with aura", "A woman with a prior DVT", "A woman 10 days postpartum"],
+  "o": [
+   "A 28-year-old smoker",
+   "A 38-year-old smoker",
+   "A woman with migraine with aura",
+   "A woman with a prior DVT",
+   "A woman 10 days postpartum"
+  ],
   "a": 0,
-  "x": "A 28-year-old smoker. Below 35, smoking adds little absolute risk, so the benefits of a combined pill outweigh it; from 35, smoking and age together multiply the risk of myocardial infarction and stroke, so estrogen is avoided.",
+  "x": "A 28-year-old smoker. Below age 35, smoking adds little absolute risk, so the benefits of a combined pill outweigh it. From age 35, smoking and age together multiply the risk of myocardial infarction and stroke, so estrogen is avoided.",
   "w": {
-   "A 38-year-old smoker": "From age 35, smoking and estrogen together sharply raise the risk of myocardial infarction and stroke, so combined methods are avoided; progestin-only methods remain fine.",
+   "A 38-year-old smoker": "From age 35, smoking and estrogen together sharply raise the risk of myocardial infarction and stroke, so combined methods are avoided. Progestin-only methods remain fine.",
    "A woman with migraine with aura": "Aura marks a higher baseline stroke risk that estrogen multiplies, so it is an absolute contraindication to every pill, patch and ring.",
    "A woman with a prior DVT": "A previous deep vein thrombosis means estrogen's extra clotting factors could provoke another clot, so she needs a progestin-only or copper method.",
-   "A woman 10 days postpartum": "Clotting risk is highest in the first 21 days after delivery, so estrogen is avoided then; progestin-only methods can start right away."
+   "A woman 10 days postpartum": "Clotting risk is highest in the first 21 days after delivery, so estrogen is avoided then. Progestin-only methods can start right away."
   },
   "media": "fig:rp10_methods",
   "pt": {
-   "hl": ["smoker 35+, aura, prior clot"],
+   "hl": [
+    "smoker 35+, aura, prior clot"
+   ],
    "say": "The Whole column note says smoker 35+, so a 28-year-old smoker falls below that cutoff and may still use estrogen."
   }
  },
  {
   "id": "rp10r06",
-  "tags": ["risk-factors"],
-  "bp": ["BP-rp10-02"],
+  "tags": [
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp10-02"
+  ],
   "q": "Which tumor becomes less likely after years of combined pill use because ovulations are suppressed?",
-  "o": ["Ovarian cancer", "Breast cancer", "Cervical cancer", "Hepatic adenoma", "Vaginal clear cell adenocarcinoma"],
+  "o": [
+   "Ovarian cancer",
+   "Breast cancer",
+   "Cervical cancer",
+   "Hepatic adenoma",
+   "Vaginal clear cell adenocarcinoma"
+  ],
   "a": 0,
-  "x": "Ovarian cancer. Each ovulation tears the ovarian surface and nearby tubal epithelium, and every repair is a chance for mutation; fewer lifetime ovulations cut the risk by about a third, and the protection lasts decades after stopping.",
+  "x": "Ovarian cancer. Each ovulation tears the ovarian surface and nearby tubal epithelium, and every repair is a chance for mutation. Fewer lifetime ovulations cut the risk by about a third, and the protection lasts decades after stopping.",
   "w": {
-   "Breast cancer": "Breast cancer risk rises slightly during current use of hormonal contraception and returns toward baseline within years of stopping; it does not fall.",
-   "Cervical cancer": "Long-term pill use is linked to a modestly higher risk of cervical cancer in women with persistent HPV infection, not a lower one.",
-   "Hepatic adenoma": "Hepatic adenoma is an estrogen-driven benign liver tumor whose risk rises with pill use; it can rupture and bleed, and it contraindicates estrogen.",
+   "Breast cancer": "Breast cancer risk may rise slightly during current use of hormonal contraception and returns toward baseline after stopping. It does not fall.",
+   "Cervical cancer": "Pill use does not protect against cervical cancer, which is driven by HPV infection.",
+   "Hepatic adenoma": "Hepatic adenoma is an estrogen-driven benign liver tumor. Its risk rises with pill use, and it can rupture and bleed.",
    "Vaginal clear cell adenocarcinoma": "This vaginal cancer follows in-utero exposure to diethylstilbestrol, a synthetic estrogen once given to pregnant women, not adult pill use."
   },
   "media": "fig:rp10_pitfalls",
   "pt": {
-   "hl": ["Lower ovarian cancer risk"],
+   "hl": [
+    "Lower ovarian cancer risk"
+   ],
    "say": "The ovulation row shows that years of suppressed ovulation mean less repair of the ovarian and tubal surface, so ovarian cancer risk falls for decades."
   }
  },
  {
   "id": "rp10r07",
-  "tags": ["drug-interactions"],
-  "bp": ["BP-rp10-04"],
+  "tags": [
+   "drug-interactions"
+  ],
+  "bp": [
+   "BP-rp10-04"
+  ],
   "q": "Which anti-infective lowers contraceptive hormone levels by inducing hepatic CYP3A4?",
-  "o": ["Rifampin", "Amoxicillin", "Doxycycline", "Azithromycin", "Fluconazole"],
+  "o": [
+   "Rifampin",
+   "Amoxicillin",
+   "Doxycycline",
+   "Azithromycin",
+   "Fluconazole"
+  ],
   "a": 0,
-  "x": "Rifampin. It induces hepatic CYP3A4, which speeds metabolism of ethinyl estradiol and progestins so levels can fall below the contraceptive threshold; women on long courses use DMPA or an IUD, or add a backup method.",
+  "x": "Rifampin. It induces hepatic CYP3A4, which speeds metabolism of ethinyl estradiol and progestins so levels can fall below the contraceptive threshold. Women on long courses use DMPA or an IUD instead.",
   "w": {
-   "Amoxicillin": "Amoxicillin does not induce liver enzymes, and studies show no meaningful fall in contraceptive levels, so the old advice to add backup is unnecessary.",
-   "Doxycycline": "Tetracyclines such as doxycycline leave contraceptive hormone levels unchanged; their notable issues are photosensitivity, esophagitis and tooth staining in children.",
+   "Amoxicillin": "Amoxicillin does not induce liver enzymes, and studies show no meaningful fall in contraceptive levels. Backup contraception is unnecessary.",
+   "Doxycycline": "Doxycycline and other tetracyclines do not induce liver enzymes and leave contraceptive hormone levels unchanged.",
    "Azithromycin": "Azithromycin neither induces nor meaningfully inhibits liver enzymes, so it does not change contraceptive hormone levels and needs no backup method.",
-   "Fluconazole": "Fluconazole inhibits CYP3A4, so if anything it raises hormone levels slightly; inhibition never causes contraceptive failure the way induction does."
+   "Fluconazole": "Fluconazole inhibits CYP3A4, so if anything it raises hormone levels slightly. Inhibition never causes contraceptive failure the way induction does."
   },
   "media": "fig:rp10_pitfalls",
   "pt": {
-   "hl": ["Rifampin, carbamazepine,", "Induce hepatic CYP3A4, so"],
+   "hl": [
+    "Rifampin, carbamazepine,",
+    "Induce hepatic CYP3A4, so"
+   ],
    "say": "The enzyme inducers row lists rifampin first: it induces hepatic CYP3A4, so contraceptive hormones are cleared faster and the pill, patch or ring may fail."
   }
  },
  {
   "id": "rp10r08",
-  "tags": ["drug-interactions"],
-  "bp": ["BP-rp10-04"],
+  "tags": [
+   "drug-interactions"
+  ],
+  "bp": [
+   "BP-rp10-04"
+  ],
   "q": "Which herbal supplement can cause contraceptive failure by inducing liver enzymes?",
-  "o": ["St John's wort", "Black cohosh", "Saw palmetto", "Ginkgo biloba", "Cranberry extract"],
+  "o": [
+   "St John's wort",
+   "Black cohosh",
+   "Saw palmetto",
+   "Ginkgo biloba",
+   "Cranberry extract"
+  ],
   "a": 0,
-  "x": "St John's wort. Its hyperforin activates the pregnane X receptor, which induces CYP3A4, so contraceptive hormones are cleared faster and breakthrough bleeding or pregnancy can follow; DMPA or an IUD avoids the problem.",
+  "x": "St John's wort. It induces hepatic CYP3A4, so contraceptive hormones are cleared faster and breakthrough bleeding or pregnancy can follow. DMPA or an IUD avoids the problem.",
   "w": {
-   "Black cohosh": "Black cohosh is taken for hot flashes; trials show little benefit over placebo, and it is not known to lower contraceptive hormone levels.",
-   "Saw palmetto": "Saw palmetto is marketed for benign prostatic hyperplasia symptoms; it has no clinically important effect on the liver enzymes that clear contraceptive hormones.",
-   "Ginkgo biloba": "Ginkgo is known for antiplatelet effects and bleeding risk with anticoagulants, not for speeding the metabolism of contraceptive hormones.",
-   "Cranberry extract": "Cranberry is used to prevent urinary infections; it does not induce CYP3A4 and does not reduce contraceptive effectiveness."
+   "Black cohosh": "Black cohosh is an herbal remedy taken for hot flashes. It is not known to lower contraceptive hormone levels.",
+   "Saw palmetto": "Saw palmetto is marketed for prostate symptoms. It has no important effect on the liver enzymes that clear contraceptive hormones.",
+   "Ginkgo biloba": "Ginkgo is known for antiplatelet effects and bleeding risk, not for speeding the metabolism of contraceptive hormones.",
+   "Cranberry extract": "Cranberry is used to prevent urinary infections. It does not induce CYP3A4 or reduce contraceptive effectiveness."
   },
   "media": "fig:rp10_pitfalls",
   "pt": {
-   "hl": ["phenytoin, St John's wort"],
+   "hl": [
+    "phenytoin, St John's wort"
+   ],
    "say": "St John's wort sits in the enzyme inducers row: it induces hepatic CYP3A4 and speeds clearance of contraceptive hormones, so an IUD or DMPA is used instead."
   }
  },
  {
   "id": "rp10r09",
-  "tags": ["adverse-effects"],
-  "bp": ["BP-rp10-05"],
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp10-05"
+  ],
   "q": "Which contraceptive causes reversible bone density loss and a slow return of fertility?",
-  "o": ["DMPA injection", "Etonogestrel implant", "Levonorgestrel IUD", "Copper IUD", "Progestin-only pill"],
+  "o": [
+   "DMPA injection",
+   "Etonogestrel implant",
+   "Levonorgestrel IUD",
+   "Copper IUD",
+   "Progestin-only pill"
+  ],
   "a": 0,
-  "x": "DMPA injection. Its high progestin dose suppresses gonadotropins strongly, so estradiol falls and bone density drops during use, recovering after stopping; the intramuscular depot lingers, so ovulation can take many months to return.",
+  "x": "DMPA injection. Its high progestin dose suppresses gonadotropins strongly, so estradiol falls and bone density drops during use, recovering after stopping. The depot lingers, so ovulation can take many months to return.",
   "w": {
    "Etonogestrel implant": "The implant suppresses ovulation without lowering estradiol enough to thin bone, and fertility returns within weeks of removing the rod.",
    "Levonorgestrel IUD": "The levonorgestrel IUD acts mostly inside the uterus, so ovarian estradiol and bone density are preserved and fertility returns soon after removal.",
@@ -175,187 +285,309 @@
   },
   "media": "fig:rp10_methods",
   "pt": {
-   "hl": ["DMPA injection", "about 4; every 3 months"],
+   "hl": [
+    "DMPA injection",
+    "about 4; every 3 months"
+   ],
    "say": "Find the DMPA injection in the progestin-only column, given every 3 months; its strong suppression lowers estradiol, thinning bone and delaying fertility."
   }
  },
  {
   "id": "rp10r10",
-  "tags": ["risk-factors"],
-  "bp": ["BP-rp10-05", "BP-rp10-09"],
+  "tags": [
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp10-05",
+   "BP-rp10-09"
+  ],
   "q": "Which reversible contraceptive has the lowest pregnancy rate with typical use?",
-  "o": ["Etonogestrel implant", "DMPA injection", "Combined oral pill", "Vaginal ring", "Male condom"],
+  "o": [
+   "Etonogestrel implant",
+   "DMPA injection",
+   "Combined oral pill",
+   "Vaginal ring",
+   "Male condom"
+  ],
   "a": 0,
-  "x": "Etonogestrel implant. Once the rod is placed in the arm it works for 3 years with nothing for the user to remember, so typical use equals perfect use, at about 1 pregnancy per 1,000 women a year.",
+  "x": "Etonogestrel implant. Once the rod is placed in the arm it works for 3 years with nothing for the user to remember. Typical use equals perfect use, and fewer than 1 in 100 women become pregnant each year.",
   "w": {
-   "DMPA injection": "DMPA fails in about 4 of 100 women a year with typical use, mostly because the 3-monthly injection is given late.",
+   "DMPA injection": "DMPA fails more often than the implant with typical use, mostly because the 3-monthly injection is given late.",
    "Combined oral pill": "About 7 of 100 pill users become pregnant each year with typical use, mostly from missed or late pills.",
    "Vaginal ring": "The monthly ring shares the pill's typical-use failure rate of about 7 per 100, because it must be inserted and replaced on time.",
    "Male condom": "Condoms fail in about 13 of 100 couples a year with typical use, though they are the only method that also blocks STIs."
   },
   "media": "fig:rp10_methods",
   "pt": {
-   "hl": ["Etonogestrel implant", "Top row = LARC and sterilization"],
+   "hl": [
+    "Etonogestrel implant",
+    "Top row = LARC and sterilization"
+   ],
    "say": "The Etonogestrel implant sits in the top row, under 1 per 100, because once placed it needs no action from the user."
   }
  },
  {
   "id": "rp10r11",
-  "tags": ["drug-mechanism", "bleeding-source"],
-  "bp": ["BP-rp10-05", "BP-rp10-12"],
+  "tags": [
+   "drug-mechanism",
+   "bleeding-source"
+  ],
+  "bp": [
+   "BP-rp10-05",
+   "BP-rp10-12"
+  ],
   "q": "Which contraceptive is also a first-line treatment for heavy menstrual bleeding?",
-  "o": ["Levonorgestrel IUD", "Copper IUD", "Etonogestrel implant", "Diaphragm", "Tubal sterilization"],
+  "o": [
+   "Levonorgestrel IUD",
+   "Copper IUD",
+   "Etonogestrel implant",
+   "Diaphragm",
+   "Tubal sterilization"
+  ],
   "a": 0,
-  "x": "Levonorgestrel IUD. Releasing progestin directly into the uterus, it keeps the endometrium thin and inactive, so menstrual blood loss falls sharply and many users stop bleeding altogether; it is the most effective medical therapy for heavy menstrual bleeding.",
+  "x": "Levonorgestrel IUD. Releasing progestin directly into the uterus, it keeps the endometrium thin and inactive, so menstrual blood loss falls sharply and many users stop bleeding altogether. It is the most effective medical therapy for heavy menstrual bleeding.",
   "w": {
    "Copper IUD": "The copper IUD tends to make periods heavier and more painful, so it is a poor choice for a woman who already bleeds heavily.",
    "Etonogestrel implant": "The implant causes unpredictable spotting and bleeding, the most common reason for removal, so it cannot be relied on to control heavy periods.",
-   "Diaphragm": "A diaphragm is a barrier placed over the cervix with spermicide; it contains no hormone and has no effect on menstrual blood loss.",
+   "Diaphragm": "A diaphragm is a barrier placed over the cervix with spermicide. It contains no hormone and has no effect on menstrual blood loss.",
    "Tubal sterilization": "Tubal sterilization blocks the tubes but leaves ovarian hormones and the endometrium unchanged, so it neither treats nor causes heavy periods."
   },
   "media": "fig:rp10_methods",
   "pt": {
-   "hl": ["Levonorgestrel IUD"],
+   "hl": [
+    "Levonorgestrel IUD"
+   ],
    "say": "The Levonorgestrel IUD in the top row releases progestin inside the uterus, thinning the lining so heavy periods lighten or stop."
   }
  },
  {
   "id": "rp10r12",
-  "tags": ["drug-mechanism"],
-  "bp": ["BP-rp10-06"],
+  "tags": [
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp10-06"
+  ],
   "q": "How does the copper IUD prevent pregnancy?",
-  "o": ["Sterile inflammation toxic to sperm and ova", "Suppression of the LH surge", "Thickened cervical mucus", "Thin, inactive endometrium", "Blockade of progesterone receptors"],
+  "o": [
+   "Sterile inflammation toxic to sperm and ova",
+   "Suppression of the LH surge",
+   "Thickened cervical mucus",
+   "Thin, inactive endometrium",
+   "Blockade of progesterone receptors"
+  ],
   "a": 0,
-  "x": "Sterile inflammation toxic to sperm and ova. Copper ions provoke a foreign-body reaction in the endometrium and tubal fluid that impairs sperm motility and survival, so fertilization rarely happens; no hormone is released, so ovulation continues.",
+  "x": "Sterile inflammation toxic to sperm and ova. Copper ions provoke a local inflammatory reaction that impairs sperm and ova, so fertilization rarely happens. No hormone is released, so ovulation continues.",
   "w": {
-   "Suppression of the LH surge": "Blocking the surge is how combined methods and levonorgestrel act; the copper IUD releases no hormone, so women keep ovulating every cycle.",
+   "Suppression of the LH surge": "Blocking the surge is how combined methods and levonorgestrel act. The copper IUD releases no hormone, so women keep ovulating every cycle.",
    "Thickened cervical mucus": "Thick cervical mucus is a progestin effect, seen with the minipill and the levonorgestrel IUD, not with a device that contains no hormone.",
-   "Thin, inactive endometrium": "A thin, quiet lining comes from the levonorgestrel IUD; under copper the endometrium keeps cycling, which is why periods often get heavier.",
-   "Blockade of progesterone receptors": "Acting at progesterone receptors is how mifepristone ends a pregnancy and ulipristal delays ovulation; copper does not touch hormone receptors."
+   "Thin, inactive endometrium": "A thin, quiet lining comes from the levonorgestrel IUD. Under copper the endometrium keeps cycling, which is why periods often get heavier.",
+   "Blockade of progesterone receptors": "Acting at progesterone receptors is how mifepristone ends a pregnancy and ulipristal delays ovulation. Copper does not touch hormone receptors."
   },
   "media": "fig:rp10_timeline",
   "pt": {
-   "hl": ["Copper IUD: toxic to sperm and ova"],
+   "hl": [
+    "Copper IUD: toxic to sperm and ova"
+   ],
    "say": "The Copper IUD bar reads toxic to sperm and ova: its sterile inflammation stops fertilization before any embryo forms."
   }
  },
  {
   "id": "rp10r13",
-  "tags": ["adverse-effects"],
-  "bp": ["BP-rp10-06"],
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp10-06"
+  ],
   "q": "Which change in menstrual bleeding is typical with a copper IUD?",
-  "o": ["Heavier, more painful periods", "Amenorrhea", "Unpredictable light spotting", "Lighter, shorter periods", "Scheduled withdrawal bleeds"],
+  "o": [
+   "Heavier, more painful periods",
+   "Amenorrhea",
+   "Unpredictable light spotting",
+   "Lighter, shorter periods",
+   "Scheduled withdrawal bleeds"
+  ],
   "a": 0,
-  "x": "Heavier, more painful periods. Copper's inflammatory reaction raises endometrial prostaglandins and local fibrinolysis, so flow and cramping increase, especially in the first months; NSAIDs help, and bleeding and pain are the most common reasons for removal.",
+  "x": "Heavier, more painful periods. Copper's inflammatory reaction raises endometrial prostaglandins, so flow and cramping increase, especially in the first months. Bleeding and pain are the most common reasons for removal.",
   "w": {
-   "Amenorrhea": "Amenorrhea develops with DMPA over time and in many levonorgestrel IUD users, because progestin keeps the lining thin; copper does neither.",
+   "Amenorrhea": "Amenorrhea develops with DMPA over time and in many levonorgestrel IUD users, because progestin keeps the lining thin. Copper does neither.",
    "Unpredictable light spotting": "Unpredictable spotting is the signature complaint with the etonogestrel implant, whose steady progestin leaves the endometrium fragile and irregular.",
-   "Lighter, shorter periods": "Lighter periods follow combined pills and the levonorgestrel IUD; the copper IUD contains no hormone that could thin the endometrium.",
+   "Lighter, shorter periods": "Lighter periods follow combined pills and the levonorgestrel IUD. The copper IUD contains no hormone that could thin the endometrium.",
    "Scheduled withdrawal bleeds": "Withdrawal bleeds come from the hormone-free week of a combined pill, patch or ring, when estrogen and progestin levels drop."
   },
   "media": "fig:rp10_pitfalls",
   "pt": {
-   "hl": ["Heavier, more painful periods", "Sterile inflammation raises"],
+   "hl": [
+    "Heavier, more painful periods",
+    "Sterile inflammation raises"
+   ],
    "say": "The copper IUD row shows sterile inflammation raising endometrial prostaglandins, which makes periods heavier and more painful; NSAIDs help."
   }
  },
  {
   "id": "rp10r14",
-  "tags": ["drug-mechanism"],
-  "bp": ["BP-rp10-06", "BP-rp10-07", "BP-rp10-11"],
+  "tags": [
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp10-06",
+   "BP-rp10-07",
+   "BP-rp10-11"
+  ],
   "q": "Which emergency contraceptive is most effective when started 4 days after unprotected intercourse?",
-  "o": ["Copper IUD", "Ulipristal acetate", "Levonorgestrel tablet", "Combined pills (Yuzpe regimen)", "Mifepristone with misoprostol"],
+  "o": [
+   "Copper IUD",
+   "Ulipristal acetate",
+   "Levonorgestrel tablet",
+   "Combined oral contraceptive pills",
+   "Mifepristone with misoprostol"
+  ],
   "a": 0,
-  "x": "Copper IUD. Copper ions are toxic to sperm and ova, so it prevents fertilization whatever stage the follicle has reached; placed within 5 days it fails in fewer than 1 in 1,000 users and then continues as ongoing contraception.",
+  "x": "Copper IUD. Copper ions are toxic to sperm and ova, so it prevents fertilization whatever stage the follicle has reached. Placed within 5 days, it is the most effective option and then continues as ongoing contraception.",
   "w": {
-   "Ulipristal acetate": "Ulipristal works up to 5 days and can delay rupture even after LH starts rising, but it still fails more often than a copper IUD.",
+   "Ulipristal acetate": "Ulipristal works up to 5 days and can delay rupture even after LH starts rising, but a copper IUD is still more effective.",
    "Levonorgestrel tablet": "Levonorgestrel works best within 72 hours and only before the LH surge begins, so by day 4 it is less effective than ulipristal.",
-   "Combined pills (Yuzpe regimen)": "The Yuzpe regimen uses two large doses of ordinary combined pills; it is the least effective emergency option and causes the most nausea.",
-   "Mifepristone with misoprostol": "This pair ends a pregnancy that has already implanted; that is medication abortion, not emergency contraception, which acts before implantation."
+   "Combined oral contraceptive pills": "Combined pills taken after intercourse are less effective than the dedicated emergency pills and cause the most nausea.",
+   "Mifepristone with misoprostol": "This pair ends a pregnancy that has already implanted. That is medication abortion, not emergency contraception, which acts before implantation."
   },
   "media": "fig:rp10_timeline",
   "pt": {
-   "hl": ["Copper IUD: toxic to sperm and ova", "ulipristal and a copper IUD up to 5 days"],
+   "hl": [
+    "Copper IUD: toxic to sperm and ova",
+    "ulipristal and a copper IUD up to 5 days"
+   ],
    "say": "The Copper IUD bar and the Windows note show it blocks fertilization for up to 5 days, more reliably than any pill."
   }
  },
  {
   "id": "rp10r15",
-  "tags": ["selective-modulators", "hormone-timeline"],
-  "bp": ["BP-rp10-07", "BP-rp10-11"],
+  "tags": [
+   "selective-modulators",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp10-07",
+   "BP-rp10-11"
+  ],
   "q": "Which emergency contraceptive drug is a selective progesterone receptor modulator?",
-  "o": ["Ulipristal acetate", "Levonorgestrel", "Raloxifene", "Clomiphene", "Misoprostol"],
+  "o": [
+   "Ulipristal acetate",
+   "Levonorgestrel",
+   "Raloxifene",
+   "Clomiphene",
+   "Misoprostol"
+  ],
   "a": 0,
-  "x": "Ulipristal acetate. Acting at the progesterone receptor as a partial agonist and antagonist, it can postpone follicle rupture even after LH has begun to rise, so it works for up to 5 days and outperforms levonorgestrel late in the window.",
+  "x": "Ulipristal acetate acts at the progesterone receptor as a partial agonist and antagonist. It can postpone follicle rupture even after LH has begun to rise, so it works for up to 5 days and outperforms levonorgestrel late in the window.",
   "w": {
-   "Levonorgestrel": "Levonorgestrel is a progestin, a full receptor agonist; as emergency contraception it delays ovulation only if taken before the LH surge begins.",
-   "Raloxifene": "Raloxifene is a selective estrogen receptor modulator that protects bone and lowers breast cancer risk; it has no role in emergency contraception.",
+   "Levonorgestrel": "Levonorgestrel is a progestin, a full receptor agonist. As emergency contraception it delays ovulation only if taken before the LH surge begins.",
+   "Raloxifene": "Raloxifene is a selective estrogen receptor modulator that protects bone and lowers breast cancer risk. It has no role in emergency contraception.",
    "Clomiphene": "Clomiphene is a selective estrogen receptor modulator that blocks hypothalamic feedback to induce ovulation, the opposite of what emergency contraception needs.",
-   "Misoprostol": "Misoprostol is a prostaglandin E1 analog that contracts the uterus in medication abortion; it does not delay ovulation or prevent fertilization."
+   "Misoprostol": "Misoprostol is a prostaglandin E1 analog that contracts the uterus in medication abortion. It does not delay ovulation or prevent fertilization."
   },
   "media": "fig:rp10_timeline",
   "pt": {
-   "hl": ["Ulipristal: can still delay rupture after LH starts rising"],
+   "hl": [
+    "Ulipristal: can still delay rupture after LH starts rising"
+   ],
    "say": "The Ulipristal bar reaches past the LH surge: as a progesterone receptor modulator it can still delay follicle rupture."
   }
  },
  {
   "id": "rp10r16",
-  "tags": ["risk-factors"],
-  "bp": ["BP-rp10-07"],
+  "tags": [
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp10-07"
+  ],
   "q": "Which patient factor makes levonorgestrel emergency contraception less effective?",
-  "o": ["Obesity", "Breastfeeding", "Age under 18", "Nulliparity", "Taking amoxicillin"],
+  "o": [
+   "Obesity",
+   "Breastfeeding",
+   "Age under 18",
+   "Nulliparity",
+   "Taking amoxicillin"
+  ],
   "a": 0,
-  "x": "Obesity. A body mass index above about 30 lowers levonorgestrel blood levels, so the single dose may fail to postpone the LH surge; ulipristal or, better still, a copper IUD, which weight does not affect, is preferred.",
+  "x": "Obesity. A body mass index of about 30 or more lowers levonorgestrel blood levels, so the single dose may fail to postpone the LH surge. Ulipristal or, better still, a copper IUD, which weight does not affect, is preferred.",
   "w": {
-   "Breastfeeding": "Breastfeeding does not reduce efficacy; levonorgestrel passes into milk only in small amounts, and nursing can continue without interruption.",
-   "Age under 18": "Adolescents respond to levonorgestrel as well as adults do, and in the United States it is sold over the counter without an age limit.",
+   "Breastfeeding": "Breastfeeding does not reduce efficacy. Levonorgestrel passes into milk only in small amounts, and nursing can continue.",
+   "Age under 18": "Adolescents respond to levonorgestrel as well as adults do, so young age does not weaken the drug.",
    "Nulliparity": "Never having given birth has no effect on how levonorgestrel postpones the LH surge, and nulliparous women can also use a copper IUD.",
-   "Taking amoxicillin": "Ordinary antibiotics such as amoxicillin do not induce liver enzymes, so they leave levonorgestrel levels unchanged; only inducers like rifampin matter."
+   "Taking amoxicillin": "Ordinary antibiotics such as amoxicillin do not induce liver enzymes, so they leave levonorgestrel levels unchanged. Only inducers like rifampin matter."
   },
   "media": "fig:rp10_pitfalls",
   "pt": {
-   "hl": ["Levonorgestrel", "BMI of 30 or more weakens it"],
+   "hl": [
+    "Levonorgestrel",
+    "BMI of 30 or more weakens it"
+   ],
    "say": "The levonorgestrel row shows it only delays the LH surge, and a BMI of 30 or more weakens it, so ulipristal or a copper IUD works better in obesity."
   }
  },
  {
   "id": "rp10r17",
-  "tags": ["drug-mechanism"],
-  "bp": ["BP-rp10-08"],
+  "tags": [
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp10-08"
+  ],
   "q": "What is the mechanism of mifepristone in medication abortion?",
-  "o": ["Progesterone receptor antagonist", "Prostaglandin E1 analog", "Dihydrofolate reductase inhibitor", "Oxytocin receptor agonist", "Selective estrogen receptor modulator"],
+  "o": [
+   "Progesterone receptor antagonist",
+   "Prostaglandin E1 analog",
+   "Dihydrofolate reductase inhibitor",
+   "Oxytocin receptor agonist",
+   "Selective estrogen receptor modulator"
+  ],
   "a": 0,
   "x": "Progesterone receptor antagonist. Without progesterone's support the decidua breaks down and the pregnancy detaches, the cervix softens, and the myometrium becomes sensitive to prostaglandins, which is why misoprostol given 24 to 48 hours later works so well.",
   "w": {
-   "Prostaglandin E1 analog": "The prostaglandin E1 analog is misoprostol, the second drug; it contracts the myometrium and ripens the cervix once mifepristone has primed the uterus.",
-   "Dihydrofolate reductase inhibitor": "Methotrexate inhibits dihydrofolate reductase and kills dividing trophoblast; it treats a small unruptured ectopic pregnancy rather than starting a routine medication abortion.",
-   "Oxytocin receptor agonist": "Oxytocin acts on receptors that are scarce in the early pregnant uterus, so it is used in labor and postpartum hemorrhage, not first-trimester abortion.",
-   "Selective estrogen receptor modulator": "SERMs such as clomiphene, tamoxifen and raloxifene act on estrogen receptors; mifepristone targets the progesterone receptor and also blocks glucocorticoid receptors."
+   "Prostaglandin E1 analog": "The prostaglandin E1 analog is misoprostol, the second drug. It contracts the myometrium and ripens the cervix once mifepristone has primed the uterus.",
+   "Dihydrofolate reductase inhibitor": "Methotrexate inhibits dihydrofolate reductase and kills dividing cells. It is not the drug that primes the uterus in medication abortion.",
+   "Oxytocin receptor agonist": "Oxytocin acts on receptors that are scarce in the early pregnant uterus. It is used in labor and postpartum hemorrhage, not early abortion.",
+   "Selective estrogen receptor modulator": "SERMs such as clomiphene, tamoxifen and raloxifene act on estrogen receptors. Mifepristone targets the progesterone receptor instead."
   },
   "media": "fig:rp10_abortion",
   "pt": {
-   "hl": ["Competitive progesterone receptor antagonist"],
+   "hl": [
+    "Competitive progesterone receptor antagonist"
+   ],
    "say": "Mifepristone is a competitive progesterone receptor antagonist: without progesterone the decidua breaks down, the cervix softens and the myometrium becomes sensitive to prostaglandins."
   }
  },
  {
   "id": "rp10r18",
-  "tags": ["drug-mechanism"],
-  "bp": ["BP-rp10-08"],
+  "tags": [
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp10-08"
+  ],
   "q": "Which drug in a medication abortion is a prostaglandin E1 analog?",
-  "o": ["Misoprostol", "Mifepristone", "Dinoprostone", "Carboprost", "Methotrexate"],
+  "o": [
+   "Misoprostol",
+   "Mifepristone",
+   "Dinoprostone",
+   "Carboprost",
+   "Methotrexate"
+  ],
   "a": 0,
-  "x": "Misoprostol. Given 24 to 48 hours after mifepristone, this prostaglandin E1 analog binds myometrial prostaglandin receptors, causing strong uterine contractions and cervical ripening that expel the pregnancy; cramping, heavy bleeding, diarrhea, fever and chills are expected.",
+  "x": "Misoprostol. Given 24 to 48 hours after mifepristone, this prostaglandin E1 analog binds myometrial prostaglandin receptors. It causes strong uterine contractions and cervical ripening that expel the pregnancy.",
   "w": {
    "Mifepristone": "Mifepristone is the first drug, a progesterone receptor antagonist that breaks down the decidua and primes the uterus for the prostaglandin that follows.",
-   "Dinoprostone": "Dinoprostone is prostaglandin E2, used as a gel or insert to ripen the cervix before labor induction, not as the second drug of this regimen.",
-   "Carboprost": "Carboprost is a prostaglandin F2-alpha analog used for postpartum hemorrhage from uterine atony; it causes bronchospasm, so asthma contraindicates it.",
-   "Methotrexate": "Methotrexate is a folate antagonist that kills trophoblast; it treats ectopic pregnancy and is not a prostaglandin at all."
+   "Dinoprostone": "Dinoprostone is prostaglandin E2, used as a gel or insert to ripen the cervix before labor induction. It is not the second drug of this regimen.",
+   "Carboprost": "Carboprost is a prostaglandin F2-alpha analog used for postpartum hemorrhage from uterine atony. It is not part of this regimen.",
+   "Methotrexate": "Methotrexate is a folate antagonist that kills dividing cells. It is not a prostaglandin at all."
   },
   "media": "fig:rp10_timeline",
   "pt": {
-   "hl": ["Mifepristone, then misoprostol"],
+   "hl": [
+    "Mifepristone, then misoprostol"
+   ],
    "say": "The Mifepristone, then misoprostol bar sits after implantation; misoprostol, the PGE1 analog, contracts the uterus to expel the pregnancy."
   }
  }

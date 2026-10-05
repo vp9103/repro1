@@ -23,12 +23,12 @@
    "Pampiniform plexus"
   ],
   "a": 3,
-  "e": "A **hydrocele** is a collection of serous fluid in the **tunica vaginalis**, the peritoneal sac that wraps the front and sides of the testis. Because the fluid is clear, light passes through, the swelling transilluminates, and the testis sits within it and cannot be separated from it. In infants a patent processus vaginalis causes a communicating hydrocele; in adults the fluid is usually noncommunicating, and a new hydrocele deserves an ultrasound to exclude a tumor. The albuginea is the testicular capsule, the dartos is scrotal wall muscle, a spermatocele is separable, and varicocele veins do not transilluminate.",
+  "e": "A **hydrocele** is a collection of clear, serous fluid in the **tunica vaginalis**, the peritoneal sac that wraps the front and sides of the testis. Because the fluid is clear, light passes through, and the swelling transilluminates. The testis sits inside the fluid, so it cannot be felt apart from it. In infants a patent processus vaginalis causes a communicating hydrocele, but in adults the fluid is usually noncommunicating. A new adult hydrocele deserves an ultrasound to exclude a tumor. The tunica albuginea is the testicular capsule, the dartos is scrotal wall muscle, a spermatocele can be felt separately, and varicocele veins do not transilluminate.",
   "w": {
-   "Tunica albuginea": "The tunica albuginea is the tough fibrous capsule of the testis itself; fluid does not collect within it, and a tear of it signals testicular rupture after trauma.",
-   "Dartos fascia": "The dartos is the smooth muscle layer of the scrotal wall that wrinkles in the cold; fluid within it would cause diffuse wall edema rather than a glowing swelling around the testis.",
-   "Epididymal head": "A cyst at the epididymal head, a spermatocele, also transilluminates, but it lies above and behind the testis and can be felt separately, whereas here the testis cannot be felt apart.",
-   "Pampiniform plexus": "Dilated pampiniform veins form a varicocele, a bag of worms that fills on standing and does not transilluminate because blood absorbs the light."
+   "Tunica albuginea": "The tunica albuginea is the tough fibrous capsule of the testis itself. Fluid does not collect within it, and a tear in it means testicular rupture after trauma.",
+   "Dartos fascia": "The dartos is the smooth muscle layer of the scrotal wall that wrinkles in the cold. Fluid within it would cause diffuse wall swelling, not a glowing mass around the testis.",
+   "Epididymal head": "A cyst at the epididymal head, a spermatocele, also transilluminates, but it lies above and behind the testis and can be felt separately. Here the testis cannot be felt apart.",
+   "Pampiniform plexus": "Dilated pampiniform veins form a varicocele, a bag of worms that fills on standing. Blood absorbs the light, so it does not transilluminate."
   },
   "et": [
    [
@@ -96,15 +96,15 @@
    "Emergency surgery to untwist the cord and fix both testes",
    "Scrotal elevation, ice and analgesics with outpatient review",
    "Scrotal Doppler ultrasonography before any intervention",
-   "Manual detorsion and discharge if the pain improves"
+   "Observe overnight and re-examine in the morning"
   ],
   "a": 1,
-  "e": "Sudden severe pain with nausea, a high-riding horizontal testis and an absent cremasteric reflex in an adolescent is **testicular torsion** until proven otherwise. Twisting compresses the thin-walled veins before the arteries, so the testis congests and then undergoes hemorrhagic infarction; salvage exceeds 90 percent within 6 hours and falls below 10 percent after 24 hours. He needs **emergency surgery** to untwist the cord, and the surgeon fixes both testes because the bell-clapper defect is usually bilateral. Imaging must not delay exploration, antibiotics treat epididymitis, supportive care suits a torsed appendix testis, and manual detorsion only buys time.",
+  "e": "Sudden severe pain with nausea, a high-riding horizontal testis and an absent cremasteric reflex in an adolescent is **testicular torsion** until proven otherwise. Twisting squeezes the thin-walled veins before the arteries, so the testis congests and then undergoes hemorrhagic infarction. Salvage is above 90 percent when the cord is untwisted within about 6 hours and falls sharply after that. He needs **emergency surgery** to untwist the cord, and the surgeon fixes both testes because the bell-clapper defect is usually bilateral. Imaging must not delay surgery. Antibiotics treat epididymitis, and supportive care suits a torsed appendix testis.",
   "w": {
-   "Intramuscular ceftriaxone and oral doxycycline": "Ceftriaxone with doxycycline treats epididymitis from chlamydia and gonorrhea, which begins gradually with urethral symptoms, a normal lie and a preserved cremasteric reflex; this boy has none of that.",
-   "Scrotal elevation, ice and analgesics with outpatient review": "Rest, elevation and analgesics suit a torsed appendix testis, which is focal and subacute and leaves the cremasteric reflex intact; waiting here would risk infarction of the testis within hours.",
-   "Scrotal Doppler ultrasonography before any intervention": "Doppler can support the diagnosis, but waiting 90 minutes spends much of the salvage window, and this typical clinical picture justifies exploration without it.",
-   "Manual detorsion and discharge if the pain improves": "Manual detorsion can temporize, but pain relief does not prove complete untwisting and the bell-clapper defect remains, so surgical exploration and fixation are still required."
+   "Intramuscular ceftriaxone and oral doxycycline": "Ceftriaxone with doxycycline treats epididymitis from chlamydia and gonorrhea, which begins gradually with urethral symptoms and keeps a normal lie and a cremasteric reflex. This boy has none of that.",
+   "Scrotal elevation, ice and analgesics with outpatient review": "Rest, elevation and pain relievers suit a torsed appendix testis, which causes focal pain and keeps the cremasteric reflex. Waiting here risks infarction of the testis within hours.",
+   "Scrotal Doppler ultrasonography before any intervention": "Doppler can support the diagnosis, but waiting 90 minutes spends much of the salvage window. This typical clinical picture justifies surgery without it.",
+   "Observe overnight and re-examine in the morning": "Waiting until morning would cost the testis. Salvage depends on untwisting the cord within hours, so observation is not safe in suspected torsion."
   },
   "et": [
    [
@@ -134,9 +134,9 @@
      "Must not delay exploration"
     ],
     [
-     "Manual detorsion and discharge if the pain improves",
-     "Temporizing step for torsion",
-     "Bridge to surgery only"
+     "Observe overnight and re-examine in the morning",
+     "None; a delay for torsion",
+     "Loses the salvage window"
     ]
    ]
   ],
@@ -175,12 +175,12 @@
    "Dilated veins that enlarge on Valsalva"
   ],
   "a": 0,
-  "e": "Gradual onset, urethral discharge, a tender epididymis, a normal testis position, an intact cremasteric reflex and relief when the testis is lifted (Prehn sign) point to **epididymitis** from Chlamydia trachomatis or Neisseria gonorrhoeae in a man younger than 35. Inflammation raises perfusion, so Doppler shows **increased flow** around the epididymis and testis. Absent flow would mean torsion, a solid lesion with normal flow would suggest a tumor, an avascular nodule at the upper pole would be a torsed appendix testis, and dilated veins would be a varicocele.",
+  "e": "Gradual onset, urethral discharge, a tender epididymis, a normal testis position, an intact cremasteric reflex and relief when the testis is lifted (Prehn sign) point to **epididymitis** from *Chlamydia trachomatis* or *Neisseria gonorrhoeae* in a man younger than 35. Inflammation raises blood flow, so Doppler shows **increased flow** around the epididymis and testis. Absent flow would mean torsion. A solid lesion with normal flow would suggest a tumor, a small nodule at the upper pole would be a torsed appendix testis, and dilated veins would be a varicocele.",
   "w": {
-   "Absent blood flow within the testis": "Absent flow marks torsion, in which twisting of the cord closes first the veins and then the arteries; the gradual onset, discharge, normal lie and intact reflex argue against it.",
-   "Normal flow with a solid intratesticular mass": "A solid intratesticular lesion with normal flow suggests a germ cell tumor, which is painless and comes without urethral discharge or a tender epididymis.",
+   "Absent blood flow within the testis": "Absent flow marks torsion, in which the twisted cord closes first the veins and then the arteries. The gradual onset, discharge, normal lie and intact reflex argue against it.",
+   "Normal flow with a solid intratesticular mass": "A solid intratesticular lesion with normal flow suggests a germ cell tumor, which is painless and has no urethral discharge or tender epididymis.",
    "Normal flow with a small avascular upper-pole nodule": "A small avascular nodule at the upper pole is a torsed appendix testis, which causes focal pain in boys around 7 to 12 years, not diffuse epididymal tenderness with discharge in an adult.",
-   "Dilated veins that enlarge on Valsalva": "Dilated veins that enlarge with Valsalva or standing describe a varicocele, which is typically painless and left-sided, without discharge or epididymal tenderness."
+   "Dilated veins that enlarge on Valsalva": "Dilated veins that enlarge with standing or Valsalva describe a varicocele, which is typically painless and left-sided, without discharge or epididymal tenderness."
   },
   "et": [
    [
@@ -237,8 +237,7 @@
   "id": "rp20q04",
   "d": 2,
   "tags": [
-   "pathogen-clues",
-   "treatment-sequence"
+   "pathogen-clues"
   ],
   "bp": [
    "BP-rp20-03"
@@ -247,58 +246,58 @@
    "HP-MALE.13",
    "BICEP-MISHIMOTO.5"
   ],
-  "s": "A 68-year-old man with benign prostatic hyperplasia had an indwelling urinary catheter removed 5 days ago. He now has 2 days of fever and gradually increasing left scrotal pain. The left epididymis is swollen and tender, the testis lies normally, and the cremasteric reflex is present. Urinalysis shows pyuria, and a Gram stain of the urine shows gram-negative rods. A nucleic acid amplification test of urine for Neisseria gonorrhoeae and Chlamydia trachomatis is negative.",
-  "l": "Which is the most appropriate antimicrobial therapy?",
+  "s": "A 68-year-old man with benign prostatic hyperplasia had an indwelling urinary catheter removed 5 days ago. He now has 2 days of fever and gradually increasing left scrotal pain. The left epididymis is swollen and tender, the testis lies normally, and the cremasteric reflex is present. Urinalysis shows pyuria. A nucleic acid amplification test of urine for Neisseria gonorrhoeae and Chlamydia trachomatis is negative.",
+  "l": "Which organism most likely caused his epididymitis?",
   "o": [
-   "Ceftriaxone plus doxycycline",
-   "Penicillin G benzathine",
-   "Levofloxacin",
-   "Metronidazole",
-   "Nitrofurantoin"
+   "Chlamydia trachomatis",
+   "Neisseria gonorrhoeae",
+   "Escherichia coli",
+   "Mycobacterium tuberculosis",
+   "Treponema pallidum"
   ],
   "a": 2,
-  "e": "In men older than 35, and in men with urinary obstruction or recent instrumentation, epididymitis usually ascends from the urinary tract and is caused by enteric gram-negative rods such as Escherichia coli. Gram-negative rods in the urine and a negative test for chlamydia and gonorrhea confirm that pattern. CDC guidance for epididymitis likely caused by enteric organisms is **levofloxacin**, a fluoroquinolone with good tissue penetration; ceftriaxone with doxycycline is reserved for sexually transmitted cases in younger men. Benzathine penicillin, metronidazole and nitrofurantoin neither cover this pathogen nor reach the epididymis.",
+  "e": "Epididymitis climbs from the urethra or bladder. In sexually active men younger than about 35, the usual causes are *Chlamydia trachomatis* and *Neisseria gonorrhoeae*. In older men, and in men with urinary obstruction or a recent catheter, enteric gram-negative rods such as **Escherichia coli** dominate. This man is 68, has prostatic obstruction and recent instrumentation, and his test for chlamydia and gonorrhea is negative, so *E. coli* is the most likely cause. Tuberculosis can cause a granulomatous epididymo-orchitis, but it is slow and chronic. *Treponema pallidum* is not a usual cause of acute epididymitis.",
   "w": {
-   "Ceftriaxone plus doxycycline": "This regimen covers gonorrhea and chlamydia, the usual causes under age 35; this man is older, has had catheter instrumentation, has gram-negative rods in the urine and tested negative for both infections.",
-   "Penicillin G benzathine": "Benzathine penicillin treats syphilis and does not cover gram-negative enteric bacilli, so it would leave the likely pathogen untreated.",
-   "Metronidazole": "Metronidazole targets anaerobes and protozoa such as Trichomonas and is not first-line for epididymitis caused by enteric gram-negative rods.",
-   "Nitrofurantoin": "Nitrofurantoin reaches useful levels only in urine and is used for uncomplicated cystitis; it does not penetrate the epididymis in a tissue-invasive infection."
+   "Chlamydia trachomatis": "Chlamydia is the usual cause in sexually active men younger than 35. This man is older, has had catheter instrumentation and tested negative.",
+   "Neisseria gonorrhoeae": "Gonorrhea also causes epididymitis in younger sexually active men, usually with a urethral discharge. His amplification test is negative.",
+   "Mycobacterium tuberculosis": "Tuberculosis causes a slow, chronic granulomatous disease of the epididymis and testis. It does not cause 2 days of fever and acute pain after catheter removal.",
+   "Treponema pallidum": "Syphilis is not a usual cause of acute epididymitis. Nothing in this history suggests it, and the picture fits a urinary infection spreading upward."
   },
   "et": [
    [
     "Option",
-    "Organisms covered",
-    "Typical use"
+    "Usual patient",
+    "Clue in this history"
    ],
    [
     [
-     "Ceftriaxone plus doxycycline",
-     "Gonorrhea and chlamydia",
-     "Epididymitis in men under 35"
+     "Chlamydia trachomatis",
+     "Sexually active man under 35",
+     "Test negative; the man is 68"
     ],
     [
-     "Penicillin G benzathine",
+     "Neisseria gonorrhoeae",
+     "Sexually active man under 35",
+     "Test negative; no urethral discharge"
+    ],
+    [
+     "Escherichia coli",
+     "Older man or after a catheter",
+     "Pyuria after catheter removal; BPH"
+    ],
+    [
+     "Mycobacterium tuberculosis",
+     "Rare; slow granulomatous disease",
+     "Acute fever after instrumentation"
+    ],
+    [
      "Treponema pallidum",
-     "Syphilis"
-    ],
-    [
-     "Levofloxacin",
-     "Enteric gram-negative rods",
-     "Epididymitis in older men or after instrumentation"
-    ],
-    [
-     "Metronidazole",
-     "Anaerobes and Trichomonas",
-     "Trichomoniasis and anaerobic infection"
-    ],
-    [
-     "Nitrofurantoin",
-     "Urinary gram-negative bacteria",
-     "Uncomplicated cystitis only"
+     "Rare cause of orchitis",
+     "No syphilis findings"
     ]
    ]
   ],
-  "bl": "In older men or after instrumentation, epididymitis is usually from enteric gram-negative rods and is treated with levofloxacin."
+  "bl": "In men older than 35 or after urinary instrumentation, epididymitis is usually caused by enteric gram-negative rods such as Escherichia coli."
  },
  {
   "id": "rp20q05",
@@ -324,12 +323,12 @@
    "Renal cell carcinoma invading the left renal vein"
   ],
   "a": 4,
-  "e": "The left testicular vein drains into the left renal vein at a right angle, so a tumor growing into the renal vein blocks its outflow and the pampiniform plexus stays full even when he lies down. A new varicocele that does not collapse supine, especially with flank pain and hematuria in an older man, therefore suggests **renal cell carcinoma** invading the renal vein; the tumor can also make erythropoietin, which explains his high hemoglobin. A right-sided varicocele raises the same concern for inferior vena cava involvement. Nutcracker syndrome affects young, thin patients, and the other tumors do not block this venous route.",
+  "e": "The left testicular vein drains into the left renal vein at a right angle, so a tumor growing into the renal vein blocks its outflow and the pampiniform plexus stays full even when he lies down. A new varicocele that does not collapse when supine, especially with flank pain and hematuria in an older man, suggests **renal cell carcinoma** invading the renal vein. The tumor can also make erythropoietin, which explains his high hemoglobin. A new right-sided varicocele raises the same concern about the inferior vena cava. Nutcracker syndrome affects young, thin patients, and the other tumors do not block this venous route.",
   "w": {
-   "Nutcracker compression of the left renal vein": "Compression of the left renal vein between the superior mesenteric artery and the aorta can cause hematuria and a left varicocele, but it affects young, thin patients and does not cause erythrocytosis or a mass.",
-   "Testicular germ cell tumor": "A testicular germ cell tumor is a painless firm intratesticular mass in a young man; it does not block venous return from the cord, and the testes are normal here.",
-   "Prostate adenocarcinoma": "Prostate adenocarcinoma arises in the posterior gland and spreads to bone; it presents with urinary symptoms or a hard nodule, not flank discomfort with hematuria, erythrocytosis and a nonreducing varicocele.",
-   "Urothelial carcinoma of the bladder": "Urothelial carcinoma of the bladder causes painless hematuria in smokers, but it does not obstruct the left renal vein, raise hemoglobin or produce a unilateral varicocele."
+   "Nutcracker compression of the left renal vein": "Compression of the left renal vein between the superior mesenteric artery and the aorta can cause hematuria and a left varicocele. It affects young, thin patients and does not cause a high hemoglobin or a mass.",
+   "Testicular germ cell tumor": "A testicular germ cell tumor is a painless firm mass inside the testis in a young man. It does not block venous return from the cord, and his testes are normal.",
+   "Prostate adenocarcinoma": "Prostate adenocarcinoma arises in the posterior gland and spreads to bone. It causes urinary symptoms or a hard nodule, not flank discomfort with hematuria, a high hemoglobin and a varicocele that does not empty.",
+   "Urothelial carcinoma of the bladder": "Urothelial carcinoma of the bladder causes painless hematuria in smokers. It does not block the left renal vein, raise hemoglobin or cause a varicocele."
   },
   "et": [
    [
@@ -398,12 +397,12 @@
    "Hydrocele"
   ],
   "a": 3,
-  "e": "A **spermatocele**, or epididymal cyst, is a sperm-filled cyst of the epididymis that sits above and behind the testis and can be separated from it by palpation. It contains clear fluid, so it transilluminates. A **hydrocele** also glows but surrounds the testis, so the testis cannot be felt apart from it. A varicocele is a bag of worms that does not transilluminate, a hematocele is blood that stays dark, and a germ cell tumor is solid, firm and inseparable from the testis. Spermatoceles are benign and are removed only if they cause symptoms.",
+  "e": "A **spermatocele**, or epididymal cyst, is a sperm-filled cyst of the epididymis. It sits above and behind the testis and can be felt apart from it. It holds clear fluid, so it transilluminates. A **hydrocele** also glows but surrounds the testis, so the testis cannot be felt separately. A varicocele is a bag of worms that does not transilluminate. A hematocele is blood and stays dark. A germ cell tumor is solid, firm and inseparable from the testis. Spermatoceles are benign.",
   "w": {
-   "Varicocele": "A varicocele is a bag of worms of dilated pampiniform veins that fills on standing and does not transilluminate because blood blocks the light; here there are no dilated veins and the cyst glows.",
-   "Hematocele": "A hematocele is blood in the tunica vaginalis after trauma and stays dark; this man has no injury, and his mass transilluminates.",
-   "Germ cell tumor": "A germ cell tumor is a firm, solid intratesticular mass that cannot be separated from the testis and does not transilluminate.",
-   "Hydrocele": "A hydrocele also transilluminates but surrounds the testis, which cannot be felt separately; this cyst lies above and behind the testis and can be separated from it."
+   "Varicocele": "A varicocele is a bag of worms of dilated pampiniform veins that fills on standing and does not transilluminate. Here there are no dilated veins, and the cyst glows.",
+   "Hematocele": "A hematocele is blood in the tunica vaginalis after trauma and stays dark. This man has no injury, and his mass transilluminates.",
+   "Germ cell tumor": "A germ cell tumor is a firm, solid mass inside the testis that cannot be separated from it and does not transilluminate.",
+   "Hydrocele": "A hydrocele also transilluminates but surrounds the testis, which cannot be felt separately. This cyst lies above and behind the testis and can be separated from it."
   },
   "et": [
    [
@@ -480,12 +479,12 @@
    "Teratoma"
   ],
   "a": 2,
-  "e": "A **yolk sac tumor** is the most common testicular tumor in boys younger than 3. It secretes alpha-fetoprotein and forms **Schiller-Duval bodies**, glomerulus-like structures with a central vessel ringed by tumor cells. Prepubertal yolk sac tumors have a very good prognosis. Seminoma never makes AFP and occurs in adult men, embryonal carcinoma is a hemorrhagic tumor of young adults, choriocarcinoma raises hCG rather than AFP, and teratoma shows tissues from all three germ layers.",
+  "e": "A **yolk sac tumor** is the most common testicular tumor in boys younger than 3. It secretes alpha-fetoprotein and forms **Schiller-Duval bodies**, glomerulus-like structures with a central vessel ringed by tumor cells. Prepubertal yolk sac tumors have a very good prognosis. Seminoma never makes AFP and occurs in adult men. Embryonal carcinoma is a hemorrhagic tumor of young adults. Choriocarcinoma raises hCG rather than AFP, and teratoma shows tissues from all three germ layers.",
   "w": {
-   "Seminoma": "Seminoma occurs in men in their 30s and 40s and never makes AFP; a markedly elevated AFP in a toddler excludes it.",
-   "Embryonal carcinoma": "Embryonal carcinoma is a hemorrhagic, necrotic tumor of young adults made of pleomorphic primitive cells, and it does not form glomerulus-like structures.",
-   "Choriocarcinoma": "Choriocarcinoma secretes very high hCG, not AFP, and consists of trophoblastic cells; this boy's hCG is normal.",
-   "Teratoma": "Teratomas contain mature or immature tissues from all three germ layers, such as cartilage, skin and neural tissue, and would not show glomerulus-like structures with a high AFP."
+   "Seminoma": "Seminoma occurs in men in their 30s and 40s and never makes AFP. A markedly elevated AFP in a toddler excludes it.",
+   "Embryonal carcinoma": "Embryonal carcinoma is a hemorrhagic, necrotic tumor of young adults made of pleomorphic primitive cells. It does not form glomerulus-like structures.",
+   "Choriocarcinoma": "Choriocarcinoma secretes very high hCG, not AFP, and consists of trophoblastic cells. This boy's hCG is normal.",
+   "Teratoma": "Teratomas contain mature or immature tissues from all three germ layers, such as cartilage, skin and neural tissue. They would not show glomerulus-like structures with a high AFP."
   },
   "et": [
    [
@@ -553,7 +552,7 @@
    "HP-MALE.18",
    "MDR-REVIEW.2"
   ],
-  "s": "A 34-year-old man undergoes radical inguinal orchiectomy for a painless left testicular mass. Histology shows sheets of large cells with clear cytoplasm and distinct borders, separated by fibrous septa containing lymphocytes. No other tumor elements are found on extensive sampling. Preoperative serum studies show an alpha-fetoprotein concentration of 420 ng/mL (normal less than 10), hCG of 30 mIU/mL (normal less than 5) and a mildly elevated lactate dehydrogenase.",
+  "s": "A 34-year-old man undergoes radical inguinal orchiectomy for a painless left testicular mass. Histology shows sheets of large cells with clear cytoplasm and distinct borders, separated by fibrous septa containing lymphocytes. No other tumor elements are found on extensive sampling. Preoperative studies show a markedly elevated alpha-fetoprotein, a mildly elevated hCG and a mildly elevated lactate dehydrogenase.",
   "l": "Which interpretation of these results is most appropriate?",
   "o": [
    "A nonseminomatous component is present despite the histology",
@@ -563,12 +562,12 @@
    "Syncytiotrophoblast cells in the tumor explain both markers"
   ],
   "a": 0,
-  "e": "Pure **seminoma** never makes AFP, because its cells lack yolk sac differentiation. A raised AFP therefore means that a nonseminomatous element, usually yolk sac tumor, is present even if sampling missed it, and the patient is staged and treated as having a **nonseminomatous germ cell tumor**. A mild hCG rise is compatible with seminoma, since scattered syncytiotrophoblast cells make small amounts, and LDH reflects tumor bulk rather than tumor type. The distinction matters because seminoma is highly radiosensitive, whereas nonseminomatous tumors are treated mainly with chemotherapy and surgery.",
+  "e": "Pure **seminoma** never makes AFP, because its cells lack yolk sac differentiation. A raised AFP therefore means that a nonseminomatous element, usually yolk sac tumor, is present even if sampling missed it, and the tumor is treated as a **nonseminomatous germ cell tumor**. A mild hCG rise is compatible with seminoma, since scattered syncytiotrophoblast cells make small amounts. LDH reflects tumor bulk, not tumor type.",
   "w": {
    "The mildly raised hCG alone excludes a pure seminoma": "Scattered syncytiotrophoblast cells in some seminomas release small amounts of hCG, so a mild rise is compatible with pure seminoma and does not exclude it.",
-   "A raised AFP is a usual finding in classic pure seminoma": "Pure seminoma never secretes AFP, because its cells lack yolk sac differentiation, so an elevated AFP always signals another germ cell element.",
-   "The raised LDH proves widespread metastatic disease": "LDH reflects tumor bulk and helps with staging in any germ cell tumor, but it is nonspecific and does not by itself prove metastasis.",
-   "Syncytiotrophoblast cells in the tumor explain both markers": "Syncytiotrophoblast cells in seminoma can explain a mild hCG rise, but they do not secrete AFP, so they cannot account for this man's markedly elevated AFP."
+   "A raised AFP is a usual finding in classic pure seminoma": "Pure seminoma never secretes AFP, because its cells lack yolk sac differentiation. An elevated AFP always signals another germ cell element.",
+   "The raised LDH proves widespread metastatic disease": "LDH reflects tumor bulk and helps with prognosis in any germ cell tumor, but it is nonspecific and does not by itself prove metastasis.",
+   "Syncytiotrophoblast cells in the tumor explain both markers": "Syncytiotrophoblast cells in seminoma can explain a mild hCG rise, but they do not make AFP, so they cannot account for this man's markedly elevated AFP."
   },
   "et": [
    [
@@ -637,12 +636,12 @@
    "Sertoli cell tumor"
   ],
   "a": 1,
-  "e": "A golden-brown nodule of polygonal eosinophilic cells with rod-shaped **Reinke crystals** is a **Leydig cell tumor**, a sex cord-stromal tumor. It makes androgens and estrogens, so boys develop precocious puberty and adults develop gynecomastia, with suppressed LH and normal hCG and AFP. Choriocarcinoma can also cause gynecomastia, but through very high hCG, and it is hemorrhagic and made of trophoblastic cells. Seminoma and embryonal carcinoma are germ cell tumors that do not secrete steroids, and Sertoli cell tumors are usually hormonally silent.",
+  "e": "A golden-brown nodule of polygonal eosinophilic cells with rod-shaped **Reinke crystals** is a **Leydig cell tumor**, a sex cord-stromal tumor. It makes androgens and estrogens, so boys develop precocious puberty and adults develop gynecomastia, with suppressed LH and normal hCG and AFP. Choriocarcinoma can also cause gynecomastia, but through very high hCG, and it is hemorrhagic and made of trophoblastic cells. Seminoma and embryonal carcinoma are germ cell tumors that do not secrete steroids. Sertoli cell tumors are usually hormonally silent.",
   "w": {
-   "Embryonal carcinoma": "Embryonal carcinoma is a hemorrhagic, necrotic mass of primitive pleomorphic cells that may raise AFP or hCG; it makes no steroid hormones and has no crystalloids.",
-   "Seminoma": "Seminoma is a pale gray-white mass of fried-egg cells with lymphocytes in fibrous septa; it does not secrete sex steroids.",
-   "Choriocarcinoma": "Choriocarcinoma also causes gynecomastia, through very high hCG, but hCG is normal here and the tumor would be hemorrhagic with trophoblastic cells and early lung metastases.",
-   "Sertoli cell tumor": "Sertoli cell tumors are usually hormonally silent and lack Reinke crystals; a golden-brown nodule with rod-shaped crystalloids is a Leydig cell tumor."
+   "Embryonal carcinoma": "Embryonal carcinoma is a hemorrhagic, necrotic mass of primitive pleomorphic cells that may raise AFP or hCG. It makes no steroid hormones and has no crystalloids.",
+   "Seminoma": "Seminoma is a pale gray-white mass of fried-egg cells with lymphocytes in fibrous septa. It does not secrete sex steroids.",
+   "Choriocarcinoma": "Choriocarcinoma also causes gynecomastia, through very high hCG, but hCG is normal here. The tumor would be hemorrhagic with trophoblastic cells and early lung metastases.",
+   "Sertoli cell tumor": "Sertoli cell tumors are usually hormonally silent and lack Reinke crystals. A golden-brown nodule with rod-shaped crystalloids is a Leydig cell tumor."
   },
   "et": [
    [
@@ -720,12 +719,12 @@
    "Leydig cell hyperplasia"
   ],
   "a": 3,
-  "e": "Most testicular germ cell tumors, including seminoma, arise from **germ cell neoplasia in situ** (GCNIS), atypical large germ cells with clear cytoplasm that sit inside the seminiferous tubules next to the invasive tumor. Cryptorchidism reflects testicular dysgenesis, so the risk of germ cell tumor stays raised in the repaired testis and in the other testis; orchiopexy between 6 and 18 months protects fertility and allows examination but does not remove it. An undescended testis also shows tubular atrophy with a thickened basement membrane and loss of spermatogonia, but that explains infertility, not cancer. Sertoli cell-only tubules, maturation arrest and Leydig cell hyperplasia are not neoplastic precursors.",
+  "e": "Most testicular germ cell tumors, including seminoma, arise from **germ cell neoplasia in situ** (GCNIS): atypical large germ cells with clear cytoplasm that sit inside the seminiferous tubules next to the invasive tumor. Cryptorchidism reflects abnormal development of the testis, so the risk of germ cell tumor stays raised in the repaired testis and in the other testis. Orchiopexy makes the testis easier to examine but does not remove the risk. An undescended testis also shows tubular atrophy with a thickened basement membrane, but that explains infertility, not cancer. Sertoli cell-only tubules, maturation arrest and Leydig cell hyperplasia are not neoplastic precursors.",
   "w": {
-   "Sertoli cell-only tubules": "Sertoli cell-only tubules lack germ cells entirely and reflect germ cell aplasia, which causes infertility with a high FSH but is not a malignant precursor; the cells here are atypical germ cells.",
-   "Atrophic tubules with a thickened basement membrane": "Thickened basement membranes and loss of spermatogonia are typical of an undescended testis and explain infertility, but they are degenerative changes, not the neoplastic precursor.",
-   "Maturation arrest at the primary spermatocyte stage": "Arrest at the primary spermatocyte stage shows many early germ cells but no later forms and causes azoospermia; it is a functional block, not an atypical intratubular proliferation.",
-   "Leydig cell hyperplasia": "Leydig cells often look prominent in an atrophic cryptorchid testis, but they sit in the interstitium and are not the atypical intratubular germ cells described here."
+   "Sertoli cell-only tubules": "Sertoli cell-only tubules have no germ cells at all and cause infertility with a high FSH. They are not a malignant precursor, and the cells here are atypical germ cells.",
+   "Atrophic tubules with a thickened basement membrane": "Thickened basement membranes and loss of spermatogonia are typical of an undescended testis and explain infertility. They are degenerative changes, not the neoplastic precursor.",
+   "Maturation arrest at the primary spermatocyte stage": "Arrest at the primary spermatocyte stage shows many early germ cells but no later forms and causes azoospermia. It is a functional block, not an atypical proliferation inside the tubules.",
+   "Leydig cell hyperplasia": "Leydig cells often look prominent in an atrophic undescended testis, but they sit in the interstitium. They are not the atypical intratubular germ cells described here."
   },
   "et": [
    [
@@ -788,7 +787,7 @@
    "PATHPHARM-MALE.7",
    "MDR-REVIEW.1"
   ],
-  "s": "A 27-year-old man has a 3-week history of a painless, firm right testicular mass. Ultrasonography shows a 3-cm solid hypoechoic intratesticular lesion with no hydrocele. He is afebrile and has no urinary symptoms. Blood has been drawn for AFP, hCG and LDH. He has no children and hopes to have them. His surgeon plans definitive diagnosis and treatment.",
+  "s": "A 27-year-old man has a 3-week history of a painless, firm right testicular mass. Ultrasonography shows a 3-cm solid hypoechoic intratesticular lesion with no hydrocele. He is afebrile and has no urinary symptoms. Blood has been drawn for AFP, hCG and LDH. His surgeon plans definitive diagnosis and treatment.",
   "l": "Which approach is most appropriate?",
   "o": [
    "Transscrotal needle biopsy of the testicular mass",
@@ -798,12 +797,12 @@
    "Radical inguinal orchiectomy with high cord ligation"
   ],
   "a": 4,
-  "e": "A solid intratesticular mass in a young man is a germ cell tumor until proven otherwise. The testis develops near the kidney, so its lymph drains to **para-aortic nodes**, whereas scrotal skin drains to the superficial inguinal nodes. Entering the scrotum could spill tumor into the scrotal wall and open a second nodal route, so the testis and cord are removed through the groin by **radical inguinal orchiectomy** with high ligation of the cord. Markers are drawn first, and sperm banking is offered before treatment. Biopsy, scrotal surgery, observation and antibiotics would delay or compromise cure.",
+  "e": "A solid intratesticular mass in a young man is a germ cell tumor until proven otherwise. The testis develops near the kidney, so its lymph drains to **para-aortic nodes**, whereas scrotal skin drains to the superficial inguinal nodes. Entering the scrotum could spill tumor into the scrotal wall and open a second nodal route. So the testis and cord are removed through the groin by **radical inguinal orchiectomy**, with high tying off of the cord. Markers are drawn first. Biopsy, scrotal surgery, observation and antibiotics would delay or compromise cure.",
   "w": {
-   "Transscrotal needle biopsy of the testicular mass": "Violating the scrotal wall can seed tumor into scrotal tissue and open lymphatics to the inguinal nodes, creating a second drainage route that complicates staging, so biopsy through the scrotum is avoided.",
-   "Scrotal orchiectomy with preservation of the cord": "Operating through the scrotum carries the same risk as a transscrotal biopsy, and leaving the cord behind leaves tumor-bearing lymphatics and vessels in place.",
-   "Observation with repeat ultrasonography in 6 weeks": "Waiting 6 weeks delays treatment of a presumed germ cell tumor, which is highly curable when treated early; a solid intratesticular mass is not expected to resolve.",
-   "Empiric antibiotics for presumed epididymo-orchitis": "Antibiotics treat epididymo-orchitis, which is painful and gradual with inflammation and increased flow; this painless solid mass is cancer until proven otherwise."
+   "Transscrotal needle biopsy of the testicular mass": "Cutting through the scrotal wall can seed tumor into scrotal tissue and open lymph routes to the inguinal nodes. That creates a second drainage route that complicates staging, so scrotal biopsy is avoided.",
+   "Scrotal orchiectomy with preservation of the cord": "Operating through the scrotum carries the same risk as a scrotal biopsy, and leaving the cord behind leaves tumor-bearing lymphatics and vessels in place.",
+   "Observation with repeat ultrasonography in 6 weeks": "Waiting 6 weeks delays treatment of a presumed germ cell tumor, which is highly curable when treated early. A solid intratesticular mass is not expected to go away.",
+   "Empiric antibiotics for presumed epididymo-orchitis": "Antibiotics treat epididymo-orchitis, which is painful and gradual with inflammation and increased flow. This painless solid mass is cancer until proven otherwise."
   },
   "et": [
    [
@@ -873,12 +872,12 @@
    "Heat injury from loss of pampiniform cooling"
   ],
   "a": 0,
-  "e": "Mumps is the classic cause of viral **orchitis**, inflaming the testis in roughly 20 to 30 percent of males infected after puberty, usually about a week after parotitis. The inflamed testis swells inside the tough, inelastic **tunica albuginea**, so pressure rises and compresses the seminiferous tubules and their blood supply, causing pressure necrosis and atrophy. Damage to the blood-testis barrier adds an immune attack, and bilateral disease can cause infertility. The tubules suffer more than the Leydig cells, the process is sterile rather than bacterial, and torsion would start abruptly with an absent cremasteric reflex.",
+  "e": "Mumps is the classic cause of viral **orchitis**, inflaming the testis in roughly 20 to 30 percent of males infected after puberty, usually about a week after parotitis. The inflamed testis swells inside the tough, inelastic **tunica albuginea**, so pressure rises and compresses the seminiferous tubules and their blood supply. This causes pressure necrosis and atrophy. Damage to the blood-testis barrier adds an immune attack, and bilateral disease can cause infertility. The tubules suffer more than the Leydig cells, the process is sterile rather than bacterial, and torsion would start abruptly with an absent cremasteric reflex.",
   "w": {
-   "Direct viral destruction of Leydig cells": "Mumps orchitis damages the tubules more than the interstitium; Leydig cells are relatively spared, so sperm production is lost more often than androgen production.",
-   "Bacterial abscess formation within the epididymis": "Mumps is viral and the orchitis is sterile inflammation with edema and lymphocytes; the epididymis is not the site of an abscess here, and the urinalysis shows no pyuria.",
-   "Venous obstruction from torsion of the spermatic cord": "Torsion begins abruptly in an adolescent with an absent cremasteric reflex; this man has a preceding viral illness with parotitis, redness and a gradual course.",
-   "Heat injury from loss of pampiniform cooling": "The pampiniform plexus continues to cool arterial blood in orchitis; the damage comes from inflammation and trapped swelling, not from loss of heat exchange."
+   "Direct viral destruction of Leydig cells": "Mumps orchitis damages the tubules more than the interstitium. Leydig cells are relatively spared, so sperm production is lost more often than androgen production.",
+   "Bacterial abscess formation within the epididymis": "Mumps is viral, and the orchitis is sterile inflammation. The urinalysis shows no pus, and there is no abscess in the epididymis.",
+   "Venous obstruction from torsion of the spermatic cord": "Torsion begins abruptly in an adolescent with an absent cremasteric reflex. This man had a viral illness with parotitis first and a gradual course.",
+   "Heat injury from loss of pampiniform cooling": "The pampiniform plexus keeps cooling arterial blood in orchitis. The damage comes from inflammation and swelling trapped in the tough capsule, not from loss of heat exchange."
   },
   "et": [
    [
@@ -941,12 +940,12 @@
    "Choriocarcinoma"
   ],
   "a": 4,
-  "e": "**Choriocarcinoma** is made of syncytiotrophoblast and cytotrophoblast and secretes very high levels of hCG. hCG resembles TSH enough to stimulate the TSH receptor weakly, causing hyperthyroidism with suppressed TSH, and its stimulation of Leydig cells to make estrogen causes gynecomastia. The tumor often has a small primary and spreads early through the blood to the lungs, which explains the hemoptysis and nodules. Seminoma raises hCG only mildly, yolk sac tumor makes AFP, embryonal carcinoma is hemorrhagic with variable markers, and Leydig cell tumors leave hCG normal.",
+  "e": "**Choriocarcinoma** is made of syncytiotrophoblast and cytotrophoblast and secretes very high levels of hCG. hCG resembles TSH enough to stimulate the TSH receptor weakly, causing hyperthyroidism with suppressed TSH. hCG also stimulates Leydig cells to make estrogen, which causes gynecomastia. The tumor often has a small primary and spreads early through the blood to the lungs, which explains the hemoptysis and nodules. Seminoma raises hCG only mildly, yolk sac tumor makes AFP, embryonal carcinoma is hemorrhagic with variable markers, and Leydig cell tumors leave hCG normal.",
   "w": {
-   "Embryonal carcinoma": "Embryonal carcinoma may raise hCG or AFP modestly, but it is a hemorrhagic tumor of primitive cells and does not usually reach hCG levels high enough to cause thyrotoxicosis with early lung metastases.",
-   "Yolk sac tumor": "Yolk sac tumor secretes AFP and occurs mainly in young boys; it does not cause extreme hCG elevation.",
-   "Seminoma": "Seminoma can raise hCG only mildly through scattered syncytiotrophoblast cells, and it spreads mainly through lymphatics; extreme hCG with early lung metastases is not its pattern.",
-   "Leydig cell tumor": "Leydig cell tumors cause gynecomastia through estrogen excess, but hCG and AFP stay normal, and hyperthyroidism and lung metastases would not be expected."
+   "Embryonal carcinoma": "Embryonal carcinoma may raise hCG or AFP modestly, but it is a hemorrhagic tumor of primitive cells. It does not usually reach hCG levels high enough to cause thyrotoxicosis with early lung metastases.",
+   "Yolk sac tumor": "Yolk sac tumor secretes AFP and occurs mainly in young boys. It does not cause extreme hCG elevation.",
+   "Seminoma": "Seminoma can raise hCG only mildly, through scattered syncytiotrophoblast cells, and it spreads mainly through lymphatics. Extreme hCG with early lung metastases is not its pattern.",
+   "Leydig cell tumor": "Leydig cell tumors cause gynecomastia through estrogen excess, but hCG and AFP stay normal. Hyperthyroidism and lung metastases would not be expected."
   },
   "et": [
    [
@@ -1017,12 +1016,12 @@
    "Yolk sac tumor"
   ],
   "a": 2,
-  "e": "In men older than 60, the most common testicular mass is **lymphoma**, usually diffuse large B-cell lymphoma, and it is often bilateral. It causes painless diffuse enlargement, and constitutional symptoms such as night sweats and weight loss fit lymphoma. Germ cell tumors peak in younger men, produce AFP or hCG in several types and are usually unilateral, so normal markers and bilateral enlargement in a 72-year-old shift the diagnosis. Leydig cell tumors secrete hormones and form discrete nodules.",
+  "e": "In men older than 60, the most common testicular mass is **lymphoma**, usually diffuse large B-cell lymphoma, and it is often bilateral. It causes painless diffuse enlargement, and night sweats and weight loss fit lymphoma. Germ cell tumors peak in younger men, often raise AFP or hCG and are usually unilateral, so normal markers and bilateral enlargement in a 72-year-old point away from them. Leydig cell tumors secrete hormones and form discrete nodules.",
   "w": {
-   "Seminoma": "Seminoma is usually a unilateral tumor of men in their 30s and 40s; bilateral involvement, age 72 and night sweats are not its pattern.",
-   "Leydig cell tumor": "Leydig cell tumors are small unilateral nodules that secrete hormones, causing gynecomastia in adults; this man has bilateral diffuse enlargement and no hormonal features.",
-   "Embryonal carcinoma": "Embryonal carcinoma occurs in men in their 20s and 30s as a hemorrhagic mass and often raises AFP or hCG, neither of which fits.",
-   "Yolk sac tumor": "Yolk sac tumor affects boys under 3 and makes AFP; it would not appear in a 72-year-old with a normal AFP."
+   "Seminoma": "Seminoma is usually a unilateral tumor of men in their 30s and 40s. Bilateral involvement, age 72 and night sweats are not its pattern.",
+   "Leydig cell tumor": "Leydig cell tumors are small unilateral nodules that secrete hormones and cause gynecomastia in adults. This man has bilateral diffuse enlargement and no hormonal features.",
+   "Embryonal carcinoma": "Embryonal carcinoma occurs in men in their 20s and 30s as a hemorrhagic mass and often raises AFP or hCG. Neither fits here.",
+   "Yolk sac tumor": "Yolk sac tumor affects boys under 3 and makes AFP. It would not appear in a 72-year-old with a normal AFP."
   },
   "et": [
    [
@@ -1099,12 +1098,12 @@
    "Venous thrombosis develops first as infection spreads along the cord"
   ],
   "a": 1,
-  "e": "In **testicular torsion**, the twisted spermatic cord compresses the thin-walled, low-pressure veins before the thicker, higher-pressure arteries. Blood therefore still enters the testis but cannot leave, so the organ becomes engorged and dark, and prolonged venous congestion raises tissue pressure until arterial flow fails and the testis undergoes **hemorrhagic infarction** rather than a pale one. Salvage is high within 6 hours and low after 24. An early arterial block would give a pale infarct, simultaneous occlusion is not the usual sequence, and lymphatic obstruction or infection does not explain this picture.",
+  "e": "In **testicular torsion**, the twisted spermatic cord compresses the thin-walled, low-pressure veins before the thicker, higher-pressure arteries. Blood still enters the testis but cannot leave, so the organ becomes engorged and dark. Prolonged venous congestion raises tissue pressure until arterial flow fails, and the testis undergoes **hemorrhagic infarction** rather than a pale one. Salvage is high within about 6 hours and falls sharply after that. An early arterial block would give a pale infarct. Simultaneous blockage is not the usual sequence, and lymphatic obstruction or infection does not explain this picture.",
   "w": {
-   "Thick-walled arteries close first, so the testis becomes pale and ischemic": "Arteries have thick walls and high pressure, so they resist compression longer than veins; closing them first would give a pale, ischemic testis rather than the dark, congested one seen here.",
-   "Veins and arteries close together, so a pale infarct forms at once": "Simultaneous occlusion would starve the tissue of blood without congestion, producing a pale infarct, whereas this testis is engorged with blood and hemorrhagic.",
-   "Lymphatics close first, so edema develops without infarction": "Lymphatic blockage causes edema, but it cannot explain hemorrhage and coagulative necrosis of the tubules, which require venous congestion and then loss of arterial inflow.",
-   "Venous thrombosis develops first as infection spreads along the cord": "Septic venous thrombosis would follow an infection with fever and pyuria; this boy had sudden pain with a twisted cord, and detorsion revealed the mechanical cause."
+   "Thick-walled arteries close first, so the testis becomes pale and ischemic": "Arteries have thick walls and high pressure, so they resist compression longer than veins. Closing them first would give a pale, ischemic testis, not the dark, congested one seen here.",
+   "Veins and arteries close together, so a pale infarct forms at once": "Simultaneous blockage would starve the tissue of blood without congestion and produce a pale infarct. This testis is engorged with blood and hemorrhagic.",
+   "Lymphatics close first, so edema develops without infarction": "Lymphatic blockage causes edema but cannot explain hemorrhage and coagulative necrosis of the tubules, which need venous congestion and then loss of arterial inflow.",
+   "Venous thrombosis develops first as infection spreads along the cord": "Septic venous thrombosis would follow an infection with fever and pyuria. This boy had sudden pain with a twisted cord, and detorsion showed the mechanical cause."
   },
   "et": [
    [

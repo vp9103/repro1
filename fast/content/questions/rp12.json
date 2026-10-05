@@ -22,12 +22,12 @@
    "Chlamydia trachomatis"
   ],
   "a": 0,
-  "e": "The thin gray discharge, pH above 4.5, positive whiff test and clue cells meet all four Amsel criteria for bacterial vaginosis, in which **Gardnerella vaginalis** and other anaerobes replace the protective lactobacilli. Anaerobic amines cause the fishy odor, and the loss of lactic acid raises the pH. Trichomonas vaginalis also raises the pH but shows motile flagellated organisms and a frothy discharge. Candida albicans leaves the pH normal. Gonorrhea and chlamydia infect the endocervical columnar epithelium and cause mucopurulent cervicitis with many neutrophils rather than clue cells.",
+  "e": "The thin gray discharge, pH above 4.5, positive whiff test and clue cells meet all four Amsel criteria for bacterial vaginosis. In this condition **Gardnerella vaginalis** and other anaerobes replace the protective lactobacilli. Anaerobic amines cause the fishy odor, and the loss of lactic acid raises the pH. Trichomonas vaginalis also raises the pH but shows motile flagellated organisms and a frothy discharge. Candida albicans leaves the pH normal. Gonorrhea and chlamydia infect the endocervix and cause mucopurulent cervicitis with many neutrophils, not clue cells.",
   "w": {
-   "Trichomonas vaginalis": "Trichomoniasis raises the pH too, but it produces a frothy yellow-green discharge, a strawberry cervix and motile pear-shaped protozoa on the wet mount, with many neutrophils.",
-   "Candida albicans": "Yeast infection leaves the vaginal pH at 4.5 or below and shows budding yeast and pseudohyphae on a KOH prep; itching and a curdlike discharge dominate.",
-   "Neisseria gonorrhoeae": "Gonococci infect columnar cells of the endocervix, causing mucopurulent cervicitis with abundant neutrophils; they do not coat vaginal squamous cells or create a fishy whiff.",
-   "Chlamydia trachomatis": "Chlamydia is an obligate intracellular pathogen of columnar epithelium that causes cervicitis, often silent, and is diagnosed by NAAT rather than by clue cells."
+   "Trichomonas vaginalis": "Trichomoniasis raises the pH too, but it causes a frothy yellow-green discharge, a strawberry cervix and motile pear-shaped protozoa on the wet mount.",
+   "Candida albicans": "Yeast infection leaves the vaginal pH at 4.5 or below and shows budding yeast and pseudohyphae on a KOH prep. Itching and a curdlike discharge dominate.",
+   "Neisseria gonorrhoeae": "Gonococci infect the columnar cells of the endocervix and cause mucopurulent cervicitis with many neutrophils. They do not coat vaginal squamous cells or create a fishy whiff.",
+   "Chlamydia trachomatis": "Chlamydia is an obligate intracellular pathogen of columnar epithelium that causes cervicitis, often silent. It is diagnosed by NAAT, not by clue cells."
   },
   "et": [
    [
@@ -102,12 +102,12 @@
    "Intramuscular ceftriaxone for her and her partners"
   ],
   "a": 2,
-  "e": "Motile flagellated protozoa, a frothy yellow-green discharge, a strawberry cervix and a pH above 4.5 mean trichomoniasis. It is sexually transmitted, so the plan is **oral metronidazole for her and her partners**; treating her alone invites reinfection from an untreated partner, and she should be retested within 3 months. Metronidazole is reduced inside the anaerobic protozoan to DNA-damaging radicals. Fluconazole treats Candida, intravaginal clindamycin treats bacterial vaginosis but not trichomonads, and ceftriaxone treats gonorrhea.",
+  "e": "Motile flagellated protozoa, a frothy yellow-green discharge, a strawberry cervix and a pH above 4.5 mean trichomoniasis. It is sexually transmitted, so the plan is **oral metronidazole for her and her partners**. Treating her alone invites reinfection from an untreated partner. Metronidazole is reduced inside the protozoan to DNA-damaging radicals. Fluconazole treats Candida, intravaginal clindamycin treats bacterial vaginosis but not trichomonads, and ceftriaxone treats gonorrhea.",
   "w": {
-   "Oral metronidazole for her alone": "Metronidazole is the right drug, but trichomoniasis is sexually transmitted; an untreated partner reinfects her, so every recent partner needs treatment as well.",
-   "Oral fluconazole for her alone": "Fluconazole blocks fungal ergosterol synthesis and treats candidiasis, which has a normal pH and pseudohyphae; it has no activity against a protozoan.",
-   "Intravaginal clindamycin for her alone": "Clindamycin binds the bacterial 50S ribosome and treats bacterial vaginosis, but trichomonads are protozoa that clindamycin does not reliably clear.",
-   "Intramuscular ceftriaxone for her and her partners": "Ceftriaxone is the treatment for gonorrhea, which causes mucopurulent cervicitis with gram-negative diplococci; it does not kill Trichomonas vaginalis."
+   "Oral metronidazole for her alone": "Metronidazole is the right drug, but trichomoniasis is sexually transmitted. An untreated partner reinfects her, so every recent partner needs treatment as well.",
+   "Oral fluconazole for her alone": "Fluconazole blocks fungal ergosterol synthesis and treats candidiasis, which has a normal pH and pseudohyphae. It has no activity against a protozoan.",
+   "Intravaginal clindamycin for her alone": "Clindamycin binds the bacterial 50S ribosome and treats bacterial vaginosis. Trichomonads are protozoa that clindamycin does not reliably clear.",
+   "Intramuscular ceftriaxone for her and her partners": "Ceftriaxone treats gonorrhea, which causes mucopurulent cervicitis with gram-negative diplococci. It does not kill Trichomonas vaginalis."
   },
   "et": [
    [
@@ -149,7 +149,7 @@
     ]
    ]
   ],
-  "bl": "Trichomoniasis is sexually transmitted: treat the patient and every recent partner with metronidazole, then retest within 3 months.",
+  "bl": "Trichomoniasis is sexually transmitted, so treat the patient and every recent partner with metronidazole.",
   "ef": "rp12_vaginitis",
   "pt": {
    "hl": [
@@ -182,12 +182,12 @@
    "Inhibition of fungal beta-glucan synthesis"
   ],
   "a": 1,
-  "e": "Thick curdlike discharge, itching, a normal pH and pseudohyphae after antibiotics in a woman with diabetes mean vulvovaginal candidiasis. The drug of choice is an azole, such as a single oral dose of fluconazole, which works by **inhibition of fungal lanosterol 14-alpha-demethylase**, a cytochrome P450 enzyme, so the fungus cannot make ergosterol for its membrane. Binding ergosterol to form pores is how nystatin and amphotericin B work, not the azoles. Metronidazole (DNA-damaging radicals) and clindamycin (50S ribosome) treat bacterial vaginosis and would not help.",
+  "e": "Thick curdlike discharge, itching, a normal pH and pseudohyphae after antibiotics in a woman with diabetes mean vulvovaginal candidiasis. The drug of choice is an azole such as fluconazole, which works by **inhibition of fungal lanosterol 14-alpha-demethylase**, a cytochrome P450 enzyme. The fungus then cannot make ergosterol for its membrane. Binding ergosterol to form pores is how nystatin and amphotericin B work, not the azoles. Metronidazole (DNA-damaging radicals) and clindamycin (50S ribosome) treat bacterial vaginosis and would not help.",
   "w": {
-   "Reduction to radicals that break microbial DNA": "This is metronidazole, which anaerobes and protozoa activate; it treats bacterial vaginosis and trichomoniasis, both with a pH above 4.5, and has no antifungal activity.",
-   "Binding to the 50S bacterial ribosomal subunit": "Clindamycin works this way and treats bacterial vaginosis; like any antibacterial drug it can worsen yeast overgrowth by killing more lactobacilli.",
-   "Binding to ergosterol to form membrane pores": "Polyenes such as nystatin and amphotericin B act this way; nystatin is kept for resistant non-albicans species, and amphotericin is for systemic infection.",
-   "Inhibition of fungal beta-glucan synthesis": "Echinocandins such as caspofungin block cell wall glucan synthesis and are intravenous drugs for invasive candidiasis, not for a vaginal yeast infection."
+   "Reduction to radicals that break microbial DNA": "This is metronidazole, which anaerobes and protozoa activate. It treats bacterial vaginosis and trichomoniasis, both with a pH above 4.5, and has no antifungal activity.",
+   "Binding to the 50S bacterial ribosomal subunit": "Clindamycin works this way and treats bacterial vaginosis. Like any antibacterial drug, it can worsen yeast overgrowth by killing more lactobacilli.",
+   "Binding to ergosterol to form membrane pores": "Polyenes such as nystatin and amphotericin B act this way. They are not the usual oral treatment for a vaginal yeast infection.",
+   "Inhibition of fungal beta-glucan synthesis": "Echinocandins such as caspofungin block cell wall glucan synthesis. They are intravenous drugs for invasive candidiasis, not for a vaginal yeast infection."
   },
   "et": [
    [
@@ -255,11 +255,11 @@
    "It binds penicillin-binding proteins in the cell wall"
   ],
   "a": 3,
-  "e": "The wet mount shows both clue cells (bacterial vaginosis) and motile trichomonads (trichomoniasis), and metronidazole treats both because it is reduced to **DNA-damaging radicals** only in anaerobic organisms. The anaerobes that accompany Gardnerella and the protozoan Trichomonas both carry low-redox electron carriers, such as ferredoxin, that reduce the drug's nitro group, and the radicals fragment DNA. Aerobic human cells do little of this reduction, which gives the drug its selectivity. Clindamycin binds the 50S ribosome and treats vaginosis, but it does not reliably clear trichomonads, so it cannot explain a cure of both.",
+  "e": "The wet mount shows both clue cells (bacterial vaginosis) and motile trichomonads (trichomoniasis). Metronidazole treats both, because it is reduced to **DNA-damaging radicals** only in anaerobic organisms. Anaerobes and the protozoan Trichomonas reduce the drug's nitro group, and the radicals then break their DNA. Aerobic human cells do little of this reduction, which gives the drug its selectivity. Clindamycin binds the 50S ribosome and treats vaginosis, but it does not reliably clear trichomonads, so it cannot explain a cure of both.",
   "w": {
-   "It binds the 50S ribosomal subunit of anaerobic bacteria": "This describes clindamycin, which treats bacterial vaginosis; it lacks reliable activity against the protozoan, so it cannot explain the cure of trichomoniasis.",
-   "It inhibits ergosterol synthesis in microbial membranes": "Ergosterol synthesis is the azole target in fungal membranes; bacteria do not make sterols, and azoles are the treatment for yeast infection instead.",
-   "It inhibits DNA gyrase in gram-negative bacteria": "Fluoroquinolones inhibit DNA gyrase; they are not used for vaginosis or trichomoniasis and have no reliable activity against a protozoan.",
+   "It binds the 50S ribosomal subunit of anaerobic bacteria": "This describes clindamycin, which treats bacterial vaginosis. It lacks reliable activity against the protozoan, so it cannot explain the cure of trichomoniasis.",
+   "It inhibits ergosterol synthesis in microbial membranes": "Ergosterol synthesis is the azole target in fungal membranes. Bacteria do not make sterols, and azoles treat yeast infection instead.",
+   "It inhibits DNA gyrase in gram-negative bacteria": "Fluoroquinolones inhibit DNA gyrase. They are not used for vaginosis or trichomoniasis and have no reliable activity against a protozoan.",
    "It binds penicillin-binding proteins in the cell wall": "Beta-lactams block cell wall cross-linking, but Trichomonas has no bacterial cell wall, and beta-lactams are not a treatment for vaginosis."
   },
   "et": [
@@ -326,12 +326,12 @@
    "Greater vestibular gland duct"
   ],
   "a": 4,
-  "e": "A tender, fluctuant mass in the posterolateral vestibule is a Bartholin abscess, caused by obstruction of the **greater vestibular gland duct**. These paired mucus-secreting glands sit at about 4 and 8 o'clock and lubricate the introitus; trapped mucus forms a cyst, and infection turns it into an abscess that is drained with a Word catheter or marsupialization. Paraurethral (Skene) glands lie beside the urethral meatus and cause urethral symptoms, and a mesonephric (Gartner) duct remnant forms a cyst in the lateral vaginal wall.",
+  "e": "A tender, fluctuant mass in the posterolateral vestibule is a Bartholin abscess, caused by obstruction of the **greater vestibular gland duct**. These paired mucus-secreting glands sit at about 4 and 8 o'clock and lubricate the introitus. Trapped mucus forms a cyst, and infection turns it into an abscess. Paraurethral (Skene) glands lie beside the urethral meatus and cause urethral symptoms, and a mesonephric (Gartner) duct remnant forms a cyst in the lateral vaginal wall.",
   "w": {
-   "Paraurethral gland duct": "Skene glands open beside the urethral meatus in the anterior vestibule; their infection causes dysuria and urethral discharge, not a posterolateral mass.",
-   "Mesonephric duct remnant": "A Gartner duct cyst comes from this embryonic remnant and lies within the lateral vaginal wall; it is usually painless and found incidentally.",
-   "Sebaceous gland of the labium majus": "Sebaceous cysts form small, firm, superficial nodules in hair-bearing labial skin; they rarely create a large fluctuant swelling at the introitus.",
-   "Apocrine sweat gland of the mons": "Apocrine glands in hair-bearing skin are the site of hidradenitis suppurativa, which causes recurrent nodules and sinus tracts rather than one introital abscess."
+   "Paraurethral gland duct": "Skene glands open beside the urethral meatus at the front of the vestibule. A blocked duct would cause a swelling beside the urethra, not a posterolateral mass.",
+   "Mesonephric duct remnant": "A Gartner duct cyst comes from this embryonic remnant and lies within the lateral vaginal wall. It is usually painless and found incidentally.",
+   "Sebaceous gland of the labium majus": "Sebaceous cysts form small, firm, superficial nodules in the hair-bearing skin of the labia. They rarely create a large fluctuant swelling at the introitus.",
+   "Apocrine sweat gland of the mons": "Apocrine glands lie in hair-bearing skin such as the mons. They do not open at the vaginal introitus."
   },
   "et": [
    [
@@ -399,12 +399,12 @@
    "Topical imiquimod"
   ],
   "a": 1,
-  "e": "White, parchment-like skin in a figure-of-eight around the vulva and anus that spares the vagina, with homogenized dermal collagen and a band of lymphocytes, is lichen sclerosus. First-line treatment is a **high-potency topical corticosteroid** such as clobetasol, which suppresses the T-cell-mediated inflammation, relieves itching and slows scarring. Vaginal estrogen treats atrophy of the vaginal mucosa, which is normal here. Wide local excision is for invasive disease, not for the dermatosis itself, although a new ulcer or thickened area is biopsied because of the small risk of squamous cell carcinoma.",
+  "e": "White, parchment-like skin in a figure-of-eight around the vulva and anus that spares the vagina, with homogenized dermal collagen and a band of lymphocytes, is lichen sclerosus. First-line treatment is a **high-potency topical corticosteroid** such as clobetasol, which suppresses the T-cell-mediated inflammation and relieves itching. Vaginal estrogen treats atrophy of the vaginal mucosa, which is normal here. Wide local excision is for invasive disease, not for the dermatosis itself, although a new ulcer or thickened area is biopsied because of the small risk of squamous cell carcinoma.",
   "w": {
-   "Topical vaginal estrogen cream": "Estrogen reverses genitourinary atrophy of the vaginal mucosa, but lichen sclerosus is an inflammatory dermatosis of vulvar skin that estrogen does not control.",
+   "Topical vaginal estrogen cream": "Estrogen reverses atrophy of the vaginal mucosa, but lichen sclerosus is an inflammatory disease of vulvar skin that estrogen does not control.",
    "Oral fluconazole": "Fluconazole treats Candida, which causes a curdlike discharge and a red vulva with pseudohyphae on KOH, not homogenized dermal collagen on biopsy.",
-   "Wide local excision": "Excision removes invasive carcinoma or Paget disease; lichen sclerosus involves a large field and recurs, so surgery is not its treatment.",
-   "Topical imiquimod": "Imiquimod activates toll-like receptor 7 to clear HPV lesions such as condylomas; it would irritate this skin without treating the dermatosis."
+   "Wide local excision": "Excision removes invasive carcinoma or Paget disease. Lichen sclerosus involves a large field and recurs, so surgery is not its treatment.",
+   "Topical imiquimod": "Imiquimod activates toll-like receptor 7 to clear HPV lesions such as condylomas. It would irritate this skin without treating the dermatosis."
   },
   "et": [
    [
@@ -470,11 +470,11 @@
    "Extramammary Paget disease"
   ],
   "a": 3,
-  "e": "Chronic scratching in an atopic patient thickens the skin into a leathery plaque, and acanthosis, hyperkeratosis and long rete ridges without atypia define **lichen simplex chronicus**, also called squamous cell hyperplasia. It carries no cancer risk; topical steroids and stopping the itch-scratch cycle treat it. Lichen sclerosus is the opposite: a thin epidermis, lost rete ridges and homogenized dermal collagen. Differentiated VIN shows basal atypia, and Paget disease shows large pale cells in the epidermis.",
+  "e": "Chronic scratching in an atopic patient thickens the skin into a leathery plaque. Acanthosis, hyperkeratosis and long rete ridges without atypia define **lichen simplex chronicus**, also called squamous cell hyperplasia. It carries no cancer risk, and topical steroids and stopping the itch-scratch cycle treat it. Lichen sclerosus is the opposite, with a thin epidermis, lost rete ridges and homogenized dermal collagen. Differentiated VIN shows basal atypia, and Paget disease shows large pale cells in the epidermis.",
   "w": {
    "Lichen sclerosus": "Lichen sclerosus thins the epidermis, flattens the rete ridges and homogenizes the dermal collagen, producing white parchment-like skin rather than a thick plaque.",
-   "Lichen planus": "Lichen planus is erosive, with raw red patches, lacy white borders and a band of lymphocytes damaging the basal layer; it often involves the vagina and mouth.",
-   "Differentiated vulvar intraepithelial neoplasia": "Differentiated VIN shows atypical basal keratinocytes and aberrant p53 staining in an older woman with lichen sclerosus; this biopsy has no atypia.",
+   "Lichen planus": "Lichen planus is erosive, with raw red patches, lacy white borders and a band of lymphocytes damaging the basal layer. It often involves the vagina and mouth.",
+   "Differentiated vulvar intraepithelial neoplasia": "Differentiated VIN shows atypical basal keratinocytes and aberrant p53 staining in an older woman with lichen sclerosus. This biopsy has no atypia.",
    "Extramammary Paget disease": "Paget disease is a red, eczema-like plaque containing large pale PAS-positive adenocarcinoma cells in the epidermis, which this biopsy does not show."
   },
   "et": [
@@ -543,11 +543,11 @@
    "Germline mismatch repair gene mutation"
   ],
   "a": 0,
-  "e": "Long-standing lichen sclerosus (white figure-of-eight skin) followed by keratinizing carcinoma, basal-only atypia (differentiated VIN), aberrant p53 and patchy p16 is the HPV-independent road, initiated by a **somatic TP53 mutation** in chronically inflamed skin. HPV E6 also disables p53, but it degrades the normal protein, so p53 stains in a wild-type pattern while E7 drives diffuse block p16, the profile of HSIL and basaloid or warty carcinoma in younger women. HPV 6 causes benign condylomas, and mismatch repair defects cause Lynch syndrome cancers.",
+  "e": "Long-standing lichen sclerosus (white figure-of-eight skin) followed by keratinizing carcinoma, atypia confined to the basal layer (differentiated VIN), aberrant p53 and patchy p16 is the HPV-independent road. It starts with a **somatic TP53 mutation** in chronically inflamed skin. HPV E6 also disables p53, but it degrades the normal protein, so p53 stains in a wild-type pattern. E7 drives diffuse block p16, the profile of HSIL and basaloid or warty carcinoma in younger women. HPV 6 causes benign condylomas, and mismatch repair defects cause Lynch syndrome cancers.",
   "w": {
-   "Rb inactivation by high-risk HPV E7 protein": "E7 disabling Rb makes cells overproduce p16, giving diffuse block staining; this tumor shows only patchy p16, which argues against an HPV-driven pathway.",
-   "p53 degradation by high-risk HPV E6 protein": "E6 destroys normal p53, so staining looks wild-type or weak rather than aberrant; an aberrant pattern means the TP53 gene itself is mutated.",
-   "Low-risk HPV 6 infection of basal keratinocytes": "HPV 6 and 11 cause condyloma acuminatum with koilocytes; these low-risk types do not integrate into the genome or drive squamous carcinoma.",
+   "Rb inactivation by high-risk HPV E7 protein": "E7 disabling Rb makes cells overproduce p16, giving diffuse block staining. This tumor shows only patchy p16, which argues against an HPV-driven pathway.",
+   "p53 degradation by high-risk HPV E6 protein": "E6 destroys normal p53, so staining looks wild-type or weak rather than aberrant. An aberrant pattern means the TP53 gene itself is mutated.",
+   "Low-risk HPV 6 infection of basal keratinocytes": "HPV 6 and 11 cause condyloma acuminatum with koilocytes. These low-risk types do not integrate into the genome or drive squamous carcinoma.",
    "Germline mismatch repair gene mutation": "Inherited mismatch repair defects cause Lynch syndrome, with endometrial, colorectal and ovarian cancers, not keratinizing vulvar carcinoma after lichen sclerosus."
   },
   "et": [
@@ -613,7 +613,7 @@
   "obj": [
    "HP-CERVIX-VULVA.6"
   ],
-  "s": "A 69-year-old woman comes to the clinic because of vulvar itching and burning for 18 months. She has used over-the-counter hydrocortisone and two courses of a prescription steroid ointment without improvement. Examination shows a sharply demarcated, red, scaly, moist plaque with white islands covering the right labium majus. Biopsy shows large cells with abundant pale cytoplasm, singly and in nests, throughout the epidermis. The cells are PAS-positive and stain for CK7 and CEA but not for S100 or HMB-45.",
+  "s": "A 69-year-old woman comes to the clinic because of vulvar itching and burning for 18 months. She has used over-the-counter hydrocortisone and two courses of a prescription steroid ointment without improvement. Examination shows a sharply demarcated, red, scaly, moist plaque with white islands covering the right labium majus. Biopsy shows large cells with abundant pale cytoplasm, singly and in nests, throughout the epidermis. The cells are PAS-positive and keratin-positive but do not stain for S100.",
   "l": "Compared with the analogous lesion of the nipple, which feature best characterizes this condition?",
   "o": [
    "Nearly always an underlying ductal carcinoma",
@@ -623,12 +623,12 @@
    "Rapid spread to the para-aortic lymph nodes"
   ],
   "a": 2,
-  "e": "Large pale PAS-positive, CK7-positive, CEA-positive cells in the epidermis that are negative for S100 and HMB-45, in a red eczema-like plaque that fails steroids, define extramammary Paget disease, an intraepithelial adenocarcinoma. Unlike Paget disease of the nipple, which nearly always extends from an underlying ductal carcinoma, vulvar Paget disease **usually has no underlying invasive carcinoma** and arises within the epidermis itself. It is treated by wide local excision and recurs often. Negative S100 and HMB-45 stains exclude a melanocytic origin such as melanoma in situ.",
+  "e": "Large pale PAS-positive, keratin-positive cells in the epidermis that are negative for S100, in a red eczema-like plaque that fails steroids, define extramammary Paget disease, an intraepithelial adenocarcinoma. Unlike Paget disease of the nipple, which nearly always extends from an underlying ductal carcinoma, vulvar Paget disease **usually has no underlying invasive carcinoma** and arises within the epidermis itself. Negative S100 staining excludes a melanocytic origin such as melanoma in situ.",
   "w": {
-   "Nearly always an underlying ductal carcinoma": "This describes Paget disease of the nipple, where tumor cells travel up the ducts from a breast carcinoma; vulvar disease usually starts in the epidermis itself.",
-   "Origin from melanocytes of the basal layer": "Melanoma in situ can spread through the epidermis in a similar pattern, but its cells stain for S100 and HMB-45 and lack PAS-positive mucin.",
-   "Origin from HPV-infected basal keratinocytes": "High-grade squamous lesions arise from HPV-infected keratinocytes and stain for p16; these cells are glandular, with mucin and CK7, not squamous.",
-   "Rapid spread to the para-aortic lymph nodes": "The disease is usually indolent and confined to the epidermis for years; invasive vulvar tumors spread first to superficial inguinal nodes, not para-aortic nodes."
+   "Nearly always an underlying ductal carcinoma": "This describes Paget disease of the nipple, where tumor cells travel up the ducts from a breast carcinoma. Vulvar disease usually starts in the epidermis itself.",
+   "Origin from melanocytes of the basal layer": "Melanoma in situ can spread through the epidermis in a similar pattern, but its cells stain for S100 and lack PAS-positive mucin.",
+   "Origin from HPV-infected basal keratinocytes": "High-grade squamous lesions arise from HPV-infected keratinocytes and stain for p16. These cells are glandular, with mucin and keratin, not squamous.",
+   "Rapid spread to the para-aortic lymph nodes": "The disease is usually indolent and confined to the epidermis for years. Invasive vulvar tumors spread first to superficial inguinal nodes, not para-aortic nodes."
   },
   "et": [
    [
@@ -641,19 +641,19 @@
     [
      "Usually no underlying invasive carcinoma",
      "Intraepidermal glandular cells",
-     "PAS, CK7, CEA positive",
+     "PAS and keratin positive",
      "Usually absent (vulvar Paget)"
     ],
     [
      "Nearly always an underlying ductal carcinoma",
      "Ductal carcinoma cells",
-     "CK7 and often HER2 positive",
+     "Keratin positive",
      "Present (nipple Paget)"
     ],
     [
      "Origin from melanocytes of the basal layer",
      "Melanocytes",
-     "S100, HMB-45 positive",
+     "S100 positive",
      "Not applicable (melanoma)"
     ],
     [
@@ -696,12 +696,12 @@
    "Desmin"
   ],
   "a": 4,
-  "e": "A grape-like vaginal mass in a young girl, with small round blue cells in a subepithelial cambium layer and cross-striated rhabdomyoblasts, is sarcoma botryoides, the botryoid form of embryonal rhabdomyosarcoma. As a tumor of primitive skeletal muscle, it stains for **desmin**, myogenin and MyoD1. Alpha-fetoprotein marks yolk sac tumor, another vaginal tumor of infancy, which shows Schiller-Duval bodies rather than a cambium layer. Chromogranin marks neuroendocrine tumors such as neuroblastoma.",
+  "e": "A grape-like vaginal mass in a young girl, with small round blue cells in a subepithelial cambium layer and cross-striated rhabdomyoblasts, is sarcoma botryoides, the botryoid form of embryonal rhabdomyosarcoma. As a tumor of primitive skeletal muscle, it stains for **desmin** and myogenin. Alpha-fetoprotein marks yolk sac tumor, another vaginal tumor of infancy, which shows Schiller-Duval bodies rather than a cambium layer. Chromogranin marks neuroendocrine tumors such as neuroblastoma.",
   "w": {
-   "Alpha-fetoprotein": "AFP marks yolk sac tumor, which can also bleed from the vagina of an infant but shows Schiller-Duval bodies instead of rhabdomyoblasts with cross-striations.",
-   "S100": "S100 marks melanocytes, Schwann cells and Langerhans cells; a primitive skeletal muscle tumor does not express it.",
-   "Cytokeratin 7": "Cytokeratins mark epithelial tumors such as clear cell adenocarcinoma or Paget cells; this mesenchymal tumor lies beneath an intact epithelium.",
-   "Chromogranin": "Chromogranin identifies neuroendocrine cells, as in neuroblastoma, another small round blue cell tumor of childhood that forms Homer-Wright rosettes."
+   "Alpha-fetoprotein": "AFP marks yolk sac tumor, which can also bleed from the vagina of an infant but shows Schiller-Duval bodies instead of rhabdomyoblasts.",
+   "S100": "S100 marks melanocytes and Schwann cells. A primitive skeletal muscle tumor does not express it.",
+   "Cytokeratin 7": "Cytokeratins mark epithelial tumors such as clear cell adenocarcinoma. This mesenchymal tumor lies beneath an intact epithelium.",
+   "Chromogranin": "Chromogranin identifies neuroendocrine cells, as in neuroblastoma, another small round blue cell tumor of childhood."
   },
   "et": [
    [
@@ -758,7 +758,7 @@
   "obj": [
    "GYN-ONC.1"
   ],
-  "s": "A 19-year-old woman comes to the clinic because of irregular vaginal spotting for 3 months. She has never been sexually active. Her mother took a synthetic nonsteroidal estrogen during pregnancy after two previous miscarriages. Speculum examination shows red, granular patches on the upper anterior vaginal wall and a cervical collar. Biopsy of one patch shows tubulocystic glands lined by cells with clear, glycogen-rich cytoplasm and hobnail nuclei invading the stroma.",
+  "s": "A 19-year-old woman comes to the clinic because of irregular vaginal spotting for 3 months. She has never been sexually active. Her mother took a synthetic nonsteroidal estrogen during pregnancy after two previous miscarriages. Speculum examination shows red, granular patches on the upper anterior vaginal wall. Biopsy of one patch shows tubulocystic glands lined by cells with clear, glycogen-rich cytoplasm and hobnail nuclei invading the stroma.",
   "l": "Which lesion most likely preceded this tumor?",
   "o": [
    "Vaginal intraepithelial neoplasia",
@@ -768,11 +768,11 @@
    "Condyloma acuminatum"
   ],
   "a": 3,
-  "e": "In utero exposure to diethylstilbestrol (DES), the synthetic nonsteroidal estrogen once used against miscarriage, leaves paramesonephric glandular epithelium in the upper vagina, called **vaginal adenosis**, along with cervical collars and a T-shaped uterus. Adenosis is the soil for clear cell adenocarcinoma, which peaks around age 19 and shows glycogen-filled clear cells with hobnail nuclei. Vaginal intraepithelial neoplasia precedes squamous carcinoma, usually HPV related, and a Gartner duct cyst is a benign mesonephric remnant with no malignant potential.",
+  "e": "In utero exposure to diethylstilbestrol (DES), the synthetic nonsteroidal estrogen once used against miscarriage, leaves glandular Müllerian epithelium in the upper vagina, called **vaginal adenosis**. Adenosis is the soil for clear cell adenocarcinoma, which shows glycogen-filled clear cells with hobnail nuclei. Vaginal intraepithelial neoplasia precedes squamous carcinoma, usually HPV related, and a Gartner duct cyst is a benign mesonephric remnant with no malignant potential.",
   "w": {
-   "Vaginal intraepithelial neoplasia": "VAIN is an HPV-related squamous precursor that leads to squamous carcinoma, usually in older women; this tumor is glandular, with clear cells and hobnail nuclei.",
-   "Gartner duct cyst": "A Gartner duct cyst is a benign mesonephric remnant in the lateral vaginal wall; it is not linked to DES exposure or to adenocarcinoma.",
-   "Lichen sclerosus": "Lichen sclerosus affects vulvar skin, spares the vagina and leads to keratinizing squamous carcinoma in older women, not a glandular tumor in a teenager.",
+   "Vaginal intraepithelial neoplasia": "VAIN is an HPV-related squamous precursor that leads to squamous carcinoma, usually in older women. This tumor is glandular, with clear cells and hobnail nuclei.",
+   "Gartner duct cyst": "A Gartner duct cyst is a benign mesonephric remnant in the lateral vaginal wall. It is not linked to DES exposure or to adenocarcinoma.",
+   "Lichen sclerosus": "Lichen sclerosus affects vulvar skin, spares the vagina and leads to keratinizing squamous carcinoma in older women. It does not cause a glandular tumor in a teenager.",
    "Condyloma acuminatum": "Condylomas are warts from low-risk HPV 6 and 11 that do not progress to cancer, and she has never been sexually active."
   },
   "et": [
@@ -840,12 +840,12 @@
    "HPV types 45 and 52"
   ],
   "a": 1,
-  "e": "Soft cauliflower-like papules with koilocytes, squamous cells with perinuclear halos and wrinkled nuclei, are condyloma acuminatum, caused by the low-risk HPV types 6 and 11. These types keep their genome episomal and make weak E6 and E7 proteins, so condylomas are benign and do not progress to cancer. HPV types 16 and 18 cause high-grade squamous lesions and carcinoma of the vulva and cervix, and HPV types 1 and 2 cause common and plantar skin warts. The nine-valent vaccine prevents both the wart types and the main cancer types.",
+  "e": "Soft cauliflower-like papules with koilocytes, squamous cells with perinuclear halos and wrinkled nuclei, are condyloma acuminatum, caused by the low-risk HPV types 6 and 11. Condylomas are benign and do not progress to cancer. HPV types 16 and 18 cause high-grade squamous lesions and carcinoma of the vulva and cervix, and HPV types 1 and 2 cause common and plantar skin warts.",
   "w": {
-   "HPV types 16 and 18": "These high-risk types cause most cervical cancer and HPV-associated vulvar HSIL; they produce flat or pigmented dysplastic lesions rather than benign warts.",
-   "HPV types 31 and 33": "These are additional high-risk types covered by the nine-valent vaccine; they cause dysplasia and carcinoma, not typical genital warts.",
+   "HPV types 16 and 18": "These high-risk types cause most cervical cancer and HPV-associated vulvar HSIL. They produce flat or pigmented dysplastic lesions rather than benign warts.",
+   "HPV types 31 and 33": "These are other high-risk types. They cause dysplasia and carcinoma of the cervix and vulva, not typical genital warts.",
    "HPV types 1 and 2": "These cutaneous types cause plantar and common skin warts on the hands and feet, not anogenital condylomas.",
-   "HPV types 45 and 52": "These high-risk types, also in the nine-valent vaccine, are linked to cervical dysplasia and cancer rather than exophytic genital warts."
+   "HPV types 45 and 52": "These high-risk types are linked to cervical dysplasia and cancer rather than exophytic genital warts."
   },
   "et": [
    [
@@ -912,12 +912,12 @@
    "Vulvovaginal candidiasis"
   ],
   "a": 2,
-  "e": "Erosive vulvovaginal disease with lacy white borders, vaginal adhesions and white reticular streaks (Wickham striae) in the mouth is **lichen planus**, a T-cell-mediated attack on the basal keratinocytes of skin and mucosa. Unlike lichen sclerosus, which spares the nonkeratinized vagina, lichen planus involves the vagina and can scar it shut, so ultrapotent topical and intravaginal corticosteroids and sometimes dilators are used. Lichen simplex chronicus is thick itchy skin without erosions, and candidiasis produces a curdlike discharge rather than erosions and adhesions.",
+  "e": "Erosive vulvovaginal disease with lacy white borders, vaginal adhesions and white reticular streaks in the mouth is **lichen planus**, a T-cell-mediated attack on the basal keratinocytes of skin and mucosa. Unlike lichen sclerosus, which spares the nonkeratinized vagina, lichen planus involves the vagina and can scar it shut. Lichen simplex chronicus is thick itchy skin without erosions, and candidiasis produces a curdlike discharge rather than erosions and adhesions.",
   "w": {
    "Lichen sclerosus": "Lichen sclerosus makes thin white parchment-like skin in a figure-of-eight around the vulva and anus, but it spares the vagina and does not involve the mouth.",
    "Lichen simplex chronicus": "Scratching produces thick, leathery, itchy plaques in this condition, with acanthosis and no erosions, oral lesions or vaginal adhesions.",
-   "Extramammary Paget disease": "Paget disease forms a single red eczema-like plaque with large pale adenocarcinoma cells in the epidermis; it does not cause oral streaks or vaginal adhesions.",
-   "Vulvovaginal candidiasis": "Candida causes itching and a thick curdlike discharge with a normal pH and pseudohyphae; it does not scar the vagina or cause lacy oral streaks."
+   "Extramammary Paget disease": "Paget disease forms a single red eczema-like plaque with large pale adenocarcinoma cells in the epidermis. It does not cause oral streaks or vaginal adhesions.",
+   "Vulvovaginal candidiasis": "Candida causes itching and a thick curdlike discharge with a normal pH and pseudohyphae. It does not scar the vagina or cause lacy oral streaks."
   },
   "et": [
    [
@@ -931,7 +931,7 @@
      "Lichen planus",
      "Erosions with lacy white borders",
      "Yes, can scar shut",
-     "Wickham striae common"
+     "White streaks common"
     ],
     [
      "Lichen sclerosus",
@@ -959,6 +959,6 @@
     ]
    ]
   ],
-  "bl": "Erosive vulvovaginal disease that involves the vagina and mouth is lichen planus; lichen sclerosus spares the vagina."
+  "bl": "Erosive vulvovaginal disease that involves the vagina and mouth is lichen planus. Lichen sclerosus spares the vagina."
  }
 ]

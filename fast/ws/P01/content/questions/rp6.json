@@ -538,7 +538,7 @@
      "11-beta-hydroxylase",
      "Virilized",
      "No",
-     "High 11-deoxycortisol"
+     "Normal maternal estriol"
     ],
     [
      "5-alpha-reductase",
@@ -789,7 +789,7 @@
     ]
    ]
   ],
-  "bl": "A 46,XX man with testes has SRY moved onto an X chromosome; he is azoospermic because other Y genes are missing.",
+  "bl": "A 46,XX man with testes has SRY moved onto an X chromosome. He is azoospermic because other Y genes are missing.",
   "ef": "rp6_dsd",
   "pt": {
    "hl": [
@@ -821,8 +821,8 @@
   "e": "The karyotype is **genotypic sex**, fixed at fertilization. Her phenotypic sex, the body built by hormones, is female because her androgen receptors could not respond to testosterone. Gender identity is her inner sense of being a woman, which she reports. Sexual orientation describes whom she is attracted to. Neither is read from the karyotype. Gonadal sex refers to the gonads, which were testes before removal. Each layer can differ from the others, so clinicians describe them separately and ask patients about identity.",
   "w": {
    "Phenotypic sex": "Phenotypic sex is the body that hormones build, including the ducts, genitalia and breasts. Hers is female despite the 46,XY karyotype because androgen could not act.",
-   "Gender identity": "Gender identity is a person's own inner sense of gender, learned by asking; it cannot be deduced from the chromosomes.",
-   "Gonadal sex": "Gonadal sex is whether the gonads are testes or ovaries; hers were testes before gonadectomy, a separate layer from the chromosomes.",
+   "Gender identity": "Gender identity is a person's own inner sense of gender, learned by asking. It cannot be deduced from the chromosomes.",
+   "Gonadal sex": "Gonadal sex is whether the gonads are testes or ovaries. Hers were testes before gonadectomy, a separate layer from the chromosomes.",
    "Sexual orientation": "Sexual orientation describes whom a person is attracted to and is independent of karyotype, gonads, anatomy and gender identity."
   },
   "et": [
@@ -865,7 +865,7 @@
     ]
    ]
   ],
-  "bl": "The karyotype is genotypic sex; phenotypic sex is the body hormones build, and gender identity is the person's inner sense.",
+  "bl": "The karyotype is genotypic sex. Phenotypic sex is the body hormones build, and gender identity is the person's inner sense.",
   "ef": "rp6_layers",
   "pt": {
    "hl": [

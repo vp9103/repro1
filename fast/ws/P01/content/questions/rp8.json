@@ -69,7 +69,7 @@
     ]
    ]
   ],
-  "bl": "Primary oocytes wait in prophase I from fetal life until the LH surge; metaphase II is the second, shorter arrest.",
+  "bl": "Primary oocytes wait in prophase I from fetal life until the LH surge. Metaphase II is the second, shorter arrest.",
   "ef": "rp8_oocyte",
   "pt": {
    "hl": [
@@ -389,7 +389,7 @@
     ]
    ]
   ],
-  "bl": "Mid-luteal progesterone must be drawn 7 days before the next period; day 21 is too early in a 35-day cycle.",
+  "bl": "Mid-luteal progesterone must be drawn 7 days before the next period. Day 21 is too early in a 35-day cycle.",
   "ef": "rp8_curves",
   "pt": {
    "hl": [
@@ -514,7 +514,7 @@
     "Option",
     "Location",
     "Main job",
-    "Needs dynein"
+    "Needs working cilia"
    ],
    [
     [
@@ -705,7 +705,7 @@
     ]
    ]
   ],
-  "bl": "The stratum basalis regenerates the endometrium each cycle; curettage that removes it causes Asherman adhesions and amenorrhea.",
+  "bl": "The stratum basalis regenerates the endometrium each cycle. Curettage that removes it causes Asherman adhesions and amenorrhea.",
   "ef": "rp8_endometrium",
   "pt": {
    "hl": [

@@ -16,11 +16,11 @@
    "Neisseria gonorrhoeae"
   ],
   "a": 0,
-  "x": "Gardnerella vaginalis and other anaerobes replace the lactobacilli; their amines cause the fishy whiff, and the lost lactic acid lets the pH rise above 4.5.",
+  "x": "Gardnerella vaginalis and other anaerobes replace the lactobacilli. Their amines cause the fishy whiff, and the lost lactic acid lets the pH rise above 4.5.",
   "w": {
-   "Trichomonas vaginalis": "Trichomonas is a flagellated protozoan passed sexually; it causes trichomoniasis with a frothy discharge and a strawberry cervix, a separate diagnosis.",
+   "Trichomonas vaginalis": "Trichomonas is a flagellated protozoan passed sexually. It causes trichomoniasis with a frothy discharge and a strawberry cervix, a separate diagnosis.",
    "Candida albicans": "Candida overgrowth causes yeast vaginitis with a normal pH and pseudohyphae, typically after antibiotics or with diabetes.",
-   "Lactobacillus crispatus": "Lactobacilli are the protective flora that make lactic acid; they decrease, rather than overgrow, when vaginosis develops.",
+   "Lactobacillus crispatus": "Lactobacilli are the protective flora that make lactic acid. They decrease, rather than overgrow, when vaginosis develops.",
    "Neisseria gonorrhoeae": "Gonococci infect columnar endocervical cells and cause purulent cervicitis with neutrophils rather than a flora shift."
   },
   "media": "fig:rp12_vaginitis",
@@ -48,12 +48,12 @@
    "2.0 to 3.0"
   ],
   "a": 3,
-  "x": "Lactobacilli ferment glycogen from estrogen-primed epithelium into lactic acid, holding the pH at 3.8 to 4.5; a higher value means the barrier has failed.",
+  "x": "Lactobacilli ferment glycogen from estrogen-primed epithelium into lactic acid, holding the pH at 3.8 to 4.5. A higher value means the barrier has failed.",
   "w": {
    "5.0 to 6.0": "A pH in this range signals lost lactobacilli, as in bacterial vaginosis or trichomoniasis, or low estrogen after menopause.",
    "6.5 to 7.0": "Near-neutral values are typical before puberty, when glycogen is scarce, or when semen or blood contaminates the sample.",
    "7.35 to 7.45": "This is the normal range of arterial blood, which bicarbonate buffers, not the acidified vaginal fluid.",
-   "2.0 to 3.0": "Values this low describe gastric juice; lactic acid from vaginal lactobacilli is not strong enough to reach them."
+   "2.0 to 3.0": "Values this low describe gastric juice. Lactic acid from vaginal lactobacilli is not strong enough to reach them."
   },
   "media": "fig:rp12_vaginitis",
   "pt": {
@@ -86,7 +86,7 @@
    "Bacterial vaginosis": "Vaginosis replaces lactobacilli with anaerobes, so lactic acid falls and the pH rises above 4.5 with a fishy whiff.",
    "Trichomoniasis": "The protozoan and its inflammation disrupt the flora, and the pH typically rises well above 4.5, often to 5 or 6.",
    "Atrophic vaginitis": "Low estrogen after menopause empties the epithelium of glycogen, so lactobacilli dwindle and the pH rises.",
-   "Desquamative inflammatory vaginitis": "This purulent condition shows many white cells, immature parabasal cells and a pH above 4.5, unlike a yeast infection."
+   "Desquamative inflammatory vaginitis": "This purulent vaginitis shows many white cells and a pH above 4.5, unlike a yeast infection."
   },
   "media": "fig:rp12_vaginitis",
   "pt": {
@@ -145,12 +145,12 @@
    "Acyclovir"
   ],
   "a": 2,
-  "x": "Metronidazole is reduced inside anaerobic protozoa to DNA-damaging radicals; because trichomoniasis is sexually transmitted, every recent partner is treated to prevent reinfection.",
+  "x": "Metronidazole is reduced inside anaerobic protozoa to DNA-damaging radicals. Because trichomoniasis is sexually transmitted, every recent partner is treated to prevent reinfection.",
   "w": {
-   "Fluconazole": "Fluconazole inhibits fungal ergosterol synthesis and treats Candida; it has no activity against a protozoan.",
+   "Fluconazole": "Fluconazole inhibits fungal ergosterol synthesis and treats Candida. It has no activity against a protozoan.",
    "Clindamycin": "Clindamycin blocks the bacterial 50S ribosome and treats bacterial vaginosis, but it does not reliably clear trichomonads.",
-   "Ceftriaxone": "Ceftriaxone is the injectable cephalosporin for gonorrhea; beta-lactams cannot act on an organism without a bacterial cell wall.",
-   "Acyclovir": "Acyclovir is a guanosine analog that blocks herpesvirus DNA polymerase; it treats genital herpes ulcers, not a protozoan discharge."
+   "Ceftriaxone": "Ceftriaxone is the injectable cephalosporin for gonorrhea. Beta-lactams cannot act on an organism without a bacterial cell wall.",
+   "Acyclovir": "Acyclovir is a guanosine analog that blocks herpesvirus DNA polymerase. It treats genital herpes ulcers, not a protozoan discharge."
   },
   "media": "fig:rp12_vaginitis",
   "pt": {
@@ -182,7 +182,7 @@
    "Squalene epoxidase": "Terbinafine blocks squalene epoxidase earlier in the ergosterol pathway and is used for dermatophyte nail and skin infections.",
    "Beta-glucan synthase": "Echinocandins such as caspofungin block glucan synthesis in the fungal cell wall and are intravenous drugs for invasive candidiasis.",
    "Thymidylate synthase": "Flucytosine's metabolite and 5-fluorouracil inhibit thymidylate synthase, blocking DNA synthesis rather than membrane sterols.",
-   "Dihydropteroate synthase": "Sulfonamides block dihydropteroate synthase in bacterial folate synthesis; they have no role against yeast."
+   "Dihydropteroate synthase": "Sulfonamides block dihydropteroate synthase in bacterial folate synthesis. They have no role against yeast."
   }
  },
  {
@@ -205,12 +205,12 @@
    "Apocrine sweat gland"
   ],
   "a": 0,
-  "x": "A blocked Bartholin gland duct traps mucus in the posterolateral vestibule at 4 or 8 o'clock; infection turns the cyst into an abscess drained with a Word catheter.",
+  "x": "A blocked Bartholin gland duct traps mucus in the posterolateral vestibule at 4 or 8 o'clock. Infection turns the cyst into a painful abscess.",
   "w": {
    "Skene gland": "Paraurethral glands sit beside the urethral meatus and cause urethral symptoms, not a posterolateral vestibular mass.",
    "Gartner duct": "A Gartner duct cyst is a mesonephric remnant in the lateral vaginal wall, usually painless and discovered incidentally.",
    "Sebaceous gland": "Sebaceous cysts are small, firm, superficial nodules of hair-bearing labial skin, not large fluctuant introital abscesses.",
-   "Apocrine sweat gland": "Apocrine glands of the groin and mons are involved in hidradenitis suppurativa, with recurrent nodules and sinus tracts."
+   "Apocrine sweat gland": "Apocrine glands of the groin and mons lie in hair-bearing skin. They do not open at the vaginal introitus."
   }
  },
  {
@@ -264,7 +264,7 @@
    "Contact dermatitis"
   ],
   "a": 1,
-  "x": "Lichen planus is a T-cell attack on basal keratinocytes of skin and mucosa, so it erodes the vagina and marks the mouth with lacy Wickham striae.",
+  "x": "Lichen planus is a T-cell attack on basal keratinocytes of skin and mucosa, so it erodes the vagina and marks the mouth with lacy white streaks.",
   "w": {
    "Lichen sclerosus": "Lichen sclerosus involves vulvar and perianal skin in a figure-of-eight but characteristically spares the vaginal mucosa.",
    "Lichen simplex chronicus": "Scratch-induced thickening of skin stays where the patient scratches and never reaches the vaginal mucosa.",
@@ -285,8 +285,8 @@
   "o": [
    "Aberrant p53 staining",
    "Desmin and myogenin staining",
-   "S100 and HMB-45 staining",
-   "CK7 and CEA staining",
+   "S100 staining",
+   "PAS and keratin staining",
    "Diffuse block p16 staining"
   ],
   "a": 4,
@@ -294,8 +294,8 @@
   "w": {
    "Aberrant p53 staining": "An aberrant pattern reflects a TP53 mutation, the marker of HPV-independent differentiated VIN in older women with lichen sclerosus.",
    "Desmin and myogenin staining": "Muscle proteins mark rhabdomyosarcoma, such as sarcoma botryoides in young girls, not squamous precursors.",
-   "S100 and HMB-45 staining": "These markers identify melanocytic tumors such as melanoma, which can mimic pagetoid spread in the epidermis.",
-   "CK7 and CEA staining": "Glandular markers identify the pale adenocarcinoma cells of extramammary Paget disease, not dysplastic keratinocytes."
+   "S100 staining": "S100 marks melanocytic tumors such as melanoma, which can mimic pagetoid spread in the epidermis.",
+   "PAS and keratin staining": "These stains identify the pale adenocarcinoma cells of extramammary Paget disease, not dysplastic keratinocytes."
   },
   "media": "fig:rp12_vulvar_scc",
   "pt": {
@@ -327,7 +327,7 @@
   "w": {
    "HSIL (usual VIN)": "HPV-associated HSIL affects younger women, often smokers, and leads to warty or basaloid rather than keratinizing carcinoma.",
    "Condyloma acuminatum": "Condylomas are benign warts from low-risk HPV 6 and 11 and do not progress to squamous carcinoma.",
-   "Vaginal adenosis": "Adenosis is glandular epithelium left in the vagina by in utero DES exposure; it precedes clear cell adenocarcinoma.",
+   "Vaginal adenosis": "Adenosis is glandular epithelium left in the vagina by in utero DES exposure. It precedes clear cell adenocarcinoma.",
    "Lichen simplex chronicus": "Scratch-induced squamous hyperplasia has no atypia and carries no cancer risk, unlike lichen sclerosus."
   },
   "media": "fig:rp12_vulvar_scc",
@@ -360,7 +360,7 @@
   "w": {
    "Internal iliac nodes": "These nodes drain the cervix, upper vagina and other pelvic viscera, not the vulvar skin.",
    "Para-aortic nodes": "Para-aortic nodes receive ovarian lymph along the gonadal vessels, a route that bypasses the groin.",
-   "External iliac nodes": "These receive lymph from the deep inguinal nodes and the uterine body, a later station for vulvar cancer.",
+   "External iliac nodes": "These nodes receive lymph from the deep inguinal nodes and the uterine body. They are a later station for vulvar cancer.",
    "Obturator nodes": "Obturator nodes are an early station for cervical cancer spreading laterally through the parametrium, not for vulvar skin."
   },
   "media": "fig:rp12_vulvar_scc",
@@ -419,7 +419,7 @@
    "Thalidomide": "Thalidomide taken in early pregnancy causes limb defects such as phocomelia, not vaginal glandular tumors.",
    "Isotretinoin": "Isotretinoin causes craniofacial, cardiac and central nervous system malformations and requires strict pregnancy prevention.",
    "Valproic acid": "Valproate taken in the first trimester causes neural tube defects such as spina bifida, not glandular changes in the vagina.",
-   "Mycophenolate mofetil": "Mycophenolate causes pregnancy loss and ear, facial and cardiac malformations; it is not linked to vaginal adenosis or cancer."
+   "Mycophenolate mofetil": "Mycophenolate causes pregnancy loss and ear, facial and cardiac malformations. It is not linked to vaginal adenosis or cancer."
   }
  },
  {
@@ -439,7 +439,7 @@
    "Gartner duct cyst"
   ],
   "a": 4,
-  "x": "A Gartner duct cyst is a leftover segment of the Wolffian duct in the lateral vaginal wall; it is benign and usually found incidentally on examination.",
+  "x": "A Gartner duct cyst is a leftover segment of the Wolffian duct in the lateral vaginal wall. It is benign and usually found incidentally on examination.",
   "w": {
    "Bartholin duct cyst": "Bartholin cysts arise from blocked greater vestibular gland ducts at the posterolateral vestibule, outside the vaginal wall.",
    "Skene duct cyst": "These cysts lie beside the urethral meatus and come from paraurethral glands, the female homolog of the prostate.",

@@ -18,12 +18,12 @@
    "Negative for intraepithelial lesion"
   ],
   "a": 0,
-  "e": "The cells are **koilocytes**: raisinoid nuclei with a perinuclear halo are the cytopathic effect of productive HPV infection, and in the Bethesda system they define **LSIL**, the cytologic counterpart of CIN 1. HSIL shows smaller immature cells with a high nuclear-to-cytoplasmic ratio rather than a halo. ASC-US is reserved for changes too subtle to classify, which these are not, and glandular atypia involves columnar cells, not superficial squamous cells.",
+  "e": "The cells are **koilocytes**: enlarged, wrinkled nuclei with a clear halo around them are the effect of HPV infection, and in the Bethesda system they define **LSIL**, the cytologic counterpart of CIN 1. HSIL shows smaller immature cells with a high nuclear-to-cytoplasmic ratio and no halo. ASC-US is reserved for changes too subtle to classify, which these are not, and glandular atypia involves columnar cells, not superficial squamous cells.",
   "w": {
-   "HSIL": "HSIL shows small immature basal-type cells with scant cytoplasm and a high nuclear-to-cytoplasmic ratio; koilocytic halos in mature superficial cells point to a low-grade process.",
-   "ASC-US": "ASC-US means squamous changes too subtle or incomplete to call; classic koilocytes with raisinoid nuclei and halos are distinctive enough to classify as a lesion.",
-   "Atypical glandular cells": "Glandular atypia involves endocervical or endometrial columnar cells and prompts colposcopy with further sampling; the abnormal cells described here are superficial squamous cells.",
-   "Negative for intraepithelial lesion": "A negative smear shows normal superficial and intermediate cells with small pyknotic nuclei; the viral cytopathic effect described is a lesion by definition."
+   "HSIL": "HSIL shows small immature cells with scant cytoplasm and a high nuclear-to-cytoplasmic ratio. Koilocytic halos in mature superficial cells point to a low-grade process.",
+   "ASC-US": "ASC-US means squamous changes too subtle or incomplete to call. Classic koilocytes with wrinkled nuclei and halos are distinctive enough to classify as a lesion.",
+   "Atypical glandular cells": "Glandular atypia involves endocervical or endometrial columnar cells. The abnormal cells described here are superficial squamous cells.",
+   "Negative for intraepithelial lesion": "A negative smear shows normal superficial and intermediate cells with small dark nuclei. The viral change described here is a lesion by definition."
   },
   "et": [
    [
@@ -95,10 +95,10 @@
   "a": 0,
   "e": "HPV **E7** binds the **Rb protein** and displaces E2F, so E2F-driven genes for DNA synthesis switch on and the G1-to-S checkpoint is lost. Integration makes this worse because it breaks the viral E2 repressor and raises E6 and E7 output. p53 is also disabled in HPV-infected cells, but by E6, and its loss removes arrest and apoptosis after DNA damage rather than freeing E2F. Cyclin D1 normally promotes Rb phosphorylation, so it would need to be overactive, not inactivated.",
   "w": {
-   "p53 protein": "p53 is degraded by HPV E6, not E7; losing it removes DNA-damage arrest and apoptosis but does not by itself release E2F from repression.",
-   "p21 protein": "p21 is a CDK inhibitor induced by p53; its loss follows E6 action indirectly, and it is not the protein that E7 binds to free E2F.",
-   "Cyclin D1": "Cyclin D1 with CDK4 phosphorylates Rb to release E2F; it is an oncogene that would have to be overexpressed, not inactivated, to mimic E7.",
-   "BRCA1 protein": "BRCA1 repairs double-strand breaks by homologous recombination; its loss predisposes to breast and ovarian cancer and plays no part in HPV-driven cervical disease."
+   "p53 protein": "p53 is degraded by HPV E6, not E7. Losing it removes DNA-damage arrest and apoptosis but does not by itself release E2F.",
+   "p21 protein": "p21 is a CDK inhibitor induced by p53. It is not the protein that E7 binds to free E2F.",
+   "Cyclin D1": "Cyclin D1 with CDK4 phosphorylates Rb to release E2F. It would have to be overexpressed, not inactivated, to mimic E7.",
+   "BRCA1 protein": "BRCA1 repairs double-strand DNA breaks. Its loss predisposes to breast and ovarian cancer and plays no part in HPV-driven cervical disease."
   },
   "et": [
    [
@@ -140,7 +140,7 @@
     ]
    ]
   ],
-  "bl": "HPV E7 inactivates the Rb protein, freeing E2F and abolishing the G1-to-S checkpoint; E6 separately degrades p53.",
+  "bl": "HPV E7 inactivates the Rb protein, freeing E2F and abolishing the G1-to-S checkpoint. E6 separately degrades p53.",
   "ef": "rp13_e6e7",
   "pt": {
    "hl": [
@@ -169,12 +169,12 @@
    "Tobacco carcinogens mutate the p16 promoter"
   ],
   "a": 0,
-  "e": "Functional **Rb** normally keeps p16 expression low through a feedback loop. When HPV **E7** binds and inactivates Rb, that restraint is lost and p16 accumulates, so diffuse block staining is a surrogate marker of high-risk HPV oncogene activity and upgrades a borderline CIN 2 to HSIL. E6-driven p53 loss is real but does not induce p16, and integration raises viral oncogene expression rather than adding p16 genes. Smoking promotes viral persistence but does not create this pattern.",
+  "e": "Functional **Rb** normally keeps p16 expression low through a feedback loop. When HPV **E7** binds and inactivates Rb, that restraint is lost and p16 accumulates. Diffuse block staining is therefore a marker of high-risk HPV oncogene activity and upgrades a borderline CIN 2 to HSIL. E6-driven p53 loss is real but does not induce p16, and integration raises viral oncogene expression rather than adding p16 genes. Smoking promotes viral persistence but does not create this pattern.",
   "w": {
-   "p53 degradation by E6 induces p16 transcription": "E6 does degrade p53, but p53 loss removes arrest and apoptosis; p16 accumulation tracks the Rb pathway, which is why it follows E7 activity.",
-   "Viral integration inserts extra copies of the p16 gene": "Integration disrupts the viral E2 repressor and increases E6 and E7 expression; it does not add host p16 genes to the genome.",
+   "p53 degradation by E6 induces p16 transcription": "E6 does degrade p53, but p53 loss removes arrest and apoptosis. p16 accumulation follows the Rb pathway, which is why it tracks E7 activity.",
+   "Viral integration inserts extra copies of the p16 gene": "Integration disrupts the viral E2 repressor and increases E6 and E7 expression. It does not add host p16 genes to the genome.",
    "Estrogen receptor signaling upregulates p16 in metaplasia": "Estrogen drives eversion and metaplasia of the cervix, but normal metaplastic epithelium shows only patchy p16, never the continuous block pattern of HSIL.",
-   "Tobacco carcinogens mutate the p16 promoter": "Smoking promotes HPV persistence, but promoter mutation would silence p16 and produce absent staining rather than strong block positivity."
+   "Tobacco carcinogens mutate the p16 promoter": "Smoking promotes HPV persistence. A promoter mutation would silence p16 and produce absent staining rather than strong block positivity."
   },
   "et": [
    [
@@ -216,7 +216,7 @@
     ]
    ]
   ],
-  "bl": "Block p16 staining arises because E7 inactivates Rb, which removes feedback repression, so p16 accumulates; it marks HPV-driven HSIL.",
+  "bl": "Block p16 staining arises because E7 inactivates Rb, which removes feedback repression, so p16 accumulates. It marks HPV-driven HSIL.",
   "ef": "rp13_e6e7",
   "pt": {
    "hl": [
@@ -244,12 +244,12 @@
    "In 10 years"
   ],
   "a": 0,
-  "e": "A negative **cotest**, cytology plus high-risk HPV, at age 30 to 65 gives a very low risk of CIN 3 over the following years, so the next screen is in **5 years**. Annual or two-year intervals add cost and colposcopies for transient findings without saving lives. Three years is the interval for cytology alone, which is less sensitive than HPV testing, and 10 years exceeds the evidence even after a double-negative result.",
+  "e": "A negative **cotest** (cytology plus high-risk HPV) at age 30 to 65 gives a very low risk of CIN 3 over the following years, so the next screen is in **5 years**. Annual or two-year intervals add cost and colposcopies for transient findings without saving lives. Three years is the interval for cytology alone, which is less sensitive than HPV testing. Ten years is longer than the evidence supports, even after a double-negative result.",
   "w": {
-   "In 1 year": "Annual screening was abandoned because most HPV-related changes regress and cancer takes years to develop; yearly testing only adds colposcopies for transient findings.",
-   "In 2 years": "No guideline uses a two-year cervical interval for average-risk women; after a double-negative cotest the five-year risk of CIN 3 is already very low.",
-   "In 3 years": "Three years is the interval after negative cytology alone, which misses more lesions than HPV testing; adding a negative HPV result justifies the longer gap.",
-   "In 10 years": "No schedule spaces screening a decade apart before 65; ten years exceeds the natural-history evidence, since new infections can still progress within that window."
+   "In 1 year": "Annual screening was abandoned because most HPV-related changes regress and cancer takes years to develop. Yearly testing only adds colposcopies for transient findings.",
+   "In 2 years": "No guideline uses a two-year cervical interval for average-risk women. After a double-negative cotest the five-year risk of CIN 3 is already very low.",
+   "In 3 years": "Three years is the interval after negative cytology alone, which misses more lesions than HPV testing. Adding a negative HPV result justifies the longer gap.",
+   "In 10 years": "No schedule spaces screening a decade apart before 65. Ten years exceeds the evidence, since new infections can still progress within that window."
   },
   "et": [
    [
@@ -291,7 +291,7 @@
     ]
    ]
   ],
-  "bl": "After a negative cotest at age 30 to 65, repeat screening in 5 years; cytology alone repeats every 3 years.",
+  "bl": "After a negative cotest at age 30 to 65, repeat screening in 5 years. Cytology alone repeats every 3 years.",
   "ef": "rp13_screen",
   "pt": {
    "hl": [
@@ -321,12 +321,12 @@
    "Tumor invasion of the bladder causing a vesicovaginal fistula"
   ],
   "a": 0,
-  "e": "Cervical carcinoma spreads by direct lateral extension into the parametria and pelvic side walls, where it encircles and compresses the **ureters**. Bilateral obstruction causes **hydronephrosis**, the dilated pelvis and calyces seen here, and postrenal failure, a leading cause of death from this cancer. Hematogenous kidney metastases are rare and would not dilate the collecting system. A vesicovaginal fistula causes continuous leakage of urine, not obstruction, and hypercalcemia injures tubules without hydronephrosis.",
+  "e": "Cervical carcinoma spreads by direct lateral extension into the parametria and pelvic side walls, where it encircles and compresses the **ureters**. Bilateral obstruction causes **hydronephrosis**, the dilated pelvis and calyces seen here, and kidney failure, a leading cause of death from this cancer. Hematogenous kidney metastases are rare and would not dilate the collecting system. A vesicovaginal fistula causes continuous leakage of urine, not obstruction, and hypercalcemia injures tubules without hydronephrosis.",
   "w": {
-   "Hematogenous metastases replacing both kidneys": "Cervical cancer spreads mainly by direct extension and lymphatics; renal metastases are rare, and parenchymal deposits would not dilate the pelvis and calyces.",
-   "Paraneoplastic immune-complex glomerulonephritis": "Glomerulonephritis causes hematuria, proteinuria and azotemia with undilated collecting systems; bilateral hydronephrosis points to obstruction below the kidneys.",
+   "Hematogenous metastases replacing both kidneys": "Cervical cancer spreads mainly by direct extension and lymphatics. Renal metastases are rare, and parenchymal deposits would not dilate the pelvis and calyces.",
+   "Paraneoplastic immune-complex glomerulonephritis": "Glomerulonephritis causes hematuria, proteinuria and azotemia with undilated collecting systems. Bilateral hydronephrosis points to obstruction below the kidneys.",
    "Hypercalcemia from tumor-derived PTH-related peptide": "Squamous tumors can secrete PTH-related peptide, but hypercalcemia causes nephrogenic diabetes insipidus and nephrocalcinosis, not dilated calyces on ultrasonography.",
-   "Tumor invasion of the bladder causing a vesicovaginal fistula": "Bladder invasion with a fistula produces continuous painless leakage of urine through the vagina; it drains the urinary tract rather than obstructing it."
+   "Tumor invasion of the bladder causing a vesicovaginal fistula": "Bladder invasion with a fistula produces continuous painless leakage of urine through the vagina. It drains the urinary tract rather than obstructing it."
   },
   "et": [
    [
@@ -397,12 +397,12 @@
    "Pelvic MRI"
   ],
   "a": 0,
-  "e": "An HSIL cytology result carries a high immediate risk of CIN 3, so she needs **colposcopy** with directed biopsy to establish a tissue diagnosis before treatment is chosen; ASCCP guidelines also accept expedited excision in some nonpregnant adults. Cytology is a screening test and cannot by itself establish the grade or exclude invasion. Repeat cytology or cotesting would leave a likely high-grade lesion unassessed for a year or more. Total hysterectomy is excessive for a precancer in a woman who wants children, and MRI stages cancers rather than finding precancer.",
+  "e": "An HSIL cytology result carries a high immediate risk of CIN 3, so she needs **colposcopy** with directed biopsy to establish a tissue diagnosis before treatment is chosen. Cytology is a screening test and cannot by itself establish the grade or exclude invasion. Repeat cytology or cotesting would leave a likely high-grade lesion unassessed for a year or more. Total hysterectomy is excessive for a precancer in a woman who wants children, and MRI stages cancers rather than finding precancer.",
   "w": {
-   "Repeat cytology in 12 months": "A one-year wait suits low-risk findings such as ASC-US with negative HPV; HSIL has too high an immediate CIN 3 risk to defer.",
-   "Cotesting in 3 years": "A three-year cotest interval follows reassuring results; after an HSIL result it would leave a probable precancer unassessed and possibly progressing.",
-   "Total hysterectomy": "Hysterectomy removes her fertility and overtreats a lesion that has not yet been confirmed; high-grade precancer is managed with local excision of the cervix.",
-   "Pelvic MRI": "MRI helps stage established invasive cancer by showing parametrial and nodal spread; it cannot detect or grade an intraepithelial lesion."
+   "Repeat cytology in 12 months": "A one-year wait suits low-risk findings such as ASC-US with negative HPV. HSIL has too high an immediate CIN 3 risk to defer.",
+   "Cotesting in 3 years": "A three-year cotest interval follows reassuring results. After an HSIL result it would leave a probable precancer unassessed and possibly progressing.",
+   "Total hysterectomy": "Hysterectomy removes her fertility and overtreats a lesion that has not yet been confirmed. High-grade precancer is managed with local excision of the cervix.",
+   "Pelvic MRI": "MRI helps stage established invasive cancer by showing parametrial and nodal spread. It cannot detect or grade an intraepithelial lesion."
   },
   "et": [
    [
@@ -444,7 +444,7 @@
     ]
    ]
   ],
-  "bl": "HSIL cytology means high immediate CIN 3 risk; the next step is colposcopy with directed biopsy, not repeat screening.",
+  "bl": "HSIL cytology means high immediate CIN 3 risk. The next step is colposcopy with directed biopsy, not repeat screening.",
   "ef": "rp13_screen",
   "pt": {
    "hl": [
@@ -474,12 +474,12 @@
    "Pelvic ultrasonography"
   ],
   "a": 0,
-  "e": "After menopause the squamocolumnar junction recedes into the canal, so this colposcopy is inadequate: the transformation zone, where HPV-driven lesions arise, is out of sight. **Endocervical curettage** samples the canal and the hidden zone. Biopsying the pale, normal-looking ectocervix would sample mature squamous epithelium and miss the lesion. Repeat cotesting leaves an HPV-positive abnormality unassessed, hysterectomy treats a disease not yet diagnosed, and ultrasonography images the endometrium rather than the cervical epithelium.",
+  "e": "After menopause the squamocolumnar junction recedes into the canal, so this colposcopy is inadequate. The transformation zone, where HPV-driven lesions arise, is out of sight. **Endocervical curettage** samples the canal and the hidden zone. Biopsying the pale, normal-looking ectocervix would sample mature squamous epithelium and miss the lesion. Repeat cotesting leaves an HPV-positive abnormality unassessed, hysterectomy treats a disease not yet diagnosed, and ultrasonography images the endometrium rather than the cervical epithelium.",
   "w": {
-   "Directed biopsy of the ectocervix": "A directed biopsy needs a visible target; the ectocervix shows no acetowhite area, and the zone most likely to harbor the lesion lies up the canal.",
-   "Repeat cotesting in 3 years": "Waiting is reserved for low-risk results; an HPV-positive abnormality with an inadequate colposcopy still needs tissue from the hidden transformation zone.",
+   "Directed biopsy of the ectocervix": "A directed biopsy needs a visible target. The ectocervix shows no acetowhite area, and the zone most likely to harbor the lesion lies up the canal.",
+   "Repeat cotesting in 3 years": "Waiting is reserved for low-risk results. An HPV-positive abnormality with an inadequate colposcopy still needs tissue from the hidden transformation zone.",
    "Total hysterectomy": "Removing the uterus and cervix without a tissue diagnosis overtreats a possibly benign finding and could undertreat an unsuspected invasive cancer.",
-   "Pelvic ultrasonography": "Ultrasound measures the endometrium and ovaries; it cannot detect intraepithelial lesions of the cervical canal, which need cytologic or histologic sampling."
+   "Pelvic ultrasonography": "Ultrasound measures the endometrium and ovaries. It cannot detect intraepithelial lesions of the cervical canal, which need cytologic or histologic sampling."
   },
   "et": [
    [
@@ -550,12 +550,12 @@
    "HPV vaccination"
   ],
   "a": 0,
-  "e": "Painless second-trimester dilation with bulging membranes is **cervical insufficiency**. Excisional treatment removes a cone of the collagen-rich cervical stroma that holds a pregnancy in, and **cold-knife conization** removes the most tissue, so it carries the greatest risk of later second-trimester loss and preterm birth; LEEP carries a smaller risk. A colposcopic punch biopsy removes only a few millimeters and does not weaken the cervix. Cytology and vaccination remove no tissue at all.",
+  "e": "Painless second-trimester dilation with bulging membranes is **cervical insufficiency**. Excisional treatment such as a **cone biopsy** (cold-knife conization) removes a cone of the collagen-rich cervical stroma that holds a pregnancy in, leaving a shorter, weaker cervix that can open painlessly in a later pregnancy. A colposcopic punch biopsy removes only a few millimeters and does not weaken the cervix. Cytology and vaccination remove no tissue at all, and an endometrial biopsy samples the uterine lining, not the cervix.",
   "w": {
-   "Colposcopic punch biopsy": "Punch biopsies remove only a few millimeters of epithelium and superficial stroma, and they do not increase the risk of cervical insufficiency or preterm birth.",
-   "Cervical cytology sampling": "A brush and spatula collect exfoliated cells from the surface; they remove no stroma, so they cannot weaken the cervix in later pregnancies.",
-   "Endometrial biopsy": "Endometrial sampling passes a thin catheter through the canal to the uterine lining; it neither excises cervical stroma nor causes insufficiency.",
-   "HPV vaccination": "The vaccine contains noninfectious L1 virus-like particles, removes no tissue and is not linked to pregnancy loss; it prevents the lesions that lead to excision."
+   "Colposcopic punch biopsy": "Punch biopsies remove only a few millimeters of epithelium and superficial stroma. They do not increase the risk of cervical insufficiency or preterm birth.",
+   "Cervical cytology sampling": "A brush and spatula collect surface cells. They remove no stroma, so they cannot weaken the cervix in later pregnancies.",
+   "Endometrial biopsy": "Endometrial sampling passes a thin catheter through the canal to the uterine lining. It does not excise cervical stroma or cause insufficiency.",
+   "HPV vaccination": "The vaccine contains noninfectious L1 virus-like particles and removes no tissue. It prevents the lesions that lead to excision."
   },
   "et": [
    [
@@ -597,7 +597,7 @@
     ]
    ]
   ],
-  "bl": "Cold-knife conization, and to a lesser degree LEEP, removes cervical stroma and can cause cervical insufficiency and preterm birth.",
+  "bl": "A cone biopsy (cold-knife conization) removes cervical stroma and can cause cervical insufficiency and preterm birth.",
   "ef": "rp13_screen",
   "pt": {
    "hl": [
@@ -626,12 +626,12 @@
    "Plasmid DNA encoding the L1 gene"
   ],
   "a": 0,
-  "e": "The HPV vaccine is made from recombinant **L1** major capsid protein, which self-assembles into empty **virus-like particles**. They look like the virion to the immune system and induce neutralizing antibodies, but they contain no viral DNA, so the vaccine cannot cause infection. It is not a live attenuated or whole inactivated virus, and it does not target E6 or E7, which is why it prevents new infection but does not treat existing lesions.",
+  "e": "The HPV vaccine is made from recombinant **L1** major capsid protein, which assembles into empty **virus-like particles**. They look like the virion to the immune system and induce neutralizing antibodies, but they contain no viral DNA, so the vaccine cannot cause infection. It is not a live attenuated or whole inactivated virus, and it does not target E6 or E7, which is why it prevents new infection but does not treat existing lesions.",
   "w": {
-   "Live attenuated HPV 16 and 18 strains": "Live attenuated vaccines contain replicating organisms, as in MMR and varicella; the HPV vaccine has no replicating virus and is safe in immunocompromised patients.",
-   "Formalin-inactivated whole virions": "Whole killed-virus vaccines, such as inactivated polio, contain the viral genome; the HPV vaccine contains only capsid protein, so no genome is present.",
-   "Synthetic E6 and E7 peptides": "E6 and E7 are expressed inside infected cells, not on virions; antibodies to them would not neutralize incoming virus, and therapeutic versions remain experimental.",
-   "Plasmid DNA encoding the L1 gene": "DNA vaccines deliver genes for host cells to express; the licensed HPV vaccine is purified protein produced in yeast, not nucleic acid."
+   "Live attenuated HPV 16 and 18 strains": "Live attenuated vaccines contain replicating organisms, as in MMR and varicella. The HPV vaccine has no replicating virus.",
+   "Formalin-inactivated whole virions": "Whole killed-virus vaccines, such as inactivated polio, contain the viral genome. The HPV vaccine contains only capsid protein, so no genome is present.",
+   "Synthetic E6 and E7 peptides": "E6 and E7 are made inside infected cells, not on virions. Antibodies to them would not neutralize incoming virus.",
+   "Plasmid DNA encoding the L1 gene": "DNA vaccines deliver genes for host cells to express. The HPV vaccine is purified protein, not nucleic acid."
   },
   "et": [
    [
@@ -701,12 +701,12 @@
    "Gardnerella vaginalis"
   ],
   "a": 0,
-  "e": "Mucopurulent discharge and a friable cervix mean **cervicitis**, and **Chlamydia trachomatis** is its most common cause. Chlamydia is a small obligate intracellular bacterium that cannot be seen on Gram stain, so the smear shows neutrophils without organisms; nucleic acid amplification testing confirms it. *Neisseria gonorrhoeae* would appear as gram-negative intracellular diplococci, trichomonads would be motile on the wet mount, and herpes causes painful ulcers.",
+  "e": "Mucopurulent discharge and a friable cervix mean **cervicitis**, and **Chlamydia trachomatis** is its most common cause. Chlamydia is a small obligate intracellular bacterium that cannot be seen on Gram stain, so the smear shows neutrophils without organisms. Nucleic acid amplification testing confirms it. *Neisseria gonorrhoeae* would appear as gram-negative intracellular diplococci, trichomonads would be motile on the wet mount, and herpes causes painful ulcers.",
   "w": {
-   "Neisseria gonorrhoeae": "Gonococcal cervicitis looks similar, but the Gram stain would show gram-negative diplococci inside neutrophils; a smear with neutrophils and no organisms favors chlamydia.",
+   "Neisseria gonorrhoeae": "Gonococcal cervicitis looks similar, but the Gram stain would show gram-negative diplococci inside neutrophils. A smear with neutrophils and no organisms favors chlamydia.",
    "Trichomonas vaginalis": "Trichomonads cause frothy yellow-green discharge, a strawberry cervix and motile flagellated protozoa on wet mount, which were absent here.",
-   "Herpes simplex virus type 2": "Herpetic cervicitis produces painful vesicles and shallow ulcers, often with systemic symptoms and tender inguinal nodes, rather than purulent discharge alone.",
-   "Gardnerella vaginalis": "Bacterial vaginosis causes a thin gray fishy discharge with clue cells and few neutrophils; it involves the vagina and does not make the cervix purulent."
+   "Herpes simplex virus type 2": "Herpetic cervicitis produces painful vesicles and shallow ulcers, often with tender inguinal nodes, rather than purulent discharge alone.",
+   "Gardnerella vaginalis": "Bacterial vaginosis causes a thin gray fishy discharge with clue cells and few neutrophils. It involves the vagina and does not make the cervix purulent."
   },
   "et": [
    [
@@ -748,7 +748,7 @@
     ]
    ]
   ],
-  "bl": "Mucopurulent cervicitis with neutrophils but no organisms on Gram stain is most often Chlamydia trachomatis; confirm it with NAAT.",
+  "bl": "Mucopurulent cervicitis with neutrophils but no organisms on Gram stain is most often Chlamydia trachomatis. Confirm it with NAAT.",
   "ef": "rp13_screen",
   "pt": {
    "hl": [
@@ -777,11 +777,11 @@
    "Pelvic ultrasonography every 5 years"
   ],
   "a": 0,
-  "e": "Screening follows the cervix, not the uterus. A supracervical hysterectomy leaves the cervix and its transformation zone behind, so she continues average-risk screening with **primary HPV testing every 5 years** (or a cotest every 5 years, or cytology every 3) until 65. Stopping is correct only after a total hysterectomy that removed the cervix for benign disease. Vaginal cuff cytology applies to women whose total hysterectomy followed high-grade disease, and colposcopy is diagnostic, not a screening test.",
+  "e": "Screening follows the cervix, not the uterus. A supracervical hysterectomy leaves the cervix and its transformation zone behind, so she continues average-risk screening with **primary HPV testing every 5 years** (or a cotest every 5 years, or cytology every 3) until 65. Stopping is correct only after a total hysterectomy that removed the cervix for benign disease. Colposcopy is a diagnostic test, not a screening test, and ultrasonography cannot detect cervical precancer.",
   "w": {
-   "No further screening": "Stopping applies after a total hysterectomy that removed the cervix for benign disease; her retained cervix still carries a transformation zone that HPV can infect.",
-   "Vaginal cuff cytology every year": "Cuff sampling applies only after a total hysterectomy, and mainly when it was done for high-grade disease; she has no cuff because her cervix remains.",
-   "Colposcopy every 3 years": "Colposcopy is the diagnostic step after an abnormal screening result; using it as routine screening in a low-risk woman adds cost without benefit.",
+   "No further screening": "Stopping applies after a total hysterectomy that removed the cervix for benign disease. Her retained cervix still carries a transformation zone that HPV can infect.",
+   "Vaginal cuff cytology every year": "Vaginal cuff cytology applies only after a total hysterectomy. She has no cuff, because her cervix remains.",
+   "Colposcopy every 3 years": "Colposcopy is the diagnostic step after an abnormal screening result. Using it as routine screening in a low-risk woman adds cost without benefit.",
    "Pelvic ultrasonography every 5 years": "Ultrasound images pelvic organs but cannot detect intraepithelial cervical lesions, and no guideline uses it for cervical cancer screening."
   },
   "et": [
@@ -856,9 +856,9 @@
   "a": 0,
   "e": "Atypia that reaches the lower two-thirds but spares the upper third defines **CIN 2**, and diffuse block **p16** staining confirms an HPV-driven high-grade lesion, so it is reported as **HSIL (CIN 2)**. LSIL (CIN 1) is limited to the lower third, CIN 3 reaches beyond two-thirds to full thickness, and invasive carcinoma requires a breach of the basement membrane, which is intact here. Immature metaplasia lacks true nuclear atypia and shows only patchy p16.",
   "w": {
-   "LSIL (CIN 1)": "CIN 1 confines atypical cells to the lower third, usually with koilocytes above; atypia reaching two-thirds of the thickness is high grade.",
-   "HSIL (CIN 3)": "CIN 3 extends beyond two-thirds, up to full thickness with no surface maturation; here the upper third still matures normally.",
-   "Invasive squamous cell carcinoma": "Invasion requires tumor cells breaking through the basement membrane into stroma, often with desmoplasia and keratin pearls; the membrane is intact here.",
+   "LSIL (CIN 1)": "CIN 1 confines atypical cells to the lower third, usually with koilocytes above. Atypia reaching two-thirds of the thickness is high grade.",
+   "HSIL (CIN 3)": "CIN 3 extends beyond two-thirds, up to full thickness with no surface maturation. Here the upper third still matures normally.",
+   "Invasive squamous cell carcinoma": "Invasion requires tumor cells breaking through the basement membrane into stroma. The membrane is intact here.",
    "Immature squamous metaplasia": "Immature metaplasia can look crowded, but its nuclei are bland and evenly spaced, and p16 is patchy rather than a continuous block."
   },
   "et": [

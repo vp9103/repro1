@@ -25,7 +25,7 @@
   "w": {
    "Membranous urethra": "The membranous urethra lies above the perineal membrane, in the deep pouch. Tears there come with pelvic fractures and leak into the retropubic space, not the scrotum.",
    "Prostatic urethra": "The prostatic urethra lies inside the prostate, above the pelvic floor. Leaks from it collect around the bladder, not in the scrotum.",
-   "Ureter": "The ureter runs from the kidney to the bladder, high in the pelvis. It is far above the perineal membrane, and a fall astride a beam does not injure it.",
+   "Ureter": "The ureter runs from the kidney to the bladder, high in the pelvis. It is far above the perineal membrane and is not injured by a fall astride a crossbar.",
    "Bladder neck": "A torn bladder neck leaks into the extraperitoneal space around the bladder. The fluid would not track into the scrotum and penis."
   },
   "et": [
@@ -68,7 +68,7 @@
     ]
    ]
   ],
-  "bl": "A straddle injury tears the spongy urethra below the perineal membrane; Colles fascia steers urine to the scrotum, penis and abdominal wall.",
+  "bl": "A straddle injury tears the spongy urethra below the perineal membrane. Colles fascia steers urine to the scrotum, penis and abdominal wall.",
   "ef": "rp2_pouches",
   "pt": {
    "hl": [
@@ -546,7 +546,7 @@
     ]
    ]
   ],
-  "bl": "The perineal branch of the pudendal nerve runs the external urethral sphincter and posterior labial skin; its injury causes incontinence and posterior labial numbness.",
+  "bl": "The perineal branch of the pudendal nerve runs the external urethral sphincter and posterior labial skin. Its injury causes incontinence and posterior labial numbness.",
   "ef": "rp2_pudendal",
   "pt": {
    "hl": [
@@ -602,8 +602,8 @@
     [
      "Ischial tuberosity",
      "Lower ischium, the sitting bone",
-     "Sacrotuberous ligament, hamstrings",
-     "Intertuberous outlet measure"
+     "Not on the path of the pudendal nerve",
+     "Outlet landmark for the intertuberous distance"
     ],
     [
      "Sacral promontory",
@@ -705,7 +705,7 @@
     ]
    ]
   ],
-  "bl": "Sympathetic L1 to L2 fibers drive emission and close the internal urethral sphincter; their loss after node dissection causes retrograde ejaculation.",
+  "bl": "Sympathetic L1 to L2 fibers drive emission and close the internal urethral sphincter. Their loss after node dissection causes retrograde ejaculation.",
   "ef": "rp2_pudendal",
   "pt": {
    "hl": [

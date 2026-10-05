@@ -23,12 +23,12 @@
    "Tunica albuginea of the testis"
   ],
   "a": 1,
-  "e": "Tight junctions between neighboring **Sertoli cells** form the **blood-testis barrier**, which separates a basal compartment, where spermatogonia sit, from an adluminal compartment that holds meiotic cells and spermatids. The antigens on these cells first appear at puberty, long after immune tolerance is set, so the junctions hide them. Trauma, vasectomy, torsion or infection can breach the barrier, expose those antigens and trigger antisperm antibodies. The basement membrane and myoid cells wrap the tubule from outside, Leydig cell junctions lie in the interstitium, and the tunica albuginea is only the capsule of the whole testis.",
+  "e": "Tight junctions between neighboring **Sertoli cells** form the **blood-testis barrier**. It separates a basal compartment, where spermatogonia sit, from an adluminal compartment that holds meiotic cells and spermatids. The antigens on these cells first appear at puberty, long after immune tolerance is set, so the junctions hide them. Trauma, vasectomy or infection can breach the barrier and trigger antisperm antibodies. The basement membrane and myoid cells wrap the tubule from outside. Leydig cell junctions lie in the interstitium, and the tunica albuginea is only the capsule of the whole testis.",
   "w": {
-   "Basement membrane of the seminiferous tubule": "Spermatogonia rest directly on this layer, outside the barrier, and the antigens that provoke antibodies belong to later meiotic cells above the junctions, so injuring the basement membrane would not newly expose them.",
-   "Gap junctions between Leydig cells": "Leydig cells lie in the interstitium outside the tubule and make testosterone, which is normal here; gap junctions only couple neighboring cells and do not seal germ cells away from the circulation.",
-   "Contractile layer of peritubular myoid cells": "Myoid cells wrap the tubule and squeeze sperm toward the rete testis; they give propulsion and some structural support but do not form a seal against immune cells.",
-   "Tunica albuginea of the testis": "The tunica albuginea is the tough capsule around the entire testis; it limits swelling and sends septa inward but does not surround individual meiotic cells."
+   "Basement membrane of the seminiferous tubule": "Spermatogonia rest directly on this layer, outside the barrier. The antigens that provoke antibodies belong to later meiotic cells above the junctions.",
+   "Gap junctions between Leydig cells": "Leydig cells lie in the interstitium outside the tubule and make testosterone, which is normal here. Gap junctions only couple neighboring cells and do not seal germ cells away.",
+   "Contractile layer of peritubular myoid cells": "Myoid cells wrap the tubule and squeeze sperm toward the rete testis. They do not form a seal against immune cells.",
+   "Tunica albuginea of the testis": "The tunica albuginea is the tough capsule around the whole testis. It does not surround individual meiotic cells."
   },
   "et": [
    [
@@ -95,7 +95,7 @@
    "PATHPHARM-MALE.4",
    "HP-MALE.2"
   ],
-  "s": "A 31-year-old man has been unable to conceive with his wife for 2 years. He has normal libido and normal secondary sexual characteristics. Both testes are small and soft at 12 mL. Two semen analyses show azoospermia. Serum testosterone and LH are normal, but FSH is markedly elevated. Testicular biopsy shows seminiferous tubules lined by Sertoli cells with no germ cells and normal-appearing Leydig cells in the interstitium.",
+  "s": "A 31-year-old man has been unable to conceive with his wife for 2 years. He has normal libido and normal secondary sexual characteristics. Both testes are small and soft. Two semen analyses show azoospermia. Serum testosterone and LH are normal, but FSH is markedly elevated. Testicular biopsy shows seminiferous tubules lined by Sertoli cells with no germ cells and normal-appearing Leydig cells in the interstitium.",
   "l": "Which change best explains the isolated rise in FSH?",
   "o": [
    "Reduced testosterone feedback on the pituitary",
@@ -105,12 +105,12 @@
    "Increased frequency of hypothalamic GnRH pulses"
   ],
   "a": 3,
-  "e": "FSH acts on **Sertoli cells**, which release **inhibin B** in proportion to the activity of the tubules and the germ cells they support. Inhibin B travels to the pituitary and suppresses FSH selectively. When germ cells are lost, inhibin B falls, so FSH rises while LH and testosterone stay normal because the Leydig cells are intact. Loss of testosterone feedback would raise LH as well, androgen-binding protein acts within the tubule rather than on the pituitary, extra estradiol would lower gonadotropins, and faster GnRH pulses would raise LH too.",
+  "e": "FSH acts on **Sertoli cells**, which release **inhibin B** in proportion to the activity of the tubules and the germ cells they support. Inhibin B travels to the pituitary and suppresses FSH selectively. When germ cells are lost, inhibin B falls, so FSH rises while LH and testosterone stay normal because the Leydig cells are intact. Loss of testosterone feedback would raise LH as well. Androgen-binding protein works inside the tubule, not on the pituitary. Extra estradiol would lower gonadotropins, and faster GnRH pulses would raise LH too.",
   "w": {
-   "Reduced testosterone feedback on the pituitary": "Failing Leydig cells would lower testosterone, and the lost feedback would raise LH as well as FSH; here testosterone and LH are normal and the Leydig cells look normal on biopsy.",
-   "Reduced androgen-binding protein inside the tubules": "Androgen-binding protein concentrates testosterone inside the tubule and does not travel to the pituitary, so a change in it cannot send a feedback signal that selectively raises FSH.",
-   "Increased estradiol feedback on the pituitary": "Excess estradiol would lower both gonadotropins through negative feedback, so FSH would fall instead of rising, and no estrogen source is described.",
-   "Increased frequency of hypothalamic GnRH pulses": "Faster GnRH pulses favor LH release and would raise LH and testosterone too; a normal LH shows that the hypothalamic drive is intact."
+   "Reduced testosterone feedback on the pituitary": "Failing Leydig cells would lower testosterone, and the lost feedback would raise LH as well as FSH. Here testosterone and LH are normal and the Leydig cells look normal.",
+   "Reduced androgen-binding protein inside the tubules": "Androgen-binding protein concentrates testosterone inside the tubule. It does not travel to the pituitary, so it cannot raise FSH alone.",
+   "Increased estradiol feedback on the pituitary": "Excess estradiol would lower both gonadotropins by negative feedback, so FSH would fall, and no estrogen source is described.",
+   "Increased frequency of hypothalamic GnRH pulses": "Faster GnRH pulses favor LH release and would raise LH and testosterone too. A normal LH shows the hypothalamic drive is intact."
   },
   "et": [
    [
@@ -187,12 +187,12 @@
    "Increased frequency of hypothalamic GnRH pulses"
   ],
   "a": 0,
-  "e": "Adipose tissue is the main site of **aromatase**, which converts testosterone to estradiol. In obesity the expanded fat mass makes more estradiol, which suppresses GnRH and LH by negative feedback, so testosterone falls while LH stays low or inappropriately normal. The excess of estrogen relative to androgen causes breast tenderness and gynecomastia. A failing testis would leave LH high because feedback is lost, so primary Leydig failure does not fit. Reduced 5-alpha-reductase would not raise estradiol, inhibin B acts on FSH alone, and faster GnRH pulses would raise LH and testosterone.",
+  "e": "Adipose tissue is the main site of **aromatase**, which converts testosterone to estradiol. In obesity, the larger fat mass makes more estradiol, which suppresses GnRH and LH by negative feedback. Testosterone falls while LH stays low or inappropriately normal. The excess of estrogen relative to androgen causes breast tenderness and gynecomastia. A failing testis would leave LH high because feedback is lost, so primary Leydig failure does not fit. Reduced 5-alpha-reductase would not raise estradiol, inhibin B acts on FSH alone, and faster GnRH pulses would raise LH and testosterone.",
   "w": {
-   "Primary failure of Leydig cells": "Failing Leydig cells would lower testosterone, but the loss of feedback would raise LH; this man's LH is low-normal and his estradiol is high, which points to a source of estrogen rather than a failing testis.",
-   "Reduced 5-alpha-reductase activity in genital skin": "This enzyme converts testosterone to DHT in the prostate, skin and hair follicles; reduced activity would not lower total testosterone or raise estradiol, because estradiol comes from aromatase rather than from DHT.",
-   "Excess inhibin B secretion by Sertoli cells": "Inhibin B suppresses FSH only and has no effect on testosterone or estradiol production, so a selective effect on FSH would leave this man's androgen and estrogen levels unexplained.",
-   "Increased frequency of hypothalamic GnRH pulses": "Faster GnRH pulses would drive more LH and testosterone output, the opposite of this low-testosterone, low-LH pattern."
+   "Primary failure of Leydig cells": "Failing Leydig cells would lower testosterone, but lost feedback would raise LH. His LH is low-normal and his estradiol is high, which points to an estrogen source, not a failing testis.",
+   "Reduced 5-alpha-reductase activity in genital skin": "This enzyme makes DHT in the prostate, skin and hair follicles. Reduced activity would not lower total testosterone or raise estradiol, which comes from aromatase.",
+   "Excess inhibin B secretion by Sertoli cells": "Inhibin B suppresses FSH only and does not change testosterone or estradiol production, so it leaves his low androgen and high estrogen unexplained.",
+   "Increased frequency of hypothalamic GnRH pulses": "Faster GnRH pulses would drive more LH and testosterone, the opposite of this low-testosterone, low-LH pattern."
   },
   "et": [
    [
@@ -267,12 +267,12 @@
    "Pregnenolone"
   ],
   "a": 2,
-  "e": "Testosterone is converted to **dihydrotestosterone** by the enzyme **5-alpha-reductase** in the prostate, genital skin and hair follicles. DHT binds the androgen receptor more tightly and dissociates more slowly than testosterone, so it acts as an amplified androgen signal. It shapes the fetal external genitalia and later drives prostate growth, male-pattern baldness and sebaceous gland activity, which is why finasteride, an inhibitor of the enzyme, is used for both benign prostatic hyperplasia and hair loss. Androstenedione and DHEA sulfate are weak adrenal-type androgens, estradiol comes from aromatase, and pregnenolone is the first steroid made from cholesterol.",
+  "e": "Testosterone is converted to **dihydrotestosterone** by **5-alpha-reductase** in the prostate, genital skin and hair follicles. DHT binds the androgen receptor more strongly than testosterone, so it is a more potent androgen. It shapes the fetal external genitalia and later drives prostate growth, male-pattern baldness and oily skin. Finasteride, which blocks the enzyme, treats both benign prostatic hyperplasia and hair loss. Androstenedione and DHEA sulfate are weak adrenal-type androgens, estradiol comes from aromatase, and pregnenolone is the first steroid made from cholesterol.",
   "w": {
-   "Androstenedione": "Androstenedione is a weak androgen made by the adrenal glands and Leydig cells; it is converted to testosterone or estrone and is not the potent androgen that acts on hair follicles.",
-   "Estradiol": "Estradiol is made when aromatase acts on testosterone, mainly in fat; it closes epiphyses and gives feedback to the pituitary, and it does not drive follicle miniaturization.",
-   "Dehydroepiandrosterone sulfate": "Dehydroepiandrosterone sulfate is a weak adrenal androgen precursor that circulates in high concentration and has little direct androgenic action itself.",
-   "Pregnenolone": "Pregnenolone is the first steroid made from cholesterol by the side-chain cleavage enzyme, a precursor of every steroid hormone rather than an androgen acting on hair."
+   "Androstenedione": "Androstenedione is a weak androgen made by the adrenal glands and Leydig cells. It is converted to testosterone or estrone and is not the potent androgen that acts on hair follicles.",
+   "Estradiol": "Estradiol is made when aromatase acts on testosterone, mainly in fat. It closes the epiphyses and feeds back on the pituitary, and it does not shrink hair follicles.",
+   "Dehydroepiandrosterone sulfate": "DHEA sulfate is a weak adrenal androgen precursor that circulates in high amounts. It has little androgen action itself.",
+   "Pregnenolone": "Pregnenolone is the first steroid made from cholesterol and a precursor of every steroid hormone. It is not an androgen acting on hair."
   },
   "et": [
    [
@@ -348,12 +348,12 @@
    "Parasympathetic release of nitric oxide"
   ],
   "a": 4,
-  "e": "Sexual stimulation activates parasympathetic fibers from S2 to S4, and their terminals and the endothelium release **nitric oxide**. Nitric oxide activates guanylate cyclase, which makes cGMP, relaxes cavernosal smooth muscle and fills the sinusoids. Sildenafil inhibits **PDE5**, the enzyme that breaks cGMP down, so it prolongs a signal that already exists but cannot start one; without stimulation no nitric oxide is released, and there is no cGMP to preserve. Norepinephrine restores tone and ends the erection, breakdown of cGMP is the step the drug blocks, the bulbospongiosus contracts in ejaculation, and DHT acts on tissue growth.",
+  "e": "Sexual stimulation activates parasympathetic fibers from S2 to S4, and their endings and the endothelium release **nitric oxide**. Nitric oxide activates guanylate cyclase, which makes cGMP. cGMP relaxes cavernosal smooth muscle and fills the sinusoids. Sildenafil inhibits **PDE5**, the enzyme that breaks cGMP down, so it prolongs a signal that already exists but cannot start one. Without stimulation no nitric oxide is released, and there is no cGMP to preserve. Norepinephrine restores tone and ends the erection, and breakdown of cGMP is the step the drug blocks. The bulbospongiosus contracts in ejaculation, and DHT acts on tissue growth.",
   "w": {
-   "Sympathetic release of norepinephrine onto alpha-1 receptors": "Norepinephrine acting on alpha-1 receptors restores smooth muscle tone and ends the erection, so it opposes the pathway that sildenafil amplifies rather than preceding it.",
-   "Breakdown of cGMP to 5'-GMP by phosphodiesterase": "Sildenafil blocks this step; it can only happen after cGMP has been made, so it cannot be a prerequisite for the drug to act.",
-   "Contraction of the bulbospongiosus muscle": "The bulbospongiosus contracts rhythmically during ejaculation, after rigidity is achieved, under somatic control by the pudendal nerve; it does not start the erection.",
-   "Conversion of testosterone to dihydrotestosterone": "Conversion to DHT occurs in the prostate and genital skin over long periods and shapes tissue growth; it is not a step in the rapid vascular response of erection."
+   "Sympathetic release of norepinephrine onto alpha-1 receptors": "Norepinephrine on alpha-1 receptors restores smooth muscle tone and ends the erection. It opposes the pathway that sildenafil amplifies instead of preceding it.",
+   "Breakdown of cGMP to 5'-GMP by phosphodiesterase": "Sildenafil blocks this step. It can only happen after cGMP has been made, so it cannot be a prerequisite for the drug to act.",
+   "Contraction of the bulbospongiosus muscle": "The bulbospongiosus contracts rhythmically during ejaculation, after rigidity is reached, under control of the pudendal nerve. It does not start the erection.",
+   "Conversion of testosterone to dihydrotestosterone": "Conversion to DHT happens in the prostate and genital skin over long periods and shapes tissue growth. It is not a step in the fast vascular response of erection."
   },
   "et": [
    [
@@ -420,7 +420,7 @@
    "PATHPHARM-MALE.3",
    "BICEP-WEIAND.6"
   ],
-  "s": "A 30-year-old man has a semen analysis as part of a preconception evaluation requested by his wife. About 10 weeks ago he had influenza with a temperature of 39.8 °C (103.6 °F) lasting 4 days, and he has recovered fully. He takes no medications and does not smoke. Both testes measure 20 mL, and no varicocele is palpable. The semen analysis shows a sperm concentration of 8 million/mL with reduced motility. Serum FSH and testosterone are normal.",
+  "s": "A 30-year-old man has a semen analysis as part of a preconception evaluation requested by his wife. About 10 weeks ago he had influenza with a temperature of 39.8 °C (103.6 °F) lasting 4 days, and he has recovered fully. He takes no medications and does not smoke. Both testes are normal in size, and no varicocele is palpable. The semen analysis shows a reduced sperm concentration with reduced motility. Serum FSH and testosterone are normal.",
   "l": "Which is the most appropriate next step?",
   "o": [
    "Testicular biopsy to assess the seminiferous tubules",
@@ -430,12 +430,12 @@
    "Surgical ligation of the internal spermatic veins"
   ],
   "a": 2,
-  "e": "Spermatogenesis takes about 64 to 74 days and epididymal transit adds about 2 weeks, so a sample reflects events roughly **3 months** earlier. A high fever about 10 weeks ago injured germ cells in the early stages of that cycle, and they are reaching the ejaculate now. His normal testis size, FSH and testosterone show intact tubules and no hypogonadism, so the best step is **reassurance and a repeat semen analysis** after about 3 months. Biopsy, genetic testing for severe oligospermia, clomiphene and varicocele repair address other causes, and none is indicated for a transient insult.",
+  "e": "Spermatogenesis takes about 64 to 74 days and epididymal transit adds about 2 weeks, so a sample reflects events roughly **3 months** earlier. A high fever about 10 weeks ago injured germ cells in the early stages of that cycle, and those cells are reaching the ejaculate now. His normal testis size, FSH and testosterone show intact tubules and no hypogonadism, so the best step is **reassurance and a repeat semen analysis** after about 3 months. Biopsy, genetic testing, clomiphene and varicocele repair address other causes, and none is needed for a temporary insult.",
   "w": {
-   "Testicular biopsy to assess the seminiferous tubules": "Biopsy is reserved for azoospermia of unclear cause, and a transient dip after a fever recovers on its own; an invasive test would be premature with normal testis size and FSH.",
-   "Karyotype and Y chromosome microdeletion testing": "Genetic testing is advised for severe oligospermia below 5 million/mL or azoospermia; 8 million/mL with a recent fever does not meet that threshold and has an obvious transient cause.",
-   "Empiric clomiphene to raise serum FSH and LH": "Clomiphene raises gonadotropins in secondary hypogonadism; his FSH and testosterone are normal, so there is no deficiency to correct, and treatment would not shorten the 3-month sperm cycle.",
-   "Surgical ligation of the internal spermatic veins": "Venous ligation treats a palpable varicocele with abnormal semen, and none is found on examination; it also would not explain an abnormality that began after a fever."
+   "Testicular biopsy to assess the seminiferous tubules": "Biopsy is for azoospermia of unclear cause. A temporary dip after a fever recovers on its own, so an invasive test is premature with normal testis size and FSH.",
+   "Karyotype and Y chromosome microdeletion testing": "Genetic testing is for severe oligospermia or azoospermia. This man has a recent fever as an obvious temporary cause.",
+   "Empiric clomiphene to raise serum FSH and LH": "Clomiphene raises gonadotropins in secondary hypogonadism. His FSH and testosterone are normal, so there is no deficiency to correct, and it would not shorten the 3-month sperm cycle.",
+   "Surgical ligation of the internal spermatic veins": "Venous ligation treats a palpable varicocele with abnormal semen, and none is found here. It also would not explain an abnormality that began after a fever."
   },
   "et": [
    [
@@ -451,8 +451,8 @@
     ],
     [
      "Karyotype and Y chromosome microdeletion testing",
-     "Fewer than 5 million sperm per mL or azoospermia",
-     "8 million/mL with a recent fever"
+     "Severe oligospermia or azoospermia",
+     "Reduced sperm count with a recent fever"
     ],
     [
      "Reassurance and repeat semen analysis in 3 months",
@@ -504,12 +504,12 @@
    "Spermatozoon"
   ],
   "a": 1,
-  "e": "Meiosis I separates homologous chromosomes, so each **secondary spermatocyte** is haploid (1N) but still carries two sister chromatids per chromosome (2C). It lies between the primary spermatocytes and the spermatids, and it completes **meiosis II** within hours, which is why it is rarely seen on a biopsy. Spermatogonia are diploid with 2C, primary spermatocytes are diploid with 4C after DNA replication, and spermatids and spermatozoa are haploid with 1C and do not divide again.",
+  "e": "Meiosis I separates homologous chromosomes, so each **secondary spermatocyte** is haploid (1N) but still has two sister chromatids per chromosome (2C). It lies between the primary spermatocytes and the spermatids, and it finishes **meiosis II** within hours, which is why it is rarely seen on a biopsy. Spermatogonia are diploid with 2C, primary spermatocytes are diploid with 4C after DNA replication, and spermatids and spermatozoa are haploid with 1C and do not divide again.",
   "w": {
-   "Spermatogonium": "Spermatogonia are diploid stem cells on the basement membrane with 2N chromosomes and 2C DNA; they divide by mitosis and have not yet replicated DNA for meiosis.",
-   "Primary spermatocyte": "Primary spermatocytes have replicated their DNA, so they are 2N with 4C; they are still diploid and enter meiosis I, which makes them the largest and most visible germ cells on a section.",
-   "Spermatid": "Spermatids are haploid with single chromatids (1N, 1C) and do not divide again; they remodel into sperm during spermiogenesis.",
-   "Spermatozoon": "A spermatozoon is also 1N and 1C and is fully formed; it has already been released into the lumen and is no longer dividing."
+   "Spermatogonium": "Spermatogonia are diploid stem cells on the basement membrane (2N, 2C). They divide by mitosis and have not yet copied their DNA for meiosis.",
+   "Primary spermatocyte": "Primary spermatocytes have copied their DNA, so they are 2N with 4C. They are still diploid and enter meiosis I, and they are the largest, most visible germ cells.",
+   "Spermatid": "Spermatids are haploid with single chromatids (1N, 1C) and do not divide again. They remodel into sperm during spermiogenesis.",
+   "Spermatozoon": "A spermatozoon is also 1N and 1C. It is fully formed and released into the lumen, and it no longer divides."
   },
   "et": [
    [
@@ -570,7 +570,7 @@
    "HP-MALE.2",
    "PATHPHARM-MALE.4"
   ],
-  "s": "A 15-year-old boy has delayed puberty, a complete absence of the sense of smell, testes of 2 mL each and no pubic hair. Serum testosterone, LH and FSH are all low, and MRI of the brain shows absent olfactory bulbs. He is started on injections of human chorionic gonadotropin to stimulate his testes.",
+  "s": "A 15-year-old boy has delayed puberty, a complete absence of the sense of smell, very small testes and no pubic hair. Serum testosterone, LH and FSH are all low, and MRI of the brain shows absent olfactory bulbs. He is started on injections of human chorionic gonadotropin to stimulate his testes.",
   "l": "Which testicular cell type is the direct target of this hormone?",
   "o": [
    "Sertoli cell",
@@ -580,12 +580,12 @@
    "Primary spermatocyte"
   ],
   "a": 3,
-  "e": "Human chorionic gonadotropin is structurally similar to LH and binds the same LH receptor, so it works as an LH substitute. In this boy, Kallmann syndrome, failed migration of GnRH neurons, leaves the pituitary silent. The **Leydig cells** in the interstitium carry the LH receptor and respond to hCG by making testosterone, which restores androgen levels and drives virilization. FSH receptors sit on Sertoli cells, while germ cells and myoid cells lack gonadotropin receptors, so none of them is the direct target.",
+  "e": "Human chorionic gonadotropin is similar to LH and binds the same LH receptor, so it works as an LH substitute. This boy has Kallmann syndrome, in which GnRH neurons fail to migrate and the pituitary stays silent. The **Leydig cells** in the interstitium carry the LH receptor and respond to hCG by making testosterone, which restores androgen levels and drives virilization. FSH receptors sit on Sertoli cells, and germ cells and myoid cells have no gonadotropin receptors, so none of them is the direct target.",
   "w": {
-   "Sertoli cell": "Sertoli cells carry the FSH receptor, not the LH receptor; hCG does not bind them directly, although testosterone from Leydig cells later supports their function.",
-   "Spermatogonium": "Spermatogonia are germ stem cells without gonadotropin receptors; they depend on Sertoli cells and local testosterone for support.",
-   "Peritubular myoid cell": "Myoid cells are contractile cells around the tubule that move sperm onward; they respond to local factors but do not carry the LH receptor, so they are not the cell that hCG stimulates.",
-   "Primary spermatocyte": "Primary spermatocytes are meiotic germ cells inside the barrier with no LH receptor; they depend on Sertoli support and intratesticular testosterone."
+   "Sertoli cell": "Sertoli cells carry the FSH receptor, not the LH receptor. hCG does not bind them directly, although testosterone from Leydig cells later supports them.",
+   "Spermatogonium": "Spermatogonia are germ stem cells without gonadotropin receptors. They depend on Sertoli cells and local testosterone.",
+   "Peritubular myoid cell": "Myoid cells are contractile cells around the tubule that move sperm onward. They do not carry the LH receptor, so hCG does not stimulate them.",
+   "Primary spermatocyte": "Primary spermatocytes are meiotic germ cells inside the barrier with no LH receptor. They depend on Sertoli support and testosterone inside the tubule."
   },
   "et": [
    [
@@ -653,7 +653,7 @@
    "HP-MALE.3",
    "PATHPHARM-MALE.4"
   ],
-  "s": "A 29-year-old man with idiopathic hypogonadotropic hypogonadism has received hCG injections for 6 months. His serum testosterone is now normal and his testes have grown from 4 mL to 10 mL, but repeated semen analyses still show azoospermia. His endocrinologist adds recombinant FSH to the regimen to complete the induction of sperm production.",
+  "s": "A 29-year-old man with idiopathic hypogonadotropic hypogonadism has received hCG injections for 6 months. His serum testosterone is now normal and his testes have enlarged, but repeated semen analyses still show azoospermia. His endocrinologist adds recombinant FSH to the regimen to complete the induction of sperm production.",
   "l": "Which testicular cell type mediates the effect of the added hormone?",
   "o": [
    "Sertoli cell",
@@ -663,12 +663,12 @@
    "Secondary spermatocyte"
   ],
   "a": 0,
-  "e": "In hypogonadotropic hypogonadism, hCG imitates LH and stimulates **Leydig cells** to raise intratesticular and serum testosterone, which can start spermatogenesis in some men. When the ejaculate stays azoospermic, recombinant FSH is added, because FSH acts on **Sertoli cells**, the only cells in the testis that carry its receptor. Stimulated Sertoli cells make androgen-binding protein and inhibin B and support germ cell maturation. Leydig cells have already responded to hCG, and myoid cells and germ cells carry no FSH receptor.",
+  "e": "In hypogonadotropic hypogonadism, hCG imitates LH and stimulates **Leydig cells** to make testosterone, which can start spermatogenesis in some men. When the semen stays azoospermic, recombinant FSH is added, because FSH acts on **Sertoli cells**, the only cells in the testis that carry its receptor. Stimulated Sertoli cells make androgen-binding protein and inhibin B and support germ cell maturation. Leydig cells have already responded to hCG, and myoid cells and germ cells have no FSH receptor.",
   "w": {
-   "Leydig cell": "Leydig cells already responded to hCG, which acts through the LH receptor, and their testosterone is now normal; recombinant FSH has no receptor on them.",
-   "Spermatogonium": "Spermatogonia are germ cells without FSH receptors; FSH reaches them only indirectly, by stimulating the Sertoli cells that nurture them.",
-   "Peritubular myoid cell": "Myoid cells contract around the tubule and carry no FSH receptor, so they do not mediate the support that FSH gives to germ cell maturation.",
-   "Secondary spermatocyte": "Secondary spermatocytes are short-lived meiotic germ cells without FSH receptors; their progression depends on Sertoli support rather than on direct FSH signaling."
+   "Leydig cell": "Leydig cells already responded to hCG through the LH receptor, and their testosterone is now normal. They have no receptor for FSH.",
+   "Spermatogonium": "Spermatogonia are germ cells without FSH receptors. FSH reaches them only indirectly, by stimulating the Sertoli cells that nurture them.",
+   "Peritubular myoid cell": "Myoid cells contract around the tubule and have no FSH receptor. They do not mediate FSH support of germ cell maturation.",
+   "Secondary spermatocyte": "Secondary spermatocytes are short-lived meiotic germ cells without FSH receptors. Their progress depends on Sertoli support, not on direct FSH signaling."
   },
   "et": [
    [
@@ -737,12 +737,12 @@
    "Corpora amylacea"
   ],
   "a": 4,
-  "e": "**Corpora amylacea** are round, laminated, eosinophilic concretions of condensed prostatic secretions that accumulate in the gland lumens of older men. They distinguish the prostate, which has papillary infoldings and a two-cell lining, from the seminal vesicle, whose folded mucosa has none. Psammoma bodies are calcified concentric structures of papillary and serous tumors, Reinke crystals lie inside Leydig cells, Schiller-Duval bodies mark yolk sac tumor, and Michaelis-Gutmann bodies sit in macrophages in malakoplakia.",
+  "e": "**Corpora amylacea** are round, laminated, eosinophilic concretions of condensed secretions in the gland lumens of older men. They help tell the prostate, which has papillary infoldings and a two-cell lining, from the seminal vesicle, whose folded mucosa has none. Psammoma bodies are calcified concentric structures of papillary and serous tumors. Reinke crystals lie inside Leydig cells. Schiller-Duval bodies mark yolk sac tumor. Michaelis-Gutmann bodies sit in macrophages in malakoplakia.",
   "w": {
-   "Psammoma bodies": "Psammoma bodies are concentrically laminated calcifications found in papillary thyroid carcinoma, serous ovarian tumors and meningiomas; they are not the secretions that collect in benign prostatic glands.",
-   "Reinke crystals": "Reinke crystals are rod-shaped cytoplasmic inclusions in Leydig cells and their tumors in the testis, not extracellular concretions within prostatic gland lumens.",
-   "Schiller-Duval bodies": "Schiller-Duval bodies are glomerulus-like structures in yolk sac tumor of the testis, formed by a central vessel surrounded by tumor cells, not laminated secretions in glands.",
-   "Michaelis-Gutmann bodies": "Michaelis-Gutmann bodies are calcified, targetoid inclusions inside macrophages in malakoplakia, a chronic inflammatory condition of the urinary tract, not luminal secretions."
+   "Psammoma bodies": "Psammoma bodies are concentric calcifications in papillary thyroid carcinoma, serous ovarian tumors and meningiomas. They are not the secretions that collect in benign prostatic glands.",
+   "Reinke crystals": "Reinke crystals are rod-shaped inclusions inside Leydig cells and their tumors. They are not concretions in the lumens of prostatic glands.",
+   "Schiller-Duval bodies": "Schiller-Duval bodies are glomerulus-like structures in yolk sac tumor, formed by a central vessel surrounded by tumor cells. They are not laminated secretions in glands.",
+   "Michaelis-Gutmann bodies": "Michaelis-Gutmann bodies are calcified, targetoid inclusions inside macrophages in malakoplakia, a chronic inflammation of the urinary tract. They are not luminal secretions."
   },
   "et": [
    [
@@ -812,12 +812,12 @@
    "Seminal vesicle"
   ],
   "a": 0,
-  "e": "The **epididymis** is a single duct coiled into a compact structure on the posterior testis. Its pseudostratified columnar lining carries **stereocilia**, long nonmotile microvilli that absorb fluid, and sperm mature there and are stored in the tail. A thin circular smooth muscle layer propels them. The ductus deferens has a similar lining but a thick three-layered muscle wall, efferent ductules have a scalloped lumen with ciliated cells, the rete testis is lined by cuboidal cells, and the seminal vesicle never contains sperm.",
+  "e": "The **epididymis** is a single duct coiled into a compact structure on the back of the testis. Its tall pseudostratified columnar lining carries **stereocilia**, long nonmotile microvilli that absorb fluid. Sperm mature there and are stored in the tail, and a thin circular layer of smooth muscle moves them along. The ductus deferens has a similar lining but a thick three-layered muscle wall. The efferent ductules and the rete testis are short connecting channels near the testis, and the seminal vesicle never contains sperm.",
   "w": {
-   "Ductus deferens": "The ductus deferens has a similar lining but a very thick three-layered muscular wall around a narrow lumen, and it runs as a straight tube in the spermatic cord rather than as a coiled mass.",
-   "Efferent ductules": "Efferent ductules show a scalloped lumen lined by alternating tall ciliated cells and shorter absorptive cells; they are short connecting tubes between the rete testis and the epididymis.",
-   "Rete testis": "The rete testis is a network of anastomosing channels in the mediastinum lined by simple cuboidal epithelium, and it has no stereocilia and no thin muscle coat.",
-   "Seminal vesicle": "The seminal vesicle has a highly folded mucosa that makes fructose-rich fluid; it contains no spermatozoa, since sperm never enter the gland."
+   "Ductus deferens": "The ductus deferens has a similar lining but a very thick three-layered muscle wall around a narrow lumen. It runs as a straight tube in the spermatic cord, not as a coiled mass.",
+   "Efferent ductules": "The efferent ductules are short connecting tubes between the rete testis and the epididymis. They are not the long coiled duct packed with stored sperm.",
+   "Rete testis": "The rete testis is a network of small channels inside the testis that collects sperm from the tubules. It has no stereocilia and no muscle coat.",
+   "Seminal vesicle": "The seminal vesicle has a highly folded mucosa that makes fructose-rich fluid. It contains no spermatozoa, because sperm never enter the gland."
   },
   "et": [
    [
@@ -841,7 +841,7 @@
     ],
     [
      "Efferent ductules",
-     "Ciliated and absorptive cells, scalloped lumen",
+     "Ciliated and absorptive cells",
      "Thin",
      "Sperm and fluid"
     ],

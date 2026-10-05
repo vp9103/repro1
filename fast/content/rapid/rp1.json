@@ -19,7 +19,7 @@
   "x": "Peritoneum drapes down the back of the uterus onto the posterior fornix before rising onto the rectum, so the rectouterine pouch of Douglas is the most dependent recess when a woman is upright.",
   "w": {
    "Vesicouterine pouch": "The vesicouterine pouch between bladder and uterus is shallow and anterior, so fluid passes it by and pools behind the uterus.",
-   "Rectovesical pouch": "The rectovesical pouch is the male equivalent, between bladder and rectum; women have the uterus between those organs.",
+   "Rectovesical pouch": "The rectovesical pouch is the male equivalent, between bladder and rectum. Women have the uterus between those organs.",
    "Retropubic space": "The retropubic space is extraperitoneal fat between the pubic symphysis and bladder, outside the peritoneal cavity altogether.",
    "Hepatorenal pouch": "The hepatorenal recess is the lowest point of the upper abdomen in a supine patient, not of the pelvis in an upright woman."
   },
@@ -50,7 +50,7 @@
   "a": 0,
   "x": "The ovarian vessels arise from the aorta and drain toward the renal level, so they reach the ovary through the infundibulopelvic (suspensory) ligament from the pelvic side wall.",
   "w": {
-   "Ovarian ligament": "The ovarian ligament ties the ovary to the uterus and carries only a small anastomotic branch of the uterine artery.",
+   "Ovarian ligament": "The ovarian ligament ties the ovary to the uterus and carries no major vessel.",
    "Round ligament": "The round ligament runs to the labia majora through the inguinal canal and carries no major vessel.",
    "Cardinal ligament": "The cardinal ligament carries the uterine vessels from the internal iliac system, not the ovarian vessels from the aorta.",
    "Uterosacral ligament": "The uterosacral ligament runs from the cervix to the sacrum as a support and carries no named artery to the ovary."
@@ -84,8 +84,8 @@
   "w": {
    "Round ligament": "The round ligament leaves the uterine horn high and runs to the inguinal canal, far above the cervix.",
    "Obturator nerve": "The obturator nerve runs along the lateral pelvic wall to the obturator canal, lateral to the field of the uterine vessels.",
-   "Ovarian artery": "The ovarian artery reaches the ovary through the infundibulopelvic ligament and joins the uterine artery near the tube, not at the cervix.",
-   "Internal iliac vein": "The internal iliac vein lies deep on the side wall, receiving uterine veins, and does not cross beneath the artery beside the cervix."
+   "Ovarian artery": "The ovarian artery reaches the ovary through the infundibulopelvic ligament, high above the cervix.",
+   "Internal iliac vein": "The internal iliac vein lies deep on the side wall and does not cross beneath the artery beside the cervix."
   },
   "media": "fig:rp1_vessels",
   "pt": {
@@ -112,7 +112,7 @@
    "Splenic vein"
   ],
   "a": 0,
-  "x": "The left gonadal vein climbs to the left renal vein and enters at a right angle, while the right drains straight into the inferior vena cava; this is why varicoceles favor the left.",
+  "x": "The left gonadal vein climbs to the left renal vein and enters at a right angle, while the right drains straight into the inferior vena cava. This is why varicoceles favor the left.",
   "w": {
    "Inferior vena cava": "Only the right gonadal vein enters the inferior vena cava directly, because the cava lies on the right of the aorta.",
    "Left internal iliac vein": "The internal iliac veins drain the uterus, vagina, bladder and rectum, not the gonads, whose veins climb toward the kidneys.",
@@ -144,11 +144,11 @@
    "External anal sphincter"
   ],
   "a": 0,
-  "x": "The puborectalis loops behind the anorectal junction from the pubis on both sides, pulling it forward to keep the anorectal angle and hold stool; it relaxes during defecation so the angle straightens.",
+  "x": "The puborectalis is a sling that loops behind the anorectal junction and pulls it forward. This kink keeps the anorectal angle and helps hold stool in.",
   "w": {
-   "Pubococcygeus": "The pubococcygeus is the main levator mass around the urethra and vagina, inserting on the coccyx rather than looping behind the rectum.",
-   "Iliococcygeus": "The iliococcygeus is the thin posterior plate from the tendinous arch to the coccyx, too far back to bend the anorectal junction.",
-   "Coccygeus": "The coccygeus runs from the ischial spine to the sacrum and coccyx and completes the pelvic diaphragm behind the levator ani.",
+   "Pubococcygeus": "The pubococcygeus is the main levator ani muscle, wrapping around the urethra and vagina. It does not loop behind the rectum.",
+   "Iliococcygeus": "The iliococcygeus is the thin plate at the back of the levator ani, too far back to kink the anorectal junction.",
+   "Coccygeus": "The coccygeus is the smaller muscle of the pelvic diaphragm. It does not loop around the anorectal junction.",
    "External anal sphincter": "The external anal sphincter surrounds the lower anal canal and closes it voluntarily but does not create the angle above it."
   },
   "media": "fig:rp1_nerves",
@@ -173,15 +173,15 @@
    "Inferior gluteal nerve",
    "Sciatic nerve",
    "Pudendal nerve",
-   "Posterior femoral cutaneous nerve"
+   "Obturator nerve"
   ],
   "a": 0,
-  "x": "The piriformis splits the greater sciatic foramen; only the superior gluteal nerve and vessels pass above it, so injury there weakens the hip abductors and gives a Trendelenburg gait.",
+  "x": "The piriformis splits the greater sciatic foramen, and only the superior gluteal nerve and vessels pass above it. Injury there weakens the hip abductors and gives a Trendelenburg sign.",
   "w": {
    "Inferior gluteal nerve": "The inferior gluteal nerve leaves below the piriformis to supply gluteus maximus, the main hip extender.",
    "Sciatic nerve": "The sciatic nerve, the largest branch of the plexus, leaves below the piriformis to the back of the thigh.",
    "Pudendal nerve": "The pudendal nerve leaves below the piriformis and then hooks around the ischial spine into the perineum.",
-   "Posterior femoral cutaneous nerve": "The posterior femoral cutaneous nerve exits below the piriformis to supply skin over the back of the thigh."
+   "Obturator nerve": "The obturator nerve runs along the pelvic side wall to the thigh adductors. It does not leave through the greater sciatic foramen."
   },
   "media": "fig:rp1_nerves",
   "pt": {
@@ -209,12 +209,12 @@
    "Beta-2 adrenergic"
   ],
   "a": 0,
-  "x": "Parasympathetic pelvic splanchnic fibers release acetylcholine onto muscarinic M3 receptors on detrusor smooth muscle, raising calcium through Gq so the bladder contracts; antimuscarinics such as oxybutynin treat urge incontinence by blocking them.",
+  "x": "To void, parasympathetic pelvic splanchnic fibers release acetylcholine onto muscarinic M3 receptors on the detrusor. The bladder then contracts and empties.",
   "w": {
    "Nicotinic": "Nicotinic receptors sit in autonomic ganglia and at the neuromuscular junction of the external sphincter, not on detrusor smooth muscle itself.",
    "Alpha-1 adrenergic": "Alpha-1 receptors on the bladder neck and prostate contract the internal sphincter under sympathetic control, which helps storage.",
-   "Beta-3 adrenergic": "Beta-3 receptors relax the detrusor during filling; mirabegron stimulates them to treat overactive bladder, the opposite of contraction.",
-   "Beta-2 adrenergic": "Beta-2 receptors relax airway and uterine smooth muscle; they are not the main receptor driving detrusor contraction."
+   "Beta-3 adrenergic": "Beta-3 receptors relax the detrusor while the bladder fills. That is the opposite of contraction.",
+   "Beta-2 adrenergic": "Beta-2 receptors relax airway and uterine smooth muscle. They are not the main receptor driving detrusor contraction."
   },
   "media": "fig:rp1_nerves",
   "pt": {
@@ -275,10 +275,10 @@
   "a": 0,
   "x": "The bladder rests on the anterior vaginal wall, so loss of anterior support lets it bulge into the vagina as a cystocele, often with stress incontinence or incomplete emptying.",
   "w": {
-   "Rectum": "The rectum lies behind the posterior vaginal wall; its bulge into the vagina is a rectocele, not an anterior defect.",
-   "Small bowel": "Small bowel herniating into the rectouterine pouch pushes down the upper posterior vagina as an enterocele, not the anterior wall.",
-   "Uterus": "Uterine descent is apical prolapse from cardinal and uterosacral failure; the cervix moves down the canal rather than the anterior wall bulging.",
-   "Sigmoid colon": "The sigmoid colon lies higher in the pelvis and only rarely fills a deep rectouterine pouch; it does not press on the anterior wall."
+   "Rectum": "The rectum lies behind the posterior vaginal wall. Its bulge into the vagina is a rectocele, not an anterior defect.",
+   "Small bowel": "Small bowel can bulge into the posterior vaginal wall (an enterocele), but it does not press on the anterior wall.",
+   "Uterus": "Uterine descent is apical prolapse from cardinal and uterosacral failure. The cervix moves down the canal rather than the anterior wall bulging.",
+   "Sigmoid colon": "The sigmoid colon lies higher in the pelvis and does not press on the anterior vaginal wall."
   },
   "media": "fig:rp1_sagittal",
   "pt": {
@@ -305,12 +305,12 @@
    "Inferior mesenteric artery"
   ],
   "a": 0,
-  "x": "The uterine artery is a visceral branch of the anterior division of the internal iliac artery; it runs medially over the cardinal ligament and anastomoses with the ovarian artery near the tube.",
+  "x": "The uterine artery is a visceral branch of the anterior division of the internal iliac artery. It runs medially over the cardinal ligament toward the cervix.",
   "w": {
-   "External iliac artery": "The external iliac artery continues to the leg as the femoral artery and gives only the inferior epigastric and deep circumflex iliac branches.",
+   "External iliac artery": "The external iliac artery continues into the leg as the femoral artery. It does not supply the uterus.",
    "Abdominal aorta": "The aorta gives the ovarian arteries directly, below the renal arteries, but the uterine artery comes from the pelvic system.",
-   "Common iliac artery": "The common iliac artery gives no named visceral branch; it simply divides into internal and external iliac arteries at the brim.",
-   "Inferior mesenteric artery": "The inferior mesenteric artery supplies the hindgut and ends as the superior rectal artery, a collateral, not the uterine source."
+   "Common iliac artery": "The common iliac artery simply divides into the internal and external iliac arteries at the pelvic brim. It does not give off the uterine artery.",
+   "Inferior mesenteric artery": "The inferior mesenteric artery supplies the hindgut and ends as the superior rectal artery. It has nothing to do with the uterus."
   },
   "media": "fig:rp1_vessels",
   "pt": {
@@ -333,15 +333,15 @@
    "Cardinal ligament",
    "Broad ligament",
    "Round ligament",
-   "Pubocervical ligament",
+   "Infundibulopelvic ligament",
    "Ovarian ligament"
   ],
   "a": 0,
-  "x": "The cardinal (transverse cervical) ligament is a condensation of endopelvic fascia from the cervix and upper vagina to the side wall; with the uterosacral ligaments it is the main apical support.",
+  "x": "The cardinal (transverse cervical) ligament is a thickening of endopelvic fascia running from the cervix to the side wall. With the uterosacral ligaments, it is the main support of the cervix and upper vagina.",
   "w": {
    "Broad ligament": "The broad ligament is a peritoneal double fold over the uterus and tubes and gives almost no mechanical support.",
    "Round ligament": "The round ligament runs from the uterine horn through the inguinal canal to the labia majora and is slack.",
-   "Pubocervical ligament": "The pubocervical ligament runs forward from the cervix to the pubis beneath the bladder, not out to the side wall.",
+   "Infundibulopelvic ligament": "The infundibulopelvic ligament suspends the ovary from the side wall and carries the ovarian vessels. It does not suspend the cervix.",
    "Ovarian ligament": "The ovarian ligament holds the ovary to the uterine horn and has nothing to do with the cervix."
   },
   "media": "fig:rp1_vessels",
@@ -369,12 +369,12 @@
    "Vertical, in line with the vagina"
   ],
   "a": 0,
-  "x": "Normally the uterus is anteverted, tipped forward on the vaginal axis, and anteflexed, its body bent forward on the cervix, so it rests on the bladder; retroversion occurs in a minority.",
+  "x": "Normally the uterus is anteverted, tipped forward on the vaginal axis, and anteflexed, its body bent forward on the cervix, so it rests on the bladder. Retroversion occurs in a minority.",
   "w": {
-   "Retroverted and retroflexed": "A retroverted, retroflexed uterus tilts back toward the rectum; it occurs in a minority of women and is usually a normal variant.",
+   "Retroverted and retroflexed": "A retroverted, retroflexed uterus tilts back toward the rectum. It occurs in a minority of women and is usually a normal variant.",
    "Anteverted and retroflexed": "This mixed position, cervix forward but body bent back, is uncommon and does not describe the usual adult uterus.",
    "Retroverted and anteflexed": "A retroverted uterus with a forward-bent body is an uncommon mixed variant, not the typical adult position.",
-   "Vertical, in line with the vagina": "A uterus in line with the vagina is the position that anteversion avoids; the forward angle keeps abdominal pressure from pushing it down the canal."
+   "Vertical, in line with the vagina": "A uterus in line with the vagina is the position that anteversion avoids. The forward angle keeps abdominal pressure from pushing it down the canal."
   },
   "media": "fig:rp1_sagittal",
   "pt": {

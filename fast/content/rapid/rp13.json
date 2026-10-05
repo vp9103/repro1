@@ -18,10 +18,10 @@
   "a": 0,
   "x": "E6 binds p53 and recruits a ubiquitin ligase that sends it to the proteasome, so HPV-infected cells with DNA damage neither arrest in G1 nor undergo apoptosis.",
   "w": {
-   "E7": "E7 is the partner oncoprotein that binds Rb and releases E2F; it drives cells into S phase but leaves p53 intact.",
-   "E2": "E2 is a viral repressor of E6 and E7 transcription; integration disrupts it, which is why oncoprotein levels rise.",
-   "L1": "L1 is the major capsid protein that forms the virion shell and the vaccine's virus-like particles; it has no cell-cycle role.",
-   "E5": "E5 is a minor transforming protein affecting growth factor receptors and immune recognition; it is not the protein that destroys the guardian of the genome."
+   "E7": "E7 is the partner oncoprotein that binds Rb and releases E2F. It drives cells into S phase but leaves p53 intact.",
+   "E2": "E2 is a viral repressor of E6 and E7 transcription. Integration disrupts it, which is why oncoprotein levels rise.",
+   "L1": "L1 is the major capsid protein that forms the virion shell and the vaccine's virus-like particles. It has no cell-cycle role.",
+   "E5": "E5 is a minor transforming protein. It is not the protein that destroys p53."
   },
   "media": "fig:rp13_e6e7",
   "pt": {
@@ -48,12 +48,12 @@
    "E1"
   ],
   "a": 0,
-  "x": "E7 binds hypophosphorylated Rb and displaces E2F transcription factors, switching on S-phase genes; because Rb normally keeps p16 low, E7 activity also makes p16 accumulate.",
+  "x": "E7 binds Rb and displaces E2F transcription factors, switching on S-phase genes. Because Rb normally keeps p16 low, E7 activity also makes p16 accumulate.",
   "w": {
-   "E6": "E6 disables the other tumor suppressor, p53, by tagging it for proteasomal destruction; it does not bind Rb or free E2F.",
-   "E2": "E2 restrains viral oncogene transcription; its loss after integration increases E7, but E2 itself never binds Rb.",
-   "L2": "L2 is the minor capsid protein that helps the virion enter cells; it is structural and has no effect on the cell cycle.",
-   "E1": "E1 is the viral helicase that replicates the episomal genome; it copies viral DNA rather than inactivating host tumor suppressors."
+   "E6": "E6 disables the other tumor suppressor, p53, by tagging it for proteasomal destruction. It does not bind Rb or free E2F.",
+   "E2": "E2 restrains viral oncogene transcription. Its loss after integration increases E7, but E2 itself never binds Rb.",
+   "L2": "L2 is the minor capsid protein that helps the virion enter cells. It is structural and has no effect on the cell cycle.",
+   "E1": "E1 is the viral helicase that replicates the episomal genome. It copies viral DNA rather than inactivating host tumor suppressors."
   },
   "media": "fig:rp13_e6e7",
   "pt": {
@@ -76,17 +76,17 @@
   "o": [
    "16 and 18",
    "6 and 11",
-   "1 and 4",
-   "2 and 7",
-   "5 and 8"
+   "1 and 2",
+   "31 and 33",
+   "45 and 52"
   ],
   "a": 0,
-  "x": "Types 16 and 18 cause about 70 percent of cervical cancers; type 16 is the most oncogenic and dominates squamous carcinoma, while 18 is overrepresented in adenocarcinoma.",
+  "x": "Types 16 and 18 cause about 70 percent of cervical cancers. Type 16 dominates squamous carcinoma, and type 18 is linked to adenocarcinoma.",
   "w": {
-   "6 and 11": "Types 6 and 11 are low-risk types that cause condylomata acuminata and laryngeal papillomas; they rarely integrate and are not oncogenic in the cervix.",
-   "1 and 4": "Types 1 and 4 infect keratinized skin of the soles and palms, causing plantar and palmar warts, not anogenital lesions.",
-   "2 and 7": "Type 2 causes common hand warts and type 7 causes warts in meat and fish handlers; neither is linked to cervical neoplasia.",
-   "5 and 8": "Types 5 and 8 are linked to skin cancers in epidermodysplasia verruciformis and in immunosuppressed skin, not to cervical cancer."
+   "6 and 11": "Types 6 and 11 are low-risk types that cause genital warts. They rarely integrate and are not oncogenic in the cervix.",
+   "1 and 2": "Types 1 and 2 infect keratinized skin and cause common and plantar warts, not anogenital lesions.",
+   "31 and 33": "Types 31 and 33 are also high-risk, but they cause far fewer cervical cancers than types 16 and 18.",
+   "45 and 52": "These high-risk types add a smaller share of cervical cancers, well below the share caused by types 16 and 18."
   },
   "media": "fig:rp13_e6e7",
   "pt": {
@@ -114,7 +114,7 @@
    "Vaginal fornix"
   ],
   "a": 0,
-  "x": "The transformation zone, between the original and active squamocolumnar junctions, holds immature metaplastic cells that high-risk HPV infects most efficiently; nearly all CIN and cervical carcinoma start there.",
+  "x": "The transformation zone, between the original and active squamocolumnar junctions, holds immature metaplastic cells that high-risk HPV infects most efficiently. Nearly all CIN and cervical carcinoma start there.",
   "w": {
    "Mid-ectocervix": "The mid-ectocervix is covered by mature, glycogen-rich squamous epithelium that completed metaplasia long ago and resists viral transformation.",
    "Internal os": "The internal os marks the junction of canal and uterine cavity, lined by glandular cells well above the usual squamous neoplasia site.",
@@ -146,12 +146,12 @@
    "Endocervical cell"
   ],
   "a": 0,
-  "x": "A koilocyte is a squamous cell showing HPV cytopathic effect: an enlarged, wrinkled, hyperchromatic nucleus and a clear cavity around it; koilocytes are the hallmark of LSIL.",
+  "x": "A koilocyte is a squamous cell showing HPV cytopathic effect: an enlarged, wrinkled, hyperchromatic nucleus and a clear cavity around it. Koilocytes are the hallmark of LSIL.",
   "w": {
    "Clue cell": "Clue cells are squamous cells coated with adherent bacteria that blur their borders, the sign of bacterial vaginosis, and their nuclei are normal.",
-   "Parabasal cell": "Parabasal cells are small round immature squamous cells that dominate atrophic smears after menopause; they lack halos and viral nuclear wrinkling.",
+   "Parabasal cell": "Parabasal cells are small round immature squamous cells that dominate atrophic smears after menopause. They lack halos and viral nuclear wrinkling.",
    "Signet ring cell": "Signet ring cells hold a mucin vacuole that pushes the nucleus aside, typical of diffuse gastric carcinoma, not HPV infection.",
-   "Endocervical cell": "Normal endocervical cells are columnar, arranged in honeycomb sheets, with small basal nuclei; they show no perinuclear clearing."
+   "Endocervical cell": "Normal endocervical cells are columnar, arranged in honeycomb sheets, with small basal nuclei. They show no perinuclear clearing."
   },
   "media": "fig:rp13_cin",
   "pt": {
@@ -179,12 +179,12 @@
    "Microinvasive carcinoma"
   ],
   "a": 0,
-  "x": "CIN 1 limits atypia to the lower third and is reported as LSIL; most cases regress as the immune system clears the virus, so it is usually watched rather than excised.",
+  "x": "CIN 1 limits atypia to the lower third and is reported as LSIL. Most cases regress as the immune system clears the virus, so it is usually watched rather than excised.",
   "w": {
    "CIN 2": "CIN 2 extends into the lower two-thirds and is grouped as HSIL, with p16 staining used to confirm the high grade.",
    "CIN 3": "CIN 3 extends beyond two-thirds to full thickness, carries a high risk of progression, and is treated by excision.",
-   "Carcinoma in situ": "Carcinoma in situ means full-thickness atypia with an intact basement membrane; it falls within CIN 3 and HSIL.",
-   "Microinvasive carcinoma": "Microinvasion means tumor cells have crossed the basement membrane a few millimeters into stroma; it is invasive cancer, not an intraepithelial grade."
+   "Carcinoma in situ": "Carcinoma in situ means full-thickness atypia with an intact basement membrane. It falls within CIN 3 and HSIL.",
+   "Microinvasive carcinoma": "Microinvasion means tumor cells have crossed the basement membrane a few millimeters into stroma. It is invasive cancer, not an intraepithelial grade."
   },
   "media": "fig:rp13_cin",
   "pt": {
@@ -214,7 +214,7 @@
   "x": "A basement membrane breach defines invasion: CIN 3 already has full-thickness atypia, mitoses high in the epithelium and block p16, but only invading cells reach stromal lymphatics and vessels.",
   "w": {
    "Full-thickness atypia": "Full-thickness atypia is present in CIN 3 and carcinoma in situ, so it cannot by itself show that the tumor has invaded.",
-   "Koilocytes": "Koilocytes reflect productive viral infection and are most typical of low-grade lesions; they say nothing about invasion.",
+   "Koilocytes": "Koilocytes reflect productive viral infection and are most typical of low-grade lesions. They say nothing about invasion.",
    "Block p16 staining": "Continuous p16 marks HPV oncogene activity in both HSIL and invasive cancer, so it cannot distinguish the two.",
    "Mitoses above the basal layer": "Mitoses in the upper layers show loss of maturation, a feature shared by CIN 2, CIN 3 and invasive carcinoma."
   },
@@ -245,10 +245,10 @@
   "a": 0,
   "x": "From 21 to 29, cytology every 3 years is the schedule, because HPV infection is common and transient at these ages and testing for it would flag many lesions destined to regress.",
   "w": {
-   "Annual cytology": "Yearly Pap testing was abandoned because cancer develops slowly and most young women's abnormalities regress; annual screening adds harm from overtreatment.",
-   "Cotesting every 5 years": "Cotesting is reserved for ages 30 to 65; in younger women the HPV component is positive so often that it drives unnecessary colposcopy.",
-   "Cytology every 5 years": "Cytology alone misses enough lesions that it must be repeated sooner; five-year spacing is allowed only with an HPV-based test.",
-   "No screening until 30": "Average-risk screening begins at age 21 regardless of sexual history; waiting until 30 would miss precancers that develop in the twenties."
+   "Annual cytology": "Yearly Pap testing was abandoned because cancer develops slowly and most young women's abnormalities regress. Annual screening adds harm from overtreatment.",
+   "Cotesting every 5 years": "Cotesting is reserved for ages 30 to 65. In younger women the HPV component is positive so often that it drives unnecessary colposcopy.",
+   "Cytology every 5 years": "Cytology alone misses enough lesions that it must be repeated sooner. Five-year spacing is allowed only with an HPV-based test.",
+   "No screening until 30": "Average-risk screening begins at age 21 regardless of sexual history. Waiting until 30 would miss precancers that develop in the twenties."
   },
   "media": "fig:rp13_screen",
   "pt": {
@@ -275,12 +275,12 @@
    "In 2 years"
   ],
   "a": 0,
-  "x": "A negative primary HPV test means no high-risk virus, so the chance of CIN 3 developing over the next five years is very low; the next screen is in 5 years.",
+  "x": "A negative primary HPV test means no high-risk virus, so the chance of CIN 3 developing over the next five years is very low. The next screen is in 5 years.",
   "w": {
-   "In 1 year": "Annual screening is used only in special cases, such as the first years after an HIV diagnosis; for an average-risk woman it adds harm without benefit.",
-   "In 3 years": "Three years is the interval after negative cytology alone, a less sensitive test; an HPV-negative result supports the longer gap.",
-   "In 10 years": "No average-risk schedule spaces tests a decade apart before 65; new infections can still progress within ten years.",
-   "In 2 years": "No cervical screening schedule uses two-year spacing; it would roughly double the number of tests without a meaningful gain in protection."
+   "In 1 year": "Annual screening is used only in special cases, such as the first years after an HIV diagnosis. For an average-risk woman it adds harm without benefit.",
+   "In 3 years": "Three years is the interval after negative cytology alone, a less sensitive test. An HPV-negative result supports the longer gap.",
+   "In 10 years": "No average-risk schedule spaces tests a decade apart before 65. New infections can still progress within ten years.",
+   "In 2 years": "No cervical screening schedule uses two-year spacing. It would roughly double the number of tests without a meaningful gain in protection."
   },
   "media": "fig:rp13_screen",
   "pt": {
@@ -307,10 +307,10 @@
    "Normal saline"
   ],
   "a": 0,
-  "x": "Dilute acetic acid coagulates nuclear proteins; dysplastic epithelium, dense with large nuclei, reflects light and turns acetowhite, guiding the colposcopist to biopsy the worst-looking area.",
+  "x": "Dilute acetic acid coagulates nuclear proteins. Dysplastic epithelium, dense with large nuclei, reflects light and turns acetowhite, guiding the colposcopist to biopsy the worst-looking area.",
   "w": {
-   "Potassium hydroxide": "KOH dissolves squamous cells to reveal fungal hyphae on a wet mount and releases amine odor in bacterial vaginosis; it is not a colposcopy stain.",
-   "Hydrogen peroxide": "Peroxide is an antiseptic that foams on tissue; it does not highlight dysplasia and is not part of a standard colposcopic examination.",
+   "Potassium hydroxide": "KOH dissolves squamous cells to reveal fungal hyphae on a wet mount and releases amine odor in bacterial vaginosis. It is not a colposcopy stain.",
+   "Hydrogen peroxide": "Peroxide is an antiseptic that foams on tissue. It does not highlight dysplasia and is not part of a standard colposcopic examination.",
    "Toluidine blue": "Toluidine blue has been used to mark vulvar and oral lesions, but it stains nuclei blue rather than whitening them and is not standard for the cervix.",
    "Normal saline": "Saline cleans mucus and lets the colposcopist study vessels through a green filter, but it produces no whitening of abnormal epithelium."
   },
@@ -343,9 +343,9 @@
   "x": "The 9-valent vaccine is recombinant L1 capsid protein that self-assembles into virus-like particles without DNA, so it induces neutralizing antibodies but cannot cause infection.",
   "w": {
    "E6 oncoprotein": "E6 is made inside infected cells and is not on the virion surface, so antibodies against it would not neutralize incoming virus.",
-   "E7 oncoprotein": "E7 drives transformation from within cells; it is a target of experimental therapeutic vaccines, not of the licensed preventive vaccine.",
-   "L2 minor capsid protein": "L2 is a minor structural protein studied for broadly protective vaccines, but the licensed vaccine is built from the major capsid protein.",
-   "Live attenuated virus": "No live HPV vaccine exists; the subunit vaccine can be given to immunocompromised patients because it contains no replicating virus."
+   "E7 oncoprotein": "E7 drives transformation from within infected cells. It is not an antigen of the licensed preventive vaccine.",
+   "L2 minor capsid protein": "L2 is a minor structural protein. The licensed vaccine is built from the major capsid protein, L1.",
+   "Live attenuated virus": "No live HPV vaccine exists. The licensed vaccine is a subunit vaccine that contains no replicating virus."
   },
   "media": "fig:rp13_screen",
   "pt": {
@@ -372,12 +372,12 @@
    "Gestational diabetes"
   ],
   "a": 0,
-  "x": "LEEP and especially cold-knife conization remove supportive cervical stroma, so the cervix can dilate painlessly in the second trimester: cervical insufficiency, with pregnancy loss or preterm birth.",
+  "x": "Excision of the cervix, such as a cone biopsy or LEEP, removes supportive cervical stroma, so the cervix can dilate painlessly in the second trimester. This is cervical insufficiency, with pregnancy loss or preterm birth.",
   "w": {
-   "Placenta previa": "Previa follows prior uterine scars such as cesarean delivery, which change where the placenta implants; cervical excision leaves the uterine cavity untouched.",
-   "Preeclampsia": "Preeclampsia arises from abnormal placental spiral artery remodeling and endothelial injury; it is unrelated to the length of the cervix.",
-   "Uterine rupture": "Rupture follows a scarred myometrium, usually a prior classical cesarean or myomectomy, during labor; the cervix does not carry that load.",
-   "Gestational diabetes": "Gestational diabetes reflects placental hormones such as human placental lactogen causing insulin resistance; it has no link to cervical surgery."
+   "Placenta previa": "Previa follows prior uterine scars such as cesarean delivery, which change where the placenta implants. Cervical excision leaves the uterine cavity untouched.",
+   "Preeclampsia": "Preeclampsia arises from abnormal placental spiral artery remodeling and endothelial injury. It is unrelated to the length of the cervix.",
+   "Uterine rupture": "Rupture follows a scarred myometrium, usually a prior classical cesarean or myomectomy, during labor. The cervix does not carry that load.",
+   "Gestational diabetes": "Gestational diabetes reflects placental hormones such as human placental lactogen causing insulin resistance. It has no link to cervical surgery."
   },
   "media": "fig:rp13_screen",
   "pt": {
@@ -405,12 +405,12 @@
    "Bowel perforation with peritonitis"
   ],
   "a": 0,
-  "x": "Cervical cancer spreads laterally into the parametria, where it compresses the ureters; bilateral hydronephrosis then causes renal failure, a leading cause of death from this tumor.",
+  "x": "Cervical cancer spreads laterally into the parametria, where it compresses the ureters. Bilateral hydronephrosis then causes renal failure, a leading cause of death from this tumor.",
   "w": {
    "Hepatic failure from liver metastases": "Hematogenous spread to the liver occurs late and less often than local extension, which usually causes death first by obstructing the urinary tract.",
-   "Herniation from brain metastases": "Brain spread is uncommon in cervical cancer; it is far more typical of lung cancer, melanoma and breast cancer.",
+   "Herniation from brain metastases": "Brain spread is uncommon in cervical cancer. It is far more typical of lung cancer, melanoma and breast cancer.",
    "Massive pulmonary embolism": "Pelvic tumors raise thrombotic risk, but embolism is a complication rather than the characteristic cause of death in untreated cervical cancer.",
-   "Bowel perforation with peritonitis": "Bowel involvement is more typical of ovarian cancer spreading across the peritoneum; cervical tumors mainly extend sideways into the parametria."
+   "Bowel perforation with peritonitis": "Bowel involvement is more typical of ovarian cancer spreading across the peritoneum. Cervical tumors mainly extend sideways into the parametria."
   }
  },
  {
@@ -430,11 +430,11 @@
    "Gardnerella vaginalis"
   ],
   "a": 0,
-  "x": "Chlamydia trachomatis is the most common cause of mucopurulent cervicitis and the most commonly reported bacterial STI; it is often silent, so sexually active women 24 and younger are screened by NAAT.",
+  "x": "Chlamydia trachomatis is the most common cause of mucopurulent cervicitis and the most commonly reported bacterial STI. It is often silent, so it is found by NAAT.",
   "w": {
-   "Neisseria gonorrhoeae": "Gonorrhea causes the same picture and is often concurrent, but it is less common than chlamydia; Gram stain may show intracellular diplococci.",
+   "Neisseria gonorrhoeae": "Gonorrhea causes the same picture and is often concurrent, but it is less common than chlamydia. Gram stain may show intracellular diplococci.",
    "Trichomonas vaginalis": "Trichomoniasis causes frothy yellow-green discharge, vulvar irritation and a strawberry cervix, with motile protozoa on wet mount.",
-   "Candida albicans": "Candida causes thick white curdy discharge and vulvar itching with normal vaginal pH; it does not produce mucopurulent cervicitis.",
+   "Candida albicans": "Candida causes thick white curdy discharge and vulvar itching with normal vaginal pH. It does not produce mucopurulent cervicitis.",
    "Gardnerella vaginalis": "Gardnerella overgrowth causes bacterial vaginosis with a thin gray fishy discharge and clue cells, not cervical inflammation with pus."
   },
   "media": "fig:rp13_screen",
@@ -462,11 +462,11 @@
    "Endometrioma"
   ],
   "a": 0,
-  "x": "A nabothian cyst forms when metaplastic squamous epithelium covers a crypt opening and traps mucus; it is a smooth, yellowish, harmless dome in the transformation zone that needs no treatment.",
+  "x": "A nabothian cyst forms when metaplastic squamous epithelium covers a crypt opening and traps mucus. It is a smooth, yellowish, harmless dome in the transformation zone that needs no treatment.",
   "w": {
    "Gartner duct cyst": "Gartner duct cysts arise from mesonephric duct remnants in the lateral vaginal wall, not from mucus-secreting endocervical glands.",
    "Bartholin cyst": "Bartholin cysts form when the duct of a greater vestibular gland is blocked at the vulvar introitus, far from the cervix.",
-   "Cervical polyp": "A cervical polyp is a stalked overgrowth of endocervical glands and stroma that can bleed after intercourse; it is solid, not a sealed crypt.",
+   "Cervical polyp": "A cervical polyp is a stalked overgrowth of endocervical glands and stroma that can bleed after intercourse. It is solid, not a sealed crypt.",
    "Endometrioma": "An endometrioma is an ovarian cyst of ectopic endometrium filled with old blood, the chocolate cyst of endometriosis."
   }
  },
@@ -487,12 +487,12 @@
    "Annual colonoscopy"
   ],
   "a": 0,
-  "x": "HIV-related immunosuppression lets HPV persist, and the anal canal has its own transformation zone, so people with HIV are offered anal cytology with high-resolution anoscopy for abnormal results.",
+  "x": "HIV-related immunosuppression lets HPV persist, and the anal canal has its own transformation zone, so people with HIV are offered anal cytology, with anoscopy and biopsy for an abnormal result.",
   "w": {
-   "Oral cavity biopsy": "HPV does cause oropharyngeal cancer, but no validated screening test exists for it; blind biopsies of normal mucosa are not recommended.",
-   "Penile ultrasonography": "Penile cancer is rare and diagnosed by examining and biopsying visible lesions; imaging has no role in screening for HPV disease.",
-   "Laryngoscopy": "Laryngoscopy evaluates hoarseness or recurrent respiratory papillomatosis from types 6 and 11; it is not an HPV cancer screening test.",
-   "Annual colonoscopy": "Colonoscopy screens for colorectal adenomas on an age-based schedule; it does not examine the anal transformation zone where HPV-driven lesions arise."
+   "Oral cavity biopsy": "HPV does cause oropharyngeal cancer, but no validated screening test exists for it. Blind biopsies of normal mucosa are not recommended.",
+   "Penile ultrasonography": "Penile cancer is rare and diagnosed by examining and biopsying visible lesions. Imaging has no role in screening for HPV disease.",
+   "Laryngoscopy": "Laryngoscopy evaluates hoarseness or recurrent respiratory papillomatosis from types 6 and 11. It is not an HPV cancer screening test.",
+   "Annual colonoscopy": "Colonoscopy screens for colorectal adenomas on an age-based schedule. It does not examine the anal transformation zone where HPV-driven lesions arise."
   },
   "media": "fig:rp13_screen",
   "pt": {

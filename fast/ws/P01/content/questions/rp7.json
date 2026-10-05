@@ -104,7 +104,7 @@
   "w": {
    "DHEA-S": "This adrenal androgen rises at adrenarche and grows pubic and axillary hair. It is weak and does not build breast tissue.",
    "Progesterone": "Progesterone develops the breast lobules only after ovulatory cycles begin, which is after menarche, years after the breast bud appears.",
-   "Prolactin": "Prolactin drives milk production in breast tissue that estrogen has already built; it does not start pubertal breast growth.",
+   "Prolactin": "Prolactin drives milk production in breast tissue that estrogen has already built. It does not start pubertal breast growth.",
    "Testosterone": "Testosterone opposes breast growth. Breast tissue in a boy appears only when estradiol rises relative to testosterone."
   },
   "et": [
@@ -261,7 +261,7 @@
   "a": 0,
   "e": "Vaginal bleeding with suppressed LH and FSH, a café-au-lait macule with a jagged border and fibrous dysplasia of the femur form the triad of McCune-Albright syndrome. A postzygotic **activating mutation of the Gs alpha subunit** (GNAS) keeps cAMP signaling on, so ovarian cysts make estrogen without gonadotropins. This is peripheral precocious puberty. Early activation of the GnRH pulse generator would raise LH. Neurofibromatosis type 1 also causes café-au-lait macules, but they have smooth borders.",
   "w": {
-   "Early activation of the GnRH pulse generator": "Central precocious puberty raises LH and FSH to pubertal levels; her suppressed gonadotropins show that the estrogen comes from outside the axis.",
+   "Early activation of the GnRH pulse generator": "Central precocious puberty raises LH and FSH to pubertal levels. Her suppressed gonadotropins show that the estrogen comes from outside the axis.",
    "Loss-of-function mutation of neurofibromin": "Neurofibromatosis type 1 gives smooth-bordered café-au-lait macules. It does not cause fibrous dysplasia of bone or estrogen excess with suppressed LH.",
    "Deficiency of adrenal 21-hydroxylase": "21-hydroxylase deficiency causes peripheral puberty from adrenal androgens. It produces pubic hair and virilization rather than breast growth and vaginal bleeding.",
    "hCG secretion by a germ cell tumor": "hCG-secreting tumors cause peripheral puberty mainly in boys, because hCG alone stimulates Leydig cells. It would not explain the skin and bone lesions."
@@ -341,7 +341,7 @@
   "a": 0,
   "e": "Virilization with prepubertal-size testes and a prepubertal LH means the androgen comes from outside the testes, and a markedly high 17-hydroxyprogesterone points to the adrenal gland. This is simple virilizing **21-hydroxylase deficiency**. The testes enlarge when gonadotropins, hCG or an activating LH receptor mutation stimulate them, but adrenal androgens leave them small. A hypothalamic hamartoma causes central puberty with pubertal LH and enlargement of both testes, and a Leydig cell tumor enlarges one testis.",
   "w": {
-   "Hypothalamic hamartoma": "A hamartoma triggers central puberty, so LH would be pubertal and both testes would enlarge; his LH is prepubertal and his testes are small.",
+   "Hypothalamic hamartoma": "A hamartoma triggers central puberty, so LH would be pubertal and both testes would enlarge. His LH is prepubertal and his testes are small.",
    "Leydig cell tumor": "A Leydig cell tumor makes testosterone inside one testis, which is enlarged and often has a palpable mass. Both of his testes are small, and 17-hydroxyprogesterone would be normal.",
    "hCG-secreting germinoma": "hCG acts at the LH receptor and stimulates both testes, which enlarge modestly. It does not raise 17-hydroxyprogesterone.",
    "Familial testotoxicosis": "An activating LH receptor mutation makes the testes produce testosterone and grow without LH. The adrenal marker 17-hydroxyprogesterone stays normal."
@@ -420,7 +420,7 @@
    "Primary hypothyroidism"
   ],
   "a": 0,
-  "e": "A healthy, short boy growing steadily along his own percentile, with a father who matured late, a bone age 2.5 years behind and gonadotropins appropriate for that bone age has **constitutional delay** of growth and puberty, the most common cause of late puberty. His puberty will start on its own. Kallmann syndrome also gives low gonadotropins, but he smells normally. Klinefelter syndrome would raise FSH and LH, and growth hormone deficiency usually causes a falling growth velocity.",
+  "e": "A healthy, short boy growing steadily along his own percentile, with a father who matured late, a bone age 2.5 years behind and gonadotropins appropriate for that bone age has **constitutional delay** of growth and puberty. This is the most common cause of late puberty, and his puberty will start on its own. Kallmann syndrome also gives low gonadotropins, but he smells normally. Klinefelter syndrome would raise FSH and LH, and growth hormone deficiency usually causes a falling growth velocity.",
   "w": {
    "Kallmann syndrome": "Kallmann syndrome also causes low LH and FSH, but anosmia is its hallmark. He identifies odors normally.",
    "Klinefelter syndrome": "Klinefelter syndrome is primary testicular failure, so FSH and LH would be high. Boys with it are usually tall rather than short.",
@@ -504,10 +504,10 @@
   "a": 0,
   "e": "Intense training with weight loss and a very low BMI, low LH, FSH and estradiol, and normal smell, prolactin and TSH describe functional hypogonadotropic hypogonadism. Fat stores fall, so **leptin** falls, and without its permissive signal the hypothalamus slows GnRH pulses. Puberty stalls until energy balance is restored. Failed migration of GnRH neurons (Kallmann syndrome) also lowers gonadotropins but brings anosmia. Streak ovaries in Turner syndrome would raise FSH and LH, and a prolactinoma is excluded by the normal prolactin.",
   "w": {
-   "Failed migration of GnRH neurons": "Kallmann syndrome also causes low LH and FSH, but the olfactory neurons fail with the GnRH neurons, so anosmia would be present; she smells normally.",
+   "Failed migration of GnRH neurons": "Kallmann syndrome also causes low LH and FSH, but the olfactory neurons fail with the GnRH neurons, so anosmia would be present. She smells normally.",
    "Streak ovaries from a 45,X karyotype": "Turner streak ovaries remove estrogen feedback, so FSH and LH would be high, and short stature with lymphatic findings would be expected.",
    "Prolactin suppressing GnRH release": "Hyperprolactinemia lowers gonadotropins, but a pituitary adenoma usually adds galactorrhea, and her measured prolactin level is normal.",
-   "A defective androgen receptor": "Androgen insensitivity gives breast development from aromatized testosterone and high LH; she has no breasts and low gonadotropins."
+   "A defective androgen receptor": "Androgen insensitivity gives breast development from aromatized testosterone and high LH. She has no breasts and low gonadotropins."
   },
   "et": [
    [
@@ -588,7 +588,7 @@
   "w": {
    "MRI of the brain": "Brain MRI looks for a hypothalamic or pituitary lesion when LH and FSH are low. Her gonadotropins are high, which places the defect in the ovary.",
    "GnRH stimulation test": "Stimulation testing asks whether a quiet pituitary can respond. Her FSH and LH are already markedly elevated, so the pituitary is working hard.",
-   "Serum prolactin": "Prolactin excess suppresses GnRH and lowers FSH and LH; it cannot explain high gonadotropins with ovarian failure.",
+   "Serum prolactin": "Prolactin excess suppresses GnRH and lowers FSH and LH. It cannot explain high gonadotropins with ovarian failure.",
    "Pelvic MRI to assess the uterus": "Imaging the uterus looks for Müllerian anomalies, which present with normal breasts. Her absent breasts and high FSH point to ovarian failure first."
   },
   "et": [
@@ -631,7 +631,7 @@
     ]
    ]
   ],
-  "bl": "Delayed puberty with high FSH and LH means gonadal failure; the next step is a karyotype to diagnose Turner syndrome.",
+  "bl": "Delayed puberty with high FSH and LH means gonadal failure. The next step is a karyotype to diagnose Turner syndrome.",
   "ef": "rp7_delayed",
   "pt": {
    "hl": [
@@ -665,8 +665,8 @@
   "a": 0,
   "e": "Isolated breast buds in a girl under 2, with normal growth velocity, a bone age equal to her chronologic age and a prepubertal LH, are premature thelarche, a benign variant. It usually regresses or stays stable, so the right step is **reassurance and reexamination** to confirm it is not progressing. Depot leuprolide treats central precocious puberty, which would bring a pubertal LH, accelerated growth and an advancing bone age. A brain MRI is reserved for proven central puberty.",
   "w": {
-   "Depot leuprolide injections": "A GnRH agonist is for central precocious puberty with pubertal LH, rapid growth and advancing bone age; none are present, and premature thelarche needs no suppression.",
-   "MRI of the brain": "Imaging looks for a hypothalamic lesion once central puberty is proven; her prepubertal LH and normal bone age do not justify it.",
+   "Depot leuprolide injections": "A GnRH agonist is for central precocious puberty with pubertal LH, rapid growth and advancing bone age. None are present, and premature thelarche needs no suppression.",
+   "MRI of the brain": "Imaging looks for a hypothalamic lesion once central puberty is proven. Her prepubertal LH and normal bone age do not justify it.",
    "Serum 17-hydroxyprogesterone": "This marker screens for CAH, which causes androgen signs such as pubic hair and clitoral enlargement rather than isolated breast buds.",
    "Pelvic ultrasonography and estradiol": "Ultrasound and estradiol help when bleeding or rapid progression suggests an ovarian cyst or tumor. A stable toddler with isolated breast buds does not need them first."
   },
@@ -710,7 +710,7 @@
     ]
    ]
   ],
-  "bl": "Isolated breast buds in a toddler with normal growth and bone age are premature thelarche; reassurance and reexamination are appropriate.",
+  "bl": "Isolated breast buds in a toddler with normal growth and bone age are premature thelarche. Reassurance and reexamination are appropriate.",
   "ef": "rp7_precocious",
   "pt": {
    "hl": [
@@ -789,7 +789,7 @@
     ]
    ]
   ],
-  "bl": "Tender gynecomastia in a mid-pubertal boy with normal testes is a normal variant; reassurance and reexamination are the right step.",
+  "bl": "Tender gynecomastia in a mid-pubertal boy with normal testes is a normal variant. Reassurance and reexamination are the right step.",
   "ef": "rp7_engines",
   "pt": {
    "hl": [
@@ -825,7 +825,7 @@
   "e": "Pubertal LH after stimulation with bilateral testicular enlargement means central precocious puberty, and in a young boy a brain lesion is likely. Laughing (gelastic) seizures point to a **hypothalamic hamartoma**, a benign malformation that contains GnRH neurons and fires its own pulses. A pineal germinoma causes precocious puberty in boys by secreting hCG, which is peripheral, so LH would be suppressed. An optic pathway glioma can cause central puberty but not gelastic seizures, and a craniopharyngioma usually delays puberty.",
   "w": {
    "Craniopharyngioma": "Craniopharyngiomas usually compress the pituitary and stalk, causing delayed puberty, growth failure and visual loss rather than early puberty with laughing seizures.",
-   "Pineal germinoma": "A pineal germinoma can secrete hCG, which stimulates Leydig cells directly; that peripheral puberty would suppress LH instead of raising it.",
+   "Pineal germinoma": "A pineal germinoma can secrete hCG, which stimulates Leydig cells directly. That peripheral puberty would suppress LH instead of raising it.",
    "Optic pathway glioma": "Optic gliomas in neurofibromatosis type 1 can cause central puberty, but they bring visual loss and café-au-lait macules rather than gelastic seizures.",
    "Pituitary macroadenoma": "Pituitary macroadenomas are rare in young children and usually cause hypopituitarism or prolactin excess, which delays rather than advances puberty."
   },

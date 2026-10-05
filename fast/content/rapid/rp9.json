@@ -16,11 +16,11 @@
    "Asherman syndrome"
   ],
   "a": 0,
-  "x": "Pregnancy. A corpus luteum rescued by hCG keeps progesterone high, so the endometrium is not shed; that is why an hCG test comes first in every amenorrhea work-up.",
+  "x": "Pregnancy. A corpus luteum rescued by hCG keeps progesterone high, so the endometrium is not shed. That is why an hCG test comes first in every amenorrhea work-up.",
   "w": {
    "Polycystic ovary syndrome": "PCOS is the most common cause of chronic anovulation in women who are not pregnant, but pregnancy must be excluded before it is considered.",
    "Hyperprolactinemia": "High prolactin suppresses GnRH and is a classic cause, but it accounts for a minority of cases and is tested only after hCG.",
-   "Primary ovarian insufficiency": "Ovarian insufficiency affects about 1 in 100 women before 40; it is diagnosed by high FSH once pregnancy is excluded.",
+   "Primary ovarian insufficiency": "Ovarian insufficiency is diagnosed by a high FSH once pregnancy is excluded. It is far less common than pregnancy.",
    "Asherman syndrome": "Intrauterine adhesions after curettage are a rare, history-driven cause with normal hormone levels."
   },
   "media": "fig:rp9_workup",
@@ -48,11 +48,11 @@
    "Age 18"
   ],
   "a": 0,
-  "x": "Age 15. A girl with breast development who has not menstruated by 15 needs evaluation; with no breast development at all, evaluation starts at 13 because puberty itself is delayed.",
+  "x": "Age 15. A girl with breast development who has not menstruated by 15 needs evaluation. With no breast development at all, evaluation starts at 13 because puberty itself is delayed.",
   "w": {
    "Age 13": "Thirteen is the threshold when breasts have not developed at all, which signals delayed puberty rather than isolated amenorrhea.",
    "Age 12": "Twelve is close to the average age of menarche in the United States, not a cutoff that triggers evaluation.",
-   "Age 16": "Sixteen was an older threshold; current guidance evaluates at 15 so that causes such as outflow obstruction are found sooner.",
+   "Age 16": "Sixteen is later than the current cutoff. Evaluating at 15 finds causes such as outflow obstruction sooner.",
    "Age 18": "Waiting until 18 would delay the diagnosis of Turner syndrome, Müllerian agenesis and other treatable causes by years."
   },
   "media": "fig:rp9_workup",
@@ -80,9 +80,9 @@
    "2 weeks"
   ],
   "a": 0,
-  "x": "3 months. After regular cycles, three missed months define secondary amenorrhea; after irregular cycles the threshold is 6 months, because long gaps are already part of her pattern.",
+  "x": "3 months. After regular cycles, three missed months define secondary amenorrhea. After irregular cycles the threshold is 6 months, because long gaps are already part of her pattern.",
   "w": {
-   "6 weeks": "A 6-week delay usually means one late ovulation or an early pregnancy; it is too short to define a menstrual disorder.",
+   "6 weeks": "A 6-week delay usually means one late ovulation or an early pregnancy. It is too short to define a menstrual disorder.",
    "6 months": "Six months applies to women whose cycles were already irregular, not to someone who had regular periods.",
    "12 months": "Twelve months without menses after age 45 defines menopause, which is a different definition.",
    "2 weeks": "Two weeks late is common normal variation in the follicular phase and meets no definition."
@@ -112,7 +112,7 @@
    "Cyclic pelvic pain"
   ],
   "a": 0,
-  "x": "Anosmia. GnRH neurons migrate from the olfactory placode alongside olfactory axons; when migration fails, the patient has both hypogonadotropic hypogonadism and no sense of smell.",
+  "x": "Anosmia. GnRH neurons migrate from the olfactory placode alongside olfactory axons. When migration fails, the patient has both hypogonadotropic hypogonadism and no sense of smell.",
   "w": {
    "Galactorrhea": "Galactorrhea points to hyperprolactinemia, which suppresses GnRH through prolactin rather than through failed neuron migration.",
    "Short stature": "Short stature with ovarian failure suggests Turner syndrome, where FSH is high rather than low.",
@@ -278,10 +278,10 @@
   "a": 0,
   "x": "Hyperinsulinemia suppresses the liver's production of sex hormone-binding globulin, so less testosterone is bound and the free, active fraction rises out of proportion to the total.",
   "w": {
-   "Adrenal DHEA-S is very high": "A very high DHEA-S suggests an adrenal tumor; in PCOS it is normal or mildly raised and does not explain the free fraction.",
+   "Adrenal DHEA-S is very high": "A very high DHEA-S suggests an adrenal tumor. In PCOS it is normal or mildly raised and does not explain the free fraction.",
    "Aromatase is overactive": "More aromatase would convert testosterone to estradiol, lowering androgen levels rather than raising the free fraction.",
-   "Albumin is low": "Albumin binds testosterone loosely and is normal in PCOS; SHBG is the carrier that insulin regulates.",
-   "5α-reductase is deficient": "5α-reductase deficiency lowers DHT and causes ambiguous genitalia in XY infants; it is unrelated to PCOS."
+   "Albumin is low": "Albumin binds testosterone loosely and is normal in PCOS. SHBG is the carrier that insulin regulates.",
+   "5α-reductase is deficient": "5α-reductase deficiency lowers DHT and causes ambiguous genitalia in XY infants. It is unrelated to PCOS."
   },
   "media": "fig:rp9_pcos",
   "pt": {
@@ -374,7 +374,7 @@
    "Pelvic adhesions"
   ],
   "a": 0,
-  "x": "Prostaglandins, mainly PGF2α, released as the secretory endometrium breaks down cause strong uterine contractions and ischemia; NSAIDs block their synthesis and are first-line treatment.",
+  "x": "Prostaglandins, mainly PGF2α, released as the secretory endometrium breaks down cause strong uterine contractions and ischemia. NSAIDs block their synthesis and are first-line treatment.",
   "w": {
    "Ectopic endometrial implants": "Endometriosis implants cause secondary dysmenorrhea, often with dyspareunia and infertility, and pain that worsens over years.",
    "Endometrial glands within myometrium": "Glands inside the myometrium define adenomyosis, a secondary cause with a boggy, enlarged uterus.",
@@ -410,10 +410,10 @@
   "a": 0,
   "x": "Letrozole. By inhibiting aromatase it lowers estrogen feedback, so FSH rises and drives follicle growth, and it gives more live births than clomiphene in PCOS.",
   "w": {
-   "Clomiphene": "Clomiphene raises FSH by blocking hypothalamic estrogen receptors; it works but gives fewer live births than letrozole in PCOS.",
+   "Clomiphene": "Clomiphene raises FSH by blocking hypothalamic estrogen receptors. It works but gives fewer live births than letrozole in PCOS.",
    "Metformin": "Metformin treats insulin resistance and helps metabolic risk but is a weak ovulation inducer on its own.",
    "Spironolactone": "Spironolactone treats hirsutism by blocking androgen receptors and must be stopped before conception.",
-   "Cabergoline": "Cabergoline is a dopamine agonist that lowers prolactin; it restores ovulation in hyperprolactinemia, whereas prolactin is normal in PCOS."
+   "Cabergoline": "Cabergoline is a dopamine agonist that lowers prolactin. It restores ovulation in hyperprolactinemia, whereas prolactin is normal in PCOS."
   },
   "media": "fig:rp9_infertility",
   "pt": {
@@ -440,11 +440,11 @@
    "Galactorrhea"
   ],
   "a": 0,
-  "x": "Visual disturbances, along with hot flashes, come from clomiphene's anti-estrogen action; blurring or flashing lights are a reason to stop the drug.",
+  "x": "Clomiphene blocks estrogen receptors in the brain, so the typical side effects are hot flashes and visual disturbances. Multiple births can also follow ovarian overstimulation.",
   "w": {
    "Hyperkalemia": "Hyperkalemia is a risk of spironolactone, a potassium-sparing androgen blocker used for hirsutism.",
    "Lactic acidosis": "Lactic acidosis is the rare serious risk of metformin, especially with kidney failure or hypoxia.",
-   "Hirsutism": "Hirsutism reflects androgen excess; clomiphene acts on estrogen receptors and does not raise androgens.",
+   "Hirsutism": "Hirsutism reflects androgen excess. Clomiphene acts on estrogen receptors and does not raise androgens.",
    "Galactorrhea": "Galactorrhea follows high prolactin, as from dopamine antagonists, not from estrogen receptor blockade."
   },
   "media": "fig:rp9_infertility",
@@ -473,11 +473,11 @@
    "Endometrial polyp"
   ],
   "a": 0,
-  "x": "Patent fallopian tubes. Contrast pushed through the cervix spills into the peritoneal cavity only if the tubes are open; a dilated tube without spill is a hydrosalpinx.",
+  "x": "Patent fallopian tubes. Contrast pushed through the cervix spills into the peritoneal cavity only if the tubes are open. A dilated tube without spill is a hydrosalpinx.",
   "w": {
    "Hydrosalpinx": "A hydrosalpinx is a blocked, distended tube that fills with contrast but shows no spill into the peritoneum.",
    "Intrauterine adhesions": "The adhesions of Asherman syndrome appear as irregular filling defects inside the uterine cavity.",
-   "Bicornuate uterus": "A bicornuate uterus shows a heart-shaped cavity with two horns; it concerns the cavity outline, not tubal spill.",
+   "Bicornuate uterus": "A bicornuate uterus shows a heart-shaped cavity with two horns. It concerns the cavity outline, not tubal spill.",
    "Endometrial polyp": "A polyp appears as a smooth filling defect in the cavity and can cause intermenstrual spotting."
   },
   "media": "fig:rp9_infertility",
@@ -510,7 +510,7 @@
    "Ovarian torsion": "Torsion is a complication of the enlarged ovaries, causing sudden severe pain, but it does not cause the fluid shift.",
    "Ruptured ectopic pregnancy": "An ectopic pregnancy causes pain and bleeding from tubal implantation, not ascites from leaky capillaries.",
    "Tubo-ovarian abscess": "A tubo-ovarian abscess follows pelvic infection with fever and a complex mass, not fertility drugs.",
-   "Theca lutein cyst rupture": "Theca lutein cysts come from very high hCG, as in molar pregnancy; rupture causes pain but not systemic capillary leak."
+   "Theca lutein cyst rupture": "Theca lutein cysts come from very high hCG, as in molar pregnancy. Rupture causes pain but not systemic capillary leak."
   },
   "media": "fig:rp9_infertility",
   "pt": {

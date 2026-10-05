@@ -21,12 +21,12 @@
    "Germ cell tumor"
   ],
   "a": 2,
-  "x": "Varicocele. Dilated pampiniform veins fill with blood when the man stands and empty when he lies down, so they feel like a bag of worms, and because blood absorbs light the swelling does not transilluminate.",
+  "x": "Dilated pampiniform veins fill with blood when the man stands and empty when he lies down, so they feel like a bag of worms. Blood absorbs light, so a varicocele does not transilluminate.",
   "w": {
-   "Hydrocele": "A hydrocele is a smooth collection of clear fluid around the testis that transilluminates and does not feel like a tangle of cords.",
-   "Hematocele": "A hematocele is blood in the tunica vaginalis after trauma; it is a tense, dark swelling that follows an injury, not a soft tangle that changes with posture.",
-   "Spermatocele": "A spermatocele is a discrete smooth cyst above and behind the testis that transilluminates and does not change with posture.",
-   "Germ cell tumor": "A germ cell tumor is a firm, painless intratesticular mass that does not change with standing or lying, unlike a soft tangle of veins in the cord."
+   "Hydrocele": "A hydrocele is a smooth collection of clear fluid around the testis. It transilluminates and does not feel like a tangle of cords.",
+   "Hematocele": "A hematocele is blood in the tunica vaginalis after trauma. It is a tense, dark swelling that follows an injury, not a soft tangle that changes with posture.",
+   "Spermatocele": "A spermatocele is a smooth cyst above and behind the testis that transilluminates. It does not change with posture.",
+   "Germ cell tumor": "A germ cell tumor is a firm, painless mass inside the testis that does not change with standing or lying, unlike a soft tangle of veins."
   },
   "media": "fig:rp20_masses",
   "pt": {
@@ -59,12 +59,12 @@
    "Inguinal hernia"
   ],
   "a": 3,
-  "x": "Hematocele. Blood fills the tunica vaginalis after trauma, so the swelling stays dark when a light is held behind it; blunt trauma can also tear the tunica albuginea, a testicular rupture that needs surgery.",
+  "x": "A hematocele is blood in the tunica vaginalis after trauma, so the swelling stays dark when a light is held behind it. A hard blow can also tear the tunica albuginea, a testicular rupture that needs prompt surgery.",
   "w": {
-   "Hydrocele": "A hydrocele is also a collection in the tunica vaginalis, but it holds clear serous fluid, so it glows, and it develops slowly rather than after an injury.",
-   "Varicocele": "A varicocele is dilated veins in the spermatic cord, a soft bag of worms above the testis, not a collection of blood within the tunica vaginalis.",
-   "Spermatocele": "A spermatocele is a sperm-filled cyst of the epididymis that lies above and behind the testis and transilluminates.",
-   "Inguinal hernia": "An indirect inguinal hernia can descend into the scrotum, but it contains bowel or omentum, may produce bowel sounds and reduces when lying down, and is not blood from trauma."
+   "Hydrocele": "A hydrocele is also a collection in the tunica vaginalis, but it holds clear fluid, so it glows, and it develops slowly rather than after an injury.",
+   "Varicocele": "A varicocele is dilated veins in the spermatic cord, a soft bag of worms above the testis. It is not a collection of blood in the tunica vaginalis.",
+   "Spermatocele": "A spermatocele is a sperm-filled cyst of the epididymis above and behind the testis, and it transilluminates.",
+   "Inguinal hernia": "An indirect inguinal hernia can descend into the scrotum, but it holds bowel or omentum and reduces when lying down. It is not blood from trauma."
   },
   "media": "fig:rp20_masses",
   "pt": {
@@ -97,11 +97,11 @@
    "Spermatocele"
   ],
   "a": 4,
-  "x": "Spermatocele. This sperm-filled cyst of the epididymis can be felt apart from the testis, transilluminates and is benign; it is removed only if it causes symptoms, whereas a mass that cannot be separated from the testis is a tumor until proven otherwise.",
+  "x": "A spermatocele is a sperm-filled cyst of the epididymis that can be felt apart from the testis. It transilluminates and is benign. A mass that cannot be separated from the testis is a tumor until proven otherwise.",
   "w": {
-   "Hydrocele": "A hydrocele surrounds the testis within the tunica vaginalis, so the testis cannot be palpated separately from the fluid.",
-   "Hematocele": "A hematocele is blood in the tunica vaginalis after trauma; it surrounds the testis, stays dark and is not a discrete cyst above it.",
-   "Varicocele": "A varicocele is a soft tangle of dilated veins in the cord that fills on standing and does not transilluminate.",
+   "Hydrocele": "A hydrocele surrounds the testis within the tunica vaginalis, so the testis cannot be felt separately from the fluid.",
+   "Hematocele": "A hematocele is blood in the tunica vaginalis after trauma. It surrounds the testis and stays dark, and it is not a discrete cyst above the testis.",
+   "Varicocele": "A varicocele is a soft tangle of dilated veins in the cord. It fills on standing and does not transilluminate.",
    "Germ cell tumor": "A germ cell tumor is a firm solid mass inside the testis that cannot be separated from it and stays dark with a light."
   },
   "media": "fig:rp20_masses",
@@ -135,12 +135,12 @@
    "Carnett sign"
   ],
   "a": 1,
-  "x": "Prehn sign. Elevating the testis eases the pain of epididymitis, whereas torsion gives no relief, but the sign is unreliable and must never delay surgery when torsion is suspected.",
+  "x": "Prehn sign is the relief of pain when the testis is lifted. It favors epididymitis, because lifting eases the pull on the inflamed epididymis, while torsion gives no relief. It is unreliable and must never delay surgery when torsion is suspected.",
   "w": {
-   "Cremasteric reflex": "The cremasteric reflex is elevation of the testis when the inner thigh is stroked; it is preserved in epididymitis and absent in torsion, but it is a reflex, not a response to lifting.",
-   "Blue dot sign": "The blue dot sign is a bluish spot of infarcted tissue seen through the scrotal skin at the upper pole in a torsed appendix testis.",
-   "Whirlpool sign": "The whirlpool sign is the spiral of twisted cord seen on ultrasound in testicular torsion, a finding unrelated to pain relief.",
-   "Carnett sign": "Carnett sign is increased abdominal wall pain when the muscles are tensed, which separates abdominal wall pain from visceral pain; it is unrelated to the testis."
+   "Cremasteric reflex": "The cremasteric reflex is lifting of the testis when the inner thigh is stroked. It is present in epididymitis and absent in torsion, but it is a reflex, not a response to lifting.",
+   "Blue dot sign": "The blue dot sign is a bluish spot seen through the scrotal skin at the upper pole in a torsed appendix testis.",
+   "Whirlpool sign": "The whirlpool sign is the spiral of twisted cord seen on ultrasound in testicular torsion. It is unrelated to pain relief.",
+   "Carnett sign": "Carnett sign is increased abdominal wall pain when the muscles are tensed. It separates wall pain from visceral pain and is unrelated to the testis."
   },
   "media": "fig:rp20_torsion",
   "pt": {
@@ -172,12 +172,12 @@
    "Epididymal cyst"
   ],
   "a": 2,
-  "x": "Bell-clapper deformity. The tunica vaginalis attaches too high on the cord, so the testis hangs free inside it like a clapper in a bell and can twist; because the defect is usually bilateral, surgery fixes both testes.",
+  "x": "In bell-clapper deformity the tunica vaginalis attaches too high on the cord, so the testis hangs free inside it like a clapper in a bell and can twist. The defect is usually bilateral, so surgery fixes both testes.",
   "w": {
-   "Patent processus vaginalis": "A patent processus vaginalis leaves a channel to the peritoneal cavity, allowing a communicating hydrocele or an indirect inguinal hernia, not a free-hanging, twisting testis.",
-   "Retractile testis": "A retractile testis is a normal variant in which an overactive cremaster pulls the testis up into the groin, but it can be brought down and does not twist on its cord.",
-   "Spermatic cord lipoma": "A lipoma of the cord is a soft fatty mass that mimics an inguinal hernia and does not change how the testis is anchored.",
-   "Epididymal cyst": "An epididymal cyst is a benign sperm-filled swelling above and behind the testis and does not alter the anchoring of the testis."
+   "Patent processus vaginalis": "A patent processus vaginalis leaves a channel to the peritoneal cavity, allowing a communicating hydrocele or an indirect inguinal hernia. It does not make a testis hang free and twist.",
+   "Retractile testis": "A retractile testis is a normal variant in which the cremaster pulls the testis up toward the groin. It comes down easily and does not twist on its cord.",
+   "Spermatic cord lipoma": "A lipoma of the cord is a soft fatty mass that mimics an inguinal hernia. It does not change how the testis is anchored.",
+   "Epididymal cyst": "An epididymal cyst is a benign sperm-filled swelling above and behind the testis. It does not alter how the testis is anchored."
   },
   "media": "fig:rp20_torsion",
   "pt": {
@@ -209,11 +209,11 @@
    "Iliohypogastric nerve"
   ],
   "a": 0,
-  "x": "Genital branch of the genitofemoral nerve. Stroking the inner thigh sends afferents up the femoral branch, and the genital branch carries the efferent signal that makes the cremaster lift the testis; the reflex is absent in torsion.",
+  "x": "Stroking the inner thigh sends signals up the femoral branch of the genitofemoral nerve. The genital branch carries the motor signal that makes the cremaster lift the testis. The reflex is absent in torsion.",
   "w": {
-   "Femoral branch of the genitofemoral nerve": "The femoral branch is the sensory limb, carrying afferent signals from the skin of the upper inner thigh, while the genital branch carries the motor output to the cremaster.",
-   "Ilioinguinal nerve": "The ilioinguinal nerve supplies the skin of the anterior scrotum and the root of the penis and is not part of the cremasteric reflex arc.",
-   "Pudendal nerve": "The pudendal nerve supplies the perineum, posterior scrotum and penile muscles and mediates the bulbocavernosus reflex, not the cremasteric reflex.",
+   "Femoral branch of the genitofemoral nerve": "The femoral branch is the sensory limb, carrying signals from the skin of the upper inner thigh. The genital branch carries the motor output to the cremaster.",
+   "Ilioinguinal nerve": "The ilioinguinal nerve supplies the skin of the front of the scrotum and the root of the penis. It is not part of the cremasteric reflex arc.",
+   "Pudendal nerve": "The pudendal nerve supplies the perineum, back of the scrotum and penile muscles and carries the bulbocavernosus reflex, not the cremasteric reflex.",
    "Iliohypogastric nerve": "The iliohypogastric nerve supplies skin above the pubis and muscles of the lower abdominal wall, not the cremaster muscle."
   }
  },
@@ -239,12 +239,12 @@
    "CA 19-9"
   ],
   "a": 0,
-  "x": "PLAP, placental alkaline phosphatase. Seminoma cells and germ cell neoplasia in situ express it, whereas AFP is never raised in pure seminoma and hCG may be mildly raised from scattered syncytiotrophoblast cells.",
+  "x": "PLAP, placental alkaline phosphatase, is expressed by seminoma cells and by germ cell neoplasia in situ. AFP is never raised in pure seminoma, and hCG may be mildly raised from scattered syncytiotrophoblast cells.",
   "w": {
-   "AFP": "AFP is made by yolk sac elements and signals a nonseminomatous component; a pure seminoma never raises it.",
-   "CA-125": "CA-125 is an ovarian epithelial tumor marker, particularly for serous ovarian cancers, and has no role in testicular germ cell tumors.",
-   "PSA": "PSA is a prostate-specific serine protease used to follow prostate cancer, and it is not produced by testicular germ cells.",
-   "CA 19-9": "CA 19-9 is a marker for pancreatic and biliary cancers and is not expressed by testicular germ cell tumors."
+   "AFP": "AFP is made by yolk sac elements and signals a nonseminomatous component. A pure seminoma never raises it.",
+   "CA-125": "CA-125 is an ovarian epithelial tumor marker, particularly for serous ovarian cancers. It has no role in testicular germ cell tumors.",
+   "PSA": "PSA is a prostate-specific protease used to follow prostate cancer. Testicular germ cells do not make it.",
+   "CA 19-9": "CA 19-9 is a marker for pancreatic and biliary cancers. Testicular germ cell tumors do not express it."
   },
   "media": "fig:rp20_gct",
   "pt": {
@@ -275,12 +275,12 @@
    "Monosomy 7"
   ],
   "a": 0,
-  "x": "Isochromosome 12p. Two copies of the short arm of chromosome 12 on one chromosome are found in most testicular germ cell tumors, seminomatous and nonseminomatous, which arise from germ cell neoplasia in situ.",
+  "x": "Isochromosome 12p, two copies of the short arm of chromosome 12 on one chromosome, is found in most testicular germ cell tumors, seminomatous and nonseminomatous, which arise from germ cell neoplasia in situ.",
   "w": {
-   "t(9;22) Philadelphia chromosome": "The t(9;22) Philadelphia chromosome creates the BCR-ABL fusion in chronic myeloid leukemia and is not a feature of testicular germ cell tumors.",
-   "t(8;14) translocation": "The t(8;14) translocation places MYC under immunoglobulin heavy chain control in Burkitt lymphoma, not in germ cell tumors, although lymphoma can involve the testis.",
-   "Deletion of 5q": "Deletion of 5q is a feature of a myelodysplastic syndrome and of the APC gene region in colon polyposis, not of testicular germ cell tumors.",
-   "Monosomy 7": "Monosomy 7 is a marker of myelodysplasia and acute myeloid leukemia, often after alkylating chemotherapy, not of testicular germ cell tumors."
+   "t(9;22) Philadelphia chromosome": "The t(9;22) Philadelphia chromosome creates the BCR-ABL fusion in chronic myeloid leukemia. It is not a feature of testicular germ cell tumors.",
+   "t(8;14) translocation": "The t(8;14) translocation puts MYC under immunoglobulin heavy chain control in Burkitt lymphoma, not in germ cell tumors.",
+   "Deletion of 5q": "Deletion of 5q is a feature of myelodysplastic syndrome and of the APC gene region in colon polyposis, not of testicular germ cell tumors.",
+   "Monosomy 7": "Monosomy 7 is a marker of myelodysplasia and acute myeloid leukemia, often after chemotherapy. It is not a mark of testicular germ cell tumors."
   },
   "media": "fig:rp20_gct",
   "pt": {
@@ -311,12 +311,12 @@
    "Teratoma"
   ],
   "a": 3,
-  "x": "Choriocarcinoma. Made of syncytiotrophoblast and cytotrophoblast, it invades vessels and spreads through the blood to the lungs and brain, with very high hCG; most other germ cell tumors spread first to para-aortic lymph nodes.",
+  "x": "Choriocarcinoma is made of syncytiotrophoblast and cytotrophoblast. It invades vessels and spreads through the blood to the lungs and brain, with very high hCG. Most other germ cell tumors spread first to para-aortic lymph nodes.",
   "w": {
    "Seminoma": "Seminoma spreads mainly through lymphatics to para-aortic nodes, late in its course, and has an excellent prognosis.",
    "Embryonal carcinoma": "Embryonal carcinoma is aggressive and can spread by blood, but lymphatic spread to retroperitoneal nodes comes first, and it lacks the extreme hCG of choriocarcinoma.",
-   "Yolk sac tumor": "Yolk sac tumor in young boys usually presents localized with a high AFP and responds well to treatment; it is not defined by early blood-borne lung metastases.",
-   "Teratoma": "Teratoma contains mixed tissues from three germ layers and is chemoresistant, and in adult men it can metastasize, but it is not the classic early blood-borne tumor."
+   "Yolk sac tumor": "Yolk sac tumor in young boys usually presents localized with a high AFP. It is not defined by early blood-borne lung metastases.",
+   "Teratoma": "Teratoma contains mixed tissues from three germ layers, and in adult men it can metastasize. It is not the classic early blood-borne tumor."
   },
   "media": "fig:rp20_gct",
   "pt": {
@@ -349,12 +349,12 @@
    "Teratoma"
   ],
   "a": 0,
-  "x": "Seminoma. Its uniform fried-egg cells and lymphocyte-rich septa respond well to radiation and chemotherapy, it spreads late and through lymphatics, and early-stage disease is almost always cured.",
+  "x": "Seminoma's uniform fried-egg cells and lymphocyte-rich septa respond well to radiation and chemotherapy. It spreads late and through lymphatics, so early-stage disease is almost always cured.",
   "w": {
-   "Embryonal carcinoma": "Embryonal carcinoma is aggressive and usually mixed with other elements; it is treated with chemotherapy and surgery rather than relying on radiation.",
-   "Yolk sac tumor": "Yolk sac tumor has a good prognosis in young boys, but in adults it appears within mixed tumors and is managed as a nonseminomatous tumor with chemotherapy.",
+   "Embryonal carcinoma": "Embryonal carcinoma is aggressive and usually mixed with other elements, so its outlook is worse than seminoma.",
+   "Yolk sac tumor": "Yolk sac tumor has a good prognosis in young boys, but in adults it appears within mixed tumors, which behave more aggressively than seminoma.",
    "Choriocarcinoma": "Choriocarcinoma has the worst prognosis of the germ cell tumors because it spreads early through the blood.",
-   "Teratoma": "Teratoma is chemoresistant, so residual masses are resected, and mature-looking teratoma can still metastasize in adult men."
+   "Teratoma": "Teratoma contains tissues from all three germ layers, and mature-looking teratoma can still metastasize in adult men. It is not the tumor with the best prognosis."
   },
   "media": "fig:rp20_gct",
   "pt": {
@@ -378,7 +378,7 @@
   "obj": [
    "HP-MALE.18"
   ],
-  "q": "Which germ cell tumor is chemoresistant and can metastasize in adult men even when it looks mature?",
+  "q": "Which germ cell tumor contains tissue from all three germ layers and can metastasize in adult men even when it looks mature?",
   "o": [
    "Seminoma",
    "Embryonal carcinoma",
@@ -387,21 +387,20 @@
    "Teratoma"
   ],
   "a": 4,
-  "x": "Teratoma. It contains tissues from all three germ layers, resists chemotherapy so residual masses are resected, and in adult men even mature-looking teratoma has malignant potential.",
+  "x": "Teratoma contains tissues from all three germ layers, such as cartilage, skin and neural tissue. In adult men even a mature-looking teratoma has malignant potential.",
   "w": {
-   "Seminoma": "Seminoma is a uniform population of clear fried-egg cells and is highly sensitive to radiation and chemotherapy, so it is not chemoresistant.",
-   "Embryonal carcinoma": "Embryonal carcinoma is a hemorrhagic tumor of primitive cells that responds to chemotherapy and shows no differentiated tissues.",
-   "Yolk sac tumor": "Yolk sac tumor is recognized by Schiller-Duval bodies and a high AFP, and it responds to chemotherapy.",
-   "Choriocarcinoma": "Choriocarcinoma consists of trophoblastic cells with very high hCG and hemorrhage, and it is treated with chemotherapy."
+   "Seminoma": "Seminoma is a uniform population of clear fried-egg cells. It shows no cartilage, skin or neural tissue from different germ layers.",
+   "Embryonal carcinoma": "Embryonal carcinoma is a hemorrhagic tumor of primitive cells and shows no differentiated tissues.",
+   "Yolk sac tumor": "Yolk sac tumor is recognized by Schiller-Duval bodies and a high AFP. It does not contain tissues from all three germ layers.",
+   "Choriocarcinoma": "Choriocarcinoma consists of trophoblastic cells with very high hCG and hemorrhage. It does not contain tissues from all three germ layers."
   },
   "media": "fig:rp20_gct",
   "pt": {
    "hl": [
     "Teratoma",
-    "Three germ layers",
-    "Chemoresistant"
+    "Three germ layers"
    ],
-   "say": "The teratoma box reads three germ layers, malignant in adult men and chemoresistant, which is why residual masses are removed surgically."
+   "say": "The teratoma box reads three germ layers and malignant in adult men, so teratoma is the tumor that can metastasize even when it looks mature."
   }
  },
  {
@@ -425,9 +424,9 @@
    "Lymphoma"
   ],
   "a": 1,
-  "x": "Leydig cell tumor. This sex cord-stromal tumor makes androgens, causing precocious puberty in boys, and estrogens from aromatization, causing gynecomastia in men; AFP and hCG remain normal and Reinke crystals are found on histology.",
+  "x": "A Leydig cell tumor is a sex cord-stromal tumor that makes androgens, causing precocious puberty in boys. Estrogens made from aromatization cause gynecomastia in men. AFP and hCG remain normal, and Reinke crystals are found on histology.",
   "w": {
-   "Seminoma": "Seminoma occurs in adult men, makes no sex steroids and does not cause precocious puberty.",
+   "Seminoma": "Seminoma occurs in adult men and makes no sex steroids, so it does not cause precocious puberty.",
    "Yolk sac tumor": "Yolk sac tumor affects boys under 3 and secretes AFP, but it does not secrete androgens.",
    "Embryonal carcinoma": "Embryonal carcinoma is a hemorrhagic germ cell tumor of young adults with variable AFP and hCG and no steroid secretion.",
    "Lymphoma": "Testicular lymphoma affects older men with bilateral painless enlargement, not boys with early virilization."
@@ -462,12 +461,12 @@
    "Genital tubercle"
   ],
   "a": 0,
-  "x": "Gubernaculum. This cord of tissue anchors the testis to the developing scrotum and guides its descent, following the processus vaginalis that pushes through the inguinal canal ahead of the testis; failure of descent is cryptorchidism.",
+  "x": "The gubernaculum anchors the testis to the developing scrotum and guides its descent. The processus vaginalis pushes through the inguinal canal ahead of the testis, and failure of descent is cryptorchidism.",
   "w": {
-   "Processus vaginalis": "The processus vaginalis is the peritoneal outpouching through the inguinal canal that the testis follows; its lower end becomes the tunica vaginalis, and persistence causes a hydrocele or hernia.",
-   "Mesonephric duct": "The mesonephric (Wolffian) duct becomes the epididymis, ductus deferens and seminal vesicle, and it does not guide testicular descent.",
-   "Urogenital sinus": "The urogenital sinus forms the bladder and urethra and, in men, the prostate and bulbourethral glands; it does not anchor the testis.",
-   "Genital tubercle": "The genital tubercle becomes the glans penis under the influence of DHT and has no role in moving the testis."
+   "Processus vaginalis": "The processus vaginalis is the peritoneal outpouching through the inguinal canal that the testis follows. Its lower end becomes the tunica vaginalis, and if it stays open it causes a hydrocele or hernia.",
+   "Mesonephric duct": "The mesonephric (Wolffian) duct becomes the epididymis, ductus deferens and seminal vesicle. It does not guide testicular descent.",
+   "Urogenital sinus": "The urogenital sinus forms the bladder and urethra and, in men, the prostate and bulbourethral glands. It does not anchor the testis.",
+   "Genital tubercle": "The genital tubercle becomes the glans penis under the influence of DHT. It has no role in moving the testis."
   },
   "media": "fig:rp5_homologs",
   "pt": {
@@ -499,12 +498,12 @@
    "Sertoli cell tumor"
   ],
   "a": 3,
-  "x": "Lymphoma. Usually diffuse large B-cell type, it is the most common testicular mass after age 60, often involves both testes, and causes painless enlargement with normal AFP and hCG, in contrast to the germ cell tumors of younger men.",
+  "x": "Lymphoma, usually diffuse large B-cell type, is the most common testicular mass after age 60. It often involves both testes and causes painless enlargement with normal AFP and hCG, unlike the germ cell tumors of younger men.",
   "w": {
    "Seminoma": "Seminoma peaks in the 30s and 40s and is almost always unilateral, with a normal AFP and sometimes a mildly raised hCG.",
    "Leydig cell tumor": "Leydig cell tumors are small unilateral nodules in boys and men that cause precocious puberty or gynecomastia.",
    "Embryonal carcinoma": "Embryonal carcinoma occurs in men in their 20s and 30s as a hemorrhagic mass and often raises AFP or hCG.",
-   "Sertoli cell tumor": "Sertoli cell tumors are uncommon, usually benign and hormonally silent, and are not the leading testicular mass of older men."
+   "Sertoli cell tumor": "Sertoli cell tumors are uncommon, usually benign and hormonally silent. They are not the leading testicular mass of older men."
   },
   "media": "fig:rp20_gct",
   "pt": {

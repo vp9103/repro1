@@ -2,232 +2,539 @@
  {
   "id": "rp3q01",
   "d": 1,
-  "tags": ["nerve-supply"],
-  "bp": ["BP-rp3-06"],
-  "obj": ["ANAT-BREAST.4"],
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp3-06"
+  ],
+  "obj": [
+   "ANAT-BREAST.4"
+  ],
   "s": "A 52-year-old woman undergoes left mastectomy with axillary lymph node dissection for invasive breast carcinoma. At her 2-week follow-up visit, the medial border of her left scapula lifts away from the chest wall when she pushes against a wall with both hands.",
   "l": "Injury to which nerve best explains this finding?",
-  "o": ["Long thoracic nerve", "Thoracodorsal nerve", "Intercostobrachial nerve", "Medial pectoral nerve", "Axillary nerve"],
+  "o": [
+   "Long thoracic nerve",
+   "Thoracodorsal nerve",
+   "Intercostobrachial nerve",
+   "Medial pectoral nerve",
+   "Axillary nerve"
+  ],
   "a": 0,
-  "e": "The **long thoracic nerve** (C5 to C7) runs down the medial wall of the axilla on the surface of serratus anterior, squarely in the field of axillary node dissection. Serratus anterior holds the scapula against the ribs, so its paralysis lets the medial border lift off when the patient pushes forward: a winged scapula. The thoracodorsal nerve supplies latissimus dorsi and causes weak adduction and extension without winging, and the intercostobrachial nerve is purely sensory.",
+  "e": "The **long thoracic nerve** (C5 to C7) runs down the medial wall of the axilla on the surface of serratus anterior, right in the field of an axillary node dissection. Serratus anterior holds the scapula against the ribs. When it is paralyzed, the medial border lifts off the chest wall as the patient pushes forward. This is a winged scapula. The thoracodorsal nerve supplies latissimus dorsi and causes weak adduction and extension without winging, and the intercostobrachial nerve is purely sensory.",
   "w": {
-   "Thoracodorsal nerve": "This nerve runs along the posterior axillary wall to latissimus dorsi; injury weakens adduction, extension and internal rotation of the arm, but the scapula stays flat.",
-   "Intercostobrachial nerve": "The lateral cutaneous branch of T2 crosses the axilla carrying only sensation, so cutting it numbs the medial upper arm without any muscle weakness.",
-   "Medial pectoral nerve": "It supplies pectoralis minor and the lower part of pectoralis major; damage weakens or wastes those muscles but does not release the scapula from the ribs.",
-   "Axillary nerve": "It wraps around the surgical neck of the humerus to deltoid and teres minor; injury follows shoulder dislocation or fracture and weakens abduction instead."
+   "Thoracodorsal nerve": "This nerve runs along the posterior axillary wall to latissimus dorsi. Injury weakens adduction, extension and internal rotation of the arm, but the scapula stays flat.",
+   "Intercostobrachial nerve": "This sensory branch of T2 crosses the axilla. Cutting it numbs the medial upper arm without any muscle weakness.",
+   "Medial pectoral nerve": "This nerve supplies the pectoral muscles. Damage weakens the chest muscles but does not lift the scapula off the ribs.",
+   "Axillary nerve": "The axillary nerve wraps around the surgical neck of the humerus to supply the deltoid. Injury follows shoulder dislocation or fracture and weakens abduction."
   },
   "et": [
-   ["Option", "Muscle or territory", "Course", "Deficit when injured"],
    [
-    ["Long thoracic nerve", "Serratus anterior", "Medial axillary wall", "Winged scapula"],
-    ["Thoracodorsal nerve", "Latissimus dorsi", "Posterior axillary wall", "Weak adduction and extension"],
-    ["Intercostobrachial nerve", "Skin of the medial upper arm", "Across the axilla from T2", "Numbness only"],
-    ["Medial pectoral nerve", "Pectoralis minor and major", "Through pectoralis minor", "Pectoral weakness"],
-    ["Axillary nerve", "Deltoid and teres minor", "Around the surgical neck of the humerus", "Weak abduction, lateral shoulder numbness"]
+    "Option",
+    "Muscle or territory",
+    "Course",
+    "Deficit when injured"
+   ],
+   [
+    [
+     "Long thoracic nerve",
+     "Serratus anterior",
+     "Medial axillary wall",
+     "Winged scapula"
+    ],
+    [
+     "Thoracodorsal nerve",
+     "Latissimus dorsi",
+     "Posterior axillary wall",
+     "Weak adduction and extension"
+    ],
+    [
+     "Intercostobrachial nerve",
+     "Skin of the medial upper arm",
+     "Across the axilla from T2",
+     "Numbness only"
+    ],
+    [
+     "Medial pectoral nerve",
+     "Pectoralis minor and major",
+     "Through pectoralis minor",
+     "Pectoral weakness"
+    ],
+    [
+     "Axillary nerve",
+     "Deltoid and teres minor",
+     "Around the surgical neck of the humerus",
+     "Weak abduction, lateral shoulder numbness"
+    ]
    ]
   ],
   "bl": "Winged scapula after axillary dissection means the long thoracic nerve to serratus anterior was injured.",
   "ef": "rp3_axilla",
   "pt": {
-   "hl": ["Long thoracic nerve"],
+   "hl": [
+    "Long thoracic nerve"
+   ],
    "say": "The first nerve card shows the long thoracic nerve on serratus anterior, whose injury gives a winged scapula."
   }
  },
  {
   "id": "rp3q02",
   "d": 1,
-  "tags": ["anatomic-relations", "tumor-progression"],
-  "bp": ["BP-rp3-03"],
-  "obj": ["ANAT-BREAST.1"],
+  "tags": [
+   "anatomic-relations",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp3-03"
+  ],
+  "obj": [
+   "ANAT-BREAST.1"
+  ],
   "s": "A 58-year-old woman notices a change in her right breast. Examination shows a 2-cm hard, irregular mass in the upper outer quadrant. When she raises both arms above her head, the skin directly over the mass puckers inward.",
   "l": "Tumor involvement of which structure most directly causes the skin change?",
-  "o": ["Suspensory (Cooper) ligaments", "Dermal lymphatic vessels", "Lactiferous ducts", "Pectoral fascia", "Axillary lymph nodes"],
+  "o": [
+   "Suspensory (Cooper) ligaments",
+   "Dermal lymphatic vessels",
+   "Lactiferous ducts",
+   "Pectoral fascia",
+   "Axillary lymph nodes"
+  ],
   "a": 0,
-  "e": "Fibrous **Cooper ligaments** run from the dermis through the breast to the deep fascia. A carcinoma that infiltrates them provokes fibrosis that shortens the bands, so the skin they anchor is pulled inward, most visibly when raising the arms stretches the breast. Blocked dermal lymphatic vessels cause edematous peau d'orange skin instead, involved lactiferous ducts retract the nipple, and pectoral fascia invasion fixes the mass to the chest wall without dimpling.",
+  "e": "Fibrous **Cooper ligaments** run from the dermis through the breast to the deep fascia. A carcinoma that invades them causes scarring that shortens the bands, so the skin they anchor is pulled inward into a dimple. Blocked dermal lymphatic vessels cause edematous, pitted peau d'orange skin instead. Tumor in the lactiferous ducts pulls the nipple inward, and invasion of the pectoral fascia fixes the mass to the chest wall without dimpling the skin.",
   "w": {
-   "Dermal lymphatic vessels": "Tumor emboli in dermal lymphatics cause lymphedema of the skin, whose hair follicles stay tethered and give a pitted peau d'orange surface, typical of inflammatory carcinoma.",
-   "Lactiferous ducts": "When tumor shortens the ducts that converge beneath the areola, the nipple itself is drawn inward; skin over a peripheral lesion is spared.",
-   "Pectoral fascia": "Invasion through the retromammary plane into the deep fascia anchors the lesion so it moves with the contracting muscle; it does not pucker the skin.",
-   "Axillary lymph nodes": "Nodal metastases produce a firm or matted lump in the armpit and stage the disease, but they cannot pull on skin over the primary tumor."
+   "Dermal lymphatic vessels": "Tumor in the dermal lymphatics causes skin edema and a pitted peau d'orange surface, typical of inflammatory carcinoma. It does not pucker the skin into a dimple.",
+   "Lactiferous ducts": "When tumor shortens the ducts beneath the areola, the nipple itself is drawn inward. The skin over a peripheral lesion is not pulled.",
+   "Pectoral fascia": "Invasion through the retromammary space into the pectoral fascia anchors the mass so that it moves with the contracting muscle. It does not pucker the skin.",
+   "Axillary lymph nodes": "Nodal metastases cause a firm lump in the armpit and stage the disease. They cannot pull on the skin over the primary tumor."
   },
   "et": [
-   ["Option", "What tumor involvement causes", "Where the sign appears", "Exam maneuver that shows it"],
    [
-    ["Suspensory (Cooper) ligaments", "Skin dimpling or retraction", "Skin over the mass", "Raising the arms"],
-    ["Dermal lymphatic vessels", "Peau d'orange edema", "Skin, often diffuse", "Inspection in good light"],
-    ["Lactiferous ducts", "Nipple retraction", "Nipple", "Inspection of the nipple"],
-    ["Pectoral fascia", "Fixation of the mass", "Deep to the mass", "Hands pressed on hips"],
-    ["Axillary lymph nodes", "Palpable, hard or matted nodes", "Armpit", "Axillary palpation"]
+    "Option",
+    "What tumor involvement causes",
+    "Where the sign appears",
+    "Exam maneuver that shows it"
+   ],
+   [
+    [
+     "Suspensory (Cooper) ligaments",
+     "Skin dimpling or retraction",
+     "Skin over the mass",
+     "Raising the arms"
+    ],
+    [
+     "Dermal lymphatic vessels",
+     "Peau d'orange edema",
+     "Skin, often diffuse",
+     "Inspection in good light"
+    ],
+    [
+     "Lactiferous ducts",
+     "Nipple retraction",
+     "Nipple",
+     "Inspection of the nipple"
+    ],
+    [
+     "Pectoral fascia",
+     "Fixation of the mass",
+     "Deep to the mass",
+     "Hands pressed on hips"
+    ],
+    [
+     "Axillary lymph nodes",
+     "Palpable, hard or matted nodes",
+     "Armpit",
+     "Axillary palpation"
+    ]
    ]
   ],
   "bl": "Skin dimpling over a breast cancer means tumor has shortened the Cooper (suspensory) ligaments.",
   "ef": "rp3_section",
   "pt": {
-   "hl": ["Cooper (suspensory) ligament"],
+   "hl": [
+    "Cooper (suspensory) ligament"
+   ],
    "say": "The Cooper (suspensory) ligament runs from the skin to the fascia; the note at the bottom shows that shortening it pulls the skin inward."
   }
  },
  {
   "id": "rp3q03",
   "d": 2,
-  "tags": ["anatomic-relations", "tumor-progression"],
-  "bp": ["BP-rp3-07", "BP-rp3-03"],
-  "obj": ["ANAT-BREAST.3"],
+  "tags": [
+   "anatomic-relations",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp3-07",
+   "BP-rp3-03"
+  ],
+  "obj": [
+   "ANAT-BREAST.3"
+  ],
   "s": "A 61-year-old woman has a 4-cm mass in the lower inner quadrant of her left breast. With her arms relaxed at her sides, the mass can be moved slightly over the chest wall. When she presses her hands firmly against her hips, the mass no longer moves independently and shifts with the underlying muscle. The overlying skin is smooth.",
   "l": "Tumor extension into which structure explains this finding?",
-  "o": ["Pectoral fascia", "Suspensory (Cooper) ligaments", "Lactiferous ducts", "Dermal lymphatic vessels", "Internal mammary lymph nodes"],
+  "o": [
+   "Pectoral fascia",
+   "Suspensory (Cooper) ligaments",
+   "Lactiferous ducts",
+   "Dermal lymphatic vessels",
+   "Internal mammary lymph nodes"
+  ],
   "a": 0,
-  "e": "The breast normally glides over pectoralis major because the loose retromammary space separates it from the **pectoral fascia**. A carcinoma that grows across that space and attaches to the fascia becomes fixed: tensing the muscle by pressing on the hips makes the mass move with it. Fixation signals deep invasion. Cooper ligament involvement would dimple the smooth skin, and lactiferous duct involvement would retract the nipple.",
+  "e": "The breast normally glides over pectoralis major because the loose retromammary space separates it from the **pectoral fascia**. A carcinoma that grows across this space and attaches to the fascia becomes fixed. When she tenses the muscle by pressing on her hips, the mass moves with it. Fixation signals deep invasion. Involvement of Cooper ligaments would dimple the skin, which is smooth here, and involvement of the lactiferous ducts would pull the nipple inward.",
   "w": {
-   "Suspensory (Cooper) ligaments": "Shortened suspensory bands pull the overlying skin into a dimple, and her skin is smooth; tethering to skin does not bind the lesion to muscle.",
-   "Lactiferous ducts": "Tumor along the large subareolar ducts retracts or inverts the nipple; a peripheral lesion anchored to muscle points to a deeper plane.",
-   "Dermal lymphatic vessels": "Dermal lymphatic emboli thicken and redden the skin into peau d'orange, a superficial change that leaves the deep gliding plane intact.",
-   "Internal mammary lymph nodes": "These parasternal nodes receive lymph from medial tumors, but metastasis to them is not palpable and does not change how the primary lesion slides."
+   "Suspensory (Cooper) ligaments": "Shortened Cooper ligaments pull the overlying skin into a dimple, and her skin is smooth. Tethering to skin does not bind a lesion to muscle.",
+   "Lactiferous ducts": "Tumor along the large ducts beneath the areola retracts or inverts the nipple. A peripheral mass fixed to muscle points to a deeper plane.",
+   "Dermal lymphatic vessels": "Tumor in the dermal lymphatics thickens and reddens the skin into peau d'orange. That is a superficial change and leaves the deep gliding plane intact.",
+   "Internal mammary lymph nodes": "These parasternal nodes drain the medial quadrants, but metastasis there is not palpable and does not change how the primary mass slides."
   },
   "et": [
-   ["Option", "Layer involved", "Exam sign", "Maneuver"],
    [
-    ["Pectoral fascia", "Deep fascia on pectoralis major", "Fixation to the chest wall", "Hands pressed on hips"],
-    ["Suspensory (Cooper) ligaments", "Fibrous bands to the dermis", "Skin dimpling", "Raising the arms"],
-    ["Lactiferous ducts", "Subareolar ducts", "Nipple retraction", "Inspection of the nipple"],
-    ["Dermal lymphatic vessels", "Skin lymphatics", "Peau d'orange", "Inspection of the skin"],
-    ["Internal mammary lymph nodes", "Parasternal nodes", "Usually no exam sign", "Imaging or sentinel mapping"]
+    "Option",
+    "Layer involved",
+    "Exam sign",
+    "Maneuver"
+   ],
+   [
+    [
+     "Pectoral fascia",
+     "Deep fascia on pectoralis major",
+     "Fixation to the chest wall",
+     "Hands pressed on hips"
+    ],
+    [
+     "Suspensory (Cooper) ligaments",
+     "Fibrous bands to the dermis",
+     "Skin dimpling",
+     "Raising the arms"
+    ],
+    [
+     "Lactiferous ducts",
+     "Subareolar ducts",
+     "Nipple retraction",
+     "Inspection of the nipple"
+    ],
+    [
+     "Dermal lymphatic vessels",
+     "Skin lymphatics",
+     "Peau d'orange",
+     "Inspection of the skin"
+    ],
+    [
+     "Internal mammary lymph nodes",
+     "Parasternal nodes",
+     "Usually no exam sign",
+     "Imaging or sentinel mapping"
+    ]
    ]
   ],
   "bl": "A mass that moves with contracting pectoralis has invaded the pectoral fascia across the retromammary space.",
   "ef": "rp3_section",
   "pt": {
-   "hl": ["Pectoral fascia", "Retromammary space"],
+   "hl": [
+    "Pectoral fascia",
+    "Retromammary space"
+   ],
    "say": "Tumor that crosses the retromammary space reaches the pectoral fascia, so the mass is anchored; the bottom note calls this fixation."
   }
  },
  {
   "id": "rp3q04",
   "d": 2,
-  "tags": ["lymph-drainage"],
-  "bp": ["BP-rp3-04"],
-  "obj": ["ANAT-BREAST.4"],
-  "s": "A 47-year-old woman is found to have a 1.8-cm invasive carcinoma in the upper inner quadrant of her right breast, 2 cm from the edge of the sternum. Before surgery, radiotracer is injected around the tumor. Lymphoscintigraphy shows the tracer flowing medially, away from the axilla, to a single node deep to the second intercostal space; no axillary uptake is seen.",
+  "tags": [
+   "lymph-drainage"
+  ],
+  "bp": [
+   "BP-rp3-04"
+  ],
+  "obj": [
+   "ANAT-BREAST.4"
+  ],
+  "s": "A 47-year-old woman is found to have a 1.8-cm invasive carcinoma in the upper inner quadrant of her right breast, 2 cm from the edge of the sternum. Before surgery, radiotracer is injected around the tumor. Lymphoscintigraphy shows the tracer flowing medially, away from the axilla, to a single deep node near the sternum; no axillary uptake is seen.",
   "l": "Which lymph node group received the tracer?",
-  "o": ["Internal mammary (parasternal) nodes", "Level I axillary nodes", "Level III (apical) axillary nodes", "Supraclavicular nodes", "Interpectoral (Rotter) nodes"],
+  "o": [
+   "Internal mammary (parasternal) nodes",
+   "Level I axillary nodes",
+   "Level III (apical) axillary nodes",
+   "Supraclavicular nodes",
+   "Level II axillary nodes"
+  ],
   "a": 0,
-  "e": "About 75 percent of breast lymph drains to the axilla, but the medial quadrants also drain along the internal thoracic vessels to the **internal mammary** (parasternal) nodes, which lie deep to the intercostal spaces beside the sternum. A medial tumor can therefore send its sentinel node there. Level I and level III axillary nodes lie lateral and medial to pectoralis minor within the axilla, and supraclavicular nodes sit above the clavicle.",
+  "e": "About 75 percent of breast lymph drains to the axilla, but the medial quadrants also drain along the internal thoracic vessels to the **internal mammary** (parasternal) nodes beside the sternum. A medial tumor can therefore send its sentinel node there. The axillary levels are named by their relation to pectoralis minor: level I is lateral to the muscle, level II behind it and level III medial to it. Supraclavicular nodes lie above the clavicle.",
   "w": {
-   "Level I axillary nodes": "Level I nodes lie lateral to pectoralis minor in the lower armpit and receive most lateral-quadrant lymph; the scan showed no uptake there at all.",
-   "Level III (apical) axillary nodes": "Apical nodes sit medial to pectoralis minor beneath the clavicle and are reached after levels I and II, so they are rarely the first stop.",
-   "Supraclavicular nodes": "Nodes above the clavicle receive lymph after the axillary or parasternal chains; involvement marks advanced regional disease rather than a first stop.",
-   "Interpectoral (Rotter) nodes": "These nodes lie between pectoralis major and minor and drain into level II; they belong to the axillary pathway, not the parasternal one."
+   "Level I axillary nodes": "Level I nodes lie lateral to pectoralis minor in the lower armpit and receive most lateral-quadrant lymph. The scan showed no uptake there at all.",
+   "Level III (apical) axillary nodes": "Level III (apical) nodes lie medial to pectoralis minor and are reached after levels I and II, so they are rarely the first stop.",
+   "Supraclavicular nodes": "Supraclavicular nodes lie above the clavicle and receive lymph only after the axillary or parasternal chains. They are not a first stop.",
+   "Level II axillary nodes": "Level II nodes lie behind pectoralis minor in the axilla. The scan showed no axillary uptake, so the tracer did not go there."
   },
   "et": [
-   ["Option", "Location", "Main drainage source", "Order on the path"],
    [
-    ["Internal mammary (parasternal) nodes", "Beside the sternum, deep to intercostal spaces", "Medial quadrants", "Can be first for medial tumors"],
-    ["Level I axillary nodes", "Lateral to pectoralis minor", "Lateral quadrants", "Usually first"],
-    ["Level III (apical) axillary nodes", "Medial to pectoralis minor, under the clavicle", "Levels I and II", "Late"],
-    ["Supraclavicular nodes", "Above the clavicle", "Axillary and parasternal chains", "Later still"],
-    ["Interpectoral (Rotter) nodes", "Between pectoralis major and minor", "Upper breast", "Drain into level II"]
+    "Option",
+    "Location",
+    "Main drainage source",
+    "Order on the path"
+   ],
+   [
+    [
+     "Internal mammary (parasternal) nodes",
+     "Beside the sternum, deep to intercostal spaces",
+     "Medial quadrants",
+     "Can be first for medial tumors"
+    ],
+    [
+     "Level I axillary nodes",
+     "Lateral to pectoralis minor",
+     "Lateral quadrants",
+     "Usually first"
+    ],
+    [
+     "Level III (apical) axillary nodes",
+     "Medial to pectoralis minor, under the clavicle",
+     "Levels I and II",
+     "Late"
+    ],
+    [
+     "Supraclavicular nodes",
+     "Above the clavicle",
+     "Axillary and parasternal chains",
+     "Later still"
+    ],
+    [
+     "Level II axillary nodes",
+     "Behind pectoralis minor",
+     "Level I",
+     "After level I"
+    ]
    ]
   ],
   "bl": "Medial-quadrant tumors can drain first to the internal mammary (parasternal) nodes along the internal thoracic vessels.",
   "ef": "rp3_axilla",
   "pt": {
-   "hl": ["Internal mammary nodes"],
+   "hl": [
+    "Internal mammary nodes"
+   ],
    "say": "At the top left, the internal mammary nodes drain the medial quadrants along the internal thoracic vessels beside the sternum."
   }
  },
  {
   "id": "rp3q05",
   "d": 2,
-  "tags": ["lymph-drainage", "tumor-progression"],
-  "bp": ["BP-rp3-04"],
-  "obj": ["ANAT-BREAST.4"],
+  "tags": [
+   "lymph-drainage",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp3-04"
+  ],
+  "obj": [
+   "ANAT-BREAST.4"
+  ],
   "s": "A 55-year-old woman has a 1.5-cm invasive ductal carcinoma in the upper outer quadrant of her left breast and no palpable axillary nodes. Before lumpectomy, blue dye and radiotracer are injected near the areola. The surgeon removes the first blue, radioactive node in the lower axilla, and frozen section shows no tumor.",
   "l": "Which conclusion is best supported by this result?",
-  "o": ["Further axillary dissection can be omitted", "Level III nodes must be sampled next", "The internal mammary chain must be dissected", "Distant metastasis has been excluded", "The tumor is confined by its basement membrane"],
+  "o": [
+   "Further axillary dissection can be omitted",
+   "Level III nodes must be sampled next",
+   "The internal mammary chain must be dissected",
+   "Distant metastasis has been excluded",
+   "The tumor is confined by its basement membrane"
+  ],
   "a": 0,
-  "e": "Lymph from a tumor reaches the axillary nodes in order, so the first node on the path, the sentinel node, predicts the status of the rest. A tumor-free sentinel node means the remaining axillary nodes are very unlikely to hold metastases, so **further axillary dissection can be omitted**, sparing the nerves and lymphatics at risk. Level III nodes are reached only after lower levels, and a negative node says nothing certain about blood-borne distant metastasis.",
+  "e": "Lymph from a tumor reaches the axillary nodes in order, so the first node on the path, the sentinel node, predicts the rest. A tumor-free sentinel node means the remaining axillary nodes are very unlikely to hold tumor, so **further axillary dissection can be omitted**. That spares the nerves and lymphatics at risk. Level III nodes are reached only after the lower levels. A negative node does not rule out spread through the blood to distant organs.",
   "w": {
-   "Level III nodes must be sampled next": "Apical nodes lie beyond levels I and II on the drainage path; with a clean first node, isolated spread to them is uncommon, so routine sampling is unnecessary.",
-   "The internal mammary chain must be dissected": "Parasternal nodes matter mainly for medial tumors, and even then they are imaged or irradiated rather than routinely dissected; this tumor is lateral.",
-   "Distant metastasis has been excluded": "Carcinoma also spreads through blood to bone, liver, lung and brain, so a clean node lowers the likelihood of metastasis but cannot rule it out.",
-   "The tumor is confined by its basement membrane": "An invasive ductal carcinoma has by definition already crossed its basement membrane; node status reflects lymphatic spread, not whether invasion occurred."
+   "Level III nodes must be sampled next": "Apical nodes lie beyond levels I and II on the drainage path. With a clean first node, spread to them is unlikely, so sampling them is unnecessary.",
+   "The internal mammary chain must be dissected": "Internal mammary nodes matter mainly for medial tumors. This tumor is in the upper outer quadrant, so that chain is not the concern.",
+   "Distant metastasis has been excluded": "Carcinoma also spreads through the blood to bone, liver, lung and brain. A clean node lowers the likelihood of metastasis but cannot rule it out.",
+   "The tumor is confined by its basement membrane": "An invasive ductal carcinoma has by definition already crossed its basement membrane. Node status reflects lymphatic spread, not whether invasion occurred."
   },
   "et": [
-   ["Option", "What it depends on", "Evidence needed"],
    [
-    ["Further axillary dissection can be omitted", "Orderly lymphatic spread", "Tumor-free sentinel node"],
-    ["Level III nodes must be sampled next", "Spread through levels I and II first", "Positive lower-level nodes"],
-    ["The internal mammary chain must be dissected", "Medial tumor drainage", "Parasternal uptake or imaging findings"],
-    ["Distant metastasis has been excluded", "Blood-borne spread", "Imaging of bone, liver, lung and brain"],
-    ["The tumor is confined by its basement membrane", "In situ versus invasive growth", "Histology of the primary tumor"]
+    "Option",
+    "What it depends on",
+    "Evidence needed"
+   ],
+   [
+    [
+     "Further axillary dissection can be omitted",
+     "Orderly lymphatic spread",
+     "Tumor-free sentinel node"
+    ],
+    [
+     "Level III nodes must be sampled next",
+     "Spread through levels I and II first",
+     "Positive lower-level nodes"
+    ],
+    [
+     "The internal mammary chain must be dissected",
+     "Medial tumor drainage",
+     "Parasternal uptake or imaging findings"
+    ],
+    [
+     "Distant metastasis has been excluded",
+     "Blood-borne spread",
+     "Imaging of bone, liver, lung and brain"
+    ],
+    [
+     "The tumor is confined by its basement membrane",
+     "In situ versus invasive growth",
+     "Histology of the primary tumor"
+    ]
    ]
   ],
   "bl": "A tumor-free sentinel node predicts clean remaining nodes, so further axillary dissection can be omitted.",
   "ef": "rp3_axilla",
   "pt": {
-   "hl": ["Sentinel node"],
+   "hl": [
+    "Sentinel node"
+   ],
    "say": "The sentinel node, ringed at level I, is the first axillary stop; when it is clean, further axillary dissection can be skipped."
   }
  },
  {
   "id": "rp3q06",
   "d": 3,
-  "tags": ["nerve-supply"],
-  "bp": ["BP-rp3-06"],
-  "obj": ["ANAT-BREAST.4"],
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp3-06"
+  ],
+  "obj": [
+   "ANAT-BREAST.4"
+  ],
   "s": "A 49-year-old woman who swims competitively had a right modified radical mastectomy with axillary node dissection 3 months ago. She now struggles to pull herself out of the pool and to reach into her back pocket with her right hand. Her scapula stays flat against the chest wall when she pushes against a wall, and light touch over the medial upper arm is normal.",
   "l": "Which nerve was most likely injured during the operation?",
-  "o": ["Thoracodorsal nerve", "Long thoracic nerve", "Intercostobrachial nerve", "Lateral pectoral nerve", "Axillary nerve"],
+  "o": [
+   "Thoracodorsal nerve",
+   "Long thoracic nerve",
+   "Intercostobrachial nerve",
+   "Lateral pectoral nerve",
+   "Axillary nerve"
+  ],
   "a": 0,
-  "e": "Pulling the body up and reaching into a back pocket need extension, adduction and internal rotation of the arm, the actions of latissimus dorsi. Its nerve, the **thoracodorsal nerve**, runs along the posterior axillary wall with the thoracodorsal vessels, close to the nodes removed in dissection. A long thoracic injury would wing the scapula, which is absent, and an intercostobrachial injury would numb the medial arm, which has normal sensation.",
+  "e": "Pulling the body up and reaching into a back pocket need extension, adduction and internal rotation of the arm, which are the actions of latissimus dorsi. Its nerve, the **thoracodorsal nerve**, runs along the posterior axillary wall close to the nodes removed in a dissection. A long thoracic injury would wing the scapula, which is not seen here. An intercostobrachial injury would numb the medial arm, but her sensation is normal.",
   "w": {
-   "Long thoracic nerve": "Loss of serratus anterior lets the medial scapular border lift away from the ribs; her flat scapula during a wall push rules this out.",
-   "Intercostobrachial nerve": "Cutting this sensory T2 branch numbs the armpit and inner arm without weakness, yet her sensation there is normal and her deficit is motor.",
-   "Lateral pectoral nerve": "It supplies the upper pectoralis major, which flexes and adducts the arm across the chest; injury weakens pushing and hugging, not pulling down and back.",
-   "Axillary nerve": "Deltoid and teres minor lose power after humeral neck fracture or shoulder dislocation, weakening abduction; node surgery rarely reaches this nerve."
+   "Long thoracic nerve": "Loss of serratus anterior lets the medial border of the scapula lift off the ribs. Her scapula stays flat during a wall push, which rules this out.",
+   "Intercostobrachial nerve": "Cutting this sensory T2 branch numbs the armpit and inner arm without weakness. Her sensation there is normal and her deficit is motor.",
+   "Lateral pectoral nerve": "This nerve supplies the upper pectoralis major, which flexes and adducts the arm across the chest. Injury weakens pushing and hugging, not pulling down and back.",
+   "Axillary nerve": "Deltoid and teres minor lose power after a humeral neck fracture or shoulder dislocation, which weakens abduction. Node surgery rarely reaches this nerve."
   },
   "et": [
-   ["Option", "Muscle supplied", "Main action lost", "Sensory loss"],
    [
-    ["Thoracodorsal nerve", "Latissimus dorsi", "Extension, adduction, internal rotation", "None"],
-    ["Long thoracic nerve", "Serratus anterior", "Scapular protraction; winging", "None"],
-    ["Intercostobrachial nerve", "No muscle", "No motor loss", "Medial upper arm and axilla"],
-    ["Lateral pectoral nerve", "Upper pectoralis major", "Flexion and adduction across the chest", "None"],
-    ["Axillary nerve", "Deltoid and teres minor", "Abduction beyond the first few degrees", "Lateral shoulder"]
+    "Option",
+    "Muscle supplied",
+    "Main action lost",
+    "Sensory loss"
+   ],
+   [
+    [
+     "Thoracodorsal nerve",
+     "Latissimus dorsi",
+     "Extension, adduction, internal rotation",
+     "None"
+    ],
+    [
+     "Long thoracic nerve",
+     "Serratus anterior",
+     "Scapular protraction; winging",
+     "None"
+    ],
+    [
+     "Intercostobrachial nerve",
+     "No muscle",
+     "No motor loss",
+     "Medial upper arm and axilla"
+    ],
+    [
+     "Lateral pectoral nerve",
+     "Upper pectoralis major",
+     "Flexion and adduction across the chest",
+     "None"
+    ],
+    [
+     "Axillary nerve",
+     "Deltoid and teres minor",
+     "Abduction beyond the first few degrees",
+     "Lateral shoulder"
+    ]
    ]
   ],
   "bl": "Weak extension and adduction with a flat scapula after axillary surgery means thoracodorsal nerve injury to latissimus dorsi.",
   "ef": "rp3_axilla",
   "pt": {
-   "hl": ["Thoracodorsal nerve"],
+   "hl": [
+    "Thoracodorsal nerve"
+   ],
    "say": "The middle card shows the thoracodorsal nerve to latissimus dorsi, whose injury weakens adduction and extension, her exact deficit."
   }
  },
  {
   "id": "rp3q07",
   "d": 1,
-  "tags": ["hormone-actions", "cell-of-origin"],
-  "bp": ["BP-rp3-02", "BP-rp3-08"],
-  "obj": ["TBL-BREAST.2"],
+  "tags": [
+   "hormone-actions",
+   "cell-of-origin"
+  ],
+  "bp": [
+   "BP-rp3-02",
+   "BP-rp3-08"
+  ],
+  "obj": [
+   "TBL-BREAST.2"
+  ],
   "s": "A 30-year-old woman who is exclusively breastfeeding her 6-week-old son notices that milk begins to spray from both nipples whenever she hears him cry, even before he latches.",
   "l": "Contraction of which cells ejects the milk?",
-  "o": ["Myoepithelial cells", "Luminal epithelial cells", "Areolar smooth muscle cells", "Intralobular stromal cells", "Anterior pituitary lactotrophs"],
+  "o": [
+   "Myoepithelial cells",
+   "Luminal epithelial cells",
+   "Areolar smooth muscle cells",
+   "Intralobular stromal cells",
+   "Anterior pituitary lactotrophs"
+  ],
   "a": 0,
-  "e": "The cry triggers a conditioned reflex: the hypothalamus signals the posterior pituitary to release oxytocin, which binds receptors on the **myoepithelial cells** that wrap every alveolus and duct. Their contraction squeezes milk into the ducts and out of the nipple, the let-down reflex. Luminal epithelial cells synthesize milk under prolactin but cannot contract, and lactotrophs secrete prolactin rather than ejecting milk.",
+  "e": "The cry triggers a conditioned reflex. The hypothalamus signals the posterior pituitary to release oxytocin, which binds receptors on the **myoepithelial cells** that wrap every alveolus and duct. Their contraction squeezes milk into the ducts and out of the nipple, the let-down reflex. Luminal epithelial cells make milk under prolactin but cannot contract, and lactotrophs secrete prolactin instead of ejecting milk.",
   "w": {
-   "Luminal epithelial cells": "The inner layer makes milk proteins and fat under prolactin and releases them into the lumen, but it has no contractile filaments to push milk out.",
-   "Areolar smooth muscle cells": "Smooth muscle in the areola and nipple contracts to erect the nipple for latching; it does not surround the alveoli where milk is stored.",
-   "Intralobular stromal cells": "The loose stroma around lobules is hormone-responsive and swells in the luteal phase, but it holds no contractile cells that expel milk.",
-   "Anterior pituitary lactotrophs": "Lactotrophs secrete prolactin, which sustains milk synthesis between feeds; ejection depends on oxytocin from the posterior pituitary instead."
+   "Luminal epithelial cells": "The inner luminal layer makes milk proteins and fat under prolactin and releases them into the lumen. It has no contractile filaments to push milk out.",
+   "Areolar smooth muscle cells": "Smooth muscle in the areola and nipple contracts to erect the nipple. It does not surround the alveoli where milk is stored.",
+   "Intralobular stromal cells": "The loose stroma around the lobules responds to hormones, but it has no contractile cells that could push milk out.",
+   "Anterior pituitary lactotrophs": "Lactotrophs secrete prolactin, which keeps milk synthesis going between feeds. Ejection depends on oxytocin from the posterior pituitary."
   },
   "et": [
-   ["Option", "Location", "Main hormone acting on it", "Role in lactation"],
    [
-    ["Myoepithelial cells", "Outer layer of alveoli and ducts", "Oxytocin", "Contract to eject milk"],
-    ["Luminal epithelial cells", "Inner layer facing the lumen", "Prolactin", "Synthesize and secrete milk"],
-    ["Areolar smooth muscle cells", "Nipple and areola", "Tactile and sympathetic reflexes", "Erect the nipple"],
-    ["Intralobular stromal cells", "Around lobules", "Estrogen and progesterone", "Support the epithelium"],
-    ["Anterior pituitary lactotrophs", "Anterior pituitary", "Dopamine inhibits them", "Secrete prolactin"]
+    "Option",
+    "Location",
+    "Main hormone acting on it",
+    "Role in lactation"
+   ],
+   [
+    [
+     "Myoepithelial cells",
+     "Outer layer of alveoli and ducts",
+     "Oxytocin",
+     "Contract to eject milk"
+    ],
+    [
+     "Luminal epithelial cells",
+     "Inner layer facing the lumen",
+     "Prolactin",
+     "Synthesize and secrete milk"
+    ],
+    [
+     "Areolar smooth muscle cells",
+     "Nipple and areola",
+     "Tactile and sympathetic reflexes",
+     "Erect the nipple"
+    ],
+    [
+     "Intralobular stromal cells",
+     "Around lobules",
+     "Estrogen and progesterone",
+     "Support the epithelium"
+    ],
+    [
+     "Anterior pituitary lactotrophs",
+     "Anterior pituitary",
+     "Dopamine inhibits them",
+     "Secrete prolactin"
+    ]
    ]
   ],
   "bl": "Oxytocin makes the myoepithelial cells around alveoli contract, producing milk let-down."
@@ -235,28 +542,71 @@
  {
   "id": "rp3q08",
   "d": 3,
-  "tags": ["histology-to-diagnosis", "tumor-progression"],
-  "bp": ["BP-rp3-02"],
-  "obj": ["TBL-BREAST.1"],
+  "tags": [
+   "histology-to-diagnosis",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp3-02"
+  ],
+  "obj": [
+   "TBL-BREAST.1"
+  ],
   "s": "A 54-year-old woman has a 1.2-cm spiculated density on screening mammography. Core biopsy shows irregular nests and small glands of atypical epithelial cells scattered through a dense fibrous stroma. Immunostains for p63 and smooth muscle myosin heavy chain are positive in a continuous rim around adjacent normal ducts but are absent around the atypical nests and glands.",
   "l": "What does the absent staining around the atypical glands indicate?",
-  "o": ["Loss of the myoepithelial layer from invasion", "Sclerosing adenosis with compressed acini", "Lobular rather than ductal differentiation", "Overexpression of the HER2 receptor", "Lactational change in the lobules"],
+  "o": [
+   "Loss of the myoepithelial layer from invasion",
+   "Sclerosing adenosis with compressed acini",
+   "Lobular rather than ductal differentiation",
+   "Overexpression of the HER2 receptor",
+   "Lactational change in the lobules"
+  ],
   "a": 0,
-  "e": "p63 and smooth muscle myosin heavy chain mark **myoepithelial cells**, which normally form a continuous outer layer around ducts and lobules and persist around carcinoma in situ. Tumor cells that have broken through the basement membrane into the stroma form nests with no myoepithelial rim, so absent staining means invasive carcinoma, fitting the spiculated, desmoplastic mass. Sclerosing adenosis also looks infiltrative, but its compressed acini keep their myoepithelial layer and stain.",
+  "e": "p63 and smooth muscle myosin mark **myoepithelial cells**. These cells normally form a continuous outer layer around ducts and lobules and still surround carcinoma in situ. Tumor cells that break through the basement membrane into the stroma form nests with no myoepithelial rim. Absent staining therefore means invasive carcinoma, which fits the spiculated mass. Sclerosing adenosis can also look infiltrative, but its compressed acini keep their myoepithelial layer and stain.",
   "w": {
-   "Sclerosing adenosis with compressed acini": "This benign mimic distorts crowded acini with fibrosis, yet every acinus keeps a continuous p63-positive rim, which is exactly what these nests lack.",
-   "Lobular rather than ductal differentiation": "Lobular carcinoma is identified by loss of E-cadherin, not by myoepithelial stains; both ductal and lobular in situ lesions keep a myoepithelial rim.",
-   "Overexpression of the HER2 receptor": "HER2 status is read with a separate membrane immunostain or a gene amplification test; p63 and myosin say nothing about growth-factor receptors.",
+   "Sclerosing adenosis with compressed acini": "This benign mimic distorts crowded acini with fibrosis, but every acinus keeps a continuous p63-positive rim. These nests lack that rim.",
+   "Lobular rather than ductal differentiation": "Lobular carcinoma is recognized by loss of E-cadherin, not by myoepithelial stains. Both ductal and lobular in situ lesions keep a myoepithelial rim.",
+   "Overexpression of the HER2 receptor": "HER2 status is read with a separate membrane stain or a gene amplification test. p63 and myosin say nothing about growth factor receptors.",
    "Lactational change in the lobules": "Lactating lobules show dilated alveoli with vacuolated cells and milk, and their contractile outer layer is preserved to eject that milk."
   },
   "et": [
-   ["Option", "Myoepithelial rim", "Stain that identifies it", "Typical mammogram"],
    [
-    ["Loss of the myoepithelial layer from invasion", "Absent around tumor nests", "p63 and smooth muscle myosin negative", "Spiculated mass"],
-    ["Sclerosing adenosis with compressed acini", "Present around every acinus", "p63 and smooth muscle myosin positive", "Calcifications or small density"],
-    ["Lobular rather than ductal differentiation", "Present in the in situ phase", "E-cadherin loss", "Often subtle or occult"],
-    ["Overexpression of the HER2 receptor", "Unrelated to HER2", "HER2 membrane stain or amplification", "No specific pattern"],
-    ["Lactational change in the lobules", "Present", "Routine stain shows secretory alveoli", "Dense breast tissue"]
+    "Option",
+    "Myoepithelial rim",
+    "Stain that identifies it",
+    "Typical mammogram"
+   ],
+   [
+    [
+     "Loss of the myoepithelial layer from invasion",
+     "Absent around tumor nests",
+     "p63 and smooth muscle myosin negative",
+     "Spiculated mass"
+    ],
+    [
+     "Sclerosing adenosis with compressed acini",
+     "Present around every acinus",
+     "p63 and smooth muscle myosin positive",
+     "Calcifications or small density"
+    ],
+    [
+     "Lobular rather than ductal differentiation",
+     "Present in the in situ phase",
+     "E-cadherin loss",
+     "Often subtle or occult"
+    ],
+    [
+     "Overexpression of the HER2 receptor",
+     "Unrelated to HER2",
+     "HER2 membrane stain or amplification",
+     "No specific pattern"
+    ],
+    [
+     "Lactational change in the lobules",
+     "Present",
+     "Routine stain shows secretory alveoli",
+     "Dense breast tissue"
+    ]
    ]
   ],
   "bl": "Absent myoepithelial staining (p63, smooth muscle myosin) around tumor nests means the carcinoma is invasive."
@@ -264,57 +614,143 @@
  {
   "id": "rp3q09",
   "d": 2,
-  "tags": ["cell-of-origin", "hormone-actions"],
-  "bp": ["BP-rp3-09"],
-  "obj": ["TBL-BREAST.2"],
+  "tags": [
+   "cell-of-origin",
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp3-09"
+  ],
+  "obj": [
+   "TBL-BREAST.2"
+  ],
   "s": "A pathology resident reviews breast tissue from a 28-year-old woman who died in a car crash 8 weeks after delivering a healthy infant. The lobules are enlarged and packed with dilated alveoli lined by cuboidal cells with vacuolated cytoplasm. Electron microscopy shows lipid droplets bulging from the apical surface and pinching off wrapped in a thin layer of plasma membrane and cytoplasm.",
   "l": "Which secretory mechanism releases the milk component described?",
-  "o": ["Apocrine secretion", "Merocrine secretion", "Holocrine secretion", "Transcytosis", "Paracellular diffusion"],
+  "o": [
+   "Apocrine secretion",
+   "Merocrine secretion",
+   "Holocrine secretion",
+   "Transcytosis",
+   "Paracellular diffusion"
+  ],
   "a": 0,
-  "e": "Milk fat is released by **apocrine secretion**: the lipid droplet pushes against the apical membrane and pinches off with a thin rim of membrane and cytoplasm, which becomes the milk fat globule membrane. Milk proteins such as casein leave the same cells by merocrine secretion, the exocytosis of secretory vesicles with no loss of cytoplasm. Holocrine secretion, in which the whole cell disintegrates, describes sebaceous glands.",
+  "e": "Milk fat is released by **apocrine secretion**. The lipid droplet pushes against the apical membrane and pinches off with a thin rim of membrane and cytoplasm. Milk proteins such as casein leave the same cells by merocrine secretion, which is exocytosis of secretory vesicles with no loss of cytoplasm. Holocrine secretion, in which the whole cell breaks down, describes sebaceous glands.",
   "w": {
-   "Merocrine secretion": "Exocytosis of vesicles releases milk proteins such as casein, and lactose, without losing any cell membrane, so it cannot explain membrane-wrapped fat droplets.",
-   "Holocrine secretion": "Sebaceous glands release their product when the entire cell breaks down and is shed; lactating alveolar cells survive and keep secreting.",
-   "Transcytosis": "Vesicles carry secretory IgA across the alveolar cell after binding the polymeric immunoglobulin receptor; this moves antibody, not the fat droplets described.",
-   "Paracellular diffusion": "Leak between cells through loosened tight junctions lets sodium and plasma proteins into milk during mastitis; it does not package lipid in membrane."
+   "Merocrine secretion": "Exocytosis of vesicles releases milk proteins such as casein without losing any cell membrane, so it cannot explain membrane-wrapped fat droplets.",
+   "Holocrine secretion": "Sebaceous glands release their product when the whole cell breaks down. Lactating alveolar cells survive and keep secreting.",
+   "Transcytosis": "Transcytosis carries proteins such as IgA across the cell in vesicles. It does not release the membrane-wrapped fat droplets described.",
+   "Paracellular diffusion": "Paracellular diffusion is leakage between cells. It does not wrap lipid in membrane the way these droplets are released."
   },
   "et": [
-   ["Option", "How the product leaves the cell", "Cell membrane lost", "Example"],
    [
-    ["Apocrine secretion", "Apex pinches off around the droplet", "A thin rim", "Milk fat globules"],
-    ["Merocrine secretion", "Exocytosis of vesicles", "No membrane lost", "Casein and lactose"],
-    ["Holocrine secretion", "Whole cell breaks down", "Entire cell", "Sebum"],
-    ["Transcytosis", "Receptor-bound vesicles cross the cell", "No membrane lost", "Secretory IgA"],
-    ["Paracellular diffusion", "Leak between cells", "No membrane lost", "Sodium in mastitis milk"]
+    "Option",
+    "How the product leaves the cell",
+    "Cell membrane lost",
+    "Example"
+   ],
+   [
+    [
+     "Apocrine secretion",
+     "Apex pinches off around the droplet",
+     "A thin rim",
+     "Milk fat globules"
+    ],
+    [
+     "Merocrine secretion",
+     "Exocytosis of vesicles",
+     "No membrane lost",
+     "Casein and lactose"
+    ],
+    [
+     "Holocrine secretion",
+     "Whole cell breaks down",
+     "Entire cell",
+     "Sebum"
+    ],
+    [
+     "Transcytosis",
+     "Receptor-bound vesicles cross the cell",
+     "No membrane lost",
+     "Secretory IgA"
+    ],
+    [
+     "Paracellular diffusion",
+     "Leak between cells",
+     "No membrane lost",
+     "Sodium in mastitis milk"
+    ]
    ]
   ],
-  "bl": "Milk fat leaves alveolar cells by apocrine secretion; milk proteins leave by merocrine exocytosis."
+  "bl": "Milk fat leaves alveolar cells by apocrine secretion. Milk proteins leave by merocrine exocytosis."
  },
  {
   "id": "rp3q10",
   "d": 3,
-  "tags": ["hormone-actions", "hormone-timeline"],
-  "bp": ["BP-rp3-08"],
-  "obj": ["TBL-BREAST.2"],
+  "tags": [
+   "hormone-actions",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp3-08"
+  ],
+  "obj": [
+   "TBL-BREAST.2"
+  ],
   "s": "A 29-year-old woman at 36 weeks' gestation asks why her breasts, which have enlarged greatly during pregnancy, are not yet producing milk, even though her serum prolactin is many times the nonpregnant level. Two days after an uncomplicated vaginal delivery and expulsion of the placenta, her breasts become firm and full, and copious milk production begins.",
   "l": "The onset of copious milk production after delivery is best explained by a fall in which hormone?",
-  "o": ["Progesterone", "Prolactin", "Oxytocin", "Dopamine", "Human placental lactogen"],
+  "o": [
+   "Progesterone",
+   "Prolactin",
+   "Oxytocin",
+   "Dopamine",
+   "Human placental lactogen"
+  ],
   "a": 0,
-  "e": "During pregnancy, estrogen, **progesterone** and prolactin build the lobules and alveoli, but the very high placental progesterone blocks prolactin's ability to switch on full milk synthesis. Expelling the placenta removes that source, and the fall in progesterone over the next few days releases the brake, so copious secretion begins while prolactin stays high. A fall in prolactin would reduce milk, and oxytocin controls ejection rather than production.",
+  "e": "During pregnancy, estrogen, **progesterone** and prolactin build the lobules and alveoli, but the very high placental progesterone blocks prolactin from switching on full milk synthesis. Delivery of the placenta removes that source, and the fall in progesterone over the next few days releases the brake. Copious milk then appears while prolactin stays high. A fall in prolactin would reduce milk, and oxytocin controls ejection, not production.",
   "w": {
-   "Prolactin": "Prolactin remains high after delivery and rises further with each feeding; it is the hormone that drives milk synthesis, so its fall would stop lactation instead.",
-   "Oxytocin": "Oxytocin surges during labor and suckling to contract myoepithelial cells and eject milk; it moves milk already made rather than starting synthesis.",
-   "Dopamine": "Hypothalamic dopamine inhibits lactotrophs, so less dopamine would raise prolactin; but prolactin was already high before delivery without copious milk.",
-   "Human placental lactogen": "This placental hormone falls after delivery too, but its main roles are maternal insulin resistance and mammary growth; its loss does not unlock secretion."
+   "Prolactin": "Prolactin stays high after delivery and rises further with each feeding. It drives milk synthesis, so a fall would stop lactation.",
+   "Oxytocin": "Oxytocin surges during labor and suckling to make myoepithelial cells contract and eject milk. It moves milk that is already made.",
+   "Dopamine": "Hypothalamic dopamine inhibits prolactin release, so less dopamine would raise prolactin. But prolactin was already high before delivery without copious milk.",
+   "Human placental lactogen": "Human placental lactogen also falls after delivery. Its main roles are maternal insulin resistance and breast growth, and its loss does not unlock milk secretion."
   },
   "et": [
-   ["Option", "Main source", "Level just after delivery", "Main effect on the breast"],
    [
-    ["Progesterone", "Placenta in late pregnancy", "Falls sharply", "Builds alveoli; blocks full milk synthesis"],
-    ["Prolactin", "Anterior pituitary", "Stays high", "Drives milk synthesis"],
-    ["Oxytocin", "Posterior pituitary", "Pulses with suckling", "Myoepithelial contraction and let-down"],
-    ["Dopamine", "Hypothalamus", "Suppressed by suckling", "Inhibits prolactin release"],
-    ["Human placental lactogen", "Placenta", "Disappears within days", "Mammary growth, insulin resistance"]
+    "Option",
+    "Main source",
+    "Level just after delivery",
+    "Main effect on the breast"
+   ],
+   [
+    [
+     "Progesterone",
+     "Placenta in late pregnancy",
+     "Falls sharply",
+     "Builds alveoli; blocks full milk synthesis"
+    ],
+    [
+     "Prolactin",
+     "Anterior pituitary",
+     "Stays high",
+     "Drives milk synthesis"
+    ],
+    [
+     "Oxytocin",
+     "Posterior pituitary",
+     "Pulses with suckling",
+     "Myoepithelial contraction and let-down"
+    ],
+    [
+     "Dopamine",
+     "Hypothalamus",
+     "Suppressed by suckling",
+     "Inhibits prolactin release"
+    ],
+    [
+     "Human placental lactogen",
+     "Placenta",
+     "Disappears within days",
+     "Mammary growth, insulin resistance"
+    ]
    ]
   ],
   "bl": "Placental delivery drops progesterone, releasing its block on prolactin, so copious milk production begins."
