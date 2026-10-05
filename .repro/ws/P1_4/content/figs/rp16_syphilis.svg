@@ -1,0 +1,39 @@
+<svg class="dia" viewBox="0 0 900 474" role="img" aria-label="Timeline of untreated syphilis from primary to tertiary stage, with the nontreponemal RPR titer rising, peaking in secondary syphilis and falling after penicillin, while the treponemal FTA-ABS result stays positive for life">
+<text class="ttl" x="14" y="26" font-size="17">Syphilis over time: the stages, and what each blood test does</text>
+<rect x="60" y="44" width="160" height="88" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.2"/>
+<text class="b" x="72" y="68" font-size="15">Primary</text>
+<text x="72" y="94" font-size="14">Painless chancre</text>
+<text x="72" y="118" font-size="14">about 3 weeks</text>
+<rect x="224" y="44" width="176" height="88" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.2"/>
+<text class="b" x="236" y="68" font-size="15">Secondary</text>
+<text x="236" y="94" font-size="14">Palms-soles rash</text>
+<text x="236" y="118" font-size="14">Condylomata lata</text>
+<rect x="404" y="44" width="192" height="88" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="416" y="68" font-size="15">Latent</text>
+<text x="416" y="94" font-size="14">No signs</text>
+<text x="416" y="118" font-size="14">Serology only</text>
+<rect x="600" y="44" width="286" height="88" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.2"/>
+<text class="b" x="612" y="68" font-size="15">Tertiary</text>
+<text x="612" y="94" font-size="14">Gummas, aortitis</text>
+<text x="612" y="118" font-size="14">Tabes, Argyll Robertson pupil</text>
+<line x1="60" y1="330" x2="886" y2="330" stroke="var(--ink-3)" stroke-width="1.6"/>
+<line x1="222" y1="140" x2="222" y2="330" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="402" y1="140" x2="402" y2="330" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="598" y1="140" x2="598" y2="330" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 4"/>
+<path d="M60 330 C 120 326, 160 200, 240 186 L 886 186" fill="none" stroke="var(--a2)" stroke-width="3"/>
+<path d="M76 330 C 140 322, 200 230, 300 214 C 380 204, 480 240, 598 262 C 700 280, 800 292, 886 298" fill="none" stroke="var(--a1)" stroke-width="3"/>
+<path d="M350 212 C 380 226, 404 300, 452 326" fill="none" stroke="var(--a1)" stroke-width="2.4" stroke-dasharray="7 5"/>
+<text class="a2" x="606" y="172" font-size="14">Treponemal test: positive for life</text>
+<text class="a1" x="470" y="300" font-size="14">Nontreponemal titer (RPR, VDRL)</text>
+<text class="a1" x="236" y="286" font-size="14">After penicillin,</text>
+<text class="a1" x="236" y="304" font-size="14">titer falls fourfold</text>
+<text x="66" y="352" font-size="14">Infection</text>
+<text x="222" y="352" font-size="14" text-anchor="middle">3 weeks</text>
+<text x="402" y="352" font-size="14" text-anchor="middle">6 weeks to 6 months</text>
+<text x="598" y="352" font-size="14" text-anchor="middle">1 year</text>
+<text x="800" y="352" font-size="14" text-anchor="middle">Years to decades</text>
+<rect x="14" y="368" width="872" height="94" rx="8" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1"/>
+<text x="30" y="394" font-size="14">Screen with RPR or VDRL, which give a titer; confirm with a treponemal test.</text>
+<text x="30" y="420" font-size="14">Only the nontreponemal titer tracks treatment; false positives: lupus, pregnancy, viral illness.</text>
+<text x="30" y="446" font-size="14">Darkfield microscopy of chancre fluid can show spirochetes before serology turns positive.</text>
+</svg>

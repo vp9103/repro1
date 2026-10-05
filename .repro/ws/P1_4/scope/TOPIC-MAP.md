@@ -75,7 +75,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | ANAT-PERINEUM-LEC.2 | rp2 | - | ischiopubic; pubic arch; crura |
 | ANAT-PERINEUM-LEC.3 | rp2 | - | bulbospongiosus; ischiocavernosus; deep transverse perineal; bulbourethral |
 | ANAT-PERINEUM-LEC.4 | rp2 | - | superior rectal; inferior mesenteric; portocaval; visceral |
-| ANAT-PERINEUM-LEC.5 | rp2 | - | labia majora; labia minora; hymen; clitoris |
+| ANAT-PERINEUM-LEC.5 | rp2 | - | labia majora; labia minora; hymen; paired corpora |
 | ANAT-PERINEUM-LEC.6 | rp2 | - | prostatic urethra; spongy urethra; navicular fossa; crura |
 | ANAT-PERINEUM-LEC.7 | rp2 | - | internal pudendal; external pudendal; dorsal vein; helicine |
 | ANAT-PERINEUM-LEC.8 | rp2 | - | sentinel; obturator nodes; deep inguinal |
@@ -150,7 +150,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | TBL-STI.1 | rp16,rp17,rp12 | - | treponema pallidum; granulomatis; azithromycin; benzathine |
 | TBL-STI.2 | rp16 | - | polymicrobial; tubal factor; ectopic pregnancy; chronic pelvic pain |
 | TBL-STI.3 | rp18 | - | neonatal herpes; erythromycin; papillomatosis |
-| VIRAL-STI-TORCH.1 | rp17 | - | ribosome; uncoating; assembl; budding |
+| VIRAL-STI-TORCH.1 | rp17 | - | ribosome; uncoating; inactivates rb; budding |
 | VIRAL-STI-TORCH.2 | rp17 | - | provirus; episom; reservoir; lytic |
 | VIRAL-STI-TORCH.3 | rp17 | - | tropism; antigenic variation; downregulat; vertical |
 | VIRAL-STI-TORCH.4 | rp17 | - | syringe; condom; pre-exposure |
@@ -202,7 +202,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | TRANSGENDER-LEC.6 | rp29 | - | cervical cancer screening; prostate-specific antigen; hpv vaccin; suicide risk |
 | TBL-PUBERTY.1 | rp7 | - | breast bud; pubic hair; testicular volume; stage 2 |
 | TBL-PUBERTY.2 | rp7 | - | pubarche; gonadarche; adrenal androgen; axillary |
-| TBL-PUBERTY.3 | rp7 | - | leptin; nocturnal; granulosa; sertoli |
+| TBL-PUBERTY.3 | rp7 | - | leptin; nocturnal; theca cells; sertoli |
 | TBL-PUBERTY.4 | rp7 | - | pubarche; peak height velocity; penile; spermarche |
 | TBL-PUBERTY.5 | rp7 | - | gnrh stimulation; magnetic resonance; testotoxicosis; kallmann |
 | TBL-PUBERTY.6 | rp7 | - | gynecomastia; self-limit; growth velocity |
@@ -256,7 +256,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | GTD.1 | rp26 | - | nlrp7; nulliparity; familial |
 | GTD.2 | rp26 | - | antecedent; 15 to 20 percent |
 | GTD.3 | rp26 | - | uterotonic; no more children; thyroid function; hormonal contraception |
-| GTD.4 | rp26 | - | plateau; actinomycin; risk score; gynecologic oncolog |
+| GTD.4 | rp26 | - | plateau or rise; actinomycin; risk score; placental site trophoblastic |
 | GTD.5 | rp26 | - | hydropic; trophoblastic hyperplasia; p57; duplicat |
 | GTD.6 | rp26 | - | hematogenous; cytotrophoblast; intermediate trophoblast; epithelioid trophoblastic |
 | DELIVERY-SIM.1 | rp28 | - | ritgen; nuchal cord; anterior shoulder; cord clamp |
@@ -288,7 +288,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | TBL-BREAST.13 | rp24 | - | homologous recombination; ashkenazi; two-hit; age 70 |
 | TBL-BREAST.14 | rp24 | - | luminal b; her2-enriched; basal-like; pam50 |
 | TBL-BREAST.15 | rp24 | - | luminal a; ki-67; endocrine therapy; complete response |
-| TBL-BREAST.16 | rp24 | - | syncytial; mucin; tubular; spindle |
+| TBL-BREAST.16 | rp24 | - | syncytial; lakes of mucin; well-formed tubules; unusual sites |
 | TBL-BREAST.17 | rp24 | - | nottingham; hormone receptor; recurrence score; tumor size |
 | PREG-REVIEW.1 | rp25,rp27,rp28 | - | aortocaval; thromboembol; uterine blood flow |
 | PREG-REVIEW.2 | rp30 | - | last menstrual period; redat; more than 7 days; embryo transfer |

@@ -51,3 +51,11 @@ orchestrator diagnoses and changes the approach.
 - Phase verdicts: `--verify P<n>` sample + `.repro/P2-REGRESSION.md`-style checklists of every known failure, on the
   real rendered candidate, true 1280/400 px, both themes, keyboard. Orchestrator-authored substantive fixes get a
   fresh checker.
+
+## Coverage (decision 2026-10-05)
+- Key terms (TOPIC-MAP, blueprint) are a proxy: P1.V judges them by the plan's question (right topic, accurate,
+  specific, not generic; unanchorable parts logged), not by whether a term could ever appear elsewhere.
+- Teaching is judged directly: after P3.10 (and after P9.6) a fresh Claude reviewer reads every accepted lesson
+  against each accountable objective and blueprint item -> audit/COVERAGE-wave<n>.md rows
+  | id | TAUGHT / PARTIAL / MISSING | block or heading | evidence |; PARTIAL/MISSING reopen the owning topic task;
+  the phase verifier samples the rows.

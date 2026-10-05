@@ -1,0 +1,58 @@
+[
+ {
+  "k": "rp13_tz",
+  "t": "Transformation zone",
+  "d": "The band of cervix between the original and the active squamocolumnar junction, where columnar epithelium has undergone squamous metaplasia; its immature cells are the target of high-risk HPV.",
+  "alt": []
+ },
+ {
+  "k": "rp13_nabothian",
+  "t": "Nabothian cyst",
+  "d": "A benign mucus-filled cyst that forms when metaplastic squamous epithelium covers the opening of an endocervical crypt and traps its secretions; it needs no treatment.",
+  "alt": []
+ },
+ {
+  "k": "rp13_koil",
+  "t": "Koilocyte",
+  "d": "A squamous cell showing HPV cytopathic effect: an enlarged, wrinkled, hyperchromatic (raisinoid) nucleus with a clear perinuclear halo; typical of LSIL and condyloma.",
+  "alt": [
+   "koilocytes"
+  ]
+ },
+ {
+  "k": "rp13_p16",
+  "t": "Block p16 staining",
+  "d": "Strong, continuous p16 immunostaining across the lower epithelium; it reflects E7 inactivation of Rb and supports an HPV-driven high-grade lesion (HSIL).",
+  "alt": []
+ },
+ {
+  "k": "rp13_colpo",
+  "t": "Colposcopy",
+  "d": "Magnified examination of the cervix after acetic acid, which turns dysplastic epithelium white so abnormal areas can be biopsied; the diagnostic step after an abnormal screening result.",
+  "alt": []
+ },
+ {
+  "k": "rp13_leep",
+  "t": "Loop electrosurgical excision procedure",
+  "d": "Excision of the transformation zone with a thin electrified wire loop to treat HSIL; it removes less tissue than a cold-knife cone but can still cause cervical insufficiency.",
+  "alt": [
+   "LEEP"
+  ]
+ },
+ {
+  "k": "rp13_bethesda",
+  "t": "Bethesda System",
+  "d": "The standard terminology for reporting cervical cytology: it states specimen adequacy and whether an endocervical component is present, then gives NILM, ASC-US, ASC-H, LSIL, HSIL, atypical glandular cells or carcinoma.",
+  "alt": [
+   "Bethesda"
+  ]
+ },
+ {
+  "k": "rp13_ectropion",
+  "t": "Ectropion",
+  "d": "Eversion of the columnar endocervical lining onto the ectocervix, seen as a red, velvety ring around the os; common with estrogen in adolescence, pregnancy and oral contraceptive use, and a benign cause of mucoid discharge and contact bleeding.",
+  "alt": [
+   "cervical ectropion"
+  ]
+ }
+]

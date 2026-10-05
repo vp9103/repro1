@@ -1,0 +1,39 @@
+<svg class="dia" viewBox="0 0 900 500" role="img" aria-label="Relative risk of later invasive breast cancer as a staircase: nonproliferative change about 1, proliferative disease without atypia 1.5 to 2, atypical hyperplasia 4 to 5, and carcinoma in situ 8 to 10">
+<text class="ttl" x="14" y="24" font-size="17">How much each benign change raises later cancer risk</text>
+<text x="14" y="62" font-size="14">All of these keep the myoepithelial layer and basement membrane;</text>
+<text x="14" y="82" font-size="14">invasion begins only when tumor cells cross them.</text>
+<text x="14" y="112" font-size="14"><tspan class="b">Family history:</tspan> a first-degree relative about doubles risk</text>
+<rect x="14" y="434" width="208" height="36" rx="6" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="24" y="300" font-size="15">Nonproliferative</text>
+<text x="24" y="322" font-size="14">Relative risk about 1</text>
+<text x="24" y="346" font-size="14">Cysts, fibrosis,</text>
+<text x="24" y="366" font-size="14">apocrine metaplasia,</text>
+<text x="24" y="386" font-size="14">simple fibroadenoma</text>
+<text x="24" y="457" font-size="14">No added risk</text>
+<rect x="232" y="398" width="208" height="72" rx="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="242" y="246" font-size="15">Proliferative</text>
+<text class="b" x="242" y="265" font-size="15">without atypia</text>
+<text x="242" y="288" font-size="14">Relative risk 1.5 to 2</text>
+<text x="242" y="312" font-size="14">Usual ductal hyperplasia,</text>
+<text x="242" y="332" font-size="14">sclerosing adenosis,</text>
+<text x="242" y="352" font-size="14">intraductal papilloma</text>
+<text x="242" y="440" font-size="14">Small added risk</text>
+<rect x="450" y="290" width="208" height="180" rx="6" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="460" y="170" font-size="15">Atypical hyperplasia</text>
+<text x="460" y="192" font-size="14">Relative risk 4 to 5</text>
+<text x="460" y="216" font-size="14">Atypical ductal or</text>
+<text x="460" y="236" font-size="14">lobular hyperplasia</text>
+<text x="460" y="330" font-size="14">Monotonous, clonal cells</text>
+<text x="460" y="350" font-size="14">partly filling ducts;</text>
+<text x="460" y="370" font-size="14">excised when found</text>
+<rect x="668" y="110" width="218" height="360" rx="6" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="678" y="150" font-size="15">Carcinoma in situ</text>
+<text x="678" y="172" font-size="14">Relative risk 8 to 10</text>
+<text x="678" y="196" font-size="14">DCIS and LCIS</text>
+<text x="678" y="220" font-size="14">Basement membrane</text>
+<text x="678" y="240" font-size="14">still intact</text>
+<text x="678" y="270" font-size="14">Taught with</text>
+<text x="678" y="290" font-size="14">breast cancer</text>
+<line x1="14" y1="470" x2="886" y2="470" stroke="var(--ink-2)" stroke-width="1.5"/>
+<text x="14" y="492" font-size="14">Bar height is the relative risk of later invasive cancer (1 is average)</text>
+</svg>

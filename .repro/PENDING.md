@@ -32,7 +32,7 @@ en9_hypercalcemia, en9_three_hpt missing.
 | P2.6 | CLOSED 2026-10-05 (F3) | ledger row sha:29b015ac | |
 | V2 | DONE (finished before the restart; 8 new figures reviewed 2026-10-05) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
 | P1.4 | CLOSED 2026-10-05 (round 3, part->anchor proposals A.md/B.md) | 302 rows, 48 UNANCHORED, 4 topic changes | ledger row |
-| P1.V | run 5 verifier (token a3c165d218) | | .repro/verify/P1-report.md |
+| P1.V | run 6 verifier (token 05764b0daf), plan criterion (run 5: 7/12 under the withdrawn stricter standard) | | .repro/verify/P1-report.md |
 | P1.4 | CLOSED 2026-10-05 round 5 (47 rows, block-evidence sweep) | | ledger row |
 
 ## Wave 1 (reproductive, Oct 9) queue
@@ -42,6 +42,7 @@ en9_hypercalcemia, en9_three_hpt missing.
    rp13 r2 · rp14 q4/r6 · rp15 q4/r4 · rp16 q7/r7 · rp17 q8 · rp18 r2 · rp21 q1/r1 · rp22 q1/r1 · rp23 q6 · rp24 q7/r14 ·
    rp25 q6/r5 · rp26 q2/r3 · rp27 q4/r11 · rp28 q10/r12 · rp29 q6. Also rp16r06 keyed option conspicuously longest.
 3. Engine: P2.4 -> P2.5 (F35) -> P2.6 (F31, F40, F33) -> P2.V with .repro/P2-REGRESSION.md.
+4a. After P3.10: COVERAGE-wave1 review (fresh Claude reviewer, every accepted lesson vs each accountable objective and BP item: TAUGHT/PARTIAL/MISSING + block) -> reopen on PARTIAL/MISSING -> P3.V samples it.
 4. P3.1-P3.10 (after P1.V + P2.V record; gap list per topic: .repro/P3-coverage-gaps.md, 269 objective/BP lines): --start, import fast topics/figs/glossary/guides (incl. V1's new rp4-rp7 figs) into the workspace, add the missing P1.4 key terms by real teaching (.repro/P1.4-coverage-impact.md: 274 terms in 209 rows; worst rp15, rp29, rp1, rp2), set rp3 yld mid and rp29 exam hi, --status, --close; up to 3 in parallel; P3.V.
 5. Images P4.1-P4.5 (none exist): approved sources, licence + attribution copied, >= 800 px, < 2 MB, 4 look-alikes with
    whys; P4.6 overlays designed by Gemini (xmodel.py overlay), applied exactly.

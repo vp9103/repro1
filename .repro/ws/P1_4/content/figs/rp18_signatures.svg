@@ -1,0 +1,39 @@
+<svg class="dia" viewBox="0 0 900 462" role="img" aria-label="TORCH signature grid listing, for each congenital infection, the clue in the mother's history and the finding in the fetus or newborn that names the organism">
+<text class="ttl" x="14" y="24" font-size="17">TORCH signatures: one finding names each organism</text>
+<rect x="14" y="38" width="872" height="34" rx="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text class="b" x="26" y="61" font-size="15">Organism</text>
+<text class="b" x="180" y="61" font-size="15">Clue in the mother</text>
+<text class="b" x="440" y="61" font-size="15">Signature in the fetus or newborn</text>
+<rect x="14" y="78" width="872" height="42" rx="6" fill="var(--surface)" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="26" y="105" font-size="15">Toxoplasma</text>
+<text x="180" y="105" font-size="14">Cat litter, undercooked meat</text>
+<text x="440" y="105" font-size="14">Chorioretinitis, hydrocephalus, <tspan class="b">diffuse</tspan> calcifications</text>
+<rect x="14" y="125" width="872" height="42" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="26" y="152" font-size="15">Cytomegalovirus</text>
+<text x="180" y="152" font-size="14">Toddler at home or daycare work</text>
+<text x="440" y="152" font-size="14"><tspan class="b">Periventricular</tspan> calcifications, hearing loss</text>
+<rect x="14" y="172" width="872" height="42" rx="6" fill="var(--surface)" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="26" y="199" font-size="15">Rubella</text>
+<text x="180" y="199" font-size="14">Nonimmune, rash with joint pain</text>
+<text x="440" y="199" font-size="14"><tspan class="b">Cataracts</tspan>, deafness, PDA, blueberry-muffin rash</text>
+<rect x="14" y="219" width="872" height="42" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="26" y="246" font-size="15">Syphilis</text>
+<text x="180" y="246" font-size="14">Untreated chancre or palm rash</text>
+<text x="440" y="246" font-size="14">Snuffles, rash; later <tspan class="b">Hutchinson teeth</tspan>, saber shins</text>
+<rect x="14" y="266" width="872" height="42" rx="6" fill="var(--surface)" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="26" y="293" font-size="15">Parvovirus B19</text>
+<text x="180" y="293" font-size="14">Child with slapped-cheek rash</text>
+<text x="440" y="293" font-size="14">Fetal anemia, <tspan class="b">hydrops fetalis</tspan></text>
+<rect x="14" y="313" width="872" height="42" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="26" y="340" font-size="15">Varicella</text>
+<text x="180" y="340" font-size="14">Chickenpox exposure, nonimmune</text>
+<text x="440" y="340" font-size="14"><tspan class="b">Limb hypoplasia</tspan>, zigzag skin scars</text>
+<rect x="14" y="360" width="872" height="42" rx="6" fill="var(--surface)" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="26" y="387" font-size="15">Herpes simplex</text>
+<text x="180" y="387" font-size="14">Genital lesions at delivery</text>
+<text x="440" y="387" font-size="14"><tspan class="b">Skin-eye-mouth</tspan> vesicles, encephalitis</text>
+<rect x="14" y="407" width="872" height="42" rx="6" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="26" y="434" font-size="15">Zika virus</text>
+<text x="180" y="434" font-size="14">Travel to a Zika area</text>
+<text x="440" y="434" font-size="14">Severe <tspan class="b">microcephaly</tspan>, eye lesions</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg class="dia" viewBox="0 0 900 540" role="img" aria-label="Contraceptive methods sorted by hormone content (estrogen plus progestin, progestin only, no hormone) and by typical-use pregnancies per 100 women a year; no estrogen-containing method reaches the most effective tier">
+<text class="ttl" x="14" y="24" font-size="17">Two questions sort the methods: estrogen or not, and how often it fails</text>
+<text x="14" y="48" font-size="14">Rows: pregnancies per 100 women in a year of typical use. Columns: the hormones it contains.</text>
+<rect x="14" y="62" width="116" height="44" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="24" y="89" font-size="14">Typical use</text>
+<rect x="142" y="62" width="240" height="44" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="156" y="90" font-size="15">Estrogen + progestin</text>
+<rect x="394" y="62" width="240" height="44" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="408" y="90" font-size="15">Progestin only</text>
+<rect x="646" y="62" width="240" height="44" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="660" y="90" font-size="15">No hormone</text>
+<rect x="14" y="116" width="116" height="124" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.2"/>
+<text class="b" x="24" y="164" font-size="15">Under 1</text>
+<text x="24" y="186" font-size="14">per 100</text>
+<text x="24" y="206" font-size="14">per year</text>
+<rect x="142" y="116" width="240" height="124" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="156" y="172" font-size="14" fill="var(--ink-3)">No estrogen method</text>
+<text x="156" y="192" font-size="14" fill="var(--ink-3)">reaches this row</text>
+<rect x="394" y="116" width="240" height="124" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text class="b" x="408" y="146" font-size="15">Etonogestrel implant</text>
+<text x="408" y="166" font-size="14">rod in the arm, 3 years</text>
+<text class="b" x="408" y="198" font-size="15">Levonorgestrel IUD</text>
+<text x="408" y="218" font-size="14">3 to 8 years</text>
+<rect x="646" y="116" width="240" height="124" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="660" y="146" font-size="15">Copper IUD</text>
+<text x="660" y="166" font-size="14">10 years or more</text>
+<text class="b" x="660" y="198" font-size="15">Sterilization</text>
+<text x="660" y="218" font-size="14">tubal or vasectomy</text>
+<rect x="14" y="250" width="116" height="104" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.2"/>
+<text class="b" x="24" y="294" font-size="15">About</text>
+<text class="b" x="24" y="316" font-size="15">4 to 7</text>
+<rect x="142" y="250" width="240" height="104" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.2"/>
+<text class="b" x="156" y="282" font-size="15">Pill, patch, ring</text>
+<text x="156" y="304" font-size="14">about 7 in 100</text>
+<text x="156" y="326" font-size="14">daily, weekly or monthly</text>
+<rect x="394" y="250" width="240" height="104" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text class="b" x="408" y="278" font-size="15">DMPA injection</text>
+<text x="408" y="297" font-size="14">about 4; every 3 months</text>
+<text class="b" x="408" y="323" font-size="15">Progestin-only pill</text>
+<text x="408" y="342" font-size="14">about 7; same time daily</text>
+<rect x="646" y="250" width="240" height="104" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="14" y="364" width="116" height="96" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.2"/>
+<text class="b" x="24" y="408" font-size="15">13 or</text>
+<text class="b" x="24" y="430" font-size="15">more</text>
+<rect x="142" y="364" width="240" height="96" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="394" y="364" width="240" height="96" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="646" y="364" width="240" height="96" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="660" y="388" font-size="15">Condoms</text>
+<text x="660" y="408" font-size="14">about 13; also block STIs</text>
+<text x="660" y="430" font-size="14">diaphragm, withdrawal,</text>
+<text x="660" y="451" font-size="14">fertility awareness</text>
+<rect x="142" y="472" width="240" height="58" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.2"/>
+<text class="cr" x="156" y="496" font-size="14">Whole column: avoid if</text>
+<text x="156" y="518" font-size="13">smoker 35+, aura, prior clot</text>
+<rect x="394" y="472" width="492" height="58" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.2"/>
+<text class="gd" x="408" y="496" font-size="14">Top row = LARC and sterilization</text>
+<text x="408" y="518" font-size="14">no user action, so typical use equals perfect use</text>
+</svg>

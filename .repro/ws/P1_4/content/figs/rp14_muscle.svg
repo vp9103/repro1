@@ -1,0 +1,57 @@
+<svg class="dia" viewBox="0 0 900 506" role="img" aria-label="Three myometrial problems compared: leiomyoma, a benign estrogen-sensitive smooth muscle tumor; leiomyosarcoma, a malignant tumor that arises de novo after menopause; and adenomyosis, endometrial glands within the myometrium that make the uterus globular">
+<text class="ttl" x="14" y="24" font-size="17">Leiomyoma, leiomyosarcoma and adenomyosis: the myometrium under three diseases</text>
+<rect x="14" y="40" width="278" height="380" rx="10" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="30" y="68" font-size="17">Leiomyoma</text>
+<text x="30" y="90" font-size="15">Benign smooth muscle tumor</text>
+<rect x="34" y="104" width="238" height="92" rx="14" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="30" y="228" font-size="15">Most common tumor in women</text>
+<text x="30" y="252" font-size="15">Estrogen sensitive</text>
+<text x="30" y="276" font-size="15">Shrinks after menopause</text>
+<text x="30" y="300" font-size="15">Sharp edge, whorled cut face</text>
+<text x="30" y="324" font-size="15">Multiple, reproductive years</text>
+<text x="30" y="348" font-size="15">More common in Black women</text>
+<text x="30" y="372" font-size="15">Red degeneration in pregnancy</text>
+<text x="30" y="396" font-size="15">Does not become sarcoma</text>
+<rect x="311" y="40" width="278" height="380" rx="10" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="327" y="68" font-size="17">Leiomyosarcoma</text>
+<text x="327" y="90" font-size="15">Malignant smooth muscle tumor</text>
+<rect x="331" y="104" width="238" height="92" rx="14" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="327" y="228" font-size="15">Arises de novo</text>
+<text x="327" y="252" font-size="15">Solitary, postmenopausal</text>
+<text x="327" y="276" font-size="15">Soft, hemorrhagic, necrotic</text>
+<text x="327" y="300" font-size="15">Atypia, necrosis and mitoses</text>
+<text x="327" y="324" font-size="15">Spreads by blood to lung</text>
+<text x="327" y="348" font-size="15">Recurs; poor prognosis</text>
+<rect x="608" y="40" width="278" height="380" rx="10" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="624" y="68" font-size="17">Adenomyosis</text>
+<text x="624" y="90" font-size="15">Endometrium inside the muscle</text>
+<rect x="628" y="104" width="238" height="92" rx="14" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="624" y="228" font-size="15">Glands and stroma in muscle</text>
+<text x="624" y="252" font-size="15">Uniform, soft, globular uterus</text>
+<text x="624" y="276" font-size="15">Heavy, painful periods</text>
+<text x="624" y="300" font-size="15">Age 40s, often multiparous</text>
+<text x="624" y="324" font-size="15">Muscle thickens in reaction</text>
+<text x="624" y="348" font-size="15">Hysterectomy confirms</text>
+<circle cx="153" cy="150" r="32" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<path d="M133,154 A20,20 0 0,1 157,132" fill="none" stroke="var(--a2)" stroke-width="2"/>
+<path d="M143,164 A12,12 0 0,0 165,150" fill="none" stroke="var(--a2)" stroke-width="2"/>
+<polygon points="412,148 424,124 444,116 464,124 484,118 494,144 482,164 488,184 460,178 436,188 416,174" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="2"/>
+<circle cx="438" cy="142" r="3" fill="var(--crit)"/>
+<circle cx="458" cy="154" r="3" fill="var(--crit)"/>
+<circle cx="470" cy="138" r="3" fill="var(--crit)"/>
+<circle cx="444" cy="164" r="3" fill="var(--crit)"/>
+<rect x="628" y="104" width="238" height="16" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<ellipse cx="678" cy="150" rx="11" ry="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="678" cy="150" r="2.5" fill="var(--a1)"/>
+<ellipse cx="730" cy="172" rx="11" ry="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="730" cy="172" r="2.5" fill="var(--a1)"/>
+<ellipse cx="780" cy="146" rx="11" ry="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="780" cy="146" r="2.5" fill="var(--a1)"/>
+<ellipse cx="816" cy="176" rx="11" ry="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="816" cy="176" r="2.5" fill="var(--a1)"/>
+<ellipse cx="846" cy="154" rx="11" ry="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="846" cy="154" r="2.5" fill="var(--a1)"/>
+<path d="M670,120 L676,142 M776,120 L780,138" fill="none" stroke="var(--a1)" stroke-width="2"/>
+<rect x="14" y="436" width="872" height="56" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="30" y="470" font-size="16">Mitoses alone do not make a sarcoma: look for atypia and necrosis too</text>
+</svg>
