@@ -105,7 +105,7 @@
      "Progestin",
      "Blocks the LH surge and thickens cervical mucus",
      "Thins the endometrium; irregular spotting when used alone",
-     "Bone loss with DMPA; acne with androgenic progestins"
+     "Bone loss with DMPA; acne with androgenic progestins; hyperkalemia with drospirenone"
     ]
    ]
   ],
@@ -133,7 +133,7 @@
   ],
   [
    "p",
-   "Estrogen raises the liver's output of clotting factors, so every estrogen-containing method raises the risk of **venous thromboembolism**, and in susceptible women the risk of stroke and myocardial infarction. The contraindications follow from that: a smoker over 35, **migraine with aura**, prior VTE or stroke, known thrombophilia, ischemic heart disease, uncontrolled hypertension, fewer than 21 days postpartum, and severe liver disease or hepatic adenoma. Current breast cancer rules out every hormonal method, so a copper IUD is used. The same pills bring real benefits: lighter, regular, less painful periods, less acne and hirsutism, and a lower lifetime risk of ovarian cancer and endometrial cancer."
+   "Estrogen raises the liver's output of clotting factors, so every estrogen-containing method raises the risk of **venous thromboembolism**, and in susceptible women the risk of stroke and myocardial infarction. The contraindications follow from that: a smoker over 35, **migraine with aura**, prior VTE or stroke, known thrombophilia, ischemic heart disease, uncontrolled hypertension, fewer than 21 days postpartum, and severe liver disease or hepatic adenoma. Current breast cancer rules out every hormonal method, so a copper IUD is used. The same pills bring real benefits: lighter, regular, less painful periods, less acne and hirsutism, and a lower lifetime risk of ovarian cancer and endometrial cancer. The same hormones treat dysmenorrhea, heavy menstrual bleeding and endometriosis."
   ],
   [
    "call",
@@ -252,7 +252,7 @@
   ],
   [
    "p",
-   "**Emergency contraception** works before implantation, by delaying ovulation or by stopping fertilization, so it cannot end a pregnancy that has already implanted and is not an **abortifacient**. Levonorgestrel, a single high dose of progestin, works best within 72 hours and only if it is taken before the LH surge begins; it also loses efficacy as **body mass index** rises, from about a BMI of 30. Ulipristal, a {{rp10_sprm|selective progesterone receptor modulator}}, works for up to 5 days, can still delay follicle rupture after LH has started to rise, and is less affected by weight, so it outperforms levonorgestrel late in the window and in obesity. A copper IUD placed within 5 days is the most effective option of all, is not affected by weight, and then keeps working as ongoing contraception."
+   "**Emergency contraception** works before implantation, by delaying ovulation or by stopping fertilization, so it cannot end a pregnancy that has already implanted and is not an **abortifacient**. Levonorgestrel, a single high dose of progestin, works best within 72 hours and only if it is taken before the LH surge begins; it also loses efficacy as **body mass index** rises, from about a BMI of 30. Ulipristal, a {{rp10_sprm|selective progesterone receptor modulator}}, works for up to 5 days, can still delay follicle rupture after LH has started to rise, and is less affected by weight, so it outperforms levonorgestrel late in the window and in obesity. A copper IUD placed within 5 days is the most effective option of all, is not affected by weight, and then keeps working as ongoing contraception. Adverse effects are mild: nausea, headache, fatigue and a next period that comes early or late."
   ],
   [
    "f",
@@ -296,11 +296,61 @@
   ],
   [
    "p",
-   "Counseling starts with what the patient wants: when she may want pregnancy, how she feels about bleeding changes, and whether she can use estrogen. A sexual history covers partners, practices, protection from infection, past infections and pregnancy intention, the five Ps; pregnancy intention opens the contraceptive conversation, and asking in the practices step whether sex is consensual identifies coercion. Only condoms also prevent sexually transmitted infection. An **adolescent** can consent to contraception without a parent in most states, so part of the visit is held alone and kept **confidential**, with the limits of confidentiality explained first. No pelvic examination is needed before starting pills, a patch, a ring, an injection or an implant. Each method's pitfall follows from what it does, so the choice matches her history and medicines to the pitfalls below."
+   "Counseling starts with what the patient wants: when she may want pregnancy, how she feels about bleeding changes, and whether she can use estrogen. A sexual history uses the five Ps: partners, practices, protection from infection, past infections and pregnancy intention. Pregnancy intention opens the contraceptive conversation, and asking in the practices step whether sex is consensual identifies coercion. Only condoms also prevent sexually transmitted infection. An **adolescent** can consent to contraception without a parent in most states, so part of the visit is held alone and kept **confidential**, with the limits of confidentiality explained first. No pelvic examination is needed before starting pills, a patch, a ring, an injection or an implant. Each method's pitfall follows from what it does, so the choice matches her history and medicines to the pitfalls below."
   ],
   [
    "f",
    "rp10_pitfalls"
+  ],
+  [
+   "t",
+   [
+    "Patient situation",
+    "Better choice",
+    "Why"
+   ],
+   [
+    [
+     "Smoker aged 38, or migraine with aura",
+     "Progestin-only method, hormonal IUD or copper IUD",
+     "Estrogen would add clot and stroke risk to risk she already carries"
+    ],
+    [
+     "Six weeks postpartum and breastfeeding",
+     "Minipill, implant or IUD",
+     "Estrogen is avoided in the first weeks after delivery; progestin does not raise clotting factors"
+    ],
+    [
+     "Taking rifampin or an enzyme-inducing antiseizure drug",
+     "IUD or DMPA",
+     "Inducers lower pill, patch and ring levels, and the implant also weakens"
+    ],
+    [
+     "Heavy menstrual bleeding",
+     "Levonorgestrel IUD or combined pill",
+     "The lining stays thin or stable"
+    ],
+    [
+     "Current breast cancer",
+     "Copper IUD",
+     "Every hormonal method is contraindicated"
+    ],
+    [
+     "Forgets daily pills",
+     "Implant or IUD",
+     "No user action, so typical use equals perfect use"
+    ],
+    [
+     "Wants no hormones",
+     "Copper IUD, condoms or sterilization",
+     "Each works without hormones; only condoms also block infection"
+    ],
+    [
+     "Obesity and unprotected sex 3 days ago",
+     "Ulipristal or a copper IUD",
+     "Levonorgestrel loses efficacy as BMI rises"
+    ]
+   ]
   ],
   [
    "sexp",

@@ -1,0 +1,67 @@
+<svg class="dia" viewBox="0 0 900 524" role="img" aria-label="Monozygotic twinning by day of splitting: days 0 to 4 give dichorionic diamniotic twins, days 4 to 8 monochorionic diamniotic, days 8 to 12 monochorionic monoamniotic, day 13 or later conjoined twins; below, the donor and recipient twins of twin-twin transfusion">
+<text class="ttl" x="14" y="24" font-size="17">The later a monozygotic embryo splits, the more membranes the twins share</text>
+<rect x="14" y="40" width="212" height="320" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="68" font-size="16">Split at days 0–4</text>
+<text x="28" y="94" font-size="15">Two-cell stage</text>
+<text x="28" y="116" font-size="15">to morula</text>
+<circle cx="72" cy="190" r="42" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<circle cx="72" cy="190" r="27" fill="none" stroke="var(--a1)" stroke-width="2"/>
+<ellipse cx="72" cy="190" rx="7" ry="10" fill="var(--ink-2)"/>
+<circle cx="168" cy="190" r="42" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<circle cx="168" cy="190" r="27" fill="none" stroke="var(--a1)" stroke-width="2"/>
+<ellipse cx="168" cy="190" rx="7" ry="10" fill="var(--ink-2)"/>
+<text class="b" x="28" y="272" font-size="15">Dichorionic</text>
+<text class="b" x="28" y="292" font-size="15">diamniotic</text>
+<text x="28" y="322" font-size="15">Same membranes as</text>
+<text x="28" y="344" font-size="15">dizygotic twins</text>
+<rect x="234" y="40" width="212" height="320" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="248" y="68" font-size="16">Split at days 4–8</text>
+<text x="248" y="94" font-size="15">Blastocyst: inner</text>
+<text x="248" y="116" font-size="15">cell mass divides</text>
+<ellipse cx="340" cy="190" rx="92" ry="50" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<circle cx="298" cy="190" r="32" fill="none" stroke="var(--a1)" stroke-width="2"/>
+<circle cx="382" cy="190" r="32" fill="none" stroke="var(--a1)" stroke-width="2"/>
+<ellipse cx="298" cy="190" rx="7" ry="10" fill="var(--ink-2)"/>
+<ellipse cx="382" cy="190" rx="7" ry="10" fill="var(--ink-2)"/>
+<text class="b" x="248" y="272" font-size="15">Monochorionic</text>
+<text class="b" x="248" y="292" font-size="15">diamniotic</text>
+<text x="248" y="322" font-size="15">Most common MZ type;</text>
+<text x="248" y="344" font-size="15">twin-twin transfusion</text>
+<rect x="454" y="40" width="212" height="320" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="468" y="68" font-size="16">Split at days 8–12</text>
+<text x="468" y="94" font-size="15">Bilaminar disc</text>
+<text x="468" y="116" font-size="15">divides</text>
+<ellipse cx="560" cy="190" rx="92" ry="50" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<ellipse cx="560" cy="190" rx="62" ry="34" fill="none" stroke="var(--a1)" stroke-width="2"/>
+<ellipse cx="542" cy="190" rx="7" ry="10" fill="var(--ink-2)"/>
+<ellipse cx="578" cy="190" rx="7" ry="10" fill="var(--ink-2)"/>
+<text class="b" x="468" y="272" font-size="15">Monochorionic</text>
+<text class="b" x="468" y="292" font-size="15">monoamniotic</text>
+<text x="468" y="322" font-size="15">Risk: tangled</text>
+<text x="468" y="344" font-size="15">umbilical cords</text>
+<rect x="674" y="40" width="212" height="320" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="688" y="68" font-size="16">Split at day 13+</text>
+<text x="688" y="94" font-size="15">Embryonic disc splits</text>
+<text x="688" y="116" font-size="15">incompletely</text>
+<ellipse cx="780" cy="190" rx="92" ry="50" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<ellipse cx="780" cy="190" rx="62" ry="34" fill="none" stroke="var(--a1)" stroke-width="2"/>
+<ellipse cx="773" cy="190" rx="8" ry="11" fill="var(--ink-2)"/>
+<ellipse cx="787" cy="190" rx="8" ry="11" fill="var(--ink-2)"/>
+<text class="b" x="688" y="272" font-size="15">Conjoined twins</text>
+<text class="b" x="688" y="292" font-size="15">share one amnion</text>
+<text x="688" y="322" font-size="15">Shared organs;</text>
+<text x="688" y="344" font-size="15">the rarest outcome</text>
+<circle cx="24" cy="383" r="8" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<text x="40" y="388" font-size="15">Chorion (outer sac)</text>
+<circle cx="244" cy="383" r="8" fill="none" stroke="var(--a1)" stroke-width="2"/>
+<text x="260" y="388" font-size="15">Amnion (inner sac)</text>
+<ellipse cx="464" cy="383" rx="6" ry="8" fill="var(--ink-2)"/>
+<text x="478" y="388" font-size="15">Embryo</text>
+<text class="b" x="14" y="414" font-size="15">Dizygotic twins (two oocytes, two sperm) are always dichorionic diamniotic.</text>
+<rect x="14" y="428" width="430" height="84" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="454" font-size="15">Donor twin (loses blood)</text>
+<text x="28" y="484" font-size="15">Anemic, small, oligohydramnios</text>
+<rect x="456" y="428" width="430" height="84" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="470" y="454" font-size="15">Recipient twin (gains blood)</text>
+<text x="470" y="484" font-size="15">Polycythemia, polyhydramnios, heart failure</text>
+</svg>

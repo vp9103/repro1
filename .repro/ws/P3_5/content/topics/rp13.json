@@ -35,7 +35,13 @@
   "SIM-COLPO.3",
   "BICEP-BROWN.1",
   "BICEP-BROWN.3",
-  "BICEP-BROWN.4"
+  "BICEP-BROWN.4",
+  "BICEP-BROWN.2",
+  "BICEP-WILLIAMS.12",
+  "BICEP-WILLIAMS.13",
+  "GYN-ONC.1",
+  "GYN-ONC.2",
+  "GYN-ONC.3"
  ],
  "pretest": [
   {
@@ -69,6 +75,22 @@
     "Mid-portion of the ectocervix": "The outer ectocervix carries mature, glycogen-rich squamous epithelium that finished metaplasia long ago, so it is far less vulnerable to viral transformation.",
     "Vaginal fornix": "The fornix is lined by vaginal squamous epithelium; vaginal cancers are rare and usually spread from the cervix rather than arising there first."
    }
+  },
+  {
+   "q": "A 22-year-old on a combined oral contraceptive has mucoid discharge and postcoital spotting; the cervix shows a red ring around the os and cytology is normal. What explains this?",
+   "o": [
+    "Ectropion of columnar epithelium",
+    "Invasive squamous cell carcinoma",
+    "Nabothian cyst",
+    "Cervical stenosis"
+   ],
+   "a": 0,
+   "why": "Estrogen everts the columnar endocervical lining onto the ectocervix, where its thin, fragile cells secrete mucus and bleed on contact. Ectropion is benign and common with oral contraceptives, adolescence and pregnancy.",
+   "w": {
+    "Invasive squamous cell carcinoma": "Invasive cancer presents with a friable, exophytic or ulcerated mass and abnormal cytology or biopsy; a smooth red ring with a normal Pap points to benign ectropion.",
+    "Nabothian cyst": "A nabothian cyst is a smooth, mucus-filled dome from a blocked crypt; it does not cause discharge or bleeding or appear as a red ring around the os.",
+    "Cervical stenosis": "Stenosis narrows the os after excision, radiation or atrophy and traps menstrual blood, causing cyclic pain or hematometra rather than a red, bleeding ring."
+   }
   }
  ],
  "body": [
@@ -78,7 +100,7 @@
   ],
   [
    "p",
-   "The cervix has two linings that meet at a line. The **ectocervix**, the part that bulges into the vagina, is covered by tough stratified squamous epithelium, while the **endocervix** lines the canal with columnar cells whose crypts secrete mucus. Estrogen at puberty everts the columnar lining onto the ectocervix, and the acidic vagina then converts that exposed lining to squamous epithelium by **metaplasia**. The band between the original and the active squamocolumnar junction is the {{rp13_tz|transformation zone}}, and its immature metaplastic cells are the cells that high-risk HPV infects and transforms."
+   "The cervix has two linings that meet at a line. The **ectocervix**, the part that bulges into the vagina, is covered by tough nonkeratinized stratified squamous epithelium, like the vagina. The endocervix lines the canal with mucus-secreting columnar cells that fold into branching crypts, the **plicae palmatae** or \"palm folds\", which act as the cervical glands. Estrogen at puberty everts the columnar lining onto the ectocervix, and the acidic vagina then converts that exposed lining to squamous epithelium by **metaplasia**. The band between the original and the active squamocolumnar junction is the {{rp13_tz|transformation zone}}, and its immature metaplastic cells are the cells that high-risk HPV infects and transforms."
   ],
   [
    "f",
@@ -86,13 +108,25 @@
   ],
   [
    "p",
-   "Endocervical **mucus** changes with the cycle: estrogen near ovulation makes it thin and stretchy so sperm can pass, and progesterone thickens it into a barrier. When metaplastic epithelium grows over a crypt opening, the trapped mucus forms a {{rp13_nabothian|nabothian cyst}}, a smooth, harmless dome that needs no treatment. Sampling also depends on the zone. A Pap specimen with too few squamous cells, or one hidden by blood or inflammation, is reported as **unsatisfactory** and repeated in 2 to 4 months, because the cells most likely to be abnormal may never have been collected."
+   "Endocervical **mucus** changes with the cycle: estrogen near ovulation makes it abundant, thin, alkaline and stretchy so sperm can pass and survive, and progesterone thickens it into a barrier. When metaplastic epithelium grows over a crypt opening, the trapped mucus forms a {{rp13_nabothian|nabothian cyst}}, a smooth, harmless dome that needs no treatment. Sampling also depends on the zone. A Pap specimen with too few squamous cells, or one hidden by blood or inflammation, is reported as **unsatisfactory** and repeated in 2 to 4 months. A satisfactory specimen can still lack an **endocervical component**: no endocervical or metaplastic cells were seen, the report says so, and a negative result is then a possible false-negative."
   ],
   [
    "call",
    "trap",
    "After menopause the junction hides in the canal",
-   "Low estrogen lets the squamocolumnar junction recede up the endocervical canal, so a spatula on the ectocervix can miss the **transformation zone**. Use an endocervical brush, and expect colposcopy to be inadequate when the whole junction cannot be seen; **endocervical curettage** then samples the canal. A report that no endocervical or zone cells were seen means the most vulnerable cells were not examined."
+   "Low estrogen lets the squamocolumnar junction recede up the endocervical canal, so a spatula on the ectocervix can miss the **transformation zone**. Use an endocervical brush, and expect colposcopy to be inadequate when the whole junction cannot be seen; **endocervical curettage** then samples the canal. A hidden zone is why a normal Pap in an older woman can be a false-negative."
+  ],
+  [
+   "h",
+   "How can an altered cervix change what it does?"
+  ],
+  [
+   "p",
+   "Eversion is normal in young women, but a large area of exposed columnar epithelium, a red, velvety ring around the os, is called {{rp13_ectropion|ectropion}}. It is common in adolescence, in pregnancy and with combined oral contraceptives, because estrogen drives eversion. The fragile columnar layer gives a mucoid discharge and bleeding after intercourse. Ectropion is benign and needs treatment only if the symptoms bother her, but contact bleeding still calls for a Pap test to exclude cervicitis and cancer."
+  ],
+  [
+   "p",
+   "Scarring changes the canal in the opposite direction. **Stenosis** of the os follows excision of the zone, radiation or severe inflammation, and low estrogen can narrow it after menopause. When the os closes, menstrual blood cannot escape and the uterus fills with blood, **hematometra**, causing cyclic pain and an enlarged uterus in a patient who is not bleeding. A shortened, weakened cervix after excision can instead dilate painlessly in pregnancy: **cervical insufficiency**. Advanced cancer compresses the ureters through the parametria and causes hydronephrosis."
   ],
   [
    "h",
@@ -100,7 +134,7 @@
   ],
   [
    "p",
-   "Human papillomavirus is a small, nonenveloped DNA virus that reaches basal cells through tiny epithelial breaks. Low-risk types 6 and 11 cause genital warts, while **high-risk** types, above all 16 and then 18, cause most cervical cancers. Most infections clear within one to two years, so the requirement for cancer is **persistent** infection. Persistence lets the viral genome **integrate** into host DNA, and integration usually breaks the viral E2 gene, the repressor that keeps the E6 and E7 oncogenes quiet. With E2 gone, E6 and E7 are overexpressed and switch off two key tumor suppressors."
+   "Human papillomavirus is a small, nonenveloped DNA virus that reaches cells of the basal layer through tiny epithelial breaks. Low-risk types 6 and 11 cause genital warts, while **high-risk** types, above all 16 and then 18, cause most cervical cancers. Most infections clear within one to two years, so the requirement for cancer is **persistent** infection. Persistence lets the viral genome **integrate** into host DNA, and integration usually breaks the viral E2 gene, the repressor that keeps the E6 and E7 oncogenes quiet. With E2 gone, E6 and E7 are overexpressed and switch off two key tumor suppressors."
   ],
   [
    "f",
@@ -147,19 +181,15 @@
   ],
   [
    "p",
-   "**Cervical intraepithelial neoplasia** (CIN) is graded by how far atypical, basal-type cells climb up the epithelium. In CIN 1 they occupy the **lower third**, in CIN 2 the lower two-thirds, and in CIN 3 more than two-thirds up to the full thickness, which includes **carcinoma in situ**. Because the basement membrane is intact in every grade, CIN cannot metastasize. The two-tier squamous intraepithelial lesion terms group CIN 1 as LSIL and CIN 2 or 3 as HSIL. {{rp13_koil|Koilocytes}}, squamous cells with wrinkled, raisinoid nuclei and a clear perinuclear halo, show productive viral infection and are typical of LSIL. CIN 1 usually regresses, whereas CIN 3 tends to progress, and diffuse p16 staining settles a lesion that looks like CIN 2 as HSIL."
-  ],
-  [
-   "img",
-   "rp13_lsil"
+   "**Cervical intraepithelial neoplasia** (CIN) is graded by how far atypical cells, which begin in the basal layer, climb up the epithelium. In CIN 1 they occupy the **lower third**, in CIN 2 the lower two-thirds, and in CIN 3 more than two-thirds up to the full thickness, which includes **carcinoma in situ**. Because the basement membrane is intact in every grade, CIN cannot metastasize. The two-tier squamous intraepithelial lesion terms group CIN 1 as LSIL and CIN 2 or 3 as HSIL. {{rp13_koil|Koilocytes}}, squamous cells with enlarged, hyperchromatic, wrinkled (raisinoid) nuclei and a clear perinuclear halo, show productive viral infection and are typical of LSIL. CIN 1 usually regresses, whereas CIN 3 tends to progress, and diffuse p16 staining settles a lesion that looks like CIN 2 as HSIL."
   ],
   [
    "f",
    "rp13_cin"
   ],
   [
-   "img",
-   "rp13_cin3"
+   "p",
+   "Cytology is reported with the {{rp13_bethesda|Bethesda System}}, which states whether the specimen is satisfactory and has an endocervical component, then names the finding: negative for intraepithelial lesion or malignancy (NILM); atypical squamous cells of undetermined significance (ASC-US), the commonest abnormal result; ASC-H, which cannot exclude HSIL; LSIL; HSIL; and atypical glandular cells (AGC), which point to the endocervix or endometrium. Cytology and biopsy match only roughly, so results are acted on by risk, not by label."
   ],
   [
    "steps",
@@ -191,40 +221,49 @@
   ],
   [
    "p",
-   "Screening looks for **precancer** in people without symptoms, and its rules follow how slowly HPV lesions progress. Average-risk screening starts at age 21, whatever the sexual history. From 21 to 29, **cytology** alone is repeated every 3 years, because HPV infection is so common and transient at these ages that testing for it would flag lesions destined to regress. From 30 to 65, the USPSTF options are primary HPV testing every 5 years, a **cotest** (cytology plus HPV) every 5 years, or cytology alone every 3 years; the American Cancer Society starts primary HPV testing at 25. Screening stops after 65 when prior results were adequately negative, and after a total hysterectomy for benign disease."
+   "Screening looks for **precancer** in people without symptoms, and its rules follow how slowly HPV lesions progress. It is done during a speculum exam: a spatula and an endocervical brush sample the ectocervix, the transformation zone and the canal into liquid preservative, which can be tested by cytology or for HPV. Average-risk screening starts at age 21, whatever the sexual history. The USPSTF (2018) recommends **cytology** alone every 3 years from 21 to 29, because HPV infection is common and transient at these ages and testing for it would flag many lesions destined to regress. From 30 to 65 it accepts primary HPV testing every 5 years, a **cotest** (cytology plus HPV) every 5 years, or cytology every 3 years."
+  ],
+  [
+   "p",
+   "The American Cancer Society (ACS, 2020) starts later and leans on HPV: primary HPV testing every 5 years from 25 to 65. Both stop after 65 with adequately negative results, and after total hysterectomy for benign disease. A family history of cervical cancer does not change these schedules, because HPV and age drive the risk, unlike breast, ovarian and colon screening, which start earlier with a first-degree relative or a BRCA or Lynch mutation. These are the guidelines as of 2025."
   ],
   [
    "t",
    [
     "Group",
-    "Recommended test",
-    "Interval or condition"
+    "USPSTF 2018",
+    "ACS 2020"
    ],
    [
     [
-     "21 to 29",
-     "Cytology alone",
-     "Every 3 years"
+     "Under 21",
+     "No screening",
+     "No screening"
+    ],
+    [
+     "21 to 24",
+     "Cytology every 3 years",
+     "No screening yet"
+    ],
+    [
+     "25 to 29",
+     "Cytology every 3 years",
+     "Primary HPV every 5 years"
     ],
     [
      "30 to 65",
-     "Primary HPV test, cotest, or cytology alone",
-     "5 years, 5 years, or 3 years"
+     "Primary HPV every 5 years, cotest every 5, or cytology every 3",
+     "Primary HPV every 5 years (cotest or cytology if HPV is unavailable)"
     ],
     [
-     "Over 65 with adequate negative results",
-     "Stop screening",
-     "No CIN 2 or worse in the past 25 years"
+     "Over 65",
+     "Stop after adequate negative screening",
+     "Stop with no CIN 2 or worse in 25 years"
     ],
     [
-     "Total hysterectomy for benign disease",
-     "Stop screening",
-     "Cervix removed; no high-grade history"
-    ],
-    [
-     "HIV or other immunosuppression",
-     "Start within a year of sexual debut or at diagnosis",
-     "More often, and lifelong"
+     "HIV",
+     "Separate guideline: start within a year of sexual debut, screen more often, for life",
+     "Same separate guideline"
     ]
    ]
   ],
@@ -233,8 +272,51 @@
    "rp13_screen"
   ],
   [
+   "h",
+   "What happens after an abnormal screening result?"
+  ],
+  [
    "p",
-   "Screening, diagnosis and treatment are separate steps. A **screening** test, cytology or HPV testing, sorts well people by risk and never makes a diagnosis. **Diagnosis** comes from {{rp13_colpo|colposcopy}}: the cervix is magnified after acetic acid is applied, abnormal areas turn white, and those areas are biopsied, with endocervical curettage when the zone extends up the canal. ASCCP guidelines base each decision on the estimated risk of CIN 3 or worse; at roughly 4 percent immediate risk, colposcopy is advised. Biopsy-proven LSIL is usually watched with repeat testing, while HSIL is treated by excision with a {{rp13_leep|loop electrosurgical excision procedure}} (LEEP) or by cold-knife **conization**."
+   "Screening, diagnosis and treatment are separate steps. HPV vaccination is primary prevention, because it stops infection; screening is **secondary prevention**, because it finds precancer early enough to remove. A screening test sorts well people by risk and never makes a diagnosis. **Diagnosis** comes from {{rp13_colpo|colposcopy}}: the cervix is magnified after acetic acid, abnormal areas turn white and are biopsied, with endocervical curettage when the zone extends up the canal. ASCCP guidelines (2019) base each decision on the estimated risk of CIN 3 or worse, which combines today's result with past results (the ASCCP app does the calculation); at roughly 4 percent immediate risk, colposcopy is advised."
+  ],
+  [
+   "t",
+   [
+    "Cytology result",
+    "What it means",
+    "Usual next step"
+   ],
+   [
+    [
+     "NILM",
+     "No lesion seen",
+     "Return at the routine interval for age and HPV result"
+    ],
+    [
+     "ASC-US",
+     "Slight change, cause unclear",
+     "**Reflex** HPV test on the same sample: positive goes to colposcopy, negative returns to repeat testing in 3 years"
+    ],
+    [
+     "LSIL",
+     "HPV effect, usually CIN 1",
+     "Colposcopy usually; repeat testing in a year if a recent HPV test was negative"
+    ],
+    [
+     "ASC-H or HSIL",
+     "High-grade lesion cannot be excluded, or is present",
+     "Colposcopy with biopsy; immediate excision is allowed when the risk of CIN 3 is very high"
+    ],
+    [
+     "AGC",
+     "Atypical glandular cells",
+     "Colposcopy with endocervical curettage, plus **endometrial biopsy** from age 35 or with risk factors"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Biopsy-proven CIN 1 is usually watched with repeat testing, because most regress. HSIL (CIN 2 or 3) is excised with a {{rp13_leep|loop electrosurgical excision procedure}} (LEEP), a thin electrified wire loop used in the office under local anesthesia, or by **cold-knife** conization, a scalpel cone cut in the operating room that leaves undamaged margins and is preferred when glandular disease is suspected. Both give a specimen. **Ablation** with cryotherapy or laser gives none, so it is reserved for CIN 2 or 3 when the whole lesion is visible, the canal is clear and invasion has been excluded. Hysterectomy is not first-line."
   ],
   [
    "call",
@@ -253,7 +335,7 @@
   ],
   [
    "p",
-   "About three-quarters of invasive cervical cancers are **squamous cell carcinoma**; adenocarcinoma, from the glandular cells of the canal, comes second and is linked more closely to HPV 18. Risk follows HPV exposure and persistence: early first intercourse, many partners, smoking, immunosuppression, HIV and long gaps in screening. Early cancers are silent and found only by screening, while larger tumors cause **postcoital** bleeding, irregular bleeding and a watery, blood-tinged discharge. The tumor spreads by direct extension into the parametria and pelvic side walls, where it compresses the ureters, and the resulting bilateral **hydronephrosis** and renal failure are a leading cause of death."
+   "About three-quarters of invasive cervical cancers are **squamous cell carcinoma**; adenocarcinoma, from the glandular cells of the canal, comes second and is linked more closely to HPV 18. Risk follows HPV exposure and persistence: early first intercourse, many partners, smoking, immunosuppression, HIV and long gaps in screening. Early cancers are silent and found only by screening, while larger tumors cause **postcoital** bleeding, irregular bleeding and a watery, blood-tinged discharge. The tumor spreads by direct extension into the parametria and pelvic side walls, where it compresses the ureters, and the resulting bilateral **hydronephrosis** and renal failure are a leading cause of death. Stage guides treatment: early disease confined to the cervix is cured by surgery, and tumor beyond it needs chemoradiation."
   ],
   [
    "h",
@@ -265,7 +347,11 @@
   ],
   [
    "p",
-   "HIV changes the timeline because immunosuppression lets HPV persist: the lower the **CD4** count, the higher the rates of persistent infection and CIN. Women with HIV begin screening within a year of sexual debut or at diagnosis, screen more often, and never age out at 65. People with HIV also face more **anal cancer**, because the anal canal has its own transformation zone that the same virus infects, so they are offered anal cytology. **Cervicitis** is a separate problem: chlamydia or gonorrhea causes a mucopurulent endocervical discharge and a friable cervix that bleeds when swabbed, and nucleic acid amplification testing finds the organism."
+   "HIV changes the timeline because immunosuppression lets HPV persist: the lower the **CD4** count, the weaker the clearance of infection and the higher the rates of persistent HPV, CIN and cancer. Women with HIV begin screening within a year of sexual debut or at diagnosis, have annual cytology until three consecutive results are normal and then every 3 years, and never age out at 65. People with HIV also face more **anal cancer**, because the anal canal has its own transformation zone that the same virus infects, so they are offered anal cytology, and an abnormal result leads to high-resolution **anoscopy** with biopsy."
+  ],
+  [
+   "p",
+   "**Cervicitis** is a separate problem: chlamydia or gonorrhea causes a mucopurulent endocervical discharge and a friable cervix that bleeds when swabbed, and nucleic acid amplification testing finds the organism. Both the patient and her partner are treated, because the infection can ascend to cause pelvic inflammatory disease."
   ],
   [
    "t",
@@ -276,14 +362,29 @@
    ],
    [
     [
+     "Cervical cancer screening",
+     "Women with a cervix",
+     "From 21 (USPSTF) or 25 (ACS) to 65"
+    ],
+    [
      "Chlamydia and gonorrhea NAAT",
      "Sexually active women",
      "Age 24 and younger, or older with risk"
     ],
     [
+     "HIV test",
+     "Ages 15 to 65",
+     "At least once, and in pregnancy"
+    ],
+    [
+     "Hepatitis C test",
+     "Adults 18 to 79",
+     "Once, and in each pregnancy"
+    ],
+    [
      "Mammography",
      "Average-risk women",
-     "Every 2 years from 40 to 74 (USPSTF)"
+     "Every 2 years, 40 to 74 (USPSTF)"
     ],
     [
      "Colorectal cancer screening",
@@ -302,12 +403,12 @@
     "id": "sx_rp13_zone",
     "q": "A 60-year-old's colposcopy cannot show the whole squamocolumnar junction. Which reasoning best explains the next step?",
     "o": [
+     "Low estrogen has drawn the junction up the canal, so the unseen zone must be sampled by endocervical curettage",
      "The junction has spread outward across the ectocervix after menopause, so a wider ectocervical biopsy will capture the zone",
      "Low estrogen has made the transformation zone disappear, so the patient no longer needs any cervical sampling",
-     "Low estrogen has drawn the junction up the canal, so the unseen zone must be sampled by endocervical curettage",
      "Chronic inflammation has hidden the junction, so treating cervicitis first will bring the zone back into view"
     ],
-    "a": 2,
+    "a": 0,
     "why": "Estrogen keeps the cervix large and everted; after menopause the cervix shrinks and the squamocolumnar junction retreats into the endocervical canal. The transformation zone still exists, and it is still where HPV-driven lesions live, but it is now out of sight, so the colposcopy is inadequate. Endocervical curettage samples the canal where the hidden zone lies. Biopsying the visible ectocervix samples mature squamous epithelium that is rarely the problem, and inflammation does not set the junction's position."
    }
   ],

@@ -3,7 +3,7 @@
  "t": "Gender-affirming care, sexual health and reproductive ethics",
  "sub": "How gender-affirming hormones work and are monitored, how to screen by organ inventory, and how consent, history and law shape reproductive care.",
  "yld": "lo",
- "exam": "mid",
+ "exam": "hi",
  "mins": 14,
  "bp": [
   "BP-rp29-01",
@@ -38,7 +38,8 @@
   "LIFESPAN-CASES.4",
   "LIFESPAN-CASES.5",
   "BICEP-BROWN.8",
-  "BICEP-BROWN.9"
+  "BICEP-BROWN.9",
+  "BICEP-WALSH.23"
  ],
  "pretest": [
   {
@@ -97,11 +98,11 @@
   ],
   [
    "p",
-   "**Sex assigned at birth** is the label recorded from the external genitalia at delivery. {{rp29_gi|Gender identity}} is a person's internal sense of being a man, a woman, both or neither; people whose identity sits outside the man-woman binary may call themselves non-binary. Gender expression is how someone presents, and sexual orientation describes whom a person is attracted to. A transgender person's identity differs from the sex assigned at birth. These ideas are independent, so ask instead of assuming."
+   "**Sex assigned at birth** is the label recorded from the external genitalia at delivery. {{rp29_gi|Gender identity}} is a person's internal sense of being a man, a woman, both or neither; people whose identity sits outside the man-woman binary may call themselves nonbinary. Gender expression is how someone presents, and sexual orientation describes whom a person is attracted to. A transgender person's identity differs from the sex assigned at birth. Sex itself has layers that can disagree: phenotypic sex is the anatomy, genotypic sex the karyotype and gonadal sex the testes or ovaries, as in androgen insensitivity, where a 46,XY karyotype and testes come with female anatomy. These ideas are independent, so ask instead of assuming."
   ],
   [
    "p",
-   "Respectful language is a clinical skill. Ask every patient what name and pronouns they use, record the **chosen name** and **pronouns**, and chart sex assigned at birth and gender identity as separate fields. Current usage prefers transgender over transsexual, pronouns over preferred pronouns, and gender-affirming surgery over gender reassignment surgery; transgender is an adjective, never a noun. **Inclusive language**, such as partner instead of husband or wife, avoids assumptions."
+   "Respectful language is a clinical skill. Ask every patient what name and pronouns they use, such as he, she, they or ze, and record the **chosen name** and pronouns with sex assigned at birth and gender identity as separate fields. When in doubt use a **neutral pronoun**, and if you **misgender** someone, apologize once, correct yourself and move on. Current usage prefers transgender over transsexual, pronouns over preferred pronouns and gender-affirming surgery over gender reassignment surgery; transgender is an adjective, never a noun. Inclusive language, such as partner instead of husband or wife, avoids assumptions."
   ],
   [
    "p",
@@ -117,7 +118,7 @@
   ],
   [
    "p",
-   "**Masculinizing** therapy uses testosterone by injection or gel. It deepens the voice, grows facial and body hair, enlarges the clitoris, adds muscle, causes acne and stops menses within a few months; voice and clitoral changes are permanent. Testosterone stimulates erythropoietin, so the key test is the **hematocrit**, checked about every 3 months in the first year and then once or twice a year, with a dose reduction above about 54%. It also lowers HDL and causes **vaginal atrophy**, with dryness and painful intercourse. Pregnancy is a contraindication because testosterone virilizes a female fetus."
+   "**Masculinizing** therapy uses testosterone by injection or gel. It deepens the voice, grows facial and body hair, enlarges the clitoris, adds muscle, causes acne and stops menses within a few months; voice and clitoral changes are permanent. Testosterone stimulates erythropoietin, so the key test is the **hematocrit**, checked about every 3 months in the first year and then once or twice a year; polycythemia, above about 54%, calls for a lower dose. It also lowers HDL and causes **vaginal atrophy**, with dryness and painful intercourse. Menstrual suppression with continuous combined pills, a progestin (DMPA, implant or levonorgestrel IUD) or a GnRH agonist reduces bleeding and dysphoria before testosterone starts or when bleeding continues. Pregnancy, unstable coronary disease and polycythemia are contraindications, and testosterone virilizes a female fetus."
   ],
   [
    "p",
@@ -167,21 +168,13 @@
    "Testosterone is **not contraception**: ovulation can continue despite amenorrhea, so a transgender man with a uterus and ovaries whose partner makes sperm can conceive, and the testosterone would harm the fetus. Offer an **IUD**, an implant or another progestin method. Estradiol lowers but does not reliably stop sperm production either."
   ],
   [
-   "p",
-   "Because hormones and surgery can end fertility, **fertility preservation** is discussed before treatment starts. Sperm banking, or **cryopreservation**, is simple after male puberty; oocyte or embryo cryopreservation needs ovarian stimulation and retrieval. A transgender man who keeps his uterus can carry a pregnancy after stopping testosterone."
-  ],
-  [
    "steps",
    [
     "How a continuous GnRH agonist pauses puberty",
     [
      [
-      "The agonist occupies GnRH receptors",
-      "Leuprolide or histrelin binds pituitary GnRH receptors continuously rather than in natural pulses."
-     ],
-     [
-      "A short flare follows",
-      "LH and FSH rise for a few days, so sex steroids briefly increase before they fall."
+      "The agonist binds pituitary GnRH receptors continuously",
+      "Leuprolide or histrelin occupies the receptors constantly instead of in natural pulses; LH and FSH rise briefly, so sex steroids flare for a few days."
      ],
      [
       "Receptors downregulate",
@@ -189,7 +182,7 @@
      ],
      [
       "Sex steroids fall and puberty pauses",
-      "Without LH and FSH the gonads make little estradiol or testosterone, so puberty stalls."
+      "Without LH and FSH the gonads make little estradiol or testosterone, so puberty stalls at the stage reached."
      ],
      [
       "Stopping the drug reverses it",
@@ -200,19 +193,31 @@
   ],
   [
    "h",
+   "What do fertility preservation and surgery involve?"
+  ],
+  [
+   "p",
+   "Because hormones and surgery can end fertility, **fertility preservation** is discussed before treatment starts. Sperm banking, or **cryopreservation**, is simple after male puberty; oocyte or embryo cryopreservation needs ovarian stimulation and retrieval. A transgender man who keeps his uterus can carry a pregnancy after stopping testosterone."
+  ],
+  [
+   "p",
+   "Surgery is optional and individualized, hormones need not stop around it, and some insurers require a health-assessment letter documenting persistent gender incongruence. Chest surgery for transgender men is a **mastectomy** with contouring; some breast tissue remains, so chest and axillary examination continues. A **hysterectomy**, with or without oophorectomy, is an option when the uterus causes dysphoria or bleeding on testosterone, and keeping the ovaries depends on fertility wishes. A **vaginoplasty** removes the testes and builds a neovagina that needs lifelong dilation, with risks of stenosis, fistula and urethral narrowing. A phalloplasty builds a phallus from a forearm or thigh flap, and urethral fistula and stricture are common; a penile implant can follow later."
+  ],
+  [
+   "h",
    "What preventive care follows from the organ inventory?"
   ],
   [
    "p",
-   "Preventive care starts with an {{rp29_oi|organ inventory}} and a sexual history. A transgender man with a cervix follows the usual **cervical cancer screening** schedule; testosterone thins the epithelium and causes more unsatisfactory samples, so primary HPV testing or self-collection helps. A transgender woman keeps her **prostate** after vaginoplasty, so screening follows the usual age-based discussion, remembering that estrogen lowers PSA and that the gland is felt through the neovagina. Breast screening depends on tissue and hormone exposure, and bleeding on testosterone is evaluated because the endometrium should be atrophic."
+   "Preventive care starts with an {{rp29_oi|organ inventory}} and a sexual history; screening follows the organs present, not gender identity. A transgender man with a cervix follows the usual **cervical cancer screening** schedule; testosterone thins the epithelium and causes more unsatisfactory samples, so primary HPV testing, which can be self-collected, helps. A transgender woman keeps her **prostate** after vaginoplasty, so prostate cancer screening follows the usual age-based discussion from about 55 to 69, with the gland felt through the neovagina; estrogen and antiandrogens lower prostate-specific antigen, so a normal value is read with caution. Breast screening follows tissue and hormone exposure: mammography as for other women, with tissue remaining after mastectomy. The figure lists each organ's rule."
+  ],
+  [
+   "f",
+   "rp29_inventory"
   ],
   [
    "p",
-   "A sexual history asks about behavior and anatomy, not identity. The CDC's **5 Ps** cover partners, practices, protection from sexually transmitted infections, past infections and pregnancy intention; also ask what parts partners have and whether anyone could become pregnant. Testing for **sexually transmitted infections** then follows the organs and practices involved, and HPV vaccination is offered. Depression, suicide risk, substance use and intimate partner violence are screened routinely, because stigma drives high rates of each."
-  ],
-  [
-   "p",
-   "Surgery is optional. Chest surgery for transgender men is a **mastectomy** with contouring, and some breast tissue remains. A **vaginoplasty** removes the testes and builds a neovagina that needs lifelong dilation, with risks of stenosis, fistula and urethral narrowing. A **phalloplasty** builds a phallus from a forearm or thigh flap, and urethral fistula and stricture are common. Care is multidisciplinary, drawing on endocrinology, surgery, mental health and social work, with referral when a need exceeds one clinician's skill."
+   "A sexual history asks about behavior and anatomy, not identity. The CDC's **5 Ps** are partners, practices, protection from sexually transmitted infections, past infections and pregnancy intention; the practices question includes whether sex is consensual, and pregnancy intention opens contraceptive counseling. Ask what parts partners have, whether oral or anal sex occurs and whether anyone could become pregnant, because those answers decide which sites receive STI screening: urethra or vagina, rectum and throat. HPV vaccination is offered. Mental health screening covers depression, anxiety, suicide risk and substance use, and every visit asks about intimate partner violence, because stigma drives high rates of each; about 4 in 10 transgender adults report a lifetime suicide attempt."
   ],
   [
    "call",
@@ -222,11 +227,27 @@
   ],
   [
    "h",
+   "Why do LGBTQ+ patients face barriers, and what helps?"
+  ],
+  [
+   "p",
+   "Transgender people are under 1 percent of the US population, yet studies report that up to a quarter have been **refused care**. Their needs combine ordinary primary care with hormone care, fertility counseling, mental health support and HIV and STI prevention, and LGBTQ+ patients carry higher rates of depression, suicide attempts, substance use and violence. These disparities come from barriers rather than identity: discrimination and bias, a clinician **knowledge deficit**, and **insurance coverage** that excludes hormones, supplies, mental health care or surgery. Legal transition adds another layer. A legal name change never requires hormones or surgery, and the name, license marker and birth certificate follow state law: some states accept self-attestation and an X marker, others restrict changes, and Medicaid coverage of gender-affirming care is mandated in some states and banned in others. As of 2025, more than 20 states restrict puberty blockers or hormones for minors, although major medical societies support such care."
+  ],
+  [
+   "p",
+   "Clinic settings shape care. Assumptions, such as that a patient is cisgender or heterosexual, produce {{rp29_microagg|microaggressions}}: using the wrong name, voicing surprise or asking curious questions that do not serve care. An **intake form** with only male and female boxes, or no space for chosen name and pronouns, tells the patient they were not expected. Forms and records that ask for name used, pronouns, gender identity and sex assigned at birth as separate fields, and staff trained in the same language, make disclosure safer."
+  ],
+  [
+   "p",
+   "Gender-affirming care is multidisciplinary. Primary care and endocrinology prescribe hormones, ob/gyn and reproductive endocrinology cover fertility and gynecologic care, urology and **plastic surgery** operate, **speech** pathology trains the voice (testosterone deepens it, but estrogen does not raise pitch), and mental health and **social work** provide assessment, letters and support. Referral is appropriate when a need exceeds one clinician's skill, and coordination spares the patient from retelling the story at every step."
+  ],
+  [
+   "h",
    "When can an adolescent consent, and what makes consent valid?"
   ],
   [
    "p",
-   "Minors usually need a parent's consent, but the law makes exceptions so that fear of disclosure does not block care. In most states a **minor** can consent without a parent to contraception, testing and treatment for sexually transmitted infections, and prenatal care; emergencies and emancipated minors are also exceptions. Abortion is the common outlier, since many states require parental notice or consent unless a judge grants a bypass. Every adolescent visit includes time alone, and the clinician explains **confidentiality** and its limits: abuse or a serious risk of harm must be acted on."
+   "Minors usually need a parent's consent, but the law makes exceptions so that fear of disclosure does not block care. In most states a **minor** can consent without **parental consent** to contraception, testing and treatment for sexually transmitted infections, and prenatal care; emergencies and emancipated minors are also exceptions. Abortion is the common outlier, since many states require parental notice or consent unless a judge grants a bypass. Gender-affirming hormones for a minor usually need a parent's permission plus the adolescent's assent, which respects growing autonomy without removing the parent's role. Every adolescent visit includes time alone, and the clinician explains confidentiality and its limits: abuse or a serious risk of harm must be acted on."
   ],
   [
    "p",
@@ -243,19 +264,23 @@
   ],
   [
    "p",
-   "Mistrust of medicine has causes. In the **Tuskegee** study, from 1932 to 1972, US Public Health Service researchers followed Black men with syphilis without treating them, even after penicillin became standard. Through much of the 20th century, Black, Latina, Native American, disabled and incarcerated women underwent coerced **sterilization**, often without meaningful informed consent. These abuses explain why some patients meet reproductive care with **mistrust**, and why pressure toward long-acting contraception feels like history repeating."
+   "Mistrust of medicine has causes. In the **Tuskegee** study, from 1932 to 1972, US Public Health Service researchers followed Black men with syphilis without treating them, even after penicillin became standard; the outcry led to federal research rules and the {{rp29_belmont|Belmont Report}} of 1979, whose principles are respect for persons, beneficence and justice. Through much of the 20th century, Black, Latina, Native American, disabled and incarcerated women underwent coerced **sterilization**, often without meaningful informed consent. These abuses explain why some patients meet reproductive care with mistrust, and why pressure toward long-acting contraception feels like history repeating."
   ],
   [
    "p",
-   "Health **disparities** follow structural patterns rather than individual failings. Black women in the United States die of pregnancy-related causes at about three times the rate of White women, a gap that persists across income and education. LGBTQ+ patients report refusals of care, untrained clinicians, insurance exclusions and discrimination, all **barriers** that delay care. These outcomes reflect **social determinants** of health and structural racism, so a note should name the barrier instead of blaming the patient. Equity means directing effort where barriers fall."
+   "Health **disparities** follow structural patterns rather than individual failings. **Maternal mortality** shows it: Black women in the United States die of pregnancy-related causes at about three times the rate of White women, and the gap persists across income and education. These outcomes reflect **social determinants** of health and structural racism, so a note should name the barrier instead of blaming the patient. Health equity means directing effort where barriers fall."
   ],
   [
    "p",
-   "Clinicians carry assumptions too. **Implicit bias** shapes counseling and pain treatment without awareness, and an unexamined assumption, such as that a transgender man cannot be pregnant, can miss a diagnosis. {{rp29_tic|Trauma-informed care}} explains each step before doing it, asks permission, offers a **chaperone**, lets the patient stop at any time, delays the pelvic exam until rapport exists and examines only what is needed. Culturally responsive, patient-centered care and shared decision-making keep the patient's goals at the center."
+   "Clinicians carry assumptions too. **Implicit bias** shapes counseling and pain treatment without awareness, and an unexamined assumption, such as that a transgender man cannot be pregnant, can miss a diagnosis. {{rp29_tic|Trauma-informed care}} explains each step before doing it, asks permission, offers a chaperone, lets the patient stop at any time, delays the pelvic exam until rapport exists, examines only what is needed and lets the patient choose the speculum size and insert it themselves. Culturally responsive care adds a professional **interpreter** rather than a relative, {{rp29_humility|cultural humility}}, which is ongoing self-reflection rather than expertise in a culture, and shared decision-making that keeps the patient's goals at the center."
   ],
   [
    "p",
-   "Law, ethics and clinical judgment do not always agree. Legal transition, such as a **name change** or a new gender marker on a license or **birth certificate**, depends on **state law**; some states accept self-attestation and an X marker, others restrict changes, and a name change never requires hormones or surgery. As of 2025, more than 20 states restrict puberty blockers or hormones for minors, although major medical societies support such care. Analyzing a hard case from clinical, ethical, legal, psychosocial and equity angles in turn shows where the answers diverge."
+   "Law, ethics and clinical judgment answer different questions. The **standard of care** is a legal measure, what a reasonably prudent clinician would do. Mandatory reporting laws require a report of suspected child abuse, of infections such as syphilis and chlamydia to the health department, and in some states of violence, even when the patient asks for confidentiality. A clinician's {{rp29_conscient|conscientious objection}} to a service is an ethical position that does not remove the duty to refer, to give emergency care and not to abandon the patient. Analyzing a hard case from clinical, ethical, legal, psychosocial and health-equity angles in turn, with autonomy, beneficence, nonmaleficence and justice, shows where the answers diverge; the figure works one case through all five."
+  ],
+  [
+   "f",
+   "rp29_ethics"
   ],
   [
    "sexp",
@@ -330,6 +355,14 @@
    ],
    [
     "Amenorrhea on testosterone proves infertility",
+    0
+   ],
+   [
+    "Screening follows the organs present",
+    1
+   ],
+   [
+    "A transgender woman who keeps her prostate needs no screening discussion",
     0
    ]
   ]

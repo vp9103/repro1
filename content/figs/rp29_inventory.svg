@@ -1,0 +1,76 @@
+<svg class="dia" viewBox="0 0 900 624" role="img" aria-label="Screening follows the organs a patient has: cervix, neovagina, breast tissue, prostate and uterus each have their own screening rule, and every patient needs infection testing by site, HPV vaccination and mental health screening">
+<text class="ttl" x="14" y="24" font-size="17">Screen the organs that are present, not the gender identity</text>
+<rect x="14" y="38" width="188" height="34" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.3"/>
+<text class="b" x="26" y="61" font-size="15">Organ, who has it</text>
+<rect x="208" y="38" width="338" height="34" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.3"/>
+<text class="b" x="220" y="61" font-size="15">Screening</text>
+<rect x="552" y="38" width="334" height="34" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.3"/>
+<text class="b" x="564" y="61" font-size="15">The catch</text>
+<rect x="14" y="80" width="188" height="80" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.4"/>
+<text class="b" x="26" y="104" font-size="15">Cervix</text>
+<text x="26" y="125" font-size="13">Transgender men and</text>
+<text x="26" y="143" font-size="13">nonbinary people</text>
+<rect x="208" y="80" width="338" height="80" rx="8" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="220" y="105" font-size="14">Cervical cancer screening on</text>
+<text x="220" y="126" font-size="14">the usual schedule; primary HPV</text>
+<text x="220" y="147" font-size="14">testing can be self-collected</text>
+<rect x="552" y="80" width="334" height="80" rx="8" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="564" y="105" font-size="14">Testosterone thins the</text>
+<text x="564" y="126" font-size="14">epithelium: more samples are</text>
+<text x="564" y="147" font-size="14">unsatisfactory</text>
+<rect x="14" y="168" width="188" height="80" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.4"/>
+<text class="b" x="26" y="192" font-size="15">Neovagina</text>
+<text x="26" y="213" font-size="13">After vaginoplasty</text>
+<rect x="208" y="168" width="338" height="80" rx="8" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="220" y="193" font-size="14">No cervix, so no cervical</text>
+<text x="220" y="214" font-size="14">cancer screening</text>
+<rect x="552" y="168" width="334" height="80" rx="8" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="564" y="193" font-size="14">Examine for granulation;</text>
+<text x="564" y="214" font-size="14">test for infection by site</text>
+<rect x="14" y="256" width="188" height="80" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="26" y="280" font-size="15">Breast tissue</text>
+<text x="26" y="301" font-size="13">Present or remaining</text>
+<text x="26" y="319" font-size="13">after mastectomy</text>
+<rect x="208" y="256" width="338" height="80" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="220" y="281" font-size="14">Mammography as for other women;</text>
+<text x="220" y="302" font-size="14">transgender women after age 50</text>
+<text x="220" y="323" font-size="14">and about 5 years of estrogen</text>
+<rect x="552" y="256" width="334" height="80" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="564" y="281" font-size="14">Some tissue remains after</text>
+<text x="564" y="302" font-size="14">mastectomy, so chest and axillary</text>
+<text x="564" y="323" font-size="14">examination continues</text>
+<rect x="14" y="344" width="188" height="80" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="26" y="368" font-size="15">Prostate</text>
+<text x="26" y="389" font-size="13">Transgender women:</text>
+<text x="26" y="407" font-size="13">kept after surgery</text>
+<rect x="208" y="344" width="338" height="80" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="220" y="369" font-size="14">Age-based shared decision,</text>
+<text x="220" y="390" font-size="14">about 55 to 69; gland felt</text>
+<text x="220" y="411" font-size="14">through the neovagina</text>
+<rect x="552" y="344" width="334" height="80" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="564" y="369" font-size="14">Estrogen and antiandrogens</text>
+<text x="564" y="390" font-size="14">lower prostate-specific</text>
+<text x="564" y="411" font-size="14">antigen: read it with caution</text>
+<rect x="14" y="432" width="188" height="80" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.4"/>
+<text class="b" x="26" y="456" font-size="15">Uterus</text>
+<text x="26" y="477" font-size="13">Transgender men on</text>
+<text x="26" y="495" font-size="13">testosterone</text>
+<rect x="208" y="432" width="338" height="80" rx="8" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="220" y="457" font-size="14">No routine screening;</text>
+<text x="220" y="478" font-size="14">evaluate any bleeding</text>
+<rect x="552" y="432" width="334" height="80" rx="8" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="564" y="457" font-size="14">The endometrium should be</text>
+<text x="564" y="478" font-size="14">atrophic, so bleeding is</text>
+<text x="564" y="499" font-size="14">not expected</text>
+<rect x="14" y="520" width="188" height="80" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.4"/>
+<text class="b" x="26" y="544" font-size="15">Every patient</text>
+<text x="26" y="565" font-size="13">Whatever the organs</text>
+<rect x="208" y="520" width="338" height="80" rx="8" fill="var(--surface)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="220" y="545" font-size="14">Infection tests by site and</text>
+<text x="220" y="566" font-size="14">practice: urethra or vagina,</text>
+<text x="220" y="587" font-size="14">rectum, throat; HPV vaccination</text>
+<rect x="552" y="520" width="334" height="80" rx="8" fill="var(--surface)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="564" y="545" font-size="14">Screen mental health, suicide</text>
+<text x="564" y="566" font-size="14">risk, substance use and</text>
+<text x="564" y="587" font-size="14">intimate partner violence</text>
+</svg>

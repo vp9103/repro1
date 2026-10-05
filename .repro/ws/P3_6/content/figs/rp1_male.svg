@@ -1,0 +1,83 @@
+<svg class="dia" viewBox="0 0 900 650" role="img" aria-label="Male pelvis in midline section: the bladder with its internal urethral sphincter at the neck, the prostate around the prostatic urethra with the seminal colliculus where the ejaculatory duct opens, the ductus deferens crossing over the ureter to join the seminal vesicle, the rectovesical pouch and Denonvilliers fascia in front of the rectum, a finger on a digital rectal exam, and three cards on the sources of semen, emission and retrograde ejaculation">
+<text class="ttl" x="14" y="24" font-size="17">Male pelvis in midline section: semen path, bladder neck and rectal exam</text>
+<rect x="236" y="130" width="14" height="190" rx="7" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="2"/>
+<path d="M500 70 C 516 160, 506 250, 466 322 L 452 392 L 462 462" fill="none" stroke="var(--a2)" stroke-width="36" stroke-linejoin="round"/>
+<path d="M500 70 C 516 160, 506 250, 466 322 L 452 392 L 462 462" fill="none" stroke="var(--a2-soft)" stroke-width="32" stroke-linejoin="round"/>
+<ellipse cx="330" cy="214" rx="64" ry="54" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<path d="M462 128 L 392 238" fill="none" stroke="var(--warn)" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="404" cy="262" rx="42" ry="13" transform="rotate(58 404 262)" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="2"/>
+<ellipse cx="338" cy="312" rx="46" ry="38" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="2"/>
+<path d="M262 150 C 296 100, 396 104, 430 170 C 446 204, 440 226, 432 246" fill="none" stroke="var(--a1)" stroke-width="4"/>
+<ellipse cx="432" cy="248" rx="8" ry="18" transform="rotate(-8 432 248)" fill="var(--a1)" stroke="var(--a1)" stroke-width="1"/>
+<path d="M254 160 C 292 84, 408 88, 444 168 C 460 206, 450 250, 446 292 L 462 292 C 468 250, 476 210, 478 150" fill="none" stroke="var(--warn)" stroke-width="3" stroke-dasharray="7 5"/>
+<path d="M426 268 C 400 286, 366 296, 346 302" fill="none" stroke="var(--crit)" stroke-width="3.5"/>
+<line x1="334" y1="266" x2="336" y2="394" stroke="var(--warn)" stroke-width="4"/>
+<circle cx="341" cy="302" r="6" fill="var(--crit)"/>
+<rect x="318" y="264" width="32" height="8" rx="3" fill="var(--a2)"/>
+<line x1="296" y1="362" x2="430" y2="362" stroke="var(--ink-3)" stroke-width="6" stroke-linecap="round"/>
+<rect x="322" y="368" width="28" height="22" rx="5" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<ellipse cx="322" cy="414" rx="34" ry="15" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<path d="M336 394 C 336 408, 318 410, 296 414 C 282 417, 274 428, 268 442" fill="none" stroke="var(--warn)" stroke-width="4"/>
+<path d="M444 296 L 444 354" fill="none" stroke="var(--crit)" stroke-width="3"/>
+<path d="M468 462 L 462 396 L 450 340" fill="none" stroke="var(--crit)" stroke-width="3.5" stroke-linecap="round"/>
+<polygon points="446,332 458,338 448,346" fill="var(--crit)"/>
+<text x="330" y="222" font-size="14" text-anchor="middle">Bladder</text>
+<text x="14" y="134" font-size="14">Pubic symphysis</text>
+<line x1="136" y1="130" x2="235" y2="150" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="14" y="196" font-size="14">Retropubic space</text>
+<line x1="136" y1="192" x2="262" y2="204" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="b" x="14" y="250" font-size="14">Internal urethral</text>
+<text class="b" x="14" y="268" font-size="14">sphincter</text>
+<text x="14" y="286" font-size="14">smooth muscle at</text>
+<text x="14" y="304" font-size="14">the bladder neck</text>
+<line x1="124" y1="262" x2="316" y2="268" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="14" y="346" font-size="14">Prostate: base on</text>
+<text x="14" y="364" font-size="14">the bladder neck,</text>
+<text x="14" y="382" font-size="14">apex on the floor</text>
+<line x1="130" y1="352" x2="294" y2="326" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="b" x="14" y="426" font-size="14">Membranous urethra</text>
+<text x="14" y="444" font-size="14">in the external sphincter</text>
+<line x1="160" y1="422" x2="320" y2="382" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="14" y="492" font-size="14">Bulb of the penis</text>
+<text x="14" y="510" font-size="14">and spongy urethra</text>
+<line x1="136" y1="488" x2="292" y2="422" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="b" x="560" y="96" font-size="14">Ductus deferens</text>
+<text x="560" y="114" font-size="14">crosses over the ureter</text>
+<line x1="556" y1="104" x2="424" y2="160" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="560" y="146" font-size="14">Ureter</text>
+<line x1="556" y1="142" x2="450" y2="148" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="b" x="560" y="176" font-size="14">Rectovesical pouch</text>
+<text x="560" y="194" font-size="14">(peritoneum, men)</text>
+<line x1="556" y1="190" x2="470" y2="286" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="560" y="248" font-size="14">Ampulla of the ductus</text>
+<text x="560" y="266" font-size="14">and seminal vesicle</text>
+<line x1="556" y1="256" x2="442" y2="250" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="a1" x="560" y="316" font-size="14">Ejaculatory duct opens on</text>
+<text class="a1" x="560" y="334" font-size="14">the seminal colliculus</text>
+<line x1="556" y1="324" x2="348" y2="304" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="b" x="560" y="388" font-size="14">Denonvilliers fascia</text>
+<line x1="556" y1="384" x2="446" y2="330" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="560" y="412" font-size="14">Pelvic floor</text>
+<line x1="556" y1="408" x2="430" y2="364" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="560" y="446" font-size="14">Rectum</text>
+<text class="cr" x="500" y="488" font-size="14">Digital rectal exam: finger</text>
+<text class="cr" x="500" y="506" font-size="14">feels the posterior prostate</text>
+<rect x="14" y="520" width="282" height="116" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="28" y="544" font-size="15">Where the semen comes from</text>
+<text x="28" y="568" font-size="14">Seminal vesicles: about 70%,</text>
+<text x="28" y="586" font-size="14">fructose and clotting proteins</text>
+<text x="28" y="610" font-size="14">Prostate: about 20%, PSA</text>
+<text x="28" y="628" font-size="14">liquefies the clot</text>
+<rect x="308" y="520" width="282" height="116" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="322" y="544" font-size="15">Emission is sympathetic</text>
+<text x="322" y="568" font-size="14">Hypogastric fibers contract the</text>
+<text x="322" y="586" font-size="14">ductus, vesicles and prostate,</text>
+<text x="322" y="604" font-size="14">and close the internal sphincter</text>
+<text x="322" y="622" font-size="14">(alpha-1): semen goes forward</text>
+<rect x="602" y="520" width="284" height="116" rx="10" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="616" y="544" font-size="15">Retrograde ejaculation</text>
+<text x="616" y="568" font-size="14">Sphincter fails: dry orgasm,</text>
+<text x="616" y="586" font-size="14">cloudy urine afterward</text>
+<text x="616" y="604" font-size="14">Nerve injury, bladder neck or</text>
+<text x="616" y="622" font-size="14">prostate surgery, tamsulosin</text>
+</svg>

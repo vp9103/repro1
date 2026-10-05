@@ -23,7 +23,8 @@ en9_hypercalcemia, en9_three_hpt missing.
 | P3.1 | CLOSED 2026-10-05 (rp1-rp3, 40 gap lines) | | ledger row sha:1c20a979 |
 | P3.2 | CLOSED 2026-10-05 (rp4-rp6, 16 gap lines) | | ledger row sha:ec2eeecd |
 | P3.3 | CLOSED 2026-10-05 (rp7-rp9, 29 gap lines) | | ledger row sha:92b2ca5d |
-| P3.4 | worker | rp10, rp11, rp29 (.repro/ws/P3_4) | --status P3.4 ok |
+| P3.4 | CLOSED 2026-10-05 (rp10, rp11, rp29) | | ledger row sha:455e012e |
+| P3.6 | worker | rp15, rp23, rp24 (.repro/ws/P3_6) | --status P3.6 ok |
 | P3.5 | worker | rp12, rp13, rp14 (.repro/ws/P3_5) | --status P3.5 ok |
 | P2.6 | CLOSED 2026-10-05 (F3) | ledger row sha:29b015ac | |
 | V2 | DONE (finished before the restart; 8 new figures reviewed 2026-10-05) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |

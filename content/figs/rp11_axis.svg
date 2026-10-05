@@ -1,0 +1,51 @@
+<svg class="dia" viewBox="0 0 900 590" role="img" aria-label="The hypothalamic-pituitary-ovarian axis at menopause: depleted follicles stop making estradiol, inhibin B and AMH, so feedback is lost and FSH and LH rise; overactive KNDy neurons signal through NK3 receptors to cause hot flashes; adipose aromatase turns androstenedione into estrone">
+<text class="ttl" x="14" y="24" font-size="17">Menopause: the follicles run out, the brakes fail and FSH climbs</text>
+<rect x="30" y="44" width="400" height="104" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="46" y="72" font-size="16">Hypothalamus</text>
+<text x="46" y="98" font-size="15">GnRH pulses rise</text>
+<text x="46" y="124" font-size="15">KNDy neurons overactive</text>
+<rect x="30" y="196" width="400" height="84" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="46" y="224" font-size="16">Anterior pituitary</text>
+<text x="46" y="252" font-size="15">FSH rises most, LH rises too</text>
+<rect x="30" y="328" width="400" height="124" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="46" y="356" font-size="16">Ovary: follicles depleted</text>
+<text x="46" y="382" font-size="15">Estradiol falls</text>
+<text x="46" y="406" font-size="15">Inhibin B and AMH fall</text>
+<text x="46" y="430" font-size="15">Stroma still makes androgens</text>
+<line x1="110" y1="148" x2="110" y2="186" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="104,184 110,196 116,184" fill="var(--ink-2)"/>
+<text x="124" y="176" font-size="14">GnRH</text>
+<line x1="110" y1="280" x2="110" y2="318" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="104,316 110,328 116,316" fill="var(--ink-2)"/>
+<text x="124" y="308" font-size="14">FSH, LH</text>
+<line x1="330" y1="328" x2="330" y2="160" stroke="var(--crit)" stroke-width="2.5" stroke-dasharray="6 5"/>
+<text class="cr" x="344" y="176" font-size="14">feedback</text>
+<text class="cr" x="344" y="308" font-size="14">lost</text>
+<line x1="318" y1="232" x2="342" y2="256" stroke="var(--crit)" stroke-width="3"/>
+<line x1="342" y1="232" x2="318" y2="256" stroke="var(--crit)" stroke-width="3"/>
+<rect x="486" y="44" width="400" height="104" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="502" y="72" font-size="16">Thermoregulatory center</text>
+<text x="502" y="98" font-size="15">Thermoneutral zone narrows</text>
+<text x="502" y="124" font-size="15">Small warming sets off a flush</text>
+<line x1="430" y1="96" x2="474" y2="96" stroke="var(--warn)" stroke-width="2.5"/>
+<polygon points="472,90 484,96 472,102" fill="var(--warn)"/>
+<text class="wn" x="486" y="176" font-size="14">Neurokinin B at NK3 receptors</text>
+<text class="cr" x="486" y="198" font-size="14">Fezolinetant blocks NK3</text>
+<rect x="486" y="236" width="400" height="120" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="502" y="264" font-size="16">Adipose tissue (aromatase)</text>
+<text x="502" y="290" font-size="15">Androstenedione to estrone</text>
+<text x="502" y="314" font-size="15">Estrone = main estrogen now</text>
+<text x="502" y="338" font-size="15">More fat, more estrone</text>
+<line x1="430" y1="420" x2="560" y2="366" stroke="var(--a2)" stroke-width="2.5"/>
+<polygon points="552,362 566,364 556,374" fill="var(--a2)"/>
+<text x="586" y="394" font-size="14">androstenedione from</text>
+<text x="586" y="414" font-size="14">adrenal and ovarian stroma</text>
+<rect x="30" y="478" width="856" height="98" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="46" y="506" font-size="16">Labs</text>
+<text class="a1" x="110" y="506" font-size="15">FSH high (best marker)</text>
+<text class="a1" x="330" y="506" font-size="15">LH high</text>
+<text class="a2" x="440" y="506" font-size="15">Estradiol low</text>
+<text class="a2" x="600" y="506" font-size="15">Inhibin B and AMH low</text>
+<text x="46" y="534" font-size="15">Diagnosis is clinical: 12 months without menses, median age 51.</text>
+<text x="46" y="560" font-size="15">Before age 40 with a high FSH: primary ovarian insufficiency.</text>
+</svg>

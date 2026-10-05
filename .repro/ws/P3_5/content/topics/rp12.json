@@ -29,7 +29,11 @@
   "HP-CERVIX-VULVA.6",
   "HP-CERVIX-VULVA.7",
   "PATHPHARM-CERVIX-HPV.5",
-  "PATHPHARM-CERVIX-HPV.6"
+  "PATHPHARM-CERVIX-HPV.6",
+  "GYN-ONC.1",
+  "GYN-ONC.2",
+  "GYN-ONC.3",
+  "TBL-STI.1"
  ],
  "pretest": [
   {
@@ -65,19 +69,19 @@
    }
   },
   {
-   "q": "A 3-year-old girl has vaginal bleeding and a grape-like mass at the introitus. Which stain will the tumor cells express?",
+   "q": "A 27-year-old has severe unilateral vulvar pain and a tender, fluctuant mass at the posterolateral vestibule. Which structure is obstructed?",
    "o": [
-    "Desmin",
-    "S100",
-    "Cytokeratin 7",
-    "Chromogranin"
+    "Bartholin gland duct",
+    "Skene gland duct",
+    "Gartner duct remnant",
+    "Sebaceous gland of the labium majus"
    ],
    "a": 0,
-   "why": "Sarcoma botryoides is embryonal rhabdomyosarcoma, a tumor of primitive skeletal muscle, so its small round blue cells express desmin, myogenin and MyoD1 beneath a dense cambium layer.",
+   "why": "Bartholin glands lie at the posterolateral introitus, at about 4 and 8 o'clock. A blocked duct traps mucus as a cyst, and infection makes the painful, fluctuant abscess seen here, treated by drainage with a Word catheter or marsupialization.",
    "w": {
-    "S100": "S100 marks melanocytes, nerve sheath cells and some other tumors; it does not identify a skeletal muscle tumor.",
-    "Cytokeratin 7": "Cytokeratin 7 marks glandular epithelium such as Paget cells; a sarcoma is mesenchymal and lacks epithelial keratins.",
-    "Chromogranin": "Chromogranin marks neuroendocrine cells, as in neuroblastoma or carcinoid, not the rhabdomyoblasts of this tumor."
+    "Skene gland duct": "Skene (paraurethral) glands open beside the urethra, so their infection causes dysuria or urethral discharge rather than a vestibular mass.",
+    "Gartner duct remnant": "A Gartner duct cyst is a mesonephric remnant on the lateral vaginal wall, usually painless and not at the introitus, so it does not form this abscess.",
+    "Sebaceous gland of the labium majus": "A sebaceous cyst lies in the skin of the labium majus and is usually small and painless; the vestibular site and fluctuant abscess point to the Bartholin duct."
    }
   }
  ],
@@ -92,7 +96,7 @@
   ],
   [
    "p",
-   "The wall is built to stretch, not to secrete. Beneath the epithelium, a lamina propria rich in **elastic** fibers and a dense venous plexus covers smooth muscle, and the mucosa is thrown into transverse folds, the **rugae**, that flatten as the canal distends in childbirth. During arousal, congestion of the venous plexus forces plasma through the epithelium as a **transudate**, and this fluid mixes with cervical and vestibular mucus to lubricate the canal. After menopause low estrogen thins the epithelium and flattens the rugae, so atrophic vaginitis brings dryness, burning and painful intercourse."
+   "The wall is built for distensibility, not for secretion. Beneath the epithelium, a lamina propria rich in **elastic** fibers and a dense venous plexus covers smooth muscle, and the mucosa is thrown into transverse folds, the **rugae**, that flatten as the canal distends in childbirth. During arousal, congestion of the venous plexus forces plasma through the epithelium as a **transudate**, and this fluid mixes with cervical and vestibular mucus to lubricate the canal. After menopause low estrogen thins the epithelium and flattens the rugae, so atrophic vaginitis brings dryness, burning and painful intercourse."
   ],
   [
    "call",
@@ -106,11 +110,15 @@
   ],
   [
    "p",
-   "The paired {{rp12_bartholin|Bartholin glands}}, or greater vestibular glands, lie deep in the posterior vestibule and drain by ducts that open at about 4 and 8 o'clock. Their acini secrete mucin-rich mucus, and the duct is lined by **transitional epithelium**, so the glands moisten the introitus, above all during arousal. When a duct blocks, mucus collects as a cyst; infection, usually polymicrobial, turns it into a painful, fluctuant abscess in the posterolateral vestibule. Treatment keeps a drainage tract open, either with a **Word catheter**, a small inflatable balloon left in place for several weeks, or by **marsupialization**, which sews the cyst wall open. A persistent mass in a woman over 40 is biopsied, because Bartholin gland carcinoma, though rare, looks the same."
+   "The paired {{rp12_bartholin|Bartholin glands}}, or greater vestibular glands, lie deep in the posterior vestibule and drain by ducts that open at about 4 and 8 o'clock. Their mucus-secreting acini make mucin, and the duct is lined by **transitional epithelium**, so the glands lubricate the introitus, above all during arousal. When a duct blocks, mucus collects as a cyst; infection, usually polymicrobial, turns it into a painful, fluctuant abscess in the posterolateral vestibule. Treatment keeps a drainage tract open, either with a **Word catheter**, a small inflatable balloon left in place for several weeks, or by **marsupialization**, which sews the cyst wall open. A persistent mass in a woman over 40 is biopsied, because Bartholin gland carcinoma, though rare, looks the same."
   ],
   [
    "p",
    "The smaller **paraurethral (Skene) glands**, the female counterpart of the prostate, open beside the urethral meatus and keep it moist, so their infections cause urethral symptoms such as dysuria rather than a vestibular mass. A **Gartner duct cyst** is different again: it sits on the lateral vaginal wall, because it is a leftover piece of the mesonephric duct."
+  ],
+  [
+   "f",
+   "rp12_wall"
   ],
   [
    "h",
@@ -209,7 +217,7 @@
   ],
   [
    "p",
-   "Vaginitis inflames the vaginal wall and changes the discharge; {{rp12_cervicitis|cervicitis}} inflames the cervix and shows at the os. The usual causes are infectious: *Chlamydia trachomatis*, the most common, and *Neisseria gonorrhoeae*, followed by trichomonads, herpes simplex virus and, often, bacterial vaginosis. Douches, spermicides and tampons are noninfectious irritants. Many women have no symptoms; others have **mucopurulent** discharge from the os, bleeding after intercourse and a friable cervix that bleeds when the swab touches it. Trichomonads leave punctate hemorrhages, the strawberry cervix, and herpes leaves ulcers."
+   "Vaginitis inflames the vaginal wall and changes the discharge; {{rp12_cervicitis|cervicitis}} inflames the cervix and shows at the os. The usual causes are infectious: *Chlamydia trachomatis*, the most common, and *Neisseria gonorrhoeae*, followed by trichomonads and herpes simplex virus, with bacterial vaginosis a frequent companion. Douches, spermicides and tampons are noninfectious irritants. Many women have no symptoms; others have **mucopurulent** discharge from the os, bleeding after intercourse and a friable cervix that bleeds when the swab touches it. Trichomonads leave punctate hemorrhages, the strawberry cervix, and herpes leaves ulcers."
   ],
   [
    "p",
@@ -239,27 +247,23 @@
    "t",
    [
     "Problem",
-    "Clue",
-    "Diagnosis",
+    "Clue and diagnosis",
     "Treatment"
    ],
    [
     [
      "Contact dermatitis",
-     "Itch or burning after a new product; sharply bordered redness",
-     "History of exposure; patch testing if allergy is suspected",
+     "Itch or burning after a new product, with sharply bordered redness; history, and patch testing if allergy is suspected",
      "Remove the trigger; bland emollients; short course of topical steroid"
     ],
     [
      "Vulvodynia",
-     "Burning pain on touch or penetration; skin looks normal",
-     "Cotton-swab test; exclude infection and dermatoses",
+     "Burning pain on touch or penetration with normal skin; cotton-swab test after infection and dermatoses are excluded",
      "Pelvic floor physical therapy, neuropathic pain agents, cognitive behavioral therapy"
     ],
     [
      "Atrophic vaginitis",
-     "Dry, pale, thin mucosa; lost rugae; pH above 4.5",
-     "Exam; rule out infection",
+     "Dry, pale, thin mucosa, lost rugae and pH above 4.5; exam to rule out infection",
      "Vaginal estrogen and moisturizers"
     ]
    ]
@@ -305,7 +309,7 @@
   ],
   [
    "p",
-   "Primary vaginal squamous carcinoma is rare and HPV-related, so most squamous carcinoma found in the vagina has spread from the cervix; radiation is its main treatment because surgery would sacrifice the bladder or rectum. Young women whose mothers took **diethylstilbestrol (DES)**, a synthetic estrogen once given to prevent miscarriage, can develop **vaginal adenosis**, glandular paramesonephric (Müllerian) epithelium that persists in the upper vagina, and rarely **clear cell adenocarcinoma**, with glycogen-filled clear cells and hobnail nuclei. In girls younger than 5, {{rp12_botry|sarcoma botryoides}}, the botryoid form of embryonal rhabdomyosarcoma, pushes a grape-like, bleeding polypoid mass out of the vagina."
+   "Primary vaginal squamous carcinoma is rare and HPV-related, and most squamous carcinoma found in the vagina has spread from the cervix. Radiation is its main treatment, because surgery would sacrifice the bladder or rectum. Young women whose mothers took **diethylstilbestrol (DES)**, a synthetic estrogen once given to prevent miscarriage, can develop **vaginal adenosis**, glandular paramesonephric (Müllerian) epithelium that persists in the upper vagina, and rarely **clear cell adenocarcinoma**, with glycogen-filled clear cells and hobnail nuclei. In girls younger than 5, {{rp12_botry|sarcoma botryoides}}, the botryoid form of embryonal rhabdomyosarcoma, pushes a grape-like, bleeding polypoid mass out of the vagina."
   ],
   [
    "p",

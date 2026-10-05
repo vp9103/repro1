@@ -1,0 +1,53 @@
+<svg class="dia" viewBox="0 0 900 560" role="img" aria-label="Female pelvis in midline section: the bladder behind the pubic symphysis with the retropubic space between them, the anteverted and anteflexed uterus, the vagina and its posterior fornix, the shallow vesicouterine pouch and the deep rectouterine pouch, the rectum on the sacrum, the levator ani sling and the diagonal conjugate">
+<text class="ttl" x="14" y="24" font-size="17">Female pelvis in midline section: pouches, fornix and floor</text>
+<path d="M626 140 C 680 215, 684 330, 640 450" fill="none" stroke="var(--line-strong)" stroke-width="18" stroke-linecap="round"/>
+<line x1="230" y1="160" x2="234" y2="328" stroke="var(--line-strong)" stroke-width="3"/>
+<ellipse cx="246" cy="368" rx="13" ry="36" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="2"/>
+<path d="M259 334 Q 266 364 259 402 L 270 402 Q 278 364 272 330 Z" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1"/>
+<ellipse cx="318" cy="352" rx="42" ry="32" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<path d="M590 150 C 612 230, 602 320, 556 392 L 522 455 L 542 510" fill="none" stroke="var(--a2)" stroke-width="32" stroke-linejoin="round"/>
+<path d="M590 150 C 612 230, 602 320, 556 392 L 522 455 L 542 510" fill="none" stroke="var(--a2-soft)" stroke-width="28" stroke-linejoin="round"/>
+<polygon points="438,344 478,350 412,480 382,472" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<ellipse cx="402" cy="282" rx="62" ry="28" transform="rotate(45 402 282)" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="2"/>
+<ellipse cx="452" cy="334" rx="15" ry="12" transform="rotate(45 452 334)" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="2"/>
+<ellipse cx="472" cy="494" rx="20" ry="12" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<path d="M262 404 Q 420 486, 548 470" fill="none" stroke="var(--warn)" stroke-width="4" stroke-dasharray="7 5"/>
+<ellipse cx="558" cy="470" rx="11" ry="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="2"/>
+<path d="M569 468 Q 605 462, 640 446" fill="none" stroke="var(--warn)" stroke-width="6" stroke-linecap="round"/>
+<path d="M234 300 C 262 312, 290 320, 318 320 C 336 320, 346 324, 356 332 Q 372 346, 390 332 L 404 322 L 382 302 L 357 265 Q 346 238, 366 232 Q 380 228, 390 240 L 447 299 Q 462 318, 478 346 Q 494 392, 518 392 Q 544 390, 562 350 Q 576 310, 580 270 L 584 200" fill="none" stroke="var(--a1)" stroke-width="2.5"/>
+<line x1="626" y1="146" x2="252" y2="403" stroke="var(--a2)" stroke-width="2" stroke-dasharray="8 5"/>
+<line x1="400" y1="474" x2="483" y2="345" stroke="var(--crit)" stroke-width="2.5"/>
+<polygon points="486,340 484.8,351.1 476.4,345.7" fill="var(--crit)"/>
+<text x="306" y="338" font-size="14" text-anchor="middle">Bladder</text>
+<text x="392" y="274" font-size="14" text-anchor="middle">Uterus</text>
+<text class="a2" x="420" y="186" font-size="14">Diagonal conjugate</text>
+<text x="522" y="240" font-size="14">Rectum</text>
+<text x="372" y="470" font-size="14" text-anchor="end">Vagina</text>
+<text x="472" y="540" font-size="14" text-anchor="middle">Perineal body</text>
+<text x="14" y="204" font-size="14">Anteverted and</text>
+<text x="14" y="222" font-size="14">anteflexed uterus</text>
+<line x1="150" y1="214" x2="352" y2="242" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="14" y="252" font-size="14">Vesicouterine pouch</text>
+<line x1="166" y1="248" x2="370" y2="342" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="14" y="316" font-size="14">Retropubic space</text>
+<line x1="146" y1="312" x2="262" y2="352" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="14" y="378" font-size="14">Pubic symphysis</text>
+<line x1="136" y1="374" x2="231" y2="370" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="14" y="430" font-size="14">Cystocele: bladder bulges</text>
+<text x="14" y="448" font-size="14">into the anterior vaginal wall</text>
+<line x1="252" y1="440" x2="402" y2="418" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="14" y="498" font-size="14">Rectocele: rectum bulges</text>
+<text x="14" y="516" font-size="14">into the posterior vaginal wall</text>
+<line x1="256" y1="508" x2="446" y2="440" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="650" y="132" font-size="14">Sacral promontory</text>
+<text x="700" y="304" font-size="14">Sacrum</text>
+<text class="b" x="700" y="364" font-size="14">Rectouterine pouch</text>
+<text x="700" y="382" font-size="14">(Douglas): lowest point</text>
+<line x1="696" y1="370" x2="522" y2="378" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="cr" x="700" y="422" font-size="14">Culdocentesis needle</text>
+<text x="700" y="440" font-size="14">via posterior fornix</text>
+<line x1="696" y1="428" x2="454" y2="392" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="b" x="700" y="478" font-size="14">Levator ani:</text>
+<text x="700" y="496" font-size="14">puborectalis sling</text>
+<line x1="696" y1="484" x2="571" y2="472" stroke="var(--ink-3)" stroke-width="1"/>
+</svg>
