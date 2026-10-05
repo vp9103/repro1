@@ -1,4 +1,4 @@
-<svg class="dia" viewBox="0 0 900 650" role="img" aria-label="Male pelvis in midline section: the bladder with its internal urethral sphincter at the neck, the prostate around the prostatic urethra with the seminal colliculus where the ejaculatory duct opens, the ductus deferens crossing over the ureter to join the seminal vesicle, the rectovesical pouch and Denonvilliers fascia in front of the rectum, a finger on a digital rectal exam, and three cards on the sources of semen, emission and retrograde ejaculation">
+<svg class="dia" viewBox="0 0 900 650" role="img" aria-label="Male pelvis in midline section: the bladder with its internal urethral sphincter at the neck, the prostate around the prostatic urethra where the ejaculatory duct opens, the ductus deferens crossing over the ureter to join the seminal vesicle, the rectovesical pouch in front of the rectum, a finger on a digital rectal exam, and three cards on the sources of semen, emission and retrograde ejaculation">
 <text class="ttl" x="14" y="24" font-size="17">Male pelvis in midline section: semen path, bladder neck and rectal exam</text>
 <rect x="236" y="130" width="14" height="190" rx="7" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="2"/>
 <path d="M500 70 C 516 160, 506 250, 466 322 L 452 392 L 462 462" fill="none" stroke="var(--a2)" stroke-width="36" stroke-linejoin="round"/>
@@ -18,7 +18,6 @@
 <rect x="322" y="368" width="28" height="22" rx="5" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
 <ellipse cx="322" cy="414" rx="34" ry="15" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
 <path d="M336 394 C 336 408, 318 410, 296 414 C 282 417, 274 428, 268 442" fill="none" stroke="var(--warn)" stroke-width="4"/>
-<path d="M444 296 L 444 354" fill="none" stroke="var(--crit)" stroke-width="3"/>
 <path d="M468 462 L 462 396 L 450 340" fill="none" stroke="var(--crit)" stroke-width="3.5" stroke-linecap="round"/>
 <polygon points="446,332 458,338 448,346" fill="var(--crit)"/>
 <text x="330" y="222" font-size="14" text-anchor="middle">Bladder</text>
@@ -52,11 +51,9 @@
 <text x="560" y="248" font-size="14">Ampulla of the ductus</text>
 <text x="560" y="266" font-size="14">and seminal vesicle</text>
 <line x1="556" y1="256" x2="442" y2="250" stroke="var(--ink-3)" stroke-width="1"/>
-<text class="a1" x="560" y="316" font-size="14">Ejaculatory duct opens on</text>
-<text class="a1" x="560" y="334" font-size="14">the seminal colliculus</text>
+<text class="a1" x="560" y="316" font-size="14">Ejaculatory duct opens into</text>
+<text class="a1" x="560" y="334" font-size="14">the prostatic urethra</text>
 <line x1="556" y1="324" x2="348" y2="304" stroke="var(--ink-3)" stroke-width="1"/>
-<text class="b" x="560" y="388" font-size="14">Denonvilliers fascia</text>
-<line x1="556" y1="384" x2="446" y2="330" stroke="var(--ink-3)" stroke-width="1"/>
 <text x="560" y="412" font-size="14">Pelvic floor</text>
 <line x1="556" y1="408" x2="430" y2="364" stroke="var(--ink-3)" stroke-width="1"/>
 <text x="560" y="446" font-size="14">Rectum</text>

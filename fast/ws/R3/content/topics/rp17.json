@@ -92,7 +92,7 @@
   ],
   [
    "p",
-   "Viruses are **obligate intracellular** parasites. A virus carries its genome and a few enzymes but has no ribosomes or energy supply, so it borrows the host cell's machinery. The STI viruses persist in different ways. HIV is a retrovirus: its {{rp17rt|reverse transcriptase}} copies its RNA into DNA, and **integrase** inserts that DNA into a host chromosome as a {{rp17prov|provirus}}. Resting CD4 cells that carry the provirus form a latent reservoir that no drug clears. Herpes simplex virus (HSV) is a DNA virus with two phases. In epithelial cells it replicates actively, and the cells burst and release virus. In sensory neurons it enters **latency**, and its DNA sits as a circular episome. HPV also keeps an episome, in basal keratinocytes, and makes new virus only as those cells mature. Molluscum is a poxvirus that replicates in the cytoplasm of keratinocytes."
+   "Viruses are **obligate intracellular** parasites. A virus carries its genome and a few enzymes but has no ribosomes or energy supply, so it borrows the host cell's machinery. The STI viruses persist in different ways. HIV is a retrovirus: its {{rp17rt|reverse transcriptase}} copies its RNA into DNA, and **integrase** inserts that DNA into a host chromosome as a {{rp17prov|provirus}}. Resting CD4 cells that carry the provirus form a latent reservoir that no drug clears. Herpes simplex virus (HSV) is an enveloped, linear double-stranded DNA virus that, like other herpesviruses, takes its envelope from the nuclear membrane rather than the cell membrane. It has two phases. In epithelial cells it replicates actively, and the cells burst and release virus. In sensory neurons it enters **latency**, and its DNA sits as a circular episome. HPV also keeps an episome, in basal keratinocytes, and makes new virus only as those cells mature. Molluscum is a poxvirus that replicates in the cytoplasm of keratinocytes."
   ],
   [
    "p",
@@ -104,7 +104,7 @@
   ],
   [
    "p",
-   "HIV has two copies of positive-strand RNA inside a cone-shaped **p24** capsid, wrapped in an envelope. Its three structural genes are gag (capsid proteins), pol (reverse transcriptase, integrase and protease) and env (the envelope proteins). Env makes **gp120**, which binds CD4 and then a coreceptor, and gp41, which fuses the envelope with the cell membrane. Early in infection the coreceptor is CCR5, on macrophages and memory T cells. Strains that use CXCR4 on T cells emerge later and predict faster decline. A person who is homozygous for the CCR5 delta-32 deletion lacks the coreceptor and resists CCR5-using virus, and heterozygotes progress more slowly. Reverse transcriptase does not proofread, so every cycle creates mutants. Mutations in env let the virus outrun antibodies, and mutations in pol select drug resistance."
+   "HIV has two copies of positive-strand RNA inside a cone-shaped **p24** capsid, wrapped in an envelope. Its three structural genes are gag (the p24 capsid and p17 matrix proteins), pol (reverse transcriptase, integrase and protease) and env. Env makes a gp160 precursor that a host protease cuts into **gp120**, which binds CD4 and then a coreceptor, and gp41, which fuses the envelope with the cell membrane. Early in infection the coreceptor is CCR5, on macrophages and memory T cells. Strains that use CXCR4 on T cells emerge later and predict faster decline. A person who is homozygous for the CCR5 delta-32 deletion lacks the coreceptor and resists CCR5-using virus, and heterozygotes progress more slowly. Reverse transcriptase does not proofread, so every cycle creates mutants. Mutations in env let the virus outrun antibodies, and mutations in pol select drug resistance."
   ],
   [
    "f",
@@ -112,7 +112,7 @@
   ],
   [
    "p",
-   "Antiretroviral therapy (ART) is offered to everyone with HIV, whatever the CD4 count. It targets steps the host cell does not need. It always combines drugs, usually two nucleoside reverse transcriptase inhibitors (NRTIs) plus an integrase inhibitor. A single drug would quickly select a resistant mutant. Host kinases activate NRTIs such as tenofovir, emtricitabine, abacavir and zidovudine. Their triphosphates lack a 3' hydroxyl, so they cause **chain termination** of the growing DNA. Tenofovir is already a nucleotide. Non-nucleoside inhibitors (NNRTIs) such as efavirenz bind reverse transcriptase at a separate, **allosteric** site and need no activation. Integrase inhibitors, the -tegravir drugs, block insertion of the provirus. Protease inhibitors, the -navir drugs, block cleavage of the gag-pol **polyprotein**, so virions bud but stay immature and noninfectious. Maraviroc blocks CCR5 and enfuvirtide blocks gp41, but both are used less often."
+   "Antiretroviral therapy (ART) is offered to everyone with HIV, whatever the CD4 count. It targets viral enzymes and proteins that human cells lack, so uninfected cells are largely spared. It always combines drugs, usually two nucleoside reverse transcriptase inhibitors (NRTIs) plus an integrase inhibitor. A single drug would quickly select a resistant mutant. Host kinases activate NRTIs such as tenofovir, emtricitabine, abacavir and zidovudine. Their triphosphates lack a 3' hydroxyl, so they cause **chain termination** of the growing DNA. Tenofovir is already a nucleotide. Non-nucleoside inhibitors (NNRTIs) such as efavirenz bind reverse transcriptase at a separate, **allosteric** site and need no activation. Integrase inhibitors, the -tegravir drugs, block insertion of the provirus. Protease inhibitors, the -navir drugs, block cleavage of the gag-pol **polyprotein**, so virions bud but stay immature and noninfectious. Maraviroc blocks CCR5 and enfuvirtide blocks gp41, but both are used less often."
   ],
   [
    "t",
@@ -155,7 +155,7 @@
     [
      "Maraviroc; enfuvirtide",
      "Block CCR5; block gp41 fusion",
-     "Maraviroc needs a tropism test"
+     "Maraviroc needs a tropism test; enfuvirtide causes injection-site reactions"
     ]
    ]
   ],
@@ -207,7 +207,7 @@
   ],
   [
    "p",
-   "Perinatal prevention follows the same logic. The mother takes ART during pregnancy. If her viral load is high near delivery, she receives intravenous **zidovudine** in labor and a scheduled cesarean delivery at about 38 weeks. The newborn takes zidovudine for several weeks. In the United States, mothers with HIV are advised not to breastfeed, because the virus passes in breast milk."
+   "Perinatal prevention follows the same logic. The mother takes ART during pregnancy. If her viral load is high near delivery, she receives intravenous **zidovudine** in labor and a scheduled cesarean delivery at about 38 weeks. The newborn takes zidovudine for several weeks. In the United States, formula feeding is still recommended because the virus passes in breast milk. As of 2025, however, federal guidelines support a mother on ART with a sustained undetectable viral load who chooses to breastfeed, after shared decision-making."
   ],
   [
    "call",
@@ -233,7 +233,7 @@
   ],
   [
    "p",
-   "Acyclovir is a guanosine analog that stays inactive until viral {{rp17tk|thymidine kinase}} adds its first phosphate. Host kinases then make the triphosphate, which blocks viral DNA polymerase and ends the DNA chain. Only infected cells contain the viral kinase, so uninfected cells are spared. Valacyclovir is a prodrug that is absorbed better, and famciclovir works the same way. High-dose IV acyclovir can form **crystals** in the kidney tubules, so patients are hydrated. Resistance, mostly in patients with AIDS, comes from a thymidine kinase mutation. **Foscarnet**, a pyrophosphate analog that binds DNA polymerase directly, treats resistant virus but can damage the kidneys. Pregnant women with genital herpes take acyclovir from 36 weeks to lower the chance of lesions at delivery."
+   "Acyclovir is a guanosine analog that stays inactive until viral {{rp17tk|thymidine kinase}} adds its first phosphate. Host kinases then make the triphosphate, which blocks viral DNA polymerase and ends the DNA chain. Only infected cells contain the viral kinase, so uninfected cells are spared. Valacyclovir is a prodrug that is absorbed better, and famciclovir works the same way. High-dose IV acyclovir can form **crystals** in the kidney tubules, so patients are hydrated. Resistance, mostly in patients with AIDS, comes from a thymidine kinase mutation. **Foscarnet**, a pyrophosphate analog that binds DNA polymerase directly, treats resistant virus but damages the kidneys and lowers calcium and magnesium, which can cause seizures. Pregnant women with genital herpes take acyclovir from 36 weeks to lower the chance of lesions at delivery."
   ],
   [
    "why",

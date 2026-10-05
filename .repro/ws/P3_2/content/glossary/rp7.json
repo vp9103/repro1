@@ -2,37 +2,37 @@
  {
   "k": "rp7_kiss",
   "t": "Kisspeptin",
-  "d": "A hypothalamic neuropeptide that stimulates GnRH neurons through its receptor and helps restart pulsatile GnRH at puberty; gain-of-function mutations cause central precocious puberty and loss-of-function mutations block puberty.",
+  "d": "A hypothalamic peptide that stimulates GnRH neurons and helps restart pulsatile GnRH at puberty. Activating mutations of its receptor cause central precocious puberty; inactivating mutations block puberty.",
   "alt": []
  },
  {
   "k": "rp7_adrenarche",
   "t": "Adrenarche",
-  "d": "Maturation of the adrenal zona reticularis in mid-childhood, which raises DHEA and DHEA-S under ACTH and causes pubic and axillary hair, body odor and acne independent of the gonadal axis.",
+  "d": "Maturation of the adrenal zona reticularis in mid-childhood. Under ACTH it makes DHEA and DHEA-S, which cause pubic and axillary hair, body odor and acne without any gonadal activity.",
   "alt": []
  },
  {
   "k": "rp7_boneage",
   "t": "Bone age",
-  "d": "The skeletal maturity read from an X-ray of the left hand and wrist; sex steroids advance it, so it runs ahead in precocious puberty and behind in constitutional delay and hypogonadism.",
+  "d": "Skeletal maturity read from an X-ray of the left hand and wrist. Sex steroids advance it, so it runs ahead in precocious puberty and behind in constitutional delay and hypogonadism.",
   "alt": []
  },
  {
   "k": "rp7_hamartoma",
   "t": "Hypothalamic hamartoma",
-  "d": "A benign congenital mass of hypothalamic tissue that can contain its own GnRH neurons; it is the classic brain lesion behind central precocious puberty in young boys and can cause laughing seizures.",
+  "d": "A benign mass of hypothalamic tissue that contains its own GnRH neurons. It is the classic brain lesion behind central precocious puberty in young boys and can cause laughing (gelastic) seizures.",
   "alt": []
  },
  {
   "k": "rp7_mas",
   "t": "McCune-Albright syndrome",
-  "d": "A postzygotic activating GNAS mutation that keeps Gs signaling on in scattered cells, causing peripheral precocious puberty from autonomous ovarian cysts, café-au-lait macules and polyostotic fibrous dysplasia.",
+  "d": "A postzygotic activating GNAS mutation that keeps Gs signaling on in scattered cells. It causes peripheral precocious puberty from autonomous ovarian cysts, café-au-lait macules and polyostotic fibrous dysplasia.",
   "alt": []
  },
  {
   "k": "rp7_cdgp",
   "t": "Constitutional delay of growth and puberty",
-  "d": "The most common cause of late puberty: a healthy, short child with a delayed bone age and often a late-maturing parent, whose puberty eventually starts on its own.",
+  "d": "The most common cause of late puberty: a healthy, short child with a delayed bone age, often with a late-maturing parent. Puberty eventually starts on its own.",
   "alt": [
    "constitutional delay"
   ]
@@ -40,7 +40,7 @@
  {
   "k": "rp7_testotox",
   "t": "Testotoxicosis",
-  "d": "Familial male-limited precocious puberty from an activating mutation of the LH receptor: Leydig cells secrete testosterone without LH, so a young boy virilizes with a low LH, modestly enlarged testes and an advanced bone age.",
+  "d": "Familial male-limited precocious puberty from an activating LH receptor mutation. Leydig cells make testosterone without LH, so a young boy virilizes with a low LH and modestly enlarged testes.",
   "alt": [
    "familial testotoxicosis"
   ]

@@ -2,7 +2,7 @@
  {
   "k": "rp6_ais",
   "t": "Androgen insensitivity syndrome",
-  "d": "An X-linked androgen receptor defect in a 46,XY person with testes; AMH removes the uterus, androgen cannot act, and aromatized testosterone grows breasts, so the phenotype is female with scant body hair.",
+  "d": "An X-linked androgen receptor defect in a 46,XY person with testes. AMH removes the uterus, androgen cannot act, and aromatized testosterone grows breasts, so the body is female with scant body hair.",
   "alt": [
    "androgen insensitivity",
    "CAIS"
@@ -11,7 +11,7 @@
  {
   "k": "rp6_5ard",
   "t": "5-alpha-reductase deficiency",
-  "d": "An autosomal recessive lack of the enzyme that turns testosterone into DHT; a 46,XY newborn has ambiguous genitalia with normal testosterone and low DHT, then virilizes at puberty.",
+  "d": "An autosomal recessive lack of the enzyme that turns testosterone into DHT. A 46,XY newborn has ambiguous genitalia with normal testosterone and low DHT, then virilizes at puberty.",
   "alt": [
    "5α-reductase deficiency"
   ]
@@ -19,7 +19,7 @@
  {
   "k": "rp6_streak",
   "t": "Streak gonad",
-  "d": "A thin band of fibrous stroma left where a gonad failed to develop; it makes no hormones, and when it carries Y material it can give rise to a gonadoblastoma.",
+  "d": "A thin band of fibrous tissue left where a gonad failed to develop. It makes no hormones, and when it carries Y material it can give rise to a gonadoblastoma.",
   "alt": [
    "streak gonads",
    "streak ovaries"
@@ -28,13 +28,13 @@
  {
   "k": "rp6_barr",
   "t": "Barr body",
-  "d": "The condensed, inactivated X chromosome seen at the nuclear edge of cells that carry more than one X; its presence in a man points to Klinefelter syndrome, and it is absent in 45,X cells.",
+  "d": "The condensed, inactivated X chromosome seen at the edge of the nucleus in cells with more than one X. Its presence in a man points to Klinefelter syndrome, and it is absent in 45,X cells.",
   "alt": []
  },
  {
   "k": "rp6_hygroma",
   "t": "Cystic hygroma",
-  "d": "A fluid-filled lymphatic swelling behind the fetal neck caused by failed drainage of the jugular lymph sacs; it is a classic prenatal ultrasound sign of Turner syndrome and leaves a webbed neck.",
+  "d": "A fluid-filled lymphatic swelling behind the fetal neck, caused by failed drainage of the jugular lymph sacs. It is a classic prenatal ultrasound sign of Turner syndrome and leaves a webbed neck.",
   "alt": [
    "cystic hygromas"
   ]
@@ -42,7 +42,7 @@
  {
   "k": "rp6_azoo",
   "t": "Azoospermia",
-  "d": "Absence of sperm in the ejaculate; it is nonobstructive when the testis fails to make sperm, as in Klinefelter syndrome and 46,XX testicular DSD, and obstructive when the ducts are blocked.",
+  "d": "Absence of sperm in the ejaculate. It is nonobstructive when the testis fails to make sperm, as in Klinefelter syndrome and 46,XX testicular DSD, and obstructive when the ducts are blocked.",
   "alt": []
  }
 ]

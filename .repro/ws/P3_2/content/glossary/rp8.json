@@ -2,7 +2,7 @@
  {
   "k": "rp8_prim",
   "t": "Primordial follicle",
-  "d": "The resting follicle: a primary oocyte arrested in prophase I inside one layer of flat pregranulosa cells. The whole lifetime supply forms before birth and shrinks by atresia.",
+  "d": "The resting follicle: a primary oocyte arrested in prophase I inside one layer of flat granulosa cells. The whole lifetime supply forms before birth and shrinks by atresia.",
   "alt": [
    "primordial follicles"
   ]
@@ -10,7 +10,7 @@
  {
   "k": "rp8_theca",
   "t": "Theca interna",
-  "d": "The vascular layer of cells outside a follicle's basement membrane. Under LH it converts cholesterol into androstenedione, the androgen that granulosa cells turn into estradiol.",
+  "d": "The vascular layer of cells outside a follicle's basement membrane. Under LH, it turns cholesterol into androstenedione, the androgen that granulosa cells convert to estradiol.",
   "alt": [
    "theca cells",
    "theca cell"
@@ -19,7 +19,7 @@
  {
   "k": "rp8_granulosa",
   "t": "Granulosa cells",
-  "d": "The avascular cells lining the follicle inside its basement membrane. FSH induces their aromatase, which converts theca androgens into estradiol; they also secrete inhibin B and AMH.",
+  "d": "The avascular cells lining the follicle inside its basement membrane. FSH induces their aromatase, which converts theca androgens to estradiol. They also secrete inhibin B and AMH.",
   "alt": [
    "granulosa cell"
   ]
@@ -27,7 +27,7 @@
  {
   "k": "rp8_lhsurge",
   "t": "LH surge",
-  "d": "The mid-cycle burst of LH released when sustained high estradiol switches the pituitary to positive feedback. It restarts meiosis I and causes ovulation about 36 hours after it begins.",
+  "d": "The mid-cycle burst of LH released when sustained high estradiol switches the pituitary to positive feedback. It restarts meiosis I and triggers ovulation about 36 hours after it begins.",
   "alt": []
  },
  {
@@ -47,7 +47,7 @@
  {
   "k": "rp8_lutein",
   "t": "Luteinization",
-  "d": "The change of granulosa and theca cells into progesterone-secreting luteal cells after the LH surge: they fill with lipid, capillaries invade the granulosa layer, and the follicle becomes the corpus luteum.",
+  "d": "The change of granulosa and theca cells into progesterone-secreting luteal cells after the LH surge. They fill with lipid, capillaries invade the granulosa layer, and the follicle becomes the corpus luteum.",
   "alt": [
    "luteinize",
    "luteinized"
@@ -56,7 +56,7 @@
  {
   "k": "rp8_decid",
   "t": "Decidualization",
-  "d": "Progesterone-driven change of endometrial stromal cells into large, glycogen-rich decidual cells, which begins in the late secretory phase and is sustained in pregnancy by hCG rescue of the corpus luteum.",
+  "d": "The progesterone-driven change of endometrial stromal cells into large, glycogen-rich decidual cells. It begins in the late secretory phase and continues in pregnancy.",
   "alt": [
    "decidualized"
   ]
@@ -64,7 +64,7 @@
  {
   "k": "rp8_desmolase",
   "t": "Desmolase",
-  "d": "The cholesterol side-chain cleavage enzyme, driven by LH in theca cells, that converts cholesterol to pregnenolone, the first and rate-limiting step of every steroid hormone, including androstenedione and estradiol.",
+  "d": "The cholesterol side-chain cleavage enzyme, driven by LH in theca cells. It turns cholesterol into pregnenolone, the first and rate-limiting step of all steroid hormone synthesis.",
   "alt": [
    "cholesterol desmolase"
   ]
