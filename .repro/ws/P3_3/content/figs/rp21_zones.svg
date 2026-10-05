@@ -1,0 +1,41 @@
+<svg class="dia" viewBox="0 0 900 548" role="img" aria-label="Cross-section of the prostate: the transition zone around the urethra where benign hyperplasia grows, the posterior peripheral zone where most cancers arise and the rectal exam reaches, the central zone and the anterior fibromuscular stroma">
+<text class="ttl" x="14" y="24" font-size="17">Prostate zones: BPH grows inside, cancer arises outside</text>
+<ellipse cx="215" cy="190" rx="180" ry="120" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<path d="M 56 146 C 100 62, 330 62, 374 146 C 330 108, 100 108, 56 146 Z" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<path d="M 160 224 Q 215 208 270 224 L 246 292 Q 215 300 184 292 Z" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<ellipse cx="215" cy="180" rx="80" ry="50" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="2"/>
+<circle cx="215" cy="172" r="11" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="2"/>
+<circle cx="200" cy="248" r="5" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<circle cx="230" cy="248" r="5" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="95" y="330" width="240" height="56" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="215" y="364" font-size="15" text-anchor="middle">Rectum</text>
+<line x1="300" y1="100" x2="440" y2="100" stroke="var(--ink-3)" stroke-width="1.5"/>
+<circle cx="300" cy="100" r="4" fill="var(--ink)"/>
+<line x1="278" y1="160" x2="440" y2="168" stroke="var(--ink-3)" stroke-width="1.5"/>
+<circle cx="278" cy="160" r="4" fill="var(--ink)"/>
+<line x1="232" y1="270" x2="440" y2="252" stroke="var(--ink-3)" stroke-width="1.5"/>
+<circle cx="232" cy="270" r="4" fill="var(--ink)"/>
+<line x1="372" y1="236" x2="440" y2="332" stroke="var(--ink-3)" stroke-width="1.5"/>
+<circle cx="372" cy="236" r="4" fill="var(--ink)"/>
+<text class="b" x="450" y="104" font-size="15">Anterior fibromuscular stroma</text>
+<text x="450" y="126" font-size="14">Muscle and fibrous tissue, no glands</text>
+<text class="a1" x="450" y="172" font-size="15">Transition zone</text>
+<text x="450" y="194" font-size="14">BPH: nodules squeeze the urethra early</text>
+<text class="b" x="450" y="256" font-size="15">Central zone</text>
+<text x="450" y="278" font-size="14">Around the ejaculatory ducts, rarely diseased</text>
+<text class="a2" x="450" y="336" font-size="15">Peripheral zone</text>
+<text x="450" y="358" font-size="14">About 70% of the gland and 70 to 80% of cancers</text>
+<text x="450" y="380" font-size="14">Posterior: a hard nodule is felt on rectal exam</text>
+<rect x="14" y="398" width="426" height="140" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="30" y="424" font-size="15">Benign prostatic hyperplasia</text>
+<text x="30" y="452" font-size="15">Glands and stroma both multiply</text>
+<text x="30" y="476" font-size="15">DHT-driven; the basal cell layer is kept</text>
+<text x="30" y="500" font-size="15">Weak stream, nocturia, retention</text>
+<text x="30" y="524" font-size="15">Not premalignant</text>
+<rect x="460" y="398" width="426" height="140" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="476" y="424" font-size="15">Prostate adenocarcinoma</text>
+<text x="476" y="452" font-size="15">Small crowded glands, no basal cell layer</text>
+<text x="476" y="476" font-size="15">Prominent nucleoli, perineural invasion</text>
+<text x="476" y="500" font-size="15">Silent early; hard nodule on rectal exam</text>
+<text x="476" y="524" font-size="15">Osteoblastic bone metastases, high ALP</text>
+</svg>

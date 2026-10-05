@@ -1,0 +1,40 @@
+<svg class="dia" viewBox="0 0 900 500" role="img" aria-label="Timeline of pregnancy hormones across 40 weeks: hCG from the syncytiotrophoblast doubles about every 48 hours, peaks near 10 weeks and falls to a low plateau; progesterone comes from the corpus luteum until the luteal-placental shift at 7 to 10 weeks and from the placenta afterward; human placental lactogen rises with placental mass and drives insulin resistance">
+<text class="ttl" x="14" y="24" font-size="17">hCG rescues the corpus luteum until the placenta takes over</text>
+<rect x="14" y="38" width="872" height="218" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="64" font-size="15">hCG from the syncytiotrophoblast</text>
+<line x1="170" y1="230" x2="850" y2="230" stroke="var(--ink-3)" stroke-width="1.5"/>
+<line x1="170" y1="230" x2="170" y2="236" stroke="var(--ink-3)" stroke-width="1.5"/>
+<line x1="340" y1="230" x2="340" y2="236" stroke="var(--ink-3)" stroke-width="1.5"/>
+<line x1="510" y1="230" x2="510" y2="236" stroke="var(--ink-3)" stroke-width="1.5"/>
+<line x1="680" y1="230" x2="680" y2="236" stroke="var(--ink-3)" stroke-width="1.5"/>
+<line x1="850" y1="230" x2="850" y2="236" stroke="var(--ink-3)" stroke-width="1.5"/>
+<path d="M221 228 C 266 224, 305 80, 340 80 C 375 80, 405 196, 480 204 L 850 208" fill="none" stroke="var(--a1)" stroke-width="3"/>
+<line x1="346" y1="82" x2="434" y2="97" stroke="var(--ink-3)" stroke-width="1.2"/>
+<text x="440" y="104" font-size="15">Peak near 10 weeks</text>
+<text x="266" y="150" font-size="14" text-anchor="end">Doubles about every 48 hours</text>
+<text x="560" y="190" font-size="14">Falls to a low plateau</text>
+<text x="170" y="250" font-size="13" text-anchor="middle">0</text>
+<text x="340" y="250" font-size="13" text-anchor="middle">10</text>
+<text x="510" y="250" font-size="13" text-anchor="middle">20</text>
+<text x="680" y="250" font-size="13" text-anchor="middle">30</text>
+<text x="850" y="250" font-size="13" text-anchor="end">40 weeks</text>
+<rect x="14" y="266" width="872" height="100" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="306" font-size="15">Progesterone</text>
+<text x="28" y="328" font-size="14">comes from</text>
+<rect x="170" y="280" width="119" height="72" rx="6" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="177" y="310" font-size="14">Corpus luteum</text>
+<text x="177" y="332" font-size="14">rescued by hCG</text>
+<rect x="289" y="280" width="51" height="72" rx="6" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text x="314.5" y="321" font-size="13" text-anchor="middle">Shift</text>
+<rect x="340" y="280" width="510" height="72" rx="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text x="352" y="310" font-size="14">Placenta makes the progesterone from about 10 weeks to term</text>
+<text x="352" y="332" font-size="14">Luteal-placental shift at 7 to 10 weeks</text>
+<rect x="14" y="376" width="872" height="110" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="410" font-size="15">hPL</text>
+<text x="28" y="434" font-size="14">placental</text>
+<text x="28" y="456" font-size="14">lactogen</text>
+<polygon points="221,476 850,476 850,392" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text x="180" y="410" font-size="14">Lipolysis spares glucose for the fetus</text>
+<text x="640" y="440" font-size="14">Drives insulin resistance</text>
+<text x="600" y="466" font-size="14">Rises with placental mass</text>
+</svg>

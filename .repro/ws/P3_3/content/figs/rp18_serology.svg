@@ -1,0 +1,51 @@
+<svg class="dia" viewBox="0 0 900 480" role="img" aria-label="How to read maternal IgG and IgM results: both negative means susceptible, IgG alone means immune, IgM alone means very early infection or a false positive so IgG is repeated for seroconversion, and both positive needs an IgG avidity test to date the infection">
+<text class="ttl" x="14" y="26" font-size="17">Reading maternal serology: IgG, IgM and avidity</text>
+<text class="b" x="30" y="66" font-size="14">IgG</text>
+<text class="b" x="110" y="66" font-size="14">IgM</text>
+<text class="b" x="200" y="66" font-size="14">What it means</text>
+<text class="b" x="520" y="66" font-size="14">Next step</text>
+<rect x="14" y="76" width="872" height="68" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<circle cx="56" cy="110" r="18" fill="var(--surface-2)" stroke="var(--ink-3)" stroke-width="1.6"/>
+<text class="b" x="56" y="117" font-size="20" text-anchor="middle">&minus;</text>
+<circle cx="136" cy="110" r="18" fill="var(--surface-2)" stroke="var(--ink-3)" stroke-width="1.6"/>
+<text class="b" x="136" y="117" font-size="20" text-anchor="middle">&minus;</text>
+<text x="200" y="104" font-size="14">Never infected or vaccinated:</text>
+<text class="b" x="200" y="126" font-size="14">susceptible</text>
+<text x="520" y="104" font-size="14">Avoid exposure; give live vaccines</text>
+<text x="520" y="126" font-size="14">(rubella, varicella) after delivery</text>
+<rect x="14" y="152" width="872" height="68" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<circle cx="56" cy="186" r="18" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.6"/>
+<text class="b" x="56" y="193" font-size="20" text-anchor="middle">+</text>
+<circle cx="136" cy="186" r="18" fill="var(--surface-2)" stroke="var(--ink-3)" stroke-width="1.6"/>
+<text class="b" x="136" y="193" font-size="20" text-anchor="middle">&minus;</text>
+<text x="200" y="180" font-size="14">Immune from past infection or</text>
+<text class="b" x="200" y="202" font-size="14">vaccine; low risk to the fetus</text>
+<text x="520" y="180" font-size="14">Nothing to do: maternal IgG</text>
+<text x="520" y="202" font-size="14">protects the fetus</text>
+<rect x="14" y="228" width="872" height="68" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.2"/>
+<circle cx="56" cy="262" r="18" fill="var(--surface-2)" stroke="var(--ink-3)" stroke-width="1.6"/>
+<text class="b" x="56" y="269" font-size="20" text-anchor="middle">&minus;</text>
+<circle cx="136" cy="262" r="18" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.6"/>
+<text class="b" x="136" y="269" font-size="20" text-anchor="middle">+</text>
+<text x="200" y="256" font-size="14">Very early infection, or a</text>
+<text class="b" x="200" y="278" font-size="14">false-positive IgM</text>
+<text x="520" y="256" font-size="14">Repeat IgG in 2 to 3 weeks:</text>
+<text class="b" x="520" y="278" font-size="14">turning positive is seroconversion</text>
+<rect x="14" y="304" width="872" height="68" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.2"/>
+<circle cx="56" cy="338" r="18" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.6"/>
+<text class="b" x="56" y="345" font-size="20" text-anchor="middle">+</text>
+<circle cx="136" cy="338" r="18" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.6"/>
+<text class="b" x="136" y="345" font-size="20" text-anchor="middle">+</text>
+<text x="200" y="332" font-size="14">Recent or old infection:</text>
+<text class="b" x="200" y="354" font-size="14">IgM can linger for months</text>
+<text x="520" y="332" font-size="14">Test IgG avidity: low means a recent</text>
+<text class="b" x="520" y="354" font-size="14">primary infection, high means older</text>
+<rect x="14" y="386" width="424" height="80" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="30" y="412" font-size="15">Mother</text>
+<text x="30" y="436" font-size="14">IgG negative, then positive:</text>
+<text x="30" y="456" font-size="14">a new infection in pregnancy</text>
+<rect x="462" y="386" width="424" height="80" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.4"/>
+<text class="b" x="478" y="412" font-size="15">Newborn</text>
+<text x="478" y="436" font-size="14">IgG is borrowed from the mother;</text>
+<text x="478" y="456" font-size="14">IgM or PCR proves fetal infection</text>
+</svg>

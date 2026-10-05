@@ -413,7 +413,7 @@ def term_hit(low: str, term: str) -> bool:
         t2, l2 = (term, low) if sub is None else (term.replace("-", sub), low.replace("-", sub))
         if not t2:
             continue
-        short_tail = sub == "" and "-" in term and len(term.rsplit("-", 1)[1]) <= 3  # 'anti-d' joined is not 'antidote'
+        short_tail = "-" in term and len(term.rsplit("-", 1)[1]) <= 3  # 'anti-d' is not 'antidote' or 'anti-dsDNA'; 'add-on' not 'add one'
         tail = r"(?:e?s)?(?![a-z])" if len(t2) <= 3 or short_tail else ""
         if t2[-1].isdigit():
             tail += r"(?![0-9])(?![.,][0-9])"  # '69' is not found in '69,000', '126' not in '1260'

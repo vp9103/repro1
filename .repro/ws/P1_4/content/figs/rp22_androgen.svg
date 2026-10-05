@@ -1,0 +1,49 @@
+<svg class="dia" viewBox="0 0 900 580" role="img" aria-label="The androgen pathway from cholesterol to testosterone to DHT to the androgen receptor, with ketoconazole blocking synthesis, finasteride blocking 5-alpha-reductase, receptor blockers such as flutamide, bicalutamide and spironolactone, and aromatase making estradiol so that gynecomastia follows">
+<text class="ttl" x="14" y="24" font-size="17">Androgen pathway: where antiandrogens act and why gynecomastia follows</text>
+<rect x="14" y="44" width="340" height="48" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="30" y="74" font-size="15">Cholesterol</text>
+<line x1="184" y1="92" x2="184" y2="103" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="184.0,112.0 178.0,102.0 190.0,102.0" fill="var(--ink-2)"/>
+<rect x="14" y="112" width="340" height="56" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="30" y="136" font-size="15">Androgen synthesis</text>
+<text x="30" y="158" font-size="14">CYP17A1 and other CYP enzymes</text>
+<line x1="184" y1="168" x2="184" y2="179" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="184.0,188.0 178.0,178.0 190.0,178.0" fill="var(--ink-2)"/>
+<rect x="14" y="188" width="340" height="48" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="30" y="218" font-size="15">Testosterone</text>
+<line x1="184" y1="236" x2="184" y2="269" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="184.0,278.0 178.0,268.0 190.0,268.0" fill="var(--ink-2)"/>
+<text x="200" y="262" font-size="14">5-alpha-reductase</text>
+<rect x="14" y="278" width="340" height="48" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="30" y="308" font-size="15">Dihydrotestosterone (DHT)</text>
+<line x1="184" y1="326" x2="184" y2="337" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="184.0,346.0 178.0,336.0 190.0,336.0" fill="var(--ink-2)"/>
+<rect x="14" y="346" width="340" height="56" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="30" y="370" font-size="15">Androgen receptor</text>
+<text x="30" y="392" font-size="14">Target cell: prostate, skin, muscle</text>
+<rect x="380" y="104" width="506" height="72" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="396" y="128" font-size="15">Ketoconazole inhibits steroid synthesis</text>
+<text x="396" y="152" font-size="14">Blocks CYP enzymes in testis and adrenal; lowers cortisol</text>
+<line x1="354" y1="140" x2="380" y2="140" stroke="var(--ink-2)" stroke-width="2.5"/>
+<rect x="380" y="186" width="506" height="80" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="396" y="210" font-size="15">Aromatase turns testosterone into estradiol</text>
+<text x="396" y="234" font-size="14">More estrogen with obesity or cirrhosis; gynecomastia</text>
+<text x="396" y="256" font-size="14">means a high estrogen-to-androgen ratio</text>
+<line x1="354" y1="212" x2="380" y2="212" stroke="var(--ink-2)" stroke-width="2.5"/>
+<rect x="380" y="276" width="506" height="60" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="396" y="300" font-size="15">Finasteride, dutasteride block 5-alpha-reductase</text>
+<text x="396" y="322" font-size="14">Used for BPH and hair loss; libido falls</text>
+<line x1="354" y1="302" x2="380" y2="302" stroke="var(--ink-2)" stroke-width="2.5"/>
+<rect x="380" y="346" width="506" height="100" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="396" y="370" font-size="15">Receptor blockers</text>
+<text x="396" y="394" font-size="14">Flutamide, bicalutamide, enzalutamide, cyproterone</text>
+<text x="396" y="416" font-size="14">Spironolactone also lowers synthesis: gynecomastia</text>
+<text x="396" y="438" font-size="14">Cyproterone is also a progestin</text>
+<line x1="354" y1="374" x2="380" y2="374" stroke="var(--ink-2)" stroke-width="2.5"/>
+<rect x="14" y="464" width="872" height="46" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="30" y="483" font-size="14">GnRH agonists such as leuprolide act higher: continuous dosing desensitizes</text>
+<text x="30" y="503" font-size="14">the pituitary and lowers LH and testosterone</text>
+<rect x="14" y="520" width="872" height="52" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="30" y="543" font-size="14">Drugs that cause gynecomastia: spironolactone, cimetidine, ketoconazole,</text>
+<text x="30" y="563" font-size="14">digoxin, marijuana, antiandrogens and 5-alpha-reductase inhibitors</text>
+</svg>

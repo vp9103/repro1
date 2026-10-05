@@ -1,0 +1,70 @@
+<svg class="dia" viewBox="0 0 900 490" role="img" aria-label="Comparison of placenta previa, placental abruption, placenta accreta spectrum and vasa previa by placental position, pain, uterine tone, source of blood, fetal heart rate, key risk and first management step">
+<text class="ttl" x="14" y="26" font-size="17">Third-trimester bleeding: pain, uterus and whose blood</text>
+<rect x="124" y="40" width="184" height="436" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<rect x="316" y="40" width="184" height="436" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<rect x="508" y="40" width="184" height="436" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<rect x="700" y="40" width="184" height="436" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="134" y="62" font-size="15">Placenta previa</text>
+<text class="b" x="326" y="62" font-size="15">Abruption</text>
+<text class="b" x="518" y="62" font-size="15">Accreta spectrum</text>
+<text class="b" x="710" y="62" font-size="15">Vasa previa</text>
+<ellipse cx="216" cy="150" rx="56" ry="62" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="3"/>
+<rect x="207" y="210" width="18" height="20" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="2"/>
+<path d="M180 189 A 50 56 0 0 0 252 189" fill="none" stroke="var(--a2)" stroke-width="12" stroke-linecap="round"/>
+<line x1="216" y1="232" x2="216" y2="242" stroke="var(--crit)" stroke-width="3"/>
+<ellipse cx="408" cy="150" rx="56" ry="62" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="3"/>
+<rect x="399" y="210" width="18" height="20" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="2"/>
+<path d="M384 99 A 52 58 0 0 1 432 99" fill="none" stroke="var(--crit)" stroke-width="7"/>
+<path d="M374 118 A 44 50 0 0 1 442 118" fill="none" stroke="var(--a2)" stroke-width="12" stroke-linecap="round"/>
+<ellipse cx="600" cy="150" rx="56" ry="62" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="3"/>
+<rect x="591" y="210" width="18" height="20" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="2"/>
+<path d="M591 205 A 50 56 0 0 1 551 140" fill="none" stroke="var(--a2)" stroke-width="12" stroke-linecap="round"/>
+<line x1="578" y1="193" x2="566" y2="214" stroke="var(--a1)" stroke-width="3"/>
+<line x1="564" y1="179" x2="544" y2="193" stroke="var(--a1)" stroke-width="3"/>
+<line x1="557" y1="159" x2="533" y2="163" stroke="var(--a1)" stroke-width="3"/>
+<ellipse cx="792" cy="150" rx="56" ry="62" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="3"/>
+<rect x="783" y="210" width="18" height="20" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="2"/>
+<path d="M809 97 A 50 56 0 0 1 841 160" fill="none" stroke="var(--a2)" stroke-width="12" stroke-linecap="round"/>
+<path d="M834 170 C 826 196, 806 206, 770 200" fill="none" stroke="var(--crit)" stroke-width="2.5"/>
+<path d="M829 164 C 820 190, 800 199, 766 192" fill="none" stroke="var(--crit)" stroke-width="2.5"/>
+<text x="216" y="258" font-size="13.5" text-anchor="middle">Placenta covers the os</text>
+<text x="408" y="258" font-size="13.5" text-anchor="middle">Clot behind placenta</text>
+<text x="600" y="258" font-size="13.5" text-anchor="middle">Villi through the wall</text>
+<text x="792" y="258" font-size="13.5" text-anchor="middle">Fetal vessels over os</text>
+<line x1="14" y1="270" x2="886" y2="270" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="18" y="294" font-size="14">Pain</text>
+<text x="134" y="294" font-size="14">Painless</text>
+<text x="326" y="294" font-size="14">Painful</text>
+<text x="518" y="294" font-size="14">Painless</text>
+<text x="710" y="294" font-size="14">Painless</text>
+<line x1="14" y1="304" x2="886" y2="304" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="18" y="326" font-size="14">Uterus</text>
+<text x="134" y="326" font-size="14">Soft, nontender</text>
+<text x="326" y="326" font-size="14">Rigid, tender</text>
+<text x="518" y="326" font-size="14">Soft until delivery</text>
+<text x="710" y="326" font-size="14">Soft, nontender</text>
+<line x1="14" y1="336" x2="886" y2="336" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="18" y="358" font-size="14">Whose blood</text>
+<text x="134" y="358" font-size="14">Maternal</text>
+<text x="326" y="358" font-size="14">Maternal, can hide</text>
+<text x="518" y="358" font-size="14">Maternal, at delivery</text>
+<text class="cr" x="710" y="358" font-size="14">Fetal</text>
+<line x1="14" y1="368" x2="886" y2="368" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="18" y="390" font-size="14">Fetal heart</text>
+<text x="134" y="390" font-size="14">Usually normal</text>
+<text x="326" y="390" font-size="14">Late decels, distress</text>
+<text x="518" y="390" font-size="14">Usually normal</text>
+<text x="710" y="390" font-size="14">Brady or sinusoidal</text>
+<line x1="14" y1="400" x2="886" y2="400" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="18" y="422" font-size="14">Key risk</text>
+<text x="134" y="422" font-size="14">Prior cesarean</text>
+<text x="326" y="422" font-size="14">Hypertension, cocaine</text>
+<text x="518" y="422" font-size="14">Previa over a scar</text>
+<text x="710" y="422" font-size="14">Velamentous cord</text>
+<line x1="14" y1="432" x2="886" y2="432" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="18" y="454" font-size="14">First move</text>
+<text x="134" y="454" font-size="14">No digital exam</text>
+<text x="326" y="454" font-size="14">Deliver, treat DIC</text>
+<text x="518" y="454" font-size="14">Cesarean hysterectomy</text>
+<text x="710" y="454" font-size="14">Cesarean before labor</text>
+</svg>

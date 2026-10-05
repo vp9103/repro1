@@ -1,0 +1,39 @@
+<svg class="dia" viewBox="0 0 900 480" role="img" aria-label="Early, variable and late fetal heart rate decelerations drawn against the uterine contraction, with the cause and response for each and the reassuring baseline criteria">
+<text class="ttl" x="14" y="26" font-size="17">Decelerations: read the timing against the contraction</text>
+<rect x="14" y="44" width="276" height="350" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<rect x="312" y="44" width="276" height="350" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<rect x="610" y="44" width="276" height="350" rx="10" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="26" y="70" font-size="15">Early deceleration</text>
+<text class="b" x="324" y="70" font-size="15">Variable deceleration</text>
+<text class="b" x="622" y="70" font-size="15">Late deceleration</text>
+<text class="s" x="26" y="114" font-size="13">FHR</text>
+<text class="s" x="26" y="234" font-size="13">UC</text>
+<text class="s" x="324" y="114" font-size="13">FHR</text>
+<text class="s" x="324" y="234" font-size="13">UC</text>
+<text class="s" x="622" y="114" font-size="13">FHR</text>
+<text class="s" x="622" y="234" font-size="13">UC</text>
+<line x1="172" y1="94" x2="172" y2="242" stroke="var(--line-strong)" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="470" y1="94" x2="470" y2="242" stroke="var(--line-strong)" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="768" y1="94" x2="768" y2="242" stroke="var(--line-strong)" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M64 110 L 112 110 C 142 110, 152 140, 172 140 C 192 140, 202 110, 232 110 L 280 110" fill="none" stroke="var(--a1)" stroke-width="2.5"/>
+<path d="M64 230 L 112 230 C 142 230, 152 180, 172 180 C 192 180, 202 230, 232 230 L 280 230" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<path d="M362 110 L 400 110 L 410 150 L 422 150 L 430 110 L 540 110 L 546 136 L 554 136 L 560 110 L 578 110" fill="none" stroke="var(--a1)" stroke-width="2.5"/>
+<path d="M362 230 L 410 230 C 440 230, 450 180, 470 180 C 490 180, 500 230, 530 230 L 578 230" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<path d="M660 110 L 750 110 C 780 110, 790 138, 810 138 C 830 138, 842 110, 866 110 L 876 110" fill="none" stroke="var(--a1)" stroke-width="2.5"/>
+<path d="M660 230 L 708 230 C 738 230, 748 180, 768 180 C 788 180, 798 230, 828 230 L 876 230" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<text x="26" y="282" font-size="14">Nadir lines up with the peak</text>
+<text class="b" x="26" y="308" font-size="14">Head compression</text>
+<text x="26" y="334" font-size="14">Vagal reflex, benign</text>
+<text class="gd" x="26" y="360" font-size="14">No action needed</text>
+<text x="324" y="282" font-size="14">Abrupt drop, any timing</text>
+<text class="b" x="324" y="308" font-size="14">Cord compression</text>
+<text x="324" y="334" font-size="14">Oligohydramnios raises risk</text>
+<text class="wn" x="324" y="360" font-size="14">Reposition, amnioinfusion</text>
+<text x="622" y="282" font-size="14">Nadir after the peak</text>
+<text class="b" x="622" y="308" font-size="14">Uteroplacental insufficiency</text>
+<text x="622" y="334" font-size="14">Fetal hypoxia</text>
+<text class="cr" x="622" y="360" font-size="14">Stop oxytocin, resuscitate</text>
+<rect x="14" y="408" width="872" height="60" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="28" y="432" font-size="14">Reassuring: baseline 110 to 160/min, moderate variability, accelerations</text>
+<text x="28" y="456" font-size="14">Sinusoidal: severe fetal anemia. Absent variability with recurrent lates: acidemia</text>
+</svg>

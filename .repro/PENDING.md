@@ -28,15 +28,16 @@ en9_hypercalcemia, en9_three_hpt missing.
 | P3.8 | CLOSED 2026-10-05 (rp19-rp22; rp20 img rows: audit/P3.8.md section 4) | | ledger row sha:858855ec |
 | COV-A | DONE (378 TAUGHT / 12 PARTIAL / 0 MISSING / 1 ERROR) | rp1-rp15 | .repro/coverage/wave1-A.md |
 | COV-B | reviewer | coverage rp16-rp30 -> .repro/coverage/wave1-B.md | |
-| COV-fix | queued | reopen P3.1 (rp1, rp2), P3.2 (rp5), P3.3 (rp9), P3.4 (rp10, rp11 + ERROR b22), P3.5 (rp13, rp14), plus slice-B findings; <= 3 open | |
+| COV-fix-1 | worker | P3.1 (rp1, rp2), P3.3 (rp9), P3.4 (rp10, rp11 + ERROR) reopened | --status ok, then --close each |
+| COV-fix-2 | queued | P3.2 (rp5), P3.5 (rp13, rp14) + slice-B findings | |
 | P3.9 | CLOSED 2026-10-05 (rp25, rp30, rp26) | | ledger row sha:28e99992 |
-| P3.10 | worker | rp27, rp28 (.repro/ws/P3_10) | --status P3.10 ok |
+| P3.10 | CLOSED 2026-10-05 (rp27, rp28) - all 30 wave-1 lessons accepted | | ledger row sha:a1b1b67f |
 | P3.5 | CLOSED 2026-10-05 (rp12-rp14; img rows to re-insert in P4.3: audit/P3.5.md section 5) | | ledger row sha:0e4d2e10 |
 | P3.7 | CLOSED 2026-10-05 (rp16-rp18) | | ledger row sha:e161f89c |
 | P2.6 | CLOSED 2026-10-05 (F3) | ledger row sha:29b015ac | |
 | V2 | DONE (finished before the restart; 8 new figures reviewed 2026-10-05) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
 | P1.4 | CLOSED 2026-10-05 (round 3, part->anchor proposals A.md/B.md) | 302 rows, 48 UNANCHORED, 4 topic changes | ledger row |
-| P1.V | run 6 verifier (token 05764b0daf), plan criterion (run 5: 7/12 under the withdrawn stricter standard) | | .repro/verify/P1-report.md |
+| P1.V | run 7 verifier (token 4fdd098705); run 6 was 11/12 | | .repro/verify/P1-report.md |
 | P1.4 | CLOSED 2026-10-05 round 5 (47 rows, block-evidence sweep) | | ledger row |
 
 ## Wave 1 (reproductive, Oct 9) queue

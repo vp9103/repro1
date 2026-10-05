@@ -1,0 +1,41 @@
+<svg class="dia" viewBox="0 0 900 490" role="img" aria-label="The two-cell, two-gonadotropin model: LH drives theca interna cells to make androstenedione, which crosses the basement membrane to granulosa cells, where FSH-induced aromatase converts it to estradiol">
+<text class="ttl" x="14" y="24" font-size="17">Two cells, two gonadotropins: how a follicle makes estradiol</text>
+<rect x="97" y="40" width="240" height="40" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="113" y="66" font-size="15">LH from the pituitary</text>
+<rect x="563" y="40" width="240" height="40" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="579" y="66" font-size="15">FSH from the pituitary</text>
+<line x1="217" y1="80" x2="217" y2="96" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="211,96 217,105 223,96" fill="var(--ink-2)"/>
+<line x1="683" y1="80" x2="683" y2="96" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="677,96 683,105 689,96" fill="var(--ink-2)"/>
+<rect x="14" y="106" width="406" height="226" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="30" y="134" font-size="16">Theca interna cell</text>
+<text x="30" y="164" font-size="15">Outside the basement membrane</text>
+<text x="30" y="190" font-size="15">Capillaries bring LDL cholesterol</text>
+<text x="30" y="220" font-size="15">LH receptor switches on enzymes</text>
+<text class="a1" x="30" y="244" font-size="15">Cholesterol &#8594; androstenedione</text>
+<text x="30" y="270" font-size="15">(desmolase, 17&#945;-hydroxylase)</text>
+<text x="30" y="300" font-size="15">Little aromatase: cannot finish</text>
+<rect x="480" y="106" width="406" height="226" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="496" y="134" font-size="16">Granulosa cell</text>
+<text x="496" y="164" font-size="15">Inside the basement membrane</text>
+<text x="496" y="190" font-size="15">No capillaries before ovulation</text>
+<text x="496" y="220" font-size="15">FSH receptor switches on aromatase</text>
+<text class="a2" x="496" y="244" font-size="15">Androstenedione &#8594; estrone</text>
+<text class="a2" x="496" y="270" font-size="15">Estrone &#8594; estradiol (17&#946;-HSD)</text>
+<text x="496" y="300" font-size="15">Also secretes inhibin B and AMH</text>
+<line x1="450" y1="100" x2="450" y2="340" stroke="var(--ink-2)" stroke-width="3" stroke-dasharray="6 5"/>
+<text x="450" y="360" font-size="15" text-anchor="middle">Basement membrane</text>
+<line x1="372" y1="239" x2="470" y2="239" stroke="var(--ink)" stroke-width="2.5"/>
+<polygon points="470,233 482,239 470,245" fill="var(--ink)"/>
+<line x1="683" y1="332" x2="683" y2="366" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="677,366 683,375 689,366" fill="var(--ink-2)"/>
+<rect x="14" y="376" width="406" height="100" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="30" y="402" font-size="16">Outside the ovary</text>
+<text x="30" y="428" font-size="15">Adipose aromatase: androstenedione</text>
+<text x="30" y="452" font-size="15">&#8594; estrone (peripheral conversion)</text>
+<rect x="480" y="376" width="406" height="100" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="496" y="402" font-size="16">Estradiol leaves the follicle</text>
+<text x="496" y="428" font-size="15">Builds the proliferative endometrium</text>
+<text x="496" y="452" font-size="15">High for 2 days: triggers the LH surge</text>
+</svg>

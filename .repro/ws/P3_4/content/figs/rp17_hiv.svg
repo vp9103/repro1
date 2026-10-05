@@ -1,0 +1,50 @@
+<svg class="dia" viewBox="0 0 900 474" role="img" aria-label="The six steps of HIV replication in a CD4 T cell, attachment, fusion, reverse transcription, integration, transcription and maturation, each paired with the antiretroviral class that blocks it">
+<text class="ttl" x="14" y="26" font-size="17">HIV replication, step by step, and the drug class that blocks each step</text>
+<rect x="14" y="44" width="282" height="170" rx="10" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="28" y="72" font-size="15">1  Attachment</text>
+<text x="28" y="100" font-size="15">gp120 binds CD4, then a</text>
+<text x="28" y="122" font-size="15">coreceptor: CCR5 or CXCR4</text>
+<text class="a1" x="28" y="170" font-size="15">Maraviroc blocks CCR5</text>
+<rect x="309" y="44" width="282" height="170" rx="10" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="323" y="72" font-size="15">2  Fusion</text>
+<text x="323" y="100" font-size="15">gp41 pulls the envelope</text>
+<text x="323" y="122" font-size="15">into the cell membrane</text>
+<text class="a1" x="323" y="170" font-size="15">Enfuvirtide binds gp41</text>
+<rect x="604" y="44" width="282" height="170" rx="10" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="618" y="72" font-size="15">3  Reverse transcription</text>
+<text x="618" y="100" font-size="15">RNA is copied into DNA,</text>
+<text x="618" y="122" font-size="15">with frequent errors</text>
+<text class="a1" x="618" y="162" font-size="15">NRTIs: chain termination</text>
+<text class="a1" x="618" y="186" font-size="15">NNRTIs: allosteric site</text>
+<rect x="14" y="232" width="282" height="170" rx="10" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="28" y="260" font-size="15">4  Integration</text>
+<text x="28" y="288" font-size="15">Integrase inserts the DNA</text>
+<text x="28" y="310" font-size="15">as a permanent provirus</text>
+<text class="a1" x="28" y="350" font-size="15">Integrase inhibitors</text>
+<text class="a1" x="28" y="374" font-size="15">(the -tegravir drugs)</text>
+<rect x="309" y="232" width="282" height="170" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.4"/>
+<text class="b" x="323" y="260" font-size="15">5  Transcription</text>
+<text x="323" y="288" font-size="15">Host enzymes read the</text>
+<text x="323" y="310" font-size="15">provirus and make gag-pol</text>
+<text x="323" y="332" font-size="15">polyproteins</text>
+<text x="323" y="374" font-size="15">Host machinery: no drug</text>
+<rect x="604" y="232" width="282" height="170" rx="10" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="618" y="260" font-size="15">6  Budding, maturation</text>
+<text x="618" y="288" font-size="15">Protease cuts polyproteins</text>
+<text x="618" y="310" font-size="15">into a mature p24 capsid</text>
+<text class="a1" x="618" y="350" font-size="15">Protease inhibitors</text>
+<text class="a1" x="618" y="374" font-size="15">(the -navir drugs)</text>
+<line x1="296" y1="129" x2="301" y2="129" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="301,124 309,129 301,134" fill="var(--ink-2)"/>
+<line x1="591" y1="129" x2="596" y2="129" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="596,124 604,129 596,134" fill="var(--ink-2)"/>
+<path d="M745 214 L 745 223 L 155 223 L 155 226" fill="none" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="150,225 155,232 160,225" fill="var(--ink-2)"/>
+<line x1="296" y1="317" x2="301" y2="317" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="301,312 309,317 301,322" fill="var(--ink-2)"/>
+<line x1="591" y1="317" x2="596" y2="317" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="596,312 604,317 596,322" fill="var(--ink-2)"/>
+<rect x="14" y="414" width="872" height="50" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1"/>
+<text x="28" y="435" font-size="14">Every target is a viral protein, so uninfected host cells are largely spared.</text>
+<text x="28" y="455" font-size="14">Three drugs are combined because error-prone copying selects resistance to any one.</text>
+</svg>

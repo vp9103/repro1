@@ -1,0 +1,63 @@
+<svg class="dia" viewBox="0 0 900 574" role="img" aria-label="The male hypothalamic-pituitary-testicular axis and four lab patterns: primary hypogonadism with high LH and FSH, secondary hypogonadism with low or normal LH and FSH, exogenous androgens with suppressed LH and FSH, and obstructive azoospermia with normal hormones">
+<text class="ttl" x="14" y="24" font-size="17">Male HPG axis: read the testosterone, then the LH</text>
+<rect x="14" y="44" width="240" height="76" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="70" font-size="15">Hypothalamus</text>
+<text x="28" y="94" font-size="14">GnRH pulses</text>
+<rect x="330" y="44" width="240" height="76" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="344" y="70" font-size="15">Anterior pituitary</text>
+<text x="344" y="94" font-size="14">LH and FSH</text>
+<rect x="646" y="44" width="240" height="76" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="660" y="66" font-size="15">Testis</text>
+<text x="660" y="88" font-size="14">Leydig cells: testosterone</text>
+<text x="660" y="108" font-size="14">Sertoli cells: inhibin B</text>
+<line x1="254" y1="82" x2="321" y2="82" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="330.0,82.0 320.0,88.0 320.0,76.0" fill="var(--ink-2)"/>
+<line x1="570" y1="82" x2="637" y2="82" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="646.0,82.0 636.0,88.0 636.0,76.0" fill="var(--ink-2)"/>
+<line x1="766" y1="121" x2="766" y2="152" stroke="var(--ink-3)" stroke-width="2.5" stroke-dasharray="6 5"/>
+<line x1="134" y1="152" x2="766" y2="152" stroke="var(--ink-3)" stroke-width="2.5" stroke-dasharray="6 5"/>
+<line x1="134" y1="152" x2="134" y2="131" stroke="var(--ink-3)" stroke-width="2.5" stroke-dasharray="6 5"/>
+<polygon points="134.0,122.0 140.0,132.0 128.0,132.0" fill="var(--ink-3)"/>
+<line x1="450" y1="152" x2="450" y2="131" stroke="var(--ink-3)" stroke-width="2.5" stroke-dasharray="6 5"/>
+<polygon points="450.0,122.0 456.0,132.0 444.0,132.0" fill="var(--ink-3)"/>
+<text x="150" y="178" font-size="14">Testosterone and estradiol inhibit GnRH and LH</text>
+<text x="150" y="200" font-size="14">Inhibin B from Sertoli cells inhibits FSH only</text>
+<rect x="14" y="216" width="872" height="34" rx="8" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="26" y="239" font-size="15">Pattern</text>
+<text class="b" x="282" y="239" font-size="15">Testosterone</text>
+<text class="b" x="432" y="239" font-size="15">LH and FSH</text>
+<text class="b" x="562" y="239" font-size="15">Typical causes</text>
+<rect x="14" y="254" width="872" height="56" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="26" y="288" font-size="15">Normal axis</text>
+<text class="gd" x="282" y="288" font-size="15">Normal</text>
+<text class="gd" x="432" y="288" font-size="15">Normal</text>
+<text x="562" y="288" font-size="14">Negative feedback keeps each level in range</text>
+<rect x="14" y="316" width="872" height="56" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="26" y="340" font-size="15">Primary hypogonadism</text>
+<text x="26" y="362" font-size="14">(hypergonadotropic)</text>
+<text class="cr" x="282" y="350" font-size="15">Low</text>
+<text class="a1" x="432" y="350" font-size="15">High</text>
+<text x="562" y="340" font-size="14">Klinefelter, orchitis, chemotherapy,</text>
+<text x="562" y="362" font-size="14">cryptorchidism, torsion</text>
+<rect x="14" y="378" width="872" height="56" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="26" y="402" font-size="15">Secondary hypogonadism</text>
+<text x="26" y="424" font-size="14">(hypogonadotropic)</text>
+<text class="cr" x="282" y="412" font-size="15">Low</text>
+<text class="cr" x="432" y="412" font-size="15">Low or normal</text>
+<text x="562" y="402" font-size="14">Kallmann (anosmia), pituitary tumor,</text>
+<text x="562" y="424" font-size="14">prolactin excess, opioids, obesity</text>
+<rect x="14" y="440" width="872" height="56" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="26" y="464" font-size="15">Exogenous testosterone</text>
+<text x="26" y="486" font-size="14">or anabolic steroids</text>
+<text x="282" y="474" font-size="15">Drug-dependent</text>
+<text class="cr" x="432" y="474" font-size="15">Low</text>
+<text x="562" y="464" font-size="14">Small testes, azoospermia,</text>
+<text x="562" y="486" font-size="14">polycythemia, acne</text>
+<rect x="14" y="502" width="872" height="56" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="26" y="526" font-size="15">Obstructive azoospermia</text>
+<text x="26" y="548" font-size="14">(posttesticular)</text>
+<text class="gd" x="282" y="536" font-size="15">Normal</text>
+<text class="gd" x="432" y="536" font-size="15">Normal</text>
+<text x="562" y="526" font-size="14">CBAVD, vasectomy, duct blockage;</text>
+<text x="562" y="548" font-size="14">normal testis size</text>
+</svg>

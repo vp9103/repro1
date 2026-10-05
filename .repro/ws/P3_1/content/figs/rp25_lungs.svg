@@ -1,0 +1,39 @@
+<svg class="dia" viewBox="0 0 900 516" role="img" aria-label="Pregnancy lung changes: progesterone raises ventilatory drive so tidal volume rises while respiratory rate is unchanged, oxygen consumption rises about 20 percent so ventilation outruns need, and the raised diaphragm lowers functional residual capacity and residual volume; the blood gas shows a compensated respiratory alkalosis with PaCO2 near 30 mm Hg and bicarbonate near 20">
+<text class="ttl" x="14" y="24" font-size="17">Three causes change breathing in pregnancy</text>
+<text class="b" x="24" y="58" font-size="15">Cause</text><text class="b" x="330" y="58" font-size="15">What it does to breathing</text><text class="b" x="640" y="58" font-size="15">Result</text>
+<rect x="24" y="70" width="270" height="96" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="36" y="98" font-size="15">Hormonal: progesterone</text><text x="36" y="124" font-size="14">raises ventilatory drive:</text><text x="36" y="148" font-size="14">more sensitive to CO2</text>
+<line x1="296" y1="118" x2="320" y2="118" stroke="var(--ink-2)" stroke-width="2"/><polygon points="320,113 328,118 320,123" fill="var(--ink-2)"/>
+<rect x="330" y="70" width="280" height="96" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="342" y="98" font-size="15">Deeper breaths</text><text x="342" y="124" font-size="14">tidal volume up 30 to 40%</text><text x="342" y="148" font-size="14">rate barely changes</text>
+<rect x="24" y="180" width="270" height="96" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="36" y="208" font-size="15">Metabolic: oxygen use</text><text x="36" y="234" font-size="14">consumption up about 20%</text><text x="36" y="258" font-size="14">fetus, uterus, maternal heart</text>
+<line x1="296" y1="228" x2="320" y2="228" stroke="var(--ink-2)" stroke-width="2"/><polygon points="320,223 328,228 320,233" fill="var(--ink-2)"/>
+<rect x="330" y="180" width="280" height="96" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="342" y="208" font-size="15">Ventilation outruns need</text><text x="342" y="234" font-size="14">oxygen use up only 20%,</text><text x="342" y="258" font-size="14">so PaCO2 falls</text>
+<rect x="24" y="290" width="270" height="96" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="36" y="318" font-size="15">Structural: diaphragm</text><text x="36" y="344" font-size="14">pushed up about 4 cm by</text><text x="36" y="368" font-size="14">the growing uterus</text>
+<line x1="296" y1="338" x2="320" y2="338" stroke="var(--ink-2)" stroke-width="2"/><polygon points="320,333 328,338 320,343" fill="var(--ink-2)"/>
+<rect x="330" y="290" width="280" height="96" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="342" y="318" font-size="15">Less air left after exhaling</text><text x="342" y="344" font-size="14">FRC and residual volume down</text><text x="342" y="368" font-size="14">total lung capacity nearly same</text>
+<line x1="612" y1="118" x2="630" y2="118" stroke="var(--ink-2)" stroke-width="2"/><polygon points="630,113 638,118 630,123" fill="var(--ink-2)"/>
+<line x1="612" y1="228" x2="630" y2="228" stroke="var(--ink-2)" stroke-width="2"/><polygon points="630,223 638,228 630,233" fill="var(--ink-2)"/>
+<rect x="640" y="70" width="246" height="316" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="654" y="100" font-size="15">Arterial blood gas</text>
+<text x="654" y="136" font-size="14">PaCO2 about 30 mm Hg</text>
+<text x="654" y="166" font-size="14">Bicarbonate about 20 mEq/L</text>
+<text x="654" y="196" font-size="14">pH about 7.40 to 7.45</text>
+<text x="654" y="226" font-size="14">PaO2 about 100 to 105 mm Hg</text>
+<rect x="652" y="262" width="222" height="62" rx="6" fill="var(--surface)" stroke="var(--good)" stroke-width="1.2"/>
+<text class="b" x="664" y="287" font-size="15">Compensated</text><text class="b" x="664" y="311" font-size="15">respiratory alkalosis</text>
+<text x="654" y="350" font-size="14">PaCO2 of 40 mm Hg is</text><text x="654" y="372" font-size="14">already CO2 retention</text>
+<text class="b" x="24" y="414" font-size="15">Lung volumes: green up, orange down, gray unchanged</text>
+<rect x="24" y="426" width="206" height="36" rx="6" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.2"/><text x="34" y="449" font-size="14">Tidal volume up 30 to 40%</text>
+<rect x="240" y="426" width="206" height="36" rx="6" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/><text x="250" y="449" font-size="14">Respiratory rate unchanged</text>
+<rect x="456" y="426" width="206" height="36" rx="6" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.2"/><text x="466" y="449" font-size="14">Minute ventilation up</text>
+<rect x="672" y="426" width="206" height="36" rx="6" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/><text x="682" y="449" font-size="14">Total lung capacity: same</text>
+<rect x="24" y="470" width="206" height="36" rx="6" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.2"/><text x="34" y="493" font-size="14">Expiratory reserve down</text>
+<rect x="240" y="470" width="206" height="36" rx="6" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.2"/><text x="250" y="493" font-size="14">Residual volume down</text>
+<rect x="456" y="470" width="206" height="36" rx="6" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.2"/><text x="466" y="493" font-size="14">FRC down about 20%</text>
+<rect x="672" y="470" width="206" height="36" rx="6" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.2"/><text x="682" y="493" font-size="14">Inspiratory capacity up</text>
+</svg>

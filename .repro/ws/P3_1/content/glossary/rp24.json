@@ -1,0 +1,34 @@
+[
+ {
+  "k": "rp24_brca",
+  "t": "BRCA1 and BRCA2",
+  "d": "Tumor suppressor genes whose proteins repair double-strand DNA breaks by homologous recombination; germline variants raise breast and ovarian cancer risk, and BRCA2 also raises male breast cancer risk.",
+  "alt": []
+ },
+ {
+  "k": "rp24_myo",
+  "t": "Myoepithelial cells",
+  "d": "Contractile cells that form the outer layer of breast ducts and lobules on the basement membrane; they persist around carcinoma in situ and are lost once a carcinoma invades.",
+  "alt": [
+   "myoepithelial cell"
+  ]
+ },
+ {
+  "k": "rp24_ecad",
+  "t": "E-cadherin",
+  "d": "A calcium-dependent adhesion protein encoded by CDH1 that holds epithelial cells together; its loss makes lobular carcinoma cells dyscohesive, so they grow in single file.",
+  "alt": []
+ },
+ {
+  "k": "rp24_paget",
+  "t": "Paget disease of the nipple",
+  "d": "A crusted, eczematous nipple lesion caused by carcinoma cells that spread into the epidermis from an underlying ductal carcinoma in situ or invasive carcinoma.",
+  "alt": []
+ },
+ {
+  "k": "rp24_her2",
+  "t": "HER2",
+  "d": "A receptor tyrosine kinase encoded by ERBB2; gene amplification drives growth signaling in HER2-positive breast cancer and makes the tumor a target for trastuzumab and related drugs.",
+  "alt": []
+ }
+]

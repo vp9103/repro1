@@ -256,7 +256,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | GTD.1 | rp26 | - | nlrp7; nulliparity; familial |
 | GTD.2 | rp26 | - | antecedent; 15 to 20 percent |
 | GTD.3 | rp26 | - | uterotonic; no more children; thyroid function; hormonal contraception |
-| GTD.4 | rp26 | - | plateau or rise; actinomycin; risk score; placental site trophoblastic |
+| GTD.4 | rp26 | - | plateau or rise; multiagent; hysterectomy; gynecologic oncolog |
 | GTD.5 | rp26 | - | hydropic; trophoblastic hyperplasia; p57; duplicat |
 | GTD.6 | rp26 | - | hematogenous; cytotrophoblast; intermediate trophoblast; epithelioid trophoblastic |
 | DELIVERY-SIM.1 | rp28 | - | ritgen; nuchal cord; anterior shoulder; cord clamp |
@@ -323,7 +323,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | ENDO-DM.9 | en16 | - | normal saline; insulin infusion; hypokalemia; hypophosphatemia |
 | ENDO-DM.10 | en15 | - | normoglycemia; impaired fasting glucose; random plasma glucose; glucose tolerance |
 | ENDO-DM.11 | en16 | - | 600; osmolality; mental status; thromboembol |
-| ENDO-DM.12 | en17,en15 | - | basal insulin; statin; ace inhibitor; dilated eye |
+| ENDO-DM.12 | en17,en15 | - | basal insulin; statin; a1c; dilated eye |
 | ENDO-THYROID.1 | en5 | - | isthmus; recurrent laryngeal; symporter; thyrotropin-releasing |
 | ENDO-THYROID.2 | en7,en6 | - | nuclear groove; pseudoinclusion; congo red; giant cell |
 | ENDO-THYROID.3 | en6 | - | methimazole; propylthiouracil; potassium iodide |

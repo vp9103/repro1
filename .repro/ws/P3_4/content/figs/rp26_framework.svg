@@ -1,0 +1,75 @@
+<svg class="dia" viewBox="0 0 900 560" role="img" aria-label="Flowchart for early pregnancy: a positive hCG with pain or bleeding is first checked for instability, then transvaginal ultrasound sorts it into intrauterine pregnancy, pregnancy of unknown location or ectopic pregnancy, with viability, discriminatory zone, repeat hCG and methotrexate branches, above a strip of ultrasound milestones by week">
+<text class="ttl" x="14" y="24" font-size="17">Pregnant, where, viable, stable: sorting early pregnancy</text>
+<rect x="250" y="40" width="380" height="54" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="440" y="73" font-size="15" text-anchor="middle">Positive hCG with pain or bleeding</text>
+<line x1="630" y1="67" x2="652" y2="67" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="652,62 660,67 652,72" fill="var(--ink-2)"/>
+<rect x="660" y="40" width="226" height="100" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="672" y="64" font-size="15">Unstable? Check first</text>
+<text x="672" y="88" font-size="14">Shock or shoulder pain</text>
+<text x="672" y="112" font-size="14">means rupture: surgery</text>
+<line x1="440" y1="94" x2="440" y2="112" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="435,112 440,120 445,112" fill="var(--ink-2)"/>
+<rect x="250" y="120" width="380" height="50" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="440" y="151" font-size="15" text-anchor="middle">Transvaginal ultrasound: where is it?</text>
+<line x1="440" y1="170" x2="440" y2="188" stroke="var(--ink-2)" stroke-width="2"/>
+<line x1="152" y1="188" x2="748" y2="188" stroke="var(--ink-2)" stroke-width="2"/>
+<line x1="152" y1="188" x2="152" y2="200" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="147,200 152,208 157,200" fill="var(--ink-2)"/>
+<line x1="450" y1="188" x2="450" y2="200" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,200 450,208 455,200" fill="var(--ink-2)"/>
+<line x1="748" y1="188" x2="748" y2="200" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="743,200 748,208 753,200" fill="var(--ink-2)"/>
+<rect x="14" y="208" width="276" height="56" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="26" y="232" font-size="15">Sac with yolk sac in uterus</text>
+<text x="26" y="254" font-size="14">intrauterine pregnancy</text>
+<rect x="312" y="208" width="276" height="56" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="324" y="232" font-size="15">Nothing seen anywhere</text>
+<text x="324" y="254" font-size="14">pregnancy of unknown location</text>
+<rect x="610" y="208" width="276" height="56" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="622" y="232" font-size="15">Adnexal mass, empty uterus</text>
+<text x="622" y="254" font-size="14">ectopic pregnancy</text>
+<line x1="152" y1="264" x2="152" y2="282" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="147,282 152,290 157,282" fill="var(--ink-2)"/>
+<line x1="450" y1="264" x2="450" y2="282" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,282 450,290 455,282" fill="var(--ink-2)"/>
+<line x1="748" y1="264" x2="748" y2="282" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="743,282 748,290 753,282" fill="var(--ink-2)"/>
+<rect x="14" y="290" width="276" height="50" rx="6" fill="var(--surface)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="26" y="320" font-size="14">Cardiac activity: viable</text>
+<rect x="14" y="352" width="276" height="62" rx="6" fill="var(--surface)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="26" y="377" font-size="14">No heartbeat at 7 mm or more:</text>
+<text x="26" y="399" font-size="14">pregnancy loss</text>
+<rect x="312" y="290" width="276" height="56" rx="6" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="324" y="314" font-size="14">hCG above about 3,500 mIU/mL:</text>
+<text x="324" y="336" font-size="14">suspect ectopic</text>
+<rect x="312" y="358" width="276" height="56" rx="6" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.2"/>
+<text x="324" y="382" font-size="14">Below it: repeat hCG in 48 h</text>
+<text x="324" y="404" font-size="14">normal rise: 35 percent or more</text>
+<rect x="610" y="290" width="276" height="56" rx="6" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.2"/>
+<text x="622" y="314" font-size="14">Most in the ampulla</text>
+<text x="622" y="336" font-size="14">Chlamydial PID, prior ectopic</text>
+<rect x="610" y="358" width="276" height="56" rx="6" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.2"/>
+<text x="622" y="382" font-size="14">Stable and unruptured:</text>
+<text x="622" y="404" font-size="14">methotrexate, follow hCG</text>
+<rect x="14" y="436" width="872" height="110" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="462" font-size="15">Transvaginal milestones</text>
+<rect x="28" y="476" width="196" height="56" rx="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text class="b" x="40" y="499" font-size="14">Gestational sac</text>
+<text x="40" y="521" font-size="14">about 5 weeks</text>
+<line x1="224" y1="504" x2="236" y2="504" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="236,499 244,504 236,509" fill="var(--ink-2)"/>
+<rect x="244" y="476" width="196" height="56" rx="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text class="b" x="256" y="499" font-size="14">Yolk sac</text>
+<text x="256" y="521" font-size="14">5 to 6 weeks</text>
+<line x1="440" y1="504" x2="452" y2="504" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="452,499 460,504 452,509" fill="var(--ink-2)"/>
+<rect x="460" y="476" width="196" height="56" rx="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text class="b" x="472" y="499" font-size="14">Fetal pole</text>
+<text x="472" y="521" font-size="14">about 6 weeks</text>
+<line x1="656" y1="504" x2="668" y2="504" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="668,499 676,504 668,509" fill="var(--ink-2)"/>
+<rect x="676" y="476" width="196" height="56" rx="6" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text class="b" x="688" y="499" font-size="14">Cardiac activity</text>
+<text x="688" y="521" font-size="14">6 to 7 weeks</text>
+</svg>

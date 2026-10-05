@@ -1,0 +1,50 @@
+<svg class="dia" viewBox="0 0 900 578" role="img" aria-label="The nitric oxide and cGMP pathway of erection from stimulation to veno-occlusion and detumescence, with nitrates, PDE5 inhibitors such as sildenafil and alprostadil acting at different steps">
+<text class="ttl" x="14" y="24" font-size="17">Erection runs on nitric oxide and cGMP, and each drug hits one step</text>
+<rect x="14" y="44" width="420" height="42" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="30" y="71" font-size="15">Stimulation: parasympathetic S2 to S4</text>
+<line x1="224" y1="86" x2="224" y2="97" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="224.0,106.0 218.0,96.0 230.0,96.0" fill="var(--ink-2)"/>
+<rect x="14" y="106" width="420" height="42" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="30" y="133" font-size="15">Nerves and endothelium release nitric oxide</text>
+<line x1="224" y1="148" x2="224" y2="159" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="224.0,168.0 218.0,158.0 230.0,158.0" fill="var(--ink-2)"/>
+<rect x="14" y="168" width="420" height="42" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="30" y="195" font-size="15">Guanylate cyclase makes cGMP from GTP</text>
+<line x1="224" y1="210" x2="224" y2="221" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="224.0,230.0 218.0,220.0 230.0,220.0" fill="var(--ink-2)"/>
+<rect x="14" y="230" width="420" height="42" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="30" y="257" font-size="15">Protein kinase G: calcium falls</text>
+<line x1="224" y1="272" x2="224" y2="283" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="224.0,292.0 218.0,282.0 230.0,282.0" fill="var(--ink-2)"/>
+<rect x="14" y="292" width="420" height="42" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text x="30" y="319" font-size="15">Muscle relaxes, helicine arteries dilate</text>
+<line x1="224" y1="334" x2="224" y2="345" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="224.0,354.0 218.0,344.0 230.0,344.0" fill="var(--ink-2)"/>
+<rect x="14" y="354" width="420" height="42" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text x="30" y="381" font-size="15">Sinusoids fill and squeeze subtunical veins</text>
+<line x1="224" y1="396" x2="224" y2="407" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="224.0,416.0 218.0,406.0 230.0,406.0" fill="var(--ink-2)"/>
+<rect x="14" y="416" width="420" height="42" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="30" y="443" font-size="15">Detumescence: PDE5 splits cGMP to 5'-GMP</text>
+<rect x="470" y="82" width="416" height="98" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="486" y="108" font-size="15">Nitrates donate nitric oxide</text>
+<text x="486" y="132" font-size="14">With a PDE5 inhibitor: profound hypotension</text>
+<text x="486" y="154" font-size="14">Wait 24 h (sildenafil) or 48 h (tadalafil)</text>
+<line x1="434" y1="125" x2="470" y2="125" stroke="var(--ink-2)" stroke-width="2.5"/>
+<rect x="470" y="222" width="416" height="126" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="486" y="248" font-size="15">Alprostadil (PGE1) raises cAMP</text>
+<text x="486" y="272" font-size="14">A parallel pathway: works when PDE5 inhibitors fail</text>
+<text x="486" y="294" font-size="14">Intracavernosal injection or intraurethral pellet</text>
+<text x="486" y="316" font-size="14">Risks: penile pain, fibrosis, priapism</text>
+<line x1="434" y1="291" x2="470" y2="291" stroke="var(--ink-2)" stroke-width="2.5"/>
+<rect x="470" y="372" width="416" height="106" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="486" y="398" font-size="15">Sildenafil, vardenafil, tadalafil, avanafil</text>
+<text x="486" y="422" font-size="14">Block PDE5, so cGMP persists</text>
+<text x="486" y="444" font-size="14">Need sexual stimulation to work</text>
+<text x="486" y="466" font-size="14">Fail with venous leak (scarred tunica)</text>
+<line x1="434" y1="417" x2="470" y2="417" stroke="var(--ink-2)" stroke-width="2.5"/>
+<rect x="14" y="494" width="872" height="76" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="30" y="518" font-size="15">Adverse effects of PDE5 inhibitors</text>
+<text x="30" y="540" font-size="14">Headache, flushing, dyspepsia; rare NAION and sudden hearing loss</text>
+<text x="30" y="562" font-size="14">Sildenafil: blue-green vision (PDE6). Tadalafil: back pain and myalgia (PDE11)</text>
+</svg>

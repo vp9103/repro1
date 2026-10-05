@@ -20,7 +20,7 @@ cannot anchor every part, the parts the course and Step 1 test most are anchored
 `audit/P1.4.md` so the verifier and the topic authors see it. Sibling rows of one session (lecture and lab, TBL and
 BiCEP versions of the same objective) are chosen to complement each other.
 
-Filled by P1.4 on 2026-09-26, redone 2026-10-04. Each term is matched as a lowercase substring of the first topic's rendered text, so some
+Filled by P1.4 on 2026-09-26, redone 2026-10-04. Each term is matched in the first topic's rendered text at the start of a word (gate rule repro_common.term_hit: stems run on, terms of <= 3 characters and numbers must end there, hyphens optional), so some
 terms are stems (`atypi`, `koilocyt`, `thromboembol`, `contracepti`) and names that carry a diacritic or an apostrophe
 are given by their plain part (`paramesonephric` for Müllerian, `health initiative` for the Women's Health Initiative).
 No row uses `a|b`: a `|` inside the terms cell ends the table cell, and the parser (`repro_common.topic_map_rows`) then
@@ -33,7 +33,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | ANAT-PELVIS-LEC.2 | rp1 | - | intertuberous; obstetric conjugate; sacral promontory; gynecoid |
 | ANAT-PELVIS-LEC.3 | rp1 | - | pubococcygeus; coccygeus; nerve to levator ani; continence |
 | ANAT-PELVIS-LEC.4 | rp1 | - | vesicouterine; rectovesical; retropubic; retrorectal |
-| ANAT-PELVIS-LEC.5 | rp1 | - | fimbria; external os; fornix; ovarian fossa |
+| ANAT-PELVIS-LEC.5 | rp1 | - | fimbria; external os; fornices; ovarian fossa |
 | ANAT-PELVIS-LEC.6 | rp1 | - | fructose; liquef; seminal colliculus; retrograde ejaculation |
 | ANAT-PELVIS-LEC.7 | rp1 | - | inferior vesical; middle rectal; uterovaginal; internal iliac vein |
 | ANAT-PELVIS-LEC.8 | rp1 | - | parametri; ischial spine; common iliac |
@@ -52,21 +52,21 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | ANAT-PELVIS-LAB.12 | rp1 | - | ovarian fossa; ovarian ligament; torsion; obturator nerve |
 | ANAT-PELVIS-LAB.13 | rp1,rp19 | - | tunica vaginalis; efferent ductules; vasectomy; digital rectal |
 | HP-UTERUS-OVARY.1 | rp8,rp14,rp15 | - | medulla; tunica albuginea; peg cell; perimetrium |
-| HP-UTERUS-OVARY.2 | rp8 | - | decidualiz; corpus albicans; rescue; luteinization |
+| HP-UTERUS-OVARY.2 | rp8 | - | decidualiz; corpus albicans; implanted embryo; luteinization |
 | HP-UTERUS-OVARY.3 | rp9,rp14,rp15,rp11 | - | follicular cyst; endometrioma; pelvic adhesion |
 | HP-UTERUS-OVARY.4 | rp5 | - | bicornuate; unicornuate; pregnancy loss; preterm |
 | HP-UTERUS-OVARY.5 | rp14,rp9 | - | polycystic; hyperandrogen; insulin resistance; unopposed estrogen |
-| HP-UTERUS-OVARY.6 | rp16,rp14 | - | ascend; pyosalpinx; hydrosalpinx; endometritis |
+| HP-UTERUS-OVARY.6 | rp16,rp14 | - | upper genital tract; pyosalpinx; hydrosalpinx; endometritis |
 | HP-UTERUS-OVARY.7 | rp14 | - | circumscribed; degenerat; necrosis; hematogenous |
 | HP-UTERUS-OVARY.8 | rp14 | - | atrophic endometrium; p53; psammoma; myometrial invasion |
-| HP-UTERUS-OVARY.9 | rp14 | - | biphasic; heterologous; p53 |
-| HP-UTERUS-OVARY.10 | rp15 | - | coelomic; primordial germ; genital ridge |
+| HP-UTERUS-OVARY.9 | rp14 | - | biphasic; heterologous; metaplast |
+| HP-UTERUS-OVARY.10 | rp15 | - | coelomic epithelium; primordial germ; genital ridge |
 | HP-UTERUS-OVARY.11 | rp15 | - | lynch; tp53; dysgenesis |
 | PHYS-MENSTRUAL.1 | rp8 | - | pregnenolone; androstenedione; desmolase |
 | PHYS-MENSTRUAL.2 | rp8 | - | oogoni; antral follicle; dominant follicle; atresia |
 | PHYS-MENSTRUAL.3 | rp8 | - | pulsatile; gonadotroph; positive feedback; corpus luteum |
 | PHYS-MENSTRUAL.4 | rp8 | - | day 14; pulse frequency; second rise |
-| PHYS-MENSTRUAL.5 | rp8 | - | corpus albicans; rescue; luteinization |
+| PHYS-MENSTRUAL.5 | rp8 | - | corpus albicans; implanted embryo; luteinization |
 | PATHPHARM-MENSES-CONTRA.1 | rp9 | - | transvaginal; laparoscop; 17-hydroxyprogesterone; dyschezia |
 | PATHPHARM-MENSES-CONTRA.2 | rp10 | - | ethinyl estradiol; breakthrough bleeding; perfect use; vaginal ring |
 | PATHPHARM-MENSES-CONTRA.3 | rp10 | - | progesterone receptor; pge1; cramping |
@@ -75,10 +75,10 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | ANAT-PERINEUM-LEC.2 | rp2 | - | ischiopubic; pubic arch; crura |
 | ANAT-PERINEUM-LEC.3 | rp2 | - | bulbospongiosus; ischiocavernosus; deep transverse perineal; bulbourethral |
 | ANAT-PERINEUM-LEC.4 | rp2 | - | superior rectal; inferior mesenteric; portocaval; visceral |
-| ANAT-PERINEUM-LEC.5 | rp2 | - | labia majora; labia minora; hymen; clitoris |
+| ANAT-PERINEUM-LEC.5 | rp2 | - | labia majora; labia minora; hymen; paired corpora |
 | ANAT-PERINEUM-LEC.6 | rp2 | - | prostatic urethra; spongy urethra; navicular fossa; crura |
 | ANAT-PERINEUM-LEC.7 | rp2 | - | internal pudendal; external pudendal; dorsal vein; helicine |
-| ANAT-PERINEUM-LEC.8 | rp2 | - | sentinel; obturator; deep inguinal |
+| ANAT-PERINEUM-LEC.8 | rp2 | - | sentinel; obturator nodes; deep inguinal |
 | ANAT-PERINEUM-LEC.9 | rp2 | - | inferior hypogastric; lumbar splanchnic; vasoconstriction; erection |
 | ANAT-EXTGEN-LAB.1 | rp1,rp2 | - | coccygeus; iliococcygeus; nerve to levator ani; continence |
 | ANAT-EXTGEN-LAB.2 | rp2 | - | anal triangle; coccyx; sacrotuberous; horizontal plane |
@@ -104,13 +104,13 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | HP-MALE.12 | rp20 | - | high-riding; detorsion; congestion; salvage |
 | HP-MALE.13 | rp20 | - | granulomatous; enteric; sperm antigen |
 | HP-MALE.14 | rp20 | - | patent processus; communicating; filaria; chylocele |
-| HP-MALE.15 | rp21 | - | dihydrotestosterone; watchful waiting; transurethral; urinary retention |
+| HP-MALE.15 | rp21 | - | dihydrotestosterone; watchful waiting; transurethral; hydronephrosis |
 | HP-MALE.16 | rp21 | - | e. coli; reflux; chronic bacterial; chronic pelvic pain |
 | HP-MALE.17 | rp21 | - | koilocyt; imiquimod; penectomy; verrucous |
 | HP-MALE.18 | rp20 | - | isochromosome; in situ; choriocarcinoma; teratoma |
 | HP-MALE.19 | rp21 | - | p63; tmprss2; luminal |
 | HP-MALE.20 | rp21 | - | crowded gland; nucleoli; infiltrative |
-| HP-MALE.21 | rp21 | - | first-degree; brca2; older men |
+| HP-MALE.21 | rp21 | - | first-degree; brca2; rises with age |
 | HP-MALE.22 | rp21 | - | autopsy; overdiagnos; active surveillance |
 | PATHPHARM-MALE.1 | rp19 | - | reinke; corpora amylacea; papillary infolding; folded |
 | PATHPHARM-MALE.2 | rp19 | - | dartos; fournier; left renal vein; para-aortic |
@@ -123,22 +123,22 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | PATHPHARM-MALE.9 | rp22,rp21 | - | leuprolide; flare; hot flash; abiraterone |
 | HP-CERVIX-VULVA.1 | rp13 | - | endocervi; ectocervi; plicae palmatae; mucus |
 | HP-CERVIX-VULVA.2 | rp13 | - | ectropion; stenosis; hematometra |
-| HP-CERVIX-VULVA.3 | rp12 | - | lactic acid; transudate; elastic; rugae |
-| HP-CERVIX-VULVA.4 | rp12 | - | paraurethral; mucin; lubricat; transitional |
+| HP-CERVIX-VULVA.3 | rp12 | - | lactic acid; transudate; distensib; rugae |
+| HP-CERVIX-VULVA.4 | rp12 | - | paraurethral; mucus-secreting; lubricat; transitional |
 | HP-CERVIX-VULVA.5 | rp12,rp16 | - | cervicitis; anaerob; preterm; pelvic inflammatory disease |
 | HP-CERVIX-VULVA.6 | rp12 | - | hyperkeratosis; dermal sclerosis; basaloid; paget cell |
 | HP-CERVIX-VULVA.7 | rp12 | - | embryonal rhabdomyosarcoma; rhabdomyoblast; myogenin; polypoid |
 | HP-CERVIX-VULVA.8 | rp13 | - | high-risk; low-risk; integrat; cytology |
 | HP-CERVIX-VULVA.9 | rp13 | - | hyperchromat; full thickness; bethesda; regress |
-| PATHPHARM-CERVIX-HPV.1 | rp13 | - | cytology; primary hpv; hysterectomy; speculum |
+| PATHPHARM-CERVIX-HPV.1 | rp13 | - | cytology; primary hpv; total hysterectomy; speculum |
 | PATHPHARM-CERVIX-HPV.2 | rp13 | - | microabrasion; integrat; basal layer |
 | PATHPHARM-CERVIX-HPV.3 | rp13,rp17 | - | cd4; clearance; annual; anoscopy |
-| PATHPHARM-CERVIX-HPV.4 | rp13 | - | reflex; conization; ablat; 9-valent |
+| PATHPHARM-CERVIX-HPV.4 | rp13 | - | reflex hpv; conization; ablat; 9-valent |
 | PATHPHARM-CERVIX-HPV.5 | rp12,rp16 | - | wet mount; amsel; metronidazole; nucleic acid |
-| PATHPHARM-CERVIX-HPV.6 | rp12 | - | marsupialization; clobetasol; dermatitis; word catheter |
-| ADNEXAL.1 | rp15 | - | simple cyst; hemorrhagic cyst; resolve |
-| ADNEXAL.2 | rp15 | - | endometrioma; whirlpool; rokitansky; doppler |
-| ADNEXAL.3 | rp15 | - | solid component; color doppler; multilocul |
+| PATHPHARM-CERVIX-HPV.6 | rp12 | - | marsupialization; clobetasol; contact dermatitis; word catheter |
+| ADNEXAL.1 | rp15 | - | simple cyst; hemorrhagic cyst; repeat scan |
+| ADNEXAL.2 | rp15 | - | ground-glass; whirlpool; rokitansky; doppler |
+| ADNEXAL.3 | rp15 | - | solid component; color score; multilocular cyst |
 | ADNEXAL.4 | rp15 | - | o-rads; unilocular; intermediate risk; solid component |
 | ADNEXAL.5 | rp15 | - | prepubertal; postmenopausal; tubo-ovarian |
 | ADNEXAL.6 | rp15 | - | gynecologic oncolog; expectant; cystectomy; pregnancy test |
@@ -146,15 +146,15 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | ADNEXAL.8 | rp15 | - | alpha-fetoprotein; lactate dehydrogenase; chorionic gonadotropin; premenopaus |
 | GYN-ONC.1 | rp15,rp14,rp13,rp12 | - | unopposed estrogen; lichen sclerosus; immunosuppress; diethylstilbestrol |
 | GYN-ONC.2 | rp15,rp14,rp13,rp12 | - | endometrial biopsy; cytoreduct; colposcopy; wide local excision |
-| GYN-ONC.3 | rp15,rp14,rp13,rp12 | - | endometrioid; e6; vulvar intraepithelial neoplasia; adenosis |
+| GYN-ONC.3 | rp15,rp14,rp13,rp12 | - | atypical hyperplasia; e6; vulvar intraepithelial neoplasia; adenosis |
 | TBL-STI.1 | rp16,rp17,rp12 | - | treponema pallidum; granulomatis; azithromycin; benzathine |
 | TBL-STI.2 | rp16 | - | polymicrobial; tubal factor; ectopic pregnancy; chronic pelvic pain |
 | TBL-STI.3 | rp18 | - | neonatal herpes; erythromycin; papillomatosis |
-| VIRAL-STI-TORCH.1 | rp17 | - | ribosome; uncoating; assembl; budding |
+| VIRAL-STI-TORCH.1 | rp17 | - | ribosome; uncoating; inactivates rb; budding |
 | VIRAL-STI-TORCH.2 | rp17 | - | provirus; episom; reservoir; lytic |
 | VIRAL-STI-TORCH.3 | rp17 | - | tropism; antigenic variation; downregulat; vertical |
 | VIRAL-STI-TORCH.4 | rp17 | - | syringe; condom; pre-exposure |
-| VIRAL-STI-TORCH.5 | rp17 | - | double-stranded; shedding; suppressive; condom |
+| VIRAL-STI-TORCH.5 | rp17 | - | latency-associated; shedding; suppressive; condom |
 | VIRAL-STI-TORCH.6 | rp17 | - | icosahedral; skin-to-skin; virus-like particle; 9-valent |
 | VIRAL-STI-TORCH.7 | rp18 | - | transplacental; togavirus; calcification; seroconver |
 | VIRAL-STI-TORCH.8 | rp17,rp18 | - | opt-out; serolog; cytology; third trimester |
@@ -166,11 +166,11 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | EMBRYO-GU.2 | rp5 | - | ureteric bud; ectopic ureter; ipsilateral |
 | EMBRYO-GU.3 | rp5 | - | y chromosome; determining factor; sertoli; wolffian |
 | EMBRYO-GU.4 | rp5 | - | bicornuate; resorption; canalization; vaginal atresia |
-| EMBRYO-GU.5 | rp5,rp20 | - | urethral fold; insl3; inguinoscrotal; patent processus |
+| EMBRYO-GU.5 | rp5,rp20 | - | urethral fold; insl3; inguinoscrotal; communicating hydrocele |
 | EMBRYO-GU.6 | rp6,en11 | - | maternal virilization; 21-hydroxylase; 17-hydroxyprogesterone; dht ratio |
 | MENOPAUSE.1 | rp11 | - | prepubertal; menopausal transition; final menstrual period |
 | MENOPAUSE.2 | rp11 | - | thermoneutral; serotonin; libido; nocturia |
-| MENOPAUSE.3 | rp11 | - | lipid; cogniti; urinary tract infection; vaginal ph |
+| MENOPAUSE.3 | rp11 | - | ldl rises; brain fog; urinary tract infection; vaginal ph |
 | MENOPAUSE.4 | rp11,en10 | - | rankl; osteoprotegerin; osteoclast; trabecular |
 | MENOPAUSE.5 | rp11 | - | anovulat; cycle length; 60 days; polymenorrhea |
 | MENOPAUSE.6 | rp11 | - | estrogen-only; hysterectomy; endometrial hyperplasia; breast tenderness |
@@ -181,7 +181,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | MENOPAUSE.11 | rp11 | - | transvaginal; hysteroscopy; single episode |
 | MENOPAUSE.12 | rp11 | - | pregnancy test; carcinoid; sheehan; thyroid-stimulating hormone |
 | MENOPAUSE.13 | rp11 | - | health initiative; timing hypothesis; residency; abandon |
-| MENOPAUSE.14 | rp11 | - | black women; socioeconomic; undertreat |
+| MENOPAUSE.14 | rp11 | - | vasomotor burden; socioeconomic; undertreat |
 | MENOPAUSE.15 | rp11 | - | influencer; bioidentical; compounded; oversight |
 | EMBRYO-CLIN.1 | rp4 | - | last menstrual period; 2 weeks |
 | EMBRYO-CLIN.2 | rp4 | - | cleavage; zona pellucida; epiblast; notochord |
@@ -196,24 +196,24 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | EMBRYO-CLIN.11 | rp4,rp5,rp6 | - | teratogen; chorionicity |
 | TRANSGENDER-LEC.1 | rp29 | - | sex assigned at birth; gender incongruence; reassignment; nonbinary |
 | TRANSGENDER-LEC.2 | rp29 | - | name change; birth certificate; state law; medicaid |
-| TRANSGENDER-LEC.3 | rp29 | - | sperm banking; cryopreserv; progestin; sexually transmitted |
+| TRANSGENDER-LEC.3 | rp29 | - | sperm banking; cryopreserv; progestin; anal sex |
 | TRANSGENDER-LEC.4 | rp29 | - | antiandrogen; potassium; polycythemia; bone density |
 | TRANSGENDER-LEC.5 | rp29 | - | mastectomy; hysterectomy; vaginoplasty; fistula |
-| TRANSGENDER-LEC.6 | rp29 | - | cervical cancer screening; mammogra; hpv vaccin; mental health |
+| TRANSGENDER-LEC.6 | rp29 | - | cervical cancer screening; prostate-specific antigen; hpv vaccin; suicide risk |
 | TBL-PUBERTY.1 | rp7 | - | breast bud; pubic hair; testicular volume; stage 2 |
 | TBL-PUBERTY.2 | rp7 | - | pubarche; gonadarche; adrenal androgen; axillary |
-| TBL-PUBERTY.3 | rp7 | - | leptin; nocturnal; granulosa; sertoli |
+| TBL-PUBERTY.3 | rp7 | - | leptin; nocturnal; theca cells; sertoli |
 | TBL-PUBERTY.4 | rp7 | - | pubarche; peak height velocity; penile; spermarche |
 | TBL-PUBERTY.5 | rp7 | - | gnrh stimulation; magnetic resonance; testotoxicosis; kallmann |
 | TBL-PUBERTY.6 | rp7 | - | gynecomastia; self-limit; growth velocity |
-| TBL-PUBERTY.7 | rp6,rp7 | - | 45,x; 47,xxy; hypergonadotropic; karyotype |
+| TBL-PUBERTY.7 | rp6,rp7 | - | 45,x; 47,xxy; hypergonadotropic; primary hypogonadism |
 | LIFESPAN-PANEL.1 | rp29 | - | discriminat; insurance coverage; knowledge deficit; refused care |
 | LIFESPAN-PANEL.2 | rp29 | - | chosen name; inclusive language; misgender; neutral pronoun |
 | LIFESPAN-PANEL.3 | rp29 | - | autonomy; state law; refus; parental consent |
 | LIFESPAN-PANEL.4 | rp29 | - | speech; social work; plastic surg; referral |
 | LIFESPAN-PANEL.5 | rp29 | - | implicit bias; assumption; microaggression; intake form |
 | MATERNAL-PHYS.1 | rp25 | - | stroke volume; heart rate; nadir; vasodilat |
-| MATERNAL-PHYS.2 | rp25 | - | minute ventilation; diaphragm; ventilatory drive; oxygen consumption |
+| MATERNAL-PHYS.2 | rp25 | - | respiratory rate; diaphragm; ventilatory drive; oxygen consumption |
 | MATERNAL-PHYS.3 | rp25 | - | cell mass; leukocytosis; erythropoietin; protein s |
 | MATERNAL-PHYS.4 | rp25 | - | lordosis; lower esophageal sphincter; gallstone; symphysis |
 | MATERNAL-PHYS.5 | rp25 | - | glomerular filtration; renal plasma flow; glucosuria; pyelonephritis |
@@ -226,7 +226,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | TBL-EARLY-PREG.1 | rp25,rp4 | - | rescue; decidualiz; luteal-placental; quiescen |
 | TBL-EARLY-PREG.2 | rp30,rp26 | - | due date; redat; last menstrual period |
 | TBL-EARLY-PREG.3 | rp26 | - | cardiac activity; double decidual; sac diameter |
-| TBL-EARLY-PREG.4 | rp26 | - | chorionic gonadotropin; transvaginal; plateau; hemoperitoneum |
+| TBL-EARLY-PREG.4 | rp26 | - | chorionic gonadotropin; transvaginal; rises slowly; hemoperitoneum |
 | TBL-EARLY-PREG.5 | rp26 | - | pregnancy loss; adnexal mass; hydatidiform |
 | TBL-EARLY-PREG.6 | rp26 | - | pelvic inflammatory; cilia; shoulder pain; hemoperitoneum |
 | TBL-EARLY-PREG.7 | rp26 | - | pregnancy test; cardiac activity; 7 mm; hemodynamic |
@@ -244,7 +244,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | PRENATAL-CARE.12 | rp28 | - | misoprostol; pge1; collagen |
 | PRENATAL-CARE.13 | rp28 | - | vertex; transverse lie; frank breech; planned cesarean |
 | PRENATAL-CARE.14 | rp18 | - | acyclovir; prodrom; active lesion; disseminated |
-| PRENATAL-CARE.15 | rp18 | - | rectovaginal; penicillin; early-onset; bacteriuria |
+| PRENATAL-CARE.15 | rp18 | - | rectovaginal; 4 hours; early-onset; bacteriuria |
 | PRENATAL-CARE.16 | rp28,rp27 | - | biophysical profile; amniotic fluid index; accelerations; induction |
 | PRENATAL-CARE.17 | rp28 | - | opioid; nitrous oxide; local anesthe; respiratory depression |
 | THIRD-TRI.1 | rp27 | - | severe features; platelet; proteinuria; transaminase |
@@ -254,9 +254,9 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | THIRD-TRI.5 | rp27 | - | polycystic; shoulder dystocia; neonatal hypoglycemia; type 2 diabetes |
 | THIRD-TRI.6 | rp27 | - | internal os; decidua basalis; percreta; premature separation |
 | GTD.1 | rp26 | - | nlrp7; nulliparity; familial |
-| GTD.2 | rp26 | - | antecedent; theca lutein; 100,000 |
-| GTD.3 | rp26 | - | uterotonic; immune globulin; thyroid function |
-| GTD.4 | rp26 | - | plateau; actinomycin; risk score; gynecologic oncolog |
+| GTD.2 | rp26 | - | antecedent; 15 to 20 percent |
+| GTD.3 | rp26 | - | uterotonic; no more children; thyroid function; hormonal contraception |
+| GTD.4 | rp26 | - | plateau or rise; multiagent; hysterectomy; gynecologic oncolog |
 | GTD.5 | rp26 | - | hydropic; trophoblastic hyperplasia; p57; duplicat |
 | GTD.6 | rp26 | - | hematogenous; cytotrophoblast; intermediate trophoblast; epithelioid trophoblastic |
 | DELIVERY-SIM.1 | rp28 | - | ritgen; nuchal cord; anterior shoulder; cord clamp |
@@ -271,7 +271,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | BREAST-HISTO.4 | rp24 | - | dimeriz; pi3k; pertuzumab; lapatinib |
 | ANAT-BREAST.1 | rp3 | - | lactiferous sinus; subcutaneous fat; lobule |
 | ANAT-BREAST.2 | rp3 | - | axillary tail; inspection; palpation; clock |
-| ANAT-BREAST.3 | rp3 | - | pectoral fascia; pectoralis major; fixation; mobility |
+| ANAT-BREAST.3 | rp3 | - | pectoral fascia; pectoralis major; fixation; glide freely |
 | ANAT-BREAST.4 | rp3 | - | thoracoacromial; batson; supraclavicular; intercostal nerve |
 | TBL-BREAST.1 | rp3 | - | intralobular; interlobular; cuboidal |
 | TBL-BREAST.2 | rp3 | - | oxytocin; casein; lipid droplet; ejection |
@@ -284,14 +284,14 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | TBL-BREAST.9 | rp23 | - | biphasic; pericanalicular; stromal overgrowth; mobile |
 | TBL-BREAST.10 | rp24 | - | usual ductal hyperplasia; atypical ductal hyperplasia; atypical lobular hyperplasia; lobular carcinoma in situ |
 | TBL-BREAST.11 | rp24 | - | cribriform; monomorphic; streaming; myoepithelial |
-| TBL-BREAST.12 | rp24 | - | lumpectomy; incidental; multicentric; chemoprevention |
+| TBL-BREAST.12 | rp24 | - | lumpectomy; incidental; both breasts; chemoprevention |
 | TBL-BREAST.13 | rp24 | - | homologous recombination; ashkenazi; two-hit; age 70 |
 | TBL-BREAST.14 | rp24 | - | luminal b; her2-enriched; basal-like; pam50 |
 | TBL-BREAST.15 | rp24 | - | luminal a; ki-67; endocrine therapy; complete response |
-| TBL-BREAST.16 | rp24 | - | syncytial; mucin; tubular; spindle |
+| TBL-BREAST.16 | rp24 | - | syncytial; lakes of mucin; well-formed tubules; unusual sites |
 | TBL-BREAST.17 | rp24 | - | nottingham; hormone receptor; recurrence score; tumor size |
 | PREG-REVIEW.1 | rp25,rp27,rp28 | - | aortocaval; thromboembol; uterine blood flow |
-| PREG-REVIEW.2 | rp30 | - | last menstrual period; redat; discrepancy; embryo transfer |
+| PREG-REVIEW.2 | rp30 | - | last menstrual period; redat; more than 7 days; embryo transfer |
 | PREG-REVIEW.3 | rp30 | - | methotrexate; mycophenolate; misoprostol |
 | PREG-REVIEW.4 | rp30 | - | 0.4 mg; preconception; fortif |
 | PREG-REVIEW.5 | rp30 | - | carrier screening; spinal muscular; microarray; cell-free dna |
@@ -323,13 +323,13 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | ENDO-DM.9 | en16 | - | normal saline; insulin infusion; hypokalemia; hypophosphatemia |
 | ENDO-DM.10 | en15 | - | normoglycemia; impaired fasting glucose; random plasma glucose; glucose tolerance |
 | ENDO-DM.11 | en16 | - | 600; osmolality; mental status; thromboembol |
-| ENDO-DM.12 | en17,en15 | - | basal insulin; statin; ace inhibitor; dilated eye |
+| ENDO-DM.12 | en17,en15 | - | basal insulin; statin; a1c; dilated eye |
 | ENDO-THYROID.1 | en5 | - | isthmus; recurrent laryngeal; symporter; thyrotropin-releasing |
 | ENDO-THYROID.2 | en7,en6 | - | nuclear groove; pseudoinclusion; congo red; giant cell |
 | ENDO-THYROID.3 | en6 | - | methimazole; propylthiouracil; potassium iodide |
-| ENDO-THYROID.4 | en7,en5 | - | bethesda; anti-tpo; free t4; thyroglobulin |
+| ENDO-THYROID.4 | en7,en5 | - | bethesda; anti-tpo; free t4; rising thyroglobulin |
 | ENDO-THYROID.5 | en7,en5 | - | hydrocortisone; thyroxine-binding; chorionic gonadotropin |
-| ENDO-THYROID.6 | en9 | - | asymptomatic; nephrolithiasis; osteoporosis; psychiatric |
+| ENDO-THYROID.6 | en9 | - | routine labs; nephrolithiasis; osteoporosis; psychiatric |
 | ENDO-ADRENAL.1 | en11 | - | mesoderm; fetal zone; adrenal vein; chromaffin |
 | ENDO-ADRENAL.2 | en12 | - | adrenalitis; tuberculosis; orthostatic; salt craving |
 | ENDO-ADRENAL.3 | en12 | - | polyglandular; autoimmune regulator; hypoparathyroidism; schmidt |
@@ -358,31 +358,31 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | BICEP-WILLIAMS.1 | rp9 | - | oligomenorrhea; polymenorrhea; intermenstrual |
 | BICEP-WILLIAMS.2 | rp9,rp11 | - | heavy menstrual bleeding; 80 ml; variation; postmenopausal bleeding |
 | BICEP-WILLIAMS.3 | rp9 | - | gastrointestinal; hematuria; coagulopathy; von willebrand |
-| BICEP-WILLIAMS.4 | rp11,rp9 | - | retrospectiv; age 40; follicle-stimulating; karyotype |
+| BICEP-WILLIAMS.4 | rp11,rp9 | - | retrospectiv; age 40; two occasions; karyotype |
 | BICEP-WILLIAMS.5 | rp11 | - | estrone; androstenedione; parabasal |
 | BICEP-WILLIAMS.6 | rp11 | - | conjugated; observational; micronized; medroxyprogesterone |
 | BICEP-WILLIAMS.7 | rp11,rp14 | - | polyp; exogenous; hysteroscopy |
 | BICEP-WILLIAMS.8 | rp15 | - | prepubertal; postmenopausal; transvaginal; pregnancy test |
-| BICEP-WILLIAMS.9 | rp15 | - | psammoma; coffee bean; multiloculated |
-| BICEP-WILLIAMS.10 | rp14 | - | clear cell; indolent; p53; atroph |
+| BICEP-WILLIAMS.9 | rp15 | - | psammoma; coffee bean; mucin-filled |
+| BICEP-WILLIAMS.10 | rp14 | - | clear cell; indolent; p53; atrophic endometrium |
 | BICEP-WILLIAMS.11 | rp15,rp1 | - | endometrial stripe; antral follicle; anechoic; endocervical canal |
 | BICEP-WILLIAMS.12 | rp14,rp15,rp13 | - | mlh1; msh2; cowden; p53 |
 | BICEP-WILLIAMS.13 | rp15,rp14,rp13 | - | oral contracepti; salpingectomy; multiparity; endometriosis |
 | BICEP-MISHIMOTO.1 | rp19,rp5 | - | dartos; cremaster; tunica vaginalis; spermatic cord |
 | BICEP-MISHIMOTO.2 | rp5,rp20 | - | tunica vaginalis; obliterat; patent |
 | BICEP-MISHIMOTO.3 | rp20,rp5 | - | genitofemoral; inner thigh; ipsilateral; genital branch |
-| BICEP-MISHIMOTO.4 | rp20 | - | appendix testis; blue dot; hernia; referred |
+| BICEP-MISHIMOTO.4 | rp20 | - | appendix testis; blue dot; hernia; ureteral stone |
 | BICEP-MISHIMOTO.5 | rp20 | - | detorsion; ceftriaxone; doxycycline; levofloxacin |
 | BICEP-BROWN.1 | rp13,rp24,rp16 | - | mammogra; colorectal; age 21; hepatitis c |
 | BICEP-BROWN.2 | rp24,rp15,rp14,rp13 | - | pedigree; genetic counsel; lynch; first-degree |
 | BICEP-BROWN.3 | rp13 | - | uspstf; american cancer society; asccp; primary hpv |
 | BICEP-BROWN.4 | rp13,rp17 | - | 9-valent; 31, 33, 45; age 11; age 26 |
-| BICEP-BROWN.5 | rp16,rp17 | - | syphilis; self-collect; vaginal swab; nucleic acid amplification |
+| BICEP-BROWN.5 | rp16,rp17 | - | nontreponemal; self-collect; vaginal swab; nucleic acid amplification |
 | BICEP-BROWN.6 | rp10 | - | norelgestromin; etonogestrel; diaphragm; vasectomy |
 | BICEP-BROWN.7 | rp10 | - | abortifacient; implantation; body mass index |
-| BICEP-BROWN.8 | rp29 | - | capacity; disclosure; alternatives; voluntar |
+| BICEP-BROWN.8 | rp29 | - | capacity; risks and benefits; alternatives; voluntar |
 | BICEP-BROWN.9 | rp29 | - | chaperone; permission; speculum; sexual history |
-| BICEP-WEIAND.1 | rp9,rp22 | - | 12 months; primary infertility; secondary infertility; age 35 |
+| BICEP-WEIAND.1 | rp9,rp22 | - | 12 months of; primary infertility; secondary infertility; age 35 |
 | BICEP-WEIAND.2 | rp9,rp22 | - | semen analysis; ovarian reserve; mid-luteal progesterone; antral follicle |
 | BICEP-WEIAND.3 | rp9,rp22 | - | pelvic inflammatory; maternal age; varicocele; endometriosis |
 | BICEP-WEIAND.4 | rp22,rp9 | - | hypergonadotropic; hypogonadotropic; luteinizing; inhibin b |
@@ -396,9 +396,9 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | BICEP-WALSH.5 | rp7 | - | epiphyseal; aromatiz; growth plate |
 | BICEP-WALSH.6 | rp7 | - | turner; kallmann; anorexia; chronic illness |
 | BICEP-WALSH.7 | rp9,rp7 | - | delayed puberty; age 15; age 13; thelarche |
-| BICEP-WALSH.8 | rp30 | - | living children; abortion; twins |
+| BICEP-WALSH.8 | rp30 | - | living children; abortion; one birth |
 | BICEP-WALSH.9 | rp9 | - | outflow tract; compartment; hypogonadotropic; hypergonadotropic |
-| BICEP-WALSH.10 | rp9 | - | age 15; previously regular; 6 months |
+| BICEP-WALSH.10 | rp9 | - | age 15; previously regular; after irregular |
 | BICEP-WALSH.11 | rp9,rp6 | - | kallmann; anosmia; leptin; migrat |
 | BICEP-WALSH.12 | rp9,en3 | - | prolactinoma; sheehan; empty sella; cushing |
 | BICEP-WALSH.13 | rp9,rp5 | - | imperforate hymen; hematocolpos; rokitansky; curettage |
@@ -406,18 +406,18 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 | BICEP-WALSH.15 | rp9,rp11 | - | age 40; fragile x; alkylating; oophoritis |
 | BICEP-WALSH.16 | rp9 | - | pregnancy test; chorionic gonadotropin; physiologic |
 | BICEP-WALSH.17 | rp9 | - | energy availability; bone mineral density; relative energy deficiency; disordered eating |
-| BICEP-WALSH.18 | rp9 | - | follicle-stimulating; karyotype; pelvic ultrasound; thyroid-stimulating |
+| BICEP-WALSH.18 | rp9 | - | hcg is negative; karyotype; pelvic ultrasound; thyroid-stimulating |
 | BICEP-WALSH.19 | rp5,rp1 | - | magnetic resonance; sagittal; t2-weighted; junctional zone |
 | BICEP-WALSH.20 | rp8,rp6,rp19 | - | peripheral conversion; adipose; androstenedione; gynecomastia |
 | BICEP-WALSH.21 | rp6 | - | 47,xxy; 45,x; short stature; azoospermia |
 | BICEP-WALSH.22 | rp6 | - | maternal virilization; dihydrotestosterone; pubic hair; gonadectomy |
 | BICEP-WALSH.23 | rp6,rp29 | - | phenotypic sex; genotypic sex; gonadal sex; gender identity |
-| BICEP-LEWIS.1 | rp30 | - | term births; twins; stillbirth |
+| BICEP-LEWIS.1 | rp30 | - | term births; one birth; counts toward parity |
 | BICEP-LEWIS.2 | rp30 | - | maternal age; chronic hypertension; pregestational diabetes; interpregnancy interval |
 | BICEP-LEWIS.3 | rp26 | - | subchorionic; implantation bleeding; rh immun; cervical polyp |
 | BICEP-LEWIS.4 | rp30 | - | head circumference; early term; late term; 42 weeks |
 | BICEP-LEWIS.5 | rp30 | - | obstetric history; family history; allerg |
-| BICEP-LEWIS.6 | rp30,rp18 | - | phenylketonuria; ionizing radiation; rubella |
+| BICEP-LEWIS.6 | rp30,rp18 | - | phenylketonuria; ionizing radiation; congenital rubella |
 | BICEP-LEWIS.7 | rp27 | - | severe features; hemolysis; creatinine; pulmonary edema |
 | BICEP-LEWIS.8 | rp30,rp27 | - | cocaine; neonatal abstinence; fetal alcohol; low birth weight |
 | BICEP-LEWIS.9 | rp27 | - | epigastric; nifedipine; seizure prophylaxis |
@@ -452,7 +452,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 - `ANAT-PELVIS-LAB.13` → rp1,rp19 — Describe the gross anatomy of the testis, epididymis, ductus deferens, and prostate & related clinical applications.
 - `HP-UTERUS-OVARY.1` → rp8,rp14,rp15 — Describe the microscopic organization of the ovary, uterine tube, and uterus.
 - `HP-UTERUS-OVARY.2` → rp8 — Relate histological changes in the ovary, uterine tubes, and uterus to the ovarian cycle, menstrual cycle, and pregnancy.
-- `HP-UTERUS-OVARY.3` → rp9,rp14 — Explain how altered structure/function leads to clinical consequences (e.g., follicular cysts, tubal infertility, endometriosis, abnormal uterine bleeding, menopause).
+- `HP-UTERUS-OVARY.3` → rp9,rp14,rp15,rp11 — Explain how altered structure/function leads to clinical consequences (e.g., follicular cysts, tubal infertility, endometriosis, abnormal uterine bleeding, menopause).
 - `HP-UTERUS-OVARY.4` → rp5 — Recognize congenital and developmental anomalies of the uterus and their clinical implications.
 - `HP-UTERUS-OVARY.5` → rp14,rp9 — Explain the pathophysiology and clinicopathologic features of functional disorders, including polycystic ovary syndrome, endometrial hyperplasia, adenomyosis, and endometriosis.
 - `HP-UTERUS-OVARY.6` → rp16,rp14 — Discuss pelvic inflammatory disease and infections of the uterine tubes and endometrium: common pathogens, pathogenesis, morphology, and complications.
@@ -702,7 +702,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 - `PREG-REVIEW.11` → rp27 — Describe importance of blood sugar control in both pregestational and gestational diabetes, how gestational diabetes is diagnosed, its etiology and the risks postpartum.
 - `PREG-REVIEW.12` → rp27,rp30 — Apply your knowledge on screening for appropriate fetal growth including how uterine size correlates with gestational age.
 - `PREG-REVIEW.13` → rp30 — Recite which immunizations are indicated and contraindicated in pregnancy.
-- `PREG-REVIEW.14` → rp18 — Apply your knowledge on which infections are relevant to pregnancy, how to determine immune status, and the effects infection can have on pregnancy (parvovirus B19, CMV, HIV, HSV2, varicella, rubella, hepatitis B and C).
+- `PREG-REVIEW.14` → rp18,rp17 — Apply your knowledge on which infections are relevant to pregnancy, how to determine immune status, and the effects infection can have on pregnancy (parvovirus B19, CMV, HIV, HSV2, varicella, rubella, hepatitis B and C).
 - `PREG-REVIEW.15` → rp27 — Differentiate placental disorders of pregnancy and why their diagnosis prenatally is important.
 - `PREG-REVIEW.16` → rp30 — Describe the most common congenital fetal anomalies by organ system and how they are identified prenatally.
 - `PREG-REVIEW.17` → rp27 — Apply your knowledge to characterize several skin disorders that can occur in the third trimester and their impact on pregnancy.
@@ -773,7 +773,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 - `BICEP-MISHIMOTO.4` → rp20 — Develop a differential diagnosis of testicular pain and testicular mass.
 - `BICEP-MISHIMOTO.5` → rp20 — Explain the work-up and treatment plan of various pathologies associated with testicular pain.
 - `BICEP-BROWN.1` → rp13,rp24,rp16 — Understand the preventative screening services that should be provided to women based on age.
-- `BICEP-BROWN.2` → rp24,rp15,rp14 — Understand the role of family history in assessment for breast, ovarian, colon, and cervical cancers.
+- `BICEP-BROWN.2` → rp24,rp15,rp14,rp13 — Understand the role of family history in assessment for breast, ovarian, colon, and cervical cancers.
 - `BICEP-BROWN.3` → rp13 — Explain various screening recommendations for HPV and cervical cancer, including CURRENT USPSTF and ACS recommendations, and understand how to use the ASCCP app for management of abnormal cervical cytology.
 - `BICEP-BROWN.4` → rp13,rp17 — List the vaccination for prevention of cervical cancer, what serotypes are included, and what ages this should be offered.
 - `BICEP-BROWN.5` → rp16,rp17 — Explain what sexually transmitted infections should be screened in reproductive age patients and how to screen for them.
@@ -816,7 +816,7 @@ topic assignments and the reasons are in `audit/P1.4.md`.
 - `BICEP-LEWIS.3` → rp26 — Cite a differential diagnosis of vaginal bleeding in the first trimester and explain the work-up.
 - `BICEP-LEWIS.4` → rp30 — Explain how to establish gestational age via ultrasound, recite the gestational ages at which a patient is term, preterm, and post-term.
 - `BICEP-LEWIS.5` → rp30 — Explain the components of an accurate and thorough history in a pregnant patient.
-- `BICEP-LEWIS.6` → rp30 — Describe common teratogens (medications, environmental exposures, maternal medical conditions, and infections), their complications in embryologic development, and subsequent congenital anomalies.
+- `BICEP-LEWIS.6` → rp30,rp18 — Describe common teratogens (medications, environmental exposures, maternal medical conditions, and infections), their complications in embryologic development, and subsequent congenital anomalies.
 - `BICEP-LEWIS.7` → rp27 — Define normal blood pressure in pregnancy, as well as clinical signs/symptoms and laboratory findings that differentiate gestational hypertension, pre-eclampsia without severe features, pre-eclampsia with severe features, and HELLP syndrome.
 - `BICEP-LEWIS.8` → rp30,rp27 — Explain the risks and complications of substance use in pregnancy (i.e. cocaine, opioids, tobacco, alcohol).
 - `BICEP-LEWIS.9` → rp27 — Describe common signs and symptoms of pre-eclampsia and its treatment.

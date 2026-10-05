@@ -1,0 +1,89 @@
+<svg class="dia" viewBox="0 0 900 560" role="img" aria-label="Three prostate glands compared: a normal gland with papillary infolding and two cell layers, benign hyperplasia with crowded glands that keep the basal layer, and adenocarcinoma with small crowded single-layer glands, prominent nucleoli, perineural invasion and no basal layer">
+<text class="ttl" x="14" y="24" font-size="17">Prostate histology: BPH keeps the basal layer, cancer loses it</text>
+<line x1="14" y1="50" x2="44" y2="50" stroke="var(--a2)" stroke-width="3"/>
+<text x="52" y="55" font-size="14">Basal cell layer</text>
+<line x1="214" y1="50" x2="244" y2="50" stroke="var(--a1)" stroke-width="5"/>
+<text x="252" y="55" font-size="14">Secretory (luminal) cells</text>
+<circle cx="480" cy="50" r="5" fill="var(--crit)"/>
+<text x="492" y="55" font-size="14">Prominent nucleolus</text>
+<rect x="690" y="43" width="24" height="14" rx="3" fill="var(--surface-3)" stroke="var(--line)" stroke-width="1"/>
+<text x="722" y="55" font-size="14">Stroma</text>
+<rect x="14" y="70" width="288" height="318" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="96" font-size="15">Normal gland</text>
+<text x="28" y="118" font-size="14">The benign pattern</text>
+<rect x="36" y="132" width="244" height="138" rx="12" fill="var(--surface-3)"/>
+<rect x="306" y="70" width="288" height="318" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="320" y="96" font-size="15">Benign prostatic hyperplasia</text>
+<text x="320" y="118" font-size="14">Glands and stroma multiply</text>
+<rect x="328" y="132" width="244" height="138" rx="12" fill="var(--surface-3)"/>
+<rect x="598" y="70" width="288" height="318" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="612" y="96" font-size="15">Adenocarcinoma</text>
+<text x="612" y="118" font-size="14">Malignant glands</text>
+<rect x="620" y="132" width="244" height="138" rx="12" fill="var(--surface-3)"/>
+<ellipse cx="158" cy="201" rx="84" ry="58" fill="var(--surface)" stroke="var(--a2)" stroke-width="2.5"/>
+<ellipse cx="158" cy="201" rx="75" ry="49" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="5"/>
+<polygon points="217,172 224,184 205,185" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<polygon points="139,157 152,154 149,169" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<polygon points="86,200 88,186 105,195" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<polygon points="140,247 127,242 140,231" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<polygon points="218,225 209,236 199,222" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="158" cy="201" r="11" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="2"/>
+<circle cx="158" cy="201" r="5" fill="none" stroke="var(--warn)" stroke-width="1.5"/>
+<ellipse cx="380" cy="186" rx="44" ry="38" fill="var(--surface)" stroke="var(--a2)" stroke-width="2.5"/>
+<ellipse cx="380" cy="186" rx="35" ry="29" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="5"/>
+<polygon points="390,159 402,167 386,184" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<ellipse cx="470" cy="172" rx="42" ry="34" fill="var(--surface)" stroke="var(--a2)" stroke-width="2.5"/>
+<ellipse cx="470" cy="172" rx="33" ry="25" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="5"/>
+<polygon points="479,149 491,157 476,170" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<ellipse cx="496" cy="232" rx="40" ry="30" fill="var(--surface)" stroke="var(--a2)" stroke-width="2.5"/>
+<ellipse cx="496" cy="232" rx="31" ry="21" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="5"/>
+<polygon points="504,212 516,220 502,230" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<ellipse cx="404" cy="246" rx="34" ry="22" fill="var(--surface)" stroke="var(--a2)" stroke-width="2.5"/>
+<ellipse cx="404" cy="246" rx="25" ry="13" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="5"/>
+<polygon points="409,233 421,241 410,244" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="640" cy="158" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="670" cy="158" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="675" cy="150" r="3.5" fill="var(--crit)"/>
+<circle cx="700" cy="158" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="730" cy="158" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="655" cy="186" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="685" cy="186" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="715" cy="186" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="720" cy="178" r="3.5" fill="var(--crit)"/>
+<circle cx="745" cy="186" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="640" cy="214" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="645" cy="206" r="3.5" fill="var(--crit)"/>
+<circle cx="670" cy="214" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="700" cy="214" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="730" cy="214" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="735" cy="206" r="3.5" fill="var(--crit)"/>
+<circle cx="760" cy="214" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="655" cy="242" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="685" cy="242" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="690" cy="234" r="3.5" fill="var(--crit)"/>
+<circle cx="715" cy="242" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="745" cy="242" r="14" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<rect x="800" y="146" width="26" height="116" rx="12" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="2"/>
+<circle cx="786" cy="170" r="10" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="786" cy="204" r="10" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<circle cx="786" cy="238" r="10" fill="var(--surface-2)" stroke="var(--a1)" stroke-width="3"/>
+<text class="b" x="813" y="284" font-size="14" text-anchor="middle">Nerve</text>
+<text x="28" y="306" font-size="14">Large glands, papillary infolding</text>
+<text x="28" y="328" font-size="14">Two layers: basal and secretory</text>
+<text x="28" y="350" font-size="14">Corpora amylacea in older men</text>
+<text class="gd" x="28" y="372" font-size="14">p63 positive, AMACR negative</text>
+<text x="320" y="306" font-size="14">Glands and stroma both multiply</text>
+<text x="320" y="328" font-size="14">Transition zone nodules, DHT-driven</text>
+<text x="320" y="350" font-size="14">Basal layer kept; not premalignant</text>
+<text class="gd" x="320" y="372" font-size="14">p63 positive, AMACR negative</text>
+<text x="612" y="306" font-size="14">Small crowded glands, one layer</text>
+<text x="612" y="328" font-size="14">Infiltrative, little stroma between</text>
+<text x="612" y="350" font-size="14">Nucleoli; perineural invasion</text>
+<text class="cr" x="612" y="372" font-size="14">p63 negative, AMACR positive</text>
+<rect x="14" y="404" width="872" height="142" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="28" y="430" font-size="15">What the cancer cell is</text>
+<text x="28" y="458" font-size="14">Luminal secretory cell: androgen receptor, PSA and keratins 8 and 18 positive, basal markers lost</text>
+<text x="28" y="482" font-size="14">TMPRSS2-ERG fusion: an androgen-regulated promoter switches on the ERG growth gene</text>
+<text x="28" y="506" font-size="14">PTEN loss, MYC gain and TP53 loss in advanced disease; high-grade PIN is the precursor</text>
+<text x="28" y="530" font-size="14">Gleason grade scores the gland pattern: Grade Groups 1 to 5, from 3 + 3 to 5 + 5</text>
+</svg>

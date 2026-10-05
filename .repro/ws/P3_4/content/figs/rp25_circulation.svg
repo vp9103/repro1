@@ -1,0 +1,65 @@
+<svg class="dia" viewBox="0 0 900 520" role="img" aria-label="Causal chain of the pregnant circulation: hormones and the placenta lower systemic vascular resistance, blood pressure falls to a second-trimester nadir, the kidney activates renin, angiotensin and aldosterone, plasma volume rises 40 to 50 percent, red cells rise only 20 to 30 percent, and cardiac output rises 40 to 50 percent; a side panel shows supine caval compression and its fix">
+<text class="ttl" x="14" y="24" font-size="17">Why cardiac output rises while blood pressure falls</text>
+<rect x="24" y="44" width="280" height="64" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="36" y="70" font-size="15">Hormones dilate arterioles</text>
+<text x="36" y="94" font-size="14">progesterone, estrogen, relaxin</text>
+<rect x="316" y="44" width="274" height="64" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="328" y="70" font-size="15">Placenta adds a parallel</text>
+<text x="328" y="94" font-size="14">low-resistance circuit</text>
+<line x1="164" y1="108" x2="164" y2="128" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="159,128 164,136 169,128" fill="var(--ink-2)"/>
+<line x1="453" y1="108" x2="453" y2="128" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="448,128 453,136 458,128" fill="var(--ink-2)"/>
+<rect x="24" y="136" width="566" height="50" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="36" y="167" font-size="15">Systemic vascular resistance falls</text>
+<line x1="164" y1="186" x2="164" y2="206" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="159,206 164,214 169,206" fill="var(--ink-2)"/>
+<line x1="453" y1="186" x2="453" y2="206" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="448,206 453,214 458,206" fill="var(--ink-2)"/>
+<rect x="24" y="214" width="280" height="86" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="36" y="240" font-size="15">Blood pressure falls</text>
+<text x="36" y="264" font-size="14">nadir in second trimester</text>
+<text x="36" y="288" font-size="14">back to baseline by term</text>
+<rect x="316" y="214" width="274" height="86" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="328" y="240" font-size="15">Kidney senses underfilling</text>
+<text x="328" y="264" font-size="14">renin, angiotensin and</text>
+<text x="328" y="288" font-size="14">aldosterone rise</text>
+<line x1="453" y1="300" x2="453" y2="320" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="448,320 453,328 458,320" fill="var(--ink-2)"/>
+<rect x="316" y="328" width="274" height="64" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="328" y="354" font-size="15">Sodium and water retained</text>
+<text x="328" y="378" font-size="14">plasma volume up 40 to 50%</text>
+<line x1="453" y1="392" x2="453" y2="412" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="448,412 453,420 458,412" fill="var(--ink-2)"/>
+<line x1="316" y1="386" x2="264" y2="414" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="261.5,409.3 256,418 266.3,418.1" fill="var(--ink-2)"/>
+<rect x="316" y="420" width="274" height="86" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="328" y="446" font-size="15">Cardiac output up 40 to 50%</text>
+<text x="328" y="470" font-size="14">stroke volume first,</text>
+<text x="328" y="494" font-size="14">heart rate later</text>
+<rect x="24" y="420" width="280" height="86" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="36" y="446" font-size="15">Red cells up only 20 to 30%</text>
+<text x="36" y="470" font-size="14">hemoglobin falls:</text>
+<text x="36" y="494" font-size="14">dilutional anemia</text>
+<rect x="616" y="44" width="270" height="462" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="630" y="72" font-size="15">Lying supine after 20 weeks</text>
+<rect x="628" y="90" width="246" height="64" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text x="640" y="116" font-size="14">Uterus compresses the</text>
+<text x="640" y="140" font-size="14">inferior vena cava</text>
+<line x1="751" y1="154" x2="751" y2="176" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="746,176 751,184 756,176" fill="var(--ink-2)"/>
+<rect x="628" y="184" width="246" height="64" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text x="640" y="210" font-size="14">Venous return and</text>
+<text x="640" y="234" font-size="14">preload fall</text>
+<line x1="751" y1="248" x2="751" y2="270" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="746,270 751,278 756,270" fill="var(--ink-2)"/>
+<rect x="628" y="278" width="246" height="64" rx="6" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text x="640" y="304" font-size="14">Stroke volume and</text>
+<text x="640" y="328" font-size="14">pressure drop: faint</text>
+<line x1="751" y1="342" x2="751" y2="364" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="746,364 751,372 756,364" fill="var(--ink-2)"/>
+<rect x="628" y="372" width="246" height="64" rx="6" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.2"/>
+<text x="640" y="398" font-size="14">Fix: tilt her onto</text>
+<text x="640" y="422" font-size="14">her left side</text>
+<text x="630" y="474" font-size="14">Not hemorrhage, not heart failure</text>
+</svg>

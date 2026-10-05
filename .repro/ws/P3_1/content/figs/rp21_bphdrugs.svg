@@ -1,0 +1,48 @@
+<svg class="dia" viewBox="0 0 900 568" role="img" aria-label="BPH narrows the urethra in two ways: bulk from DHT-driven growth, treated with 5-alpha-reductase inhibitors, and smooth-muscle tone from alpha-1A receptors, treated with alpha-blockers">
+<text class="ttl" x="14" y="24" font-size="17">BPH has two parts, bulk and tone, and each has its own drug</text>
+<rect x="14" y="44" width="426" height="44" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="30" y="72" font-size="15">Static part: bulk of the adenoma</text>
+<rect x="460" y="44" width="426" height="44" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="476" y="72" font-size="15">Dynamic part: smooth-muscle tone</text>
+<rect x="14" y="108" width="426" height="40" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="30" y="134" font-size="15">Testosterone</text>
+<line x1="227" y1="148" x2="227" y2="179" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="227.0,188.0 221.0,178.0 233.0,178.0" fill="var(--ink-2)"/>
+<text x="244" y="174" font-size="14">5-alpha-reductase type 2</text>
+<rect x="14" y="190" width="426" height="40" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="30" y="216" font-size="15">Dihydrotestosterone (DHT), the potent androgen</text>
+<line x1="227" y1="230" x2="227" y2="261" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="227.0,270.0 221.0,260.0 233.0,260.0" fill="var(--ink-2)"/>
+<text x="244" y="256" font-size="14">binds the androgen receptor</text>
+<rect x="14" y="272" width="426" height="40" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text x="30" y="298" font-size="15">Gland and stromal cells multiply</text>
+<line x1="227" y1="312" x2="227" y2="337" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="227.0,346.0 221.0,336.0 233.0,336.0" fill="var(--ink-2)"/>
+<rect x="14" y="348" width="426" height="134" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="30" y="374" font-size="15">Finasteride, dutasteride block the enzyme</text>
+<text x="30" y="400" font-size="15">Gland shrinks over months; PSA falls by half</text>
+<text x="30" y="424" font-size="15">Lower libido, erectile dysfunction, gynecomastia</text>
+<text x="30" y="448" font-size="15">Teratogenic: pregnant women must not handle</text>
+<rect x="460" y="108" width="426" height="40" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="476" y="134" font-size="15">Norepinephrine from sympathetic nerves</text>
+<line x1="673" y1="148" x2="673" y2="179" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="673.0,188.0 667.0,178.0 679.0,178.0" fill="var(--ink-2)"/>
+<text x="690" y="174" font-size="14">alpha-1A receptors</text>
+<rect x="460" y="190" width="426" height="40" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="476" y="216" font-size="15">Stroma, capsule and bladder neck contract</text>
+<line x1="673" y1="230" x2="673" y2="261" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="673.0,270.0 667.0,260.0 679.0,260.0" fill="var(--ink-2)"/>
+<text x="690" y="256" font-size="14">urethra squeezed</text>
+<rect x="460" y="272" width="426" height="40" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text x="476" y="298" font-size="15">Weak stream, hesitancy, retention</text>
+<line x1="673" y1="312" x2="673" y2="337" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="673.0,346.0 667.0,336.0 679.0,336.0" fill="var(--ink-2)"/>
+<rect x="460" y="348" width="426" height="134" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="476" y="374" font-size="15">Tamsulosin, silodosin: alpha-1A selective</text>
+<text x="476" y="400" font-size="15">Relief within days; retrograde ejaculation, floppy iris</text>
+<text x="476" y="424" font-size="15">Terazosin, doxazosin: nonselective, orthostasis</text>
+<text x="476" y="452" font-size="14">Alpha-1A selectivity spares blood pressure</text>
+<rect x="14" y="498" width="872" height="58" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="30" y="522" font-size="15">Tadalafil 5 mg daily relaxes smooth muscle and treats both BPH and erectile dysfunction</text>
+<text x="30" y="546" font-size="15">TURP when drugs fail: retention, recurrent infection, stones, kidney injury</text>
+</svg>
