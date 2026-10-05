@@ -22,8 +22,8 @@ en9_hypercalcemia, en9_three_hpt missing.
 | P2.V | run 9 verifier (token 723a850e02) | + F3 regression row | .repro/verify/P2-report.md |
 | P2.6 | CLOSED 2026-10-05 (F3) | ledger row sha:29b015ac | |
 | V2 | DONE (finished before the restart; 8 new figures reviewed 2026-10-05) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
-| P1.4 | round 3 (reopened after P1.V run 2: 8/12): two workers write row proposals .repro/P1.4-proposals/A.md, B.md; orchestrator integrates with .repro/p14_integrate.py | --status P1.4 ok; then --verify P1 |
-| P1.V | run 2 FAIL 8/12 (BICEP-BROWN.2, ENDO-TBL-DM.3, PATHPHARM-MENSES-CONTRA.4, MENOPAUSE.13) | report .repro/verify/P1-report.md | re-verify after round 3 |
+| P1.4 | CLOSED 2026-10-05 (round 3, part->anchor proposals A.md/B.md) | 302 rows, 48 UNANCHORED, 4 topic changes | ledger row |
+| P1.V | run 3 verifier (token 80c4fa9a83) | 12 objectives + 10 spot-checks | .repro/verify/P1-report.md |
 
 ## Wave 1 (reproductive, Oct 9) queue
 1. Every rp topic now has questions, rapid and >= 1 drill. Figure gaps (hi blueprint items with no figure to pin a rapid item): BP-rp23-05 fat necrosis, BP-rp29-07 minors' consent, BP-rp11-04 bone/LDL, BP-rp17-10 molluscum, BP-rp17-05 perinatal HIV prevention, BP-rp17-12 HIV course and labs (en8_loop.svg has no JSON).
@@ -32,7 +32,7 @@ en9_hypercalcemia, en9_three_hpt missing.
    rp13 r2 · rp14 q4/r6 · rp15 q4/r4 · rp16 q7/r7 · rp17 q8 · rp18 r2 · rp21 q1/r1 · rp22 q1/r1 · rp23 q6 · rp24 q7/r14 ·
    rp25 q6/r5 · rp26 q2/r3 · rp27 q4/r11 · rp28 q10/r12 · rp29 q6. Also rp16r06 keyed option conspicuously longest.
 3. Engine: P2.4 -> P2.5 (F35) -> P2.6 (F31, F40, F33) -> P2.V with .repro/P2-REGRESSION.md.
-4. P3.1-P3.10 (after P1.V + P2.V record): --start, import fast topics/figs/glossary/guides (incl. V1's new rp4-rp7 figs) into the workspace, add the missing P1.4 key terms by real teaching (.repro/P1.4-coverage-impact.md: 274 terms in 209 rows; worst rp15, rp29, rp1, rp2), set rp3 yld mid and rp29 exam hi, --status, --close; up to 3 in parallel; P3.V.
+4. P3.1-P3.10 (after P1.V + P2.V record; gap list per topic: .repro/P3-coverage-gaps.md, 269 objective/BP lines): --start, import fast topics/figs/glossary/guides (incl. V1's new rp4-rp7 figs) into the workspace, add the missing P1.4 key terms by real teaching (.repro/P1.4-coverage-impact.md: 274 terms in 209 rows; worst rp15, rp29, rp1, rp2), set rp3 yld mid and rp29 exam hi, --status, --close; up to 3 in parallel; P3.V.
 5. Images P4.1-P4.5 (none exist): approved sources, licence + attribution copied, >= 800 px, < 2 MB, 4 look-alikes with
    whys; P4.6 overlays designed by Gemini (xmodel.py overlay), applied exactly.
 6. P5/P6/P7 imports; memory scenes >= 6 (P7.4); concept homes + path (P7.5); P8.1 click-through (1280/400, both themes).

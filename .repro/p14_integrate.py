@@ -4,7 +4,7 @@
 
 Each proposal line: | OBJ-ID | topics | terms | anchors | unanchored | note |
 Validates: every TOPIC-MAP row proposed exactly once; topics exist; 2-4 terms, lowercase, no '|', each >= 5 chars or an
-abbreviation (<= 5 chars, no spaces); anchors non-empty. Then rewrites the rows of .repro/ws/P1_4/scope/TOPIC-MAP.md
+or a measurement such as '7 mm' (the gate's own P1.4 check judges the format); anchors non-empty. Then rewrites the rows of .repro/ws/P1_4/scope/TOPIC-MAP.md
 (topics + terms; section kept) and appends a dated section with every UNANCHORED part and every topic change to
 .repro/ws/P1_4/audit/P1.4.md. Writes nothing when any check fails.
 """
@@ -53,8 +53,8 @@ def main(argv: list[str]) -> int:
         if not 2 <= len(terms) <= 4:
             probs.append(f"{oid}: {len(terms)} terms (2-4)")
         for t in terms:
-            if t != t.lower() or (len(t) < 5 and " " in t):
-                probs.append(f"{oid}: term '{t}' not lowercase or a spaced short term")
+            if t != t.lower():
+                probs.append(f"{oid}: term '{t}' not lowercase")
         if not p["anchors"] or p["anchors"] == "-":
             probs.append(f"{oid}: anchors empty")
     if probs:
