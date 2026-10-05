@@ -1,0 +1,44 @@
+<svg class="dia" viewBox="0 0 900 548" role="img" aria-label="Estrogen and bone, and the Women&#x27;s Health Initiative: estrogen lowers RANKL and raises osteoprotegerin so osteoclasts are restrained, and after menopause increased RANKL signaling with less osteoprotegerin removes trabecular bone first; estrogen plus medroxyprogesterone lowered hip fracture and colorectal cancer but raised invasive breast cancer, stroke, venous thromboembolism and coronary events">
+<text class="ttl" x="14" y="24" font-size="17">Estrogen and bone, and what the WHI weighed against it</text>
+<rect x="14" y="40" width="420" height="494" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.4"/>
+<text class="b" x="28" y="66" font-size="15">Estrogen restrains osteoclasts through RANKL</text>
+<rect x="28" y="82" width="392" height="146" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="42" y="108" font-size="15">Estrogen present</text>
+<text x="42" y="134" font-size="14">Osteoblasts make less RANKL,</text>
+<text x="42" y="156" font-size="14">more osteoprotegerin (a decoy receptor)</text>
+<text class="b" x="42" y="188" font-size="14">Osteoclasts are held back:</text>
+<text x="42" y="210" font-size="14">resorption matches formation</text>
+<line x1="224" y1="230" x2="224" y2="258" stroke="var(--ink-2)" stroke-width="3"/>
+<polygon points="218,256 224,266 230,256" fill="var(--ink-2)"/>
+<rect x="28" y="268" width="392" height="168" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="42" y="294" font-size="15">After menopause: estrogen falls</text>
+<text class="b" x="42" y="320" font-size="14">Increased RANKL signaling,</text>
+<text class="b" x="42" y="340" font-size="14">less osteoprotegerin</text>
+<text x="42" y="366" font-size="14">Osteoclasts are recruited and live longer</text>
+<text x="42" y="392" font-size="14">Trabecular bone goes first:</text>
+<text x="42" y="412" font-size="14">vertebral compression fractures</text>
+<rect x="28" y="450" width="392" height="70" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text x="42" y="476" font-size="14">Denosumab is an antibody against RANKL;</text>
+<text x="42" y="498" font-size="14">it treats postmenopausal osteoporosis</text>
+<rect x="446" y="40" width="440" height="494" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.4"/>
+<text class="b" x="460" y="66" font-size="15">Women's Health Initiative: estrogen plus</text>
+<text class="b" x="460" y="88" font-size="15">medroxyprogesterone versus placebo</text>
+<text x="460" y="110" font-size="14">Stopped early in 2002, after about 5 years</text>
+<rect x="460" y="126" width="160" height="286" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="gd" x="474" y="152" font-size="15">Fewer events</text>
+<text class="b" x="474" y="190" font-size="14">Hip fracture</text>
+<text class="b" x="474" y="256" font-size="14">Colorectal</text>
+<text class="b" x="474" y="276" font-size="14">cancer</text>
+<rect x="632" y="126" width="240" height="286" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="cr" x="646" y="152" font-size="15">More events</text>
+<text class="b" x="646" y="190" font-size="14">Invasive breast cancer</text>
+<text class="b" x="646" y="250" font-size="14">Stroke</text>
+<text class="b" x="646" y="310" font-size="14">Venous thromboembolism,</text>
+<text x="646" y="330" font-size="14">including pulmonary embolism</text>
+<text class="b" x="646" y="376" font-size="14">Coronary heart disease</text>
+<text class="b" x="646" y="396" font-size="14">events</text>
+<rect x="460" y="424" width="412" height="96" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.4"/>
+<text x="474" y="450" font-size="14">Timing hypothesis: cardiovascular harm was</text>
+<text x="474" y="472" font-size="14">greatest after age 60 or 10 years past menopause;</text>
+<text x="474" y="494" font-size="14">hormone therapy is not first-line for bone alone</text>
+</svg>

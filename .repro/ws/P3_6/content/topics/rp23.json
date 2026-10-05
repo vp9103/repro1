@@ -1,0 +1,384 @@
+{
+ "id": "rp23",
+ "t": "Benign breast disease and gynecomastia",
+ "sub": "Age, the cells that grow and the presence of atypia sort benign breast lumps, discharges and inflammations, and explain when a man's breast enlargement is harmless.",
+ "yld": "mid",
+ "exam": "hi",
+ "mins": 13,
+ "bp": [
+  "BP-rp23-01",
+  "BP-rp23-02",
+  "BP-rp23-03",
+  "BP-rp23-04",
+  "BP-rp23-05",
+  "BP-rp23-06",
+  "BP-rp23-07",
+  "BP-rp23-08",
+  "BP-rp23-09",
+  "BP-rp23-10",
+  "BP-rp23-11",
+  "BP-rp23-12"
+ ],
+ "obj": [
+  "TBL-BREAST.3",
+  "TBL-BREAST.4",
+  "TBL-BREAST.5",
+  "TBL-BREAST.6",
+  "TBL-BREAST.7",
+  "TBL-BREAST.8",
+  "TBL-BREAST.9",
+  "BREAST-HISTO.1"
+ ],
+ "pretest": [
+  {
+   "q": "A 23-year-old woman has a mobile, rubbery, painless breast mass. Which lesion is most likely?",
+   "o": [
+    "Fibroadenoma",
+    "Phyllodes tumor",
+    "Invasive ductal carcinoma",
+    "Intraductal papilloma"
+   ],
+   "a": 0,
+   "why": "Fibroadenoma is the most common benign breast tumor in women under 35. It grows from intralobular stroma together with ducts, forming a well-circumscribed, rubbery mass that slides under the fingers.",
+   "w": {
+    "Phyllodes tumor": "Phyllodes tumors usually appear a decade or two later, around age 50, and grow quickly to a large size with leaf-like stromal fronds.",
+    "Invasive ductal carcinoma": "Carcinoma is rare at 23 and typically feels hard, irregular and fixed because desmoplastic stroma anchors it; a sliding rubbery lump argues against it.",
+    "Intraductal papilloma": "A papilloma grows inside a large duct beneath the areola and usually shows itself as bloody nipple discharge, not a peripheral lump."
+   }
+  },
+  {
+   "q": "Which benign breast biopsy finding raises the risk of later invasive cancer the most?",
+   "o": [
+    "Atypical ductal hyperplasia",
+    "Apocrine metaplasia",
+    "Sclerosing adenosis",
+    "Simple cysts"
+   ],
+   "a": 0,
+   "why": "Atypical ductal hyperplasia is a proliferation that shares some features of low-grade carcinoma in situ and raises risk about four to five times. Proliferation without atypia adds only 1.5 to 2 times, and nonproliferative change adds none.",
+   "w": {
+    "Apocrine metaplasia": "Apocrine metaplasia of cyst linings is a nonproliferative fibrocystic change made of pink, granular cells and carries no added cancer risk.",
+    "Sclerosing adenosis": "Sclerosing adenosis is proliferative without atypia, adding only about 1.5 to 2 times the risk, although its calcifications can mimic carcinoma.",
+    "Simple cysts": "Fluid-filled cysts are part of nonproliferative fibrocystic change; they may be tender or palpable but do not change future cancer risk."
+   }
+  },
+  {
+   "q": "A breastfeeding woman has fever and a red, painful, warm wedge of breast. Which organism is most likely?",
+   "o": [
+    "Staphylococcus aureus",
+    "Escherichia coli",
+    "Candida albicans",
+    "Streptococcus agalactiae"
+   ],
+   "a": 0,
+   "why": "Acute mastitis starts when skin bacteria, usually Staphylococcus aureus, enter through cracks in the nipple during the first weeks of nursing. Treatment is continued breastfeeding or pumping plus an antistaphylococcal antibiotic such as dicloxacillin or cephalexin.",
+   "w": {
+    "Escherichia coli": "Enteric gram-negative rods cause urinary and postpartum uterine infections but rarely reach the breast, which is seeded from the mother's skin and the infant's mouth.",
+    "Candida albicans": "Candida causes nipple thrush with burning pain and shiny skin, often alongside infant oral thrush, but not a febrile wedge of inflamed tissue.",
+    "Streptococcus agalactiae": "Group B streptococcus colonizes the vagina and threatens the newborn and the uterus; it causes mastitis far less often than staphylococci do."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Which breast lesion is most likely at each age?"
+  ],
+  [
+   "p",
+   "Age is the strongest clue to what a breast lump is. In adolescents and women under about 35, the usual solid mass is a **fibroadenoma**. From the 20s until menopause, lumpy, tender breasts usually mean {{rp23_fcc|fibrocystic change}}, and bloody discharge from one duct usually means an intraductal papilloma. After menopause the lobules involute, benign lumps become uncommon, and a new mass in a **postmenopausal** woman is carcinoma until proven otherwise. Imaging follows the same logic: ultrasound comes first under 30, because dense glandular tissue hides lesions on mammograms. In men the common lesion is **gynecomastia**, and male breast cancer is rare."
+  ],
+  [
+   "f",
+   "rp23_age"
+  ],
+  [
+   "p",
+   "Fibrocystic change is the most common breast condition of premenopausal women, and it is an exaggerated response to cyclic hormones rather than a true disease. It presents as bilateral, **multifocal** lumpiness that is tender in the **premenstrual** week and eases after menses. Three nonproliferative changes make it up: fluid-filled cysts, some of which look blue through their wall; stromal fibrosis after cysts rupture; and **apocrine metaplasia**, in which cyst-lining cells become large and pink with apical snouts like apocrine sweat gland cells. A palpable cyst can be aspirated, and if the fluid is not bloody and the mass disappears, no further work-up is needed."
+  ],
+  [
+   "h",
+   "Which benign changes raise the risk of breast cancer, and by how much?"
+  ],
+  [
+   "p",
+   "Benign changes are sorted by two questions: is the epithelium proliferating, and do the proliferating cells look atypical? **Nonproliferative** changes such as cysts, fibrosis, apocrine metaplasia and a simple fibroadenoma add no risk. Proliferative disease without atypia, which includes usual ductal hyperplasia, **sclerosing adenosis** and intraductal papilloma, raises the relative risk of invasive cancer to about 1.5 to 2. {{rp23_adh|Atypical ductal hyperplasia}} and atypical lobular hyperplasia, monotonous proliferations that share some features of carcinoma in situ, raise it to about 4 to 5. The added risk is not confined to the biopsied breast, so these lesions mainly mark a woman at risk, and all of them keep their **myoepithelial** layer and basement membrane."
+  ],
+  [
+   "p",
+   "Family history is a separate multiplier. A woman with one **first-degree relative** with breast cancer has roughly twice the average risk, and the risk climbs further when the relative was diagnosed young, when several relatives are affected, or when the family carries a BRCA mutation. Risk models combine these factors with age and reproductive history."
+  ],
+  [
+   "f",
+   "rp23_risk"
+  ],
+  [
+   "t",
+   [
+    "Category",
+    "Examples",
+    "What the microscope shows",
+    "Relative risk"
+   ],
+   [
+    [
+     "Nonproliferative",
+     "Cysts, fibrosis, apocrine metaplasia, simple fibroadenoma",
+     "No increase in epithelial layers",
+     "About 1"
+    ],
+    [
+     "Proliferative without atypia",
+     "Usual ductal hyperplasia, sclerosing adenosis, intraductal papilloma",
+     "Extra layers of mixed cells; myoepithelium intact",
+     "1.5 to 2"
+    ],
+    [
+     "Atypical hyperplasia",
+     "Atypical ductal and atypical lobular hyperplasia",
+     "Monotonous, evenly spaced cells partly filling ducts or lobules",
+     "4 to 5"
+    ],
+    [
+     "Carcinoma in situ",
+     "DCIS and LCIS",
+     "Malignant cells filling ducts or lobules; basement membrane intact",
+     "8 to 10"
+    ],
+    [
+     "First-degree relative",
+     "Mother, sister or daughter with breast cancer",
+     "Not a lesion; inherited and shared risk",
+     "About 2"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "key",
+   "Atypia, not proliferation alone, moves the risk",
+   "The jump that matters is from proliferation to **atypia**. Usual ductal hyperplasia and sclerosing adenosis add little risk because their cells are a mixed population. Atypical hyperplasia is a clonal, monotonous population that resembles low-grade carcinoma in situ, so it raises risk about fourfold to fivefold, and atypia found on a core biopsy is usually excised."
+  ],
+  [
+   "h",
+   "How do fibroadenoma and phyllodes tumor differ?"
+  ],
+  [
+   "p",
+   "Both tumors grow from the specialized intralobular stroma and carry ducts with them, so both are biphasic. A **fibroadenoma** appears in young women as a mobile, rubbery, well-circumscribed mass whose stroma surrounds and compresses the ducts into slits. It is estrogen-sensitive, so it may grow in pregnancy and shrink or calcify after menopause, and a simple fibroadenoma does not become cancer. A {{rp23_phy|phyllodes tumor}} peaks a decade or two later, around 50, grows quickly and can become very large. Its **stromal overgrowth** pushes into cystic spaces as **leaf-like** fronds covered by epithelium. Phyllodes tumors range from benign to malignant; even benign ones recur if excised with a close margin, and malignant ones spread through the blood rather than to axillary nodes."
+  ],
+  [
+   "t",
+   [
+    "Feature",
+    "Fibroadenoma",
+    "Phyllodes tumor"
+   ],
+   [
+    [
+     "Typical age",
+     "Under 35",
+     "Around 50"
+    ],
+    [
+     "Growth",
+     "Slow, mobile, rubbery",
+     "Rapid, often large"
+    ],
+    [
+     "Stroma",
+     "Bland and evenly cellular",
+     "Hypercellular with mitoses, overgrowing the ducts"
+    ],
+    [
+     "Architecture",
+     "Ducts compressed into slits",
+     "Leaf-like fronds projecting into clefts"
+    ],
+    [
+     "Behavior",
+     "Benign and hormone-responsive",
+     "Benign to malignant; recurs locally"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "A rapidly growing fibroadenoma in an older woman",
+   "Both tumors feel smooth and look well circumscribed on imaging, so a small core biopsy can miss the stromal overgrowth. A large or rapidly growing mass that looks like a **fibroadenoma** in a woman over 40 should be excised completely, because a phyllodes tumor left with a close margin tends to recur."
+  ],
+  [
+   "h",
+   "What causes nipple discharge, breast inflammation and cancer mimics?"
+  ],
+  [
+   "p",
+   "The color and pattern of nipple discharge point to its source. **Bloody** discharge from a single duct in a premenopausal woman usually comes from an {{rp23_idp|intraductal papilloma}}, a benign papillary growth in a large lactiferous duct beneath the areola whose fronds have fibrovascular cores covered by luminal and myoepithelial cells. Milky discharge from both breasts and many ducts is **galactorrhea**, caused by high prolactin: a prolactinoma, dopamine-blocking drugs such as antipsychotics and metoclopramide, primary hypothyroidism (high TRH also stimulates lactotrophs), or repeated nipple stimulation. Thick, sticky green-brown discharge in an older woman suggests duct ectasia."
+  ],
+  [
+   "p",
+   "Four inflammatory conditions are separated by setting and histology. **Acute mastitis** occurs in the first weeks of nursing, when *Staphylococcus aureus* enters cracked nipple skin and neutrophils fill the tissue; it is treated with continued breastfeeding or pumping and dicloxacillin or cephalexin, with drainage if an abscess forms. **Periductal mastitis** strikes smokers, whose lactiferous ducts undergo squamous metaplasia and plug with keratin. Duct ectasia affects older multiparous women, whose dilated subareolar ducts fill with thick secretions and are ringed by plasma cells. {{rp23_fn|Fat necrosis}} follows trauma or surgery: injured fat cells release fatty acids that bind calcium, a process called **saponification**, leaving a firm, calcified mass that mimics carcinoma."
+  ],
+  [
+   "t",
+   [
+    "Condition",
+    "Typical patient",
+    "Histology",
+    "Clue"
+   ],
+   [
+    [
+     "Acute mastitis",
+     "Nursing mother, first weeks",
+     "Neutrophils, possible abscess",
+     "Fever and a red, tender wedge"
+    ],
+    [
+     "Periductal mastitis",
+     "Smoker, not lactating",
+     "Squamous metaplasia, keratin plugs, granulomas",
+     "Recurrent subareolar abscess, fistula, nipple inversion"
+    ],
+    [
+     "Duct ectasia",
+     "Multiparous woman in her 50s or 60s",
+     "Dilated ducts, thick secretions, plasma cells",
+     "Green-brown discharge, periareolar mass"
+    ],
+    [
+     "Fat necrosis",
+     "Recent trauma or surgery",
+     "Dead fat cells, foamy macrophages, calcium soaps",
+     "Calcified mass mimicking cancer"
+    ]
+   ]
+  ],
+  [
+   "steps",
+   [
+    "How smoking leads to a recurrent subareolar abscess",
+    [
+     [
+      "Smoking injures the duct lining",
+      "Toxins in cigarette smoke are thought to trigger squamous metaplasia of the epithelium that lines the lactiferous ducts near the nipple."
+     ],
+     [
+      "Keratin plugs the duct",
+      "The new squamous cells shed keratin, which blocks the duct so that it dilates behind the plug."
+     ],
+     [
+      "The duct ruptures",
+      "Keratin spills into the surrounding stroma and provokes intense chronic and granulomatous inflammation, felt as a painful red mass beneath the areola."
+     ],
+     [
+      "A fistula forms and the nipple retracts",
+      "The abscess can drain through a tract to the edge of the areola while scarring pulls the nipple inward; unless the whole duct is excised, the cycle repeats."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How do implants, congenital anomalies and gynecomastia present?"
+  ],
+  [
+   "p",
+   "The body walls off any **silicone** implant in a fibrous capsule. When that capsule thickens and tightens, the breast becomes firm, painful and distorted, which is **capsular contracture**, the most common implant complication. Rupture lets silicone leak into or beyond the capsule, where it provokes a foreign-body giant cell reaction and can travel to axillary nodes. Large studies have not proven that implants cause breast carcinoma or **autoimmune** connective tissue disease. The best-established cancer link is {{rp23_alcl|breast implant-associated anaplastic large cell lymphoma}}, a CD30-positive, ALK-negative T-cell lymphoma that arises around textured implants and usually presents years later as a sudden fluid collection."
+  ],
+  [
+   "p",
+   "Congenital anomalies trace back to the **milk line**, a ridge of ectoderm that runs from the axilla to the groin in the embryo and normally regresses everywhere except the chest. Remnants along it produce {{rp23_poly|polythelia}}, extra nipples often mistaken for moles, or polymastia, accessory breast tissue most often in the axilla that swells in pregnancy and can develop any breast disease. **Amastia**, complete absence of a breast, is rare. **Poland syndrome** combines unilateral absence of the sternal head of pectoralis major with ipsilateral breast hypoplasia or amastia and hand anomalies such as short, webbed fingers. At puberty, juvenile hypertrophy can enlarge one or both breasts rapidly and massively."
+  ],
+  [
+   "p",
+   "Gynecomastia is benign growth of ducts and periductal stroma in a male breast, driven by an **estrogen-to-androgen** imbalance. It is **physiologic** at three ages: in newborns exposed to maternal estrogen, at puberty when estradiol rises before testosterone reaches adult levels, and in older men as testosterone falls and fat aromatizes more androgen to estrogen. Pathologic causes raise estrogen or blunt androgen action: cirrhosis, Klinefelter syndrome, hyperthyroidism, estrogen- or hCG-secreting testicular tumors, and drugs such as spironolactone, ketoconazole, cimetidine, finasteride and androgen deprivation therapy. Gynecomastia is a rubbery, often tender disc centered beneath the areola, whereas male breast cancer is a hard, **eccentric** mass, often with nipple retraction or bloody discharge."
+  ],
+  [
+   "why",
+   "Why does a man with alcohol-associated cirrhosis develop gynecomastia?",
+   "The liver normally clears androstenedione and estrogens. When it fails, more androstenedione reaches fat, where aromatase converts it to estrone and estradiol. Cirrhosis also raises sex hormone-binding globulin, which binds testosterone more tightly than estradiol, so free testosterone falls while free estrogen rises, and alcohol itself injures Leydig cells. The net result is more estrogen action and less androgen action at the breast, so ducts and stroma proliferate. The same estrogen excess explains his spider angiomas, palmar erythema and testicular atrophy, and spironolactone for ascites adds androgen receptor blockade."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp23_male",
+    "q": "A 67-year-old man has a hard, painless mass off to one side of his left nipple. Which reasoning is best?",
+    "o": [
+     "Gynecomastia is the most common male breast lesion, so any breast mass in a man can be observed",
+     "Older men develop physiologic gynecomastia, so an off-center mass is expected as testosterone falls",
+     "A hard mass eccentric to the nipple does not fit gynecomastia, which sits centered under the areola, so cancer must be excluded",
+     "Male breast cancer causes bilateral tender enlargement, so a painless one-sided mass is reassuring"
+    ],
+    "a": 2,
+    "why": "Gynecomastia grows from the ducts beneath the nipple, so it forms a rubbery disc centered under the areola, often on both sides and often tender. Male breast cancer arises at one point in the gland and forms a hard, painless mass that is usually eccentric and may tether the skin or retract the nipple. Age raises the likelihood of both, so location and texture, not age alone, decide whether a man needs mammography and biopsy."
+   }
+  ],
+  [
+   "vis",
+   "rp23"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these statements about benign breast disease are true?",
+  "items": [
+   [
+    "Fibroadenoma is the most common breast tumor under 35",
+    1
+   ],
+   [
+    "Apocrine metaplasia adds no cancer risk",
+    1
+   ],
+   [
+    "Atypical ductal hyperplasia raises risk about 4 to 5 times",
+    1
+   ],
+   [
+    "Intraductal papilloma causes bloody discharge from one duct",
+    1
+   ],
+   [
+    "Periductal mastitis is strongly linked to smoking",
+    1
+   ],
+   [
+    "Fat necrosis can calcify and mimic carcinoma",
+    1
+   ],
+   [
+    "Phyllodes tumors show leaf-like stromal fronds",
+    1
+   ],
+   [
+    "Gynecomastia is centered beneath the areola",
+    1
+   ],
+   [
+    "Capsular contracture is the most common implant complication",
+    1
+   ],
+   [
+    "Sclerosing adenosis loses its myoepithelial layer",
+    0
+   ],
+   [
+    "Duct ectasia is caused by Staphylococcus aureus",
+    0
+   ],
+   [
+    "Silicone implants are proven to cause autoimmune disease",
+    0
+   ],
+   [
+    "Simple fibroadenomas often turn into carcinoma",
+    0
+   ],
+   [
+    "Pubertal gynecomastia usually needs surgery",
+    0
+   ]
+  ]
+ }
+}

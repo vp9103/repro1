@@ -1,0 +1,56 @@
+[
+ {
+  "k": "rp5_sry",
+  "t": "SRY gene",
+  "d": "The sex-determining region of the Y chromosome; it encodes testis-determining factor, a transcription factor that turns the supporting cells of the indifferent gonad into Sertoli cells.",
+  "alt": [
+   "SRY"
+  ]
+ },
+ {
+  "k": "rp5_amh",
+  "t": "Anti-Müllerian hormone",
+  "d": "A glycoprotein secreted by fetal Sertoli cells that makes the paramesonephric (Müllerian) duct on its own side regress; its absence or a receptor defect causes persistent Müllerian duct syndrome.",
+  "alt": [
+   "AMH"
+  ]
+ },
+ {
+  "k": "rp5_gartner",
+  "t": "Gartner duct cyst",
+  "d": "A cyst in the lateral wall of the vagina formed from a remnant of the mesonephric (Wolffian) duct, which normally regresses in females.",
+  "alt": []
+ },
+ {
+  "k": "rp5_gub",
+  "t": "Gubernaculum",
+  "d": "The mesenchymal cord from the lower pole of the gonad to the labioscrotal swelling; it guides testicular descent in males and becomes the ovarian and round ligaments in females.",
+  "alt": []
+ },
+ {
+  "k": "rp5_pv",
+  "t": "Processus vaginalis",
+  "d": "The pouch of peritoneum that precedes the testis through the inguinal canal; its distal part becomes the tunica vaginalis, and failure to close causes an indirect hernia or communicating hydrocele.",
+  "alt": []
+ },
+ {
+  "k": "rp5_mrkh",
+  "t": "Mayer-Rokitansky-Küster-Hauser syndrome",
+  "d": "Müllerian agenesis in a 46,XX patient: normal ovaries, breasts and pubic hair with an absent uterus and upper vagina, causing primary amenorrhea; renal anomalies are common.",
+  "alt": [
+   "MRKH"
+  ]
+ },
+ {
+  "k": "rp5_sox9",
+  "t": "SOX9",
+  "d": "A transcription factor that SRY switches on in the supporting cells of the gonad; it makes them Sertoli cells and drives AMH, and its loss causes 46,XY sex reversal with campomelic dysplasia.",
+  "alt": []
+ },
+ {
+  "k": "rp5_insl3",
+  "t": "INSL3",
+  "d": "Insulin-like factor 3, a hormone from fetal Leydig cells that swells the gubernaculum and holds the testis near the deep inguinal ring in the transabdominal phase of descent; its loss can leave the testis undescended.",
+  "alt": []
+ }
+]

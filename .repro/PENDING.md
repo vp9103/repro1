@@ -25,7 +25,8 @@ en9_hypercalcemia, en9_three_hpt missing.
 | P3.3 | CLOSED 2026-10-05 (rp7-rp9, 29 gap lines) | | ledger row sha:92b2ca5d |
 | P3.4 | CLOSED 2026-10-05 (rp10, rp11, rp29) | | ledger row sha:455e012e |
 | P3.6 | worker | rp15, rp23, rp24 (.repro/ws/P3_6) | --status P3.6 ok |
-| P3.5 | worker | rp12, rp13, rp14 (.repro/ws/P3_5) | --status P3.5 ok |
+| P3.5 | CLOSED 2026-10-05 (rp12-rp14; img rows to re-insert in P4.3: audit/P3.5.md section 5) | | ledger row sha:0e4d2e10 |
+| P3.7 | worker | rp16, rp17, rp18 (.repro/ws/P3_7) | --status P3.7 ok |
 | P2.6 | CLOSED 2026-10-05 (F3) | ledger row sha:29b015ac | |
 | V2 | DONE (finished before the restart; 8 new figures reviewed 2026-10-05) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
 | P1.4 | CLOSED 2026-10-05 (round 3, part->anchor proposals A.md/B.md) | 302 rows, 48 UNANCHORED, 4 topic changes | ledger row |

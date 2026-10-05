@@ -1,0 +1,51 @@
+<svg class="dia" viewBox="0 0 900 440" role="img" aria-label="Follicle stages from primordial to Graafian and corpus luteum, with the oocyte arrested in prophase I until the LH surge and in metaphase II until fertilization">
+<text class="ttl" x="14" y="24" font-size="17">Follicle stages and the oocyte's two meiotic arrests</text>
+<rect x="14" y="40" width="170" height="100" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="26" y="64" font-size="15">Primordial</text>
+<text x="26" y="88" font-size="14">one layer of flat</text>
+<text x="26" y="108" font-size="14">pregranulosa cells</text>
+<rect x="188" y="40" width="170" height="100" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="200" y="64" font-size="15">Primary</text>
+<text x="200" y="88" font-size="14">cuboidal granulosa,</text>
+<text x="200" y="108" font-size="14">zona pellucida</text>
+<rect x="362" y="40" width="170" height="100" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="374" y="64" font-size="15">Secondary</text>
+<text x="374" y="88" font-size="14">antrum opens,</text>
+<text x="374" y="108" font-size="14">theca layers form</text>
+<rect x="536" y="40" width="170" height="100" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="548" y="64" font-size="15">Graafian</text>
+<text x="548" y="88" font-size="14">large antrum,</text>
+<text x="548" y="108" font-size="14">cumulus oophorus</text>
+<rect x="710" y="40" width="170" height="100" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="722" y="64" font-size="15">Corpus luteum</text>
+<text x="722" y="88" font-size="14">progesterone for</text>
+<text x="722" y="108" font-size="14">14 days, then a</text>
+<text x="722" y="128" font-size="14">corpus albicans</text>
+<rect x="14" y="160" width="606" height="84" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="28" y="186" font-size="15">Primary oocyte: arrested in prophase I (2N, 4C)</text>
+<text x="28" y="210" font-size="15">From fetal life until its follicle's LH surge</text>
+<text x="28" y="232" font-size="15">Years of arrest raise the risk of nondisjunction</text>
+<rect x="626" y="160" width="254" height="84" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="638" y="186" font-size="15">Secondary oocyte</text>
+<text x="638" y="210" font-size="15">arrested in metaphase II</text>
+<text x="638" y="232" font-size="15">1N, 2C, first polar body</text>
+<rect x="14" y="262" width="270" height="88" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="286" font-size="15">Before birth</text>
+<text x="28" y="310" font-size="15">Oogonia divide by mitosis,</text>
+<text x="28" y="332" font-size="15">then stop in prophase I</text>
+<line x1="286" y1="306" x2="302" y2="306" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="302,300 311,306 302,312" fill="var(--ink-2)"/>
+<rect x="314" y="262" width="270" height="88" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="328" y="286" font-size="15">LH surge</text>
+<text x="328" y="310" font-size="15">Meiosis I completes;</text>
+<text x="328" y="332" font-size="15">first polar body forms</text>
+<line x1="586" y1="306" x2="602" y2="306" stroke="var(--ink-2)" stroke-width="2.5"/>
+<polygon points="602,300 611,306 602,312" fill="var(--ink-2)"/>
+<rect x="614" y="262" width="270" height="88" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="628" y="286" font-size="15">Fertilization</text>
+<text x="628" y="310" font-size="15">Meiosis II completes;</text>
+<text x="628" y="332" font-size="15">ovum + second polar body</text>
+<rect x="14" y="368" width="870" height="60" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="28" y="392" font-size="15">Ovulation releases a secondary oocyte still arrested in metaphase II</text>
+<text x="28" y="414" font-size="15">An unfertilized egg never finishes meiosis</text>
+</svg>
