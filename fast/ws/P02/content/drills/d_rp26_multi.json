@@ -3,30 +3,108 @@
  "c": "rp26",
  "kind": "multi",
  "t": "Ectopic, loss, mole or cancer?",
- "tags": ["normal-vs-pathologic", "histology-to-diagnosis"],
+ "tags": [
+  "normal-vs-pathologic",
+  "histology-to-diagnosis"
+ ],
  "key": "Ask where the trophoblast is and whose genes it carries: outside the uterus means ectopic, a failed embryo with ordinary genes means pregnancy loss, all-paternal diploid tissue without a fetus is a complete mole, triploid tissue with a fetus is a partial mole, and villus-free trophoblast spreading by blood is choriocarcinoma.",
  "cols": [
-  {"id": "ect", "l": "Ectopic pregnancy"},
-  {"id": "loss", "l": "Pregnancy loss"},
-  {"id": "cm", "l": "Complete mole"},
-  {"id": "pm", "l": "Partial mole"},
-  {"id": "cc", "l": "Choriocarcinoma"}
+  {
+   "id": "ect",
+   "l": "Ectopic pregnancy"
+  },
+  {
+   "id": "loss",
+   "l": "Pregnancy loss"
+  },
+  {
+   "id": "cm",
+   "l": "Complete mole"
+  },
+  {
+   "id": "pm",
+   "l": "Partial mole"
+  },
+  {
+   "id": "cc",
+   "l": "Choriocarcinoma"
+  }
  ],
  "items": [
-  ["Adnexal mass with an empty uterus and hCG above 3,500 mIU/mL", "ect", "Above about 3,500 mIU/mL a normal intrauterine sac should be visible, so an empty uterus with an adnexal mass points to a tubal pregnancy."],
-  ["Shoulder-tip pain and hypotension at 7 weeks", "ect", "Blood from a ruptured tube irritates the diaphragm, referring pain to the shoulder through the phrenic nerve, while the hemorrhage drops the blood pressure."],
-  ["Tubal adhesions after chlamydial salpingitis", "ect", "Infection destroys ciliated cells and scars the tube, slowing the embryo so that it implants in the tube wall, usually the ampulla."],
-  ["Crown-rump length of 7 mm or more with no heartbeat", "loss", "This ultrasound criterion makes the diagnosis of early pregnancy loss definitive, so a wanted pregnancy is never ended on a guess."],
-  ["Autosomal trisomy in the products of conception", "loss", "At least half of first-trimester losses carry chromosomal errors, mostly trisomies from maternal meiotic nondisjunction; triploidy, not trisomy, marks the partial mole."],
-  ["Open internal os with the sac still in the uterus", "loss", "A dilated internal os with the gestation retained is an inevitable abortion; once the cervix opens, the loss cannot be stopped."],
-  ["46,XX with every chromosome paternal", "cm", "An empty ovum fertilized by one sperm that duplicates gives a diploid, all-paternal genome, so no embryo forms and trophoblast overgrows."],
-  ["Negative p57 immunostaining", "cm", "p57 is expressed only from the maternal allele, so tissue with no maternal genome cannot make it; this separates the complete mole from the partial."],
-  ["Snowstorm uterus with no fetus, large for dates", "cm", "Diffusely swollen villi fill the cavity with cystic echoes and no embryo, and their bulk makes the uterus larger than the dates predict."],
-  ["69,XXY karyotype", "pm", "A normal ovum fertilized by two sperm gives one maternal and two paternal sets, and the maternal set lets fetal parts form."],
-  ["Growth-restricted fetus with a focally cystic placenta", "pm", "Triploidy produces an abnormal fetus that cannot survive, while the extra paternal set swells only some villi, leaving a patchy cystic placenta."],
-  ["Patchy villous swelling with focal trophoblast hyperplasia", "pm", "Only some villi swell and only focal trophoblast proliferates, because one maternal set tempers the paternal excess; a complete mole shows diffuse swelling and hyperplasia."],
-  ["Sheets of trophoblast with no chorionic villi", "cc", "Choriocarcinoma is built of malignant cytotrophoblast and syncytiotrophoblast without villi, unlike moles and invasive moles, which always contain villi."],
-  ["Lung nodules and hemoptysis months after a term birth", "cc", "Early vascular invasion seeds the lungs by blood, and this cancer can follow any pregnancy, including a normal delivery, not only a mole."],
-  ["Brain and liver metastases with very high hCG", "cc", "Bloodborne spread reaches the brain and liver in advanced disease, yet the tumor stays highly chemosensitive, so many patients are still cured."]
+  [
+   "Adnexal mass with an empty uterus and hCG above 3,500 mIU/mL",
+   "ect",
+   "Above about 3,500 mIU/mL a normal intrauterine sac should be visible, so an empty uterus with an adnexal mass points to a tubal pregnancy."
+  ],
+  [
+   "Shoulder-tip pain and hypotension at 7 weeks",
+   "ect",
+   "Blood from a ruptured tube irritates the diaphragm, referring pain to the shoulder through the phrenic nerve, while the hemorrhage drops the blood pressure."
+  ],
+  [
+   "Tubal adhesions after chlamydial salpingitis",
+   "ect",
+   "Infection destroys ciliated cells and scars the tube, slowing the embryo so that it implants in the tube wall, usually the ampulla."
+  ],
+  [
+   "Visible embryo with no heartbeat",
+   "loss",
+   "A visible embryo that has no cardiac activity means the pregnancy has failed, so a wanted pregnancy is not ended on a guess."
+  ],
+  [
+   "Autosomal trisomy in the products of conception",
+   "loss",
+   "At least half of first-trimester losses carry chromosomal errors, mostly trisomies from maternal meiotic nondisjunction; triploidy, not trisomy, marks the partial mole."
+  ],
+  [
+   "Open internal os with the sac still in the uterus",
+   "loss",
+   "A dilated internal os with the gestation retained is an inevitable abortion; once the cervix opens, the loss cannot be stopped."
+  ],
+  [
+   "46,XX with every chromosome paternal",
+   "cm",
+   "An empty ovum fertilized by one sperm that duplicates gives a diploid, all-paternal genome, so no embryo forms and trophoblast overgrows."
+  ],
+  [
+   "Negative p57 immunostaining",
+   "cm",
+   "p57 is expressed only from the maternal allele, so tissue with no maternal genome cannot make it; this separates the complete mole from the partial."
+  ],
+  [
+   "Snowstorm uterus with no fetus, large for dates",
+   "cm",
+   "Diffusely swollen villi fill the cavity with cystic echoes and no embryo, and their bulk makes the uterus larger than the dates predict."
+  ],
+  [
+   "69,XXY karyotype",
+   "pm",
+   "A normal ovum fertilized by two sperm gives one maternal and two paternal sets, and the maternal set lets fetal parts form."
+  ],
+  [
+   "Growth-restricted fetus with a focally cystic placenta",
+   "pm",
+   "Triploidy produces an abnormal fetus that cannot survive, while the extra paternal set swells only some villi, leaving a patchy cystic placenta."
+  ],
+  [
+   "Patchy villous swelling with focal trophoblast hyperplasia",
+   "pm",
+   "Only some villi swell and only focal trophoblast proliferates, because one maternal set tempers the paternal excess; a complete mole shows diffuse swelling and hyperplasia."
+  ],
+  [
+   "Sheets of trophoblast with no chorionic villi",
+   "cc",
+   "Choriocarcinoma is built of malignant cytotrophoblast and syncytiotrophoblast without villi, unlike moles and invasive moles, which always contain villi."
+  ],
+  [
+   "Lung nodules and hemoptysis months after a term birth",
+   "cc",
+   "Early vascular invasion seeds the lungs by blood, and this cancer can follow any pregnancy, including a normal delivery, not only a mole."
+  ],
+  [
+   "Brain and liver metastases with very high hCG",
+   "cc",
+   "Bloodborne spread reaches the brain and liver in advanced disease, yet the tumor stays highly chemosensitive, so many patients are still cured."
+  ]
  ]
 }
