@@ -28,9 +28,10 @@ en9_hypercalcemia, en9_three_hpt missing.
 | P3.8 | CLOSED 2026-10-05 (rp19-rp22; rp20 img rows: audit/P3.8.md section 4) | | ledger row sha:858855ec |
 | COV-A | DONE (378 TAUGHT / 12 PARTIAL / 0 MISSING / 1 ERROR) | rp1-rp15 | .repro/coverage/wave1-A.md |
 | COV-B | DONE (375 TAUGHT / 9 PARTIAL / 0 MISSING / 1 ERROR + rp26 RhIG note) | rp16-rp30 | .repro/coverage/wave1-B.md |
-| COV-fix-1 | worker | P3.1 (rp1, rp2), P3.3 (rp9), P3.4 (rp10, rp11 + ERROR) reopened | --status ok, then --close each |
+| COV-fix-1 | CLOSED 2026-10-05 (P3.1, P3.3, P3.4; 14 rows incl. rp29 + ERROR) | | ledger rows |
 | I03 | worker (merge with --skip I03 until done) | images rp16, rp17, rp26 + Gemini overlays (fast/ws/I03) | fast_check I03 ok |
-| COV-fix-2 | queued (after batch 1 closes; <= 3 open) | 2a: P3.2 (rp5), P3.5 (rp13, rp14), P3.6 (rp24); 2b: P3.7 (rp16, rp17), P3.8 (rp19, rp20), P3.9 (rp25 ERROR, rp26 RhIG <12 wk, rp30) | |
+| COV-fix-2a | worker | P3.2 (rp5), P3.5 (rp13, rp14), P3.6 (rp24) | --status ok |
+| COV-fix-2b | queued | P3.7 (rp16, rp17 molluscum tx), P3.8 (rp19, rp20), P3.9 (rp25 ERROR, rp26 RhIG <12 wk, rp30) | |
 | P3.9 | CLOSED 2026-10-05 (rp25, rp30, rp26) | | ledger row sha:28e99992 |
 | P3.10 | CLOSED 2026-10-05 (rp27, rp28) - all 30 wave-1 lessons accepted | | ledger row sha:a1b1b67f |
 | P3.5 | CLOSED 2026-10-05 (rp12-rp14; img rows to re-insert in P4.3: audit/P3.5.md section 5) | | ledger row sha:0e4d2e10 |

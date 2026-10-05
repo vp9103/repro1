@@ -1,0 +1,524 @@
+{
+ "id": "rp26",
+ "t": "Early pregnancy: ectopic, pregnancy loss and trophoblastic disease",
+ "sub": "A four-question framework, pregnant, intrauterine, viable, stable, that sorts first-trimester bleeding into normal pregnancy, loss, ectopic pregnancy or molar disease.",
+ "yld": "hi",
+ "exam": "hi",
+ "mins": 14,
+ "bp": [
+  "BP-rp26-01",
+  "BP-rp26-02",
+  "BP-rp26-03",
+  "BP-rp26-04",
+  "BP-rp26-05",
+  "BP-rp26-06",
+  "BP-rp26-07",
+  "BP-rp26-08",
+  "BP-rp26-09",
+  "BP-rp26-10",
+  "BP-rp26-11",
+  "BP-rp26-12"
+ ],
+ "obj": [
+  "TBL-EARLY-PREG.3",
+  "TBL-EARLY-PREG.4",
+  "TBL-EARLY-PREG.5",
+  "TBL-EARLY-PREG.6",
+  "TBL-EARLY-PREG.7",
+  "GTD.1",
+  "GTD.2",
+  "GTD.3",
+  "GTD.4",
+  "GTD.5",
+  "GTD.6",
+  "BICEP-LEWIS.3",
+  "TBL-EARLY-PREG.2"
+ ],
+ "pretest": [
+  {
+   "q": "A woman with a positive pregnancy test has a serum hCG of 4,000 mIU/mL and no intrauterine sac on transvaginal ultrasound. What is the main concern?",
+   "o": [
+    "Ectopic pregnancy",
+    "Normal early intrauterine pregnancy",
+    "Complete molar pregnancy",
+    "Threatened abortion"
+   ],
+   "a": 0,
+   "why": "Above the discriminatory level, about 3,500 mIU/mL, a normal intrauterine gestational sac should be visible on transvaginal ultrasound, so an empty uterus means ectopic pregnancy until proven otherwise; a completed miscarriage is the main alternative.",
+   "w": {
+    "Normal early intrauterine pregnancy": "A normal pregnancy this far along should already show a gestational sac; too early to see is plausible only below the discriminatory level.",
+    "Complete molar pregnancy": "A complete mole fills the uterus with heterogeneous cystic tissue, the snowstorm pattern, so the cavity would not look empty.",
+    "Threatened abortion": "Threatened abortion requires a visible intrauterine pregnancy with a closed os; here no intrauterine pregnancy has been seen at all."
+   }
+  },
+  {
+   "q": "Which karyotype is typical of a complete hydatidiform mole?",
+   "o": [
+    "46,XX, all paternal",
+    "69,XXY, two paternal sets",
+    "46,XX, one maternal and one paternal set",
+    "45,X, maternal"
+   ],
+   "a": 0,
+   "why": "An empty ovum with no maternal chromosomes is fertilized by one sperm that duplicates its DNA, or less often by two sperm, so every chromosome is paternal; without maternal genes no fetus forms.",
+   "w": {
+    "69,XXY, two paternal sets": "Triploidy from a normal egg fertilized by two sperm is the partial mole, which has fetal parts and a lower hCG.",
+    "46,XX, one maternal and one paternal set": "A biparental diploid karyotype is a normal conceptus; a complete mole has lost every maternal chromosome.",
+    "45,X, maternal": "Monosomy X is Turner syndrome, a common chromosomal cause of early pregnancy loss with cystic hygroma, not a molar pregnancy."
+   }
+  },
+  {
+   "q": "A woman at 9 weeks has bleeding, a closed cervical os and an embryo with cardiac activity. What is the diagnosis?",
+   "o": [
+    "Threatened abortion",
+    "Inevitable abortion",
+    "Missed abortion",
+    "Incomplete abortion"
+   ],
+   "a": 0,
+   "why": "Bleeding with a closed os and a live intrauterine embryo is a threatened abortion; most of these pregnancies continue, and management is expectant.",
+   "w": {
+    "Inevitable abortion": "Inevitable abortion means the internal os has opened with the products still inside; loss cannot be stopped once the cervix dilates.",
+    "Missed abortion": "A missed abortion is a nonviable pregnancy with no cardiac activity, retained behind a closed os, often with little or no bleeding.",
+    "Incomplete abortion": "Incomplete abortion means some tissue has passed through an open os and some remains, so bleeding and cramping continue."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How do you work through bleeding or pain in early pregnancy?"
+  ],
+  [
+   "p",
+   "Every patient with bleeding or pain in early pregnancy is sorted by four questions asked in order. Is she pregnant? A urine or serum **pregnancy test** detects human chorionic gonadotropin (hCG), which proves that trophoblast exists somewhere but not where. Is the pregnancy intrauterine? Transvaginal ultrasound answers that. Is it viable? Cardiac activity and a rising hCG trend answer that. Is she stable? Syncope, shoulder pain, severe pain or **hemodynamic instability** means possible rupture and internal bleeding, which comes before every other step. Pain plus bleeding plus a positive test without a confirmed intrauterine pregnancy is an **ectopic** pregnancy until proven otherwise, and an Rh-negative woman who bleeds is given Rh immune globulin."
+  ],
+  [
+   "f",
+   "rp26_framework"
+  ],
+  [
+   "p",
+   "Transvaginal ultrasound shows a predictable sequence. A **gestational sac** appears at about 5 weeks. A {{rp26_dds|double decidual sign}}, two concentric echogenic rings from the two layers of decidua, supports an intrauterine position, whereas the pseudosac of an ectopic pregnancy has a single ring. The mean sac diameter, the average of three perpendicular measurements, grows about 1 mm a day. A **yolk sac** at 5 to 6 weeks is the first definite sign of an intrauterine pregnancy, a **fetal pole** follows at about 6 weeks, and cardiac activity appears at 6 to 7 weeks. Gestational age runs about 2 weeks ahead of fetal age, and the crown-rump length gives the most accurate first-trimester dating."
+  ],
+  [
+   "p",
+   "The hCG number is read against the ultrasound. The {{rp26_dz|discriminatory zone}} is the hCG level above which a normal intrauterine sac should be visible; current guidance uses a level as high as 3,500 mIU/mL so that a wanted pregnancy is never treated as ectopic too early. An empty uterus above that level suggests ectopic pregnancy or a completed loss. Below it, an empty uterus is a {{rp26_pul|pregnancy of unknown location}}, resolved with **serial** hCG measurements 48 hours apart and repeat imaging. A viable intrauterine pregnancy rises by at least about 49, 40 or 33 percent in 48 hours when the starting hCG is below 1,500, 1,500 to 3,000 or above 3,000 mIU/mL; a failing pregnancy falls, and an ectopic often rises slowly or plateaus."
+  ],
+  [
+   "t",
+   [
+    "Finding on transvaginal ultrasound",
+    "Usually seen by",
+    "What it tells you"
+   ],
+   [
+    [
+     "Gestational sac",
+     "About 5 weeks",
+     "Fluid sac with a double decidual ring; a pseudosac can mimic it"
+    ],
+    [
+     "Yolk sac",
+     "5 to 6 weeks",
+     "First definite sign of an intrauterine pregnancy"
+    ],
+    [
+     "Fetal pole",
+     "About 6 weeks",
+     "The embryo; its crown-rump length dates the pregnancy"
+    ],
+    [
+     "Cardiac activity",
+     "6 to 7 weeks",
+     "Viability; none at a crown-rump length of 7 mm or more means loss"
+    ],
+    [
+     "Mean sac diameter of 25 mm or more",
+     "Any time",
+     "No embryo means an anembryonic pregnancy, a loss"
+    ],
+    [
+     "Empty uterus with hCG above about 3,500",
+     "Any time",
+     "Ectopic pregnancy or completed loss until proven otherwise"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "One hCG value cannot locate a pregnancy",
+   "A single hCG proves only that trophoblast exists. Location needs ultrasound, and viability needs a trend over 48 hours, so treating on one number risks giving methotrexate to a wanted pregnancy or sending home a woman whose ectopic is still growing. Pain, instability or free fluid override any hCG value."
+  ],
+  [
+   "h",
+   "What else causes first-trimester bleeding, and how is it worked up?"
+  ],
+  [
+   "p",
+   "About a quarter of pregnant women bleed in the first trimester, and most of those pregnancies continue. The work-up is vital signs, a speculum and bimanual examination, a quantitative hCG, blood type with Rh status and transvaginal ultrasound. An Rh-negative woman with a loss, an ectopic pregnancy or an aspiration receives **Rh immune globulin** within 72 hours (50 or 120 mcg before 12 weeks, 300 mcg after), because fetal red cells can sensitize her; evidence is weakest for threatened abortion."
+  ],
+  [
+   "t",
+   [
+    "Cause",
+    "Clue"
+   ],
+   [
+    [
+     "Implantation bleeding",
+     "Light spotting about a week after conception, near the expected period; the pregnancy is normal"
+    ],
+    [
+     "Subchorionic hemorrhage",
+     "Blood collection at the placental edge on ultrasound; usually resolves, with a slightly higher risk of loss"
+    ],
+    [
+     "Cervical polyp or ectropion",
+     "Bleeding after intercourse; a red polyp or friable cervix on speculum examination"
+    ],
+    [
+     "Threatened or inevitable abortion",
+     "Bleeding with a live embryo; the os is closed in threatened loss and open in inevitable loss"
+    ],
+    [
+     "Ectopic pregnancy",
+     "Pain, adnexal mass, empty uterus, hCG that rises slowly"
+    ],
+    [
+     "Complete mole",
+     "Very high hCG, uterus large for dates, snowstorm pattern"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Why is ectopic pregnancy the diagnosis you cannot miss?"
+  ],
+  [
+   "p",
+   "A fertilized egg normally implants in the uterus about 6 to 7 days after fertilization, so anything that slows tubal transport lets it implant in the tube. The biggest risk is tubal scarring and ciliary damage from **pelvic inflammatory disease**, usually chlamydial; others are a prior ectopic, tubal surgery, smoking, infertility treatment and conception with an IUD in place. About 1 to 2 percent of pregnancies are ectopic, and most implant in the **ampulla** of the uterine tube. The tube cannot expand like the uterus, so trophoblast erodes its wall and vessels, and **rupture** causes hemoperitoneum, the leading cause of first-trimester maternal death."
+  ],
+  [
+   "p",
+   "The classic picture is amenorrhea, abdominal pain and vaginal bleeding with a tender adnexal mass, an empty uterus and an hCG that rises slowly. Shoulder pain means blood irritating the diaphragm, and hypotension with peritoneal signs means rupture, so an unstable patient goes straight to surgery, usually laparoscopic salpingectomy. A stable patient with an unruptured ectopic, no embryonic cardiac activity, a modest hCG (commonly below about 5,000 mIU/mL) and reliable follow-up can receive intramuscular **methotrexate**, a folate antagonist that inhibits dihydrofolate reductase and kills dividing trophoblast. Her hCG must then fall at least 15 percent between days 4 and 7 and be followed to zero. Methotrexate is avoided with rupture, embryonic cardiac activity, breastfeeding or liver, kidney or immune disease."
+  ],
+  [
+   "h",
+   "How do the types of pregnancy loss differ?"
+  ],
+  [
+   "p",
+   "Early pregnancy loss ends about 10 to 20 percent of recognized pregnancies, and at least half of first-trimester losses are caused by fetal chromosomal abnormalities, mostly autosomal trisomies, not by exercise, sex or stress. Each type is named from two findings: whether the cervical os is open and whether tissue has passed. A **threatened** abortion is bleeding with a closed os and a live embryo, and most continue. An **inevitable** abortion has an open os with the products still inside. Incomplete means some tissue has passed, complete means the uterus is empty, and a **missed** abortion is a nonviable pregnancy retained behind a closed os. Management is a shared choice among waiting, mifepristone then misoprostol, and uterine aspiration."
+  ],
+  [
+   "t",
+   [
+    "Type",
+    "Cervical os",
+    "Tissue passed",
+    "Status of the pregnancy"
+   ],
+   [
+    [
+     "Threatened",
+     "Closed",
+     "None",
+     "Viable; most continue"
+    ],
+    [
+     "Inevitable",
+     "Open",
+     "None yet",
+     "Loss cannot be stopped"
+    ],
+    [
+     "Incomplete",
+     "Open",
+     "Some",
+     "Tissue retained; bleeding continues"
+    ],
+    [
+     "Complete",
+     "Closed",
+     "All",
+     "Uterus empty; hCG falling"
+    ],
+    [
+     "Missed",
+     "Closed",
+     "None",
+     "Nonviable embryo or empty sac retained"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "key",
+   "Recurrent loss has a short list of causes",
+   "Two or more losses call for a search for treatable causes. {{rp26_apls|Antiphospholipid syndrome}} causes placental thrombosis and is treated with low-dose aspirin plus heparin. A **septate uterus** gives the embryo a poorly vascularized implantation site and can be resected. A parental **balanced translocation**, found by karyotyping both partners, produces unbalanced embryos. Uncontrolled diabetes and thyroid disease complete the list of **recurrent** loss causes."
+  ],
+  [
+   "h",
+   "What makes a pregnancy molar, and who is at risk?"
+  ],
+  [
+   "p",
+   "A hydatidiform mole is a conception whose trophoblast overgrows because it carries too many paternal chromosomes. In a **complete mole**, an ovum that has lost its own nucleus is fertilized by one sperm that duplicates, giving 46,XX with every chromosome **paternal**, or less often by two sperm. With no maternal genes, no embryo forms, and every villus swells into a grape-like vesicle ringed by proliferating trophoblast. In a **partial mole**, a normal ovum is fertilized by two sperm, giving a triploid 69,XXY karyotype; the maternal set allows fetal parts to form, but the fetus is abnormal and not viable."
+  ],
+  [
+   "f",
+   "rp26_moles"
+  ],
+  [
+   "call",
+   "key",
+   "Paternal genes build placenta; maternal genes build the embryo",
+   "Genomic imprinting explains the pattern. Paternally expressed genes drive trophoblast growth, while maternally expressed genes such as p57 are needed for the embryo. A complete mole, with only paternal chromosomes, grows trophoblast and no fetus and is negative on the {{rp26_p57|p57 immunostain}}; a partial mole keeps one maternal set, so fetal parts form and villous cells stain positive."
+  ],
+  [
+   "p",
+   "Very high hCG produces most of the clinical clues. Women present with vaginal bleeding or passage of grape-like tissue, a uterus large for dates, **hyperemesis** gravidarum (also common with twins), preeclampsia before 20 weeks, theca lutein ovarian cysts and sometimes hyperthyroidism. Ultrasound of a complete mole shows a **snowstorm** or cluster of grapes pattern with no fetus."
+  ],
+  [
+   "p",
+   "Under the microscope a complete mole has diffusely {{rp26_hydropic|hydropic}} villi, swollen by edema into central acellular cisterns, ringed by circumferential trophoblastic hyperplasia with atypia and no fetal tissue or vessels. A partial mole has two villous populations, swollen and normal-sized, with scalloped outlines, only focal trophoblastic hyperplasia and fetal tissue or fetal red cells. The p57 stain separates them."
+  ],
+  [
+   "t",
+   [
+    "Feature",
+    "Complete mole",
+    "Partial mole"
+   ],
+   [
+    [
+     "Karyotype",
+     "46,XX (sometimes 46,XY), all paternal",
+     "69,XXY triploid, one maternal set"
+    ],
+    [
+     "Fetal parts",
+     "None",
+     "Present but abnormal"
+    ],
+    [
+     "hCG",
+     "Very high",
+     "Normal or mildly raised"
+    ],
+    [
+     "p57 staining",
+     "Negative",
+     "Positive"
+    ],
+    [
+     "Ultrasound",
+     "Snowstorm, no fetus",
+     "Focal cystic placenta with a fetus"
+    ],
+    [
+     "Progression to neoplasia",
+     "About 15 to 20 percent",
+     "Under 5 percent"
+    ],
+    [
+     "Usual presentation",
+     "Suspected mole, uterus large for dates",
+     "Looks like a missed abortion"
+    ]
+   ]
+  ],
+  [
+   "t",
+   [
+    "Risk factor",
+    "How strong"
+   ],
+   [
+    [
+     "Extremes of maternal age",
+     "Teenagers and women over 35; 5 to 10 times the risk at 45 or older"
+    ],
+    [
+     "Prior mole",
+     "About 1 to 2 percent after one mole, against 0.1 percent at baseline; 15 to 20 percent after two"
+    ],
+    [
+     "Nulliparity and Asian ancestry",
+     "Modest increase; moles are 2 to 3 times more common in Asia"
+    ],
+    [
+     "Familial recurrent hydatidiform mole",
+     "Autosomal recessive NLRP7 mutation: repeated complete moles in one woman"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How is a molar pregnancy managed, and when does it become cancer?"
+  ],
+  [
+   "steps",
+   [
+    "Managing a molar pregnancy, in order",
+    [
+     [
+      "Work up and prepare for bleeding",
+      "Baseline hCG, blood count, blood type and Rh, coagulation, kidney, liver and **thyroid function** tests and a chest x-ray come first, because hCG can cause hyperthyroidism and a molar uterus can hemorrhage."
+     ],
+     [
+      "Evacuate by suction",
+      "Suction curettage with a large cannula, with a **uterotonic** such as oxytocin once emptying begins, controls bleeding. Medical evacuation is avoided because it bleeds more and leaves more persistent disease; hysterectomy suits women who want no more children, especially over 40. Rh-negative women receive Rh immune globulin."
+     ],
+     [
+      "Follow hCG to zero",
+      "As of 2025, serial hCG is measured weekly until undetectable and then monthly for several months (about 6 in the course, fewer after a partial mole), because a mole can persist after a perfect evacuation."
+     ],
+     [
+      "Prevent pregnancy meanwhile",
+      "Reliable hormonal contraception keeps a new pregnancy from raising hCG and hiding a recurrence; an IUD waits until hCG is undetectable, because of the risk of perforation and bleeding."
+     ],
+     [
+      "Act on a plateau or rise",
+      "hCG that plateaus or rises means persistent trophoblast, so the patient is staged and scored for neoplasia and referred to a gynecologic oncologist."
+     ]
+    ]
+   ]
+  ],
+  [
+   "p",
+   "A **plateau or rise** in hCG after evacuation defines {{rp26_gtn|gestational trophoblastic neoplasia}}: four values within 10 percent over 3 weeks, a rise of more than 10 percent over 2 weeks, or hCG still detectable at 6 months. About 15 to 20 percent of complete moles progress, but under 5 percent of partial moles. Pre-evacuation hCG above 100,000 mIU/mL, theca lutein cysts over 6 cm, a uterus large for dates and age over 40 predict persistence. Neoplasia can follow any pregnancy, and the antecedent pregnancy is a mole in about 50 percent, a normal pregnancy in 25 percent and an abortion or ectopic pregnancy in 25 percent."
+  ],
+  [
+   "f",
+   "rp26_gtn"
+  ],
+  [
+   "p",
+   "Work-up adds a chest x-ray or CT and pelvic, liver and brain imaging, because tumor spreads by blood. Disease is staged by extent (I uterus, II pelvis, III lung, IV other sites) and scored by the WHO prognostic **risk score**, which adds points for age, antecedent pregnancy, months since it, hCG, tumor size, metastatic sites and prior chemotherapy. A score of 6 or less is low risk and is cured with single-agent methotrexate or **actinomycin** D; 7 or more is high risk and needs multiagent chemotherapy (EMA-CO). Placental site trophoblastic tumor and epithelioid trophoblastic tumor respond poorly to chemotherapy and are treated by hysterectomy."
+  ],
+  [
+   "t",
+   [
+    "Entity",
+    "Origin and histology",
+    "Behavior",
+    "hCG",
+    "Treatment"
+   ],
+   [
+    [
+     "**Invasive mole**",
+     "Molar villi invade the myometrium",
+     "Local; rarely spreads",
+     "High",
+     "Methotrexate or actinomycin D"
+    ],
+    [
+     "**Choriocarcinoma**",
+     "Sheets of cytotrophoblast and syncytiotrophoblast, no villi, hemorrhage",
+     "Hematogenous spread to lung, vagina, brain, liver; follows any pregnancy",
+     "Very high",
+     "Chemosensitive, even when metastatic"
+    ],
+    [
+     "**Placental site tumor**",
+     "Intermediate trophoblast of the implantation site",
+     "Slow uterine mass, often after a term birth; mostly local",
+     "Low; hPL positive",
+     "Hysterectomy"
+    ],
+    [
+     "**Epithelioid tumor**",
+     "Chorionic-type intermediate trophoblast; nodular, geographic necrosis",
+     "Rare; years after a pregnancy",
+     "Mildly raised",
+     "Hysterectomy"
+    ]
+   ]
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp26_plateau",
+    "q": "After evacuation of a complete mole, a woman's hCG falls for 4 weeks and then stays flat for 3 weeks. Which reasoning is best?",
+    "o": [
+     "A plateau is normal laboratory variation, so hCG can be rechecked in 6 months once she stops contraception",
+     "A plateau means she has conceived again, so an ultrasound should look for a new intrauterine pregnancy",
+     "A plateau means only that some tissue was left behind, so a repeat curettage will always cure her",
+     "A plateau means trophoblast is persisting and growing, so it is gestational trophoblastic neoplasia and needs staging and chemotherapy"
+    ],
+    "a": 3,
+    "why": "After a complete evacuation, hCG should fall steadily to undetectable. A plateau over three weeks or a rise means trophoblast is surviving and dividing, which defines gestational trophoblastic neoplasia; she needs staging, including a chest x-ray for lung metastases, and usually single-agent methotrexate or actinomycin D, which cures most low-risk disease. Contraception during follow-up exists precisely so that a new pregnancy cannot be confused with persistent disease, and repeat curettage alone does not reliably treat trophoblast that has invaded the myometrium."
+   }
+  ],
+  [
+   "why",
+   "Why can a molar pregnancy cause hyperthyroidism and severe vomiting?",
+   "Both come from the enormous hCG output of proliferating trophoblast, often well over 100,000 mIU/mL and far higher than in a normal pregnancy. hCG shares its alpha subunit with TSH, LH and FSH, and its beta subunit resembles TSH's closely enough that, at these levels, it activates the TSH receptor, so free T4 rises and TSH falls. The same excess drives hyperemesis gravidarum, whose vomiting causes weight loss, ketosis and a hypokalemic metabolic alkalosis, and it overstimulates ovarian LH receptors to form theca lutein cysts. Evacuating the mole removes the trophoblast, hCG falls, and all three problems resolve."
+  ],
+  [
+   "vis",
+   "rp26"
+  ]
+ ],
+ "grid": {
+  "q": "Which findings point to a complete hydatidiform mole?",
+  "items": [
+   [
+    "46,XX karyotype of paternal origin",
+    1
+   ],
+   [
+    "Snowstorm pattern on ultrasound",
+    1
+   ],
+   [
+    "Uterus larger than dates",
+    1
+   ],
+   [
+    "Very high serum hCG",
+    1
+   ],
+   [
+    "Theca lutein ovarian cysts",
+    1
+   ],
+   [
+    "Negative p57 immunostaining",
+    1
+   ],
+   [
+    "Preeclampsia before 20 weeks",
+    1
+   ],
+   [
+    "Hyperthyroidism with a low TSH",
+    1
+   ],
+   [
+    "Fetal parts on ultrasound",
+    0
+   ],
+   [
+    "69,XXY triploid karyotype",
+    0
+   ],
+   [
+    "Positive p57 immunostaining",
+    0
+   ],
+   [
+    "Adnexal mass with an empty uterus",
+    0
+   ],
+   [
+    "hCG rising less than 35 percent in 48 hours",
+    0
+   ]
+  ]
+ }
+}

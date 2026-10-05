@@ -1,0 +1,42 @@
+<svg class="dia" viewBox="0 0 900 560" role="img" aria-label="Medication abortion uses two drugs: mifepristone, a competitive progesterone receptor antagonist that also blocks the glucocorticoid receptor, then misoprostol, a prostaglandin E1 analog that contracts the uterus 24 to 48 hours later; the regimen runs through 70 days of gestation as of 2025 and has listed contraindications">
+<text class="ttl" x="14" y="24" font-size="17">Medication abortion: two drugs, two receptors, 24 to 48 hours apart</text>
+<rect x="14" y="40" width="412" height="330" rx="8" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.6"/>
+<rect x="14" y="40" width="412" height="40" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.6"/>
+<text class="b" x="28" y="67" font-size="16">Mifepristone: day 1</text>
+<text class="b" x="28" y="108" font-size="14">Competitive progesterone receptor antagonist</text>
+<text x="28" y="134" font-size="14">Decidua breaks down and the pregnancy detaches</text>
+<text x="28" y="158" font-size="14">Cervix softens</text>
+<text x="28" y="182" font-size="14">Myometrium becomes sensitive to prostaglandins</text>
+<rect x="28" y="204" width="384" height="150" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.4"/>
+<text class="b" x="42" y="232" font-size="14">Also blocks the glucocorticoid receptor</text>
+<text x="42" y="258" font-size="14">Avoid in chronic adrenal failure or long-term</text>
+<text x="42" y="280" font-size="14">steroid therapy: risk of adrenal crisis</text>
+<text x="42" y="312" font-size="14">The same action treats Cushing syndrome</text>
+<text x="42" y="334" font-size="14">(cortisol blockade)</text>
+<line x1="430" y1="60" x2="462" y2="60" stroke="var(--ink-2)" stroke-width="3"/>
+<polygon points="460,54 470,60 460,66" fill="var(--ink-2)"/>
+<rect x="474" y="40" width="412" height="330" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.6"/>
+<rect x="474" y="40" width="412" height="40" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.6"/>
+<text class="b" x="488" y="67" font-size="16">Misoprostol: 24 to 48 hours later</text>
+<text class="b" x="488" y="108" font-size="14">Prostaglandin E1 analog</text>
+<text x="488" y="134" font-size="14">Strong myometrial contractions</text>
+<text x="488" y="158" font-size="14">Cervical ripening expels the pregnancy</text>
+<text x="488" y="182" font-size="14">Cramping, bleeding, diarrhea, fever, chills</text>
+<rect x="488" y="204" width="384" height="150" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.4"/>
+<text class="b" x="502" y="232" font-size="14">Same drug, other use: NSAID ulcer protection</text>
+<text x="502" y="258" font-size="14">More mucus and bicarbonate, less acid</text>
+<text x="502" y="290" font-size="14">Never in pregnancy: it can cause</text>
+<text x="502" y="312" font-size="14">miscarriage, so counsel contraception</text>
+<rect x="14" y="384" width="412" height="160" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.4"/>
+<text class="b" x="28" y="412" font-size="15">Regimen as of 2025</text>
+<text x="28" y="438" font-size="14">Through 70 days of gestation</text>
+<text x="28" y="462" font-size="14">Mifepristone 200 mg, then misoprostol</text>
+<text x="28" y="484" font-size="14">800 mcg 24 to 48 hours later</text>
+<text x="28" y="516" font-size="14">Expect heavy cramping and bleeding</text>
+<rect x="474" y="384" width="412" height="160" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.4"/>
+<text class="b" x="488" y="412" font-size="15">Not suitable if</text>
+<text x="488" y="438" font-size="14">Suspected ectopic pregnancy or IUD in place</text>
+<text x="488" y="462" font-size="14">Bleeding disorder or anticoagulant use</text>
+<text x="488" y="486" font-size="14">Chronic adrenal failure or long-term</text>
+<text x="488" y="508" font-size="14">corticosteroids; allergy to either drug</text>
+</svg>

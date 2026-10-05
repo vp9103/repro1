@@ -1,0 +1,46 @@
+<svg class="dia" viewBox="0 0 900 506" role="img" aria-label="Transvaginal ultrasound features of an adnexal mass: a reassuring simple cyst with a thin wall and anechoic fluid versus a worrisome complex mass with a papillary projection, thick septation, solid part with flow and ascites, plus the differential by age">
+<text class="ttl" x="14" y="26" font-size="17">Reading an adnexal mass on transvaginal ultrasound</text>
+<rect x="14" y="42" width="426" height="290" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="gd" x="30" y="70" font-size="16">Reassuring: simple cyst</text>
+<ellipse cx="140" cy="186" rx="92" ry="70" fill="var(--surface-3)" stroke="var(--ink-2)" stroke-width="2"/>
+<text x="252" y="146" font-size="14">Thin, smooth wall</text>
+<text x="252" y="178" font-size="14">Anechoic fluid</text>
+<text x="252" y="210" font-size="14">No solid part</text>
+<text x="252" y="242" font-size="14">No internal flow</text>
+<line x1="232" y1="141" x2="246" y2="141" stroke="var(--ink-3)" stroke-width="1.5"/>
+<text class="b" x="30" y="290" font-size="14">Plan: expectant management,</text>
+<text x="30" y="312" font-size="14">repeat scan if it persists</text>
+<rect x="460" y="42" width="426" height="290" rx="10" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="cr" x="476" y="70" font-size="16">Worrisome: complex mass</text>
+<ellipse cx="582" cy="180" rx="94" ry="72" fill="var(--surface-3)" stroke="var(--ink-2)" stroke-width="4"/>
+<path d="M548 112 C 560 150, 556 210, 572 250" fill="none" stroke="var(--ink-2)" stroke-width="5"/>
+<path d="M612 110 q -10 18 0 26 q -14 8 -2 20 q 10 6 16 -4 q 8 -12 -4 -22 q 6 -12 -10 -20 z" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="2"/>
+<path d="M600 196 q 30 -14 60 -4 q 14 24 -6 44 q -30 12 -54 -6 q -12 -18 0 -34 z" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="2"/>
+<circle cx="620.0" cy="212.0" r="3.2" fill="var(--crit)" stroke="var(--crit)" stroke-width="0.5"/>
+<circle cx="636.0" cy="222.0" r="3.2" fill="var(--crit)" stroke="var(--crit)" stroke-width="0.5"/>
+<circle cx="628.0" cy="232.0" r="3.2" fill="var(--crit)" stroke="var(--crit)" stroke-width="0.5"/>
+<path d="M500 280 q 20 -8 40 0 t 40 0 t 40 0 t 40 0" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<path d="M500 292 q 20 -8 40 0 t 40 0 t 40 0 t 40 0" fill="none" stroke="var(--a2)" stroke-width="2.5"/>
+<text x="704" y="126" font-size="14">Papillary projection</text>
+<text x="704" y="164" font-size="14">Thick septation</text>
+<text x="704" y="214" font-size="14">Solid part with flow</text>
+<text x="704" y="286" font-size="14">Ascites</text>
+<line x1="630" y1="121" x2="698" y2="121" stroke="var(--ink-3)" stroke-width="1.5"/>
+<line x1="562" y1="159" x2="698" y2="159" stroke="var(--ink-3)" stroke-width="1.5"/>
+<line x1="664" y1="209" x2="698" y2="209" stroke="var(--ink-3)" stroke-width="1.5"/>
+<line x1="664" y1="281" x2="698" y2="281" stroke="var(--ink-3)" stroke-width="1.5"/>
+<text class="b" x="476" y="312" font-size="14">Plan: CA-125; refer to a gynecologic oncologist</text>
+<text class="b" x="14" y="368" font-size="16">Age changes the list</text>
+<rect x="14" y="380" width="282" height="112" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="408" font-size="15">Prepubertal</text>
+<text x="28" y="436" font-size="14">Germ cell tumors; torsion</text>
+<text x="28" y="460" font-size="14">Check AFP, hCG and LDH</text>
+<rect x="309" y="380" width="282" height="112" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="323" y="408" font-size="15">Reproductive age</text>
+<text x="323" y="436" font-size="14">Functional cysts, dermoid,</text>
+<text x="323" y="460" font-size="14">endometrioma, ectopic</text>
+<rect x="604" y="380" width="282" height="112" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="618" y="408" font-size="15">Postmenopausal</text>
+<text x="618" y="436" font-size="14">Epithelial cancer until</text>
+<text x="618" y="460" font-size="14">proven otherwise</text>
+</svg>

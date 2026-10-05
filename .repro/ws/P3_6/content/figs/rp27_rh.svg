@@ -1,0 +1,39 @@
+<svg class="dia" viewBox="0 0 900 480" role="img" aria-label="Rh alloimmunization across two pregnancies: IgM in the first Rh-positive pregnancy spares the baby, IgG anti-D in the next pregnancy destroys fetal red cells, and anti-D immune globulin prevents it; ABO disease compared">
+<text class="ttl" x="14" y="26" font-size="17">Rh alloimmunization: the first baby is spared, the next is not</text>
+<rect x="14" y="44" width="276" height="276" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<rect x="312" y="44" width="276" height="276" rx="10" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<rect x="610" y="44" width="276" height="276" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="26" y="70" font-size="15">First Rh-positive baby</text>
+<text class="b" x="324" y="70" font-size="15">Next Rh-positive baby</text>
+<text class="b" x="622" y="70" font-size="15">Prevention: anti-D</text>
+<text x="26" y="104" font-size="14">Mother Rh-negative, no anti-D</text>
+<text x="26" y="132" font-size="14">Fetal red cells enter her blood</text>
+<text x="26" y="160" font-size="14">at delivery: fetomaternal bleed</text>
+<text class="b" x="26" y="196" font-size="14">First response is IgM</text>
+<text x="26" y="224" font-size="14">IgM cannot cross the placenta</text>
+<text x="26" y="252" font-size="14">Memory B cells remain</text>
+<text class="gd" x="26" y="288" font-size="14">Baby is spared</text>
+<text x="324" y="104" font-size="14">Memory cells make IgG anti-D</text>
+<text x="324" y="132" font-size="14">IgG crosses the placenta</text>
+<text x="324" y="160" font-size="14">Coated fetal red cells are</text>
+<text x="324" y="188" font-size="14">destroyed by the spleen</text>
+<text class="b" x="324" y="224" font-size="14">Hemolytic disease of the fetus</text>
+<text x="324" y="252" font-size="14">Anemia, hydrops, jaundice</text>
+<text class="cr" x="324" y="288" font-size="14">Kernicterus after birth</text>
+<text class="b" x="622" y="104" font-size="14">At 28 weeks of pregnancy</text>
+<text class="b" x="622" y="132" font-size="14">Within 72 hours of birth</text>
+<text x="622" y="160" font-size="14">Also after bleeding, trauma,</text>
+<text x="622" y="188" font-size="14">miscarriage or amniocentesis</text>
+<text x="622" y="224" font-size="14">Kleihauer-Betke sizes the dose</text>
+<text class="cr" x="622" y="260" font-size="14">No help once she is sensitized</text>
+<text x="622" y="288" font-size="14">MCA Doppler tracks the anemia</text>
+<line x1="290" y1="182" x2="304" y2="182" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="304,177 312,182 304,187" fill="var(--ink-2)"/>
+<line x1="588" y1="182" x2="602" y2="182" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="602,177 610,182 602,187" fill="var(--ink-2)"/>
+<rect x="14" y="336" width="872" height="130" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="362" font-size="15">Rh disease versus ABO disease</text>
+<text x="28" y="390" font-size="14"><tspan class="b">Rh:</tspan> needs prior sensitization, spares the first pregnancy, can cause hydrops, preventable</text>
+<text x="28" y="418" font-size="14"><tspan class="b">ABO:</tspan> type O mother, IgG anti-A or anti-B, can affect the first pregnancy, mild, not preventable</text>
+<text x="28" y="446" font-size="14"><tspan class="b">Direct Coombs test:</tspan> strongly positive in Rh disease, only weakly positive in ABO disease</text>
+</svg>

@@ -1,0 +1,52 @@
+[
+ {
+  "k": "rp26_dz",
+  "t": "Discriminatory zone",
+  "d": "The serum hCG level, up to about 3,500 mIU/mL in current guidance, above which a normal intrauterine gestational sac should be visible on transvaginal ultrasound.",
+  "alt": [
+   "discriminatory level"
+  ]
+ },
+ {
+  "k": "rp26_pul",
+  "t": "Pregnancy of unknown location",
+  "d": "A positive pregnancy test with no pregnancy seen inside or outside the uterus on transvaginal ultrasound; serial hCG measurements and repeat imaging resolve it.",
+  "alt": []
+ },
+ {
+  "k": "rp26_apls",
+  "t": "Antiphospholipid syndrome",
+  "d": "An autoimmune thrombophilia with lupus anticoagulant, anticardiolipin or anti-beta-2-glycoprotein I antibodies that causes thrombosis and recurrent pregnancy loss; in pregnancy it is treated with low-dose aspirin and heparin.",
+  "alt": []
+ },
+ {
+  "k": "rp26_p57",
+  "t": "p57 immunostain",
+  "d": "A stain for a maternally expressed, paternally imprinted gene product; it is negative in a complete mole, which has no maternal chromosomes, and positive in a partial mole.",
+  "alt": []
+ },
+ {
+  "k": "rp26_gtn",
+  "t": "Gestational trophoblastic neoplasia",
+  "d": "Malignant trophoblastic disease, including invasive mole, choriocarcinoma and placental site trophoblastic tumor, recognized by a plateauing or rising hCG and usually cured with chemotherapy.",
+  "alt": [
+   "GTN"
+  ]
+ },
+ {
+  "k": "rp26_dds",
+  "t": "Double decidual sign",
+  "d": "Two concentric echogenic rings around an early gestational sac, from the decidua parietalis and decidua capsularis, which supports an intrauterine pregnancy; the pseudosac of an ectopic pregnancy has only a single ring.",
+  "alt": [
+   "double decidual sac sign"
+  ]
+ },
+ {
+  "k": "rp26_hydropic",
+  "t": "Hydropic villi",
+  "d": "Chorionic villi swollen by fluid into vesicles with central acellular cisterns, the grape-like change of a hydatidiform mole; they are diffuse in a complete mole and mixed with normal villi in a partial mole.",
+  "alt": [
+   "hydropic change"
+  ]
+ }
+]

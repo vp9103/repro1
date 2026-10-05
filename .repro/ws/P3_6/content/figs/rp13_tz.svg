@@ -1,0 +1,59 @@
+<svg class="dia" viewBox="0 0 900 520" role="img" aria-label="The cervical lining from ectocervix through the transformation zone to the endocervix, and where the squamocolumnar junction sits before puberty, in the reproductive years and after menopause">
+<text class="ttl" x="14" y="24" font-size="17">Where the squamocolumnar junction sits, and why it matters</text>
+<rect x="14" y="40" width="872" height="214" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="305" y="66" font-size="15" text-anchor="middle">Original SCJ</text>
+<text x="595" y="66" font-size="15" text-anchor="middle">Active SCJ</text>
+<line x1="305" y1="74" x2="305" y2="244" stroke="var(--ink-2)" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="595" y1="74" x2="595" y2="244" stroke="var(--ink-2)" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="30" y="84" width="260" height="156" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="44" y="112" font-size="16">Ectocervix</text>
+<text x="44" y="140" font-size="15">Stratified squamous</text>
+<text x="44" y="164" font-size="15">Mature, glycogen-rich</text>
+<text x="44" y="188" font-size="15">Faces the vagina</text>
+<text x="44" y="214" font-size="15">Spatula samples here</text>
+<rect x="320" y="84" width="260" height="156" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="334" y="112" font-size="16">Transformation zone</text>
+<text x="334" y="140" font-size="15">Immature metaplastic cells</text>
+<text x="334" y="164" font-size="15">High-risk HPV infects here</text>
+<text x="334" y="188" font-size="15">Site of CIN and cancer</text>
+<text x="334" y="214" font-size="15">The sample must include it</text>
+<rect x="610" y="84" width="260" height="156" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="624" y="112" font-size="16">Endocervix</text>
+<text x="624" y="140" font-size="15">Columnar, mucus-secreting</text>
+<text x="624" y="164" font-size="15">Crypts make cervical mucus</text>
+<text x="624" y="188" font-size="15">Lines the canal</text>
+<text x="624" y="214" font-size="15">Brush samples here</text>
+<rect x="14" y="266" width="872" height="240" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="30" y="292" font-size="16">The junction moves with estrogen</text>
+<text x="360" y="292" font-size="15">Bars: squamous left of the dot, columnar right</text>
+<rect x="30" y="306" width="270" height="186" rx="8" fill="var(--surface-2)" stroke="var(--line)" stroke-width="1.5"/>
+<text class="b" x="44" y="332" font-size="16">Before puberty</text>
+<text x="44" y="358" font-size="15">Low estrogen</text>
+<text x="44" y="382" font-size="15">Junction at the os</text>
+<text x="44" y="406" font-size="15">Little metaplasia yet</text>
+<rect x="50" y="434" width="115" height="12" fill="var(--a2)"/>
+<rect x="165" y="434" width="115" height="12" fill="var(--a1)"/>
+<line x1="165" y1="424" x2="165" y2="456" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="165" cy="440" r="7" fill="var(--surface)" stroke="var(--crit)" stroke-width="3"/>
+<text x="165" y="476" font-size="14" text-anchor="middle">os</text>
+<rect x="315" y="306" width="270" height="186" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="329" y="332" font-size="16">Reproductive years</text>
+<text x="329" y="358" font-size="15">Columnar lining everts</text>
+<text x="329" y="382" font-size="15">Acid pH drives metaplasia</text>
+<text x="329" y="406" font-size="15">Zone visible on ectocervix</text>
+<rect x="335" y="434" width="55" height="12" fill="var(--a2)"/>
+<rect x="390" y="434" width="175" height="12" fill="var(--a1)"/>
+<line x1="450" y1="424" x2="450" y2="456" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="390" cy="440" r="7" fill="var(--surface)" stroke="var(--crit)" stroke-width="3"/>
+<text x="450" y="476" font-size="14" text-anchor="middle">os</text>
+<rect x="600" y="306" width="270" height="186" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="614" y="332" font-size="16">After menopause</text>
+<text x="614" y="358" font-size="15">Junction recedes into canal</text>
+<text x="614" y="382" font-size="15">Spatula can miss the zone</text>
+<text x="614" y="406" font-size="15">Brush or curettage needed</text>
+<rect x="620" y="434" width="180" height="12" fill="var(--a2)"/>
+<rect x="800" y="434" width="50" height="12" fill="var(--a1)"/>
+<line x1="735" y1="424" x2="735" y2="456" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="800" cy="440" r="7" fill="var(--surface)" stroke="var(--crit)" stroke-width="3"/>
+<text x="735" y="476" font-size="14" text-anchor="middle">os</text>
+</svg>

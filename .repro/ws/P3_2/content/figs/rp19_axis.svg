@@ -1,0 +1,62 @@
+<svg class="dia" viewBox="0 0 900 520" role="img" aria-label="The male hypothalamic-pituitary-gonadal axis: pulsatile GnRH releases LH to Leydig cells and FSH to Sertoli cells; testosterone and estradiol brake GnRH and LH while inhibin B brakes FSH; testosterone acts directly, becomes DHT through 5-alpha-reductase, or becomes estradiol through aromatase in fat">
+<text class="ttl" x="14" y="24" font-size="17">The male axis and the three fates of testosterone</text>
+<rect x="104" y="44" width="230" height="58" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="118" y="68" font-size="15">Hypothalamus</text>
+<text x="118" y="92" font-size="15">GnRH in pulses</text>
+<line x1="219" y1="102" x2="219" y2="128" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="213,128 219,137 225,128" fill="var(--ink-2)"/>
+<rect x="104" y="138" width="230" height="58" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="118" y="162" font-size="15">Anterior pituitary</text>
+<text x="118" y="186" font-size="15">Releases LH and FSH</text>
+<line x1="150" y1="196" x2="150" y2="234" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="144,234 150,243 156,234" fill="var(--ink-2)"/>
+<line x1="290" y1="196" x2="290" y2="234" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="284,234 290,243 296,234" fill="var(--ink-2)"/>
+<rect x="14" y="244" width="190" height="88" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="26" y="268" font-size="15">Leydig cell</text>
+<text x="26" y="292" font-size="15">LH receptor</text>
+<text x="26" y="316" font-size="15">Makes testosterone</text>
+<rect x="234" y="244" width="190" height="88" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="246" y="268" font-size="15">Sertoli cell</text>
+<text x="246" y="292" font-size="15">FSH receptor</text>
+<text x="246" y="316" font-size="15">ABP and inhibin B</text>
+<polyline points="424,290 438,290 438,168 344,168" fill="none" stroke="var(--crit)" stroke-width="2" stroke-dasharray="6 4"/>
+<polygon points="344,162 335,168 344,174" fill="var(--crit)"/>
+<text class="cr" x="346" y="158" font-size="13">inhibin B</text>
+<rect x="14" y="346" width="410" height="84" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="26" y="370" font-size="15">Negative feedback</text>
+<text x="26" y="394" font-size="15">Testosterone, estradiol: GnRH and LH down</text>
+<text x="26" y="418" font-size="15">Inhibin B: FSH down, LH unchanged</text>
+<rect x="14" y="442" width="410" height="66" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text x="26" y="468" font-size="15">Exogenous testosterone lowers LH, so</text>
+<text x="26" y="494" font-size="15">intratesticular testosterone and sperm fall</text>
+<rect x="450" y="44" width="436" height="82" rx="8" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="1.5"/>
+<text class="b" x="464" y="68" font-size="15">Testosterone itself</text>
+<text x="464" y="92" font-size="15">Wolffian ducts, spermatogenesis, muscle</text>
+<text x="464" y="114" font-size="15">Libido, voice, growth spurt, red cells</text>
+<line x1="557" y1="126" x2="557" y2="150" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="551,150 557,159 563,150" fill="var(--ink-2)"/>
+<line x1="779" y1="126" x2="779" y2="150" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="773,150 779,159 785,150" fill="var(--ink-2)"/>
+<rect x="450" y="160" width="214" height="166" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="462" y="186" font-size="15">DHT</text>
+<text x="462" y="210" font-size="15">5-alpha-reductase</text>
+<text x="462" y="234" font-size="15">External genitalia</text>
+<text x="462" y="258" font-size="15">Prostate growth, BPH</text>
+<text x="462" y="282" font-size="15">Male-pattern balding</text>
+<text x="462" y="306" font-size="15">Sebaceous glands</text>
+<rect x="672" y="160" width="214" height="166" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="684" y="186" font-size="15">Estradiol</text>
+<text x="684" y="210" font-size="15">Aromatase in fat</text>
+<text x="684" y="234" font-size="15">Epiphyseal closure</text>
+<text x="684" y="258" font-size="15">Bone density</text>
+<text x="684" y="282" font-size="15">Feedback on LH</text>
+<text x="684" y="306" font-size="15">Rises with obesity</text>
+<rect x="450" y="342" width="436" height="80" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="464" y="366" font-size="15">Aging</text>
+<text x="464" y="390" font-size="15">Testosterone falls about 1% a year after 40</text>
+<text x="464" y="412" font-size="15">SHBG rises, so free testosterone falls faster</text>
+<rect x="450" y="438" width="436" height="70" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="464" y="464" font-size="15">Inside the tubule</text>
+<text x="464" y="490" font-size="15">ABP keeps testosterone 50 to 100 times serum</text>
+</svg>

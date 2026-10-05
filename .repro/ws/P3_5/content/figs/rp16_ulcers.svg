@@ -1,0 +1,60 @@
+<svg class="dia" viewBox="0 0 900 466" role="img" aria-label="Comparison grid of five genital ulcer infections grouped by pain: herpes and chancroid ulcers are painful; the syphilis chancre, lymphogranuloma venereum and donovanosis ulcers are painless; columns give the ulcer, the inguinal nodes and the diagnostic clue for each">
+<text class="ttl" x="14" y="26" font-size="17">Genital ulcers: does it hurt, and what do the nodes do?</text>
+<rect x="14" y="44" width="872" height="30" rx="6" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="26" y="65" font-size="15">Organism</text>
+<text class="b" x="226" y="65" font-size="15">Ulcer</text>
+<text class="b" x="496" y="65" font-size="15">Inguinal nodes</text>
+<text class="b" x="726" y="65" font-size="15">Clue and test</text>
+<rect x="14" y="80" width="872" height="24" rx="4" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1"/>
+<text class="cr" x="26" y="97" font-size="14">PAINFUL ULCER</text>
+<rect x="14" y="104" width="872" height="64" fill="var(--surface)" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="26" y="130" font-size="15">Herpes simplex</text>
+<text class="b" x="26" y="152" font-size="15">virus type 2</text>
+<text x="226" y="130" font-size="15">Grouped vesicles that</text>
+<text x="226" y="152" font-size="15">become shallow ulcers</text>
+<text x="496" y="130" font-size="15">Tender, bilateral</text>
+<text x="496" y="152" font-size="15">(often with fever)</text>
+<text x="726" y="130" font-size="15">Tzanck smear,</text>
+<text x="726" y="152" font-size="15">lesion PCR</text>
+<rect x="14" y="168" width="872" height="64" fill="var(--surface)" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="26" y="194" font-size="15">Haemophilus</text>
+<text class="b" x="26" y="216" font-size="15">ducreyi (chancroid)</text>
+<text x="226" y="194" font-size="15">Deep, ragged ulcer with</text>
+<text x="226" y="216" font-size="15">a gray purulent base</text>
+<text x="496" y="194" font-size="15">Painful, one side,</text>
+<text x="496" y="216" font-size="15">may suppurate</text>
+<text x="726" y="194" font-size="15">School of fish</text>
+<text x="726" y="216" font-size="15">on Gram stain</text>
+<rect x="14" y="238" width="872" height="24" rx="4" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1"/>
+<text class="a2" x="26" y="255" font-size="14">PAINLESS ULCER</text>
+<rect x="14" y="262" width="872" height="64" fill="var(--surface)" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="26" y="288" font-size="15">Treponema</text>
+<text class="b" x="26" y="310" font-size="15">pallidum (syphilis)</text>
+<text x="226" y="288" font-size="15">Single indurated chancre</text>
+<text x="226" y="310" font-size="15">with a clean base</text>
+<text x="496" y="288" font-size="15">Rubbery, painless,</text>
+<text x="496" y="310" font-size="15">often bilateral</text>
+<text x="726" y="288" font-size="15">Darkfield, then</text>
+<text x="726" y="310" font-size="15">RPR and FTA-ABS</text>
+<rect x="14" y="326" width="872" height="64" fill="var(--surface)" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="26" y="352" font-size="15">Chlamydia L1-L3</text>
+<text class="b" x="26" y="374" font-size="15">(LGV)</text>
+<text x="226" y="352" font-size="15">Small ulcer that heals</text>
+<text x="226" y="374" font-size="15">fast, often never seen</text>
+<text x="496" y="352" font-size="15">Painful buboes,</text>
+<text x="496" y="374" font-size="15">groove sign</text>
+<text x="726" y="352" font-size="15">NAAT; treat with</text>
+<text x="726" y="374" font-size="15">doxycycline</text>
+<rect x="14" y="390" width="872" height="64" fill="var(--surface)" stroke="var(--line)" stroke-width="1"/>
+<text class="b" x="26" y="416" font-size="15">Klebsiella</text>
+<text class="b" x="26" y="438" font-size="15">granulomatis</text>
+<text x="226" y="416" font-size="15">Beefy-red, friable ulcer</text>
+<text x="226" y="438" font-size="15">that bleeds on contact</text>
+<text x="496" y="416" font-size="15">No true nodes</text>
+<text x="496" y="438" font-size="15">(pseudobuboes)</text>
+<text x="726" y="416" font-size="15">Donovan bodies</text>
+<text x="726" y="438" font-size="15">on Giemsa stain</text>
+<line x1="214" y1="44" x2="214" y2="454" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="484" y1="44" x2="484" y2="454" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="714" y1="44" x2="714" y2="454" stroke="var(--line-strong)" stroke-width="1"/>
+</svg>

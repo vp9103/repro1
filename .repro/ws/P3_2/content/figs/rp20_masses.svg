@@ -1,0 +1,39 @@
+<svg class="dia" viewBox="0 0 900 500" role="img" aria-label="Map of scrotal swellings around a testis: varicocele in the spermatic cord above, spermatocele above and behind the testis, hydrocele and hematocele in the tunica vaginalis around it, and a germ cell tumor inside it, with which ones transilluminate">
+<text class="ttl" x="14" y="24" font-size="17">Where the swelling sits, and whether light passes through</text>
+<line x1="432" y1="44" x2="432" y2="204" stroke="var(--ink-3)" stroke-width="2"/>
+<line x1="468" y1="44" x2="468" y2="204" stroke="var(--ink-3)" stroke-width="2"/>
+<path d="M442 56 C 458 64, 426 76, 442 86 S 458 106, 442 116 S 426 136, 442 146 S 458 166, 450 180" fill="none" stroke="var(--a2)" stroke-width="3"/>
+<path d="M458 60 C 444 70, 470 82, 456 94 S 444 116, 458 128 S 470 150, 456 170" fill="none" stroke="var(--a2)" stroke-width="3"/>
+<ellipse cx="450" cy="320" rx="105" ry="118" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<ellipse cx="450" cy="326" rx="58" ry="80" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="2"/>
+<ellipse cx="514" cy="262" rx="18" ry="30" fill="var(--surface-2)" stroke="var(--ink-3)" stroke-width="1.5"/>
+<circle cx="530" cy="216" r="18" fill="var(--surface)" stroke="var(--a2)" stroke-width="2"/>
+<circle cx="440" cy="342" r="22" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="2"/>
+<rect x="14" y="44" width="300" height="84" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="28" y="68" font-size="15">Varicocele (in the cord)</text>
+<text x="28" y="92" font-size="15">Dilated pampiniform veins</text>
+<text x="28" y="116" font-size="15">Bag of worms; worse standing</text>
+<line x1="314" y1="86" x2="436" y2="100" stroke="var(--ink-3)" stroke-width="1.5"/>
+<rect x="14" y="196" width="300" height="84" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="28" y="220" font-size="15">Hydrocele (around testis)</text>
+<text x="28" y="244" font-size="15">Fluid in tunica vaginalis</text>
+<text class="a2" x="28" y="268" font-size="15">Transilluminates</text>
+<line x1="314" y1="238" x2="360" y2="262" stroke="var(--ink-3)" stroke-width="1.5"/>
+<rect x="14" y="348" width="300" height="84" rx="8" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="28" y="372" font-size="15">Hematocele</text>
+<text x="28" y="396" font-size="15">Blood in tunica vaginalis</text>
+<text x="28" y="420" font-size="15">After trauma; stays dark</text>
+<line x1="314" y1="390" x2="377" y2="405" stroke="var(--ink-3)" stroke-width="1.5"/>
+<rect x="586" y="120" width="300" height="84" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="600" y="144" font-size="15">Spermatocele (above, behind)</text>
+<text x="600" y="168" font-size="15">Sperm-filled epididymal cyst</text>
+<text class="a2" x="600" y="192" font-size="15">Separate from testis; glows</text>
+<line x1="586" y1="162" x2="546" y2="208" stroke="var(--ink-3)" stroke-width="1.5"/>
+<rect x="586" y="300" width="300" height="84" rx="8" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="600" y="324" font-size="15">Germ cell tumor</text>
+<text x="600" y="348" font-size="15">Firm, painless, intratesticular</text>
+<text x="600" y="372" font-size="15">Solid on ultrasound; stays dark</text>
+<line x1="586" y1="342" x2="462" y2="342" stroke="var(--ink-3)" stroke-width="1.5"/>
+<rect x="14" y="448" width="872" height="42" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="28" y="474" font-size="15">Light passes through clear fluid, not through blood, veins or solid tumor</text>
+</svg>

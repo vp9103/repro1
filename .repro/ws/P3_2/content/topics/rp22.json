@@ -1,0 +1,411 @@
+{
+ "id": "rp22",
+ "t": "Male hypogonadism, infertility, sexual dysfunction and androgen drugs",
+ "sub": "LH separates primary from secondary hypogonadism, testosterone shuts down sperm, and the nitric oxide pathway explains erectile dysfunction, PDE5 inhibitors and their nitrate trap.",
+ "yld": "mid",
+ "exam": "mid",
+ "mins": 14,
+ "bp": [
+  "BP-rp22-01",
+  "BP-rp22-02",
+  "BP-rp22-03",
+  "BP-rp22-04",
+  "BP-rp22-05",
+  "BP-rp22-06",
+  "BP-rp22-07",
+  "BP-rp22-08",
+  "BP-rp22-09",
+  "BP-rp22-10",
+  "BP-rp22-11"
+ ],
+ "obj": [
+  "PATHPHARM-MALE.6",
+  "PATHPHARM-MALE.8",
+  "PATHPHARM-MALE.9",
+  "BICEP-WEIAND.4",
+  "BICEP-WEIAND.6"
+ ],
+ "pretest": [
+  {
+   "q": "A man has low testosterone and a high LH. Which structure is the most likely site of the lesion?",
+   "o": [
+    "The testis",
+    "The anterior pituitary",
+    "The hypothalamus",
+    "The vas deferens"
+   ],
+   "a": 0,
+   "why": "A failing testis cannot make testosterone, so negative feedback is lost and the pituitary raises LH and FSH. This is primary, hypergonadotropic hypogonadism, as in Klinefelter syndrome or mumps orchitis.",
+   "w": {
+    "The anterior pituitary": "A failing pituitary would release too little LH, so testosterone and LH would both be low; a high LH shows that the pituitary still works and is being driven.",
+    "The hypothalamus": "Hypothalamic failure, as in Kallmann syndrome, lowers GnRH and therefore LH and FSH, giving low or inappropriately normal gonadotropins instead of a high LH.",
+    "The vas deferens": "Blockage of the sperm duct causes obstructive azoospermia but leaves the testes working, so testosterone and LH both stay normal."
+   }
+  },
+  {
+   "q": "Why must sildenafil never be given together with a nitrate?",
+   "o": [
+    "Both raise cGMP and cause profound hypotension",
+    "Nitrates inhibit PDE5 and block the drug",
+    "They compete for alpha-1 receptors",
+    "Nitrates raise cAMP, which cancels the drug"
+   ],
+   "a": 0,
+   "why": "Nitrates release nitric oxide, which raises cGMP, and sildenafil stops cGMP breakdown by PDE5. Together they relax vascular smooth muscle so strongly that blood pressure can fall dangerously.",
+   "w": {
+    "Nitrates inhibit PDE5 and block the drug": "Nitrates do not act on PDE5; they donate nitric oxide, which feeds the same pathway the drug amplifies, and that is the source of the danger.",
+    "They compete for alpha-1 receptors": "Neither drug acts at alpha-1 receptors; that action belongs to tamsulosin and similar agents, which add hypotension of their own but are not contraindicated in the same way.",
+    "Nitrates raise cAMP, which cancels the drug": "Nitrates act through cGMP rather than cAMP, and a higher level of either cyclic nucleotide would favor an erection rather than cancel the drug."
+   }
+  },
+  {
+   "q": "Which pattern follows months of testosterone injections taken for bodybuilding?",
+   "o": [
+    "Low LH and FSH with small testes",
+    "High LH and FSH with small testes",
+    "High LH with normal testes",
+    "Normal LH and FSH with large testes"
+   ],
+   "a": 0,
+   "why": "Injected testosterone raises the blood level, so the pituitary cuts LH and FSH. Intratesticular testosterone and sperm production fall, and the testes shrink.",
+   "w": {
+    "High LH and FSH with small testes": "This is the primary hypogonadism pattern, seen when the testis itself has failed; exogenous androgens shut the pituitary down rather than drive it.",
+    "High LH with normal testes": "High LH would mean the pituitary senses too little testosterone, which is the opposite of what an injected androgen produces.",
+    "Normal LH and FSH with large testes": "Without gonadotropin drive the testes shrink instead of enlarging, so large testes with normal hormones would not follow androgen injections."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How do primary and secondary hypogonadism differ?"
+  ],
+  [
+   "p",
+   "Hypogonadism is low testosterone with symptoms such as low libido, lost morning erections, fatigue and muscle loss, and it is diagnosed on two low morning levels (total testosterone below about 300 ng/dL). Testosterone is low in every type, so luteinizing hormone (LH) is the fork. In {{rp22_primary|primary hypogonadism}} the testis has failed, so feedback is lost and LH and FSH are high (**hypergonadotropic**); causes are Klinefelter syndrome (47,XXY: tall, small firm testes, gynecomastia), mumps orchitis, chemotherapy or radiation, torsion and cryptorchidism. In {{rp22_secondary|secondary hypogonadism}} the hypothalamus or pituitary has failed, so LH and FSH are low or inappropriately normal (**hypogonadotropic**); causes are Kallmann syndrome with anosmia, a pituitary tumor, hyperprolactinemia, opioids, glucocorticoids, obesity, hemochromatosis and exogenous androgens. Sertoli cells make {{rp22_inhibin|inhibin B}}, which selectively restrains FSH, so FSH rises when the tubules fail even if testosterone is normal."
+  ],
+  [
+   "f",
+   "rp22_axis"
+  ],
+  [
+   "call",
+   "trap",
+   "A normal total testosterone can still mean hypogonadism",
+   "Most testosterone is bound, tightly to {{rp22_shbg|SHBG}} and loosely to albumin, and only 2 to 3% is free. SHBG falls in obesity, insulin resistance, type 2 diabetes and hypothyroidism, and rises with aging, hyperthyroidism, cirrhosis, estrogens and anticonvulsants. An obese man can therefore have a normal total but low free testosterone; order free or bioavailable testosterone only when SHBG is distorted."
+  ],
+  [
+   "h",
+   "What do exogenous androgens and testosterone therapy do?"
+  ],
+  [
+   "p",
+   "Injected testosterone or **anabolic steroids** suppress LH and FSH, so the testes shrink and make no sperm (**azoospermia**). Other effects are polycythemia, so the hematocrit rises, acne, low HDL, worsened sleep apnea, mood change and gynecomastia from aromatization to estradiol. Therapy is for symptomatic men with two low morning levels and an LH level in hand; **monitor** hematocrit and PSA, and avoid it in prostate or breast cancer and when fertility is wanted. Gels transfer to a partner or child through skin contact, so the site is covered and washed, and injections give peaks, troughs and the highest rate of erythrocytosis. In men at cardiovascular risk, the TRAVERSE trial (2023) found no excess of major cardiac events but more atrial fibrillation, pulmonary embolism and acute kidney injury. Clomiphene, a SERM, and hCG, an LH analog, raise the testis's own output and preserve fertility."
+  ],
+  [
+   "why",
+   "Why does injected testosterone cause infertility when testosterone drives spermatogenesis?",
+   "Sperm production needs a very high testosterone level inside the seminiferous tubules, about 50 to 100 times the level in blood, and Leydig cells make it only under LH. Injected testosterone raises the blood level, so the hypothalamus and pituitary sense plenty and cut GnRH, LH and FSH. Without LH the Leydig cells go quiet and intratesticular testosterone collapses, and without FSH the Sertoli cells lose support, so the testes shrink and the semen shows no sperm. Recovery takes months and is sometimes incomplete. That is why testosterone works as a male contraceptive and why hCG or clomiphene replaces it when fertility matters."
+  ],
+  [
+   "h",
+   "What causes male infertility, and how is azoospermia read?"
+  ],
+  [
+   "p",
+   "About half of infertile couples have a male factor, so both partners are tested at once. A **semen analysis** is repeated after at least a month, because spermatogenesis takes about 74 days plus 10 to 14 days of epididymal transit, so a sample reflects events about three months earlier. Causes are pretesticular (hypogonadotropic hypogonadism, hyperprolactinemia, exogenous androgens), testicular (Klinefelter syndrome, Y microdeletions, cryptorchidism, mumps, toxins) and posttesticular (vasectomy, obstruction, retrograde ejaculation). The most common correctable cause is varicocele, and immotile sperm with sinusitis suggest Kartagener syndrome. In azoospermia the testes and FSH tell the story: **obstructive** azoospermia has normal testis size and FSH, whereas non-obstructive azoospermia, failure of the Sertoli cells and germ cells, has small, soft testes and high FSH."
+  ],
+  [
+   "p",
+   "A low-volume, acidic, fructose-negative ejaculate with no sperm means seminal vesicle fluid, which supplies most of the volume and all of the fructose, is missing. The cause is ejaculatory duct obstruction or {{rp22_cbavd|congenital bilateral absence of the vas deferens}} (CBAVD), usually from CFTR mutations, so both partners need cystic fibrosis carrier testing. FSH and testis size stay normal because the testes themselves work. A low-volume ejaculate with sperm in the postejaculatory urine is retrograde ejaculation, caused by alpha-blockers such as tamsulosin, diabetic autonomic neuropathy or prostate surgery."
+  ],
+  [
+   "f",
+   "rp22_semen"
+  ],
+  [
+   "steps",
+   [
+    "Working up an infertile man in order",
+    [
+     [
+      "Two semen analyses, a month apart",
+      "Use 2 to 7 days of abstinence. The WHO lower reference limits (1.4 mL, 16 million per mL, 42% motile, 4% normal forms) come from recent fathers and are not cutoffs for infertility."
+     ],
+     [
+      "Read volume, pH and fructose, then examine",
+      "Low volume, acidic and fructose-negative points to duct obstruction or CBAVD. Check the vas deferens, a varicocele and testis volume, normally 15 to 25 mL."
+     ],
+     [
+      "Measure testosterone, LH, FSH and prolactin",
+      "These separate pretesticular causes (low LH and FSH) from testicular failure (high FSH)."
+     ],
+     [
+      "Add genetics if azoospermic or under 5 million per mL",
+      "Karyotype for Klinefelter syndrome, Y microdeletions (complete AZFa or AZFb loss predicts failed sperm retrieval) and CFTR testing when the vas is absent."
+     ]
+    ]
+   ]
+  ],
+  [
+   "p",
+   "A **testicular biopsy** is not part of the routine work-up. It is reserved for azoospermia, to separate obstruction from failed production when FSH and testis size are equivocal and, in non-obstructive disease, to retrieve sperm for intracytoplasmic sperm injection (ICSI) by microdissection testicular sperm extraction. The pattern shows where spermatogenesis stops, and {{rp22_ma|maturation arrest}} and Sertoli cell-only tubules are the ones to know."
+  ],
+  [
+   "t",
+   [
+    "Biopsy pattern",
+    "What the tubules show",
+    "Typical cause",
+    "FSH"
+   ],
+   [
+    [
+     "Normal spermatogenesis",
+     "All stages up to spermatozoa",
+     "Obstruction: vasectomy, CBAVD, duct blockage",
+     "Normal"
+    ],
+    [
+     "Maturation arrest",
+     "Germ cells stop at one stage, usually primary spermatocytes, so no spermatids form",
+     "Genetic or toxic block of meiosis (AZFb deletion)",
+     "Normal or high"
+    ],
+    [
+     "Sertoli cell-only tubules",
+     "Tubules lined only by Sertoli cells, with no germ cells",
+     "Y microdeletion (AZFa), cryptorchidism, toxins",
+     "High, with low inhibin B"
+    ],
+    [
+     "Hypospermatogenesis",
+     "All stages present, but fewer cells",
+     "Varicocele, mild testicular injury",
+     "Normal or mildly high"
+    ],
+    [
+     "Hyalinized tubules",
+     "Thickened basement membrane, fibrosis, clustered Leydig cells",
+     "Klinefelter syndrome, late cryptorchidism",
+     "High"
+    ]
+   ]
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp22_vol",
+    "q": "A man with azoospermia has semen volume 0.8 mL, acidic pH and no fructose, and normal testis size and FSH. Which reasoning best explains these findings?",
+    "o": [
+     "Testicular failure has shrunk the semen volume, and a compensating pituitary has brought the FSH back to normal",
+     "Seminal vesicle fluid, which carries the fructose and most of the volume, is missing because of duct obstruction or an absent vas, while the testes make sperm normally",
+     "Hypogonadotropic hypogonadism has removed testosterone support for the tubules, so sperm production stopped but FSH looks normal",
+     "A varicocele has raised testicular temperature, which impairs spermatogenesis and lowers the fructose in semen"
+    ],
+    "a": 1,
+    "why": "Seminal vesicles make most of the ejaculate volume, an alkaline fluid rich in fructose, and the prostate adds a slightly acid fluid. When the vesicle fluid is missing, because the ejaculatory ducts are blocked or the vas and vesicles are absent (CBAVD, often from CFTR mutations), the ejaculate is small, acidic and fructose-negative. The testes are untouched, so spermatogenesis, testis size and FSH stay normal; the sperm simply never reach the ejaculate. Testicular failure would raise FSH, and hypogonadotropic disease would lower it."
+   }
+  ],
+  [
+   "h",
+   "How do erection and ejaculation work, and why does erectile dysfunction matter?"
+  ],
+  [
+   "p",
+   "Erection is a parasympathetic reflex through sacral nerves S2 to S4. Nerves and endothelium release nitric oxide, which raises cGMP, relaxes cavernosal smooth muscle and lets the sinusoids fill and squeeze the veins under the tunica albuginea. Emission is sympathetic (T10 to L2) and ejaculation is somatic through the pudendal nerve. **Erectile dysfunction** is most often vascular (atherosclerosis, diabetes, hypertension, smoking), followed by neurogenic, hormonal, drug-induced (thiazides, beta-blockers, spironolactone, SSRIs) and psychogenic causes. Preserved nocturnal and morning erections suggest a psychogenic cause, whereas gradual loss of nocturnal erections suggests an organic one. Penile arteries are smaller than coronary arteries, so new erectile dysfunction can precede a heart attack and prompts a cardiovascular work-up."
+  ],
+  [
+   "f",
+   "rp22_erection"
+  ],
+  [
+   "t",
+   [
+    "Drug",
+    "How it works",
+    "Pearls and adverse effects"
+   ],
+   [
+    [
+     "Sildenafil",
+     "PDE5 inhibitor, raises cGMP",
+     "Blue-green vision (PDE6), headache, flushing, dyspepsia"
+    ],
+    [
+     "Vardenafil",
+     "PDE5 inhibitor",
+     "QT prolongation"
+    ],
+    [
+     "Tadalafil",
+     "PDE5 inhibitor, half-life about 17 hours",
+     "Back pain and myalgia (PDE11); daily dose also treats BPH"
+    ],
+    [
+     "Avanafil",
+     "PDE5 inhibitor, fastest onset, most selective",
+     "Fewer visual and back-pain effects"
+    ],
+    [
+     "Alprostadil",
+     "PGE1 analog, raises cAMP",
+     "Intracavernosal or intraurethral; pain, fibrosis, priapism"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "PDE5 inhibitors amplify nitric oxide signaling but do not create it, so they need sexual stimulation. Combining one with a **nitrate** is contraindicated, because both raise cGMP and cause profound hypotension; separate them by 24 hours for sildenafil and vardenafil and 48 hours for tadalafil. Alpha-blockers add to the hypotension, so the alpha-blocker is stabilized first. Rare harms are NAION, an ischemic optic neuropathy, and sudden hearing loss. If the tunica is scarred or the muscle fibrotic, venous leak makes {{rp22_pde5|PDE5 inhibitors}} fail, and the next steps are intracavernosal or intraurethral alprostadil, a vacuum device with a constriction ring and, finally, a penile prosthesis, which has the highest satisfaction."
+  ],
+  [
+   "h",
+   "How do alpha-1 blockers and 5-alpha-reductase inhibitors work?"
+  ],
+  [
+   "p",
+   "Alpha-1 receptors, mostly the alpha-1A subtype, hold the prostate and bladder neck tight, and alpha-1B receptors on vessels hold blood pressure up. **Alpha-1 blockers** relax the first and lower the second. Tamsulosin and silodosin are alpha-1A selective, so they spare the blood pressure but impair emission and bladder neck closure, causing retrograde or absent ejaculation with a normal orgasm, and they cause floppy iris syndrome at cataract surgery. Terazosin and doxazosin are nonselective, also treat hypertension and cause **orthostatic** hypotension and first-dose syncope, so the first dose is taken at bedtime. They work within days, and combined with a PDE5 inhibitor they add to the hypotension."
+  ],
+  [
+   "p",
+   "**5-alpha-reductase inhibitors** block the enzyme that makes DHT. Finasteride inhibits type 2, found in the prostate and genital skin, and dutasteride inhibits types 1 and 2. They shrink a large gland by about 20 to 25 percent over 6 months, which treats the static bulk and lowers the risk of retention and surgery but not the muscle tone, and they halve PSA, so the measured value is doubled. Adverse effects are lower libido, erectile dysfunction, less ejaculate and gynecomastia; they are teratogenic, so pregnant women must not handle crushed or broken tablets. Finasteride at a lower dose also treats male-pattern baldness."
+  ],
+  [
+   "h",
+   "How do SSRIs and other drugs change ejaculation and breast tissue?"
+  ],
+  [
+   "p",
+   "Premature ejaculation is the most common male sexual dysfunction. Serotonin raises the ejaculation threshold, so SSRIs (paroxetine most), clomipramine and topical anesthetics help, along with the stop-start method. The same effect is an adverse effect of SSRIs given for depression: delayed ejaculation and lower libido, with erections usually intact. Treat any erectile dysfunction first, because a failing erection can mimic premature ejaculation. Gynecomastia reflects a high estrogen-to-androgen ratio; it is normal in puberty and old age, and pathologic in Klinefelter syndrome, cirrhosis, hCG-secreting testicular tumors, hyperthyroidism, obesity and with spironolactone, cimetidine, ketoconazole, digoxin, marijuana and antiandrogens."
+  ],
+  [
+   "h",
+   "How do antiandrogens and androgen deprivation therapy work, and what do they cost?"
+  ],
+  [
+   "p",
+   "Androgen deprivation therapy (ADT) treats advanced prostate cancer by removing testosterone's growth signal. Leuprolide and goserelin, GnRH agonists, first stimulate the pituitary and cause a **flare** of LH and testosterone for one to two weeks, which can worsen bone pain or urinary obstruction, so an antiandrogen such as bicalutamide is started first; continuous exposure then desensitizes the gonadotrophs and testosterone falls to castrate levels. Degarelix and oral relugolix are GnRH antagonists and cause no flare. **Abiraterone** inhibits CYP17A1, so cortisol falls and ACTH drives mineralocorticoid excess (hypertension, hypokalemia, edema), which prednisone prevents."
+  ],
+  [
+   "f",
+   "rp22_androgen"
+  ],
+  [
+   "t",
+   [
+    "Drug",
+    "Site of action",
+    "Note"
+   ],
+   [
+    [
+     "Spironolactone",
+     "Blocks the androgen receptor, inhibits synthesis",
+     "Gynecomastia, erectile dysfunction"
+    ],
+    [
+     "Finasteride, dutasteride",
+     "Inhibit 5-alpha-reductase",
+     "BPH; lower libido"
+    ],
+    [
+     "Flutamide, bicalutamide",
+     "Block the androgen receptor",
+     "Prostate cancer; flutamide is hepatotoxic"
+    ],
+    [
+     "Ketoconazole",
+     "Inhibits steroid synthesis (CYP enzymes)",
+     "Gynecomastia, adrenal insufficiency"
+    ],
+    [
+     "Leuprolide",
+     "GnRH agonist; continuous dosing desensitizes the pituitary",
+     "Androgen deprivation therapy for prostate cancer; initial flare"
+    ],
+    [
+     "Abiraterone",
+     "Inhibits CYP17A1, blocking androgen synthesis in the testis, adrenal and tumor",
+     "Given with prednisone; castration-resistant cancer"
+    ],
+    [
+     "Enzalutamide",
+     "Blocks the androgen receptor, second generation",
+     "Seizures; castration-resistant cancer"
+    ],
+    [
+     "Degarelix",
+     "GnRH antagonist",
+     "No initial flare"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Because ADT removes androgens, its adverse effects are those of hypogonadism: **hot flashes**, lost libido and erections, gynecomastia, fatigue, anemia, loss of muscle with weight gain and insulin resistance, and bone loss. Bone density is checked at baseline and calcium, vitamin D and an antiresorptive drug (a bisphosphonate or denosumab) are given to men at fracture risk, and cardiovascular risk factors are managed, because ADT needs its own survivorship plan."
+  ],
+  [
+   "vis",
+   "rp22"
+  ],
+  [
+   "call",
+   "key",
+   "LH is the fork, so get it before prescribing",
+   "Low testosterone with a high LH means the testis is the problem, and fertility then depends on sperm retrieval. Low testosterone with a low or normal LH means the brain or pituitary is the problem, which is often treatable with gonadotropins, and the pituitary needs a prolactin level and imaging. Starting testosterone first would hide the LH and shut down sperm production."
+  ]
+ ],
+ "grid": {
+  "q": "Which of these fit primary rather than secondary hypogonadism?",
+  "items": [
+   [
+    "High LH and FSH",
+    1
+   ],
+   [
+    "Klinefelter syndrome",
+    1
+   ],
+   [
+    "Mumps orchitis",
+    1
+   ],
+   [
+    "Damage from chemotherapy",
+    1
+   ],
+   [
+    "Undescended testis in childhood",
+    1
+   ],
+   [
+    "Feedback on the pituitary is lost",
+    1
+   ],
+   [
+    "Fertility needs sperm retrieval",
+    1
+   ],
+   [
+    "Kallmann syndrome",
+    0
+   ],
+   [
+    "Prolactin excess from a pituitary tumor",
+    0
+   ],
+   [
+    "Opioid use",
+    0
+   ],
+   [
+    "Low or normal LH",
+    0
+   ],
+   [
+    "Gonadotropins restore sperm",
+    0
+   ]
+  ]
+ }
+}

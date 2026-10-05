@@ -1,0 +1,70 @@
+<svg class="dia" viewBox="0 0 900 574" role="img" aria-label="Teratogen critical periods in weeks after fertilization: an all-or-none period, organogenesis from week 3 to 8, and the fetal period, with the organ windows for the neural tube, heart, limbs, face, brain, kidneys, teeth and ductus arteriosus and the classic exposure for each">
+<text class="ttl" x="14" y="24" font-size="17">Timing decides what a teratogen injures</text>
+<text class="b" x="190" y="50" font-size="13">All or none</text>
+<text class="b" x="284" y="50" font-size="13">Organogenesis</text>
+<text class="b" x="454" y="50" font-size="13">Fetal period</text>
+<rect x="190" y="56" width="90" height="20" rx="3" fill="var(--surface-3)" stroke="var(--line)" stroke-width="0.8"/>
+<rect x="280" y="56" width="170" height="20" rx="3" fill="var(--warn-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<rect x="450" y="56" width="120" height="20" rx="3" fill="var(--a2-soft)" stroke="var(--line)" stroke-width="0.8"/>
+<text x="14" y="98" font-size="13">Weeks after fertilization</text>
+<line x1="190" y1="102" x2="570" y2="102" stroke="var(--ink-2)" stroke-width="1.5"/>
+<line x1="190.0" y1="97" x2="190.0" y2="107" stroke="var(--ink-2)" stroke-width="1.5"/>
+<text x="190.0" y="94" font-size="13" text-anchor="middle">0</text>
+<line x1="280.0" y1="97" x2="280.0" y2="107" stroke="var(--ink-2)" stroke-width="1.5"/>
+<text x="280.0" y="94" font-size="13" text-anchor="middle">2</text>
+<line x1="336.7" y1="97" x2="336.7" y2="107" stroke="var(--ink-2)" stroke-width="1.5"/>
+<text x="336.7" y="94" font-size="13" text-anchor="middle">4</text>
+<line x1="393.3" y1="97" x2="393.3" y2="107" stroke="var(--ink-2)" stroke-width="1.5"/>
+<text x="393.3" y="94" font-size="13" text-anchor="middle">6</text>
+<line x1="450.0" y1="97" x2="450.0" y2="107" stroke="var(--ink-2)" stroke-width="1.5"/>
+<text x="450.0" y="94" font-size="13" text-anchor="middle">8</text>
+<line x1="498.0" y1="97" x2="498.0" y2="107" stroke="var(--ink-2)" stroke-width="1.5"/>
+<text x="498.0" y="94" font-size="13" text-anchor="middle">20</text>
+<line x1="570.0" y1="97" x2="570.0" y2="107" stroke="var(--ink-2)" stroke-width="1.5"/>
+<text x="570.0" y="94" font-size="13" text-anchor="middle">38</text>
+<text class="b" x="590" y="98" font-size="13">Classic exposure and signature effect</text>
+<rect x="14" y="116" width="872" height="46" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<rect x="14" y="166" width="872" height="46" rx="4" fill="var(--surface)" stroke="var(--line)" stroke-width="0.8"/>
+<rect x="14" y="216" width="872" height="46" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<rect x="14" y="266" width="872" height="46" rx="4" fill="var(--surface)" stroke="var(--line)" stroke-width="0.8"/>
+<rect x="14" y="316" width="872" height="46" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<rect x="14" y="366" width="872" height="46" rx="4" fill="var(--surface)" stroke="var(--line)" stroke-width="0.8"/>
+<rect x="14" y="416" width="872" height="46" rx="4" fill="var(--surface-2)" stroke="var(--line)" stroke-width="0.8"/>
+<rect x="14" y="466" width="872" height="46" rx="4" fill="var(--surface)" stroke="var(--line)" stroke-width="0.8"/>
+<line x1="280" y1="112" x2="280" y2="512" stroke="var(--line-strong)" stroke-width="1.2" stroke-dasharray="4 4"/>
+<line x1="450" y1="112" x2="450" y2="512" stroke="var(--line-strong)" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text class="b" x="22" y="144" font-size="14">Neural tube</text>
+<rect x="294.2" y="131" width="42.5" height="16" rx="3" fill="var(--a1)"/>
+<text class="b" x="590" y="136" font-size="14">Valproate, carbamazepine</text>
+<text x="590" y="154" font-size="14">Neural tube defects</text>
+<text class="b" x="22" y="194" font-size="14">Heart</text>
+<rect x="294.2" y="181" width="99.2" height="16" rx="3" fill="var(--a1)"/>
+<text class="b" x="590" y="186" font-size="14">Lithium, isotretinoin</text>
+<text x="590" y="204" font-size="14">Ebstein anomaly; conotruncal defects</text>
+<text class="b" x="22" y="244" font-size="14">Limbs</text>
+<rect x="322.5" y="231" width="127.5" height="16" rx="3" fill="var(--a1)"/>
+<text class="b" x="590" y="236" font-size="14">Thalidomide, methotrexate</text>
+<text x="590" y="254" font-size="14">Phocomelia, limb defects</text>
+<text class="b" x="22" y="294" font-size="14">Face, ears, palate</text>
+<rect x="336.7" y="281" width="129.3" height="16" rx="3" fill="var(--a1)"/>
+<text class="b" x="590" y="286" font-size="14">Isotretinoin, mycophenolate</text>
+<text x="590" y="304" font-size="14">Microtia, clefts</text>
+<text class="b" x="22" y="344" font-size="14">Brain</text>
+<rect x="294.2" y="331" width="275.8" height="16" rx="3" fill="var(--a1)"/>
+<text class="b" x="590" y="336" font-size="14">Alcohol, radiation above 50 mGy</text>
+<text x="590" y="354" font-size="14">Microcephaly, intellectual disability</text>
+<text class="b" x="22" y="394" font-size="14">Kidneys</text>
+<rect x="466.0" y="381" width="104.0" height="16" rx="3" fill="var(--a1)"/>
+<text class="b" x="590" y="386" font-size="14">ACE inhibitors, ARBs</text>
+<text x="590" y="404" font-size="14">Renal failure, oligohydramnios</text>
+<text class="b" x="22" y="444" font-size="14">Teeth, inner ear</text>
+<rect x="482.0" y="431" width="88.0" height="16" rx="3" fill="var(--a1)"/>
+<text class="b" x="590" y="436" font-size="14">Tetracyclines, aminoglycosides</text>
+<text x="590" y="454" font-size="14">Stained teeth, eighth-nerve deafness</text>
+<text class="b" x="22" y="494" font-size="14">Ductus arteriosus</text>
+<rect x="530.0" y="481" width="40.0" height="16" rx="3" fill="var(--a1)"/>
+<text class="b" x="590" y="486" font-size="14">NSAIDs</text>
+<text x="590" y="504" font-size="14">Premature ductus arteriosus closure</text>
+<text class="b" x="14" y="536" font-size="14">Organogenesis, weeks 3 to 8, carries the highest risk of major malformations.</text>
+<text class="b" x="14" y="560" font-size="14">Gestational age is weeks after fertilization plus 2; later exposures injure growth and function.</text>
+</svg>
