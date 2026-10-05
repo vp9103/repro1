@@ -1,0 +1,73 @@
+{
+ "n": "Uterine leiomyoma with whorled cut surface",
+ "file": "rp14_leiomyoma.jpg",
+ "dx": "Uterine leiomyoma (fibroid)",
+ "wrong": [
+  "Leiomyosarcoma of the uterus",
+  "Adenomyosis",
+  "Carcinosarcoma of the uterus",
+  "Endometrial polyp"
+ ],
+ "ww": {
+  "Leiomyosarcoma of the uterus": "<b>Leiomyosarcoma</b> is usually a solitary, soft, fleshy mass with hemorrhage and necrosis, not a firm pale nodule. This mass is uniformly pale, with a neat swirling pattern and a sharp border.",
+  "Adenomyosis": "<b>Adenomyosis</b> is not a discrete nodule: the wall thickens diffusely into a soft, globular uterus with small hemorrhagic foci and no sharp border. Here a rounded, well-circumscribed mass with a swirling cut face stands apart from other tissue.",
+  "Carcinosarcoma of the uterus": "<b>Carcinosarcoma</b> is a bulky, polypoid, hemorrhagic and necrotic mass that fills the endometrial cavity of a postmenopausal woman. This is a firm, pale, bulging nodule with a smooth contour and no hemorrhage or necrosis.",
+  "Endometrial polyp": "<b>Endometrial polyp</b> is a soft, tan, often pedunculated projection from the endometrial lining into the cavity. This is a firm, solid, rounded nodule with a whorled cut surface and no stalk or glandular surface."
+ },
+ "look": "Compare the two pieces. The right one has been sliced open to show a bulging, glistening, pink-white cut surface that swirls in whorls, the interlacing bundles of smooth muscle. The left shows a rougher outer surface. The tumor is firm and sharply bounded, with no hemorrhage or necrosis. A circumscribed, whorled, tan-white nodule like this is a leiomyoma, or fibroid.",
+ "cred": "Ed Uthman from Houston, TX, USA · CC BY 2.0 · Wikimedia Commons (resized)",
+ "by": "Ed Uthman from Houston, TX, USA",
+ "lic": "CC BY 2.0",
+ "licurl": "https://creativecommons.org/licenses/by/2.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Leiomyoma.jpg",
+ "mod": true,
+ "modality": "gross",
+ "findings": [
+  "Whorled cut surface: on the right piece, glistening pink-white bundles of smooth muscle sweep in swirling curves around the center of the cut face, the gross hallmark of a leiomyoma.",
+  "Sharp, pushing border: the cut face ends in a smooth, rounded edge with no ragged invasion of neighboring tissue, because a leiomyoma is benign and well circumscribed, which lets surgeons shell it out.",
+  "Uniform pale tissue without hemorrhage or necrosis: the nodule is evenly tan-white and firm, unlike the soft, fleshy, hemorrhagic and necrotic cut surface of a leiomyosarcoma.",
+  "Outer surface of the nodule: the left piece shows the rounded, rougher outer face with ragged tags of surrounding tissue where the nodule was separated from the muscle of the uterine wall."
+ ],
+ "ann": [
+  {
+   "k": "e",
+   "x": 77.0,
+   "y": 64.0,
+   "rx": 9.0,
+   "ry": 10.0,
+   "px": 77.0,
+   "py": 74.0,
+   "l": "Glistening pink-white smooth muscle bundles interlace and sweep in swirling, concentric whorls across the cut face. This classic whorled appearance reflects the organized fascicular growth of benign smooth muscle cells and represents the gross hallmark of a leiomyoma."
+  },
+  {
+   "k": "arrow",
+   "x": 93.0,
+   "y": 30.0,
+   "tx": 96.0,
+   "ty": 16.0,
+   "px": 96.0,
+   "py": 16.0,
+   "l": "The cut surface terminates in a distinct, smooth, rounded boundary rather than invading adjacent tissue. Because leiomyomas are benign, non-infiltrative tumors with pushing borders, surgeons can readily enucleate ('shell out') the nodule while sparing surrounding uterine myometrium."
+  },
+  {
+   "k": "arrow",
+   "x": 65.0,
+   "y": 45.0,
+   "tx": 52.0,
+   "ty": 28.0,
+   "px": 52.0,
+   "py": 28.0,
+   "l": "The tissue is uniformly tan-white, firm and glistening, with no soft mottling, hemorrhage or necrosis. A leiomyosarcoma instead outgrows its blood supply and looks soft, variegated and fleshy, with prominent hemorrhage and necrosis."
+  },
+  {
+   "k": "arrow",
+   "x": 16.0,
+   "y": 55.0,
+   "tx": 6.0,
+   "ty": 40.0,
+   "px": 6.0,
+   "py": 40.0,
+   "l": "The left piece shows the rounded, rougher outer surface of the nodule, with shreds of attached tissue where it was separated from the surrounding muscle of the uterine wall at myomectomy."
+  }
+ ]
+}

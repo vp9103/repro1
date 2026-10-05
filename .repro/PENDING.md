@@ -3,7 +3,7 @@
 Updated 2026-10-04. Counts from `.repro/fast_check.py` / the gate's structural checks on fast/content.
 
 ## Fast-track state (fast/repro-endo-path.html, drafts, unreviewed)
-36 topics (30 rp + en1 en2 en5 en6 en7 en9) · 373 questions · 439 rapid · 95 figures · 30 drills · 0 images · 0 memory scenes (after merging G01+G02, 2026-10-04).
+36 topics (30 rp + en1 en2 en5 en6 en7 en9) · 373 questions · 439 rapid · 95 figures · 30 drills · 12 images · 0 memory scenes (after merging G01+G02, 2026-10-04).
 All 30 rp topics pass topic structure + key-term coverage. Build warnings: 12 en topics missing; en9 body figures
 en9_hypercalcemia, en9_three_hpt missing.
 
@@ -18,12 +18,13 @@ en9_hypercalcemia, en9_three_hpt missing.
 | G03 | DONE (draft, accepted; checked rp29 pins vs figure labels, d_rp16_multi) | rapid rp23 13, rp29 11; drills rp10 multi, rp11 sort, rp16 multi, rp17 order | fast_check G03 ok; audit/G03-notes.md (rp29 NO-VISUAL row in G03-novisual.md -> P6.9 on import) |
 | V1 | DONE (accepted; reviewed new figs rp4_origins, rp5_mullerian, rp6_dsd, rp7_engines) | rp4-rp7 visual shares met; 8 new figures | fast_check W04/W05 ok; NO-VISUAL rows W04/audit/P5.2.md, P6.2.md |
 | P2.6 | CLOSED 2026-10-04 | F31a-c, F40, F33a-c, linkedNotice | ledger row sha:05f1ba73 |
-| I02 | worker (merge with --skip I02 until done) | images rp12, rp14, rp20 + Gemini overlays (fast/ws/I02) | fast_check I02 ok |
+| I02 | DONE (merged 2026-10-05) | 6 images rp12, rp14, rp20 | fast_check I02 ok; audit/I02-sources.md |
 | P2.V | DONE 2026-10-05 (run 9: 10/10 + 19/19 regression) | | ledger row |
 | P3.1 | CLOSED 2026-10-05 (rp1-rp3, 40 gap lines) | | ledger row sha:1c20a979 |
 | P3.2 | CLOSED 2026-10-05 (rp4-rp6, 16 gap lines) | | ledger row sha:ec2eeecd |
 | P3.3 | CLOSED 2026-10-05 (rp7-rp9, 29 gap lines) | | ledger row sha:92b2ca5d |
 | P3.4 | worker | rp10, rp11, rp29 (.repro/ws/P3_4) | --status P3.4 ok |
+| P3.5 | worker | rp12, rp13, rp14 (.repro/ws/P3_5) | --status P3.5 ok |
 | P2.6 | CLOSED 2026-10-05 (F3) | ledger row sha:29b015ac | |
 | V2 | DONE (finished before the restart; 8 new figures reviewed 2026-10-05) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
 | P1.4 | CLOSED 2026-10-05 (round 3, part->anchor proposals A.md/B.md) | 302 rows, 48 UNANCHORED, 4 topic changes | ledger row |

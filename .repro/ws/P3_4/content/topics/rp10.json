@@ -1,0 +1,314 @@
+{
+ "id": "rp10",
+ "t": "Contraception, emergency contraception and medication abortion",
+ "sub": "Every method blocks one step between a growing follicle and an implanted embryo, and estrogen, not progestin, carries most of the serious risk.",
+ "yld": "mid",
+ "exam": "mid",
+ "mins": 14,
+ "bp": [
+  "BP-rp10-01", "BP-rp10-02", "BP-rp10-03", "BP-rp10-04", "BP-rp10-05", "BP-rp10-06", "BP-rp10-07",
+  "BP-rp10-08", "BP-rp10-09", "BP-rp10-10", "BP-rp10-11", "BP-rp10-12", "BP-rp10-13"
+ ],
+ "obj": [
+  "PATHPHARM-MENSES-CONTRA.2",
+  "PATHPHARM-MENSES-CONTRA.3",
+  "BICEP-BROWN.6",
+  "BICEP-BROWN.7",
+  "PATHPHARM-MENSES-CONTRA.4"
+ ],
+ "pretest": [
+  {
+   "q": "A woman cannot safely take estrogen. Which kind of hormonal contraception can she still use?",
+   "o": [
+    "A progestin-only method",
+    "A combined oral pill",
+    "The transdermal patch",
+    "The vaginal ring"
+   ],
+   "a": 0,
+   "why": "The progestin blocks the LH surge, thickens cervical mucus and thins the endometrium on its own, so the minipill, the DMPA injection, the implant and the levonorgestrel IUD all work without estrogen.",
+   "w": {
+    "A combined oral pill": "Combined pills contain ethinyl estradiol, which raises hepatic clotting factors, so they carry exactly the risk she must avoid.",
+    "The transdermal patch": "The patch delivers ethinyl estradiol through the skin and gives even higher estrogen exposure than most pills, so clot risk is not reduced.",
+    "The vaginal ring": "The ring releases ethinyl estradiol with etonogestrel, so it shares every estrogen contraindication with the pill and the patch."
+   }
+  },
+  {
+   "q": "Levonorgestrel emergency contraception mainly works by which action?",
+   "o": [
+    "Delaying ovulation",
+    "Blocking implantation",
+    "Ending an early pregnancy",
+    "Killing sperm in the uterus"
+   ],
+   "a": 0,
+   "why": "A single high dose of levonorgestrel postpones the LH surge, so the follicle does not rupture while sperm are still alive. It has no effect once a pregnancy has implanted, so it is not an abortifacient.",
+   "w": {
+    "Blocking implantation": "Implantation happens about a week after ovulation, and good evidence shows levonorgestrel does not stop an embryo from attaching.",
+    "Ending an early pregnancy": "Ending an implanted pregnancy requires mifepristone and misoprostol; levonorgestrel given after implantation leaves the pregnancy intact.",
+    "Killing sperm in the uterus": "Toxicity to sperm and ova is how the copper IUD works; levonorgestrel acts on the hypothalamus and pituitary instead."
+   }
+  },
+  {
+   "q": "Which drug is given first in a medication abortion?",
+   "o": [
+    "Mifepristone",
+    "Misoprostol",
+    "Methotrexate",
+    "Oxytocin"
+   ],
+   "a": 0,
+   "why": "Mifepristone blocks progesterone receptors, so the decidua breaks down and the uterus becomes sensitive to prostaglandins. Misoprostol follows 24 to 48 hours later to contract the uterus and expel the tissue.",
+   "w": {
+    "Misoprostol": "Misoprostol is the second drug; it works far better once mifepristone has withdrawn progesterone support and primed the myometrium.",
+    "Methotrexate": "Methotrexate kills rapidly dividing trophoblast and is the medical treatment for a small ectopic pregnancy, not the standard first drug.",
+    "Oxytocin": "Oxytocin receptors are scarce in the early pregnant uterus, so oxytocin is used for labor and postpartum bleeding instead."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How do estrogen and progestin each prevent pregnancy?"
+  ],
+  [
+   "p",
+   "Hormonal contraception borrows the ovary's own brake. A steady dose of hormone keeps **negative feedback** on the hypothalamus and pituitary switched on, so GnRH pulses slow and FSH and LH stay low. The two hormones in {{rp10_chc|combined hormonal contraception}} then split the work. Estrogen blunts FSH, so no follicle becomes dominant, and it keeps the endometrium stable, which gives predictable bleeding. The progestin blocks the **LH surge**, so ovulation does not happen; it also thickens **cervical mucus** so sperm cannot swim through, and it thins the endometrium. Because the progestin does most of the contraceptive work, a method can drop estrogen and still prevent pregnancy; what it loses is a regular bleeding pattern."
+  ],
+  [
+   "t",
+   [
+    "Component",
+    "How it prevents pregnancy",
+    "Other effects",
+    "Signature risk"
+   ],
+   [
+    [
+     "Estrogen (usually ethinyl estradiol)",
+     "Suppresses FSH, so no follicle becomes dominant",
+     "Stabilizes the endometrium; raises SHBG, so free testosterone and acne fall",
+     "Venous and arterial clots, because the liver makes more clotting factors"
+    ],
+    [
+     "Progestin",
+     "Blocks the LH surge and thickens cervical mucus",
+     "Thins the endometrium; irregular spotting when used alone",
+     "Bone loss with DMPA; acne with androgenic progestins"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "key",
+   "Every hormonal method contains a progestin",
+   "The progestin is the part that reliably stops ovulation and blocks sperm, so every hormonal method carries one. Estrogen is added for **cycle control**, and it is the source of the clotting and cardiovascular risk. When estrogen is unsafe, the answer is a progestin-only or nonhormonal method, never no contraception."
+  ],
+  [
+   "h",
+   "Which methods contain estrogen, and which work best in real life?"
+  ],
+  [
+   "p",
+   "Methods fall into three families. The pill, the weekly **transdermal patch** and the monthly **vaginal ring** all combine ethinyl estradiol with a progestin. The progestin-only family is the minipill, the DMPA injection, the etonogestrel implant and the levonorgestrel IUD. The copper IUD, condoms and sterilization use no hormone. Effectiveness depends less on the molecule than on how much the method relies on the user. With {{rp10_typical|typical use}}, about 7 in 100 pill, patch or ring users become pregnant each year, mostly from missed doses, while fewer than 1 in 100 implant or IUD users do. That is why {{rp10_larc|long-acting reversible contraception}} is offered first to anyone who wants it, adolescents included."
+  ],
+  [
+   "f",
+   "rp10_methods"
+  ],
+  [
+   "p",
+   "Estrogen raises the liver's output of clotting factors, so every estrogen-containing method raises the risk of **venous thromboembolism**, and in susceptible women the risk of stroke and myocardial infarction. The contraindications follow from that: a smoker over 35, **migraine with aura**, prior VTE or stroke, known thrombophilia, ischemic heart disease, uncontrolled hypertension, fewer than 21 days postpartum, and severe liver disease or hepatic adenoma. Current breast cancer rules out every hormonal method, so a copper IUD is used. The same pills bring real benefits: lighter, regular, less painful periods, less acne and hirsutism, and a lower lifetime risk of ovarian cancer and endometrial cancer."
+  ],
+  [
+   "call",
+   "trap",
+   "Rifampin defeats the pill; amoxicillin does not",
+   "Only drugs that induce hepatic CYP3A4 lower contraceptive hormone levels: **rifampin**, carbamazepine, phenytoin, topiramate and St John's wort. Ordinary antibiotics such as amoxicillin or doxycycline do not. A woman who needs a long course of an {{rp10_inducer|enzyme inducer}} is steered to DMPA, whose high dose outlasts faster metabolism, or to an IUD, which acts locally."
+  ],
+  [
+   "why",
+   "Why do combined pills lower the risk of ovarian and endometrial cancer?",
+   "Each ovulation tears the ovarian surface and the nearby tubal epithelium, and every repair is another chance for a mutation. By suppressing ovulation, combined pills cut the number of lifetime ovulations, so ovarian cancer risk falls by roughly a third, more with longer use, and the protection lasts decades after stopping. Endometrial cancer is driven by estrogen acting without progesterone. Every active pill contains a progestin, which keeps the lining thin and secretory, so the endometrium never sees **unopposed estrogen**; its cancer risk falls by a similar amount and also persists long after the pills stop."
+  ],
+  [
+   "h",
+   "How do progestin-only methods and IUDs differ?"
+  ],
+  [
+   "p",
+   "Progestin-only methods avoid estrogen's clot risk, so they suit women with estrogen contraindications and women who are breastfeeding, but they trade away predictable bleeding. The minipill relies mostly on cervical mucus, so it must be taken at the same time each day, and fertility returns as soon as it stops. Depot medroxyprogesterone acetate (**DMPA**), injected every 3 months, suppresses ovulation strongly; amenorrhea is common, weight gain is typical, bone density falls during use, and fertility can take many months to return. The etonogestrel **implant**, a rod under the skin of the arm, lasts 3 years and is the most effective reversible method, but it causes unpredictable spotting. The **levonorgestrel** IUD thins the endometrium from inside the uterus, so periods lighten or stop, which makes it a first-line treatment for heavy menstrual bleeding."
+  ],
+  [
+   "p",
+   "The copper IUD contains no hormone. Copper ions provoke a sterile inflammatory reaction in the uterus that is toxic to sperm and ova, so fertilization rarely happens. It works for 10 years or more, but periods often become heavier and more painful. Any IUD insertion carries a small risk of **pelvic infection** in the first few weeks, because bacteria from the cervix can be carried upward, so active pelvic inflammatory disease or purulent cervicitis is treated before insertion. Pregnancy and a distorted uterine cavity also rule an IUD out."
+  ],
+  [
+   "t",
+   [
+    "Method",
+    "Hormone and route",
+    "Lasts",
+    "Typical bleeding",
+    "Distinctive issue"
+   ],
+   [
+    [
+     "Minipill",
+     "Norethindrone, daily pill",
+     "One day",
+     "Irregular",
+     "Must be taken on time; fertility returns at once"
+    ],
+    [
+     "DMPA",
+     "Medroxyprogesterone, injection",
+     "3 months",
+     "Amenorrhea over time",
+     "Bone density loss; slow return of fertility"
+    ],
+    [
+     "Implant",
+     "Etonogestrel, rod in the arm",
+     "3 years",
+     "Unpredictable spotting",
+     "Most effective reversible method"
+    ],
+    [
+     "Levonorgestrel IUD",
+     "Levonorgestrel, inside the uterus",
+     "3 to 8 years",
+     "Lighter, often none",
+     "Treats heavy menstrual bleeding"
+    ],
+    [
+     "Copper IUD",
+     "None",
+     "10 years or more",
+     "Heavier, more cramping",
+     "Most effective emergency contraception"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How does emergency contraception differ from medication abortion?"
+  ],
+  [
+   "p",
+   "**Emergency contraception** works before implantation, by delaying ovulation or by stopping fertilization, so it cannot end a pregnancy that has already implanted and is not an **abortifacient**. Levonorgestrel, a single high dose of progestin, works best within 72 hours and only if it is taken before the LH surge begins; it is also less effective in women with obesity. Ulipristal, a {{rp10_sprm|selective progesterone receptor modulator}}, works for up to 5 days and can still delay follicle rupture after LH has started to rise, so it outperforms levonorgestrel late in the window. A copper IUD placed within 5 days is the most effective option of all, and it then keeps working as ongoing contraception."
+  ],
+  [
+   "p",
+   "Medication abortion ends a pregnancy that has already implanted, so its two drugs act after implantation. **Mifepristone** is a progesterone receptor antagonist: without progesterone's support, the decidua breaks down, the pregnancy detaches, the cervix softens and the myometrium becomes sensitive to prostaglandins. **Misoprostol**, a prostaglandin E1 analog given 24 to 48 hours later, then drives strong uterine contractions and ripens the cervix to expel the tissue. Cramping and bleeding heavier than a period are expected effects, and misoprostol often adds nausea, diarrhea, fever and chills."
+  ],
+  [
+   "f",
+   "rp10_timeline"
+  ],
+  [
+   "steps",
+   [
+    "Medication abortion, step by step",
+    [
+     [
+      "Confirm an intrauterine pregnancy and its age",
+      "The regimen does not treat an ectopic pregnancy, so the location and gestational age are confirmed first, by history and by ultrasound when needed."
+     ],
+     [
+      "Mifepristone removes progesterone's support",
+      "Blocking progesterone receptors breaks down the decidua and softens the cervix. The drug also blocks glucocorticoid receptors, so chronic adrenal failure and long-term steroid therapy are contraindications."
+     ],
+     [
+      "Misoprostol expels the tissue",
+      "Given 24 to 48 hours later, the prostaglandin E1 analog contracts the myometrium, so cramping and heavy bleeding follow within hours."
+     ],
+     [
+      "Follow-up confirms completion",
+      "A falling hCG or an ultrasound confirms that the pregnancy has passed; retained tissue is treated with more misoprostol or with uterine aspiration."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How is a method chosen and counseled?"
+  ],
+  [
+   "p",
+   "Counseling starts with what the patient wants: when she may want pregnancy, how she feels about bleeding changes, and whether she can use estrogen. A sexual history covers partners, practices, protection from infection, past infections and pregnancy intentions, and only condoms also prevent sexually transmitted infection. An **adolescent** can consent to contraception without a parent in most states, so part of the visit is held alone and kept **confidential**, with the limits of confidentiality explained first. No pelvic examination is needed before starting pills, a patch, a ring, an injection or an implant."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp10_lng",
+    "q": "A woman had unprotected sex 3 days ago, and a home LH test turned positive yesterday. Which reasoning best explains why levonorgestrel is a poor choice?",
+    "o": [
+     "Levonorgestrel works by blocking implantation, and implantation has already happened three days after intercourse",
+     "Levonorgestrel only delays ovulation if taken before the LH surge begins, so once LH is rising it cannot stop follicle rupture",
+     "Levonorgestrel would end a pregnancy that has started, so it is avoided once fertilization may have occurred",
+     "Levonorgestrel needs estrogen to suppress FSH, and a single progestin dose cannot do that in time"
+    ],
+    "a": 1,
+    "why": "Levonorgestrel emergency contraception works by postponing the LH surge, so it helps only while the follicle is still waiting for that signal. A positive LH test means the surge has begun, and the follicle will rupture about 36 hours later whatever progestin is given. Implantation happens about a week after ovulation, not three days after intercourse, and levonorgestrel does not disturb it. Ulipristal can still delay rupture after LH starts rising, and a copper IUD blocks fertilization, so either is the better choice."
+   }
+  ],
+  [
+   "vis",
+   "rp10"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these are true of estrogen-containing contraception?",
+  "items": [
+   [
+    "Raises the risk of venous thromboembolism",
+    1
+   ],
+   [
+    "Contraindicated in migraine with aura",
+    1
+   ],
+   [
+    "Avoided in smokers over 35",
+    1
+   ],
+   [
+    "Includes the patch and the vaginal ring",
+    1
+   ],
+   [
+    "Lowers lifetime ovarian cancer risk",
+    1
+   ],
+   [
+    "Lowers lifetime endometrial cancer risk",
+    1
+   ],
+   [
+    "Less effective with rifampin",
+    1
+   ],
+   [
+    "Avoided in the first 21 days postpartum",
+    1
+   ],
+   [
+    "Safe to use with current breast cancer",
+    0
+   ],
+   [
+    "Causes bone density loss like DMPA",
+    0
+   ],
+   [
+    "Less effective with amoxicillin",
+    0
+   ],
+   [
+    "The most effective reversible method",
+    0
+   ]
+  ]
+ }
+}

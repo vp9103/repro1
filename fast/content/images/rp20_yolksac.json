@@ -1,0 +1,62 @@
+{
+ "n": "Yolk sac tumor of the testis",
+ "file": "rp20_yolksac.jpg",
+ "dx": "Yolk sac tumor of the testis",
+ "wrong": [
+  "Embryonal carcinoma",
+  "Seminoma",
+  "Choriocarcinoma",
+  "Mature teratoma"
+ ],
+ "ww": {
+  "Embryonal carcinoma": "<b>Embryonal carcinoma</b> shows crowded, overlapping, markedly pleomorphic cells with necrosis and hemorrhage. It lacks the glomerulus-like body with a central vessel; here a more uniform lining of cells surrounds open spaces and vascular cores.",
+  "Seminoma": "<b>Seminoma</b> is a sheet of uniform fried-egg cells with clear cytoplasm and lymphocytes in the septa. This tumor instead forms papillae and spaces lined by cuboidal to columnar cells around vascular cores.",
+  "Choriocarcinoma": "<b>Choriocarcinoma</b> combines large multinucleated syncytiotrophoblasts with smaller cytotrophoblasts and extensive hemorrhage. Here a single type of epithelial cell lines papillary and glandular spaces around small vessels.",
+  "Mature teratoma": "<b>Mature teratoma</b> contains well-differentiated tissues from all three germ layers, such as glands, cartilage and skin. This field is one population of primitive epithelium arranged in papillae, with no mature tissues."
+ },
+ "look": "Scan for papillae with a blood vessel running through their core. Tumor cells line open spaces and wrap these cores, and the best examples look like a glomerulus: a central capillary, a cuff of tumor cells and a space around them. That is a Schiller-Duval body, the signature of yolk sac tumor, which secretes AFP and is the most common testicular tumor in boys younger than 3.",
+ "cred": "Nephron · CC BY-SA 4.0 · Wikimedia Commons (resized)",
+ "by": "Nephron",
+ "lic": "CC BY-SA 4.0",
+ "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Yolk_sac_tumour_--_intermed_mag.jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Schiller-Duval body: at the lower left, a papilla has a central capillary full of red blood cells, wrapped by a layer of tumor cells that projects into an open space, giving the glomerulus-like structure typical of yolk sac tumor.",
+  "Papillary architecture: branching papillae with fibrovascular cores are lined by cuboidal to columnar tumor cells with dark nuclei, and open spaces between them give the lacy pattern typical of yolk sac tumor.",
+  "Lining epithelium: the cells that cover the papillae are crowded, with high nuclear-to-cytoplasmic ratio and prominent nuclei, a primitive epithelium that secretes alpha-fetoprotein, so the serum AFP is raised."
+ ],
+ "ann": [
+  {
+   "k": "e",
+   "x": 28.0,
+   "y": 60.0,
+   "rx": 9.0,
+   "ry": 14.0,
+   "px": 35.4,
+   "py": 52.0,
+   "l": "Schiller-Duval body: a papilla with a central capillary, lined by tumor cells and projecting into an open space, resembles a renal glomerulus. This structure is characteristic of yolk sac tumor, the most common testicular tumor in boys younger than 3."
+  },
+  {
+   "k": "r",
+   "x": 39.0,
+   "y": 15.0,
+   "w": 18.0,
+   "h": 14.0,
+   "px": 48.0,
+   "py": 29.0,
+   "l": "Papillary architecture: tumor cells form branching papillae supported by central fibrovascular cores, interspersed with lacy, reticular spaces. This lacy network is the predominant histological growth pattern in yolk sac tumors."
+  },
+  {
+   "k": "arrow",
+   "x": 18.0,
+   "y": 48.0,
+   "tx": 8.0,
+   "ty": 48.0,
+   "px": 8.0,
+   "py": 48.0,
+   "l": "Lining epithelium: papillae are lined by crowded, primitive cuboidal tumor cells with prominent nuclei and high N:C ratios. These neoplastic cells synthesize alpha-fetoprotein (AFP), causing markedly elevated serum AFP levels."
+  }
+ ]
+}

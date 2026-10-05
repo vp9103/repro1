@@ -1,0 +1,402 @@
+{
+ "id": "rp7",
+ "t": "Puberty: normal, early and late",
+ "sub": "Puberty begins when pulsatile GnRH returns; early or late puberty is sorted by the LH level, the bone age and the order of signs.",
+ "yld": "mid",
+ "exam": "hi",
+ "mins": 13,
+ "bp": [
+  "BP-rp7-01",
+  "BP-rp7-02",
+  "BP-rp7-03",
+  "BP-rp7-04",
+  "BP-rp7-05",
+  "BP-rp7-06",
+  "BP-rp7-07",
+  "BP-rp7-08",
+  "BP-rp7-09"
+ ],
+ "obj": [
+  "TBL-PUBERTY.1",
+  "TBL-PUBERTY.2",
+  "TBL-PUBERTY.3",
+  "TBL-PUBERTY.4",
+  "TBL-PUBERTY.5",
+  "TBL-PUBERTY.6",
+  "BICEP-WALSH.1",
+  "BICEP-WALSH.2",
+  "BICEP-WALSH.3",
+  "BICEP-WALSH.4",
+  "BICEP-WALSH.5",
+  "BICEP-WALSH.6"
+ ],
+ "pretest": [
+  {
+   "q": "Which change is usually the first sign of puberty in girls?",
+   "o": [
+    "Breast budding",
+    "Pubic hair",
+    "Menarche",
+    "Peak height velocity"
+   ],
+   "a": 0,
+   "why": "Thelarche, the breast bud, is the first visible effect of ovarian estrogen and usually comes first, near age 10. Pubic hair follows within months, peak height velocity comes about a year before menarche, and menarche arrives 2 to 3 years after thelarche.",
+   "w": {
+    "Pubic hair": "Pubic hair comes from adrenal and ovarian androgens and usually appears a few months after the breast bud, not before it.",
+    "Menarche": "Menarche is a late event, arriving about 2 to 3 years after thelarche once estrogen has built up the endometrium.",
+    "Peak height velocity": "The growth spurt starts early in girls, but its peak comes near breast stage 3, about a year before menarche."
+   }
+  },
+  {
+   "q": "Which change is usually the first sign of puberty in boys?",
+   "o": [
+    "Testicular enlargement",
+    "Pubic hair",
+    "Voice deepening",
+    "Facial hair"
+   ],
+   "a": 0,
+   "why": "FSH and LH first enlarge the testes to a volume of 4 mL or more, mostly by growing the seminiferous tubules. Pubic hair and penile growth follow, while voice change and facial hair come late, near genital stage 4.",
+   "w": {
+    "Pubic hair": "Pubic hair usually follows testicular growth by months, and it can come from adrenal androgens alone, so it is not a reliable start signal.",
+    "Voice deepening": "Laryngeal growth needs sustained testosterone and happens late, around genital stage 4, well after the testes have enlarged.",
+    "Facial hair": "Facial hair depends on DHT and appears late, usually after the growth spurt has peaked in mid to late puberty."
+   }
+  },
+  {
+   "q": "Pubic hair in a 7-year-old girl with no breast development most likely comes from which hormone?",
+   "o": [
+    "DHEA-S",
+    "Estradiol",
+    "LH",
+    "Progesterone"
+   ],
+   "a": 0,
+   "why": "Adrenarche is an adrenal event: the zona reticularis matures and makes DHEA-S under ACTH, which grows pubic and axillary hair without any breast growth. Isolated pubic hair with normal growth is usually premature adrenarche.",
+   "w": {
+    "Estradiol": "Estradiol would grow breast tissue first; a girl with pubic hair but no breast bud has androgen exposure, not estrogen exposure.",
+    "LH": "LH signals gonadal puberty, which in girls shows first as breast budding; pubic hair alone does not require the gonadal axis.",
+    "Progesterone": "Progesterone appears in quantity only after ovulation begins, years into puberty, and it does not grow body hair."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "What switches puberty on?"
+  ],
+  [
+   "p",
+   "Puberty is not a new system switching on but an old one waking up. The hypothalamic-pituitary-gonadal axis is active before birth and in early infancy, then is held quiet through childhood by central inhibition. Puberty begins when **pulsatile** GnRH secretion returns. {{rp7_kiss|Kisspeptin}} neurons in the arcuate nucleus of the hypothalamus drive the GnRH pulse generator, and **leptin** from fat is permissive: it signals that energy stores can support reproduction, which is why very low body fat delays puberty. The first hormonal change is nocturnal: LH pulses appear during sleep and are nearly absent by day, while FSH rises in parallel but less. As puberty advances the pulses spread into the daytime. Pulsed GnRH releases LH and FSH, and the gonads answer with estradiol or testosterone. That gonadal activation is called **gonadarche**."
+  ],
+  [
+   "p",
+   "Each gonadotropin has its own target cells in each sex. In girls, LH acts on theca cells to make androgen and FSH acts on granulosa cells, whose aromatase turns that androgen into estradiol. In boys, LH acts on Leydig cells to make testosterone, and FSH acts on **Sertoli cells**, which grow the seminiferous tubules, support spermatogenesis and secrete inhibin B. The axis also matures its feedback. In childhood a trace of sex steroid is enough to suppress GnRH; at puberty the hypothalamus tolerates much higher levels, so LH and FSH keep rising. Late in puberty a girl's estradiol gains a new power, **positive feedback**: a sustained high level triggers an LH surge, so the first cycles after menarche are often anovulatory and irregular until the surge becomes reliable. Boys never acquire this switch; testosterone and inhibin B only restrain LH and FSH."
+  ],
+  [
+   "p",
+   "{{rp7_adrenarche|Adrenarche}} runs on a separate engine. Around ages 6 to 8 the zona reticularis of the adrenal cortex matures and, under ACTH rather than GnRH, makes rising amounts of DHEA and **DHEA-S**. These adrenal androgens cause pubic and axillary hair, which is pubarche, plus body odor and mild acne. Because adrenarche does not depend on the gonadal axis, a child can grow pubic hair without true puberty, and a girl whose ovaries have failed, as in Turner syndrome, still grows pubic hair."
+  ],
+  [
+   "f",
+   "rp7_engines"
+  ],
+  [
+   "call",
+   "key",
+   "Two engines run puberty",
+   "Gonadarche is driven by GnRH and makes the gonadal hormones: estradiol grows the breasts, testosterone enlarges the penis, deepens the voice and builds muscle, and FSH enlarges the testes. Adrenarche is driven by ACTH and makes adrenal androgen, which starts pubic and axillary hair. Ask which engine a sign belongs to before you call it puberty."
+  ],
+  [
+   "t",
+   [
+    "Term",
+    "What begins",
+    "Hormone behind it"
+   ],
+   [
+    [
+     "Gonadarche",
+     "Activation of the ovaries or testes",
+     "Pulsatile GnRH, then LH and FSH"
+    ],
+    [
+     "Adrenarche",
+     "Adrenal androgen production by the zona reticularis",
+     "ACTH-driven DHEA and DHEA-S"
+    ],
+    [
+     "Pubarche",
+     "Pubic and axillary hair",
+     "Adrenal and gonadal androgens"
+    ],
+    [
+     "Thelarche",
+     "Breast bud",
+     "Estrogen"
+    ],
+    [
+     "Menarche",
+     "First menstrual period",
+     "Estradiol builds the endometrium; withdrawal bleeds"
+    ],
+    [
+     "Spermarche",
+     "First sperm in the ejaculate",
+     "FSH with testosterone"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "In what order do the changes of puberty appear?"
+  ],
+  [
+   "p",
+   "The order is more reliable than the age. In girls, **thelarche**, the breast bud driven by estrogen, is usually the first sign, at about age 10. Pubarche follows within months, the growth spurt comes early, and peak height velocity arrives about a year before **menarche**, which follows thelarche by 2 to 3 years, at an average age near 12.5. In boys, **testicular enlargement** to a volume of 4 mL or more is the first sign, at about age 11, followed by pubic hair and penile growth. Spermarche, the first ejaculation containing sperm, comes in mid-puberty, near genital stage 3 to 4 and age 13. The boys' growth spurt is late, about two years after the girls', which is a large part of why men end up taller."
+  ],
+  [
+   "f",
+   "rp7_sequence"
+  ],
+  [
+   "p",
+   "**Tanner stages**, also called sexual maturity ratings, grade breast, pubic hair and male genital development from 1, prepubertal, to 5, adult. Breast stage 2 is the **breast bud**, and genital stage 2 is testicular enlargement with thinner, redder scrotal skin. Each sign has its own hormone. Estrogen grows the breasts and the uterus; testosterone lengthens the penis, deepens the voice and builds muscle; FSH enlarges the seminiferous tubules, which make up most of the testicular volume; and adrenal plus gonadal androgens grow pubic and axillary hair. In skin and the prostate, 5-alpha-reductase converts testosterone to **dihydrotestosterone** (DHT), the more potent androgen behind facial and body hair, acne and prostate growth."
+  ],
+  [
+   "t",
+   [
+    "Tanner stage",
+    "Breast",
+    "Pubic hair",
+    "Male genitalia"
+   ],
+   [
+    [
+     "1",
+     "Prepubertal, papilla only",
+     "None",
+     "Prepubertal testes under 4 mL"
+    ],
+    [
+     "2",
+     "**Breast bud** under the areola",
+     "Sparse, long, straight hair",
+     "Testes 4 mL or more, scrotum reddens"
+    ],
+    [
+     "3",
+     "Breast and areola enlarge in one contour",
+     "Darker, coarser, curly hair over the pubis",
+     "Penis lengthens"
+    ],
+    [
+     "4",
+     "Areola forms a secondary mound",
+     "Adult-type hair that spares the thighs",
+     "Penis widens, scrotum darkens"
+    ],
+    [
+     "5",
+     "Adult contour, areola recedes",
+     "Adult hair spreading to the medial thighs",
+     "Adult size and shape"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Sex steroids drive the growth spurt directly and by raising **growth hormone** and IGF-1. The spurt follows pubertal stage more closely than age, peaking at about 8 cm a year in girls near breast stage 3 and about 9.5 cm a year in boys at genital stage 3 to 4. The same steroids mature the growth plates, and estrogen is the hormone that finally fuses them, in both sexes. Boys get their estrogen by **aromatization** of testosterone, which is why men who lack aromatase or the estrogen receptor keep growing into adulthood with open **epiphyseal** plates. A {{rp7_boneage|bone age}} X-ray of the left hand and wrist therefore reads how much sex steroid a child has been exposed to: it is advanced in precocious puberty and delayed in constitutional delay and hypogonadism."
+  ],
+  [
+   "why",
+   "Why does precocious puberty make a child tall now but short as an adult?",
+   "Sex steroids speed growth and speed skeletal maturation at the same time, but they advance the bone age faster than they add height. A child with early puberty therefore shoots up past her classmates while her growth plates race toward closure. Once estrogen fuses the epiphyses, growth stops for good, years earlier than it should, so the adult ends up shorter than her genetic target despite having been the tallest child in the class. This is the main reason to treat central precocious puberty with a continuous GnRH agonist, especially when it starts before age 6: removing the sex steroids slows the bone age and preserves adult height."
+  ],
+  [
+   "h",
+   "How do you tell central from peripheral precocious puberty?"
+  ],
+  [
+   "p",
+   "Precocious puberty means pubertal signs before age 8 in girls or before age 9 in boys. In **central precocious** puberty, also called GnRH-dependent or true precocious puberty, the whole axis wakes early: bone age is advanced and the signs follow the normal order, with both testes enlarging in boys. The proof is the LH. A basal value above roughly 0.3 mIU/mL on an ultrasensitive assay, or a peak above roughly 5 mIU/mL after **GnRH stimulation**, shows a pituitary responding as in puberty. About 90% of affected girls have no cause found, but boys more often have a brain lesion, so boys and very young girls get a brain magnetic resonance imaging (MRI) scan. The classic lesion is a {{rp7_hamartoma|hypothalamic hamartoma}}, a benign mass that contains its own GnRH neurons and can cause laughing seizures. Treatment is a continuous **GnRH agonist** such as depot leuprolide, which downregulates pituitary GnRH receptors so LH, FSH and sex steroids fall."
+  ],
+  [
+   "p",
+   "In **peripheral precocious** puberty, also called GnRH-independent, the sex steroids come from outside the axis and suppress it, so LH and FSH are low while estradiol or testosterone is high. {{rp7_mas|McCune-Albright syndrome}} is a postzygotic activating mutation of GNAS that keeps the Gs protein switched on, so ovarian cysts make estrogen on their own; its triad is precocious puberty, **café-au-lait** macules with jagged borders and polyostotic fibrous dysplasia. In boys, {{rp7_testotox|familial testotoxicosis}} is an activating mutation of the LH receptor: Leydig cells make testosterone without any LH, so a toddler virilizes with modestly enlarged testes. Other sources are congenital adrenal hyperplasia, granulosa cell tumors, Leydig cell tumors that enlarge one testis, hCG-secreting tumors in boys, because hCG acts at the LH receptor, and exogenous estrogen or testosterone gel. In a boy, virilization with small testes points to an adrenal or exogenous source. Long exposure advances the bone age and can switch the central axis on, so central puberty may follow treatment of a peripheral cause."
+  ],
+  [
+   "f",
+   "rp7_precocious"
+  ],
+  [
+   "h",
+   "Which early signs are variants of normal?"
+  ],
+  [
+   "p",
+   "Three common variants look like puberty but are self-limited and leave growth alone. Premature thelarche is isolated breast tissue, usually in girls under 2, with no pubic hair and no growth spurt. Premature adrenarche is pubic hair, odor or acne before age 8 in girls or 9 in boys from early adrenal DHEA-S, with no breast or testis growth; it carries a modest later risk of polycystic ovary syndrome. **Pubertal gynecomastia** appears in about half of boys at genital stage 3 to 4, when estradiol briefly rises faster than testosterone, and fades within a year or two. What separates a variant from disease is the **growth velocity**: it stays on the child's own curve and the bone age does not run ahead, whereas true precocious puberty accelerates height and bone age together. A variant needs reexamination, not a GnRH agonist."
+  ],
+  [
+   "call",
+   "trap",
+   "Pubic hair or a breast bud alone may be normal",
+   "**Premature adrenarche** and **premature thelarche** keep a prepubertal LH, a normal growth velocity and a bone age that is normal or only mildly advanced, so do not start a GnRH agonist for an isolated sign. Reexamine every 3 to 6 months. Act when a growth spurt, a bone age running ahead of age, rapid progression through the Tanner stages or virilization out of proportion to the hair appears, because the cause is then central puberty, CAH or a tumor."
+  ],
+  [
+   "h",
+   "Why is puberty late, and how are the causes sorted?"
+  ],
+  [
+   "p",
+   "Puberty is delayed when a girl has no breast development by age 13 or a boy has no testicular enlargement to 4 mL by age 14. {{rp7_cdgp|Constitutional delay}} of growth and puberty is the most common cause, especially in boys: the child is healthy and short, grows steadily below but parallel to the curve, often has a parent who matured late, and has a bone age about 2 years behind, so LH and FSH are appropriately low for that bone age. **Hypogonadotropic** hypogonadism is functional in anorexia nervosa, heavy athletic training and chronic illness, because low energy and low leptin suppress GnRH pulses, or permanent in pituitary lesions and in Kallmann syndrome, where GnRH neurons fail to migrate from the olfactory placode and anosmia results. **Hypergonadotropic** hypogonadism means the gonads have failed, as in Turner syndrome (45,X), Klinefelter syndrome (47,XXY) or after chemotherapy, so the next test is a karyotype."
+  ],
+  [
+   "f",
+   "rp7_delayed"
+  ],
+  [
+   "t",
+   [
+    "Cause",
+    "LH and FSH",
+    "Bone age",
+    "Typical clues"
+   ],
+   [
+    [
+     "Constitutional delay",
+     "Low, but normal for bone age",
+     "Delayed about 2 years",
+     "Short, healthy, a parent who matured late"
+    ],
+    [
+     "Functional hypogonadotropic",
+     "Low",
+     "Delayed",
+     "Anorexia, intense exercise, chronic illness"
+    ],
+    [
+     "Permanent hypogonadotropic",
+     "Low and staying low",
+     "Delayed",
+     "Anosmia in Kallmann syndrome, pituitary mass"
+    ],
+    [
+     "Hypergonadotropic",
+     "**High**",
+     "Delayed",
+     "Turner or Klinefelter syndrome; order a karyotype"
+    ]
+   ]
+  ],
+  [
+   "steps",
+   [
+    "Working up puberty that is too early or too late",
+    [
+     [
+      "Plot growth and stage the child",
+      "A growth chart shows whether height velocity has sped up, as in true puberty, or run slow and steady, as in constitutional delay. Tanner staging and testicular volume, measured against an orchidometer, then show the pattern: both testes enlarged points to the central axis, one enlarged testis to a Leydig cell tumor, and virilization with small testes to the adrenal glands."
+     ],
+     [
+      "Get a bone age X-ray",
+      "An X-ray of the left hand and wrist shows how far sex steroids have matured the skeleton: advanced in precocious puberty, delayed in constitutional delay and hypogonadism."
+     ],
+     [
+      "Measure LH, FSH and sex steroids",
+      "An ultrasensitive basal LH, or LH after GnRH stimulation, shows whether the axis is awake; pubertal LH means central, and suppressed LH with high steroids means peripheral."
+     ],
+     [
+      "Follow the result to its cause",
+      "Central precocious puberty leads to a brain magnetic resonance imaging (MRI) scan; peripheral leads to 17-hydroxyprogesterone, hCG and pelvic or testicular ultrasound; a high FSH in late puberty leads to a karyotype."
+     ],
+     [
+      "Screen for treatable hormone problems",
+      "TSH and prolactin are checked because hypothyroidism and prolactin excess both disturb pubertal timing, and treating them lets puberty resume."
+     ]
+    ]
+   ]
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp7_cdgp",
+    "q": "A healthy 14-year-old boy has 3-mL testes, a bone age of 12 and a father who matured late. Which reasoning fits best?",
+    "o": [
+     "A low LH proves GnRH deficiency, so he has Kallmann syndrome and needs gonadotropin therapy now",
+     "Small testes at 14 mean gonadal failure, so his FSH will be high and a karyotype is required",
+     "His delayed bone age and family history fit constitutional delay, and a low LH is appropriate for his bone age",
+     "His bone age is advanced, so puberty is imminent and no further evaluation is needed"
+    ],
+    "a": 2,
+    "why": "Constitutional delay is the most common cause of late puberty and delays the whole clock, so the bone age lags along with puberty. Judged against a bone age of 12, prepubertal testes and a low LH are expected rather than proof of GnRH deficiency. Kallmann syndrome would add anosmia and an LH that stays low as the bone age advances. Gonadal failure would raise FSH and LH. Watchful follow-up, sometimes with a short course of testosterone, is the usual plan."
+   }
+  ],
+  [
+   "vis",
+   "rp7"
+  ]
+ ],
+ "grid": {
+  "q": "Which findings point to central rather than peripheral precocious puberty?",
+  "items": [
+   [
+    "Pubertal LH that rises after GnRH stimulation",
+    1
+   ],
+   [
+    "Bilateral testicular enlargement in a boy",
+    1
+   ],
+   [
+    "Hypothalamic hamartoma on MRI",
+    1
+   ],
+   [
+    "Laughing seizures in a young boy",
+    1
+   ],
+   [
+    "Pubertal signs appearing in the normal order",
+    1
+   ],
+   [
+    "Response to a continuous GnRH agonist",
+    1
+   ],
+   [
+    "No cause found in a girl",
+    1
+   ],
+   [
+    "Café-au-lait macules with fibrous dysplasia",
+    0
+   ],
+   [
+    "Suppressed LH with a high estradiol",
+    0
+   ],
+   [
+    "Enlargement of one testis only",
+    0
+   ],
+   [
+    "Virilization with prepubertal-size testes",
+    0
+   ],
+   [
+    "High 17-hydroxyprogesterone",
+    0
+   ],
+   [
+    "High serum hCG in a boy",
+    0
+   ],
+   [
+    "Activating LH receptor mutation in a toddler boy",
+    0
+   ]
+  ]
+ }
+}

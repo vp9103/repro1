@@ -1,0 +1,290 @@
+{
+ "id": "rp11",
+ "t": "Menopause and hormone therapy",
+ "sub": "Follicle depletion removes estradiol and inhibin, so FSH climbs; hormone therapy replaces estrogen but must protect any uterus and respect clot and cancer risk.",
+ "yld": "mid",
+ "exam": "hi",
+ "mins": 16,
+ "bp": [
+  "BP-rp11-01", "BP-rp11-02", "BP-rp11-03", "BP-rp11-04", "BP-rp11-05", "BP-rp11-06", "BP-rp11-07", "BP-rp11-08",
+  "BP-rp11-09", "BP-rp11-10", "BP-rp11-11", "BP-rp11-12", "BP-rp11-13", "BP-rp11-14", "BP-rp11-15", "BP-rp11-16",
+  "BP-rp11-17"
+ ],
+ "obj": [
+  "MENOPAUSE.1", "MENOPAUSE.2", "MENOPAUSE.3", "MENOPAUSE.4", "MENOPAUSE.5", "MENOPAUSE.6", "MENOPAUSE.7",
+  "MENOPAUSE.8", "MENOPAUSE.9", "MENOPAUSE.10", "MENOPAUSE.11", "MENOPAUSE.12", "MENOPAUSE.13", "MENOPAUSE.14",
+  "MENOPAUSE.15", "BICEP-WILLIAMS.4", "BICEP-WILLIAMS.5", "BICEP-WILLIAMS.6", "BICEP-WILLIAMS.7",
+  "BICEP-WILLIAMS.2", "BICEP-WALSH.15"
+ ],
+ "pretest": [
+  {
+   "q": "Which serum hormone rises most reliably after menopause?",
+   "o": [
+    "FSH",
+    "Estradiol",
+    "Inhibin B",
+    "Progesterone"
+   ],
+   "a": 0,
+   "why": "With the follicles gone, granulosa cells no longer make estradiol or inhibin B, so both brakes on the pituitary are released and FSH climbs well above the premenopausal range.",
+   "w": {
+    "Estradiol": "Estradiol comes from granulosa cells of growing follicles, so it falls once the follicle supply is exhausted rather than rising.",
+    "Inhibin B": "Inhibin B is also a granulosa cell product; its loss is one reason the pituitary releases more gonadotropin.",
+    "Progesterone": "Progesterone needs a corpus luteum, which forms only after ovulation, so levels stay low once cycles stop."
+   }
+  },
+  {
+   "q": "A woman with an intact uterus starts systemic estrogen for hot flashes. What must be added?",
+   "o": [
+    "A progestogen",
+    "Testosterone",
+    "Thyroid hormone",
+    "A bisphosphonate"
+   ],
+   "a": 0,
+   "why": "Estrogen alone drives endometrial proliferation, and unopposed proliferation leads to hyperplasia and endometrial cancer. A progestin or micronized progesterone, given cyclically or continuously, turns the lining secretory and protects it.",
+   "w": {
+    "Testosterone": "Testosterone is sometimes added for low sexual desire, but it does nothing to restrain estrogen's growth signal in the endometrium.",
+    "Thyroid hormone": "Thyroid hormone treats hypothyroidism, a menopause mimic worth excluding, but it offers no endometrial protection.",
+    "A bisphosphonate": "Bisphosphonates slow bone resorption and treat osteoporosis; they have no effect on the uterine lining that estrogen stimulates."
+   }
+  },
+  {
+   "q": "What is the most common cause of bleeding after menopause?",
+   "o": [
+    "Endometrial or vaginal atrophy",
+    "Endometrial cancer",
+    "Uterine fibroids",
+    "Cervical cancer"
+   ],
+   "a": 0,
+   "why": "Thin, fragile atrophic tissue bleeds easily and causes most postmenopausal bleeding. Cancer must still be excluded with transvaginal ultrasound or endometrial biopsy, because about 90 percent of endometrial cancers present with bleeding.",
+   "w": {
+    "Endometrial cancer": "Endometrial cancer is the diagnosis that must be excluded first, but it explains only about one in ten bleeding episodes after menopause.",
+    "Uterine fibroids": "Fibroids depend on estrogen, so they usually shrink after menopause; a growing fibroid then raises concern for sarcoma instead.",
+    "Cervical cancer": "Cervical cancer can cause postcoital or irregular bleeding, but it is far rarer than atrophy in women with regular screening."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "What happens to the ovary and its hormones at menopause?"
+  ],
+  [
+   "p",
+   "A girl is born with about a million follicles and reaches puberty with a few hundred thousand; atresia and ovulation use the rest. **Follicle depletion** is the root of menopause. As follicles run out, granulosa cells make less estradiol, inhibin B and anti-Müllerian hormone, so the pituitary loses its brakes: FSH climbs first and most, and LH and GnRH rise too. That is why a high **follicle-stimulating hormone** level is the most useful marker. After menopause the main estrogen is {{rp11_estrone|estrone}}, made when aromatase in **adipose** tissue converts androstenedione from the adrenal glands and ovarian stroma, so women with more body fat keep more estrogen."
+  ],
+  [
+   "f",
+   "rp11_axis"
+  ],
+  [
+   "p",
+   "The {{rp11_straw|STRAW}} system stages reproductive aging around the final menstrual period. In the **menopausal transition**, or perimenopause, which can begin years before the last period, rising FSH speeds follicle growth, so cycles first shorten; later, **anovulatory** cycles are skipped and become long and irregular. Menopause itself, at a median age of 51, is a **retrospective** diagnosis made after 12 months without menses. Laboratory tests are unnecessary in a typical woman over 45, and during perimenopause FSH and estradiol swing widely, so one normal value does not exclude the transition. Postmenopause lasts for the rest of life."
+  ],
+  [
+   "p",
+   "Loss of ovarian function before age 40 is {{rp11_poi|primary ovarian insufficiency}}, confirmed by a high FSH on two occasions. Its causes include Turner syndrome, the **fragile X** premutation of FMR1, autoimmune oophoritis, often with thyroid or adrenal autoimmunity, and chemotherapy or pelvic radiation. These women need estrogen replacement until about 51 to protect bone and heart, and the risks measured in older women do not apply to them. At any age, menopause has mimics to exclude when the picture is atypical: pregnancy, thyroid disease and hyperprolactinemia, so hCG, TSH and prolactin are checked."
+  ],
+  [
+   "call",
+   "trap",
+   "One normal FSH does not rule out perimenopause",
+   "During the transition, follicles still ripen now and then, so FSH and estradiol rise and fall from week to week. A single normal **FSH** in a 47-year-old with irregular cycles and hot flashes does not exclude the transition, and a single high value does not mean she can stop contraception."
+  ],
+  [
+   "h",
+   "Why do hot flashes and genitourinary symptoms happen?"
+  ],
+  [
+   "p",
+   "Hot flashes start in the hypothalamus. Estrogen normally restrains {{rp11_kndy|KNDy neurons}}, which release kisspeptin, neurokinin B and dynorphin. Without estrogen these neurons become overactive and send **neurokinin** B signals through NK3 receptors to the thermoregulatory center, narrowing the thermoneutral zone. A tiny rise in core temperature then triggers flushing, vasodilation and sweating, followed by chills. These **vasomotor** symptoms affect about 80 percent of women and often last 7 years or more. The {{rp11_gsm|genitourinary syndrome}} of menopause has a simpler cause: estrogen keeps the vaginal epithelium thick and rich in glycogen, which lactobacilli turn into lactic acid. With estrogen gone, the epithelium thins, vaginal pH rises, and dryness, painful intercourse, urgency and recurrent urinary infections follow. Night sweats also break sleep, which worsens mood and cognition."
+  ],
+  [
+   "h",
+   "What does estrogen loss do to bone and the heart?"
+  ],
+  [
+   "p",
+   "Estrogen restrains bone resorption. It lowers osteoblast production of **RANKL** and raises **osteoprotegerin**, the decoy receptor that mops RANKL up. When estrogen falls, RANKL wins, osteoclasts multiply and live longer, and resorption outpaces formation: postmenopausal bone loss. Spongy **trabecular** bone, with its large surface, goes first, so vertebral compression and distal radius fractures appear early, and a woman can lose up to about 20 percent of her bone density in the 5 to 7 years after menopause. Estrogen also raises HDL and lowers LDL; after menopause LDL rises, fat shifts to the abdomen and insulin resistance grows, so cardiovascular disease becomes the leading cause of death in older women."
+  ],
+  [
+   "t",
+   [
+    "Consequence",
+    "Mechanism",
+    "First-line approach"
+   ],
+   [
+    [
+     "Hot flashes and night sweats",
+     "Overactive KNDy neurons narrow the thermoneutral zone",
+     "Systemic estrogen; nonhormonal drugs if estrogen is unsafe"
+    ],
+    [
+     "Vaginal and urethral atrophy",
+     "Thin epithelium, less glycogen, higher vaginal pH",
+     "Low-dose vaginal estrogen and moisturizers"
+    ],
+    [
+     "Bone loss",
+     "More RANKL, less osteoprotegerin, more osteoclast activity",
+     "DXA screening, calcium, vitamin D, bisphosphonates"
+    ],
+    [
+     "Cardiovascular risk",
+     "LDL rises, HDL falls, central fat and insulin resistance",
+     "Blood pressure, lipid, glucose and smoking control"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How is postmenopausal bleeding evaluated?"
+  ],
+  [
+   "p",
+   "Any bleeding 12 months or more after the final period is **postmenopausal bleeding**, and it is endometrial cancer until proven otherwise, because about 90 percent of endometrial cancers present this way. The most common cause, though, is benign **atrophy** of the endometrium or vagina, whose thin surface bleeds easily; polyps, hyperplasia, hormone therapy, tamoxifen and anticoagulants complete the list. Risk of cancer rises with obesity, unopposed estrogen, diabetes, nulliparity and Lynch syndrome. Endometrial cancer incidence and mortality are rising fastest in Black women, and fibroids, which are more common in Black women, make ultrasound less reliable, so a low threshold for biopsy helps close that **disparity**."
+  ],
+  [
+   "steps",
+   [
+    "Working up postmenopausal bleeding",
+    [
+     [
+      "Find the source",
+      "A speculum examination looks for vaginal atrophy, a cervical lesion or a polyp, and the history asks about urinary or rectal bleeding that can masquerade as uterine."
+     ],
+     [
+      "Image and sample the endometrium",
+      "Transvaginal ultrasound measures endometrial thickness, and for most women current ACOG guidance pairs it with endometrial biopsy at the first visit."
+     ],
+     [
+      "Read the stripe",
+      "A fully seen stripe of 4 mm or less makes cancer unlikely; ultrasound alone may suffice after a single episode with a thin stripe and no risk factors."
+     ],
+     [
+      "Get tissue when doubt remains",
+      "A thicker or poorly seen stripe, recurrent bleeding or risk factors call for tissue by office biopsy or hysteroscopy with curettage."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Who should take hormone therapy, and in what form?"
+  ],
+  [
+   "p",
+   "Systemic estrogen is the most effective treatment for moderate to severe vasomotor symptoms, and it also prevents bone loss. The first question is whether she has a uterus. Estrogen alone stimulates the endometrium, so **unopposed** estrogen leads to hyperplasia and cancer; a woman with a uterus therefore takes a **progestin** or micronized progesterone with it, and **estrogen-only** therapy is reserved for women after hysterectomy. A cyclic regimen adds the progestogen for 12 to 14 days a month and gives a scheduled withdrawal bleed, whereas continuous combined therapy gives both daily and usually brings amenorrhea after early spotting. Low-dose vaginal estrogen treats genitourinary symptoms, not hot flashes, is barely absorbed and needs no progestogen."
+  ],
+  [
+   "f",
+   "rp11_ht"
+  ],
+  [
+   "p",
+   "The second question is whether estrogen is safe for her. The **contraindications** are breast cancer, endometrial cancer, prior venous thromboembolism or stroke, coronary heart disease, active liver disease, unexplained vaginal bleeding and pregnancy. The third is the route. Oral estrogen passes through the liver first, raising clotting factors, triglycerides, binding globulins and **gallstone** risk; **transdermal** estradiol bypasses that {{rp11_firstpass|first-pass}} exposure and carries a lower risk of VTE, so it is preferred with high triglycerides, gallbladder disease, migraine or raised clot risk. Benefit outweighs risk when therapy starts before 60 or within 10 years of menopause, at the lowest effective dose. Compounded bioidentical hormones are unregulated, with doses that vary from batch to batch."
+  ],
+  [
+   "call",
+   "key",
+   "The uterus decides the progestogen",
+   "A woman with a uterus who takes systemic estrogen needs a progestogen, whatever her age or dose, because unopposed estrogen causes **endometrial hyperplasia**. After hysterectomy, estrogen alone is the better choice: in the WHI it did not raise breast cancer risk, whereas adding medroxyprogesterone did."
+  ],
+  [
+   "p",
+   "The {{rp11_whi|Women's Health Initiative}} shaped a generation of practice. It randomized postmenopausal women aged 50 to 79, average age 63, to oral **conjugated** equine estrogen with medroxyprogesterone acetate, or to estrogen alone after hysterectomy. The combined arm stopped early in 2002 with more breast cancer, stroke, venous thromboembolism and coronary events, but fewer hip fractures and colorectal cancers; the estrogen-alone arm raised stroke and clot risk without increasing breast cancer. Later analyses by age found low absolute risk in women who started within 10 years of menopause, the **timing hypothesis**, so hormone therapy now treats symptoms in younger women rather than preventing heart disease in older ones."
+  ],
+  [
+   "h",
+   "What treats hot flashes when estrogen is unsafe?"
+  ],
+  [
+   "p",
+   "Nonhormonal drugs serve women with contraindications such as breast cancer. Low-dose **paroxetine** is FDA-approved for hot flashes, and venlafaxine and escitalopram also work. Gabapentin, which binds the alpha-2-delta subunit of calcium channels, suits night sweats and insomnia but sedates and needs renal dosing. **Fezolinetant** blocks the NK3 receptor on the KNDy pathway, treating the source of the flash, with liver enzymes monitored. Clonidine and oxybutynin help modestly at the cost of side effects. Paroxetine and fluoxetine strongly inhibit **CYP2D6**, which activates tamoxifen, so a woman on tamoxifen uses venlafaxine, gabapentin or fezolinetant instead. Ospemifene, a SERM that acts as an estrogen agonist on vaginal epithelium, treats painful intercourse."
+  ],
+  [
+   "why",
+   "Why is FSH, rather than LH, the most useful blood marker of menopause?",
+   "Both gonadotropins rise once estradiol's negative feedback disappears, but FSH has a second brake that LH lacks. Granulosa cells of growing follicles secrete inhibin B, which suppresses FSH selectively. As the follicle pool empties, inhibin B falls first, so FSH climbs early in the transition while LH is still near normal. After menopause both brakes are gone and FSH rises far higher than LH, and its longer half-life keeps levels steadier. That is why a persistently high FSH, not LH, marks ovarian failure, whether it happens at 51 or at 31."
+  ],
+  [
+   "p",
+   "Preventive care after menopause targets what estrogen loss and age bring: **bone density** screening by DXA from 65, or earlier with risk factors, with calcium, vitamin D and weight-bearing exercise; **cardiovascular risk** control; mammography, cervical and colorectal cancer screening; and influenza, zoster and other age-appropriate vaccines. Claims from wellness influencers deserve the same test as any other: credentials, evidence and regulation. Supplements such as black cohosh and soy have not matched hormone therapy and are not standardized."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp11_route",
+    "q": "A 52-year-old with severe hot flashes and triglycerides of 450 mg/dL wants hormone therapy. Which reasoning best chooses the route?",
+    "o": [
+     "Oral estrogen is better absorbed, so it controls hot flashes at a lower dose and spares the liver",
+     "Both routes load the liver equally, so the choice depends only on which she prefers",
+     "Vaginal estrogen relieves hot flashes without systemic absorption, so it avoids any effect on lipids",
+     "Oral estrogen reaches the liver first and raises triglycerides, so a patch that bypasses first-pass exposure is safer"
+    ],
+    "a": 3,
+    "why": "A swallowed tablet is absorbed into the portal vein, so the liver meets a high estrogen concentration before the rest of the body does. The liver answers by making more triglyceride-rich VLDL, more clotting factors and more binding globulins, and triglycerides this high already threaten pancreatitis. Transdermal estradiol enters the systemic circulation directly, so the liver sees ordinary levels and triglycerides barely change. Low-dose vaginal estrogen treats genitourinary symptoms but is absorbed too little to relieve hot flashes."
+   }
+  ],
+  [
+   "vis",
+   "rp11"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these are expected after menopause?",
+  "items": [
+   [
+    "FSH well above the premenopausal range",
+    1
+   ],
+   [
+    "Estrone as the main circulating estrogen",
+    1
+   ],
+   [
+    "Low inhibin B and anti-Müllerian hormone",
+    1
+   ],
+   [
+    "Rising vaginal pH",
+    1
+   ],
+   [
+    "Faster loss of trabecular bone",
+    1
+   ],
+   [
+    "Higher LDL cholesterol",
+    1
+   ],
+   [
+    "Hot flashes from a narrowed thermoneutral zone",
+    1
+   ],
+   [
+    "More frequent urinary tract infections",
+    1
+   ],
+   [
+    "Low FSH with low estradiol",
+    0
+   ],
+   [
+    "Estradiol as the main circulating estrogen",
+    0
+   ],
+   [
+    "Thicker, glycogen-rich vaginal epithelium",
+    0
+   ],
+   [
+    "More osteoprotegerin and less RANKL",
+    0
+   ]
+  ]
+ }
+}

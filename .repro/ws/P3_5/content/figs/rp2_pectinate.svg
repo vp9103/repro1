@@ -1,0 +1,40 @@
+<svg class="dia" viewBox="0 0 900 520" role="img" aria-label="The anal canal in longitudinal section, divided by the pectinate line: above it endoderm with columnar epithelium, adenocarcinoma, painless internal hemorrhoids, the superior rectal artery and vein draining to the portal system, visceral nerves and internal iliac nodes; below it ectoderm with squamous epithelium, squamous cell carcinoma, painful external hemorrhoids, the inferior rectal artery, vein and nerve and superficial inguinal nodes; the internal and external anal sphincters are labeled">
+<text class="ttl" x="14" y="24" font-size="17">The pectinate line splits the anal canal into two territories</text>
+<rect x="392" y="56" width="26" height="206" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="482" y="56" width="26" height="206" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="394" y="292" width="22" height="182" rx="4" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<rect x="484" y="292" width="22" height="182" rx="4" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<rect x="418" y="232" width="14" height="206" rx="4" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<rect x="468" y="232" width="14" height="206" rx="4" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<ellipse cx="438" cy="214" rx="8" ry="15" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<ellipse cx="384" cy="470" rx="9" ry="12" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="2"/>
+<line x1="360" y1="262" x2="540" y2="262" stroke="var(--ink)" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="390" y="250" width="120" height="24" rx="12" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.5"/>
+<text class="b" x="450" y="267" font-size="13" text-anchor="middle">Pectinate line</text>
+<text class="a2" x="14" y="70" font-size="14">Above the line: endoderm (hindgut)</text>
+<text x="14" y="98" font-size="14">Simple columnar epithelium</text>
+<text x="14" y="124" font-size="14">Adenocarcinoma</text>
+<text x="14" y="150" font-size="14">Visceral nerves: stretch only, no sharp pain</text>
+<text class="b" x="14" y="214" font-size="14">Internal hemorrhoids: painless bleeding</text>
+<line x1="312" y1="210" x2="428" y2="214" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="540" y="98" font-size="14">Superior rectal artery (from IMA)</text>
+<text x="540" y="124" font-size="14">Superior rectal vein &#8594; portal system</text>
+<text x="540" y="150" font-size="14">Lymph &#8594; internal iliac nodes</text>
+<text class="cr" x="14" y="306" font-size="14">Below the line: ectoderm (proctodeum)</text>
+<text x="14" y="334" font-size="14">Stratified squamous epithelium</text>
+<text x="14" y="360" font-size="14">Squamous cell carcinoma</text>
+<text x="14" y="386" font-size="14">Inferior rectal nerve: somatic pain</text>
+<text class="b" x="14" y="474" font-size="14">External hemorrhoids: painful</text>
+<line x1="228" y1="470" x2="374" y2="470" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="540" y="334" font-size="14">Inferior rectal artery (internal pudendal)</text>
+<text x="540" y="360" font-size="14">Inferior rectal vein &#8594; caval system</text>
+<text x="540" y="386" font-size="14">Lymph &#8594; superficial inguinal nodes</text>
+<text class="a2" x="540" y="214" font-size="14">Internal anal sphincter:</text>
+<text x="540" y="232" font-size="14">smooth muscle, involuntary</text>
+<line x1="536" y1="222" x2="483" y2="250" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="cr" x="540" y="448" font-size="14">External anal sphincter:</text>
+<text x="540" y="466" font-size="14">skeletal, inferior rectal nerve</text>
+<line x1="536" y1="456" x2="507" y2="440" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="s" x="450" y="500" font-size="13" text-anchor="middle">anal verge</text>
+<text x="450" y="92" font-size="13" text-anchor="middle">Rectum</text>
+</svg>
