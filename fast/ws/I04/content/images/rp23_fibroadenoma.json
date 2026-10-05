@@ -28,5 +28,47 @@
   "Bland stroma: the pale pink stroma that fills most of the field is loose and evenly cellular, with small spindle nuclei, no crowding and no leaf-like fronds. This separates a fibroadenoma from a phyllodes tumor.",
   "Circumscribed edge: at the top left, a band of pink fibrous tissue, a few fat cells and a strip of green tissue ink mark the sharp, pushing border of the mass, which is why a fibroadenoma feels like a mobile, well-defined lump."
  ],
- "ann": []
+ "ann": [
+  {
+   "k": "e",
+   "x": 31.5,
+   "y": 46.5,
+   "rx": 10.5,
+   "ry": 10.0,
+   "rot": 30,
+   "px": 21.0,
+   "py": 58.0,
+   "l": "Open round-to-oval ducts lined by orderly, regular epithelium and surrounded by concentric stroma. This preserved, patent architecture demonstrates the classic pericanalicular pattern of fibroadenoma."
+  },
+  {
+   "k": "arrow",
+   "x": 68.0,
+   "y": 28.0,
+   "tx": 76.0,
+   "ty": 19.0,
+   "px": 76.0,
+   "py": 19.0,
+   "l": "Ductal lumens compressed into elongated, branching purple slits by overgrowing stroma. This cleft-like architecture represents the intracanalicular pattern; both patterns often coexist in the same lesion."
+  },
+  {
+   "k": "c",
+   "x": 82.0,
+   "y": 48.0,
+   "r": 8.0,
+   "px": 91.0,
+   "py": 48.0,
+   "l": "Abundant, pale pink stroma made of bland, evenly distributed spindle cells, without hypercellularity, nuclear atypia or leaf-like fronds. This bland stroma points to a fibroadenoma rather than a phyllodes tumor."
+  },
+  {
+   "k": "e",
+   "x": 13.0,
+   "y": 19.0,
+   "rx": 8.0,
+   "ry": 12.0,
+   "rot": -45,
+   "px": 23.5,
+   "py": 11.5,
+   "l": "Green surgical margin ink, mature adipocytes, and a condensed fibrous border demarcate the sharp, non-infiltrative pushing edge responsible for the classic mobile, well-circumscribed lump on exam."
+  }
+ ]
 }

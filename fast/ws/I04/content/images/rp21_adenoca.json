@@ -28,5 +28,47 @@
   "Single cell layer: each gland is lined by one layer of cuboidal to columnar cells with dark nuclei. Cancer glands lack the outer basal cell layer that benign glands keep, so p63 staining would be negative and AMACR positive.",
   "Needle core: the narrow curved strip of tissue with blank white background above and below is a needle biopsy core, the way prostate cancer is usually found after a raised PSA."
  ],
- "ann": []
+ "ann": [
+  {
+   "k": "r",
+   "x": 59.0,
+   "y": 21.0,
+   "w": 18.0,
+   "h": 14.0,
+   "px": 68.0,
+   "py": 10.0,
+   "l": "Crowded small glands: closely packed small-to-medium glands with open lumens fill the needle core, demonstrating back-to-back crowding with minimal intervening stroma."
+  },
+  {
+   "k": "e",
+   "x": 35.0,
+   "y": 62.0,
+   "rx": 9.0,
+   "ry": 7.0,
+   "rot": -10,
+   "px": 35.0,
+   "py": 90.0,
+   "l": "Infiltrative pattern: malignant glands dissect haphazardly through pink fibromuscular stroma, wrapping around stromal fiber bundles rather than organizing into normal rounded lobules."
+  },
+  {
+   "k": "arrow",
+   "x": 22.0,
+   "y": 32.0,
+   "tx": 15.0,
+   "ty": 10.0,
+   "px": 15.0,
+   "py": 10.0,
+   "l": "Single cell layer: each malignant gland is lined by a single layer of cuboidal to columnar cells with dark nuclei. Cancer glands lack the outer basal cell layer present in benign glands, rendering p63 staining negative and AMACR positive."
+  },
+  {
+   "k": "bracket",
+   "x": 5.0,
+   "y": 25.0,
+   "x2": 5.0,
+   "y2": 80.0,
+   "px": 2.0,
+   "py": 52.5,
+   "l": "Needle core: the narrow curved strip of tissue with blank white background above and below is a needle biopsy core, which is the standard procedure for diagnosing prostate cancer after detecting a raised PSA level."
+  }
+ ]
 }

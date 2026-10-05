@@ -27,5 +27,36 @@
   "Cataract at the left of the photograph: this pupil holds a similar pale bluish-white central opacity, so the lens change is present in both eyes, which supports a congenital cause such as rubella.",
   "Clear cornea: the transparent cornea and normal-looking iris around each opacity show that the cloudiness lies in the lens behind the pupil, not on the corneal surface."
  ],
- "ann": []
+ "ann": [
+  {
+   "k": "e",
+   "x": 89.0,
+   "y": 61.0,
+   "rx": 3.5,
+   "ry": 5.0,
+   "px": 93.0,
+   "py": 56.0,
+   "l": "At the right of the photograph, the pupil shows a dense, central pearly white opacity within the lens. A clear rim of lens surrounds it, and a bright light reflex sits at its lower edge, confirming a central lens cataract."
+  },
+  {
+   "k": "e",
+   "x": 11.0,
+   "y": 70.0,
+   "rx": 3.5,
+   "ry": 5.0,
+   "px": 15.0,
+   "py": 65.0,
+   "l": "At the left of the photograph, the pupil shows a similar pale, bluish-white central opacity inside the lens. Bilateral leukocoria in an infant strongly suggests a congenital cause, most classically maternal rubella infection in the first trimester."
+  },
+  {
+   "k": "arrow",
+   "x": 21.0,
+   "y": 69.0,
+   "tx": 28.0,
+   "ty": 62.0,
+   "px": 28.0,
+   "py": 62.0,
+   "l": "The overlying cornea is completely transparent and clear, with normal underlying iris detail visible surrounding the pupil. This confirms that the opacity is localized deep within the crystalline lens rather than on the corneal surface."
+  }
+ ]
 }

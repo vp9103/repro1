@@ -28,5 +28,48 @@
   "Cellular stroma: the stroma inside the fronds is made of spindle cells in loose swirls with a few small vessels and is more cellular than normal breast stroma. This stromal overgrowth decides whether the tumor is graded benign, borderline or malignant.",
   "Long clefts: narrow slit-like spaces lined by epithelium, at the left center, upper center and right, are ducts stretched into long clefts by the expanding stroma. The long cleft is the key feature that separates phyllodes tumor from fibroadenoma."
  ],
- "ann": []
+ "ann": [
+  {
+   "k": "e",
+   "x": 52.0,
+   "y": 22.0,
+   "rx": 11.0,
+   "ry": 11.0,
+   "px": 52.0,
+   "py": 11.0,
+   "l": "Leaf-like fronds: broad, rounded lobes of stroma bulge into cystic spaces, producing the classic 'leaf-like' architecture that names the tumor. These expansile projections compress adjacent ductal structures."
+  },
+  {
+   "k": "arrow",
+   "x": 72.0,
+   "y": 81.5,
+   "tx": 79.0,
+   "ty": 77.0,
+   "px": 79.0,
+   "py": 77.0,
+   "l": "Epithelial lining: a thin, dark purple layer of benign epithelium lines the cleft and drapes over the frond. This double-layered epithelium is non-neoplastic, serving as a passive covering over the proliferating stroma."
+  },
+  {
+   "k": "e",
+   "x": 40.0,
+   "y": 67.0,
+   "rx": 11.0,
+   "ry": 8.0,
+   "rot": -5,
+   "px": 40.0,
+   "py": 75.0,
+   "l": "Cellular stroma: the frond interior consists of proliferating spindle cells with mild to moderate cellularity. Stromal cellularity, cytologic atypia, and mitotic rate distinguish benign phyllodes from borderline and malignant forms."
+  },
+  {
+   "k": "e",
+   "x": 18.5,
+   "y": 49.5,
+   "rx": 7.5,
+   "ry": 2.5,
+   "rot": 2,
+   "px": 18.5,
+   "py": 47.0,
+   "l": "Long clefts: compressed, elongated ductal spaces lined by epithelium snake between adjacent stromal fronds. These elongated cleft-like spaces are a hallmark finding separating phyllodes tumor from fibroadenoma."
+  }
+ ]
 }

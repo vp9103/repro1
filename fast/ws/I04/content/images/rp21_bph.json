@@ -27,5 +27,36 @@
   "Glandular nodule: at the center a rounded cluster of smaller, closely grouped glands is surrounded by larger dilated glands, so gland size changes in an orderly way. This nodular pattern is typical of hyperplasia.",
   "Expanded stroma: broad bands of pink fibromuscular stroma separate the glands across the field, because smooth muscle and stroma multiply as well as the glands. Alpha-1 blockers relax this smooth muscle."
  ],
- "ann": []
+ "ann": [
+  {
+   "k": "e",
+   "x": 88.0,
+   "y": 25.0,
+   "rx": 5.5,
+   "ry": 7.0,
+   "px": 94.0,
+   "py": 18.0,
+   "l": "Large hyperplastic prostate glands with papillary infoldings into the lumen. They are lined by a tall, pale secretory layer over a flat basal layer, which shows epithelial overgrowth in benign prostatic hyperplasia (BPH)."
+  },
+  {
+   "k": "e",
+   "x": 41.0,
+   "y": 50.0,
+   "rx": 13.0,
+   "ry": 13.0,
+   "px": 28.0,
+   "py": 63.0,
+   "l": "A central hyperplastic nodule composed of crowded, smaller, closely packed glandular acini. Hyperplasia in BPH is characteristically nodular and originates predominantly within the periurethral transition zone."
+  },
+  {
+   "k": "arrow",
+   "x": 68.0,
+   "y": 45.0,
+   "tx": 68.0,
+   "ty": 30.0,
+   "px": 68.0,
+   "py": 28.0,
+   "l": "Broad bands of pink fibromuscular stroma separating the hyperplastic glandular elements. BPH involves proliferation of both glandular epithelium and stromal smooth muscle/fibroblasts; alpha-1 adrenergic antagonists target this smooth muscle to reduce urethral resistance."
+  }
+ ]
 }
