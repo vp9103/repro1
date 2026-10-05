@@ -100,7 +100,7 @@
    "21-hydroxylase"
   ],
   "a": 0,
-  "e": "The second population is granulosa cells. FSH induces **aromatase** in them, which converts androstenedione to estrone and testosterone to estradiol. The first population is theca interna, where LH drives cholesterol desmolase and 17α-hydroxylase to make the androgen. 5α-reductase converts testosterone to DHT in male tissues, and 21-hydroxylase belongs to the adrenal pathway to cortisol and aldosterone.",
+  "e": "The second population is granulosa cells. FSH induces **aromatase** in them, which converts androstenedione to estrone and testosterone to estradiol, so the cells need androgen from their partner cells to work. The first population is theca interna, where LH drives cholesterol desmolase and 17α-hydroxylase to make the androgen. 5α-reductase converts testosterone to DHT in male tissues, and 21-hydroxylase belongs to the adrenal pathway to cortisol and aldosterone.",
   "w": {
    "17α-hydroxylase": "17α-hydroxylase works in theca cells under LH to build the androgen precursor. Granulosa cells lack it, which is why they need androstenedione from the theca.",
    "Cholesterol desmolase": "Desmolase, the side-chain cleavage enzyme, is the first LH-driven step in theca cells. It turns cholesterol into pregnenolone and never produces an estrogen.",

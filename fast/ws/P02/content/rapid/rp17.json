@@ -20,12 +20,12 @@
    "Integrase"
   ],
   "a": 1,
-  "x": "After gp120 binds CD4 and a coreceptor, gp41, the transmembrane half of the env protein, folds back and pulls the viral envelope against the host membrane so that the two fuse. Enfuvirtide binds gp41 and blocks this step, which is why it is a fusion inhibitor.",
+  "x": "After gp120 binds CD4 and a coreceptor, gp41, the other half of the env protein, folds back and pulls the viral envelope against the host membrane so the two fuse. Enfuvirtide binds gp41 and blocks this step, so it is a fusion inhibitor.",
   "w": {
-   "gp120": "Gp120 is the surface subunit that docks onto CD4 and then onto CCR5 or CXCR4, which exposes gp41; it mediates attachment, not the membrane fusion that follows.",
-   "p24": "P24 is the capsid protein of the cone-shaped core inside the virion and the antigen detected early by fourth-generation assays; it lies within the envelope and plays no part in fusion.",
-   "p17 matrix protein": "P17 is the matrix protein lining the inner face of the envelope and helps assemble virions; it is cleaved from the gag precursor and lies beneath the membrane rather than driving fusion.",
-   "Integrase": "Integrase is a pol enzyme that inserts viral DNA into the host chromosome after reverse transcription; it acts inside the cell long after fusion, as a separate step."
+   "gp120": "gp120 is the surface subunit that docks onto CD4 and then onto CCR5 or CXCR4. It mediates attachment, not the fusion that follows.",
+   "p24": "p24 is the capsid protein of the core inside the virion and the antigen picked up early by fourth-generation tests. It lies within the envelope and plays no part in fusion.",
+   "p17 matrix protein": "p17 is the matrix protein lining the inner face of the envelope. It helps assemble virions and does not drive fusion.",
+   "Integrase": "Integrase is a pol enzyme that inserts viral DNA into the host chromosome. It acts inside the cell long after fusion."
   },
   "media": "fig:rp17_hiv",
   "pt": {
@@ -58,12 +58,12 @@
    "Coreceptor tropism assay"
   ],
   "a": 4,
-  "x": "Maraviroc blocks CCR5 on the host cell, so it works only against strains that use CCR5 alone. A tropism assay checks whether the patient's virus uses CCR5, CXCR4 or both before the drug is chosen, because CXCR4-using virus, more common late in disease, would escape it.",
+  "x": "Maraviroc blocks CCR5 on the host cell, so it works only against strains that use CCR5. A tropism assay checks whether the patient's virus uses CCR5, CXCR4 or both, because CXCR4-using virus, more common late in disease, would escape the drug.",
   "w": {
-   "HLA-B*57:01 genotype": "HLA-B*57:01 testing predicts abacavir hypersensitivity, a reaction in carriers that can be dangerous on rechallenge; it belongs to the NRTI abacavir, not to the CCR5 antagonist maraviroc.",
-   "Hepatitis B serology": "Hepatitis B status is checked before any antiretroviral regimen because stopping tenofovir or lamivudine can flare coinfected patients; maraviroc is not a hepatitis B drug, so the result does not decide its use.",
-   "G6PD enzyme activity": "G6PD testing precedes drugs that can cause oxidative hemolysis, such as dapsone and primaquine; maraviroc does not cause hemolysis, so enzyme deficiency does not guide its use.",
-   "Baseline CD4 count": "The CD4 count stages immune damage and guides prophylaxis against opportunistic infections, but it does not tell which coreceptor the virus uses, so it cannot decide whether maraviroc will work."
+   "HLA-B*57:01 genotype": "HLA-B*57:01 testing predicts abacavir hypersensitivity. It belongs to the NRTI abacavir, not to maraviroc.",
+   "Hepatitis B serology": "Hepatitis B status is checked before any antiretroviral regimen, because stopping tenofovir or lamivudine can flare hepatitis B. It does not decide whether to use maraviroc.",
+   "G6PD enzyme activity": "G6PD testing comes before drugs that can cause oxidative hemolysis, such as dapsone and primaquine. Maraviroc does not cause hemolysis.",
+   "Baseline CD4 count": "The CD4 count stages immune damage and guides prophylaxis against opportunistic infections. It does not tell which coreceptor the virus uses."
   },
   "media": "fig:rp17_hiv",
   "pt": {
@@ -95,12 +95,12 @@
    "CCR7"
   ],
   "a": 0,
-  "x": "Early infection is dominated by CCR5-using, macrophage-tropic virus. Over years, strains that use CXCR4 on T cells emerge in many patients, infect T cells more broadly and are linked with faster CD4 decline. This switch also explains why maraviroc needs a tropism test.",
+  "x": "Early infection is dominated by CCR5-using, macrophage-tropic virus. Over years, strains that use CXCR4 on T cells emerge in many patients and are linked with faster CD4 decline. This switch also explains why maraviroc needs a tropism test.",
   "w": {
-   "CCR5": "CCR5 on macrophages and memory T cells is the coreceptor of the strains that dominate early infection and are usually transmitted; late disease adds CXCR4-using virus rather than replacing this pathway entirely.",
-   "CD4 receptor": "CD4 is the primary receptor used by every HIV strain at every stage; gp120 binds it first and only then engages a coreceptor, so CD4 cannot be what distinguishes the late strains.",
-   "CD8": "CD8 marks cytotoxic T cells, which attack infected cells and are not targets for the virus; HIV entry requires CD4 and a chemokine receptor, never CD8.",
-   "CCR7": "CCR7 directs naive T cells and dendritic cells toward lymph nodes and is not an HIV coreceptor in clinical practice; the two entry coreceptors that matter are CCR5 and CXCR4."
+   "CCR5": "CCR5 on macrophages and memory T cells is the coreceptor of the strains that dominate early infection and are usually transmitted.",
+   "CD4 receptor": "CD4 is the primary receptor for every HIV strain at every stage. gp120 binds it first, so it cannot be what separates the late strains.",
+   "CD8": "CD8 marks cytotoxic T cells, which attack infected cells. HIV entry needs CD4 and a chemokine receptor, never CD8.",
+   "CCR7": "CCR7 directs naive T cells and dendritic cells toward lymph nodes. It is not an HIV coreceptor in practice; the two that matter are CCR5 and CXCR4."
   },
   "media": "fig:rp17_hiv",
   "pt": {
@@ -133,12 +133,12 @@
    "Antigenic shift of envelope genes"
   ],
   "a": 2,
-  "x": "Reverse transcriptase has no proofreading function, so it makes frequent copying errors, and billions of virions are produced each day. A mutation that blunts one drug is therefore selected quickly under single-drug pressure, which is why therapy always combines drugs from different classes.",
+  "x": "Reverse transcriptase has no proofreading function, so it makes frequent copying errors, and billions of virions are made each day. A mutation that blunts one drug is selected quickly under single-drug pressure, which is why therapy always combines drugs.",
   "w": {
-   "Reassortment of segmented genome pieces": "Reassortment swaps whole segments between viruses that infect one cell, as in influenza; HIV has a single unsegmented RNA genome, so its variation comes mainly from copying errors, not from swapping pieces.",
-   "Latency in resting CD4 cells": "Latent provirus in resting CD4 cells explains why viral load rebounds after therapy stops and why cure is difficult, but a silent genome is not copying itself, so it does not generate new resistant mutants.",
-   "Random integration into host chromosomes": "Integration places the DNA copy in the host chromosome and makes infection permanent, but the position of insertion does not alter the viral drug targets; mutation arises during copying of RNA into DNA.",
-   "Antigenic shift of envelope genes": "Antigenic shift is the reassortment-driven change in influenza hemagglutinin and neuraminidase that causes pandemics; HIV generates variation by point mutation and recombination during copying, not by shift."
+   "Reassortment of segmented genome pieces": "Reassortment swaps whole segments between viruses in one cell, as in influenza. HIV has a single unsegmented RNA genome, so its variation comes mainly from copying errors.",
+   "Latency in resting CD4 cells": "Latent provirus in resting CD4 cells explains why viral load rebounds when therapy stops. A silent genome is not copying itself, so it does not make new resistant mutants.",
+   "Random integration into host chromosomes": "Integration makes infection permanent, but where the DNA lands does not change the drug targets. Mutations arise while RNA is copied into DNA.",
+   "Antigenic shift of envelope genes": "Antigenic shift is the reassortment-driven change in influenza hemagglutinin and neuraminidase. HIV varies by point mutation during copying, not by shift."
   },
   "media": "fig:rp17_hiv",
   "pt": {
@@ -170,12 +170,12 @@
    "CCR5 antagonists"
   ],
   "a": 3,
-  "x": "Integrase inserts the DNA copy of the viral genome into a host chromosome, a strand transfer step that depends on divalent metal ions. Drugs ending in -tegravir, such as dolutegravir and bictegravir, chelate those ions and block the step, so the provirus is never made; antacids with calcium, iron or aluminum bind the drug and lower absorption.",
+  "x": "Integrase strand transfer inhibitors, the -tegravir drugs such as dolutegravir, block the step where integrase inserts the DNA copy of the viral genome into a host chromosome. The provirus is then never made.",
   "w": {
-   "Nucleoside reverse transcriptase inhibitors": "NRTIs act one step earlier, after phosphorylation by host kinases, by ending the growing DNA chain during reverse transcription; they stop DNA from being made rather than stopping its insertion into the chromosome.",
-   "Nonnucleoside reverse transcriptase inhibitors": "NNRTIs such as efavirenz bind reverse transcriptase at an allosteric pocket and distort the enzyme, so they also act before integration; they need no phosphorylation but never touch the integrase enzyme.",
-   "Protease inhibitors": "Protease inhibitors act late, after budding, by blocking cleavage of gag-pol polyproteins so that virions stay immature; they do not prevent the DNA copy from entering the host chromosome.",
-   "CCR5 antagonists": "Maraviroc acts at the very first step by occupying the CCR5 coreceptor on the cell surface; it blocks entry and cannot stop insertion in cells that the virus has already entered."
+   "Nucleoside reverse transcriptase inhibitors": "NRTIs act one step earlier. They end the growing DNA chain during reverse transcription, so they stop DNA from being made rather than stop its insertion.",
+   "Nonnucleoside reverse transcriptase inhibitors": "NNRTIs such as efavirenz bind reverse transcriptase at an allosteric site, so they also act before integration. They never touch the integrase enzyme.",
+   "Protease inhibitors": "Protease inhibitors act late, after budding, by blocking cleavage of gag-pol polyproteins. They do not stop the DNA copy from entering the host chromosome.",
+   "CCR5 antagonists": "Maraviroc acts at the very first step by occupying the CCR5 coreceptor. It blocks entry and cannot stop insertion in cells the virus has already entered."
   },
   "media": "fig:rp17_hiv",
   "pt": {
@@ -200,19 +200,19 @@
   ],
   "q": "Protease inhibitors prevent HIV from producing infectious virions by blocking cleavage of which precursor?",
   "o": [
-   "The gp160 envelope precursor",
+   "The gp120 envelope protein",
    "The gag-pol polyprotein",
    "Newly made viral RNA",
    "The integrated provirus",
    "The host CD4 receptor"
   ],
   "a": 1,
-  "x": "The viral protease cuts the gag-pol polyprotein into mature capsid proteins and the enzymes reverse transcriptase, integrase and protease itself. Inhibitors of this protease, the -navir drugs, therefore leave virions that bud but stay immature and noninfectious. The gp160 envelope precursor is cut by a host protease, so it escapes this class.",
+  "x": "The viral protease cuts the gag-pol polyprotein into mature capsid proteins and the enzymes reverse transcriptase, integrase and protease itself. Protease inhibitors, the -navir drugs, therefore leave virions that bud but stay immature and noninfectious.",
   "w": {
-   "The gp160 envelope precursor": "Gp160 is cleaved into gp120 and gp41 by a host cellular protease in the Golgi, not by the viral protease, so protease inhibitors leave envelope maturation untouched.",
-   "Newly made viral RNA": "Viral RNA is copied from the provirus by host RNA polymerase and is not cut by any protease; protease inhibitors act on proteins after translation, not on the RNA genome.",
-   "The integrated provirus": "The provirus is DNA fixed in the host chromosome; neither the viral protease nor protease inhibitors act on it, which is why therapy cannot clear this reservoir.",
-   "The host CD4 receptor": "CD4 is a human cell-surface protein that gp120 binds; the viral protease acts only on viral polyproteins after assembly, so the drug target is entirely viral and the receptor is unaffected."
+   "The gp120 envelope protein": "gp120 is the finished surface protein that binds CD4. The viral protease acts on the gag-pol polyprotein, not on gp120.",
+   "Newly made viral RNA": "Viral RNA is copied from the provirus by host RNA polymerase and is not cut by any protease. Protease inhibitors act on proteins after translation.",
+   "The integrated provirus": "The provirus is DNA fixed in the host chromosome. Neither the viral protease nor protease inhibitors act on it, which is why therapy cannot clear this reservoir.",
+   "The host CD4 receptor": "CD4 is a human cell-surface protein that gp120 binds. The viral protease acts only on viral polyproteins, so the receptor is unaffected."
   },
   "media": "fig:rp17_hiv",
   "pt": {
@@ -244,12 +244,12 @@
    "Nonnucleoside reverse transcriptase inhibitors"
   ],
   "a": 4,
-  "x": "NNRTIs such as efavirenz and nevirapine bind a hydrophobic pocket on reverse transcriptase away from the active site, locking the enzyme in an inactive shape. Because the drug already works as given, it needs no phosphorylation, unlike NRTIs, which are activated by host kinases and act as chain terminators.",
+  "x": "NNRTIs such as efavirenz and nevirapine bind a pocket on reverse transcriptase away from the active site and lock the enzyme in an inactive shape. They already work as given, so they need no phosphorylation, unlike NRTIs, which host kinases activate and which act as chain terminators.",
   "w": {
-   "Nucleoside reverse transcriptase inhibitors": "NRTIs bind the active site after host kinases convert them to triphosphates and then terminate the growing chain; they are prodrugs that need activation, unlike a drug that sits at an allosteric pocket.",
-   "Integrase strand transfer inhibitors": "Integrase inhibitors bind the integrase active site by chelating divalent metal ions and block strand transfer; they target a different enzyme and act after reverse transcription is complete.",
-   "Protease inhibitors": "Protease inhibitors occupy the active site of the viral protease, mimicking the peptide bond it cuts; they target a different enzyme at the budding stage and act on proteins, not on reverse transcription.",
-   "Fusion inhibitors": "Enfuvirtide binds gp41 outside the cell to stop envelope fusion, a very early step; it is a peptide given by injection and never reaches reverse transcriptase inside the cell."
+   "Nucleoside reverse transcriptase inhibitors": "NRTIs bind the active site after host kinases turn them into triphosphates, and then end the growing chain. They are prodrugs that need activation.",
+   "Integrase strand transfer inhibitors": "Integrase inhibitors block strand transfer by the integrase enzyme. They target a different enzyme and act after reverse transcription is complete.",
+   "Protease inhibitors": "Protease inhibitors block the viral protease at the budding stage. They act on proteins, not on reverse transcription.",
+   "Fusion inhibitors": "Enfuvirtide binds gp41 outside the cell to stop envelope fusion, a very early step. It is an injected peptide and never reaches reverse transcriptase."
   },
   "media": "fig:rp17_hiv",
   "pt": {
@@ -280,12 +280,12 @@
    "Antibody-coated virions"
   ],
   "a": 0,
-  "x": "Integrase inserts the DNA copy of the genome into the host chromosome, and a resting memory CD4 cell can carry that integrated provirus silently for years without making virus. Antiretrovirals act on replicating virus and cannot remove it, so viral load rebounds within weeks when therapy stops.",
+  "x": "Integrase inserts the DNA copy of the genome into the host chromosome, and a resting memory CD4 cell can carry that integrated provirus silently for years without making virus. Antiretrovirals act on replicating virus and cannot remove it, so viral load rebounds when therapy stops.",
   "w": {
-   "Episomal circular DNA": "Circular episomes are how herpes simplex virus and HPV persist, in neurons and basal keratinocytes; HIV, a retrovirus, is instead spliced permanently into a host chromosome.",
-   "Free virions in lymph node fluid": "Free virions are cleared within hours to days and fall to undetectable levels on therapy; they reflect ongoing replication, not the silent reservoir that outlives treatment.",
-   "Viral RNA free in the cytoplasm": "Viral RNA in the cytoplasm is made from the provirus when a cell is activated and is not a stable reservoir; it is degraded or packaged into virions within hours.",
-   "Antibody-coated virions": "Antibody-coated virions are cleared by phagocytes; they are neither the source of persistent infection nor able to restart replication without an infected cell to host them."
+   "Episomal circular DNA": "Circular episomes are how herpes simplex virus and HPV persist, in neurons and basal keratinocytes. HIV, a retrovirus, is spliced permanently into a host chromosome.",
+   "Free virions in lymph node fluid": "Free virions are cleared within days and fall to undetectable levels on therapy. They reflect ongoing replication, not the silent reservoir that outlives treatment.",
+   "Viral RNA free in the cytoplasm": "Viral RNA in the cytoplasm is made from the provirus when a cell is activated. It is degraded or packaged into virions within hours and is not a stable reservoir.",
+   "Antibody-coated virions": "Antibody-coated virions are cleared by phagocytes. They are not the source of persistent infection and cannot restart replication without an infected cell."
   },
   "media": "fig:rp17_hiv",
   "pt": {
@@ -319,12 +319,12 @@
    "Reverse transcriptase"
   ],
   "a": 2,
-  "x": "P24 is the capsid protein of HIV and is released into blood in large amounts early in infection, before antibodies form. Fourth-generation assays detect HIV-1 and HIV-2 antibodies together with p24 antigen, which shortens the window period compared with antibody-only tests. A reactive result is followed by an antibody differentiation assay.",
+  "x": "p24 is the capsid protein of HIV and is released into the blood in large amounts early in infection, before antibodies form. Fourth-generation assays detect HIV antibodies together with p24 antigen, which shortens the window period compared with antibody-only tests.",
   "w": {
-   "gp120": "Gp120 is the envelope protein that binds CD4; antibodies against envelope proteins are what antibody tests detect, so it is a target of the later immune response, not the early antigen in the assay.",
-   "gp41": "Gp41, the transmembrane envelope protein, is one of the earliest targets of antibody and appeared as a band on the old Western blot, but it is the target of antibody rather than the free antigen detected before seroconversion.",
-   "p17": "P17 is the matrix protein beneath the envelope; it is not an antigen used in clinical assays, so detecting it would not shorten the window period.",
-   "Reverse transcriptase": "Reverse transcriptase is an enzyme packaged inside virions and present in infected cells at far lower concentration in blood than p24, so it is not used as the screening antigen; assays target p24 and HIV RNA."
+   "gp120": "gp120 is the envelope protein that binds CD4. Antibodies against envelope proteins are what antibody tests detect, so it is not the early antigen.",
+   "gp41": "gp41, the transmembrane envelope protein, is an early target of antibody. It is the target of antibody, not the free antigen detected before seroconversion.",
+   "p17": "p17 is the matrix protein beneath the envelope. It is not an antigen used in clinical assays, so detecting it would not shorten the window period.",
+   "Reverse transcriptase": "Reverse transcriptase is an enzyme packaged inside virions, and its level in blood is much lower than p24. The assays target p24 and HIV RNA instead."
   },
   "media": "fig:rp17_hiv",
   "pt": {
@@ -356,12 +356,12 @@
    "After the 20-week anatomy scan"
   ],
   "a": 1,
-  "x": "Universal opt-out HIV screening is recommended at the first prenatal visit for every pregnant patient, with a fourth-generation antigen/antibody test, because treatment started early cuts perinatal transmission to below 1 percent. A repeat test in the third trimester is added for those at higher risk.",
+  "x": "Every pregnant patient is offered opt-out HIV screening at the first prenatal visit, with a fourth-generation antigen/antibody test. Starting treatment early cuts the risk of passing HIV to the baby to a very low level.",
   "w": {
-   "Only after reporting a risk behavior": "Risk-based screening misses many infections, because patients may not disclose or recognize exposure and some have a partner of unknown status; guidelines therefore screen all pregnant patients with an opt-out approach.",
-   "At 28 weeks with the glucose challenge": "By 28 weeks much of the chance to suppress the virus before delivery is lost; the glucose challenge is a gestational diabetes screen, whereas HIV screening is done at the first visit with the other initial prenatal labs.",
-   "At 36 weeks with group B strep culture": "The culture at 36 to 37 weeks guides intrapartum penicillin for group B strep; testing for HIV that late would leave too little time for suppression before delivery and for planning cesarean when viral load is high.",
-   "After the 20-week anatomy scan": "The anatomy scan looks for structural defects and has no link to infection screening; waiting until 20 weeks delays antiretroviral treatment that should start as early as possible, ideally in the first trimester."
+   "Only after reporting a risk behavior": "Risk-based screening misses many infections, because patients may not disclose or recognize exposure. Guidelines screen everyone with an opt-out approach.",
+   "At 28 weeks with the glucose challenge": "By 28 weeks much of the chance to suppress the virus before delivery is lost. The glucose challenge is a gestational diabetes screen, not an HIV test.",
+   "At 36 weeks with group B strep culture": "The 36-week culture guides group B strep prophylaxis. Testing for HIV that late leaves too little time to suppress the virus before delivery.",
+   "After the 20-week anatomy scan": "The anatomy scan looks for structural defects and is unrelated to infection screening. Waiting until 20 weeks delays antiretroviral treatment that should start as early as possible."
   },
   "media": "fig:rp30_timeline",
   "pt": {
@@ -392,12 +392,12 @@
    "Direct fluorescent antibody stain"
   ],
   "a": 1,
-  "x": "Nucleic acid amplification of lesion swab fluid, usually PCR, detects HSV DNA with the highest sensitivity and distinguishes HSV-1 from HSV-2, which guides prognosis and counseling. A Tzanck smear shows multinucleated giant cells but is insensitive and cannot separate herpes simplex from varicella-zoster.",
+  "x": "PCR of lesion swab fluid detects herpes simplex DNA with the highest sensitivity and tells HSV-1 from HSV-2. A Tzanck smear shows multinucleated giant cells but is insensitive and cannot separate herpes simplex from varicella-zoster.",
   "w": {
-   "Tzanck smear": "A Tzanck smear of the lesion base shows multinucleated giant cells, which herpes simplex and varicella-zoster both cause, so it cannot name the virus or its type, and it misses many cases.",
-   "Viral culture": "Culture can type the virus, but its sensitivity is lower than PCR, especially for healing or recurrent lesions, and results take days; it has largely been replaced by nucleic acid testing.",
-   "HSV IgG serology": "Type-specific IgG blood tests may be negative early in primary infection and show only past exposure, not whether a particular lesion is herpetic, so they do not diagnose a current ulcer reliably.",
-   "Direct fluorescent antibody stain": "Direct fluorescent antibody staining of lesion cells is rapid but misses many infections, since it needs adequate cells and is far less sensitive than amplifying viral DNA."
+   "Tzanck smear": "A Tzanck smear shows multinucleated giant cells, which both herpes simplex and varicella-zoster cause. It cannot name the virus or its type, and it misses many cases.",
+   "Viral culture": "Culture can type the virus, but it is less sensitive than PCR and takes days. It has largely been replaced by nucleic acid testing.",
+   "HSV IgG serology": "Type-specific IgG blood tests can be negative early in a first infection and show only past exposure. They do not reliably diagnose a current ulcer.",
+   "Direct fluorescent antibody stain": "Direct fluorescent antibody staining of lesion cells is fast but misses many infections. It is much less sensitive than amplifying viral DNA."
   },
   "media": "fig:rp16_ulcers",
   "pt": {
@@ -431,12 +431,12 @@
    "Acyclovir"
   ],
   "a": 4,
-  "x": "Acyclovir 400 mg three times daily or valacyclovir 500 mg twice daily is started at 36 weeks in women with a history of genital herpes. Suppression reduces recurrences and viral shedding, so lesions at delivery are less likely, and cesarean delivery for active lesions or prodrome is needed less often.",
+  "x": "Acyclovir or valacyclovir is started at 36 weeks in women with a history of genital herpes. Suppression cuts recurrences and viral shedding, so lesions at delivery are less likely and cesarean delivery for active lesions is needed less often.",
   "w": {
-   "Foscarnet": "Foscarnet is reserved for acyclovir-resistant herpes, usually in AIDS, because it is given intravenously and is nephrotoxic with low calcium and magnesium; it is not used for routine suppression in pregnancy.",
-   "Ganciclovir": "Ganciclovir is activated by the UL97 kinase of cytomegalovirus and used for CMV disease; it causes neutropenia and is not the standard antiviral for herpes simplex suppression.",
-   "Ribavirin": "Ribavirin is highly teratogenic and contraindicated in pregnancy; it treats RSV and hepatitis C, not herpes simplex, so giving it would risk fetal harm without any benefit.",
-   "Cidofovir": "Cidofovir is a nucleotide analog for resistant or cytomegalovirus infection, given intravenously with probenecid and saline because of nephrotoxicity; it is far too toxic for routine suppression in pregnancy."
+   "Foscarnet": "Foscarnet is reserved for acyclovir-resistant herpes, usually in AIDS. It is given intravenously and is toxic to the kidneys, so it is not used for routine suppression.",
+   "Ganciclovir": "Ganciclovir treats cytomegalovirus disease and causes neutropenia. It is not the standard drug for herpes simplex suppression.",
+   "Ribavirin": "Ribavirin is highly teratogenic and not used in pregnancy. It treats RSV and hepatitis C, not herpes simplex.",
+   "Cidofovir": "Cidofovir is given intravenously with probenecid and saline for resistant or cytomegalovirus infection because it harms the kidneys. It is far too toxic for routine suppression."
   },
   "media": "fig:rp18_routes",
   "pt": {
@@ -464,16 +464,16 @@
    "Cesarean delivery",
    "Vaginal delivery after intravenous acyclovir",
    "Vacuum-assisted vaginal delivery",
-   "Vaginal delivery with a fetal scalp electrode",
+   "Vaginal delivery with acyclovir for the newborn afterward",
    "Induction with early amniotomy"
   ],
   "a": 0,
-  "x": "Active lesions or prodromal symptoms at the onset of labor mean viral shedding in the birth canal, so cesarean delivery lowers the risk of neonatal herpes, a severe infection with skin, eye and mouth disease, encephalitis or disseminated disease. Women with a history but no lesions or prodrome can deliver vaginally.",
+  "x": "Active lesions or prodromal symptoms at the start of labor mean virus is shedding in the birth canal, so cesarean delivery lowers the risk of neonatal herpes, a severe infection of the skin, eyes and mouth, brain or whole body. Women with a history but no lesions or prodrome can deliver vaginally.",
   "w": {
-   "Vaginal delivery after intravenous acyclovir": "Acyclovir given to the mother does not eliminate shedding at delivery, so it cannot replace cesarean delivery when lesions are present; suppression from 36 weeks only lowers the chance that lesions are present.",
-   "Vacuum-assisted vaginal delivery": "Vacuum or forceps extraction injures the fetal scalp and exposes it to infected secretions, which adds neonatal risk; it is avoided when lesions are present and does not replace cesarean.",
-   "Vaginal delivery with a fetal scalp electrode": "A fetal scalp electrode breaks the skin of the newborn's head and gives virus a direct route in, so it is avoided in women with herpes; it increases rather than reduces transmission.",
-   "Induction with early amniotomy": "Early rupture of membranes and induction prolong exposure of the fetus to infected genital secretions; prolonged rupture raises neonatal infection risk, so this plan adds risk rather than removing it."
+   "Vaginal delivery after intravenous acyclovir": "Acyclovir given to the mother does not stop shedding at delivery, so it cannot replace cesarean delivery when lesions are present.",
+   "Vacuum-assisted vaginal delivery": "Vacuum or forceps delivery injures the baby's scalp and exposes it to infected secretions. It adds risk and does not replace cesarean.",
+   "Vaginal delivery with acyclovir for the newborn afterward": "Giving the newborn acyclovir afterward does not replace avoiding exposure in the birth canal. When lesions are present, cesarean delivery lowers the risk.",
+   "Induction with early amniotomy": "Early rupture of membranes and induction prolong the baby's exposure to infected genital secretions, so this plan adds risk."
   },
   "media": "fig:rp18_routes",
   "pt": {
@@ -503,12 +503,12 @@
    "Prodrug of penciclovir"
   ],
   "a": 2,
-  "x": "Valacyclovir is the valine ester of acyclovir; esterases in the gut and liver remove the valine, giving acyclovir blood levels several times higher than oral acyclovir allows. That permits less frequent dosing, yet the active drug and its viral thymidine kinase activation are unchanged.",
+  "x": "Valacyclovir is the valine ester of acyclovir. Esterases in the gut and liver remove the valine, giving much higher acyclovir blood levels than oral acyclovir. The active drug and its activation by viral thymidine kinase are unchanged.",
   "w": {
-   "Valine ester prodrug of ganciclovir": "That describes valganciclovir, the oral prodrug of ganciclovir used for cytomegalovirus; its name differs by one syllable, but it targets CMV rather than herpes simplex.",
-   "Pyrophosphate analog needing no activation": "Foscarnet is the pyrophosphate analog; it binds viral DNA polymerase directly with no kinase activation, is given intravenously and is reserved for resistant herpes or CMV.",
-   "Cytosine nucleotide analog given with probenecid": "Cidofovir is the cytosine nucleotide analog that bypasses viral kinases, and it requires probenecid and saline to limit kidney injury; it is given intravenously for resistant virus.",
-   "Prodrug of penciclovir": "Famciclovir is the prodrug converted to penciclovir; it is a separate guanosine analog in the same family that also needs viral thymidine kinase, but its metabolite differs from valacyclovir."
+   "Valine ester prodrug of ganciclovir": "That describes valganciclovir, the oral prodrug of ganciclovir used for cytomegalovirus. The names differ by one syllable, but it targets CMV, not herpes simplex.",
+   "Pyrophosphate analog needing no activation": "Foscarnet is the pyrophosphate analog. It binds viral DNA polymerase directly with no kinase activation, is given intravenously and is reserved for resistant virus.",
+   "Cytosine nucleotide analog given with probenecid": "Cidofovir is the cytosine nucleotide analog that bypasses viral kinases. It needs probenecid and saline to protect the kidneys and is given intravenously for resistant virus.",
+   "Prodrug of penciclovir": "Famciclovir is the prodrug converted to penciclovir. It is a separate guanosine analog that also needs viral thymidine kinase."
   },
   "media": "fig:rp17_acyclovir",
   "pt": {
@@ -538,12 +538,12 @@
    "Preventing uncoating through the M2 channel"
   ],
   "a": 3,
-  "x": "Acyclovir triphosphate competes with deoxyguanosine triphosphate, the natural nucleotide, for viral DNA polymerase. Once incorporated it ends the chain because it has no 3' hydroxyl for the next nucleotide, and it also inhibits the polymerase. Uninfected cells lack the viral thymidine kinase that makes the first phosphate, so they are spared.",
+  "x": "Acyclovir triphosphate competes with deoxyguanosine triphosphate for viral DNA polymerase. Once built into the chain, it ends the chain because it has no 3' hydroxyl for the next nucleotide. Uninfected cells lack the viral thymidine kinase that makes the first phosphate, so they are spared.",
   "w": {
-   "Direct binding to the polymerase pyrophosphate site": "Binding the pyrophosphate site is how foscarnet works, with no phosphorylation needed; acyclovir must be activated to a triphosphate that mimics guanosine and is built into the DNA chain.",
-   "Blocking virion release by neuraminidase inhibition": "Neuraminidase inhibitors such as oseltamivir block release of influenza virions from the cell; herpes viruses have no neuraminidase, and acyclovir acts earlier by corrupting DNA synthesis.",
-   "Blocking cleavage of viral polyproteins": "Blocking polyprotein cleavage describes HIV protease inhibitors, which act late in assembly; herpes simplex virus copies its DNA with its own polymerase, which is the target of acyclovir.",
-   "Preventing uncoating through the M2 channel": "Amantadine blocked the influenza M2 ion channel to prevent uncoating; herpes viruses use a different entry route, and acyclovir acts later, at viral DNA synthesis."
+   "Direct binding to the polymerase pyrophosphate site": "Binding the pyrophosphate site is how foscarnet works, with no activation needed. Acyclovir must first be turned into a triphosphate that mimics guanosine.",
+   "Blocking virion release by neuraminidase inhibition": "Neuraminidase inhibitors such as oseltamivir block release of influenza virions. Herpes viruses have no neuraminidase.",
+   "Blocking cleavage of viral polyproteins": "Blocking polyprotein cleavage describes HIV protease inhibitors. Herpes simplex copies its DNA with its own polymerase, which is acyclovir's target.",
+   "Preventing uncoating through the M2 channel": "Amantadine blocks the influenza M2 channel to prevent uncoating. Herpes viruses use a different route, and acyclovir acts later, at DNA synthesis."
   },
   "media": "fig:rp17_acyclovir",
   "pt": {
@@ -575,12 +575,12 @@
    "Resistance develops in all patients within weeks"
   ],
   "a": 1,
-  "x": "Acyclovir acts only where viral DNA is being copied, because it needs viral thymidine kinase for activation and then inhibits viral DNA polymerase. Latent herpes sits as a quiet episome in sacral neurons, making almost no viral protein, so there is nothing to activate the drug; reactivation restarts from that untouched reservoir when therapy stops.",
+  "x": "Acyclovir works only where viral DNA is being copied, because it needs viral thymidine kinase to activate it and then blocks viral DNA polymerase. Latent herpes is a quiet episome in sacral neurons that makes almost no viral protein, so there is nothing to activate the drug. Reactivation restarts from that untouched reservoir when therapy stops.",
   "w": {
-   "Acyclovir cannot enter neurons": "Intravenous acyclovir treats herpes encephalitis, so it does reach nervous tissue; entry is not the barrier, since the drug is simply inert without the viral kinase to activate it.",
-   "Latent virus is integrated into host DNA like HIV provirus": "Herpes simplex stays as a circular episome in the neuron nucleus rather than integrating, which is HIV's strategy; either way, a silent genome lacks the replicating machinery that antiviral drugs need.",
-   "Antibodies neutralize the drug in the ganglia": "Antibodies bind virions and viral proteins, not small-molecule drugs, so they cannot inactivate acyclovir; the cell-mediated response is what usually limits reactivation but does not clear latent virus.",
-   "Resistance develops in all patients within weeks": "Resistance from thymidine kinase mutations is uncommon in immunocompetent hosts and appears mainly in AIDS, so it cannot explain why every patient relapses after stopping therapy; relapse reflects the reservoir."
+   "Acyclovir cannot enter neurons": "IV acyclovir treats herpes encephalitis, so it does reach nervous tissue. The drug is simply inactive without the viral kinase.",
+   "Latent virus is integrated into host DNA like HIV provirus": "Herpes simplex stays as a circular episome in the neuron nucleus and does not integrate, which is HIV's strategy. Either way, a silent genome lacks the machinery that antiviral drugs need.",
+   "Antibodies neutralize the drug in the ganglia": "Antibodies bind virions and viral proteins, not small-molecule drugs, so they cannot inactivate acyclovir.",
+   "Resistance develops in all patients within weeks": "Resistance from thymidine kinase mutations is uncommon in healthy people and appears mainly in AIDS. It cannot explain why relapse follows stopping therapy in every patient."
   },
   "media": "fig:rp17_acyclovir",
   "pt": {
@@ -608,16 +608,16 @@
    "Types 16 and 18",
    "Types 31 and 33",
    "Types 1 and 2",
-   "Types 5 and 8",
+   "Types 6 and 18",
    "Types 6 and 11"
   ],
   "a": 4,
-  "x": "Low-risk HPV types 6 and 11 cause genital warts, the soft cauliflower-like condylomata acuminata, and they stay as episomes without integrating. They rarely cause cancer, in contrast to types 16 and 18, which integrate and use E6 and E7 to drive cervical and anal cancers.",
+  "x": "Low-risk HPV types 6 and 11 cause genital warts, the soft cauliflower-like condylomata acuminata, and they stay as episomes without integrating. They rarely cause cancer, unlike types 16 and 18, which integrate and use E6 and E7 to drive cervical and anal cancers.",
   "w": {
-   "Types 16 and 18": "These are the high-risk types that cause most cervical, anal and oropharyngeal cancers; their E6 and E7 proteins target p53 and Rb after integration, whereas warts come from low-risk types.",
-   "Types 31 and 33": "Types 31 and 33 are high-risk types covered by the 9-valent vaccine that can cause high-grade cervical lesions; they are less common causes of cancer than 16 and 18 and are not the wart types.",
-   "Types 1 and 2": "Types 1 and 2 cause common warts of the hands and plantar warts on the soles, which are skin warts rather than the sexually transmitted genital lesions.",
-   "Types 5 and 8": "Types 5 and 8 are linked with epidermodysplasia verruciformis, an inherited susceptibility to widespread skin warts that can progress to squamous cell carcinoma; they are not anogenital types."
+   "Types 16 and 18": "These are the high-risk types that cause most cervical, anal and oropharyngeal cancers. Their E6 and E7 proteins target p53 and Rb after integration, while warts come from low-risk types.",
+   "Types 31 and 33": "Types 31 and 33 are high-risk types covered by the 9-valent vaccine and can cause high-grade cervical lesions. They are not the wart types.",
+   "Types 1 and 2": "Types 1 and 2 cause common warts of the hands and plantar warts on the soles. They are skin warts, not genital lesions.",
+   "Types 6 and 18": "This pair mixes a wart type with a cancer type. Type 18 is high risk, and the two wart types are 6 and 11."
   },
   "media": "fig:rp13_e6e7",
   "pt": {
@@ -649,12 +649,12 @@
    "E4 and E5"
   ],
   "a": 0,
-  "x": "High-risk HPV integrates and loses the E2 repressor, so E6 and E7 surge. E6 binds p53 and tags it for degradation, so damaged cells neither arrest in G1 nor die; E7 binds Rb and releases E2F, pushing the cell into S phase. L1 and L2 are the capsid proteins.",
+  "x": "High-risk HPV integrates into the host genome, and E6 and E7 surge. E6 binds p53 and tags it for degradation, so damaged cells neither stop in G1 nor die. E7 binds Rb and releases E2F, pushing the cell into S phase. L1 and L2 are the capsid proteins.",
   "w": {
-   "E7 and E6": "The order is reversed: E7 is the protein that inactivates Rb and releases E2F, and E6 is the one that degrades p53, so the pair is right but assigned to the wrong tumor suppressor.",
-   "L1 and L2": "L1 and L2 are the late capsid proteins that self-assemble into the virus-like particles in the vaccine; they package the genome and play no role in disabling tumor suppressors.",
-   "E1 and E2": "E1 and E2 are early proteins that drive viral DNA replication, and E2 also represses E6 and E7; integration breaks E2, which releases E6 and E7 rather than disabling tumor suppressors directly.",
-   "E4 and E5": "E4 helps release virions from the upper epithelium and E5 enhances growth factor receptor signaling; neither is the main protein that disables p53 or Rb."
+   "E7 and E6": "The order is reversed. E7 inactivates Rb and releases E2F, and E6 degrades p53.",
+   "L1 and L2": "L1 and L2 are the capsid proteins that self-assemble into the virus-like particles in the vaccine. They play no role in disabling tumor suppressors.",
+   "E1 and E2": "E1 and E2 are early proteins that help copy viral DNA. They do not disable tumor suppressors directly.",
+   "E4 and E5": "E4 helps release virions from the upper epithelium, and E5 boosts growth factor receptor signaling. Neither is the main protein that disables p53 or Rb."
   },
   "media": "fig:rp13_e6e7",
   "pt": {
@@ -677,29 +677,28 @@
   "obj": [
    "VIRAL-STI-TORCH.6"
   ],
-  "q": "Up to what age is routine catch-up HPV vaccination recommended, as of 2025?",
+  "q": "At what age is routine HPV vaccination recommended to begin?",
   "o": [
-   "Catch-up through age 21",
-   "Catch-up through age 30",
-   "Catch-up through age 26",
-   "Catch-up through age 35",
-   "Catch-up through age 45"
+   "Age 16 to 17",
+   "Age 21",
+   "Age 11 to 12",
+   "Age 30",
+   "After the first abnormal Pap test"
   ],
   "a": 2,
-  "x": "As of 2025, routine HPV vaccination starts at age 11 to 12, with catch-up for everyone not adequately vaccinated through age 26, because the vaccine prevents new infection and does not treat existing disease. Adults aged 27 to 45 use shared decision-making, since most have already been exposed.",
+  "x": "Routine HPV vaccination starts at age 11 to 12, before most people are exposed. The vaccine prevents new infection and does not treat existing disease, so it works best before exposure.",
   "w": {
-   "Catch-up through age 21": "Age 21 is when cervical cytology screening begins and has no role in the vaccine schedule; stopping catch-up there would leave many young adults unprotected.",
-   "Catch-up through age 30": "Age 30 is when HPV testing joins cervical screening; catch-up vaccination ends earlier, and adults beyond that age are offered vaccine only through shared decision-making.",
-   "Catch-up through age 35": "At 35 most adults have been exposed to at least one HPV type, so the added benefit is small; recommendations after the catch-up age rely on individual risk discussion rather than routine vaccination.",
-   "Catch-up through age 45": "Age 45 is the upper limit of the shared decision-making range, not of routine catch-up; adults 27 through 45 may be vaccinated after discussing their exposure risk with the clinician."
+   "Age 16 to 17": "Waiting until the late teens leaves many teenagers exposed before they are protected. Routine vaccination starts earlier.",
+   "Age 21": "Age 21 is when cervical cytology screening begins. The vaccine is meant to be given long before that, before exposure.",
+   "Age 30": "Age 30 is when HPV testing joins cervical screening. By then most people have already been exposed to HPV.",
+   "After the first abnormal Pap test": "The vaccine prevents new infection and does not treat existing disease or an abnormal Pap test. It is given before exposure, not after a lesion appears."
   },
   "media": "fig:rp13_screen",
   "pt": {
    "hl": [
-    "Age 11 to 12; catch-up through 26",
-    "Shared decision from 27 to 45"
+    "Age 11 to 12; catch-up through 26"
    ],
-   "say": "In the vaccine box, the label reads age 11 to 12 with catch-up through 26, and shared decision from 27 to 45, so routine catch-up ends at age 26."
+   "say": "In the vaccine box, the label starts with age 11 to 12, so routine HPV vaccination begins at age 11 to 12, before exposure."
   }
  },
  {
@@ -717,19 +716,19 @@
   ],
   "q": "In people with HIV, which screening is added to cervical screening because of the higher HPV-related cancer risk?",
   "o": [
-   "Annual mammography from age 30",
-   "Serum CA-125 every year",
-   "Annual low-dose chest CT",
+   "Annual mammography",
+   "Serum CA-125",
+   "Low-dose chest CT",
    "Anal cytology",
-   "Endometrial biopsy every 3 years"
+   "Endometrial biopsy"
   ],
   "a": 3,
-  "x": "HIV impairs T-cell control of HPV, so infections persist and lesions progress faster. People with HIV are screened for cervical cancer earlier and more often for life, and anal cytology is added because anal cancer, also caused by high-risk HPV, is far more common in this group.",
+  "x": "HIV weakens T-cell control of HPV, so infections persist and lesions progress faster. Anal cytology is added to cervical screening in people with HIV, because anal cancer, also caused by high-risk HPV, is far more common in this group.",
   "w": {
-   "Annual mammography from age 30": "Mammography is not tied to HIV or HPV; routine screening follows general age-based schedules that start at 40, and starting at 30 would expose women to radiation without evidence of benefit.",
-   "Serum CA-125 every year": "CA-125 screening for ovarian cancer is not recommended in average-risk women because it lacks sensitivity and specificity; HIV does not change that, and ovarian cancer is not an HPV-related cancer.",
-   "Annual low-dose chest CT": "Annual low-dose CT is for adults 50 to 80 with a heavy smoking history; HIV status alone does not trigger it, and lung cancer is not driven by HPV.",
-   "Endometrial biopsy every 3 years": "Endometrial biopsy is for abnormal bleeding or high-risk situations such as Lynch syndrome, not for routine screening, and endometrial cancer is driven by estrogen exposure rather than HPV."
+   "Annual mammography": "Mammography is not tied to HIV or HPV. Breast screening follows the general age-based schedule.",
+   "Serum CA-125": "Screening for ovarian cancer with CA-125 is not recommended, because it is neither sensitive nor specific. HIV does not change that, and ovarian cancer is not caused by HPV.",
+   "Low-dose chest CT": "Low-dose CT is for older adults with a heavy smoking history. HIV alone does not trigger it, and HPV does not cause lung cancer.",
+   "Endometrial biopsy": "Endometrial biopsy is for abnormal bleeding or high-risk situations such as Lynch syndrome, not for routine screening. Estrogen exposure, not HPV, drives endometrial cancer."
   },
   "media": "fig:rp13_screen",
   "pt": {
@@ -761,12 +760,12 @@
    "Raltegravir with maraviroc"
   ],
   "a": 1,
-  "x": "Daily oral PrEP is tenofovir (disoproxil fumarate or alafenamide) with emtricitabine, two NRTIs that keep drug in the tissues HIV first infects. Long-acting injectable options also exist, such as cabotegravir every 2 months. PrEP requires a negative HIV test and kidney function checks before it starts.",
+  "x": "Daily oral PrEP is tenofovir with emtricitabine, two NRTIs that keep drug in the tissues HIV first infects. Long-acting injectable cabotegravir is another option. PrEP requires a negative HIV test first.",
   "w": {
-   "Zidovudine with lamivudine": "This is an older treatment backbone for established infection, not prophylaxis; zidovudine causes bone marrow suppression and macrocytic anemia, and it is no longer part of preferred regimens or PrEP.",
-   "Efavirenz with abacavir": "Abacavir needs HLA-B*57:01 testing and efavirenz causes vivid dreams and other central nervous system effects; neither is used for prophylaxis, which relies on well-tolerated tenofovir and emtricitabine.",
-   "Lopinavir with ritonavir": "This boosted protease inhibitor combination treats established HIV, with many drug interactions and gastrointestinal side effects; it is not a prophylaxis regimen.",
-   "Raltegravir with maraviroc": "An integrase inhibitor with a CCR5 antagonist is a salvage-type combination for treatment; maraviroc requires a tropism test, and this pair is not used to prevent infection."
+   "Zidovudine with lamivudine": "This is an older treatment backbone for established infection, not prophylaxis. Zidovudine causes bone marrow suppression and macrocytic anemia.",
+   "Efavirenz with abacavir": "Abacavir needs HLA-B*57:01 testing, and efavirenz causes vivid dreams and other CNS effects. Neither is used for prophylaxis.",
+   "Lopinavir with ritonavir": "This boosted protease inhibitor pair treats established HIV and has many drug interactions. It is not a prophylaxis regimen.",
+   "Raltegravir with maraviroc": "An integrase inhibitor with a CCR5 antagonist is a salvage-type treatment combination. Maraviroc needs a tropism test, and this pair is not used to prevent infection."
   }
  },
  {
@@ -790,12 +789,12 @@
    "It inhibits CYP3A4, raising levels of the partner drug"
   ],
   "a": 4,
-  "x": "Ritonavir is itself a protease inhibitor, but it is given at doses too low to suppress HIV. Its purpose is to inhibit CYP3A4, the liver enzyme that clears most protease inhibitors, so a small dose raises the level and prolongs the half-life of the partner drug. The price is many drug interactions; cobicistat boosts without antiviral activity.",
+  "x": "Ritonavir is itself a protease inhibitor, but it is given at doses too low to suppress HIV. Its purpose is to inhibit CYP3A4, the liver enzyme that clears most protease inhibitors, so a small dose raises the level and prolongs the half-life of the partner drug. The price is many drug interactions.",
   "w": {
-   "It induces CYP3A4, lowering partner drug toxicity": "Enzyme induction is what rifampin and phenytoin do, and it lowers drug levels and risks treatment failure; ritonavir does the opposite by inhibiting the enzyme, so it raises levels and raises interaction risk.",
-   "It adds a second antiviral action at integrase": "Integrase inhibitors are separate drugs ending in -tegravir; ritonavir is a protease inhibitor and at boosting doses has no meaningful antiviral effect, working only through its action on drug metabolism.",
-   "It blocks CCR5 to prevent viral entry": "CCR5 blockade is the job of maraviroc, which acts at entry; ritonavir acts on liver enzymes and the viral protease, not on the cell-surface coreceptor.",
-   "It prevents lipodystrophy from the protease inhibitor": "Protease inhibitors cause lipodystrophy, hyperglycemia and hyperlipidemia, and ritonavir adds to these effects rather than preventing them; its role is pharmacokinetic."
+   "It induces CYP3A4, lowering partner drug toxicity": "Enzyme induction is what rifampin and phenytoin do, and it lowers drug levels. Ritonavir does the opposite: it inhibits the enzyme, so it raises levels and raises the risk of interactions.",
+   "It adds a second antiviral action at integrase": "Integrase inhibitors are separate drugs ending in -tegravir. At boosting doses ritonavir has no meaningful antiviral effect and works only through drug metabolism.",
+   "It blocks CCR5 to prevent viral entry": "CCR5 blockade is the job of maraviroc, which acts at entry. Ritonavir acts on liver enzymes and the viral protease, not on the coreceptor.",
+   "It prevents lipodystrophy from the protease inhibitor": "Protease inhibitors cause lipodystrophy, hyperglycemia and high lipids, and ritonavir adds to these effects. Its role is to raise drug levels, not to protect."
   }
  }
 ]
