@@ -60,25 +60,26 @@
 <ellipse cx="796" cy="456" rx="13" ry="9" fill="var(--surface)" stroke="var(--a2)" stroke-width="2"/>
 <circle cx="846" cy="456" r="3" fill="var(--ink)"/>
 <path d="M752 438 Q 790 414 840 440" fill="none" stroke="var(--ink-3)" stroke-width="2" stroke-dasharray="5 4"/>
-<line x1="252" y1="414" x2="252" y2="498" stroke="var(--ink)" stroke-width="2.5" stroke-dasharray="6 4"/>
+<line x1="252" y1="428" x2="252" y2="498" stroke="var(--ink)" stroke-width="2.5" stroke-dasharray="6 4"/>
 <text class="b" x="100" y="398" font-size="14">Prostatic urethra (3 cm)</text>
 <text x="100" y="416" font-size="14">widest; ejaculatory ducts open</text>
 <line x1="150" y1="420" x2="150" y2="446" stroke="var(--ink-3)" stroke-width="1"/>
-<text class="b" x="420" y="398" font-size="14">Spongy urethra (about 15 cm)</text>
-<text x="420" y="416" font-size="14">torn by a straddle injury, below the membrane</text>
-<line x1="470" y1="420" x2="470" y2="446" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="b" x="400" y="398" font-size="14">Spongy urethra (about 15 cm)</text>
+<text x="400" y="416" font-size="14">torn by a straddle injury</text>
+<line x1="450" y1="420" x2="450" y2="446" stroke="var(--ink-3)" stroke-width="1"/>
 <text class="b" x="100" y="522" font-size="14">Membranous urethra (2 cm)</text>
-<text x="100" y="540" font-size="14">narrowest; torn in pelvic fracture</text>
+<text x="100" y="540" font-size="14">narrowest; crosses the perineal</text>
+<text x="100" y="558" font-size="14">membrane (dashed); torn in pelvic fracture</text>
 <line x1="224" y1="508" x2="224" y2="478" stroke="var(--ink-3)" stroke-width="1"/>
-<text class="b" x="372" y="522" font-size="14">Bulb of the penis</text>
-<text x="372" y="540" font-size="14">dilated urethra inside it</text>
-<line x1="326" y1="518" x2="298" y2="480" stroke="var(--ink-3)" stroke-width="1"/>
-<text x="560" y="458" font-size="14">Corpora cavernosa (erection)</text>
+<text class="b" x="440" y="522" font-size="14">Bulb of the penis</text>
+<text x="440" y="540" font-size="14">dilated urethra inside it</text>
+<line x1="436" y1="518" x2="300" y2="480" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="520" y="474" font-size="13">Corpora cavernosa (erection)</text>
 <text class="b" x="690" y="522" font-size="14">Navicular fossa</text>
 <text x="690" y="540" font-size="14">dilation in the glans</text>
 <line x1="740" y1="508" x2="792" y2="466" stroke="var(--ink-3)" stroke-width="1"/>
-<text x="660" y="400" font-size="14">Prepuce (foreskin) covers the glans</text>
-<line x1="780" y1="404" x2="790" y2="424" stroke="var(--ink-3)" stroke-width="1"/>
-<text x="28" y="584" font-size="14">Root of the penis, in the superficial pouch: the bulb (continues as the corpus spongiosum) and two crura (the corpora cavernosa).</text>
-<text x="28" y="606" font-size="14">Female equivalents: vestibular bulbs and clitoral crura.</text>
+<text x="610" y="398" font-size="14">Prepuce (foreskin) covers the glans</text>
+<line x1="780" y1="404" x2="788" y2="424" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="28" y="590" font-size="14">Root of the penis, in the superficial pouch: the bulb (continues as the corpus spongiosum) and two crura (the corpora cavernosa).</text>
+<text x="28" y="610" font-size="14">Female equivalents: vestibular bulbs and clitoral crura.</text>
 </svg>
