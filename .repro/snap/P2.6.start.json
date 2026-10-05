@@ -1,6 +1,6 @@
 {
  "task": "P2.6",
- "at": "2026-10-04 19:30:51",
+ "at": "2026-10-05 00:02:02",
  "files": {
   "content/concepts.json": "ac1a7421b090a89c",
   "content/meta.json": "37c840d858a9a759",
@@ -11,17 +11,17 @@
   "engine/base/engine.js": "d79a14b47f85cfbf",
   "engine/base/selftest.js": "64d80c04419bbfc4",
   "engine/base/shell.html": "2fbf3d831af3d7f9",
-  "engine/engine.js": "c64d1034117c1999",
+  "engine/engine.js": "569389cd0ee8efd8",
   "engine/extract_engine.py": "699b75455cbc8023",
-  "engine/selftest.js": "e2f31d6000d834e7",
-  "engine/shell.html": "51b931e71c3fa3e8",
+  "engine/selftest.js": "18f5c9dd3f947f52",
+  "engine/shell.html": "c991a87dbcea1f42",
   "scope/BP-GAPS.md": "cbcc16ee31ba5e88",
   "scope/CANVAS-SCOPE.md": "07fe3d2eea7e312e",
   "scope/LECTURE-FILES.md": "a0a22c6507792b5a",
   "scope/QUIZ-SIGNALS.md": "5dfecb18c89f3dcd",
   "scope/STEP1-BLUEPRINT.md": "82d7e7e5601a6406",
-  "scope/TOPIC-MAP.md": "0099c221cf142c83",
-  "scope/YIELD.md": "6518c09ee1cd6a27",
+  "scope/TOPIC-MAP.md": "e64a5428c33620a5",
+  "scope/YIELD.md": "76d13d67689ce0ea",
   "scope/lectures/70351_23274306.md": "d505f98c1cdb6597",
   "scope/lectures/70351_23458844.md": "311e3ba7c3f0130b",
   "scope/lectures/70351_23483229.md": "f9314182f3989fdb",
@@ -74,14 +74,14 @@
   "audit/P1.1.md": "58751aabb62c016f",
   "audit/P1.2.md": "6993ed3f0b0cea15",
   "audit/P1.3.md": "bf2af7f21b23d3c4",
-  "audit/P1.4.md": "ed5d1b025845c805",
+  "audit/P1.4.md": "3d7a65a64a144dbb",
   "audit/P1.5.md": "1a86b62b5daddcd1",
   "audit/P2.1.md": "6ba7d2c81af0959a",
   "audit/P2.2.md": "564fa684c4378511",
   "audit/P2.3.md": "405dc5b1f8bad672",
   "audit/P2.4.md": "68c614b0073e6638",
   "audit/P2.5.md": "853ef1fcf349aa92",
-  "audit/P2.6.md": "1d5fe4b6b1c011af"
+  "audit/P2.6.md": "786f6424ad11a8c0"
  },
- "tree": "2ad1dcf8ea"
+ "tree": "7245f6a723"
 }

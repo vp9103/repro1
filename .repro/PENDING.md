@@ -18,7 +18,8 @@ en9_hypercalcemia, en9_three_hpt missing.
 | G03 | DONE (draft, accepted; checked rp29 pins vs figure labels, d_rp16_multi) | rapid rp23 13, rp29 11; drills rp10 multi, rp11 sort, rp16 multi, rp17 order | fast_check G03 ok; audit/G03-notes.md (rp29 NO-VISUAL row in G03-novisual.md -> P6.9 on import) |
 | V1 | DONE (accepted; reviewed new figs rp4_origins, rp5_mullerian, rp6_dsd, rp7_engines) | rp4-rp7 visual shares met; 8 new figures | fast_check W04/W05 ok; NO-VISUAL rows W04/audit/P5.2.md, P6.2.md |
 | P2.6 | CLOSED 2026-10-04 | F31a-c, F40, F33a-c, linkedNotice | ledger row sha:05f1ba73 |
-| P2.V | verifier (repro-verifier, Opus 5.5 max, confirmed) | token c8a9258425 + .repro/P2-REGRESSION.md | .repro/verify/P2-report.md |
+| P2.V | run 8: 9/10 + 18/18 regression; FAIL F3 -> P2.6 reopened | .repro/verify/P2-report.md | re-verify after P2.6 F3 closes |
+| P2.6 | worker (repro-worker) | F3 failed stage check credited as passed (.repro/ws/P2_6) | --status P2.6 ok |
 | V2 | QUEUED (worker lost in restart, no changes made) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
 | P1.4 | CLOSED 2026-10-04 (term pass, 348 rows) | coverage impact .repro/P1.4-coverage-impact.md | ledger row |
 | P1.V | re-verifier (Opus max), token 0fe5b8663c | 12 objectives + 10 spot-checks | .repro/verify/P1-report.md |
@@ -44,3 +45,6 @@ Questions only en1, en5; rapid only en5; drills only en5.
 - GitHub push 403 (Claude GitHub App / connection for vp9103/repro1). Commits are local until fixed.
 - Canvas sign-in (P1.2 BLOCKED; optional Hendricks objectives doc only).
 - (resolved) After the worker restart the repo's agent types loaded: repro-worker = claude-sonnet-5-5 xhigh, repro-verifier = claude-opus-5-5 max, confirmed from transcripts.
+
+## For P14.3 (non-blocking verifier notes)
+- P2.V run 8 notes in .repro/verify/P2-report.md: F41 middle-anchored labels, K5 at 400 inline, F11 screen-reader exposure of cloze blanks, F30 focus on close.
