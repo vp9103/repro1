@@ -1,0 +1,78 @@
+<svg class="dia" viewBox="0 0 900 600" role="img" aria-label="Normal endometrial cycle of proliferative, ovulation, secretory and shedding stages, compared with anovulation in which unopposed estrogen leads from hyperplasia through atypical hyperplasia to endometrioid carcinoma, with lists of what raises and what lowers estrogen exposure">
+<text class="ttl" x="14" y="24" font-size="17">Unopposed estrogen: from a normal cycle to endometrioid carcinoma</text>
+<rect x="14" y="40" width="872" height="170" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="30" y="66" font-size="16">Normal cycle: estrogen builds, progesterone matures, shedding resets</text>
+<rect x="25" y="80" width="196" height="118" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="39" y="107" font-size="16">Proliferative</text>
+<text x="39" y="134" font-size="15">Estrogen from follicle</text>
+<text x="39" y="158" font-size="15">Glands grow, divide</text>
+<text x="39" y="182" font-size="15">Lining thickens</text>
+<rect x="243" y="80" width="196" height="118" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="257" y="107" font-size="16">Ovulation</text>
+<text x="257" y="134" font-size="15">LH surge, egg out</text>
+<text x="257" y="158" font-size="15">Corpus luteum forms</text>
+<text x="257" y="182" font-size="15">Progesterone begins</text>
+<rect x="461" y="80" width="196" height="118" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="475" y="107" font-size="16">Secretory</text>
+<text x="475" y="134" font-size="15">Progesterone leads</text>
+<text x="475" y="158" font-size="15">Glands coil, secrete</text>
+<text x="475" y="182" font-size="15">Growth stops</text>
+<rect x="679" y="80" width="196" height="118" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="693" y="107" font-size="16">Shedding</text>
+<text x="693" y="134" font-size="15">Hormones fall</text>
+<text x="693" y="158" font-size="15">Functionalis sloughs</text>
+<text x="693" y="182" font-size="15">Basalis regrows it</text>
+<line x1="221" y1="139" x2="235" y2="139" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="235,134 243,139 235,144" fill="var(--ink-2)"/>
+<line x1="439" y1="139" x2="453" y2="139" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="453,134 461,139 453,144" fill="var(--ink-2)"/>
+<line x1="657" y1="139" x2="671" y2="139" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="671,134 679,139 671,144" fill="var(--ink-2)"/>
+<rect x="14" y="222" width="872" height="170" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="30" y="248" font-size="16">No ovulation: estrogen without progesterone, so the lining never matures</text>
+<rect x="25" y="262" width="196" height="118" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="39" y="289" font-size="16">Unopposed estrogen</text>
+<text x="39" y="316" font-size="15">Constant growth</text>
+<text x="39" y="340" font-size="15">No secretory phase</text>
+<text x="39" y="364" font-size="15">No timely shedding</text>
+<rect x="243" y="262" width="196" height="118" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="257" y="289" font-size="16">Hyperplasia</text>
+<text x="257" y="316" font-size="15">Crowded glands</text>
+<text x="257" y="340" font-size="15">No atypia: low risk</text>
+<text x="257" y="364" font-size="15">Progestin reverses it</text>
+<rect x="461" y="262" width="196" height="118" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="475" y="289" font-size="16">Atypical (EIN)</text>
+<text x="475" y="316" font-size="15">Complex glands, atypia</text>
+<text x="475" y="340" font-size="15">PTEN loss</text>
+<text x="475" y="364" font-size="15">Highest cancer risk</text>
+<rect x="679" y="262" width="196" height="118" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="693" y="289" font-size="16">Type I carcinoma</text>
+<text x="693" y="316" font-size="15">Endometrioid grade 1</text>
+<text x="693" y="340" font-size="15">Presents with bleeding</text>
+<text x="693" y="364" font-size="15">Good prognosis</text>
+<line x1="221" y1="321" x2="235" y2="321" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="235,316 243,321 235,326" fill="var(--ink-2)"/>
+<line x1="439" y1="321" x2="453" y2="321" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="453,316 461,321 453,326" fill="var(--ink-2)"/>
+<line x1="657" y1="321" x2="671" y2="321" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="671,316 679,321 671,326" fill="var(--ink-2)"/>
+<rect x="14" y="406" width="530" height="180" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="30" y="434" font-size="16">More estrogen, or more years of it</text>
+<text x="30" y="462" font-size="15">Obesity: fat makes estrogen</text>
+<text x="30" y="486" font-size="15">PCOS and anovulation</text>
+<text x="30" y="510" font-size="15">Early menarche</text>
+<text x="30" y="534" font-size="15">Late menopause</text>
+<text x="30" y="558" font-size="15">Diabetes</text>
+<text x="284" y="462" font-size="15">Nulliparity</text>
+<text x="284" y="486" font-size="15">Estrogen-only therapy</text>
+<text x="284" y="510" font-size="15">Tamoxifen at the endometrium</text>
+<text x="284" y="534" font-size="15">Granulosa cell tumor</text>
+<text x="284" y="558" font-size="15">Lynch syndrome (inherited)</text>
+<rect x="558" y="406" width="328" height="180" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="574" y="434" font-size="16">What protects</text>
+<text x="574" y="462" font-size="15">Progestin, including IUD</text>
+<text x="574" y="486" font-size="15">Combined oral contraceptive</text>
+<text x="574" y="510" font-size="15">Pregnancy</text>
+<text x="574" y="534" font-size="15">No atypia: treat with progestin</text>
+<text x="574" y="558" font-size="15">Atypia: hysterectomy</text>
+</svg>

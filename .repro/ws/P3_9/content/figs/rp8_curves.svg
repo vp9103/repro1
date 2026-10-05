@@ -1,0 +1,55 @@
+<svg class="dia" viewBox="0 0 900 556" role="img" aria-label="A 28-day menstrual cycle graph: GnRH pulse frequency, FSH and LH, estradiol and progesterone, the ovarian phases, the endometrial phases and basal body temperature, with ovulation at day 14">
+<text class="ttl" x="14" y="24" font-size="17">One 28-day cycle: GnRH, pituitary, ovary and endometrium</text>
+<rect x="10" y="34" width="876" height="46" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="20" y="63" font-size="15">GnRH pulses</text>
+<g stroke="var(--a2)" stroke-width="2">
+<line x1="196" y1="44" x2="196" y2="70"/><line x1="208" y1="44" x2="208" y2="70"/><line x1="220" y1="44" x2="220" y2="70"/><line x1="232" y1="44" x2="232" y2="70"/><line x1="244" y1="44" x2="244" y2="70"/><line x1="256" y1="44" x2="256" y2="70"/><line x1="268" y1="44" x2="268" y2="70"/><line x1="280" y1="44" x2="280" y2="70"/><line x1="292" y1="44" x2="292" y2="70"/><line x1="304" y1="44" x2="304" y2="70"/><line x1="316" y1="44" x2="316" y2="70"/><line x1="328" y1="44" x2="328" y2="70"/><line x1="340" y1="44" x2="340" y2="70"/><line x1="352" y1="44" x2="352" y2="70"/><line x1="364" y1="44" x2="364" y2="70"/><line x1="376" y1="44" x2="376" y2="70"/><line x1="388" y1="44" x2="388" y2="70"/><line x1="400" y1="44" x2="400" y2="70"/><line x1="412" y1="44" x2="412" y2="70"/><line x1="424" y1="44" x2="424" y2="70"/><line x1="436" y1="44" x2="436" y2="70"/><line x1="448" y1="44" x2="448" y2="70"/><line x1="460" y1="44" x2="460" y2="70"/><line x1="472" y1="44" x2="472" y2="70"/><line x1="484" y1="44" x2="484" y2="70"/><line x1="496" y1="44" x2="496" y2="70"/><line x1="508" y1="44" x2="508" y2="70"/><line x1="520" y1="44" x2="520" y2="70"/>
+<line x1="556" y1="44" x2="556" y2="70"/><line x1="592" y1="44" x2="592" y2="70"/><line x1="628" y1="44" x2="628" y2="70"/><line x1="664" y1="44" x2="664" y2="70"/><line x1="700" y1="44" x2="700" y2="70"/><line x1="736" y1="44" x2="736" y2="70"/><line x1="772" y1="44" x2="772" y2="70"/><line x1="808" y1="44" x2="808" y2="70"/><line x1="844" y1="44" x2="844" y2="70"/>
+</g>
+<rect x="10" y="88" width="876" height="130" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="20" y="112" font-size="15">Pituitary</text>
+<line x1="20" y1="142" x2="56" y2="142" stroke="var(--a1)" stroke-width="3"/>
+<text class="a1" x="64" y="147" font-size="15">LH</text>
+<line x1="20" y1="172" x2="56" y2="172" stroke="var(--a2)" stroke-width="3" stroke-dasharray="7 5"/>
+<text class="a2" x="64" y="177" font-size="15">FSH</text>
+<path d="M190,206 L466,202 C480,200 492,178 500,140 C506,110 510,100 514,100 C518,100 522,110 528,140 C536,180 546,200 562,203 L862,207" fill="none" stroke="var(--a1)" stroke-width="3"/>
+<path d="M190,176 C230,172 270,174 310,184 C360,194 420,196 470,192 C490,190 502,168 514,166 C526,166 538,188 562,196 C660,206 760,206 800,198 C830,190 850,180 862,176" fill="none" stroke="var(--a2)" stroke-width="3" stroke-dasharray="7 5"/>
+<text class="a1" x="428" y="108" font-size="15">LH surge</text>
+<text class="a2" x="200" y="158" font-size="15">FSH recruits follicles</text>
+<text class="b" x="534" y="108" font-size="15">Ovulation</text>
+<rect x="10" y="226" width="876" height="150" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="20" y="250" font-size="15">Ovary</text>
+<line x1="20" y1="282" x2="56" y2="282" stroke="var(--a1)" stroke-width="3"/>
+<text class="a1" x="64" y="287" font-size="15">Estradiol</text>
+<line x1="20" y1="312" x2="56" y2="312" stroke="var(--a2)" stroke-width="3"/>
+<text class="a2" x="64" y="317" font-size="15">Progesterone</text>
+<path d="M190,366 C260,366 330,362 380,342 C430,320 460,266 482,264 C500,264 512,320 540,338 C580,354 620,316 694,314 C760,312 820,358 862,366" fill="none" stroke="var(--a1)" stroke-width="3"/>
+<path d="M190,368 L526,368 C560,368 600,272 694,270 C780,268 830,358 862,368" fill="none" stroke="var(--a2)" stroke-width="3"/>
+<text class="a1" x="200" y="252" font-size="15">Estradiol peaks before the surge</text>
+<text class="a2" x="560" y="252" font-size="15">Progesterone peaks mid-luteal</text>
+<rect x="10" y="384" width="876" height="36" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="20" y="407" font-size="15">Ovarian phase</text>
+<rect x="190" y="388" width="336" height="28" rx="5" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="200" y="407" font-size="15">Follicular phase: length varies</text>
+<rect x="526" y="388" width="336" height="28" rx="5" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="536" y="407" font-size="15">Luteal phase: about 14 days</text>
+<rect x="10" y="428" width="876" height="36" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="20" y="451" font-size="15">Endometrium</text>
+<rect x="190" y="432" width="120" height="28" rx="5" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.2"/>
+<text x="198" y="451" font-size="15">Menses</text>
+<rect x="310" y="432" width="216" height="28" rx="5" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.2"/>
+<text x="318" y="451" font-size="15">Proliferative</text>
+<rect x="526" y="432" width="336" height="28" rx="5" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.2"/>
+<text x="536" y="451" font-size="15">Secretory: coiled glands, edema</text>
+<rect x="10" y="472" width="876" height="50" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2"/>
+<text class="b" x="20" y="502" font-size="15">Temperature</text>
+<path d="M190,508 L530,508 C540,508 546,490 556,490 L862,490" fill="none" stroke="var(--ink-2)" stroke-width="3"/>
+<text x="570" y="513" font-size="15">Up 0.3 to 0.5 &#176;C after ovulation</text>
+<line x1="526" y1="88" x2="526" y2="522" stroke="var(--ink-3)" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text class="b" x="20" y="546" font-size="15">Cycle day</text>
+<text x="214" y="546" font-size="15" text-anchor="middle">1</text>
+<text x="358" y="546" font-size="15" text-anchor="middle">7</text>
+<text x="526" y="546" font-size="15" text-anchor="middle">14</text>
+<text x="694" y="546" font-size="15" text-anchor="middle">21</text>
+<text x="862" y="546" font-size="15" text-anchor="middle">28</text>
+</svg>

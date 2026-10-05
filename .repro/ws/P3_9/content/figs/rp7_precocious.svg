@@ -1,0 +1,41 @@
+<svg class="dia" viewBox="0 0 900 470" role="img" aria-label="Work-up of precocious puberty: after bone age and LH, a pubertal LH means central precocious puberty, a suppressed LH means peripheral precocious puberty, and a prepubertal LH with near-normal bone age means a normal variant">
+<text class="ttl" x="14" y="24" font-size="17">Early puberty: LH and bone age choose the branch</text>
+<rect x="225" y="44" width="450" height="44" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="450" y="72" font-size="15" text-anchor="middle">Signs before age 8 in girls or age 9 in boys</text>
+<line x1="450" y1="88" x2="450" y2="96" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,96 450,104 455,96" fill="var(--ink-2)"/>
+<rect x="200" y="104" width="500" height="44" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="450" y="132" font-size="15" text-anchor="middle">Check bone age and LH (basal or after GnRH)</text>
+<line x1="450" y1="148" x2="450" y2="164" stroke="var(--ink-2)" stroke-width="2"/>
+<line x1="154" y1="164" x2="746" y2="164" stroke="var(--ink-2)" stroke-width="2"/>
+<line x1="154" y1="164" x2="154" y2="172" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="149,172 154,180 159,172" fill="var(--ink-2)"/>
+<line x1="450" y1="164" x2="450" y2="172" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="445,172 450,180 455,172" fill="var(--ink-2)"/>
+<line x1="746" y1="164" x2="746" y2="172" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="741,172 746,180 751,172" fill="var(--ink-2)"/>
+<rect x="14" y="180" width="280" height="270" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="30" y="208" font-size="15">Central (GnRH-dependent)</text>
+<text x="30" y="244" font-size="15">LH pubertal, rises with GnRH</text>
+<text x="30" y="278" font-size="15">Bone age advanced</text>
+<text x="30" y="312" font-size="15">Girls: usually idiopathic</text>
+<text x="30" y="346" font-size="15">Boys: hamartoma, CNS lesion</text>
+<text x="30" y="380" font-size="15">Next: MRI of the brain</text>
+<text x="30" y="414" font-size="15">Treat: continuous GnRH agonist</text>
+<rect x="310" y="180" width="280" height="270" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="326" y="208" font-size="15">Peripheral (GnRH-independent)</text>
+<text x="326" y="244" font-size="15">LH low, suppressed by steroids</text>
+<text x="326" y="278" font-size="15">Bone age advanced</text>
+<text x="326" y="312" font-size="15">McCune-Albright (GNAS)</text>
+<text x="326" y="346" font-size="15">CAH, ovarian or Leydig tumor</text>
+<text x="326" y="380" font-size="15">hCG-secreting tumor in boys</text>
+<text x="326" y="414" font-size="15">Exogenous sex steroids</text>
+<rect x="606" y="180" width="280" height="270" rx="10" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="622" y="208" font-size="15">Normal variants</text>
+<text x="622" y="244" font-size="15">LH prepubertal</text>
+<text x="622" y="278" font-size="15">Bone age near normal</text>
+<text x="622" y="312" font-size="15">Premature thelarche</text>
+<text x="622" y="346" font-size="15">Premature adrenarche</text>
+<text x="622" y="380" font-size="15">No growth acceleration</text>
+<text x="622" y="414" font-size="15">Reassurance and reexamination</text>
+</svg>

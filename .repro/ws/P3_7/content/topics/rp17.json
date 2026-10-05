@@ -92,7 +92,7 @@
   ],
   [
    "p",
-   "Viruses are **obligate intracellular** parasites. A virion carries a genome and a few enzymes but no ribosomes or energy supply, so it borrows the host cell's ribosomes, nucleotides and polymerases. The sexually transmitted viruses differ in how they stay. HIV, a retrovirus, copies its RNA into DNA with {{rp17rt|reverse transcriptase}}, and **integrase** splices that DNA into a host chromosome as a {{rp17prov|provirus}}; resting CD4 cells that carry it form a latent reservoir no drug clears. Herpes simplex virus, a DNA virus, alternates between a lytic phase in epithelial cells, which burst and release virus, and latency in sensory neurons, where its genome persists as an **episome** and makes only latency-associated transcripts. HPV keeps an episome in basal keratinocytes and makes virions only as those cells mature; molluscum, a poxvirus, replicates in the cytoplasm of keratinocytes."
+   "Viruses are **obligate intracellular** parasites. A virion carries a genome and a few enzymes but no ribosomes or energy supply, so it borrows the host cell's ribosomes, nucleotides and polymerases. They stay in different ways. HIV, a retrovirus, copies its RNA into DNA with {{rp17rt|reverse transcriptase}}, and **integrase** splices that DNA into a host chromosome as a {{rp17prov|provirus}}; resting CD4 cells that carry it form a latent reservoir no drug clears. Herpes simplex virus, a DNA virus, alternates between a lytic phase in epithelial cells, which burst and release virus, and latency in sensory neurons, where its genome persists as an **episome** and makes only latency-associated transcripts. HPV keeps an episome in basal keratinocytes and makes virions only as those cells mature; molluscum, a poxvirus, replicates in the cytoplasm of keratinocytes."
   ],
   [
    "steps",
@@ -109,7 +109,7 @@
      ],
      [
       "Copying and translating",
-      "Viral mRNA is translated on host ribosomes. Herpes and HPV copy their DNA in the nucleus, and the HIV provirus is transcribed by host RNA polymerase. Molluscum replicates in the cytoplasm, so this poxvirus brings its own polymerases."
+      "Viral mRNA is translated on host ribosomes. Herpes and HPV copy their DNA in the nucleus, and the HIV provirus is transcribed by host RNA polymerase. Molluscum replicates in the cytoplasm with its own polymerases."
      ],
      [
       "Assembly in the cell",
@@ -250,6 +250,10 @@
    "How is HIV prevented, from condoms and syringes to PrEP and perinatal measures?"
   ],
   [
+   "p",
+   "Prevention interrupts each route of transmission: barriers for sexual contact, sterile equipment for blood, drugs taken before or after an exposure, and suppression of the viral load in a person who already has HIV. The same logic protects a baby at birth."
+  ],
+  [
    "t",
    [
     "Strategy",
@@ -345,7 +349,7 @@
   ],
   [
    "p",
-   "Wart treatment removes lesions, not the virus, so recurrences are common, many warts clear unaided, and no option is clearly best; the choice depends on the number, size and site of the warts and on pregnancy."
+   "Wart treatment removes lesions, not the virus, so recurrences are common and no option is clearly best; the choice depends on the number, size and site of the warts and on pregnancy."
   ],
   [
    "t",
@@ -408,6 +412,10 @@
    "Who is screened for HIV, HSV and HPV, and what changes in pregnancy?"
   ],
   [
+   "p",
+   "Each virus is screened for according to its natural history: HIV in everyone, HSV only when symptoms or exposure suggest it, and HPV through the cervix, with pregnancy adding a few rules."
+  ],
+  [
    "t",
    [
     "Virus",
@@ -422,12 +430,12 @@
     ],
     [
      "HSV",
-     "Lesion PCR in anyone with symptoms; type-specific antibody tests to evaluate partners; no screening of people without symptoms",
+     "Lesion PCR in anyone with symptoms; no screening without symptoms",
      "No screening; examine for lesions or prodrome when labor starts; suppressive therapy from 36 weeks if she has a history"
     ],
     [
      "HPV",
-     "Cervical cytology from age 21, with HPV testing added from 30; a self-collected vaginal swab can be used for HPV testing in a clinic; people with HIV start earlier, are screened more often and have anal cytology",
+     "Cervical cytology from age 21, with HPV testing added from 30; self-collected vaginal swabs accepted in clinics; with HIV, earlier and more often, plus anal cytology",
      "The usual schedule applies, and warts can grow during pregnancy"
     ]
    ]

@@ -1,0 +1,390 @@
+{
+ "id": "rp20",
+ "t": "Scrotal and testicular disorders",
+ "sub": "Sorting the painful scrotum, the swelling that glows and the painless lump, from torsion and epididymitis to seminoma and its markers.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 14,
+ "bp": [
+  "BP-rp20-01",
+  "BP-rp20-02",
+  "BP-rp20-03",
+  "BP-rp20-04",
+  "BP-rp20-05",
+  "BP-rp20-06",
+  "BP-rp20-07",
+  "BP-rp20-08",
+  "BP-rp20-09",
+  "BP-rp20-10",
+  "BP-rp20-11",
+  "BP-rp20-12",
+  "BP-rp20-13"
+ ],
+ "obj": [
+  "HP-MALE.11",
+  "HP-MALE.12",
+  "HP-MALE.13",
+  "HP-MALE.14",
+  "HP-MALE.18",
+  "PATHPHARM-MALE.7",
+  "BICEP-MISHIMOTO.3",
+  "BICEP-MISHIMOTO.4",
+  "BICEP-MISHIMOTO.5",
+  "HP-MALE.10",
+  "EMBRYO-GU.5",
+  "BICEP-MISHIMOTO.2",
+  "MDR-REVIEW.1",
+  "MDR-REVIEW.2"
+ ],
+ "pretest": [
+  {
+   "q": "Which bedside finding best separates testicular torsion from epididymitis?",
+   "o": [
+    "Absent cremasteric reflex",
+    "Scrotal redness",
+    "Fever",
+    "Scrotal swelling"
+   ],
+   "a": 0,
+   "why": "Torsion abolishes the cremasteric reflex in nearly every case, while epididymitis leaves it intact. Redness, warmth and swelling occur with both conditions, so they cannot tell them apart.",
+   "w": {
+    "Scrotal redness": "Erythema appears with any inflamed or ischemic scrotum, so it shows up in twisting and infection alike and cannot separate the two.",
+    "Fever": "Fever is somewhat more typical of infection, but it is neither sensitive nor specific enough to rule a twisted cord in or out.",
+    "Scrotal swelling": "Edema of the scrotal wall follows both a twisted cord and an infected epididymis, so the size of the swelling points to neither one."
+   }
+  },
+  {
+   "q": "Which serum marker does a pure seminoma never raise?",
+   "o": [
+    "Alpha-fetoprotein",
+    "Human chorionic gonadotropin",
+    "Lactate dehydrogenase",
+    "Placental alkaline phosphatase"
+   ],
+   "a": 0,
+   "why": "Seminoma cells lack yolk sac differentiation, so they never make AFP; a raised AFP means a nonseminomatous component. Seminoma can mildly raise hCG and LDH, and its cells express placental alkaline phosphatase.",
+   "w": {
+    "Human chorionic gonadotropin": "Scattered syncytiotrophoblast cells within some seminomas release small amounts of hCG, so a mild rise is compatible with seminoma.",
+    "Lactate dehydrogenase": "LDH rises with tumor bulk in any germ cell tumor, including bulky seminoma, so it reflects stage rather than tumor type.",
+    "Placental alkaline phosphatase": "PLAP is expressed by seminoma cells and germ cell neoplasia in situ, so it is a marker that supports seminoma rather than excluding it."
+   }
+  },
+  {
+   "q": "Why do varicoceles form far more often on the left side?",
+   "o": [
+    "The left testicular vein drains into the left renal vein",
+    "The left testicular artery arises from the renal artery",
+    "The left inguinal canal is wider than the right",
+    "The left testis lies higher in the scrotum"
+   ],
+   "a": 0,
+   "why": "The left testicular vein enters the left renal vein at a right angle, adding a long, high-pressure column of blood, whereas the right vein enters the inferior vena cava obliquely and rarely backs up.",
+   "w": {
+    "The left testicular artery arises from the renal artery": "Both testicular arteries usually arise from the aorta, and a varicocele is a venous problem, so arterial origin cannot explain it.",
+    "The left inguinal canal is wider than the right": "Canal width matters for indirect hernias, not for venous pressure in the pampiniform plexus, and the two canals are similar.",
+    "The left testis lies higher in the scrotum": "The left testis usually hangs slightly lower, and its position does not raise pressure in the veins that drain it."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Why does an undescended testis carry risks for life?"
+  ],
+  [
+   "p",
+   "The fetal testis forms on the posterior abdominal wall and is guided down by the gubernaculum, following the {{rp20procvag|processus vaginalis}}, a finger of peritoneum that pushes through the inguinal canal ahead of it; after descent its lower end remains as the tunica vaginalis. **Cryptorchidism**, a testis that fails to reach the scrotum, is the most common congenital genital anomaly in boys, seen in about 3 percent of term and up to 30 percent of preterm boys, and most descend by 6 months. A testis left at body temperature loses germ cells from its first year, raising the risk of **infertility**, and germ cell tumors become several times more likely, even in the descended testis. **Orchiopexy** between 6 and 18 months helps fertility and makes the testis examinable."
+  ],
+  [
+   "call",
+   "trap",
+   "Orchiopexy lowers the cancer risk but never removes it",
+   "Fixing the position does not fix the gonad. Cryptorchidism reflects testicular dysgenesis, so the risk of germ cell tumors, most often **seminoma**, stays raised in the repaired testis and in the other one. An undescended testis shows a thick tubular basement membrane, loss of spermatogonia and, in some cases, {{rp20gcnis|germ cell neoplasia in situ}}, the precursor lesion."
+  ],
+  [
+   "h",
+   "Is this painful scrotum torsion or epididymitis?"
+  ],
+  [
+   "p",
+   "Testicular **torsion** happens when the testis rotates and twists its spermatic cord. The usual setup is the {{rp20bellclap|bell-clapper deformity}}: the tunica vaginalis attaches too high, so the testis hangs free, and the defect is usually on both sides. Twisting compresses the thin-walled veins before the thicker arteries, so blood enters but cannot leave; the testis congests and then undergoes **hemorrhagic infarction**. The typical patient is an adolescent with sudden, severe pain, nausea and vomiting, a high-riding testis with a horizontal lie and an absent **cremasteric reflex**. That reflex runs through the genitofemoral nerve: stroking the inner thigh signals up its femoral branch, and its genital branch makes the cremaster lift the testis."
+  ],
+  [
+   "p",
+   "**Epididymitis** is infection that climbs from the urethra along the ductus deferens. In sexually active men younger than about 35, the usual causes are Chlamydia trachomatis and Neisseria gonorrhoeae; in older men with obstruction or instrumentation, and in men who have insertive anal sex, enteric rods such as Escherichia coli dominate. Pain builds over days, the epididymis is tender, lifting the testis eases the pain (a positive {{rp20prehn|Prehn sign}}), the reflex is preserved and Doppler shows increased flow. CDC treatment is ceftriaxone plus doxycycline, or levofloxacin when enteric organisms are likely. A torsed appendix testis, a remnant at the upper pole, causes focal pain and a blue dot in boys of about 7 to 12."
+  ],
+  [
+   "f",
+   "rp20_torsion"
+  ],
+  [
+   "t",
+   [
+    "Feature",
+    "Testicular torsion",
+    "Epididymitis",
+    "Torsed appendix testis"
+   ],
+   [
+    [
+     "Onset",
+     "Sudden, over minutes",
+     "Gradual, over days",
+     "Subacute, focal"
+    ],
+    [
+     "Typical age",
+     "12 to 18 years, and newborns",
+     "Sexually active and older men",
+     "Boys about 7 to 12"
+    ],
+    [
+     "Testis position",
+     "High-riding, horizontal lie",
+     "Normal",
+     "Normal"
+    ],
+    [
+     "Cremasteric reflex",
+     "Absent",
+     "Present",
+     "Present"
+    ],
+    [
+     "Lifting the testis",
+     "No relief",
+     "Relief (Prehn sign)",
+     "Little change"
+    ],
+    [
+     "Doppler flow",
+     "Absent or reduced",
+     "Increased",
+     "Normal testis"
+    ],
+    [
+     "Treatment",
+     "Surgery within hours",
+     "Antibiotics",
+     "Rest and analgesics"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "key",
+   "Torsion is a clinical diagnosis on a clock",
+   "Salvage is above 90 percent when the cord is untwisted within 6 hours and below 10 percent after 24 hours. A boy with sudden pain, a high-riding testis and no cremasteric reflex goes to the operating room; **Doppler** can support the diagnosis but must not delay surgery. The surgeon untwists the cord and performs **bilateral orchiopexy**, because the bell-clapper defect is usually bilateral."
+  ],
+  [
+   "h",
+   "What inflames the testis itself, and why can mumps cause infertility?"
+  ],
+  [
+   "p",
+   "**Orchitis** is inflammation of the testis proper. The classic cause is **mumps**, which inflames the testis in roughly 20 to 30 percent of males infected after puberty, usually about a week after the parotitis. The swollen testis is trapped inside the unyielding tunica albuginea, so pressure rises and the seminiferous tubules undergo pressure necrosis and atrophy, and damage to the blood-testis barrier adds an immune attack; bilateral disease can leave a man infertile. **Granulomatous** orchitis takes two main forms: tuberculosis, which usually starts in the epididymis and forms caseating granulomas, and an idiopathic, probably autoimmune form in middle-aged men that presents as a firm mass mimicking a tumor."
+  ],
+  [
+   "h",
+   "Which scrotal swellings glow with light, and which one signals a kidney tumor?"
+  ],
+  [
+   "p",
+   "A **hydrocele** is serous fluid in the tunica vaginalis around the testis; it is smooth and painless, and it **transilluminates**. In infants, a communicating hydrocele means the processus vaginalis stayed open, so peritoneal fluid moves in and out and the swelling changes size; a wide opening allows an indirect hernia. Adult hydroceles are usually noncommunicating and can react to infection, trauma or tumor, so every new one gets an ultrasound. A **hematocele** is blood in the tunica vaginalis after trauma and stays dark; blunt trauma can also tear the tunica albuginea, a testicular rupture that needs surgery. A spermatocele, or epididymal cyst, sits above and behind the testis, separate from it, and also transilluminates."
+  ],
+  [
+   "p",
+   "A **varicocele** is a tangle of dilated pampiniform veins in the spermatic cord, felt above the testis as a **bag of worms** that fills on standing and empties when the man lies down. About 90 percent are left-sided, because the left testicular vein joins the left renal vein at a right angle, a longer, higher-pressure route, while the right drains obliquely into the inferior vena cava. The pooled warm blood impairs spermatogenesis, making varicocele the most common surgically correctable cause of male infertility. A new right-sided varicocele, or one that stays full when supine, suggests a mass blocking venous return, such as **renal cell** carcinoma in the vena cava, so the abdomen is imaged."
+  ],
+  [
+   "f",
+   "rp20_masses"
+  ],
+  [
+   "h",
+   "How do testicular tumors differ, and which markers name them?"
+  ],
+  [
+   "p",
+   "A testicular tumor classically presents in a man aged 15 to 35 as a **painless**, firm mass within the testis that does not transilluminate; ultrasound shows a solid **intratesticular** lesion. About 95 percent are germ cell tumors, which usually arise from germ cell neoplasia in situ and carry an **isochromosome 12p**. Seminoma, the most common single type, peaks slightly later, in the 30s and 40s. It forms a homogeneous gray-white, fleshy mass of large fried-egg cells with clear cytoplasm, divided by fibrous septa full of lymphocytes, and its cells express placental alkaline phosphatase. Seminoma never makes AFP, can mildly raise hCG and is very sensitive to radiation and chemotherapy."
+  ],
+  [
+   "img",
+   "rp20_seminoma"
+  ],
+  [
+   "p",
+   "Nonseminomatous germ cell tumors are usually mixed and more aggressive. **Embryonal carcinoma** forms a hemorrhagic, necrotic mass of primitive, pleomorphic cells and may raise AFP or hCG. **Yolk sac tumor** is the most common testicular tumor in boys younger than 3; it secretes AFP and shows {{rp20schiller|Schiller-Duval bodies}}. **Choriocarcinoma**, made of syncytiotrophoblast and cytotrophoblast, spreads early through the blood to the lungs and brain and makes very high hCG, which causes gynecomastia and, by stimulating the TSH receptor, hyperthyroidism. Teratoma contains tissues of all three germ layers; in adult men even mature-looking teratoma can metastasize."
+  ],
+  [
+   "img",
+   "rp20_yolksac"
+  ],
+  [
+   "f",
+   "rp20_gct"
+  ],
+  [
+   "t",
+   [
+    "Tumor",
+    "Typical patient",
+    "Key histology",
+    "Serum marker"
+   ],
+   [
+    [
+     "Seminoma",
+     "Men in their 30s and 40s",
+     "Fried-egg cells, septa with lymphocytes",
+     "AFP normal; hCG normal or mildly raised"
+    ],
+    [
+     "Embryonal carcinoma",
+     "Men in their 20s and 30s",
+     "Hemorrhagic sheets of primitive cells",
+     "AFP or hCG variably raised"
+    ],
+    [
+     "Yolk sac tumor",
+     "Boys under 3",
+     "Schiller-Duval bodies",
+     "AFP high"
+    ],
+    [
+     "Choriocarcinoma",
+     "Men in their 20s and 30s",
+     "Trophoblast cells, no villi",
+     "hCG very high"
+    ],
+    [
+     "Leydig cell tumor",
+     "Boys and men",
+     "Reinke crystals",
+     "Testosterone or estradiol"
+    ],
+    [
+     "Lymphoma",
+     "Men over 60",
+     "Large B cells, often bilateral",
+     "No specific marker"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "About 5 percent of testicular tumors arise from sex cord-stromal cells and make hormones rather than markers. A **Leydig cell tumor** is a golden-brown nodule of eosinophilic cells with rod-shaped Reinke crystals; its androgens cause precocious puberty in boys, and their conversion to estrogen causes gynecomastia in men, while AFP and hCG stay normal. Most are benign, and Sertoli cell tumors are usually hormonally silent. In men older than 60 the most common testicular mass is **lymphoma**, usually diffuse large B-cell type and often bilateral. Testicular tumors spread first to the **para-aortic** lymph nodes near the renal vessels, while choriocarcinoma spreads through the blood."
+  ],
+  [
+   "steps",
+   [
+    "Working up a painless testicular lump",
+    [
+     [
+      "Examine and transilluminate",
+      "A firm mass within the testis that blocks light is treated as cancer until proven otherwise, while a cystic swelling that glows points to fluid."
+     ],
+     [
+      "Scrotal ultrasound",
+      "Ultrasound confirms a solid intratesticular lesion and separates it from a hydrocele, spermatocele or varicocele outside the testis."
+     ],
+     [
+      "Draw AFP, hCG and LDH",
+      "Markers drawn before surgery suggest the tumor type, contribute to staging and give a baseline for follow-up after removal."
+     ],
+     [
+      "Radical inguinal orchiectomy",
+      "The testis and cord are removed through the groin with high ligation of the cord; a scrotal biopsy is avoided, and sperm banking is offered first."
+     ],
+     [
+      "Stage and follow the markers",
+      "CT of the abdomen and chest looks for para-aortic nodes and lung spread, and markers that fall more slowly than their half-lives signal residual disease."
+     ]
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "A high AFP means the tumor is not a pure seminoma",
+   "Pure seminoma never secretes **AFP**. If a tumor reported as seminoma comes with a raised AFP, it contains a nonseminomatous component, usually yolk sac tumor, and it is treated as a nonseminomatous tumor. A mildly raised **hCG** fits seminoma, because scattered syncytiotrophoblast cells make it; only very high hCG points to choriocarcinoma."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp20_rightvar",
+    "q": "A 61-year-old man has a new right-sided varicocele that stays full when he lies down. Which reasoning best guides the next step?",
+    "o": [
+     "Right-sided varicoceles are the common kind because the right testicular vein is longer, so reassurance is enough",
+     "The right testicular vein drains straight into the inferior vena cava, so a new right varicocele that does not empty suggests a mass blocking venous return",
+     "A swelling that stays full when he is supine must be a hydrocele, so transillumination is the key test",
+     "Varicoceles come from arterial malformations, so Doppler of the testicular artery will settle the diagnosis"
+    ],
+    "a": 1,
+    "why": "Varicoceles are usually left-sided because the left testicular vein enters the left renal vein at a right angle, giving a long, high-pressure column. The right vein enters the inferior vena cava obliquely and rarely backs up. A new right-sided varicocele, or one that does not collapse when the patient lies flat, therefore implies an obstruction downstream, classically renal cell carcinoma growing into the vena cava. The next step is imaging of the abdomen, not reassurance."
+   }
+  ],
+  [
+   "why",
+   "Why must a suspected testicular cancer be removed through the groin rather than the scrotum?",
+   "The testis develops near the kidney and drags its vessels and lymphatics with it as it descends, so its lymph drains to para-aortic nodes at the level of the renal vessels, whereas the scrotal skin drains to superficial inguinal nodes. Cutting through the scrotum could spill tumor into the scrotal wall and open a route to the inguinal nodes, adding a second nodal basin and complicating staging and treatment. Surgeons therefore perform a radical inguinal orchiectomy, removing the testis and spermatic cord through the groin and tying the cord high, so the tumor never touches the scrotal lymphatics."
+  ],
+  [
+   "vis",
+   "rp20"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these point toward testicular torsion rather than epididymitis?",
+  "items": [
+   [
+    "Sudden onset of severe pain",
+    1
+   ],
+   [
+    "Absent cremasteric reflex",
+    1
+   ],
+   [
+    "High-riding testis with a horizontal lie",
+    1
+   ],
+   [
+    "Nausea and vomiting at onset",
+    1
+   ],
+   [
+    "Absent flow on Doppler ultrasound",
+    1
+   ],
+   [
+    "Bell-clapper attachment of the tunica vaginalis",
+    1
+   ],
+   [
+    "Age 12 to 18 years",
+    1
+   ],
+   [
+    "Pain relieved by lifting the testis",
+    0
+   ],
+   [
+    "Urethral discharge with pyuria",
+    0
+   ],
+   [
+    "Increased blood flow on Doppler",
+    0
+   ],
+   [
+    "Gradual onset over several days",
+    0
+   ],
+   [
+    "Tender swollen epididymis with an intact reflex",
+    0
+   ]
+  ]
+ }
+}

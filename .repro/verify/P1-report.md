@@ -38,8 +38,9 @@ spot-check: All six rows are OK, with the notes below.
 
 gate-change: GATE-CHANGE sha:f7a14977 (the gate sha is now f7a14977) tries hyphens as written, as spaces and removed, and stops a number term from running on into more digits. It fixes the cases it targets and hides none of this run's failures. I listed every map and blueprint term that the hyphen rule newly matches in the current text: there are 21, and all are real spelling variants, such as prepregnancy, nonstress, pde5, '75 g' and 'bell clapper'. But removing the hyphen from a term with a short tail makes a new stem. BP-rp27-07's 'anti-d' becomes 'antid', which matches 'antidote' (rp27 b9, the sentence on the magnesium antidote) and 'antidepressant' (rp11); term_hit on 'calcium gluconate is the antidote' with 'anti-d' returns True. This hides nothing today, because rp27 b21 teaches anti-D and 'kleihauer', PREG-REVIEW.9 and BICEP-LEWIS.13 force it. Even so, the hyphen-removed form should have to end at a word boundary when the part after the hyphen is 3 letters or fewer. Separately, BP-rp27-07's '28 weeks' is also met by the gestational diabetes sentence '24 to 28 weeks' (b11). That is a problem with a P1.3 key, not with this change. I verified the number rule: 126 no longer matches 1260, and 69 no longer matches 69,000.
 
-notes: Four things outside the sample.
+notes: Three things outside the sample.
 - audit/P1.4.md's round-5 section is headed '2026-10-05 round 3' and names A.md and B.md as its proposals, though it integrates R5.md and R5d.md.
 - That section does not record that R5 withdrew the GTD.3 UNANCHORED entry for contraception, or that it replaced MATERNAL-PHYS.2's minute ventilation; the round-4 table still describes the old version.
 - Main moved during this run: P3.4 and P3.5 closed (commits 2dc2055 and 8a41367), and the tree went from 098490a1f2 to 9f1633d7f9. scope/ and audit/P1.4.md are unchanged since the token commit 920893d, and so are the drafts behind the sampled rows (rp17, rp24, rp26, rp27) and the accepted rp2, rp4, rp6 and rp7.
-- At 400 px, the hypertensive-disorders table in the rp27 draft (b2) is clipped at the right edge, which is a matter for P3.10.
+
+Server stopped. I restarted it once briefly to measure one 400 px table, which scrolls inside its own box as designed, then stopped it again.
