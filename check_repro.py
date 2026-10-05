@@ -154,6 +154,15 @@ B = {
     "guide_title": (2, 6), "guide_head": (1, 6), "guide_body": (3, 16),
     "bold_words": 8, "bold_spans": 3,
 }
+# User direction 2026-10-05: "i need eveything relevant to step 1, no more ... each article is way to long and the
+# language could use work being more user friendly ... dont make them so short that info is jagged and blunt ... only
+# remove info if it is not step one relevant". Lessons keep every Step 1 fact in smooth, plain prose; non-Step-1 detail
+# goes. So only the length FLOORS relax (no ceiling forces a cut), a topic is judged complete against its
+# STEP1-BLUEPRINT items, and course-objective (TOPIC-MAP) terms are advisory. GATE-CHANGE note in the ledger.
+STEP1_ONLY = True
+if STEP1_ONLY:
+    B.update({"topic_words": (400, 2600), "rows_min": 8, "p_words": (15, 170), "call_text": (15, 110),
+              "why_a": (40, 160), "sexp_why": (40, 120)})
 ROW_KINDS = {"h", "p", "call", "why", "t", "steps", "sexp", "f", "img", "vis", "palace"}
 CALL_KINDS = {"key", "trap", "mnem", "step"}
 MODALITIES = {"histology", "cytology", "gross", "imaging", "clinical", "micro", "diagram"}
@@ -606,7 +615,7 @@ def coverage_terms_problems(ct: rc.Content, tid: str) -> list[str]:
             miss = rc.terms_present(text, b["terms"])
             if miss:
                 P.append(f"{bid} key term(s) {miss} absent")
-    for oid, row in rc.topic_map_rows().items():
+    for oid, row in ([] if STEP1_ONLY else rc.topic_map_rows().items()):  # STEP1_ONLY: course-objective terms advisory
         if row["topics"] and row["topics"][0] == tid:
             if not row["terms"]:
                 P.append(f"{oid}: TOPIC-MAP row has no terms (P1.4)")

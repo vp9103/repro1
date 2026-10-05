@@ -1,6 +1,6 @@
 """Fast track: merge every worker folder into fast/content and build fast/repro-endo-path.html, safely.
 
-  python3 .repro/fast_merge.py [--probe] [--prefer <dest>=<ws> ...] [--skip <ws> ...]
+  python3 .repro/fast_merge.py [--probe] [--prefer <dest>=<ws> ...] [--skip <ws> ...] [--override <ws> ...]
 
 1. Collects fast/ws/*/content/<kind>/<file>. The same destination from two workspaces with different bytes is a
    CONFLICT: nothing is written and the script exits 1 (resolve it, or pass --prefer kind/name=WS once reviewed).
@@ -126,6 +126,18 @@ def main(argv: list[str]) -> int:
     chosen.update(accepted)
     if accepted:
         print(f"{len(accepted)} accepted file(s) from main content/ supersede drafts")
+    # --override <ws>: user direction 2026-10-05 (concise Step-1 rewrite): that workspace's files win over accepted
+    # content and every other draft of the same name. Each override is printed; the gated reconciliation follows later.
+    for ow in [argv[i + 1] for i, a in enumerate(argv) if a == "--override" and i + 1 < len(argv)]:
+        wsd = FAST / "ws" / ow
+        for k in KINDS:
+            d = wsd / "content" / k
+            if d.is_dir():
+                for f in sorted(d.iterdir()):
+                    if f.is_file():
+                        chosen[f"{k}/{f.name}"] = f
+                        conflicts = [c for c in conflicts if c.split(":", 1)[0] != f"{k}/{f.name}"]
+                        print(f"override: {k}/{f.name} <- {ow}")
     if conflicts:
         print("CONFLICT (nothing written):\n  " + "\n  ".join(conflicts))
         return 1

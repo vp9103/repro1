@@ -26,6 +26,15 @@ CURRENT POSITION + last notes, `.repro/PENDING.md`, the §10 section of the curr
 - Approved downloads: openly licensed CC0/PD/CC BY/CC BY-SA images from Wikimedia Commons, CDC PHIL, NIH Open-i into
   `repro-endo-assets/`, each < 2 MB, with attribution. No new public publishing.
 
+- 2026-10-05 (after seeing the published draft): "the depth of much of this material is excessive. i need eveything
+  relevant to step 1, no more ... each article is way to long and the language could use work being more user
+  friendly" and "dont make them so short that info is jagged and blunt. it should still read smoothly and logically in
+  an easy to understand manner. also only remove info if it is not step one relevant". So every lesson is rewritten:
+  keep every Step 1 fact (all STEP1-BLUEPRINT items), remove only non-Step-1 detail, smooth plain prose. Gate:
+  `STEP1_ONLY = True` (length floors relaxed, no new ceiling; course-objective TOPIC-MAP terms advisory).
+  The page is published privately at https://claude.ai/artifact/NQUiTXZwk9sKBk68SFdQ9T (capabilities db + user only:
+  "just the progress saving"; tutor and backup download not wanted).
+
 ## Ownership
 - One owner per file. The orchestrator integrates shared content/engine/metadata/ledger changes and runs every
   `--start/--close/--verify/--record`. Gated engine/integration tasks stay exclusive.
