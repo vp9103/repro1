@@ -1,0 +1,41 @@
+<svg class="dia" viewBox="0 0 900 456" role="img" aria-label="The first three weeks of development: week 1 from fertilization to implantation, week 2 the rule of 2s, week 3 the rule of 3s, and below them the teratogen timeline of all-or-none, organogenesis and fetal periods">
+<text class="ttl" x="14" y="24" font-size="17">The first three weeks, then the window for birth defects</text>
+<rect x="14" y="40" width="284" height="266" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="68" font-size="16">Week 1: travel and implant</text>
+<text x="28" y="100" font-size="15">Fertilization in the ampulla</text>
+<text x="28" y="126" font-size="15">Cleavage to a morula (day 3)</text>
+<text x="28" y="152" font-size="15">Blastocyst (day 5)</text>
+<text x="28" y="178" font-size="15">Inner cell mass: embryo</text>
+<text x="28" y="204" font-size="15">Trophoblast: placenta</text>
+<text x="28" y="230" font-size="15">Hatches from zona pellucida</text>
+<text x="28" y="256" font-size="15">Implantation about day 6</text>
+<rect x="308" y="40" width="284" height="266" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="322" y="68" font-size="16">Week 2: the rule of 2s</text>
+<text x="322" y="100" font-size="15"><tspan class="b">2 disc layers</tspan> (bilaminar):</text>
+<text x="338" y="126" font-size="15">epiblast and hypoblast</text>
+<text x="322" y="156" font-size="15"><tspan class="b">2 cavities:</tspan></text>
+<text x="338" y="182" font-size="15">amniotic cavity, yolk sac</text>
+<text x="322" y="212" font-size="15"><tspan class="b">2 trophoblast layers:</tspan></text>
+<text x="338" y="238" font-size="15">cytotrophoblast (inner)</text>
+<text x="338" y="264" font-size="15">syncytiotrophoblast (outer)</text>
+<text x="322" y="292" font-size="15">Syncytiotrophoblast makes hCG</text>
+<rect x="602" y="40" width="284" height="266" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="616" y="68" font-size="16">Week 3: the rule of 3s</text>
+<text x="616" y="100" font-size="15"><tspan class="b">Gastrulation</tspan> at the</text>
+<text x="632" y="126" font-size="15">primitive streak</text>
+<text x="616" y="156" font-size="15"><tspan class="b">3 germ layers</tspan> (trilaminar):</text>
+<text x="632" y="182" font-size="15">ectoderm, mesoderm,</text>
+<text x="632" y="208" font-size="15">endoderm (all from epiblast)</text>
+<text x="616" y="238" font-size="15">Notochord forms and induces</text>
+<text x="632" y="264" font-size="15">the neural plate</text>
+<rect x="14" y="322" width="284" height="84" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="352" font-size="15">Weeks 1–2: all-or-none</text>
+<text x="28" y="382" font-size="15">Early loss or normal recovery</text>
+<rect x="308" y="322" width="284" height="84" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="322" y="352" font-size="15">Weeks 3–8: organogenesis</text>
+<text x="322" y="382" font-size="15">Peak teratogen sensitivity</text>
+<rect x="602" y="322" width="284" height="84" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="616" y="352" font-size="15">Weeks 9–38: fetal period</text>
+<text x="616" y="382" font-size="15">Growth; fewer malformations</text>
+<text x="14" y="438" font-size="15">Weeks here count from fertilization. Gestational age from the LMP runs 2 weeks ahead.</text>
+</svg>
