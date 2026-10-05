@@ -6,8 +6,19 @@
  "exam": "mid",
  "mins": 14,
  "bp": [
-  "BP-rp10-01", "BP-rp10-02", "BP-rp10-03", "BP-rp10-04", "BP-rp10-05", "BP-rp10-06", "BP-rp10-07",
-  "BP-rp10-08", "BP-rp10-09", "BP-rp10-10", "BP-rp10-11", "BP-rp10-12", "BP-rp10-13"
+  "BP-rp10-01",
+  "BP-rp10-02",
+  "BP-rp10-03",
+  "BP-rp10-04",
+  "BP-rp10-05",
+  "BP-rp10-06",
+  "BP-rp10-07",
+  "BP-rp10-08",
+  "BP-rp10-09",
+  "BP-rp10-10",
+  "BP-rp10-11",
+  "BP-rp10-12",
+  "BP-rp10-13"
  ],
  "obj": [
   "PATHPHARM-MENSES-CONTRA.2",
@@ -110,11 +121,15 @@
   ],
   [
    "p",
-   "Methods fall into three families. The pill, the weekly **transdermal patch** and the monthly **vaginal ring** all combine ethinyl estradiol with a progestin. The progestin-only family is the minipill, the DMPA injection, the etonogestrel implant and the levonorgestrel IUD. The copper IUD, condoms and sterilization use no hormone. Effectiveness depends less on the molecule than on how much the method relies on the user. With {{rp10_typical|typical use}}, about 7 in 100 pill, patch or ring users become pregnant each year, mostly from missed doses, while fewer than 1 in 100 implant or IUD users do. That is why {{rp10_larc|long-acting reversible contraception}} is offered first to anyone who wants it, adolescents included."
+   "Methods fall into three families. The pill, the weekly **transdermal patch** and the monthly **vaginal ring** all combine ethinyl estradiol with a progestin. The progestin-only family is the minipill, the DMPA injection, the etonogestrel implant and the levonorgestrel IUD. The copper IUD, condoms, the diaphragm and sterilization use no hormone. Effectiveness depends less on the molecule than on how much the method relies on the user. With {{rp10_typical|typical use}}, about 7 in 100 pill, patch or ring users become pregnant each year, mostly from missed doses, while fewer than 1 in 100 implant or IUD users do. That is why {{rp10_larc|long-acting reversible contraception}} is offered first to anyone who wants it, adolescents included."
   ],
   [
    "f",
    "rp10_methods"
+  ],
+  [
+   "p",
+   "Barrier methods and sterilization use no hormone. The male condom fails in about 13 in 100 couples a year with typical use, and it is the only method here that also lowers the risk of sexually transmitted infection, so it is paired with a more effective method. The **diaphragm**, placed over the cervix with spermicide, fails in about 17 in 100. Sterilization is permanent: women have the tubes occluded or removed, and men have a **vasectomy**, which cuts the vas deferens, with a semen analysis after about 3 months to confirm that no sperm remain. The gap between **perfect use** and typical use shows how much a method depends on the user: the pill fails in about 0.3 per 100 with perfect use but about 7 with typical use, whereas an implant or IUD fails in under 1 either way."
   ],
   [
    "p",
@@ -130,6 +145,47 @@
    "why",
    "Why do combined pills lower the risk of ovarian and endometrial cancer?",
    "Each ovulation tears the ovarian surface and the nearby tubal epithelium, and every repair is another chance for a mutation. By suppressing ovulation, combined pills cut the number of lifetime ovulations, so ovarian cancer risk falls by roughly a third, more with longer use, and the protection lasts decades after stopping. Endometrial cancer is driven by estrogen acting without progesterone. Every active pill contains a progestin, which keeps the lining thin and secretory, so the endometrium never sees **unopposed estrogen**; its cancer risk falls by a similar amount and also persists long after the pills stop."
+  ],
+  [
+   "h",
+   "How are the combined methods used, and why does bleeding break through?"
+  ],
+  [
+   "t",
+   [
+    "Method",
+    "Hormones",
+    "Schedule",
+    "Distinctive issue"
+   ],
+   [
+    [
+     "Combined pill",
+     "Ethinyl estradiol plus a progestin",
+     "Daily: 21 to 24 active pills, then 4 to 7 hormone-free days with a withdrawal bleed",
+     "Extended or continuous packs skip the bleed"
+    ],
+    [
+     "Patch",
+     "Ethinyl estradiol with norelgestromin",
+     "Replaced weekly for 3 weeks, then 1 week off",
+     "Higher estrogen exposure than most pills; less reliable above about 90 kg or a BMI of 30"
+    ],
+    [
+     "Vaginal ring",
+     "Ethinyl estradiol with etonogestrel",
+     "In place for 3 weeks, out for 1",
+     "Irritation or expulsion are the common reasons to stop"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Any method can start on any day once pregnancy is reasonably excluded, which is called quick start. Within the first 5 days of a period it protects at once; otherwise condoms are used for the first 7 days, or 2 days for the minipill. One missed active pill is taken as soon as it is remembered. Two or more missed in a row can let a follicle escape suppression, so take the most recent missed pill, use condoms for 7 days, and offer emergency contraception if unprotected sex followed missed pills early in the pack."
+  ],
+  [
+   "p",
+   "{{rp10_btb|Breakthrough bleeding}}, unscheduled bleeding or spotting while taking active hormone, is the most common adverse effect of every hormonal method. It is most frequent in the first 3 months, while the endometrium adapts, and settles in most users. Estrogen stabilizes the lining, so low-dose, progestin-only and continuous regimens bleed more, as do missed pills, smoking and enzyme inducers that lower hormone levels. Bleeding that persists beyond the first months prompts a pregnancy test and a check for chlamydia, cervicitis or a polyp before the product is changed. Other estrogen effects are nausea, breast tenderness and headache; progestin effects are mood change, acne and, with DMPA, weight gain."
   ],
   [
    "h",
@@ -196,15 +252,19 @@
   ],
   [
    "p",
-   "**Emergency contraception** works before implantation, by delaying ovulation or by stopping fertilization, so it cannot end a pregnancy that has already implanted and is not an **abortifacient**. Levonorgestrel, a single high dose of progestin, works best within 72 hours and only if it is taken before the LH surge begins; it is also less effective in women with obesity. Ulipristal, a {{rp10_sprm|selective progesterone receptor modulator}}, works for up to 5 days and can still delay follicle rupture after LH has started to rise, so it outperforms levonorgestrel late in the window. A copper IUD placed within 5 days is the most effective option of all, and it then keeps working as ongoing contraception."
-  ],
-  [
-   "p",
-   "Medication abortion ends a pregnancy that has already implanted, so its two drugs act after implantation. **Mifepristone** is a progesterone receptor antagonist: without progesterone's support, the decidua breaks down, the pregnancy detaches, the cervix softens and the myometrium becomes sensitive to prostaglandins. **Misoprostol**, a prostaglandin E1 analog given 24 to 48 hours later, then drives strong uterine contractions and ripens the cervix to expel the tissue. Cramping and bleeding heavier than a period are expected effects, and misoprostol often adds nausea, diarrhea, fever and chills."
+   "**Emergency contraception** works before implantation, by delaying ovulation or by stopping fertilization, so it cannot end a pregnancy that has already implanted and is not an **abortifacient**. Levonorgestrel, a single high dose of progestin, works best within 72 hours and only if it is taken before the LH surge begins; it also loses efficacy as **body mass index** rises, from about a BMI of 30. Ulipristal, a {{rp10_sprm|selective progesterone receptor modulator}}, works for up to 5 days, can still delay follicle rupture after LH has started to rise, and is less affected by weight, so it outperforms levonorgestrel late in the window and in obesity. A copper IUD placed within 5 days is the most effective option of all, is not affected by weight, and then keeps working as ongoing contraception."
   ],
   [
    "f",
    "rp10_timeline"
+  ],
+  [
+   "p",
+   "Medication abortion ends a pregnancy that has already implanted, so its two drugs act after implantation. **Mifepristone** is a progesterone receptor antagonist: without progesterone's support, the decidua breaks down, the pregnancy detaches, the cervix softens and the myometrium becomes sensitive to prostaglandins. **Misoprostol**, a prostaglandin E1 (PGE1) analog given 24 to 48 hours later, then drives strong uterine contractions and ripens the cervix to expel the tissue. Cramping and bleeding heavier than a period are expected effects, and misoprostol often adds nausea, diarrhea, fever and chills. As of 2025 the regimen is approved through 70 days of gestation: mifepristone 200 mg by mouth, then misoprostol 800 mcg buccally."
+  ],
+  [
+   "f",
+   "rp10_abortion"
   ],
   [
    "steps",
@@ -236,7 +296,11 @@
   ],
   [
    "p",
-   "Counseling starts with what the patient wants: when she may want pregnancy, how she feels about bleeding changes, and whether she can use estrogen. A sexual history covers partners, practices, protection from infection, past infections and pregnancy intentions, and only condoms also prevent sexually transmitted infection. An **adolescent** can consent to contraception without a parent in most states, so part of the visit is held alone and kept **confidential**, with the limits of confidentiality explained first. No pelvic examination is needed before starting pills, a patch, a ring, an injection or an implant."
+   "Counseling starts with what the patient wants: when she may want pregnancy, how she feels about bleeding changes, and whether she can use estrogen. A sexual history covers partners, practices, protection from infection, past infections and pregnancy intention, the five Ps; pregnancy intention opens the contraceptive conversation, and asking in the practices step whether sex is consensual identifies coercion. Only condoms also prevent sexually transmitted infection. An **adolescent** can consent to contraception without a parent in most states, so part of the visit is held alone and kept **confidential**, with the limits of confidentiality explained first. No pelvic examination is needed before starting pills, a patch, a ring, an injection or an implant. Each method's pitfall follows from what it does, so the choice matches her history and medicines to the pitfalls below."
+  ],
+  [
+   "f",
+   "rp10_pitfalls"
   ],
   [
    "sexp",
@@ -307,6 +371,14 @@
    ],
    [
     "The most effective reversible method",
+    0
+   ],
+   [
+    "The patch pairs ethinyl estradiol with norelgestromin",
+    1
+   ],
+   [
+    "The vaginal ring releases norelgestromin",
     0
    ]
   ]

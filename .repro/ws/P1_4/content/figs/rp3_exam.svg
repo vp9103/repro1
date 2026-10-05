@@ -1,0 +1,60 @@
+<svg class="dia" viewBox="0 0 900 500" role="img" aria-label="Right and left breasts seen facing the patient, each divided into upper and lower, inner and outer quadrants with clock-face numerals and an axillary tail on the outer side; a lump is marked in the left breast at 2 o'clock, 3 cm from the nipple; three cards list what to inspect, palpate and record">
+<text class="ttl" x="14" y="24" font-size="17">Breast exam map: quadrants, clock face and what to record</text>
+<rect x="274" y="130" width="14" height="250" rx="6" fill="var(--surface-3)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<ellipse cx="70" cy="196" rx="48" ry="17" transform="rotate(38 70 196)" fill="var(--warn-soft)" stroke="var(--ink)" stroke-width="2"/>
+<ellipse cx="492" cy="196" rx="48" ry="17" transform="rotate(-38 492 196)" fill="var(--warn-soft)" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="150" cy="276" r="100" fill="var(--warn-soft)" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="412" cy="276" r="100" fill="var(--warn-soft)" stroke="var(--ink)" stroke-width="2"/>
+<line x1="50" y1="276" x2="250" y2="276" stroke="var(--ink-3)" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="150" y1="176" x2="150" y2="376" stroke="var(--ink-3)" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="312" y1="276" x2="512" y2="276" stroke="var(--ink-3)" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="412" y1="176" x2="412" y2="376" stroke="var(--ink-3)" stroke-width="1.2" stroke-dasharray="5 4"/>
+<circle cx="150" cy="276" r="16" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="150" cy="276" r="6" fill="var(--a1)"/>
+<circle cx="412" cy="276" r="16" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<circle cx="412" cy="276" r="6" fill="var(--a1)"/>
+<line x1="412" y1="276" x2="464" y2="246" stroke="var(--crit)" stroke-width="2" stroke-dasharray="4 3"/>
+<circle cx="464" cy="246" r="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="2.5"/>
+<text class="b" x="150" y="168" font-size="15" text-anchor="middle">12</text>
+<text class="b" x="262" y="282" font-size="15" text-anchor="middle">3</text>
+<text class="b" x="150" y="396" font-size="15" text-anchor="middle">6</text>
+<text class="b" x="36" y="282" font-size="15" text-anchor="middle">9</text>
+<text class="b" x="412" y="168" font-size="15" text-anchor="middle">12</text>
+<text class="b" x="526" y="282" font-size="15" text-anchor="middle">3</text>
+<text class="b" x="412" y="396" font-size="15" text-anchor="middle">6</text>
+<text class="b" x="300" y="282" font-size="15" text-anchor="middle">9</text>
+<text x="100" y="236" font-size="13" text-anchor="middle">Upper outer</text>
+<text x="200" y="236" font-size="13" text-anchor="middle">Upper inner</text>
+<text x="100" y="324" font-size="13" text-anchor="middle">Lower outer</text>
+<text x="200" y="324" font-size="13" text-anchor="middle">Lower inner</text>
+<text x="362" y="236" font-size="13" text-anchor="middle">Upper inner</text>
+<text x="456" y="224" font-size="13" text-anchor="middle">Upper outer</text>
+<text x="362" y="324" font-size="13" text-anchor="middle">Lower inner</text>
+<text x="462" y="324" font-size="13" text-anchor="middle">Lower outer</text>
+<text class="b" x="150" y="62" font-size="15" text-anchor="middle">Right breast</text>
+<text class="b" x="412" y="62" font-size="15" text-anchor="middle">Left breast</text>
+<text x="14" y="130" font-size="14">Axillary tail</text>
+<line x1="60" y1="136" x2="68" y2="172" stroke="var(--ink-3)" stroke-width="1"/>
+<text x="470" y="130" font-size="14">Axillary tail</text>
+<line x1="504" y1="136" x2="496" y2="170" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="cr" x="478" y="252" font-size="13">Lump</text>
+<text x="14" y="436" font-size="14">Upper outer quadrant: 9 to 12 o'clock in the right breast and</text>
+<text x="14" y="456" font-size="14">12 to 3 o'clock in the left, as the examiner faces the patient</text>
+<text class="cr" x="14" y="478" font-size="14">Red lump: left breast, 2 o'clock, 3 cm from the nipple</text>
+<text x="281" y="122" font-size="13" text-anchor="middle">Sternum</text>
+<rect x="590" y="52" width="296" height="112" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="604" y="78" font-size="15">1. Inspect</text>
+<text x="604" y="102" font-size="14">Nipple: retraction, discharge</text>
+<text x="604" y="122" font-size="14">Skin: dimpling, puckering</text>
+<text x="604" y="142" font-size="14">Arms raised, then hands on hips</text>
+<rect x="590" y="176" width="296" height="112" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="604" y="202" font-size="15">2. Palpate</text>
+<text x="604" y="226" font-size="14">Every quadrant and the tail</text>
+<text x="604" y="246" font-size="14">Then the axilla and the</text>
+<text x="604" y="266" font-size="14">supraclavicular fossa</text>
+<rect x="590" y="300" width="296" height="112" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="604" y="326" font-size="15">3. Record</text>
+<text x="604" y="350" font-size="14">Breast and clock position</text>
+<text x="604" y="370" font-size="14">Distance from the nipple</text>
+<text x="604" y="390" font-size="14">Size, mobility, fixation</text>
+</svg>

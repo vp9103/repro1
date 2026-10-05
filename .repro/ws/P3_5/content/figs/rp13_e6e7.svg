@@ -1,0 +1,64 @@
+<svg class="dia" viewBox="0 0 900 470" role="img" aria-label="High-risk HPV integration releases E6 and E7: E6 degrades p53 so damaged cells neither arrest nor die, E7 inactivates Rb and frees E2F, and loss of Rb control makes p16 accumulate as a lab marker">
+<text class="ttl" x="14" y="24" font-size="17">How high-risk HPV cuts two brakes on the cell cycle</text>
+<rect x="14" y="44" width="250" height="410" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="74" font-size="16">High-risk HPV</text>
+<text x="28" y="102" font-size="15">Types 16 and 18</text>
+<text x="28" y="126" font-size="15">Infects basal cells</text>
+<text x="28" y="150" font-size="15">of the zone</text>
+<text x="28" y="190" font-size="15">Most infections clear</text>
+<text x="28" y="214" font-size="15">Persistent infection</text>
+<text x="28" y="238" font-size="15">lets DNA integrate</text>
+<text x="28" y="278" font-size="15">Integration breaks E2,</text>
+<text x="28" y="302" font-size="15">the viral repressor</text>
+<text class="b" x="28" y="342" font-size="16">E6 and E7 surge</text>
+<text x="28" y="394" font-size="15">Low-risk 6 and 11</text>
+<text x="28" y="418" font-size="15">stay episomal: warts</text>
+<rect x="300" y="64" width="170" height="100" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="314" y="94" font-size="16">E6</text>
+<text x="314" y="120" font-size="15">Binds p53 and</text>
+<text x="314" y="144" font-size="15">tags it for decay</text>
+<rect x="500" y="64" width="170" height="100" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="514" y="94" font-size="16">p53 degraded</text>
+<text x="514" y="120" font-size="15">Guardian of the</text>
+<text x="514" y="144" font-size="15">genome is lost</text>
+<rect x="700" y="64" width="186" height="100" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="714" y="94" font-size="16">Damage ignored</text>
+<text x="714" y="120" font-size="15">No G1 arrest</text>
+<text x="714" y="144" font-size="15">No apoptosis</text>
+<rect x="300" y="204" width="170" height="100" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="314" y="234" font-size="16">E7</text>
+<text x="314" y="260" font-size="15">Binds Rb and</text>
+<text x="314" y="284" font-size="15">releases E2F</text>
+<rect x="500" y="204" width="170" height="100" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="514" y="234" font-size="16">Rb inactivated</text>
+<text x="514" y="260" font-size="15">E2F switches on</text>
+<text x="514" y="284" font-size="15">S-phase genes</text>
+<rect x="700" y="204" width="186" height="100" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="714" y="234" font-size="16">Runaway division</text>
+<text x="714" y="260" font-size="15">G1 to S at will</text>
+<text x="714" y="284" font-size="15">Mutations pile up</text>
+<rect x="300" y="340" width="370" height="100" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="314" y="370" font-size="16">p16 accumulates</text>
+<text x="314" y="396" font-size="15">Working Rb keeps p16 low,</text>
+<text x="314" y="420" font-size="15">so Rb loss lets p16 pile up</text>
+<rect x="700" y="340" width="186" height="100" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="714" y="370" font-size="16">Lab marker</text>
+<text x="714" y="396" font-size="15">Block p16 stain</text>
+<text x="714" y="420" font-size="15">supports HSIL</text>
+<line x1="264" y1="114" x2="292" y2="114" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="292,109 300,114 292,119" fill="var(--ink-2)"/>
+<line x1="470" y1="114" x2="492" y2="114" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="492,109 500,114 492,119" fill="var(--ink-2)"/>
+<line x1="670" y1="114" x2="692" y2="114" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="692,109 700,114 692,119" fill="var(--ink-2)"/>
+<line x1="264" y1="254" x2="292" y2="254" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="292,249 300,254 292,259" fill="var(--ink-2)"/>
+<line x1="470" y1="254" x2="492" y2="254" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="492,249 500,254 492,259" fill="var(--ink-2)"/>
+<line x1="670" y1="254" x2="692" y2="254" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="692,249 700,254 692,259" fill="var(--ink-2)"/>
+<line x1="385" y1="304" x2="385" y2="332" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="380,332 385,340 390,332" fill="var(--ink-2)"/>
+<line x1="670" y1="390" x2="692" y2="390" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="692,385 700,390 692,395" fill="var(--ink-2)"/>
+</svg>

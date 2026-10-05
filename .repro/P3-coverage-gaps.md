@@ -1,119 +1,34 @@
-# P3 coverage gaps (regenerated 2026-10-05 after P1.4 round 4, from the gate's coverage_terms_problems on fast/content)
+# P3 coverage gaps (regenerated 2026-10-05 after P1.4 round 5)
 
-Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms are absent from the topic's rendered text. The topic must TEACH the missing part (real explanation), not just mention the word. What part each term anchors: the anchors column in .repro/P1.4-proposals/A.md or B.md (round-4 changes: audit/P1.4.md).
+Each line: an objective or BP item whose key terms are absent from the topic's rendered text (fast draft or accepted). TEACH the part; what each term anchors: .repro/P1.4-proposals/A.md, B.md, R5.md, R5d.md (latest wins).
 
 
-## rp1 (21)
+## rp1 (0)
 
-- ANAT-PELVIS-LEC.3 term(s) ['continence'] absent
-- ANAT-PELVIS-LEC.4 term(s) ['retrorectal'] absent
-- ANAT-PELVIS-LEC.5 term(s) ['external os'] absent
-- ANAT-PELVIS-LEC.6 term(s) ['fructose', 'liquef', 'seminal colliculus', 'retrograde ejaculation'] absent
-- ANAT-PELVIS-LEC.7 term(s) ['inferior vesical', 'uterovaginal'] absent
-- ANAT-PELVIS-LEC.8 term(s) ['parametri', 'common iliac'] absent
-- ANAT-PELVIS-LEC.9 term(s) ['embolization', 'prostatectomy'] absent
-- ANAT-PELVIS-LAB.1 term(s) ['ischium'] absent
-- ANAT-PELVIS-LAB.2 term(s) ['pelvic outlet'] absent
-- ANAT-PELVIS-LAB.3 term(s) ['suprapiriform', 'infrapiriform'] absent
-- ANAT-PELVIS-LAB.4 term(s) ['obturator fascia', 'rectovaginal'] absent
-- ANAT-PELVIS-LAB.5 term(s) ['mesometrium'] absent
-- ANAT-PELVIS-LAB.6 term(s) ['sacral foram'] absent
-- ANAT-PELVIS-LAB.7 term(s) ['inferior vesical', 'batson'] absent
-- ANAT-PELVIS-LAB.8 term(s) ['lumbar splanchnic'] absent
-- ANAT-PELVIS-LAB.9 term(s) ['trigone', 'rectosigmoid'] absent
-- ANAT-PELVIS-LAB.10 term(s) ['trigone', 'denonvilliers'] absent
-- ANAT-PELVIS-LAB.11 term(s) ['retrover'] absent
-- ANAT-PELVIS-LAB.12 term(s) ['obturator nerve'] absent
-- ANAT-PELVIS-LAB.13 term(s) ['tunica vaginalis', 'efferent ductules', 'digital rectal'] absent
-- ANAT-EXTGEN-LAB.1 term(s) ['continence'] absent
 
-## rp2 (16)
+## rp2 (0)
 
-- ANAT-PERINEUM-LEC.1 term(s) ['horizontal plane', 'vertical plane'] absent
-- ANAT-PERINEUM-LEC.3 term(s) ['deep transverse perineal'] absent
-- ANAT-PERINEUM-LEC.4 term(s) ['portocaval'] absent
-- ANAT-PERINEUM-LEC.5 term(s) ['hymen'] absent
-- ANAT-PERINEUM-LEC.6 term(s) ['navicular fossa'] absent
-- ANAT-PERINEUM-LEC.7 term(s) ['external pudendal', 'helicine'] absent
-- ANAT-PERINEUM-LEC.8 term(s) ['sentinel'] absent
-- ANAT-PERINEUM-LEC.9 term(s) ['inferior hypogastric', 'lumbar splanchnic', 'vasoconstriction'] absent
-- ANAT-EXTGEN-LAB.2 term(s) ['horizontal plane'] absent
-- ANAT-EXTGEN-LAB.3 term(s) ['transverse perineal ligament'] absent
-- ANAT-EXTGEN-LAB.4 term(s) ['extravasat'] absent
-- ANAT-EXTGEN-LAB.5 term(s) ['lubrication'] absent
-- ANAT-EXTGEN-LAB.7 term(s) ['bulb of the penis', 'prepuce'] absent
-- ANAT-EXTGEN-LAB.8 term(s) ['posterior labial'] absent
-- ANAT-EXTGEN-LAB.9 term(s) ['alpha-1'] absent
-- ANAT-EXTGEN-LAB.10 term(s) ['sentinel', 'inguinal bubo'] absent
 
-## rp3 (3)
+## rp3 (0)
 
-- ANAT-BREAST.2 term(s) ['clock'] absent
-- ANAT-BREAST.4 term(s) ['batson', 'supraclavicular'] absent
-- TBL-BREAST.2 term(s) ['lipid droplet', 'ejection'] absent
 
-## rp4 (3)
+## rp4 (0)
 
-- EMBRYO-CLIN.3 term(s) ['somite', 'tracheoesophageal'] absent
-- EMBRYO-CLIN.4 term(s) ['chorionic villi'] absent
-- EMBRYO-CLIN.11 term(s) ['chorionicity'] absent
 
-## rp5 (10)
+## rp5 (0)
 
-- HP-UTERUS-OVARY.4 term(s) ['pregnancy loss', 'preterm'] absent
-- HP-MALE.10 term(s) ['deep inguinal ring'] absent
-- EMBRYO-GU.2 term(s) ['ectopic ureter', 'ipsilateral'] absent
-- EMBRYO-GU.4 term(s) ['resorption', 'canalization'] absent
-- EMBRYO-GU.5 term(s) ['insl3', 'inguinoscrotal', 'patent processus'] absent
-- EMBRYO-CLIN.7 term(s) ['bipotent', 'urorectal septum'] absent
-- EMBRYO-CLIN.8 term(s) ['sox9'] absent
-- EMBRYO-CLIN.9 term(s) ['epoophoron'] absent
-- EMBRYO-CLIN.10 term(s) ['insl3', 'ambiguous genitalia'] absent
-- BICEP-MISHIMOTO.2 term(s) ['patent'] absent
 
-## rp6 (3)
+## rp6 (0)
 
-- BP-rp6-09 key term(s) ['xyy'] absent
-- BICEP-WALSH.21 term(s) ['azoospermia'] absent
-- BICEP-WALSH.22 term(s) ['gonadectomy'] absent
 
-## rp7 (7)
+## rp7 (0)
 
-- TBL-PUBERTY.3 term(s) ['nocturnal', 'sertoli'] absent
-- TBL-PUBERTY.4 term(s) ['spermarche'] absent
-- TBL-PUBERTY.5 term(s) ['gnrh stimulation', 'magnetic resonance', 'testotoxicosis'] absent
-- TBL-PUBERTY.6 term(s) ['self-limit', 'growth velocity'] absent
-- BICEP-WALSH.1 term(s) ['dihydrotestosterone'] absent
-- BICEP-WALSH.2 term(s) ['arcuate', 'sertoli'] absent
-- BICEP-WALSH.4 term(s) ['positive feedback'] absent
 
-## rp8 (7)
+## rp8 (0)
 
-- HP-UTERUS-OVARY.1 term(s) ['perimetrium'] absent
-- HP-UTERUS-OVARY.2 term(s) ['decidualiz', 'luteinization'] absent
-- PHYS-MENSTRUAL.1 term(s) ['pregnenolone'] absent
-- PHYS-MENSTRUAL.2 term(s) ['antral follicle'] absent
-- PHYS-MENSTRUAL.3 term(s) ['pulsatile', 'gonadotroph'] absent
-- PHYS-MENSTRUAL.4 term(s) ['day 14', 'pulse frequency', 'second rise'] absent
-- PHYS-MENSTRUAL.5 term(s) ['luteinization'] absent
 
-## rp9 (15)
+## rp9 (0)
 
-- HP-UTERUS-OVARY.3 term(s) ['follicular cyst', 'endometrioma', 'pelvic adhesion'] absent
-- PATHPHARM-MENSES-CONTRA.1 term(s) ['transvaginal', 'laparoscop', 'dyschezia'] absent
-- BICEP-WILLIAMS.1 term(s) ['polymenorrhea'] absent
-- BICEP-WILLIAMS.2 term(s) ['80 ml', 'variation'] absent
-- BICEP-WEIAND.5 term(s) ['filling defect'] absent
-- BICEP-WEIAND.7 term(s) ['intracytoplasmic', 'sperm retrieval'] absent
-- BICEP-WALSH.7 term(s) ['thelarche'] absent
-- BICEP-WALSH.9 term(s) ['compartment', 'hypogonadotropic', 'hypergonadotropic'] absent
-- BICEP-WALSH.10 term(s) ['previously regular'] absent
-- BICEP-WALSH.13 term(s) ['hematocolpos', 'rokitansky'] absent
-- BICEP-WALSH.14 term(s) ['adrenal tumor'] absent
-- BICEP-WALSH.15 term(s) ['alkylating'] absent
-- BICEP-WALSH.16 term(s) ['physiologic'] absent
-- BICEP-WALSH.17 term(s) ['relative energy deficiency', 'disordered eating'] absent
-- BICEP-WALSH.18 term(s) ['thyroid-stimulating'] absent
 
 ## rp10 (4)
 
@@ -126,7 +41,7 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 
 - MENOPAUSE.1 term(s) ['prepubertal'] absent
 - MENOPAUSE.2 term(s) ['serotonin', 'libido', 'nocturia'] absent
-- MENOPAUSE.3 term(s) ['urinary tract infection'] absent
+- MENOPAUSE.3 term(s) ['brain fog', 'urinary tract infection'] absent
 - MENOPAUSE.5 term(s) ['cycle length', '60 days', 'polymenorrhea'] absent
 - MENOPAUSE.6 term(s) ['breast tenderness'] absent
 - MENOPAUSE.7 term(s) ['hepatotoxic'] absent
@@ -134,20 +49,19 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 - MENOPAUSE.9 term(s) ['fluctuat'] absent
 - MENOPAUSE.12 term(s) ['pregnancy test', 'carcinoid', 'sheehan', 'thyroid-stimulating hormone'] absent
 - MENOPAUSE.13 term(s) ['residency', 'abandon'] absent
-- MENOPAUSE.14 term(s) ['socioeconomic', 'undertreat'] absent
+- MENOPAUSE.14 term(s) ['vasomotor burden', 'socioeconomic', 'undertreat'] absent
 - MENOPAUSE.15 term(s) ['oversight'] absent
 - BICEP-WILLIAMS.4 term(s) ['karyotype'] absent
 - BICEP-WILLIAMS.5 term(s) ['parabasal'] absent
 - BICEP-WILLIAMS.6 term(s) ['observational'] absent
 - BICEP-WILLIAMS.7 term(s) ['exogenous'] absent
 
-## rp12 (5)
+## rp12 (4)
 
-- HP-CERVIX-VULVA.3 term(s) ['transudate', 'elastic', 'rugae'] absent
+- HP-CERVIX-VULVA.3 term(s) ['transudate', 'distensib', 'rugae'] absent
 - HP-CERVIX-VULVA.4 term(s) ['transitional'] absent
-- HP-CERVIX-VULVA.5 term(s) ['cervicitis'] absent
 - HP-CERVIX-VULVA.6 term(s) ['dermal sclerosis', 'paget cell'] absent
-- PATHPHARM-CERVIX-HPV.6 term(s) ['dermatitis'] absent
+- PATHPHARM-CERVIX-HPV.6 term(s) ['contact dermatitis'] absent
 
 ## rp13 (10)
 
@@ -156,8 +70,8 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 - HP-CERVIX-VULVA.9 term(s) ['bethesda'] absent
 - PATHPHARM-CERVIX-HPV.1 term(s) ['speculum'] absent
 - PATHPHARM-CERVIX-HPV.3 term(s) ['clearance', 'annual', 'anoscopy'] absent
-- PATHPHARM-CERVIX-HPV.4 term(s) ['reflex', 'ablat'] absent
-- SIM-COLPO.1 term(s) ['secondary prevention', 'cold knife'] absent
+- PATHPHARM-CERVIX-HPV.4 term(s) ['reflex hpv', 'ablat'] absent
+- SIM-COLPO.1 term(s) ['secondary prevention'] absent
 - SIM-COLPO.2 term(s) ['endometrial biopsy'] absent
 - SIM-COLPO.3 term(s) ['false-negative', 'endocervical component'] absent
 - BICEP-BROWN.1 term(s) ['hepatitis c'] absent
@@ -170,20 +84,19 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 - HP-UTERUS-OVARY.9 term(s) ['biphasic', 'heterologous'] absent
 - BICEP-WILLIAMS.10 term(s) ['indolent'] absent
 
-## rp15 (14)
+## rp15 (13)
 
-- HP-UTERUS-OVARY.10 term(s) ['primordial germ', 'genital ridge'] absent
+- HP-UTERUS-OVARY.10 term(s) ['coelomic epithelium', 'primordial germ', 'genital ridge'] absent
 - HP-UTERUS-OVARY.11 term(s) ['dysgenesis'] absent
 - ADNEXAL.1 term(s) ['hemorrhagic cyst'] absent
-- ADNEXAL.2 term(s) ['whirlpool'] absent
-- ADNEXAL.3 term(s) ['color doppler'] absent
+- ADNEXAL.2 term(s) ['ground-glass', 'whirlpool'] absent
+- ADNEXAL.3 term(s) ['color score', 'multilocular cyst'] absent
 - ADNEXAL.4 term(s) ['unilocular', 'intermediate risk'] absent
 - ADNEXAL.6 term(s) ['cystectomy'] absent
 - ADNEXAL.7 term(s) ['malignancy index'] absent
 - GYN-ONC.1 term(s) ['unopposed estrogen', 'lichen sclerosus', 'immunosuppress', 'diethylstilbestrol'] absent
 - GYN-ONC.2 term(s) ['endometrial biopsy', 'colposcopy', 'wide local excision'] absent
-- GYN-ONC.3 term(s) ['e6', 'vulvar intraepithelial neoplasia', 'adenosis'] absent
-- BICEP-WILLIAMS.9 term(s) ['coffee bean'] absent
+- GYN-ONC.3 term(s) ['atypical hyperplasia', 'e6', 'vulvar intraepithelial neoplasia', 'adenosis'] absent
 - BICEP-WILLIAMS.11 term(s) ['antral follicle', 'endocervical canal'] absent
 - BICEP-WILLIAMS.13 term(s) ['multiparity'] absent
 
@@ -227,7 +140,7 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 - HP-MALE.14 term(s) ['filaria', 'chylocele'] absent
 - PATHPHARM-MALE.7 term(s) ['retractile'] absent
 - BICEP-MISHIMOTO.3 term(s) ['ipsilateral'] absent
-- BICEP-MISHIMOTO.4 term(s) ['referred'] absent
+- BICEP-MISHIMOTO.4 term(s) ['ureteral stone'] absent
 - BICEP-MISHIMOTO.5 term(s) ['detorsion'] absent
 
 ## rp21 (8)
@@ -290,10 +203,10 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 - THIRD-TRI.1 term(s) ['transaminase'] absent
 - THIRD-TRI.2 term(s) ['right upper quadrant'] absent
 - THIRD-TRI.3 term(s) ['free fatty acid', 'evolution'] absent
-- THIRD-TRI.4 term(s) ['75 g', 'carpenter'] absent
+- THIRD-TRI.4 term(s) ['carpenter'] absent
 - THIRD-TRI.5 term(s) ['polycystic'] absent
 - THIRD-TRI.6 term(s) ['decidua basalis', 'premature separation'] absent
-- PREG-REVIEW.7 term(s) ['prepregnancy', 'vascular resistance'] absent
+- PREG-REVIEW.7 term(s) ['vascular resistance'] absent
 - PREG-REVIEW.8 term(s) ['patellar'] absent
 - PREG-REVIEW.9 term(s) ['sensitiz'] absent
 - PREG-REVIEW.12 term(s) ['estimated fetal weight', 'umbilical artery'] absent
@@ -320,11 +233,11 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 ## rp29 (17)
 
 - PATHPHARM-MENSES-CONTRA.4 term(s) ['parental consent', 'consensual'] absent
-- TRANSGENDER-LEC.1 term(s) ['nonbinary'] absent
 - TRANSGENDER-LEC.2 term(s) ['medicaid'] absent
+- TRANSGENDER-LEC.3 term(s) ['anal sex'] absent
 - TRANSGENDER-LEC.4 term(s) ['polycythemia'] absent
 - TRANSGENDER-LEC.5 term(s) ['hysterectomy'] absent
-- TRANSGENDER-LEC.6 term(s) ['mammogra'] absent
+- TRANSGENDER-LEC.6 term(s) ['prostate-specific antigen'] absent
 - LIFESPAN-PANEL.1 term(s) ['insurance coverage', 'knowledge deficit', 'refused care'] absent
 - LIFESPAN-PANEL.2 term(s) ['misgender', 'neutral pronoun'] absent
 - LIFESPAN-PANEL.3 term(s) ['autonomy', 'parental consent'] absent
@@ -344,7 +257,7 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 - PRENATAL-CARE.5 term(s) ['menstrual history', 'surgical history', 'intimate partner'] absent
 - PRENATAL-CARE.6 term(s) ['dipstick'] absent
 - PRENATAL-CARE.9 term(s) ['banana sign'] absent
-- PREG-REVIEW.2 term(s) ['redat', 'discrepancy', 'embryo transfer'] absent
+- PREG-REVIEW.2 term(s) ['redat', 'embryo transfer'] absent
 - PREG-REVIEW.4 term(s) ['fortif'] absent
 - PREG-REVIEW.5 term(s) ['microarray'] absent
 - PREG-REVIEW.13 term(s) ['measles'] absent
@@ -352,7 +265,7 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 - BICEP-LEWIS.2 term(s) ['interpregnancy interval'] absent
 - BICEP-LEWIS.4 term(s) ['head circumference', 'early term', 'late term'] absent
 - BICEP-LEWIS.5 term(s) ['allerg'] absent
-- BICEP-LEWIS.6 term(s) ['phenylketonuria', 'ionizing radiation'] absent
+- BICEP-LEWIS.6 term(s) ['phenylketonuria', 'ionizing radiation', 'congenital rubella'] absent
 - BICEP-LEWIS.8 term(s) ['neonatal abstinence'] absent
 
 ## en1 (0)
@@ -381,4 +294,4 @@ Each line: an objective (TOPIC-MAP) or blueprint item (BP-...) whose key terms a
 
 ## en9 (1)
 
-- ENDO-THYROID.6 term(s) ['asymptomatic', 'nephrolithiasis', 'osteoporosis'] absent
+- ENDO-THYROID.6 term(s) ['nephrolithiasis', 'osteoporosis'] absent
