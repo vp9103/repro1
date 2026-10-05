@@ -1,0 +1,65 @@
+<svg class="dia" viewBox="0 0 900 516" role="img" aria-label="PCOS mechanism: fast GnRH pulses raise LH, insulin resistance stimulates theca cells and lowers SHBG, free testosterone rises, follicles stall, anovulation leaves estrogen unopposed on the endometrium">
+<text class="ttl" x="14" y="24" font-size="17">PCOS: one loop links androgen, anovulation and endometrial risk</text>
+<rect x="14" y="44" width="270" height="62" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="68" font-size="15">Hypothalamus</text>
+<text x="28" y="92" font-size="15">Fast GnRH pulses</text>
+<rect x="314" y="44" width="270" height="62" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="328" y="68" font-size="15">Insulin resistance</text>
+<text x="328" y="92" font-size="15">High insulin</text>
+<rect x="614" y="44" width="272" height="62" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="628" y="68" font-size="15">Liver</text>
+<text x="628" y="92" font-size="15">Makes less SHBG</text>
+<rect x="14" y="142" width="270" height="62" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="166" font-size="15">Pituitary</text>
+<text x="28" y="190" font-size="15">LH high, FSH relatively low</text>
+<rect x="314" y="142" width="270" height="62" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="328" y="166" font-size="15">Theca cells</text>
+<text x="328" y="190" font-size="15">Excess androgen</text>
+<rect x="614" y="142" width="272" height="62" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="628" y="166" font-size="15">Free testosterone rises</text>
+<text x="628" y="190" font-size="15">Hirsutism, acne</text>
+<rect x="14" y="240" width="570" height="62" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="264" font-size="15">Follicles stall at the small antral stage</text>
+<text x="28" y="288" font-size="15">Many small follicles, none becomes dominant</text>
+<rect x="614" y="240" width="272" height="62" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="628" y="264" font-size="15">Adipose aromatase</text>
+<text x="628" y="288" font-size="15">Androgen to estrone</text>
+<rect x="14" y="338" width="570" height="62" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="28" y="362" font-size="15">Anovulation</text>
+<text x="28" y="386" font-size="15">No corpus luteum, so no progesterone</text>
+<rect x="14" y="436" width="872" height="62" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="28" y="460" font-size="15">Unopposed estrogen on the endometrium</text>
+<text x="28" y="484" font-size="15">Irregular bleeding, hyperplasia and cancer risk</text>
+<g stroke="var(--ink-2)" stroke-width="2.5">
+<line x1="149" y1="106" x2="149" y2="132"/>
+<line x1="449" y1="106" x2="449" y2="132"/>
+<line x1="584" y1="75" x2="604" y2="75"/>
+<line x1="284" y1="173" x2="304" y2="173"/>
+<line x1="584" y1="173" x2="604" y2="173"/>
+<line x1="750" y1="106" x2="750" y2="132"/>
+<line x1="149" y1="204" x2="149" y2="230"/>
+<line x1="449" y1="204" x2="449" y2="230"/>
+<line x1="750" y1="204" x2="750" y2="230"/>
+<line x1="299" y1="302" x2="299" y2="328"/>
+<line x1="299" y1="400" x2="299" y2="426"/>
+<line x1="750" y1="302" x2="750" y2="426"/>
+</g>
+<g fill="var(--ink-2)">
+<polygon points="143,132 149,141 155,132"/>
+<polygon points="443,132 449,141 455,132"/>
+<polygon points="604,69 613,75 604,81"/>
+<polygon points="304,167 313,173 304,179"/>
+<polygon points="604,167 613,173 604,179"/>
+<polygon points="744,132 750,141 756,132"/>
+<polygon points="143,230 149,239 155,230"/>
+<polygon points="443,230 449,239 455,230"/>
+<polygon points="744,230 750,239 756,230"/>
+<polygon points="293,328 299,337 305,328"/>
+<polygon points="293,426 299,435 305,426"/>
+<polygon points="744,426 750,435 756,426"/>
+</g>
+<text x="460" y="128" font-size="14">stimulates</text>
+<text x="160" y="226" font-size="14">low FSH</text>
+<text x="460" y="226" font-size="14">local androgen</text>
+<text x="760" y="372" font-size="14">adds estrone</text>
+</svg>

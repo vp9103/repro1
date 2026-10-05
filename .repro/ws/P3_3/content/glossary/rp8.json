@@ -1,0 +1,47 @@
+[
+ {
+  "k": "rp8_prim",
+  "t": "Primordial follicle",
+  "d": "The resting follicle: a primary oocyte arrested in prophase I inside one layer of flat pregranulosa cells. The whole lifetime supply forms before birth and shrinks by atresia.",
+  "alt": [
+   "primordial follicles"
+  ]
+ },
+ {
+  "k": "rp8_theca",
+  "t": "Theca interna",
+  "d": "The vascular layer of cells outside a follicle's basement membrane. Under LH it converts cholesterol into androstenedione, the androgen that granulosa cells turn into estradiol.",
+  "alt": [
+   "theca cells",
+   "theca cell"
+  ]
+ },
+ {
+  "k": "rp8_granulosa",
+  "t": "Granulosa cells",
+  "d": "The avascular cells lining the follicle inside its basement membrane. FSH induces their aromatase, which converts theca androgens into estradiol; they also secrete inhibin B and AMH.",
+  "alt": [
+   "granulosa cell"
+  ]
+ },
+ {
+  "k": "rp8_lhsurge",
+  "t": "LH surge",
+  "d": "The mid-cycle burst of LH released when sustained high estradiol switches the pituitary to positive feedback. It restarts meiosis I and causes ovulation about 36 hours after it begins.",
+  "alt": []
+ },
+ {
+  "k": "rp8_cl",
+  "t": "Corpus luteum",
+  "d": "The luteinized granulosa and theca cells left after ovulation. It secretes progesterone for about 14 days, then becomes a corpus albicans unless hCG from an embryo rescues it.",
+  "alt": []
+ },
+ {
+  "k": "rp8_functionalis",
+  "t": "Stratum functionalis",
+  "d": "The superficial endometrial layer, fed by spiral arteries, that thickens each cycle and is shed at menses. It regrows from the stratum basalis, which is fed by straight arteries.",
+  "alt": [
+   "functionalis"
+  ]
+ }
+]
