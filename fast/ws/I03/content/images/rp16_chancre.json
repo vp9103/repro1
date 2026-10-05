@@ -26,5 +26,40 @@
   "Largest chancre, upper right of the shaft: an oval, moist, shallow red ulcer with a sharply defined edge and a smooth base. Its serous surface teems with spirochetes, and a dense plasma cell infiltrate with endarteritis beneath it makes the edge firm on palpation.",
   "Middle chancre, center of the shaft: a second round, moist erosion with a pale center and a red rim. More than one chancre can form when several abraded sites are inoculated, although a single ulcer is more typical.",
   "Lower chancre, below the middle lesion: a further moist, elongated erosion lying on intact surrounding skin. Each lesion marks a site where Treponema pallidum entered, and each heals by itself in weeks even without treatment."
+ ],
+ "ann": [
+  {
+   "k": "e",
+   "x": 52.0,
+   "y": 39.0,
+   "rx": 4.0,
+   "ry": 6.0,
+   "rot": 20,
+   "px": 60.0,
+   "py": 35.0,
+   "l": "This largest chancre is a shallow, red ulcer with a sharply defined edge and smooth base. Its moist surface contains many spirochetes. Histologically, a dense plasma cell infiltrate and obliterative endarteritis in the underlying dermis create the characteristic firm, 'indurated' feel on palpation."
+  },
+  {
+   "k": "e",
+   "x": 44.0,
+   "y": 48.0,
+   "rx": 3.5,
+   "ry": 4.5,
+   "rot": 30,
+   "px": 38.0,
+   "py": 45.0,
+   "l": "The middle lesion shows a round, moist erosion with a pale center and red rim. While a single painless ulcer is the classic presentation of primary syphilis, multiple chancres can occur if Treponema pallidum is inoculated into several small abrasions simultaneously during sexual contact."
+  },
+  {
+   "k": "e",
+   "x": 49.0,
+   "y": 58.0,
+   "rx": 3.5,
+   "ry": 5.0,
+   "rot": 45,
+   "px": 55.0,
+   "py": 65.0,
+   "l": "This lower, elongated erosion sits on otherwise healthy-appearing skin. Each of these lesions represents a primary site of bacterial entry. Even without antibiotic treatment, these chancres will typically heal spontaneously within 3 to 6 weeks, though the infection will progress to the secondary stage."
+  }
  ]
 }

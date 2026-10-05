@@ -1,0 +1,64 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3-flash-preview",
+ "key": "rp17_hsv",
+ "image_sha": "2780da7920b44659",
+ "at": "2026-10-05 05:13:56",
+ "ann": [
+  {
+   "k": "e",
+   "x": 32.0,
+   "y": 62.0,
+   "rx": 15.0,
+   "ry": 25.0,
+   "px": 17.0,
+   "py": 62.0,
+   "l": "Multinucleated cluster, left center: several large nuclei share one syncytial cytoplasm because infected cells fuse. These multinucleated giant cells are what a Pap smear or Tzanck smear shows in herpes infection."
+  },
+  {
+   "k": "arrow",
+   "x": 28.0,
+   "y": 55.0,
+   "tx": 15.0,
+   "ty": 45.0,
+   "px": 15.0,
+   "py": 45.0,
+   "l": "Molded nuclei: inside the cluster the nuclei press against one another and take on flattened, interlocking edges, called nuclear molding, because crowding in the shared cytoplasm deforms them."
+  },
+  {
+   "k": "arrow",
+   "x": 38.0,
+   "y": 60.0,
+   "tx": 55.0,
+   "ty": 60.0,
+   "px": 55.0,
+   "py": 60.0,
+   "l": "Ground-glass nuclei: the infected nuclei look pale, smudged and glassy, with chromatin pushed to a thickened rim along the nuclear membrane, because viral replication fills the nucleus and disperses the chromatin."
+  },
+  {
+   "k": "e",
+   "x": 48.0,
+   "y": 12.0,
+   "rx": 12.0,
+   "ry": 10.0,
+   "px": 48.0,
+   "py": 2.0,
+   "l": "Normal squamous cells: the flat blue-green cells at the top center and on the right have small, crisp, single nuclei and give a size comparison, since the infected nuclei are several times larger and overlap."
+  }
+ ],
+ "kinds": [
+  "e",
+  "arrow",
+  "arrow",
+  "e"
+ ],
+ "areaSum": 15.6,
+ "areaMax": 11.8,
+ "findings": [
+  "Multinucleated cluster, left center: several large nuclei share one syncytial cytoplasm because infected cells fuse. These multinucleated giant cells are what a Pap smear or Tzanck smear shows in herpes infection.",
+  "Molded nuclei: inside the cluster the nuclei press against one another and take on flattened, interlocking edges, called nuclear molding, because crowding in the shared cytoplasm deforms them.",
+  "Ground-glass nuclei: the infected nuclei look pale, smudged and glassy, with chromatin pushed to a thickened rim along the nuclear membrane, because viral replication fills the nucleus and disperses the chromatin.",
+  "Normal squamous cells: the flat blue-green cells at the top center and on the right have small, crisp, single nuclei and give a size comparison, since the infected nuclei are several times larger and overlap."
+ ],
+ "adjustments": []
+}

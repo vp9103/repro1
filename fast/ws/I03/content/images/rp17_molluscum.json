@@ -27,5 +27,47 @@
   "Molluscum bodies, mid-lesion: rounded, granular, pink cytoplasmic inclusions fill the keratinocytes below the plug and push each nucleus aside. They are masses of poxvirus, which replicates in the cytoplasm of the cell.",
   "Maturing bodies at the plug: nearer the surface the inclusions become larger and turn purple, then red as the cells keratinize and die and shed their viral contents into the crater, where the virus spreads to new skin.",
   "Spared basal layer: at the lower edge of the cup, the palisaded basal and parabasal cells contain no inclusions, because bodies appear only after infected cells begin to mature above the basal layer."
+ ],
+ "ann": [
+  {
+   "k": "e",
+   "x": 52.0,
+   "y": 23.0,
+   "rx": 11.0,
+   "ry": 17.5,
+   "px": 63.0,
+   "py": 23.0,
+   "l": "The central crater is a funnel-shaped opening filled with a dense plug of bright red keratin and cellular debris. This histological feature corresponds to the characteristic umbilication (central dimple) seen clinically on the surface of the molluscum contagiosum papule."
+  },
+  {
+   "k": "e",
+   "x": 48.0,
+   "y": 65.0,
+   "rx": 17.5,
+   "ry": 12.5,
+   "px": 30.5,
+   "py": 65.0,
+   "l": "In the mid-epidermis, keratinocytes contain large, rounded, granular, pink cytoplasmic inclusions called molluscum bodies (Henderson-Paterson bodies). These are viral factories where the poxvirus replicates, gradually expanding to fill the cytoplasm and compressing the host cell nucleus to the periphery."
+  },
+  {
+   "k": "arrow",
+   "x": 58.0,
+   "y": 42.0,
+   "tx": 75.0,
+   "ty": 42.0,
+   "px": 75.0,
+   "py": 42.0,
+   "l": "As infected cells migrate toward the central crater, the molluscum bodies mature, becoming larger and changing color from pink to deep purple. These mature virions are eventually shed into the central plug, facilitating the spread of the virus to other areas of the skin."
+  },
+  {
+   "k": "bracket",
+   "x": 35.0,
+   "y": 93.0,
+   "x2": 65.0,
+   "y2": 93.0,
+   "px": 65.0,
+   "py": 93.0,
+   "l": "The basal and parabasal layers at the periphery of the lesion remain spared and do not contain viral inclusions. Molluscum bodies only begin to develop as the infected keratinocytes mature and move upward into the suprabasal layers of the epidermis."
+  }
  ]
 }

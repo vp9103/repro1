@@ -1,0 +1,64 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.5-flash",
+ "key": "rp16_gonococci",
+ "image_sha": "de28d64840f5c31f",
+ "at": "2026-10-05 05:05:39",
+ "ann": [
+  {
+   "k": "e",
+   "x": 37.0,
+   "y": 49.0,
+   "rx": 7.0,
+   "ry": 7.0,
+   "px": 28.0,
+   "py": 42.0,
+   "l": "This large polymorphonuclear neutrophil contains dozens of tiny, pink-magenta, paired cocci (diplococci) within its cytoplasm. Seeing these intracellular organisms in a purulent specimen is highly characteristic of Neisseria gonorrhoeae."
+  },
+  {
+   "k": "e",
+   "x": 53.0,
+   "y": 33.0,
+   "rx": 6.0,
+   "ry": 6.0,
+   "px": 53.0,
+   "py": 23.0,
+   "l": "Another neutrophil shows the same intracellular pink-magenta diplococci. The pink color indicates they are gram-negative, having a thin peptidoglycan layer that does not retain the crystal violet stain during decolorization."
+  },
+  {
+   "k": "arrow",
+   "x": 38.0,
+   "y": 68.0,
+   "tx": 38.0,
+   "ty": 74.0,
+   "px": 38.0,
+   "py": 74.0,
+   "l": "A few diplococci lie outside the cells in the extracellular space. While most gonococci are intracellular during acute infection, some free organisms are commonly observed in the background of the smear."
+  },
+  {
+   "k": "arrow",
+   "x": 85.0,
+   "y": 63.0,
+   "tx": 92.0,
+   "ty": 63.0,
+   "px": 92.0,
+   "py": 63.0,
+   "l": "The field is crowded with numerous uninfected, multilobed neutrophils. Neisseria gonorrhoeae infection triggers a robust, purulent inflammatory response, resulting in an abundance of polymorphonuclear leukocytes in the discharge."
+  }
+ ],
+ "kinds": [
+  "e",
+  "e",
+  "arrow",
+  "arrow"
+ ],
+ "areaSum": 2.7,
+ "areaMax": 1.5,
+ "findings": [
+  "Neutrophil, center left: a polymorphonuclear cell with a pink lobed nucleus holds dozens of tiny paired cocci in its cytoplasm. Seeing the organisms inside the white cell is the pattern typical of gonococci in pus.",
+  "Neutrophil, upper center: a second white cell carries the same pink-magenta pairs, so intracellular organisms recur across the smear. The pink color means a thin peptidoglycan wall that lost the crystal violet at decolorization, so the bacteria are gram-negative.",
+  "Free pair: a few diplococci lie outside the cells, for example just below the center-left neutrophil. Most gonococci sit inside neutrophils in acute infection, but some are found free in the background.",
+  "Surrounding neutrophils: the many segmented, multilobed cells around the infected ones fill the field because gonococci provoke a purulent exudate, so a Gram stain of discharge shows abundant polymorphonuclear cells besides the bacteria."
+ ],
+ "adjustments": []
+}

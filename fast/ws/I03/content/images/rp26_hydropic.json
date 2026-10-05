@@ -27,5 +27,47 @@
   "Trophoblastic hyperplasia: along the upper and right border of the villus, layers of proliferating trophoblast with enlarged, atypical nuclei and vacuolated cytoplasm form a collar around it, reflecting paternal genes that drive trophoblast growth.",
   "Absent fetal vessels: the swollen stroma is loose and nearly acellular with no visible capillaries, because the embryo failed to form and no fetal circulation supplies the villus.",
   "Hemorrhage: a dense pool of red cells at the left edge, with fragments of villi, reflects the vaginal bleeding that brings most patients to care."
+ ],
+ "ann": [
+  {
+   "k": "arrow",
+   "x": 45.0,
+   "y": 65.0,
+   "tx": 35.0,
+   "ty": 85.0,
+   "px": 35.0,
+   "py": 85.0,
+   "l": "Hydropic villus: a large rounded villus with pale, loose, edematous stroma and a central acellular cistern sits at the center, swollen by fluid. This is the microscopic form of the grape-like vesicle seen on gross inspection."
+  },
+  {
+   "k": "e",
+   "x": 75.0,
+   "y": 35.0,
+   "rx": 6.0,
+   "ry": 7.5,
+   "rot": 30,
+   "px": 82.0,
+   "py": 35.0,
+   "l": "Trophoblastic hyperplasia: along the upper and right border of the villus, layers of proliferating trophoblast with enlarged, atypical nuclei and vacuolated cytoplasm form a collar around it, reflecting paternal genes that drive trophoblast growth."
+  },
+  {
+   "k": "c",
+   "x": 55.0,
+   "y": 45.0,
+   "r": 5.0,
+   "px": 55.0,
+   "py": 40.0,
+   "l": "Absent fetal vessels: the swollen stroma is loose and nearly acellular with no visible capillaries, because the embryo failed to form and no fetal circulation supplies the villus."
+  },
+  {
+   "k": "r",
+   "x": 0.0,
+   "y": 10.0,
+   "w": 10.0,
+   "h": 80.0,
+   "px": 10.0,
+   "py": 50.0,
+   "l": "Hemorrhage: a dense pool of red cells at the left edge, with fragments of villi, reflects the vaginal bleeding that brings most patients to care."
+  }
  ]
 }

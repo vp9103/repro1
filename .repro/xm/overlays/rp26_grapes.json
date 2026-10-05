@@ -1,0 +1,64 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3-flash-preview",
+ "key": "rp26_grapes",
+ "image_sha": "cdb32e7599841c28",
+ "at": "2026-10-05 05:14:24",
+ "ann": [
+  {
+   "k": "c",
+   "x": 25.0,
+   "y": 55.0,
+   "r": 5.0,
+   "px": 20.0,
+   "py": 55.0,
+   "l": "These rounded, translucent vesicles fill the field. In a complete mole, every chorionic villus becomes hydropic—swollen by edema into a fluid-filled sac—because there are no functioning fetal vessels to drain the fluid. This creates the classic 'bunch of grapes' appearance seen on gross examination."
+  },
+  {
+   "k": "arrow",
+   "x": 46.0,
+   "y": 62.0,
+   "tx": 52.0,
+   "ty": 75.0,
+   "px": 52.0,
+   "py": 75.0,
+   "l": "Thin, glistening strands of tissue stretch between the vesicles. These represent the remnants of the villous stalks. Their presence confirms that the vesicles are not independent cysts but are part of a branching placental structure, hanging together like grapes on a vine."
+  },
+  {
+   "k": "e",
+   "x": 88.0,
+   "y": 18.0,
+   "rx": 7.0,
+   "ry": 6.0,
+   "rot": 30,
+   "px": 81.0,
+   "py": 18.0,
+   "l": "This large, translucent dome is significantly bigger than its neighbors. The degree of villous swelling varies widely within a single molar pregnancy. While some villi remain small, others can grow to over a centimeter in diameter, contributing to the characteristic heterogeneous, cystic appearance."
+  },
+  {
+   "k": "arrow",
+   "x": 49.0,
+   "y": 82.0,
+   "tx": 55.0,
+   "ty": 92.0,
+   "px": 55.0,
+   "py": 92.0,
+   "l": "Scattered rust-colored spots of old blood are visible between the vesicles. This hemorrhage occurs as the molar tissue separates from the decidua. Clinically, this manifests as the painless vaginal bleeding that is the most common presenting symptom of a hydatidiform mole."
+  }
+ ],
+ "kinds": [
+  "c",
+  "arrow",
+  "e",
+  "arrow"
+ ],
+ "areaSum": 2.1,
+ "areaMax": 1.3,
+ "findings": [
+  "Grape-like vesicles: rounded, translucent, thin-walled vesicles a few millimeters wide fill the field, because every villus is swollen by edema into a fluid-filled sac and lacks functioning fetal vessels.",
+  "Connecting strands: thin, glistening strands of tissue stretch between the vesicles near the center, showing that the vesicles hang together on villous stalks like grapes on a vine.",
+  "Large vesicle, top right: one translucent dome is much larger than its neighbors, showing how widely the size of the swollen villi varies within a single mole.",
+  "Red-brown flecks: scattered rust-colored spots of old blood lie between the vesicles, in line with the vaginal bleeding that is the commonest presenting sign of a molar pregnancy."
+ ],
+ "adjustments": []
+}
