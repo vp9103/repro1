@@ -4,7 +4,7 @@
  "sub": "How pH and a wet mount separate the three causes of vaginitis, and which vulvar and vaginal lesions lead to cancer.",
  "yld": "hi",
  "exam": "mid",
- "mins": 14,
+ "mins": 11,
  "bp": [
   "BP-rp12-01",
   "BP-rp12-02",
@@ -48,8 +48,8 @@
    "why": "Bacterial vaginosis replaces lactobacilli with Gardnerella and other anaerobes. Their amines give the fishy whiff, the lost lactic acid raises the pH, and bacteria coating squamous cells make clue cells.",
    "w": {
     "Candida albicans": "Candida leaves the pH normal and shows budding yeast with pseudohyphae on a KOH prep, not bacteria-coated clue cells.",
-    "Trichomonas vaginalis": "Trichomonads also raise the pH, but the wet mount shows motile flagellated protozoa rather than clue cells, and the discharge is frothy.",
-    "Lactobacillus crispatus": "Lactobacilli are the protective flora that keep the pH at 3.8 to 4.5; their loss, not their overgrowth, causes vaginosis."
+    "Trichomonas vaginalis": "Trichomonads also raise the pH, but the wet mount shows motile flagellated protozoa instead of clue cells, and the discharge is frothy.",
+    "Lactobacillus crispatus": "Lactobacilli are the protective flora that keep the pH at 3.8 to 4.5. Vaginosis comes from their loss, not their overgrowth."
    }
   },
   {
@@ -63,8 +63,8 @@
    "a": 0,
    "why": "Lichen sclerosus leads to differentiated VIN, an HPV-independent lesion driven by TP53 mutation. The mutant p53 stains aberrantly, and without HPV E7 there is no p16 overexpression.",
    "w": {
-    "Diffuse block p16 with wild-type p53": "Block p16 marks high-risk HPV acting through E7, the pattern of HSIL in younger women, not the lichen sclerosus pathway.",
-    "S100 and HMB-45 positive cells": "These markers identify melanocytic lesions such as melanoma; squamous precursors and Paget cells are negative for them.",
+    "Diffuse block p16 with wild-type p53": "Block p16 marks high-risk HPV acting through E7. This is the pattern of HSIL in younger women, not of the lichen sclerosus pathway.",
+    "S100 and HMB-45 positive cells": "These markers identify melanocytic lesions such as melanoma. Squamous precursors and Paget cells are negative for them.",
     "Desmin and myogenin positive cells": "Muscle markers identify rhabdomyosarcoma, such as sarcoma botryoides in young girls, not a squamous precursor."
    }
   },
@@ -77,11 +77,11 @@
     "Sebaceous gland of the labium majus"
    ],
    "a": 0,
-   "why": "Bartholin glands lie at the posterolateral introitus, at about 4 and 8 o'clock. A blocked duct traps mucus as a cyst, and infection makes the painful, fluctuant abscess seen here, treated by drainage with a Word catheter or marsupialization.",
+   "why": "Bartholin glands lie at the posterolateral introitus, at about 4 and 8 o'clock. A blocked duct traps mucus as a cyst, and infection makes the painful, fluctuant abscess seen here, which is treated by drainage.",
    "w": {
     "Skene gland duct": "Skene (paraurethral) glands open beside the urethra, so their infection causes dysuria or urethral discharge rather than a vestibular mass.",
-    "Gartner duct remnant": "A Gartner duct cyst is a mesonephric remnant on the lateral vaginal wall, usually painless and not at the introitus, so it does not form this abscess.",
-    "Sebaceous gland of the labium majus": "A sebaceous cyst lies in the skin of the labium majus and is usually small and painless; the vestibular site and fluctuant abscess point to the Bartholin duct."
+    "Gartner duct remnant": "A Gartner duct cyst is a mesonephric remnant on the lateral vaginal wall. It is usually painless and not at the introitus, so it does not form this abscess.",
+    "Sebaceous gland of the labium majus": "A sebaceous cyst lies in the skin of the labium majus and is usually small and painless. The vestibular site and fluctuant abscess point to the Bartholin duct."
    }
   }
  ],
@@ -92,11 +92,11 @@
   ],
   [
    "p",
-   "The vagina is lined by **nonkeratinized stratified squamous epithelium**, a surface that resists friction but has no glands of its own. Under estrogen its cells fill with **glycogen**, and resident **lactobacilli** ferment that glycogen into lactic acid, so the normal pH sits between 3.8 and 4.5. Because the acid keeps most pathogens from growing, anything that removes lactobacilli or estrogen raises the pH and invites infection. That is why girls before puberty and women after menopause, who store little glycogen, have a higher vaginal pH."
+   "The vagina is lined by **nonkeratinized stratified squamous epithelium**, a surface that resists friction but has no glands of its own. Under estrogen its cells fill with **glycogen**. Resident **lactobacilli** ferment that glycogen into lactic acid, so the normal pH is between 3.8 and 4.5. The acid keeps most pathogens from growing, so anything that removes lactobacilli or estrogen raises the pH and invites infection. This is why girls before puberty and women after menopause, who store little glycogen, have a higher vaginal pH."
   ],
   [
    "p",
-   "The wall is built for distensibility, not for secretion. Beneath the epithelium, a lamina propria rich in **elastic** fibers and a dense venous plexus covers smooth muscle, and the mucosa is thrown into transverse folds, the **rugae**, that flatten as the canal distends in childbirth. During arousal, congestion of the venous plexus forces plasma through the epithelium as a **transudate**, and this fluid mixes with cervical and vestibular mucus to lubricate the canal. After menopause the thin epithelium and flat rugae cause atrophic vaginitis."
+   "The wall is built to stretch, not to secrete. A lamina propria rich in elastic fibers and a venous plexus lies over smooth muscle. Transverse folds called rugae flatten as the canal distends in childbirth. During arousal, congestion of the venous plexus forces plasma through the epithelium as a **transudate**. It mixes with mucus from the vestibular glands to lubricate the canal. After menopause the thin epithelium and flat rugae cause atrophic vaginitis."
   ],
   [
    "call",
@@ -110,11 +110,11 @@
   ],
   [
    "p",
-   "The paired {{rp12_bartholin|Bartholin glands}}, or greater vestibular glands, lie deep in the posterior vestibule and drain by ducts that open at about 4 and 8 o'clock. Their mucus-secreting acini make mucin, and the duct is lined by **transitional epithelium**, so the glands lubricate the introitus, above all during arousal. When a duct blocks, mucus collects as a cyst; infection, usually polymicrobial, turns it into a painful, fluctuant abscess in the posterolateral vestibule. Treatment keeps a drainage tract open, either with a **Word catheter**, a small inflatable balloon left in place for several weeks, or by **marsupialization**, which sews the cyst wall open. A persistent mass in a woman over 40 is biopsied, because Bartholin gland carcinoma, though rare, looks the same."
+   "The paired {{rp12_bartholin|Bartholin glands}}, or greater vestibular glands, lie deep in the posterior vestibule. Their ducts open at about 4 and 8 o'clock. They secrete mucus that lubricates the introitus, and the duct is lined by **transitional epithelium**. When a duct blocks, mucus collects as a cyst. If the cyst becomes infected, usually with mixed bacteria, it becomes a painful, fluctuant abscess in the posterolateral vestibule. Both are treated by drainage, and a persistent mass in a woman over 40 is biopsied, because Bartholin gland carcinoma, though rare, looks the same."
   ],
   [
    "p",
-   "The smaller **paraurethral (Skene) glands**, the female counterpart of the prostate, open beside the urethral meatus and keep it moist, so their infections cause urethral symptoms such as dysuria rather than a vestibular mass. A **Gartner duct cyst** is different again: it sits on the lateral vaginal wall, because it is a leftover piece of the mesonephric duct."
+   "The smaller paraurethral (Skene) glands open beside the urethra and are the female counterpart of the prostate. A **Gartner duct cyst** is different again. It sits on the lateral vaginal wall, because it is a leftover piece of the mesonephric duct."
   ],
   [
    "f",
@@ -126,7 +126,7 @@
   ],
   [
    "p",
-   "**Bacterial vaginosis** is the most common cause of abnormal discharge in women of reproductive age. It is a shift in the flora rather than an invasion: lactobacilli fall and **Gardnerella vaginalis** and other anaerobes overgrow. Anaerobes make amines, so the thin, gray, homogeneous discharge smells fishy, and adding potassium hydroxide releases a stronger odor, the **whiff test**. On a saline wet mount, {{rp12_clue|clue cells}} appear, and white cells are scarce because the process is not inflammatory. Amsel criteria make the diagnosis when three of four are present: typical discharge, pH above 4.5, a positive whiff test and clue cells."
+   "**Bacterial vaginosis** is the most common cause of abnormal discharge in women of reproductive age. It is a shift in the flora, not an invasion: lactobacilli fall and **Gardnerella vaginalis** and other anaerobes overgrow. The anaerobes make amines, so the thin, gray discharge smells fishy, and adding potassium hydroxide releases a stronger odor, the **whiff test**. A wet mount shows {{rp12_clue|clue cells}}, and white cells are scarce because the process is not inflammatory. Diagnosis needs three of four Amsel criteria: typical discharge, pH above 4.5, a positive whiff test and clue cells."
   ],
   [
    "img",
@@ -134,15 +134,15 @@
   ],
   [
    "p",
-   "Vaginosis is treated with **metronidazole**, a 7-day oral course, or clindamycin because it raises the risk of pelvic inflammatory disease and, in pregnancy, of preterm birth and premature rupture of membranes. Symptomatic pregnant women are treated, but women without symptoms are not screened. Metronidazole is a prodrug: anaerobes and protozoa reduce its nitro group into radicals that break their DNA, so one drug covers vaginosis and trichomoniasis. Step 1 references still list a disulfiram-like reaction with alcohol, but the 2021 CDC guidelines found no convincing evidence for it and no longer tell patients to avoid alcohol."
+   "Bacterial vaginosis is treated with **metronidazole** or clindamycin, and treatment matters in pregnancy because vaginosis raises the risk of preterm birth. Metronidazole is a prodrug. Anaerobes and protozoa reduce its nitro group into radicals that break their DNA, so one drug covers vaginosis and trichomoniasis. It also causes a disulfiram-like reaction with alcohol (flushing and nausea), a classic exam point, although CDC guidance as of 2025 no longer tells patients to avoid alcohol."
   ],
   [
    "p",
-   "**Trichomoniasis** is a sexually transmitted infection by *Trichomonas vaginalis*, a pear-shaped, **flagellated** protozoan. It causes a profuse, frothy, yellow-green discharge and a pH above 4.5, and punctate hemorrhages on the cervix give the classic **strawberry cervix**. A wet mount shows motile trichomonads but misses many infections, so nucleic acid amplification testing is more sensitive. The patient takes a 7-day course of metronidazole, every recent partner is treated, and she is retested within three months because reinfection is common. The infection raises the risk of acquiring HIV and, in pregnancy, of preterm birth, so symptomatic pregnant women are treated too."
+   "**Trichomoniasis** is a sexually transmitted infection caused by *Trichomonas vaginalis*, a pear-shaped, **flagellated** protozoan. It causes a profuse, frothy, yellow-green discharge and a pH above 4.5, and tiny hemorrhages on the cervix give the classic **strawberry cervix**. A wet mount shows motile trichomonads but misses many infections, so nucleic acid amplification testing is more sensitive. The patient and every recent partner are treated with metronidazole, because partners reinfect each other."
   ],
   [
    "p",
-   "**Vulvovaginal candidiasis** is overgrowth of *Candida albicans* when the host balance shifts: antibiotics that kill lactobacilli, diabetes or SGLT2 inhibitors that put sugar in the urine, pregnancy, or immunosuppression. The discharge is thick, white and curdlike, itching dominates, and the pH stays normal. A potassium hydroxide prep dissolves the squamous cells and leaves budding yeast and **pseudohyphae** in view. A single oral dose of **fluconazole**, which blocks fungal ergosterol synthesis, cures most episodes; topical azoles are used in pregnancy, and partners are not treated. Recurrent infection (three or more episodes a year) needs a longer course plus weekly fluconazole, and fluconazole-resistant species such as *Candida glabrata* get vaginal boric acid."
+   "**Vulvovaginal candidiasis** is overgrowth of *Candida albicans* when the host balance shifts. Triggers include antibiotics that kill lactobacilli, diabetes (high glucose, including from SGLT2 inhibitors), pregnancy and immunosuppression. The discharge is thick, white and curdlike, itching dominates, and the pH stays normal. A potassium hydroxide prep dissolves squamous cells and leaves budding yeast and **pseudohyphae** in view. **Fluconazole**, which blocks fungal ergosterol synthesis, cures most episodes. Topical azoles are used in pregnancy, and partners are not treated."
   ],
   [
    "f",
@@ -185,7 +185,7 @@
    "call",
    "trap",
    "Partners are treated for trichomoniasis, not for yeast",
-   "Trichomoniasis is sexually transmitted, so every recent partner gets metronidazole, and an untreated partner reinfects her. Candidiasis is not sexually transmitted, so partners are not treated. Giving an antibiotic for a yeast infection makes it worse, because the antibiotic kills the lactobacilli that were holding Candida back."
+   "Trichomoniasis is sexually transmitted, so every recent partner gets metronidazole, or the patient is reinfected. Candidiasis is not sexually transmitted, so partners are not treated. An antibiotic given for a yeast infection makes it worse, because the antibiotic kills the lactobacilli that were holding Candida back."
   ],
   [
    "steps",
@@ -194,11 +194,11 @@
     [
      [
       "Measure the pH",
-      "Touch pH paper to the lateral vaginal wall; a value above 4.5 points toward bacterial vaginosis or trichomoniasis, while a normal value favors candidiasis."
+      "Touch pH paper to the vaginal wall. A value above 4.5 points to bacterial vaginosis or trichomoniasis, and a normal value favors candidiasis."
      ],
      [
       "Do the whiff test",
-      "Add potassium hydroxide to the discharge; a fishy amine odor supports bacterial vaginosis because the overgrowing anaerobes produce those amines."
+      "Add potassium hydroxide to the discharge. A fishy odor supports bacterial vaginosis, because the overgrowing anaerobes make amines."
      ],
      [
       "Read a saline wet mount",
@@ -206,26 +206,14 @@
      ],
      [
       "Read a KOH prep",
-      "Potassium hydroxide dissolves squamous cells so that budding yeast and pseudohyphae stand out, confirming candidiasis."
-     ],
-     [
-      "Send a NAAT when microscopy is negative",
-      "Nucleic acid amplification catches trichomoniasis that a wet mount missed and tests for gonorrhea and chlamydia at the same visit."
+      "Potassium hydroxide dissolves squamous cells so that budding yeast and pseudohyphae stand out, which confirms candidiasis."
      ]
     ]
    ]
   ],
   [
-   "h",
-   "How does cervicitis differ from vaginitis?"
-  ],
-  [
    "p",
-   "Vaginitis inflames the vaginal wall and changes the discharge; {{rp12_cervicitis|cervicitis}} inflames the cervix and shows at the os. The usual causes are infectious: *Chlamydia trachomatis*, the most common, and *Neisseria gonorrhoeae*, followed by trichomonads and herpes simplex virus, with bacterial vaginosis a frequent companion. Douches, spermicides and tampons are noninfectious irritants. Many women have no symptoms; others have **mucopurulent** discharge from the os, bleeding after intercourse and a friable cervix that bleeds when the swab touches it. Trichomonads leave punctate hemorrhages, the strawberry cervix, and herpes leaves ulcers."
-  ],
-  [
-   "p",
-   "A nucleic acid amplification test on a vaginal swab or urine detects chlamydia, gonorrhea and trichomonas, and a pH and wet mount check for vaginitis at the same visit, because the two often coexist. Women at high risk are treated at once with doxycycline, and ceftriaxone is added when gonorrhea is likely; partners are treated and the patient is retested after about 3 months. Untreated infection ascends to cause pelvic inflammatory disease, infertility and ectopic pregnancy."
+   "Not all discharge is vaginitis. Inflammation of the cervix, usually from chlamydia or gonorrhea, causes a mucopurulent discharge from the os and a friable cervix that bleeds when touched. That problem is taught with the cervix."
   ],
   [
    "h",
@@ -233,7 +221,7 @@
   ],
   [
    "p",
-   "{{rp12_lsa|Lichen sclerosus}} is a chronic, T-cell-mediated dermatosis, often seen with other autoimmune disease, that affects postmenopausal women and prepubertal girls. The skin turns thin, white and wrinkled like parchment in a **figure-of-eight** around the vulva and anus, and the vagina is spared. Biopsy shows a thin epidermis without rete ridges; beneath it the collagen is homogenized, the **dermal sclerosis** that names the disease, with a band of lymphocytes below. Itching and scarring follow, and the introitus can narrow. An ultrapotent **topical corticosteroid** such as clobetasol controls it. The lesion is not itself premalignant, but it carries a small risk of squamous cell carcinoma, so a new ulcer or thick plaque is biopsied."
+   "{{rp12_lsa|Lichen sclerosus}} is a chronic, T-cell-mediated skin disease that affects postmenopausal women and prepubertal girls. The vulvar and perianal skin becomes thin, white and wrinkled like parchment in a **figure-of-eight**, and the vagina is spared. Biopsy shows a thin epidermis without rete ridges over homogenized collagen (**dermal sclerosis**), with a band of lymphocytes below. Itching and scarring follow, and the introitus can narrow. An ultrapotent topical **corticosteroid** such as clobetasol controls it. The disease carries a small risk of squamous cell carcinoma, so a new ulcer or thick plaque is biopsied."
   ],
   [
    "img",
@@ -241,40 +229,7 @@
   ],
   [
    "p",
-   "**Lichen simplex chronicus**, which pathologists also call squamous cell hyperplasia, is the opposite picture. An itch-scratch cycle thickens the skin into a leathery white plaque. Biopsy shows acanthosis, hyperkeratosis and elongated rete ridges without atypia, and there is no cancer risk; steroids and stopping the scratching break the cycle. Because the two white plaques look alike, a persistent one is biopsied to exclude vulvar intraepithelial neoplasia. **Lichen planus** is also T-cell mediated but erosive: raw red vestibular patches with lacy white borders that extend into the vagina and often the mouth, where scarring can narrow the vaginal canal."
-  ],
-  [
-   "h",
-   "What else causes vulvar itching, burning or dryness?"
-  ],
-  [
-   "p",
-   "Not every sore or itchy vulva is infection or neoplasia. **Contact dermatitis** follows an irritant such as antiseptic wipes, pads, soaps or urine, or less often an allergen, and shows as a sharply bordered red, weeping patch within days. **Vulvodynia** is vulvar pain lasting at least three months with no identifiable cause, and it is a common cause of painful intercourse before menopause. Both are diagnosed from the history and exam after infection and dermatoses are excluded. Recurrent painful genital and oral ulcers suggest Behçet disease, and painful nodules and tunnels in the groin and labia suggest hidradenitis suppurativa; both are diagnosed clinically."
-  ],
-  [
-   "t",
-   [
-    "Problem",
-    "Clue and diagnosis",
-    "Treatment"
-   ],
-   [
-    [
-     "Contact dermatitis",
-     "Itch or burning after a new product, with sharply bordered redness; history, and patch testing if allergy is suspected",
-     "Remove the trigger; bland emollients; short course of topical steroid"
-    ],
-    [
-     "Vulvodynia",
-     "Burning pain on touch or penetration with normal skin; cotton-swab test after infection and dermatoses are excluded",
-     "Pelvic floor physical therapy, neuropathic pain agents, cognitive behavioral therapy"
-    ],
-    [
-     "Atrophic vaginitis",
-     "Dry, pale, thin mucosa, lost rugae and pH above 4.5; exam to rule out infection",
-     "Vaginal estrogen and moisturizers"
-    ]
-   ]
+   "**Lichen simplex chronicus**, also called squamous cell hyperplasia, is the opposite picture. An itch-scratch cycle thickens the skin into a leathery white plaque, and biopsy shows acanthosis and hyperkeratosis without atypia. It carries no cancer risk, and steroids and stopping the scratching break the cycle. Because the plaques look alike, a persistent one is biopsied to exclude vulvar intraepithelial neoplasia. **Lichen planus** is also T-cell mediated but erosive. It causes raw red vestibular patches with lacy white borders that extend into the vagina and the mouth, and scarring can narrow the vaginal canal."
   ],
   [
    "h",
@@ -282,34 +237,24 @@
   ],
   [
    "p",
-   "Low-risk HPV types 6 and 11 cause **condyloma acuminatum**, soft cauliflower-like warts whose squamous cells are koilocytes, with a clear halo around a wrinkled, dark nucleus. Condylomas signal HPV exposure but do not become cancer. High-risk HPV, mainly type 16, causes a high-grade squamous intraepithelial lesion, the usual type of **vulvar intraepithelial neoplasia** (VIN), in younger women who often smoke or are immunosuppressed. Its E7 protein inactivates Rb, which drives strong, diffuse block staining for **p16**, while p53 stains in a normal, wild-type pattern. These lesions progress to warty or basaloid squamous carcinoma."
+   "Low-risk HPV types 6 and 11 cause **condyloma acuminatum**, soft cauliflower-like warts. Their squamous cells are koilocytes, with a clear halo around a wrinkled, dark nucleus. Condylomas do not become cancer. High-risk HPV, mainly type 16, causes a high-grade squamous intraepithelial lesion (HSIL). This is the usual type of **vulvar intraepithelial neoplasia** (VIN), and it occurs in younger women who often smoke or are immunosuppressed. Its E7 protein inactivates Rb, which causes strong, diffuse block staining for **p16**, while p53 stains in a normal, wild-type pattern. These lesions progress to warty or basaloid squamous carcinoma."
   ],
   [
    "p",
-   "The other road starts in lichen sclerosus. In older women a **TP53 mutation** produces {{rp12_dvin|differentiated VIN}}, in which only the basal cells look atypical while the surface still matures, so it is easy to underdiagnose. It stains aberrantly for p53 and is negative or patchy for p16 because HPV plays no part. This road leads to keratinizing squamous cell carcinoma, the more common type of **vulvar carcinoma**. Whichever road it takes, vulvar carcinoma spreads first to the **superficial inguinal lymph nodes**."
+   "The other road starts in lichen sclerosus. In older women a **TP53 mutation** produces {{rp12_dvin|differentiated VIN}}. Only the basal cells look atypical while the surface still matures, so it is easy to miss. It stains aberrantly for p53 and is negative or patchy for p16, because HPV plays no part. This road leads to keratinizing squamous cell carcinoma, the more common type of **vulvar carcinoma**. Whichever road it takes, vulvar carcinoma spreads first to the superficial inguinal lymph nodes."
   ],
   [
    "f",
    "rp12_vulvar_scc"
   ],
   [
-   "call",
-   "key",
-   "p16 marks HPV; p53 marks the other road",
-   "Diffuse block **p16** staining is a surrogate for active high-risk HPV and points to HSIL and warty or basaloid carcinoma. **Aberrant p53** with absent or patchy p16 points to differentiated VIN, lichen sclerosus and keratinizing carcinoma in an older woman."
-  ],
-  [
    "why",
    "Why does p16 stain so strongly in HPV-driven lesions when p16 normally stops the cell cycle?",
-   "p16 is a brake that works through Rb: it inhibits the cyclin D and CDK4/6 complex that would phosphorylate and inactivate Rb. When Rb is working, it keeps p16 production low through feedback. High-risk HPV E7 binds and disables Rb directly, so E2F is released and the cell keeps dividing. Losing Rb activity removes the feedback, and the cell makes large amounts of p16. Because p16 acts upstream of Rb, the extra brake cannot stop a cycle that E7 has already switched on. Diffuse block staining for p16 therefore marks transcriptionally active high-risk HPV."
+   "p16 is a brake that works through Rb: it blocks the cyclin D and CDK4/6 complex that would inactivate Rb. Working Rb keeps p16 production low through feedback. HPV E7 binds and disables Rb, so E2F is released and the cell keeps dividing. The feedback is lost, so the cell makes large amounts of p16. This extra brake cannot stop a cycle that E7 has already switched on, so diffuse block p16 staining marks active high-risk HPV."
   ],
   [
    "p",
-   "{{rp12_emp|Extramammary Paget disease}} is the vulvar plaque that fools clinicians: a red, scaly, eczema-like patch that itches and does not improve with topical steroids. It is an **intraepithelial adenocarcinoma**: biopsy shows large, pale **Paget cells** scattered singly and in clusters through the epidermis. Their mucin is PAS-positive and they stain for keratin (CK7) and CEA but not for S100 or HMB-45, which excludes melanoma. Unlike Paget disease of the nipple, which almost always sits on a breast carcinoma, vulvar Paget disease usually has no underlying carcinoma. Wide local excision is the treatment, and it often recurs because the cells spread beyond the visible edge."
-  ],
-  [
-   "p",
-   "Any persistent, ulcerated, pigmented or treatment-resistant lesion is biopsied, because the surface cannot separate a dermatosis from a neoplasm. HSIL is excised, or treated with imiquimod or laser when it is multifocal. Invasive vulvar carcinoma needs **wide local excision** with a margin of normal skin, and when invasion exceeds 1 mm the groin nodes are assessed by sentinel node biopsy or inguinofemoral lymphadenectomy. Node status is the strongest prognostic factor, and radiation treats positive nodes or large tumors."
+   "{{rp12_emp|Extramammary Paget disease}} is a red, scaly, eczema-like vulvar patch that itches and does not improve with topical steroids. It is an **intraepithelial adenocarcinoma**: biopsy shows large, pale **Paget cells** scattered singly and in clusters through the epidermis. They are PAS-positive and keratin-positive, and negative for S100, which excludes melanoma. Unlike Paget disease of the nipple, which almost always sits on a breast carcinoma, vulvar Paget disease usually has no underlying carcinoma."
   ],
   [
    "h",
@@ -317,11 +262,11 @@
   ],
   [
    "p",
-   "Primary vaginal squamous carcinoma is rare and HPV-related, and most squamous carcinoma found in the vagina has spread from the cervix. Radiation is its main treatment, because surgery would sacrifice the bladder or rectum. Young women whose mothers took **diethylstilbestrol (DES)**, a synthetic estrogen once given to prevent miscarriage, can develop **vaginal adenosis**, glandular paramesonephric (Müllerian) epithelium that persists in the upper vagina, and rarely **clear cell adenocarcinoma**, with glycogen-filled clear cells and hobnail nuclei. In girls younger than 5, {{rp12_botry|sarcoma botryoides}}, the botryoid form of embryonal rhabdomyosarcoma, pushes a grape-like, bleeding polypoid mass out of the vagina."
+   "Primary vaginal squamous carcinoma is rare, and most squamous carcinoma found in the vagina has spread from the cervix. Young women whose mothers took **diethylstilbestrol (DES)**, a synthetic estrogen once given to prevent miscarriage, can develop **vaginal adenosis**. This is glandular Müllerian epithelium that persists in the upper vagina. Rarely it progresses to **clear cell adenocarcinoma**, whose cells are clear with glycogen and have hobnail nuclei. In girls younger than 5, {{rp12_botry|sarcoma botryoides}}, the botryoid form of embryonal rhabdomyosarcoma, pushes a grape-like, bleeding mass out of the vagina."
   ],
   [
    "p",
-   "Under the microscope, sarcoma botryoides shows **small round blue cells** crowded into a dense **cambium layer** just beneath the intact epithelium. Some tumor cells are rhabdomyoblasts with pink cytoplasm and cross-striations, and the cells stain for the muscle proteins **desmin**, myogenin and MyoD1, which separates the tumor from other small round blue cell tumors. Chemotherapy with limited surgery cures most children."
+   "Under the microscope, sarcoma botryoides shows **small round blue cells** crowded into a dense **cambium layer** just beneath the intact epithelium. Some cells are rhabdomyoblasts with pink cytoplasm and cross-striations. They stain for the muscle proteins **desmin** and myogenin, which separates the tumor from other small round blue cell tumors."
   ],
   [
    "t",
@@ -364,7 +309,7 @@
      "A pH of 4.2 means anaerobes have replaced the lactobacilli, which defines bacterial vaginosis"
     ],
     "a": 0,
-    "why": "Bacterial vaginosis and trichomoniasis both raise the pH above 4.5, the first because lactobacilli are lost and the second because the protozoan disrupts the flora. Candida is different: it tolerates an acidic vagina and can overgrow while lactobacilli still hold the pH at 3.8 to 4.5. A normal pH therefore does not rule out infection; it sends you to a KOH prep to look for budding yeast and pseudohyphae."
+    "why": "Bacterial vaginosis and trichomoniasis both raise the pH above 4.5, the first because lactobacilli are lost and the second because the protozoan disrupts the flora. Candida is different. It tolerates an acidic vagina and can overgrow while lactobacilli still hold the pH at 3.8 to 4.5. A normal pH therefore does not rule out infection. It sends you to a KOH prep to look for budding yeast and pseudohyphae."
    }
   ],
   [

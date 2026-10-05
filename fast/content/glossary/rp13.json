@@ -2,19 +2,19 @@
  {
   "k": "rp13_tz",
   "t": "Transformation zone",
-  "d": "The band of cervix between the original and the active squamocolumnar junction, where columnar epithelium has undergone squamous metaplasia; its immature cells are the target of high-risk HPV.",
+  "d": "The band of cervix between the original and the new squamocolumnar junction, where columnar epithelium has turned squamous by metaplasia. Its immature cells are the target of high-risk HPV.",
   "alt": []
  },
  {
   "k": "rp13_nabothian",
   "t": "Nabothian cyst",
-  "d": "A benign mucus-filled cyst that forms when metaplastic squamous epithelium covers the opening of an endocervical crypt and traps its secretions; it needs no treatment.",
+  "d": "A harmless mucus-filled bump on the cervix. It forms when squamous metaplasia covers the opening of an endocervical gland and traps its mucus. It needs no treatment.",
   "alt": []
  },
  {
   "k": "rp13_koil",
   "t": "Koilocyte",
-  "d": "A squamous cell showing HPV cytopathic effect: an enlarged, wrinkled, hyperchromatic (raisinoid) nucleus with a clear perinuclear halo; typical of LSIL and condyloma.",
+  "d": "A squamous cell changed by HPV, with an enlarged, wrinkled, dark (raisinoid) nucleus and a clear halo around it. It is typical of LSIL and of genital warts.",
   "alt": [
    "koilocytes"
   ]
@@ -22,19 +22,19 @@
  {
   "k": "rp13_p16",
   "t": "Block p16 staining",
-  "d": "Strong, continuous p16 immunostaining across the lower epithelium; it reflects E7 inactivation of Rb and supports an HPV-driven high-grade lesion (HSIL).",
+  "d": "Strong, continuous p16 staining across the epithelium. It happens because E7 inactivates Rb, and it points to an HPV-driven high-grade lesion (HSIL).",
   "alt": []
  },
  {
   "k": "rp13_colpo",
   "t": "Colposcopy",
-  "d": "Magnified examination of the cervix after acetic acid, which turns dysplastic epithelium white so abnormal areas can be biopsied; the diagnostic step after an abnormal screening result.",
+  "d": "Magnified examination of the cervix after acetic acid, which turns abnormal areas white so they can be biopsied. It is the diagnostic step after an abnormal screening result.",
   "alt": []
  },
  {
   "k": "rp13_leep",
   "t": "Loop electrosurgical excision procedure",
-  "d": "Excision of the transformation zone with a thin electrified wire loop to treat HSIL; it removes less tissue than a cold-knife cone but can still cause cervical insufficiency.",
+  "d": "Removal of the transformation zone with a thin wire loop carrying electric current, used to treat high-grade lesions (HSIL). Like any cone excision, it can later cause cervical insufficiency.",
   "alt": [
    "LEEP"
   ]
@@ -42,7 +42,7 @@
  {
   "k": "rp13_bethesda",
   "t": "Bethesda System",
-  "d": "The standard terminology for reporting cervical cytology: it states specimen adequacy and whether an endocervical component is present, then gives NILM, ASC-US, ASC-H, LSIL, HSIL, atypical glandular cells or carcinoma.",
+  "d": "The standard way to report Pap results. It says whether the sample is adequate, then gives a category such as NILM, ASC-US, LSIL, HSIL, atypical glandular cells or carcinoma.",
   "alt": [
    "Bethesda"
   ]
@@ -50,7 +50,7 @@
  {
   "k": "rp13_ectropion",
   "t": "Ectropion",
-  "d": "Eversion of the columnar endocervical lining onto the ectocervix, seen as a red, velvety ring around the os; common with estrogen in adolescence, pregnancy and oral contraceptive use, and a benign cause of mucoid discharge and contact bleeding.",
+  "d": "Outward turning of the columnar endocervical lining onto the ectocervix, seen as a red, velvety ring around the opening. It is benign and common with high estrogen, and it can cause mucoid discharge and contact bleeding.",
   "alt": [
    "cervical ectropion"
   ]
