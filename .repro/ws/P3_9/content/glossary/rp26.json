@@ -3,7 +3,9 @@
   "k": "rp26_dz",
   "t": "Discriminatory zone",
   "d": "The serum hCG level, up to about 3,500 mIU/mL in current guidance, above which a normal intrauterine gestational sac should be visible on transvaginal ultrasound.",
-  "alt": ["discriminatory level"]
+  "alt": [
+   "discriminatory level"
+  ]
  },
  {
   "k": "rp26_pul",
@@ -27,6 +29,24 @@
   "k": "rp26_gtn",
   "t": "Gestational trophoblastic neoplasia",
   "d": "Malignant trophoblastic disease, including invasive mole, choriocarcinoma and placental site trophoblastic tumor, recognized by a plateauing or rising hCG and usually cured with chemotherapy.",
-  "alt": ["GTN"]
+  "alt": [
+   "GTN"
+  ]
+ },
+ {
+  "k": "rp26_dds",
+  "t": "Double decidual sign",
+  "d": "Two concentric echogenic rings around an early gestational sac, from the decidua parietalis and decidua capsularis, which supports an intrauterine pregnancy; the pseudosac of an ectopic pregnancy has only a single ring.",
+  "alt": [
+   "double decidual sac sign"
+  ]
+ },
+ {
+  "k": "rp26_hydropic",
+  "t": "Hydropic villi",
+  "d": "Chorionic villi swollen by fluid into vesicles with central acellular cisterns, the grape-like change of a hydatidiform mole; they are diffuse in a complete mole and mixed with normal villi in a partial mole.",
+  "alt": [
+   "hydropic change"
+  ]
  }
 ]

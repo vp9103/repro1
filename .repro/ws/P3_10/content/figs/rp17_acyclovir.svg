@@ -1,0 +1,45 @@
+<svg class="dia" viewBox="0 0 900 490" role="img" aria-label="Acyclovir activation: valacyclovir is converted to acyclovir, viral thymidine kinase adds the first phosphate, host kinases add two more, and acyclovir triphosphate blocks viral DNA polymerase; side panels explain selectivity, thymidine kinase resistance treated with foscarnet, and crystalline nephropathy">
+<text class="ttl" x="14" y="26" font-size="17">Acyclovir is switched on only inside infected cells</text>
+<rect x="14" y="44" width="460" height="46" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="30" y="73" font-size="15">Valacyclovir, the oral prodrug</text>
+<text x="80" y="114" font-size="14">Esterases in gut and liver remove valine</text>
+<rect x="14" y="128" width="460" height="46" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="30" y="157" font-size="15">Acyclovir, a guanosine analog</text>
+<text class="a1" x="80" y="198" font-size="14">Viral thymidine kinase adds phosphate 1</text>
+<rect x="14" y="212" width="460" height="46" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.4"/>
+<text class="b" x="30" y="241" font-size="15">Acyclovir monophosphate</text>
+<text x="80" y="282" font-size="14">Host kinases add phosphates 2 and 3</text>
+<rect x="14" y="296" width="460" height="46" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.4"/>
+<text class="b" x="30" y="325" font-size="15">Acyclovir triphosphate</text>
+<text x="80" y="366" font-size="14">Viral DNA polymerase inserts it</text>
+<rect x="14" y="380" width="460" height="96" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.4"/>
+<text class="b" x="30" y="408" font-size="15">Viral DNA chain stops growing</text>
+<text x="30" y="434" font-size="14">No 3' hydroxyl: chain termination</text>
+<text x="30" y="458" font-size="14">and inhibition of the polymerase</text>
+<line x1="52" y1="90" x2="52" y2="120" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="47,120 52,128 57,120" fill="var(--ink-2)"/>
+<line x1="52" y1="174" x2="52" y2="204" stroke="var(--a1)" stroke-width="2.4"/>
+<polygon points="47,204 52,212 57,204" fill="var(--a1)"/>
+<line x1="52" y1="258" x2="52" y2="288" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="47,288 52,296 57,288" fill="var(--ink-2)"/>
+<line x1="52" y1="342" x2="52" y2="372" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="47,372 52,380 57,372" fill="var(--ink-2)"/>
+<rect x="494" y="44" width="392" height="130" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="510" y="72" font-size="15">Why healthy cells are spared</text>
+<text x="510" y="100" font-size="14">Uninfected cells lack viral thymidine</text>
+<text x="510" y="122" font-size="14">kinase, so the drug stays inactive.</text>
+<text x="510" y="144" font-size="14">Activation happens only where the</text>
+<text x="510" y="166" font-size="14">virus is replicating.</text>
+<rect x="494" y="188" width="392" height="136" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.4"/>
+<text class="b" x="510" y="216" font-size="15">Resistance</text>
+<text x="510" y="244" font-size="14">Kinase-deficient mutants, common in</text>
+<text x="510" y="266" font-size="14">AIDS, never activate the drug.</text>
+<text x="510" y="288" font-size="14">Foscarnet binds DNA polymerase</text>
+<text x="510" y="310" font-size="14">directly, with no kinase needed.</text>
+<rect x="494" y="338" width="392" height="138" rx="10" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.4"/>
+<text class="b" x="510" y="366" font-size="15">Toxicity</text>
+<text x="510" y="394" font-size="14">High IV doses exceed solubility, so</text>
+<text x="510" y="416" font-size="14">crystals form in renal tubules:</text>
+<text x="510" y="438" font-size="14">crystalline nephropathy. Prevent it</text>
+<text x="510" y="460" font-size="14">with IV saline hydration.</text>
+</svg>

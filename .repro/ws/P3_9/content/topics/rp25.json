@@ -193,7 +193,7 @@
   ],
   [
    "p",
-   "Plasma volume rises by about 40 to 50 percent, but red cell mass rises only 20 to 30 percent. Estrogen, progesterone and placental lactogen raise **erythropoietin**, and the marrow answers with more cells, but the plasma expands faster and dilutes them. Hemoglobin therefore falls to about 11 to 12 g/dL, a physiologic {{rp25_dilanemia|dilutional anemia}} that thins the blood so it flows easily through the placenta. Anemia is a hemoglobin below 11 g/dL in the first and third trimesters and below 10.5 g/dL in the second, and the extra red cells and the fetus need about 1,000 mg of iron, which is why prenatal vitamins contain iron. The white cell count also rises, a physiologic **leukocytosis** of 10,000 to 16,000 per microliter, mostly neutrophils, that can reach 25,000 in labor. Platelets may drift slightly lower."
+   "Plasma volume rises by about 40 to 50 percent, but red cell mass rises only 20 to 30 percent. **Erythropoietin** rises and the marrow answers with more cells, but the plasma expands faster and dilutes them. Hemoglobin therefore falls to about 11 to 12 g/dL, a physiologic {{rp25_dilanemia|dilutional anemia}} that thins the blood so it flows easily through the placenta. Anemia is a hemoglobin below 11 g/dL in the first and third trimesters and below 10.5 g/dL in the second, and the extra red cells and the fetus need about 1,000 mg of iron, which is why prenatal vitamins contain iron. The white cell count also rises, a physiologic **leukocytosis** of 10,000 to 16,000 per microliter, mostly neutrophils, that can reach 25,000 in labor. Platelets may drift slightly lower."
   ],
   [
    "p",
@@ -201,7 +201,7 @@
   ],
   [
    "p",
-   "Breathing changes for three separate reasons. The hormonal reason is **progesterone**, which acts on the medullary respiratory center and raises **ventilatory drive**: the center becomes more sensitive to carbon dioxide, so each breath is deeper. **Tidal volume** rises by about 30 to 40 percent while the **respiratory rate** barely changes, so minute ventilation, tidal volume times rate, rises by about the same fraction. The metabolic reason is a roughly 20 percent rise in **oxygen consumption** from the fetus, placenta, uterus and working maternal heart. Ventilation rises more than metabolism does, so the lungs overshoot: PaCO2 falls to about 30 mm Hg, PaO2 rises to about 100 to 105 mm Hg, and the kidney excretes bicarbonate to about 20 mEq/L. The result is a compensated **respiratory alkalosis** with a pH of about 7.40 to 7.45, and the low maternal PaCO2 helps fetal carbon dioxide cross the placenta."
+   "Breathing changes for three separate reasons. The hormonal reason is progesterone, which acts on the medullary respiratory center and raises **ventilatory drive**: the center becomes more sensitive to carbon dioxide, so each breath is deeper. Tidal volume rises by about 30 to 40 percent while the respiratory rate barely changes, so minute ventilation, tidal volume times rate, rises by about the same fraction. The metabolic reason is a roughly 20 percent rise in **oxygen consumption** from the fetus, placenta, uterus and working maternal heart. Ventilation rises more than metabolism does, so the lungs overshoot: PaCO2 falls to about 30 mm Hg, PaO2 rises to about 100 to 105 mm Hg, and the kidney excretes bicarbonate to about 20 mEq/L. The result is a compensated **respiratory alkalosis** with a pH of about 7.40 to 7.45, and the low maternal PaCO2 helps fetal carbon dioxide cross the placenta."
   ],
   [
    "p",
@@ -273,7 +273,7 @@
   ],
   [
    "p",
-   "Every normal change becomes a vulnerability when something else goes wrong. After 20 weeks the gravid uterus lies on the inferior vena cava and the aorta, and this **aortocaval** compression cuts venous return when she is supine. It also lowers **uterine blood flow**, which rises from about 50 mL/min before pregnancy to 500 to 700 mL/min at term, 10 to 15 percent of cardiac output. The uterine vessels are already maximally dilated and cannot autoregulate, so flow follows maternal perfusion pressure and falls with hypotension, hemorrhage or vasoconstrictor drugs. The larger blood volume is the matching protection: a vaginal delivery loses about 500 mL and a cesarean about 1,000 mL with little change in vital signs, so tachycardia and hypotension appear late."
+   "Every normal change becomes a vulnerability when something else goes wrong. After 20 weeks the gravid uterus lies on the inferior vena cava and the aorta, and this {{rp25_aortocaval|aortocaval compression}} cuts venous return when she is supine. It also lowers **uterine blood flow**, which rises from about 50 mL/min before pregnancy to 500 to 700 mL/min at term, 10 to 15 percent of cardiac output. The uterine vessels are already maximally dilated and cannot autoregulate, so flow follows maternal perfusion pressure and falls with hypotension, hemorrhage or vasoconstrictor drugs. The larger blood volume is the matching protection: a vaginal delivery loses about 500 mL and a cesarean about 1,000 mL with little change in vital signs, so tachycardia and hypotension appear late."
   ],
   [
    "p",
@@ -411,6 +411,14 @@
    ],
    [
     "Suppressed renin and aldosterone",
+    0
+   ],
+   [
+    "Respiratory rate almost unchanged",
+    1
+   ],
+   [
+    "Total lung capacity falls by 20 percent",
     0
    ]
   ]

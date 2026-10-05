@@ -3,13 +3,17 @@
   "k": "rp19btb",
   "t": "Blood-testis barrier",
   "d": "The tight junctions between neighboring Sertoli cells that seal off the adluminal compartment, hiding meiotic and postmeiotic germ cells, whose antigens appear only after puberty, from the immune system.",
-  "alt": ["blood-testis barrier"]
+  "alt": [
+   "blood-testis barrier"
+  ]
  },
  {
   "k": "rp19abp",
   "t": "Androgen-binding protein",
   "d": "A protein that Sertoli cells secrete under FSH stimulation; it binds testosterone and keeps its concentration inside the seminiferous tubule far above the serum level, which spermatogenesis requires.",
-  "alt": ["ABP"]
+  "alt": [
+   "ABP"
+  ]
  },
  {
   "k": "rp19pamp",
@@ -28,5 +32,30 @@
   "t": "Veno-occlusive mechanism",
   "d": "Compression of the small subtunical veins when filled sinusoids press against the inelastic tunica albuginea, which traps blood in the corpora cavernosa and keeps the erect penis rigid.",
   "alt": []
+ },
+ {
+  "k": "rp19myoid",
+  "t": "Peritubular myoid cell",
+  "d": "A smooth muscle-like cell that wraps the outside of a seminiferous tubule and contracts rhythmically to push immotile sperm and fluid toward the rete testis.",
+  "alt": [
+   "myoid cells",
+   "myoid cell"
+  ]
+ },
+ {
+  "k": "rp19dartos",
+  "t": "Dartos fascia",
+  "d": "The smooth muscle layer of the scrotal and penile skin that wrinkles in the cold to lose less heat. It is continuous with Colles fascia of the perineum and Scarpa fascia of the abdomen, the plane along which Fournier gangrene spreads.",
+  "alt": [
+   "dartos"
+  ]
+ },
+ {
+  "k": "rp19residual",
+  "t": "Residual body",
+  "d": "The packet of excess cytoplasm that a spermatid sheds while it becomes a spermatozoon; Sertoli cells engulf and digest it, one of their support jobs inside the tubule.",
+  "alt": [
+   "residual bodies"
+  ]
  }
 ]

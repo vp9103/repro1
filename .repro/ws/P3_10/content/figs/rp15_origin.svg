@@ -1,0 +1,66 @@
+<svg class="dia" viewBox="0 0 900 498" role="img" aria-label="Ovarian tumor classification by cell of origin: surface epithelial tumors, germ cell tumors with their markers, sex cord-stromal tumors with their hormones, and metastases such as the Krukenberg tumor">
+<text class="ttl" x="14" y="26" font-size="17">Three ovarian cell types, three tumor families</text>
+<rect x="14" y="44" width="206" height="70" rx="10" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="2"/>
+<text class="b" x="26" y="72" font-size="16">Surface epithelium</text>
+<text x="26" y="96" font-size="13">Older women; CA-125</text>
+<rect x="14" y="126" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="26" y="152" font-size="15">High-grade serous</text>
+<text x="26" y="174" font-size="13">Tubal origin; TP53, BRCA</text>
+<rect x="14" y="198" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="26" y="224" font-size="15">Mucinous</text>
+<text x="26" y="246" font-size="13">Large, unilateral; KRAS</text>
+<rect x="14" y="270" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="26" y="296" font-size="15">Endometrioid, clear cell</text>
+<text x="26" y="318" font-size="13">Arise in endometriosis</text>
+<rect x="14" y="342" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="26" y="368" font-size="15">Brenner</text>
+<text x="26" y="390" font-size="13">Coffee-bean nuclei</text>
+<rect x="14" y="414" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="26" y="440" font-size="15">Borderline</text>
+<text x="26" y="462" font-size="13">No stromal invasion</text>
+<rect x="236" y="44" width="206" height="70" rx="10" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<text class="b" x="248" y="72" font-size="16">Germ cells</text>
+<text x="248" y="96" font-size="13">Girls and young women</text>
+<rect x="236" y="126" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="248" y="152" font-size="15">Mature teratoma</text>
+<text x="248" y="174" font-size="13">Dermoid: hair, teeth</text>
+<rect x="236" y="198" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="248" y="224" font-size="15">Immature teratoma</text>
+<text x="248" y="246" font-size="13">Immature neuroepithelium</text>
+<rect x="236" y="270" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="248" y="296" font-size="15">Dysgerminoma</text>
+<text x="248" y="318" font-size="13">Fried-egg cells; LDH</text>
+<rect x="236" y="342" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="248" y="368" font-size="15">Yolk sac tumor</text>
+<text x="248" y="390" font-size="13">Schiller-Duval; AFP</text>
+<rect x="236" y="414" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="248" y="440" font-size="15">Choriocarcinoma</text>
+<text x="248" y="462" font-size="13">No villi; hCG</text>
+<rect x="458" y="44" width="206" height="70" rx="10" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="2"/>
+<text class="b" x="470" y="72" font-size="16">Sex cord-stromal</text>
+<text x="470" y="96" font-size="13">Often make hormones</text>
+<rect x="458" y="126" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="470" y="152" font-size="15">Granulosa cell tumor</text>
+<text x="470" y="174" font-size="13">Estrogen; inhibin</text>
+<rect x="458" y="198" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="470" y="224" font-size="15">Sertoli-Leydig</text>
+<text x="470" y="246" font-size="13">Androgens: virilization</text>
+<rect x="458" y="270" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="470" y="296" font-size="15">Thecoma</text>
+<text x="470" y="318" font-size="13">Makes estrogen</text>
+<rect x="458" y="342" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="470" y="368" font-size="15">Fibroma</text>
+<text x="470" y="390" font-size="13">Meigs syndrome</text>
+<rect x="680" y="44" width="206" height="70" rx="10" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="2"/>
+<text class="b" x="692" y="72" font-size="16">Metastases</text>
+<text x="692" y="96" font-size="13">Often bilateral</text>
+<rect x="680" y="126" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="692" y="152" font-size="15">Krukenberg tumor</text>
+<text x="692" y="174" font-size="13">Signet-ring; stomach</text>
+<rect x="680" y="198" width="206" height="62" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="692" y="224" font-size="15">Pseudomyxoma</text>
+<text x="692" y="246" font-size="13">Usually appendix</text>
+<text class="a1" x="692" y="306" font-size="14">Two ovaries full of</text>
+<text class="a1" x="692" y="328" font-size="14">mucin: look for a</text>
+<text class="a1" x="692" y="350" font-size="14">gut primary first</text>
+</svg>

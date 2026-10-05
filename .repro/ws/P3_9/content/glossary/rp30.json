@@ -54,5 +54,21 @@
   "t": "Fetal alcohol syndrome",
   "d": "Prenatal alcohol injury with growth restriction, microcephaly, short palpebral fissures, a smooth philtrum, a thin upper lip and intellectual disability; it is the leading preventable cause of intellectual disability.",
   "alt": []
+ },
+ {
+  "k": "rp30_redate",
+  "t": "Redating",
+  "d": "Replacing the last-menstrual-period due date with the ultrasound date when they differ by more than a threshold that widens with age: more than 5 days before 9 weeks, more than 7 days from 9 to 16 weeks, then more than 10, 14 and 21 days.",
+  "alt": [
+   "redate"
+  ]
+ },
+ {
+  "k": "rp30_banana",
+  "t": "Banana sign",
+  "d": "An ultrasound sign of open spina bifida with a Chiari II malformation: the cerebellum is pulled down and wrapped around the brainstem; scalloped frontal bones, the lemon sign, accompany it.",
+  "alt": [
+   "lemon sign"
+  ]
  }
 ]

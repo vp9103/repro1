@@ -1,0 +1,42 @@
+<svg class="dia" viewBox="0 0 900 476" role="img" aria-label="Two pathways to vulvar squamous cell carcinoma: HPV-associated HSIL to warty or basaloid carcinoma, and lichen sclerosus to differentiated VIN to keratinizing carcinoma, both spreading to superficial inguinal nodes">
+<text class="ttl" x="14" y="26" font-size="17">Two roads to vulvar squamous cell carcinoma</text>
+<rect x="14" y="44" width="872" height="182" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="28" y="70" font-size="16">HPV-associated road (younger women, often smokers)</text>
+<rect x="28" y="86" width="250" height="128" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="40" y="110" font-size="15">High-risk HPV 16</text>
+<text x="40" y="132" font-size="14">infects basal cells</text>
+<text x="40" y="154" font-size="14">E7 inactivates Rb</text>
+<text x="40" y="176" font-size="14">E6 degrades p53</text>
+<rect x="318" y="86" width="262" height="128" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="330" y="110" font-size="15">HSIL (usual VIN)</text>
+<text x="330" y="132" font-size="14">Full-thickness atypia</text>
+<text x="330" y="154" font-size="14">Koilocytes</text>
+<text x="330" y="176" font-size="14">p16 block-positive</text>
+<text x="330" y="198" font-size="14">p53 wild-type</text>
+<rect x="620" y="86" width="252" height="128" rx="6" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.4"/>
+<text class="b" x="632" y="110" font-size="15">Warty or basaloid SCC</text>
+<text x="632" y="132" font-size="14">Often multifocal</text>
+<text x="632" y="154" font-size="14">Less common overall</text>
+<line x1="278" y1="150" x2="310" y2="150" stroke="var(--ink-2)" stroke-width="2"/><polygon points="310,145 318,150 310,155" fill="var(--ink-2)"/>
+<line x1="580" y1="150" x2="612" y2="150" stroke="var(--ink-2)" stroke-width="2"/><polygon points="612,145 620,150 612,155" fill="var(--ink-2)"/>
+<rect x="14" y="238" width="872" height="182" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="28" y="264" font-size="16">HPV-independent road (older women, lichen sclerosus)</text>
+<rect x="28" y="280" width="250" height="128" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.4"/>
+<text class="b" x="40" y="304" font-size="15">Lichen sclerosus</text>
+<text x="40" y="326" font-size="14">Chronic itch, scarring</text>
+<text x="40" y="348" font-size="14">TP53 mutation arises</text>
+<text x="40" y="370" font-size="14">No HPV involved</text>
+<rect x="318" y="280" width="262" height="128" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.4"/>
+<text class="b" x="330" y="304" font-size="15">Differentiated VIN</text>
+<text x="330" y="326" font-size="14">Atypia only in basal layer</text>
+<text x="330" y="348" font-size="14">Aberrant p53 staining</text>
+<text x="330" y="370" font-size="14">p16 negative or patchy</text>
+<rect x="620" y="280" width="252" height="128" rx="6" fill="var(--surface)" stroke="var(--a1)" stroke-width="1.4"/>
+<text class="b" x="632" y="304" font-size="15">Keratinizing SCC</text>
+<text x="632" y="326" font-size="14">Usually unifocal</text>
+<text x="632" y="348" font-size="14">The more common road</text>
+<line x1="278" y1="344" x2="310" y2="344" stroke="var(--ink-2)" stroke-width="2"/><polygon points="310,339 318,344 310,349" fill="var(--ink-2)"/>
+<line x1="580" y1="344" x2="612" y2="344" stroke="var(--ink-2)" stroke-width="2"/><polygon points="612,339 620,344 612,349" fill="var(--ink-2)"/>
+<rect x="14" y="428" width="872" height="38" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="453" font-size="15">Both roads spread first to the superficial inguinal lymph nodes.</text>
+</svg>
