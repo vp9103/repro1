@@ -1,0 +1,74 @@
+{
+ "n": "Fibroadenoma with compressed ducts and bland stroma",
+ "file": "rp23_fibroadenoma.jpg",
+ "dx": "Fibroadenoma of the breast",
+ "wrong": [
+  "Phyllodes tumor",
+  "Intraductal papilloma",
+  "Invasive ductal carcinoma",
+  "Sclerosing adenosis"
+ ],
+ "ww": {
+  "Phyllodes tumor": "<b>Phyllodes tumor</b> has stroma that is more cellular, with mitoses and atypia, and its overgrowth pushes broad leaf-like fronds into clefts. This field has bland, evenly cellular stroma around ducts, and no fronds.",
+  "Intraductal papilloma": "<b>Intraductal papilloma</b> is a branching papillary growth with fibrovascular cores inside one dilated large duct. Here many separate small ducts lie scattered in a shared pale stroma, and no arborizing fronds fill a duct lumen.",
+  "Invasive ductal carcinoma": "<b>Invasive ductal carcinoma</b> shows irregular nests, cords or angulated glands of atypical cells invading fat or dense stroma. These ducts are smooth, open or slit-like, and lined by orderly cells with small regular nuclei, so this is not cancer.",
+  "Sclerosing adenosis": "<b>Sclerosing adenosis</b> is a lobule-centered crowd of small acini and myoepithelial cells distorted by fibrosis. Here the stroma itself has expanded as a circumscribed mass and spreads a few ducts apart, rather than packing acini together."
+ },
+ "look": "Notice that pale pink stroma fills most of the field and pushes the ducts apart. At the left the ducts stay open and round or oval, with stroma cuffed around them, the pericanalicular pattern. At the right the same stroma squeezes ducts into thin purple slits, the intracanalicular pattern. The stroma is bland, and a thin edge of fat at the top left shows a circumscribed border. Ducts plus bland stroma make a fibroadenoma.",
+ "cred": "Mikael Häggström, M.D. · CC0 · Wikimedia Commons (resized)",
+ "by": "Mikael Häggström, M.D.",
+ "lic": "CC0",
+ "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Histopathology_of_fibroadenoma_with_variable_gland_compression.jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Open ducts at the left: several round to oval ducts lined by a regular purple epithelium stay open, and loose pink stroma cuffs each one, in the left half of the field. This is the pericanalicular pattern.",
+  "Slit-like ducts at the right: thin, branching purple lines run through the stroma across the right half and upper right. They are ducts squeezed flat by the expanding stroma, the intracanalicular pattern.",
+  "Bland stroma: the pale pink stroma that fills most of the field is loose and evenly cellular, with small spindle nuclei, no crowding and no leaf-like fronds. This separates a fibroadenoma from a phyllodes tumor.",
+  "Circumscribed edge: at the top left, a band of pink fibrous tissue, a few fat cells and a strip of green tissue ink mark the sharp, pushing border of the mass, which is why a fibroadenoma feels like a mobile, well-defined lump."
+ ],
+ "ann": [
+  {
+   "k": "e",
+   "x": 31.5,
+   "y": 46.5,
+   "rx": 10.5,
+   "ry": 10.0,
+   "rot": 30,
+   "px": 21.0,
+   "py": 58.0,
+   "l": "Open round-to-oval ducts lined by orderly, regular epithelium and surrounded by concentric stroma. This preserved, patent architecture demonstrates the classic pericanalicular pattern of fibroadenoma."
+  },
+  {
+   "k": "arrow",
+   "x": 68.0,
+   "y": 28.0,
+   "tx": 76.0,
+   "ty": 19.0,
+   "px": 76.0,
+   "py": 19.0,
+   "l": "Ductal lumens compressed into elongated, branching purple slits by overgrowing stroma. This cleft-like architecture represents the intracanalicular pattern; both patterns often coexist in the same lesion."
+  },
+  {
+   "k": "c",
+   "x": 82.0,
+   "y": 48.0,
+   "r": 8.0,
+   "px": 91.0,
+   "py": 48.0,
+   "l": "Abundant, pale pink stroma made of bland, evenly distributed spindle cells, without hypercellularity, nuclear atypia or leaf-like fronds. This bland stroma points to a fibroadenoma rather than a phyllodes tumor."
+  },
+  {
+   "k": "e",
+   "x": 13.0,
+   "y": 19.0,
+   "rx": 8.0,
+   "ry": 12.0,
+   "rot": -45,
+   "px": 23.5,
+   "py": 11.5,
+   "l": "Green surgical margin ink, mature adipocytes, and a condensed fibrous border demarcate the sharp, non-infiltrative pushing edge responsible for the classic mobile, well-circumscribed lump on exam."
+  }
+ ]
+}

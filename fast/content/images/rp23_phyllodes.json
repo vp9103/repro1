@@ -1,0 +1,75 @@
+{
+ "n": "Phyllodes tumor with leaf-like stromal fronds",
+ "file": "rp23_phyllodes.jpg",
+ "dx": "Phyllodes tumor of the breast",
+ "wrong": [
+  "Fibroadenoma",
+  "Intraductal papilloma",
+  "Fibrocystic change with cysts",
+  "Invasive ductal carcinoma"
+ ],
+ "ww": {
+  "Fibroadenoma": "<b>Fibroadenoma</b> has bland, evenly cellular stroma that compresses ducts into slits or leaves them round, without overgrowth. Here the stroma forms large, cellular, leaf-shaped fronds that bulge into long clefts.",
+  "Intraductal papilloma": "<b>Intraductal papilloma</b> has thin, branching fibrovascular cores growing inside one dilated duct. Here the fronds are broad lobes of cellular spindle cell stroma, and the epithelium lines the cleft around them instead of covering thin cores.",
+  "Fibrocystic change with cysts": "<b>Fibrocystic change</b> has cysts, fibrosis and apocrine metaplasia within normal lobules and ordinary stroma. This field shows no cysts, but a stromal overgrowth in which cellular fronds fill and expand cleft-like spaces.",
+  "Invasive ductal carcinoma": "<b>Invasive ductal carcinoma</b> is a growth of atypical epithelial cells that forms nests, cords or glands invading stroma. Here the epithelium is only a thin, orderly lining on the surface, and the growth is the stromal component."
+ },
+ "look": "Notice the broad, leaf-shaped fronds of pale pink stroma that bulge into open clefts. A thin, dark purple layer of epithelium covers each frond and lines the narrow slits between them. The stroma, not the epithelium, is the growing part, and it is more cellular than the stroma of a fibroadenoma. Cellular stromal fronds pushing into long epithelium-lined clefts are the signature of a phyllodes tumor.",
+ "cred": "Nephron · CC BY-SA 3.0 · Wikimedia Commons (resized)",
+ "by": "Nephron",
+ "lic": "CC BY-SA 3.0",
+ "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Phyllodes_tumour.jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Leaf-like fronds: broad, rounded lobes of stroma, such as the large one at the upper left and the one at the upper center, bulge into open spaces, so each looks like a leaf. This frond architecture names the tumor.",
+  "Epithelial lining: a thin dark purple layer of epithelium coats the outside of each frond and dips into the narrow clefts, for example along the left edge and at the upper right. The epithelium is the passive covering, not the growing part.",
+  "Cellular stroma: the stroma inside the fronds is made of spindle cells in loose swirls with a few small vessels and is more cellular than normal breast stroma. This stromal overgrowth decides whether the tumor is graded benign, borderline or malignant.",
+  "Long clefts: narrow slit-like spaces lined by epithelium, at the left center, upper center and right, are ducts stretched into long clefts by the expanding stroma. The long cleft is the key feature that separates phyllodes tumor from fibroadenoma."
+ ],
+ "ann": [
+  {
+   "k": "e",
+   "x": 52.0,
+   "y": 22.0,
+   "rx": 11.0,
+   "ry": 11.0,
+   "px": 52.0,
+   "py": 11.0,
+   "l": "Leaf-like fronds: broad, rounded lobes of stroma bulge into cystic spaces, producing the classic 'leaf-like' architecture that names the tumor. These expansile projections compress adjacent ductal structures."
+  },
+  {
+   "k": "arrow",
+   "x": 72.0,
+   "y": 81.5,
+   "tx": 79.0,
+   "ty": 77.0,
+   "px": 79.0,
+   "py": 77.0,
+   "l": "Epithelial lining: a thin, dark purple layer of benign epithelium lines the cleft and drapes over the frond. This double-layered epithelium is non-neoplastic, serving as a passive covering over the proliferating stroma."
+  },
+  {
+   "k": "e",
+   "x": 40.0,
+   "y": 67.0,
+   "rx": 11.0,
+   "ry": 8.0,
+   "rot": -5,
+   "px": 40.0,
+   "py": 75.0,
+   "l": "Cellular stroma: the frond interior consists of proliferating spindle cells with mild to moderate cellularity. Stromal cellularity, cytologic atypia, and mitotic rate distinguish benign phyllodes from borderline and malignant forms."
+  },
+  {
+   "k": "e",
+   "x": 18.5,
+   "y": 49.5,
+   "rx": 7.5,
+   "ry": 2.5,
+   "rot": 2,
+   "px": 18.5,
+   "py": 47.0,
+   "l": "Long clefts: compressed, elongated ductal spaces lined by epithelium snake between adjacent stromal fronds. These elongated cleft-like spaces are a hallmark finding separating phyllodes tumor from fibroadenoma."
+  }
+ ]
+}
