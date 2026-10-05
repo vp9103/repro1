@@ -1,0 +1,52 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.6-flash",
+ "key": "rp18_rubella",
+ "image_sha": "4b7ba5128aa65c73",
+ "at": "2026-10-05 23:24:13",
+ "ann": [
+  {
+   "k": "e",
+   "x": 89.0,
+   "y": 61.0,
+   "rx": 3.5,
+   "ry": 5.0,
+   "px": 93.0,
+   "py": 56.0,
+   "l": "The right pupil displays a dense, central pearly white opacity within the lens capsule. Notice the clear peripheral lens margin and bright light reflex at the inferior edge, confirming a localized central lens cataract."
+  },
+  {
+   "k": "e",
+   "x": 11.0,
+   "y": 70.0,
+   "rx": 3.5,
+   "ry": 5.0,
+   "px": 15.0,
+   "py": 65.0,
+   "l": "The left pupil demonstrates a similar pale, bluish-white central opacity inside the lens. Bilateral leukocoria in an infant strongly suggests a congenital etiology, most classically maternal rubella infection during the first trimester."
+  },
+  {
+   "k": "arrow",
+   "x": 21.0,
+   "y": 69.0,
+   "tx": 28.0,
+   "ty": 62.0,
+   "px": 28.0,
+   "py": 62.0,
+   "l": "The overlying cornea is completely transparent and clear, with normal underlying iris detail visible surrounding the pupil. This confirms that the opacity is localized deep within the crystalline lens rather than on the corneal surface."
+  }
+ ],
+ "kinds": [
+  "e",
+  "e",
+  "arrow"
+ ],
+ "areaSum": 1.1,
+ "areaMax": 0.5,
+ "findings": [
+  "Cataract at the right of the photograph: the pupil shows a dense pearly white opacity in the center of the lens, with a dark rim of clear lens around it and a small bright light reflex at its lower edge.",
+  "Cataract at the left of the photograph: this pupil holds a similar pale bluish-white central opacity, so the lens change is present in both eyes, which supports a congenital cause such as rubella.",
+  "Clear cornea: the transparent cornea and normal-looking iris around each opacity show that the cloudiness lies in the lens behind the pupil, not on the corneal surface."
+ ],
+ "adjustments": []
+}

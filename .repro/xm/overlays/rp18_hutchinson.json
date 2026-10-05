@@ -1,0 +1,52 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.6-flash",
+ "key": "rp18_hutchinson",
+ "image_sha": "355e6d67c33e28cc",
+ "at": "2026-10-05 23:14:29",
+ "ann": [
+  {
+   "k": "arrow",
+   "x": 43.0,
+   "y": 33.0,
+   "tx": 25.0,
+   "ty": 33.0,
+   "px": 25.0,
+   "py": 33.0,
+   "l": "The two central incisors feature a distinct central notch or crescentic dip along their biting edge instead of a normal flat contour. Intrauterine infection with Treponema pallidum destroys the central enamel organ of the tooth germ during development, creating these hallmark notched Hutchinson teeth."
+  },
+  {
+   "k": "arrow",
+   "x": 48.2,
+   "y": 30.5,
+   "tx": 48.2,
+   "ty": 14.0,
+   "px": 48.2,
+   "py": 14.0,
+   "l": "A prominent central gap (diastema) separates the narrow, peg-shaped central incisors. Because the teeth taper towards their biting edges rather than widening normally, broad spacing remains between them instead of normal interproximal contact."
+  },
+  {
+   "k": "arrow",
+   "x": 62.0,
+   "y": 37.0,
+   "tx": 82.0,
+   "ty": 37.0,
+   "px": 82.0,
+   "py": 37.0,
+   "l": "These changes affect the permanent dentition, making Hutchinson teeth a late manifestation of congenital syphilis that becomes evident only upon tooth eruption in childhood. They represent one component of Hutchinson's classic triad, alongside Eighth nerve deafness and interstitial keratitis."
+  }
+ ],
+ "kinds": [
+  "arrow",
+  "arrow",
+  "arrow"
+ ],
+ "areaSum": 0.0,
+ "areaMax": 0.0,
+ "findings": [
+  "Notched central incisors: the two central incisors at the top center are narrow, and the biting edge of each has a shallow notch or scalloped dip instead of a straight edge. This notching is the hallmark of Hutchinson teeth.",
+  "Gap between incisors: a small gap separates the two central incisors at the midline, so the teeth look narrow and widely spaced, unlike the broad, touching incisors of normal permanent teeth.",
+  "Permanent teeth: these are permanent incisors, so Hutchinson teeth are a late finding of untreated congenital syphilis, seen once the permanent incisors erupt in childhood. They form part of the Hutchinson triad with interstitial keratitis and deafness."
+ ],
+ "adjustments": []
+}
