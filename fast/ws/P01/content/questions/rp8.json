@@ -1,0 +1,800 @@
+[
+ {
+  "id": "rp8q01",
+  "d": 1,
+  "tags": [
+   "meiosis-karyotype"
+  ],
+  "bp": [
+   "BP-rp8-01",
+   "BP-rp8-02"
+  ],
+  "obj": [
+   "PHYS-MENSTRUAL.2"
+  ],
+  "s": "A 24-year-old woman asks her physician when the egg cells in her ovaries formed. The physician explains that every one of her oocytes began its first meiotic division before she was born and has stayed paused ever since.",
+  "l": "At which stage are these oocytes paused?",
+  "o": [
+   "Prophase I",
+   "Metaphase I",
+   "Anaphase I",
+   "Prophase II",
+   "Metaphase II"
+  ],
+  "a": 0,
+  "e": "Primary oocytes enter meiosis I in the fetal ovary and arrest in **prophase I**, where they stay until the LH surge of the cycle in which their follicle becomes dominant. The surge completes meiosis I, and the secondary oocyte then arrests in metaphase II until fertilization. Metaphase II is therefore the second, shorter arrest, not the one that began before birth. Metaphase I and anaphase I are passed through within hours after the surge, and prophase II is never a resting stage.",
+  "w": {
+   "Metaphase I": "Metaphase I is reached only after the LH surge restarts meiosis, and the oocyte moves through it within hours before ovulation instead of resting there for years.",
+   "Anaphase I": "Anaphase I is when homologous chromosomes separate after the surge; errors here cause nondisjunction, but it is a brief transition, never a years-long arrest.",
+   "Prophase II": "Prophase II is a brief transition after the first polar body forms; the secondary oocyte moves on to metaphase II and stops there instead.",
+   "Metaphase II": "Metaphase II is the second arrest, entered after the LH surge; the ovulated secondary oocyte waits there until a sperm enters, not since fetal life."
+  },
+  "et": [
+   [
+    "Option",
+    "When it is reached",
+    "How long it lasts",
+    "What ends it"
+   ],
+   [
+    [
+     "Prophase I",
+     "Fetal life",
+     "Years to decades",
+     "The LH surge"
+    ],
+    [
+     "Metaphase I",
+     "Hours after the LH surge",
+     "Hours",
+     "Normal progression"
+    ],
+    [
+     "Anaphase I",
+     "Just before ovulation",
+     "Minutes",
+     "Normal progression"
+    ],
+    [
+     "Prophase II",
+     "After the first polar body forms",
+     "Brief",
+     "Normal progression"
+    ],
+    [
+     "Metaphase II",
+     "Before ovulation",
+     "Until fertilization",
+     "Sperm entry"
+    ]
+   ]
+  ],
+  "bl": "Primary oocytes wait in prophase I from fetal life until the LH surge; metaphase II is the second, shorter arrest.",
+  "ef": "rp8_oocyte",
+  "pt": {
+   "hl": [
+    "arrested in prophase I"
+   ],
+   "say": "The primary oocyte band reads arrested in prophase I, from fetal life until its follicle's LH surge."
+  }
+ },
+ {
+  "id": "rp8q02",
+  "d": 1,
+  "tags": [
+   "steroidogenesis-enzymes"
+  ],
+  "bp": [
+   "BP-rp8-03"
+  ],
+  "obj": [
+   "PHYS-MENSTRUAL.1"
+  ],
+  "s": "A researcher cultures two cell populations from a human ovarian follicle. The first has LH receptors, sits outside the basement membrane next to capillaries and secretes androstenedione. The second produces estradiol only when androstenedione and FSH are added to its medium.",
+  "l": "Which enzyme does FSH induce in the second population?",
+  "o": [
+   "Aromatase",
+   "17α-hydroxylase",
+   "Cholesterol desmolase",
+   "5α-reductase",
+   "21-hydroxylase"
+  ],
+  "a": 0,
+  "e": "The second population is granulosa cells. FSH induces **aromatase** in them, which converts androstenedione to estrone and testosterone to estradiol, and 17β-hydroxysteroid dehydrogenase turns estrone into estradiol. The first population is theca interna, where LH drives cholesterol desmolase and 17α-hydroxylase to make the androgen. 5α-reductase converts testosterone to DHT in male tissues, and 21-hydroxylase belongs to the adrenal pathway to cortisol and aldosterone.",
+  "w": {
+   "17α-hydroxylase": "17α-hydroxylase works in theca cells under LH to build the androgen precursor; granulosa cells lack it, which is exactly why they need theca androstenedione.",
+   "Cholesterol desmolase": "Side-chain cleavage by desmolase is the first, LH-driven step in theca cells; it turns cholesterol into pregnenolone and never produces an estrogen.",
+   "5α-reductase": "5α-reductase converts testosterone into the more potent DHT in genital skin and prostate; it makes a stronger androgen, not an estrogen.",
+   "21-hydroxylase": "21-hydroxylase acts in the adrenal cortex on the path to cortisol and aldosterone; its deficiency causes congenital adrenal hyperplasia, not an ovarian estrogen defect."
+  },
+  "et": [
+   [
+    "Option",
+    "Main site",
+    "Reaction",
+    "Driven by"
+   ],
+   [
+    [
+     "Aromatase",
+     "Granulosa cells, adipose tissue",
+     "Androgens to estrogens",
+     "FSH"
+    ],
+    [
+     "17α-hydroxylase",
+     "Theca cells, adrenal cortex",
+     "Pregnenolone toward androgens",
+     "LH in the theca"
+    ],
+    [
+     "Cholesterol desmolase",
+     "Theca, adrenal and Leydig cells",
+     "Cholesterol to pregnenolone",
+     "LH or ACTH"
+    ],
+    [
+     "5α-reductase",
+     "Prostate, genital skin",
+     "Testosterone to DHT",
+     "Not gonadotropin driven"
+    ],
+    [
+     "21-hydroxylase",
+     "Adrenal cortex",
+     "Progesterone toward corticosteroids",
+     "ACTH"
+    ]
+   ]
+  ],
+  "bl": "FSH induces aromatase in granulosa cells, which converts theca androstenedione into estrone and estradiol.",
+  "ef": "rp8_twocell",
+  "pt": {
+   "hl": [
+    "FSH receptor switches on aromatase"
+   ],
+   "say": "In the granulosa cell box, the FSH receptor switches on aromatase, which converts androstenedione to estrone and estradiol."
+  }
+ },
+ {
+  "id": "rp8q03",
+  "d": 2,
+  "tags": [
+   "hormone-synthesis",
+   "unopposed-estrogen"
+  ],
+  "bp": [
+   "BP-rp8-04"
+  ],
+  "obj": [
+   "BICEP-WALSH.20"
+  ],
+  "s": "A 62-year-old woman comes to the physician because of vaginal bleeding for 2 weeks. Her last menstrual period was 11 years ago, and she has never taken hormone therapy. Her BMI is 41 kg/m2. Serum FSH is high, and transvaginal ultrasound shows small, inactive ovaries and a thickened endometrium. Endometrial biopsy shows hyperplasia without atypia.",
+  "l": "Which source of estrogen most likely caused her endometrial finding?",
+  "o": [
+   "Estrone from aromatase in adipose tissue",
+   "Estradiol from residual ovarian follicles",
+   "Estriol from the placenta",
+   "Estradiol from the adrenal cortex",
+   "Estrone from granulosa cells"
+  ],
+  "a": 0,
+  "e": "After menopause the follicles are gone, so the ovary makes almost no estradiol, as her high FSH confirms. Aromatase in **adipose tissue** still converts adrenal and ovarian stromal androstenedione to **estrone**, and a large fat mass makes a lot of it. No progesterone opposes that estrogen because she never ovulates, so the endometrium proliferates into hyperplasia. Residual follicles cannot explain it after 11 years without menses and with a high FSH, and estriol is a placental hormone of pregnancy.",
+  "w": {
+   "Estradiol from residual ovarian follicles": "Eleven years after menopause the follicle pool is exhausted, which is why FSH is high; without granulosa cells there is no meaningful ovarian estradiol.",
+   "Estriol from the placenta": "Estriol is the weak estrogen of pregnancy, made by the placenta from fetal adrenal precursors; a 62-year-old woman has no placenta.",
+   "Estradiol from the adrenal cortex": "The adrenal cortex secretes androgen precursors such as DHEA and androstenedione, not meaningful estradiol; those precursors must be aromatized elsewhere, mainly in fat.",
+   "Estrone from granulosa cells": "Granulosa cells aromatize androgens only inside living follicles; after menopause they are gone, so the aromatase that remains is in adipose tissue."
+  },
+  "et": [
+   [
+    "Option",
+    "Source tissue",
+    "Needs living follicles",
+    "Main setting"
+   ],
+   [
+    [
+     "Estrone from aromatase in adipose tissue",
+     "Fat",
+     "No",
+     "Menopause and obesity"
+    ],
+    [
+     "Estradiol from residual ovarian follicles",
+     "Granulosa cells",
+     "Yes",
+     "Reproductive years"
+    ],
+    [
+     "Estriol from the placenta",
+     "Placenta",
+     "No",
+     "Pregnancy"
+    ],
+    [
+     "Estradiol from the adrenal cortex",
+     "Adrenal cortex makes only precursors",
+     "No",
+     "Not a real source"
+    ],
+    [
+     "Estrone from granulosa cells",
+     "Granulosa cells",
+     "Yes",
+     "Follicular phase"
+    ]
+   ]
+  ],
+  "bl": "After menopause the main estrogen is estrone from adipose aromatase, which can drive unopposed endometrial hyperplasia in obesity.",
+  "ef": "rp8_twocell",
+  "pt": {
+   "hl": [
+    "Adipose aromatase"
+   ],
+   "say": "The outside-the-ovary box shows adipose aromatase converting androstenedione to estrone, the estrogen left after menopause."
+  }
+ },
+ {
+  "id": "rp8q04",
+  "d": 2,
+  "tags": [
+   "feedback-logic",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp8-05",
+   "BP-rp8-14"
+  ],
+  "obj": [
+   "PHYS-MENSTRUAL.3",
+   "PHYS-MENSTRUAL.4"
+  ],
+  "s": "A 27-year-old woman is tracking her cycle to plan a pregnancy. Her cycles are regular at 28 days. A urine LH test turns strongly positive on the morning of day 13. Serum drawn the day before showed estradiol at its highest level of the cycle, while progesterone was still at follicular-phase levels.",
+  "l": "Which mechanism best explains the timing of her LH rise?",
+  "o": [
+   "High estradiol switching to positive feedback",
+   "Falling inhibin B releasing FSH and LH",
+   "Rising progesterone speeding GnRH pulses",
+   "Corpus luteum regression lifting feedback",
+   "Increased hypothalamic dopamine"
+  ],
+  "a": 0,
+  "e": "Estradiol from the dominant follicle normally inhibits LH, but when it stays high for about two days the pituitary switches to **positive feedback** and releases a surge of LH. That is why the estradiol peak comes about a day before the LH peak, and ovulation follows about 36 hours after the surge begins. Progesterone is still low before ovulation and, when it rises, slows GnRH pulses rather than speeding them. Corpus luteum regression raises FSH at the end of the cycle, not LH at mid-cycle.",
+  "w": {
+   "Falling inhibin B releasing FSH and LH": "Inhibin B from granulosa cells mainly restrains FSH, and it rises rather than falls as the dominant follicle grows; it cannot produce a mid-cycle LH surge.",
+   "Rising progesterone speeding GnRH pulses": "Progesterone rises only after ovulation, and when it does it slows GnRH pulse frequency; her follicular-level progesterone the day before rules it out.",
+   "Corpus luteum regression lifting feedback": "Luteolysis happens at the end of the luteal phase and lets FSH rise to recruit the next cohort; on day 13 there is no corpus luteum yet.",
+   "Increased hypothalamic dopamine": "Hypothalamic dopamine tonically inhibits prolactin release and has no role in generating the LH surge; it is unrelated to estradiol feedback."
+  },
+  "et": [
+   [
+    "Option",
+    "Hormone involved",
+    "When it acts",
+    "Effect on LH"
+   ],
+   [
+    [
+     "High estradiol switching to positive feedback",
+     "Estradiol",
+     "Late follicular phase",
+     "Surge"
+    ],
+    [
+     "Falling inhibin B releasing FSH and LH",
+     "Inhibin B",
+     "Mainly follicular, rising",
+     "Little effect"
+    ],
+    [
+     "Rising progesterone speeding GnRH pulses",
+     "Progesterone",
+     "Luteal phase",
+     "Suppressed"
+    ],
+    [
+     "Corpus luteum regression lifting feedback",
+     "Estradiol and progesterone falling",
+     "End of the luteal phase",
+     "Small rise; FSH rises more"
+    ],
+    [
+     "Increased hypothalamic dopamine",
+     "Dopamine",
+     "Not tied to the cycle",
+     "No direct effect"
+    ]
+   ]
+  ],
+  "bl": "Two days of high estradiol flip the pituitary to positive feedback, so the LH surge follows the estradiol peak.",
+  "ef": "rp8_curves",
+  "pt": {
+   "hl": [
+    "Estradiol peaks before the surge",
+    "LH surge"
+   ],
+   "say": "On the graph, estradiol peaks before the surge; that sustained high estradiol switches the pituitary to positive feedback and releases the LH surge."
+  }
+ },
+ {
+  "id": "rp8q05",
+  "d": 3,
+  "tags": [
+   "hormone-timeline",
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp8-14",
+   "BP-rp8-05",
+   "BP-rp8-06"
+  ],
+  "obj": [
+   "PHYS-MENSTRUAL.4"
+  ],
+  "s": "A 31-year-old woman is evaluated for 14 months of infertility. Her cycles are regular at 35 days. A serum progesterone drawn on day 21 is 1.2 ng/mL (luteal reference, above 3 ng/mL). Home urine LH kits turn positive on about day 20 of each cycle, and her basal body temperature rises on day 21 or 22 and stays up until her period starts.",
+  "l": "Which is the best interpretation of her progesterone result?",
+  "o": [
+   "It was drawn too early to judge ovulation",
+   "It shows a luteal phase defect",
+   "It shows anovulation from polycystic ovary syndrome",
+   "It shows a corpus luteum that regressed early",
+   "It shows hyperprolactinemia suppressing the corpus luteum"
+  ],
+  "a": 0,
+  "e": "In a 35-day cycle ovulation occurs about 14 days before the next period, near day 21, and her LH kits and temperature rise agree. The day-21 sample was therefore drawn at ovulation, before the corpus luteum had made much progesterone, so it was **drawn too early** to judge. Her mid-luteal peak falls near day 28, seven days before menses. Anovulation from polycystic ovary syndrome would not give a positive LH kit and a sustained temperature rise every cycle, and early luteal regression would shorten the interval after the temperature rise.",
+  "w": {
+   "It shows a luteal phase defect": "A luteal phase defect means a short or weak luteal phase, but her temperature stays raised about two weeks, and this sample preceded her luteal phase anyway.",
+   "It shows anovulation from polycystic ovary syndrome": "PCOS causes irregular, often long cycles without LH surges; her regular cycles, monthly positive LH kits and biphasic temperature chart show that she ovulates.",
+   "It shows a corpus luteum that regressed early": "Early luteolysis would bring menses sooner after the temperature rise; she stays warm for about 14 days, the normal corpus luteum lifespan.",
+   "It shows hyperprolactinemia suppressing the corpus luteum": "Hyperprolactinemia disrupts GnRH pulses and ovulation, usually with galactorrhea or irregular cycles; nothing suggests it, and the sampling day explains the low value."
+  },
+  "et": [
+   [
+    "Option",
+    "Where day 21 falls in her cycle",
+    "Luteal length implied",
+    "Useful next step"
+   ],
+   [
+    [
+     "It was drawn too early to judge ovulation",
+     "At ovulation",
+     "Normal, about 14 days",
+     "Repeat 7 days before menses"
+    ],
+    [
+     "It shows a luteal phase defect",
+     "Mid-luteal, if ovulation were early",
+     "Short",
+     "Luteal length charting"
+    ],
+    [
+     "It shows anovulation from polycystic ovary syndrome",
+     "No luteal phase at all",
+     "None",
+     "Androgens and ultrasound"
+    ],
+    [
+     "It shows a corpus luteum that regressed early",
+     "Late luteal",
+     "Short",
+     "Temperature charting"
+    ],
+    [
+     "It shows hyperprolactinemia suppressing the corpus luteum",
+     "Any day",
+     "Short or absent",
+     "Serum prolactin"
+    ]
+   ]
+  ],
+  "bl": "Mid-luteal progesterone must be drawn 7 days before the next period; day 21 is too early in a 35-day cycle.",
+  "ef": "rp8_curves",
+  "pt": {
+   "hl": [
+    "Progesterone peaks mid-luteal"
+   ],
+   "say": "Progesterone peaks mid-luteal, seven days before menses, so in her 35-day cycle day 21 is drawn too early."
+  }
+ },
+ {
+  "id": "rp8q06",
+  "d": 2,
+  "tags": [
+   "histology-to-diagnosis",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp8-07",
+   "BP-rp8-06"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.2",
+   "PHYS-MENSTRUAL.5"
+  ],
+  "s": "A 30-year-old woman with regular 28-day cycles is being evaluated for infertility and has an endometrial biopsy. The glands contain glycogen vacuoles lined up beneath the nuclei, pushing the nuclei toward the lumen. The glands are just beginning to coil, the stroma shows no edema, and mitoses are rare.",
+  "l": "At what point in her cycle was the biopsy most likely taken?",
+  "o": [
+   "About 2 days after ovulation",
+   "About 5 days before ovulation",
+   "Day 2 of menses",
+   "About 7 days after ovulation",
+   "Day 27, just before menses"
+  ],
+  "a": 0,
+  "e": "**Subnuclear vacuoles** are the first sign that progesterone has reached the endometrium, and they appear about 2 days after ovulation, near day 16 of a 28-day cycle. Over the next days the vacuoles move above the nuclei and secretions fill the lumens. Stromal edema peaks about 7 days after ovulation, near implantation, and predecidual change follows late in the cycle. Five days before ovulation the glands would be straight and proliferative with mitoses, and day 2 would show breakdown and blood.",
+  "w": {
+   "About 5 days before ovulation": "Before ovulation estradiol acts alone, so glands are straight and tubular with frequent mitoses and no vacuoles; vacuoles require progesterone from a corpus luteum.",
+   "Day 2 of menses": "Menstrual endometrium shows fragmented, collapsing glands, stromal breakdown and blood from constricted spiral arteries, not tidy vacuolated glands.",
+   "About 7 days after ovulation": "By the mid-luteal peak the vacuoles have moved above the nuclei, lumens are full of secretion and the stroma is edematous, ready for implantation.",
+   "Day 27, just before menses": "Late secretory endometrium has exhausted saw-tooth glands, predecidual stromal cells around spiral arteries and early breakdown as progesterone falls."
+  },
+  "et": [
+   [
+    "Option",
+    "Dominant hormone",
+    "Gland appearance",
+    "Stroma"
+   ],
+   [
+    [
+     "About 2 days after ovulation",
+     "Progesterone, just rising",
+     "Subnuclear vacuoles, early coiling",
+     "Not yet edematous"
+    ],
+    [
+     "About 5 days before ovulation",
+     "Estradiol",
+     "Straight, tubular, mitoses",
+     "Dense and growing"
+    ],
+    [
+     "Day 2 of menses",
+     "Both withdrawn",
+     "Fragmented and collapsing",
+     "Breakdown and blood"
+    ],
+    [
+     "About 7 days after ovulation",
+     "Progesterone at its peak",
+     "Supranuclear vacuoles, luminal secretion",
+     "Maximal edema"
+    ],
+    [
+     "Day 27, just before menses",
+     "Progesterone falling",
+     "Saw-tooth and exhausted",
+     "Predecidual cells"
+    ]
+   ]
+  ],
+  "bl": "Subnuclear vacuoles are the earliest secretory change, appearing about 2 days after ovulation under rising progesterone.",
+  "ef": "rp8_endometrium",
+  "pt": {
+   "hl": [
+    "+2 days",
+    "Subnuclear vacuoles"
+   ],
+   "say": "The clock row at +2 days reads subnuclear vacuoles, the first sign of progesterone, while stromal edema waits until +7 days, so the biopsy was taken about 2 days after ovulation."
+  }
+ },
+ {
+  "id": "rp8q07",
+  "d": 1,
+  "tags": [
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp8-09"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.1"
+  ],
+  "s": "A 29-year-old woman has had chronic sinusitis and recurrent bronchitis since childhood, and a chest radiograph shows her heart on the right side. She has not conceived after 2 years of regular intercourse despite ovulatory cycles, and her partner's semen analysis is normal.",
+  "l": "Dysfunction of which cell type most likely explains her infertility?",
+  "o": [
+   "Ciliated cells of the fallopian tube",
+   "Peg cells of the fallopian tube",
+   "Granulosa cells of the follicle",
+   "Theca cells of the follicle",
+   "Columnar cells of the endocervix"
+  ],
+  "a": 0,
+  "e": "Situs inversus with chronic sinus and bronchial infection is Kartagener syndrome, a primary ciliary dyskinesia caused by defective dynein arms. The **ciliated cells** of the fallopian tube normally beat toward the uterus and move the oocyte and early embryo out of the ampulla; when they cannot, fertilization fails or the embryo implants in the tube. Peg cells secrete tubal fluid and are not motile, and her ovulatory cycles show that granulosa and theca cells work.",
+  "w": {
+   "Peg cells of the fallopian tube": "Peg cells are the nonciliated secretory cells of the tube; they nourish gametes with tubal fluid but do not move the oocyte and are unaffected by dynein defects.",
+   "Granulosa cells of the follicle": "Granulosa failure would stop estradiol production and ovulation, but she has ovulatory cycles, and her lung and sinus disease points to cilia.",
+   "Theca cells of the follicle": "Theca cells make androgen precursors for estradiol; a theca defect would disturb the cycle rather than cause sinusitis, bronchitis and reversed organs.",
+   "Columnar cells of the endocervix": "Endocervical cells secrete the mucus that sperm must cross, but they lack motile cilia and cannot explain lifelong respiratory infections."
+  },
+  "et": [
+   [
+    "Option",
+    "Location",
+    "Main job",
+    "Needs dynein"
+   ],
+   [
+    [
+     "Ciliated cells of the fallopian tube",
+     "Tubal mucosa",
+     "Move oocyte and embryo toward the uterus",
+     "Yes"
+    ],
+    [
+     "Peg cells of the fallopian tube",
+     "Tubal mucosa",
+     "Secrete tubal fluid",
+     "No"
+    ],
+    [
+     "Granulosa cells of the follicle",
+     "Ovarian follicle",
+     "Aromatize androgens to estradiol",
+     "No"
+    ],
+    [
+     "Theca cells of the follicle",
+     "Outside the follicle membrane",
+     "Make androstenedione under LH",
+     "No"
+    ],
+    [
+     "Columnar cells of the endocervix",
+     "Cervical canal",
+     "Secrete cervical mucus",
+     "No"
+    ]
+   ]
+  ],
+  "bl": "Kartagener syndrome disables the tube's ciliated cells, so the oocyte is not moved toward the uterus: infertility and ectopic pregnancy.",
+  "ef": "rp8_tract",
+  "pt": {
+   "hl": [
+    "Ciliated cells beat toward the uterus",
+    "Kartagener syndrome"
+   ],
+   "say": "The fallopian tube row shows ciliated cells beating toward the uterus to carry the oocyte, and Kartagener syndrome disables exactly these cells, causing infertility and ectopic pregnancy."
+  }
+ },
+ {
+  "id": "rp8q08",
+  "d": 3,
+  "tags": [
+   "feedback-logic",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp8-08"
+  ],
+  "s": "A 38-year-old woman has been trying to conceive for 6 months. Her cycles were 29 days long in her early thirties but are now regular at 24 days. On cycle day 3 her FSH is mildly elevated and her estradiol is normal. Serum anti-Müllerian hormone is low, and ultrasound shows few antral follicles.",
+  "l": "Which change best explains her rising early follicular FSH?",
+  "o": [
+   "Fewer growing follicles secreting inhibin B",
+   "More granulosa cells secreting inhibin B",
+   "Loss of LH receptors on theca cells",
+   "Excess progesterone from a persistent corpus luteum",
+   "Increased hypothalamic dopamine"
+  ],
+  "a": 0,
+  "e": "As the follicle pool shrinks, fewer small follicles are recruited, so granulosa cells secrete less **inhibin B** and less AMH. Inhibin B normally restrains FSH selectively, so its fall lets early follicular FSH rise even while estradiol is still normal. The extra FSH speeds follicle growth, which shortens the follicular phase and the whole cycle, an early sign of diminished ovarian reserve. A persistent corpus luteum would lengthen the cycle and keep FSH low, and loss of theca LH receptors would lower estradiol.",
+  "w": {
+   "More granulosa cells secreting inhibin B": "More inhibin B would suppress FSH further, the pattern of a large follicle cohort as in PCOS, not a rising FSH with a low AMH.",
+   "Loss of LH receptors on theca cells": "Theca LH resistance would starve granulosa cells of androgen substrate and lower estradiol; it would not shorten the follicular phase or lower AMH.",
+   "Excess progesterone from a persistent corpus luteum": "A persistent corpus luteum keeps progesterone high and gonadotropins suppressed, which lengthens the cycle; it would lower FSH rather than raise it.",
+   "Increased hypothalamic dopamine": "Hypothalamic dopamine inhibits prolactin release; more of it would lower prolactin and has no direct link to early follicular FSH or AMH."
+  },
+  "et": [
+   [
+    "Option",
+    "Effect on FSH",
+    "Effect on AMH",
+    "Effect on cycle length"
+   ],
+   [
+    [
+     "Fewer growing follicles secreting inhibin B",
+     "Rises",
+     "Falls",
+     "Shortens"
+    ],
+    [
+     "More granulosa cells secreting inhibin B",
+     "Falls",
+     "Rises",
+     "Often lengthens"
+    ],
+    [
+     "Loss of LH receptors on theca cells",
+     "Little change",
+     "Little change",
+     "Disrupted, estradiol low"
+    ],
+    [
+     "Excess progesterone from a persistent corpus luteum",
+     "Falls",
+     "No change",
+     "Lengthens"
+    ],
+    [
+     "Increased hypothalamic dopamine",
+     "No direct effect",
+     "No change",
+     "No direct effect"
+    ]
+   ]
+  ],
+  "bl": "A shrinking follicle pool means less inhibin B and AMH, so early FSH rises and cycles shorten: diminished ovarian reserve.",
+  "ef": "rp8_twocell",
+  "pt": {
+   "hl": [
+    "inhibin B and AMH"
+   ],
+   "say": "The granulosa cell box notes that it also secretes inhibin B and AMH; fewer follicles means less of both, so FSH rises."
+  }
+ },
+ {
+  "id": "rp8q09",
+  "d": 2,
+  "tags": [
+   "histology-to-diagnosis",
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp8-13"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.1"
+  ],
+  "s": "A 32-year-old woman had a vigorous dilation and curettage for retained placental tissue 6 weeks after delivery. She has had no menses in the 8 months since, although she breastfed successfully. A pregnancy test is negative, and FSH, prolactin, TSH and estradiol are normal. Hysteroscopy shows dense bands of scar tissue across the uterine cavity.",
+  "l": "Loss of which layer explains why her endometrium does not regrow?",
+  "o": [
+   "Stratum basalis",
+   "Stratum functionalis",
+   "Myometrium",
+   "Perimetrium",
+   "Stratum compactum"
+  ],
+  "a": 0,
+  "e": "The **stratum basalis** is the deep endometrial layer, fed by straight arteries, that survives each menses and regenerates the functionalis. Aggressive curettage, especially postpartum, can scrape it away, and the bare surfaces scar together into adhesions: Asherman syndrome. Her normal hormones and successful breastfeeding show that the ovary and pituitary work, so the defect is in the uterus. The stratum functionalis is shed every month and regrows only from the basalis; losing it alone is ordinary menstruation.",
+  "w": {
+   "Stratum functionalis": "The functionalis is shed at every menses and regrows from the basalis beneath it; losing it is routine, so it cannot explain permanent failure to regenerate.",
+   "Myometrium": "The myometrium is the smooth muscle wall; exposing it lets adhesions form, but it never produces endometrium, so its loss is not what stops regrowth.",
+   "Perimetrium": "The perimetrium is the serosal coat on the outside of the uterus; curettage works from inside the cavity and does not reach it.",
+   "Stratum compactum": "The compactum is the surface zone of the functionalis and is shed with it at menses; it is regenerated from deeper tissue rather than regenerating anything itself."
+  },
+  "et": [
+   [
+    "Option",
+    "Position",
+    "Blood supply",
+    "Shed at menses"
+   ],
+   [
+    [
+     "Stratum basalis",
+     "Deep endometrium",
+     "Straight arteries",
+     "No"
+    ],
+    [
+     "Stratum functionalis",
+     "Superficial endometrium",
+     "Spiral arteries",
+     "Yes"
+    ],
+    [
+     "Myometrium",
+     "Muscle wall",
+     "Arcuate and radial arteries",
+     "No"
+    ],
+    [
+     "Perimetrium",
+     "Outer serosa",
+     "Serosal vessels",
+     "No"
+    ],
+    [
+     "Stratum compactum",
+     "Surface zone of the functionalis",
+     "Tips of spiral arteries",
+     "Yes"
+    ]
+   ]
+  ],
+  "bl": "The stratum basalis regenerates the endometrium each cycle; curettage that removes it causes Asherman adhesions and amenorrhea.",
+  "ef": "rp8_endometrium",
+  "pt": {
+   "hl": [
+    "Stratum basalis",
+    "Asherman syndrome: scarring"
+   ],
+   "say": "The stratum basalis, fed by straight arteries, is never shed and regrows the functionalis each cycle, so curettage that removes it leaves scar adhesions and no regrowth: Asherman syndrome."
+  }
+ },
+ {
+  "id": "rp8q10",
+  "d": 3,
+  "tags": [
+   "hormone-timeline",
+   "receptor-crosstalk"
+  ],
+  "bp": [
+   "BP-rp8-05",
+   "BP-rp8-06"
+  ],
+  "obj": [
+   "PHYS-MENSTRUAL.5",
+   "HP-UTERUS-OVARY.2"
+  ],
+  "s": "A 28-year-old woman with regular 28-day cycles charts her basal body temperature while trying to conceive. It rose on day 15 and has now stayed up for 16 days, and her period has not started. A home pregnancy test on day 31 is positive, and serum progesterone is well above the luteal-phase range.",
+  "l": "Which signal keeps her progesterone high beyond the usual 14-day luteal lifespan?",
+  "o": [
+   "hCG acting on LH receptors of the corpus luteum",
+   "FSH acting on granulosa cells of a new follicle",
+   "Placental progesterone from the syncytiotrophoblast",
+   "A persistent LH surge from the pituitary",
+   "Estriol from the fetal-placental unit"
+  ],
+  "a": 0,
+  "e": "The syncytiotrophoblast of the implanted embryo secretes **hCG**, which is structurally similar to LH and binds the LH receptors of the corpus luteum. That rescue keeps the corpus luteum secreting progesterone past day 28, so her temperature stays up and menses does not come. The placenta takes over progesterone production only at about 8 to 10 weeks, so at day 31 placental progesterone is not yet the main source. Pituitary LH is suppressed by the high progesterone, and estriol is a later placental estrogen.",
+  "w": {
+   "FSH acting on granulosa cells of a new follicle": "High progesterone and estradiol keep FSH suppressed in early pregnancy, and no new follicle is recruited; a follicle would make estradiol, not luteal progesterone.",
+   "Placental progesterone from the syncytiotrophoblast": "The placenta becomes the main progesterone source only at about 8 to 10 weeks; two weeks after conception the corpus luteum is still essential.",
+   "A persistent LH surge from the pituitary": "Luteal progesterone suppresses GnRH and LH, and the mid-cycle surge lasts only about two days; pituitary LH cannot keep the corpus luteum alive.",
+   "Estriol from the fetal-placental unit": "Estriol is made later in pregnancy by the placenta from fetal adrenal DHEA-S; it does not stimulate progesterone from the corpus luteum."
+  },
+  "et": [
+   [
+    "Option",
+    "Source",
+    "Acts on",
+    "Timing"
+   ],
+   [
+    [
+     "hCG acting on LH receptors of the corpus luteum",
+     "Syncytiotrophoblast",
+     "Corpus luteum LH receptors",
+     "From implantation"
+    ],
+    [
+     "FSH acting on granulosa cells of a new follicle",
+     "Anterior pituitary",
+     "Granulosa cells",
+     "Suppressed in pregnancy"
+    ],
+    [
+     "Placental progesterone from the syncytiotrophoblast",
+     "Placenta",
+     "Endometrium and myometrium",
+     "Main source after 8 to 10 weeks"
+    ],
+    [
+     "A persistent LH surge from the pituitary",
+     "Anterior pituitary",
+     "Theca and granulosa cells",
+     "About two days at mid-cycle"
+    ],
+    [
+     "Estriol from the fetal-placental unit",
+     "Placenta using fetal DHEA-S",
+     "Uterus and breast",
+     "Rises through pregnancy"
+    ]
+   ]
+  ],
+  "bl": "hCG from the embryo binds corpus luteum LH receptors and rescues it, keeping progesterone high until the placenta takes over.",
+  "ef": "rp25_hormones",
+  "pt": {
+   "hl": [
+    "hCG rescues the corpus luteum until the placenta takes over",
+    "rescued by hCG"
+   ],
+   "say": "The title and the progesterone panel show hCG from the syncytiotrophoblast rescuing the corpus luteum, so progesterone stays high past day 28 until the placenta takes over at about 10 weeks."
+  }
+ }
+]

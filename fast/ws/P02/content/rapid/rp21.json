@@ -1,0 +1,492 @@
+[
+ {
+  "id": "rp21r01",
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp21-01"
+  ],
+  "obj": [
+   "HP-MALE.15"
+  ],
+  "q": "Which zone of the prostate is the site of benign prostatic hyperplasia?",
+  "o": [
+   "Peripheral zone",
+   "Central zone",
+   "Transition zone",
+   "Anterior fibromuscular stroma",
+   "Prostatic capsule"
+  ],
+  "a": 2,
+  "x": "Transition zone. BPH is hyperplasia of glands and stroma in the tissue that wraps the urethra, so even modest growth narrows the lumen and produces weak stream and nocturia early.",
+  "w": {
+   "Peripheral zone": "The peripheral zone lies at the back against the rectum and gives rise to most cancers; growth there is silent and a hard nodule is felt on exam.",
+   "Central zone": "The central zone surrounds the ejaculatory ducts and is rarely the site of either hyperplasia or carcinoma.",
+   "Anterior fibromuscular stroma": "This anterior band contains muscle and fibrous tissue without glands, so it cannot form glandular nodules.",
+   "Prostatic capsule": "The capsule is a thin fibrous covering, not a glandular zone, so it does not give rise to hyperplasia."
+  },
+  "media": "fig:rp21_zones",
+  "pt": {
+   "hl": [
+    "Transition zone"
+   ],
+   "say": "The labeled transition zone surrounds the urethra, so nodules there cause the early obstruction of BPH."
+  }
+ },
+ {
+  "id": "rp21r02",
+  "tags": [
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp21-01"
+  ],
+  "obj": [
+   "HP-MALE.15"
+  ],
+  "q": "Which hormone derivative drives prostate growth in benign prostatic hyperplasia?",
+  "o": [
+   "Estradiol",
+   "Androstenedione",
+   "Dihydrotestosterone",
+   "Inhibin B",
+   "Prolactin"
+  ],
+  "a": 2,
+  "x": "Dihydrotestosterone. 5-alpha-reductase type 2 converts testosterone to DHT in the prostate, and DHT binds the androgen receptor more tightly, driving gland and stromal growth; men without the enzyme never develop BPH.",
+  "w": {
+   "Estradiol": "Estrogen may enhance the effect of DHT as testosterone declines with age, but it is not the main driver, and men without 5-alpha-reductase make normal estradiol yet get no BPH.",
+   "Androstenedione": "This weak adrenal and gonadal androgen is a precursor of testosterone and estrone, and it has little direct effect on prostate growth.",
+   "Inhibin B": "Sertoli cells secrete this peptide to suppress FSH; it has no role in stimulating prostatic tissue.",
+   "Prolactin": "Prolactin is a pituitary hormone for lactation; it can lower testosterone when excessive but does not drive BPH."
+  },
+  "media": "fig:rp21_bphdrugs",
+  "pt": {
+   "hl": [
+    "Dihydrotestosterone (DHT), the potent androgen"
+   ],
+   "say": "The left flow shows testosterone converted by 5-alpha-reductase into dihydrotestosterone, the potent androgen that drives gland and stromal growth."
+  }
+ },
+ {
+  "id": "rp21r03",
+  "tags": [
+   "drug-mechanism",
+   "steroidogenesis-enzymes"
+  ],
+  "bp": [
+   "BP-rp21-02"
+  ],
+  "obj": [
+   "HP-MALE.15"
+  ],
+  "q": "Which enzyme do finasteride and dutasteride inhibit?",
+  "o": [
+   "Aromatase",
+   "5-alpha-reductase",
+   "Phosphodiesterase type 5",
+   "CYP17A1",
+   "Cholesterol desmolase"
+  ],
+  "a": 1,
+  "x": "5-alpha-reductase. Blocking this enzyme stops the conversion of testosterone to DHT, so the prostate shrinks over months and the measured PSA falls by about half.",
+  "w": {
+   "Aromatase": "Aromatase converts androgens to estrogens in fat and granulosa cells; inhibiting it would lower estradiol rather than DHT and is not how these drugs work.",
+   "Phosphodiesterase type 5": "This enzyme degrades cGMP in smooth muscle and is the target of sildenafil and tadalafil, not of the drugs that shrink the prostate.",
+   "CYP17A1": "This steroid synthesis enzyme is inhibited by abiraterone in prostate cancer, lowering androgen production, which is a different mechanism from DHT blockade.",
+   "Cholesterol desmolase": "This enzyme catalyzes the first step of steroid synthesis, cholesterol to pregnenolone, and no common prostate drug targets it."
+  },
+  "media": "fig:rp21_bphdrugs",
+  "pt": {
+   "hl": [
+    "5-alpha-reductase type 2"
+   ],
+   "say": "The arrow from testosterone to DHT is labeled 5-alpha-reductase type 2, the enzyme that finasteride and dutasteride block."
+  }
+ },
+ {
+  "id": "rp21r04",
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp21-15"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.8"
+  ],
+  "q": "Which adverse effect of alpha-1A-selective blockers must be shared with the eye surgeon before cataract surgery?",
+  "o": [
+   "Intraoperative floppy iris syndrome",
+   "Angle-closure glaucoma",
+   "Posterior capsule opacification",
+   "Corneal edema",
+   "Optic neuropathy"
+  ],
+  "a": 0,
+  "x": "Intraoperative floppy iris syndrome. Tamsulosin and silodosin relax the iris dilator muscle, so the iris billows and prolapses during cataract surgery; the surgeon should be told so the technique can be adapted.",
+  "w": {
+   "Angle-closure glaucoma": "Angle closure is precipitated by anticholinergic or sympathomimetic drugs that dilate the pupil in predisposed eyes, not by alpha-blockers used for BPH.",
+   "Posterior capsule opacification": "This is a late complication of cataract surgery itself, caused by lens epithelial cell growth, and no drug for BPH predisposes to it.",
+   "Corneal edema": "Corneal edema follows endothelial injury, as in Fuchs dystrophy or surgery, and is not linked to alpha-1A blockade.",
+   "Optic neuropathy": "Nonarteritic ischemic optic neuropathy is a rare harm of PDE5 inhibitors rather than alpha-blockers."
+  },
+  "media": "fig:rp21_bphdrugs",
+  "pt": {
+   "hl": [
+    "floppy iris"
+   ],
+   "say": "The right drug box lists floppy iris with retrograde ejaculation as the effects of tamsulosin and silodosin, the alpha-1A selective blockers."
+  }
+ },
+ {
+  "id": "rp21r05",
+  "tags": [
+   "tumor-markers",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp21-16",
+   "BP-rp21-02"
+  ],
+  "obj": [
+   "HP-MALE.15"
+  ],
+  "q": "What happens to the measured PSA after several months of finasteride?",
+  "o": [
+   "It falls by about half",
+   "It rises by about half",
+   "No change in the value",
+   "It falls to undetectable levels",
+   "It doubles temporarily"
+  ],
+  "a": 0,
+  "x": "It falls by about half. Finasteride and dutasteride shrink the epithelium by blocking DHT, so PSA drops by roughly 50%, and the measured value must be doubled when screening for cancer.",
+  "w": {
+   "It rises by about half": "No 5-alpha-reductase inhibitor raises PSA; the expected effect is a fall, and a rising value on treatment suggests another cause such as cancer.",
+   "No change in the value": "Alpha-1 blockers leave PSA unchanged, but 5-alpha-reductase inhibitors do change it, by lowering it as the epithelium shrinks.",
+   "It falls to undetectable levels": "PSA is still measurable on treatment, which is why a doubled value is followed; only prostatectomy or severe androgen deprivation drives it toward zero.",
+   "It doubles temporarily": "A transient rise occurs after prostate massage, biopsy or ejaculation, or with the testosterone flare of a GnRH agonist, and not with finasteride."
+  },
+  "media": "fig:rp21_bphdrugs",
+  "pt": {
+   "hl": [
+    "PSA falls by half"
+   ],
+   "say": "The finasteride box says the gland shrinks over months and PSA falls by half, so the measured value must be doubled."
+  }
+ },
+ {
+  "id": "rp21r06",
+  "tags": [
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp21-05"
+  ],
+  "obj": [
+   "HP-MALE.19"
+  ],
+  "q": "Which immunostain pattern fits prostate adenocarcinoma?",
+  "o": [
+   "p63 negative, AMACR positive",
+   "p63 positive, AMACR negative",
+   "p63 positive, AMACR positive",
+   "p63 negative, AMACR negative",
+   "Diffuse chromogranin positivity"
+  ],
+  "a": 0,
+  "x": "p63 negative, AMACR positive. Malignant glands lose the p63-positive basal cell layer and overexpress alpha-methylacyl-CoA racemase, so the pair confirms adenocarcinoma on a small biopsy.",
+  "w": {
+   "p63 positive, AMACR negative": "This is the benign pattern: intact basal cells stain with p63, and benign glands do not overexpress AMACR.",
+   "p63 positive, AMACR positive": "Basal cells present argue for benign or premalignant tissue; some benign mimics are AMACR positive, but cancer glands lack p63 staining.",
+   "p63 negative, AMACR negative": "Cancer glands overexpress AMACR in most cases, so a gland lacking both markers does not give the usual malignant profile.",
+   "Diffuse chromogranin positivity": "Chromogranin marks neuroendocrine differentiation, a rare variant, and is not a diagnostic stain for typical acinar adenocarcinoma."
+  },
+  "media": "fig:rp21_zones",
+  "pt": {
+   "hl": [
+    "no basal cell layer"
+   ],
+   "say": "The cancer box lists small crowded glands with no basal cell layer, which means p63 is negative and AMACR is positive."
+  }
+ },
+ {
+  "id": "rp21r07",
+  "tags": [
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp21-03"
+  ],
+  "obj": [
+   "HP-MALE.16"
+  ],
+  "q": "Which prostatitis syndrome is the most common?",
+  "o": [
+   "Acute bacterial prostatitis",
+   "Chronic bacterial prostatitis",
+   "Chronic pelvic pain syndrome",
+   "Granulomatous prostatitis",
+   "Asymptomatic inflammatory prostatitis"
+  ],
+  "a": 2,
+  "x": "Chronic pelvic pain syndrome. It accounts for more than 90% of prostatitis, with pelvic pain, negative cultures and no recurrent infections, so repeated antibiotic courses do not help.",
+  "w": {
+   "Acute bacterial prostatitis": "Acute bacterial prostatitis is dramatic, with fever and a boggy tender gland, but it is uncommon compared with the chronic pain syndrome.",
+   "Chronic bacterial prostatitis": "This form causes recurrent urinary infections with the same organism and is much less common than the sterile pain syndrome.",
+   "Granulomatous prostatitis": "Granulomatous prostatitis, often after BCG therapy, is rare and feels hard enough to mimic cancer.",
+   "Asymptomatic inflammatory prostatitis": "This category is discovered incidentally on biopsy or semen analysis and has no symptoms, so it is not the usual cause of patients seeking care."
+  }
+ },
+ {
+  "id": "rp21r08",
+  "tags": [
+   "blood-supply",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp21-06"
+  ],
+  "obj": [
+   "HP-MALE.21"
+  ],
+  "q": "Which route carries prostate cancer cells to the lumbar vertebrae?",
+  "o": [
+   "Vertebral venous plexus",
+   "Portal vein",
+   "Thoracic duct",
+   "Inguinal lymphatics",
+   "Hepatic artery"
+  ],
+  "a": 0,
+  "x": "Vertebral venous plexus. The valveless Batson plexus connects the prostatic and pelvic veins to the spine, so tumor cells seed the lumbar vertebrae and pelvis as osteoblastic metastases.",
+  "w": {
+   "Portal vein": "The portal vein drains the bowel to the liver and does not receive prostatic blood, so it would explain liver rather than vertebral deposits.",
+   "Thoracic duct": "The thoracic duct carries lymph from the abdomen to the left subclavian vein and would deliver cells to the lungs, not directly to the lumbar vertebrae.",
+   "Inguinal lymphatics": "Inguinal nodes drain penile and scrotal skin; prostate lymph goes to the iliac and obturator nodes.",
+   "Hepatic artery": "This artery supplies the liver; it does not connect with the prostate or the vertebral column."
+  },
+  "media": "fig:rp21_zones",
+  "pt": {
+   "hl": [
+    "Osteoblastic bone metastases"
+   ],
+   "say": "The cancer box lists osteoblastic bone metastases, which reach the lumbar spine through the vertebral venous plexus."
+  }
+ },
+ {
+  "id": "rp21r09",
+  "tags": [
+   "treatment-sequence",
+   "pulsatile-signaling"
+  ],
+  "bp": [
+   "BP-rp21-08"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.9"
+  ],
+  "q": "Which drug is started before a GnRH agonist to block the testosterone flare?",
+  "o": [
+   "Bicalutamide",
+   "Abiraterone",
+   "Finasteride",
+   "Ketoconazole",
+   "Degarelix"
+  ],
+  "a": 0,
+  "x": "Bicalutamide. An androgen receptor blocker prevents the surge of testosterone from stimulating the tumor during the first weeks of leuprolide, protecting against bone pain and obstruction.",
+  "w": {
+   "Abiraterone": "Abiraterone inhibits CYP17A1 to lower androgen synthesis and is used in advanced disease with prednisone, not to cover a GnRH agonist flare.",
+   "Finasteride": "Finasteride blocks 5-alpha-reductase for BPH; it does not block the androgen receptor and is not used to cover the flare.",
+   "Ketoconazole": "This antifungal inhibits steroid synthesis and is occasionally used in resistant disease, but it is not the standard cover for the flare.",
+   "Degarelix": "Degarelix is itself a GnRH antagonist that causes no flare, so it replaces the agonist rather than covering it."
+  },
+  "media": "fig:rp21_adt",
+  "pt": {
+   "hl": [
+    "Started before the agonist to cover the flare"
+   ],
+   "say": "The card lists bicalutamide, flutamide and enzalutamide, started before the agonist to cover the flare by blocking the androgen receptor."
+  }
+ },
+ {
+  "id": "rp21r10",
+  "tags": [
+   "steroidogenesis-enzymes",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp21-17"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.9"
+  ],
+  "q": "What does prednisone prevent when it is given with abiraterone?",
+  "o": [
+   "Mineralocorticoid excess",
+   "Androgen flare",
+   "Hyperprolactinemia",
+   "Hepatotoxicity",
+   "Gynecomastia"
+  ],
+  "a": 0,
+  "x": "Mineralocorticoid excess. Abiraterone lowers cortisol, so ACTH rises and drives mineralocorticoid production; prednisone replaces cortisol, shuts off the extra ACTH and prevents hypertension, hypokalemia and fluid retention.",
+  "w": {
+   "Androgen flare": "A flare belongs to GnRH agonists and is covered by antiandrogens, whereas abiraterone lowers androgens without any initial surge.",
+   "Hyperprolactinemia": "Prolactin excess occurs with dopamine antagonists and pituitary tumors, not with CYP17 inhibition.",
+   "Hepatotoxicity": "Liver injury is a warning with flutamide, and abiraterone needs liver monitoring, but prednisone is not given to prevent it.",
+   "Gynecomastia": "Gynecomastia reflects the estrogen-to-androgen balance and occurs with androgen deprivation, but prednisone does not prevent it."
+  },
+  "media": "fig:rp21_adt",
+  "pt": {
+   "hl": [
+    "hypertension, hypokalemia"
+   ],
+   "say": "The abiraterone card says prednisone prevents mineralocorticoid excess, with hypertension and hypokalemia, caused by the rise in ACTH."
+  }
+ },
+ {
+  "id": "rp21r11",
+  "tags": [
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp21-09"
+  ],
+  "obj": [
+   "HP-MALE.7"
+  ],
+  "q": "Which foreskin problem is a urologic emergency?",
+  "o": [
+   "Phimosis",
+   "Paraphimosis",
+   "Balanitis",
+   "Balanoposthitis",
+   "Lichen sclerosus"
+  ],
+  "a": 1,
+  "x": "Paraphimosis. A retracted foreskin trapped behind the glans causes venous congestion and edema that can compromise arterial supply, so it is reduced at once; it often follows a catheter or exam.",
+  "w": {
+   "Phimosis": "Phimosis is a foreskin that cannot be retracted; it is normal in young boys and managed with topical steroids or circumcision rather than emergency care.",
+   "Balanitis": "Balanitis is inflammation of the glans, often from Candida or poor hygiene, and is treated with topical agents.",
+   "Balanoposthitis": "This is inflammation of both glans and foreskin and responds to hygiene and topical therapy.",
+   "Lichen sclerosus": "Lichen sclerosus scars the foreskin and causes pathologic phimosis over time, but it develops slowly and is not an emergency."
+  },
+  "media": "fig:rp21_penis",
+  "pt": {
+   "hl": [
+    "Paraphimosis: cannot return, an emergency"
+   ],
+   "say": "Marker 1 labels paraphimosis as a foreskin that cannot return, an emergency, unlike phimosis, which cannot retract."
+  }
+ },
+ {
+  "id": "rp21r12",
+  "tags": [
+   "risk-factors",
+   "tumor-genetics"
+  ],
+  "bp": [
+   "BP-rp21-12"
+  ],
+  "obj": [
+   "HP-MALE.17"
+  ],
+  "q": "Which two HPV types cause most penile squamous cell carcinomas?",
+  "o": [
+   "HPV 16 and 18",
+   "HPV 6 and 11",
+   "HPV 31 and 33",
+   "HPV 1 and 2",
+   "HPV 5 and 8"
+  ],
+  "a": 0,
+  "x": "HPV 16 and 18. These high-risk types inactivate p53 and Rb, drive penile intraepithelial neoplasia and carcinoma, and cause about half of cases; HPV 6 and 11 cause benign warts.",
+  "w": {
+   "HPV 6 and 11": "Low-risk types that cause condyloma acuminata, benign exophytic warts that rarely progress to cancer.",
+   "HPV 31 and 33": "These are high-risk types more often tied to cervical lesions, and they cause fewer penile cancers than types 16 and 18.",
+   "HPV 1 and 2": "Types 1 and 2 cause common and plantar skin warts and are not linked to genital cancer.",
+   "HPV 5 and 8": "These types are associated with epidermodysplasia verruciformis and skin squamous cancers in immunosuppressed people, not penile cancer."
+  },
+  "media": "fig:rp21_penis",
+  "pt": {
+   "hl": [
+    "Cancer risks: HPV 16 and 18"
+   ],
+   "say": "The quick rules box lists HPV 16 and 18, no circumcision and smoking as the risks for penile cancer."
+  }
+ },
+ {
+  "id": "rp21r13",
+  "tags": [
+   "tumor-progression",
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp21-12"
+  ],
+  "obj": [
+   "HP-MALE.17"
+  ],
+  "q": "Which penile precursor lesion is a red velvety plaque on the glans?",
+  "o": [
+   "Bowen disease",
+   "Erythroplasia of Queyrat",
+   "Bowenoid papulosis",
+   "Verrucous carcinoma",
+   "Condyloma acuminata"
+  ],
+  "a": 1,
+  "x": "Erythroplasia of Queyrat. This HPV-related carcinoma in situ appears on the glans or inner foreskin of uncircumcised men, while Bowen disease is the same process on the shaft.",
+  "w": {
+   "Bowen disease": "Bowen disease is carcinoma in situ on the shaft skin, whereas the glans form carries the eponym Queyrat.",
+   "Bowenoid papulosis": "This presents as multiple small pigmented papules in young adults, usually regresses, and is not a single velvety plaque.",
+   "Verrucous carcinoma": "A verrucous carcinoma is a papillary, locally destructive tumor with pushing margins and minimal atypia, not a flat red plaque.",
+   "Condyloma acuminata": "Condylomas are cauliflower-like exophytic warts from HPV 6 and 11 and are not premalignant plaques."
+  },
+  "media": "fig:rp21_penis",
+  "pt": {
+   "hl": [
+    "Erythroplasia of Queyrat, squamous carcinoma"
+   ],
+   "say": "Marker 2, the glans, lists erythroplasia of Queyrat, the red plaque precursor, while Bowen disease sits on the shaft skin."
+  }
+ },
+ {
+  "id": "rp21r14",
+  "tags": [
+   "blood-supply",
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp21-18",
+   "BP-rp21-11"
+  ],
+  "q": "Which type of priapism is painless and follows perineal trauma?",
+  "o": [
+   "Ischemic priapism",
+   "Nonischemic priapism",
+   "Stuttering priapism",
+   "Drug-induced priapism",
+   "Sickle cell priapism"
+  ],
+  "a": 1,
+  "x": "Nonischemic priapism. A tear in a cavernosal artery creates a fistula with high arterial flow, so the penis is partly rigid and painless, with bright red blood, and observation or embolization is used.",
+  "w": {
+   "Ischemic priapism": "Ischemic priapism is painful and rigid with dark acidotic blood and is the emergency type.",
+   "Stuttering priapism": "Stuttering priapism is recurrent painful episodes of ischemic priapism, typical in sickle cell disease.",
+   "Drug-induced priapism": "Trazodone, cocaine and injected vasoactive drugs cause ischemic priapism, which is painful.",
+   "Sickle cell priapism": "Sickle cell disease causes ischemic priapism through sickling and venous outflow obstruction, not trauma."
+  },
+  "media": "fig:rp21_penis",
+  "pt": {
+   "hl": [
+    "Nonischemic priapism: painless, trauma"
+   ],
+   "say": "Marker 5 labels nonischemic priapism as painless after trauma, in contrast to the painful ischemic type."
+  }
+ }
+]

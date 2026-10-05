@@ -1,0 +1,885 @@
+[
+ {
+  "id": "rp9q01",
+  "d": 1,
+  "tags": [
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp9-01"
+  ],
+  "obj": [
+   "BICEP-WALSH.16",
+   "BICEP-WALSH.18"
+  ],
+  "s": "A 17-year-old girl comes to the clinic because she has not had a period for 3 months. Menarche was at age 12, and her cycles had been regular. She says she is not sexually active. Examination shows normal breast and pubic hair development and no other abnormalities.",
+  "l": "Which is the most appropriate first step in evaluation?",
+  "o": [
+   "Pregnancy test (hCG)",
+   "Serum prolactin",
+   "Serum FSH",
+   "Progestin challenge",
+   "Pituitary MRI"
+  ],
+  "a": 0,
+  "e": "Pregnancy is the most common cause of secondary amenorrhea, so a **pregnancy test** measuring hCG comes first, whatever the reported sexual history. Only after a negative result do TSH, prolactin and FSH localize the problem to the hypothalamus, pituitary or ovary. A progestin challenge before excluding pregnancy is pointless and potentially harmful, and pituitary imaging is reserved for a high prolactin, visual field loss or other signs of a sellar lesion.",
+  "w": {
+   "Serum prolactin": "Prolactin is part of the second step, with TSH and FSH, once pregnancy is excluded; pregnancy itself raises prolactin, so testing it first could mislead.",
+   "Serum FSH": "FSH separates ovarian failure from hypothalamic and pituitary causes, but only after a negative pregnancy test; pregnancy is far more likely in a teenager with 3 months of amenorrhea.",
+   "Progestin challenge": "A progestin challenge tests estrogen status and outflow after pregnancy is excluded and basic labs are back; it adds nothing, and delays care, if she is pregnant.",
+   "Pituitary MRI": "Imaging the sella is reserved for high prolactin, visual field loss or unexplained low gonadotropins; it is never the opening test in amenorrhea."
+  },
+  "et": [
+   [
+    "Option",
+    "What it tests",
+    "Order in the work-up",
+    "Burden"
+   ],
+   [
+    [
+     "Pregnancy test (hCG)",
+     "Is she pregnant?",
+     "First",
+     "Low"
+    ],
+    [
+     "Serum prolactin",
+     "Is prolactin suppressing GnRH?",
+     "Second",
+     "Low"
+    ],
+    [
+     "Serum FSH",
+     "Ovary or brain?",
+     "Second",
+     "Low"
+    ],
+    [
+     "Progestin challenge",
+     "Is estrogen present and outflow open?",
+     "Third",
+     "Two weeks of pills"
+    ],
+    [
+     "Pituitary MRI",
+     "Is there a sellar lesion?",
+     "Only with specific findings",
+     "High"
+    ]
+   ]
+  ],
+  "bl": "In any amenorrhea, a pregnancy test comes first, regardless of reported sexual history.",
+  "ef": "rp9_workup",
+  "pt": {
+   "hl": [
+    "Pregnancy test (hCG)"
+   ],
+   "say": "Step 1 at the top of the work-up is the pregnancy test (hCG), because pregnancy is the most common cause."
+  }
+ },
+ {
+  "id": "rp9q02",
+  "d": 1,
+  "tags": [
+   "diagnostic-cutoffs",
+   "hormone-source"
+  ],
+  "bp": [
+   "BP-rp9-05"
+  ],
+  "obj": [
+   "BICEP-WALSH.14"
+  ],
+  "s": "A 26-year-old woman has had periods every 45 to 90 days since menarche and slowly increasing hair growth on her chin and lower abdomen. Her BMI is 33 kg/m2, and she has dark, velvety skin on the back of her neck. Serum TSH, prolactin and 17-hydroxyprogesterone are normal.",
+  "l": "Which condition best explains her findings?",
+  "o": [
+   "Polycystic ovary syndrome",
+   "Nonclassic congenital adrenal hyperplasia",
+   "Cushing syndrome",
+   "Androgen-secreting ovarian tumor",
+   "Primary ovarian insufficiency"
+  ],
+  "a": 0,
+  "e": "Oligo-ovulation since menarche plus clinical hyperandrogenism meets two of the three Rotterdam criteria for **polycystic ovary syndrome**, once its mimics are excluded. Acanthosis nigricans and obesity mark the insulin resistance that drives theca androgen production and lowers SHBG. A normal 17-hydroxyprogesterone argues against nonclassic congenital adrenal hyperplasia, and slow progression since puberty argues against an androgen-secreting tumor, which causes rapid virilization.",
+  "w": {
+   "Nonclassic congenital adrenal hyperplasia": "Nonclassic 21-hydroxylase deficiency can mimic PCOS closely, but it raises 17-hydroxyprogesterone, which is normal here; that test is how the two are separated.",
+   "Cushing syndrome": "Cortisol excess can cause hirsutism and irregular menses, but it brings purple striae, proximal weakness, easy bruising and hypertension, none of which she has.",
+   "Androgen-secreting ovarian tumor": "A tumor causes rapidly progressive hirsutism with virilization such as clitoromegaly and a deep voice, not slow symptoms that began at menarche.",
+   "Primary ovarian insufficiency": "Ovarian insufficiency causes estrogen deficiency with hot flashes and a high FSH; it does not produce hirsutism, acanthosis or obesity."
+  },
+  "et": [
+   [
+    "Option",
+    "Onset",
+    "Androgen source",
+    "Key test"
+   ],
+   [
+    [
+     "Polycystic ovary syndrome",
+     "Around menarche, slow",
+     "Ovarian theca cells",
+     "Rotterdam criteria after exclusions"
+    ],
+    [
+     "Nonclassic congenital adrenal hyperplasia",
+     "Around puberty, slow",
+     "Adrenal cortex",
+     "High 17-hydroxyprogesterone"
+    ],
+    [
+     "Cushing syndrome",
+     "Any age",
+     "Adrenal, with cortisol excess",
+     "Late-night salivary cortisol"
+    ],
+    [
+     "Androgen-secreting ovarian tumor",
+     "Rapid, over months",
+     "Ovarian tumor",
+     "Very high testosterone"
+    ],
+    [
+     "Primary ovarian insufficiency",
+     "Before age 40",
+     "None; androgens not raised",
+     "High FSH"
+    ]
+   ]
+  ],
+  "bl": "Oligo-ovulation plus hyperandrogenism, with TSH, prolactin and 17-hydroxyprogesterone normal, is polycystic ovary syndrome by Rotterdam criteria.",
+  "ef": "rp9_aub",
+  "pt": {
+   "hl": [
+    "Polycystic ovary syndrome",
+    "Rotterdam criteria: two of three"
+   ],
+   "say": "Her cycles every 45 to 90 days from menarche plus clinical hyperandrogenism meet two of the three Rotterdam criteria, and TSH, prolactin and 17-hydroxyprogesterone are normal: polycystic ovary syndrome."
+  }
+ },
+ {
+  "id": "rp9q03",
+  "d": 3,
+  "tags": [
+   "binding-proteins",
+   "fuel-metabolism"
+  ],
+  "bp": [
+   "BP-rp9-13"
+  ],
+  "obj": [
+   "BICEP-WALSH.14"
+  ],
+  "s": "A 23-year-old woman with polycystic ovary syndrome has hirsutism and acne. Her BMI is 36 kg/m2, and her fasting insulin is high. Total testosterone is at the upper limit of normal, but free testosterone is clearly elevated. After she loses 9 kg and starts metformin, her free testosterone falls into the normal range, while her total testosterone barely changes.",
+  "l": "Which change best explains the fall in free testosterone?",
+  "o": [
+   "Higher hepatic SHBG production as insulin falls",
+   "Lower adrenal DHEA-S secretion after weight loss",
+   "More granulosa aromatase converting testosterone",
+   "Less 5α-reductase activity in hair follicles",
+   "More pituitary FSH restoring ovulation"
+  ],
+  "a": 0,
+  "e": "Insulin suppresses the liver's synthesis of sex hormone-binding globulin. As weight loss and metformin lower insulin, **SHBG** rises and binds more testosterone, so the free, active fraction falls although the total barely moves. That is why free testosterone is the more sensitive marker in PCOS. More FSH or aromatase would convert some androgen to estrogen and lower total testosterone too, and 5α-reductase acts after testosterone reaches the skin, so it changes DHT, not serum free testosterone.",
+  "w": {
+   "Lower adrenal DHEA-S secretion after weight loss": "Adrenal DHEA-S contributes only a little to testosterone, and a fall would lower the total as well; here only the free fraction changed, pointing to a binding protein.",
+   "More granulosa aromatase converting testosterone": "More aromatization would consume testosterone and lower the total, not just the free fraction; the unchanged total points to binding rather than conversion.",
+   "Less 5α-reductase activity in hair follicles": "5α-reductase converts testosterone to DHT inside the skin; it affects hirsutism locally but does not alter the serum free testosterone measured here.",
+   "More pituitary FSH restoring ovulation": "Better FSH secretion can restore ovulation, but it does not change how much serum testosterone is bound; the split between total and free is set by SHBG."
+  },
+  "et": [
+   [
+    "Option",
+    "Effect on total testosterone",
+    "Effect on free fraction",
+    "Link to insulin"
+   ],
+   [
+    [
+     "Higher hepatic SHBG production as insulin falls",
+     "Little change",
+     "Falls",
+     "Insulin suppresses SHBG"
+    ],
+    [
+     "Lower adrenal DHEA-S secretion after weight loss",
+     "Falls",
+     "Falls in proportion",
+     "Weak"
+    ],
+    [
+     "More granulosa aromatase converting testosterone",
+     "Falls",
+     "Falls in proportion",
+     "None"
+    ],
+    [
+     "Less 5α-reductase activity in hair follicles",
+     "No change",
+     "No change",
+     "None"
+    ],
+    [
+     "More pituitary FSH restoring ovulation",
+     "Slight change",
+     "No direct change",
+     "Indirect"
+    ]
+   ]
+  ],
+  "bl": "Hyperinsulinemia suppresses hepatic SHBG; lowering insulin raises SHBG, so free testosterone falls while total barely changes.",
+  "ef": "rp9_pcos",
+  "pt": {
+   "hl": [
+    "Makes less SHBG"
+   ],
+   "say": "The liver box makes less SHBG while insulin is high; as insulin falls, hepatic SHBG production rises and free testosterone falls."
+  }
+ },
+ {
+  "id": "rp9q04",
+  "d": 2,
+  "tags": [
+   "sex-development-signals",
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp9-02"
+  ],
+  "obj": [
+   "BICEP-WALSH.13",
+   "BICEP-WALSH.7"
+  ],
+  "s": "A 16-year-old girl is brought to the physician because she has never menstruated. She has Tanner 5 breast development and Tanner 5 pubic and axillary hair. Pelvic examination shows a short, blind-ending vagina, and pelvic ultrasound shows normal ovaries but no uterus. Serum testosterone is in the normal female range.",
+  "l": "Which is the most likely diagnosis?",
+  "o": [
+   "Müllerian agenesis",
+   "Complete androgen insensitivity syndrome",
+   "Turner syndrome",
+   "Imperforate hymen",
+   "Kallmann syndrome"
+  ],
+  "a": 0,
+  "e": "Breasts show estrogen from working ovaries, and normal female pubic hair and testosterone show a 46,XX girl with normal androgen responses. A missing uterus with a blind vaginal pouch is **Müllerian agenesis** (Mayer-Rokitansky-Küster-Hauser syndrome), in which the paramesonephric ducts fail to develop. Complete androgen insensitivity also gives breasts without a uterus, but pubic and axillary hair is scant and testosterone is in the male range because testes are present. An imperforate hymen leaves the uterus intact.",
+  "w": {
+   "Complete androgen insensitivity syndrome": "Androgen insensitivity also causes breasts without a uterus, but the karyotype is 46,XY, testosterone is in the male range and pubic and axillary hair is sparse.",
+   "Turner syndrome": "Turner syndrome causes streak ovaries with absent breast development and a high FSH; the uterus is present, the opposite of this pattern.",
+   "Imperforate hymen": "An imperforate hymen blocks outflow from a normal uterus, causing cyclic pain and a bulging bluish membrane; here the uterus itself is absent.",
+   "Kallmann syndrome": "Kallmann syndrome causes GnRH deficiency, so breasts do not develop; anosmia is its clue, and the uterus is normal."
+  },
+  "et": [
+   [
+    "Option",
+    "Breasts",
+    "Uterus",
+    "Karyotype and testosterone"
+   ],
+   [
+    [
+     "Müllerian agenesis",
+     "Present",
+     "Absent",
+     "46,XX; female range"
+    ],
+    [
+     "Complete androgen insensitivity syndrome",
+     "Present",
+     "Absent",
+     "46,XY; male range"
+    ],
+    [
+     "Turner syndrome",
+     "Absent",
+     "Present",
+     "45,X; low"
+    ],
+    [
+     "Imperforate hymen",
+     "Present",
+     "Present, outflow blocked",
+     "46,XX; female range"
+    ],
+    [
+     "Kallmann syndrome",
+     "Absent",
+     "Present",
+     "46,XX; low, with anosmia"
+    ]
+   ]
+  ],
+  "bl": "Breasts with an absent uterus, normal pubic hair and female-range testosterone mean Müllerian agenesis, not androgen insensitivity.",
+  "ef": "rp9_workup",
+  "pt": {
+   "hl": [
+    "Müllerian (vaginal) agenesis"
+   ],
+   "say": "Under breasts, no uterus, the 46,XX branch is Müllerian (vaginal) agenesis; 46,XY would be androgen insensitivity."
+  }
+ },
+ {
+  "id": "rp9q05",
+  "d": 2,
+  "tags": [
+   "embryologic-origin",
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-rp9-02"
+  ],
+  "obj": [
+   "BICEP-WALSH.11"
+  ],
+  "s": "A 17-year-old girl is brought to the physician because she has not started menstruating. She has no breast development, and her height is at the 40th percentile. She says she has never been able to smell smoke or food. Serum FSH, LH and estradiol are low, and her karyotype is 46,XX.",
+  "l": "Which defect best explains her amenorrhea?",
+  "o": [
+   "Failed migration of GnRH neurons",
+   "Streak gonads from X chromosome loss",
+   "Pituitary infarction after hemorrhage",
+   "Prolactin-secreting pituitary adenoma",
+   "Absent paramesonephric duct development"
+  ],
+  "a": 0,
+  "e": "No breasts means no estrogen, and low FSH and LH put the failure above the ovary. Lifelong anosmia identifies **Kallmann syndrome**: GnRH neurons arise in the olfactory placode and must travel with olfactory axons into the hypothalamus, so when that migration fails, both smell and GnRH secretion are lost. Streak gonads from X chromosome loss (Turner syndrome) would raise FSH, and absent Müllerian ducts would leave breast development intact.",
+  "w": {
+   "Streak gonads from X chromosome loss": "Turner syndrome causes ovarian failure with a high FSH, short stature and a 45,X karyotype; her FSH is low, her karyotype 46,XX and her smell absent.",
+   "Pituitary infarction after hemorrhage": "Sheehan syndrome follows postpartum hemorrhage in an adult and causes secondary amenorrhea with failed lactation; it cannot explain lifelong anosmia in a teenager.",
+   "Prolactin-secreting pituitary adenoma": "A prolactinoma suppresses GnRH and can delay puberty, but it causes galactorrhea or headache rather than anosmia, and prolactin would be high.",
+   "Absent paramesonephric duct development": "Müllerian agenesis removes the uterus but leaves the ovaries working, so breasts develop normally; it does not lower FSH or affect smell."
+  },
+  "et": [
+   [
+    "Option",
+    "FSH and LH",
+    "Breasts",
+    "Distinguishing clue"
+   ],
+   [
+    [
+     "Failed migration of GnRH neurons",
+     "Low",
+     "Absent",
+     "Anosmia"
+    ],
+    [
+     "Streak gonads from X chromosome loss",
+     "High",
+     "Absent",
+     "Short stature, 45,X"
+    ],
+    [
+     "Pituitary infarction after hemorrhage",
+     "Low",
+     "Developed before the event",
+     "Failed lactation after delivery"
+    ],
+    [
+     "Prolactin-secreting pituitary adenoma",
+     "Low",
+     "Variable",
+     "Galactorrhea, high prolactin"
+    ],
+    [
+     "Absent paramesonephric duct development",
+     "Normal",
+     "Present",
+     "Absent uterus"
+    ]
+   ]
+  ],
+  "bl": "Absent puberty with low gonadotropins and anosmia is Kallmann syndrome: GnRH neurons failed to migrate from the olfactory placode.",
+  "ef": "rp9_workup",
+  "pt": {
+   "hl": [
+    "Kallmann syndrome (anosmia)"
+   ],
+   "say": "Under no breasts with low FSH sits Kallmann syndrome (anosmia): GnRH neurons failed to migrate with the olfactory neurons."
+  }
+ },
+ {
+  "id": "rp9q06",
+  "d": 3,
+  "tags": [
+   "feedback-logic",
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp9-03",
+   "BP-rp9-04"
+  ],
+  "obj": [
+   "BICEP-WALSH.17",
+   "BICEP-WALSH.11"
+  ],
+  "s": "A 19-year-old collegiate cross-country runner has had no menses for 8 months. She runs about 60 miles a week and has lost 5 kg this season. She now has pain over the left second metatarsal, and a radiograph shows a stress fracture. A pregnancy test is negative, and TSH and prolactin are normal. FSH and LH are low-normal, and estradiol is low.",
+  "l": "Which mechanism best explains her fracture?",
+  "o": [
+   "Estrogen deficiency from slowed GnRH pulses",
+   "Cortisol excess from an adrenal adenoma",
+   "PTH excess from a parathyroid adenoma",
+   "Vitamin D deficiency from malabsorption",
+   "Estrogen deficiency from follicle depletion"
+  ],
+  "a": 0,
+  "e": "Too little energy for her training lowers leptin and raises cortisol, which slows hypothalamic GnRH pulses. FSH and LH fall, the ovaries make little estradiol, and she stops menstruating: **functional hypothalamic amenorrhea**. Estrogen normally restrains osteoclasts, so its deficiency increases bone resorption and lowers bone mineral density, the third part of the female athlete triad. Follicle depletion would also lower estrogen, but a failed ovary sends no feedback, so FSH would be high, not low-normal.",
+  "w": {
+   "Cortisol excess from an adrenal adenoma": "Endurance training raises cortisol modestly, but an adrenal adenoma would bring Cushing features such as striae, central weight gain and hypertension; she is losing weight.",
+   "PTH excess from a parathyroid adenoma": "Primary hyperparathyroidism causes hypercalcemia, kidney stones and bone loss, mostly in older adults; it does not explain amenorrhea with low gonadotropins in a young runner.",
+   "Vitamin D deficiency from malabsorption": "Vitamin D deficiency weakens bone through poor mineralization, but nothing suggests malabsorption, and it would not stop her periods or lower her gonadotropins.",
+   "Estrogen deficiency from follicle depletion": "Primary ovarian insufficiency lowers estrogen too, but a depleted ovary sends no inhibin or estradiol feedback, so FSH rises; hers is low-normal."
+  },
+  "et": [
+   [
+    "Option",
+    "FSH",
+    "Why bone is lost",
+    "Link to energy deficit"
+   ],
+   [
+    [
+     "Estrogen deficiency from slowed GnRH pulses",
+     "Low-normal",
+     "Resorption without estrogen",
+     "Direct"
+    ],
+    [
+     "Cortisol excess from an adrenal adenoma",
+     "Low",
+     "Cortisol inhibits osteoblasts",
+     "None"
+    ],
+    [
+     "PTH excess from a parathyroid adenoma",
+     "Normal",
+     "PTH-driven resorption",
+     "None"
+    ],
+    [
+     "Vitamin D deficiency from malabsorption",
+     "Normal",
+     "Poor mineralization",
+     "Indirect at most"
+    ],
+    [
+     "Estrogen deficiency from follicle depletion",
+     "High",
+     "Resorption without estrogen",
+     "None"
+    ]
+   ]
+  ],
+  "bl": "Low energy availability slows GnRH pulses, causing estrogen deficiency, amenorrhea and bone loss: the female athlete triad.",
+  "ef": "rp9_workup",
+  "pt": {
+   "hl": [
+    "Hypothalamic: weight loss, athlete, stress"
+   ],
+   "say": "Low FSH with low estradiol leads to the hypothalamic line, weight loss, athlete, stress: slowed GnRH pulses cause estrogen deficiency."
+  }
+ },
+ {
+  "id": "rp9q07",
+  "d": 2,
+  "tags": [
+   "drug-mechanism",
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-rp9-03"
+  ],
+  "obj": [
+   "BICEP-WALSH.12",
+   "PATHPHARM-MENSES-CONTRA.1"
+  ],
+  "s": "A 29-year-old woman has had no menses for 6 months and has noticed milky discharge from both nipples. She takes no medications. A pregnancy test is negative, and TSH is normal. Serum prolactin is 180 ng/mL, and FSH and LH are low. She has no headaches, and her visual fields are full. MRI shows a 7-mm pituitary lesion.",
+  "l": "Which is the most appropriate treatment?",
+  "o": [
+   "Cabergoline",
+   "Metoclopramide",
+   "Levothyroxine",
+   "Combined oral contraceptive",
+   "Clomiphene"
+  ],
+  "a": 0,
+  "e": "Amenorrhea with galactorrhea, a high prolactin and a small pituitary lesion, after pregnancy, drugs and hypothyroidism are excluded, is a **prolactinoma**. Prolactin suppresses hypothalamic GnRH pulses, which explains the low FSH and LH. A dopamine agonist, preferably **cabergoline**, stimulates D2 receptors on lactotrophs, lowering prolactin and shrinking the tumor, and it usually restores ovulation. Metoclopramide is a dopamine antagonist that would raise prolactin further, and levothyroxine treats only hypothyroid hyperprolactinemia.",
+  "w": {
+   "Metoclopramide": "Metoclopramide blocks dopamine D2 receptors, the brake on lactotrophs, so it raises prolactin; it is a cause of hyperprolactinemia, not a treatment.",
+   "Levothyroxine": "Levothyroxine lowers prolactin only when hypothyroidism is driving TRH up; her TSH is normal, so thyroid hormone would not help.",
+   "Combined oral contraceptive": "A pill would restore withdrawal bleeding and protect bone, but it leaves the adenoma untreated and does not stop galactorrhea or restore fertility.",
+   "Clomiphene": "Clomiphene raises FSH by blocking estrogen feedback, but prolactin would keep suppressing GnRH; lowering prolactin is the step that restores ovulation."
+  },
+  "et": [
+   [
+    "Option",
+    "Mechanism",
+    "Effect on prolactin",
+    "Role here"
+   ],
+   [
+    [
+     "Cabergoline",
+     "Dopamine D2 agonist",
+     "Lowers it",
+     "First-line"
+    ],
+    [
+     "Metoclopramide",
+     "Dopamine D2 antagonist",
+     "Raises it",
+     "Would worsen it"
+    ],
+    [
+     "Levothyroxine",
+     "Replaces thyroid hormone",
+     "Lowers it only in hypothyroidism",
+     "Not indicated, TSH normal"
+    ],
+    [
+     "Combined oral contraceptive",
+     "Estrogen and progestin feedback",
+     "No effect",
+     "Bleeding only"
+    ],
+    [
+     "Clomiphene",
+     "Hypothalamic estrogen receptor blocker",
+     "No effect",
+     "Blocked while prolactin is high"
+    ]
+   ]
+  ],
+  "bl": "A prolactinoma suppresses GnRH, causing amenorrhea with galactorrhea; a dopamine agonist such as cabergoline is first-line treatment.",
+  "ef": "en3_prl",
+  "pt": {
+   "hl": [
+    "GnRH suppressed: low LH and FSH",
+    "Cabergoline (first choice)"
+   ],
+   "say": "Excess prolactin suppresses GnRH, so LH and FSH fall and menses stop with galactorrhea; cabergoline, a dopamine agonist that restores the brake on the lactotroph, is the first-choice treatment."
+  }
+ },
+ {
+  "id": "rp9q08",
+  "d": 3,
+  "tags": [
+   "workup-sequence",
+   "inheritance-pattern"
+  ],
+  "bp": [
+   "BP-rp9-03"
+  ],
+  "obj": [
+   "BICEP-WALSH.15"
+  ],
+  "s": "A 32-year-old woman has had no menses for 7 months and has hot flashes and vaginal dryness. A pregnancy test is negative. Serum FSH is 68 mIU/mL and 72 mIU/mL on two samples drawn 5 weeks apart, and estradiol is low. Her maternal uncle has intellectual disability, and her mother reached menopause at age 41.",
+  "l": "Which additional test is most important in her evaluation?",
+  "o": [
+   "FMR1 premutation testing",
+   "Pituitary MRI",
+   "Progestin challenge",
+   "Serum 17-hydroxyprogesterone",
+   "Repeat serum prolactin"
+  ],
+  "a": 0,
+  "e": "Two FSH levels in the menopausal range with low estradiol before age 40 define **primary ovarian insufficiency**. Intellectual disability in a maternal male relative and early maternal menopause suggest fragile X, and women who carry an **FMR1 premutation** have a high risk of early follicle depletion. Testing matters for her own care and for counseling, because her children could inherit a full mutation. Karyotype and adrenal and thyroid antibodies also belong in the work-up. A pituitary MRI is for low gonadotropins, not high ones.",
+  "w": {
+   "Pituitary MRI": "Pituitary imaging looks for a sellar mass when gonadotropins are low or prolactin is high; a high FSH shows the pituitary is responding normally to a failing ovary.",
+   "Progestin challenge": "With low estradiol she would not bleed after progestin, and the result adds nothing once two high FSH values have already placed the failure in the ovary.",
+   "Serum 17-hydroxyprogesterone": "17-hydroxyprogesterone screens for nonclassic congenital adrenal hyperplasia in a woman with androgen excess; she has estrogen deficiency and no hirsutism.",
+   "Repeat serum prolactin": "High prolactin suppresses GnRH and lowers FSH; her very high FSH places the failure in the ovary, so repeating prolactin would not explain it."
+  },
+  "et": [
+   [
+    "Option",
+    "What it tests",
+    "When it is indicated",
+    "Expected result here"
+   ],
+   [
+    [
+     "FMR1 premutation testing",
+     "Is ovarian failure from fragile X premutation?",
+     "POI, especially with a family history",
+     "May be positive"
+    ],
+    [
+     "Pituitary MRI",
+     "Is there a sellar lesion?",
+     "Low gonadotropins or high prolactin",
+     "Normal"
+    ],
+    [
+     "Progestin challenge",
+     "Is estrogen present?",
+     "Unclear estrogen status",
+     "No bleed, already predictable"
+    ],
+    [
+     "Serum 17-hydroxyprogesterone",
+     "Is there nonclassic CAH?",
+     "Hyperandrogenism",
+     "Normal"
+    ],
+    [
+     "Repeat serum prolactin",
+     "Is prolactin suppressing GnRH?",
+     "Low or normal FSH",
+     "Normal"
+    ]
+   ]
+  ],
+  "bl": "Primary ovarian insufficiency before 40 with a family history of intellectual disability calls for FMR1 premutation testing.",
+  "ef": "rp9_workup",
+  "pt": {
+   "hl": [
+    "fragile X premutation"
+   ],
+   "say": "High FSH before age 40 is primary ovarian insufficiency, and the fragile X premutation line is why FMR1 premutation testing comes next."
+  }
+ },
+ {
+  "id": "rp9q09",
+  "d": 2,
+  "tags": [
+   "bleeding-source",
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp9-07"
+  ],
+  "obj": [
+   "BICEP-WILLIAMS.3",
+   "BICEP-WILLIAMS.1"
+  ],
+  "s": "A 15-year-old girl has had heavy periods since menarche 2 years ago, soaking a pad every hour for the first 3 days of each cycle. Her cycles are regular. She also has frequent nosebleeds and bled for a day after a tooth extraction. She takes no medications. Hemoglobin is 9.8 g/dL. Platelet count and PT are normal, and aPTT is mildly prolonged.",
+  "l": "Which category of abnormal uterine bleeding is most likely?",
+  "o": [
+   "Coagulopathy",
+   "Ovulatory dysfunction",
+   "Leiomyoma",
+   "Polyp",
+   "Iatrogenic"
+  ],
+  "a": 0,
+  "e": "Heavy menstrual bleeding since menarche, with nosebleeds and prolonged bleeding after dental work, points to a bleeding disorder, most often **von Willebrand disease**; this is the C of PALM-COEIN, **coagulopathy**. A mildly prolonged aPTT fits because von Willebrand factor carries factor VIII. Ovulatory dysfunction is common in the first years after menarche, but it causes irregular, unpredictable bleeding, not heavy regular flow with bleeding elsewhere. Structural causes such as polyps and leiomyomas are rare at 15.",
+  "w": {
+   "Ovulatory dysfunction": "Anovulation is common just after menarche and causes irregular, unpredictable bleeding; her cycles are regular, and it cannot explain nosebleeds or a prolonged aPTT.",
+   "Leiomyoma": "Fibroids cause heavy menstrual bleeding in women in their thirties and forties with an enlarged, irregular uterus; they are rare at 15 and do not cause nosebleeds.",
+   "Polyp": "An endometrial polyp typically causes intermenstrual spotting in an adult; it cannot explain bleeding from the nose and after a tooth extraction.",
+   "Iatrogenic": "Iatrogenic bleeding follows anticoagulants, hormonal contraception or an IUD; she takes no medications that could explain lifelong heavy bleeding."
+  },
+  "et": [
+   [
+    "Option",
+    "PALM or COEIN group",
+    "Typical age",
+    "Bleeding pattern"
+   ],
+   [
+    [
+     "Coagulopathy",
+     "Nonstructural",
+     "From menarche",
+     "Heavy regular flow plus bleeding elsewhere"
+    ],
+    [
+     "Ovulatory dysfunction",
+     "Nonstructural",
+     "Adolescence, perimenopause, PCOS",
+     "Irregular and unpredictable"
+    ],
+    [
+     "Leiomyoma",
+     "Structural",
+     "Thirties to forties",
+     "Heavy regular flow, enlarged uterus"
+    ],
+    [
+     "Polyp",
+     "Structural",
+     "Adults",
+     "Intermenstrual spotting"
+    ],
+    [
+     "Iatrogenic",
+     "Nonstructural",
+     "Any age, on a drug or device",
+     "Varies with the cause"
+    ]
+   ]
+  ],
+  "bl": "Heavy menstrual bleeding since menarche with nosebleeds suggests coagulopathy, usually von Willebrand disease: the C in PALM-COEIN.",
+  "ef": "rp9_aub",
+  "pt": {
+   "hl": [
+    "Coagulopathy",
+    "von Willebrand disease"
+   ],
+   "say": "On the nonstructural COEIN side, C is coagulopathy: von Willebrand disease causes heavy bleeding since menarche with nosebleeds and bleeding after dental work, with a mildly prolonged aPTT."
+  }
+ },
+ {
+  "id": "rp9q10",
+  "d": 3,
+  "tags": [
+   "treatment-sequence",
+   "imaging-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp9-11"
+  ],
+  "obj": [
+   "BICEP-WEIAND.5",
+   "BICEP-WEIAND.7",
+   "BICEP-WEIAND.3"
+  ],
+  "s": "A 34-year-old woman and her partner have tried to conceive for 14 months. She was treated for pelvic inflammatory disease at age 22. Her cycles are regular, and a mid-luteal progesterone confirms ovulation. Her partner's semen analysis is normal. Hysterosalpingography shows a normal uterine cavity and both tubes dilated at their distal ends, with no contrast entering the peritoneal cavity.",
+  "l": "Which is the most appropriate next step in management?",
+  "o": [
+   "In vitro fertilization",
+   "Letrozole ovulation induction",
+   "Intrauterine insemination",
+   "Clomiphene with timed intercourse",
+   "Laparoscopic ovarian drilling"
+  ],
+  "a": 0,
+  "e": "Contrast that fills dilated distal tubes but never spills into the peritoneum shows bilateral **hydrosalpinges**, blocked tubes damaged by her earlier pelvic inflammatory disease. Sperm cannot reach the oocyte, so treatments that depend on open tubes, including ovulation induction and intrauterine insemination, cannot work. **In vitro fertilization** bypasses the tubes. The hydrosalpinges are usually removed or clipped first, because their fluid leaks into the uterus and lowers implantation. She already ovulates, so letrozole or clomiphene adds nothing.",
+  "w": {
+   "Letrozole ovulation induction": "Letrozole restores ovulation in anovulatory women, but her mid-luteal progesterone shows she already ovulates, and more oocytes still cannot pass blocked tubes.",
+   "Intrauterine insemination": "Insemination places sperm in the uterus, but they must still travel through the tubes to meet the oocyte; with both tubes blocked it cannot succeed.",
+   "Clomiphene with timed intercourse": "Clomiphene induces ovulation by blocking hypothalamic estrogen receptors; she ovulates already, and her problem is tubal obstruction, not ovulation.",
+   "Laparoscopic ovarian drilling": "Ovarian drilling can restore ovulation in clomiphene-resistant PCOS; she has neither PCOS nor anovulation, so it does nothing for blocked tubes."
+  },
+  "et": [
+   [
+    "Option",
+    "Problem it treats",
+    "Needs open tubes",
+    "How it works"
+   ],
+   [
+    [
+     "In vitro fertilization",
+     "Tubal obstruction, severe male factor",
+     "No",
+     "Fertilization in the lab, embryo placed in the uterus"
+    ],
+    [
+     "Letrozole ovulation induction",
+     "Anovulation",
+     "Yes",
+     "Aromatase inhibition raises FSH"
+    ],
+    [
+     "Intrauterine insemination",
+     "Mild male factor, unexplained infertility",
+     "Yes",
+     "Washed sperm placed in the uterus"
+    ],
+    [
+     "Clomiphene with timed intercourse",
+     "Anovulation",
+     "Yes",
+     "Estrogen receptor blockade raises FSH"
+    ],
+    [
+     "Laparoscopic ovarian drilling",
+     "Clomiphene-resistant PCOS",
+     "Yes",
+     "Destroys androgen-producing stroma"
+    ]
+   ]
+  ],
+  "bl": "Bilateral hydrosalpinges with no spill after pelvic infection mean tubal factor infertility; in vitro fertilization bypasses the tubes.",
+  "ef": "rp9_infertility",
+  "pt": {
+   "hl": [
+    "Dilated, no spill: hydrosalpinx",
+    "IVF bypasses the tubes"
+   ],
+   "say": "On hysterosalpingography a dilated tube with no spill is a hydrosalpinx, and in the tubes column in vitro fertilization bypasses the damaged tubes after the hydrosalpinges are clipped or removed."
+  }
+ },
+ {
+  "id": "rp9q11",
+  "d": 3,
+  "tags": [
+   "drug-mechanism",
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp9-06",
+   "BP-rp9-10",
+   "BP-rp9-14"
+  ],
+  "obj": [
+   "BICEP-WEIAND.7"
+  ],
+  "s": "A 28-year-old woman with polycystic ovary syndrome has been trying to conceive for 18 months. After losing 6 percent of her body weight her BMI is 27 kg/m2, but her cycles are still 60 to 90 days apart. Her partner's semen analysis and her hysterosalpingogram are normal. Her physician plans an oral drug taken on cycle days 3 through 7.",
+  "l": "Which drug and mechanism are most appropriate as first-line therapy?",
+  "o": [
+   "Letrozole, inhibiting aromatase to lower estrogen feedback",
+   "Clomiphene, activating hypothalamic estrogen receptors",
+   "Metformin, directly stimulating follicle growth",
+   "Cabergoline, lowering prolactin to restore GnRH pulses",
+   "Spironolactone, blocking ovarian androgen receptors"
+  ],
+  "a": 0,
+  "e": "In anovulatory PCOS, **letrozole** is the first-line oral ovulation-induction drug because it gives higher ovulation and live-birth rates than clomiphene. As an aromatase inhibitor it lowers estradiol, so the hypothalamus and pituitary sense less negative feedback and release more FSH, which drives a follicle to maturity. Clomiphene also raises FSH, but by blocking, not activating, hypothalamic estrogen receptors, and its long anti-estrogen effect can thin the endometrium. Metformin improves insulin resistance but is a weak ovulation inducer on its own.",
+  "w": {
+   "Clomiphene, activating hypothalamic estrogen receptors": "Clomiphene is a selective modulator that blocks hypothalamic estrogen receptors; activating them would suppress GnRH. It is also second-line to letrozole in PCOS.",
+   "Metformin, directly stimulating follicle growth": "Metformin lowers insulin and can modestly improve cycles, but it has no direct follicle-stimulating action and gives fewer live births than letrozole.",
+   "Cabergoline, lowering prolactin to restore GnRH pulses": "Cabergoline treats hyperprolactinemic anovulation; anovulation in PCOS comes from androgen excess and insulin resistance with normal prolactin.",
+   "Spironolactone, blocking ovarian androgen receptors": "Spironolactone blocks androgen receptors in skin to treat hirsutism; it does not induce ovulation and is stopped before conception because it can feminize a male fetus."
+  },
+  "et": [
+   [
+    "Option",
+    "Drug class",
+    "Effect on FSH",
+    "Place in PCOS care"
+   ],
+   [
+    [
+     "Letrozole, inhibiting aromatase to lower estrogen feedback",
+     "Aromatase inhibitor",
+     "Raises it",
+     "First-line ovulation induction"
+    ],
+    [
+     "Clomiphene, activating hypothalamic estrogen receptors",
+     "Selective estrogen receptor modulator",
+     "Raises it, by blocking receptors",
+     "Second-line ovulation induction"
+    ],
+    [
+     "Metformin, directly stimulating follicle growth",
+     "Biguanide insulin sensitizer",
+     "Little change",
+     "Metabolic adjunct"
+    ],
+    [
+     "Cabergoline, lowering prolactin to restore GnRH pulses",
+     "Dopamine agonist",
+     "Raises it only if prolactin was high",
+     "Hyperprolactinemia, not PCOS"
+    ],
+    [
+     "Spironolactone, blocking ovarian androgen receptors",
+     "Androgen receptor antagonist",
+     "No effect",
+     "Hirsutism; stopped before conception"
+    ]
+   ]
+  ],
+  "bl": "Letrozole is first-line ovulation induction in PCOS: aromatase inhibition lowers estrogen feedback, so FSH rises and a follicle matures.",
+  "ef": "rp9_infertility",
+  "pt": {
+   "hl": [
+    "Letrozole first in PCOS",
+    "Aromatase inhibitor lowers estrogen"
+   ],
+   "say": "In the ovulation column letrozole comes first in PCOS: as an aromatase inhibitor it lowers estrogen feedback, so FSH rises and a follicle matures."
+  }
+ }
+]

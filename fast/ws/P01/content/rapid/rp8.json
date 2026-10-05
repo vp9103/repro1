@@ -1,0 +1,457 @@
+[
+ {
+  "id": "rp8r01",
+  "tags": [
+   "meiosis-karyotype"
+  ],
+  "bp": [
+   "BP-rp8-01"
+  ],
+  "q": "Where is a primary oocyte arrested until its follicle's LH surge?",
+  "o": [
+   "Prophase I",
+   "Metaphase II",
+   "Anaphase I",
+   "Telophase I",
+   "Prophase II"
+  ],
+  "a": 0,
+  "x": "Prophase I. Oocytes enter meiosis I in the fetal ovary and stay paused there, 2N with 4C of DNA, for up to five decades until the LH surge of their own cycle restarts division.",
+  "w": {
+   "Metaphase II": "Metaphase II is the second pause, reached only after the surge completes meiosis I; it lasts from ovulation until fertilization.",
+   "Anaphase I": "Anaphase I is the moment homologues separate after the surge; it takes minutes and is where nondisjunction errors appear.",
+   "Telophase I": "Telophase I is the brief end of meiosis I, when the first polar body pinches off just before ovulation.",
+   "Prophase II": "Prophase II is crossed quickly on the way to metaphase II; the secondary oocyte never rests there."
+  },
+  "media": "fig:rp8_oocyte",
+  "pt": {
+   "hl": [
+    "arrested in prophase I"
+   ],
+   "say": "The primary oocyte band says arrested in prophase I, from fetal life until the LH surge."
+  }
+ },
+ {
+  "id": "rp8r02",
+  "tags": [
+   "meiosis-karyotype"
+  ],
+  "bp": [
+   "BP-rp8-02"
+  ],
+  "q": "Which cell leaves the follicle at ovulation?",
+  "o": [
+   "Secondary oocyte",
+   "Primary oocyte",
+   "Mature ovum",
+   "Oogonium",
+   "Zygote"
+  ],
+  "a": 0,
+  "x": "A secondary oocyte, arrested in metaphase II with its first polar body beside it; it becomes a mature ovum only if a sperm enters and meiosis II finishes.",
+  "w": {
+   "Primary oocyte": "The primary oocyte finishes meiosis I in response to the LH surge before the follicle ruptures, so the cell that leaves is already secondary.",
+   "Mature ovum": "A true ovum exists only after sperm entry completes meiosis II and expels the second polar body; an unfertilized egg never reaches that stage.",
+   "Oogonium": "Oogonia are the mitotic precursors in the fetal ovary; all of them have entered meiosis or died before birth.",
+   "Zygote": "A zygote forms after fertilization in the ampulla, hours after ovulation, when the two pronuclei combine."
+  },
+  "media": "fig:rp8_oocyte",
+  "pt": {
+   "hl": [
+    "Ovulation releases a secondary oocyte"
+   ],
+   "say": "The bottom box states it: ovulation releases a secondary oocyte still arrested in metaphase II."
+  }
+ },
+ {
+  "id": "rp8r03",
+  "tags": [
+   "meiosis-karyotype"
+  ],
+  "bp": [
+   "BP-rp8-12"
+  ],
+  "q": "What is the ploidy and DNA content of a primary oocyte?",
+  "o": [
+   "2N, 4C",
+   "2N, 2C",
+   "1N, 2C",
+   "1N, 1C",
+   "4N, 4C"
+  ],
+  "a": 0,
+  "x": "2N, 4C. The primary oocyte replicated its DNA before entering meiosis I, so it keeps the diploid chromosome number with double the DNA until the first division halves it.",
+  "w": {
+   "2N, 2C": "This describes an oogonium or any resting body cell before DNA replication, not a cell paused partway through meiosis I.",
+   "1N, 2C": "This is the secondary oocyte after meiosis I halves the chromosome number while each chromosome still carries two chromatids.",
+   "1N, 1C": "This is the final haploid state of an ovum or spermatid, after meiosis II separates the sister chromatids.",
+   "4N, 4C": "Tetraploid cells carry four chromosome sets; meiosis replicates DNA once but never doubles the number of chromosome sets."
+  },
+  "media": "fig:rp8_oocyte",
+  "pt": {
+   "hl": [
+    "Primary oocyte: arrested in prophase I (2N, 4C)"
+   ],
+   "say": "The primary oocyte band is labeled 2N, 4C: diploid with replicated DNA."
+  }
+ },
+ {
+  "id": "rp8r04",
+  "tags": [
+   "steroidogenesis-enzymes"
+  ],
+  "bp": [
+   "BP-rp8-03"
+  ],
+  "q": "Which follicle cell supplies androstenedione to the granulosa cells?",
+  "o": [
+   "Theca interna cell",
+   "Oocyte",
+   "Cumulus cell",
+   "Surface epithelial cell",
+   "Theca externa cell"
+  ],
+  "a": 0,
+  "x": "Theca interna cells. LH drives them to convert LDL cholesterol into androstenedione, which crosses the basement membrane for granulosa aromatase to turn into estradiol.",
+  "w": {
+   "Oocyte": "The oocyte directs follicle growth with paracrine signals but has no steroid enzymes to make androgens.",
+   "Cumulus cell": "Cumulus cells are granulosa cells around the oocyte; like other granulosa cells they aromatize androgen rather than make it.",
+   "Surface epithelial cell": "The surface epithelium is a mesothelial covering and the origin of epithelial ovarian tumors, not a steroid source.",
+   "Theca externa cell": "The theca externa is a fibromuscular outer capsule of the follicle; the interna, with its LH receptors, makes the androgen."
+  },
+  "media": "fig:rp8_twocell",
+  "pt": {
+   "hl": [
+    "Theca interna cell",
+    "Cholesterol → androstenedione"
+   ],
+   "say": "The theca interna cell box shows cholesterol turning into androstenedione under LH, then crossing the membrane."
+  }
+ },
+ {
+  "id": "rp8r05",
+  "tags": [
+   "steroidogenesis-enzymes"
+  ],
+  "bp": [
+   "BP-rp8-03"
+  ],
+  "q": "Which enzyme does FSH switch on in granulosa cells?",
+  "o": [
+   "Aromatase",
+   "17α-hydroxylase",
+   "Cholesterol desmolase",
+   "5α-reductase",
+   "3β-hydroxysteroid dehydrogenase"
+  ],
+  "a": 0,
+  "x": "Aromatase. FSH induces aromatase in granulosa cells, which converts androstenedione to estrone and testosterone to estradiol; this is the FSH half of the two-cell model.",
+  "w": {
+   "17α-hydroxylase": "17α-hydroxylase is a theca enzyme driven by LH that builds androgens; granulosa cells lack it.",
+   "Cholesterol desmolase": "Desmolase performs side-chain cleavage, the first step of every steroid pathway, and is driven by LH in theca cells.",
+   "5α-reductase": "5α-reductase turns testosterone into DHT in prostate and genital skin, making a stronger androgen rather than an estrogen.",
+   "3β-hydroxysteroid dehydrogenase": "This enzyme converts pregnenolone to progesterone and DHEA to androstenedione early in the pathway; FSH does not specifically induce it for estrogen synthesis."
+  },
+  "media": "fig:rp8_twocell",
+  "pt": {
+   "hl": [
+    "FSH receptor switches on aromatase"
+   ],
+   "say": "In the granulosa cell box, the FSH receptor switches on aromatase, turning theca androgen into estrogen."
+  }
+ },
+ {
+  "id": "rp8r06",
+  "tags": [
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-rp8-04"
+  ],
+  "q": "Which estrogen predominates after menopause?",
+  "o": [
+   "Estrone",
+   "Estradiol",
+   "Estriol",
+   "Ethinyl estradiol",
+   "Equilin"
+  ],
+  "a": 0,
+  "x": "Estrone. Once the follicles are gone, most estrogen comes from aromatase in adipose tissue converting androstenedione to estrone, so heavier women make more of it.",
+  "w": {
+   "Estradiol": "Estradiol is the potent follicular estrogen of the reproductive years; its production collapses when the follicle pool is exhausted.",
+   "Estriol": "Estriol is the weak placental estrogen of pregnancy, made from fetal adrenal precursors.",
+   "Ethinyl estradiol": "Ethinyl estradiol is the synthetic estrogen in most combined oral contraceptives, not a hormone the body makes.",
+   "Equilin": "Equilin is a horse estrogen found in conjugated equine estrogen tablets, not a human hormone."
+  },
+  "media": "fig:rp8_twocell",
+  "pt": {
+   "hl": [
+    "estrone (peripheral conversion)"
+   ],
+   "say": "The outside-the-ovary box shows adipose aromatase making estrone by peripheral conversion, the main estrogen after menopause."
+  }
+ },
+ {
+  "id": "rp8r07",
+  "tags": [
+   "feedback-logic",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp8-05"
+  ],
+  "q": "Which hormone surge causes ovulation about 36 hours after it begins?",
+  "o": [
+   "LH",
+   "FSH",
+   "Estradiol",
+   "Progesterone",
+   "Prolactin"
+  ],
+  "a": 0,
+  "x": "LH. Sustained high estradiol switches the pituitary to positive feedback; the LH surge restarts meiosis I, activates proteases that open the follicle wall and luteinizes its cells.",
+  "w": {
+   "FSH": "FSH rises a little with LH at mid-cycle, but its main job is earlier: recruiting follicles and inducing granulosa aromatase.",
+   "Estradiol": "Estradiol sets off the surge by flipping feedback, but estradiol itself does not rupture the follicle; the LH it releases does.",
+   "Progesterone": "Progesterone climbs after ovulation from the corpus luteum and suppresses further surges during the luteal phase.",
+   "Prolactin": "High prolactin suppresses GnRH pulses, which blocks ovulation rather than triggering it."
+  },
+  "media": "fig:rp8_curves",
+  "pt": {
+   "hl": [
+    "LH surge"
+   ],
+   "say": "The LH surge peaks just before the ovulation line; ovulation follows about 36 hours after it begins."
+  }
+ },
+ {
+  "id": "rp8r08",
+  "tags": [
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp8-05"
+  ],
+  "q": "Which phase of the ovarian cycle stays close to 14 days long?",
+  "o": [
+   "Luteal phase",
+   "Follicular phase",
+   "Menstrual phase",
+   "Proliferative phase",
+   "Ovulatory phase"
+  ],
+  "a": 0,
+  "x": "The luteal phase. The corpus luteum has a built-in lifespan of about 14 days unless hCG rescues it, so cycle length varies mainly in the follicular phase.",
+  "w": {
+   "Follicular phase": "Follicle selection takes a variable time, so the follicular phase stretches or shrinks and sets total cycle length.",
+   "Menstrual phase": "Menstrual flow lasts about three to seven days and overlaps the start of the follicular phase.",
+   "Proliferative phase": "Proliferative is the endometrial name for the follicular half, so it varies just as much.",
+   "Ovulatory phase": "Ovulation is a single event about 36 hours after the surge begins, not a two-week stretch of the cycle."
+  },
+  "media": "fig:rp8_curves",
+  "pt": {
+   "hl": [
+    "Luteal phase: about 14 days"
+   ],
+   "say": "The ovarian phase bar labels the luteal phase about 14 days, while the follicular phase length varies."
+  }
+ },
+ {
+  "id": "rp8r09",
+  "tags": [
+   "hormone-timeline",
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp8-14"
+  ],
+  "q": "On which day of a 28-day cycle does progesterone peak?",
+  "o": [
+   "Day 21",
+   "Day 14",
+   "Day 7",
+   "Day 1",
+   "Day 28"
+  ],
+  "a": 0,
+  "x": "Day 21, about seven days after ovulation, when the corpus luteum is fully active. That is why a mid-luteal progesterone, drawn a week before menses, confirms ovulation.",
+  "w": {
+   "Day 14": "Day 14 is ovulation; progesterone is only beginning to rise as the follicle cells luteinize.",
+   "Day 7": "Day 7 is mid-follicular; estradiol is climbing and progesterone is at its lowest.",
+   "Day 1": "Day 1 is the start of menses, triggered by the fall of progesterone at the end of the previous cycle.",
+   "Day 28": "By day 28 the corpus luteum has regressed and progesterone has fallen, which is what brings on menses."
+  },
+  "media": "fig:rp8_curves",
+  "pt": {
+   "hl": [
+    "Progesterone peaks mid-luteal"
+   ],
+   "say": "Progesterone peaks mid-luteal, over day 21 on the axis, a week after ovulation."
+  }
+ },
+ {
+  "id": "rp8r10",
+  "tags": [
+   "histology-to-diagnosis",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp8-07"
+  ],
+  "q": "Which endometrial finding is the first sign of progesterone effect?",
+  "o": [
+   "Subnuclear vacuoles",
+   "Mitoses in straight glands",
+   "Stromal edema",
+   "Predecidual cells",
+   "Luminal secretions"
+  ],
+  "a": 0,
+  "x": "Subnuclear glycogen vacuoles appear about two days after ovulation, the earliest secretory change; luminal secretion, edema and predecidual cells follow over the next 12 days.",
+  "w": {
+   "Mitoses in straight glands": "Mitoses in straight tubular glands are the estradiol-driven proliferative pattern seen before ovulation.",
+   "Stromal edema": "Stromal edema peaks about a week after ovulation, near implantation, after the vacuoles have moved upward.",
+   "Predecidual cells": "Predecidual change appears around spiral arteries late in the luteal phase, just before menses or implantation.",
+   "Luminal secretions": "Secretions fill gland lumens in the mid-luteal phase, once the vacuoles have discharged above the nuclei."
+  },
+  "media": "fig:rp8_endometrium",
+  "pt": {
+   "hl": [
+    "+2 days",
+    "Subnuclear vacuoles"
+   ],
+   "say": "On the day clock, subnuclear vacuoles come first, at +2 days: the earliest sign of progesterone, before luminal secretions, stromal edema and predecidual cells appear."
+  }
+ },
+ {
+  "id": "rp8r11",
+  "tags": [
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp8-13"
+  ],
+  "q": "Which endometrial layer regenerates the lining after each menses?",
+  "o": [
+   "Stratum basalis",
+   "Stratum functionalis",
+   "Myometrium",
+   "Perimetrium",
+   "Stratum spongiosum"
+  ],
+  "a": 0,
+  "x": "The stratum basalis, fed by straight arteries, is not shed; its glands and stroma rebuild the functionalis each cycle, and removing it by curettage causes Asherman adhesions.",
+  "w": {
+   "Stratum functionalis": "The functionalis, fed by spiral arteries, is the layer that is shed, so it cannot regenerate itself.",
+   "Myometrium": "The myometrium is smooth muscle beneath the endometrium; it contracts during menses but never makes new glands.",
+   "Perimetrium": "The perimetrium is the outer serosal coat of the uterus, far from the cavity lining.",
+   "Stratum spongiosum": "The spongiosum is the deeper part of the functionalis and is shed along with the compactum."
+  },
+  "media": "fig:rp8_endometrium",
+  "pt": {
+   "hl": [
+    "Stratum basalis",
+    "Never shed"
+   ],
+   "say": "The stratum basalis is never shed: fed by straight arteries, it regrows the functionalis each cycle, and curettage through it causes Asherman syndrome."
+  }
+ },
+ {
+  "id": "rp8r12",
+  "tags": [
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp8-06"
+  ],
+  "q": "What cervical mucus pattern appears just before ovulation?",
+  "o": [
+   "Thin, watery and stretchy",
+   "Thick and scant",
+   "Dry and sticky",
+   "Purulent and yellow",
+   "Blood-streaked"
+  ],
+  "a": 0,
+  "x": "Thin, watery and stretchy. Peak estradiol makes abundant mucus that pulls into long strands (spinnbarkeit) and ferns on a slide, letting sperm swim through in the fertile window.",
+  "w": {
+   "Thick and scant": "Thick, scant mucus is the progesterone pattern of the luteal phase and of progestin contraceptives, and it blocks sperm.",
+   "Dry and sticky": "Dry, sticky mucus is typical just after menses, when estradiol is still low and the fertile window has not opened.",
+   "Purulent and yellow": "Purulent yellow discharge suggests cervicitis, such as gonorrhea or chlamydia, rather than a hormonal phase.",
+   "Blood-streaked": "Blood streaks suggest menses, a cervical lesion or trauma, not the normal ovulatory mucus change."
+  },
+  "media": "fig:rp8_tract",
+  "pt": {
+   "hl": [
+    "thin, watery, stretchy"
+   ],
+   "say": "The endocervix row shows mucinous cells making thin, watery, stretchy mucus at peak estradiol, the fertile pattern just before ovulation."
+  }
+ },
+ {
+  "id": "rp8r13",
+  "tags": [
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp8-11"
+  ],
+  "q": "Which epithelium covers the ectocervix?",
+  "o": [
+   "Nonkeratinized stratified squamous",
+   "Mucinous simple columnar",
+   "Ciliated simple columnar",
+   "Keratinized stratified squamous",
+   "Transitional epithelium"
+  ],
+  "a": 0,
+  "x": "Nonkeratinized stratified squamous epithelium covers the ectocervix and vagina; mucinous columnar cells line the endocervix, and dysplasia begins in the transformation zone where the two meet.",
+  "w": {
+   "Mucinous simple columnar": "Mucinous columnar cells line the endocervical canal and make the mucus that estradiol thins and progesterone thickens.",
+   "Ciliated simple columnar": "Ciliated columnar cells line the fallopian tube, where their beating moves the oocyte toward the uterus.",
+   "Keratinized stratified squamous": "Keratinized squamous epithelium covers skin and the outer vulva, not the moist ectocervix.",
+   "Transitional epithelium": "Transitional epithelium, or urothelium, lines the bladder and ureters rather than the genital tract."
+  },
+  "media": "fig:rp8_tract",
+  "pt": {
+   "hl": [
+    "Nonkeratinized stratified squamous"
+   ],
+   "say": "The ectocervix row reads nonkeratinized stratified squamous epithelium, continuous with the vagina; mucinous columnar cells begin only at the endocervix."
+  }
+ },
+ {
+  "id": "rp8r14",
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp8-10"
+  ],
+  "q": "What causes the mid-cycle pain called mittelschmerz?",
+  "o": [
+   "Follicle rupture at ovulation",
+   "Corpus luteum regression",
+   "Prostaglandin-driven uterine cramps",
+   "Endometrial implants on the peritoneum",
+   "Ovarian torsion"
+  ],
+  "a": 0,
+  "x": "Follicle rupture at ovulation. Fluid or blood released when the follicle opens irritates the peritoneum, giving brief one-sided lower abdominal pain in the middle of the cycle.",
+  "w": {
+   "Corpus luteum regression": "Luteolysis happens quietly at the end of the luteal phase and leads to menses, not to mid-cycle pain.",
+   "Prostaglandin-driven uterine cramps": "Prostaglandin cramps are primary dysmenorrhea at the start of menses, two weeks away from mid-cycle.",
+   "Endometrial implants on the peritoneum": "Implants cause endometriosis pain, usually with menses, intercourse or defecation, often worsening over years.",
+   "Ovarian torsion": "Torsion causes sudden severe pain with nausea and needs surgery; it is an emergency, not a monthly normal event."
+  },
+  "media": "fig:rp8_tract",
+  "pt": {
+   "hl": [
+    "Mittelschmerz",
+    "Follicle wall ruptures"
+   ],
+   "say": "The ovary row ties mittelschmerz to follicle rupture: the released fluid or blood irritates the peritoneum and gives brief one-sided pain in the middle of the cycle."
+  }
+ }
+]

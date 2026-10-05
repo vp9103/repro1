@@ -1,0 +1,389 @@
+[
+ {
+  "id": "rp2r01",
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp2-01"
+  ],
+  "q": "Which fascial sheet separates the deep from the superficial perineal pouch?",
+  "o": [
+   "Perineal membrane",
+   "Colles fascia",
+   "Scarpa fascia",
+   "Obturator fascia",
+   "Buck fascia"
+  ],
+  "a": 0,
+  "x": "The perineal membrane stretches between the ischiopubic rami; the deep pouch lies above it and the superficial pouch below it, down to Colles fascia.",
+  "w": {
+   "Colles fascia": "Colles fascia is the floor of the superficial pouch, the membranous layer of superficial fascia below the erectile roots.",
+   "Scarpa fascia": "Scarpa fascia is the membranous layer of the abdominal wall that continues into Colles fascia; it never divides the pouches.",
+   "Obturator fascia": "Obturator fascia covers obturator internus on the side wall and splits to form the pudendal canal, not the roof of the superficial pouch.",
+   "Buck fascia": "Buck fascia is the deep fascia wrapping the three erectile bodies of the penis, distal to the perineal pouches."
+  },
+  "media": "fig:rp2_pouches",
+  "pt": {
+   "hl": [
+    "Perineal membrane"
+   ],
+   "say": "The perineal membrane is the dark line between the deep pouch above and the superficial pouch below."
+  }
+ },
+ {
+  "id": "rp2r02",
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp2-01"
+  ],
+  "q": "Which structure lies in the deep perineal pouch in men?",
+  "o": [
+   "Bulbourethral glands",
+   "Bulb of the penis",
+   "Bulbospongiosus",
+   "Ischiocavernosus",
+   "Crura of the penis"
+  ],
+  "a": 0,
+  "x": "The deep pouch above the perineal membrane holds the external urethral sphincter, the membranous urethra and the bulbourethral (Cowper) glands, whose ducts pierce the membrane to reach the spongy urethra.",
+  "w": {
+   "Bulb of the penis": "The bulb is the root of the corpus spongiosum, attached to the underside of the perineal membrane in the superficial pouch.",
+   "Bulbospongiosus": "The bulbospongiosus wraps the bulb in the superficial pouch and squeezes out urine and semen.",
+   "Ischiocavernosus": "The ischiocavernosus covers each crus in the superficial pouch and helps maintain erection by compressing it.",
+   "Crura of the penis": "The crura attach to the ischiopubic rami below the perineal membrane and continue as the corpora cavernosa."
+  },
+  "media": "fig:rp2_pouches",
+  "pt": {
+   "hl": [
+    "Bulbourethral glands"
+   ],
+   "say": "The bulbourethral glands sit beside the membranous urethra inside the deep pouch."
+  }
+ },
+ {
+  "id": "rp2r03",
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp2-02"
+  ],
+  "q": "Where does urine spread after a spongy urethral rupture below the perineal membrane?",
+  "o": [
+   "Scrotum, penis and lower abdominal wall",
+   "Retropubic space around the bladder",
+   "Medial thighs and buttocks",
+   "Peritoneal cavity",
+   "Ischioanal fossae"
+  ],
+  "a": 0,
+  "x": "Urine fills the superficial pouch and follows Colles fascia, continuous with dartos and Scarpa fascia, into the scrotum, penis and abdominal wall; fusion to the fascia lata keeps it out of the thighs.",
+  "w": {
+   "Retropubic space around the bladder": "The retropubic space fills after a membranous urethral tear above the membrane, the pelvic fracture pattern, not after a straddle injury.",
+   "Medial thighs and buttocks": "Colles fascia fuses to the fascia lata just below the inguinal ligament and to the perineal membrane, sealing the thighs and anal triangle.",
+   "Peritoneal cavity": "Only an intraperitoneal bladder dome rupture spills urine into the peritoneal cavity; the urethra lies far below the peritoneum.",
+   "Ischioanal fossae": "The ischioanal fossae belong to the anal triangle behind the fused posterior edge of the membrane, so urine cannot enter them."
+  },
+  "media": "fig:rp2_pouches",
+  "pt": {
+   "hl": [
+    "Spongy urethra torn below the membrane"
+   ],
+   "say": "A spongy urethral tear fills the superficial pouch and Colles fascia steers urine into the scrotum, penis and abdominal wall."
+  }
+ },
+ {
+  "id": "rp2r04",
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp2-03"
+  ],
+  "q": "Around which bony landmark does the pudendal nerve hook?",
+  "o": [
+   "Ischial spine",
+   "Ischial tuberosity",
+   "Pubic tubercle",
+   "Anterior superior iliac spine",
+   "Sacral promontory"
+  ],
+  "a": 0,
+  "x": "Leaving below the piriformis, the pudendal nerve crosses behind the sacrospinous ligament at the ischial spine before entering the pudendal canal, which makes the spine the pudendal block landmark.",
+  "w": {
+   "Ischial tuberosity": "The ischial tuberosity is lower, the attachment of the sacrotuberous ligament and hamstrings, and the nerve runs medial to it in the canal.",
+   "Pubic tubercle": "The pubic tubercle anchors the inguinal ligament near the superficial ring, where the ilioinguinal nerve emerges instead.",
+   "Anterior superior iliac spine": "The anterior superior iliac spine is a landmark of the abdominal wall and inguinal ligament, far from the perineal nerves.",
+   "Sacral promontory": "The sacral promontory marks the back of the pelvic inlet and the diagonal conjugate, not the course of the pudendal nerve."
+  },
+  "media": "fig:rp2_pudendal",
+  "pt": {
+   "hl": [
+    "Hooks around the ischial spine"
+   ],
+   "say": "The pudendal nerve hooks around the ischial spine, the landmark used for a pudendal block."
+  }
+ },
+ {
+  "id": "rp2r05",
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp2-10"
+  ],
+  "q": "Which nerve runs in Alcock canal on the wall of the ischioanal fossa?",
+  "o": [
+   "Pudendal nerve",
+   "Obturator nerve",
+   "Sciatic nerve",
+   "Inferior gluteal nerve",
+   "Genitofemoral nerve"
+  ],
+  "a": 0,
+  "x": "Alcock canal is a split in the obturator fascia on the lateral wall of the ischioanal fossa that carries the pudendal nerve and internal pudendal vessels forward to the perineum.",
+  "w": {
+   "Obturator nerve": "The obturator nerve runs higher on the side wall through the obturator canal to the thigh adductors.",
+   "Sciatic nerve": "The sciatic nerve leaves below the piriformis and runs down the back of the thigh, never entering the perineum.",
+   "Inferior gluteal nerve": "The inferior gluteal nerve leaves below the piriformis and turns into gluteus maximus, outside the perineum.",
+   "Genitofemoral nerve": "The genitofemoral nerve runs on the psoas and through the inguinal canal to the anterior scrotum or labia and thigh."
+  },
+  "media": "fig:rp2_pudendal",
+  "pt": {
+   "hl": [
+    "pudendal (Alcock) canal"
+   ],
+   "say": "The pudendal nerve runs in the pudendal (Alcock) canal on the wall of the ischioanal fossa."
+  }
+ },
+ {
+  "id": "rp2r06",
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp2-11",
+   "BP-rp2-12"
+  ],
+  "q": "Which branch of the pudendal nerve supplies the external anal sphincter?",
+  "o": [
+   "Inferior rectal nerve",
+   "Perineal nerve",
+   "Dorsal nerve of the penis",
+   "Posterior scrotal nerve",
+   "Pelvic splanchnic nerve"
+  ],
+  "a": 0,
+  "x": "The inferior rectal nerve leaves the pudendal nerve in the pudendal canal, crosses the ischioanal fossa and supplies the external anal sphincter, perianal skin and the canal below the pectinate line.",
+  "w": {
+   "Perineal nerve": "The perineal nerve supplies the urogenital triangle: the external urethral sphincter, perineal muscles and posterior scrotal or labial skin.",
+   "Dorsal nerve of the penis": "The dorsal nerve of the penis is sensory to the glans and penile skin and supplies no sphincter.",
+   "Posterior scrotal nerve": "Posterior scrotal nerves are cutaneous branches of the superficial perineal nerve and carry only skin sensation.",
+   "Pelvic splanchnic nerve": "Pelvic splanchnic nerves are parasympathetic and act on smooth muscle; the external anal sphincter is skeletal and somatic."
+  },
+  "media": "fig:rp2_pudendal",
+  "pt": {
+   "hl": [
+    "Inferior rectal"
+   ],
+   "say": "The inferior rectal branch supplies the external anal sphincter and perianal skin."
+  }
+ },
+ {
+  "id": "rp2r07",
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp2-04"
+  ],
+  "q": "Which autonomic pathway produces erection?",
+  "o": [
+   "Parasympathetic, pelvic splanchnic",
+   "Sympathetic, hypogastric",
+   "Somatic, pudendal",
+   "Sympathetic, lumbar splanchnic",
+   "Sympathetic, sacral splanchnic"
+  ],
+  "a": 0,
+  "x": "Pelvic splanchnic nerves from S2 to S4 are parasympathetic; they release nitric oxide that relaxes the helicine arteries and sinusoids so the corpora cavernosa fill: the point step.",
+  "w": {
+   "Sympathetic, hypogastric": "Hypogastric sympathetic fibers drive emission and close the internal sphincter, and sympathetic tone ends erection through vasoconstriction.",
+   "Somatic, pudendal": "The pudendal nerve carries penile sensation and contracts the bulbospongiosus at ejaculation but does not dilate penile arteries.",
+   "Sympathetic, lumbar splanchnic": "Lumbar splanchnic nerves carry sympathetic fibers from L1 and L2 for emission, not the vasodilation of erection.",
+   "Sympathetic, sacral splanchnic": "Sacral splanchnic nerves come from the sacral sympathetic trunk and, despite the name, are sympathetic like the other splanchnics."
+  },
+  "media": "fig:rp2_pudendal",
+  "pt": {
+   "hl": [
+    "Point: erection"
+   ],
+   "say": "Erection is parasympathetic through the pelvic splanchnic nerves: the point step."
+  }
+ },
+ {
+  "id": "rp2r08",
+  "tags": [
+   "lymph-drainage",
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp2-05"
+  ],
+  "q": "Which node group drains the testis, unlike the scrotal skin around it?",
+  "o": [
+   "Para-aortic nodes",
+   "Superficial inguinal nodes",
+   "Deep inguinal nodes",
+   "External iliac nodes",
+   "Internal iliac nodes"
+  ],
+  "a": 0,
+  "x": "The testis develops near the kidney and descends with its vessels, so its lymph climbs the spermatic cord to para-aortic nodes near the renal vessels; scrotal skin drains to the groin instead.",
+  "w": {
+   "Superficial inguinal nodes": "Superficial inguinal nodes drain the scrotal skin, not the testis inside it; enlarged groin nodes suggest scrotal invasion.",
+   "Deep inguinal nodes": "Deep inguinal nodes drain the glans and the superficial inguinal group, not the testis.",
+   "External iliac nodes": "External iliac nodes drain the bladder and the inguinal outflow, but testicular lymph bypasses the pelvis entirely.",
+   "Internal iliac nodes": "Internal iliac nodes drain the prostate and rectum; testicular lymphatics run above the pelvis with the testicular vessels."
+  },
+  "media": "fig:rp2_lymph",
+  "pt": {
+   "hl": [
+    "Testis",
+    "Para-aortic (lumbar) nodes"
+   ],
+   "say": "The testis drains to para-aortic nodes, where the gonadal arteries start."
+  }
+ },
+ {
+  "id": "rp2r09",
+  "tags": [
+   "lymph-drainage"
+  ],
+  "bp": [
+   "BP-rp2-05"
+  ],
+  "q": "Which node group drains the skin of the scrotum?",
+  "o": [
+   "Superficial inguinal nodes",
+   "Para-aortic nodes",
+   "Deep inguinal nodes",
+   "Internal iliac nodes",
+   "Sacral nodes"
+  ],
+  "a": 0,
+  "x": "Scrotal skin is body wall that never moved, so like the vulva, lower vagina and penile shaft skin it drains to the superficial inguinal nodes below the inguinal ligament.",
+  "w": {
+   "Para-aortic nodes": "Para-aortic nodes receive the testis inside the scrotum, which carries its lymphatics up from its origin near the kidney.",
+   "Deep inguinal nodes": "Deep inguinal nodes receive the glans and the outflow of the superficial group, a second station for scrotal skin.",
+   "Internal iliac nodes": "Internal iliac nodes drain pelvic organs such as the prostate, cervix and upper anal canal, not perineal skin.",
+   "Sacral nodes": "Sacral nodes in front of the sacrum receive the prostate, cervix and rectum, not the skin of the scrotum."
+  },
+  "media": "fig:rp2_lymph",
+  "pt": {
+   "hl": [
+    "Scrotum and penile shaft skin"
+   ],
+   "say": "Scrotal skin drains to the superficial inguinal nodes, below the inguinal ligament."
+  }
+ },
+ {
+  "id": "rp2r10",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp2-06"
+  ],
+  "q": "Which lesion of the anal canal typically causes painless bright red bleeding?",
+  "o": [
+   "Internal hemorrhoid",
+   "External hemorrhoid",
+   "Anal fissure",
+   "Perianal abscess",
+   "Anal squamous cell carcinoma"
+  ],
+  "a": 0,
+  "x": "Internal hemorrhoids arise from the superior rectal plexus above the pectinate line, where visceral afferents sense only stretch, so they bleed bright red blood without pain.",
+  "w": {
+   "External hemorrhoid": "External hemorrhoids lie below the pectinate line under skin supplied by the inferior rectal nerve, so they hurt, especially when thrombosed.",
+   "Anal fissure": "A fissure is a tear in the squamous lining below the line, usually posterior midline, causing sharp pain with each bowel movement.",
+   "Perianal abscess": "A perianal abscess is an infected collection under somatically innervated skin, causing throbbing pain, swelling and fever rather than painless bleeding.",
+   "Anal squamous cell carcinoma": "Squamous carcinoma arises below the line in somatically innervated lining and often causes pain, bleeding and a palpable mass."
+  },
+  "media": "fig:rp2_pectinate",
+  "pt": {
+   "hl": [
+    "Internal hemorrhoids: painless bleeding"
+   ],
+   "say": "Internal hemorrhoids lie above the pectinate line, where visceral nerves make bleeding painless."
+  }
+ },
+ {
+  "id": "rp2r11",
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp2-07"
+  ],
+  "q": "Where do the Bartholin gland ducts open?",
+  "o": [
+   "Posterolateral vaginal orifice",
+   "Beside the external urethral orifice",
+   "Labia majora skin",
+   "Clitoral prepuce",
+   "Posterior vaginal fornix"
+  ],
+  "a": 0,
+  "x": "The greater vestibular (Bartholin) glands lie in the superficial pouch behind the vestibular bulbs, and their ducts open into the vestibule at the posterolateral vaginal orifice, near 4 and 8 o'clock.",
+  "w": {
+   "Beside the external urethral orifice": "The paraurethral (Skene) glands, not Bartholin glands, open beside the external urethral orifice in the anterior vestibule.",
+   "Labia majora skin": "The labia majora carry hair follicles, sebaceous and sweat glands; Bartholin ducts open medial to them, inside the vestibule.",
+   "Clitoral prepuce": "The prepuce is the hood formed by the labia minora over the clitoris, anterior to the urethral orifice.",
+   "Posterior vaginal fornix": "The posterior fornix is deep in the vagina behind the cervix, far above the vestibule where these ducts open."
+  },
+  "media": "fig:rp2_pouches",
+  "pt": {
+   "hl": [
+    "Bartholin glands in women"
+   ],
+   "say": "Bartholin glands sit in the superficial pouch, and their ducts open at the posterolateral vaginal orifice."
+  }
+ },
+ {
+  "id": "rp2r12",
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp2-08"
+  ],
+  "q": "Which part of the male urethra is shortest and passes through the external sphincter?",
+  "o": [
+   "Membranous urethra",
+   "Prostatic urethra",
+   "Spongy urethra",
+   "Preprostatic urethra",
+   "Navicular fossa"
+  ],
+  "a": 0,
+  "x": "The membranous urethra is about 2 cm long, runs through the deep perineal pouch surrounded by the external urethral sphincter, and is the narrowest, least distensible part, so it tears in pelvic fractures.",
+  "w": {
+   "Prostatic urethra": "The prostatic urethra is about 3 cm long within the prostate and receives the ejaculatory ducts; it is the widest part.",
+   "Spongy urethra": "The spongy urethra is the longest part, running in the corpus spongiosum from the bulb to the external meatus.",
+   "Preprostatic urethra": "The short preprostatic part lies in the bladder neck, surrounded by the smooth internal sphincter, not the skeletal external sphincter.",
+   "Navicular fossa": "The navicular fossa is the dilated end of the spongy urethra within the glans, just inside the external meatus."
+  },
+  "media": "fig:rp2_pouches",
+  "pt": {
+   "hl": [
+    "Membranous urethra"
+   ],
+   "say": "The membranous urethra passes through the deep pouch inside the external urethral sphincter."
+  }
+ }
+]

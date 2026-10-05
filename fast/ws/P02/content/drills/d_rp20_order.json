@@ -1,0 +1,47 @@
+{
+ "id": "d_rp20_order",
+ "c": "rp20",
+ "kind": "order",
+ "t": "Working up a painless testicular lump",
+ "tags": [
+  "workup-sequence",
+  "tumor-markers"
+ ],
+ "bp": [
+  "BP-rp20-10",
+  "BP-rp20-11",
+  "BP-rp20-13"
+ ],
+ "q": "Put the steps in the evaluation and treatment of a painless, firm testicular mass in a young man in the best order.",
+ "key": "Each step prepares for the next: bedside signs and ultrasound establish a solid intratesticular mass, markers and sperm banking are done before treatment alters them, groin orchiectomy gives the diagnosis without breaching scrotal lymphatics, and staging and marker follow-up come only after the primary tumor is removed.",
+ "items": [
+  [
+   "Examine the scrotum and transilluminate the mass",
+   "Bedside examination first separates a cystic swelling that glows, such as a hydrocele or spermatocele, from a firm mass that blocks light and must be treated as cancer."
+  ],
+  [
+   "Obtain a scrotal ultrasound",
+   "Ultrasound confirms a solid intratesticular lesion and separates it from fluid collections and a varicocele outside the testis, before any surgery is planned."
+  ],
+  [
+   "Draw AFP, hCG and LDH before surgery",
+   "Preoperative markers suggest the tumor type, contribute to staging and give the baseline needed to judge how fast they fall after removal."
+  ],
+  [
+   "Offer sperm banking",
+   "Surgery, chemotherapy and radiation can all impair fertility, so banking is offered before treatment begins in a young man who may want children."
+  ],
+  [
+   "Perform radical inguinal orchiectomy with high ligation of the cord",
+   "Removing the testis and cord through the groin avoids the scrotal lymphatics, which drain to inguinal nodes, and provides the tissue diagnosis."
+  ],
+  [
+   "Stage with CT of the abdomen and chest",
+   "After the primary tumor is removed, imaging looks for para-aortic nodes and lung spread, the usual routes of testicular tumor metastasis."
+  ],
+  [
+   "Repeat the markers and follow their fall against their half-lives",
+   "Markers that decline more slowly than their half-lives signal residual or metastatic disease, which guides further treatment."
+  ]
+ ]
+}

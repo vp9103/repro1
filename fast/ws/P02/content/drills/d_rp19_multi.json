@@ -1,0 +1,115 @@
+{
+ "id": "d_rp19_multi",
+ "c": "rp19",
+ "kind": "multi",
+ "t": "Sertoli, Leydig, germ cell or myoid cell?",
+ "tags": [
+  "cell-of-origin",
+  "hormone-actions"
+ ],
+ "bp": [
+  "BP-rp19-01",
+  "BP-rp19-02"
+ ],
+ "key": "Ask where the cell sits and which pituitary hormone it answers: inside the tubule wall and answering FSH is a Sertoli cell, in the interstitium outside the tubule and answering LH is a Leydig cell, a cell that changes ploidy as it moves toward the lumen is a germ cell, and a contractile cell wrapped around the outside is a myoid cell.",
+ "cols": [
+  {
+   "id": "sertoli",
+   "l": "Sertoli cell"
+  },
+  {
+   "id": "leydig",
+   "l": "Leydig cell"
+  },
+  {
+   "id": "germ",
+   "l": "Germ cell"
+  },
+  {
+   "id": "myoid",
+   "l": "Peritubular myoid cell"
+  }
+ ],
+ "items": [
+  [
+   "Carries the FSH receptor",
+   "sertoli",
+   "FSH acts only on Sertoli cells inside the tubule, which is why FSH controls sperm support while LH controls testosterone."
+  ],
+  [
+   "Secretes inhibin B, which selectively suppresses FSH",
+   "sertoli",
+   "Inhibin B travels to the pituitary and lowers FSH alone, so loss of germ cells raises FSH while LH and testosterone stay normal."
+  ],
+  [
+   "Secretes androgen-binding protein",
+   "sertoli",
+   "It holds testosterone inside the tubule at 50 to 100 times the serum level, the high local concentration that spermatogenesis needs."
+  ],
+  [
+   "Forms tight junctions that create the blood-testis barrier",
+   "sertoli",
+   "Junctions between neighboring Sertoli cells split the tubule into basal and adluminal compartments and hide meiotic cell antigens from the immune system."
+  ],
+  [
+   "Engulfs the cytoplasm shed by spermatids",
+   "sertoli",
+   "At the end of spermiogenesis, Sertoli cells phagocytose the residual bodies that spermatids discard as they slim down into sperm."
+  ],
+  [
+   "Secretes anti-Müllerian hormone in the fetus",
+   "sertoli",
+   "Fetal Sertoli cells make AMH, which causes the Müllerian ducts to regress so that a male fetus has no uterus or tubes."
+  ],
+  [
+   "Carries the LH receptor, and binds hCG as well",
+   "leydig",
+   "LH and hCG act through the same receptor, so hCG injections stimulate Leydig cells to make testosterone."
+  ],
+  [
+   "Makes testosterone from cholesterol",
+   "leydig",
+   "Under LH, Leydig cells convert cholesterol to testosterone, and StAR-mediated cholesterol entry into mitochondria is the rate-limiting step."
+  ],
+  [
+   "Contains rod-shaped Reinke crystals",
+   "leydig",
+   "These crystalloids are the histologic signature of Leydig cells and their tumors, which cause precocious puberty or gynecomastia."
+  ],
+  [
+   "Lies in the interstitium beside capillaries, outside the barrier",
+   "leydig",
+   "Leydig cells sit between the tubules beside capillaries, so they release testosterone into the blood and nearby tubules without crossing the barrier."
+  ],
+  [
+   "Divides by mitosis on the basement membrane",
+   "germ",
+   "Spermatogonia are diploid stem cells that renew themselves and send committed daughters inward, so they sit outside the barrier."
+  ],
+  [
+   "Largest and most conspicuous cell on biopsy, with a long meiotic prophase",
+   "germ",
+   "Primary spermatocytes spend weeks in prophase of meiosis I, so they are the meiotic cell most often caught on a section."
+  ],
+  [
+   "Haploid cell that finishes meiosis II within hours and is rarely seen",
+   "germ",
+   "The second division is so fast that secondary spermatocytes are seldom caught on a section, and many cells labeled as such are early spermatids."
+  ],
+  [
+   "Remodels without dividing to build an acrosome and a tail",
+   "germ",
+   "Spermatids undergo spermiogenesis: the Golgi forms the acrosome, a centriole grows the flagellum and the nucleus condenses."
+  ],
+  [
+   "Contractile cell wrapped around the outside of the tubule",
+   "myoid",
+   "Peritubular myoid cells are smooth-muscle-like cells that surround each tubule, outside the Sertoli cells and basement membrane."
+  ],
+  [
+   "Squeezes sperm along the tubule toward the rete testis",
+   "myoid",
+   "Sperm are immotile when released, so contraction of the myoid cells and the flow of fluid carry them out of the testis."
+  ]
+ ]
+}

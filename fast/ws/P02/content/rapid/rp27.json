@@ -1,0 +1,438 @@
+[
+ {
+  "id": "rp27r01",
+  "tags": [
+   "blood-supply"
+  ],
+  "bp": [
+   "BP-rp27-02"
+  ],
+  "q": "Which placental factor traps VEGF and drives preeclampsia?",
+  "o": [
+   "sFlt-1",
+   "Placental growth factor",
+   "Thromboxane A2",
+   "Endothelin-1",
+   "Prostacyclin"
+  ],
+  "a": 0,
+  "x": "The ischemic placenta releases sFlt-1, a soluble VEGF receptor that binds VEGF and placental growth factor so they cannot maintain maternal endothelium; high sFlt-1 is why vessels leak and constrict.",
+  "w": {
+   "Placental growth factor": "Placental growth factor is one of the proangiogenic molecules that sFlt-1 traps; its level falls in preeclampsia, which is why a low PlGF is used as a marker.",
+   "Thromboxane A2": "Thromboxane rises relative to prostacyclin in preeclampsia and is the reason aspirin helps, but it is a downstream vasoconstrictor, not the VEGF-binding trap.",
+   "Endothelin-1": "Endothelin-1 is released by injured endothelium and adds vasoconstriction, but it follows the endothelial damage rather than starting it from the placenta.",
+   "Prostacyclin": "Prostacyclin is a vasodilator made by healthy endothelium; its production falls in preeclampsia, so it cannot be the factor that causes the disease."
+  },
+  "media": "fig:rp27_spiral",
+  "pt": {
+   "hl": [
+    "Ischemic placenta releases sFlt-1"
+   ],
+   "say": "At the bottom of the preeclampsia panel, the ischemic placenta releases sFlt-1, which the next row shows trapping VEGF and PlGF."
+  }
+ },
+ {
+  "id": "rp27r02",
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp27-03"
+  ],
+  "q": "What is the first sign of magnesium sulfate toxicity?",
+  "o": [
+   "Loss of deep tendon reflexes",
+   "Respiratory depression",
+   "Cardiac arrest",
+   "Seizures",
+   "Hyperreflexia with clonus"
+  ],
+  "a": 0,
+  "x": "Magnesium blocks neuromuscular transmission, and loss of deep tendon reflexes appears at lower levels than respiratory depression or cardiac arrest, so hourly reflex checks catch toxicity early, especially when urine output falls.",
+  "w": {
+   "Respiratory depression": "Respiratory depression is real but comes later, at higher magnesium levels than those that abolish reflexes; waiting for it means missing the early warning.",
+   "Cardiac arrest": "Cardiac arrest is the final stage of magnesium toxicity at very high levels; reflexes disappear long before the heart is affected.",
+   "Seizures": "Magnesium prevents eclamptic convulsions; a convulsion during the infusion suggests an inadequate level or another cause, not toxicity.",
+   "Hyperreflexia with clonus": "Brisk reflexes with clonus signal the neurologic irritability of preeclampsia that magnesium treats; toxicity does the opposite and abolishes reflexes."
+  }
+ },
+ {
+  "id": "rp27r03",
+  "tags": [
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp27-03"
+  ],
+  "q": "Which drug reverses magnesium sulfate toxicity?",
+  "o": [
+   "Calcium gluconate",
+   "Naloxone",
+   "Flumazenil",
+   "Protamine sulfate",
+   "Physostigmine"
+  ],
+  "a": 0,
+  "x": "Calcium gluconate antagonizes magnesium at the neuromuscular junction and cardiac cell membranes, restoring breathing within minutes; it is given IV after the magnesium infusion is stopped.",
+  "w": {
+   "Naloxone": "Naloxone reverses opioid respiratory depression; magnesium acts on calcium-dependent transmitter release, which only calcium can counter.",
+   "Flumazenil": "Flumazenil reverses benzodiazepines at the GABA-A receptor and has no effect on magnesium blocking neuromuscular transmission.",
+   "Protamine sulfate": "Protamine neutralizes heparin; the shared word sulfate is a coincidence of naming, not a pharmacologic link to magnesium.",
+   "Physostigmine": "Physostigmine reverses anticholinergic toxicity by blocking acetylcholinesterase; it does not overcome magnesium blocking calcium entry at nerve terminals."
+  }
+ },
+ {
+  "id": "rp27r04",
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp27-13"
+  ],
+  "q": "Which blood pressure marks the severe range in pregnancy?",
+  "o": [
+   "160/110 or higher",
+   "140/90 or higher",
+   "150/100 or higher",
+   "130/80 or higher",
+   "180/120 or higher"
+  ],
+  "a": 0,
+  "x": "A pressure of 160/110 or higher is severe range: it risks maternal stroke, needs treatment within about an hour and makes preeclampsia one with severe features.",
+  "w": {
+   "140/90 or higher": "140/90 is the diagnostic threshold for hypertension in pregnancy; it defines gestational hypertension or preeclampsia but not the severe range.",
+   "150/100 or higher": "150/100 sits between the diagnostic and severe thresholds; it is abnormal and needs close follow-up, but it does not define the severe range.",
+   "130/80 or higher": "130/80 marks stage 1 hypertension outside pregnancy; obstetric definitions use 140/90 for diagnosis and 160/110 for severity.",
+   "180/120 or higher": "180/120 defines hypertensive crisis in nonpregnant adults; in pregnancy stroke risk rises sharply at lower values, so treatment starts at 160/110."
+  }
+ },
+ {
+  "id": "rp27r05",
+  "tags": [
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp27-04"
+  ],
+  "q": "When are patients without risk factors screened for gestational diabetes?",
+  "o": [
+   "24 to 28 weeks",
+   "10 to 14 weeks",
+   "18 to 22 weeks",
+   "32 to 36 weeks",
+   "At the postpartum visit"
+  ],
+  "a": 0,
+  "x": "Insulin resistance from human placental lactogen climbs through the late second trimester, so screening at 24 to 28 weeks catches diabetes while there is still time to prevent fetal overgrowth.",
+  "w": {
+   "10 to 14 weeks": "Early testing is reserved for high-risk patients to find preexisting diabetes; placental insulin resistance is too low this early to unmask gestational diabetes.",
+   "18 to 22 weeks": "18 to 22 weeks is the window for the anatomy ultrasound; insulin resistance is still rising, so screening then misses many cases.",
+   "32 to 36 weeks": "Screening this late leaves too little time for diet or insulin to prevent macrosomia; 36 to 37 weeks is when group B strep is cultured instead.",
+   "At the postpartum visit": "The postpartum test at 4 to 12 weeks checks whether diabetes persists after a diagnosed pregnancy; it is not the screening point."
+  }
+ },
+ {
+  "id": "rp27r06",
+  "tags": [
+   "fuel-metabolism"
+  ],
+  "bp": [
+   "BP-rp27-04"
+  ],
+  "q": "Which placental hormone chiefly causes maternal insulin resistance?",
+  "o": [
+   "Human placental lactogen",
+   "Human chorionic gonadotropin",
+   "Estriol",
+   "Relaxin",
+   "Inhibin A"
+  ],
+  "a": 0,
+  "x": "Human placental lactogen rises with placental mass and blunts insulin action, so the mother burns fatty acids from lipolysis while glucose is spared for the fetus.",
+  "w": {
+   "Human chorionic gonadotropin": "hCG peaks near 10 weeks to rescue the corpus luteum and then falls, while insulin resistance climbs in the second half of pregnancy.",
+   "Estriol": "Estriol is made from fetal adrenal DHEA-S and reflects fetal and placental health; it is not the main driver of insulin resistance.",
+   "Relaxin": "Relaxin softens the cervix and loosens pelvic ligaments; it has little effect on how tissues handle glucose.",
+   "Inhibin A": "Inhibin A comes from the placenta and is part of the second-trimester quad screen; it suppresses FSH and has no role in insulin resistance."
+  },
+  "media": "fig:rp27_gdm",
+  "pt": {
+   "hl": [
+    "Placental lactogen (hPL)"
+   ],
+   "say": "At the top of the mother panel, placental lactogen (hPL) and cortisol cause insulin resistance, sparing glucose for the fetus."
+  }
+ },
+ {
+  "id": "rp27r07",
+  "tags": [
+   "teratogen-timing"
+  ],
+  "bp": [
+   "BP-rp27-05"
+  ],
+  "q": "Which anomaly is most specific for pregestational diabetes?",
+  "o": [
+   "Caudal regression syndrome",
+   "Ebstein anomaly",
+   "Cleft lip and palate",
+   "Phocomelia",
+   "Gastroschisis"
+  ],
+  "a": 0,
+  "x": "High glucose during organogenesis disturbs the caudal mesoderm, so caudal regression syndrome, sacral agenesis with lower-limb hypoplasia, is the most specific diabetic anomaly, although heart defects are more common.",
+  "w": {
+   "Ebstein anomaly": "Ebstein anomaly, a downward-displaced tricuspid valve, is the classic lithium signature; diabetic heart defects are transposition and ventricular septal defects.",
+   "Cleft lip and palate": "Clefts are linked to phenytoin, topiramate, isotretinoin and smoking; they are not the signature malformation of maternal hyperglycemia.",
+   "Phocomelia": "Phocomelia, the short flipper-like limbs of thalidomide exposure, reflects a drug effect on limb buds rather than hyperglycemia.",
+   "Gastroschisis": "Gastroschisis is linked to young maternal age, smoking and vasoconstrictive drugs; diabetes raises neural tube and caudal defects instead."
+  }
+ },
+ {
+  "id": "rp27r08",
+  "tags": [
+   "bleeding-source"
+  ],
+  "bp": [
+   "BP-rp27-06"
+  ],
+  "q": "Painless bright-red bleeding at 32 weeks with a normal fetal heart suggests which diagnosis?",
+  "o": [
+   "Placenta previa",
+   "Placental abruption",
+   "Vasa previa",
+   "Uterine rupture",
+   "Placenta accreta"
+  ],
+  "a": 0,
+  "x": "In placenta previa the placenta lies over the os, and as the lower segment thins it bleeds maternal blood painlessly from a soft uterus, so the fetal heart usually stays normal.",
+  "w": {
+   "Placental abruption": "Abruption hurts because blood collects behind the placenta and irritates the myometrium; the uterus is tender and the fetus often shows distress.",
+   "Vasa previa": "Vasa previa bleeds fetal blood when the membranes rupture, so the fetal heart drops quickly; a normal tracing argues against it.",
+   "Uterine rupture": "Rupture occurs mostly in labor after a prior cesarean and brings pain, loss of station and fetal bradycardia.",
+   "Placenta accreta": "Accreta is usually silent before delivery and bleeds when the placenta fails to separate; antepartum bleeding comes from an accompanying previa."
+  },
+  "media": "fig:rp27_bleeding",
+  "pt": {
+   "hl": [
+    "Placenta previa",
+    "Usually normal"
+   ],
+   "say": "The Placenta previa column is painless, soft and nontender, with a usually normal fetal heart, which matches this bleeding."
+  }
+ },
+ {
+  "id": "rp27r09",
+  "tags": [
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp27-06"
+  ],
+  "q": "What must be avoided until ultrasound excludes placenta previa?",
+  "o": [
+   "Digital cervical exam",
+   "Transvaginal ultrasound",
+   "Continuous fetal monitoring",
+   "Type and crossmatch",
+   "Intravenous fluid bolus"
+  ],
+  "a": 0,
+  "x": "A finger in the cervix can push into or tear a placenta lying over the os and provoke torrential bleeding, so a digital exam waits until ultrasound shows where the placenta sits.",
+  "w": {
+   "Transvaginal ultrasound": "Transvaginal ultrasound is safe and more accurate than the abdominal route, because the probe stays in the vagina at an angle and does not enter the cervix.",
+   "Continuous fetal monitoring": "Fetal monitoring is needed in any third-trimester bleed to check fetal oxygenation; it touches only the abdomen and cannot disturb the placenta.",
+   "Type and crossmatch": "Blood should be typed and crossmatched early, because previa can bleed heavily; drawing it carries no risk to the placenta.",
+   "Intravenous fluid bolus": "Large-bore access and fluids support a bleeding mother; they treat blood loss and do nothing to disturb the placental site."
+  },
+  "media": "fig:rp27_bleeding",
+  "pt": {
+   "hl": [
+    "No digital exam"
+   ],
+   "say": "In the First move row of the previa column: no digital exam, because a finger through the os can tear the placenta."
+  }
+ },
+ {
+  "id": "rp27r10",
+  "tags": [
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp27-06"
+  ],
+  "q": "Which history most strongly predisposes to placenta accreta?",
+  "o": [
+   "Prior cesarean with a current previa",
+   "Cocaine use during pregnancy",
+   "Chronic hypertension before pregnancy",
+   "First pregnancy after age 35",
+   "Gestational diabetes on insulin"
+  ],
+  "a": 0,
+  "x": "A cesarean scar lacks normal decidua, and a previa implants right over the lower-segment scar, so villi anchor directly to or through the myometrium; risk climbs with each additional cesarean.",
+  "w": {
+   "Cocaine use during pregnancy": "Cocaine constricts maternal vessels and is a classic cause of placental abruption, early separation rather than abnormally deep attachment.",
+   "Chronic hypertension before pregnancy": "Chronic hypertension raises the risk of superimposed preeclampsia and abruption; it does not remove the decidua that limits villous invasion.",
+   "First pregnancy after age 35": "Older maternal age adds modestly to many risks, but a first pregnancy means no prior uterine surgery, and accreta needs a scar that has destroyed the decidua.",
+   "Gestational diabetes on insulin": "Gestational diabetes causes fetal overgrowth and shoulder dystocia; insulin treatment changes glucose handling, not how deeply the placenta attaches."
+  },
+  "media": "fig:rp27_bleeding",
+  "pt": {
+   "hl": [
+    "Previa over a scar"
+   ],
+   "say": "In the Accreta spectrum column the key risk reads previa over a scar: a prior cesarean with a current previa."
+  }
+ },
+ {
+  "id": "rp27r11",
+  "tags": [
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp27-06"
+  ],
+  "q": "In placenta percreta, how deep do the villi extend?",
+  "o": [
+   "Through the serosa",
+   "Onto the myometrium",
+   "Into the myometrium",
+   "Into the decidua only",
+   "Into the spiral arteries only"
+  ],
+  "a": 0,
+  "x": "Percreta villi pass through the whole myometrium and the serosa, often into the bladder, whereas accreta villi attach to the myometrium and increta villi invade it.",
+  "w": {
+   "Onto the myometrium": "Attachment onto the myometrium without invasion is placenta accreta, the mildest and most common form of the spectrum.",
+   "Into the myometrium": "Invasion into but not through the muscle wall is placenta increta, the middle grade of the spectrum.",
+   "Into the decidua only": "Villi anchoring in the decidua is normal placentation; the decidua is the layer missing in the accreta spectrum.",
+   "Into the spiral arteries only": "Trophoblast normally invades spiral arteries to remodel them; that is healthy placentation, and shallow invasion causes preeclampsia."
+  }
+ },
+ {
+  "id": "rp27r12",
+  "tags": [
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp27-07"
+  ],
+  "q": "At what gestational age is routine antepartum anti-D immune globulin given?",
+  "o": [
+   "28 weeks",
+   "12 weeks",
+   "20 weeks",
+   "36 weeks",
+   "40 weeks"
+  ],
+  "a": 0,
+  "x": "Silent fetomaternal bleeds increase in the third trimester, so an unsensitized Rh-negative woman gets anti-D at 28 weeks, and again within 72 hours of delivering an Rh-positive infant.",
+  "w": {
+   "12 weeks": "Before 12 weeks anti-D is given only after bleeding, a miscarriage or a procedure; routine prophylaxis is timed for the third trimester.",
+   "20 weeks": "The anatomy scan happens near 20 weeks, but a dose then would wane before the late bleeds it must cover.",
+   "36 weeks": "36 weeks is when group B strep cultures are taken; the 28-week dose already protects through this period.",
+   "40 weeks": "Waiting until term leaves the whole third trimester unprotected; the postpartum dose depends on the newborn's type, not on reaching 40 weeks."
+  }
+ },
+ {
+  "id": "rp27r13",
+  "tags": [
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp27-07"
+  ],
+  "q": "Which test measures the volume of fetomaternal hemorrhage?",
+  "o": [
+   "Kleihauer-Betke test",
+   "Direct Coombs test",
+   "Indirect Coombs test",
+   "Apt test",
+   "Hemoglobin electrophoresis"
+  ],
+  "a": 0,
+  "x": "The Kleihauer-Betke acid-elution test counts fetal red cells in maternal blood, because hemoglobin F resists acid, so it sizes the bleed and the anti-D dose needed.",
+  "w": {
+   "Direct Coombs test": "The direct Coombs test finds antibody already bound to red cells, as on a newborn's cells in hemolytic disease; it does not count fetal cells.",
+   "Indirect Coombs test": "The indirect Coombs test is the maternal antibody screen, showing whether she is already sensitized; it cannot measure how much fetal blood entered.",
+   "Apt test": "The Apt test tells whether blood in a sample is fetal or maternal, which helps in vasa previa, but it does not quantify the bleed.",
+   "Hemoglobin electrophoresis": "Electrophoresis separates hemoglobin types to diagnose sickle cell disease or thalassemia; it is not used to size a fetomaternal hemorrhage."
+  }
+ },
+ {
+  "id": "rp27r14",
+  "tags": [
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp27-08"
+  ],
+  "q": "Which tocolytic is avoided after 32 weeks because it can close the ductus arteriosus?",
+  "o": [
+   "Indomethacin",
+   "Nifedipine",
+   "Terbutaline",
+   "Magnesium sulfate",
+   "Atosiban"
+  ],
+  "a": 0,
+  "x": "Indomethacin blocks cyclooxygenase, and prostaglandins keep the ductus open and support fetal urine output, so after 32 weeks it risks ductal closure and oligohydramnios.",
+  "w": {
+   "Nifedipine": "Nifedipine relaxes the myometrium by blocking L-type calcium channels; its main side effects are maternal flushing and hypotension, not ductal closure.",
+   "Terbutaline": "Terbutaline, a beta-2 agonist, causes maternal tachycardia, hyperglycemia and hypokalemia; it does not act on fetal prostaglandins.",
+   "Magnesium sulfate": "Magnesium is used before 32 weeks for fetal neuroprotection; its risks are maternal toxicity, not closure of the ductus.",
+   "Atosiban": "Atosiban blocks oxytocin receptors and is used outside the United States; it spares prostaglandin synthesis, so the ductus is unaffected."
+  }
+ },
+ {
+  "id": "rp27r15",
+  "tags": [
+   "imaging-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp27-17"
+  ],
+  "q": "Which fetal growth pattern results from late placental insufficiency?",
+  "o": [
+   "Asymmetric, head-sparing restriction",
+   "Symmetric restriction",
+   "Macrosomia",
+   "Microcephaly with normal body size",
+   "Constitutionally small but healthy"
+  ],
+  "a": 0,
+  "x": "Late placental insufficiency lets the fetus redirect blood to its brain, so head growth is spared while the abdomen and liver glycogen lag, giving asymmetric restriction with oligohydramnios.",
+  "w": {
+   "Symmetric restriction": "Symmetric restriction starts early, from aneuploidy or congenital infection that limits cell number, so head and body are equally small.",
+   "Macrosomia": "Macrosomia is overgrowth from fetal hyperinsulinemia in maternal diabetes, the opposite of what a failing placenta produces.",
+   "Microcephaly with normal body size": "A small head with a normal body suggests a brain disorder or congenital infection such as Zika or cytomegalovirus, not a failing placenta.",
+   "Constitutionally small but healthy": "A constitutionally small fetus grows along a low but steady curve with normal Doppler studies and fluid, unlike a fetus starved by its placenta."
+  }
+ },
+ {
+  "id": "rp27r16",
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp27-11"
+  ],
+  "q": "Itchy palms and soles with high bile acids in the third trimester suggest which disorder?",
+  "o": [
+   "Intrahepatic cholestasis of pregnancy",
+   "PUPPP",
+   "Pemphigoid gestationis",
+   "Acute fatty liver of pregnancy",
+   "HELLP syndrome"
+  ],
+  "a": 0,
+  "x": "Intrahepatic cholestasis of pregnancy causes itching without a rash, worst on the palms and soles, and high bile acids that reach the fetus and raise the risk of stillbirth.",
+  "w": {
+   "PUPPP": "PUPPP causes itchy papules that begin in abdominal striae and spare the umbilicus; bile acids are normal and the fetus is safe.",
+   "Pemphigoid gestationis": "Pemphigoid gestationis forms blisters around the umbilicus from autoantibodies against skin anchoring proteins; it causes a visible rash, not isolated itching.",
+   "Acute fatty liver of pregnancy": "Acute fatty liver causes nausea, liver failure, hypoglycemia and coagulopathy; itching alone with high bile acids is far milder.",
+   "HELLP syndrome": "HELLP brings hemolysis, raised transaminases and low platelets, usually with hypertension and epigastric pain, rather than itching."
+  }
+ }
+]

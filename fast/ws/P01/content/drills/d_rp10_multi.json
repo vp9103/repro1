@@ -1,0 +1,127 @@
+{
+ "id": "d_rp10_multi",
+ "c": "rp10",
+ "kind": "multi",
+ "t": "Which contraceptive fits the feature?",
+ "tags": [
+  "drug-mechanism",
+  "adverse-effects"
+ ],
+ "bp": [
+  "BP-rp10-01",
+  "BP-rp10-03",
+  "BP-rp10-05",
+  "BP-rp10-06",
+  "BP-rp10-12"
+ ],
+ "key": "Ask what the method contains and where it acts. Estrogen means clotting risk and a scheduled withdrawal bleed; the depot injection means bone loss and slow return of fertility; the arm rod means unpredictable spotting; the levonorgestrel IUD acts locally and lightens periods; the copper IUD has no hormone, so periods get heavier.",
+ "cols": [
+  {
+   "id": "chc",
+   "l": "Combined pill, patch or ring"
+  },
+  {
+   "id": "dmpa",
+   "l": "DMPA injection"
+  },
+  {
+   "id": "imp",
+   "l": "Etonogestrel implant"
+  },
+  {
+   "id": "lng",
+   "l": "Levonorgestrel IUD"
+  },
+  {
+   "id": "cu",
+   "l": "Copper IUD"
+  }
+ ],
+ "items": [
+  [
+   "Raises clotting factors and venous clot risk",
+   "chc",
+   "Ethinyl estradiol makes the liver produce more clotting factors, so the estrogen family carries the clinically important venous clot risk that progestin-only and copper methods do not."
+  ],
+  [
+   "Avoided in smokers aged 35 or older and in migraine with aura",
+   "chc",
+   "Both conditions already raise stroke and clot risk and estrogen adds to it, so these patients are steered to a progestin-only or nonhormonal method instead."
+  ],
+  [
+   "Hormone-free week gives a predictable withdrawal bleed",
+   "chc",
+   "Estrogen keeps the lining stable, and stopping the active hormones for a week lets it shed on schedule, so cycles are regular, unlike the spotting of progestin-only methods."
+  ],
+  [
+   "Taken as a daily pill, weekly patch or monthly vaginal ring",
+   "chc",
+   "These three formats all deliver ethinyl estradiol with a progestin, so one set of estrogen contraindications covers the whole family despite the different routes."
+  ],
+  [
+   "Bone mineral density falls during use",
+   "dmpa",
+   "High, sustained medroxyprogesterone suppresses ovarian estradiol, and low estrogen speeds bone resorption, so density drops during use and partly recovers after the injections stop."
+  ],
+  [
+   "Fertility can take many months to return after stopping",
+   "dmpa",
+   "The depot releases medroxyprogesterone slowly over months, so ovulation returns late, whereas the minipill and the implant allow fertility to resume almost at once."
+  ],
+  [
+   "Injected every 3 months",
+   "dmpa",
+   "The depot keeps progestin levels high between injections, so the user needs a visit or self-injection about every 12 weeks instead of a daily action."
+  ],
+  [
+   "Rod placed under the skin of the upper arm",
+   "imp",
+   "The etonogestrel rod is inserted just beneath the skin and removed in a short office procedure, so its release does not depend on any daily action by the user."
+  ],
+  [
+   "Lasts 3 years",
+   "imp",
+   "The rod releases etonogestrel steadily and is labeled for 3 years as of 2025, shorter than the 3 to 8 years of the levonorgestrel IUDs and the 10 years or more of the copper IUD."
+  ],
+  [
+   "Unpredictable spotting that may persist",
+   "imp",
+   "Etonogestrel suppresses ovulation strongly but does not stabilize the endometrium, so bleeding stays irregular, and counseling about it helps patients keep the method."
+  ],
+  [
+   "Treats heavy menstrual bleeding by thinning the lining from inside the uterus",
+   "lng",
+   "Local levonorgestrel atrophies the endometrium, so menstrual blood loss falls sharply; this is why the device treats heavy periods as well as preventing pregnancy."
+  ],
+  [
+   "Lasts 3 to 8 years depending on the device",
+   "lng",
+   "As of 2025, different levonorgestrel IUDs carry different doses and are labeled for between 3 and 8 years; none lasts as long as the copper IUD."
+  ],
+  [
+   "Ovulation often continues because the effect is local",
+   "lng",
+   "Most of the action is thickened cervical mucus and a hostile endometrium with little systemic hormone, so many users keep ovulating, unlike DMPA users and implant users."
+  ],
+  [
+   "No hormone; copper causes a sterile inflammatory reaction toxic to sperm",
+   "cu",
+   "Copper ions provoke a local inflammatory response in the uterus that is toxic to sperm and ova, so fertilization rarely happens and no hormone enters the body."
+  ],
+  [
+   "Periods become heavier and more painful",
+   "cu",
+   "The device adds inflammation without suppressing the endometrium, so prostaglandin-mediated bleeding and cramping increase, which is a common reason users have it removed."
+  ],
+  [
+   "Most effective emergency contraception when placed within 5 days",
+   "cu",
+   "Inserted within 5 days of unprotected sex it prevents fertilization more reliably than any pill, and it then continues as long-term contraception."
+  ],
+  [
+   "Remains an option for a patient with current breast cancer",
+   "cu",
+   "Hormonal methods are avoided when breast cancer is current because the tumor may respond to hormones; a nonhormonal copper device carries no such risk."
+  ]
+ ]
+}

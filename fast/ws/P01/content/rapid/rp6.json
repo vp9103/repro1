@@ -1,0 +1,463 @@
+[
+ {
+  "id": "rp6r01",
+  "tags": [
+   "receptor-signaling"
+  ],
+  "bp": [
+   "BP-rp6-01"
+  ],
+  "q": "Which receptor is defective in complete androgen insensitivity syndrome?",
+  "o": [
+   "Androgen receptor",
+   "Estrogen receptor",
+   "LH receptor",
+   "FSH receptor",
+   "AMH receptor"
+  ],
+  "a": 0,
+  "x": "The androgen receptor is defective, so testosterone and DHT are made but cannot act. The testes still make AMH, which removes the uterus, and aromatized testosterone grows breasts at puberty.",
+  "w": {
+   "Estrogen receptor": "Estrogen receptors work normally in this syndrome; that is why aromatized testosterone grows normal breasts at puberty.",
+   "LH receptor": "An inactivating LH receptor defect causes Leydig cell hypoplasia with low testosterone, whereas androgen insensitivity has high testosterone.",
+   "FSH receptor": "FSH receptor defects impair follicle growth or spermatogenesis but do not stop androgen from shaping the genitalia.",
+   "AMH receptor": "An AMH receptor defect leaves a uterus in an otherwise normal male, the opposite of the absent uterus in androgen insensitivity."
+  },
+  "media": "fig:rp6_signals",
+  "pt": {
+   "hl": [
+    "DHT binds androgen receptor",
+    "Androgen insensitivity"
+   ],
+   "say": "Find the androgen insensitivity box: it breaks the chain where DHT binds the androgen receptor, so androgen is made but cannot act."
+  }
+ },
+ {
+  "id": "rp6r02",
+  "tags": [
+   "steroidogenesis-enzymes"
+  ],
+  "bp": [
+   "BP-rp6-02"
+  ],
+  "q": "Which hormone is low in 5-alpha-reductase deficiency?",
+  "o": [
+   "Dihydrotestosterone",
+   "Testosterone",
+   "Estradiol",
+   "Luteinizing hormone",
+   "Anti-Müllerian hormone"
+  ],
+  "a": 0,
+  "x": "Dihydrotestosterone is low because the enzyme that makes it from testosterone is missing. Testosterone is normal, so the ratio of testosterone to DHT is high and the Wolffian ducts form normally.",
+  "w": {
+   "Testosterone": "Testosterone is normal or high in this disorder, which is why the Wolffian ducts form and the body virilizes at puberty.",
+   "Estradiol": "Estradiol comes from aromatase, not 5-alpha-reductase, and stays in the normal male range in this disorder.",
+   "Luteinizing hormone": "LH is normal because testosterone, which provides the feedback signal to the pituitary, is made in normal amounts.",
+   "Anti-Müllerian hormone": "Sertoli cells are healthy and secrete AMH normally, so the uterus regresses as in any male fetus."
+  },
+  "media": "fig:rp6_signals",
+  "pt": {
+   "hl": [
+    "5-alpha-reductase: DHT"
+   ],
+   "say": "The 5-alpha-reductase box shows the missing step: without the enzyme, dihydrotestosterone is low while testosterone stays normal."
+  }
+ },
+ {
+  "id": "rp6r03",
+  "tags": [
+   "meiosis-karyotype"
+  ],
+  "bp": [
+   "BP-rp6-06"
+  ],
+  "q": "Which karyotype causes Turner syndrome?",
+  "o": [
+   "45,X",
+   "47,XXY",
+   "47,XYY",
+   "46,XY",
+   "47,XXX"
+  ],
+  "a": 0,
+  "x": "Turner syndrome is 45,X, or a mosaic such as 45,X/46,XX. Loss of one sex chromosome leaves streak ovaries, short stature from SHOX loss, and lymphatic and cardiac defects.",
+  "w": {
+   "47,XXY": "This is Klinefelter syndrome, a tall man with small firm testes and gynecomastia, not a short girl with streak ovaries.",
+   "47,XYY": "Men with an extra Y are tall with normal testes and normal fertility, and they are usually diagnosed only by chance.",
+   "46,XY": "A 46,XY girl with streak gonads has Swyer syndrome, which gives normal stature and a uterus but no lymphatic or cardiac defects.",
+   "47,XXX": "Triple X women are often tall and usually have normal ovarian function and normal fertility."
+  },
+  "media": "fig:rp6_sexchrom",
+  "pt": {
+   "hl": [
+    "Turner syndrome: 45,X"
+   ],
+   "say": "The left panel is headed Turner syndrome: 45,X, the loss of one sex chromosome that leaves streak ovaries."
+  }
+ },
+ {
+  "id": "rp6r04",
+  "tags": [
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp6-05"
+  ],
+  "q": "Which tumor arises in streak gonads that contain Y chromosome material?",
+  "o": [
+   "Gonadoblastoma",
+   "Granulosa cell tumor",
+   "Mature teratoma",
+   "Leydig cell tumor",
+   "Serous cystadenoma"
+  ],
+  "a": 0,
+  "x": "Gonadoblastoma arises in dysgenetic gonads that carry Y material, as in Swyer syndrome or Turner mosaics with a Y cell line, and it can progress to dysgerminoma, so the streaks are removed.",
+  "w": {
+   "Granulosa cell tumor": "Granulosa cell tumors come from follicle cells of a functioning ovary and make estrogen; streak gonads have no follicles.",
+   "Mature teratoma": "Mature teratomas arise from germ cells of normal ovaries in young women and are not linked to Y material in dysgenetic gonads.",
+   "Leydig cell tumor": "Leydig cell tumors arise in normal testes and secrete testosterone or estrogen; they are not the typical tumor of streak gonads.",
+   "Serous cystadenoma": "Serous cystadenomas are surface epithelial tumors of normal adult ovaries and have no connection to gonadal dysgenesis."
+  },
+  "media": "fig:rp6_dsd",
+  "pt": {
+   "hl": [
+    "Gonadoblastoma risk;",
+    "Streak gonads"
+   ],
+   "say": "The Swyer syndrome row lists streak gonads and gonadoblastoma risk, so gonadal tissue that contains Y material is removed once the diagnosis is made."
+  }
+ },
+ {
+  "id": "rp6r05",
+  "tags": [
+   "steroidogenesis-enzymes",
+   "sex-development-signals"
+  ],
+  "bp": [
+   "BP-rp6-03"
+  ],
+  "q": "What is the most common cause of ambiguous genitalia in a 46,XX newborn?",
+  "o": [
+   "Congenital adrenal hyperplasia",
+   "Placental aromatase deficiency",
+   "Maternal androgen-secreting tumor",
+   "Ovotesticular DSD",
+   "Maternal progestin exposure"
+  ],
+  "a": 0,
+  "x": "Congenital adrenal hyperplasia, usually 21-hydroxylase deficiency, is the commonest cause: blocked cortisol synthesis raises ACTH, which shunts precursors into adrenal androgens that virilize the external genitalia while the uterus and ovaries stay normal.",
+  "w": {
+   "Placental aromatase deficiency": "Placental aromatase deficiency virilizes a 46,XX fetus and the mother too, but it is rare compared with adrenal hyperplasia.",
+   "Maternal androgen-secreting tumor": "A maternal luteoma or androgen-secreting tumor can virilize a female fetus, but it is uncommon and usually virilizes the mother as well.",
+   "Ovotesticular DSD": "Having both ovarian and testicular tissue is a rare cause of ambiguous genitalia in children with two X chromosomes.",
+   "Maternal progestin exposure": "Older androgenic progestins could virilize a female fetus, but modern exposure is rare and does not rival adrenal hyperplasia."
+  },
+  "media": "fig:rp6_signals",
+  "pt": {
+   "hl": [
+    "CAH or aromatase deficiency"
+   ],
+   "say": "The bottom box shows extra androgen reaching a 46,XX fetus; congenital adrenal hyperplasia is by far the most common source."
+  }
+ },
+ {
+  "id": "rp6r06",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp6-06"
+  ],
+  "q": "Which renal anomaly is typical of Turner syndrome?",
+  "o": [
+   "Horseshoe kidney",
+   "Autosomal dominant polycystic kidneys",
+   "Bilateral renal agenesis",
+   "Posterior urethral valves",
+   "Multicystic dysplastic kidney"
+  ],
+  "a": 0,
+  "x": "A horseshoe kidney, fused at the lower poles and caught under the inferior mesenteric artery during its ascent, is the classic renal anomaly of Turner syndrome and adds to its urinary tract problems.",
+  "w": {
+   "Autosomal dominant polycystic kidneys": "Polycystic kidney disease is inherited through PKD1 or PKD2 and presents in adults with enlarging cystic kidneys, not as part of Turner syndrome.",
+   "Bilateral renal agenesis": "Bilateral renal agenesis causes oligohydramnios and Potter sequence and is incompatible with life, unlike the renal anomaly of Turner syndrome.",
+   "Posterior urethral valves": "Posterior urethral valves obstruct the urethra of male infants and are not associated with a 45,X karyotype.",
+   "Multicystic dysplastic kidney": "A multicystic dysplastic kidney is a sporadic nonfunctioning cluster of cysts, not the fusion anomaly linked to 45,X."
+  },
+  "media": "fig:rp6_sexchrom",
+  "pt": {
+   "hl": [
+    "Horseshoe kidney, shield chest"
+   ],
+   "say": "The Turner panel lists a horseshoe kidney beside the shield chest as a structural finding of 45,X."
+  }
+ },
+ {
+  "id": "rp6r07",
+  "tags": [
+   "feedback-logic",
+   "cell-of-origin"
+  ],
+  "bp": [
+   "BP-rp6-07"
+  ],
+  "q": "Which hormone is low in Klinefelter syndrome because Sertoli cells are damaged?",
+  "o": [
+   "Inhibin B",
+   "FSH",
+   "LH",
+   "Estradiol",
+   "SHBG"
+  ],
+  "a": 0,
+  "x": "Inhibin B, made by Sertoli cells, normally restrains FSH. Hyalinized seminiferous tubules in Klinefelter syndrome make little inhibin B, so FSH rises even more than LH.",
+  "w": {
+   "FSH": "FSH is high, not low, because falling inhibin B and testosterone remove its negative feedback at the pituitary.",
+   "LH": "LH is high because failing Leydig cells produce too little testosterone to feed back on the pituitary.",
+   "Estradiol": "Estradiol is relatively high because elevated LH drives testicular aromatase, which is what causes the gynecomastia.",
+   "SHBG": "Sex hormone-binding globulin tends to rise when estrogen is relatively high, and it is a liver protein, not a Sertoli cell product."
+  },
+  "media": "fig:rp6_sexchrom",
+  "pt": {
+   "hl": [
+    "Inhibin B low, so FSH high"
+   ],
+   "say": "In the Klinefelter panel, inhibin B is low because Sertoli cells are damaged, so FSH climbs."
+  }
+ },
+ {
+  "id": "rp6r08",
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp6-08"
+  ],
+  "q": "Which sense is lost in Kallmann syndrome?",
+  "o": [
+   "Smell",
+   "Taste",
+   "Hearing",
+   "Vision",
+   "Balance"
+  ],
+  "a": 0,
+  "x": "Smell is lost because olfactory neurons and GnRH neurons migrate together from the olfactory placode; when migration fails, the patient has anosmia plus hypogonadotropic hypogonadism.",
+  "w": {
+   "Taste": "Taste buds are served by cranial nerves VII, IX and X, which do not share the olfactory migration path.",
+   "Hearing": "Sensorineural deafness occurs in some genetic forms, but the defining sensory loss is smell, from failed olfactory neuron migration.",
+   "Vision": "Vision is spared; visual loss with delayed puberty points to a pituitary or hypothalamic mass such as a craniopharyngioma.",
+   "Balance": "Vestibular function is not part of Kallmann syndrome; the defect is limited to olfactory and GnRH neuron migration."
+  },
+  "media": "fig:rp7_delayed",
+  "pt": {
+   "hl": [
+    "Anosmia: loss of smell; normal karyotype"
+   ],
+   "say": "The Kallmann card lists anosmia, the loss of smell, because olfactory neurons and GnRH neurons migrate together from the olfactory placode and fail together."
+  }
+ },
+ {
+  "id": "rp6r09",
+  "tags": [
+   "sex-development-signals"
+  ],
+  "bp": [
+   "BP-rp6-05"
+  ],
+  "q": "Which gene is most often mutated or deleted in Swyer syndrome?",
+  "o": [
+   "SRY",
+   "Androgen receptor gene",
+   "CYP21A2",
+   "SHOX",
+   "ANOS1 (KAL1)"
+  ],
+  "a": 0,
+  "x": "SRY on the Y chromosome starts testis formation; without it the gonads become streaks, so a 46,XY person develops a uterus and female genitalia and has no puberty without hormone replacement.",
+  "w": {
+   "Androgen receptor gene": "Mutations here cause androgen insensitivity, in which testes form normally and AMH removes the uterus.",
+   "CYP21A2": "This gene encodes 21-hydroxylase; its mutations cause congenital adrenal hyperplasia, which virilizes 46,XX fetuses.",
+   "SHOX": "Loss of one copy causes the short stature of Turner syndrome; it does not affect testis determination.",
+   "ANOS1 (KAL1)": "Mutations here cause X-linked Kallmann syndrome, in which testes form normally but hypothalamic GnRH is missing."
+  },
+  "media": "fig:rp6_signals",
+  "pt": {
+   "hl": [
+    "SRY on the Y chromosome makes a testis",
+    "Swyer syndrome breaks here"
+   ],
+   "say": "The top box, SRY on the Y chromosome, is where Swyer syndrome breaks the chain, so no testis forms."
+  }
+ },
+ {
+  "id": "rp6r10",
+  "tags": [
+   "sex-development-signals",
+   "cell-of-origin"
+  ],
+  "bp": [
+   "BP-rp6-01",
+   "BP-rp6-10"
+  ],
+  "q": "What makes the uterus regress in androgen insensitivity syndrome?",
+  "o": [
+   "AMH from Sertoli cells",
+   "Testosterone from Leydig cells",
+   "DHT from peripheral conversion",
+   "Estradiol from aromatase",
+   "Inhibin from Sertoli cells"
+  ],
+  "a": 0,
+  "x": "AMH from Sertoli cells acts through its own receptor, which is normal in androgen insensitivity, so the Müllerian ducts regress and no uterus, cervix or upper vagina forms.",
+  "w": {
+   "Testosterone from Leydig cells": "Testosterone maintains the Wolffian ducts rather than removing the Müllerian ducts, and in this syndrome it cannot act at all.",
+   "DHT from peripheral conversion": "DHT shapes the external genitalia and prostate; it has no role in Müllerian regression and cannot act here anyway.",
+   "Estradiol from aromatase": "Estradiol grows the breasts in this syndrome; it supports rather than removes Müllerian tissue.",
+   "Inhibin from Sertoli cells": "Inhibin B suppresses pituitary FSH secretion; it does not cause the Müllerian ducts to regress."
+  },
+  "media": "fig:rp6_signals",
+  "pt": {
+   "hl": [
+    "Sertoli cells: AMH",
+    "Müllerian ducts regress"
+   ],
+   "say": "Follow the Sertoli branch: AMH from Sertoli cells makes the Müllerian ducts regress, and that step works normally in androgen insensitivity."
+  }
+ },
+ {
+  "id": "rp6r11",
+  "tags": [
+   "maternal-fetal-transfer",
+   "steroidogenesis-enzymes"
+  ],
+  "bp": [
+   "BP-rp6-04"
+  ],
+  "q": "Which maternal finding during pregnancy suggests placental aromatase deficiency?",
+  "o": [
+   "Virilization",
+   "Gestational diabetes",
+   "Preeclampsia",
+   "Hyperemesis gravidarum",
+   "Polyhydramnios"
+  ],
+  "a": 0,
+  "x": "Virilization of the mother, with acne, hirsutism and a deeper voice, occurs because fetal adrenal androgens are not aromatized by the placenta and spill into her circulation; it fades after delivery.",
+  "w": {
+   "Gestational diabetes": "Gestational diabetes reflects placental hormones such as human placental lactogen causing insulin resistance, not failed aromatization of fetal androgens.",
+   "Preeclampsia": "Preeclampsia stems from abnormal spiral artery remodeling and placental ischemia, not from a steroid enzyme defect.",
+   "Hyperemesis gravidarum": "Severe vomiting in pregnancy tracks with high hCG, as in molar or multiple pregnancy, rather than with androgen excess.",
+   "Polyhydramnios": "Excess amniotic fluid reflects impaired fetal swallowing or excess fetal urine, not maternal exposure to fetal androgens."
+  },
+  "media": "fig:rp6_dsd",
+  "pt": {
+   "hl": [
+    "Placental aromatase",
+    "Maternal virilization;"
+   ],
+   "say": "The placental aromatase deficiency row lists maternal virilization and low estriol: fetal androgens are not aromatized by the placenta, so they reach the mother and virilize her."
+  }
+ },
+ {
+  "id": "rp6r12",
+  "tags": [
+   "feedback-logic",
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-rp6-07"
+  ],
+  "q": "Why do men with Klinefelter syndrome develop gynecomastia?",
+  "o": [
+   "High LH drives testicular aromatase",
+   "Prolactin rises from the pituitary",
+   "hCG from a hidden germ cell tumor",
+   "Androgen receptors are defective",
+   "The liver clears estrogen poorly"
+  ],
+  "a": 0,
+  "x": "High LH, released because testosterone is low, drives testicular aromatase, so estradiol rises relative to testosterone and the altered ratio stimulates ductal growth in breast tissue.",
+  "w": {
+   "Prolactin rises from the pituitary": "Prolactin is normal in Klinefelter syndrome; a prolactinoma would lower LH and FSH, whereas these men have high gonadotropins.",
+   "hCG from a hidden germ cell tumor": "hCG does drive aromatase, and mediastinal germ cell tumors are more frequent in Klinefelter syndrome, but the usual gynecomastia comes from elevated LH.",
+   "Androgen receptors are defective": "Receptor defects cause androgen insensitivity in a 46,XY person who looks female; Klinefelter men respond to testosterone replacement.",
+   "The liver clears estrogen poorly": "Poor hepatic clearance explains gynecomastia in cirrhosis, not in young men with small firm testes and normal liver function."
+  },
+  "media": "fig:rp6_sexchrom",
+  "pt": {
+   "hl": [
+    "LH drives aromatase: gynecomastia"
+   ],
+   "say": "The Klinefelter panel shows the chain: low testosterone raises LH, and LH drives aromatase, which causes gynecomastia."
+  }
+ },
+ {
+  "id": "rp6r13",
+  "tags": [
+   "imaging-to-diagnosis",
+   "meiosis-karyotype"
+  ],
+  "bp": [
+   "BP-rp6-11"
+  ],
+  "q": "Which fetal ultrasound finding is a classic sign of Turner syndrome?",
+  "o": [
+   "Cystic hygroma",
+   "Double bubble sign",
+   "Echogenic bowel",
+   "Omphalocele",
+   "Choroid plexus cyst"
+  ],
+  "a": 0,
+  "x": "A cystic hygroma forms when the jugular lymph sacs fail to drain into the veins; the fluid behind the neck raises nuchal translucency and later leaves a webbed neck.",
+  "w": {
+   "Double bubble sign": "The double bubble of duodenal atresia is a Down syndrome clue and reflects a gut obstruction, not a lymphatic defect.",
+   "Echogenic bowel": "Bright fetal bowel suggests cystic fibrosis, fetal infection or swallowed blood rather than a 45,X karyotype.",
+   "Omphalocele": "A midline wall defect covered by membrane points to trisomy 13, trisomy 18 or Beckwith-Wiedemann syndrome.",
+   "Choroid plexus cyst": "These cysts are usually harmless and, when significant, point to trisomy 18 rather than 45,X."
+  },
+  "media": "fig:rp6_sexchrom",
+  "pt": {
+   "hl": [
+    "Cystic hygroma, then webbed neck"
+   ],
+   "say": "The Turner panel lists the cystic hygroma first: the fetal lymphatic swelling that later leaves a webbed neck."
+  }
+ },
+ {
+  "id": "rp6r14",
+  "tags": [
+   "sex-development-signals"
+  ],
+  "obj": [
+   "BICEP-WALSH.23"
+  ],
+  "q": "Which term describes a person's inner sense of their own gender?",
+  "o": [
+   "Gender identity",
+   "Phenotypic sex",
+   "Genotypic sex",
+   "Gonadal sex",
+   "Sexual orientation"
+  ],
+  "a": 0,
+  "x": "Gender identity is a person's inner sense of being a woman, a man or another gender; it is learned by asking, because the karyotype, gonads and anatomy do not determine it.",
+  "w": {
+   "Phenotypic sex": "This term describes the body that hormones build, such as genitalia and breasts, which can differ from how a person identifies.",
+   "Genotypic sex": "This term means the chromosomal complement, such as 46,XX or 46,XY, fixed at fertilization.",
+   "Gonadal sex": "This term refers to whether the gonads are testes, ovaries or streaks, a separate biological layer.",
+   "Sexual orientation": "Orientation describes whom a person is attracted to, which is independent of how that person identifies."
+  },
+  "media": "fig:rp6_layers",
+  "pt": {
+   "hl": [
+    "Gender identity",
+    "Inner sense of being a woman,"
+   ],
+   "say": "The fourth row defines gender identity as a person's inner sense of being a woman, a man or another gender; it is not read from the karyotype or anatomy, so the clinician asks."
+  }
+ }
+]

@@ -1,0 +1,248 @@
+[
+ {
+  "id": "rp16r01",
+  "tags": ["virulence-factors"],
+  "bp": ["BP-rp16-01"],
+  "q": "Which chlamydial form is infectious but does not divide?",
+  "o": ["Elementary body", "Reticulate body", "Glycogen inclusion", "Endospore", "Pseudohypha"],
+  "a": 0,
+  "x": "The elementary body is small, hardy and metabolically quiet; it survives outside cells and enters columnar epithelium by endocytosis, then converts into the dividing reticulate body inside the vacuole.",
+  "w": {
+   "Reticulate body": "The reticulate body is the larger, metabolically active form that divides by binary fission inside the inclusion but is too fragile to survive outside the cell.",
+   "Glycogen inclusion": "The inclusion is the vacuole where reticulate bodies multiply; its glycogen stains brown with iodine, a diagnostic clue rather than an infectious particle.",
+   "Endospore": "Endospores are dormant, heat-resistant forms made by Clostridium and Bacillus; chlamydiae never form spores even though elementary bodies are similarly durable.",
+   "Pseudohypha": "Pseudohyphae are chains of elongated budding yeast, the tissue form of Candida seen on a potassium hydroxide preparation, not a bacterial structure."
+  }
+ },
+ {
+  "id": "rp16r02",
+  "tags": ["pathogen-clues"],
+  "bp": ["BP-rp16-14"],
+  "q": "Which sugar does the gonococcus fail to ferment, unlike the meningococcus?",
+  "o": ["Maltose", "Glucose", "Lactose", "Sucrose", "Fructose"],
+  "a": 0,
+  "x": "Both pathogenic Neisseria species ferment glucose, but only the meningococcus also ferments maltose, so an oxidase-positive diplococcus that ferments glucose alone is Neisseria gonorrhoeae.",
+  "w": {
+   "Glucose": "Glucose is fermented by both gonococci and meningococci, so glucose fermentation places the organism in Neisseria but cannot separate the two species.",
+   "Lactose": "Lactose fermentation separates coliforms such as Escherichia coli on MacConkey agar; neither pathogenic Neisseria species ferments lactose.",
+   "Sucrose": "Sucrose does not help here; both gonococci and meningococci fail to ferment it, so the result gives no discriminating information.",
+   "Fructose": "Fructose is not part of the standard Neisseria sugar panel; the discriminating pair for these two species is glucose and maltose."
+  }
+ },
+ {
+  "id": "rp16r03",
+  "tags": ["pathogen-clues"],
+  "bp": ["BP-rp16-14"],
+  "q": "Which selective medium grows Neisseria gonorrhoeae from a genital swab?",
+  "o": ["Thayer-Martin agar", "MacConkey agar", "Bordet-Gengou agar", "Buffered charcoal yeast extract", "Lowenstein-Jensen medium"],
+  "a": 0,
+  "x": "Thayer-Martin agar is enriched chocolate agar with vancomycin, colistin and nystatin, which suppress gram-positive bacteria, gram-negative rods and fungi from the genital tract so the fastidious gonococcus can grow.",
+  "w": {
+   "MacConkey agar": "MacConkey agar grows gram-negative enteric rods and shows lactose fermentation; fastidious Neisseria grow poorly on it and are not selected from genital flora.",
+   "Bordet-Gengou agar": "Bordet-Gengou potato agar is the classic medium for Bordetella pertussis from nasopharyngeal swabs, not for genital specimens.",
+   "Buffered charcoal yeast extract": "Charcoal yeast extract with cysteine and iron grows Legionella from respiratory samples; it is not used to isolate genital pathogens.",
+   "Lowenstein-Jensen medium": "Lowenstein-Jensen is an egg-based medium for slow-growing Mycobacterium tuberculosis, which takes weeks to form colonies."
+  }
+ },
+ {
+  "id": "rp16r04",
+  "tags": ["drug-mechanism"],
+  "bp": ["BP-rp16-01", "BP-rp16-15"],
+  "q": "Which drug is first-line for uncomplicated genital chlamydia in a nonpregnant adult, per CDC 2021?",
+  "o": ["Doxycycline for 7 days", "Azithromycin 1 g once", "Ceftriaxone 500 mg IM once", "Benzathine penicillin G once", "Metronidazole for 7 days"],
+  "a": 0,
+  "x": "CDC 2021 made doxycycline 100 mg twice daily for 7 days the preferred chlamydia treatment because it clears rectal infection more reliably than azithromycin; it blocks the bacterial 30S ribosome of this obligate intracellular organism.",
+  "w": {
+   "Azithromycin 1 g once": "A single azithromycin dose is now the alternative, used mainly in pregnancy, because it clears rectal chlamydia less reliably than a week of doxycycline.",
+   "Ceftriaxone 500 mg IM once": "Ceftriaxone is the single-dose treatment for gonorrhea; beta-lactams do not work against chlamydia, whose wall contains almost no peptidoglycan.",
+   "Benzathine penicillin G once": "Benzathine penicillin treats syphilis; like other beta-lactams it has no reliable activity against chlamydiae.",
+   "Metronidazole for 7 days": "Metronidazole treats trichomoniasis, bacterial vaginosis and anaerobes; it has no activity against obligate intracellular chlamydiae."
+  }
+ },
+ {
+  "id": "rp16r05",
+  "tags": ["drug-mechanism"],
+  "bp": ["BP-rp16-03", "BP-rp16-15"],
+  "q": "Which single-dose regimen treats uncomplicated gonorrhea, per CDC 2021?",
+  "o": ["Ceftriaxone 500 mg IM", "Azithromycin 2 g orally", "Ciprofloxacin 500 mg orally", "Doxycycline for 7 days", "Benzathine penicillin G IM"],
+  "a": 0,
+  "x": "Ceftriaxone 500 mg IM once is recommended monotherapy for uncomplicated gonorrhea because gonococci have acquired resistance to penicillin, tetracyclines, fluoroquinolones and increasingly macrolides; doxycycline is added only if chlamydia has not been excluded.",
+  "w": {
+   "Azithromycin 2 g orally": "High-dose azithromycin was once an alternative, but macrolide resistance in gonococci is rising, so it is no longer relied on as a single agent.",
+   "Ciprofloxacin 500 mg orally": "Fluoroquinolone resistance became widespread among gonococci in the 2000s, so ciprofloxacin is used only when susceptibility has been proven.",
+   "Doxycycline for 7 days": "Doxycycline treats chlamydia and is added when chlamydial coinfection has not been excluded, but tetracycline-resistant gonococci are common.",
+   "Benzathine penicillin G IM": "Gonococci produce beta-lactamase and altered penicillin-binding proteins, so penicillin fails; benzathine penicillin is the syphilis treatment."
+  }
+ },
+ {
+  "id": "rp16r06",
+  "tags": ["pathogen-clues"],
+  "bp": ["BP-rp16-09"],
+  "obj": ["TBL-STI.2"],
+  "q": "Which bedside sign on bimanual exam suggests pelvic inflammatory disease?",
+  "o": ["Cervical motion tenderness", "Strawberry cervix", "Chadwick sign", "Murphy sign", "Psoas sign"],
+  "a": 0,
+  "x": "Cervical motion tenderness means that moving the cervix stretches an inflamed uterus, tubes and pelvic peritoneum; with uterine or adnexal tenderness in a sexually active woman it justifies empiric PID treatment.",
+  "w": {
+   "Strawberry cervix": "Punctate hemorrhages on the cervix are the sign of trichomoniasis, a lower-tract infection with frothy discharge rather than an inflamed upper tract.",
+   "Chadwick sign": "Chadwick sign is bluish discoloration of the cervix and vagina from increased blood flow in early pregnancy, not a sign of infection.",
+   "Murphy sign": "Murphy sign is inspiratory arrest when the examiner presses under the right costal margin, pointing to cholecystitis; Fitz-Hugh-Curtis perihepatitis can mimic it.",
+   "Psoas sign": "The psoas sign, pain on hip extension, suggests retrocecal appendicitis or a psoas abscess irritating the muscle, not inflamed pelvic organs."
+  },
+  "media": "fig:rp16_pid",
+  "pt": {
+   "hl": ["Endometritis in the uterus", "Salpingitis in the tubes"],
+   "say": "Steps 2 and 3 show the inflamed uterus and tubes that the cervix drags on when moved, which is why cervical motion tenderness marks PID."
+  }
+ },
+ {
+  "id": "rp16r07",
+  "tags": ["anatomic-relations"],
+  "bp": ["BP-rp16-09"],
+  "q": "Which PID complication causes right upper quadrant pain and violin-string liver adhesions?",
+  "o": ["Fitz-Hugh-Curtis syndrome", "Tubo-ovarian abscess", "Hydrosalpinx", "Acute cholecystitis", "Budd-Chiari syndrome"],
+  "a": 0,
+  "x": "Fitz-Hugh-Curtis syndrome is perihepatitis: PID organisms, often chlamydia, track up the right paracolic gutter and inflame the liver capsule, causing pleuritic right upper quadrant pain and later adhesions to the abdominal wall.",
+  "w": {
+   "Tubo-ovarian abscess": "A tubo-ovarian abscess is a walled-off pelvic collection that causes an adnexal mass, fever and pelvic pain, not inflammation of the liver capsule.",
+   "Hydrosalpinx": "A hydrosalpinx is a fluid-filled, blocked tube left after scarring; it causes infertility and a pelvic finding on ultrasound, not upper abdominal pain.",
+   "Acute cholecystitis": "Cholecystitis causes right upper quadrant pain with gallstones and a thickened gallbladder wall, and it never produces adhesions from pelvic infection.",
+   "Budd-Chiari syndrome": "Budd-Chiari syndrome is hepatic vein thrombosis causing painful hepatomegaly and ascites, often with a hypercoagulable state, not perihepatic adhesions."
+  },
+  "media": "fig:rp16_pid",
+  "pt": {
+   "hl": ["Perihepatitis: Fitz-Hugh-Curtis", "Liver capsule"],
+   "say": "Follow the dashed path to step 6: infection climbing the right gutter inflames the liver capsule, which is Fitz-Hugh-Curtis perihepatitis."
+  }
+ },
+ {
+  "id": "rp16r08",
+  "tags": ["pathogen-clues"],
+  "bp": ["BP-rp16-06", "BP-rp16-08"],
+  "q": "Which genital ulcer is painful, with a ragged purulent base and a suppurating node?",
+  "o": ["Chancroid", "Primary syphilis", "Lymphogranuloma venereum", "Donovanosis", "Condylomata lata"],
+  "a": 0,
+  "x": "Chancroid, from Haemophilus ducreyi, produces deep, ragged, painful ulcers with a gray purulent base and a tender node on one side that can suppurate; the syphilis, LGV and donovanosis ulcers are all painless.",
+  "w": {
+   "Primary syphilis": "The syphilis chancre is single, painless and indurated with a clean base, and its nodes are rubbery and nontender.",
+   "Lymphogranuloma venereum": "In lymphogranuloma venereum the ulcer is tiny, painless and often unnoticed; the painful buboes appear weeks later, after it has healed.",
+   "Donovanosis": "Donovanosis produces a painless, beefy-red ulcer that bleeds on contact, with pseudobuboes rather than truly suppurating lymph nodes.",
+   "Condylomata lata": "Condylomata lata are moist, flat, painless plaques of secondary syphilis that teem with spirochetes; they are not ulcers."
+  },
+  "media": "fig:rp16_ulcers",
+  "pt": {
+   "hl": ["ducreyi (chancroid)", "Deep, ragged ulcer with"],
+   "say": "In the painful-ulcer band, the chancroid row shows a deep, ragged ulcer with a gray purulent base and a painful node that may suppurate."
+  }
+ },
+ {
+  "id": "rp16r09",
+  "tags": ["histology-to-diagnosis", "pathogen-clues"],
+  "bp": ["BP-rp16-07"],
+  "q": "Which organism shows Donovan bodies inside macrophages on a Giemsa-stained smear?",
+  "o": ["Klebsiella granulomatis", "Haemophilus ducreyi", "Treponema pallidum", "Leishmania donovani", "Chlamydia trachomatis L2"],
+  "a": 0,
+  "x": "Klebsiella granulomatis causes granuloma inguinale, a painless beefy-red ulcer; crushed tissue smears show Donovan bodies, encapsulated rods inside macrophages that stain dark and bipolar like safety pins.",
+  "w": {
+   "Haemophilus ducreyi": "Haemophilus ducreyi causes painful chancroid ulcers, and its small gram-negative rods lie outside cells in school-of-fish chains rather than within macrophages.",
+   "Treponema pallidum": "Treponemes are too thin for routine stains and are seen by darkfield microscopy or silver stain as corkscrew spirochetes, not as intracellular rods.",
+   "Leishmania donovani": "Leishmania donovani amastigotes fill macrophages in the spleen, liver and marrow in visceral leishmaniasis, not in a genital ulcer; the shared name misleads.",
+   "Chlamydia trachomatis L2": "Serovar L2 causes lymphogranuloma venereum; chlamydiae form inclusions in epithelial cells and are diagnosed by amplification testing, not by Donovan bodies."
+  },
+  "media": "fig:rp16_ulcers",
+  "pt": {
+   "hl": ["granulomatis", "Donovan bodies"],
+   "say": "The bottom row pairs Klebsiella granulomatis with a beefy-red ulcer that bleeds on contact and Donovan bodies on Giemsa stain."
+  }
+ },
+ {
+  "id": "rp16r10",
+  "tags": ["pathogen-clues"],
+  "bp": ["BP-rp16-02"],
+  "q": "Which chlamydial disease causes painful inguinal buboes weeks after a painless genital ulcer?",
+  "o": ["Lymphogranuloma venereum", "Trachoma", "Reactive arthritis", "Inclusion conjunctivitis", "Psittacosis"],
+  "a": 0,
+  "x": "Lymphogranuloma venereum is caused by the invasive L1 to L3 serovars, which spread from a small painless ulcer through lymphatics to the inguinal nodes, producing painful matted buboes and the groove sign; treatment is 21 days of doxycycline.",
+  "w": {
+   "Trachoma": "Trachoma, from serovars A to C, is chronic follicular conjunctivitis that scars the eyelids and is a leading infectious cause of blindness, not a genital disease.",
+   "Reactive arthritis": "Reactive arthritis follows genital chlamydia in some HLA-B27-positive hosts, with arthritis, urethritis and conjunctivitis but no buboes.",
+   "Inclusion conjunctivitis": "Inclusion conjunctivitis from serovars D to K occurs in newborns and in adults after autoinoculation of genital secretions; it does not involve the groin.",
+   "Psittacosis": "Psittacosis is pneumonia from Chlamydia psittaci inhaled from infected birds, with fever, headache and dry cough, not a sexually transmitted node infection."
+  },
+  "media": "fig:rp16_ulcers",
+  "pt": {
+   "hl": ["Painful buboes,", "(LGV)"],
+   "say": "The LGV row shows a small ulcer that heals fast and is often never seen, then painful buboes with the groove sign: lymphogranuloma venereum."
+  }
+ },
+ {
+  "id": "rp16r11",
+  "tags": ["serology-reading"],
+  "bp": ["BP-rp16-05", "BP-rp16-18"],
+  "q": "Which syphilis test detects anticardiolipin antibody and is used to follow treatment?",
+  "o": ["RPR", "FTA-ABS", "TP-PA", "Darkfield microscopy", "Treponemal immunoassay"],
+  "a": 0,
+  "x": "The RPR, like the VDRL, detects antibody against cardiolipin released from damaged cells; it gives a titer that falls fourfold or more after successful treatment, so it tracks therapy while treponemal tests stay positive.",
+  "w": {
+   "FTA-ABS": "FTA-ABS detects antibody against treponemal antigens and stays positive for life after cure, so it confirms infection but cannot show response to therapy.",
+   "TP-PA": "The particle agglutination test is another treponemal assay used to confirm a reactive screen; its result does not fall after penicillin.",
+   "Darkfield microscopy": "Darkfield microscopy shows motile spirochetes in chancre or condyloma fluid; it detects the organism directly and measures no antibody.",
+   "Treponemal immunoassay": "Automated treponemal immunoassays start reverse-sequence screening, but like all treponemal tests they remain reactive after treatment."
+  },
+  "media": "fig:rp16_syphilis",
+  "pt": {
+   "hl": ["Nontreponemal titer (RPR, VDRL)", "titer falls fourfold"],
+   "say": "Follow the nontreponemal curve: the RPR titer falls fourfold after penicillin while the treponemal line stays flat for life."
+  }
+ },
+ {
+  "id": "rp16r12",
+  "tags": ["pathogen-clues"],
+  "bp": ["BP-rp16-04"],
+  "q": "Which pupil finding of neurosyphilis constricts with accommodation but not to light?",
+  "o": ["Argyll Robertson pupil", "Marcus Gunn pupil", "Adie tonic pupil", "Horner syndrome", "Fixed dilated pupil"],
+  "a": 0,
+  "x": "The Argyll Robertson pupil of tertiary neurosyphilis is small and irregular and constricts to near focus but not to light, because the lesion near the pretectal area interrupts the light reflex while sparing the near-response pathway.",
+  "w": {
+   "Marcus Gunn pupil": "A Marcus Gunn pupil is a relative afferent defect from optic nerve disease: both pupils dilate when the light swings to the affected eye.",
+   "Adie tonic pupil": "The Adie pupil is large, reacts poorly to light and slowly to near effort, from ciliary ganglion damage; it is dilated rather than small.",
+   "Horner syndrome": "Horner syndrome causes miosis with ptosis and anhidrosis from interrupted sympathetic supply; the small pupil still reacts to light.",
+   "Fixed dilated pupil": "A fixed dilated pupil suggests oculomotor nerve compression, such as uncal herniation or an aneurysm, and reacts to neither light nor near effort."
+  },
+  "media": "fig:rp16_syphilis",
+  "pt": {
+   "hl": ["Tabes, Argyll Robertson pupil"],
+   "say": "The tertiary box lists tabes dorsalis and the Argyll Robertson pupil, neurosyphilis findings that appear years after the chancre."
+  }
+ },
+ {
+  "id": "rp16r13",
+  "tags": ["adverse-effects"],
+  "bp": ["BP-rp16-04"],
+  "q": "Which febrile reaction can follow the first penicillin dose in secondary syphilis?",
+  "o": ["Jarisch-Herxheimer reaction", "Type I anaphylaxis", "Serum sickness", "Red man syndrome", "Disulfiram-like reaction"],
+  "a": 0,
+  "x": "The Jarisch-Herxheimer reaction brings fever, chills, myalgia and headache within 24 hours of treatment as dying spirochetes release inflammatory lipoproteins; it is self-limited and is not a penicillin allergy.",
+  "w": {
+   "Type I anaphylaxis": "Anaphylaxis is IgE-mediated urticaria, wheezing and hypotension within minutes; the Herxheimer reaction comes hours later from spirochete lysis, not sensitization.",
+   "Serum sickness": "Serum sickness is a type III immune complex reaction with fever, rash and arthralgia 1 to 2 weeks after exposure to a drug or foreign protein.",
+   "Red man syndrome": "Red man syndrome is flushing during rapid vancomycin infusion, caused by direct histamine release from mast cells.",
+   "Disulfiram-like reaction": "A disulfiram-like reaction of flushing and vomiting occurs when alcohol is taken with metronidazole or some cephalosporins, not with penicillin."
+  }
+ },
+ {
+  "id": "rp16r14",
+  "tags": ["pathogen-clues", "drug-mechanism"],
+  "bp": ["BP-rp16-11"],
+  "q": "Which cell wall-deficient organism causes urethritis that persists after doxycycline and often needs moxifloxacin?",
+  "o": ["Mycoplasma genitalium", "Ureaplasma urealyticum", "Trichomonas vaginalis", "Chlamydia trachomatis", "Gardnerella vaginalis"],
+  "a": 0,
+  "x": "Mycoplasma genitalium has no cell wall, so beta-lactams fail, and many strains resist macrolides; CDC 2021 treats persistent nongonococcal urethritis from it with doxycycline followed by moxifloxacin, guided by resistance testing when available.",
+  "w": {
+   "Ureaplasma urealyticum": "Ureaplasma also lacks a cell wall and is a minor cause of nongonococcal urethritis, but it usually responds to doxycycline, so it rarely explains persistence.",
+   "Trichomonas vaginalis": "Trichomonas can cause urethritis in men, but it is a flagellated protozoan treated with metronidazole and is not the classic cause of doxycycline failure.",
+   "Chlamydia trachomatis": "Chlamydia is the commonest cause of nongonococcal urethritis, but it responds reliably to doxycycline, so it is unlikely to persist after a full course.",
+   "Gardnerella vaginalis": "Gardnerella causes bacterial vaginosis in women, with clue cells and a fishy odor; it is not a cause of persistent urethritis in men."
+  }
+ }
+]
