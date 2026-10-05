@@ -1,0 +1,62 @@
+{
+ "n": "Mature cystic teratoma with teeth and hair",
+ "file": "rp15_teratoma.jpg",
+ "dx": "Mature cystic teratoma (dermoid cyst)",
+ "wrong": [
+  "Immature teratoma",
+  "Endometrioma (chocolate cyst)",
+  "Mucinous cystadenoma",
+  "Ovarian fibroma"
+ ],
+ "ww": {
+  "Immature teratoma": "<b>Immature teratoma</b> is a bulky, mostly solid gray-brown mass with hemorrhage and necrosis in a girl or young woman, and its microscopy shows immature neuroepithelium. Teeth and hair in a mature skin-lined nodule mean a benign dermoid.",
+  "Endometrioma (chocolate cyst)": "An <b>endometrioma</b> is a cyst filled with thick, dark brown fluid from old blood and lined by endometrial tissue. It holds no teeth, hair or sebaceous material, the signature of a dermoid.",
+  "Mucinous cystadenoma": "A <b>mucinous cystadenoma</b> is a large, smooth, multiloculated cyst filled with sticky, glossy mucin and lined by tall mucus-secreting cells. It does not contain skin, hair or teeth.",
+  "Ovarian fibroma": "An <b>ovarian fibroma</b> is a solid, firm, white-tan tumor with a whorled cut surface and no cysts, teeth or hair. It makes no hormone but can cause Meigs syndrome, with ascites and a pleural effusion."
+ },
+ "look": "Several well-formed teeth and a tuft of hair are packed into one specimen with yellow, greasy-looking tissue. A teratoma holds tissue from all three germ layers, so skin, hair, sebum and teeth are typical, and in a young woman it is almost always benign. A dermoid is also a classic cause of ovarian torsion, because its weight makes the ovary swing on its stalk.",
+ "cred": "Billie Owens · CC BY-SA 3.0 · Wikimedia Commons (resized)",
+ "by": "Billie Owens",
+ "lic": "CC BY-SA 3.0",
+ "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Ovarian_teratoma.jpg",
+ "mod": true,
+ "modality": "gross",
+ "findings": [
+  "Teeth: several well-formed teeth with white enamel crowns project from the specimen, proof that tissue from more than one germ layer has differentiated inside this ovarian germ cell tumor.",
+  "Hair: a tuft of fine hairs grows from skin-like tissue at the left, because the lining of a dermoid contains skin with hair follicles and sebaceous glands.",
+  "Tooth-bearing nodule: the teeth are embedded in a thick, solid piece of the cyst wall, the Rokitansky nodule, where bone, teeth and most solid tissue of a dermoid concentrate."
+ ],
+ "ann": [
+  {
+   "k": "arrow",
+   "x": 43.0,
+   "y": 85.0,
+   "tx": 30.0,
+   "ty": 92.0,
+   "px": 30.0,
+   "py": 92.0,
+   "l": "Several well-formed teeth with white enamel crowns project from the specimen, proof that tissue from more than one germ layer has differentiated inside this ovarian germ cell tumor."
+  },
+  {
+   "k": "arrow",
+   "x": 33.0,
+   "y": 33.0,
+   "tx": 18.0,
+   "ty": 33.0,
+   "px": 18.0,
+   "py": 33.0,
+   "l": "A tuft of fine hairs grows from skin-like tissue at the left, because the lining of a dermoid contains skin with hair follicles and sebaceous glands."
+  },
+  {
+   "k": "arrow",
+   "x": 53.0,
+   "y": 60.0,
+   "tx": 70.0,
+   "ty": 55.0,
+   "px": 70.0,
+   "py": 55.0,
+   "l": "The teeth are embedded in a thick, solid piece of the cyst wall, the Rokitansky nodule, where bone, teeth and most solid tissue of a dermoid concentrate."
+  }
+ ]
+}

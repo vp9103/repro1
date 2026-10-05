@@ -32,6 +32,11 @@
    "Thickening cervical mucus": "Thick, scanty mucus is a progestin effect that keeps sperm out of the uterus; estrogen on its own makes mucus thin and stretchy, as before ovulation.",
    "Thinning the endometrium": "A thin, inactive lining comes from the progestin; estrogen stabilizes the endometrium so bleeding stays predictable, which is its cycle-control role.",
    "Raising SHBG": "Estrogen does raise hepatic SHBG, which lowers free testosterone and improves acne, but this binding-protein effect does nothing to stop follicle growth."
+  },
+  "media": "fig:rp10_pitfalls",
+  "pt": {
+   "hl": ["Suppressing FSH by negative"],
+   "say": "The first row shows estrogen suppressing FSH by negative feedback, so no dominant follicle forms and ovulation is blocked."
   }
  },
  {
@@ -47,6 +52,11 @@
    "Unpredictable spotting": "Irregular spotting is typical of progestin-only methods such as the implant; the estrogen in combined methods stabilizes the endometrium and makes bleeding predictable.",
    "Delayed return of fertility": "Fertility returns within weeks of stopping combined methods; a delay of many months is the hallmark of the DMPA injection, whose depot lingers.",
    "Heavier menstrual bleeding": "Combined methods usually make periods lighter and less painful; heavier, crampier bleeding is the typical complaint with the copper IUD."
+  },
+  "media": "fig:rp10_pitfalls",
+  "pt": {
+   "hl": ["Venous thromboembolism"],
+   "say": "The liver row shows first-pass estrogen raising clotting factors such as fibrinogen, which causes venous thromboembolism: deep vein thrombosis and pulmonary embolism."
   }
  },
  {
@@ -102,6 +112,11 @@
    "Cervical cancer": "Long-term pill use is linked to a modestly higher risk of cervical cancer in women with persistent HPV infection, not a lower one.",
    "Hepatic adenoma": "Hepatic adenoma is an estrogen-driven benign liver tumor whose risk rises with pill use; it can rupture and bleed, and it contraindicates estrogen.",
    "Vaginal clear cell adenocarcinoma": "This vaginal cancer follows in-utero exposure to diethylstilbestrol, a synthetic estrogen once given to pregnant women, not adult pill use."
+  },
+  "media": "fig:rp10_pitfalls",
+  "pt": {
+   "hl": ["Lower ovarian cancer risk"],
+   "say": "The ovulation row shows that years of suppressed ovulation mean less repair of the ovarian and tubal surface, so ovarian cancer risk falls for decades."
   }
  },
  {
@@ -117,6 +132,11 @@
    "Doxycycline": "Tetracyclines such as doxycycline leave contraceptive hormone levels unchanged; their notable issues are photosensitivity, esophagitis and tooth staining in children.",
    "Azithromycin": "Azithromycin neither induces nor meaningfully inhibits liver enzymes, so it does not change contraceptive hormone levels and needs no backup method.",
    "Fluconazole": "Fluconazole inhibits CYP3A4, so if anything it raises hormone levels slightly; inhibition never causes contraceptive failure the way induction does."
+  },
+  "media": "fig:rp10_pitfalls",
+  "pt": {
+   "hl": ["Rifampin, carbamazepine,", "Induce hepatic CYP3A4, so"],
+   "say": "The enzyme inducers row lists rifampin first: it induces hepatic CYP3A4, so contraceptive hormones are cleared faster and the pill, patch or ring may fail."
   }
  },
  {
@@ -132,6 +152,11 @@
    "Saw palmetto": "Saw palmetto is marketed for benign prostatic hyperplasia symptoms; it has no clinically important effect on the liver enzymes that clear contraceptive hormones.",
    "Ginkgo biloba": "Ginkgo is known for antiplatelet effects and bleeding risk with anticoagulants, not for speeding the metabolism of contraceptive hormones.",
    "Cranberry extract": "Cranberry is used to prevent urinary infections; it does not induce CYP3A4 and does not reduce contraceptive effectiveness."
+  },
+  "media": "fig:rp10_pitfalls",
+  "pt": {
+   "hl": ["phenytoin, St John's wort"],
+   "say": "St John's wort sits in the enzyme inducers row: it induces hepatic CYP3A4 and speeds clearance of contraceptive hormones, so an IUD or DMPA is used instead."
   }
  },
  {
@@ -227,6 +252,11 @@
    "Unpredictable light spotting": "Unpredictable spotting is the signature complaint with the etonogestrel implant, whose steady progestin leaves the endometrium fragile and irregular.",
    "Lighter, shorter periods": "Lighter periods follow combined pills and the levonorgestrel IUD; the copper IUD contains no hormone that could thin the endometrium.",
    "Scheduled withdrawal bleeds": "Withdrawal bleeds come from the hormone-free week of a combined pill, patch or ring, when estrogen and progestin levels drop."
+  },
+  "media": "fig:rp10_pitfalls",
+  "pt": {
+   "hl": ["Heavier, more painful periods", "Sterile inflammation raises"],
+   "say": "The copper IUD row shows sterile inflammation raising endometrial prostaglandins, which makes periods heavier and more painful; NSAIDs help."
   }
  },
  {
@@ -282,6 +312,11 @@
    "Age under 18": "Adolescents respond to levonorgestrel as well as adults do, and in the United States it is sold over the counter without an age limit.",
    "Nulliparity": "Never having given birth has no effect on how levonorgestrel postpones the LH surge, and nulliparous women can also use a copper IUD.",
    "Taking amoxicillin": "Ordinary antibiotics such as amoxicillin do not induce liver enzymes, so they leave levonorgestrel levels unchanged; only inducers like rifampin matter."
+  },
+  "media": "fig:rp10_pitfalls",
+  "pt": {
+   "hl": ["Levonorgestrel", "BMI of 30 or more weakens it"],
+   "say": "The levonorgestrel row shows it only delays the LH surge, and a BMI of 30 or more weakens it, so ulipristal or a copper IUD works better in obesity."
   }
  },
  {
@@ -297,6 +332,11 @@
    "Dihydrofolate reductase inhibitor": "Methotrexate inhibits dihydrofolate reductase and kills dividing trophoblast; it treats a small unruptured ectopic pregnancy rather than starting a routine medication abortion.",
    "Oxytocin receptor agonist": "Oxytocin acts on receptors that are scarce in the early pregnant uterus, so it is used in labor and postpartum hemorrhage, not first-trimester abortion.",
    "Selective estrogen receptor modulator": "SERMs such as clomiphene, tamoxifen and raloxifene act on estrogen receptors; mifepristone targets the progesterone receptor and also blocks glucocorticoid receptors."
+  },
+  "media": "fig:rp10_abortion",
+  "pt": {
+   "hl": ["Competitive progesterone receptor antagonist"],
+   "say": "Mifepristone is a competitive progesterone receptor antagonist: without progesterone the decidua breaks down, the cervix softens and the myometrium becomes sensitive to prostaglandins."
   }
  },
  {

@@ -314,6 +314,14 @@
    "Stromal edema": "Stromal edema peaks about a week after ovulation, near implantation, after the vacuoles have moved upward.",
    "Predecidual cells": "Predecidual change appears around spiral arteries late in the luteal phase, just before menses or implantation.",
    "Luminal secretions": "Secretions fill gland lumens in the mid-luteal phase, once the vacuoles have discharged above the nuclei."
+  },
+  "media": "fig:rp8_endometrium",
+  "pt": {
+   "hl": [
+    "+2 days",
+    "Subnuclear vacuoles"
+   ],
+   "say": "On the day clock, subnuclear vacuoles come first, at +2 days: the earliest sign of progesterone, before luminal secretions, stromal edema and predecidual cells appear."
   }
  },
  {
@@ -339,6 +347,14 @@
    "Myometrium": "The myometrium is smooth muscle beneath the endometrium; it contracts during menses but never makes new glands.",
    "Perimetrium": "The perimetrium is the outer serosal coat of the uterus, far from the cavity lining.",
    "Stratum spongiosum": "The spongiosum is the deeper part of the functionalis and is shed along with the compactum."
+  },
+  "media": "fig:rp8_endometrium",
+  "pt": {
+   "hl": [
+    "Stratum basalis",
+    "Never shed"
+   ],
+   "say": "The stratum basalis is never shed: fed by straight arteries, it regrows the functionalis each cycle, and curettage through it causes Asherman syndrome."
   }
  },
  {
@@ -364,6 +380,13 @@
    "Dry and sticky": "Dry, sticky mucus is typical just after menses, when estradiol is still low and the fertile window has not opened.",
    "Purulent and yellow": "Purulent yellow discharge suggests cervicitis, such as gonorrhea or chlamydia, rather than a hormonal phase.",
    "Blood-streaked": "Blood streaks suggest menses, a cervical lesion or trauma, not the normal ovulatory mucus change."
+  },
+  "media": "fig:rp8_tract",
+  "pt": {
+   "hl": [
+    "thin, watery, stretchy"
+   ],
+   "say": "The endocervix row shows mucinous cells making thin, watery, stretchy mucus at peak estradiol, the fertile pattern just before ovulation."
   }
  },
  {
@@ -389,6 +412,13 @@
    "Ciliated simple columnar": "Ciliated columnar cells line the fallopian tube, where their beating moves the oocyte toward the uterus.",
    "Keratinized stratified squamous": "Keratinized squamous epithelium covers skin and the outer vulva, not the moist ectocervix.",
    "Transitional epithelium": "Transitional epithelium, or urothelium, lines the bladder and ureters rather than the genital tract."
+  },
+  "media": "fig:rp8_tract",
+  "pt": {
+   "hl": [
+    "Nonkeratinized stratified squamous"
+   ],
+   "say": "The ectocervix row reads nonkeratinized stratified squamous epithelium, continuous with the vagina; mucinous columnar cells begin only at the endocervix."
   }
  },
  {
@@ -414,6 +444,14 @@
    "Prostaglandin-driven uterine cramps": "Prostaglandin cramps are primary dysmenorrhea at the start of menses, two weeks away from mid-cycle.",
    "Endometrial implants on the peritoneum": "Implants cause endometriosis pain, usually with menses, intercourse or defecation, often worsening over years.",
    "Ovarian torsion": "Torsion causes sudden severe pain with nausea and needs surgery; it is an emergency, not a monthly normal event."
+  },
+  "media": "fig:rp8_tract",
+  "pt": {
+   "hl": [
+    "Mittelschmerz",
+    "Follicle wall ruptures"
+   ],
+   "say": "The ovary row ties mittelschmerz to follicle rupture: the released fluid or blood irritates the peritoneum and gives brief one-sided pain in the middle of the cycle."
   }
  }
 ]

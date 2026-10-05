@@ -70,7 +70,9 @@ if not CARDIO.is_dir() and (Path(__file__).resolve().parent / "ref" / "cardio").
 GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta/openai/"
 # 2026-09-26: this key has no quota for gemini-3.1-pro-preview (429) and gemini-2.5-pro is retired for new users (404);
 # gemini-3.5-flash answers but returns 503 under load, so transient errors are retried with backoff before moving on.
-GEMINI_MODELS = ["gemini-3.5-flash", "gemini-3.1-pro-preview"]
+# 2026-10-05: the free tier allows 20 requests/day PER MODEL (gemini-3.5-flash ran out after one day of overlays), so the
+# newer flash models, each with its own daily quota, are tried in turn; a quota 429 moves on at once instead of backing off.
+GEMINI_MODELS = ["gemini-3.7-flash", "gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash", "gemini-3-flash-preview", "gemini-3.1-pro-preview"]
 GEMINI_BACKOFF = (20, 60, 120)
 GEMINI_ENV_FILE = Path(r"C:\Users\varsh\.gemini\antigravity\scratch\hybrid_swarm\.env")
 PROVIDERS = ("codex", "gemini")
@@ -186,7 +188,7 @@ def _gemini(prompt: str, schema: dict, transcript: Path, images: list[Path]) -> 
             except urllib.error.HTTPError as e:
                 last_err = f"{model} {fmt['type']}: HTTP {e.code} {e.read()[:300].decode('utf-8', 'replace')}"
                 events.append({"type": "error", "model": model, "error": last_err})
-                if e.code in (429, 500, 503) and tries < len(GEMINI_BACKOFF) and not (e.code == 429 and "quota" in last_err.lower() and "pro" in model):
+                if e.code in (429, 500, 503) and tries < len(GEMINI_BACKOFF) and not (e.code == 429 and "quota" in last_err.lower()):
                     time.sleep(GEMINI_BACKOFF[tries])
                     attempts.insert(0, (model, fkind, tries + 1))
                     continue
@@ -199,7 +201,8 @@ def _gemini(prompt: str, schema: dict, transcript: Path, images: list[Path]) -> 
                 events.append({"type": "error", "model": model, "error": last_err})
                 continue
     transcript.parent.mkdir(parents=True, exist_ok=True)
-    transcript.write_text("\n".join(json.dumps(e) for e in events) + "\n", encoding="utf-8")
+    # a failed run never overwrites the transcript of an earlier completed run (it is the evidence a record rests on)
+    transcript.with_name(transcript.stem + ".failed.jsonl").write_text("\n".join(json.dumps(e) for e in events) + "\n", encoding="utf-8")
     raise RuntimeError("gemini failed on every model/format: " + str(last_err))
 
 

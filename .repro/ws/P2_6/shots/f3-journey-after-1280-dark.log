@@ -1,0 +1,69 @@
+PASS window.innerWidth is 1280  :: 1280
+PASS diagnostic done, back on the Path
+-- Path after reading stage 1: ["p0:100% DONE","s1:28%","s2:0%","pf:0%"]
+-- Stage 1 summary: {"head":"Set finished: 2 of 5 right (40%). Open any question to go back over it: the explanation, the table and why each other option is wrong.","res":"STAGE CHECK NOT PASSED\n2 of 5 right (40%). It needs 75% to pass, so this stage is not done yet. Look over the explanations below, then take it again.\nRetake the stage check","resKind":"failed","retake":true,"live":"Stage check not passed. 2 of 5 right (40%). It needs 75% to pass, so this stage is not done yet. Look over the explanations below, then take it again. Set finished: 2 of 5 right (40%). Open any question to go back over it: the explanation, the table and why each other option is wrong.","focus":"sumhead","state":"{\"quiz\":{\"done\":false,\"acc\":0.4,\"n\":5,\"total\":5,\"at\":1791160215233}}"}
+PASS S1 failed check stored as not done  :: {"quiz":{"done":false,"acc":0.4,"n":5,"total":5,"at":1791160215233}}
+PASS S1 summary says not passed  :: STAGE CHECK NOT PASSED
+2 of 5 right (40%). It needs 75% to pass, so this stage is not done yet. Look over the explanations below, then take it again.
+Retake the stage check
+PASS S1 summary has the score  :: STAGE CHECK NOT PASSED
+2 of 5 right (40%). It needs 75% to pass, so this stage is not done yet. Look over the explanations below, then take it again.
+Retake the stage check
+PASS S1 summary says 75% needed
+PASS S1 summary offers the retake
+PASS S1 summary spoken in #live  :: Stage check not passed. 2 of 5 right (40%). It needs 75% to pass, so this stage is not done yet. Look over the explanations below, then take it again. Set finis
+PASS no horizontal scroll on the failed summary  :: 0
+-- Path after failed S1 check: {"h1":"1 of 4 stages done","lede":"Work down the stages in order. A teaching stage has you read its topics, then pass its stage check (75% right), then take a round of rapid picks, before it counts as done. The final simulation needs 80% right. You can open any stage from the list below, and any topic from Learn, but the stages in order are the path that gets you finished.","card":"STAGE CHECK NOT PASSED\n2 of 5 right (40%). It needs 75% to pass, so this stage is not done yet. Take it again when you are ready.","btn":"Retake the stage check →","tags":2,"rowTags":["p0: -","s1: CHECK NOT PASSED: 40%","s2: -","pf: -"],"planTags":["rf:linked: -","stage:s1: CHECK NOT PASSED: 40%","ps:weak: -"],"planDays":"3 days to finish, today included · done on day 3 of 5"} bars ["p0:100% DONE","s1:28%","s2:0%","pf:0%"]
+PASS S1 bar does NOT read like a pass (not 80%)  :: s1:28%
+PASS Path card says not passed  :: STAGE CHECK NOT PASSED
+2 of 5 right (40%). It needs 75% to pass, so this stage is not done yet. Take it again when you are ready.
+PASS S1 Path card is in view and focused after Done  :: {"top":687,"bottom":783,"hd":91,"vh":900,"focus":true}
+PASS Path card has the score and 75%  :: STAGE CHECK NOT PASSED
+2 of 5 right (40%). It needs 75% to pass, so this stage is not done yet. Take it again when you are ready.
+PASS Path button is a retake  :: Retake the stage check →
+PASS stage list row tag  :: s1: CHECK NOT PASSED: 40%
+PASS plan row tag  :: ["rf:linked: -","stage:s1: CHECK NOT PASSED: 40%","ps:weak: -"]
+PASS lede states both marks  :: Work down the stages in order. A teaching stage has you read its topics, then pass its stage check (75% right), then take a round of rapid picks, before it counts as done. The final simulation needs 80% right. You can open any stage from the list below, and any topic from Learn, but the stages in order are the path that gets you finished.
+PASS after reload the Path card still says not passed  :: STAGE CHECK NOT PASSED
+2 of 5 right (40%). It needs 75% to pass, so this stage is not done yet. Take it again when you are ready.
+PASS after reload the bar is still not 80%  :: p0:100% DONE s1:28% s2:0% pf:0%
+PASS retake opened a new check
+-- Stage 1 retake summary: {"head":"Set finished: 5 of 5 right (100%). Open any question to go back over it: the explanation, the table and why each other option is wrong.","res":"STAGE CHECK PASSED\n5 of 5 right (100%). It needed 75%. Next on the Path: a round of rapid picks to finish this stage.","resKind":"passed","retake":false,"live":"Stage check passed. 5 of 5 right (100%). It needed 75%. Next on the Path: a round of rapid picks to finish this stage. Set finished: 5 of 5 right (100%). Open any question to go back over it: the explanation, the table and why each other option is wrong.","focus":"sumhead","state":"{\"quiz\":{\"done\":true,\"acc\":1,\"n\":5,\"total\":5,\"at\":1791160220666}}"}
+PASS S1 retake summary says passed  :: STAGE CHECK PASSED
+5 of 5 right (100%). It needed 75%. Next on the Path: a round of rapid picks to finish this stage.
+PASS S1 passed summary has no retake button
+PASS passed check: no not-passed card  :: null
+PASS passed check: S1 bar 80% (as before)  :: p0:100% DONE s1:80% s2:0% pf:0%
+PASS passed check: button offers rapid picks  :: Rapid picks →
+PASS S1 stage done after rapid  :: p0:100% DONE s1:100% DONE s2:0% pf:0%
+PASS heading counts 2 of 4 done  :: 2 of 4 stages done
+-- Stage 2 summary (0 right): {"head":"Set finished: 0 of 6 right (0%). Open any question to go back over it: the explanation, the table and why each other option is wrong.","res":"STAGE CHECK NOT PASSED\n0 of 6 right (0%). It needs 75% to pass, so this stage is not done yet. Look over the explanations below, then take it again.\nRetake the stage check","resKind":"failed","retake":true,"live":"Stage check not passed. 0 of 6 right (0%). It needs 75% to pass, so this stage is not done yet. Look over the explanations below, then take it again. Set finished: 0 of 6 right (0%). Open any question to go back over it: the explanation, the table and why each other option is wrong.","focus":"sumhead","state":"{\"quiz\":{\"done\":false,\"acc\":0,\"n\":6,\"total\":6,\"at\":1791160227482}}"}
+PASS S2 summary says not passed, 0%  :: STAGE CHECK NOT PASSED
+0 of 6 right (0%). It needs 75% to pass, so this stage is not done yet. Look over the explanations below, then take it again.
+Retake the stage check
+PASS S2 summary offers the retake
+-- retake from the summary: {"mode":"practice","src":"stage:s2","i":0,"focus":"qstem","top":259,"hd":91}
+PASS summary retake opened a new check of s2, focus on the stem, in view  :: {"mode":"practice","src":"stage:s2","i":0,"focus":"qstem","top":259,"hd":91}
+PASS S2 retake passed  :: STAGE CHECK PASSED
+5 of 5 right (100%). It needed 75%. Next on the Path: a round of rapid picks to finish this stage.
+PASS heading counts 3 of 4 done  :: 3 of 4 stages done
+-- Path before the final: {"h1":"3 of 4 stages done","lede":"Work down the stages in order. A teaching stage has you read its topics, then pass its stage check (75% right), then take a round of rapid picks, before it counts as done. The final simulation needs 80% right. You can open any stage from the list below, and any topic from Learn, but the stages in order are the path that gets you finished.","card":null,"btn":"Start the final simulation →","tags":0,"rowTags":["p0: -","s1: -","s2: -","pf: -"],"planTags":["rf:linked: -","stage:pf: -","ps:weak: -"],"planDays":"finishes today, day 1 of 5"} ["p0:100% DONE","s1:100% DONE","s2:100% DONE","pf:0%"]
+-- Final summary: {"head":"Set finished: 2 of 6 right (33%). Open any question to go back over it: the explanation, the table and why each other option is wrong.","res":"FINAL SIMULATION NOT PASSED\n2 of 6 right (33%). It needs 80% to pass, so the block is not finished yet. Look over the explanations below, then take it again.\nRetake the final simulation","resKind":"failed","retake":true,"live":"Final simulation not passed. 2 of 6 right (33%). It needs 80% to pass, so the block is not finished yet. Look over the explanations below, then take it again. Set finished: 2 of 6 right (33%). Open any question to go back over it: the explanation, the table and why each other option is wrong.","focus":"sumhead","state":"{\"quiz\":{\"done\":true,\"acc\":0.3333333333333333,\"n\":6,\"total\":6}}"}
+PASS final summary says not passed, score, 80%  :: FINAL SIMULATION NOT PASSED
+2 of 6 right (33%). It needs 80% to pass, so the block is not finished yet. Look over the explanations below, then take it again.
+Retake the final simulation
+PASS final summary offers the retake
+-- Path after failed final: {"h1":"3 of 4 stages done","lede":"Work down the stages in order. A teaching stage has you read its topics, then pass its stage check (75% right), then take a round of rapid picks, before it counts as done. The final simulation needs 80% right. You can open any stage from the list below, and any topic from Learn, but the stages in order are the path that gets you finished.","card":"FINAL SIMULATION NOT PASSED\n2 of 6 right (33%). It needs 80% to pass, so the block is not finished yet. Take it again when you are ready.","btn":"Retake the final simulation →","tags":2,"rowTags":["p0: -","s1: -","s2: -","pf: FINAL NOT PASSED: 33%"],"planTags":["rf:linked: -","stage:pf: FINAL NOT PASSED: 33%","ps:weak: -"],"planDays":"finishes today, day 1 of 5"} ["p0:100% DONE","s1:100% DONE","s2:100% DONE","pf:33%"]
+PASS final: heading not finished  :: 3 of 4 stages done
+PASS final: Path card is in view and focused after Done  :: {"top":586,"bottom":682,"hd":91,"vh":900,"focus":true}
+PASS final: Path card says not passed with 80%  :: FINAL SIMULATION NOT PASSED
+2 of 6 right (33%). It needs 80% to pass, so the block is not finished yet. Take it again when you are ready.
+PASS final: button is a retake  :: Retake the final simulation →
+PASS final: row tag  :: pf: FINAL NOT PASSED: 33%
+PASS final retake passed, says the block is finished  :: FINAL SIMULATION PASSED
+6 of 6 right (100%). It needed 80%. Every stage is now complete: you have finished this block.
+PASS block finished  :: You have finished this block | null
+PASS reload keeps the finished block  :: You have finished this block
+PASS no horizontal scroll on the Path  :: 0
+PASS no page errors  :: 
+RESULT after 1280x900 dark: 0 fail(s)

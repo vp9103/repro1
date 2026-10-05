@@ -1219,14 +1219,42 @@ function diagNote(set){
     + "a first answer in about " + spanWord(BOXES[1]) + ", then further apart each time you get it right.");
   return {title:"Diagnostic done: " + right + " of " + items.length + " right", lines:lines, fresh:true};
 }
+/* P2.V F3 (redo 2026-10-05) - a failed check was shown as a pass. finishSet stores a check you finished
+   below the mark as {done:false, n:5, total:5}, and stageProgress gave quiz credit for ANSWERING
+   (n / the stage's questions = 1), so a 40% check drew the same 80% bar as a passed one, and nothing
+   said it had failed. The rule now: a stage check earns its quiz credit only by passing. Passed = full
+   credit, anything else (finished below the mark, or ended early) = none, so the bar can never read like
+   a pass; a stage is done only through stageDone, which needs the whole 1.0, so every plan and day count
+   (stageAllot, planDaysLeft, todaysPlan, the probe's pacing run) sees a stage as done exactly when it
+   did before. The final's bar is its accuracy once the final is finished (nothing while unfinished),
+   and the final is done at FINAL_PASS. The diagnostic has no mark (it reads where to start, it does not
+   gate), so it has nothing to fail and is untouched. The marks live here once: the Path lede, finishSet,
+   the set summary, the Path card and stageDone all read them. */
+const CHECK_PASS = 0.75, FINAL_PASS = 0.80;
+const passMark = p => p && p.kind === "final" ? FINAL_PASS : CHECK_PASS;
+/* a set counts as finished when at least 90% of it is answered (finishSet) */
+const answeredNeed = total => Math.ceil(total * 0.9);
+/* What one finished or ended attempt came to, for the summary (its own answers) and the Path (the stored
+   result, checkResult). state: passed | failed (finished below the mark) | ended (stopped before enough
+   was answered). Never for the diagnostic. */
+function checkVerdict(p, right, n, total){
+  if(!p || (p.kind !== "unit" && p.kind !== "final") || !(n > 0) || !(total > 0)) return null;
+  const mark = passMark(p), need = answeredNeed(total);
+  return {state: n < need ? "ended" : right / n >= mark ? "passed" : "failed",
+    right, n, total, need, mark, pct: pct(right, n), markPct: Math.round(mark * 100)};
+}
+function checkResult(p){
+  const q = p ? (S.stage[p.id] || {}).quiz : null;
+  return q && q.n > 0 ? checkVerdict(p, Math.round(clamp(q.acc || 0, 0, 1) * q.n), q.n, Math.max(q.n, +q.total || 0)) : null;
+}
 function stageProgress(p){
   const st = S.stage[p.id] || {};
   if(p.kind === "diag")  return st.done ? 1 : (st.total ? clamp((st.n||0)/st.total, 0, 0.95) : 0);
   if(p.kind === "final"){ const q = st.quiz || {};
-    return q.done ? clamp(q.acc||0,0,1) : (q.total ? clamp((q.n||0)/q.total,0,0.95) : 0); }
+    return q.done ? clamp(q.acc||0,0,1) : 0; }
   const tp = p.topics || [];
   const readN = tp.filter(id => (S.topics[id]||{}).read).length / Math.max(1, tp.length);
-  const quiz  = (st.quiz && st.quiz.done) ? 1 : ((st.quiz && st.quiz.n) ? st.quiz.n / Math.max(1, stageQs(p).length) : 0);
+  const quiz  = (st.quiz && st.quiz.done) ? 1 : 0;   /* done = finished AND at CHECK_PASS (finishSet) */
   /* Reading used to be worth half a stage. Re-reading is the weakest study
      technique there is, so most of the credit now comes from retrieval. */
   return clamp(0.28*readN + 0.52*quiz + 0.20*(st.rapid?1:0), 0, 1);
@@ -1234,8 +1262,36 @@ function stageProgress(p){
 /* The final's progress IS your accuracy, so a 0.995 gate silently demanded 100%
    on 40 questions and the "you have finished this block" screen was unreachable. */
 const stageDone = p => p.kind === "final"
-  ? !!((S.stage[p.id]||{}).quiz||{}).done && stageProgress(p) >= 0.80
+  ? !!((S.stage[p.id]||{}).quiz||{}).done && stageProgress(p) >= FINAL_PASS
   : stageProgress(p) >= 0.995;
+/* The words for a check's result, one source for the set summary and the Path card. `where` is "summary"
+   (the explanations are right below) or "path". Failed and ended say the check was not passed or not
+   finished, the score, the mark and what to do. */
+function checkWords(p, v, where){
+  const fin = p.kind === "final", name = fin ? "Final simulation" : "Stage check", score = '<b>' + v.right + ' of ' + v.n + ' right (' + v.pct + '%).</b>';
+  if(v.state === "passed") return {label: name + " passed",
+    text: score + ' It needed ' + v.markPct + '%. ' + (fin ? (PATH.every(stageDone) ? "Every stage is now complete: you have finished this block."
+      : "The final is done; the stages before it are still open.") : stageDone(p) ? "This stage is now done." : "Next on the Path: a round of rapid picks to finish this stage.")};
+  if(v.state === "failed") return {label: name + " not passed",
+    text: score + ' It needs ' + v.markPct + '% to pass, so ' + (fin ? "the block is not finished yet" : "this stage is not done yet") + '. '
+      + (where === "summary" ? "Look over the explanations below, then take it again." : "Take it again when you are ready.")};
+  return {label: name + " not finished",
+    text: 'You stopped after ' + v.n + ' of ' + v.total + ' questions, so it does not count. To pass, answer '
+      + (v.need >= v.total ? 'all ' + v.total : 'at least ' + v.need + ' of the ' + v.total) + ' and get ' + v.markPct + '% of them right. '
+      + (where === "summary" ? "Look over the explanations below, then take it again." : "Take it again when you are ready.")};
+}
+/* the Path card of the current stage, and the tag on a stage's row (the list, today's plan): not for a passed check */
+function stageCheckCard(p){
+  const v = checkResult(p); if(!v || v.state === "passed") return "";
+  const w = checkWords(p, v, "path");
+  return '<div class="call trap checkres" data-checkres><span class="cl">' + w.label + '</span>' + w.text + '</div>';
+}
+function stageCheckTag(p){
+  const v = checkResult(p); if(!v || v.state === "passed") return "";
+  const nm = p.kind === "final" ? "final" : "check";
+  return ' <span class="tag crit" data-check>' + nm + (v.state === "failed" ? " not passed: " + v.pct + "%" : " not finished") + '</span>';
+}
+const retakeLabel = p => p && p.kind === "final" ? "Retake the final simulation" : "Retake the stage check";
 function currentStage(){ const i = PATH.findIndex(p => !stageDone(p)); return i === -1 ? PATH[PATH.length-1] : PATH[i]; }
 function blockScore(b){ return b.topics.reduce((a,t)=>a+topicEvidence(Object.assign({blk:b},t)).mastery,0)/b.topics.length; }
 function blockKnown(b){ return b.topics.reduce((a,t)=>a+topicEvidence(Object.assign({blk:b},t)).known,0)/b.topics.length; }
@@ -1991,7 +2047,7 @@ function todaysPlan(){
      as a tag), since a stage covers its own topics and the diagnostic and final the whole block */
   stagesLeftArr.slice(0, take).forEach((p, i) => out.push({id:"stage:"+p.id,
     t: i===0 ? (p.kind==="diag" ? "Take the diagnostic" : "Continue: "+p.t) : "Then: "+p.t,
-    d:p.d, mins:p.mins, act:["stage",p.id], yx:S.hiOnly ? stageYx(p) : "", dg:stageDiagTag(p)}));
+    d:p.d, mins:p.mins, act:["stage",p.id], yx:S.hiOnly ? stageYx(p) : "", dg:stageDiagTag(p) + stageCheckTag(p)}));
   /* P2.3: these rows count the set their button serves (setCount), capped and yield-filtered alike */
   const verifyN = setCount("practice", "verify", ev).n;
   if(verifyN) out.push({id:"verify", t:"Prove "+verifyN+" answer"+(verifyN>1?"s were":" was")+" not lucky",
@@ -2236,7 +2292,7 @@ function viewPath(){
   const nPre = ALLT().filter(t => (t.pretest||[]).length).length, nVis = ALLT().filter(t => VISUAL_GUIDES[t.id]).length;
   const nImg = Object.keys(IMGS).length, nAnn = Object.values(IMGS).filter(im => (im.ann||[]).length).length;
   const nextLabel = (allDone ? "Run the final again"
-    : (cur.kind==="diag" ? "Take the diagnostic" : cur.kind==="final" ? "Start the final simulation" : nextStepLabel(cur)))
+    : (cur.kind==="diag" ? "Take the diagnostic" : cur.kind==="final" ? (checkResult(cur) ? retakeLabel(cur) : "Start the final simulation") : nextStepLabel(cur)))
     /* P2.V F8 - the diagnostic and the final measure the whole block, whatever the yield filter says */
     + (S.hiOnly && (allDone || cur.kind==="diag" || cur.kind==="final") ? " (whole block)" : "");
   return `
@@ -2252,13 +2308,14 @@ function viewPath(){
       <h1>${allDone ? "You have finished this block" : (doneN ? doneN+" of "+PATH.length+" stages done" : "Start here")}</h1>
       <p class="lede">${allDone
         ? "Every stage is complete. Re-run the final simulation, or spend the time in <b>Weak Spots</b> &mdash; it now has real evidence to work with."
-        : "Work down the stages in order. A teaching stage has you read its topics, then pass its stage check (75% right), then take a round of rapid picks, before it counts as done. <b>You can open any stage</b> from the list below, and any topic from Learn, but the stages in order are the path that gets you finished."}</p>
+        : "Work down the stages in order. A teaching stage has you read its topics, then pass its stage check ("+Math.round(CHECK_PASS*100)+"% right), then take a round of rapid picks, before it counts as done. The final simulation needs "+Math.round(FINAL_PASS*100)+"% right. <b>You can open any stage</b> from the list below, and any topic from Learn, but the stages in order are the path that gets you finished."}</p>
     </div>
     <div class="phbody">
       <div class="phnext">
         <div class="nl">${allDone ? "Optional" : "Do this next"}</div>
         <div class="nt">${esc(cur.t)}</div>
         <div class="nd">${esc(cur.d)}</div>
+        ${allDone ? "" : stageCheckCard(cur)}
         <div class="phmeta">
           <span class="tag ghost">${cur.mins} min</span>
           ${cur.kind==="unit" ? '<span class="tag ghost">'+(cur.topics||[]).length+' topic'+((cur.topics||[]).length===1?"":"s")+'</span>' : ""}
@@ -2287,7 +2344,7 @@ function viewPath(){
     const pr = stageProgress(p), dn = stageDone(p), isCur = p.id===cur.id && !allDone;
     return `<button class="stage${dn?" done":""}${isCur?" cur":""}" data-stage="${p.id}">
       <span class="sn">${dn?"&#10003;":(i+1)}</span>
-      <span><span class="st">${esc(p.t)}${S.hiOnly && (p.kind==="diag" || p.kind==="final") ? ' <span class="tag ghost" data-yx>'+stageYx(p)+'</span>' : ""}${stageDiagTag(p)}</span><span class="sd">${esc(p.d)}</span></span>
+      <span><span class="st">${esc(p.t)}${S.hiOnly && (p.kind==="diag" || p.kind==="final") ? ' <span class="tag ghost" data-yx>'+stageYx(p)+'</span>' : ""}${stageDiagTag(p)}${stageCheckTag(p)}</span><span class="sd">${esc(p.d)}</span></span>
       <span class="sm"><span>${p.mins} min</span><span class="stagebar"><i style="width:${Math.round(pr*100)}%"></i></span></span>
     </button>`; }).join("")}</div>
   <div class="divider"></div>
@@ -2318,7 +2375,7 @@ function nextStepLabel(p){
   const st = S.stage[p.id] || {};
   const unread = (p.topics||[]).filter(id => !(S.topics[id]||{}).read);
   if(unread.length) return "Read: " + (findT(unread[0])||{t:"next topic"}).t;
-  if(!(st.quiz && st.quiz.done)) return "Stage check";
+  if(!(st.quiz && st.quiz.done)) return checkResult(p) ? retakeLabel(p) : "Stage check";   /* P2.V F3: a try that did not pass is a retake */
   return "Rapid picks";
 }
 function openStage(pid){
@@ -3018,8 +3075,16 @@ function setSummaryHTML(ps){
       <div class="sumexp" id="sx_${escA(id)}" hidden><p class="sumfull">${fmt(q.s)} <b>${fmt(q.l)}</b></p>
         ${qblHTML(q)}<p>${fmt(q.e)}</p>${etTableHTML(q, null)}${notes ? '<div class="wrongs">' + notes + '</div>' : ""}</div></div>`;
   }).join("");
+  /* P2.V F3 (redo) - a stage check or the final says whether it was passed, with the score and the mark, and
+     offers the retake; the same words as the Path card (checkWords). The result is its own verdict region. */
+  const gate = ps.src === "final" ? finalStage() : String(ps.src || "").startsWith("stage:") ? stageOf(String(ps.src).slice(6)) : null;
+  const cv = gate ? checkVerdict(gate, right, ids.length, ps.set.length) : null, cw = cv ? checkWords(gate, cv, "summary") : null;
+  const result = !cw ? "" : `<div class="call ${cv.state === "passed" ? "mnem" : "trap"} checkres" data-checkres="${cv.state}">
+        <div data-verdict><span class="cl">${cw.label}</span>${cw.text}</div>
+        ${cv.state === "passed" ? "" : `<div class="btnrow" style="margin-top:12px"><button class="btn pri sm" data-retake="${escA(gate.id)}">${retakeLabel(gate)}</button></div>`}</div>`;
   return `<div class="toolbar"><span class="tl">${practiceLabel(ps.src)}</span><span style="flex:1"></span></div>
     <div class="qcard setsummary">
+      ${result}
       <div class="sumhead" data-verdict><b>Set finished: ${right} of ${ids.length} right (${pct(right, ids.length)}%).</b>
         Open any question to go back over it: the explanation, the table and why each other option is wrong.</div>
       <div class="sumrows">${rows}</div>
@@ -5432,9 +5497,22 @@ function wirePractice(app){
   /* P2.3 (K10): the question's visual is in the DOM (and open) by now, so mark the answer */
   app.querySelectorAll(".qcard details.deepreview[data-hl]").forEach(d => {
     try{ highlightFigure(d.closest(".qcard") || d, JSON.parse(d.dataset.hl)); }catch(e){} });
+  /* P2.V F3 (redo): the retake on a check's summary starts a new check of that stage, landing on its first question */
+  app.querySelectorAll("[data-retake]").forEach(b => b.onclick = ()=>{
+    const pid = b.dataset.retake; if(!stageOf(pid)) return;
+    S.ps = null; landOn(); openStage(pid); window.scrollTo({top:0,behavior:"instant"}); });
   app.querySelectorAll("[data-ps]").forEach(b => b.onclick = ()=>{
     if(b.dataset.ps === "quit"){ finishSet(); return; }
-    if(b.dataset.ps === "done"){ S.ps = null; S.mode = "path"; save(); render(); window.scrollTo({top:0,behavior:"instant"}); return; }
+    if(b.dataset.ps === "done"){
+      /* P2.V F3 (redo): a check that was not passed or not finished leaves the reader on the Path card that says so
+         (focused, under the header), not wherever the Path was last scrolled to */
+      const g = S.ps && S.ps.src === "final" ? finalStage() : S.ps && String(S.ps.src || "").startsWith("stage:") ? stageOf(S.ps.src.slice(6)) : null, v = g ? checkResult(g) : null;
+      const land = !!(v && v.state !== "passed" && g === currentStage());
+      if(land) landOn("[data-checkres]", "start");
+      S.ps = null; S.mode = "path"; save(); render();
+      /* the landing scrolled the card into view only when it was not in view already; the Path's saved position must not take the reader off it either way */
+      if(land) cancelRestore(); else window.scrollTo({top:0,behavior:"instant"});
+      return; }
     startSet(b.dataset.ps); });
   /* P2.3 (K11): a summary row opens and closes its explanation in place, without a render */
   app.querySelectorAll("[data-sumq]").forEach(b => b.onclick = ()=>{
@@ -5534,7 +5612,7 @@ function finishSet(){
        old code marked a set complete that had never been attempted. */
     const ans = Object.keys(ps.ans || {}), total = ps.set.length;
     const acc = ans.length ? ans.filter(id => ps.ans[id]).length/ans.length : 0;
-    const complete = total > 0 && ans.length >= Math.ceil(total * 0.9);
+    const complete = total > 0 && ans.length >= answeredNeed(total);
     /* P2.2 (R1, R2) - both stages found by kind, whatever the content calls them */
     const dg = diagStage(), f = finalStage();
     if(ps.src === "diag"){
@@ -5545,7 +5623,7 @@ function finishSet(){
         st.quiz = {done: complete, acc, n:ans.length, total}; }
     } else if(ps.src.startsWith("stage:")){
       const pid = ps.src.slice(6), st = S.stage[pid] = S.stage[pid] || {};
-      st.quiz = {done: complete && acc >= 0.75, acc, n:ans.length, total, at: Date.now()};
+      st.quiz = {done: complete && acc >= CHECK_PASS, acc, n:ans.length, total, at: Date.now()};   /* P2.V F3: done = passed */
     }
   }
   /* P2.3 (K11): a set with answers is kept, marked done, for its summary (viewPractice);

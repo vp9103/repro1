@@ -403,10 +403,18 @@ def body_words(t: dict) -> int:
     return sum(wc(block_text(b)) for b in (t.get("body") or []))
 
 
+def term_hit(low: str, term: str) -> bool:
+    """A key term is found only at the start of a word (so 'plication' is not found inside 'complication', nor
+    'training' inside 'straining'); a stem may run on ('koilocyt' finds 'koilocytes'). A term of 3 characters or
+    fewer is an abbreviation and must also end the word, a plural allowed ('whi' is not found in 'which')."""
+    tail = r"(?:e?s)?(?![a-z])" if len(term) <= 3 else ""
+    return re.search(r"(?<![a-z0-9])" + re.escape(term) + tail, low) is not None
+
+
 def terms_present(text: str, terms: list[list[str]]) -> list[str]:
     """Return the terms (as 'a|b' strings) NOT found in text; each term is a list of alternatives."""
     low = strip(text).lower()
-    return ["|".join(alts) for alts in terms if not any(a in low for a in alts)]
+    return ["|".join(alts) for alts in terms if not any(term_hit(low, a) for a in alts)]
 
 
 # ----------------------------------------------------------------------------

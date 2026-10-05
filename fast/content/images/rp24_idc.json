@@ -1,0 +1,73 @@
+{
+ "n": "Invasive ductal carcinoma of the breast",
+ "file": "rp24_idc.jpg",
+ "dx": "Invasive ductal carcinoma (no special type)",
+ "wrong": [
+  "Invasive lobular carcinoma",
+  "Ductal carcinoma in situ (DCIS)",
+  "Mucinous (colloid) carcinoma",
+  "Fibroadenoma"
+ ],
+ "ww": {
+  "Invasive lobular carcinoma": "<b>Invasive lobular carcinoma</b> shows small, dyscohesive cells in single files or rings around ducts, with little gland formation. Here the cells form cohesive nests and cords, the ductal pattern.",
+  "Ductal carcinoma in situ (DCIS)": "<b>DCIS</b> fills ducts with malignant cells inside an intact basement membrane, in solid, cribriform or comedo patterns. Here tumor nests lie loose in fibrous stroma and fat, which proves invasion.",
+  "Mucinous (colloid) carcinoma": "<b>Mucinous carcinoma</b> floats small clusters of tumor cells in pools of extracellular mucin. No mucin lakes appear here; the cells infiltrate collagen and fat as cords and nests.",
+  "Fibroadenoma": "A <b>fibroadenoma</b> is a benign, circumscribed mix of loose stroma and compressed, slit-like ducts. These pleomorphic cells in nests infiltrating fat are malignant and form no organized duct-and-stroma architecture."
+ },
+ "look": "Irregular cords and nests of cohesive tumor cells with enlarged, pleomorphic nuclei and prominent nucleoli infiltrate pink fibrous stroma and reach into fat on the right. Invasion past the basement membrane, with the scar-like desmoplastic reaction it provokes, separates invasive from in situ carcinoma, and the cohesive nests are the ductal type, unlike the single files of lobular cancer.",
+ "cred": "Mikael Häggström, M.D. · CC0 · Wikimedia Commons (resized)",
+ "by": "Mikael Häggström, M.D.",
+ "lic": "CC0",
+ "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Histopathology_of_invasive_ductal_carcinoma,_intermediate_magnification.jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Cohesive nests and cords: clusters of tumor cells with pink cytoplasm hold together as nests and cords, in contrast to the single-file, dyscohesive cells of lobular carcinoma.",
+  "Malignant nuclei: enlarged nuclei of variable size with prominent nucleoli show the pleomorphism that raises the histologic grade.",
+  "Invasion of fat: tumor nests lie directly among fat cells at the right, which proves the cells have crossed the basement membrane and are invasive, not in situ.",
+  "Desmoplastic stroma: dense pink collagen surrounds and separates the cords, the scar-like reaction that makes invasive ductal cancers hard, gritty and stellate on palpation."
+ ],
+ "ann": [
+  {
+   "k": "e",
+   "x": 15.0,
+   "y": 35.0,
+   "rx": 7.0,
+   "ry": 7.0,
+   "px": 22.0,
+   "py": 35.0,
+   "l": "Cohesive nests and cords: These cohesive clusters of tumor cells with pink cytoplasm hold together as nests and cords. This pattern is characteristic of ductal carcinoma, contrasting with the single-file, dyscohesive cells typical of lobular carcinoma."
+  },
+  {
+   "k": "arrow",
+   "x": 30.0,
+   "y": 23.0,
+   "tx": 35.0,
+   "ty": 20.0,
+   "px": 35.0,
+   "py": 20.0,
+   "l": "Malignant nuclei: Note the enlarged, pleomorphic nuclei of variable size with prominent nucleoli. This high degree of nuclear variation raises the histologic grade of the tumor."
+  },
+  {
+   "k": "e",
+   "x": 78.0,
+   "y": 82.0,
+   "rx": 6.0,
+   "ry": 5.0,
+   "px": 72.0,
+   "py": 82.0,
+   "l": "Invasion of fat: Tumor nests lie directly among mature fat cells (adipocytes) at the right. This direct contact proves the malignant cells have crossed the basement membrane and are invasive, rather than in situ."
+  },
+  {
+   "k": "e",
+   "x": 45.0,
+   "y": 88.0,
+   "rx": 7.0,
+   "ry": 5.0,
+   "px": 45.0,
+   "py": 83.0,
+   "l": "Desmoplastic stroma: Dense pink collagen surrounds and separates the invasive cords. This scar-like fibroblastic reaction (desmoplasia) is what makes invasive ductal carcinomas feel hard, gritty, and stellate on palpation."
+  }
+ ]
+}

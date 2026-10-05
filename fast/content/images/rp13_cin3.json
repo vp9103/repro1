@@ -1,0 +1,62 @@
+{
+ "n": "Cervical epithelium with CIN 3 (HSIL)",
+ "file": "rp13_cin3.jpg",
+ "dx": "CIN 3 (high-grade squamous intraepithelial lesion)",
+ "wrong": [
+  "Normal ectocervical squamous epithelium",
+  "CIN 1 (low-grade squamous intraepithelial lesion)",
+  "Invasive squamous cell carcinoma",
+  "Immature squamous metaplasia of the transformation zone"
+ ],
+ "ww": {
+  "Normal ectocervical squamous epithelium": "<b>Normal</b> ectocervical epithelium matures upward: small basal cells at the bottom, then larger cells with glycogen-rich cytoplasm and small, evenly spaced nuclei near the surface. Here crowded, immature nuclei persist almost to the top.",
+  "CIN 1 (low-grade squamous intraepithelial lesion)": "In <b>CIN 1</b> the atypical basal-type cells fill only the lower third, and the upper layers still mature and often show koilocytes. Here atypical nuclei reach almost to the surface.",
+  "Invasive squamous cell carcinoma": "<b>Invasive carcinoma</b> shows irregular nests or cords of tumor cells breaking through the basement membrane into the stroma, often with a desmoplastic reaction. Here the epithelium sits on a flat, intact lower border with no stromal nests.",
+  "Immature squamous metaplasia of the transformation zone": "<b>Metaplasia</b> has small, uniform, evenly spaced nuclei and orderly maturation toward the surface, without hyperchromasia. It can mimic dysplasia, but these nuclei are crowded, dark and varied in size and shape."
+ },
+ "look": "The squamous epithelium is thick and crowded with dark, enlarged, irregular nuclei from the basal layer almost to the surface, with no orderly maturation. Because atypical basal-type cells occupy more than two-thirds of the thickness, this is CIN 3 (HSIL). The flat, intact basement membrane beneath it means the lesion has not invaded, so it cannot metastasize.",
+ "cred": "Ed Uthman from Houston, TX, USA · CC BY 2.0 · Wikimedia Commons (resized)",
+ "by": "Ed Uthman from Houston, TX, USA",
+ "lic": "CC BY 2.0",
+ "licurl": "https://creativecommons.org/licenses/by/2.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:CIN_3,_Cervical_Biopsy_(6076642630).jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Full-thickness atypia: dark, crowded, irregular nuclei fill the epithelium from the basal layer almost to the surface, which is what separates CIN 3 from CIN 1, where only the lower third is involved.",
+  "Loss of maturation: nuclei near the top look as immature as those at the base and stay crowded, instead of becoming small and flat with glycogen-rich cytoplasm as normal squamous cells do near the surface.",
+  "Intact basement membrane: the epithelium rests on a smooth, flat lower border above the stroma, with no nests of tumor cells beneath it, so this is carcinoma in situ and not invasive cancer."
+ ],
+ "ann": [
+  {
+   "k": "r",
+   "x": 19.0,
+   "y": 28.0,
+   "w": 12.0,
+   "h": 48.0,
+   "px": 16.0,
+   "py": 52.0,
+   "l": "Full-thickness atypia: Dark, crowded, and irregular nuclei fill the epithelium from the basal layer almost all the way to the surface. This involvement of the entire thickness of the epithelium is the hallmark of CIN 3 (HSIL) and distinguishes it from lower-grade lesions."
+  },
+  {
+   "k": "e",
+   "x": 55.0,
+   "y": 33.0,
+   "rx": 10.0,
+   "ry": 5.0,
+   "px": 55.0,
+   "py": 25.0,
+   "l": "Loss of maturation: Nuclei near the surface remain large, dark, and crowded. They fail to flatten or acquire abundant, glycogen-rich cytoplasm, which normally characterizes mature superficial squamous cells."
+  },
+  {
+   "k": "arrow",
+   "x": 75.0,
+   "y": 76.0,
+   "tx": 75.0,
+   "ty": 85.0,
+   "px": 75.0,
+   "py": 85.0,
+   "l": "Intact basement membrane: The epithelium rests on a clean, well-defined boundary with no nests of atypical cells invading the underlying stroma. This confirms it is carcinoma in situ (pre-invasive)."
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+PASS window.innerWidth is 1280
+PASS F4 pace 2: header days 2 = planDaysLeft 2  :: 2 days to finish, today included · done on day 2 of 2
+PASS F4 pace 3: header days 3 = planDaysLeft 3  :: 3 days to finish, today included · done on day 3 of 3
+PASS F4 pace 5: header days 4 = planDaysLeft 4  :: 4 days to finish, today included · done on day 4 of 5
+PASS F4 pace 7: header days 4 = planDaysLeft 4  :: 4 days to finish, today included · done on day 4 of 7
+PASS F4 pace 10: header days 4 = planDaysLeft 4  :: 4 days to finish, today included · done on day 4 of 10
+PASS F4 pace 14: header days 4 = planDaysLeft 4  :: 4 days to finish, today included · done on day 4 of 14
+PASS F40 diagnostic notice in view and focused  :: {"txt":"DIAGNOSTIC DONE: 1 OF 2 RIGHT Missed: The thyroid: structure, hormone ","top":141,"hd":91,"vh":900,"focus":true,"live":"Diagnostic done: 1 of 2 right. Missed: The thyroid: structur"}
+PASS F4 after a failed check: stages left and days unchanged and equal planDaysLeft  :: [{"shown":"3 days to finish, today included · done on day 3 of 5","n":3,"calc":3,"left":3},{"shown":"3 days to finish, today included · done on day 3 of 5","n":3,"calc":3,"left":3}]
+PASS failed check card present
+PASS F8 High yield only on, path banner says not filtered  :: High yield only (course final). The topic list shows 1 of 2 topics. Every question, rapid pick, image and drill offered by a set button, the
+PASS F8 diag and final rows carry the whole-block tag  :: 2
+PASS F8 the failed-check card still shows under the filter
+PASS F4 under High yield only: header days equal planDaysLeft  :: {"shown":"3 days to finish, today included · done on day 3 of 5","n":3,"calc":3,"left":3}
+PASS F8 Rapid set buttons count high-yield only  :: Linked queue (3) | Due now (0) | From my weak spots (3) | All 3 high-yield, shuffled
+PASS no page errors  :: 

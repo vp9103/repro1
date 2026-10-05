@@ -949,6 +949,106 @@ if(/[?&]selftest=1/.test(location.search)){
     } finally { window.hubLoad = hl; HUBCACHE = null; EXAM = EX; SET_EMPTY = null; }
     return {ladder:mins + " min, then " + days.join(", ") + " days", slowSeconds:slowS, recheckDays:verifyDays, seen, bad, pass:!bad.length};
   });
+  /* P2.V F3 (redo 2026-10-05) - a check finished below its mark is not shown as passed. Played through the rendered
+     controls on the first unit stage with questions and on the final: the check answered about 40% right, the summary
+     and then the Path say it was not passed (the score, the mark, a retake), the stage bar does not read like a passed
+     check, the same words come back from the saved state, and a stage left unfinished says so. The retake passed
+     completes the stage (a unit stage through its rapid picks) exactly as a seeded pass does, the pacing counts see a
+     failed stage as left and a passed one as done, and the diagnostic, which has no mark, shows no result. */
+  sec("stageCheck", () => {
+    const unit = PATH.find(p => p.kind === "unit" && (p.topics||[]).length && stageQs(p).length);
+    const fin = PATH.length ? finalStage() : null, gates = [unit, fin && fin.kind === "final" && QS.length ? fin : null].filter(Boolean);
+    if(!gates.length) return {skipped:"no stage check with questions"};
+    const bad = [], seen = [];
+    const T = sel => { const e = document.querySelector(sel); return e ? String(e.innerText || "").replace(/\s+/g, " ").trim() : null; };
+    const bar = id => { const i = document.querySelector('main .stages [data-stage="' + CSS.escape(id) + '"] .stagebar i'); return i ? parseFloat(i.style.width) : null; };
+    const answer = (rightN, stopAfter) => { let k = 0;
+      while(S.ps && !S.ps.done && k < 300){ const q = QS.find(x => x.id === S.ps.set[S.ps.i]); if(!q) break;
+        const c = document.querySelector("[data-conf]"); if(c) c.click();
+        const o = document.querySelector('.qopts [data-opt="' + (k < rightN ? q.a : (q.a + 1) % q.o.length) + '"]'); if(!o) break; o.click();
+        k++; if(stopAfter && k >= stopAfter){ const e = document.querySelector('[data-ps="quit"]'); if(e) e.click(); break; }
+        const nx = el("qnext"); if(!nx) break; nx.click(); }
+      return k; };
+    const rapid = () => { for(let k = 0; k < 300 && S.rf; k++){ const o = document.querySelector(".rfopts [data-rfo]"); if(!o) break; o.click(); const nx = el("rfnext"); if(!nx) break; nx.click(); } };
+    const setup = p => { fresh(); PATH.slice(0, PATH.indexOf(p)).forEach(completeStage); (p.topics || []).forEach(id => { S.topics[id] = realTopic(); });
+      S.mode = "path"; render(); return document.querySelector('main .stages [data-stage="' + CSS.escape(p.id) + '"]'); };
+    const left = () => PATH.filter(x => !stageDone(x)).length;
+    /* the marks are the ones the Path names (ENGINE-MAP F3: a stage check 75%, the final 80%) */
+    { setup(gates[0]); const lede = T("main .pathhero .lede") || ""; if(!/75%/.test(lede) || !/80%/.test(lede)) bad.push("the Path lede does not name both marks, 75% and 80% (\"" + lede.slice(0, 120) + "\")"); }
+    gates.forEach(p => {
+      const nm = (p.kind === "final" ? "final" : "stage check") + " " + p.id, mark = p.kind === "final" ? 80 : 75, src = p.kind === "final" ? "final" : "stage:" + p.id;
+      /* a try that is stopped early says it did not finish (a set of one cannot be stopped early) */
+      let row = setup(p);
+      if(!row){ bad.push(nm + ": no row on the Path"); return; }
+      row.click();
+      if(!S.ps || S.ps.src !== src){ bad.push(nm + ": its row did not open the check (" + (S.ps && S.ps.src) + ")"); return; }
+      const n = S.ps.set.length;
+      if(n > 1){ answer(1, 1);
+        const q0 = (S.stage[p.id] || {}).quiz, end = document.querySelector('[data-checkres="ended"]');
+        if(!q0 || q0.done) bad.push(nm + ": a check stopped after one answer was stored as passed");
+        if(!end || !/not finished/i.test(end.innerText) || !document.querySelector("[data-retake]")) bad.push(nm + ": the summary of a check stopped early does not say it was not finished, or has no retake");
+        if(stageDone(p)) bad.push(nm + ": a check stopped early completed the stage");
+        document.querySelector('[data-ps="done"]').click();
+        if(!document.querySelector('main .stages [data-stage="' + CSS.escape(p.id) + '"] [data-check]')) bad.push(nm + ": the Path row does not mark a check stopped early");
+        seen.push(nm + ": stopped early"); }
+      /* the check answered about 40% right: below either mark */
+      row = setup(p); const before = {left:left(), days:planDaysLeft().days};
+      row.click(); const tot = S.ps.set.length, right = Math.floor(tot * 0.4);
+      answer(right);
+      const q = (S.stage[p.id] || {}).quiz;
+      if(!S.ps || !S.ps.done || !q){ bad.push(nm + ": the set did not finish"); return; }
+      const pc = Math.round(100 * q.acc), score = Math.round(q.acc * q.n) + " of " + q.n + " right (" + pc + "%)";
+      if(stageDone(p)) bad.push(nm + ": a " + pc + "% check completed the stage");
+      const sum = T("#app [data-checkres]"), live = String((el("live") || {}).textContent || "");
+      if(!sum || !/not passed/i.test(sum)) bad.push(nm + ": the summary does not say the check was not passed (\"" + String(sum).slice(0, 80) + "\")");
+      else { if(sum.indexOf(score) < 0) bad.push(nm + ": the summary lacks the score \"" + score + "\""); if(sum.indexOf(mark + "%") < 0) bad.push(nm + ": the summary lacks the " + mark + "% needed"); }
+      if(!document.querySelector("#app [data-retake]")) bad.push(nm + ": the summary has no retake");
+      if(!/not passed/i.test(live)) bad.push(nm + ": #live does not carry \"not passed\"");
+      S.scroll.path = 600;   /* where the Path was left: the card must not be left behind by restoring it */
+      { const hd = document.querySelector("header"); if(hd) document.documentElement.style.setProperty("--hh", hd.offsetHeight + "px"); }   /* the header's measured height, which the page's observer sets once it has laid out */
+      document.querySelector('[data-ps="done"]').click();
+      { const c = document.querySelector("main .pathhero [data-checkres]"), hd = document.querySelector("header"), r = c ? c.getBoundingClientRect() : null;
+        if(c && document.activeElement !== c) bad.push(nm + ": leaving the summary does not put focus on the Path card");
+        if(c && pendingScroll() !== 0) bad.push(nm + ": the saved Path position (" + pendingScroll() + " px) would scroll the card out of view");
+        if(c && window.innerHeight > 200 && (r.top < (hd ? hd.getBoundingClientRect().bottom : 0) - 2 || r.top > window.innerHeight - 24)) bad.push(nm + ": the Path card is outside the window (top " + Math.round(r.top) + " px of " + window.innerHeight + ")"); }
+      const card = T("main .pathhero [data-checkres]"), btn = T("main .pathhero [data-stage]"), tag = document.querySelector('main .stages [data-stage="' + CSS.escape(p.id) + '"] [data-check]');
+      if(!card || !/not passed/i.test(card) || card.indexOf(pc + "%") < 0 || card.indexOf(mark + "%") < 0) bad.push(nm + ": the Path card does not say not passed with " + pc + "% and " + mark + "% (\"" + String(card).slice(0, 90) + "\")");
+      if(!/retake/i.test(String(btn))) bad.push(nm + ": the Path button is not a retake (\"" + btn + "\")");
+      if(!tag || !/not passed/i.test(tag.textContent)) bad.push(nm + ": the stage row carries no not-passed tag");
+      if(left() !== before.left || planDaysLeft().days !== before.days) bad.push(nm + ": a failed check changed the stages left or the plan's days (" + before.left + "/" + before.days + " to " + left() + "/" + planDaysLeft().days + ")");
+      const pd = document.querySelector("[data-plandays]"); if(pd && +pd.dataset.plandays !== planDaysLeft().days) bad.push(nm + ": the plan header's days no longer equal planDaysLeft");
+      /* the bar: a failed check earns less than a passed one (it drew the same bar before) */
+      const failBar = bar(p.id), kept = JSON.stringify(S.stage[p.id]);
+      S.stage[p.id].quiz = {done:true, acc:1, n:q.n, total:q.total}; render(); const passBar = bar(p.id);
+      S.stage[p.id] = JSON.parse(kept); render();
+      if(failBar == null || passBar == null || !(failBar < passBar)) bad.push(nm + ": the bar of a " + pc + "% check (" + failBar + "%) is not below a passed one's (" + passBar + "%)");
+      /* the words come from the saved state: a round trip of S (a reload) shows them again */
+      const snap = JSON.stringify(S); fresh(); Object.assign(S, JSON.parse(snap)); S.mode = "path"; render();
+      if(!/not passed/i.test(String(T("main .pathhero [data-checkres]")))) bad.push(nm + ": after a reload of the saved state the Path card is gone");
+      /* the retake, answered right: passed, no not-passed words left, the stage completes as a seeded pass does */
+      document.querySelector("main .pathhero [data-stage]").click();
+      if(!S.ps || S.ps.src !== src || S.ps.i !== 0 || S.ps.done) bad.push(nm + ": the retake did not open a fresh check");
+      else { answer(999);
+        const ok = document.querySelector('#app [data-checkres="passed"]');
+        if(!ok) bad.push(nm + ": the retake answered right is not marked passed");
+        if(document.querySelector("#app [data-retake]")) bad.push(nm + ": a passed summary still offers a retake");
+        document.querySelector('[data-ps="done"]').click();
+        if(document.querySelector("main [data-checkres], main [data-check]")) bad.push(nm + ": not-passed words remain after the check was passed");
+        if(p.kind === "unit"){
+          if(stageDone(p)) bad.push(nm + ": a passed check completed the stage before its rapid picks");
+          if(Math.abs(stageProgress(p) - 0.80) > 1e-9) bad.push(nm + ": a passed check on a read stage gives " + stageProgress(p) + ", not the 0.8 it always gave");
+          document.querySelector("main .pathhero [data-stage]").click();
+          if(!S.rf || S.rf.src !== src) bad.push(nm + ": after the pass the stage did not go on to its rapid picks");
+          else rapid();
+        }
+        if(!stageDone(p)) bad.push(nm + ": the passed " + (p.kind === "unit" ? "check and rapid picks" : "final") + " did not complete the stage");
+        else seen.push(nm + ": failed, said so, retaken, completed"); }
+    });
+    /* the diagnostic has no mark: it never shows a check result */
+    const dg = diagStage(); if(dg){ fresh(); completeStage(dg); S.mode = "path"; render();
+      if(document.querySelector('main .stages [data-stage="' + CSS.escape(dg.id) + '"] [data-check]')) bad.push("the diagnostic shows a check result"); }
+    return {gates:gates.map(p => p.id), seen, bad, pass:!bad.length};
+  });
   sec("maps", () => ({ qIdsByTopic:QS.reduce((a,q)=>{ (a[q.c]=a[q.c]||[]).push(q.id); return a; },{}), rapidIx:RAPID.map(r=>r.ix), imgKeys:Object.keys(IMGS),
     qeHash:Object.fromEntries(QS.map(q=>[q.id, fnv(String(q.e||""))])), qwHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.w||{}))])), rxHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(String(r.x||""))])),
     optHash:Object.fromEntries(QS.map(q=>[q.id, fnv(JSON.stringify(q.o))])), roptHash:Object.fromEntries(RAPID.map(r=>[r.ix, fnv(JSON.stringify(r.o))])) }));
@@ -972,7 +1072,7 @@ if(/[?&]selftest=1/.test(location.search)){
   /* P2.V F42 - the recovery says what happened; and no section's render fell into it unasked */
   must("renderRecovery", !!R.renderRecovery && R.renderRecovery.pass === true, ((R.renderRecovery||{}).bad||[]).join("; "));
   /* P2.V F5 / F3 / F31 follow-up - calendar minutes, the Path hero, verdict case in #live */
-  ["dayMinutes", "pathHero", "liveCase", "drillVerdict", "searchSnippet", "focusNext", "diagResult", "schedule"].forEach(k => { const v = R[k];
+  ["dayMinutes", "pathHero", "liveCase", "drillVerdict", "searchSnippet", "focusNext", "diagResult", "schedule", "stageCheck"].forEach(k => { const v = R[k];
     must(k, !!v && (!!v.skipped || v.pass === true), ((v||{}).bad||[]).join("; ")); });
   R.renderFailures = RENDER_FAIL_LOG.slice(failN0).map(f => f.mode + " (" + f.phase + "): " + f.msg);
   must("renderFailures", !R.renderFailures.length, R.renderFailures.slice(0, 4).join("; "));

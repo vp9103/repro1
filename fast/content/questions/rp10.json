@@ -41,7 +41,12 @@
    ["Cholestatic jaundice", "Estrogen slows bile secretion", "Itching and jaundice", "None"],
    ["Malignant hypertension", "Small blood pressure rise", "Very high pressure, organ injury", "None; her pressure is normal"],
    ["Pseudotumor cerebri", "Weak association", "Daily headache, papilledema", "Aura is not a feature"]]],
-  "bl": "Migraine with aura plus estrogen multiplies ischemic stroke risk, so combined hormonal contraception is contraindicated."
+  "bl": "Migraine with aura plus estrogen multiplies ischemic stroke risk, so combined hormonal contraception is contraindicated.",
+  "ef": "rp10_pitfalls",
+  "pt": {
+   "hl": ["Migraine with aura", "Ischemic stroke or MI"],
+   "say": "The aura row pairs migraine with aura with estrogen's clotting effect, and its result is ischemic stroke or MI, so every estrogen method is avoided and a progestin-only or copper method is used."
+  }
  },
  {
   "id": "rp10q03", "d": 2, "tags": ["drug-interactions"], "bp": ["BP-rp10-04"],
@@ -62,7 +67,12 @@
    ["Binding of hormone in the gut by the multivitamin", "Chelation in the gut", "Not supported", "None for steroids"],
    ["Inhibition of progesterone receptors by carbamazepine", "Receptor blockade", "Not a carbamazepine action", "Mifepristone, ulipristal"],
    ["Increased renal clearance of ethinyl estradiol", "Faster kidney excretion", "Not supported", "None"]]],
-  "bl": "Enzyme inducers such as carbamazepine and rifampin induce CYP3A4 and cause pill failure; ordinary antibiotics do not."
+  "bl": "Enzyme inducers such as carbamazepine and rifampin induce CYP3A4 and cause pill failure; ordinary antibiotics do not.",
+  "ef": "rp10_pitfalls",
+  "pt": {
+   "hl": ["Rifampin, carbamazepine,", "Induce hepatic CYP3A4, so"],
+   "say": "The enzyme inducers row lists carbamazepine with rifampin and phenytoin: they induce hepatic CYP3A4, so contraceptive hormones are cleared faster and the pill fails, while amoxicillin has no such effect."
+  }
  },
  {
   "id": "rp10q04", "d": 1, "tags": ["adverse-effects"], "bp": ["BP-rp10-05"],
@@ -83,7 +93,12 @@
    ["Hyperkalemia", "Drospirenone", "Antimineralocorticoid action", "While taking the pill"],
    ["Hepatic adenoma", "Estrogen-containing pills", "Estrogen stimulates hepatocyte growth", "Years of use"],
    ["Heavier menstrual bleeding", "Copper IUD", "Local inflammation and prostaglandins", "From insertion onward"]]],
-  "bl": "DMPA's signature long-term adverse effect is decreased bone mineral density, from low estradiol during strong gonadotropin suppression."
+  "bl": "DMPA's signature long-term adverse effect is decreased bone mineral density, from low estradiol during strong gonadotropin suppression.",
+  "ef": "rp10_pitfalls",
+  "pt": {
+   "hl": ["DMPA injection", "Lower bone density"],
+   "say": "The DMPA row links strong gonadotropin suppression and low estradiol to lower bone density, which recovers after stopping; it is the signature long-term effect of this injection."
+  }
  },
  {
   "id": "rp10q05", "d": 3, "tags": ["drug-mechanism", "selective-modulators"], "bp": ["BP-rp10-07", "BP-rp10-11"], "obj": ["BICEP-BROWN.7"],
@@ -127,7 +142,12 @@
    ["Estrogen receptor alpha", "Tamoxifen, raloxifene", "Not affected", "Breast cancer, osteoporosis"],
    ["Prostaglandin E receptor", "Misoprostol (agonist)", "Uterine contraction", "Abortion regimen, ulcer prevention"],
    ["Oxytocin receptor", "Atosiban (antagonist)", "Not affected", "Preterm labor outside the US"]]],
-  "bl": "Mifepristone blocks progesterone and glucocorticoid receptors, so adrenal insufficiency and chronic steroid therapy are contraindications."
+  "bl": "Mifepristone blocks progesterone and glucocorticoid receptors, so adrenal insufficiency and chronic steroid therapy are contraindications.",
+  "ef": "rp10_abortion",
+  "pt": {
+   "hl": ["Also blocks the glucocorticoid receptor", "Avoid in chronic adrenal failure"],
+   "say": "Under mifepristone, the warning box says it also blocks the glucocorticoid receptor, so chronic adrenal failure and long-term steroid therapy are contraindications because of the risk of adrenal crisis."
+  }
  },
  {
   "id": "rp10q07", "d": 2, "tags": ["drug-mechanism", "adverse-effects"], "bp": ["BP-rp10-08"],
@@ -148,7 +168,12 @@
    ["Histamine H2 receptor antagonist with antiandrogen effects", "Cimetidine", "Less acid secretion", "None"],
    ["Progesterone receptor antagonist that breaks down decidua", "Mifepristone", "None", "Decidual breakdown, cervical softening"],
    ["Oxytocin receptor agonist that stimulates labor", "Oxytocin", "None; inactive by mouth", "Contractions in late pregnancy"]]],
-  "bl": "Misoprostol, a prostaglandin E1 analog, protects the stomach from NSAIDs but contracts the uterus, so it is avoided in pregnancy."
+  "bl": "Misoprostol, a prostaglandin E1 analog, protects the stomach from NSAIDs but contracts the uterus, so it is avoided in pregnancy.",
+  "ef": "rp10_abortion",
+  "pt": {
+   "hl": ["Prostaglandin E1 analog", "Same drug, other use: NSAID ulcer protection"],
+   "say": "Misoprostol is a prostaglandin E1 analog that contracts the uterus; its other use, protecting the stomach from NSAID ulcers, is why it is never given in pregnancy."
+  }
  },
  {
   "id": "rp10q08", "d": 3, "tags": ["drug-mechanism", "adverse-effects"], "bp": ["BP-rp10-05", "BP-rp10-12", "BP-rp10-03"], "obj": ["BICEP-BROWN.6"],
@@ -192,7 +217,12 @@
    ["Thinning of the endometrium", "Lower endometrial cancer risk", "Endometrium", "None"],
    ["Increase in sex hormone-binding globulin", "Less acne and hirsutism", "Liver and skin", "None"],
    ["Reduction in menstrual blood loss", "Less iron deficiency", "Endometrium", "None known"]]],
-  "bl": "Combined pills lower ovarian cancer risk mainly through suppression of ovulation, which reduces cycles of epithelial injury and repair."
+  "bl": "Combined pills lower ovarian cancer risk mainly through suppression of ovulation, which reduces cycles of epithelial injury and repair.",
+  "ef": "rp10_pitfalls",
+  "pt": {
+   "hl": ["Ovulation suppressed", "Lower ovarian cancer risk"],
+   "say": "The ovulation row shows fewer ovulations, so less repair of the ovarian and tubal surface, and a lower ovarian cancer risk that lasts for decades."
+  }
  },
  {
   "id": "rp10q10", "d": 3, "tags": ["drug-mechanism", "hormone-timeline"], "bp": ["BP-rp10-07", "BP-rp10-11"], "obj": ["BICEP-BROWN.7"],

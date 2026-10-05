@@ -1,0 +1,22 @@
+PASS window.innerWidth is 400  :: 400
+PASS diagnostic done, back on the Path
+-- Path after reading stage 1: ["p0:100% DONE","s1:28%","s2:0%","pf:0%"]
+-- Stage 1 summary: {"head":"Set finished: 2 of 5 right (40%). Open any question to go back over it: the explanation, the table and why each other option is wrong.","res":null,"resKind":null,"retake":false,"live":"Set finished: 2 of 5 right (40%). Open any question to go back over it: the explanation, the table and why each other option is wrong.","focus":"sumhead","state":"{\"quiz\":{\"done\":false,\"acc\":0.4,\"n\":5,\"total\":5,\"at\":1791159081562}}"}
+PASS S1 failed check stored as not done  :: {"quiz":{"done":false,"acc":0.4,"n":5,"total":5,"at":1791159081562}}
+FAIL S1 summary says not passed  :: null
+FAIL S1 summary has the score  :: null
+FAIL S1 summary says 75% needed
+FAIL S1 summary offers the retake
+FAIL S1 summary spoken in #live  :: Set finished: 2 of 5 right (40%). Open any question to go back over it: the explanation, the table and why each other option is wrong.
+PASS no horizontal scroll on the failed summary  :: 0
+-- Path after failed S1 check: {"h1":"1 of 4 stages done","lede":"Work down the stages in order. A teaching stage has you read its topics, then pass its stage check (75% right), then take a round of rapid picks, before it counts as done. You can open any stage from the list below, and any topic from Learn, but the stages in order are the path that gets you finished.","card":null,"btn":"Stage check →","tags":0,"rowTags":["p0: -","s1: -","s2: -","pf: -"],"planTags":["rf:linked: -","stage:s1: -","ps:weak: -"],"planDays":"3 days to finish, today included · done on day 3 of 5"} bars ["p0:100% DONE","s1:80%","s2:0%","pf:0%"]
+FAIL S1 bar does NOT read like a pass (not 80%)  :: s1:80%
+FAIL Path card says not passed  :: null
+FAIL Path card has the score and 75%  :: null
+FAIL Path button is a retake  :: Stage check →
+FAIL stage list row tag  :: s1: -
+FAIL plan row tag  :: ["rf:linked: -","stage:s1: -","ps:weak: -"]
+FAIL lede states both marks  :: Work down the stages in order. A teaching stage has you read its topics, then pass its stage check (75% right), then take a round of rapid picks, before it counts as done. You can open any stage from the list below, and any topic from Learn, but the stages in order are the path that gets you finished.
+FAIL after reload the Path card still says not passed  :: null
+FAIL after reload the bar is still not 80%  :: p0:100% DONE s1:80% s2:0% pf:0%
+RESULT before 400x860 light: 14 fail(s) (stopped after the failed-check view)

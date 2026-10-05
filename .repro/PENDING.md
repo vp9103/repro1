@@ -12,22 +12,22 @@ en9_hypercalcemia, en9_three_hpt missing.
 |---|---|---|---|
 | P2.4 | CLOSED 2026-10-04 | F21 | ledger row sha:e4e21f2f |
 | G01 | DONE (draft, accepted; spot-checked rp20q01-q05) | rp19 11q/15r/2 drills, rp20 15q/14r/3 drills | fast_check G01 ok; audit/G01-notes.md |
-| I01 | worker (resumed after restart; repro-worker Sonnet xhigh) | images rp13, rp15, rp24 + Gemini overlays (fast/ws/I01) | fast_check I01 ok; audit/I01-sources.md |
+| I01 | DONE (merged 2026-10-05; overlays reviewed: lsil, granulosa label fixed) | 6 images rp13, rp15, rp24 | fast_check I01 ok; audit/I01-sources.md |
 | P2.5 | CLOSED 2026-10-04 | F35/F35b | ledger row sha:cd253105 |
 | G02 | DONE (draft, accepted 2026-10-04; spot-checked rp11r01/r05/r09, rp17r03/r09/r16) | rapid rp3 13, rp11 15, rp17 22 | fast_check G02 ok; audit/G02-notes.md |
 | G03 | DONE (draft, accepted; checked rp29 pins vs figure labels, d_rp16_multi) | rapid rp23 13, rp29 11; drills rp10 multi, rp11 sort, rp16 multi, rp17 order | fast_check G03 ok; audit/G03-notes.md (rp29 NO-VISUAL row in G03-novisual.md -> P6.9 on import) |
 | V1 | DONE (accepted; reviewed new figs rp4_origins, rp5_mullerian, rp6_dsd, rp7_engines) | rp4-rp7 visual shares met; 8 new figures | fast_check W04/W05 ok; NO-VISUAL rows W04/audit/P5.2.md, P6.2.md |
 | P2.6 | CLOSED 2026-10-04 | F31a-c, F40, F33a-c, linkedNotice | ledger row sha:05f1ba73 |
-| P2.V | run 8: 9/10 + 18/18 regression; FAIL F3 -> P2.6 reopened | .repro/verify/P2-report.md | re-verify after P2.6 F3 closes |
-| P2.6 | worker (repro-worker) | F3 failed stage check credited as passed (.repro/ws/P2_6) | --status P2.6 ok |
-| V2 | QUEUED (worker lost in restart, no changes made) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
-| P1.4 | CLOSED 2026-10-04 (term pass, 348 rows) | coverage impact .repro/P1.4-coverage-impact.md | ledger row |
-| P1.V | re-verifier (Opus max), token 0fe5b8663c | 12 objectives + 10 spot-checks | .repro/verify/P1-report.md |
+| P2.V | run 9 verifier (token 723a850e02) | + F3 regression row | .repro/verify/P2-report.md |
+| P2.6 | CLOSED 2026-10-05 (F3) | ledger row sha:29b015ac | |
+| V2 | DONE (finished before the restart; 8 new figures reviewed 2026-10-05) | visual pointers rp8-rp11 (owns W06 q+r, W07 q rp10/rp11 + rapid rp10; do not merge W06/W07 until done) | fast_check W06/W07 ok |
+| P1.4 | round 3 (reopened after P1.V run 2: 8/12): two workers write row proposals .repro/P1.4-proposals/A.md, B.md; orchestrator integrates with .repro/p14_integrate.py | --status P1.4 ok; then --verify P1 |
+| P1.V | run 2 FAIL 8/12 (BICEP-BROWN.2, ENDO-TBL-DM.3, PATHPHARM-MENSES-CONTRA.4, MENOPAUSE.13) | report .repro/verify/P1-report.md | re-verify after round 3 |
 
 ## Wave 1 (reproductive, Oct 9) queue
 1. Every rp topic now has questions, rapid and >= 1 drill. Figure gaps (hi blueprint items with no figure to pin a rapid item): BP-rp23-05 fat necrosis, BP-rp29-07 minors' consent, BP-rp11-04 bone/LDL, BP-rp17-10 molluscum, BP-rp17-05 perinatal HIV prevention, BP-rp17-12 HIV course and labs (en8_loop.svg has no JSON).
 2. Visual pointers (ef/pt or fig media) or NO-VISUAL rows - per topic q/r missing:
-   rp3 q4 · [rp4-rp7 done] · rp8 q4/r5 · rp9 q5/r9 · rp10 q7/r8 · rp11 q7 · rp12 q10/r6 ·
+   rp3 q4 · [rp4-rp11 done] · rp12 q10/r6 ·
    rp13 r2 · rp14 q4/r6 · rp15 q4/r4 · rp16 q7/r7 · rp17 q8 · rp18 r2 · rp21 q1/r1 · rp22 q1/r1 · rp23 q6 · rp24 q7/r14 ·
    rp25 q6/r5 · rp26 q2/r3 · rp27 q4/r11 · rp28 q10/r12 · rp29 q6. Also rp16r06 keyed option conspicuously longest.
 3. Engine: P2.4 -> P2.5 (F35) -> P2.6 (F31, F40, F33) -> P2.V with .repro/P2-REGRESSION.md.
@@ -48,3 +48,6 @@ Questions only en1, en5; rapid only en5; drills only en5.
 
 ## For P14.3 (non-blocking verifier notes)
 - P2.V run 8 notes in .repro/verify/P2-report.md: F41 middle-anchored labels, K5 at 400 inline, F11 screen-reader exposure of cloze blanks, F30 focus on close.
+
+## Gemini
+- Free key: 20 requests/day PER MODEL; xmodel.py falls back gemini-3.7 -> 3.8 -> 3.6 -> 3.5 -> 3-flash-preview (GATE-CHANGE sha:904e79ee). Budget overlays accordingly (~1-3 requests per image).

@@ -1,0 +1,78 @@
+<svg class="dia" viewBox="0 0 900 640" role="img" aria-label="PALM-COEIN sorts abnormal uterine bleeding into structural causes (polyp, adenomyosis, leiomyoma, malignancy) and nonstructural causes (coagulopathy, ovulatory dysfunction, endometrial, iatrogenic, not otherwise classified); the ovulatory branch holds polycystic ovary syndrome with the Rotterdam criteria, androgen-source testing with DHEA-S, and the female athlete triad">
+<text class="ttl" x="14" y="24" font-size="17">PALM-COEIN sorts abnormal bleeding; the O branch holds PCOS and the athlete</text>
+<rect x="14" y="40" width="428" height="392" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.4"/>
+<text class="b" x="30" y="66" font-size="15">Structural (PALM): found on imaging or biopsy</text>
+<rect x="28" y="78" width="400" height="58" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<circle cx="56" cy="107" r="19" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="2"/>
+<text class="b" x="56" y="113" font-size="17" text-anchor="middle">P</text>
+<text class="b" x="88" y="104" font-size="15">Polyp</text>
+<text x="88" y="124" font-size="13">Focal overgrowth; intermenstrual bleeding</text>
+<rect x="28" y="144" width="400" height="58" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<circle cx="56" cy="173" r="19" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="2"/>
+<text class="b" x="56" y="179" font-size="17" text-anchor="middle">A</text>
+<text class="b" x="88" y="170" font-size="15">Adenomyosis</text>
+<text x="88" y="190" font-size="13">Glands in muscle: globular, tender uterus</text>
+<rect x="28" y="210" width="400" height="58" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<circle cx="56" cy="239" r="19" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="2"/>
+<text class="b" x="56" y="245" font-size="17" text-anchor="middle">L</text>
+<text class="b" x="88" y="236" font-size="15">Leiomyoma</text>
+<text x="88" y="256" font-size="13">Submucosal fibroid: heavy, prolonged flow</text>
+<rect x="28" y="276" width="400" height="58" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<circle cx="56" cy="305" r="19" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="2"/>
+<text class="b" x="56" y="311" font-size="17" text-anchor="middle">M</text>
+<text class="b" x="88" y="302" font-size="15">Malignancy and hyperplasia</text>
+<text x="88" y="322" font-size="13">Unopposed estrogen: hyperplasia or cancer</text>
+<rect x="28" y="346" width="400" height="72" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.4"/>
+<text class="b" x="42" y="372" font-size="14">Endometrial biopsy first if age 45 or older,</text>
+<text class="b" x="42" y="394" font-size="14">or if unopposed estrogen is likely</text>
+<rect x="458" y="40" width="428" height="392" rx="8" fill="var(--surface)" stroke="var(--line)" stroke-width="1.4"/>
+<text class="b" x="474" y="66" font-size="15">Nonstructural (COEIN): no mass lesion</text>
+<rect x="472" y="78" width="400" height="64" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<circle cx="500" cy="110" r="19" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<text class="b" x="500" y="116" font-size="17" text-anchor="middle">C</text>
+<text class="b" x="532" y="102" font-size="15">Coagulopathy</text>
+<text x="532" y="120" font-size="13">von Willebrand disease: heavy since menarche,</text>
+<text x="532" y="136" font-size="13">nosebleeds, bleeding after dental work</text>
+<rect x="472" y="148" width="400" height="64" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<circle cx="500" cy="180" r="19" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<text class="b" x="500" y="186" font-size="17" text-anchor="middle">O</text>
+<text class="b" x="532" y="172" font-size="15">Ovulatory dysfunction</text>
+<text x="532" y="190" font-size="13">Irregular and unpredictable: PCOS, thyroid</text>
+<text x="532" y="206" font-size="13">disease, prolactin, perimenopause</text>
+<rect x="472" y="218" width="400" height="64" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<circle cx="500" cy="250" r="19" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<text class="b" x="500" y="256" font-size="17" text-anchor="middle">E</text>
+<text class="b" x="532" y="242" font-size="15">Endometrial</text>
+<text x="532" y="260" font-size="13">Regular heavy cycles with normal ovulation:</text>
+<text x="532" y="276" font-size="13">a local defect in endometrial hemostasis</text>
+<rect x="472" y="288" width="400" height="64" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<circle cx="500" cy="320" r="19" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<text class="b" x="500" y="326" font-size="17" text-anchor="middle">I</text>
+<text class="b" x="532" y="312" font-size="15">Iatrogenic</text>
+<text x="532" y="330" font-size="13">Anticoagulants, copper IUD, breakthrough</text>
+<text x="532" y="346" font-size="13">bleeding on hormonal contraception</text>
+<rect x="472" y="358" width="400" height="64" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<circle cx="500" cy="390" r="19" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="2"/>
+<text class="b" x="500" y="396" font-size="17" text-anchor="middle">N</text>
+<text class="b" x="532" y="382" font-size="15">Not otherwise classified</text>
+<text x="532" y="400" font-size="13">Rare causes: arteriovenous malformation,</text>
+<text x="532" y="416" font-size="13">cesarean scar defect (isthmocele)</text>
+<rect x="14" y="446" width="872" height="182" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.6"/>
+<text class="b" x="30" y="472" font-size="15">The O branch: three ovulation problems, each with its own clue</text>
+<rect x="28" y="486" width="276" height="130" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="40" y="510" font-size="14">Polycystic ovary syndrome</text>
+<text x="40" y="534" font-size="13">Rotterdam criteria: two of three</text>
+<text x="40" y="554" font-size="13">oligo-ovulation, hyperandrogenism,</text>
+<text x="40" y="574" font-size="13">polycystic ovaries on ultrasound.</text>
+<text x="40" y="594" font-size="13">Exclude TSH, prolactin, 17-OHP first</text>
+<rect x="316" y="486" width="276" height="130" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="328" y="510" font-size="14">Androgen source</text>
+<text x="328" y="534" font-size="13">DHEA-S very high: adrenal tumor</text>
+<text x="328" y="554" font-size="13">Testosterone very high with a</text>
+<text x="328" y="574" font-size="13">normal DHEA-S: ovarian tumor</text>
+<rect x="604" y="486" width="276" height="130" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.2"/>
+<text class="b" x="616" y="510" font-size="14">Female athlete triad</text>
+<text x="616" y="534" font-size="13">Low energy, amenorrhea,</text>
+<text x="616" y="554" font-size="13">low bone density</text>
+<text x="616" y="574" font-size="13">Slow GnRH pulses lower estradiol</text>
+</svg>

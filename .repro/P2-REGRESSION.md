@@ -20,6 +20,7 @@ and mouse. The phase verifier gets this list in addition to the gate's seeded sa
 | F40 | P2.6 | Diagnostic result notice (from the hero button) lands above the viewport (-157 px at 1280, -570 px at 400) while holding focus: restoreScroll rAF runs after announceRecovery's scrollTo | result is in view and focused at both widths |
 | F33a | P2.6 | Slow right rapid answers DO drop a box on the 14-day step, though the plan row and method card say they stay | text and code agree (fix whichever is wrong; the scheduler's real rule is stated) |
 | F33b | P2.6 | Weak Spots says questions come back tomorrow, but a miss returns in about 15 min | text matches the real interval |
+| F3 | P2.6 | A FAILED stage check (2/5, 40%) was credited like a pass (stage bar 80%) with no "not passed" message (P2.V run 8) | no credit unless passed (>= 75%; final 80%); summary and Path card say not passed, score, mark, retake; survives reload |
 | F33c | P2.6 | Practice due-set text says right answers return after 1, 3, 7, 14 days, but a first-try right answer was due in 15 min | text matches the real ladder |
 
 ## FIXED earlier (re-check whenever the same area changes)

@@ -1,52 +1,53 @@
 {
  "provider": "gemini",
- "model": "gemini-3.5-flash",
+ "model": "gemini-3.8-flash",
  "key": "rp15_granulosa",
  "image_sha": "ac60bf2c6569f7cb",
- "at": "2026-10-04 20:23:32",
+ "at": "2026-10-05 00:35:09",
  "ann": [
   {
-   "k": "c",
-   "x": 54.0,
-   "y": 48.0,
-   "r": 2.0,
-   "px": 54.0,
+   "k": "e",
+   "x": 54.7,
+   "y": 48.2,
+   "rx": 2.6,
+   "ry": 2.1,
+   "rot": -15,
+   "px": 58.5,
    "py": 45.0,
-   "l": "Call-Exner bodies: These tiny, follicle-like spaces are ringed by tumor cells and contain eosinophilic (pink) secretions. They mimic normal developing follicles and are the classic diagnostic hallmark of granulosa cell tumors."
+   "l": "Call-Exner body: this tiny follicle-like space contains eosinophilic fluid surrounded haphazardly by tumor cells. It recapitulates an ovarian follicle and serves as the classic hallmark of a granulosa cell tumor."
   },
   {
    "k": "e",
-   "x": 45.0,
-   "y": 20.0,
-   "rx": 6.0,
-   "ry": 4.0,
-   "px": 45.0,
-   "py": 15.0,
-   "l": "Diffuse sheets of uniform cells: The tumor is composed of a monotonous population of small, round-to-oval cells with scant cytoplasm. The nuclei resemble normal granulosa cells and show minimal atypia."
-  },
-  {
-   "k": "e",
-   "x": 35.0,
-   "y": 75.0,
+   "x": 78.0,
+   "y": 24.0,
    "rx": 7.0,
-   "ry": 3.0,
-   "rot": -25,
-   "px": 25.0,
-   "py": 78.0,
-   "l": "Fibrovascular stroma: This prominent band of pink collagenous tissue containing blood vessels runs diagonally, dividing the sheets of granulosa cells into lobules or nests."
+   "ry": 5.5,
+   "px": 86.0,
+   "py": 18.0,
+   "l": "Diffuse sheets of granulosa cells: monotonous, crowded cells with scant cytoplasm and round-to-oval nuclei dominate the parenchyma. Some nuclei display characteristic longitudinal indentations ('coffee-bean' nuclei)."
+  },
+  {
+   "k": "arrow",
+   "x": 32.0,
+   "y": 70.0,
+   "tx": 24.0,
+   "ty": 86.0,
+   "px": 24.0,
+   "py": 86.0,
+   "l": "Fibrovascular stroma: a pink collagenous septal band bearing thin-walled vascular channels traverses diagonally across the field, dividing the hypercellular sheets of granulosa cells into lobules."
   }
  ],
  "kinds": [
-  "c",
   "e",
-  "e"
+  "e",
+  "arrow"
  ],
- "areaSum": 1.5,
- "areaMax": 0.8,
+ "areaSum": 1.4,
+ "areaMax": 1.2,
  "findings": [
-  "Call-Exner bodies: tiny round, follicle-like spaces ringed by tumor cells and often holding pink material are scattered through the sheets; they are the classic hallmark of a granulosa cell tumor.",
+  "Call-Exner bodies: tiny round, follicle-like spaces ringed by tumor cells and often holding pink material are scattered through the sheets, most clearly in the upper middle and center of the field; they are the classic hallmark of a granulosa cell tumor.",
   "Diffuse sheets of small, uniform cells: monotonous round to oval nuclei with scant cytoplasm show a single population that resembles follicular granulosa cells.",
-  "Fibrovascular stroma: a band of pink fibrous tissue with thin vessels runs diagonally through the lower left, separating the solid sheets of tumor into regions."
+  "Fibrovascular stroma: a band of pink fibrous tissue with thin vessels runs diagonally from the middle of the left edge down to the bottom right, separating the solid sheets of tumor into regions."
  ],
  "adjustments": []
 }
