@@ -1,0 +1,504 @@
+[
+ {
+  "id": "rp18r01",
+  "tags": [
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp18-04"
+  ],
+  "q": "Which organism causes the most congenital infections in the United States?",
+  "o": [
+   "Cytomegalovirus",
+   "Toxoplasma gondii",
+   "Rubella virus",
+   "Treponema pallidum",
+   "Parvovirus B19"
+  ],
+  "a": 0,
+  "x": "Cytomegalovirus infects about 1 in 200 newborns, usually after spread from the saliva and urine of young children. Most infected infants look well at birth, and hearing loss may appear later.",
+  "w": {
+   "Toxoplasma gondii": "Congenital toxoplasmosis is far less common and needs a primary maternal infection from cat feces or undercooked meat during pregnancy.",
+   "Rubella virus": "Routine MMR vaccination has made congenital rubella rare in the United States. Most cases involve mothers who were never vaccinated.",
+   "Treponema pallidum": "Congenital syphilis has been rising, but it is still much less common than congenital cytomegalovirus infection.",
+   "Parvovirus B19": "Parvovirus infection in pregnancy is usually harmless. Only a minority of fetuses develop anemia and hydrops, mostly before 20 weeks."
+  },
+  "media": "fig:rp18_signatures",
+  "pt": {
+   "hl": [
+    "Cytomegalovirus"
+   ],
+   "say": "The cytomegalovirus row shows the everyday exposure, toddlers' saliva and urine, that makes CMV the most common congenital infection."
+  }
+ },
+ {
+  "id": "rp18r02",
+  "tags": [
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp18-01"
+  ],
+  "q": "Which organism causes chorioretinitis, hydrocephalus and diffuse intracranial calcifications?",
+  "o": [
+   "Toxoplasma gondii",
+   "Cytomegalovirus",
+   "Rubella virus",
+   "Zika virus",
+   "Treponema pallidum"
+  ],
+  "a": 0,
+  "x": "Toxoplasma gondii, acquired from cat feces or undercooked meat, produces this classic triad. Its calcifications are scattered through the brain, unlike the periventricular pattern of CMV.",
+  "w": {
+   "Cytomegalovirus": "CMV also calcifies the brain and causes chorioretinitis, but its calcifications line the ventricles and it causes microcephaly rather than hydrocephalus.",
+   "Rubella virus": "Congenital rubella targets the lens, heart and inner ear, causing cataracts, a patent ductus and deafness, not brain calcification.",
+   "Zika virus": "Zika causes severe microcephaly with eye lesions. Hydrocephalus with scattered calcium is the toxoplasma pattern.",
+   "Treponema pallidum": "Congenital syphilis affects skin, mucosa, liver and bone early and teeth, cornea and inner ear late. It does not calcify the brain this way."
+  },
+  "media": "fig:rp18_signatures",
+  "pt": {
+   "hl": [
+    "Toxoplasma"
+   ],
+   "say": "The Toxoplasma row lists the triad of chorioretinitis, hydrocephalus and diffuse calcifications after cat or raw-meat exposure."
+  }
+ },
+ {
+  "id": "rp18r03",
+  "tags": [
+   "teratogen-timing"
+  ],
+  "bp": [
+   "BP-rp18-03"
+  ],
+  "q": "Which heart defect is classic for congenital rubella?",
+  "o": [
+   "Patent ductus arteriosus",
+   "Tetralogy of Fallot",
+   "Ebstein anomaly",
+   "Transposition of the great arteries",
+   "Coarctation of the aorta"
+  ],
+  "a": 0,
+  "x": "Rubella in the first trimester disrupts organogenesis. A patent ductus arteriosus, often with pulmonary artery stenosis, joins cataracts and sensorineural deafness in the classic triad.",
+  "w": {
+   "Tetralogy of Fallot": "Tetralogy of Fallot is linked to 22q11 deletion and maternal diabetes, not rubella. It causes cyanotic spells in infancy.",
+   "Ebstein anomaly": "Ebstein anomaly, a downward displacement of the tricuspid valve, is the defect classically linked to first-trimester lithium exposure.",
+   "Transposition of the great arteries": "Transposition is the cyanotic defect most tied to maternal pregestational diabetes, not to congenital rubella.",
+   "Coarctation of the aorta": "Coarctation is classically associated with Turner syndrome and a bicuspid aortic valve, not with a viral infection in pregnancy."
+  },
+  "media": "fig:rp18_signatures",
+  "pt": {
+   "hl": [
+    "PDA"
+   ],
+   "say": "In the Rubella row, PDA stands for patent ductus arteriosus, listed beside cataracts and deafness."
+  }
+ },
+ {
+  "id": "rp18r04",
+  "tags": [
+   "virulence-factors"
+  ],
+  "bp": [
+   "BP-rp18-06"
+  ],
+  "q": "Which virus causes hydrops fetalis by infecting erythroid precursors?",
+  "o": [
+   "Parvovirus B19",
+   "Cytomegalovirus",
+   "Rubella virus",
+   "Varicella-zoster virus",
+   "Herpes simplex virus"
+  ],
+  "a": 0,
+  "x": "Parvovirus B19 enters erythroid precursors through the P antigen and kills them. The fetus becomes severely anemic, and high-output heart failure produces hydrops.",
+  "w": {
+   "Cytomegalovirus": "CMV can cause anemia and hepatitis, but its signature is periventricular calcification, microcephaly and hearing loss, not red cell aplasia.",
+   "Rubella virus": "Rubella injures organs in the first trimester, causing cataracts, deafness and heart defects. It does not specifically destroy red cell precursors.",
+   "Varicella-zoster virus": "Congenital varicella leaves dermatomal scars and limb hypoplasia. The virus targets skin and nerves, not red cell precursors.",
+   "Herpes simplex virus": "Neonatal herpes is acquired mostly at delivery and causes vesicles, encephalitis or disseminated disease, not fetal anemia."
+  },
+  "media": "fig:rp18_signatures",
+  "pt": {
+   "hl": [
+    "Parvovirus B19"
+   ],
+   "say": "The Parvovirus B19 row ends in fetal anemia and hydrops fetalis, the result of destroyed erythroid precursors."
+  }
+ },
+ {
+  "id": "rp18r05",
+  "tags": [
+   "teratogen-timing"
+  ],
+  "bp": [
+   "BP-rp18-07"
+  ],
+  "q": "Which finding is typical of congenital varicella syndrome?",
+  "o": [
+   "Limb hypoplasia with dermatomal scars",
+   "Cataracts with a patent ductus",
+   "Periventricular calcifications",
+   "Notched peg-shaped incisors",
+   "Severe microcephaly with eye lesions"
+  ],
+  "a": 0,
+  "x": "Maternal varicella before 20 weeks can damage developing skin and limbs along nerve distributions, leaving limb hypoplasia with zigzag dermatomal scars, plus eye and brain defects.",
+  "w": {
+   "Cataracts with a patent ductus": "Cataracts with a patent ductus arteriosus mark congenital rubella, acquired from a nonimmune mother in the first trimester.",
+   "Periventricular calcifications": "Calcifications lining the ventricles are the imaging signature of congenital cytomegalovirus, together with microcephaly and hearing loss.",
+   "Notched peg-shaped incisors": "Notched incisors are Hutchinson teeth, a late sign of congenital syphilis that appears with the permanent teeth.",
+   "Severe microcephaly with eye lesions": "Severe microcephaly with macular lesions is the pattern of congenital Zika infection after mosquito or sexual exposure."
+  },
+  "media": "fig:rp18_signatures",
+  "pt": {
+   "hl": [
+    "Limb hypoplasia"
+   ],
+   "say": "The Varicella row pairs chickenpox exposure with limb hypoplasia and zigzag skin scars."
+  }
+ },
+ {
+  "id": "rp18r06",
+  "tags": [
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp18-09"
+  ],
+  "q": "At what gestational age is the group B strep culture collected?",
+  "o": [
+   "36 to 37 weeks",
+   "24 to 28 weeks",
+   "28 to 32 weeks",
+   "At the first prenatal visit",
+   "At the onset of labor"
+  ],
+  "a": 0,
+  "x": "Carriage is intermittent, so the rectovaginal culture is taken at 36 to 37 weeks, close enough to delivery to predict colonization during labor. Carriers then receive penicillin in labor.",
+  "w": {
+   "24 to 28 weeks": "The 24-to-28-week window belongs to the glucose challenge test. A culture this early misses patients colonized later in pregnancy.",
+   "28 to 32 weeks": "A culture at 28 to 32 weeks is still too far from delivery, because colonization comes and goes over a few weeks.",
+   "At the first prenatal visit": "First-visit testing covers blood type, HIV, HBsAg, syphilis and urine culture. GBS carriage then says little about delivery.",
+   "At the onset of labor": "A culture takes 24 to 48 hours to grow, so a labor swab cannot guide prophylaxis that must start at least 4 hours before birth."
+  },
+  "media": "fig:rp18_routes",
+  "pt": {
+   "hl": [
+    "GBS culture at 36-37 wk"
+   ],
+   "say": "The delivery box starts with the GBS culture at 36 to 37 weeks, followed by penicillin in labor for carriers."
+  }
+ },
+ {
+  "id": "rp18r07",
+  "tags": [
+   "drug-mechanism",
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp18-09"
+  ],
+  "q": "Which drug is first choice in labor to prevent early-onset group B strep disease?",
+  "o": [
+   "Intravenous penicillin G",
+   "Oral amoxicillin",
+   "Intramuscular ceftriaxone",
+   "Oral metronidazole",
+   "Intravenous gentamicin"
+  ],
+  "a": 0,
+  "x": "Intravenous penicillin G, started at least 4 hours before birth, reaches fetal blood and amniotic fluid and suppresses group B strep in the birth canal. Ampicillin is an alternative.",
+  "w": {
+   "Oral amoxicillin": "Oral antibiotics before labor do not prevent early-onset disease, because the rectal reservoir recolonizes the vagina within weeks.",
+   "Intramuscular ceftriaxone": "A single ceftriaxone injection is the gonorrhea regimen. It is not used for intrapartum group B strep prophylaxis.",
+   "Oral metronidazole": "Metronidazole treats bacterial vaginosis and trichomoniasis. It has no useful activity against gram-positive streptococci.",
+   "Intravenous gentamicin": "Gentamicin is an aminoglycoside that does not cover streptococci well on its own. It is not the prophylaxis drug."
+  },
+  "media": "fig:rp18_routes",
+  "pt": {
+   "hl": [
+    "penicillin in labor"
+   ],
+   "say": "The delivery box names penicillin in labor as the step that prevents early-onset group B strep disease."
+  }
+ },
+ {
+  "id": "rp18r08",
+  "tags": [
+   "treatment-sequence",
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp18-05"
+  ],
+  "q": "From what gestational age does a patient with recurrent genital herpes take suppressive acyclovir?",
+  "o": [
+   "36 weeks",
+   "28 weeks",
+   "20 weeks",
+   "12 weeks",
+   "40 weeks"
+  ],
+  "a": 0,
+  "x": "Suppressive acyclovir or valacyclovir from 36 weeks until delivery lowers the chance of a recurrence and of viral shedding in labor, which makes cesarean delivery less often needed.",
+  "w": {
+   "28 weeks": "Starting at 28 weeks adds two months of drug exposure without extra benefit. The aim is to cover the weeks right before delivery.",
+   "20 weeks": "Twenty weeks is far from delivery. An outbreak then does not expose the newborn, so suppression is not started that early.",
+   "12 weeks": "First-trimester suppression is unnecessary for recurrent herpes. Suppression targets the risk at delivery.",
+   "40 weeks": "Waiting until 40 weeks is too late, because many patients deliver before their due date and suppression needs days to work."
+  },
+  "media": "fig:rp18_routes",
+  "pt": {
+   "hl": [
+    "Acyclovir from 36 weeks if herpes history"
+   ],
+   "say": "The delivery box lists acyclovir from 36 weeks for patients with a herpes history, to suppress shedding at birth."
+  }
+ },
+ {
+  "id": "rp18r09",
+  "tags": [
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp18-10"
+  ],
+  "q": "Which newborn prophylaxis follows delivery to an HBsAg-positive mother?",
+  "o": [
+   "HBIG plus hepatitis B vaccine",
+   "Hepatitis B vaccine alone",
+   "HBIG alone",
+   "Oral tenofovir",
+   "Interferon alfa"
+  ],
+  "a": 0,
+  "x": "HBIG plus hepatitis B vaccine within 12 hours of birth gives immediate passive antibody and lasting active immunity. This prevents most perinatal infections that would otherwise become chronic.",
+  "w": {
+   "Hepatitis B vaccine alone": "Vaccine alone is the routine birth dose for infants of HBsAg-negative mothers. Exposed infants also need passive antibody.",
+   "HBIG alone": "Immune globulin protection fades within months. Without vaccine, the infant never builds its own lasting immunity.",
+   "Oral tenofovir": "Tenofovir is an antiviral for adults with hepatitis B. It is not given to newborns as prophylaxis.",
+   "Interferon alfa": "Interferon is an older treatment for chronic hepatitis B in adults. It has no role in preventing perinatal transmission."
+  },
+  "media": "fig:rp18_routes",
+  "pt": {
+   "hl": [
+    "HBIG plus vaccine within 12 hours"
+   ],
+   "say": "The delivery box gives HBIG plus vaccine within 12 hours as the newborn step for maternal hepatitis B."
+  }
+ },
+ {
+  "id": "rp18r10",
+  "tags": [
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp18-12"
+  ],
+  "q": "Which organism causes purulent conjunctivitis on days 2 to 5 of life?",
+  "o": [
+   "Neisseria gonorrhoeae",
+   "Chlamydia trachomatis",
+   "Herpes simplex virus",
+   "Staphylococcus aureus",
+   "Pseudomonas aeruginosa"
+  ],
+  "a": 0,
+  "x": "Neisseria gonorrhoeae acquired in the birth canal causes hyperacute purulent conjunctivitis on days 2 to 5 that can perforate the cornea, so systemic ceftriaxone is given promptly.",
+  "w": {
+   "Chlamydia trachomatis": "Chlamydial conjunctivitis starts later, on days 5 to 14, with a watery to mucopurulent discharge and intracytoplasmic inclusions.",
+   "Herpes simplex virus": "Herpes keratoconjunctivitis usually appears after the first week with nearby vesicles and is treated with intravenous acyclovir.",
+   "Staphylococcus aureus": "Staphylococcal conjunctivitis can occur in newborns but is milder and lacks the hyperacute course tied to birth canal exposure.",
+   "Pseudomonas aeruginosa": "Pseudomonas eye infection affects mainly premature infants in intensive care. It is uncommon in healthy term newborns."
+  },
+  "media": "fig:rp18_routes",
+  "pt": {
+   "hl": [
+    "Gonorrhea"
+   ],
+   "say": "Gonorrhea sits on the delivery side: Neisseria gonorrhoeae from the birth canal causes purulent conjunctivitis on days 2 to 5."
+  }
+ },
+ {
+  "id": "rp18r11",
+  "tags": [
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp18-12"
+  ],
+  "q": "When does chlamydial conjunctivitis of the newborn usually begin?",
+  "o": [
+   "Days 5 to 14",
+   "First 24 hours",
+   "Days 2 to 5",
+   "Weeks 4 to 12",
+   "Days 21 to 28"
+  ],
+  "a": 0,
+  "x": "Chlamydia trachomatis has a longer incubation than gonorrhea, so conjunctivitis begins on days 5 to 14. Systemic erythromycin or azithromycin treats it and its nasopharyngeal carriage.",
+  "w": {
+   "First 24 hours": "Conjunctivitis in the first day is chemical irritation from eye prophylaxis, and it settles without treatment.",
+   "Days 2 to 5": "Onset on days 2 to 5 with a purulent discharge points to gonococcal conjunctivitis, which can perforate the cornea.",
+   "Weeks 4 to 12": "Weeks 4 to 12 is when untreated chlamydial carriage can cause afebrile pneumonia with a staccato cough, not conjunctivitis.",
+   "Days 21 to 28": "A new conjunctivitis at three to four weeks suggests other causes, such as a blocked tear duct or community bacteria."
+  },
+  "media": "fig:rp18_routes",
+  "pt": {
+   "hl": [
+    "Chlamydia"
+   ],
+   "say": "Chlamydia is caught in the birth canal, and the conjunctivitis it causes begins on days 5 to 14."
+  }
+ },
+ {
+  "id": "rp18r12",
+  "tags": [
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp18-15",
+   "BP-rp18-08"
+  ],
+  "q": "Which motility pattern identifies Listeria monocytogenes on a wet mount?",
+  "o": [
+   "Tumbling motility",
+   "Darting motility",
+   "Corkscrew motility",
+   "Swarming motility",
+   "Twitching motility"
+  ],
+  "a": 0,
+  "x": "Listeria shows end-over-end tumbling motility at room temperature. This gram-positive rod also grows in the cold, lives inside cells and moves between them on actin tails.",
+  "w": {
+   "Darting motility": "Darting motility is the shooting-star movement of Vibrio cholerae and Campylobacter on a wet mount.",
+   "Corkscrew motility": "Corkscrew motility belongs to spirochetes such as Treponema pallidum and Leptospira, seen with darkfield microscopy.",
+   "Swarming motility": "Swarming across an agar plate in waves is the hallmark of Proteus mirabilis, a gram-negative rod.",
+   "Twitching motility": "Twitching motility comes from retraction of type IV pili, as in Pseudomonas aeruginosa and Neisseria, not from flagella."
+  },
+  "media": "fig:rp18_routes",
+  "pt": {
+   "hl": [
+    "Listeria"
+   ],
+   "say": "Listeria crosses the placenta in the in-utero panel; in the laboratory it shows tumbling motility."
+  }
+ },
+ {
+  "id": "rp18r13",
+  "tags": [
+   "virulence-factors"
+  ],
+  "bp": [
+   "BP-rp18-15"
+  ],
+  "q": "Which capsule lets Escherichia coli cause neonatal meningitis?",
+  "o": [
+   "K1 capsule",
+   "Vi capsule",
+   "Polyribosylribitol phosphate capsule",
+   "Hyaluronic acid capsule",
+   "Poly-D-glutamate capsule"
+  ],
+  "a": 0,
+  "x": "The K1 capsule is a polysialic acid polymer that resembles host tissue, so it resists complement and phagocytosis. K1 strains cause most E. coli neonatal meningitis.",
+  "w": {
+   "Vi capsule": "The Vi capsule belongs to Salmonella Typhi and protects it during typhoid fever. The typhoid polysaccharide vaccine targets it.",
+   "Polyribosylribitol phosphate capsule": "PRP is the capsule of Haemophilus influenzae type b, the target of the Hib conjugate vaccine given in infancy.",
+   "Hyaluronic acid capsule": "A hyaluronic acid capsule helps Streptococcus pyogenes evade phagocytosis because it mimics host connective tissue.",
+   "Poly-D-glutamate capsule": "A capsule of D-glutamate polypeptide is unique to Bacillus anthracis. Nearly every other bacterial capsule is polysaccharide."
+  }
+ },
+ {
+  "id": "rp18r14",
+  "tags": [
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp18-02",
+   "BP-rp18-16"
+  ],
+  "q": "Saber shins, forward bowing of the tibia from periostitis, are a late sign of which congenital infection?",
+  "o": [
+   "Syphilis",
+   "Rubella",
+   "Cytomegalovirus",
+   "Toxoplasma",
+   "Parvovirus B19"
+  ],
+  "a": 0,
+  "x": "Saber shins come from chronic periostitis of the tibia in late congenital syphilis, after Treponema pallidum crosses the placenta. They join Hutchinson teeth, mulberry molars, saddle nose and interstitial keratitis as late signs.",
+  "w": {
+   "Rubella": "Congenital rubella causes cataracts, sensorineural deafness, a patent ductus arteriosus and a blueberry-muffin rash, not periostitis of the long bones.",
+   "Cytomegalovirus": "Congenital CMV causes periventricular calcifications, microcephaly and hearing loss. It does not inflame the periosteum or bow the tibia.",
+   "Toxoplasma": "Congenital toxoplasmosis causes chorioretinitis, hydrocephalus and diffuse intracranial calcifications, not bone deformities.",
+   "Parvovirus B19": "Fetal parvovirus infection destroys red cell precursors and causes anemia and hydrops. It leaves no late bone signs."
+  },
+  "media": "fig:rp18_signatures",
+  "pt": {
+   "hl": [
+    "saber shins"
+   ],
+   "say": "The Syphilis row ends with saber shins, a late sign from periostitis of the tibia."
+  }
+ },
+ {
+  "id": "rp18r15",
+  "tags": [
+   "serology-reading"
+  ],
+  "bp": [
+   "BP-rp18-13"
+  ],
+  "q": "In the first trimester, which serology result shows that a maternal infection began before pregnancy?",
+  "o": [
+   "High-avidity IgG",
+   "Low-avidity IgG",
+   "Positive IgM with negative IgG",
+   "Negative IgG and IgM",
+   "Fourfold rise in IgG titer"
+  ],
+  "a": 0,
+  "x": "IgG binds more tightly as the immune response matures over months. High-avidity IgG in the first trimester therefore means an infection at least several months old, from before pregnancy, while low avidity means a recent primary infection.",
+  "w": {
+   "Low-avidity IgG": "Low-avidity IgG comes from an immature antibody response and signals a primary infection within the past few months.",
+   "Positive IgM with negative IgG": "IgM without IgG marks a very early infection or a false-positive IgM, not an infection months before pregnancy.",
+   "Negative IgG and IgM": "Negative antibodies mean the patient has never been infected and is still susceptible, so exposure must be avoided.",
+   "Fourfold rise in IgG titer": "A fourfold rise between paired sera shows an active, recent infection, the opposite of old, stable immunity."
+  }
+ },
+ {
+  "id": "rp18r16",
+  "tags": [
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp18-08"
+  ],
+  "q": "Which antibiotic must be added because cephalosporins miss Listeria?",
+  "o": [
+   "Ampicillin",
+   "Vancomycin",
+   "Clindamycin",
+   "Aztreonam",
+   "Metronidazole"
+  ],
+  "a": 0,
+  "x": "Ampicillin is the drug of choice for Listeria, whose penicillin-binding proteins resist cephalosporins. This is why ampicillin is part of every empiric regimen for neonatal sepsis and meningitis.",
+  "w": {
+   "Vancomycin": "Vancomycin covers MRSA and resistant pneumococci, but treatment failures make it an unreliable choice for listeriosis.",
+   "Clindamycin": "Clindamycin covers anaerobes and many gram-positive cocci but has poor activity against Listeria and poor central nervous system penetration.",
+   "Aztreonam": "Aztreonam acts only on aerobic gram-negative rods and cannot treat a gram-positive rod like Listeria.",
+   "Metronidazole": "Metronidazole kills anaerobes and protozoa. Listeria is a facultative anaerobe outside its useful spectrum."
+  },
+  "media": "fig:rp18_routes",
+  "pt": {
+   "hl": [
+    "Listeria"
+   ],
+   "say": "Listeria appears in the in-utero panel; because it resists cephalosporins, ampicillin must be part of treatment."
+  }
+ }
+]

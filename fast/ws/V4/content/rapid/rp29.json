@@ -1,0 +1,402 @@
+[
+ {
+  "id": "rp29r01",
+  "tags": [
+   "feedback-logic",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp29-03"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.4"
+  ],
+  "q": "How does estradiol lower testosterone in feminizing therapy?",
+  "o": [
+   "It blocks androgen receptors",
+   "It inhibits 5-alpha-reductase",
+   "It inhibits aromatase",
+   "It suppresses LH by negative feedback",
+   "It downregulates pituitary GnRH receptors"
+  ],
+  "a": 3,
+  "x": "Estradiol acts on the hypothalamus and pituitary by negative feedback, lowering LH, so the testes make less testosterone. Spironolactone is added because it blocks androgen receptors, and a GnRH agonist works higher up by downregulating receptors. These are separate drug mechanisms, not different effects of estradiol.",
+  "w": {
+   "It blocks androgen receptors": "That is the action of spironolactone, the antiandrogen paired with estradiol, which occupies androgen receptors and also lowers testosterone synthesis. Estradiol itself acts on estrogen receptors.",
+   "It inhibits 5-alpha-reductase": "Finasteride and dutasteride block this enzyme, which makes dihydrotestosterone from testosterone. The enzyme is not an estradiol target, and blocking it would not lower circulating testosterone.",
+   "It inhibits aromatase": "Aromatase converts testosterone into estradiol, so inhibiting it would raise testosterone and lower estrogen, the opposite of what feminizing therapy aims for.",
+   "It downregulates pituitary GnRH receptors": "A continuous GnRH agonist such as leuprolide does this after an initial flare. Estradiol does not occupy GnRH receptors, so this mechanism belongs to the alternative antiandrogen."
+  },
+  "media": "fig:rp29_hormones",
+  "pt": {
+   "hl": [
+    "Estradiol suppresses LH"
+   ],
+   "say": "In the How it works row of the Feminizing column, estradiol suppresses LH, which lowers testicular testosterone, while spironolactone separately blocks androgen receptors."
+  }
+ },
+ {
+  "id": "rp29r02",
+  "tags": [
+   "feedback-logic",
+   "pulsatile-signaling"
+  ],
+  "bp": [
+   "BP-rp29-05"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.4"
+  ],
+  "q": "Why does a continuous GnRH agonist pause puberty even though GnRH normally stimulates LH?",
+  "o": [
+   "Constant exposure downregulates pituitary GnRH receptors",
+   "It blocks LH receptors on the gonads",
+   "It blocks androgen receptors in target tissues",
+   "It inhibits aromatase in fat",
+   "It destroys the pituitary gonadotrophs"
+  ],
+  "a": 0,
+  "x": "Natural GnRH arrives in pulses, which keeps pituitary receptors responsive. A depot or implant gives a constant signal, so after a brief flare the receptors are internalized and gonadotrophs stop answering. LH and FSH fall, the gonads make little sex steroid, and puberty pauses until pulsatile signaling returns.",
+  "w": {
+   "It blocks LH receptors on the gonads": "Gonadal LH receptors are untouched. The agonist acts at the pituitary, and the gonads simply see less LH, so steroid production falls because the signal is withdrawn, not because the target is blocked.",
+   "It blocks androgen receptors in target tissues": "That describes an antiandrogen such as spironolactone, which leaves hormone levels unchanged. A GnRH agonist works upstream and lowers LH, FSH and the sex steroids themselves.",
+   "It inhibits aromatase in fat": "Aromatase inhibitors block estrogen synthesis but leave the pituitary signal on. With less estrogen feedback, LH and FSH rise and the gonads keep making androgens, so puberty is not paused.",
+   "It destroys the pituitary gonadotrophs": "The effect is reversible desensitization, not cell death. When the drug stops, pulsatile signaling returns and puberty resumes, which would be impossible if gonadotrophs were destroyed."
+  },
+  "media": "fig:rp29_hormones",
+  "pt": {
+   "hl": [
+    "Constant GnRH signal",
+    "downregulates receptors"
+   ],
+   "say": "In the How it works row of the Puberty blocker column, a constant GnRH signal downregulates receptors, so LH and FSH fall and puberty pauses."
+  }
+ },
+ {
+  "id": "rp29r03",
+  "tags": [
+   "feedback-logic",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp29-05"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.4"
+  ],
+  "q": "What happens after a GnRH agonist puberty blocker is stopped?",
+  "o": [
+   "Puberty stays permanently suppressed",
+   "Puberty resumes",
+   "Puberty is accelerated to catch up",
+   "Sex steroids stay prepubertal for years",
+   "The gonads are permanently damaged"
+  ],
+  "a": 1,
+  "x": "A puberty blocker keeps the pituitary desensitized only while the drug is present. When the depot or implant is stopped, GnRH receptors recover, pulsatile signaling returns, and LH, FSH and sex steroids rise again, so puberty resumes. That reversibility is why a blocker can pause development without committing the patient to later hormones.",
+  "w": {
+   "Puberty stays permanently suppressed": "Suppression lasts only as long as the agonist is present, because the effect is receptor desensitization, not damage. Permanent arrest would make blockers an irreversible treatment, a common misconception.",
+   "Puberty is accelerated to catch up": "Pubertal timing is set by the return of pulsatile GnRH, so after withdrawal development continues at a roughly normal pace from where it stopped. It does not speed up to make up lost time.",
+   "Sex steroids stay prepubertal for years": "Hormone levels begin to rise within months of stopping a depot or removing an implant, once gonadotropins recover. They do not stay at prepubertal levels long after the drug is gone.",
+   "The gonads are permanently damaged": "Blockers withdraw stimulation but do not injure the gonads. Fertility concerns arise instead when a blocker is followed directly by cross-sex hormones, because germ cells never get the chance to mature."
+  },
+  "media": "fig:rp29_hormones",
+  "pt": {
+   "hl": [
+    "resumes if stopped",
+    "(reversible)"
+   ],
+   "say": "In the Changes row of the Puberty blocker column, puberty pauses and resumes if stopped, and the label reversible confirms that it comes back."
+  }
+ },
+ {
+  "id": "rp29r04",
+  "tags": [
+   "adverse-effects",
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp29-05"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.4"
+  ],
+  "q": "Which measurement is followed in a child on a puberty blocker because bone is accrued during puberty?",
+  "o": [
+   "Hematocrit",
+   "Serum potassium",
+   "Lipid panel",
+   "Estradiol level",
+   "Bone density"
+  ],
+  "a": 4,
+  "x": "Peak bone mass is built during puberty, when estradiol and testosterone drive bone formation. A continuous GnRH agonist keeps sex steroids at prepubertal levels, so bone mineral accrual slows and bone density is tracked, along with growth and Tanner stage. Hematocrit and potassium belong to other regimens.",
+  "w": {
+   "Hematocrit": "Hematocrit is followed during testosterone therapy, because androgens stimulate erythropoietin and cause erythrocytosis. A blocker lowers sex steroids and does not drive red cell production.",
+   "Serum potassium": "Potassium is checked with spironolactone, an aldosterone antagonist that causes hyperkalemia. A puberty blocker has no mineralocorticoid effect.",
+   "Lipid panel": "Lipids are followed on testosterone, which lowers HDL, and on oral estrogen, which raises triglycerides. Blockers have neither effect and mainly remove the hormonal signals that build bone.",
+   "Estradiol level": "Estradiol is measured to titrate feminizing estrogen therapy. A blocker aims to keep estradiol at prepubertal levels, so the effect to track is its downstream skeletal cost."
+  },
+  "media": "fig:rp29_hormones",
+  "pt": {
+   "hl": [
+    "Lower bone accrual;",
+    "Bone density, growth,"
+   ],
+   "say": "In the Puberty blocker column, the key risks row shows lower bone accrual and the monitor row lists bone density, growth and Tanner stage."
+  }
+ },
+ {
+  "id": "rp29r05",
+  "tags": [
+   "adverse-effects",
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp29-04",
+   "BP-rp29-12"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.4"
+  ],
+  "q": "Which lipid change is expected during testosterone therapy in a transgender man?",
+  "o": [
+   "Higher HDL cholesterol",
+   "Lower LDL cholesterol",
+   "Lower triglycerides",
+   "Lower HDL cholesterol",
+   "No change in any lipid fraction"
+  ],
+  "a": 3,
+  "x": "Testosterone lowers HDL cholesterol, which is why a lipid panel is part of monitoring, alongside hematocrit and testosterone level, so that cardiovascular risk factors are managed.",
+  "w": {
+   "Higher HDL cholesterol": "Estrogen tends to raise HDL, which is the opposite of testosterone. Expecting a rise confuses the two hormones.",
+   "Lower LDL cholesterol": "Testosterone is not known for lowering LDL. The lipid change to expect on it is a fall in HDL.",
+   "Lower triglycerides": "Testosterone does not lower triglycerides. The classic lipid effect to watch for is a fall in HDL cholesterol, which is why cardiovascular risk is followed.",
+   "No change in any lipid fraction": "Testosterone measurably changes the lipid profile, which is the reason a lipid panel is part of routine monitoring. Assuming no change would leave rising cardiovascular risk unnoticed."
+  },
+  "media": "fig:rp29_hormones",
+  "pt": {
+   "hl": [
+    "low HDL"
+   ],
+   "say": "In the Masculinizing column, the key risks row lists erythrocytosis, low HDL and vaginal atrophy, so HDL cholesterol falls on testosterone, and the monitor row includes lipids."
+  }
+ },
+ {
+  "id": "rp29r06",
+  "tags": [
+   "hormone-actions",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp29-12",
+   "BP-rp29-04"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.4"
+  ],
+  "q": "A transgender man on testosterone for 2 years has vaginal dryness and painful intercourse. Which change explains this?",
+  "o": [
+   "Atrophy of the vaginal epithelium",
+   "Estrogen-driven thickening of the vaginal lining",
+   "Candida overgrowth",
+   "Lichen sclerosus",
+   "Trichomonas infection"
+  ],
+  "a": 0,
+  "x": "Testosterone suppresses ovarian estradiol, and without estrogen the vaginal epithelium thins, loses glycogen and secretes less lubricating fluid, which raises vaginal pH and causes dryness, burning and painful intercourse. The same change makes cervical samples more often unsatisfactory.",
+  "w": {
+   "Estrogen-driven thickening of the vaginal lining": "Testosterone lowers ovarian estrogen, so the lining thins rather than thickens. A thick, glycogen-rich epithelium is the premenopausal pattern that depends on estrogen.",
+   "Candida overgrowth": "Candida causes itching, curdy white discharge and redness, and it thrives on glycogen-rich epithelium in estrogenized women. Dryness from a thin lining is a different mechanism.",
+   "Lichen sclerosus": "Lichen sclerosus is an inflammatory vulvar skin disease with white, parchment-like skin and fusion of the labia, and it is not caused by hormone therapy. The vaginal lining itself is spared.",
+   "Trichomonas infection": "Trichomonas vaginalis causes frothy, malodorous discharge with a strawberry-red cervix, and it is a sexually transmitted infection rather than a hormonal change in the lining."
+  },
+  "media": "fig:rp29_hormones",
+  "pt": {
+   "hl": [
+    "vaginal atrophy"
+   ],
+   "say": "In the Masculinizing column, the key risks row ends with vaginal atrophy, which explains dryness and painful intercourse on long-term testosterone."
+  }
+ },
+ {
+  "id": "rp29r07",
+  "tags": [
+   "consent-ethics",
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp29-06"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.3"
+  ],
+  "q": "When should fertility preservation be discussed for a patient planning gender-affirming hormones?",
+  "o": [
+   "Six months after starting hormones",
+   "After the first surgery",
+   "Before the first dose",
+   "When pregnancy is desired",
+   "At the time hormones are stopped"
+  ],
+  "a": 2,
+  "x": "Hormones and surgery can reduce or end fertility: estradiol lowers sperm production and testosterone suppresses the ovarian cycle. Because the effect may be lasting, sperm banking or oocyte or embryo cryopreservation is offered before the first dose, when gametes are healthiest. Contraception is planned at the same time.",
+  "w": {
+   "Six months after starting hormones": "By six months the hormones have already suppressed gametogenesis, so sperm quality or ovarian function may be reduced and preserving fertility is harder or requires stopping treatment.",
+   "After the first surgery": "Gonadectomy or hysterectomy removes the source of gametes or the uterus permanently. Counseling afterward comes too late to bank sperm, oocytes or embryos from the removed organs.",
+   "When pregnancy is desired": "Waiting until pregnancy is desired may mean that gametes are no longer available, because sustained hormones can injure the testis or suppress the ovary, and options are then limited.",
+   "At the time hormones are stopped": "Stopping hormones may allow some recovery of fertility, but recovery is uncertain, so stopping is a backup rather than a plan, and preservation is arranged first."
+  },
+  "media": "fig:rp29_hormones",
+  "pt": {
+   "hl": [
+    "fertility preservation before the first dose"
+   ],
+   "say": "The closing line under the table says to plan contraception and fertility preservation before the first dose, because both hormone regimens can alter fertility."
+  }
+ },
+ {
+  "id": "rp29r08",
+  "tags": [
+   "feedback-logic",
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp29-12",
+   "BP-rp29-04"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.3",
+   "TRANSGENDER-LEC.4"
+  ],
+  "q": "Why can a transgender man on testosterone who has stopped bleeding still become pregnant?",
+  "o": [
+   "Testosterone induces permanent ovarian failure",
+   "Ovulation can continue after menses stop",
+   "Testosterone is converted to progesterone",
+   "Testosterone raises LH and FSH",
+   "The endometrium thickens on testosterone"
+  ],
+  "a": 1,
+  "x": "Testosterone stops menses by suppressing the cycle and atrophying the endometrium, but suppression of ovulation is variable, so follicles can still ripen and release eggs without bleeding. A patient with a uterus, ovaries and a partner who makes sperm can conceive, and testosterone would virilize a female fetus, so reliable contraception is needed.",
+  "w": {
+   "Testosterone induces permanent ovarian failure": "Fertility can return after testosterone is stopped, which is how many transgender men have carried pregnancies, so the ovaries are not permanently failed. Amenorrhea reflects endometrial atrophy and cycle suppression.",
+   "Testosterone is converted to progesterone": "Progesterone is an upstream precursor of androgens in the steroid pathway, so testosterone is not converted back into it. The metabolites of testosterone are DHT and estradiol.",
+   "Testosterone raises LH and FSH": "Exogenous testosterone suppresses LH and FSH by negative feedback, which is how it stops cycling. The problem is that suppression is incomplete, not that gonadotropins rise.",
+   "The endometrium thickens on testosterone": "The endometrium becomes atrophic on testosterone, which is why bleeding stops. A thin lining does not prevent ovulation, so the absence of bleeding says nothing about whether an egg is released."
+  },
+  "media": "fig:rp29_hormones",
+  "pt": {
+   "hl": [
+    "Neither estradiol nor testosterone is contraception.",
+    "menses stop"
+   ],
+   "say": "The note under the table says neither estradiol nor testosterone is contraception, because ovulation can continue even after menses stop."
+  }
+ },
+ {
+  "id": "rp29r09",
+  "tags": [
+   "hormone-actions",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp29-03",
+   "BP-rp29-04"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.4"
+  ],
+  "q": "Which change is produced by feminizing rather than masculinizing hormone therapy?",
+  "o": [
+   "Deeper voice",
+   "Facial hair growth",
+   "Clitoral growth",
+   "Cessation of menses",
+   "Breast growth"
+  ],
+  "a": 4,
+  "x": "Estradiol acts on breast tissue to produce ductal and glandular growth and softens skin, while lower testosterone shrinks the testes and reduces erections and sperm. Deepening voice, facial hair, clitoral growth and cessation of menses are androgen effects of masculinizing therapy, and the voice change is permanent.",
+  "w": {
+   "Deeper voice": "Androgen action on the larynx deepens the voice, and the change is permanent. It belongs to masculinizing therapy, and estradiol does not reverse it.",
+   "Facial hair growth": "Androgens convert fine facial hairs into terminal hairs, so facial hair is a signature effect of testosterone. Feminizing therapy lowers androgen action rather than adding it.",
+   "Clitoral growth": "Androgen exposure enlarges the clitoris, a change of testosterone therapy that is largely permanent. Feminizing therapy lowers androgen levels and does not cause it.",
+   "Cessation of menses": "Menses stop when testosterone suppresses LH and FSH and thins the endometrium. Feminizing therapy is given to patients who do not menstruate, so it produces no such change."
+  },
+  "media": "fig:rp29_hormones",
+  "pt": {
+   "hl": [
+    "Breast growth, softer skin;",
+    "Deeper voice, facial hair,"
+   ],
+   "say": "Compare the Changes row: the Feminizing column lists breast growth and softer skin, while the Masculinizing column lists deeper voice, facial hair, clitoral growth and menses stop."
+  }
+ },
+ {
+  "id": "rp29r10",
+  "tags": [
+   "adverse-effects",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp29-03"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.4"
+  ],
+  "q": "Which adverse effect of feminizing hormone therapy is highest with oral estrogen?",
+  "o": [
+   "Hyperkalemia",
+   "Erythrocytosis",
+   "Venous clotting (VTE)",
+   "Low HDL cholesterol",
+   "Lower bone accrual"
+  ],
+  "a": 2,
+  "x": "Oral estradiol is absorbed into the portal circulation and reaches the liver first, where it raises clotting factor production, so venous thromboembolism is the main danger of feminizing therapy and is highest with oral estrogen and smoking. Transdermal estradiol enters the circulation directly and carries less clot risk.",
+  "w": {
+   "Hyperkalemia": "Hyperkalemia comes from spironolactone, which blocks the aldosterone receptor in the collecting duct. It does not depend on how the estrogen is given, so it is not the risk that the estrogen route changes.",
+   "Erythrocytosis": "Erythrocytosis follows testosterone, which stimulates erythropoietin, so it belongs to masculinizing therapy. Feminizing therapy lowers rather than raises the hematocrit toward the female range.",
+   "Low HDL cholesterol": "Low HDL is a testosterone effect, through increased hepatic lipase. Oral estrogen tends to raise HDL, so this is the opposite of the risk that is highest with oral estrogen.",
+   "Lower bone accrual": "Reduced bone accrual is the cost of puberty blockers, which keep sex steroids low during the years of peak bone growth. Estrogen in feminizing therapy supports bone rather than harming it."
+  },
+  "media": "fig:rp29_hormones",
+  "pt": {
+   "hl": [
+    "VTE, highest with oral"
+   ],
+   "say": "In the Feminizing column, the key risks row begins VTE, highest with oral estrogen, so venous thromboembolism is the risk tied to the oral route. Hyperkalemia follows from spironolactone."
+  }
+ },
+ {
+  "id": "rp29r11",
+  "tags": [
+   "consent-ethics"
+  ],
+  "bp": [
+   "BP-rp29-08",
+   "BP-rp29-10"
+  ],
+  "obj": [
+   "BICEP-BROWN.8",
+   "LIFESPAN-CASES.5"
+  ],
+  "q": "Which term names a legal status decided only by a court, as opposed to a clinician's judgment of decision-making capacity?",
+  "o": [
+   "Autonomy",
+   "Capacity",
+   "Assent",
+   "Competence",
+   "Beneficence"
+  ],
+  "a": 3,
+  "x": "Competence is a legal determination, made only by a court, that a person can manage their own affairs. Decision-making capacity is a clinical judgment, made by the treating physician, about one decision at one time. A patient presumed competent may lack capacity for a specific choice, and clinicians act on capacity at the bedside.",
+  "w": {
+   "Autonomy": "Autonomy is the ethical principle that a capable patient has the right to decide about treatment. It is a principle that guides care, not a status that a court assigns.",
+   "Capacity": "Capacity is the clinical judgment, made by the treating physician for one decision, that the patient can understand, appreciate, reason and communicate a choice, and it can change with time and with the decision.",
+   "Assent": "Assent is a minor's or incapacitated patient's agreement to care, sought alongside a parent's or surrogate's permission. It is not a legal finding about decision-making ability.",
+   "Beneficence": "Beneficence is the duty to act for the patient's benefit, one of the ethical principles that guide care. It does not describe anyone's ability to decide or a court finding."
+  }
+ }
+]

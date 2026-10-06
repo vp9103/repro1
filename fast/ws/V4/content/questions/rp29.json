@@ -1,0 +1,828 @@
+[
+ {
+  "id": "rp29q01",
+  "d": 1,
+  "tags": [
+   "hormone-actions",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp29-04"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.4"
+  ],
+  "s": "A 20-year-old transgender man who uses he/him pronouns comes to the clinic to begin testosterone injections. He has no medical problems and takes no medications. During counseling, he asks which of the expected changes would remain if he decided to stop testosterone after a year of treatment.",
+  "l": "Which effect of testosterone is most likely to be permanent?",
+  "o": [
+   "Cessation of menses",
+   "Acne",
+   "Voice deepening",
+   "Increased muscle mass",
+   "Body fat redistribution"
+  ],
+  "a": 2,
+  "e": "**Voice deepening** is permanent, because testosterone thickens the vocal folds, and clitoral enlargement also stays. The other changes offered here need continued testosterone. Menses stop within a few months and return after the drug is stopped, acne settles, and the muscle and fat changes reverse over months. Because some changes cannot be undone, patients are counseled about them, along with fertility preservation and contraception, before the first dose.",
+  "w": {
+   "Cessation of menses": "Bleeding usually stops within a few months, but ovarian cycles resume once the drug is stopped, so amenorrhea is reversible.",
+   "Acne": "Androgens enlarge sebaceous glands and increase sebum, so acne is common in the first year. It improves with time or treatment and fades when testosterone is withdrawn.",
+   "Increased muscle mass": "Testosterone increases muscle protein synthesis, but the gained mass depends on ongoing androgen levels and declines over months after the hormone is stopped.",
+   "Body fat redistribution": "Fat redistribution depends on continued androgen exposure and drifts back over months after testosterone is stopped, so it is not a permanent change."
+  },
+  "et": [
+   [
+    "Option",
+    "Cause",
+    "After testosterone stops"
+   ],
+   [
+    [
+     "Voice deepening",
+     "Vocal folds thicken",
+     "Persists"
+    ],
+    [
+     "Cessation of menses",
+     "LH and FSH suppressed; endometrium thins",
+     "Menses return"
+    ],
+    [
+     "Acne",
+     "Androgen-driven sebum",
+     "Clears over months"
+    ],
+    [
+     "Increased muscle mass",
+     "Androgen-driven protein synthesis",
+     "Declines over months"
+    ],
+    [
+     "Body fat redistribution",
+     "Fat shifts to the abdomen",
+     "Reverts over months"
+    ]
+   ]
+  ],
+  "bl": "Voice deepening and clitoral enlargement from testosterone are permanent. Menses, acne, muscle and fat changes reverse when it stops.",
+  "ef": "rp29_hormones",
+  "pt": {
+   "hl": [
+    "Deeper voice"
+   ],
+   "say": "The changes row of the masculinizing column lists deeper voice first. Voice deepening persists after stopping, while menses and acne reverse."
+  }
+ },
+ {
+  "id": "rp29q02",
+  "d": 2,
+  "tags": [
+   "adverse-effects",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp29-04"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.4"
+  ],
+  "s": "A 33-year-old transgender man has received intramuscular testosterone cypionate every 2 weeks for 18 months. He reports new morning headaches. He does not smoke, takes no other medications, and has no lung disease or symptoms of sleep apnea. Blood pressure is 138/86 mm Hg, and his face is flushed. Hemoglobin is 18.6 g/dL and hematocrit 56%, compared with 40% before therapy. Leukocyte and platelet counts are normal, and the spleen is not palpable.",
+  "l": "Which mechanism best explains his laboratory findings?",
+  "o": [
+   "Acquired JAK2 mutation in marrow stem cells",
+   "Contraction of plasma volume",
+   "Increased renal erythropoietin secretion",
+   "Chronic hypoxemia from lung disease",
+   "Ectopic erythropoietin from a renal tumor"
+  ],
+  "a": 2,
+  "e": "Testosterone stimulates the kidney to release more erythropoietin, so red cell mass and hematocrit rise with the dose. That is why the **hematocrit** is the key test on testosterone, and a value above about 54% calls for a lower dose. His white cell and platelet counts and spleen are normal, which argues against polycythemia vera, and in that disease erythropoietin would be low. Chronic hypoxemia is unlikely without lung disease. An erythropoietin-secreting renal tumor is far less likely than the testosterone he injects.",
+  "w": {
+   "Acquired JAK2 mutation in marrow stem cells": "Polycythemia vera makes red cell production independent of erythropoietin, so the hormone level is low, and it usually raises leukocytes and platelets and enlarges the spleen. His counts and spleen are normal.",
+   "Contraction of plasma volume": "Dehydration or diuretics raise the hematocrit by shrinking plasma while red cell mass stays normal. He takes no diuretics, and a steady rise from 40% to 56% over months reflects true erythrocytosis.",
+   "Chronic hypoxemia from lung disease": "Low arterial oxygen drives erythropoietin release appropriately, as in COPD, high altitude or sleep apnea, but he does not smoke and has no lung disease or apnea symptoms.",
+   "Ectopic erythropoietin from a renal tumor": "Renal cell carcinoma can secrete erythropoietin, but nothing here suggests a tumor, such as hematuria, flank pain or a mass, and his testosterone explains the rise far better."
+  },
+  "et": [
+   [
+    "Option",
+    "Erythropoietin",
+    "Leukocytes and platelets",
+    "Fit with this patient"
+   ],
+   [
+    [
+     "Increased renal erythropoietin secretion",
+     "Normal or raised",
+     "Normal",
+     "Fits: testosterone injections"
+    ],
+    [
+     "Acquired JAK2 mutation in marrow stem cells",
+     "Low",
+     "Often raised; large spleen",
+     "Normal counts, no splenomegaly"
+    ],
+    [
+     "Contraction of plasma volume",
+     "Normal",
+     "Normal",
+     "No diuretics or dehydration"
+    ],
+    [
+     "Chronic hypoxemia from lung disease",
+     "Raised",
+     "Normal",
+     "No smoking, lung disease or apnea"
+    ],
+    [
+     "Ectopic erythropoietin from a renal tumor",
+     "Raised",
+     "Normal",
+     "No hematuria, pain or mass"
+    ]
+   ]
+  ],
+  "bl": "Testosterone causes erythrocytosis by increasing renal erythropoietin secretion. Check the hematocrit and lower the dose above about 54%.",
+  "ef": "rp29_hormones",
+  "pt": {
+   "hl": [
+    "Erythrocytosis",
+    "Hematocrit"
+   ],
+   "say": "The masculinizing column lists erythrocytosis as the key risk and hematocrit as the test to monitor, because testosterone increases renal erythropoietin secretion."
+  }
+ },
+ {
+  "id": "rp29q03",
+  "d": 2,
+  "tags": [
+   "adverse-effects",
+   "drug-mechanism",
+   "electrolyte-acid-base"
+  ],
+  "bp": [
+   "BP-rp29-03"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.4"
+  ],
+  "s": "A 38-year-old transgender woman has taken oral estradiol and spironolactone 100 mg twice daily for 5 months. She also takes lisinopril for hypertension. She reports fatigue and muscle weakness for 1 week. Blood pressure is 118/74 mm Hg. Serum potassium is 6.1 mEq/L, sodium 136 mEq/L and creatinine 1.0 mg/dL. An ECG shows peaked T waves.",
+  "l": "Which drug action most directly explains her electrolyte abnormality?",
+  "o": [
+   "Blockade of androgen receptors in hair follicles",
+   "Suppression of pituitary LH release",
+   "Blockade of mineralocorticoid receptors in the collecting duct",
+   "Inhibition of 5-alpha-reductase in the prostate",
+   "Increased hepatic synthesis of clotting factors"
+  ],
+  "a": 2,
+  "e": "Spironolactone blocks the androgen receptor, which is the feminizing effect, and it also blocks the mineralocorticoid (aldosterone) receptor in the principal cells of the **collecting duct**. Without aldosterone's effect, less potassium is secreted into the urine and the serum potassium rises. Lisinopril lowers aldosterone as well and adds to the effect, which is why potassium is monitored on this regimen. Blockade of androgen receptors in hair follicles is intended and leaves potassium alone, estradiol's suppression of LH lowers testosterone, and increased clotting factor synthesis explains the clot risk of oral estrogen.",
+  "w": {
+   "Blockade of androgen receptors in hair follicles": "This is the feminizing purpose of spironolactone, reducing body hair and skin oiliness, but androgen receptors play no part in renal potassium handling, so it cannot cause hyperkalemia.",
+   "Suppression of pituitary LH release": "Estradiol lowers LH and therefore testicular testosterone production, which is how feminizing therapy reduces androgens. This effect on the gonadal axis does not change potassium secretion.",
+   "Inhibition of 5-alpha-reductase in the prostate": "Finasteride blocks conversion of testosterone to dihydrotestosterone and is sometimes added for scalp hair, but she does not take it, and it does not alter potassium.",
+   "Increased hepatic synthesis of clotting factors": "Oral estrogen passing through the liver raises clotting factors and explains the venous thromboembolism risk of feminizing therapy, not a rise in serum potassium."
+  },
+  "et": [
+   [
+    "Option",
+    "Drug",
+    "Effect on potassium",
+    "Clinical result"
+   ],
+   [
+    [
+     "Blockade of mineralocorticoid receptors in the collecting duct",
+     "Spironolactone",
+     "Raises it",
+     "Hyperkalemia, peaked T waves"
+    ],
+    [
+     "Blockade of androgen receptors in hair follicles",
+     "Spironolactone",
+     "None",
+     "Less body hair, softer skin"
+    ],
+    [
+     "Suppression of pituitary LH release",
+     "Estradiol",
+     "None",
+     "Lower testosterone, smaller testes"
+    ],
+    [
+     "Inhibition of 5-alpha-reductase in the prostate",
+     "Finasteride",
+     "None",
+     "Less DHT; not in her regimen"
+    ],
+    [
+     "Increased hepatic synthesis of clotting factors",
+     "Oral estradiol",
+     "None",
+     "Venous thromboembolism"
+    ]
+   ]
+  ],
+  "bl": "Spironolactone causes hyperkalemia by blockade of mineralocorticoid receptors in the collecting duct, so potassium is monitored, especially with an ACE inhibitor.",
+  "ef": "rp29_hormones",
+  "pt": {
+   "hl": [
+    "hyperkalemia",
+    "Potassium"
+   ],
+   "say": "The feminizing column pairs spironolactone with hyperkalemia and potassium monitoring, because blockade of mineralocorticoid receptors in the collecting duct cuts potassium secretion."
+  }
+ },
+ {
+  "id": "rp29q04",
+  "d": 2,
+  "tags": [
+   "adverse-effects",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp29-03"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.4"
+  ],
+  "s": "A 49-year-old transgender woman has taken oral estradiol 4 mg daily and spironolactone for 12 years. She smokes 10 cigarettes daily and has a body mass index of 31 kg/m2. She has never had a blood clot. She wishes to continue feminizing therapy and has enrolled in a smoking cessation program. Blood pressure is 134/82 mm Hg. Serum estradiol and testosterone concentrations are within her target ranges.",
+  "l": "Which change in her regimen would most reduce her risk of venous thromboembolism?",
+  "o": [
+   "Switch to oral ethinyl estradiol",
+   "Switch to transdermal estradiol",
+   "Replace spironolactone with a GnRH agonist",
+   "Add low-dose aspirin",
+   "Increase the oral estradiol dose"
+  ],
+  "a": 1,
+  "e": "Oral estrogen is absorbed into the portal circulation and reaches the liver first, where it raises clotting factor production, so the clot risk is highest with oral estrogen and smoking. **Transdermal estradiol** enters the bloodstream directly, avoids this first-pass effect and carries the least clot risk, which matters most for an older patient who smokes and has obesity. Ethinyl estradiol carries the most risk and is avoided. A higher oral dose only increases liver exposure. A GnRH agonist replaces the antiandrogen, not the estrogen, and aspirin does not remove the liver effect.",
+  "w": {
+   "Switch to oral ethinyl estradiol": "Ethinyl estradiol, the estrogen in many contraceptive pills, strongly raises clotting factors, so it carries the highest VTE risk and is not used for feminizing therapy.",
+   "Replace spironolactone with a GnRH agonist": "A GnRH agonist is an alternative to spironolactone for lowering testosterone, but the clot risk comes from the oral estrogen, so changing the antiandrogen does not lower it.",
+   "Add low-dose aspirin": "Aspirin does not remove the effect of oral estrogen on liver clotting factors. Changing the route of estrogen is what lowers the risk.",
+   "Increase the oral estradiol dose": "Clotting risk rises with oral estrogen exposure, so a higher dose increases hepatic production of clotting factors. Her levels are already in range, so a dose increase offers no benefit."
+  },
+  "et": [
+   [
+    "Option",
+    "Route",
+    "First-pass liver effect",
+    "VTE risk"
+   ],
+   [
+    [
+     "Switch to transdermal estradiol",
+     "Skin",
+     "Avoided",
+     "Lowest"
+    ],
+    [
+     "Switch to oral ethinyl estradiol",
+     "Oral",
+     "Strong; resists breakdown",
+     "Highest"
+    ],
+    [
+     "Replace spironolactone with a GnRH agonist",
+     "Antiandrogen change only",
+     "Estrogen effect unchanged",
+     "Unchanged"
+    ],
+    [
+     "Add low-dose aspirin",
+     "Oral, added drug",
+     "Estrogen effect unchanged",
+     "Not removed"
+    ],
+    [
+     "Increase the oral estradiol dose",
+     "Oral",
+     "Greater",
+     "Rises with dose"
+    ]
+   ]
+  ],
+  "bl": "Transdermal estradiol avoids first-pass hepatic metabolism and carries the lowest VTE risk. Ethinyl estradiol is the most thrombogenic and is avoided.",
+  "ef": "rp29_hormones",
+  "pt": {
+   "hl": [
+    "VTE, highest with oral",
+    "Estradiol + spironolactone"
+   ],
+   "say": "The feminizing column lists VTE, highest with oral estrogen, so switching to transdermal estradiol, which skips first-pass liver metabolism, lowers clotting risk."
+  }
+ },
+ {
+  "id": "rp29q05",
+  "d": 3,
+  "tags": [
+   "pulsatile-signaling",
+   "feedback-logic",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp29-05"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.4"
+  ],
+  "s": "A 12-year-old transgender boy (assigned female at birth) has had persistent, well-documented gender dysphoria since early childhood, and it has intensified since breast budding began 6 months ago. Examination shows Tanner stage 2 breast development. After evaluation, with his parents' consent and his own assent, he receives a depot injection of leuprolide. Serum LH and estradiol measured 4 days after the first dose are higher than at baseline.",
+  "l": "Which pattern of serum findings is most likely after 3 months of continued therapy?",
+  "o": [
+   "High LH, high FSH, high estradiol",
+   "Low LH, low FSH, low estradiol",
+   "High LH, high FSH, low estradiol",
+   "Low LH, low FSH, high estradiol",
+   "High LH, normal FSH, normal estradiol"
+  ],
+  "a": 1,
+  "e": "Leuprolide is a GnRH agonist. Given continuously instead of in natural pulses, it first stimulates gonadotrophs, which explains the **flare** of LH and estradiol at day 4. Within weeks, constant receptor occupation desensitizes and downregulates pituitary GnRH receptors, so LH and FSH fall and the ovaries stop making estradiol: low LH, low FSH, low estradiol, a prepubertal pattern. The pause is reversible, because pulsatile signaling returns when the drug stops. High LH, high FSH, high estradiol describes only the first days of the flare. High gonadotropins with low estradiol mean primary ovarian insufficiency, in which an intact pituitary responds to absent feedback, and low gonadotropins with high estradiol point to an estrogen source outside the axis.",
+  "w": {
+   "High LH, high FSH, high estradiol": "This is the flare seen in the first days, when the agonist still stimulates gonadotrophs. It does not persist, because continuous occupation downregulates the receptors within weeks.",
+   "High LH, high FSH, low estradiol": "Raised gonadotropins with low estradiol mean the ovaries are failing while the pituitary answers the lost feedback, as in Turner syndrome or primary ovarian insufficiency, not pituitary suppression.",
+   "Low LH, low FSH, high estradiol": "Suppressed gonadotropins with a high estradiol mean an estrogen source outside the axis, such as a granulosa cell tumor or exogenous estrogen, which a GnRH agonist does not create.",
+   "High LH, normal FSH, normal estradiol": "An LH-predominant pattern with normal estradiol and androgen excess suggests polycystic ovary syndrome. A GnRH agonist lowers both gonadotropins rather than raising LH alone."
+  },
+  "et": [
+   [
+    "Option",
+    "LH and FSH",
+    "Estradiol",
+    "When it occurs"
+   ],
+   [
+    [
+     "Low LH, low FSH, low estradiol",
+     "Suppressed",
+     "Low",
+     "Weeks of continuous agonist"
+    ],
+    [
+     "High LH, high FSH, high estradiol",
+     "Raised",
+     "Raised",
+     "First days of the flare"
+    ],
+    [
+     "High LH, high FSH, low estradiol",
+     "Raised",
+     "Low",
+     "Primary ovarian insufficiency"
+    ],
+    [
+     "Low LH, low FSH, high estradiol",
+     "Suppressed",
+     "High",
+     "Estrogen-secreting tumor or exogenous estrogen"
+    ],
+    [
+     "High LH, normal FSH, normal estradiol",
+     "LH raised, FSH normal",
+     "Normal",
+     "Polycystic ovary syndrome"
+    ]
+   ]
+  ],
+  "bl": "A continuous GnRH agonist flares briefly, then downregulates pituitary receptors, giving low LH, low FSH and low estradiol until it is stopped.",
+  "ef": "rp29_hormones",
+  "pt": {
+   "hl": [
+    "so LH and FSH fall",
+    "downregulates receptors"
+   ],
+   "say": "The puberty blocker column shows a constant GnRH signal that downregulates receptors, so LH and FSH fall and estradiol drops to prepubertal levels."
+  }
+ },
+ {
+  "id": "rp29q06",
+  "d": 3,
+  "tags": [
+   "hormone-actions",
+   "teratogen-timing"
+  ],
+  "bp": [
+   "BP-rp29-12",
+   "BP-rp29-04"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.3"
+  ],
+  "s": "A 26-year-old transgender man has used testosterone gel for 2 years, and his menstrual bleeding stopped within the first few months. He has not had chest or genital surgery. His partner is a cisgender man, and they have penile-vaginal intercourse without condoms. He asks whether he needs contraception. He does not want any method that contains estrogen and would rather not take a pill every day. A urine pregnancy test is negative.",
+  "l": "Which is the most appropriate recommendation?",
+  "o": [
+   "Combined estrogen-progestin pill",
+   "Reliance on testosterone-induced amenorrhea",
+   "Levonorgestrel intrauterine device",
+   "Increase in the testosterone dose",
+   "Progestin-only daily pill"
+  ],
+  "a": 2,
+  "e": "Testosterone is **not contraception**. It stops menses but does not reliably stop ovulation, so amenorrhea is not proof of infertility, and a transgender man with a uterus and ovaries whose partner makes sperm can conceive. A pregnancy on testosterone would be harmful, because the hormone can virilize a female fetus. A **levonorgestrel intrauterine device** gives highly effective contraception without estrogen or a daily pill. A combined estrogen-progestin pill contains the estrogen he wants to avoid, and a progestin-only pill must be taken every day. Relying on amenorrhea is the classic error, and a higher testosterone dose does not guarantee that ovulation stops.",
+  "w": {
+   "Combined estrogen-progestin pill": "A combined pill would prevent ovulation if taken daily, but it contains the estrogen he declines and requires the daily dosing he wants to avoid, so it fits his goals poorly.",
+   "Reliance on testosterone-induced amenorrhea": "Absent bleeding does not mean that ovulation has stopped, so pregnancies happen on testosterone and expose the fetus to androgen.",
+   "Increase in the testosterone dose": "A higher dose does not reliably stop ovulation and raises the hematocrit further, so testosterone is never used as a contraceptive.",
+   "Progestin-only daily pill": "A progestin-only pill has no estrogen, but it must be taken every day, which he wants to avoid. The intrauterine device meets both of his wishes."
+  },
+  "et": [
+   [
+    "Option",
+    "Contains estrogen",
+    "Reliability for him",
+    "Main drawback"
+   ],
+   [
+    [
+     "Levonorgestrel intrauterine device",
+     "No",
+     "Highly effective for years",
+     "Insertion discomfort"
+    ],
+    [
+     "Combined estrogen-progestin pill",
+     "Yes",
+     "Effective only if taken daily",
+     "Estrogen and daily dosing he declines"
+    ],
+    [
+     "Reliance on testosterone-induced amenorrhea",
+     "No",
+     "Unreliable",
+     "Ovulation can continue"
+    ],
+    [
+     "Increase in the testosterone dose",
+     "No",
+     "Unreliable",
+     "Raises hematocrit; ovulation still possible"
+    ],
+    [
+     "Progestin-only daily pill",
+     "No",
+     "Effective only if taken daily",
+     "Daily dosing he wants to avoid"
+    ]
+   ]
+  ],
+  "bl": "Testosterone is not contraception. A transgender man with a uterus and ovaries who wants no estrogen should be offered a levonorgestrel intrauterine device."
+ },
+ {
+  "id": "rp29q07",
+  "d": 1,
+  "tags": [
+   "consent-ethics"
+  ],
+  "bp": [
+   "BP-rp29-07"
+  ],
+  "obj": [
+   "PATHPHARM-MENSES-CONTRA.4"
+  ],
+  "s": "A 15-year-old girl comes alone to an adolescent clinic because of vaginal discharge and burning with urination for 4 days. She has one sexual partner, a 16-year-old boy, and describes the relationship as consensual. She asks that her parents not be told about the visit. A nucleic acid amplification test of a vaginal swab is positive for Chlamydia trachomatis.",
+  "l": "Which is the most appropriate next step in management?",
+  "o": [
+   "Obtain a parent's consent before treatment",
+   "Treat her without notifying her parents",
+   "Notify her parents after treatment",
+   "Refer the case to the hospital ethics committee",
+   "Report the relationship to child protective services"
+  ],
+  "a": 1,
+  "e": "Every state allows minors to consent to testing and treatment for sexually transmitted infections, because adolescents who fear disclosure avoid care and keep spreading infection. Most states extend the same right to contraception and prenatal care. So the right step is to treat her without notifying her parents and to explain confidentiality and its limits. Requiring a parent's consent would deter her from care, and telling her parents afterward breaks the **confidentiality** the law protects. Abuse or a serious risk of harm would change that, and nothing here suggests either, so a child-protection report and an ethics committee are not needed.",
+  "w": {
+   "Obtain a parent's consent before treatment": "Parental consent is the default for most care of minors, but STI care is a statutory exception in every state. Requiring it here would delay treatment and drive her away from care.",
+   "Notify her parents after treatment": "Disclosure after the fact still breaches the confidentiality she was promised and the law protects. Confidentiality is broken only for abuse or a serious risk of harm.",
+   "Refer the case to the hospital ethics committee": "An ethics consultation helps when values conflict and the answer is unclear, but minor-consent law already settles this case, and waiting would only delay her treatment.",
+   "Report the relationship to child protective services": "Reports are required for suspected abuse or exploitation, but a consensual relationship between near-age peers does not by itself trigger a report, and an unneeded report would breach her trust."
+  },
+  "et": [
+   [
+    "Option",
+    "Required here",
+    "Confidentiality",
+    "Effect on her care"
+   ],
+   [
+    [
+     "Treat her without notifying her parents",
+     "Permitted in every state",
+     "Kept",
+     "Treated now; likely to return"
+    ],
+    [
+     "Obtain a parent's consent before treatment",
+     "Not required for STI care",
+     "Broken",
+     "Treatment delayed or avoided"
+    ],
+    [
+     "Notify her parents after treatment",
+     "Not required",
+     "Broken",
+     "Trust lost; follow-up less likely"
+    ],
+    [
+     "Refer the case to the hospital ethics committee",
+     "Not needed; law is clear",
+     "Kept",
+     "Treatment delayed"
+    ],
+    [
+     "Report the relationship to child protective services",
+     "Only for abuse or exploitation",
+     "Broken",
+     "Unwarranted report"
+    ]
+   ]
+  ],
+  "bl": "Minors can consent to STI testing and treatment in every state, so treat her without notifying her parents and keep the visit confidential."
+ },
+ {
+  "id": "rp29q08",
+  "d": 2,
+  "tags": [
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp29-02"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.6"
+  ],
+  "s": "A 32-year-old transgender man comes for a health maintenance visit. He has taken testosterone for 7 years and had chest masculinization surgery 3 years ago. He has not had a hysterectomy. His only sexual partner for 5 years has been a woman. His last cervical cytology, 6 years ago, was normal. A later sample was reported as unsatisfactory because of atrophic cells. He has no abnormal bleeding or pelvic pain.",
+  "l": "Which is the most appropriate screening recommendation?",
+  "o": [
+   "No cervical screening while he takes testosterone",
+   "Annual pelvic ultrasound of the endometrium",
+   "Primary high-risk HPV testing",
+   "Annual serum CA-125 measurement",
+   "Annual screening mammography"
+  ],
+  "a": 2,
+  "e": "Screening follows the **organ inventory**, not gender identity: he still has a cervix, so he needs cervical cancer screening on the same schedule as anyone with a cervix, regardless of hormone use or his partner's sex. Testosterone thins the cervical epithelium, so cytology is more often unsatisfactory. Primary high-risk HPV testing detects viral nucleic acid instead of judging cell appearance, and it can be self-collected, so it is the best choice. Skipping screening because he takes testosterone is the trap, because testosterone does not remove HPV risk. Pelvic ultrasound of the endometrium is for unexpected bleeding on testosterone, CA-125 is not a screening test, and mammography depends on how much breast tissue remains after surgery.",
+  "w": {
+   "No cervical screening while he takes testosterone": "Testosterone causes atrophy but does not protect against persistent high-risk HPV, which can come from any past or present partner. Omitting screening is a common and dangerous gap in care.",
+   "Annual pelvic ultrasound of the endometrium": "The endometrium is normally atrophic on testosterone, so imaging is reserved for unexpected bleeding. He has none, and ultrasound is not a screening tool for endometrial cancer.",
+   "Annual serum CA-125 measurement": "CA-125 rises with many benign conditions and misses early ovarian cancer, so it is not recommended for average-risk screening. It is used to follow known ovarian cancer.",
+   "Annual screening mammography": "Breast screening follows the breast tissue present, and after chest masculinization only a little remains. It does not replace screening of the cervix he still has."
+  },
+  "et": [
+   [
+    "Option",
+    "Organ screened",
+    "Indicated for him",
+    "Reason"
+   ],
+   [
+    [
+     "Primary high-risk HPV testing",
+     "Cervix",
+     "Yes",
+     "Cervix present; avoids atrophic cytology"
+    ],
+    [
+     "No cervical screening while he takes testosterone",
+     "None",
+     "No",
+     "HPV risk persists on testosterone"
+    ],
+    [
+     "Annual pelvic ultrasound of the endometrium",
+     "Endometrium",
+     "No",
+     "Only for bleeding on testosterone"
+    ],
+    [
+     "Annual serum CA-125 measurement",
+     "Ovary",
+     "No",
+     "Not a screening test"
+    ],
+    [
+     "Annual screening mammography",
+     "Breast",
+     "No",
+     "Age 32; chest surgery done"
+    ]
+   ]
+  ],
+  "bl": "Screen by organ inventory: a transgender man with a cervix needs cervical screening, and primary HPV testing avoids atrophic cytology."
+ },
+ {
+  "id": "rp29q09",
+  "d": 2,
+  "tags": [
+   "consent-ethics"
+  ],
+  "bp": [
+   "BP-rp29-08"
+  ],
+  "obj": [
+   "LIFESPAN-CASES.1",
+   "LIFESPAN-CASES.4"
+  ],
+  "s": "A 24-year-old Black woman, gravida 2, para 2, is on the postpartum unit 1 day after an uncomplicated vaginal delivery. A resident has raised contraception at every visit and now urges her to have an intrauterine device placed before discharge. She declines, saying she will decide later with her own physician, and adds that her grandmother was sterilized without her knowledge after a delivery. She is alert, accurately describes the methods offered, and explains her reasons clearly.",
+  "l": "Which is the most appropriate response by the resident?",
+  "o": [
+   "Explain again why an IUD is in her best interest",
+   "Ask her partner to help her reconsider",
+   "Accept her decision and offer follow-up options",
+   "Refer the case to the hospital ethics committee",
+   "Delay discharge until she chooses a method"
+  ],
+  "a": 2,
+  "e": "She has decision-making capacity: she understands the methods, applies them to her own situation, reasons and states a clear choice. Valid consent also requires that the choice be **voluntary**. Repeated urging toward a long-acting method is pressure, and it weighs heavily given the history of coerced sterilization of Black, Latina, Native American and disabled women, which her family lived through. The resident should accept her decision and offer follow-up options, such as discussing methods at her postpartum visit, and acknowledge her concern. Explaining again why an IUD is in her best interest repeats the pressure. Asking her partner to help her reconsider moves the decision away from her. A capable patient's refusal needs no ethics committee, and delaying discharge would be coercion.",
+  "w": {
+   "Explain again why an IUD is in her best interest": "She already understands the options. Repeating the case for one method after a clear refusal is paternalism that undermines voluntariness and confirms the mistrust her family history taught her.",
+   "Ask her partner to help her reconsider": "Contraception is her decision alone. Recruiting a partner to change her mind adds outside pressure and discloses her health information without her permission.",
+   "Refer the case to the hospital ethics committee": "Ethics consultation is for genuine conflicts or doubt about capacity. A capable adult declining an optional procedure raises neither, and referral implies her refusal needs review.",
+   "Delay discharge until she chooses a method": "Holding a medically ready patient until she accepts contraception is coercion, the very abuse that shaped her family's mistrust, and it would invalidate any consent she then gave."
+  },
+  "et": [
+   [
+    "Option",
+    "Respects autonomy",
+    "Voluntariness",
+    "Effect on trust"
+   ],
+   [
+    [
+     "Accept her decision and offer follow-up options",
+     "Yes",
+     "Preserved",
+     "Builds trust"
+    ],
+    [
+     "Explain again why an IUD is in her best interest",
+     "No; paternalistic",
+     "Undermined by pressure",
+     "Deepens mistrust"
+    ],
+    [
+     "Ask her partner to help her reconsider",
+     "No",
+     "Undermined by a third party",
+     "Breaches confidentiality"
+    ],
+    [
+     "Refer the case to the hospital ethics committee",
+     "Delays her choice",
+     "Preserved but questioned",
+     "Implies refusal is suspect"
+    ],
+    [
+     "Delay discharge until she chooses a method",
+     "No",
+     "Coerced",
+     "Severe harm to trust"
+    ]
+   ]
+  ],
+  "bl": "A capable patient may decline contraception. Accept her decision and offer follow-up options, because pressure undermines voluntary consent and deepens historical mistrust."
+ },
+ {
+  "id": "rp29q10",
+  "d": 3,
+  "tags": [
+   "consent-ethics"
+  ],
+  "bp": [
+   "BP-rp29-08"
+  ],
+  "obj": [
+   "BICEP-BROWN.8"
+  ],
+  "s": "A 41-year-old woman with heavy menstrual bleeding from uterine leiomyomas is scheduled for abdominal hysterectomy. She has bipolar disorder that has been stable on lithium for 8 years. The surgeon described the operation and its risks, including bleeding, infection and injury to the bladder or ureter, and its benefit of ending the bleeding. She accurately restates this information, says she has finished childbearing, and explains that the bleeding keeps her from working. Her husband supports the plan but did not attend the visit. No one has mentioned that a levonorgestrel intrauterine device, medical therapy or uterine artery embolization might also control her bleeding.",
+  "l": "Which element of valid informed consent is missing?",
+  "o": [
+   "Decision-making capacity",
+   "Voluntariness of the decision",
+   "Disclosure of the procedure's risks",
+   "Disclosure of reasonable alternatives",
+   "Agreement of her spouse"
+  ],
+  "a": 3,
+  "e": "Valid informed consent needs capacity, disclosure and voluntariness. Disclosure covers the nature of the procedure, its risks and benefits, and the **reasonable alternatives**, including no treatment. The surgeon never mentioned an IUD, medical therapy or embolization, so disclosure of reasonable alternatives is missing and consent is not yet valid. Decision-making capacity is present: a stable psychiatric diagnosis does not remove capacity, and she understands, appreciates, reasons and communicates a choice about this decision. Voluntariness is intact because no one is pressuring her. Disclosure of the procedure's risks occurred. Agreement of her spouse is not an element of consent, because a capable adult decides about her own body.",
+  "w": {
+   "Decision-making capacity": "Capacity is judged for each decision, not from a diagnosis. Her bipolar disorder is stable, and she restates the facts and gives coherent reasons, so capacity is present.",
+   "Voluntariness of the decision": "Voluntariness fails when family, clinicians or institutions pressure a choice. Her husband supports the plan without pushing it, and nothing suggests coercion.",
+   "Disclosure of the procedure's risks": "The surgeon described bleeding, infection and bladder or ureteral injury, and she repeated them back, so this part of disclosure was completed.",
+   "Agreement of her spouse": "No spouse or family member must agree to a capable adult's surgery. Her husband's support is welcome but is not a condition of valid consent."
+  },
+  "et": [
+   [
+    "Option",
+    "Element of consent",
+    "Present here",
+    "Evidence in the stem"
+   ],
+   [
+    [
+     "Disclosure of reasonable alternatives",
+     "Yes",
+     "No",
+     "IUD, drugs and embolization never offered"
+    ],
+    [
+     "Decision-making capacity",
+     "Yes",
+     "Yes",
+     "Restates facts and gives reasons"
+    ],
+    [
+     "Voluntariness of the decision",
+     "Yes",
+     "Yes",
+     "No one pressures her"
+    ],
+    [
+     "Disclosure of the procedure's risks",
+     "Yes",
+     "Yes",
+     "Bleeding, infection, organ injury explained"
+    ],
+    [
+     "Agreement of her spouse",
+     "No",
+     "Not needed",
+     "A capable adult decides alone"
+    ]
+   ]
+  ],
+  "bl": "Informed consent requires capacity, voluntariness and disclosure of risks, benefits and reasonable alternatives, including no treatment."
+ },
+ {
+  "id": "rp29q11",
+  "d": 1,
+  "tags": [
+   "screening-prevention",
+   "consent-ethics"
+  ],
+  "bp": [
+   "BP-rp29-07"
+  ],
+  "obj": [
+   "TRANSGENDER-LEC.6",
+   "BICEP-BROWN.9"
+  ],
+  "s": "Alex, a 23-year-old who uses they/them pronouns and was assigned male at birth, comes to a primary care clinic for a first visit and asks to be tested for sexually transmitted infections. They take no medications. The physician explains that she asks every patient about sexual health, asks permission to continue, and Alex agrees.",
+  "l": "Which question best guides the choice of sites to test?",
+  "o": [
+   "Are you gay, straight or bisexual?",
+   "Do you have a boyfriend or a girlfriend?",
+   "What body parts do you and your partners use during sex?",
+   "Have you had surgery to change your sex?",
+   "When did you first realize you were non-binary?"
+  ],
+  "a": 2,
+  "e": "Testing for sexually transmitted infections follows **behavior and anatomy**, not identity. Asking what body parts Alex and their partners use during sex shows which sites are exposed, such as the throat, rectum or genitals. It also shows whether a pregnancy is possible, so it covers the partners, practices and pregnancy parts of the CDC's 5 Ps. Asking whether someone is gay, straight or bisexual names an orientation and does not say what body parts are involved. Asking about a boyfriend or a girlfriend assumes binary partners. Surgical history belongs to the organ inventory and needs respectful wording, and asking when they realized they were non-binary satisfies curiosity without guiding care.",
+  "w": {
+   "Are you gay, straight or bisexual?": "Orientation labels do not predict behavior. People with the same label have very different practices, so this question cannot tell the clinician whether to swab the throat or rectum.",
+   "Do you have a boyfriend or a girlfriend?": "This assumes a single partner and a binary gender for that partner, and it says nothing about anatomy or practices, so it closes the conversation instead of opening it.",
+   "Have you had surgery to change your sex?": "Surgical history matters for the organ inventory, but this outdated wording is off-putting, and surgery status alone does not reveal which body sites are exposed during sex.",
+   "When did you first realize you were non-binary?": "The timing of an identity has no bearing on infection risk. Personal questions that do not guide care feel intrusive and erode the trust a sexual history depends on."
+  },
+  "et": [
+   [
+    "Option",
+    "What it reveals",
+    "Guides test sites",
+    "Wording"
+   ],
+   [
+    [
+     "What body parts do you and your partners use during sex?",
+     "Anatomy and practices",
+     "Yes",
+     "Neutral and behavior-based"
+    ],
+    [
+     "Are you gay, straight or bisexual?",
+     "Orientation label",
+     "No",
+     "Identity, not behavior"
+    ],
+    [
+     "Do you have a boyfriend or a girlfriend?",
+     "Assumed partner gender",
+     "No",
+     "Assumes binary partners"
+    ],
+    [
+     "Have you had surgery to change your sex?",
+     "Surgical history",
+     "Partly",
+     "Outdated phrasing"
+    ],
+    [
+     "When did you first realize you were non-binary?",
+     "Personal history",
+     "No",
+     "Curiosity, not care"
+    ]
+   ]
+  ],
+  "bl": "Base the sexual history on behavior and anatomy: ask what body parts the patient and partners use during sex, not identity labels."
+ }
+]

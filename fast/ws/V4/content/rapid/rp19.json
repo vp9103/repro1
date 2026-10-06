@@ -1,0 +1,551 @@
+[
+ {
+  "id": "rp19r01",
+  "tags": [
+   "cell-of-origin",
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp19-01"
+  ],
+  "obj": [
+   "HP-MALE.2",
+   "PATHPHARM-MALE.1"
+  ],
+  "q": "Which testicular cells contain Reinke crystals?",
+  "o": [
+   "Leydig cells",
+   "Sertoli cells",
+   "Spermatogonia",
+   "Peritubular myoid cells",
+   "Primary spermatocytes"
+  ],
+  "a": 0,
+  "x": "Leydig cells are interstitial cells rich in smooth endoplasmic reticulum for steroid synthesis. Rod-shaped Reinke crystals can be found in their cytoplasm, a feature that also marks Leydig cell tumors.",
+  "w": {
+   "Sertoli cells": "Sertoli cells sit inside the tubule and answer FSH. They make inhibin B and androgen-binding protein, not steroid hormones.",
+   "Spermatogonia": "Spermatogonia are germ stem cells on the basement membrane that divide by mitosis. They make no steroids and have no crystalloid inclusions.",
+   "Peritubular myoid cells": "Myoid cells are smooth-muscle-like cells around the tubule that contract to move sperm toward the rete testis. They do not make steroids.",
+   "Primary spermatocytes": "Primary spermatocytes are the largest germ cells, with coarse chromatin from a long prophase of meiosis I. They hold no crystalloids."
+  },
+  "media": "fig:rp19_tubule",
+  "pt": {
+   "hl": [
+    "Reinke crystals",
+    "Leydig cells"
+   ],
+   "say": "The interstitium panel lists Reinke crystals beside the Leydig cells, which carry LH receptors and make testosterone, so the crystals belong to Leydig cells."
+  }
+ },
+ {
+  "id": "rp19r02",
+  "tags": [
+   "histology-to-diagnosis",
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp19-01",
+   "BP-rp19-02"
+  ],
+  "obj": [
+   "HP-MALE.1",
+   "HP-MALE.3"
+  ],
+  "q": "In which compartment of the seminiferous tubule do spermatogonia sit?",
+  "o": [
+   "Adluminal compartment, inside the barrier",
+   "Interstitium beside the capillaries",
+   "Lumen of the tubule",
+   "Basal compartment, outside the barrier",
+   "Rete testis"
+  ],
+  "a": 3,
+  "x": "Spermatogonia rest on the basement membrane below the Sertoli tight junctions, so they lie in the basal compartment, outside the blood-testis barrier. Committed daughter cells cross the junctions to reach the adluminal compartment for meiosis.",
+  "w": {
+   "Adluminal compartment, inside the barrier": "The adluminal compartment lies above the junctions and holds spermatocytes and spermatids, the cells whose antigens the barrier hides from the immune system.",
+   "Interstitium beside the capillaries": "The interstitium lies outside the tubule altogether. It holds Leydig cells, capillaries and connective tissue, not germ cells.",
+   "Lumen of the tubule": "The lumen is where finished but immotile sperm are released and carried toward the rete testis, not where stem cells live.",
+   "Rete testis": "The rete testis is the network of channels that collects sperm from the tubules before the efferent ductules. It holds no stem cells."
+  },
+  "media": "fig:rp19_tubule",
+  "pt": {
+   "hl": [
+    "Basal compartment",
+    "Spermatogonia"
+   ],
+   "say": "The basal compartment label sits beside the spermatogonia on the basement membrane, outside the barrier, while the adluminal compartment above holds the meiotic cells."
+  }
+ },
+ {
+  "id": "rp19r03",
+  "tags": [
+   "binding-proteins",
+   "hormone-source"
+  ],
+  "bp": [
+   "BP-rp19-01",
+   "BP-rp19-05"
+  ],
+  "obj": [
+   "HP-MALE.2",
+   "PATHPHARM-MALE.4"
+  ],
+  "q": "Which Sertoli cell product keeps testosterone concentrated inside the seminiferous tubule?",
+  "o": [
+   "Inhibin B",
+   "Androgen-binding protein",
+   "Anti-Müllerian hormone",
+   "Sex hormone-binding globulin",
+   "Estradiol"
+  ],
+  "a": 1,
+  "x": "Androgen-binding protein is secreted by Sertoli cells under FSH. It holds testosterone inside the tubule at 50 to 100 times the serum level, the high local concentration that spermatogenesis requires.",
+  "w": {
+   "Inhibin B": "Inhibin B travels to the pituitary and suppresses FSH. It signals the state of the tubules and does not bind testosterone locally.",
+   "Anti-Müllerian hormone": "Anti-Müllerian hormone is made in the fetus and causes the Müllerian ducts to regress. It does not hold testosterone in the tubule.",
+   "Sex hormone-binding globulin": "Sex hormone-binding globulin is made by the liver and carries testosterone in the blood. It is the circulating counterpart, not the Sertoli product inside the tubule.",
+   "Estradiol": "Estradiol is a steroid made by aromatase, mostly in fat, and it feeds back on the pituitary. It does not bind and hold testosterone."
+  },
+  "media": "fig:rp19_axis",
+  "pt": {
+   "hl": [
+    "ABP keeps testosterone 50 to 100 times serum",
+    "ABP and inhibin B"
+   ],
+   "say": "The inside-the-tubule note says ABP keeps testosterone 50 to 100 times serum, so androgen-binding protein is the Sertoli product that concentrates testosterone in the tubule."
+  }
+ },
+ {
+  "id": "rp19r04",
+  "tags": [
+   "histology-to-diagnosis",
+   "meiosis-karyotype"
+  ],
+  "bp": [
+   "BP-rp19-02"
+  ],
+  "obj": [
+   "HP-MALE.3"
+  ],
+  "q": "Which step of spermatogenesis remodels spermatids into spermatozoa without cell division?",
+  "o": [
+   "Spermiation",
+   "Meiosis I",
+   "Meiosis II",
+   "Spermatocytogenesis",
+   "Spermiogenesis"
+  ],
+  "a": 4,
+  "x": "In spermiogenesis the Golgi apparatus builds the acrosome, a centriole grows the flagellum, mitochondria wrap the midpiece and Sertoli cells engulf the shed cytoplasm. The haploid spermatid does not divide at all.",
+  "w": {
+   "Spermiation": "Spermiation is the release of finished sperm into the lumen after remodeling is complete. It frees the cell and does not change its shape.",
+   "Meiosis I": "Meiosis I is a division in which primary spermatocytes separate homologous chromosomes, so it involves cell division.",
+   "Meiosis II": "Meiosis II divides each secondary spermatocyte into two spermatids within hours, so it includes division. The remodeling that follows does not.",
+   "Spermatocytogenesis": "Spermatocytogenesis is the mitotic phase in which spermatogonia divide and give rise to primary spermatocytes, so it relies on cell division."
+  },
+  "media": "fig:rp19_tubule",
+  "pt": {
+   "hl": [
+    "Spermatids: spermiogenesis"
+   ],
+   "say": "The adluminal compartment lists spermatids undergoing spermiogenesis, the remodeling stage that follows meiosis II and ends with spermatozoa released into the lumen."
+  }
+ },
+ {
+  "id": "rp19r05",
+  "tags": [
+   "histology-to-diagnosis",
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp19-02",
+   "BP-rp19-03"
+  ],
+  "obj": [
+   "HP-MALE.3"
+  ],
+  "q": "In what state are sperm when they are released into the tubule lumen?",
+  "o": [
+   "Motile but not yet capacitated",
+   "Fully capacitated",
+   "Immotile and unable to fertilize",
+   "Hyperactivated with the acrosome reacted",
+   "Motile and able to fertilize"
+  ],
+  "a": 2,
+  "x": "Sperm are released into the lumen immotile and unable to fertilize. The testis builds them, the epididymis gives them forward motility, and capacitation and the acrosome reaction happen only in the female tract.",
+  "w": {
+   "Motile but not yet capacitated": "That describes sperm after epididymal transit, which gives them forward motility. Sperm leaving the testis have not had this maturation.",
+   "Fully capacitated": "Capacitation happens in the female reproductive tract after ejaculation, so sperm leaving the testis are far from capacitated.",
+   "Hyperactivated with the acrosome reacted": "Hyperactivated motility and the acrosome reaction happen near the egg in the oviduct, long after sperm leave the testis.",
+   "Motile and able to fertilize": "Sperm leaving the testis need epididymal maturation and capacitation in the female tract before they can swim forward and fertilize an egg."
+  },
+  "media": "fig:rp19_tubule",
+  "pt": {
+   "hl": [
+    "Released but",
+    "still immotile"
+   ],
+   "say": "The lumen labels read released but still immotile, so spermatozoa leave the tubule unable to swim forward and gain motility later in the epididymis."
+  }
+ },
+ {
+  "id": "rp19r06",
+  "tags": [
+   "binding-proteins"
+  ],
+  "bp": [
+   "BP-rp19-10"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.4"
+  ],
+  "q": "Which binding protein rises with age and makes free testosterone fall faster than total testosterone?",
+  "o": [
+   "Albumin",
+   "Androgen-binding protein",
+   "SHBG",
+   "Transcortin",
+   "Thyroxine-binding globulin"
+  ],
+  "a": 2,
+  "x": "Liver production of sex hormone-binding globulin (SHBG) increases with age. It binds more testosterone tightly, so free and bioavailable testosterone fall faster than total testosterone.",
+  "w": {
+   "Albumin": "Albumin binds testosterone only loosely and counts toward bioavailable hormone. Its level changes little with normal aging.",
+   "Androgen-binding protein": "Androgen-binding protein is the Sertoli cell version that holds testosterone inside the tubule. The circulating binder that rises with age is made by the liver.",
+   "Transcortin": "Transcortin, or cortisol-binding globulin, carries cortisol and rises with estrogen. It binds testosterone poorly and is not the age-related binder.",
+   "Thyroxine-binding globulin": "Thyroxine-binding globulin carries thyroid hormone, not androgens, so it plays no part in the age-related fall of free testosterone."
+  },
+  "media": "fig:rp19_axis",
+  "pt": {
+   "hl": [
+    "SHBG rises, so free testosterone falls faster"
+   ],
+   "say": "The aging panel states that SHBG rises, so free testosterone falls faster than total testosterone does."
+  }
+ },
+ {
+  "id": "rp19r07",
+  "tags": [
+   "hormone-synthesis",
+   "hormone-source"
+  ],
+  "bp": [
+   "BP-rp19-06"
+  ],
+  "obj": [
+   "BICEP-WALSH.20"
+  ],
+  "q": "Which enzyme in fat converts testosterone to estradiol?",
+  "o": [
+   "Aromatase",
+   "5-alpha-reductase",
+   "Desmolase",
+   "17-alpha-hydroxylase",
+   "Sulfatase"
+  ],
+  "a": 0,
+  "x": "Fat is the main site of aromatase in men, so obesity raises estradiol and lowers testosterone and LH. The estradiol it makes also closes the epiphyses and maintains bone density.",
+  "w": {
+   "5-alpha-reductase": "5-alpha-reductase converts testosterone to dihydrotestosterone in the prostate, skin and hair follicles, not to an estrogen.",
+   "Desmolase": "Desmolase, the side-chain cleavage enzyme, converts cholesterol to pregnenolone, the first step of steroid synthesis, long before testosterone exists.",
+   "17-alpha-hydroxylase": "17-alpha-hydroxylase acts early in the pathway, steering pregnenolone and progesterone toward androgen precursors and cortisol. It does not act on testosterone.",
+   "Sulfatase": "Steroid sulfatase removes sulfate groups, for example turning DHEA sulfate into DHEA. It does not make estradiol from testosterone."
+  },
+  "media": "fig:rp19_axis",
+  "pt": {
+   "hl": [
+    "Aromatase in fat",
+    "Rises with obesity"
+   ],
+   "say": "The estradiol branch shows aromatase in fat turning testosterone into estradiol, a conversion that rises with obesity and feeds back on LH."
+  }
+ },
+ {
+  "id": "rp19r08",
+  "tags": [
+   "binding-proteins",
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-rp19-05"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.4"
+  ],
+  "q": "How much higher is the testosterone concentration inside the seminiferous tubule than in serum?",
+  "o": [
+   "About the same",
+   "About 2 times",
+   "About 10 times",
+   "About 1000 times",
+   "About 50 to 100 times"
+  ],
+  "a": 4,
+  "x": "Androgen-binding protein keeps testosterone made by Leydig cells concentrated in the tubule at 50 to 100 times the serum level, and spermatogenesis needs this gradient. Injected testosterone suppresses LH, collapses the local level and stops sperm production.",
+  "w": {
+   "About the same": "If tubular and serum levels were equal, sperm production would not depend on local LH-driven testosterone. Yet injected testosterone, which raises blood levels, still causes azoospermia.",
+   "About 2 times": "A twofold gradient is far too small to explain why injected testosterone cannot replace the local level that Leydig cells and binding protein provide.",
+   "About 10 times": "Ten times still understates the gradient, which is closer to 50 to 100 times.",
+   "About 1000 times": "A thousandfold gradient overstates the difference. Testosterone in the tubule is about 50 to 100 times the level in blood."
+  },
+  "media": "fig:rp19_axis",
+  "pt": {
+   "hl": [
+    "ABP keeps testosterone 50 to 100 times serum",
+    "Inside the tubule"
+   ],
+   "say": "The inside-the-tubule note states that ABP keeps testosterone 50 to 100 times serum, a gradient that LH-driven local production maintains and exogenous testosterone destroys."
+  }
+ },
+ {
+  "id": "rp19r09",
+  "tags": [
+   "pulsatile-signaling",
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-rp19-05"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.4"
+  ],
+  "q": "Which pattern of GnRH secretion keeps LH and FSH release going?",
+  "o": [
+   "Continuous infusion",
+   "Pulses every 1 to 2 hours",
+   "One surge each day",
+   "Release only at night",
+   "Release only during puberty"
+  ],
+  "a": 1,
+  "x": "The pituitary needs GnRH in pulses every 1 to 2 hours. Continuous exposure, as from a long-acting agonist such as leuprolide, downregulates the receptors, shuts off LH and FSH and lowers testosterone.",
+  "w": {
+   "Continuous infusion": "Continuous GnRH desensitizes the pituitary and downregulates its receptors, which is why agonists such as leuprolide lower testosterone after an initial flare.",
+   "One surge each day": "Men do not rely on a single daily surge. The pituitary needs repeated pulses through the day.",
+   "Release only at night": "GnRH pulses continue around the clock in adult men. Release only at night would not sustain the steady gonadotropin output the testis needs.",
+   "Release only during puberty": "Adults still depend on GnRH pulses after puberty. If release stopped, as in hypogonadotropic hypogonadism, testosterone and sperm production would fall."
+  },
+  "media": "fig:rp19_axis",
+  "pt": {
+   "hl": [
+    "GnRH in pulses"
+   ],
+   "say": "The hypothalamus box labels GnRH in pulses, which release LH and FSH from the pituitary; pulsatile release, not continuous exposure, sustains the axis."
+  }
+ },
+ {
+  "id": "rp19r10",
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp19-07"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.5"
+  ],
+  "q": "Which nerves carry the sympathetic fibers that cause emission of semen?",
+  "o": [
+   "Pelvic splanchnic nerves",
+   "Pudendal nerve",
+   "Genitofemoral nerve",
+   "Hypogastric nerves",
+   "Ilioinguinal nerve"
+  ],
+  "a": 3,
+  "x": "Sympathetic fibers from T10 to L2 run in the hypogastric nerves. They contract the ductus deferens, seminal vesicles and prostate and close the bladder neck, moving semen into the urethra before pudendal-driven ejaculation expels it.",
+  "w": {
+   "Pelvic splanchnic nerves": "Pelvic splanchnic nerves carry parasympathetic fibers from S2 to S4 that cause erection by nitric oxide release, not the sympathetic squeeze of emission.",
+   "Pudendal nerve": "The pudendal nerve is somatic and drives the rhythmic bulbospongiosus contractions of ejaculation itself, the phase that follows emission.",
+   "Genitofemoral nerve": "The genitofemoral nerve supplies the cremaster muscle and the skin of the upper thigh. It plays no part in emission.",
+   "Ilioinguinal nerve": "The ilioinguinal nerve gives sensation to the front of the scrotum or labia and the upper inner thigh. It carries no autonomic fibers for emission."
+  },
+  "media": "fig:rp2_pudendal",
+  "pt": {
+   "hl": [
+    "Hypogastric nerves",
+    "Squeeze: emission"
+   ],
+   "say": "In the point, squeeze, shoot panel, the squeeze step is emission carried by sympathetic hypogastric nerves, which make the ductus, vesicles and prostate contract."
+  }
+ },
+ {
+  "id": "rp19r11",
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp19-07"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.5"
+  ],
+  "q": "Which nerve drives the rhythmic bulbospongiosus contractions of ejaculation?",
+  "o": [
+   "Hypogastric nerves",
+   "Pelvic splanchnic nerves",
+   "Genitofemoral nerve",
+   "Inferior rectal nerve",
+   "Pudendal nerve"
+  ],
+  "a": 4,
+  "x": "Somatic fibers of the pudendal nerve (S2 to S4) make the bulbospongiosus and ischiocavernosus contract rhythmically to expel semen. Sympathetic damage leaves orgasm with retrograde or absent ejaculate instead.",
+  "w": {
+   "Hypogastric nerves": "Hypogastric nerves are sympathetic and cause emission and bladder neck closure before ejaculation. They do not drive the rhythmic muscle expulsion itself.",
+   "Pelvic splanchnic nerves": "Pelvic splanchnic nerves give the parasympathetic input for erection through nitric oxide. They do not control skeletal muscle contraction.",
+   "Genitofemoral nerve": "The genitofemoral nerve supplies the cremaster muscle and upper thigh skin. It has no motor role in the muscles around the base of the penis.",
+   "Inferior rectal nerve": "The inferior rectal nerve is a branch of the pudendal nerve that supplies the external anal sphincter and perianal skin, not the penile muscles."
+  },
+  "media": "fig:rp2_pudendal",
+  "pt": {
+   "hl": [
+    "Shoot: ejaculation",
+    "Somatic: pudendal nerve"
+   ],
+   "say": "In the shoot step, ejaculation is somatic and carried by the pudendal nerve, which makes the bulbospongiosus contract to expel semen."
+  }
+ },
+ {
+  "id": "rp19r12",
+  "tags": [
+   "receptor-signaling",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp19-07"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.5"
+  ],
+  "q": "Which enzyme makes cGMP in cavernosal smooth muscle after nitric oxide arrives?",
+  "o": [
+   "Adenylate cyclase",
+   "Nitric oxide synthase",
+   "Guanylate cyclase",
+   "Phosphodiesterase type 5",
+   "Protein kinase G"
+  ],
+  "a": 2,
+  "x": "Nitric oxide activates soluble guanylate cyclase, which converts GTP to cGMP. cGMP activates protein kinase G, calcium falls, the smooth muscle relaxes and the sinusoids fill. PDE5 later breaks cGMP down.",
+  "w": {
+   "Adenylate cyclase": "Adenylate cyclase makes cAMP, a different messenger. It is not the nitric oxide pathway that sildenafil enhances.",
+   "Nitric oxide synthase": "Nitric oxide synthase makes nitric oxide in nerves and endothelium, upstream. cGMP is made afterward by the enzyme that nitric oxide activates.",
+   "Phosphodiesterase type 5": "Phosphodiesterase type 5 destroys cGMP and ends the erection. Sildenafil blocks it, so it lowers the messenger rather than making it.",
+   "Protein kinase G": "Protein kinase G is activated by cGMP and lowers calcium in the smooth muscle. It acts downstream of the messenger instead of making it."
+  },
+  "media": "fig:rp22_erection",
+  "pt": {
+   "hl": [
+    "Guanylate cyclase makes cGMP from GTP"
+   ],
+   "say": "The second step in the cascade reads guanylate cyclase makes cGMP from GTP, after nitric oxide is released and before protein kinase G lowers calcium."
+  }
+ },
+ {
+  "id": "rp19r13",
+  "tags": [
+   "anatomic-relations",
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp19-04"
+  ],
+  "obj": [
+   "HP-MALE.4",
+   "HP-MALE.5"
+  ],
+  "q": "Which gland's secretion supplies the fructose that sperm use for energy?",
+  "o": [
+   "Prostate",
+   "Seminal vesicles",
+   "Bulbourethral glands",
+   "Epididymis",
+   "Efferent ductules"
+  ],
+  "a": 1,
+  "x": "Seminal vesicles add an alkaline, fructose-rich fluid that makes up most of the semen volume. When obstruction or absent vasa remove it, the ejaculate becomes scant, acidic and fructose-negative.",
+  "w": {
+   "Prostate": "The prostate adds PSA, citrate and zinc, and PSA liquefies the coagulum. It supplies about a quarter of the volume but not the sperm fuel.",
+   "Bulbourethral glands": "The bulbourethral glands release a small amount of clear mucus before ejaculation to lubricate the urethra, and they add little volume.",
+   "Epididymis": "The epididymis absorbs fluid, matures sperm and stores them in its tail. It is a duct, not a gland that adds fructose to semen.",
+   "Efferent ductules": "The efferent ductules reabsorb most of the testicular fluid and so concentrate the sperm. They remove fluid rather than add fructose."
+  },
+  "media": "fig:rp22_semen",
+  "pt": {
+   "hl": [
+    "Seminal vesicle fluid is missing",
+    "Low volume, acidic pH, no fructose"
+   ],
+   "say": "The semen branch of the work-up reads low volume, acidic pH, no fructose, which means seminal vesicle fluid is missing, showing that the seminal vesicles supply the fructose."
+  }
+ },
+ {
+  "id": "rp19r14",
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp19-11"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.2",
+   "ANAT-PELVIS-LAB.13"
+  ],
+  "q": "Which zone of the prostate is felt on rectal examination and gives rise to most cancers?",
+  "o": [
+   "Peripheral zone",
+   "Transition zone",
+   "Central zone",
+   "Anterior fibromuscular stroma",
+   "Periurethral glands"
+  ],
+  "a": 0,
+  "x": "The peripheral zone lies posteriorly, where a finger in the rectum can feel it, and it gives rise to most prostate cancers. BPH arises in the transition zone around the urethra.",
+  "w": {
+   "Transition zone": "The transition zone surrounds the urethra and is where benign prostatic hyperplasia arises, causing early urinary obstruction. It is not the usual site of cancer or the zone felt on rectal exam.",
+   "Central zone": "The central zone surrounds the ejaculatory ducts and is rarely diseased. It lies deep in the gland, not against the rectum.",
+   "Anterior fibromuscular stroma": "The anterior fibromuscular stroma is muscle and fibrous tissue without glands, so adenocarcinoma does not arise there.",
+   "Periurethral glands": "Periurethral glands lie around the urethra and belong to the BPH region, not to the posterior zone felt through the rectum."
+  },
+  "media": "fig:rp21_zones",
+  "pt": {
+   "hl": [
+    "Peripheral zone",
+    "Posterior: a hard nodule is felt on rectal exam"
+   ],
+   "say": "The peripheral zone is posterior, so a hard nodule is felt on rectal exam, and it gives rise to most prostate cancers."
+  }
+ },
+ {
+  "id": "rp19r15",
+  "tags": [
+   "blood-supply",
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp19-08"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.2",
+   "BICEP-MISHIMOTO.1",
+   "ANAT-PELVIS-LAB.13"
+  ],
+  "q": "Which venous network cools arterial blood on its way to the testis by countercurrent exchange?",
+  "o": [
+   "Cremasteric veins",
+   "Dorsal vein of the penis",
+   "Prostatic venous plexus",
+   "Pampiniform plexus",
+   "Vertebral venous plexus"
+  ],
+  "a": 3,
+  "x": "The pampiniform plexus is a set of veins that wrap the testicular artery in the spermatic cord. Warm arterial blood gives up heat to cooler venous blood before it reaches the testis, keeping it 2 to 4 degrees Celsius below core temperature for spermatogenesis.",
+  "w": {
+   "Cremasteric veins": "The cremasteric veins drain the cremaster and cord coverings and do not wrap the testicular artery. The cremaster muscle adjusts the testis position instead.",
+   "Dorsal vein of the penis": "The deep dorsal vein of the penis drains the erectile tissue and has no relation to the testicular artery.",
+   "Prostatic venous plexus": "The prostatic venous plexus drains the prostate and connects to the vertebral veins. It has no role in cooling the testis.",
+   "Vertebral venous plexus": "The vertebral venous plexus connects with the pelvic veins and can carry prostate cancer cells to the spine. It is not part of the spermatic cord."
+  }
+ }
+]

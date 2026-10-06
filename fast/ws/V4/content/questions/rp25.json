@@ -1,0 +1,832 @@
+[
+ {
+  "id": "rp25q01",
+  "d": 1,
+  "tags": [
+   "cell-of-origin",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp25-07"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.1"
+  ],
+  "s": "A 27-year-old woman at 6 weeks' gestation asks how her body knows to keep the pregnancy going. Her serum beta-hCG is 12,000 mIU/mL, and transvaginal ultrasound shows an intrauterine gestational sac with a yolk sac.",
+  "l": "Which cells secrete the hormone that is keeping her corpus luteum active?",
+  "o": [
+   "Syncytiotrophoblast",
+   "Cytotrophoblast",
+   "Decidual stromal cells",
+   "Theca lutein cells",
+   "Pituitary gonadotrophs"
+  ],
+  "a": 0,
+  "e": "hCG is made by the **syncytiotrophoblast**, the outer multinucleated layer of the villi that invades the decidua after implantation. It binds the LH receptor on the corpus luteum and prevents luteolysis, so progesterone production continues until the placenta takes over at about 7 to 10 weeks. The cytotrophoblast is the dividing stem layer that fuses to form the syncytiotrophoblast, and it secretes little hCG itself. Pituitary gonadotrophs make LH, and the falling LH level is exactly why the corpus luteum needs rescue.",
+  "w": {
+   "Cytotrophoblast": "The cytotrophoblast is the inner, dividing stem layer of the villus. Its cells fuse into the syncytium, and the syncytium is the layer that actually secretes the hormone.",
+   "Decidual stromal cells": "Decidualized endometrial stroma is maternal tissue that makes prolactin and prostaglandins. It responds to progesterone rather than producing the signal that rescues the ovary.",
+   "Theca lutein cells": "Theca lutein cells sit inside the corpus luteum and carry LH receptors. They are the target of the rescue signal, not its source.",
+   "Pituitary gonadotrophs": "Gonadotrophs secrete LH, which luteal progesterone suppresses. That loss of LH support is why an embryo-derived signal is needed at all."
+  },
+  "et": [
+   [
+    "Option",
+    "Tissue of origin",
+    "Main secretory product",
+    "Role at 6 weeks"
+   ],
+   [
+    [
+     "Syncytiotrophoblast",
+     "Embryo, outer villous layer",
+     "hCG, hPL, later progesterone",
+     "Keeps the corpus luteum alive"
+    ],
+    [
+     "Cytotrophoblast",
+     "Embryo, inner villous layer",
+     "Little hormone; stem cells",
+     "Supplies new cells to the syncytium"
+    ],
+    [
+     "Decidual stromal cells",
+     "Mother, endometrium",
+     "Prolactin, prostaglandins",
+     "Forms the implantation bed"
+    ],
+    [
+     "Theca lutein cells",
+     "Mother, ovary",
+     "Progesterone and androgens",
+     "Respond to hCG"
+    ],
+    [
+     "Pituitary gonadotrophs",
+     "Mother, anterior pituitary",
+     "LH and FSH",
+     "Suppressed by progesterone"
+    ]
+   ]
+  ],
+  "bl": "hCG from the syncytiotrophoblast rescues the corpus luteum until the placenta takes over progesterone production at 7 to 10 weeks.",
+  "ef": "rp25_hormones",
+  "pt": {
+   "hl": [
+    "hCG from the syncytiotrophoblast"
+   ],
+   "say": "The top panel names the syncytiotrophoblast as the source of hCG, the hormone that keeps the corpus luteum making progesterone."
+  }
+ },
+ {
+  "id": "rp25q02",
+  "d": 2,
+  "tags": [
+   "hormone-timeline",
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp25-07"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.1"
+  ],
+  "s": "A 30-year-old woman at 7 weeks' gestation undergoes emergency laparoscopy for a bleeding cyst of the right ovary. The surgeon finds that the bleeding cyst is the corpus luteum and removes it with part of the ovary. An intrauterine pregnancy with cardiac activity was documented before surgery.",
+  "l": "Which hormone should be given to reduce her risk of losing the pregnancy?",
+  "o": [
+   "Progesterone",
+   "Estradiol",
+   "Human chorionic gonadotropin",
+   "Relaxin",
+   "Prolactin"
+  ],
+  "a": 0,
+  "e": "Before the luteal-placental shift at about 7 to 10 weeks, the corpus luteum is the main source of **progesterone**, which maintains the decidua and keeps the myometrium quiet. Removing it at 7 weeks withdraws that support, so progesterone is replaced until the placenta can make enough on its own. Giving human chorionic gonadotropin would be pointless because its only target, the corpus luteum, has been removed, and estradiol does not hold the decidua in place.",
+  "w": {
+   "Estradiol": "Estradiol supports uterine growth and blood flow, but decidual stability depends on progesterone. Estrogen alone cannot prevent the bleeding and loss that follow its withdrawal.",
+   "Human chorionic gonadotropin": "hCG works only by stimulating LH receptors on the corpus luteum, so with that structure excised there is nothing left for it to rescue.",
+   "Relaxin": "Relaxin from the corpus luteum loosens ligaments and softens connective tissue. Its loss does not threaten the pregnancy, so replacing it is unnecessary.",
+   "Prolactin": "Prolactin rises from the maternal pituitary and prepares the breast for lactation. It does not maintain the decidua in early pregnancy."
+  },
+  "et": [
+   [
+    "Option",
+    "Main source at 7 weeks",
+    "Key action in pregnancy",
+    "Depends on the corpus luteum"
+   ],
+   [
+    [
+     "Progesterone",
+     "Corpus luteum",
+     "Maintains decidua, quiets myometrium",
+     "Yes, until 7 to 10 weeks"
+    ],
+    [
+     "Estradiol",
+     "Corpus luteum and placenta",
+     "Uterine growth and blood flow",
+     "Partly"
+    ],
+    [
+     "Human chorionic gonadotropin",
+     "Syncytiotrophoblast",
+     "Stimulates the corpus luteum",
+     "No, it acts on it"
+    ],
+    [
+     "Relaxin",
+     "Corpus luteum",
+     "Loosens ligaments",
+     "Yes, but not essential"
+    ],
+    [
+     "Prolactin",
+     "Maternal pituitary",
+     "Prepares the breast",
+     "No"
+    ]
+   ]
+  ],
+  "bl": "Before 7 to 10 weeks the corpus luteum supplies progesterone. If it is removed, give progesterone until the placenta takes over.",
+  "ef": "rp25_hormones",
+  "pt": {
+   "hl": [
+    "Corpus luteum",
+    "Luteal-placental shift at 7 to 10 weeks"
+   ],
+   "say": "The progesterone lane shows the corpus luteum as the source until the 7 to 10 week shift, so progesterone must be replaced after its removal."
+  }
+ },
+ {
+  "id": "rp25q03",
+  "d": 3,
+  "tags": [
+   "electrolyte-acid-base",
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp25-03"
+  ],
+  "obj": [
+   "MATERNAL-PHYS.2"
+  ],
+  "s": "A 29-year-old woman at 32 weeks' gestation reports mild shortness of breath when climbing stairs. She has no chest pain, cough or leg swelling. Pulse is 88/min, respiratory rate is 16/min, and oxygen saturation is 98% on room air. The lungs are clear. Arterial blood gas shows pH 7.45, PaCO2 30 mm Hg, PaO2 104 mm Hg and bicarbonate 20 mEq/L.",
+  "l": "Which mechanism best explains her blood gas?",
+  "o": [
+   "Progesterone sensitizing the respiratory center to carbon dioxide",
+   "Elevated diaphragm reducing functional residual capacity",
+   "Pulmonary embolism stimulating ventilation",
+   "Anemia stimulating peripheral chemoreceptors",
+   "Renal bicarbonate loss from a high filtration rate"
+  ],
+  "a": 0,
+  "e": "Her gas shows a compensated **respiratory alkalosis**, the normal pattern of pregnancy. **Progesterone** increases the medullary respiratory center's sensitivity to carbon dioxide, so tidal volume and minute ventilation rise while respiratory rate barely changes, driving PaCO2 down to about 30 mm Hg. The kidney then excretes bicarbonate to compensate. The elevated diaphragm lowers functional residual capacity but does not by itself cause hyperventilation, and a pulmonary embolism would lower PaO2 and usually raise the heart rate, whereas her oxygenation is excellent.",
+  "w": {
+   "Elevated diaphragm reducing functional residual capacity": "A smaller resting lung volume is real but structural. It changes how much air stays in the lungs, not the chemical drive to breathe, so it cannot lower PaCO2 to 30.",
+   "Pulmonary embolism stimulating ventilation": "Embolism causes hypoxemia, tachycardia and a widened alveolar-arterial gradient. Her PaO2 of 104 and normal heart rate make a clot an unlikely driver of this gas.",
+   "Anemia stimulating peripheral chemoreceptors": "Carotid bodies respond to a low PaO2, not to low oxygen content, so anemia does not increase ventilation while arterial oxygen tension stays normal.",
+   "Renal bicarbonate loss from a high filtration rate": "The low bicarbonate is the kidney's compensation for a primary fall in PaCO2. A primary metabolic acidosis would give an acidic pH, not 7.45."
+  },
+  "et": [
+   [
+    "Option",
+    "Primary change",
+    "Expected pH",
+    "Expected PaO2"
+   ],
+   [
+    [
+     "Progesterone sensitizing the respiratory center to carbon dioxide",
+     "Increased central drive",
+     "Alkalemic",
+     "Normal or high"
+    ],
+    [
+     "Elevated diaphragm reducing functional residual capacity",
+     "Smaller lung volumes",
+     "Normal",
+     "Normal"
+    ],
+    [
+     "Pulmonary embolism stimulating ventilation",
+     "Ventilation-perfusion mismatch",
+     "Alkalemic",
+     "Low"
+    ],
+    [
+     "Anemia stimulating peripheral chemoreceptors",
+     "Lower oxygen content",
+     "Normal",
+     "Normal, no drive change"
+    ],
+    [
+     "Renal bicarbonate loss from a high filtration rate",
+     "Primary metabolic acidosis",
+     "Acidemic",
+     "Normal"
+    ]
+   ]
+  ],
+  "bl": "Pregnancy causes a compensated respiratory alkalosis because progesterone raises the respiratory center's sensitivity to carbon dioxide."
+ },
+ {
+  "id": "rp25q04",
+  "d": 1,
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp25-03"
+  ],
+  "obj": [
+   "MATERNAL-PHYS.2"
+  ],
+  "s": "A 31-year-old woman at 34 weeks' gestation has pulmonary function testing as part of a research study. She is healthy and has no respiratory symptoms. Her results are compared with the values recorded before her pregnancy.",
+  "l": "Which measurement is most decreased compared with her prepregnancy value?",
+  "o": [
+   "Functional residual capacity",
+   "Tidal volume",
+   "Total lung capacity",
+   "Forced expiratory volume in 1 second",
+   "Minute ventilation"
+  ],
+  "a": 0,
+  "e": "The growing uterus pushes the diaphragm up about 4 cm, so **functional residual capacity** falls by about 20 percent. Total lung capacity stays nearly unchanged because the rib cage flares outward. Progesterone raises ventilatory drive, so tidal volume and minute ventilation both rise, while the respiratory rate barely changes. FEV1 is not affected, because the airways are normal in pregnancy.",
+  "w": {
+   "Tidal volume": "Tidal volume rises 30 to 40 percent because progesterone increases the respiratory drive. It is the main reason minute ventilation climbs in pregnancy.",
+   "Total lung capacity": "Total lung capacity is nearly unchanged: the diaphragm rises, but the rib cage flares outward and makes up for the lost height.",
+   "Minute ventilation": "Minute ventilation rises by about 30 to 40 percent, because tidal volume increases while the respiratory rate barely changes.",
+   "Forced expiratory volume in 1 second": "FEV1 does not change in pregnancy because the airways are not affected. A low value would point to lung disease such as asthma."
+  },
+  "et": [
+   [
+    "Option",
+    "Direction in pregnancy",
+    "Main cause"
+   ],
+   [
+    [
+     "Functional residual capacity",
+     "Down about 20 percent",
+     "Diaphragm elevated by the uterus"
+    ],
+    [
+     "Tidal volume",
+     "Up 30 to 40 percent",
+     "Progesterone-driven ventilation"
+    ],
+    [
+     "Total lung capacity",
+     "About unchanged",
+     "Wider chest offsets higher diaphragm"
+    ],
+    [
+     "Forced expiratory volume in 1 second",
+     "Unchanged",
+     "Airway caliber is not affected"
+    ],
+    [
+     "Minute ventilation",
+     "Up 30 to 40 percent",
+     "Larger tidal volume, rate barely changes"
+    ]
+   ]
+  ],
+  "bl": "Functional residual capacity falls about 20 percent in pregnancy because the uterus elevates the diaphragm. Total lung capacity barely changes."
+ },
+ {
+  "id": "rp25q05",
+  "d": 2,
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp25-02"
+  ],
+  "obj": [
+   "MATERNAL-PHYS.3"
+  ],
+  "s": "A 26-year-old woman at 28 weeks' gestation has routine laboratory studies. She feels well and takes a prenatal vitamin. Hemoglobin is 11.4 g/dL (12.9 g/dL before pregnancy), mean corpuscular volume is 88 fL and ferritin is normal. The peripheral smear shows normocytic, normochromic red cells.",
+  "l": "Which mechanism best explains the change in her hemoglobin?",
+  "o": [
+   "Plasma volume expanding more than red cell mass",
+   "Iron deficiency from fetal iron transfer",
+   "Folate deficiency impairing DNA synthesis",
+   "A fall in total red cell mass",
+   "Erythropoietin suppression by estrogen"
+  ],
+  "a": 0,
+  "e": "This is the physiologic **dilutional anemia** of pregnancy. Sodium and water retention expands **plasma volume** by 40 to 50 percent, but red cell mass rises only 20 to 30 percent. So the hemoglobin concentration falls, even though the number of red cells has increased. A normal MCV and ferritin argue against iron deficiency, and folate deficiency would give large red cells. Erythropoietin rises in pregnancy rather than being suppressed, and red cell mass does not fall.",
+  "w": {
+   "Iron deficiency from fetal iron transfer": "Iron deficiency is common in pregnancy but produces a low ferritin and, eventually, microcytic cells. Her normal ferritin and MCV point to dilution instead.",
+   "Folate deficiency impairing DNA synthesis": "Folate deficiency causes a macrocytic anemia with hypersegmented neutrophils. Her MCV of 88 and daily prenatal vitamin make it unlikely.",
+   "A fall in total red cell mass": "Red cell mass actually rises by 20 to 30 percent in pregnancy. The hemoglobin concentration falls because plasma expands even more.",
+   "Erythropoietin suppression by estrogen": "Erythropoietin rises during pregnancy, which is why red cell mass increases at all. The problem is that plasma expands even faster."
+  },
+  "et": [
+   [
+    "Option",
+    "MCV",
+    "Ferritin",
+    "Red cell mass"
+   ],
+   [
+    [
+     "Plasma volume expanding more than red cell mass",
+     "Normal",
+     "Normal",
+     "Rises 20 to 30 percent"
+    ],
+    [
+     "Iron deficiency from fetal iron transfer",
+     "Low when advanced",
+     "Low",
+     "Limited by low iron"
+    ],
+    [
+     "Folate deficiency impairing DNA synthesis",
+     "High",
+     "Normal",
+     "Limited by low folate"
+    ],
+    [
+     "A fall in total red cell mass",
+     "Normal",
+     "Normal",
+     "Falls"
+    ],
+    [
+     "Erythropoietin suppression by estrogen",
+     "Normal",
+     "Normal",
+     "Limited by low erythropoietin"
+    ]
+   ]
+  ],
+  "bl": "Hemoglobin falls in normal pregnancy because plasma volume expands more than red cell mass: a dilutional anemia.",
+  "ef": "rp25_circulation",
+  "pt": {
+   "hl": [
+    "plasma volume up 40 to 50%",
+    "Red cells up only 20 to 30%"
+   ],
+   "say": "Compare the plasma volume box, up 40 to 50 percent, with the red cell box, up only 20 to 30 percent: plasma expanding more than red cell mass dilutes hemoglobin."
+  }
+ },
+ {
+  "id": "rp25q06",
+  "d": 3,
+  "tags": [
+   "normal-vs-pathologic",
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp25-04",
+   "BP-rp25-09"
+  ],
+  "obj": [
+   "MATERNAL-PHYS.5"
+  ],
+  "s": "A 32-year-old woman with systemic lupus erythematosus is seen at 26 weeks' gestation. Her blood pressure is 118/74 mm Hg and she has no edema. Serum creatinine is 1.0 mg/dL, the same value measured one year before she conceived. Urinalysis shows no protein and no casts.",
+  "l": "Which is the best interpretation of her creatinine?",
+  "o": [
+   "It is higher than expected, suggesting reduced renal function",
+   "It is normal because it matches her prepregnancy value",
+   "It is falsely raised by the expanded plasma volume",
+   "It is expected because glomerular filtration falls in pregnancy",
+   "It is raised by increased muscle mass in late pregnancy"
+  ],
+  "a": 0,
+  "e": "Glomerular filtration rate rises by about 50 percent in normal pregnancy, so serum creatinine should fall below its prepregnancy level. An unchanged value of 1.0 mg/dL therefore means her filtration has not risen as it should. It is **higher than expected** and suggests reduced renal function, an important finding in a woman with lupus. Plasma expansion dilutes solutes rather than raising them, and the idea that filtration falls in pregnancy is exactly backward.",
+  "w": {
+   "It is normal because it matches her prepregnancy value": "Reference ranges shift in pregnancy. Because filtration should rise by half, a creatinine that fails to fall is abnormal even though it matches her old baseline.",
+   "It is falsely raised by the expanded plasma volume": "Serum creatinine is set by its production and its filtration, not by plasma volume, and dilution could only lower a concentration anyway. An expanded plasma volume cannot make her value falsely high.",
+   "It is expected because glomerular filtration falls in pregnancy": "Renal plasma flow and glomerular filtration both rise early in pregnancy. A fall would be pathologic, not a normal adaptation.",
+   "It is raised by increased muscle mass in late pregnancy": "Creatinine production tracks skeletal muscle mass, which does not increase meaningfully in pregnancy. Weight gain is mostly water, fat, uterus and fetus."
+  },
+  "et": [
+   [
+    "Option",
+    "Claim about filtration",
+    "Claim about creatinine",
+    "Physiologic basis"
+   ],
+   [
+    [
+     "It is higher than expected, suggesting reduced renal function",
+     "Should rise by 50 percent",
+     "Should fall below the prepregnancy value",
+     "GFR rises with renal plasma flow"
+    ],
+    [
+     "It is normal because it matches her prepregnancy value",
+     "Ignores the pregnancy rise",
+     "Uses the nonpregnant range",
+     "Wrong reference range"
+    ],
+    [
+     "It is falsely raised by the expanded plasma volume",
+     "Not addressed",
+     "Dilution would lower it",
+     "Dilution lowers concentrations"
+    ],
+    [
+     "It is expected because glomerular filtration falls in pregnancy",
+     "Claims a fall",
+     "Would rise",
+     "Filtration actually rises"
+    ],
+    [
+     "It is raised by increased muscle mass in late pregnancy",
+     "Not addressed",
+     "Claims more production",
+     "Muscle mass barely changes"
+    ]
+   ]
+  ],
+  "bl": "GFR rises 50 percent in pregnancy, so a creatinine of 1.0 mg/dL is higher than expected and suggests reduced renal function."
+ },
+ {
+  "id": "rp25q07",
+  "d": 2,
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp25-04"
+  ],
+  "obj": [
+   "MATERNAL-PHYS.5"
+  ],
+  "s": "A 24-year-old woman at 22 weeks' gestation has 1+ glucose on a routine urine dipstick. She has no polyuria or thirst. Fasting plasma glucose is 78 mg/dL, and a 1-hour glucose challenge result is normal. She has no history of kidney disease.",
+  "l": "Which mechanism best explains the urine finding?",
+  "o": [
+   "Filtered glucose exceeding proximal tubular reabsorption",
+   "Gestational diabetes with postprandial hyperglycemia",
+   "Proximal tubular injury with generalized aminoaciduria",
+   "Human placental lactogen blocking renal glucose transport",
+   "Increased hepatic gluconeogenesis at night"
+  ],
+  "a": 0,
+  "e": "Glomerular filtration rises about 50 percent in pregnancy, so the filtered load of glucose rises too, and it can exceed what the proximal tubule's sodium-glucose cotransporters reabsorb even at a normal plasma glucose. The result is **glucosuria** without hyperglycemia, a normal finding. Her normal fasting glucose and glucose challenge exclude gestational diabetes, and a proximal tubular injury such as Fanconi syndrome would also waste phosphate, bicarbonate and amino acids.",
+  "w": {
+   "Gestational diabetes with postprandial hyperglycemia": "Gestational diabetes would produce an abnormal glucose challenge. Her normal screen shows the kidney is spilling glucose at normal blood levels.",
+   "Proximal tubular injury with generalized aminoaciduria": "Fanconi syndrome damages proximal reabsorption broadly, adding phosphaturia, bicarbonate loss and aminoaciduria. Nothing suggests tubular damage in a healthy woman.",
+   "Human placental lactogen blocking renal glucose transport": "hPL antagonizes insulin in muscle and fat. It does not act on renal sodium-glucose cotransporters, so it raises blood glucose rather than urine glucose.",
+   "Increased hepatic gluconeogenesis at night": "Fasting in pregnancy lowers maternal glucose because the fetus draws on it continuously. Hepatic output cannot explain glucosuria with a fasting value of 78."
+  },
+  "et": [
+   [
+    "Option",
+    "Plasma glucose",
+    "Other urine findings",
+    "Mechanism"
+   ],
+   [
+    [
+     "Filtered glucose exceeding proximal tubular reabsorption",
+     "Normal",
+     "None",
+     "High GFR raises filtered load"
+    ],
+    [
+     "Gestational diabetes with postprandial hyperglycemia",
+     "High after meals",
+     "Glucose only",
+     "Placental insulin resistance"
+    ],
+    [
+     "Proximal tubular injury with generalized aminoaciduria",
+     "Normal",
+     "Phosphate, bicarbonate, amino acids",
+     "Damaged proximal transporters"
+    ],
+    [
+     "Human placental lactogen blocking renal glucose transport",
+     "Would be high",
+     "None",
+     "Not a real renal action"
+    ],
+    [
+     "Increased hepatic gluconeogenesis at night",
+     "Would be high",
+     "None",
+     "Not how fasting pregnancy behaves"
+    ]
+   ]
+  ],
+  "bl": "Glucosuria is normal in pregnancy when filtered glucose exceeds tubular reabsorption because GFR has risen about 50 percent."
+ },
+ {
+  "id": "rp25q08",
+  "d": 3,
+  "tags": [
+   "normal-vs-pathologic",
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp25-04"
+  ],
+  "obj": [
+   "MATERNAL-PHYS.5"
+  ],
+  "s": "A 23-year-old woman at 24 weeks' gestation has fever to 39.2 C, right flank pain and vomiting. Before pregnancy she had one uncomplicated bladder infection. Urinalysis shows pyuria and white cell casts. Renal ultrasound shows mild dilation of the right renal pelvis and ureter, less on the left, with no stone.",
+  "l": "Which physiologic change of pregnancy most directly increased her risk of this infection?",
+  "o": [
+   "Ureteral dilation with urinary stasis",
+   "Glucosuria providing a bacterial substrate",
+   "Suppressed maternal cell-mediated immunity",
+   "Reduced urine flow from aldosterone excess",
+   "Shortened urethra from pelvic floor relaxation"
+  ],
+  "a": 0,
+  "e": "Pregnancy predisposes to **pyelonephritis** mainly through ureteral dilation with urinary stasis. Progesterone relaxes ureteral smooth muscle, and the enlarging uterus compresses the ureters at the pelvic brim, more on the right. Stagnant urine lets asymptomatic bacteriuria ascend, which is why pregnant women are screened and treated for it. Glucosuria and altered immunity contribute little by comparison, and her ultrasound shows dilation, not a urethral problem.",
+  "w": {
+   "Glucosuria providing a bacterial substrate": "Pregnancy glucosuria is intermittent and modest. It may slightly favor bacterial growth, but the ascending infection depends on stagnant urine in dilated ureters.",
+   "Suppressed maternal cell-mediated immunity": "Immune shifts are not the main reason for an ascending gram-negative kidney infection in pregnancy, but the dilated ureters and stagnant urine are.",
+   "Reduced urine flow from aldosterone excess": "Aldosterone retains sodium, yet the higher filtration rate keeps urine output normal or increased. The problem is slow drainage, not low production.",
+   "Shortened urethra from pelvic floor relaxation": "Urethral length does not shorten in pregnancy. The female urethra is short to begin with, and her imaging localizes the abnormality to the upper tract."
+  },
+  "et": [
+   [
+    "Option",
+    "Occurs in pregnancy",
+    "Hormone or force behind it",
+    "Main consequence"
+   ],
+   [
+    [
+     "Ureteral dilation with urinary stasis",
+     "Yes, right more than left",
+     "Progesterone plus uterine compression",
+     "Bacteriuria ascends to the kidney"
+    ],
+    [
+     "Glucosuria providing a bacterial substrate",
+     "Yes, intermittently",
+     "Higher filtered glucose load",
+     "Minor effect on growth"
+    ],
+    [
+     "Suppressed maternal cell-mediated immunity",
+     "Yes, partly",
+     "Tolerance of the fetal allograft",
+     "Worse intracellular infections"
+    ],
+    [
+     "Reduced urine flow from aldosterone excess",
+     "No",
+     "Aldosterone offset by higher GFR",
+     "Urine output stays normal"
+    ],
+    [
+     "Shortened urethra from pelvic floor relaxation",
+     "No",
+     "None",
+     "Not a pregnancy change"
+    ]
+   ]
+  ],
+  "bl": "Progesterone and uterine compression cause ureteral dilation with urinary stasis, so bacteriuria ascends and pyelonephritis is more common in pregnancy."
+ },
+ {
+  "id": "rp25q09",
+  "d": 1,
+  "tags": [
+   "normal-vs-pathologic",
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp25-01"
+  ],
+  "obj": [
+   "MATERNAL-PHYS.1",
+   "PREG-REVIEW.1"
+  ],
+  "s": "A 28-year-old woman at 33 weeks' gestation becomes lightheaded, pale and nauseated 5 minutes after lying flat on her back for an ultrasound. Her blood pressure is 88/50 mm Hg and pulse is 112/min. She has no vaginal bleeding or abdominal pain.",
+  "l": "Which is the most appropriate next step?",
+  "o": [
+   "Turn her onto her left side",
+   "Give a 1-liter saline bolus",
+   "Start intravenous heparin",
+   "Give intravenous phenylephrine",
+   "Proceed to emergency cesarean delivery"
+  ],
+  "a": 0,
+  "e": "This is **supine hypotensive syndrome**. After about 20 weeks, the gravid uterus compresses the inferior vena cava when a woman lies supine, so venous return, preload and stroke volume fall and blood pressure drops. Turning her onto her left side moves the uterus off the cava and restores preload within minutes, so no drug or fluid is needed first. Heparin treats a clot, and nothing here points to deep vein thrombosis or pulmonary embolism. Delivery is not needed for a positional problem.",
+  "w": {
+   "Give a 1-liter saline bolus": "Her circulating volume is normal. Fluid would help slowly at best, while the obstruction to venous return persists until the uterus is moved off the cava.",
+   "Start intravenous heparin": "Heparin treats a clot. Her symptoms began when she lay flat and she has no leg swelling or chest pain, so a positional cause comes first.",
+   "Give intravenous phenylephrine": "A vasopressor raises pressure by tightening vessels, but the real problem is lost preload from the compressed vena cava, which positioning fixes without drugs.",
+   "Proceed to emergency cesarean delivery": "Delivery is reserved for maternal arrest or fetal compromise. This positional drop resolves once the caval compression is relieved."
+  },
+  "et": [
+   [
+    "Option",
+    "Effect on the vena cava",
+    "Time to work",
+    "Downside"
+   ],
+   [
+    [
+     "Turn her onto her left side",
+     "Uterus moves off it",
+     "Minutes",
+     "None"
+    ],
+    [
+     "Give a 1-liter saline bolus",
+     "Still compressed",
+     "Slow, partial",
+     "Fluid load"
+    ],
+    [
+     "Start intravenous heparin",
+     "Still compressed",
+     "No benefit",
+     "Bleeding risk"
+    ],
+    [
+     "Give intravenous phenylephrine",
+     "Still compressed",
+     "Minutes, partial",
+     "Can reduce uterine blood flow"
+    ],
+    [
+     "Proceed to emergency cesarean delivery",
+     "Removes the uterus's weight",
+     "Far too invasive",
+     "Surgical risk"
+    ]
+   ]
+  ],
+  "bl": "Supine hypotension after 20 weeks comes from caval compression. Turn her onto her left side to restore venous return.",
+  "ef": "rp25_circulation",
+  "pt": {
+   "hl": [
+    "inferior vena cava",
+    "her left side"
+   ],
+   "say": "The supine panel ends with the fix: turn her onto her left side, which lifts the uterus off the inferior vena cava and restores preload."
+  }
+ },
+ {
+  "id": "rp25q10",
+  "d": 3,
+  "tags": [
+   "receptor-crosstalk",
+   "binding-proteins"
+  ],
+  "bp": [
+   "BP-rp25-06"
+  ],
+  "obj": [
+   "PREG-REVIEW.6"
+  ],
+  "s": "A 29-year-old woman at 10 weeks' gestation with nausea but no weight loss has thyroid tests at her first prenatal visit. She has no tremor, goiter or eye findings. TSH is 0.2 mU/L (nonpregnant reference 0.4 to 4.0), free T4 is at the upper limit of normal, and total T4 is 1.5 times the nonpregnant upper limit. TSH-receptor antibodies are negative.",
+  "l": "Which mechanism best explains her low TSH?",
+  "o": [
+   "hCG stimulating the TSH receptor",
+   "TSH-receptor stimulating antibodies",
+   "Estrogen-induced rise in thyroxine-binding globulin",
+   "Lymphocytic destruction of thyroid follicles",
+   "Autonomous thyroid nodule secretion"
+  ],
+  "a": 0,
+  "e": "hCG and TSH share an identical alpha subunit, and hCG's beta subunit resembles TSH's closely enough that, at its peak near 10 weeks, hCG weakly stimulates the TSH receptor. The thyroid makes slightly more hormone and the pituitary lowers TSH, a normal first-trimester pattern. The rise in thyroxine-binding globulin explains her high total T4, but it would leave free T4 and TSH normal, so it cannot explain the suppressed TSH. Negative antibodies argue against Graves disease.",
+  "w": {
+   "TSH-receptor stimulating antibodies": "Graves antibodies would give a clearly high free T4, often a goiter or eye signs, and a positive antibody test. Hers is negative.",
+   "Estrogen-induced rise in thyroxine-binding globulin": "More binding globulin raises total T4, but the gland compensates until free T4 and TSH are normal again, so it cannot suppress TSH.",
+   "Lymphocytic destruction of thyroid follicles": "Painless thyroiditis releases stored hormone and typically appears postpartum. At 10 weeks, with hCG at its peak, a receptor effect is far more likely.",
+   "Autonomous thyroid nodule secretion": "A toxic nodule would be palpable or seen on imaging and would not track the hCG curve. She has no goiter or nodule."
+  },
+  "et": [
+   [
+    "Option",
+    "TSH",
+    "Free T4",
+    "Total T4",
+    "Other clue"
+   ],
+   [
+    [
+     "hCG stimulating the TSH receptor",
+     "Mildly low near 10 weeks",
+     "Upper normal or slightly high",
+     "High",
+     "Tracks the hCG peak"
+    ],
+    [
+     "TSH-receptor stimulating antibodies",
+     "Suppressed",
+     "High",
+     "High",
+     "Positive antibodies, goiter"
+    ],
+    [
+     "Estrogen-induced rise in thyroxine-binding globulin",
+     "Normal",
+     "Normal",
+     "High",
+     "Explains total T4 only"
+    ],
+    [
+     "Lymphocytic destruction of thyroid follicles",
+     "Suppressed",
+     "High, then low",
+     "High, then low",
+     "Usually postpartum"
+    ],
+    [
+     "Autonomous thyroid nodule secretion",
+     "Suppressed",
+     "High",
+     "High",
+     "Palpable nodule"
+    ]
+   ]
+  ],
+  "bl": "In the first trimester, peak hCG stimulating the TSH receptor lowers TSH slightly. Thyroxine-binding globulin raises total T4 only."
+ },
+ {
+  "id": "rp25q11",
+  "d": 2,
+  "tags": [
+   "fuel-metabolism",
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp25-06"
+  ],
+  "obj": [
+   "PREG-REVIEW.6"
+  ],
+  "s": "A 33-year-old woman has a normal fasting glucose at 12 weeks' gestation. At 26 weeks, a 1-hour glucose challenge is abnormal, and a 3-hour glucose tolerance test confirms gestational diabetes. Her physician explains that a hormone made by the syncytiotrophoblast, whose level climbs through the second and third trimesters, has been opposing her insulin.",
+  "l": "Which hormone is being described?",
+  "o": [
+   "Human placental lactogen",
+   "Human chorionic gonadotropin",
+   "Relaxin",
+   "Oxytocin",
+   "Inhibin A"
+  ],
+  "a": 0,
+  "e": "**Human placental lactogen** (hPL), also called chorionic somatomammotropin, is made by the syncytiotrophoblast in proportion to placental mass. It antagonizes insulin beyond the receptor and promotes lipolysis, so maternal tissues use fat while glucose crosses to the fetus. The resistance peaks in the third trimester, which is why screening is done at 24 to 28 weeks. Human chorionic gonadotropin peaks near 10 weeks and then falls, so it cannot explain resistance that appears late, and relaxin acts on connective tissue.",
+  "w": {
+   "Human chorionic gonadotropin": "hCG peaks near 10 weeks and then falls to a plateau, the opposite of the late rise in insulin resistance. Its job is rescuing the corpus luteum.",
+   "Relaxin": "Relaxin loosens the pubic symphysis and pelvic ligaments and contributes to vasodilation. It has no meaningful anti-insulin effect.",
+   "Oxytocin": "Oxytocin from the posterior pituitary drives uterine contraction and milk ejection. It is not a placental hormone and does not oppose insulin.",
+   "Inhibin A": "Inhibin A from the placenta suppresses FSH and is used in the quad screen for trisomy 21. It has no role in glucose metabolism."
+  },
+  "et": [
+   [
+    "Option",
+    "Source",
+    "Level through pregnancy",
+    "Main action"
+   ],
+   [
+    [
+     "Human placental lactogen",
+     "Syncytiotrophoblast",
+     "Rises with placental mass",
+     "Insulin resistance and lipolysis"
+    ],
+    [
+     "Human chorionic gonadotropin",
+     "Syncytiotrophoblast",
+     "Peaks near 10 weeks, then falls",
+     "Rescues the corpus luteum"
+    ],
+    [
+     "Relaxin",
+     "Corpus luteum and placenta",
+     "Highest in the first trimester",
+     "Loosens ligaments"
+    ],
+    [
+     "Oxytocin",
+     "Posterior pituitary",
+     "Surges in labor",
+     "Uterine contraction, milk ejection"
+    ],
+    [
+     "Inhibin A",
+     "Placenta",
+     "Rises late in pregnancy",
+     "Suppresses FSH; quad screen marker"
+    ]
+   ]
+  ],
+  "bl": "Human placental lactogen rises with placental mass and causes the insulin resistance that unmasks gestational diabetes at 24 to 28 weeks.",
+  "ef": "rp25_hormones",
+  "pt": {
+   "hl": [
+    "Drives insulin resistance",
+    "Rises with placental mass"
+   ],
+   "say": "The bottom panel shows placental lactogen, hPL, rising with placental mass and driving insulin resistance late in pregnancy."
+  }
+ }
+]

@@ -1,0 +1,410 @@
+[
+ {
+  "id": "rp25r01",
+  "tags": [
+   "cell-of-origin"
+  ],
+  "bp": [
+   "BP-rp25-07"
+  ],
+  "q": "Which placental layer secretes hCG?",
+  "o": [
+   "Syncytiotrophoblast",
+   "Cytotrophoblast",
+   "Decidua basalis",
+   "Amnion",
+   "Chorionic mesoderm"
+  ],
+  "a": 0,
+  "x": "The syncytiotrophoblast, the multinucleated outer layer of the villi, secretes hCG after implantation. hCG acts on LH receptors to keep the corpus luteum making progesterone.",
+  "w": {
+   "Cytotrophoblast": "The cytotrophoblast is the dividing inner stem layer. Its cells fuse to form the syncytium, which then does the secreting.",
+   "Decidua basalis": "The decidua basalis is maternal endometrium under the implantation site. It forms the maternal side of the placenta but makes no hCG.",
+   "Amnion": "The amnion is the thin membrane lining the fluid-filled sac around the embryo. It has no endocrine role in rescuing the corpus luteum.",
+   "Chorionic mesoderm": "Extraembryonic mesoderm forms the villous core and its fetal vessels. The hormone-secreting layer lies outside it, facing maternal blood."
+  },
+  "media": "fig:rp25_hormones",
+  "pt": {
+   "hl": [
+    "hCG from the syncytiotrophoblast"
+   ],
+   "say": "The top panel label names the syncytiotrophoblast as the layer that secretes hCG."
+  }
+ },
+ {
+  "id": "rp25r02",
+  "tags": [
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp25-07"
+  ],
+  "q": "At about what gestational age does serum hCG peak?",
+  "o": [
+   "About 10 weeks",
+   "About 4 weeks",
+   "About 20 weeks",
+   "About 28 weeks",
+   "At term"
+  ],
+  "a": 0,
+  "x": "hCG rises fast after implantation and peaks at about 10 weeks, then falls to a plateau as the placenta takes over progesterone production. Nausea of pregnancy tracks this curve.",
+  "w": {
+   "About 4 weeks": "At 4 weeks, just after a missed period, hCG has only begun its early rise, doubling roughly every 48 hours toward the peak.",
+   "About 20 weeks": "By 20 weeks hCG has already fallen to its low plateau. The placenta is then large enough that the corpus luteum is no longer needed.",
+   "About 28 weeks": "The third trimester is when hPL and insulin resistance are highest. hCG is low and flat at that point.",
+   "At term": "hCG stays at a low plateau until delivery. The hormones that climb toward term are hPL, estriol, progesterone and prolactin."
+  },
+  "media": "fig:rp25_hormones",
+  "pt": {
+   "hl": [
+    "Peak near 10 weeks"
+   ],
+   "say": "The hCG curve labels its peak near 10 weeks, after which it falls to a low plateau."
+  }
+ },
+ {
+  "id": "rp25r03",
+  "tags": [
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp25-07"
+  ],
+  "q": "How often does hCG roughly double in a normal early pregnancy?",
+  "o": [
+   "About every 48 hours",
+   "About every 6 hours",
+   "About every 7 days",
+   "About every 2 weeks",
+   "About every 4 weeks"
+  ],
+  "a": 0,
+  "x": "In early pregnancy hCG roughly doubles about every 48 hours as the trophoblast grows, so two samples 48 hours apart show whether the rise is normal.",
+  "w": {
+   "About every 6 hours": "Six-hour doubling would reach enormous levels within days. The real rate is slower, which is why two samples 48 hours apart are compared.",
+   "About every 7 days": "Weekly doubling is far too slow for the early rise in a normal pregnancy.",
+   "About every 2 weeks": "A two-week doubling time would barely register before the peak at 10 weeks. Normal trophoblast grows much faster than that.",
+   "About every 4 weeks": "Monthly doubling would leave hCG undetectable at a missed period. Home tests turn positive within days because the rise is steep."
+  },
+  "media": "fig:rp25_hormones",
+  "pt": {
+   "hl": [
+    "Doubles about every 48 hours"
+   ],
+   "say": "The rising limb of the hCG curve is labeled: it doubles about every 48 hours before the peak."
+  }
+ },
+ {
+  "id": "rp25r04",
+  "tags": [
+   "hormone-timeline",
+   "hormone-source"
+  ],
+  "bp": [
+   "BP-rp25-07"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.1"
+  ],
+  "q": "Which organ makes most of the progesterone after 10 weeks of pregnancy?",
+  "o": [
+   "Placenta",
+   "Corpus luteum",
+   "Fetal adrenal gland",
+   "Maternal adrenal cortex",
+   "Anterior pituitary"
+  ],
+  "a": 0,
+  "x": "After the luteal-placental shift at 7 to 10 weeks, the placenta makes enough progesterone from maternal cholesterol to maintain the pregnancy, so the corpus luteum is no longer required.",
+  "w": {
+   "Corpus luteum": "The corpus luteum dominates only until the 7 to 10 week shift. After that it regresses and removing it no longer ends the pregnancy.",
+   "Fetal adrenal gland": "The fetal adrenal makes DHEA-S, which the placenta converts to estriol. It is an estrogen precursor source, not a progesterone source.",
+   "Maternal adrenal cortex": "The maternal adrenal raises cortisol and aldosterone output in pregnancy, but its progesterone contribution is trivial next to the placenta's.",
+   "Anterior pituitary": "The anterior pituitary makes peptide hormones such as prolactin and LH. It cannot synthesize steroids like progesterone."
+  },
+  "media": "fig:rp25_hormones",
+  "pt": {
+   "hl": [
+    "Placenta makes the progesterone from about 10 weeks to term"
+   ],
+   "say": "The progesterone lane shows the placenta taking over from about 10 weeks to term, after the luteal-placental shift."
+  }
+ },
+ {
+  "id": "rp25r05",
+  "tags": [
+   "fuel-metabolism"
+  ],
+  "bp": [
+   "BP-rp25-06"
+  ],
+  "q": "Which placental hormone causes insulin resistance late in pregnancy?",
+  "o": [
+   "Human placental lactogen",
+   "Human chorionic gonadotropin",
+   "Relaxin",
+   "Inhibin A",
+   "Oxytocin"
+  ],
+  "a": 0,
+  "x": "Human placental lactogen rises with placental mass and opposes insulin beyond the receptor while promoting lipolysis, so maternal tissues burn fat and glucose is spared for the fetus.",
+  "w": {
+   "Human chorionic gonadotropin": "hCG peaks near 10 weeks and then falls, so it cannot explain insulin resistance that climbs through the third trimester.",
+   "Relaxin": "Relaxin softens the cervix, pubic symphysis and pelvic ligaments. It does not oppose insulin action in muscle or fat.",
+   "Inhibin A": "Inhibin A suppresses FSH and serves as a quad-screen marker for trisomy 21. It has no effect on glucose handling.",
+   "Oxytocin": "Oxytocin comes from the posterior pituitary, not the placenta, and drives contractions and milk ejection rather than insulin resistance."
+  },
+  "media": "fig:rp25_hormones",
+  "pt": {
+   "hl": [
+    "Drives insulin resistance"
+   ],
+   "say": "The bottom panel shows human placental lactogen rising with placental mass and driving insulin resistance."
+  }
+ },
+ {
+  "id": "rp25r06",
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp25-01"
+  ],
+  "obj": [
+   "MATERNAL-PHYS.1"
+  ],
+  "q": "What happens to systemic vascular resistance in normal pregnancy?",
+  "o": [
+   "It falls",
+   "It rises",
+   "It doubles",
+   "It rises only in labor",
+   "It stays constant"
+  ],
+  "a": 0,
+  "x": "Systemic vascular resistance falls early because progesterone, estrogen, relaxin and nitric oxide dilate arterioles and the placenta adds a low-resistance circuit. Blood pressure falls despite a higher cardiac output.",
+  "w": {
+   "It rises": "Rising resistance marks preeclampsia, where endothelial dysfunction and vasospasm raise blood pressure. Normal pregnancy is a vasodilated state.",
+   "It doubles": "A doubled resistance with a higher cardiac output would cause severe hypertension. Instead, pressure reaches its lowest point in the second trimester.",
+   "It rises only in labor": "Contractions transiently raise cardiac output and pressure, but the baseline resistance of pregnancy is low from the first trimester onward.",
+   "It stays constant": "Resistance changes more than any other hemodynamic variable in early pregnancy. It drops before cardiac output has risen much."
+  },
+  "media": "fig:rp25_circulation",
+  "pt": {
+   "hl": [
+    "Systemic vascular resistance falls"
+   ],
+   "say": "The middle box reads systemic vascular resistance falls, the step that lowers blood pressure while volume expands."
+  }
+ },
+ {
+  "id": "rp25r07",
+  "tags": [
+   "normal-vs-pathologic",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp25-01"
+  ],
+  "obj": [
+   "PREG-REVIEW.7"
+  ],
+  "q": "When does maternal blood pressure reach its lowest point in pregnancy?",
+  "o": [
+   "Second trimester",
+   "First trimester",
+   "Third trimester",
+   "During labor",
+   "First postpartum week"
+  ],
+  "a": 0,
+  "x": "Blood pressure falls from early pregnancy, reaches its nadir in the second trimester and returns toward baseline by term, following the fall in systemic vascular resistance.",
+  "w": {
+   "First trimester": "Pressure starts to fall in the first trimester as resistance drops, but it keeps falling into the next trimester before reaching its lowest point.",
+   "Third trimester": "By the third trimester pressure is climbing back toward its prepregnancy baseline. A new rise above 140/90 then suggests a hypertensive disorder.",
+   "During labor": "Pain and contractions raise pressure during labor, and each contraction pushes blood from the uterus into the circulation.",
+   "First postpartum week": "Pressure has already climbed back toward its prepregnancy value by term, so the lowest point comes earlier, in mid-pregnancy, not after delivery."
+  },
+  "media": "fig:rp25_circulation",
+  "pt": {
+   "hl": [
+    "nadir in second trimester"
+   ],
+   "say": "The blood pressure box notes the nadir in the second trimester, with a return to baseline by term."
+  }
+ },
+ {
+  "id": "rp25r08",
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp25-03"
+  ],
+  "obj": [
+   "MATERNAL-PHYS.2"
+  ],
+  "q": "Which pulmonary measure falls about 20 percent by late pregnancy?",
+  "o": [
+   "Functional residual capacity",
+   "Tidal volume",
+   "Total lung capacity",
+   "Forced vital capacity",
+   "Minute ventilation"
+  ],
+  "a": 0,
+  "x": "Functional residual capacity falls about 20 percent because the uterus pushes the diaphragm up about 4 cm. The rib cage flares outward, so total lung capacity stays nearly unchanged.",
+  "w": {
+   "Tidal volume": "Tidal volume rises 30 to 40 percent under progesterone's respiratory drive, the opposite direction from the resting lung volume.",
+   "Total lung capacity": "The rib cage flares outward and offsets the higher diaphragm, so total lung capacity changes very little.",
+   "Forced vital capacity": "Forced vital capacity stays essentially unchanged in pregnancy, so it is not the measure that falls by about 20 percent.",
+   "Minute ventilation": "Minute ventilation rises by about 30 to 40 percent, because tidal volume increases while the respiratory rate barely changes."
+  }
+ },
+ {
+  "id": "rp25r09",
+  "tags": [
+   "electrolyte-acid-base"
+  ],
+  "bp": [
+   "BP-rp25-03"
+  ],
+  "obj": [
+   "MATERNAL-PHYS.2"
+  ],
+  "q": "Which acid-base state is normal in the third trimester?",
+  "o": [
+   "Compensated respiratory alkalosis",
+   "Compensated respiratory acidosis",
+   "Metabolic acidosis with high anion gap",
+   "Metabolic alkalosis with high bicarbonate",
+   "Mixed respiratory and metabolic acidosis"
+  ],
+  "a": 0,
+  "x": "Progesterone raises the respiratory center's sensitivity to carbon dioxide, so PaCO2 falls to about 30 mm Hg and the kidney excretes bicarbonate: a compensated respiratory alkalosis.",
+  "w": {
+   "Compensated respiratory acidosis": "Respiratory acidosis needs carbon dioxide retention from hypoventilation, while pregnancy drives ventilation beyond what metabolism requires.",
+   "Metabolic acidosis with high anion gap": "A high gap signals added acid, such as ketones in diabetic ketoacidosis. The low bicarbonate of pregnancy is renal compensation.",
+   "Metabolic alkalosis with high bicarbonate": "Vomiting in hyperemesis gravidarum causes a hypokalemic metabolic alkalosis, but normal pregnancy lowers bicarbonate rather than raising it.",
+   "Mixed respiratory and metabolic acidosis": "A mixed acidosis follows cardiopulmonary arrest or severe sepsis. The normal pregnant pH is slightly alkaline, about 7.44."
+  }
+ },
+ {
+  "id": "rp25r10",
+  "tags": [
+   "normal-vs-pathologic",
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp25-04"
+  ],
+  "obj": [
+   "MATERNAL-PHYS.5"
+  ],
+  "q": "What happens to serum creatinine in a normal pregnancy?",
+  "o": [
+   "It falls",
+   "It rises",
+   "It stays constant",
+   "It rises only near term",
+   "It doubles"
+  ],
+  "a": 0,
+  "x": "Creatinine falls, because renal plasma flow and GFR rise about 50 percent. A creatinine of 1.0 mg/dL, normal outside pregnancy, suggests reduced renal function.",
+  "w": {
+   "It rises": "A rising creatinine in pregnancy signals kidney injury, as in preeclampsia, not a normal adaptation.",
+   "It stays constant": "Creatinine clearance increases by about half, so an unchanged creatinine means filtration has failed to rise as it should.",
+   "It rises only near term": "GFR begins to rise within weeks of conception and stays high. Late creatinine rises point to disease such as preeclampsia.",
+   "It doubles": "Doubling would mean losing half of kidney function. Pregnancy does the reverse, lowering creatinine by increasing filtration."
+  }
+ },
+ {
+  "id": "rp25r11",
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp25-01"
+  ],
+  "obj": [
+   "PREG-REVIEW.1"
+  ],
+  "q": "What causes hypotension when a woman past 20 weeks lies supine?",
+  "o": [
+   "Compression of the inferior vena cava",
+   "Compression of the abdominal aorta",
+   "Vagal reflex from uterine stretch",
+   "Blood loss into the placenta",
+   "Fall in plasma volume"
+  ],
+  "a": 0,
+  "x": "Supine, the gravid uterus compresses the inferior vena cava, so venous return, preload and stroke volume fall. Turning her onto her left side restores pressure within minutes.",
+  "w": {
+   "Compression of the abdominal aorta": "The aorta can be partly compressed, but that raises pressure above the obstruction. The fall in preload from caval compression is what drops pressure.",
+   "Vagal reflex from uterine stretch": "Some bradycardia can accompany the syndrome, but the primary event is mechanical obstruction of venous return, which positioning reverses.",
+   "Blood loss into the placenta": "The placenta does not sequester maternal blood. Hidden bleeding would come from abruption, with pain and a tense uterus.",
+   "Fall in plasma volume": "Plasma volume is expanded by 40 to 50 percent in late pregnancy. The problem is that the blood cannot return to the heart."
+  },
+  "media": "fig:rp25_circulation",
+  "pt": {
+   "hl": [
+    "inferior vena cava"
+   ],
+   "say": "The supine panel starts with the uterus compressing the inferior vena cava, which cuts venous return and preload."
+  }
+ },
+ {
+  "id": "rp25r12",
+  "tags": [
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp25-09"
+  ],
+  "q": "Which enzyme rises in pregnancy from placental production without liver disease?",
+  "o": [
+   "Alkaline phosphatase",
+   "Alanine aminotransferase",
+   "Gamma-glutamyl transferase",
+   "Aspartate aminotransferase",
+   "Lactate dehydrogenase"
+  ],
+  "a": 0,
+  "x": "The placenta makes a heat-stable alkaline phosphatase isoenzyme, so serum alkaline phosphatase can double or triple by term while transaminases, GGT and bilirubin stay normal.",
+  "w": {
+   "Alanine aminotransferase": "ALT stays normal in healthy pregnancy. A rise suggests liver disease such as HELLP syndrome, acute fatty liver or hepatitis.",
+   "Gamma-glutamyl transferase": "GGT is unchanged or slightly lower in pregnancy, which helps show that a high alkaline phosphatase is placental, not biliary.",
+   "Aspartate aminotransferase": "AST, like ALT, stays in the normal range in pregnancy. Elevation with low platelets and hemolysis suggests HELLP syndrome.",
+   "Lactate dehydrogenase": "LDH rises sharply with hemolysis or tissue injury, as in HELLP syndrome, rather than from placental production in a healthy pregnancy."
+  }
+ },
+ {
+  "id": "rp25r13",
+  "tags": [
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp25-05"
+  ],
+  "obj": [
+   "MATERNAL-PHYS.4"
+  ],
+  "q": "Which hormone loosens the pubic symphysis and pelvic ligaments in pregnancy?",
+  "o": [
+   "Relaxin",
+   "Oxytocin",
+   "Prolactin",
+   "Human placental lactogen",
+   "Estriol"
+  ],
+  "a": 0,
+  "x": "Relaxin from the corpus luteum and placenta remodels collagen in the pubic symphysis and pelvic ligaments, widening the joint and contributing to pelvic girdle pain and a waddling gait.",
+  "w": {
+   "Oxytocin": "Oxytocin contracts the myometrium and the myoepithelial cells of the breast. It does not remodel ligament collagen.",
+   "Prolactin": "Prolactin rises steadily to prepare the breast for lactation, but it has no effect on pelvic joints.",
+   "Human placental lactogen": "hPL shifts maternal fuel use toward fat and away from glucose. It causes insulin resistance, not ligament laxity.",
+   "Estriol": "Estriol is the main placental estrogen and raises liver proteins and uterine blood flow, but the ligament loosening is relaxin's effect."
+  }
+ }
+]

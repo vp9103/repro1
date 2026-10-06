@@ -1,0 +1,949 @@
+[
+ {
+  "id": "rp26q01",
+  "d": 1,
+  "tags": [
+   "meiosis-karyotype"
+  ],
+  "bp": [
+   "BP-rp26-06"
+  ],
+  "obj": [
+   "GTD.5"
+  ],
+  "s": "A 19-year-old woman at 12 weeks' gestation by her last menstrual period comes to the emergency department with vaginal bleeding and passage of grape-like vesicles. Her uterus reaches the umbilicus. Serum hCG is 310,000 mIU/mL, and ultrasound shows a heterogeneous, cystic intrauterine mass with no fetus. Suction curettage is performed.",
+  "l": "Which karyotype is most likely in the evacuated tissue?",
+  "o": [
+   "46,XX, all chromosomes paternal",
+   "69,XXY, one maternal and two paternal sets",
+   "46,XX, one maternal and one paternal set",
+   "47,XX,+16, maternal nondisjunction",
+   "45,X, paternal sex chromosome lost"
+  ],
+  "a": 0,
+  "e": "This is a **complete mole**: very high hCG, a uterus large for dates, vesicles and a cystic mass with no fetus. It forms when an egg that has lost its nucleus is fertilized by one sperm that duplicates its DNA, giving **46,XX** with every chromosome paternal. Less often two sperm give 46,XY. With no maternal genes there is no embryo, and paternal genes drive overgrowth of the trophoblast. A triploid 69,XXY karyotype belongs to the partial mole, which has fetal parts and lower hCG. Trisomy 16 is a common finding in an ordinary first-trimester miscarriage.",
+  "w": {
+   "69,XXY, one maternal and two paternal sets": "Triploidy from a normal egg fertilized by two sperm is the partial mole. Its maternal set allows fetal parts to form, which this scan did not show, and hCG is usually lower.",
+   "46,XX, one maternal and one paternal set": "A normal biparental karyotype fits a normal conceptus or an ordinary miscarriage. It cannot cause diffuse trophoblast overgrowth, because maternal imprinted genes restrain placental growth.",
+   "47,XX,+16, maternal nondisjunction": "Trisomy 16 is the most common trisomy in first-trimester miscarriages and comes from a maternal meiotic error. It gives an ordinary failed pregnancy, not a vesicular mass with extreme hCG.",
+   "45,X, paternal sex chromosome lost": "Monosomy X is the most common abnormal karyotype in early miscarriage and causes cystic hygroma. It does not cause molar change."
+  },
+  "et": [
+   [
+    "Option",
+    "Origin",
+    "Maternal genome",
+    "Fetal parts",
+    "hCG"
+   ],
+   [
+    [
+     "46,XX, all chromosomes paternal",
+     "Empty ovum plus one duplicated sperm",
+     "None",
+     "None",
+     "Very high"
+    ],
+    [
+     "69,XXY, one maternal and two paternal sets",
+     "Normal ovum plus two sperm",
+     "One set",
+     "Present, abnormal",
+     "Normal or mildly raised"
+    ],
+    [
+     "46,XX, one maternal and one paternal set",
+     "Normal fertilization",
+     "One set",
+     "Normal embryo",
+     "Normal for dates"
+    ],
+    [
+     "47,XX,+16, maternal nondisjunction",
+     "Maternal meiotic error",
+     "One set plus an extra 16",
+     "Embryo fails early",
+     "Low or falling"
+    ],
+    [
+     "45,X, paternal sex chromosome lost",
+     "Loss of a sex chromosome",
+     "One set",
+     "Fetus with cystic hygroma",
+     "Low or falling"
+    ]
+   ]
+  ],
+  "bl": "A complete mole is 46,XX with every chromosome paternal: no maternal genome, no fetus and very high hCG.",
+  "ef": "rp26_moles",
+  "pt": {
+   "hl": [
+    "46,XX",
+    "all paternal"
+   ],
+   "say": "The complete mole column shows an empty ovum plus one sperm that duplicates, giving 46,XX with every chromosome paternal and no fetal parts."
+  }
+ },
+ {
+  "id": "rp26q02",
+  "d": 3,
+  "tags": [
+   "meiosis-karyotype",
+   "imaging-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp26-07"
+  ],
+  "obj": [
+   "GTD.5"
+  ],
+  "s": "A 33-year-old woman, gravida 2, para 1, has vaginal spotting at 11 weeks' gestation. Serum hCG is 82,000 mIU/mL, within the range expected for her dates. Ultrasound shows a fetus with no cardiac activity, a crown-rump length lagging 3 weeks behind dates, and a thickened placenta containing scattered cystic spaces. After uterine evacuation, pathology shows patchy villous swelling, villous cells stain positive for p57, and flow cytometry shows a triploid DNA content.",
+  "l": "Which event most likely produced this pregnancy's genome?",
+  "o": [
+   "A normal ovum fertilized by two sperm",
+   "An empty ovum fertilized by one sperm that duplicated",
+   "A diploid ovum fertilized by one sperm",
+   "Maternal meiosis I nondisjunction of chromosome 21",
+   "Failure of the first cleavage division of the zygote"
+  ],
+  "a": 0,
+  "e": "Triploid tissue with a growth-restricted fetus, a thickened cystic placenta and positive p57 is a **partial mole**. It arises when a normal egg is fertilized by two sperm, giving 69,XXY or 69,XXX with one maternal and two paternal sets. The extra paternal genome drives trophoblast growth and swells some villi, while the maternal set lets fetal parts form and keeps p57 positive. A diploid egg fertilized by one sperm is also triploid, but the excess is maternal, so the placenta is small and not molar. An empty egg with a duplicated sperm makes a complete mole, which is p57-negative and has no fetus.",
+  "w": {
+   "An empty ovum fertilized by one sperm that duplicated": "That event makes a complete mole, which is diploid and entirely paternal. With no maternal genes it forms no fetus and is p57-negative, unlike this triploid, p57-positive tissue.",
+   "A diploid ovum fertilized by one sperm": "A diploid egg fertilized by one sperm gives triploidy with two maternal sets. Maternal excess causes a small, nonmolar placenta and a severely growth-restricted fetus, not cystic villi.",
+   "Maternal meiosis I nondisjunction of chromosome 21": "Trisomy 21 adds one chromosome to a diploid genome, so flow cytometry would not read triploid, and the placenta in Down syndrome does not develop cystic, swollen villi.",
+   "Failure of the first cleavage division of the zygote": "Failure of the first division doubles both parental sets into a tetraploid conceptus. The DNA content would be four sets, and balanced parental genomes do not cause molar change."
+  },
+  "et": [
+   [
+    "Option",
+    "Ploidy",
+    "Parental sets",
+    "Placenta",
+    "p57"
+   ],
+   [
+    [
+     "A normal ovum fertilized by two sperm",
+     "Triploid",
+     "1 maternal, 2 paternal",
+     "Enlarged, focally cystic",
+     "Positive"
+    ],
+    [
+     "An empty ovum fertilized by one sperm that duplicated",
+     "Diploid",
+     "2 paternal only",
+     "Diffusely vesicular",
+     "Negative"
+    ],
+    [
+     "A diploid ovum fertilized by one sperm",
+     "Triploid",
+     "2 maternal, 1 paternal",
+     "Small, not molar",
+     "Positive"
+    ],
+    [
+     "Maternal meiosis I nondisjunction of chromosome 21",
+     "Diploid plus one",
+     "Biparental, extra 21",
+     "Not molar",
+     "Positive"
+    ],
+    [
+     "Failure of the first cleavage division of the zygote",
+     "Tetraploid",
+     "2 maternal, 2 paternal",
+     "Not molar, early loss",
+     "Positive"
+    ]
+   ]
+  ],
+  "bl": "Triploid tissue with a fetus, a cystic placenta and positive p57 is a partial mole: a normal ovum fertilized by two sperm.",
+  "ef": "rp26_moles",
+  "pt": {
+   "hl": [
+    "Normal ovum",
+    "2 sperm",
+    "69,XXY"
+   ],
+   "say": "The partial mole column shows a normal ovum fertilized by 2 sperm, giving a triploid 69,XXY genome with one maternal set, so fetal parts form."
+  }
+ },
+ {
+  "id": "rp26q03",
+  "d": 3,
+  "tags": [
+   "receptor-crosstalk",
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp26-06"
+  ],
+  "obj": [
+   "GTD.5"
+  ],
+  "s": "A 42-year-old woman at 13 weeks' gestation comes to the emergency department with palpitations, tremor, heat intolerance and intermittent vaginal bleeding. She has vomited daily for 4 weeks. Pulse is 124/min and blood pressure is 154/96 mm Hg. The uterus extends to the umbilicus, and no fetal heart tones are heard. Serum TSH is less than 0.01 µU/mL and free T4 is elevated; TSH receptor antibodies are absent. Serum hCG is 720,000 mIU/mL.",
+  "l": "Which mechanism best explains her thyroid function tests?",
+  "o": [
+   "Very high hCG acting on the TSH receptor",
+   "Autoantibodies acting on the TSH receptor",
+   "Estrogen raising thyroxine-binding globulin",
+   "Inflammatory release of stored thyroid hormone",
+   "Excess TSH from a pituitary adenoma"
+  ],
+  "a": 0,
+  "e": "Bleeding, a uterus large for dates, absent heart tones, severe vomiting, hypertension before 20 weeks and an hCG of 720,000 point to a **complete mole**. hCG shares its alpha subunit with TSH, and its beta subunit is similar enough that, at these very high levels, hCG activates the TSH receptor on thyroid cells. Free T4 rises and feedback suppresses pituitary TSH to undetectable. Graves disease would also suppress TSH, but she lacks the stimulating antibodies. Estrogen raises thyroxine-binding globulin, which increases total T4 while free T4 and TSH stay normal. Evacuating the mole removes the hCG and cures the hyperthyroidism.",
+  "w": {
+   "Autoantibodies acting on the TSH receptor": "Graves disease suppresses TSH through stimulating antibodies, but her antibody test is negative. It would not explain the large uterus, extreme hCG or early hypertension.",
+   "Estrogen raising thyroxine-binding globulin": "More binding globulin raises total T4 in every pregnancy, but free T4 and TSH stay normal. It never gives a suppressed TSH with high free hormone.",
+   "Inflammatory release of stored thyroid hormone": "Thyroiditis leaks stored hormone and can suppress TSH for a while, but nothing here suggests gland inflammation. It would not explain the enlarged uterus or the extreme hCG.",
+   "Excess TSH from a pituitary adenoma": "A TSH-secreting adenoma raises free T4 with an inappropriately normal or high TSH. Her undetectable TSH shows the pituitary is responding normally to feedback."
+  },
+  "et": [
+   [
+    "Option",
+    "TSH",
+    "Free T4",
+    "Key clue"
+   ],
+   [
+    [
+     "Very high hCG acting on the TSH receptor",
+     "Suppressed",
+     "High",
+     "hCG far above normal, molar uterus"
+    ],
+    [
+     "Autoantibodies acting on the TSH receptor",
+     "Suppressed",
+     "High",
+     "Positive receptor antibodies, ophthalmopathy"
+    ],
+    [
+     "Estrogen raising thyroxine-binding globulin",
+     "Normal",
+     "Normal",
+     "Total T4 high, free T4 normal"
+    ],
+    [
+     "Inflammatory release of stored thyroid hormone",
+     "Suppressed",
+     "High",
+     "Low radioiodine uptake, transient course"
+    ],
+    [
+     "Excess TSH from a pituitary adenoma",
+     "Normal or high",
+     "High",
+     "Pituitary mass on MRI"
+    ]
+   ]
+  ],
+  "bl": "A complete mole's very high hCG acts on the TSH receptor, raising free T4 and suppressing TSH; evacuation cures it.",
+  "ef": "rp26_moles",
+  "pt": {
+   "hl": [
+    "Hyperthyroidism, theca lutein cysts",
+    "hCG very high, uterus large for dates"
+   ],
+   "say": "The complete mole column lists very high hCG and hyperthyroidism together: at these levels hCG acts on the TSH receptor and drives the thyroid."
+  }
+ },
+ {
+  "id": "rp26q04",
+  "d": 2,
+  "tags": [
+   "histology-to-diagnosis",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp26-09",
+   "BP-rp26-12"
+  ],
+  "obj": [
+   "GTD.6"
+  ],
+  "s": "A 31-year-old woman comes to the physician 4 months after an uncomplicated term vaginal delivery because of irregular vaginal bleeding and a cough with blood-streaked sputum. Serum hCG is 96,000 mIU/mL, and a chest x-ray shows multiple round nodules in both lungs. Uterine curettage shows hemorrhagic, necrotic sheets of atypical cytotrophoblast and syncytiotrophoblast; no chorionic villi are found.",
+  "l": "Which is the most likely diagnosis?",
+  "o": [
+   "Choriocarcinoma",
+   "Invasive mole",
+   "Placental site trophoblastic tumor",
+   "Retained products of conception",
+   "Complete hydatidiform mole"
+  ],
+  "a": 0,
+  "e": "Sheets of malignant cytotrophoblast and syncytiotrophoblast with hemorrhage, necrosis and **no villi** define **choriocarcinoma**. It invades vessels early and spreads through the blood, most often to the lungs, which explains the hemoptysis and nodules, and it makes large amounts of hCG. It can follow any pregnancy, including a normal term delivery, as here. An invasive mole contains molar villi burrowing into the myometrium and nearly always follows a molar pregnancy. A placental site trophoblastic tumor is made of intermediate trophoblast and makes little hCG. Choriocarcinoma is highly sensitive to chemotherapy, so even metastatic disease is usually curable.",
+  "w": {
+   "Invasive mole": "An invasive mole keeps its villi as they burrow into the myometrium, usually after a molar pregnancy. Villus-free trophoblast after a term birth is not this.",
+   "Placental site trophoblastic tumor": "This tumor of intermediate trophoblast forms a uterine mass and makes hPL with only modest hCG. An hCG near 100,000 with syncytiotrophoblast points elsewhere.",
+   "Retained products of conception": "Retained placenta causes bleeding soon after delivery and contains villi. It cannot seed the lungs or sustain an hCG near 100,000 four months later.",
+   "Complete hydatidiform mole": "A complete mole is made of diffusely swollen villi with no fetus, so its curettings always contain villi. Sheets of trophoblast without villi and lung metastases signal a malignant tumor."
+  },
+  "et": [
+   [
+    "Option",
+    "Villi present",
+    "Usual antecedent",
+    "hCG level",
+    "Spread"
+   ],
+   [
+    [
+     "Choriocarcinoma",
+     "No",
+     "Any pregnancy, including term",
+     "Very high",
+     "Early, by blood to lungs"
+    ],
+    [
+     "Invasive mole",
+     "Yes, in myometrium",
+     "Molar pregnancy",
+     "High",
+     "Rarely beyond the uterus"
+    ],
+    [
+     "Placental site trophoblastic tumor",
+     "No",
+     "Often a term pregnancy",
+     "Low; hPL high",
+     "Usually confined to the uterus"
+    ],
+    [
+     "Retained products of conception",
+     "Yes",
+     "Recent delivery or loss",
+     "Low and falling",
+     "None"
+    ],
+    [
+     "Complete hydatidiform mole",
+     "Yes, all swollen",
+     "Is itself a conception",
+     "Very high",
+     "None until neoplasia"
+    ]
+   ]
+  ],
+  "bl": "Villus-free sheets of cytotrophoblast and syncytiotrophoblast with lung metastases mean choriocarcinoma, which can follow even a normal term delivery.",
+  "ef": "rp26_moles",
+  "pt": {
+   "hl": [
+    "Choriocarcinoma in about 2%"
+   ],
+   "say": "The foot of the complete mole column gives choriocarcinoma in about 2 percent, but the same cancer can also follow a term birth, as it did here."
+  }
+ },
+ {
+  "id": "rp26q05",
+  "d": 2,
+  "tags": [
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp26-03"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.6"
+  ],
+  "s": "A 27-year-old woman comes to the emergency department with 1 day of left lower abdominal pain and light vaginal bleeding; her last menstrual period was 7 weeks ago. She is hemodynamically stable. Serum hCG is 4,100 mIU/mL. Transvaginal ultrasound shows an empty uterus and a 2-cm complex mass beside the left ovary. Laparoscopy confirms an unruptured pregnancy in the left uterine tube, and both tubes show adhesions.",
+  "l": "Which history most likely predisposed her to this condition?",
+  "o": [
+   "Chlamydial pelvic inflammatory disease 4 years ago",
+   "Combined oral contraceptive use for the past 5 years",
+   "Recurrent genital herpes outbreaks",
+   "A complete molar pregnancy 2 years ago",
+   "Two uncomplicated vaginal deliveries"
+  ],
+  "a": 0,
+  "e": "An ectopic pregnancy implants in the tube when transport of the embryo is slowed, and the classic cause is tubal damage from **pelvic inflammatory disease**, usually chlamydial. Infection destroys ciliated cells and leaves adhesions, like those seen here, so the embryo stalls, usually in the ampulla, and implants in the tube wall. Chlamydia is often silent, so the scarring can predate any diagnosis. Combined oral contraceptives suppress ovulation and lower the risk of every pregnancy, ectopic included. Herpes stays in the lower genital tract and does not scar the tubes, and a prior mole raises the risk of another mole, not of tubal implantation.",
+  "w": {
+   "Combined oral contraceptive use for the past 5 years": "Estrogen-progestin pills suppress ovulation, so they lower the chance of any pregnancy, including an ectopic one. Once stopped they leave no tubal scarring.",
+   "Recurrent genital herpes outbreaks": "HSV-2 causes painful vulvar and cervical ulcers and stays latent in sacral ganglia. It does not climb to the tubes or destroy their cilia.",
+   "A complete molar pregnancy 2 years ago": "A prior mole raises the risk of another molar pregnancy. It does not damage the tubes or slow embryo transport.",
+   "Two uncomplicated vaginal deliveries": "Having children does not slow tubal transport. Uncomplicated births leave the tubes untouched, unlike infection, tubal surgery or a prior ectopic."
+  },
+  "et": [
+   [
+    "Option",
+    "Effect on the tube",
+    "Ectopic risk",
+    "Main association"
+   ],
+   [
+    [
+     "Chlamydial pelvic inflammatory disease 4 years ago",
+     "Cilia lost, adhesions",
+     "Clearly raised",
+     "Tubal infertility and ectopic pregnancy"
+    ],
+    [
+     "Combined oral contraceptive use for the past 5 years",
+     "None",
+     "Lowered while in use",
+     "Ovulation suppressed"
+    ],
+    [
+     "Recurrent genital herpes outbreaks",
+     "None",
+     "Not raised",
+     "Genital ulcers, neonatal herpes"
+    ],
+    [
+     "A complete molar pregnancy 2 years ago",
+     "None",
+     "Not raised",
+     "Another mole"
+    ],
+    [
+     "Two uncomplicated vaginal deliveries",
+     "None",
+     "Not raised",
+     "No tubal effect"
+    ]
+   ]
+  ],
+  "bl": "Chlamydial pelvic inflammatory disease scars the tube and slows embryo transport, the classic cause of tubal ectopic pregnancy.",
+  "ef": "rp26_framework",
+  "pt": {
+   "hl": [
+    "Chlamydial PID, prior ectopic",
+    "Most in the ampulla"
+   ],
+   "say": "The ectopic box lists chlamydial PID first among risk factors: tubal scarring from that infection stalls the embryo, usually in the ampulla."
+  }
+ },
+ {
+  "id": "rp26q06",
+  "d": 2,
+  "tags": [
+   "treatment-sequence",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp26-03"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.6"
+  ],
+  "s": "A 29-year-old woman has a 2.5-cm unruptured ectopic pregnancy in the right uterine tube seen on transvaginal ultrasound. There is no embryonic cardiac activity and no free fluid. She is hemodynamically stable, has mild lower abdominal pain and has reliable follow-up. Serum hCG is 2,400 mIU/mL.",
+  "l": "Which is the most appropriate treatment?",
+  "o": [
+   "Intramuscular methotrexate",
+   "Emergency laparotomy and salpingectomy",
+   "Oral misoprostol",
+   "Suction curettage of the uterus",
+   "Repeat hCG in 48 hours with no treatment"
+  ],
+  "a": 0,
+  "e": "A stable patient with a small, unruptured ectopic pregnancy, no embryonic cardiac activity and a modest hCG can be treated with **intramuscular methotrexate**. Methotrexate is a folate antagonist that blocks dihydrofolate reductase, starving the rapidly dividing trophoblast of the folate it needs for DNA synthesis. Her hCG is then followed down to zero. Surgery is kept for rupture, instability or failed medical treatment. Repeat hCG alone would delay treatment of a known ectopic. Misoprostol and uterine suction empty the uterus, but this pregnancy is in the tube.",
+  "w": {
+   "Emergency laparotomy and salpingectomy": "Surgery is for rupture, instability or failed medical treatment. She is stable with an unruptured ectopic, so a medical option comes first.",
+   "Oral misoprostol": "Misoprostol helps expel a failed intrauterine pregnancy by contracting the uterus. This pregnancy is in the tube, so it would not treat it.",
+   "Suction curettage of the uterus": "Suction curettage empties the uterus. The ectopic is outside the uterus, so it would not remove it.",
+   "Repeat hCG in 48 hours with no treatment": "Serial hCG helps locate a pregnancy of unknown location. This ectopic is already seen, so waiting only risks rupture."
+  },
+  "et": [
+   [
+    "Option",
+    "When it is used",
+    "Effect on this ectopic"
+   ],
+   [
+    [
+     "Intramuscular methotrexate",
+     "Stable, unruptured ectopic with no heartbeat",
+     "Kills trophoblast; hCG then falls to zero"
+    ],
+    [
+     "Emergency laparotomy and salpingectomy",
+     "Rupture or instability",
+     "Removes the tube and pregnancy"
+    ],
+    [
+     "Oral misoprostol",
+     "Failed intrauterine pregnancy",
+     "None; the pregnancy is in the tube"
+    ],
+    [
+     "Suction curettage of the uterus",
+     "Failed or unwanted intrauterine pregnancy",
+     "None; the uterus is empty"
+    ],
+    [
+     "Repeat hCG in 48 hours with no treatment",
+     "Pregnancy of unknown location",
+     "Delays treatment of a known ectopic"
+    ]
+   ]
+  ],
+  "bl": "A stable woman with an unruptured ectopic and no heartbeat is treated with intramuscular methotrexate, a folate antagonist; surgery is for rupture.",
+  "ef": "rp26_framework",
+  "pt": {
+   "hl": [
+    "methotrexate, follow hCG",
+    "Stable and unruptured:"
+   ],
+   "say": "The ectopic box reads stable and unruptured: methotrexate, then follow hCG, so intramuscular methotrexate is the treatment for her."
+  }
+ },
+ {
+  "id": "rp26q07",
+  "d": 2,
+  "tags": [
+   "diagnostic-cutoffs",
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp26-02",
+   "BP-rp26-11"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.4"
+  ],
+  "s": "A 24-year-old woman comes to the clinic because of light vaginal spotting for 1 day. Her last menstrual period was 5 weeks ago, and her cycles are irregular. She has no abdominal pain, and she wants to continue the pregnancy. Vital signs are normal, the abdomen is nontender, and the cervical os is closed. Serum hCG is 900 mIU/mL. Transvaginal ultrasound shows no intrauterine gestational sac, no adnexal mass and no free fluid.",
+  "l": "Which is the most appropriate next step in management?",
+  "o": [
+   "Repeat hCG in 48 hours",
+   "Intramuscular methotrexate",
+   "Diagnostic laparoscopy",
+   "Uterine aspiration",
+   "Reassurance and routine prenatal care"
+  ],
+  "a": 0,
+  "e": "She has a **pregnancy of unknown location**: a positive test with nothing seen inside or outside the uterus. Her hCG of 900 is below the discriminatory level of about 3,500 mIU/mL, so a normal intrauterine sac may simply be too small to see. The next step is to repeat hCG in 48 hours, with precautions to return for pain or bleeding. A rise of at least about 35 percent suggests a growing intrauterine pregnancy, a fall suggests a failing one, and a slow rise or plateau raises concern for ectopic. Methotrexate now could end a wanted, normal pregnancy, and reassurance alone could miss an ectopic that is still growing.",
+  "w": {
+   "Intramuscular methotrexate": "Treating before the location is known risks ending a wanted intrauterine pregnancy that is too early to see. Methotrexate is given only once an ectopic is diagnosed.",
+   "Diagnostic laparoscopy": "Surgery is for instability, peritoneal signs or a confirmed ectopic. A stable woman with no mass or free fluid gains nothing from an operation now.",
+   "Uterine aspiration": "Aspirating the uterus is for a pregnancy known to be nonviable or unwanted. It would end the potentially normal pregnancy she wants to keep.",
+   "Reassurance and routine prenatal care": "An empty uterus does not exclude ectopic pregnancy, which can rupture at any hCG level, so she needs serial hCG until the location or outcome is clear."
+  },
+  "et": [
+   [
+    "Option",
+    "What it decides",
+    "Harm if used now"
+   ],
+   [
+    [
+     "Repeat hCG in 48 hours",
+     "Trend separates growing, failing or ectopic",
+     "Minimal, with precautions given"
+    ],
+    [
+     "Intramuscular methotrexate",
+     "Treats a known ectopic",
+     "Could end a normal pregnancy"
+    ],
+    [
+     "Diagnostic laparoscopy",
+     "Finds and removes a tubal pregnancy",
+     "Needless surgery and anesthesia"
+    ],
+    [
+     "Uterine aspiration",
+     "Shows villi in a nonviable or unwanted pregnancy",
+     "Ends a wanted pregnancy"
+    ],
+    [
+     "Reassurance and routine prenatal care",
+     "Assumes a normal pregnancy",
+     "May miss a growing ectopic"
+    ]
+   ]
+  ],
+  "bl": "With an empty uterus and hCG below about 3,500 mIU/mL in a stable woman, repeat hCG in 48 hours before acting.",
+  "ef": "rp26_framework",
+  "pt": {
+   "hl": [
+    "Below it: repeat hCG in 48 h",
+    "pregnancy of unknown location"
+   ],
+   "say": "Follow the nothing-seen branch to pregnancy of unknown location: below the 3,500 line, repeat hCG in 48 hours and expect a rise of 35 percent or more."
+  }
+ },
+ {
+  "id": "rp26q08",
+  "d": 1,
+  "tags": [
+   "normal-vs-pathologic",
+   "bleeding-source"
+  ],
+  "bp": [
+   "BP-rp26-04"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.5",
+   "BICEP-LEWIS.3"
+  ],
+  "s": "A 30-year-old woman at 9 weeks' gestation has heavy vaginal bleeding and crampy lower abdominal pain for 4 hours. No tissue has passed. Pelvic examination shows blood in the vault and an internal cervical os dilated to 2 cm. Transvaginal ultrasound shows an intrauterine gestational sac containing an embryo, positioned low in the uterus.",
+  "l": "Which is the most likely diagnosis?",
+  "o": [
+   "Inevitable abortion",
+   "Threatened abortion",
+   "Incomplete abortion",
+   "Missed abortion",
+   "Complete abortion"
+  ],
+  "a": 0,
+  "e": "An open internal os with the gestation still inside the uterus is an **inevitable abortion**: once the cervix dilates, the loss cannot be stopped, whether or not cardiac activity persists. Each type of loss is named from two findings, the state of the os and whether tissue has passed. A threatened abortion also bleeds, but the os is closed and the embryo is alive, and most continue. Incomplete abortion needs passage of some tissue with some retained, and a missed abortion is a nonviable pregnancy held behind a closed os.",
+  "w": {
+   "Threatened abortion": "A threatened abortion is bleeding with a closed os and a live embryo, and most continue. A dilated internal os makes loss unavoidable.",
+   "Incomplete abortion": "Incomplete abortion needs part of the tissue to have been expelled while some remains. Here nothing has come out and the sac is intact.",
+   "Missed abortion": "A missed abortion is a nonviable pregnancy retained behind a closed cervix, often with little bleeding. Heavy bleeding through an open os is the opposite picture.",
+   "Complete abortion": "After a complete abortion all tissue has been expelled, the os closes and the uterus is empty on ultrasound. This sac is still inside."
+  },
+  "et": [
+   [
+    "Option",
+    "Cervical os",
+    "Tissue passed",
+    "Uterine contents"
+   ],
+   [
+    [
+     "Inevitable abortion",
+     "Open",
+     "None yet",
+     "Gestation still inside"
+    ],
+    [
+     "Threatened abortion",
+     "Closed",
+     "None",
+     "Live embryo"
+    ],
+    [
+     "Incomplete abortion",
+     "Open",
+     "Some",
+     "Retained tissue"
+    ],
+    [
+     "Missed abortion",
+     "Closed",
+     "None",
+     "Nonviable embryo or empty sac"
+    ],
+    [
+     "Complete abortion",
+     "Closed",
+     "All",
+     "Empty"
+    ]
+   ]
+  ],
+  "bl": "Bleeding with an open internal os and the gestation still inside the uterus is an inevitable abortion; the loss cannot be stopped."
+ },
+ {
+  "id": "rp26q09",
+  "d": 2,
+  "tags": [
+   "imaging-to-diagnosis",
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp26-01",
+   "BP-rp26-04"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.3",
+   "TBL-EARLY-PREG.4"
+  ],
+  "s": "A 34-year-old woman, gravida 4, para 1, at 10 weeks' gestation by her last menstrual period, has had light vaginal bleeding and cramping for 1 day. Two weeks ago, ultrasound showed an intrauterine embryo with a heart rate of 160/min. Today her vital signs are normal and the cervical os is closed. Serum hCG was 38,000 mIU/mL 2 weeks ago and is 24,500 mIU/mL today. Transvaginal ultrasound shows an embryo with no cardiac activity.",
+  "l": "Which finding establishes that this pregnancy has failed?",
+  "o": [
+   "Absent heartbeat in an embryo that had one",
+   "A fall in hCG over 2 weeks",
+   "Bleeding with cramping for 1 day",
+   "A history of two earlier miscarriages",
+   "A closed cervical os"
+  ],
+  "a": 0,
+  "e": "An embryo whose heartbeat was seen before and is now absent has died, so the pregnancy has failed; no heartbeat once the crown-rump length is 7 mm or more means the same. Cardiac activity is normally seen by about 6 to 7 weeks, and this embryo had a heartbeat 2 weeks ago. Because the nonviable pregnancy is retained behind a closed os, this is a missed abortion. A falling hCG is worrying but not diagnostic, because hCG peaks near 10 weeks and then declines even in normal pregnancies. Bleeding with cramping and a closed os also occur in threatened abortion, most of which continue. Earlier miscarriages do not show that this pregnancy has failed.",
+  "w": {
+   "A fall in hCG over 2 weeks": "hCG normally peaks around 10 weeks and then falls, so a decline at this age is suggestive but cannot prove the embryo has died.",
+   "Bleeding with cramping for 1 day": "About a quarter of pregnant women bleed in the first trimester, and most with a live embryo carry on. Symptoms alone never establish a loss.",
+   "A history of two earlier miscarriages": "Earlier miscarriages raise the chance of another loss, but they cannot show that this pregnancy has failed.",
+   "A closed cervical os": "A closed os is shared by threatened abortion, missed abortion and normal pregnancy. It only says that nothing has been expelled yet."
+  },
+  "et": [
+   [
+    "Option",
+    "What it reflects",
+    "Also seen in a viable pregnancy"
+   ],
+   [
+    [
+     "Absent heartbeat in an embryo that had one",
+     "Embryonic death",
+     "No"
+    ],
+    [
+     "A fall in hCG over 2 weeks",
+     "Declining trophoblast output",
+     "Yes, after the 10-week peak"
+    ],
+    [
+     "Bleeding with cramping for 1 day",
+     "Decidual or placental bleeding",
+     "Yes, in threatened abortion"
+    ],
+    [
+     "A history of two earlier miscarriages",
+     "Past risk, not current status",
+     "Yes"
+    ],
+    [
+     "A closed cervical os",
+     "Nothing expelled yet",
+     "Yes, always"
+    ]
+   ]
+  ],
+  "bl": "Loss of a previously seen heartbeat establishes early pregnancy loss; a falling hCG does not.",
+  "ef": "rp26_framework",
+  "pt": {
+   "hl": [
+    "No heartbeat at crown-rump 7 mm+:",
+    "pregnancy loss"
+   ],
+   "say": "The viability row reads no heartbeat at a crown-rump length of 7 mm or more means pregnancy loss; a smaller embryo is rescanned."
+  }
+ },
+ {
+  "id": "rp26q10",
+  "d": 3,
+  "tags": [
+   "autoimmune-mechanism",
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp26-05"
+  ],
+  "s": "A 31-year-old woman comes for counseling after her third consecutive pregnancy loss, each between 8 and 10 weeks' gestation. At age 26 she had a deep venous thrombosis of the left leg while taking no hormonal medication. Examination shows a lacy, violaceous rash on the thighs. Platelet count is 110,000/mm3. The activated partial thromboplastin time is prolonged and does not correct when her plasma is mixed with normal plasma. Karyotypes of both partners are normal, and hysteroscopy shows a normal uterine cavity.",
+  "l": "Which treatment during her next pregnancy is most likely to improve the chance of a live birth?",
+  "o": [
+   "Low-dose aspirin plus heparin",
+   "Warfarin from conception to delivery",
+   "Vaginal progesterone through 12 weeks",
+   "Hysteroscopic resection of a uterine septum",
+   "High-dose prednisone throughout pregnancy"
+  ],
+  "a": 0,
+  "e": "Recurrent early losses, an unprovoked venous thrombosis, livedo reticularis, mild thrombocytopenia and a prolonged aPTT that fails to correct on mixing (a **lupus anticoagulant**) indicate **antiphospholipid syndrome**. The antibodies cause clotting and inflammation in the placental bed. Heparin, which does not cross the placenta, combined with low-dose aspirin improves the live-birth rate. Warfarin also prevents clots, but it crosses the placenta and causes embryopathy. Septum resection treats a structural cause that her hysteroscopy has already excluded.",
+  "w": {
+   "Warfarin from conception to delivery": "Warfarin crosses the placenta and causes fetal malformations such as nasal hypoplasia and stippled epiphyses when given early, so heparin replaces it in pregnancy.",
+   "Vaginal progesterone through 12 weeks": "Progesterone does not prevent the placental clotting of antiphospholipid syndrome. Its possible benefit is limited to other settings.",
+   "Hysteroscopic resection of a uterine septum": "Resection helps when a septum gives the embryo a poorly vascularized place to implant. Her hysteroscopy showed a normal cavity, so there is nothing to remove.",
+   "High-dose prednisone throughout pregnancy": "Glucocorticoids were tried for antibody-mediated loss but do not improve live births and add risks such as gestational diabetes and preterm birth, so they are not used."
+  },
+  "et": [
+   [
+    "Option",
+    "What it treats",
+    "Placental transfer",
+    "Main drawback"
+   ],
+   [
+    [
+     "Low-dose aspirin plus heparin",
+     "Antibody-driven placental thrombosis",
+     "Heparin does not cross",
+     "Bleeding, heparin-induced thrombocytopenia"
+    ],
+    [
+     "Warfarin from conception to delivery",
+     "Thrombosis",
+     "Crosses",
+     "Embryopathy at 6 to 12 weeks"
+    ],
+    [
+     "Vaginal progesterone through 12 weeks",
+     "Luteal support",
+     "Not a concern",
+     "No effect on thrombosis"
+    ],
+    [
+     "Hysteroscopic resection of a uterine septum",
+     "Septate uterus",
+     "Not applicable",
+     "Needs a septum to remove"
+    ],
+    [
+     "High-dose prednisone throughout pregnancy",
+     "Inflammation",
+     "Mostly inactivated by the placenta",
+     "Diabetes, hypertension, preterm birth"
+    ]
+   ]
+  ],
+  "bl": "Antiphospholipid syndrome causing recurrent loss is treated with low-dose aspirin plus heparin; warfarin is avoided because it is teratogenic."
+ },
+ {
+  "id": "rp26q11",
+  "d": 2,
+  "tags": [
+   "tumor-markers",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp26-08",
+   "BP-rp26-09"
+  ],
+  "obj": [
+   "GTD.4",
+   "GTD.3"
+  ],
+  "s": "A 23-year-old woman is followed after suction curettage of a complete hydatidiform mole. Her hCG was 180,000 mIU/mL at evacuation and fell steadily for 5 weeks to 2,100 mIU/mL. Over the next 3 weeks, her weekly values stay flat at 2,050, 2,140 and 2,090 mIU/mL. She takes a combined oral contraceptive daily without missed pills. Pelvic examination is normal, and transvaginal ultrasound shows no intrauterine pregnancy.",
+  "l": "Which is the most likely explanation for her hCG pattern?",
+  "o": [
+   "Gestational trophoblastic neoplasia",
+   "Expected slow clearance of hCG after evacuation",
+   "A new intrauterine pregnancy",
+   "Theca lutein cysts secreting hCG",
+   "Day-to-day assay variation"
+  ],
+  "a": 0,
+  "e": "After evacuation hCG should fall steadily to undetectable. A **plateau**, or a sustained rise, means trophoblast is persisting and dividing, which defines **gestational trophoblastic neoplasia**. It follows about 15 to 20 percent of complete moles. A new pregnancy is unlikely with consistent contraception, would make hCG rise steeply rather than hold flat, and the ultrasound shows none. Normal clearance has no plateau, and assay noise does not hold a value flat for weeks. Theca lutein cysts are caused by hCG rather than making it. She needs staging, including a chest x-ray for lung metastases, and chemotherapy.",
+  "w": {
+   "Expected slow clearance of hCG after evacuation": "Normal clearance can take weeks to months, but the curve keeps falling the whole time. A value that stops falling means living trophoblast remains.",
+   "A new intrauterine pregnancy": "Contraception during follow-up exists to prevent this confusion. A new pregnancy would make hCG climb steeply and show on ultrasound, and neither is happening.",
+   "Theca lutein cysts secreting hCG": "These ovarian cysts form because very high hCG overstimulates theca cells. They do not make hCG, and they regress as the hormone falls.",
+   "Day-to-day assay variation": "Assay noise scatters values a little around a falling trend. It cannot hold hCG near 2,100 for several weeks in a row."
+  },
+  "et": [
+   [
+    "Option",
+    "Expected hCG curve",
+    "Source of hCG",
+    "Ultrasound"
+   ],
+   [
+    [
+     "Gestational trophoblastic neoplasia",
+     "Plateau or rise",
+     "Persisting trophoblast",
+     "No new pregnancy; may show a uterine mass"
+    ],
+    [
+     "Expected slow clearance of hCG after evacuation",
+     "Steady fall to zero",
+     "Residual hormone being cleared",
+     "Empty uterus"
+    ],
+    [
+     "A new intrauterine pregnancy",
+     "Steep rise",
+     "New placenta",
+     "Gestational sac"
+    ],
+    [
+     "Theca lutein cysts secreting hCG",
+     "Not a source",
+     "None; the cysts respond to hCG",
+     "Multiloculated ovarian cysts"
+    ],
+    [
+     "Day-to-day assay variation",
+     "Scatter around a falling trend",
+     "Measurement noise",
+     "Unchanged"
+    ]
+   ]
+  ],
+  "bl": "A plateau or rise in hCG after molar evacuation means gestational trophoblastic neoplasia; stage it and treat with chemotherapy.",
+  "ef": "rp26_moles",
+  "pt": {
+   "hl": [
+    "Neoplasia in about 15 to 20%"
+   ],
+   "say": "The complete mole column ends with neoplasia in about 15 to 20 percent; a plateau like hers is how gestational trophoblastic neoplasia announces itself."
+  }
+ },
+ {
+  "id": "rp26q12",
+  "d": 1,
+  "tags": [
+   "workup-sequence",
+   "bleeding-source"
+  ],
+  "bp": [
+   "BP-rp26-01",
+   "BP-rp26-03"
+  ],
+  "obj": [
+   "TBL-EARLY-PREG.7",
+   "TBL-EARLY-PREG.6"
+  ],
+  "s": "A 25-year-old woman is brought to the emergency department after fainting at home. Her last menstrual period was 7 weeks ago. She reports sudden severe left lower abdominal pain and pain at the tip of her shoulder. Blood pressure is 82/48 mm Hg and pulse is 132/min. The abdomen is distended with rebound tenderness. A urine pregnancy test is positive, and bedside ultrasound shows an empty uterus and free fluid in the hepatorenal space.",
+  "l": "Which is the most appropriate next step in management?",
+  "o": [
+   "Resuscitation and emergency surgery",
+   "Intramuscular methotrexate",
+   "Repeat hCG in 48 hours",
+   "Admission for observation and serial ultrasound",
+   "Misoprostol to empty the uterus"
+  ],
+  "a": 0,
+  "e": "Syncope, hypotension, tachycardia, peritoneal signs and free fluid in a woman with a positive test and an empty uterus mean a **ruptured ectopic pregnancy** with hemoperitoneum. Shoulder-tip pain is referred from blood irritating the diaphragm. Stability is the first question in the early pregnancy framework, and an unstable patient needs resuscitation and emergency surgery, usually removal of the tube, without waiting for more tests. Methotrexate works over days and is only for stable, unruptured ectopics. Repeat hCG or observation delays control of active bleeding.",
+  "w": {
+   "Intramuscular methotrexate": "Methotrexate works over days to weeks and needs a stable, unruptured ectopic. It cannot stop bleeding from a tube that has already torn open.",
+   "Repeat hCG in 48 hours": "Serial hCG helps locate a pregnancy in a stable woman. In shock with free fluid, waiting two days for a trend risks death from ongoing bleeding.",
+   "Admission for observation and serial ultrasound": "Observation suits a stable pregnancy of unknown location. Her low blood pressure, fast pulse and peritoneal signs show active internal bleeding that only an operation can control.",
+   "Misoprostol to empty the uterus": "Misoprostol helps expel a failed intrauterine pregnancy. This uterus is empty, the pregnancy lies in a torn tube, and uterine contractions would not stop the bleeding."
+  },
+  "et": [
+   [
+    "Option",
+    "Requires stability",
+    "Time to effect",
+    "Used for"
+   ],
+   [
+    [
+     "Resuscitation and emergency surgery",
+     "No",
+     "Minutes",
+     "Rupture or instability"
+    ],
+    [
+     "Intramuscular methotrexate",
+     "Yes",
+     "Days to weeks",
+     "Stable, unruptured ectopic"
+    ],
+    [
+     "Repeat hCG in 48 hours",
+     "Yes",
+     "2 days",
+     "Pregnancy of unknown location"
+    ],
+    [
+     "Admission for observation and serial ultrasound",
+     "Yes",
+     "Days",
+     "Uncertain location in a stable patient"
+    ],
+    [
+     "Misoprostol to empty the uterus",
+     "Yes",
+     "Hours to days",
+     "Failed intrauterine pregnancy"
+    ]
+   ]
+  ],
+  "bl": "An unstable woman with a positive pregnancy test and free fluid has a ruptured ectopic until proven otherwise: resuscitation and emergency surgery.",
+  "ef": "rp26_framework",
+  "pt": {
+   "hl": [
+    "Shock or shoulder pain",
+    "means rupture: surgery"
+   ],
+   "say": "The first box of the framework reads shock or shoulder pain means rupture: surgery, so she needs resuscitation and emergency surgery before any further testing."
+  }
+ }
+]
