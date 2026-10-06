@@ -52,7 +52,7 @@
      "Corpus luteum cyst",
      "Blood or serous fluid",
      "Luteal phase only",
-     "Early pregnancy mimic"
+     "Common in early pregnancy; rupture mimics ectopic"
     ],
     [
      "Mature cystic teratoma",
@@ -314,7 +314,7 @@
   "e": "This is **adenomyosis**: endometrial glands and stroma inside the myometrium. The tissue bleeds within the wall, and the muscle thickens around it, so the whole uterus becomes evenly enlarged, soft and globular. Heavy, painful periods in a multiparous woman in her 40s are typical. A leiomyoma makes a firm, lumpy uterus with separate whorled nodules. The biopsy shows no hyperplasia. Leiomyosarcoma is a single, fast-growing mass after menopause. Endometriosis lies outside the uterus, so the uterus stays a normal size.",
   "w": {
    "Leiomyoma": "A fibroid makes a firm, lumpy, uneven uterus with separate round masses. Even, tender enlargement fits adenomyosis better.",
-   "Endometrial hyperplasia": "Hyperplasia is overgrowth of glands in the lining. It causes heavy bleeding, but the biopsy here is normal, and it does not enlarge or tenderize the uterus.",
+   "Endometrial hyperplasia": "Hyperplasia is overgrowth of glands in the lining. It causes heavy bleeding, but the biopsy here is normal, and it does not make the uterus enlarged or tender.",
    "Leiomyosarcoma": "Leiomyosarcoma is a rare, single, fast-growing, necrotic mass, usually after menopause. It does not cause even, tender enlargement in a multiparous woman.",
    "Endometriosis": "Endometriosis implants lie outside the uterus, on the ovaries and peritoneum, so the uterus stays normal in size. Here the tissue lies inside the wall."
   },
@@ -469,9 +469,9 @@
    "Carcinosarcoma"
   ],
   "a": 0,
-  "e": "Benign smooth muscle tumors can have many mitoses, especially in young women, so mitoses alone do not make a sarcoma. **Leiomyosarcoma** needs cytologic atypia, necrosis and mitoses together, and it is soft, hemorrhagic and necrotic with infiltrating edges. This tumor is well circumscribed and whorled, with bland cells, no atypia and no necrosis, so it is a **leiomyoma**. Adenomyosis contains glands. An endometrial polyp is a small, soft growth of glands and stroma in the cavity. Carcinosarcoma has a malignant epithelial part and occurs in older women.",
+  "e": "Benign smooth muscle tumors can have many mitoses, especially in young women, so mitoses alone do not make a sarcoma. **Leiomyosarcoma** is judged on cytologic atypia, necrosis and mitoses weighed together, never on mitoses alone, and it is soft, hemorrhagic and necrotic with infiltrating edges. This tumor is well circumscribed and whorled, with bland cells, no atypia and no necrosis, so it is a **leiomyoma**. Adenomyosis contains glands. An endometrial polyp is a small, soft growth of glands and stroma in the cavity. Carcinosarcoma has a malignant epithelial part and occurs in older women.",
   "w": {
-   "Leiomyosarcoma": "Sarcoma needs atypia, necrosis and mitoses together. Here the edge is smooth and there is no atypia or necrosis, so the mitoses alone are not enough.",
+   "Leiomyosarcoma": "Sarcoma is judged on atypia, necrosis and mitoses weighed together. Here the edge is smooth and there is no atypia or necrosis, so the mitoses alone are not enough.",
    "Adenomyosis": "Adenomyosis is endometrial glands and stroma inside the myometrium, with diffuse enlargement. A single whorled mass of spindle cells with no glands is not adenomyosis.",
    "Endometrial polyp": "A polyp is a small, soft overgrowth of glands and stroma that projects into the cavity. This is a large, whorled mass of pure spindle cells with no glands.",
    "Carcinosarcoma": "Carcinosarcoma has both a malignant epithelial part and a malignant mesenchymal part, and it occurs after menopause. The epithelial part is missing here, and the patient is young."
@@ -516,7 +516,7 @@
     ]
    ]
   ],
-  "bl": "Brisk mitoses without atypia or necrosis in a circumscribed whorled tumor of a young woman make a leiomyoma; sarcoma needs all three features assessed together.",
+  "bl": "Brisk mitoses without atypia or necrosis in a circumscribed whorled tumor of a young woman make a leiomyoma, because mitoses alone never make a sarcoma.",
   "ef": "rp14_muscle",
   "pt": {
    "hl": [
@@ -869,7 +869,7 @@
    "Colposcopy with endocervical curettage"
   ],
   "a": 0,
-  "e": "Bleeding after menopause with a lining thicker than 4 mm needs tissue to rule out hyperplasia and **endometrial carcinoma**. Obesity and diabetes raise her risk. An office endometrial biopsy takes a suction sample of the lining, needs no anesthesia and finds most cancers, so it comes first. Hysteroscopy with D&C is for an inadequate sample, bleeding that continues after a benign biopsy, or a suspected polyp. Hysterectomy comes after a tissue diagnosis. Repeating the ultrasound would only delay the diagnosis. The cervix is normal, so colposcopy is not needed.",
+  "e": "As of 2026, ACOG advises endometrial sampling for most women with postmenopausal bleeding. Her 12-mm lining, repeated bleeding, obesity and diabetes make tissue essential to rule out hyperplasia and **endometrial carcinoma**. An office endometrial biopsy takes a suction sample of the lining, needs no anesthesia and finds most cancers, so it comes first. Hysteroscopy with D&C is for an inadequate sample, bleeding that continues after a benign biopsy, or a suspected polyp. Hysterectomy comes after a tissue diagnosis. Repeating the ultrasound would only delay the diagnosis. The cervix is normal, so colposcopy is not needed.",
   "w": {
    "Hysteroscopy with dilation and curettage": "This is the next step if the office sample is inadequate or bleeding continues, or when a focal lesion such as a polyp is suspected. It needs anesthesia, so it is not the first test.",
    "Total hysterectomy with bilateral salpingo-oophorectomy": "Surgery treats a cancer or atypical hyperplasia that is already proven. It is not a first diagnostic step.",
@@ -906,7 +906,7 @@
      "Repeat transvaginal ultrasonography in 6 months",
      "None",
      "No",
-     "Reassuring thin lining only"
+     "Single episode, fully seen stripe of 4 mm or less, no risk factors"
     ],
     [
      "Colposcopy with endocervical curettage",
@@ -916,6 +916,6 @@
     ]
    ]
   ],
-  "bl": "Postmenopausal bleeding with a thick lining needs tissue, and the first test is an office endometrial biopsy."
+  "bl": "Postmenopausal bleeding needs endometrial sampling in most women, and the first sampling test is an office endometrial biopsy."
  }
 ]

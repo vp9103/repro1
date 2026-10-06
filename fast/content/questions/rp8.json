@@ -262,7 +262,7 @@
   "a": 0,
   "e": "Estradiol from the dominant follicle normally inhibits LH. But when it stays high for about two days, the pituitary switches to **positive feedback** and releases a surge of LH. That is why the estradiol peak comes about a day before the LH peak, and ovulation follows about 36 hours after the surge begins. Progesterone is still low before ovulation, and when it rises it slows GnRH pulses rather than speeding them. Corpus luteum regression raises FSH at the end of the cycle, not LH at mid-cycle.",
   "w": {
-   "Falling inhibin B releasing FSH and LH": "Inhibin B from granulosa cells mainly restrains FSH, and it rises as the dominant follicle grows. It cannot produce a mid-cycle LH surge.",
+   "Falling inhibin B releasing FSH and LH": "Inhibin B from granulosa cells restrains FSH, not LH, and it has no positive-feedback action. A change in inhibin B cannot produce a mid-cycle LH surge.",
    "Rising progesterone speeding GnRH pulses": "Progesterone rises only after ovulation, and when it does it slows GnRH pulses. Her follicular-level progesterone the day before rules it out.",
    "Corpus luteum regression lifting feedback": "Luteolysis happens at the end of the luteal phase and lets FSH rise to recruit the next cohort. On day 13 there is no corpus luteum yet.",
    "Increased hypothalamic dopamine": "Hypothalamic dopamine inhibits prolactin release and has no role in generating the LH surge or estradiol feedback."
@@ -284,8 +284,8 @@
     [
      "Falling inhibin B releasing FSH and LH",
      "Inhibin B",
-     "Mainly follicular, rising",
-     "Little effect"
+     "Early and mid follicular phase",
+     "None; it acts on FSH"
     ],
     [
      "Rising progesterone speeding GnRH pulses",
@@ -427,7 +427,7 @@
   "w": {
    "About 5 days before ovulation": "Before ovulation estradiol acts alone, so glands are straight and tubular with frequent mitoses and no vacuoles. Vacuoles need progesterone from a corpus luteum.",
    "Day 2 of menses": "Menstrual endometrium shows fragmented glands, breakdown of the stroma and blood from constricted spiral arteries, not tidy vacuolated glands.",
-   "About 7 days after ovulation": "By the mid-luteal peak the vacuoles have moved above the nuclei, the glands are full of secretion and the stroma is edematous, ready for implantation.",
+   "About 7 days after ovulation": "By the mid-luteal peak the vacuoles have already emptied into the lumens, the glands are full of secretion and the stroma is edematous, ready for implantation.",
    "Day 27, just before menses": "Late secretory endometrium has saw-tooth glands, predecidual stromal cells and early breakdown as progesterone falls."
   },
   "et": [
@@ -459,7 +459,7 @@
     [
      "About 7 days after ovulation",
      "Progesterone at its peak",
-     "Supranuclear vacuoles, luminal secretion",
+     "Coiled glands, luminal secretion, no vacuoles",
      "Maximal edema"
     ],
     [
@@ -608,7 +608,7 @@
     ],
     [
      "Loss of LH receptors on theca cells",
-     "Little change",
+     "Rises as estradiol falls",
      "Little change",
      "Disrupted, estradiol low"
     ],
@@ -648,14 +648,14 @@
   "obj": [
    "HP-UTERUS-OVARY.1"
   ],
-  "s": "A 32-year-old woman had a vigorous dilation and curettage for retained placental tissue 6 weeks after delivery. She has had no menses in the 8 months since, although she breastfed successfully. A pregnancy test is negative, and FSH, prolactin, TSH and estradiol are normal. Hysteroscopy shows dense bands of scar tissue across the uterine cavity.",
+  "s": "A 32-year-old woman had a vigorous dilation and curettage for retained placental tissue 6 weeks after delivery. She breastfed for 2 months without difficulty and then stopped, but she has had no menses in the 8 months since the procedure. A pregnancy test is negative, and FSH, prolactin, TSH and estradiol are normal. Hysteroscopy shows dense bands of scar tissue across the uterine cavity.",
   "l": "Loss of which layer explains why her endometrium does not regrow?",
   "o": [
    "Stratum basalis",
    "Stratum functionalis",
    "Myometrium",
    "Perimetrium",
-   "Mesometrium"
+   "Surface epithelium of the endometrium"
   ],
   "a": 0,
   "e": "The **stratum basalis** is the deep endometrial layer, fed by straight arteries, that survives each menses and regenerates the functionalis. Aggressive curettage, especially after delivery, can scrape it away, and the bare surfaces scar together into adhesions: Asherman syndrome. Her normal hormones and successful breastfeeding show that the ovary and pituitary work, so the defect is in the uterus. The stratum functionalis is shed every month and regrows from the basalis, so losing it alone is ordinary menstruation.",
@@ -663,7 +663,7 @@
    "Stratum functionalis": "The functionalis is shed at every menses and regrows from the basalis beneath it. Losing it is routine, so it cannot explain a permanent failure to regenerate.",
    "Myometrium": "The myometrium is the smooth muscle wall. Exposing it lets adhesions form, but it never produces endometrium, so its loss is not what stops regrowth.",
    "Perimetrium": "The perimetrium is the serosal coat on the outside of the uterus. Curettage works from inside the cavity and does not reach it.",
-   "Mesometrium": "The mesometrium is the part of the broad ligament that wraps the uterus. It lies outside the uterus and has nothing to do with regrowth of the lining."
+   "Surface epithelium of the endometrium": "The surface epithelium is lost at every menses and regrows from the glands of the basalis, so its loss cannot stop regeneration."
   },
   "et": [
    [
@@ -698,10 +698,10 @@
      "No"
     ],
     [
-     "Mesometrium",
-     "Broad ligament around the uterus",
-     "Uterine vessels",
-     "No"
+     "Surface epithelium of the endometrium",
+     "Lining of the cavity, part of the functionalis",
+     "None of its own; fed from the stroma",
+     "Yes"
     ]
    ]
   ],

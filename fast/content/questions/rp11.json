@@ -12,8 +12,8 @@
   "obj": [
    "BICEP-WILLIAMS.5"
   ],
-  "s": "A 53-year-old woman has had no menstrual period for 14 months. She reports hot flashes several times a day and vaginal dryness. She takes no medications, and a pregnancy test is negative. Her physician orders serum hormone levels to illustrate the changes for a teaching conference.",
-  "l": "Which of the following sets of findings is most likely?",
+  "s": "A 53-year-old woman has had no menstrual period for 14 months. She reports hot flashes several times a day and vaginal dryness. She takes no medications, and a pregnancy test is negative.",
+  "l": "If serum hormones were measured, which set of findings would most likely be seen?",
   "o": [
    "High FSH, high LH, low estradiol",
    "Low FSH, low LH, low estradiol",
@@ -22,7 +22,7 @@
    "Low FSH, high LH, high testosterone"
   ],
   "a": 0,
-  "e": "After menopause the ovary has run out of follicles, so granulosa cells no longer secrete estradiol or inhibin B. Without these negative feedback signals the pituitary is released, and FSH rises most, with LH rising too: **high FSH, high LH, low estradiol**. Low FSH and LH with low estradiol would point to hypothalamic or pituitary failure. A high prolactin points to a prolactinoma or a drug effect, and a high LH with high testosterone points to polycystic ovary syndrome.",
+  "e": "After menopause the ovary has run out of follicles, so granulosa cells no longer secrete estradiol or inhibin B. Without these negative feedback signals the pituitary is freed from its brakes, and FSH rises most, with LH rising too: **high FSH, high LH, low estradiol**. Low FSH and LH with low estradiol would point to hypothalamic or pituitary failure. A high prolactin points to a prolactinoma or a drug effect, and a high LH with high testosterone points to polycystic ovary syndrome.",
   "w": {
    "Low FSH, low LH, low estradiol": "This is hypogonadotropic hypogonadism, from hypothalamic amenorrhea or pituitary disease. With failing ovaries the pituitary is released from feedback, so gonadotropins climb instead.",
    "Normal FSH, normal LH, high prolactin": "Hyperprolactinemia suppresses GnRH and is a menopause mimic worth excluding. But her age, 14 months of amenorrhea and vasomotor symptoms fit ovarian failure.",
@@ -427,9 +427,9 @@
    "Total abdominal hysterectomy"
   ],
   "a": 0,
-  "e": "Bleeding after menopause is endometrial cancer until proven otherwise. A fully seen endometrial stripe of 4 mm or less makes cancer unlikely, but hers is 9 mm, the bleeding has recurred and obesity adds risk, so tissue is required: **endometrial biopsy**. Mild vaginal atrophy is common at her age and must not be accepted as the explanation while the endometrium is thick. Treating it with vaginal estrogen first would delay a cancer diagnosis. CA-125 is an ovarian marker, and hysterectomy comes only after a tissue diagnosis.",
+  "e": "Bleeding after menopause is endometrial cancer until proven otherwise. As of 2026, ACOG advises ultrasound plus endometrial sampling for most patients. Ultrasound alone is enough only for a single episode with a fully seen stripe of 4 mm or less, no significant risk factors and reliable prompt follow-up. Hers is 9 mm, the bleeding has recurred and obesity adds risk, so tissue is required: **endometrial biopsy**. Mild vaginal atrophy is common at her age and must not be accepted as the explanation while the endometrium is thick. Treating it with vaginal estrogen first would delay a cancer diagnosis. CA-125 is an ovarian marker, and hysterectomy comes only after a tissue diagnosis.",
   "w": {
-   "Repeat ultrasonography in 6 months": "Waiting is acceptable only for a single episode with a thin, fully seen stripe and no risk factors. A 9-mm stripe with recurrent bleeding needs tissue now.",
+   "Repeat ultrasonography in 6 months": "Waiting is acceptable only for a single episode with a thin, fully seen stripe, no significant risk factors and reliable follow-up. A 9-mm stripe with recurrent bleeding needs tissue now.",
    "Vaginal estrogen cream": "Her mild atrophy could bleed, but a thickened endometrium must be sampled first. Blaming atrophy would risk missing endometrial cancer.",
    "Serum CA-125 measurement": "CA-125 helps evaluate an adnexal mass for ovarian cancer. It is neither sensitive nor specific for endometrial cancer and does not replace tissue.",
    "Total abdominal hysterectomy": "Surgery may be the eventual treatment, but it is planned only after a tissue diagnosis shows whether she has hyperplasia or cancer."
@@ -451,7 +451,7 @@
     [
      "Repeat ultrasonography in 6 months",
      "No",
-     "Follow-up of a thin stripe only",
+     "Only a single episode with a thin stripe and no risk factors",
      "Not with a 9-mm stripe"
     ],
     [
@@ -474,14 +474,14 @@
     ]
    ]
   ],
-  "bl": "Postmenopausal bleeding with an endometrium over 4 mm, or recurrent bleeding, requires endometrial biopsy to exclude cancer.",
+  "bl": "Postmenopausal bleeding needs endometrial sampling in most patients (ACOG, 2026), and a stripe over 4 mm or recurrent bleeding always requires a biopsy.",
   "ef": "rp11_firstmove",
   "pt": {
    "hl": [
-    "Endometrial biopsy if the stripe",
-    "is over 4 mm or bleeding recurs"
+    "Ultrasound plus endometrial",
+    "sampling for most patients (2026)"
    ],
-   "say": "Any bleeding after menopause needs an endometrial biopsy when the stripe is over 4 mm or bleeding recurs; hers is 9 mm and recurrent, and atrophy is a diagnosis of exclusion."
+   "say": "The bleeding row gives the 2026 rule: ultrasound plus endometrial sampling for most patients. Her 9-mm stripe, recurrent spotting and obesity rule out ultrasound alone, so the next step is endometrial biopsy, and atrophy is a diagnosis of exclusion."
   }
  },
  {
@@ -759,7 +759,7 @@
    "Coronary heart disease events"
   ],
   "a": 0,
-  "e": "The combined arm of the WHI showed that estrogen with medroxyprogesterone reduced **hip fracture** and colorectal cancer, because estrogen restrains osteoclast-mediated bone resorption. The same regimen increased invasive breast cancer, stroke, venous thromboembolism including pulmonary embolism, and coronary events, which is why the trial stopped. Later analyses showed these harms were concentrated in older women who started therapy many years after menopause, the basis of the timing hypothesis. Hormone therapy is not used first-line for osteoporosis alone.",
+  "e": "The combined arm of the WHI showed that estrogen with medroxyprogesterone reduced **hip fracture** and colorectal cancer, because estrogen restrains osteoclast-mediated bone resorption. The same regimen increased invasive breast cancer, stroke, venous thromboembolism including pulmonary embolism, and coronary events, which is why the trial stopped. Later analyses found low absolute risk when therapy began before 60 or within 10 years of menopause, the basis of the timing hypothesis. Hormone therapy is not used first-line for osteoporosis alone.",
   "w": {
    "Invasive breast cancer": "Breast cancer increased with estrogen plus medroxyprogesterone, whereas the estrogen-alone arm did not show an increase.",
    "Ischemic stroke": "Stroke rose in both the combined and the estrogen-alone arms, reflecting estrogen's prothrombotic effect in older women.",

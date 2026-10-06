@@ -130,7 +130,7 @@
    "Subserosal",
    "Cervical",
    "Broad ligament",
-   "Parasitic omental"
+   "Pedunculated subserosal"
   ],
   "a": 0,
   "x": "Submucosal fibroids bulge into the uterine cavity. They stretch and ulcerate the lining and make the uterus contract poorly, so they cause heavy periods, bleeding between periods and miscarriage out of proportion to their size.",
@@ -138,7 +138,7 @@
    "Subserosal": "Subserosal fibroids grow outward under the peritoneum and press on the bladder or bowel. They barely affect the lining, so they bleed less.",
    "Cervical": "Cervical leiomyomas are uncommon. They tend to block the canal or press on nearby structures instead of causing the usual heavy periods.",
    "Broad ligament": "Broad ligament fibroids lie beside the uterus and can press on the ureter. They sit outside the cavity, so they do not make the lining bleed.",
-   "Parasitic omental": "A parasitic fibroid is a stalked subserosal fibroid that has attached to the omentum and found its own blood supply. It is rare and does not bleed through the vagina."
+   "Pedunculated subserosal": "A pedunculated subserosal fibroid hangs from the outer surface on a stalk. It sits outside the cavity and leaves the lining alone, so it rarely causes heavy bleeding."
   },
   "media": "fig:rp14_map",
   "pt": {
@@ -166,7 +166,7 @@
    "Spindle cells, plasma cells and edema"
   ],
   "a": 0,
-  "x": "Leiomyosarcoma is diagnosed when cytologic atypia, necrosis and many mitoses are found together. Mitoses alone occur in benign tumors of young women. These tumors are soft, hemorrhagic and necrotic.",
+  "x": "Leiomyosarcoma is diagnosed from cytologic atypia, necrosis and many mitoses weighed together, and mitoses alone occur in benign tumors of young women. These tumors are soft, hemorrhagic and necrotic.",
   "w": {
    "Whorls, calcification and hyalinization": "These are changes of benign leiomyomas, which are firm and whorled and may calcify. They point to a benign tumor.",
    "Glands, stroma and hemosiderin": "These are the parts of endometriosis, where old bleeding leaves hemosiderin-laden macrophages. They are unrelated to a smooth muscle cancer.",
@@ -296,7 +296,7 @@
    "Adenomyosis"
   ],
   "a": 0,
-  "x": "Serous endometrial intraepithelial carcinoma (SEIC) is the TP53-mutated precursor of serous carcinoma. It arises in atrophic endometrium, and its cells can spread early to the peritoneum.",
+  "x": "Serous endometrial intraepithelial carcinoma is the TP53-mutated precursor of serous carcinoma. It arises in atrophic endometrium, and its cells can spread early to the peritoneum.",
   "w": {
    "Atypical hyperplasia (EIN)": "EIN is the precursor of estrogen-driven endometrioid carcinoma. It carries PTEN loss, not the TP53 changes of the serous pathway.",
    "Hyperplasia without atypia": "Hyperplasia without atypia is a low-risk estrogen effect that responds to progestin. It is not linked to the serous pathway.",

@@ -16,16 +16,16 @@
    "Combined oral contraceptive pill",
    "Transdermal contraceptive patch",
    "Contraceptive vaginal ring",
-   "Extended-cycle combined pill",
+   "Copper intrauterine device",
    "Levonorgestrel intrauterine device"
   ],
   "a": 4,
-  "e": "Smoking after age 35 makes every estrogen-containing method unacceptable. Ethinyl estradiol raises the liver's clotting factors, and smoking adds injury to the vessel wall, so the risk of myocardial infarction and stroke climbs steeply. The pill, the **transdermal patch**, the vaginal ring and an extended-cycle pill all contain estrogen, so they share the contraindication. The **levonorgestrel intrauterine device** contains only a progestin and acts mainly inside the uterus. It lasts for years, fails in fewer than 1 in 100 users a year and lightens heavy periods, so it is the best fit.",
+  "e": "Smoking after age 35 makes every estrogen-containing method unacceptable. Ethinyl estradiol raises the liver's clotting factors, and smoking adds injury to the vessel wall, so the risk of myocardial infarction and stroke climbs steeply. The pill, the **transdermal patch** and the vaginal ring all contain estrogen, so they share the contraindication. The copper IUD avoids estrogen but makes heavy periods heavier. The **levonorgestrel intrauterine device** contains only a progestin and acts mainly inside the uterus. It lasts for years, fails in fewer than 1 in 100 users a year and lightens heavy periods, so it is the best fit.",
   "w": {
    "Combined oral contraceptive pill": "Its ethinyl estradiol raises clotting factors, and in a daily smoker older than 35 that combination sharply raises the risk of myocardial infarction and stroke.",
    "Transdermal contraceptive patch": "The patch delivers ethinyl estradiol continuously, so it carries the same estrogen-related clot risk for her.",
    "Contraceptive vaginal ring": "The ring releases ethinyl estradiol with etonogestrel. Bypassing the gut does not remove estrogen's effect on clotting factors, so smoking still rules it out.",
-   "Extended-cycle combined pill": "Extending the active pills only reduces the number of withdrawal bleeds. Every tablet still contains estrogen, so it is unsafe for a smoker older than 35."
+   "Copper intrauterine device": "The copper IUD has no estrogen and is safe for a smoker, but its local inflammation makes periods heavier and more painful, which would worsen her moderately heavy menses."
   },
   "et": [
    [
@@ -58,11 +58,11 @@
      "Lighter"
     ],
     [
-     "Extended-cycle combined pill",
-     "Ethinyl estradiol + progestin",
-     "Yes",
-     "About 7 in 100",
-     "Fewer bleeds"
+     "Copper intrauterine device",
+     "None (copper)",
+     "No",
+     "Under 1 in 100",
+     "Heavier, more cramping"
     ],
     [
      "Levonorgestrel intrauterine device",

@@ -100,7 +100,7 @@
    "Superficial perineal pouch"
   ],
   "a": 0,
-  "e": "A full bladder rises above the pubic symphysis and lifts the peritoneum off the abdominal wall. That leaves a fat-filled space outside the peritoneum in front of the bladder, the **retropubic space**. A needle placed just above the symphysis crosses this space and enters the bladder without entering the peritoneal cavity. The rectovesical pouch is part of the peritoneal cavity and lies behind the bladder. The deep and superficial perineal pouches and the ischioanal fossa are below the pelvic floor, so they cannot be reached from above the pubis.",
+  "e": "The **retropubic space** is the fat-filled space between the pubic symphysis and the bladder, and it always lies outside the peritoneum, which covers only the bladder's upper surface. A full bladder rises above the pubic symphysis and lifts that peritoneum with it. A needle placed just above the symphysis crosses this space and enters the bladder without entering the peritoneal cavity. The rectovesical pouch is part of the peritoneal cavity and lies behind the bladder. The deep and superficial perineal pouches and the ischioanal fossa are below the pelvic floor, so they cannot be reached from above the pubis.",
   "w": {
    "Rectovesical pouch": "The rectovesical pouch is a peritoneal recess behind the bladder. Entering it would mean entering the peritoneal cavity, which the urologist wants to avoid.",
    "Deep perineal pouch": "The deep perineal pouch lies below the pelvic floor, around the urethra. It is reached from the perineum, not from above the pubic bone.",
@@ -147,7 +147,7 @@
     ]
    ]
   ],
-  "bl": "A suprapubic catheter crosses the extraperitoneal retropubic space, which a full bladder opens by lifting the peritoneum away.",
+  "bl": "A suprapubic catheter crosses the extraperitoneal retropubic space. A full bladder lifts the peritoneum above the pubis, so the needle stays outside the peritoneal cavity.",
   "ef": "rp1_sagittal",
   "pt": {
    "hl": [
@@ -210,7 +210,7 @@
      "Ovarian ligament",
      "Ovary to the uterus",
      "Small uterine-ovarian anastomosis",
-     "Removal of the uterus with the adnexa"
+     "Hysterectomy that leaves the ovary in place"
     ],
     [
      "Cardinal ligament",
@@ -375,7 +375,7 @@
      "Left common iliac vein",
      "Internal and external iliac veins",
      "Inferior vena cava",
-     "Both sides, unpaired course"
+     "Paired; the two join to form the IVC"
     ],
     [
      "Inferior mesenteric vein",
@@ -408,7 +408,7 @@
   "obj": [
    "ANAT-PELVIS-LAB.11"
   ],
-  "s": "A 62-year-old woman who has had four vaginal deliveries reports a feeling of something falling out of her vagina that worsens by evening. On examination with straining, the cervix descends to the vaginal opening, while the anterior and posterior vaginal walls stay in place. Imaging shows stretched and torn condensations of endopelvic fascia that anchor the cervix to the pelvic side wall.",
+  "s": "A 62-year-old woman who has had four vaginal deliveries reports a feeling of something falling out of her vagina that worsens by evening. On examination with straining, the cervix descends to the vaginal opening, while the anterior and posterior vaginal walls stay in place.",
   "l": "Failure of which structure best explains her apical prolapse?",
   "o": [
    "Cardinal ligament",
@@ -497,7 +497,7 @@
    "Obturator nerve"
   ],
   "a": 0,
-  "e": "Only the **superior gluteal nerve** and vessels leave the greater sciatic foramen above the piriformis, so a wound there points to this nerve. It supplies the hip abductors (gluteus medius and minimus), which hold the pelvis level when the opposite foot is lifted. Losing them gives a positive Trendelenburg sign and a lurching gait. The inferior gluteal, sciatic and pudendal nerves all leave below the piriformis. Normal knee flexion and normal sensation on the back of the thigh rule out a sciatic injury. The obturator nerve does not pass through the greater sciatic foramen at all.",
+  "e": "Only the **superior gluteal nerve** and vessels leave the greater sciatic foramen above the piriformis, so a wound there points to this nerve. It supplies the hip abductors (gluteus medius and minimus), which hold the pelvis level when the opposite foot is lifted. Losing them gives a positive Trendelenburg sign and a lurching gait. The inferior gluteal, sciatic and pudendal nerves all leave below the piriformis. Normal knee flexion and normal sensation on the sole rule out a sciatic injury. The obturator nerve does not pass through the greater sciatic foramen at all.",
   "w": {
    "Inferior gluteal nerve": "The inferior gluteal nerve leaves below the piriformis and supplies gluteus maximus. Its loss weakens rising from a chair and climbing stairs, not leveling the pelvis.",
    "Sciatic nerve": "The sciatic nerve leaves below the piriformis. Injury would weaken knee flexion and cause numbness below the knee, and both are normal here.",
@@ -566,7 +566,7 @@
   "obj": [
    "ANAT-PELVIS-LEC.3"
   ],
-  "s": "A 33-year-old woman has leaked urine with coughing and lifting since a prolonged forceps delivery 1 year ago. Pelvic floor MRI shows a tear of the main portion of the levator ani, the part that arises from the back of the pubic bone and passes around the urethra and vagina on its way to the coccyx.",
+  "s": "A 33-year-old woman has leaked urine with coughing and lifting since a prolonged forceps delivery 1 year ago. She has no fecal incontinence. Pelvic floor MRI shows a tear in the part of the levator ani that normally steadies the urethra and bladder neck during a cough.",
   "l": "Which muscle is torn?",
   "o": [
    "Pubococcygeus",

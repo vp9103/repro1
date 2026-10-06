@@ -512,7 +512,7 @@
     [
      "Extramammary Paget disease",
      "Large pale cells within it",
-     "PAS and CK7 positive",
+     "PAS and keratin positive",
      "Intraepithelial adenocarcinoma"
     ]
    ]
@@ -627,7 +627,7 @@
   "w": {
    "Nearly always an underlying ductal carcinoma": "This describes Paget disease of the nipple, where tumor cells travel up the ducts from a breast carcinoma. Vulvar disease usually starts in the epidermis itself.",
    "Origin from melanocytes of the basal layer": "Melanoma in situ can spread through the epidermis in a similar pattern, but its cells stain for S100 and lack PAS-positive mucin.",
-   "Origin from HPV-infected basal keratinocytes": "High-grade squamous lesions arise from HPV-infected keratinocytes and stain for p16. These cells are glandular, with mucin and keratin, not squamous.",
+   "Origin from HPV-infected basal keratinocytes": "High-grade squamous lesions arise from HPV-infected keratinocytes and stain for p16. These cells are glandular and hold PAS-positive mucin, which squamous cells lack.",
    "Rapid spread to the para-aortic lymph nodes": "The disease is usually indolent and confined to the epidermis for years. Invasive vulvar tumors spread first to superficial inguinal nodes, not para-aortic nodes."
   },
   "et": [
@@ -691,7 +691,7 @@
   "o": [
    "Alpha-fetoprotein",
    "S100",
-   "Cytokeratin 7",
+   "Cytokeratin",
    "Chromogranin",
    "Desmin"
   ],
@@ -700,7 +700,7 @@
   "w": {
    "Alpha-fetoprotein": "AFP marks yolk sac tumor, which can also bleed from the vagina of an infant but shows Schiller-Duval bodies instead of rhabdomyoblasts.",
    "S100": "S100 marks melanocytes and Schwann cells. A primitive skeletal muscle tumor does not express it.",
-   "Cytokeratin 7": "Cytokeratins mark epithelial tumors such as clear cell adenocarcinoma. This mesenchymal tumor lies beneath an intact epithelium.",
+   "Cytokeratin": "Cytokeratin marks epithelial tumors such as clear cell adenocarcinoma. This mesenchymal tumor lies beneath an intact epithelium and does not express it.",
    "Chromogranin": "Chromogranin identifies neuroendocrine cells, as in neuroblastoma, another small round blue cell tumor of childhood."
   },
   "et": [
@@ -730,8 +730,8 @@
      "Pigment or spindle cells"
     ],
     [
-     "Cytokeratin 7",
-     "Glandular epithelium",
+     "Cytokeratin",
+     "Epithelial cells",
      "Clear cell adenocarcinoma, Paget",
      "Glands or pale cells"
     ],
@@ -852,38 +852,38 @@
     "Option",
     "Risk class",
     "Typical lesion",
-    "Vaccine coverage"
+    "In the 9-valent vaccine"
    ],
    [
     [
      "HPV types 6 and 11",
      "Low risk",
      "Condyloma acuminatum",
-     "Quadrivalent and nine-valent"
+     "Yes"
     ],
     [
      "HPV types 16 and 18",
      "High risk",
      "HSIL and carcinoma",
-     "Bivalent, quadrivalent, nine-valent"
+     "Yes"
     ],
     [
      "HPV types 31 and 33",
      "High risk",
      "Dysplasia and carcinoma",
-     "Nine-valent"
+     "Yes"
     ],
     [
      "HPV types 1 and 2",
      "Cutaneous",
      "Plantar and common warts",
-     "Not covered"
+     "No"
     ],
     [
      "HPV types 45 and 52",
      "High risk",
      "Cervical dysplasia and cancer",
-     "Nine-valent only"
+     "Yes"
     ]
    ]
   ],

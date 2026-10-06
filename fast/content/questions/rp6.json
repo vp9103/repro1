@@ -430,7 +430,7 @@
   "w": {
    "hCG from a testicular germ cell tumor": "An hCG-secreting tumor does raise estradiol through aromatase, but hCG suppresses pituitary FSH and LH. His testes are small and have no mass.",
    "Prolactin secretion by a pituitary adenoma": "A prolactinoma suppresses GnRH, so LH and FSH would be low, but his gonadotropins are high.",
-   "A defective androgen receptor in breast tissue": "Androgen receptor defects cause androgen insensitivity in a 46,XY person who looks female from birth. This man virilized and has a male phenotype.",
+   "A defective androgen receptor in breast tissue": "Androgen receptor defects raise both LH and testosterone, because the pituitary cannot sense androgen. His testosterone is low, which points to failing Leydig cells instead.",
    "Reduced hepatic clearance of estrogen": "Cirrhosis raises estrogen through poor clearance. It does not explain small firm testes since adolescence, azoospermia and high FSH in a healthy young man."
   },
   "et": [
@@ -462,8 +462,8 @@
     [
      "A defective androgen receptor in breast tissue",
      "LH high",
-     "Testes in a female phenotype",
-     "Unopposed estrogen action"
+     "Testes making high testosterone",
+     "Estrogen acts while androgen cannot"
     ],
     [
      "Reduced hepatic clearance of estrogen",

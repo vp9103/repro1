@@ -132,7 +132,7 @@
    "Prehn sign",
    "Blue dot sign",
    "Whirlpool sign",
-   "Carnett sign"
+   "Transillumination"
   ],
   "a": 1,
   "x": "Prehn sign is the relief of pain when the testis is lifted. It favors epididymitis, because lifting eases the pull on the inflamed epididymis, while torsion gives no relief. It is unreliable and must never delay surgery when torsion is suspected.",
@@ -140,7 +140,7 @@
    "Cremasteric reflex": "The cremasteric reflex is lifting of the testis when the inner thigh is stroked. It is present in epididymitis and absent in torsion, but it is a reflex, not a response to lifting.",
    "Blue dot sign": "The blue dot sign is a bluish spot seen through the scrotal skin at the upper pole in a torsed appendix testis.",
    "Whirlpool sign": "The whirlpool sign is the spiral of twisted cord seen on ultrasound in testicular torsion. It is unrelated to pain relief.",
-   "Carnett sign": "Carnett sign is increased abdominal wall pain when the muscles are tensed. It separates wall pain from visceral pain and is unrelated to the testis."
+   "Transillumination": "Transillumination is light passing through a fluid-filled swelling such as a hydrocele or spermatocele. It does not involve lifting the testis or relieving pain."
   },
   "media": "fig:rp20_torsion",
   "pt": {
@@ -212,7 +212,7 @@
   "x": "Stroking the inner thigh sends signals up the femoral branch of the genitofemoral nerve. The genital branch carries the motor signal that makes the cremaster lift the testis. The reflex is absent in torsion.",
   "w": {
    "Femoral branch of the genitofemoral nerve": "The femoral branch is the sensory limb, carrying signals from the skin of the upper inner thigh. The genital branch carries the motor output to the cremaster.",
-   "Ilioinguinal nerve": "The ilioinguinal nerve supplies the skin of the front of the scrotum and the root of the penis. It is not part of the cremasteric reflex arc.",
+   "Ilioinguinal nerve": "The ilioinguinal nerve gives sensation to the front of the scrotum and the upper inner thigh. It carries no motor fibers to the cremaster, so it cannot be the motor limb.",
    "Pudendal nerve": "The pudendal nerve supplies the perineum, back of the scrotum and penile muscles and carries the bulbocavernosus reflex, not the cremasteric reflex.",
    "Iliohypogastric nerve": "The iliohypogastric nerve supplies skin above the pubis and muscles of the lower abdominal wall, not the cremaster muscle."
   }
@@ -349,7 +349,7 @@
    "Teratoma"
   ],
   "a": 0,
-  "x": "Seminoma's uniform fried-egg cells and lymphocyte-rich septa respond well to radiation and chemotherapy. It spreads late and through lymphatics, so early-stage disease is almost always cured.",
+  "x": "Seminoma cells are very sensitive to radiation and chemotherapy. The tumor spreads late and through lymphatics, so early-stage disease is almost always cured.",
   "w": {
    "Embryonal carcinoma": "Embryonal carcinoma is aggressive and usually mixed with other elements, so its outlook is worse than seminoma.",
    "Yolk sac tumor": "Yolk sac tumor has a good prognosis in young boys, but in adults it appears within mixed tumors, which behave more aggressively than seminoma.",

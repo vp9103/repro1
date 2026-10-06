@@ -267,9 +267,9 @@
     ],
     [
      "In 1 year",
-     "Former annual Pap; early years after HIV diagnosis",
-     "Not average risk",
-     "More harm than benefit"
+     "Old annual Pap; first years after an HIV diagnosis",
+     "Any age, with HIV",
+     "More harm than benefit at average risk"
     ],
     [
      "In 2 years",
@@ -399,7 +399,7 @@
   "a": 0,
   "e": "An HSIL cytology result carries a high immediate risk of CIN 3, so she needs **colposcopy** with directed biopsy to establish a tissue diagnosis before treatment is chosen. Cytology is a screening test and cannot by itself establish the grade or exclude invasion. Repeat cytology or cotesting would leave a likely high-grade lesion unassessed for a year or more. Total hysterectomy is excessive for a precancer in a woman who wants children, and MRI stages cancers rather than finding precancer.",
   "w": {
-   "Repeat cytology in 12 months": "A one-year wait suits low-risk findings such as ASC-US with negative HPV. HSIL has too high an immediate CIN 3 risk to defer.",
+   "Repeat cytology in 12 months": "A one-year repeat test is kept for low-grade disease that usually regresses, such as biopsy-proven CIN 1. HSIL carries too high an immediate CIN 3 risk to defer.",
    "Cotesting in 3 years": "A three-year cotest interval follows reassuring results. After an HSIL result it would leave a probable precancer unassessed and possibly progressing.",
    "Total hysterectomy": "Hysterectomy removes her fertility and overtreats a lesion that has not yet been confirmed. High-grade precancer is managed with local excision of the cervix.",
    "Pelvic MRI": "MRI helps stage established invasive cancer by showing parametrial and nodal spread. It cannot detect or grade an intraepithelial lesion."
@@ -426,7 +426,7 @@
     ],
     [
      "Cotesting in 3 years",
-     "Routine screening",
+     "Follow-up after a reassuring result",
      "No",
      "After reassuring results"
     ],
@@ -806,9 +806,9 @@
     ],
     [
      "Vaginal cuff cytology every year",
-     "Total hysterectomy with a past high-grade lesion",
+     "Only women whose cervix was removed",
      "No, samples the vaginal cuff",
-     "Surveillance"
+     "Not routine screening"
     ],
     [
      "Colposcopy every 3 years",
