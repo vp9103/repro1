@@ -1,0 +1,51 @@
+{
+ "t": "A garden tour of breast cancer types and drugs",
+ "story": "Tour a garden where each plant is a breast cancer. The biggest is a hard, spiky **chestnut burr**: invasive ductal carcinoma, the most common. **Ants** march through the grass in single file: invasive lobular carcinoma. A red, warm **orange** with dimpled skin hangs from a branch: inflammatory carcinoma. A burnt **cookie crust** lies on the path: Paget disease of the nipple. Now the gatekeepers. A **bouncer** guards the breast door but waves people into the uterus and bone: tamoxifen. A **perfume factory** in the fat cells, the main estrogen source after menopause, is shut down: aromatase inhibitors. A crowd of **antennas** wears umbrellas, and a heart droops, then recovers: HER2 and trastuzumab. The last bed has **three bare doors**: triple-negative cancer. A **pair** of scissors jams the repair kit of BRCA cells: PARP inhibitors.",
+ "keys": [
+  [
+   "🌰",
+   "Chestnut burr",
+   "Invasive ductal carcinoma: the most common type, about 70 to 80 percent. Its desmoplastic stroma makes a hard, stellate mass."
+  ],
+  [
+   "🐜",
+   "Ants in single file",
+   "Invasive lobular carcinoma: E-cadherin is lost, so cells infiltrate in single file with no discrete mass. More often bilateral, and can hide on a mammogram."
+  ],
+  [
+   "🍊",
+   "Orange peel",
+   "Inflammatory carcinoma: tumor emboli plug dermal lymphatics, so the breast is red, warm and swollen with peau d'orange skin. Poor prognosis."
+  ],
+  [
+   "🍪",
+   "Burnt cookie crust",
+   "Paget disease of the nipple: a crusted, eczematous nipple from carcinoma cells spreading into the epidermis from an underlying DCIS or invasive cancer."
+  ],
+  [
+   "💂",
+   "Bouncer at the breast door",
+   "Tamoxifen, a SERM, blocks the receptor in breast but stimulates it in endometrium and bone: more endometrial cancer and clots, but protected bone after menopause."
+  ],
+  [
+   "🏭",
+   "Perfume factory in the fat",
+   "Aromatase inhibitors (anastrozole, letrozole, exemestane) block androgen-to-estrogen conversion after menopause. Side effects: bone loss and joint pain."
+  ],
+  [
+   "📡",
+   "Antennas wearing umbrellas",
+   "HER2 (ERBB2) amplification: trastuzumab blocks the receptor. Its cardiotoxicity is reversible, unlike the dose-dependent, largely permanent damage of anthracyclines."
+  ],
+  [
+   "🚪",
+   "Three bare doors",
+   "Triple-negative: no ER, PR or HER2. Common in BRCA1 carriers and young Black women; depends on chemotherapy; poor prognosis."
+  ],
+  [
+   "✂️",
+   "Scissors jam the repair kit",
+   "PARP inhibitors such as olaparib kill BRCA-deficient cells, which cannot repair the DNA breaks that pile up when PARP is blocked."
+  ]
+ ]
+}

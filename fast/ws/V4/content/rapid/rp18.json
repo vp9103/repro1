@@ -467,6 +467,14 @@
    "Positive IgM with negative IgG": "IgM without IgG marks a very early infection or a false-positive IgM, not an infection months before pregnancy.",
    "Negative IgG and IgM": "Negative antibodies mean the patient has never been infected and is still susceptible, so exposure must be avoided.",
    "Fourfold rise in IgG titer": "A fourfold rise between paired sera shows an active, recent infection, the opposite of old, stable immunity."
+  },
+  "media": "fig:rp18_dating",
+  "pt": {
+   "hl": [
+    "High-avidity IgG",
+    "At least several months old"
+   ],
+   "say": "In the first-trimester list, high-avidity IgG means the infection is at least several months old and began before pregnancy, while low avidity means a recent primary infection."
   }
  },
  {
