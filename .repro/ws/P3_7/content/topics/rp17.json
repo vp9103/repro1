@@ -145,12 +145,17 @@
     [
      "Efavirenz, nevirapine (NNRTIs)",
      "Allosteric reverse transcriptase block",
-     "Efavirenz vivid dreams; nevirapine hepatotoxicity"
+     "Rash and hepatotoxicity for the class, worst with nevirapine; efavirenz vivid dreams and other CNS effects"
     ],
     [
      "Protease inhibitors (-navir)",
      "Block polyprotein cleavage",
-     "Lipodystrophy, hyperglycemia; indinavir kidney stones"
+     "Lipodystrophy, hyperglycemia, GI upset; indinavir kidney stones; atazanavir indirect hyperbilirubinemia"
+    ],
+    [
+     "Integrase inhibitors (-tegravir)",
+     "Block insertion of viral DNA into the host chromosome",
+     "Weight gain, insomnia and headache; raltegravir can raise creatine kinase"
     ],
     [
      "Maraviroc; enfuvirtide",
@@ -163,7 +168,7 @@
    "call",
    "key",
    "Ritonavir is given for its side effect",
-   "Ritonavir is a protease inhibitor given at a dose too low to suppress HIV. Its job is to **inhibit CYP3A4**, the liver enzyme that clears most protease inhibitors. This raises the level and lengthens the half-life of the partner drug. Cobicistat boosts in the same way but has no antiviral effect. The cost is many drug interactions."
+   "Ritonavir is a protease inhibitor given at a dose too low to suppress HIV. Its job is to **inhibit CYP3A4**, the liver enzyme that clears most protease inhibitors. This raises the level and lengthens the half-life of the partner drug. Cobicistat boosts in the same way but has no antiviral effect. The cost is many drug interactions, and the reverse matters too: rifampin, a strong CYP3A4 inducer, lowers protease inhibitor levels and must not be combined with them."
   ],
   [
    "h",
@@ -191,7 +196,41 @@
   ],
   [
    "p",
-   "Testing follows the CDC algorithm. A fourth-generation antigen/antibody immunoassay detects the **p24** antigen as well as antibody, so it turns positive earlier than an antibody-only test. A reactive result goes to an antibody differentiation assay, which separates HIV-1 from HIV-2. A negative or indeterminate result goes to an HIV-1 RNA test, which finds acute infection. The markers appear in a fixed order. RNA comes first at about 10 days, then p24 antigen at 2 to 3 weeks, then antibody at 3 to 4 weeks. The gap before antibody appears is the window period. The **viral load** measures replication and treatment response, while the CD4 count measures immune damage. Everyone is offered opt-out screening, and every pregnancy is tested."
+   "Opportunistic infections arrive in a set order as the CD4 count falls, so the count predicts both the infection to expect and the prophylaxis a patient needs. The cutoffs are approximate guides, not sharp lines, and one drug, trimethoprim-sulfamethoxazole (TMP-SMX), does most of the preventive work."
+  ],
+  [
+   "t",
+   [
+    "CD4 count (cells/mm³)",
+    "What tends to appear",
+    "Prophylaxis"
+   ],
+   [
+    [
+     "Below 500",
+     "Oral thrush, oral hairy leukoplakia (EBV), Kaposi sarcoma (HHV-8); tuberculosis can reactivate at any count",
+     "None"
+    ],
+    [
+     "Below 200",
+     "Pneumocystis pneumonia, progressive multifocal leukoencephalopathy (JC virus), HIV-associated dementia",
+     "TMP-SMX against Pneumocystis"
+    ],
+    [
+     "Below 100",
+     "Toxoplasma brain abscesses, cryptococcal meningitis, Candida esophagitis",
+     "TMP-SMX also prevents Toxoplasma in patients with positive Toxoplasma IgG"
+    ],
+    [
+     "Below 50",
+     "Cytomegalovirus (CMV) retinitis and colitis, Mycobacterium avium complex, EBV-associated CNS lymphoma",
+     "Azithromycin against Mycobacterium avium complex if the virus is not yet suppressed by ART"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Everyone is offered opt-out screening, and every pregnancy is tested. Laboratory testing follows the CDC algorithm. A fourth-generation antigen/antibody immunoassay detects the **p24** antigen as well as antibody, so it turns positive earlier than an antibody-only test. A reactive result goes to an antibody differentiation assay, which separates HIV-1 from HIV-2. A negative or indeterminate result goes to an HIV-1 RNA test, which finds acute infection. The markers appear in a fixed order. RNA comes first at about 10 days, then p24 antigen at 2 to 3 weeks, then antibody at 3 to 4 weeks. The gap before antibody appears is the window period. The **viral load** measures replication and treatment response, while the CD4 count measures immune damage. Before ART starts, the virus is genotyped for resistance mutations to choose the drugs."
   ],
   [
    "f",
@@ -221,7 +260,7 @@
   ],
   [
    "p",
-   "Genital herpes, usually HSV-2 but increasingly HSV-1, causes painful grouped **vesicles** on a red base. They break into shallow ulcers. A first episode adds fever, painful urination and tender inguinal nodes. During that first infection the virus travels up sensory nerves and becomes latent in the **sacral** dorsal root ganglia. Oral HSV-1 settles in the trigeminal ganglion instead. Stress, menses, illness or immunosuppression can reactivate the virus, and silent viral shedding causes most transmission. Lesion PCR is the most sensitive test. A **Tzanck** smear shows multinucleated giant cells with Cowdry A inclusions, but it cannot tell herpes simplex from varicella-zoster. Blood tests for antibody are not used to screen people without symptoms."
+   "Genital herpes, usually HSV-2 but increasingly HSV-1, causes painful grouped **vesicles** on a red base. They break into shallow ulcers. A first episode adds fever, painful urination and tender inguinal nodes, and HSV-2 can also cause aseptic (viral) meningitis. During that first infection the virus travels up sensory nerves and becomes latent in the **sacral** dorsal root ganglia. Oral HSV-1 settles in the trigeminal ganglion instead. Stress, menses, illness or immunosuppression can reactivate the virus, and silent viral shedding causes most transmission. Lesion PCR is the most sensitive test. A **Tzanck** smear shows multinucleated giant cells with Cowdry A inclusions, but it cannot tell herpes simplex from varicella-zoster. Blood tests for antibody are not used to screen people without symptoms."
   ],
   [
    "f",
@@ -229,7 +268,11 @@
   ],
   [
    "p",
-   "Acyclovir is a guanosine analog that stays inactive until viral {{rp17tk|thymidine kinase}} adds its first phosphate. Host kinases then make the triphosphate, which blocks viral DNA polymerase and ends the DNA chain. Only infected cells contain the viral kinase, so uninfected cells are spared. Valacyclovir is a prodrug that is absorbed better, and famciclovir works the same way. High-dose IV acyclovir can form **crystals** in the kidney tubules, so patients are hydrated. Resistance, mostly in patients with AIDS, comes from a thymidine kinase mutation. **Foscarnet**, a pyrophosphate analog that binds DNA polymerase directly, treats resistant virus but damages the kidneys and lowers calcium and magnesium, which can cause seizures. Pregnant women with genital herpes take acyclovir from 36 weeks to lower the chance of lesions at delivery."
+   "Acyclovir is a guanosine analog that stays inactive until viral {{rp17tk|thymidine kinase}} adds its first phosphate. Host kinases then make the triphosphate, which blocks viral DNA polymerase and ends the DNA chain. Only infected cells contain the viral kinase, so uninfected cells are spared. Valacyclovir is a prodrug that is absorbed better, and famciclovir works the same way. The same drugs treat varicella-zoster but not cytomegalovirus, which lacks thymidine kinase. High-dose IV acyclovir can form **crystals** in the kidney tubules, so patients are hydrated. Pregnant women with genital herpes take acyclovir from 36 weeks to lower the chance of lesions at delivery."
+  ],
+  [
+   "p",
+   "Resistance, mostly in patients with AIDS, comes from a thymidine kinase mutation. **Foscarnet**, a pyrophosphate analog that binds DNA polymerase directly, treats resistant virus but damages the kidneys and lowers calcium and magnesium, which can cause seizures. Ganciclovir, which a CMV kinase activates, treats CMV retinitis and colitis but suppresses the bone marrow."
   ],
   [
    "why",
@@ -242,7 +285,7 @@
   ],
   [
    "p",
-   "HPV is a nonenveloped virus with circular double-stranded DNA in an **icosahedral** capsid made of L1 and L2 proteins. It spreads by skin-to-skin contact, so condoms reduce but do not prevent transmission. It enters basal cells through tiny breaks in the skin. Infected cells become koilocytes, which are squamous cells with a wrinkled nucleus and a clear halo. Low-risk types 6 and 11 cause **genital warts**, the soft, cauliflower-like condylomata acuminata. High-risk types 16 and 18 cause cancers of the cervix, anus, oropharynx and penis. In these cancers the viral DNA integrates into the host genome, and the E6 protein degrades p53 while E7 inactivates Rb."
+   "HPV is a nonenveloped virus with circular double-stranded DNA in an **icosahedral** capsid made of L1 and L2 proteins. It spreads by skin-to-skin contact, so condoms reduce but do not prevent transmission. It enters basal cells through tiny breaks in the skin. Infected cells become koilocytes, which are squamous cells with a wrinkled nucleus and a clear halo. Low-risk types 6 and 11 cause **genital warts**, the soft, cauliflower-like condylomata acuminata. High-risk types 16 and 18 cause cancers of the cervix, anus, oropharynx and penis. In people with HIV, weak T-cell control lets HPV persist, so cervical and anal cancers are more common, and anal cytology is added to cervical screening. In these cancers the viral DNA integrates into the host genome, and the E6 protein degrades p53 while E7 inactivates Rb."
   ],
   [
    "p",
@@ -280,7 +323,7 @@
   ],
   [
    "p",
-   "**Molluscum contagiosum** is caused by a poxvirus. It produces firm, pearly, dome-shaped papules that are umbilicated, meaning centrally dimpled. Biopsy shows large eosinophilic cytoplasmic molluscum bodies, also called Henderson-Paterson bodies. The lesions clear on their own in healthy people, though curettage or cryotherapy can remove them. In adults the genital lesions are sexually transmitted, and widespread lesions suggest HIV with a low CD4 count."
+   "**Molluscum contagiosum** is caused by a poxvirus, the largest DNA virus and the only one that replicates in the cytoplasm, because it carries its own DNA-dependent RNA polymerase. It produces firm, pearly, dome-shaped papules that are umbilicated, meaning centrally dimpled. Biopsy shows large eosinophilic cytoplasmic molluscum bodies, also called Henderson-Paterson bodies. The lesions clear on their own in healthy people, though curettage or cryotherapy can remove them. In adults the genital lesions are sexually transmitted, and widespread lesions suggest HIV with a low CD4 count."
   ],
   [
    "sexp",

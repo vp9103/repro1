@@ -44,19 +44,19 @@
 <text class="b" x="590" y="70" font-size="16">Bishop score, 0 to 13</text>
 <rect x="590" y="84" width="282" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)"/>
 <text class="b" x="602" y="106" font-size="14.5">Dilation</text>
-<text x="602" y="127" font-size="13.5">closed (0) to 5 cm or more (3)</text>
+<text x="602" y="127" font-size="13.5">closed to open</text>
 <rect x="590" y="144" width="282" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)"/>
 <text class="b" x="602" y="166" font-size="14.5">Effacement</text>
-<text x="602" y="187" font-size="13.5">30% or less (0) to 80% or more (3)</text>
+<text x="602" y="187" font-size="13.5">thick to thin</text>
 <rect x="590" y="204" width="282" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)"/>
 <text class="b" x="602" y="226" font-size="14.5">Station</text>
-<text x="602" y="247" font-size="13.5">-3 (0) to +1 or +2 (3)</text>
+<text x="602" y="247" font-size="13.5">high to low</text>
 <rect x="590" y="264" width="282" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)"/>
 <text class="b" x="602" y="286" font-size="14.5">Consistency</text>
-<text x="602" y="307" font-size="13.5">firm (0), medium (1), soft (2)</text>
+<text x="602" y="307" font-size="13.5">firm to soft</text>
 <rect x="590" y="324" width="282" height="52" rx="8" fill="var(--surface)" stroke="var(--line-strong)"/>
 <text class="b" x="602" y="346" font-size="14.5">Cervical position</text>
-<text x="602" y="367" font-size="13.5">posterior (0) to anterior (2)</text>
+<text x="602" y="367" font-size="13.5">posterior to anterior</text>
 <text class="gd" x="590" y="410" font-size="14">8 or more: induction likely to work</text>
 <text class="wn" x="590" y="436" font-size="14">Under 8: ripen the cervix first</text>
 <text x="590" y="466" font-size="13.5">Ripe cervix: open, thin, soft, low, forward</text>
