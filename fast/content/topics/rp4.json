@@ -130,11 +130,11 @@
   ],
   [
    "p",
-   "The blastocyst has two parts with two fates. The **inner cell mass** becomes the embryo, and the outer trophoblast becomes the fetal part of the placenta. The trophoblast splits into an inner, dividing cytotrophoblast and an outer {{rp4_syn|syncytiotrophoblast}}. The syncytiotrophoblast erodes the endometrium and secretes **hCG**, so a blood test turns positive about 1 week after fertilization."
+   "The blastocyst has two parts with two fates. The **inner cell mass** becomes the embryo, and the outer trophoblast becomes the fetal part of the placenta. The trophoblast splits into an inner, dividing cytotrophoblast and an outer {{rp4_syn|syncytiotrophoblast}}. The syncytiotrophoblast erodes the endometrium and secretes **hCG**, so a blood test turns positive about 1 week after fertilization. The syncytiotrophoblast also lacks MHC class I molecules, which lowers the chance that the mother's immune system attacks this fetal tissue."
   ],
   [
    "p",
-   "Week 2 follows a rule of 2s. It has a **bilaminar** disc of epiblast and hypoblast, two cavities (the amniotic cavity and the yolk sac) and two trophoblast layers. Week 3 follows a rule of 3s. In **gastrulation**, epiblast cells move through the primitive streak and form a trilaminar disc, so ectoderm, mesoderm and endoderm all come from the epiblast. The notochord forms in the midline and later survives only as the nucleus pulposus of the intervertebral discs. Primitive streak cells that persist can form a sacrococcygeal teratoma, the most common newborn tumor, with tissue from all three layers. Weeks 3 to 8 are the embryonic period of **organogenesis**, when organs form and teratogens do the most damage."
+   "Week 2 follows a rule of 2s. It has a **bilaminar** disc of epiblast and hypoblast, two cavities (the amniotic cavity and the yolk sac) and two trophoblast layers. Week 3 follows a rule of 3s. In **gastrulation**, epiblast cells move through the primitive streak and form a trilaminar disc, so ectoderm, mesoderm and endoderm all come from the epiblast. The notochord forms in the midline and later survives only as the nucleus pulposus of the intervertebral discs. Primitive streak cells that persist can form a sacrococcygeal teratoma, the most common newborn tumor, with tissue from all three layers. Weeks 3 to 8 are the embryonic period of **organogenesis**, when organs form and teratogens do the most damage. Within it the heart starts beating and the limb buds appear in week 4, and the embryo starts to move by week 8."
   ],
   [
    "f",
@@ -152,7 +152,7 @@
   ],
   [
    "p",
-   "A germ layer is a sheet of embryonic cells that builds a predictable set of tissues, so one early defect can link anomalies that look unrelated. The table below lists the layers, what they form and a classic anomaly of each. Mesoderm as a whole forms muscle, bone and connective tissue, the heart, vessels and blood, the kidneys and gonads, and the adrenal cortex. Two traps come up often. The adrenal medulla is {{rp4_crest|neural crest}}, but the adrenal cortex is mesoderm. The anterior pituitary is surface ectoderm, but the posterior pituitary is neuroectoderm."
+   "A germ layer is a sheet of embryonic cells that builds a predictable set of tissues, so one early defect can link anomalies that look unrelated. The table below lists the layers, what they form and a classic anomaly of each. Mesoderm as a whole forms muscle, bone and connective tissue, the heart, vessels and blood, the kidneys and gonads, and the adrenal cortex. Three traps come up often. The adrenal medulla is {{rp4_crest|neural crest}}, but the adrenal cortex is mesoderm. The anterior pituitary is surface ectoderm, but the posterior pituitary is neuroectoderm. The spleen is mesoderm, although it grows in the foregut mesentery."
   ],
   [
    "t",
@@ -164,7 +164,7 @@
    [
     [
      "Surface ectoderm",
-     "Epidermis, lens, enamel, anterior pituitary",
+     "Epidermis with sweat and mammary glands, lens, enamel, anterior pituitary, anal canal below the pectinate line",
      "Craniopharyngioma from a Rathke pouch remnant"
     ],
     [
@@ -174,13 +174,13 @@
     ],
     [
      "Neural crest",
-     "Peripheral ganglia, Schwann cells, melanocytes, adrenal medulla",
-     "Hirschsprung disease"
+     "Peripheral ganglia, Schwann cells, melanocytes, adrenal medulla, aorticopulmonary septum, skull bones, odontoblasts",
+     "Hirschsprung disease; conotruncal heart defects"
     ],
     [
      "Paraxial mesoderm (somites)",
      "Vertebrae, skeletal muscle of the trunk, dermis",
-     "Vertebral defects in VACTERL"
+     "VACTERL: vertebral, anal, cardiac, tracheoesophageal, renal and limb defects"
     ],
     [
      "Intermediate and lateral plate mesoderm",
@@ -189,7 +189,7 @@
     ],
     [
      "Endoderm",
-     "Gut and airway lining, liver, pancreas, thyroid follicles",
+     "Gut and airway lining, liver, pancreas, thyroid follicles, thymus, parathyroids, lower vagina and most of the urethra",
      "Duodenal atresia; tracheoesophageal fistula"
     ]
    ]
@@ -208,11 +208,19 @@
   ],
   [
    "h",
+   "Which genes lay out the body plan?"
+  ],
+  [
+   "p",
+   "Four groups of signaling genes pattern the embryo. Sonic hedgehog, made at the base of each limb bud and along the ventral neural tube, patterns the anterior-posterior axis of the limb and the midline of the brain, so its mutation causes holoprosencephaly. Wnt-7 from the limb ectoderm sets the dorsal-ventral axis of the limb, and FGF from the apical ectodermal ridge at the limb tip drives its lengthening. HOX genes encode transcription factors that give each body segment its head-to-tail identity, so HOX mutations put appendages in the wrong place, and isotretinoin, a vitamin A derivative, causes malformations partly by disturbing HOX expression."
+  ],
+  [
+   "h",
    "How do the membranes and the placenta form?"
   ],
   [
    "p",
-   "Four membranes surround the embryo. The **amnion** grows from the epiblast and fills with fluid that cushions the embryo and lets it move. The **yolk sac** makes the first blood cells and carries the primordial germ cells. The allantois is an outpouching of the hindgut. The vitelline duct links the midgut to the yolk sac. Both run in the connecting stalk of the cord. The **chorion**, made of extraembryonic mesoderm and both trophoblast layers, builds the placenta."
+   "Four membranes surround the embryo. The **amnion** grows from the epiblast and fills with fluid that cushions the embryo and lets it move. The **yolk sac** makes the first blood cells, in weeks 3 to 8, and carries the primordial germ cells. Blood formation then moves to the liver (week 6 until birth), the spleen (weeks 10 to 28) and finally the bone marrow (from week 18 onward). The allantois is an outpouching of the yolk sac into the connecting stalk that later opens into the cloaca at the end of the hindgut. The vitelline duct links the midgut to the yolk sac. Both run in the connecting stalk of the cord. The **chorion**, made of extraembryonic mesoderm and both trophoblast layers, builds the placenta."
   ],
   [
    "p",
@@ -224,7 +232,11 @@
   ],
   [
    "p",
-   "Maternal and fetal blood do not mix. They exchange gases, nutrients and wastes across the villus wall, and maternal IgG crosses it to give the newborn passive immunity. Invading trophoblast remodels the **spiral arteries** into wide, low-resistance channels that fill the **intervillous** space with maternal blood. When remodeling fails, the placenta is underperfused, which underlies preeclampsia and fetal growth restriction. The umbilical cord carries two **umbilical arteries**, which return deoxygenated blood from the fetal internal iliac arteries, and one umbilical vein, which brings oxygenated blood back. A single umbilical artery marks a higher risk of renal and other anomalies. After birth the vein becomes the ligamentum teres of the liver, and the arteries become the medial umbilical ligaments."
+   "Maternal and fetal blood do not mix. They exchange gases, nutrients and wastes across the villus wall, and maternal IgG crosses it to give the newborn passive immunity. Invading trophoblast remodels the **spiral arteries** into wide, low-resistance channels that fill the **intervillous** space with maternal blood. When remodeling fails, the placenta is underperfused, which underlies preeclampsia and fetal growth restriction."
+  ],
+  [
+   "p",
+   "The umbilical cord carries two **umbilical arteries**, which return deoxygenated blood from the fetal internal iliac arteries, and one umbilical vein, which brings oxygenated blood back. The arteries and the vein develop from vessels of the allantois. A single umbilical artery marks a higher risk of congenital anomalies, especially renal ones, and of chromosomal anomalies such as trisomy 18. After birth the vein becomes the ligamentum teres of the liver, and the arteries become the medial umbilical ligaments."
   ],
   [
    "call",
@@ -234,7 +246,7 @@
   ],
   [
    "p",
-   "Two channels in the cord normally vanish. The allantois becomes the **urachus**, a fibrous cord from the bladder dome to the umbilicus, which survives as the median umbilical ligament. If the urachus stays open, a patent urachus leaks urine at the umbilicus, and a closed stretch can form a urachal cyst or sinus. The vitelline duct normally closes during the embryonic period. A persistent remnant is a **Meckel diverticulum**, an ileal outpouching that can hold gastric or pancreatic tissue and bleed. A fully open duct passes stool through the umbilicus."
+   "Two channels in the cord normally vanish. The allantois becomes the **urachus**, a fibrous cord from the bladder dome to the umbilicus, which survives as the median umbilical ligament. If the urachus stays open, a patent urachus leaks urine at the umbilicus, and a closed stretch can form a urachal cyst or sinus. A urachal cyst can become infected and present as a painful mass below the umbilicus, and urachal remnants carry a risk of adenocarcinoma at the bladder dome. A remnant open only at the bladder end is a vesicourachal diverticulum. The vitelline duct normally closes during the embryonic period. A persistent remnant is a **Meckel diverticulum**, an ileal outpouching that can hold gastric or pancreatic tissue and bleed. A fully open duct passes stool through the umbilicus."
   ],
   [
    "h",
@@ -275,11 +287,15 @@
   ],
   [
    "p",
-   "After about 16 weeks most amniotic fluid is fetal urine, and the fetus removes fluid by swallowing. Fluid volume therefore reflects the fetal kidneys and gut. **Oligohydramnios** follows missing urine, as in bilateral renal agenesis, urinary outlet obstruction or kidney damage from ACE inhibitors. The compressed fetus develops a flat face and limb deformities, and it has fatal pulmonary hypoplasia because the lungs need fluid to grow. This cascade is the **Potter sequence**. **Polyhydramnios** follows failed swallowing or absorption, as in esophageal or duodenal atresia or anencephaly, or fetal osmotic diuresis from maternal diabetes."
+   "After about 16 weeks most amniotic fluid is fetal urine, and the fetus removes fluid by swallowing. Fluid volume therefore reflects the fetal kidneys and gut. **Oligohydramnios** follows missing urine, as in bilateral renal agenesis, autosomal recessive polycystic kidney disease, posterior urethral valves in a male fetus or kidney damage from ACE inhibitors. It also follows placental insufficiency, which cuts fetal kidney perfusion. The compressed fetus develops a flat face and limb deformities, and it has fatal pulmonary hypoplasia because the lungs need fluid to grow. This cascade is the **Potter sequence**. **Polyhydramnios** follows failed swallowing or absorption, as in esophageal or duodenal atresia or anencephaly, or fetal osmotic diuresis from maternal diabetes. Fetal anemia and multiple gestation also cause polyhydramnios."
   ],
   [
    "p",
-   "Birth defects have four patterns. A **malformation** is an intrinsic error of development, such as a neural tube defect. A **deformation** is molding of normal tissue by an outside force, as in the compressed limbs of oligohydramnios. A **disruption** destroys normal tissue, as in amniotic band syndrome, where torn amnion strands constrict a limb. A sequence is one defect cascading into others, as renal agenesis leads to the Potter sequence."
+   "Birth defects follow a few patterns. A **malformation** is an intrinsic error of development during the embryonic period, weeks 3 to 8, such as a neural tube defect or cleft lip. A **deformation** is molding of normal tissue by an outside force after that period, as in the compressed limbs of oligohydramnios. A **disruption** destroys normal tissue, as in amniotic band syndrome, where torn amnion strands constrict a limb. A sequence is one defect cascading into others, as renal agenesis leads to the Potter sequence."
+  ],
+  [
+   "p",
+   "Two further terms describe where and how far development was disturbed. A field defect affects tissues that develop side by side, as in holoprosencephaly. In **agenesis** the primordial tissue never formed, in **aplasia** the primordial tissue was present but the organ never developed, and in **hypoplasia** the organ developed incompletely and stays small."
   ],
   [
    "sexp",

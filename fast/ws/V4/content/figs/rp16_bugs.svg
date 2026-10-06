@@ -1,0 +1,60 @@
+<svg class="dia" viewBox="0 0 900 428" role="img" aria-label="Three causes of urethritis and cervicitis compared: Chlamydia trachomatis with elementary and reticulate bodies and little peptidoglycan, Neisseria gonorrhoeae with diplococci, no maltose fermentation, changing pili and complement C5 to C9 deficiency, and Mycoplasma genitalium with no cell wall">
+<text class="ttl" x="14" y="26" font-size="17">Chlamydia, gonococcus and Mycoplasma: what marks each and why a drug works or fails</text>
+<text class="s" x="26" y="60" font-size="14">Organism</text>
+<text class="s" x="248" y="60" font-size="14">What marks it</text>
+<text class="s" x="586" y="60" font-size="14">Why the drug works or fails</text>
+<rect x="14" y="72" width="872" height="132" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="72" width="222" height="132" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<line x1="236" y1="72" x2="236" y2="204" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="574" y1="72" x2="574" y2="204" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="98" font-size="15">Chlamydia trachomatis</text>
+<text x="26" y="123" font-size="14">obligate intracellular</text>
+<circle cx="251" cy="93" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="262" y="98" font-size="14">Cannot make its own ATP</text>
+<circle cx="251" cy="117" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="262" y="122" font-size="14">Elementary body: the tough, infectious</text>
+<text x="262" y="142" font-size="14">form that enters the cell</text>
+<circle cx="251" cy="161" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="262" y="166" font-size="14">Reticulate body: the dividing form, in a</text>
+<text x="262" y="186" font-size="14">glycogen-rich inclusion</text>
+<circle cx="589" cy="93" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="600" y="98" font-size="14">Little peptidoglycan in the cell wall, so</text>
+<text x="600" y="118" font-size="14">penicillins and cephalosporins have no</text>
+<text x="600" y="138" font-size="14">target</text>
+<circle cx="589" cy="157" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="600" y="162" font-size="14">Doxycycline works inside cells</text>
+<rect x="14" y="210" width="872" height="112" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="210" width="222" height="112" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<line x1="236" y1="210" x2="236" y2="322" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="574" y1="210" x2="574" y2="322" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="236" font-size="15">Neisseria gonorrhoeae</text>
+<text x="26" y="261" font-size="14">gram-negative diplococcus</text>
+<circle cx="251" cy="231" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="262" y="236" font-size="14">Diplococci inside neutrophils in urethral</text>
+<text x="262" y="256" font-size="14">pus</text>
+<circle cx="251" cy="275" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="262" y="280" font-size="14">Ferments glucose but not maltose</text>
+<circle cx="251" cy="299" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="262" y="304" font-size="14">Grows on Thayer-Martin agar</text>
+<circle cx="589" cy="231" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="600" y="236" font-size="14">Pili keep changing their antigens: no</text>
+<text x="600" y="256" font-size="14">lasting immunity and no vaccine</text>
+<circle cx="589" cy="275" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="600" y="280" font-size="14">Lacking complement C5 to C9 gives</text>
+<text x="600" y="300" font-size="14">recurrent Neisseria infections</text>
+<rect x="14" y="328" width="872" height="90" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="328" width="222" height="90" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<line x1="236" y1="328" x2="236" y2="418" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="574" y1="328" x2="574" y2="418" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="354" font-size="15">Mycoplasma</text>
+<text class="b" x="26" y="375" font-size="15">genitalium</text>
+<text x="26" y="400" font-size="14">nongonococcal urethritis</text>
+<circle cx="251" cy="349" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="262" y="354" font-size="14">No cell wall at all</text>
+<circle cx="251" cy="373" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="262" y="378" font-size="14">Suspect it when urethritis persists after</text>
+<text x="262" y="398" font-size="14">doxycycline</text>
+<circle cx="589" cy="349" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="600" y="354" font-size="14">Beta-lactam antibiotics cannot work:</text>
+<text x="600" y="374" font-size="14">there is no wall to attack</text>
+</svg>
