@@ -1,0 +1,1017 @@
+[
+ {
+  "id": "rp21q01",
+  "d": 1,
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp21-01"
+  ],
+  "obj": [
+   "HP-MALE.15"
+  ],
+  "s": "A 66-year-old man has had nocturia three times a night, hesitancy and a weak urine stream for a year. Digital rectal examination shows a smooth, symmetrically enlarged, rubbery prostate. Serum PSA is mildly elevated at 5 ng/mL, and urinalysis is normal.",
+  "l": "In which part of the prostate is the process most likely centered?",
+  "o": [
+   "Peripheral zone",
+   "Transition zone",
+   "Central zone",
+   "Anterior fibromuscular stroma",
+   "Seminal vesicles"
+  ],
+  "a": 1,
+  "e": "Benign prostatic hyperplasia is overgrowth of glands and stroma in the **transition zone**, the tissue that surrounds the urethra. It narrows the urethra early and causes hesitancy, weak stream and nocturia, and the smooth, rubbery enlargement fits. The peripheral zone at the back of the gland produces most cancers and stays silent, with a hard nodule as the clue. The central zone around the ejaculatory ducts is rarely diseased. The anterior fibromuscular stroma has no glands, and the seminal vesicles lie above the gland and do not encircle the urethra.",
+  "w": {
+   "Peripheral zone": "This zone makes up about 70% of the gland and lies against the rectum. Cancers there feel like hard nodules, but growth in this region does not compress the urethra early.",
+   "Central zone": "The central zone around the ejaculatory ducts is rarely the site of hyperplasia or cancer. It does not wrap the urethra, so it would not explain obstructive symptoms.",
+   "Anterior fibromuscular stroma": "This front band is muscle and fibrous tissue without glands, so it cannot form glandular nodules.",
+   "Seminal vesicles": "These paired glands sit behind the bladder above the prostate and make most of the ejaculate. They are not part of the prostate and do not narrow the urethra."
+  },
+  "et": [
+   [
+    "Option",
+    "Location",
+    "Main disease",
+    "Effect on urine flow"
+   ],
+   [
+    [
+     "Peripheral zone",
+     "Posterior, against the rectum",
+     "Adenocarcinoma",
+     "Silent until late"
+    ],
+    [
+     "Transition zone",
+     "Around the urethra",
+     "Benign prostatic hyperplasia",
+     "Early obstruction"
+    ],
+    [
+     "Central zone",
+     "Around the ejaculatory ducts",
+     "Rarely diseased",
+     "None"
+    ],
+    [
+     "Anterior fibromuscular stroma",
+     "Front of the gland",
+     "No common disease",
+     "None"
+    ],
+    [
+     "Seminal vesicles",
+     "Behind the bladder, above the gland",
+     "Rare tumors, infection",
+     "None"
+    ]
+   ]
+  ],
+  "bl": "BPH arises in the transition zone around the urethra, so it obstructs urine flow early.",
+  "ef": "rp21_zones",
+  "pt": {
+   "hl": [
+    "Transition zone"
+   ],
+   "say": "The transition zone sits around the urethra, so nodules there squeeze it early and cause the weak stream and nocturia."
+  }
+ },
+ {
+  "id": "rp21q02",
+  "d": 1,
+  "tags": [
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp21-05"
+  ],
+  "obj": [
+   "HP-MALE.19",
+   "HP-MALE.20"
+  ],
+  "s": "A 70-year-old man has a PSA of 11 ng/mL, and a firm nodule is felt on the posterior surface of the prostate. A needle biopsy shows small, crowded glands lined by a single layer of cells with prominent nucleoli, and some glands surround a nerve.",
+  "l": "Which additional finding is most characteristic of this lesion?",
+  "o": [
+   "Absent basal cell layer",
+   "Corpora amylacea in the lumens",
+   "Papillary infoldings of the epithelium",
+   "A two-cell glandular lining",
+   "Neutrophils filling the glands"
+  ],
+  "a": 0,
+  "e": "Prostate adenocarcinoma is recognized by small, crowded glands with one cell layer, prominent nucleoli, perineural invasion and above all the **absence of the basal cell layer**. Stains show this as negative p63 and high-molecular-weight keratin, while AMACR is positive. Corpora amylacea and papillary infoldings belong to benign glands, and benign glands keep a two-cell lining with basal cells beneath the secretory layer. Neutrophils filling glands describe acute prostatitis, a painful febrile illness rather than a painless nodule.",
+  "w": {
+   "Corpora amylacea in the lumens": "These laminated concretions collect in benign glands of older men. They are not a feature of carcinoma, and their presence supports normal or hyperplastic tissue.",
+   "Papillary infoldings of the epithelium": "Papillary infolding is a normal feature of benign prostate glands and of hyperplasia, so it does not point toward cancer.",
+   "A two-cell glandular lining": "A basal layer beneath the secretory layer is the benign pattern. Cancer glands lose the basal cells and keep only one layer, as this biopsy shows.",
+   "Neutrophils filling the glands": "Neutrophils in the glands fit acute bacterial prostatitis with fever and a tender gland, not a painless nodule with crowded glands and perineural invasion."
+  },
+  "et": [
+   [
+    "Option",
+    "Benign or malignant",
+    "Where it is seen",
+    "Stain or clue"
+   ],
+   [
+    [
+     "Absent basal cell layer",
+     "Malignant",
+     "Adenocarcinoma",
+     "p63 negative, AMACR positive"
+    ],
+    [
+     "Corpora amylacea in the lumens",
+     "Benign",
+     "Older men, benign glands",
+     "Laminated concretions"
+    ],
+    [
+     "Papillary infoldings of the epithelium",
+     "Benign",
+     "Normal and hyperplastic glands",
+     "Architecture only"
+    ],
+    [
+     "A two-cell glandular lining",
+     "Benign",
+     "Normal glands",
+     "p63 stains the basal cells"
+    ],
+    [
+     "Neutrophils filling the glands",
+     "Inflammatory",
+     "Acute prostatitis",
+     "Fever, tender gland"
+    ]
+   ]
+  ],
+  "bl": "Prostate cancer shows small crowded glands, prominent nucleoli and an absent basal cell layer, with p63 negative and AMACR positive.",
+  "ef": "rp21_zones",
+  "pt": {
+   "hl": [
+    "no basal cell layer"
+   ],
+   "say": "The cancer box lists small crowded glands with no basal cell layer, which is the key criterion that separates adenocarcinoma from benign glands."
+  }
+ },
+ {
+  "id": "rp21q03",
+  "d": 2,
+  "tags": [
+   "pulsatile-signaling",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp21-08"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.9"
+  ],
+  "s": "A 72-year-old man with prostate cancer metastatic to the spine has back pain and starts leuprolide. Ten days later his back pain is worse and he has difficulty urinating. His serum testosterone is higher than at baseline. His PSA is unchanged, and he has no new fever.",
+  "l": "Which mechanism best explains his worsening symptoms?",
+  "o": [
+   "A direct growth-promoting effect of the drug on tumor cells",
+   "Loss of negative feedback because the drug blocks the androgen receptor",
+   "Inhibition of CYP17, raising adrenal mineralocorticoids",
+   "Initial stimulation of pituitary GnRH receptors, raising LH and testosterone",
+   "Antibodies against the GnRH receptor"
+  ],
+  "a": 3,
+  "e": "Leuprolide is a GnRH agonist, so at first it stimulates the **pituitary GnRH receptor** like natural GnRH. LH and testosterone rise for one to two weeks, which can worsen bone pain or urinary obstruction in advanced cancer. Continuous exposure then desensitizes the receptor, and testosterone falls to castrate levels. Starting an antiandrogen such as bicalutamide first blocks the flare. Receptor blockers raise testosterone by removing feedback, but they do not act as agonists at the pituitary. Abiraterone, a CYP17 inhibitor, causes mineralocorticoid excess rather than a rise in testosterone.",
+  "w": {
+   "A direct growth-promoting effect of the drug on tumor cells": "The drug has no direct effect on tumor growth. The flare follows the temporary testosterone surge, to which the androgen-dependent cancer responds.",
+   "Loss of negative feedback because the drug blocks the androgen receptor": "Receptor blockers such as flutamide and bicalutamide raise LH and testosterone by removing feedback. Leuprolide does not block the receptor, so this mechanism belongs to a different drug class.",
+   "Inhibition of CYP17, raising adrenal mineralocorticoids": "CYP17 blockade is the action of abiraterone, which lowers androgens and causes hypertension and hypokalemia unless prednisone is added. It does not raise testosterone.",
+   "Antibodies against the GnRH receptor": "Antibodies against the GnRH receptor are not a recognized effect of leuprolide, and they would lower testosterone, not raise it. The worsening began within days, too early for an antibody response."
+  },
+  "et": [
+   [
+    "Option",
+    "Drug class",
+    "Net effect on testosterone",
+    "Clinical result"
+   ],
+   [
+    [
+     "A direct growth-promoting effect of the drug on tumor cells",
+     "None; not a drug effect",
+     "None",
+     "No flare from this cause"
+    ],
+    [
+     "Loss of negative feedback because the drug blocks the androgen receptor",
+     "Androgen receptor blockers",
+     "Modest rise",
+     "Raised LH, no castration alone"
+    ],
+    [
+     "Inhibition of CYP17, raising adrenal mineralocorticoids",
+     "CYP17 inhibitor, abiraterone",
+     "Falls",
+     "Hypertension, hypokalemia"
+    ],
+    [
+     "Initial stimulation of pituitary GnRH receptors, raising LH and testosterone",
+     "GnRH agonists",
+     "Rises, then falls",
+     "Flare, then castration"
+    ],
+    [
+     "Antibodies against the GnRH receptor",
+     "None recognized",
+     "No change",
+     "Not seen with leuprolide"
+    ]
+   ]
+  ],
+  "bl": "A GnRH agonist first stimulates the pituitary, so LH and testosterone flare before falling; an antiandrogen covers the flare.",
+  "ef": "rp21_adt",
+  "pt": {
+   "hl": [
+    "Testosterone flares first, then falls to castrate levels"
+   ],
+   "say": "The leuprolide card says testosterone flares first and then falls, because continuous GnRH desensitizes the pituitary receptor."
+  }
+ },
+ {
+  "id": "rp21q04",
+  "d": 1,
+  "tags": [
+   "drug-mechanism",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp21-02",
+   "BP-rp21-15"
+  ],
+  "obj": [
+   "HP-MALE.15"
+  ],
+  "s": "A 62-year-old man with benign prostatic hyperplasia and an enlarged gland begins a medication that shrinks the prostate over six months. At follow-up he reports decreased libido and mild breast enlargement. His PSA is now 1.8 ng/mL and was 3.6 ng/mL before treatment.",
+  "l": "Which drug was most likely prescribed?",
+  "o": [
+   "Tamsulosin",
+   "Doxazosin",
+   "Finasteride",
+   "Tadalafil",
+   "Oxybutynin"
+  ],
+  "a": 2,
+  "e": "**Finasteride** inhibits 5-alpha-reductase, so less testosterone is converted to DHT. The gland shrinks over months, and PSA falls by about half, as his drop from 3.6 to 1.8 shows. Reduced androgen action lowers libido, can cause erectile dysfunction, and tilts the androgen-to-estrogen balance toward gynecomastia. Tamsulosin and doxazosin relax smooth muscle within days, but neither shrinks the gland or changes PSA. Tadalafil does not alter PSA, and oxybutynin, an antimuscarinic, treats bladder storage symptoms.",
+  "w": {
+   "Tamsulosin": "This alpha-1A blocker relaxes prostatic and bladder-neck smooth muscle within days and can cause retrograde ejaculation. It leaves gland size and PSA unchanged and does not cause breast enlargement.",
+   "Doxazosin": "A nonselective alpha-1 blocker improves flow quickly and can cause orthostatic hypotension. It does not shrink the gland, change PSA or affect the breast.",
+   "Tadalafil": "Daily tadalafil relaxes smooth muscle through cGMP and helps urinary symptoms and erections. It does not change PSA or gland size and causes no breast changes.",
+   "Oxybutynin": "This antimuscarinic reduces bladder storage symptoms and can precipitate retention in obstruction. It does not act on prostate size, libido or PSA."
+  },
+  "et": [
+   [
+    "Option",
+    "Class",
+    "Effect on gland and PSA",
+    "Typical adverse effect"
+   ],
+   [
+    [
+     "Tamsulosin",
+     "Alpha-1A blocker",
+     "No change",
+     "Retrograde ejaculation"
+    ],
+    [
+     "Doxazosin",
+     "Nonselective alpha-1 blocker",
+     "No change",
+     "Orthostatic hypotension"
+    ],
+    [
+     "Finasteride",
+     "5-alpha-reductase inhibitor",
+     "Shrinks gland, PSA halves",
+     "Low libido, gynecomastia"
+    ],
+    [
+     "Tadalafil",
+     "PDE5 inhibitor",
+     "No change",
+     "Headache, back pain"
+    ],
+    [
+     "Oxybutynin",
+     "Antimuscarinic",
+     "No change",
+     "Dry mouth, retention"
+    ]
+   ]
+  ],
+  "bl": "Finasteride blocks DHT formation, shrinks the prostate, halves PSA and can cause low libido and gynecomastia.",
+  "ef": "rp21_bphdrugs",
+  "pt": {
+   "hl": [
+    "Finasteride, dutasteride block the enzyme"
+   ],
+   "say": "The left drug box shows finasteride and dutasteride blocking the enzyme: the gland shrinks, PSA falls by half, libido drops and gynecomastia can occur."
+  }
+ },
+ {
+  "id": "rp21q05",
+  "d": 2,
+  "tags": [
+   "adverse-effects",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp21-15",
+   "BP-rp21-02"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.8"
+  ],
+  "s": "A 58-year-old man with lower urinary tract symptoms starts a medication for his enlarged prostate. Two weeks later his stream is stronger, but although orgasm still occurs, he expels little or no semen. Urine collected after orgasm is cloudy and contains sperm. He is scheduled for cataract surgery next month.",
+  "l": "Which drug most likely explains these findings?",
+  "o": [
+   "Finasteride",
+   "Tadalafil",
+   "Oxybutynin",
+   "Tamsulosin",
+   "Leuprolide"
+  ],
+  "a": 3,
+  "e": "**Tamsulosin** is an alpha-1A-selective blocker. Emission and closure of the bladder neck depend on sympathetic alpha-1 tone, so blocking it lets semen pass backward into the bladder. Orgasm persists, but little fluid emerges, and sperm appear in the urine afterward. The class is also linked to intraoperative floppy iris syndrome, so the eye surgeon must be told before cataract surgery. Finasteride lowers libido and may cause erectile dysfunction, tadalafil does not affect emission, oxybutynin has anticholinergic effects, and leuprolide lowers testosterone.",
+  "w": {
+   "Finasteride": "This 5-alpha-reductase inhibitor can lower libido and erections, but it does not abolish the bladder-neck mechanism or cause floppy iris.",
+   "Tadalafil": "A PDE5 inhibitor acts on cGMP in the penis and helps erections. It does not affect the sympathetic emission and bladder-neck closure that set the direction of semen.",
+   "Oxybutynin": "An antimuscarinic reduces bladder storage symptoms and may precipitate retention. It does not interfere with sympathetic control of emission or put sperm in the urine.",
+   "Leuprolide": "This GnRH agonist lowers testosterone, causing erectile dysfunction, hot flashes and low libido. It would not be used for simple urinary symptoms of an enlarged gland."
+  },
+  "et": [
+   [
+    "Option",
+    "Mechanism",
+    "Ejaculatory effect",
+    "Other pearl"
+   ],
+   [
+    [
+     "Finasteride",
+     "5-alpha-reductase inhibition",
+     "Low libido, mild volume loss",
+     "PSA halves"
+    ],
+    [
+     "Tadalafil",
+     "PDE5 inhibition",
+     "None",
+     "Never with nitrates"
+    ],
+    [
+     "Oxybutynin",
+     "Muscarinic blockade",
+     "None",
+     "Can cause retention"
+    ],
+    [
+     "Tamsulosin",
+     "Alpha-1A blockade",
+     "Retrograde or absent ejaculation",
+     "Floppy iris syndrome"
+    ],
+    [
+     "Leuprolide",
+     "GnRH receptor desensitization",
+     "Low libido from hypogonadism",
+     "Initial flare"
+    ]
+   ]
+  ],
+  "bl": "Alpha-1A blockers such as tamsulosin cause retrograde ejaculation and floppy iris syndrome at cataract surgery.",
+  "ef": "rp21_bphdrugs",
+  "pt": {
+   "hl": [
+    "Tamsulosin, silodosin: alpha-1A selective"
+   ],
+   "say": "The right drug box lists tamsulosin and silodosin as alpha-1A selective blockers that cause retrograde ejaculation and floppy iris at cataract surgery."
+  }
+ },
+ {
+  "id": "rp21q06",
+  "d": 2,
+  "tags": [
+   "pathogen-clues",
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp21-03"
+  ],
+  "obj": [
+   "HP-MALE.16"
+  ],
+  "s": "A 28-year-old man has had 2 days of fever, chills, dysuria and perineal pain. He has had unprotected intercourse with several new partners. Temperature is 39.2 °C. Gentle rectal palpation reveals a very tender, swollen, boggy prostate, and urinalysis shows pyuria.",
+  "l": "Which of the following should be avoided in this patient?",
+  "o": [
+   "Urine culture",
+   "Antibiotic therapy",
+   "Vigorous prostatic massage",
+   "Urethral testing for chlamydia and gonorrhea",
+   "Analgesics and hydration"
+  ],
+  "a": 2,
+  "e": "In **acute bacterial prostatitis** the infected gland is swollen and tender, and vigorous massage can push bacteria into the bloodstream and cause sepsis, so it is avoided. Gentle palpation is enough for the diagnosis. In a sexually active man under 35, *Chlamydia trachomatis* and *Neisseria gonorrhoeae* are the likely organisms, so urethral testing, urine culture and antibiotics are appropriate, with fluids and analgesics for comfort.",
+  "w": {
+   "Urine culture": "A urine culture identifies the organism without touching the gland, so it is a safe and useful step in suspected acute infection.",
+   "Antibiotic therapy": "Antibiotics that reach the prostate are the definitive treatment for acute bacterial prostatitis. Delay risks abscess formation and sepsis.",
+   "Urethral testing for chlamydia and gonorrhea": "Nucleic acid testing of a urethral swab or first-void urine detects the sexually transmitted organisms likely at this age. It needs no manipulation of the prostate.",
+   "Analgesics and hydration": "Fluids, fever reducers and pain relievers ease symptoms while antibiotics work, and none of them can spread infection."
+  },
+  "et": [
+   [
+    "Option",
+    "Appropriate here",
+    "Reason",
+    "Risk or limit"
+   ],
+   [
+    [
+     "Urine culture",
+     "Yes",
+     "Identifies the organism",
+     "None"
+    ],
+    [
+     "Antibiotic therapy",
+     "Yes",
+     "Treats the infection",
+     "Choose agents that reach the gland"
+    ],
+    [
+     "Vigorous prostatic massage",
+     "No",
+     "Pushes bacteria into the blood",
+     "Sepsis"
+    ],
+    [
+     "Urethral testing for chlamydia and gonorrhea",
+     "Yes",
+     "Finds chlamydia and gonorrhea",
+     "None if swab or urine is used"
+    ],
+    [
+     "Analgesics and hydration",
+     "Yes",
+     "Supportive care",
+     "None"
+    ]
+   ]
+  ],
+  "bl": "In acute bacterial prostatitis, vigorous prostatic massage is avoided because it can push bacteria into the blood and cause sepsis."
+ },
+ {
+  "id": "rp21q07",
+  "d": 3,
+  "tags": [
+   "tumor-markers",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp21-16",
+   "BP-rp21-02"
+  ],
+  "obj": [
+   "HP-MALE.15"
+  ],
+  "s": "A 64-year-old man with benign prostatic hyperplasia has taken finasteride for 3 years. At his annual visit his PSA is 2.4 ng/mL. Before treatment it was 2.5 ng/mL. His rectal examination is unchanged, and he has no urinary tract infection or recent instrumentation.",
+  "l": "Which is the best interpretation of this PSA?",
+  "o": [
+   "Normal, because it is below 4 ng/mL",
+   "Falsely elevated by finasteride, so it can be ignored",
+   "Consistent with BPH alone, because BPH raises PSA",
+   "Uninterpretable, because finasteride abolishes PSA secretion",
+   "Suspicious, because it should have fallen by about half"
+  ],
+  "a": 4,
+  "e": "5-alpha-reductase inhibitors lower PSA by about half, so a man taking one for years should have a PSA near half of his baseline. His PSA of 2.4 has not fallen, so the **measured value should be doubled**, to about 4.8 ng/mL, which is above his baseline and suggests another source of PSA, such as prostate cancer. It needs evaluation. A fixed cutoff of 4 is not valid on treatment. Finasteride does not raise PSA or abolish its secretion, and BPH was already present at baseline.",
+  "w": {
+   "Normal, because it is below 4 ng/mL": "A fixed cutoff cannot be used on finasteride, because the drug halves PSA. The number must be doubled first, and the doubled value is higher than his untreated baseline.",
+   "Falsely elevated by finasteride, so it can be ignored": "Finasteride lowers PSA rather than raising it, and the effect is a predictable fall of about half. An unchanged level is not a drug artifact.",
+   "Consistent with BPH alone, because BPH raises PSA": "BPH was already present when the baseline PSA was drawn, so it cannot explain a failure of the expected fall. A new source of PSA must be considered.",
+   "Uninterpretable, because finasteride abolishes PSA secretion": "Finasteride reduces PSA production but does not abolish it. The test stays useful when the value is doubled and followed over time."
+  },
+  "et": [
+   [
+    "Option",
+    "Reasoning",
+    "What finasteride does",
+    "Conclusion"
+   ],
+   [
+    [
+     "Normal, because it is below 4 ng/mL",
+     "Fixed cutoff of 4 ng/mL",
+     "Halves PSA",
+     "Not valid on treatment"
+    ],
+    [
+     "Falsely elevated by finasteride, so it can be ignored",
+     "Drug artifact",
+     "Lowers PSA",
+     "Does not raise PSA"
+    ],
+    [
+     "Consistent with BPH alone, because BPH raises PSA",
+     "BPH was present at baseline",
+     "No new effect",
+     "Does not explain the lack of fall"
+    ],
+    [
+     "Uninterpretable, because finasteride abolishes PSA secretion",
+     "PSA cannot be used",
+     "Reduces but does not abolish PSA",
+     "PSA is still interpretable"
+    ],
+    [
+     "Suspicious, because it should have fallen by about half",
+     "Doubled value is 4.8",
+     "Expected fall about 50%",
+     "Suspicious, evaluate"
+    ]
+   ]
+  ],
+  "bl": "On finasteride PSA should fall by half, so an unchanged value is suspicious; double the measured value and evaluate for cancer.",
+  "ef": "rp21_bphdrugs",
+  "pt": {
+   "hl": [
+    "Gland shrinks over months; PSA falls by half"
+   ],
+   "say": "The finasteride box says PSA falls by half, so a value that has not fallen after three years is suspicious and needs evaluation."
+  }
+ },
+ {
+  "id": "rp21q08",
+  "d": 2,
+  "tags": [
+   "blood-supply",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp21-06"
+  ],
+  "obj": [
+   "HP-MALE.21"
+  ],
+  "s": "A 74-year-old man has had low back pain for 3 months. Serum alkaline phosphatase is elevated. Radiographs of the lumbar spine and pelvis show multiple dense, sclerotic lesions, and PSA is markedly elevated. A chest radiograph is normal. He has a hard nodule on rectal examination.",
+  "l": "Which pathway best explains the distribution of these metastases?",
+  "o": [
+   "Direct extension along the spermatic cord",
+   "Spread through the valveless vertebral venous plexus",
+   "Hematogenous spread through the portal vein",
+   "Lymphatic spread to the inguinal nodes",
+   "Seeding along the biopsy needle tract"
+  ],
+  "a": 1,
+  "e": "Dense, sclerotic lesions with a raised alkaline phosphatase are **osteoblastic metastases**, the typical bone spread of prostate cancer. The prostatic veins communicate with the valveless vertebral venous plexus (Batson plexus), so tumor cells reach the lumbar spine and pelvis directly, and a normal chest radiograph is expected. Lymphatic spread to inguinal nodes is the route of penile cancer, not prostate cancer. Portal vein spread leads to the liver, and the spermatic cord carries testicular vessels and lymph, not prostate drainage.",
+  "w": {
+   "Direct extension along the spermatic cord": "Local spread from the prostate goes to the seminal vesicles, bladder base and rectum. The spermatic cord carries testicular vessels and does not connect to the lumbar spine.",
+   "Hematogenous spread through the portal vein": "Portal blood drains the bowel to the liver, so portal spread would give liver deposits. The prostate's veins do not drain into the portal system.",
+   "Lymphatic spread to the inguinal nodes": "Prostatic lymph drains to the internal iliac and obturator nodes. Inguinal nodes receive lymph from penile and scrotal skin, and lymphatic spread would not produce dense vertebral lesions.",
+   "Seeding along the biopsy needle tract": "Needle-tract seeding is rare and local. It cannot explain several dense lesions in the spine and pelvis months after presentation."
+  },
+  "et": [
+   [
+    "Option",
+    "Route",
+    "Typical target",
+    "Tumor example"
+   ],
+   [
+    [
+     "Direct extension along the spermatic cord",
+     "Contiguous, along the cord",
+     "Scrotum and cord",
+     "Rare"
+    ],
+    [
+     "Spread through the valveless vertebral venous plexus",
+     "Venous, Batson plexus",
+     "Lumbar spine and pelvis",
+     "Prostate cancer"
+    ],
+    [
+     "Hematogenous spread through the portal vein",
+     "Portal venous",
+     "Liver",
+     "Colorectal cancer"
+    ],
+    [
+     "Lymphatic spread to the inguinal nodes",
+     "Lymphatic",
+     "Groin nodes",
+     "Penile cancer"
+    ],
+    [
+     "Seeding along the biopsy needle tract",
+     "Implantation",
+     "Biopsy track",
+     "Rare tumors"
+    ]
+   ]
+  ],
+  "bl": "Prostate cancer reaches the lumbar spine and pelvis through the vertebral venous plexus, producing osteoblastic metastases with a high alkaline phosphatase.",
+  "ef": "rp21_zones",
+  "pt": {
+   "hl": [
+    "Osteoblastic bone metastases"
+   ],
+   "say": "The cancer box lists osteoblastic bone metastases with a high ALP, which reach the lumbar spine and pelvis through the vertebral venous plexus."
+  }
+ },
+ {
+  "id": "rp21q09",
+  "d": 2,
+  "tags": [
+   "anatomic-relations",
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp21-10",
+   "BP-rp21-19"
+  ],
+  "obj": [
+   "HP-MALE.9"
+  ],
+  "s": "A 52-year-old man reports that over 8 months his erect penis has begun to bend to the left and is painful. A firm nodule is palpable on the dorsal shaft. He also has a thickened cord in the palm of his right hand that limits finger extension. Erections are otherwise firm enough for intercourse.",
+  "l": "Which structure is the site of the underlying fibrosis?",
+  "o": [
+   "Buck fascia",
+   "Corpus spongiosum",
+   "Tunica albuginea of the corpora cavernosa",
+   "Dartos fascia",
+   "Suspensory ligament of the penis"
+  ],
+  "a": 2,
+  "e": "A fibrous plaque in the **tunica albuginea** around the corpora cavernosa defines Peyronie disease. The sheath cannot stretch where the plaque sits, so the erect penis bends toward it and is painful. The thickened palmar cord is Dupuytren contracture, which belongs to the same fibromatosis group. Buck fascia is a layer outside the tunica that contains the hematoma in penile fracture. The corpus spongiosum surrounds the urethra and stays compliant. Dartos fascia continues the scrotal muscle layer, and the suspensory ligament anchors the root of the penis.",
+  "w": {
+   "Buck fascia": "This fascial layer lies outside the tunica and limits the spread of blood in penile fracture to the shaft. It is not where the plaque of Peyronie disease forms.",
+   "Corpus spongiosum": "This erectile body surrounds the urethra and forms the glans. It stays soft in erection so the urethra remains open, and fibrosis here would affect voiding rather than curvature.",
+   "Dartos fascia": "The dartos is the smooth muscle layer of the scrotum that continues into Colles fascia. Its disease is the spread of Fournier gangrene, not a palpable plaque on the shaft.",
+   "Suspensory ligament of the penis": "This ligament anchors the root of the penis to the pubis. It does not produce a dorsal plaque or a sideways bend."
+  },
+  "et": [
+   [
+    "Option",
+    "What it surrounds",
+    "Disorder involving it",
+    "Clinical sign"
+   ],
+   [
+    [
+     "Buck fascia",
+     "Erectile bodies and urethra",
+     "Contains hematoma in fracture",
+     "Bruising limited to the shaft"
+    ],
+    [
+     "Corpus spongiosum",
+     "The urethra",
+     "Urethral injury",
+     "Blood at the meatus"
+    ],
+    [
+     "Tunica albuginea of the corpora cavernosa",
+     "The corpora cavernosa",
+     "Peyronie disease, fracture",
+     "Painful curvature, pop"
+    ],
+    [
+     "Dartos fascia",
+     "Scrotum and shaft skin",
+     "Fournier gangrene",
+     "Crepitus, severe pain"
+    ],
+    [
+     "Suspensory ligament of the penis",
+     "Root of the penis",
+     "Surgical lengthening",
+     "Apparent length"
+    ]
+   ]
+  ],
+  "bl": "Peyronie disease is a fibrous plaque of the tunica albuginea that makes the erect penis curve painfully.",
+  "ef": "rp21_penis",
+  "pt": {
+   "hl": [
+    "Peyronie plaque: painful curvature"
+   ],
+   "say": "Marker 4 is the tunica albuginea, where a fibrous plaque causes the painful curvature of Peyronie disease."
+  }
+ },
+ {
+  "id": "rp21q10",
+  "d": 3,
+  "tags": [
+   "treatment-sequence",
+   "blood-supply"
+  ],
+  "bp": [
+   "BP-rp21-11",
+   "BP-rp21-18"
+  ],
+  "s": "A 19-year-old man with sickle cell disease has had a painful erection for 7 hours that began during sleep. The shaft is rigid and the glans is soft. Blood drawn from the penis is dark with a pH of 7.0 and a low oxygen tension. He has not injected any drugs.",
+  "l": "Which is the most appropriate next step?",
+  "o": [
+   "Observation with ice packs and analgesia",
+   "Selective arterial embolization",
+   "Intracavernosal alprostadil",
+   "Aspiration of the corpora with phenylephrine injection",
+   "Intravenous fluids and exchange transfusion alone"
+  ],
+  "a": 3,
+  "e": "A painful, rigid erection lasting over 4 hours with dark, acidotic cavernosal blood is **ischemic (low-flow) priapism**. The trapped blood acts like a compartment syndrome, and sickle cell disease is a classic cause. Fibrosis and permanent erectile dysfunction begin within 24 to 48 hours, so the trapped blood must be drained first: aspiration of the corpora with intracavernosal phenylephrine, then a shunt if that fails. Observation fits painless high-flow priapism after perineal trauma, and embolization is for that nonischemic type. Alprostadil induces erections and can cause priapism. Fluids or transfusion alone do not drain trapped blood.",
+  "w": {
+   "Observation with ice packs and analgesia": "Watchful waiting suits painless, high-flow priapism after trauma. Here the blood is acidotic, and every hour of delay raises the risk of permanent fibrosis.",
+   "Selective arterial embolization": "Embolization treats a nonischemic fistula after perineal trauma, in which cavernosal blood is bright red and the penis is painless and only partly rigid.",
+   "Intracavernosal alprostadil": "This prostaglandin analog induces erections and can itself cause priapism, so giving it would worsen the trapped, acidotic blood.",
+   "Intravenous fluids and exchange transfusion alone": "Hydration and transfusion address the sickling process but do not remove blood trapped under pressure in the corpora, so they cannot be the only step."
+  },
+  "et": [
+   [
+    "Option",
+    "Indicated in",
+    "Mechanism of benefit",
+    "Risk if misused"
+   ],
+   [
+    [
+     "Observation with ice packs and analgesia",
+     "Painless high-flow priapism",
+     "None needed",
+     "Ischemic fibrosis"
+    ],
+    [
+     "Selective arterial embolization",
+     "Nonischemic priapism",
+     "Closes the arterial fistula",
+     "Erectile dysfunction"
+    ],
+    [
+     "Intracavernosal alprostadil",
+     "Erectile dysfunction",
+     "Raises cAMP in muscle",
+     "Prolonged erection"
+    ],
+    [
+     "Aspiration of the corpora with phenylephrine injection",
+     "Ischemic priapism",
+     "Relieves compartment pressure",
+     "Bleeding, infection"
+    ],
+    [
+     "Intravenous fluids and exchange transfusion alone",
+     "Sickle cell crisis",
+     "Lowers sickle hemoglobin",
+     "Delays decompression"
+    ]
+   ]
+  ],
+  "bl": "Ischemic priapism is an emergency treated by aspiration of the corpora and phenylephrine injection before fibrosis develops.",
+  "ef": "rp21_penis",
+  "pt": {
+   "hl": [
+    "Ischemic priapism: painful, emergency"
+   ],
+   "say": "Marker 5, the corpora cavernosa, labels ischemic priapism as painful and an emergency, so trapped acidotic blood needs prompt aspiration."
+  }
+ },
+ {
+  "id": "rp21q11",
+  "d": 2,
+  "tags": [
+   "lymph-drainage",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp21-12"
+  ],
+  "obj": [
+   "HP-MALE.17"
+  ],
+  "s": "A 58-year-old uncircumcised man has a 2-cm ulcerated, indurated lesion on the glans that has not healed for 5 months. Biopsy shows keratinizing squamous cell carcinoma. A firm 1.5-cm lymph node is palpable in the left groin, and he smokes a pack of cigarettes daily.",
+  "l": "Which statement about this patient's cancer is most accurate?",
+  "o": [
+   "Lymph drains to para-aortic nodes, as it does for the testis",
+   "It arose from the low-risk HPV types that cause condyloma",
+   "Circumcision in adulthood would have removed his risk",
+   "Inguinal nodes are the first drainage and set the prognosis",
+   "It is a verrucous carcinoma, which commonly metastasizes"
+  ],
+  "a": 3,
+  "e": "Squamous cell carcinoma makes up about 95% of penile cancers, and the glans of an uncircumcised man is a typical site. Penile and scrotal skin lymph drains to the **inguinal nodes**, the opposite of the testis, whose lymph drains to para-aortic nodes. So groin node status is the dominant prognostic factor. Condyloma comes from low-risk HPV 6 and 11, while carcinoma is tied to HPV 16 and 18, smoking, phimosis and lichen sclerosus. Circumcision protects when done early, by preventing chronic balanitis and phimosis. Verrucous carcinoma is locally destructive but rarely metastasizes.",
+  "w": {
+   "Lymph drains to para-aortic nodes, as it does for the testis": "Para-aortic drainage belongs to the testis, which descends from the retroperitoneum. Penile skin and glans drain to the groin, which is why his palpable node is inguinal.",
+   "It arose from the low-risk HPV types that cause condyloma": "Condyloma acuminata is caused by HPV 6 and 11 and rarely turns malignant. Invasive penile carcinoma is linked to the high-risk types 16 and 18.",
+   "Circumcision in adulthood would have removed his risk": "Protection comes from circumcision early in life, which prevents phimosis and chronic balanitis. Circumcision after years of inflammation does not erase the risk already built up.",
+   "It is a verrucous carcinoma, which commonly metastasizes": "Verrucous carcinoma is a papillary, locally destructive variant that rarely metastasizes, so it does not fit an ulcerated lesion with a groin node."
+  },
+  "et": [
+   [
+    "Option",
+    "Fact",
+    "Applies to",
+    "Clinical relevance"
+   ],
+   [
+    [
+     "Lymph drains to para-aortic nodes, as it does for the testis",
+     "Para-aortic drainage",
+     "Testis",
+     "Orchiectomy through the groin"
+    ],
+    [
+     "It arose from the low-risk HPV types that cause condyloma",
+     "HPV 6 and 11",
+     "Condyloma acuminata",
+     "Benign warts"
+    ],
+    [
+     "Circumcision in adulthood would have removed his risk",
+     "Early circumcision",
+     "Prevents phimosis",
+     "Lowers cancer risk"
+    ],
+    [
+     "Inguinal nodes are the first drainage and set the prognosis",
+     "Inguinal drainage",
+     "Penis and scrotal skin",
+     "Groin nodes set prognosis"
+    ],
+    [
+     "It is a verrucous carcinoma, which commonly metastasizes",
+     "Verrucous carcinoma",
+     "HPV-unrelated variant",
+     "Rarely metastasizes"
+    ]
+   ]
+  ],
+  "bl": "Penile lymph drains to the inguinal nodes, so groin node status is the main prognostic factor in penile squamous carcinoma.",
+  "ef": "rp21_penis",
+  "pt": {
+   "hl": [
+    "Penile skin and glans drain to inguinal nodes"
+   ],
+   "say": "The quick rules box shows that penile skin and glans drain to inguinal nodes, unlike the testis, which drains to para-aortic nodes."
+  }
+ },
+ {
+  "id": "rp21q12",
+  "d": 2,
+  "tags": [
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp21-09"
+  ],
+  "obj": [
+   "HP-MALE.7"
+  ],
+  "s": "A newborn boy has a urethral meatus on the ventral surface of the glans, a hooded foreskin that is deficient ventrally, and a mild downward curve of the penis. Both testes are palpable in the scrotum. The rest of the genital examination is normal, and the urine stream leaves through the abnormal opening. The parents ask what caused this.",
+  "l": "Which developmental failure best explains this finding?",
+  "o": [
+   "Incomplete fusion of the urethral folds",
+   "Misplacement of the genital tubercle",
+   "Failure of the processus vaginalis to close",
+   "Persistence of the urogenital membrane",
+   "Failure of the mesonephric duct to form"
+  ],
+  "a": 0,
+  "e": "A urethral opening on the underside of the penis is **hypospadias**. The urethra forms when the urethral folds fuse along the ventral surface of the phallus, so a failure of fusion leaves the meatus on the ventral side, often with a hooded foreskin and a downward curve. Epispadias, an opening on the top of the penis, comes from a misplaced genital tubercle and often occurs with bladder exstrophy. A processus vaginalis that stays open causes a hydrocele or an indirect hernia. The urogenital membrane normally breaks down, and the mesonephric duct forms the epididymis, ductus deferens and seminal vesicle.",
+  "w": {
+   "Misplacement of the genital tubercle": "A misplaced genital tubercle causes epispadias, with the opening on the top of the penis. This boy's opening is on the underside.",
+   "Failure of the processus vaginalis to close": "A patent processus vaginalis causes a communicating hydrocele or an indirect hernia. It does not affect where the urethra opens.",
+   "Persistence of the urogenital membrane": "The urogenital membrane normally breaks down to open the urethra to the outside. Its persistence would block the opening rather than move it to the underside.",
+   "Failure of the mesonephric duct to form": "The mesonephric duct becomes the epididymis, ductus deferens and seminal vesicle. Its failure would not change the position of the urethral opening."
+  },
+  "et": [
+   [
+    "Option",
+    "Structure involved",
+    "Result"
+   ],
+   [
+    [
+     "Incomplete fusion of the urethral folds",
+     "Urethral folds",
+     "Ventral opening: hypospadias"
+    ],
+    [
+     "Misplacement of the genital tubercle",
+     "Genital tubercle",
+     "Dorsal opening: epispadias"
+    ],
+    [
+     "Failure of the processus vaginalis to close",
+     "Peritoneal outpouching",
+     "Hydrocele or indirect hernia"
+    ],
+    [
+     "Persistence of the urogenital membrane",
+     "Urogenital membrane",
+     "Blocked urethral opening"
+    ],
+    [
+     "Failure of the mesonephric duct to form",
+     "Mesonephric duct",
+     "Missing epididymis and ductus deferens"
+    ]
+   ]
+  ],
+  "bl": "Hypospadias, a ventral urethral opening, results from incomplete fusion of the urethral folds.",
+  "ef": "rp21_penis",
+  "pt": {
+   "hl": [
+    "Hypospadias: ventral, folds fail to fuse"
+   ],
+   "say": "Marker 6 shows hypospadias as a ventral opening from unfused urethral folds, which is incomplete fusion of the urethral folds."
+  }
+ },
+ {
+  "id": "rp21q13",
+  "d": 3,
+  "tags": [
+   "steroidogenesis-enzymes",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp21-17",
+   "BP-rp21-08"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.9"
+  ],
+  "s": "A 69-year-old man with metastatic castration-resistant prostate cancer starts a new oral drug. Six weeks later his blood pressure is 168/102 mm Hg, serum potassium is 3.0 mEq/L, and he has ankle edema. Plasma renin activity is low, serum ACTH is elevated and serum cortisol is low.",
+  "l": "Which drug most likely caused these findings?",
+  "o": [
+   "Bicalutamide",
+   "Leuprolide",
+   "Enzalutamide",
+   "Abiraterone",
+   "Degarelix"
+  ],
+  "a": 3,
+  "e": "**Abiraterone** inhibits CYP17A1, so the adrenal makes less cortisol and ACTH rises. The steroid pathway backs up into mineralocorticoids such as deoxycorticosterone. The result is hypertension, hypokalemia and fluid retention with low renin, which is why prednisone is given with it to replace cortisol and switch off the extra ACTH. Bicalutamide and enzalutamide block the androgen receptor, and leuprolide and degarelix lower LH, but none of these changes adrenal steroid synthesis.",
+  "w": {
+   "Bicalutamide": "This competitive androgen receptor blocker can cause hot flashes and gynecomastia. It leaves adrenal cortisol synthesis alone, so it cannot cause low-renin hypertension.",
+   "Leuprolide": "A GnRH agonist lowers testosterone after an initial flare and causes hot flashes and bone loss. It acts on the pituitary and does not raise ACTH or mineralocorticoids.",
+   "Enzalutamide": "A second-generation receptor blocker causes fatigue. It does not block steroid synthesis, so ACTH, cortisol and renin stay normal.",
+   "Degarelix": "A GnRH antagonist lowers LH and testosterone without a flare. Its adverse effects are those of androgen deprivation and injection-site reactions, not mineralocorticoid excess."
+  },
+  "et": [
+   [
+    "Option",
+    "Target",
+    "Effect on ACTH and cortisol",
+    "Key adverse effect"
+   ],
+   [
+    [
+     "Bicalutamide",
+     "Androgen receptor",
+     "None",
+     "Gynecomastia, hot flashes"
+    ],
+    [
+     "Leuprolide",
+     "Pituitary GnRH receptor",
+     "None",
+     "Initial flare, hot flashes"
+    ],
+    [
+     "Enzalutamide",
+     "Androgen receptor, second generation",
+     "None",
+     "Seizures, fatigue"
+    ],
+    [
+     "Abiraterone",
+     "CYP17A1",
+     "Cortisol falls, ACTH rises",
+     "Hypertension, hypokalemia, edema"
+    ],
+    [
+     "Degarelix",
+     "Pituitary GnRH receptor, antagonist",
+     "None",
+     "No flare, injection-site reactions"
+    ]
+   ]
+  ],
+  "bl": "Abiraterone blocks CYP17A1, so ACTH rises and mineralocorticoids cause hypertension and hypokalemia unless prednisone is given.",
+  "ef": "rp21_adt",
+  "pt": {
+   "hl": [
+    "Abiraterone: CYP17A1 inhibitor"
+   ],
+   "say": "The abiraterone card shows CYP17A1 inhibition raising ACTH, so mineralocorticoid excess causes hypertension and hypokalemia unless prednisone is given."
+  }
+ }
+]

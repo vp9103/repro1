@@ -1,0 +1,900 @@
+[
+ {
+  "id": "rp16q01",
+  "d": 1,
+  "tags": [
+   "pathogen-clues",
+   "virulence-factors"
+  ],
+  "bp": [
+   "BP-rp16-01",
+   "BP-rp16-13"
+  ],
+  "obj": [
+   "TBL-STI.1"
+  ],
+  "s": "A 22-year-old woman has mucopurulent cervical discharge. A vaginal swab nucleic acid amplification test is positive. In cell culture, the organism forms glycogen-rich cytoplasmic inclusions that stain with iodine, and it cannot synthesize its own ATP.",
+  "l": "Which form of this organism attaches to and enters new host cells?",
+  "o": [
+   "Elementary body",
+   "Reticulate body",
+   "Endospore",
+   "Pseudohypha",
+   "Trophozoite"
+  ],
+  "a": 0,
+  "e": "The organism is *Chlamydia trachomatis*, an obligate intracellular bacterium. The **elementary body** is the small, tough infectious form. It survives outside cells, attaches to columnar epithelium and enters by endocytosis. Inside the cell it turns into the reticulate body, which divides and fills the glycogen-rich inclusion before changing back into new elementary bodies. The reticulate body divides but is too fragile to infect a new cell. Endospores, pseudohyphae and trophozoites belong to other kinds of organisms.",
+  "w": {
+   "Reticulate body": "The reticulate body is the larger form that divides inside the cell. It is fragile outside the cell and cannot start a new infection.",
+   "Endospore": "Endospores are dormant, heat-resistant forms made by gram-positive rods such as Clostridium and Bacillus. Chlamydiae have no spore stage.",
+   "Pseudohypha": "Pseudohyphae are chains of elongated budding yeast, the tissue form of Candida. They are not a bacterial form.",
+   "Trophozoite": "Trophozoites are the feeding stage of protozoa such as Trichomonas vaginalis, which appear as moving flagellated cells on a wet mount."
+  },
+  "et": [
+   [
+    "Option",
+    "What it does",
+    "Size and state",
+    "Found in"
+   ],
+   [
+    [
+     "Elementary body",
+     "Attaches and enters epithelial cells",
+     "Small, hardy, not dividing",
+     "Chlamydia, outside cells"
+    ],
+    [
+     "Reticulate body",
+     "Divides by binary fission",
+     "Large, fragile, metabolically active",
+     "Chlamydia, inside the inclusion"
+    ],
+    [
+     "Endospore",
+     "Survives heat and drying",
+     "Dormant, thick-coated",
+     "Clostridium and Bacillus"
+    ],
+    [
+     "Pseudohypha",
+     "Invades tissue as chains of yeast",
+     "Elongated budding cells",
+     "Candida"
+    ],
+    [
+     "Trophozoite",
+     "Feeds and moves",
+     "Motile, flagellated",
+     "Trichomonas and other protozoa"
+    ]
+   ]
+  ],
+  "bl": "Chlamydia's infectious form is the elementary body; the reticulate body replicates inside the inclusion but cannot infect."
+ },
+ {
+  "id": "rp16q02",
+  "d": 2,
+  "tags": [
+   "virulence-factors"
+  ],
+  "bp": [
+   "BP-rp16-03",
+   "BP-rp16-14"
+  ],
+  "s": "A 24-year-old man comes to the clinic because of dysuria and a thick yellow urethral discharge for 3 days. He had the same illness 1 year ago and was treated. Temperature is 37.2°C. Gram stain of the discharge shows gram-negative diplococci inside neutrophils. The organism grows on Thayer-Martin agar, is oxidase-positive and ferments glucose but not maltose.",
+  "l": "Which property of this organism best explains why his earlier infection did not protect him?",
+  "o": [
+   "Antigenic variation of its pili",
+   "A polysaccharide capsule",
+   "IgA protease secretion",
+   "Lipooligosaccharide endotoxin",
+   "Obligate intracellular growth"
+  ],
+  "a": 0,
+  "e": "This is gonococcal urethritis. *Neisseria gonorrhoeae* keeps changing the antigens of its pili, the structures it uses to attach to epithelium. Antibodies made during the first infection do not recognize the new pili, so reinfection is common and no vaccine exists. IgA protease and lipooligosaccharide are real gonococcal virulence factors, but they help it survive on mucosa and cause inflammation. They do not explain the failed immunity. The gonococcus has no polysaccharide capsule, unlike the meningococcus, and it grows on agar, unlike obligate intracellular chlamydia.",
+  "w": {
+   "A polysaccharide capsule": "The meningococcus, not the gonococcus, has a polysaccharide capsule. That is why meningococcal vaccines exist and gonococcal vaccines do not.",
+   "IgA protease secretion": "IgA protease cuts secretory IgA on the mucosa and helps the bacteria colonize. It does not change the surface antigens that memory cells recognize after recovery.",
+   "Lipooligosaccharide endotoxin": "Lipooligosaccharide causes the strong neutrophil response and the pus. An unchanged molecule would still be recognized by antibody in a second infection.",
+   "Obligate intracellular growth": "Obligate intracellular growth describes chlamydia, which cannot make ATP. This organism grows on Thayer-Martin agar, so it is not confined to host cells."
+  },
+  "et": [
+   [
+    "Option",
+    "Organism with this feature",
+    "What it does",
+    "Effect on repeat infection"
+   ],
+   [
+    [
+     "Antigenic variation of its pili",
+     "Neisseria gonorrhoeae",
+     "Changes pilus antigens during infection",
+     "Old antibodies miss new pili"
+    ],
+    [
+     "A polysaccharide capsule",
+     "Neisseria meningitidis",
+     "Blocks phagocytosis",
+     "Capsule antibodies protect; basis of vaccines"
+    ],
+    [
+     "IgA protease secretion",
+     "Both Neisseria species",
+     "Cleaves mucosal IgA",
+     "Helps colonization; antigens unchanged"
+    ],
+    [
+     "Lipooligosaccharide endotoxin",
+     "Both Neisseria species",
+     "Triggers neutrophil inflammation",
+     "Drives symptoms, not immune escape"
+    ],
+    [
+     "Obligate intracellular growth",
+     "Chlamydia trachomatis",
+     "Hides inside host cells",
+     "Not a gonococcal trait"
+    ]
+   ]
+  ],
+  "bl": "Gonococcal pili undergo antigenic variation, so a prior infection leaves no protective immunity and no vaccine exists."
+ },
+ {
+  "id": "rp16q03",
+  "d": 2,
+  "tags": [
+   "virulence-factors",
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp16-03"
+  ],
+  "s": "A 19-year-old woman has had fever and pain in her wrists and hands for 3 days. Examination shows swelling and tenderness along the extensor tendon sheaths of both wrists and four small pustules on an erythematous base on her forearms and ankles. Three years ago she was hospitalized for meningococcal meningitis. Blood cultures grow gram-negative diplococci that ferment glucose but not maltose.",
+  "l": "Deficiency of which of the following most likely predisposes her to these infections?",
+  "o": [
+   "Complement C5–C9",
+   "C1 esterase inhibitor",
+   "NADPH oxidase",
+   "CD18 integrin",
+   "Bruton tyrosine kinase"
+  ],
+  "a": 0,
+  "e": "Tenosynovitis, a few pustules and joint pain are **disseminated gonococcal infection**, and she has also had meningococcal disease. Repeated or disseminated Neisseria infections point to a deficiency of the terminal complement proteins C5 to C9, which form the membrane attack complex that kills Neisseria in the blood. C1 esterase inhibitor deficiency causes hereditary angioedema. NADPH oxidase deficiency causes infections with catalase-positive organisms. CD18 deficiency causes leukocyte adhesion deficiency with delayed umbilical cord separation. Bruton tyrosine kinase deficiency removes B cells.",
+  "w": {
+   "C1 esterase inhibitor": "Loss of C1 esterase inhibitor lets bradykinin build up and causes hereditary angioedema with facial and airway swelling, not bloodstream Neisseria infections.",
+   "NADPH oxidase": "NADPH oxidase deficiency is chronic granulomatous disease, with repeated infections by catalase-positive organisms such as Staphylococcus aureus and Aspergillus.",
+   "CD18 integrin": "CD18 deficiency is leukocyte adhesion deficiency, with delayed umbilical cord separation, high neutrophil counts and skin infections without pus.",
+   "Bruton tyrosine kinase": "Bruton tyrosine kinase deficiency blocks B-cell maturation, so boys get repeated sinus and lung infections with encapsulated bacteria once maternal antibody fades."
+  },
+  "et": [
+   [
+    "Option",
+    "Disorder",
+    "Typical infections or findings",
+    "Defect"
+   ],
+   [
+    [
+     "Complement C5–C9",
+     "Terminal complement deficiency",
+     "Recurrent Neisseria bacteremia",
+     "No membrane attack complex"
+    ],
+    [
+     "C1 esterase inhibitor",
+     "Hereditary angioedema",
+     "Episodic swelling of face and airway",
+     "Excess bradykinin"
+    ],
+    [
+     "NADPH oxidase",
+     "Chronic granulomatous disease",
+     "Catalase-positive bacteria and fungi",
+     "No oxidative burst"
+    ],
+    [
+     "CD18 integrin",
+     "Leukocyte adhesion deficiency",
+     "Delayed cord separation, pus-free infections",
+     "Neutrophils cannot leave vessels"
+    ],
+    [
+     "Bruton tyrosine kinase",
+     "X-linked agammaglobulinemia",
+     "Sinopulmonary infections after 6 months",
+     "No mature B cells"
+    ]
+   ]
+  ],
+  "bl": "Recurrent or disseminated Neisseria infections suggest terminal complement C5–C9 deficiency, because the membrane attack complex kills Neisseria."
+ },
+ {
+  "id": "rp16q04",
+  "d": 3,
+  "tags": [
+   "anatomic-relations",
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp16-09"
+  ],
+  "obj": [
+   "TBL-STI.2"
+  ],
+  "s": "A 23-year-old woman comes to the emergency department because of sharp right upper quadrant pain for 2 days that worsens with deep breathing. She has had dull lower abdominal pain and vaginal discharge for 1 week and has a new sexual partner. Temperature is 38.4°C. Pelvic examination shows mucopurulent cervical discharge, pain when the cervix is moved and bilateral adnexal tenderness. Urine hCG is negative. Serum aminotransferases are normal, and ultrasound shows a normal gallbladder.",
+  "l": "Which of the following best explains her right upper quadrant pain?",
+  "o": [
+   "Inflammation of the liver capsule",
+   "Acute cholecystitis",
+   "Acute viral hepatitis",
+   "Right lower lobe pneumonia",
+   "Acute pyelonephritis"
+  ],
+  "a": 0,
+  "e": "Cervical discharge, cervical motion tenderness and adnexal tenderness establish pelvic inflammatory disease. The organisms can climb the right paracolic gutter and inflame the **liver capsule**, which is perihepatitis, or Fitz-Hugh-Curtis syndrome. It hurts with breathing because the capsule rubs against the diaphragm. The liver cells are spared, so aminotransferases stay normal. Later the capsule scars to the abdominal wall with violin-string adhesions. Cholecystitis is the classic look-alike, but the gallbladder is normal. Viral hepatitis would raise aminotransferases, and pneumonia and pyelonephritis do not explain the pelvic findings.",
+  "w": {
+   "Acute cholecystitis": "Cholecystitis also causes right upper quadrant pain and fever, but ultrasound would show stones or a thick wall. It cannot explain her pelvic findings.",
+   "Acute viral hepatitis": "Hepatitis inflames the liver cells and raises aminotransferases a lot. Hers are normal because only the capsule is involved.",
+   "Right lower lobe pneumonia": "Lower lobe pneumonia can cause pleuritic upper abdominal pain, but it brings cough and crackles. It would not explain cervical discharge and adnexal tenderness.",
+   "Acute pyelonephritis": "Pyelonephritis causes fever with flank pain and costovertebral angle tenderness, usually with pus cells in the urine. Pain on moving the cervix points to the genital tract."
+  },
+  "et": [
+   [
+    "Option",
+    "Tissue inflamed",
+    "Aminotransferases",
+    "Imaging or exam clue"
+   ],
+   [
+    [
+     "Inflammation of the liver capsule",
+     "Liver capsule, from pelvic infection",
+     "Normal",
+     "Normal gallbladder; cervical motion tenderness"
+    ],
+    [
+     "Acute cholecystitis",
+     "Gallbladder wall",
+     "Normal or mildly raised",
+     "Stones, wall thickening, Murphy sign"
+    ],
+    [
+     "Acute viral hepatitis",
+     "Liver parenchyma",
+     "Markedly raised",
+     "Jaundice, tender enlarged liver"
+    ],
+    [
+     "Right lower lobe pneumonia",
+     "Lung and pleura",
+     "Normal",
+     "Cough, crackles, infiltrate on radiograph"
+    ],
+    [
+     "Acute pyelonephritis",
+     "Renal pelvis and parenchyma",
+     "Normal",
+     "Flank pain, pyuria, costovertebral tenderness"
+    ]
+   ]
+  ],
+  "bl": "Right upper quadrant pain with PID signs and a normal gallbladder is Fitz-Hugh-Curtis inflammation of the liver capsule, treated with the PID regimen.",
+  "ef": "rp16_pid",
+  "pt": {
+   "hl": [
+    "Liver capsule",
+    "Perihepatitis: Fitz-Hugh-Curtis"
+   ],
+   "say": "Look at step 6, where the dashed path climbs the right gutter to the liver capsule: Fitz-Hugh-Curtis perihepatitis inflames the capsule, not the gallbladder or the liver cells."
+  }
+ },
+ {
+  "id": "rp16q05",
+  "d": 2,
+  "tags": [
+   "treatment-sequence",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp16-10"
+  ],
+  "obj": [
+   "TBL-STI.2"
+  ],
+  "s": "A 20-year-old woman has had lower abdominal pain and fever for 2 days. Temperature is 38.1°C. Pelvic examination shows purulent cervical discharge, cervical motion tenderness and bilateral adnexal tenderness without a mass. Urine hCG is negative. Transvaginal ultrasound shows no abscess. She is tolerating oral fluids, has no drug allergies and will be treated as an outpatient.",
+  "l": "Which regimen is most appropriate?",
+  "o": [
+   "Ceftriaxone, doxycycline and metronidazole",
+   "Azithromycin and metronidazole without a cephalosporin",
+   "Ceftriaxone alone, with no oral antibiotics",
+   "Doxycycline alone, with no cephalosporin",
+   "Metronidazole alone, which covers only anaerobes"
+  ],
+  "a": 0,
+  "e": "This is outpatient pelvic inflammatory disease, an infection of the upper genital tract that gonorrhea or chlamydia start and anaerobes join. The regimen has to cover all three: **ceftriaxone** for the gonococcus, doxycycline for chlamydia and metronidazole for the anaerobes. Treatment starts on clinical grounds because delay scars the tubes. Ceftriaxone alone leaves chlamydia and anaerobes untreated. Doxycycline alone misses the gonococcus, and metronidazole alone treats only anaerobes. Azithromycin with metronidazole leaves out the cephalosporin that the gonococcus needs.",
+  "w": {
+   "Azithromycin and metronidazole without a cephalosporin": "Without ceftriaxone the gonococcus is not reliably covered. Metronidazole only adds cover for the anaerobes.",
+   "Ceftriaxone alone, with no oral antibiotics": "Ceftriaxone treats gonorrhea, but pelvic infection also involves chlamydia and anaerobes. They need doxycycline and metronidazole.",
+   "Doxycycline alone, with no cephalosporin": "Doxycycline covers chlamydia, but gonococci resist tetracyclines. It also leaves out the anaerobes that join the infection.",
+   "Metronidazole alone, which covers only anaerobes": "Metronidazole treats anaerobes, trichomonas and bacterial vaginosis. Alone it leaves the gonococcus and chlamydia that started the infection untouched."
+  },
+  "et": [
+   [
+    "Option",
+    "Gonococcus",
+    "Chlamydia",
+    "Anaerobes"
+   ],
+   [
+    [
+     "Ceftriaxone, doxycycline and metronidazole",
+     "Covered by ceftriaxone",
+     "Covered by doxycycline",
+     "Covered by metronidazole"
+    ],
+    [
+     "Azithromycin and metronidazole without a cephalosporin",
+     "Not reliably covered",
+     "Covered by azithromycin",
+     "Covered by metronidazole"
+    ],
+    [
+     "Ceftriaxone alone, with no oral antibiotics",
+     "Covered",
+     "Not covered",
+     "Not covered"
+    ],
+    [
+     "Doxycycline alone, with no cephalosporin",
+     "Not covered",
+     "Covered",
+     "Not covered"
+    ],
+    [
+     "Metronidazole alone, which covers only anaerobes",
+     "Not covered",
+     "Not covered",
+     "Covered"
+    ]
+   ]
+  ],
+  "bl": "Outpatient PID needs ceftriaxone plus doxycycline plus metronidazole to cover the gonococcus, chlamydia and anaerobes."
+ },
+ {
+  "id": "rp16q06",
+  "d": 1,
+  "tags": [
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp16-06",
+   "BP-rp16-08"
+  ],
+  "obj": [
+   "TBL-STI.1"
+  ],
+  "s": "A 28-year-old man comes to the clinic 5 days after returning from a trip abroad because of two painful penile sores. Examination shows two deep ulcers with ragged, undermined edges and a gray-yellow purulent base, and a single tender, fluctuant left inguinal lymph node. Gram stain of ulcer material shows small gram-negative rods arranged in parallel chains.",
+  "l": "Which organism is the most likely cause?",
+  "o": [
+   "Haemophilus ducreyi",
+   "Treponema pallidum",
+   "Klebsiella granulomatis",
+   "Chlamydia trachomatis serovar L2",
+   "Herpes simplex virus type 2"
+  ],
+  "a": 0,
+  "e": "Painful, ragged ulcers with a purulent base and a tender node on one side that can suppurate are chancroid, caused by *Haemophilus ducreyi*. This small gram-negative rod lines up in parallel chains, the school-of-fish pattern. It is treated with azithromycin or ceftriaxone. Herpes simplex also causes painful ulcers, but they begin as grouped vesicles, are shallow and show no bacteria. The ulcers of syphilis, donovanosis and lymphogranuloma venereum are painless.",
+  "w": {
+   "Treponema pallidum": "The syphilis chancre is a single painless, firm ulcer with a clean base, and its nodes are rubbery and painless. This picture is the opposite.",
+   "Klebsiella granulomatis": "Donovanosis causes a painless, beefy-red ulcer that bleeds easily, with Donovan bodies in macrophages and no true suppurating node.",
+   "Chlamydia trachomatis serovar L2": "Lymphogranuloma venereum begins with a tiny painless ulcer that is often missed, and buboes come weeks later. Chlamydiae are not seen on Gram stain.",
+   "Herpes simplex virus type 2": "Genital herpes causes grouped vesicles that become shallow ulcers with tender nodes on both sides. The Gram stain shows no bacteria."
+  },
+  "et": [
+   [
+    "Option",
+    "Ulcer",
+    "Nodes",
+    "Laboratory clue"
+   ],
+   [
+    [
+     "Haemophilus ducreyi",
+     "Painful, ragged, purulent base",
+     "Tender, one side, suppurates",
+     "Gram-negative rods in chains"
+    ],
+    [
+     "Treponema pallidum",
+     "Painless, indurated, clean base",
+     "Rubbery, nontender",
+     "Darkfield spirochetes, serology"
+    ],
+    [
+     "Klebsiella granulomatis",
+     "Painless, beefy-red, bleeds",
+     "Pseudobuboes",
+     "Donovan bodies in macrophages"
+    ],
+    [
+     "Chlamydia trachomatis serovar L2",
+     "Painless, tiny, often missed",
+     "Painful buboes later",
+     "NAAT; not seen on Gram stain"
+    ],
+    [
+     "Herpes simplex virus type 2",
+     "Painful vesicles, shallow ulcers",
+     "Tender, bilateral",
+     "PCR or Tzanck smear"
+    ]
+   ]
+  ],
+  "bl": "Painful ragged ulcers with a suppurating node and school-of-fish gram-negative rods mean chancroid from Haemophilus ducreyi.",
+  "ef": "rp16_ulcers",
+  "pt": {
+   "hl": [
+    "ducreyi (chancroid)",
+    "School of fish"
+   ],
+   "say": "Look at the painful-ulcer rows: Haemophilus ducreyi gives a deep ragged ulcer, a painful node that suppurates and school-of-fish rods on Gram stain."
+  }
+ },
+ {
+  "id": "rp16q07",
+  "d": 2,
+  "tags": [
+   "pathogen-clues",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp16-02"
+  ],
+  "obj": [
+   "TBL-STI.1"
+  ],
+  "s": "A 30-year-old man who has sex with men comes to the clinic because of painful swelling in his left groin for 10 days. Three weeks ago he noticed a small painless sore on his penis that healed within a few days. Temperature is 38.0°C. Examination shows tender, matted inguinal lymph nodes above and below the inguinal ligament, with a draining sinus. A nucleic acid amplification test of the node aspirate is positive for Chlamydia trachomatis.",
+  "l": "Which is the most appropriate treatment?",
+  "o": [
+   "Doxycycline for several weeks",
+   "Benzathine penicillin G",
+   "Oral acyclovir",
+   "Ceftriaxone injection",
+   "Oral metronidazole"
+  ],
+  "a": 0,
+  "e": "A fleeting painless ulcer followed by painful, matted inguinal buboes with the groove sign is **lymphogranuloma venereum**. It is caused by the invasive L1 to L3 serovars of *Chlamydia trachomatis*. These serovars spread through lymphatics and infect deep tissue, so doxycycline is given for several weeks, much longer than for uncomplicated genital chlamydia. Benzathine penicillin treats syphilis but not chlamydia, which lacks the usual peptidoglycan wall. Acyclovir treats herpes, ceftriaxone treats gonorrhea, and metronidazole treats trichomonas and anaerobes.",
+  "w": {
+   "Benzathine penicillin G": "Benzathine penicillin cures early syphilis, whose chancre is also painless. Beta-lactams do not work against chlamydiae, because their wall has almost no peptidoglycan.",
+   "Oral acyclovir": "Acyclovir treats genital herpes, which causes painful grouped vesicles, not a painless sore followed by draining buboes.",
+   "Ceftriaxone injection": "Ceftriaxone treats gonorrhea. It does not reliably clear chlamydia, which the amplification test has already identified here.",
+   "Oral metronidazole": "Metronidazole treats trichomoniasis, bacterial vaginosis and anaerobes. It has no activity against obligate intracellular chlamydiae."
+  },
+  "et": [
+   [
+    "Option",
+    "Infection it treats",
+    "Activity against chlamydia",
+    "Length of treatment"
+   ],
+   [
+    [
+     "Doxycycline for several weeks",
+     "Lymphogranuloma venereum",
+     "Yes, reaches deep tissue",
+     "Weeks"
+    ],
+    [
+     "Benzathine penicillin G",
+     "Early syphilis",
+     "None; little peptidoglycan target",
+     "Short injection course"
+    ],
+    [
+     "Oral acyclovir",
+     "Genital herpes",
+     "None; antiviral only",
+     "Short course"
+    ],
+    [
+     "Ceftriaxone injection",
+     "Gonorrhea",
+     "Unreliable",
+     "Single injection"
+    ],
+    [
+     "Oral metronidazole",
+     "Trichomoniasis, bacterial vaginosis",
+     "None",
+     "Short course"
+    ]
+   ]
+  ],
+  "bl": "Lymphogranuloma venereum from Chlamydia L1 to L3 is treated with doxycycline for several weeks, longer than for genital chlamydia.",
+  "ef": "rp16_ulcers",
+  "pt": {
+   "hl": [
+    "Painful buboes,",
+    "doxycycline"
+   ],
+   "say": "Find the LGV row: a small ulcer that heals fast, then painful buboes with the groove sign, treated with doxycycline for several weeks."
+  }
+ },
+ {
+  "id": "rp16q08",
+  "d": 2,
+  "tags": [
+   "serology-reading",
+   "autoimmune-mechanism"
+  ],
+  "bp": [
+   "BP-rp16-05",
+   "BP-rp16-18"
+  ],
+  "obj": [
+   "TBL-STI.1"
+  ],
+  "s": "A 32-year-old woman with systemic lupus erythematosus has her first prenatal visit at 10 weeks' gestation. She has had two previous miscarriages and a deep venous thrombosis. She has no genital lesions or rash. Routine screening shows a reactive RPR at a titer of 1:4. A Treponema pallidum particle agglutination (TP-PA) test is negative.",
+  "l": "Which of the following best explains the reactive RPR?",
+  "o": [
+   "Antiphospholipid antibodies",
+   "Early primary syphilis",
+   "Syphilis treated in the past",
+   "Late latent syphilis",
+   "Prozone effect from high titer"
+  ],
+  "a": 0,
+  "e": "The RPR detects antibody against **cardiolipin**, a phospholipid, so the antiphospholipid antibodies of lupus can react in the test and cause a biologic false positive, usually at a low titer. Her miscarriages and blood clot suggest antiphospholipid syndrome. The negative treponemal test settles it, because TP-PA detects antibody against the organism itself and is positive in true syphilis at any stage after the first days. Treated syphilis gives the opposite pattern, and late latent syphilis would also have a reactive treponemal test. The prozone effect causes a falsely negative RPR, not a false positive.",
+  "w": {
+   "Early primary syphilis": "In very early primary syphilis both tests can still be negative, but a treponemal test turns positive no later than the RPR. She also has no chancre.",
+   "Syphilis treated in the past": "Treated syphilis leaves a treponemal test that stays positive for life, while the RPR falls. Her result is the reverse: a reactive RPR and a negative TP-PA.",
+   "Late latent syphilis": "Latent syphilis causes no signs but always keeps a reactive treponemal test, so a negative TP-PA excludes it.",
+   "Prozone effect from high titer": "The prozone effect happens when too much antibody blocks the reaction, giving a falsely negative RPR in secondary syphilis, not a weakly reactive one."
+  },
+  "et": [
+   [
+    "Option",
+    "RPR",
+    "Treponemal test",
+    "Clinical setting"
+   ],
+   [
+    [
+     "Antiphospholipid antibodies",
+     "Reactive, low titer",
+     "Negative",
+     "Lupus, miscarriage, thrombosis"
+    ],
+    [
+     "Early primary syphilis",
+     "Often negative at first",
+     "Positive early",
+     "Painless chancre"
+    ],
+    [
+     "Syphilis treated in the past",
+     "Negative or low and stable",
+     "Positive for life",
+     "History of penicillin treatment"
+    ],
+    [
+     "Late latent syphilis",
+     "Reactive, often low",
+     "Positive",
+     "No signs, infection over 1 year"
+    ],
+    [
+     "Prozone effect from high titer",
+     "Falsely negative",
+     "Positive",
+     "Secondary syphilis with rash"
+    ]
+   ]
+  ],
+  "bl": "A reactive RPR with a negative treponemal test in lupus is a false positive from antiphospholipid antibodies binding cardiolipin.",
+  "ef": "rp16_syphilis",
+  "pt": {
+   "hl": [
+    "false positives: lupus"
+   ],
+   "say": "Read the bottom note: the nontreponemal test has false positives in lupus, because antiphospholipid antibodies bind cardiolipin while the treponemal test stays negative."
+  }
+ },
+ {
+  "id": "rp16q09",
+  "d": 3,
+  "tags": [
+   "treatment-sequence",
+   "maternal-fetal-transfer"
+  ],
+  "bp": [
+   "BP-rp16-16",
+   "BP-rp16-04"
+  ],
+  "obj": [
+   "TBL-STI.1"
+  ],
+  "s": "A 26-year-old woman, gravida 1, para 0, at 12 weeks' gestation has routine prenatal laboratory studies. Her RPR is reactive at a titer of 1:32, and a treponemal antibody test is positive. She has no rash or genital lesions and does not recall any. She has never been treated for syphilis. Ten years ago she developed hives, wheezing and hypotension after an injection of penicillin.",
+  "l": "Which is the most appropriate next step in management?",
+  "o": [
+   "Desensitize, then give benzathine penicillin G",
+   "Treat with doxycycline instead of penicillin",
+   "Treat with ceftriaxone instead of penicillin",
+   "Treat with azithromycin instead of penicillin",
+   "Postpone treatment until after delivery"
+  ],
+  "a": 0,
+  "e": "A reactive RPR with a positive treponemal test in an untreated patient means syphilis. Treponemes cross the placenta, and only **penicillin** G reliably treats the fetus and prevents congenital syphilis. Her history of anaphylaxis therefore calls for **desensitization**, which means giving the drug in small, stepwise doses under monitoring, followed by full treatment with benzathine penicillin G. Doxycycline works in nonpregnant adults but harms fetal bones and teeth. Ceftriaxone and azithromycin are not proven to protect the fetus, and azithromycin resistance is common.",
+  "w": {
+   "Treat with doxycycline instead of penicillin": "Doxycycline treats syphilis in a nonpregnant adult who is allergic to penicillin. In pregnancy it can stain the baby's teeth and impair bone growth, and it is not proven to cure fetal infection.",
+   "Treat with ceftriaxone instead of penicillin": "Ceftriaxone is active against treponemes, but it is unproven for treating the fetus, and cross-reactivity after penicillin anaphylaxis is a concern.",
+   "Treat with azithromycin instead of penicillin": "Macrolide-resistant strains of Treponema pallidum are widespread, and azithromycin does not reliably prevent congenital syphilis, so it is not used in pregnancy.",
+   "Postpone treatment until after delivery": "Treponemes cross the placenta at any stage of pregnancy, so waiting risks stillbirth and congenital syphilis with bone, skin and nerve damage."
+  },
+  "et": [
+   [
+    "Option",
+    "Treats the fetus",
+    "Use in pregnancy",
+    "Main problem"
+   ],
+   [
+    [
+     "Desensitize, then give benzathine penicillin G",
+     "Yes, reliably",
+     "Recommended",
+     "Needs monitored desensitization first"
+    ],
+    [
+     "Treat with doxycycline instead of penicillin",
+     "Unproven",
+     "Avoided",
+     "Fetal teeth and bone"
+    ],
+    [
+     "Treat with ceftriaxone instead of penicillin",
+     "Unproven",
+     "Not recommended",
+     "Limited evidence"
+    ],
+    [
+     "Treat with azithromycin instead of penicillin",
+     "No",
+     "Not recommended",
+     "Macrolide resistance"
+    ],
+    [
+     "Postpone treatment until after delivery",
+     "No",
+     "Unsafe",
+     "Congenital syphilis risk"
+    ]
+   ]
+  ],
+  "bl": "Syphilis in a penicillin-allergic pregnant patient requires desensitization and then benzathine penicillin G, the only drug proven to treat the fetus."
+ },
+ {
+  "id": "rp16q10",
+  "d": 1,
+  "tags": [
+   "screening-prevention"
+  ],
+  "bp": [
+   "BP-rp16-17",
+   "BP-rp16-01"
+  ],
+  "obj": [
+   "BICEP-BROWN.5"
+  ],
+  "s": "A 21-year-old woman comes for a routine health maintenance visit. She has had two male sexual partners in the past year and uses an oral contraceptive. She has no symptoms, and pelvic examination is normal. She has never been tested for sexually transmitted infections.",
+  "l": "Which test should be offered to screen for chlamydia and gonorrhea?",
+  "o": [
+   "Nucleic acid amplification test of a vaginal swab",
+   "Gram stain of endocervical secretions",
+   "Serum antibody titers for both organisms",
+   "Endocervical culture on Thayer-Martin agar",
+   "Saline wet mount of vaginal discharge"
+  ],
+  "a": 0,
+  "e": "Sexually active women younger than 25 are screened every year for chlamydia and gonorrhea, because most cervical infections cause no symptoms but can still climb and scar the tubes. The screening test is a **nucleic acid amplification test** (NAAT), and a vaginal swab is an acceptable specimen. Gram stain finds gonococci in men's urethral pus but misses most cervical infections. Culture on Thayer-Martin agar is less sensitive and cannot grow chlamydia. Serology has no role, and a wet mount looks for trichomonads and clue cells.",
+  "w": {
+   "Gram stain of endocervical secretions": "Gram stain helps in men with urethral discharge, but in the cervix it is insensitive for gonococci and cannot show chlamydia.",
+   "Serum antibody titers for both organisms": "Antibodies to chlamydia and gonorrhea do not tell past infection from current infection, so they are not used to screen or diagnose.",
+   "Endocervical culture on Thayer-Martin agar": "Thayer-Martin culture grows gonococci but is less sensitive than amplification, and it cannot grow obligate intracellular chlamydiae.",
+   "Saline wet mount of vaginal discharge": "A wet mount shows moving trichomonads or the clue cells of bacterial vaginosis. It cannot detect chlamydia or gonorrhea."
+  },
+  "et": [
+   [
+    "Option",
+    "Detects chlamydia",
+    "Detects gonorrhea",
+    "Role"
+   ],
+   [
+    [
+     "Nucleic acid amplification test of a vaginal swab",
+     "Yes, most sensitive",
+     "Yes, most sensitive",
+     "Screening test of choice"
+    ],
+    [
+     "Gram stain of endocervical secretions",
+     "No",
+     "Poorly in women",
+     "Symptomatic men"
+    ],
+    [
+     "Serum antibody titers for both organisms",
+     "Not diagnostic",
+     "Not diagnostic",
+     "No role"
+    ],
+    [
+     "Endocervical culture on Thayer-Martin agar",
+     "No",
+     "Yes, less sensitive",
+     "Antibiotic susceptibility"
+    ],
+    [
+     "Saline wet mount of vaginal discharge",
+     "No",
+     "No",
+     "Trichomonas, bacterial vaginosis"
+    ]
+   ]
+  ],
+  "bl": "Sexually active women younger than 25 get yearly chlamydia and gonorrhea screening by nucleic acid amplification test of a vaginal swab."
+ },
+ {
+  "id": "rp16q11",
+  "d": 3,
+  "tags": [
+   "drug-mechanism",
+   "pathogen-clues"
+  ],
+  "bp": [
+   "BP-rp16-13",
+   "BP-rp16-11"
+  ],
+  "s": "A 25-year-old man comes to the clinic because of burning on urination and a scant, clear urethral discharge for 1 week. An urgent care physician prescribed cephalexin 5 days ago, but his symptoms have not changed. Temperature is 37°C. Gram stain of the discharge shows many neutrophils but no organisms, and culture on Thayer-Martin agar shows no growth. A urine nucleic acid amplification test is pending.",
+  "l": "Which feature of the most likely organism explains why the cephalosporin failed?",
+  "o": [
+   "Its cell wall has little peptidoglycan",
+   "It produces a plasmid beta-lactamase",
+   "It has a mutated penicillin-binding protein",
+   "It pumps beta-lactams out by efflux",
+   "It forms a biofilm on the urethra"
+  ],
+  "a": 0,
+  "e": "Urethritis with neutrophils but no organisms on Gram stain and no gonococcal growth is nongonococcal urethritis, most often from *Chlamydia trachomatis*. Chlamydiae are obligate intracellular bacteria, and their cell wall has almost no **peptidoglycan**, the molecule that beta-lactams attack. Cephalexin therefore has no target. Doxycycline, which blocks the bacterial ribosome, is the treatment. Beta-lactamase and altered penicillin-binding proteins are ways that other bacteria resist beta-lactams, but they only matter in organisms that build a peptidoglycan wall. Efflux and biofilm are not why chlamydia ignores these drugs.",
+  "w": {
+   "It produces a plasmid beta-lactamase": "Plasmid beta-lactamases give gonococci penicillin resistance. This organism did not grow on Thayer-Martin agar, and chlamydiae have no peptidoglycan target to protect.",
+   "It has a mutated penicillin-binding protein": "Altered penicillin-binding proteins explain resistance in pneumococci, MRSA and some gonococci. Those organisms still build a peptidoglycan wall for the drug to attack.",
+   "It pumps beta-lactams out by efflux": "Efflux pumps add to multidrug resistance in gram-negative rods. Chlamydia is naturally unaffected because it lacks the target, not because it pumps the drug out.",
+   "It forms a biofilm on the urethra": "Biofilms protect organisms on catheters and prosthetic valves. Chlamydia instead hides and divides inside an inclusion in epithelial cells."
+  },
+  "et": [
+   [
+    "Option",
+    "Mechanism",
+    "Organisms where it matters",
+    "Needs a peptidoglycan wall"
+   ],
+   [
+    [
+     "Its cell wall has little peptidoglycan",
+     "No target for the drug",
+     "Chlamydia, Mycoplasma",
+     "No"
+    ],
+    [
+     "It produces a plasmid beta-lactamase",
+     "Drug destroyed",
+     "Gonococcus, staphylococci",
+     "Yes"
+    ],
+    [
+     "It has a mutated penicillin-binding protein",
+     "Target altered",
+     "Pneumococcus, MRSA, gonococcus",
+     "Yes"
+    ],
+    [
+     "It pumps beta-lactams out by efflux",
+     "Drug exported",
+     "Pseudomonas, enteric rods",
+     "Yes"
+    ],
+    [
+     "It forms a biofilm on the urethra",
+     "Drug penetration blocked",
+     "Catheter and device infections",
+     "Yes"
+    ]
+   ]
+  ],
+  "bl": "Chlamydia's cell wall has little peptidoglycan, so beta-lactams fail and nongonococcal urethritis is treated with doxycycline."
+ },
+ {
+  "id": "rp16q12",
+  "d": 1,
+  "tags": [
+   "pathogen-clues",
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp16-07"
+  ],
+  "obj": [
+   "TBL-STI.1"
+  ],
+  "s": "A 35-year-old man who recently returned from 6 months of work in southern Africa has a slowly enlarging genital lesion. Examination shows a painless, beefy-red ulcer with rolled edges that bleeds easily when touched, and no true lymphadenopathy. A crushed tissue smear stained with Giemsa shows dark, bipolar-staining bacteria inside the cytoplasm of macrophages.",
+  "l": "Which organism is the most likely cause?",
+  "o": [
+   "Klebsiella granulomatis",
+   "Haemophilus ducreyi",
+   "Treponema pallidum",
+   "Chlamydia trachomatis serovar L2",
+   "Leishmania donovani"
+  ],
+  "a": 0,
+  "e": "A painless, beefy-red, friable ulcer without true lymphadenopathy in someone from an endemic tropical region is **granuloma inguinale** (donovanosis), caused by *Klebsiella granulomatis*. The diagnostic finding is the Donovan body: bacteria inside macrophages that stain dark with a bipolar, safety-pin look on Giemsa. Treatment is azithromycin for several weeks. *Leishmania donovani* shares only the name. It causes visceral leishmaniasis with fever and an enlarged spleen. Haemophilus ducreyi causes painful ulcers, Treponema pallidum a clean, firm chancre, and chlamydia L2 a fleeting ulcer followed by buboes.",
+  "w": {
+   "Haemophilus ducreyi": "Chancroid ulcers are painful, with a purulent, ragged base and a suppurating node. The rods lie outside cells in school-of-fish chains, not inside macrophages.",
+   "Treponema pallidum": "The syphilis chancre is also painless, but it is clean based and firm rather than friable. Spirochetes are seen by darkfield microscopy, not inside macrophages.",
+   "Chlamydia trachomatis serovar L2": "Lymphogranuloma venereum causes a tiny, short-lived ulcer and then painful buboes, the opposite of a large bleeding ulcer without true nodes.",
+   "Leishmania donovani": "Leishmania donovani amastigotes fill macrophages in visceral leishmaniasis, with fever, weight loss and a huge spleen. It does not cause a genital ulcer, and the shared name is misleading."
+  },
+  "et": [
+   [
+    "Option",
+    "Ulcer",
+    "Nodes",
+    "Smear finding"
+   ],
+   [
+    [
+     "Klebsiella granulomatis",
+     "Painless, beefy-red, bleeds",
+     "Pseudobuboes only",
+     "Donovan bodies in macrophages"
+    ],
+    [
+     "Haemophilus ducreyi",
+     "Painful, purulent, ragged",
+     "Tender, suppurative",
+     "School-of-fish rods"
+    ],
+    [
+     "Treponema pallidum",
+     "Painless, clean, indurated",
+     "Rubbery, nontender",
+     "Spirochetes on darkfield"
+    ],
+    [
+     "Chlamydia trachomatis serovar L2",
+     "Tiny, transient",
+     "Painful buboes",
+     "Positive NAAT; inclusions"
+    ],
+    [
+     "Leishmania donovani",
+     "No genital ulcer",
+     "Not a feature",
+     "Amastigotes in macrophages"
+    ]
+   ]
+  ],
+  "bl": "A painless beefy-red ulcer with Donovan bodies in macrophages is donovanosis from Klebsiella granulomatis, treated with prolonged azithromycin.",
+  "ef": "rp16_ulcers",
+  "pt": {
+   "hl": [
+    "granulomatis",
+    "Donovan bodies"
+   ],
+   "say": "Look at the last row: Klebsiella granulomatis gives a beefy-red ulcer that bleeds on contact, no true nodes and Donovan bodies on Giemsa stain."
+  }
+ }
+]

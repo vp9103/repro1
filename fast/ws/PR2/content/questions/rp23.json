@@ -1,0 +1,916 @@
+[
+ {
+  "id": "rp23q01",
+  "d": 1,
+  "tags": [
+   "risk-factors",
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp23-01",
+   "BP-rp23-03"
+  ],
+  "obj": [
+   "TBL-BREAST.3"
+  ],
+  "s": "A 22-year-old woman found a lump in her left breast while showering. Examination shows a 2-cm, painless, rubbery, well-circumscribed mass in the upper outer quadrant that slides easily beneath the examining fingers. There is no nipple discharge or axillary adenopathy. Ultrasound shows a solid, oval mass with smooth margins.",
+  "l": "What is the most likely diagnosis?",
+  "o": [
+   "Fibroadenoma",
+   "Phyllodes tumor",
+   "Fibrocystic change",
+   "Intraductal papilloma",
+   "Invasive ductal carcinoma"
+  ],
+  "a": 0,
+  "e": "A mobile, rubbery, well-circumscribed solid mass in a woman in her early 20s is a **fibroadenoma**, the most common benign breast tumor under 35. It is a biphasic growth of intralobular stroma and compressed ducts that is estrogen-sensitive and does not become cancer. A phyllodes tumor looks similar but appears around 50 and grows fast, and invasive ductal carcinoma is rare at this age and feels hard and fixed.",
+  "w": {
+   "Phyllodes tumor": "Phyllodes tumors share the biphasic structure but usually arise around age 50, grow rapidly to a large size and show stromal overgrowth in leaf-like fronds.",
+   "Fibrocystic change": "Fibrocystic change gives bilateral, multifocal lumpiness that is tender before menses, not a single discrete solid oval lesion on ultrasound.",
+   "Intraductal papilloma": "A papilloma grows within a large subareolar duct and usually announces itself with bloody discharge from a single duct, which she does not have.",
+   "Invasive ductal carcinoma": "Carcinoma is rare at 22 and forms a hard, irregular, often fixed lesion with spiculated margins because desmoplastic stroma surrounds the infiltrating tumor."
+  },
+  "et": [
+   [
+    "Option",
+    "Typical age",
+    "Feel on exam",
+    "Imaging or key clue"
+   ],
+   [
+    [
+     "Fibroadenoma",
+     "Under 35",
+     "Mobile, rubbery, well circumscribed",
+     "Solid oval mass, smooth margins"
+    ],
+    [
+     "Phyllodes tumor",
+     "Around 50",
+     "Large, fast-growing",
+     "Lobulated solid mass"
+    ],
+    [
+     "Fibrocystic change",
+     "Premenopausal",
+     "Bilateral lumpiness, tender",
+     "Cysts, cyclic symptoms"
+    ],
+    [
+     "Intraductal papilloma",
+     "30s to 50s",
+     "Small subareolar lump or none",
+     "Bloody single-duct discharge"
+    ],
+    [
+     "Invasive ductal carcinoma",
+     "Mostly postmenopausal",
+     "Hard, irregular, fixed",
+     "Spiculated mass"
+    ]
+   ]
+  ],
+  "bl": "A mobile, rubbery, well-circumscribed mass in a woman under 35 is a fibroadenoma.",
+  "ef": "rp23_age",
+  "pt": {
+   "hl": [
+    "Fibroadenoma",
+    "Mobile, rubbery"
+   ],
+   "say": "The top row shows fibroadenoma, a mobile, rubbery mass in women under 35, matching her age and exam."
+  }
+ },
+ {
+  "id": "rp23q02",
+  "d": 2,
+  "tags": [
+   "histology-to-diagnosis",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp23-03"
+  ],
+  "obj": [
+   "TBL-BREAST.9"
+  ],
+  "s": "A 52-year-old woman reports a breast lump that has grown from 3 cm to 8 cm over 4 months. Examination shows a bulky, smooth, mobile mass that stretches the overlying skin; axillary nodes are not enlarged. Excision shows elongated, slit-like clefts lined by epithelium, into which project broad fronds of hypercellular stroma with frequent mitoses.",
+  "l": "What is the most likely diagnosis?",
+  "o": [
+   "Phyllodes tumor",
+   "Fibroadenoma",
+   "Intraductal papilloma",
+   "Invasive lobular carcinoma",
+   "Sclerosing adenosis"
+  ],
+  "a": 0,
+  "e": "Rapid growth to a large, bulky mass in a woman around 50, with **stromal overgrowth** forming leaf-like fronds that push into epithelium-lined clefts, defines a **phyllodes tumor**. Like a fibroadenoma it arises from intralobular stroma, but its stroma is more cellular and mitotically active. It must be excised with a clear margin because it recurs locally, and malignant forms spread through the blood. A fibroadenoma occurs in younger women and has bland stroma.",
+  "w": {
+   "Fibroadenoma": "Fibroadenomas occur mainly under 35, stay small and have bland, evenly cellular stroma that compresses ducts into slits without leaf-like fronds.",
+   "Intraductal papilloma": "A papilloma is a small growth inside a large duct, and it causes bloody discharge from one duct rather than a bulky tumor.",
+   "Invasive lobular carcinoma": "Lobular carcinoma infiltrates as single-file, discohesive epithelial cells and often forms an ill-defined thickening, not a smooth tumor built of cellular stroma.",
+   "Sclerosing adenosis": "This lesion is a small cluster of crowded acini distorted by fibrosis, usually found as calcifications, and it never grows into a bulky 8-cm tumor."
+  },
+  "et": [
+   [
+    "Option",
+    "Typical age",
+    "Cell that proliferates",
+    "Architecture"
+   ],
+   [
+    [
+     "Phyllodes tumor",
+     "Around 50",
+     "Intralobular stroma, overgrowing",
+     "Leaf-like fronds into clefts"
+    ],
+    [
+     "Fibroadenoma",
+     "Under 35",
+     "Intralobular stroma, bland",
+     "Ducts compressed into slits"
+    ],
+    [
+     "Intraductal papilloma",
+     "30s to 50s",
+     "Duct epithelium on fibrovascular cores",
+     "Papillae within a large duct"
+    ],
+    [
+     "Invasive lobular carcinoma",
+     "Older women",
+     "Epithelium lacking E-cadherin",
+     "Single-file cells in stroma"
+    ],
+    [
+     "Sclerosing adenosis",
+     "30s to 40s",
+     "Acini with their myoepithelium",
+     "Crowded, compressed acini"
+    ]
+   ]
+  ],
+  "bl": "A rapidly enlarging breast mass around age 50 with leaf-like fronds of overgrown stroma is a phyllodes tumor.",
+  "ef": "rp23_age",
+  "pt": {
+   "hl": [
+    "Phyllodes tumor"
+   ],
+   "say": "The phyllodes tumor row sits around age 50 and is labeled large and fast-growing, matching her rapidly enlarging mass."
+  }
+ },
+ {
+  "id": "rp23q03",
+  "d": 1,
+  "tags": [
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp23-04"
+  ],
+  "obj": [
+   "TBL-BREAST.3"
+  ],
+  "s": "A 41-year-old woman has had spontaneous bloody discharge from her right nipple for 3 weeks. Pressure at the edge of the areola at the 9-o'clock position reproduces the discharge from a single duct opening. No mass is palpable, and a diagnostic mammogram is normal.",
+  "l": "What is the most likely cause of the discharge?",
+  "o": [
+   "Intraductal papilloma",
+   "Duct ectasia",
+   "Prolactinoma",
+   "Fibrocystic change",
+   "Paget disease of the nipple"
+  ],
+  "a": 0,
+  "e": "Spontaneous **bloody** discharge from one duct in a premenopausal woman is most often caused by an **intraductal papilloma**, a benign papillary growth in a large duct beneath the areola. Its delicate fibrovascular cores twist and bleed into the duct. Duct ectasia gives thick green-brown discharge in older women, and a prolactinoma causes milky discharge from both breasts. Fibrocystic change causes tender, lumpy breasts, and Paget disease starts as a scaly nipple rash.",
+  "w": {
+   "Duct ectasia": "Dilated subareolar ducts ringed by plasma cells fill with thick, sticky green-brown secretions, usually in multiparous women in their 50s or 60s, not fresh blood.",
+   "Prolactinoma": "Excess prolactin causes milky discharge from many ducts in both breasts, often with amenorrhea or headaches; it does not bleed from a single duct.",
+   "Fibrocystic change": "Fibrocystic change produces tender, lumpy breasts on both sides before menses; any discharge is usually clear or greenish and from several ducts.",
+   "Paget disease of the nipple": "Paget disease causes an eczematous, scaling or ulcerated nipple from underlying carcinoma cells within the epidermis; the skin change comes first."
+  },
+  "et": [
+   [
+    "Option",
+    "Discharge",
+    "Ducts and sides",
+    "Typical patient"
+   ],
+   [
+    [
+     "Intraductal papilloma",
+     "Bloody or serous",
+     "One duct, one breast",
+     "Premenopausal woman"
+    ],
+    [
+     "Duct ectasia",
+     "Thick green-brown",
+     "Several ducts",
+     "Multiparous woman in her 50s or 60s"
+    ],
+    [
+     "Prolactinoma",
+     "Milky",
+     "Many ducts, both breasts",
+     "Woman with amenorrhea or headache"
+    ],
+    [
+     "Fibrocystic change",
+     "Clear or greenish, if any",
+     "Several ducts, both breasts",
+     "Premenopausal woman with cyclic pain"
+    ],
+    [
+     "Paget disease of the nipple",
+     "Serous or bloody with crusting",
+     "Nipple skin itself",
+     "Older woman with a scaling nipple"
+    ]
+   ]
+  ],
+  "bl": "Bloody discharge from a single duct in a premenopausal woman is most often an intraductal papilloma.",
+  "ef": "rp23_age",
+  "pt": {
+   "hl": [
+    "Intraductal papilloma",
+    "Bloody discharge"
+   ],
+   "say": "The intraductal papilloma row, labeled bloody discharge, spans the 30s to 50s, fitting her age and single-duct bleeding."
+  }
+ },
+ {
+  "id": "rp23q04",
+  "d": 2,
+  "tags": [
+   "adverse-effects",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp23-07"
+  ],
+  "obj": [
+   "TBL-BREAST.3"
+  ],
+  "s": "A 26-year-old woman with schizophrenia began risperidone 3 months ago. She now has milky discharge from multiple ducts of both nipples and has not had a menstrual period for 2 months. Urine pregnancy test is negative, serum TSH is normal, and serum prolactin is moderately elevated. MRI of the brain is normal.",
+  "l": "Blockade of which receptor best explains her discharge?",
+  "o": [
+   "Dopamine D2 receptors",
+   "Serotonin 5-HT2A receptors",
+   "Histamine H1 receptors",
+   "Muscarinic M1 receptors",
+   "Alpha-1 adrenergic receptors"
+  ],
+  "a": 0,
+  "e": "Hypothalamic dopamine tonically inhibits pituitary lactotrophs through **D2 receptors**. Risperidone blocks D2 receptors in the tuberoinfundibular pathway, so prolactin rises and drives milk production, causing **galactorrhea**, while high prolactin suppresses GnRH and causes amenorrhea. Metoclopramide acts the same way. Serotonin 5-HT2A blockade adds to the antipsychotic effect with fewer movement side effects, and histamine H1 blockade causes sedation and weight gain rather than hyperprolactinemia.",
+  "w": {
+   "Serotonin 5-HT2A receptors": "Blocking this serotonin receptor adds to the antipsychotic effect of atypical drugs and lowers extrapyramidal side effects; it does not free lactotrophs from inhibition.",
+   "Histamine H1 receptors": "Antihistaminic action of antipsychotics explains sedation and weight gain; histamine exerts no tonic inhibitory control over prolactin secretion.",
+   "Muscarinic M1 receptors": "Anticholinergic effects such as dry mouth, constipation, blurred vision and urinary retention come from this blockade, which does not raise prolactin.",
+   "Alpha-1 adrenergic receptors": "Alpha-1 blockade causes orthostatic hypotension and dizziness on standing; adrenergic tone does not regulate prolactin release from the pituitary."
+  },
+  "et": [
+   [
+    "Option",
+    "Adverse effect of blockade",
+    "Effect on prolactin",
+    "Drug examples"
+   ],
+   [
+    [
+     "Dopamine D2 receptors",
+     "Galactorrhea, amenorrhea, parkinsonism",
+     "Raises it",
+     "Risperidone, haloperidol, metoclopramide"
+    ],
+    [
+     "Serotonin 5-HT2A receptors",
+     "Fewer movement side effects",
+     "No direct effect",
+     "Atypical antipsychotics"
+    ],
+    [
+     "Histamine H1 receptors",
+     "Sedation, weight gain",
+     "No direct effect",
+     "Olanzapine, quetiapine, diphenhydramine"
+    ],
+    [
+     "Muscarinic M1 receptors",
+     "Dry mouth, constipation, urinary retention",
+     "No direct effect",
+     "Clozapine, tricyclic antidepressants"
+    ],
+    [
+     "Alpha-1 adrenergic receptors",
+     "Orthostatic hypotension",
+     "No direct effect",
+     "Quetiapine, prazosin"
+    ]
+   ]
+  ],
+  "bl": "Antipsychotics and metoclopramide cause galactorrhea by blocking dopamine D2 receptors, removing the brake on prolactin."
+ },
+ {
+  "id": "rp23q05",
+  "d": 3,
+  "tags": [
+   "histology-to-diagnosis",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp23-06"
+  ],
+  "obj": [
+   "TBL-BREAST.5"
+  ],
+  "s": "A 38-year-old woman who smokes one pack of cigarettes daily has a painful, red, fluctuant mass beneath her left areola. This is her third episode in 2 years; each was drained, and a small tract now leaks pus at the edge of the areola. Her nipple has recently become inverted. She has never been pregnant or breastfed.",
+  "l": "Which change in the lactiferous ducts underlies this condition?",
+  "o": [
+   "Squamous metaplasia with keratin plugging",
+   "Dilation with plasma cells and thick secretions",
+   "Neutrophilic infection through a cracked nipple",
+   "Apocrine metaplasia of cyst linings",
+   "Papillary growth on fibrovascular cores"
+  ],
+  "a": 0,
+  "e": "Recurrent subareolar abscesses with a fistula to the areolar edge and nipple inversion in a smoker are **periductal mastitis**. Smoking is thought to trigger **squamous metaplasia** of the lactiferous duct lining; the new squamous cells shed keratin that plugs and dilates the duct until it ruptures, and keratin in the stroma incites granulomatous inflammation. Recurrence continues until the whole duct is excised. Dilation with plasma cells describes duct ectasia in older women, and infection through a cracked nipple is lactational mastitis.",
+  "w": {
+   "Dilation with plasma cells and thick secretions": "This is duct ectasia, which affects older multiparous women and causes green-brown discharge and a periareolar lump rather than recurrent fistulizing abscesses in a young smoker.",
+   "Neutrophilic infection through a cracked nipple": "Lactational mastitis follows Staphylococcus aureus entry through fissured skin during nursing; she has never breastfed, and her abscesses keep recurring.",
+   "Apocrine metaplasia of cyst linings": "Pink, snouted cells lining cysts are a nonproliferative fibrocystic change that causes cyclic lumps, not abscesses, fistulas or nipple inversion.",
+   "Papillary growth on fibrovascular cores": "An intraductal papilloma grows inside a large duct and bleeds from one duct opening; it does not produce pus or chronic granulomatous inflammation."
+  },
+  "et": [
+   [
+    "Option",
+    "Condition",
+    "Typical patient",
+    "Main presentation"
+   ],
+   [
+    [
+     "Squamous metaplasia with keratin plugging",
+     "Periductal mastitis",
+     "Smoker, not lactating",
+     "Recurrent subareolar abscess, fistula, nipple inversion"
+    ],
+    [
+     "Dilation with plasma cells and thick secretions",
+     "Duct ectasia",
+     "Multiparous woman in her 50s or 60s",
+     "Green-brown discharge, periareolar mass"
+    ],
+    [
+     "Neutrophilic infection through a cracked nipple",
+     "Acute lactational mastitis",
+     "Nursing mother",
+     "Fever, red tender wedge"
+    ],
+    [
+     "Apocrine metaplasia of cyst linings",
+     "Fibrocystic change",
+     "Premenopausal woman",
+     "Cyclic tender lumps"
+    ],
+    [
+     "Papillary growth on fibrovascular cores",
+     "Intraductal papilloma",
+     "Woman in her 30s to 50s",
+     "Bloody single-duct discharge"
+    ]
+   ]
+  ],
+  "bl": "Recurrent subareolar abscess with a fistula in a smoker is periductal mastitis from squamous metaplasia and keratin plugging."
+ },
+ {
+  "id": "rp23q06",
+  "d": 2,
+  "tags": [
+   "histology-to-diagnosis",
+   "imaging-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp23-05"
+  ],
+  "obj": [
+   "TBL-BREAST.5"
+  ],
+  "s": "A 45-year-old woman has a firm, irregular, 2-cm mass in the upper inner quadrant of her left breast with slight retraction of the overlying skin. Seven weeks ago she was the restrained driver in a car crash and had a bruise across her chest from the seat belt. Mammography shows an irregular density with coarse calcifications.",
+  "l": "Biopsy of this lesion is most likely to show which finding?",
+  "o": [
+   "Necrotic fat cells with foamy macrophages and calcium soaps",
+   "Infiltrating glands in a desmoplastic stroma",
+   "Leaf-like fronds of hypercellular stroma",
+   "Dilated ducts with plasma cells and thick secretions",
+   "Ducts compressed into slits by bland stroma"
+  ],
+  "a": 0,
+  "e": "Blunt trauma from a seat belt injures breast fat, and lipase released from damaged cells splits triglycerides into fatty acids that bind calcium, a process called **saponification**. The result is **fat necrosis**: necrotic adipocytes, foamy lipid-laden macrophages, giant cells, calcium soaps and later fibrosis. The fibrosis can retract the skin and the calcifications can mimic carcinoma, so biopsy is needed. Infiltrating glands in a desmoplastic stroma would be invasive carcinoma, which trauma does not cause.",
+  "w": {
+   "Infiltrating glands in a desmoplastic stroma": "This is invasive carcinoma, the lesion fat necrosis imitates; it would also retract skin and calcify, but the recent seat-belt injury over the site points to a healing response.",
+   "Leaf-like fronds of hypercellular stroma": "Stromal overgrowth in fronds defines a phyllodes tumor, a smooth, rapidly enlarging lump around age 50 that does not follow trauma or calcify coarsely.",
+   "Dilated ducts with plasma cells and thick secretions": "Duct ectasia sits beneath the areola in older multiparous women with sticky discharge; this lesion lies in the upper inner quadrant after an injury.",
+   "Ducts compressed into slits by bland stroma": "A fibroadenoma is a mobile, rubbery, well-circumscribed lump in young women; it is not firm, irregular and tethered to the skin after trauma."
+  },
+  "et": [
+   [
+    "Option",
+    "Diagnosis",
+    "Clinical setting",
+    "Calcifications"
+   ],
+   [
+    [
+     "Necrotic fat cells with foamy macrophages and calcium soaps",
+     "Fat necrosis",
+     "Recent trauma or surgery",
+     "Coarse, from calcium soaps"
+    ],
+    [
+     "Infiltrating glands in a desmoplastic stroma",
+     "Invasive carcinoma",
+     "Often postmenopausal, no trauma needed",
+     "Fine and pleomorphic, if present"
+    ],
+    [
+     "Leaf-like fronds of hypercellular stroma",
+     "Phyllodes tumor",
+     "Around 50, rapid growth",
+     "Uncommon"
+    ],
+    [
+     "Dilated ducts with plasma cells and thick secretions",
+     "Duct ectasia",
+     "Older multiparous woman",
+     "Rodlike, along ducts"
+    ],
+    [
+     "Ducts compressed into slits by bland stroma",
+     "Fibroadenoma",
+     "Young woman, mobile mass",
+     "Popcorn, after menopause"
+    ]
+   ]
+  ],
+  "bl": "A firm, calcified breast mass after trauma with foamy macrophages and calcium soaps is fat necrosis from saponification."
+ },
+ {
+  "id": "rp23q07",
+  "d": 3,
+  "tags": [
+   "risk-factors",
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp23-02"
+  ],
+  "obj": [
+   "TBL-BREAST.6",
+   "TBL-BREAST.7"
+  ],
+  "s": "A 50-year-old woman has a core biopsy of new clustered calcifications seen on screening mammography. It shows a duct partly filled by a monotonous population of evenly spaced, uniform cells that resembles low-grade ductal carcinoma in situ but involves only part of the duct. Myoepithelial cells are intact. She has no family history of breast cancer.",
+  "l": "Compared with an average woman of her age, this lesion raises her risk of later invasive breast cancer by about how much?",
+  "o": [
+   "No added risk",
+   "1.5 to 2 times",
+   "4 to 5 times",
+   "8 to 10 times",
+   "About 20 times"
+  ],
+  "a": 2,
+  "e": "A monotonous population of uniform cells that looks like low-grade DCIS but fills only part of a duct is **atypical ductal hyperplasia**. Proliferative disease with atypia raises the relative risk of later invasive cancer about **4 to 5 times**, in both breasts. Usual hyperplasia without atypia raises it only 1.5 to 2 times, and carcinoma in situ about 8 to 10 times. A core biopsy can miss a nearby cancer, so atypia found on a core biopsy is usually excised.",
+  "w": {
+   "No added risk": "No added risk applies to nonproliferative changes such as cysts, fibrosis and apocrine metaplasia, whose cells neither pile up nor look atypical.",
+   "1.5 to 2 times": "This modest increase belongs to proliferative disease without atypia, such as usual ductal hyperplasia, sclerosing adenosis and intraductal papilloma, whose cells are a mixed population.",
+   "8 to 10 times": "An eightfold to tenfold increase follows carcinoma in situ, which fills and expands whole ducts or lobules; her lesion involves only part of one duct.",
+   "About 20 times": "No benign breast lesion multiplies risk this much; even carcinoma in situ raises it only about eightfold to tenfold, so twentyfold overstates atypia."
+  },
+  "et": [
+   [
+    "Option",
+    "Lesion category",
+    "Examples",
+    "Microscopic hallmark"
+   ],
+   [
+    [
+     "No added risk",
+     "Nonproliferative",
+     "Cysts, fibrosis, apocrine metaplasia",
+     "No extra epithelial layers"
+    ],
+    [
+     "1.5 to 2 times",
+     "Proliferative without atypia",
+     "Usual ductal hyperplasia, sclerosing adenosis, papilloma",
+     "Mixed, streaming cells"
+    ],
+    [
+     "4 to 5 times",
+     "Atypical hyperplasia",
+     "Atypical ductal or lobular hyperplasia",
+     "Monotonous cells partly filling a duct"
+    ],
+    [
+     "8 to 10 times",
+     "Carcinoma in situ",
+     "DCIS and LCIS",
+     "Malignant cells filling whole ducts or lobules"
+    ],
+    [
+     "About 20 times",
+     "Beyond any benign lesion",
+     "No benign example",
+     "Exceeds even carcinoma in situ"
+    ]
+   ]
+  ],
+  "bl": "Atypical ductal hyperplasia raises the risk of later invasive breast cancer about 4 to 5 times.",
+  "ef": "rp23_risk",
+  "pt": {
+   "hl": [
+    "Atypical hyperplasia",
+    "Relative risk 4 to 5"
+   ],
+   "say": "The third step, atypical hyperplasia, stands at relative risk 4 to 5 times average, well above proliferation without atypia."
+  }
+ },
+ {
+  "id": "rp23q08",
+  "d": 2,
+  "tags": [
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp23-02"
+  ],
+  "obj": [
+   "TBL-BREAST.6",
+   "BREAST-HISTO.1"
+  ],
+  "s": "A 44-year-old woman has a cluster of fine calcifications on screening mammography. Core biopsy shows an enlarged lobule containing many small, crowded acini that are compressed and distorted by surrounding fibrous stroma, giving an infiltrative look at low power. Immunostains show an intact layer of p63-positive myoepithelial cells around every acinus, and some acini contain calcifications.",
+  "l": "What is the most likely diagnosis?",
+  "o": [
+   "Sclerosing adenosis",
+   "Tubular carcinoma",
+   "Atypical ductal hyperplasia",
+   "Fat necrosis",
+   "Fibroadenoma"
+  ],
+  "a": 0,
+  "e": "Increased numbers of small acini squeezed and distorted by fibrosis within a lobule is **sclerosing adenosis**, a proliferative lesion without atypia that raises cancer risk only 1.5 to 2 times. Its calcifications and infiltrative look can mimic carcinoma on mammography and at low power, but the preserved myoepithelial layer and basement membrane around every acinus prove it is benign. Tubular carcinoma forms similar small glands that lack myoepithelial cells and sit in desmoplastic stroma.",
+  "w": {
+   "Tubular carcinoma": "This well-differentiated invasive cancer forms small angulated tubules without a myoepithelial layer in desmoplastic stroma; here p63 outlines every acinus.",
+   "Atypical ductal hyperplasia": "Atypical hyperplasia is a monotonous, uniform population of cells filling part of a duct. It does not look like a lobule of crowded acini squeezed by fibrous stroma.",
+   "Fat necrosis": "Necrotic adipocytes, foamy macrophages and calcium soaps follow trauma or surgery; no proliferating epithelial acini are present in fat necrosis.",
+   "Fibroadenoma": "A fibroadenoma forms a discrete mobile lump of bland stroma compressing ducts into slits, usually in younger women, rather than one enlarged sclerotic lobule."
+  },
+  "et": [
+   [
+    "Option",
+    "Architecture",
+    "Myoepithelial layer",
+    "Cancer risk"
+   ],
+   [
+    [
+     "Sclerosing adenosis",
+     "Crowded acini compressed by fibrosis",
+     "Intact",
+     "1.5 to 2 times"
+    ],
+    [
+     "Tubular carcinoma",
+     "Small angulated glands in desmoplastic stroma",
+     "Absent",
+     "Already invasive cancer"
+    ],
+    [
+     "Atypical ductal hyperplasia",
+     "Monotonous cells partly filling a duct",
+     "Intact",
+     "4 to 5 times"
+    ],
+    [
+     "Fat necrosis",
+     "Dead fat, foamy macrophages, calcium soaps",
+     "No epithelium involved",
+     "No added risk"
+    ],
+    [
+     "Fibroadenoma",
+     "Bland stroma compressing ducts into slits",
+     "Intact",
+     "No added risk if simple"
+    ]
+   ]
+  ],
+  "bl": "Crowded, fibrosis-distorted acini with an intact myoepithelial layer and calcifications are sclerosing adenosis, a benign carcinoma mimic.",
+  "ef": "rp23_risk",
+  "pt": {
+   "hl": [
+    "sclerosing adenosis"
+   ],
+   "say": "Sclerosing adenosis sits on the second step, proliferative without atypia, and keeps its myoepithelial layer as the top note says."
+  }
+ },
+ {
+  "id": "rp23q09",
+  "d": 2,
+  "tags": [
+   "normal-vs-pathologic",
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp23-12",
+   "BP-rp23-10"
+  ],
+  "obj": [
+   "TBL-BREAST.3"
+  ],
+  "s": "A 14-year-old boy is brought to the clinic because of a tender lump under his left nipple that appeared 4 months ago. He is otherwise well, takes no medications or supplements, and is at Tanner stage 3. Examination shows a 2-cm rubbery, mildly tender disc of tissue centered directly beneath the left areola. Both testes are 8 mL, symmetric and without masses.",
+  "l": "What is the most appropriate next step in management?",
+  "o": [
+   "Reassurance and reexamination in 6 months",
+   "Diagnostic mammography",
+   "Core needle biopsy",
+   "Testicular ultrasonography",
+   "Serum hCG and estradiol measurement"
+  ],
+  "a": 0,
+  "e": "A rubbery, tender disc centered under the areola in a boy in mid-puberty, with normal testes and no drugs, is **physiologic pubertal gynecomastia**. Estradiol rises before testosterone reaches adult levels, so the balance briefly favors ductal growth, and the enlargement usually goes away on its own. **Reassurance and reexamination** is the right step. A typical case needs no imaging, blood tests or biopsy. Mammography and biopsy are for a hard, off-center mass that suggests cancer.",
+  "w": {
+   "Diagnostic mammography": "Mammography evaluates a hard, eccentric mass in an older man suspected of cancer; a centered, tender disc in a pubertal boy needs no imaging.",
+   "Core needle biopsy": "Tissue sampling is reserved for a lesion suspicious for malignancy, which in a man is hard, fixed and eccentric; this boy's exam is typical of puberty.",
+   "Testicular ultrasonography": "Testicular imaging looks for a tumor that makes estrogen or hCG, which would show as a testicular mass or asymmetry; his testes are normal and symmetric.",
+   "Serum hCG and estradiol measurement": "These tests look for an estrogen- or hCG-secreting tumor, which this boy's normal testes and typical puberty-related enlargement do not suggest."
+  },
+  "et": [
+   [
+    "Option",
+    "When it is indicated",
+    "What it looks for",
+    "Burden"
+   ],
+   [
+    [
+     "Reassurance and reexamination in 6 months",
+     "Typical pubertal gynecomastia",
+     "Spontaneous regression",
+     "Minimal"
+    ],
+    [
+     "Diagnostic mammography",
+     "Hard, eccentric mass in an adult man",
+     "Male breast cancer",
+     "Radiation exposure"
+    ],
+    [
+     "Core needle biopsy",
+     "Mass suspicious for malignancy",
+     "Carcinoma",
+     "Invasive procedure"
+    ],
+    [
+     "Testicular ultrasonography",
+     "Testicular mass or asymmetry",
+     "Leydig or germ cell tumor",
+     "Low"
+    ],
+    [
+     "Serum hCG and estradiol measurement",
+     "Large, progressive or persistent gynecomastia",
+     "Feminizing or hCG-secreting tumor",
+     "Blood draw"
+    ]
+   ]
+  ],
+  "bl": "Tender, centered subareolar tissue in a pubertal boy with normal testes is physiologic gynecomastia; reassurance and reexamination suffice."
+ },
+ {
+  "id": "rp23q10",
+  "d": 3,
+  "tags": [
+   "hormone-actions",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp23-10"
+  ],
+  "obj": [
+   "TBL-BREAST.3"
+  ],
+  "s": "A 58-year-old man with alcohol-associated cirrhosis and ascites has noticed tender swelling beneath both nipples over the past 6 months. His medications are spironolactone and furosemide. Examination shows spider angiomas on the chest, palmar erythema, small soft testes and a 3-cm rubbery, tender disc of tissue centered beneath each areola.",
+  "l": "Which mechanism best explains the breast enlargement?",
+  "o": [
+   "More estrogen action relative to androgen action",
+   "Prolactin excess from lactotroph stimulation",
+   "Growth hormone excess stimulating ductal growth",
+   "Fat deposition without glandular proliferation",
+   "Clonal proliferation of ductal epithelial cells"
+  ],
+  "a": 0,
+  "e": "Bilateral, tender, centered subareolar discs are gynecomastia, which comes from **more estrogen action relative to androgen action** at the breast. In cirrhosis the liver clears less androstenedione, so more reaches fat, where aromatase makes estrogen. Higher sex hormone-binding globulin binds testosterone more tightly than estradiol, so free testosterone falls while free estrogen rises, and alcohol also injures Leydig cells. Spironolactone adds androgen receptor blockade. Fat alone would be soft, and a cancer would be a hard, off-center mass.",
+  "w": {
+   "Prolactin excess from lactotroph stimulation": "Prolactin drives milk production rather than male ductal growth, and nothing here raises it; galactorrhea, not tender gynecomastia, would be the expected sign.",
+   "Growth hormone excess stimulating ductal growth": "Acromegaly enlarges hands, jaw and viscera, and his spider angiomas and small testes point to a sex steroid imbalance instead.",
+   "Fat deposition without glandular proliferation": "Fat alone would feel soft and nontender, without a firm disc under the areola; his tissue is rubbery, tender and glandular.",
+   "Clonal proliferation of ductal epithelial cells": "Male breast cancer is a clonal lesion that forms a hard, painless, eccentric mass, usually on one side, not bilateral tender discs centered under the areolae."
+  },
+  "et": [
+   [
+    "Option",
+    "Condition it causes",
+    "Exam findings",
+    "Link to cirrhosis or spironolactone"
+   ],
+   [
+    [
+     "More estrogen action relative to androgen action",
+     "Gynecomastia",
+     "Tender rubbery discs centered beneath the areolae",
+     "Aromatization, SHBG rise, androgen receptor blockade"
+    ],
+    [
+     "Prolactin excess from lactotroph stimulation",
+     "Galactorrhea and hypogonadism",
+     "Milky discharge",
+     "Not typical"
+    ],
+    [
+     "Growth hormone excess stimulating ductal growth",
+     "Acromegaly",
+     "Coarse features, large hands",
+     "No link"
+    ],
+    [
+     "Fat deposition without glandular proliferation",
+     "Pseudogynecomastia",
+     "Soft fat, no disc",
+     "No link"
+    ],
+    [
+     "Clonal proliferation of ductal epithelial cells",
+     "Male breast cancer",
+     "Hard, eccentric, painless mass",
+     "No direct link"
+    ]
+   ]
+  ],
+  "bl": "Cirrhosis and spironolactone cause gynecomastia by increasing estrogen action relative to androgen action at the breast."
+ },
+ {
+  "id": "rp23q11",
+  "d": 2,
+  "tags": [
+   "risk-factors",
+   "cell-of-origin"
+  ],
+  "bp": [
+   "BP-rp23-09"
+  ],
+  "obj": [
+   "TBL-BREAST.4"
+  ],
+  "s": "A 54-year-old woman had textured silicone breast implants placed for cosmetic augmentation 9 years ago. Over the past 2 months her right breast has become swollen but not painful. Ultrasound shows a large fluid collection around an intact implant. Cytology of the aspirated fluid shows large pleomorphic lymphoid cells with horseshoe-shaped nuclei that stain for CD30 but not ALK.",
+  "l": "What is the most likely diagnosis?",
+  "o": [
+   "Anaplastic large cell lymphoma",
+   "Capsular contracture",
+   "Silicone granuloma",
+   "Fat necrosis",
+   "Invasive lobular carcinoma"
+  ],
+  "a": 0,
+  "e": "A late fluid collection around a textured implant, with large pleomorphic cells that are CD30-positive and ALK-negative, is **breast implant-associated anaplastic large cell lymphoma**. It is a T-cell lymphoma that grows in the fluid around the implant, and it usually appears years after placement. Capsular contracture hardens and distorts the breast but does not produce a fluid collection of lymphoma cells. Silicone granuloma follows rupture, and this implant is intact. Fat necrosis is a firm, calcified mass after injury, and lobular carcinoma is an epithelial cancer.",
+  "w": {
+   "Capsular contracture": "The fibrous capsule tightens and hardens the breast, causing pain and distortion, but it does not produce an effusion full of atypical lymphoid cells.",
+   "Silicone granuloma": "Leaked silicone after rupture provokes a foreign-body giant cell reaction that forms firm nodules; her implant is intact and the fluid holds lymphoma cells.",
+   "Fat necrosis": "Fat necrosis is a firm, calcified mass after injury or surgery, with foamy macrophages; it is not a fluid collection full of atypical lymphoid cells.",
+   "Invasive lobular carcinoma": "Lobular carcinoma is an epithelial cancer of single-file, E-cadherin-negative cells within breast tissue, not lymphoid cells floating in periprosthetic fluid."
+  },
+  "et": [
+   [
+    "Option",
+    "Cell or tissue",
+    "Typical presentation",
+    "Relation to implants"
+   ],
+   [
+    [
+     "Anaplastic large cell lymphoma",
+     "CD30-positive, ALK-negative T cells",
+     "Late seroma around the implant",
+     "Textured implants"
+    ],
+    [
+     "Capsular contracture",
+     "Thickened fibrous capsule",
+     "Firm, painful, distorted breast",
+     "Most common complication"
+    ],
+    [
+     "Silicone granuloma",
+     "Foreign-body giant cells",
+     "Firm nodules after rupture",
+     "Follows silicone leak"
+    ],
+    [
+     "Fat necrosis",
+     "Dead fat cells, foamy macrophages, calcium soaps",
+     "Firm, calcified mass after injury or surgery",
+     "Not an implant-specific problem"
+    ],
+    [
+     "Invasive lobular carcinoma",
+     "E-cadherin-negative epithelial cells",
+     "Ill-defined thickening",
+     "Not caused by implants"
+    ]
+   ]
+  ],
+  "bl": "A late seroma around a textured implant with CD30-positive, ALK-negative cells is breast implant-associated anaplastic large cell lymphoma."
+ },
+ {
+  "id": "rp23q12",
+  "d": 1,
+  "tags": [
+   "normal-vs-pathologic",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp23-11",
+   "BP-rp23-01"
+  ],
+  "obj": [
+   "TBL-BREAST.3",
+   "TBL-BREAST.6"
+  ],
+  "s": "A 34-year-old woman reports that both breasts become lumpy, swollen and tender during the week before each menstrual period and improve once bleeding starts. Examination shows diffusely nodular tissue in both upper outer quadrants without a dominant mass, skin change or nipple discharge.",
+  "l": "What is the most likely diagnosis?",
+  "o": [
+   "Fibrocystic change",
+   "Fibroadenoma",
+   "Duct ectasia",
+   "Intraductal papilloma",
+   "Inflammatory carcinoma"
+  ],
+  "a": 0,
+  "e": "Bilateral, multifocal lumpiness that is tender in the premenstrual week and eases with menses in a premenopausal woman is **fibrocystic change**, an exaggerated response of breast tissue to cyclic hormones. Its cysts, stromal fibrosis and apocrine metaplasia are nonproliferative and add no cancer risk. A fibroadenoma is a single discrete mobile mass, duct ectasia causes sticky discharge in older women, and inflammatory carcinoma makes the skin red and thickened.",
+  "w": {
+   "Fibroadenoma": "A fibroadenoma is one discrete, mobile, rubbery lump that persists through the cycle, not diffuse bilateral nodularity that flares before each period.",
+   "Duct ectasia": "Duct ectasia affects older multiparous women, causing green-brown sticky discharge and a periareolar lump from dilated ducts ringed by plasma cells.",
+   "Intraductal papilloma": "A papilloma grows in a single large duct and presents with bloody discharge from one opening rather than cyclic tenderness on both sides.",
+   "Inflammatory carcinoma": "Tumor emboli in dermal lymphatics make the skin red, warm and pitted like orange peel over weeks; it does not wax and wane with menses."
+  },
+  "et": [
+   [
+    "Option",
+    "Distribution",
+    "Relation to the cycle",
+    "Key finding"
+   ],
+   [
+    [
+     "Fibrocystic change",
+     "Bilateral, multifocal",
+     "Worse before menses",
+     "Nodular, tender tissue"
+    ],
+    [
+     "Fibroadenoma",
+     "Single lump, one breast",
+     "Little change",
+     "Mobile, rubbery mass"
+    ],
+    [
+     "Duct ectasia",
+     "Subareolar, one or both",
+     "Unrelated",
+     "Green-brown discharge"
+    ],
+    [
+     "Intraductal papilloma",
+     "One duct",
+     "Unrelated",
+     "Bloody discharge"
+    ],
+    [
+     "Inflammatory carcinoma",
+     "Diffuse, one breast",
+     "Unrelated",
+     "Red, thickened peau d'orange skin"
+    ]
+   ]
+  ],
+  "bl": "Bilateral, multifocal breast lumpiness that is tender before menses in a premenopausal woman is fibrocystic change.",
+  "ef": "rp23_age",
+  "pt": {
+   "hl": [
+    "Fibrocystic change",
+    "Premenopausal, cyclic pain"
+   ],
+   "say": "The fibrocystic change row, labeled premenopausal with cyclic pain, spans the years before menopause, matching her symptoms."
+  }
+ }
+]

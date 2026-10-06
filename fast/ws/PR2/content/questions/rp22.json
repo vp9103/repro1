@@ -1,0 +1,1026 @@
+[
+ {
+  "id": "rp22q01",
+  "d": 1,
+  "tags": [
+   "feedback-logic",
+   "meiosis-karyotype"
+  ],
+  "bp": [
+   "BP-rp22-01"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.6",
+   "BICEP-WEIAND.4"
+  ],
+  "s": "A 24-year-old man has tall stature, long arms, gynecomastia, small firm testes and decreased libido. He and his partner have been unable to conceive for 2 years, and a semen analysis shows azoospermia.",
+  "l": "Which set of serum findings is most likely in this patient?",
+  "o": [
+   "Testosterone high, LH low, FSH low",
+   "Testosterone low, LH low, FSH low",
+   "Testosterone normal, LH normal, FSH high",
+   "Testosterone low, LH high, FSH high",
+   "Testosterone high, LH high, FSH high"
+  ],
+  "a": 3,
+  "e": "Tall stature, gynecomastia, small firm testes and azoospermia suggest Klinefelter syndrome (47,XXY), a cause of **primary hypogonadism**. The failing testis cannot make enough testosterone or inhibin B, so negative feedback is lost and both LH and FSH rise. High testosterone with low gonadotropins describes exogenous androgen use. Low values of all three suggest a pituitary or hypothalamic cause. An isolated high FSH with normal testosterone fits selective tubular damage, and high values of all three fit androgen insensitivity.",
+  "w": {
+   "Testosterone high, LH low, FSH low": "Injected androgens raise serum testosterone and shut off LH and FSH by feedback; this fits steroid use, not a chromosomal disorder with tall stature and long arms.",
+   "Testosterone low, LH low, FSH low": "Low testosterone with low LH and FSH is secondary hypogonadism, as in Kallmann syndrome or prolactinoma; the pituitary there is silent instead of driving a failing testis.",
+   "Testosterone normal, LH normal, FSH high": "A high FSH alone, with normal LH and testosterone, reflects selective seminiferous tubule damage through loss of inhibin B; this man also has low libido and gynecomastia from Leydig dysfunction.",
+   "Testosterone high, LH high, FSH high": "High testosterone with high LH and FSH is the androgen insensitivity pattern, in which receptor resistance blocks feedback; such patients are undervirilized rather than tall with small firm testes."
+  },
+  "et": [
+   [
+    "Option",
+    "Condition it fits",
+    "Site of defect",
+    "Typical example"
+   ],
+   [
+    [
+     "Testosterone high, LH low, FSH low",
+     "Exogenous androgen use",
+     "Feedback suppression",
+     "Testosterone injections"
+    ],
+    [
+     "Testosterone low, LH low, FSH low",
+     "Secondary hypogonadism",
+     "Pituitary or hypothalamus",
+     "Kallmann syndrome"
+    ],
+    [
+     "Testosterone normal, LH normal, FSH high",
+     "Isolated tubular damage",
+     "Seminiferous tubules",
+     "Loss of inhibin B"
+    ],
+    [
+     "Testosterone low, LH high, FSH high",
+     "Primary hypogonadism",
+     "Testis",
+     "Klinefelter syndrome"
+    ],
+    [
+     "Testosterone high, LH high, FSH high",
+     "Androgen insensitivity",
+     "Androgen receptor",
+     "Complete androgen insensitivity syndrome"
+    ]
+   ]
+  ],
+  "bl": "In primary hypogonadism the failing testis cannot provide feedback, so testosterone is low while LH and FSH are high.",
+  "ef": "rp22_axis",
+  "pt": {
+   "hl": [
+    "Primary hypogonadism",
+    "High"
+   ],
+   "say": "In the primary hypogonadism row, testosterone is low and LH and FSH are high, because the failed testis cannot provide negative feedback."
+  }
+ },
+ {
+  "id": "rp22q02",
+  "d": 2,
+  "tags": [
+   "feedback-logic",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp22-01"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.6"
+  ],
+  "s": "A 35-year-old man with schizophrenia takes risperidone. He reports decreased libido, erectile dysfunction and breast tenderness with a small amount of milky nipple discharge. Serum testosterone is low, and LH and FSH are in the low-normal range. MRI of the pituitary is normal.",
+  "l": "Which mechanism best explains his hypogonadism?",
+  "o": [
+   "Direct toxicity of the drug to Leydig cells",
+   "Excess aromatization of testosterone in adipose tissue",
+   "Prolactin excess suppressing GnRH pulses",
+   "Loss of inhibin B from damaged Sertoli cells",
+   "Autoantibodies against the LH receptor"
+  ],
+  "a": 2,
+  "e": "Risperidone blocks D2 dopamine receptors, and dopamine is the brake on pituitary lactotrophs, so prolactin rises. **Prolactin excess** suppresses pulsatile GnRH, so LH and FSH fall to low or inappropriately normal values and testosterone drops: this is secondary hypogonadism, and the galactorrhea supports it. Direct Leydig toxicity would raise LH, adipose aromatization requires obesity, loss of inhibin B would raise FSH, and LH receptor antibodies would raise LH.",
+  "w": {
+   "Direct toxicity of the drug to Leydig cells": "Toxic injury to Leydig cells would lower testosterone and raise LH through lost feedback; this man's LH is low-normal, and the main endocrine effect of risperidone works through prolactin instead.",
+   "Excess aromatization of testosterone in adipose tissue": "Aromatization in fat lowers testosterone mainly in obesity, and it would not explain galactorrhea or the dopamine-blocking drug effect in a patient described without obesity.",
+   "Loss of inhibin B from damaged Sertoli cells": "Loss of inhibin B from tubular damage would raise FSH selectively, and it would not cause milky discharge or low-normal gonadotropins.",
+   "Autoantibodies against the LH receptor": "Antibodies that block the LH receptor would leave the pituitary free to raise LH, so LH would be high rather than low-normal; no such autoimmune disease is suggested here."
+  },
+  "et": [
+   [
+    "Option",
+    "Effect on LH and FSH",
+    "Other clue",
+    "Typical setting"
+   ],
+   [
+    [
+     "Direct toxicity of the drug to Leydig cells",
+     "LH high",
+     "Testicular injury",
+     "Chemotherapy, mumps"
+    ],
+    [
+     "Excess aromatization of testosterone in adipose tissue",
+     "Low or normal LH",
+     "Obesity, high estradiol",
+     "Obesity-related hypogonadism"
+    ],
+    [
+     "Prolactin excess suppressing GnRH pulses",
+     "Low or normal LH and FSH",
+     "Galactorrhea",
+     "Dopamine antagonists, prolactinoma"
+    ],
+    [
+     "Loss of inhibin B from damaged Sertoli cells",
+     "FSH high, LH normal",
+     "Tubular damage",
+     "Varicocele, chemotherapy"
+    ],
+    [
+     "Autoantibodies against the LH receptor",
+     "LH high",
+     "Receptor resistance",
+     "Rare autoimmune or genetic defects"
+    ]
+   ]
+  ],
+  "bl": "Dopamine blockade raises prolactin, which suppresses GnRH pulses and causes secondary hypogonadism with low or normal LH and FSH.",
+  "ef": "rp22_axis",
+  "pt": {
+   "hl": [
+    "prolactin excess"
+   ],
+   "say": "The secondary hypogonadism row lists prolactin excess as a cause, with low testosterone and low or normal LH and FSH."
+  }
+ },
+ {
+  "id": "rp22q03",
+  "d": 2,
+  "tags": [
+   "feedback-logic",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp22-02"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.9"
+  ],
+  "s": "A 33-year-old man has 18 months of infertility. Semen analysis shows azoospermia. He lifts weights daily and receives monthly injections from a men's clinic. Examination shows acne, mild gynecomastia and small testes of 10 mL each. Hematocrit is 54%. He has no history of undescended testes or mumps.",
+  "l": "Which set of serum findings is most likely?",
+  "o": [
+   "Testosterone low, LH high, FSH high",
+   "Testosterone high, LH low, FSH low",
+   "Testosterone low, LH low, FSH low",
+   "Testosterone normal, LH normal, FSH high",
+   "Testosterone high, LH high, FSH high"
+  ],
+  "a": 1,
+  "e": "Injected testosterone raises the blood level, so negative feedback shuts off GnRH, LH and FSH. Without LH the Leydig cells stop making testosterone inside the testis, and without FSH the Sertoli cells lose support, so the testes shrink and sperm production stops. The hematocrit rises (polycythemia), acne comes from the androgen itself, and some of the testosterone is converted to estradiol, which causes gynecomastia. High LH and FSH would mean the testis itself has failed, and low testosterone with low gonadotropins would suggest a central cause.",
+  "w": {
+   "Testosterone low, LH high, FSH high": "This is the primary hypogonadism pattern from a failing testis; here the testes shrank because the pituitary was switched off by an outside androgen, so LH and FSH are low, not high.",
+   "Testosterone low, LH low, FSH low": "Low values of all three suggest a central cause such as a pituitary tumor; this man's serum testosterone is boosted by the injections he takes.",
+   "Testosterone normal, LH normal, FSH high": "A normal testosterone and LH with only a high FSH implies selective tubular damage; it would not explain the polycythemia, acne and the injections.",
+   "Testosterone high, LH high, FSH high": "High levels of all three describe androgen resistance, in which feedback fails at the receptor; an injected androgen instead suppresses LH and FSH."
+  },
+  "et": [
+   [
+    "Option",
+    "Condition it fits",
+    "Mechanism",
+    "Clue in the stem"
+   ],
+   [
+    [
+     "Testosterone low, LH high, FSH high",
+     "Primary hypogonadism",
+     "Failed testis, lost feedback",
+     "Not suggested"
+    ],
+    [
+     "Testosterone high, LH low, FSH low",
+     "Exogenous androgen use",
+     "Feedback suppression",
+     "Injections, acne, high hematocrit"
+    ],
+    [
+     "Testosterone low, LH low, FSH low",
+     "Secondary hypogonadism",
+     "Failed pituitary or hypothalamus",
+     "No central lesion"
+    ],
+    [
+     "Testosterone normal, LH normal, FSH high",
+     "Isolated tubular damage",
+     "Loss of inhibin B",
+     "Hormone excess unexplained"
+    ],
+    [
+     "Testosterone high, LH high, FSH high",
+     "Androgen insensitivity",
+     "Receptor resistance",
+     "Normal virilization"
+    ]
+   ]
+  ],
+  "bl": "Injected testosterone suppresses LH and FSH, so serum testosterone is high while the testes shrink and sperm production stops.",
+  "ef": "rp22_axis",
+  "pt": {
+   "hl": [
+    "Exogenous testosterone",
+    "Small testes, azoospermia,"
+   ],
+   "say": "The exogenous testosterone row shows low LH and FSH with small testes and azoospermia, because the injected hormone shuts off pituitary drive."
+  }
+ },
+ {
+  "id": "rp22q04",
+  "d": 2,
+  "tags": [
+   "binding-proteins",
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp22-01"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.6"
+  ],
+  "s": "A 46-year-old man with obesity and type 2 diabetes has fatigue and low libido. He takes no medications. A morning total testosterone is 310 ng/dL (reference 300 to 900). LH is 4 mIU/mL (reference 1.5 to 9). Serum sex hormone-binding globulin is low.",
+  "l": "Which is the most appropriate next step in assessing for hypogonadism?",
+  "o": [
+   "Begin testosterone replacement",
+   "Order a pituitary MRI",
+   "Calculate free testosterone from total, SHBG and albumin",
+   "Obtain a testicular biopsy",
+   "Order a karyotype to look for Klinefelter syndrome"
+  ],
+  "a": 2,
+  "e": "Most testosterone in blood is bound, tightly to SHBG and loosely to albumin, so only 2 to 3 percent is free and active. Obesity, insulin resistance and type 2 diabetes **lower SHBG**, which lowers the total level while the free level may stay normal. A borderline total therefore cannot be read alone. The next step is to calculate free testosterone from total testosterone, SHBG and albumin. Starting treatment now would be premature, and a karyotype or a biopsy is not how androgen deficiency is diagnosed. Imaging comes only after low testosterone is confirmed.",
+  "w": {
+   "Begin testosterone replacement": "Treatment should wait until low testosterone is confirmed. This total is only borderline and low SHBG distorts it, and treatment would also suppress sperm production.",
+   "Order a pituitary MRI": "Imaging comes after low testosterone is confirmed and a central cause is suspected. Here the total is only borderline and low SHBG may be distorting it, so the free level comes first.",
+   "Obtain a testicular biopsy": "A testicular biopsy assesses spermatogenesis in infertility and has no role in diagnosing androgen deficiency, which is a hormonal diagnosis.",
+   "Order a karyotype to look for Klinefelter syndrome": "Klinefelter syndrome is a cause of primary hypogonadism, with small, firm testes and a high LH. This man's LH is normal, and nothing in the stem points to it."
+  },
+  "et": [
+   [
+    "Option",
+    "Purpose",
+    "Useful when",
+    "Limit here"
+   ],
+   [
+    [
+     "Begin testosterone replacement",
+     "Treats confirmed deficiency",
+     "After low levels are confirmed",
+     "Diagnosis is not yet confirmed"
+    ],
+    [
+     "Order a pituitary MRI",
+     "Finds a pituitary lesion",
+     "Low testosterone confirmed with low or normal LH",
+     "Low testosterone is not yet confirmed"
+    ],
+    [
+     "Calculate free testosterone from total, SHBG and albumin",
+     "Corrects for low SHBG",
+     "Obesity, diabetes, borderline total",
+     "None"
+    ],
+    [
+     "Obtain a testicular biopsy",
+     "Examines spermatogenesis",
+     "Infertility with azoospermia",
+     "Does not measure androgens"
+    ],
+    [
+     "Order a karyotype to look for Klinefelter syndrome",
+     "Finds an extra X chromosome",
+     "Small, firm testes with high LH and FSH",
+     "His LH is normal"
+    ]
+   ]
+  ],
+  "bl": "In obesity low SHBG makes total testosterone misleading, so calculate free testosterone from total testosterone, SHBG and albumin.",
+  "ef": "rp22_axis",
+  "pt": {
+   "hl": [
+    "Secondary hypogonadism",
+    "Low or normal"
+   ],
+   "say": "The secondary hypogonadism row shows low or normal LH, the obesity pattern, and free testosterone clarifies a borderline total."
+  }
+ },
+ {
+  "id": "rp22q05",
+  "d": 3,
+  "tags": [
+   "inheritance-pattern",
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp22-03",
+   "BP-rp22-10"
+  ],
+  "obj": [
+   "BICEP-WEIAND.6"
+  ],
+  "s": "A 31-year-old man has 18 months of infertility. Semen analysis on two occasions shows azoospermia, volume 0.8 mL, pH 6.6 and no fructose. The vasa deferentia cannot be palpated. Both testes measure 20 mL, and serum FSH is normal. He has had recurrent sinus infections since childhood.",
+  "l": "Which additional evaluation is most appropriate for the patient and his partner?",
+  "o": [
+   "Karyotype for Klinefelter syndrome",
+   "Y chromosome microdeletion analysis",
+   "CFTR mutation testing",
+   "Serum prolactin and pituitary MRI",
+   "Testicular biopsy to look for germ cell aplasia"
+  ],
+  "a": 2,
+  "e": "A low-volume, acidic, fructose-negative ejaculate with no sperm and nonpalpable vasa means seminal vesicle fluid is missing because of **congenital bilateral absence of the vas deferens** (CBAVD). Most men with CBAVD carry CFTR mutations, so the patient and his partner both need cystic fibrosis carrier testing, since a carrier partner risks a child with cystic fibrosis. Normal testis size and FSH show that sperm production is intact. A karyotype and Y microdeletion testing are for non-obstructive azoospermia with a high FSH, and prolactin with an MRI is for secondary hypogonadism.",
+  "w": {
+   "Karyotype for Klinefelter syndrome": "Klinefelter syndrome causes small, firm testes with a high FSH and a normal-volume ejaculate; this man's testes are normal in size and his FSH is normal.",
+   "Y chromosome microdeletion analysis": "Y microdeletions cause non-obstructive azoospermia with failed spermatogenesis, usually with small testes and raised FSH, which does not match his obstructive pattern.",
+   "Serum prolactin and pituitary MRI": "Prolactin excess and pituitary disease cause secondary hypogonadism with low testosterone and low LH and FSH, not an obstruction with a normal FSH.",
+   "Testicular biopsy to look for germ cell aplasia": "Biopsy would show normal spermatogenesis here and is reserved for unclear azoospermia, so it adds nothing when the vas is absent and the testes and FSH are normal."
+  },
+  "et": [
+   [
+    "Option",
+    "Condition tested",
+    "Expected testis size and FSH",
+    "Fits this patient"
+   ],
+   [
+    [
+     "Karyotype for Klinefelter syndrome",
+     "Klinefelter syndrome",
+     "Small, firm testes; high FSH",
+     "No, normal testes and FSH"
+    ],
+    [
+     "Y chromosome microdeletion analysis",
+     "Y microdeletion",
+     "Small testes; raised FSH",
+     "No, obstructive pattern"
+    ],
+    [
+     "CFTR mutation testing",
+     "CBAVD with CFTR mutations",
+     "Normal testes; normal FSH",
+     "Yes, absent vasa and no fructose"
+    ],
+    [
+     "Serum prolactin and pituitary MRI",
+     "Secondary hypogonadism",
+     "Variable; low LH and FSH",
+     "No, FSH is normal"
+    ],
+    [
+     "Testicular biopsy to look for germ cell aplasia",
+     "Germ cell aplasia",
+     "Small testes; high FSH",
+     "No, testes are normal in size"
+    ]
+   ]
+  ],
+  "bl": "Absent vasa with low-volume, fructose-negative semen means CBAVD, so test both partners for CFTR mutations.",
+  "ef": "rp22_semen",
+  "pt": {
+   "hl": [
+    "CBAVD, CFTR mutations"
+   ],
+   "say": "The vas deferens absent box points to CBAVD from CFTR mutations, so cystic fibrosis gene testing is needed for both partners."
+  }
+ },
+ {
+  "id": "rp22q06",
+  "d": 2,
+  "tags": [
+   "nerve-supply",
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp22-10"
+  ],
+  "obj": [
+   "BICEP-WEIAND.6"
+  ],
+  "s": "A 55-year-old man with type 1 diabetes for 30 years reports that he still feels orgasm but expels little or no ejaculate. He also has erectile dysfunction, orthostatic lightheadedness and constipation. A urine sample collected after orgasm contains many sperm.",
+  "l": "Which is the most likely underlying mechanism?",
+  "o": [
+   "Obstruction of the ejaculatory ducts",
+   "Primary testicular failure",
+   "Autonomic neuropathy impairing bladder neck closure",
+   "Hyperprolactinemia",
+   "Congenital absence of the seminal vesicles"
+  ],
+  "a": 2,
+  "e": "Emission and bladder-neck closure depend on sympathetic nerves (T10 to L2), and long-standing diabetes damages autonomic nerves, as his orthostasis, constipation and erectile dysfunction also show. When the bladder neck stays open, semen passes into the bladder, so orgasm is preserved but little ejaculate emerges and sperm appear in the post-ejaculatory urine: **retrograde ejaculation**. Duct obstruction or absent seminal vesicles would leave no sperm in the urine, testicular failure would reduce sperm itself, and prolactin excess lowers libido.",
+  "w": {
+   "Obstruction of the ejaculatory ducts": "Blocked ejaculatory ducts prevent sperm and seminal fluid from entering the urethra at all, so the post-orgasm urine would contain no sperm.",
+   "Primary testicular failure": "Testicular failure would cut sperm production and raise FSH, so post-orgasm urine would not be full of sperm and the autonomic symptoms would remain unexplained.",
+   "Hyperprolactinemia": "Prolactin excess suppresses GnRH and lowers libido and testosterone, but it does not open the bladder neck or send sperm into the urine.",
+   "Congenital absence of the seminal vesicles": "Absent vesicles give a low-volume, fructose-negative ejaculate with no bladder-neck problem, and sperm would not be found in the post-orgasm urine."
+  },
+  "et": [
+   [
+    "Option",
+    "Sperm in post-orgasm urine",
+    "Other features",
+    "Typical cause"
+   ],
+   [
+    [
+     "Obstruction of the ejaculatory ducts",
+     "No",
+     "Low volume, acidic, no fructose",
+     "Duct obstruction"
+    ],
+    [
+     "Primary testicular failure",
+     "No",
+     "High FSH, small testes",
+     "Klinefelter syndrome, chemotherapy"
+    ],
+    [
+     "Autonomic neuropathy impairing bladder neck closure",
+     "Yes",
+     "Diabetic autonomic symptoms",
+     "Diabetes, alpha-blockers, prostate surgery"
+    ],
+    [
+     "Hyperprolactinemia",
+     "No",
+     "Low libido, galactorrhea",
+     "Prolactinoma, dopamine antagonists"
+    ],
+    [
+     "Congenital absence of the seminal vesicles",
+     "No",
+     "Low volume, no vas deferens",
+     "CFTR mutations"
+    ]
+   ]
+  ],
+  "bl": "Orgasm without ejaculate and sperm in the urine afterward is retrograde ejaculation, here from diabetic autonomic neuropathy.",
+  "ef": "rp22_semen",
+  "pt": {
+   "hl": [
+    "post-ejaculatory urine"
+   ],
+   "say": "The bottom box says low volume with sperm in post-ejaculatory urine means retrograde ejaculation, caused by diabetic neuropathy, alpha-blockers or prostate surgery."
+  }
+ },
+ {
+  "id": "rp22q07",
+  "d": 1,
+  "tags": [
+   "drug-interactions"
+  ],
+  "bp": [
+   "BP-rp22-05"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.8"
+  ],
+  "s": "A 62-year-old man with stable angina uses sublingual nitroglycerin as needed. His blood pressure is 128/76 mm Hg. He has erectile dysfunction and asks his physician about starting sildenafil.",
+  "l": "What is the main risk of combining these two drugs?",
+  "o": [
+   "Priapism lasting over four hours",
+   "Acute hepatotoxicity",
+   "Profound hypotension",
+   "Symptomatic hypoglycemia",
+   "Marked bradycardia"
+  ],
+  "a": 2,
+  "e": "Nitroglycerin releases nitric oxide and sildenafil blocks PDE5, so both raise cGMP in vascular smooth muscle. Together they relax arteries and veins so strongly that blood pressure can fall dangerously. For that reason a nitrate in any form is forbidden with a PDE5 inhibitor, and a nitrate must wait 24 hours after sildenafil or 48 hours after tadalafil. **Profound hypotension**, not priapism, liver injury, hypoglycemia or bradycardia, is the main danger of the combination.",
+  "w": {
+   "Priapism lasting over four hours": "Priapism is a risk of alprostadil injected into the penis and is rare with oral PDE5 inhibitors; it is not the reason nitrates are forbidden.",
+   "Acute hepatotoxicity": "Sildenafil rarely causes liver injury and nitrates do not add to it; the concern in angina is circulatory collapse, not hepatic harm.",
+   "Symptomatic hypoglycemia": "Neither drug lowers blood glucose; hypoglycemia is a risk of insulin and sulfonylureas, and this combination does not alter glucose.",
+   "Marked bradycardia": "The expected reaction is vasodilation with reflex tachycardia, not slowing; bradycardia is not the hazard of adding a PDE5 inhibitor to a nitrate."
+  },
+  "et": [
+   [
+    "Option",
+    "Cause",
+    "Typical drug",
+    "Relevance to this patient"
+   ],
+   [
+    [
+     "Priapism lasting over four hours",
+     "Prolonged erection",
+     "Intracavernosal alprostadil",
+     "Rare with oral sildenafil"
+    ],
+    [
+     "Acute hepatotoxicity",
+     "Liver injury",
+     "Flutamide, ketoconazole",
+     "Not expected here"
+    ],
+    [
+     "Profound hypotension",
+     "Vasodilation, shared cGMP pathway",
+     "Nitrate plus PDE5 inhibitor",
+     "Contraindicated combination"
+    ],
+    [
+     "Symptomatic hypoglycemia",
+     "Low glucose",
+     "Insulin, sulfonylureas",
+     "No glucose-lowering drug"
+    ],
+    [
+     "Marked bradycardia",
+     "Slow heart rate",
+     "Beta-blockers",
+     "Not the hazard of this pair"
+    ]
+   ]
+  ],
+  "bl": "Nitrates and PDE5 inhibitors both raise cGMP, so together they cause profound hypotension and must never be combined.",
+  "ef": "rp22_erection",
+  "pt": {
+   "hl": [
+    "With a PDE5 inhibitor: profound hypotension"
+   ],
+   "say": "The nitrate card says that with a PDE5 inhibitor the result is profound hypotension, because both raise cGMP."
+  }
+ },
+ {
+  "id": "rp22q08",
+  "d": 2,
+  "tags": [
+   "adverse-effects",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp22-05"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.8"
+  ],
+  "s": "A 48-year-old man takes a medication for erectile dysfunction before sexual activity. After one dose he notices that objects have a bluish tinge for about an hour, along with facial flushing and headache. Visual acuity is normal and fundoscopic examination is unremarkable.",
+  "l": "Inhibition of which enzyme most likely explains the visual change?",
+  "o": [
+   "Phosphodiesterase type 5",
+   "Phosphodiesterase type 11",
+   "Soluble guanylate cyclase",
+   "Phosphodiesterase type 6",
+   "Acetylcholinesterase"
+  ],
+  "a": 3,
+  "e": "Sildenafil inhibits PDE5 in the penis, but at higher concentrations it also inhibits **phosphodiesterase type 6**, the enzyme of retinal photoreceptors, which causes transient blue-green tinted vision. Flushing and headache come from PDE5 inhibition in other vessels, so PDE5 explains the erectile effect, not the vision. Tadalafil inhibits PDE11, linked to back pain and myalgia, and soluble guanylate cyclase and acetylcholinesterase are not targets of these drugs.",
+  "w": {
+   "Phosphodiesterase type 5": "This enzyme in the corpora cavernosa produces the erectile benefit and, in other vessels, flushing and headache, but it is not the retinal enzyme behind the color change.",
+   "Phosphodiesterase type 11": "Inhibition of this isoform by tadalafil is linked to back pain and myalgia rather than any visual effect.",
+   "Soluble guanylate cyclase": "This enzyme makes cGMP when nitric oxide activates it. PDE5 inhibitors act later, by blocking the breakdown of cGMP, so it is not the enzyme behind the color change.",
+   "Acetylcholinesterase": "Blocking this enzyme raises acetylcholine for myasthenia gravis or Alzheimer disease, and it is not a target of drugs for erectile dysfunction."
+  },
+  "et": [
+   [
+    "Option",
+    "Tissue",
+    "Drug that affects it",
+    "Effect"
+   ],
+   [
+    [
+     "Phosphodiesterase type 5",
+     "Corpus cavernosum",
+     "Sildenafil, tadalafil",
+     "Erection, flushing, headache"
+    ],
+    [
+     "Phosphodiesterase type 11",
+     "Skeletal muscle",
+     "Tadalafil",
+     "Back pain, myalgia"
+    ],
+    [
+     "Soluble guanylate cyclase",
+     "Vascular smooth muscle",
+     "Not a target of PDE5 inhibitors",
+     "Makes cGMP; no visual effect"
+    ],
+    [
+     "Phosphodiesterase type 6",
+     "Retinal photoreceptors",
+     "Sildenafil at high levels",
+     "Blue-green vision"
+    ],
+    [
+     "Acetylcholinesterase",
+     "Synapse",
+     "Donepezil, neostigmine",
+     "Cholinergic effects"
+    ]
+   ]
+  ],
+  "bl": "Sildenafil also inhibits retinal phosphodiesterase type 6, causing blue-green vision; PDE5 inhibition produces the erection.",
+  "ef": "rp22_erection",
+  "pt": {
+   "hl": [
+    "blue-green vision (PDE6)"
+   ],
+   "say": "The adverse effects box says sildenafil causes blue-green vision through phosphodiesterase type 6 (PDE6), whereas tadalafil causes back pain through PDE11."
+  }
+ },
+ {
+  "id": "rp22q09",
+  "d": 2,
+  "tags": [
+   "normal-vs-pathologic",
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp22-04"
+  ],
+  "s": "A 28-year-old man reports sudden inability to maintain an erection with his new partner over the past 2 months. He has firm morning erections and no difficulty with erections during masturbation. He takes no medications and has no chronic illness. Genital and neurologic examinations are normal.",
+  "l": "Which is the most likely cause of his erectile dysfunction?",
+  "o": [
+   "Atherosclerotic penile arterial disease",
+   "Diabetic autonomic neuropathy",
+   "Hypogonadism from testicular failure",
+   "Psychogenic erectile dysfunction",
+   "Venous leak from a tunical defect"
+  ],
+  "a": 3,
+  "e": "Preserved morning erections and normal erections with masturbation show that the nerves, vessels and hormones work, so sudden, situational failure points to a **psychogenic** cause such as performance anxiety. Organic erectile dysfunction is gradual and loses nocturnal erections: vascular disease is the most common cause, then neuropathy, hypogonadism, drugs and anatomic problems such as venous leak. A 28-year-old with no risk factors and normal examinations makes atherosclerosis, diabetic neuropathy and testicular failure unlikely.",
+  "w": {
+   "Atherosclerotic penile arterial disease": "Atherosclerotic disease is gradual, tied to diabetes, smoking, hypertension and age, and it erodes nocturnal and morning erections too.",
+   "Diabetic autonomic neuropathy": "Neuropathy needs a cause such as diabetes, spinal injury or pelvic surgery, and it impairs all erections, including those at night and with masturbation.",
+   "Hypogonadism from testicular failure": "Testicular failure lowers libido and nocturnal erections gradually; preserved morning erections argue that testosterone is adequate.",
+   "Venous leak from a tunical defect": "Venous leak, as in Peyronie disease or fibrosis, causes poor rigidity under every circumstance rather than sudden, situation-specific failure."
+  },
+  "et": [
+   [
+    "Option",
+    "Onset",
+    "Nocturnal erections",
+    "Typical setting"
+   ],
+   [
+    [
+     "Atherosclerotic penile arterial disease",
+     "Gradual",
+     "Lost",
+     "Smoking, hypertension, diabetes"
+    ],
+    [
+     "Diabetic autonomic neuropathy",
+     "Gradual",
+     "Lost",
+     "Long-standing diabetes, cord injury"
+    ],
+    [
+     "Hypogonadism from testicular failure",
+     "Gradual",
+     "Lost early",
+     "Klinefelter syndrome, chemotherapy"
+    ],
+    [
+     "Psychogenic erectile dysfunction",
+     "Sudden, situational",
+     "Preserved",
+     "Performance anxiety, depression"
+    ],
+    [
+     "Venous leak from a tunical defect",
+     "Gradual",
+     "Lost",
+     "Peyronie disease, fibrosis"
+    ]
+   ]
+  ],
+  "bl": "Sudden erectile failure with preserved morning erections and normal masturbatory erections is psychogenic.",
+  "ef": "rp22_erection",
+  "pt": {
+   "hl": [
+    "Stimulation: parasympathetic S2 to S4"
+   ],
+   "say": "The pathway from stimulation to erection is intact in his morning and masturbatory erections, so the cause is psychogenic rather than organic."
+  }
+ },
+ {
+  "id": "rp22q10",
+  "d": 3,
+  "tags": [
+   "treatment-sequence",
+   "receptor-signaling"
+  ],
+  "bp": [
+   "BP-rp22-11",
+   "BP-rp22-05"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.8"
+  ],
+  "s": "A 57-year-old man with diabetes and erectile dysfunction has had no response to maximum-dose sildenafil taken correctly on an empty stomach with sexual stimulation on several occasions. He has no cardiac disease and takes no nitrates. Evaluation shows a venous leak.",
+  "l": "Which treatment is most appropriate next?",
+  "o": [
+   "Switching to tadalafil",
+   "Intracavernosal alprostadil",
+   "Switching to vardenafil",
+   "Oral testosterone therapy",
+   "Adding a sublingual nitrate before intercourse"
+  ],
+  "a": 1,
+  "e": "Venous leak means a scarred tunica cannot squeeze the veins shut, so blood drains out and the erection fails. Sildenafil only amplifies nitric oxide signaling, so it cannot fix this at any dose, and tadalafil or vardenafil, which work the same way, would fail too. **Intracavernosal alprostadil**, a PGE1 analog, raises cAMP through a different pathway and relaxes the smooth muscle directly. Its risks are penile pain, fibrosis and priapism. Testosterone helps only men with low levels, and adding a nitrate to a PDE5 inhibitor would be dangerous.",
+  "w": {
+   "Switching to tadalafil": "Tadalafil acts by the same PDE5 mechanism, so it cannot overcome venous leak; its longer half-life changes timing, not the underlying defect.",
+   "Switching to vardenafil": "Vardenafil is another PDE5 inhibitor and shares the same dependence on intact veno-occlusion, so it would fail too.",
+   "Oral testosterone therapy": "Testosterone improves libido and erections only in men with documented deficiency, and none has been shown here.",
+   "Adding a sublingual nitrate before intercourse": "Nitrates are contraindicated with PDE5 inhibitors and cause severe hypotension, and adding one would not repair a venous leak."
+  },
+  "et": [
+   [
+    "Option",
+    "Mechanism",
+    "Works with venous leak",
+    "Key risk"
+   ],
+   [
+    [
+     "Switching to tadalafil",
+     "PDE5 inhibition, long half-life",
+     "No",
+     "Back pain, hypotension with nitrates"
+    ],
+    [
+     "Intracavernosal alprostadil",
+     "PGE1 analog, raises cAMP",
+     "Yes, by a different pathway",
+     "Penile pain, fibrosis, priapism"
+    ],
+    [
+     "Switching to vardenafil",
+     "PDE5 inhibition",
+     "No",
+     "QT prolongation"
+    ],
+    [
+     "Oral testosterone therapy",
+     "Androgen replacement",
+     "No, unless deficient",
+     "Polycythemia, infertility"
+    ],
+    [
+     "Adding a sublingual nitrate before intercourse",
+     "Nitric oxide donor",
+     "No",
+     "Profound hypotension"
+    ]
+   ]
+  ],
+  "bl": "When PDE5 inhibitors fail because of venous leak, intracavernosal alprostadil raises cAMP by a parallel pathway.",
+  "ef": "rp22_erection",
+  "pt": {
+   "hl": [
+    "Alprostadil (PGE1) raises cAMP"
+   ],
+   "say": "The alprostadil card shows a parallel cAMP pathway that works when PDE5 inhibitors fail, given by intracavernosal injection."
+  }
+ },
+ {
+  "id": "rp22q11",
+  "d": 2,
+  "tags": [
+   "adverse-effects",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp22-07",
+   "BP-rp22-09"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.9"
+  ],
+  "s": "A 40-year-old man with resistant hypertension and heart failure is started on an additional medication. Three months later he develops bilateral tender breast enlargement and decreased libido. Serum potassium is 5.3 mEq/L, and testosterone and LH are within the reference range. He takes no other new drugs.",
+  "l": "Which drug most likely caused his breast enlargement?",
+  "o": [
+   "Furosemide",
+   "Hydrochlorothiazide",
+   "Lisinopril",
+   "Spironolactone",
+   "Amlodipine"
+  ],
+  "a": 3,
+  "e": "**Spironolactone** blocks the androgen receptor and inhibits androgen synthesis, so the balance of estrogen and androgen action shifts toward estrogen, causing gynecomastia and decreased libido; its aldosterone blockade also explains the potassium of 5.3. Furosemide and hydrochlorothiazide waste potassium and do not cause breast enlargement. Lisinopril raises potassium but has no antiandrogen effect, and amlodipine is a calcium channel blocker whose adverse effects are edema and flushing.",
+  "w": {
+   "Furosemide": "This loop diuretic lowers potassium and causes ototoxicity and volume depletion, but it has no antiandrogen action and does not enlarge the breasts.",
+   "Hydrochlorothiazide": "A thiazide lowers potassium and raises calcium and glucose; it can cause erectile dysfunction but not tender breast enlargement.",
+   "Lisinopril": "An ACE inhibitor can raise potassium and cause cough and angioedema, yet it lacks any effect on androgen receptors or breast tissue.",
+   "Amlodipine": "A dihydropyridine calcium channel blocker causes ankle edema, flushing and gingival hyperplasia, with no antiandrogen or estrogenic effect."
+  },
+  "et": [
+   [
+    "Option",
+    "Effect on potassium",
+    "Antiandrogen action",
+    "Typical adverse effect"
+   ],
+   [
+    [
+     "Furosemide",
+     "Lowers",
+     "None",
+     "Ototoxicity, volume depletion"
+    ],
+    [
+     "Hydrochlorothiazide",
+     "Lowers",
+     "None",
+     "Hyperglycemia, hypercalcemia"
+    ],
+    [
+     "Lisinopril",
+     "Raises",
+     "None",
+     "Cough, angioedema"
+    ],
+    [
+     "Spironolactone",
+     "Raises",
+     "Blocks receptor, lowers synthesis",
+     "Gynecomastia, hyperkalemia"
+    ],
+    [
+     "Amlodipine",
+     "No change",
+     "None",
+     "Edema, flushing"
+    ]
+   ]
+  ],
+  "bl": "Spironolactone is an antiandrogen and aldosterone antagonist, so it causes gynecomastia, decreased libido and hyperkalemia.",
+  "ef": "rp22_androgen",
+  "pt": {
+   "hl": [
+    "Spironolactone also lowers synthesis: gynecomastia"
+   ],
+   "say": "The receptor blockers box shows spironolactone blocking the androgen receptor and lowering synthesis, which causes gynecomastia."
+  }
+ },
+ {
+  "id": "rp22q12",
+  "d": 3,
+  "tags": [
+   "selective-modulators",
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp22-02",
+   "BP-rp22-08"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.9"
+  ],
+  "s": "A 34-year-old man has injected testosterone weekly for bodybuilding for 3 years. He and his wife want to conceive. Semen analysis shows azoospermia, his testes are 10 mL each, and serum LH and FSH are very low. He is willing to stop the injections.",
+  "l": "Which is the most appropriate management?",
+  "o": [
+   "Increase the testosterone dose to restore sperm production",
+   "Switch to oral testosterone undecanoate",
+   "Stop testosterone and start hCG or clomiphene",
+   "Proceed to surgical sperm retrieval",
+   "Start finasteride to raise intratesticular testosterone"
+  ],
+  "a": 2,
+  "e": "Injected testosterone shut off LH and FSH, so testosterone inside the testis collapsed and sperm production stopped. The first step is to **stop the androgen**. Recovery takes months and is sometimes incomplete. To bring sperm back sooner, hCG (an LH analog) restores testosterone inside the testis, and clomiphene (a SERM) blocks estrogen feedback so the pituitary releases more LH and FSH. A repeat semen analysis is meaningful only after about 3 months. More testosterone, or an oral form, would keep the axis shut down. Surgical sperm retrieval is for failed testes, not for a reversible cause like this one, and finasteride lowers DHT instead of raising testosterone.",
+  "w": {
+   "Increase the testosterone dose to restore sperm production": "A higher dose deepens the feedback suppression of LH and FSH, which further lowers intratesticular testosterone and sperm production.",
+   "Switch to oral testosterone undecanoate": "Any exogenous testosterone, whatever the route, suppresses LH and FSH, so an oral form would keep the testes shut down.",
+   "Proceed to surgical sperm retrieval": "Surgical retrieval is for men whose testes have failed. Here the cause is reversible, so stopping the drug and giving hCG or clomiphene comes first.",
+   "Start finasteride to raise intratesticular testosterone": "Finasteride blocks conversion of testosterone to DHT and does not raise the testicular androgen level that sperm production needs."
+  },
+  "et": [
+   [
+    "Option",
+    "Effect on the axis",
+    "Intratesticular testosterone",
+    "Fertility outlook"
+   ],
+   [
+    [
+     "Increase the testosterone dose to restore sperm production",
+     "Deeper suppression",
+     "Falls further",
+     "Worse"
+    ],
+    [
+     "Switch to oral testosterone undecanoate",
+     "Continued suppression",
+     "Stays low",
+     "No better"
+    ],
+    [
+     "Stop testosterone and start hCG or clomiphene",
+     "Restores LH and FSH drive or LH action",
+     "Rises",
+     "Recovery over months"
+    ],
+    [
+     "Proceed to surgical sperm retrieval",
+     "None",
+     "Unchanged",
+     "Needed only if the testes have failed"
+    ],
+    [
+     "Start finasteride to raise intratesticular testosterone",
+     "Blocks DHT formation",
+     "Unchanged",
+     "No benefit"
+    ]
+   ]
+  ],
+  "bl": "After exogenous testosterone, stop the drug and use hCG or clomiphene to restore LH and FSH drive; repeat semen analysis after 3 months.",
+  "ef": "rp22_axis",
+  "pt": {
+   "hl": [
+    "Exogenous testosterone"
+   ],
+   "say": "The exogenous testosterone row shows low LH and FSH with azoospermia, so stopping the drug and restoring drive with hCG or clomiphene is the logical treatment."
+  }
+ },
+ {
+  "id": "rp22q13",
+  "d": 2,
+  "tags": [
+   "adverse-effects",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp22-06"
+  ],
+  "obj": [
+   "PATHPHARM-MALE.8"
+  ],
+  "s": "A 30-year-old man started paroxetine for major depression 6 weeks ago. His mood has improved, but he now needs more than 30 minutes of intercourse to ejaculate and sometimes cannot ejaculate at all. Libido is mildly reduced. Morning erections are normal.",
+  "l": "Which mechanism best explains his sexual dysfunction?",
+  "o": [
+   "Blockade of cavernosal nitric oxide synthesis",
+   "Suppression of GnRH secretion by prolactin",
+   "Alpha-1 receptor blockade at the bladder neck",
+   "Increased serotonergic tone raising the ejaculatory threshold",
+   "Inhibition of 5-alpha-reductase in genital skin"
+  ],
+  "a": 3,
+  "e": "Serotonin acts centrally to raise the threshold for ejaculation, so **SSRIs delay ejaculation** and lower libido while erections stay intact. The same effect is used to treat premature ejaculation, with paroxetine the strongest. His normal morning erections argue against a vascular or nitric oxide defect. Prolactin-mediated GnRH suppression would lower testosterone and erections, alpha-1 blockade causes retrograde ejaculation with an orgasm but little fluid, and 5-alpha-reductase inhibition would reduce libido but not delay ejaculation.",
+  "w": {
+   "Blockade of cavernosal nitric oxide synthesis": "Impaired nitric oxide production would weaken erections, whereas his morning erections are normal and his problem is delayed ejaculation.",
+   "Suppression of GnRH secretion by prolactin": "Prolactin excess lowers testosterone and libido and can impair erections, but SSRIs rarely do this and it would not selectively delay ejaculation.",
+   "Alpha-1 receptor blockade at the bladder neck": "Alpha-1 blockade by drugs such as tamsulosin produces retrograde or absent ejaculation with a normal-feeling orgasm, not a prolonged time to ejaculate.",
+   "Inhibition of 5-alpha-reductase in genital skin": "Finasteride lowers libido and may cause erectile dysfunction, and this patient takes no such drug."
+  },
+  "et": [
+   [
+    "Option",
+    "Ejaculatory effect",
+    "Erections",
+    "Typical cause"
+   ],
+   [
+    [
+     "Blockade of cavernosal nitric oxide synthesis",
+     "None",
+     "Weak",
+     "Vascular or endothelial disease"
+    ],
+    [
+     "Suppression of GnRH secretion by prolactin",
+     "None",
+     "Weak",
+     "Prolactinoma, dopamine antagonists"
+    ],
+    [
+     "Alpha-1 receptor blockade at the bladder neck",
+     "Retrograde or absent",
+     "Intact",
+     "Tamsulosin, diabetes, prostate surgery"
+    ],
+    [
+     "Increased serotonergic tone raising the ejaculatory threshold",
+     "Delayed ejaculation",
+     "Intact",
+     "SSRIs, clomipramine"
+    ],
+    [
+     "Inhibition of 5-alpha-reductase in genital skin",
+     "Less ejaculate volume",
+     "May be weak",
+     "Finasteride, dutasteride"
+    ]
+   ]
+  ],
+  "bl": "Serotonin raises the ejaculatory threshold, so SSRIs such as paroxetine delay ejaculation and lower libido with erections intact."
+ }
+]
