@@ -51,14 +51,14 @@
     "Crown-rump length in the first trimester",
     "Femur length in the third trimester",
     "Biparietal diameter at 30 weeks",
-    "Fundal height at the first visit"
+    "Abdominal circumference at 28 weeks"
    ],
    "a": 0,
    "why": "Embryos of the same age are almost the same size, so the crown-rump length predicts age within 5 to 7 days. Fetal size varies more with each week, so later measurements drift by weeks and never overrule an early scan.",
    "w": {
     "Femur length in the third trimester": "Growth differences between fetuses widen as pregnancy advances, so a late femur measurement can be off by three weeks. It is used to follow growth, not to set dates.",
     "Biparietal diameter at 30 weeks": "By 30 weeks head size reflects each fetus's own growth potential, so the biparietal diameter can be wrong by two to three weeks. It tracks growth rather than age.",
-    "Fundal height at the first visit": "Early in pregnancy the uterus is still inside the pelvis, so fundal height is not measured until 20 weeks. Then it roughly equals the gestational age in centimeters."
+    "Abdominal circumference at 28 weeks": "Abdominal circumference varies with fetal nutrition and growth. It is used to estimate fetal weight and to detect growth restriction, and it dates a pregnancy poorly."
    }
   },
   {
@@ -105,7 +105,7 @@
   ],
   [
    "p",
-   "In the first trimester, the **crown-rump length**, the embryo's length from head to bottom, is the most accurate dating method, within about 5 to 7 days. This is because embryos of the same age are almost the same size. Later measurements date less precisely because fetal growth varies. If an early ultrasound disagrees with the LMP by more than a few days, the ultrasound date is used. A first-trimester date is never changed again. An in vitro fertilization pregnancy is dated from the embryo transfer, because conception is known."
+   "In the first trimester, the **crown-rump length**, the embryo's length from head to bottom, is the most accurate dating method, within about 5 to 7 days. This is because embryos of the same age are almost the same size. Later measurements date less precisely because fetal growth varies. If an early ultrasound disagrees with the LMP by more than a few days, the ultrasound date is used. A first-trimester date is not changed later. An in vitro fertilization pregnancy is dated from the embryo transfer, because conception is known."
   ],
   [
    "p",
@@ -353,7 +353,7 @@
     [
      "ACE inhibitors, ARBs",
      "Second and third trimesters",
-     "Block angiotensin II, so fetal filtration fails: renal failure, **oligohydramnios**, pulmonary hypoplasia"
+     "Block angiotensin II, so fetal filtration fails: renal failure, **oligohydramnios**, pulmonary hypoplasia, hypocalvaria (skull hypoplasia)"
     ],
     [
      "NSAIDs",
@@ -363,7 +363,7 @@
     [
      "Warfarin",
      "Weeks 6 to 12",
-     "Blocks vitamin K carboxylation in bone: nasal hypoplasia, stippled epiphyses"
+     "Blocks vitamin K carboxylation in bone: nasal hypoplasia, stippled epiphyses, eye defects and fetal loss"
     ],
     [
      "Valproate, carbamazepine",
@@ -378,7 +378,7 @@
     [
      "Isotretinoin",
      "Organogenesis",
-     "Retinoic acid disrupts neural crest cells: craniofacial, cardiac and CNS defects; two forms of contraception and negative pregnancy tests are required (iPLEDGE)"
+     "Retinoic acid disrupts neural crest cells: craniofacial, cardiac, thymic and CNS defects; two forms of contraception and negative pregnancy tests are required (iPLEDGE)"
     ],
     [
      "Thalidomide",
@@ -418,7 +418,7 @@
   ],
   [
    "p",
-   "Lithium causes Ebstein anomaly, a malformed tricuspid valve, and phenytoin causes hypoplastic nails and distal phalanges. **Methimazole** causes aplasia cutis and choanal atresia, so propylthiouracil is used in the first trimester. Misoprostol causes the Mobius sequence, and mycophenolate causes microtia and clefts. Diethylstilbestrol exposure in utero causes vaginal clear cell adenocarcinoma in the daughter. Methylmercury from some large fish is neurotoxic, alkylating agents cause absent digits, fluoroquinolones may damage fetal cartilage, and too little or too much iodine causes congenital goiter or hypothyroidism. Ribavirin and griseofulvin are teratogenic and clarithromycin is embryotoxic, so none of the three is used in pregnancy."
+   "Antiseizure drugs as a group also raise the risk of cardiac defects and cleft lip and palate, and phenytoin causes hypoplastic nails and distal phalanges. Lithium causes Ebstein anomaly, a malformed tricuspid valve. **Methimazole** causes aplasia cutis and choanal atresia, so propylthiouracil is used in the first trimester. Misoprostol causes the Mobius sequence, and mycophenolate causes microtia and clefts. Diethylstilbestrol exposure in utero causes vaginal clear cell adenocarcinoma in the daughter. Methylmercury from some large fish is neurotoxic, alkylating agents cause absent digits, fluoroquinolones may damage fetal cartilage, and too little or too much iodine causes congenital goiter or hypothyroidism. Ribavirin and griseofulvin are teratogenic and clarithromycin is embryotoxic, so none of the three is used in pregnancy."
   ],
   [
    "palace",
@@ -426,7 +426,7 @@
   ],
   [
    "p",
-   "**Ionizing radiation** has not been shown to harm the fetus below 50 mGy. Intellectual disability and microcephaly need higher doses, roughly 60 to 310 mGy at 8 to 15 weeks. A chest film delivers far less than either, so needed imaging is not withheld. Maternal **phenylketonuria** with a high phenylalanine causes microcephaly, intellectual disability and congenital heart disease unless a restricted diet starts before conception. Pregestational diabetes causes caudal regression and transposition of the great arteries. **Congenital rubella** from first-trimester infection causes cataracts, deafness and patent ductus arteriosus, and vaccination before pregnancy prevents it."
+   "**Ionizing radiation** has not been shown to harm the fetus below 50 mGy. Intellectual disability and microcephaly need higher doses, roughly 60 to 310 mGy at 8 to 15 weeks. A chest film delivers far less than either, so needed imaging is not withheld. Maternal **phenylketonuria** with a high phenylalanine causes microcephaly, growth restriction, intellectual disability and congenital heart disease unless a restricted diet starts before conception. Pregestational diabetes causes caudal regression and transposition of the great arteries. **Congenital rubella** from first-trimester infection causes cataracts, deafness and patent ductus arteriosus, and vaccination before pregnancy prevents it."
   ],
   [
    "t",

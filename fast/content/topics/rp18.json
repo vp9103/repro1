@@ -88,7 +88,7 @@
   ],
   [
    "p",
-   "A mother can pass an infection to her baby by two main routes, and the route decides the prevention. **Transplacental** organisms reach the embryo through maternal blood, often during organogenesis. They cause malformations, hydrops (fluid swelling of the fetus) or fetal loss. This damage happens in the womb, so prevention must protect the mother before she is exposed. Other organisms wait in the birth canal and infect the newborn during delivery, so prevention happens at delivery itself. The infections that cross the placenta are remembered as the {{rp18_torch|TORCH infections}}: *Toxoplasma*, other agents (syphilis, varicella, parvovirus B19, Zika), rubella, cytomegalovirus and herpes simplex. Herpes is the exception, because most neonatal herpes is caught during birth."
+   "A mother can pass an infection to her baby by two main routes, and the route decides the prevention. **Transplacental** organisms reach the embryo through maternal blood, often during organogenesis. They cause malformations, hydrops (fluid swelling of the fetus) or fetal loss. This damage happens in the womb, so prevention must protect the mother before she is exposed. Other organisms wait in the birth canal and infect the newborn during delivery, so prevention happens at delivery itself. The infections that cross the placenta are remembered as the {{rp18_torch|TORCH infections}}: *Toxoplasma*, other agents (syphilis, varicella, parvovirus B19, Zika), rubella, cytomegalovirus, herpes simplex and HIV. Herpes and HIV are the exceptions, because most neonatal herpes is caught during birth, and most mother-to-child HIV transmission also happens around delivery."
   ],
   [
    "f",
@@ -141,6 +141,11 @@
      "Treponema pallidum",
      "Spirochete",
      "Crosses the placenta at any stage of pregnancy"
+    ],
+    [
+     "HIV",
+     "Retrovirus: enveloped RNA virus that makes DNA with reverse transcriptase",
+     "Mostly around delivery; also across the placenta and in breast milk"
     ]
    ]
   ],
@@ -160,7 +165,11 @@
   ],
   [
    "p",
-   "Two organisms injure the developing brain, and the pattern of calcium tells them apart. *Toxoplasma gondii* comes from cat feces or undercooked meat. Congenital **toxoplasmosis** causes chorioretinitis, hydrocephalus and diffuse intracranial calcifications. The mother usually has no symptoms or only swollen lymph nodes, and an infected infant is treated with pyrimethamine plus sulfadiazine, which block the parasite's folate synthesis, with leucovorin to protect the marrow. Cytomegalovirus (CMV) is the most common congenital infection and spreads in the saliva and urine of young children. It attacks the area around the ventricles, causing **periventricular calcifications**, microcephaly and chorioretinitis. It is also the leading nongenetic cause of sensorineural hearing loss in children. Most infected newborns look well at birth, so hearing loss may be the first sign."
+   "Two organisms injure the developing brain, and the pattern of calcium tells them apart. *Toxoplasma gondii* comes from cat feces or undercooked meat. Congenital **toxoplasmosis** causes chorioretinitis, hydrocephalus and diffuse intracranial calcifications. The mother usually has no symptoms or only swollen lymph nodes, and an infected infant is treated with pyrimethamine plus sulfadiazine, which block the parasite's folate synthesis, with leucovorin to protect the marrow."
+  ],
+  [
+   "p",
+   "The other is cytomegalovirus (CMV), the most common congenital infection, which spreads in the saliva and urine of young children. The mother usually has no symptoms, or has a mononucleosis-like illness with a negative heterophile (Monospot) test. The virus attacks the area around the ventricles, causing **periventricular calcifications**, microcephaly, chorioretinitis and seizures. It is also the leading nongenetic cause of sensorineural hearing loss in children. Most infected newborns look well at birth, so hearing loss may be the first sign."
   ],
   [
    "p",
@@ -172,11 +181,11 @@
   ],
   [
    "p",
-   "Maternal **varicella** before 20 weeks can cause congenital varicella syndrome: limb hypoplasia, zigzag skin scars in a dermatomal pattern, and eye and brain defects. A nonimmune pregnant patient exposed to chickenpox therefore receives varicella-zoster immune globulin (VZIG). Zika virus, spread by mosquitoes and by sex, causes severe microcephaly with eye lesions."
+   "Maternal **varicella** before 20 weeks can cause congenital varicella syndrome: limb hypoplasia, zigzag skin scars in a dermatomal pattern, and eye and brain defects. A nonimmune pregnant patient exposed to chickenpox receives varicella-zoster immune globulin (VZIG). VZIG mainly prevents severe maternal varicella and pneumonia, and whether it protects the fetus is unproven. Zika virus, spread by mosquitoes and by sex, causes severe microcephaly with eye lesions."
   ],
   [
    "p",
-   "**Parvovirus B19** works differently. It enters red cell precursors through the P antigen and halts red cell production. A fetus has short-lived red cells and a growing blood volume, so it becomes severely anemic. High-output heart failure then produces {{rp18_hydrops|hydrops fetalis}}, and Doppler of the fetal middle cerebral artery detects the anemia. The mother often caught the virus from a school-age child with slapped-cheek rash, and the fetal risk is greatest before 20 weeks. *Listeria monocytogenes* takes advantage of the drop in cell-mediated immunity in pregnancy. It travels in unpasteurized cheese and deli meat. It crosses the placenta and causes amnionitis (infection of the fetal membranes), preterm birth, stillbirth and neonatal sepsis or meningitis."
+   "**Parvovirus B19** works differently. It enters red cell precursors through the P antigen and halts red cell production. A fetus has short-lived red cells and a growing blood volume, so it becomes severely anemic. High-output heart failure then produces {{rp18_hydrops|hydrops fetalis}}. The mother often caught the virus from a school-age child with slapped-cheek rash, and the fetal risk is greatest before 20 weeks. *Listeria monocytogenes* takes advantage of the drop in cell-mediated immunity in pregnancy. It travels in unpasteurized cheese and deli meat. It crosses the placenta and causes amnionitis (infection of the fetal membranes), preterm birth, stillbirth and neonatal sepsis or meningitis."
   ],
   [
    "f",
@@ -198,7 +207,7 @@
   ],
   [
    "p",
-   "Late findings come from damage to growing tissue: notched incisors, mulberry molars, a saddle nose, a short maxilla, rhagades (linear scars at the corners of the mouth), **saber shins**, interstitial keratitis and eighth-nerve deafness. The {{rp18_hutch|Hutchinson triad}} is notched incisors, interstitial keratitis and deafness. Every pregnancy is screened for syphilis at the first visit. Only penicillin G benzathine prevents congenital syphilis, so an allergic patient is desensitized."
+   "Late findings come from damage to growing tissue: notched incisors, mulberry molars, a saddle nose, a short maxilla, rhagades (linear scars at the corners of the mouth), **saber shins** (forward-bowed tibias), interstitial keratitis and eighth-nerve deafness. The {{rp18_hutch|Hutchinson triad}} is notched incisors, interstitial keratitis and deafness. Every pregnancy is screened for syphilis at the first visit. Only penicillin G benzathine prevents congenital syphilis, so an allergic patient is desensitized."
   ],
   [
    "img",
@@ -246,7 +255,11 @@
   ],
   [
    "p",
-   "HPV reaches the newborn rarely. An infant exposed to types 6 and 11 can develop **laryngeal papillomatosis**. These benign warty growths on the vocal cords cause hoarseness and stridor in early childhood. Blood-borne viruses are also caught mainly at delivery. Every pregnancy is screened for hepatitis B surface antigen (**HBsAg**), and transmission is most likely when the mother is also positive for HBeAg, the marker of active viral replication. The infant of a positive mother receives hepatitis B immune globulin (HBIG) plus the first vaccine dose within 12 hours of birth. Without this, about 90 percent of infected newborns would become chronic carriers. Hepatitis C passes to about 5 percent of infants and is treated after pregnancy."
+   "HPV reaches the newborn rarely. An infant exposed to types 6 and 11 can develop **laryngeal papillomatosis**. These benign warty growths on the vocal cords cause hoarseness and stridor in early childhood."
+  ],
+  [
+   "p",
+   "Blood-borne viruses are also caught mainly at delivery. Every pregnancy is screened for hepatitis B surface antigen (**HBsAg**), and transmission is most likely when the mother is also positive for HBeAg, the marker of active viral replication. The infant of a positive mother receives hepatitis B immune globulin (HBIG) plus the first vaccine dose within 12 hours of birth. Without this prophylaxis, most newborns of HBeAg-positive mothers are infected, and about 90 percent of infected newborns become chronic carriers. Hepatitis C passes to about 5 percent of infants and is treated after pregnancy. **HIV** passes mostly around delivery, but also across the placenta and in breast milk. An infected infant is often well at birth, then shows failure to thrive and has recurrent bacterial and viral infections, *Pneumocystis* pneumonia and chronic diarrhea. Antiretroviral treatment of the mother greatly lowers this risk."
   ],
   [
    "p",
@@ -258,7 +271,7 @@
   ],
   [
    "p",
-   "Group B strep and *Escherichia coli* cause most early neonatal sepsis and meningitis, and *Listeria* is the third classic cause. Each has a laboratory signature. Group B strep is a beta-hemolytic gram-positive coccus in chains that is **bacitracin-resistant**, hippurate-positive and CAMP-positive. Its CAMP factor enlarges the zone of hemolysis made by *Staphylococcus aureus*, and its polysaccharide capsule is its main virulence factor. *E. coli* strains with the K1 capsule resist complement and phagocytosis and cause neonatal meningitis. *Listeria* is a gram-positive rod with **tumbling motility**. It grows in the cold, escapes the phagosome with the pore-forming toxin listeriolysin O, lives inside cells and spreads from cell to cell on actin tails, out of reach of antibody. Heavy fetal infection produces granulomatosis infantiseptica."
+   "Group B strep and *Escherichia coli* cause most early neonatal sepsis and meningitis, and *Listeria* is the third classic cause. Each has a laboratory signature. Group B strep is a beta-hemolytic gram-positive coccus in chains that is **bacitracin-resistant**, hippurate-positive and CAMP-positive. Its CAMP factor enlarges the zone of hemolysis made by *Staphylococcus aureus*, and its polysaccharide capsule is its main virulence factor. *E. coli* strains with the K1 capsule resist complement and phagocytosis and cause neonatal meningitis. *Listeria* is a gram-positive rod with **tumbling motility**. It grows in the cold, escapes the phagosome with the pore-forming toxin listeriolysin O, lives inside cells and spreads from cell to cell on actin tails, out of reach of antibody. Heavy fetal infection produces granulomatosis infantiseptica, with widespread granulomas and microabscesses in the fetal organs."
   ],
   [
    "call",
