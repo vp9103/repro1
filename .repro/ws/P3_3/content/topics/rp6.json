@@ -108,7 +108,11 @@
   ],
   [
    "p",
-   "In complete {{rp6_ais|androgen insensitivity syndrome}} (CAIS), an X-linked defect in the androgen receptor means that testosterone and DHT are made but cannot act. The testes still secrete AMH, so there is no uterus or upper vagina, and the lower vagina ends as a **blind vaginal pouch**. Without androgen action the Wolffian ducts regress and the external genitalia are female. The hypothalamus and pituitary also cannot sense testosterone, so LH and testosterone climb. Much of that testosterone is aromatized to estradiol, which grows normal breasts at puberty. Pubic and axillary hair need androgen action, so they stay **scant**. The usual story is a girl with breasts and primary amenorrhea, or an infant girl with an inguinal hernia that contains a testis. The testes carry a low tumor risk before puberty. They are often left in place until puberty is complete, then removed, and estrogen replacement follows."
+   "In complete {{rp6_ais|androgen insensitivity syndrome}} (CAIS), an X-linked defect in the androgen receptor means that testosterone and DHT are made but cannot act. Androgen insensitivity, complete or partial, is the most common cause of 46,XY DSD. The testes still secrete AMH, so there is no uterus or upper vagina, and the lower vagina ends as a **blind vaginal pouch**. Without androgen action the Wolffian ducts regress and the external genitalia are female. The hypothalamus and pituitary also cannot sense testosterone, so LH and testosterone climb. Much of that testosterone is aromatized to estradiol, which grows normal breasts at puberty. Pubic and axillary hair need androgen action, so they stay **scant**."
+  ],
+  [
+   "p",
+   "Complete androgen insensitivity usually comes to attention as a girl with breasts and primary amenorrhea, or an infant girl with an inguinal hernia that contains a testis. The testes carry a low tumor risk before puberty. They are often left in place until puberty is complete, then removed, and estrogen replacement follows."
   ],
   [
    "p",
@@ -158,12 +162,28 @@
      "Female"
     ],
     [
+     "17-alpha-hydroxylase deficiency",
+     "46,XY; testes",
+     "Absent, because AMH is made",
+     "Both low",
+     "High",
+     "Female or ambiguous; hypertension, low potassium"
+    ],
+    [
      "21-hydroxylase deficiency (CAH)",
      "46,XX; ovaries",
      "Present",
      "Adrenal androgens high",
      "Not raised",
      "Virilized"
+    ],
+    [
+     "11-beta-hydroxylase deficiency (CAH)",
+     "46,XX; ovaries",
+     "Present",
+     "Adrenal androgens high",
+     "Not raised",
+     "Virilized; hypertension"
     ],
     [
      "Placental aromatase deficiency",
@@ -199,12 +219,28 @@
    "In both disorders the fetus meets excess androgen, but the placenta decides whether the mother does. Normally the placenta aromatizes fetal adrenal DHEA sulfate into estrogens. In fetal CAH, placental aromatase is intact and converts most of the extra fetal androgen to estrogen, so the mother is shielded. In placental aromatase deficiency that shield is broken. Androgens reach the mother unconverted, and her estrogen is low. Maternal virilization in pregnancy therefore points to the placenta rather than the fetal adrenal."
   ],
   [
+   "p",
+   "A third source of androgen is the mother herself. Androgenic drugs taken in early pregnancy, or an androgen-secreting tumor of the mother, virilize a 46,XX fetus in the same way, and the tumor also virilizes the mother."
+  ],
+  [
+   "h",
+   "Which enzyme blocks add hypertension?"
+  ],
+  [
+   "p",
+   "Two rarer enzyme blocks matter because they add hypertension. In 11-beta-hydroxylase deficiency a 46,XX fetus is virilized as in 21-hydroxylase deficiency, but 11-deoxycorticosterone, a mineralocorticoid, builds up, so blood pressure rises instead of salt being lost. In 17-alpha-hydroxylase deficiency no sex steroids can be made at all. A 46,XY fetus then has female or ambiguous external genitalia, undescended testes and no uterus, because AMH still acts, and neither sex enters puberty, while excess mineralocorticoid causes hypertension and hypokalemia."
+  ],
+  [
    "h",
    "What do Turner and Klinefelter syndromes do to the gonads?"
   ],
   [
    "p",
-   "**Turner syndrome** (45,X, or a mosaic such as 45,X/46,XX) results when one sex chromosome is lost, and its risk does not rise with maternal age. Oocytes form but die off quickly, so by puberty the ovaries are streaks that make no estrogen. The girl has primary amenorrhea, absent breast development and high FSH and LH, which is **hypergonadotropic** hypogonadism. Pubic hair still appears because the adrenal glands are normal. Short stature comes from loss of one copy of the SHOX gene and is treated with growth hormone. The dangerous findings are cardiovascular: a bicuspid aortic valve, **coarctation** of the aorta with arm pressure above leg pressure, and aortic dilation that can dissect. A horseshoe kidney and a shield chest with widely spaced nipples complete the picture."
+   "**Turner syndrome** (45,X, or a mosaic such as 45,X/46,XX) results when one sex chromosome is lost, and its risk does not rise with maternal age. The chromosome is usually lost in the father's sperm through a meiotic error, which explains the lack of an age effect; a loss after fertilization, a mitotic error, gives a mosaic. Oocytes form but die off quickly, so by puberty the ovaries are streaks that make no estrogen. The girl has primary amenorrhea, absent breast development and high FSH and LH, which is **hypergonadotropic** hypogonadism. Pubic hair still appears because the adrenal glands are normal."
+  ],
+  [
+   "p",
+   "Short stature comes from loss of one copy of the SHOX gene and is treated with growth hormone. The dangerous findings are cardiovascular: a bicuspid aortic valve, **coarctation** of the aorta with arm pressure above leg pressure, and aortic dilation that can dissect. A horseshoe kidney and a shield chest with widely spaced nipples complete the picture."
   ],
   [
    "steps",
@@ -232,7 +268,11 @@
   ],
   [
    "p",
-   "**Klinefelter syndrome** (47,XXY) is the most common cause of primary hypogonadism in men and comes from meiotic nondisjunction. The extra X damages the seminiferous tubules, which hyalinize and scar. The testes are small and firm, and the man is infertile with {{rp6_azoo|azoospermia}}. Sertoli cell loss lowers **inhibin** B, so FSH rises. Leydig cell failure lowers testosterone, so LH rises. The high LH drives testicular aromatase, so estradiol rises relative to testosterone. The result is gynecomastia, a female pattern of hair and fat, and a higher risk of male breast cancer. Low testosterone delays closure of the growth plates, so he is tall with long legs. The inactivated extra X shows as a {{rp6_barr|Barr body}}."
+   "In Turner syndrome a mosaic with a Y cell line (45,X/46,XY) carries the same gonadoblastoma risk as Swyer syndrome, so the streak gonads are removed. Pregnancy is still possible with assisted reproduction, usually with donor oocytes, once estradiol and progesterone have prepared the uterus."
+  ],
+  [
+   "p",
+   "**Klinefelter syndrome** (47,XXY) is the most common cause of primary hypogonadism in men and comes from meiotic nondisjunction. The extra X damages the seminiferous tubules, which hyalinize and scar. The testes are small and firm, and the man is infertile with {{rp6_azoo|azoospermia}}. Sertoli cell loss lowers **inhibin** B, so FSH rises. Leydig cell failure lowers testosterone, so LH rises. The high LH drives testicular aromatase, so estradiol rises relative to testosterone. The result is gynecomastia, a female pattern of hair and fat, and a higher risk of male breast cancer. Low testosterone delays closure of the growth plates, so he is tall with long legs. Language and learning delays can occur, although intelligence is usually normal. The inactivated extra X shows as a {{rp6_barr|Barr body}}."
   ],
   [
    "f",
