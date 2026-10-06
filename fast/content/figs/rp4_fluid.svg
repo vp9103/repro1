@@ -1,0 +1,51 @@
+<svg class="dia" viewBox="0 0 900 572" role="img" aria-label="Amniotic fluid after 16 weeks is fetal urine removed by swallowing; too little fluid (oligohydramnios) follows missing urine such as bilateral renal agenesis and leads to the Potter sequence, and too much fluid (polyhydramnios) follows failed swallowing, fetal diuresis, anemia or multiple gestation">
+<text class="ttl" x="14" y="26" font-size="17">Amniotic fluid mirrors the fetal kidneys and gut</text>
+<rect x="14" y="42" width="872" height="40" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="67" font-size="15">After about 16 weeks the fluid is mostly fetal urine, and the fetus clears it by swallowing</text>
+<rect x="14" y="96" width="430" height="34" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="cr" x="28" y="119" font-size="16">Too little fluid: oligohydramnios</text>
+<rect x="456" y="96" width="430" height="34" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="wn" x="470" y="119" font-size="16">Too much fluid: polyhydramnios</text>
+<rect x="14" y="140" width="430" height="191" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="26" y="169" font-size="15">No urine, so no fluid</text>
+<circle cx="29" cy="189" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="40" y="194" font-size="14">Bilateral renal agenesis</text>
+<circle cx="29" cy="213" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="40" y="218" font-size="14">Autosomal recessive polycystic kidney disease</text>
+<circle cx="29" cy="237" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="40" y="242" font-size="14">Posterior urethral valves in a male fetus</text>
+<circle cx="29" cy="261" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="40" y="266" font-size="14">Kidney damage from ACE inhibitors</text>
+<circle cx="29" cy="285" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="40" y="290" font-size="14">Placental insufficiency, which cuts fetal kidney</text>
+<text x="40" y="310" font-size="14">perfusion</text>
+<line x1="229" y1="331" x2="229" y2="353" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="229,359 225.4,353 232.6,353" fill="var(--ink-2)"/>
+<rect x="14" y="359" width="430" height="139" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="26" y="388" font-size="15">Potter sequence</text>
+<circle cx="29" cy="408" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="40" y="413" font-size="14">Fluid cannot cushion the fetus: flat face and limb</text>
+<text x="40" y="433" font-size="14">deformities</text>
+<circle cx="29" cy="452" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="40" y="457" font-size="14">Lungs need fluid to grow: fatal pulmonary</text>
+<text x="40" y="477" font-size="14">hypoplasia</text>
+<rect x="456" y="140" width="430" height="120.66666666666667" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="468" y="169" font-size="15">The fetus cannot swallow or absorb</text>
+<circle cx="471" cy="189" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="482" y="194" font-size="14">Esophageal or duodenal atresia</text>
+<circle cx="471" cy="213" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="482" y="218" font-size="14">Anencephaly</text>
+<rect x="456" y="270.6666666666667" width="430" height="96.66666666666667" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="468" y="299.6666666666667" font-size="15">The fetus makes too much urine</text>
+<circle cx="471" cy="319.6666666666667" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="482" y="324.6666666666667" font-size="14">Maternal diabetes: fetal osmotic diuresis</text>
+<rect x="456" y="377.33333333333337" width="430" height="120.66666666666667" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="468" y="406.33333333333337" font-size="15">Other causes</text>
+<circle cx="471" cy="426.33333333333337" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="482" y="431.33333333333337" font-size="14">Fetal anemia</text>
+<circle cx="471" cy="450.33333333333337" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="482" y="455.33333333333337" font-size="14">Multiple gestation</text>
+<rect x="14" y="512.0" width="872" height="50" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="534.0" font-size="14">A sequence is one defect cascading into others:</text>
+<text x="28" y="554.0" font-size="14">no urine, then too little fluid, then a compressed fetus with small lungs</text>
+</svg>

@@ -1,0 +1,75 @@
+<svg class="dia" viewBox="0 0 900 560" role="img" aria-label="A duct cross-section with luminal cells inside and myoepithelial cells outside a basement membrane, the invasion test with myoepithelial stains, merocrine and apocrine release of milk proteins and lipid, and the hormone sequence from pregnancy and delivery to suckling and oxytocin let-down">
+<text class="ttl" x="14" y="26" font-size="17">How the breast makes, releases and lets down milk</text>
+<rect x="14" y="44" width="430" height="262" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="70" font-size="16">Duct wall: two cell layers</text>
+<circle cx="106" cy="162" r="66" fill="none" stroke="var(--ink-3)" stroke-width="1.5" stroke-dasharray="5 4"/>
+<circle cx="106" cy="162" r="56" fill="none" stroke="var(--warn)" stroke-width="7" stroke-dasharray="20 6"/>
+<circle cx="142.0" cy="162.0" r="11" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="131.45584412271572" cy="187.45584412271572" r="11" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="106.0" cy="198.0" r="11" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="80.54415587728428" cy="187.45584412271572" r="11" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="70.0" cy="162.0" r="11" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="80.54415587728428" cy="136.54415587728428" r="11" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="106.0" cy="126.0" r="11" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="131.4558441227157" cy="136.54415587728428" r="11" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="106" cy="162" r="23" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="106" y="167" font-size="13" text-anchor="middle">Lumen</text>
+<text class="b" x="200" y="100" font-size="14.5">Myoepithelial cell (outer)</text>
+<text x="200" y="119" font-size="13.5">Contractile; squeezes milk out</text>
+<line x1="194" y1="95" x2="146" y2="122" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="200" y="145" font-size="14.5">Luminal cell (inner)</text>
+<text x="200" y="164" font-size="13.5">Makes the milk; most</text>
+<text x="200" y="182" font-size="13.5">carcinomas arise here</text>
+<line x1="194" y1="140" x2="150" y2="166" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="200" y="208" font-size="14.5">Basement membrane</text>
+<text x="200" y="227" font-size="13.5">Beneath both cell layers</text>
+<line x1="194" y1="203" x2="152" y2="208" stroke="var(--ink-3)" stroke-width="1.5"/>
+<rect x="24" y="244" width="410" height="52" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="36" y="265" font-size="13.5">Rim of p63 or myosin staining: still in situ</text>
+<text class="b" x="36" y="285" font-size="13.5">No rim around irregular nests: invasion</text>
+<rect x="14" y="320" width="430" height="226" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="346" font-size="16">Two ways a luminal cell releases milk</text>
+<rect x="24" y="360" width="410" height="86" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="34" y="392" width="86" height="46" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="64" cy="410" r="6" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="1.5"/>
+<line x1="64" y1="404" x2="64" y2="396" stroke="var(--ink-2)" stroke-width="1.5"/>
+<circle cx="56" cy="376" r="3" fill="var(--ink-3)" stroke="var(--ink-3)" stroke-width="1"/>
+<circle cx="72" cy="370" r="3" fill="var(--ink-3)" stroke="var(--ink-3)" stroke-width="1"/>
+<circle cx="88" cy="378" r="3" fill="var(--ink-3)" stroke="var(--ink-3)" stroke-width="1"/>
+<circle cx="80" cy="386" r="3" fill="var(--ink-3)" stroke="var(--ink-3)" stroke-width="1"/>
+<text class="b" x="138" y="382" font-size="14.5">Merocrine secretion</text>
+<text x="138" y="401" font-size="13.5">Milk proteins such as casein leave in</text>
+<text x="138" y="418" font-size="13.5">secretory vesicles by exocytosis</text>
+<rect x="24" y="452" width="410" height="86" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="34" y="484" width="86" height="46" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="77" cy="480" r="13" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.8" stroke-dasharray="3 2"/>
+<circle cx="77" cy="480" r="6" fill="var(--warn)" stroke="var(--warn)" stroke-width="1"/>
+<text class="b" x="138" y="474" font-size="14.5">Apocrine secretion</text>
+<text x="138" y="493" font-size="13.5">Lipid droplets bulge from the cell apex</text>
+<text x="138" y="510" font-size="13.5">and pinch off wrapped in cell</text>
+<text x="138" y="527" font-size="13.5">membrane</text>
+<rect x="456" y="44" width="430" height="502" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="470" y="70" font-size="16">Hormones: from pregnancy to let-down</text>
+<rect x="466" y="84" width="410" height="95" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="478" y="113" font-size="15">Pregnancy: alveoli form, milk waits</text>
+<text x="478" y="138" font-size="14">High estrogen and progesterone build the alveoli</text>
+<text x="478" y="158" font-size="14">but block prolactin at the breast.</text>
+<line x1="671" y1="179" x2="671" y2="197.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="671,203.0 667.4,197.0 674.6,197.0" fill="var(--ink-2)"/>
+<rect x="466" y="203.0" width="410" height="95" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="478" y="232.0" font-size="15">Delivery: estrogen and progesterone fall</text>
+<text x="478" y="257.0" font-size="14">The block lifts, and prolactin switches on milk</text>
+<text x="478" y="277.0" font-size="14">synthesis.</text>
+<line x1="671" y1="298.0" x2="671" y2="316.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="671,322.0 667.4,316.0 674.6,316.0" fill="var(--ink-2)"/>
+<rect x="466" y="322.0" width="410" height="95" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="478" y="351.0" font-size="15">Suckling: prolactin and oxytocin rise</text>
+<text x="478" y="376.0" font-size="14">Nipple stimulation cuts dopamine, so prolactin</text>
+<text x="478" y="396.0" font-size="14">rises, and it triggers oxytocin release.</text>
+<line x1="671" y1="417.0" x2="671" y2="435.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="671,441.0 667.4,435.0 674.6,435.0" fill="var(--ink-2)"/>
+<rect x="466" y="441.0" width="410" height="95" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="478" y="470.0" font-size="15">Oxytocin: myoepithelial cells contract</text>
+<text x="478" y="495.0" font-size="14">They squeeze milk out: the let-down reflex,</text>
+<text x="478" y="515.0" font-size="14">which a crying infant can trigger.</text>
+</svg>

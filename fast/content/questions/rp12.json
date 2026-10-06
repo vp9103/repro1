@@ -229,7 +229,14 @@
     ]
    ]
   ],
-  "bl": "Vulvovaginal candidiasis is treated with an azole such as fluconazole, which inhibits fungal 14-alpha-demethylase and blocks ergosterol synthesis."
+  "bl": "Vulvovaginal candidiasis is treated with an azole such as fluconazole, which inhibits fungal 14-alpha-demethylase and blocks ergosterol synthesis.",
+  "ef": "rp12_drugs",
+  "pt": {
+   "hl": [
+    "lanosterol 14-alpha-demethylase"
+   ],
+   "say": "The fluconazole column shows its target: it inhibits lanosterol 14-alpha-demethylase, a fungal cytochrome P450 enzyme, so ergosterol synthesis falls and the fungal membrane fails, which treats this yeast infection."
+  }
  },
  {
   "id": "rp12q04",
@@ -302,7 +309,15 @@
     ]
    ]
   ],
-  "bl": "Metronidazole treats both vaginosis and trichomoniasis because anaerobes and protozoa reduce it to DNA-damaging radicals."
+  "bl": "Metronidazole treats both vaginosis and trichomoniasis because anaerobes and protozoa reduce it to DNA-damaging radicals.",
+  "ef": "rp12_drugs",
+  "pt": {
+   "hl": [
+    "Reduced to DNA-damaging radicals",
+    "Only anaerobic organisms"
+   ],
+   "say": "The metronidazole column shows a prodrug reduced to DNA-damaging radicals only in anaerobic organisms, bacteria and protozoa, which is why one drug clears both bacterial vaginosis and trichomoniasis."
+  }
  },
  {
   "id": "rp12q05",
@@ -373,7 +388,15 @@
     ]
    ]
   ],
-  "bl": "A painful fluctuant mass in the posterolateral vestibule is a Bartholin abscess from a blocked greater vestibular gland duct."
+  "bl": "A painful fluctuant mass in the posterolateral vestibule is a Bartholin abscess from a blocked greater vestibular gland duct.",
+  "ef": "rp12_wall",
+  "pt": {
+   "hl": [
+    "Bartholin glands",
+    "Blocked: cyst, then abscess"
+   ],
+   "say": "The vestibular glands panel shows the Bartholin glands, also called the greater vestibular glands, with ducts opening at 4 and 8 o'clock; a blocked duct makes a cyst and then an abscess in the posterolateral vestibule."
+  }
  },
  {
   "id": "rp12q06",
@@ -446,7 +469,15 @@
     ]
    ]
   ],
-  "bl": "Lichen sclerosus, white figure-of-eight vulvar skin that spares the vagina, is treated with a high-potency topical corticosteroid."
+  "bl": "Lichen sclerosus, white figure-of-eight vulvar skin that spares the vagina, is treated with a high-potency topical corticosteroid.",
+  "ef": "rp12_lesions",
+  "pt": {
+   "hl": [
+    "Ultrapotent topical",
+    "corticosteroid"
+   ],
+   "say": "The lichen sclerosus row shows thin white figure-of-eight skin with the vagina spared, and its treatment is an ultrapotent topical corticosteroid such as clobetasol, with a small cancer risk that calls for biopsy of any new ulcer."
+  }
  },
  {
   "id": "rp12q07",
@@ -517,7 +548,15 @@
     ]
    ]
   ],
-  "bl": "Thick leathery vulvar skin from scratching, with acanthosis and no atypia, is lichen simplex chronicus, which carries no cancer risk."
+  "bl": "Thick leathery vulvar skin from scratching, with acanthosis and no atypia, is lichen simplex chronicus, which carries no cancer risk.",
+  "ef": "rp12_lesions",
+  "pt": {
+   "hl": [
+    "Lichen simplex",
+    "Thick, leathery white"
+   ],
+   "say": "The lichen simplex chronicus row shows a thick, leathery white plaque from the itch-scratch cycle, with acanthosis and hyperkeratosis but no atypia, which separates it from lichen sclerosus and its dermal sclerosis."
+  }
  },
  {
   "id": "rp12q08",
@@ -670,7 +709,15 @@
     ]
    ]
   ],
-  "bl": "Vulvar extramammary Paget disease is an intraepithelial adenocarcinoma that, unlike nipple Paget, usually has no underlying invasive carcinoma."
+  "bl": "Vulvar extramammary Paget disease is an intraepithelial adenocarcinoma that, unlike nipple Paget, usually has no underlying invasive carcinoma.",
+  "ef": "rp12_lesions",
+  "pt": {
+   "hl": [
+    "Extramammary",
+    "Usually no underlying"
+   ],
+   "say": "The extramammary Paget disease row shows large pale Paget cells in the epidermis and usually no underlying carcinoma, unlike Paget disease of the nipple, which almost always sits on a breast carcinoma."
+  }
  },
  {
   "id": "rp12q10",
@@ -743,7 +790,14 @@
     ]
    ]
   ],
-  "bl": "Sarcoma botryoides is embryonal rhabdomyosarcoma, so its small round blue cells in a cambium layer stain for desmin and myogenin."
+  "bl": "Sarcoma botryoides is embryonal rhabdomyosarcoma, so its small round blue cells in a cambium layer stain for desmin and myogenin.",
+  "ef": "rp12_vaginal",
+  "pt": {
+   "hl": [
+    "Desmin and myogenin"
+   ],
+   "say": "The girl-under-5 row shows sarcoma botryoides, whose small round blue cells and cross-striated rhabdomyoblasts stain for desmin and myogenin, the muscle proteins that separate it from other small round blue cell tumors."
+  }
  },
  {
   "id": "rp12q11",
@@ -815,7 +869,15 @@
     ]
    ]
   ],
-  "bl": "In utero DES exposure causes vaginal adenosis, the precursor of clear cell adenocarcinoma of the vagina in young women."
+  "bl": "In utero DES exposure causes vaginal adenosis, the precursor of clear cell adenocarcinoma of the vagina in young women.",
+  "ef": "rp12_vaginal",
+  "pt": {
+   "hl": [
+    "Vaginal adenosis",
+    "Diethylstilbestrol"
+   ],
+   "say": "The row for diethylstilbestrol exposure in utero shows vaginal adenosis, glandular Müllerian epithelium that persists in the upper vagina and rarely progresses to clear cell adenocarcinoma."
+  }
  },
  {
   "id": "rp12q12",
@@ -887,7 +949,15 @@
     ]
    ]
   ],
-  "bl": "Cauliflower-like genital warts with koilocytes are condyloma acuminatum from low-risk HPV types 6 and 11, which do not progress to cancer."
+  "bl": "Cauliflower-like genital warts with koilocytes are condyloma acuminatum from low-risk HPV types 6 and 11, which do not progress to cancer.",
+  "ef": "rp12_lesions",
+  "pt": {
+   "hl": [
+    "Condyloma",
+    "Low-risk HPV types 6"
+   ],
+   "say": "The condyloma acuminatum row shows soft cauliflower-like warts with koilocytes, caused by low-risk HPV types 6 and 11, which do not become cancer, unlike the high-risk types 16 and 18."
+  }
  },
  {
   "id": "rp12q13",
@@ -959,6 +1029,14 @@
     ]
    ]
   ],
-  "bl": "Erosive vulvovaginal disease that involves the vagina and mouth is lichen planus. Lichen sclerosus spares the vagina."
+  "bl": "Erosive vulvovaginal disease that involves the vagina and mouth is lichen planus. Lichen sclerosus spares the vagina.",
+  "ef": "rp12_lesions",
+  "pt": {
+   "hl": [
+    "Lichen planus",
+    "Raw red vestibular"
+   ],
+   "say": "The lichen planus row shows raw red vestibular patches with lacy white borders that extend into the vagina and the mouth, which fits her sore mouth, vaginal erosions and early adhesions."
+  }
  }
 ]

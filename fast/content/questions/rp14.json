@@ -147,7 +147,14 @@
     ]
    ]
   ],
-  "bl": "Pelvic endometriosis implants are explained mainly by retrograde menstruation, in which shed endometrium flows backward through the tubes and implants on dependent surfaces."
+  "bl": "Pelvic endometriosis implants are explained mainly by retrograde menstruation, in which shed endometrium flows backward through the tubes and implants on dependent surfaces.",
+  "ef": "rp14_endometriosis",
+  "pt": {
+   "hl": [
+    "Retrograde menstruation"
+   ],
+   "say": "Retrograde menstruation sends menstrual blood backward through the tubes onto the pelvis, which is why implants stud the ovary and the pelvic peritoneum, as seen at her laparoscopy."
+  }
  },
  {
   "id": "rp14q03",
@@ -219,7 +226,15 @@
     ]
    ]
   ],
-  "bl": "Leuprolide is a GnRH agonist; continuous stimulation desensitizes the pituitary, lowering FSH, LH and estradiol and atrophying endometriotic implants."
+  "bl": "Leuprolide is a GnRH agonist; continuous stimulation desensitizes the pituitary, lowering FSH, LH and estradiol and atrophying endometriotic implants.",
+  "ef": "rp14_endometriosis",
+  "pt": {
+   "hl": [
+    "Leuprolide (GnRH agonist)",
+    "Desensitizes the pituitary"
+   ],
+   "say": "The leuprolide card shows a GnRH agonist that desensitizes the pituitary, so FSH, LH and estradiol fall; the low estrogen shrinks the implants but causes her hot flashes and vaginal dryness, which limits how long it is given."
+  }
  },
  {
   "id": "rp14q04",
@@ -286,7 +301,15 @@
     ]
    ]
   ],
-  "bl": "Danazol is a partial androgen agonist, so its characteristic adverse effects are acne, hirsutism, voice deepening, weight gain, low HDL and liver injury."
+  "bl": "Danazol is a partial androgen agonist, so its characteristic adverse effects are acne, hirsutism, voice deepening, weight gain, low HDL and liver injury.",
+  "ef": "rp14_endometriosis",
+  "pt": {
+   "hl": [
+    "Danazol",
+    "Acne, hirsutism, voice deepening"
+   ],
+   "say": "The danazol card shows a synthetic androgen that suppresses gonadotropins, so its androgenic adverse effects are acne, hirsutism and voice deepening; it also treats hereditary angioedema."
+  }
  },
  {
   "id": "rp14q05",
@@ -916,6 +939,13 @@
     ]
    ]
   ],
-  "bl": "Postmenopausal bleeding needs endometrial sampling in most women, and the first sampling test is an office endometrial biopsy."
+  "bl": "Postmenopausal bleeding needs endometrial sampling in most women, and the first sampling test is an office endometrial biopsy.",
+  "ef": "rp14_sampling",
+  "pt": {
+   "hl": [
+    "Office biopsy, with ultrasound, for most"
+   ],
+   "say": "In step 2, an office endometrial biopsy, done along with transvaginal ultrasound in most patients, is the first sampling test; hysteroscopy or curettage is kept for an inadequate sample or a focal lesion."
+  }
  }
 ]

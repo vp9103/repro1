@@ -22,6 +22,14 @@
    "Smooth muscle bundles and stroma": "Muscle bundles with stroma describe myometrium or a leiomyoma. Endometriosis has no muscle of its own.",
    "Plasma cells and lymphoid follicles": "Plasma cells in the stroma define chronic endometritis, an inflammation of the lining linked to pelvic infection or an IUD. They are not part of ectopic tissue.",
    "Mucinous epithelium and ovarian stroma": "Mucinous epithelium with ovarian-type stroma is a mucinous cystic tumor of the ovary, not endometrial tissue."
+  },
+  "media": "fig:rp14_endometriosis",
+  "pt": {
+   "hl": [
+    "Endometrial glands and",
+    "stroma outside the uterus"
+   ],
+   "say": "The first card defines endometriosis as endometrial glands and stroma outside the uterus, and biopsy shows both, often with hemosiderin-laden macrophages."
   }
  },
  {
@@ -48,6 +56,14 @@
    "Amenorrhea, galactorrhea and headache": "This points to a prolactinoma. Extra prolactin shuts off GnRH, and the pituitary mass presses on nearby structures. It causes no pelvic pain.",
    "Fever, cervical motion tenderness and discharge": "This is pelvic inflammatory disease, an acute infection from chlamydia or gonorrhea with pus. Endometriosis causes months of cyclic pain.",
    "Heavy periods, pressure and urinary frequency": "This describes leiomyomas, whose bulk presses on the bladder and whose submucosal ones cause bleeding. Endometriosis does not usually enlarge the uterus."
+  },
+  "media": "fig:rp14_endometriosis",
+  "pt": {
+   "hl": [
+    "Dysmenorrhea, dyspareunia",
+    "and dyschezia"
+   ],
+   "say": "The third card lists the pain triad, dysmenorrhea, dyspareunia and dyschezia, together with infertility and a uterus of normal size."
   }
  },
  {
@@ -466,6 +482,13 @@
    "Eosinophil": "Eosinophils suggest an allergic or parasitic process. They do not define chronic endometritis.",
    "Foamy macrophage": "Foamy macrophages collect in lipid storage disorders and some unusual inflammations, not in common chronic endometritis.",
    "Multinucleated giant cell": "Giant cells form granulomas, as in tuberculous endometritis, which is a rare cause. The usual defining cell is the plasma cell."
+  },
+  "media": "fig:rp14_sampling",
+  "pt": {
+   "hl": [
+    "Plasma cells in the stroma"
+   ],
+   "say": "The chronic endometritis card is defined by plasma cells in the stroma, and it follows pelvic inflammatory disease, an IUD, retained tissue or tuberculosis."
   }
  },
  {
@@ -492,6 +515,13 @@
    "Hysterosalpingography": "Hysterosalpingography is a dye study that can show adhesions as filling defects. It does not cause them.",
    "Colposcopy-directed biopsy": "A cervical biopsy samples the cervix. It does not disturb the basalis inside the uterine cavity.",
    "Intrauterine insemination": "Insemination uses a thin catheter to place sperm in the uterus. It does not scrape the lining enough to scar it."
+  },
+  "media": "fig:rp14_sampling",
+  "pt": {
+   "hl": [
+    "Follows uterine curettage or infection"
+   ],
+   "say": "The Asherman syndrome card follows uterine curettage or infection, which scars the basalis so the lining cannot rebuild and the patient has secondary amenorrhea."
   }
  },
  {
@@ -517,6 +547,13 @@
    "Diagnostic laparoscopy": "Laparoscopy views the outside of the uterus, tubes, ovaries and peritoneum, so it is the way to see endometriosis. It cannot see inside the cavity.",
    "Hysterosalpingography": "Hysterosalpingography outlines the cavity and tubes with dye and can hint at polyps or adhesions. It is an imaging study and cannot remove anything.",
    "Transvaginal ultrasonography": "Ultrasonography measures lining thickness and finds masses indirectly. It gives no direct view and no tissue."
+  },
+  "media": "fig:rp14_sampling",
+  "pt": {
+   "hl": [
+    "Hysteroscopy with biopsy"
+   ],
+   "say": "The hysteroscopy card gives a direct view of the cavity with targeted samples or removal, which suits a focal lesion such as a polyp."
   }
  },
  {
@@ -543,6 +580,13 @@
    "Prolactinoma": "Prolactinomas are treated with dopamine agonists such as cabergoline. Danazol does not act on lactotroph tumors.",
    "Hypothyroidism": "Hypothyroidism is treated with levothyroxine. It has no link to androgen therapy or gonadotropin suppression.",
    "Hyperemesis gravidarum": "Hyperemesis gravidarum is treated with fluids and antiemetics. Danazol is not used in pregnancy."
+  },
+  "media": "fig:rp14_endometriosis",
+  "pt": {
+   "hl": [
+    "Also treats hereditary angioedema"
+   ],
+   "say": "The danazol card ends with its second use: besides endometriosis, this synthetic androgen also treats hereditary angioedema."
   }
  }
 ]

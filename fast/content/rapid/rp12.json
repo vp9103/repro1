@@ -183,6 +183,13 @@
    "Beta-glucan synthase": "Echinocandins such as caspofungin block glucan synthesis in the fungal cell wall and are intravenous drugs for invasive candidiasis.",
    "Thymidylate synthase": "Flucytosine's metabolite and 5-fluorouracil inhibit thymidylate synthase, blocking DNA synthesis rather than membrane sterols.",
    "Dihydropteroate synthase": "Sulfonamides block dihydropteroate synthase in bacterial folate synthesis. They have no role against yeast."
+  },
+  "media": "fig:rp12_drugs",
+  "pt": {
+   "hl": [
+    "lanosterol 14-alpha-demethylase"
+   ],
+   "say": "The fluconazole column names its target: lanosterol 14-alpha-demethylase, a fungal cytochrome P450 enzyme that the yeast needs to make ergosterol."
   }
  },
  {
@@ -211,6 +218,14 @@
    "Gartner duct": "A Gartner duct cyst is a mesonephric remnant in the lateral vaginal wall, usually painless and discovered incidentally.",
    "Sebaceous gland": "Sebaceous cysts are small, firm, superficial nodules of hair-bearing labial skin, not large fluctuant introital abscesses.",
    "Apocrine sweat gland": "Apocrine glands of the groin and mons lie in hair-bearing skin. They do not open at the vaginal introitus."
+  },
+  "media": "fig:rp12_wall",
+  "pt": {
+   "hl": [
+    "Bartholin glands",
+    "Blocked: cyst, then abscess"
+   ],
+   "say": "The Bartholin gland, drawn in the vestibular glands panel with ducts at 4 and 8 o'clock, forms a painful abscess in the posterolateral vestibule when a blocked duct becomes infected."
   }
  },
  {
@@ -270,6 +285,14 @@
    "Lichen simplex chronicus": "Scratch-induced thickening of skin stays where the patient scratches and never reaches the vaginal mucosa.",
    "Vulvar psoriasis": "Psoriasis favors hair-bearing skin, scalp and extensor surfaces and does not erode the vaginal walls.",
    "Contact dermatitis": "Irritant or allergic dermatitis follows exposure to soaps, pads or creams and clears when the trigger is removed."
+  },
+  "media": "fig:rp12_lesions",
+  "pt": {
+   "hl": [
+    "Lichen planus",
+    "Extends into the vagina"
+   ],
+   "say": "The lichen planus row says it extends into the vagina and the mouth, unlike lichen sclerosus, which spares the vagina."
   }
  },
  {
@@ -395,6 +418,14 @@
    "Yolk sac tumor": "Yolk sac tumor of the infant vagina secretes AFP and forms Schiller-Duval bodies rather than a cambium layer.",
    "Neuroblastoma": "Neuroblastoma is an adrenal or sympathetic chain tumor with Homer-Wright rosettes and catecholamine metabolites in urine.",
    "Leiomyosarcoma": "Leiomyosarcoma is a spindle-cell smooth muscle malignancy of older adults, usually uterine, with necrosis and many mitoses."
+  },
+  "media": "fig:rp12_vaginal",
+  "pt": {
+   "hl": [
+    "Sarcoma botryoides",
+    "Small round blue cells"
+   ],
+   "say": "The girl-under-5 row shows sarcoma botryoides, with small round blue cells in a dense cambium layer under intact epithelium and a grape-like, bleeding vaginal mass."
   }
  },
  {
@@ -420,6 +451,13 @@
    "Isotretinoin": "Isotretinoin causes craniofacial, cardiac and central nervous system malformations and requires strict pregnancy prevention.",
    "Valproic acid": "Valproate taken in the first trimester causes neural tube defects such as spina bifida, not glandular changes in the vagina.",
    "Mycophenolate mofetil": "Mycophenolate causes pregnancy loss and ear, facial and cardiac malformations. It is not linked to vaginal adenosis or cancer."
+  },
+  "media": "fig:rp12_vaginal",
+  "pt": {
+   "hl": [
+    "Diethylstilbestrol"
+   ],
+   "say": "The second row starts with diethylstilbestrol (DES) exposure in utero, which leaves vaginal adenosis that can rarely progress to clear cell adenocarcinoma."
   }
  },
  {
@@ -445,6 +483,14 @@
    "Skene duct cyst": "These cysts lie beside the urethral meatus and come from paraurethral glands, the female homolog of the prostate.",
    "Nabothian cyst": "Nabothian cysts are mucus-filled endocervical glands trapped by squamous metaplasia on the cervix.",
    "Epidermal inclusion cyst": "Inclusion cysts form where surface epithelium is buried, often at an episiotomy or laceration scar."
+  },
+  "media": "fig:rp12_wall",
+  "pt": {
+   "hl": [
+    "Gartner duct cyst",
+    "Lateral vaginal wall"
+   ],
+   "say": "The Gartner duct cyst sits on the lateral vaginal wall, higher than the introitus, because it is a leftover piece of the mesonephric duct."
   }
  }
 ]
