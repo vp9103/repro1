@@ -59,29 +59,41 @@ def collect(prefer: dict[str, str], skip: set[str] = frozenset()):
 
 
 def apply_placements(content: Path, ws_dirs: list[Path]) -> list[str]:
-    """Insert-only image placement: each workspace may list content/placements.json entries
-    {"img": key, "after": [rowtype, text-prefix]}; ["img", key] goes right after the first body row of the image's
-    own topic whose type matches and whose first argument starts with the prefix. Returns problems."""
+    """Insert-only image and memory-scene placement: each workspace may list content/placements.json entries
+    {"img": key, "after": [rowtype, text-prefix]} or {"palace": key, "after": [...]}; ["img"|"palace", key] goes right
+    after the first body row of the item's own topic whose type matches and whose first text (a call's label, a
+    table's header cells joined by spaces) starts with the prefix. Returns problems."""
     probs = []
     for ws in ws_dirs:
         pf = ws / "content" / "placements.json"
         if not pf.is_file():
             continue
         for pl in json.loads(pf.read_text(encoding="utf-8")):
-            key, after = pl.get("img", ""), pl.get("after") or []
-            tid = key.split("_")[0]
+            kind = "palace" if pl.get("palace") else "img"
+            key, after = pl.get(kind, ""), pl.get("after") or []
+            tid = key.split("_")[1] if kind == "palace" else key.split("_")[0]
             tf = content / "topics" / f"{tid}.json"
-            if not tf.is_file() or not (content / "images" / f"{key}.json").is_file() or len(after) != 2:
-                probs.append(f"{ws.name}: placement {key}: topic, image or 'after' missing"); continue
+            src = content / ("palace" if kind == "palace" else "images") / f"{key}.json"
+            if not tf.is_file() or not src.is_file() or len(after) != 2:
+                probs.append(f"{ws.name}: placement {key}: topic, {kind} file or 'after' missing"); continue
             t = json.loads(tf.read_text(encoding="utf-8"))
             body = t.get("body") or []
-            if any(isinstance(b, list) and b[:2] == ["img", key] for b in body):
+            if any(isinstance(b, list) and b[:2] == [kind, key] for b in body):
                 continue
+
+            def first_text(b):
+                if b[0] == "call" and len(b) > 2:
+                    return b[2] if isinstance(b[2], str) else ""
+                if isinstance(b[1], str):
+                    return b[1]
+                if b[0] == "t" and isinstance(b[1], list):
+                    return " ".join(str(c) for c in b[1])
+                return ""
             ix = next((i for i, b in enumerate(body) if isinstance(b, list) and len(b) > 1 and b[0] == after[0]
-                       and isinstance(b[1], str) and b[1].startswith(after[1])), None)
+                       and first_text(b).startswith(after[1])), None)
             if ix is None:
                 probs.append(f"{ws.name}: placement {key}: no row {after} in {tid}"); continue
-            body.insert(ix + 1, ["img", key])
+            body.insert(ix + 1, [kind, key])
             t["body"] = body
             tf.write_text(json.dumps(t, indent=1, ensure_ascii=False), encoding="utf-8")
     return probs
