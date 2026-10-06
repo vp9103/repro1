@@ -92,7 +92,7 @@
    "Metronidazole"
   ],
   "a": 0,
-  "x": "Doxycycline for 7 days is the preferred treatment for genital chlamydia. It blocks the bacterial 30S ribosome of this obligate intracellular organism, so it reaches the bacteria inside the host cell.",
+  "x": "Doxycycline for 7 days is the preferred treatment for genital chlamydia. It enters host cells, where this obligate intracellular organism lives, and blocks its 30S ribosome.",
   "w": {
    "Azithromycin": "Azithromycin also works against chlamydia and is used in pregnancy, when doxycycline is avoided. In a nonpregnant adult, doxycycline is preferred.",
    "Ceftriaxone": "Ceftriaxone treats gonorrhea. Beta-lactams do not work against chlamydia, whose wall contains almost no peptidoglycan.",
@@ -109,7 +109,7 @@
    "BP-rp16-03",
    "BP-rp16-15"
   ],
-  "q": "Which drug treats uncomplicated gonorrhea?",
+  "q": "Which drug is the recommended treatment for uncomplicated gonorrhea?",
   "o": [
    "Ceftriaxone",
    "Azithromycin",
@@ -405,7 +405,7 @@
    "Gardnerella vaginalis"
   ],
   "a": 0,
-  "x": "Mycoplasma genitalium has no cell wall at all, so beta-lactams cannot work against it. Think of it when nongonococcal urethritis persists after doxycycline.",
+  "x": "Mycoplasma genitalium has no cell wall at all, so beta-lactams cannot work against it, and doxycycline often fails to clear it. So think of it when nongonococcal urethritis persists after doxycycline.",
   "w": {
    "Ureaplasma urealyticum": "Ureaplasma also lacks a cell wall and is a minor cause of nongonococcal urethritis. It usually responds to doxycycline, so it rarely explains persistence.",
    "Trichomonas vaginalis": "Trichomonas can cause urethritis in men, but it is a flagellated protozoan treated with metronidazole. It is not the classic cause of doxycycline failure.",

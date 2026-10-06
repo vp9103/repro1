@@ -390,7 +390,7 @@
   "o": [
    "Scheduled cesarean at 38 weeks with IV zidovudine",
    "Induction of labor with early rupture of membranes",
-   "Vaginal delivery after prolonged rupture of membranes",
+   "Vaginal delivery with IV zidovudine during labor",
    "Stopping antiretrovirals to limit infant drug exposure",
    "Vaginal delivery followed by breastfeeding"
   ],
@@ -398,7 +398,7 @@
   "e": "Most perinatal transmission happens during labor and delivery, and the risk rises with the mother's viral load. When the viral load is high near delivery, a **scheduled cesarean** at about 38 weeks, before labor and rupture of membranes, lowers the baby's exposure to maternal blood and secretions. Intravenous zidovudine in labor gives the baby drug that crosses the placenta, and the newborn also receives zidovudine after birth. Early rupture of membranes or a long labor increases exposure. Stopping antiretrovirals would let the viral load rise. Breastfeeding adds transmission after birth, so US guidance advises formula.",
   "w": {
    "Induction of labor with early rupture of membranes": "Ruptured membranes lengthen the baby's exposure to maternal secretions, and labor is when most transmission happens if the viral load is detectable.",
-   "Vaginal delivery after prolonged rupture of membranes": "Long rupture of membranes lengthens the baby's exposure to maternal secretions. It adds risk when the mother is viremic.",
+   "Vaginal delivery with IV zidovudine during labor": "Intravenous zidovudine in labor helps, but with a high viral load labor and vaginal birth still expose the baby to maternal blood and secretions. Vaginal delivery is planned only when the viral load is suppressed.",
    "Stopping antiretrovirals to limit infant drug exposure": "Stopping therapy lets the viral load climb and raises transmission risk. Antiretrovirals continue throughout pregnancy and delivery.",
    "Vaginal delivery followed by breastfeeding": "Breastfeeding transmits HIV, especially when the mother's virus is not suppressed, so US guidance advises formula. Vaginal birth is planned only when the viral load is suppressed."
   },
@@ -423,9 +423,9 @@
      "None added"
     ],
     [
-     "Vaginal delivery after prolonged rupture of membranes",
-     "Increased by long rupture",
-     "Unchanged",
+     "Vaginal delivery with IV zidovudine during labor",
+     "Still exposed in labor and birth",
+     "Unchanged; zidovudine reaches the fetus",
      "None added"
     ],
     [
@@ -838,11 +838,11 @@
    "Positive HLA-B27 genotype"
   ],
   "a": 0,
-  "e": "Umbilicated pearly papules with large eosinophilic cytoplasmic inclusions (molluscum or Henderson-Patterson bodies) are **molluscum contagiosum**, a poxvirus infection. In healthy adults it causes a few genital papules that clear within months. Dozens of large lesions on the face, with weight loss, diarrhea and oral thrush, point to advanced HIV infection. Widespread molluscum typically appears when the CD4 count has fallen below 200 cells/mm³. A heterophile test diagnoses infectious mononucleosis. A high-titer RPR suggests secondary syphilis, whose condylomata lata are flat and moist. A very high IgE suggests hyper-IgE syndrome.",
+  "e": "Umbilicated pearly papules with large eosinophilic cytoplasmic inclusions (molluscum or Henderson-Paterson bodies) are **molluscum contagiosum**, a poxvirus infection. In healthy adults it causes a few genital papules that clear within months. Dozens of large lesions on the face, with weight loss, diarrhea and oral thrush, point to advanced HIV infection. Widespread molluscum typically appears when the CD4 count has fallen below 200 cells/mm³. A heterophile test diagnoses infectious mononucleosis. A high-titer RPR suggests secondary syphilis, whose condylomata lata are flat and moist. A very high IgE suggests hyper-IgE syndrome.",
   "w": {
    "Positive heterophile antibody test": "A heterophile test diagnoses Epstein-Barr mononucleosis, with fever, sore throat and a large spleen. It does not explain spreading umbilicated papules with molluscum bodies.",
    "Reactive RPR at a high titer": "Secondary syphilis causes a high-titer RPR with a palms-and-soles rash and moist, flat condylomata lata, not firm pearly papules with central umbilication.",
-   "Serum IgE above 2,000 IU/mL": "A very high IgE marks hyper-IgE syndrome, with eczema, cold staphylococcal abscesses and retained primary teeth. It does not cause extensive poxvirus skin infection in an adult.",
+   "Serum IgE above 2,000 IU/mL": "A very high IgE marks hyper-IgE (Job) syndrome, with eczema, cold staphylococcal abscesses and retained primary teeth. It would not explain weight loss and diarrhea in a previously healthy adult.",
    "Positive HLA-B27 genotype": "HLA-B27 is linked to reactive arthritis and ankylosing spondylitis. It does not make people susceptible to viral skin infections such as molluscum."
   },
   "et": [

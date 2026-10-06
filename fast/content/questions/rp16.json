@@ -94,7 +94,7 @@
   "a": 0,
   "e": "This is gonococcal urethritis. *Neisseria gonorrhoeae* keeps changing the antigens of its pili, the structures it uses to attach to epithelium. Antibodies made during the first infection do not recognize the new pili, so reinfection is common and no vaccine exists. IgA protease and lipooligosaccharide are real gonococcal virulence factors, but they help it survive on mucosa and cause inflammation. They do not explain the failed immunity. The gonococcus has no polysaccharide capsule, unlike the meningococcus, and it grows on agar, unlike obligate intracellular chlamydia.",
   "w": {
-   "A polysaccharide capsule": "The meningococcus, not the gonococcus, has a polysaccharide capsule. That is why meningococcal vaccines exist and gonococcal vaccines do not.",
+   "A polysaccharide capsule": "The meningococcus, not the gonococcus, has a polysaccharide capsule, and meningococcal vaccines are built on it. The gonococcus has no capsule, and it has no vaccine because its pili keep changing.",
    "IgA protease secretion": "IgA protease cuts secretory IgA on the mucosa and helps the bacteria colonize. It does not change the surface antigens that memory cells recognize after recovery.",
    "Lipooligosaccharide endotoxin": "Lipooligosaccharide causes the strong neutrophil response and the pus. An unchanged molecule would still be recognized by antibody in a second infection.",
    "Obligate intracellular growth": "Obligate intracellular growth describes chlamydia, which cannot make ATP. This organism grows on Thayer-Martin agar, so it is not confined to host cells."
@@ -307,18 +307,18 @@
   "l": "Which regimen is most appropriate?",
   "o": [
    "Ceftriaxone, doxycycline and metronidazole",
-   "Azithromycin and metronidazole without a cephalosporin",
-   "Ceftriaxone alone, with no oral antibiotics",
-   "Doxycycline alone, with no cephalosporin",
-   "Metronidazole alone, which covers only anaerobes"
+   "Azithromycin and oral metronidazole",
+   "Ceftriaxone alone",
+   "Doxycycline alone",
+   "Metronidazole alone"
   ],
   "a": 0,
   "e": "This is outpatient pelvic inflammatory disease, an infection of the upper genital tract that gonorrhea or chlamydia start and anaerobes join. The regimen has to cover all three: **ceftriaxone** for the gonococcus, doxycycline for chlamydia and metronidazole for the anaerobes. Treatment starts on clinical grounds because delay scars the tubes. Ceftriaxone alone leaves chlamydia and anaerobes untreated. Doxycycline alone misses the gonococcus, and metronidazole alone treats only anaerobes. Azithromycin with metronidazole leaves out the cephalosporin that the gonococcus needs.",
   "w": {
-   "Azithromycin and metronidazole without a cephalosporin": "Without ceftriaxone the gonococcus is not reliably covered. Metronidazole only adds cover for the anaerobes.",
-   "Ceftriaxone alone, with no oral antibiotics": "Ceftriaxone treats gonorrhea, but pelvic infection also involves chlamydia and anaerobes. They need doxycycline and metronidazole.",
-   "Doxycycline alone, with no cephalosporin": "Doxycycline covers chlamydia, but gonococci resist tetracyclines. It also leaves out the anaerobes that join the infection.",
-   "Metronidazole alone, which covers only anaerobes": "Metronidazole treats anaerobes, trichomonas and bacterial vaginosis. Alone it leaves the gonococcus and chlamydia that started the infection untouched."
+   "Azithromycin and oral metronidazole": "Without ceftriaxone the gonococcus is not reliably covered. Metronidazole only adds cover for the anaerobes.",
+   "Ceftriaxone alone": "Ceftriaxone treats gonorrhea, but pelvic infection also involves chlamydia and anaerobes. They need doxycycline and metronidazole.",
+   "Doxycycline alone": "Doxycycline covers chlamydia, but gonococci resist tetracyclines. It also leaves out the anaerobes that join the infection.",
+   "Metronidazole alone": "Metronidazole treats anaerobes, trichomonas and bacterial vaginosis. Alone it leaves the gonococcus and chlamydia that started the infection untouched."
   },
   "et": [
    [
@@ -335,25 +335,25 @@
      "Covered by metronidazole"
     ],
     [
-     "Azithromycin and metronidazole without a cephalosporin",
+     "Azithromycin and oral metronidazole",
      "Not reliably covered",
      "Covered by azithromycin",
      "Covered by metronidazole"
     ],
     [
-     "Ceftriaxone alone, with no oral antibiotics",
+     "Ceftriaxone alone",
      "Covered",
      "Not covered",
      "Not covered"
     ],
     [
-     "Doxycycline alone, with no cephalosporin",
+     "Doxycycline alone",
      "Not covered",
      "Covered",
      "Not covered"
     ],
     [
-     "Metronidazole alone, which covers only anaerobes",
+     "Metronidazole alone",
      "Not covered",
      "Not covered",
      "Covered"
@@ -546,7 +546,7 @@
    "Prozone effect from high titer"
   ],
   "a": 0,
-  "e": "The RPR detects antibody against **cardiolipin**, a phospholipid, so the antiphospholipid antibodies of lupus can react in the test and cause a biologic false positive, usually at a low titer. Her miscarriages and blood clot suggest antiphospholipid syndrome. The negative treponemal test settles it, because TP-PA detects antibody against the organism itself and is positive in true syphilis at any stage after the first days. Treated syphilis gives the opposite pattern, and late latent syphilis would also have a reactive treponemal test. The prozone effect causes a falsely negative RPR, not a false positive.",
+  "e": "The RPR detects antibody against **cardiolipin**, a phospholipid, so the antiphospholipid antibodies of lupus can react in the test and cause a biologic false positive, usually at a low titer. Her miscarriages and blood clot suggest antiphospholipid syndrome. The negative treponemal test settles it, because TP-PA detects antibody against the organism itself and is positive in true syphilis at every stage once antibody has formed, a few weeks after infection. Treated syphilis gives the opposite pattern, and late latent syphilis would also have a reactive treponemal test. The prozone effect causes a falsely negative RPR, not a false positive.",
   "w": {
    "Early primary syphilis": "In very early primary syphilis both tests can still be negative, but a treponemal test turns positive no later than the RPR. She also has no chancre.",
    "Syphilis treated in the past": "Treated syphilis leaves a treponemal test that stays positive for life, while the RPR falls. Her result is the reverse: a reactive RPR and a negative TP-PA.",
@@ -786,7 +786,7 @@
     [
      "Its cell wall has little peptidoglycan",
      "No target for the drug",
-     "Chlamydia, Mycoplasma",
+     "Chlamydia (Mycoplasma has no wall at all)",
      "No"
     ],
     [

@@ -23,12 +23,12 @@
    "Testosterone high, LH high, FSH high"
   ],
   "a": 3,
-  "e": "Tall stature, gynecomastia, small firm testes and azoospermia suggest Klinefelter syndrome (47,XXY), a cause of **primary hypogonadism**. The failing testis cannot make enough testosterone or inhibin B, so negative feedback is lost and both LH and FSH rise. High testosterone with low gonadotropins describes exogenous androgen use. Low values of all three suggest a pituitary or hypothalamic cause. An isolated high FSH with normal testosterone fits selective tubular damage, and high values of all three fit androgen insensitivity.",
+  "e": "Tall stature, gynecomastia, small firm testes and azoospermia suggest Klinefelter syndrome (47,XXY), a cause of **primary hypogonadism**. The failing testis cannot make enough testosterone or inhibin B, so negative feedback is lost and both LH and FSH rise. High testosterone with low gonadotropins describes exogenous androgen use. Low values of all three suggest a pituitary or hypothalamic cause. An isolated high FSH with normal testosterone fits selective tubular damage, and high testosterone with a high LH fits androgen insensitivity.",
   "w": {
    "Testosterone high, LH low, FSH low": "Injected androgens raise serum testosterone and shut off LH and FSH by feedback; this fits steroid use, not a chromosomal disorder with tall stature and long arms.",
    "Testosterone low, LH low, FSH low": "Low testosterone with low LH and FSH is secondary hypogonadism, as in Kallmann syndrome or prolactinoma; the pituitary there is silent instead of driving a failing testis.",
    "Testosterone normal, LH normal, FSH high": "A high FSH alone, with normal LH and testosterone, reflects selective seminiferous tubule damage through loss of inhibin B; this man also has low libido and gynecomastia from Leydig dysfunction.",
-   "Testosterone high, LH high, FSH high": "High testosterone with high LH and FSH is the androgen insensitivity pattern, in which receptor resistance blocks feedback; such patients are undervirilized rather than tall with small firm testes."
+   "Testosterone high, LH high, FSH high": "High testosterone with a high LH is the androgen insensitivity pattern, in which receptor resistance blocks feedback, and FSH is usually normal there. Such patients are undervirilized rather than tall with small firm testes."
   },
   "et": [
    [
@@ -64,7 +64,7 @@
     ],
     [
      "Testosterone high, LH high, FSH high",
-     "Androgen insensitivity",
+     "Androgen insensitivity (FSH usually normal)",
      "Androgen receptor",
      "Complete androgen insensitivity syndrome"
     ]
@@ -172,7 +172,7 @@
   "obj": [
    "PATHPHARM-MALE.9"
   ],
-  "s": "A 33-year-old man has 18 months of infertility. Semen analysis shows azoospermia. He lifts weights daily and receives monthly injections from a men's clinic. Examination shows acne, mild gynecomastia and small testes of 10 mL each. Hematocrit is 54%. He has no history of undescended testes or mumps.",
+  "s": "A 33-year-old man has 18 months of infertility. Semen analysis shows azoospermia. He lifts weights daily and receives monthly testosterone injections from a men's clinic. Examination shows acne, mild gynecomastia and small testes of 10 mL each. Hematocrit is 54%. He has no history of undescended testes or mumps.",
   "l": "Which set of serum findings is most likely?",
   "o": [
    "Testosterone low, LH high, FSH high",
@@ -187,7 +187,7 @@
    "Testosterone low, LH high, FSH high": "This is the primary hypogonadism pattern from a failing testis; here the testes shrank because the pituitary was switched off by an outside androgen, so LH and FSH are low, not high.",
    "Testosterone low, LH low, FSH low": "Low values of all three suggest a central cause such as a pituitary tumor; this man's serum testosterone is boosted by the injections he takes.",
    "Testosterone normal, LH normal, FSH high": "A normal testosterone and LH with only a high FSH implies selective tubular damage; it would not explain the polycythemia, acne and the injections.",
-   "Testosterone high, LH high, FSH high": "High levels of all three describe androgen resistance, in which feedback fails at the receptor; an injected androgen instead suppresses LH and FSH."
+   "Testosterone high, LH high, FSH high": "High testosterone with a high LH describes androgen resistance, in which feedback fails at the receptor, and FSH is usually normal there. An injected androgen instead suppresses LH and FSH."
   },
   "et": [
    [
@@ -223,7 +223,7 @@
     ],
     [
      "Testosterone high, LH high, FSH high",
-     "Androgen insensitivity",
+     "Androgen insensitivity (FSH usually normal)",
      "Receptor resistance",
      "Normal virilization"
     ]
@@ -725,7 +725,7 @@
   "obj": [
    "PATHPHARM-MALE.8"
   ],
-  "s": "A 57-year-old man with diabetes and erectile dysfunction has had no response to maximum-dose sildenafil taken correctly on an empty stomach with sexual stimulation on several occasions. He has no cardiac disease and takes no nitrates. Evaluation shows a venous leak.",
+  "s": "A 57-year-old man with long-standing diabetes and erectile dysfunction has had no response to maximum-dose sildenafil taken correctly on an empty stomach with sexual stimulation on several occasions. He has no cardiac disease and takes no nitrates. His serum testosterone is normal.",
   "l": "Which treatment is most appropriate next?",
   "o": [
    "Switching to tadalafil",
@@ -735,18 +735,18 @@
    "Adding a sublingual nitrate before intercourse"
   ],
   "a": 1,
-  "e": "Venous leak means a scarred tunica cannot squeeze the veins shut, so blood drains out and the erection fails. Sildenafil only amplifies nitric oxide signaling, so it cannot fix this at any dose, and tadalafil or vardenafil, which work the same way, would fail too. **Intracavernosal alprostadil**, a PGE1 analog, raises cAMP through a different pathway and relaxes the smooth muscle directly. Its risks are penile pain, fibrosis and priapism. Testosterone helps only men with low levels, and adding a nitrate to a PDE5 inhibitor would be dangerous.",
+  "e": "Diabetes damages the cavernosal nerves and endothelium, so little nitric oxide is released during sexual stimulation. Sildenafil only slows the breakdown of cGMP, so it cannot work at any dose when too little nitric oxide is made, and tadalafil or vardenafil, which work the same way, would fail too. **Intracavernosal alprostadil**, a PGE1 analog, raises cAMP through a different pathway and relaxes the cavernosal smooth muscle directly, without needing nitric oxide. Its risks are penile pain, fibrosis and priapism. Testosterone helps only men with low levels, and adding a nitrate to a PDE5 inhibitor would be dangerous.",
   "w": {
-   "Switching to tadalafil": "Tadalafil acts by the same PDE5 mechanism, so it cannot overcome venous leak; its longer half-life changes timing, not the underlying defect.",
-   "Switching to vardenafil": "Vardenafil is another PDE5 inhibitor and shares the same dependence on intact veno-occlusion, so it would fail too.",
-   "Oral testosterone therapy": "Testosterone improves libido and erections only in men with documented deficiency, and none has been shown here.",
-   "Adding a sublingual nitrate before intercourse": "Nitrates are contraindicated with PDE5 inhibitors and cause severe hypotension, and adding one would not repair a venous leak."
+   "Switching to tadalafil": "Tadalafil acts by the same PDE5 mechanism, so it also depends on nitric oxide release and fails when sildenafil has failed; its longer half-life changes timing, not the defect.",
+   "Switching to vardenafil": "Vardenafil is another PDE5 inhibitor and shares the same dependence on nitric oxide release, so it would fail too.",
+   "Oral testosterone therapy": "Testosterone improves libido and erections only in men with documented deficiency, and his testosterone is normal.",
+   "Adding a sublingual nitrate before intercourse": "Nitrates are contraindicated with PDE5 inhibitors and cause severe hypotension, and they are not a treatment for erectile dysfunction."
   },
   "et": [
    [
     "Option",
     "Mechanism",
-    "Works with venous leak",
+    "Works without nitric oxide release",
     "Key risk"
    ],
    [
@@ -759,7 +759,7 @@
     [
      "Intracavernosal alprostadil",
      "PGE1 analog, raises cAMP",
-     "Yes, by a different pathway",
+     "Yes, raises cAMP directly",
      "Penile pain, fibrosis, priapism"
     ],
     [
@@ -771,18 +771,18 @@
     [
      "Oral testosterone therapy",
      "Androgen replacement",
-     "No, unless deficient",
+     "Not unless testosterone is low",
      "Polycythemia, infertility"
     ],
     [
      "Adding a sublingual nitrate before intercourse",
      "Nitric oxide donor",
-     "No",
+     "Not an erection treatment",
      "Profound hypotension"
     ]
    ]
   ],
-  "bl": "When PDE5 inhibitors fail because of venous leak, intracavernosal alprostadil raises cAMP by a parallel pathway.",
+  "bl": "When PDE5 inhibitors fail, intracavernosal alprostadil raises cAMP by a pathway that does not need nitric oxide.",
   "ef": "rp22_erection",
   "pt": {
    "hl": [

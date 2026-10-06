@@ -745,7 +745,7 @@
     ],
     [
      "Fat deposition without glandular proliferation",
-     "Pseudogynecomastia",
+     "Fatty enlargement without glands",
      "Soft fat, no disc",
      "No link"
     ],
@@ -778,15 +778,15 @@
    "Anaplastic large cell lymphoma",
    "Capsular contracture",
    "Silicone granuloma",
-   "Fat necrosis",
+   "Diffuse large B-cell lymphoma",
    "Invasive lobular carcinoma"
   ],
   "a": 0,
-  "e": "A late fluid collection around a textured implant, with large pleomorphic cells that are CD30-positive and ALK-negative, is **breast implant-associated anaplastic large cell lymphoma**. It is a T-cell lymphoma that grows in the fluid around the implant, and it usually appears years after placement. Capsular contracture hardens and distorts the breast but does not produce a fluid collection of lymphoma cells. Silicone granuloma follows rupture, and this implant is intact. Fat necrosis is a firm, calcified mass after injury, and lobular carcinoma is an epithelial cancer.",
+  "e": "A late fluid collection around a textured implant, with large pleomorphic cells that are CD30-positive and ALK-negative, is **breast implant-associated anaplastic large cell lymphoma**. It is a T-cell lymphoma that grows in the fluid around the implant, and it usually appears years after placement. Capsular contracture hardens and distorts the breast but does not produce a fluid collection of lymphoma cells. Silicone granuloma follows rupture, and this implant is intact. Diffuse large B-cell lymphoma carries B-cell markers such as CD20, and lobular carcinoma is an epithelial cancer.",
   "w": {
    "Capsular contracture": "The fibrous capsule tightens and hardens the breast, causing pain and distortion, but it does not produce an effusion full of atypical lymphoid cells.",
    "Silicone granuloma": "Leaked silicone after rupture provokes a foreign-body giant cell reaction that forms firm nodules; her implant is intact and the fluid holds lymphoma cells.",
-   "Fat necrosis": "Fat necrosis is a firm, calcified mass after injury or surgery, with foamy macrophages; it is not a fluid collection full of atypical lymphoid cells.",
+   "Diffuse large B-cell lymphoma": "Primary breast lymphoma of B-cell type forms a solid lump and carries B-cell markers such as CD20, not a seroma of CD30-positive T cells.",
    "Invasive lobular carcinoma": "Lobular carcinoma is an epithelial cancer of single-file, E-cadherin-negative cells within breast tissue, not lymphoid cells floating in periprosthetic fluid."
   },
   "et": [
@@ -816,10 +816,10 @@
      "Follows silicone leak"
     ],
     [
-     "Fat necrosis",
-     "Dead fat cells, foamy macrophages, calcium soaps",
-     "Firm, calcified mass after injury or surgery",
-     "Not an implant-specific problem"
+     "Diffuse large B-cell lymphoma",
+     "CD20-positive B cells",
+     "Solid breast mass",
+     "No implant link"
     ],
     [
      "Invasive lobular carcinoma",

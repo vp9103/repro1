@@ -571,15 +571,15 @@
    "IV penicillin G during labor",
    "Repeat the culture and treat only if it is positive again",
    "Give oral amoxicillin to clear colonization before delivery",
-   "No treatment, because the baby will be born at term",
+   "IV penicillin G only if fever develops in labor",
    "Give intramuscular ceftriaxone to the newborn after birth"
   ],
   "a": 0,
-  "e": "A positive rectovaginal group B strep culture means she carries the organism and can pass it to the baby during delivery, which can cause early-onset sepsis, pneumonia or meningitis. A carrier in labor receives **intrapartum antibiotic prophylaxis**: IV penicillin G, or ampicillin, given at least 4 hours before birth so that it reaches fetal blood and amniotic fluid. Oral amoxicillin before labor does not clear carriage, because the rectum recolonizes the vagina. Repeating the culture only delays treatment, and a term birth does not protect the baby. Ceftriaxone to the newborn after birth comes too late to prevent disease acquired in labor.",
+  "e": "A positive rectovaginal group B strep culture means she carries the organism and can pass it to the baby during delivery, which can cause early-onset sepsis, pneumonia or meningitis. A carrier in labor receives **intrapartum antibiotic prophylaxis**: IV penicillin G, or ampicillin, given at least 4 hours before birth so that it reaches fetal blood and amniotic fluid. Oral amoxicillin before labor does not clear carriage, because the rectum recolonizes the vagina. Repeating the culture only delays treatment, and a known carrier is treated whether or not she has a fever. Ceftriaxone to the newborn after birth comes too late to prevent disease acquired in labor.",
   "w": {
    "Repeat the culture and treat only if it is positive again": "Carriage comes and goes, but she is already known to be a carrier near term. Waiting for another result leaves the newborn unprotected in labor.",
    "Give oral amoxicillin to clear colonization before delivery": "Oral antibiotics before labor do not prevent early-onset disease, because the gut reservoir recolonizes the vagina within weeks.",
-   "No treatment, because the baby will be born at term": "Group B strep disease occurs in term babies too. Early-onset disease comes from exposure in labor, so carriers are treated whatever the gestational age.",
+   "IV penicillin G only if fever develops in labor": "Fever in labor points to intra-amniotic infection, which needs broader treatment. A known carrier gets penicillin in labor whether or not she has a fever, because the newborn meets the organism during every vaginal birth.",
    "Give intramuscular ceftriaxone to the newborn after birth": "Early-onset group B strep disease can begin within hours of birth from exposure during labor. Prevention must reach the baby beforehand through maternal IV penicillin."
   },
   "et": [
@@ -609,10 +609,10 @@
      "Carriage returns from the rectum"
     ],
     [
-     "No treatment, because the baby will be born at term",
-     "None",
-     "No",
-     "Term babies are infected too"
+     "IV penicillin G only if fever develops in labor",
+     "Only after fever appears",
+     "No, misses afebrile carriers",
+     "Most carriers have no fever"
     ],
     [
      "Give intramuscular ceftriaxone to the newborn after birth",
@@ -907,7 +907,7 @@
      "Varicella-zoster immune globulin",
      "Passive antibody",
      "Yes",
-     "Yes, within 10 days"
+     "Yes, given soon after exposure"
     ],
     [
      "Live attenuated varicella vaccine",

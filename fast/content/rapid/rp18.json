@@ -420,21 +420,21 @@
    "BP-rp18-02",
    "BP-rp18-16"
   ],
-  "q": "Which late sign of congenital syphilis bows the tibia forward?",
+  "q": "Saber shins, forward bowing of the tibia from periostitis, are a late sign of which congenital infection?",
   "o": [
-   "Saber shins",
-   "Rickets bowing",
-   "Blount disease",
-   "Osteogenesis imperfecta",
-   "Genu valgum"
+   "Syphilis",
+   "Rubella",
+   "Cytomegalovirus",
+   "Toxoplasma",
+   "Parvovirus B19"
   ],
   "a": 0,
-  "x": "Saber shins are forward bowing of the tibia from chronic periostitis in late congenital syphilis. They join Hutchinson teeth, mulberry molars and saddle nose as late signs.",
+  "x": "Saber shins come from chronic periostitis of the tibia in late congenital syphilis, after Treponema pallidum crosses the placenta. They join Hutchinson teeth, mulberry molars, saddle nose and interstitial keratitis as late signs.",
   "w": {
-   "Rickets bowing": "Rickets bows the legs outward from soft, poorly mineralized bone in vitamin D deficiency, with widened growth plates rather than periostitis.",
-   "Blount disease": "Blount disease is inward tibial bowing from abnormal growth at the inner upper tibia, often in heavy toddlers who walk early.",
-   "Osteogenesis imperfecta": "Osteogenesis imperfecta bows long bones through repeated fractures from defective type I collagen, often with blue sclerae.",
-   "Genu valgum": "Genu valgum is knock-knee alignment, a normal stage in young children, not a periosteal reaction to infection."
+   "Rubella": "Congenital rubella causes cataracts, sensorineural deafness, a patent ductus arteriosus and a blueberry-muffin rash, not periostitis of the long bones.",
+   "Cytomegalovirus": "Congenital CMV causes periventricular calcifications, microcephaly and hearing loss. It does not inflame the periosteum or bow the tibia.",
+   "Toxoplasma": "Congenital toxoplasmosis causes chorioretinitis, hydrocephalus and diffuse intracranial calcifications, not bone deformities.",
+   "Parvovirus B19": "Fetal parvovirus infection destroys red cell precursors and causes anemia and hydrops. It leaves no late bone signs."
   },
   "media": "fig:rp18_signatures",
   "pt": {
@@ -452,7 +452,7 @@
   "bp": [
    "BP-rp18-13"
   ],
-  "q": "Which IgG avidity result dates a maternal infection to before pregnancy?",
+  "q": "In the first trimester, which serology result shows that a maternal infection began before pregnancy?",
   "o": [
    "High-avidity IgG",
    "Low-avidity IgG",
@@ -461,7 +461,7 @@
    "Fourfold rise in IgG titer"
   ],
   "a": 0,
-  "x": "IgG binds more tightly as the immune response matures over months. High-avidity IgG therefore means the infection is old, while low avidity means a recent primary infection.",
+  "x": "IgG binds more tightly as the immune response matures over months. High-avidity IgG in the first trimester therefore means an infection at least several months old, from before pregnancy, while low avidity means a recent primary infection.",
   "w": {
    "Low-avidity IgG": "Low-avidity IgG comes from an immature antibody response and signals a primary infection within the past few months.",
    "Positive IgM with negative IgG": "IgM without IgG marks a very early infection or a false-positive IgM, not an infection months before pregnancy.",
