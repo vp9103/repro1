@@ -325,3 +325,4 @@ BASELINE: (written at P0.3 from `python check_repro.py --baseline`) BASELINE tre
 - 2026-10-06 P3.8 reopened: P3.V run 3 (token 4f415e1413) 2/4 plus First Aid checklist audits G (64) and H (79): import repair rounds R4-R6 (lessons, glossaries, figures) from the fast page
 - 2026-10-06 P3.9 reopened: P3.V run 3 (token 4f415e1413) 2/4 plus First Aid checklist audits G (64) and H (79): import repair rounds R4-R6 (lessons, glossaries, figures) from the fast page
 - 2026-10-06 P3.10 reopened: P3.V run 3 (token 4f415e1413) 2/4 plus First Aid checklist audits G (64) and H (79): import repair rounds R4-R6 (lessons, glossaries, figures) from the fast page
+- 2026-10-06 Reconciliation 3 done: P3.1-P3.10 closed with R4-R6 (all 143 First Aid audit rows, run-3 fixes, orchestrator edits). P3.V run 4 dispatched (token f970909cd5: rp30, rp23, rp18, rp15 + regression a-e incl. a fresh check of every orchestrator-authored edit).
