@@ -1,0 +1,441 @@
+{
+ "id": "rp2",
+ "t": "The perineum, external genitalia and lymph drainage",
+ "sub": "Below the pelvic floor, one membrane splits two pouches, one nerve serves the whole region, and lymph follows embryology rather than distance.",
+ "yld": "mid",
+ "exam": "mid",
+ "mins": 12,
+ "bp": [
+  "BP-rp2-01",
+  "BP-rp2-02",
+  "BP-rp2-03",
+  "BP-rp2-04",
+  "BP-rp2-05",
+  "BP-rp2-06",
+  "BP-rp2-07",
+  "BP-rp2-08",
+  "BP-rp2-09",
+  "BP-rp2-10",
+  "BP-rp2-11",
+  "BP-rp2-12",
+  "BP-rp2-13"
+ ],
+ "obj": [
+  "ANAT-PERINEUM-LEC.1",
+  "ANAT-PERINEUM-LEC.2",
+  "ANAT-PERINEUM-LEC.3",
+  "ANAT-PERINEUM-LEC.4",
+  "ANAT-PERINEUM-LEC.5",
+  "ANAT-PERINEUM-LEC.6",
+  "ANAT-PERINEUM-LEC.7",
+  "ANAT-PERINEUM-LEC.8",
+  "ANAT-PERINEUM-LEC.9",
+  "ANAT-EXTGEN-LAB.2",
+  "ANAT-EXTGEN-LAB.3",
+  "ANAT-EXTGEN-LAB.4",
+  "ANAT-EXTGEN-LAB.5",
+  "ANAT-EXTGEN-LAB.6",
+  "ANAT-EXTGEN-LAB.7",
+  "ANAT-EXTGEN-LAB.8",
+  "ANAT-EXTGEN-LAB.9",
+  "ANAT-EXTGEN-LAB.10"
+ ],
+ "pretest": [
+  {
+   "q": "After a straddle injury tears the spongy urethra, leaking urine swells the scrotum but spares which region?",
+   "o": [
+    "Thighs",
+    "Penis",
+    "Lower abdominal wall",
+    "Perineum"
+   ],
+   "a": 0,
+   "why": "Colles fascia attaches to the ischiopubic rami and the back edge of the perineal membrane and continues into Scarpa fascia, which fuses with the fascia lata. Urine in the superficial pouch is channeled into the scrotum, penis and abdominal wall but cannot enter the thighs.",
+   "w": {
+    "Penis": "Colles fascia continues as the dartos layer of the penis, so the penile shaft swells with urine after this injury.",
+    "Lower abdominal wall": "Colles fascia is continuous with Scarpa fascia of the abdominal wall, so urine climbs freely onto the lower abdomen.",
+    "Perineum": "The superficial pouch lies in the urogenital triangle of the perineum itself, so perineal swelling is expected rather than spared."
+   }
+  },
+  {
+   "q": "Which nerve block, placed beside the ischial spine, numbs most of the perineum for delivery?",
+   "o": [
+    "Pudendal nerve block",
+    "Ilioinguinal nerve block",
+    "Obturator nerve block",
+    "Genitofemoral nerve block"
+   ],
+   "a": 0,
+   "why": "The pudendal nerve (S2 to S4) hooks around the ischial spine and the sacrospinous ligament before it enters the pudendal canal. Anesthetic placed beside the spine, felt through the vaginal wall, blocks most perineal sensation.",
+   "w": {
+    "Ilioinguinal nerve block": "The ilioinguinal nerve supplies only the mons and anterior labia, so it is added when the front of the vulva must also be numbed.",
+    "Obturator nerve block": "The obturator nerve runs along the side wall to the medial thigh and supplies adductor muscles and thigh skin, not the perineum.",
+    "Genitofemoral nerve block": "The genital branch of the genitofemoral nerve supplies a small anterior area near the mons and does not reach the posterior perineum."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How is the perineum divided, and what fills each part?"
+  ],
+  [
+   "p",
+   "The perineum is the diamond-shaped region below the pelvic diaphragm. It is bounded by the pubic symphysis in front, the ischiopubic rami and **ischial tuberosities** at the sides, and the coccyx behind. A line between the two tuberosities divides it into two triangles. The **urogenital triangle** in front holds the urethra and the external genitalia. The **anal triangle** behind holds the anal canal, the external anal sphincter and the ischioanal fossae. These fat-filled fossae let the anal canal expand during defecation."
+  ],
+  [
+   "p",
+   "The urogenital triangle has two layers, separated by the {{rp2_permem|perineal membrane}}. This tough sheet stretches between the ischiopubic rami, and the urethra (and in women the vagina) passes through it. The **deep perineal pouch** lies above the membrane and holds the external urethral sphincter and the membranous urethra. The **superficial perineal pouch** lies below it and holds the roots of the erectile tissue, three small muscles (bulbospongiosus, ischiocavernosus and superficial transverse perineal) and, in women, the Bartholin glands. {{rp2_colles|Colles fascia}} closes the superficial pouch below."
+  ],
+  [
+   "f",
+   "rp2_pouches"
+  ],
+  [
+   "t",
+   [
+    "Space",
+    "Lies between",
+    "Contents in men",
+    "Contents in women"
+   ],
+   [
+    [
+     "Deep perineal pouch",
+     "Pelvic floor and perineal membrane",
+     "External urethral sphincter, membranous urethra, bulbourethral glands",
+     "External urethral sphincter"
+    ],
+    [
+     "Superficial perineal pouch",
+     "Perineal membrane and Colles fascia",
+     "Bulb and crura of the penis, spongy urethra, three muscles",
+     "Vestibular bulbs, clitoral crura, Bartholin glands, three muscles"
+    ],
+    [
+     "Ischioanal fossa",
+     "Anal canal and obturator internus",
+     "Fat, pudendal nerve and vessels, inferior rectal nerve",
+     "Same as in men"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Why does a straddle injury spread urine into the scrotum but not the thighs?"
+  ],
+  [
+   "p",
+   "Colles fascia is the membranous layer of superficial fascia in the perineum. It attaches to the ischiopubic rami and the back edge of the perineal membrane. In front, it continues as the dartos of the penis and scrotum and as Scarpa fascia of the abdominal wall. Scarpa fascia fuses with the fascia lata just below the inguinal ligament."
+  ],
+  [
+   "p",
+   "In a fall astride a beam, the spongy urethra tears below the perineal membrane. If Buck fascia, the deep fascia of the penis, stays intact, the leak stays along the shaft; once it tears, urine reaches the superficial pouch. Urine then fills the pouch and follows Colles fascia into the scrotum, penis and lower abdominal wall. It cannot pass into the thighs, because Scarpa fascia is fused to the fascia lata, or back into the anal triangle, because Colles fascia is fused to the back edge of the perineal membrane. This **urethral rupture** pattern is the classic test of the fascial planes."
+  ],
+  [
+   "call",
+   "trap",
+   "A pelvic fracture does not fill the scrotum",
+   "A pelvic fracture shears the **membranous urethra** above the perineal membrane. Urine then leaks into the deep pouch and up into the **retropubic** space around the bladder, so the scrotum often stays dry. Blood at the urethral opening or a high-riding prostate means a retrograde urethrogram should come before any catheter."
+  ],
+  [
+   "h",
+   "Where does urine go when the bladder ruptures?"
+  ],
+  [
+   "p",
+   "The bladder itself can rupture in two ways. A blow to a full bladder bursts its dome, the weakest part and the part covered by peritoneum, so urine leaks into the peritoneal cavity as urinary ascites. A pelvic fracture instead tears the front or side wall below the peritoneum, so urine collects in the retropubic space, as it does after a membranous urethral tear."
+  ],
+  [
+   "h",
+   "What are the parts of the external genitalia?"
+  ],
+  [
+   "p",
+   "The vulva begins at the mons pubis, a fat pad over the pubic symphysis. The hair-bearing **labia majora** enclose the thinner **labia minora**, and the space between the labia minora is the **vestibule**. The external urethral opening lies in the vestibule in front, and the vaginal opening lies behind it, partly rimmed by the hymen. The Bartholin (greater vestibular) glands lie in the superficial pouch. Their ducts open at about 4 and 8 o'clock, posterolateral to the vaginal opening, and a blocked duct forms a cyst or abscess."
+  ],
+  [
+   "p",
+   "The vestibular bulbs are erectile tissue along the sides of the vaginal opening, and they swell with arousal. The clitoris has a glans, a body made of paired corpora cavernosa, and two crura."
+  ],
+  [
+   "p",
+   "The penis has a root and a body. The root lies in the superficial pouch as the midline bulb and a crus on each ischiopubic ramus. The crura continue as the two **corpora cavernosa**, which fill with blood in erection. The bulb continues as the **corpus spongiosum**, which surrounds the urethra and expands into the glans. A dense tunica albuginea wraps each erectile body. The male urethra has three parts. The prostatic urethra runs through the prostate, the short **membranous urethra** crosses the deep pouch inside the external urethral sphincter, and the long spongy urethra runs through the penis. Apart from the external opening, the membranous part is the narrowest and least stretchy, so pelvic fractures and catheters injure it."
+  ],
+  [
+   "f",
+   "rp2_vulva"
+  ],
+  [
+   "h",
+   "How do the pudendal nerve and vessels reach the perineum?"
+  ],
+  [
+   "p",
+   "The **pudendal nerve** (S2 to S4) and the internal pudendal artery leave the pelvis through the greater sciatic foramen below the piriformis. They hook around the **ischial spine** and the sacrospinous ligament and re-enter through the lesser sciatic foramen. They then run forward in the {{rp2_alcock|pudendal canal}} (Alcock canal), a split in the obturator fascia on the wall of the ischioanal fossa. The nerve has three main branches. The inferior rectal nerve supplies the external anal sphincter and the perianal skin. The perineal nerve supplies the perineal muscles and external urethral sphincter through its deep branch, and the posterior labial or scrotal skin through its superficial branch. The dorsal nerve of the penis or clitoris carries sensation from the glans. The ischial spine can be felt through the vaginal wall, so it guides a **pudendal block** in labor."
+  ],
+  [
+   "f",
+   "rp2_pudendal"
+  ],
+  [
+   "p",
+   "A pudendal block leaves the front of the perineum sensitive. The mons and the anterior labia or scrotum are supplied by the **ilioinguinal** nerve (L1), not the pudendal nerve. The pudendal nerve itself can be stretched in a long vaginal delivery or compressed on a bicycle seat, which numbs the perineum and genitals and can cause fecal or urinary incontinence."
+  ],
+  [
+   "p",
+   "The internal pudendal artery supplies the perineum and the erectile tissue. In erection, the helicine arteries of the penis or clitoris open into the erectile sinusoids and fill them with blood."
+  ],
+  [
+   "h",
+   "Which sphincters guard the urethra and anus?"
+  ],
+  [
+   "p",
+   "The bladder outlet has two sphincters. The **internal urethral sphincter** at the bladder neck is smooth muscle. Sympathetic fibers close it through alpha-1 receptors, which keeps semen out of the bladder, and alpha-1 blockers such as tamsulosin relax it. The **external urethral sphincter** is skeletal muscle under voluntary control of the pudendal nerve."
+  ],
+  [
+   "p",
+   "The anal canal repeats the pattern. The **internal anal sphincter** is smooth muscle that keeps the canal closed without effort. The **external anal sphincter** is skeletal muscle, supplied by the inferior rectal nerve, that a person squeezes on purpose. Both anchor to the {{rp2_perbody|perineal body}}, the fibromuscular knot between the anal canal and the vagina or penile bulb where the perineal muscles meet. Childbirth can tear it. A second-degree laceration reaches the perineal muscles, a third-degree tear reaches the anal sphincter, and a fourth-degree tear reaches the rectal lining."
+  ],
+  [
+   "h",
+   "How do the autonomic nerves run erection and emission?"
+  ],
+  [
+   "p",
+   "Sympathetic fibers reach the pelvis through the lumbar splanchnic and hypogastric nerves, and parasympathetic fibers arrive as the pelvic splanchnic nerves. Male sexual function strings these two together with the somatic pudendal nerve in a fixed order, summed up as point, squeeze, shoot."
+  ],
+  [
+   "steps",
+   [
+    "Point, squeeze, shoot: the nerves of male sexual function",
+    [
+     [
+      "Point: erection is parasympathetic",
+      "The **pelvic splanchnic** nerves (S2 to S4) release nitric oxide, which relaxes the penile arteries and sinusoids. The corpora cavernosa fill with blood and compress their veins against the tunica albuginea."
+     ],
+     [
+      "Squeeze: emission is sympathetic",
+      "Hypogastric fibers from L1 and L2 contract the ductus deferens, seminal vesicles and prostate, which moves semen into the urethra. They also close the internal urethral sphincter."
+     ],
+     [
+      "Shoot: ejaculation is somatic",
+      "The pudendal nerve drives rhythmic contraction of the bulbospongiosus, which expels the semen. If the sympathetic fibers are damaged, the sphincter stays open and semen flows back into the bladder."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Why does the pectinate line split the anal canal in two?"
+  ],
+  [
+   "p",
+   "The {{rp2_pectinate|pectinate line}} marks where the endoderm of the hindgut meets the ectoderm of the anal pit. Everything above and below it therefore has a different origin, and so a different lining, blood supply, drainage and nerve supply."
+  ],
+  [
+   "t",
+   [
+    "Feature",
+    "Above the line (hindgut endoderm)",
+    "Below the line (anal pit ectoderm)"
+   ],
+   [
+    [
+     "Lining",
+     "Columnar epithelium",
+     "Stratified squamous epithelium"
+    ],
+    [
+     "Cancer",
+     "Adenocarcinoma",
+     "Squamous cell carcinoma"
+    ],
+    [
+     "Arteries",
+     "Superior rectal, from the inferior mesenteric artery",
+     "Inferior rectal, from the internal pudendal artery"
+    ],
+    [
+     "Veins",
+     "Portal system, through the superior rectal vein",
+     "Caval system, through the inferior rectal vein"
+    ],
+    [
+     "Lymph",
+     "Internal iliac nodes",
+     "Superficial inguinal nodes"
+    ],
+    [
+     "Hemorrhoids",
+     "**Internal**: painless bleeding",
+     "**External**: painful"
+    ]
+   ]
+  ],
+  [
+   "f",
+   "rp2_pectinate"
+  ],
+  [
+   "p",
+   "Because the rectal veins reach both venous systems, the anorectal junction is a {{rp2_portocaval|portocaval anastomosis}}. In portal hypertension, blood from the superior rectal veins backs up through the middle and inferior rectal veins into the caval system and swells rectal varices. These bleed but are not hemorrhoids."
+  ],
+  [
+   "call",
+   "key",
+   "Pain marks the somatic side of the line",
+   "Anything below the pectinate line hurts. A thrombosed external hemorrhoid, an anal fissure or a squamous tumor causes pain because the **inferior rectal** branch of the pudendal nerve carries somatic pain. Above the line, an internal hemorrhoid or adenocarcinoma causes painless bleeding, because visceral nerves respond only to stretch."
+  ],
+  [
+   "h",
+   "Where does lymph from each pelvic organ drain?"
+  ],
+  [
+   "p",
+   "Lymph runs back along the arteries that supply an organ, so distance is a poor guide. The ovaries and testes formed near the kidneys and kept their aortic vessels, so they drain to **para-aortic** nodes. The uterine body, cervix and upper vagina drain to iliac and obturator nodes, and the prostate drains mainly to **internal iliac** nodes. The lower vagina, vulva, scrotum, penile shaft skin and anal canal below the pectinate line drain to the superficial inguinal nodes. The glans drains to **deep inguinal** nodes. The uterine tubes and the fundus also follow the ovarian vessels to para-aortic nodes, and a little fundal lymph follows the round ligament to the groin."
+  ],
+  [
+   "f",
+   "rp2_lymph"
+  ],
+  [
+   "t",
+   [
+    "Structure",
+    "First nodes",
+    "Classic case"
+   ],
+   [
+    [
+     "Ovary or testis",
+     "Para-aortic (lumbar)",
+     "Testicular seminoma with retroperitoneal nodes"
+    ],
+    [
+     "Uterus, cervix, upper vagina",
+     "Internal and external iliac, obturator",
+     "Cervical cancer in pelvic side-wall nodes"
+    ],
+    [
+     "Prostate",
+     "Internal iliac, obturator, sacral",
+     "Prostate cancer in pelvic nodes"
+    ],
+    [
+     "Lower vagina, vulva, scrotum",
+     "Superficial inguinal",
+     "Scrotal abscess with tender groin nodes"
+    ],
+    [
+     "Anal canal below the pectinate line",
+     "Superficial inguinal",
+     "Anal squamous cell carcinoma"
+    ],
+    [
+     "Glans penis or clitoris",
+     "Deep inguinal",
+     "Penile cancer of the glans"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "These routes explain clinical patterns. Vulvar and penile cancers spread first to the inguinal nodes. Surgeons therefore biopsy the {{rp2_sentinel|sentinel node}}, the first node on the route, before deciding on a full groin dissection. Infections of the same skin enlarge the same nodes. Deep pelvic infections drain to iliac nodes that cannot be felt, so they give no groin signal."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp2_colles",
+    "q": "After falling astride a beam, a man has swelling of the scrotum, penis and lower abdominal wall but not the thighs. Which reasoning best explains the pattern?",
+    "o": [
+     "The membranous urethra tore above the perineal membrane, so urine rose through the deep pouch into the retropubic space",
+     "The bladder ruptured into the peritoneal cavity, and urine tracked down the inguinal canals into the scrotum",
+     "Urine spread through loose subcutaneous fat, which is continuous everywhere, so sparing of the thighs is chance",
+     "The spongy urethra tore below the membrane, and Colles fascia, tied to the rami and perineal membrane and continuous with Scarpa fascia, channels urine forward and upward"
+    ],
+    "a": 3,
+    "why": "A straddle injury crushes the spongy urethra below the perineal membrane, so urine enters the superficial pouch. Colles fascia, attached to the rami and the membrane and continuous with dartos and Scarpa fascia, channels the urine forward and up. A membranous tear fills the retropubic space instead, and a rupture of the bladder dome leaks urine into the peritoneal cavity."
+   }
+  ],
+  [
+   "why",
+   "Why does testicular cancer spread to nodes beside the aorta instead of the groin?",
+   "The testis forms near the kidney and descends through the inguinal canal late in fetal life, dragging its artery, veins and lymphatics behind it. Its lymph therefore climbs back up the spermatic cord to the para-aortic nodes beside the aorta. Scrotal skin is different. It is body wall that never moved, so it drains to the superficial inguinal nodes."
+  ],
+  [
+   "vis",
+   "rp2"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these are true of the perineum and its drainage?",
+  "items": [
+   [
+    "The perineal membrane separates the deep and superficial pouches",
+    1
+   ],
+   [
+    "Colles fascia keeps leaked urine out of the thighs",
+    1
+   ],
+   [
+    "A straddle injury tears the spongy urethra",
+    1
+   ],
+   [
+    "The pudendal nerve hooks around the ischial spine",
+    1
+   ],
+   [
+    "External hemorrhoids are painful",
+    1
+   ],
+   [
+    "Testicular lymph drains to para-aortic nodes",
+    1
+   ],
+   [
+    "Scrotal skin drains to superficial inguinal nodes",
+    1
+   ],
+   [
+    "Erection is parasympathetic; emission is sympathetic",
+    1
+   ],
+   [
+    "Bartholin ducts open at the posterolateral vaginal orifice",
+    1
+   ],
+   [
+    "The bulbourethral glands lie in the superficial pouch",
+    0
+   ],
+   [
+    "Internal hemorrhoids are painful because of somatic nerves",
+    0
+   ],
+   [
+    "The glans penis drains to para-aortic nodes",
+    0
+   ],
+   [
+    "A pelvic fracture tears the spongy urethra below the membrane",
+    0
+   ],
+   [
+    "Sentinel node biopsy samples the first groin node in vulvar cancer",
+    1
+   ],
+   [
+    "The external urethral sphincter is skeletal muscle supplied by the pudendal nerve",
+    1
+   ],
+   [
+    "Sympathetic fibers produce erection",
+    0
+   ]
+  ]
+ }
+}

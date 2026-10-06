@@ -69,7 +69,15 @@
     ]
    ]
   ],
-  "bl": "Bilateral multiloculated ovarian cysts with very high hCG, as in a molar pregnancy, are theca lutein cysts that regress after evacuation."
+  "bl": "Bilateral multiloculated ovarian cysts with very high hCG, as in a molar pregnancy, are theca lutein cysts that regress after evacuation.",
+  "ef": "rp15_cysts",
+  "pt": {
+   "hl": [
+    "Theca lutein cysts",
+    "Very high hCG overstimulates theca cells"
+   ],
+   "say": "The third card in the left panel names theca lutein cysts: very high hCG from a molar pregnancy overstimulates the theca cells of both ovaries, giving many-chambered cysts that shrink as hCG falls."
+  }
  },
  {
   "id": "rp15q02",
@@ -142,7 +150,15 @@
     ]
    ]
   ],
-  "bl": "Luteal-phase pain after intercourse with a lacy, reticular cyst and a negative hCG is a hemorrhagic corpus luteum cyst."
+  "bl": "Luteal-phase pain after intercourse with a lacy, reticular cyst and a negative hCG is a hemorrhagic corpus luteum cyst.",
+  "ef": "rp15_patterns",
+  "pt": {
+   "hl": [
+    "Hemorrhagic cyst",
+    "Lace-like reticular echoes"
+   ],
+   "say": "The hemorrhagic cyst panel shows lace-like reticular echoes from a retracting clot with no flow, which matches her lacy cyst and the small amount of free fluid, and it resolves on a repeat scan."
+  }
  },
  {
   "id": "rp15q03",
@@ -215,7 +231,15 @@
     ]
    ]
   ],
-  "bl": "In ovarian torsion, compression of thin-walled veins and lymphatics comes first, so arterial Doppler flow can persist early."
+  "bl": "In ovarian torsion, compression of thin-walled veins and lymphatics comes first, so arterial Doppler flow can persist early.",
+  "ef": "rp15_cysts",
+  "pt": {
+   "hl": [
+    "Veins and lymphatics collapse first",
+    "Thin-walled and low pressure, so they close"
+   ],
+   "say": "In the torsion panel, step 2 shows the veins and lymphatics collapsing first because they are thin-walled and low pressure, while the artery still pumps blood in, so the ovary swells and Doppler flow can persist."
+  }
  },
  {
   "id": "rp15q04",

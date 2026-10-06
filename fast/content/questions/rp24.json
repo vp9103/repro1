@@ -229,7 +229,15 @@
     ]
    ]
   ],
-  "bl": "Trastuzumab causes non-dose-dependent, usually reversible cardiotoxicity through loss of HER2 survival signaling in cardiac myocytes."
+  "bl": "Trastuzumab causes non-dose-dependent, usually reversible cardiotoxicity through loss of HER2 survival signaling in cardiac myocytes.",
+  "ef": "rp24_drugs",
+  "pt": {
+   "hl": [
+    "Reversible cardiotoxicity from lost HER2",
+    "survival signaling in myocytes; recovers"
+   ],
+   "say": "The trastuzumab row shows reversible cardiotoxicity from lost HER2 survival signaling in myocytes, which recovers when the drug is held, whereas the doxorubicin row below is dose-dependent and largely permanent."
+  }
  },
  {
   "id": "rp24q04",
@@ -380,7 +388,15 @@
     ]
    ]
   ],
-  "bl": "Aromatase inhibitors alone fail before menopause because loss of estrogen feedback raises gonadotropins that drive ovarian estrogen synthesis."
+  "bl": "Aromatase inhibitors alone fail before menopause because loss of estrogen feedback raises gonadotropins that drive ovarian estrogen synthesis.",
+  "ef": "rp24_drugs",
+  "pt": {
+   "hl": [
+    "Why not an aromatase inhibitor alone before menopause?",
+    "Less estrogen feedback: FSH and LH rise and the ovary makes more estrogen"
+   ],
+   "say": "The strip at the bottom explains her laboratory results: before menopause an aromatase inhibitor lowers estrogen, loss of feedback raises FSH and LH, and the stimulated ovary makes more estrogen, overriding the block."
+  }
  },
  {
   "id": "rp24q06",
@@ -452,7 +468,15 @@
     ]
    ]
   ],
-  "bl": "Red, edematous skin with peau d'orange that fails antibiotics is inflammatory carcinoma, caused by tumor emboli within dermal lymphatics."
+  "bl": "Red, edematous skin with peau d'orange that fails antibiotics is inflammatory carcinoma, caused by tumor emboli within dermal lymphatics.",
+  "ef": "rp24_signs",
+  "pt": {
+   "hl": [
+    "Tumor emboli in dermal lymphatics",
+    "Skin: red, warm, dimpled"
+   ],
+   "say": "The inflammatory carcinoma row shows tumor emboli in dermal lymphatics blocking lymph drainage, so the skin is red, warm and dimpled like orange peel and does not respond to antibiotics."
+  }
  },
  {
   "id": "rp24q07",
@@ -524,7 +548,15 @@
     ]
    ]
   ],
-  "bl": "An eczematous nipple with malignant cells in the epidermis is Paget disease, which almost always arises from an underlying ductal carcinoma in situ or invasive carcinoma."
+  "bl": "An eczematous nipple with malignant cells in the epidermis is Paget disease, which almost always arises from an underlying ductal carcinoma in situ or invasive carcinoma.",
+  "ef": "rp24_signs",
+  "pt": {
+   "hl": [
+    "Large pale cells in the epidermis",
+    "Cells travel up the ducts from underlying DCIS"
+   ],
+   "say": "The Paget disease row shows large pale cells in the nipple epidermis that travel up the ducts from underlying ductal carcinoma in situ, so the whole breast needs imaging."
+  }
  },
  {
   "id": "rp24q08",
@@ -677,7 +709,14 @@
     ]
    ]
   ],
-  "bl": "Axillary lymph node involvement is the strongest single predictor of breast cancer prognosis when there is no distant spread."
+  "bl": "Axillary lymph node involvement is the strongest single predictor of breast cancer prognosis when there is no distant spread.",
+  "ef": "rp3_axilla",
+  "pt": {
+   "hl": [
+    "Sentinel node"
+   ],
+   "say": "In the axilla, the first node that drains the tumor is the sentinel node, and tumor in the axillary lymph nodes is the strongest single predictor of prognosis when there is no distant metastasis."
+  }
  },
  {
   "id": "rp24q10",
@@ -749,7 +788,15 @@
     ]
    ]
   ],
-  "bl": "Early breast cancer with sarcomas, brain tumors and adrenocortical carcinoma in relatives means Li-Fraumeni syndrome from a germline TP53 mutation."
+  "bl": "Early breast cancer with sarcomas, brain tumors and adrenocortical carcinoma in relatives means Li-Fraumeni syndrome from a germline TP53 mutation.",
+  "ef": "rp24_genes",
+  "pt": {
+   "hl": [
+    "TP53",
+    "Li-Fraumeni syndrome: early breast cancer,"
+   ],
+   "say": "The TP53 row pairs the gene with Li-Fraumeni syndrome: early breast cancer, sarcoma, brain and adrenal tumors, which matches her family, because p53 normally stops or kills cells with damaged DNA."
+  }
  },
  {
   "id": "rp24q11",
@@ -822,6 +869,14 @@
     ]
    ]
   ],
-  "bl": "Male breast cancer, usually ER-positive invasive ductal carcinoma, is most strongly linked to germline BRCA2 and to Klinefelter syndrome."
+  "bl": "Male breast cancer, usually ER-positive invasive ductal carcinoma, is most strongly linked to germline BRCA2 and to Klinefelter syndrome.",
+  "ef": "rp24_genes",
+  "pt": {
+   "hl": [
+    "BRCA2",
+    "ER-positive breast cancer and male breast"
+   ],
+   "say": "The BRCA2 row lists estrogen receptor-positive breast cancer including male breast cancer, with ovarian, prostate and pancreatic cancer in the family, which fits his sister and his father."
+  }
  }
 ]

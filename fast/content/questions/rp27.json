@@ -66,7 +66,15 @@
     ]
    ]
   ],
-  "bl": "New hypertension with proteinuria after 20 weeks plus a pressure of 160/110 or a new headache means preeclampsia with severe features."
+  "bl": "New hypertension with proteinuria after 20 weeks plus a pressure of 160/110 or a new headache means preeclampsia with severe features.",
+  "ef": "rp27_mag",
+  "pt": {
+   "hl": [
+    "Preeclampsia with severe features",
+    "Blood pressure 160/110 or higher"
+   ],
+   "say": "The severe-features card lists findings of which any one is enough: her pressures of 164/112 and 166/110 mm Hg and her new headache each qualify, so this is preeclampsia with severe features."
+  }
  },
  {
   "id": "rp27q02",
@@ -135,7 +143,15 @@
     ]
    ]
   ],
-  "bl": "Magnesium toxicity with absent reflexes and slow breathing, often from oliguria, is reversed with intravenous calcium gluconate after stopping the infusion."
+  "bl": "Magnesium toxicity with absent reflexes and slow breathing, often from oliguria, is reversed with intravenous calcium gluconate after stopping the infusion.",
+  "ef": "rp27_mag",
+  "pt": {
+   "hl": [
+    "Antidote: IV calcium gluconate, given after the infusion is stopped",
+    "Loss of deep tendon reflexes"
+   ],
+   "say": "Her absent patellar reflexes, slow breathing and falling urine output are the magnesium toxicity ladder, and the antidote is IV calcium gluconate, given after the infusion is stopped."
+  }
  },
  {
   "id": "rp27q03",
@@ -586,7 +602,15 @@
     ]
    ]
   ],
-  "bl": "An unsensitized Rh-negative woman receives anti-D immune globulin at 28 weeks and again within 72 hours of delivering an Rh-positive infant."
+  "bl": "An unsensitized Rh-negative woman receives anti-D immune globulin at 28 weeks and again within 72 hours of delivering an Rh-positive infant.",
+  "ef": "rp27_rh",
+  "pt": {
+   "hl": [
+    "Prevention: anti-D",
+    "At 28 weeks of pregnancy"
+   ],
+   "say": "The prevention column lists anti-D immune globulin at 28 weeks of pregnancy and again within 72 hours of birth, so an unsensitized Rh-negative woman receives it now, before any bleeding."
+  }
  },
  {
   "id": "rp27q09",

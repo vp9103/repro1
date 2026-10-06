@@ -1,0 +1,415 @@
+{
+ "id": "rp5",
+ "t": "Sex determination and genital development",
+ "sub": "How SRY, AMH, testosterone and DHT turn one indifferent embryo into male or female ducts and genitalia, and what each failure looks like.",
+ "yld": "hi",
+ "exam": "hi",
+ "mins": 13,
+ "bp": [
+  "BP-rp5-01",
+  "BP-rp5-02",
+  "BP-rp5-03",
+  "BP-rp5-04",
+  "BP-rp5-05",
+  "BP-rp5-06",
+  "BP-rp5-07",
+  "BP-rp5-08",
+  "BP-rp5-09",
+  "BP-rp5-10",
+  "BP-rp5-11",
+  "BP-rp5-12",
+  "BP-rp5-13"
+ ],
+ "obj": [
+  "HP-UTERUS-OVARY.4",
+  "HP-MALE.10",
+  "EMBRYO-GU.1",
+  "EMBRYO-GU.2",
+  "EMBRYO-GU.3",
+  "EMBRYO-GU.4",
+  "EMBRYO-GU.5",
+  "EMBRYO-CLIN.7",
+  "EMBRYO-CLIN.8",
+  "EMBRYO-CLIN.9",
+  "EMBRYO-CLIN.10",
+  "BICEP-MISHIMOTO.2",
+  "BICEP-WALSH.19"
+ ],
+ "pretest": [
+  {
+   "q": "Which cells of the fetal testis secrete anti-Müllerian hormone?",
+   "o": [
+    "Sertoli cells",
+    "Leydig cells",
+    "Germ cells",
+    "Granulosa cells"
+   ],
+   "a": 0,
+   "why": "SRY makes the supporting cells of the gonad become Sertoli cells, which secrete anti-Müllerian hormone and make the Müllerian ducts regress. Leydig cells, induced next, secrete testosterone, which keeps the Wolffian ducts.",
+   "w": {
+    "Leydig cells": "Leydig cells in the testis interstitium secrete testosterone, which preserves the Wolffian ducts. They do not make the hormone that removes the female ducts.",
+    "Germ cells": "Germ cells migrate in from the yolk sac and become spermatogonia. They are needed for gonad development but secrete no duct-regulating hormone.",
+    "Granulosa cells": "Granulosa cells are the ovarian counterpart of Sertoli cells. The fetal ovary makes little of this hormone, which is why the female ducts persist."
+   }
+  },
+  {
+   "q": "Which embryonic structure forms the lower part of the vagina?",
+   "o": [
+    "Urogenital sinus",
+    "Paramesonephric ducts",
+    "Mesonephric ducts",
+    "Genital tubercle"
+   ],
+   "a": 0,
+   "why": "The fused Müllerian ducts form the uterus, cervix and upper vagina. The sinovaginal bulbs of the urogenital sinus form the lower vagina. The two meet at the vaginal plate, which must canalize to open the canal.",
+   "w": {
+    "Paramesonephric ducts": "The paramesonephric ducts fuse to build the uterus, cervix and upper vagina. The lowest part of the canal comes from a different, endodermal source.",
+    "Mesonephric ducts": "The mesonephric ducts regress in females without testosterone. A remnant can persist in the lateral vaginal wall as a Gartner duct cyst.",
+    "Genital tubercle": "The genital tubercle becomes the clitoris in females. It forms external erectile tissue, not any part of the internal vaginal canal."
+   }
+  },
+  {
+   "q": "Failure of which developmental process causes hypospadias?",
+   "o": [
+    "Fusion of the urethral folds",
+    "Positioning of the genital tubercle",
+    "Fusion of the labioscrotal swellings",
+    "Closure of the processus vaginalis"
+   ],
+   "a": 0,
+   "why": "In males, DHT makes the urethral folds fuse along the underside of the phallus to enclose the spongy urethra. Incomplete fusion leaves the urethral opening on the ventral shaft, scrotum or perineum, which is hypospadias.",
+   "w": {
+    "Positioning of the genital tubercle": "An abnormally placed genital tubercle gives epispadias, with the opening on the dorsal surface, often together with bladder exstrophy.",
+    "Fusion of the labioscrotal swellings": "Failed labioscrotal fusion leaves a bifid scrotum. It can accompany severe cases but does not itself place the urethral meatus.",
+    "Closure of the processus vaginalis": "A patent processus vaginalis causes an indirect inguinal hernia or a communicating hydrocele. It has no role in forming the urethra."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How does a Y chromosome make a testis?"
+  ],
+  [
+   "p",
+   "Every embryo starts with the same parts. The gonad forms on the **genital ridge**, a strip of intermediate mesoderm beside the developing kidney. It becomes a true gonad only after primordial germ cells migrate into it from the wall of the yolk sac during weeks 4 to 6. Until about week 7 the gonad is **bipotent**, able to become a testis or an ovary. Both duct pairs are present: the mesonephric (Wolffian) ducts and the paramesonephric (Müllerian) ducts. Chromosomal sex is fixed at fertilization, but it acts through one gene. The {{rp5_sry|sex-determining region of the Y chromosome}} (SRY) encodes **testis-determining factor**. This switches on {{rp5_sox9|SOX9}} in the supporting cells and turns them into Sertoli cells, the first step in building a testis."
+  ],
+  [
+   "p",
+   "Sertoli cells secrete {{rp5_amh|anti-Müllerian hormone}} (AMH), a SOX9 target, which makes the Müllerian duct on the same side regress. Sertoli cells then induce **Leydig cells**, which secrete testosterone from about week 8 under placental hCG. Testosterone stabilizes the Wolffian ducts. In genital skin and the urogenital sinus, **5α-reductase** converts testosterone to **dihydrotestosterone** (DHT), a stronger androgen that builds the penis, scrotum and prostate. Without SRY there are no Sertoli or Leydig cells, so there is no AMH and no testosterone. The gonad becomes an ovary, the Müllerian ducts develop, the Wolffian ducts regress and the genitalia become female. Female development is the default and needs no ovarian hormone."
+  ],
+  [
+   "p",
+   "Inside the gonad the two sexes organize the germ cells differently. In the testis, Sertoli cells and germ cells form testis cords that hollow into seminiferous tubules, with Leydig cells between them. In the ovary, germ cells become oogonia, enter meiosis I and arrest as primary oocytes inside primordial follicles."
+  ],
+  [
+   "f",
+   "rp5_ducts"
+  ],
+  [
+   "call",
+   "key",
+   "Three male signals, three separate jobs",
+   "**AMH** removes the Müllerian ducts, **testosterone** keeps the Wolffian ducts, and **DHT** builds the external genitalia and prostate. Each signal has its own target, so each defect has its own pattern. Missing AMH leaves a uterus in a normal-looking boy. Missing androgen action leaves female genitalia with no uterus. Missing DHT leaves male internal ducts with undervirilized external genitalia."
+  ],
+  [
+   "h",
+   "Which duct becomes which organ?"
+  ],
+  [
+   "p",
+   "The **mesonephric** (Wolffian) duct first drains the embryonic kidney. In males, testosterone turns it into the epididymis, vas deferens, seminal vesicle and ejaculatory duct. Its lower end also sprouts the **ureteric bud** in both sexes, which becomes the ureter and collecting system. In females the duct regresses, leaving the epoophoron beside the ovary and a remnant in the lateral vaginal wall that can form a {{rp5_gartner|Gartner duct cyst}}."
+  ],
+  [
+   "p",
+   "The **paramesonephric** (Müllerian) ducts form alongside the mesonephric ducts. Their unfused upper parts become the fallopian tubes, and their fused lower parts form the uterus, cervix and upper vagina. In males AMH removes them, except for a small remnant, the appendix testis. The lower vagina comes from the endodermal urogenital sinus. The sinus also forms the prostate and bulbourethral glands in males and their female homologs, the Skene glands (prostate) and Bartholin glands (bulbourethral)."
+  ],
+  [
+   "t",
+   [
+    "Primordium",
+    "Male derivatives",
+    "Female derivatives"
+   ],
+   [
+    [
+     "Mesonephric (Wolffian) duct",
+     "Epididymis, vas deferens, seminal vesicle, ejaculatory duct",
+     "Regresses; epoophoron and Gartner duct cyst remnants"
+    ],
+    [
+     "Paramesonephric (Müllerian) duct",
+     "Regresses; appendix testis remnant",
+     "Fallopian tubes, uterus, cervix, upper vagina"
+    ],
+    [
+     "Urogenital sinus",
+     "Prostate, bulbourethral glands, bladder, urethra",
+     "Lower vagina, Skene and Bartholin glands, bladder, urethra"
+    ],
+    [
+     "Ureteric bud",
+     "Ureter and collecting system",
+     "Ureter and collecting system"
+    ],
+    [
+     "Genital ridge",
+     "Testis with Sertoli and Leydig cells",
+     "Ovary with follicles"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How do the external genitalia become male or female?"
+  ],
+  [
+   "p",
+   "Before the external genitalia can form, the **cloaca**, the common end of the hindgut and the allantois, must be divided. The **urorectal septum** grows down between them and splits the cloaca into the urogenital sinus in front and the anorectal canal behind. Failure of this division leaves a fistula between the rectum and the urethra or vagina, together with an imperforate anus. A newborn boy may then pass meconium in the urine."
+  ],
+  [
+   "p",
+   "The external genitalia also start identical. Around the cloacal membrane lie a midline **genital tubercle**, paired **urogenital folds** and, outside them, paired **labioscrotal** swellings. In a male, DHT makes the tubercle elongate into the glans and shaft of the penis. The urogenital folds fuse along the underside to enclose the spongy urethra, and the labioscrotal swellings fuse in the midline to form the scrotum. The urethra within the glans forms separately, from an ingrowth of surface ectoderm. Without DHT the tubercle becomes the clitoris, the folds stay open as the labia minora, and the swellings become the labia majora."
+  ],
+  [
+   "p",
+   "The external genitalia begin to look male or female by about week 10 and are fully distinct by week 12, and each female structure has a male homolog. When androgen exposure is partial or comes from the wrong source, the structures stall between the two fates. The newborn then has ambiguous genitalia, the subject of the next topic."
+  ],
+  [
+   "f",
+   "rp5_homologs"
+  ],
+  [
+   "call",
+   "trap",
+   "Hypospadias is ventral; epispadias is dorsal",
+   "**Hypospadias** is common: the urethral folds fail to fuse, so the opening sits on the underside of the penis, often with chordee, a downward curve. Circumcision is delayed because the foreskin may be needed for repair. **Epispadias** is rare: the opening is on the dorsal surface because the genital tubercle was abnormally positioned, and it travels with bladder **exstrophy**."
+  ],
+  [
+   "h",
+   "How do the Müllerian ducts build a uterus, and what goes wrong?"
+  ],
+  [
+   "steps",
+   [
+    "How the Müllerian ducts build a uterus, and where each anomaly arises",
+    [
+     [
+      "The two ducts form",
+      "Each paramesonephric duct grows down beside a mesonephric duct. If both fail to form, the result is Müllerian agenesis. If one fails, a unicornuate uterus results."
+     ],
+     [
+      "The lower ducts fuse",
+      "The lower ducts meet in the midline to form one uterovaginal canal. Complete failure of fusion gives uterus didelphys with two cervices, and partial failure gives a bicornuate uterus."
+     ],
+     [
+      "Septal resorption removes the midline wall",
+      "The wall between the fused ducts must dissolve. A persisting septum leaves a septate uterus, the most common anomaly and a cause of recurrent pregnancy loss."
+     ],
+     [
+      "Canalization hollows the vaginal plate",
+      "Solid tissue where the ducts meet the urogenital sinus must hollow out. Failure leaves vaginal atresia, a transverse vaginal septum or an imperforate hymen."
+     ]
+    ]
+   ]
+  ],
+  [
+   "f",
+   "rp5_mullerian"
+  ],
+  [
+   "p",
+   "The clinical weight of each anomaly is obstetric. The septum of a septate uterus is poorly vascularized, so an embryo that implants on it often fails. This causes recurrent **pregnancy loss**, which resection of the septum improves. A bicornuate, didelphys or unicornuate uterus has a smaller or distorted cavity, so pregnancies more often end in **preterm** labor, breech presentation or second-trimester loss. In {{rp5_mrkh|Mayer-Rokitansky-Küster-Hauser syndrome}}, a 46,XX patient has normal ovaries, breasts and pubic hair but no uterus or upper vagina. She presents with **primary amenorrhea** and a short, blind vaginal pouch. Prenatal exposure to diethylstilbestrol disturbs the same ducts and leaves a T-shaped uterus with similar risks."
+  ],
+  [
+   "t",
+   [
+    "Anomaly and failed step",
+    "Imaging clue",
+    "Obstetric consequence"
+   ],
+   [
+    [
+     "Müllerian agenesis: neither duct forms",
+     "No uterus; normal ovaries",
+     "Cannot carry a pregnancy"
+    ],
+    [
+     "Unicornuate uterus: one duct fails",
+     "Single curved horn",
+     "Preterm labor; ectopic pregnancy in a rudimentary horn"
+    ],
+    [
+     "Uterus didelphys: ducts do not fuse",
+     "Two uteri and two cervices, often with a longitudinal vaginal septum (double vagina)",
+     "Preterm birth, breech presentation"
+    ],
+    [
+     "Bicornuate uterus: ducts partly fuse",
+     "Deep fundal cleft",
+     "Preterm birth, second-trimester loss"
+    ],
+    [
+     "Septate uterus: septum not resorbed",
+     "Smooth fundus, internal septum",
+     "Recurrent pregnancy loss; resection helps"
+    ],
+    [
+     "T-shaped uterus: diethylstilbestrol alters duct development",
+     "Narrow T-shaped cavity",
+     "Infertility, pregnancy loss, preterm birth, ectopic pregnancy"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Outflow obstruction differs from agenesis because a working uterus is present. With an **imperforate hymen**, the membrane where the vaginal plate meets the urogenital sinus fails to open, so menstrual blood collects behind it as **hematocolpos**. A girl with normal breasts and pubic hair has primary amenorrhea, monthly pelvic pain and a bulging, bluish membrane at the introitus. A transverse vaginal septum causes the same cyclic pain with a normal hymen, and vaginal atresia leaves a uterus above a missing lower vagina. MRKH usually lacks functioning endometrium, so cyclic pain is uncommon."
+  ],
+  [
+   "h",
+   "Why do uterine and urinary anomalies travel together?"
+  ],
+  [
+   "p",
+   "The paramesonephric duct forms along the mesonephric duct, and the same mesonephric duct sprouts the **ureteric bud**. So an early mesonephric defect can remove both the kidney and the Müllerian structures on that side. A unicornuate uterus, or a didelphys uterus with an obstructed hemivagina, therefore often comes with **renal agenesis** on the ipsilateral side. Every Müllerian anomaly deserves a renal ultrasound. In a man, the same logic pairs unilateral renal agenesis with an absent vas deferens and seminal vesicle on that side. If the bud arises too high on the duct, it is carried down with the duct and opens too low, an **ectopic ureter**."
+  ],
+  [
+   "h",
+   "How does the testis descend, and what does it bring along?"
+  ],
+  [
+   "p",
+   "The testis forms high on the posterior abdominal wall and descends in two phases. In the **transabdominal** phase, {{rp5_insl3|INSL3}} from Leydig cells swells the {{rp5_gub|gubernaculum}}, a cord from the lower pole of the gonad to the labioscrotal swelling. It holds the testis near the future deep inguinal ring while the abdomen grows past it. In the **inguinoscrotal** phase, mostly in the last trimester and dependent on androgen, the gubernaculum guides the testis through the inguinal canal into the scrotum. In females the same cord becomes the ovarian ligament and the round ligament of the uterus."
+  ],
+  [
+   "p",
+   "Ahead of the testis, a pouch of peritoneum called the {{rp5_pv|processus vaginalis}} pushes through the **deep inguinal ring**. This ring is an opening in the transversalis fascia, lateral to the inferior epigastric vessels. The processus then leaves the canal through the superficial ring in the external oblique aponeurosis. As the testis passes each layer of the wall it picks up a covering, so the **spermatic cord** is wrapped in layers that mirror the wall. After the testis arrives, the proximal processus vaginalis closes. The distal part persists as the **tunica vaginalis**, a peritoneal sac around the front and sides of the testis. Inside the cord run the vas deferens, testicular artery, pampiniform plexus and the genital branch of the genitofemoral nerve, which supplies the cremaster."
+  ],
+  [
+   "p",
+   "Stroking the inner thigh makes the ipsilateral cremaster lift the testis, the cremasteric reflex (L1 to L2). Its sensory limb runs in the ilioinguinal nerve and the femoral branch of the genitofemoral nerve, and its motor limb is the genital branch."
+  ],
+  [
+   "f",
+   "rp5_male"
+  ],
+  [
+   "t",
+   [
+    "Abdominal wall layer",
+    "Covering of the cord and testis"
+   ],
+   [
+    [
+     "Skin and superficial fascia",
+     "Scrotal skin and dartos muscle"
+    ],
+    [
+     "External oblique aponeurosis",
+     "External spermatic fascia"
+    ],
+    [
+     "Internal oblique muscle",
+     "Cremaster muscle and cremasteric fascia"
+    ],
+    [
+     "Transversalis fascia",
+     "Internal spermatic fascia"
+    ],
+    [
+     "Parietal peritoneum",
+     "Processus vaginalis, then tunica vaginalis"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "When descent fails, the consequences follow from the anatomy. **Cryptorchidism** is a testis that stays in the abdomen or canal. The warmer position impairs spermatogenesis, and the risk of germ cell tumor, especially seminoma, rises in both testes, so orchiopexy is done in infancy. If the processus vaginalis stays patent, bowel can follow it as an indirect inguinal hernia. Peritoneal fluid can instead fill it as a communicating **hydrocele**, which transilluminates."
+  ],
+  [
+   "p",
+   "The two inguinal hernias differ in their route. An indirect hernia follows the patent processus vaginalis: it enters the deep ring lateral to the inferior epigastric vessels and runs inside all three spermatic fasciae, so it is the hernia of infants and young men. A direct hernia, usually in older men, bulges through weak transversalis fascia in the inguinal (Hesselbach) triangle, medial to those vessels, and leaves only through the superficial ring."
+  ],
+  [
+   "why",
+   "Why does a 46,XY child with 5α-reductase deficiency look female at birth but virilize at puberty?",
+   "Before birth the external genitalia depend on DHT, because genital skin needs the stronger androgen that 5α-reductase makes locally. Without the enzyme the tubercle stays small, the urethral folds stay open and the labioscrotal swellings stay unfused, so the genitalia look female or ambiguous. The internal ducts are normal. Testosterone itself keeps the Wolffian ducts, and Sertoli cells still make AMH, so there is a vas deferens but no uterus. At puberty the testes make adult amounts of testosterone, enough to act on androgen receptors directly, so the phallus enlarges and the voice deepens."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp5_uterus",
+    "q": "A 46,XY boy with normal male genitalia has a uterus and fallopian tubes found during surgery for undescended testes. Which reasoning best explains this?",
+    "o": [
+     "His testes made no testosterone, so the Wolffian ducts regressed and Müllerian structures replaced them",
+     "He lacks 5α-reductase, so DHT never formed and the internal female ducts persisted",
+     "His Leydig cells failed, so the absence of androgen left the default female ducts in place",
+     "His Sertoli cells made no AMH or he lacks its receptor, so the Müllerian ducts persisted while testosterone still built male structures"
+    ],
+    "a": 3,
+    "why": "Normal male genitalia prove that testosterone and DHT worked, so the Leydig cells and 5α-reductase are intact. The only missing male signal is the one that removes the Müllerian ducts: AMH from Sertoli cells, acting on its receptor. This is persistent Müllerian duct syndrome, and the retained uterus and tubes often tether the testes and cause cryptorchidism. Androgen lack alone never preserves Müllerian ducts, because AMH, not androgen, controls their regression."
+   }
+  ],
+  [
+   "vis",
+   "rp5"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these come from the mesonephric (Wolffian) duct?",
+  "items": [
+   [
+    "Epididymis beside the testis",
+    1
+   ],
+   [
+    "Vas deferens",
+    1
+   ],
+   [
+    "Seminal vesicle",
+    1
+   ],
+   [
+    "Ejaculatory duct",
+    1
+   ],
+   [
+    "Ureteric bud",
+    1
+   ],
+   [
+    "Gartner duct cyst",
+    1
+   ],
+   [
+    "Fallopian tube",
+    0
+   ],
+   [
+    "Body of the uterus",
+    0
+   ],
+   [
+    "Upper vagina",
+    0
+   ],
+   [
+    "Prostate gland",
+    0
+   ],
+   [
+    "Appendix testis",
+    0
+   ],
+   [
+    "Lower vagina",
+    0
+   ],
+   [
+    "Epoophoron beside the ovary",
+    1
+   ]
+  ]
+ }
+}

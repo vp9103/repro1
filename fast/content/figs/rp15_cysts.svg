@@ -1,0 +1,53 @@
+<svg class="dia" viewBox="0 0 900 556" role="img" aria-label="Functional ovarian cysts compared (follicular, corpus luteum, theca lutein) beside the four steps of ovarian torsion, in which the thin-walled veins and lymphatics collapse before the artery">
+<text class="ttl" x="14" y="26" font-size="17">Cysts that follow the cycle, and the ovary that twists</text>
+<rect x="14" y="44" width="400" height="500" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="70" font-size="16">Functional cysts: the cycle overshoots</text>
+<rect x="26" y="84" width="376" height="146" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="38" y="114" font-size="16">Follicular cyst</text>
+<text x="38" y="144" font-size="14">A follicle that fails to rupture fills up</text>
+<text x="38" y="168" font-size="14">Thin-walled and anechoic; the most common</text>
+<text x="38" y="192" font-size="14">Usually gone within 1 to 3 cycles</text>
+<rect x="26" y="238" width="376" height="146" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="38" y="268" font-size="16">Corpus luteum cyst</text>
+<text x="38" y="298" font-size="14">Forms after ovulation and can bleed inside</text>
+<text x="38" y="322" font-size="14">Hemorrhagic cyst: sudden one-sided pain</text>
+<text x="38" y="346" font-size="14">It can rupture; echoes look lace-like</text>
+<rect x="26" y="392" width="376" height="146" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="38" y="422" font-size="16">Theca lutein cysts</text>
+<text x="38" y="452" font-size="14">Very high hCG overstimulates theca cells</text>
+<text x="38" y="476" font-size="14">Molar pregnancy, twins, hyperstimulation</text>
+<text x="38" y="500" font-size="14">Bilateral, many chambers; shrink as hCG falls</text>
+<rect x="428" y="44" width="458" height="500" rx="10" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="442" y="70" font-size="16">Torsion: the weakest wall fails first</text>
+<rect x="440" y="84" width="434" height="96" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<circle cx="466" cy="132" r="13" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="466" y="137" font-size="14" text-anchor="middle">1</text>
+<text class="b" x="492" y="116" font-size="16">A heavy ovary rotates</text>
+<text x="492" y="142" font-size="14">A dermoid or a cyst of 5 cm or more is the lever</text>
+<text x="492" y="164" font-size="14">The ligament that carries its vessels twists</text>
+<line x1="466" y1="180" x2="466.0" y2="186.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="466,192 462.4,186.0 469.6,186.0" fill="var(--ink-2)"/>
+<rect x="440" y="192" width="434" height="96" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="466" cy="240" r="13" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="466" y="245" font-size="14" text-anchor="middle">2</text>
+<text class="b" x="492" y="224" font-size="16">Veins and lymphatics collapse first</text>
+<text x="492" y="250" font-size="14">Thin-walled and low pressure, so they close</text>
+<text x="492" y="272" font-size="14">The artery still pumps in: swelling and edema</text>
+<line x1="466" y1="288" x2="466.0" y2="294.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="466,300 462.4,294.0 469.6,294.0" fill="var(--ink-2)"/>
+<rect x="440" y="300" width="434" height="96" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<circle cx="466" cy="348" r="13" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="466" y="353" font-size="14" text-anchor="middle">3</text>
+<text class="b" x="492" y="332" font-size="16">Then the artery is cut off</text>
+<text x="492" y="358" font-size="14">Rising tissue pressure and more twisting stop inflow</text>
+<text x="492" y="380" font-size="14">Early Doppler flow does not exclude torsion</text>
+<line x1="466" y1="396" x2="466.0" y2="402.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="466,408 462.4,402.0 469.6,402.0" fill="var(--ink-2)"/>
+<rect x="440" y="408" width="434" height="96" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<circle cx="466" cy="456" r="13" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="466" y="461" font-size="14" text-anchor="middle">4</text>
+<text class="b" x="492" y="440" font-size="16">Hemorrhagic infarction</text>
+<text x="492" y="466" font-size="14">Without inflow the ovary dies and bleeds</text>
+<text x="492" y="488" font-size="14">A surgical emergency: operate promptly</text>
+<text class="b" x="442" y="530" font-size="14">Sudden severe one-sided pain with vomiting</text>
+</svg>

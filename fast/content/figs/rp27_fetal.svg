@@ -1,0 +1,52 @@
+<svg class="dia" viewBox="0 0 900 600" role="img" aria-label="What reaches the fetus in late pregnancy, one cause and one signature each: pregestational and gestational diabetes, late and early growth restriction, intrahepatic cholestasis of pregnancy, and indomethacin">
+<text class="ttl" x="14" y="26" font-size="17">What reaches the fetus: one cause, one signature</text>
+<text class="s" x="28" y="62" font-size="14">Cause</text>
+<text class="s" x="472" y="62" font-size="14">Signature in the fetus</text>
+<rect x="14" y="72" width="872" height="80" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="72" width="10" height="80" rx="4" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<line x1="458" y1="80" x2="458" y2="144" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="36" y="100" font-size="15">Pregestational diabetes: hit in weeks 3 to 8</text>
+<text x="36" y="122" font-size="14">High glucose during organogenesis harms the embryo</text>
+<text class="b" x="472" y="100" font-size="15">Caudal regression syndrome</text>
+<text x="472" y="122" font-size="14">Most specific; also transposition of the great</text>
+<text x="472" y="141" font-size="14">arteries, VSD and neural tube defects</text>
+<rect x="14" y="158" width="872" height="80" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="158" width="10" height="80" rx="4" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<line x1="458" y1="166" x2="458" y2="230" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="36" y="186" font-size="15">Gestational diabetes: after organogenesis</text>
+<text x="36" y="208" font-size="14">Glucose crosses, insulin does not: fetal hyperinsulinemia</text>
+<text class="b" x="472" y="186" font-size="15">Macrosomia, not malformations</text>
+<text x="472" y="208" font-size="14">Then shoulder dystocia, neonatal hypoglycemia</text>
+<text x="472" y="227" font-size="14">and delayed surfactant</text>
+<rect x="14" y="244" width="872" height="80" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="244" width="10" height="80" rx="4" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<line x1="458" y1="252" x2="458" y2="316" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="36" y="272" font-size="15">Late placental insufficiency</text>
+<text x="36" y="294" font-size="14">Preeclampsia, hypertension or smoking:</text>
+<text x="36" y="313" font-size="14">the fetus diverts blood to its brain</text>
+<text class="b" x="472" y="272" font-size="15">Asymmetric, head-sparing restriction</text>
+<text x="472" y="294" font-size="14">The abdomen lags; poor kidney flow</text>
+<text x="472" y="313" font-size="14">causes oligohydramnios</text>
+<rect x="14" y="330" width="872" height="80" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="330" width="10" height="80" rx="4" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<line x1="458" y1="338" x2="458" y2="402" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="36" y="358" font-size="15">Early insult</text>
+<text x="36" y="380" font-size="14">Aneuploidy or congenital infection</text>
+<text class="b" x="472" y="358" font-size="15">Symmetric growth restriction</text>
+<text x="472" y="380" font-size="14">Head and body are both small</text>
+<rect x="14" y="416" width="872" height="80" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="416" width="10" height="80" rx="4" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<line x1="458" y1="424" x2="458" y2="488" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="36" y="444" font-size="15">Intrahepatic cholestasis of pregnancy</text>
+<text x="36" y="466" font-size="14">Itchy palms and soles, no rash, high bile acids</text>
+<text class="b" x="472" y="444" font-size="15">Bile acids reach the fetus: stillbirth risk</text>
+<text x="472" y="466" font-size="14">Ursodiol; deliver near term</text>
+<rect x="14" y="502" width="872" height="80" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="502" width="10" height="80" rx="4" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<line x1="458" y1="510" x2="458" y2="574" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="36" y="530" font-size="15">Indomethacin for preterm labor</text>
+<text x="36" y="552" font-size="14">Use only before 32 weeks: it blocks the</text>
+<text x="36" y="571" font-size="14">prostaglandins that keep the ductus open</text>
+<text class="b" x="472" y="530" font-size="15">Premature closure of the ductus arteriosus</text>
+<text x="472" y="552" font-size="14">Also oligohydramnios</text>
+</svg>

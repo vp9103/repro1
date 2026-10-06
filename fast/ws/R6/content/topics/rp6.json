@@ -1,0 +1,382 @@
+{
+ "id": "rp6",
+ "t": "Disorders of sex development and sex chromosome disorders",
+ "sub": "Read every disorder of sex development from four facts: the karyotype, the gonad, whether a uterus is present, and the androgen levels.",
+ "yld": "hi",
+ "exam": "hi",
+ "mins": 11,
+ "bp": [
+  "BP-rp6-01",
+  "BP-rp6-02",
+  "BP-rp6-03",
+  "BP-rp6-04",
+  "BP-rp6-05",
+  "BP-rp6-06",
+  "BP-rp6-07",
+  "BP-rp6-08",
+  "BP-rp6-09",
+  "BP-rp6-10",
+  "BP-rp6-11"
+ ],
+ "obj": [
+  "EMBRYO-GU.6",
+  "TBL-PUBERTY.7",
+  "BICEP-WALSH.21",
+  "BICEP-WALSH.22",
+  "BICEP-WALSH.23"
+ ],
+ "pretest": [
+  {
+   "q": "Which enzyme converts testosterone into dihydrotestosterone in genital skin?",
+   "o": [
+    "5-alpha-reductase",
+    "Aromatase",
+    "21-hydroxylase",
+    "17-alpha-hydroxylase"
+   ],
+   "a": 0,
+   "why": "5-alpha-reductase turns testosterone into dihydrotestosterone (DHT), the more potent androgen that builds the penis, scrotum and prostate. Its deficiency leaves a 46,XY newborn with ambiguous genitalia despite normal testosterone.",
+   "w": {
+    "Aromatase": "Aromatase turns androgens into estrogens, so it lowers androgen action. Its placental deficiency virilizes a 46,XX fetus instead.",
+    "21-hydroxylase": "21-hydroxylase works in the adrenal cortisol pathway. Its deficiency shunts precursors into adrenal androgens and causes congenital adrenal hyperplasia.",
+    "17-alpha-hydroxylase": "17-alpha-hydroxylase is needed to make androgens in the first place. Its deficiency lowers testosterone rather than converting it."
+   }
+  },
+  {
+   "q": "Which karyotype is found in a man with Klinefelter syndrome?",
+   "o": [
+    "47,XXY",
+    "45,X",
+    "47,XYY",
+    "46,XY"
+   ],
+   "a": 0,
+   "why": "Klinefelter syndrome is 47,XXY from meiotic nondisjunction. The extra X damages the seminiferous tubules, giving small firm testes, infertility, low testosterone and high FSH and LH.",
+   "w": {
+    "45,X": "45,X is Turner syndrome, a phenotypic female with streak ovaries, short stature and primary amenorrhea.",
+    "47,XYY": "47,XYY men are tall but have normal testes, normal hormone levels and normal fertility in most cases.",
+    "46,XY": "46,XY is the usual male karyotype. It is also found in Swyer syndrome and androgen insensitivity, which look female."
+   }
+  },
+  {
+   "q": "A 46,XY person has functioning testes but no working androgen receptors. Which structure is absent?",
+   "o": [
+    "Uterus",
+    "Testes",
+    "Breast tissue",
+    "Lower vagina"
+   ],
+   "a": 0,
+   "why": "The testes still make anti-Müllerian hormone, which acts through its own receptor and removes the Müllerian ducts. So a person with androgen insensitivity has no uterus, while breasts grow from aromatized testosterone.",
+   "w": {
+    "Testes": "The testes are present in androgen insensitivity, usually in the abdomen or inguinal canal, and they secrete plenty of testosterone.",
+    "Breast tissue": "Breasts develop at puberty because the high testosterone is aromatized to estradiol, and estrogen receptors work normally.",
+    "Lower vagina": "The lower vagina comes from the urogenital sinus, so it forms as a short blind pouch even without a uterus above it."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "What separates genotypic sex, phenotypic sex and gender identity?"
+  ],
+  [
+   "p",
+   "Sex has layers. A disorder of sex development (DSD) is a congenital condition in which those layers do not line up in the usual way. **Genotypic sex** is the karyotype, fixed at fertilization by whether the sperm carries an X or a Y. Gonadal sex is whether the gonad becomes a testis or an ovary. **Phenotypic sex** is the body that hormones build: the internal ducts, the external genitalia and, later, the secondary sex characteristics. **Gender identity** is a person's inner sense of being a woman, a man or another gender. It cannot be read from the karyotype or the anatomy, so clinicians ask rather than assume. Sexual orientation, whom a person is attracted to, is a separate axis."
+  ],
+  [
+   "f",
+   "rp6_layers"
+  ],
+  [
+   "p",
+   "Phenotypic sex follows a short chain of signals, and each DSD is a break at one link. The **SRY** gene on the Y chromosome turns the gonad into a testis. Sertoli cells then secrete anti-Müllerian hormone (AMH), which makes the Müllerian ducts regress, so a uterus forms only when AMH is missing. Leydig cells make testosterone, which keeps the Wolffian ducts. In genital skin, 5-alpha-reductase converts testosterone to **dihydrotestosterone** (DHT), which builds the penis and scrotum. Both androgens act through the same **androgen receptor**. Female development is the default. A break in this chain therefore moves a 46,XY fetus toward a female or ambiguous body. Extra androgen moves a 46,XX fetus toward a male one."
+  ],
+  [
+   "f",
+   "rp6_signals"
+  ],
+  [
+   "call",
+   "key",
+   "Four facts locate every disorder of sex development",
+   "Ask four questions in order. What is the karyotype? Is the gonad a testis, an ovary or a **streak**? Is there a uterus, which tells you whether AMH was made? What are the testosterone and DHT levels, which tell you whether androgen was made and whether it could act? The one link these facts leave broken is the diagnosis."
+  ],
+  [
+   "h",
+   "Why can a 46,XY child with testes look female?"
+  ],
+  [
+   "p",
+   "In complete {{rp6_ais|androgen insensitivity syndrome}} (CAIS), an X-linked defect in the androgen receptor means that testosterone and DHT are made but cannot act. It is the most common cause of 46,XY DSD. The testes still secrete AMH, so there is no uterus or upper vagina, and the lower vagina ends as a **blind vaginal pouch**. Without androgen action the Wolffian ducts regress and the external genitalia are female. The hypothalamus and pituitary also cannot sense testosterone, so LH and testosterone climb. Much of that testosterone is aromatized to estradiol, which grows normal breasts at puberty. Pubic and axillary hair need androgen action, so they stay **scant**."
+  ],
+  [
+   "p",
+   "Complete androgen insensitivity usually comes to attention as a girl with breasts and primary amenorrhea, or an infant girl with an inguinal hernia that contains a testis. The testes carry a low tumor risk before puberty. They are often left in place until puberty is complete, then removed, and estrogen replacement follows."
+  ],
+  [
+   "p",
+   "In {{rp6_5ard|5-alpha-reductase deficiency}}, an autosomal recessive defect, testosterone is normal but DHT is low, so the **testosterone-to-DHT ratio** is high. Testosterone alone is enough for the Wolffian ducts, and AMH still removes the uterus. The external genitalia depend on DHT, so the newborn has ambiguous genitalia: a small phallus, hypospadias, a bifid scrotum and a blind vaginal pouch. At **puberty** the testosterone surge is large enough to act on the receptor directly, so the child **virilizes**. The phallus grows, the voice deepens and muscle mass increases, while beard growth and the prostate stay small."
+  ],
+  [
+   "p",
+   "**Swyer syndrome** is 46,XY pure gonadal dysgenesis, classically from a mutation or deletion of SRY. The gonad never becomes a testis. It stays a fibrous {{rp6_streak|streak gonad}} that makes neither AMH nor testosterone. Without AMH a uterus and fallopian tubes form, and without testosterone the genitalia are female. At puberty there is no estrogen, so the girl has no breast development and primary amenorrhea. FSH and LH are high because nothing feeds back on the pituitary. A dysgenetic gonad that contains Y material carries a high risk of **gonadoblastoma**, so the streaks are removed."
+  ],
+  [
+   "f",
+   "rp6_dsd"
+  ],
+  [
+   "t",
+   [
+    "Condition",
+    "Karyotype and gonad",
+    "Uterus",
+    "Testosterone and DHT",
+    "LH",
+    "Genitalia at birth"
+   ],
+   [
+    [
+     "Complete androgen insensitivity",
+     "46,XY; testes",
+     "Absent, because AMH is made",
+     "Both high or normal",
+     "High",
+     "Female, blind vaginal pouch"
+    ],
+    [
+     "5-alpha-reductase deficiency",
+     "46,XY; testes",
+     "Absent",
+     "Testosterone normal, **DHT low**",
+     "Normal",
+     "Ambiguous; virilizes at puberty"
+    ],
+    [
+     "Swyer syndrome",
+     "46,XY; streak gonads",
+     "Present, because no AMH is made",
+     "Both low",
+     "High",
+     "Female"
+    ],
+    [
+     "17-alpha-hydroxylase deficiency",
+     "46,XY; testes",
+     "Absent, because AMH is made",
+     "Both low",
+     "High",
+     "Female or ambiguous; hypertension, low potassium"
+    ],
+    [
+     "21-hydroxylase deficiency (CAH)",
+     "46,XX; ovaries",
+     "Present",
+     "Adrenal androgens high",
+     "Not raised",
+     "Virilized"
+    ],
+    [
+     "11-beta-hydroxylase deficiency (CAH)",
+     "46,XX; ovaries",
+     "Present",
+     "Adrenal androgens high",
+     "Not raised",
+     "Virilized; hypertension"
+    ],
+    [
+     "Placental aromatase deficiency",
+     "46,XX; ovaries",
+     "Present",
+     "Androgens high, **estrogen low**",
+     "High at puberty",
+     "Virilized; mother virilized too"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "Breasts without a uterus is not always Müllerian agenesis",
+   "Complete androgen insensitivity and Müllerian agenesis (46,XX) both cause primary amenorrhea with breasts, no uterus and a blind vaginal pouch. **Pubic hair** separates them. It is scant in androgen insensitivity and normal in Müllerian agenesis. A 46,XY karyotype with male-range testosterone confirms androgen insensitivity, while Müllerian agenesis has ovaries and female-range testosterone."
+  ],
+  [
+   "h",
+   "How does a 46,XX fetus become virilized?"
+  ],
+  [
+   "p",
+   "**Congenital adrenal hyperplasia** (CAH) is the most common cause of ambiguous genitalia in a 46,XX newborn. In 21-hydroxylase deficiency the adrenal cannot make cortisol, so ACTH rises and the stalled precursors are shunted into adrenal androgens. The androgen enlarges the clitoris and partly fuses the labioscrotal folds. The internal organs stay female, with ovaries, a uterus and tubes, because no testis ever made AMH. Severe forms also waste salt and can cause shock in the first weeks of life, and 17-hydroxyprogesterone is high. The enzyme details are covered with the adrenal gland."
+  ],
+  [
+   "p",
+   "Placental **aromatase deficiency** virilizes a 46,XX fetus from a different source. The fetal adrenal makes DHEA sulfate, and the placenta normally aromatizes it into estrogens. Without placental aromatase the androgens build up. The fetus is virilized, and the mother develops acne, hirsutism and a deeper voice during pregnancy that fade after delivery. At puberty the girl still lacks aromatase, so she has no breast development, primary amenorrhea, high FSH and LH, and ovarian cysts. Because estrogen closes the growth plates, her bone age lags and she keeps growing tall."
+  ],
+  [
+   "why",
+   "Why is the mother virilized in placental aromatase deficiency but not in fetal CAH?",
+   "In both disorders the fetus meets excess androgen, but the placenta decides whether the mother does. Normally the placenta aromatizes fetal adrenal DHEA sulfate into estrogens. In fetal CAH, placental aromatase is intact and converts most of the extra fetal androgen to estrogen, so the mother is shielded. In placental aromatase deficiency that shield is broken. Androgens reach the mother unconverted, and her estrogen is low. Maternal virilization in pregnancy therefore points to the placenta rather than the fetal adrenal."
+  ],
+  [
+   "p",
+   "The mother can be the source as well. Androgenic drugs taken in early pregnancy, or an androgen-secreting tumor of the mother, virilize a 46,XX fetus in the same way, and the tumor also virilizes the mother."
+  ],
+  [
+   "h",
+   "Which enzyme blocks cause hypertension instead of salt loss?"
+  ],
+  [
+   "p",
+   "Two rarer enzyme blocks matter because they add hypertension. In 11-beta-hydroxylase deficiency a 46,XX fetus is virilized as in 21-hydroxylase deficiency, but 11-deoxycorticosterone, a mineralocorticoid, builds up, so blood pressure rises instead of salt being lost. In 17-alpha-hydroxylase deficiency no sex steroids can be made at all. A 46,XY fetus then has female or ambiguous external genitalia, undescended testes and no uterus, because AMH still acts, and neither sex enters puberty, while excess mineralocorticoid causes hypertension and hypokalemia."
+  ],
+  [
+   "h",
+   "What do Turner and Klinefelter syndromes do to the gonads?"
+  ],
+  [
+   "p",
+   "**Turner syndrome** (45,X, or a mosaic such as 45,X/46,XX) results when one sex chromosome is lost, and its risk does not rise with maternal age. The chromosome is usually lost in the father's sperm through a meiotic error, which explains the lack of an age effect; a loss after fertilization, a mitotic error, gives a mosaic. Oocytes form but die off quickly, so by puberty the ovaries are streaks that make no estrogen. The girl has primary amenorrhea, absent breast development and high FSH and LH, which is **hypergonadotropic** hypogonadism. Pubic hair still appears because the adrenal glands are normal."
+  ],
+  [
+   "p",
+   "Short stature comes from loss of one copy of the SHOX gene and is treated with growth hormone. The dangerous findings are cardiovascular: a bicuspid aortic valve, **coarctation** of the aorta with arm pressure above leg pressure, and aortic dilation that can dissect. A horseshoe kidney and a shield chest with widely spaced nipples complete the picture."
+  ],
+  [
+   "steps",
+   [
+    "How a fetal lymphatic defect becomes a webbed neck",
+    [
+     [
+      "The jugular lymph sacs fail to drain",
+      "In Turner syndrome the lymphatic channels of the neck do not connect normally to the jugular veins, so lymph collects behind the fetal neck."
+     ],
+     [
+      "Ultrasound shows a cystic hygroma",
+      "The collection appears on first-trimester ultrasound as a {{rp6_hygroma|cystic hygroma}} with increased nuchal translucency. This is a prenatal clue that prompts a karyotype."
+     ],
+     [
+      "The fluid drains and leaves loose skin",
+      "As the fetus grows the fluid is resorbed, but the stretched skin remains as a webbed neck with a low posterior hairline."
+     ],
+     [
+      "Limb lymphatics stay hypoplastic",
+      "The same defect in the limbs causes puffy lymphedema of the hands and feet at birth, often the first clue in a newborn girl."
+     ]
+    ]
+   ]
+  ],
+  [
+   "p",
+   "In Turner syndrome a mosaic with a Y cell line (45,X/46,XY) carries the same gonadoblastoma risk as Swyer syndrome, so the streak gonads are removed. Pregnancy is still possible with assisted reproduction, usually with donor oocytes, once estradiol and progesterone have prepared the uterus."
+  ],
+  [
+   "p",
+   "**Klinefelter syndrome** (47,XXY) is the most common cause of primary hypogonadism in men and comes from meiotic nondisjunction. The extra X damages the seminiferous tubules, which hyalinize and scar. The testes are small and firm, and the man is infertile with {{rp6_azoo|azoospermia}}. Sertoli cell loss lowers **inhibin** B, so FSH rises. Leydig cell failure lowers testosterone, so LH rises. The high LH drives testicular aromatase, so estradiol rises relative to testosterone. The result is gynecomastia, a female pattern of hair and fat, and a higher risk of male breast cancer. Low testosterone delays closure of the growth plates, so he is tall with long legs. Language and learning delays can occur, although intelligence is usually normal. The inactivated extra X shows as a {{rp6_barr|Barr body}}."
+  ],
+  [
+   "f",
+   "rp6_sexchrom"
+  ],
+  [
+   "h",
+   "Which rarer disorders complete the differential?"
+  ],
+  [
+   "p",
+   "**Kallmann syndrome** is a failure of GnRH neurons to migrate from the olfactory placode to the hypothalamus. The olfactory neurons travel the same path and fail with them, so the patient has **anosmia**. Without GnRH, FSH, LH and sex steroids are all low, puberty does not start, and the karyotype is normal."
+  ],
+  [
+   "p",
+   "Three variants round out the list. **XYY syndrome** (47,XYY) comes from nondisjunction at paternal meiosis II. The man is tall and often has severe acne and mild learning or behavioral difficulties. His testes, hormones and fertility are normal, so it is usually found by chance. In 46,XX testicular DSD, SRY crossed onto an X chromosome during paternal meiosis, so a 46,XX person develops testes and a male body. Lacking the other Y genes, he has small testes and no sperm. In **ovotesticular** DSD one person has both ovarian and testicular tissue, often in one ovotestis, with ambiguous genitalia. The karyotype is most often 46,XX."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp6_cais",
+    "q": "A 46,XY teenager has breasts, no uterus and scant pubic hair. Which reasoning best explains all three findings?",
+    "o": [
+     "An SRY deletion stopped testis formation, so no hormones were made and female structures developed by default",
+     "Testes made AMH and testosterone, but a defective androgen receptor blocked androgen action while aromatized testosterone grew breasts",
+     "A 5-alpha-reductase defect lowered DHT, so the genitalia looked female and the breasts grew from unopposed estrogen",
+     "Ovaries developed despite the Y chromosome and made estrogen, while the Müllerian ducts failed to fuse"
+    ],
+    "a": 1,
+    "why": "The absent uterus means a testis made AMH, which rules out an SRY deletion, because Swyer syndrome leaves a uterus. Breasts need estrogen, which here comes from the high testosterone, driven by high LH, being aromatized. Scant pubic hair means androgen was present but could not act. A 5-alpha-reductase defect would instead virilize the child at puberty."
+   }
+  ],
+  [
+   "vis",
+   "rp6"
+  ]
+ ],
+ "grid": {
+  "q": "Which pairings of disorder and finding are correct?",
+  "items": [
+   [
+    "Turner syndrome: coarctation of the aorta",
+    1
+   ],
+   [
+    "Turner syndrome: horseshoe kidney",
+    1
+   ],
+   [
+    "Klinefelter syndrome: Barr body present",
+    1
+   ],
+   [
+    "Klinefelter syndrome: low inhibin B",
+    1
+   ],
+   [
+    "Swyer syndrome: uterus present",
+    1
+   ],
+   [
+    "Complete androgen insensitivity: breast development at puberty",
+    1
+   ],
+   [
+    "5-alpha-reductase deficiency: virilization at puberty",
+    1
+   ],
+   [
+    "Placental aromatase deficiency: maternal virilization",
+    1
+   ],
+   [
+    "Kallmann syndrome: anosmia",
+    1
+   ],
+   [
+    "Turner syndrome: tall stature",
+    0
+   ],
+   [
+    "Klinefelter syndrome: low FSH",
+    0
+   ],
+   [
+    "Swyer syndrome: breast development at puberty",
+    0
+   ],
+   [
+    "Complete androgen insensitivity: uterus present",
+    0
+   ],
+   [
+    "Kallmann syndrome: high LH",
+    0
+   ],
+   [
+    "47,XYY syndrome: tall stature with normal fertility",
+    1
+   ],
+   [
+    "Complete androgen insensitivity: gonadectomy after puberty",
+    1
+   ]
+  ]
+ }
+}

@@ -66,7 +66,15 @@
     ]
    ]
   ],
-  "bl": "An anencephalic fetus lacks the ACTH drive to its adrenal cortex, so estriol stays low and labor is delayed past term."
+  "bl": "An anencephalic fetus lacks the ACTH drive to its adrenal cortex, so estriol stays low and labor is delayed past term.",
+  "ef": "rp28_onset",
+  "pt": {
+   "hl": [
+    "Fetal ACTH drives the adrenal cortex",
+    "Anencephaly: no fetal ACTH, small adrenals, low estriol,"
+   ],
+   "say": "Step 2 shows fetal ACTH driving the adrenal cortex, and the note below the steps says anencephaly removes that ACTH, leaving small adrenals and low estriol, so labor does not start and the pregnancy runs past term."
+  }
  },
  {
   "id": "rp28q02",
@@ -134,7 +142,15 @@
     ]
    ]
   ],
-  "bl": "No cervical change at 6 cm or more for 4 hours despite adequate contractions defines active-phase arrest."
+  "bl": "No cervical change at 6 cm or more for 4 hours despite adequate contractions defines active-phase arrest.",
+  "ef": "rp28_stages",
+  "pt": {
+   "hl": [
+    "Arrest",
+    "Arrest: no change for 4 hours at 6 cm or more"
+   ],
+   "say": "The arrest line is flat: no cervical change for 4 hours at 6 cm or more despite adequate contractions, which matches her unchanged 7 cm after 4 hours of strong contractions, so this is active-phase arrest."
+  }
  },
  {
   "id": "rp28q03",
@@ -202,7 +218,14 @@
     ]
    ]
   ],
-  "bl": "After the head is born by extension, external rotation (restitution) turns it sideways before the shoulders deliver."
+  "bl": "After the head is born by extension, external rotation (restitution) turns it sideways before the shoulders deliver.",
+  "ef": "rp28_birth",
+  "pt": {
+   "hl": [
+    "External rotation"
+   ],
+   "say": "After the head is born, step 5 is external rotation, also called restitution: the head turns back sideways to line up with the shoulders, and then the shoulders and the body are expelled."
+  }
  },
  {
   "id": "rp28q04",
@@ -271,7 +294,15 @@
     ]
    ]
   ],
-  "bl": "An unripe cervix after a prior cesarean is ripened with a transcervical balloon, because misoprostol raises the risk of uterine rupture."
+  "bl": "An unripe cervix after a prior cesarean is ripened with a transcervical balloon, because misoprostol raises the risk of uterine rupture.",
+  "ef": "rp28_onset",
+  "pt": {
+   "hl": [
+    "Transcervical balloon",
+    "Mechanical ripening, used after a prior"
+   ],
+   "say": "With a prior cesarean and an unripe cervix, the card shows a transcervical balloon, which ripens the cervix mechanically because prostaglandins such as misoprostol and dinoprostone are avoided after a cesarean."
+  }
  },
  {
   "id": "rp28q05",
@@ -486,7 +517,15 @@
     ]
    ]
   ],
-  "bl": "Shoulder dystocia traction on the head stretches C5 and C6, the upper trunk, producing the waiter's tip of Erb palsy with an intact grasp."
+  "bl": "Shoulder dystocia traction on the head stretches C5 and C6, the upper trunk, producing the waiter's tip of Erb palsy with an intact grasp.",
+  "ef": "rp28_birth",
+  "pt": {
+   "hl": [
+    "Erb palsy",
+    "Upper trunk, C5 and C6"
+   ],
+   "say": "The Erb palsy card pairs a hard pull on the head with injury to the upper trunk, C5 and C6, which produces the waiter’s tip posture of an extended elbow and flexed wrist seen in this newborn."
+  }
  },
  {
   "id": "rp28q08",
@@ -555,7 +594,15 @@
     ]
    ]
   ],
-  "bl": "Klumpke palsy from traction on an overhead arm injures C8 and T1, so a claw hand comes with ptosis and a constricted pupil."
+  "bl": "Klumpke palsy from traction on an overhead arm injures C8 and T1, so a claw hand comes with ptosis and a constricted pupil.",
+  "ef": "rp28_birth",
+  "pt": {
+   "hl": [
+    "Klumpke palsy",
+    "Horner syndrome: ptosis, constricted pupil"
+   ],
+   "say": "The Klumpke palsy card pairs an arm pulled above the head with injury to the lower trunk, C8 and T1, giving a claw hand and sometimes Horner syndrome: ptosis with a constricted pupil on the same side."
+  }
  },
  {
   "id": "rp28q09",
@@ -623,7 +670,14 @@
     ]
    ]
   ],
-  "bl": "Any tear into the external anal sphincter with intact anorectal mucosa is a third-degree perineal laceration."
+  "bl": "Any tear into the external anal sphincter with intact anorectal mucosa is a third-degree perineal laceration.",
+  "ef": "rp28_birth",
+  "pt": {
+   "hl": [
+    "Third degree: external anal sphincter"
+   ],
+   "say": "A tear through the perineal body that also goes partly through the external anal sphincter is a third-degree laceration, and because the rectal lining is intact it is not a fourth-degree tear."
+  }
  },
  {
   "id": "rp28q10",
@@ -845,7 +899,14 @@
     ]
    ]
   ],
-  "bl": "Suckling-driven prolactin suppresses GnRH pulses, so an exclusively breastfeeding mother within 6 months of delivery has lactational amenorrhea."
+  "bl": "Suckling-driven prolactin suppresses GnRH pulses, so an exclusively breastfeeding mother within 6 months of delivery has lactational amenorrhea.",
+  "ef": "rp28_milk",
+  "pt": {
+   "hl": [
+    "Suckling prolactin suppresses GnRH"
+   ],
+   "say": "The last box shows suckling-driven prolactin suppressing GnRH, which causes lactational amenorrhea and protects against pregnancy during exclusive nursing for up to 6 months."
+  }
  },
  {
   "id": "rp28q13",
@@ -914,7 +975,15 @@
     ]
    ]
   ],
-  "bl": "Depressive symptoms lasting 2 weeks or more after delivery, without psychosis and with normal thyroid tests, indicate postpartum depression rather than blues."
+  "bl": "Depressive symptoms lasting 2 weeks or more after delivery, without psychosis and with normal thyroid tests, indicate postpartum depression rather than blues.",
+  "ef": "rp28_milk",
+  "pt": {
+   "hl": [
+    "Postpartum depression",
+    "Lasts longer and needs treatment"
+   ],
+   "say": "Her low mood, guilt, poor sleep and lost interest have lasted 3 weeks without psychosis, so this is postpartum depression, which lasts longer than the blues and needs treatment."
+  }
  },
  {
   "id": "rp28q14",

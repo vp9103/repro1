@@ -1,0 +1,420 @@
+{
+ "id": "rp14",
+ "t": "The uterus: endometrium and myometrium",
+ "sub": "How unopposed estrogen builds endometrial hyperplasia and type I cancer, how fibroids and adenomyosis differ, and where endometriosis hides.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 11,
+ "bp": [
+  "BP-rp14-01",
+  "BP-rp14-02",
+  "BP-rp14-03",
+  "BP-rp14-04",
+  "BP-rp14-05",
+  "BP-rp14-06",
+  "BP-rp14-07",
+  "BP-rp14-08",
+  "BP-rp14-09",
+  "BP-rp14-10",
+  "BP-rp14-11",
+  "BP-rp14-12",
+  "BP-rp14-13",
+  "BP-rp14-14",
+  "BP-rp14-15"
+ ],
+ "obj": [
+  "HP-UTERUS-OVARY.3",
+  "HP-UTERUS-OVARY.5",
+  "HP-UTERUS-OVARY.6",
+  "HP-UTERUS-OVARY.7",
+  "HP-UTERUS-OVARY.8",
+  "HP-UTERUS-OVARY.9",
+  "MDR-REVIEW.1",
+  "MDR-REVIEW.2",
+  "SIM-COLPO.2",
+  "BICEP-WILLIAMS.7",
+  "BICEP-WILLIAMS.10",
+  "BICEP-WILLIAMS.12",
+  "BICEP-WILLIAMS.13",
+  "BICEP-BROWN.2",
+  "GYN-ONC.1",
+  "GYN-ONC.2",
+  "GYN-ONC.3"
+ ],
+ "pretest": [
+  {
+   "q": "Which finding in endometrial hyperplasia best predicts progression to carcinoma?",
+   "o": [
+    "Cytologic atypia",
+    "Cystic gland dilation",
+    "Crowded glands",
+    "Stromal mitoses"
+   ],
+   "a": 0,
+   "why": "Atypia means enlarged, rounded nuclei with prominent nucleoli. It separates atypical hyperplasia (EIN) from hyperplasia without atypia, and it marks a lesion that often coexists with or becomes endometrioid carcinoma.",
+   "w": {
+    "Cystic gland dilation": "Cystic dilation reflects retained secretions in proliferative glands. It is common in benign hyperplasia without atypia, which rarely progresses to cancer.",
+    "Crowded glands": "Crowding defines hyperplasia in the first place and occurs in both low-risk and high-risk forms, so it cannot tell which lesions will turn malignant. The nuclei decide that.",
+    "Stromal mitoses": "Stromal mitoses occur normally in the proliferative phase under estrogen and in benign hyperplasia. They signal estrogen drive, not neoplastic change in the glandular cells."
+   }
+  },
+  {
+   "q": "Which molecular alteration is an early, central event in serous endometrial carcinoma?",
+   "o": [
+    "TP53 mutation",
+    "PTEN loss",
+    "Mismatch repair defect",
+    "MED12 mutation"
+   ],
+   "a": 0,
+   "why": "Serous carcinoma arises in atrophic endometrium from a TP53-mutated precursor, which gives strong p53 staining and aggressive behavior. PTEN and mismatch repair changes belong to estrogen-driven endometrioid carcinoma.",
+   "w": {
+    "PTEN loss": "PTEN loss is an early event in estrogen-driven endometrioid carcinoma and atypical hyperplasia, which arise in obese, perimenopausal women, not in the atrophic endometrium of serous tumors.",
+    "Mismatch repair defect": "Defective mismatch repair, sporadic or inherited in Lynch syndrome, causes microsatellite instability in endometrioid tumors. Serous carcinoma is driven by TP53 loss instead.",
+    "MED12 mutation": "MED12 mutations are common in leiomyomas, which are benign smooth muscle tumors of the myometrium. They do not drive serous carcinoma of the endometrium."
+   }
+  },
+  {
+   "q": "Which lesion consists of endometrial glands and stroma lying within the myometrium?",
+   "o": [
+    "Adenomyosis",
+    "Leiomyoma",
+    "Endometriosis",
+    "Endometrial polyp"
+   ],
+   "a": 0,
+   "why": "Adenomyosis is endometrial tissue embedded in the uterine wall, where it thickens the muscle and makes a globular, tender uterus. Endometriosis lies outside the uterus, and a leiomyoma is a pure smooth muscle tumor.",
+   "w": {
+    "Leiomyoma": "A leiomyoma is a benign, whorled smooth muscle tumor with no glands. It makes a lumpy, asymmetric uterus rather than diffuse globular enlargement, and it shrinks after menopause.",
+    "Endometriosis": "Endometriosis places glands and stroma outside the uterus, on the ovaries and peritoneum, so the uterus stays normal in size and its muscular wall is not involved.",
+    "Endometrial polyp": "A polyp is a local overgrowth of glands and stroma that projects into the cavity and causes irregular bleeding. It does not extend into the muscle layer."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Why does estrogen without progesterone threaten the endometrium?"
+  ],
+  [
+   "p",
+   "The uterine wall has two working layers. The **myometrium** is smooth muscle that contracts. The **endometrium** is the lining, and its surface layer, the functionalis, is rebuilt every cycle from a deeper layer, the basalis. In the proliferative phase, estrogen makes the endometrial glands lengthen and divide. After ovulation the corpus luteum makes progesterone, which stops this growth and turns the glands secretory. When progesterone falls, the functionalis sheds. If ovulation fails, progesterone never arrives and estrogen keeps driving cell division. This is **unopposed estrogen**, and it causes endometrial hyperplasia and most endometrial cancer."
+  ],
+  [
+   "f",
+   "rp14_estrogen"
+  ],
+  [
+   "p",
+   "Unopposed estrogen has three sources: more estrogen, more years of exposure, or too little progesterone. **Obesity** is the most common, because fat tissue contains aromatase, the enzyme that converts androgens to estrogen. Anovulation removes progesterone, as in polycystic ovary syndrome (PCOS) and the perimenopause. Estrogen-secreting granulosa cell tumors and estrogen-only hormone therapy add estrogen, and tamoxifen acts as a partial estrogen agonist in the endometrium. Early menarche, late menopause and nulliparity lengthen exposure, and diabetes adds risk. Progestins, **combined oral contraceptives** and pregnancy protect, because they supply progesterone or suppress ovulation."
+  ],
+  [
+   "p",
+   "PCOS shows this mechanism clearly. Insulin resistance makes the ovaries produce extra androgens, which stop follicles from maturing. Ovulation fails and no progesterone is made. Fat tissue also converts the androgens to estrone, so the endometrium sees constant, unopposed estrogen. These women have a higher risk of hyperplasia and endometrial cancer, even in their twenties and thirties, and a progestin protects the lining."
+  ],
+  [
+   "why",
+   "Why does estrogen without progesterone lead from hyperplasia to cancer?",
+   "Estrogen switches on genes for cell division, so the lining keeps adding dividing cells. Progesterone is the brake: it stops division, matures the glands and, when it falls, triggers shedding that resets the lining. Without ovulation the brake never engages, so the glands crowd and every extra division is another chance for a mutation. Early hits such as PTEN loss let crowded glands escape growth control, and atypia appears as mutations accumulate."
+  ],
+  [
+   "h",
+   "How does hyperplasia progress to endometrioid carcinoma?"
+  ],
+  [
+   "p",
+   "Endometrial hyperplasia is an overgrowth of glands, so the glands crowd together and the gland-to-stroma ratio rises. **Hyperplasia without atypia** has crowded, sometimes cystic glands with normal nuclei. Its cancer risk is low, and a progestin can reverse it, because progesterone restores the brake on growth. **Hyperplasia with atypia**, also called {{rp14_ein|endometrial intraepithelial neoplasia}} (EIN), has enlarged, rounded nuclei with prominent nucleoli, often with PTEN loss. It frequently coexists with carcinoma, so cytologic **atypia** is the best predictor of cancer. A biopsy that shows atypia prompts a search for a tumor that was missed. It is treated by hysterectomy, or by high-dose progestin with close follow-up if the patient wants to keep fertility."
+  ],
+  [
+   "img",
+   "rp14_hyperplasia"
+  ],
+  [
+   "h",
+   "How do type I and type II endometrial carcinoma differ?"
+  ],
+  [
+   "p",
+   "**Endometrial carcinoma** is the most common gynecologic cancer in the United States, although ovarian cancer has a worse prognosis because it is usually found late. It usually presents with postmenopausal bleeding, so many cases are found early. About 80 percent are **type I** endometrioid carcinomas, which grow slowly from atypical hyperplasia after years of estrogen exposure. Most of the rest are **type II** serous or clear cell carcinomas, which arise in the atrophic endometrium of older, thin women and spread early. Prognosis depends mainly on stage, especially how deeply the tumor invades the myometrium."
+  ],
+  [
+   "f",
+   "rp14_types"
+  ],
+  [
+   "t",
+   [
+    "Feature",
+    "Type I endometrioid",
+    "Type II serous or clear cell"
+   ],
+   [
+    [
+     "Patient",
+     "Obese, perimenopausal or early postmenopausal",
+     "Thin, older"
+    ],
+    [
+     "Estrogen link",
+     "Unopposed estrogen; atypical hyperplasia precursor",
+     "None; atrophic endometrium"
+    ],
+    [
+     "Early molecular event",
+     "PTEN loss, microsatellite instability",
+     "TP53 mutation, with strong p53 staining"
+    ],
+    [
+     "Histology",
+     "Glands like proliferative endometrium",
+     "Papillae, marked atypia, psammoma bodies"
+    ],
+    [
+     "Behavior",
+     "Slow growing, low grade, good prognosis",
+     "Aggressive, high grade, early peritoneal spread"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "How is postmenopausal bleeding evaluated?"
+  ],
+  [
+   "p",
+   "Postmenopausal bleeding is any bleeding after 12 months without a period, and about 1 in 10 of these women has endometrial cancer. The most common cause is atrophy of the endometrium or vagina, followed by polyps and estrogen exposure. Hyperplasia and carcinoma are less common but must not be missed, so the work-up is built around finding them."
+  ],
+  [
+   "steps",
+   [
+    "Evaluating postmenopausal bleeding step by step",
+    [
+     [
+      "Look for other sources",
+      "Examine the vulva, vagina and cervix first, because bleeding from atrophy or a cervical lesion can look uterine."
+     ],
+     [
+      "Measure and sample the lining",
+      "As of 2026, ACOG advises both transvaginal ultrasound and endometrial sampling at the first evaluation for most patients, because endometrial cancer must be excluded. Ultrasound alone is acceptable only for a single episode with a fully seen stripe of 4 mm or less, no significant risk factors and reliable prompt follow-up. Sampling is an office **endometrial biopsy**."
+     ],
+     [
+      "Escalate when the blind sample fails",
+      "If the office biopsy is inadequate, or bleeding continues after a benign result, the cavity is viewed or scraped directly."
+     ]
+    ]
+   ]
+  ],
+  [
+   "t",
+   [
+    "Procedure",
+    "What it samples",
+    "When it is used"
+   ],
+   [
+    [
+     "Endometrial biopsy",
+     "A suction sample of the lining, taken blindly in the office",
+     "First test; a positive result is reliable"
+    ],
+    [
+     "**Hysteroscopy** with biopsy",
+     "A direct view of the cavity, with targeted samples",
+     "A focal lesion such as a polyp, or an inadequate office sample"
+    ],
+    [
+     "**Dilation and curettage** (D&C)",
+     "A scraping of the whole lining under anesthesia",
+     "An inadequate office sample, or removal of retained tissue"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Where do Lynch syndrome, Cowden syndrome and carcinosarcoma fit?"
+  ],
+  [
+   "p",
+   "**Lynch syndrome** is an autosomal dominant germline defect in a DNA {{rp14_mmr|mismatch repair}} gene, most often MLH1 or MSH2. Unrepaired replication errors cause microsatellite instability. Carriers get colorectal cancer most often, and the endometrium is the next most common site, followed by the ovary. **Cowden syndrome** is a different inherited route. A germline PTEN mutation causes hamartomas and raises the risk of breast, thyroid and endometrial cancer."
+  ],
+  [
+   "p",
+   "**Carcinosarcoma**, also called malignant mixed Müllerian tumor, is a **biphasic** tumor, with a malignant epithelial part and a malignant mesenchymal part. The uterine epithelium and stroma both come from the Müllerian ducts, so one tumor can contain both. It occurs after menopause, usually carries TP53 mutations, behaves like high-grade serous carcinoma, and is more common with tamoxifen use."
+  ],
+  [
+   "call",
+   "trap",
+   "Endometrial cancer can be the first Lynch cancer",
+   "Do not wait for a colon cancer before thinking of Lynch syndrome. The endometrial cancer often comes first, usually an **endometrioid** tumor with lost mismatch repair staining. An elderly, thin woman with a papillary, p53-mutated serous tumor has sporadic type II disease instead."
+  ],
+  [
+   "h",
+   "How do leiomyoma, leiomyosarcoma and adenomyosis differ?"
+  ],
+  [
+   "p",
+   "A **leiomyoma**, or fibroid, is the most common tumor in women. It is a benign, sharply circumscribed, gray-white nodule of smooth muscle with a firm, {{rp14_whorl|whorled}} cut surface. Estrogen drives its growth, so fibroids enlarge in pregnancy and shrink after menopause, and they are more common in Black women. Submucosal fibroids bulge into the cavity and cause heavy bleeding, miscarriage and infertility, while large intramural or subserosal ones cause pressure. A fibroid can outgrow its blood supply in pregnancy, causing painful red degeneration, and it essentially never turns into a sarcoma."
+  ],
+  [
+   "img",
+   "rp14_leiomyoma"
+  ],
+  [
+   "f",
+   "rp14_muscle"
+  ],
+  [
+   "p",
+   "**Leiomyosarcoma** is a rare malignant smooth muscle tumor that arises de novo, not from a fibroid. It is usually a solitary, soft, hemorrhagic, necrotic mass in a postmenopausal woman. Under the microscope it shows cytologic atypia, necrosis and many mitoses. It often recurs and spreads through the blood, usually to the lungs."
+  ],
+  [
+   "p",
+   "{{rp14_adenomyosis|Adenomyosis}} is not a tumor. Endometrial glands and stroma lie within the myometrium, and the muscle thickens around them. The uterus becomes uniformly enlarged, soft and globular, and heavy, painful periods are typical, usually in multiparous women in their 40s."
+  ],
+  [
+   "t",
+   [
+    "Feature",
+    "Leiomyoma",
+    "Leiomyosarcoma",
+    "Adenomyosis"
+   ],
+   [
+    [
+     "Number and age",
+     "Often multiple; reproductive years",
+     "Solitary; postmenopausal",
+     "Diffuse; 40s, multiparous"
+    ],
+    [
+     "Gross",
+     "Firm, whorled, sharp edge",
+     "Soft, hemorrhagic, necrotic",
+     "Boggy, globular uterus"
+    ],
+    [
+     "Microscopy",
+     "Bland spindle cells",
+     "Atypia, necrosis, mitoses",
+     "Glands and stroma between muscle bundles"
+    ],
+    [
+     "Course",
+     "Never becomes sarcoma",
+     "Spreads through blood to lung",
+     "Benign; hysterectomy is curative"
+    ]
+   ]
+  ],
+  [
+   "f",
+   "rp14_map"
+  ],
+  [
+   "h",
+   "What is endometriosis, and how is it treated?"
+  ],
+  [
+   "p",
+   "**Endometriosis** is endometrial glands and stroma outside the uterus. The ovary is the usual site, where repeated bleeding fills the cyst with old brown blood, called an {{rp14_endometrioma|endometrioma}} or chocolate cyst. Implants also stud the pelvic peritoneum as red-brown, powder-burn nodules. Most cases follow **retrograde menstruation**, in which menstrual blood flows backward through the tubes. Metaplasia of peritoneal cells and spread through lymphatics or blood explain unusual sites. The implants bleed with every cycle, so scarring and adhesions distort the pelvis. Patients have dysmenorrhea, dyspareunia, painful defecation and infertility, and the uterus is normal in size."
+  ],
+  [
+   "p",
+   "Biopsy shows endometrial glands and stroma, often with hemosiderin-laden macrophages. Treatment suppresses estrogen-driven growth. NSAIDs relieve pain, and combined oral contraceptives or progestins come next. For persistent pain, a **GnRH** agonist such as leuprolide desensitizes the pituitary and lowers FSH, LH and estradiol. The oral antagonist elagolix blocks the GnRH receptor directly. **Danazol**, a synthetic androgen, also suppresses gonadotropins. Its adverse effects are acne, hirsutism and voice deepening, weight gain, low HDL cholesterol and liver injury, and it also treats hereditary angioedema. Surgery removes the implants."
+  ],
+  [
+   "call",
+   "key",
+   "Uterine size separates endometriosis from adenomyosis",
+   "In endometriosis the tissue lies outside the uterus, so the uterus is normal in size, with cyclic pelvic pain and infertility. In adenomyosis the tissue lies inside the wall, so the whole uterus is soft and globular, with heavy, painful periods. Both depend on estrogen and often coexist."
+  ],
+  [
+   "h",
+   "Which benign endometrial problems appear on exams?"
+  ],
+  [
+   "p",
+   "An **endometrial polyp** is a focal overgrowth of glands and stroma on a fibrous core. It causes irregular bleeding and is more common with obesity and tamoxifen. Acute endometritis follows delivery, cesarean section or abortion, especially with retained products. It is polymicrobial, with neutrophils, fever and a tender uterus. Chronic endometritis is defined by **plasma cells** in the stroma and follows pelvic inflammatory disease, an IUD, retained tissue or tuberculosis. {{rp14_asherman|Asherman syndrome}} is scarring of the basalis with intrauterine adhesions after curettage or infection. The lining cannot rebuild, so the patient has secondary amenorrhea and infertility with normal hormone levels."
+  ],
+  [
+   "vis",
+   "rp14"
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp14_tamox",
+    "q": "A 56-year-old woman taking tamoxifen for breast cancer has vaginal spotting and a thick endometrial stripe. Which reasoning best explains the endometrial response?",
+    "o": [
+     "Tamoxifen blocks estrogen receptors everywhere, so the lining thins and bleeds from atrophy",
+     "Tamoxifen inhibits aromatase, so rising androgens overgrow the lining",
+     "Tamoxifen raises progesterone, so the lining turns secretory and sheds irregularly",
+     "Tamoxifen is a partial estrogen agonist in the endometrium, so the lining proliferates while the breast is blocked"
+    ],
+    "a": 3,
+    "why": "Tamoxifen is a selective estrogen receptor modulator, so its effect depends on the tissue. In breast cancer cells it blocks estrogen-driven growth, but in the endometrium it acts as a partial agonist and the lining proliferates without progesterone opposition. This explains polyps, hyperplasia and a modest rise in endometrial cancer, so new bleeding on tamoxifen needs endometrial sampling. Aromatase inhibitors lower estrogen everywhere and do not thicken the lining."
+   }
+  ]
+ ],
+ "grid": {
+  "q": "Which of these raise the risk of endometrial carcinoma?",
+  "items": [
+   [
+    "Obesity (adipose aromatase)",
+    1
+   ],
+   [
+    "Polycystic ovary syndrome",
+    1
+   ],
+   [
+    "Nulliparity: no full-term births",
+    1
+   ],
+   [
+    "Early menarche",
+    1
+   ],
+   [
+    "Late menopause",
+    1
+   ],
+   [
+    "Estrogen-only hormone therapy",
+    1
+   ],
+   [
+    "Tamoxifen use",
+    1
+   ],
+   [
+    "Diabetes mellitus",
+    1
+   ],
+   [
+    "Lynch syndrome",
+    1
+   ],
+   [
+    "Estrogen-secreting granulosa cell tumor",
+    1
+   ],
+   [
+    "Combined oral contraceptive use",
+    0
+   ],
+   [
+    "Progestin-releasing IUD use",
+    0
+   ],
+   [
+    "Several full-term pregnancies",
+    0
+   ],
+   [
+    "Raloxifene use",
+    0
+   ]
+  ]
+ }
+}

@@ -308,7 +308,15 @@
     ]
    ]
   ],
-  "bl": "Antipsychotics and metoclopramide cause galactorrhea by blocking dopamine D2 receptors, removing the brake on prolactin."
+  "bl": "Antipsychotics and metoclopramide cause galactorrhea by blocking dopamine D2 receptors, removing the brake on prolactin.",
+  "ef": "en3_prl",
+  "pt": {
+   "hl": [
+    "Antipsychotics (D2 block)",
+    "Galactorrhea from the breast"
+   ],
+   "say": "In the What lifts the brake list, antipsychotics block D2 receptors on the lactotroph, so the dopamine brake is lost, prolactin rises and galactorrhea follows, with GnRH suppressed and amenorrhea."
+  }
  },
  {
   "id": "rp23q05",
@@ -380,7 +388,15 @@
     ]
    ]
   ],
-  "bl": "Recurrent subareolar abscess with a fistula in a smoker is periductal mastitis from squamous metaplasia and keratin plugging."
+  "bl": "Recurrent subareolar abscess with a fistula in a smoker is periductal mastitis from squamous metaplasia and keratin plugging.",
+  "ef": "rp23_mimics",
+  "pt": {
+   "hl": [
+    "Smoke toxins: squamous metaplasia of duct lining",
+    "Keratin plugs the duct, which dilates and ruptures"
+   ],
+   "say": "The periductal mastitis card shows the mechanism: smoke toxins cause squamous metaplasia of the duct lining, and keratin plugs the duct until it ruptures, giving recurrent subareolar abscesses, a fistula and nipple inversion."
+  }
  },
  {
   "id": "rp23q06",
@@ -452,7 +468,15 @@
     ]
    ]
   ],
-  "bl": "A firm, calcified breast mass after trauma with foamy macrophages and calcium soaps is fat necrosis from saponification."
+  "bl": "A firm, calcified breast mass after trauma with foamy macrophages and calcium soaps is fat necrosis from saponification.",
+  "ef": "rp23_mimics",
+  "pt": {
+   "hl": [
+    "Necrotic fat, foamy macrophages, calcium soaps",
+    "Fatty acids bind calcium: saponification"
+   ],
+   "say": "The fat necrosis card lists necrotic fat, foamy macrophages and calcium soaps: injured fat cells release fatty acids that bind calcium, leaving a firm, calcified mass that mimics carcinoma."
+  }
  },
  {
   "id": "rp23q07",
@@ -685,7 +709,15 @@
     ]
    ]
   ],
-  "bl": "Tender, centered subareolar tissue in a pubertal boy with normal testes is physiologic gynecomastia; reassurance and reexamination suffice."
+  "bl": "Tender, centered subareolar tissue in a pubertal boy with normal testes is physiologic gynecomastia; reassurance and reexamination suffice.",
+  "ef": "rp7_engines",
+  "pt": {
+   "hl": [
+    "Pubertal gynecomastia: tender, transient",
+    "Reassurance and reexamination"
+   ],
+   "say": "In the boys panel, pubertal gynecomastia is tender and transient because estradiol briefly outruns testosterone, so reassurance and reexamination is the plan when the testes are normal."
+  }
  },
  {
   "id": "rp23q10",
@@ -757,7 +789,15 @@
     ]
    ]
   ],
-  "bl": "Cirrhosis and spironolactone cause gynecomastia by increasing estrogen action relative to androgen action at the breast."
+  "bl": "Cirrhosis and spironolactone cause gynecomastia by increasing estrogen action relative to androgen action at the breast.",
+  "ef": "rp22_androgen",
+  "pt": {
+   "hl": [
+    "More estrogen with obesity or cirrhosis; gynecomastia",
+    "means a high estrogen-to-androgen ratio"
+   ],
+   "say": "In the aromatase box, cirrhosis raises estrogen action relative to androgen action, so a high estrogen-to-androgen ratio causes gynecomastia, and spironolactone adds androgen receptor blockade."
+  }
  },
  {
   "id": "rp23q11",
@@ -829,7 +869,15 @@
     ]
    ]
   ],
-  "bl": "A late seroma around a textured implant with CD30-positive, ALK-negative cells is breast implant-associated anaplastic large cell lymphoma."
+  "bl": "A late seroma around a textured implant with CD30-positive, ALK-negative cells is breast implant-associated anaplastic large cell lymphoma.",
+  "ef": "rp23_mimics",
+  "pt": {
+   "hl": [
+    "Anaplastic large cell lymphoma",
+    "Late fluid around a textured implant"
+   ],
+   "say": "The BIA-ALCL card names anaplastic large cell lymphoma: a late fluid collection around a textured implant with CD30-positive, ALK-negative T cells, unlike capsular contracture or silicone granuloma."
+  }
  },
  {
   "id": "rp23q12",

@@ -54,6 +54,13 @@
    "Cardiac arrest": "Cardiac arrest is the final stage of magnesium toxicity at very high levels. Reflexes disappear long before the heart is affected.",
    "Seizures": "Magnesium prevents eclamptic convulsions. A convulsion during the infusion suggests an inadequate level or another cause, not toxicity.",
    "Hyperreflexia with clonus": "Brisk reflexes with clonus signal the neurologic irritability of preeclampsia that magnesium treats. Toxicity does the opposite and abolishes reflexes."
+  },
+  "media": "fig:rp27_mag",
+  "pt": {
+   "hl": [
+    "Loss of deep tendon reflexes"
+   ],
+   "say": "On the magnesium ladder, loss of deep tendon reflexes is the first sign, so it warns before respiratory depression and cardiac arrest."
   }
  },
  {
@@ -79,6 +86,13 @@
    "Flumazenil": "Flumazenil reverses benzodiazepines at the GABA-A receptor. It has no effect on magnesium blocking neuromuscular transmission.",
    "Protamine sulfate": "Protamine neutralizes heparin. The shared word sulfate is a coincidence of naming, not a pharmacologic link to magnesium.",
    "Physostigmine": "Physostigmine reverses anticholinergic toxicity by blocking acetylcholinesterase. It does not overcome magnesium blocking calcium entry at nerve terminals."
+  },
+  "media": "fig:rp27_mag",
+  "pt": {
+   "hl": [
+    "Antidote: IV calcium gluconate, given after the infusion is stopped"
+   ],
+   "say": "The antidote box reads IV calcium gluconate, given after the magnesium infusion is stopped, to reverse the loss of reflexes and the depression of breathing."
   }
  },
  {
@@ -104,6 +118,13 @@
    "150/100 or higher": "150/100 sits between the diagnostic and severe thresholds. It is abnormal and needs close follow-up, but it does not define the severe range.",
    "130/80 or higher": "130/80 marks stage 1 hypertension outside pregnancy. Obstetric definitions use 140/90 for diagnosis and 160/110 for severity.",
    "180/120 or higher": "180/120 defines hypertensive crisis in nonpregnant adults. In pregnancy stroke risk rises sharply at lower values, so treatment starts at 160/110."
+  },
+  "media": "fig:rp27_mag",
+  "pt": {
+   "hl": [
+    "Blood pressure 160/110 or higher"
+   ],
+   "say": "The first severe feature is a blood pressure of 160/110 or higher, which risks maternal stroke and makes the disease preeclampsia with severe features."
   }
  },
  {
@@ -129,6 +150,13 @@
    "18 to 22 weeks": "18 to 22 weeks is the window for the anatomy ultrasound. Insulin resistance is still rising, so screening then misses many cases.",
    "32 to 36 weeks": "Screening this late leaves too little time for diet or insulin to prevent macrosomia. At 36 to 37 weeks the group B strep culture is taken instead.",
    "At the postpartum visit": "The postpartum test checks whether diabetes persists after a diagnosed pregnancy. It is not the screening point."
+  },
+  "media": "fig:rp27_gdm",
+  "pt": {
+   "hl": [
+    "Screen at 24 to 28 weeks"
+   ],
+   "say": "In the mother panel, screening for gestational diabetes happens at 24 to 28 weeks, when insulin resistance from placental lactogen is near its peak."
   }
  },
  {
@@ -186,6 +214,13 @@
    "Cleft lip and palate": "Clefts are linked to phenytoin, topiramate, isotretinoin and smoking. They are not the signature malformation of maternal hyperglycemia.",
    "Phocomelia": "Phocomelia, the short flipper-like limbs of thalidomide exposure, reflects a drug effect on limb buds rather than hyperglycemia.",
    "Gastroschisis": "Gastroschisis is linked to young maternal age, smoking and drugs that constrict vessels. Diabetes raises neural tube and caudal defects instead."
+  },
+  "media": "fig:rp27_fetal",
+  "pt": {
+   "hl": [
+    "Caudal regression syndrome"
+   ],
+   "say": "In the first row, pregestational diabetes in weeks 3 to 8 harms the embryo, and caudal regression syndrome is the most specific signature, with heart defects and neural tube defects also seen."
   }
  },
  {
@@ -308,6 +343,14 @@
    "Into the myometrium": "Invasion into but not through the muscle wall is placenta increta, the middle grade of the spectrum.",
    "Into the decidua only": "Villi anchoring in the decidua is normal placentation. The decidua is the layer that is missing in the accreta spectrum.",
    "Into the spiral arteries only": "Trophoblast normally invades the spiral arteries to remodel them, which is healthy placentation. Shallow invasion causes preeclampsia."
+  },
+  "media": "fig:rp4_placenta",
+  "pt": {
+   "hl": [
+    "Percreta: villi pass through the wall",
+    "No decidua basalis: the accreta spectrum"
+   ],
+   "say": "In the accreta spectrum panel, percreta is the deepest form: villi pass through the whole myometrium and the serosa, often into the bladder, whereas accreta only touches the muscle and increta invades it."
   }
  },
  {
@@ -333,6 +376,13 @@
    "20 weeks": "The anatomy scan happens near 20 weeks, but a dose then would wane before the late bleeds it must cover.",
    "36 weeks": "36 weeks is when group B strep cultures are taken. The 28-week dose already protects through this period.",
    "40 weeks": "Waiting until term leaves the whole third trimester unprotected. The postpartum dose depends on the newborn's type, not on reaching 40 weeks."
+  },
+  "media": "fig:rp27_rh",
+  "pt": {
+   "hl": [
+    "At 28 weeks of pregnancy"
+   ],
+   "say": "Under Prevention: anti-D, the first dose is given at 28 weeks of pregnancy, because silent fetomaternal bleeds rise in the third trimester, and a second dose follows within 72 hours of birth."
   }
  },
  {
@@ -358,6 +408,13 @@
    "Indirect Coombs test": "The indirect Coombs test is the maternal antibody screen, showing whether she is already sensitized. It cannot measure how much fetal blood entered.",
    "Apt test": "The Apt test tells whether blood in a sample is fetal or maternal, which helps in vasa previa. It does not quantify the bleed.",
    "Hemoglobin electrophoresis": "Electrophoresis separates hemoglobin types to diagnose sickle cell disease or thalassemia. It is not used to size a fetomaternal hemorrhage."
+  },
+  "media": "fig:rp27_rh",
+  "pt": {
+   "hl": [
+    "Kleihauer-Betke sizes the dose"
+   ],
+   "say": "The Kleihauer-Betke test counts fetal red cells in the mother’s blood after a fetomaternal bleed and so sizes the dose of anti-D immune globulin."
   }
  },
  {
@@ -383,6 +440,14 @@
    "Terbutaline": "Terbutaline, a beta-2 agonist, causes maternal tachycardia, high glucose and low potassium. It does not act on fetal prostaglandins.",
    "Magnesium sulfate": "Magnesium is used before 32 weeks for fetal neuroprotection. Its risks are maternal toxicity, not closure of the ductus.",
    "Betamethasone": "Betamethasone matures the fetal lungs and is not a tocolytic. It does not close the ductus."
+  },
+  "media": "fig:rp27_fetal",
+  "pt": {
+   "hl": [
+    "Indomethacin for preterm labor",
+    "Premature closure of the ductus arteriosus"
+   ],
+   "say": "Indomethacin blocks the prostaglandins that keep the ductus open, so late in pregnancy it risks premature ductus closure and oligohydramnios, and it is used only before 32 weeks."
   }
  },
  {
@@ -408,6 +473,14 @@
    "Macrosomia": "Macrosomia is overgrowth from fetal hyperinsulinemia in maternal diabetes, the opposite of what a failing placenta produces.",
    "Microcephaly with normal body size": "A small head with a normal body suggests a brain disorder or a congenital infection such as Zika or cytomegalovirus, not a failing placenta.",
    "Constitutionally small but healthy": "A constitutionally small fetus grows along a low but steady curve with normal Doppler studies and fluid, unlike a fetus starved by its placenta."
+  },
+  "media": "fig:rp27_fetal",
+  "pt": {
+   "hl": [
+    "Late placental insufficiency",
+    "Asymmetric, head-sparing restriction"
+   ],
+   "say": "Late placental insufficiency from preeclampsia, hypertension or smoking makes the fetus divert blood to its brain, so the result is asymmetric, head-sparing restriction with oligohydramnios."
   }
  },
  {
@@ -433,6 +506,14 @@
    "Pemphigoid gestationis": "Pemphigoid gestationis forms blisters around the umbilicus from autoantibodies against skin anchoring proteins. It causes a visible rash, not isolated itching.",
    "Acute fatty liver of pregnancy": "Acute fatty liver causes nausea, liver failure, low glucose and clotting problems. Itching alone with high bile acids is far milder.",
    "HELLP syndrome": "HELLP brings hemolysis, high liver enzymes and low platelets, usually with hypertension and epigastric pain, rather than itching."
+  },
+  "media": "fig:rp27_fetal",
+  "pt": {
+   "hl": [
+    "Intrahepatic cholestasis of pregnancy",
+    "Bile acids reach the fetus: stillbirth risk"
+   ],
+   "say": "In the fifth row, intrahepatic cholestasis of pregnancy causes itchy palms and soles without a rash and high bile acids, which reach the fetus and raise the risk of stillbirth."
   }
  }
 ]

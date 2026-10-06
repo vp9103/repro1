@@ -1,0 +1,375 @@
+{
+ "id": "rp1",
+ "t": "The pelvis, pelvic floor and pelvic viscera",
+ "sub": "A bony basin closed by a muscular floor, lined with peritoneum, and crossed by vessels, ureters and nerves that surgeons must keep apart.",
+ "yld": "mid",
+ "exam": "mid",
+ "mins": 14,
+ "bp": [
+  "BP-rp1-01",
+  "BP-rp1-02",
+  "BP-rp1-03",
+  "BP-rp1-04",
+  "BP-rp1-05",
+  "BP-rp1-06",
+  "BP-rp1-07",
+  "BP-rp1-08",
+  "BP-rp1-09",
+  "BP-rp1-10",
+  "BP-rp1-11",
+  "BP-rp1-12",
+  "BP-rp1-13",
+  "BP-rp1-14",
+  "BP-rp1-15",
+  "BP-rp1-16"
+ ],
+ "obj": [
+  "ANAT-PELVIS-LEC.1",
+  "ANAT-PELVIS-LEC.2",
+  "ANAT-PELVIS-LEC.3",
+  "ANAT-PELVIS-LEC.4",
+  "ANAT-PELVIS-LEC.5",
+  "ANAT-PELVIS-LEC.6",
+  "ANAT-PELVIS-LEC.7",
+  "ANAT-PELVIS-LEC.8",
+  "ANAT-PELVIS-LEC.9",
+  "ANAT-PELVIS-LAB.1",
+  "ANAT-PELVIS-LAB.2",
+  "ANAT-PELVIS-LAB.3",
+  "ANAT-PELVIS-LAB.4",
+  "ANAT-PELVIS-LAB.5",
+  "ANAT-PELVIS-LAB.6",
+  "ANAT-PELVIS-LAB.7",
+  "ANAT-PELVIS-LAB.8",
+  "ANAT-PELVIS-LAB.9",
+  "ANAT-PELVIS-LAB.10",
+  "ANAT-PELVIS-LAB.11",
+  "ANAT-PELVIS-LAB.12",
+  "ANAT-PELVIS-LAB.13",
+  "ANAT-EXTGEN-LAB.1"
+ ],
+ "pretest": [
+  {
+   "q": "Through which part of the vagina can a needle reach the lowest point of the female peritoneal cavity?",
+   "o": [
+    "Posterior fornix",
+    "Anterior fornix",
+    "Lateral fornix",
+    "Vaginal vestibule"
+   ],
+   "a": 0,
+   "why": "The posterior fornix lies directly against the rectouterine pouch of Douglas, the lowest recess of the peritoneal cavity in an upright woman. Blood or pus that collects there can be drawn out through the thin vaginal wall.",
+   "w": {
+    "Anterior fornix": "The anterior fornix faces the bladder and the shallow vesicouterine pouch, so a needle there risks the bladder and misses the fluid that collects at the lowest point.",
+    "Lateral fornix": "The lateral fornix sits beside the cervix, close to the uterine artery and the ureter, which makes it a dangerous and unhelpful puncture site.",
+    "Vaginal vestibule": "The vestibule is the space between the labia minora at the vaginal opening, far below the peritoneum, so no pouch can be reached from it."
+   }
+  },
+  {
+   "q": "Which vessel runs on the cardinal ligament and crosses over the ureter beside the cervix?",
+   "o": [
+    "Uterine artery",
+    "Ovarian artery",
+    "Internal pudendal artery",
+    "Superior vesical artery"
+   ],
+   "a": 0,
+   "why": "The uterine artery comes from the anterior division of the internal iliac artery and runs medially over the cardinal ligament. About 2 cm lateral to the cervix it passes over the ureter: water under the bridge.",
+   "w": {
+    "Ovarian artery": "The ovarian artery arises from the abdominal aorta and reaches the ovary through the infundibulopelvic ligament, well above the cervix.",
+    "Internal pudendal artery": "The internal pudendal artery leaves the pelvis below the piriformis and hooks around the ischial spine to supply the perineum, not the uterus.",
+    "Superior vesical artery": "The superior vesical artery comes from the patent part of the umbilical artery and supplies the bladder dome, not the cervix."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How is the bony pelvis built, and how is it measured?"
+  ],
+  [
+   "p",
+   "The bony pelvis is a ring made of the two hip bones and the sacrum. The pelvic brim runs from the sacral promontory (the forward-jutting top of the sacrum) to the top of the pubic symphysis. Above it lies the **false pelvis**, which holds only abdominal organs; below it lies the **true pelvis**, the bony birth canal. The pelvic floor closes its lower opening, and the perineum lies beneath the floor."
+  ],
+  [
+   "p",
+   "Obstetricians measure the true pelvis at three levels. At the inlet, the {{rp1_conjugate|diagonal conjugate}} runs from the sacral promontory to the lower edge of the pubic symphysis, the only inlet distance a finger can reach. Subtracting 1.5 to 2 cm estimates the **obstetric conjugate**, the true narrowest front-to-back distance, which should be at least about 10 cm. The interspinous distance between the ischial spines is usually the tightest diameter in the midpelvis. At the outlet, the intertuberous distance and the subpubic arch matter. A round **gynecoid** pelvis with an arch wider than 90 degrees favors vaginal birth, but the narrow, heart-shaped android pelvis does not."
+  ],
+  [
+   "h",
+   "What holds the pelvic organs up?"
+  ],
+  [
+   "p",
+   "Muscles form both the walls and the floor of the pelvis. Obturator internus lines the side wall and leaves through the lesser sciatic foramen, and piriformis lines the back wall and leaves through the greater sciatic foramen. Below them, the floor is the pelvic diaphragm, a funnel made of the **levator ani** and the smaller coccygeus. Levator ani has three parts. The pubococcygeus is the main mass and wraps around the urethra and vagina. The puborectalis is a sling that pulls the anorectal junction forward, and the thin iliococcygeus lies behind them."
+  ],
+  [
+   "p",
+   "The floor has two jobs, support and **continence**. The pubococcygeus steadies the urethra and bladder neck during a cough, so a tear causes stress incontinence. The puborectalis sling kinks the **anorectal** junction, which helps hold stool in. The nerve to levator ani (S3 and S4) supplies the floor, while the pudendal nerve supplies the external sphincters."
+  ],
+  [
+   "p",
+   "Connective tissue adds a second layer of support. The {{rp1_endopelvic|endopelvic fascia}} lies between the parietal fascia lining the pelvic walls and the visceral fascia wrapping each organ, and it thickens into supporting ligaments. The **cardinal ligament** (transverse cervical ligament) runs from the cervix to the side wall, and the uterosacral ligament runs from the cervix to the sacrum. Together they suspend the cervix and upper vagina. The broad and round ligaments give almost no support."
+  ],
+  [
+   "p",
+   "Vaginal childbirth stretches these supports and the levator ani, and estrogen loss after menopause weakens them further, so **prolapse** often appears years after the deliveries; obesity and chronic coughing or straining add load from above. The bulging wall names the organ. A **cystocele**, the bladder pushing into the anterior vaginal wall, is the most common type and causes urinary frequency, incomplete emptying or leakage. A rectocele (the rectum) or an enterocele (small bowel) pushes into the posterior wall and makes defecation difficult. Apical failure lets the uterus or the top of the vagina drop."
+  ],
+  [
+   "h",
+   "How does the peritoneum drape the pelvic organs?"
+  ],
+  [
+   "p",
+   "Peritoneum drapes over the pelvic organs like a sheet dropped from above, so it dips wherever two organs meet. In a woman it passes from the bladder onto the uterus, forming the shallow **vesicouterine** pouch. It then runs down the back of the uterus onto the posterior fornix of the vagina before rising onto the rectum. That deep fold is the {{rp1_douglas|rectouterine pouch}} of Douglas, the lowest point of the peritoneal cavity in an upright woman. A man has only one dip, the **rectovesical** pouch. The **retropubic** space in front of the bladder lies outside the peritoneum, which covers only the bladder's upper surface. A full bladder rises above the pubic symphysis and lifts that peritoneum with it, so a suprapubic catheter placed just above the pubis enters the bladder without entering the peritoneal cavity."
+  ],
+  [
+   "f",
+   "rp1_sagittal"
+  ],
+  [
+   "h",
+   "How are the female pelvic organs arranged?"
+  ],
+  [
+   "p",
+   "The uterus is a pear-shaped muscular organ with a fundus, body, isthmus and cervix. Its wall has an inner endometrium, a thick **myometrium** of smooth muscle and an outer peritoneal layer, the perimetrium. The uterus normally lies **anteverted** (tipped forward on the vagina) and **anteflexed** (bent forward on the cervix), so it rests on the bladder. A mobile retroverted uterus is a common normal variant, but a fixed one suggests adhesions, for example from endometriosis or pelvic infection."
+  ],
+  [
+   "p",
+   "The cervical canal runs from the internal os, where it opens into the uterine cavity, to the **external os**, where it opens into the vagina. The vagina surrounds the cervix in pockets called **fornices**. Each uterine tube carries the oocyte from the ovary to the uterus, and fertilization usually occurs in its widest part, the ampulla."
+  ],
+  [
+   "p",
+   "The ovary sits in the ovarian fossa on the pelvic side wall, and the **obturator nerve** runs along the floor of the fossa. An inflamed ovary can therefore cause pain felt in the medial thigh. Pelvic surgery that injures the nerve weakens thigh adduction and numbs the medial thigh. The broad ligament is a double sheet of peritoneum draped over the uterus, tubes and ovaries. Its mesovarium holds the ovary, its mesosalpinx wraps the tube, and its mesometrium, the largest part, wraps the uterus."
+  ],
+  [
+   "t",
+   [
+    "Ligament",
+    "Runs between",
+    "Contains",
+    "Exam point"
+   ],
+   [
+    [
+     "{{rp1_ip|Infundibulopelvic}} (suspensory)",
+     "Ovary and pelvic side wall",
+     "Ovarian artery and vein",
+     "Clamped in oophorectomy; twists in ovarian **torsion**"
+    ],
+    [
+     "Ovarian ligament",
+     "Ovary and uterus",
+     "No major vessel",
+     "Remnant of the upper gubernaculum"
+    ],
+    [
+     "**Round ligament**",
+     "Uterine horn and labia majora",
+     "Only the small artery of Sampson",
+     "Remnant of the lower gubernaculum; passes through the inguinal canal"
+    ],
+    [
+     "Cardinal ligament",
+     "Cervix and side wall",
+     "Uterine artery and vein",
+     "Main support; the ureter passes under the artery"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "The bladder lies in front of the uterus, behind the pubic symphysis, and its smooth-muscle wall is the detrusor. The ureters enter its back wall at a slant, so a filling bladder squeezes them shut and urine cannot flow backward. The smooth triangle between the two ureteric openings and the urethral opening is the **trigone**. Unlike the rest of the bladder, it comes from the mesonephric ducts (mesoderm)."
+  ],
+  [
+   "h",
+   "Why is the ureter at risk when a surgeon clamps the uterine artery?"
+  ],
+  [
+   "p",
+   "The gonads develop high on the back wall of the abdomen, so their vessels stay there. The **ovarian artery** and the testicular artery come straight off the aorta, just below the renal arteries. Almost everything else in the pelvis is fed by the **internal iliac** artery. Its anterior division supplies the organs through the uterine, vaginal, vesical, middle rectal and internal pudendal arteries; in men the inferior vesical artery supplies the bladder base, seminal vesicles and prostate. Its posterior division supplies the pelvic wall and buttock, including the superior gluteal artery. The internal pudendal artery loops around the ischial spine to reach the perineum."
+  ],
+  [
+   "p",
+   "The uterine artery runs medially at the base of the broad ligament, over the cardinal ligament. About 2 cm lateral to the cervix it passes over the **ureter**, which runs forward beneath it to the bladder. This is the classic **water under the bridge**: the ureter is the water and the artery is the bridge. A clamp placed too far laterally in hysterectomy can crush, tie or cut the ureter. Higher up, the ureter passes under the gonadal vessels and crosses the pelvic brim over the bifurcation of the common iliac artery, just medial to the ovarian vessels, so clamping the infundibulopelvic ligament can injure it too. In men the **ductus deferens** crosses over the ureter behind the bladder and is the male bridge. Cervical cancer that spreads sideways beside the cervix can compress the ureter and cause hydronephrosis."
+  ],
+  [
+   "f",
+   "rp1_vessels"
+  ],
+  [
+   "p",
+   "The pelvic veins form plexuses around the organs and drain through the internal iliac veins. The rectum is special because it drains into two systems. The superior rectal vein reaches the portal vein through the inferior mesenteric vein, while the middle and inferior rectal veins reach the caval system. This **portocaval anastomosis** swells into rectal varices in portal hypertension. The pelvic plexuses also connect with the valveless vertebral veins, the {{rp1_batson|Batson}} plexus. When abdominal pressure rises, blood can flow backward into the spine, so prostate cancer can reach the lumbar vertebrae without passing through the lungs."
+  ],
+  [
+   "call",
+   "key",
+   "The left gonadal vein takes the long way home",
+   "The right gonadal vein enters the inferior vena cava directly, but the left climbs higher to meet the **left renal vein** at a right angle. The left vein therefore drains against more pressure, so varicoceles (swollen scrotal veins) are more common on the left. A new left varicocele in an older man suggests a renal tumor blocking that vein. In **nutcracker syndrome**, the superior mesenteric artery and the aorta squeeze the left renal vein, usually in a thin patient. The raised pressure causes left flank pain and hematuria and backs up into the left gonadal vein, causing a left varicocele in men or pelvic congestion in women."
+  ],
+  [
+   "steps",
+   [
+    "How collateral flow lets surgeons tie pelvic arteries",
+    [
+     [
+      "Find the ureter, then tie the vessel next to the organ",
+      "Surgeons first trace the ureter. They then tie off (ligate) the uterine artery beside the uterus, or the ovarian vessels in the infundibulopelvic ligament, which spares the neighboring organs."
+     ],
+     [
+      "For uncontrolled bleeding, tie the anterior division",
+      "Ligating the **anterior division** of both internal iliac arteries lowers the pulse pressure in the pelvis. Clots can then form in the torn vessels and stop the bleeding."
+     ],
+     [
+      "Collaterals keep the organs alive",
+      "Blood still arrives by **collateral** arteries, which are alternate routes: the ovarian arteries from the aorta, the superior rectal artery and posterior division branches. This is why ligation controls bleeding (**hemostasis**) without killing tissue."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "What do the male pelvic organs add?"
+  ],
+  [
+   "p",
+   "Sperm are made in the seminiferous tubules, pass through the rete testis and the **efferent ductules**, and mature and are stored in the epididymis. They leave in the ductus deferens, which climbs the spermatic cord, crosses the inguinal canal and reaches the back of the bladder. A vasectomy cuts it in the scrotum. The testis sits in a closed sac, the **tunica vaginalis**, a remnant of the processus vaginalis, and fluid collecting in this sac is a hydrocele."
+  ],
+  [
+   "p",
+   "Behind the bladder the ductus widens into an ampulla and joins the duct of the **seminal vesicle** to form the ejaculatory duct. This duct runs through the prostate and opens into the prostatic urethra. The seminal vesicles add about 70 percent of the semen, a thick, alkaline fluid rich in **fructose** that feeds sperm and clots after ejaculation. The prostate adds about 20 percent, a thin fluid containing prostate-specific antigen, which liquefies the clot. Sperm add very little, so a vasectomy barely changes the volume."
+  ],
+  [
+   "p",
+   "The **prostate** is a walnut-sized gland around the **prostatic urethra**, with its base on the bladder neck and its apex on the pelvic floor. Its back surface lies against the rectum, so a digital rectal exam feels the posterior prostate, and the seminal vesicles if they are enlarged."
+  ],
+  [
+   "p",
+   "During emission, sympathetic nerves contract the ductus, seminal vesicles and prostate and close the smooth-muscle **internal urethral sphincter**, so semen can only move forward. If that sphincter fails, semen flows backward into the bladder. The man has a dry orgasm and cloudy urine afterward: {{rp1_retrograde|retrograde ejaculation}}. Causes include sympathetic nerve injury (retroperitoneal lymph node dissection, diabetic neuropathy), bladder neck or prostate surgery, and alpha-1 blockers such as tamsulosin."
+  ],
+  [
+   "f",
+   "rp1_male"
+  ],
+  [
+   "h",
+   "Which nerves run the pelvis, and what does each do?"
+  ],
+  [
+   "p",
+   "The **sacral plexus** lies on the front of the piriformis. It is formed by the lumbosacral trunk (L4 and L5) and the ventral rami of S1 to S4. The piriformis splits the greater sciatic foramen into two spaces. Only the superior gluteal nerve and vessels pass above it. The sciatic nerve, the inferior gluteal nerve, the **pudendal nerve** and the internal pudendal vessels pass below it. A wound above the piriformis therefore injures the superior gluteal nerve, which supplies the hip abductors. An intramuscular injection placed in the upper inner buttock can injure it too, which is why injections go in the upper outer quadrant. When the patient stands on the injured leg, the pelvis drops on the opposite side, a positive Trendelenburg sign."
+  ],
+  [
+   "p",
+   "Autonomic fibers reach the pelvic organs through the inferior hypogastric plexus beside the rectum. Sympathetic fibers arrive through the lumbar splanchnic and **hypogastric** nerves, and parasympathetic fibers come from S2 to S4 as the {{rp1_splanchnic|pelvic splanchnic nerves}}. In the bladder the two systems oppose each other. Sympathetic tone relaxes the **detrusor** and closes the internal urethral sphincter, so urine is stored. To void, pelvic splanchnic fibers act on **muscarinic** M3 receptors, the detrusor contracts and the external sphincter relaxes. In the genitals, parasympathetic fibers cause erection and sympathetic fibers cause emission. Pain from the uterine body travels with sympathetic fibers to the lower thoracic and upper lumbar cord. Cervical pain travels with the pelvic splanchnic fibers to S2 to S4."
+  ],
+  [
+   "p",
+   "Failures of bladder storage and emptying sort urinary incontinence into three types. **Stress incontinence** is a weak outlet, as after childbirth or with obesity, so coughing or lifting leaks urine; pelvic floor (Kegel) exercises and weight loss help. **Urge incontinence** is an overactive detrusor that contracts before the bladder is full, so a sudden urge to void comes with leakage; antimuscarinics such as oxybutynin block M3 receptors, and mirabegron relaxes the detrusor through beta-3 receptors. **Overflow incontinence** is incomplete emptying, from outlet obstruction such as an enlarged prostate or a weak detrusor such as diabetic neuropathy, so a full bladder dribbles and the volume left after voiding is high. It is treated by catheterization, an alpha-1 blocker for prostate obstruction, or bethanechol, a muscarinic agonist that strengthens the detrusor."
+  ],
+  [
+   "f",
+   "rp1_nerves"
+  ],
+  [
+   "call",
+   "trap",
+   "Pelvic splanchnic nerves are parasympathetic",
+   "The thoracic, lumbar and sacral splanchnic nerves are all sympathetic. The **pelvic splanchnic** nerves from S2 to S4 are the exception. They are parasympathetic and supply the bladder, the hindgut from the descending colon onward, and the erectile tissue. Injury during rectal surgery therefore causes urinary retention and erectile dysfunction."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp1_collat",
+    "q": "Both internal iliac anterior divisions are tied to stop postpartum bleeding. Which reasoning best explains why the uterus survives?",
+    "o": [
+     "Ligation lowers pelvic pulse pressure so clots form, while ovarian and other collateral arteries keep perfusing the uterus",
+     "The uterine artery comes from the posterior division, so tying the anterior division leaves its flow untouched",
+     "The uterus depends on the round ligament artery, from the external iliac system",
+     "All flow stops, but smooth muscle tolerates days of ischemia"
+    ],
+    "a": 0,
+    "why": "The uterine artery is a branch of the anterior division, so ligation cuts its direct flow. The drop in pelvic pulse pressure lets torn vessels clot. The uterus survives because collateral arteries, mainly the ovarian arteries from the aorta, join the uterine arteries near the tubes."
+   }
+  ],
+  [
+   "why",
+   "Why does blood from a ruptured ectopic pregnancy pool behind the uterus, and why is it reached through the vagina?",
+   "Free blood or pus settles in the lowest part of the peritoneal cavity, which is the rectouterine pouch. Only the thin posterior vaginal wall separates the pouch from the vagina. A needle passed through the posterior fornix, called culdocentesis, therefore reaches the pooled blood without crossing bowel or bladder."
+  ],
+  [
+   "vis",
+   "rp1"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these are true of the female pelvis?",
+  "items": [
+   [
+    "The rectouterine pouch is the lowest point of the peritoneal cavity",
+    1
+   ],
+   [
+    "The ureter passes under the uterine artery beside the cervix",
+    1
+   ],
+   [
+    "The ovarian artery runs in the infundibulopelvic ligament",
+    1
+   ],
+   [
+    "The left ovarian vein drains into the left renal vein",
+    1
+   ],
+   [
+    "The cardinal ligament is a main support of the cervix",
+    1
+   ],
+   [
+    "Pelvic splanchnic nerves contract the detrusor",
+    1
+   ],
+   [
+    "Only the superior gluteal nerve leaves above the piriformis",
+    1
+   ],
+   [
+    "The normal uterus is anteverted and anteflexed",
+    1
+   ],
+   [
+    "The round ligament carries the uterine artery",
+    0
+   ],
+   [
+    "The broad ligament is the main barrier to uterine prolapse",
+    0
+   ],
+   [
+    "The right ovarian vein drains into the right renal vein",
+    0
+   ],
+   [
+    "Pelvic splanchnic nerves are sympathetic",
+    0
+   ],
+   [
+    "The puborectalis sling helps hold stool in",
+    1
+   ],
+   [
+    "Retrograde ejaculation follows failure of the bladder-neck sphincter",
+    1
+   ],
+   [
+    "The seminal vesicles add most of the semen volume",
+    1
+   ],
+   [
+    "The prostate adds most of the semen volume",
+    0
+   ]
+  ]
+ }
+}

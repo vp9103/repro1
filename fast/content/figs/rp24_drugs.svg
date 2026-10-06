@@ -1,0 +1,71 @@
+<svg class="dia" viewBox="0 0 900 604" role="img" aria-label="Breast cancer drugs by target: tamoxifen and raloxifene (SERMs), aromatase inhibitors, fulvestrant, trastuzumab and doxorubicin, with where each acts and what it costs, and why aromatase inhibitors need ovarian suppression before menopause">
+<text class="ttl" x="14" y="26" font-size="17">Breast cancer drugs: where each acts and what it costs</text>
+<text class="s" x="28" y="62" font-size="14">Drug</text>
+<text class="s" x="232" y="62" font-size="14">Where it acts</text>
+<text class="s" x="540" y="62" font-size="14">What it costs, when it is used</text>
+<rect x="14" y="72" width="872" height="82" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="72" width="206" height="82" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="26" y="98" font-size="15">Tamoxifen</text>
+<text x="26" y="118" font-size="12">SERM</text>
+<line x1="220" y1="72" x2="220" y2="154" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="526" y1="72" x2="526" y2="154" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="232" y="98" font-size="14">Blocks the receptor in breast; acts like</text>
+<text x="232" y="118" font-size="14">estrogen in endometrium, liver and bone</text>
+<text x="540" y="98" font-size="14">Endometrial cancer and clots (DVT)</text>
+<text x="540" y="118" font-size="14">Protects bone after menopause</text>
+<text x="540" y="138" font-size="14">Usual choice before menopause</text>
+<rect x="14" y="160" width="872" height="62" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="160" width="206" height="62" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="26" y="186" font-size="15">Raloxifene</text>
+<text x="26" y="206" font-size="12">SERM</text>
+<line x1="220" y1="160" x2="220" y2="222" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="526" y1="160" x2="526" y2="222" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="232" y="186" font-size="14">Blocks the receptor in breast and</text>
+<text x="232" y="206" font-size="14">endometrium; acts like estrogen in bone</text>
+<text x="540" y="186" font-size="14">Lowers breast cancer risk</text>
+<text x="540" y="206" font-size="14">Treats osteoporosis; no endometrial cancer</text>
+<rect x="14" y="228" width="872" height="72" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="228" width="206" height="72" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="26" y="254" font-size="15">Aromatase inhibitors</text>
+<text x="26" y="274" font-size="12">anastrozole, letrozole,</text>
+<text x="26" y="290" font-size="12">exemestane</text>
+<line x1="220" y1="228" x2="220" y2="300" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="526" y1="228" x2="526" y2="300" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="232" y="254" font-size="14">Block the conversion of androgens</text>
+<text x="232" y="274" font-size="14">to estrogen in fat</text>
+<text x="540" y="254" font-size="14">Bone loss and joint pain</text>
+<text x="540" y="274" font-size="14">Used alone only after menopause</text>
+<rect x="14" y="306" width="872" height="62" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="306" width="206" height="62" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="26" y="332" font-size="15">Fulvestrant</text>
+<text x="26" y="352" font-size="12">SERD</text>
+<line x1="220" y1="306" x2="220" y2="368" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="526" y1="306" x2="526" y2="368" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="232" y="332" font-size="14">Breaks down the estrogen receptor</text>
+<text x="232" y="352" font-size="14">in every tissue</text>
+<text x="540" y="332" font-size="14">Added in advanced disease,</text>
+<text x="540" y="352" font-size="14">with CDK4/6 inhibitors</text>
+<rect x="14" y="374" width="872" height="82" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="374" width="206" height="82" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="26" y="400" font-size="15">Trastuzumab</text>
+<text x="26" y="420" font-size="12">anti-HER2 antibody</text>
+<line x1="220" y1="374" x2="220" y2="456" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="526" y1="374" x2="526" y2="456" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="232" y="400" font-size="14">Binds the outer part of HER2, blocks</text>
+<text x="232" y="420" font-size="14">its signal and marks the cell for killing</text>
+<text x="540" y="400" font-size="14">Reversible cardiotoxicity from lost HER2</text>
+<text x="540" y="420" font-size="14">survival signaling in myocytes; recovers</text>
+<text x="540" y="440" font-size="14">when the drug is held</text>
+<rect x="14" y="462" width="872" height="62" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="462" width="206" height="62" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="26" y="488" font-size="15">Doxorubicin</text>
+<text x="26" y="508" font-size="12">anthracycline</text>
+<line x1="220" y1="462" x2="220" y2="524" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="526" y1="462" x2="526" y2="524" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="232" y="498" font-size="14">Free radicals injure heart muscle cells</text>
+<text x="540" y="488" font-size="14">Dose-dependent, largely permanent damage</text>
+<text x="540" y="508" font-size="14">Echocardiography monitors both drugs</text>
+<rect x="14" y="534" width="872" height="62" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="28" y="558" font-size="15">Why not an aromatase inhibitor alone before menopause?</text>
+<text x="28" y="582" font-size="14">Less estrogen feedback: FSH and LH rise and the ovary makes more estrogen</text>
+</svg>

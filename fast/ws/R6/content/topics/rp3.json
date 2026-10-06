@@ -1,0 +1,285 @@
+{
+ "id": "rp3",
+ "t": "Breast anatomy and histology",
+ "sub": "A modified sweat gland hung from the skin and resting on the pectoral fascia, whose layers, lymphatics and two-cell epithelium explain the exam and the pathology.",
+ "yld": "mid",
+ "exam": "mid",
+ "mins": 8,
+ "bp": [
+  "BP-rp3-01",
+  "BP-rp3-02",
+  "BP-rp3-03",
+  "BP-rp3-04",
+  "BP-rp3-05",
+  "BP-rp3-06",
+  "BP-rp3-07",
+  "BP-rp3-08",
+  "BP-rp3-09"
+ ],
+ "obj": [
+  "ANAT-BREAST.1",
+  "ANAT-BREAST.2",
+  "ANAT-BREAST.3",
+  "ANAT-BREAST.4",
+  "TBL-BREAST.1",
+  "TBL-BREAST.2"
+ ],
+ "pretest": [
+  {
+   "q": "Which structure, when shortened by an underlying tumor, pulls the overlying skin into a dimple?",
+   "o": [
+    "Suspensory (Cooper) ligament",
+    "Pectoral fascia",
+    "Lactiferous sinus",
+    "Retromammary space"
+   ],
+   "a": 0,
+   "why": "Cooper ligaments are fibrous bands that run from the skin through the breast to the pectoral fascia. A carcinoma that invades and shortens them tugs the skin inward, producing dimpling or retraction over the mass.",
+   "w": {
+    "Pectoral fascia": "Tumor that reaches the deep fascia anchors the mass to the chest wall, so it stops gliding when pectoralis contracts. That is fixation, not a pulled dimple.",
+    "Lactiferous sinus": "The sinus is the widened end of a duct beneath the areola where milk collects. Involvement there retracts the nipple rather than distant skin.",
+    "Retromammary space": "This loose plane behind the gland lets the breast slide over the chest wall. Invasion across it causes fixation, while the skin stays smooth."
+   }
+  },
+  {
+   "q": "Which nerve, injured during axillary lymph node surgery, produces a winged scapula?",
+   "o": [
+    "Long thoracic nerve",
+    "Thoracodorsal nerve",
+    "Intercostobrachial nerve",
+    "Medial pectoral nerve"
+   ],
+   "a": 0,
+   "why": "The long thoracic nerve runs down the medial wall of the axilla on the surface of serratus anterior. Without serratus holding the scapula against the ribs, its medial border lifts off when the patient pushes forward.",
+   "w": {
+    "Thoracodorsal nerve": "It travels with the thoracodorsal vessels to latissimus dorsi. Injury weakens arm extension, adduction and internal rotation but leaves the shoulder blade flat.",
+    "Intercostobrachial nerve": "This branch of the second intercostal nerve carries only sensation. Cutting it numbs the medial upper arm and armpit without any weakness.",
+    "Medial pectoral nerve": "It supplies pectoralis minor and part of pectoralis major. Damage causes subtle chest muscle weakness and atrophy, never a lifted shoulder blade."
+   }
+  },
+  {
+   "q": "Which breast cells contract in response to oxytocin to push milk out of the alveoli?",
+   "o": [
+    "Myoepithelial cells",
+    "Luminal epithelial cells",
+    "Intralobular stromal cells",
+    "Areolar smooth muscle cells"
+   ],
+   "a": 0,
+   "why": "Myoepithelial cells form the outer layer of every duct and alveolus. Oxytocin released during suckling makes them contract and squeeze milk from the alveoli into the ducts, which is the let-down reflex.",
+   "w": {
+    "Luminal epithelial cells": "Luminal cells line the lumen and make milk under prolactin, but they lack the actin and myosin needed to expel it.",
+    "Intralobular stromal cells": "The loose, hormone-responsive stroma around the lobules supports the epithelium and gives rise to fibroadenoma, but it has no role in milk ejection.",
+    "Areolar smooth muscle cells": "Areolar smooth muscle firms and erects the nipple for latching. It does not surround the alveoli, so it cannot move milk into the ducts."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How is the breast built, from skin to chest wall?"
+  ],
+  [
+   "p",
+   "The breast is a **modified apocrine sweat gland** in the subcutaneous tissue of the chest wall. Its upper outer quadrant holds the most glandular tissue, including the **axillary tail** (tail of Spence) that reaches toward the armpit. About half of breast cancers arise there. The gland is divided into 15 to 20 lobes. Each lobe drains through its own {{rp3_lact|lactiferous duct}}, which widens beneath the areola into a lactiferous sinus before it opens on the nipple. At the far end of each duct tree sits the lobule, a cluster of small blind-ended ductules. A lobule and its terminal duct form the {{rp3_tdlu|terminal duct lobular unit}} (TDLU). This unit makes the milk, and it is where most breast disease starts."
+  ],
+  [
+   "p",
+   "Fat fills the spaces between the lobes. Fibrous bands called **Cooper ligaments** (suspensory ligaments) run from the skin through the breast to the deep fascia. They hold the gland up like the ropes of a hammock. Behind the gland lies the {{rp3_retro|retromammary space}}, a plane of loose connective tissue that separates the breast from the **pectoral fascia** over pectoralis major. Because this plane is loose, a normal breast or a benign mass glides freely over the chest wall. The pigmented areola carries **Montgomery tubercles**, small glands that open onto its surface. They enlarge in pregnancy and lubricate the nipple during nursing."
+  ],
+  [
+   "f",
+   "rp3_section"
+  ],
+  [
+   "call",
+   "key",
+   "Tethering pulls skin; fixation holds the mass",
+   "A carcinoma that invades and shortens **Cooper ligaments** pulls the overlying skin inward, causing dimpling or skin retraction. A carcinoma that crosses the retromammary space into the pectoral fascia becomes fixed. When the patient presses her hands on her hips to tense pectoralis major, the mass moves with the muscle instead of sliding. **Fixation** therefore signals deep invasion. A tumor that shortens the lactiferous ducts pulls the nipple inward instead."
+  ],
+  [
+   "h",
+   "Where do the vessels, lymphatics and nerves run?"
+  ],
+  [
+   "p",
+   "The breast has a double blood supply. Medially, perforating branches of the **internal thoracic artery** (internal mammary artery) come through the upper intercostal spaces beside the sternum. Laterally, the **lateral thoracic artery**, a branch of the axillary artery, supplies the outer breast, helped by branches of the thoracoacromial and intercostal arteries. Veins follow the arteries and drain mainly to the axillary vein. The intercostal veins also connect with the valveless vertebral veins, the {{rp3_batson|Batson}} plexus, so tumor cells can reach the spine without passing through the lungs."
+  ],
+  [
+   "p",
+   "About 75 percent of breast lymph, especially from the lateral quadrants, flows to the **axillary nodes**. Surgeons name three levels by their relation to pectoralis minor: level I lies lateral to the muscle, level II behind it, and level III medial to it. The medial quadrants also drain to the {{rp3_imn|internal mammary nodes}} beside the sternum. Tumor cells travel along these routes in order. The first node on the path, the {{rp3_sentinel|sentinel node}}, is therefore found with blue dye or a radiotracer and removed. If it is free of tumor, the rest of the axilla can usually be left alone."
+  ],
+  [
+   "p",
+   "Skin sensation comes from the anterior and lateral branches of the fourth to sixth intercostal nerves, and the nipple lies in the T4 dermatome. Three other nerves cross the axilla, where node surgery puts them at risk. Each one has a signature injury."
+  ],
+  [
+   "f",
+   "rp3_axilla"
+  ],
+  [
+   "t",
+   [
+    "Nerve",
+    "Course",
+    "Injury"
+   ],
+   [
+    [
+     "Long thoracic nerve (C5 to C7)",
+     "Runs down the medial axillary wall on serratus anterior",
+     "**Winged scapula**: serratus anterior no longer holds the scapula against the ribs, so the arm cannot be raised above the horizontal"
+    ],
+    [
+     "{{rp3_td|Thoracodorsal nerve}} (C6 to C8)",
+     "Runs along the posterior axillary wall to latissimus dorsi",
+     "Weak arm extension, adduction and internal rotation"
+    ],
+    [
+     "Intercostobrachial nerve (T2)",
+     "Crosses the axilla to the medial arm",
+     "Numb skin of the medial upper arm, with no weakness"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "Winging means serratus anterior, not latissimus",
+   "The long thoracic and thoracodorsal nerves both run close to the axillary nodes, so either can be hurt in the same operation. Winging points to the **long thoracic nerve**, because serratus anterior holds the scapula against the ribs. After thoracodorsal injury the scapula stays flat, but the patient cannot pull the arm down and back, as when climbing or reaching into a back pocket."
+  ],
+  [
+   "h",
+   "How does the two-layer epithelium make and move milk?"
+  ],
+  [
+   "p",
+   "Every duct and lobule is lined by two layers of cells resting on a **basement membrane**. The inner **luminal cells** face the lumen. Many carry estrogen and progesterone receptors, they make the milk, and most carcinomas arise from them. The outer {{rp3_myo|myoepithelial cells}} are flattened contractile cells, full of actin and myosin, that lie between the luminal cells and the basement membrane. They squeeze milk toward the nipple. The lobules sit in a loose, hormone-responsive stroma, while dense fibrous stroma and fat separate one lobule from the next."
+  ],
+  [
+   "steps",
+   [
+    "How hormones build the lactating breast and release milk",
+    [
+     [
+      "Estrogen branches the ducts; progesterone adds lobules",
+      "At puberty and in each cycle, estrogen drives duct growth, and luteal progesterone adds lobular buds. This is why the breasts feel full before menses."
+     ],
+     [
+      "Pregnancy builds the alveoli",
+      "High placental estrogen and progesterone, together with rising **prolactin**, multiply the lobules and turn the ductules into secretory alveoli. The same high estrogen and progesterone block prolactin's action, so full milk production waits."
+     ],
+     [
+      "Delivery removes the brake",
+      "When the placenta is delivered, estrogen and progesterone fall within days. Prolactin can then switch on copious milk synthesis in the luminal cells."
+     ],
+     [
+      "Suckling releases prolactin and oxytocin",
+      "Nipple stimulation tells the hypothalamus to cut dopamine release, which raises prolactin for the next feeding. It also triggers **oxytocin** release from the posterior pituitary."
+     ],
+     [
+      "Myoepithelial cells contract",
+      "Oxytocin makes the myoepithelial cells contract around the alveoli and push milk out of the nipple. This milk ejection (let-down) reflex can also be triggered by a crying infant."
+     ]
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Under the microscope, a resting adult breast is mostly dense fibrous tissue and fat, with scattered small ducts and a few small lobules. A **lactating** breast is almost all epithelium. The lobules swell into crowded, dilated **alveoli** lined by cuboidal cells with vacuolated cytoplasm, and the lumens fill with milk. The cells release their products in two ways. Milk proteins such as casein leave by **merocrine** secretion, which is exocytosis of secretory vesicles. Lipid droplets bulge from the cell apex and pinch off wrapped in cell membrane, which is apocrine secretion. After menopause the lobules shrink and fat replaces much of the fibrous stroma."
+  ],
+  [
+   "why",
+   "Why does loss of the myoepithelial layer tell a pathologist that a carcinoma is invasive?",
+   "In carcinoma in situ, malignant cells fill the ducts and lobules but stay inside the original architecture. A rim of myoepithelial cells and an intact basement membrane still surround them. To invade, tumor cells must break through the basement membrane into the stroma, and the nests they form there have no myoepithelial layer. Pathologists stain for myoepithelial markers such as p63 and smooth muscle myosin. A rim of staining means the lesion is still contained, and no rim around irregular nests means invasion. Benign mimics such as sclerosing adenosis keep the rim."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp3_fix",
+    "q": "A breast mass glides freely at rest but stops moving when the patient presses her hands on her hips. Which reasoning is best?",
+    "o": [
+     "The tumor has shortened Cooper ligaments, which pull on the skin whenever the chest muscle tightens",
+     "The tumor has blocked dermal lymphatics, so the swollen skin grips the mass during contraction",
+     "The tumor has crossed the retromammary space into the pectoral fascia, so it now moves with the contracting muscle",
+     "Contraction compresses any mass, so loss of mobility means nothing unless the mass is also painful"
+    ],
+    "a": 2,
+    "why": "The retromammary space normally lets the breast slide over pectoralis major. A mass that is mobile at rest but locks in place when the muscle contracts has grown through that plane into the pectoral fascia, which means deep invasion. Cooper ligament involvement causes skin dimpling, and dermal lymphatic blockage causes peau d'orange, but neither anchors a mass to muscle."
+   }
+  ],
+  [
+   "vis",
+   "rp3"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these are true of breast anatomy and histology?",
+  "items": [
+   [
+    "Each lobe drains through its own lactiferous duct",
+    1
+   ],
+   [
+    "Cooper ligaments run from the dermis to the deep fascia",
+    1
+   ],
+   [
+    "The retromammary space lets the breast glide over pectoralis major",
+    1
+   ],
+   [
+    "About 75 percent of lymph drains to axillary nodes",
+    1
+   ],
+   [
+    "Medial quadrants also drain to internal mammary nodes",
+    1
+   ],
+   [
+    "Myoepithelial cells contract in response to oxytocin",
+    1
+   ],
+   [
+    "Luminal cells face the lumen and make milk",
+    1
+   ],
+   [
+    "Long thoracic nerve injury causes a winged scapula",
+    1
+   ],
+   [
+    "Milk fat leaves the cell by apocrine secretion",
+    1
+   ],
+   [
+    "Level I axillary nodes lie medial to pectoralis minor",
+    0
+   ],
+   [
+    "Thoracodorsal nerve injury causes a winged scapula",
+    0
+   ],
+   [
+    "Myoepithelial cells are the usual origin of carcinoma",
+    0
+   ],
+   [
+    "Progesterone alone drives duct elongation at puberty",
+    0
+   ],
+   [
+    "Invasive carcinoma nests keep a complete myoepithelial rim",
+    0
+   ],
+   [
+    "About half of breast cancers arise in the upper outer quadrant",
+    1
+   ],
+   [
+    "The nipple lies in the T4 dermatome",
+    1
+   ]
+  ]
+ }
+}
