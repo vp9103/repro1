@@ -1,0 +1,61 @@
+<svg class="dia" viewBox="0 0 900 520" role="img" aria-label="How labor starts, from placental corticotropin-releasing hormone to the fetal adrenal cortex, estrogen, connexin 43 gap junctions and the Ferguson reflex, and how labor is induced with misoprostol, dinoprostone, a balloon and oxytocin">
+<text class="ttl" x="14" y="26" font-size="17">What starts labor, and how to start it on purpose</text>
+<rect x="14" y="48" width="520" height="76" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<circle cx="40" cy="86" r="13" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="40" y="91" font-size="14" text-anchor="middle">1</text>
+<text class="b" x="66" y="74" font-size="15">Placental corticotropin-releasing hormone (CRH)</text>
+<text x="66" y="97" font-size="14">Rises steeply near term and drives the fetal</text>
+<text x="66" y="117" font-size="14">pituitary to release ACTH</text>
+<line x1="40" y1="124" x2="40.0" y2="128.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="40,134 36.4,128.0 43.6,128.0" fill="var(--ink-2)"/>
+<rect x="14" y="134" width="520" height="56" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="40" cy="162" r="13" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="40" y="167" font-size="14" text-anchor="middle">2</text>
+<text class="b" x="66" y="160" font-size="15">Fetal ACTH drives the adrenal cortex</text>
+<text x="66" y="183" font-size="14">Cortisol matures the lungs; DHEA-S goes to the placenta</text>
+<line x1="40" y1="190" x2="40.0" y2="194.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="40,200 36.4,194.0 43.6,194.0" fill="var(--ink-2)"/>
+<rect x="14" y="200" width="520" height="76" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<circle cx="40" cy="238" r="13" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="40" y="243" font-size="14" text-anchor="middle">3</text>
+<text class="b" x="66" y="226" font-size="15">The placenta turns DHEA-S into estrogen</text>
+<text x="66" y="249" font-size="14">The estrogen-to-progesterone ratio rises, lifting</text>
+<text x="66" y="269" font-size="14">progesterone’s quieting effect on the myometrium</text>
+<line x1="40" y1="276" x2="40.0" y2="280.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="40,286 36.4,280.0 43.6,280.0" fill="var(--ink-2)"/>
+<rect x="14" y="286" width="520" height="76" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<circle cx="40" cy="324" r="13" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="40" y="329" font-size="14" text-anchor="middle">4</text>
+<text class="b" x="66" y="312" font-size="15">Estrogen builds the contraction machinery</text>
+<text x="66" y="335" font-size="14">Connexin 43 gap junctions: the uterus contracts as one</text>
+<text x="66" y="355" font-size="14">Oxytocin receptors and cervix-ripening prostaglandins</text>
+<line x1="40" y1="362" x2="40.0" y2="366.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="40,372 36.4,366.0 43.6,366.0" fill="var(--ink-2)"/>
+<rect x="14" y="372" width="520" height="76" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<circle cx="40" cy="410" r="13" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="40" y="415" font-size="14" text-anchor="middle">5</text>
+<text class="b" x="66" y="398" font-size="15">Ferguson reflex: a positive feedback loop</text>
+<text x="66" y="421" font-size="14">The head stretching the cervix releases more oxytocin,</text>
+<text x="66" y="441" font-size="14">and the loop ends only with delivery</text>
+<rect x="14" y="460" width="520" height="56" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="28" y="483" font-size="14">Anencephaly: no fetal ACTH, small adrenals, low estriol,</text>
+<text x="28" y="503" font-size="14">and the pregnancy runs past term</text>
+<text class="b" x="560" y="68" font-size="17">Starting labor on purpose</text>
+<text class="a1" x="560" y="90" font-size="14">Bishop score under 8: ripen first</text>
+<rect x="548" y="102" width="338" height="66" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="562" y="128" font-size="15">Misoprostol</text>
+<text x="562" y="150" font-size="14">Prostaglandin E1 analog</text>
+<rect x="548" y="176" width="338" height="66" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="562" y="202" font-size="15">Dinoprostone</text>
+<text x="562" y="224" font-size="14">Prostaglandin E2: vaginal gel or insert</text>
+<rect x="548" y="250" width="338" height="90" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="562" y="276" font-size="15">Transcervical balloon</text>
+<text x="562" y="298" font-size="14">Mechanical ripening, used after a prior</text>
+<text x="562" y="318" font-size="14">cesarean when prostaglandins are avoided</text>
+<rect x="548" y="348" width="338" height="118" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="562" y="374" font-size="15">Oxytocin drives the contractions</text>
+<text x="562" y="396" font-size="14">Gq receptor: raises calcium in the muscle</text>
+<text x="562" y="416" font-size="14">Too much: tachysystole; stop the infusion</text>
+<text x="562" y="436" font-size="14">Hyponatremia from water intoxication</text>
+<text x="560" y="492" font-size="14">Prostaglandins can also cause tachysystole</text>
+</svg>

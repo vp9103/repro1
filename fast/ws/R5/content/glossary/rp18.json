@@ -1,0 +1,43 @@
+[
+ {
+  "k": "rp18_torch",
+  "t": "TORCH infections",
+  "d": "The classic group of infections that cross the placenta or reach the newborn at birth: Toxoplasma, other agents (syphilis, varicella, parvovirus B19, Zika), rubella, cytomegalovirus and herpes simplex.",
+  "alt": [
+   "TORCH"
+  ]
+ },
+ {
+  "k": "rp18_hydrops",
+  "t": "Hydrops fetalis",
+  "d": "Abnormal fluid in two or more fetal body spaces, such as skin edema, ascites and effusions around the lungs or heart. Parvovirus B19 causes it through severe fetal anemia and high-output heart failure.",
+  "alt": []
+ },
+ {
+  "k": "rp18_iap",
+  "t": "Intrapartum antibiotic prophylaxis",
+  "d": "IV penicillin or ampicillin given during labor to a group B strep carrier, at least 4 hours before birth. It prevents early-onset neonatal GBS disease but not late-onset disease.",
+  "alt": []
+ },
+ {
+  "k": "rp18_hutch",
+  "t": "Hutchinson triad",
+  "d": "The late signature of congenital syphilis: notched, peg-shaped upper incisors called Hutchinson teeth, interstitial keratitis of the cornea and eighth-nerve (sensorineural) deafness.",
+  "alt": []
+ },
+ {
+  "k": "rp18_avidity",
+  "t": "IgG avidity test",
+  "d": "A test of how tightly IgG binds its target. Low-avidity IgG means a primary infection within the past few months, and high-avidity IgG means the infection is older.",
+  "alt": []
+ },
+ {
+  "k": "rp18sero",
+  "t": "Seroconversion",
+  "d": "The change of an antibody test from negative to positive between two samples. In pregnancy it proves a new, primary infection, which carries the highest risk to the fetus.",
+  "alt": [
+   "seroconverts",
+   "seroconverted"
+  ]
+ }
+]

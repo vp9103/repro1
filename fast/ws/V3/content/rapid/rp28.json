@@ -22,6 +22,13 @@
    "Occludin": "Occludin is a tight junction protein that seals the space between epithelial cells against leakage. It blocks passage between cells rather than opening a channel for ions.",
    "Desmoglein": "Desmoglein is the cadherin of desmosomes, spot welds that anchor intermediate filaments and resist shearing. They give tissue tensile strength but pass no ions between cells.",
    "Integrin": "Integrins anchor cells to the extracellular matrix and basement membrane, as in hemidesmosomes. They link a cell to matrix, not one muscle cell to its neighbor."
+  },
+  "media": "fig:rp28_onset",
+  "pt": {
+   "hl": [
+    "Connexin 43 gap junctions: the uterus contracts as one"
+   ],
+   "say": "Step 4 shows estrogen building connexin 43 gap junctions, which pass ions directly between myometrial cells so that the whole uterus contracts as one."
   }
  },
  {
@@ -48,6 +55,13 @@
    "Human placental lactogen": "Human placental lactogen rises with placental mass and causes maternal insulin resistance that shunts glucose to the fetus. It does not stimulate the fetal adrenal axis.",
    "Progesterone": "Progesterone from the placenta keeps the myometrium quiet throughout pregnancy. Labor follows a functional withdrawal of its effect, not a progesterone-driven rise in fetal cortisol.",
    "Relaxin": "Relaxin from the corpus luteum and placenta loosens pelvic ligaments and softens connective tissue. It peaks in the first trimester and does not activate the fetal adrenal axis."
+  },
+  "media": "fig:rp28_onset",
+  "pt": {
+   "hl": [
+    "Placental corticotropin-releasing hormone (CRH)"
+   ],
+   "say": "Step 1 is corticotropin-releasing hormone from the placenta, which rises steeply near term and drives the fetal pituitary to release ACTH."
   }
  },
  {
@@ -73,6 +87,13 @@
    "First stage, latent phase": "The latent phase is the slow early part of labor, as the cervix softens and thins up to about 6 cm. It is far from full dilation and birth.",
    "Third stage": "The third stage starts after the baby is born and ends with delivery of the placenta, normally within 30 minutes. A longer wait defines a retained placenta.",
    "Fourth stage": "The fourth stage is the first hour or so after the placenta delivers, when the uterus must stay contracted to prevent hemorrhage. It comes after birth, not before."
+  },
+  "media": "fig:rp28_stages",
+  "pt": {
+   "hl": [
+    "Second stage"
+   ],
+   "say": "On the stage bar, the second stage runs from full dilation at 10 cm to the birth of the infant, and the third stage then runs from birth to the placenta."
   }
  },
  {
@@ -99,6 +120,14 @@
    "Dilation": "Dilation is the opening of the cervical os in centimeters, from closed to 10 cm at full dilation. It measures the cervix itself rather than how far the fetus has descended.",
    "Position": "Position in the Bishop score describes where the cervix points, posterior, mid or anterior. A cervix that swings anterior is ripening, but this says nothing about fetal descent.",
    "Consistency": "Consistency grades how firm or soft the cervix feels. A soft cervix scores higher because collagen breakdown has ripened it, but it does not locate the fetus."
+  },
+  "media": "fig:rp28_stages",
+  "pt": {
+   "hl": [
+    "Station",
+    "high to low"
+   ],
+   "say": "In the Bishop score list, station is the level of the presenting part relative to the ischial spines, scored from high to low."
   }
  },
  {
@@ -124,6 +153,14 @@
    "Carboprost": "Carboprost is 15-methyl prostaglandin F2-alpha, a strong uterotonic used for postpartum hemorrhage from atony. It is not used to ripen the cervix and is avoided in asthma.",
    "Methylergonovine": "Methylergonovine is an ergot alkaloid that causes sustained uterine contraction after delivery. It is dangerous before birth because a tetanic uterus cuts off fetal oxygen.",
    "Oxytocin": "Oxytocin is a peptide hormone that stimulates contractions through Gq-coupled receptors. It induces labor once the cervix is favorable but does not itself soften the cervix."
+  },
+  "media": "fig:rp28_onset",
+  "pt": {
+   "hl": [
+    "Dinoprostone",
+    "Prostaglandin E2: vaginal gel or insert"
+   ],
+   "say": "In the right column, dinoprostone is prostaglandin E2 as a vaginal gel or insert, whereas misoprostol above it is the prostaglandin E1 analog."
   }
  },
  {
@@ -216,6 +253,14 @@
    "Sacral promontory": "The sacral promontory marks the back of the pelvic inlet and is used to estimate the diagonal conjugate. It is too high and too far from the pudendal nerve to guide this block.",
    "Pubic symphysis": "The pubic symphysis is the anterior midline joint under which the occiput pivots at delivery. The pudendal nerve runs posterolaterally on the pelvic sidewall, far from it.",
    "Coccyx": "The coccyx lies in the posterior midline and moves backward to enlarge the outlet during birth. It sits behind the anus, nowhere near the nerve's turn on the pelvic sidewall."
+  },
+  "media": "fig:rp2_pudendal",
+  "pt": {
+   "hl": [
+    "Hooks around the ischial spine (sacrospinous lig.)",
+    "Pudendal block: inject here, felt through the vagina"
+   ],
+   "say": "The pudendal nerve hooks around the ischial spine, which is the landmark: the block is injected there through the vagina to numb the perineum in the second stage."
   }
  },
  {
@@ -241,6 +286,13 @@
    "C6 and C7": "C7 forms the middle trunk and joins only more severe stretch injuries. Erb palsy is defined by the upper trunk, whose roots bear the most strain when the neck is bent away from the shoulder.",
    "C3 to C5": "C3 to C5 form the phrenic nerve, which can be injured along with an upper plexus stretch and paralyze the diaphragm. These roots do not produce the arm posture of Erb palsy.",
    "C7 and C8": "C7 and C8 supply wrist and finger extensors and long finger flexors through the middle and lower trunks. Their loss weakens the hand and wrist rather than the shoulder and elbow."
+  },
+  "media": "fig:rp28_birth",
+  "pt": {
+   "hl": [
+    "Upper trunk, C5 and C6"
+   ],
+   "say": "The Erb palsy card gives the roots as C5 and C6, the upper trunk, which is stretched when a hard pull on the head follows shoulder dystocia."
   }
  },
  {
@@ -266,6 +318,13 @@
    "Internal anal sphincter": "The internal anal sphincter can also be torn in the most severe third-degree tears. Only extension through the lining of the anal canal and rectum makes the injury fourth degree.",
    "Perineal body": "The perineal body is the fibromuscular center torn in second-degree lacerations. Deeper tears pass through it on their way to the sphincter, so it is torn in both grades.",
    "Bulbospongiosus muscle": "Bulbospongiosus is one of the perineal body muscles torn in a second-degree laceration. Deeper tears include it as well, so it does not distinguish the two grades."
+  },
+  "media": "fig:rp28_birth",
+  "pt": {
+   "hl": [
+    "Fourth degree: anorectal mucosa torn too"
+   ],
+   "say": "A fourth-degree laceration goes through the sphincter and tears the anorectal mucosa as well, which stays intact in a third-degree tear."
   }
  },
  {
@@ -389,6 +448,13 @@
    "Human placental lactogen": "Human placental lactogen helps prepare the breast during pregnancy and raises maternal insulin resistance, but it leaves with the placenta at birth, so it cannot sustain lactation afterward.",
    "Estrogen": "Estrogen grows the ducts during pregnancy but blocks prolactin's action on the alveoli. Its fall after delivery of the placenta is what allows lactation to begin.",
    "Progesterone": "Progesterone develops the lobules in pregnancy and, like estrogen, inhibits milk synthesis. Its withdrawal after the placenta is delivered starts lactation rather than maintaining it."
+  },
+  "media": "fig:rp28_milk",
+  "pt": {
+   "hl": [
+    "Prolactin keeps alveolar cells making milk"
+   ],
+   "say": "In the milk panel, prolactin keeps the alveolar cells making milk once the placental estrogen and progesterone block is lifted, while oxytocin only triggers let-down."
   }
  },
  {
@@ -415,6 +481,14 @@
    "6 weeks": "Six weeks is roughly when the uterus has finished involuting. Mood symptoms persisting that long point to postpartum depression rather than the brief, self-limited blues.",
    "3 months": "Three months of low mood is far beyond the blues and meets the duration for a depressive episode. Postpartum depression can begin at any time in the first year.",
    "12 months": "Twelve months is the window in which postpartum depression is usually counted, not the course of the blues, which are brief and self-limited."
+  },
+  "media": "fig:rp28_milk",
+  "pt": {
+   "hl": [
+    "Postpartum blues",
+    "Most mothers; fades within 2 weeks"
+   ],
+   "say": "In the mood panel, postpartum blues affect most mothers and fade within 2 weeks, unlike depression, which lasts longer and needs treatment."
   }
  },
  {
@@ -440,6 +514,13 @@
    "Breast milk jaundice": "Breast milk jaundice is a benign, prolonged unconjugated hyperbilirubinemia from milk factors such as beta-glucuronidase. Nursing usually continues, with a brief pause only in rare severe cases.",
    "Cystic fibrosis": "Breast milk is recommended for infants with cystic fibrosis, given with pancreatic enzymes when needed. Its antibodies may reduce respiratory infections.",
    "Congenital hypothyroidism": "Congenital hypothyroidism is treated with daily levothyroxine started early, and nursing continues normally. Milk does not interfere with treatment when the dose is monitored."
+  },
+  "media": "fig:rp28_milk",
+  "pt": {
+   "hl": [
+    "Infant with classic galactosemia"
+   ],
+   "say": "In the avoid-nursing box, an infant with classic galactosemia cannot metabolize the galactose in breast milk, so breastfeeding is contraindicated."
   }
  },
  {
@@ -466,6 +547,13 @@
    "Hyperkalemia": "Hyperkalemia comes from renal failure, cell breakdown or blocked aldosterone. Oxytocin's ADH-like effect retains water without changing how the kidney handles potassium.",
    "Hypocalcemia": "Hypocalcemia follows hypoparathyroidism, vitamin D deficiency or massive transfusion of citrated blood. Oxytocin does not affect parathyroid hormone or calcium balance.",
    "Hypomagnesemia": "Hypomagnesemia results from gut or renal magnesium loss, such as diarrhea or diuretics. In labor the more familiar magnesium problem is toxicity from magnesium sulfate."
+  },
+  "media": "fig:rp28_onset",
+  "pt": {
+   "hl": [
+    "Hyponatremia from water intoxication"
+   ],
+   "say": "In the oxytocin card, large doses in dilute fluid cause hyponatremia from water intoxication because oxytocin resembles ADH, and too much also causes tachysystole."
   }
  }
 ]

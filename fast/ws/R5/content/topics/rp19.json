@@ -1,0 +1,462 @@
+{
+ "id": "rp19",
+ "t": "The testis, spermatogenesis and male reproductive hormones",
+ "sub": "How Sertoli and Leydig cells split the work, how sperm are built and delivered, and how LH, FSH and testosterone control it all.",
+ "yld": "mid",
+ "exam": "mid",
+ "mins": 13,
+ "bp": [
+  "BP-rp19-01",
+  "BP-rp19-02",
+  "BP-rp19-03",
+  "BP-rp19-04",
+  "BP-rp19-05",
+  "BP-rp19-06",
+  "BP-rp19-07",
+  "BP-rp19-08",
+  "BP-rp19-09",
+  "BP-rp19-10",
+  "BP-rp19-11"
+ ],
+ "obj": [
+  "HP-MALE.1",
+  "HP-MALE.2",
+  "HP-MALE.3",
+  "HP-MALE.4",
+  "HP-MALE.5",
+  "HP-MALE.6",
+  "PATHPHARM-MALE.1",
+  "PATHPHARM-MALE.2",
+  "PATHPHARM-MALE.3",
+  "PATHPHARM-MALE.4",
+  "PATHPHARM-MALE.5",
+  "BICEP-MISHIMOTO.1",
+  "ANAT-PELVIS-LAB.13",
+  "BICEP-WEIAND.6",
+  "BICEP-WALSH.20"
+ ],
+ "pretest": [
+  {
+   "q": "Which testicular cell responds to FSH and secretes inhibin B?",
+   "o": [
+    "Sertoli cell",
+    "Leydig cell",
+    "Spermatogonium",
+    "Peritubular myoid cell"
+   ],
+   "a": 0,
+   "why": "Sertoli cells carry the FSH receptor. FSH drives them to make androgen-binding protein and inhibin B, and inhibin B then travels to the pituitary to suppress FSH selectively.",
+   "w": {
+    "Leydig cell": "Leydig cells sit in the interstitium outside the tubules and respond to LH by making testosterone; they make no inhibin.",
+    "Spermatogonium": "Spermatogonia are germ stem cells resting on the basement membrane that divide by mitosis; they depend on Sertoli support and secrete no hormones.",
+    "Peritubular myoid cell": "Myoid cells are contractile cells wrapped around the tubule that squeeze sperm toward the rete testis; they have no hormone-secreting role."
+   }
+  },
+  {
+   "q": "Where do sperm first gain the ability to swim forward?",
+   "o": [
+    "Epididymis",
+    "Seminiferous tubule",
+    "Seminal vesicle",
+    "Female reproductive tract"
+   ],
+   "a": 0,
+   "why": "Sperm are released into the tubule lumen fully formed but immotile. They acquire forward motility while passing through the head and body of the epididymis and are stored in its tail until ejaculation.",
+   "w": {
+    "Seminiferous tubule": "Spermiation releases finished but immotile sperm into the lumen, and fluid flow carries them passively out of the testis toward the rete testis.",
+    "Seminal vesicle": "Sperm do not enter the seminal vesicles; these glands add fructose-rich alkaline fluid at the ejaculatory duct during emission.",
+    "Female reproductive tract": "The female tract adds capacitation, hyperactivated motility and the acrosome reaction, but sperm already swim forward when they are ejaculated."
+   }
+  },
+  {
+   "q": "Which enzyme converts testosterone into the androgen that drives prostate growth?",
+   "o": [
+    "5-alpha-reductase",
+    "Aromatase",
+    "17-alpha-hydroxylase",
+    "Desmolase"
+   ],
+   "a": 0,
+   "why": "Type 2 5-alpha-reductase in the prostate and genital skin converts testosterone to dihydrotestosterone (DHT), a more potent androgen; finasteride blocks it and shrinks the prostate.",
+   "w": {
+    "Aromatase": "Aromatase, mostly in fat, converts testosterone to estradiol, which closes growth plates and feeds back on LH rather than enlarging the prostate.",
+    "17-alpha-hydroxylase": "This enzyme works early in steroid synthesis, steering pregnenolone toward cortisol and androgen precursors; it does not act on testosterone.",
+    "Desmolase": "Desmolase, the side-chain cleavage enzyme, turns cholesterol into pregnenolone as the first committed step of every steroid, long before testosterone exists."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How is the testis built, and which cell answers which hormone?"
+  ],
+  [
+   "p",
+   "The testis is wrapped in a tough capsule, the **tunica albuginea**, whose septa divide it into lobules packed with coiled **seminiferous tubules**. The tubules make up about 90 percent of the volume, so small testes usually mean poor sperm production. Tall Sertoli cells span the tubule wall from basement membrane to lumen and act as nurse cells for the germ cells that mature between them. Contractile peritubular {{rp19myoid|myoid cells}} wrap each tubule and push sperm toward the rete testis. Tight junctions between neighboring Sertoli cells form the {{rp19btb|blood-testis barrier}}, which hides meiotic germ cells from the immune system because their antigens first appear at puberty. Outside the tubules, in the interstitium beside the capillaries, sit the **Leydig cells**, which make testosterone."
+  ],
+  [
+   "f",
+   "rp19_tubule"
+  ],
+  [
+   "call",
+   "key",
+   "Sertoli answers FSH; Leydig answers LH",
+   "**Sertoli cells** carry the FSH receptor. They make {{rp19abp|androgen-binding protein}}, which holds testosterone inside the tubule, plus inhibin B and, in the fetus, anti-Müllerian hormone. **Leydig cells** carry the LH receptor, which hCG also activates, and make testosterone. They are rich in smooth endoplasmic reticulum and may contain {{rp20reinke|Reinke crystals}}."
+  ],
+  [
+   "h",
+   "Why does the testis hang outside the body, and what wraps it?"
+  ],
+  [
+   "p",
+   "Spermatogenesis works best 2 to 4 degrees Celsius below core body temperature, which is why the testis hangs in the scrotum on the **spermatic cord**. Besides the ductus deferens, the cord carries the testicular artery, lymphatics and the {{rp19pamp|pampiniform plexus}}, veins that wrap the artery and cool the incoming blood by countercurrent exchange. Two muscles tune the temperature. The **cremaster** pulls the testis toward the warm body in the cold, and the {{rp19dartos|dartos}} muscle wrinkles the scrotal skin to shed less heat. Cryptorchidism, varicocele, occupational heat and obesity all warm the testis and impair sperm. Obesity also acts through hormones, as the feedback section below explains: aromatase in fat converts testosterone to estradiol, which lowers LH."
+  ],
+  [
+   "f",
+   "rp19_scrotum"
+  ],
+  [
+   "t",
+   [
+    "Layer, outside to inside",
+    "Derived from",
+    "What it does or what goes wrong"
+   ],
+   [
+    [
+     "Skin and dartos fascia",
+     "Superficial fascia of the abdominal wall",
+     "Wrinkles in the cold; continuous with Colles fascia"
+    ],
+    [
+     "External spermatic fascia",
+     "External oblique aponeurosis",
+     "Covers the cord and testis"
+    ],
+    [
+     "Cremaster muscle and fascia",
+     "Internal oblique muscle",
+     "Cremasteric reflex, absent in torsion"
+    ],
+    [
+     "Internal spermatic fascia",
+     "Transversalis fascia",
+     "An indirect hernia sac travels inside it"
+    ],
+    [
+     "Tunica vaginalis",
+     "Peritoneum (processus vaginalis)",
+     "Fluid in this sac is a hydrocele"
+    ],
+    [
+     "Tunica albuginea",
+     "Dense fibrous capsule",
+     "Inelastic, so swelling raises pressure"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Scarpa fascia of the abdomen, the dartos of the scrotum and Colles fascia of the perineum form one continuous space. Perineal infection, often in a diabetic man, spreads along it as **Fournier gangrene**, a necrotizing fasciitis with pain out of proportion to the exam, crepitus and a dusky scrotum. The testis keeps the blood and lymph routes of its abdominal origin. The left testicular vein joins the left renal vein at a right angle, a longer, higher-pressure route that explains left-sided varicocele, while the right vein drains straight into the IVC. Testicular lymph runs to **para-aortic** nodes, not inguinal ones."
+  ],
+  [
+   "h",
+   "How does a spermatogonium become a sperm, and how long does it take?"
+  ],
+  [
+   "p",
+   "**Spermatogenesis** runs from the basement membrane toward the lumen. Some spermatogonia stay behind as a reserve and renew the pool, while others commit to meiosis and make haploid spermatids. A final stage, {{rp19spermio|spermiogenesis}}, then turns each spermatid into a sperm without any further division. The whole sequence takes about 64 to 74 days, and epididymal transit adds about 2 weeks."
+  ],
+  [
+   "steps",
+   [
+    "From stem cell to spermatozoon, in order",
+    [
+     [
+      "Spermatogonia divide by mitosis",
+      "Diploid stem cells sit on the basement membrane, outside the blood-testis barrier. They renew themselves and send committed daughters inward past the Sertoli tight junctions."
+     ],
+     [
+      "Primary spermatocytes enter meiosis I",
+      "After copying their DNA, they spend a long prophase as the largest, most visible germ cells on a biopsy."
+     ],
+     [
+      "Secondary spermatocytes finish meiosis II",
+      "This division takes only hours, so these cells are seldom seen. Each makes two haploid spermatids."
+     ],
+     [
+      "Spermatids remodel in spermiogenesis",
+      "Each spermatid builds an **acrosome** from the Golgi apparatus, grows a flagellum from a centriole and wraps its midpiece in mitochondria. Sertoli cells engulf the shed cytoplasm as a {{rp19residual|residual body}}."
+     ],
+     [
+      "Sperm are released and then matured",
+      "Immotile sperm enter the lumen and gain motility in the epididymis. They become able to fertilize only in the female tract, through capacitation and the acrosome reaction."
+     ]
+    ]
+   ]
+  ],
+  [
+   "t",
+   [
+    "Germ cell",
+    "Where in the tubule",
+    "Ploidy and DNA",
+    "What a slide shows"
+   ],
+   [
+    [
+     "Spermatogonium",
+     "On the basement membrane",
+     "2N, 2C",
+     "Small round cell"
+    ],
+    [
+     "Primary spermatocyte",
+     "Just inside the tight junctions",
+     "2N, 4C",
+     "Largest germ cell, with clumped chromatin"
+    ],
+    [
+     "Secondary spermatocyte",
+     "Between spermatocytes and spermatids",
+     "1N, 2C",
+     "Smaller; rarely caught, because meiosis II takes hours"
+    ],
+    [
+     "Spermatid",
+     "Next to the lumen",
+     "1N, 1C",
+     "Smallest cell; round, then elongated, dense nucleus"
+    ],
+    [
+     "Spermatozoon",
+     "In the lumen",
+     "1N, 1C",
+     "Head with acrosome, midpiece and tail"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "Today's semen analysis reports on events 3 months ago",
+   "Because spermatogenesis plus epididymal transit takes about **3 months**, a **febrile** illness or new drug 6 to 10 weeks ago shows up in today's sample. Stem cells survive, so counts usually recover about 3 months after the cause is removed, and a repeat semen analysis should wait that long."
+  ],
+  [
+   "p",
+   "A **semen analysis** reports volume, sperm concentration, motility and morphology. Its reference limits are the fifth percentile of fertile men, not an infertility cutoff."
+  ],
+  [
+   "h",
+   "Which ducts and glands do sperm pass, and what does each add?"
+  ],
+  [
+   "p",
+   "Sperm leave the tubules through the **rete testis** and about a dozen efferent ductules. They then pass through the epididymis and the ductus deferens, which joins the duct of the seminal vesicle to form the ejaculatory duct. This duct opens into the prostatic urethra. The epididymis is the key stop, because sperm gain motility there and wait in its tail. Its **principal cells** carry **stereocilia**, long nonmotile microvilli that absorb fluid."
+  ],
+  [
+   "t",
+   [
+    "Structure",
+    "Lining or hallmark",
+    "What it adds",
+    "If it is blocked or missing"
+   ],
+   [
+    [
+     "Rete testis and efferent ductules",
+     "Flat to low cuboidal cells; ciliated cells in the ductules",
+     "Collect sperm and reabsorb fluid",
+     "Azoospermia with normal FSH"
+    ],
+    [
+     "Epididymis",
+     "Pseudostratified columnar with stereocilia",
+     "Fluid absorption, motility, storage",
+     "Azoospermia with normal FSH"
+    ],
+    [
+     "Ductus deferens",
+     "Thick three-layer muscle wall",
+     "Drives sperm forward during emission",
+     "No sperm, but normal volume and fructose"
+    ],
+    [
+     "Seminal vesicle",
+     "Highly folded mucosa",
+     "Most of the volume: alkaline, **fructose**-rich fluid",
+     "Scant, acidic, fructose-negative ejaculate"
+    ],
+    [
+     "Prostate",
+     "Glands with papillary infoldings, corpora amylacea",
+     "About a quarter of the volume: PSA, prostatic acid phosphatase, citrate, zinc",
+     "Semen no longer liquefies, because PSA is missing"
+    ],
+    [
+     "Bulbourethral gland",
+     "Small mucous acini",
+     "Clear pre-ejaculate mucus",
+     "Little effect on fertility"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Round, laminated **corpora amylacea** in the glands of older men tell the prostate from the seminal vesicle, which has none. The prostate's zones predict its diseases. The **peripheral zone**, posterior and felt on rectal exam, gives rise to most cancers. The **transition zone** around the urethra is where benign prostatic hyperplasia arises. The central zone is rarely diseased."
+  ],
+  [
+   "p",
+   "Knowing what each gland adds predicts what a blockage does. A blockage on both sides causes **obstructive azoospermia**: the testis makes sperm, but none reaches the ejaculate. A blockage on one side usually does not, because the other side still delivers sperm. Sperm make up only about 5 percent of semen, so a **vasectomy** leaves the volume, pH and fructose normal, though the breach of the barrier often leads to antisperm antibodies. Congenital absence of both vasa, usually from CFTR mutations (**cystic fibrosis**), or an obstructed ejaculatory duct also removes the seminal vesicle fluid, so the sample is scant, acidic and fructose-negative. In every blockage the testis keeps working, so its size and FSH stay normal. Small soft testes with a high FSH mean failed production instead."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp19_vas",
+    "q": "After a vasectomy, a man's semen volume barely changes, but no sperm appear. Which reasoning best explains this?",
+    "o": [
+     "The testis stops making sperm once the vas is cut, and sperm made up most of the semen volume",
+     "The prostate enlarges after the operation and replaces the lost volume with extra prostatic fluid",
+     "The epididymis takes over from the seminal vesicles and secretes the fructose that keeps the volume normal",
+     "Sperm make up only about 5 percent of semen, and the seminal vesicles and prostate, which empty beyond the cut, still add their fluid"
+    ],
+    "a": 3,
+    "why": "The ductus deferens carries only sperm, about 5 percent of the ejaculate. The seminal vesicles, which supply most of the volume and the fructose, and the prostate empty beyond the cut, so their fluid still arrives. The testis keeps making sperm, which are broken down in the epididymis. Scant, acidic, fructose-negative semen would instead mean missing seminal vesicle fluid, as with absent vasa."
+   }
+  ],
+  [
+   "h",
+   "How do LH, FSH and feedback control the testis?"
+  ],
+  [
+   "p",
+   "The hypothalamus releases GnRH in pulses, about every 60 to 120 minutes, and the pulses matter: continuous GnRH, as from a long-acting agonist, desensitizes the pituitary and shuts the axis down. Each pulse releases LH, which drives Leydig cells to make **testosterone**, and FSH, which drives Sertoli cells to make androgen-binding protein and **inhibin B**. Testosterone and the estradiol made from it exert **negative feedback** on the hypothalamus and pituitary, lowering GnRH and LH. Inhibin B suppresses FSH alone. So when germ cells are lost and inhibin B falls, FSH rises while LH and testosterone stay normal."
+  ],
+  [
+   "f",
+   "rp19_axis"
+  ],
+  [
+   "p",
+   "Testosterone reaches its targets in three forms. Acting itself, it builds the fetal Wolffian ducts and, after puberty, supports spermatogenesis, muscle and libido. In the prostate, genital skin and hair follicles, **5-alpha-reductase** converts it to **dihydrotestosterone** (DHT), a more potent androgen that drives prostate growth and male-pattern baldness. Finasteride blocks this enzyme. In fat, aromatase converts it to estradiol, which closes the epiphyses and feeds back on the axis. Obesity therefore gives low testosterone, high estradiol and low LH, and a high estrogen-to-androgen ratio causes gynecomastia. With **aging**, testosterone falls gradually, and rising SHBG makes free testosterone fall faster."
+  ],
+  [
+   "t",
+   [
+    "Hormone",
+    "Made in",
+    "Main actions in men",
+    "Clue when it is missing"
+   ],
+   [
+    [
+     "Testosterone",
+     "Leydig cells, under LH",
+     "Wolffian ducts, spermatogenesis, muscle, libido",
+     "Low libido, lost muscle and bone, anemia"
+    ],
+    [
+     "DHT",
+     "Prostate, genital skin, hair follicles",
+     "External genitalia, prostate growth, balding, sebaceous glands",
+     "Ambiguous genitalia in 5-alpha-reductase deficiency"
+    ],
+    [
+     "Estradiol",
+     "Adipose tissue, by aromatization",
+     "Epiphyseal closure, bone density, feedback",
+     "Tall stature and osteoporosis in aromatase deficiency"
+    ],
+    [
+     "Inhibin B",
+     "Sertoli cells, under FSH",
+     "Selective FSH suppression",
+     "High FSH with normal LH after germ cell loss"
+    ]
+   ]
+  ],
+  [
+   "why",
+   "Why does a man who injects testosterone become infertile even though his blood testosterone is high?",
+   "Spermatogenesis depends on testosterone inside the tubule, not in the blood. Normally LH drives Leydig cells to make it locally, and androgen-binding protein holds it 50 to 100 times above the serum level. Injected testosterone triggers negative feedback, so LH and FSH fall. Without LH, the Leydig cells go quiet, intratesticular testosterone collapses and sperm production stops, leaving small testes and azoospermia despite a high serum value. Hormones that act like LH, such as hCG, can preserve fertility instead."
+  ],
+  [
+   "h",
+   "How do nerves, vessels and nitric oxide produce an erection?"
+  ],
+  [
+   "p",
+   "The penis contains three columns of **erectile tissue**: two dorsal corpora cavernosa and a ventral corpus spongiosum, which surrounds the urethra and forms the glans. Each is a sponge of sinusoids between smooth muscle trabeculae. The corpora cavernosa are wrapped in a dense, inelastic tunica albuginea, and Buck fascia surrounds all three columns. Blood arrives through the internal pudendal artery and the coiled helicine arterioles, which open straight into the sinusoids, and leaves through small veins beneath the tunica albuginea."
+  ],
+  [
+   "p",
+   "Sexual stimulation activates the parasympathetic pelvic splanchnic nerves (S2 to S4), whose endings and the endothelium release **nitric oxide**. Nitric oxide activates guanylate cyclase, which makes **cGMP**. Calcium falls, and the trabecular muscle and helicine arterioles relax, so the sinusoids fill. The swollen sinusoids press the small veins against the tunica albuginea, the {{rp19venoocc|veno-occlusive mechanism}}, which traps blood and makes the penis rigid. Reflexogenic erections (genital touch through the sacral arc) survive a spinal cord lesion above S2, but psychogenic erections do not. Preserved morning erections point to a psychogenic cause of erectile dysfunction."
+  ],
+  [
+   "p",
+   "Erection ends when phosphodiesterase type 5 (**PDE5**) breaks cGMP down and sympathetic norepinephrine restores muscle tone through alpha-1 receptors. PDE5 inhibitors such as sildenafil preserve the cGMP that nitric oxide makes rather than starting an erection, so they need sexual stimulation. They are dangerous with nitrates, which also raise cGMP and can cause severe hypotension. **Emission** is sympathetic: hypogastric nerves from T10 to L2 contract the ductus deferens, seminal vesicles and prostate while alpha-1 receptors close the bladder neck. **Ejaculation** is the rhythmic contraction of the bulbospongiosus and ischiocavernosus, driven by the pudendal nerve (S2 to S4). This is why alpha-1 blockers can cause retrograde ejaculation with a normal orgasm."
+  ],
+  [
+   "p",
+   "The sexual response has four phases. **Excitement** is the parasympathetic erection, and the plateau is full rigidity, with pre-ejaculate from the bulbourethral glands. **Orgasm** is sympathetic emission followed by somatic ejaculation. Resolution is detumescence, followed by a **refractory period**, longer with age, when erection and orgasm cannot be repeated."
+  ],
+  [
+   "vis",
+   "rp19"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these are functions of Sertoli cells?",
+  "items": [
+   [
+    "Form the blood-testis barrier with tight junctions",
+    1
+   ],
+   [
+    "Secrete androgen-binding protein",
+    1
+   ],
+   [
+    "Secrete inhibin B",
+    1
+   ],
+   [
+    "Respond to FSH",
+    1
+   ],
+   [
+    "Secrete anti-Müllerian hormone in the fetus",
+    1
+   ],
+   [
+    "Engulf residual cytoplasm shed by spermatids",
+    1
+   ],
+   [
+    "Support developing germ cells as nurse cells",
+    1
+   ],
+   [
+    "Secrete testosterone in response to LH",
+    0
+   ],
+   [
+    "Contain Reinke crystals",
+    0
+   ],
+   [
+    "Convert testosterone to DHT",
+    0
+   ],
+   [
+    "Contract to push sperm toward the rete testis",
+    0
+   ],
+   [
+    "Secrete fructose into the seminal fluid",
+    0
+   ]
+  ]
+ }
+}
