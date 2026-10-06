@@ -1,0 +1,44 @@
+<svg class="dia" viewBox="0 0 900 580" role="img" aria-label="Four benign breast conditions that mimic infection or cancer, each with its setting, mechanism and biopsy clue (acute mastitis, periductal mastitis, duct ectasia, fat necrosis), plus three breast implant complications">
+<text class="ttl" x="14" y="26" font-size="17">Benign breast problems that can look like cancer</text>
+<rect x="14" y="46" width="430" height="168" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="28" y="74" font-size="16">Acute mastitis</text>
+<text class="a1" x="28" y="98" font-size="14">Nursing mother, first weeks</text>
+<text x="28" y="126" font-size="14">Staphylococcus aureus enters a cracked nipple</text>
+<text x="28" y="148" font-size="14">Red, tender wedge of breast with fever</text>
+<text x="28" y="170" font-size="14">Continue nursing; give dicloxacillin or cephalexin</text>
+<text x="28" y="192" font-size="14">Drain an abscess if one forms</text>
+<rect x="456" y="46" width="430" height="168" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="470" y="74" font-size="16">Periductal mastitis</text>
+<text class="a1" x="470" y="98" font-size="14">Smoker, not lactating</text>
+<text x="470" y="126" font-size="14">Smoke toxins: squamous metaplasia of duct lining</text>
+<text x="470" y="148" font-size="14">Keratin plugs the duct, which dilates and ruptures</text>
+<text x="470" y="170" font-size="14">Granulomas: recurrent subareolar abscess, fistula</text>
+<text x="470" y="192" font-size="14">Scarring pulls the nipple inward</text>
+<rect x="14" y="226" width="430" height="168" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="254" font-size="16">Duct ectasia</text>
+<text class="a1" x="28" y="278" font-size="14">Multiparous woman in her 50s or 60s</text>
+<text x="28" y="306" font-size="14">Dilated subareolar ducts ringed by plasma cells</text>
+<text x="28" y="328" font-size="14">Thick, sticky green-brown discharge</text>
+<text x="28" y="350" font-size="14">Periareolar mass</text>
+<rect x="456" y="226" width="430" height="168" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="470" y="254" font-size="16">Fat necrosis</text>
+<text class="a1" x="470" y="278" font-size="14">After trauma or surgery</text>
+<text x="470" y="306" font-size="14">Injured fat cells release fatty acids</text>
+<text x="470" y="328" font-size="14">Fatty acids bind calcium: saponification</text>
+<text x="470" y="350" font-size="14">Necrotic fat, foamy macrophages, calcium soaps</text>
+<text x="470" y="372" font-size="14">Firm calcified mass that mimics carcinoma</text>
+<text class="b" x="14" y="424" font-size="16">Breast implants: three complications</text>
+<rect x="14" y="436" width="284" height="126" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="26" y="464" font-size="15">Capsular contracture</text>
+<text x="26" y="490" font-size="14">Capsule tightens: firm, painful,</text>
+<text x="26" y="511" font-size="14">distorted breast; the most common</text>
+<rect x="308" y="436" width="284" height="126" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="320" y="464" font-size="15">Silicone granuloma</text>
+<text x="320" y="490" font-size="14">Ruptured implant: giant-cell</text>
+<text x="320" y="511" font-size="14">reaction can mimic carcinoma</text>
+<rect x="602" y="436" width="284" height="126" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="614" y="464" font-size="15">BIA-ALCL</text>
+<text x="614" y="490" font-size="14">Anaplastic large cell lymphoma</text>
+<text x="614" y="511" font-size="14">Late fluid around a textured implant</text>
+<text x="614" y="532" font-size="14">CD30 positive, ALK negative T cells</text>
+</svg>

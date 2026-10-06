@@ -1,0 +1,53 @@
+<svg class="dia" viewBox="0 0 900 540" role="img" aria-label="Preeclampsia with severe features: the findings that make it severe, the order of treatment, and the magnesium toxicity ladder from lost reflexes to respiratory depression to cardiac arrest, reversed by calcium gluconate">
+<text class="ttl" x="14" y="26" font-size="17">Preeclampsia with severe features: what qualifies, what to give, what to watch</text>
+<rect x="14" y="44" width="872" height="38" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="69" font-size="14">Preeclampsia: new hypertension (140/90 or higher) after 20 weeks with proteinuria or organ injury</text>
+<rect x="14" y="94" width="430" height="212" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="28" y="122" font-size="17">Preeclampsia with severe features</text>
+<text class="a1" x="28" y="144" font-size="14">Any one of these is enough:</text>
+<circle cx="36" cy="163" r="3" fill="var(--crit)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="48" y="168" font-size="14">Blood pressure 160/110 or higher</text>
+<circle cx="36" cy="185" r="3" fill="var(--crit)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="48" y="190" font-size="14">Platelets under 100,000</text>
+<circle cx="36" cy="207" r="3" fill="var(--crit)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="48" y="212" font-size="14">Creatinine over 1.1 mg/dL</text>
+<circle cx="36" cy="229" r="3" fill="var(--crit)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="48" y="234" font-size="14">AST or ALT twice normal</text>
+<circle cx="36" cy="251" r="3" fill="var(--crit)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="48" y="256" font-size="14">Pulmonary edema</text>
+<circle cx="36" cy="273" r="3" fill="var(--crit)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="48" y="278" font-size="14">New headache or visual change</text>
+<rect x="456" y="94" width="430" height="212" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="470" y="122" font-size="17">Treat in this order</text>
+<circle cx="484" cy="150" r="13" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="484" y="155" font-size="14" text-anchor="middle">1</text>
+<text class="b" x="508" y="146" font-size="15">Lower severe-range pressure</text>
+<text x="508" y="168" font-size="14">IV labetalol, IV hydralazine or oral nifedipine</text>
+<circle cx="484" cy="204" r="13" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="484" y="209" font-size="14" text-anchor="middle">2</text>
+<text class="b" x="508" y="200" font-size="15">Magnesium sulfate prevents seizures</text>
+<text x="508" y="222" font-size="14">It does not lower pressure; give it through</text>
+<text x="508" y="242" font-size="14">labor and for 24 hours after delivery</text>
+<circle cx="484" cy="272" r="13" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="484" y="277" font-size="14" text-anchor="middle">3</text>
+<text class="b" x="508" y="268" font-size="15">Deliver the placenta</text>
+<text x="508" y="290" font-size="14">The only cure; sooner if sicker or near term</text>
+<rect x="14" y="318" width="872" height="208" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="28" y="346" font-size="16">Magnesium is cleared only by the kidneys: falling urine output lets it build up</text>
+<rect x="28" y="360" width="270" height="70" rx="8" fill="var(--surface)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="40" y="388" font-size="15">Loss of deep tendon reflexes</text>
+<text x="40" y="412" font-size="14">The first sign; it warns early</text>
+<line x1="300" y1="395" x2="306.0" y2="395.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="312,395 306.0,398.6 306.0,391.4" fill="var(--ink-2)"/>
+<rect x="314" y="360" width="270" height="70" rx="8" fill="var(--surface)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="326" y="388" font-size="15">Respiratory depression</text>
+<text x="326" y="412" font-size="14">Next, if magnesium builds up</text>
+<line x1="586" y1="395" x2="592.0" y2="395.0" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="598,395 592.0,398.6 592.0,391.4" fill="var(--ink-2)"/>
+<rect x="600" y="360" width="270" height="70" rx="8" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="612" y="388" font-size="15">Cardiac arrest</text>
+<text x="612" y="412" font-size="14">The end of the ladder</text>
+<rect x="28" y="442" width="844" height="38" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="42" y="467" font-size="15">Antidote: IV calcium gluconate, given after the infusion is stopped</text>
+<text x="28" y="504" font-size="14">Check the patellar reflex, respiratory rate and urine output often</text>
+</svg>

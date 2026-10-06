@@ -1,0 +1,65 @@
+<svg class="dia" viewBox="0 0 900 566" role="img" aria-label="Inherited breast cancer genes: BRCA1, BRCA2, TP53, PTEN, CDH1, STK11 and the moderate-risk genes, each with its normal job and the cancers that cluster in carrier families">
+<text class="ttl" x="14" y="26" font-size="17">Which gene explains the family?</text>
+<text x="14" y="54" font-size="14">About 5 to 10 percent of breast cancers are hereditary: one bad copy is inherited and the tumor cell loses the second.</text>
+<text class="s" x="28" y="90" font-size="14">Gene</text>
+<text class="s" x="172" y="90" font-size="14">Its normal job, lost in carriers</text>
+<text class="s" x="512" y="90" font-size="14">What the family shows</text>
+<rect x="14" y="100" width="872" height="58" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="100" width="140" height="58" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="28" y="135" font-size="16">BRCA1</text>
+<line x1="154" y1="100" x2="154" y2="158" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="494" y1="100" x2="494" y2="158" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="168" y="126" font-size="14">Repairs double-strand DNA breaks</text>
+<text x="168" y="146" font-size="14">by homologous recombination</text>
+<text x="508" y="126" font-size="14">Triple-negative (basal-like) breast cancer;</text>
+<text x="508" y="146" font-size="14">high-grade serous ovarian cancer</text>
+<rect x="14" y="164" width="872" height="58" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="164" width="140" height="58" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="28" y="199" font-size="16">BRCA2</text>
+<line x1="154" y1="164" x2="154" y2="222" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="494" y1="164" x2="494" y2="222" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="168" y="190" font-size="14">Same job: repairs double-strand</text>
+<text x="168" y="210" font-size="14">breaks by homologous recombination</text>
+<text x="508" y="190" font-size="14">ER-positive breast cancer, including male breast</text>
+<text x="508" y="210" font-size="14">cancer; ovarian, prostate and pancreatic cancer</text>
+<rect x="14" y="228" width="872" height="58" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="228" width="140" height="58" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<text class="b" x="28" y="263" font-size="16">TP53</text>
+<line x1="154" y1="228" x2="154" y2="286" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="494" y1="228" x2="494" y2="286" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="168" y="263" font-size="14">Stops or kills cells with damaged DNA</text>
+<text x="508" y="254" font-size="14">Li-Fraumeni syndrome: early breast cancer,</text>
+<text x="508" y="274" font-size="14">sarcoma, brain and adrenal tumors</text>
+<rect x="14" y="292" width="872" height="58" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="292" width="140" height="58" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<text class="b" x="28" y="327" font-size="16">PTEN</text>
+<line x1="154" y1="292" x2="154" y2="350" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="494" y1="292" x2="494" y2="350" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="168" y="327" font-size="14">Brakes PI3K-AKT growth signaling</text>
+<text x="508" y="318" font-size="14">Cowden syndrome: breast, thyroid</text>
+<text x="508" y="338" font-size="14">and endometrial cancer</text>
+<rect x="14" y="356" width="872" height="58" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="356" width="140" height="58" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="28" y="391" font-size="16">CDH1</text>
+<line x1="154" y1="356" x2="154" y2="414" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="494" y1="356" x2="494" y2="414" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="168" y="391" font-size="14">E-cadherin holds epithelial cells together</text>
+<text x="508" y="382" font-size="14">Lobular breast cancer and</text>
+<text x="508" y="402" font-size="14">diffuse gastric cancer</text>
+<rect x="14" y="420" width="872" height="58" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="420" width="140" height="58" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="28" y="455" font-size="16">STK11</text>
+<line x1="154" y1="420" x2="154" y2="478" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="494" y1="420" x2="494" y2="478" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="168" y="455" font-size="14">Kinase that restrains growth through AMPK</text>
+<text x="508" y="446" font-size="14">Peutz-Jeghers syndrome: polyps, pigmented</text>
+<text x="508" y="466" font-size="14">lips, breast and gut cancer</text>
+<rect x="14" y="484" width="872" height="58" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="484" width="140" height="58" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="512" font-size="14">PALB2, ATM,</text>
+<text class="b" x="28" y="531" font-size="14">CHEK2</text>
+<line x1="154" y1="484" x2="154" y2="542" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="494" y1="484" x2="494" y2="542" stroke="var(--line-strong)" stroke-width="1"/>
+<text x="168" y="519" font-size="14">DNA repair partner; damage signaling</text>
+<text x="508" y="519" font-size="14">Moderate increase in breast cancer risk</text>
+</svg>
