@@ -656,14 +656,14 @@
   "s": "A 34-year-old woman, gravida 4, para 1, at 10 weeks' gestation by her last menstrual period, has had light vaginal bleeding and cramping for 1 day. Two weeks ago, ultrasound showed an intrauterine embryo with a heart rate of 160/min. Today her vital signs are normal and the cervical os is closed. Serum hCG was 38,000 mIU/mL 2 weeks ago and is 24,500 mIU/mL today. Transvaginal ultrasound shows an embryo with no cardiac activity.",
   "l": "Which finding establishes that this pregnancy has failed?",
   "o": [
-   "Absent heartbeat in an embryo that had one",
+   "No heartbeat in a visible embryo",
    "A fall in hCG over 2 weeks",
    "Bleeding with cramping for 1 day",
    "A history of two earlier miscarriages",
    "A closed cervical os"
   ],
   "a": 0,
-  "e": "An embryo whose heartbeat was seen before and is now absent has died, so the pregnancy has failed; no heartbeat once the crown-rump length is 7 mm or more means the same. Cardiac activity is normally seen by about 6 to 7 weeks, and this embryo had a heartbeat 2 weeks ago. Because the nonviable pregnancy is retained behind a closed os, this is a missed abortion. A falling hCG is worrying but not diagnostic, because hCG peaks near 10 weeks and then declines even in normal pregnancies. Bleeding with cramping and a closed os also occur in threatened abortion, most of which continue. Earlier miscarriages do not show that this pregnancy has failed.",
+  "e": "A visible embryo with no heartbeat on transvaginal ultrasound means the pregnancy has failed. Cardiac activity is normally seen by about 6 to 7 weeks, and this embryo had a heartbeat 2 weeks ago. Because the nonviable pregnancy is retained behind a closed os, this is a missed abortion. A falling hCG is worrying but not diagnostic, because hCG peaks near 10 weeks and then declines even in normal pregnancies. Bleeding with cramping and a closed os also occur in threatened abortion, most of which continue. Earlier miscarriages do not show that this pregnancy has failed.",
   "w": {
    "A fall in hCG over 2 weeks": "hCG normally peaks around 10 weeks and then falls, so a decline at this age is suggestive but cannot prove the embryo has died.",
    "Bleeding with cramping for 1 day": "About a quarter of pregnant women bleed in the first trimester, and most with a live embryo carry on. Symptoms alone never establish a loss.",
@@ -678,7 +678,7 @@
    ],
    [
     [
-     "Absent heartbeat in an embryo that had one",
+     "No heartbeat in a visible embryo",
      "Embryonic death",
      "No"
     ],
@@ -704,7 +704,7 @@
     ]
    ]
   ],
-  "bl": "Loss of a previously seen heartbeat establishes early pregnancy loss; a falling hCG does not.",
+  "bl": "No heartbeat in a visible embryo establishes early pregnancy loss; a falling hCG does not.",
   "ef": "rp26_framework",
   "pt": {
    "hl": [
