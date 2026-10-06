@@ -766,6 +766,13 @@
    "Efavirenz with abacavir": "Abacavir needs HLA-B*57:01 testing, and efavirenz causes vivid dreams and other CNS effects. Neither is used for prophylaxis.",
    "Lopinavir with ritonavir": "This boosted protease inhibitor pair treats established HIV and has many drug interactions. It is not a prophylaxis regimen.",
    "Raltegravir with maraviroc": "An integrase inhibitor with a CCR5 antagonist is a salvage-type treatment combination. Maraviroc needs a tropism test, and this pair is not used to prevent infection."
+  },
+  "media": "fig:rp17_art",
+  "pt": {
+   "hl": [
+    "Tenofovir with emtricitabine"
+   ],
+   "say": "In the PrEP card, daily oral prophylaxis is tenofovir with emtricitabine; injected cabotegravir is the alternative."
   }
  },
  {
@@ -795,6 +802,14 @@
    "It adds a second antiviral action at integrase": "Integrase inhibitors are separate drugs ending in -tegravir. At boosting doses ritonavir has no meaningful antiviral effect and works only through drug metabolism.",
    "It blocks CCR5 to prevent viral entry": "CCR5 blockade is the job of maraviroc, which acts at entry. Ritonavir acts on liver enzymes and the viral protease, not on the coreceptor.",
    "It prevents lipodystrophy from the protease inhibitor": "Protease inhibitors cause lipodystrophy, hyperglycemia and high lipids, and ritonavir adds to these effects. Its role is to raise drug levels, not to protect."
+  },
+  "media": "fig:rp17_art",
+  "pt": {
+   "hl": [
+    "Inhibits CYP3A4",
+    "enzyme that clears protease"
+   ],
+   "say": "The ritonavir row shows it inhibits CYP3A4, the liver enzyme that clears protease inhibitors, which raises the level of the partner drug."
   }
  }
 ]
