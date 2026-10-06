@@ -1,0 +1,921 @@
+[
+ {
+  "id": "rp14q01",
+  "d": 1,
+  "tags": [
+   "imaging-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp14-01"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.5"
+  ],
+  "s": "A 31-year-old woman has had 2 years of infertility and painful periods that begin before bleeding and last through menses. Pelvic ultrasonography shows a 5-cm cyst of the right ovary with uniform low-level echoes. At laparoscopy the cyst holds thick, dark brown fluid, and red-brown nodules cover the pouch of Douglas.",
+  "l": "Which term best describes the ovarian cyst?",
+  "o": [
+   "Endometrioma",
+   "Follicular cyst",
+   "Corpus luteum cyst",
+   "Mature cystic teratoma",
+   "Serous cystadenoma"
+  ],
+  "a": 0,
+  "e": "This is an **endometrioma**, also called a chocolate cyst. In endometriosis, endometrial glands and stroma grow outside the uterus. Inside the ovary they bleed with every cycle, and the old blood stays trapped as thick brown fluid. The cyclic pain, the infertility and the dark nodules in the pouch of Douglas come from the same disease on the peritoneum. A follicular cyst holds clear fluid. A corpus luteum cyst can bleed, but it forms once, after ovulation. A teratoma holds hair and fat, and a serous cystadenoma holds watery fluid.",
+  "w": {
+   "Follicular cyst": "A follicular cyst is thin walled, holds clear fluid and usually goes away within weeks. It has no old blood and no pelvic nodules.",
+   "Corpus luteum cyst": "A corpus luteum cyst forms after ovulation and can fill with blood. It happens once and heals, so it does not explain cyclic pain, infertility and pelvic nodules.",
+   "Mature cystic teratoma": "A mature cystic teratoma holds hair, greasy sebum and sometimes teeth. Its contents are not chocolate brown, and it does not cause cyclic pain.",
+   "Serous cystadenoma": "A serous cystadenoma is a thin-walled cyst filled with clear, watery fluid. It does not hold old blood or cause cyclic pain."
+  },
+  "et": [
+   [
+    "Option",
+    "Cyst contents",
+    "Cycle relationship",
+    "Associated clue"
+   ],
+   [
+    [
+     "Endometrioma",
+     "Old blood, thick brown fluid",
+     "Bleeds with each cycle",
+     "Peritoneal implants, infertility"
+    ],
+    [
+     "Follicular cyst",
+     "Clear fluid",
+     "Functional; regresses",
+     "Often asymptomatic"
+    ],
+    [
+     "Corpus luteum cyst",
+     "Blood or serous fluid",
+     "Luteal phase only",
+     "Common in early pregnancy; rupture mimics ectopic"
+    ],
+    [
+     "Mature cystic teratoma",
+     "Hair, sebum, teeth",
+     "None",
+     "Echogenic nodule on ultrasonography"
+    ],
+    [
+     "Serous cystadenoma",
+     "Clear watery fluid",
+     "None",
+     "Thin wall, usually painless"
+    ]
+   ]
+  ],
+  "bl": "An ovarian cyst of thick brown fluid with cyclic pain and infertility is an endometrioma, the chocolate cyst of endometriosis.",
+  "ef": "rp14_map",
+  "pt": {
+   "hl": [
+    "Endometrioma"
+   ],
+   "say": "Label 6 marks the endometrioma, the chocolate cyst of the ovary filled with old blood from cyclic bleeding of ectopic endometrium."
+  }
+ },
+ {
+  "id": "rp14q02",
+  "d": 2,
+  "tags": [
+   "anatomic-relations",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp14-01"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.3"
+  ],
+  "s": "A 27-year-old woman has severe dysmenorrhea, deep dyspareunia and painful defecation that get worse during her period. Laparoscopy shows red-brown nodules on the uterosacral ligaments, in the pouch of Douglas and on the surface of the ovary. Biopsy shows endometrial glands with stroma and hemosiderin-laden macrophages.",
+  "l": "Which mechanism best explains the distribution of these lesions?",
+  "o": [
+   "Retrograde flow of menstrual tissue through the fallopian tubes",
+   "Ascending infection from the lower genital tract",
+   "Direct growth of basal endometrium into the myometrium",
+   "Hematogenous spread of endometrial cells to the peritoneum",
+   "Lymphatic spread of endometrial cells to pelvic nodes"
+  ],
+  "a": 0,
+  "e": "The lesions sit in the lowest parts of the pelvis: the pouch of Douglas, the uterosacral ligaments and the ovarian surface. Menstrual blood and shed endometrium would pool there if they flowed backward through the tubes. This is **retrograde menstruation**, and the implants then bleed and scar with each cycle. Spread through blood or lymph explains rare lesions in the lung or lymph nodes, but not a pelvic pattern. Ascending infection causes salpingitis, and basalis growing into the muscle is adenomyosis.",
+  "w": {
+   "Ascending infection from the lower genital tract": "Chlamydia or gonorrhea climbing from the lower tract causes salpingitis and pelvic inflammatory disease, with fever and pus. The biopsy would show neutrophils, not endometrial glands with hemosiderin.",
+   "Direct growth of basal endometrium into the myometrium": "Basalis growing into the uterine wall is adenomyosis. It enlarges the uterus and does not place implants on the ovary or peritoneum.",
+   "Hematogenous spread of endometrial cells to the peritoneum": "Spread through the blood explains distant lesions in the lung, bone or brain. Implants confined to the lowest pelvic surfaces point to backflow of menstrual blood instead.",
+   "Lymphatic spread of endometrial cells to pelvic nodes": "Lymphatic spread can place endometriosis in lymph nodes, but it would not coat the peritoneum and ovarian surface in this pooled pattern."
+  },
+  "et": [
+   [
+    "Option",
+    "Theory or disease",
+    "Typical location",
+    "Key supporting clue"
+   ],
+   [
+    [
+     "Retrograde flow of menstrual tissue through the fallopian tubes",
+     "Regurgitation theory",
+     "Dependent pelvic surfaces",
+     "Early menarche, heavy flow"
+    ],
+    [
+     "Ascending infection from the lower genital tract",
+     "Pelvic inflammatory disease",
+     "Tubes and ovaries",
+     "Fever, purulent discharge"
+    ],
+    [
+     "Direct growth of basal endometrium into the myometrium",
+     "Adenomyosis",
+     "Uterine wall",
+     "Globular, tender uterus"
+    ],
+    [
+     "Hematogenous spread of endometrial cells to the peritoneum",
+     "Benign metastasis theory",
+     "Distant organs",
+     "Lung or brain lesions"
+    ],
+    [
+     "Lymphatic spread of endometrial cells to pelvic nodes",
+     "Lymphatic theory",
+     "Lymph nodes",
+     "Nodal deposits"
+    ]
+   ]
+  ],
+  "bl": "Pelvic endometriosis implants are explained mainly by retrograde menstruation, in which shed endometrium flows backward through the tubes and implants on dependent surfaces."
+ },
+ {
+  "id": "rp14q03",
+  "d": 2,
+  "tags": [
+   "drug-mechanism",
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp14-02"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.5"
+  ],
+  "s": "A 33-year-old woman with biopsy-proven endometriosis has had persistent pelvic pain for 8 months despite NSAIDs and a continuous combined oral contraceptive. Her gynecologist starts monthly leuprolide injections. Two months later her pain is much improved, but she reports hot flashes and vaginal dryness.",
+  "l": "Which mechanism explains the benefit of leuprolide in this patient?",
+  "o": [
+   "Pituitary desensitization with falling FSH, LH and estradiol",
+   "Competitive blockade of estrogen receptors in the implants",
+   "Inhibition of aromatase within the endometriotic tissue",
+   "Partial agonism at androgen receptors with suppressed gonadotropins",
+   "Progestin-induced decidualization and atrophy of the implants"
+  ],
+  "a": 0,
+  "e": "**Leuprolide** is a GnRH agonist. The hypothalamus normally releases GnRH in pulses, and pulses keep the pituitary responsive. A constant agonist signal causes a brief flare and then desensitizes the pituitary, so FSH and LH fall and the ovaries make little estradiol. Without estrogen the implants shrink and the pain eases. The low estrogen also explains the hot flashes and vaginal dryness. Danazol is a partial androgen agonist that lowers gonadotropins. Aromatase inhibitors block estrogen production, and progestins thin the implants directly. Receptor blockers belong to the modulator class. None of these is how leuprolide works.",
+  "w": {
+   "Competitive blockade of estrogen receptors in the implants": "Blocking estrogen receptors is how tamoxifen-type drugs work, and they can even stimulate the endometrium. Leuprolide lowers estradiol at its source, which causes the hot flashes.",
+   "Inhibition of aromatase within the endometriotic tissue": "Aromatase inhibitors block the enzyme that makes estrogen from androgens, and they raise FSH and LH. Leuprolide lowers both.",
+   "Partial agonism at androgen receptors with suppressed gonadotropins": "That describes danazol, a synthetic androgen that causes acne and hirsutism. Leuprolide is a peptide that acts on the pituitary GnRH receptor and has no androgen effect.",
+   "Progestin-induced decidualization and atrophy of the implants": "Progestins thin the implants directly, but that is not how leuprolide works. Leuprolide acts higher up, on the pituitary."
+  },
+  "et": [
+   [
+    "Option",
+    "Drug class",
+    "Example",
+    "Effect on FSH and LH"
+   ],
+   [
+    [
+     "Pituitary desensitization with falling FSH, LH and estradiol",
+     "GnRH agonist",
+     "Leuprolide",
+     "Fall after an initial flare"
+    ],
+    [
+     "Competitive blockade of estrogen receptors in the implants",
+     "Receptor modulator",
+     "Tamoxifen",
+     "Unchanged or raised"
+    ],
+    [
+     "Inhibition of aromatase within the endometriotic tissue",
+     "Aromatase inhibitor",
+     "Anastrozole",
+     "Raised"
+    ],
+    [
+     "Partial agonism at androgen receptors with suppressed gonadotropins",
+     "Synthetic androgen",
+     "Danazol",
+     "Fall"
+    ],
+    [
+     "Progestin-induced decidualization and atrophy of the implants",
+     "Progestin",
+     "Norethindrone",
+     "Mildly suppressed"
+    ]
+   ]
+  ],
+  "bl": "Leuprolide is a GnRH agonist; continuous stimulation desensitizes the pituitary, lowering FSH, LH and estradiol and atrophying endometriotic implants."
+ },
+ {
+  "id": "rp14q04",
+  "d": 1,
+  "tags": [
+   "adverse-effects",
+   "drug-mechanism"
+  ],
+  "bp": [
+   "BP-rp14-15",
+   "BP-rp14-02"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.5"
+  ],
+  "s": "A 36-year-old woman with endometriosis that did not respond to other treatments is started on a drug that suppresses her gonadotropins and acts as a partial agonist at androgen receptors. Her sister mentions that the same drug is used to prevent attacks of hereditary angioedema.",
+  "l": "Which adverse effect is most likely to develop?",
+  "o": [
+   "Acne and hirsutism",
+   "Galactorrhea with amenorrhea",
+   "Endometrial hyperplasia",
+   "Elevated HDL cholesterol",
+   "Breast enlargement with tenderness"
+  ],
+  "a": 0,
+  "e": "The drug is **danazol**, a synthetic androgen. It lowers FSH and LH and acts as a partial agonist at androgen receptors, so the implants shrink but androgen effects appear: acne, hirsutism, voice deepening and weight gain. It also lowers HDL cholesterol and can injure the liver. Danazol raises liver production of C1 esterase inhibitor, which is why it also prevents hereditary angioedema. Galactorrhea needs high prolactin. Hyperplasia needs unopposed estrogen, and danazol lowers estrogen. Breast tissue shrinks rather than enlarges.",
+  "w": {
+   "Galactorrhea with amenorrhea": "Galactorrhea comes from high prolactin, as in a prolactinoma or with dopamine blockers. Danazol suppresses gonadotropins and causes amenorrhea, but it does not raise prolactin.",
+   "Endometrial hyperplasia": "Hyperplasia needs long unopposed estrogen. Danazol lowers estrogen and thins the lining, which is why it treats endometriosis.",
+   "Elevated HDL cholesterol": "Androgens lower HDL cholesterol, so danazol makes the lipid profile worse. Estrogen, not an androgen, is what raises HDL.",
+   "Breast enlargement with tenderness": "Breast tenderness and growth come from estrogen or progestin excess. Danazol lowers estrogen, so breast tissue tends to shrink."
+  },
+  "et": [
+   [
+    "Option",
+    "Underlying mechanism",
+    "Typical cause"
+   ],
+   [
+    [
+     "Acne and hirsutism",
+     "Androgen receptor activation",
+     "Danazol, anabolic steroids"
+    ],
+    [
+     "Galactorrhea with amenorrhea",
+     "High prolactin",
+     "Prolactinoma, dopamine antagonists"
+    ],
+    [
+     "Endometrial hyperplasia",
+     "Unopposed estrogen",
+     "Obesity, anovulation, estrogen-only therapy"
+    ],
+    [
+     "Elevated HDL cholesterol",
+     "Estrogen effect on hepatic lipids",
+     "Oral estrogen"
+    ],
+    [
+     "Breast enlargement with tenderness",
+     "Estrogen or progestin excess",
+     "Pregnancy, combined hormonal pills"
+    ]
+   ]
+  ],
+  "bl": "Danazol is a partial androgen agonist, so its characteristic adverse effects are acne, hirsutism, voice deepening, weight gain, low HDL and liver injury."
+ },
+ {
+  "id": "rp14q05",
+  "d": 2,
+  "tags": [
+   "bleeding-source",
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp14-03"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.5"
+  ],
+  "s": "A 44-year-old woman, gravida 3 para 3, has had 2 years of progressively heavier menses with severe cramping. Serum hCG is negative. Examination shows a symmetrically enlarged, soft and tender uterus about the size of a 12-week gestation, and the ovaries are normal. An endometrial biopsy shows proliferative endometrium without hyperplasia. Ultrasonography shows diffuse myometrial thickening with small cystic foci.",
+  "l": "Which diagnosis is most likely?",
+  "o": [
+   "Adenomyosis",
+   "Leiomyoma",
+   "Endometrial hyperplasia",
+   "Leiomyosarcoma",
+   "Endometriosis"
+  ],
+  "a": 0,
+  "e": "This is **adenomyosis**: endometrial glands and stroma inside the myometrium. The tissue bleeds within the wall, and the muscle thickens around it, so the whole uterus becomes evenly enlarged, soft and globular. Heavy, painful periods in a multiparous woman in her 40s are typical. A leiomyoma makes a firm, lumpy uterus with separate whorled nodules. The biopsy shows no hyperplasia. Leiomyosarcoma is a single, fast-growing mass after menopause. Endometriosis lies outside the uterus, so the uterus stays a normal size.",
+  "w": {
+   "Leiomyoma": "A fibroid makes a firm, lumpy, uneven uterus with separate round masses. Even, tender enlargement fits adenomyosis better.",
+   "Endometrial hyperplasia": "Hyperplasia is overgrowth of glands in the lining. It causes heavy bleeding, but the biopsy here is normal, and it does not make the uterus enlarged or tender.",
+   "Leiomyosarcoma": "Leiomyosarcoma is a rare, single, fast-growing, necrotic mass, usually after menopause. It does not cause even, tender enlargement in a multiparous woman.",
+   "Endometriosis": "Endometriosis implants lie outside the uterus, on the ovaries and peritoneum, so the uterus stays normal in size. Here the tissue lies inside the wall."
+  },
+  "et": [
+   [
+    "Option",
+    "Where the tissue or tumor lies",
+    "Uterine size and shape",
+    "Typical patient"
+   ],
+   [
+    [
+     "Adenomyosis",
+     "Glands and stroma inside the myometrium",
+     "Uniform, soft, globular",
+     "Multiparous, 40s"
+    ],
+    [
+     "Leiomyoma",
+     "Discrete smooth muscle nodules",
+     "Asymmetric, nodular",
+     "Reproductive years, Black women"
+    ],
+    [
+     "Endometrial hyperplasia",
+     "Lining only",
+     "Normal size",
+     "Anovulatory or obese"
+    ],
+    [
+     "Leiomyosarcoma",
+     "Single malignant myometrial mass",
+     "Rapidly enlarging, irregular",
+     "Postmenopausal"
+    ],
+    [
+     "Endometriosis",
+     "Outside the uterus",
+     "Normal size, fixed by adhesions",
+     "Nulligravid, infertile"
+    ]
+   ]
+  ],
+  "bl": "Adenomyosis, endometrial glands and stroma within the myometrium, produces a diffusely enlarged, globular, tender uterus with heavy, painful periods.",
+  "ef": "rp14_map",
+  "pt": {
+   "hl": [
+    "Adenomyosis"
+   ],
+   "say": "Label 5 shows adenomyosis, endometrial glands within the myometrium, which makes the uterus globular and tender with heavy bleeding."
+  }
+ },
+ {
+  "id": "rp14q06",
+  "d": 1,
+  "tags": [
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp14-04"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.7"
+  ],
+  "s": "A 38-year-old Black woman has heavy menses and urinary frequency. Pelvic examination reveals an enlarged, irregular uterus with several firm, nontender, smooth masses. Ultrasonography shows multiple well-circumscribed hypoechoic myometrial nodules. A later hysterectomy shows gray-white, whorled nodules composed of bland spindle cells.",
+  "l": "Which statement best describes the behavior of this tumor type?",
+  "o": [
+   "Growth depends on estrogen, and the masses shrink after menopause",
+   "Malignant transformation to leiomyosarcoma is common",
+   "It arises from glands that invade the myometrium",
+   "It is usually solitary and presents after menopause",
+   "It originates from endometrial stromal cells"
+  ],
+  "a": 0,
+  "e": "These are **leiomyomas** (fibroids): benign, sharply edged smooth muscle tumors with a whorled cut surface and bland cells. Estrogen drives their growth, so they enlarge in pregnancy and shrink after menopause. They are often multiple and more common in Black women, and they can cause bleeding, pressure and infertility. They essentially never turn into leiomyosarcoma, which arises on its own. Glands growing into muscle describe adenomyosis. A solitary tumor after menopause suggests leiomyosarcoma. Fibroids come from smooth muscle, not endometrial stroma.",
+  "w": {
+   "Malignant transformation to leiomyosarcoma is common": "Leiomyosarcoma is rare and almost always arises on its own, not from a fibroid. Fibroids are removed for symptoms, not because they are precancerous.",
+   "It arises from glands that invade the myometrium": "Glands growing into the muscle is adenomyosis, which enlarges the whole uterus evenly. A fibroid is a smooth muscle tumor with no glands.",
+   "It is usually solitary and presents after menopause": "Fibroids are often multiple and appear in the reproductive years. A solitary tumor after menopause is the setting for leiomyosarcoma.",
+   "It originates from endometrial stromal cells": "Fibroids grow from the smooth muscle cells of the myometrium, which is why they show interlacing bundles of spindle cells, not endometrial stroma."
+  },
+  "et": [
+   [
+    "Option",
+    "Lesion it describes",
+    "Hormone relationship",
+    "Cell of origin"
+   ],
+   [
+    [
+     "Growth depends on estrogen, and the masses shrink after menopause",
+     "Leiomyoma",
+     "Estrogen and progesterone sensitive",
+     "Myometrial smooth muscle"
+    ],
+    [
+     "Malignant transformation to leiomyosarcoma is common",
+     "Not a feature of any fibroid",
+     "Not applicable",
+     "Not applicable"
+    ],
+    [
+     "It arises from glands that invade the myometrium",
+     "Adenomyosis",
+     "Estrogen responsive",
+     "Basalis endometrium"
+    ],
+    [
+     "It is usually solitary and presents after menopause",
+     "Leiomyosarcoma",
+     "Not hormone dependent",
+     "Myometrial smooth muscle"
+    ],
+    [
+     "It originates from endometrial stromal cells",
+     "Stromal tumor or polyp",
+     "Variable",
+     "Endometrial stroma"
+    ]
+   ]
+  ],
+  "bl": "Leiomyomas are estrogen-sensitive benign smooth muscle tumors that grow in reproductive years, enlarge in pregnancy and shrink after menopause.",
+  "ef": "rp14_muscle",
+  "pt": {
+   "hl": [
+    "Shrinks after menopause"
+   ],
+   "say": "The leiomyoma column states that fibroids are estrogen sensitive and shrink after menopause, and that they do not become sarcoma."
+  }
+ },
+ {
+  "id": "rp14q07",
+  "d": 3,
+  "tags": [
+   "histology-to-diagnosis",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp14-04",
+   "BP-rp14-05"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.7"
+  ],
+  "s": "A 33-year-old woman has a 7-cm uterine mass removed for heavy menstrual bleeding. The mass is well circumscribed, with a whorled tan cut surface and no hemorrhage or necrosis. Under the microscope it is made of bundles of spindle cells with uniform, elongated nuclei. The pathologist sees several mitotic figures but no cytologic atypia and no tumor cell necrosis.",
+  "l": "Which is the most appropriate diagnosis?",
+  "o": [
+   "Leiomyoma",
+   "Leiomyosarcoma",
+   "Adenomyosis",
+   "Endometrial polyp",
+   "Carcinosarcoma"
+  ],
+  "a": 0,
+  "e": "Benign smooth muscle tumors can have many mitoses, especially in young women, so mitoses alone do not make a sarcoma. **Leiomyosarcoma** is judged on cytologic atypia, necrosis and mitoses weighed together, never on mitoses alone, and it is soft, hemorrhagic and necrotic with infiltrating edges. This tumor is well circumscribed and whorled, with bland cells, no atypia and no necrosis, so it is a **leiomyoma**. Adenomyosis contains glands. An endometrial polyp is a small, soft growth of glands and stroma in the cavity. Carcinosarcoma has a malignant epithelial part and occurs in older women.",
+  "w": {
+   "Leiomyosarcoma": "Sarcoma is judged on atypia, necrosis and mitoses weighed together. Here the edge is smooth and there is no atypia or necrosis, so the mitoses alone are not enough.",
+   "Adenomyosis": "Adenomyosis is endometrial glands and stroma inside the myometrium, with diffuse enlargement. A single whorled mass of spindle cells with no glands is not adenomyosis.",
+   "Endometrial polyp": "A polyp is a small, soft overgrowth of glands and stroma that projects into the cavity. This is a large, whorled mass of pure spindle cells with no glands.",
+   "Carcinosarcoma": "Carcinosarcoma has both a malignant epithelial part and a malignant mesenchymal part, and it occurs after menopause. The epithelial part is missing here, and the patient is young."
+  },
+  "et": [
+   [
+    "Option",
+    "Cell type",
+    "Atypia and necrosis",
+    "Typical setting"
+   ],
+   [
+    [
+     "Leiomyoma",
+     "Smooth muscle",
+     "Absent",
+     "Young woman, circumscribed mass"
+    ],
+    [
+     "Leiomyosarcoma",
+     "Smooth muscle",
+     "Present with high mitoses",
+     "Postmenopausal, hemorrhagic mass"
+    ],
+    [
+     "Adenomyosis",
+     "Endometrial glands and stroma",
+     "Absent",
+     "Diffuse enlargement, 40s"
+    ],
+    [
+     "Endometrial polyp",
+     "Glands and stroma",
+     "Absent",
+     "Bleeding; projects into the cavity"
+    ],
+    [
+     "Carcinosarcoma",
+     "Epithelium and mesenchyme",
+     "Marked",
+     "Postmenopausal bleeding"
+    ]
+   ]
+  ],
+  "bl": "Brisk mitoses without atypia or necrosis in a circumscribed whorled tumor of a young woman make a leiomyoma, because mitoses alone never make a sarcoma.",
+  "ef": "rp14_muscle",
+  "pt": {
+   "hl": [
+    "Mitoses alone do not make a sarcoma"
+   ],
+   "say": "The note at the bottom says mitoses alone do not make a sarcoma, so a bland circumscribed tumor with brisk mitoses stays a leiomyoma."
+  }
+ },
+ {
+  "id": "rp14q08",
+  "d": 2,
+  "tags": [
+   "tumor-progression",
+   "unopposed-estrogen"
+  ],
+  "bp": [
+   "BP-rp14-06"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.5"
+  ],
+  "s": "A 47-year-old woman with obesity and oligomenorrhea has had heavy, irregular bleeding for 6 months. Transvaginal ultrasonography shows a thickened endometrial echo complex. Endometrial biopsy shows crowded glands with a gland-to-stroma ratio greater than 1, and several glands are cystically dilated. In some areas the glandular epithelium shows enlarged, rounded nuclei with prominent nucleoli.",
+  "l": "Which finding best predicts progression to endometrial carcinoma?",
+  "o": [
+   "Cytologic atypia of the glandular nuclei",
+   "Cystic dilation of the glands",
+   "Increased gland-to-stroma ratio",
+   "Irregular, anovulatory bleeding pattern",
+   "Thickness of the endometrial echo complex"
+  ],
+  "a": 0,
+  "e": "**Cytologic atypia** is the best predictor. Here the nuclei are enlarged and round with prominent nucleoli. That defines atypical hyperplasia, also called EIN, which often has PTEN loss and often coexists with endometrioid carcinoma. Crowded, cystic glands and a high gland-to-stroma ratio are seen in hyperplasia without atypia, which has a low cancer risk and responds to progestin. The bleeding pattern and the thickness of the lining only tell you to take a biopsy. They do not grade the lesion.",
+  "w": {
+   "Cystic dilation of the glands": "Cystic glands are common in benign hyperplasia. They come from trapped secretions, not from changes in the nuclei, so the cancer risk stays low.",
+   "Increased gland-to-stroma ratio": "A high ratio is what defines hyperplasia, with or without atypia. Both low-risk and high-risk lesions have it, so it cannot tell them apart.",
+   "Irregular, anovulatory bleeding pattern": "Anovulatory bleeding comes from estrogen without progesterone, and it tells you to take a biopsy. It says nothing about the nuclear changes that decide cancer risk.",
+   "Thickness of the endometrial echo complex": "A thick lining tells you to sample, but polyps and simple hyperplasia also thicken it. Only the biopsy can show nuclear atypia."
+  },
+  "et": [
+   [
+    "Option",
+    "What it shows",
+    "Seen without atypia",
+    "Meaning for cancer risk"
+   ],
+   [
+    [
+     "Cytologic atypia of the glandular nuclei",
+     "Neoplastic nuclear change",
+     "No",
+     "Best predictor; EIN"
+    ],
+    [
+     "Cystic dilation of the glands",
+     "Retained secretions",
+     "Yes",
+     "Low risk"
+    ],
+    [
+     "Increased gland-to-stroma ratio",
+     "Gland overgrowth",
+     "Yes",
+     "Defines hyperplasia only"
+    ],
+    [
+     "Irregular, anovulatory bleeding pattern",
+     "Estrogen without progesterone",
+     "Yes",
+     "Prompts sampling"
+    ],
+    [
+     "Thickness of the endometrial echo complex",
+     "Lining volume",
+     "Yes",
+     "Prompts sampling"
+    ]
+   ]
+  ],
+  "bl": "Cytologic atypia distinguishes atypical hyperplasia (EIN) from hyperplasia without atypia and best predicts progression to endometrioid carcinoma.",
+  "ef": "rp14_types",
+  "pt": {
+   "hl": [
+    "Atypical hyperplasia"
+   ],
+   "say": "The atypical hyperplasia box carries the highest cancer risk, while hyperplasia without atypia is low risk; atypia is what separates them."
+  }
+ },
+ {
+  "id": "rp14q09",
+  "d": 3,
+  "tags": [
+   "tumor-genetics",
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp14-07"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.8",
+   "BICEP-WILLIAMS.10"
+  ],
+  "s": "A 69-year-old thin woman with hypertension has had 2 weeks of vaginal spotting. She has never taken hormone therapy and has no history of obesity or diabetes. Transvaginal ultrasonography shows a thin endometrium with a polypoid focus. Biopsy shows papillary architecture with marked nuclear pleomorphism and numerous psammoma bodies in otherwise atrophic endometrium without hyperplasia. Imaging later shows peritoneal deposits.",
+  "l": "Which molecular alteration is most likely in this tumor?",
+  "o": [
+   "TP53 mutation",
+   "PTEN mutation",
+   "Mismatch repair gene mutation",
+   "BRCA1 mutation",
+   "RB1 mutation"
+  ],
+  "a": 0,
+  "e": "Papillae, marked atypia, psammoma bodies, an atrophic background and early spread to the peritoneum describe **serous carcinoma**. This is a type II tumor of older, thin women, and estrogen does not drive it. An early **TP53** mutation is its central event, and it causes strong p53 staining. PTEN loss and mismatch repair defects belong to estrogen-driven type I endometrioid carcinoma, which arises from hyperplasia in obese women. BRCA1 raises breast and ovarian cancer risk, and RB1 is the tumor suppressor that HPV E7 disables in cervical disease.",
+  "w": {
+   "PTEN mutation": "PTEN loss is an early event in estrogen-driven endometrioid carcinoma and atypical hyperplasia. It fits an obese, perimenopausal woman, not a papillary tumor in atrophic endometrium.",
+   "Mismatch repair gene mutation": "Mismatch repair defects, sporadic or inherited in Lynch syndrome, cause microsatellite instability in endometrioid tumors. Serous tumors come from TP53 loss instead.",
+   "BRCA1 mutation": "BRCA1 mutation raises the risk of breast and ovarian cancer through faulty DNA repair. It is not the central event in serous carcinoma of the endometrium.",
+   "RB1 mutation": "RB1 holds the G1 checkpoint, and HPV E7 disables it in cervical disease. Loss of RB1 is not the early event in serous endometrial carcinoma."
+  },
+  "et": [
+   [
+    "Option",
+    "Typical tumor",
+    "Estrogen link",
+    "Precursor lesion"
+   ],
+   [
+    [
+     "TP53 mutation",
+     "Serous carcinoma",
+     "None",
+     "Serous intraepithelial carcinoma"
+    ],
+    [
+     "PTEN mutation",
+     "Endometrioid carcinoma",
+     "Estrogen driven",
+     "Atypical hyperplasia"
+    ],
+    [
+     "Mismatch repair gene mutation",
+     "Endometrioid carcinoma, Lynch syndrome",
+     "Variable",
+     "Atypical hyperplasia"
+    ],
+    [
+     "BRCA1 mutation",
+     "Breast and ovarian carcinoma",
+     "None",
+     "Not an endometrial precursor"
+    ],
+    [
+     "RB1 mutation",
+     "Retinoblastoma and osteosarcoma",
+     "None",
+     "Not applicable"
+    ]
+   ]
+  ],
+  "bl": "A papillary, psammoma-forming tumor in atrophic endometrium of an older woman is serous carcinoma, driven by an early TP53 mutation.",
+  "ef": "rp14_types",
+  "pt": {
+   "hl": [
+    "TP53 mutation"
+   ],
+   "say": "The type II row starts from an atrophic lining, then a TP53 mutation as the early, central event, ending in serous carcinoma with psammoma bodies."
+  }
+ },
+ {
+  "id": "rp14q10",
+  "d": 3,
+  "tags": [
+   "inheritance-pattern",
+   "tumor-genetics"
+  ],
+  "bp": [
+   "BP-rp14-08"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.8",
+   "BICEP-WILLIAMS.12"
+  ],
+  "s": "A 43-year-old woman with abnormal uterine bleeding has an endometrial biopsy showing grade 1 endometrioid adenocarcinoma. She is not obese and has regular cycles. Her father had colon cancer at age 47, and a paternal aunt had endometrial cancer at 52. Immunohistochemistry of the tumor shows loss of staining for the mismatch repair proteins MSH2 and MSH6.",
+  "l": "Which underlying abnormality is most likely?",
+  "o": [
+   "Germline mismatch repair gene mutation",
+   "Germline BRCA1 mutation",
+   "Germline PTEN mutation",
+   "Somatic TP53 mutation",
+   "Prolonged unopposed estrogen exposure"
+  ],
+  "a": 0,
+  "e": "A lean woman with regular cycles and endometrioid cancer at 43 does not fit unopposed estrogen. Relatives with colon and endometrial cancer, plus loss of mismatch repair staining, point to **Lynch syndrome**. This is an autosomal dominant germline defect in a DNA mismatch repair gene. Unrepaired copying errors cause microsatellite instability. After colorectal cancer, the endometrium is the next most common site. BRCA1 mutation raises breast and ovarian cancer risk. Germline PTEN mutation (Cowden syndrome) raises breast, thyroid and endometrial cancer risk, but mismatch repair staining stays intact. TP53 mutation drives serous tumors.",
+  "w": {
+   "Germline BRCA1 mutation": "BRCA1 carriers have a high risk of breast and ovarian cancer. Their tumors keep mismatch repair proteins, and colon cancer plus endometrioid cancer in relatives is not their pattern.",
+   "Germline PTEN mutation": "Cowden syndrome from germline PTEN loss causes hamartomas and breast, thyroid and endometrial cancer. Mismatch repair staining stays intact, and colon cancer is not its main feature.",
+   "Somatic TP53 mutation": "TP53 mutation drives serous endometrial carcinoma in older women with atrophic endometrium. It is acquired in the tumor, not inherited, and it would not remove mismatch repair staining.",
+   "Prolonged unopposed estrogen exposure": "Unopposed estrogen explains sporadic type I cancer in obese or anovulatory women. This woman is lean with regular cycles, has a family history, and her tumor lost mismatch repair staining."
+  },
+  "et": [
+   [
+    "Option",
+    "Mechanism",
+    "Inheritance",
+    "Tumor staining result"
+   ],
+   [
+    [
+     "Germline mismatch repair gene mutation",
+     "Failed repair of replication errors",
+     "Autosomal dominant",
+     "Loss of MSH2 and MSH6"
+    ],
+    [
+     "Germline BRCA1 mutation",
+     "Defective homologous recombination",
+     "Autosomal dominant",
+     "Mismatch repair intact"
+    ],
+    [
+     "Germline PTEN mutation",
+     "Lost brake on growth signaling",
+     "Autosomal dominant",
+     "Mismatch repair intact"
+    ],
+    [
+     "Somatic TP53 mutation",
+     "Lost cell cycle guardian",
+     "Acquired in the tumor",
+     "Aberrant p53 staining"
+    ],
+    [
+     "Prolonged unopposed estrogen exposure",
+     "Hormonal drive",
+     "None",
+     "Mismatch repair intact"
+    ]
+   ]
+  ],
+  "bl": "Absent MSH2 and MSH6 staining with relatives who had colon and endometrial cancer indicates Lynch syndrome, a germline mismatch repair mutation.",
+  "ef": "rp14_types",
+  "pt": {
+   "hl": [
+    "Mismatch repair loss"
+   ],
+   "say": "The type I row ends with mismatch repair loss, an early event that is inherited in Lynch syndrome, so absent MSH2 staining signals a germline defect."
+  }
+ },
+ {
+  "id": "rp14q11",
+  "d": 2,
+  "tags": [
+   "selective-modulators",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp14-13",
+   "BP-rp14-06"
+  ],
+  "obj": [
+   "HP-UTERUS-OVARY.5"
+  ],
+  "s": "A 56-year-old woman is evaluated for 2 episodes of postmenopausal vaginal spotting. She had a lumpectomy for estrogen receptor-positive breast cancer 3 years ago and has since taken a daily oral medication. Transvaginal ultrasonography shows an endometrial thickness of 11 mm. Endometrial biopsy shows hyperplasia with focal polyp formation, without atypia.",
+  "l": "Which mechanism of her medication best explains these endometrial findings?",
+  "o": [
+   "Partial agonist activity at endometrial estrogen receptors",
+   "Antagonist activity at endometrial estrogen receptors",
+   "Inhibition of aromatase in adipose tissue",
+   "Stimulation of progesterone receptors in the endometrium",
+   "Suppression of pituitary gonadotropin release"
+  ],
+  "a": 0,
+  "e": "The drug is **tamoxifen**, a selective estrogen receptor modulator. It blocks estrogen in breast cancer cells but acts as a partial agonist in the endometrium. The lining then grows without progesterone opposition, causing polyps, hyperplasia and a modestly higher risk of endometrial cancer, including carcinosarcoma. New bleeding on tamoxifen needs endometrial sampling. Aromatase inhibitors lower estrogen everywhere and do not thicken the lining. Pure blockade would thin it, and tamoxifen neither stimulates progesterone receptors nor suppresses gonadotropins.",
+  "w": {
+   "Antagonist activity at endometrial estrogen receptors": "Pure blockade would leave a thin, atrophic lining. Tamoxifen blocks estrogen in the breast but acts as an agonist in the uterus, which is why it thickens the endometrium.",
+   "Inhibition of aromatase in adipose tissue": "Aromatase inhibitors such as anastrozole cut estrogen production and thin the lining. They are an alternative to tamoxifen and do not cause hyperplasia.",
+   "Stimulation of progesterone receptors in the endometrium": "Stimulating progesterone receptors would make the lining secretory and thin, which protects against hyperplasia. Tamoxifen acts on estrogen receptors.",
+   "Suppression of pituitary gonadotropin release": "GnRH agonists, danazol and combined pills suppress gonadotropins. They lower estrogen and thin the lining, so they would not cause this thickening."
+  },
+  "et": [
+   [
+    "Option",
+    "Drug type",
+    "Example",
+    "Effect on the endometrium"
+   ],
+   [
+    [
+     "Partial agonist activity at endometrial estrogen receptors",
+     "Selective modulator",
+     "Tamoxifen",
+     "Proliferation, polyps, cancer risk"
+    ],
+    [
+     "Antagonist activity at endometrial estrogen receptors",
+     "Pure antagonist",
+     "Fulvestrant",
+     "Atrophy"
+    ],
+    [
+     "Inhibition of aromatase in adipose tissue",
+     "Aromatase inhibitor",
+     "Anastrozole",
+     "Atrophy"
+    ],
+    [
+     "Stimulation of progesterone receptors in the endometrium",
+     "Progestin",
+     "Medroxyprogesterone",
+     "Secretory change, thinning"
+    ],
+    [
+     "Suppression of pituitary gonadotropin release",
+     "GnRH agonist or androgen",
+     "Leuprolide, danazol",
+     "Atrophy"
+    ]
+   ]
+  ],
+  "bl": "Tamoxifen blocks estrogen in the breast but is a partial agonist in the endometrium, causing polyps, hyperplasia and carcinoma risk.",
+  "ef": "rp14_types",
+  "pt": {
+   "hl": [
+    "Tamoxifen"
+   ],
+   "say": "Tamoxifen appears in the unopposed estrogen box of the type I pathway because its partial agonist action drives endometrial proliferation."
+  }
+ },
+ {
+  "id": "rp14q12",
+  "d": 3,
+  "tags": [
+   "workup-sequence",
+   "bleeding-source"
+  ],
+  "bp": [
+   "BP-rp14-12",
+   "BP-rp14-07"
+  ],
+  "obj": [
+   "BICEP-WILLIAMS.7",
+   "SIM-COLPO.2"
+  ],
+  "s": "A 63-year-old woman with obesity and type 2 diabetes has had 3 episodes of vaginal bleeding over 2 months. She went through menopause at age 51 and takes no hormone therapy. The vulva, vagina and cervix look normal, and the uterus is normal in size. Transvaginal ultrasonography shows an endometrial thickness of 12 mm.",
+  "l": "Which is the most appropriate next step in management?",
+  "o": [
+   "Office endometrial biopsy",
+   "Hysteroscopy with dilation and curettage",
+   "Total hysterectomy with bilateral salpingo-oophorectomy",
+   "Repeat transvaginal ultrasonography in 6 months",
+   "Colposcopy with endocervical curettage"
+  ],
+  "a": 0,
+  "e": "As of 2026, ACOG advises endometrial sampling for most women with postmenopausal bleeding. Her 12-mm lining, repeated bleeding, obesity and diabetes make tissue essential to rule out hyperplasia and **endometrial carcinoma**. An office endometrial biopsy takes a suction sample of the lining, needs no anesthesia and finds most cancers, so it comes first. Hysteroscopy with D&C is for an inadequate sample, bleeding that continues after a benign biopsy, or a suspected polyp. Hysterectomy comes after a tissue diagnosis. Repeating the ultrasound would only delay the diagnosis. The cervix is normal, so colposcopy is not needed.",
+  "w": {
+   "Hysteroscopy with dilation and curettage": "This is the next step if the office sample is inadequate or bleeding continues, or when a focal lesion such as a polyp is suspected. It needs anesthesia, so it is not the first test.",
+   "Total hysterectomy with bilateral salpingo-oophorectomy": "Surgery treats a cancer or atypical hyperplasia that is already proven. It is not a first diagnostic step.",
+   "Repeat transvaginal ultrasonography in 6 months": "A thick lining with bleeding already calls for a biopsy. Waiting only delays the diagnosis of a cancer that is curable when found early.",
+   "Colposcopy with endocervical curettage": "Colposcopy is for abnormal cervical screening or a visible cervical lesion. Her cervix looks normal, so the bleeding is coming from the uterus."
+  },
+  "et": [
+   [
+    "Option",
+    "Sample obtained",
+    "Anesthesia needed",
+    "Usual indication"
+   ],
+   [
+    [
+     "Office endometrial biopsy",
+     "Lining by suction",
+     "No",
+     "First test for postmenopausal bleeding"
+    ],
+    [
+     "Hysteroscopy with dilation and curettage",
+     "Directed and scraped tissue",
+     "Yes",
+     "Inadequate biopsy or focal lesion"
+    ],
+    [
+     "Total hysterectomy with bilateral salpingo-oophorectomy",
+     "Whole uterus and adnexa",
+     "Yes",
+     "Proven carcinoma or atypia"
+    ],
+    [
+     "Repeat transvaginal ultrasonography in 6 months",
+     "None",
+     "No",
+     "Single episode, fully seen stripe of 4 mm or less, no risk factors"
+    ],
+    [
+     "Colposcopy with endocervical curettage",
+     "Cervical epithelium and canal",
+     "No",
+     "Abnormal cervical screening"
+    ]
+   ]
+  ],
+  "bl": "Postmenopausal bleeding needs endometrial sampling in most women, and the first sampling test is an office endometrial biopsy."
+ }
+]

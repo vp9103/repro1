@@ -1,0 +1,81 @@
+{
+ "id": "d_rp11_sort",
+ "c": "rp11",
+ "kind": "sort",
+ "t": "Estrogen alone, or a progestogen added?",
+ "tags": [
+  "unopposed-estrogen",
+  "risk-factors"
+ ],
+ "bp": [
+  "BP-rp11-06",
+  "BP-rp11-08",
+  "BP-rp11-16",
+  "BP-rp11-02"
+ ],
+ "a": "Estrogen alone is enough",
+ "bb": "Progestogen must be added",
+ "key": "Ask whether an endometrium is still there. Estrogen alone lets the lining grow unopposed into hyperplasia and cancer, so any woman with a uterus on systemic estrogen needs a progestogen, and only a woman without a uterus takes estrogen alone. The one exception is low-dose vaginal estrogen, which is barely absorbed.",
+ "items": [
+  [
+   "Hot flashes after a total hysterectomy for fibroids",
+   "a",
+   "With no uterus there is no endometrium to overgrow, so a progestogen would add risk and side effects without any benefit."
+  ],
+  [
+   "Hysterectomy with bilateral oophorectomy at age 42",
+   "a",
+   "Both the ovaries and the uterus are gone, so estrogen alone replaces what is missing, and it is usually continued until about the age of natural menopause."
+  ],
+  [
+   "Women's Health Initiative arm that did not raise breast cancer",
+   "a",
+   "The estrogen-alone arm enrolled women after hysterectomy and did not increase breast cancer, although stroke and clot risk still rose."
+  ],
+  [
+   "Daily estradiol patch for a woman whose uterus was removed",
+   "a",
+   "The route changes liver exposure and clot risk, not endometrial protection, so with the uterus gone the patch needs no progestogen partner."
+  ],
+  [
+   "Vaginal estrogen cream for recurrent urinary infections after menopause",
+   "a",
+   "Low-dose vaginal estrogen restores the urethral and vaginal lining and is barely absorbed, so even with a uterus it needs no progestogen."
+  ],
+  [
+   "Low-dose vaginal estrogen for dryness alone, even with an intact uterus",
+   "a",
+   "Very little is absorbed into the circulation, so the lining is not meaningfully stimulated and no progestogen is needed."
+  ],
+  [
+   "Severe hot flashes at 52 with an intact uterus",
+   "b",
+   "Systemic estrogen would stimulate the endometrium unopposed, so a progestogen is added to keep the lining thin and prevent hyperplasia and cancer."
+  ],
+  [
+   "Cyclic regimen with a monthly withdrawal bleed",
+   "b",
+   "The progestogen is given for 12 to 14 days each month, which matures the lining and sheds it on schedule, so a planned bleed follows."
+  ],
+  [
+   "Continuous combined regimen that aims for no bleeding",
+   "b",
+   "Daily estrogen with daily progestogen keeps the lining thin and atrophic, so spotting is common at first and then usually stops."
+  ],
+  [
+   "Women's Health Initiative arm that raised breast cancer, stroke and clots",
+   "b",
+   "The combined arm gave conjugated estrogen with medroxyprogesterone to women who had a uterus, and it stopped early in 2002 because breast cancer, stroke, venous thromboembolism and coronary events rose."
+  ],
+  [
+   "Primary ovarian insufficiency at age 32 with a uterus",
+   "b",
+   "She needs estrogen until about age 51, and her uterus means a progestogen must protect the lining."
+  ],
+  [
+   "Hot flashes after removal of both ovaries, uterus left in place",
+   "b",
+   "Removing the ovaries does not remove the endometrium, so systemic estrogen still needs a progestogen to prevent hyperplasia."
+  ]
+ ]
+}

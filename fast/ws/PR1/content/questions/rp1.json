@@ -1,0 +1,873 @@
+[
+ {
+  "id": "rp1q01",
+  "d": 1,
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp1-03"
+  ],
+  "obj": [
+   "ANAT-PELVIS-LEC.4"
+  ],
+  "s": "A 24-year-old woman comes to the emergency department with sudden lower abdominal pain and lightheadedness. Her urine pregnancy test is positive, and her blood pressure is 88/54 mm Hg. Before ultrasound is available, a needle is passed through the vaginal wall to look for blood in the most dependent part of her peritoneal cavity.",
+  "l": "Through which structure must the needle pass?",
+  "o": [
+   "Posterior fornix",
+   "Anterior fornix",
+   "Lateral fornix",
+   "Ischioanal fossa",
+   "Perineal membrane"
+  ],
+  "a": 0,
+  "e": "A ruptured ectopic pregnancy bleeds into the **rectouterine pouch** (pouch of Douglas), the lowest point of the peritoneal cavity in a woman who is upright. This pouch sits directly behind the **posterior fornix** of the vagina. A needle passed through the thin posterior vaginal wall reaches the blood without crossing bowel or bladder. This is culdocentesis. The anterior fornix lies against the bladder, the lateral fornix lies near the uterine artery and ureter, and the ischioanal fossa and perineal membrane are below the peritoneum.",
+  "w": {
+   "Anterior fornix": "The anterior fornix lies against the bladder and the shallow vesicouterine pouch. Blood does not collect there, and a needle would risk the bladder.",
+   "Lateral fornix": "The lateral fornix sits beside the cervix, where the uterine artery crosses over the ureter, so a needle there risks vessels and the ureter instead of reaching dependent blood.",
+   "Ischioanal fossa": "The ischioanal fossa is a fat-filled space beside the anal canal, below the pelvic floor. A needle there never reaches the peritoneal cavity.",
+   "Perineal membrane": "The perineal membrane is a sheet of fascia in the urogenital triangle, well below the peritoneum. A needle through it reaches a perineal space, not the peritoneal cavity."
+  },
+  "et": [
+   [
+    "Option",
+    "Where it is",
+    "Space just beyond it",
+    "Risk of the route"
+   ],
+   [
+    [
+     "Posterior fornix",
+     "Vaginal vault behind the cervix",
+     "Rectouterine pouch, the lowest peritoneal recess",
+     "Low; thin wall, no organ in the way"
+    ],
+    [
+     "Anterior fornix",
+     "Vaginal vault in front of the cervix",
+     "Bladder and the shallow vesicouterine pouch",
+     "Bladder puncture"
+    ],
+    [
+     "Lateral fornix",
+     "Vaginal vault beside the cervix",
+     "Base of the broad ligament",
+     "Uterine artery and ureter"
+    ],
+    [
+     "Ischioanal fossa",
+     "Anal triangle beside the anal canal",
+     "Fat below the pelvic floor",
+     "Misses the peritoneal cavity"
+    ],
+    [
+     "Perineal membrane",
+     "Urogenital triangle",
+     "Deep perineal pouch",
+     "Misses the peritoneal cavity entirely"
+    ]
+   ]
+  ],
+  "bl": "Culdocentesis passes through the posterior fornix into the rectouterine pouch, the lowest point of the female peritoneal cavity.",
+  "ef": "rp1_sagittal",
+  "pt": {
+   "hl": [
+    "via posterior fornix",
+    "Rectouterine pouch"
+   ],
+   "say": "The needle enters through the posterior fornix and lands in the rectouterine pouch of Douglas, the lowest point of the peritoneal cavity."
+  }
+ },
+ {
+  "id": "rp1q02",
+  "d": 2,
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp1-03"
+  ],
+  "obj": [
+   "ANAT-PELVIS-LEC.4"
+  ],
+  "s": "A 70-year-old man with benign prostatic hyperplasia has not voided for 14 hours. His bladder is palpable halfway to the umbilicus, and two attempts to pass a urethral catheter fail. The urologist places a needle just above the pubic symphysis to drain the bladder without entering the peritoneal cavity.",
+  "l": "Which space does the needle cross before it enters the bladder?",
+  "o": [
+   "Retropubic space",
+   "Rectovesical pouch",
+   "Deep perineal pouch",
+   "Ischioanal fossa",
+   "Superficial perineal pouch"
+  ],
+  "a": 0,
+  "e": "The **retropubic space** is the fat-filled space between the pubic symphysis and the bladder, and it always lies outside the peritoneum, which covers only the bladder's upper surface. A full bladder rises above the pubic symphysis and lifts that peritoneum with it. A needle placed just above the symphysis crosses this space and enters the bladder without entering the peritoneal cavity. The rectovesical pouch is part of the peritoneal cavity and lies behind the bladder. The deep and superficial perineal pouches and the ischioanal fossa are below the pelvic floor, so they cannot be reached from above the pubis.",
+  "w": {
+   "Rectovesical pouch": "The rectovesical pouch is a peritoneal recess behind the bladder. Entering it would mean entering the peritoneal cavity, which the urologist wants to avoid.",
+   "Deep perineal pouch": "The deep perineal pouch lies below the pelvic floor, around the urethra. It is reached from the perineum, not from above the pubic bone.",
+   "Ischioanal fossa": "The ischioanal fossa is a fat-filled space beside the anal canal, far behind and below the bladder. A suprapubic needle never reaches it.",
+   "Superficial perineal pouch": "The superficial perineal pouch lies in the perineum, below the pelvic floor. A needle placed above the pubic bone never reaches it."
+  },
+  "et": [
+   [
+    "Option",
+    "Location",
+    "Peritoneal or not",
+    "Reached from"
+   ],
+   [
+    [
+     "Retropubic space",
+     "Between pubic symphysis and bladder",
+     "Extraperitoneal fat",
+     "Just above the pubic symphysis"
+    ],
+    [
+     "Rectovesical pouch",
+     "Between bladder and rectum",
+     "Peritoneal recess",
+     "Rectal exam or laparoscopy"
+    ],
+    [
+     "Deep perineal pouch",
+     "Above the perineal membrane",
+     "Below the pelvic floor",
+     "Perineum"
+    ],
+    [
+     "Ischioanal fossa",
+     "Beside the anal canal",
+     "Below the pelvic floor",
+     "Skin of the anal triangle"
+    ],
+    [
+     "Superficial perineal pouch",
+     "Below the perineal membrane",
+     "Below the pelvic floor",
+     "Perineum and scrotum"
+    ]
+   ]
+  ],
+  "bl": "A suprapubic catheter crosses the extraperitoneal retropubic space. A full bladder lifts the peritoneum above the pubis, so the needle stays outside the peritoneal cavity.",
+  "ef": "rp1_sagittal",
+  "pt": {
+   "hl": [
+    "Retropubic space"
+   ],
+   "say": "The retropubic space sits between the pubic symphysis and the bladder, below the peritoneal line, so a suprapubic needle crosses it."
+  }
+ },
+ {
+  "id": "rp1q03",
+  "d": 2,
+  "tags": [
+   "blood-supply"
+  ],
+  "bp": [
+   "BP-rp1-04",
+   "BP-rp1-06"
+  ],
+  "obj": [
+   "ANAT-PELVIS-LAB.12"
+  ],
+  "s": "A 58-year-old woman has 3 months of pelvic pressure and early satiety. Ultrasound shows a 9-cm complex mass of the left ovary. At laparotomy, the surgeon plans to remove the ovary and first secures the main arterial supply to the mass to limit bleeding.",
+  "l": "Which structure should be clamped and ligated first?",
+  "o": [
+   "Infundibulopelvic ligament",
+   "Round ligament of the uterus",
+   "Ovarian ligament",
+   "Cardinal ligament",
+   "Mesosalpinx"
+  ],
+  "a": 0,
+  "e": "The ovarian artery comes straight off the aorta and reaches the ovary in the **infundibulopelvic ligament** (the suspensory ligament of the ovary), together with the ovarian vein. Clamping this ligament cuts off the main blood supply before the ovary is removed. The surgeon first finds the ureter, which crosses the pelvic brim just medial to it. The ovarian ligament joins the ovary to the uterus and carries no major vessel. The round ligament also carries no major vessel, and the cardinal ligament carries the uterine artery.",
+  "w": {
+   "Round ligament of the uterus": "The round ligament runs from the uterine horn through the inguinal canal to the labia majora. It carries no major vessel, so clamping it does not control ovarian blood flow.",
+   "Ovarian ligament": "The ovarian ligament joins the ovary to the side of the uterus. It carries no major vessel, because the main supply comes from the aorta.",
+   "Cardinal ligament": "The cardinal ligament anchors the cervix to the side wall and carries the uterine artery. That artery is clamped in hysterectomy, not when only the ovary is removed.",
+   "Mesosalpinx": "The mesosalpinx is the part of the broad ligament that wraps the uterine tube. It does not carry the main ovarian artery."
+  },
+  "et": [
+   [
+    "Option",
+    "Connects",
+    "Main contents",
+    "Clamped in"
+   ],
+   [
+    [
+     "Infundibulopelvic ligament",
+     "Ovary to the pelvic side wall",
+     "Ovarian artery and vein",
+     "Oophorectomy"
+    ],
+    [
+     "Round ligament of the uterus",
+     "Uterine horn to labia majora",
+     "Tiny artery only",
+     "Opening the broad ligament"
+    ],
+    [
+     "Ovarian ligament",
+     "Ovary to the uterus",
+     "Small uterine-ovarian anastomosis",
+     "Hysterectomy that leaves the ovary in place"
+    ],
+    [
+     "Cardinal ligament",
+     "Cervix to the side wall",
+     "Uterine artery and vein",
+     "Hysterectomy"
+    ],
+    [
+     "Mesosalpinx",
+     "Tube to the broad ligament",
+     "Tubal arcades",
+     "Salpingectomy"
+    ]
+   ]
+  ],
+  "bl": "The ovarian artery runs in the infundibulopelvic (suspensory) ligament, the pedicle clamped in oophorectomy after the ureter is found.",
+  "ef": "rp1_vessels",
+  "pt": {
+   "hl": [
+    "Infundibulopelvic ligament",
+    "Ovarian artery from aorta"
+   ],
+   "say": "The ovarian artery comes off the aorta and runs in the infundibulopelvic ligament, so that pedicle carries the main supply to an ovarian mass."
+  }
+ },
+ {
+  "id": "rp1q04",
+  "d": 3,
+  "tags": [
+   "anatomic-relations",
+   "blood-supply"
+  ],
+  "bp": [
+   "BP-rp1-05"
+  ],
+  "obj": [
+   "ANAT-PELVIS-LEC.8"
+  ],
+  "s": "A 46-year-old woman undergoes abdominal hysterectomy for symptomatic fibroids. The operation is difficult because a large fibroid distorts the lower uterus, and several clamps are placed near the cervix to control bleeding. On postoperative day 2 she has right flank pain and fever. CT shows right hydronephrosis with a dilated ureter down to the level of the cervix.",
+  "l": "Injury to the ureter most likely occurred while which structure was being clamped?",
+  "o": [
+   "Uterine artery",
+   "Ovarian artery",
+   "Round ligament",
+   "Superior vesical artery",
+   "Internal pudendal artery"
+  ],
+  "a": 0,
+  "e": "The dilated ureter ends at the level of the cervix. That is where the ureter passes under the **uterine artery**, about 2 cm lateral to the cervix: the classic **water under the bridge**. A clamp placed too far to the side on the uterine vessels can catch the ureter. The ovarian artery is clamped higher, in the infundibulopelvic ligament near the pelvic brim, so an injury there would block the ureter higher up. The round ligament does not lie near the ureter, and the superior vesical and internal pudendal arteries are not clamped in a hysterectomy.",
+  "w": {
+   "Ovarian artery": "The ovarian vessels are clamped in the infundibulopelvic ligament near the pelvic brim. An injury there would dilate only the ureter above the brim, not down to the cervix.",
+   "Round ligament": "The round ligament is divided early and runs forward to the inguinal canal, away from the ureter on the side wall.",
+   "Superior vesical artery": "The superior vesical artery supplies the top of the bladder. It does not lie beside the cervix and is not clamped in a routine hysterectomy.",
+   "Internal pudendal artery": "The internal pudendal artery supplies the perineum. It leaves the pelvis below the piriformis and is not in the field of an abdominal hysterectomy."
+  },
+  "et": [
+   [
+    "Option",
+    "Origin",
+    "Relation to the ureter",
+    "Where it is clamped"
+   ],
+   [
+    [
+     "Uterine artery",
+     "Anterior division of internal iliac",
+     "Crosses over it beside the cervix",
+     "Hysterectomy, at the cervix"
+    ],
+    [
+     "Ovarian artery",
+     "Abdominal aorta",
+     "Lateral to it at the pelvic brim",
+     "Oophorectomy, at the brim"
+    ],
+    [
+     "Round ligament",
+     "Uterine horn",
+     "Far anterior to it",
+     "Divided to open the broad ligament"
+    ],
+    [
+     "Superior vesical artery",
+     "Patent umbilical artery",
+     "Near its bladder end",
+     "Not clamped"
+    ],
+    [
+     "Internal pudendal artery",
+     "Anterior division of internal iliac",
+     "Leaves the pelvis away from it",
+     "Not clamped in this operation"
+    ]
+   ]
+  ],
+  "bl": "The ureter passes under the uterine artery beside the cervix, so clamping the uterine vessels in hysterectomy can obstruct it.",
+  "ef": "rp1_vessels",
+  "pt": {
+   "hl": [
+    "Uterine artery over the ureter",
+    "water under the bridge"
+   ],
+   "say": "The uterine artery crosses over the ureter about 2 cm lateral to the cervix, water under the bridge, which is where the clamp caught it."
+  }
+ },
+ {
+  "id": "rp1q05",
+  "d": 1,
+  "tags": [
+   "blood-supply"
+  ],
+  "bp": [
+   "BP-rp1-07"
+  ],
+  "obj": [
+   "ANAT-PELVIS-LEC.7"
+  ],
+  "s": "A 31-year-old woman develops thrombosis of the left ovarian vein after a cesarean delivery. Her physician explains which larger vein the clot could extend into first.",
+  "l": "Into which vein does the left ovarian vein drain?",
+  "o": [
+   "Left renal vein",
+   "Inferior vena cava",
+   "Left internal iliac vein",
+   "Left common iliac vein",
+   "Inferior mesenteric vein"
+  ],
+  "a": 0,
+  "e": "The gonads form high on the back wall of the abdomen, so their veins drain high too. The right ovarian vein enters the inferior vena cava directly. The left ovarian vein climbs to join the **left renal vein** at a right angle. A clot in the left ovarian vein therefore reaches the left renal vein first and only later the inferior vena cava. The uterine and vaginal veins, not the ovarian veins, drain into the internal iliac veins. The inferior mesenteric vein drains into the portal system.",
+  "w": {
+   "Inferior vena cava": "Only the right ovarian vein enters the inferior vena cava directly. A left-sided clot reaches the cava only after passing through the renal vein.",
+   "Left internal iliac vein": "The internal iliac veins drain the uterus, vagina and bladder. The ovarian veins skip them and climb toward the kidneys.",
+   "Left common iliac vein": "The common iliac veins collect the internal and external iliac veins in the pelvis, far below where the ovarian veins end.",
+   "Inferior mesenteric vein": "The inferior mesenteric vein drains the descending colon and rectum into the portal system. It receives no blood from the gonads."
+  },
+  "et": [
+   [
+    "Option",
+    "Receives",
+    "Drains into",
+    "Side"
+   ],
+   [
+    [
+     "Left renal vein",
+     "Left kidney, left gonadal and adrenal veins",
+     "Inferior vena cava",
+     "Left only"
+    ],
+    [
+     "Inferior vena cava",
+     "Right gonadal vein directly",
+     "Right atrium",
+     "Midline, right of the aorta"
+    ],
+    [
+     "Left internal iliac vein",
+     "Uterine, vaginal and vesical veins",
+     "Common iliac vein",
+     "Both sides alike"
+    ],
+    [
+     "Left common iliac vein",
+     "Internal and external iliac veins",
+     "Inferior vena cava",
+     "Paired; the two join to form the IVC"
+    ],
+    [
+     "Inferior mesenteric vein",
+     "Descending colon and rectum",
+     "Splenic vein, portal system",
+     "Left of midline"
+    ]
+   ]
+  ],
+  "bl": "The left ovarian or testicular vein drains into the left renal vein. The right drains directly into the inferior vena cava.",
+  "ef": "rp1_vessels",
+  "pt": {
+   "hl": [
+    "Left ovarian vein",
+    "left renal vein"
+   ],
+   "say": "Follow the left ovarian vein up to the left renal vein; only the right ovarian vein enters the IVC directly."
+  }
+ },
+ {
+  "id": "rp1q06",
+  "d": 2,
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp1-09",
+   "BP-rp1-14"
+  ],
+  "obj": [
+   "ANAT-PELVIS-LAB.11"
+  ],
+  "s": "A 62-year-old woman who has had four vaginal deliveries reports a feeling of something falling out of her vagina that worsens by evening. On examination with straining, the cervix descends to the vaginal opening, while the anterior and posterior vaginal walls stay in place.",
+  "l": "Failure of which structure best explains her apical prolapse?",
+  "o": [
+   "Cardinal ligament",
+   "Broad ligament",
+   "Round ligament",
+   "Ovarian ligament",
+   "Infundibulopelvic ligament"
+  ],
+  "a": 0,
+  "e": "The cervix has dropped while the front and back vaginal walls stay in place. That is apical prolapse: the supports that hold up the cervix and upper vagina have failed. Those supports are the **cardinal ligament**, which runs from the cervix to the side wall, and the uterosacral ligament, which runs to the sacrum. Childbirth stretches them, and estrogen loss after menopause weakens them further. The broad ligament is only a peritoneal fold and the round ligament is a slack cord, so neither holds the uterus up. The ovarian and infundibulopelvic ligaments hold the ovary, not the cervix.",
+  "w": {
+   "Broad ligament": "The broad ligament is a double fold of peritoneum draped over the uterus, tubes and ovaries. It carries structures but gives almost no support.",
+   "Round ligament": "The round ligament is a slack cord from the uterine horn through the inguinal canal to the labia. It does not hold the cervix up.",
+   "Ovarian ligament": "The ovarian ligament ties the ovary to the uterus and is a remnant of the gubernaculum. It plays no part in holding the cervix up.",
+   "Infundibulopelvic ligament": "The infundibulopelvic ligament suspends the ovary from the side wall and carries the ovarian vessels. It does not attach to the cervix."
+  },
+  "et": [
+   [
+    "Option",
+    "Made of",
+    "Attaches to",
+    "Support role"
+   ],
+   [
+    [
+     "Cardinal ligament",
+     "Endopelvic fascia condensation",
+     "Cervix and pelvic side wall",
+     "Main apical support"
+    ],
+    [
+     "Broad ligament",
+     "Double fold of peritoneum",
+     "Uterus, tubes and side wall",
+     "Minimal; peritoneal sheet"
+    ],
+    [
+     "Round ligament",
+     "Fibromuscular cord",
+     "Uterine horn and labia majora",
+     "Minor; slack cord"
+    ],
+    [
+     "Ovarian ligament",
+     "Fibromuscular cord",
+     "Ovary and uterus",
+     "Holds the ovary near the uterus"
+    ],
+    [
+     "Infundibulopelvic ligament",
+     "Peritoneal fold with vessels",
+     "Ovary and side wall",
+     "Suspends the ovary"
+    ]
+   ]
+  ],
+  "bl": "Apical prolapse reflects failure of the cardinal and uterosacral ligaments, the endopelvic fascia condensations that suspend the cervix.",
+  "ef": "rp1_vessels",
+  "pt": {
+   "hl": [
+    "Cardinal ligament"
+   ],
+   "say": "The cardinal ligament runs from the cervix to the side wall at the base of the broad ligament; its failure lets the cervix descend."
+  }
+ },
+ {
+  "id": "rp1q07",
+  "d": 3,
+  "tags": [
+   "nerve-supply",
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp1-10"
+  ],
+  "obj": [
+   "ANAT-PELVIS-LAB.3"
+  ],
+  "s": "A 19-year-old man is stabbed in the buttock. The wound track enters the pelvis through the greater sciatic foramen just above the upper border of the piriformis. Two weeks later, when he stands on the injured leg, his pelvis drops toward the opposite side, and he walks with a lurch. Sensation over the back of the thigh and sole is normal, and he can flex his knee.",
+  "l": "Which nerve was most likely injured?",
+  "o": [
+   "Superior gluteal nerve",
+   "Inferior gluteal nerve",
+   "Sciatic nerve",
+   "Pudendal nerve",
+   "Obturator nerve"
+  ],
+  "a": 0,
+  "e": "Only the **superior gluteal nerve** and vessels leave the greater sciatic foramen above the piriformis, so a wound there points to this nerve. It supplies the hip abductors (gluteus medius and minimus), which hold the pelvis level when the opposite foot is lifted. Losing them gives a positive Trendelenburg sign and a lurching gait. The inferior gluteal, sciatic and pudendal nerves all leave below the piriformis. Normal knee flexion and normal sensation on the sole rule out a sciatic injury. The obturator nerve does not pass through the greater sciatic foramen at all.",
+  "w": {
+   "Inferior gluteal nerve": "The inferior gluteal nerve leaves below the piriformis and supplies gluteus maximus. Its loss weakens rising from a chair and climbing stairs, not leveling the pelvis.",
+   "Sciatic nerve": "The sciatic nerve leaves below the piriformis. Injury would weaken knee flexion and cause numbness below the knee, and both are normal here.",
+   "Pudendal nerve": "The pudendal nerve leaves below the piriformis and runs to the perineum. It has no role in hip abduction.",
+   "Obturator nerve": "The obturator nerve runs along the pelvic side wall to the thigh adductors. It does not pass through the greater sciatic foramen."
+  },
+  "et": [
+   [
+    "Option",
+    "Exit relative to piriformis",
+    "Main muscles",
+    "Deficit"
+   ],
+   [
+    [
+     "Superior gluteal nerve",
+     "Above",
+     "Gluteus medius and minimus",
+     "Pelvis drops on the opposite side"
+    ],
+    [
+     "Inferior gluteal nerve",
+     "Below",
+     "Gluteus maximus",
+     "Weak hip extension"
+    ],
+    [
+     "Sciatic nerve",
+     "Below",
+     "Hamstrings and all leg muscles",
+     "Weak knee flexion, foot drop"
+    ],
+    [
+     "Pudendal nerve",
+     "Below, then around the ischial spine",
+     "Perineal muscles, external sphincters",
+     "Perineal numbness, incontinence"
+    ],
+    [
+     "Obturator nerve",
+     "Not through this foramen",
+     "Thigh adductors",
+     "Weak adduction"
+    ]
+   ]
+  ],
+  "bl": "Only the superior gluteal nerve and vessels pass above the piriformis. Injury causes hip abductor weakness and a Trendelenburg sign.",
+  "ef": "rp1_nerves",
+  "pt": {
+   "hl": [
+    "Above piriformis",
+    "Superior gluteal nerve"
+   ],
+   "say": "Above the piriformis there is only the superior gluteal nerve and its vessels, so a wound there weakens the hip abductors."
+  }
+ },
+ {
+  "id": "rp1q08",
+  "d": 2,
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp1-02"
+  ],
+  "obj": [
+   "ANAT-PELVIS-LEC.3"
+  ],
+  "s": "A 33-year-old woman has leaked urine with coughing and lifting since a prolonged forceps delivery 1 year ago. She has no fecal incontinence. Pelvic floor MRI shows a tear in the part of the levator ani that normally steadies the urethra and bladder neck during a cough.",
+  "l": "Which muscle is torn?",
+  "o": [
+   "Pubococcygeus",
+   "Puborectalis",
+   "Iliococcygeus",
+   "Coccygeus",
+   "Obturator internus"
+  ],
+  "a": 0,
+  "e": "The **pubococcygeus** is the main part of the levator ani. It wraps around the urethra and vagina, so it supports the bladder neck and urethra. A tear during a forceps delivery removes that support and causes stress incontinence. The puborectalis is a sling behind the anorectal junction that helps hold stool in. The iliococcygeus is a thin plate behind the others. The coccygeus and obturator internus do not surround the urethra.",
+  "w": {
+   "Puborectalis": "The puborectalis is a sling behind the anorectal junction. A tear there causes fecal incontinence more than urinary incontinence.",
+   "Iliococcygeus": "The iliococcygeus is the thin plate at the back of the levator ani. It does not wrap around the urethra.",
+   "Coccygeus": "The coccygeus is the smaller muscle of the pelvic diaphragm, separate from the levator ani. It does not wrap around the urethra.",
+   "Obturator internus": "Obturator internus lines the side wall of the pelvis and leaves through the lesser sciatic foramen. It is not part of the pelvic floor."
+  },
+  "et": [
+   [
+    "Option",
+    "Origin",
+    "Path",
+    "Main job"
+   ],
+   [
+    [
+     "Pubococcygeus",
+     "Pubic body",
+     "Around urethra and vagina to the coccyx",
+     "Supports bladder neck and urethra"
+    ],
+    [
+     "Puborectalis",
+     "Pubic body",
+     "Sling behind the anorectal junction",
+     "Anorectal angle, fecal continence"
+    ],
+    [
+     "Iliococcygeus",
+     "Tendinous arch of obturator fascia",
+     "Thin plate to the coccyx",
+     "Posterior floor support"
+    ],
+    [
+     "Coccygeus",
+     "Ischial spine",
+     "To the sacrum and coccyx",
+     "Completes the pelvic diaphragm"
+    ],
+    [
+     "Obturator internus",
+     "Obturator membrane",
+     "Lesser sciatic foramen to the femur",
+     "Lateral hip rotation"
+    ]
+   ]
+  ],
+  "bl": "The pubococcygeus, the main levator ani mass around the urethra and vagina, supports urinary continence and is torn in difficult deliveries.",
+  "ef": "rp1_nerves",
+  "pt": {
+   "hl": [
+    "Pubococcygeus"
+   ],
+   "say": "The pubococcygeus is the main mass of the levator ani, running around the urethra and vagina; its tear explains stress incontinence."
+  }
+ },
+ {
+  "id": "rp1q09",
+  "d": 3,
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp1-11",
+   "BP-rp1-15"
+  ],
+  "obj": [
+   "ANAT-PELVIS-LAB.8"
+  ],
+  "s": "A 64-year-old man undergoes low anterior resection for rectal adenocarcinoma, with dissection deep in the pelvis along the lateral rectal walls. After the urinary catheter is removed, he cannot void and has a postvoid residual of 700 mL. Months later he still cannot achieve erections. Sensation over the perineum and anal sphincter tone are normal.",
+  "l": "Damage to which nerves best explains both problems?",
+  "o": [
+   "Pelvic splanchnic nerves",
+   "Hypogastric nerves",
+   "Pudendal nerves",
+   "Lumbar splanchnic nerves",
+   "Obturator nerves"
+  ],
+  "a": 0,
+  "e": "Voiding needs the detrusor to contract, and erection needs the penile arteries to dilate. Both are parasympathetic actions carried by the **pelvic splanchnic nerves** (S2 to S4), which run through the inferior hypogastric plexus beside the rectum. That is exactly where the surgeon was working. Without these nerves the detrusor cannot contract through muscarinic M3 receptors, so he retains urine. The hypogastric and lumbar splanchnic nerves are sympathetic, so losing them affects emission and bladder storage instead. The pudendal nerve is intact, because perineal sensation and anal tone are normal.",
+  "w": {
+   "Hypogastric nerves": "The hypogastric nerves carry sympathetic fibers that relax the detrusor and close the internal sphincter. Losing them causes retrograde ejaculation or poor storage, not retention.",
+   "Pudendal nerves": "The pudendal nerves are somatic. Injury would numb the perineum and weaken the external anal sphincter, and both are normal in this patient.",
+   "Lumbar splanchnic nerves": "The lumbar splanchnic nerves are sympathetic and drive emission. Losing them affects ejaculation, not voiding or erection.",
+   "Obturator nerves": "The obturator nerves run on the side wall to the thigh adductors. They carry no autonomic fibers to the bladder or penis."
+  },
+  "et": [
+   [
+    "Option",
+    "Division",
+    "Bladder effect",
+    "Sexual effect"
+   ],
+   [
+    [
+     "Pelvic splanchnic nerves",
+     "Parasympathetic, S2 to S4",
+     "Detrusor contracts to void",
+     "Erection"
+    ],
+    [
+     "Hypogastric nerves",
+     "Sympathetic",
+     "Detrusor relaxes, internal sphincter closes",
+     "Emission"
+    ],
+    [
+     "Pudendal nerves",
+     "Somatic, S2 to S4",
+     "External sphincter control",
+     "Ejaculation, genital sensation"
+    ],
+    [
+     "Lumbar splanchnic nerves",
+     "Sympathetic, L1 to L2",
+     "Storage",
+     "Emission and bladder-neck closure"
+    ],
+    [
+     "Obturator nerves",
+     "Somatic, L2 to L4",
+     "None",
+     "None"
+    ]
+   ]
+  ],
+  "bl": "Pelvic splanchnic nerves (S2 to S4) are parasympathetic: they contract the detrusor for voiding and produce erection, so injury causes both failures.",
+  "ef": "rp1_nerves",
+  "pt": {
+   "hl": [
+    "Pelvic splanchnic",
+    "Detrusor contracts"
+   ],
+   "say": "The pelvic splanchnic nerves are the parasympathetic supply: detrusor contraction for voiding and erection both depend on them."
+  }
+ },
+ {
+  "id": "rp1q10",
+  "d": 2,
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp1-13"
+  ],
+  "obj": [
+   "ANAT-PELVIS-LAB.13"
+  ],
+  "s": "A 38-year-old man asks how a vasectomy will change his semen. He is told that the procedure blocks sperm transport but that the volume of his ejaculate will barely change, because most of the fluid is added downstream of the cut.",
+  "l": "Which structure contributes the largest share of semen volume?",
+  "o": [
+   "Seminal vesicles",
+   "Prostate",
+   "Bulbourethral glands",
+   "Epididymis",
+   "Testes"
+  ],
+  "a": 0,
+  "e": "A vasectomy cuts the ductus deferens in the scrotum, upstream of the glands that make most of the fluid. The **seminal vesicles** add about 70 percent of the semen, a thick, alkaline fluid rich in fructose that feeds the sperm. The prostate adds about 20 percent, a thin fluid with prostate-specific antigen. Sperm from the testes and epididymis add very little, so the volume barely changes after a vasectomy.",
+  "w": {
+   "Prostate": "The prostate adds about 20 percent of the semen, a thin fluid with prostate-specific antigen that liquefies the clot. That is less than the seminal vesicles add.",
+   "Bulbourethral glands": "The bulbourethral glands add only a few drops of clear fluid, far less than the seminal vesicles.",
+   "Epididymis": "The epididymis stores and matures sperm upstream of the vasectomy. Sperm make up only a small part of the volume.",
+   "Testes": "The testes make sperm, which are a tiny part of the semen. The vasectomy blocks them anyway."
+  },
+  "et": [
+   [
+    "Option",
+    "Share of semen",
+    "Main product",
+    "Position relative to a vasectomy"
+   ],
+   [
+    [
+     "Seminal vesicles",
+     "About 70 percent",
+     "Fructose-rich alkaline fluid",
+     "Downstream"
+    ],
+    [
+     "Prostate",
+     "About 20 percent",
+     "Citrate, PSA and enzymes",
+     "Downstream"
+    ],
+    [
+     "Bulbourethral glands",
+     "A few drops",
+     "Lubricating mucus",
+     "Downstream"
+    ],
+    [
+     "Epididymis",
+     "Small",
+     "Matured, stored sperm",
+     "Upstream"
+    ],
+    [
+     "Testes",
+     "Small",
+     "Sperm",
+     "Upstream"
+    ]
+   ]
+  ],
+  "bl": "The seminal vesicles supply about 70 percent of semen, downstream of a vasectomy, so ejaculate volume barely changes.",
+  "ef": "rp1_vessels",
+  "pt": {
+   "hl": [
+    "Seminal vesicle",
+    "Ductus deferens"
+   ],
+   "say": "The seminal vesicle joins the ductus deferens at the ejaculatory duct, downstream of a vasectomy, and supplies most semen volume."
+  }
+ },
+ {
+  "id": "rp1q11",
+  "d": 1,
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp1-01"
+  ],
+  "obj": [
+   "ANAT-PELVIS-LEC.2"
+  ],
+  "s": "During a prenatal visit, a clinician places two fingers in the vagina of a 28-year-old woman and reaches for the sacral promontory, then marks where the hand meets the lower edge of the pubic symphysis to judge the size of the pelvic inlet.",
+  "l": "Which measurement is being taken?",
+  "o": [
+   "Diagonal conjugate",
+   "Obstetric conjugate",
+   "Interspinous distance",
+   "Intertuberous distance",
+   "Subpubic angle"
+  ],
+  "a": 0,
+  "e": "The **diagonal conjugate** runs from the sacral promontory to the lower edge of the pubic symphysis. It is the only inlet distance that a finger can reach on vaginal exam. Subtracting 1.5 to 2 cm estimates the obstetric conjugate, the narrowest front-to-back distance that the baby's head must pass. The obstetric conjugate itself cannot be felt. The interspinous distance measures the midpelvis between the ischial spines. The intertuberous distance and the subpubic angle describe the outlet.",
+  "w": {
+   "Obstetric conjugate": "The obstetric conjugate ends behind the symphysis, which a finger cannot reach. It is estimated from the diagonal conjugate instead of being felt.",
+   "Interspinous distance": "The interspinous distance is measured between the ischial spines in the midpelvis, usually the tightest diameter. It does not start at the sacral promontory.",
+   "Intertuberous distance": "The intertuberous distance is the width of the outlet between the ischial tuberosities. It is not an inlet measurement.",
+   "Subpubic angle": "The subpubic angle is the width of the pubic arch below the symphysis. It describes the outlet and is wide in a gynecoid pelvis."
+  },
+  "et": [
+   [
+    "Option",
+    "Plane",
+    "Landmarks",
+    "How it is assessed"
+   ],
+   [
+    [
+     "Diagonal conjugate",
+     "Inlet",
+     "Sacral promontory to lower pubic symphysis",
+     "Felt on vaginal exam"
+    ],
+    [
+     "Obstetric conjugate",
+     "Inlet",
+     "Sacral promontory to back of the symphysis",
+     "Estimated, 1.5 to 2 cm less"
+    ],
+    [
+     "Interspinous distance",
+     "Midpelvis",
+     "Between the ischial spines",
+     "Palpated or imaged"
+    ],
+    [
+     "Intertuberous distance",
+     "Outlet",
+     "Between the ischial tuberosities",
+     "Fist against the perineum"
+    ],
+    [
+     "Subpubic angle",
+     "Outlet",
+     "Arch below the pubic symphysis",
+     "Palpated under the arch"
+    ]
+   ]
+  ],
+  "bl": "The diagonal conjugate, sacral promontory to the lower pubic symphysis, is the inlet diameter felt on vaginal exam.",
+  "ef": "rp1_sagittal",
+  "pt": {
+   "hl": [
+    "Diagonal conjugate",
+    "Sacral promontory"
+   ],
+   "say": "The dashed diagonal conjugate runs from the sacral promontory to the lower edge of the pubic symphysis, the inlet measure felt on exam."
+  }
+ }
+]

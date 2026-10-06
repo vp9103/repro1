@@ -1,0 +1,548 @@
+[
+ {
+  "id": "rp14r01",
+  "tags": [
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp14-01"
+  ],
+  "q": "Which tissue components define endometriosis histologically?",
+  "o": [
+   "Endometrial glands and stroma",
+   "Endometrial glands without stroma",
+   "Smooth muscle bundles and stroma",
+   "Plasma cells and lymphoid follicles",
+   "Mucinous epithelium and ovarian stroma"
+  ],
+  "a": 0,
+  "x": "Endometriosis is endometrial glands and stroma outside the uterus, usually with hemosiderin-laden macrophages from old bleeding. Glands alone are not enough, because the stroma is what makes the tissue respond to hormones and bleed each cycle.",
+  "w": {
+   "Endometrial glands without stroma": "Both glands and stroma are required. Glands alone could be some other change, and the stroma is what makes the tissue respond to hormones.",
+   "Smooth muscle bundles and stroma": "Muscle bundles with stroma describe myometrium or a leiomyoma. Endometriosis has no muscle of its own.",
+   "Plasma cells and lymphoid follicles": "Plasma cells in the stroma define chronic endometritis, an inflammation of the lining linked to pelvic infection or an IUD. They are not part of ectopic tissue.",
+   "Mucinous epithelium and ovarian stroma": "Mucinous epithelium with ovarian-type stroma is a mucinous cystic tumor of the ovary, not endometrial tissue."
+  }
+ },
+ {
+  "id": "rp14r02",
+  "tags": [
+   "histology-to-diagnosis",
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp14-01"
+  ],
+  "q": "Which symptom triad is typical of endometriosis?",
+  "o": [
+   "Dysmenorrhea, dyspareunia and dyschezia",
+   "Postcoital bleeding, discharge and weight loss",
+   "Amenorrhea, galactorrhea and headache",
+   "Fever, cervical motion tenderness and discharge",
+   "Heavy periods, pressure and urinary frequency"
+  ],
+  "a": 0,
+  "x": "Dysmenorrhea, dyspareunia and dyschezia mean painful periods, painful intercourse and painful defecation. They come from implants that bleed and scar in the pelvis each cycle. Infertility is common, and the uterus stays a normal size.",
+  "w": {
+   "Postcoital bleeding, discharge and weight loss": "This describes advanced cervical cancer, which bleeds after intercourse from a fragile mass. Endometriosis causes cyclic pain.",
+   "Amenorrhea, galactorrhea and headache": "This points to a prolactinoma. Extra prolactin shuts off GnRH, and the pituitary mass presses on nearby structures. It causes no pelvic pain.",
+   "Fever, cervical motion tenderness and discharge": "This is pelvic inflammatory disease, an acute infection from chlamydia or gonorrhea with pus. Endometriosis causes months of cyclic pain.",
+   "Heavy periods, pressure and urinary frequency": "This describes leiomyomas, whose bulk presses on the bladder and whose submucosal ones cause bleeding. Endometriosis does not usually enlarge the uterus."
+  }
+ },
+ {
+  "id": "rp14r03",
+  "tags": [
+   "bleeding-source",
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp14-03"
+  ],
+  "q": "Which condition produces a uniformly enlarged, boggy, globular uterus?",
+  "o": [
+   "Adenomyosis",
+   "Endometriosis",
+   "Leiomyoma",
+   "Endometrial polyp",
+   "Endometrial carcinoma"
+  ],
+  "a": 0,
+  "x": "Adenomyosis puts endometrial glands and stroma inside the myometrium, and the muscle thickens around them. The whole uterus enlarges evenly and feels soft and tender, with heavy, painful periods.",
+  "w": {
+   "Endometriosis": "Endometriosis lies outside the uterus, on the ovaries and peritoneum, so the uterus stays normal in size.",
+   "Leiomyoma": "Fibroids are firm, whorled nodules that make the uterus lumpy and uneven, not evenly globular and boggy.",
+   "Endometrial polyp": "A polyp is a small growth in the cavity that causes irregular bleeding. It does not enlarge the uterine body.",
+   "Endometrial carcinoma": "Endometrial carcinoma usually presents with bleeding after menopause and a normal or slightly enlarged uterus. It does not cause even, tender enlargement."
+  },
+  "media": "fig:rp14_map",
+  "pt": {
+   "hl": [
+    "Adenomyosis"
+   ],
+   "say": "Label 5 marks adenomyosis, glands in the muscle that make a globular, tender uterus."
+  }
+ },
+ {
+  "id": "rp14r04",
+  "tags": [
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp14-04"
+  ],
+  "q": "Which is the most common tumor in women?",
+  "o": [
+   "Leiomyoma",
+   "Endometrial carcinoma",
+   "Serous cystadenoma",
+   "Cervical polyp",
+   "Granulosa cell tumor"
+  ],
+  "a": 0,
+  "x": "Leiomyomas are benign, estrogen-sensitive smooth muscle tumors. Most women have one by menopause, which makes them the most common tumor in women. They cause bleeding, pressure and infertility.",
+  "w": {
+   "Endometrial carcinoma": "Endometrial carcinoma is the most common gynecologic cancer. Fibroids are far more common, because most women have one by menopause.",
+   "Serous cystadenoma": "Serous cystadenomas are common benign ovarian tumors, but they affect far fewer women than uterine fibroids do.",
+   "Cervical polyp": "Cervical polyps are common benign growths of the endocervix, but they are much less frequent than uterine leiomyomas.",
+   "Granulosa cell tumor": "Granulosa cell tumors are rare ovarian tumors that make estrogen. They are far less common than fibroids."
+  },
+  "media": "fig:rp14_muscle",
+  "pt": {
+   "hl": [
+    "Most common tumor in women"
+   ],
+   "say": "The leiomyoma column opens with the fact that it is the most common tumor in women."
+  }
+ },
+ {
+  "id": "rp14r05",
+  "tags": [
+   "bleeding-source",
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp14-04"
+  ],
+  "q": "Which fibroid location most often causes heavy menstrual bleeding?",
+  "o": [
+   "Submucosal",
+   "Subserosal",
+   "Cervical",
+   "Broad ligament",
+   "Pedunculated subserosal"
+  ],
+  "a": 0,
+  "x": "Submucosal fibroids bulge into the uterine cavity. They stretch and ulcerate the lining and make the uterus contract poorly, so they cause heavy periods, bleeding between periods and miscarriage out of proportion to their size.",
+  "w": {
+   "Subserosal": "Subserosal fibroids grow outward under the peritoneum and press on the bladder or bowel. They barely affect the lining, so they bleed less.",
+   "Cervical": "Cervical leiomyomas are uncommon. They tend to block the canal or press on nearby structures instead of causing the usual heavy periods.",
+   "Broad ligament": "Broad ligament fibroids lie beside the uterus and can press on the ureter. They sit outside the cavity, so they do not make the lining bleed.",
+   "Pedunculated subserosal": "A pedunculated subserosal fibroid hangs from the outer surface on a stalk. It sits outside the cavity and leaves the lining alone, so it rarely causes heavy bleeding."
+  },
+  "media": "fig:rp14_map",
+  "pt": {
+   "hl": [
+    "Bulges into cavity"
+   ],
+   "say": "Label 2 shows the submucosal leiomyoma bulging into the cavity, the location that causes heavy bleeding."
+  }
+ },
+ {
+  "id": "rp14r06",
+  "tags": [
+   "histology-to-diagnosis",
+   "tumor-progression"
+  ],
+  "bp": [
+   "BP-rp14-05"
+  ],
+  "q": "Which features together establish leiomyosarcoma?",
+  "o": [
+   "Atypia, necrosis and mitoses",
+   "Whorls, calcification and hyalinization",
+   "Glands, stroma and hemosiderin",
+   "Papillae, atypia and psammoma bodies",
+   "Spindle cells, plasma cells and edema"
+  ],
+  "a": 0,
+  "x": "Leiomyosarcoma is diagnosed from cytologic atypia, necrosis and many mitoses weighed together, and mitoses alone occur in benign tumors of young women. These tumors are soft, hemorrhagic and necrotic.",
+  "w": {
+   "Whorls, calcification and hyalinization": "These are changes of benign leiomyomas, which are firm and whorled and may calcify. They point to a benign tumor.",
+   "Glands, stroma and hemosiderin": "These are the parts of endometriosis, where old bleeding leaves hemosiderin-laden macrophages. They are unrelated to a smooth muscle cancer.",
+   "Papillae, atypia and psammoma bodies": "This combination marks serous carcinoma, an epithelial tumor of atrophic endometrium with TP53 mutation. It is not a spindle cell sarcoma.",
+   "Spindle cells, plasma cells and edema": "Plasma cells in the stroma point to chronic endometritis, an inflammation. They do not define a cancer."
+  },
+  "media": "fig:rp14_muscle",
+  "pt": {
+   "hl": [
+    "Atypia, necrosis and mitoses"
+   ],
+   "say": "The leiomyosarcoma column lists atypia, necrosis and mitoses as the features that together define the malignancy."
+  }
+ },
+ {
+  "id": "rp14r07",
+  "tags": [
+   "tumor-progression",
+   "unopposed-estrogen"
+  ],
+  "bp": [
+   "BP-rp14-06"
+  ],
+  "q": "What best predicts progression of endometrial hyperplasia to carcinoma?",
+  "o": [
+   "Cytologic atypia",
+   "Cystic gland dilation",
+   "Glandular crowding",
+   "Stromal mitoses",
+   "Stromal edema"
+  ],
+  "a": 0,
+  "x": "Cytologic atypia means enlarged, rounded nuclei with prominent nucleoli. It defines atypical hyperplasia (EIN), which often coexists with endometrioid carcinoma. Hyperplasia without atypia rarely progresses to cancer.",
+  "w": {
+   "Cystic gland dilation": "Cystic dilation comes from trapped secretions. It is common in benign hyperplasia, which has a low cancer risk.",
+   "Glandular crowding": "Crowding is what defines hyperplasia in the first place. It occurs in both low-risk and high-risk lesions, so it cannot predict the outcome.",
+   "Stromal mitoses": "Stromal mitoses are normal in the proliferative phase and in benign hyperplasia. They show estrogen drive, not neoplastic change.",
+   "Stromal edema": "Stromal edema is a nonspecific change in secretory or breaking-down endometrium. It says nothing about cancer risk."
+  },
+  "media": "fig:rp14_types",
+  "pt": {
+   "hl": [
+    "No atypia: low risk"
+   ],
+   "say": "The hyperplasia box says no atypia means low risk, so atypia is the finding that raises cancer risk."
+  }
+ },
+ {
+  "id": "rp14r08",
+  "tags": [
+   "tumor-genetics"
+  ],
+  "bp": [
+   "BP-rp14-07"
+  ],
+  "q": "Which tumor suppressor is lost early in type I endometrial carcinoma?",
+  "o": [
+   "PTEN",
+   "TP53",
+   "BRCA1",
+   "RB1",
+   "APC"
+  ],
+  "a": 0,
+  "x": "PTEN loss removes a brake on the PI3K growth pathway. It is an early event in atypical hyperplasia and endometrioid carcinoma. Germline PTEN mutation causes Cowden syndrome.",
+  "w": {
+   "TP53": "TP53 mutation is the early event in serous carcinoma, the type II tumor of atrophic endometrium, not in estrogen-driven endometrioid tumors.",
+   "BRCA1": "BRCA1 mutation raises the risk of breast and ovarian cancer by impairing DNA repair. It has no central role in endometrioid carcinoma.",
+   "RB1": "RB1 loss is classic for retinoblastoma and osteosarcoma. It is not an early driver of type I endometrial carcinoma.",
+   "APC": "APC loss starts the adenoma-to-carcinoma sequence in colorectal cancer. It is not an early event in endometrioid carcinoma."
+  },
+  "media": "fig:rp14_types",
+  "pt": {
+   "hl": [
+    "PTEN loss"
+   ],
+   "say": "The type I pathway shows PTEN loss at the atypical hyperplasia step, an early event in endometrioid carcinoma."
+  }
+ },
+ {
+  "id": "rp14r09",
+  "tags": [
+   "tumor-genetics"
+  ],
+  "bp": [
+   "BP-rp14-07"
+  ],
+  "q": "Which gene mutation is an early, central event in serous endometrial carcinoma?",
+  "o": [
+   "TP53",
+   "PTEN",
+   "BRCA1",
+   "RB1",
+   "APC"
+  ],
+  "a": 0,
+  "x": "TP53 mutation appears at the earliest intraepithelial stage. It drives chromosomal instability and abnormal p53 staining, so type II tumors are high grade and spread early.",
+  "w": {
+   "PTEN": "PTEN loss drives estrogen-dependent endometrioid carcinoma and hyperplasia. Serous tumors arise in atrophic endometrium without that pathway.",
+   "BRCA1": "BRCA1 is linked to breast and ovarian cancer. It is not the central event in serous endometrial carcinoma.",
+   "RB1": "RB1 restrains the G1 checkpoint, and HPV E7 disables it in cervical disease. It is not a defining event in serous endometrial carcinoma.",
+   "APC": "APC mutations cause colorectal adenomas through disturbed Wnt signaling. They are not central to serous endometrial carcinoma."
+  },
+  "media": "fig:rp14_types",
+  "pt": {
+   "hl": [
+    "TP53 mutation"
+   ],
+   "say": "The type II row shows TP53 mutation as the early, central event leading to serous carcinoma."
+  }
+ },
+ {
+  "id": "rp14r10",
+  "tags": [
+   "tumor-progression",
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp14-07"
+  ],
+  "q": "What is the precursor lesion of serous endometrial carcinoma?",
+  "o": [
+   "Serous intraepithelial carcinoma",
+   "Atypical hyperplasia (EIN)",
+   "Hyperplasia without atypia",
+   "Endometrial polyp",
+   "Adenomyosis"
+  ],
+  "a": 0,
+  "x": "Serous endometrial intraepithelial carcinoma is the TP53-mutated precursor of serous carcinoma. It arises in atrophic endometrium, and its cells can spread early to the peritoneum.",
+  "w": {
+   "Atypical hyperplasia (EIN)": "EIN is the precursor of estrogen-driven endometrioid carcinoma. It carries PTEN loss, not the TP53 changes of the serous pathway.",
+   "Hyperplasia without atypia": "Hyperplasia without atypia is a low-risk estrogen effect that responds to progestin. It is not linked to the serous pathway.",
+   "Endometrial polyp": "A polyp is a benign focal overgrowth. It is not the precursor lesion of the serous pathway.",
+   "Adenomyosis": "Adenomyosis is endometrial tissue inside the muscle wall. It is not a precursor of the surface epithelial cancer."
+  },
+  "media": "fig:rp14_types",
+  "pt": {
+   "hl": [
+    "Serous precursor"
+   ],
+   "say": "The serous precursor box shows serous intraepithelial carcinoma, the precursor lesion of serous endometrial carcinoma."
+  }
+ },
+ {
+  "id": "rp14r11",
+  "tags": [
+   "inheritance-pattern",
+   "tumor-genetics"
+  ],
+  "bp": [
+   "BP-rp14-08"
+  ],
+  "q": "Which inherited syndrome links colorectal and endometrial cancer through mismatch repair loss?",
+  "o": [
+   "Lynch syndrome",
+   "Cowden syndrome",
+   "Peutz-Jeghers syndrome",
+   "Familial adenomatous polyposis",
+   "Li-Fraumeni syndrome"
+  ],
+  "a": 0,
+  "x": "Lynch syndrome is an autosomal dominant germline defect in a mismatch repair gene (MLH1, MSH2, MSH6 or PMS2). Microsatellite instability raises the risk of colorectal, endometrial and ovarian cancer.",
+  "w": {
+   "Cowden syndrome": "Cowden syndrome comes from germline PTEN mutation. It causes hamartomas and breast, thyroid and endometrial cancer, and its tumors keep mismatch repair proteins.",
+   "Peutz-Jeghers syndrome": "Peutz-Jeghers syndrome comes from STK11 mutation and causes mucocutaneous pigmentation and hamartomatous GI polyps. It is not a mismatch repair disease.",
+   "Familial adenomatous polyposis": "Familial adenomatous polyposis comes from APC mutation and produces hundreds of colonic adenomas. Colon cancer is nearly certain unless the colon is removed.",
+   "Li-Fraumeni syndrome": "Li-Fraumeni syndrome comes from germline TP53 mutation. It causes sarcomas, breast cancer, brain tumors and adrenal cancer at young ages."
+  },
+  "media": "fig:rp14_types",
+  "pt": {
+   "hl": [
+    "inherited in Lynch syndrome"
+   ],
+   "say": "The note under the type I row says mismatch repair defects are inherited in Lynch syndrome."
+  }
+ },
+ {
+  "id": "rp14r12",
+  "tags": [
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp14-09"
+  ],
+  "q": "Which uterine tumor contains both malignant epithelium and malignant mesenchyme?",
+  "o": [
+   "Carcinosarcoma",
+   "Leiomyosarcoma",
+   "Serous carcinoma",
+   "Endometrioid carcinoma",
+   "Leiomyoma"
+  ],
+  "a": 0,
+  "x": "Carcinosarcoma, also called malignant mixed Müllerian tumor, has a malignant epithelial part and a malignant mesenchymal part. It occurs after menopause, usually carries TP53 mutations, and behaves like high-grade serous carcinoma.",
+  "w": {
+   "Leiomyosarcoma": "Leiomyosarcoma is a pure malignant smooth muscle tumor. It has no cancerous epithelial part.",
+   "Serous carcinoma": "Serous carcinoma is a high-grade epithelial cancer of atrophic endometrium. It has no malignant mesenchymal part.",
+   "Endometrioid carcinoma": "Endometrioid carcinoma is a malignant gland-forming tumor of the epithelium alone. It has no sarcomatous part.",
+   "Leiomyoma": "A leiomyoma is a benign tumor of smooth muscle only. It has no malignant epithelial or mesenchymal part."
+  },
+  "media": "fig:rp14_types",
+  "pt": {
+   "hl": [
+    "Carcinosarcoma"
+   ],
+   "say": "The footnote places carcinosarcoma, the malignant mixed Müllerian tumor, with the aggressive p53-driven type II group."
+  }
+ },
+ {
+  "id": "rp14r13",
+  "tags": [
+   "selective-modulators",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp14-13"
+  ],
+  "q": "Which drug acts as a partial estrogen agonist on the endometrium?",
+  "o": [
+   "Tamoxifen",
+   "Raloxifene",
+   "Anastrozole",
+   "Clomiphene",
+   "Fulvestrant"
+  ],
+  "a": 0,
+  "x": "Tamoxifen blocks estrogen in breast cancer cells but stimulates the endometrium. It can cause polyps, hyperplasia and endometrial cancer, so bleeding on tamoxifen needs endometrial sampling.",
+  "w": {
+   "Raloxifene": "Raloxifene blocks estrogen in the breast and endometrium and helps bone. It does not carry tamoxifen's endometrial cancer risk.",
+   "Anastrozole": "Anastrozole inhibits aromatase and lowers estrogen everywhere, so it thins the endometrium rather than stimulating it.",
+   "Clomiphene": "Clomiphene blocks estrogen feedback at the hypothalamus to induce ovulation. In the endometrium it blocks estrogen and can thin the lining.",
+   "Fulvestrant": "Fulvestrant is a pure estrogen receptor antagonist with no agonist effect, so it does not stimulate the lining."
+  },
+  "media": "fig:rp14_types",
+  "pt": {
+   "hl": [
+    "Tamoxifen"
+   ],
+   "say": "Tamoxifen is listed among the causes of unopposed estrogen effect at the start of the type I road."
+  }
+ },
+ {
+  "id": "rp14r14",
+  "tags": [
+   "unopposed-estrogen",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp14-14"
+  ],
+  "q": "Which exposure lowers the risk of endometrial carcinoma?",
+  "o": [
+   "Oral contraceptive use",
+   "Nulliparity",
+   "Obesity",
+   "Late menopause",
+   "Estrogen-only therapy"
+  ],
+  "a": 0,
+  "x": "A combined oral contraceptive supplies a progestin every cycle. The progestin opposes estrogen and thins the lining. Pregnancy and progestin IUDs protect in the same way.",
+  "w": {
+   "Nulliparity": "Never having a full-term pregnancy means more uninterrupted cycles and longer estrogen exposure, which raises risk.",
+   "Obesity": "Fat tissue contains aromatase, which turns androgens into estrogen. That raises estrogen even when ovulation continues, so risk goes up.",
+   "Late menopause": "Late menopause adds years of cycling and estrogen exposure, which raises the lifetime risk.",
+   "Estrogen-only therapy": "Estrogen given without a progestin to a woman with a uterus causes hyperplasia and cancer. That is why a progestin is added."
+  },
+  "media": "fig:rp14_estrogen",
+  "pt": {
+   "hl": [
+    "Combined oral contraceptive"
+   ],
+   "say": "The protective box lists the combined oral contraceptive alongside progestin and pregnancy."
+  }
+ },
+ {
+  "id": "rp14r15",
+  "tags": [
+   "pathogen-clues",
+   "histology-to-diagnosis"
+  ],
+  "bp": [
+   "BP-rp14-10"
+  ],
+  "q": "Which cell identifies chronic endometritis on biopsy?",
+  "o": [
+   "Plasma cell",
+   "Neutrophil",
+   "Eosinophil",
+   "Foamy macrophage",
+   "Multinucleated giant cell"
+  ],
+  "a": 0,
+  "x": "Plasma cells in the endometrial stroma define chronic endometritis. It follows pelvic inflammatory disease, an IUD, retained tissue or tuberculosis, and it causes spotting and infertility.",
+  "w": {
+   "Neutrophil": "Neutrophils dominate acute endometritis, as after delivery or abortion with retained tissue, not the chronic form.",
+   "Eosinophil": "Eosinophils suggest an allergic or parasitic process. They do not define chronic endometritis.",
+   "Foamy macrophage": "Foamy macrophages collect in lipid storage disorders and some unusual inflammations, not in common chronic endometritis.",
+   "Multinucleated giant cell": "Giant cells form granulomas, as in tuberculous endometritis, which is a rare cause. The usual defining cell is the plasma cell."
+  }
+ },
+ {
+  "id": "rp14r16",
+  "tags": [
+   "normal-vs-pathologic",
+   "bleeding-source"
+  ],
+  "bp": [
+   "BP-rp14-11"
+  ],
+  "q": "Which event most often precedes Asherman syndrome?",
+  "o": [
+   "Uterine curettage",
+   "Tubal ligation",
+   "Hysterosalpingography",
+   "Colposcopy-directed biopsy",
+   "Intrauterine insemination"
+  ],
+  "a": 0,
+  "x": "Curettage, especially after pregnancy, can scrape away the basalis. Intrauterine adhesions replace it, and the cavity cannot rebuild a lining. The result is secondary amenorrhea and infertility with normal hormone levels.",
+  "w": {
+   "Tubal ligation": "Tubal ligation blocks the tubes without entering the uterine cavity, so it does not scar the lining.",
+   "Hysterosalpingography": "Hysterosalpingography is a dye study that can show adhesions as filling defects. It does not cause them.",
+   "Colposcopy-directed biopsy": "A cervical biopsy samples the cervix. It does not disturb the basalis inside the uterine cavity.",
+   "Intrauterine insemination": "Insemination uses a thin catheter to place sperm in the uterus. It does not scrape the lining enough to scar it."
+  }
+ },
+ {
+  "id": "rp14r17",
+  "tags": [
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp14-12"
+  ],
+  "q": "Which procedure shows the uterine cavity directly and permits polyp removal?",
+  "o": [
+   "Hysteroscopy",
+   "Colposcopy",
+   "Diagnostic laparoscopy",
+   "Hysterosalpingography",
+   "Transvaginal ultrasonography"
+  ],
+  "a": 0,
+  "x": "Hysteroscopy passes a camera through the cervix into the cavity. The surgeon can see polyps, fibroids and adhesions and remove or biopsy them under direct view.",
+  "w": {
+   "Colposcopy": "Colposcopy magnifies the cervix after acetic acid so that biopsies can target dysplasia. It does not enter the uterine cavity.",
+   "Diagnostic laparoscopy": "Laparoscopy views the outside of the uterus, tubes, ovaries and peritoneum, so it is the way to see endometriosis. It cannot see inside the cavity.",
+   "Hysterosalpingography": "Hysterosalpingography outlines the cavity and tubes with dye and can hint at polyps or adhesions. It is an imaging study and cannot remove anything.",
+   "Transvaginal ultrasonography": "Ultrasonography measures lining thickness and finds masses indirectly. It gives no direct view and no tissue."
+  }
+ },
+ {
+  "id": "rp14r18",
+  "tags": [
+   "drug-mechanism",
+   "adverse-effects"
+  ],
+  "bp": [
+   "BP-rp14-15"
+  ],
+  "q": "Danazol is used for endometriosis and which other disease?",
+  "o": [
+   "Hereditary angioedema",
+   "Polycystic ovary syndrome",
+   "Prolactinoma",
+   "Hypothyroidism",
+   "Hyperemesis gravidarum"
+  ],
+  "a": 0,
+  "x": "Danazol is a synthetic androgen that suppresses gonadotropins and shrinks endometriosis. It also raises liver production of C1 esterase inhibitor, which prevents attacks of hereditary angioedema.",
+  "w": {
+   "Polycystic ovary syndrome": "PCOS already has androgen excess, so an androgenic drug would worsen acne and hirsutism. It is treated with weight loss, contraceptives and antiandrogens.",
+   "Prolactinoma": "Prolactinomas are treated with dopamine agonists such as cabergoline. Danazol does not act on lactotroph tumors.",
+   "Hypothyroidism": "Hypothyroidism is treated with levothyroxine. It has no link to androgen therapy or gonadotropin suppression.",
+   "Hyperemesis gravidarum": "Hyperemesis gravidarum is treated with fluids and antiemetics. Danazol is not used in pregnancy."
+  }
+ }
+]

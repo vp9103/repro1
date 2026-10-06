@@ -1,0 +1,127 @@
+{
+ "id": "d_rp10_multi",
+ "c": "rp10",
+ "kind": "multi",
+ "t": "Which contraceptive fits the feature?",
+ "tags": [
+  "drug-mechanism",
+  "adverse-effects"
+ ],
+ "bp": [
+  "BP-rp10-01",
+  "BP-rp10-03",
+  "BP-rp10-05",
+  "BP-rp10-06",
+  "BP-rp10-12"
+ ],
+ "key": "Ask what the method contains and where it acts. Estrogen means clotting risk and a scheduled withdrawal bleed; the depot injection means bone loss and slow return of fertility; the arm rod means unpredictable spotting; the levonorgestrel IUD acts locally and lightens periods; the copper IUD has no hormone, so periods get heavier.",
+ "cols": [
+  {
+   "id": "chc",
+   "l": "Combined pill, patch or ring"
+  },
+  {
+   "id": "dmpa",
+   "l": "DMPA injection"
+  },
+  {
+   "id": "imp",
+   "l": "Etonogestrel implant"
+  },
+  {
+   "id": "lng",
+   "l": "Levonorgestrel IUD"
+  },
+  {
+   "id": "cu",
+   "l": "Copper IUD"
+  }
+ ],
+ "items": [
+  [
+   "Raises clotting factors and venous clot risk",
+   "chc",
+   "Ethinyl estradiol makes the liver produce more clotting factors, so estrogen-containing methods carry the venous clot risk that progestin-only and copper methods do not."
+  ],
+  [
+   "Avoided in smokers aged 35 or older and in migraine with aura",
+   "chc",
+   "Both conditions already raise stroke and clot risk, and estrogen adds to it, so these patients are steered to a progestin-only or nonhormonal method."
+  ],
+  [
+   "Hormone-free week gives a predictable withdrawal bleed",
+   "chc",
+   "Estrogen keeps the lining stable, and stopping the active hormones for a week lets it shed on schedule, so cycles are regular."
+  ],
+  [
+   "Taken as a daily pill, weekly patch or monthly vaginal ring",
+   "chc",
+   "All three formats deliver ethinyl estradiol with a progestin, so one set of estrogen contraindications covers the whole family."
+  ],
+  [
+   "Bone mineral density falls during use",
+   "dmpa",
+   "High, sustained medroxyprogesterone suppresses ovarian estradiol, and low estrogen speeds bone resorption, so density drops during use and partly recovers afterward."
+  ],
+  [
+   "Fertility can take many months to return after stopping",
+   "dmpa",
+   "The depot releases medroxyprogesterone slowly over months, so ovulation returns late, whereas fertility returns almost at once after the minipill or implant."
+  ],
+  [
+   "Injected every 3 months",
+   "dmpa",
+   "The depot keeps progestin levels high between injections, so a visit is needed about every 12 weeks instead of a daily action."
+  ],
+  [
+   "Rod placed under the skin of the upper arm",
+   "imp",
+   "The etonogestrel rod is inserted just beneath the skin and removed in a short office procedure, so it needs no daily action by the user."
+  ],
+  [
+   "Most effective reversible method",
+   "imp",
+   "Once the rod is in, nothing depends on the user and etonogestrel reliably blocks ovulation, so it has the lowest pregnancy rate of any reversible method."
+  ],
+  [
+   "Unpredictable spotting that may persist",
+   "imp",
+   "Etonogestrel suppresses ovulation strongly but does not stabilize the endometrium, so bleeding stays irregular."
+  ],
+  [
+   "Treats heavy menstrual bleeding by thinning the lining from inside the uterus",
+   "lng",
+   "Local levonorgestrel atrophies the endometrium, so menstrual blood loss falls sharply. This is why the device treats heavy periods as well as preventing pregnancy."
+  ],
+  [
+   "Lasts 3 to 8 years depending on the device",
+   "lng",
+   "As of 2025, different levonorgestrel IUDs are labeled for between 3 and 8 years, and none lasts as long as the copper IUD."
+  ],
+  [
+   "Ovulation often continues because the effect is local",
+   "lng",
+   "Most of the action is local, with thickened cervical mucus and a thin endometrium and little systemic hormone, so many users keep ovulating."
+  ],
+  [
+   "No hormone; copper causes a sterile inflammatory reaction toxic to sperm",
+   "cu",
+   "Copper ions provoke a local inflammatory response in the uterus that is toxic to sperm and ova, so fertilization rarely happens and no hormone enters the body."
+  ],
+  [
+   "Periods become heavier and more painful",
+   "cu",
+   "The device adds inflammation without suppressing the endometrium, so bleeding and cramping increase, a common reason users have it removed."
+  ],
+  [
+   "Most effective emergency contraception when placed within 5 days",
+   "cu",
+   "Inserted within 5 days of unprotected sex it prevents fertilization more reliably than any pill, and it then continues as long-term contraception."
+  ],
+  [
+   "Remains an option for a patient with current breast cancer",
+   "cu",
+   "Hormonal methods are avoided when breast cancer is current because the tumor may respond to hormones. A nonhormonal copper device carries no such risk."
+  ]
+ ]
+}

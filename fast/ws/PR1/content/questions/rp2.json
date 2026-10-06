@@ -1,0 +1,876 @@
+[
+ {
+  "id": "rp2q01",
+  "d": 2,
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp2-02"
+  ],
+  "obj": [
+   "ANAT-EXTGEN-LAB.4"
+  ],
+  "s": "A 15-year-old boy falls astride the crossbar of his bicycle. The next day he has swelling and bruising of the scrotum and penis that extends up the lower anterior abdominal wall. The thighs and the skin around the anus are not swollen. A retrograde urethrogram shows contrast leaking just below the perineal membrane.",
+  "l": "Which structure is torn?",
+  "o": [
+   "Spongy urethra",
+   "Membranous urethra",
+   "Prostatic urethra",
+   "Bladder dome",
+   "Bladder neck"
+  ],
+  "a": 0,
+  "e": "Leakage just below the perineal membrane after a straddle injury means the **spongy urethra** was crushed against the pubic arch. Urine and blood fill the superficial perineal pouch. Colles fascia closes this pouch below, attaches to the ischiopubic rami and the back edge of the perineal membrane, and continues into the dartos and Scarpa fascia. So the fluid spreads to the scrotum, penis and lower abdominal wall but not into the thighs or the anal triangle. A membranous urethral tear, usually from a pelvic fracture, leaks above the membrane instead.",
+  "w": {
+   "Membranous urethra": "The membranous urethra lies above the perineal membrane, in the deep pouch. Tears there come with pelvic fractures and leak into the retropubic space, not the scrotum.",
+   "Prostatic urethra": "The prostatic urethra lies inside the prostate, above the pelvic floor. Leaks from it collect around the bladder, not in the scrotum.",
+   "Bladder dome": "A torn bladder dome, usually from a blow to a full bladder, leaks urine into the peritoneal cavity and causes ascites, not scrotal and penile swelling.",
+   "Bladder neck": "A torn bladder neck leaks into the extraperitoneal space around the bladder. The fluid would not track into the scrotum and penis."
+  },
+  "et": [
+   [
+    "Option",
+    "Position relative to the perineal membrane",
+    "Usual injury",
+    "Where urine collects"
+   ],
+   [
+    [
+     "Spongy urethra",
+     "Below it, in the bulb and penis",
+     "Straddle injury",
+     "Superficial pouch, scrotum, penis, abdominal wall"
+    ],
+    [
+     "Membranous urethra",
+     "Within the deep pouch, just above it",
+     "Pelvic fracture",
+     "Deep pouch and retropubic space"
+    ],
+    [
+     "Prostatic urethra",
+     "Above the pelvic floor",
+     "Rare; surgery or instruments",
+     "Around the prostate and bladder"
+    ],
+    [
+     "Bladder dome",
+     "Far above it, covered by peritoneum",
+     "Blow to a full bladder",
+     "Peritoneal cavity"
+    ],
+    [
+     "Bladder neck",
+     "Above the pelvic floor",
+     "Pelvic fracture or surgery",
+     "Extraperitoneal space beside the bladder"
+    ]
+   ]
+  ],
+  "bl": "A straddle injury tears the spongy urethra below the perineal membrane. Colles fascia steers urine to the scrotum, penis and abdominal wall.",
+  "ef": "rp2_pouches",
+  "pt": {
+   "hl": [
+    "Spongy urethra torn below the membrane",
+    "Colles fascia"
+   ],
+   "say": "The spongy urethra tears below the membrane, and Colles fascia steers urine into the scrotum, penis and abdominal wall but not the thighs."
+  }
+ },
+ {
+  "id": "rp2q02",
+  "d": 3,
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp2-02",
+   "BP-rp2-08"
+  ],
+  "obj": [
+   "ANAT-EXTGEN-LAB.4"
+  ],
+  "s": "A 27-year-old man is brought to the emergency department after a motorcycle crash. Pelvic radiographs show fractures of the superior and inferior pubic rami on both sides. There is blood at the urethral meatus, he cannot void, and on rectal examination the prostate is high-riding and boggy. The scrotum and penis are not swollen. A retrograde urethrogram shows contrast extravasating above the perineal membrane.",
+  "l": "Extravasated urine is most likely collecting in which space?",
+  "o": [
+   "Retropubic space",
+   "Superficial perineal pouch",
+   "Peritoneal cavity",
+   "Ischioanal fossa",
+   "Rectovesical pouch"
+  ],
+  "a": 0,
+  "e": "A pelvic fracture shears the **membranous urethra**, which is held in place by the external urethral sphincter in the deep perineal pouch. Blood appears at the meatus and the prostate rides high. The perineal membrane below is intact, so urine leaks upward into the **retropubic space** around the prostate and bladder, and the scrotum and penis stay dry. The superficial perineal pouch fills only when the spongy urethra tears below the membrane. The rectovesical pouch and the peritoneal cavity fill only if the bladder ruptures into the peritoneum.",
+  "w": {
+   "Superficial perineal pouch": "The superficial pouch lies below the perineal membrane. It fills after a spongy urethral tear and swells the scrotum and penis, and both are normal here.",
+   "Peritoneal cavity": "Urine enters the peritoneal cavity only when the bladder dome ruptures, usually from a blow to a full bladder. That would not explain a high-riding prostate.",
+   "Ischioanal fossa": "The ischioanal fossa is a fat-filled space of the anal triangle beside the anal canal. Urethral tears do not drain into it.",
+   "Rectovesical pouch": "The rectovesical pouch is a peritoneal recess behind the bladder. Urine from a membranous tear stays outside the peritoneum."
+  },
+  "et": [
+   [
+    "Option",
+    "Peritoneal or extraperitoneal",
+    "Fills after",
+    "Typical sign"
+   ],
+   [
+    [
+     "Retropubic space",
+     "Extraperitoneal",
+     "Membranous urethral tear",
+     "High-riding prostate, dry scrotum"
+    ],
+    [
+     "Superficial perineal pouch",
+     "Extraperitoneal, below the membrane",
+     "Spongy urethral tear",
+     "Scrotal and penile swelling"
+    ],
+    [
+     "Peritoneal cavity",
+     "Peritoneal",
+     "Bladder dome rupture",
+     "Ascites, rising creatinine"
+    ],
+    [
+     "Ischioanal fossa",
+     "Extraperitoneal, anal triangle",
+     "Spread of a perianal abscess",
+     "Buttock or perianal swelling"
+    ],
+    [
+     "Rectovesical pouch",
+     "Peritoneal recess",
+     "Intraperitoneal bleeding or bladder rupture",
+     "Fluid behind the bladder on imaging"
+    ]
+   ]
+  ],
+  "bl": "Pelvic fractures tear the membranous urethra above the perineal membrane, so urine collects in the retropubic space and the scrotum stays dry.",
+  "ef": "rp2_pouches",
+  "pt": {
+   "hl": [
+    "Membranous urethra torn above the membrane",
+    "retropubic space"
+   ],
+   "say": "A membranous tear above the membrane leaks into the deep pouch and up into the retropubic space, leaving the scrotum dry."
+  }
+ },
+ {
+  "id": "rp2q03",
+  "d": 1,
+  "tags": [
+   "nerve-supply",
+   "embryologic-origin"
+  ],
+  "bp": [
+   "BP-rp2-06",
+   "BP-rp2-11"
+  ],
+  "obj": [
+   "ANAT-PERINEUM-LEC.4"
+  ],
+  "s": "A 52-year-old man has severe anal pain after a week of constipation. Examination shows a tender, bluish swelling at the anal verge, a thrombosed external hemorrhoid below the pectinate line.",
+  "l": "Which nerve carries the pain from this lesion?",
+  "o": [
+   "Inferior rectal nerve",
+   "Pelvic splanchnic nerves",
+   "Perineal nerve",
+   "Dorsal nerve of the penis",
+   "Hypogastric nerves"
+  ],
+  "a": 0,
+  "e": "Below the pectinate line the anal canal comes from ectoderm and has somatic nerve supply through the **inferior rectal nerve**, a branch of the pudendal nerve. This nerve also supplies the external anal sphincter and the perianal skin. That is why external hemorrhoids, fissures and squamous lesions are painful. Above the line, visceral nerves sense only stretch, so internal hemorrhoids are painless. The perineal nerve supplies the perineal muscles and the scrotal skin, and the dorsal nerve of the penis supplies the glans.",
+  "w": {
+   "Pelvic splanchnic nerves": "Pelvic splanchnic nerves carry visceral sensation from the canal above the pectinate line, which senses stretch, not the sharp pain of a thrombosed hemorrhoid.",
+   "Perineal nerve": "The perineal branch of the pudendal nerve supplies the perineal muscles, the external urethral sphincter and the scrotal or labial skin, not the anal canal.",
+   "Dorsal nerve of the penis": "The dorsal nerve of the penis carries sensation from the glans and the penile skin. It lies far in front of the anal verge.",
+   "Hypogastric nerves": "The hypogastric nerves are sympathetic and carry visceral fibers to the pelvic organs. They do not carry somatic pain from below the line."
+  },
+  "et": [
+   [
+    "Option",
+    "Type of fiber",
+    "Territory",
+    "Parent nerve"
+   ],
+   [
+    [
+     "Inferior rectal nerve",
+     "Somatic",
+     "Canal below the line, perianal skin, external anal sphincter",
+     "Pudendal"
+    ],
+    [
+     "Pelvic splanchnic nerves",
+     "Parasympathetic and visceral afferent",
+     "Canal above the line, bladder, erectile tissue",
+     "S2 to S4 ventral rami"
+    ],
+    [
+     "Perineal nerve",
+     "Somatic",
+     "Perineal muscles, scrotal or labial skin",
+     "Pudendal"
+    ],
+    [
+     "Dorsal nerve of the penis",
+     "Somatic",
+     "Glans and penile skin",
+     "Pudendal, via the deep pouch"
+    ],
+    [
+     "Hypogastric nerves",
+     "Sympathetic and visceral afferent",
+     "Pelvic organs, upper canal",
+     "Superior hypogastric plexus"
+    ]
+   ]
+  ],
+  "bl": "Pain below the pectinate line travels in the somatic inferior rectal nerve, a pudendal branch, so external hemorrhoids hurt.",
+  "ef": "rp2_pectinate",
+  "pt": {
+   "hl": [
+    "Inferior rectal nerve: somatic pain",
+    "External hemorrhoids: painful"
+   ],
+   "say": "Below the pectinate line the inferior rectal nerve carries somatic pain, which is why external hemorrhoids hurt."
+  }
+ },
+ {
+  "id": "rp2q04",
+  "d": 2,
+  "tags": [
+   "lymph-drainage"
+  ],
+  "bp": [
+   "BP-rp2-05",
+   "BP-rp2-06"
+  ],
+  "obj": [
+   "ANAT-PERINEUM-LEC.8"
+  ],
+  "s": "A 61-year-old woman with HIV has a firm, ulcerated mass at the anal verge that bleeds and hurts with defecation. Biopsy shows invasive squamous cell carcinoma arising below the pectinate line. Staging examination focuses on the first lymph nodes that receive drainage from this part of the anal canal.",
+  "l": "Which nodes should be examined first?",
+  "o": [
+   "Superficial inguinal nodes",
+   "Internal iliac nodes",
+   "Para-aortic (lumbar) nodes",
+   "Deep inguinal nodes",
+   "Inferior mesenteric nodes"
+  ],
+  "a": 0,
+  "e": "Below the pectinate line the anal canal is ectoderm, continuous with the perianal skin, and its lymph drains with the perineal skin to the **superficial inguinal nodes**. Above the line, lymph follows the rectal vessels to the internal iliac nodes. This split matches the lining: squamous cell carcinoma below the line spreads to the groin, and adenocarcinoma above it spreads to pelvic nodes. Deep inguinal nodes drain the glans, and para-aortic nodes drain the ovaries and testes.",
+  "w": {
+   "Internal iliac nodes": "Internal iliac nodes drain the canal above the pectinate line, along with the cervix and prostate. They do not drain the squamous lower canal.",
+   "Para-aortic (lumbar) nodes": "Para-aortic nodes receive lymph from the ovaries and testes, which kept their aortic vessels. They do not drain the perineal skin or the lower anal canal.",
+   "Deep inguinal nodes": "Deep inguinal nodes drain the glans penis or clitoris. They are not the first stop for the lower anal canal.",
+   "Inferior mesenteric nodes": "Inferior mesenteric nodes drain the upper rectum and sigmoid colon, which lie well above the pectinate line."
+  },
+  "et": [
+   [
+    "Option",
+    "Location",
+    "Drains",
+    "Typical cancer"
+   ],
+   [
+    [
+     "Superficial inguinal nodes",
+     "Below the inguinal ligament",
+     "Lower anal canal, vulva, scrotum, perineal skin",
+     "Anal and vulvar squamous cell carcinoma"
+    ],
+    [
+     "Internal iliac nodes",
+     "Pelvic side wall",
+     "Upper anal canal, rectum, cervix, prostate",
+     "Cervical and prostate cancer"
+    ],
+    [
+     "Para-aortic (lumbar) nodes",
+     "Beside the aorta near the renal vessels",
+     "Ovaries and testes",
+     "Testicular germ cell tumors"
+    ],
+    [
+     "Deep inguinal nodes",
+     "Along the femoral vein",
+     "Glans and superficial inguinal nodes",
+     "Penile cancer of the glans"
+    ],
+    [
+     "Inferior mesenteric nodes",
+     "Along the inferior mesenteric artery",
+     "Upper rectum and sigmoid colon",
+     "Rectal adenocarcinoma"
+    ]
+   ]
+  ],
+  "bl": "The anal canal below the pectinate line drains to superficial inguinal nodes, the first nodes for anal squamous cell carcinoma.",
+  "ef": "rp2_lymph",
+  "pt": {
+   "hl": [
+    "Anal canal below pectinate line",
+    "Superficial inguinal nodes"
+   ],
+   "say": "The anal canal below the pectinate line drains to the superficial inguinal nodes, like the perineal skin."
+  }
+ },
+ {
+  "id": "rp2q05",
+  "d": 1,
+  "tags": [
+   "lymph-drainage"
+  ],
+  "bp": [
+   "BP-rp2-05"
+  ],
+  "obj": [
+   "ANAT-PERINEUM-LEC.8"
+  ],
+  "s": "A 57-year-old woman has abdominal bloating and weight loss. Imaging shows a large right ovarian mass. Her surgeon explains which lymph node group is most likely to receive the first metastases from the tumor.",
+  "l": "Which lymph node group is this?",
+  "o": [
+   "Para-aortic nodes",
+   "Superficial inguinal nodes",
+   "Internal iliac nodes",
+   "Deep inguinal nodes",
+   "External iliac nodes"
+  ],
+  "a": 0,
+  "e": "The ovary forms on the back wall of the abdomen near the kidney and keeps its blood supply from the aorta. Its lymph runs with the ovarian vessels in the infundibulopelvic ligament up to the **para-aortic** nodes. The uterus and cervix drain to the iliac and obturator nodes instead. The superficial and deep inguinal nodes drain the perineum and the external genitalia, not the ovary.",
+  "w": {
+   "Superficial inguinal nodes": "Superficial inguinal nodes drain the vulva, the lower vagina and the perineal skin. They are not the first stop for ovarian lymph.",
+   "Internal iliac nodes": "Internal iliac nodes drain the cervix, upper vagina, bladder and rectum. Ovarian lymph bypasses them and climbs with the ovarian vessels.",
+   "Deep inguinal nodes": "Deep inguinal nodes drain the glans penis or clitoris, far from the route of ovarian lymph up the back wall of the abdomen.",
+   "External iliac nodes": "External iliac nodes receive lymph from the uterine body and the bladder, not the main channels of the ovary."
+  },
+  "et": [
+   [
+    "Option",
+    "Location",
+    "Main inputs",
+    "Relevant cancer"
+   ],
+   [
+    [
+     "Para-aortic nodes",
+     "Beside the aorta near the renal vessels",
+     "Ovaries, testes, uterine fundus",
+     "Ovarian and testicular cancer"
+    ],
+    [
+     "Superficial inguinal nodes",
+     "Below the inguinal ligament",
+     "Vulva, lower vagina, scrotum, anal verge",
+     "Vulvar cancer"
+    ],
+    [
+     "Internal iliac nodes",
+     "Pelvic side wall, deep",
+     "Cervix, upper vagina, prostate, rectum",
+     "Cervical cancer"
+    ],
+    [
+     "Deep inguinal nodes",
+     "Along the femoral vein",
+     "Glans, superficial inguinal nodes",
+     "Penile cancer"
+    ],
+    [
+     "External iliac nodes",
+     "Along the external iliac vessels",
+     "Uterine body, bladder, lower limb",
+     "Endometrial cancer"
+    ]
+   ]
+  ],
+  "bl": "The ovary drains along the ovarian vessels to para-aortic nodes, so ovarian cancer spreads there first.",
+  "ef": "rp2_lymph",
+  "pt": {
+   "hl": [
+    "Ovary",
+    "Para-aortic (lumbar) nodes"
+   ],
+   "say": "The ovary connects straight to the para-aortic nodes, where the gonadal arteries start."
+  }
+ },
+ {
+  "id": "rp2q06",
+  "d": 2,
+  "tags": [
+   "anatomic-relations"
+  ],
+  "bp": [
+   "BP-rp2-07"
+  ],
+  "obj": [
+   "ANAT-EXTGEN-LAB.6"
+  ],
+  "s": "A 26-year-old woman notices a swelling at the entrance of her vagina that makes intercourse uncomfortable. Examination shows a 3-cm nontender, fluctuant cyst in the lower part of the right labium minus, at the posterolateral edge of the vaginal orifice. The urethral opening and clitoris are normal.",
+  "l": "Obstruction of which gland's duct most likely caused the cyst?",
+  "o": [
+   "Greater vestibular gland",
+   "Paraurethral (Skene) gland",
+   "Bulbourethral gland",
+   "Apocrine sweat gland of the labium majus",
+   "Sebaceous gland of the labium majus"
+  ],
+  "a": 0,
+  "e": "The **greater vestibular (Bartholin) glands** lie in the superficial perineal pouch, and their ducts open into the vestibule at the posterolateral edge of the vaginal opening, at about 4 and 8 o'clock. A blocked duct swells into a Bartholin cyst, which can become an abscess. Skene glands open beside the urethral opening in front. The bulbourethral glands are the male counterpart and lie in the deep pouch. Sweat and sebaceous glands of the labium majus lie in hair-bearing skin, not at the vaginal opening.",
+  "w": {
+   "Paraurethral (Skene) gland": "Skene glands open on each side of the urethral opening at the front of the vestibule, so a blocked duct swells beside the urethra, not posterolaterally.",
+   "Bulbourethral gland": "Bulbourethral (Cowper) glands are the male counterpart of the Bartholin glands and lie in the deep perineal pouch beside the membranous urethra.",
+   "Apocrine sweat gland of the labium majus": "Apocrine sweat glands lie in the hair-bearing skin of the labia majora, not at the vaginal opening.",
+   "Sebaceous gland of the labium majus": "Sebaceous cysts arise in the hair-bearing skin of the labia majora, not at the vaginal opening."
+  },
+  "et": [
+   [
+    "Option",
+    "Where the duct opens",
+    "Pouch or layer",
+    "Sex"
+   ],
+   [
+    [
+     "Greater vestibular gland",
+     "Posterolateral vaginal orifice, 4 and 8 o'clock",
+     "Superficial perineal pouch",
+     "Female"
+    ],
+    [
+     "Paraurethral (Skene) gland",
+     "Beside the external urethral orifice",
+     "Around the distal urethra",
+     "Female"
+    ],
+    [
+     "Bulbourethral gland",
+     "Proximal spongy urethra",
+     "Deep perineal pouch",
+     "Male"
+    ],
+    [
+     "Apocrine sweat gland of the labium majus",
+     "Hair follicles of the labium majus",
+     "Skin",
+     "Female"
+    ],
+    [
+     "Sebaceous gland of the labium majus",
+     "Hair follicles of the labium majus",
+     "Skin",
+     "Female; the scrotum has the same glands"
+    ]
+   ]
+  ],
+  "bl": "A cyst at the posterolateral vaginal orifice is a Bartholin cyst from a blocked greater vestibular gland duct.",
+  "ef": "rp2_pouches",
+  "pt": {
+   "hl": [
+    "Bartholin glands in women"
+   ],
+   "say": "Bartholin (greater vestibular) glands sit in the superficial perineal pouch, and their ducts open at the posterolateral vaginal orifice."
+  }
+ },
+ {
+  "id": "rp2q07",
+  "d": 3,
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp2-09",
+   "BP-rp2-11"
+  ],
+  "obj": [
+   "ANAT-EXTGEN-LAB.9"
+  ],
+  "s": "A 31-year-old woman has a prolonged second stage of labor ending in a forceps delivery. Six weeks later she leaks urine when she coughs and cannot voluntarily interrupt her urine stream. The skin of the posterior labia majora is numb. Anal sphincter tone and perianal sensation are normal, and sensation over the clitoris is preserved.",
+  "l": "Injury to which nerve best explains these findings?",
+  "o": [
+   "Perineal nerve",
+   "Inferior rectal nerve",
+   "Dorsal nerve of the clitoris",
+   "Ilioinguinal nerve",
+   "Pelvic splanchnic nerves"
+  ],
+  "a": 0,
+  "e": "The **perineal nerve** is the branch of the pudendal nerve that supplies the muscles of the urogenital triangle. Its deep branch supplies the external urethral sphincter, and its superficial branch supplies the skin of the posterior labia or scrotum. Losing it explains both the weak voluntary squeeze and the numb posterior labia. Normal anal tone and perianal sensation show that the inferior rectal nerve is spared, and normal clitoral sensation spares the dorsal nerve of the clitoris. The ilioinguinal nerve supplies only the anterior labia, and the pelvic splanchnic nerves drive the detrusor, not the external sphincter.",
+  "w": {
+   "Inferior rectal nerve": "The inferior rectal nerve supplies the external anal sphincter and the perianal skin. Both are normal here, so this nerve is intact.",
+   "Dorsal nerve of the clitoris": "The dorsal nerve of the clitoris carries sensation from the clitoris and supplies no sphincter. Clitoral sensation is normal here.",
+   "Ilioinguinal nerve": "The ilioinguinal nerve (L1) supplies the mons and the anterior labia, not the posterior labia or the external urethral sphincter.",
+   "Pelvic splanchnic nerves": "Pelvic splanchnic nerves make the detrusor contract to empty the bladder. They do not control the skeletal external sphincter used to stop the stream."
+  },
+  "et": [
+   [
+    "Option",
+    "Fiber type",
+    "Muscles supplied",
+    "Skin supplied"
+   ],
+   [
+    [
+     "Perineal nerve",
+     "Somatic, pudendal branch",
+     "External urethral sphincter, perineal muscles",
+     "Posterior labia or scrotum"
+    ],
+    [
+     "Inferior rectal nerve",
+     "Somatic, pudendal branch",
+     "External anal sphincter",
+     "Perianal skin"
+    ],
+    [
+     "Dorsal nerve of the clitoris",
+     "Somatic, pudendal branch",
+     "None",
+     "Clitoris and glans"
+    ],
+    [
+     "Ilioinguinal nerve",
+     "Somatic, L1",
+     "Lower abdominal wall muscles",
+     "Mons and anterior labia"
+    ],
+    [
+     "Pelvic splanchnic nerves",
+     "Parasympathetic, S2 to S4",
+     "Detrusor smooth muscle",
+     "None"
+    ]
+   ]
+  ],
+  "bl": "The perineal branch of the pudendal nerve runs the external urethral sphincter and posterior labial skin. Its injury causes incontinence and posterior labial numbness.",
+  "ef": "rp2_pudendal",
+  "pt": {
+   "hl": [
+    "Perineal",
+    "Deep: external"
+   ],
+   "say": "The perineal branch of the pudendal nerve supplies the external urethral sphincter through its deep branch and labial skin through its superficial branch."
+  }
+ },
+ {
+  "id": "rp2q08",
+  "d": 2,
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp2-03"
+  ],
+  "obj": [
+   "ANAT-EXTGEN-LAB.8"
+  ],
+  "s": "A 29-year-old woman in the second stage of labor needs perineal anesthesia before a forceps delivery. The obstetrician inserts a guide into the vagina, palpates a bony landmark on each side wall, and injects local anesthetic just medial and posterior to it, near the sacrospinous ligament.",
+  "l": "Which bony landmark guides the injection?",
+  "o": [
+   "Ischial spine",
+   "Ischial tuberosity",
+   "Sacral promontory",
+   "Pubic tubercle",
+   "Coccyx"
+  ],
+  "a": 0,
+  "e": "The pudendal nerve (S2 to S4) leaves the pelvis below the piriformis, hooks around the **ischial spine** and the sacrospinous ligament, and enters the pudendal canal. The spine can be felt through the side wall of the vagina, so a needle guided to it puts anesthetic around the nerve and numbs most of the perineum. The sacral promontory is the landmark for the diagonal conjugate, not for the pudendal nerve. The ilioinguinal nerve supplies the front of the perineum, so that area may still need local anesthetic.",
+  "w": {
+   "Ischial tuberosity": "The ischial tuberosity is the lower sitting bone. It lies below and to the side of the place where the pudendal nerve hooks around.",
+   "Sacral promontory": "The sacral promontory is the landmark for the diagonal conjugate at the pelvic inlet, far from the course of the pudendal nerve.",
+   "Pubic tubercle": "The pubic tubercle is a landmark at the front of the pelvis. It is not related to the course of the pudendal nerve.",
+   "Coccyx": "The coccyx lies at the back of the pelvis in the midline. It is not the landmark used to find the pudendal nerve for a block."
+  },
+  "et": [
+   [
+    "Option",
+    "Where it is",
+    "What attaches or passes",
+    "Clinical use"
+   ],
+   [
+    [
+     "Ischial spine",
+     "Side wall at the midpelvis",
+     "Sacrospinous ligament, pudendal nerve",
+     "Pudendal block, station of the head"
+    ],
+    [
+     "Ischial tuberosity",
+     "Lower ischium, the sitting bone",
+     "Not on the path of the pudendal nerve",
+     "Outlet landmark for the intertuberous distance"
+    ],
+    [
+     "Sacral promontory",
+     "Top of the sacrum at the inlet",
+     "No nerve crosses here",
+     "Diagonal conjugate"
+    ],
+    [
+     "Pubic tubercle",
+     "Upper pubis, lateral to the symphysis",
+     "Inguinal ligament",
+     "Hernia and ilioinguinal landmarks"
+    ],
+    [
+     "Coccyx",
+     "Tip of the spine, midline",
+     "Levator ani, coccygeus",
+     "Felt on rectal exam"
+    ]
+   ]
+  ],
+  "bl": "The pudendal nerve hooks around the ischial spine, the landmark palpated through the vagina for a pudendal block.",
+  "ef": "rp2_pudendal",
+  "pt": {
+   "hl": [
+    "Hooks around the ischial spine",
+    "Pudendal block"
+   ],
+   "say": "The pudendal nerve hooks around the ischial spine, so the block is injected there through the vaginal wall."
+  }
+ },
+ {
+  "id": "rp2q09",
+  "d": 3,
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp2-04",
+   "BP-rp2-09"
+  ],
+  "obj": [
+   "ANAT-PERINEUM-LEC.9"
+  ],
+  "s": "A 34-year-old man had a retroperitoneal lymph node dissection for testicular cancer 1 year ago. He now reports orgasm with little or no fluid. Erections are normal. A urine sample collected right after orgasm contains many sperm. Perineal sensation and anal sphincter tone are normal.",
+  "l": "Loss of which nerve fibers best explains his symptom?",
+  "o": [
+   "Sympathetic fibers from L1 and L2",
+   "Parasympathetic pelvic splanchnic fibers",
+   "Somatic pudendal fibers",
+   "Dorsal nerve of the penis",
+   "Ilioinguinal fibers"
+  ],
+  "a": 0,
+  "e": "Sperm in the urine after orgasm means retrograde ejaculation. Semen reached the urethra but flowed backward into the bladder because the internal urethral sphincter at the bladder neck did not close. That sphincter closes, and the ductus deferens, seminal vesicles and prostate contract during emission, through **sympathetic** fibers from L1 and L2. These run in the lumbar splanchnic and hypogastric nerves, where a retroperitoneal node dissection removes tissue. Normal erections show that the parasympathetic pelvic splanchnic nerves are intact, and normal perineal sensation and anal tone spare the pudendal nerve.",
+  "w": {
+   "Parasympathetic pelvic splanchnic fibers": "Pelvic splanchnic fibers produce erection, which is normal in him. Losing them causes erectile failure and urinary retention, not retrograde ejaculation.",
+   "Somatic pudendal fibers": "Pudendal fibers drive the bulbospongiosus at ejaculation and carry perineal sensation, and both are normal here. They do not close the bladder neck.",
+   "Dorsal nerve of the penis": "The dorsal nerve of the penis carries sensation from the glans. Losing it dulls sensation but does not send semen into the bladder.",
+   "Ilioinguinal fibers": "The ilioinguinal nerve supplies the skin of the anterior scrotum and groin. It has no role in emission or in closing the bladder neck."
+  },
+  "et": [
+   [
+    "Option",
+    "Division",
+    "Role in sex function",
+    "Effect of loss"
+   ],
+   [
+    [
+     "Sympathetic fibers from L1 and L2",
+     "Sympathetic",
+     "Emission and bladder-neck closure",
+     "Dry or retrograde ejaculation"
+    ],
+    [
+     "Parasympathetic pelvic splanchnic fibers",
+     "Parasympathetic",
+     "Erection",
+     "Erectile dysfunction"
+    ],
+    [
+     "Somatic pudendal fibers",
+     "Somatic",
+     "Ejaculatory muscle contraction, sensation",
+     "Weak ejaculation, perineal numbness"
+    ],
+    [
+     "Dorsal nerve of the penis",
+     "Somatic sensory",
+     "Glans sensation",
+     "Reduced penile sensation"
+    ],
+    [
+     "Ilioinguinal fibers",
+     "Somatic sensory",
+     "Anterior scrotal skin",
+     "Anterior scrotal numbness"
+    ]
+   ]
+  ],
+  "bl": "Sympathetic L1 to L2 fibers drive emission and close the internal urethral sphincter. Their loss after node dissection causes retrograde ejaculation.",
+  "ef": "rp2_pudendal",
+  "pt": {
+   "hl": [
+    "Squeeze: emission",
+    "Sympathetic damage"
+   ],
+   "say": "Emission and closure of the internal sphincter are sympathetic; sympathetic damage sends semen back into the bladder."
+  }
+ },
+ {
+  "id": "rp2q10",
+  "d": 2,
+  "tags": [
+   "lymph-drainage"
+  ],
+  "bp": [
+   "BP-rp2-05"
+  ],
+  "obj": [
+   "ANAT-EXTGEN-LAB.10"
+  ],
+  "s": "A 66-year-old uncircumcised man has a 1-cm ulcerated lesion on the glans penis that biopsy shows to be squamous cell carcinoma. The lesion has not involved the skin of the shaft or scrotum. His surgeon plans to examine the first lymph node group that drains this site.",
+  "l": "Which nodes receive lymph from the glans first?",
+  "o": [
+   "Deep inguinal nodes",
+   "Superficial inguinal nodes",
+   "Para-aortic nodes",
+   "External iliac nodes",
+   "Internal iliac nodes"
+  ],
+  "a": 0,
+  "e": "Lymph from the glans penis, like that of the glans clitoris, drains to the **deep inguinal nodes**, so those nodes are the first to examine. The skin of the penile shaft and the scrotum drains to the superficial inguinal nodes instead. The para-aortic nodes receive the testes, not the penis, and the internal iliac nodes receive the prostate. The external iliac nodes lie higher in the pelvis and come later.",
+  "w": {
+   "Superficial inguinal nodes": "Superficial inguinal nodes collect the skin of the penile shaft and the scrotum. The glans itself drains to the deep group.",
+   "Para-aortic nodes": "Para-aortic nodes receive the testes, which developed near the kidneys. They do not drain the penis, which formed in the perineum.",
+   "External iliac nodes": "External iliac nodes lie higher in the pelvis and come later in the spread of penile cancer, after the inguinal nodes.",
+   "Internal iliac nodes": "Internal iliac nodes receive the prostate and the cervix, not the surface of the glans."
+  },
+  "et": [
+   [
+    "Option",
+    "Location",
+    "Receives lymph from",
+    "Drains on to"
+   ],
+   [
+    [
+     "Deep inguinal nodes",
+     "Along the femoral vein",
+     "Glans, superficial inguinal nodes",
+     "External iliac nodes"
+    ],
+    [
+     "Superficial inguinal nodes",
+     "Below the inguinal ligament",
+     "Shaft skin, scrotum, vulva, anal verge",
+     "Deep inguinal nodes"
+    ],
+    [
+     "Para-aortic nodes",
+     "Beside the aorta",
+     "Testes, ovaries",
+     "Cisterna chyli"
+    ],
+    [
+     "External iliac nodes",
+     "Along the external iliac artery",
+     "Inguinal nodes, bladder, uterine body",
+     "Common iliac nodes"
+    ],
+    [
+     "Internal iliac nodes",
+     "Pelvic side wall",
+     "Prostate, cervix, upper anal canal",
+     "Common iliac nodes via the side wall"
+    ]
+   ]
+  ],
+  "bl": "The glans penis or clitoris drains to deep inguinal nodes, while shaft and scrotal skin drain to superficial inguinal nodes.",
+  "ef": "rp2_lymph",
+  "pt": {
+   "hl": [
+    "Glans penis or clitoris",
+    "Deep inguinal nodes"
+   ],
+   "say": "The glans penis or clitoris is the one site drawn straight to the deep inguinal nodes."
+  }
+ },
+ {
+  "id": "rp2q11",
+  "d": 2,
+  "tags": [
+   "nerve-supply"
+  ],
+  "bp": [
+   "BP-rp2-12"
+  ],
+  "obj": [
+   "ANAT-PERINEUM-LEC.4"
+  ],
+  "s": "A 24-year-old woman delivers a 4.1-kg infant vaginally after a long second stage. Inspection shows a tear extending from the vaginal mucosa through the perineal body into the external anal sphincter, with the rectal mucosa intact. Months later she reports urgency and occasional leakage of flatus.",
+  "l": "Which nerve supplies the torn muscle that best explains her later symptoms?",
+  "o": [
+   "Inferior rectal nerve",
+   "Perineal nerve",
+   "Pelvic splanchnic nerves",
+   "Hypogastric nerves",
+   "Dorsal nerve of the clitoris"
+  ],
+  "a": 0,
+  "e": "A tear through the perineal body into the external anal sphincter, with intact rectal lining, is a third-degree laceration. The **external anal sphincter** is skeletal muscle under voluntary control and is supplied by the **inferior rectal nerve**, a branch of the pudendal nerve. When it heals poorly, control of gas and stool weakens. The perineal nerve supplies the muscles that meet at the perineal body, which are the layer of a second-degree tear. The pelvic splanchnic and hypogastric nerves supply smooth muscle, not the skeletal external sphincter.",
+  "w": {
+   "Perineal nerve": "The perineal nerve supplies the muscles that meet at the perineal body, the layer torn in a second-degree laceration.",
+   "Pelvic splanchnic nerves": "Pelvic splanchnic nerves are parasympathetic and act on smooth muscle of the rectum and bladder, not on the skeletal external sphincter.",
+   "Hypogastric nerves": "Hypogastric sympathetic fibers help keep the smooth internal anal sphincter closed at rest. They do not supply the skeletal external sphincter.",
+   "Dorsal nerve of the clitoris": "The dorsal nerve of the clitoris carries sensation from the clitoris and supplies no muscle of the anal canal."
+  },
+  "et": [
+   [
+    "Option",
+    "Fiber type",
+    "Muscle or skin supplied",
+    "Clinical clue when damaged"
+   ],
+   [
+    [
+     "Inferior rectal nerve",
+     "Somatic, pudendal",
+     "External anal sphincter, perianal skin",
+     "Fecal and flatus incontinence"
+    ],
+    [
+     "Perineal nerve",
+     "Somatic, pudendal",
+     "Bulbospongiosus, transverse perineal muscles",
+     "Weak perineal support"
+    ],
+    [
+     "Pelvic splanchnic nerves",
+     "Parasympathetic",
+     "Rectal smooth muscle, detrusor",
+     "Retention, erectile failure"
+    ],
+    [
+     "Hypogastric nerves",
+     "Sympathetic",
+     "Internal anal sphincter tone",
+     "Retrograde ejaculation in men"
+    ],
+    [
+     "Dorsal nerve of the clitoris",
+     "Somatic sensory",
+     "Clitoral skin",
+     "Clitoral numbness"
+    ]
+   ]
+  ],
+  "bl": "The external anal sphincter, torn in a third-degree laceration, is skeletal muscle supplied by the inferior rectal branch of the pudendal nerve.",
+  "ef": "rp2_pectinate",
+  "pt": {
+   "hl": [
+    "External anal sphincter",
+    "skeletal, inferior rectal nerve"
+   ],
+   "say": "The external anal sphincter is skeletal muscle supplied by the inferior rectal nerve, the layer torn in a third-degree laceration."
+  }
+ }
+]

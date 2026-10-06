@@ -1,0 +1,109 @@
+{
+ "id": "d_rp4_multi",
+ "c": "rp4",
+ "kind": "multi",
+ "t": "Which germ layer builds it?",
+ "tags": [
+  "embryologic-origin"
+ ],
+ "key": "Ask where the cells started: surface ectoderm covers, neuroectoderm stays in the neural tube, neural crest migrates away from it, mesoderm builds the middle, and endoderm lines the gut tube and its buds.",
+ "cols": [
+  {
+   "id": "sect",
+   "l": "Surface ectoderm"
+  },
+  {
+   "id": "neuro",
+   "l": "Neuroectoderm"
+  },
+  {
+   "id": "crest",
+   "l": "Neural crest"
+  },
+  {
+   "id": "meso",
+   "l": "Mesoderm"
+  },
+  {
+   "id": "endo",
+   "l": "Endoderm"
+  }
+ ],
+ "items": [
+  [
+   "Lens of the eye",
+   "sect",
+   "The lens placode thickens from surface ectoderm where the optic vesicle touches it, so the lens is surface ectoderm."
+  ],
+  [
+   "Anterior pituitary",
+   "sect",
+   "Rathke pouch grows up from the roof of the primitive mouth, which is lined by surface ectoderm."
+  ],
+  [
+   "Epidermis and tooth enamel",
+   "sect",
+   "Surface ectoderm forms the epidermis and its glands, and the ameloblasts that make enamel come from this layer too."
+  ],
+  [
+   "Retina",
+   "neuro",
+   "The optic cup is an outgrowth of the brain, so the retina and optic nerve are neuroectoderm."
+  ],
+  [
+   "Posterior pituitary",
+   "neuro",
+   "The infundibulum grows down from the floor of the diencephalon, so the posterior pituitary is neural tissue."
+  ],
+  [
+   "Spinal cord",
+   "neuro",
+   "The caudal neural tube becomes the spinal cord. Failure of the posterior neuropore to close causes spina bifida."
+  ],
+  [
+   "Adrenal medulla",
+   "crest",
+   "Neural crest cells migrate into the adrenal gland and become chromaffin cells that secrete epinephrine."
+  ],
+  [
+   "Melanocytes",
+   "crest",
+   "Pigment cells migrate from the neural crest into the skin."
+  ],
+  [
+   "Enteric ganglia",
+   "crest",
+   "Crest cells colonize the gut wall from above downward. Failure to reach the distal colon causes Hirschsprung disease."
+  ],
+  [
+   "Adrenal cortex",
+   "meso",
+   "The cortex develops from mesoderm lining the coelom near the gonadal ridge, unlike the crest-derived medulla it surrounds."
+  ],
+  [
+   "Kidneys and gonads",
+   "meso",
+   "Intermediate mesoderm forms the urogenital ridge, which builds both the kidneys and the gonads."
+  ],
+  [
+   "Heart and blood vessels",
+   "meso",
+   "Splanchnic lateral plate mesoderm forms the heart tube, the blood islands and the vessel walls."
+  ],
+  [
+   "Thyroid follicular cells",
+   "endo",
+   "The thyroid grows down into the neck from the lining of the embryonic gut tube, so its follicular cells share the gut lining's endodermal origin."
+  ],
+  [
+   "Liver and pancreas",
+   "endo",
+   "Both glands bud from the endodermal lining of the gut tube, so their epithelium is endoderm."
+  ],
+  [
+   "Lining of the airways",
+   "endo",
+   "The lung bud grows out of the front wall of the gut tube, so the lining of the trachea and bronchi shares the gut's endodermal origin."
+  ]
+ ]
+}
