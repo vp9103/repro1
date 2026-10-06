@@ -1,0 +1,103 @@
+<svg class="dia" viewBox="0 0 900 728" role="img" aria-label="Types of early pregnancy loss named by the cervical os and tissue passed: threatened, inevitable, incomplete, complete and missed; and causes of loss: embryonic chromosomal abnormalities, antiphospholipid syndrome treated with low-dose aspirin plus heparin, septate uterus and balanced translocation">
+<text class="ttl" x="14" y="26" font-size="17">Early pregnancy loss: name the type from two findings, then ask why</text>
+<text class="b" x="14" y="58" font-size="16">Two findings name the type: is the cervical os open, and has tissue passed?</text>
+<text class="s" x="26" y="84" font-size="14">Type</text>
+<text class="s" x="226" y="84" font-size="14">Cervical os</text>
+<text class="s" x="376" y="84" font-size="14">Tissue passed</text>
+<text class="s" x="546" y="84" font-size="14">Status of the pregnancy</text>
+<rect x="14" y="96" width="872" height="45" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="96" width="200" height="45" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<line x1="214" y1="96" x2="214" y2="141" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="364" y1="96" x2="364" y2="141" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="534" y1="96" x2="534" y2="141" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="122" font-size="15">Threatened</text>
+<text x="226" y="122" font-size="14">Closed</text>
+<text x="376" y="122" font-size="14">None</text>
+<text x="546" y="122" font-size="14">Viable; most continue</text>
+<rect x="14" y="147" width="872" height="45" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="147" width="200" height="45" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<line x1="214" y1="147" x2="214" y2="192" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="364" y1="147" x2="364" y2="192" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="534" y1="147" x2="534" y2="192" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="173" font-size="15">Inevitable</text>
+<text x="226" y="173" font-size="14">Open</text>
+<text x="376" y="173" font-size="14">None yet</text>
+<text x="546" y="173" font-size="14">The loss cannot be stopped</text>
+<rect x="14" y="198" width="872" height="45" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="198" width="200" height="45" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<line x1="214" y1="198" x2="214" y2="243" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="364" y1="198" x2="364" y2="243" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="534" y1="198" x2="534" y2="243" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="224" font-size="15">Incomplete</text>
+<text x="226" y="224" font-size="14">Open</text>
+<text x="376" y="224" font-size="14">Some</text>
+<text x="546" y="224" font-size="14">Tissue retained; bleeding continues</text>
+<rect x="14" y="249" width="872" height="45" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="249" width="200" height="45" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<line x1="214" y1="249" x2="214" y2="294" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="364" y1="249" x2="364" y2="294" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="534" y1="249" x2="534" y2="294" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="275" font-size="15">Complete</text>
+<text x="226" y="275" font-size="14">Closed</text>
+<text x="376" y="275" font-size="14">All</text>
+<text x="546" y="275" font-size="14">Uterus empty; hCG falling</text>
+<rect x="14" y="300" width="872" height="45" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="300" width="200" height="45" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<line x1="214" y1="300" x2="214" y2="345" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="364" y1="300" x2="364" y2="345" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="534" y1="300" x2="534" y2="345" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="326" font-size="15">Missed</text>
+<text x="226" y="326" font-size="14">Closed</text>
+<text x="376" y="326" font-size="14">None</text>
+<text x="546" y="326" font-size="14">Nonviable embryo or empty sac retained</text>
+<text class="b" x="14" y="373" font-size="16">Why it happens, and what to do after repeated loss</text>
+<text class="s" x="26" y="401" font-size="14">Cause</text>
+<text class="s" x="256" y="401" font-size="14">Clue</text>
+<text class="s" x="586" y="401" font-size="14">What to do</text>
+<rect x="14" y="413" width="872" height="89" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="413" width="230" height="89" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<line x1="244" y1="413" x2="244" y2="502" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="574" y1="413" x2="574" y2="502" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="439" font-size="15">Embryo chromosomes</text>
+<text x="26" y="464" font-size="14">at least half of</text>
+<text x="26" y="484" font-size="14">first-trimester losses</text>
+<circle cx="259" cy="434" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="270" y="439" font-size="14">Mostly autosomal trisomies, not</text>
+<text x="270" y="459" font-size="14">exercise, sex or stress</text>
+<circle cx="589" cy="434" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="600" y="439" font-size="14">Treat the loss: waiting, misoprostol</text>
+<text x="600" y="459" font-size="14">or suction</text>
+<rect x="14" y="508" width="872" height="84" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="508" width="230" height="84" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<line x1="244" y1="508" x2="244" y2="592" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="574" y1="508" x2="574" y2="592" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="534" font-size="15">Antiphospholipid</text>
+<text class="b" x="26" y="555" font-size="15">syndrome</text>
+<circle cx="259" cy="529" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="270" y="534" font-size="14">Clots in the placenta; lupus</text>
+<text x="270" y="554" font-size="14">anticoagulant, anticardiolipin and</text>
+<text x="270" y="574" font-size="14">anti-beta2-glycoprotein I antibodies</text>
+<circle cx="589" cy="529" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="600" y="534" font-size="14">Low-dose aspirin plus heparin in</text>
+<text x="600" y="554" font-size="14">the next pregnancy</text>
+<rect x="14" y="598" width="872" height="45" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="598" width="230" height="45" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<line x1="244" y1="598" x2="244" y2="643" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="574" y1="598" x2="574" y2="643" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="624" font-size="15">Septate uterus</text>
+<circle cx="259" cy="619" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="270" y="624" font-size="14">Poorly vascularized place to implant</text>
+<circle cx="589" cy="619" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="600" y="624" font-size="14">Resect the septum</text>
+<rect x="14" y="649" width="872" height="69" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="649" width="230" height="69" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<line x1="244" y1="649" x2="244" y2="718" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="574" y1="649" x2="574" y2="718" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="675" font-size="15">Balanced translocation</text>
+<text x="26" y="700" font-size="14">in a parent</text>
+<circle cx="259" cy="670" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="270" y="675" font-size="14">Embryos with unbalanced</text>
+<text x="270" y="695" font-size="14">chromosomes</text>
+<circle cx="589" cy="670" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="600" y="675" font-size="14">Karyotype both partners</text>
+</svg>

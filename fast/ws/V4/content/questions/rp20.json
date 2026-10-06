@@ -297,7 +297,15 @@
     ]
    ]
   ],
-  "bl": "In men older than 35 or after urinary instrumentation, epididymitis is usually caused by enteric gram-negative rods such as Escherichia coli."
+  "bl": "In men older than 35 or after urinary instrumentation, epididymitis is usually caused by enteric gram-negative rods such as Escherichia coli.",
+  "ef": "rp20_inflame",
+  "pt": {
+   "hl": [
+    "Older men, urinary obstruction or a",
+    "recent catheter: Escherichia coli and"
+   ],
+   "say": "In the epididymitis row, men older than about 35 with urinary obstruction or a recent catheter usually have Escherichia coli and other enteric rods, not chlamydia or gonorrhea."
+  }
  },
  {
   "id": "rp20q05",
@@ -370,7 +378,16 @@
     ]
    ]
   ],
-  "bl": "A new varicocele that does not empty when lying down means blocked venous return, and in an older man it suggests renal cell carcinoma."
+  "bl": "A new varicocele that does not empty when lying down means blocked venous return, and in an older man it suggests renal cell carcinoma.",
+  "ef": "rp19_scrotum",
+  "pt": {
+   "hl": [
+    "left renal vein at a right angle:",
+    "that stays full lying down",
+    "image the abdomen for a mass"
+   ],
+   "say": "In the left testis panel, the left testicular vein joins the left renal vein, so renal cell carcinoma invading that vein blocks outflow, and a varicocele that stays full lying down calls for imaging the abdomen."
+  }
  },
  {
   "id": "rp20q06",
@@ -913,7 +930,16 @@
     ]
    ]
   ],
-  "bl": "Mumps orchitis damages the tubules because swelling is trapped inside the unyielding tunica albuginea, causing pressure necrosis and atrophy."
+  "bl": "Mumps orchitis damages the tubules because swelling is trapped inside the unyielding tunica albuginea, causing pressure necrosis and atrophy.",
+  "ef": "rp20_inflame",
+  "pt": {
+   "hl": [
+    "The swollen testis is trapped inside",
+    "the inelastic tunica albuginea",
+    "Pressure necrosis of tubules"
+   ],
+   "say": "In the mumps orchitis row, the swollen testis is trapped inside the inelastic tunica albuginea, so pressure rises and causes pressure necrosis of the tubules and later atrophy."
+  }
  },
  {
   "id": "rp20q13",

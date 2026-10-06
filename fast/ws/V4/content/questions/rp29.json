@@ -465,7 +465,15 @@
     ]
    ]
   ],
-  "bl": "Testosterone is not contraception. A transgender man with a uterus and ovaries who wants no estrogen should be offered a levonorgestrel intrauterine device."
+  "bl": "Testosterone is not contraception. A transgender man with a uterus and ovaries who wants no estrogen should be offered a levonorgestrel intrauterine device.",
+  "ef": "rp29_sexhx",
+  "pt": {
+   "hl": [
+    "Testosterone is not contraception",
+    "Offer a levonorgestrel intrauterine"
+   ],
+   "say": "In the contraception box, testosterone is not contraception, so he needs a method without estrogen or a daily pill: a levonorgestrel intrauterine device."
+  }
  },
  {
   "id": "rp29q07",
@@ -536,7 +544,15 @@
     ]
    ]
   ],
-  "bl": "Minors can consent to STI testing and treatment in every state, so treat her without notifying her parents and keep the visit confidential."
+  "bl": "Minors can consent to STI testing and treatment in every state, so treat her without notifying her parents and keep the visit confidential.",
+  "ef": "rp29_consent",
+  "pt": {
+   "hl": [
+    "Without a parent in most states",
+    "Testing and treatment for sexually transmitted"
+   ],
+   "say": "In the minor box, testing and treatment for sexually transmitted infections need no parent in most states, so treat her without notifying her parents and explain confidentiality."
+  }
  },
  {
   "id": "rp29q08",
@@ -607,7 +623,16 @@
     ]
    ]
   ],
-  "bl": "Screen by organ inventory: a transgender man with a cervix needs cervical screening, and primary HPV testing avoids atrophic cytology."
+  "bl": "Screen by organ inventory: a transgender man with a cervix needs cervical screening, and primary HPV testing avoids atrophic cytology.",
+  "ef": "rp29_inventory",
+  "pt": {
+   "hl": [
+    "the usual schedule; primary HPV",
+    "testing can be self-collected",
+    "Testosterone thins the"
+   ],
+   "say": "In the cervix row, he keeps the usual schedule with primary HPV testing, which can be self-collected, because testosterone thins the epithelium and makes cytology samples unsatisfactory."
+  }
  },
  {
   "id": "rp29q09",
@@ -679,7 +704,16 @@
     ]
    ]
   ],
-  "bl": "A capable patient may decline contraception. Accept her decision and offer follow-up options, because pressure undermines voluntary consent and deepens historical mistrust."
+  "bl": "A capable patient may decline contraception. Accept her decision and offer follow-up options, because pressure undermines voluntary consent and deepens historical mistrust.",
+  "ef": "rp29_consent",
+  "pt": {
+   "hl": [
+    "Pressure toward a long-acting method",
+    "Accept a capable patient",
+    "follow-up options"
+   ],
+   "say": "In the what-to-do box, pressure toward a long-acting method can feel like history repeating, so accept her decision and offer follow-up options."
+  }
  },
  {
   "id": "rp29q10",
@@ -750,7 +784,16 @@
     ]
    ]
   ],
-  "bl": "Informed consent requires capacity, voluntariness and disclosure of risks, benefits and reasonable alternatives, including no treatment."
+  "bl": "Informed consent requires capacity, voluntariness and disclosure of risks, benefits and reasonable alternatives, including no treatment.",
+  "ef": "rp29_consent",
+  "pt": {
+   "hl": [
+    "Disclosure",
+    "benefits, and the reasonable",
+    "alternatives, including doing"
+   ],
+   "say": "The disclosure card lists the procedure, its risks and benefits, and the reasonable alternatives, including doing nothing; the missing element is disclosure of reasonable alternatives."
+  }
  },
  {
   "id": "rp29q11",
@@ -823,6 +866,14 @@
     ]
    ]
   ],
-  "bl": "Base the sexual history on behavior and anatomy: ask what body parts the patient and partners use during sex, not identity labels."
+  "bl": "Base the sexual history on behavior and anatomy: ask what body parts the patient and partners use during sex, not identity labels.",
+  "ef": "rp29_sexhx",
+  "pt": {
+   "hl": [
+    "What body parts do you and",
+    "your partners use during sex?"
+   ],
+   "say": "In step 1, ask what body parts you and your partners use during sex, because the exposed sites, not identity, decide where to test."
+  }
  }
 ]

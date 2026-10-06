@@ -227,7 +227,15 @@
     ]
    ]
   ],
-  "bl": "Suspected acute HIV with a negative antibody test calls for an HIV-1 RNA nucleic acid test, because antibodies lag behind viremia."
+  "bl": "Suspected acute HIV with a negative antibody test calls for an HIV-1 RNA nucleic acid test, because antibodies lag behind viremia.",
+  "ef": "rp17_hivtest",
+  "pt": {
+   "hl": [
+    "First positive: RNA test, about day 10",
+    "3 HIV-1 RNA test"
+   ],
+   "say": "Read the top bars: at three weeks the antibody-only test may still be negative, but HIV RNA turns positive first, so an HIV-1 RNA nucleic acid test confirms acute infection."
+  }
  },
  {
   "id": "rp17q04",
@@ -298,7 +306,15 @@
     ]
    ]
   ],
-  "bl": "Screen for HLA-B*57:01 before abacavir, because carriers develop a severe, potentially fatal hypersensitivity reaction."
+  "bl": "Screen for HLA-B*57:01 before abacavir, because carriers develop a severe, potentially fatal hypersensitivity reaction.",
+  "ef": "rp17_art",
+  "pt": {
+   "hl": [
+    "Hypersensitivity in HLA-B*57:01 carriers",
+    "Test before the first dose"
+   ],
+   "say": "The abacavir row shows hypersensitivity in HLA-B*57:01 carriers, so screening for HLA-B*57:01 must be done before the first dose."
+  }
  },
  {
   "id": "rp17q05",
@@ -370,7 +386,15 @@
     ]
    ]
   ],
-  "bl": "Older NRTIs inhibit mitochondrial DNA polymerase gamma, causing lactic acidosis with hepatic steatosis, pancreatitis and neuropathy."
+  "bl": "Older NRTIs inhibit mitochondrial DNA polymerase gamma, causing lactic acidosis with hepatic steatosis, pancreatitis and neuropathy.",
+  "ef": "rp17_art",
+  "pt": {
+   "hl": [
+    "Also block mitochondrial",
+    "DNA polymerase gamma"
+   ],
+   "say": "In the stavudine and didanosine row, the older NRTIs also block mitochondrial DNA polymerase gamma, which causes lactic acidosis, liver steatosis and pancreatitis."
+  }
  },
  {
   "id": "rp17q06",
@@ -442,7 +466,16 @@
     ]
    ]
   ],
-  "bl": "When the viral load is high near delivery, plan a scheduled cesarean at about 38 weeks with intrapartum IV zidovudine."
+  "bl": "When the viral load is high near delivery, plan a scheduled cesarean at about 38 weeks with intrapartum IV zidovudine.",
+  "ef": "rp17_art",
+  "pt": {
+   "hl": [
+    "High viral load near delivery",
+    "scheduled cesarean at 38",
+    "weeks and IV zidovudine"
+   ],
+   "say": "In the At delivery card, a high viral load near delivery calls for a scheduled cesarean at 38 weeks plus IV zidovudine in labor."
+  }
  },
  {
   "id": "rp17q07",
@@ -515,7 +548,14 @@
     ]
    ]
   ],
-  "bl": "Genital HSV-2 persists as a latent episome in the sacral dorsal root ganglia and reactivates to cause recurrent vesicles."
+  "bl": "Genital HSV-2 persists as a latent episome in the sacral dorsal root ganglia and reactivates to cause recurrent vesicles.",
+  "ef": "rp17_persist",
+  "pt": {
+   "hl": [
+    "Sacral dorsal root ganglia"
+   ],
+   "say": "The herpes simplex row shows where the virus hides between outbreaks: the sacral dorsal root ganglia, as a circular episome."
+  }
  },
  {
   "id": "rp17q08",
@@ -743,7 +783,14 @@
     ]
    ]
   ],
-  "bl": "The HPV vaccine is made of L1 virus-like particles that carry no DNA, so it induces antibody but cannot cause infection."
+  "bl": "The HPV vaccine is made of L1 virus-like particles that carry no DNA, so it induces antibody but cannot cause infection.",
+  "ef": "rp17_persist",
+  "pt": {
+   "hl": [
+    "Vaccine: L1 virus-like particles, no DNA"
+   ],
+   "say": "The HPV row states the vaccine is made of L1 virus-like particles with no DNA, so it cannot replicate or cause infection."
+  }
  },
  {
   "id": "rp17q11",
@@ -814,7 +861,14 @@
     ]
    ]
   ],
-  "bl": "Imiquimod treats genital warts by activating toll-like receptor 7, inducing interferon and a local immune attack on infected cells."
+  "bl": "Imiquimod treats genital warts by activating toll-like receptor 7, inducing interferon and a local immune attack on infected cells.",
+  "ef": "rp17_persist",
+  "pt": {
+   "hl": [
+    "Imiquimod activates toll-like receptor 7"
+   ],
+   "say": "The HPV row names the home cream for warts: imiquimod activates toll-like receptor 7, so local cells release interferon and clear the infected keratinocytes."
+  }
  },
  {
   "id": "rp17q12",
@@ -885,6 +939,14 @@
     ]
    ]
   ],
-  "bl": "Extensive molluscum contagiosum in an adult suggests HIV infection with a CD4 count below 200 cells/mm³."
+  "bl": "Extensive molluscum contagiosum in an adult suggests HIV infection with a CD4 count below 200 cells/mm³.",
+  "ef": "rp17_persist",
+  "pt": {
+   "hl": [
+    "Widespread lesions suggest HIV",
+    "count below 200"
+   ],
+   "say": "In the molluscum row, widespread lesions suggest HIV with a CD4 count below 200, which is the laboratory finding to expect."
+  }
  }
 ]

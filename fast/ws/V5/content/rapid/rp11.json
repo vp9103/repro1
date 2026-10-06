@@ -1,0 +1,554 @@
+[
+ {
+  "id": "rp11r01",
+  "tags": [
+   "feedback-logic",
+   "hormone-timeline"
+  ],
+  "bp": [
+   "BP-rp11-01"
+  ],
+  "obj": [
+   "MENOPAUSE.1",
+   "MENOPAUSE.9"
+  ],
+  "q": "Which hormone from small antral follicles falls first in the menopausal transition and selectively lifts FSH?",
+  "o": [
+   "Inhibin A",
+   "Inhibin B",
+   "Anti-Müllerian hormone",
+   "Estradiol",
+   "Progesterone"
+  ],
+  "a": 1,
+  "x": "Inhibin B comes from granulosa cells of small antral follicles and suppresses FSH selectively. As the follicle pool shrinks, inhibin B falls first, so FSH climbs early and highest while LH stays near normal at first. That is why FSH, not LH, is the best marker of ovarian failure.",
+  "w": {
+   "Inhibin A": "Inhibin A comes from the dominant follicle and the corpus luteum, so it depends on ovulation. The small antral follicles that run out first make inhibin B instead.",
+   "Anti-Müllerian hormone": "Anti-Müllerian hormone also falls with the follicle pool and marks ovarian reserve. It is not the main pituitary brake on FSH.",
+   "Estradiol": "Estradiol restrains both FSH and LH, so its loss raises both. It stays near normal for much of the transition, so it cannot explain the early, selective rise of FSH.",
+   "Progesterone": "Progesterone comes from the corpus luteum after ovulation and slows GnRH pulses. Its loss changes pulse frequency rather than selectively releasing FSH."
+  },
+  "media": "fig:rp11_axis",
+  "pt": {
+   "hl": [
+    "Inhibin B and AMH fall",
+    "FSH rises most, LH rises too"
+   ],
+   "say": "In the ovary box, inhibin B and AMH fall as follicles deplete; the pituitary box then shows FSH rising most, which is why inhibin B loss lifts FSH selectively."
+  }
+ },
+ {
+  "id": "rp11r02",
+  "tags": [
+   "diagnostic-cutoffs"
+  ],
+  "bp": [
+   "BP-rp11-02"
+  ],
+  "obj": [
+   "MENOPAUSE.1"
+  ],
+  "q": "Loss of ovarian function before which age is called primary ovarian insufficiency?",
+  "o": [
+   "Age 45",
+   "Age 35",
+   "Age 30",
+   "Age 40",
+   "Age 50"
+  ],
+  "a": 3,
+  "x": "Primary ovarian insufficiency is loss of ovarian function before age 40, shown by amenorrhea or oligomenorrhea with a high FSH on two occasions. Causes include Turner syndrome, the fragile X premutation, autoimmune oophoritis, chemotherapy and pelvic radiation.",
+  "w": {
+   "Age 45": "This is not the cutoff. Primary ovarian insufficiency is defined by loss of ovarian function before 40, which is earlier.",
+   "Age 35": "A woman who loses ovarian function at 38 would be missed by a cutoff of 35, yet she meets criteria and needs the same work-up and estrogen replacement.",
+   "Age 30": "Using 30 would exclude many affected women. The diagnosis needs amenorrhea with a high FSH on two occasions before age 40.",
+   "Age 50": "Around 51 is the median age of natural menopause, so a woman of 50 who has stopped menstruating is within the normal range."
+  },
+  "media": "fig:rp11_axis",
+  "pt": {
+   "hl": [
+    "Before age 40 with a high FSH: primary ovarian insufficiency."
+   ],
+   "say": "The bottom note reads before age 40 with a high FSH: primary ovarian insufficiency, so the age 40 threshold separates it from ordinary menopause at a median age of 51."
+  }
+ },
+ {
+  "id": "rp11r03",
+  "tags": [
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp11-02",
+   "BP-rp11-16"
+  ],
+  "obj": [
+   "MENOPAUSE.8"
+  ],
+  "q": "How long should estrogen replacement continue in a woman with primary ovarian insufficiency?",
+  "o": [
+   "The usual age of menopause, about 51",
+   "Only while hot flashes continue",
+   "Age 65, matching routine osteoporosis screening",
+   "Five years, the limit set by the Women's Health Initiative",
+   "Until age 40, the cutoff for the diagnosis"
+  ],
+  "a": 0,
+  "x": "Women with primary ovarian insufficiency lack estrogen decades earlier than normal, so replacement protects bone, heart and brain until about the usual age of natural menopause, near 51. The risks seen in the Women's Health Initiative applied to women averaging 63, not to these younger women.",
+  "w": {
+   "Only while hot flashes continue": "Symptom relief is only one goal. Replacement also prevents the early bone loss and heart risk of years of estrogen deficiency, so it continues until the age of natural menopause.",
+   "Age 65, matching routine osteoporosis screening": "Age 65 is when DXA screening begins for all women. A woman with insufficiency only has to make up the years until natural menopause, so replacing longer adds risk without need.",
+   "Five years, the limit set by the Women's Health Initiative": "The advice to use the shortest duration came from trials in women who averaged 63 years old. It does not apply to younger women replacing missing hormones.",
+   "Until age 40, the cutoff for the diagnosis": "The cutoff only defines which women have the diagnosis. Stopping at 40 would leave about eleven years of avoidable estrogen deficiency."
+  },
+  "media": "fig:rp11_axis",
+  "pt": {
+   "hl": [
+    "median age 51",
+    "Before age 40 with a high FSH"
+   ],
+   "say": "The bottom notes give median age 51 for natural menopause and flag primary ovarian insufficiency before age 40; replacement bridges the gap until about the usual age of menopause."
+  }
+ },
+ {
+  "id": "rp11r04",
+  "tags": [
+   "diagnostic-cutoffs",
+   "normal-vs-pathologic"
+  ],
+  "bp": [
+   "BP-rp11-13",
+   "BP-rp11-11"
+  ],
+  "obj": [
+   "MENOPAUSE.9"
+  ],
+  "q": "How is menopause diagnosed in a typical healthy woman over age 45?",
+  "o": [
+   "One high serum FSH level",
+   "A low serum estradiol level",
+   "A low anti-Müllerian hormone level",
+   "Endometrial thickness under 4 mm on ultrasound",
+   "Clinically, after 12 months without menses"
+  ],
+  "a": 4,
+  "x": "Menopause is a retrospective clinical diagnosis: 12 consecutive months without menses with no other cause. Hormone tests are unnecessary in a typical woman over 45, because during perimenopause FSH and estradiol swing from week to week, so one result can mislead in either direction.",
+  "w": {
+   "One high serum FSH level": "FSH fluctuates widely in perimenopause, so a single high value can occur while cycles continue. It does not mean she has stopped ovulating or can stop contraception.",
+   "A low serum estradiol level": "Estradiol swings through the transition and is often normal or even high at times. A low value on one day does not show permanent ovarian failure.",
+   "A low anti-Müllerian hormone level": "Anti-Müllerian hormone falls with the follicle pool, but it varies so much between women that no cutoff reliably dates menopause.",
+   "Endometrial thickness under 4 mm on ultrasound": "A thin endometrial stripe helps evaluate postmenopausal bleeding. It does not define whether menopause has occurred."
+  },
+  "media": "fig:rp11_axis",
+  "pt": {
+   "hl": [
+    "Diagnosis is clinical: 12 months without menses, median age 51."
+   ],
+   "say": "The bottom note states the diagnosis is clinical: 12 months without menses at a median age of 51, so a laboratory value is not required in a typical woman."
+  }
+ },
+ {
+  "id": "rp11r05",
+  "tags": [
+   "hormone-actions",
+   "feedback-logic"
+  ],
+  "bp": [
+   "BP-rp11-03"
+  ],
+  "obj": [
+   "MENOPAUSE.2"
+  ],
+  "q": "Hot flashes arise when estrogen loss unleashes which group of hypothalamic neurons?",
+  "o": [
+   "Dopamine neurons of the arcuate nucleus",
+   "Oxytocin neurons of the paraventricular nucleus",
+   "KNDy neurons of the arcuate nucleus",
+   "Vasopressin neurons of the supraoptic nucleus",
+   "Somatostatin neurons of the periventricular nucleus"
+  ],
+  "a": 2,
+  "x": "KNDy neurons release kisspeptin, neurokinin B and dynorphin, and estrogen normally holds them in check. When estrogen falls they become overactive, and neurokinin B acting at NK3 receptors narrows the thermoneutral zone, so a tiny rise in core temperature triggers flushing and sweating.",
+  "w": {
+   "Dopamine neurons of the arcuate nucleus": "Tuberoinfundibular dopamine neurons release dopamine into portal blood to restrain prolactin. They do not drive the thermoregulatory flushes.",
+   "Oxytocin neurons of the paraventricular nucleus": "Oxytocin neurons send axons to the posterior pituitary for milk let-down and uterine contraction. They do not control the thermoneutral zone.",
+   "Vasopressin neurons of the supraoptic nucleus": "Supraoptic vasopressin neurons respond to osmolality and blood volume and regulate water retention. They are not the estrogen-restrained population behind flushes.",
+   "Somatostatin neurons of the periventricular nucleus": "Periventricular somatostatin neurons inhibit growth hormone release. They belong to the growth axis, not to the circuit behind hot flashes."
+  },
+  "media": "fig:rp11_axis",
+  "pt": {
+   "hl": [
+    "KNDy neurons overactive"
+   ],
+   "say": "In the hypothalamus box, KNDy neurons are drawn overactive after estrogen is lost, sending neurokinin B to NK3 receptors in the thermoregulatory center and narrowing the thermoneutral zone."
+  }
+ },
+ {
+  "id": "rp11r06",
+  "tags": [
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp11-03"
+  ],
+  "obj": [
+   "MENOPAUSE.2",
+   "MENOPAUSE.3"
+  ],
+  "q": "Loss of estrogen thins the vaginal epithelium and lowers which substrate that lactobacilli convert to lactic acid?",
+  "o": [
+   "Glycogen",
+   "Mucin",
+   "Collagen",
+   "Elastin",
+   "Keratin"
+  ],
+  "a": 0,
+  "x": "Estrogen keeps the vaginal epithelium thick and rich in glycogen, which lactobacilli ferment into lactic acid and hold the pH near 4.5. After menopause the epithelium thins and glycogen falls, so lactic acid falls, the pH rises, and dryness, painful intercourse and recurrent urinary infections follow.",
+  "w": {
+   "Mucin": "Mucin is the glycoprotein of cervical mucus, secreted by endocervical glands. It lubricates but is not what lactobacilli ferment.",
+   "Collagen": "Collagen loss thins the vaginal wall after menopause, but lactobacilli cannot ferment a structural protein. They need a sugar, and the sugar is stored inside epithelial cells.",
+   "Elastin": "Elastin gives the vaginal wall its recoil and declines with age. It is a structural protein with no role as the substrate that keeps the vaginal pH acidic.",
+   "Keratin": "Keratin forms the tough surface layer of the skin, but the vaginal lining is nonkeratinized stratified squamous epithelium. Keratin is a structural protein, not the sugar store for lactic acid."
+  },
+  "media": "fig:rp12_vaginitis",
+  "pt": {
+   "hl": [
+    "Lactobacilli turn glycogen into lactic acid and hold the pH at 3.8 to 4.5."
+   ],
+   "say": "The note at the bottom says lactobacilli turn glycogen into lactic acid and hold the pH at 3.8 to 4.5; with less estrogen there is less glycogen, so that acid supply fails."
+  }
+ },
+ {
+  "id": "rp11r07",
+  "tags": [
+   "bleeding-source",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp11-05"
+  ],
+  "obj": [
+   "MENOPAUSE.11"
+  ],
+  "q": "Postmenopausal bleeding is considered which cancer until proven otherwise?",
+  "o": [
+   "Cervical carcinoma",
+   "Ovarian carcinoma",
+   "Vulvar carcinoma",
+   "Endometrial carcinoma",
+   "Vaginal carcinoma"
+  ],
+  "a": 3,
+  "x": "Endometrial carcinoma is the cancer to exclude: about 90 percent of affected women present with postmenopausal bleeding, and risk rises with obesity, unopposed estrogen and diabetes. Atrophy is the most common cause, but each episode needs transvaginal ultrasound and usually endometrial biopsy.",
+  "w": {
+   "Cervical carcinoma": "Cervical cancer can bleed, often after intercourse, but it is visible at the speculum examination. The cancer to exclude behind bleeding from the uterine cavity is endometrial.",
+   "Ovarian carcinoma": "Ovarian epithelial cancer usually presents late with bloating, pelvic pain or an adnexal mass, not bleeding. An ovarian tumor causes bleeding mainly when it makes estrogen, as a granulosa cell tumor does, by stimulating the endometrium.",
+   "Vulvar carcinoma": "Vulvar cancer appears as a visible itchy or ulcerated lesion on the skin of older women. It bleeds from the surface, not from the uterine cavity.",
+   "Vaginal carcinoma": "Vaginal cancer is rare and seen at the speculum examination. It accounts for a very small share of postmenopausal bleeding compared with disease of the uterine lining."
+  },
+  "media": "fig:rp14_estrogen",
+  "pt": {
+   "hl": [
+    "Presents with bleeding",
+    "Endometrioid grade 1"
+   ],
+   "say": "In the type I carcinoma column, endometrioid cancer is drawn as presenting with bleeding after estrogen-driven hyperplasia, so bleeding in a postmenopausal woman points to endometrial carcinoma first."
+  }
+ },
+ {
+  "id": "rp11r08",
+  "tags": [
+   "unopposed-estrogen",
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp11-06"
+  ],
+  "obj": [
+   "MENOPAUSE.6"
+  ],
+  "q": "Which systemic hormone therapy regimen is appropriate for hot flashes after hysterectomy?",
+  "o": [
+   "Estrogen plus a daily progestin",
+   "Estrogen alone",
+   "Estrogen plus cyclic micronized progesterone",
+   "A progestin alone",
+   "Testosterone alone"
+  ],
+  "a": 1,
+  "x": "Estrogen alone is correct after hysterectomy because no endometrium remains to be stimulated, so a progestogen would add exposure and side effects without benefit. Estrogen without a progestogen in a woman who still has a uterus is the dangerous combination: unopposed estrogen drives endometrial hyperplasia and cancer.",
+  "w": {
+   "Estrogen plus a daily progestin": "A progestin protects the endometrium, which no longer exists after hysterectomy. Adding one brings side effects, and the combination raised breast cancer risk in the Women's Health Initiative, unlike estrogen alone.",
+   "Estrogen plus cyclic micronized progesterone": "Cyclic progesterone for 12 to 14 days a month triggers withdrawal bleeding and protects an intact lining. Without a uterus there is nothing to protect, so the regimen is unnecessary.",
+   "A progestin alone": "Progestins can modestly reduce flushes, but estrogen is the most effective treatment for vasomotor symptoms. A progestin alone would leave bone loss and vaginal atrophy untreated.",
+   "Testosterone alone": "Testosterone does not reliably relieve hot flashes and is not a substitute for estrogen."
+  },
+  "media": "fig:rp11_ht",
+  "pt": {
+   "hl": [
+    "No uterus",
+    "Estrogen alone",
+    "no progestogen"
+   ],
+   "say": "In the right panel, the No uterus column after hysterectomy shows estrogen alone with no progestogen, while the columns with a uterus need a progestogen added."
+  }
+ },
+ {
+  "id": "rp11r09",
+  "tags": [
+   "treatment-sequence",
+   "unopposed-estrogen"
+  ],
+  "bp": [
+   "BP-rp11-16"
+  ],
+  "obj": [
+   "MENOPAUSE.6"
+  ],
+  "q": "Which regimen gives estrogen and progestogen every day, aiming for no bleeding after early spotting?",
+  "o": [
+   "Cyclic estrogen-progestogen therapy",
+   "Estrogen alone",
+   "Low-dose vaginal estrogen",
+   "Transdermal estradiol alone",
+   "Continuous combined therapy"
+  ],
+  "a": 4,
+  "x": "Continuous combined therapy gives estrogen and progestogen every day, so the endometrium stays thin and atrophic. Spotting is common in the first months, but most women then stop bleeding. It suits women more than a year past menopause who prefer to avoid monthly bleeds.",
+  "w": {
+   "Cyclic estrogen-progestogen therapy": "Cyclic therapy adds the progestogen for only 12 to 14 days a month, so the lining builds and then sheds, giving a scheduled withdrawal bleed each month.",
+   "Estrogen alone": "Estrogen without a progestogen stimulates the endometrium continuously and is reserved for women without a uterus. With a uterus it would invite hyperplasia and cancer.",
+   "Low-dose vaginal estrogen": "Low-dose vaginal estrogen is absorbed so little that it needs no progestogen. It treats local dryness only and has no bleeding regimen.",
+   "Transdermal estradiol alone": "A patch avoids first-pass liver exposure, but without a progestogen a woman with a uterus is unprotected. The route and the uterine protection are separate decisions."
+  },
+  "media": "fig:rp11_ht",
+  "pt": {
+   "hl": [
+    "Continuous combined: both every day,",
+    "spotting at first, then usually no bleeding"
+   ],
+   "say": "The bottom note in the right panel reads continuous combined: both every day, spotting at first, then usually no bleeding, so this regimen aims for amenorrhea."
+  }
+ },
+ {
+  "id": "rp11r10",
+  "tags": [
+   "treatment-sequence"
+  ],
+  "bp": [
+   "BP-rp11-16"
+  ],
+  "obj": [
+   "MENOPAUSE.6"
+  ],
+  "q": "In cyclic hormone therapy, a progestogen is added for about how many days each month?",
+  "o": [
+   "3 to 5 days",
+   "7 to 9 days",
+   "12 to 14 days",
+   "20 to 22 days",
+   "Every day"
+  ],
+  "a": 2,
+  "x": "Cyclic regimens give estrogen daily and add a progestogen for 12 to 14 days of each month. The progestogen matures the endometrium, and its withdrawal at the end triggers a scheduled monthly bleed, so the lining is shed regularly instead of growing unopposed.",
+  "w": {
+   "3 to 5 days": "Three to five days is far too short to turn the proliferative lining secretory, so the endometrium would stay exposed to estrogen.",
+   "7 to 9 days": "A week of progestogen gives incomplete endometrial protection. Regimens use at least 12 days each cycle to keep the risk of hyperplasia low.",
+   "20 to 22 days": "Three weeks of progestogen exceeds the need and adds side effects, while protection is already provided at about two weeks.",
+   "Every day": "Daily progestogen is the continuous combined regimen, not the cyclic one. It keeps the lining thin and usually ends bleeding after early spotting."
+  },
+  "media": "fig:rp11_ht",
+  "pt": {
+   "hl": [
+    "Cyclic: progestogen 12 to 14 days a month,"
+   ],
+   "say": "The bottom note in the right panel reads cyclic: progestogen 12 to 14 days a month, then a scheduled withdrawal bleed, so the cyclic regimen adds it for 12 to 14 days."
+  }
+ },
+ {
+  "id": "rp11r11",
+  "tags": [
+   "adverse-effects",
+   "hormone-actions"
+  ],
+  "bp": [
+   "BP-rp11-15"
+  ],
+  "obj": [
+   "MENOPAUSE.6",
+   "MENOPAUSE.8"
+  ],
+  "q": "Which first-pass effect of oral estrogen on the liver best explains its higher venous thromboembolism risk?",
+  "o": [
+   "Greater production of clotting factors",
+   "Greater production of triglyceride-rich VLDL",
+   "Greater cholesterol saturation of bile",
+   "Greater production of SHBG",
+   "Greater production of thyroxine-binding globulin"
+  ],
+  "a": 0,
+  "x": "Swallowed estrogen reaches the liver at high concentration through the portal vein, and the liver answers by making more clotting factors, which explains the higher risk of venous clots. Transdermal estradiol skips this first pass, so the liver sees ordinary levels and clotting proteins change little.",
+  "w": {
+   "Greater production of triglyceride-rich VLDL": "Oral estrogen does raise triglycerides, which is why transdermal estradiol is preferred when they are high. But this is a lipid effect and not how treatment provokes a clot.",
+   "Greater cholesterol saturation of bile": "Bile saturated with cholesterol precipitates gallstones, which is why oral estrogen raises gallbladder disease. It has no part in producing venous clots.",
+   "Greater production of SHBG": "SHBG binds testosterone, so a rise lowers free testosterone. This changes androgen availability but not coagulation.",
+   "Greater production of thyroxine-binding globulin": "Thyroxine-binding globulin binds thyroxine and raises total T4. This thyroid effect is separate from thrombosis."
+  },
+  "media": "fig:rp11_ht",
+  "pt": {
+   "hl": [
+    "Clotting factors up"
+   ],
+   "say": "In the liver box under oral estrogen, clotting factors up is the effect that raises venous clot risk, while triglycerides, SHBG and TBG and gallstones are separate consequences listed beside it."
+  }
+ },
+ {
+  "id": "rp11r12",
+  "tags": [
+   "unopposed-estrogen",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp11-08",
+   "BP-rp11-06"
+  ],
+  "obj": [
+   "MENOPAUSE.13"
+  ],
+  "q": "Why did the Women's Health Initiative give estrogen alone only to women after hysterectomy?",
+  "o": [
+   "Estrogen alone fails to relieve hot flashes with a uterus",
+   "Women with a uterus cannot absorb oral estrogen",
+   "Progestin was needed to prevent breast cancer",
+   "Unopposed estrogen would risk endometrial cancer",
+   "Hysterectomy removes the risk of venous thrombosis"
+  ],
+  "a": 3,
+  "x": "Estrogen alone stimulates the endometrium without opposition and leads to hyperplasia and cancer, so women with a uterus received estrogen plus medroxyprogesterone, while estrogen alone was tested only after hysterectomy. This design explains the divergent results: the estrogen-alone arm did not raise breast cancer, but the combined arm did.",
+  "w": {
+   "Estrogen alone fails to relieve hot flashes with a uterus": "Estrogen relieves vasomotor symptoms whether or not a uterus is present, because the effect is hypothalamic. The uterus affects only the endometrial safety of treatment.",
+   "Women with a uterus cannot absorb oral estrogen": "Absorption of oral estrogen from the gut is unrelated to the uterus. The design choice was about endometrial safety, not pharmacokinetics.",
+   "Progestin was needed to prevent breast cancer": "The progestin protects the endometrium and did not prevent breast cancer. In the combined arm it was linked with more invasive breast cancer than placebo.",
+   "Hysterectomy removes the risk of venous thrombosis": "Hysterectomy does not change venous thrombosis risk. The estrogen-alone arm still showed more stroke and deep vein thrombosis than placebo."
+  },
+  "media": "fig:rp11_ht",
+  "pt": {
+   "hl": [
+    "Uterus present,",
+    "Unopposed",
+    "hyperplasia, cancer"
+   ],
+   "say": "In the right panel, the column for a uterus with estrogen alone is labeled unopposed with hyperplasia and cancer, which is why the trial gave estrogen alone only to women without a uterus."
+  }
+ },
+ {
+  "id": "rp11r13",
+  "tags": [
+   "feedback-logic",
+   "workup-sequence"
+  ],
+  "bp": [
+   "BP-rp11-10"
+  ],
+  "obj": [
+   "MENOPAUSE.12"
+  ],
+  "q": "Hyperprolactinemia can mimic menopause with amenorrhea and hot flashes by suppressing which hypothalamic hormone?",
+  "o": [
+   "TRH",
+   "GnRH",
+   "Dopamine",
+   "CRH",
+   "Somatostatin"
+  ],
+  "a": 1,
+  "x": "Excess prolactin suppresses GnRH pulses, so LH and FSH fall and estradiol falls, producing amenorrhea, hot flashes and vaginal dryness like menopause. Unlike menopause, FSH is low or normal rather than high, and galactorrhea may occur, which is why prolactin is measured along with hCG and TSH when the picture is atypical.",
+  "w": {
+   "TRH": "TRH stimulates TSH and also prolactin, so hypothyroidism can raise prolactin. But prolactin excess does not switch TRH off, and the gonadal axis is what fails.",
+   "Dopamine": "Dopamine is the hypothalamic brake on prolactin. The signal that fails in this case is the gonadotropin-releasing signal, not the brake.",
+   "CRH": "CRH drives ACTH and cortisol, and chronic stress can suppress the reproductive axis. Prolactin excess acts on the GnRH neurons themselves rather than through the stress pathway.",
+   "Somatostatin": "Somatostatin inhibits release of growth hormone and TSH. It is not the signal that prolactin excess suppresses."
+  },
+  "media": "fig:en3_prl",
+  "pt": {
+   "hl": [
+    "Prolactin excess",
+    "GnRH suppressed: low LH and FSH"
+   ],
+   "say": "In the prolactin excess chain, GnRH suppressed with low LH and FSH leads to amenorrhea like menopause, but with a low rather than high FSH, so GnRH is the hormone prolactin excess suppresses."
+  }
+ },
+ {
+  "id": "rp11r14",
+  "tags": [
+   "adverse-effects",
+   "risk-factors"
+  ],
+  "bp": [
+   "BP-rp11-07"
+  ],
+  "obj": [
+   "MENOPAUSE.6",
+   "MENOPAUSE.8"
+  ],
+  "q": "Which history is a contraindication to systemic menopausal hormone therapy?",
+  "o": [
+   "Osteopenia on bone density testing",
+   "Migraine without aura",
+   "Primary ovarian insufficiency at age 35",
+   "Well-controlled hypertension",
+   "Previous venous thromboembolism"
+  ],
+  "a": 4,
+  "x": "A previous venous thromboembolism is a contraindication to systemic hormone therapy because estrogen increases clotting factor production and can provoke another clot. Other contraindications are breast or endometrial cancer, stroke or coronary disease, active liver disease, unexplained vaginal bleeding and pregnancy.",
+  "w": {
+   "Osteopenia on bone density testing": "Low bone density is a reason to consider estrogen, which prevents bone loss, though bisphosphonates are first-line when osteoporosis is the only problem. It does not prohibit hormone therapy.",
+   "Migraine without aura": "Migraine without aura does not forbid estrogen. It is aura that raises the stroke concern, and transdermal delivery gives steadier hormone levels.",
+   "Primary ovarian insufficiency at age 35": "Primary ovarian insufficiency is a strong indication, since replacement protects bone and heart until the usual age of menopause.",
+   "Well-controlled hypertension": "Blood pressure should be controlled before starting systemic therapy, but treated, stable hypertension is not a contraindication."
+  },
+  "media": "fig:rp11_bonewhi",
+  "pt": {
+   "hl": [
+    "Venous thromboembolism,"
+   ],
+   "say": "The Women's Health Initiative panel lists venous thromboembolism among the events that estrogen plus medroxyprogesterone raised, which is why a previous venous thromboembolism rules out systemic hormone therapy."
+  }
+ },
+ {
+  "id": "rp11r15",
+  "tags": [
+   "hormone-source",
+   "hormone-synthesis"
+  ],
+  "bp": [
+   "BP-rp11-01"
+  ],
+  "obj": [
+   "MENOPAUSE.1"
+  ],
+  "q": "After menopause, which ovarian compartment still secretes the androgens that fat converts to estrone?",
+  "o": [
+   "Granulosa cells",
+   "Corpus luteum",
+   "Ovarian stroma",
+   "Primordial follicles",
+   "Oocytes"
+  ],
+  "a": 2,
+  "x": "After menopause the follicles are gone, but the ovarian stroma keeps secreting androstenedione and testosterone under high LH. Adipose aromatase turns androstenedione into estrone, which becomes the main estrogen, so women with more body fat keep more estrogen and face more endometrial risk.",
+  "w": {
+   "Granulosa cells": "Granulosa cells sit inside follicles and make estradiol, inhibin B and AMH under FSH. Once the follicles are gone these cells vanish with them.",
+   "Corpus luteum": "The corpus luteum forms from a ruptured follicle after ovulation and secretes progesterone. Without ovulation after menopause no corpus luteum forms.",
+   "Primordial follicles": "Primordial follicles are the resting reserve of immature oocytes, and their depletion causes menopause. They make no meaningful androgen.",
+   "Oocytes": "Oocytes are the germ cells arrested in meiosis within follicles, and they are depleted by menopause. They do not secrete steroid hormones."
+  },
+  "media": "fig:rp11_axis",
+  "pt": {
+   "hl": [
+    "Stroma still makes androgens"
+   ],
+   "say": "In the ovary box, stroma still makes androgens after the follicles are depleted, and the adipose box shows androstenedione from adrenal and ovarian stroma becoming estrone."
+  }
+ }
+]

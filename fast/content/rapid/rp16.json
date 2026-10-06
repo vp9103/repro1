@@ -22,6 +22,14 @@
    "Glycogen inclusion": "The inclusion is the pocket in the cell where reticulate bodies multiply, and its glycogen stains brown with iodine. It is a diagnostic clue, not an infectious particle.",
    "Endospore": "Endospores are dormant, heat-resistant forms made by Clostridium and Bacillus. Chlamydiae never form spores, even though elementary bodies are hardy.",
    "Pseudohypha": "Pseudohyphae are chains of elongated budding yeast, the tissue form of Candida. They are not a bacterial structure."
+  },
+  "media": "fig:rp16_bugs",
+  "pt": {
+   "hl": [
+    "Elementary body",
+    "infectious form that enters"
+   ],
+   "say": "In the chlamydia row, the elementary body is the infectious form that enters the cell and does not divide; the reticulate body is the dividing form."
   }
  },
  {
@@ -47,6 +55,13 @@
    "Lactose": "Lactose fermentation separates coliforms such as E. coli on MacConkey agar. Neither pathogenic Neisseria species ferments lactose.",
    "Sucrose": "Neither the gonococcus nor the meningococcus ferments sucrose, so the result gives no way to tell them apart.",
    "Fructose": "Fructose is not part of the standard Neisseria sugar panel. The pair that separates these two species is glucose and maltose."
+  },
+  "media": "fig:rp16_bugs",
+  "pt": {
+   "hl": [
+    "Ferments glucose but not maltose"
+   ],
+   "say": "The gonococcus row reads ferments glucose but not maltose, which is the sugar the gonococcus fails to ferment, unlike the meningococcus."
   }
  },
  {
@@ -72,6 +87,13 @@
    "Bordet-Gengou agar": "Bordet-Gengou agar is the classic medium for Bordetella pertussis from nasopharyngeal swabs, not for genital specimens.",
    "Buffered charcoal yeast extract": "Buffered charcoal yeast extract grows Legionella from respiratory samples. It is not used to isolate genital pathogens.",
    "Lowenstein-Jensen medium": "Lowenstein-Jensen is an egg-based medium for slow-growing Mycobacterium tuberculosis, which takes weeks to form colonies."
+  },
+  "media": "fig:rp16_bugs",
+  "pt": {
+   "hl": [
+    "Grows on Thayer-Martin agar"
+   ],
+   "say": "The gonococcus row says it grows on Thayer-Martin agar, the selective medium for Neisseria gonorrhoeae from a genital swab."
   }
  },
  {
@@ -98,6 +120,13 @@
    "Ceftriaxone": "Ceftriaxone treats gonorrhea. Beta-lactams do not work against chlamydia, whose wall contains almost no peptidoglycan.",
    "Benzathine penicillin G once": "Benzathine penicillin treats syphilis. Like other beta-lactams, it has no reliable activity against chlamydiae.",
    "Metronidazole": "Metronidazole treats trichomoniasis, bacterial vaginosis and anaerobes. It has no activity against obligate intracellular chlamydiae."
+  },
+  "media": "fig:rp16_treat",
+  "pt": {
+   "hl": [
+    "Doxycycline for 7 days"
+   ],
+   "say": "In the chlamydia row, doxycycline for 7 days is the preferred drug for an uncomplicated infection, with azithromycin used in pregnancy instead."
   }
  },
  {
@@ -124,6 +153,13 @@
    "Ciprofloxacin": "Fluoroquinolone resistance became widespread in gonococci, so ciprofloxacin is used only when susceptibility is proven.",
    "Doxycycline": "Doxycycline treats chlamydia and is added when chlamydial coinfection has not been ruled out. Tetracycline-resistant gonococci are common.",
    "Benzathine penicillin G": "Gonococci make beta-lactamase and altered penicillin-binding proteins, so penicillin fails. Benzathine penicillin is the syphilis treatment."
+  },
+  "media": "fig:rp16_treat",
+  "pt": {
+   "hl": [
+    "Ceftriaxone, a cephalosporin"
+   ],
+   "say": "The gonorrhea row gives one drug, ceftriaxone, because gonococci resist penicillin and fluoroquinolones."
   }
  },
  {
@@ -385,6 +421,14 @@
    "Serum sickness": "Serum sickness is an immune complex reaction with fever, rash and joint pain 1 to 2 weeks after exposure to a drug or foreign protein.",
    "Red man syndrome": "Red man syndrome is flushing during fast vancomycin infusion, caused by direct histamine release from mast cells.",
    "Disulfiram-like reaction": "A disulfiram-like reaction (flushing, vomiting) is classically linked to alcohol with metronidazole or some cephalosporins, not with penicillin."
+  },
+  "media": "fig:rp16_treat",
+  "pt": {
+   "hl": [
+    "Jarisch-Herxheimer reaction",
+    "Fever and muscle aches"
+   ],
+   "say": "The last row shows the Jarisch-Herxheimer reaction after the first penicillin dose, with fever and muscle aches from dying spirochetes."
   }
  },
  {
@@ -411,6 +455,14 @@
    "Trichomonas vaginalis": "Trichomonas can cause urethritis in men, but it is a flagellated protozoan treated with metronidazole. It is not the classic cause of doxycycline failure.",
    "Chlamydia trachomatis": "Chlamydia is the commonest cause of nongonococcal urethritis, but it responds reliably to doxycycline, so it is unlikely to persist after treatment.",
    "Gardnerella vaginalis": "Gardnerella causes bacterial vaginosis in women, with clue cells and a fishy odor. It is not a cause of persistent urethritis in men."
+  },
+  "media": "fig:rp16_bugs",
+  "pt": {
+   "hl": [
+    "No cell wall at all",
+    "Suspect it when urethritis persists"
+   ],
+   "say": "The Mycoplasma genitalium row says it has no cell wall at all, so beta-lactams cannot work, and to suspect it when urethritis persists after doxycycline."
   }
  }
 ]

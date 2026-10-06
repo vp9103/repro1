@@ -70,7 +70,15 @@
     ]
    ]
   ],
-  "bl": "Chlamydia's infectious form is the elementary body; the reticulate body replicates inside the inclusion but cannot infect."
+  "bl": "Chlamydia's infectious form is the elementary body; the reticulate body replicates inside the inclusion but cannot infect.",
+  "ef": "rp16_bugs",
+  "pt": {
+   "hl": [
+    "Elementary body",
+    "infectious form that enters"
+   ],
+   "say": "Read the chlamydia row: the elementary body is the tough, infectious form that enters the cell, while the reticulate body only divides inside it."
+  }
  },
  {
   "id": "rp16q02",
@@ -139,7 +147,15 @@
     ]
    ]
   ],
-  "bl": "Gonococcal pili undergo antigenic variation, so a prior infection leaves no protective immunity and no vaccine exists."
+  "bl": "Gonococcal pili undergo antigenic variation, so a prior infection leaves no protective immunity and no vaccine exists.",
+  "ef": "rp16_bugs",
+  "pt": {
+   "hl": [
+    "Pili keep changing their antigens",
+    "no lasting immunity and no vaccine"
+   ],
+   "say": "In the gonococcus row, the pili keep changing their antigens, so antibody from the first infection misses the new pili: antigenic variation of its pili explains reinfection."
+  }
  },
  {
   "id": "rp16q03",
@@ -208,7 +224,15 @@
     ]
    ]
   ],
-  "bl": "Recurrent or disseminated Neisseria infections suggest terminal complement C5–C9 deficiency, because the membrane attack complex kills Neisseria."
+  "bl": "Recurrent or disseminated Neisseria infections suggest terminal complement C5–C9 deficiency, because the membrane attack complex kills Neisseria.",
+  "ef": "rp16_bugs",
+  "pt": {
+   "hl": [
+    "Lacking complement C5 to C9",
+    "recurrent Neisseria infections"
+   ],
+   "say": "The gonococcus row links lacking complement C5 to C9 with recurrent Neisseria infections, so deficiency of complement C5 to C9 explains her meningococcal and gonococcal disease."
+  }
  },
  {
   "id": "rp16q04",
@@ -360,7 +384,15 @@
     ]
    ]
   ],
-  "bl": "Outpatient PID needs ceftriaxone plus doxycycline plus metronidazole to cover the gonococcus, chlamydia and anaerobes."
+  "bl": "Outpatient PID needs ceftriaxone plus doxycycline plus metronidazole to cover the gonococcus, chlamydia and anaerobes.",
+  "ef": "rp16_treat",
+  "pt": {
+   "hl": [
+    "Ceftriaxone, doxycycline and",
+    "metronidazole"
+   ],
+   "say": "In the pelvic inflammatory disease row, ceftriaxone covers the gonococcus, doxycycline covers chlamydia and metronidazole covers anaerobes, so all three drugs are given together."
+  }
  },
  {
   "id": "rp16q06",
@@ -673,7 +705,15 @@
     ]
    ]
   ],
-  "bl": "Syphilis in a penicillin-allergic pregnant patient requires desensitization and then benzathine penicillin G, the only drug proven to treat the fetus."
+  "bl": "Syphilis in a penicillin-allergic pregnant patient requires desensitization and then benzathine penicillin G, the only drug proven to treat the fetus.",
+  "ef": "rp16_treat",
+  "pt": {
+   "hl": [
+    "Pregnant with penicillin allergy",
+    "desensitize, then give penicillin"
+   ],
+   "say": "The syphilis row says that in a pregnant patient with penicillin allergy, you desensitize and then give penicillin, because only penicillin reliably treats the fetus."
+  }
  },
  {
   "id": "rp16q10",
@@ -745,7 +785,16 @@
     ]
    ]
   ],
-  "bl": "Sexually active women younger than 25 get yearly chlamydia and gonorrhea screening by nucleic acid amplification test of a vaginal swab."
+  "bl": "Sexually active women younger than 25 get yearly chlamydia and gonorrhea screening by nucleic acid amplification test of a vaginal swab.",
+  "ef": "rp16_treat",
+  "pt": {
+   "hl": [
+    "Nucleic acid amplification test",
+    "(NAAT)",
+    "Vaginal swab is acceptable"
+   ],
+   "say": "The screening row names the nucleic acid amplification test, done on a vaginal swab every year for sexually active women under 25, because Gram stain and culture miss most silent cervical infections."
+  }
  },
  {
   "id": "rp16q11",
@@ -815,7 +864,15 @@
     ]
    ]
   ],
-  "bl": "Chlamydia's cell wall has little peptidoglycan, so beta-lactams fail and nongonococcal urethritis is treated with doxycycline."
+  "bl": "Chlamydia's cell wall has little peptidoglycan, so beta-lactams fail and nongonococcal urethritis is treated with doxycycline.",
+  "ef": "rp16_bugs",
+  "pt": {
+   "hl": [
+    "Little peptidoglycan in the cell wall",
+    "have no target"
+   ],
+   "say": "The chlamydia row shows why cephalexin failed: the cell wall has little peptidoglycan, so beta-lactams have no target, while doxycycline works inside cells."
+  }
  },
  {
   "id": "rp16q12",

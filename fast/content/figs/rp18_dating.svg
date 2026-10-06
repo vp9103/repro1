@@ -1,0 +1,40 @@
+<svg class="dia" viewBox="0 0 900 635" role="img" aria-label="Timeline of antibody after a new infection: IgM appears first and can linger for months, IgG appears next and stays, and IgG avidity rises from low to high as the response matures; a high-avidity IgG in the first trimester means the infection began before pregnancy, while low avidity means a recent primary infection">
+<text class="ttl" x="14" y="26" font-size="17">Dating a maternal infection: antibody rise, avidity and the first-trimester reading</text>
+<rect x="14" y="44" width="872" height="300" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text class="b" x="28" y="72" font-size="15">Antibody after a new infection</text>
+<line x1="50" y1="312" x2="866" y2="312" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="874,312 866,308 866,316" fill="var(--ink-2)"/>
+<path d="M50 312 L178 312 C230 306 290 215 380 165 C440 134 500 126 560 124 L850 124" fill="none" stroke="var(--a1)" stroke-width="3.5"/>
+<path d="M50 312 C120 312 150 312 182 288 C215 238 240 118 300 114 C360 110 392 190 460 250 C530 292 620 304 700 308 L850 310" fill="none" stroke="var(--a2)" stroke-width="3.5" stroke-dasharray="9 5"/>
+<text class="a1" x="574" y="104" font-size="14">IgG: appears next and stays</text>
+<text class="a2" x="480" y="214" font-size="14">IgM: appears first and can</text>
+<text class="a2" x="480" y="234" font-size="14">linger for months</text>
+<text class="s" x="58" y="338" font-size="13">Infection</text>
+<text class="s" x="214" y="338" font-size="13">Weeks</text>
+<text class="s" x="560" y="338" font-size="13">Months</text>
+<text class="b" x="14" y="364" font-size="15">IgG avidity: how tightly the antibody binds</text>
+<rect x="14" y="376" width="430" height="70" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<text class="b" x="28" y="404" font-size="16">Low-avidity IgG</text>
+<text x="28" y="430" font-size="14">Recent primary infection</text>
+<rect x="456" y="376" width="430" height="70" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="470" y="404" font-size="16">High-avidity IgG</text>
+<text x="470" y="430" font-size="14">Older infection: months old</text>
+<line x1="440" y1="411" x2="460" y2="411" stroke="var(--ink-2)" stroke-width="2"/>
+<polygon points="466,411 460,414.6 460,407.4" fill="var(--ink-2)"/>
+<text class="b" x="14" y="470" font-size="15">In the first trimester, read the result this way</text>
+<rect x="14" y="480" width="872" height="45" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="480" width="250" height="45" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<line x1="264" y1="480" x2="264" y2="525" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="506" font-size="15">High-avidity IgG</text>
+<text x="276" y="506" font-size="14">At least several months old: it began before pregnancy</text>
+<rect x="14" y="531" width="872" height="45" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="531" width="250" height="45" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<line x1="264" y1="531" x2="264" y2="576" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="557" font-size="15">Low-avidity IgG with IgM</text>
+<text x="276" y="557" font-size="14">Recent primary infection: it may have happened in pregnancy</text>
+<rect x="14" y="582" width="872" height="45" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="582" width="250" height="45" rx="8" fill="var(--surface-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<line x1="264" y1="582" x2="264" y2="627" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="608" font-size="15">IgM alone</text>
+<text x="276" y="608" font-size="14">Very early infection or a false-positive IgM: repeat IgG in 2 to 3 weeks</text>
+</svg>

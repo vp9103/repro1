@@ -260,6 +260,13 @@
    "Total lung capacity": "The rib cage flares outward and offsets the higher diaphragm, so total lung capacity changes very little.",
    "Forced vital capacity": "Forced vital capacity stays essentially unchanged in pregnancy, so it is not the measure that falls by about 20 percent.",
    "Minute ventilation": "Minute ventilation rises by about 30 to 40 percent, because tidal volume increases while the respiratory rate barely changes."
+  },
+  "media": "fig:rp25_lungs",
+  "pt": {
+   "hl": [
+    "FRC down about 20%"
+   ],
+   "say": "In the lung volume panel, functional residual capacity (FRC) is the measure that falls about 20 percent, as the diaphragm is pushed up by the uterus."
   }
  },
  {
@@ -288,6 +295,14 @@
    "Metabolic acidosis with high anion gap": "A high gap signals added acid, such as ketones in diabetic ketoacidosis. The low bicarbonate of pregnancy is renal compensation.",
    "Metabolic alkalosis with high bicarbonate": "Vomiting in hyperemesis gravidarum causes a hypokalemic metabolic alkalosis, but normal pregnancy lowers bicarbonate rather than raising it.",
    "Mixed respiratory and metabolic acidosis": "A mixed acidosis follows cardiopulmonary arrest or severe sepsis. The normal pregnant pH is slightly alkaline, about 7.44."
+  },
+  "media": "fig:rp25_lungs",
+  "pt": {
+   "hl": [
+    "Compensated",
+    "respiratory alkalosis"
+   ],
+   "say": "The arterial blood gas panel reads compensated respiratory alkalosis, with PaCO2 about 30 mm Hg, bicarbonate about 20 and pH 7.40 to 7.45."
   }
  },
  {
@@ -317,6 +332,14 @@
    "It stays constant": "Creatinine clearance increases by about half, so an unchanged creatinine means filtration has failed to rise as it should.",
    "It rises only near term": "GFR begins to rise within weeks of conception and stays high. Late creatinine rises point to disease such as preeclampsia.",
    "It doubles": "Doubling would mean losing half of kidney function. Pregnancy does the reverse, lowering creatinine by increasing filtration."
+  },
+  "media": "fig:rp25_renal",
+  "pt": {
+   "hl": [
+    "Both fall; a creatinine of 1.0 mg/dL",
+    "Renal plasma flow and GFR rise about"
+   ],
+   "say": "In the creatinine row, serum creatinine falls in a normal pregnancy because renal plasma flow and GFR rise about 50 percent."
   }
  },
  {
@@ -377,6 +400,14 @@
    "Gamma-glutamyl transferase": "GGT is unchanged or slightly lower in pregnancy, which helps show that a high alkaline phosphatase is placental, not biliary.",
    "Aspartate aminotransferase": "AST, like ALT, stays in the normal range in pregnancy. Elevation with low platelets and hemolysis suggests HELLP syndrome.",
    "Lactate dehydrogenase": "LDH rises sharply with hemolysis or tissue injury, as in HELLP syndrome, rather than from placental production in a healthy pregnancy."
+  },
+  "media": "fig:rp25_renal",
+  "pt": {
+   "hl": [
+    "Alkaline",
+    "Doubles or triples without liver"
+   ],
+   "say": "The alkaline phosphatase row shows it doubles or triples without liver disease, because the placenta makes the enzyme."
   }
  },
  {
@@ -405,6 +436,14 @@
    "Prolactin": "Prolactin rises steadily to prepare the breast for lactation, but it has no effect on pelvic joints.",
    "Human placental lactogen": "hPL shifts maternal fuel use toward fat and away from glucose. It causes insulin resistance, not ligament laxity.",
    "Estriol": "Estriol is the main placental estrogen and raises liver proteins and uterine blood flow, but the ligament loosening is relaxin's effect."
+  },
+  "media": "fig:rp25_renal",
+  "pt": {
+   "hl": [
+    "Pelvic ligaments",
+    "Relaxin from the corpus luteum and"
+   ],
+   "say": "In the pelvic ligaments row, relaxin from the corpus luteum and placenta loosens the pubic symphysis and pelvic ligaments."
   }
  }
 ]

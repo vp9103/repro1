@@ -784,7 +784,15 @@
     ]
    ]
   ],
-  "bl": "Corpora amylacea are laminated concretions of condensed secretions in prostatic glands of older men and help tell prostate from seminal vesicle."
+  "bl": "Corpora amylacea are laminated concretions of condensed secretions in prostatic glands of older men and help tell prostate from seminal vesicle.",
+  "ef": "rp21_histology",
+  "pt": {
+   "hl": [
+    "Corpora amylacea in older men",
+    "Large glands, papillary infolding"
+   ],
+   "say": "In the normal gland column, large glands with papillary infolding and two cell layers hold corpora amylacea in older men: the round, laminated concretions of condensed secretions."
+  }
  },
  {
   "id": "rp19q11",
@@ -859,6 +867,15 @@
     ]
    ]
   ],
-  "bl": "The epididymis is a coiled duct with stereocilia and a thin muscle coat where sperm mature and are stored."
+  "bl": "The epididymis is a coiled duct with stereocilia and a thin muscle coat where sperm mature and are stored.",
+  "ef": "rp19_route",
+  "pt": {
+   "hl": [
+    "Epididymis",
+    "Tall pseudostratified",
+    "stereocilia, and a thin circular"
+   ],
+   "say": "In the path of the sperm, the epididymis is the duct lined by tall pseudostratified columnar cells with stereocilia and only a thin circular muscle layer, unlike the thick-walled ductus deferens."
+  }
  }
 ]

@@ -1,0 +1,92 @@
+<svg class="dia" viewBox="0 0 900 692" role="img" aria-label="Antiretroviral drugs and their signature toxicities: abacavir hypersensitivity with HLA-B*57:01, zidovudine marrow suppression, tenofovir kidney and bone injury, stavudine and didanosine mitochondrial polymerase gamma toxicity with lactic acidosis, ritonavir boosting through CYP3A4; and prevention with tenofovir plus emtricitabine PrEP, three-drug PEP, and zidovudine with cesarean at delivery">
+<text class="ttl" x="14" y="26" font-size="17">Antiretroviral drugs: what each one costs, and how the same drugs prevent infection</text>
+<text class="s" x="26" y="60" font-size="14">Drug</text>
+<text class="s" x="256" y="60" font-size="14">What it does</text>
+<text class="s" x="518" y="60" font-size="14">What to watch for</text>
+<rect x="14" y="72" width="872" height="69" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="72" width="230" height="69" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<line x1="244" y1="72" x2="244" y2="141" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="506" y1="72" x2="506" y2="141" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="98" font-size="15">Abacavir</text>
+<text x="26" y="123" font-size="14">NRTI</text>
+<circle cx="259" cy="93" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="270" y="98" font-size="14">Chain terminator</text>
+<circle cx="521" cy="93" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="532" y="98" font-size="14">Hypersensitivity in HLA-B*57:01 carriers</text>
+<circle cx="521" cy="117" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="532" y="122" font-size="14">Test before the first dose</text>
+<rect x="14" y="147" width="872" height="69" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="147" width="230" height="69" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<line x1="244" y1="147" x2="244" y2="216" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="506" y1="147" x2="506" y2="216" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="173" font-size="15">Zidovudine</text>
+<text x="26" y="198" font-size="14">NRTI</text>
+<circle cx="259" cy="168" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="270" y="173" font-size="14">Chain terminator</text>
+<circle cx="521" cy="168" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="532" y="173" font-size="14">Bone marrow suppression, macrocytic</text>
+<text x="532" y="193" font-size="14">anemia</text>
+<rect x="14" y="222" width="872" height="69" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="222" width="230" height="69" rx="8" fill="var(--a1-soft)" stroke="var(--a1)" stroke-width="1.5"/>
+<line x1="244" y1="222" x2="244" y2="291" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="506" y1="222" x2="506" y2="291" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="248" font-size="15">Tenofovir</text>
+<text x="26" y="273" font-size="14">NRTI, a nucleotide</text>
+<circle cx="259" cy="243" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="270" y="248" font-size="14">Chain terminator</text>
+<circle cx="521" cy="243" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="532" y="248" font-size="14">Kidney tubule injury and bone loss</text>
+<rect x="14" y="297" width="872" height="69" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="297" width="230" height="69" rx="8" fill="var(--crit-soft)" stroke="var(--crit)" stroke-width="1.5"/>
+<line x1="244" y1="297" x2="244" y2="366" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="506" y1="297" x2="506" y2="366" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="323" font-size="15">Stavudine, didanosine</text>
+<text x="26" y="348" font-size="14">older NRTIs</text>
+<circle cx="259" cy="318" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="270" y="323" font-size="14">Also block mitochondrial</text>
+<text x="270" y="343" font-size="14">DNA polymerase gamma</text>
+<circle cx="521" cy="318" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="532" y="323" font-size="14">Lactic acidosis, hepatic steatosis,</text>
+<text x="532" y="343" font-size="14">pancreatitis, neuropathy</text>
+<rect x="14" y="372" width="872" height="88" rx="8" fill="var(--surface)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<rect x="14" y="372" width="230" height="88" rx="8" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+<line x1="244" y1="372" x2="244" y2="460" stroke="var(--line-strong)" stroke-width="1"/>
+<line x1="506" y1="372" x2="506" y2="460" stroke="var(--line-strong)" stroke-width="1"/>
+<text class="b" x="26" y="398" font-size="15">Ritonavir</text>
+<text x="26" y="423" font-size="14">low-dose booster</text>
+<circle cx="259" cy="393" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="270" y="398" font-size="14">Inhibits CYP3A4, the liver</text>
+<text x="270" y="418" font-size="14">enzyme that clears protease</text>
+<text x="270" y="438" font-size="14">inhibitors</text>
+<circle cx="521" cy="393" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="532" y="398" font-size="14">Raises the partner drug level</text>
+<circle cx="521" cy="417" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="532" y="422" font-size="14">Many drug interactions; rifampin lowers</text>
+<text x="532" y="442" font-size="14">protease inhibitor levels</text>
+<text class="b" x="14" y="488" font-size="16">The same drugs, used to prevent infection</text>
+<rect x="14" y="500" width="286" height="186" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="26" y="529" font-size="15">Before exposure: PrEP</text>
+<circle cx="29" cy="549" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="40" y="554" font-size="14">Tenofovir with emtricitabine,</text>
+<text x="40" y="574" font-size="14">daily</text>
+<circle cx="29" cy="593" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="40" y="598" font-size="14">Or injected cabotegravir</text>
+<circle cx="29" cy="617" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="40" y="622" font-size="14">Negative HIV test first</text>
+<rect x="307" y="500" width="286" height="186" rx="8" fill="var(--a2-soft)" stroke="var(--a2)" stroke-width="1.5"/>
+<text class="b" x="319" y="529" font-size="15">After exposure: PEP</text>
+<circle cx="322" cy="549" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="333" y="554" font-size="14">Three drugs for 28 days</text>
+<circle cx="322" cy="573" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="333" y="578" font-size="14">Start within 72 hours</text>
+<rect x="600" y="500" width="286" height="186" rx="8" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.5"/>
+<text class="b" x="612" y="529" font-size="15">At delivery</text>
+<circle cx="615" cy="549" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="626" y="554" font-size="14">High viral load near delivery:</text>
+<text x="626" y="574" font-size="14">scheduled cesarean at 38</text>
+<text x="626" y="594" font-size="14">weeks and IV zidovudine in</text>
+<text x="626" y="614" font-size="14">labor</text>
+<circle cx="615" cy="633" r="3" fill="var(--ink-2)" stroke="var(--line-strong)" stroke-width="1.5"/>
+<text x="626" y="638" font-size="14">Newborn takes zidovudine for</text>
+<text x="626" y="658" font-size="14">several weeks</text>
+</svg>

@@ -636,7 +636,16 @@
     ]
    ]
   ],
-  "bl": "Bleeding with an open internal os and the gestation still inside the uterus is an inevitable abortion; the loss cannot be stopped."
+  "bl": "Bleeding with an open internal os and the gestation still inside the uterus is an inevitable abortion; the loss cannot be stopped.",
+  "ef": "rp26_loss",
+  "pt": {
+   "hl": [
+    "Inevitable",
+    "None yet",
+    "The loss cannot be stopped"
+   ],
+   "say": "In the inevitable row, the cervical os is open but no tissue has passed yet, so the loss cannot be stopped: inevitable abortion."
+  }
  },
  {
   "id": "rp26q09",
@@ -781,7 +790,15 @@
     ]
    ]
   ],
-  "bl": "Antiphospholipid syndrome causing recurrent loss is treated with low-dose aspirin plus heparin; warfarin is avoided because it is teratogenic."
+  "bl": "Antiphospholipid syndrome causing recurrent loss is treated with low-dose aspirin plus heparin; warfarin is avoided because it is teratogenic.",
+  "ef": "rp26_loss",
+  "pt": {
+   "hl": [
+    "Antiphospholipid",
+    "Low-dose aspirin plus heparin in"
+   ],
+   "say": "The antiphospholipid syndrome row links clots in the placenta to repeated loss, and treats the next pregnancy with low-dose aspirin plus heparin."
+  }
  },
  {
   "id": "rp26q11",

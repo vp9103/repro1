@@ -228,7 +228,16 @@
     ]
    ]
   ],
-  "bl": "Pregnancy causes a compensated respiratory alkalosis because progesterone raises the respiratory center's sensitivity to carbon dioxide."
+  "bl": "Pregnancy causes a compensated respiratory alkalosis because progesterone raises the respiratory center's sensitivity to carbon dioxide.",
+  "ef": "rp25_lungs",
+  "pt": {
+   "hl": [
+    "Hormonal: progesterone",
+    "more sensitive to CO2",
+    "PaCO2 about 30 mm Hg"
+   ],
+   "say": "In the hormonal row, progesterone raises ventilatory drive by making the respiratory center more sensitive to CO2, so PaCO2 falls to about 30 mm Hg."
+  }
  },
  {
   "id": "rp25q04",
@@ -293,7 +302,15 @@
     ]
    ]
   ],
-  "bl": "Functional residual capacity falls about 20 percent in pregnancy because the uterus elevates the diaphragm. Total lung capacity barely changes."
+  "bl": "Functional residual capacity falls about 20 percent in pregnancy because the uterus elevates the diaphragm. Total lung capacity barely changes.",
+  "ef": "rp25_lungs",
+  "pt": {
+   "hl": [
+    "FRC and residual volume down",
+    "FRC down about 20%"
+   ],
+   "say": "In the lung volumes, the functional residual capacity (FRC) falls about 20 percent, because the growing uterus pushes the diaphragm up, while total lung capacity stays nearly the same."
+  }
  },
  {
   "id": "rp25q05",
@@ -445,7 +462,15 @@
     ]
    ]
   ],
-  "bl": "GFR rises 50 percent in pregnancy, so a creatinine of 1.0 mg/dL is higher than expected and suggests reduced renal function."
+  "bl": "GFR rises 50 percent in pregnancy, so a creatinine of 1.0 mg/dL is higher than expected and suggests reduced renal function.",
+  "ef": "rp25_renal",
+  "pt": {
+   "hl": [
+    "Both fall; a creatinine of 1.0 mg/dL",
+    "already suggests reduced function"
+   ],
+   "say": "In the creatinine row, a creatinine of 1.0 mg/dL, normal before pregnancy, is higher than expected and suggests reduced renal function, because filtration rises and creatinine normally falls."
+  }
  },
  {
   "id": "rp25q07",
@@ -516,7 +541,15 @@
     ]
    ]
   ],
-  "bl": "Glucosuria is normal in pregnancy when filtered glucose exceeds tubular reabsorption because GFR has risen about 50 percent."
+  "bl": "Glucosuria is normal in pregnancy when filtered glucose exceeds tubular reabsorption because GFR has risen about 50 percent.",
+  "ef": "rp25_renal",
+  "pt": {
+   "hl": [
+    "Glucosuria without hyperglycemia",
+    "Filtered glucose exceeds proximal"
+   ],
+   "say": "The urine glucose row explains glucosuria without hyperglycemia: the filtered glucose load exceeds proximal tubular reabsorption."
+  }
  },
  {
   "id": "rp25q08",
@@ -588,7 +621,16 @@
     ]
    ]
   ],
-  "bl": "Progesterone and uterine compression cause ureteral dilation with urinary stasis, so bacteriuria ascends and pyelonephritis is more common in pregnancy."
+  "bl": "Progesterone and uterine compression cause ureteral dilation with urinary stasis, so bacteriuria ascends and pyelonephritis is more common in pregnancy.",
+  "ef": "rp25_renal",
+  "pt": {
+   "hl": [
+    "Physiologic hydroureter and",
+    "Urinary stasis: pyelonephritis is more",
+    "Progesterone relaxes ureteral muscle"
+   ],
+   "say": "In the ureters row, progesterone and uterine compression cause ureteral dilation with urinary stasis, which lets bacteria ascend and makes pyelonephritis more common."
+  }
  },
  {
   "id": "rp25q09",
@@ -747,7 +789,15 @@
     ]
    ]
   ],
-  "bl": "In the first trimester, peak hCG stimulating the TSH receptor lowers TSH slightly. Thyroxine-binding globulin raises total T4 only."
+  "bl": "In the first trimester, peak hCG stimulating the TSH receptor lowers TSH slightly. Thyroxine-binding globulin raises total T4 only.",
+  "ef": "rp25_renal",
+  "pt": {
+   "hl": [
+    "TSH can dip in the first trimester",
+    "Peak hCG weakly stimulates the TSH"
+   ],
+   "say": "In the thyroid tests row, peak hCG weakly stimulates the TSH receptor, so TSH can dip in the first trimester while free T4 stays normal."
+  }
  },
  {
   "id": "rp25q11",
