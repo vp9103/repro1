@@ -1,0 +1,64 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.5-flash",
+ "key": "rp19_spermatogenesis",
+ "image_sha": "eda5adb8dd9ccb72",
+ "at": "2026-10-06 02:28:05",
+ "ann": [
+  {
+   "k": "arrow",
+   "x": 35.0,
+   "y": 48.0,
+   "tx": 28.0,
+   "ty": 52.0,
+   "px": 28.0,
+   "py": 52.0,
+   "l": "Basement membrane and wall: a thin pink line with flat, dark spindle nuclei runs diagonally from the upper right to the lower left along the edge of the tubule. Contractile peritubular myoid cells in this wall squeeze sperm toward the rete testis."
+  },
+  {
+   "k": "e",
+   "x": 56.0,
+   "y": 42.0,
+   "rx": 4.0,
+   "ry": 4.0,
+   "px": 52.0,
+   "py": 42.0,
+   "l": "Primary spermatocytes: just inside the wall, across the middle of the epithelium, large round nuclei with coarse, clumped chromatin are the biggest germ cells, caught in the long prophase of meiosis I. Small spermatogonia lie against the wall beside them."
+  },
+  {
+   "k": "e",
+   "x": 68.0,
+   "y": 54.0,
+   "rx": 4.0,
+   "ry": 4.0,
+   "px": 72.0,
+   "py": 54.0,
+   "l": "Spermatids and sperm: toward the open lumen at the right and lower center, small round smooth nuclei are spermatids and tiny dark, comma-shaped heads are elongating spermatids and sperm, the last step in a line that runs from the basement membrane to the lumen."
+  },
+  {
+   "k": "e",
+   "x": 15.0,
+   "y": 35.0,
+   "rx": 7.0,
+   "ry": 7.0,
+   "px": 22.0,
+   "py": 35.0,
+   "l": "Leydig cells: at the far left, outside the tubule in the interstitium, a nest of large polygonal cells with pink cytoplasm, round nuclei and golden-brown lipochrome granules sits beside a tiny capillary. These cells make testosterone in response to LH."
+  }
+ ],
+ "kinds": [
+  "arrow",
+  "e",
+  "e",
+  "e"
+ ],
+ "areaSum": 2.5,
+ "areaMax": 1.5,
+ "findings": [
+  "Basement membrane and wall: a thin pink line with flat, dark spindle nuclei runs diagonally from the upper right to the lower left along the edge of the tubule. Contractile peritubular myoid cells in this wall squeeze sperm toward the rete testis.",
+  "Primary spermatocytes: just inside the wall, across the middle of the epithelium, large round nuclei with coarse, clumped chromatin are the biggest germ cells, caught in the long prophase of meiosis I. Small spermatogonia lie against the wall beside them.",
+  "Spermatids and sperm: toward the open lumen at the right and lower center, small round smooth nuclei are spermatids and tiny dark, comma-shaped heads are elongating spermatids and sperm, the last step in a line that runs from the basement membrane to the lumen.",
+  "Leydig cells: at the far left, outside the tubule in the interstitium, a nest of large polygonal cells with pink cytoplasm, round nuclei and golden-brown lipochrome granules sits beside a tiny capillary. These cells make testosterone in response to LH."
+ ],
+ "adjustments": []
+}

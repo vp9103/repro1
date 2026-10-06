@@ -1,0 +1,31 @@
+{
+ "n": "Graafian follicle with oocyte, cumulus and antrum",
+ "file": "rp8_graafian.jpg",
+ "dx": "Graafian follicle with oocyte and cumulus oophorus",
+ "wrong": [
+  "Primary follicle",
+  "Atretic follicle",
+  "Corpus luteum",
+  "Granulosa cell tumor"
+ ],
+ "ww": {
+  "Primary follicle": "<b>Primary follicle</b> has a small oocyte wrapped by a single layer of cuboidal granulosa cells and a thin zona pellucida, with no antrum. Here many layers of granulosa cells surround a large oocyte, beside a pool of follicular fluid.",
+  "Atretic follicle": "<b>Atretic follicle</b> is degenerating: the oocyte shrinks or disappears, granulosa cells turn pyknotic and fall away, and the basement membrane thickens into a glassy pink band. Here the oocyte is plump and intact, and the granulosa cells look healthy.",
+  "Corpus luteum": "<b>Corpus luteum</b> is a folded wall of large pale granulosa-lutein cells with vacuolated cytoplasm and no oocyte, after ovulation. This field has an oocyte inside a zona pellucida, with small dark granulosa cells packed around it.",
+  "Granulosa cell tumor": "<b>Granulosa cell tumor</b> is sheets of uniform cells with grooved, coffee-bean nuclei and Call-Exner bodies, small rosettes around pink material. It has no oocyte or zona pellucida, whereas this field has both."
+ },
+ "look": "Notice the round oocyte with pale, bubbly cytoplasm inside a bright pink glassy ring, the zona pellucida. Granulosa cells crowd around it as the corona radiata and the cumulus oophorus mound, while pink follicular fluid fills the antrum at the bottom of the field. An antral space plus a cumulus is the late antral (Graafian) follicle that comes just before ovulation.",
+ "cred": "Ed Uthman from Houston, TX, USA · CC BY 2.0 · Wikimedia Commons (resized)",
+ "by": "Ed Uthman from Houston, TX, USA",
+ "lic": "CC BY 2.0",
+ "licurl": "https://creativecommons.org/licenses/by/2.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Graafian_Follicle,_Human_Ovary_(3595010317).jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Oocyte and zona pellucida: in the center of the field, a large round oocyte with pale, finely vacuolated cytoplasm sits inside a bright pink ring. This glassy ring is the zona pellucida, which sperm must bind before fertilization.",
+  "Corona radiata: the single rim of granulosa cells pressed against the zona pellucida, all the way around the oocyte, leaves with the oocyte at ovulation, and sperm must push through it.",
+  "Cumulus oophorus: the mound of small, dark granulosa cells that crowds around the oocyte across the upper and right part of the field tethers it to the follicle wall. FSH induces aromatase in these granulosa cells so they make estradiol.",
+  "Antrum: at the bottom of the field, pink, bubbly material with a clear cleft at the left is coagulated follicular fluid. The oocyte and its granulosa mound bulge into this fluid-filled antrum."
+ ]
+}

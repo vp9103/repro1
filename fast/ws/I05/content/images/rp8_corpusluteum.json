@@ -1,0 +1,30 @@
+{
+ "n": "Sectioned ovary with a yellow corpus luteum",
+ "file": "rp8_corpusluteum.jpg",
+ "dx": "Corpus luteum in a sectioned ovary",
+ "wrong": [
+  "Granulosa cell tumor",
+  "Thecoma",
+  "Mature cystic teratoma",
+  "Dysgerminoma"
+ ],
+ "ww": {
+  "Granulosa cell tumor": "<b>Granulosa cell tumor</b> usually forms a solid and cystic yellow-tan mass that replaces and enlarges the ovary and often makes estrogen. Here the yellow tissue is a folded, scalloped band wrapped around a blood-clot center, not a solid mass.",
+  "Thecoma": "<b>Thecoma</b> is a firm, solid, yellow-tan ovarian tumor of lipid-rich stromal cells, usually in older women, and it makes estrogen. It has no cavity or clot. This yellow band is a folded wall around a blood-filled center.",
+  "Mature cystic teratoma": "<b>Mature cystic teratoma</b> is a cyst filled with greasy yellow sebum and tangled hair, often with a firm nodule or a tooth. Here a thick, scalloped yellow wall surrounds a blood clot, and there is no hair or sebum.",
+  "Dysgerminoma": "<b>Dysgerminoma</b> is a solid, fleshy, cream to tan, lobulated mass with fibrous septa, mostly in girls and young women. It has no central cavity, and its color is pale tan rather than bright, scalloped yellow."
+ },
+ "look": "Notice the thick, scalloped band of bright yellow tissue in the upper left, wrapped around a pale center with dark red clot. The yellow color comes from the lipid in luteal cells, and the folded wall is the corpus luteum. In the lower half, white wrinkled streaks are corpora albicantia, scars from earlier cycles. A yellow wall around a clot means recent ovulation.",
+ "cred": "Ed Uthman · CC BY-SA 2.0 · Wikimedia Commons (resized)",
+ "by": "Ed Uthman",
+ "lic": "CC BY-SA 2.0",
+ "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Human_Ovary_with_Fully_Developed_Corpus_Luteum.jpg",
+ "mod": true,
+ "modality": "gross",
+ "findings": [
+  "Yellow folded wall: the thick, scalloped band of bright yellow tissue in the upper left is the corpus luteum. Its color comes from lipid-rich granulosa-lutein and theca-lutein cells, which store the cholesterol they convert to progesterone.",
+  "Central clot: the pale center of the yellow band holds dark red blood clot and fibrin, the remnant of the ruptured follicle's cavity, where bleeding fills the collapsed follicle after ovulation.",
+  "Corpora albicantia: the white, wrinkled streaks scattered through the pale tissue of the lower half and the lower right are corpora albicantia, fibrous scars of corpora lutea from earlier cycles."
+ ]
+}

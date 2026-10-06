@@ -1,0 +1,31 @@
+{
+ "n": "Seminiferous tubule showing spermatogenesis, with Leydig cells",
+ "file": "rp19_spermatogenesis.jpg",
+ "dx": "Normal seminiferous tubule with complete spermatogenesis",
+ "wrong": [
+  "Sertoli cell-only syndrome",
+  "Maturation arrest of spermatogenesis",
+  "Intratubular germ cell neoplasia",
+  "Testicular atrophy with hyalinized tubules"
+ ],
+ "ww": {
+  "Sertoli cell-only syndrome": "<b>Sertoli cell-only syndrome</b> leaves the tubules lined by Sertoli cells alone, with no spermatocytes, spermatids or sperm, and FSH runs high. This tubule holds germ cells at every stage, all the way up to sperm heads.",
+  "Maturation arrest of spermatogenesis": "<b>Maturation arrest of spermatogenesis</b> stops germ cell development at one stage, often the primary spermatocyte, so late spermatids and sperm are missing near the lumen. Here round spermatids and dark sperm heads lie beside an open lumen.",
+  "Intratubular germ cell neoplasia": "<b>Intratubular germ cell neoplasia</b> shows large atypical cells with clear cytoplasm, big nuclei and prominent nucleoli lined up along the basement membrane, and it precedes seminoma. These basal cells are small and orderly, and the cells mature normally toward the lumen.",
+  "Testicular atrophy with hyalinized tubules": "<b>Testicular atrophy with hyalinized tubules</b> gives small, shrunken tubules with thick, glassy pink walls and few or no germ cells. Here the wall is a thin line, the tubule is wide and the epithelium is full of maturing cells."
+ },
+ "look": "Notice that the tubule wall is a thin pink line and the cells stacked inside it show their age by position. Large round nuclei with coarse, clumped chromatin (primary spermatocytes) fill the middle, smaller round spermatids sit nearer the open lumen, and tiny dark sperm heads hug its edge. At far left, a nest of pink Leydig cells with golden pigment lies outside the tubule.",
+ "cred": "Nephron · CC BY-SA 3.0 · Wikimedia Commons (resized)",
+ "by": "Nephron",
+ "lic": "CC BY-SA 3.0",
+ "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Seminiferous_tubule_and_sperm.jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Basement membrane and wall: a thin pink line with flat, dark spindle nuclei runs diagonally from the upper right to the lower left along the edge of the tubule. Contractile peritubular myoid cells in this wall squeeze sperm toward the rete testis.",
+  "Primary spermatocytes: just inside the wall, across the middle of the epithelium, large round nuclei with coarse, clumped chromatin are the biggest germ cells, caught in the long prophase of meiosis I. Small spermatogonia lie against the wall beside them.",
+  "Spermatids and sperm: toward the open lumen at the right and lower center, small round smooth nuclei are spermatids and tiny dark, comma-shaped heads are elongating spermatids and sperm, the last step in a line that runs from the basement membrane to the lumen.",
+  "Leydig cells: at the far left, outside the tubule in the interstitium, a nest of large polygonal cells with pink cytoplasm, round nuclei and golden-brown lipochrome granules sits beside a tiny capillary. These cells make testosterone in response to LH."
+ ]
+}

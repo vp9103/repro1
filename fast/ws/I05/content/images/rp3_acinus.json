@@ -1,0 +1,31 @@
+{
+ "n": "Normal breast acinus with luminal and myoepithelial layers",
+ "file": "rp3_acinus.jpg",
+ "dx": "Normal breast acinus with two cell layers",
+ "wrong": [
+  "Ductal carcinoma in situ",
+  "Lobular carcinoma in situ",
+  "Usual ductal hyperplasia",
+  "Intraductal papilloma"
+ ],
+ "ww": {
+  "Ductal carcinoma in situ": "<b>Ductal carcinoma in situ</b> fills and widens a duct with a crowded population of atypical cells in solid, cribriform or comedo patterns. This acinus is small, with orderly cells around an open lumen and no atypia.",
+  "Lobular carcinoma in situ": "<b>Lobular carcinoma in situ</b> distends acini with uniform, loosely cohesive small round cells, often with intracytoplasmic vacuoles, that fill the lumen. Here the lumen stays open and two distinct cell layers are visible.",
+  "Usual ductal hyperplasia": "<b>Usual ductal hyperplasia</b> packs a duct with a haphazard mix of cells that stream together, leaving irregular slit-like spaces. This acinus has orderly layers of cells arranged around a central lumen.",
+  "Intraductal papilloma": "<b>Intraductal papilloma</b> is a branching papillary growth on fibrovascular cores inside a dilated duct. Here there are no fronds and no cores, only a single round acinus with a ring of cells."
+ },
+ "look": "Notice that this small acinus is lined by two layers, not one. Inner luminal cells with larger oval nuclei face a tiny central lumen, and an outer ring of smaller round nuclei in clear cytoplasm sits against the pink collagen. The ring is complete all the way around. An intact outer layer means the epithelium has not invaded, and invasive carcinoma loses it.",
+ "cred": "Mikael Häggström, M.D. · CC0 · Wikimedia Commons (resized)",
+ "by": "Mikael Häggström, M.D.",
+ "lic": "CC0",
+ "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Normal_breast_acinus.jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Luminal cells: the inner ring of cells with larger oval nuclei and pale purple cytoplasm faces the small central lumen. These cells make milk, carry estrogen and progesterone receptors, and give rise to most breast carcinomas.",
+  "Myoepithelial cells: the outer ring of small, round, dark nuclei set in clear cytoplasm lies between the luminal cells and the pink collagen. These contractile cells hold actin and myosin and squeeze milk toward the nipple.",
+  "Central lumen: a small slit in the middle of the acinus, holding a wisp of pink secretion, is the open lumen. It stays open, unlike the filled acini of hyperplasia or in situ carcinoma.",
+  "Intact outer border: a smooth cuff of pink collagen surrounds the acinus, and no cells break through it. The outer cell layer and basement membrane are intact, so the epithelium has not invaded the stroma."
+ ]
+}

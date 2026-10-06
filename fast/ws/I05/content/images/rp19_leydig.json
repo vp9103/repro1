@@ -1,0 +1,30 @@
+{
+ "n": "Leydig cells beside capillaries in testicular interstitium",
+ "file": "rp19_leydig.jpg",
+ "dx": "Normal Leydig cells in the testicular interstitium",
+ "wrong": [
+  "Leydig cell tumor",
+  "Leydig cell hyperplasia",
+  "Seminoma",
+  "Sertoli cell tumor"
+ ],
+ "ww": {
+  "Leydig cell tumor": "<b>Leydig cell tumor</b> is an expanding nodule of sheets of similar eosinophilic cells, often with Reinke crystals, and it can make androgens or estrogens. This field shows only one small nest of cells beside capillaries, with no sheets or mass.",
+  "Leydig cell hyperplasia": "<b>Leydig cell hyperplasia</b> forms multiple nodules or broad sheets of Leydig cells that widen the interstitium and crowd the tubules. Here a single small cluster sits in loose stroma next to a capillary, and nothing is expanded or crowded.",
+  "Seminoma": "<b>Seminoma</b> is sheets of large cells with clear, glycogen-rich cytoplasm, sharp cell borders and central nuclei, split by fibrous septa that hold lymphocytes. These cells have dense pink cytoplasm, and there are no septa or lymphocytic infiltrate.",
+  "Sertoli cell tumor": "<b>Sertoli cell tumor</b> grows cords and tubules of columnar cells with pale, often vacuolated cytoplasm that mimic immature seminiferous tubules. This nest is made of polygonal cells with dense pink cytoplasm, and it forms no tubule-like cords."
+ },
+ "look": "Notice the large polygonal cells packed into a nest at the center, each with a round central nucleus, a small nucleolus and abundant pink, granular cytoplasm, the smooth ER and lipid droplets of steroid production. Thin-walled capillaries with red cells sit beside the nest, which is how testosterone reaches the blood. Reinke crystals are not obvious in this field.",
+ "cred": "Nephron · CC BY-SA 3.0 · Wikimedia Commons (resized)",
+ "by": "Nephron",
+ "lic": "CC BY-SA 3.0",
+ "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+ "srcurl": "https://commons.wikimedia.org/wiki/File:Leydig_cells_-_very_high_mag.jpg",
+ "mod": true,
+ "modality": "histology",
+ "findings": [
+  "Leydig cell nest: at the center of the field, a cluster of large polygonal cells has round central nuclei with small nucleoli and abundant pink, granular cytoplasm packed with smooth endoplasmic reticulum and lipid droplets for steroid synthesis.",
+  "Capillaries: a thin-walled vessel full of red cells at the upper right, and a second vessel at the left, lie beside the nest, so LH arrives and testosterone leaves by way of the blood.",
+  "Loose interstitium: wispy, pale connective tissue with scattered small dark nuclei surrounds the nest at the right and below it. This interstitium lies outside the seminiferous tubules."
+ ]
+}
