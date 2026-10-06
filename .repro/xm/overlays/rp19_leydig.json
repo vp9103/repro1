@@ -1,0 +1,53 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.6-flash",
+ "key": "rp19_leydig",
+ "image_sha": "c759a2be5139ddbf",
+ "at": "2026-10-06 02:32:16",
+ "ann": [
+  {
+   "k": "arrow",
+   "x": 44.0,
+   "y": 38.0,
+   "tx": 44.0,
+   "ty": 9.0,
+   "px": 44.0,
+   "py": 9.0,
+   "l": "At the center, this nest of large polygonal Leydig cells displays round central nuclei with prominent nucleoli and eosinophilic, lipid-rich cytoplasm filled with smooth ER for testosterone synthesis."
+  },
+  {
+   "k": "e",
+   "x": 73.0,
+   "y": 22.0,
+   "rx": 10.0,
+   "ry": 9.0,
+   "rot": -20,
+   "px": 88.0,
+   "py": 12.0,
+   "l": "Thin-walled microvessels packed with bright red blood cells lie adjacent to the Leydig cells, facilitating LH delivery to the tissue and rapid uptake of synthesized testosterone into circulation."
+  },
+  {
+   "k": "arrow",
+   "x": 86.0,
+   "y": 50.0,
+   "tx": 94.0,
+   "ty": 70.0,
+   "px": 94.0,
+   "py": 70.0,
+   "l": "Wispy, pale background connective tissue containing scattered dark stromal nuclei surrounds the Leydig nest and capillaries, occupying the intertubular spaces of the testis."
+  }
+ ],
+ "kinds": [
+  "arrow",
+  "e",
+  "arrow"
+ ],
+ "areaSum": 2.8,
+ "areaMax": 2.8,
+ "findings": [
+  "Leydig cell nest: at the center of the field, a cluster of large polygonal cells has round central nuclei with small nucleoli and abundant pink, granular cytoplasm packed with smooth endoplasmic reticulum and lipid droplets for steroid synthesis.",
+  "Capillaries: a thin-walled vessel full of red cells at the upper right, and a second vessel at the left, lie beside the nest, so LH arrives and testosterone leaves by way of the blood.",
+  "Loose interstitium: wispy, pale connective tissue with scattered small dark nuclei surrounds the nest at the right and below it. This interstitium lies outside the seminiferous tubules."
+ ],
+ "adjustments": []
+}

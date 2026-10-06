@@ -1,0 +1,52 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.5-flash",
+ "key": "rp8_corpusluteum",
+ "image_sha": "7e0ecd31416719f6",
+ "at": "2026-10-06 02:35:06",
+ "ann": [
+  {
+   "k": "arrow",
+   "x": 30.0,
+   "y": 38.0,
+   "tx": 18.0,
+   "ty": 42.0,
+   "px": 18.0,
+   "py": 42.0,
+   "l": "The thick, scalloped band of bright yellow tissue is the corpus luteum. Its characteristic yellow color is due to lipid-rich granulosa-lutein and theca-lutein cells, which store cholesterol used for progesterone synthesis."
+  },
+  {
+   "k": "arrow",
+   "x": 45.0,
+   "y": 16.0,
+   "tx": 45.0,
+   "ty": 6.0,
+   "px": 45.0,
+   "py": 6.0,
+   "l": "The pale center of the yellow band contains a dark red blood clot and fibrin. This represents the remnant of the ruptured follicle's cavity, which fills with blood immediately after ovulation."
+  },
+  {
+   "k": "arrow",
+   "x": 48.0,
+   "y": 72.0,
+   "tx": 48.0,
+   "ty": 85.0,
+   "px": 48.0,
+   "py": 85.0,
+   "l": "These white, wrinkled, fibrous streaks in the ovarian stroma are corpora albicantia. They represent degenerated, scarred corpora lutea from previous menstrual cycles."
+  }
+ ],
+ "kinds": [
+  "arrow",
+  "arrow",
+  "arrow"
+ ],
+ "areaSum": 0.0,
+ "areaMax": 0.0,
+ "findings": [
+  "Yellow folded wall: the thick, scalloped band of bright yellow tissue in the upper left is the corpus luteum. Its color comes from lipid-rich granulosa-lutein and theca-lutein cells, which store the cholesterol they convert to progesterone.",
+  "Central clot: the pale center of the yellow band holds dark red blood clot and fibrin, the remnant of the ruptured follicle's cavity, where bleeding fills the collapsed follicle after ovulation.",
+  "Corpora albicantia: the white, wrinkled streaks scattered through the pale tissue of the lower half and the lower right are corpora albicantia, fibrous scars of corpora lutea from earlier cycles."
+ ],
+ "adjustments": []
+}

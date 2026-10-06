@@ -1,0 +1,432 @@
+{
+ "id": "rp15",
+ "t": "Ovary and fallopian tube: cysts, adnexal masses and tumors",
+ "sub": "Sort an adnexal mass by age, ultrasound and marker, then name the ovarian cell it came from and the way it behaves.",
+ "yld": "hi",
+ "exam": "mid",
+ "mins": 11,
+ "bp": [
+  "BP-rp15-01",
+  "BP-rp15-02",
+  "BP-rp15-03",
+  "BP-rp15-04",
+  "BP-rp15-05",
+  "BP-rp15-06",
+  "BP-rp15-07",
+  "BP-rp15-08",
+  "BP-rp15-09",
+  "BP-rp15-10",
+  "BP-rp15-11",
+  "BP-rp15-12",
+  "BP-rp15-13",
+  "BP-rp15-14",
+  "BP-rp15-15",
+  "BP-rp15-16",
+  "BP-rp15-17",
+  "BP-rp15-18"
+ ],
+ "obj": [
+  "HP-UTERUS-OVARY.10",
+  "HP-UTERUS-OVARY.11",
+  "ADNEXAL.1",
+  "ADNEXAL.2",
+  "ADNEXAL.3",
+  "ADNEXAL.4",
+  "ADNEXAL.5",
+  "ADNEXAL.6",
+  "ADNEXAL.7",
+  "ADNEXAL.8",
+  "GYN-ONC.1",
+  "GYN-ONC.2",
+  "GYN-ONC.3",
+  "BICEP-WILLIAMS.8",
+  "BICEP-WILLIAMS.9",
+  "BICEP-WILLIAMS.11",
+  "BICEP-WILLIAMS.13"
+ ],
+ "pretest": [
+  {
+   "q": "Which ovarian neoplasm is most common in women under 30?",
+   "o": [
+    "Mature cystic teratoma",
+    "Serous carcinoma",
+    "Granulosa cell tumor",
+    "Brenner tumor"
+   ],
+   "a": 0,
+   "why": "The mature cystic teratoma, or dermoid cyst, is the most common ovarian neoplasm in young women. It is benign, holds hair, teeth and sebum from all three germ layers, and its weight makes the ovary prone to torsion.",
+   "w": {
+    "Serous carcinoma": "Serous carcinoma is the most common malignant ovarian tumor overall, but it mainly affects women after menopause and BRCA carriers.",
+    "Granulosa cell tumor": "Granulosa cell tumors are uncommon sex cord-stromal tumors, most often seen around or after menopause with estrogen effects such as bleeding.",
+    "Brenner tumor": "Brenner tumors are uncommon, usually benign epithelial tumors of transitional-type cells, typically found by chance in older women."
+   }
+  },
+  {
+   "q": "Which serum marker does a yolk sac tumor secrete?",
+   "o": [
+    "Alpha-fetoprotein",
+    "Inhibin",
+    "CA-125",
+    "Lactate dehydrogenase"
+   ],
+   "a": 0,
+   "why": "Yolk sac tissue makes alpha-fetoprotein in the embryo. A yolk sac tumor, a malignant germ cell tumor of girls and young women, therefore raises serum AFP and shows glomerulus-like Schiller-Duval bodies.",
+   "w": {
+    "Inhibin": "Inhibin is made by granulosa cells, so it marks granulosa cell tumors, which are sex cord-stromal rather than germ cell tumors.",
+    "CA-125": "CA-125 comes from coelomic-type epithelium. It rises with epithelial ovarian cancers, especially high-grade serous carcinoma, and with benign pelvic conditions.",
+    "Lactate dehydrogenase": "Lactate dehydrogenase is the marker of dysgerminoma, the ovarian counterpart of seminoma, which grows as sheets of clear cells."
+   }
+  },
+  {
+   "q": "In ovarian torsion, which vessels are compressed first?",
+   "o": [
+    "Veins and lymphatics",
+    "Ovarian artery",
+    "Uterine artery",
+    "Internal iliac artery"
+   ],
+   "a": 0,
+   "why": "Veins and lymphatics have thin walls and low pressure, so twisting collapses them first while arterial blood keeps entering. The ovary swells with congestion and edema before arterial flow stops and infarction follows.",
+   "w": {
+    "Ovarian artery": "The ovarian artery has a thick muscular wall and high pressure, so it keeps delivering blood until swelling and further twisting finally block it.",
+    "Uterine artery": "The uterine artery supplies the uterus and joins the ovarian artery, but it is not the vessel twisted in the infundibulopelvic ligament.",
+    "Internal iliac artery": "The internal iliac artery lies on the pelvic sidewall, far from the twisting pedicle, so torsion does not compress it."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Is an adnexal mass a cyst of ovulation or a true tumor?"
+  ],
+  [
+   "p",
+   "The adnexa are the ovary, the fallopian tube and the tissue around them, so a mass there is not always ovarian. A hydrosalpinx (a tube swollen with fluid after salpingitis), a tubo-ovarian abscess, a paratubal cyst and an ectopic pregnancy can all look like one. So a pregnancy test comes first in a woman of reproductive age. Most ovarian masses in young women are **functional** cysts, which are exaggerations of the normal cycle that shrink or vanish within one to three cycles. A mass that persists, grows or has solid parts is a neoplasm until proven otherwise."
+  ],
+  [
+   "p",
+   "A {{rp15_folcyst|follicular cyst}}, the most common type, forms when a follicle fails to rupture and keeps filling with fluid; while it persists its granulosa cells keep making estrogen, which can lead to endometrial hyperplasia. A **corpus luteum cyst** forms after ovulation. When it bleeds it becomes a hemorrhagic cyst, which causes sudden one-sided pain and can rupture. **Theca lutein cysts** are usually bilateral and multilocular. They form when very high hCG, from a molar pregnancy, choriocarcinoma, twins or ovarian hyperstimulation, overstimulates the theca cells, and they regress once hCG falls."
+  ],
+  [
+   "h",
+   "What does the ultrasound show, and how is risk judged?"
+  ],
+  [
+   "p",
+   "Transvaginal ultrasound is the first test, and each common benign mass has its own pattern. Fluid is **anechoic**, meaning it returns no echoes and looks black. A simple cyst is a thin-walled black cavity with no flow. In a young woman it is almost always benign and needs only a repeat scan. A hemorrhagic cyst has lace-like echoes and a retracting clot. An endometrioma, a cyst of endometriosis, has uniform **ground-glass** echoes from old blood. A dermoid has a bright {{rp15_rok|Rokitansky nodule}}, the dermoid plug, with a shadow behind it. A twisted ovary is large and edematous with follicles pushed to its edge, and its twisted pedicle forms a **whirlpool** sign."
+  ],
+  [
+   "f",
+   "rp15_patterns"
+  ],
+  [
+   "p",
+   "Malignancy is suggested by features that make a mass less like a simple cyst. These are a **solid component**, papillary projections (solid nodules growing from the wall), thick septations (partitions inside the cyst), blood flow within solid tissue, and ascites. Scoring systems such as {{rp15_orads|O-RADS}} and the IOTA Simple Rules combine these findings into a risk category. A high-risk mass, ascites or a markedly raised CA-125 calls for referral to a gynecologic oncologist before surgery. Complete removal and staging at the first operation improve the outcome."
+  ],
+  [
+   "f",
+   "rp15_adnexal"
+  ],
+  [
+   "h",
+   "Who gets which mass?"
+  ],
+  [
+   "p",
+   "Age reorders the differential, so the first question about any adnexal mass is how old the patient is. The table lists the most likely masses and the first tests at each age."
+  ],
+  [
+   "t",
+   [
+    "Age group",
+    "Most likely masses",
+    "First tests"
+   ],
+   [
+    [
+     "Prepubertal girl",
+     "Germ cell tumors (dermoid, yolk sac, dysgerminoma); torsion",
+     "Ultrasound with AFP, hCG and LDH"
+    ],
+    [
+     "Reproductive age",
+     "Functional cysts, endometrioma, dermoid, ectopic pregnancy, hydrosalpinx, tubo-ovarian abscess",
+     "Pregnancy test, then ultrasound"
+    ],
+    [
+     "Postmenopausal",
+     "Epithelial carcinoma until proven otherwise; fibroma, granulosa cell tumor",
+     "Ultrasound features plus CA-125"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "trap",
+   "CA-125 is weak before menopause",
+   "CA-125 comes from coelomic-type epithelium, so endometriosis, fibroids, pelvic infection, pregnancy and menstruation all raise it. Before menopause a high value is **nonspecific**, and it stays normal in about half of early-stage cancers. It helps most in a postmenopausal woman with a complex mass and for following a known epithelial cancer."
+  ],
+  [
+   "h",
+   "Why does an enlarged ovary twist, and what dies first?"
+  ],
+  [
+   "p",
+   "In ovarian **torsion** the ovary, often with the tube, rotates on the infundibulopelvic (suspensory) ligament, which carries the ovarian vessels, and on the utero-ovarian ligament. A heavy ovary, usually one enlarged by a dermoid or a cyst of 5 cm or more, acts as the lever. The patient has sudden, severe, one-sided pelvic pain with nausea and vomiting. This is a surgical emergency, because the ovary can die."
+  ],
+  [
+   "steps",
+   [
+    "How torsion destroys an ovary, step by step",
+    [
+     [
+      "A heavy ovary rotates",
+      "An ovary enlarged by a dermoid or cyst swings on its ligaments and twists the pedicle that carries its vessels."
+     ],
+     [
+      "Veins collapse first",
+      "Low-pressure, thin-walled veins and lymphatics are squeezed shut while arterial blood still enters. The ovary swells with **venous** congestion and edema."
+     ],
+     [
+      "Pressure cuts off the artery",
+      "Rising tissue pressure and more twisting finally stop arterial inflow. Doppler flow can persist early, so normal flow does not exclude torsion."
+     ],
+     [
+      "Hemorrhagic infarction follows",
+      "Without inflow the ovary infarcts, so prompt surgery is needed to save it."
+     ]
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Which cell did the tumor come from?"
+  ],
+  [
+   "p",
+   "Ovarian tumors are named for the normal cell they resemble. Each of the ovary's three cell types keeps its own behavior when it turns neoplastic. The **surface epithelium** comes from the coelomic epithelium covering the genital ridge. It takes on tubal, endometrial or endocervical features, which is why its tumors are called serous, endometrioid and mucinous. It gives about 90 percent of malignant ovarian tumors, mostly in older women. However, many high-grade serous carcinomas actually begin in the fallopian tube and spread to the ovary."
+  ],
+  [
+   "p",
+   "**Germ cells** travel from the yolk sac wall to the genital ridge. Germ cell tumors are the common ovarian neoplasms of girls and young women, and germ cells that stop along this migration route explain the same tumors in midline sites outside the gonads, such as the mediastinum and the pineal region. **Sex cord**-stromal cells (granulosa, theca, Sertoli, Leydig and fibroblasts) come from genital ridge mesenchyme, and their tumors often make hormones. The fourth group is metastasis, such as the {{rp15_kruk|Krukenberg tumor}}: bilateral ovarian masses of mucin-secreting signet-ring cells, usually from a stomach primary."
+  ],
+  [
+   "f",
+   "rp15_origin"
+  ],
+  [
+   "p",
+   "Epithelial tumors run from benign to borderline to malignant. **Serous** tumors are the most common, and they are often bilateral with psammoma bodies (concentric calcifications). **Mucinous** tumors grow very large as mucin-filled, multilocular cysts. They are usually unilateral, so bilateral mucinous masses suggest metastasis from the appendix or gut. Pseudomyxoma peritonei, a belly full of gelatinous mucin, usually comes from an appendiceal tumor. Endometrioid and clear cell carcinomas arise from endometriosis, and an endometrioid carcinoma of the ovary can come with a separate endometrial carcinoma (about 15 percent). The **Brenner tumor** has transitional-type nests with coffee-bean nuclei and is usually benign. A {{rp15_bord|borderline tumor}} has atypia and stratification without destructive stromal invasion, and its peritoneal implants are usually noninvasive, so most patients do well."
+  ],
+  [
+   "p",
+   "Carcinomas follow two paths, compared in the table. The type II path, **high-grade serous carcinoma**, is the most common and most lethal ovarian cancer. It begins as {{rp15_stic|serous tubal intraepithelial carcinoma}} (STIC) in the fimbriated end of the tube and is the ovarian cancer of BRCA1 and BRCA2 carriers. Because it sheds cells onto peritoneal surfaces, women present late. They have bloating, early satiety and rising girth from ascites and **omental** caking, and CA-125 is raised. Treatment is debulking surgery and platinum chemotherapy, with PARP inhibitors for BRCA carriers. Ovarian cancer, like breast cancer, can also trigger paraneoplastic cerebellar degeneration, in which anti-Yo antibodies attack Purkinje cells and cause ataxia."
+  ],
+  [
+   "t",
+   [
+    "Feature",
+    "Type I (low grade)",
+    "Type II (high-grade serous)"
+   ],
+   [
+    [
+     "Tumors",
+     "Low-grade serous, mucinous, endometrioid, clear cell",
+     "High-grade serous carcinoma"
+    ],
+    [
+     "Precursor",
+     "Borderline tumor or endometriosis",
+     "Serous tubal intraepithelial carcinoma"
+    ],
+    [
+     "Typical genes",
+     "KRAS, BRAF",
+     "TP53 in nearly all; often BRCA1 or BRCA2"
+    ],
+    [
+     "Growth and stage",
+     "Slow; often confined to the ovary",
+     "Fast; usually advanced, with ascites"
+    ]
+   ]
+  ],
+  [
+   "h",
+   "Who is at risk of ovarian cancer, and what protects?"
+  ],
+  [
+   "p",
+   "Up to about a quarter of ovarian cancers are hereditary, most from germline BRCA1 or BRCA2 mutations. BRCA carriers have the highest risk, and their cancers are almost always high-grade serous carcinoma. Lynch syndrome adds endometrioid and clear cell carcinoma to its colon and endometrial cancers. Other risks are older age, **nulliparity**, early menarche, late menopause and endometriosis. Protective factors are oral contraceptives, pregnancy and multiparity, **breastfeeding**, and tubal ligation or salpingectomy."
+  ],
+  [
+   "why",
+   "Why do oral contraceptives and tubal surgery lower ovarian cancer risk?",
+   "Each ovulation breaks the ovarian surface and bathes the nearby fimbriae in inflammatory follicular fluid. The repair needs cell division, which can copy DNA errors. Anything that cuts lifetime ovulations therefore lowers risk. Oral contraceptives, pregnancy and breastfeeding all do this, while early menarche and late menopause add ovulations and raise risk. Tubal ligation and salpingectomy protect for a second reason. Most high-grade serous carcinomas begin in the fimbriated tube, so removing or closing the tube removes the cells that start the cancer."
+  ],
+  [
+   "call",
+   "key",
+   "No screening test works for average-risk women",
+   "Large trials of yearly CA-125 and transvaginal ultrasound did not lower ovarian cancer deaths, and false positives led to needless surgery. So the USPSTF recommends against screening average-risk women (as of 2025). BRCA carriers are instead offered risk-reducing salpingo-oophorectomy after childbearing, which also removes any tubal STIC."
+  ],
+  [
+   "h",
+   "Which tumors announce themselves with a marker or a hormone?"
+  ],
+  [
+   "p",
+   "The mature cystic **teratoma**, or dermoid cyst, is the most common ovarian neoplasm in young women. It is benign and contains hair, teeth and sebum from all three germ layers, and its weight makes it prone to torsion. Rarely it turns malignant, usually as a squamous cell carcinoma. Struma ovarii is a teratoma made mostly of thyroid tissue and can cause hyperthyroidism, whereas an immature teratoma contains immature neuroepithelium and is malignant."
+  ],
+  [
+   "img",
+   "rp15_teratoma"
+  ],
+  [
+   "p",
+   "A teratoma can also act at a distance. Its neural tissue can provoke antibodies against the NMDA receptor, causing anti-NMDA receptor encephalitis: a young woman develops psychiatric symptoms, memory loss, seizures, abnormal movements and autonomic instability, which often improve once the teratoma is removed."
+  ],
+  [
+   "p",
+   "Other malignant germ cell tumors announce themselves with a marker. The **dysgerminoma** is the ovarian counterpart of seminoma. It is the most common malignant ovarian germ cell tumor, forms sheets of large clear cells and raises lactate dehydrogenase (LDH), and some also raise hCG. It is very radiosensitive and arises more often in dysgenetic gonads that carry Y chromosome material, as in Swyer syndrome (46,XY) and Turner mosaics with a Y cell line. The **yolk sac tumor** of girls and young women makes alpha-fetoprotein (AFP) and shows glomerulus-like {{rp15_sd|Schiller-Duval bodies}}. Choriocarcinoma makes hCG from trophoblast without villi."
+  ],
+  [
+   "p",
+   "Sex cord-stromal tumors act like the cells they came from. The **granulosa cell tumor** is the most common malignant sex cord-stromal tumor, and it makes estrogen. In a young girl this causes precocious puberty, and in an older woman unopposed estrogen causes endometrial hyperplasia, endometrial cancer and postmenopausal bleeding. Its cells have grooved coffee-bean nuclei around small follicle-like {{rp15_ce|Call-Exner bodies}}, and inhibin is its serum marker. The **Sertoli-Leydig cell tumor** makes androgens, so a young woman develops hirsutism, a deeper voice and clitoromegaly. Its Leydig cells may contain Reinke crystals, rod-shaped protein crystals."
+  ],
+  [
+   "img",
+   "rp15_granulosa"
+  ],
+  [
+   "p",
+   "The thecoma, like the granulosa cell tumor, makes estrogen. The fibroma makes no hormone but can cause **Meigs syndrome**, the triad of an ovarian fibroma, ascites and a right pleural effusion, and the ascites and effusion resolve once the tumor is removed."
+  ],
+  [
+   "palace",
+   "pal_rp15_ovarian_markers"
+  ],
+  [
+   "t",
+   [
+    "Tumor",
+    "Marker or hormone",
+    "Clue"
+   ],
+   [
+    [
+     "High-grade serous carcinoma",
+     "CA-125",
+     "Psammoma bodies; bilateral; BRCA"
+    ],
+    [
+     "Dysgerminoma",
+     "LDH; sometimes hCG",
+     "Clear fried-egg cells; radiosensitive"
+    ],
+    [
+     "Yolk sac tumor",
+     "AFP",
+     "Schiller-Duval bodies; girls and young women"
+    ],
+    [
+     "Choriocarcinoma",
+     "hCG",
+     "Trophoblast without villi"
+    ],
+    [
+     "Granulosa cell tumor",
+     "Estrogen, inhibin",
+     "Call-Exner bodies; bleeding"
+    ],
+    [
+     "Sertoli-Leydig cell tumor",
+     "Androgens",
+     "Virilization"
+    ],
+    [
+     "Fibroma",
+     "None",
+     "Meigs syndrome"
+    ]
+   ]
+  ],
+  [
+   "vis",
+   "rp15"
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp15_afp",
+    "q": "A 19-year-old has a solid ovarian mass and a markedly raised serum AFP. Which reasoning best identifies the tumor?",
+    "o": [
+     "AFP is made by epithelial ovarian cancers, so a serous carcinoma is most likely",
+     "A raised marker means hormone production, so the tumor is of sex cord-stromal origin",
+     "AFP comes from trophoblast, so the mass is most likely a choriocarcinoma",
+     "AFP is a yolk sac protein, so a germ cell tumor imitating yolk sac is most likely"
+    ],
+    "a": 3,
+    "why": "Each germ cell tumor secretes the protein of the tissue it imitates. The embryonic yolk sac makes alpha-fetoprotein, so a yolk sac tumor raises AFP and shows Schiller-Duval bodies. Trophoblast makes hCG, so choriocarcinoma raises hCG, and dysgerminoma raises LDH. Epithelial cancers raise CA-125, and sex cord-stromal tumors make steroid hormones and inhibin."
+   }
+  ]
+ ],
+ "grid": {
+  "q": "Which of these tumors are paired with the right marker or hormone?",
+  "items": [
+   [
+    "Yolk sac tumor and AFP",
+    1
+   ],
+   [
+    "Dysgerminoma and LDH",
+    1
+   ],
+   [
+    "Choriocarcinoma and hCG",
+    1
+   ],
+   [
+    "Granulosa cell tumor and inhibin",
+    1
+   ],
+   [
+    "High-grade serous carcinoma and CA-125",
+    1
+   ],
+   [
+    "Sertoli-Leydig cell tumor and androgens",
+    1
+   ],
+   [
+    "Struma ovarii and thyroid hormone",
+    1
+   ],
+   [
+    "Thecoma and estrogen",
+    1
+   ],
+   [
+    "Dysgerminoma and AFP",
+    0
+   ],
+   [
+    "Granulosa cell tumor and hCG",
+    0
+   ],
+   [
+    "Mature cystic teratoma and inhibin",
+    0
+   ],
+   [
+    "Fibroma and androgens",
+    0
+   ],
+   [
+    "Yolk sac tumor and CA-125",
+    0
+   ]
+  ]
+ }
+}

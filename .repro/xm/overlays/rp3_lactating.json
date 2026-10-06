@@ -1,0 +1,64 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.5-flash",
+ "key": "rp3_lactating",
+ "image_sha": "df41242fec3777e2",
+ "at": "2026-10-06 02:36:34",
+ "ann": [
+  {
+   "k": "e",
+   "x": 22.0,
+   "y": 38.0,
+   "rx": 6.0,
+   "ry": 5.0,
+   "px": 16.0,
+   "py": 38.0,
+   "l": "In the left panel, swollen, closely packed lobules fill the field, separated only by thin pink septa. This dramatic lobular hyperplasia is driven by estrogen, progesterone, and prolactin during pregnancy to prepare for lactation."
+  },
+  {
+   "k": "e",
+   "x": 7.0,
+   "y": 7.0,
+   "rx": 5.0,
+   "ry": 4.0,
+   "px": 12.0,
+   "py": 7.0,
+   "l": "Along the upper left edge, a thin rim of adipose tissue and fibrous septa separates the lobules. In a resting, non-lactating breast, dense fibrous stroma and fat would dominate the histology, with only scattered, inactive ducts."
+  },
+  {
+   "k": "e",
+   "x": 53.0,
+   "y": 32.0,
+   "rx": 3.0,
+   "ry": 3.0,
+   "px": 47.0,
+   "py": 32.0,
+   "l": "In the right panel, the cuboidal epithelial cells lining the alveolus contain clear lipid-filled vacuoles and bulge at the apical surface. These lipids are released into the lumen via apocrine secretion, where the apical membrane pinches off around the lipid droplet."
+  },
+  {
+   "k": "e",
+   "x": 68.0,
+   "y": 45.0,
+   "rx": 6.0,
+   "ry": 5.0,
+   "px": 74.0,
+   "py": 45.0,
+   "l": "In the right panel, pink granular secretion (milk) fills the alveolar lumen. Milk proteins, such as casein, are synthesized in the rough endoplasmic reticulum and secreted via merocrine secretion (classic exocytosis of secretory vesicles)."
+  }
+ ],
+ "kinds": [
+  "e",
+  "e",
+  "e",
+  "e"
+ ],
+ "areaSum": 2.8,
+ "areaMax": 0.9,
+ "findings": [
+  "Crowded lobules: in the left panel, swollen, closely packed lobules fill the field, separated only by thin pink septa, because estrogen, progesterone and prolactin multiplied the alveoli during pregnancy.",
+  "Fat and septa: along the upper left edge, a thin rim of fat and fibrous strands separates the lobules, and a larger duct runs through the central septum. In a resting breast, dense stroma and fat would dominate instead.",
+  "Vacuolated alveolar cells: in the right panel, the cuboidal cells lining the alveolus hold clear lipid vacuoles and bulge at the apex. Lipid leaves by apocrine secretion, pinching off wrapped in apical membrane.",
+  "Milk in the lumen: in the right panel, pink granular secretion fills the center of the alveolus. Milk proteins such as casein reach it by merocrine secretion, which is exocytosis of secretory vesicles."
+ ],
+ "adjustments": []
+}

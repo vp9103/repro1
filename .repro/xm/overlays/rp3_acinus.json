@@ -1,0 +1,61 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.5-flash",
+ "key": "rp3_acinus",
+ "image_sha": "a4ebe73830cc4dfd",
+ "at": "2026-10-06 02:36:06",
+ "ann": [
+  {
+   "k": "c",
+   "x": 50.0,
+   "y": 38.0,
+   "r": 3.0,
+   "px": 53.0,
+   "py": 35.0,
+   "l": "Luminal cells: the inner ring of cells with larger oval nuclei and pale purple cytoplasm faces the small central lumen. These cells make milk, carry estrogen and progesterone receptors, and give rise to most breast carcinomas."
+  },
+  {
+   "k": "c",
+   "x": 32.0,
+   "y": 59.0,
+   "r": 2.5,
+   "px": 29.5,
+   "py": 59.0,
+   "l": "Myoepithelial cells: the outer ring of small, round, dark nuclei set in clear cytoplasm lies between the luminal cells and the pink collagen. These contractile cells hold actin and myosin and squeeze milk toward the nipple."
+  },
+  {
+   "k": "c",
+   "x": 45.0,
+   "y": 50.0,
+   "r": 3.0,
+   "px": 42.0,
+   "py": 47.0,
+   "l": "Central lumen: a small slit in the middle of the acinus, holding a wisp of pink secretion, is the open lumen. It stays open, unlike the filled acini of hyperplasia or in situ carcinoma."
+  },
+  {
+   "k": "arrow",
+   "x": 24.0,
+   "y": 45.0,
+   "tx": 16.0,
+   "ty": 45.0,
+   "px": 16.0,
+   "py": 45.0,
+   "l": "Intact outer border: a smooth cuff of pink collagen surrounds the acinus, and no cells break through it. The outer cell layer and basement membrane are intact, so the epithelium has not invaded the stroma."
+  }
+ ],
+ "kinds": [
+  "c",
+  "c",
+  "c",
+  "arrow"
+ ],
+ "areaSum": 0.8,
+ "areaMax": 0.3,
+ "findings": [
+  "Luminal cells: the inner ring of cells with larger oval nuclei and pale purple cytoplasm faces the small central lumen. These cells make milk, carry estrogen and progesterone receptors, and give rise to most breast carcinomas.",
+  "Myoepithelial cells: the outer ring of small, round, dark nuclei set in clear cytoplasm lies between the luminal cells and the pink collagen. These contractile cells hold actin and myosin and squeeze milk toward the nipple.",
+  "Central lumen: a small slit in the middle of the acinus, holding a wisp of pink secretion, is the open lumen. It stays open, unlike the filled acini of hyperplasia or in situ carcinoma.",
+  "Intact outer border: a smooth cuff of pink collagen surrounds the acinus, and no cells break through it. The outer cell layer and basement membrane are intact, so the epithelium has not invaded the stroma."
+ ],
+ "adjustments": []
+}

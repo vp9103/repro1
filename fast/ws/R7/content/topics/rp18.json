@@ -1,0 +1,368 @@
+{
+ "id": "rp18",
+ "t": "Infections in pregnancy and the newborn",
+ "sub": "Whether an organism crosses the placenta or waits in the birth canal decides both the damage it does and how it is prevented.",
+ "yld": "hi",
+ "exam": "hi",
+ "mins": 11,
+ "bp": [
+  "BP-rp18-01",
+  "BP-rp18-02",
+  "BP-rp18-03",
+  "BP-rp18-04",
+  "BP-rp18-05",
+  "BP-rp18-06",
+  "BP-rp18-07",
+  "BP-rp18-08",
+  "BP-rp18-09",
+  "BP-rp18-10",
+  "BP-rp18-11",
+  "BP-rp18-12",
+  "BP-rp18-13",
+  "BP-rp18-14",
+  "BP-rp18-15",
+  "BP-rp18-16"
+ ],
+ "obj": [
+  "TBL-STI.3",
+  "VIRAL-STI-TORCH.7",
+  "PRENATAL-CARE.14",
+  "PRENATAL-CARE.15",
+  "PREG-REVIEW.14",
+  "VIRAL-STI-TORCH.8"
+ ],
+ "pretest": [
+  {
+   "q": "Which congenital infection is the most common in the United States?",
+   "o": [
+    "Cytomegalovirus",
+    "Toxoplasmosis",
+    "Rubella",
+    "Syphilis"
+   ],
+   "a": 0,
+   "why": "Cytomegalovirus infects about 1 in 200 newborns. Most look well at birth, but many later develop sensorineural hearing loss. This makes CMV the leading nongenetic cause of deafness in children.",
+   "w": {
+    "Toxoplasmosis": "Congenital toxoplasmosis is far rarer. It follows a first maternal infection from cat feces or undercooked meat and causes hydrocephalus and diffuse calcifications.",
+    "Rubella": "Vaccination has made congenital rubella rare in the United States. Cases now occur mainly in infants of mothers who were never vaccinated.",
+    "Syphilis": "Congenital syphilis is rising, but it still affects far fewer newborns than CMV. Screening and penicillin treatment during pregnancy prevent it."
+   }
+  },
+  {
+   "q": "When is a pregnant patient screened for group B strep colonization?",
+   "o": [
+    "At 36 to 37 weeks",
+    "At 24 to 28 weeks",
+    "At the first prenatal visit",
+    "When labor begins"
+   ],
+   "a": 0,
+   "why": "Carriage comes and goes. So the rectovaginal culture is taken at 36 to 37 weeks, close enough to delivery to predict whether the organism will be present during labor.",
+   "w": {
+    "At 24 to 28 weeks": "Twenty-four to 28 weeks is the window for the glucose challenge test. A GBS culture that early misses patients who become colonized later.",
+    "At the first prenatal visit": "A first-visit culture predicts delivery carriage poorly because colonization is intermittent. The first visit is for blood type, HIV, HBsAg and syphilis testing.",
+    "When labor begins": "Culture results take a day or two, so waiting for labor leaves no time to give penicillin at least 4 hours before birth."
+   }
+  },
+  {
+   "q": "Which virus causes fetal hydrops by destroying red cell precursors?",
+   "o": [
+    "Parvovirus B19",
+    "Cytomegalovirus",
+    "Rubella virus",
+    "Varicella-zoster virus"
+   ],
+   "a": 0,
+   "why": "Parvovirus B19 enters red cell precursors through the P antigen and kills them. The fetus, whose red cells are short-lived, becomes severely anemic, and high-output heart failure produces hydrops fetalis.",
+   "w": {
+    "Cytomegalovirus": "CMV targets the brain, liver and inner ear. It causes periventricular calcifications and hearing loss, not a pure failure of red cell production.",
+    "Rubella virus": "Rubella disrupts organ formation in the first trimester. It produces cataracts, deafness and a patent ductus arteriosus, not isolated red cell aplasia.",
+    "Varicella-zoster virus": "Congenital varicella damages skin, limbs, eyes and brain. It leaves dermatomal scars and limb hypoplasia, and it does not target marrow precursors."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "Why does the route of infection decide how it is prevented?"
+  ],
+  [
+   "p",
+   "A mother can pass an infection to her baby by two main routes, and the route decides the prevention. **Transplacental** organisms reach the embryo through maternal blood, often during organogenesis. They cause malformations, hydrops (fluid swelling of the fetus) or fetal loss. This damage happens in the womb, so prevention must protect the mother before she is exposed. Other organisms wait in the birth canal and infect the newborn during delivery, so prevention happens at delivery itself. The infections that cross the placenta are remembered as the {{rp18_torch|TORCH infections}}: *Toxoplasma*, other agents (syphilis, varicella, parvovirus B19, Zika), rubella, cytomegalovirus, herpes simplex and HIV. Herpes and HIV are the exceptions, because most neonatal herpes is caught during birth, and most mother-to-child HIV transmission also happens around delivery."
+  ],
+  [
+   "f",
+   "rp18_routes"
+  ],
+  [
+   "t",
+   [
+    "Agent",
+    "What it is",
+    "How it reaches the fetus"
+   ],
+   [
+    [
+     "Toxoplasma gondii",
+     "Protozoan parasite",
+     "Crosses the placenta after a maternal primary infection"
+    ],
+    [
+     "Rubella virus",
+     "**Togavirus** (reclassified in 2019 as a matonavirus): enveloped, positive-strand RNA",
+     "Crosses the placenta; worst in the first trimester"
+    ],
+    [
+     "Cytomegalovirus",
+     "Herpesvirus: enveloped double-stranded DNA, latent in monocytes",
+     "Crosses the placenta in primary or reactivated infection; also birth canal and breast milk"
+    ],
+    [
+     "Herpes simplex virus",
+     "Herpesvirus: enveloped double-stranded DNA",
+     "Mostly the birth canal; rarely in utero"
+    ],
+    [
+     "Varicella-zoster virus",
+     "Herpesvirus",
+     "Crosses the placenta; fetal damage mainly before 20 weeks"
+    ],
+    [
+     "Parvovirus B19",
+     "Nonenveloped single-stranded DNA virus",
+     "Crosses the placenta and infects red cell precursors"
+    ],
+    [
+     "Zika virus",
+     "Flavivirus: enveloped, positive-strand RNA",
+     "Mosquito bite or sex, then the placenta"
+    ],
+    [
+     "Treponema pallidum",
+     "Spirochete",
+     "Crosses the placenta at any stage of pregnancy"
+    ],
+    [
+     "HIV",
+     "Retrovirus: enveloped RNA virus that makes DNA with reverse transcriptase",
+     "Mostly around delivery; also across the placenta and in breast milk"
+    ]
+   ]
+  ],
+  [
+   "call",
+   "key",
+   "A first infection in pregnancy is the dangerous one",
+   "Maternal **IgG** crosses the placenta and protects the fetus, so a woman who was immune before pregnancy rarely passes on *Toxoplasma*, rubella or herpes. The highest risk comes from a **primary infection** during pregnancy, when the organism is present but protective IgG is not. IgG that turns from negative to positive between visits is a {{rp18sero|seroconversion}} and proves a new infection. So immunity is checked early, and nonimmune patients avoid exposure."
+  ],
+  [
+   "h",
+   "Which signature finding names each TORCH organism?"
+  ],
+  [
+   "p",
+   "Many of these infections share a nonspecific newborn picture: growth restriction, an enlarged liver and spleen (hepatosplenomegaly), jaundice, and low platelets with petechiae. So the signature finding, not this shared picture, names the organism."
+  ],
+  [
+   "p",
+   "Two organisms injure the developing brain, and the pattern of calcium tells them apart. *Toxoplasma gondii* comes from cat feces or undercooked meat. Congenital **toxoplasmosis** causes chorioretinitis, hydrocephalus and diffuse intracranial calcifications. The mother usually has no symptoms or only swollen lymph nodes, and an infected infant is treated with pyrimethamine plus sulfadiazine, which block the parasite's folate synthesis, with leucovorin to protect the marrow."
+  ],
+  [
+   "p",
+   "The other is cytomegalovirus (CMV), the most common congenital infection, which spreads in the saliva and urine of young children. The mother usually has no symptoms, or has a mononucleosis-like illness with a negative heterophile (Monospot) test. The virus attacks the area around the ventricles, causing **periventricular calcifications**, microcephaly, chorioretinitis and seizures. It is also the leading nongenetic cause of sensorineural hearing loss in children. Most infected newborns look well at birth, so hearing loss may be the first sign."
+  ],
+  [
+   "p",
+   "**Congenital rubella** follows maternal infection in the first trimester, which may be silent or a mild illness with a rash spreading from the face, postauricular lymph nodes and joint pain. It causes cataracts, sensorineural deafness, heart defects such as a patent ductus arteriosus or pulmonary artery stenosis, and a blueberry-muffin rash. The vaccine is live, so immunity is checked before or early in pregnancy. A nonimmune patient is vaccinated after delivery, never during pregnancy."
+  ],
+  [
+   "img",
+   "rp18_rubella"
+  ],
+  [
+   "p",
+   "Maternal **varicella** before 20 weeks can cause congenital varicella syndrome: limb hypoplasia, zigzag skin scars in a dermatomal pattern, and eye and brain defects. A nonimmune pregnant patient exposed to chickenpox receives varicella-zoster immune globulin (VZIG). VZIG mainly prevents severe maternal varicella and pneumonia, and whether it protects the fetus is unproven. Zika virus, spread by mosquitoes and by sex, causes severe microcephaly with eye lesions."
+  ],
+  [
+   "p",
+   "**Parvovirus B19** works differently. It enters red cell precursors through the P antigen and halts red cell production. A fetus has short-lived red cells and a growing blood volume, so it becomes severely anemic. High-output heart failure then produces {{rp18_hydrops|hydrops fetalis}}. The mother often caught the virus from a school-age child with slapped-cheek rash, and the fetal risk is greatest before 20 weeks. *Listeria monocytogenes* takes advantage of the drop in cell-mediated immunity in pregnancy. It travels in unpasteurized cheese and deli meat. It crosses the placenta and causes amnionitis (infection of the fetal membranes), preterm birth, stillbirth and neonatal sepsis or meningitis."
+  ],
+  [
+   "f",
+   "rp18_signatures"
+  ],
+  [
+   "call",
+   "trap",
+   "A blueberry-muffin rash is not only rubella",
+   "The purple papules of a **blueberry-muffin rash** are islands of blood cell production in the skin, and congenital CMV produces them too. So do not name the organism from the rash alone. Name it from the partner finding: cataracts and a patent ductus point to rubella, while periventricular calcifications and hearing loss point to CMV."
+  ],
+  [
+   "h",
+   "How does congenital syphilis change as the child grows?"
+  ],
+  [
+   "p",
+   "*Treponema pallidum* crosses the placenta at any stage of pregnancy, most likely when the mother has primary or secondary syphilis, so treating her early in pregnancy can prevent fetal infection. Untreated maternal syphilis causes stillbirth, hydrops and **congenital syphilis**. Early findings, in the first two years, come from active infection. They include snuffles, a nasal discharge full of organisms, and a peeling rash on the palms and soles. The liver and spleen enlarge (hepatosplenomegaly). **Periostitis** or osteochondritis inflames bone and makes the infant refuse to move a painful limb."
+  ],
+  [
+   "p",
+   "Late findings come from damage to growing tissue: notched incisors, mulberry molars, a saddle nose, a short maxilla, rhagades (linear scars at the corners of the mouth), **saber shins** (forward-bowed tibias), interstitial keratitis and eighth-nerve deafness. The {{rp18_hutch|Hutchinson triad}} is notched incisors, interstitial keratitis and deafness. Every pregnancy is screened for syphilis at the first visit. Only penicillin G benzathine prevents congenital syphilis, so an allergic patient is desensitized."
+  ],
+  [
+   "img",
+   "rp18_hutchinson"
+  ],
+  [
+   "palace",
+   "pal_rp18_torch"
+  ],
+  [
+   "h",
+   "What is done at delivery to protect the newborn?"
+  ],
+  [
+   "p",
+   "**Group B strep** (*Streptococcus agalactiae*) lives in the vagina and rectum of about a quarter of pregnant patients, usually without symptoms. A newborn exposed during delivery can develop early-onset disease, usually within the first day: sepsis, pneumonia or meningitis. Carriage comes and goes, so every patient has a rectovaginal culture at 36 to 37 weeks. A carrier receives {{rp18_iap|intrapartum antibiotic prophylaxis}}, which is IV penicillin or ampicillin during labor."
+  ],
+  [
+   "steps",
+   [
+    "Why penicillin in labor prevents early-onset GBS disease",
+    [
+     [
+      "Carriage is silent and intermittent",
+      "About one in four patients carries GBS, and carriage waxes and wanes, so an early culture does not predict carriage at delivery."
+     ],
+     [
+      "Culture at 36 to 37 weeks",
+      "A late swab identifies who will probably carry the organism during labor, the only moment the newborn is exposed."
+     ],
+     [
+      "IV penicillin during labor",
+      "Penicillin given at least 4 hours before birth reaches fetal blood and amniotic fluid and suppresses the organism in the birth canal."
+     ],
+     [
+      "Early-onset disease is prevented",
+      "Fewer organisms reach the newborn, so first-week sepsis falls sharply. Late-onset disease is not prevented, because it is acquired later."
+     ]
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Neonatal herpes is acquired mostly during passage through an infected birth canal, and the risk depends on maternal antibody. A first genital infection near delivery is the worst case. The mother has no IgG to pass on, so roughly 30 to 50 percent of exposed newborns are infected. Recurrent herpes carries a risk of only a few percent. Patients with a history of genital herpes take **acyclovir** from 36 weeks until delivery to suppress recurrences. A **cesarean delivery** is done if an active lesion or prodromal symptoms such as burning or tingling are present when labor begins. Infected newborns develop skin-eye-mouth vesicles, encephalitis or disseminated disease, and they are treated with IV acyclovir."
+  ],
+  [
+   "p",
+   "HPV reaches the newborn rarely. An infant exposed to types 6 and 11 can develop **laryngeal papillomatosis**. These benign warty growths on the vocal cords cause hoarseness and stridor in early childhood."
+  ],
+  [
+   "p",
+   "Blood-borne viruses are also caught mainly at delivery. Every pregnancy is screened for hepatitis B surface antigen (**HBsAg**), and transmission is most likely when the mother is also positive for HBeAg, the marker of active viral replication. The infant of a positive mother receives hepatitis B immune globulin (HBIG) plus the first vaccine dose within 12 hours of birth. Without this prophylaxis, most newborns of HBeAg-positive mothers are infected, and about 90 percent of infected newborns become chronic carriers. Hepatitis C passes to about 5 percent of infants and is treated after pregnancy. **HIV** passes mostly around delivery, but also across the placenta and in breast milk. An infected infant is often well at birth, then shows failure to thrive and has recurrent bacterial and viral infections, *Pneumocystis* pneumonia and chronic diarrhea. Antiretroviral treatment of the mother greatly lowers this risk."
+  ],
+  [
+   "p",
+   "**Ophthalmia neonatorum** is conjunctivitis in the first month of life, and its timing points to the cause. Irritation from eye prophylaxis appears within the first day. *Neisseria gonorrhoeae* causes a purulent conjunctivitis on days 2 to 5 that can perforate the cornea, so it is treated with systemic ceftriaxone. *Chlamydia trachomatis* causes a watery to mucopurulent conjunctivitis on days 5 to 14, which may be followed by afebrile pneumonia with a staccato cough. Chlamydia needs oral erythromycin or azithromycin, because eye ointment does not clear the nasopharynx. Erythromycin ointment at birth prevents gonococcal disease."
+  ],
+  [
+   "h",
+   "How do the laboratory and serology identify the culprit?"
+  ],
+  [
+   "p",
+   "Group B strep and *Escherichia coli* cause most early neonatal sepsis and meningitis, and *Listeria* is the third classic cause. Each has a laboratory signature. Group B strep is a beta-hemolytic gram-positive coccus in chains that is **bacitracin-resistant**, hippurate-positive and CAMP-positive. Its CAMP factor enlarges the zone of hemolysis made by *Staphylococcus aureus*, and its polysaccharide capsule is its main virulence factor. *E. coli* strains with the K1 capsule resist complement and phagocytosis and cause neonatal meningitis. *Listeria* is a gram-positive rod with **tumbling motility**. It grows in the cold, escapes the phagosome with the pore-forming toxin listeriolysin O, lives inside cells and spreads from cell to cell on actin tails, out of reach of antibody. Heavy fetal infection produces granulomatosis infantiseptica, with widespread granulomas and microabscesses in the fetal organs."
+  ],
+  [
+   "call",
+   "trap",
+   "Cephalosporins miss Listeria",
+   "*Listeria* is naturally resistant to cephalosporins, so ceftriaxone alone fails a pregnant patient or newborn with listeriosis. **Ampicillin** is the drug of choice, which is why ampicillin appears in every empiric regimen for neonatal sepsis and meningitis."
+  ],
+  [
+   "p",
+   "Serology also dates a maternal infection. IgG alone means past infection or vaccination, and neither antibody means she is susceptible. IgM appears first but can persist for months. So a patient with IgM alone has her IgG repeated in 2 to 3 weeks. If it turns positive, that **seroconversion** proves a new infection. When both are positive, an {{rp18_avidity|IgG avidity test}} dates the infection. Low avidity means a recent primary infection, and high avidity means one that is months old."
+  ],
+  [
+   "f",
+   "rp18_serology"
+  ],
+  [
+   "why",
+   "Why does IgM in a newborn's blood prove fetal infection when IgG does not?",
+   "IgG is the only antibody class that crosses the placenta, carried by the neonatal Fc receptor. So every newborn carries its mother's IgG for months. A positive **IgG** in the infant may therefore reflect the mother's infection or immunity rather than the baby's own. IgM is a pentamer too large to cross, so IgM in cord or infant blood was made by the fetus against its own infection."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp18_hydrops",
+    "q": "A fetus develops hydrops after maternal parvovirus B19 infection at 16 weeks. Which reasoning best explains the hydrops?",
+    "o": [
+     "The virus infects fetal hepatocytes and stops albumin synthesis, so plasma oncotic pressure falls and fluid leaks into tissues",
+     "The virus destroys erythroid precursors, and the severe anemia that follows drives high-output heart failure and fluid accumulation",
+     "Maternal antibodies cross the placenta and hemolyze fetal red cells, as happens in Rh alloimmunization",
+     "The virus inflames the placenta, so oxygen delivery falls and the fetal heart fails from ischemia"
+    ],
+    "a": 1,
+    "why": "Parvovirus B19 binds the P antigen on erythroid progenitors and kills them, so red cell production stops. A fetus with short-lived red cells and a rapidly growing blood volume cannot tolerate that pause. Severe anemia forces the heart into high-output failure, with edema, ascites and effusions. Alloimmune hemolysis also causes hydrops, but it needs maternal antibodies such as anti-D, not a viral illness."
+   }
+  ],
+  [
+   "vis",
+   "rp18"
+  ]
+ ],
+ "grid": {
+  "q": "Which organism and congenital finding pairs are correct?",
+  "items": [
+   [
+    "Toxoplasma with diffuse intracranial calcifications",
+    1
+   ],
+   [
+    "CMV with periventricular calcifications",
+    1
+   ],
+   [
+    "Rubella with cataracts and patent ductus arteriosus",
+    1
+   ],
+   [
+    "Parvovirus B19 with hydrops fetalis",
+    1
+   ],
+   [
+    "Varicella with limb hypoplasia and skin scars",
+    1
+   ],
+   [
+    "Syphilis with saber shins and notched incisors",
+    1
+   ],
+   [
+    "Zika virus with severe microcephaly",
+    1
+   ],
+   [
+    "Listeria with granulomatosis infantiseptica",
+    1
+   ],
+   [
+    "Toxoplasma with periventricular calcifications",
+    0
+   ],
+   [
+    "Rubella with limb hypoplasia",
+    0
+   ],
+   [
+    "CMV with saber shins",
+    0
+   ],
+   [
+    "Parvovirus B19 with cataracts",
+    0
+   ]
+  ]
+ }
+}

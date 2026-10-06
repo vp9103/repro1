@@ -1,0 +1,65 @@
+{
+ "provider": "gemini",
+ "model": "gemini-3.5-flash",
+ "key": "rp8_graafian",
+ "image_sha": "ebeb651eff831805",
+ "at": "2026-10-06 02:34:11",
+ "ann": [
+  {
+   "k": "e",
+   "x": 50.0,
+   "y": 53.0,
+   "rx": 15.5,
+   "ry": 21.5,
+   "rot": 15,
+   "px": 33.0,
+   "py": 45.0,
+   "l": "Oocyte and zona pellucida: in the center of the field, a large round oocyte with pale, finely vacuolated cytoplasm sits inside a bright pink ring. This glassy ring is the zona pellucida, which sperm must bind before fertilization."
+  },
+  {
+   "k": "arrow",
+   "x": 64.0,
+   "y": 60.0,
+   "tx": 75.0,
+   "ty": 68.0,
+   "px": 75.0,
+   "py": 68.0,
+   "l": "Corona radiata: the single rim of granulosa cells pressed against the zona pellucida, all the way around the oocyte, leaves with the oocyte at ovulation, and sperm must push through it."
+  },
+  {
+   "k": "arrow",
+   "x": 78.0,
+   "y": 35.0,
+   "tx": 88.0,
+   "ty": 25.0,
+   "px": 88.0,
+   "py": 25.0,
+   "l": "Cumulus oophorus: the mound of small, dark granulosa cells that crowds around the oocyte across the upper and right part of the field tethers it to the follicle wall. FSH induces aromatase in these granulosa cells so they make estradiol."
+  },
+  {
+   "k": "arrow",
+   "x": 20.0,
+   "y": 85.0,
+   "tx": 15.0,
+   "ty": 70.0,
+   "px": 15.0,
+   "py": 70.0,
+   "l": "Antrum: at the bottom of the field, pink, bubbly material with a clear cleft at the left is coagulated follicular fluid. The oocyte and its granulosa mound bulge into this fluid-filled antrum."
+  }
+ ],
+ "kinds": [
+  "e",
+  "arrow",
+  "arrow",
+  "arrow"
+ ],
+ "areaSum": 10.5,
+ "areaMax": 10.5,
+ "findings": [
+  "Oocyte and zona pellucida: in the center of the field, a large round oocyte with pale, finely vacuolated cytoplasm sits inside a bright pink ring. This glassy ring is the zona pellucida, which sperm must bind before fertilization.",
+  "Corona radiata: the single rim of granulosa cells pressed against the zona pellucida, all the way around the oocyte, leaves with the oocyte at ovulation, and sperm must push through it.",
+  "Cumulus oophorus: the mound of small, dark granulosa cells that crowds around the oocyte across the upper and right part of the field tethers it to the follicle wall. FSH induces aromatase in these granulosa cells so they make estradiol.",
+  "Antrum: at the bottom of the field, pink, bubbly material with a clear cleft at the left is coagulated follicular fluid. The oocyte and its granulosa mound bulge into this fluid-filled antrum."
+ ],
+ "adjustments": []
+}

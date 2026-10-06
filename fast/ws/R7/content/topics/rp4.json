@@ -1,0 +1,377 @@
+{
+ "id": "rp4",
+ "t": "Early embryology, the placenta and twinning",
+ "sub": "From fertilization in the ampulla to a working placenta: how the embryo is built, fed and dated, and how twins divide.",
+ "yld": "mid",
+ "exam": "hi",
+ "mins": 13,
+ "bp": [
+  "BP-rp4-01",
+  "BP-rp4-02",
+  "BP-rp4-03",
+  "BP-rp4-04",
+  "BP-rp4-05",
+  "BP-rp4-06",
+  "BP-rp4-07",
+  "BP-rp4-08",
+  "BP-rp4-09",
+  "BP-rp4-10",
+  "BP-rp4-11",
+  "BP-rp4-12",
+  "BP-rp4-13",
+  "BP-rp4-14",
+  "BP-rp4-15",
+  "BP-rp4-16",
+  "BP-rp4-17"
+ ],
+ "obj": [
+  "EMBRYO-CLIN.1",
+  "EMBRYO-CLIN.2",
+  "EMBRYO-CLIN.3",
+  "EMBRYO-CLIN.4",
+  "EMBRYO-CLIN.5",
+  "EMBRYO-CLIN.6",
+  "EMBRYO-CLIN.11"
+ ],
+ "pretest": [
+  {
+   "q": "Where in the female tract does fertilization normally take place?",
+   "o": [
+    "Ampulla of the uterine tube",
+    "Uterine fundus",
+    "Isthmus of the uterine tube",
+    "Ovarian surface"
+   ],
+   "a": 0,
+   "why": "The oocyte is swept into the tube and meets capacitated sperm in the ampulla, the widest part of the tube. The zygote then takes about five days to reach the uterus, where the blastocyst implants.",
+   "w": {
+    "Uterine fundus": "The upper uterine wall is where the blastocyst usually implants around day 6, several days after fertilization has already happened higher up.",
+    "Isthmus of the uterine tube": "The isthmus is the narrow segment next to the uterus. The zygote passes through it while cleaving, but sperm meet the oocyte earlier.",
+    "Ovarian surface": "Fertilization on the ovary is rare, because the released oocyte is first captured by the fimbriae. An ovarian pregnancy is an unusual ectopic site."
+   }
+  },
+  {
+   "q": "Which cells secrete the hCG detected by an early pregnancy test?",
+   "o": [
+    "Syncytiotrophoblast",
+    "Cytotrophoblast",
+    "Corpus luteum",
+    "Decidua basalis"
+   ],
+   "a": 0,
+   "why": "The syncytiotrophoblast, the invading outer trophoblast layer, secretes hCG from implantation onward. hCG acts on LH receptors to keep the corpus luteum making progesterone until the placenta takes over at about 8 to 10 weeks.",
+   "w": {
+    "Cytotrophoblast": "The cytotrophoblast is the inner, dividing layer that supplies new cells to the syncytium. It is not the main source of the hormone.",
+    "Corpus luteum": "The corpus luteum is the target of hCG, not its source. It answers the hormone by continuing to secrete progesterone in early pregnancy.",
+    "Decidua basalis": "The decidua basalis is maternal endometrium under the implantation site. It forms the maternal side of the placenta but makes no hCG."
+   }
+  },
+  {
+   "q": "A monozygotic embryo splits on day 6. Which membranes will the twins have?",
+   "o": [
+    "One chorion and two amnions",
+    "Two chorions and two amnions",
+    "One chorion and one amnion",
+    "Conjoined twins in one sac"
+   ],
+   "a": 0,
+   "why": "By day 6 the blastocyst has already made its trophoblast, the future chorion, so the twins must share it. The amnion forms later from the epiblast, so splitting the inner cell mass now gives each twin its own amnion.",
+   "w": {
+    "Two chorions and two amnions": "Separate chorions need the split to happen by about day 4, before the trophoblast has formed around a single inner cell mass.",
+    "One chorion and one amnion": "A shared amnion means the split came after the amnion had formed, at about days 8 to 12, and it risks tangled cords.",
+    "Conjoined twins in one sac": "Conjoined twins come from an incomplete split at about day 13 or later, once the embryonic disc has begun gastrulation."
+   }
+  }
+ ],
+ "body": [
+  [
+   "h",
+   "How do we count the age of a pregnancy?"
+  ],
+  [
+   "p",
+   "Two clocks run in every pregnancy. **Gestational age** counts from the first day of the **last menstrual period**, because that date is usually known. A term birth falls at 40 weeks. **Fertilization age**, also called embryonic age, counts from conception, which happens about 2 weeks after the period begins. Gestational age is therefore always about 2 weeks more than embryonic age. Due dates and ultrasound reports use gestational age, while embryology texts that speak of weeks 3 to 8 use embryonic age."
+  ],
+  [
+   "h",
+   "What happens in the first three weeks?"
+  ],
+  [
+   "p",
+   "Fertilization normally happens in the **ampulla**, the widest part of the uterine tube. The steps below follow the sperm and the oocyte from capacitation to implantation."
+  ],
+  [
+   "steps",
+   [
+    "From capacitation to the implanted blastocyst, in order",
+    [
+     [
+      "Capacitation in the female tract",
+      "Secretions of the uterus and tube strip cholesterol and surface proteins from the sperm membrane ({{rp4_cap|capacitation}}), so the sperm can bind the zona pellucida."
+     ],
+     [
+      "Acrosome reaction at the zona",
+      "The acrosome releases enzymes that digest a path through the zona pellucida, so one sperm can reach the oocyte membrane."
+     ],
+     [
+      "Cortical reaction and meiosis II",
+      "Cortical granules harden the zona to block a second sperm (polyspermy), which would otherwise produce a triploid zygote. The oocyte then completes meiosis II."
+     ],
+     [
+      "Cleavage and blastocyst formation",
+      "The zygote divides without growing into a morula by day 3. Fluid then opens a cavity, and the blastocyst forms by day 5."
+     ],
+     [
+      "Hatching and implantation",
+      "The blastocyst sheds the zona and implants at about day 6. It then starts secreting hCG into the mother's blood."
+     ]
+    ]
+   ]
+  ],
+  [
+   "p",
+   "The blastocyst has two parts with two fates. The **inner cell mass** becomes the embryo, and the outer trophoblast becomes the fetal part of the placenta. The trophoblast splits into an inner, dividing cytotrophoblast and an outer {{rp4_syn|syncytiotrophoblast}}. The syncytiotrophoblast erodes the endometrium and secretes **hCG**, so a blood test turns positive about 1 week after fertilization. The syncytiotrophoblast also lacks MHC class I molecules, which lowers the chance that the mother's immune system attacks this fetal tissue."
+  ],
+  [
+   "p",
+   "Week 2 follows a rule of 2s. It has a **bilaminar** disc of epiblast and hypoblast, two cavities (the amniotic cavity and the yolk sac) and two trophoblast layers. Week 3 follows a rule of 3s. In **gastrulation**, epiblast cells move through the primitive streak and form a trilaminar disc, so ectoderm, mesoderm and endoderm all come from the epiblast. The notochord forms in the midline and later survives only as the nucleus pulposus of the intervertebral discs. Primitive streak cells that persist can form a sacrococcygeal teratoma, the most common newborn tumor, with tissue from all three layers. Weeks 3 to 8 are the embryonic period of **organogenesis**, when organs form and teratogens do the most damage. Within it the heart starts beating and the limb buds appear in week 4, and the embryo starts to move by week 8."
+  ],
+  [
+   "f",
+   "rp4_weeks"
+  ],
+  [
+   "call",
+   "key",
+   "Timing decides what a teratogen does",
+   "Before week 3 the embryo is a small ball of interchangeable cells, so an exposure is **all-or-none**. Enough cell loss ends the pregnancy, and anything less is repaired without a birth defect. From weeks 3 to 8 each organ is forming, so the same exposure causes structural malformations. After week 8 the fetal period is about growth, so damage shows as growth restriction or lost function."
+  ],
+  [
+   "h",
+   "What does each germ layer build?"
+  ],
+  [
+   "p",
+   "A germ layer is a sheet of embryonic cells that builds a predictable set of tissues, so one early defect can link anomalies that look unrelated. The table below lists the layers, what they form and a classic anomaly of each. Mesoderm as a whole forms muscle, bone and connective tissue, the heart, vessels and blood, the kidneys and gonads, and the adrenal cortex. Three traps come up often. The adrenal medulla is {{rp4_crest|neural crest}}, but the adrenal cortex is mesoderm. The anterior pituitary is surface ectoderm, but the posterior pituitary is neuroectoderm. The spleen is mesoderm, although it grows in the foregut mesentery."
+  ],
+  [
+   "t",
+   [
+    "Germ layer",
+    "Main derivatives",
+    "Classic anomaly"
+   ],
+   [
+    [
+     "Surface ectoderm",
+     "Epidermis with sweat and mammary glands, lens, enamel, anterior pituitary, anal canal below the pectinate line",
+     "Craniopharyngioma from a Rathke pouch remnant"
+    ],
+    [
+     "Neuroectoderm",
+     "Brain, spinal cord, retina, posterior pituitary",
+     "Neural tube defects"
+    ],
+    [
+     "Neural crest",
+     "Peripheral ganglia, Schwann cells, melanocytes, adrenal medulla, aorticopulmonary septum, skull bones, odontoblasts",
+     "Hirschsprung disease; conotruncal heart defects"
+    ],
+    [
+     "Paraxial mesoderm (somites)",
+     "Vertebrae, skeletal muscle of the trunk, dermis",
+     "VACTERL: vertebral, anal, cardiac, tracheoesophageal, renal and limb defects"
+    ],
+    [
+     "Intermediate and lateral plate mesoderm",
+     "Kidneys, gonads, heart, vessels, adrenal cortex",
+     "Renal agenesis; heart defects"
+    ],
+    [
+     "Endoderm",
+     "Gut and airway lining, liver, pancreas, thyroid follicles, thymus, parathyroids, lower vagina and most of the urethra",
+     "Duodenal atresia; tracheoesophageal fistula"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "The notochord induces the overlying ectoderm to thicken into the **neural plate**. The plate folds and closes into the **neural tube**, the future brain and spinal cord. Cells at the crest of each fold detach as the neural crest and migrate away. Closure ends at the two open ends, the neuropores, during week 4. Failure of the anterior end leaves anencephaly, and failure of the posterior end leaves spina bifida. Together these are neural tube defects. Closure finishes before many women know they are pregnant, so folic acid is advised before conception. A raised maternal serum alpha-fetoprotein screens for an open defect."
+  ],
+  [
+   "p",
+   "Mesoderm forms three strips beside the notochord. **Paraxial mesoderm** segments into paired **somites**, which become the vertebrae, trunk skeletal muscle and dermis. Intermediate mesoderm forms the kidneys, gonads and genital ducts, and lateral plate mesoderm forms the heart, vessels and body wall. Folding rolls the endoderm inside the embryo as the gut tube. A **tracheoesophageal** septum normally divides the trachea from the esophagus. If it forms abnormally, esophageal atresia with a fistula results, and the newborn chokes and turns blue at the first feed."
+  ],
+  [
+   "f",
+   "rp4_origins"
+  ],
+  [
+   "h",
+   "Which genes lay out the body plan?"
+  ],
+  [
+   "p",
+   "Four groups of signaling genes pattern the embryo. Sonic hedgehog, made at the base of each limb bud and along the ventral neural tube, patterns the anterior-posterior axis of the limb and the midline of the brain, so its mutation causes holoprosencephaly. Wnt-7 from the limb ectoderm sets the dorsal-ventral axis of the limb, and FGF from the apical ectodermal ridge at the limb tip drives its lengthening. HOX genes encode transcription factors that give each body segment its head-to-tail identity, so HOX mutations put appendages in the wrong place, and isotretinoin, a vitamin A derivative, causes malformations partly by disturbing HOX expression."
+  ],
+  [
+   "h",
+   "How do the membranes and the placenta form?"
+  ],
+  [
+   "p",
+   "Four membranes surround the embryo. The **amnion** grows from the epiblast and fills with fluid that cushions the embryo and lets it move. The **yolk sac** makes the first blood cells, in weeks 3 to 8, and carries the primordial germ cells. Blood formation then moves to the liver (week 6 until birth), the spleen (weeks 10 to 28) and finally the bone marrow (from week 18 onward). The allantois is an outpouching of the yolk sac into the connecting stalk that later opens into the cloaca at the end of the hindgut. The vitelline duct links the midgut to the yolk sac. Both run in the connecting stalk of the cord. The **chorion**, made of extraembryonic mesoderm and both trophoblast layers, builds the placenta."
+  ],
+  [
+   "p",
+   "The placenta is built from {{rp4_vill|chorionic villi}}, fingers of chorion that grow into maternal blood. The villi facing the implantation site form the **chorion frondosum**, the fetal side of the placenta. It is anchored in the {{rp4_decbas|decidua basalis}}, the maternal side. Villi elsewhere regress and leave the smooth chorion laeve. The decidua also has a capsularis over the embryo and a parietalis lining the rest of the uterus. If the decidua basalis is deficient, as over a cesarean scar, villi attach to or invade the myometrium and cannot separate after birth. This is placenta accreta."
+  ],
+  [
+   "f",
+   "rp4_placenta"
+  ],
+  [
+   "p",
+   "Maternal and fetal blood do not mix. They exchange gases, nutrients and wastes across the villus wall, and maternal IgG crosses it to give the newborn passive immunity. Invading trophoblast remodels the **spiral arteries** into wide, low-resistance channels that fill the **intervillous** space with maternal blood. When remodeling fails, the placenta is underperfused, which underlies preeclampsia and fetal growth restriction."
+  ],
+  [
+   "p",
+   "The umbilical cord carries two **umbilical arteries**, which return deoxygenated blood from the fetal internal iliac arteries, and one umbilical vein, which brings oxygenated blood back. The arteries and the vein develop from vessels of the allantois. A single umbilical artery marks a higher risk of congenital anomalies, especially renal ones, and of chromosomal anomalies such as trisomy 18. After birth the vein becomes the ligamentum teres of the liver, and the arteries become the medial umbilical ligaments."
+  ],
+  [
+   "call",
+   "trap",
+   "The umbilical vein carries the oxygen",
+   "Cord vessels are named for the direction of flow, not for oxygen content. The umbilical arteries carry blood away from the fetus, so that blood is deoxygenated. The single umbilical vein carries the most oxygenated blood in the fetus back toward the heart, and much of it bypasses the liver through the ductus venosus, which becomes the ligamentum venosum after birth. A question about the highest oxygen saturation in the fetal circulation wants the umbilical vein."
+  ],
+  [
+   "p",
+   "Two channels in the cord normally vanish. The allantois becomes the **urachus**, a fibrous cord from the bladder dome to the umbilicus, which survives as the median umbilical ligament. If the urachus stays open, a patent urachus leaks urine at the umbilicus, and a closed stretch can form a urachal cyst or sinus. A urachal cyst can become infected and present as a painful mass below the umbilicus, and urachal remnants carry a risk of adenocarcinoma at the bladder dome. A remnant open only at the bladder end is a vesicourachal diverticulum. The vitelline duct normally closes during the embryonic period. A persistent remnant is a **Meckel diverticulum**, an ileal outpouching that can hold gastric or pancreatic tissue and bleed. A fully open duct passes stool through the umbilicus."
+  ],
+  [
+   "h",
+   "What do the placental hormones do?"
+  ],
+  [
+   "p",
+   "**Human chorionic gonadotropin** (hCG) from the syncytiotrophoblast acts on the LH receptor of the corpus luteum. It rescues the corpus luteum from its usual 14-day lifespan, so the corpus luteum keeps making the progesterone that maintains the endometrium. hCG roughly doubles every 2 days early on and peaks at 8 to 10 weeks, when the placenta can make enough progesterone itself. {{rp4_hpl|Human placental lactogen}} rises with placental mass and causes maternal **insulin resistance** and lipolysis. This spares glucose and amino acids for the fetus, but it can lead to gestational diabetes when the mother cannot compensate. The placenta makes **estriol** only from DHEA-S that the fetal adrenal makes and the fetal liver hydroxylates. A low estriol can therefore signal fetal adrenal failure or anencephaly."
+  ],
+  [
+   "why",
+   "Why does removing the corpus luteum at 6 weeks end a pregnancy, when removing it at 12 weeks does not?",
+   "Early in pregnancy the corpus luteum is the only major source of progesterone, which keeps the decidua intact and the myometrium quiet. hCG keeps the corpus luteum alive, because the young placenta cannot yet make enough. At 6 weeks, removing it drops progesterone abruptly and the pregnancy is lost unless progesterone is replaced. By 8 to 10 weeks the placenta makes enough on its own, so at 12 weeks the corpus luteum is no longer needed."
+  ],
+  [
+   "h",
+   "How do twins form, and why does the day of splitting matter?"
+  ],
+  [
+   "p",
+   "**Dizygotic** twins come from two oocytes fertilized by two sperm, so each blastocyst builds its own chorion and amnion. The twins are always dichorionic diamniotic. **Monozygotic** twins come from one zygote that splits, and what they share depends on what had already formed. A split in the first 4 days gives two chorions and two amnions. A split at days 4 to 8 divides the inner cell mass inside one trophoblast. This gives one chorion and two amnions, the most common monozygotic pattern. A split at days 8 to 12 shares the amnion too, and a split after about day 13 produces conjoined twins."
+  ],
+  [
+   "f",
+   "rp4_twins"
+  ],
+  [
+   "p",
+   "A shared chorion means a shared placenta, which often contains vessels connecting the two circulations. When flow through them is unbalanced, {{rp4_ttts|twin-twin transfusion syndrome}} develops. The **donor** twin loses volume, becomes anemic and growth-restricted, and makes little urine, so it sits in oligohydramnios. The **recipient** twin gains volume, becomes polycythemic, makes excess urine and develops polyhydramnios and heart failure. Dichorionic twins have separate placental circulations and cannot develop this syndrome."
+  ],
+  [
+   "p",
+   "{{rp4_chor|Chorionicity}}, the number of chorions, sets the risk, and first-trimester ultrasound reads it. A thin membrane meeting the placenta at a right angle (the T sign) means monochorionic diamniotic twins. A thick wedge of placenta between the sacs (the lambda sign) means dichorionic twins."
+  ],
+  [
+   "h",
+   "What does amniotic fluid tell you?"
+  ],
+  [
+   "p",
+   "After about 16 weeks most amniotic fluid is fetal urine, and the fetus removes fluid by swallowing. Fluid volume therefore reflects the fetal kidneys and gut. **Oligohydramnios** follows missing urine, as in bilateral renal agenesis, autosomal recessive polycystic kidney disease, posterior urethral valves in a male fetus or kidney damage from ACE inhibitors. It also follows placental insufficiency, which cuts fetal kidney perfusion. The compressed fetus develops a flat face and limb deformities, and it has fatal pulmonary hypoplasia because the lungs need fluid to grow. This cascade is the **Potter sequence**. **Polyhydramnios** follows failed swallowing or absorption, as in esophageal or duodenal atresia or anencephaly, or fetal osmotic diuresis from maternal diabetes. Fetal anemia and multiple gestation also cause polyhydramnios."
+  ],
+  [
+   "p",
+   "Birth defects follow a few patterns. A **malformation** is an intrinsic error of development during the embryonic period, weeks 3 to 8, such as a neural tube defect or cleft lip. A **deformation** is molding of normal tissue by an outside force after that period, as in the compressed limbs of oligohydramnios. A **disruption** destroys normal tissue, as in amniotic band syndrome, where torn amnion strands constrict a limb. A sequence is one defect cascading into others, as renal agenesis leads to the Potter sequence."
+  ],
+  [
+   "p",
+   "Four further terms describe where and how far development was disturbed. A field defect affects tissues that develop side by side, as in holoprosencephaly. In **agenesis** the primordial tissue never formed, in **aplasia** the primordial tissue was present but the organ never developed, and in **hypoplasia** the organ developed incompletely and stays small."
+  ],
+  [
+   "sexp",
+   {
+    "id": "sx_rp4_split",
+    "q": "Ultrasound shows monochorionic diamniotic twins. Which reasoning best explains when the embryo split?",
+    "o": [
+     "The split came before day 4, because two amnions can form only when each twin has its own trophoblast",
+     "The split came at days 4 to 8, because the trophoblast had already formed one chorion but the amnion had not yet formed",
+     "The split came after day 13, because sharing a chorion means the embryonic disc divided incompletely",
+     "The twins are dizygotic, because two amnions mean two separately fertilized oocytes"
+    ],
+    "a": 1,
+    "why": "Membranes form in a fixed order. The trophoblast, which becomes the chorion, appears by about day 4 to 5, and the amnion forms around day 8. A split between these two events leaves both twins in one chorion with an amnion each. An earlier split gives two chorions, a later one gives a shared amnion or conjoined twins, and dizygotic twins always have two chorions."
+   }
+  ],
+  [
+   "vis",
+   "rp4"
+  ]
+ ],
+ "grid": {
+  "q": "Which of these happen in the first three weeks after fertilization?",
+  "items": [
+   [
+    "Fertilization in the ampulla",
+    1
+   ],
+   [
+    "Cleavage to a morula by about day 3",
+    1
+   ],
+   [
+    "Blastocyst implantation at about day 6",
+    1
+   ],
+   [
+    "A bilaminar disc of epiblast and hypoblast",
+    1
+   ],
+   [
+    "The amniotic cavity and yolk sac appear",
+    1
+   ],
+   [
+    "The syncytiotrophoblast begins secreting hCG",
+    1
+   ],
+   [
+    "Gastrulation forms three germ layers",
+    1
+   ],
+   [
+    "The notochord induces the neural plate",
+    1
+   ],
+   [
+    "hCG reaches its peak level",
+    0
+   ],
+   [
+    "Progesterone production shifts to the placenta",
+    0
+   ],
+   [
+    "Fetal urine becomes most of the amniotic fluid",
+    0
+   ],
+   [
+    "External genitalia become recognizably male or female",
+    0
+   ],
+   [
+    "The anterior neuropore of the neural tube closes",
+    0
+   ]
+  ]
+ }
+}
